@@ -15,92 +15,92 @@ import k4.s;
 public final class WorkerParameters {
 
     /* renamed from: a  reason: collision with root package name */
-    private UUID f5466a;
+    private UUID f5578a;
 
     /* renamed from: b  reason: collision with root package name */
-    private b f5467b;
+    private b f5579b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Set f5468c;
+    private Set f5580c;
 
     /* renamed from: d  reason: collision with root package name */
-    private a f5469d;
+    private a f5581d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f5470e;
+    private int f5582e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Executor f5471f;
+    private Executor f5583f;
 
     /* renamed from: g  reason: collision with root package name */
-    private r4.b f5472g;
+    private r4.b f5584g;
 
     /* renamed from: h  reason: collision with root package name */
-    private a0 f5473h;
+    private a0 f5585h;
 
     /* renamed from: i  reason: collision with root package name */
-    private s f5474i;
+    private s f5586i;
 
     /* renamed from: j  reason: collision with root package name */
-    private h f5475j;
+    private h f5587j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f5476k;
+    private int f5588k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public List f5477a;
+        public List f5589a;
 
         /* renamed from: b  reason: collision with root package name */
-        public List f5478b;
+        public List f5590b;
 
         /* renamed from: c  reason: collision with root package name */
-        public Network f5479c;
+        public Network f5591c;
 
         public a() {
             List list = Collections.EMPTY_LIST;
-            this.f5477a = list;
-            this.f5478b = list;
+            this.f5589a = list;
+            this.f5590b = list;
         }
     }
 
     public WorkerParameters(UUID uuid, b bVar, Collection collection, a aVar, int i10, int i11, Executor executor, r4.b bVar2, a0 a0Var, s sVar, h hVar) {
-        this.f5466a = uuid;
-        this.f5467b = bVar;
-        this.f5468c = new HashSet(collection);
-        this.f5469d = aVar;
-        this.f5470e = i10;
-        this.f5476k = i11;
-        this.f5471f = executor;
-        this.f5472g = bVar2;
-        this.f5473h = a0Var;
-        this.f5474i = sVar;
-        this.f5475j = hVar;
+        this.f5578a = uuid;
+        this.f5579b = bVar;
+        this.f5580c = new HashSet(collection);
+        this.f5581d = aVar;
+        this.f5582e = i10;
+        this.f5588k = i11;
+        this.f5583f = executor;
+        this.f5584g = bVar2;
+        this.f5585h = a0Var;
+        this.f5586i = sVar;
+        this.f5587j = hVar;
     }
 
     public Executor a() {
-        return this.f5471f;
+        return this.f5583f;
     }
 
     public h b() {
-        return this.f5475j;
+        return this.f5587j;
     }
 
     public UUID c() {
-        return this.f5466a;
+        return this.f5578a;
     }
 
     public b d() {
-        return this.f5467b;
+        return this.f5579b;
     }
 
     public r4.b e() {
-        return this.f5472g;
+        return this.f5584g;
     }
 
     public a0 f() {
-        return this.f5473h;
+        return this.f5585h;
     }
 }

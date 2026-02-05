@@ -1,46 +1,69 @@
 package tg;
 
-import com.google.android.gms.common.api.Scope;
-import ef.a;
+import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.annotation.NonNull;
+import com.google.android.gms.location.LocationRequest;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class d {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final a.g f50031a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final a.g f50032b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final a.AbstractC0279a f50033c;
+public final class d extends hf.a {
+    @NonNull
+    public static final Parcelable.Creator<d> CREATOR = new j();
 
     /* renamed from: d  reason: collision with root package name */
-    static final a.AbstractC0279a f50034d;
+    private final List f50630d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final Scope f50035e;
+    private final boolean f50631e;
 
-    /* renamed from: f  reason: collision with root package name */
-    public static final Scope f50036f;
+    /* renamed from: i  reason: collision with root package name */
+    private final boolean f50632i;
 
-    /* renamed from: g  reason: collision with root package name */
-    public static final ef.a f50037g;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class a {
 
-    /* renamed from: h  reason: collision with root package name */
-    public static final ef.a f50038h;
+        /* renamed from: a  reason: collision with root package name */
+        private final ArrayList f50633a = new ArrayList();
 
-    static {
-        a.g gVar = new a.g();
-        f50031a = gVar;
-        a.g gVar2 = new a.g();
-        f50032b = gVar2;
-        b bVar = new b();
-        f50033c = bVar;
-        c cVar = new c();
-        f50034d = cVar;
-        f50035e = new Scope("profile");
-        f50036f = new Scope("email");
-        f50037g = new ef.a("SignIn.API", bVar, gVar);
-        f50038h = new ef.a("SignIn.INTERNAL_API", cVar, gVar2);
+        /* renamed from: b  reason: collision with root package name */
+        private boolean f50634b = false;
+
+        /* renamed from: c  reason: collision with root package name */
+        private boolean f50635c = false;
+
+        public a a(LocationRequest locationRequest) {
+            if (locationRequest != null) {
+                this.f50633a.add(locationRequest);
+            }
+            return this;
+        }
+
+        public d b() {
+            return new d(this.f50633a, this.f50634b, this.f50635c);
+        }
+
+        public a c(boolean z10) {
+            this.f50634b = z10;
+            return this;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public d(List list, boolean z10, boolean z11) {
+        this.f50630d = list;
+        this.f50631e = z10;
+        this.f50632i = z11;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i10) {
+        List list = this.f50630d;
+        int a10 = hf.c.a(parcel);
+        hf.c.w(parcel, 1, Collections.unmodifiableList(list), false);
+        hf.c.c(parcel, 2, this.f50631e);
+        hf.c.c(parcel, 3, this.f50632i);
+        hf.c.b(parcel, a10);
     }
 }

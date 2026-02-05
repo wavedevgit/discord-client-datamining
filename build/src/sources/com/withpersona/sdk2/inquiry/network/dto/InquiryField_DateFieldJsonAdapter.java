@@ -47,35 +47,35 @@ public final class InquiryField_DateFieldJsonAdapter extends h {
     @NotNull
     public InquiryField.DateField fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str2 = (String) this.stringAdapter.fromJson(reader);
                 if (str2 == null) {
-                    throw vm.c.x("type", "type", reader);
+                    throw ym.c.x("type", "type", reader);
                 }
                 i10 = -3;
             } else {
                 continue;
             }
         }
-        reader.y();
+        reader.z();
         if (i10 == -3) {
             Intrinsics.checkNotNull(str2, "null cannot be cast to non-null type kotlin.String");
             return new InquiryField.DateField(str, str2);
         }
         Constructor<InquiryField.DateField> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InquiryField.DateField.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, vm.c.f51688c);
+            constructor = InquiryField.DateField.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, ym.c.f54853c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -88,10 +88,10 @@ public final class InquiryField_DateFieldJsonAdapter extends h {
     public void toJson(@NotNull t writer, InquiryField.DateField dateField) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (dateField != null) {
-            writer.l();
-            writer.A0("value");
+            writer.k();
+            writer.W("value");
             this.nullableStringAdapter.toJson(writer, dateField.getValue());
-            writer.A0("type");
+            writer.W("type");
             this.stringAdapter.toJson(writer, dateField.getType());
             writer.E();
             return;

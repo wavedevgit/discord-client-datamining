@@ -6,16 +6,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0415a f31499a = new C0415a(null);
+    public static final C0427a f30848a = new C0427a(null);
 
     /* renamed from: ja.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0415a {
-        public /* synthetic */ C0415a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0427a {
+        public /* synthetic */ C0427a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0415a() {
+        private C0427a() {
         }
     }
 

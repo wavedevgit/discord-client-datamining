@@ -7,19 +7,19 @@ import java.util.concurrent.Executor;
 public class j1 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w0 f10412a;
+    private final w0 f10797a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f10413b;
+    private final int f10798b;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Executor f10416e;
+    private final Executor f10801e;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ConcurrentLinkedQueue f10415d = new ConcurrentLinkedQueue();
+    private final ConcurrentLinkedQueue f10800d = new ConcurrentLinkedQueue();
 
     /* renamed from: c  reason: collision with root package name */
-    private int f10414c = 0;
+    private int f10799c = 0;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -28,19 +28,19 @@ public class j1 implements w0 {
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: com.facebook.imagepipeline.producers.j1$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public class RunnableC0145a implements Runnable {
+        public class RunnableC0161a implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Pair f10418d;
+            final /* synthetic */ Pair f10803d;
 
-            RunnableC0145a(Pair pair) {
-                this.f10418d = pair;
+            RunnableC0161a(Pair pair) {
+                this.f10803d = pair;
             }
 
             @Override // java.lang.Runnable
             public void run() {
                 j1 j1Var = j1.this;
-                Pair pair = this.f10418d;
+                Pair pair = this.f10803d;
                 j1Var.g((Consumer) pair.first, (ProducerContext) pair.second);
             }
         }
@@ -49,17 +49,17 @@ public class j1 implements w0 {
             Pair pair;
             synchronized (j1.this) {
                 try {
-                    pair = (Pair) j1.this.f10415d.poll();
+                    pair = (Pair) j1.this.f10800d.poll();
                     if (pair == null) {
                         j1 j1Var = j1.this;
-                        j1Var.f10414c--;
+                        j1Var.f10799c--;
                     }
                 } catch (Throwable th2) {
                     throw th2;
                 }
             }
             if (pair != null) {
-                j1.this.f10416e.execute(new RunnableC0145a(pair));
+                j1.this.f10801e.execute(new RunnableC0161a(pair));
             }
         }
 
@@ -89,9 +89,9 @@ public class j1 implements w0 {
     }
 
     public j1(int i10, Executor executor, w0 w0Var) {
-        this.f10413b = i10;
-        this.f10416e = (Executor) o8.j.g(executor);
-        this.f10412a = (w0) o8.j.g(w0Var);
+        this.f10798b = i10;
+        this.f10801e = (Executor) o8.j.g(executor);
+        this.f10797a = (w0) o8.j.g(w0Var);
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -100,12 +100,12 @@ public class j1 implements w0 {
         producerContext.F().d(producerContext, "ThrottlingProducer");
         synchronized (this) {
             try {
-                int i10 = this.f10414c;
+                int i10 = this.f10799c;
                 z10 = true;
-                if (i10 >= this.f10413b) {
-                    this.f10415d.add(Pair.create(consumer, producerContext));
+                if (i10 >= this.f10798b) {
+                    this.f10800d.add(Pair.create(consumer, producerContext));
                 } else {
-                    this.f10414c = i10 + 1;
+                    this.f10799c = i10 + 1;
                     z10 = false;
                 }
             } catch (Throwable th2) {
@@ -119,6 +119,6 @@ public class j1 implements w0 {
 
     void g(Consumer consumer, ProducerContext producerContext) {
         producerContext.F().j(producerContext, "ThrottlingProducer", null);
-        this.f10412a.b(new a(consumer), producerContext);
+        this.f10797a.b(new a(consumer), producerContext);
     }
 }

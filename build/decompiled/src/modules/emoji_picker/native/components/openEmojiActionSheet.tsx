@@ -29,39 +29,39 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/emoji_picker/native/components/openEmojiActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun74221: for (var _fun74221_ip = 0;;) switch (_fun74221_ip) {
+        _fun74240: for (var _fun74240_ip = 0;;) switch (_fun74240_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2.uniqueName;
                 var3 = null;
                 if (!(var3 != var0)) {
-                    _fun74221_ip = 29;
-                    continue _fun74221
+                    _fun74240_ip = 29;
+                    continue _fun74240
                 }
             case 15:
                 var1 = var2.uniqueName;
                 var0 = '';
                 if (!(var0 === var1)) {
-                    _fun74221_ip = 36;
-                    continue _fun74221
+                    _fun74240_ip = 36;
+                    continue _fun74240
                 }
             case 29:
                 var4 = var2.name;
-                _fun74221_ip = 42;
-                continue _fun74221;
+                _fun74240_ip = 42;
+                continue _fun74240;
             case 36:
                 var4 = var2.uniqueName;
             case 42:
                 var0 = var2.id;
                 if (!(var3 == var0)) {
-                    _fun74221_ip = 60;
-                    continue _fun74221
+                    _fun74240_ip = 60;
+                    continue _fun74240
                 }
             case 51:
                 var0 = var2.surrogates;
                 if (!(var3 == var0)) {
-                    _fun74221_ip = 165;
-                    continue _fun74221
+                    _fun74240_ip = 165;
+                    continue _fun74240
                 }
             case 60:
                 var1 = {};
@@ -70,13 +70,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.alt = var4;
                 var0 = var2.id;
                 if (!(var3 == var0)) {
-                    _fun74221_ip = 92;
-                    continue _fun74221
+                    _fun74240_ip = 92;
+                    continue _fun74240
                 }
             case 85:
                 var0 = var2.url;
-                _fun74221_ip = 158;
-                continue _fun74221;
+                _fun74240_ip = 158;
+                continue _fun74240;
             case 92:
                 var6 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.bind(var6)(var3);
             case 158:
                 var1.src = var0;
-                _fun74221_ip = 207;
-                continue _fun74221;
+                _fun74240_ip = 207;
+                continue _fun74240;
             case 165:
                 var0 = {};
                 var2 = var2.surrogates;
@@ -141,4 +141,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openEmojiActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1624, 1417, 1582, 3278, 9329, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1624, 1417, 1582, 3278, 9347, 1307, 2]);

@@ -5,8 +5,8 @@ import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
-import dt.n2;
-import dt.v1;
+import gt.n2;
+import gt.v1;
 import java.util.List;
 import kotlin.Lazy;
 import kotlin.Metadata;
@@ -18,8 +18,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-@at.m
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u001d\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 @2\u00020\u0001:\u0002?@Bg\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\b\b\u0002\u0010\r\u001a\u00020\u000e\u0012\f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010¢\u0006\u0004\b\u0012\u0010\u0013B}\b\u0010\u0012\u0006\u0010\u0014\u001a\u00020\u0003\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\u0006\u0010\r\u001a\u00020\u000e\u0012\u000e\u0010\u000f\u001a\n\u0012\u0004\u0012\u00020\u0011\u0018\u00010\u0010\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016¢\u0006\u0004\b\u0012\u0010\u0017J\t\u0010'\u001a\u00020\u0003HÆ\u0003J\t\u0010(\u001a\u00020\u0005HÆ\u0003J\t\u0010)\u001a\u00020\u0007HÆ\u0003J\t\u0010*\u001a\u00020\u0005HÆ\u0003J\u000b\u0010+\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010,\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010-\u001a\u00020\u0003HÆ\u0003J\t\u0010.\u001a\u00020\u0003HÆ\u0003J\t\u0010/\u001a\u00020\u000eHÆ\u0003J\u000f\u00100\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010HÆ\u0003Jw\u00101\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u000b\u001a\u00020\u00032\b\b\u0002\u0010\f\u001a\u00020\u00032\b\b\u0002\u0010\r\u001a\u00020\u000e2\u000e\b\u0002\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010HÆ\u0001J\u0013\u00102\u001a\u00020\u000e2\b\u00103\u001a\u0004\u0018\u000104HÖ\u0003J\t\u00105\u001a\u00020\u0003HÖ\u0001J\t\u00106\u001a\u00020\u0005HÖ\u0001J%\u00107\u001a\u0002082\u0006\u00109\u001a\u00020\u00002\u0006\u0010:\u001a\u00020;2\u0006\u0010<\u001a\u00020=H\u0001¢\u0006\u0002\b>R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u0014\u0010\u0006\u001a\u00020\u0007X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u0014\u0010\b\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001bR\u0016\u0010\t\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u001bR\u0016\u0010\n\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u001bR\u0014\u0010\u000b\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u0019R\u0014\u0010\f\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u0019R\u0014\u0010\r\u001a\u00020\u000eX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b#\u0010$R\u001a\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b%\u0010&¨\u0006A"}, d2 = {"Lcom/discord/chat/bridge/botuikit/RoleSelectComponent;", "Lcom/discord/chat/bridge/botuikit/SearchableSelectComponent;", "type", "", StackTraceHelper.ID_KEY, "", "state", "Lcom/discord/chat/bridge/botuikit/ActionComponentState;", "customId", ReactTextInputShadowNode.PROP_PLACEHOLDER, ViewProps.ACCESSIBILITY_LABEL, "minValues", "maxValues", "disabled", "", "selectedOptions", "", "Lcom/discord/chat/bridge/botuikit/SearchableSelectItem;", "<init>", "(ILjava/lang/String;Lcom/discord/chat/bridge/botuikit/ActionComponentState;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZLjava/util/List;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILjava/lang/String;Lcom/discord/chat/bridge/botuikit/ActionComponentState;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZLjava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getType", "()I", "getId", "()Ljava/lang/String;", "getState", "()Lcom/discord/chat/bridge/botuikit/ActionComponentState;", "getCustomId", "getPlaceholder", "getAccessibilityLabel", "getMinValues", "getMaxValues", "getDisabled", "()Z", "getSelectedOptions", "()Ljava/util/List;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "copy", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@dt.m
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class RoleSelectComponent extends SearchableSelectComponent {
     private final String accessibilityLabel;
@@ -29,7 +29,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8249id;
+    private final String f8634id;
     private final int maxValues;
     private final int minValues;
     private final String placeholder;
@@ -41,7 +41,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, lr.l.b(lr.o.f37120e, new Function0() { // from class: com.discord.chat.bridge.botuikit.i
+    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, or.l.b(or.o.f44232e, new Function0() { // from class: com.discord.chat.bridge.botuikit.i
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -73,7 +73,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
             v1.b(i10, 719, RoleSelectComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8249id = str;
+        this.f8634id = str;
         this.state = actionComponentState;
         this.customId = str2;
         if ((i10 & 16) == 0) {
@@ -98,7 +98,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new dt.f(SearchableSelectItem$$serializer.INSTANCE);
+        return new gt.f(SearchableSelectItem$$serializer.INSTANCE);
     }
 
     public static /* synthetic */ RoleSelectComponent copy$default(RoleSelectComponent roleSelectComponent, int i10, String str, ActionComponentState actionComponentState, String str2, String str3, String str4, int i11, int i12, boolean z10, List list, int i13, Object obj) {
@@ -106,7 +106,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
             i10 = roleSelectComponent.type;
         }
         if ((i13 & 2) != 0) {
-            str = roleSelectComponent.f8249id;
+            str = roleSelectComponent.f8634id;
         }
         if ((i13 & 4) != 0) {
             actionComponentState = roleSelectComponent.state;
@@ -145,22 +145,22 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
     public static final /* synthetic */ void write$Self$chat_release(RoleSelectComponent roleSelectComponent, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         SearchableSelectComponent.write$Self((SearchableSelectComponent) roleSelectComponent, compositeEncoder, serialDescriptor);
         Lazy[] lazyArr = $childSerializers;
-        compositeEncoder.w(serialDescriptor, 0, roleSelectComponent.getType());
-        compositeEncoder.y(serialDescriptor, 1, roleSelectComponent.getId());
-        compositeEncoder.D(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, roleSelectComponent.getState());
-        compositeEncoder.y(serialDescriptor, 3, roleSelectComponent.getCustomId());
+        compositeEncoder.v(serialDescriptor, 0, roleSelectComponent.getType());
+        compositeEncoder.x(serialDescriptor, 1, roleSelectComponent.getId());
+        compositeEncoder.l(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, roleSelectComponent.getState());
+        compositeEncoder.x(serialDescriptor, 3, roleSelectComponent.getCustomId());
         if (compositeEncoder.z(serialDescriptor, 4) || roleSelectComponent.getPlaceholder() != null) {
-            compositeEncoder.s(serialDescriptor, 4, n2.f20978a, roleSelectComponent.getPlaceholder());
+            compositeEncoder.A(serialDescriptor, 4, n2.f25302a, roleSelectComponent.getPlaceholder());
         }
         if (compositeEncoder.z(serialDescriptor, 5) || roleSelectComponent.getAccessibilityLabel() != null) {
-            compositeEncoder.s(serialDescriptor, 5, n2.f20978a, roleSelectComponent.getAccessibilityLabel());
+            compositeEncoder.A(serialDescriptor, 5, n2.f25302a, roleSelectComponent.getAccessibilityLabel());
         }
-        compositeEncoder.w(serialDescriptor, 6, roleSelectComponent.getMinValues());
-        compositeEncoder.w(serialDescriptor, 7, roleSelectComponent.getMaxValues());
+        compositeEncoder.v(serialDescriptor, 6, roleSelectComponent.getMinValues());
+        compositeEncoder.v(serialDescriptor, 7, roleSelectComponent.getMaxValues());
         if (compositeEncoder.z(serialDescriptor, 8) || roleSelectComponent.getDisabled()) {
-            compositeEncoder.x(serialDescriptor, 8, roleSelectComponent.getDisabled());
+            compositeEncoder.w(serialDescriptor, 8, roleSelectComponent.getDisabled());
         }
-        compositeEncoder.D(serialDescriptor, 9, (at.o) lazyArr[9].getValue(), roleSelectComponent.getSelectedOptions());
+        compositeEncoder.l(serialDescriptor, 9, (dt.o) lazyArr[9].getValue(), roleSelectComponent.getSelectedOptions());
     }
 
     public final int component1() {
@@ -174,7 +174,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
 
     @NotNull
     public final String component2() {
-        return this.f8249id;
+        return this.f8634id;
     }
 
     @NotNull
@@ -222,7 +222,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
         }
         if (obj instanceof RoleSelectComponent) {
             RoleSelectComponent roleSelectComponent = (RoleSelectComponent) obj;
-            return this.type == roleSelectComponent.type && Intrinsics.areEqual(this.f8249id, roleSelectComponent.f8249id) && this.state == roleSelectComponent.state && Intrinsics.areEqual(this.customId, roleSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, roleSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, roleSelectComponent.accessibilityLabel) && this.minValues == roleSelectComponent.minValues && this.maxValues == roleSelectComponent.maxValues && this.disabled == roleSelectComponent.disabled && Intrinsics.areEqual(this.selectedOptions, roleSelectComponent.selectedOptions);
+            return this.type == roleSelectComponent.type && Intrinsics.areEqual(this.f8634id, roleSelectComponent.f8634id) && this.state == roleSelectComponent.state && Intrinsics.areEqual(this.customId, roleSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, roleSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, roleSelectComponent.accessibilityLabel) && this.minValues == roleSelectComponent.minValues && this.maxValues == roleSelectComponent.maxValues && this.disabled == roleSelectComponent.disabled && Intrinsics.areEqual(this.selectedOptions, roleSelectComponent.selectedOptions);
         }
         return false;
     }
@@ -246,7 +246,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8249id;
+        return this.f8634id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.SelectComponent
@@ -282,7 +282,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f8249id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
+        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f8634id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
         String str = this.placeholder;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.accessibilityLabel;
@@ -292,7 +292,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8249id;
+        String str = this.f8634id;
         ActionComponentState actionComponentState = this.state;
         String str2 = this.customId;
         String str3 = this.placeholder;
@@ -316,7 +316,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
         Intrinsics.checkNotNullParameter(customId, "customId");
         Intrinsics.checkNotNullParameter(selectedOptions, "selectedOptions");
         this.type = i10;
-        this.f8249id = id2;
+        this.f8634id = id2;
         this.state = state;
         this.customId = customId;
         this.placeholder = str;

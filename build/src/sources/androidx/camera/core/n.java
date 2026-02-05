@@ -9,14 +9,18 @@ public interface n extends AutoCloseable {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
-        ByteBuffer e();
-
-        int f();
+        ByteBuffer f();
 
         int g();
+
+        int h();
     }
 
-    Image A();
+    p0 A();
+
+    void A0(Rect rect);
+
+    Image B();
 
     @Override // java.lang.AutoCloseable
     void close();
@@ -28,8 +32,4 @@ public interface n extends AutoCloseable {
     int getHeight();
 
     int getWidth();
-
-    p0 z();
-
-    void z0(Rect rect);
 }

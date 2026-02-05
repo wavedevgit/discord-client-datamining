@@ -60,7 +60,7 @@ public final class ReactNetworking {
             }
         }).c();
         try {
-            int i10 = ReactOkHttpNetworkFetcher.f10785a;
+            int i10 = ReactOkHttpNetworkFetcher.f11170a;
             Constructor declaredConstructor = ReactOkHttpNetworkFetcher.class.getDeclaredConstructor(OkHttpClient.class);
             declaredConstructor.setAccessible(true);
             Object newInstance = declaredConstructor.newInstance(c10);

@@ -7,10 +7,10 @@ import o8.j;
 public class h implements CacheKey {
 
     /* renamed from: a  reason: collision with root package name */
-    final String f28287a;
+    final String f27276a;
 
     /* renamed from: b  reason: collision with root package name */
-    final boolean f28288b;
+    final boolean f27277b;
 
     public h(String str) {
         this(str, false);
@@ -18,17 +18,17 @@ public class h implements CacheKey {
 
     @Override // com.facebook.cache.common.CacheKey
     public String a() {
-        return this.f28287a;
+        return this.f27276a;
     }
 
     @Override // com.facebook.cache.common.CacheKey
     public boolean b(Uri uri) {
-        return this.f28287a.contains(uri.toString());
+        return this.f27276a.contains(uri.toString());
     }
 
     @Override // com.facebook.cache.common.CacheKey
     public boolean c() {
-        return this.f28288b;
+        return this.f27277b;
     }
 
     @Override // com.facebook.cache.common.CacheKey
@@ -37,22 +37,22 @@ public class h implements CacheKey {
             return true;
         }
         if (obj instanceof h) {
-            return this.f28287a.equals(((h) obj).f28287a);
+            return this.f27276a.equals(((h) obj).f27276a);
         }
         return false;
     }
 
     @Override // com.facebook.cache.common.CacheKey
     public int hashCode() {
-        return this.f28287a.hashCode();
+        return this.f27276a.hashCode();
     }
 
     public String toString() {
-        return this.f28287a;
+        return this.f27276a;
     }
 
     public h(String str, boolean z10) {
-        this.f28287a = (String) j.g(str);
-        this.f28288b = z10;
+        this.f27276a = (String) j.g(str);
+        this.f27277b = z10;
     }
 }

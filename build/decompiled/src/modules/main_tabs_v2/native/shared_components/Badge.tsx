@@ -57,30 +57,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot2 = var4;
     var4 = var7.memo;
     var3 = function arg0() {
-        _fun71194: for (var _fun71194_ip = 0;;) switch (_fun71194_ip) {
+        _fun71212: for (var _fun71212_ip = 0;;) switch (_fun71212_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.size;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun71194_ip = 17;
-                    continue _fun71194
+                    _fun71212_ip = 17;
+                    continue _fun71212
                 }
             case 14:
                 var9 = 12;
             case 17:
                 var1 = var0.maskSize;
                 if (!(var1 === var3)) {
-                    _fun71194_ip = 30;
-                    continue _fun71194
+                    _fun71212_ip = 30;
+                    continue _fun71212
                 }
             case 27:
                 var1 = 4;
             case 30:
                 var7 = var0.classic;
                 if (!(var7 === var3)) {
-                    _fun71194_ip = 42;
-                    continue _fun71194
+                    _fun71212_ip = 42;
+                    continue _fun71212
                 }
             case 40:
                 var7 = false;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 != var4;
                 var11 = undefined;
                 if (!var1) {
-                    _fun71194_ip = 117;
-                    continue _fun71194
+                    _fun71212_ip = 117;
+                    continue _fun71212
                 }
             case 92:
                 var1 = {};
@@ -120,13 +120,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var4;
                 var4 = {};
                 if (var7) {
-                    _fun71194_ip = 166;
-                    continue _fun71194
+                    _fun71212_ip = 166;
+                    continue _fun71212
                 }
             case 158:
                 var7 = var5.badge;
-                _fun71194_ip = 172;
-                continue _fun71194;
+                _fun71212_ip = 172;
+                continue _fun71212;
             case 166:
                 var7 = var5.badgeClassic;
             case 172:

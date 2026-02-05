@@ -1,47 +1,35 @@
 package el;
 
-import android.graphics.Paint;
-import com.henninghall.date_picker.n;
-import java.util.ArrayList;
-import java.util.Calendar;
+import com.facebook.react.bridge.Dynamic;
+import java.util.Locale;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class f extends g {
-    public f(com.henninghall.date_picker.pickers.a aVar, n nVar) {
-        super(aVar, nVar);
+public class f extends k {
+
+    /* renamed from: b  reason: collision with root package name */
+    private String f21633b;
+
+    public f() {
+        super(e());
+        this.f21633b = d();
     }
 
-    @Override // el.g
-    public String e() {
-        return "LLLL";
+    private static String d() {
+        return Locale.getDefault().toLanguageTag().replace('-', '_');
     }
 
-    @Override // el.g
-    public Paint.Align k() {
-        return Paint.Align.LEFT;
+    private static Locale e() {
+        return com.henninghall.date_picker.h.f(d());
     }
 
-    @Override // el.g
-    public ArrayList n() {
-        ArrayList arrayList = new ArrayList();
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(2, 0);
-        for (int i10 = 0; i10 <= 11; i10++) {
-            arrayList.add(h(calendar));
-            calendar.add(2, 1);
-        }
-        return arrayList;
+    public String f() {
+        return this.f21633b;
     }
 
-    @Override // el.g
-    public boolean u() {
-        if (this.f21636a.z() == al.b.date) {
-            return true;
-        }
-        return false;
-    }
-
-    @Override // el.g
-    public boolean v() {
-        return true;
+    @Override // el.k
+    /* renamed from: g */
+    public Locale c(Dynamic dynamic) {
+        String replace = dynamic.asString().replace('-', '_');
+        this.f21633b = replace;
+        return com.henninghall.date_picker.h.f(replace);
     }
 }

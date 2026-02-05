@@ -40,21 +40,21 @@ public final class StepStyles_GovernmentIdStepTitleComponentStyleJsonAdapter ext
     @NotNull
     public StepStyles.GovernmentIdStepTitleComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer = null;
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 stepTextBasedComponentStyleContainer = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 stepTextBasedComponentStyleContainer2 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.GovernmentIdStepTitleComponentStyle(stepTextBasedComponentStyleContainer, stepTextBasedComponentStyleContainer2);
     }
 
@@ -62,10 +62,10 @@ public final class StepStyles_GovernmentIdStepTitleComponentStyleJsonAdapter ext
     public void toJson(@NotNull t writer, StepStyles.GovernmentIdStepTitleComponentStyle governmentIdStepTitleComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepTitleComponentStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, governmentIdStepTitleComponentStyle.getBase());
-            writer.A0("governmentIdProcessingTitle");
+            writer.W("governmentIdProcessingTitle");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, governmentIdStepTitleComponentStyle.getGovernmentIdProcessingTitle());
             writer.E();
             return;

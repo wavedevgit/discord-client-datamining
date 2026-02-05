@@ -1,66 +1,66 @@
 package pg;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class z6 implements ui.d {
+final class z6 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z6 f46002a = new z6();
+    static final z6 f45932a = new z6();
 
     static {
-        c.b a10 = ui.c.a("source");
+        c.b a10 = xi.c.a("source");
         v1 v1Var = new v1();
         v1Var.a(1);
         a10.b(v1Var.b()).a();
-        c.b a11 = ui.c.a("appliedFilter");
+        c.b a11 = xi.c.a("appliedFilter");
         v1 v1Var2 = new v1();
         v1Var2.a(2);
         a11.b(v1Var2.b()).a();
-        c.b a12 = ui.c.a("isAutoCaptureManuallyTriggered");
+        c.b a12 = xi.c.a("isAutoCaptureManuallyTriggered");
         v1 v1Var3 = new v1();
         v1Var3.a(3);
         a12.b(v1Var3.b()).a();
-        c.b a13 = ui.c.a("isRotated");
+        c.b a13 = xi.c.a("isRotated");
         v1 v1Var4 = new v1();
         v1Var4.a(4);
         a13.b(v1Var4.b()).a();
-        c.b a14 = ui.c.a("hasLowConfidenceProposedCorners");
+        c.b a14 = xi.c.a("hasLowConfidenceProposedCorners");
         v1 v1Var5 = new v1();
         v1Var5.a(5);
         a14.b(v1Var5.b()).a();
-        c.b a15 = ui.c.a("autoCaptureTriggerLatencyMs");
+        c.b a15 = xi.c.a("autoCaptureTriggerLatencyMs");
         v1 v1Var6 = new v1();
         v1Var6.a(6);
         a15.b(v1Var6.b()).a();
-        c.b a16 = ui.c.a("galleryImportProcessingMs");
+        c.b a16 = xi.c.a("galleryImportProcessingMs");
         v1 v1Var7 = new v1();
         v1Var7.a(7);
         a16.b(v1Var7.b()).a();
-        c.b a17 = ui.c.a("imageWidth");
+        c.b a17 = xi.c.a("imageWidth");
         v1 v1Var8 = new v1();
         v1Var8.a(8);
         a17.b(v1Var8.b()).a();
-        c.b a18 = ui.c.a("imageHeight");
+        c.b a18 = xi.c.a("imageHeight");
         v1 v1Var9 = new v1();
         v1Var9.a(9);
         a18.b(v1Var9.b()).a();
-        c.b a19 = ui.c.a("proposedCorners");
+        c.b a19 = xi.c.a("proposedCorners");
         v1 v1Var10 = new v1();
         v1Var10.a(10);
         a19.b(v1Var10.b()).a();
-        c.b a20 = ui.c.a("adjustedCorners");
+        c.b a20 = xi.c.a("adjustedCorners");
         v1 v1Var11 = new v1();
         v1Var11.a(11);
         a20.b(v1Var11.b()).a();
-        c.b a21 = ui.c.a("isShadowRemoved");
+        c.b a21 = xi.c.a("isShadowRemoved");
         v1 v1Var12 = new v1();
         v1Var12.a(12);
         a21.b(v1Var12.b()).a();
-        c.b a22 = ui.c.a("numOfAppliedCleanUpStrokes");
+        c.b a22 = xi.c.a("numOfAppliedCleanUpStrokes");
         v1 v1Var13 = new v1();
         v1Var13.a(13);
         a22.b(v1Var13.b()).a();
-        c.b a23 = ui.c.a("numOfAttemptedCleanUpStrokes");
+        c.b a23 = xi.c.a("numOfAttemptedCleanUpStrokes");
         v1 v1Var14 = new v1();
         v1Var14.a(14);
         a23.b(v1Var14.b()).a();
@@ -69,10 +69,10 @@ final class z6 implements ui.d {
     private z6() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

@@ -14,7 +14,7 @@ public class l implements la.a {
         @Override // la.b0
         /* renamed from: b */
         public int a(sa.e eVar) {
-            return eVar.t();
+            return eVar.u();
         }
     }
 

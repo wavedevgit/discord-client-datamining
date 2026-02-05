@@ -21,40 +21,40 @@ import p2.l;
 public final class l extends m2.b {
 
     /* renamed from: g  reason: collision with root package name */
-    private final Context f44883g;
+    private final Context f44813g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends Lambda implements Function1 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ CancellationSignal f44885e;
+        final /* synthetic */ CancellationSignal f44815e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Executor f44886i;
+        final /* synthetic */ Executor f44816i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ g2.j f44887o;
+        final /* synthetic */ g2.j f44817o;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: p2.l$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0557a extends Lambda implements Function0 {
+        public static final class C0566a extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Executor f44888d;
+            final /* synthetic */ Executor f44818d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ g2.j f44889e;
+            final /* synthetic */ g2.j f44819e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ d0 f44890i;
+            final /* synthetic */ d0 f44820i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0557a(Executor executor, g2.j jVar, d0 d0Var) {
+            C0566a(Executor executor, g2.j jVar, d0 d0Var) {
                 super(0);
-                this.f44888d = executor;
-                this.f44889e = jVar;
-                this.f44890i = d0Var;
+                this.f44818d = executor;
+                this.f44819e = jVar;
+                this.f44820i = d0Var;
             }
 
             /* JADX INFO: Access modifiers changed from: private */
@@ -64,19 +64,19 @@ public final class l extends m2.b {
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m1224invoke();
-                return Unit.f32464a;
+                m1226invoke();
+                return Unit.f31988a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m1224invoke() {
-                Executor executor = this.f44888d;
-                final g2.j jVar = this.f44889e;
-                final d0 d0Var = this.f44890i;
+            public final void m1226invoke() {
+                Executor executor = this.f44818d;
+                final g2.j jVar = this.f44819e;
+                final d0 d0Var = this.f44820i;
                 executor.execute(new Runnable() { // from class: p2.k
                     @Override // java.lang.Runnable
                     public final void run() {
-                        l.a.C0557a.b(g2.j.this, d0Var);
+                        l.a.C0566a.b(g2.j.this, d0Var);
                     }
                 });
             }
@@ -87,20 +87,20 @@ public final class l extends m2.b {
         public static final class b extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Executor f44891d;
+            final /* synthetic */ Executor f44821d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ g2.j f44892e;
+            final /* synthetic */ g2.j f44822e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Exception f44893i;
+            final /* synthetic */ Exception f44823i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             b(Executor executor, g2.j jVar, Exception exc) {
                 super(0);
-                this.f44891d = executor;
-                this.f44892e = jVar;
-                this.f44893i = exc;
+                this.f44821d = executor;
+                this.f44822e = jVar;
+                this.f44823i = exc;
             }
 
             /* JADX INFO: Access modifiers changed from: private */
@@ -116,15 +116,15 @@ public final class l extends m2.b {
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m1225invoke();
-                return Unit.f32464a;
+                m1227invoke();
+                return Unit.f31988a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m1225invoke() {
-                Executor executor = this.f44891d;
-                final g2.j jVar = this.f44892e;
-                final Exception exc = this.f44893i;
+            public final void m1227invoke() {
+                Executor executor = this.f44821d;
+                final g2.j jVar = this.f44822e;
+                final Exception exc = this.f44823i;
                 executor.execute(new Runnable() { // from class: p2.m
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -137,9 +137,9 @@ public final class l extends m2.b {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(CancellationSignal cancellationSignal, Executor executor, g2.j jVar) {
             super(1);
-            this.f44885e = cancellationSignal;
-            this.f44886i = executor;
-            this.f44887o = jVar;
+            this.f44815e = cancellationSignal;
+            this.f44816i = executor;
+            this.f44817o = jVar;
         }
 
         public final void a(af.c cVar) {
@@ -147,18 +147,18 @@ public final class l extends m2.b {
                 l lVar = l.this;
                 Intrinsics.checkNotNull(cVar);
                 d0 m10 = lVar.m(cVar);
-                b.a aVar = m2.b.f37584f;
-                m2.b.e(this.f44885e, new C0557a(this.f44886i, this.f44887o, m10));
+                b.a aVar = m2.b.f37246f;
+                m2.b.e(this.f44815e, new C0566a(this.f44816i, this.f44817o, m10));
             } catch (Exception e10) {
-                b.a aVar2 = m2.b.f37584f;
-                m2.b.e(this.f44885e, new b(this.f44886i, this.f44887o, e10));
+                b.a aVar2 = m2.b.f37246f;
+                m2.b.e(this.f44815e, new b(this.f44816i, this.f44817o, e10));
             }
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((af.c) obj);
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
     }
 
@@ -167,20 +167,20 @@ public final class l extends m2.b {
     public static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Executor f44894d;
+        final /* synthetic */ Executor f44824d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ g2.j f44895e;
+        final /* synthetic */ g2.j f44825e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f44896i;
+        final /* synthetic */ Ref.ObjectRef f44826i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Executor executor, g2.j jVar, Ref.ObjectRef objectRef) {
             super(0);
-            this.f44894d = executor;
-            this.f44895e = jVar;
-            this.f44896i = objectRef;
+            this.f44824d = executor;
+            this.f44825e = jVar;
+            this.f44826i = objectRef;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -190,15 +190,15 @@ public final class l extends m2.b {
 
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
-            m1226invoke();
-            return Unit.f32464a;
+            m1228invoke();
+            return Unit.f31988a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
-        public final void m1226invoke() {
-            Executor executor = this.f44894d;
-            final g2.j jVar = this.f44895e;
-            final Ref.ObjectRef objectRef = this.f44896i;
+        public final void m1228invoke() {
+            Executor executor = this.f44824d;
+            final g2.j jVar = this.f44825e;
+            final Ref.ObjectRef objectRef = this.f44826i;
             executor.execute(new Runnable() { // from class: p2.n
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -212,7 +212,7 @@ public final class l extends m2.b {
     public l(Context context) {
         super(context);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f44883g = context;
+        this.f44813g = context;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -249,7 +249,7 @@ public final class l extends m2.b {
 
     public d0 m(af.c response) {
         Intrinsics.checkNotNullParameter(response, "response");
-        return new d0(g2.h.f24894c.b("androidx.credentials.TYPE_RESTORE_CREDENTIAL", response.b()));
+        return new d0(g2.h.f23593c.b("androidx.credentials.TYPE_RESTORE_CREDENTIAL", response.b()));
     }
 
     public void n(c0 request, final g2.j callback, final Executor executor, final CancellationSignal cancellationSignal) {
@@ -259,15 +259,15 @@ public final class l extends m2.b {
         if (CredentialProviderPlayServicesImpl.Companion.a(cancellationSignal)) {
             return;
         }
-        Task l10 = af.e.a(this.f44883g).l(l(request));
+        Task l10 = af.e.a(this.f44813g).l(l(request));
         final a aVar = new a(cancellationSignal, executor, callback);
-        l10.g(new wg.g() { // from class: p2.i
-            @Override // wg.g
+        l10.g(new xg.g() { // from class: p2.i
+            @Override // xg.g
             public final void onSuccess(Object obj) {
                 l.o(Function1.this, obj);
             }
-        }).e(new wg.f() { // from class: p2.j
-            @Override // wg.f
+        }).e(new xg.f() { // from class: p2.j
+            @Override // xg.f
             public final void onFailure(Exception exc) {
                 l.p(cancellationSignal, executor, callback, exc);
             }

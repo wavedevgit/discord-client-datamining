@@ -1,17 +1,17 @@
 package kotlinx.coroutines;
 
 import java.util.concurrent.CancellationException;
-import js.n0;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.sequences.Sequence;
+import ms.n0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface Job extends CoroutineContext.Element {
 
     /* renamed from: h  reason: collision with root package name */
-    public static final b f35473h = b.f35474d;
+    public static final b f34997h = b.f34998d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -47,7 +47,7 @@ public interface Job extends CoroutineContext.Element {
     public static final class b implements CoroutineContext.b {
 
         /* renamed from: d  reason: collision with root package name */
-        static final /* synthetic */ b f35474d = new b();
+        static final /* synthetic */ b f34998d = new b();
 
         private b() {
         }
@@ -61,6 +61,8 @@ public interface Job extends CoroutineContext.Element {
 
     Object Y0(Continuation continuation);
 
+    ms.n Z0(ms.o oVar);
+
     boolean a();
 
     Sequence getChildren();
@@ -72,6 +74,4 @@ public interface Job extends CoroutineContext.Element {
     boolean isCompleted();
 
     boolean start();
-
-    js.n x1(js.o oVar);
 }

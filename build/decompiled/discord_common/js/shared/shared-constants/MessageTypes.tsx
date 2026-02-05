@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             value: var7
         }
     });
-    var10 = [1, 2, 3, 4, 5, 21, 56, 57];
+    var10 = [1, 2, 3, 4, 5, 21, 56, 57, 64];
     var11 = var6;
     var5 = new var11[var7](var10, var9);
     var5 = var5 instanceof Object ? var5 : var6;

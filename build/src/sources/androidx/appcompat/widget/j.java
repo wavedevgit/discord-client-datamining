@@ -15,35 +15,35 @@ import androidx.appcompat.widget.m0;
 public final class j {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final PorterDuff.Mode f1712b = PorterDuff.Mode.SRC_IN;
+    private static final PorterDuff.Mode f1824b = PorterDuff.Mode.SRC_IN;
 
     /* renamed from: c  reason: collision with root package name */
-    private static j f1713c;
+    private static j f1825c;
 
     /* renamed from: a  reason: collision with root package name */
-    private m0 f1714a;
+    private m0 f1826a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements m0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int[] f1715a = {f.e.R, f.e.P, f.e.f22920a};
+        private final int[] f1827a = {f.e.R, f.e.P, f.e.f21945a};
 
         /* renamed from: b  reason: collision with root package name */
-        private final int[] f1716b = {f.e.f22934o, f.e.B, f.e.f22939t, f.e.f22935p, f.e.f22936q, f.e.f22938s, f.e.f22937r};
+        private final int[] f1828b = {f.e.f21959o, f.e.B, f.e.f21964t, f.e.f21960p, f.e.f21961q, f.e.f21963s, f.e.f21962r};
 
         /* renamed from: c  reason: collision with root package name */
-        private final int[] f1717c = {f.e.O, f.e.Q, f.e.f22930k, f.e.K, f.e.L, f.e.M, f.e.N};
+        private final int[] f1829c = {f.e.O, f.e.Q, f.e.f21955k, f.e.K, f.e.L, f.e.M, f.e.N};
 
         /* renamed from: d  reason: collision with root package name */
-        private final int[] f1718d = {f.e.f22942w, f.e.f22928i, f.e.f22941v};
+        private final int[] f1830d = {f.e.f21967w, f.e.f21953i, f.e.f21966v};
 
         /* renamed from: e  reason: collision with root package name */
-        private final int[] f1719e = {f.e.J, f.e.S};
+        private final int[] f1831e = {f.e.J, f.e.S};
 
         /* renamed from: f  reason: collision with root package name */
-        private final int[] f1720f = {f.e.f22922c, f.e.f22926g, f.e.f22923d, f.e.f22927h};
+        private final int[] f1832f = {f.e.f21947c, f.e.f21951g, f.e.f21948d, f.e.f21952h};
 
         a() {
         }
@@ -62,37 +62,37 @@ public final class j {
         }
 
         private ColorStateList h(Context context, int i10) {
-            int c10 = r0.c(context, f.a.f22891t);
-            return new ColorStateList(new int[][]{r0.f1791b, r0.f1794e, r0.f1792c, r0.f1798i}, new int[]{r0.b(context, f.a.f22889r), r1.c.h(c10, i10), r1.c.h(c10, i10), i10});
+            int c10 = r0.c(context, f.a.f21916t);
+            return new ColorStateList(new int[][]{r0.f1903b, r0.f1906e, r0.f1904c, r0.f1910i}, new int[]{r0.b(context, f.a.f21914r), r1.c.h(c10, i10), r1.c.h(c10, i10), i10});
         }
 
         private ColorStateList i(Context context) {
-            return h(context, r0.c(context, f.a.f22888q));
+            return h(context, r0.c(context, f.a.f21913q));
         }
 
         private ColorStateList j(Context context) {
-            return h(context, r0.c(context, f.a.f22889r));
+            return h(context, r0.c(context, f.a.f21914r));
         }
 
         private ColorStateList k(Context context) {
             int[][] iArr = new int[3];
             int[] iArr2 = new int[3];
-            ColorStateList e10 = r0.e(context, f.a.f22894w);
+            ColorStateList e10 = r0.e(context, f.a.f21919w);
             if (e10 != null && e10.isStateful()) {
-                int[] iArr3 = r0.f1791b;
+                int[] iArr3 = r0.f1903b;
                 iArr[0] = iArr3;
                 iArr2[0] = e10.getColorForState(iArr3, 0);
-                iArr[1] = r0.f1795f;
-                iArr2[1] = r0.c(context, f.a.f22890s);
-                iArr[2] = r0.f1798i;
+                iArr[1] = r0.f1907f;
+                iArr2[1] = r0.c(context, f.a.f21915s);
+                iArr[2] = r0.f1910i;
                 iArr2[2] = e10.getDefaultColor();
             } else {
-                iArr[0] = r0.f1791b;
-                iArr2[0] = r0.b(context, f.a.f22894w);
-                iArr[1] = r0.f1795f;
-                iArr2[1] = r0.c(context, f.a.f22890s);
-                iArr[2] = r0.f1798i;
-                iArr2[2] = r0.c(context, f.a.f22894w);
+                iArr[0] = r0.f1903b;
+                iArr2[0] = r0.b(context, f.a.f21919w);
+                iArr[1] = r0.f1907f;
+                iArr2[1] = r0.c(context, f.a.f21915s);
+                iArr[2] = r0.f1910i;
+                iArr2[2] = r0.c(context, f.a.f21919w);
             }
             return new ColorStateList(iArr, iArr2);
         }
@@ -135,64 +135,64 @@ public final class j {
         private void m(Drawable drawable, int i10, PorterDuff.Mode mode) {
             Drawable mutate = drawable.mutate();
             if (mode == null) {
-                mode = j.f1712b;
+                mode = j.f1824b;
             }
             mutate.setColorFilter(j.e(i10, mode));
         }
 
         @Override // androidx.appcompat.widget.m0.c
         public Drawable a(m0 m0Var, Context context, int i10) {
-            if (i10 == f.e.f22929j) {
-                return new LayerDrawable(new Drawable[]{m0Var.i(context, f.e.f22928i), m0Var.i(context, f.e.f22930k)});
+            if (i10 == f.e.f21954j) {
+                return new LayerDrawable(new Drawable[]{m0Var.i(context, f.e.f21953i), m0Var.i(context, f.e.f21955k)});
             }
-            if (i10 == f.e.f22944y) {
-                return l(m0Var, context, f.d.f22913g);
+            if (i10 == f.e.f21969y) {
+                return l(m0Var, context, f.d.f21938g);
             }
-            if (i10 == f.e.f22943x) {
-                return l(m0Var, context, f.d.f22914h);
+            if (i10 == f.e.f21968x) {
+                return l(m0Var, context, f.d.f21939h);
             }
-            if (i10 == f.e.f22945z) {
-                return l(m0Var, context, f.d.f22915i);
+            if (i10 == f.e.f21970z) {
+                return l(m0Var, context, f.d.f21940i);
             }
             return null;
         }
 
         @Override // androidx.appcompat.widget.m0.c
         public ColorStateList b(Context context, int i10) {
-            if (i10 == f.e.f22932m) {
-                return g.a.a(context, f.c.f22903e);
+            if (i10 == f.e.f21957m) {
+                return g.a.a(context, f.c.f21928e);
             }
             if (i10 == f.e.I) {
-                return g.a.a(context, f.c.f22906h);
+                return g.a.a(context, f.c.f21931h);
             }
             if (i10 == f.e.H) {
                 return k(context);
             }
-            if (i10 == f.e.f22925f) {
+            if (i10 == f.e.f21950f) {
                 return j(context);
             }
-            if (i10 == f.e.f22921b) {
+            if (i10 == f.e.f21946b) {
                 return g(context);
             }
-            if (i10 == f.e.f22924e) {
+            if (i10 == f.e.f21949e) {
                 return i(context);
             }
             if (i10 != f.e.D && i10 != f.e.E) {
-                if (f(this.f1716b, i10)) {
-                    return r0.e(context, f.a.f22892u);
+                if (f(this.f1828b, i10)) {
+                    return r0.e(context, f.a.f21917u);
                 }
-                if (f(this.f1719e, i10)) {
-                    return g.a.a(context, f.c.f22902d);
+                if (f(this.f1831e, i10)) {
+                    return g.a.a(context, f.c.f21927d);
                 }
-                if (f(this.f1720f, i10)) {
-                    return g.a.a(context, f.c.f22901c);
+                if (f(this.f1832f, i10)) {
+                    return g.a.a(context, f.c.f21926c);
                 }
                 if (i10 == f.e.A) {
-                    return g.a.a(context, f.c.f22904f);
+                    return g.a.a(context, f.c.f21929f);
                 }
                 return null;
             }
-            return g.a.a(context, f.c.f22905g);
+            return g.a.a(context, f.c.f21930g);
         }
 
         /* JADX WARN: Removed duplicated region for block: B:23:0x0050  */
@@ -206,13 +206,13 @@ public final class j {
             /*
                 r6 = this;
                 android.graphics.PorterDuff$Mode r0 = androidx.appcompat.widget.j.a()
-                int[] r1 = r6.f1715a
+                int[] r1 = r6.f1827a
                 boolean r1 = r6.f(r1, r8)
                 r2 = 1
                 r3 = 0
                 r4 = -1
                 if (r1 == 0) goto L15
-                int r8 = f.a.f22892u
+                int r8 = f.a.f21917u
             L11:
                 r1 = r0
                 r5 = r2
@@ -220,13 +220,13 @@ public final class j {
                 r0 = r4
                 goto L4e
             L15:
-                int[] r1 = r6.f1717c
+                int[] r1 = r6.f1829c
                 boolean r1 = r6.f(r1, r8)
                 if (r1 == 0) goto L20
-                int r8 = f.a.f22890s
+                int r8 = f.a.f21915s
                 goto L11
             L20:
-                int[] r1 = r6.f1718d
+                int[] r1 = r6.f1830d
                 boolean r1 = r6.f(r1, r8)
                 r5 = 16842801(0x1010031, float:2.3693695E-38)
                 if (r1 == 0) goto L32
@@ -239,7 +239,7 @@ public final class j {
                 r5 = r2
                 goto L4e
             L32:
-                int r1 = f.e.f22940u
+                int r1 = f.e.f21965u
                 if (r8 != r1) goto L45
                 r8 = 1109603123(0x42233333, float:40.8)
                 int r8 = java.lang.Math.round(r8)
@@ -250,7 +250,7 @@ public final class j {
                 r1 = r5
                 goto L30
             L45:
-                int r1 = f.e.f22931l
+                int r1 = f.e.f21956l
                 if (r8 != r1) goto L4a
                 goto L2d
             L4a:
@@ -286,17 +286,17 @@ public final class j {
         public boolean e(Context context, int i10, Drawable drawable) {
             if (i10 == f.e.C) {
                 LayerDrawable layerDrawable = (LayerDrawable) drawable;
-                m(layerDrawable.findDrawableByLayerId(16908288), r0.c(context, f.a.f22892u), j.f1712b);
-                m(layerDrawable.findDrawableByLayerId(16908303), r0.c(context, f.a.f22892u), j.f1712b);
-                m(layerDrawable.findDrawableByLayerId(16908301), r0.c(context, f.a.f22890s), j.f1712b);
+                m(layerDrawable.findDrawableByLayerId(16908288), r0.c(context, f.a.f21917u), j.f1824b);
+                m(layerDrawable.findDrawableByLayerId(16908303), r0.c(context, f.a.f21917u), j.f1824b);
+                m(layerDrawable.findDrawableByLayerId(16908301), r0.c(context, f.a.f21915s), j.f1824b);
                 return true;
-            } else if (i10 != f.e.f22944y && i10 != f.e.f22943x && i10 != f.e.f22945z) {
+            } else if (i10 != f.e.f21969y && i10 != f.e.f21968x && i10 != f.e.f21970z) {
                 return false;
             } else {
                 LayerDrawable layerDrawable2 = (LayerDrawable) drawable;
-                m(layerDrawable2.findDrawableByLayerId(16908288), r0.b(context, f.a.f22892u), j.f1712b);
-                m(layerDrawable2.findDrawableByLayerId(16908303), r0.c(context, f.a.f22890s), j.f1712b);
-                m(layerDrawable2.findDrawableByLayerId(16908301), r0.c(context, f.a.f22890s), j.f1712b);
+                m(layerDrawable2.findDrawableByLayerId(16908288), r0.b(context, f.a.f21917u), j.f1824b);
+                m(layerDrawable2.findDrawableByLayerId(16908303), r0.c(context, f.a.f21915s), j.f1824b);
+                m(layerDrawable2.findDrawableByLayerId(16908301), r0.c(context, f.a.f21915s), j.f1824b);
                 return true;
             }
         }
@@ -306,10 +306,10 @@ public final class j {
         j jVar;
         synchronized (j.class) {
             try {
-                if (f1713c == null) {
+                if (f1825c == null) {
                     h();
                 }
-                jVar = f1713c;
+                jVar = f1825c;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -327,11 +327,11 @@ public final class j {
 
     public static synchronized void h() {
         synchronized (j.class) {
-            if (f1713c == null) {
+            if (f1825c == null) {
                 j jVar = new j();
-                f1713c = jVar;
-                jVar.f1714a = m0.g();
-                f1713c.f1714a.t(new a());
+                f1825c = jVar;
+                jVar.f1826a = m0.g();
+                f1825c.f1826a.t(new a());
             }
         }
     }
@@ -342,20 +342,20 @@ public final class j {
     }
 
     public synchronized Drawable c(Context context, int i10) {
-        return this.f1714a.i(context, i10);
+        return this.f1826a.i(context, i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized Drawable d(Context context, int i10, boolean z10) {
-        return this.f1714a.j(context, i10, z10);
+        return this.f1826a.j(context, i10, z10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized ColorStateList f(Context context, int i10) {
-        return this.f1714a.l(context, i10);
+        return this.f1826a.l(context, i10);
     }
 
     public synchronized void g(Context context) {
-        this.f1714a.r(context);
+        this.f1826a.r(context);
     }
 }

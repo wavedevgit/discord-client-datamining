@@ -74,82 +74,82 @@ public abstract class r extends com.google.android.exoplayer2.f {
     private float Z;
 
     /* renamed from: a0  reason: collision with root package name */
-    private ArrayDeque f23797a0;
+    private ArrayDeque f22822a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    private b f23798b0;
+    private b f22823b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    private q f23799c0;
+    private q f22824c0;
 
     /* renamed from: d0  reason: collision with root package name */
-    private int f23800d0;
+    private int f22825d0;
 
     /* renamed from: e0  reason: collision with root package name */
-    private boolean f23801e0;
+    private boolean f22826e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    private boolean f23802f0;
+    private boolean f22827f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private boolean f23803g0;
+    private boolean f22828g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    private boolean f23804h0;
+    private boolean f22829h0;
 
     /* renamed from: i0  reason: collision with root package name */
-    private boolean f23805i0;
+    private boolean f22830i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private boolean f23806j0;
+    private boolean f22831j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private boolean f23807k0;
+    private boolean f22832k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private boolean f23808l0;
+    private boolean f22833l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private boolean f23809m0;
+    private boolean f22834m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private boolean f23810n0;
+    private boolean f22835n0;
 
     /* renamed from: o0  reason: collision with root package name */
-    private i f23811o0;
+    private i f22836o0;
 
     /* renamed from: p0  reason: collision with root package name */
-    private long f23812p0;
+    private long f22837p0;
 
     /* renamed from: q0  reason: collision with root package name */
-    private int f23813q0;
+    private int f22838q0;
 
     /* renamed from: r0  reason: collision with root package name */
-    private int f23814r0;
+    private int f22839r0;
 
     /* renamed from: s0  reason: collision with root package name */
-    private ByteBuffer f23815s0;
+    private ByteBuffer f22840s0;
 
     /* renamed from: t0  reason: collision with root package name */
-    private boolean f23816t0;
+    private boolean f22841t0;
 
     /* renamed from: u0  reason: collision with root package name */
-    private boolean f23817u0;
+    private boolean f22842u0;
 
     /* renamed from: v0  reason: collision with root package name */
-    private boolean f23818v0;
+    private boolean f22843v0;
 
     /* renamed from: w0  reason: collision with root package name */
-    private boolean f23819w0;
+    private boolean f22844w0;
 
     /* renamed from: x0  reason: collision with root package name */
-    private boolean f23820x0;
+    private boolean f22845x0;
 
     /* renamed from: y0  reason: collision with root package name */
-    private boolean f23821y0;
+    private boolean f22846y0;
 
     /* renamed from: z0  reason: collision with root package name */
-    private int f23822z0;
+    private int f22847z0;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -159,7 +159,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
             LogSessionId a10 = t1Var.a();
             logSessionId = LogSessionId.LOG_SESSION_ID_NONE;
             if (!a10.equals(logSessionId)) {
-                aVar.f23779b.setString("log-session-id", a10.getStringId());
+                aVar.f22804b.setString("log-session-id", a10.getStringId());
             }
         }
     }
@@ -169,24 +169,24 @@ public abstract class r extends com.google.android.exoplayer2.f {
     public static final class c {
 
         /* renamed from: e  reason: collision with root package name */
-        public static final c f23828e = new c(-9223372036854775807L, -9223372036854775807L, -9223372036854775807L);
+        public static final c f22853e = new c(-9223372036854775807L, -9223372036854775807L, -9223372036854775807L);
 
         /* renamed from: a  reason: collision with root package name */
-        public final long f23829a;
+        public final long f22854a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f23830b;
+        public final long f22855b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final long f23831c;
+        public final long f22856c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final r0 f23832d = new r0();
+        public final r0 f22857d = new r0();
 
         public c(long j10, long j11, long j12) {
-            this.f23829a = j10;
-            this.f23830b = j11;
-            this.f23831c = j12;
+            this.f22854a = j10;
+            this.f22855b = j11;
+            this.f22856c = j12;
         }
     }
 
@@ -207,16 +207,16 @@ public abstract class r extends com.google.android.exoplayer2.f {
         this.U = 1.0f;
         this.S = -9223372036854775807L;
         this.K = new ArrayDeque();
-        o1(c.f23828e);
+        o1(c.f22853e);
         hVar.u(0);
-        hVar.f47497i.order(ByteOrder.nativeOrder());
+        hVar.f47561i.order(ByteOrder.nativeOrder());
         this.L = new nc.v();
         this.Z = -1.0f;
-        this.f23800d0 = 0;
-        this.f23822z0 = 0;
-        this.f23813q0 = -1;
-        this.f23814r0 = -1;
-        this.f23812p0 = -9223372036854775807L;
+        this.f22825d0 = 0;
+        this.f22847z0 = 0;
+        this.f22838q0 = -1;
+        this.f22839r0 = -1;
+        this.f22837p0 = -9223372036854775807L;
         this.F0 = -9223372036854775807L;
         this.G0 = -9223372036854775807L;
         this.O0 = -9223372036854775807L;
@@ -225,7 +225,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
     }
 
     private boolean I0() {
-        if (this.f23814r0 >= 0) {
+        if (this.f22839r0 >= 0) {
             return true;
         }
         return false;
@@ -233,20 +233,20 @@ public abstract class r extends com.google.android.exoplayer2.f {
 
     private void J0(Format format) {
         n0();
-        String str = format.f11303w;
+        String str = format.f11688w;
         if (!"audio/mp4a-latm".equals(str) && !"audio/mpeg".equals(str) && !"audio/opus".equals(str)) {
             this.H.F(1);
         } else {
             this.H.F(32);
         }
-        this.f23818v0 = true;
+        this.f22843v0 = true;
     }
 
     private void K0(q qVar, MediaCrypto mediaCrypto) {
         float B0;
         boolean z10;
-        String str = qVar.f23786a;
-        int i10 = w0.f40197a;
+        String str = qVar.f22811a;
+        int i10 = w0.f39657a;
         float f10 = -1.0f;
         if (i10 < 23) {
             B0 = -1.0f;
@@ -270,39 +270,39 @@ public abstract class r extends com.google.android.exoplayer2.f {
             if (!qVar.o(this.M)) {
                 ne.y.i("MediaCodecRenderer", w0.D("Format exceeds selected codec's capabilities [%s, %s]", Format.i(this.M), str));
             }
-            this.f23799c0 = qVar;
+            this.f22824c0 = qVar;
             this.Z = f10;
             this.W = this.M;
-            this.f23800d0 = d0(str);
-            this.f23801e0 = e0(str, this.W);
-            this.f23802f0 = j0(str);
-            this.f23803g0 = l0(str);
-            this.f23804h0 = g0(str);
-            this.f23805i0 = h0(str);
-            this.f23806j0 = f0(str);
-            this.f23807k0 = k0(str, this.W);
+            this.f22825d0 = d0(str);
+            this.f22826e0 = e0(str, this.W);
+            this.f22827f0 = j0(str);
+            this.f22828g0 = l0(str);
+            this.f22829h0 = g0(str);
+            this.f22830i0 = h0(str);
+            this.f22831j0 = f0(str);
+            this.f22832k0 = k0(str, this.W);
             boolean z11 = false;
             if (!i0(qVar) && !A0()) {
                 z10 = false;
             } else {
                 z10 = true;
             }
-            this.f23810n0 = z10;
+            this.f22835n0 = z10;
             if (this.V.e()) {
-                this.f23821y0 = true;
-                this.f23822z0 = 1;
-                if (this.f23800d0 != 0) {
+                this.f22846y0 = true;
+                this.f22847z0 = 1;
+                if (this.f22825d0 != 0) {
                     z11 = true;
                 }
-                this.f23808l0 = z11;
+                this.f22833l0 = z11;
             }
-            if ("c2.android.mp3.decoder".equals(qVar.f23786a)) {
-                this.f23811o0 = new i();
+            if ("c2.android.mp3.decoder".equals(qVar.f22811a)) {
+                this.f22836o0 = new i();
             }
             if (getState() == 2) {
-                this.f23812p0 = SystemClock.elapsedRealtime() + 1000;
+                this.f22837p0 = SystemClock.elapsedRealtime() + 1000;
             }
-            this.M0.f12082a++;
+            this.M0.f12467a++;
             T0(str, E0, elapsedRealtime2, elapsedRealtime2 - elapsedRealtime);
         } catch (Throwable th2) {
             t0.c();
@@ -322,7 +322,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
     }
 
     private static boolean N0(IllegalStateException illegalStateException) {
-        if (w0.f40197a >= 21 && O0(illegalStateException)) {
+        if (w0.f39657a >= 21 && O0(illegalStateException)) {
             return true;
         }
         StackTraceElement[] stackTrace = illegalStateException.getStackTrace();
@@ -354,13 +354,13 @@ public abstract class r extends com.google.android.exoplayer2.f {
     private void R0(android.media.MediaCrypto r8, boolean r9) {
         /*
             r7 = this;
-            java.util.ArrayDeque r0 = r7.f23797a0
+            java.util.ArrayDeque r0 = r7.f22822a0
             r1 = 0
             if (r0 != 0) goto L3a
             java.util.List r0 = r7.x0(r9)     // Catch: fd.y.c -> L18
             java.util.ArrayDeque r2 = new java.util.ArrayDeque     // Catch: fd.y.c -> L18
             r2.<init>()     // Catch: fd.y.c -> L18
-            r7.f23797a0 = r2     // Catch: fd.y.c -> L18
+            r7.f22822a0 = r2     // Catch: fd.y.c -> L18
             boolean r3 = r7.C     // Catch: fd.y.c -> L18
             if (r3 == 0) goto L1a
             r2.addAll(r0)     // Catch: fd.y.c -> L18
@@ -371,13 +371,13 @@ public abstract class r extends com.google.android.exoplayer2.f {
         L1a:
             boolean r2 = r0.isEmpty()     // Catch: fd.y.c -> L18
             if (r2 != 0) goto L2c
-            java.util.ArrayDeque r2 = r7.f23797a0     // Catch: fd.y.c -> L18
+            java.util.ArrayDeque r2 = r7.f22822a0     // Catch: fd.y.c -> L18
             r3 = 0
             java.lang.Object r0 = r0.get(r3)     // Catch: fd.y.c -> L18
             fd.q r0 = (fd.q) r0     // Catch: fd.y.c -> L18
             r2.add(r0)     // Catch: fd.y.c -> L18
         L2c:
-            r7.f23798b0 = r1     // Catch: fd.y.c -> L18
+            r7.f22823b0 = r1     // Catch: fd.y.c -> L18
             goto L3a
         L2f:
             fd.r$b r0 = new fd.r$b
@@ -386,16 +386,16 @@ public abstract class r extends com.google.android.exoplayer2.f {
             r0.<init>(r1, r8, r9, r2)
             throw r0
         L3a:
-            java.util.ArrayDeque r0 = r7.f23797a0
+            java.util.ArrayDeque r0 = r7.f22822a0
             boolean r0 = r0.isEmpty()
             if (r0 != 0) goto Lb6
-            java.util.ArrayDeque r0 = r7.f23797a0
+            java.util.ArrayDeque r0 = r7.f22822a0
             java.lang.Object r0 = r0.peekFirst()
             fd.q r0 = (fd.q) r0
         L4a:
             fd.l r2 = r7.V
             if (r2 != 0) goto Lb3
-            java.util.ArrayDeque r2 = r7.f23797a0
+            java.util.ArrayDeque r2 = r7.f22822a0
             java.lang.Object r2 = r2.peekFirst()
             fd.q r2 = (fd.q) r2
             boolean r3 = r7.t1(r2)
@@ -427,29 +427,29 @@ public abstract class r extends com.google.android.exoplayer2.f {
             r5.append(r2)
             java.lang.String r5 = r5.toString()
             ne.y.j(r4, r5, r3)
-            java.util.ArrayDeque r4 = r7.f23797a0
+            java.util.ArrayDeque r4 = r7.f22822a0
             r4.removeFirst()
             fd.r$b r4 = new fd.r$b
             com.google.android.exoplayer2.Format r5 = r7.M
             r4.<init>(r5, r3, r9, r2)
             r7.S0(r4)
-            fd.r$b r2 = r7.f23798b0
+            fd.r$b r2 = r7.f22823b0
             if (r2 != 0) goto La1
-            r7.f23798b0 = r4
+            r7.f22823b0 = r4
             goto La7
         La1:
             fd.r$b r2 = fd.r.b.a(r2, r4)
-            r7.f23798b0 = r2
+            r7.f22823b0 = r2
         La7:
-            java.util.ArrayDeque r2 = r7.f23797a0
+            java.util.ArrayDeque r2 = r7.f22822a0
             boolean r2 = r2.isEmpty()
             if (r2 != 0) goto Lb0
             goto L4a
         Lb0:
-            fd.r$b r8 = r7.f23798b0
+            fd.r$b r8 = r7.f22823b0
             throw r8
         Lb3:
-            r7.f23797a0 = r1
+            r7.f22822a0 = r1
             return
         Lb6:
             fd.r$b r8 = new fd.r$b
@@ -475,7 +475,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
                         return;
                     }
                     throw new IllegalStateException();
-                } else if (this.G.o()) {
+                } else if (this.G.n()) {
                     this.H0 = true;
                     return;
                 } else {
@@ -487,8 +487,8 @@ public abstract class r extends com.google.android.exoplayer2.f {
                     }
                     this.G.v();
                     Format format2 = this.M;
-                    if (format2 != null && (str = format2.f11303w) != null && str.equals("audio/opus")) {
-                        this.L.a(this.G, this.M.f11305y);
+                    if (format2 != null && (str = format2.f11688w) != null && str.equals("audio/opus")) {
+                        this.L.a(this.G, this.M.f11690y);
                     }
                 }
             } else {
@@ -496,7 +496,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
                 return;
             }
         } while (this.H.z(this.G));
-        this.f23819w0 = true;
+        this.f22844w0 = true;
     }
 
     private boolean b0(long j10, long j11) {
@@ -505,7 +505,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
         if (this.H.E()) {
             h hVar = this.H;
             z10 = false;
-            if (!d1(j10, j11, null, hVar.f47497i, this.f23814r0, 0, hVar.D(), this.H.B(), this.H.l(), this.H.o(), this.N)) {
+            if (!d1(j10, j11, null, hVar.f47561i, this.f22839r0, 0, hVar.D(), this.H.B(), this.H.m(), this.H.n(), this.N)) {
                 return false;
             }
             Y0(this.H.C());
@@ -517,18 +517,18 @@ public abstract class r extends com.google.android.exoplayer2.f {
             this.I0 = true;
             return z10;
         }
-        if (this.f23819w0) {
+        if (this.f22844w0) {
             ne.a.g(this.H.z(this.G));
-            this.f23819w0 = z10;
+            this.f22844w0 = z10;
         }
-        if (this.f23820x0) {
+        if (this.f22845x0) {
             if (this.H.E()) {
                 return true;
             }
             n0();
-            this.f23820x0 = z10;
+            this.f22845x0 = z10;
             Q0();
-            if (!this.f23818v0) {
+            if (!this.f22843v0) {
                 return z10;
             }
         }
@@ -536,7 +536,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
         if (this.H.E()) {
             this.H.v();
         }
-        if (this.H.E() || this.H0 || this.f23820x0) {
+        if (this.H.E() || this.H0 || this.f22845x0) {
             return true;
         }
         return z10;
@@ -562,16 +562,16 @@ public abstract class r extends com.google.android.exoplayer2.f {
     }
 
     private int d0(String str) {
-        int i10 = w0.f40197a;
+        int i10 = w0.f39657a;
         if (i10 <= 25 && "OMX.Exynos.avc.dec.secure".equals(str)) {
-            String str2 = w0.f40200d;
+            String str2 = w0.f39660d;
             if (str2.startsWith("SM-T585") || str2.startsWith("SM-A510") || str2.startsWith("SM-A520") || str2.startsWith("SM-J700")) {
                 return 2;
             }
         }
         if (i10 < 24) {
             if ("OMX.Nvidia.h264.decode".equals(str) || "OMX.Nvidia.h264.decode.secure".equals(str)) {
-                String str3 = w0.f40198b;
+                String str3 = w0.f39658b;
                 if ("flounder".equals(str3) || "flounder_lte".equals(str3) || "grouper".equals(str3) || "tilapia".equals(str3)) {
                     return 1;
                 }
@@ -583,7 +583,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
     }
 
     private static boolean e0(String str, Format format) {
-        if (w0.f40197a < 21 && format.f11305y.isEmpty() && "OMX.MTK.VIDEO.DECODER.AVC".equals(str)) {
+        if (w0.f39657a < 21 && format.f11690y.isEmpty() && "OMX.MTK.VIDEO.DECODER.AVC".equals(str)) {
             return true;
         }
         return false;
@@ -592,11 +592,11 @@ public abstract class r extends com.google.android.exoplayer2.f {
     private void e1() {
         this.E0 = true;
         MediaFormat outputFormat = this.V.getOutputFormat();
-        if (this.f23800d0 != 0 && outputFormat.getInteger("width") == 32 && outputFormat.getInteger("height") == 32) {
-            this.f23809m0 = true;
+        if (this.f22825d0 != 0 && outputFormat.getInteger("width") == 32 && outputFormat.getInteger("height") == 32) {
+            this.f22834m0 = true;
             return;
         }
-        if (this.f23807k0) {
+        if (this.f22832k0) {
             outputFormat.setInteger("channel-count", 1);
         }
         this.X = outputFormat;
@@ -604,8 +604,8 @@ public abstract class r extends com.google.android.exoplayer2.f {
     }
 
     private static boolean f0(String str) {
-        if (w0.f40197a < 21 && "OMX.SEC.mp3.dec".equals(str) && "samsung".equals(w0.f40199c)) {
-            String str2 = w0.f40198b;
+        if (w0.f39657a < 21 && "OMX.SEC.mp3.dec".equals(str) && "samsung".equals(w0.f39659c)) {
+            String str2 = w0.f39658b;
             if (str2.startsWith("baffin") || str2.startsWith("grand") || str2.startsWith("fortuna") || str2.startsWith("gprimelte") || str2.startsWith("j2y18lte") || str2.startsWith("ms01")) {
                 return true;
             }
@@ -621,7 +621,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
         if (X == -5) {
             V0(J);
             return true;
-        } else if (X == -4 && this.E.o()) {
+        } else if (X == -4 && this.E.n()) {
             this.H0 = true;
             c1();
             return false;
@@ -631,10 +631,10 @@ public abstract class r extends com.google.android.exoplayer2.f {
     }
 
     private static boolean g0(String str) {
-        int i10 = w0.f40197a;
+        int i10 = w0.f39657a;
         if (i10 > 23 || !"OMX.google.vorbis.decoder".equals(str)) {
             if (i10 <= 19) {
-                String str2 = w0.f40198b;
+                String str2 = w0.f39658b;
                 if ("hb2000".equals(str2) || "stvm8".equals(str2)) {
                     if ("OMX.amlogic.avc.decoder.awesome".equals(str) || "OMX.amlogic.avc.decoder.awesome.secure".equals(str)) {
                         return true;
@@ -654,19 +654,19 @@ public abstract class r extends com.google.android.exoplayer2.f {
     }
 
     private static boolean h0(String str) {
-        if (w0.f40197a == 21 && "OMX.google.aac.decoder".equals(str)) {
+        if (w0.f39657a == 21 && "OMX.google.aac.decoder".equals(str)) {
             return true;
         }
         return false;
     }
 
     private static boolean i0(q qVar) {
-        String str = qVar.f23786a;
-        int i10 = w0.f40197a;
+        String str = qVar.f22811a;
+        int i10 = w0.f39657a;
         if (i10 > 25 || !"OMX.rk.video_decoder.avc".equals(str)) {
             if (i10 > 17 || !"OMX.allwinner.video.decoder.avc".equals(str)) {
                 if (i10 > 29 || (!"OMX.broadcom.video_decoder.tunnel".equals(str) && !"OMX.broadcom.video_decoder.tunnel.secure".equals(str) && !"OMX.bcm.vdec.avc.tunnel".equals(str) && !"OMX.bcm.vdec.avc.tunnel.secure".equals(str) && !"OMX.bcm.vdec.hevc.tunnel".equals(str) && !"OMX.bcm.vdec.hevc.tunnel.secure".equals(str))) {
-                    if ("Amazon".equals(w0.f40199c) && "AFTS".equals(w0.f40200d) && qVar.f23792g) {
+                    if ("Amazon".equals(w0.f39659c) && "AFTS".equals(w0.f39660d) && qVar.f22817g) {
                         return true;
                     }
                     return false;
@@ -679,10 +679,10 @@ public abstract class r extends com.google.android.exoplayer2.f {
     }
 
     private static boolean j0(String str) {
-        int i10 = w0.f40197a;
+        int i10 = w0.f39657a;
         if (i10 >= 18) {
             if (i10 != 18 || (!"OMX.SEC.avc.dec".equals(str) && !"OMX.SEC.avc.dec.secure".equals(str))) {
-                if (i10 == 19 && w0.f40200d.startsWith("SM-G800")) {
+                if (i10 == 19 && w0.f39660d.startsWith("SM-G800")) {
                     if (!"OMX.Exynos.avc.dec".equals(str) && !"OMX.Exynos.avc.dec.secure".equals(str)) {
                         return false;
                     }
@@ -696,35 +696,35 @@ public abstract class r extends com.google.android.exoplayer2.f {
     }
 
     private static boolean k0(String str, Format format) {
-        if (w0.f40197a <= 18 && format.J == 1 && "OMX.MTK.AUDIO.DECODER.MP3".equals(str)) {
+        if (w0.f39657a <= 18 && format.J == 1 && "OMX.MTK.AUDIO.DECODER.MP3".equals(str)) {
             return true;
         }
         return false;
     }
 
     private static boolean l0(String str) {
-        if (w0.f40197a == 29 && "c2.android.aac.decoder".equals(str)) {
+        if (w0.f39657a == 29 && "c2.android.aac.decoder".equals(str)) {
             return true;
         }
         return false;
     }
 
     private void l1() {
-        this.f23813q0 = -1;
-        this.F.f47497i = null;
+        this.f22838q0 = -1;
+        this.F.f47561i = null;
     }
 
     private void m1() {
-        this.f23814r0 = -1;
-        this.f23815s0 = null;
+        this.f22839r0 = -1;
+        this.f22840s0 = null;
     }
 
     private void n0() {
-        this.f23820x0 = false;
+        this.f22845x0 = false;
         this.H.h();
         this.G.h();
-        this.f23819w0 = false;
-        this.f23818v0 = false;
+        this.f22844w0 = false;
+        this.f22843v0 = false;
         this.L.d();
     }
 
@@ -736,7 +736,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
     private boolean o0() {
         if (this.C0) {
             this.A0 = 1;
-            if (!this.f23802f0 && !this.f23804h0) {
+            if (!this.f22827f0 && !this.f22829h0) {
                 this.B0 = 1;
             } else {
                 this.B0 = 3;
@@ -748,7 +748,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
 
     private void o1(c cVar) {
         this.N0 = cVar;
-        long j10 = cVar.f23831c;
+        long j10 = cVar.f22856c;
         if (j10 != -9223372036854775807L) {
             this.P0 = true;
             X0(j10);
@@ -767,7 +767,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
     private boolean q0() {
         if (this.C0) {
             this.A0 = 1;
-            if (!this.f23802f0 && !this.f23804h0) {
+            if (!this.f22827f0 && !this.f22829h0) {
                 this.B0 = 2;
             } else {
                 this.B0 = 3;
@@ -790,7 +790,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
         int h10;
         boolean z12;
         if (!I0()) {
-            if (this.f23805i0 && this.D0) {
+            if (this.f22830i0 && this.D0) {
                 try {
                     h10 = this.V.h(this.J);
                 } catch (IllegalStateException unused) {
@@ -808,12 +808,12 @@ public abstract class r extends com.google.android.exoplayer2.f {
                     e1();
                     return true;
                 }
-                if (this.f23810n0 && (this.H0 || this.A0 == 2)) {
+                if (this.f22835n0 && (this.H0 || this.A0 == 2)) {
                     c1();
                 }
                 return false;
-            } else if (this.f23809m0) {
-                this.f23809m0 = false;
+            } else if (this.f22834m0) {
+                this.f22834m0 = false;
                 this.V.releaseOutputBuffer(h10, false);
                 return true;
             } else {
@@ -822,16 +822,16 @@ public abstract class r extends com.google.android.exoplayer2.f {
                     c1();
                     return false;
                 }
-                this.f23814r0 = h10;
+                this.f22839r0 = h10;
                 ByteBuffer outputBuffer = this.V.getOutputBuffer(h10);
-                this.f23815s0 = outputBuffer;
+                this.f22840s0 = outputBuffer;
                 if (outputBuffer != null) {
                     outputBuffer.position(this.J.offset);
-                    ByteBuffer byteBuffer2 = this.f23815s0;
+                    ByteBuffer byteBuffer2 = this.f22840s0;
                     MediaCodec.BufferInfo bufferInfo3 = this.J;
                     byteBuffer2.limit(bufferInfo3.offset + bufferInfo3.size);
                 }
-                if (this.f23806j0) {
+                if (this.f22831j0) {
                     MediaCodec.BufferInfo bufferInfo4 = this.J;
                     if (bufferInfo4.presentationTimeUs == 0 && (bufferInfo4.flags & 4) != 0) {
                         long j12 = this.F0;
@@ -840,7 +840,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
                         }
                     }
                 }
-                this.f23816t0 = M0(this.J.presentationTimeUs);
+                this.f22841t0 = M0(this.J.presentationTimeUs);
                 long j13 = this.G0;
                 long j14 = this.J.presentationTimeUs;
                 if (j13 == j14) {
@@ -848,22 +848,22 @@ public abstract class r extends com.google.android.exoplayer2.f {
                 } else {
                     z12 = false;
                 }
-                this.f23817u0 = z12;
+                this.f22842u0 = z12;
                 A1(j14);
             }
         }
-        if (this.f23805i0 && this.D0) {
+        if (this.f22830i0 && this.D0) {
             try {
                 lVar = this.V;
-                byteBuffer = this.f23815s0;
-                i10 = this.f23814r0;
+                byteBuffer = this.f22840s0;
+                i10 = this.f22839r0;
                 bufferInfo = this.J;
                 z10 = false;
             } catch (IllegalStateException unused2) {
                 z10 = false;
             }
             try {
-                d12 = d1(j10, j11, lVar, byteBuffer, i10, bufferInfo.flags, 1, bufferInfo.presentationTimeUs, this.f23816t0, this.f23817u0, this.N);
+                d12 = d1(j10, j11, lVar, byteBuffer, i10, bufferInfo.flags, 1, bufferInfo.presentationTimeUs, this.f22841t0, this.f22842u0, this.N);
             } catch (IllegalStateException unused3) {
                 c1();
                 if (this.I0) {
@@ -874,10 +874,10 @@ public abstract class r extends com.google.android.exoplayer2.f {
         } else {
             z10 = false;
             l lVar2 = this.V;
-            ByteBuffer byteBuffer3 = this.f23815s0;
-            int i11 = this.f23814r0;
+            ByteBuffer byteBuffer3 = this.f22840s0;
+            int i11 = this.f22839r0;
             MediaCodec.BufferInfo bufferInfo5 = this.J;
-            d12 = d1(j10, j11, lVar2, byteBuffer3, i11, bufferInfo5.flags, 1, bufferInfo5.presentationTimeUs, this.f23816t0, this.f23817u0, this.N);
+            d12 = d1(j10, j11, lVar2, byteBuffer3, i11, bufferInfo5.flags, 1, bufferInfo5.presentationTimeUs, this.f22841t0, this.f22842u0, this.N);
         }
         if (d12) {
             Y0(this.J.presentationTimeUs);
@@ -912,17 +912,17 @@ public abstract class r extends com.google.android.exoplayer2.f {
                 return false;
             }
             c0 c0Var = (c0) d10;
-            if (!nVar2.a().equals(nVar.a()) || w0.f40197a < 23) {
+            if (!nVar2.a().equals(nVar.a()) || w0.f39657a < 23) {
                 return true;
             }
-            UUID uuid = lc.d.f36656e;
+            UUID uuid = lc.d.f36583e;
             if (!uuid.equals(nVar.a()) && !uuid.equals(nVar2.a())) {
-                if (c0Var.f48640c) {
+                if (c0Var.f48650c) {
                     h10 = false;
                 } else {
-                    h10 = nVar2.h(format.f11303w);
+                    h10 = nVar2.h(format.f11688w);
                 }
-                if (qVar.f23792g || !h10) {
+                if (qVar.f22817g || !h10) {
                     return false;
                 }
                 return true;
@@ -946,40 +946,40 @@ public abstract class r extends com.google.android.exoplayer2.f {
         if (i10 == 0 && u1()) {
             p0();
         }
-        if (this.f23813q0 < 0) {
+        if (this.f22838q0 < 0) {
             int g10 = this.V.g();
-            this.f23813q0 = g10;
+            this.f22838q0 = g10;
             if (g10 < 0) {
                 return false;
             }
-            this.F.f47497i = this.V.getInputBuffer(g10);
+            this.F.f47561i = this.V.getInputBuffer(g10);
             this.F.h();
         }
         if (this.A0 == 1) {
-            if (!this.f23810n0) {
+            if (!this.f22835n0) {
                 this.D0 = true;
-                this.V.queueInputBuffer(this.f23813q0, 0, 0, 0L, 4);
+                this.V.queueInputBuffer(this.f22838q0, 0, 0, 0L, 4);
                 l1();
             }
             this.A0 = 2;
             return false;
-        } else if (this.f23808l0) {
-            this.f23808l0 = false;
-            ByteBuffer byteBuffer = this.F.f47497i;
+        } else if (this.f22833l0) {
+            this.f22833l0 = false;
+            ByteBuffer byteBuffer = this.F.f47561i;
             byte[] bArr = Q0;
             byteBuffer.put(bArr);
-            this.V.queueInputBuffer(this.f23813q0, 0, bArr.length, 0L, 0);
+            this.V.queueInputBuffer(this.f22838q0, 0, bArr.length, 0L, 0);
             l1();
             this.C0 = true;
             return true;
         } else {
-            if (this.f23822z0 == 1) {
-                for (int i11 = 0; i11 < this.W.f11305y.size(); i11++) {
-                    this.F.f47497i.put((byte[]) this.W.f11305y.get(i11));
+            if (this.f22847z0 == 1) {
+                for (int i11 = 0; i11 < this.W.f11690y.size(); i11++) {
+                    this.F.f47561i.put((byte[]) this.W.f11690y.get(i11));
                 }
-                this.f23822z0 = 2;
+                this.f22847z0 = 2;
             }
-            int position = this.F.f47497i.position();
+            int position = this.F.f47561i.position();
             lc.x J = J();
             try {
                 int X = X(J, this.F, 0);
@@ -990,16 +990,16 @@ public abstract class r extends com.google.android.exoplayer2.f {
                     return false;
                 }
                 if (X == -5) {
-                    if (this.f23822z0 == 2) {
+                    if (this.f22847z0 == 2) {
                         this.F.h();
-                        this.f23822z0 = 1;
+                        this.f22847z0 = 1;
                     }
                     V0(J);
                     return true;
-                } else if (this.F.o()) {
-                    if (this.f23822z0 == 2) {
+                } else if (this.F.n()) {
+                    if (this.f22847z0 == 2) {
                         this.F.h();
-                        this.f23822z0 = 1;
+                        this.f22847z0 = 1;
                     }
                     this.H0 = true;
                     if (!this.C0) {
@@ -1007,9 +1007,9 @@ public abstract class r extends com.google.android.exoplayer2.f {
                         return false;
                     }
                     try {
-                        if (!this.f23810n0) {
+                        if (!this.f22835n0) {
                             this.D0 = true;
-                            this.V.queueInputBuffer(this.f23813q0, 0, 0, 0L, 4);
+                            this.V.queueInputBuffer(this.f22838q0, 0, 0, 0L, 4);
                             l1();
                         }
                         return false;
@@ -1018,57 +1018,57 @@ public abstract class r extends com.google.android.exoplayer2.f {
                     }
                 } else if (!this.C0 && !this.F.q()) {
                     this.F.h();
-                    if (this.f23822z0 == 2) {
-                        this.f23822z0 = 1;
+                    if (this.f22847z0 == 2) {
+                        this.f22847z0 = 1;
                     }
                     return true;
                 } else {
                     boolean w10 = this.F.w();
                     if (w10) {
-                        this.F.f47496e.b(position);
+                        this.F.f47560e.b(position);
                     }
-                    if (this.f23801e0 && !w10) {
-                        d0.b(this.F.f47497i);
-                        if (this.F.f47497i.position() == 0) {
+                    if (this.f22826e0 && !w10) {
+                        d0.b(this.F.f47561i);
+                        if (this.F.f47561i.position() == 0) {
                             return true;
                         }
-                        this.f23801e0 = false;
+                        this.f22826e0 = false;
                     }
                     qc.f fVar = this.F;
-                    long j10 = fVar.f47499p;
-                    i iVar = this.f23811o0;
+                    long j10 = fVar.f47563p;
+                    i iVar = this.f22836o0;
                     if (iVar != null) {
                         j10 = iVar.d(this.M, fVar);
-                        this.F0 = Math.max(this.F0, this.f23811o0.b(this.M));
+                        this.F0 = Math.max(this.F0, this.f22836o0.b(this.M));
                     }
                     long j11 = j10;
-                    if (this.F.l()) {
+                    if (this.F.m()) {
                         this.I.add(Long.valueOf(j11));
                     }
                     if (this.J0) {
                         if (!this.K.isEmpty()) {
-                            ((c) this.K.peekLast()).f23832d.a(j11, this.M);
+                            ((c) this.K.peekLast()).f22857d.a(j11, this.M);
                         } else {
-                            this.N0.f23832d.a(j11, this.M);
+                            this.N0.f22857d.a(j11, this.M);
                         }
                         this.J0 = false;
                     }
                     this.F0 = Math.max(this.F0, j11);
                     this.F.v();
-                    if (this.F.k()) {
+                    if (this.F.l()) {
                         H0(this.F);
                     }
                     a1(this.F);
                     try {
                         if (w10) {
-                            this.V.a(this.f23813q0, 0, this.F.f47496e, j11, 0);
+                            this.V.a(this.f22838q0, 0, this.F.f47560e, j11, 0);
                         } else {
-                            this.V.queueInputBuffer(this.f23813q0, 0, this.F.f47497i.limit(), j11, 0);
+                            this.V.queueInputBuffer(this.f22838q0, 0, this.F.f47561i.limit(), j11, 0);
                         }
                         l1();
                         this.C0 = true;
-                        this.f23822z0 = 0;
-                        this.M0.f12084c++;
+                        this.f22847z0 = 0;
+                        this.M0.f12469c++;
                         return true;
                     } catch (MediaCodec.CryptoException e11) {
                         throw G(e11, this.M, w0.Y(e11.getErrorCode()));
@@ -1096,7 +1096,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
         if (D0.isEmpty() && z10) {
             List D02 = D0(this.B, this.M, false);
             if (!D02.isEmpty()) {
-                ne.y.i("MediaCodecRenderer", "Drm session requires secure decoder for " + this.M.f11303w + ", but no secure decoder available. Trying to proceed with " + D02 + ".");
+                ne.y.i("MediaCodecRenderer", "Drm session requires secure decoder for " + this.M.f11688w + ", but no secure decoder available. Trying to proceed with " + D02 + ".");
             }
             return D02;
         }
@@ -1113,7 +1113,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
     }
 
     private boolean y1(Format format) {
-        if (w0.f40197a >= 23 && this.V != null && this.B0 != 3 && getState() != 0) {
+        if (w0.f39657a >= 23 && this.V != null && this.B0 != 3 && getState() != 0) {
             float B0 = B0(this.U, format, M());
             float f10 = this.Z;
             if (f10 == B0) {
@@ -1138,7 +1138,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
         qc.b d10 = this.P.d();
         if (d10 instanceof c0) {
             try {
-                this.Q.setMediaDrmSession(((c0) d10).f48639b);
+                this.Q.setMediaDrmSession(((c0) d10).f48649b);
             } catch (MediaCryptoException e10) {
                 throw G(e10, this.M, 6006);
             }
@@ -1154,9 +1154,9 @@ public abstract class r extends com.google.android.exoplayer2.f {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void A1(long j10) {
-        Format format = (Format) this.N0.f23832d.j(j10);
+        Format format = (Format) this.N0.f22857d.j(j10);
         if (format == null && this.P0 && this.X != null) {
-            format = (Format) this.N0.f23832d.i();
+            format = (Format) this.N0.f22857d.i();
         }
         if (format != null) {
             this.N = format;
@@ -1181,7 +1181,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final long F0() {
-        return this.N0.f23831c;
+        return this.N0.f22856c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -1201,7 +1201,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
     @Override // com.google.android.exoplayer2.f
     public void O() {
         this.M = null;
-        o1(c.f23828e);
+        o1(c.f22853e);
         this.K.clear();
         w0();
     }
@@ -1218,18 +1218,18 @@ public abstract class r extends com.google.android.exoplayer2.f {
         this.H0 = false;
         this.I0 = false;
         this.K0 = false;
-        if (this.f23818v0) {
+        if (this.f22843v0) {
             this.H.h();
             this.G.h();
-            this.f23819w0 = false;
+            this.f22844w0 = false;
             this.L.d();
         } else {
             v0();
         }
-        if (this.N0.f23832d.l() > 0) {
+        if (this.N0.f22857d.l() > 0) {
             this.J0 = true;
         }
-        this.N0.f23832d.c();
+        this.N0.f22857d.c();
         this.K.clear();
     }
 
@@ -1237,13 +1237,13 @@ public abstract class r extends com.google.android.exoplayer2.f {
     public final void Q0() {
         Format format;
         boolean z10;
-        if (this.V == null && !this.f23818v0 && (format = this.M) != null) {
+        if (this.V == null && !this.f22843v0 && (format = this.M) != null) {
             if (L0(format)) {
                 J0(this.M);
                 return;
             }
             n1(this.P);
-            String str = this.M.f11303w;
+            String str = this.M.f11688w;
             rc.n nVar = this.O;
             if (nVar != null) {
                 qc.b d10 = nVar.d();
@@ -1255,9 +1255,9 @@ public abstract class r extends com.google.android.exoplayer2.f {
                     } else if (d10 instanceof c0) {
                         c0 c0Var = (c0) d10;
                         try {
-                            MediaCrypto mediaCrypto = new MediaCrypto(c0Var.f48638a, c0Var.f48639b);
+                            MediaCrypto mediaCrypto = new MediaCrypto(c0Var.f48648a, c0Var.f48649b);
                             this.Q = mediaCrypto;
-                            if (!c0Var.f48640c && mediaCrypto.requiresSecureDecoderComponent(str)) {
+                            if (!c0Var.f48650c && mediaCrypto.requiresSecureDecoderComponent(str)) {
                                 z10 = true;
                             } else {
                                 z10 = false;
@@ -1268,7 +1268,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
                         }
                     }
                 }
-                if (c0.f48637d && (d10 instanceof c0)) {
+                if (c0.f48647d && (d10 instanceof c0)) {
                     int state = this.O.getState();
                     if (state != 1) {
                         if (state != 4) {
@@ -1276,7 +1276,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
                         }
                     } else {
                         n.a aVar = (n.a) ne.a.e(this.O.getError());
-                        throw G(aVar, this.M, aVar.f48750d);
+                        throw G(aVar, this.M, aVar.f48760d);
                     }
                 }
             }
@@ -1339,7 +1339,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
         /*
             r12 = this;
             fd.r$c r13 = r12.N0
-            long r0 = r13.f23831c
+            long r0 = r13.f22856c
             r2 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
             int r13 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
             if (r13 != 0) goto L1e
@@ -1370,7 +1370,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
             r5.<init>(r6, r8, r10)
             r12.o1(r5)
             fd.r$c r13 = r12.N0
-            long r13 = r13.f23831c
+            long r13 = r13.f22856c
             int r13 = (r13 > r2 ? 1 : (r13 == r2 ? 0 : -1))
             if (r13 == 0) goto L51
             r12.Z0()
@@ -1394,7 +1394,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
     /* JADX INFO: Access modifiers changed from: protected */
     public void Y0(long j10) {
         this.O0 = j10;
-        while (!this.K.isEmpty() && j10 >= ((c) this.K.peek()).f23829a) {
+        while (!this.K.isEmpty() && j10 >= ((c) this.K.peek()).f22854a) {
             o1((c) this.K.poll());
             Z0();
         }
@@ -1428,8 +1428,8 @@ public abstract class r extends com.google.android.exoplayer2.f {
             l lVar = this.V;
             if (lVar != null) {
                 lVar.release();
-                this.M0.f12083b++;
-                U0(this.f23799c0.f23786a);
+                this.M0.f12468b++;
+                U0(this.f22824c0.f22811a);
             }
             this.V = null;
             try {
@@ -1456,7 +1456,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
     public boolean isReady() {
         if (this.M != null) {
             if (!N() && !I0()) {
-                if (this.f23812p0 != -9223372036854775807L && SystemClock.elapsedRealtime() < this.f23812p0) {
+                if (this.f22837p0 != -9223372036854775807L && SystemClock.elapsedRealtime() < this.f22837p0) {
                     return true;
                 }
                 return false;
@@ -1470,48 +1470,48 @@ public abstract class r extends com.google.android.exoplayer2.f {
     public void j1() {
         l1();
         m1();
-        this.f23812p0 = -9223372036854775807L;
+        this.f22837p0 = -9223372036854775807L;
         this.D0 = false;
         this.C0 = false;
-        this.f23808l0 = false;
-        this.f23809m0 = false;
-        this.f23816t0 = false;
-        this.f23817u0 = false;
+        this.f22833l0 = false;
+        this.f22834m0 = false;
+        this.f22841t0 = false;
+        this.f22842u0 = false;
         this.I.clear();
         this.F0 = -9223372036854775807L;
         this.G0 = -9223372036854775807L;
         this.O0 = -9223372036854775807L;
-        i iVar = this.f23811o0;
+        i iVar = this.f22836o0;
         if (iVar != null) {
             iVar.c();
         }
         this.A0 = 0;
         this.B0 = 0;
-        this.f23822z0 = this.f23821y0 ? 1 : 0;
+        this.f22847z0 = this.f22846y0 ? 1 : 0;
     }
 
     protected void k1() {
         j1();
         this.L0 = null;
-        this.f23811o0 = null;
-        this.f23797a0 = null;
-        this.f23799c0 = null;
+        this.f22836o0 = null;
+        this.f22822a0 = null;
+        this.f22824c0 = null;
         this.W = null;
         this.X = null;
         this.Y = false;
         this.E0 = false;
         this.Z = -1.0f;
-        this.f23800d0 = 0;
-        this.f23801e0 = false;
-        this.f23802f0 = false;
-        this.f23803g0 = false;
-        this.f23804h0 = false;
-        this.f23805i0 = false;
-        this.f23806j0 = false;
-        this.f23807k0 = false;
-        this.f23810n0 = false;
-        this.f23821y0 = false;
-        this.f23822z0 = 0;
+        this.f22825d0 = 0;
+        this.f22826e0 = false;
+        this.f22827f0 = false;
+        this.f22828g0 = false;
+        this.f22829h0 = false;
+        this.f22830i0 = false;
+        this.f22831j0 = false;
+        this.f22832k0 = false;
+        this.f22835n0 = false;
+        this.f22846y0 = false;
+        this.f22847z0 = 0;
         this.R = false;
     }
 
@@ -1563,9 +1563,9 @@ public abstract class r extends com.google.android.exoplayer2.f {
             return false;
         }
         int i10 = this.B0;
-        if (i10 != 3 && !this.f23802f0 && ((!this.f23803g0 || this.E0) && (!this.f23804h0 || !this.D0))) {
+        if (i10 != 3 && !this.f22827f0 && ((!this.f22828g0 || this.E0) && (!this.f22829h0 || !this.D0))) {
             if (i10 == 2) {
-                int i11 = w0.f40197a;
+                int i11 = w0.f39657a;
                 if (i11 >= 23) {
                     z10 = true;
                 } else {
@@ -1613,7 +1613,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
                     return;
                 } else {
                     Q0();
-                    if (this.f23818v0) {
+                    if (this.f22843v0) {
                         t0.a("bypassRender");
                         while (b0(j10, j11)) {
                         }
@@ -1627,7 +1627,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
                         }
                         t0.c();
                     } else {
-                        this.M0.f12085d += Z(j10);
+                        this.M0.f12470d += Z(j10);
                         f1(1);
                     }
                     this.M0.c();
@@ -1636,7 +1636,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
             } catch (IllegalStateException e10) {
                 if (N0(e10)) {
                     S0(e10);
-                    if (w0.f40197a >= 21 && P0(e10)) {
+                    if (w0.f39657a >= 21 && P0(e10)) {
                         z10 = true;
                     }
                     if (z10) {
@@ -1658,29 +1658,29 @@ public abstract class r extends com.google.android.exoplayer2.f {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final q z0() {
-        return this.f23799c0;
+        return this.f22824c0;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class b extends Exception {
 
         /* renamed from: d  reason: collision with root package name */
-        public final String f23823d;
+        public final String f22848d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final boolean f23824e;
+        public final boolean f22849e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final q f23825i;
+        public final q f22850i;
 
         /* renamed from: o  reason: collision with root package name */
-        public final String f23826o;
+        public final String f22851o;
 
         /* renamed from: p  reason: collision with root package name */
-        public final b f23827p;
+        public final b f22852p;
 
         public b(Format format, Throwable th2, boolean z10, int i10) {
-            this("Decoder init failed: [" + i10 + "], " + format, th2, format.f11303w, z10, null, b(i10), null);
+            this("Decoder init failed: [" + i10 + "], " + format, th2, format.f11688w, z10, null, b(i10), null);
         }
 
         private static String b(int i10) {
@@ -1695,7 +1695,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
 
         /* JADX INFO: Access modifiers changed from: private */
         public b c(b bVar) {
-            return new b(getMessage(), getCause(), this.f23823d, this.f23824e, this.f23825i, this.f23826o, bVar);
+            return new b(getMessage(), getCause(), this.f22848d, this.f22849e, this.f22850i, this.f22851o, bVar);
         }
 
         private static String d(Throwable th2) {
@@ -1706,16 +1706,16 @@ public abstract class r extends com.google.android.exoplayer2.f {
         }
 
         public b(Format format, Throwable th2, boolean z10, q qVar) {
-            this("Decoder init failed: " + qVar.f23786a + ", " + format, th2, format.f11303w, z10, qVar, w0.f40197a >= 21 ? d(th2) : null, null);
+            this("Decoder init failed: " + qVar.f22811a + ", " + format, th2, format.f11688w, z10, qVar, w0.f39657a >= 21 ? d(th2) : null, null);
         }
 
         private b(String str, Throwable th2, String str2, boolean z10, q qVar, String str3, b bVar) {
             super(str, th2);
-            this.f23823d = str2;
-            this.f23824e = z10;
-            this.f23825i = qVar;
-            this.f23826o = str3;
-            this.f23827p = bVar;
+            this.f22848d = str2;
+            this.f22849e = z10;
+            this.f22850i = qVar;
+            this.f22851o = str3;
+            this.f22852p = bVar;
         }
     }
 

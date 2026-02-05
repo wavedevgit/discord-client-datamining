@@ -1,72 +1,133 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
+    var2 = exports;
+    var0 = dependencyMap;
+    var3 = metroImportDefault;
+    var _closure1_slot0 = var3;
+    var _closure1_slot1 = var0;
+    var3 = global;
+    var6 = var3.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var3 = true;
+    var4.value = var3;
+    var3 = '__esModule';
+    var3 = var5.bind(var6)(var2, var3, var4);
+    var4 = 0;
+    var5 = var0[var4];
+    var3 = require;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var5);
+    var5 = var3.processColor;
+    var3 = {
+        'evenodd': 0,
+        'nonzero': 1
+    };
+    var _closure1_slot2 = var3;
     var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = /\s+/;
-    var _closure1_slot0 = var2;
-    var2 = /,/g;
-    var _closure1_slot1 = var2;
-    var0 = function arg0() {
+    var3.type = var4;
+    var4 = 'black';
+    var4 = var5.bind(var0)(var4);
+    var3.payload = var4;
+    var _closure1_slot3 = var3;
+    var1 = function arg0, arg1, arg2() {
         _fun48542: for (var _fun48542_ip = 0;;) switch (_fun48542_ip) {
             case 0:
-                var3 = arg0;
-                var0 = global;
-                var1 = var0.Array;
-                var0 = var1.isArray;
-                var1 = var0.bind(var1)(var3);
-                var0 = var3;
-                if (var1) {
-                    _fun48542_ip = 116;
+                var1 = arg0;
+                var0 = arg1;
+                var4 = arg2;
+                var8 = var0.fill;
+                var3 = var0.fillRule;
+                var6 = var0.fillOpacity;
+                var0 = null;
+                if (!(var0 == var8)) {
+                    _fun48542_ip = 48;
                     continue _fun48542
                 }
-            case 27:
-                var2 = typeof var3;
-                var1 = 'number';
-                if (!(var1 !== var2)) {
-                    _fun48542_ip = 102;
-                    continue _fun48542
-                }
-            case 38:
-                var1 = 'string';
-                if (!(var1 !== var2)) {
-                    _fun48542_ip = 52;
-                    continue _fun48542
-                }
-            case 46:
-                var1 = new Array(0);
-                _fun48542_ip = 100;
+            case 33:
+                var2 = _closure1_slot3;
+                var1.fill = var2;
+                _fun48542_ip = 121;
                 continue _fun48542;
-            case 52:
-                var2 = var3.trim;
-                var7 = var2.bind(var3)();
-                var6 = var7.replace;
+            case 48:
+                var5 = var4.push;
+                var2 = 'fill';
+                var2 = var5.bind(var4)(var2);
+                if (var8) {
+                    _fun48542_ip = 85;
+                    continue _fun48542
+                }
+            case 65:
+                var5 = 'number';
+                var2 = typeof var8;
+                if (!(var5 !== var2)) {
+                    _fun48542_ip = 85;
+                    continue _fun48542
+                }
+            case 76:
+                var2 = _closure1_slot3;
+                _fun48542_ip = 115;
+                continue _fun48542;
+            case 85:
+                var9 = _closure1_slot0;
+                var7 = _closure1_slot1;
+                var5 = 1;
+                var5 = var7[var5];
+                var7 = undefined;
+                var5 = var9.bind(var7)(var5);
+                var2 = var5.bind(var7)(var8);
+            case 115:
+                var1.fill = var2;
+            case 121:
+                if (!(var0 != var6)) {
+                    _fun48542_ip = 175;
+                    continue _fun48542
+                }
+            case 125:
+                var5 = var4.push;
+                var2 = 'fillOpacity';
+                var2 = var5.bind(var4)(var2);
+                var7 = _closure1_slot0;
                 var5 = _closure1_slot1;
-                var4 = ' ';
-                var5 = var6.bind(var7)(var5, var4);
-                var4 = var5.split;
-                var2 = _closure1_slot0;
-                var1 = var4.bind(var5)(var2);
-            case 100:
-                _fun48542_ip = 113;
-                continue _fun48542;
-            case 102:
-                var2 = new Array(1);
-                var2[0] = var3;
-                var1 = var2;
-            case 113:
-                var0 = var1;
-            case 116:
+                var2 = 2;
+                var2 = var5[var2];
+                var5 = undefined;
+                var2 = var7.bind(var5)(var2);
+                var2 = var2.bind(var5)(var6);
+                var1.fillOpacity = var2;
+            case 175:
+                if (!(var0 != var3)) {
+                    _fun48542_ip = 230;
+                    continue _fun48542
+                }
+            case 179:
+                var2 = var4.push;
+                var0 = 'fillRule';
+                var0 = var2.bind(var4)(var0);
+                var4 = 1;
+                var0 = var4;
+                if (!var3) {
+                    _fun48542_ip = 224;
+                    continue _fun48542
+                }
+            case 202:
+                var2 = _closure1_slot2;
+                var3 = var2[var3];
+                var2 = 0;
+                var0 = var4;
+                if (!(var2 === var3)) {
+                    _fun48542_ip = 224;
+                    continue _fun48542
+                }
+            case 222:
+                var0 = 0;
+            case 224:
+                var1.fillRule = var0;
+            case 230:
+                var0 = undefined;
                 return var0;
         }
     };
-    var1.default = var0;
-    var0 = undefined;
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5482, 5470]);

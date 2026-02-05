@@ -40,18 +40,18 @@ public final class StepStyles_GovernmentIdStepImageLocalStyleJsonAdapter extends
     @NotNull
     public StepStyles.GovernmentIdStepImageLocalStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StepStyles.GovernmentIdStepImageLocalStyleContainer governmentIdStepImageLocalStyleContainer = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 governmentIdStepImageLocalStyleContainer = (StepStyles.GovernmentIdStepImageLocalStyleContainer) this.nullableGovernmentIdStepImageLocalStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.GovernmentIdStepImageLocalStyle(governmentIdStepImageLocalStyleContainer);
     }
 
@@ -59,8 +59,8 @@ public final class StepStyles_GovernmentIdStepImageLocalStyleJsonAdapter extends
     public void toJson(@NotNull t writer, StepStyles.GovernmentIdStepImageLocalStyle governmentIdStepImageLocalStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepImageLocalStyle != null) {
-            writer.l();
-            writer.A0("illustration");
+            writer.k();
+            writer.W("illustration");
             this.nullableGovernmentIdStepImageLocalStyleContainerAdapter.toJson(writer, governmentIdStepImageLocalStyle.getIllustration());
             writer.E();
             return;

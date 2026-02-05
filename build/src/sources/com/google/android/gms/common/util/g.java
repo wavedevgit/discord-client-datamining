@@ -7,41 +7,33 @@ import android.os.Build;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static Boolean f13434a;
+    private static Boolean f13830a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static Boolean f13435b;
+    private static Boolean f13831b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static Boolean f13436c;
+    private static Boolean f13832c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static Boolean f13437d;
+    private static Boolean f13833d;
 
     public static boolean a(Context context) {
-        PackageManager packageManager = context.getPackageManager();
-        if (f13437d == null) {
-            boolean z10 = false;
-            if (k.e() && packageManager.hasSystemFeature("android.hardware.type.automotive")) {
-                z10 = true;
-            }
-            f13437d = Boolean.valueOf(z10);
-        }
-        return f13437d.booleanValue();
+        return h(context.getPackageManager());
     }
 
     public static boolean b() {
-        int i10 = com.google.android.gms.common.j.f13418a;
+        int i10 = com.google.android.gms.common.j.f13813a;
         return "user".equals(Build.TYPE);
     }
 
     public static boolean c(Context context) {
-        return g(context.getPackageManager());
+        return e(context.getPackageManager());
     }
 
     public static boolean d(Context context) {
         if (!c(context) || k.d()) {
-            if (e(context)) {
+            if (f(context)) {
                 if (!k.e() || k.h()) {
                     return true;
                 }
@@ -52,28 +44,41 @@ public abstract class g {
         return true;
     }
 
-    public static boolean e(Context context) {
-        if (f13435b == null) {
-            f13435b = Boolean.valueOf(context.getPackageManager().hasSystemFeature("cn.google"));
+    public static boolean e(PackageManager packageManager) {
+        if (f13830a == null) {
+            f13830a = Boolean.valueOf(packageManager.hasSystemFeature("android.hardware.type.watch"));
         }
-        return f13435b.booleanValue();
+        return f13830a.booleanValue();
     }
 
     public static boolean f(Context context) {
-        if (f13436c == null) {
-            boolean z10 = true;
-            if (!context.getPackageManager().hasSystemFeature("android.hardware.type.iot") && !context.getPackageManager().hasSystemFeature("android.hardware.type.embedded")) {
-                z10 = false;
-            }
-            f13436c = Boolean.valueOf(z10);
+        if (f13831b == null) {
+            f13831b = Boolean.valueOf(context.getPackageManager().hasSystemFeature("cn.google"));
         }
-        return f13436c.booleanValue();
+        return f13831b.booleanValue();
     }
 
-    public static boolean g(PackageManager packageManager) {
-        if (f13434a == null) {
-            f13434a = Boolean.valueOf(packageManager.hasSystemFeature("android.hardware.type.watch"));
+    public static boolean g(Context context) {
+        boolean hasSystemFeature;
+        if (f13832c == null) {
+            if (k.e()) {
+                hasSystemFeature = context.getPackageManager().hasSystemFeature("android.hardware.type.embedded");
+            } else {
+                hasSystemFeature = context.getPackageManager().hasSystemFeature("android.hardware.type.iot");
+            }
+            f13832c = Boolean.valueOf(hasSystemFeature);
         }
-        return f13434a.booleanValue();
+        return f13832c.booleanValue();
+    }
+
+    public static boolean h(PackageManager packageManager) {
+        if (f13833d == null) {
+            boolean z10 = false;
+            if (k.e() && packageManager.hasSystemFeature("android.hardware.type.automotive")) {
+                z10 = true;
+            }
+            f13833d = Boolean.valueOf(z10);
+        }
+        return f13833d.booleanValue();
     }
 }

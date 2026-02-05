@@ -269,4 +269,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.UserProfileProvisionalAccountExplainerCard = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 11804, 11805, 4900, 3941, 1234, 5391, 7742, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 11822, 11823, 4902, 3941, 1234, 5395, 7761, 2]);

@@ -50,23 +50,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'domainMigrationFailed';
     var2.DOMAIN_MIGRATION_FAILED_KEY = var3;
     var3 = function arg0, arg1, arg2() {
-        _fun60452: for (var _fun60452_ip = 0;;) switch (_fun60452_ip) {
+        _fun60475: for (var _fun60475_ip = 0;;) switch (_fun60475_ip) {
             case 0:
                 var3 = arg1;
                 var0 = _closure1_slot0;
                 var1 = var0.MIGRATION_SOURCE_DOMAIN;
                 var0 = arg2;
                 if (!(var0 !== var1)) {
-                    _fun60452_ip = 45;
-                    continue _fun60452
+                    _fun60475_ip = 45;
+                    continue _fun60475
                 }
             case 23:
                 var0 = global;
                 var0 = var0.window;
                 var0 = var0.GLOBAL_ENV;
                 var2 = var0.MIGRATION_SOURCE_ORIGIN;
-                _fun60452_ip = 65;
-                continue _fun60452;
+                _fun60475_ip = 65;
+                continue _fun60475;
             case 45:
                 var0 = global;
                 var0 = var0.window;
@@ -84,23 +84,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.sendPostMessage = var3;
     var1 = function arg0, arg1() {
-        _fun60453: for (var _fun60453_ip = 0;;) switch (_fun60453_ip) {
+        _fun60476: for (var _fun60476_ip = 0;;) switch (_fun60476_ip) {
             case 0:
                 var2 = arg0;
                 var0 = _closure1_slot0;
                 var1 = var0.MIGRATION_SOURCE_DOMAIN;
                 var0 = arg1;
                 if (!(var0 !== var1)) {
-                    _fun60453_ip = 45;
-                    continue _fun60453
+                    _fun60476_ip = 45;
+                    continue _fun60476
                 }
             case 23:
                 var0 = global;
                 var0 = var0.window;
                 var0 = var0.GLOBAL_ENV;
                 var1 = var0.MIGRATION_SOURCE_ORIGIN;
-                _fun60453_ip = 65;
-                continue _fun60453;
+                _fun60476_ip = 65;
+                continue _fun60476;
             case 45:
                 var0 = global;
                 var0 = var0.window;
@@ -110,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.origin;
                 var3 = var0 === var1;
                 if (!var3) {
-                    _fun60453_ip = 95;
-                    continue _fun60453
+                    _fun60476_ip = 95;
+                    continue _fun60476
                 }
             case 78:
                 var0 = var2.data;
@@ -122,16 +122,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var0 = null;
                 if (!var3) {
-                    _fun60453_ip = 125;
-                    continue _fun60453
+                    _fun60476_ip = 125;
+                    continue _fun60476
                 }
             case 102:
                 var2 = var2.data;
                 var3 = var1 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun60453_ip = 122;
-                    continue _fun60453
+                    _fun60476_ip = 122;
+                    continue _fun60476
                 }
             case 116:
                 var1 = var2.domainMigrationEvent;

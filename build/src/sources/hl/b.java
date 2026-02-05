@@ -1,36 +1,48 @@
 package hl;
 
-import android.media.MediaFormat;
+import android.graphics.Paint;
+import com.henninghall.date_picker.n;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Calendar;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private List f27069a = new ArrayList(2);
-
-    public void a(MediaFormat mediaFormat) {
-        a aVar = new a();
-        aVar.e(mediaFormat);
-        this.f27069a.add(aVar);
+public class b extends g {
+    public b(com.henninghall.date_picker.pickers.a aVar, n nVar) {
+        super(aVar, nVar);
     }
 
-    public List b() {
-        return this.f27069a;
+    @Override // hl.g
+    public String e() {
+        return com.henninghall.date_picker.h.a(this.f25948a.v());
     }
 
-    public void c(int i10, long j10) {
-        a aVar = (a) this.f27069a.get(i10);
-        aVar.c(aVar.a() + j10);
+    @Override // hl.g
+    public Paint.Align k() {
+        return Paint.Align.RIGHT;
     }
 
-    public void d(int i10, MediaFormat mediaFormat) {
-        ((a) this.f27069a.get(i10)).f(mediaFormat);
+    @Override // hl.g
+    public ArrayList n() {
+        Calendar calendar = Calendar.getInstance();
+        ArrayList arrayList = new ArrayList();
+        calendar.set(2, 0);
+        calendar.set(5, 1);
+        for (int i10 = 1; i10 <= 31; i10++) {
+            arrayList.add(h(calendar));
+            calendar.add(5, 1);
+        }
+        return arrayList;
     }
 
-    public void e(int i10, String str, String str2) {
-        a aVar = (a) this.f27069a.get(i10);
-        aVar.b(str);
-        aVar.d(str2);
+    @Override // hl.g
+    public boolean u() {
+        if (this.f25948a.z() == dl.b.date) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // hl.g
+    public boolean v() {
+        return true;
     }
 }

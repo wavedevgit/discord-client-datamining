@@ -1,92 +1,83 @@
 package lo;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.util.ArrayList;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.viewbinding.ViewBinding;
+import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
+import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
+import ho.m4;
+import ho.n4;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<a> CREATOR = new C0471a();
+public final class a implements ViewBinding {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final CoordinatorLayout f36992a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final LinearLayout f36993b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final Button f36994c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f36983d;
+    public final ThemeableLottieAnimationView f36995d;
 
-    /* renamed from: lo.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0471a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final a createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            int readInt = parcel.readInt();
-            ArrayList arrayList = new ArrayList(readInt);
-            for (int i10 = 0; i10 != readInt; i10++) {
-                arrayList.add(parcel.readParcelable(a.class.getClassLoader()));
+    /* renamed from: e  reason: collision with root package name */
+    public final Pi2NavigationBar f36996e;
+
+    /* renamed from: f  reason: collision with root package name */
+    public final TextView f36997f;
+
+    private a(CoordinatorLayout coordinatorLayout, LinearLayout linearLayout, Button button, ThemeableLottieAnimationView themeableLottieAnimationView, Pi2NavigationBar pi2NavigationBar, TextView textView) {
+        this.f36992a = coordinatorLayout;
+        this.f36993b = linearLayout;
+        this.f36994c = button;
+        this.f36995d = themeableLottieAnimationView;
+        this.f36996e = pi2NavigationBar;
+        this.f36997f = textView;
+    }
+
+    public static a a(View view) {
+        int i10 = m4.f26417t;
+        LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
+        if (linearLayout != null) {
+            i10 = m4.f26419u;
+            Button button = (Button) e4.a.a(view, i10);
+            if (button != null) {
+                i10 = m4.P;
+                ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
+                if (themeableLottieAnimationView != null) {
+                    i10 = m4.Y;
+                    Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
+                    if (pi2NavigationBar != null) {
+                        i10 = m4.D0;
+                        TextView textView = (TextView) e4.a.a(view, i10);
+                        if (textView != null) {
+                            return new a((CoordinatorLayout) view, linearLayout, button, themeableLottieAnimationView, pi2NavigationBar, textView);
+                        }
+                    }
+                }
             }
-            return new a(arrayList);
         }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+    }
 
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final a[] newArray(int i10) {
-            return new a[i10];
+    public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(n4.f26549a, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
         }
+        return a(inflate);
     }
 
-    public a(List previousFramesMetadata) {
-        Intrinsics.checkNotNullParameter(previousFramesMetadata, "previousFramesMetadata");
-        this.f36983d = previousFramesMetadata;
-    }
-
-    public final a a(List previousFramesMetadata) {
-        Intrinsics.checkNotNullParameter(previousFramesMetadata, "previousFramesMetadata");
-        return new a(previousFramesMetadata);
-    }
-
-    public final List b() {
-        return this.f36983d;
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if ((obj instanceof a) && Intrinsics.areEqual(this.f36983d, ((a) obj).f36983d)) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        return this.f36983d.hashCode();
-    }
-
-    public String toString() {
-        List list = this.f36983d;
-        return "AutocaptureState(previousFramesMetadata=" + list + ")";
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        List<Parcelable> list = this.f36983d;
-        dest.writeInt(list.size());
-        for (Parcelable parcelable : list) {
-            dest.writeParcelable(parcelable, i10);
-        }
-    }
-
-    public /* synthetic */ a(List list, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? CollectionsKt.l() : list);
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public CoordinatorLayout getRoot() {
+        return this.f36992a;
     }
 }

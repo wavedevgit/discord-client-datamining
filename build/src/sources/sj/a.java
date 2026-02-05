@@ -1,57 +1,56 @@
 package sj;
 
-import android.graphics.Matrix;
-import android.graphics.Point;
-import android.graphics.Rect;
-import gf.q;
-import wj.b;
+import java.lang.ref.ReferenceQueue;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tj.a f49529a;
+    private final ReferenceQueue f49644a = new ReferenceQueue();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Rect f49530b;
+    private final Set f49645b = Collections.synchronizedSet(new HashSet());
 
-    /* renamed from: c  reason: collision with root package name */
-    private final Point[] f49531c;
-
-    public a(tj.a aVar, Matrix matrix) {
-        this.f49529a = (tj.a) q.l(aVar);
-        Rect a10 = aVar.a();
-        if (a10 != null && matrix != null) {
-            b.e(a10, matrix);
-        }
-        this.f49530b = a10;
-        Point[] d10 = aVar.d();
-        if (d10 != null && matrix != null) {
-            b.b(d10, matrix);
-        }
-        this.f49531c = d10;
+    /* renamed from: sj.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public interface InterfaceC0635a {
+        void a();
     }
 
-    public Rect a() {
-        return this.f49530b;
+    private a() {
     }
 
-    public Point[] b() {
-        return this.f49531c;
+    public static a a() {
+        a aVar = new a();
+        aVar.b(aVar, new Runnable() { // from class: sj.o
+            @Override // java.lang.Runnable
+            public final void run() {
+            }
+        });
+        final ReferenceQueue referenceQueue = aVar.f49644a;
+        final Set set = aVar.f49645b;
+        Thread thread = new Thread(new Runnable() { // from class: sj.p
+            @Override // java.lang.Runnable
+            public final void run() {
+                ReferenceQueue referenceQueue2 = referenceQueue;
+                while (!set.isEmpty()) {
+                    try {
+                        ((r) referenceQueue2.remove()).a();
+                    } catch (InterruptedException unused) {
+                    }
+                }
+            }
+        }, "MlKitCleaner");
+        thread.setDaemon(true);
+        thread.start();
+        return aVar;
     }
 
-    public int c() {
-        int format = this.f49529a.getFormat();
-        if (format > 4096 || format == 0) {
-            return -1;
-        }
-        return format;
-    }
-
-    public String d() {
-        return this.f49529a.b();
-    }
-
-    public int e() {
-        return this.f49529a.c();
+    public InterfaceC0635a b(Object obj, Runnable runnable) {
+        r rVar = new r(obj, this.f49644a, this.f49645b, runnable, null);
+        this.f49645b.add(rVar);
+        return rVar;
     }
 }

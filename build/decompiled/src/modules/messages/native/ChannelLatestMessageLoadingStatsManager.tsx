@@ -78,22 +78,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'finish';
         var0.key = var5;
         var4 = function arg0() {
-            _fun77756: for (var _fun77756_ip = 0;;) switch (_fun77756_ip) {
+            _fun77775: for (var _fun77775_ip = 0;;) switch (_fun77775_ip) {
                 case 0:
                     var7 = arg0;
                     var1 = this;
                     var0 = var1.latestChannelMessagesLoad;
                     var2 = null;
                     if (!(var2 != var0)) {
-                        _fun77756_ip = 200;
-                        continue _fun77756
+                        _fun77775_ip = 200;
+                        continue _fun77775
                     }
                 case 21:
                     var3 = var0.channelId;
                     var2 = var7.channelId;
                     if (!(var3 === var2)) {
-                        _fun77756_ip = 200;
-                        continue _fun77756
+                        _fun77775_ip = 200;
+                        continue _fun77775
                     }
                 case 38:
                     var2 = global;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.bind(var4)(var2);
                     var6 = !var2;
                     if (!var6) {
-                        _fun77756_ip = 124;
-                        continue _fun77756
+                        _fun77775_ip = 124;
+                        continue _fun77775
                     }
                 case 99:
                     var0 = _closure2_slot0;

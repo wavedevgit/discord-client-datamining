@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf;
 public class o implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeDeserializer f34961d;
+    private final TypeDeserializer f34485d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ProtoBuf.Type f34962e;
+    private final ProtoBuf.Type f34486e;
 
     public o(TypeDeserializer typeDeserializer, ProtoBuf.Type type) {
-        this.f34961d = typeDeserializer;
-        this.f34962e = type;
+        this.f34485d = typeDeserializer;
+        this.f34486e = type;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List o10;
-        o10 = TypeDeserializer.o(this.f34961d, this.f34962e);
+        o10 = TypeDeserializer.o(this.f34485d, this.f34486e);
         return o10;
     }
 }

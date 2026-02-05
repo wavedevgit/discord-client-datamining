@@ -5,7 +5,7 @@ import w5.c;
 abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f51134a = c.a.a("nm", "p", "s", "hd", "d");
+    private static final c.a f51823a = c.a.a("nm", "p", "s", "hd", "d");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static s5.b a(w5.c cVar, l5.i iVar, int i10) {
@@ -21,12 +21,12 @@ abstract class f {
         r5.m mVar = null;
         r5.f fVar = null;
         while (cVar.hasNext()) {
-            int B = cVar.B(f51134a);
-            if (B != 0) {
-                if (B != 1) {
-                    if (B != 2) {
-                        if (B != 3) {
-                            if (B != 4) {
+            int y10 = cVar.y(f51823a);
+            if (y10 != 0) {
+                if (y10 != 1) {
+                    if (y10 != 2) {
+                        if (y10 != 3) {
+                            if (y10 != 4) {
                                 cVar.E();
                                 cVar.P();
                             } else if (cVar.nextInt() == 3) {

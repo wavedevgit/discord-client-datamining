@@ -1,122 +1,57 @@
 package pk;
 
-import ok.k;
+import com.google.zxing.Result;
+import fk.k;
+import fk.m;
+import fk.o;
+import fk.p;
+import java.util.Map;
+import jk.b;
+import jk.e;
+import qk.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a extends k {
+public final class a implements m {
 
     /* renamed from: b  reason: collision with root package name */
-    private final int[] f46107b;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final int[] f46110e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final int[] f46111f;
+    private static final p[] f46067b = new p[0];
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f46106a = new int[4];
+    private final c f46068a = new c();
 
-    /* renamed from: c  reason: collision with root package name */
-    private final float[] f46108c = new float[4];
-
-    /* renamed from: d  reason: collision with root package name */
-    private final float[] f46109d = new float[4];
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public a() {
-        int[] iArr = new int[8];
-        this.f46107b = iArr;
-        this.f46110e = new int[iArr.length / 2];
-        this.f46111f = new int[iArr.length / 2];
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public static void g(int[] iArr, float[] fArr) {
-        int i10 = 0;
-        float f10 = fArr[0];
-        for (int i11 = 1; i11 < iArr.length; i11++) {
-            float f11 = fArr[i11];
-            if (f11 < f10) {
-                i10 = i11;
-                f10 = f11;
-            }
-        }
-        iArr[i10] = iArr[i10] - 1;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public static void n(int[] iArr, float[] fArr) {
-        int i10 = 0;
-        float f10 = fArr[0];
-        for (int i11 = 1; i11 < iArr.length; i11++) {
-            float f11 = fArr[i11];
-            if (f11 > f10) {
-                i10 = i11;
-                f10 = f11;
-            }
-        }
-        iArr[i10] = iArr[i10] + 1;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public static boolean o(int[] iArr) {
-        int i10;
-        float f10 = (iArr[0] + iArr[1]) / ((iArr[2] + i10) + iArr[3]);
-        if (f10 >= 0.7916667f && f10 <= 0.89285713f) {
-            int i11 = Integer.MAX_VALUE;
-            int i12 = Integer.MIN_VALUE;
-            for (int i13 : iArr) {
-                if (i13 > i12) {
-                    i12 = i13;
-                }
-                if (i13 < i11) {
-                    i11 = i13;
+    private static b b(b bVar) {
+        int[] g10 = bVar.g();
+        if (g10 != null) {
+            int i10 = g10[0];
+            int i11 = g10[1];
+            int i12 = g10[2];
+            int i13 = g10[3];
+            b bVar2 = new b(30, 33);
+            for (int i14 = 0; i14 < 33; i14++) {
+                int min = Math.min(((i14 * i13) + (i13 / 2)) / 33, i13 - 1) + i11;
+                for (int i15 = 0; i15 < 30; i15++) {
+                    if (bVar.e(Math.min((((i15 * i12) + (i12 / 2)) + (((i14 & 1) * i12) / 2)) / 30, i12 - 1) + i10, min)) {
+                        bVar2.q(i15, i14);
+                    }
                 }
             }
-            if (i12 < i11 * 10) {
-                return true;
-            }
+            return bVar2;
         }
-        return false;
+        throw k.a();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public static int p(int[] iArr, int[][] iArr2) {
-        for (int i10 = 0; i10 < iArr2.length; i10++) {
-            if (k.d(iArr, iArr2[i10], 0.45f) < 0.2f) {
-                return i10;
-            }
+    @Override // fk.m
+    public Result a(fk.c cVar, Map map) {
+        e b10 = this.f46068a.b(b(cVar.a()), map);
+        Result result = new Result(b10.k(), b10.g(), f46067b, fk.a.MAXICODE);
+        result.h(o.ERRORS_CORRECTED, b10.d());
+        String b11 = b10.b();
+        if (b11 != null) {
+            result.h(o.ERROR_CORRECTION_LEVEL, b11);
         }
-        throw ck.k.a();
+        return result;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final int[] h() {
-        return this.f46107b;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final int[] i() {
-        return this.f46106a;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final int[] j() {
-        return this.f46111f;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final float[] k() {
-        return this.f46109d;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final int[] l() {
-        return this.f46110e;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final float[] m() {
-        return this.f46108c;
+    @Override // fk.m
+    public void reset() {
     }
 }

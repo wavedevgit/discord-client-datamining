@@ -6,40 +6,40 @@ import o9.d;
 public final class a implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ga.a f50441a;
+    private final ga.a f51213a;
 
     public a(ga.a animatedDrawableBackend) {
         Intrinsics.checkNotNullParameter(animatedDrawableBackend, "animatedDrawableBackend");
-        this.f50441a = animatedDrawableBackend;
+        this.f51213a = animatedDrawableBackend;
     }
 
     @Override // o9.d
     public int a() {
-        return this.f50441a.a();
+        return this.f51213a.a();
     }
 
     @Override // o9.d
     public int b() {
-        return this.f50441a.b();
+        return this.f51213a.b();
     }
 
     @Override // o9.d
     public int g() {
-        return this.f50441a.getHeight();
+        return this.f51213a.getHeight();
     }
 
     @Override // o9.d
     public int j() {
-        return this.f50441a.d();
+        return this.f51213a.d();
     }
 
     @Override // o9.d
     public int l(int i10) {
-        return this.f50441a.g(i10);
+        return this.f51213a.g(i10);
     }
 
     @Override // o9.d
     public int n() {
-        return this.f50441a.getWidth();
+        return this.f51213a.getWidth();
     }
 }

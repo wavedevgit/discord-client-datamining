@@ -14,42 +14,42 @@ import org.jetbrains.annotations.NotNull;
 public final class VerifyDeviceIntegrityRequest_MetaJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18855a;
+    private final m.b f19261a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18856b;
+    private final com.squareup.moshi.h f19262b;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile Constructor f18857c;
+    private volatile Constructor f19263c;
 
     public VerifyDeviceIntegrityRequest_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("packageName", "integrityToken");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18855a = a10;
+        this.f19261a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "packageName");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18856b = f10;
+        this.f19262b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public VerifyDeviceIntegrityRequest.Meta fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f18855a);
-            if (A0 != -1) {
-                if (A0 != 0) {
-                    if (A0 == 1) {
-                        str2 = (String) this.f18856b.fromJson(reader);
+            int W = reader.W(this.f19261a);
+            if (W != -1) {
+                if (W != 0) {
+                    if (W == 1) {
+                        str2 = (String) this.f19262b.fromJson(reader);
                         i10 &= -3;
                     }
                 } else {
-                    str = (String) this.f18856b.fromJson(reader);
+                    str = (String) this.f19262b.fromJson(reader);
                     i10 &= -2;
                 }
             } else {
@@ -57,14 +57,14 @@ public final class VerifyDeviceIntegrityRequest_MetaJsonAdapter extends com.squa
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         if (i10 == -4) {
             return new VerifyDeviceIntegrityRequest.Meta(str, str2);
         }
-        Constructor constructor = this.f18857c;
+        Constructor constructor = this.f19263c;
         if (constructor == null) {
-            constructor = VerifyDeviceIntegrityRequest.Meta.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, vm.c.f51688c);
-            this.f18857c = constructor;
+            constructor = VerifyDeviceIntegrityRequest.Meta.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, ym.c.f54853c);
+            this.f19263c = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         Object newInstance = constructor.newInstance(str, str2, Integer.valueOf(i10), null);
@@ -77,11 +77,11 @@ public final class VerifyDeviceIntegrityRequest_MetaJsonAdapter extends com.squa
     public void toJson(t writer, VerifyDeviceIntegrityRequest.Meta meta) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (meta != null) {
-            writer.l();
-            writer.A0("packageName");
-            this.f18856b.toJson(writer, meta.b());
-            writer.A0("integrityToken");
-            this.f18856b.toJson(writer, meta.a());
+            writer.k();
+            writer.W("packageName");
+            this.f19262b.toJson(writer, meta.b());
+            writer.W("integrityToken");
+            this.f19262b.toJson(writer, meta.a());
             writer.E();
             return;
         }

@@ -63,10 +63,10 @@ public class ImageRequest {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private int f10603d;
+        private int f10988d;
 
         RequestLevel(int i10) {
-            this.f10603d = i10;
+            this.f10988d = i10;
         }
 
         public static RequestLevel a(RequestLevel requestLevel, RequestLevel requestLevel2) {
@@ -77,7 +77,7 @@ public class ImageRequest {
         }
 
         public int d() {
-            return this.f10603d;
+            return this.f10988d;
         }
     }
 
@@ -278,7 +278,7 @@ public class ImageRequest {
     public int getPreferredHeight() {
         ResizeOptions resizeOptions = this.mResizeOptions;
         if (resizeOptions != null) {
-            return resizeOptions.f10063b;
+            return resizeOptions.f10448b;
         }
         return RecyclerView.ItemAnimator.FLAG_MOVED;
     }
@@ -286,7 +286,7 @@ public class ImageRequest {
     public int getPreferredWidth() {
         ResizeOptions resizeOptions = this.mResizeOptions;
         if (resizeOptions != null) {
-            return resizeOptions.f10062a;
+            return resizeOptions.f10447a;
         }
         return RecyclerView.ItemAnimator.FLAG_MOVED;
     }

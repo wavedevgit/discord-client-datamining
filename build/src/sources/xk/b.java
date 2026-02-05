@@ -1,90 +1,108 @@
 package xk;
-
-import xk.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class b {
+public final class b {
+
+    /* renamed from: f  reason: collision with root package name */
+    public static final b f53925f = new b(929, 3);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f53345a;
+    private final int[] f53926a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final byte[] f53346b;
+    private final int[] f53927b;
 
-    private b(int i10, byte[] bArr) {
-        this.f53345a = i10;
-        this.f53346b = bArr;
+    /* renamed from: c  reason: collision with root package name */
+    private final c f53928c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final c f53929d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final int f53930e;
+
+    private b(int i10, int i11) {
+        this.f53930e = i10;
+        this.f53926a = new int[i10];
+        this.f53927b = new int[i10];
+        int i12 = 1;
+        for (int i13 = 0; i13 < i10; i13++) {
+            this.f53926a[i13] = i12;
+            i12 = (i12 * i11) % i10;
+        }
+        for (int i14 = 0; i14 < i10 - 1; i14++) {
+            this.f53927b[this.f53926a[i14]] = i14;
+        }
+        this.f53928c = new c(this, new int[]{0});
+        this.f53929d = new c(this, new int[]{1});
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static b[] b(byte[] bArr, j jVar, f fVar) {
-        int i10;
-        if (bArr.length == jVar.h()) {
-            j.b f10 = jVar.f(fVar);
-            j.a[] a10 = f10.a();
-            int i11 = 0;
-            for (j.a aVar : a10) {
-                i11 += aVar.a();
+    public int a(int i10, int i11) {
+        return (i10 + i11) % this.f53930e;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c b(int i10, int i11) {
+        if (i10 >= 0) {
+            if (i11 == 0) {
+                return this.f53928c;
             }
-            b[] bVarArr = new b[i11];
-            int i12 = 0;
-            for (j.a aVar2 : a10) {
-                int i13 = 0;
-                while (i13 < aVar2.a()) {
-                    int b10 = aVar2.b();
-                    bVarArr[i12] = new b(b10, new byte[f10.b() + b10]);
-                    i13++;
-                    i12++;
-                }
-            }
-            int length = bVarArr[0].f53346b.length;
-            int i14 = i11 - 1;
-            while (i14 >= 0 && bVarArr[i14].f53346b.length != length) {
-                i14--;
-            }
-            int i15 = i14 + 1;
-            int b11 = length - f10.b();
-            int i16 = 0;
-            for (int i17 = 0; i17 < b11; i17++) {
-                int i18 = 0;
-                while (i18 < i12) {
-                    bVarArr[i18].f53346b[i17] = bArr[i16];
-                    i18++;
-                    i16++;
-                }
-            }
-            int i19 = i15;
-            while (i19 < i12) {
-                bVarArr[i19].f53346b[b11] = bArr[i16];
-                i19++;
-                i16++;
-            }
-            int length2 = bVarArr[0].f53346b.length;
-            while (b11 < length2) {
-                int i20 = 0;
-                while (i20 < i12) {
-                    if (i20 < i15) {
-                        i10 = b11;
-                    } else {
-                        i10 = b11 + 1;
-                    }
-                    bVarArr[i20].f53346b[i10] = bArr[i16];
-                    i20++;
-                    i16++;
-                }
-                b11++;
-            }
-            return bVarArr;
+            int[] iArr = new int[i10 + 1];
+            iArr[0] = i11;
+            return new c(this, iArr);
         }
         throw new IllegalArgumentException();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public byte[] a() {
-        return this.f53346b;
+    public int c(int i10) {
+        return this.f53926a[i10];
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public int c() {
-        return this.f53345a;
+    public c d() {
+        return this.f53929d;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int e() {
+        return this.f53930e;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c f() {
+        return this.f53928c;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int g(int i10) {
+        if (i10 != 0) {
+            return this.f53926a[(this.f53930e - this.f53927b[i10]) - 1];
+        }
+        throw new ArithmeticException();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int h(int i10) {
+        if (i10 != 0) {
+            return this.f53927b[i10];
+        }
+        throw new IllegalArgumentException();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int i(int i10, int i11) {
+        if (i10 != 0 && i11 != 0) {
+            int[] iArr = this.f53926a;
+            int[] iArr2 = this.f53927b;
+            return iArr[(iArr2[i10] + iArr2[i11]) % (this.f53930e - 1)];
+        }
+        return 0;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int j(int i10, int i11) {
+        int i12 = this.f53930e;
+        return ((i10 + i12) - i11) % i12;
     }
 }

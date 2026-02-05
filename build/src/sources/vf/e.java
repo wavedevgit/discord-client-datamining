@@ -4,20 +4,20 @@ import android.app.PendingIntent;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.internal.fido.v5;
 import ff.r;
-import wg.k;
+import xg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class e extends v5 {
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ k f51594c;
+    final /* synthetic */ k f52283c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(a aVar, k kVar) {
-        this.f51594c = kVar;
+        this.f52283c = kVar;
     }
 
     @Override // com.google.android.gms.internal.fido.w5
-    public final void O(Status status, PendingIntent pendingIntent) {
-        r.a(status, pendingIntent, this.f51594c);
+    public final void S(Status status, PendingIntent pendingIntent) {
+        r.a(status, pendingIntent, this.f52283c);
     }
 }

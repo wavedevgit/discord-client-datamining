@@ -65,4 +65,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.transitionToGuild = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5616, 4895, 1220, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5620, 4897, 1220, 2]);

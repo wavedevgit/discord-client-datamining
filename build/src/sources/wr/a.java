@@ -1,17 +1,81 @@
 package wr;
 
-import java.io.File;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.lang.reflect.Method;
+import kotlin.collections.i;
 import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a extends h {
-    public /* synthetic */ a(File file, File file2, String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(file, (i10 & 2) != 0 ? null : file2, (i10 & 4) != 0 ? null : str);
+public class a {
+
+    /* renamed from: wr.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static final class C0705a {
+        @NotNull
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final C0705a f53250a = new C0705a();
+
+        /* renamed from: b  reason: collision with root package name */
+        public static final Method f53251b;
+
+        /* renamed from: c  reason: collision with root package name */
+        public static final Method f53252c;
+
+        static {
+            Method method;
+            Method method2;
+            Method[] methods = Throwable.class.getMethods();
+            Intrinsics.checkNotNull(methods);
+            int length = methods.length;
+            int i10 = 0;
+            int i11 = 0;
+            while (true) {
+                method = null;
+                if (i11 < length) {
+                    method2 = methods[i11];
+                    if (Intrinsics.areEqual(method2.getName(), "addSuppressed")) {
+                        Class<?>[] parameterTypes = method2.getParameterTypes();
+                        Intrinsics.checkNotNullExpressionValue(parameterTypes, "getParameterTypes(...)");
+                        if (Intrinsics.areEqual(i.D0(parameterTypes), Throwable.class)) {
+                            break;
+                        }
+                    }
+                    i11++;
+                } else {
+                    method2 = null;
+                    break;
+                }
+            }
+            f53251b = method2;
+            int length2 = methods.length;
+            while (true) {
+                if (i10 >= length2) {
+                    break;
+                }
+                Method method3 = methods[i10];
+                if (Intrinsics.areEqual(method3.getName(), "getSuppressed")) {
+                    method = method3;
+                    break;
+                }
+                i10++;
+            }
+            f53252c = method;
+        }
+
+        private C0705a() {
+        }
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public a(File file, File file2, String str) {
-        super(file, file2, str);
-        Intrinsics.checkNotNullParameter(file, "file");
+    public void a(Throwable cause, Throwable exception) {
+        Intrinsics.checkNotNullParameter(cause, "cause");
+        Intrinsics.checkNotNullParameter(exception, "exception");
+        Method method = C0705a.f53251b;
+        if (method != null) {
+            method.invoke(cause, exception);
+        }
+    }
+
+    public kotlin.random.c b() {
+        return new kotlin.random.b();
     }
 }

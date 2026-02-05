@@ -1,14 +1,32 @@
 package aq;
 
-import com.withpersona.sdk2.inquiry.network.dto.ui.components.Button;
-import com.withpersona.sdk2.inquiry.shared.ui.ButtonWithLoadingIndicator;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.Lazy;
+import kotlin.jvm.functions.Function0;
+import or.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class b {
-    public static final ButtonWithLoadingIndicator a(a aVar, m5 uiComponentHelper, Button config) {
-        Intrinsics.checkNotNullParameter(aVar, "<this>");
-        Intrinsics.checkNotNullParameter(uiComponentHelper, "uiComponentHelper");
-        Intrinsics.checkNotNullParameter(config, "config");
-        return com.withpersona.sdk2.inquiry.steps.ui.components.f.f(aVar, uiComponentHelper, config);
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final Lazy f5970a = l.a(new Function0() { // from class: aq.a
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            boolean c10;
+            c10 = b.c();
+            return Boolean.valueOf(c10);
+        }
+    });
+
+    public static final boolean b() {
+        return ((Boolean) f5970a.getValue()).booleanValue();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final boolean c() {
+        try {
+            Class.forName("androidx.test.espresso.Espresso");
+            return true;
+        } catch (ClassNotFoundException unused) {
+            return false;
+        }
     }
 }

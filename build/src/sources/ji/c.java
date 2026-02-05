@@ -1,44 +1,19 @@
 package ji;
-
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-abstract class c extends d implements x {
-    /* JADX INFO: Access modifiers changed from: protected */
-    public c(Map map) {
-        super(map);
+final class c extends u0 {
+
+    /* renamed from: e  reason: collision with root package name */
+    final /* synthetic */ e f30914e;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c(e eVar) {
+        this.f30914e = eVar;
     }
 
-    @Override // ji.d, ji.b0
-    /* renamed from: A */
-    public List get(Object obj) {
-        return (List) super.get(obj);
-    }
-
-    @Override // ji.f, ji.b0
-    public Map asMap() {
-        return super.asMap();
-    }
-
-    @Override // ji.f
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
-
-    @Override // ji.d, ji.b0
-    public boolean put(Object obj, Object obj2) {
-        return super.put(obj, obj2);
-    }
-
-    @Override // ji.d
-    Collection x(Collection collection) {
-        return Collections.unmodifiableList((List) collection);
-    }
-
-    @Override // ji.d
-    Collection y(Object obj, Collection collection) {
-        return z(obj, (List) collection, null);
+    @Override // ji.u0
+    public final void b() {
+        f.s(this.f30914e.f30915d);
+        this.f30914e.f30915d.f30930n = null;
+        this.f30914e.f30915d.f30923g = false;
     }
 }

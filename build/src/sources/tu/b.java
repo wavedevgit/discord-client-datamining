@@ -1,23 +1,64 @@
 package tu;
 
-import kotlin.collections.CollectionsKt;
-import wu.d;
+import java.util.List;
+import java.util.Map;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import tu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements nu.b, wu.d {
+public final class b implements qu.a, d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f50294a = new b();
+    public static final b f51063a = new b();
 
     private b() {
     }
 
-    @Override // nu.b
-    /* renamed from: a */
-    public Boolean f(Object obj, Object obj2) {
-        return Boolean.valueOf(b(CollectionsKt.firstOrNull(sv.a.c(obj))));
+    @Override // su.f
+    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
+        return d.a.f(this, obj, obj2, hVar, function2);
     }
 
-    public boolean b(Object obj) {
-        return d.a.a(this, obj);
+    @Override // su.a
+    public su.b c(List list, Object obj, h hVar) {
+        return d.a.c(this, list, obj, hVar);
+    }
+
+    @Override // qu.a
+    public Object d(Object obj, Object obj2, h evaluator) {
+        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+        return g(obj, obj2, evaluator);
+    }
+
+    @Override // tu.d
+    public Object e(c data, h evaluator) {
+        Intrinsics.checkNotNullParameter(data, "data");
+        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+        for (Object obj : data.b()) {
+            if (f51063a.i(evaluator.a(data.a(), obj))) {
+                return Boolean.FALSE;
+            }
+        }
+        return data.c();
+    }
+
+    @Override // uv.a
+    public List f(List list, Object obj, h hVar) {
+        return d.a.h(this, list, obj, hVar);
+    }
+
+    public Object g(Object obj, Object obj2, h hVar) {
+        return d.a.b(this, obj, obj2, hVar);
+    }
+
+    @Override // su.a
+    /* renamed from: h */
+    public Boolean a(Map map, List expressionValues) {
+        Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
+        return Boolean.TRUE;
+    }
+
+    public boolean i(Object obj) {
+        return d.a.i(this, obj);
     }
 }

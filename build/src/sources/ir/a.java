@@ -1,20 +1,11 @@
 package ir;
+
+import gr.q;
+import gr.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-    public static a a() {
-        return new b();
-    }
-
-    public abstract String b(String str);
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static class b extends a {
-        private b() {
-        }
-
-        @Override // ir.a
-        public String b(String str) {
-            return str;
-        }
+public class a implements s {
+    @Override // gr.s
+    public Object a(gr.g gVar, q qVar) {
+        return new jr.a(gVar.e());
     }
 }

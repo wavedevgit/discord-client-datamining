@@ -7,7 +7,7 @@ import com.facebook.react.common.build.ReactBuildConfig;
 import com.facebook.react.devsupport.StackTraceHelper;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
-import lr.p;
+import or.p;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u001a\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\tH\u0007J\u001a\u0010\n\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\tH\u0002¨\u0006\u000b"}, d2 = {"Lcom/facebook/react/common/annotations/internal/LegacyArchitectureLogger;", "", "<init>", "()V", "assertLegacyArchitecture", "", StackTraceHelper.NAME_KEY, "", "logLevel", "Lcom/facebook/react/common/annotations/internal/LegacyArchitectureLogLevel;", "executeAssert", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */

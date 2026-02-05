@@ -1,14 +1,27 @@
 package ms;
 
-import kotlinx.coroutines.flow.Flow;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class h0 implements g0 {
-    @Override // ms.g0
-    public Flow a(j0 j0Var) {
-        return g.w(e0.f39155d);
+public class h0 extends kotlinx.coroutines.a implements g0 {
+    public h0(CoroutineContext coroutineContext, boolean z10) {
+        super(coroutineContext, true, z10);
     }
 
-    public String toString() {
-        return "SharingStarted.Eagerly";
+    static /* synthetic */ Object W0(h0 h0Var, Continuation continuation) {
+        Object D = h0Var.D(continuation);
+        ur.b.f();
+        return D;
+    }
+
+    @Override // ms.g0
+    public Object V(Continuation continuation) {
+        return W0(this, continuation);
+    }
+
+    @Override // ms.g0
+    public Object y() {
+        return T();
     }
 }

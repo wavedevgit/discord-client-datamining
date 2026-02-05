@@ -10,60 +10,60 @@ import java.util.ArrayList;
 public class d extends BaseAdapter {
 
     /* renamed from: d  reason: collision with root package name */
-    e f1296d;
+    e f1408d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f1297e = -1;
+    private int f1409e = -1;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f1298i;
+    private boolean f1410i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f1299o;
+    private final boolean f1411o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final LayoutInflater f1300p;
+    private final LayoutInflater f1412p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f1301q;
+    private final int f1413q;
 
     public d(e eVar, LayoutInflater layoutInflater, boolean z10, int i10) {
-        this.f1299o = z10;
-        this.f1300p = layoutInflater;
-        this.f1296d = eVar;
-        this.f1301q = i10;
+        this.f1411o = z10;
+        this.f1412p = layoutInflater;
+        this.f1408d = eVar;
+        this.f1413q = i10;
         a();
     }
 
     void a() {
-        g v10 = this.f1296d.v();
+        g v10 = this.f1408d.v();
         if (v10 != null) {
-            ArrayList z10 = this.f1296d.z();
+            ArrayList z10 = this.f1408d.z();
             int size = z10.size();
             for (int i10 = 0; i10 < size; i10++) {
                 if (((g) z10.get(i10)) == v10) {
-                    this.f1297e = i10;
+                    this.f1409e = i10;
                     return;
                 }
             }
         }
-        this.f1297e = -1;
+        this.f1409e = -1;
     }
 
     public e b() {
-        return this.f1296d;
+        return this.f1408d;
     }
 
     @Override // android.widget.Adapter
     /* renamed from: c */
     public g getItem(int i10) {
         ArrayList E;
-        if (this.f1299o) {
-            E = this.f1296d.z();
+        if (this.f1411o) {
+            E = this.f1408d.z();
         } else {
-            E = this.f1296d.E();
+            E = this.f1408d.E();
         }
-        int i11 = this.f1297e;
+        int i11 = this.f1409e;
         if (i11 >= 0 && i10 >= i11) {
             i10++;
         }
@@ -71,18 +71,18 @@ public class d extends BaseAdapter {
     }
 
     public void d(boolean z10) {
-        this.f1298i = z10;
+        this.f1410i = z10;
     }
 
     @Override // android.widget.Adapter
     public int getCount() {
         ArrayList E;
-        if (this.f1299o) {
-            E = this.f1296d.z();
+        if (this.f1411o) {
+            E = this.f1408d.z();
         } else {
-            E = this.f1296d.E();
+            E = this.f1408d.E();
         }
-        if (this.f1297e < 0) {
+        if (this.f1409e < 0) {
             return E.size();
         }
         return E.size() - 1;
@@ -98,7 +98,7 @@ public class d extends BaseAdapter {
         int i11;
         boolean z10;
         if (view == null) {
-            view = this.f1300p.inflate(this.f1301q, viewGroup, false);
+            view = this.f1412p.inflate(this.f1413q, viewGroup, false);
         }
         int groupId = getItem(i10).getGroupId();
         int i12 = i10 - 1;
@@ -108,14 +108,14 @@ public class d extends BaseAdapter {
             i11 = groupId;
         }
         ListMenuItemView listMenuItemView = (ListMenuItemView) view;
-        if (this.f1296d.G() && groupId != i11) {
+        if (this.f1408d.G() && groupId != i11) {
             z10 = true;
         } else {
             z10 = false;
         }
         listMenuItemView.setGroupDividerEnabled(z10);
         k.a aVar = (k.a) view;
-        if (this.f1298i) {
+        if (this.f1410i) {
             listMenuItemView.setForceShowIcon(true);
         }
         aVar.c(getItem(i10), 0);

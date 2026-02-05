@@ -41,18 +41,18 @@ public final class StepStyles_SelfieStepBorderColorJsonAdapter extends h {
     @NotNull
     public StepStyles.SelfieStepBorderColor fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.SimpleElementColor simpleElementColor = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.SelfieStepBorderColor(simpleElementColor);
     }
 
@@ -60,8 +60,8 @@ public final class StepStyles_SelfieStepBorderColorJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.SelfieStepBorderColor selfieStepBorderColor) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfieStepBorderColor != null) {
-            writer.l();
-            writer.A0("selfieCaptureFeedBox");
+            writer.k();
+            writer.W("selfieCaptureFeedBox");
             this.nullableSimpleElementColorAdapter.toJson(writer, selfieStepBorderColor.getSelfieCaptureFeedBox());
             writer.E();
             return;

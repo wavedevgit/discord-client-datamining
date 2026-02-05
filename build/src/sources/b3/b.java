@@ -3,10 +3,10 @@ package b3;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    final String f6250a;
+    final String f6097a;
 
     public b(String str) {
-        this.f6250a = str;
+        this.f6097a = str;
     }
 
     public abstract float a(Object obj);

@@ -1,48 +1,15 @@
 package xo;
 
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.contract.ActivityResultContract;
+import com.google.android.play.core.integrity.IntegrityManagerFactory;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class d {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a extends ActivityResultContract {
-        a() {
-        }
-
-        @Override // androidx.activity.result.contract.ActivityResultContract
-        /* renamed from: a */
-        public Intent createIntent(Context context, xo.a input) {
-            Intrinsics.checkNotNullParameter(context, "context");
-            Intrinsics.checkNotNullParameter(input, "input");
-            Intent intent = input.a().f1894a;
-            Intrinsics.checkNotNullExpressionValue(intent, "intent");
-            intent.setData(Uri.parse(input.b()));
-            return intent;
-        }
-
-        @Override // androidx.activity.result.contract.ActivityResultContract
-        /* renamed from: b */
-        public Integer parseResult(int i10, Intent intent) {
-            return Integer.valueOf(i10);
-        }
-    }
-
-    public static final f0 b() {
-        return new f0(new a(), new ActivityResultCallback() { // from class: xo.c
-            @Override // androidx.activity.result.ActivityResultCallback
-            public final void a(Object obj) {
-                d.c(((Integer) obj).intValue());
-            }
-        });
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void c(int i10) {
-        new f().a(i10);
+public final class d implements f {
+    @Override // xo.f
+    public com.google.android.play.core.integrity.c create(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        com.google.android.play.core.integrity.c a10 = IntegrityManagerFactory.a(context);
+        Intrinsics.checkNotNullExpressionValue(a10, "createStandard(...)");
+        return a10;
     }
 }

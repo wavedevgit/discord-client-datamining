@@ -15,43 +15,43 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateDocumentResponse_DataJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18100a;
+    private final m.b f18506a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18101b;
+    private final h f18507b;
 
     public CreateDocumentResponse_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18100a = a10;
+        this.f18506a = a10;
         h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18101b = f10;
+        this.f18507b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public CreateDocumentResponse.Data fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f18100a);
-            if (A0 != -1) {
-                if (A0 == 0 && (str = (String) this.f18101b.fromJson(reader)) == null) {
-                    throw vm.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+            int W = reader.W(this.f18506a);
+            if (W != -1) {
+                if (W == 0 && (str = (String) this.f18507b.fromJson(reader)) == null) {
+                    throw ym.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                 }
             } else {
                 reader.E0();
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         if (str != null) {
             return new CreateDocumentResponse.Data(str);
         }
-        throw vm.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+        throw ym.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -59,9 +59,9 @@ public final class CreateDocumentResponse_DataJsonAdapter extends h {
     public void toJson(t writer, CreateDocumentResponse.Data data) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (data != null) {
-            writer.l();
-            writer.A0(StackTraceHelper.ID_KEY);
-            this.f18101b.toJson(writer, data.a());
+            writer.k();
+            writer.W(StackTraceHelper.ID_KEY);
+            this.f18507b.toJson(writer, data.a());
             writer.E();
             return;
         }

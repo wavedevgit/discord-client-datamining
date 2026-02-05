@@ -8,23 +8,23 @@ import java.lang.reflect.Method;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static Method f40045a;
+    private static Method f39505a;
 
     public static IBinder a(Bundle bundle, String str) {
-        if (w0.f40197a >= 18) {
+        if (w0.f39657a >= 18) {
             return bundle.getBinder(str);
         }
         return b(bundle, str);
     }
 
     private static IBinder b(Bundle bundle, String str) {
-        Method method = f40045a;
+        Method method = f39505a;
         if (method == null) {
             try {
                 Method method2 = Bundle.class.getMethod("getIBinder", String.class);
-                f40045a = method2;
+                f39505a = method2;
                 method2.setAccessible(true);
-                method = f40045a;
+                method = f39505a;
             } catch (NoSuchMethodException e10) {
                 y.g("BundleUtil", "Failed to retrieve getIBinder method", e10);
                 return null;

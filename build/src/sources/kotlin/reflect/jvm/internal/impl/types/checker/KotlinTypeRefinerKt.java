@@ -14,11 +14,11 @@ import org.jetbrains.annotations.NotNull;
 public final class KotlinTypeRefinerKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ModuleCapability f35114a = new ModuleCapability("KotlinTypeRefiner");
+    private static final ModuleCapability f34638a = new ModuleCapability("KotlinTypeRefiner");
 
     @NotNull
     public static final ModuleCapability<Ref<TypeRefinementSupport>> getREFINER_CAPABILITY() {
-        return f35114a;
+        return f34638a;
     }
 
     @NotNull

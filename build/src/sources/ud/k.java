@@ -9,43 +9,43 @@ import ne.w0;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    final i f50567a;
+    final i f51339a;
 
     /* renamed from: b  reason: collision with root package name */
-    final long f50568b;
+    final long f51340b;
 
     /* renamed from: c  reason: collision with root package name */
-    final long f50569c;
+    final long f51341c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static abstract class a extends k {
 
         /* renamed from: d  reason: collision with root package name */
-        final long f50570d;
+        final long f51342d;
 
         /* renamed from: e  reason: collision with root package name */
-        final long f50571e;
+        final long f51343e;
 
         /* renamed from: f  reason: collision with root package name */
-        final List f50572f;
+        final List f51344f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final long f50573g;
+        private final long f51345g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final long f50574h;
+        private final long f51346h;
 
         /* renamed from: i  reason: collision with root package name */
-        final long f50575i;
+        final long f51347i;
 
         public a(i iVar, long j10, long j11, long j12, long j13, List list, long j14, long j15, long j16) {
             super(iVar, j10, j11);
-            this.f50570d = j12;
-            this.f50571e = j13;
-            this.f50572f = list;
-            this.f50575i = j14;
-            this.f50573g = j15;
-            this.f50574h = j16;
+            this.f51342d = j12;
+            this.f51343e = j13;
+            this.f51344f = list;
+            this.f51347i = j14;
+            this.f51345g = j15;
+            this.f51346h = j16;
         }
 
         public long c(long j10, long j11) {
@@ -53,51 +53,51 @@ public abstract class k {
             if (g10 != -1) {
                 return g10;
             }
-            return (int) (i((j11 - this.f50574h) + this.f50575i, j10) - d(j10, j11));
+            return (int) (i((j11 - this.f51346h) + this.f51347i, j10) - d(j10, j11));
         }
 
         public long d(long j10, long j11) {
             if (g(j10) == -1) {
-                long j12 = this.f50573g;
+                long j12 = this.f51345g;
                 if (j12 != -9223372036854775807L) {
-                    return Math.max(e(), i((j11 - this.f50574h) - j12, j10));
+                    return Math.max(e(), i((j11 - this.f51346h) - j12, j10));
                 }
             }
             return e();
         }
 
         public long e() {
-            return this.f50570d;
+            return this.f51342d;
         }
 
         public long f(long j10, long j11) {
-            if (this.f50572f != null) {
+            if (this.f51344f != null) {
                 return -9223372036854775807L;
             }
             long d10 = d(j10, j11) + c(j10, j11);
-            return (j(d10) + h(d10, j10)) - this.f50575i;
+            return (j(d10) + h(d10, j10)) - this.f51347i;
         }
 
         public abstract long g(long j10);
 
         public final long h(long j10, long j11) {
-            List list = this.f50572f;
+            List list = this.f51344f;
             if (list != null) {
-                return (((d) list.get((int) (j10 - this.f50570d))).f50581b * 1000000) / this.f50568b;
+                return (((d) list.get((int) (j10 - this.f51342d))).f51353b * 1000000) / this.f51340b;
             }
             long g10 = g(j11);
             if (g10 != -1 && j10 == (e() + g10) - 1) {
                 return j11 - j(j10);
             }
-            return (this.f50571e * 1000000) / this.f50568b;
+            return (this.f51343e * 1000000) / this.f51340b;
         }
 
         public long i(long j10, long j11) {
             long e10 = e();
             long g10 = g(j11);
             if (g10 != 0) {
-                if (this.f50572f == null) {
-                    long j12 = this.f50570d + (j10 / ((this.f50571e * 1000000) / this.f50568b));
+                if (this.f51344f == null) {
+                    long j12 = this.f51342d + (j10 / ((this.f51343e * 1000000) / this.f51340b));
                     if (j12 >= e10) {
                         if (g10 == -1) {
                             return j12;
@@ -129,19 +129,19 @@ public abstract class k {
 
         public final long j(long j10) {
             long j11;
-            List list = this.f50572f;
+            List list = this.f51344f;
             if (list != null) {
-                j11 = ((d) list.get((int) (j10 - this.f50570d))).f50580a - this.f50569c;
+                j11 = ((d) list.get((int) (j10 - this.f51342d))).f51352a - this.f51341c;
             } else {
-                j11 = (j10 - this.f50570d) * this.f50571e;
+                j11 = (j10 - this.f51342d) * this.f51343e;
             }
-            return w0.X0(j11, 1000000L, this.f50568b);
+            return w0.X0(j11, 1000000L, this.f51340b);
         }
 
         public abstract i k(j jVar, long j10);
 
         public boolean l() {
-            if (this.f50572f != null) {
+            if (this.f51344f != null) {
                 return true;
             }
             return false;
@@ -152,21 +152,21 @@ public abstract class k {
     public static final class b extends a {
 
         /* renamed from: j  reason: collision with root package name */
-        final List f50576j;
+        final List f51348j;
 
         public b(i iVar, long j10, long j11, long j12, long j13, List list, long j14, List list2, long j15, long j16) {
             super(iVar, j10, j11, j12, j13, list, j14, j15, j16);
-            this.f50576j = list2;
+            this.f51348j = list2;
         }
 
         @Override // ud.k.a
         public long g(long j10) {
-            return this.f50576j.size();
+            return this.f51348j.size();
         }
 
         @Override // ud.k.a
         public i k(j jVar, long j10) {
-            return (i) this.f50576j.get((int) (j10 - this.f50570d));
+            return (i) this.f51348j.get((int) (j10 - this.f51342d));
         }
 
         @Override // ud.k.a
@@ -179,60 +179,60 @@ public abstract class k {
     public static final class c extends a {
 
         /* renamed from: j  reason: collision with root package name */
-        final n f50577j;
+        final n f51349j;
 
         /* renamed from: k  reason: collision with root package name */
-        final n f50578k;
+        final n f51350k;
 
         /* renamed from: l  reason: collision with root package name */
-        final long f50579l;
+        final long f51351l;
 
         public c(i iVar, long j10, long j11, long j12, long j13, long j14, List list, long j15, n nVar, n nVar2, long j16, long j17) {
             super(iVar, j10, j11, j12, j14, list, j15, j16, j17);
-            this.f50577j = nVar;
-            this.f50578k = nVar2;
-            this.f50579l = j13;
+            this.f51349j = nVar;
+            this.f51350k = nVar2;
+            this.f51351l = j13;
         }
 
         @Override // ud.k
         public i a(j jVar) {
-            n nVar = this.f50577j;
+            n nVar = this.f51349j;
             if (nVar != null) {
-                Format format = jVar.f50554b;
-                return new i(nVar.a(format.f11292d, 0L, format.f11299s, 0L), 0L, -1L);
+                Format format = jVar.f51326b;
+                return new i(nVar.a(format.f11677d, 0L, format.f11684s, 0L), 0L, -1L);
             }
             return super.a(jVar);
         }
 
         @Override // ud.k.a
         public long g(long j10) {
-            List list = this.f50572f;
+            List list = this.f51344f;
             if (list != null) {
                 return list.size();
             }
-            long j11 = this.f50579l;
+            long j11 = this.f51351l;
             if (j11 != -1) {
-                return (j11 - this.f50570d) + 1;
+                return (j11 - this.f51342d) + 1;
             }
             if (j10 == -9223372036854775807L) {
                 return -1L;
             }
-            return ki.a.a(BigInteger.valueOf(j10).multiply(BigInteger.valueOf(this.f50568b)), BigInteger.valueOf(this.f50571e).multiply(BigInteger.valueOf(1000000L)), RoundingMode.CEILING).longValue();
+            return ni.a.a(BigInteger.valueOf(j10).multiply(BigInteger.valueOf(this.f51340b)), BigInteger.valueOf(this.f51343e).multiply(BigInteger.valueOf(1000000L)), RoundingMode.CEILING).longValue();
         }
 
         @Override // ud.k.a
         public i k(j jVar, long j10) {
             long j11;
-            List list = this.f50572f;
+            List list = this.f51344f;
             if (list != null) {
-                j11 = ((d) list.get((int) (j10 - this.f50570d))).f50580a;
+                j11 = ((d) list.get((int) (j10 - this.f51342d))).f51352a;
             } else {
-                j11 = (j10 - this.f50570d) * this.f50571e;
+                j11 = (j10 - this.f51342d) * this.f51343e;
             }
             long j12 = j11;
-            n nVar = this.f50578k;
-            Format format = jVar.f50554b;
-            return new i(nVar.a(format.f11292d, j10, format.f11299s, j12), 0L, -1L);
+            n nVar = this.f51350k;
+            Format format = jVar.f51326b;
+            return new i(nVar.a(format.f11677d, j10, format.f11684s, j12), 0L, -1L);
         }
     }
 
@@ -240,14 +240,14 @@ public abstract class k {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        final long f50580a;
+        final long f51352a;
 
         /* renamed from: b  reason: collision with root package name */
-        final long f50581b;
+        final long f51353b;
 
         public d(long j10, long j11) {
-            this.f50580a = j10;
-            this.f50581b = j11;
+            this.f51352a = j10;
+            this.f51353b = j11;
         }
 
         public boolean equals(Object obj) {
@@ -256,7 +256,7 @@ public abstract class k {
             }
             if (obj != null && d.class == obj.getClass()) {
                 d dVar = (d) obj;
-                if (this.f50580a == dVar.f50580a && this.f50581b == dVar.f50581b) {
+                if (this.f51352a == dVar.f51352a && this.f51353b == dVar.f51353b) {
                     return true;
                 }
             }
@@ -264,45 +264,45 @@ public abstract class k {
         }
 
         public int hashCode() {
-            return (((int) this.f50580a) * 31) + ((int) this.f50581b);
+            return (((int) this.f51352a) * 31) + ((int) this.f51353b);
         }
     }
 
     public k(i iVar, long j10, long j11) {
-        this.f50567a = iVar;
-        this.f50568b = j10;
-        this.f50569c = j11;
+        this.f51339a = iVar;
+        this.f51340b = j10;
+        this.f51341c = j11;
     }
 
     public i a(j jVar) {
-        return this.f50567a;
+        return this.f51339a;
     }
 
     public long b() {
-        return w0.X0(this.f50569c, 1000000L, this.f50568b);
+        return w0.X0(this.f51341c, 1000000L, this.f51340b);
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class e extends k {
 
         /* renamed from: d  reason: collision with root package name */
-        final long f50582d;
+        final long f51354d;
 
         /* renamed from: e  reason: collision with root package name */
-        final long f50583e;
+        final long f51355e;
 
         public e(i iVar, long j10, long j11, long j12, long j13) {
             super(iVar, j10, j11);
-            this.f50582d = j12;
-            this.f50583e = j13;
+            this.f51354d = j12;
+            this.f51355e = j13;
         }
 
         public i c() {
-            long j10 = this.f50583e;
+            long j10 = this.f51355e;
             if (j10 <= 0) {
                 return null;
             }
-            return new i(null, this.f50582d, j10);
+            return new i(null, this.f51354d, j10);
         }
 
         public e() {

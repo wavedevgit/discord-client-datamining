@@ -1,62 +1,129 @@
 package qs;
 
-import java.util.concurrent.Executor;
-import kotlin.coroutines.CoroutineContext;
-import kotlinx.coroutines.CoroutineDispatcher;
-import kotlinx.coroutines.s;
-import os.f0;
-import os.h0;
+import java.util.Arrays;
+import kotlin.Result;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.internal.Intrinsics;
+import ps.j0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b extends s implements Executor {
+public abstract class b {
+
+    /* renamed from: d  reason: collision with root package name */
+    private d[] f47997d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private int f47998e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private int f47999i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final b f48167o = new b();
+    private b0 f48000o;
 
-    /* renamed from: p  reason: collision with root package name */
-    private static final CoroutineDispatcher f48168p;
-
-    static {
-        int e10;
-        k kVar = k.f48185i;
-        e10 = h0.e("kotlinx.coroutines.io.parallelism", kotlin.ranges.d.d(64, f0.a()), 0, 0, 12, null);
-        f48168p = CoroutineDispatcher.c2(kVar, e10, null, 2, null);
+    public static final /* synthetic */ int a(b bVar) {
+        return bVar.f47998e;
     }
 
-    private b() {
+    public static final /* synthetic */ d[] c(b bVar) {
+        return bVar.f47997d;
     }
 
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public void E1(CoroutineContext coroutineContext, Runnable runnable) {
-        f48168p.E1(coroutineContext, runnable);
+    public final j0 d() {
+        b0 b0Var;
+        synchronized (this) {
+            b0Var = this.f48000o;
+            if (b0Var == null) {
+                b0Var = new b0(this.f47998e);
+                this.f48000o = b0Var;
+            }
+        }
+        return b0Var;
     }
 
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public void U1(CoroutineContext coroutineContext, Runnable runnable) {
-        f48168p.U1(coroutineContext, runnable);
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final d e() {
+        d dVar;
+        b0 b0Var;
+        synchronized (this) {
+            try {
+                d[] dVarArr = this.f47997d;
+                if (dVarArr == null) {
+                    dVarArr = j(2);
+                    this.f47997d = dVarArr;
+                } else if (this.f47998e >= dVarArr.length) {
+                    Object[] copyOf = Arrays.copyOf(dVarArr, dVarArr.length * 2);
+                    Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
+                    this.f47997d = (d[]) copyOf;
+                    dVarArr = (d[]) copyOf;
+                }
+                int i10 = this.f47999i;
+                do {
+                    dVar = dVarArr[i10];
+                    if (dVar == null) {
+                        dVar = g();
+                        dVarArr[i10] = dVar;
+                    }
+                    i10++;
+                    if (i10 >= dVarArr.length) {
+                        i10 = 0;
+                    }
+                    Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot<kotlin.Any>");
+                } while (!dVar.a(this));
+                this.f47999i = i10;
+                this.f47998e++;
+                b0Var = this.f48000o;
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+        if (b0Var != null) {
+            b0Var.Z(1);
+        }
+        return dVar;
     }
 
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public CoroutineDispatcher b2(int i10, String str) {
-        return k.f48185i.b2(i10, str);
+    protected abstract d g();
+
+    protected abstract d[] j(int i10);
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void k(d dVar) {
+        b0 b0Var;
+        int i10;
+        Continuation[] b10;
+        synchronized (this) {
+            try {
+                int i11 = this.f47998e - 1;
+                this.f47998e = i11;
+                b0Var = this.f48000o;
+                if (i11 == 0) {
+                    this.f47999i = 0;
+                }
+                Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot<kotlin.Any>");
+                b10 = dVar.b(this);
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+        for (Continuation continuation : b10) {
+            if (continuation != null) {
+                Result.a aVar = Result.f31985e;
+                continuation.resumeWith(Result.b(Unit.f31988a));
+            }
+        }
+        if (b0Var != null) {
+            b0Var.Z(-1);
+        }
     }
 
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        throw new IllegalStateException("Cannot be invoked on Dispatchers.IO");
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final int l() {
+        return this.f47998e;
     }
 
-    @Override // java.util.concurrent.Executor
-    public void execute(Runnable runnable) {
-        E1(kotlin.coroutines.e.f32538d, runnable);
-    }
-
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public String toString() {
-        return "Dispatchers.IO";
-    }
-
-    @Override // kotlinx.coroutines.s
-    public Executor f2() {
-        return this;
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final d[] m() {
+        return this.f47997d;
     }
 }

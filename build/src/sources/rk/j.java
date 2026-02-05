@@ -1,74 +1,89 @@
 package rk;
 
-import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
-import com.discord.notifications.api.NotificationData;
+import com.google.zxing.Result;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class j {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final gk.a f48835a;
+public final class j extends k {
 
     /* renamed from: b  reason: collision with root package name */
-    private final s f48836b;
+    private static final p[] f48852b = new p[0];
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public j(gk.a aVar) {
-        this.f48835a = aVar;
-        this.f48836b = new s(aVar);
-    }
+    /* renamed from: a  reason: collision with root package name */
+    private final p[] f48853a;
 
-    public static j a(gk.a aVar) {
-        if (aVar.g(1)) {
-            return new g(aVar);
+    public j(Map map) {
+        Collection collection;
+        if (map == null) {
+            collection = null;
+        } else {
+            collection = (Collection) map.get(fk.e.POSSIBLE_FORMATS);
         }
-        if (!aVar.g(2)) {
-            return new k(aVar);
-        }
-        int g10 = s.g(aVar, 1, 4);
-        if (g10 != 4) {
-            if (g10 != 5) {
-                int g11 = s.g(aVar, 1, 5);
-                if (g11 != 12) {
-                    if (g11 != 13) {
-                        switch (s.g(aVar, 1, 7)) {
-                            case ChatViewRecyclerTypes.SHARED_CUSTOM_THEME_EMBED /* 56 */:
-                                return new e(aVar, "310", "11");
-                            case ChatViewRecyclerTypes.PREMIUM_GROUP_INVITE /* 57 */:
-                                return new e(aVar, "320", "11");
-                            case 58:
-                                return new e(aVar, "310", "13");
-                            case 59:
-                                return new e(aVar, "320", "13");
-                            case 60:
-                                return new e(aVar, "310", "15");
-                            case 61:
-                                return new e(aVar, "320", "15");
-                            case 62:
-                                return new e(aVar, "310", "17");
-                            case NotificationData.MESSAGE_TYPE_EMOJI_ADDED /* 63 */:
-                                return new e(aVar, "320", "17");
-                            default:
-                                throw new IllegalStateException("unknown decoder: " + aVar);
-                        }
-                    }
-                    return new d(aVar);
-                }
-                return new c(aVar);
+        ArrayList arrayList = new ArrayList();
+        if (collection != null) {
+            if (collection.contains(fk.a.EAN_13)) {
+                arrayList.add(new e());
+            } else if (collection.contains(fk.a.UPC_A)) {
+                arrayList.add(new l());
             }
-            return new b(aVar);
+            if (collection.contains(fk.a.EAN_8)) {
+                arrayList.add(new f());
+            }
+            if (collection.contains(fk.a.UPC_E)) {
+                arrayList.add(new q());
+            }
         }
-        return new a(aVar);
+        if (arrayList.isEmpty()) {
+            arrayList.add(new e());
+            arrayList.add(new f());
+            arrayList.add(new q());
+        }
+        this.f48853a = (p[]) arrayList.toArray(f48852b);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final s b() {
-        return this.f48836b;
+    @Override // rk.k
+    public Result b(int i10, jk.a aVar, Map map) {
+        boolean z10;
+        Collection collection;
+        boolean z11;
+        int[] o10 = p.o(aVar);
+        for (p pVar : this.f48853a) {
+            try {
+                Result l10 = pVar.l(i10, aVar, o10, map);
+                if (l10.b() == fk.a.EAN_13 && l10.f().charAt(0) == '0') {
+                    z10 = true;
+                } else {
+                    z10 = false;
+                }
+                if (map == null) {
+                    collection = null;
+                } else {
+                    collection = (Collection) map.get(fk.e.POSSIBLE_FORMATS);
+                }
+                if (collection != null && !collection.contains(fk.a.UPC_A)) {
+                    z11 = false;
+                    if (!z10 && z11) {
+                        Result result = new Result(l10.f().substring(1), l10.c(), l10.e(), fk.a.UPC_A);
+                        result.g(l10.d());
+                        return result;
+                    }
+                    return l10;
+                }
+                z11 = true;
+                if (!z10) {
+                }
+                return l10;
+            } catch (fk.n unused) {
+            }
+        }
+        throw fk.k.a();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final gk.a c() {
-        return this.f48835a;
+    @Override // rk.k, fk.m
+    public void reset() {
+        for (p pVar : this.f48853a) {
+            pVar.reset();
+        }
     }
-
-    public abstract String d();
 }

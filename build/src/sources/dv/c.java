@@ -1,63 +1,126 @@
 package dv;
+
+import dv.b;
+import java.util.List;
+import kotlin.Result;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
+import vv.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class c extends iv.a {
+public final class c implements qu.b, b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gv.b f21090a = new gv.b();
+    public static final c f21270a = new c();
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class a extends iv.b {
-        @Override // iv.e
-        public iv.f a(iv.h hVar, iv.g gVar) {
-            int c10 = hVar.c();
-            if (c.k(hVar, c10)) {
-                int column = hVar.getColumn() + hVar.a();
-                int i10 = column + 1;
-                if (fv.d.i(hVar.getLine(), c10 + 1)) {
-                    i10 = column + 2;
-                }
-                return iv.f.d(new c()).a(i10);
+    private c() {
+    }
+
+    private final int a(String str, int i10) {
+        Integer valueOf = Integer.valueOf(str.length() + i10);
+        if (valueOf.intValue() < 0) {
+            valueOf = null;
+        }
+        if (valueOf != null) {
+            return valueOf.intValue();
+        }
+        return 0;
+    }
+
+    private final int b(int i10, int i11) {
+        Integer valueOf = Integer.valueOf(i10);
+        if (valueOf.intValue() > i11) {
+            valueOf = null;
+        }
+        if (valueOf != null) {
+            return valueOf.intValue();
+        }
+        return i11;
+    }
+
+    private final String d(String str, int i10, int i11) {
+        if (i10 >= 0 && i11 > 0) {
+            return h(str, i10, i11);
+        }
+        if (i10 >= 0 && i11 < 0) {
+            String substring = str.substring(i10, str.length() + i11);
+            Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
+            return substring;
+        } else if (i10 < 0 && i11 < 0) {
+            return e(str, i10, i11);
+        } else {
+            if (i10 < 0 && i11 > 0) {
+                return g(str, i10, i11);
             }
-            return iv.f.c();
+            return null;
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static boolean k(iv.h hVar, int i10) {
-        CharSequence line = hVar.getLine();
-        if (hVar.a() < fv.d.f24825a && i10 < line.length() && line.charAt(i10) == '>') {
-            return true;
+    private final String e(String str, int i10, int i11) {
+        String substring = str.substring(a(str, i10), b(str.length() + i11, str.length()));
+        Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
+        return substring;
+    }
+
+    private final String g(String str, int i10, int i11) {
+        int a10 = a(str, i10);
+        String substring = str.substring(a10, b(i11 + a10, str.length()));
+        Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
+        return substring;
+    }
+
+    private final String h(String str, int i10, int i11) {
+        String substring = str.substring(i10, b(i11 + i10, str.length()));
+        Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
+        return substring;
+    }
+
+    private final String i(String str, int i10) {
+        if (i10 >= 0) {
+            String substring = str.substring(i10);
+            Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String).substring(startIndex)");
+            return substring;
+        } else if (Math.abs(i10) <= str.length()) {
+            String substring2 = str.substring(str.length() + i10);
+            Intrinsics.checkNotNullExpressionValue(substring2, "this as java.lang.String).substring(startIndex)");
+            return substring2;
+        } else {
+            return str;
         }
-        return false;
     }
 
-    @Override // iv.a, iv.d
-    public boolean b() {
-        return true;
-    }
-
-    @Override // iv.d
-    public iv.c g(iv.h hVar) {
-        int c10 = hVar.c();
-        if (k(hVar, c10)) {
-            int column = hVar.getColumn() + hVar.a();
-            int i10 = column + 1;
-            if (fv.d.i(hVar.getLine(), c10 + 1)) {
-                i10 = column + 2;
+    private final String j(List list, int i10, int i11) {
+        Object b10;
+        String x02 = CollectionsKt.x0(k(CollectionsKt.firstOrNull(list)), ",", null, null, 0, null, null, 62, null);
+        try {
+            Result.a aVar = Result.f31985e;
+            if (list.size() == 2) {
+                x02 = f21270a.i(x02, i10);
+            } else if (list.size() > 2) {
+                x02 = f21270a.d(x02, i10, i11);
             }
-            return iv.c.a(i10);
+            b10 = Result.b(x02);
+        } catch (Throwable th2) {
+            Result.a aVar2 = Result.f31985e;
+            b10 = Result.b(kotlin.c.a(th2));
         }
-        return iv.c.d();
+        if (Result.g(b10)) {
+            b10 = null;
+        }
+        String str = (String) b10;
+        if (str == null) {
+            return "";
+        }
+        return str;
     }
 
-    @Override // iv.a, iv.d
-    public boolean h(gv.a aVar) {
-        return true;
+    @Override // qu.b
+    /* renamed from: c */
+    public String f(Object obj, Object obj2) {
+        List c10 = vv.a.c(obj);
+        return f21270a.j(c10, d.b(String.valueOf(vv.c.b(c10))), d.b(String.valueOf(vv.c.c(c10))));
     }
 
-    @Override // iv.d
-    /* renamed from: j */
-    public gv.b d() {
-        return this.f21090a;
+    public List k(Object obj) {
+        return b.a.d(this, obj);
     }
 }

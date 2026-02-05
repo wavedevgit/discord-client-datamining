@@ -13,7 +13,7 @@ public final class j extends k {
 
     @Override // j$.time.format.k
     public final boolean e(CharSequence charSequence, int i10, int i11) {
-        int length = this.f31134a.length();
+        int length = this.f30483a.length();
         if (length > i11 - i10) {
             return false;
         }
@@ -25,7 +25,7 @@ public final class j extends k {
             }
             int i14 = i12 + 1;
             int i15 = i10 + 1;
-            if (!o.b(this.f31134a.charAt(i12), charSequence.charAt(i10))) {
+            if (!o.b(this.f30483a.charAt(i12), charSequence.charAt(i10))) {
                 return false;
             }
             i10 = i15;

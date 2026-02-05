@@ -5,28 +5,28 @@ import java.util.Iterator;
 abstract class f2 implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    final Iterator f37974d;
+    final Iterator f37636d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f2(Iterator it) {
         it.getClass();
-        this.f37974d = it;
+        this.f37636d = it;
     }
 
     abstract Object a(Object obj);
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f37974d.hasNext();
+        return this.f37636d.hasNext();
     }
 
     @Override // java.util.Iterator
     public final Object next() {
-        return a(this.f37974d.next());
+        return a(this.f37636d.next());
     }
 
     @Override // java.util.Iterator
     public final void remove() {
-        this.f37974d.remove();
+        this.f37636d.remove();
     }
 }

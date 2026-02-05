@@ -41,27 +41,27 @@ public final class StyleElements_SizeSetJsonAdapter extends h {
     @NotNull
     public StyleElements.SizeSet fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.Size size = null;
         StyleElements.Size size2 = null;
         StyleElements.Size size3 = null;
         StyleElements.Size size4 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 size = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 size2 = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 size3 = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 size4 = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StyleElements.SizeSet(size, size2, size3, size4);
     }
 
@@ -69,14 +69,14 @@ public final class StyleElements_SizeSetJsonAdapter extends h {
     public void toJson(@NotNull t writer, StyleElements.SizeSet sizeSet) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (sizeSet != null) {
-            writer.l();
-            writer.A0(ViewProps.TOP);
+            writer.k();
+            writer.W(ViewProps.TOP);
             this.nullableSizeAdapter.toJson(writer, sizeSet.getTop());
-            writer.A0(ViewProps.BOTTOM);
+            writer.W(ViewProps.BOTTOM);
             this.nullableSizeAdapter.toJson(writer, sizeSet.getBottom());
-            writer.A0(ViewProps.LEFT);
+            writer.W(ViewProps.LEFT);
             this.nullableSizeAdapter.toJson(writer, sizeSet.getLeft());
-            writer.A0(ViewProps.RIGHT);
+            writer.W(ViewProps.RIGHT);
             this.nullableSizeAdapter.toJson(writer, sizeSet.getRight());
             writer.E();
             return;

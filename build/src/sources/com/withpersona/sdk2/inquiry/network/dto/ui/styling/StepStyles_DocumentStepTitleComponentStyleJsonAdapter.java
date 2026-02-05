@@ -40,21 +40,21 @@ public final class StepStyles_DocumentStepTitleComponentStyleJsonAdapter extends
     @NotNull
     public StepStyles.DocumentStepTitleComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer = null;
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 stepTextBasedComponentStyleContainer = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 stepTextBasedComponentStyleContainer2 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.DocumentStepTitleComponentStyle(stepTextBasedComponentStyleContainer, stepTextBasedComponentStyleContainer2);
     }
 
@@ -62,10 +62,10 @@ public final class StepStyles_DocumentStepTitleComponentStyleJsonAdapter extends
     public void toJson(@NotNull t writer, StepStyles.DocumentStepTitleComponentStyle documentStepTitleComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStepTitleComponentStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, documentStepTitleComponentStyle.getBase());
-            writer.A0("documentProcessingTitle");
+            writer.W("documentProcessingTitle");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, documentStepTitleComponentStyle.getDocumentProcessingTitle());
             writer.E();
             return;

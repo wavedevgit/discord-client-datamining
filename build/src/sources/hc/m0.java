@@ -26,22 +26,22 @@ import zb.i;
 public class m0 implements hc.d, ic.b, hc.c {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final xb.c f26926q = xb.c.b("proto");
+    private static final xb.c f25767q = xb.c.b("proto");
 
     /* renamed from: d  reason: collision with root package name */
-    private final t0 f26927d;
+    private final t0 f25768d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final jc.a f26928e;
+    private final jc.a f25769e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final jc.a f26929i;
+    private final jc.a f25770i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final e f26930o;
+    private final e f25771o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Provider f26931p;
+    private final Provider f25772p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -54,14 +54,14 @@ public class m0 implements hc.d, ic.b, hc.c {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        final String f26932a;
+        final String f25773a;
 
         /* renamed from: b  reason: collision with root package name */
-        final String f26933b;
+        final String f25774b;
 
         private c(String str, String str2) {
-            this.f26932a = str;
-            this.f26933b = str2;
+            this.f25773a = str;
+            this.f25774b = str2;
         }
     }
 
@@ -73,32 +73,19 @@ public class m0 implements hc.d, ic.b, hc.c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m0(jc.a aVar, jc.a aVar2, e eVar, t0 t0Var, Provider provider) {
-        this.f26927d = t0Var;
-        this.f26928e = aVar;
-        this.f26929i = aVar2;
-        this.f26930o = eVar;
-        this.f26931p = provider;
+        this.f25768d = t0Var;
+        this.f25769e = aVar;
+        this.f25770i = aVar2;
+        this.f25771o = eVar;
+        this.f25772p = provider;
     }
 
-    public static /* synthetic */ Boolean A0(m0 m0Var, zb.o oVar, SQLiteDatabase sQLiteDatabase) {
-        Long o22 = m0Var.o2(sQLiteDatabase, oVar);
-        if (o22 == null) {
-            return Boolean.FALSE;
-        }
-        return (Boolean) A2(m0Var.c2().rawQuery("SELECT 1 FROM events WHERE context_id = ? LIMIT 1", new String[]{o22.toString()}), new b() { // from class: hc.u
-            @Override // hc.m0.b
-            public final Object apply(Object obj) {
-                return Boolean.valueOf(((Cursor) obj).moveToNext());
-            }
-        });
-    }
-
-    public static /* synthetic */ cc.a A1(final m0 m0Var, String str, final Map map, final a.C0117a c0117a, SQLiteDatabase sQLiteDatabase) {
+    public static /* synthetic */ cc.a A1(final m0 m0Var, String str, final Map map, final a.C0136a c0136a, SQLiteDatabase sQLiteDatabase) {
         m0Var.getClass();
         return (cc.a) A2(sQLiteDatabase.rawQuery(str, new String[0]), new b() { // from class: hc.a0
             @Override // hc.m0.b
             public final Object apply(Object obj) {
-                return m0.F0(m0.this, map, c0117a, (Cursor) obj);
+                return m0.F0(m0.this, map, c0136a, (Cursor) obj);
             }
         });
     }
@@ -109,21 +96,6 @@ public class m0 implements hc.d, ic.b, hc.c {
         } finally {
             cursor.close();
         }
-    }
-
-    public static /* synthetic */ List B(m0 m0Var, zb.o oVar, SQLiteDatabase sQLiteDatabase) {
-        xb.e[] values;
-        List s22 = m0Var.s2(sQLiteDatabase, oVar, m0Var.f26930o.d());
-        for (xb.e eVar : xb.e.values()) {
-            if (eVar != oVar.d()) {
-                int d10 = m0Var.f26930o.d() - s22.size();
-                if (d10 <= 0) {
-                    break;
-                }
-                s22.addAll(m0Var.s2(sQLiteDatabase, oVar.f(eVar), d10));
-            }
-        }
-        return m0Var.r2(s22, m0Var.t2(sQLiteDatabase, s22));
     }
 
     public static /* synthetic */ Long B1(Cursor cursor) {
@@ -183,7 +155,7 @@ public class m0 implements hc.d, ic.b, hc.c {
         return (cc.f) A2(sQLiteDatabase.rawQuery("SELECT last_metrics_upload_ms FROM global_log_event_state LIMIT 1", new String[0]), new b() { // from class: hc.d0
             @Override // hc.m0.b
             public final Object apply(Object obj) {
-                return m0.x(j10, (Cursor) obj);
+                return m0.o(j10, (Cursor) obj);
             }
         });
     }
@@ -197,7 +169,7 @@ public class m0 implements hc.d, ic.b, hc.c {
         return null;
     }
 
-    public static /* synthetic */ cc.a F0(m0 m0Var, Map map, a.C0117a c0117a, Cursor cursor) {
+    public static /* synthetic */ cc.a F0(m0 m0Var, Map map, a.C0136a c0136a, Cursor cursor) {
         m0Var.getClass();
         while (cursor.moveToNext()) {
             String string = cursor.getString(0);
@@ -208,11 +180,11 @@ public class m0 implements hc.d, ic.b, hc.c {
             }
             ((List) map.get(string)).add(cc.c.c().c(U1).b(j10).a());
         }
-        m0Var.v2(c0117a, map);
-        c0117a.e(m0Var.j2());
-        c0117a.d(m0Var.f2());
-        c0117a.c((String) m0Var.f26931p.get());
-        return c0117a.b();
+        m0Var.v2(c0136a, map);
+        c0136a.e(m0Var.j2());
+        c0136a.d(m0Var.f2());
+        c0136a.c((String) m0Var.f25772p.get());
+        return c0136a.b();
     }
 
     public static /* synthetic */ Boolean I0(Cursor cursor) {
@@ -225,7 +197,7 @@ public class m0 implements hc.d, ic.b, hc.c {
         return Boolean.valueOf(z10);
     }
 
-    public static /* synthetic */ Long J0(m0 m0Var, zb.i iVar, zb.o oVar, SQLiteDatabase sQLiteDatabase) {
+    public static /* synthetic */ Long K0(m0 m0Var, zb.i iVar, zb.o oVar, SQLiteDatabase sQLiteDatabase) {
         boolean z10;
         byte[] bArr;
         if (m0Var.q2()) {
@@ -233,7 +205,7 @@ public class m0 implements hc.d, ic.b, hc.c {
             return -1L;
         }
         long Y1 = m0Var.Y1(sQLiteDatabase, oVar);
-        int e10 = m0Var.f26930o.e();
+        int e10 = m0Var.f25771o.e();
         byte[] a10 = iVar.e().a();
         if (a10.length <= e10) {
             z10 = true;
@@ -281,11 +253,6 @@ public class m0 implements hc.d, ic.b, hc.c {
         throw new ic.a("Timed out while trying to open db.", th2);
     }
 
-    public static /* synthetic */ Object M0(SQLiteDatabase sQLiteDatabase) {
-        sQLiteDatabase.beginTransaction();
-        return null;
-    }
-
     public static /* synthetic */ Object N(m0 m0Var, Cursor cursor) {
         m0Var.getClass();
         while (cursor.moveToNext()) {
@@ -295,7 +262,12 @@ public class m0 implements hc.d, ic.b, hc.c {
         return null;
     }
 
-    public static /* synthetic */ Long R0(Cursor cursor) {
+    public static /* synthetic */ Object N0(SQLiteDatabase sQLiteDatabase) {
+        sQLiteDatabase.beginTransaction();
+        return null;
+    }
+
+    public static /* synthetic */ Long S0(Cursor cursor) {
         if (!cursor.moveToNext()) {
             return null;
         }
@@ -352,11 +324,24 @@ public class m0 implements hc.d, ic.b, hc.c {
         throw new ic.a("Timed out while trying to acquire the lock.", th2);
     }
 
+    public static /* synthetic */ Boolean W(m0 m0Var, zb.o oVar, SQLiteDatabase sQLiteDatabase) {
+        Long o22 = m0Var.o2(sQLiteDatabase, oVar);
+        if (o22 == null) {
+            return Boolean.FALSE;
+        }
+        return (Boolean) A2(m0Var.c2().rawQuery("SELECT 1 FROM events WHERE context_id = ? LIMIT 1", new String[]{o22.toString()}), new b() { // from class: hc.u
+            @Override // hc.m0.b
+            public final Object apply(Object obj) {
+                return Boolean.valueOf(((Cursor) obj).moveToNext());
+            }
+        });
+    }
+
     private void W1(final SQLiteDatabase sQLiteDatabase) {
         x2(new d() { // from class: hc.l
             @Override // hc.m0.d
             public final Object a() {
-                return m0.M0(sQLiteDatabase);
+                return m0.N0(sQLiteDatabase);
             }
         }, new b() { // from class: hc.w
             @Override // hc.m0.b
@@ -425,7 +410,7 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     private cc.b f2() {
-        return cc.b.b().b(cc.e.c().b(b2()).c(e.f26909a.f()).a()).a();
+        return cc.b.b().b(cc.e.c().b(b2()).c(e.f25750a.f()).a()).a();
     }
 
     private long h2() {
@@ -437,13 +422,18 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     private cc.f j2() {
-        final long a10 = this.f26928e.a();
+        final long a10 = this.f25769e.a();
         return (cc.f) p2(new b() { // from class: hc.c0
             @Override // hc.m0.b
             public final Object apply(Object obj) {
                 return m0.E1(a10, (SQLiteDatabase) obj);
             }
         });
+    }
+
+    public static /* synthetic */ cc.f o(long j10, Cursor cursor) {
+        cursor.moveToNext();
+        return cc.f.c().c(cursor.getLong(0)).b(j10).a();
     }
 
     private Long o2(SQLiteDatabase sQLiteDatabase, zb.o oVar) {
@@ -458,13 +448,13 @@ public class m0 implements hc.d, ic.b, hc.c {
         return (Long) A2(sQLiteDatabase.query("transport_contexts", new String[]{"_id"}, sb2.toString(), (String[]) arrayList.toArray(new String[0]), null, null, null), new b() { // from class: hc.n
             @Override // hc.m0.b
             public final Object apply(Object obj) {
-                return m0.R0((Cursor) obj);
+                return m0.S0((Cursor) obj);
             }
         });
     }
 
     private boolean q2() {
-        if (h2() * i2() >= this.f26930o.f()) {
+        if (h2() * i2() >= this.f25771o.f()) {
             return true;
         }
         return false;
@@ -477,7 +467,7 @@ public class m0 implements hc.d, ic.b, hc.c {
             if (map.containsKey(Long.valueOf(kVar.c()))) {
                 i.a l10 = kVar.b().l();
                 for (c cVar : (Set) map.get(Long.valueOf(kVar.c()))) {
-                    l10.c(cVar.f26932a, cVar.f26933b);
+                    l10.c(cVar.f25773a, cVar.f25774b);
                 }
                 listIterator.set(k.a(kVar.c(), kVar.d(), l10.d()));
             }
@@ -526,9 +516,9 @@ public class m0 implements hc.d, ic.b, hc.c {
         return Base64.decode(str, 0);
     }
 
-    private void v2(a.C0117a c0117a, Map map) {
+    private void v2(a.C0136a c0136a, Map map) {
         for (Map.Entry entry : map.entrySet()) {
-            c0117a.a(cc.d.c().c((String) entry.getKey()).b((List) entry.getValue()).a());
+            c0136a.a(cc.d.c().c((String) entry.getKey()).b((List) entry.getValue()).a());
         }
     }
 
@@ -539,11 +529,6 @@ public class m0 implements hc.d, ic.b, hc.c {
                 return m0.D0((Cursor) obj);
             }
         });
-    }
-
-    public static /* synthetic */ cc.f x(long j10, Cursor cursor) {
-        cursor.moveToNext();
-        return cc.f.c().c(cursor.getLong(0)).b(j10).a();
     }
 
     public static /* synthetic */ Object x1(m0 m0Var, List list, zb.o oVar, Cursor cursor) {
@@ -569,12 +554,12 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     private Object x2(d dVar, b bVar) {
-        long a10 = this.f26929i.a();
+        long a10 = this.f25770i.a();
         while (true) {
             try {
                 return dVar.a();
             } catch (SQLiteDatabaseLockedException e10) {
-                if (this.f26929i.a() >= this.f26930o.b() + a10) {
+                if (this.f25770i.a() >= this.f25771o.b() + a10) {
                     return bVar.apply(e10);
                 }
                 SystemClock.sleep(50L);
@@ -582,16 +567,31 @@ public class m0 implements hc.d, ic.b, hc.c {
         }
     }
 
+    public static /* synthetic */ List y(m0 m0Var, zb.o oVar, SQLiteDatabase sQLiteDatabase) {
+        xb.e[] values;
+        List s22 = m0Var.s2(sQLiteDatabase, oVar, m0Var.f25771o.d());
+        for (xb.e eVar : xb.e.values()) {
+            if (eVar != oVar.d()) {
+                int d10 = m0Var.f25771o.d() - s22.size();
+                if (d10 <= 0) {
+                    break;
+                }
+                s22.addAll(m0Var.s2(sQLiteDatabase, oVar.f(eVar), d10));
+            }
+        }
+        return m0Var.r2(s22, m0Var.t2(sQLiteDatabase, s22));
+    }
+
     public static /* synthetic */ Object y1(m0 m0Var, SQLiteDatabase sQLiteDatabase) {
         m0Var.getClass();
         sQLiteDatabase.compileStatement("DELETE FROM log_event_dropped").execute();
-        sQLiteDatabase.compileStatement("UPDATE global_log_event_state SET last_metrics_upload_ms=" + m0Var.f26928e.a()).execute();
+        sQLiteDatabase.compileStatement("UPDATE global_log_event_state SET last_metrics_upload_ms=" + m0Var.f25769e.a()).execute();
         return null;
     }
 
     private static xb.c y2(String str) {
         if (str == null) {
-            return f26926q;
+            return f25767q;
         }
         return xb.c.b(str);
     }
@@ -618,7 +618,7 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     @Override // hc.d
-    public void S0(Iterable iterable) {
+    public void T0(Iterable iterable) {
         if (!iterable.iterator().hasNext()) {
             return;
         }
@@ -632,7 +632,17 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     @Override // hc.d
-    public Iterable X() {
+    public Iterable X1(final zb.o oVar) {
+        return (Iterable) p2(new b() { // from class: hc.m
+            @Override // hc.m0.b
+            public final Object apply(Object obj) {
+                return m0.y(m0.this, oVar, (SQLiteDatabase) obj);
+            }
+        });
+    }
+
+    @Override // hc.d
+    public Iterable Y() {
         return (Iterable) p2(new b() { // from class: hc.g0
             @Override // hc.m0.b
             public final Object apply(Object obj) {
@@ -642,17 +652,7 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     @Override // hc.d
-    public Iterable X1(final zb.o oVar) {
-        return (Iterable) p2(new b() { // from class: hc.m
-            @Override // hc.m0.b
-            public final Object apply(Object obj) {
-                return m0.B(m0.this, oVar, (SQLiteDatabase) obj);
-            }
-        });
-    }
-
-    @Override // hc.d
-    public void Y(final zb.o oVar, final long j10) {
+    public void Z(final zb.o oVar, final long j10) {
         p2(new b() { // from class: hc.p
             @Override // hc.m0.b
             public final Object apply(Object obj) {
@@ -677,7 +677,7 @@ public class m0 implements hc.d, ic.b, hc.c {
         long longValue = ((Long) p2(new b() { // from class: hc.i0
             @Override // hc.m0.b
             public final Object apply(Object obj) {
-                return m0.J0(m0.this, iVar, oVar, (SQLiteDatabase) obj);
+                return m0.K0(m0.this, iVar, oVar, (SQLiteDatabase) obj);
             }
         })).longValue();
         if (longValue < 1) {
@@ -691,7 +691,7 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     SQLiteDatabase c2() {
-        final t0 t0Var = this.f26927d;
+        final t0 t0Var = this.f25768d;
         Objects.requireNonNull(t0Var);
         return (SQLiteDatabase) x2(new d() { // from class: hc.e0
             @Override // hc.m0.d
@@ -708,7 +708,7 @@ public class m0 implements hc.d, ic.b, hc.c {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f26927d.close();
+        this.f25768d.close();
     }
 
     @Override // hc.c
@@ -721,19 +721,8 @@ public class m0 implements hc.d, ic.b, hc.c {
         });
     }
 
-    @Override // hc.d
-    public int k() {
-        final long a10 = this.f26928e.a() - this.f26930o.c();
-        return ((Integer) p2(new b() { // from class: hc.j0
-            @Override // hc.m0.b
-            public final Object apply(Object obj) {
-                return m0.e1(m0.this, a10, (SQLiteDatabase) obj);
-            }
-        })).intValue();
-    }
-
     @Override // ic.b
-    public Object l(b.a aVar) {
+    public Object k(b.a aVar) {
         SQLiteDatabase c22 = c2();
         W1(c22);
         try {
@@ -745,9 +734,20 @@ public class m0 implements hc.d, ic.b, hc.c {
         }
     }
 
+    @Override // hc.d
+    public int l() {
+        final long a10 = this.f25769e.a() - this.f25771o.c();
+        return ((Integer) p2(new b() { // from class: hc.j0
+            @Override // hc.m0.b
+            public final Object apply(Object obj) {
+                return m0.e1(m0.this, a10, (SQLiteDatabase) obj);
+            }
+        })).intValue();
+    }
+
     @Override // hc.c
-    public cc.a n() {
-        final a.C0117a e10 = cc.a.e();
+    public cc.a m() {
+        final a.C0136a e10 = cc.a.e();
         final HashMap hashMap = new HashMap();
         return (cc.a) p2(new b() { // from class: hc.t
             @Override // hc.m0.b
@@ -758,11 +758,11 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     @Override // hc.d
-    public boolean o0(final zb.o oVar) {
+    public boolean p0(final zb.o oVar) {
         return ((Boolean) p2(new b() { // from class: hc.o
             @Override // hc.m0.b
             public final Object apply(Object obj) {
-                return m0.A0(m0.this, oVar, (SQLiteDatabase) obj);
+                return m0.W(m0.this, oVar, (SQLiteDatabase) obj);
             }
         })).booleanValue();
     }
@@ -780,7 +780,7 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     @Override // hc.d
-    public long q0(zb.o oVar) {
+    public long r0(zb.o oVar) {
         return ((Long) A2(c2().rawQuery("SELECT next_request_ms FROM transport_contexts WHERE backend_name = ? and priority = ?", new String[]{oVar.b(), String.valueOf(kc.a.a(oVar.d()))}), new b() { // from class: hc.h0
             @Override // hc.m0.b
             public final Object apply(Object obj) {

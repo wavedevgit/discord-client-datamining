@@ -8,29 +8,29 @@ import java.util.Map;
 public class i implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final la.w f10389a;
+    private final la.w f10774a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final la.k f10390b;
+    private final la.k f10775b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w0 f10391c;
+    private final w0 f10776c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public class a extends s {
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ CacheKey f10392c;
+        final /* synthetic */ CacheKey f10777c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ boolean f10393d;
+        final /* synthetic */ boolean f10778d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Consumer consumer, CacheKey cacheKey, boolean z10) {
             super(consumer);
-            this.f10392c = cacheKey;
-            this.f10393d = z10;
+            this.f10777c = cacheKey;
+            this.f10778d = z10;
         }
 
         @Override // com.facebook.imagepipeline.producers.c
@@ -53,10 +53,10 @@ public class i implements w0 {
                     }
                     return;
                 }
-                if (!((sa.e) closeableReference.C0()).l2() && !c.m(i10, 8)) {
-                    if (!d10 && (closeableReference2 = i.this.f10389a.get(this.f10392c)) != null) {
-                        sa.o J1 = ((sa.e) closeableReference.C0()).J1();
-                        sa.o J12 = ((sa.e) closeableReference2.C0()).J1();
+                if (!((sa.e) closeableReference.E0()).l2() && !c.m(i10, 8)) {
+                    if (!d10 && (closeableReference2 = i.this.f10774a.get(this.f10777c)) != null) {
+                        sa.o J1 = ((sa.e) closeableReference.E0()).J1();
+                        sa.o J12 = ((sa.e) closeableReference2.E0()).J1();
                         if (!J12.a() && J12.c() < J1.c()) {
                             CloseableReference.N(closeableReference2);
                         } else {
@@ -69,8 +69,8 @@ public class i implements w0 {
                             return;
                         }
                     }
-                    if (this.f10393d) {
-                        closeableReference3 = i.this.f10389a.c(this.f10392c, closeableReference);
+                    if (this.f10778d) {
+                        closeableReference3 = i.this.f10774a.c(this.f10777c, closeableReference);
                     }
                     if (d10) {
                         o().c(1.0f);
@@ -101,13 +101,13 @@ public class i implements w0 {
     }
 
     public i(la.w wVar, la.k kVar, w0 w0Var) {
-        this.f10389a = wVar;
-        this.f10390b = kVar;
-        this.f10391c = w0Var;
+        this.f10774a = wVar;
+        this.f10775b = kVar;
+        this.f10776c = w0Var;
     }
 
     private static void f(sa.l lVar, ProducerContext producerContext) {
-        producerContext.A0(lVar.getExtras());
+        producerContext.W(lVar.getExtras());
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -121,16 +121,16 @@ public class i implements w0 {
             }
             y0 F = producerContext.F();
             F.d(producerContext, e());
-            CacheKey bitmapCacheKey = this.f10390b.getBitmapCacheKey(producerContext.V(), producerContext.a());
+            CacheKey bitmapCacheKey = this.f10775b.getBitmapCacheKey(producerContext.V(), producerContext.a());
             Map map3 = null;
             if (producerContext.V().isCacheEnabled(1)) {
-                closeableReference = this.f10389a.get(bitmapCacheKey);
+                closeableReference = this.f10774a.get(bitmapCacheKey);
             } else {
                 closeableReference = null;
             }
             if (closeableReference != null) {
-                f((sa.l) closeableReference.C0(), producerContext);
-                boolean a10 = ((sa.e) closeableReference.C0()).J1().a();
+                f((sa.l) closeableReference.E0(), producerContext);
+                boolean a10 = ((sa.e) closeableReference.E0()).J1().a();
                 if (a10) {
                     String e10 = e();
                     if (F.f(producerContext, e())) {
@@ -140,7 +140,7 @@ public class i implements w0 {
                     }
                     F.j(producerContext, e10, map2);
                     F.b(producerContext, e(), true);
-                    producerContext.n("memory_bitmap", d());
+                    producerContext.m("memory_bitmap", d());
                     consumer.c(1.0f);
                 }
                 consumer.b(closeableReference, c.k(a10));
@@ -162,7 +162,7 @@ public class i implements w0 {
                 }
                 F.j(producerContext, e11, map);
                 F.b(producerContext, e(), false);
-                producerContext.n("memory_bitmap", d());
+                producerContext.m("memory_bitmap", d());
                 consumer.b(null, 1);
                 if (ya.b.d()) {
                     ya.b.b();
@@ -179,7 +179,7 @@ public class i implements w0 {
             if (ya.b.d()) {
                 ya.b.a("mInputProducer.produceResult");
             }
-            this.f10391c.b(g10, producerContext);
+            this.f10776c.b(g10, producerContext);
             if (ya.b.d()) {
                 ya.b.b();
             }

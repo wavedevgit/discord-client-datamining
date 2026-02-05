@@ -1,57 +1,65 @@
 package ks;
 
-import android.os.Build;
-import java.lang.Thread;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import js.z;
-import kotlin.coroutines.CoroutineContext;
+import java.util.concurrent.TimeUnit;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b extends kotlin.coroutines.a implements z {
-    private volatile Object _preHandler;
+public final class b {
 
-    public b() {
-        super(z.f32000f);
-        this._preHandler = this;
+    /* renamed from: e  reason: collision with root package name */
+    public static final b f36125e = new b("NANOSECONDS", 0, TimeUnit.NANOSECONDS);
+
+    /* renamed from: i  reason: collision with root package name */
+    public static final b f36126i = new b("MICROSECONDS", 1, TimeUnit.MICROSECONDS);
+
+    /* renamed from: o  reason: collision with root package name */
+    public static final b f36127o = new b("MILLISECONDS", 2, TimeUnit.MILLISECONDS);
+
+    /* renamed from: p  reason: collision with root package name */
+    public static final b f36128p = new b("SECONDS", 3, TimeUnit.SECONDS);
+
+    /* renamed from: q  reason: collision with root package name */
+    public static final b f36129q = new b("MINUTES", 4, TimeUnit.MINUTES);
+
+    /* renamed from: r  reason: collision with root package name */
+    public static final b f36130r = new b("HOURS", 5, TimeUnit.HOURS);
+
+    /* renamed from: s  reason: collision with root package name */
+    public static final b f36131s = new b("DAYS", 6, TimeUnit.DAYS);
+
+    /* renamed from: t  reason: collision with root package name */
+    private static final /* synthetic */ b[] f36132t;
+
+    /* renamed from: u  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f36133u;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final TimeUnit f36134d;
+
+    static {
+        b[] a10 = a();
+        f36132t = a10;
+        f36133u = vr.a.a(a10);
     }
 
-    private final Method E1() {
-        Object obj = this._preHandler;
-        if (obj != this) {
-            return (Method) obj;
-        }
-        Method method = null;
-        try {
-            Method declaredMethod = Thread.class.getDeclaredMethod("getUncaughtExceptionPreHandler", null);
-            if (Modifier.isPublic(declaredMethod.getModifiers())) {
-                if (Modifier.isStatic(declaredMethod.getModifiers())) {
-                    method = declaredMethod;
-                }
-            }
-        } catch (Throwable unused) {
-        }
-        this._preHandler = method;
-        return method;
+    private b(String str, int i10, TimeUnit timeUnit) {
+        this.f36134d = timeUnit;
     }
 
-    @Override // js.z
-    public void R0(CoroutineContext coroutineContext, Throwable th2) {
-        Object obj;
-        int i10 = Build.VERSION.SDK_INT;
-        if (26 <= i10 && i10 < 28) {
-            Method E1 = E1();
-            Thread.UncaughtExceptionHandler uncaughtExceptionHandler = null;
-            if (E1 != null) {
-                obj = E1.invoke(null, null);
-            } else {
-                obj = null;
-            }
-            if (obj instanceof Thread.UncaughtExceptionHandler) {
-                uncaughtExceptionHandler = (Thread.UncaughtExceptionHandler) obj;
-            }
-            if (uncaughtExceptionHandler != null) {
-                uncaughtExceptionHandler.uncaughtException(Thread.currentThread(), th2);
-            }
-        }
+    private static final /* synthetic */ b[] a() {
+        return new b[]{f36125e, f36126i, f36127o, f36128p, f36129q, f36130r, f36131s};
+    }
+
+    public static b valueOf(String str) {
+        return (b) Enum.valueOf(b.class, str);
+    }
+
+    public static b[] values() {
+        return (b[]) f36132t.clone();
+    }
+
+    public final TimeUnit d() {
+        return this.f36134d;
     }
 }

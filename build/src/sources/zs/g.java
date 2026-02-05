@@ -1,41 +1,24 @@
 package zs;
 
-import ct.e;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import ts.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g implements KSerializer {
+public final class g implements v {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f56138a = new g();
+    private final Object f56236a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f56139b = ct.j.b("kotlinx.datetime.LocalTime", e.i.f19842a);
+    private final Function1 f56237b;
 
-    private g() {
+    public g(Object obj, Function1 getter) {
+        Intrinsics.checkNotNullParameter(getter, "getter");
+        this.f56236a = obj;
+        this.f56237b = getter;
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public ts.i deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return i.a.b(ts.i.Companion, decoder.z(), null, 2, null);
-    }
-
-    @Override // at.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, ts.i value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        encoder.F(value.toString());
-    }
-
-    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f56139b;
+    @Override // zs.v
+    public boolean test(Object obj) {
+        return Intrinsics.areEqual(this.f56237b.invoke(obj), this.f56236a);
     }
 }

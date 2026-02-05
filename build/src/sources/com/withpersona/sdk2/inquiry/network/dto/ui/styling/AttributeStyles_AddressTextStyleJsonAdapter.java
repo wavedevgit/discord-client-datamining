@@ -40,18 +40,18 @@ public final class AttributeStyles_AddressTextStyleJsonAdapter extends h {
     @NotNull
     public AttributeStyles.AddressTextStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         AttributeStyles.AddressTextStyleContainer addressTextStyleContainer = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 addressTextStyleContainer = (AttributeStyles.AddressTextStyleContainer) this.nullableAddressTextStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.AddressTextStyle(addressTextStyleContainer);
     }
 
@@ -59,8 +59,8 @@ public final class AttributeStyles_AddressTextStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, AttributeStyles.AddressTextStyle addressTextStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (addressTextStyle != null) {
-            writer.l();
-            writer.A0("expandButton");
+            writer.k();
+            writer.W("expandButton");
             this.nullableAddressTextStyleContainerAdapter.toJson(writer, addressTextStyle.getExpandButton());
             writer.E();
             return;

@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/refresh/form/FormRadio.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun44615: for (var _fun44615_ip = 0;;) switch (_fun44615_ip) {
+        _fun44618: for (var _fun44618_ip = 0;;) switch (_fun44618_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.selected;
@@ -64,14 +64,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot0;
                 var7 = _closure1_slot1;
                 if (var4) {
-                    _fun44615_ip = 62;
-                    continue _fun44615
+                    _fun44618_ip = 62;
+                    continue _fun44618
                 }
             case 53:
                 var4 = 5;
                 var4 = var7[var4];
-                _fun44615_ip = 69;
-                continue _fun44615;
+                _fun44618_ip = 69;
+                continue _fun44618;
             case 62:
                 var6 = 4;
                 var4 = var7[var6];
@@ -84,4 +84,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4915, 4916, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4917, 4918, 2]);

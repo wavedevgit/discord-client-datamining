@@ -19,22 +19,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f29467e = new a(null);
+    public static final a f28525e = new a(null);
 
     /* renamed from: f  reason: collision with root package name */
-    public static final int f29468f = 8;
+    public static final int f28526f = 8;
 
     /* renamed from: a  reason: collision with root package name */
-    private final p f29469a;
+    private final p f28527a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final LinkedHashMap f29470b;
+    private final LinkedHashMap f28528b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f29471c;
+    private long f28529c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f29472d;
+    private long f28530d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -48,8 +48,8 @@ public final class b {
 
     public b(p dateProvider) {
         Intrinsics.checkNotNullParameter(dateProvider, "dateProvider");
-        this.f29469a = dateProvider;
-        this.f29470b = new LinkedHashMap(10);
+        this.f28527a = dateProvider;
+        this.f28528b = new LinkedHashMap(10);
     }
 
     public final List a(MotionEvent event, s recorderConfig) {
@@ -70,9 +70,9 @@ public final class b {
                             }
                         }
                     } else {
-                        this.f29470b.clear();
+                        this.f28528b.clear();
                         e eVar = new e();
-                        eVar.f(this.f29469a.a());
+                        eVar.f(this.f28527a.a());
                         eVar.u(event.getX() * recorderConfig.e());
                         eVar.v(event.getY() * recorderConfig.f());
                         eVar.q(0);
@@ -81,13 +81,13 @@ public final class b {
                         return CollectionsKt.e(eVar);
                     }
                 } else {
-                    long a10 = this.f29469a.a();
-                    long j10 = this.f29472d;
+                    long a10 = this.f28527a.a();
+                    long j10 = this.f28530d;
                     if (j10 != 0 && j10 + 50 > a10) {
                         return null;
                     }
-                    this.f29472d = a10;
-                    Set<Integer> keySet = this.f29470b.keySet();
+                    this.f28530d = a10;
+                    Set<Integer> keySet = this.f28528b.keySet();
                     Intrinsics.checkNotNullExpressionValue(keySet, "<get-keys>(...)");
                     for (Integer num : keySet) {
                         Intrinsics.checkNotNull(num);
@@ -95,27 +95,27 @@ public final class b {
                         if (findPointerIndex == -1) {
                             list = list2;
                         } else {
-                            if (this.f29471c == 0) {
-                                this.f29471c = a10;
+                            if (this.f28529c == 0) {
+                                this.f28529c = a10;
                             }
-                            Object obj = this.f29470b.get(num);
+                            Object obj = this.f28528b.get(num);
                             Intrinsics.checkNotNull(obj);
                             f.b bVar = new f.b();
                             bVar.i(event.getX(findPointerIndex) * recorderConfig.e());
                             bVar.j(event.getY(findPointerIndex) * recorderConfig.f());
                             bVar.f(i11);
                             list = list2;
-                            bVar.g(a10 - this.f29471c);
+                            bVar.g(a10 - this.f28529c);
                             ((Collection) obj).add(bVar);
                         }
                         list2 = list;
                         i11 = 0;
                     }
                     List list3 = list2;
-                    long j11 = a10 - this.f29471c;
+                    long j11 = a10 - this.f28529c;
                     if (j11 > 500) {
-                        ArrayList arrayList = new ArrayList(this.f29470b.size());
-                        Iterator it = this.f29470b.entrySet().iterator();
+                        ArrayList arrayList = new ArrayList(this.f28528b.size());
+                        Iterator it = this.f28528b.entrySet().iterator();
                         while (it.hasNext()) {
                             Map.Entry entry = (Map.Entry) it.next();
                             int intValue = ((Number) entry.getKey()).intValue();
@@ -132,14 +132,14 @@ public final class b {
                                 fVar.n(arrayList3);
                                 fVar.m(intValue);
                                 arrayList.add(fVar);
-                                Object obj2 = this.f29470b.get(Integer.valueOf(intValue));
+                                Object obj2 = this.f28528b.get(Integer.valueOf(intValue));
                                 Intrinsics.checkNotNull(obj2);
                                 ((ArrayList) obj2).clear();
                                 it = it;
                                 i10 = 10;
                             }
                         }
-                        this.f29471c = 0L;
+                        this.f28529c = 0L;
                         return arrayList;
                     }
                     return list3;
@@ -150,9 +150,9 @@ public final class b {
             if (findPointerIndex2 == -1) {
                 return null;
             }
-            this.f29470b.remove(Integer.valueOf(pointerId));
+            this.f28528b.remove(Integer.valueOf(pointerId));
             e eVar2 = new e();
-            eVar2.f(this.f29469a.a());
+            eVar2.f(this.f28527a.a());
             eVar2.u(event.getX(findPointerIndex2) * recorderConfig.e());
             eVar2.v(event.getY(findPointerIndex2) * recorderConfig.f());
             eVar2.q(0);
@@ -165,9 +165,9 @@ public final class b {
         if (findPointerIndex3 == -1) {
             return null;
         }
-        this.f29470b.put(Integer.valueOf(pointerId2), new ArrayList(10));
+        this.f28528b.put(Integer.valueOf(pointerId2), new ArrayList(10));
         e eVar3 = new e();
-        eVar3.f(this.f29469a.a());
+        eVar3.f(this.f28527a.a());
         eVar3.u(event.getX(findPointerIndex3) * recorderConfig.e());
         eVar3.v(event.getY(findPointerIndex3) * recorderConfig.f());
         eVar3.q(0);

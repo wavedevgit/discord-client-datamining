@@ -26,7 +26,7 @@ import kotlin.collections.o0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
-import lr.v;
+import or.v;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -44,82 +44,82 @@ import wf.w;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f42293a = new a(null);
+    public static final a f42199a = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String f42294b = "clientDataJSON";
+    private static final String f42200b = "clientDataJSON";
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String f42295c = "attestationObject";
+    private static final String f42201c = "attestationObject";
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String f42296d = "authenticatorData";
+    private static final String f42202d = "authenticatorData";
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String f42297e = "signature";
+    private static final String f42203e = "signature";
 
     /* renamed from: f  reason: collision with root package name */
-    private static final String f42298f = "userHandle";
+    private static final String f42204f = "userHandle";
 
     /* renamed from: g  reason: collision with root package name */
-    private static final String f42299g = "response";
+    private static final String f42205g = "response";
 
     /* renamed from: h  reason: collision with root package name */
-    private static final String f42300h = StackTraceHelper.ID_KEY;
+    private static final String f42206h = StackTraceHelper.ID_KEY;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final String f42301i = "rawId";
+    private static final String f42207i = "rawId";
 
     /* renamed from: j  reason: collision with root package name */
-    private static final String f42302j = "type";
+    private static final String f42208j = "type";
 
     /* renamed from: k  reason: collision with root package name */
-    private static final String f42303k = "rpId";
+    private static final String f42209k = "rpId";
 
     /* renamed from: l  reason: collision with root package name */
-    private static final String f42304l = "challenge";
+    private static final String f42210l = "challenge";
 
     /* renamed from: m  reason: collision with root package name */
-    private static final String f42305m = AppsFlyerProperties.APP_ID;
+    private static final String f42211m = AppsFlyerProperties.APP_ID;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final String f42306n = "thirdPartyPayment";
+    private static final String f42212n = "thirdPartyPayment";
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String f42307o = "authenticatorSelection";
+    private static final String f42213o = "authenticatorSelection";
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f42308p = "requireResidentKey";
+    private static final String f42214p = "requireResidentKey";
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String f42309q = "residentKey";
+    private static final String f42215q = "residentKey";
 
     /* renamed from: r  reason: collision with root package name */
-    private static final String f42310r = "authenticatorAttachment";
+    private static final String f42216r = "authenticatorAttachment";
 
     /* renamed from: s  reason: collision with root package name */
-    private static final String f42311s = "timeout";
+    private static final String f42217s = "timeout";
 
     /* renamed from: t  reason: collision with root package name */
-    private static final String f42312t = "excludeCredentials";
+    private static final String f42218t = "excludeCredentials";
 
     /* renamed from: u  reason: collision with root package name */
-    private static final String f42313u = "transports";
+    private static final String f42219u = "transports";
 
     /* renamed from: v  reason: collision with root package name */
-    private static final String f42314v = "rp";
+    private static final String f42220v = "rp";
 
     /* renamed from: w  reason: collision with root package name */
-    private static final String f42315w = StackTraceHelper.NAME_KEY;
+    private static final String f42221w = StackTraceHelper.NAME_KEY;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final String f42316x = "icon";
+    private static final String f42222x = "icon";
 
     /* renamed from: y  reason: collision with root package name */
-    private static final String f42317y = "alg";
+    private static final String f42223y = "alg";
 
     /* renamed from: z  reason: collision with root package name */
-    private static final String f42318z = "user";
+    private static final String f42224z = "user";
     private static final String A = "displayName";
     private static final String B = "userVerificationMethod";
     private static final String C = "keyProtectionType";
@@ -168,19 +168,19 @@ public abstract class k {
         }
 
         public final String A() {
-            return k.f42311s;
+            return k.f42217s;
         }
 
         public final String B() {
-            return k.f42313u;
+            return k.f42219u;
         }
 
         public final String C() {
-            return k.f42302j;
+            return k.f42208j;
         }
 
         public final String D() {
-            return k.f42318z;
+            return k.f42224z;
         }
 
         public final LinkedHashMap E() {
@@ -387,9 +387,9 @@ public abstract class k {
             wf.i iVar;
             Intrinsics.checkNotNullParameter(cred, "cred");
             JSONObject jSONObject = new JSONObject();
-            q k10 = cred.k();
-            if (k10 != null) {
-                iVar = k10.g();
+            q l10 = cred.l();
+            if (l10 != null) {
+                iVar = l10.g();
             } else {
                 iVar = null;
             }
@@ -397,7 +397,7 @@ public abstract class k {
             if (!(iVar instanceof wf.h)) {
                 if (iVar instanceof wf.f) {
                     try {
-                        String j10 = k10.j();
+                        String j10 = l10.j();
                         Intrinsics.checkNotNullExpressionValue(j10, "toJson(...)");
                         return j10;
                     } catch (Throwable th2) {
@@ -469,7 +469,7 @@ public abstract class k {
 
         public final a.c f(e0 option) {
             Intrinsics.checkNotNullParameter(option, "option");
-            a.c a10 = new a.c.C0679a().c(true).b(option.f()).a();
+            a.c a10 = new a.c.C0683a().c(true).b(option.f()).a();
             Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
             return a10;
         }
@@ -480,7 +480,7 @@ public abstract class k {
             String optString = jSONObject.optString(y(), "");
             Intrinsics.checkNotNull(optString);
             if (optString.length() != 0) {
-                a.d a10 = new a.d.C0680a().d(true).c(optString).b(h(jSONObject)).a();
+                a.d a10 = new a.d.C0684a().d(true).c(optString).b(h(jSONObject)).a();
                 Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
                 return a10;
             }
@@ -488,11 +488,11 @@ public abstract class k {
         }
 
         public final String i() {
-            return k.f42317y;
+            return k.f42223y;
         }
 
         public final String j() {
-            return k.f42305m;
+            return k.f42211m;
         }
 
         public final String k() {
@@ -500,15 +500,15 @@ public abstract class k {
         }
 
         public final String l() {
-            return k.f42310r;
+            return k.f42216r;
         }
 
         public final String m() {
-            return k.f42307o;
+            return k.f42213o;
         }
 
         public final String n() {
-            return k.f42304l;
+            return k.f42210l;
         }
 
         public final String o() {
@@ -516,7 +516,7 @@ public abstract class k {
         }
 
         public final String p() {
-            return k.f42312t;
+            return k.f42218t;
         }
 
         public final String q() {
@@ -524,15 +524,15 @@ public abstract class k {
         }
 
         public final String r() {
-            return k.f42316x;
+            return k.f42222x;
         }
 
         public final String s() {
-            return k.f42300h;
+            return k.f42206h;
         }
 
         public final String t() {
-            return k.f42315w;
+            return k.f42221w;
         }
 
         public final String u() {
@@ -540,23 +540,23 @@ public abstract class k {
         }
 
         public final String v() {
-            return k.f42308p;
+            return k.f42214p;
         }
 
         public final String w() {
-            return k.f42309q;
+            return k.f42215q;
         }
 
         public final String x() {
-            return k.f42314v;
+            return k.f42220v;
         }
 
         public final String y() {
-            return k.f42303k;
+            return k.f42209k;
         }
 
         public final String z() {
-            return k.f42306n;
+            return k.f42212n;
         }
 
         private a() {
@@ -568,7 +568,7 @@ public abstract class k {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f42319a = new b();
+        public static final b f42225a = new b();
 
         private b() {
         }

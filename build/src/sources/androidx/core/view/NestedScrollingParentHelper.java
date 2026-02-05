@@ -6,16 +6,16 @@ import android.view.ViewGroup;
 public class NestedScrollingParentHelper {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f3262a;
+    private int f3374a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f3263b;
+    private int f3375b;
 
     public NestedScrollingParentHelper(ViewGroup viewGroup) {
     }
 
     public int a() {
-        return this.f3262a | this.f3263b;
+        return this.f3374a | this.f3375b;
     }
 
     public void b(View view, View view2, int i10) {
@@ -24,9 +24,9 @@ public class NestedScrollingParentHelper {
 
     public void c(View view, View view2, int i10, int i11) {
         if (i11 == 1) {
-            this.f3263b = i10;
+            this.f3375b = i10;
         } else {
-            this.f3262a = i10;
+            this.f3374a = i10;
         }
     }
 
@@ -36,9 +36,9 @@ public class NestedScrollingParentHelper {
 
     public void e(View view, int i10) {
         if (i10 == 1) {
-            this.f3263b = 0;
+            this.f3375b = 0;
         } else {
-            this.f3262a = 0;
+            this.f3374a = 0;
         }
     }
 }

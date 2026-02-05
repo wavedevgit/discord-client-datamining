@@ -7,17 +7,17 @@ import java.util.Set;
 public abstract class s implements c1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private transient Set f43447d;
+    private transient Set f43353d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient Map f43448e;
+    private transient Map f43354e;
 
     @Override // og.c1
     public final Map b() {
-        Map map = this.f43448e;
+        Map map = this.f43354e;
         if (map == null) {
             Map e10 = e();
-            this.f43448e = e10;
+            this.f43354e = e10;
             return e10;
         }
         return map;
@@ -25,10 +25,10 @@ public abstract class s implements c1 {
 
     @Override // og.c1
     public final Set c() {
-        Set set = this.f43447d;
+        Set set = this.f43353d;
         if (set == null) {
             Set f10 = f();
-            this.f43447d = f10;
+            this.f43353d = f10;
             return f10;
         }
         return set;
@@ -53,6 +53,6 @@ public abstract class s implements c1 {
     }
 
     public final String toString() {
-        return ((i) b()).f43067i.toString();
+        return ((i) b()).f42973i.toString();
     }
 }

@@ -62,7 +62,7 @@ public final class InlineInquiry {
             r3 = this;
             r0 = 0
             java.lang.Class<com.withpersona.sdk2.inquiry.internal.j> r1 = com.withpersona.sdk2.inquiry.internal.j.class
-            int r2 = com.withpersona.sdk2.inquiry.internal.j.f18518r     // Catch: java.lang.ClassNotFoundException -> L14
+            int r2 = com.withpersona.sdk2.inquiry.internal.j.f18924r     // Catch: java.lang.ClassNotFoundException -> L14
             java.lang.reflect.Constructor r1 = r1.getDeclaredConstructor(r0)     // Catch: java.lang.ClassNotFoundException -> L14
             java.lang.Object r1 = r1.newInstance(r0)     // Catch: java.lang.ClassNotFoundException -> L14
             boolean r2 = r1 instanceof androidx.fragment.app.Fragment     // Catch: java.lang.ClassNotFoundException -> L14

@@ -6,16 +6,16 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class m extends RuntimeException {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Fragment f24950d;
+    private final Fragment f23649d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public m(Fragment fragment, String str) {
         super(str);
         Intrinsics.checkNotNullParameter(fragment, "fragment");
-        this.f24950d = fragment;
+        this.f23649d = fragment;
     }
 
     public final Fragment a() {
-        return this.f24950d;
+        return this.f23649d;
     }
 }

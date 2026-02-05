@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAllServersOptionSelected = var3;
     var1 = function() { // Environment: var1
-        _fun88823: for (var _fun88823_ip = 0;;) switch (_fun88823_ip) {
+        _fun88842: for (var _fun88842_ip = 0;;) switch (_fun88842_ip) {
             case 0:
                 var3 = _closure1_slot6;
                 var1 = undefined;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var4 = var0 == var3;
                 if (var4) {
-                    _fun88823_ip = 104;
-                    continue _fun88823
+                    _fun88842_ip = 104;
+                    continue _fun88842
                 }
             case 78:
                 var4 = var3.features;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 104:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun88823_ip = 114;
-                    continue _fun88823
+                    _fun88842_ip = 114;
+                    continue _fun88842
                 }
             case 111:
                 var0 = var1;
@@ -107,4 +107,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsSelectedGuildAHub = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 11519, 660, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 11537, 660, 566, 2]);

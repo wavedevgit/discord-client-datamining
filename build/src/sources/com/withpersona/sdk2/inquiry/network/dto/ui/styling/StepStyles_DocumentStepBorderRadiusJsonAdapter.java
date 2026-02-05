@@ -41,21 +41,21 @@ public final class StepStyles_DocumentStepBorderRadiusJsonAdapter extends h {
     @NotNull
     public StepStyles.DocumentStepBorderRadius fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.Measurement measurement = null;
         StyleElements.Measurement measurement2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 measurement2 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.DocumentStepBorderRadius(measurement, measurement2);
     }
 
@@ -63,10 +63,10 @@ public final class StepStyles_DocumentStepBorderRadiusJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.DocumentStepBorderRadius documentStepBorderRadius) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStepBorderRadius != null) {
-            writer.l();
-            writer.A0("modal");
+            writer.k();
+            writer.W("modal");
             this.nullableMeasurementAdapter.toJson(writer, documentStepBorderRadius.getModal());
-            writer.A0("imagePreview");
+            writer.W("imagePreview");
             this.nullableMeasurementAdapter.toJson(writer, documentStepBorderRadius.getImagePreview());
             writer.E();
             return;

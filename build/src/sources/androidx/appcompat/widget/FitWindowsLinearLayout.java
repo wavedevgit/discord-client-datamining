@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 public class FitWindowsLinearLayout extends LinearLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private g0 f1488d;
+    private g0 f1600d;
 
     public FitWindowsLinearLayout(@NonNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -17,7 +17,7 @@ public class FitWindowsLinearLayout extends LinearLayout {
 
     @Override // android.view.View
     protected boolean fitSystemWindows(Rect rect) {
-        g0 g0Var = this.f1488d;
+        g0 g0Var = this.f1600d;
         if (g0Var != null) {
             g0Var.a(rect);
         }
@@ -25,6 +25,6 @@ public class FitWindowsLinearLayout extends LinearLayout {
     }
 
     public void setOnFitSystemWindowsListener(g0 g0Var) {
-        this.f1488d = g0Var;
+        this.f1600d = g0Var;
     }
 }

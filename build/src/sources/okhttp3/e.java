@@ -6,15 +6,15 @@ import java.net.Proxy;
 import java.util.List;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import wt.j;
+import zt.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f44263a = new b(null);
+    public static final b f44016a = new b(null);
 
     /* renamed from: b  reason: collision with root package name */
-    public static final e f44264b = new a();
+    public static final e f44017b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends e {
@@ -100,12 +100,12 @@ public abstract class e {
         Intrinsics.checkNotNullParameter(proxy, "proxy");
     }
 
-    public void k(Call call, wt.e connection) {
+    public void k(Call call, zt.e connection) {
         Intrinsics.checkNotNullParameter(call, "call");
         Intrinsics.checkNotNullParameter(connection, "connection");
     }
 
-    public void l(Call call, wt.e connection) {
+    public void l(Call call, zt.e connection) {
         Intrinsics.checkNotNullParameter(call, "call");
         Intrinsics.checkNotNullParameter(connection, "connection");
     }

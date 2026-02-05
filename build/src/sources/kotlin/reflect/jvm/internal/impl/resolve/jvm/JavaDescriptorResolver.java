@@ -17,21 +17,21 @@ import org.jetbrains.annotations.NotNull;
 public final class JavaDescriptorResolver {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LazyJavaPackageFragmentProvider f34633a;
+    private final LazyJavaPackageFragmentProvider f34157a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final JavaResolverCache f34634b;
+    private final JavaResolverCache f34158b;
 
     public JavaDescriptorResolver(@NotNull LazyJavaPackageFragmentProvider packageFragmentProvider, @NotNull JavaResolverCache javaResolverCache) {
         Intrinsics.checkNotNullParameter(packageFragmentProvider, "packageFragmentProvider");
         Intrinsics.checkNotNullParameter(javaResolverCache, "javaResolverCache");
-        this.f34633a = packageFragmentProvider;
-        this.f34634b = javaResolverCache;
+        this.f34157a = packageFragmentProvider;
+        this.f34158b = javaResolverCache;
     }
 
     @NotNull
     public final LazyJavaPackageFragmentProvider getPackageFragmentProvider() {
-        return this.f34633a;
+        return this.f34157a;
     }
 
     public final ClassDescriptor resolveClass(@NotNull JavaClass javaClass) {
@@ -41,7 +41,7 @@ public final class JavaDescriptorResolver {
         Intrinsics.checkNotNullParameter(javaClass, "javaClass");
         FqName fqName = javaClass.getFqName();
         if (fqName != null && javaClass.getLightClassOriginKind() == LightClassOriginKind.SOURCE) {
-            return this.f34634b.getClassResolvedFromSource(fqName);
+            return this.f34158b.getClassResolvedFromSource(fqName);
         }
         JavaClass outerClass = javaClass.getOuterClass();
         if (outerClass != null) {
@@ -52,7 +52,7 @@ public final class JavaDescriptorResolver {
                 memberScope = null;
             }
             if (memberScope != null) {
-                classifierDescriptor = memberScope.mo1198getContributedClassifier(javaClass.getName(), NoLookupLocation.FROM_JAVA_LOADER);
+                classifierDescriptor = memberScope.mo1200getContributedClassifier(javaClass.getName(), NoLookupLocation.FROM_JAVA_LOADER);
             } else {
                 classifierDescriptor = null;
             }
@@ -60,7 +60,7 @@ public final class JavaDescriptorResolver {
                 return null;
             }
             return (ClassDescriptor) classifierDescriptor;
-        } else if (fqName == null || (lazyJavaPackageFragment = (LazyJavaPackageFragment) CollectionsKt.firstOrNull(this.f34633a.getPackageFragments(fqName.parent()))) == null) {
+        } else if (fqName == null || (lazyJavaPackageFragment = (LazyJavaPackageFragment) CollectionsKt.firstOrNull(this.f34157a.getPackageFragments(fqName.parent()))) == null) {
             return null;
         } else {
             return lazyJavaPackageFragment.findClassifierByJavaClass$descriptors_jvm(javaClass);

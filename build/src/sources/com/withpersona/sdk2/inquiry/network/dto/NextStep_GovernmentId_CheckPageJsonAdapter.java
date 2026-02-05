@@ -45,49 +45,49 @@ public final class NextStep_GovernmentId_CheckPageJsonAdapter extends h {
     @NotNull
     public NextStep.GovernmentId.CheckPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         String str3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw vm.c.x("buttonSubmit", "btnSubmit", reader);
+                    throw ym.c.x("buttonSubmit", "btnSubmit", reader);
                 }
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str2 = (String) this.stringAdapter.fromJson(reader);
                 if (str2 == null) {
-                    throw vm.c.x("buttonRetake", "btnRetake", reader);
+                    throw ym.c.x("buttonRetake", "btnRetake", reader);
                 }
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 str3 = (String) this.nullableStringAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         if (str != null) {
             if (str2 != null) {
                 return new NextStep.GovernmentId.CheckPage(str, str2, str3);
             }
-            throw vm.c.o("buttonRetake", "btnRetake", reader);
+            throw ym.c.o("buttonRetake", "btnRetake", reader);
         }
-        throw vm.c.o("buttonSubmit", "btnSubmit", reader);
+        throw ym.c.o("buttonSubmit", "btnSubmit", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.GovernmentId.CheckPage checkPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkPage != null) {
-            writer.l();
-            writer.A0("btnSubmit");
+            writer.k();
+            writer.W("btnSubmit");
             this.stringAdapter.toJson(writer, checkPage.getButtonSubmit());
-            writer.A0("btnRetake");
+            writer.W("btnRetake");
             this.stringAdapter.toJson(writer, checkPage.getButtonRetake());
-            writer.A0("titleConfirmCapture");
+            writer.W("titleConfirmCapture");
             this.nullableStringAdapter.toJson(writer, checkPage.getTitleConfirmCapture());
             writer.E();
             return;

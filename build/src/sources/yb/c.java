@@ -5,177 +5,177 @@ import yb.a;
 final class c extends yb.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Integer f53878a;
+    private final Integer f54574a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f53879b;
+    private final String f54575b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f53880c;
+    private final String f54576c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f53881d;
+    private final String f54577d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f53882e;
+    private final String f54578e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f53883f;
+    private final String f54579f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f53884g;
+    private final String f54580g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f53885h;
+    private final String f54581h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f53886i;
+    private final String f54582i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final String f53887j;
+    private final String f54583j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final String f53888k;
+    private final String f54584k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final String f53889l;
+    private final String f54585l;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class b extends a.AbstractC0739a {
+    public static final class b extends a.AbstractC0759a {
 
         /* renamed from: a  reason: collision with root package name */
-        private Integer f53890a;
+        private Integer f54586a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f53891b;
+        private String f54587b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f53892c;
+        private String f54588c;
 
         /* renamed from: d  reason: collision with root package name */
-        private String f53893d;
+        private String f54589d;
 
         /* renamed from: e  reason: collision with root package name */
-        private String f53894e;
+        private String f54590e;
 
         /* renamed from: f  reason: collision with root package name */
-        private String f53895f;
+        private String f54591f;
 
         /* renamed from: g  reason: collision with root package name */
-        private String f53896g;
+        private String f54592g;
 
         /* renamed from: h  reason: collision with root package name */
-        private String f53897h;
+        private String f54593h;
 
         /* renamed from: i  reason: collision with root package name */
-        private String f53898i;
+        private String f54594i;
 
         /* renamed from: j  reason: collision with root package name */
-        private String f53899j;
+        private String f54595j;
 
         /* renamed from: k  reason: collision with root package name */
-        private String f53900k;
+        private String f54596k;
 
         /* renamed from: l  reason: collision with root package name */
-        private String f53901l;
+        private String f54597l;
 
-        @Override // yb.a.AbstractC0739a
+        @Override // yb.a.AbstractC0759a
         public yb.a a() {
-            return new c(this.f53890a, this.f53891b, this.f53892c, this.f53893d, this.f53894e, this.f53895f, this.f53896g, this.f53897h, this.f53898i, this.f53899j, this.f53900k, this.f53901l);
+            return new c(this.f54586a, this.f54587b, this.f54588c, this.f54589d, this.f54590e, this.f54591f, this.f54592g, this.f54593h, this.f54594i, this.f54595j, this.f54596k, this.f54597l);
         }
 
-        @Override // yb.a.AbstractC0739a
-        public a.AbstractC0739a b(String str) {
-            this.f53901l = str;
+        @Override // yb.a.AbstractC0759a
+        public a.AbstractC0759a b(String str) {
+            this.f54597l = str;
             return this;
         }
 
-        @Override // yb.a.AbstractC0739a
-        public a.AbstractC0739a c(String str) {
-            this.f53899j = str;
+        @Override // yb.a.AbstractC0759a
+        public a.AbstractC0759a c(String str) {
+            this.f54595j = str;
             return this;
         }
 
-        @Override // yb.a.AbstractC0739a
-        public a.AbstractC0739a d(String str) {
-            this.f53893d = str;
+        @Override // yb.a.AbstractC0759a
+        public a.AbstractC0759a d(String str) {
+            this.f54589d = str;
             return this;
         }
 
-        @Override // yb.a.AbstractC0739a
-        public a.AbstractC0739a e(String str) {
-            this.f53897h = str;
+        @Override // yb.a.AbstractC0759a
+        public a.AbstractC0759a e(String str) {
+            this.f54593h = str;
             return this;
         }
 
-        @Override // yb.a.AbstractC0739a
-        public a.AbstractC0739a f(String str) {
-            this.f53892c = str;
+        @Override // yb.a.AbstractC0759a
+        public a.AbstractC0759a f(String str) {
+            this.f54588c = str;
             return this;
         }
 
-        @Override // yb.a.AbstractC0739a
-        public a.AbstractC0739a g(String str) {
-            this.f53898i = str;
+        @Override // yb.a.AbstractC0759a
+        public a.AbstractC0759a g(String str) {
+            this.f54594i = str;
             return this;
         }
 
-        @Override // yb.a.AbstractC0739a
-        public a.AbstractC0739a h(String str) {
-            this.f53896g = str;
+        @Override // yb.a.AbstractC0759a
+        public a.AbstractC0759a h(String str) {
+            this.f54592g = str;
             return this;
         }
 
-        @Override // yb.a.AbstractC0739a
-        public a.AbstractC0739a i(String str) {
-            this.f53900k = str;
+        @Override // yb.a.AbstractC0759a
+        public a.AbstractC0759a i(String str) {
+            this.f54596k = str;
             return this;
         }
 
-        @Override // yb.a.AbstractC0739a
-        public a.AbstractC0739a j(String str) {
-            this.f53891b = str;
+        @Override // yb.a.AbstractC0759a
+        public a.AbstractC0759a j(String str) {
+            this.f54587b = str;
             return this;
         }
 
-        @Override // yb.a.AbstractC0739a
-        public a.AbstractC0739a k(String str) {
-            this.f53895f = str;
+        @Override // yb.a.AbstractC0759a
+        public a.AbstractC0759a k(String str) {
+            this.f54591f = str;
             return this;
         }
 
-        @Override // yb.a.AbstractC0739a
-        public a.AbstractC0739a l(String str) {
-            this.f53894e = str;
+        @Override // yb.a.AbstractC0759a
+        public a.AbstractC0759a l(String str) {
+            this.f54590e = str;
             return this;
         }
 
-        @Override // yb.a.AbstractC0739a
-        public a.AbstractC0739a m(Integer num) {
-            this.f53890a = num;
+        @Override // yb.a.AbstractC0759a
+        public a.AbstractC0759a m(Integer num) {
+            this.f54586a = num;
             return this;
         }
     }
 
     @Override // yb.a
     public String b() {
-        return this.f53889l;
+        return this.f54585l;
     }
 
     @Override // yb.a
     public String c() {
-        return this.f53887j;
+        return this.f54583j;
     }
 
     @Override // yb.a
     public String d() {
-        return this.f53881d;
+        return this.f54577d;
     }
 
     @Override // yb.a
     public String e() {
-        return this.f53885h;
+        return this.f54581h;
     }
 
     public boolean equals(Object obj) {
@@ -184,29 +184,29 @@ final class c extends yb.a {
         }
         if (obj instanceof yb.a) {
             yb.a aVar = (yb.a) obj;
-            Integer num = this.f53878a;
+            Integer num = this.f54574a;
             if (num != null ? num.equals(aVar.m()) : aVar.m() == null) {
-                String str = this.f53879b;
+                String str = this.f54575b;
                 if (str != null ? str.equals(aVar.j()) : aVar.j() == null) {
-                    String str2 = this.f53880c;
+                    String str2 = this.f54576c;
                     if (str2 != null ? str2.equals(aVar.f()) : aVar.f() == null) {
-                        String str3 = this.f53881d;
+                        String str3 = this.f54577d;
                         if (str3 != null ? str3.equals(aVar.d()) : aVar.d() == null) {
-                            String str4 = this.f53882e;
+                            String str4 = this.f54578e;
                             if (str4 != null ? str4.equals(aVar.l()) : aVar.l() == null) {
-                                String str5 = this.f53883f;
+                                String str5 = this.f54579f;
                                 if (str5 != null ? str5.equals(aVar.k()) : aVar.k() == null) {
-                                    String str6 = this.f53884g;
+                                    String str6 = this.f54580g;
                                     if (str6 != null ? str6.equals(aVar.h()) : aVar.h() == null) {
-                                        String str7 = this.f53885h;
+                                        String str7 = this.f54581h;
                                         if (str7 != null ? str7.equals(aVar.e()) : aVar.e() == null) {
-                                            String str8 = this.f53886i;
+                                            String str8 = this.f54582i;
                                             if (str8 != null ? str8.equals(aVar.g()) : aVar.g() == null) {
-                                                String str9 = this.f53887j;
+                                                String str9 = this.f54583j;
                                                 if (str9 != null ? str9.equals(aVar.c()) : aVar.c() == null) {
-                                                    String str10 = this.f53888k;
+                                                    String str10 = this.f54584k;
                                                     if (str10 != null ? str10.equals(aVar.i()) : aVar.i() == null) {
-                                                        String str11 = this.f53889l;
+                                                        String str11 = this.f54585l;
                                                         if (str11 != null ? str11.equals(aVar.b()) : aVar.b() == null) {
                                                             return true;
                                                         }
@@ -227,17 +227,17 @@ final class c extends yb.a {
 
     @Override // yb.a
     public String f() {
-        return this.f53880c;
+        return this.f54576c;
     }
 
     @Override // yb.a
     public String g() {
-        return this.f53886i;
+        return this.f54582i;
     }
 
     @Override // yb.a
     public String h() {
-        return this.f53884g;
+        return this.f54580g;
     }
 
     public int hashCode() {
@@ -252,7 +252,7 @@ final class c extends yb.a {
         int hashCode9;
         int hashCode10;
         int hashCode11;
-        Integer num = this.f53878a;
+        Integer num = this.f54574a;
         int i10 = 0;
         if (num == null) {
             hashCode = 0;
@@ -260,77 +260,77 @@ final class c extends yb.a {
             hashCode = num.hashCode();
         }
         int i11 = (hashCode ^ 1000003) * 1000003;
-        String str = this.f53879b;
+        String str = this.f54575b;
         if (str == null) {
             hashCode2 = 0;
         } else {
             hashCode2 = str.hashCode();
         }
         int i12 = (i11 ^ hashCode2) * 1000003;
-        String str2 = this.f53880c;
+        String str2 = this.f54576c;
         if (str2 == null) {
             hashCode3 = 0;
         } else {
             hashCode3 = str2.hashCode();
         }
         int i13 = (i12 ^ hashCode3) * 1000003;
-        String str3 = this.f53881d;
+        String str3 = this.f54577d;
         if (str3 == null) {
             hashCode4 = 0;
         } else {
             hashCode4 = str3.hashCode();
         }
         int i14 = (i13 ^ hashCode4) * 1000003;
-        String str4 = this.f53882e;
+        String str4 = this.f54578e;
         if (str4 == null) {
             hashCode5 = 0;
         } else {
             hashCode5 = str4.hashCode();
         }
         int i15 = (i14 ^ hashCode5) * 1000003;
-        String str5 = this.f53883f;
+        String str5 = this.f54579f;
         if (str5 == null) {
             hashCode6 = 0;
         } else {
             hashCode6 = str5.hashCode();
         }
         int i16 = (i15 ^ hashCode6) * 1000003;
-        String str6 = this.f53884g;
+        String str6 = this.f54580g;
         if (str6 == null) {
             hashCode7 = 0;
         } else {
             hashCode7 = str6.hashCode();
         }
         int i17 = (i16 ^ hashCode7) * 1000003;
-        String str7 = this.f53885h;
+        String str7 = this.f54581h;
         if (str7 == null) {
             hashCode8 = 0;
         } else {
             hashCode8 = str7.hashCode();
         }
         int i18 = (i17 ^ hashCode8) * 1000003;
-        String str8 = this.f53886i;
+        String str8 = this.f54582i;
         if (str8 == null) {
             hashCode9 = 0;
         } else {
             hashCode9 = str8.hashCode();
         }
         int i19 = (i18 ^ hashCode9) * 1000003;
-        String str9 = this.f53887j;
+        String str9 = this.f54583j;
         if (str9 == null) {
             hashCode10 = 0;
         } else {
             hashCode10 = str9.hashCode();
         }
         int i20 = (i19 ^ hashCode10) * 1000003;
-        String str10 = this.f53888k;
+        String str10 = this.f54584k;
         if (str10 == null) {
             hashCode11 = 0;
         } else {
             hashCode11 = str10.hashCode();
         }
         int i21 = (i20 ^ hashCode11) * 1000003;
-        String str11 = this.f53889l;
+        String str11 = this.f54585l;
         if (str11 != null) {
             i10 = str11.hashCode();
         }
@@ -339,45 +339,45 @@ final class c extends yb.a {
 
     @Override // yb.a
     public String i() {
-        return this.f53888k;
+        return this.f54584k;
     }
 
     @Override // yb.a
     public String j() {
-        return this.f53879b;
+        return this.f54575b;
     }
 
     @Override // yb.a
     public String k() {
-        return this.f53883f;
+        return this.f54579f;
     }
 
     @Override // yb.a
     public String l() {
-        return this.f53882e;
+        return this.f54578e;
     }
 
     @Override // yb.a
     public Integer m() {
-        return this.f53878a;
+        return this.f54574a;
     }
 
     public String toString() {
-        return "AndroidClientInfo{sdkVersion=" + this.f53878a + ", model=" + this.f53879b + ", hardware=" + this.f53880c + ", device=" + this.f53881d + ", product=" + this.f53882e + ", osBuild=" + this.f53883f + ", manufacturer=" + this.f53884g + ", fingerprint=" + this.f53885h + ", locale=" + this.f53886i + ", country=" + this.f53887j + ", mccMnc=" + this.f53888k + ", applicationBuild=" + this.f53889l + "}";
+        return "AndroidClientInfo{sdkVersion=" + this.f54574a + ", model=" + this.f54575b + ", hardware=" + this.f54576c + ", device=" + this.f54577d + ", product=" + this.f54578e + ", osBuild=" + this.f54579f + ", manufacturer=" + this.f54580g + ", fingerprint=" + this.f54581h + ", locale=" + this.f54582i + ", country=" + this.f54583j + ", mccMnc=" + this.f54584k + ", applicationBuild=" + this.f54585l + "}";
     }
 
     private c(Integer num, String str, String str2, String str3, String str4, String str5, String str6, String str7, String str8, String str9, String str10, String str11) {
-        this.f53878a = num;
-        this.f53879b = str;
-        this.f53880c = str2;
-        this.f53881d = str3;
-        this.f53882e = str4;
-        this.f53883f = str5;
-        this.f53884g = str6;
-        this.f53885h = str7;
-        this.f53886i = str8;
-        this.f53887j = str9;
-        this.f53888k = str10;
-        this.f53889l = str11;
+        this.f54574a = num;
+        this.f54575b = str;
+        this.f54576c = str2;
+        this.f54577d = str3;
+        this.f54578e = str4;
+        this.f54579f = str5;
+        this.f54580g = str6;
+        this.f54581h = str7;
+        this.f54582i = str8;
+        this.f54583j = str9;
+        this.f54584k = str10;
+        this.f54585l = str11;
     }
 }

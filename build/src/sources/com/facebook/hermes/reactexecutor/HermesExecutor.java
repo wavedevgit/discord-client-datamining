@@ -13,10 +13,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class HermesExecutor extends JavaScriptExecutor {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f10017a;
+    public static final a f10402a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static String f10018b;
+    private static String f10403b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -37,7 +37,7 @@ public final class HermesExecutor extends JavaScriptExecutor {
 
         public final void b() {
             String str;
-            if (HermesExecutor.f10018b == null) {
+            if (HermesExecutor.f10403b == null) {
                 SoLoader.t("hermes");
                 SoLoader.t("hermes_executor");
                 if (ReactBuildConfig.DEBUG) {
@@ -45,7 +45,7 @@ public final class HermesExecutor extends JavaScriptExecutor {
                 } else {
                     str = "Release";
                 }
-                HermesExecutor.f10018b = str;
+                HermesExecutor.f10403b = str;
             }
         }
 
@@ -55,13 +55,13 @@ public final class HermesExecutor extends JavaScriptExecutor {
 
     static {
         a aVar = new a(null);
-        f10017a = aVar;
+        f10402a = aVar;
         aVar.b();
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public HermesExecutor(boolean z10, String debuggerName) {
-        super(f10017a.initHybridDefaultConfig(z10, debuggerName));
+        super(f10402a.initHybridDefaultConfig(z10, debuggerName));
         Intrinsics.checkNotNullParameter(debuggerName, "debuggerName");
     }
 
@@ -75,7 +75,7 @@ public final class HermesExecutor extends JavaScriptExecutor {
 
     @Override // com.facebook.react.bridge.JavaScriptExecutor
     public String getName() {
-        String str = f10018b;
+        String str = f10403b;
         return "HermesExecutor" + str;
     }
 }

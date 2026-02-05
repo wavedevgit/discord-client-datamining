@@ -1,15 +1,15 @@
 package hg;
+
+import java.util.ListIterator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class m extends k {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final String f26991a = "CharMatcher.none()";
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public m(String str) {
+public abstract class m extends l implements ListIterator {
+    @Override // java.util.ListIterator
+    public final void add(Object obj) {
+        throw new UnsupportedOperationException();
     }
 
-    public final String toString() {
-        return this.f26991a;
+    @Override // java.util.ListIterator
+    public final void set(Object obj) {
+        throw new UnsupportedOperationException();
     }
 }

@@ -6,55 +6,55 @@ import tc.z;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final C0621a f49871a;
+    protected final C0648a f50476a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected final f f49872b;
+    protected final f f50477b;
 
     /* renamed from: c  reason: collision with root package name */
-    protected c f49873c;
+    protected c f50478c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f49874d;
+    private final int f50479d;
 
     /* renamed from: tc.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static class C0621a implements z {
+    public static class C0648a implements z {
 
         /* renamed from: a  reason: collision with root package name */
-        private final d f49875a;
+        private final d f50480a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final long f49876b;
+        private final long f50481b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final long f49877c;
+        private final long f50482c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final long f49878d;
+        private final long f50483d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final long f49879e;
+        private final long f50484e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final long f49880f;
+        private final long f50485f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final long f49881g;
+        private final long f50486g;
 
-        public C0621a(d dVar, long j10, long j11, long j12, long j13, long j14, long j15) {
-            this.f49875a = dVar;
-            this.f49876b = j10;
-            this.f49877c = j11;
-            this.f49878d = j12;
-            this.f49879e = j13;
-            this.f49880f = j14;
-            this.f49881g = j15;
+        public C0648a(d dVar, long j10, long j11, long j12, long j13, long j14, long j15) {
+            this.f50480a = dVar;
+            this.f50481b = j10;
+            this.f50482c = j11;
+            this.f50483d = j12;
+            this.f50484e = j13;
+            this.f50485f = j14;
+            this.f50486g = j15;
         }
 
         @Override // tc.z
         public z.a e(long j10) {
-            return new z.a(new a0(j10, c.h(this.f49875a.a(j10), this.f49877c, this.f49878d, this.f49879e, this.f49880f, this.f49881g)));
+            return new z.a(new a0(j10, c.h(this.f50480a.a(j10), this.f50482c, this.f50483d, this.f50484e, this.f50485f, this.f50486g)));
         }
 
         @Override // tc.z
@@ -64,11 +64,11 @@ public abstract class a {
 
         @Override // tc.z
         public long i() {
-            return this.f49876b;
+            return this.f50481b;
         }
 
         public long k(long j10) {
-            return this.f49875a.a(j10);
+            return this.f50480a.a(j10);
         }
     }
 
@@ -77,38 +77,38 @@ public abstract class a {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final long f49882a;
+        private final long f50487a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final long f49883b;
+        private final long f50488b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final long f49884c;
+        private final long f50489c;
 
         /* renamed from: d  reason: collision with root package name */
-        private long f49885d;
+        private long f50490d;
 
         /* renamed from: e  reason: collision with root package name */
-        private long f49886e;
+        private long f50491e;
 
         /* renamed from: f  reason: collision with root package name */
-        private long f49887f;
+        private long f50492f;
 
         /* renamed from: g  reason: collision with root package name */
-        private long f49888g;
+        private long f50493g;
 
         /* renamed from: h  reason: collision with root package name */
-        private long f49889h;
+        private long f50494h;
 
         protected c(long j10, long j11, long j12, long j13, long j14, long j15, long j16) {
-            this.f49882a = j10;
-            this.f49883b = j11;
-            this.f49885d = j12;
-            this.f49886e = j13;
-            this.f49887f = j14;
-            this.f49888g = j15;
-            this.f49884c = j16;
-            this.f49889h = h(j11, j12, j13, j14, j15, j16);
+            this.f50487a = j10;
+            this.f50488b = j11;
+            this.f50490d = j12;
+            this.f50491e = j13;
+            this.f50492f = j14;
+            this.f50493g = j15;
+            this.f50489c = j16;
+            this.f50494h = h(j11, j12, j13, j14, j15, j16);
         }
 
         protected static long h(long j10, long j11, long j12, long j13, long j14, long j15) {
@@ -121,44 +121,44 @@ public abstract class a {
 
         /* JADX INFO: Access modifiers changed from: private */
         public long i() {
-            return this.f49888g;
+            return this.f50493g;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public long j() {
-            return this.f49887f;
+            return this.f50492f;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public long k() {
-            return this.f49889h;
+            return this.f50494h;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public long l() {
-            return this.f49882a;
+            return this.f50487a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public long m() {
-            return this.f49883b;
+            return this.f50488b;
         }
 
         private void n() {
-            this.f49889h = h(this.f49883b, this.f49885d, this.f49886e, this.f49887f, this.f49888g, this.f49884c);
+            this.f50494h = h(this.f50488b, this.f50490d, this.f50491e, this.f50492f, this.f50493g, this.f50489c);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public void o(long j10, long j11) {
-            this.f49886e = j10;
-            this.f49888g = j11;
+            this.f50491e = j10;
+            this.f50493g = j11;
             n();
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public void p(long j10, long j11) {
-            this.f49885d = j10;
-            this.f49887f = j11;
+            this.f50490d = j10;
+            this.f50492f = j11;
             n();
         }
     }
@@ -173,21 +173,21 @@ public abstract class a {
     public static final class e {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final e f49890d = new e(-3, -9223372036854775807L, -1);
+        public static final e f50495d = new e(-3, -9223372036854775807L, -1);
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f49891a;
+        private final int f50496a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final long f49892b;
+        private final long f50497b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final long f49893c;
+        private final long f50498c;
 
         private e(int i10, long j10, long j11) {
-            this.f49891a = i10;
-            this.f49892b = j10;
-            this.f49893c = j11;
+            this.f50496a = i10;
+            this.f50497b = j10;
+            this.f50498c = j11;
         }
 
         public static e d(long j10, long j11) {
@@ -205,43 +205,43 @@ public abstract class a {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(d dVar, f fVar, long j10, long j11, long j12, long j13, long j14, long j15, int i10) {
-        this.f49872b = fVar;
-        this.f49874d = i10;
-        this.f49871a = new C0621a(dVar, j10, j11, j12, j13, j14, j15);
+        this.f50477b = fVar;
+        this.f50479d = i10;
+        this.f50476a = new C0648a(dVar, j10, j11, j12, j13, j14, j15);
     }
 
     protected c a(long j10) {
-        return new c(j10, this.f49871a.k(j10), this.f49871a.f49877c, this.f49871a.f49878d, this.f49871a.f49879e, this.f49871a.f49880f, this.f49871a.f49881g);
+        return new c(j10, this.f50476a.k(j10), this.f50476a.f50482c, this.f50476a.f50483d, this.f50476a.f50484e, this.f50476a.f50485f, this.f50476a.f50486g);
     }
 
     public final z b() {
-        return this.f49871a;
+        return this.f50476a;
     }
 
     public int c(l lVar, y yVar) {
         while (true) {
-            c cVar = (c) ne.a.i(this.f49873c);
+            c cVar = (c) ne.a.i(this.f50478c);
             long j10 = cVar.j();
             long i10 = cVar.i();
             long k10 = cVar.k();
-            if (i10 - j10 <= this.f49874d) {
+            if (i10 - j10 <= this.f50479d) {
                 e(false, j10);
                 return g(lVar, j10, yVar);
             } else if (!i(lVar, k10)) {
                 return g(lVar, k10, yVar);
             } else {
                 lVar.e();
-                e a10 = this.f49872b.a(lVar, cVar.m());
-                int i11 = a10.f49891a;
+                e a10 = this.f50477b.a(lVar, cVar.m());
+                int i11 = a10.f50496a;
                 if (i11 != -3) {
                     if (i11 == -2) {
-                        cVar.p(a10.f49892b, a10.f49893c);
+                        cVar.p(a10.f50497b, a10.f50498c);
                     } else if (i11 == -1) {
-                        cVar.o(a10.f49892b, a10.f49893c);
+                        cVar.o(a10.f50497b, a10.f50498c);
                     } else if (i11 == 0) {
-                        i(lVar, a10.f49893c);
-                        e(true, a10.f49893c);
-                        return g(lVar, a10.f49893c, yVar);
+                        i(lVar, a10.f50498c);
+                        e(true, a10.f50498c);
+                        return g(lVar, a10.f50498c, yVar);
                     } else {
                         throw new IllegalStateException("Invalid case");
                     }
@@ -254,15 +254,15 @@ public abstract class a {
     }
 
     public final boolean d() {
-        if (this.f49873c != null) {
+        if (this.f50478c != null) {
             return true;
         }
         return false;
     }
 
     protected final void e(boolean z10, long j10) {
-        this.f49873c = null;
-        this.f49872b.b();
+        this.f50478c = null;
+        this.f50477b.b();
         f(z10, j10);
     }
 
@@ -270,16 +270,16 @@ public abstract class a {
         if (j10 == lVar.getPosition()) {
             return 0;
         }
-        yVar.f49998a = j10;
+        yVar.f50603a = j10;
         return 1;
     }
 
     public final void h(long j10) {
-        c cVar = this.f49873c;
+        c cVar = this.f50478c;
         if (cVar != null && cVar.l() == j10) {
             return;
         }
-        this.f49873c = a(j10);
+        this.f50478c = a(j10);
     }
 
     protected final boolean i(l lVar, long j10) {

@@ -10,16 +10,16 @@ import w5.c;
 abstract class t {
 
     /* renamed from: b  reason: collision with root package name */
-    private static SparseArrayCompat f51175b;
+    private static SparseArrayCompat f51864b;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Interpolator f51174a = new LinearInterpolator();
+    private static final Interpolator f51863a = new LinearInterpolator();
 
     /* renamed from: c  reason: collision with root package name */
-    static c.a f51176c = c.a.a("t", "s", "e", "o", "i", "h", "to", "ti");
+    static c.a f51865c = c.a.a("t", "s", "e", "o", "i", "h", "to", "ti");
 
     /* renamed from: d  reason: collision with root package name */
-    static c.a f51177d = c.a.a("x", "y");
+    static c.a f51866d = c.a.a("x", "y");
 
     private static WeakReference a(int i10) {
         WeakReference weakReference;
@@ -83,7 +83,7 @@ abstract class t {
         Interpolator interpolator;
         Interpolator interpolator2;
         Object obj;
-        cVar.r();
+        cVar.s();
         PointF pointF = null;
         Object obj2 = null;
         Object obj3 = null;
@@ -93,7 +93,7 @@ abstract class t {
         boolean z10 = false;
         PointF pointF4 = null;
         while (cVar.hasNext()) {
-            switch (cVar.B(f51176c)) {
+            switch (cVar.y(f51865c)) {
                 case 0:
                     f11 = (float) cVar.nextDouble();
                     break;
@@ -128,22 +128,22 @@ abstract class t {
                     break;
             }
         }
-        cVar.y();
+        cVar.z();
         if (z10) {
-            interpolator2 = f51174a;
+            interpolator2 = f51863a;
             obj = obj3;
         } else {
             if (pointF != null && pointF4 != null) {
                 interpolator = b(pointF, pointF4);
             } else {
-                interpolator = f51174a;
+                interpolator = f51863a;
             }
             interpolator2 = interpolator;
             obj = obj2;
         }
         y5.a aVar = new y5.a(iVar, obj3, obj, interpolator2, f11, null);
-        aVar.f53753o = pointF2;
-        aVar.f53754p = pointF3;
+        aVar.f54449o = pointF2;
+        aVar.f54450p = pointF3;
         return aVar;
     }
 
@@ -159,7 +159,7 @@ abstract class t {
         PointF pointF3;
         boolean z10;
         float f11;
-        cVar.r();
+        cVar.s();
         boolean z11 = false;
         PointF pointF4 = null;
         PointF pointF5 = null;
@@ -173,7 +173,7 @@ abstract class t {
         float f12 = 0.0f;
         Object obj3 = null;
         while (cVar.hasNext()) {
-            switch (cVar.B(f51176c)) {
+            switch (cVar.y(f51865c)) {
                 case 0:
                     f12 = (float) cVar.nextDouble();
                     break;
@@ -185,93 +185,93 @@ abstract class t {
                     break;
                 case 3:
                     boolean z12 = z11;
-                    if (cVar.n() == c.b.BEGIN_OBJECT) {
-                        cVar.r();
+                    if (cVar.m() == c.b.BEGIN_OBJECT) {
+                        cVar.s();
                         float f13 = 0.0f;
                         float f14 = 0.0f;
                         float f15 = 0.0f;
                         float f16 = 0.0f;
                         while (cVar.hasNext()) {
-                            int B = cVar.B(f51177d);
-                            if (B != 0) {
-                                if (B != 1) {
+                            int y10 = cVar.y(f51866d);
+                            if (y10 != 0) {
+                                if (y10 != 1) {
                                     cVar.P();
                                 } else {
-                                    c.b n10 = cVar.n();
+                                    c.b m10 = cVar.m();
                                     c.b bVar = c.b.NUMBER;
-                                    if (n10 == bVar) {
+                                    if (m10 == bVar) {
                                         pointF3 = pointF8;
                                         f16 = (float) cVar.nextDouble();
                                         f14 = f16;
                                     } else {
                                         pointF3 = pointF8;
-                                        cVar.u();
+                                        cVar.v();
                                         f14 = (float) cVar.nextDouble();
-                                        if (cVar.n() == bVar) {
+                                        if (cVar.m() == bVar) {
                                             f16 = (float) cVar.nextDouble();
                                         } else {
                                             f16 = f14;
                                         }
-                                        cVar.s();
+                                        cVar.t();
                                     }
                                 }
                             } else {
                                 pointF3 = pointF8;
-                                c.b n11 = cVar.n();
+                                c.b m11 = cVar.m();
                                 c.b bVar2 = c.b.NUMBER;
-                                if (n11 == bVar2) {
+                                if (m11 == bVar2) {
                                     f15 = (float) cVar.nextDouble();
                                     f13 = f15;
                                 } else {
-                                    cVar.u();
+                                    cVar.v();
                                     f13 = (float) cVar.nextDouble();
-                                    if (cVar.n() == bVar2) {
+                                    if (cVar.m() == bVar2) {
                                         f15 = (float) cVar.nextDouble();
                                     } else {
                                         f15 = f13;
                                     }
-                                    cVar.s();
+                                    cVar.t();
                                 }
                             }
                             pointF8 = pointF3;
                         }
                         pointF6 = new PointF(f13, f14);
                         pointF7 = new PointF(f15, f16);
-                        cVar.y();
+                        cVar.z();
                     } else {
                         pointF4 = s.e(cVar, f10);
                     }
                     z11 = z12;
                     break;
                 case 4:
-                    if (cVar.n() == c.b.BEGIN_OBJECT) {
-                        cVar.r();
+                    if (cVar.m() == c.b.BEGIN_OBJECT) {
+                        cVar.s();
                         float f17 = 0.0f;
                         float f18 = 0.0f;
                         float f19 = 0.0f;
                         float f20 = 0.0f;
                         while (cVar.hasNext()) {
-                            int B2 = cVar.B(f51177d);
-                            if (B2 != 0) {
+                            int y11 = cVar.y(f51866d);
+                            if (y11 != 0) {
                                 z10 = z11;
-                                if (B2 != 1) {
+                                if (y11 != 1) {
                                     cVar.P();
                                 } else {
-                                    c.b n12 = cVar.n();
+                                    c.b m12 = cVar.m();
                                     c.b bVar3 = c.b.NUMBER;
-                                    if (n12 == bVar3) {
+                                    if (m12 == bVar3) {
                                         f20 = (float) cVar.nextDouble();
                                         f18 = f20;
                                     } else {
-                                        cVar.u();
+                                        cVar.v();
                                         PointF pointF12 = pointF10;
                                         float nextDouble = (float) cVar.nextDouble();
-                                        if (cVar.n() == bVar3) {
+                                        if (cVar.m() == bVar3) {
                                             f20 = (float) cVar.nextDouble();
                                         } else {
                                             f20 = nextDouble;
                                         }
-                                        cVar.s();
+                                        cVar.t();
                                         pointF10 = pointF12;
                                         f18 = nextDouble;
                                     }
@@ -279,24 +279,24 @@ abstract class t {
                             } else {
                                 z10 = z11;
                                 PointF pointF13 = pointF10;
-                                c.b n13 = cVar.n();
+                                c.b m13 = cVar.m();
                                 c.b bVar4 = c.b.NUMBER;
-                                if (n13 == bVar4) {
+                                if (m13 == bVar4) {
                                     pointF10 = pointF13;
                                     f19 = (float) cVar.nextDouble();
                                     f17 = f19;
                                 } else {
                                     pointF10 = pointF13;
-                                    cVar.u();
+                                    cVar.v();
                                     float nextDouble2 = (float) cVar.nextDouble();
-                                    if (cVar.n() == bVar4) {
+                                    if (cVar.m() == bVar4) {
                                         f11 = nextDouble2;
                                         f19 = (float) cVar.nextDouble();
                                     } else {
                                         f11 = nextDouble2;
                                         f19 = f11;
                                     }
-                                    cVar.s();
+                                    cVar.t();
                                     f17 = f11;
                                 }
                             }
@@ -304,7 +304,7 @@ abstract class t {
                         }
                         PointF pointF14 = new PointF(f17, f18);
                         PointF pointF15 = new PointF(f19, f20);
-                        cVar.y();
+                        cVar.z();
                         pointF9 = pointF15;
                         pointF8 = pointF14;
                         break;
@@ -333,9 +333,9 @@ abstract class t {
         }
         boolean z13 = z11;
         PointF pointF16 = pointF8;
-        cVar.y();
+        cVar.z();
         if (z13) {
-            interpolator2 = f51174a;
+            interpolator2 = f51863a;
             obj = obj2;
         } else {
             if (pointF4 != null && pointF5 != null) {
@@ -354,11 +354,11 @@ abstract class t {
                     pointF2 = pointF11;
                     aVar = new y5.a(iVar, obj2, obj, interpolator2, f12, null);
                 }
-                aVar.f53753o = pointF;
-                aVar.f53754p = pointF2;
+                aVar.f54449o = pointF;
+                aVar.f54450p = pointF2;
                 return aVar;
             } else {
-                interpolator = f51174a;
+                interpolator = f51863a;
             }
             interpolator2 = interpolator;
             obj = obj3;
@@ -370,8 +370,8 @@ abstract class t {
         pointF = pointF10;
         pointF2 = pointF11;
         aVar = new y5.a(iVar, obj2, obj, interpolator2, f12, null);
-        aVar.f53753o = pointF;
-        aVar.f53754p = pointF2;
+        aVar.f54449o = pointF;
+        aVar.f54450p = pointF2;
         return aVar;
     }
 
@@ -380,15 +380,15 @@ abstract class t {
     }
 
     private static SparseArrayCompat g() {
-        if (f51175b == null) {
-            f51175b = new SparseArrayCompat();
+        if (f51864b == null) {
+            f51864b = new SparseArrayCompat();
         }
-        return f51175b;
+        return f51864b;
     }
 
     private static void h(int i10, WeakReference weakReference) {
         synchronized (t.class) {
-            f51175b.k(i10, weakReference);
+            f51864b.k(i10, weakReference);
         }
     }
 }

@@ -1,8 +1,21 @@
 package com.google.android.gms.dynamite;
+
+import dalvik.system.PathClassLoader;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class b extends ThreadLocal {
-    @Override // java.lang.ThreadLocal
-    protected final /* synthetic */ Object initialValue() {
-        return 0L;
+final class b extends PathClassLoader {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b(String str, ClassLoader classLoader) {
+        super(str, classLoader);
+    }
+
+    @Override // java.lang.ClassLoader
+    protected final Class loadClass(String str, boolean z10) {
+        if (!str.startsWith("java.") && !str.startsWith("android.")) {
+            try {
+                return findClass(str);
+            } catch (ClassNotFoundException unused) {
+            }
+        }
+        return super.loadClass(str, z10);
     }
 }

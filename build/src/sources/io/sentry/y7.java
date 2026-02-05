@@ -7,14 +7,14 @@ import java.util.List;
 public final class y7 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f30911a;
+    private final List f29969a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public y7(List list) {
-        this.f30911a = new ArrayList(list == null ? new ArrayList(0) : list);
+        this.f29969a = new ArrayList(list == null ? new ArrayList(0) : list);
     }
 
     public List a() {
-        return this.f30911a;
+        return this.f29969a;
     }
 }

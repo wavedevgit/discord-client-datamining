@@ -5,22 +5,22 @@ import gf.q;
 import java.lang.reflect.Field;
 import sf.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b extends a.AbstractBinderC0612a {
+public final class b extends a.AbstractBinderC0634a {
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f49491c;
+    private final Object f49640c;
 
     private b(Object obj) {
-        this.f49491c = obj;
+        this.f49640c = obj;
     }
 
-    public static a S0(Object obj) {
+    public static a W0(Object obj) {
         return new b(obj);
     }
 
     public static Object h(a aVar) {
         if (aVar instanceof b) {
-            return ((b) aVar).f49491c;
+            return ((b) aVar).f49640c;
         }
         IBinder asBinder = aVar.asBinder();
         Field[] declaredFields = asBinder.getClass().getDeclaredFields();
@@ -46,6 +46,10 @@ public final class b extends a.AbstractBinderC0612a {
             }
             throw new IllegalArgumentException("IObjectWrapper declared field not private!");
         }
-        throw new IllegalArgumentException("Unexpected number of IObjectWrapper declared fields: " + declaredFields.length);
+        int length = declaredFields.length;
+        StringBuilder sb2 = new StringBuilder(String.valueOf(length).length() + 53);
+        sb2.append("Unexpected number of IObjectWrapper declared fields: ");
+        sb2.append(length);
+        throw new IllegalArgumentException(sb2.toString());
     }
 }

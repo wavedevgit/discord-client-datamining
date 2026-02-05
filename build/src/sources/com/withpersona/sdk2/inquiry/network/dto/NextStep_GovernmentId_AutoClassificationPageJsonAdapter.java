@@ -40,7 +40,7 @@ public final class NextStep_GovernmentId_AutoClassificationPageJsonAdapter exten
     @NotNull
     public NextStep.GovernmentId.AutoClassificationPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -51,7 +51,7 @@ public final class NextStep_GovernmentId_AutoClassificationPageJsonAdapter exten
         String str8 = null;
         String str9 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -85,7 +85,7 @@ public final class NextStep_GovernmentId_AutoClassificationPageJsonAdapter exten
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new NextStep.GovernmentId.AutoClassificationPage(str, str2, str3, str4, str5, str6, str7, str8, str9);
     }
 
@@ -93,24 +93,24 @@ public final class NextStep_GovernmentId_AutoClassificationPageJsonAdapter exten
     public void toJson(@NotNull t writer, NextStep.GovernmentId.AutoClassificationPage autoClassificationPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (autoClassificationPage != null) {
-            writer.l();
-            writer.A0("unableToClassifyDocumentTitle");
+            writer.k();
+            writer.W("unableToClassifyDocumentTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getUnableToClassifyDocumentTitle());
-            writer.A0("unableToClassifyDocumentContinueButtonText");
+            writer.W("unableToClassifyDocumentContinueButtonText");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getUnableToClassifyDocumentContinueButtonText());
-            writer.A0("idClassRejectedTitle");
+            writer.W("idClassRejectedTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getIdClassRejectedTitle());
-            writer.A0("idClassRejectedContinueButtonText");
+            writer.W("idClassRejectedContinueButtonText");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getIdClassRejectedContinueButtonText());
-            writer.A0("countryInputTitle");
+            writer.W("countryInputTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getCountryInputTitle());
-            writer.A0("idClassInputTitle");
+            writer.W("idClassInputTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getIdClassInputTitle());
-            writer.A0("manualClassificationTitle");
+            writer.W("manualClassificationTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getManualClassificationTitle());
-            writer.A0("manualClassificationContinueButtonText");
+            writer.W("manualClassificationContinueButtonText");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getManualClassificationContinueButtonText());
-            writer.A0("autoClassificationCaptureTipText");
+            writer.W("autoClassificationCaptureTipText");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getAutoClassificationCaptureTipText());
             writer.E();
             return;

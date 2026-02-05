@@ -100,14 +100,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var3;
     var4 = var7.memo;
     var3 = function(arg0) { // Environment: var1
-        _fun103067: for (var _fun103067_ip = 0;;) switch (_fun103067_ip) {
+        _fun103025: for (var _fun103025_ip = 0;;) switch (_fun103025_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.includeNotificationsCount;
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun103067_ip = 19;
-                    continue _fun103067
+                    _fun103025_ip = 19;
+                    continue _fun103025
                 }
             case 17:
                 var5 = false;
@@ -145,16 +145,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 0;
                 var2 = 0;
                 if (!var7) {
-                    _fun103067_ip = 137;
-                    continue _fun103067
+                    _fun103025_ip = 137;
+                    continue _fun103025
                 }
             case 134:
                 var2 = var1;
             case 137:
                 var1 = 0;
                 if (!var5) {
-                    _fun103067_ip = 145;
-                    continue _fun103067
+                    _fun103025_ip = 145;
+                    continue _fun103025
                 }
             case 142:
                 var1 = var4;
@@ -168,20 +168,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var11;
                 var1 = function() { // Environment: var0
-                    _fun103069: for (var _fun103069_ip = 0;;) switch (_fun103069_ip) {
+                    _fun103027: for (var _fun103027_ip = 0;;) switch (_fun103027_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var0 = 10;
                             if (!(!(var1 < var0))) {
-                                _fun103069_ip = 30;
-                                continue _fun103069
+                                _fun103027_ip = 30;
+                                continue _fun103027
                             }
                         case 14:
                             var1 = _closure1_slot6;
                             var0 = 8;
                             var0 = var1 + var0;
-                            _fun103069_ip = 37;
-                            continue _fun103069;
+                            _fun103027_ip = 37;
+                            continue _fun103027;
                         case 30:
                             var0 = _closure1_slot6;
                         case 37:
@@ -234,17 +234,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var7;
                 var1[1] = var5;
                 var0 = function() { // Environment: var0
-                    _fun103071: for (var _fun103071_ip = 0;;) switch (_fun103071_ip) {
+                    _fun103029: for (var _fun103029_ip = 0;;) switch (_fun103029_ip) {
                         case 0:
                             var0 = _closure2_slot1;
                             if (var0) {
-                                _fun103071_ip = 16;
-                                continue _fun103071
+                                _fun103029_ip = 16;
+                                continue _fun103029
                             }
                         case 10:
                             var0 = new Array(0);
-                            _fun103071_ip = 31;
-                            continue _fun103071;
+                            _fun103029_ip = 31;
+                            continue _fun103029;
                         case 16:
                             var2 = _closure2_slot3;
                             var1 = new Array(1);
@@ -262,8 +262,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var4;
                 var4 = var13.length;
                 if (!(!(var4 > var6))) {
-                    _fun103067_ip = 348;
-                    continue _fun103067
+                    _fun103025_ip = 348;
+                    continue _fun103025
                 }
             case 284:
                 var7 = _closure1_slot7;
@@ -281,8 +281,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var10.backIcon;
                 var4.style = var8;
                 var6 = var7.bind(var3)(var6, var4);
-                _fun103067_ip = 443;
-                continue _fun103067;
+                _fun103025_ip = 443;
+                continue _fun103025;
             case 348:
                 var8 = _closure1_slot7;
                 var7 = _closure1_slot1;
@@ -311,8 +311,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var6;
                 if (!var5) {
-                    _fun103067_ip = 535;
-                    continue _fun103067
+                    _fun103025_ip = 535;
+                    continue _fun103025
                 }
             case 454:
                 var8 = _closure1_slot7;
@@ -343,15 +343,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var3 = var4.bind(var7)(var3);
-    var4 = 12;
+    var4 = 13;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
     var5 = var6.fileFinishedImporting;
     var4 = 'modules/main_tabs_v2/native/shared_components/BackIconWithBadge.tsx';
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
-    var1 = function() {
-        _fun103072: for (var _fun103072_ip = 0;;) switch (_fun103072_ip) {
+    var3 = function() {
+        _fun103030: for (var _fun103030_ip = 0;;) switch (_fun103030_ip) {
             case 0:
                 var0 = _closure1_slot9;
                 var3 = undefined;
@@ -377,8 +377,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = 0;
                 var1 = 0;
                 if (!var2) {
-                    _fun103072_ip = 81;
-                    continue _fun103072
+                    _fun103030_ip = 81;
+                    continue _fun103030
                 }
             case 78:
                 var1 = var0;
@@ -411,8 +411,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var8;
                 var5 = null;
                 if (!(var9 > var7)) {
-                    _fun103072_ip = 230;
-                    continue _fun103072
+                    _fun103030_ip = 230;
+                    continue _fun103030
                 }
             case 194:
                 var8 = _closure1_slot7;
@@ -431,6 +431,88 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var2.BackIconWithBadgeOnSide = var1;
+    var2.BackIconWithBadgeOnSide = var3;
+    var1 = function() {
+        _fun103032: for (var _fun103032_ip = 0;;) switch (_fun103032_ip) {
+            case 0:
+                var0 = _closure1_slot9;
+                var3 = undefined;
+                var4 = var0.bind(var3)();
+                var1 = _closure1_slot0;
+                var2 = _closure1_slot2;
+                var0 = 7;
+                var0 = var2[var0];
+                var5 = var1.bind(var3)(var0);
+                var2 = var5.useStateFromStores;
+                var0 = _closure1_slot5;
+                var1 = new Array(1);
+                var1[0] = var0;
+                var0 = function() { // Environment: var0
+                    var1 = _closure1_slot5;
+                    var0 = var1.getTotalMentionCount;
+                    var0 = var0.bind(var1)();
+                    return var0;
+                };
+                var0 = var2.bind(var5)(var1, var0);
+                var5 = null;
+                var2 = var5 != var0;
+                var7 = 0;
+                var1 = 0;
+                if (!var2) {
+                    _fun103032_ip = 81;
+                    continue _fun103032
+                }
+            case 78:
+                var1 = var0;
+            case 81:
+                var2 = _closure1_slot1;
+                var11 = _closure1_slot2;
+                var0 = 8;
+                var0 = var11[var0];
+                var0 = var2.bind(var3)(var0);
+                var0 = var0.bind(var3)();
+                var0 = var0.value;
+                var9 = var1 + var0;
+                var2 = _closure1_slot8;
+                var1 = _closure1_slot4;
+                var0 = {};
+                var4 = var4.backIconWithBadge;
+                var0.style = var4;
+                var10 = _closure1_slot7;
+                var8 = _closure1_slot0;
+                var4 = 12;
+                var4 = var11[var4];
+                var4 = var8.bind(var3)(var4);
+                var8 = var4.ChevronLargeDownIcon;
+                var4 = {
+                    'size': 'sm',
+                    'color': 'white'
+                };
+                var8 = var10.bind(var3)(var8, var4);
+                var4 = new Array(2);
+                var4[0] = var8;
+                var5 = null;
+                if (!(var9 > var7)) {
+                    _fun103032_ip = 230;
+                    continue _fun103032
+                }
+            case 194:
+                var8 = _closure1_slot7;
+                var7 = _closure1_slot1;
+                var10 = _closure1_slot2;
+                var6 = 11;
+                var6 = var10[var6];
+                var7 = var7.bind(var3)(var6);
+                var6 = {};
+                var6.value = var9;
+                var5 = var8.bind(var3)(var7, var6);
+            case 230:
+                var4[1] = var5;
+                var0.children = var4;
+                var0 = var2.bind(var3)(var1, var0);
+                return var0;
+        }
+    };
+    var2.DownArrowIconWithBadgeOnSide = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8641, 8646, 33, 1297, 671, 566, 13450, 5457, 4706, 8645, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8659, 8664, 33, 1297, 671, 566, 13466, 5461, 4706, 8663, 10018, 2]);

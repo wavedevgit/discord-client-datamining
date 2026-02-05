@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_uploads/handleUploadAttachmentErrors.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun61530: for (var _fun61530_ip = 0;;) switch (_fun61530_ip) {
+        _fun61553: for (var _fun61553_ip = 0;;) switch (_fun61553_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.file;
@@ -42,30 +42,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot3;
                 var0 = var0.ENTITY_TOO_LARGE;
                 if (!(var1 !== var0)) {
-                    _fun61530_ip = 550;
-                    continue _fun61530
+                    _fun61553_ip = 550;
+                    continue _fun61553
                 }
             case 51:
                 var0 = _closure1_slot3;
                 var0 = var0.TOO_MANY_ATTACHMENTS;
                 if (!(var1 !== var0)) {
-                    _fun61530_ip = 397;
-                    continue _fun61530
+                    _fun61553_ip = 397;
+                    continue _fun61553
                 }
             case 68:
                 var0 = _closure1_slot3;
                 var0 = var0.ENTITY_EMPTY;
                 if (!(var1 !== var0)) {
-                    _fun61530_ip = 250;
-                    continue _fun61530
+                    _fun61553_ip = 250;
+                    continue _fun61553
                 }
             case 85:
                 var0 = _closure1_slot3;
                 var0 = var0.INVALID_FILE_ASSET;
                 var0 = var1 === var0;
                 if (!var0) {
-                    _fun61530_ip = 245;
-                    continue _fun61530
+                    _fun61553_ip = 245;
+                    continue _fun61553
                 }
             case 105:
                 var2 = _closure1_slot1;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var0 = true;
             case 245:
-                _fun61530_ip = 392;
-                continue _fun61530;
+                _fun61553_ip = 392;
+                continue _fun61553;
             case 250:
                 var2 = _closure1_slot1;
                 var14 = _closure1_slot2;
@@ -137,8 +137,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var0 = true;
             case 392:
-                _fun61530_ip = 548;
-                continue _fun61530;
+                _fun61553_ip = 548;
+                continue _fun61553;
             case 397:
                 var2 = _closure1_slot1;
                 var14 = _closure1_slot2;
@@ -176,8 +176,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var0 = true;
             case 548:
-                _fun61530_ip = 644;
-                continue _fun61530;
+                _fun61553_ip = 644;
+                continue _fun61553;
             case 550:
                 var2 = _closure1_slot1;
                 var9 = _closure1_slot2;
@@ -199,8 +199,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var4 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun61530_ip = 632;
-                    continue _fun61530
+                    _fun61553_ip = 632;
+                    continue _fun61553
                 }
             case 627:
                 var4 = var5.type;
@@ -214,4 +214,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.handleUploadMessageAttachmentsErrors = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 7612, 4009, 4003, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 7631, 4008, 4002, 1234, 2]);

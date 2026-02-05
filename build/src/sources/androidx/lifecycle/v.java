@@ -6,5 +6,5 @@ import java.util.Map;
 public class v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f4541a = new HashMap();
+    private final Map f4653a = new HashMap();
 }

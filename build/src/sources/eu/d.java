@@ -1,590 +1,193 @@
 package eu;
 
-import androidx.recyclerview.widget.RecyclerView;
-import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import com.withpersona.sdk2.inquiry.network.dto.InquiryField;
+import eu.j;
+import hu.n;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import lu.x;
-import okio.Buffer;
-import okio.BufferedSource;
-import okio.ByteString;
-import okio.Source;
+import okhttp3.HttpUrl;
+import okhttp3.OkHttpClient;
+import zt.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f22711a;
+    private final g f21819a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c[] f22712b;
+    private final okhttp3.a f21820b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f22713c;
+    private final e f21821c;
 
-    static {
-        d dVar = new d();
-        f22711a = dVar;
-        c cVar = new c(c.f22707j, "");
-        ByteString byteString = c.f22704g;
-        c cVar2 = new c(byteString, "GET");
-        c cVar3 = new c(byteString, "POST");
-        ByteString byteString2 = c.f22705h;
-        c cVar4 = new c(byteString2, "/");
-        c cVar5 = new c(byteString2, "/index.html");
-        ByteString byteString3 = c.f22706i;
-        c cVar6 = new c(byteString3, "http");
-        c cVar7 = new c(byteString3, "https");
-        ByteString byteString4 = c.f22703f;
-        f22712b = new c[]{cVar, cVar2, cVar3, cVar4, cVar5, cVar6, cVar7, new c(byteString4, "200"), new c(byteString4, "204"), new c(byteString4, "206"), new c(byteString4, "304"), new c(byteString4, "400"), new c(byteString4, "404"), new c(byteString4, "500"), new c("accept-charset", ""), new c("accept-encoding", "gzip, deflate"), new c("accept-language", ""), new c("accept-ranges", ""), new c("accept", ""), new c("access-control-allow-origin", ""), new c("age", ""), new c("allow", ""), new c("authorization", ""), new c("cache-control", ""), new c("content-disposition", ""), new c("content-encoding", ""), new c("content-language", ""), new c("content-length", ""), new c("content-location", ""), new c("content-range", ""), new c("content-type", ""), new c("cookie", ""), new c(InquiryField.DateField.TYPE, ""), new c("etag", ""), new c("expect", ""), new c("expires", ""), new c("from", ""), new c("host", ""), new c("if-match", ""), new c("if-modified-since", ""), new c("if-none-match", ""), new c("if-range", ""), new c("if-unmodified-since", ""), new c("last-modified", ""), new c("link", ""), new c("location", ""), new c("max-forwards", ""), new c("proxy-authenticate", ""), new c("proxy-authorization", ""), new c("range", ""), new c("referer", ""), new c("refresh", ""), new c("retry-after", ""), new c("server", ""), new c("set-cookie", ""), new c("strict-transport-security", ""), new c("transfer-encoding", ""), new c("user-agent", ""), new c("vary", ""), new c("via", ""), new c("www-authenticate", "")};
-        f22713c = dVar.d();
+    /* renamed from: d  reason: collision with root package name */
+    private final okhttp3.e f21822d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private j.b f21823e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private j f21824f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private int f21825g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private int f21826h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private int f21827i;
+
+    /* renamed from: j  reason: collision with root package name */
+    private k f21828j;
+
+    public d(g connectionPool, okhttp3.a address, e call, okhttp3.e eventListener) {
+        Intrinsics.checkNotNullParameter(connectionPool, "connectionPool");
+        Intrinsics.checkNotNullParameter(address, "address");
+        Intrinsics.checkNotNullParameter(call, "call");
+        Intrinsics.checkNotNullParameter(eventListener, "eventListener");
+        this.f21819a = connectionPool;
+        this.f21820b = address;
+        this.f21821c = call;
+        this.f21822d = eventListener;
     }
 
-    private d() {
+    /* JADX WARN: Removed duplicated region for block: B:56:0x012c  */
+    /* JADX WARN: Removed duplicated region for block: B:58:0x0146  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private final eu.f b(int r13, int r14, int r15, int r16, boolean r17) {
+        /*
+            Method dump skipped, instructions count: 376
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: eu.d.b(int, int, int, int, boolean):eu.f");
     }
 
-    private final Map d() {
-        c[] cVarArr = f22712b;
-        LinkedHashMap linkedHashMap = new LinkedHashMap(cVarArr.length);
-        int length = cVarArr.length;
-        for (int i10 = 0; i10 < length; i10++) {
-            c[] cVarArr2 = f22712b;
-            if (!linkedHashMap.containsKey(cVarArr2[i10].f22708a)) {
-                linkedHashMap.put(cVarArr2[i10].f22708a, Integer.valueOf(i10));
+    private final f c(int i10, int i11, int i12, int i13, boolean z10, boolean z11) {
+        boolean z12;
+        while (true) {
+            f b10 = b(i10, i11, i12, i13, z10);
+            boolean z13 = z10;
+            int i14 = i13;
+            int i15 = i12;
+            int i16 = i11;
+            int i17 = i10;
+            if (b10.u(z11)) {
+                return b10;
             }
-        }
-        Map unmodifiableMap = Collections.unmodifiableMap(linkedHashMap);
-        Intrinsics.checkNotNullExpressionValue(unmodifiableMap, "unmodifiableMap(result)");
-        return unmodifiableMap;
-    }
-
-    public final ByteString a(ByteString name) {
-        Intrinsics.checkNotNullParameter(name, "name");
-        int G = name.G();
-        for (int i10 = 0; i10 < G; i10++) {
-            byte j10 = name.j(i10);
-            if (65 <= j10 && j10 < 91) {
-                throw new IOException("PROTOCOL_ERROR response malformed: mixed case name: " + name.M());
-            }
-        }
-        return name;
-    }
-
-    public final Map b() {
-        return f22713c;
-    }
-
-    public final c[] c() {
-        return f22712b;
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final int f22714a;
-
-        /* renamed from: b  reason: collision with root package name */
-        private int f22715b;
-
-        /* renamed from: c  reason: collision with root package name */
-        private final List f22716c;
-
-        /* renamed from: d  reason: collision with root package name */
-        private final BufferedSource f22717d;
-
-        /* renamed from: e  reason: collision with root package name */
-        public c[] f22718e;
-
-        /* renamed from: f  reason: collision with root package name */
-        private int f22719f;
-
-        /* renamed from: g  reason: collision with root package name */
-        public int f22720g;
-
-        /* renamed from: h  reason: collision with root package name */
-        public int f22721h;
-
-        public a(Source source, int i10, int i11) {
-            Intrinsics.checkNotNullParameter(source, "source");
-            this.f22714a = i10;
-            this.f22715b = i11;
-            this.f22716c = new ArrayList();
-            this.f22717d = x.d(source);
-            c[] cVarArr = new c[8];
-            this.f22718e = cVarArr;
-            this.f22719f = cVarArr.length - 1;
-        }
-
-        private final void a() {
-            int i10 = this.f22715b;
-            int i11 = this.f22721h;
-            if (i10 < i11) {
-                if (i10 == 0) {
-                    b();
+            b10.z();
+            if (this.f21828j == null) {
+                j.b bVar = this.f21823e;
+                boolean z14 = true;
+                if (bVar != null) {
+                    z12 = bVar.b();
                 } else {
-                    d(i11 - i10);
+                    z12 = true;
                 }
-            }
-        }
-
-        private final void b() {
-            kotlin.collections.i.z(this.f22718e, null, 0, 0, 6, null);
-            this.f22719f = this.f22718e.length - 1;
-            this.f22720g = 0;
-            this.f22721h = 0;
-        }
-
-        private final int c(int i10) {
-            return this.f22719f + 1 + i10;
-        }
-
-        private final int d(int i10) {
-            int i11;
-            int i12 = 0;
-            if (i10 > 0) {
-                int length = this.f22718e.length;
-                while (true) {
-                    length--;
-                    i11 = this.f22719f;
-                    if (length < i11 || i10 <= 0) {
-                        break;
+                if (z12) {
+                    continue;
+                } else {
+                    j jVar = this.f21824f;
+                    if (jVar != null) {
+                        z14 = jVar.a();
                     }
-                    c cVar = this.f22718e[length];
-                    Intrinsics.checkNotNull(cVar);
-                    int i13 = cVar.f22710c;
-                    i10 -= i13;
-                    this.f22721h -= i13;
-                    this.f22720g--;
-                    i12++;
-                }
-                c[] cVarArr = this.f22718e;
-                System.arraycopy(cVarArr, i11 + 1, cVarArr, i11 + 1 + i12, this.f22720g);
-                this.f22719f += i12;
-            }
-            return i12;
-        }
-
-        private final ByteString f(int i10) {
-            if (h(i10)) {
-                return d.f22711a.c()[i10].f22708a;
-            }
-            int c10 = c(i10 - d.f22711a.c().length);
-            if (c10 >= 0) {
-                c[] cVarArr = this.f22718e;
-                if (c10 < cVarArr.length) {
-                    c cVar = cVarArr[c10];
-                    Intrinsics.checkNotNull(cVar);
-                    return cVar.f22708a;
+                    if (!z14) {
+                        throw new IOException("exhausted all routes");
+                    }
                 }
             }
-            throw new IOException("Header index too large " + (i10 + 1));
+            i10 = i17;
+            i11 = i16;
+            i12 = i15;
+            i13 = i14;
+            z10 = z13;
         }
+    }
 
-        private final void g(int i10, c cVar) {
-            this.f22716c.add(cVar);
-            int i11 = cVar.f22710c;
-            if (i10 != -1) {
-                c cVar2 = this.f22718e[c(i10)];
-                Intrinsics.checkNotNull(cVar2);
-                i11 -= cVar2.f22710c;
-            }
-            int i12 = this.f22715b;
-            if (i11 > i12) {
-                b();
-                return;
-            }
-            int d10 = d((this.f22721h + i11) - i12);
-            if (i10 == -1) {
-                int i13 = this.f22720g + 1;
-                c[] cVarArr = this.f22718e;
-                if (i13 > cVarArr.length) {
-                    c[] cVarArr2 = new c[cVarArr.length * 2];
-                    System.arraycopy(cVarArr, 0, cVarArr2, cVarArr.length, cVarArr.length);
-                    this.f22719f = this.f22718e.length - 1;
-                    this.f22718e = cVarArr2;
-                }
-                int i14 = this.f22719f;
-                this.f22719f = i14 - 1;
-                this.f22718e[i14] = cVar;
-                this.f22720g++;
-            } else {
-                this.f22718e[i10 + c(i10) + d10] = cVar;
-            }
-            this.f22721h += i11;
+    private final k f() {
+        f l10;
+        if (this.f21825g > 1 || this.f21826h > 1 || this.f21827i > 0 || (l10 = this.f21821c.l()) == null) {
+            return null;
         }
-
-        private final boolean h(int i10) {
-            if (i10 >= 0 && i10 <= d.f22711a.c().length - 1) {
-                return true;
+        synchronized (l10) {
+            if (l10.q() != 0) {
+                return null;
             }
+            if (!au.e.j(l10.A().a().l(), this.f21820b.l())) {
+                return null;
+            }
+            return l10.A();
+        }
+    }
+
+    public final fu.d a(OkHttpClient client, fu.g chain) {
+        Intrinsics.checkNotNullParameter(client, "client");
+        Intrinsics.checkNotNullParameter(chain, "chain");
+        try {
+            try {
+                return c(chain.e(), chain.g(), chain.j(), client.F(), client.M(), !Intrinsics.areEqual(chain.i().j(), "GET")).w(client, chain);
+            } catch (i e10) {
+                e = e10;
+                i iVar = e;
+                h(iVar.c());
+                throw iVar;
+            } catch (IOException e11) {
+                e = e11;
+                IOException iOException = e;
+                h(iOException);
+                throw new i(iOException);
+            }
+        } catch (i e12) {
+            e = e12;
+        } catch (IOException e13) {
+            e = e13;
+        }
+    }
+
+    public final okhttp3.a d() {
+        return this.f21820b;
+    }
+
+    public final boolean e() {
+        j jVar;
+        if (this.f21825g == 0 && this.f21826h == 0 && this.f21827i == 0) {
             return false;
         }
-
-        private final int i() {
-            return xt.e.d(this.f22717d.readByte(), SetSpanOperation.SPAN_MAX_PRIORITY);
+        if (this.f21828j != null) {
+            return true;
         }
-
-        private final void l(int i10) {
-            if (h(i10)) {
-                this.f22716c.add(d.f22711a.c()[i10]);
-                return;
-            }
-            int c10 = c(i10 - d.f22711a.c().length);
-            if (c10 >= 0) {
-                c[] cVarArr = this.f22718e;
-                if (c10 < cVarArr.length) {
-                    c cVar = cVarArr[c10];
-                    Intrinsics.checkNotNull(cVar);
-                    this.f22716c.add(cVar);
-                    return;
-                }
-            }
-            throw new IOException("Header index too large " + (i10 + 1));
+        k f10 = f();
+        if (f10 != null) {
+            this.f21828j = f10;
+            return true;
         }
-
-        private final void n(int i10) {
-            g(-1, new c(f(i10), j()));
+        j.b bVar = this.f21823e;
+        if ((bVar != null && bVar.b()) || (jVar = this.f21824f) == null) {
+            return true;
         }
-
-        private final void o() {
-            g(-1, new c(d.f22711a.a(j()), j()));
-        }
-
-        private final void p(int i10) {
-            this.f22716c.add(new c(f(i10), j()));
-        }
-
-        private final void q() {
-            this.f22716c.add(new c(d.f22711a.a(j()), j()));
-        }
-
-        public final List e() {
-            List h12 = CollectionsKt.h1(this.f22716c);
-            this.f22716c.clear();
-            return h12;
-        }
-
-        public final ByteString j() {
-            boolean z10;
-            int i10 = i();
-            if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            long m10 = m(i10, 127);
-            if (z10) {
-                Buffer buffer = new Buffer();
-                k.f22856a.b(this.f22717d, m10, buffer);
-                return buffer.L1();
-            }
-            return this.f22717d.g1(m10);
-        }
-
-        public final void k() {
-            while (!this.f22717d.o1()) {
-                int d10 = xt.e.d(this.f22717d.readByte(), SetSpanOperation.SPAN_MAX_PRIORITY);
-                if (d10 != 128) {
-                    if ((d10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
-                        l(m(d10, 127) - 1);
-                    } else if (d10 == 64) {
-                        o();
-                    } else if ((d10 & 64) == 64) {
-                        n(m(d10, 63) - 1);
-                    } else if ((d10 & 32) == 32) {
-                        int m10 = m(d10, 31);
-                        this.f22715b = m10;
-                        if (m10 >= 0 && m10 <= this.f22714a) {
-                            a();
-                        } else {
-                            throw new IOException("Invalid dynamic table size update " + this.f22715b);
-                        }
-                    } else if (d10 != 16 && d10 != 0) {
-                        p(m(d10, 15) - 1);
-                    } else {
-                        q();
-                    }
-                } else {
-                    throw new IOException("index == 0");
-                }
-            }
-        }
-
-        public final int m(int i10, int i11) {
-            int i12 = i10 & i11;
-            if (i12 < i11) {
-                return i12;
-            }
-            int i13 = 0;
-            while (true) {
-                int i14 = i();
-                if ((i14 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                    i11 += (i14 & 127) << i13;
-                    i13 += 7;
-                } else {
-                    return i11 + (i14 << i13);
-                }
-            }
-        }
-
-        public /* synthetic */ a(Source source, int i10, int i11, int i12, DefaultConstructorMarker defaultConstructorMarker) {
-            this(source, i10, (i12 & 4) != 0 ? i10 : i11);
-        }
+        return jVar.a();
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b {
-
-        /* renamed from: a  reason: collision with root package name */
-        public int f22722a;
-
-        /* renamed from: b  reason: collision with root package name */
-        private final boolean f22723b;
-
-        /* renamed from: c  reason: collision with root package name */
-        private final Buffer f22724c;
-
-        /* renamed from: d  reason: collision with root package name */
-        private int f22725d;
-
-        /* renamed from: e  reason: collision with root package name */
-        private boolean f22726e;
-
-        /* renamed from: f  reason: collision with root package name */
-        public int f22727f;
-
-        /* renamed from: g  reason: collision with root package name */
-        public c[] f22728g;
-
-        /* renamed from: h  reason: collision with root package name */
-        private int f22729h;
-
-        /* renamed from: i  reason: collision with root package name */
-        public int f22730i;
-
-        /* renamed from: j  reason: collision with root package name */
-        public int f22731j;
-
-        public b(int i10, boolean z10, Buffer out) {
-            Intrinsics.checkNotNullParameter(out, "out");
-            this.f22722a = i10;
-            this.f22723b = z10;
-            this.f22724c = out;
-            this.f22725d = Integer.MAX_VALUE;
-            this.f22727f = i10;
-            c[] cVarArr = new c[8];
-            this.f22728g = cVarArr;
-            this.f22729h = cVarArr.length - 1;
+    public final boolean g(HttpUrl url) {
+        Intrinsics.checkNotNullParameter(url, "url");
+        HttpUrl l10 = this.f21820b.l();
+        if (url.o() == l10.o() && Intrinsics.areEqual(url.i(), l10.i())) {
+            return true;
         }
+        return false;
+    }
 
-        private final void a() {
-            int i10 = this.f22727f;
-            int i11 = this.f22731j;
-            if (i10 < i11) {
-                if (i10 == 0) {
-                    b();
-                } else {
-                    c(i11 - i10);
-                }
-            }
-        }
-
-        private final void b() {
-            kotlin.collections.i.z(this.f22728g, null, 0, 0, 6, null);
-            this.f22729h = this.f22728g.length - 1;
-            this.f22730i = 0;
-            this.f22731j = 0;
-        }
-
-        private final int c(int i10) {
-            int i11;
-            int i12 = 0;
-            if (i10 > 0) {
-                int length = this.f22728g.length;
-                while (true) {
-                    length--;
-                    i11 = this.f22729h;
-                    if (length < i11 || i10 <= 0) {
-                        break;
-                    }
-                    c cVar = this.f22728g[length];
-                    Intrinsics.checkNotNull(cVar);
-                    i10 -= cVar.f22710c;
-                    int i13 = this.f22731j;
-                    c cVar2 = this.f22728g[length];
-                    Intrinsics.checkNotNull(cVar2);
-                    this.f22731j = i13 - cVar2.f22710c;
-                    this.f22730i--;
-                    i12++;
-                }
-                c[] cVarArr = this.f22728g;
-                System.arraycopy(cVarArr, i11 + 1, cVarArr, i11 + 1 + i12, this.f22730i);
-                c[] cVarArr2 = this.f22728g;
-                int i14 = this.f22729h;
-                Arrays.fill(cVarArr2, i14 + 1, i14 + 1 + i12, (Object) null);
-                this.f22729h += i12;
-            }
-            return i12;
-        }
-
-        private final void d(c cVar) {
-            int i10 = cVar.f22710c;
-            int i11 = this.f22727f;
-            if (i10 > i11) {
-                b();
-                return;
-            }
-            c((this.f22731j + i10) - i11);
-            int i12 = this.f22730i + 1;
-            c[] cVarArr = this.f22728g;
-            if (i12 > cVarArr.length) {
-                c[] cVarArr2 = new c[cVarArr.length * 2];
-                System.arraycopy(cVarArr, 0, cVarArr2, cVarArr.length, cVarArr.length);
-                this.f22729h = this.f22728g.length - 1;
-                this.f22728g = cVarArr2;
-            }
-            int i13 = this.f22729h;
-            this.f22729h = i13 - 1;
-            this.f22728g[i13] = cVar;
-            this.f22730i++;
-            this.f22731j += i10;
-        }
-
-        public final void e(int i10) {
-            this.f22722a = i10;
-            int min = Math.min(i10, 16384);
-            int i11 = this.f22727f;
-            if (i11 == min) {
-                return;
-            }
-            if (min < i11) {
-                this.f22725d = Math.min(this.f22725d, min);
-            }
-            this.f22726e = true;
-            this.f22727f = min;
-            a();
-        }
-
-        public final void f(ByteString data) {
-            Intrinsics.checkNotNullParameter(data, "data");
-            if (this.f22723b) {
-                k kVar = k.f22856a;
-                if (kVar.d(data) < data.G()) {
-                    Buffer buffer = new Buffer();
-                    kVar.c(data, buffer);
-                    ByteString L1 = buffer.L1();
-                    h(L1.G(), 127, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-                    this.f22724c.a2(L1);
-                    return;
-                }
-            }
-            h(data.G(), 127, 0);
-            this.f22724c.a2(data);
-        }
-
-        public final void g(List headerBlock) {
-            int i10;
-            int i11;
-            Intrinsics.checkNotNullParameter(headerBlock, "headerBlock");
-            if (this.f22726e) {
-                int i12 = this.f22725d;
-                if (i12 < this.f22727f) {
-                    h(i12, 31, 32);
-                }
-                this.f22726e = false;
-                this.f22725d = Integer.MAX_VALUE;
-                h(this.f22727f, 31, 32);
-            }
-            int size = headerBlock.size();
-            for (int i13 = 0; i13 < size; i13++) {
-                c cVar = (c) headerBlock.get(i13);
-                ByteString K = cVar.f22708a.K();
-                ByteString byteString = cVar.f22709b;
-                d dVar = d.f22711a;
-                Integer num = (Integer) dVar.b().get(K);
-                if (num != null) {
-                    int intValue = num.intValue();
-                    i11 = intValue + 1;
-                    if (2 <= i11 && i11 < 8) {
-                        if (Intrinsics.areEqual(dVar.c()[intValue].f22709b, byteString)) {
-                            i10 = i11;
-                        } else if (Intrinsics.areEqual(dVar.c()[i11].f22709b, byteString)) {
-                            i10 = i11;
-                            i11 = intValue + 2;
-                        }
-                    }
-                    i10 = i11;
-                    i11 = -1;
-                } else {
-                    i10 = -1;
-                    i11 = -1;
-                }
-                if (i11 == -1) {
-                    int i14 = this.f22729h + 1;
-                    int length = this.f22728g.length;
-                    while (true) {
-                        if (i14 >= length) {
-                            break;
-                        }
-                        c cVar2 = this.f22728g[i14];
-                        Intrinsics.checkNotNull(cVar2);
-                        if (Intrinsics.areEqual(cVar2.f22708a, K)) {
-                            c cVar3 = this.f22728g[i14];
-                            Intrinsics.checkNotNull(cVar3);
-                            if (Intrinsics.areEqual(cVar3.f22709b, byteString)) {
-                                i11 = d.f22711a.c().length + (i14 - this.f22729h);
-                                break;
-                            } else if (i10 == -1) {
-                                i10 = (i14 - this.f22729h) + d.f22711a.c().length;
-                            }
-                        }
-                        i14++;
-                    }
-                }
-                if (i11 != -1) {
-                    h(i11, 127, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-                } else if (i10 == -1) {
-                    this.f22724c.writeByte(64);
-                    f(K);
-                    f(byteString);
-                    d(cVar);
-                } else if (K.H(c.f22702e) && !Intrinsics.areEqual(c.f22707j, K)) {
-                    h(i10, 15, 0);
-                    f(byteString);
-                } else {
-                    h(i10, 63, 64);
-                    f(byteString);
-                    d(cVar);
-                }
-            }
-        }
-
-        public final void h(int i10, int i11, int i12) {
-            if (i10 < i11) {
-                this.f22724c.writeByte(i10 | i12);
-                return;
-            }
-            this.f22724c.writeByte(i12 | i11);
-            int i13 = i10 - i11;
-            while (i13 >= 128) {
-                this.f22724c.writeByte(128 | (i13 & 127));
-                i13 >>>= 7;
-            }
-            this.f22724c.writeByte(i13);
-        }
-
-        public /* synthetic */ b(int i10, boolean z10, Buffer buffer, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-            this((i11 & 1) != 0 ? RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT : i10, (i11 & 2) != 0 ? true : z10, buffer);
+    public final void h(IOException e10) {
+        Intrinsics.checkNotNullParameter(e10, "e");
+        this.f21828j = null;
+        if ((e10 instanceof n) && ((n) e10).f27181d == hu.b.REFUSED_STREAM) {
+            this.f21825g++;
+        } else if (e10 instanceof hu.a) {
+            this.f21826h++;
+        } else {
+            this.f21827i++;
         }
     }
 }

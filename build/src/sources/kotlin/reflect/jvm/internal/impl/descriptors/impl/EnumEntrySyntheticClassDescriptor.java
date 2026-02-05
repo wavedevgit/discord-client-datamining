@@ -42,42 +42,42 @@ import org.jetbrains.annotations.NotNull;
 public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
 
     /* renamed from: s  reason: collision with root package name */
-    private final TypeConstructor f32895s;
+    private final TypeConstructor f32419s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final MemberScope f32896t;
+    private final MemberScope f32420t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final NotNullLazyValue f32897u;
+    private final NotNullLazyValue f32421u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Annotations f32898v;
+    private final Annotations f32422v;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public class a extends MemberScopeImpl {
 
         /* renamed from: a  reason: collision with root package name */
-        private final MemoizedFunctionToNotNull f32899a;
+        private final MemoizedFunctionToNotNull f32423a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final MemoizedFunctionToNotNull f32900b;
+        private final MemoizedFunctionToNotNull f32424b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final NotNullLazyValue f32901c;
+        private final NotNullLazyValue f32425c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ EnumEntrySyntheticClassDescriptor f32902d;
+        final /* synthetic */ EnumEntrySyntheticClassDescriptor f32426d;
 
         /* renamed from: kotlin.reflect.jvm.internal.impl.descriptors.impl.EnumEntrySyntheticClassDescriptor$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        class C0440a implements Function1 {
+        class C0442a implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ EnumEntrySyntheticClassDescriptor f32903d;
+            final /* synthetic */ EnumEntrySyntheticClassDescriptor f32427d;
 
-            C0440a(EnumEntrySyntheticClassDescriptor enumEntrySyntheticClassDescriptor) {
-                this.f32903d = enumEntrySyntheticClassDescriptor;
+            C0442a(EnumEntrySyntheticClassDescriptor enumEntrySyntheticClassDescriptor) {
+                this.f32427d = enumEntrySyntheticClassDescriptor;
             }
 
             @Override // kotlin.jvm.functions.Function1
@@ -91,10 +91,10 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
         class b implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ EnumEntrySyntheticClassDescriptor f32905d;
+            final /* synthetic */ EnumEntrySyntheticClassDescriptor f32429d;
 
             b(EnumEntrySyntheticClassDescriptor enumEntrySyntheticClassDescriptor) {
-                this.f32905d = enumEntrySyntheticClassDescriptor;
+                this.f32429d = enumEntrySyntheticClassDescriptor;
             }
 
             @Override // kotlin.jvm.functions.Function1
@@ -108,10 +108,10 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
         class c implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ EnumEntrySyntheticClassDescriptor f32907d;
+            final /* synthetic */ EnumEntrySyntheticClassDescriptor f32431d;
 
             c(EnumEntrySyntheticClassDescriptor enumEntrySyntheticClassDescriptor) {
-                this.f32907d = enumEntrySyntheticClassDescriptor;
+                this.f32431d = enumEntrySyntheticClassDescriptor;
             }
 
             @Override // kotlin.jvm.functions.Function0
@@ -126,10 +126,10 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
         public class d extends NonReportingOverrideStrategy {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ Set f32909a;
+            final /* synthetic */ Set f32433a;
 
             d(Set set) {
-                this.f32909a = set;
+                this.f32433a = set;
             }
 
             private static /* synthetic */ void b(int i10) {
@@ -166,7 +166,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
                     b(0);
                 }
                 OverridingUtil.resolveUnknownVisibilityForMember(callableMemberDescriptor, null);
-                this.f32909a.add(callableMemberDescriptor);
+                this.f32433a.add(callableMemberDescriptor);
             }
         }
 
@@ -174,10 +174,10 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
             if (storageManager == null) {
                 a(0);
             }
-            this.f32902d = enumEntrySyntheticClassDescriptor;
-            this.f32899a = storageManager.createMemoizedFunction(new C0440a(enumEntrySyntheticClassDescriptor));
-            this.f32900b = storageManager.createMemoizedFunction(new b(enumEntrySyntheticClassDescriptor));
-            this.f32901c = storageManager.createLazyValue(new c(enumEntrySyntheticClassDescriptor));
+            this.f32426d = enumEntrySyntheticClassDescriptor;
+            this.f32423a = storageManager.createMemoizedFunction(new C0442a(enumEntrySyntheticClassDescriptor));
+            this.f32424b = storageManager.createMemoizedFunction(new b(enumEntrySyntheticClassDescriptor));
+            this.f32425c = storageManager.createLazyValue(new c(enumEntrySyntheticClassDescriptor));
         }
 
         /* JADX WARN: Removed duplicated region for block: B:16:0x0022  */
@@ -216,7 +216,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
         /* JADX INFO: Access modifiers changed from: private */
         public Collection e() {
             HashSet hashSet = new HashSet();
-            for (Name name : (Set) this.f32902d.f32897u.invoke()) {
+            for (Name name : (Set) this.f32426d.f32421u.invoke()) {
                 NoLookupLocation noLookupLocation = NoLookupLocation.FOR_NON_TRACKED_SCOPE;
                 hashSet.addAll(getContributedFunctions(name, noLookupLocation));
                 hashSet.addAll(getContributedVariables(name, noLookupLocation));
@@ -241,7 +241,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
         }
 
         private MemberScope h() {
-            MemberScope memberScope = this.f32902d.getTypeConstructor().getSupertypes().iterator().next().getMemberScope();
+            MemberScope memberScope = this.f32426d.getTypeConstructor().getSupertypes().iterator().next().getMemberScope();
             if (memberScope == null) {
                 a(9);
             }
@@ -256,7 +256,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
                 a(11);
             }
             LinkedHashSet linkedHashSet = new LinkedHashSet();
-            OverridingUtil.DEFAULT.generateOverridesInFunctionGroup(name, collection, Collections.EMPTY_SET, this.f32902d, new d(linkedHashSet));
+            OverridingUtil.DEFAULT.generateOverridesInFunctionGroup(name, collection, Collections.EMPTY_SET, this.f32426d, new d(linkedHashSet));
             return linkedHashSet;
         }
 
@@ -277,7 +277,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
             if (function1 == null) {
                 a(14);
             }
-            Collection collection = (Collection) this.f32901c.invoke();
+            Collection collection = (Collection) this.f32425c.invoke();
             if (collection == null) {
                 a(15);
             }
@@ -292,7 +292,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
             if (lookupLocation == null) {
                 a(6);
             }
-            Collection collection = (Collection) this.f32899a.invoke(name);
+            Collection collection = (Collection) this.f32423a.invoke(name);
             if (collection == null) {
                 a(7);
             }
@@ -307,7 +307,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
             if (lookupLocation == null) {
                 a(2);
             }
-            Collection collection = (Collection) this.f32900b.invoke(name);
+            Collection collection = (Collection) this.f32424b.invoke(name);
             if (collection == null) {
                 a(3);
             }
@@ -316,7 +316,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
 
         @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
         public Set getFunctionNames() {
-            Set set = (Set) this.f32902d.f32897u.invoke();
+            Set set = (Set) this.f32426d.f32421u.invoke();
             if (set == null) {
                 a(17);
             }
@@ -325,7 +325,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
 
         @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
         public Set getVariableNames() {
-            Set set = (Set) this.f32902d.f32897u.invoke();
+            Set set = (Set) this.f32426d.f32421u.invoke();
             if (set == null) {
                 a(19);
             }
@@ -357,10 +357,10 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
         if (sourceElement == null) {
             a(12);
         }
-        this.f32898v = annotations;
-        this.f32895s = new ClassTypeConstructorImpl(this, Collections.EMPTY_LIST, Collections.singleton(kotlinType), storageManager);
-        this.f32896t = new a(this, storageManager);
-        this.f32897u = notNullLazyValue;
+        this.f32422v = annotations;
+        this.f32419s = new ClassTypeConstructorImpl(this, Collections.EMPTY_LIST, Collections.singleton(kotlinType), storageManager);
+        this.f32420t = new a(this, storageManager);
+        this.f32421u = notNullLazyValue;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -554,7 +554,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotated
     @NotNull
     public Annotations getAnnotations() {
-        Annotations annotations = this.f32898v;
+        Annotations annotations = this.f32422v;
         if (annotations == null) {
             a(21);
         }
@@ -563,7 +563,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     /* renamed from: getCompanionObjectDescriptor */
-    public ClassDescriptor mo1191getCompanionObjectDescriptor() {
+    public ClassDescriptor mo1193getCompanionObjectDescriptor() {
         return null;
     }
 
@@ -630,7 +630,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
     @NotNull
     public TypeConstructor getTypeConstructor() {
-        TypeConstructor typeConstructor = this.f32895s;
+        TypeConstructor typeConstructor = this.f32419s;
         if (typeConstructor == null) {
             a(17);
         }
@@ -643,7 +643,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
         if (kotlinTypeRefiner == null) {
             a(13);
         }
-        MemberScope memberScope = this.f32896t;
+        MemberScope memberScope = this.f32420t;
         if (memberScope == null) {
             a(14);
         }
@@ -652,7 +652,7 @@ public class EnumEntrySyntheticClassDescriptor extends ClassDescriptorBase {
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     /* renamed from: getUnsubstitutedPrimaryConstructor */
-    public ClassConstructorDescriptor mo1192getUnsubstitutedPrimaryConstructor() {
+    public ClassConstructorDescriptor mo1194getUnsubstitutedPrimaryConstructor() {
         return null;
     }
 

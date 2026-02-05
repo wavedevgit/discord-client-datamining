@@ -30,28 +30,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot5 = var3;
     var1 = function() {
-        _fun34889: for (var _fun34889_ip = 0;;) switch (_fun34889_ip) {
+        _fun34899: for (var _fun34899_ip = 0;;) switch (_fun34899_ip) {
             case 0:
                 var4 = undefined;
                 var0 = undefined;
                 var2 = arguments.length;
                 var13 = 0;
                 if (!(var2 > var13)) {
-                    _fun34889_ip = 23;
-                    continue _fun34889
+                    _fun34899_ip = 23;
+                    continue _fun34899
                 }
             case 15:
                 var2 = arguments[var13];
                 if (!(var4 === var2)) {
-                    _fun34889_ip = 37;
-                    continue _fun34889
+                    _fun34899_ip = 37;
+                    continue _fun34899
                 }
             case 23:
                 var10 = {};
                 var10.isStatusBarTranslucentAndroid = var4;
                 var10.isNavigationBarTranslucentAndroid = var4;
-                _fun34889_ip = 41;
-                continue _fun34889;
+                _fun34899_ip = 41;
+                continue _fun34899;
             case 37:
                 var10 = arguments[var13];
             case 41:
@@ -68,8 +68,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot3 = var5;
                 var3 = var0.current;
                 if (!(var6 === var3)) {
-                    _fun34889_ip = 277;
-                    continue _fun34889
+                    _fun34899_ip = 277;
+                    continue _fun34899
                 }
             case 101:
                 var3 = {};
@@ -122,22 +122,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 277:
                 var3 = _closure1_slot2;
                 var2 = function() { // Environment: var1
-                    _fun34891: for (var _fun34891_ip = 0;;) switch (_fun34891_ip) {
+                    _fun34901: for (var _fun34901_ip = 0;;) switch (_fun34901_ip) {
                         case 0:
                             var2 = _closure2_slot3;
                             var3 = var2.current;
                             var2 = false;
                             if (!(var2 === var3)) {
-                                _fun34891_ip = 163;
-                                continue _fun34891
+                                _fun34901_ip = 163;
+                                continue _fun34901
                             }
                         case 23:
                             var2 = _closure2_slot1;
                             var3 = var2.current;
                             var2 = null;
                             if (!(var2 !== var3)) {
-                                _fun34891_ip = 163;
-                                continue _fun34891
+                                _fun34901_ip = 163;
+                                continue _fun34901
                             }
                         case 41:
                             var2 = _closure2_slot1;

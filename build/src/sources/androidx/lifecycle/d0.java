@@ -7,28 +7,28 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d0 implements m, AutoCloseable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f4488d;
+    private final String f4600d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b0 f4489e;
+    private final b0 f4601e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f4490i;
+    private boolean f4602i;
 
     public d0(String key, b0 handle) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(handle, "handle");
-        this.f4488d = key;
-        this.f4489e = handle;
+        this.f4600d = key;
+        this.f4601e = handle;
     }
 
     public final void a(SavedStateRegistry registry, Lifecycle lifecycle) {
         Intrinsics.checkNotNullParameter(registry, "registry");
         Intrinsics.checkNotNullParameter(lifecycle, "lifecycle");
-        if (!this.f4490i) {
-            this.f4490i = true;
+        if (!this.f4602i) {
+            this.f4602i = true;
             lifecycle.a(this);
-            registry.c(this.f4488d, this.f4489e.g());
+            registry.c(this.f4600d, this.f4601e.g());
             return;
         }
         throw new IllegalStateException("Already attached to lifecycleOwner");
@@ -43,16 +43,16 @@ public final class d0 implements m, AutoCloseable {
         Intrinsics.checkNotNullParameter(source, "source");
         Intrinsics.checkNotNullParameter(event, "event");
         if (event == Lifecycle.a.ON_DESTROY) {
-            this.f4490i = false;
+            this.f4602i = false;
             source.getLifecycle().d(this);
         }
     }
 
-    public final b0 l() {
-        return this.f4489e;
+    public final b0 k() {
+        return this.f4601e;
     }
 
-    public final boolean x() {
-        return this.f4490i;
+    public final boolean m() {
+        return this.f4602i;
     }
 }

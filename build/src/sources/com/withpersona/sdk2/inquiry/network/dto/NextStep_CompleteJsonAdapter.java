@@ -41,30 +41,30 @@ public final class NextStep_CompleteJsonAdapter extends h {
     @NotNull
     public NextStep.Complete fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0 && (str = (String) this.stringAdapter.fromJson(reader)) == null) {
-                throw vm.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+            } else if (W == 0 && (str = (String) this.stringAdapter.fromJson(reader)) == null) {
+                throw ym.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
             }
         }
-        reader.y();
+        reader.z();
         if (str != null) {
             return new NextStep.Complete(str);
         }
-        throw vm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw ym.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.Complete complete) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complete != null) {
-            writer.l();
-            writer.A0(StackTraceHelper.NAME_KEY);
+            writer.k();
+            writer.W(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(writer, complete.getName());
             writer.E();
             return;

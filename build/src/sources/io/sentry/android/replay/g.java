@@ -7,7 +7,7 @@ public interface g extends Closeable {
 
     void i();
 
-    void m(s sVar);
+    void n(s sVar);
 
     void reset();
 

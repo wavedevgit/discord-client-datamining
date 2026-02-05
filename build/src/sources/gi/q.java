@@ -1,18 +1,13 @@
 package gi;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class q extends o {
+public final class q implements hi.i {
 
-    /* renamed from: i  reason: collision with root package name */
-    private final s f26254i;
+    /* renamed from: a  reason: collision with root package name */
+    final /* synthetic */ a f24949a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public q(s sVar, int i10) {
-        super(sVar.size(), i10);
-        this.f26254i = sVar;
-    }
-
-    @Override // gi.o
-    protected final Object a(int i10) {
-        return this.f26254i.get(i10);
+    public q(a aVar) {
+        this.f24949a = aVar;
     }
 }

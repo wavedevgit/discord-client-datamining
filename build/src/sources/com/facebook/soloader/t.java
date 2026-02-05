@@ -12,34 +12,34 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public abstract class t {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int f11080a = 3;
+    private static final int f11465a = 3;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int f11081b = 3;
+    private static final int f11466b = 3;
 
     /* renamed from: d  reason: collision with root package name */
-    private static volatile boolean f11083d = false;
+    private static volatile boolean f11468d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private static byte[] f11084e = null;
+    private static byte[] f11469e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private static List f11085f = null;
+    private static List f11470f = null;
 
     /* renamed from: g  reason: collision with root package name */
-    private static Map f11086g = null;
+    private static Map f11471g = null;
 
     /* renamed from: h  reason: collision with root package name */
-    private static volatile boolean f11087h = false;
+    private static volatile boolean f11472h = false;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int f11082c = 3 + 3;
+    private static final int f11467c = 3 + 3;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final ReentrantReadWriteLock f11088i = new ReentrantReadWriteLock();
+    private static final ReentrantReadWriteLock f11473i = new ReentrantReadWriteLock();
 
     /* renamed from: j  reason: collision with root package name */
-    private static final HashSet f11089j = new a();
+    private static final HashSet f11474j = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends HashSet {
@@ -60,26 +60,26 @@ public abstract class t {
     }
 
     private static String[] a(String str) {
-        if (f11083d) {
+        if (f11468d) {
             return i(str);
         }
-        if (!f11087h) {
+        if (!f11472h) {
             return null;
         }
-        ReentrantReadWriteLock reentrantReadWriteLock = f11088i;
+        ReentrantReadWriteLock reentrantReadWriteLock = f11473i;
         reentrantReadWriteLock.readLock().lock();
         try {
             String[] i10 = i(str);
             reentrantReadWriteLock.readLock().unlock();
             return i10;
         } catch (Throwable th2) {
-            f11088i.readLock().unlock();
+            f11473i.readLock().unlock();
             throw th2;
         }
     }
 
     public static String[] b(String str, h hVar) {
-        boolean z10 = SoLoader.f11014a;
+        boolean z10 = SoLoader.f11399a;
         if (z10) {
             Api18TraceUtils.a("soloader.NativeDeps.getDependencies[", str, "]");
         }
@@ -109,7 +109,7 @@ public abstract class t {
             }
         } catch (Throwable th2) {
             ob.b.a(null);
-            if (SoLoader.f11014a) {
+            if (SoLoader.f11399a) {
                 Api18TraceUtils.b();
             }
             throw th2;
@@ -128,13 +128,13 @@ public abstract class t {
             java.util.ArrayList r0 = new java.util.ArrayList
             r0.<init>()
             int r6 = r6 + r7
-            int r7 = com.facebook.soloader.t.f11082c
+            int r7 = com.facebook.soloader.t.f11467c
             int r6 = r6 - r7
             r7 = 0
             r1 = r7
             r2 = r1
         Lc:
-            byte[] r3 = com.facebook.soloader.t.f11084e
+            byte[] r3 = com.facebook.soloader.t.f11469e
             int r4 = r3.length
             r5 = 0
             if (r6 >= r4) goto L3e
@@ -190,25 +190,25 @@ public abstract class t {
     }
 
     private static String d(int i10) {
-        if (i10 >= f11085f.size()) {
+        if (i10 >= f11470f.size()) {
             return null;
         }
-        int intValue = ((Integer) f11085f.get(i10)).intValue();
+        int intValue = ((Integer) f11470f.get(i10)).intValue();
         int i11 = intValue;
         while (true) {
-            byte[] bArr = f11084e;
+            byte[] bArr = f11469e;
             if (i11 >= bArr.length || bArr[i11] <= 32) {
                 break;
             }
             i11++;
         }
-        int i12 = (i11 - intValue) + f11082c;
+        int i12 = (i11 - intValue) + f11467c;
         char[] cArr = new char[i12];
         cArr[0] = 'l';
         cArr[1] = 'i';
         cArr[2] = 'b';
-        for (int i13 = 0; i13 < i12 - f11082c; i13++) {
-            cArr[f11080a + i13] = (char) f11084e[intValue + i13];
+        for (int i13 = 0; i13 < i12 - f11467c; i13++) {
+            cArr[f11465a + i13] = (char) f11469e[intValue + i13];
         }
         cArr[i12 - 3] = '.';
         cArr[i12 - 2] = 's';
@@ -217,7 +217,7 @@ public abstract class t {
     }
 
     private static int e(String str) {
-        List<Integer> list = (List) f11086g.get(Integer.valueOf(f(str)));
+        List<Integer> list = (List) f11471g.get(Integer.valueOf(f(str)));
         if (list == null) {
             return -1;
         }
@@ -232,7 +232,7 @@ public abstract class t {
 
     private static int f(String str) {
         int i10 = 5381;
-        for (int i11 = f11080a; i11 < str.length() - f11081b; i11++) {
+        for (int i11 = f11465a; i11 < str.length() - f11466b; i11++) {
             i10 = str.codePointAt(i11) + (i10 << 5) + i10;
         }
         return i10;
@@ -240,11 +240,11 @@ public abstract class t {
 
     private static boolean g(String str, int i10) {
         int i11;
-        int i12 = f11080a;
+        int i12 = f11465a;
         while (true) {
             int length = str.length();
-            i11 = f11081b;
-            if (i12 >= length - i11 || i10 >= f11084e.length || (str.codePointAt(i12) & SetSpanOperation.SPAN_MAX_PRIORITY) != f11084e[i10]) {
+            i11 = f11466b;
+            if (i12 >= length - i11 || i10 >= f11469e.length || (str.codePointAt(i12) & SetSpanOperation.SPAN_MAX_PRIORITY) != f11469e[i10]) {
                 break;
             }
             i12++;
@@ -260,7 +260,7 @@ public abstract class t {
         String[] b10 = b(str, hVar);
         p.a("SoLoader", "Loading " + str + "'s dependencies: " + Arrays.toString(b10));
         for (String str2 : b10) {
-            if (!str2.startsWith("/") && !f11089j.contains(str2)) {
+            if (!str2.startsWith("/") && !f11474j.contains(str2)) {
                 SoLoader.s(str2, i10, threadPolicy);
             }
         }
@@ -268,7 +268,7 @@ public abstract class t {
 
     static String[] i(String str) {
         int e10;
-        if (!f11083d || str.length() <= f11082c || (e10 = e(str)) == -1) {
+        if (!f11468d || str.length() <= f11467c || (e10 = e(str)) == -1) {
             return null;
         }
         return c(e10, str.length());

@@ -9,49 +9,49 @@ public abstract class a {
 
     /* renamed from: com.withpersona.sdk2.inquiry.internal.network.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0236a extends a {
+    public static final class C0254a extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f18858a;
+        private final String f19264a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final InternalErrorInfo f18859b;
+        private final InternalErrorInfo f19265b;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public C0236a(String str, InternalErrorInfo cause) {
+        public C0254a(String str, InternalErrorInfo cause) {
             super(null);
             Intrinsics.checkNotNullParameter(cause, "cause");
-            this.f18858a = str;
-            this.f18859b = cause;
+            this.f19264a = str;
+            this.f19265b = cause;
         }
 
         public final InternalErrorInfo a() {
-            return this.f18859b;
+            return this.f19265b;
         }
 
         public final String b() {
-            return this.f18858a;
+            return this.f19264a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if (obj instanceof C0236a) {
-                C0236a c0236a = (C0236a) obj;
-                return Intrinsics.areEqual(this.f18858a, c0236a.f18858a) && Intrinsics.areEqual(this.f18859b, c0236a.f18859b);
+            if (obj instanceof C0254a) {
+                C0254a c0254a = (C0254a) obj;
+                return Intrinsics.areEqual(this.f19264a, c0254a.f19264a) && Intrinsics.areEqual(this.f19265b, c0254a.f19265b);
             }
             return false;
         }
 
         public int hashCode() {
-            String str = this.f18858a;
-            return ((str == null ? 0 : str.hashCode()) * 31) + this.f18859b.hashCode();
+            String str = this.f19264a;
+            return ((str == null ? 0 : str.hashCode()) * 31) + this.f19265b.hashCode();
         }
 
         public String toString() {
-            String str = this.f18858a;
-            InternalErrorInfo internalErrorInfo = this.f18859b;
+            String str = this.f19264a;
+            InternalErrorInfo internalErrorInfo = this.f19265b;
             return "Error(debugMessage=" + str + ", cause=" + internalErrorInfo + ")";
         }
     }
@@ -60,24 +60,24 @@ public abstract class a {
     public static final class b extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f18860a;
+        private final String f19266a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final NextStep f18861b;
+        private final NextStep f19267b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f18862c;
+        private final String f19268c;
 
         public /* synthetic */ b(String str, NextStep nextStep, String str2, int i10, DefaultConstructorMarker defaultConstructorMarker) {
             this(str, nextStep, (i10 & 4) != 0 ? null : str2);
         }
 
         public final String a() {
-            return this.f18862c;
+            return this.f19268c;
         }
 
         public final String b() {
-            return this.f18860a;
+            return this.f19266a;
         }
 
         public boolean equals(Object obj) {
@@ -86,21 +86,21 @@ public abstract class a {
             }
             if (obj instanceof b) {
                 b bVar = (b) obj;
-                return Intrinsics.areEqual(this.f18860a, bVar.f18860a) && Intrinsics.areEqual(this.f18861b, bVar.f18861b) && Intrinsics.areEqual(this.f18862c, bVar.f18862c);
+                return Intrinsics.areEqual(this.f19266a, bVar.f19266a) && Intrinsics.areEqual(this.f19267b, bVar.f19267b) && Intrinsics.areEqual(this.f19268c, bVar.f19268c);
             }
             return false;
         }
 
         public int hashCode() {
-            int hashCode = ((this.f18860a.hashCode() * 31) + this.f18861b.hashCode()) * 31;
-            String str = this.f18862c;
+            int hashCode = ((this.f19266a.hashCode() * 31) + this.f19267b.hashCode()) * 31;
+            String str = this.f19268c;
             return hashCode + (str == null ? 0 : str.hashCode());
         }
 
         public String toString() {
-            String str = this.f18860a;
-            NextStep nextStep = this.f18861b;
-            String str2 = this.f18862c;
+            String str = this.f19266a;
+            NextStep nextStep = this.f19267b;
+            String str2 = this.f19268c;
             return "Success(inquiryId=" + str + ", nextStep=" + nextStep + ", fallbackSessionToken=" + str2 + ")";
         }
 
@@ -109,9 +109,9 @@ public abstract class a {
             super(null);
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
             Intrinsics.checkNotNullParameter(nextStep, "nextStep");
-            this.f18860a = inquiryId;
-            this.f18861b = nextStep;
-            this.f18862c = str;
+            this.f19266a = inquiryId;
+            this.f19267b = nextStep;
+            this.f19268c = str;
         }
     }
 

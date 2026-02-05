@@ -7,7 +7,7 @@ public interface b0 {
 
     SentryEvent h(SentryEvent sentryEvent, Hint hint);
 
-    default io.sentry.protocol.d0 l(io.sentry.protocol.d0 d0Var, Hint hint) {
+    default io.sentry.protocol.d0 k(io.sentry.protocol.d0 d0Var, Hint hint) {
         return d0Var;
     }
 }

@@ -1,14 +1,20 @@
 package hg;
 
-import java.util.Objects;
+import android.os.Handler;
+import android.os.Looper;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class p {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static final CharSequence a(Object obj, String str) {
-        Objects.requireNonNull(obj);
-        if (obj instanceof CharSequence) {
-            return (CharSequence) obj;
-        }
-        return obj.toString();
+public class p extends Handler {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Looper f25853a;
+
+    public p(Looper looper) {
+        super(looper);
+        this.f25853a = Looper.getMainLooper();
+    }
+
+    public p(Looper looper, Handler.Callback callback) {
+        super(looper, callback);
+        this.f25853a = Looper.getMainLooper();
     }
 }

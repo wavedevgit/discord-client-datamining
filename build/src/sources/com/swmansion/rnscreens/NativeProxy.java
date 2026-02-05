@@ -14,10 +14,10 @@ import org.jetbrains.annotations.NotNull;
 public final class NativeProxy {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f17755a = new a(null);
+    public static final a f18161a = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ConcurrentHashMap f17756b = new ConcurrentHashMap();
+    private static final ConcurrentHashMap f18162b = new ConcurrentHashMap();
     @fb.a
     @NotNull
     private final HybridData mHybridData = initHybrid();
@@ -30,15 +30,15 @@ public final class NativeProxy {
 
         public final void a(int i10, Screen view) {
             Intrinsics.checkNotNullParameter(view, "view");
-            NativeProxy.f17756b.put(Integer.valueOf(i10), new WeakReference(view));
+            NativeProxy.f18162b.put(Integer.valueOf(i10), new WeakReference(view));
         }
 
         public final void b() {
-            NativeProxy.f17756b.clear();
+            NativeProxy.f18162b.clear();
         }
 
         public final void c(int i10) {
-            NativeProxy.f17756b.remove(Integer.valueOf(i10));
+            NativeProxy.f18162b.remove(Integer.valueOf(i10));
         }
 
         private a() {
@@ -56,7 +56,7 @@ public final class NativeProxy {
 
     @fb.a
     public final void notifyScreenRemoved(int i10) {
-        WeakReference weakReference = (WeakReference) f17756b.get(Integer.valueOf(i10));
+        WeakReference weakReference = (WeakReference) f18162b.get(Integer.valueOf(i10));
         if (weakReference != null) {
             final Screen screen = (Screen) weakReference.get();
             if (screen != null) {

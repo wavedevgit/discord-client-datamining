@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_progress/native/components/GuildProgressItem.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun90843: for (var _fun90843_ip = 0;;) switch (_fun90843_ip) {
+        _fun90867: for (var _fun90867_ip = 0;;) switch (_fun90867_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.guild;
@@ -58,12 +58,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var9.bind(var3)(var0);
                 var0 = {};
                 var8 = function() {
-                    _fun90844: for (var _fun90844_ip = 0;;) switch (_fun90844_ip) {
+                    _fun90868: for (var _fun90868_ip = 0;;) switch (_fun90868_ip) {
                         case 0:
                             var0 = _closure2_slot2;
                             if (var0) {
-                                _fun90844_ip = 55;
-                                continue _fun90844
+                                _fun90868_ip = 55;
+                                continue _fun90868
                             }
                         case 10:
                             var3 = _closure1_slot1;
@@ -110,15 +110,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7 > var4;
                 var4 = undefined;
                 if (!var8) {
-                    _fun90843_ip = 210;
-                    continue _fun90843
+                    _fun90867_ip = 210;
+                    continue _fun90867
                 }
             case 194:
                 var6 = var7 < var6;
                 var4 = undefined;
                 if (!var6) {
-                    _fun90843_ip = 210;
-                    continue _fun90843
+                    _fun90867_ip = 210;
+                    continue _fun90867
                 }
             case 203:
                 var4 = function() { // Environment: var5
@@ -151,4 +151,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 10251, 10256, 10255, 11797, 1234, 10260, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 10269, 10274, 10273, 11815, 1234, 10278, 2]);

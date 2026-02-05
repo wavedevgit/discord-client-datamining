@@ -6,49 +6,49 @@ import androidx.annotation.NonNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class s extends hf.a {
     @NonNull
-    public static final Parcelable.Creator<s> CREATOR = new y0();
+    public static final Parcelable.Creator<s> CREATOR = new v0();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f26197d;
+    private final int f24887d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f26198e;
+    private final boolean f24888e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f26199i;
+    private final boolean f24889i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f26200o;
+    private final int f24890o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f26201p;
+    private final int f24891p;
 
     public s(int i10, boolean z10, boolean z11, int i11, int i12) {
-        this.f26197d = i10;
-        this.f26198e = z10;
-        this.f26199i = z11;
-        this.f26200o = i11;
-        this.f26201p = i12;
+        this.f24887d = i10;
+        this.f24888e = z10;
+        this.f24889i = z11;
+        this.f24890o = i11;
+        this.f24891p = i12;
     }
 
     public int b() {
-        return this.f26200o;
+        return this.f24890o;
     }
 
     public int c() {
-        return this.f26201p;
+        return this.f24891p;
     }
 
     public boolean d() {
-        return this.f26198e;
+        return this.f24888e;
     }
 
     public boolean e() {
-        return this.f26199i;
+        return this.f24889i;
     }
 
     public int f() {
-        return this.f26197d;
+        return this.f24887d;
     }
 
     @Override // android.os.Parcelable

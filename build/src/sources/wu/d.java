@@ -1,39 +1,23 @@
 package wu;
 
-import java.util.Collection;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.collections.CollectionsKt;
+import zu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface d {
+public final class d implements qu.b, zu.d {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static boolean a(d dVar, Object obj) {
-            if (obj == null) {
-                return false;
-            }
-            if (obj instanceof Boolean) {
-                return ((Boolean) obj).booleanValue();
-            }
-            if (obj instanceof Number) {
-                if (((Number) obj).doubleValue() == 0.0d) {
-                    return false;
-                }
-                return true;
-            } else if (obj instanceof String) {
-                if (((CharSequence) obj).length() <= 0 || Intrinsics.areEqual(obj, "[]") || Intrinsics.areEqual(obj, "null")) {
-                    return false;
-                }
-                return true;
-            } else if (obj instanceof Collection) {
-                if (((Collection) obj).isEmpty()) {
-                    return false;
-                }
-                return true;
-            } else if ((obj instanceof Object[]) && ((Object[]) obj).length == 0) {
-                return false;
-            } else {
-                return true;
-            }
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static final d f53317a = new d();
+
+    private d() {
+    }
+
+    @Override // qu.b
+    /* renamed from: a */
+    public Boolean f(Object obj, Object obj2) {
+        return Boolean.valueOf(!b(CollectionsKt.firstOrNull(vv.a.c(obj))));
+    }
+
+    public boolean b(Object obj) {
+        return d.a.a(this, obj);
     }
 }

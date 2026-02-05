@@ -12,7 +12,7 @@ import java.util.Objects;
 final class w implements j0.y {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h0.d f55474a;
+    private final h0.d f55063a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -31,7 +31,7 @@ final class w implements j0.y {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public w(d2 d2Var) {
-        this.f55474a = new h0.d(d2Var);
+        this.f55063a = new h0.d(d2Var);
     }
 
     private static b0.f b(byte[] bArr) {
@@ -44,7 +44,7 @@ final class w implements j0.y {
 
     private j0.z c(a aVar, int i10) {
         j0.z b10 = aVar.b();
-        byte[] a10 = this.f55474a.a((androidx.camera.core.n) b10.c());
+        byte[] a10 = this.f55063a.a((androidx.camera.core.n) b10.c());
         b0.f d10 = b10.d();
         Objects.requireNonNull(d10);
         return j0.z.m(a10, d10, i10, b10.h(), b10.b(), b10.f(), b10.g(), b10.a());

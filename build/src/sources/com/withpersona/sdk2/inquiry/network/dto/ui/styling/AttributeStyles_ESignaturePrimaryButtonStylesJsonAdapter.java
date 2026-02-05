@@ -40,18 +40,18 @@ public final class AttributeStyles_ESignaturePrimaryButtonStylesJsonAdapter exte
     @NotNull
     public AttributeStyles.ESignaturePrimaryButtonStyles fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         AttributeStyles.ESignaturePrimaryButtonStylesContainer eSignaturePrimaryButtonStylesContainer = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 eSignaturePrimaryButtonStylesContainer = (AttributeStyles.ESignaturePrimaryButtonStylesContainer) this.nullableESignaturePrimaryButtonStylesContainerAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.ESignaturePrimaryButtonStyles(eSignaturePrimaryButtonStylesContainer);
     }
 
@@ -59,8 +59,8 @@ public final class AttributeStyles_ESignaturePrimaryButtonStylesJsonAdapter exte
     public void toJson(@NotNull t writer, AttributeStyles.ESignaturePrimaryButtonStyles eSignaturePrimaryButtonStyles) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignaturePrimaryButtonStyles != null) {
-            writer.l();
-            writer.A0("saveSignatureButton");
+            writer.k();
+            writer.W("saveSignatureButton");
             this.nullableESignaturePrimaryButtonStylesContainerAdapter.toJson(writer, eSignaturePrimaryButtonStyles.getSaveSignatureButton());
             writer.E();
             return;

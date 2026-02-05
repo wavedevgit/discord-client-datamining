@@ -1,46 +1,19 @@
 package nr;
 
-import java.util.Arrays;
-/* JADX INFO: Access modifiers changed from: package-private */
+import android.text.Spanned;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class c extends b {
-    public static boolean a(short[] sArr, short[] sArr2) {
-        if (sArr == null) {
-            sArr = null;
+public abstract class c {
+    public static boolean a(int i10, CharSequence charSequence, Object obj) {
+        if ((charSequence instanceof Spanned) && ((Spanned) charSequence).getSpanEnd(obj) == i10) {
+            return true;
         }
-        if (sArr2 == null) {
-            sArr2 = null;
-        }
-        return Arrays.equals(sArr, sArr2);
+        return false;
     }
 
-    public static boolean b(int[] iArr, int[] iArr2) {
-        if (iArr == null) {
-            iArr = null;
+    public static boolean b(int i10, CharSequence charSequence, Object obj) {
+        if ((charSequence instanceof Spanned) && ((Spanned) charSequence).getSpanStart(obj) == i10) {
+            return true;
         }
-        if (iArr2 == null) {
-            iArr2 = null;
-        }
-        return Arrays.equals(iArr, iArr2);
-    }
-
-    public static boolean c(byte[] bArr, byte[] bArr2) {
-        if (bArr == null) {
-            bArr = null;
-        }
-        if (bArr2 == null) {
-            bArr2 = null;
-        }
-        return Arrays.equals(bArr, bArr2);
-    }
-
-    public static boolean d(long[] jArr, long[] jArr2) {
-        if (jArr == null) {
-            jArr = null;
-        }
-        if (jArr2 == null) {
-            jArr2 = null;
-        }
-        return Arrays.equals(jArr, jArr2);
+        return false;
     }
 }

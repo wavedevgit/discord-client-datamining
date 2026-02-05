@@ -30,31 +30,31 @@ public final class ErrorResponse_Error_UnknownErrorJsonAdapter extends h {
     @Override // com.squareup.moshi.h
     @NotNull
     public ErrorResponse.Error.UnknownError fromJson(@NotNull m mVar) {
-        mVar.r();
+        mVar.s();
         String str = null;
         String str2 = null;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
+            int W = mVar.W(this.options);
+            if (W == -1) {
                 mVar.E0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(mVar);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(mVar);
             }
         }
-        mVar.y();
+        mVar.z();
         return new ErrorResponse.Error.UnknownError(str, str2);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, ErrorResponse.Error.UnknownError unknownError) {
         if (unknownError != null) {
-            tVar.l();
-            tVar.A0("title");
+            tVar.k();
+            tVar.W("title");
             this.nullableStringAdapter.toJson(tVar, unknownError.getTitle());
-            tVar.A0("originalCode");
+            tVar.W("originalCode");
             this.nullableStringAdapter.toJson(tVar, unknownError.getOriginalCode());
             tVar.E();
             return;

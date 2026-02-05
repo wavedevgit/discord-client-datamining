@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = '__esModule';
     var1 = var6.bind(var8)(var2, var1, var4);
     var1 = {};
-    var6 = 'RNSVGLine';
+    var6 = 'RNSVGForeignObject';
     var1.uiViewClassName = var6;
     var4 = {};
     var8 = {};
@@ -50,10 +50,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'vectorEffect': true,
         'propList': true,
         'filter': true,
-        'x1': true,
-        'y1': true,
-        'x2': true,
-        'y2': true
+        'fontSize': true,
+        'fontWeight': true,
+        'font': true,
+        'x': true,
+        'y': true,
+        'height': true,
+        'width': true
     };
     var4 = {};
     var0 = 0;

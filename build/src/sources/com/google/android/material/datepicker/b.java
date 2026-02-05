@@ -13,34 +13,34 @@ import androidx.core.view.h0;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Rect f14491a;
+    private final Rect f14885a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ColorStateList f14492b;
+    private final ColorStateList f14886b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ColorStateList f14493c;
+    private final ColorStateList f14887c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ColorStateList f14494d;
+    private final ColorStateList f14888d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f14495e;
+    private final int f14889e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final oh.k f14496f;
+    private final ph.k f14890f;
 
-    private b(ColorStateList colorStateList, ColorStateList colorStateList2, ColorStateList colorStateList3, int i10, oh.k kVar, Rect rect) {
+    private b(ColorStateList colorStateList, ColorStateList colorStateList2, ColorStateList colorStateList3, int i10, ph.k kVar, Rect rect) {
         b2.e.d(rect.left);
         b2.e.d(rect.top);
         b2.e.d(rect.right);
         b2.e.d(rect.bottom);
-        this.f14491a = rect;
-        this.f14492b = colorStateList2;
-        this.f14493c = colorStateList;
-        this.f14494d = colorStateList3;
-        this.f14495e = i10;
-        this.f14496f = kVar;
+        this.f14885a = rect;
+        this.f14886b = colorStateList2;
+        this.f14887c = colorStateList;
+        this.f14888d = colorStateList3;
+        this.f14889e = i10;
+        this.f14890f = kVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -52,13 +52,13 @@ final class b {
             z10 = false;
         }
         b2.e.b(z10, "Cannot create a CalendarItemStyle with a styleResId of 0");
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i10, yg.k.f54502y3);
-        Rect rect = new Rect(obtainStyledAttributes.getDimensionPixelOffset(yg.k.f54511z3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.B3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.A3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.C3, 0));
-        ColorStateList a10 = lh.c.a(context, obtainStyledAttributes, yg.k.D3);
-        ColorStateList a11 = lh.c.a(context, obtainStyledAttributes, yg.k.I3);
-        ColorStateList a12 = lh.c.a(context, obtainStyledAttributes, yg.k.G3);
-        int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(yg.k.H3, 0);
-        oh.k m10 = oh.k.b(context, obtainStyledAttributes.getResourceId(yg.k.E3, 0), obtainStyledAttributes.getResourceId(yg.k.F3, 0)).m();
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i10, zg.k.f55960y3);
+        Rect rect = new Rect(obtainStyledAttributes.getDimensionPixelOffset(zg.k.f55969z3, 0), obtainStyledAttributes.getDimensionPixelOffset(zg.k.B3, 0), obtainStyledAttributes.getDimensionPixelOffset(zg.k.A3, 0), obtainStyledAttributes.getDimensionPixelOffset(zg.k.C3, 0));
+        ColorStateList a10 = mh.c.a(context, obtainStyledAttributes, zg.k.D3);
+        ColorStateList a11 = mh.c.a(context, obtainStyledAttributes, zg.k.I3);
+        ColorStateList a12 = mh.c.a(context, obtainStyledAttributes, zg.k.G3);
+        int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(zg.k.H3, 0);
+        ph.k m10 = ph.k.b(context, obtainStyledAttributes.getResourceId(zg.k.E3, 0), obtainStyledAttributes.getResourceId(zg.k.F3, 0)).m();
         obtainStyledAttributes.recycle();
         return new b(a10, a11, a12, dimensionPixelSize, m10, rect);
     }
@@ -69,21 +69,21 @@ final class b {
     }
 
     void c(TextView textView, ColorStateList colorStateList, ColorStateList colorStateList2) {
-        oh.g gVar = new oh.g();
-        oh.g gVar2 = new oh.g();
-        gVar.setShapeAppearanceModel(this.f14496f);
-        gVar2.setShapeAppearanceModel(this.f14496f);
+        ph.g gVar = new ph.g();
+        ph.g gVar2 = new ph.g();
+        gVar.setShapeAppearanceModel(this.f14890f);
+        gVar2.setShapeAppearanceModel(this.f14890f);
         if (colorStateList == null) {
-            colorStateList = this.f14493c;
+            colorStateList = this.f14887c;
         }
         gVar.X(colorStateList);
-        gVar.e0(this.f14495e, this.f14494d);
+        gVar.e0(this.f14889e, this.f14888d);
         if (colorStateList2 == null) {
-            colorStateList2 = this.f14492b;
+            colorStateList2 = this.f14886b;
         }
         textView.setTextColor(colorStateList2);
-        RippleDrawable rippleDrawable = new RippleDrawable(this.f14492b.withAlpha(30), gVar, gVar2);
-        Rect rect = this.f14491a;
+        RippleDrawable rippleDrawable = new RippleDrawable(this.f14886b.withAlpha(30), gVar, gVar2);
+        Rect rect = this.f14885a;
         h0.r0(textView, new InsetDrawable((Drawable) rippleDrawable, rect.left, rect.top, rect.right, rect.bottom));
     }
 }

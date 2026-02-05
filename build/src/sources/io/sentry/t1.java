@@ -17,18 +17,18 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 public final class t1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public final v1 f30659a;
+    public final v1 f29717a;
 
     public t1(int i10) {
-        this.f30659a = new v1(i10);
+        this.f29717a = new v1(i10);
     }
 
     private void b(f3 f3Var, ILogger iLogger, Collection collection) {
-        f3Var.u();
+        f3Var.v();
         for (Object obj : collection) {
             a(f3Var, iLogger, obj);
         }
-        f3Var.s();
+        f3Var.t();
     }
 
     private void c(f3 f3Var, ILogger iLogger, Date date) {
@@ -41,14 +41,14 @@ public final class t1 {
     }
 
     private void d(f3 f3Var, ILogger iLogger, Map map) {
-        f3Var.r();
+        f3Var.s();
         for (Object obj : map.keySet()) {
             if (obj instanceof String) {
                 f3Var.e((String) obj);
                 a(f3Var, iLogger, map.get(obj));
             }
         }
-        f3Var.y();
+        f3Var.z();
     }
 
     private void e(f3 f3Var, ILogger iLogger, TimeZone timeZone) {
@@ -103,7 +103,7 @@ public final class t1 {
             f3Var.f(obj.toString());
         } else {
             try {
-                a(f3Var, iLogger, this.f30659a.d(obj, iLogger));
+                a(f3Var, iLogger, this.f29717a.d(obj, iLogger));
             } catch (Exception e10) {
                 iLogger.b(SentryLevel.ERROR, "Failed serializing unknown object.", e10);
                 f3Var.f("[OBJECT]");

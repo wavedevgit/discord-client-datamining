@@ -16,13 +16,13 @@ import java.util.Map;
 public final class d implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private q f30264d;
+    private q f29322d;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f30265e;
+    private List f29323e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f30266i;
+    private Map f29324i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -30,23 +30,23 @@ public final class d implements w1 {
         /* renamed from: b */
         public d a(e3 e3Var, ILogger iLogger) {
             d dVar = new d();
-            e3Var.r();
+            e3Var.s();
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
-                if (l02.equals("images")) {
-                    dVar.f30265e = e3Var.g2(iLogger, new DebugImage.a());
-                } else if (l02.equals("sdk_info")) {
-                    dVar.f30264d = (q) e3Var.G0(iLogger, new q.a());
+                String m02 = e3Var.m0();
+                m02.getClass();
+                if (m02.equals("images")) {
+                    dVar.f29323e = e3Var.g2(iLogger, new DebugImage.a());
+                } else if (m02.equals("sdk_info")) {
+                    dVar.f29322d = (q) e3Var.G0(iLogger, new q.a());
                 } else {
                     if (hashMap == null) {
                         hashMap = new HashMap();
                     }
-                    e3Var.v1(iLogger, hashMap, l02);
+                    e3Var.v1(iLogger, hashMap, m02);
                 }
             }
-            e3Var.y();
+            e3Var.z();
             dVar.f(hashMap);
             return dVar;
         }
@@ -81,7 +81,7 @@ public final class d implements w1 {
     }
 
     public List d() {
-        return this.f30265e;
+        return this.f29323e;
     }
 
     public void e(List list) {
@@ -91,28 +91,28 @@ public final class d implements w1 {
         } else {
             arrayList = null;
         }
-        this.f30265e = arrayList;
+        this.f29323e = arrayList;
     }
 
     public void f(Map map) {
-        this.f30266i = map;
+        this.f29324i = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.r();
-        if (this.f30264d != null) {
-            f3Var.e("sdk_info").j(iLogger, this.f30264d);
+        f3Var.s();
+        if (this.f29322d != null) {
+            f3Var.e("sdk_info").j(iLogger, this.f29322d);
         }
-        if (this.f30265e != null) {
-            f3Var.e("images").j(iLogger, this.f30265e);
+        if (this.f29323e != null) {
+            f3Var.e("images").j(iLogger, this.f29323e);
         }
-        Map map = this.f30266i;
+        Map map = this.f29324i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30266i.get(str));
+                f3Var.e(str).j(iLogger, this.f29324i.get(str));
             }
         }
-        f3Var.y();
+        f3Var.z();
     }
 }

@@ -8,13 +8,13 @@ import java.util.Locale;
 abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    protected String f16741a;
+    protected String f17135a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected int f16742b;
+    protected int f17136b;
 
     /* renamed from: c  reason: collision with root package name */
-    protected int f16743c;
+    protected int f17137c;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public String a(String str, String str2) {

@@ -5,24 +5,24 @@ import android.content.Context;
 public class f implements i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f45060a;
+    private final Context f44990a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f45061b;
+    private final a f44991b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f45062c;
+    private final int f44992c;
 
     public f(Context context, int i10) {
-        this.f45060a = context;
-        this.f45062c = i10;
+        this.f44990a = context;
+        this.f44992c = i10;
         a aVar = new a(5);
-        this.f45061b = aVar;
+        this.f44991b = aVar;
         aVar.a(context.getApplicationInfo().sourceDir);
     }
 
     @Override // pb.i
     public h get() {
-        return new e(new g(this.f45060a, this.f45061b), new b(this.f45060a, this.f45061b), new l(), new c(this.f45060a), new j(this.f45062c), new d(), new k(), new l());
+        return new e(new g(this.f44990a, this.f44991b), new b(this.f44990a, this.f44991b), new l(), new c(this.f44990a), new j(this.f44992c), new d(), new k(), new l());
     }
 }

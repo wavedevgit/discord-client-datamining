@@ -41,24 +41,24 @@ public final class AttributeStyles_InputSelectTextLetterSpacingStyleJsonAdapter 
     @NotNull
     public AttributeStyles.InputSelectTextLetterSpacingStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.Measurement measurement = null;
         StyleElements.Measurement measurement2 = null;
         StyleElements.Measurement measurement3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 measurement2 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 measurement3 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.InputSelectTextLetterSpacingStyle(measurement, measurement2, measurement3);
     }
 
@@ -66,12 +66,12 @@ public final class AttributeStyles_InputSelectTextLetterSpacingStyleJsonAdapter 
     public void toJson(@NotNull t writer, AttributeStyles.InputSelectTextLetterSpacingStyle inputSelectTextLetterSpacingStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputSelectTextLetterSpacingStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableMeasurementAdapter.toJson(writer, inputSelectTextLetterSpacingStyle.getBase());
-            writer.A0("label");
+            writer.W("label");
             this.nullableMeasurementAdapter.toJson(writer, inputSelectTextLetterSpacingStyle.getLabel());
-            writer.A0("error");
+            writer.W("error");
             this.nullableMeasurementAdapter.toJson(writer, inputSelectTextLetterSpacingStyle.getError());
             writer.E();
             return;

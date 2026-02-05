@@ -12,33 +12,33 @@ import kotlin.reflect.KClass;
 public final class j0 extends ViewModelProvider.d implements ViewModelProvider.Factory {
 
     /* renamed from: b  reason: collision with root package name */
-    private Application f4506b;
+    private Application f4618b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ViewModelProvider.Factory f4507c;
+    private final ViewModelProvider.Factory f4619c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Bundle f4508d;
+    private Bundle f4620d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Lifecycle f4509e;
+    private Lifecycle f4621e;
 
     /* renamed from: f  reason: collision with root package name */
-    private SavedStateRegistry f4510f;
+    private SavedStateRegistry f4622f;
 
     public j0(Application application, u3.f owner, Bundle bundle) {
         ViewModelProvider.a aVar;
         Intrinsics.checkNotNullParameter(owner, "owner");
-        this.f4510f = owner.getSavedStateRegistry();
-        this.f4509e = owner.getLifecycle();
-        this.f4508d = bundle;
-        this.f4506b = application;
+        this.f4622f = owner.getSavedStateRegistry();
+        this.f4621e = owner.getLifecycle();
+        this.f4620d = bundle;
+        this.f4618b = application;
         if (application != null) {
-            aVar = ViewModelProvider.a.f4462f.a(application);
+            aVar = ViewModelProvider.a.f4574f.a(application);
         } else {
             aVar = new ViewModelProvider.a();
         }
-        this.f4507c = aVar;
+        this.f4619c = aVar;
     }
 
     @Override // androidx.lifecycle.ViewModelProvider.Factory
@@ -46,10 +46,10 @@ public final class j0 extends ViewModelProvider.d implements ViewModelProvider.F
         Constructor c10;
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
         Intrinsics.checkNotNullParameter(extras, "extras");
-        String str = (String) extras.a(ViewModelProvider.f4458c);
+        String str = (String) extras.a(ViewModelProvider.f4570c);
         if (str != null) {
-            if (extras.a(e0.f4494a) != null && extras.a(e0.f4495b) != null) {
-                Application application = (Application) extras.a(ViewModelProvider.a.f4464h);
+            if (extras.a(e0.f4606a) != null && extras.a(e0.f4607b) != null) {
+                Application application = (Application) extras.a(ViewModelProvider.a.f4576h);
                 boolean isAssignableFrom = a.class.isAssignableFrom(modelClass);
                 if (isAssignableFrom && application != null) {
                     c10 = k0.c(modelClass, k0.a());
@@ -57,13 +57,13 @@ public final class j0 extends ViewModelProvider.d implements ViewModelProvider.F
                     c10 = k0.c(modelClass, k0.b());
                 }
                 if (c10 == null) {
-                    return this.f4507c.a(modelClass, extras);
+                    return this.f4619c.a(modelClass, extras);
                 }
                 if (isAssignableFrom && application != null) {
                     return k0.d(modelClass, c10, application, e0.a(extras));
                 }
                 return k0.d(modelClass, c10, e0.a(extras));
-            } else if (this.f4509e != null) {
+            } else if (this.f4621e != null) {
                 return e(str, modelClass);
             } else {
                 throw new IllegalStateException("SAVED_STATE_REGISTRY_OWNER_KEY andVIEW_MODEL_STORE_OWNER_KEY must be provided in the creation extras tosuccessfully create a ViewModel.");
@@ -76,7 +76,7 @@ public final class j0 extends ViewModelProvider.d implements ViewModelProvider.F
     public n0 b(KClass modelClass, CreationExtras extras) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
         Intrinsics.checkNotNullParameter(extras, "extras");
-        return a(yr.a.b(modelClass), extras);
+        return a(bs.a.b(modelClass), extras);
     }
 
     @Override // androidx.lifecycle.ViewModelProvider.Factory
@@ -92,10 +92,10 @@ public final class j0 extends ViewModelProvider.d implements ViewModelProvider.F
     @Override // androidx.lifecycle.ViewModelProvider.d
     public void d(n0 viewModel) {
         Intrinsics.checkNotNullParameter(viewModel, "viewModel");
-        if (this.f4509e != null) {
-            SavedStateRegistry savedStateRegistry = this.f4510f;
+        if (this.f4621e != null) {
+            SavedStateRegistry savedStateRegistry = this.f4622f;
             Intrinsics.checkNotNull(savedStateRegistry);
-            Lifecycle lifecycle = this.f4509e;
+            Lifecycle lifecycle = this.f4621e;
             Intrinsics.checkNotNull(lifecycle);
             i.a(viewModel, savedStateRegistry, lifecycle);
         }
@@ -107,28 +107,28 @@ public final class j0 extends ViewModelProvider.d implements ViewModelProvider.F
         Application application;
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        Lifecycle lifecycle = this.f4509e;
+        Lifecycle lifecycle = this.f4621e;
         if (lifecycle != null) {
             boolean isAssignableFrom = a.class.isAssignableFrom(modelClass);
-            if (isAssignableFrom && this.f4506b != null) {
+            if (isAssignableFrom && this.f4618b != null) {
                 c10 = k0.c(modelClass, k0.a());
             } else {
                 c10 = k0.c(modelClass, k0.b());
             }
             if (c10 == null) {
-                if (this.f4506b != null) {
-                    return this.f4507c.c(modelClass);
+                if (this.f4618b != null) {
+                    return this.f4619c.c(modelClass);
                 }
-                return ViewModelProvider.c.f4466b.a().c(modelClass);
+                return ViewModelProvider.c.f4578b.a().c(modelClass);
             }
-            SavedStateRegistry savedStateRegistry = this.f4510f;
+            SavedStateRegistry savedStateRegistry = this.f4622f;
             Intrinsics.checkNotNull(savedStateRegistry);
-            d0 b10 = i.b(savedStateRegistry, lifecycle, key, this.f4508d);
-            if (isAssignableFrom && (application = this.f4506b) != null) {
+            d0 b10 = i.b(savedStateRegistry, lifecycle, key, this.f4620d);
+            if (isAssignableFrom && (application = this.f4618b) != null) {
                 Intrinsics.checkNotNull(application);
-                d10 = k0.d(modelClass, c10, application, b10.l());
+                d10 = k0.d(modelClass, c10, application, b10.k());
             } else {
-                d10 = k0.d(modelClass, c10, b10.l());
+                d10 = k0.d(modelClass, c10, b10.k());
             }
             d10.a("androidx.lifecycle.savedstate.vm.tag", b10);
             return d10;

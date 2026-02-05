@@ -13,7 +13,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
 import org.jetbrains.annotations.NotNull;
-import rr.b;
+import ur.b;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0012\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @e(c = "app.rive.RiveFile$Companion$fromSource$fileBytes$1", f = "RiveFile.kt", l = {}, m = "invokeSuspend")
@@ -44,8 +44,8 @@ public final class RiveFile$Companion$fromSource$fileBytes$1 extends k implement
             InputStream openRawResource = ((RiveFileSource.RawRes) this.$source).getResources().openRawResource(((RiveFileSource.RawRes) this.$source).getResId());
             try {
                 Intrinsics.checkNotNull(openRawResource);
-                byte[] c10 = wr.b.c(openRawResource);
-                wr.c.a(openRawResource, null);
+                byte[] c10 = zr.b.c(openRawResource);
+                zr.c.a(openRawResource, null);
                 return c10;
             } finally {
             }
@@ -56,6 +56,6 @@ public final class RiveFile$Companion$fromSource$fileBytes$1 extends k implement
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super byte[]> continuation) {
-        return ((RiveFile$Companion$fromSource$fileBytes$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((RiveFile$Companion$fromSource$fileBytes$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

@@ -46,15 +46,15 @@ public final class AFb1hSDK implements AFb1bSDK {
         Context context = this.getRevenue.getRevenue;
         if (context != null) {
             try {
-                Intrinsics.checkNotNullExpressionValue(te.a.a(context).h().g(new wg.g() { // from class: com.appsflyer.internal.j
-                    @Override // wg.g
+                Intrinsics.checkNotNullExpressionValue(te.a.a(context).g().g(new xg.g() { // from class: com.appsflyer.internal.j
+                    @Override // xg.g
                     public final void onSuccess(Object obj) {
                         AFb1hSDK.getMediationNetwork(AFb1hSDK.this, (te.c) obj);
                     }
                 }), "");
             } catch (Throwable th2) {
                 AFh1ySDK.e$default(AFLogger.INSTANCE, AFg1cSDK.APP_SET_ID, "Error while trying to  fetch App set ID", th2, false, false, false, false, 120, null);
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             }
         }
     }

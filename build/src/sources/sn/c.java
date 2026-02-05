@@ -1,29 +1,28 @@
 package sn;
-
-import android.graphics.Rect;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Rect f49561a;
+    private final int f49838a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Rect f49562b;
+    private final int f49839b;
 
-    public c(Rect region, Rect viewport) {
-        Intrinsics.checkNotNullParameter(region, "region");
-        Intrinsics.checkNotNullParameter(viewport, "viewport");
-        this.f49561a = region;
-        this.f49562b = viewport;
+    /* renamed from: c  reason: collision with root package name */
+    private final int f49840c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final int f49841d;
+
+    public c(int i10, int i11, int i12, int i13) {
+        this.f49838a = i10;
+        this.f49839b = i11;
+        this.f49840c = i12;
+        this.f49841d = i13;
     }
 
-    public final Rect a() {
-        return this.f49561a;
-    }
-
-    public final Rect b() {
-        return this.f49562b;
+    public final int a() {
+        return this.f49838a;
     }
 
     public boolean equals(Object obj) {
@@ -34,19 +33,21 @@ public final class c {
             return false;
         }
         c cVar = (c) obj;
-        if (Intrinsics.areEqual(this.f49561a, cVar.f49561a) && Intrinsics.areEqual(this.f49562b, cVar.f49562b)) {
+        if (this.f49838a == cVar.f49838a && this.f49839b == cVar.f49839b && this.f49840c == cVar.f49840c && this.f49841d == cVar.f49841d) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f49561a.hashCode() * 31) + this.f49562b.hashCode();
+        return (((((Integer.hashCode(this.f49838a) * 31) + Integer.hashCode(this.f49839b)) * 31) + Integer.hashCode(this.f49840c)) * 31) + Integer.hashCode(this.f49841d);
     }
 
     public String toString() {
-        Rect rect = this.f49561a;
-        Rect rect2 = this.f49562b;
-        return "ViewfinderInfo(region=" + rect + ", viewport=" + rect2 + ")";
+        int i10 = this.f49838a;
+        int i11 = this.f49839b;
+        int i12 = this.f49840c;
+        int i13 = this.f49841d;
+        return "AudioConfiguration(sampleRateInHz=" + i10 + ", channelConfig=" + i11 + ", audioFormat=" + i12 + ", bufferSizeInBytes=" + i13 + ")";
     }
 }

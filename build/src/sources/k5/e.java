@@ -2,16 +2,16 @@ package k5;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import lu.c0;
+import ou.c0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class e {
-    public static final void a(lu.h hVar, c0 c0Var) {
+    public static final void a(ou.h hVar, c0 c0Var) {
         if (!hVar.j(c0Var)) {
             k.d(hVar.o(c0Var));
         }
     }
 
-    public static final void b(lu.h hVar, c0 c0Var) {
+    public static final void b(ou.h hVar, c0 c0Var) {
         try {
             IOException iOException = null;
             for (c0 c0Var2 : hVar.k(c0Var)) {

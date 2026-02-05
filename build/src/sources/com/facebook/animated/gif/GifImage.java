@@ -13,10 +13,10 @@ import o8.j;
 public class GifImage implements c, ha.c {
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile boolean f9525b;
+    private static volatile boolean f9910b;
 
     /* renamed from: a  reason: collision with root package name */
-    private Bitmap.Config f9526a = null;
+    private Bitmap.Config f9911a = null;
     @d
     private long mNativeContext;
 
@@ -27,8 +27,8 @@ public class GifImage implements c, ha.c {
     public static GifImage f(ByteBuffer byteBuffer, ImageDecodeOptions imageDecodeOptions) {
         h();
         byteBuffer.rewind();
-        GifImage nativeCreateFromDirectByteBuffer = nativeCreateFromDirectByteBuffer(byteBuffer, imageDecodeOptions.f10044b, imageDecodeOptions.f10049g);
-        nativeCreateFromDirectByteBuffer.f9526a = imageDecodeOptions.f10051i;
+        GifImage nativeCreateFromDirectByteBuffer = nativeCreateFromDirectByteBuffer(byteBuffer, imageDecodeOptions.f10429b, imageDecodeOptions.f10434g);
+        nativeCreateFromDirectByteBuffer.f9911a = imageDecodeOptions.f10436i;
         return nativeCreateFromDirectByteBuffer;
     }
 
@@ -41,34 +41,34 @@ public class GifImage implements c, ha.c {
             z10 = false;
         }
         j.b(Boolean.valueOf(z10));
-        GifImage nativeCreateFromNativeMemory = nativeCreateFromNativeMemory(j10, i10, imageDecodeOptions.f10044b, imageDecodeOptions.f10049g);
-        nativeCreateFromNativeMemory.f9526a = imageDecodeOptions.f10051i;
+        GifImage nativeCreateFromNativeMemory = nativeCreateFromNativeMemory(j10, i10, imageDecodeOptions.f10429b, imageDecodeOptions.f10434g);
+        nativeCreateFromNativeMemory.f9911a = imageDecodeOptions.f10436i;
         return nativeCreateFromNativeMemory;
     }
 
     private static synchronized void h() {
         synchronized (GifImage.class) {
-            if (!f9525b) {
-                f9525b = true;
+            if (!f9910b) {
+                f9910b = true;
                 a.d("gifimage");
             }
         }
     }
 
-    private static b.EnumC0336b i(int i10) {
+    private static b.EnumC0338b i(int i10) {
         if (i10 == 0) {
-            return b.EnumC0336b.DISPOSE_DO_NOT;
+            return b.EnumC0338b.DISPOSE_DO_NOT;
         }
         if (i10 == 1) {
-            return b.EnumC0336b.DISPOSE_DO_NOT;
+            return b.EnumC0338b.DISPOSE_DO_NOT;
         }
         if (i10 == 2) {
-            return b.EnumC0336b.DISPOSE_TO_BACKGROUND;
+            return b.EnumC0338b.DISPOSE_TO_BACKGROUND;
         }
         if (i10 == 3) {
-            return b.EnumC0336b.DISPOSE_TO_PREVIOUS;
+            return b.EnumC0338b.DISPOSE_TO_PREVIOUS;
         }
-        return b.EnumC0336b.DISPOSE_DO_NOT;
+        return b.EnumC0338b.DISPOSE_DO_NOT;
     }
 
     @d
@@ -132,11 +132,11 @@ public class GifImage implements c, ha.c {
 
     @Override // ga.c
     public b c(int i10) {
-        GifFrame w10 = w(i10);
+        GifFrame x10 = x(i10);
         try {
-            return new b(i10, w10.b(), w10.c(), w10.getWidth(), w10.getHeight(), b.a.BLEND_WITH_PREVIOUS, i(w10.d()));
+            return new b(i10, x10.b(), x10.c(), x10.getWidth(), x10.getHeight(), b.a.BLEND_WITH_PREVIOUS, i(x10.d()));
         } finally {
-            w10.dispose();
+            x10.dispose();
         }
     }
 
@@ -166,27 +166,27 @@ public class GifImage implements c, ha.c {
 
     @Override // ga.c
     /* renamed from: j */
-    public GifFrame w(int i10) {
+    public GifFrame x(int i10) {
         return nativeGetFrame(i10);
     }
 
     @Override // ga.c
-    public int t() {
+    public int u() {
         return nativeGetSizeInBytes();
     }
 
     @Override // ga.c
-    public boolean u() {
+    public boolean v() {
         return false;
     }
 
     @Override // ga.c
-    public Bitmap.Config v() {
-        return this.f9526a;
+    public Bitmap.Config w() {
+        return this.f9911a;
     }
 
     @Override // ga.c
-    public int[] x() {
+    public int[] y() {
         return nativeGetFrameDurations();
     }
 

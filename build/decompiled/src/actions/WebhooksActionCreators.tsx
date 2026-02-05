@@ -185,15 +185,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.fetchForChannel = var6;
     var6 = function arg0, arg1, arg2() {
-        _fun109250: for (var _fun109250_ip = 0;;) switch (_fun109250_ip) {
+        _fun109311: for (var _fun109311_ip = 0;;) switch (_fun109311_ip) {
             case 0:
                 var5 = arg2;
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = null;
                 if (!(var1 == var5)) {
-                    _fun109250_ip = 77;
-                    continue _fun109250
+                    _fun109311_ip = 77;
+                    continue _fun109311
                 }
             case 18:
                 var2 = _closure1_slot4;

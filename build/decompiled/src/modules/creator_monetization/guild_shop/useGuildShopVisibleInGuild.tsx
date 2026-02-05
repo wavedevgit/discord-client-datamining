@@ -137,4 +137,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isGuildShopVisibleInGuild = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5627, 5619, 5639, 5622, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5631, 5623, 5643, 5626, 2]);

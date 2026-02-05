@@ -6,7 +6,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import uq.h;
+import xq.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class GestureCropImageView extends com.yalantis.ucrop.view.a {
     private ScaleGestureDetector M;
@@ -45,7 +45,7 @@ public class GestureCropImageView extends com.yalantis.ucrop.view.a {
         private c() {
         }
 
-        @Override // uq.h.a
+        @Override // xq.h.a
         public boolean a(h hVar) {
             GestureCropImageView.this.k(hVar.c(), GestureCropImageView.this.P, GestureCropImageView.this.Q);
             return true;

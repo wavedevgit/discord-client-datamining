@@ -14,45 +14,45 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18781a;
+    private final m.b f19187a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18782b;
+    private final com.squareup.moshi.h f19188b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f18783c;
+    private final com.squareup.moshi.h f19189c;
 
     public CreateInquirySessionResponse_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.ID_KEY, "attributes");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18781a = a10;
+        this.f19187a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18782b = f10;
+        this.f19188b = f10;
         com.squareup.moshi.h f11 = moshi.f(CreateInquirySessionResponse.Attributes.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f18783c = f11;
+        this.f19189c = f11;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public CreateInquirySessionResponse.Data fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         CreateInquirySessionResponse.Attributes attributes = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f18781a);
-            if (A0 != -1) {
-                if (A0 != 0) {
-                    if (A0 == 1 && (attributes = (CreateInquirySessionResponse.Attributes) this.f18783c.fromJson(reader)) == null) {
-                        throw vm.c.x("attributes", "attributes", reader);
+            int W = reader.W(this.f19187a);
+            if (W != -1) {
+                if (W != 0) {
+                    if (W == 1 && (attributes = (CreateInquirySessionResponse.Attributes) this.f19189c.fromJson(reader)) == null) {
+                        throw ym.c.x("attributes", "attributes", reader);
                     }
                 } else {
-                    str = (String) this.f18782b.fromJson(reader);
+                    str = (String) this.f19188b.fromJson(reader);
                     if (str == null) {
-                        throw vm.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+                        throw ym.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                     }
                 }
             } else {
@@ -60,14 +60,14 @@ public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squa
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         if (str != null) {
             if (attributes != null) {
                 return new CreateInquirySessionResponse.Data(str, attributes);
             }
-            throw vm.c.o("attributes", "attributes", reader);
+            throw ym.c.o("attributes", "attributes", reader);
         }
-        throw vm.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+        throw ym.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -75,11 +75,11 @@ public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squa
     public void toJson(t writer, CreateInquirySessionResponse.Data data) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (data != null) {
-            writer.l();
-            writer.A0(StackTraceHelper.ID_KEY);
-            this.f18782b.toJson(writer, data.b());
-            writer.A0("attributes");
-            this.f18783c.toJson(writer, data.a());
+            writer.k();
+            writer.W(StackTraceHelper.ID_KEY);
+            this.f19188b.toJson(writer, data.b());
+            writer.W("attributes");
+            this.f19189c.toJson(writer, data.a());
             writer.E();
             return;
         }

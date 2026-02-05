@@ -7,11 +7,11 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 final class a extends c {
 
     /* renamed from: a  reason: collision with root package name */
-    final SideSheetBehavior f14929a;
+    final SideSheetBehavior f15323a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(SideSheetBehavior sideSheetBehavior) {
-        this.f14929a = sideSheetBehavior;
+        this.f15323a = sideSheetBehavior;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -36,31 +36,31 @@ final class a extends c {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.sidesheet.c
     public int d() {
-        return Math.max(0, this.f14929a.m0() + this.f14929a.k0());
+        return Math.max(0, this.f15323a.m0() + this.f15323a.k0());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.sidesheet.c
     public int e() {
-        return (-this.f14929a.d0()) - this.f14929a.k0();
+        return (-this.f15323a.d0()) - this.f15323a.k0();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.sidesheet.c
     public int f() {
-        return this.f14929a.k0();
+        return this.f15323a.k0();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.sidesheet.c
     public int g() {
-        return -this.f14929a.d0();
+        return -this.f15323a.d0();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.sidesheet.c
     public int h(View view) {
-        return view.getRight() + this.f14929a.k0();
+        return view.getRight() + this.f15323a.k0();
     }
 
     @Override // com.google.android.material.sidesheet.c
@@ -92,7 +92,7 @@ final class a extends c {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.sidesheet.c
     public boolean m(float f10, float f11) {
-        if (d.a(f10, f11) && Math.abs(f10) > this.f14929a.o0()) {
+        if (d.a(f10, f11) && Math.abs(f10) > this.f15323a.o0()) {
             return true;
         }
         return false;
@@ -101,7 +101,7 @@ final class a extends c {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.sidesheet.c
     public boolean n(View view, float f10) {
-        if (Math.abs(view.getLeft() + (f10 * this.f14929a.i0())) > this.f14929a.j0()) {
+        if (Math.abs(view.getLeft() + (f10 * this.f15323a.i0())) > this.f15323a.j0()) {
             return true;
         }
         return false;
@@ -116,7 +116,7 @@ final class a extends c {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.sidesheet.c
     public void p(ViewGroup.MarginLayoutParams marginLayoutParams, int i10, int i11) {
-        if (i10 <= this.f14929a.n0()) {
+        if (i10 <= this.f15323a.n0()) {
             marginLayoutParams.leftMargin = i11;
         }
     }

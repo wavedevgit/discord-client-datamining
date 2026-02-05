@@ -3,39 +3,39 @@ package com.google.android.gms.internal.fido;
 abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f13621a = new Object();
+    private static final Object f14015a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile g f13622b = null;
+    private static volatile g f14016b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private static volatile boolean f13623c = false;
+    private static volatile boolean f14017c = false;
 
     /* renamed from: d  reason: collision with root package name */
-    private static volatile g f13624d;
+    private static volatile g f14018d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void a() {
-        f13623c = true;
+        f14017c = true;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void b() {
-        if (f13624d == null) {
-            f13624d = new g(null);
+        if (f14018d == null) {
+            f14018d = new g(null);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void c() {
-        if (f13622b == null) {
-            f13622b = new g(null);
+        if (f14016b == null) {
+            f14016b = new g(null);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean d() {
-        synchronized (f13621a) {
+        synchronized (f14015a) {
         }
         return false;
     }

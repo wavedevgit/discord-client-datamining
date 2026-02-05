@@ -7,10 +7,10 @@ import androidx.lifecycle.LifecycleOwner;
 public final class g extends Lifecycle {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final g f25028b = new g();
+    public static final g f23727b = new g();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final a f25029c = new a();
+    private static final a f23728c = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements LifecycleOwner {
@@ -20,7 +20,7 @@ public final class g extends Lifecycle {
         @Override // androidx.lifecycle.LifecycleOwner
         /* renamed from: a */
         public g getLifecycle() {
-            return g.f25028b;
+            return g.f23727b;
         }
     }
 
@@ -31,7 +31,7 @@ public final class g extends Lifecycle {
     public void a(androidx.lifecycle.o oVar) {
         if (oVar instanceof DefaultLifecycleObserver) {
             DefaultLifecycleObserver defaultLifecycleObserver = (DefaultLifecycleObserver) oVar;
-            a aVar = f25029c;
+            a aVar = f23728c;
             defaultLifecycleObserver.onCreate(aVar);
             defaultLifecycleObserver.onStart(aVar);
             defaultLifecycleObserver.onResume(aVar);
@@ -42,7 +42,7 @@ public final class g extends Lifecycle {
 
     @Override // androidx.lifecycle.Lifecycle
     public Lifecycle.State b() {
-        return Lifecycle.State.f4409p;
+        return Lifecycle.State.f4521p;
     }
 
     public String toString() {

@@ -5,7 +5,7 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.RelativeSizeSpan;
-import ii.n;
+import li.n;
 import zd.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 abstract class i {
@@ -20,30 +20,30 @@ abstract class i {
         return !(obj instanceof de.b);
     }
 
-    public static void c(b.C0784b c0784b) {
-        c0784b.b();
-        if (c0784b.e() instanceof Spanned) {
-            if (!(c0784b.e() instanceof Spannable)) {
-                c0784b.o(SpannableString.valueOf(c0784b.e()));
+    public static void c(b.C0782b c0782b) {
+        c0782b.b();
+        if (c0782b.e() instanceof Spanned) {
+            if (!(c0782b.e() instanceof Spannable)) {
+                c0782b.o(SpannableString.valueOf(c0782b.e()));
             }
-            e((Spannable) ne.a.e(c0784b.e()), new n() { // from class: com.google.android.exoplayer2.ui.g
-                @Override // ii.n
+            e((Spannable) ne.a.e(c0782b.e()), new n() { // from class: com.google.android.exoplayer2.ui.g
+                @Override // li.n
                 public final boolean apply(Object obj) {
                     return i.b(obj);
                 }
             });
         }
-        d(c0784b);
+        d(c0782b);
     }
 
-    public static void d(b.C0784b c0784b) {
-        c0784b.q(-3.4028235E38f, Integer.MIN_VALUE);
-        if (c0784b.e() instanceof Spanned) {
-            if (!(c0784b.e() instanceof Spannable)) {
-                c0784b.o(SpannableString.valueOf(c0784b.e()));
+    public static void d(b.C0782b c0782b) {
+        c0782b.q(-3.4028235E38f, Integer.MIN_VALUE);
+        if (c0782b.e() instanceof Spanned) {
+            if (!(c0782b.e() instanceof Spannable)) {
+                c0782b.o(SpannableString.valueOf(c0782b.e()));
             }
-            e((Spannable) ne.a.e(c0784b.e()), new n() { // from class: com.google.android.exoplayer2.ui.h
-                @Override // ii.n
+            e((Spannable) ne.a.e(c0782b.e()), new n() { // from class: com.google.android.exoplayer2.ui.h
+                @Override // li.n
                 public final boolean apply(Object obj) {
                     return i.a(obj);
                 }

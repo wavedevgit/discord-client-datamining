@@ -1,178 +1,93 @@
 package ms;
 
-import kotlin.Unit;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.d;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
-/* JADX INFO: Access modifiers changed from: package-private */
+import kotlinx.coroutines.Job;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract /* synthetic */ class i {
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a extends kotlin.coroutines.jvm.internal.d {
-
-        /* renamed from: d  reason: collision with root package name */
-        Object f39178d;
-
-        /* renamed from: e  reason: collision with root package name */
-        Object f39179e;
-
-        /* renamed from: i  reason: collision with root package name */
-        Object f39180i;
-
-        /* renamed from: o  reason: collision with root package name */
-        boolean f39181o;
-
-        /* renamed from: p  reason: collision with root package name */
-        /* synthetic */ Object f39182p;
-
-        /* renamed from: q  reason: collision with root package name */
-        int f39183q;
-
-        a(Continuation continuation) {
-            super(continuation);
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r2v3, types: [ms.g0, java.lang.Object, kotlinx.coroutines.a] */
+    public static final g0 a(CoroutineScope coroutineScope, CoroutineContext coroutineContext, c0 c0Var, Function2 function2) {
+        a1 a1Var;
+        CoroutineContext k10 = x.k(coroutineScope, coroutineContext);
+        if (c0Var.e()) {
+            a1Var = new a1(k10, function2);
+        } else {
+            a1Var = new h0(k10, true);
         }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            this.f39182p = obj;
-            this.f39183q |= Integer.MIN_VALUE;
-            return i.c(null, null, false, this);
-        }
+        a1Var.U0(c0Var, a1Var, function2);
+        return a1Var;
     }
 
-    public static final Object b(FlowCollector flowCollector, ls.v vVar, Continuation continuation) {
-        Object c10 = c(flowCollector, vVar, true, continuation);
-        if (c10 == rr.b.f()) {
-            return c10;
+    public static /* synthetic */ g0 b(CoroutineScope coroutineScope, CoroutineContext coroutineContext, c0 c0Var, Function2 function2, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            coroutineContext = kotlin.coroutines.e.f32062d;
         }
-        return Unit.f32464a;
+        if ((i10 & 2) != 0) {
+            c0Var = c0.f38909d;
+        }
+        return g.a(coroutineScope, coroutineContext, c0Var, function2);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code restructure failed: missing block: B:31:0x0091, code lost:
-        if (r2.emit(r9, r0) == r1) goto L17;
-     */
-    /* JADX WARN: Removed duplicated region for block: B:10:0x0024  */
-    /* JADX WARN: Removed duplicated region for block: B:22:0x0058  */
-    /* JADX WARN: Removed duplicated region for block: B:26:0x0072  */
-    /* JADX WARN: Removed duplicated region for block: B:27:0x0073  */
-    /* JADX WARN: Removed duplicated region for block: B:30:0x007f A[Catch: all -> 0x003c, TRY_LEAVE, TryCatch #0 {all -> 0x003c, blocks: (B:13:0x0036, B:24:0x0062, B:28:0x0077, B:30:0x007f, B:20:0x0054, B:23:0x005e), top: B:42:0x0022 }] */
-    /* JADX WARN: Removed duplicated region for block: B:33:0x0094  */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:31:0x0091 -> B:14:0x0039). Please submit an issue!!! */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public static final java.lang.Object c(kotlinx.coroutines.flow.FlowCollector r6, ls.v r7, boolean r8, kotlin.coroutines.Continuation r9) {
-        /*
-            boolean r0 = r9 instanceof ms.i.a
-            if (r0 == 0) goto L13
-            r0 = r9
-            ms.i$a r0 = (ms.i.a) r0
-            int r1 = r0.f39183q
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r3 = r1 & r2
-            if (r3 == 0) goto L13
-            int r1 = r1 - r2
-            r0.f39183q = r1
-            goto L18
-        L13:
-            ms.i$a r0 = new ms.i$a
-            r0.<init>(r9)
-        L18:
-            java.lang.Object r9 = r0.f39182p
-            java.lang.Object r1 = rr.b.f()
-            int r2 = r0.f39183q
-            r3 = 2
-            r4 = 1
-            if (r2 == 0) goto L58
-            if (r2 == r4) goto L46
-            if (r2 != r3) goto L3e
-            boolean r8 = r0.f39181o
-            java.lang.Object r6 = r0.f39180i
-            ls.i r6 = (ls.i) r6
-            java.lang.Object r7 = r0.f39179e
-            ls.v r7 = (ls.v) r7
-            java.lang.Object r2 = r0.f39178d
-            kotlinx.coroutines.flow.FlowCollector r2 = (kotlinx.coroutines.flow.FlowCollector) r2
-            kotlin.c.b(r9)     // Catch: java.lang.Throwable -> L3c
-        L39:
-            r9 = r6
-            r6 = r2
-            goto L62
-        L3c:
-            r6 = move-exception
-            goto L9d
-        L3e:
-            java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
-            java.lang.String r7 = "call to 'resume' before 'invoke' with coroutine"
-            r6.<init>(r7)
-            throw r6
-        L46:
-            boolean r8 = r0.f39181o
-            java.lang.Object r6 = r0.f39180i
-            ls.i r6 = (ls.i) r6
-            java.lang.Object r7 = r0.f39179e
-            ls.v r7 = (ls.v) r7
-            java.lang.Object r2 = r0.f39178d
-            kotlinx.coroutines.flow.FlowCollector r2 = (kotlinx.coroutines.flow.FlowCollector) r2
-            kotlin.c.b(r9)     // Catch: java.lang.Throwable -> L3c
-            goto L77
-        L58:
-            kotlin.c.b(r9)
-            ms.g.q(r6)
-            ls.i r9 = r7.iterator()     // Catch: java.lang.Throwable -> L3c
-        L62:
-            r0.f39178d = r6     // Catch: java.lang.Throwable -> L3c
-            r0.f39179e = r7     // Catch: java.lang.Throwable -> L3c
-            r0.f39180i = r9     // Catch: java.lang.Throwable -> L3c
-            r0.f39181o = r8     // Catch: java.lang.Throwable -> L3c
-            r0.f39183q = r4     // Catch: java.lang.Throwable -> L3c
-            java.lang.Object r2 = r9.a(r0)     // Catch: java.lang.Throwable -> L3c
-            if (r2 != r1) goto L73
-            goto L93
-        L73:
-            r5 = r2
-            r2 = r6
-            r6 = r9
-            r9 = r5
-        L77:
-            java.lang.Boolean r9 = (java.lang.Boolean) r9     // Catch: java.lang.Throwable -> L3c
-            boolean r9 = r9.booleanValue()     // Catch: java.lang.Throwable -> L3c
-            if (r9 == 0) goto L94
-            java.lang.Object r9 = r6.next()     // Catch: java.lang.Throwable -> L3c
-            r0.f39178d = r2     // Catch: java.lang.Throwable -> L3c
-            r0.f39179e = r7     // Catch: java.lang.Throwable -> L3c
-            r0.f39180i = r6     // Catch: java.lang.Throwable -> L3c
-            r0.f39181o = r8     // Catch: java.lang.Throwable -> L3c
-            r0.f39183q = r3     // Catch: java.lang.Throwable -> L3c
-            java.lang.Object r9 = r2.emit(r9, r0)     // Catch: java.lang.Throwable -> L3c
-            if (r9 != r1) goto L39
-        L93:
-            return r1
-        L94:
-            if (r8 == 0) goto L9a
-            r6 = 0
-            ls.n.a(r7, r6)
-        L9a:
-            kotlin.Unit r6 = kotlin.Unit.f32464a
-            return r6
-        L9d:
-            throw r6     // Catch: java.lang.Throwable -> L9e
-        L9e:
-            r9 = move-exception
-            if (r8 == 0) goto La4
-            ls.n.a(r7, r6)
-        La4:
-            throw r9
-        */
-        throw new UnsupportedOperationException("Method not decompiled: ms.i.c(kotlinx.coroutines.flow.FlowCollector, ls.v, boolean, kotlin.coroutines.Continuation):java.lang.Object");
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r2v3, types: [kotlinx.coroutines.Job, java.lang.Object, kotlinx.coroutines.a] */
+    public static final Job c(CoroutineScope coroutineScope, CoroutineContext coroutineContext, c0 c0Var, Function2 function2) {
+        b1 b1Var;
+        CoroutineContext k10 = x.k(coroutineScope, coroutineContext);
+        if (c0Var.e()) {
+            b1Var = new b1(k10, function2);
+        } else {
+            b1Var = new h1(k10, true);
+        }
+        b1Var.U0(c0Var, b1Var, function2);
+        return b1Var;
     }
 
-    public static final ls.v d(Flow flow, CoroutineScope coroutineScope) {
-        return ns.f.b(flow).m(coroutineScope);
+    public static /* synthetic */ Job d(CoroutineScope coroutineScope, CoroutineContext coroutineContext, c0 c0Var, Function2 function2, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            coroutineContext = kotlin.coroutines.e.f32062d;
+        }
+        if ((i10 & 2) != 0) {
+            c0Var = c0.f38909d;
+        }
+        return g.c(coroutineScope, coroutineContext, c0Var, function2);
+    }
+
+    public static final Object e(CoroutineContext coroutineContext, Function2 function2, Continuation continuation) {
+        Object X0;
+        CoroutineContext context = continuation.getContext();
+        CoroutineContext j10 = x.j(context, coroutineContext);
+        kotlinx.coroutines.z.k(j10);
+        if (j10 == context) {
+            rs.a0 a0Var = new rs.a0(j10, continuation);
+            X0 = ss.b.d(a0Var, a0Var, function2);
+        } else {
+            d.b bVar = kotlin.coroutines.d.f32060g;
+            if (Intrinsics.areEqual(j10.k(bVar), context.k(bVar))) {
+                u1 u1Var = new u1(j10, continuation);
+                CoroutineContext context2 = u1Var.getContext();
+                Object i10 = rs.l0.i(context2, null);
+                try {
+                    Object d10 = ss.b.d(u1Var, u1Var, function2);
+                    rs.l0.f(context2, i10);
+                    X0 = d10;
+                } catch (Throwable th2) {
+                    rs.l0.f(context2, i10);
+                    throw th2;
+                }
+            } else {
+                kotlinx.coroutines.l lVar = new kotlinx.coroutines.l(j10, continuation);
+                ss.a.c(function2, lVar, lVar);
+                X0 = lVar.X0();
+            }
+        }
+        if (X0 == ur.b.f()) {
+            kotlin.coroutines.jvm.internal.g.c(continuation);
+        }
+        return X0;
     }
 }

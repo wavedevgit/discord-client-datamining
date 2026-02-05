@@ -8,26 +8,26 @@ import tc.y;
 public final class b implements j {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final y f51381d = new y();
+    private static final y f52070d = new y();
 
     /* renamed from: a  reason: collision with root package name */
-    final tc.k f51382a;
+    final tc.k f52071a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Format f51383b;
+    private final Format f52072b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final s0 f51384c;
+    private final s0 f52073c;
 
     public b(tc.k kVar, Format format, s0 s0Var) {
-        this.f51382a = kVar;
-        this.f51383b = format;
-        this.f51384c = s0Var;
+        this.f52071a = kVar;
+        this.f52072b = format;
+        this.f52073c = s0Var;
     }
 
     @Override // vd.j
     public boolean a(tc.l lVar) {
-        if (this.f51382a.d(lVar, f51381d) == 0) {
+        if (this.f52071a.d(lVar, f52070d) == 0) {
             return true;
         }
         return false;
@@ -35,17 +35,17 @@ public final class b implements j {
 
     @Override // vd.j
     public void b() {
-        this.f51382a.a(0L, 0L);
+        this.f52071a.a(0L, 0L);
     }
 
     @Override // vd.j
     public void c(tc.m mVar) {
-        this.f51382a.c(mVar);
+        this.f52071a.c(mVar);
     }
 
     @Override // vd.j
     public boolean d() {
-        tc.k kVar = this.f51382a;
+        tc.k kVar = this.f52071a;
         if (!(kVar instanceof h0) && !(kVar instanceof bd.g)) {
             return false;
         }
@@ -54,7 +54,7 @@ public final class b implements j {
 
     @Override // vd.j
     public boolean e() {
-        tc.k kVar = this.f51382a;
+        tc.k kVar = this.f52071a;
         if (!(kVar instanceof dd.h) && !(kVar instanceof dd.b) && !(kVar instanceof dd.e) && !(kVar instanceof ad.f)) {
             return false;
         }
@@ -65,9 +65,9 @@ public final class b implements j {
     public j f() {
         tc.k fVar;
         ne.a.g(!d());
-        tc.k kVar = this.f51382a;
+        tc.k kVar = this.f52071a;
         if (kVar instanceof t) {
-            fVar = new t(this.f51383b.f11294i, this.f51384c);
+            fVar = new t(this.f52072b.f11679i, this.f52073c);
         } else if (kVar instanceof dd.h) {
             fVar = new dd.h();
         } else if (kVar instanceof dd.b) {
@@ -77,8 +77,8 @@ public final class b implements j {
         } else if (kVar instanceof ad.f) {
             fVar = new ad.f();
         } else {
-            throw new IllegalStateException("Unexpected extractor type for recreation: " + this.f51382a.getClass().getSimpleName());
+            throw new IllegalStateException("Unexpected extractor type for recreation: " + this.f52071a.getClass().getSimpleName());
         }
-        return new b(fVar, this.f51383b, this.f51384c);
+        return new b(fVar, this.f52072b, this.f52073c);
     }
 }

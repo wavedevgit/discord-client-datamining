@@ -204,4 +204,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildShopPreviewVisible = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3091, 660, 5627, 3212, 1358, 632, 5629, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3091, 660, 5631, 3212, 1358, 632, 5633, 2]);

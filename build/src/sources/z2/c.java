@@ -2,40 +2,40 @@ package z2;
 
 import java.io.File;
 import java.util.List;
-import js.j1;
-import js.m0;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.i;
-import wr.j;
+import ms.j1;
+import ms.m0;
+import zr.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f55560a = new c();
+    public static final c f55149a = new c();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f55561d;
+        final /* synthetic */ Function0 f55150d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Function0 function0) {
             super(0);
-            this.f55561d = function0;
+            this.f55150d = function0;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final File invoke() {
-            File file = (File) this.f55561d.invoke();
+            File file = (File) this.f55150d.invoke();
             String s10 = j.s(file);
-            h hVar = h.f55566a;
+            h hVar = h.f55155a;
             if (Intrinsics.areEqual(s10, hVar.f())) {
                 return file;
             }
@@ -63,6 +63,6 @@ public final class c {
         Intrinsics.checkNotNullParameter(migrations, "migrations");
         Intrinsics.checkNotNullParameter(scope, "scope");
         Intrinsics.checkNotNullParameter(produceFile, "produceFile");
-        return new b(w2.g.f51859a.a(h.f55566a, bVar, migrations, scope, new a(produceFile)));
+        return new b(w2.g.f52516a.a(h.f55155a, bVar, migrations, scope, new a(produceFile)));
     }
 }

@@ -1,69 +1,38 @@
 package gr;
 
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.text.Layout;
 import android.text.Spanned;
-import android.text.TextPaint;
-import android.text.style.LeadingMarginSpan;
 import android.widget.TextView;
+import gr.g;
+import gr.j;
+import gr.l;
+import hr.c;
+import kv.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class i implements LeadingMarginSpan {
+public interface i {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final er.c f26546d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final String f26547e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final Paint f26548i = h.a();
-
-    /* renamed from: o  reason: collision with root package name */
-    private int f26549o;
-
-    public i(er.c cVar, String str) {
-        this.f26546d = cVar;
-        this.f26547e = str;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public interface a {
     }
 
-    public static void a(TextView textView, CharSequence charSequence) {
-        if (charSequence instanceof Spanned) {
-            i[] iVarArr = (i[]) ((Spanned) charSequence).getSpans(0, charSequence.length(), i.class);
-            if (iVarArr != null) {
-                TextPaint paint = textView.getPaint();
-                for (i iVar : iVarArr) {
-                    iVar.f26549o = (int) (paint.measureText(iVar.f26547e) + 0.5f);
-                }
-            }
-        }
-    }
+    void a(jv.r rVar, l lVar);
 
-    @Override // android.text.style.LeadingMarginSpan
-    public void drawLeadingMargin(Canvas canvas, Paint paint, int i10, int i11, int i12, int i13, int i14, CharSequence charSequence, int i15, int i16, boolean z10, Layout layout) {
-        int i17;
-        if (z10 && kr.c.b(i15, charSequence, this)) {
-            this.f26548i.set(paint);
-            this.f26546d.g(this.f26548i);
-            int measureText = (int) (this.f26548i.measureText(this.f26547e) + 0.5f);
-            int j10 = this.f26546d.j();
-            if (measureText > j10) {
-                this.f26549o = measureText;
-                j10 = measureText;
-            } else {
-                this.f26549o = 0;
-            }
-            if (i11 > 0) {
-                i17 = (i10 + (j10 * i11)) - measureText;
-            } else {
-                i17 = i10 + (i11 * j10) + (j10 - measureText);
-            }
-            canvas.drawText(this.f26547e, i17, i13, this.f26548i);
-        }
-    }
+    void b(d.b bVar);
 
-    @Override // android.text.style.LeadingMarginSpan
-    public int getLeadingMargin(boolean z10) {
-        return Math.max(this.f26549o, this.f26546d.j());
-    }
+    void c(jv.r rVar);
+
+    void d(l.b bVar);
+
+    void e(TextView textView);
+
+    String f(String str);
+
+    void g(g.b bVar);
+
+    void h(j.a aVar);
+
+    void i(c.a aVar);
+
+    void j(TextView textView, Spanned spanned);
+
+    void k(a aVar);
 }

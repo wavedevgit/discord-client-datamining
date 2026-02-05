@@ -5,13 +5,13 @@ import java.util.List;
 public final class b implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final b f29997a = new b();
+    private static final b f29055a = new b();
 
     private b() {
     }
 
     public static b b() {
-        return f29997a;
+        return f29055a;
     }
 
     @Override // io.sentry.internal.debugmeta.a

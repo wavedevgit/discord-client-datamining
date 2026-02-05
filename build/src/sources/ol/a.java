@@ -1,127 +1,54 @@
 package ol;
 
-import android.content.Context;
-import android.media.MediaExtractor;
-import android.media.MediaFormat;
-import android.media.MediaMetadataRetriever;
-import android.net.Uri;
-import androidx.annotation.NonNull;
-import com.linkedin.android.litr.io.MediaRange;
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.util.Map;
-import jl.b;
-import kotlin.jvm.internal.LongCompanionObject;
+import android.graphics.PointF;
+import android.opengl.Matrix;
+import nl.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a implements e {
-    private final long duration;
-    private final MediaExtractor mediaExtractor;
-    private final MediaRange mediaRange;
-    private int orientationHint;
-    private long size;
-
-    public a(Context context, Uri uri) {
-        this(context, uri, new MediaRange(0L, LongCompanionObject.MAX_VALUE));
-    }
-
-    private void a(MediaMetadataRetriever mediaMetadataRetriever) {
-        try {
-            mediaMetadataRetriever.release();
-        } catch (IOException unused) {
+public abstract class a {
+    public static float[] a(float[] fArr, c cVar) {
+        boolean z10;
+        float abs;
+        float f10;
+        float f11;
+        float f12;
+        float f13;
+        float f14 = fArr[0];
+        if (f14 == 0.0f) {
+            z10 = true;
+        } else {
+            z10 = false;
         }
-    }
-
-    @Override // ol.e
-    public void advance() {
-        this.mediaExtractor.advance();
-    }
-
-    @Override // ol.e
-    public long getDuration() {
-        return this.duration;
-    }
-
-    @Override // ol.e
-    public int getOrientationHint() {
-        return this.orientationHint;
-    }
-
-    @Override // ol.e
-    public int getSampleFlags() {
-        return this.mediaExtractor.getSampleFlags();
-    }
-
-    @Override // ol.e
-    public long getSampleTime() {
-        return this.mediaExtractor.getSampleTime();
-    }
-
-    @Override // ol.e
-    public int getSampleTrackIndex() {
-        return this.mediaExtractor.getSampleTrackIndex();
-    }
-
-    @Override // ol.e
-    @NonNull
-    public MediaRange getSelection() {
-        return this.mediaRange;
-    }
-
-    @Override // ol.e
-    public long getSize() {
-        return this.size;
-    }
-
-    @Override // ol.e
-    public int getTrackCount() {
-        return this.mediaExtractor.getTrackCount();
-    }
-
-    @Override // ol.e
-    @NonNull
-    public MediaFormat getTrackFormat(int i10) {
-        return this.mediaExtractor.getTrackFormat(i10);
-    }
-
-    @Override // ol.e
-    public int readSampleData(@NonNull ByteBuffer byteBuffer, int i10) {
-        return this.mediaExtractor.readSampleData(byteBuffer, i10);
-    }
-
-    @Override // ol.e
-    public void release() {
-        this.mediaExtractor.release();
-    }
-
-    @Override // ol.e
-    public void seekTo(long j10, int i10) {
-        this.mediaExtractor.seekTo(j10, i10);
-    }
-
-    @Override // ol.e
-    public void selectTrack(int i10) {
-        this.mediaExtractor.selectTrack(i10);
-    }
-
-    public a(Context context, Uri uri, MediaRange mediaRange) {
-        this.mediaRange = mediaRange;
-        MediaExtractor mediaExtractor = new MediaExtractor();
-        this.mediaExtractor = mediaExtractor;
-        MediaMetadataRetriever mediaMetadataRetriever = new MediaMetadataRetriever();
-        try {
-            mediaExtractor.setDataSource(context, uri, (Map<String, String>) null);
-            mediaMetadataRetriever.setDataSource(context, uri);
-            String extractMetadata = mediaMetadataRetriever.extractMetadata(24);
-            if (extractMetadata != null) {
-                this.orientationHint = Integer.parseInt(extractMetadata);
-            }
-            String extractMetadata2 = mediaMetadataRetriever.extractMetadata(9);
-            this.duration = extractMetadata2 != null ? Long.parseLong(extractMetadata2) : -1L;
-            this.size = rl.g.g(context, uri);
-            a(mediaMetadataRetriever);
-        } catch (IOException e10) {
-            a(mediaMetadataRetriever);
-            throw new jl.b(b.a.DATA_SOURCE, uri, e10);
+        if (z10) {
+            abs = Math.abs(fArr[4]);
+        } else {
+            abs = Math.abs(f14);
         }
+        float f15 = 1.0f / abs;
+        if (z10) {
+            PointF pointF = cVar.f41370a;
+            f10 = pointF.x;
+            f11 = pointF.y * f15;
+        } else {
+            PointF pointF2 = cVar.f41370a;
+            f10 = pointF2.x * f15;
+            f11 = pointF2.y;
+        }
+        if (z10) {
+            PointF pointF3 = cVar.f41371b;
+            f12 = (pointF3.x * 2.0f) - 1.0f;
+            f13 = (1.0f - (pointF3.y * 2.0f)) * f15;
+        } else {
+            PointF pointF4 = cVar.f41371b;
+            f12 = ((pointF4.x * 2.0f) - 1.0f) * f15;
+            f13 = 1.0f - (pointF4.y * 2.0f);
+        }
+        float[] fArr2 = new float[16];
+        Matrix.setIdentityM(fArr2, 0);
+        Matrix.translateM(fArr2, 0, f12, f13, 0.0f);
+        Matrix.rotateM(fArr2, 0, cVar.f41372c, 0.0f, 0.0f, 1.0f);
+        Matrix.scaleM(fArr2, 0, f10, f11, 1.0f);
+        float[] fArr3 = new float[16];
+        Matrix.multiplyMM(fArr3, 0, fArr, 0, fArr2, 0);
+        return fArr3;
     }
 }

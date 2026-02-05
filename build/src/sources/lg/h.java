@@ -5,37 +5,37 @@ import java.util.Arrays;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    Object[] f36894a = new Object[8];
+    Object[] f36821a = new Object[8];
 
     /* renamed from: b  reason: collision with root package name */
-    int f36895b = 0;
+    int f36822b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    g f36896c;
+    g f36823c;
 
     public final h a(Object obj, Object obj2) {
-        int i10 = this.f36895b + 1;
-        Object[] objArr = this.f36894a;
+        int i10 = this.f36822b + 1;
+        Object[] objArr = this.f36821a;
         int length = objArr.length;
         int i11 = i10 + i10;
         if (i11 > length) {
-            this.f36894a = Arrays.copyOf(objArr, b.a(length, i11));
+            this.f36821a = Arrays.copyOf(objArr, b.a(length, i11));
         }
         w0.a(obj, obj2);
-        Object[] objArr2 = this.f36894a;
-        int i12 = this.f36895b;
+        Object[] objArr2 = this.f36821a;
+        int i12 = this.f36822b;
         int i13 = i12 + i12;
         objArr2[i13] = obj;
         objArr2[i13 + 1] = obj2;
-        this.f36895b = i12 + 1;
+        this.f36822b = i12 + 1;
         return this;
     }
 
     public final i b() {
-        g gVar = this.f36896c;
+        g gVar = this.f36823c;
         if (gVar == null) {
-            q g10 = q.g(this.f36895b, this.f36894a, this);
-            g gVar2 = this.f36896c;
+            q g10 = q.g(this.f36822b, this.f36821a, this);
+            g gVar2 = this.f36823c;
             if (gVar2 == null) {
                 return g10;
             }

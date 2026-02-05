@@ -28,8 +28,8 @@ public abstract class c {
 
     /* renamed from: n8.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static class C0516c extends FileNotFoundException {
-        public C0516c(String str) {
+    public static class C0518c extends FileNotFoundException {
+        public C0518c(String str) {
             super(str);
         }
     }
@@ -73,7 +73,7 @@ public abstract class c {
                     bVar = null;
                 }
             } else {
-                bVar = new C0516c(file.getAbsolutePath());
+                bVar = new C0518c(file.getAbsolutePath());
             }
         } else {
             bVar = new b(file2.getAbsolutePath());

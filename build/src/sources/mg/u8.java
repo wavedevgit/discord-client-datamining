@@ -1,26 +1,26 @@
 package mg;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class u8 implements ui.d {
+final class u8 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u8 f38491a = new u8();
+    static final u8 f38153a = new u8();
 
     static {
-        c.b a10 = ui.c.a("category");
+        c.b a10 = xi.c.a("category");
         l2 l2Var = new l2();
         l2Var.a(1);
         a10.b(l2Var.b()).a();
-        c.b a11 = ui.c.a("classificationConfidence");
+        c.b a11 = xi.c.a("classificationConfidence");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
         a11.b(l2Var2.b()).a();
-        c.b a12 = ui.c.a("trackingId");
+        c.b a12 = xi.c.a("trackingId");
         l2 l2Var3 = new l2();
         l2Var3.a(3);
         a12.b(l2Var3.b()).a();
-        c.b a13 = ui.c.a("labelCount");
+        c.b a13 = xi.c.a("labelCount");
         l2 l2Var4 = new l2();
         l2Var4.a(4);
         a13.b(l2Var4.b()).a();
@@ -29,10 +29,10 @@ final class u8 implements ui.d {
     private u8() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

@@ -2,7 +2,7 @@ package com.discord.emoji;
 
 import android.content.Context;
 import com.discord.emoji.UnicodeEmojis;
-import et.b0;
+import ht.b0;
 import java.io.InputStream;
 import java.util.zip.GZIPInputStream;
 import kotlin.Metadata;
@@ -36,7 +36,7 @@ public final class UnicodeEmojis$loadData$2 extends kotlin.coroutines.jvm.intern
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Json json;
-        rr.b.f();
+        ur.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             InputStream openRawResource = this.$context.getResources().openRawResource(R.raw.emojis_json);
@@ -45,8 +45,8 @@ public final class UnicodeEmojis$loadData$2 extends kotlin.coroutines.jvm.intern
                 json = UnicodeEmojis.emojiJsonParser;
                 json.a();
                 UnicodeEmojis.EmojiCategories emojiCategories = (UnicodeEmojis.EmojiCategories) b0.a(json, UnicodeEmojis.EmojiCategories.Companion.serializer(), gZIPInputStream);
-                wr.c.a(gZIPInputStream, null);
-                wr.c.a(openRawResource, null);
+                zr.c.a(gZIPInputStream, null);
+                zr.c.a(openRawResource, null);
                 return emojiCategories;
             } finally {
             }
@@ -57,6 +57,6 @@ public final class UnicodeEmojis$loadData$2 extends kotlin.coroutines.jvm.intern
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super UnicodeEmojis.EmojiCategories> continuation) {
-        return ((UnicodeEmojis$loadData$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((UnicodeEmojis$loadData$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

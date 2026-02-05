@@ -15,46 +15,46 @@ import l5.s;
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f50431a;
+    private final g f51203a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final f f50432b;
+    private final f f51204b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f50433a;
+        static final /* synthetic */ int[] f51205a;
 
         static {
             int[] iArr = new int[c.values().length];
-            f50433a = iArr;
+            f51205a = iArr;
             try {
                 iArr[c.ZIP.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f50433a[c.GZIP.ordinal()] = 2;
+                f51205a[c.GZIP.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
     }
 
     public h(g gVar, f fVar) {
-        this.f50431a = gVar;
-        this.f50432b = fVar;
+        this.f51203a = gVar;
+        this.f51204b = fVar;
     }
 
     private i a(Context context, String str, String str2) {
         g gVar;
         Pair a10;
         b0 C;
-        if (str2 == null || (gVar = this.f50431a) == null || (a10 = gVar.a(str)) == null) {
+        if (str2 == null || (gVar = this.f51203a) == null || (a10 = gVar.a(str)) == null) {
             return null;
         }
         InputStream inputStream = (InputStream) a10.second;
-        int i10 = a.f50433a[((c) a10.first).ordinal()];
+        int i10 = a.f51205a[((c) a10.first).ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 C = s.q(inputStream, str2);
@@ -81,9 +81,9 @@ public class h {
         Closeable closeable = null;
         try {
             try {
-                d a10 = this.f50432b.a(str);
+                d a10 = this.f51204b.a(str);
                 if (a10.isSuccessful()) {
-                    b0Var = e(context, str, a10.u0(), a10.m0(), str2);
+                    b0Var = e(context, str, a10.v0(), a10.n0(), str2);
                     StringBuilder sb2 = new StringBuilder();
                     sb2.append("Completed fetch from network. Success: ");
                     if (b0Var.b() != null) {
@@ -128,7 +128,7 @@ public class h {
 
     private b0 d(String str, InputStream inputStream, String str2) {
         g gVar;
-        if (str2 != null && (gVar = this.f50431a) != null) {
+        if (str2 != null && (gVar = this.f51203a) != null) {
             return s.q(new GZIPInputStream(new FileInputStream(gVar.g(str, inputStream, c.GZIP))), str);
         }
         return s.q(new GZIPInputStream(inputStream), null);
@@ -157,7 +157,7 @@ public class h {
             g10 = g(context, str, inputStream, str3);
             cVar = cVar2;
         }
-        if (str3 != null && g10.b() != null && (gVar = this.f50431a) != null) {
+        if (str3 != null && g10.b() != null && (gVar = this.f51203a) != null) {
             gVar.f(str, cVar);
         }
         return g10;
@@ -165,7 +165,7 @@ public class h {
 
     private b0 f(String str, InputStream inputStream, String str2) {
         g gVar;
-        if (str2 != null && (gVar = this.f50431a) != null) {
+        if (str2 != null && (gVar = this.f51203a) != null) {
             return s.q(new FileInputStream(gVar.g(str, inputStream, c.JSON).getAbsolutePath()), str);
         }
         return s.q(inputStream, null);
@@ -173,7 +173,7 @@ public class h {
 
     private b0 g(Context context, String str, InputStream inputStream, String str2) {
         g gVar;
-        if (str2 != null && (gVar = this.f50431a) != null) {
+        if (str2 != null && (gVar = this.f51203a) != null) {
             return s.C(context, new ZipInputStream(new FileInputStream(gVar.g(str, inputStream, c.ZIP))), str);
         }
         return s.C(context, new ZipInputStream(inputStream), null);

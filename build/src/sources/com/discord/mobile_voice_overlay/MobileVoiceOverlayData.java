@@ -6,7 +6,7 @@ import com.discord.primitives.ChannelId$$serializer;
 import com.discord.primitives.GuildId;
 import com.discord.primitives.GuildId$$serializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import dt.v1;
+import gt.v1;
 import java.util.List;
 import kotlin.Lazy;
 import kotlin.Metadata;
@@ -18,8 +18,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-@at.m
 @Metadata(d1 = {"\u0000d\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b)\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 L2\u00020\u0001:\u0002KLBm\u0012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\u0006\u0010\r\u001a\u00020\f\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u0012\u0006\u0010\u0010\u001a\u00020\u000f\u0012\u0006\u0010\u0011\u001a\u00020\u0012\u0012\u0006\u0010\u0013\u001a\u00020\u000f\u0012\f\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00150\u0003¢\u0006\u0004\b\u0016\u0010\u0017B\u008d\u0001\b\u0010\u0012\u0006\u0010\u0018\u001a\u00020\u0006\u0012\u000e\u0010\u0002\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\f\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u0012\u0006\u0010\u0010\u001a\u00020\u000f\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\u0006\u0010\u0013\u001a\u00020\u000f\u0012\u000e\u0010\u0014\u001a\n\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u0003\u0012\b\u0010\u0019\u001a\u0004\u0018\u00010\u001a¢\u0006\u0004\b\u0016\u0010\u001bJ\u000f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\t\u00100\u001a\u00020\u0006HÆ\u0003J\u0010\u00101\u001a\u0004\u0018\u00010\bHÆ\u0003¢\u0006\u0002\b2J\u0010\u00103\u001a\u00020\nHÆ\u0003¢\u0006\u0004\b4\u0010#J\t\u00105\u001a\u00020\fHÆ\u0003J\t\u00106\u001a\u00020\fHÆ\u0003J\t\u00107\u001a\u00020\u000fHÆ\u0003J\t\u00108\u001a\u00020\u000fHÆ\u0003J\t\u00109\u001a\u00020\u0012HÆ\u0003J\t\u0010:\u001a\u00020\u000fHÆ\u0003J\u000f\u0010;\u001a\b\u0012\u0004\u0012\u00020\u00150\u0003HÆ\u0003J\u008c\u0001\u0010<\u001a\u00020\u00002\u000e\b\u0002\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b2\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\r\u001a\u00020\f2\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\b\b\u0002\u0010\u0010\u001a\u00020\u000f2\b\b\u0002\u0010\u0011\u001a\u00020\u00122\b\b\u0002\u0010\u0013\u001a\u00020\u000f2\u000e\b\u0002\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00150\u0003HÆ\u0001¢\u0006\u0004\b=\u0010>J\u0013\u0010?\u001a\u00020\u000f2\b\u0010@\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010A\u001a\u00020\u0006HÖ\u0001J\t\u0010B\u001a\u00020\fHÖ\u0001J%\u0010C\u001a\u00020D2\u0006\u0010E\u001a\u00020\u00002\u0006\u0010F\u001a\u00020G2\u0006\u0010H\u001a\u00020IH\u0001¢\u0006\u0002\bJR\u0017\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001fR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b \u0010!R\u0013\u0010\t\u001a\u00020\n¢\u0006\n\n\u0002\u0010$\u001a\u0004\b\"\u0010#R\u0011\u0010\u000b\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b%\u0010&R\u0011\u0010\r\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b'\u0010&R\u0011\u0010\u000e\u001a\u00020\u000f¢\u0006\b\n\u0000\u001a\u0004\b(\u0010)R\u0011\u0010\u0010\u001a\u00020\u000f¢\u0006\b\n\u0000\u001a\u0004\b*\u0010)R\u0011\u0010\u0011\u001a\u00020\u0012¢\u0006\b\n\u0000\u001a\u0004\b+\u0010,R\u0011\u0010\u0013\u001a\u00020\u000f¢\u0006\b\n\u0000\u001a\u0004\b-\u0010)R\u0017\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00150\u0003¢\u0006\b\n\u0000\u001a\u0004\b.\u0010\u001d¨\u0006M"}, d2 = {"Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayData;", "", "users", "", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayDataUser;", "extraUsers", "", "guildId", "Lcom/discord/primitives/GuildId;", "channelId", "Lcom/discord/primitives/ChannelId;", NotificationRenderer.CHANNEL_NAME, "", "guildName", "deafened", "", "muted", "connectionQuality", "Lcom/discord/mobile_voice_overlay/ConnectionQuality;", "canGenerateInvite", "channelSelectorResults", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlaySelectorResult;", "<init>", "(Ljava/util/List;ILcom/discord/primitives/GuildId;JLjava/lang/String;Ljava/lang/String;ZZLcom/discord/mobile_voice_overlay/ConnectionQuality;ZLjava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/util/List;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/lang/String;ZZLcom/discord/mobile_voice_overlay/ConnectionQuality;ZLjava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getUsers", "()Ljava/util/List;", "getExtraUsers", "()I", "getGuildId-qOKuAAo", "()Lcom/discord/primitives/GuildId;", "getChannelId-o4g7jtM", "()J", "J", "getChannelName", "()Ljava/lang/String;", "getGuildName", "getDeafened", "()Z", "getMuted", "getConnectionQuality", "()Lcom/discord/mobile_voice_overlay/ConnectionQuality;", "getCanGenerateInvite", "getChannelSelectorResults", "component1", "component2", "component3", "component3-qOKuAAo", "component4", "component4-o4g7jtM", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "copy", "copy-HeAh3Ug", "(Ljava/util/List;ILcom/discord/primitives/GuildId;JLjava/lang/String;Ljava/lang/String;ZZLcom/discord/mobile_voice_overlay/ConnectionQuality;ZLjava/util/List;)Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayData;", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$mobile_voice_overlay_release", "$serializer", "Companion", "mobile_voice_overlay_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@dt.m
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class MobileVoiceOverlayData {
     @NotNull
@@ -60,22 +60,22 @@ public final class MobileVoiceOverlayData {
     }
 
     static {
-        lr.o oVar = lr.o.f37120e;
-        $childSerializers = new Lazy[]{lr.l.b(oVar, new Function0() { // from class: com.discord.mobile_voice_overlay.s
+        or.o oVar = or.o.f44232e;
+        $childSerializers = new Lazy[]{or.l.b(oVar, new Function0() { // from class: com.discord.mobile_voice_overlay.s
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_;
                 _childSerializers$_anonymous_ = MobileVoiceOverlayData._childSerializers$_anonymous_();
                 return _childSerializers$_anonymous_;
             }
-        }), null, null, null, null, null, null, null, lr.l.b(oVar, new Function0() { // from class: com.discord.mobile_voice_overlay.t
+        }), null, null, null, null, null, null, null, or.l.b(oVar, new Function0() { // from class: com.discord.mobile_voice_overlay.t
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_$0;
                 _childSerializers$_anonymous_$0 = MobileVoiceOverlayData._childSerializers$_anonymous_$0();
                 return _childSerializers$_anonymous_$0;
             }
-        }), null, lr.l.b(oVar, new Function0() { // from class: com.discord.mobile_voice_overlay.u
+        }), null, or.l.b(oVar, new Function0() { // from class: com.discord.mobile_voice_overlay.u
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_$1;
@@ -91,7 +91,7 @@ public final class MobileVoiceOverlayData {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new dt.f(MobileVoiceOverlayDataUser$$serializer.INSTANCE);
+        return new gt.f(MobileVoiceOverlayDataUser$$serializer.INSTANCE);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -101,7 +101,7 @@ public final class MobileVoiceOverlayData {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$1() {
-        return new dt.f(MobileVoiceOverlaySelectorResult$$serializer.INSTANCE);
+        return new gt.f(MobileVoiceOverlaySelectorResult$$serializer.INSTANCE);
     }
 
     /* renamed from: copy-HeAh3Ug$default  reason: not valid java name */
@@ -153,17 +153,17 @@ public final class MobileVoiceOverlayData {
 
     public static final /* synthetic */ void write$Self$mobile_voice_overlay_release(MobileVoiceOverlayData mobileVoiceOverlayData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
-        compositeEncoder.D(serialDescriptor, 0, (at.o) lazyArr[0].getValue(), mobileVoiceOverlayData.users);
-        compositeEncoder.w(serialDescriptor, 1, mobileVoiceOverlayData.extraUsers);
-        compositeEncoder.s(serialDescriptor, 2, GuildId$$serializer.INSTANCE, mobileVoiceOverlayData.guildId);
-        compositeEncoder.D(serialDescriptor, 3, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(mobileVoiceOverlayData.channelId));
-        compositeEncoder.y(serialDescriptor, 4, mobileVoiceOverlayData.channelName);
-        compositeEncoder.y(serialDescriptor, 5, mobileVoiceOverlayData.guildName);
-        compositeEncoder.x(serialDescriptor, 6, mobileVoiceOverlayData.deafened);
-        compositeEncoder.x(serialDescriptor, 7, mobileVoiceOverlayData.muted);
-        compositeEncoder.D(serialDescriptor, 8, (at.o) lazyArr[8].getValue(), mobileVoiceOverlayData.connectionQuality);
-        compositeEncoder.x(serialDescriptor, 9, mobileVoiceOverlayData.canGenerateInvite);
-        compositeEncoder.D(serialDescriptor, 10, (at.o) lazyArr[10].getValue(), mobileVoiceOverlayData.channelSelectorResults);
+        compositeEncoder.l(serialDescriptor, 0, (dt.o) lazyArr[0].getValue(), mobileVoiceOverlayData.users);
+        compositeEncoder.v(serialDescriptor, 1, mobileVoiceOverlayData.extraUsers);
+        compositeEncoder.A(serialDescriptor, 2, GuildId$$serializer.INSTANCE, mobileVoiceOverlayData.guildId);
+        compositeEncoder.l(serialDescriptor, 3, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(mobileVoiceOverlayData.channelId));
+        compositeEncoder.x(serialDescriptor, 4, mobileVoiceOverlayData.channelName);
+        compositeEncoder.x(serialDescriptor, 5, mobileVoiceOverlayData.guildName);
+        compositeEncoder.w(serialDescriptor, 6, mobileVoiceOverlayData.deafened);
+        compositeEncoder.w(serialDescriptor, 7, mobileVoiceOverlayData.muted);
+        compositeEncoder.l(serialDescriptor, 8, (dt.o) lazyArr[8].getValue(), mobileVoiceOverlayData.connectionQuality);
+        compositeEncoder.w(serialDescriptor, 9, mobileVoiceOverlayData.canGenerateInvite);
+        compositeEncoder.l(serialDescriptor, 10, (dt.o) lazyArr[10].getValue(), mobileVoiceOverlayData.channelSelectorResults);
     }
 
     @NotNull

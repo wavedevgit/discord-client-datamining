@@ -1,55 +1,51 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun96920: for (var _fun96920_ip = 0;;) switch (_fun96920_ip) {
-        case 0:
-            var1 = {};
-            var1 = var1.propertyIsEnumerable;
-            var2 = global;
-            var2 = var2.Object;
-            var2 = var2.getOwnPropertyDescriptor;
-            var _closure1_slot0 = var2;
-            if (!var2) {
-                _fun96920_ip = 57;
-                continue _fun96920
-            }
-        case 31:
-            var5 = var1.call;
-            var4 = {};
-            var3 = 2;
-            var4[1] = var3;
-            var3 = 1;
-            var3 = var5.bind(var1)(var4, var3);
-            var2 = !var3;
-        case 57:
-            if (!var2) {
-                _fun96920_ip = 67;
-                continue _fun96920
-            }
-        case 60:
-            var1 = function arg0() {
-                _fun96921: for (var _fun96921_ip = 0;;) switch (_fun96921_ip) {
-                    case 0:
-                        var3 = _closure1_slot0;
-                        var2 = undefined;
-                        var1 = this;
-                        var0 = arg0;
-                        var1 = var3.bind(var2)(var1, var0);
-                        var2 = !var1;
-                        var0 = !var2;
-                        if (var2) {
-                            _fun96921_ip = 35;
-                            continue _fun96921
-                        }
-                    case 30:
-                        var0 = var1.enumerable;
-                    case 35:
-                        return var0;
+    var2 = 0;
+    var _closure1_slot0 = var2;
+    var0 = global;
+    var3 = var0.Math;
+    var0 = var3.random;
+    var0 = var0.bind(var3)();
+    var _closure1_slot1 = var0;
+    var0 = dependencyMap;
+    var3 = var0[var2];
+    var2 = require;
+    var0 = undefined;
+    var3 = var2.bind(var0)(var3);
+    var2 = 1;
+    var2 = var2.toString;
+    var2 = var3.bind(var0)(var2);
+    var _closure1_slot2 = var2;
+    var2 = function(arg0) { // Environment: var1
+        _fun96904: for (var _fun96904_ip = 0;;) switch (_fun96904_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = '';
+                var4 = undefined;
+                if (!(var4 !== var0)) {
+                    _fun96904_ip = 16;
+                    continue _fun96904
                 }
-            };
-        case 67:
-            var0 = arg5;
-            var0.f = var1;
-            var0 = undefined;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+            case 13:
+                var1 = var0;
+            case 16:
+                var0 = 'Symbol(';
+                var2 = var0 + var1;
+                var3 = _closure1_slot2;
+                var1 = _closure1_slot0;
+                var1 = var1 + 1;
+                _closure1_slot0 = var1;
+                var0 = _closure1_slot1;
+                var1 = var1 + var0;
+                var0 = 36;
+                var1 = var3.bind(var4)(var1, var0);
+                var0 = ')_';
+                var0 = var2 + var0;
+                var0 = var0 + var1;
+                return var0;
+        }
+    };
+    var1 = arg4;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12665]);

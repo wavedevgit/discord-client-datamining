@@ -62,30 +62,30 @@ public final class QRCode_QRCodeComponentStyleJsonAdapter extends h {
     @NotNull
     public QRCode.QRCodeComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         AttributeStyles.QRCodeWidthStyle qRCodeWidthStyle = null;
         AttributeStyles.QRCodeJustifyStyle qRCodeJustifyStyle = null;
         AttributeStyles.QRCodeMarginStyle qRCodeMarginStyle = null;
         AttributeStyles.QRCodeStrokeColorStyle qRCodeStrokeColorStyle = null;
         AttributeStyles.QRCodeFillColorStyle qRCodeFillColorStyle = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 qRCodeWidthStyle = (AttributeStyles.QRCodeWidthStyle) this.nullableQRCodeWidthStyleAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 qRCodeJustifyStyle = (AttributeStyles.QRCodeJustifyStyle) this.nullableQRCodeJustifyStyleAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 qRCodeMarginStyle = (AttributeStyles.QRCodeMarginStyle) this.nullableQRCodeMarginStyleAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 qRCodeStrokeColorStyle = (AttributeStyles.QRCodeStrokeColorStyle) this.nullableQRCodeStrokeColorStyleAdapter.fromJson(reader);
-            } else if (A0 == 4) {
+            } else if (W == 4) {
                 qRCodeFillColorStyle = (AttributeStyles.QRCodeFillColorStyle) this.nullableQRCodeFillColorStyleAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new QRCode.QRCodeComponentStyle(qRCodeWidthStyle, qRCodeJustifyStyle, qRCodeMarginStyle, qRCodeStrokeColorStyle, qRCodeFillColorStyle);
     }
 
@@ -93,16 +93,16 @@ public final class QRCode_QRCodeComponentStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, QRCode.QRCodeComponentStyle qRCodeComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (qRCodeComponentStyle != null) {
-            writer.l();
-            writer.A0("width");
+            writer.k();
+            writer.W("width");
             this.nullableQRCodeWidthStyleAdapter.toJson(writer, qRCodeComponentStyle.getWidth());
-            writer.A0("justify");
+            writer.W("justify");
             this.nullableQRCodeJustifyStyleAdapter.toJson(writer, qRCodeComponentStyle.getJustify());
-            writer.A0(ViewProps.MARGIN);
+            writer.W(ViewProps.MARGIN);
             this.nullableQRCodeMarginStyleAdapter.toJson(writer, qRCodeComponentStyle.getMargin());
-            writer.A0("strokeColor");
+            writer.W("strokeColor");
             this.nullableQRCodeStrokeColorStyleAdapter.toJson(writer, qRCodeComponentStyle.getStrokeColor());
-            writer.A0("fillColor");
+            writer.W("fillColor");
             this.nullableQRCodeFillColorStyleAdapter.toJson(writer, qRCodeComponentStyle.getFillColor());
             writer.E();
             return;

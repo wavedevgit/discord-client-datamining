@@ -1,32 +1,42 @@
 package ln;
 
-import com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy;
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.events.Event;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a implements ChildrenDrawingOrderStrategy {
+public final class a extends Event {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f36980a;
+    public static final C0484a f36948a = new C0484a(null);
 
-    public a(boolean z10) {
-        this.f36980a = z10;
+    /* renamed from: ln.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0484a {
+        public /* synthetic */ C0484a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private C0484a() {
+        }
     }
 
-    public boolean b() {
-        return this.f36980a;
+    public a(int i10, int i11) {
+        super(i10, i11);
     }
 
-    @Override // com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy
-    public void disable() {
-        this.f36980a = false;
+    @Override // com.facebook.react.uimanager.events.Event
+    public short getCoalescingKey() {
+        return (short) 0;
     }
 
-    @Override // com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy
-    public void enable() {
-        this.f36980a = true;
+    @Override // com.facebook.react.uimanager.events.Event
+    protected WritableMap getEventData() {
+        return Arguments.createMap();
     }
 
-    public /* synthetic */ a(boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? false : z10);
+    @Override // com.facebook.react.uimanager.events.Event
+    public String getEventName() {
+        return "topAttached";
     }
 }

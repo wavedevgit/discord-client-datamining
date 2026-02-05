@@ -93,4 +93,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.CHAT_INPUT_HEIGHT = var3;
     var2.CHAT_INPUT_TIMING_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4884, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4886, 2]);

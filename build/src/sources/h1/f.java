@@ -3,15 +3,15 @@ package h1;
 class f implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object[] f26736a;
+    private final Object[] f25577a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f26737b;
+    private int f25578b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(int i10) {
         if (i10 > 0) {
-            this.f26736a = new Object[i10];
+            this.f25577a = new Object[i10];
             return;
         }
         throw new IllegalArgumentException("The max pool size must be > 0");
@@ -24,36 +24,36 @@ class f implements e {
         }
         for (int i11 = 0; i11 < i10; i11++) {
             Object obj = objArr[i11];
-            int i12 = this.f26737b;
-            Object[] objArr2 = this.f26736a;
+            int i12 = this.f25578b;
+            Object[] objArr2 = this.f25577a;
             if (i12 < objArr2.length) {
                 objArr2[i12] = obj;
-                this.f26737b = i12 + 1;
+                this.f25578b = i12 + 1;
             }
         }
     }
 
     @Override // h1.e
     public Object acquire() {
-        int i10 = this.f26737b;
+        int i10 = this.f25578b;
         if (i10 <= 0) {
             return null;
         }
         int i11 = i10 - 1;
-        Object[] objArr = this.f26736a;
+        Object[] objArr = this.f25577a;
         Object obj = objArr[i11];
         objArr[i11] = null;
-        this.f26737b = i10 - 1;
+        this.f25578b = i10 - 1;
         return obj;
     }
 
     @Override // h1.e
     public boolean release(Object obj) {
-        int i10 = this.f26737b;
-        Object[] objArr = this.f26736a;
+        int i10 = this.f25578b;
+        Object[] objArr = this.f25577a;
         if (i10 < objArr.length) {
             objArr[i10] = obj;
-            this.f26737b = i10 + 1;
+            this.f25578b = i10 + 1;
             return true;
         }
         return false;

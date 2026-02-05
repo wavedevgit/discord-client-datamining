@@ -3,31 +3,31 @@ package com.google.android.renderscript;
 public final class Range2d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f15853a;
+    private final int f16247a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f15854b;
+    private final int f16248b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f15855c;
+    private final int f16249c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f15856d;
+    private final int f16250d;
 
     public final int a() {
-        return this.f15854b;
+        return this.f16248b;
     }
 
     public final int b() {
-        return this.f15856d;
+        return this.f16250d;
     }
 
     public final int c() {
-        return this.f15853a;
+        return this.f16247a;
     }
 
     public final int d() {
-        return this.f15855c;
+        return this.f16249c;
     }
 
     public boolean equals(Object obj) {
@@ -36,20 +36,20 @@ public final class Range2d {
         }
         if (obj instanceof Range2d) {
             Range2d range2d = (Range2d) obj;
-            return this.f15853a == range2d.f15853a && this.f15854b == range2d.f15854b && this.f15855c == range2d.f15855c && this.f15856d == range2d.f15856d;
+            return this.f16247a == range2d.f16247a && this.f16248b == range2d.f16248b && this.f16249c == range2d.f16249c && this.f16250d == range2d.f16250d;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((Integer.hashCode(this.f15853a) * 31) + Integer.hashCode(this.f15854b)) * 31) + Integer.hashCode(this.f15855c)) * 31) + Integer.hashCode(this.f15856d);
+        return (((((Integer.hashCode(this.f16247a) * 31) + Integer.hashCode(this.f16248b)) * 31) + Integer.hashCode(this.f16249c)) * 31) + Integer.hashCode(this.f16250d);
     }
 
     public String toString() {
-        int i10 = this.f15853a;
-        int i11 = this.f15854b;
-        int i12 = this.f15855c;
-        int i13 = this.f15856d;
+        int i10 = this.f16247a;
+        int i11 = this.f16248b;
+        int i12 = this.f16249c;
+        int i13 = this.f16250d;
         return "Range2d(startX=" + i10 + ", endX=" + i11 + ", startY=" + i12 + ", endY=" + i13 + ")";
     }
 }

@@ -13,16 +13,16 @@ import w5.c;
 public abstract class w {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f51183a = c.a.a("w", "h", "ip", "op", "fr", "v", "layers", "assets", "fonts", "chars", "markers");
+    private static final c.a f51872a = c.a.a("w", "h", "ip", "op", "fr", "v", "layers", "assets", "fonts", "chars", "markers");
 
     /* renamed from: b  reason: collision with root package name */
-    static c.a f51184b = c.a.a(StackTraceHelper.ID_KEY, "layers", "w", "h", "p", "u");
+    static c.a f51873b = c.a.a(StackTraceHelper.ID_KEY, "layers", "w", "h", "p", "u");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c.a f51185c = c.a.a("list");
+    private static final c.a f51874c = c.a.a("list");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final c.a f51186d = c.a.a("cm", "tm", "dr");
+    private static final c.a f51875d = c.a.a("cm", "tm", "dr");
 
     public static l5.i a(w5.c cVar) {
         float f10;
@@ -36,14 +36,14 @@ public abstract class w {
         ArrayList arrayList2 = new ArrayList();
         SparseArrayCompat sparseArrayCompat = new SparseArrayCompat();
         l5.i iVar = new l5.i();
-        cVar2.r();
+        cVar2.s();
         float f11 = 0.0f;
         float f12 = 0.0f;
         float f13 = 0.0f;
         int i10 = 0;
         int i11 = 0;
         while (cVar2.hasNext()) {
-            switch (cVar2.B(f51183a)) {
+            switch (cVar2.y(f51872a)) {
                 case 0:
                     i10 = cVar.nextInt();
                     cVar2 = cVar;
@@ -98,24 +98,24 @@ public abstract class w {
     }
 
     private static void b(w5.c cVar, l5.i iVar, Map map, Map map2) {
-        cVar.u();
+        cVar.v();
         while (cVar.hasNext()) {
             ArrayList arrayList = new ArrayList();
             u0.j jVar = new u0.j();
-            cVar.r();
+            cVar.s();
             int i10 = 0;
             int i11 = 0;
             String str = null;
             String str2 = null;
             String str3 = null;
             while (cVar.hasNext()) {
-                int B = cVar.B(f51184b);
-                if (B != 0) {
-                    if (B != 1) {
-                        if (B != 2) {
-                            if (B != 3) {
-                                if (B != 4) {
-                                    if (B != 5) {
+                int y10 = cVar.y(f51873b);
+                if (y10 != 0) {
+                    if (y10 != 1) {
+                        if (y10 != 2) {
+                            if (y10 != 3) {
+                                if (y10 != 4) {
+                                    if (y10 != 5) {
                                         cVar.E();
                                         cVar.P();
                                     } else {
@@ -131,19 +131,19 @@ public abstract class w {
                             i10 = cVar.nextInt();
                         }
                     } else {
-                        cVar.u();
+                        cVar.v();
                         while (cVar.hasNext()) {
                             t5.e b10 = v.b(cVar, iVar);
                             jVar.g(b10.e(), b10);
                             arrayList.add(b10);
                         }
-                        cVar.s();
+                        cVar.t();
                     }
                 } else {
                     str = cVar.f1();
                 }
             }
-            cVar.y();
+            cVar.z();
             if (str2 != null) {
                 l5.w wVar = new l5.w(i10, i11, str, str2, str3);
                 map2.put(wVar.e(), wVar);
@@ -151,38 +151,38 @@ public abstract class w {
                 map.put(str, arrayList);
             }
         }
-        cVar.s();
+        cVar.t();
     }
 
     private static void c(w5.c cVar, l5.i iVar, SparseArrayCompat sparseArrayCompat) {
-        cVar.u();
+        cVar.v();
         while (cVar.hasNext()) {
             q5.d a10 = m.a(cVar, iVar);
             sparseArrayCompat.k(a10.hashCode(), a10);
         }
-        cVar.s();
+        cVar.t();
     }
 
     private static void d(w5.c cVar, Map map) {
-        cVar.r();
+        cVar.s();
         while (cVar.hasNext()) {
-            if (cVar.B(f51185c) != 0) {
+            if (cVar.y(f51874c) != 0) {
                 cVar.E();
                 cVar.P();
             } else {
-                cVar.u();
+                cVar.v();
                 while (cVar.hasNext()) {
                     q5.c a10 = n.a(cVar);
                     map.put(a10.b(), a10);
                 }
-                cVar.s();
+                cVar.t();
             }
         }
-        cVar.y();
+        cVar.z();
     }
 
     private static void e(w5.c cVar, l5.i iVar, List list, u0.j jVar) {
-        cVar.u();
+        cVar.v();
         int i10 = 0;
         while (cVar.hasNext()) {
             t5.e b10 = v.b(cVar, iVar);
@@ -195,21 +195,21 @@ public abstract class w {
                 x5.d.c("You have " + i10 + " images. Lottie should primarily be used with shapes. If you are using Adobe Illustrator, convert the Illustrator layers to shape layers.");
             }
         }
-        cVar.s();
+        cVar.t();
     }
 
     private static void f(w5.c cVar, List list) {
-        cVar.u();
+        cVar.v();
         while (cVar.hasNext()) {
-            cVar.r();
+            cVar.s();
             float f10 = 0.0f;
             String str = null;
             float f11 = 0.0f;
             while (cVar.hasNext()) {
-                int B = cVar.B(f51186d);
-                if (B != 0) {
-                    if (B != 1) {
-                        if (B != 2) {
+                int y10 = cVar.y(f51875d);
+                if (y10 != 0) {
+                    if (y10 != 1) {
+                        if (y10 != 2) {
                             cVar.E();
                             cVar.P();
                         } else {
@@ -222,9 +222,9 @@ public abstract class w {
                     str = cVar.f1();
                 }
             }
-            cVar.y();
+            cVar.z();
             list.add(new q5.h(str, f10, f11));
         }
-        cVar.s();
+        cVar.t();
     }
 }

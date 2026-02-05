@@ -3,7 +3,7 @@ package w0;
 public abstract class x {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f51824a = new Object();
+    private static final Object f52481a = new Object();
 
     public static final int a(int i10) {
         int i11 = 306783378 & i10;

@@ -1,63 +1,79 @@
 package cq;
 
-import android.text.Editable;
+import android.content.Context;
 import android.view.View;
-import android.widget.EditText;
-import com.google.android.material.textfield.TextInputLayout;
-import kotlin.collections.CollectionsKt;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Filter;
+import android.widget.TextView;
+import com.withpersona.sdk2.inquiry.network.dto.ui.styling.TextBasedComponentStyle;
+import iq.f0;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
-import yp.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public final class a extends ArrayAdapter {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f19805a = new a();
+    /* renamed from: d  reason: collision with root package name */
+    private final List f20005d;
 
-    private a() {
+    /* renamed from: e  reason: collision with root package name */
+    private final TextBasedComponentStyle f20006e;
+
+    /* renamed from: cq.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private final class C0271a extends Filter {
+        public C0271a() {
+        }
+
+        @Override // android.widget.Filter
+        protected Filter.FilterResults performFiltering(CharSequence charSequence) {
+            Filter.FilterResults filterResults = new Filter.FilterResults();
+            filterResults.values = a.this.a();
+            filterResults.count = a.this.a().size();
+            return filterResults;
+        }
+
+        @Override // android.widget.Filter
+        protected void publishResults(CharSequence charSequence, Filter.FilterResults filterResults) {
+            a.this.notifyDataSetChanged();
+        }
     }
 
-    public final String a(View view) {
-        Editable editable;
-        Editable editable2;
-        Editable editable3;
-        Intrinsics.checkNotNullParameter(view, "view");
-        TextInputLayout textInputLayout = (TextInputLayout) view.findViewById(e.f55204u0);
-        TextInputLayout textInputLayout2 = (TextInputLayout) view.findViewById(e.B0);
-        TextInputLayout textInputLayout3 = (TextInputLayout) view.findViewById(e.L);
-        EditText editText = ((TextInputLayout) view.findViewById(e.G)).getEditText();
-        Editable editable4 = null;
-        if (editText != null) {
-            editable = editText.getText();
-        } else {
-            editable = null;
-        }
-        String valueOf = String.valueOf(editable);
-        EditText editText2 = textInputLayout.getEditText();
-        if (editText2 != null) {
-            editable2 = editText2.getText();
-        } else {
-            editable2 = null;
-        }
-        String valueOf2 = String.valueOf(editable2);
-        EditText editText3 = textInputLayout2.getEditText();
-        if (editText3 != null) {
-            editable3 = editText3.getText();
-        } else {
-            editable3 = null;
-        }
-        String valueOf3 = String.valueOf(editable3);
-        EditText editText4 = textInputLayout3.getEditText();
-        if (editText4 != null) {
-            editable4 = editText4.getText();
-        }
-        return CollectionsKt.x0(CollectionsKt.o(valueOf, valueOf2, valueOf3, String.valueOf(editable4)), "", null, null, 0, null, null, 62, null);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a(Context context, int i10, List objects, TextBasedComponentStyle textBasedComponentStyle) {
+        super(context, i10, objects);
+        Intrinsics.checkNotNullParameter(context, "context");
+        Intrinsics.checkNotNullParameter(objects, "objects");
+        this.f20005d = objects;
+        this.f20006e = textBasedComponentStyle;
     }
 
-    public final boolean b(View view) {
-        Intrinsics.checkNotNullParameter(view, "view");
-        if (a(view).length() == 4) {
-            return true;
+    public final List a() {
+        return this.f20005d;
+    }
+
+    @Override // android.widget.ArrayAdapter, android.widget.Filterable
+    public Filter getFilter() {
+        return new C0271a();
+    }
+
+    @Override // android.widget.ArrayAdapter, android.widget.Adapter
+    public View getView(int i10, View view, ViewGroup parent) {
+        TextView textView;
+        Intrinsics.checkNotNullParameter(parent, "parent");
+        View view2 = super.getView(i10, view, parent);
+        Intrinsics.checkNotNullExpressionValue(view2, "getView(...)");
+        TextBasedComponentStyle textBasedComponentStyle = this.f20006e;
+        if (textBasedComponentStyle != null) {
+            if (view2 instanceof TextView) {
+                textView = (TextView) view2;
+            } else {
+                textView = null;
+            }
+            if (textView != null) {
+                f0.n(textView, textBasedComponentStyle, null, 2, null);
+            }
         }
-        return false;
+        return view2;
     }
 }

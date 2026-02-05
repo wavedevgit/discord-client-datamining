@@ -77,7 +77,7 @@ public final class InputRadioGroup_InputRadioGroupComponentStyleJsonAdapter exte
     @NotNull
     public InputRadioGroup.InputRadioGroupComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         AttributeStyles.TextBasedMarginStyle textBasedMarginStyle = null;
         AttributeStyles.InputRadioGroupFontFamilyStyle inputRadioGroupFontFamilyStyle = null;
         AttributeStyles.InputRadioGroupFontSizeStyle inputRadioGroupFontSizeStyle = null;
@@ -87,7 +87,7 @@ public final class InputRadioGroup_InputRadioGroupComponentStyleJsonAdapter exte
         AttributeStyles.InputRadioGroupTextColorStyle inputRadioGroupTextColorStyle = null;
         AttributeStyles.TextBasedTextColorStyle textBasedTextColorStyle = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -118,7 +118,7 @@ public final class InputRadioGroup_InputRadioGroupComponentStyleJsonAdapter exte
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new InputRadioGroup.InputRadioGroupComponentStyle(textBasedMarginStyle, inputRadioGroupFontFamilyStyle, inputRadioGroupFontSizeStyle, inputRadioGroupFontWeightStyle, inputRadioGroupLetterSpacingStyle, inputRadioGroupLineHeightStyle, inputRadioGroupTextColorStyle, textBasedTextColorStyle);
     }
 
@@ -126,22 +126,22 @@ public final class InputRadioGroup_InputRadioGroupComponentStyleJsonAdapter exte
     public void toJson(@NotNull t writer, InputRadioGroup.InputRadioGroupComponentStyle inputRadioGroupComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputRadioGroupComponentStyle != null) {
-            writer.l();
-            writer.A0(ViewProps.MARGIN);
+            writer.k();
+            writer.W(ViewProps.MARGIN);
             this.nullableTextBasedMarginStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getMargin());
-            writer.A0(ViewProps.FONT_FAMILY);
+            writer.W(ViewProps.FONT_FAMILY);
             this.nullableInputRadioGroupFontFamilyStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getFontFamily());
-            writer.A0(ViewProps.FONT_SIZE);
+            writer.W(ViewProps.FONT_SIZE);
             this.nullableInputRadioGroupFontSizeStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getFontSize());
-            writer.A0(ViewProps.FONT_WEIGHT);
+            writer.W(ViewProps.FONT_WEIGHT);
             this.nullableInputRadioGroupFontWeightStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getFontWeight());
-            writer.A0(ViewProps.LETTER_SPACING);
+            writer.W(ViewProps.LETTER_SPACING);
             this.nullableInputRadioGroupLetterSpacingStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getLetterSpacing());
-            writer.A0(ViewProps.LINE_HEIGHT);
+            writer.W(ViewProps.LINE_HEIGHT);
             this.nullableInputRadioGroupLineHeightStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getLineHeight());
-            writer.A0("textColor");
+            writer.W("textColor");
             this.nullableInputRadioGroupTextColorStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getTextColor());
-            writer.A0("textColorHighlight");
+            writer.W("textColorHighlight");
             this.nullableTextBasedTextColorStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getTextColorHighlight());
             writer.E();
             return;

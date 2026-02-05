@@ -14,34 +14,34 @@ import java.util.Set;
 public abstract class y {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h.e f17638a = new c();
+    public static final h.e f18044a = new c();
 
     /* renamed from: b  reason: collision with root package name */
-    static final com.squareup.moshi.h f17639b = new d();
+    static final com.squareup.moshi.h f18045b = new d();
 
     /* renamed from: c  reason: collision with root package name */
-    static final com.squareup.moshi.h f17640c = new e();
+    static final com.squareup.moshi.h f18046c = new e();
 
     /* renamed from: d  reason: collision with root package name */
-    static final com.squareup.moshi.h f17641d = new f();
+    static final com.squareup.moshi.h f18047d = new f();
 
     /* renamed from: e  reason: collision with root package name */
-    static final com.squareup.moshi.h f17642e = new g();
+    static final com.squareup.moshi.h f18048e = new g();
 
     /* renamed from: f  reason: collision with root package name */
-    static final com.squareup.moshi.h f17643f = new h();
+    static final com.squareup.moshi.h f18049f = new h();
 
     /* renamed from: g  reason: collision with root package name */
-    static final com.squareup.moshi.h f17644g = new i();
+    static final com.squareup.moshi.h f18050g = new i();
 
     /* renamed from: h  reason: collision with root package name */
-    static final com.squareup.moshi.h f17645h = new j();
+    static final com.squareup.moshi.h f18051h = new j();
 
     /* renamed from: i  reason: collision with root package name */
-    static final com.squareup.moshi.h f17646i = new k();
+    static final com.squareup.moshi.h f18052i = new k();
 
     /* renamed from: j  reason: collision with root package name */
-    static final com.squareup.moshi.h f17647j = new a();
+    static final com.squareup.moshi.h f18053j = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends com.squareup.moshi.h {
@@ -69,33 +69,33 @@ public abstract class y {
     static /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f17648a;
+        static final /* synthetic */ int[] f18054a;
 
         static {
             int[] iArr = new int[m.c.values().length];
-            f17648a = iArr;
+            f18054a = iArr;
             try {
                 iArr[m.c.BEGIN_ARRAY.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f17648a[m.c.BEGIN_OBJECT.ordinal()] = 2;
+                f18054a[m.c.BEGIN_OBJECT.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f17648a[m.c.STRING.ordinal()] = 3;
+                f18054a[m.c.STRING.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f17648a[m.c.NUMBER.ordinal()] = 4;
+                f18054a[m.c.NUMBER.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f17648a[m.c.BOOLEAN.ordinal()] = 5;
+                f18054a[m.c.BOOLEAN.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f17648a[m.c.NULL.ordinal()] = 6;
+                f18054a[m.c.NULL.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
         }
@@ -112,61 +112,61 @@ public abstract class y {
                 return null;
             }
             if (type == Boolean.TYPE) {
-                return y.f17639b;
+                return y.f18045b;
             }
             if (type == Byte.TYPE) {
-                return y.f17640c;
+                return y.f18046c;
             }
             if (type == Character.TYPE) {
-                return y.f17641d;
+                return y.f18047d;
             }
             if (type == Double.TYPE) {
-                return y.f17642e;
+                return y.f18048e;
             }
             if (type == Float.TYPE) {
-                return y.f17643f;
+                return y.f18049f;
             }
             if (type == Integer.TYPE) {
-                return y.f17644g;
+                return y.f18050g;
             }
             if (type == Long.TYPE) {
-                return y.f17645h;
+                return y.f18051h;
             }
             if (type == Short.TYPE) {
-                return y.f17646i;
+                return y.f18052i;
             }
             if (type == Boolean.class) {
-                return y.f17639b.nullSafe();
+                return y.f18045b.nullSafe();
             }
             if (type == Byte.class) {
-                return y.f17640c.nullSafe();
+                return y.f18046c.nullSafe();
             }
             if (type == Character.class) {
-                return y.f17641d.nullSafe();
+                return y.f18047d.nullSafe();
             }
             if (type == Double.class) {
-                return y.f17642e.nullSafe();
+                return y.f18048e.nullSafe();
             }
             if (type == Float.class) {
-                return y.f17643f.nullSafe();
+                return y.f18049f.nullSafe();
             }
             if (type == Integer.class) {
-                return y.f17644g.nullSafe();
+                return y.f18050g.nullSafe();
             }
             if (type == Long.class) {
-                return y.f17645h.nullSafe();
+                return y.f18051h.nullSafe();
             }
             if (type == Short.class) {
-                return y.f17646i.nullSafe();
+                return y.f18052i.nullSafe();
             }
             if (type == String.class) {
-                return y.f17647j.nullSafe();
+                return y.f18053j.nullSafe();
             }
             if (type == Object.class) {
                 return new m(wVar).nullSafe();
             }
             Class g10 = a0.g(type);
-            com.squareup.moshi.h d10 = vm.c.d(wVar, type, g10);
+            com.squareup.moshi.h d10 = ym.c.d(wVar, type, g10);
             if (d10 != null) {
                 return d10;
             }
@@ -185,7 +185,7 @@ public abstract class y {
         @Override // com.squareup.moshi.h
         /* renamed from: a */
         public Boolean fromJson(com.squareup.moshi.m mVar) {
-            return Boolean.valueOf(mVar.l());
+            return Boolean.valueOf(mVar.k());
         }
 
         @Override // com.squareup.moshi.h
@@ -233,7 +233,7 @@ public abstract class y {
             if (f12.length() <= 1) {
                 return Character.valueOf(f12.charAt(0));
             }
-            throw new com.squareup.moshi.j(String.format("Expected %s but was %s at path %s", "a char", '\"' + f12 + '\"', mVar.q()));
+            throw new com.squareup.moshi.j(String.format("Expected %s but was %s at path %s", "a char", '\"' + f12 + '\"', mVar.r()));
         }
 
         @Override // com.squareup.moshi.h
@@ -279,7 +279,7 @@ public abstract class y {
         public Float fromJson(com.squareup.moshi.m mVar) {
             float nextDouble = (float) mVar.nextDouble();
             if (!mVar.h() && Float.isInfinite(nextDouble)) {
-                throw new com.squareup.moshi.j("JSON forbids NaN and infinities: " + nextDouble + " at path " + mVar.q());
+                throw new com.squareup.moshi.j("JSON forbids NaN and infinities: " + nextDouble + " at path " + mVar.r());
             }
             return Float.valueOf(nextDouble);
         }
@@ -366,32 +366,32 @@ public abstract class y {
     static final class l extends com.squareup.moshi.h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Class f17649a;
+        private final Class f18055a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String[] f17650b;
+        private final String[] f18056b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Enum[] f17651c;
+        private final Enum[] f18057c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final m.b f17652d;
+        private final m.b f18058d;
 
         l(Class cls) {
-            this.f17649a = cls;
+            this.f18055a = cls;
             try {
                 Enum[] enumArr = (Enum[]) cls.getEnumConstants();
-                this.f17651c = enumArr;
-                this.f17650b = new String[enumArr.length];
+                this.f18057c = enumArr;
+                this.f18056b = new String[enumArr.length];
                 int i10 = 0;
                 while (true) {
-                    Enum[] enumArr2 = this.f17651c;
+                    Enum[] enumArr2 = this.f18057c;
                     if (i10 < enumArr2.length) {
                         String name = enumArr2[i10].name();
-                        this.f17650b[i10] = vm.c.n(name, cls.getField(name));
+                        this.f18056b[i10] = ym.c.n(name, cls.getField(name));
                         i10++;
                     } else {
-                        this.f17652d = m.b.a(this.f17650b);
+                        this.f18058d = m.b.a(this.f18056b);
                         return;
                     }
                 }
@@ -403,23 +403,23 @@ public abstract class y {
         @Override // com.squareup.moshi.h
         /* renamed from: a */
         public Enum fromJson(com.squareup.moshi.m mVar) {
-            int C0 = mVar.C0(this.f17652d);
+            int C0 = mVar.C0(this.f18058d);
             if (C0 != -1) {
-                return this.f17651c[C0];
+                return this.f18057c[C0];
             }
-            String q10 = mVar.q();
+            String r10 = mVar.r();
             String f12 = mVar.f1();
-            throw new com.squareup.moshi.j("Expected one of " + Arrays.asList(this.f17650b) + " but was " + f12 + " at path " + q10);
+            throw new com.squareup.moshi.j("Expected one of " + Arrays.asList(this.f18056b) + " but was " + f12 + " at path " + r10);
         }
 
         @Override // com.squareup.moshi.h
         /* renamed from: b */
         public void toJson(t tVar, Enum r32) {
-            tVar.x1(this.f17650b[r32.ordinal()]);
+            tVar.x1(this.f18056b[r32.ordinal()]);
         }
 
         public String toString() {
-            return "JsonAdapter(" + this.f17649a.getName() + ")";
+            return "JsonAdapter(" + this.f18055a.getName() + ")";
         }
     }
 
@@ -427,30 +427,30 @@ public abstract class y {
     static final class m extends com.squareup.moshi.h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final w f17653a;
+        private final w f18059a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final com.squareup.moshi.h f17654b;
+        private final com.squareup.moshi.h f18060b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final com.squareup.moshi.h f17655c;
+        private final com.squareup.moshi.h f18061c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final com.squareup.moshi.h f17656d;
+        private final com.squareup.moshi.h f18062d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final com.squareup.moshi.h f17657e;
+        private final com.squareup.moshi.h f18063e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final com.squareup.moshi.h f17658f;
+        private final com.squareup.moshi.h f18064f;
 
         m(w wVar) {
-            this.f17653a = wVar;
-            this.f17654b = wVar.c(List.class);
-            this.f17655c = wVar.c(Map.class);
-            this.f17656d = wVar.c(String.class);
-            this.f17657e = wVar.c(Double.class);
-            this.f17658f = wVar.c(Boolean.class);
+            this.f18059a = wVar;
+            this.f18060b = wVar.c(List.class);
+            this.f18061c = wVar.c(Map.class);
+            this.f18062d = wVar.c(String.class);
+            this.f18063e = wVar.c(Double.class);
+            this.f18064f = wVar.c(Boolean.class);
         }
 
         private Class a(Class cls) {
@@ -465,21 +465,21 @@ public abstract class y {
 
         @Override // com.squareup.moshi.h
         public Object fromJson(com.squareup.moshi.m mVar) {
-            switch (b.f17648a[mVar.E().ordinal()]) {
+            switch (b.f18054a[mVar.E().ordinal()]) {
                 case 1:
-                    return this.f17654b.fromJson(mVar);
+                    return this.f18060b.fromJson(mVar);
                 case 2:
-                    return this.f17655c.fromJson(mVar);
+                    return this.f18061c.fromJson(mVar);
                 case 3:
-                    return this.f17656d.fromJson(mVar);
+                    return this.f18062d.fromJson(mVar);
                 case 4:
-                    return this.f17657e.fromJson(mVar);
+                    return this.f18063e.fromJson(mVar);
                 case 5:
-                    return this.f17658f.fromJson(mVar);
+                    return this.f18064f.fromJson(mVar);
                 case 6:
-                    return mVar.n();
+                    return mVar.m();
                 default:
-                    throw new IllegalStateException("Expected a value but was " + mVar.E() + " at path " + mVar.q());
+                    throw new IllegalStateException("Expected a value but was " + mVar.E() + " at path " + mVar.r());
             }
         }
 
@@ -487,11 +487,11 @@ public abstract class y {
         public void toJson(t tVar, Object obj) {
             Class<?> cls = obj.getClass();
             if (cls == Object.class) {
-                tVar.l();
+                tVar.k();
                 tVar.E();
                 return;
             }
-            this.f17653a.e(a(cls), vm.c.f51686a).toJson(tVar, obj);
+            this.f18059a.e(a(cls), ym.c.f54851a).toJson(tVar, obj);
         }
 
         public String toString() {
@@ -504,6 +504,6 @@ public abstract class y {
         if (nextInt >= i10 && nextInt <= i11) {
             return nextInt;
         }
-        throw new com.squareup.moshi.j(String.format("Expected %s but was %s at path %s", str, Integer.valueOf(nextInt), mVar.q()));
+        throw new com.squareup.moshi.j(String.format("Expected %s but was %s at path %s", str, Integer.valueOf(nextInt), mVar.r()));
     }
 }

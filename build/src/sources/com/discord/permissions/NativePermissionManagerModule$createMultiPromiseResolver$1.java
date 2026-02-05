@@ -42,7 +42,7 @@ public final class NativePermissionManagerModule$createMultiPromiseResolver$1 im
                     promise.reject("PROMISE_RESOLUTION_ERROR", "Failed to resolve promise: " + message, e10);
                 }
             }
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
     }
 
@@ -50,77 +50,77 @@ public final class NativePermissionManagerModule$createMultiPromiseResolver$1 im
     public static final Unit reject$lambda$10(String str, String str2, WritableMap writableMap, Promise it) {
         Intrinsics.checkNotNullParameter(it, "it");
         it.reject(str, str2, writableMap);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit reject$lambda$11(String str, Promise it) {
         Intrinsics.checkNotNullParameter(it, "it");
         it.reject(str);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit reject$lambda$12(String str, String str2, Throwable th2, WritableMap writableMap, Promise it) {
         Intrinsics.checkNotNullParameter(it, "it");
         it.reject(str, str2, th2, writableMap);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit reject$lambda$3(String str, String str2, Promise it) {
         Intrinsics.checkNotNullParameter(it, "it");
         it.reject(str, str2);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit reject$lambda$4(String str, Throwable th2, Promise it) {
         Intrinsics.checkNotNullParameter(it, "it");
         it.reject(str, th2);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit reject$lambda$5(String str, String str2, Throwable th2, Promise it) {
         Intrinsics.checkNotNullParameter(it, "it");
         it.reject(str, str2, th2);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit reject$lambda$6(Throwable th2, Promise it) {
         Intrinsics.checkNotNullParameter(it, "it");
         it.reject(th2);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit reject$lambda$7(Throwable th2, WritableMap writableMap, Promise it) {
         Intrinsics.checkNotNullParameter(it, "it");
         it.reject(th2, writableMap);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit reject$lambda$8(String str, WritableMap writableMap, Promise it) {
         Intrinsics.checkNotNullParameter(it, "it");
         it.reject(str, writableMap);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit reject$lambda$9(String str, Throwable th2, WritableMap writableMap, Promise it) {
         Intrinsics.checkNotNullParameter(it, "it");
         it.reject(str, th2, writableMap);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit resolve$lambda$2(Object obj, Promise it) {
         Intrinsics.checkNotNullParameter(it, "it");
         it.resolve(obj);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @Override // com.facebook.react.bridge.Promise

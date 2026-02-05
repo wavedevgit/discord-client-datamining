@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.types.SimpleType;
 public class d implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaAnnotationDescriptor f33434d;
+    private final LazyJavaAnnotationDescriptor f32958d;
 
     public d(LazyJavaAnnotationDescriptor lazyJavaAnnotationDescriptor) {
-        this.f33434d = lazyJavaAnnotationDescriptor;
+        this.f32958d = lazyJavaAnnotationDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         SimpleType l10;
-        l10 = LazyJavaAnnotationDescriptor.l(this.f33434d);
+        l10 = LazyJavaAnnotationDescriptor.l(this.f32958d);
         return l10;
     }
 }

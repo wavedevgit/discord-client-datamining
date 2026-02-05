@@ -1,33 +1,74 @@
 package vk;
 
-import java.util.List;
+import com.google.zxing.Result;
+import fk.k;
+import fk.m;
+import fk.o;
+import fk.p;
+import java.util.ArrayList;
+import java.util.Map;
+import jk.e;
+import wk.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
+public final class b implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gk.b f51632a;
+    private static final Result[] f52303a = new Result[0];
 
-    /* renamed from: b  reason: collision with root package name */
-    private final List f51633b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final int f51634c;
-
-    public b(gk.b bVar, List list, int i10) {
-        this.f51632a = bVar;
-        this.f51633b = list;
-        this.f51634c = i10;
+    private static Result[] b(fk.c cVar, Map map, boolean z10) {
+        ArrayList arrayList = new ArrayList();
+        yk.b d10 = yk.a.d(cVar, map, z10);
+        for (p[] pVarArr : d10.b()) {
+            e i10 = j.i(d10.a(), pVarArr[4], pVarArr[5], pVarArr[6], pVarArr[7], e(pVarArr), c(pVarArr));
+            Result result = new Result(i10.k(), i10.g(), pVarArr, fk.a.PDF_417);
+            result.h(o.ERROR_CORRECTION_LEVEL, i10.b());
+            result.h(o.ERRORS_CORRECTED, i10.d());
+            result.h(o.ERASURES_CORRECTED, i10.c());
+            c cVar2 = (c) i10.f();
+            if (cVar2 != null) {
+                result.h(o.PDF417_EXTRA_METADATA, cVar2);
+            }
+            result.h(o.ORIENTATION, Integer.valueOf(d10.c()));
+            o oVar = o.SYMBOLOGY_IDENTIFIER;
+            result.h(oVar, "]L" + i10.j());
+            arrayList.add(result);
+        }
+        return (Result[]) arrayList.toArray(f52303a);
     }
 
-    public gk.b a() {
-        return this.f51632a;
+    private static int c(p[] pVarArr) {
+        return Math.max(Math.max(d(pVarArr[0], pVarArr[4]), (d(pVarArr[6], pVarArr[2]) * 17) / 18), Math.max(d(pVarArr[1], pVarArr[5]), (d(pVarArr[7], pVarArr[3]) * 17) / 18));
     }
 
-    public List b() {
-        return this.f51633b;
+    private static int d(p pVar, p pVar2) {
+        if (pVar != null && pVar2 != null) {
+            return (int) Math.abs(pVar.c() - pVar2.c());
+        }
+        return 0;
     }
 
-    public int c() {
-        return this.f51634c;
+    private static int e(p[] pVarArr) {
+        return Math.min(Math.min(f(pVarArr[0], pVarArr[4]), (f(pVarArr[6], pVarArr[2]) * 17) / 18), Math.min(f(pVarArr[1], pVarArr[5]), (f(pVarArr[7], pVarArr[3]) * 17) / 18));
+    }
+
+    private static int f(p pVar, p pVar2) {
+        if (pVar != null && pVar2 != null) {
+            return (int) Math.abs(pVar.c() - pVar2.c());
+        }
+        return Integer.MAX_VALUE;
+    }
+
+    @Override // fk.m
+    public Result a(fk.c cVar, Map map) {
+        Result result;
+        Result[] b10 = b(cVar, map, false);
+        if (b10.length != 0 && (result = b10[0]) != null) {
+            return result;
+        }
+        throw k.a();
+    }
+
+    @Override // fk.m
+    public void reset() {
     }
 }

@@ -1,18 +1,18 @@
 package com.discord.chat.bridge.activities;
 
 import androidx.recyclerview.widget.RecyclerView;
-import at.b;
-import at.m;
 import com.discord.activity_invites.RGBAColorModel;
 import com.discord.activity_invites.RGBAColorModel$$serializer;
 import com.discord.chat.bridge.activities.ActivityRichPresenceInviteEmbed;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.bridge.structurabletext.StructurableTextSerializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import dt.f;
-import dt.h;
-import dt.n2;
-import dt.p0;
+import dt.b;
+import dt.m;
+import gt.f;
+import gt.h;
+import gt.n2;
+import gt.p0;
 import java.util.List;
 import kotlin.Lazy;
 import kotlin.Metadata;
@@ -24,12 +24,12 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import lr.l;
-import lr.o;
+import or.l;
+import or.o;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
-@m
 @Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b9\b\u0087\b\u0018\u0000 \\2\u00020\u0001:\u0002]\\Bñ\u0001\u0012\n\b\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0004\u0012\u0010\b\u0002\u0010\n\u001a\n\u0012\u0004\u0012\u00020\t\u0018\u00010\b\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u0004\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u0004\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0010\u0012\u0010\b\u0002\u0010\u0012\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0004\u0012\u0010\b\u0002\u0010\u0014\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0004\u0012\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u0004\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0004\u0012\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u0018¢\u0006\u0004\b\u001a\u0010\u001bBá\u0001\b\u0010\u0012\u0006\u0010\u001c\u001a\u00020\u0010\u0012\b\u0010\u0003\u001a\u0004\u0018\u00010\u0002\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0002\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0004\u0012\u000e\u0010\n\u001a\n\u0012\u0004\u0012\u00020\t\u0018\u00010\b\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0002\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u0002\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0002\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0010\u0012\u000e\u0010\u0012\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0004\u0012\u000e\u0010\u0014\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\u0016\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\u0017\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\u0019\u001a\u0004\u0018\u00010\u0018\u0012\b\u0010\u001e\u001a\u0004\u0018\u00010\u001d¢\u0006\u0004\b\u001a\u0010\u001fJ'\u0010(\u001a\u00020%2\u0006\u0010 \u001a\u00020\u00002\u0006\u0010\"\u001a\u00020!2\u0006\u0010$\u001a\u00020#H\u0001¢\u0006\u0004\b&\u0010'J\u0012\u0010)\u001a\u0004\u0018\u00010\u0002HÆ\u0003¢\u0006\u0004\b)\u0010*J\u0012\u0010+\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0004\b+\u0010,J\u0012\u0010-\u001a\u0004\u0018\u00010\u0002HÆ\u0003¢\u0006\u0004\b-\u0010*J\u0012\u0010.\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0004\b.\u0010,J\u0018\u0010/\u001a\n\u0012\u0004\u0012\u00020\t\u0018\u00010\bHÆ\u0003¢\u0006\u0004\b/\u00100J\u0012\u00101\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0004\b1\u0010,J\u0012\u00102\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0004\b2\u0010,J\u0012\u00103\u001a\u0004\u0018\u00010\u0002HÆ\u0003¢\u0006\u0004\b3\u0010*J\u0012\u00104\u001a\u0004\u0018\u00010\u0002HÆ\u0003¢\u0006\u0004\b4\u0010*J\u0012\u00105\u001a\u0004\u0018\u00010\u0002HÆ\u0003¢\u0006\u0004\b5\u0010*J\u0012\u00106\u001a\u0004\u0018\u00010\u0010HÆ\u0003¢\u0006\u0004\b6\u00107J\u0018\u00108\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\bHÆ\u0003¢\u0006\u0004\b8\u00100J\u0012\u00109\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0004\b9\u0010,J\u0018\u0010:\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\bHÆ\u0003¢\u0006\u0004\b:\u00100J\u0012\u0010;\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0004\b;\u0010,J\u0012\u0010<\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0004\b<\u0010,J\u0012\u0010=\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0004\b=\u0010,J\u0012\u0010>\u001a\u0004\u0018\u00010\u0018HÆ\u0003¢\u0006\u0004\b>\u0010?Jú\u0001\u0010@\u001a\u00020\u00002\n\b\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00042\u0010\b\u0002\u0010\n\u001a\n\u0012\u0004\u0012\u00020\t\u0018\u00010\b2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00102\u0010\b\u0002\u0010\u0012\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b2\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00042\u0010\b\u0002\u0010\u0014\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b2\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u0018HÆ\u0001¢\u0006\u0004\b@\u0010AJ\u0010\u0010B\u001a\u00020\u0004HÖ\u0001¢\u0006\u0004\bB\u0010,J\u0010\u0010C\u001a\u00020\u0010HÖ\u0001¢\u0006\u0004\bC\u0010DJ\u001a\u0010F\u001a\u00020\u00022\b\u0010E\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\bF\u0010GR\u0019\u0010\u0003\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\u0003\u0010H\u001a\u0004\bI\u0010*R\u0019\u0010\u0005\u001a\u0004\u0018\u00010\u00048\u0006¢\u0006\f\n\u0004\b\u0005\u0010J\u001a\u0004\bK\u0010,R\u0019\u0010\u0006\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\u0006\u0010H\u001a\u0004\bL\u0010*R\u0019\u0010\u0007\u001a\u0004\u0018\u00010\u00048\u0006¢\u0006\f\n\u0004\b\u0007\u0010J\u001a\u0004\bM\u0010,R\u001f\u0010\n\u001a\n\u0012\u0004\u0012\u00020\t\u0018\u00010\b8\u0006¢\u0006\f\n\u0004\b\n\u0010N\u001a\u0004\bO\u00100R\u0019\u0010\u000b\u001a\u0004\u0018\u00010\u00048\u0006¢\u0006\f\n\u0004\b\u000b\u0010J\u001a\u0004\bP\u0010,R\u0019\u0010\f\u001a\u0004\u0018\u00010\u00048\u0006¢\u0006\f\n\u0004\b\f\u0010J\u001a\u0004\bQ\u0010,R\u0019\u0010\r\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\r\u0010H\u001a\u0004\b\r\u0010*R\u0019\u0010\u000e\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\u000e\u0010H\u001a\u0004\b\u000e\u0010*R\u0019\u0010\u000f\u001a\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\u000f\u0010H\u001a\u0004\b\u000f\u0010*R\u0019\u0010\u0011\u001a\u0004\u0018\u00010\u00108\u0006¢\u0006\f\n\u0004\b\u0011\u0010R\u001a\u0004\bS\u00107R\u001f\u0010\u0012\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b8\u0006¢\u0006\f\n\u0004\b\u0012\u0010N\u001a\u0004\bT\u00100R\u0019\u0010\u0013\u001a\u0004\u0018\u00010\u00048\u0006¢\u0006\f\n\u0004\b\u0013\u0010J\u001a\u0004\bU\u0010,R\u001f\u0010\u0014\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b8\u0006¢\u0006\f\n\u0004\b\u0014\u0010N\u001a\u0004\bV\u00100R\u0019\u0010\u0015\u001a\u0004\u0018\u00010\u00048\u0006¢\u0006\f\n\u0004\b\u0015\u0010J\u001a\u0004\bW\u0010,R\u0019\u0010\u0016\u001a\u0004\u0018\u00010\u00048\u0006¢\u0006\f\n\u0004\b\u0016\u0010J\u001a\u0004\bX\u0010,R\u0019\u0010\u0017\u001a\u0004\u0018\u00010\u00048\u0006¢\u0006\f\n\u0004\b\u0017\u0010J\u001a\u0004\bY\u0010,R\u0019\u0010\u0019\u001a\u0004\u0018\u00010\u00188\u0006¢\u0006\f\n\u0004\b\u0019\u0010Z\u001a\u0004\b[\u0010?¨\u0006^"}, d2 = {"Lcom/discord/chat/bridge/activities/ActivityRichPresenceInviteEmbed;", "", "", "ctaButtonEnabled", "", "ctaButtonText", "ctaButtonIsLoading", "footerLabel", "", "Lcom/discord/activity_invites/RGBAColorModel;", "gradientColors", "headerText", "iconSrc", "isActive", "isPlatformSupported", "isSpotifyParty", "", "maxPartySize", "partyMemberAvatarURIs", "partySizeText", "platformIconKeys", "coverImageUrl", "subtitle", "title", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "hiddenEmbedMessageContent", "<init>", "(Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;)V", "seen0", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "serializationConstructorMarker", "(ILjava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "self", "Lkotlinx/serialization/encoding/CompositeEncoder;", "output", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "serialDesc", "", "write$Self$chat_release", "(Lcom/discord/chat/bridge/activities/ActivityRichPresenceInviteEmbed;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V", "write$Self", "component1", "()Ljava/lang/Boolean;", "component2", "()Ljava/lang/String;", "component3", "component4", "component5", "()Ljava/util/List;", "component6", "component7", "component8", "component9", "component10", "component11", "()Ljava/lang/Integer;", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "()Lcom/discord/chat/bridge/structurabletext/StructurableText;", "copy", "(Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;)Lcom/discord/chat/bridge/activities/ActivityRichPresenceInviteEmbed;", "toString", "hashCode", "()I", "other", "equals", "(Ljava/lang/Object;)Z", "Ljava/lang/Boolean;", "getCtaButtonEnabled", "Ljava/lang/String;", "getCtaButtonText", "getCtaButtonIsLoading", "getFooterLabel", "Ljava/util/List;", "getGradientColors", "getHeaderText", "getIconSrc", "Ljava/lang/Integer;", "getMaxPartySize", "getPartyMemberAvatarURIs", "getPartySizeText", "getPlatformIconKeys", "getCoverImageUrl", "getSubtitle", "getTitle", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "getHiddenEmbedMessageContent", "Companion", "$serializer", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@m
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class ActivityRichPresenceInviteEmbed {
     @NotNull
@@ -72,7 +72,7 @@ public final class ActivityRichPresenceInviteEmbed {
     }
 
     static {
-        o oVar = o.f37120e;
+        o oVar = o.f44232e;
         $childSerializers = new Lazy[]{null, null, null, null, l.b(oVar, new Function0() { // from class: k6.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -108,12 +108,12 @@ public final class ActivityRichPresenceInviteEmbed {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new f(n2.f20978a);
+        return new f(n2.f25302a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$1() {
-        return new f(n2.f20978a);
+        return new f(n2.f25302a);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -151,58 +151,58 @@ public final class ActivityRichPresenceInviteEmbed {
     public static final /* synthetic */ void write$Self$chat_release(ActivityRichPresenceInviteEmbed activityRichPresenceInviteEmbed, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
         if (compositeEncoder.z(serialDescriptor, 0) || !Intrinsics.areEqual(activityRichPresenceInviteEmbed.ctaButtonEnabled, Boolean.FALSE)) {
-            compositeEncoder.s(serialDescriptor, 0, h.f20942a, activityRichPresenceInviteEmbed.ctaButtonEnabled);
+            compositeEncoder.A(serialDescriptor, 0, h.f25266a, activityRichPresenceInviteEmbed.ctaButtonEnabled);
         }
         if (compositeEncoder.z(serialDescriptor, 1) || activityRichPresenceInviteEmbed.ctaButtonText != null) {
-            compositeEncoder.s(serialDescriptor, 1, n2.f20978a, activityRichPresenceInviteEmbed.ctaButtonText);
+            compositeEncoder.A(serialDescriptor, 1, n2.f25302a, activityRichPresenceInviteEmbed.ctaButtonText);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || !Intrinsics.areEqual(activityRichPresenceInviteEmbed.ctaButtonIsLoading, Boolean.FALSE)) {
-            compositeEncoder.s(serialDescriptor, 2, h.f20942a, activityRichPresenceInviteEmbed.ctaButtonIsLoading);
+            compositeEncoder.A(serialDescriptor, 2, h.f25266a, activityRichPresenceInviteEmbed.ctaButtonIsLoading);
         }
         if (compositeEncoder.z(serialDescriptor, 3) || activityRichPresenceInviteEmbed.footerLabel != null) {
-            compositeEncoder.s(serialDescriptor, 3, n2.f20978a, activityRichPresenceInviteEmbed.footerLabel);
+            compositeEncoder.A(serialDescriptor, 3, n2.f25302a, activityRichPresenceInviteEmbed.footerLabel);
         }
         if (compositeEncoder.z(serialDescriptor, 4) || activityRichPresenceInviteEmbed.gradientColors != null) {
-            compositeEncoder.s(serialDescriptor, 4, (at.o) lazyArr[4].getValue(), activityRichPresenceInviteEmbed.gradientColors);
+            compositeEncoder.A(serialDescriptor, 4, (dt.o) lazyArr[4].getValue(), activityRichPresenceInviteEmbed.gradientColors);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || activityRichPresenceInviteEmbed.headerText != null) {
-            compositeEncoder.s(serialDescriptor, 5, n2.f20978a, activityRichPresenceInviteEmbed.headerText);
+            compositeEncoder.A(serialDescriptor, 5, n2.f25302a, activityRichPresenceInviteEmbed.headerText);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || activityRichPresenceInviteEmbed.iconSrc != null) {
-            compositeEncoder.s(serialDescriptor, 6, n2.f20978a, activityRichPresenceInviteEmbed.iconSrc);
+            compositeEncoder.A(serialDescriptor, 6, n2.f25302a, activityRichPresenceInviteEmbed.iconSrc);
         }
         if (compositeEncoder.z(serialDescriptor, 7) || activityRichPresenceInviteEmbed.isActive != null) {
-            compositeEncoder.s(serialDescriptor, 7, h.f20942a, activityRichPresenceInviteEmbed.isActive);
+            compositeEncoder.A(serialDescriptor, 7, h.f25266a, activityRichPresenceInviteEmbed.isActive);
         }
         if (compositeEncoder.z(serialDescriptor, 8) || !Intrinsics.areEqual(activityRichPresenceInviteEmbed.isPlatformSupported, Boolean.FALSE)) {
-            compositeEncoder.s(serialDescriptor, 8, h.f20942a, activityRichPresenceInviteEmbed.isPlatformSupported);
+            compositeEncoder.A(serialDescriptor, 8, h.f25266a, activityRichPresenceInviteEmbed.isPlatformSupported);
         }
         if (compositeEncoder.z(serialDescriptor, 9) || !Intrinsics.areEqual(activityRichPresenceInviteEmbed.isSpotifyParty, Boolean.FALSE)) {
-            compositeEncoder.s(serialDescriptor, 9, h.f20942a, activityRichPresenceInviteEmbed.isSpotifyParty);
+            compositeEncoder.A(serialDescriptor, 9, h.f25266a, activityRichPresenceInviteEmbed.isSpotifyParty);
         }
         if (compositeEncoder.z(serialDescriptor, 10) || activityRichPresenceInviteEmbed.maxPartySize != null) {
-            compositeEncoder.s(serialDescriptor, 10, p0.f20994a, activityRichPresenceInviteEmbed.maxPartySize);
+            compositeEncoder.A(serialDescriptor, 10, p0.f25318a, activityRichPresenceInviteEmbed.maxPartySize);
         }
         if (compositeEncoder.z(serialDescriptor, 11) || activityRichPresenceInviteEmbed.partyMemberAvatarURIs != null) {
-            compositeEncoder.s(serialDescriptor, 11, (at.o) lazyArr[11].getValue(), activityRichPresenceInviteEmbed.partyMemberAvatarURIs);
+            compositeEncoder.A(serialDescriptor, 11, (dt.o) lazyArr[11].getValue(), activityRichPresenceInviteEmbed.partyMemberAvatarURIs);
         }
         if (compositeEncoder.z(serialDescriptor, 12) || activityRichPresenceInviteEmbed.partySizeText != null) {
-            compositeEncoder.s(serialDescriptor, 12, n2.f20978a, activityRichPresenceInviteEmbed.partySizeText);
+            compositeEncoder.A(serialDescriptor, 12, n2.f25302a, activityRichPresenceInviteEmbed.partySizeText);
         }
         if (compositeEncoder.z(serialDescriptor, 13) || activityRichPresenceInviteEmbed.platformIconKeys != null) {
-            compositeEncoder.s(serialDescriptor, 13, (at.o) lazyArr[13].getValue(), activityRichPresenceInviteEmbed.platformIconKeys);
+            compositeEncoder.A(serialDescriptor, 13, (dt.o) lazyArr[13].getValue(), activityRichPresenceInviteEmbed.platformIconKeys);
         }
         if (compositeEncoder.z(serialDescriptor, 14) || activityRichPresenceInviteEmbed.coverImageUrl != null) {
-            compositeEncoder.s(serialDescriptor, 14, n2.f20978a, activityRichPresenceInviteEmbed.coverImageUrl);
+            compositeEncoder.A(serialDescriptor, 14, n2.f25302a, activityRichPresenceInviteEmbed.coverImageUrl);
         }
         if (compositeEncoder.z(serialDescriptor, 15) || activityRichPresenceInviteEmbed.subtitle != null) {
-            compositeEncoder.s(serialDescriptor, 15, n2.f20978a, activityRichPresenceInviteEmbed.subtitle);
+            compositeEncoder.A(serialDescriptor, 15, n2.f25302a, activityRichPresenceInviteEmbed.subtitle);
         }
         if (compositeEncoder.z(serialDescriptor, 16) || activityRichPresenceInviteEmbed.title != null) {
-            compositeEncoder.s(serialDescriptor, 16, n2.f20978a, activityRichPresenceInviteEmbed.title);
+            compositeEncoder.A(serialDescriptor, 16, n2.f25302a, activityRichPresenceInviteEmbed.title);
         }
         if (compositeEncoder.z(serialDescriptor, 17) || activityRichPresenceInviteEmbed.hiddenEmbedMessageContent != null) {
-            compositeEncoder.s(serialDescriptor, 17, StructurableTextSerializer.INSTANCE, activityRichPresenceInviteEmbed.hiddenEmbedMessageContent);
+            compositeEncoder.A(serialDescriptor, 17, StructurableTextSerializer.INSTANCE, activityRichPresenceInviteEmbed.hiddenEmbedMessageContent);
         }
     }
 

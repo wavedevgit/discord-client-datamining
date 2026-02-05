@@ -14,21 +14,21 @@ import java.util.List;
 abstract class d extends e {
 
     /* renamed from: o  reason: collision with root package name */
-    final Rect f14129o;
+    final Rect f14523o;
 
     /* renamed from: p  reason: collision with root package name */
-    final Rect f14130p;
+    final Rect f14524p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f14131q;
+    private int f14525q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f14132r;
+    private int f14526r;
 
     public d() {
-        this.f14129o = new Rect();
-        this.f14130p = new Rect();
-        this.f14131q = 0;
+        this.f14523o = new Rect();
+        this.f14524p = new Rect();
+        this.f14525q = 0;
     }
 
     private static int R(int i10) {
@@ -44,40 +44,40 @@ abstract class d extends e {
         View L = L(coordinatorLayout.m(view));
         if (L != null) {
             CoordinatorLayout.f fVar = (CoordinatorLayout.f) view.getLayoutParams();
-            Rect rect = this.f14129o;
+            Rect rect = this.f14523o;
             rect.set(coordinatorLayout.getPaddingLeft() + ((ViewGroup.MarginLayoutParams) fVar).leftMargin, L.getBottom() + ((ViewGroup.MarginLayoutParams) fVar).topMargin, (coordinatorLayout.getWidth() - coordinatorLayout.getPaddingRight()) - ((ViewGroup.MarginLayoutParams) fVar).rightMargin, ((coordinatorLayout.getHeight() + L.getBottom()) - coordinatorLayout.getPaddingBottom()) - ((ViewGroup.MarginLayoutParams) fVar).bottomMargin);
             WindowInsetsCompat lastWindowInsets = coordinatorLayout.getLastWindowInsets();
             if (lastWindowInsets != null && h0.w(coordinatorLayout) && !h0.w(view)) {
                 rect.left += lastWindowInsets.o();
                 rect.right -= lastWindowInsets.p();
             }
-            Rect rect2 = this.f14130p;
-            j.a(R(fVar.f2863c), view.getMeasuredWidth(), view.getMeasuredHeight(), rect, rect2, i10);
+            Rect rect2 = this.f14524p;
+            j.a(R(fVar.f2975c), view.getMeasuredWidth(), view.getMeasuredHeight(), rect, rect2, i10);
             int M = M(L);
             view.layout(rect2.left, rect2.top - M, rect2.right, rect2.bottom - M);
-            this.f14131q = rect2.top - L.getBottom();
+            this.f14525q = rect2.top - L.getBottom();
             return;
         }
         super.J(coordinatorLayout, view, i10);
-        this.f14131q = 0;
+        this.f14525q = 0;
     }
 
     abstract View L(List list);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int M(View view) {
-        if (this.f14132r == 0) {
+        if (this.f14526r == 0) {
             return 0;
         }
         float N = N(view);
-        int i10 = this.f14132r;
+        int i10 = this.f14526r;
         return u1.a.b((int) (N * i10), 0, i10);
     }
 
     abstract float N(View view);
 
     public final int O() {
-        return this.f14132r;
+        return this.f14526r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -87,11 +87,11 @@ abstract class d extends e {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int Q() {
-        return this.f14131q;
+        return this.f14525q;
     }
 
     public final void S(int i10) {
-        this.f14132r = i10;
+        this.f14526r = i10;
     }
 
     protected boolean T() {
@@ -134,8 +134,8 @@ abstract class d extends e {
 
     public d(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f14129o = new Rect();
-        this.f14130p = new Rect();
-        this.f14131q = 0;
+        this.f14523o = new Rect();
+        this.f14524p = new Rect();
+        this.f14525q = 0;
     }
 }

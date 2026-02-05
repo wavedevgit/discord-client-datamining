@@ -1,35 +1,36 @@
 package zu;
 
-import java.util.ArrayList;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.text.StringsKt;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface b {
+public final class b {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        private static Object a(b bVar, Object obj) {
-            while (!(obj instanceof Number)) {
-                if (obj instanceof String) {
-                    return StringsKt.p((String) obj);
-                }
-                if (obj instanceof List) {
-                    obj = CollectionsKt.firstOrNull((List) obj);
-                } else {
-                    return null;
-                }
-            }
-            return Double.valueOf(((Number) obj).doubleValue());
-        }
+    /* renamed from: a  reason: collision with root package name */
+    private final Object f56303a;
 
-        public static List b(b bVar, Object obj) {
-            List<Object> c10 = sv.a.c(obj);
-            ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
-            for (Object obj2 : c10) {
-                arrayList.add(a(bVar, obj2));
-            }
-            return arrayList;
+    public b(Object obj) {
+        this.f56303a = obj;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
+        if ((obj instanceof b) && Intrinsics.areEqual(this.f56303a, ((b) obj).f56303a)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        Object obj = this.f56303a;
+        if (obj == null) {
+            return 0;
+        }
+        return obj.hashCode();
+    }
+
+    public String toString() {
+        Object obj = this.f56303a;
+        return "SingleNestedValue(value=" + obj + ")";
     }
 }

@@ -15,22 +15,22 @@ abstract class p1 extends o1 implements ListIterator {
 
     @Override // java.util.ListIterator
     public final boolean hasPrevious() {
-        return ((ListIterator) this.f45657d).hasPrevious();
+        return ((ListIterator) this.f45587d).hasPrevious();
     }
 
     @Override // java.util.ListIterator
     public final int nextIndex() {
-        return ((ListIterator) this.f45657d).nextIndex();
+        return ((ListIterator) this.f45587d).nextIndex();
     }
 
     @Override // java.util.ListIterator
     public final Object previous() {
-        return a(((ListIterator) this.f45657d).previous());
+        return a(((ListIterator) this.f45587d).previous());
     }
 
     @Override // java.util.ListIterator
     public final int previousIndex() {
-        return ((ListIterator) this.f45657d).previousIndex();
+        return ((ListIterator) this.f45587d).previousIndex();
     }
 
     @Override // java.util.ListIterator

@@ -20,71 +20,71 @@ public final class o0 implements l1 {
     private Matrix C;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Surface f31303e;
+    private final Surface f30652e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f31304i;
+    private final int f30653i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f31305o;
+    private final int f30654o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Size f31306p;
+    private final Size f30655p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final l1.a f31307q;
+    private final l1.a f30656q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final l1.a f31308r;
+    private final l1.a f30657r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final float[] f31309s;
+    private final float[] f30658s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final float[] f31310t;
+    private final float[] f30659t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final float[] f31311u;
+    private final float[] f30660u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final float[] f31312v;
+    private final float[] f30661v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Consumer f31313w;
+    private Consumer f30662w;
 
     /* renamed from: x  reason: collision with root package name */
-    private Executor f31314x;
+    private Executor f30663x;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f31302d = new Object();
+    private final Object f30651d = new Object();
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f31315y = false;
+    private boolean f30664y = false;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f31316z = false;
+    private boolean f30665z = false;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o0(Surface surface, int i10, int i11, Size size, l1.a aVar, l1.a aVar2, Matrix matrix) {
         float[] fArr = new float[16];
-        this.f31309s = fArr;
+        this.f30658s = fArr;
         float[] fArr2 = new float[16];
-        this.f31310t = fArr2;
+        this.f30659t = fArr2;
         float[] fArr3 = new float[16];
-        this.f31311u = fArr3;
+        this.f30660u = fArr3;
         float[] fArr4 = new float[16];
-        this.f31312v = fArr4;
-        this.f31303e = surface;
-        this.f31304i = i10;
-        this.f31305o = i11;
-        this.f31306p = size;
-        this.f31307q = aVar;
-        this.f31308r = aVar2;
+        this.f30661v = fArr4;
+        this.f30652e = surface;
+        this.f30653i = i10;
+        this.f30654o = i11;
+        this.f30655p = size;
+        this.f30656q = aVar;
+        this.f30657r = aVar2;
         this.C = matrix;
-        l(fArr, fArr3, aVar);
-        l(fArr2, fArr4, aVar2);
-        this.A = androidx.concurrent.futures.c.a(new c.InterfaceC0028c() { // from class: j0.m0
-            @Override // androidx.concurrent.futures.c.InterfaceC0028c
+        k(fArr, fArr3, aVar);
+        k(fArr2, fArr4, aVar2);
+        this.A = androidx.concurrent.futures.c.a(new c.InterfaceC0029c() { // from class: j0.m0
+            @Override // androidx.concurrent.futures.c.InterfaceC0029c
             public final Object a(c.a aVar3) {
                 return o0.a(o0.this, aVar3);
             }
@@ -101,7 +101,7 @@ public final class o0 implements l1 {
         ((Consumer) atomicReference.get()).accept(l1.b.c(0, o0Var));
     }
 
-    private static void l(float[] fArr, float[] fArr2, l1.a aVar) {
+    private static void k(float[] fArr, float[] fArr2, l1.a aVar) {
         android.opengl.Matrix.setIdentityM(fArr, 0);
         if (aVar == null) {
             return;
@@ -118,17 +118,17 @@ public final class o0 implements l1 {
         e10.mapRect(rectF);
         android.opengl.Matrix.translateM(fArr, 0, rectF.left / o10.getWidth(), ((o10.getHeight() - rectF.height()) - rectF.top) / o10.getHeight(), 0.0f);
         android.opengl.Matrix.scaleM(fArr, 0, rectF.width() / o10.getWidth(), rectF.height() / o10.getHeight(), 1.0f);
-        n(fArr2, aVar.a());
+        m(fArr2, aVar.a());
         android.opengl.Matrix.multiplyMM(fArr, 0, fArr2, 0, fArr, 0);
     }
 
-    private static void n(float[] fArr, a0.e0 e0Var) {
+    private static void m(float[] fArr, a0.e0 e0Var) {
         android.opengl.Matrix.setIdentityM(fArr, 0);
         b0.m.d(fArr, 0.5f);
         if (e0Var != null) {
-            b2.e.j(e0Var.q(), "Camera has no transform.");
+            b2.e.j(e0Var.p(), "Camera has no transform.");
             b0.m.c(fArr, e0Var.b().a(), 0.5f, 0.5f);
-            if (e0Var.o()) {
+            if (e0Var.m()) {
                 android.opengl.Matrix.translateM(fArr, 0, 1.0f, 0.0f, 0.0f);
                 android.opengl.Matrix.scaleM(fArr, 0, -1.0f, 1.0f, 1.0f);
             }
@@ -136,21 +136,79 @@ public final class o0 implements l1 {
         android.opengl.Matrix.invertM(fArr, 0, fArr, 0);
     }
 
-    public void B() {
+    @Override // x.l1
+    public void M(float[] fArr, float[] fArr2, boolean z10) {
+        float[] fArr3;
+        if (z10) {
+            fArr3 = this.f30658s;
+        } else {
+            fArr3 = this.f30659t;
+        }
+        android.opengl.Matrix.multiplyMM(fArr, 0, fArr2, 0, fArr3, 0);
+    }
+
+    @Override // x.l1, java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        synchronized (this.f30651d) {
+            try {
+                if (!this.f30665z) {
+                    this.f30665z = true;
+                }
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+        this.B.c(null);
+    }
+
+    @Override // x.l1
+    public int getFormat() {
+        return this.f30654o;
+    }
+
+    @Override // x.l1
+    public Size getSize() {
+        return this.f30655p;
+    }
+
+    @Override // x.l1
+    public void i1(float[] fArr, float[] fArr2) {
+        M(fArr, fArr2, true);
+    }
+
+    @Override // x.l1
+    public Surface j1(Executor executor, Consumer consumer) {
+        boolean z10;
+        synchronized (this.f30651d) {
+            this.f30663x = executor;
+            this.f30662w = consumer;
+            z10 = this.f30664y;
+        }
+        if (z10) {
+            y();
+        }
+        return this.f30652e;
+    }
+
+    public ListenableFuture o() {
+        return this.A;
+    }
+
+    public void y() {
         Executor executor;
         Consumer consumer;
         final AtomicReference atomicReference = new AtomicReference();
-        synchronized (this.f31302d) {
+        synchronized (this.f30651d) {
             try {
-                if (this.f31314x != null && (consumer = this.f31313w) != null) {
-                    if (!this.f31316z) {
+                if (this.f30663x != null && (consumer = this.f30662w) != null) {
+                    if (!this.f30665z) {
                         atomicReference.set(consumer);
-                        executor = this.f31314x;
-                        this.f31315y = false;
+                        executor = this.f30663x;
+                        this.f30664y = false;
                     }
                     executor = null;
                 }
-                this.f31315y = true;
+                this.f30664y = true;
                 executor = null;
             } catch (Throwable th2) {
                 throw th2;
@@ -168,63 +226,5 @@ public final class o0 implements l1 {
                 y0.b("SurfaceOutputImpl", "Processor executor closed. Close request not posted.", e10);
             }
         }
-    }
-
-    @Override // x.l1
-    public void M(float[] fArr, float[] fArr2, boolean z10) {
-        float[] fArr3;
-        if (z10) {
-            fArr3 = this.f31309s;
-        } else {
-            fArr3 = this.f31310t;
-        }
-        android.opengl.Matrix.multiplyMM(fArr, 0, fArr2, 0, fArr3, 0);
-    }
-
-    @Override // x.l1, java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        synchronized (this.f31302d) {
-            try {
-                if (!this.f31316z) {
-                    this.f31316z = true;
-                }
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
-        this.B.c(null);
-    }
-
-    @Override // x.l1
-    public int getFormat() {
-        return this.f31305o;
-    }
-
-    @Override // x.l1
-    public Size getSize() {
-        return this.f31306p;
-    }
-
-    @Override // x.l1
-    public void i1(float[] fArr, float[] fArr2) {
-        M(fArr, fArr2, true);
-    }
-
-    @Override // x.l1
-    public Surface j1(Executor executor, Consumer consumer) {
-        boolean z10;
-        synchronized (this.f31302d) {
-            this.f31314x = executor;
-            this.f31313w = consumer;
-            z10 = this.f31315y;
-        }
-        if (z10) {
-            B();
-        }
-        return this.f31303e;
-    }
-
-    public ListenableFuture x() {
-        return this.A;
     }
 }

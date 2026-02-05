@@ -10,15 +10,15 @@ public abstract class d {
     private static class a extends d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ActivityOptions f3083a;
+        private final ActivityOptions f3195a;
 
         a(ActivityOptions activityOptions) {
-            this.f3083a = activityOptions;
+            this.f3195a = activityOptions;
         }
 
         @Override // androidx.core.app.d
         public Bundle b() {
-            return this.f3083a.toBundle();
+            return this.f3195a.toBundle();
         }
     }
 

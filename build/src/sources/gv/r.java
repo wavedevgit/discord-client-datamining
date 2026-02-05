@@ -1,124 +1,58 @@
 package gv;
+
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class r {
+public class r extends lv.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private r f26673a = null;
+    private final jv.t f25517a = new jv.t();
 
     /* renamed from: b  reason: collision with root package name */
-    private r f26674b = null;
+    private o f25518b = new o();
 
-    /* renamed from: c  reason: collision with root package name */
-    private r f26675c = null;
-
-    /* renamed from: d  reason: collision with root package name */
-    private r f26676d = null;
-
-    /* renamed from: e  reason: collision with root package name */
-    private r f26677e = null;
-
-    public abstract void a(y yVar);
-
-    public void b(r rVar) {
-        rVar.l();
-        rVar.j(this);
-        r rVar2 = this.f26675c;
-        if (rVar2 != null) {
-            rVar2.f26677e = rVar;
-            rVar.f26676d = rVar2;
-            this.f26675c = rVar;
-            return;
-        }
-        this.f26674b = rVar;
-        this.f26675c = rVar;
+    @Override // lv.a, lv.d
+    public boolean b() {
+        return true;
     }
 
-    public r c() {
-        return this.f26674b;
+    @Override // lv.d
+    public jv.a c() {
+        return this.f25517a;
     }
 
-    public r d() {
-        return this.f26675c;
-    }
-
-    public r e() {
-        return this.f26677e;
-    }
-
-    public r f() {
-        return this.f26673a;
-    }
-
-    public r g() {
-        return this.f26676d;
-    }
-
-    public void h(r rVar) {
-        rVar.l();
-        r rVar2 = this.f26677e;
-        rVar.f26677e = rVar2;
-        if (rVar2 != null) {
-            rVar2.f26676d = rVar;
-        }
-        rVar.f26676d = this;
-        this.f26677e = rVar;
-        r rVar3 = this.f26673a;
-        rVar.f26673a = rVar3;
-        if (rVar.f26677e == null) {
-            rVar3.f26675c = rVar;
+    @Override // lv.a, lv.d
+    public void d(kv.a aVar) {
+        CharSequence d10 = this.f25518b.d();
+        if (d10.length() > 0) {
+            aVar.a(d10.toString(), this.f25517a);
         }
     }
 
-    public void i(r rVar) {
-        rVar.l();
-        r rVar2 = this.f26676d;
-        rVar.f26676d = rVar2;
-        if (rVar2 != null) {
-            rVar2.f26677e = rVar;
-        }
-        rVar.f26677e = this;
-        this.f26676d = rVar;
-        r rVar3 = this.f26673a;
-        rVar.f26673a = rVar3;
-        if (rVar.f26676d == null) {
-            rVar3.f26674b = rVar;
+    @Override // lv.a, lv.d
+    public void e(CharSequence charSequence) {
+        this.f25518b.f(charSequence);
+    }
+
+    @Override // lv.a, lv.d
+    public void f() {
+        if (this.f25518b.d().length() == 0) {
+            this.f25517a.l();
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public void j(r rVar) {
-        this.f26673a = rVar;
-    }
-
-    protected String k() {
-        return "";
-    }
-
-    public void l() {
-        r rVar = this.f26676d;
-        if (rVar != null) {
-            rVar.f26677e = this.f26677e;
-        } else {
-            r rVar2 = this.f26673a;
-            if (rVar2 != null) {
-                rVar2.f26674b = this.f26677e;
-            }
+    @Override // lv.d
+    public lv.c g(lv.h hVar) {
+        if (!hVar.b()) {
+            return lv.c.b(hVar.getIndex());
         }
-        r rVar3 = this.f26677e;
-        if (rVar3 != null) {
-            rVar3.f26676d = rVar;
-        } else {
-            r rVar4 = this.f26673a;
-            if (rVar4 != null) {
-                rVar4.f26675c = rVar;
-            }
-        }
-        this.f26673a = null;
-        this.f26677e = null;
-        this.f26676d = null;
+        return lv.c.d();
     }
 
-    public String toString() {
-        return getClass().getSimpleName() + "{" + k() + "}";
+    public CharSequence i() {
+        return this.f25518b.d();
+    }
+
+    public List j() {
+        return this.f25518b.c();
     }
 }

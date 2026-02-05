@@ -9,13 +9,13 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 public class b extends m {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f14257d;
+    private boolean f14651d;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: com.google.android.material.bottomsheet.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class C0164b extends BottomSheetBehavior.g {
-        private C0164b() {
+    public class C0180b extends BottomSheetBehavior.g {
+        private C0180b() {
         }
 
         @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
@@ -32,7 +32,7 @@ public class b extends m {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void A() {
-        if (this.f14257d) {
+        if (this.f14651d) {
             super.dismissAllowingStateLoss();
         } else {
             super.dismiss();
@@ -40,7 +40,7 @@ public class b extends m {
     }
 
     private void B(BottomSheetBehavior bottomSheetBehavior, boolean z10) {
-        this.f14257d = z10;
+        this.f14651d = z10;
         if (bottomSheetBehavior.w0() == 5) {
             A();
             return;
@@ -48,7 +48,7 @@ public class b extends m {
         if (getDialog() instanceof com.google.android.material.bottomsheet.a) {
             ((com.google.android.material.bottomsheet.a) getDialog()).r();
         }
-        bottomSheetBehavior.c0(new C0164b());
+        bottomSheetBehavior.c0(new C0180b());
         bottomSheetBehavior.Y0(5);
     }
 

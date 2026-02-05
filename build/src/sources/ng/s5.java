@@ -1,78 +1,78 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class s5 implements ui.d {
+final class s5 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s5 f41529a = new s5();
+    static final s5 f40989a = new s5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41530b;
+    private static final xi.c f40990b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41531c;
+    private static final xi.c f40991c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41532d;
+    private static final xi.c f40992d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41533e;
+    private static final xi.c f40993e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41534f;
+    private static final xi.c f40994f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f41535g;
+    private static final xi.c f40995g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ui.c f41536h;
+    private static final xi.c f40996h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final ui.c f41537i;
+    private static final xi.c f40997i;
 
     static {
-        c.b a10 = ui.c.a("inferenceCommonLogEvent");
+        c.b a10 = xi.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f41530b = a10.b(fVar.b()).a();
-        c.b a11 = ui.c.a("options");
+        f40990b = a10.b(fVar.b()).a();
+        c.b a11 = xi.c.a("options");
         f fVar2 = new f();
         fVar2.a(2);
-        f41531c = a11.b(fVar2.b()).a();
-        c.b a12 = ui.c.a("inputLength");
+        f40991c = a11.b(fVar2.b()).a();
+        c.b a12 = xi.c.a("inputLength");
         f fVar3 = new f();
         fVar3.a(3);
-        f41532d = a12.b(fVar3.b()).a();
-        c.b a13 = ui.c.a("outputLength");
+        f40992d = a12.b(fVar3.b()).a();
+        c.b a13 = xi.c.a("outputLength");
         f fVar4 = new f();
         fVar4.a(4);
-        f41533e = a13.b(fVar4.b()).a();
-        c.b a14 = ui.c.a("loadDictionaryErrorCode");
+        f40993e = a13.b(fVar4.b()).a();
+        c.b a14 = xi.c.a("loadDictionaryErrorCode");
         f fVar5 = new f();
         fVar5.a(5);
-        f41534f = a14.b(fVar5.b()).a();
-        c.b a15 = ui.c.a("translateResultStatusCode");
+        f40994f = a14.b(fVar5.b()).a();
+        c.b a15 = xi.c.a("translateResultStatusCode");
         f fVar6 = new f();
         fVar6.a(6);
-        f41535g = a15.b(fVar6.b()).a();
-        c.b a16 = ui.c.a("status");
+        f40995g = a15.b(fVar6.b()).a();
+        c.b a16 = xi.c.a("status");
         f fVar7 = new f();
         fVar7.a(7);
-        f41536h = a16.b(fVar7.b()).a();
-        c.b a17 = ui.c.a("downloadHttpResponseCode");
+        f40996h = a16.b(fVar7.b()).a();
+        c.b a17 = xi.c.a("downloadHttpResponseCode");
         f fVar8 = new f();
         fVar8.a(8);
-        f41537i = a17.b(fVar8.b()).a();
+        f40997i = a17.b(fVar8.b()).a();
     }
 
     private s5() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

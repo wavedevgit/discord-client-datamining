@@ -1,37 +1,25 @@
 package wo;
-
-import kotlin.jvm.internal.Intrinsics;
-import ym.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements g {
+public final class d implements zq.d {
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Object f52607b;
+    /* renamed from: a  reason: collision with root package name */
+    private final c f53183a;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final boolean f52608c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final String f52609d;
-
-    public d(Object screen, boolean z10, String name) {
-        Intrinsics.checkNotNullParameter(screen, "screen");
-        Intrinsics.checkNotNullParameter(name, "name");
-        this.f52607b = screen;
-        this.f52608c = z10;
-        this.f52609d = name;
+    public d(c cVar) {
+        this.f53183a = cVar;
     }
 
-    public final Object a() {
-        return this.f52607b;
+    public static d a(c cVar) {
+        return new d(cVar);
     }
 
-    public final boolean b() {
-        return this.f52608c;
+    public static so.f b(c cVar) {
+        return (so.f) zq.g.d(cVar.a());
     }
 
-    @Override // ym.g
-    public String c() {
-        return this.f52609d;
+    @Override // javax.inject.Provider
+    /* renamed from: c */
+    public so.f get() {
+        return b(this.f53183a);
     }
 }

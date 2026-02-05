@@ -1,50 +1,23 @@
 package so;
-
-import android.content.Context;
-import java.util.List;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
+public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static b f49569a;
+    private final zq.h f50039a;
 
-    public static final void a(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        c(context).b();
+    public c(zq.h hVar) {
+        this.f50039a = hVar;
     }
 
-    private static final synchronized b b(Context context) {
-        synchronized (c.class) {
-            b bVar = f49569a;
-            if (bVar != null) {
-                return bVar;
-            }
-            b bVar2 = new b(context);
-            f49569a = bVar2;
-            return bVar2;
-        }
+    public static c a(zq.h hVar) {
+        return new c(hVar);
     }
 
-    public static final b c(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        b bVar = f49569a;
-        if (bVar == null) {
-            return b(context);
-        }
-        return bVar;
+    public static com.withpersona.sdk2.inquiry.internal.a c(String str, com.withpersona.sdk2.inquiry.internal.network.e eVar) {
+        return new com.withpersona.sdk2.inquiry.internal.a(str, eVar);
     }
 
-    public static final void d(Context context, List directoriesToDeleteOnError) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        Intrinsics.checkNotNullParameter(directoriesToDeleteOnError, "directoriesToDeleteOnError");
-        b c10 = c(context);
-        c10.d();
-        c10.f(directoriesToDeleteOnError);
-    }
-
-    public static final void e(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        c(context).g();
+    public com.withpersona.sdk2.inquiry.internal.a b(String str) {
+        return c(str, (com.withpersona.sdk2.inquiry.internal.network.e) this.f50039a.get());
     }
 }

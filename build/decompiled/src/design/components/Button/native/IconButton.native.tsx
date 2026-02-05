@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var3);
     var7 = var8.createStyles;
     var3 = function(arg0) { // Environment: var1
-        _fun60833: for (var _fun60833_ip = 0;;) switch (_fun60833_ip) {
+        _fun60856: for (var _fun60856_ip = 0;;) switch (_fun60856_ip) {
             case 0:
                 var0 = {};
                 var1 = {};
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = arg0;
                 var3 = 0;
                 if (!var4) {
-                    _fun60833_ip = 93;
-                    continue _fun60833
+                    _fun60856_ip = 93;
+                    continue _fun60856
                 }
             case 90:
                 var3 = 1;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var3 = var6.forwardRef;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun60834: for (var _fun60834_ip = 0;;) switch (_fun60834_ip) {
+        _fun60857: for (var _fun60857_ip = 0;;) switch (_fun60857_ip) {
             case 0:
                 var4 = arg0;
                 var16 = arg1;
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var11 = var1.bind(var4)(var2);
                 if (!(var0 == var9)) {
-                    _fun60834_ip = 173;
-                    continue _fun60834
+                    _fun60857_ip = 173;
+                    continue _fun60857
                 }
             case 89:
                 var2 = _closure1_slot3;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 'maxFontSizeMultiplier';
                 var0[var3] = var10;
                 var0 = var2.bind(var4)(var1, var0);
-                _fun60834_ip = 424;
-                continue _fun60834;
+                _fun60857_ip = 424;
+                continue _fun60857;
             case 173:
                 var3 = _closure1_slot4;
                 var7 = _closure1_slot0;
@@ -202,4 +202,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.IconButton = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 4093, 7036, 3941, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 4093, 7056, 3941, 2]);

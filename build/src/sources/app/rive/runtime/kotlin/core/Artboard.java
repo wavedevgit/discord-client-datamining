@@ -142,7 +142,7 @@ public class Artboard extends NativeObject {
         synchronized (this.lock) {
             if (getHasCppObject()) {
                 cppDraw(getCppPointer(), j10);
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             }
         }
     }
@@ -379,7 +379,7 @@ public class Artboard extends NativeObject {
         synchronized (this.lock) {
             if (getHasCppObject()) {
                 cppDrawAligned(getCppPointer(), j10, fit, alignment, f10);
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             }
         }
     }

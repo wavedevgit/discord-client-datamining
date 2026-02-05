@@ -7,23 +7,23 @@ import java.util.SortedSet;
 public abstract class m1 extends h1 implements NavigableSet, a2 {
 
     /* renamed from: i  reason: collision with root package name */
-    final transient Comparator f13663i;
+    final transient Comparator f14057i;
 
     /* renamed from: o  reason: collision with root package name */
-    transient m1 f13664o;
+    transient m1 f14058o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m1(Comparator comparator) {
-        this.f13663i = comparator;
+        this.f14057i = comparator;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static v1 v(Comparator comparator) {
-        if (q1.f13695d.equals(comparator)) {
-            return v1.f13739q;
+    public static v1 w(Comparator comparator) {
+        if (q1.f14089d.equals(comparator)) {
+            return v1.f14133q;
         }
-        int i10 = e1.f13593i;
-        return new v1(t1.f13721q, comparator);
+        int i10 = e1.f13987i;
+        return new v1(t1.f14115q, comparator);
     }
 
     public final void addFirst(Object obj) {
@@ -36,7 +36,7 @@ public abstract class m1 extends h1 implements NavigableSet, a2 {
 
     @Override // java.util.SortedSet, com.google.android.gms.internal.fido.a2
     public final Comparator comparator() {
-        return this.f13663i;
+        return this.f14057i;
     }
 
     @Override // java.util.SortedSet
@@ -53,13 +53,11 @@ public abstract class m1 extends h1 implements NavigableSet, a2 {
     @Override // java.util.NavigableSet, java.util.SortedSet
     public final /* synthetic */ SortedSet headSet(Object obj) {
         obj.getClass();
-        return r(obj, false);
+        return s(obj, false);
     }
 
     @Override // java.util.SortedSet
     public abstract Object last();
-
-    abstract m1 p();
 
     @Override // java.util.NavigableSet
     public final Object pollFirst() {
@@ -71,21 +69,20 @@ public abstract class m1 extends h1 implements NavigableSet, a2 {
         throw new UnsupportedOperationException();
     }
 
+    abstract m1 q();
+
     @Override // java.util.NavigableSet
-    /* renamed from: q */
+    /* renamed from: r */
     public final m1 descendingSet() {
-        m1 m1Var = this.f13664o;
+        m1 m1Var = this.f14058o;
         if (m1Var == null) {
-            m1 p10 = p();
-            this.f13664o = p10;
-            p10.f13664o = this;
-            return p10;
+            m1 q10 = q();
+            this.f14058o = q10;
+            q10.f14058o = this;
+            return q10;
         }
         return m1Var;
     }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public abstract m1 r(Object obj, boolean z10);
 
     public final Object removeFirst() {
         throw new UnsupportedOperationException();
@@ -95,45 +92,48 @@ public abstract class m1 extends h1 implements NavigableSet, a2 {
         throw new UnsupportedOperationException();
     }
 
-    @Override // java.util.NavigableSet
-    /* renamed from: s */
-    public final m1 subSet(Object obj, boolean z10, Object obj2, boolean z11) {
-        boolean z12;
-        obj.getClass();
-        obj2.getClass();
-        if (this.f13663i.compare(obj, obj2) <= 0) {
-            z12 = true;
-        } else {
-            z12 = false;
-        }
-        k0.c(z12);
-        return t(obj, z10, obj2, z11);
-    }
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public abstract m1 s(Object obj, boolean z10);
 
     @Override // java.util.NavigableSet, java.util.SortedSet
     public final /* bridge */ /* synthetic */ SortedSet subSet(Object obj, Object obj2) {
         return subSet(obj, true, obj2, false);
     }
 
-    abstract m1 t(Object obj, boolean z10, Object obj2, boolean z11);
+    @Override // java.util.NavigableSet
+    /* renamed from: t */
+    public final m1 subSet(Object obj, boolean z10, Object obj2, boolean z11) {
+        boolean z12;
+        obj.getClass();
+        obj2.getClass();
+        if (this.f14057i.compare(obj, obj2) <= 0) {
+            z12 = true;
+        } else {
+            z12 = false;
+        }
+        k0.c(z12);
+        return u(obj, z10, obj2, z11);
+    }
 
     @Override // java.util.NavigableSet, java.util.SortedSet
     public final /* synthetic */ SortedSet tailSet(Object obj) {
         obj.getClass();
-        return u(obj, true);
+        return v(obj, true);
     }
 
-    abstract m1 u(Object obj, boolean z10);
+    abstract m1 u(Object obj, boolean z10, Object obj2, boolean z11);
+
+    abstract m1 v(Object obj, boolean z10);
 
     @Override // java.util.NavigableSet
     public final /* synthetic */ NavigableSet headSet(Object obj, boolean z10) {
         obj.getClass();
-        return r(obj, z10);
+        return s(obj, z10);
     }
 
     @Override // java.util.NavigableSet
     public final /* synthetic */ NavigableSet tailSet(Object obj, boolean z10) {
         obj.getClass();
-        return u(obj, z10);
+        return v(obj, z10);
     }
 }

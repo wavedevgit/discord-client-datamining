@@ -234,7 +234,7 @@ public final class FabricEventDispatcher implements EventDispatcher, LifecycleEv
     }
 
     @Override // com.facebook.react.uimanager.events.EventDispatcher
-    @lr.c
+    @or.c
     public void onCatalystInstanceDestroyed() {
         invalidate();
     }

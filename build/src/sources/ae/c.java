@@ -81,7 +81,7 @@ public final class c extends e {
         public final int f558b;
 
         public a(CharSequence charSequence, Layout.Alignment alignment, float f10, int i10, int i11, float f11, int i12, float f12, boolean z10, int i13, int i14) {
-            b.C0784b n10 = new b.C0784b().o(charSequence).p(alignment).h(f10, i10).i(i11).k(f11).l(i12).n(f12);
+            b.C0782b n10 = new b.C0782b().o(charSequence).p(alignment).h(f10, i10).i(i11).k(f11).l(i12).n(f12);
             if (z10) {
                 n10.s(i13);
             }
@@ -968,7 +968,7 @@ public final class c extends e {
     @Override // ae.e
     protected void f(k kVar) {
         boolean z10;
-        ByteBuffer byteBuffer = (ByteBuffer) ne.a.e(kVar.f47497i);
+        ByteBuffer byteBuffer = (ByteBuffer) ne.a.e(kVar.f47561i);
         this.f545g.S(byteBuffer.array(), byteBuffer.limit());
         while (this.f545g.a() >= 3) {
             int H = this.f545g.H();

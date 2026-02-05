@@ -165,4 +165,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PlayStationLinkDiscordConsent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5858, 660, 5339, 33, 1469, 5773, 5864, 5340, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5862, 660, 5343, 33, 1469, 5777, 5868, 5344, 2]);

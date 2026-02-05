@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/quests/QuestBarPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun84276: for (var _fun84276_ip = 0;;) switch (_fun84276_ip) {
+        _fun84295: for (var _fun84295_ip = 0;;) switch (_fun84295_ip) {
             case 0:
                 var0 = arg0;
                 var13 = var0.quest;
@@ -87,14 +87,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2 != var13;
                 var0 = null;
                 if (!var3) {
-                    _fun84276_ip = 218;
-                    continue _fun84276
+                    _fun84295_ip = 219;
+                    continue _fun84295
                 }
             case 42:
                 var0 = null;
                 if (!var1) {
-                    _fun84276_ip = 218;
-                    continue _fun84276
+                    _fun84295_ip = 219;
+                    continue _fun84295
                 }
             case 50:
                 var3 = _closure1_slot4;
@@ -118,9 +118,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var9.bind(var4)(var8);
                 var9 = var8.Provider;
                 var8 = {};
-                var10 = {};
-                var14 = true;
-                var10.isVisible = var14;
+                var10 = {
+                    'isVisible': true,
+                    'isVisibleToUser': true
+                };
                 var10.quest = var13;
                 var8.value = var10;
                 var10 = 7;
@@ -137,10 +138,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3.bind(var4)(var2, var5);
                 var1.children = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 218:
+            case 219:
                 return var0;
         }
     };
     var2.QuestBarPreview = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5257, 10786, 10787, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5261, 10804, 10805, 2]);

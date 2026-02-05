@@ -1,49 +1,70 @@
 package mu;
 
+import java.security.cert.X509Certificate;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Set;
+import javax.security.auth.x500.X500Principal;
 import kotlin.jvm.internal.Intrinsics;
-import okio.Buffer;
-import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
+public final class b implements e {
 
-    /* renamed from: a */
-    private static final char[] f39451a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+    /* renamed from: a  reason: collision with root package name */
+    private final Map f38969a;
 
-    /* JADX WARN: Code restructure failed: missing block: B:429:0x01ac, code lost:
-        return r4;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public static final int c(byte[] r18, int r19) {
-        /*
-            Method dump skipped, instructions count: 429
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: mu.b.c(byte[], int):int");
+    public b(X509Certificate... caCerts) {
+        Intrinsics.checkNotNullParameter(caCerts, "caCerts");
+        LinkedHashMap linkedHashMap = new LinkedHashMap();
+        for (X509Certificate x509Certificate : caCerts) {
+            X500Principal subjectX500Principal = x509Certificate.getSubjectX500Principal();
+            Intrinsics.checkNotNullExpressionValue(subjectX500Principal, "caCert.subjectX500Principal");
+            Object obj = linkedHashMap.get(subjectX500Principal);
+            if (obj == null) {
+                obj = new LinkedHashSet();
+                linkedHashMap.put(subjectX500Principal, obj);
+            }
+            ((Set) obj).add(x509Certificate);
+        }
+        this.f38969a = linkedHashMap;
     }
 
-    public static final void d(ByteString byteString, Buffer buffer, int i10, int i11) {
-        Intrinsics.checkNotNullParameter(byteString, "<this>");
-        Intrinsics.checkNotNullParameter(buffer, "buffer");
-        buffer.write(byteString.k(), i10, i11);
+    @Override // mu.e
+    public X509Certificate a(X509Certificate cert) {
+        Intrinsics.checkNotNullParameter(cert, "cert");
+        Set set = (Set) this.f38969a.get(cert.getIssuerX500Principal());
+        Object obj = null;
+        if (set == null) {
+            return null;
+        }
+        Iterator it = set.iterator();
+        while (true) {
+            if (!it.hasNext()) {
+                break;
+            }
+            Object next = it.next();
+            try {
+                cert.verify(((X509Certificate) next).getPublicKey());
+                obj = next;
+                break;
+            } catch (Exception unused) {
+            }
+        }
+        return (X509Certificate) obj;
     }
 
-    public static final int e(char c10) {
-        if ('0' <= c10 && c10 < ':') {
-            return c10 - '0';
+    public boolean equals(Object obj) {
+        if (obj != this) {
+            if (!(obj instanceof b) || !Intrinsics.areEqual(((b) obj).f38969a, this.f38969a)) {
+                return false;
+            }
+            return true;
         }
-        if ('a' <= c10 && c10 < 'g') {
-            return c10 - 'W';
-        }
-        if ('A' <= c10 && c10 < 'G') {
-            return c10 - '7';
-        }
-        throw new IllegalArgumentException("Unexpected hex digit: " + c10);
+        return true;
     }
 
-    public static final char[] f() {
-        return f39451a;
+    public int hashCode() {
+        return this.f38969a.hashCode();
     }
 }

@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var0)(var1);
                 var1 = var1.IMPACT_LIGHT;
                 if (!(var1 !== var2)) {
-                    _fun28283_ip = 612;
+                    _fun28283_ip = 684;
                     continue _fun28283
                 }
             case 40:
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var0)(var1);
                 var1 = var1.IMPACT_MEDIUM;
                 if (!(var1 !== var2)) {
-                    _fun28283_ip = 536;
+                    _fun28283_ip = 608;
                     continue _fun28283
                 }
             case 70:
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var0)(var1);
                 var1 = var1.IMPACT_HEAVY;
                 if (!(var1 !== var2)) {
-                    _fun28283_ip = 494;
+                    _fun28283_ip = 566;
                     continue _fun28283
                 }
             case 100:
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var0)(var1);
                 var1 = var1.NOTIFICATION_ERROR;
                 if (!(var1 !== var2)) {
-                    _fun28283_ip = 452;
+                    _fun28283_ip = 524;
                     continue _fun28283
                 }
             case 130:
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var0)(var1);
                 var1 = var1.DRAG_AND_DROP_START;
                 if (!(var1 !== var2)) {
-                    _fun28283_ip = 375;
+                    _fun28283_ip = 447;
                     continue _fun28283
                 }
             case 160:
@@ -117,20 +117,41 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var0)(var1);
                 var1 = var1.DRAG_AND_DROP_END;
                 if (!(var1 !== var2)) {
-                    _fun28283_ip = 296;
+                    _fun28283_ip = 368;
                     continue _fun28283
                 }
-            case 187:
+            case 190:
                 var3 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var1 = var1[var5];
                 var1 = var3.bind(var0)(var1);
                 var1 = var1.DRAG_AND_DROP_MOVE;
-                if (!(var1 === var2)) {
-                    _fun28283_ip = 684;
+                if (!(var1 !== var2)) {
+                    _fun28283_ip = 289;
                     continue _fun28283
                 }
             case 217:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var5];
+                var1 = var3.bind(var0)(var1);
+                var1 = var1.SOFT;
+                if (!(var1 === var2)) {
+                    _fun28283_ip = 756;
+                    continue _fun28283
+                }
+            case 247:
+                var2 = _closure1_slot1;
+                var3 = _closure1_slot2;
+                var1 = 1;
+                var1 = var3[var1];
+                var3 = var2.bind(var0)(var1);
+                var2 = var3.trigger;
+                var1 = 'soft';
+                var1 = var2.bind(var3)(var1);
+                _fun28283_ip = 756;
+                continue _fun28283;
+            case 289:
                 var2 = _closure1_slot1;
                 var6 = _closure1_slot2;
                 var1 = 1;
@@ -145,17 +166,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.bind(var5)();
                 var1 = 'impactMedium';
                 if (!var5) {
-                    _fun28283_ip = 286;
+                    _fun28283_ip = 358;
                     continue _fun28283
                 }
-            case 278:
+            case 350:
                 var5 = _closure1_slot3;
                 var1 = var5.bind(var0)();
-            case 286:
+            case 358:
                 var1 = var2.bind(var3)(var1);
-                _fun28283_ip = 684;
+                _fun28283_ip = 756;
                 continue _fun28283;
-            case 296:
+            case 368:
                 var2 = _closure1_slot1;
                 var6 = _closure1_slot2;
                 var1 = 1;
@@ -170,17 +191,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.bind(var5)();
                 var1 = 'notificationSuccess';
                 if (!var5) {
-                    _fun28283_ip = 365;
+                    _fun28283_ip = 437;
                     continue _fun28283
                 }
-            case 357:
+            case 429:
                 var5 = _closure1_slot3;
                 var1 = var5.bind(var0)();
-            case 365:
+            case 437:
                 var1 = var2.bind(var3)(var1);
-                _fun28283_ip = 684;
+                _fun28283_ip = 756;
                 continue _fun28283;
-            case 375:
+            case 447:
                 var2 = _closure1_slot1;
                 var6 = _closure1_slot2;
                 var1 = 1;
@@ -195,16 +216,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.bind(var5)();
                 var1 = 'impactHeavy';
                 if (!var5) {
-                    _fun28283_ip = 442;
+                    _fun28283_ip = 514;
                     continue _fun28283
                 }
-            case 436:
+            case 508:
                 var1 = 'impactMedium';
-            case 442:
+            case 514:
                 var1 = var2.bind(var3)(var1);
-                _fun28283_ip = 684;
+                _fun28283_ip = 756;
                 continue _fun28283;
-            case 452:
+            case 524:
                 var2 = _closure1_slot1;
                 var3 = _closure1_slot2;
                 var1 = 1;
@@ -213,9 +234,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.trigger;
                 var1 = 'notificationError';
                 var1 = var2.bind(var3)(var1);
-                _fun28283_ip = 684;
+                _fun28283_ip = 756;
                 continue _fun28283;
-            case 494:
+            case 566:
                 var2 = _closure1_slot1;
                 var3 = _closure1_slot2;
                 var1 = 1;
@@ -224,9 +245,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.trigger;
                 var1 = 'impactHeavy';
                 var1 = var2.bind(var3)(var1);
-                _fun28283_ip = 684;
+                _fun28283_ip = 756;
                 continue _fun28283;
-            case 536:
+            case 608:
                 var2 = _closure1_slot1;
                 var6 = _closure1_slot2;
                 var1 = 1;
@@ -241,17 +262,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.bind(var5)();
                 var1 = 'impactMedium';
                 if (!var5) {
-                    _fun28283_ip = 605;
+                    _fun28283_ip = 677;
                     continue _fun28283
                 }
-            case 597:
+            case 669:
                 var5 = _closure1_slot3;
                 var1 = var5.bind(var0)();
-            case 605:
+            case 677:
                 var1 = var2.bind(var3)(var1);
-                _fun28283_ip = 684;
+                _fun28283_ip = 756;
                 continue _fun28283;
-            case 612:
+            case 684:
                 var2 = _closure1_slot1;
                 var6 = _closure1_slot2;
                 var1 = 1;
@@ -266,15 +287,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.bind(var5)();
                 var1 = 'selection';
                 if (!var5) {
-                    _fun28283_ip = 679;
+                    _fun28283_ip = 751;
                     continue _fun28283
                 }
-            case 671:
+            case 743:
                 var4 = _closure1_slot3;
                 var1 = var4.bind(var0)();
-            case 679:
+            case 751:
                 var1 = var2.bind(var3)(var1);
-            case 684:
+            case 756:
                 return var0;
         }
     };

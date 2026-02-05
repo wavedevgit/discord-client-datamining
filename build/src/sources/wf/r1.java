@@ -9,10 +9,10 @@ public final class r1 extends hf.a {
     public static final Parcelable.Creator<r1> CREATOR = new s1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f52351d;
+    private final List f53008d;
 
     public r1(List list) {
-        this.f52351d = (List) gf.q.l(list);
+        this.f53008d = (List) gf.q.l(list);
     }
 
     public final boolean equals(Object obj) {
@@ -20,19 +20,19 @@ public final class r1 extends hf.a {
             return false;
         }
         r1 r1Var = (r1) obj;
-        if (!this.f52351d.containsAll(r1Var.f52351d) || !r1Var.f52351d.containsAll(this.f52351d)) {
+        if (!this.f53008d.containsAll(r1Var.f53008d) || !r1Var.f53008d.containsAll(this.f53008d)) {
             return false;
         }
         return true;
     }
 
     public final int hashCode() {
-        return gf.o.b(new HashSet(this.f52351d));
+        return gf.o.b(new HashSet(this.f53008d));
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        List list = this.f52351d;
+        List list = this.f53008d;
         int a10 = hf.c.a(parcel);
         hf.c.w(parcel, 1, list, false);
         hf.c.b(parcel, a10);

@@ -15,21 +15,21 @@ public abstract class w extends androidx.datastore.preferences.protobuf.a {
     protected int memoizedSerializedSize = -1;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static abstract class a extends a.AbstractC0043a {
+    public static abstract class a extends a.AbstractC0044a {
 
         /* renamed from: d  reason: collision with root package name */
-        private final w f3843d;
+        private final w f3955d;
 
         /* renamed from: e  reason: collision with root package name */
-        protected w f3844e;
+        protected w f3956e;
 
         /* renamed from: i  reason: collision with root package name */
-        protected boolean f3845i = false;
+        protected boolean f3957i = false;
 
         /* JADX INFO: Access modifiers changed from: protected */
         public a(w wVar) {
-            this.f3843d = wVar;
-            this.f3844e = (w) wVar.k(d.NEW_MUTABLE_INSTANCE);
+            this.f3955d = wVar;
+            this.f3956e = (w) wVar.k(d.NEW_MUTABLE_INSTANCE);
         }
 
         private void p(w wVar, w wVar2) {
@@ -37,57 +37,57 @@ public abstract class w extends androidx.datastore.preferences.protobuf.a {
         }
 
         public final w g() {
-            w A0 = A0();
-            if (A0.r()) {
-                return A0;
+            w D0 = D0();
+            if (D0.r()) {
+                return D0;
             }
-            throw a.AbstractC0043a.f(A0);
+            throw a.AbstractC0044a.f(D0);
         }
 
         @Override // androidx.datastore.preferences.protobuf.o0.a
         /* renamed from: i */
-        public w A0() {
-            if (this.f3845i) {
-                return this.f3844e;
+        public w D0() {
+            if (this.f3957i) {
+                return this.f3956e;
             }
-            this.f3844e.t();
-            this.f3845i = true;
-            return this.f3844e;
+            this.f3956e.t();
+            this.f3957i = true;
+            return this.f3956e;
         }
 
         /* renamed from: j */
         public a clone() {
             a newBuilderForType = getDefaultInstanceForType().newBuilderForType();
-            newBuilderForType.o(A0());
+            newBuilderForType.n(D0());
             return newBuilderForType;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         public void k() {
-            if (this.f3845i) {
-                w wVar = (w) this.f3844e.k(d.NEW_MUTABLE_INSTANCE);
-                p(wVar, this.f3844e);
-                this.f3844e = wVar;
-                this.f3845i = false;
+            if (this.f3957i) {
+                w wVar = (w) this.f3956e.k(d.NEW_MUTABLE_INSTANCE);
+                p(wVar, this.f3956e);
+                this.f3956e = wVar;
+                this.f3957i = false;
             }
         }
 
         @Override // androidx.datastore.preferences.protobuf.p0
         /* renamed from: l */
         public w getDefaultInstanceForType() {
-            return this.f3843d;
+            return this.f3955d;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // androidx.datastore.preferences.protobuf.a.AbstractC0043a
+        @Override // androidx.datastore.preferences.protobuf.a.AbstractC0044a
         /* renamed from: m */
         public a d(w wVar) {
-            return o(wVar);
+            return n(wVar);
         }
 
-        public a o(w wVar) {
+        public a n(w wVar) {
             k();
-            p(this.f3844e, wVar);
+            p(this.f3956e, wVar);
             return this;
         }
     }
@@ -96,10 +96,10 @@ public abstract class w extends androidx.datastore.preferences.protobuf.a {
     protected static class b extends androidx.datastore.preferences.protobuf.b {
 
         /* renamed from: b  reason: collision with root package name */
-        private final w f3846b;
+        private final w f3958b;
 
         public b(w wVar) {
-            this.f3846b = wVar;
+            this.f3958b = wVar;
         }
     }
 
@@ -201,7 +201,7 @@ public abstract class w extends androidx.datastore.preferences.protobuf.a {
         } else {
             i10 = size * 2;
         }
-        return bVar.E0(i10);
+        return bVar.I0(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -243,7 +243,7 @@ public abstract class w extends androidx.datastore.preferences.protobuf.a {
     /* renamed from: A */
     public final a toBuilder() {
         a aVar = (a) k(d.NEW_BUILDER);
-        aVar.o(this);
+        aVar.n(this);
         return aVar;
     }
 

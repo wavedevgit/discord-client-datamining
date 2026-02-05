@@ -1,50 +1,50 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class o1 implements ui.d {
+final class o1 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final o1 f41411a = new o1();
+    static final o1 f40871a = new o1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41412b;
+    private static final xi.c f40872b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41413c;
+    private static final xi.c f40873c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41414d;
+    private static final xi.c f40874d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41415e;
+    private static final xi.c f40875e;
 
     static {
-        c.b a10 = ui.c.a("errorCode");
+        c.b a10 = xi.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f41412b = a10.b(fVar.b()).a();
-        c.b a11 = ui.c.a("imageInfo");
+        f40872b = a10.b(fVar.b()).a();
+        c.b a11 = xi.c.a("imageInfo");
         f fVar2 = new f();
         fVar2.a(2);
-        f41413c = a11.b(fVar2.b()).a();
-        c.b a12 = ui.c.a("isColdCall");
+        f40873c = a11.b(fVar2.b()).a();
+        c.b a12 = xi.c.a("isColdCall");
         f fVar3 = new f();
         fVar3.a(3);
-        f41414d = a12.b(fVar3.b()).a();
-        c.b a13 = ui.c.a("options");
+        f40874d = a12.b(fVar3.b()).a();
+        c.b a13 = xi.c.a("options");
         f fVar4 = new f();
         fVar4.a(4);
-        f41415e = a13.b(fVar4.b()).a();
+        f40875e = a13.b(fVar4.b()).a();
     }
 
     private o1() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

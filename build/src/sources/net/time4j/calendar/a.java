@@ -1,44 +1,44 @@
 package net.time4j.calendar;
 
 import java.util.Locale;
-import mt.f0;
-import mt.u;
-import mt.x;
-import mt.y;
+import pt.f0;
+import pt.u;
+import pt.x;
+import pt.y;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 abstract class a implements u {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f40345d;
+    private final Class f39805d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(Class cls) {
-        this.f40345d = cls;
+        this.f39805d = cls;
     }
 
-    @Override // mt.u
+    @Override // pt.u
     public f0 a() {
-        return f0.f39404a;
+        return f0.f46601a;
     }
 
-    @Override // mt.u
+    @Override // pt.u
     public x b() {
         return null;
     }
 
-    @Override // mt.u
-    public int c() {
-        return 100;
-    }
-
-    @Override // mt.u
-    public String l(y yVar, Locale locale) {
+    @Override // pt.u
+    public String c(y yVar, Locale locale) {
         return net.time4j.calendar.service.a.a("chinese", yVar, locale);
     }
 
-    @Override // mt.u
+    @Override // pt.u
+    public int j() {
+        return 100;
+    }
+
+    @Override // pt.u
     /* renamed from: d */
-    public mt.o h(f fVar, mt.d dVar) {
+    public pt.o h(f fVar, pt.d dVar) {
         return fVar;
     }
 }

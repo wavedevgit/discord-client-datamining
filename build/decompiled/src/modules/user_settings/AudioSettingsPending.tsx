@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.updatePendingSettings = var3;
     var1 = function arg0() {
-        _fun94455: for (var _fun94455_ip = 0;;) switch (_fun94455_ip) {
+        _fun94472: for (var _fun94472_ip = 0;;) switch (_fun94472_ip) {
             case 0:
                 var10 = arg0;
                 var8 = _closure1_slot1;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = _closure1_slot1;
                         var11 = var11[var14];
                         var11 = var10.bind(var0)(var13, var12, var11);
-                        _fun94455_ip = 28;
-                        continue _fun94455;
+                        _fun94472_ip = 28;
+                        continue _fun94472;
                     }
             case 84:
                 var1 = {};

@@ -7,60 +7,60 @@ import ne.w0;
 public abstract class f implements DataSource {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f36789a;
+    private final boolean f36716a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ArrayList f36790b = new ArrayList(1);
+    private final ArrayList f36717b = new ArrayList(1);
 
     /* renamed from: c  reason: collision with root package name */
-    private int f36791c;
+    private int f36718c;
 
     /* renamed from: d  reason: collision with root package name */
-    private com.google.android.exoplayer2.upstream.a f36792d;
+    private com.google.android.exoplayer2.upstream.a f36719d;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public f(boolean z10) {
-        this.f36789a = z10;
+        this.f36716a = z10;
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public final void j(c0 c0Var) {
         ne.a.e(c0Var);
-        if (!this.f36790b.contains(c0Var)) {
-            this.f36790b.add(c0Var);
-            this.f36791c++;
+        if (!this.f36717b.contains(c0Var)) {
+            this.f36717b.add(c0Var);
+            this.f36718c++;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void o(int i10) {
-        com.google.android.exoplayer2.upstream.a aVar = (com.google.android.exoplayer2.upstream.a) w0.j(this.f36792d);
-        for (int i11 = 0; i11 < this.f36791c; i11++) {
-            ((c0) this.f36790b.get(i11)).g(this, aVar, this.f36789a, i10);
+        com.google.android.exoplayer2.upstream.a aVar = (com.google.android.exoplayer2.upstream.a) w0.j(this.f36719d);
+        for (int i11 = 0; i11 < this.f36718c; i11++) {
+            ((c0) this.f36717b.get(i11)).g(this, aVar, this.f36716a, i10);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void p() {
-        com.google.android.exoplayer2.upstream.a aVar = (com.google.android.exoplayer2.upstream.a) w0.j(this.f36792d);
-        for (int i10 = 0; i10 < this.f36791c; i10++) {
-            ((c0) this.f36790b.get(i10)).d(this, aVar, this.f36789a);
+        com.google.android.exoplayer2.upstream.a aVar = (com.google.android.exoplayer2.upstream.a) w0.j(this.f36719d);
+        for (int i10 = 0; i10 < this.f36718c; i10++) {
+            ((c0) this.f36717b.get(i10)).d(this, aVar, this.f36716a);
         }
-        this.f36792d = null;
+        this.f36719d = null;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void q(com.google.android.exoplayer2.upstream.a aVar) {
-        for (int i10 = 0; i10 < this.f36791c; i10++) {
-            ((c0) this.f36790b.get(i10)).i(this, aVar, this.f36789a);
+        for (int i10 = 0; i10 < this.f36718c; i10++) {
+            ((c0) this.f36717b.get(i10)).i(this, aVar, this.f36716a);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void r(com.google.android.exoplayer2.upstream.a aVar) {
-        this.f36792d = aVar;
-        for (int i10 = 0; i10 < this.f36791c; i10++) {
-            ((c0) this.f36790b.get(i10)).h(this, aVar, this.f36789a);
+        this.f36719d = aVar;
+        for (int i10 = 0; i10 < this.f36718c; i10++) {
+            ((c0) this.f36717b.get(i10)).h(this, aVar, this.f36716a);
         }
     }
 }

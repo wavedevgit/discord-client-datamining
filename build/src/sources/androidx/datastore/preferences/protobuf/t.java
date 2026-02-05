@@ -41,140 +41,140 @@ public final class t {
     public static final t Z;
 
     /* renamed from: a0  reason: collision with root package name */
-    public static final t f3799a0;
+    public static final t f3911a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    public static final t f3800b0;
+    public static final t f3912b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    public static final t f3801c0;
+    public static final t f3913c0;
 
     /* renamed from: d0  reason: collision with root package name */
-    public static final t f3802d0;
+    public static final t f3914d0;
 
     /* renamed from: e0  reason: collision with root package name */
-    public static final t f3803e0;
+    public static final t f3915e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    public static final t f3804f0;
+    public static final t f3916f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    public static final t f3805g0;
+    public static final t f3917g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    public static final t f3806h0;
+    public static final t f3918h0;
 
     /* renamed from: i0  reason: collision with root package name */
-    public static final t f3807i0;
+    public static final t f3919i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    public static final t f3808j0;
+    public static final t f3920j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    public static final t f3809k0;
+    public static final t f3921k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    public static final t f3810l0;
+    public static final t f3922l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    public static final t f3811m0;
+    public static final t f3923m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    public static final t f3812n0;
+    public static final t f3924n0;
 
     /* renamed from: o0  reason: collision with root package name */
-    public static final t f3813o0;
+    public static final t f3925o0;
 
     /* renamed from: p0  reason: collision with root package name */
-    private static final t[] f3814p0;
+    private static final t[] f3926p0;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final t f3815q;
+    public static final t f3927q;
 
     /* renamed from: q0  reason: collision with root package name */
-    private static final Type[] f3816q0;
+    private static final Type[] f3928q0;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final t f3817r;
+    public static final t f3929r;
 
     /* renamed from: r0  reason: collision with root package name */
-    private static final /* synthetic */ t[] f3818r0;
+    private static final /* synthetic */ t[] f3930r0;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final t f3819s;
+    public static final t f3931s;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final t f3820t;
+    public static final t f3932t;
 
     /* renamed from: u  reason: collision with root package name */
-    public static final t f3821u;
+    public static final t f3933u;
 
     /* renamed from: v  reason: collision with root package name */
-    public static final t f3822v;
+    public static final t f3934v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final t f3823w;
+    public static final t f3935w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final t f3824x;
+    public static final t f3936x;
 
     /* renamed from: y  reason: collision with root package name */
-    public static final t f3825y;
+    public static final t f3937y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final t f3826z;
+    public static final t f3938z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0 f3827d;
+    private final a0 f3939d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f3828e;
+    private final int f3940e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final b f3829i;
+    private final b f3941i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Class f3830o;
+    private final Class f3942o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f3831p;
+    private final boolean f3943p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f3832a;
+        static final /* synthetic */ int[] f3944a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f3833b;
+        static final /* synthetic */ int[] f3945b;
 
         static {
             int[] iArr = new int[a0.values().length];
-            f3833b = iArr;
+            f3945b = iArr;
             try {
-                iArr[a0.f3575v.ordinal()] = 1;
+                iArr[a0.f3687v.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f3833b[a0.f3577x.ordinal()] = 2;
+                f3945b[a0.f3689x.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f3833b[a0.f3574u.ordinal()] = 3;
+                f3945b[a0.f3686u.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             int[] iArr2 = new int[b.values().length];
-            f3832a = iArr2;
+            f3944a = iArr2;
             try {
                 iArr2[b.MAP.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f3832a[b.VECTOR.ordinal()] = 2;
+                f3944a[b.VECTOR.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f3832a[b.SCALAR.ordinal()] = 3;
+                f3944a[b.SCALAR.ordinal()] = 3;
             } catch (NoSuchFieldError unused6) {
             }
         }
@@ -189,48 +189,48 @@ public final class t {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f3839d;
+        private final boolean f3951d;
 
         b(boolean z10) {
-            this.f3839d = z10;
+            this.f3951d = z10;
         }
     }
 
     static {
         b bVar = b.SCALAR;
-        a0 a0Var = a0.f3572s;
+        a0 a0Var = a0.f3684s;
         t tVar = new t("DOUBLE", 0, 0, bVar, a0Var);
-        f3815q = tVar;
-        a0 a0Var2 = a0.f3571r;
+        f3927q = tVar;
+        a0 a0Var2 = a0.f3683r;
         t tVar2 = new t("FLOAT", 1, 1, bVar, a0Var2);
-        f3817r = tVar2;
-        a0 a0Var3 = a0.f3570q;
+        f3929r = tVar2;
+        a0 a0Var3 = a0.f3682q;
         t tVar3 = new t("INT64", 2, 2, bVar, a0Var3);
-        f3819s = tVar3;
+        f3931s = tVar3;
         t tVar4 = new t("UINT64", 3, 3, bVar, a0Var3);
-        f3820t = tVar4;
-        a0 a0Var4 = a0.f3569p;
+        f3932t = tVar4;
+        a0 a0Var4 = a0.f3681p;
         t tVar5 = new t("INT32", 4, 4, bVar, a0Var4);
-        f3821u = tVar5;
+        f3933u = tVar5;
         t tVar6 = new t("FIXED64", 5, 5, bVar, a0Var3);
-        f3822v = tVar6;
+        f3934v = tVar6;
         t tVar7 = new t("FIXED32", 6, 6, bVar, a0Var4);
-        f3823w = tVar7;
-        a0 a0Var5 = a0.f3573t;
+        f3935w = tVar7;
+        a0 a0Var5 = a0.f3685t;
         t tVar8 = new t("BOOL", 7, 7, bVar, a0Var5);
-        f3824x = tVar8;
-        a0 a0Var6 = a0.f3574u;
+        f3936x = tVar8;
+        a0 a0Var6 = a0.f3686u;
         t tVar9 = new t("STRING", 8, 8, bVar, a0Var6);
-        f3825y = tVar9;
-        a0 a0Var7 = a0.f3577x;
+        f3937y = tVar9;
+        a0 a0Var7 = a0.f3689x;
         t tVar10 = new t("MESSAGE", 9, 9, bVar, a0Var7);
-        f3826z = tVar10;
-        a0 a0Var8 = a0.f3575v;
+        f3938z = tVar10;
+        a0 a0Var8 = a0.f3687v;
         t tVar11 = new t("BYTES", 10, 10, bVar, a0Var8);
         A = tVar11;
         t tVar12 = new t("UINT32", 11, 11, bVar, a0Var4);
         B = tVar12;
-        a0 a0Var9 = a0.f3576w;
+        a0 a0Var9 = a0.f3688w;
         t tVar13 = new t("ENUM", 12, 12, bVar, a0Var9);
         C = tVar13;
         t tVar14 = new t("SFIXED32", 13, 13, bVar, a0Var4);
@@ -282,61 +282,61 @@ public final class t {
         t tVar36 = new t("DOUBLE_LIST_PACKED", 35, 35, bVar3, a0Var);
         Z = tVar36;
         t tVar37 = new t("FLOAT_LIST_PACKED", 36, 36, bVar3, a0Var2);
-        f3799a0 = tVar37;
+        f3911a0 = tVar37;
         t tVar38 = new t("INT64_LIST_PACKED", 37, 37, bVar3, a0Var3);
-        f3800b0 = tVar38;
+        f3912b0 = tVar38;
         t tVar39 = new t("UINT64_LIST_PACKED", 38, 38, bVar3, a0Var3);
-        f3801c0 = tVar39;
+        f3913c0 = tVar39;
         t tVar40 = new t("INT32_LIST_PACKED", 39, 39, bVar3, a0Var4);
-        f3802d0 = tVar40;
+        f3914d0 = tVar40;
         t tVar41 = new t("FIXED64_LIST_PACKED", 40, 40, bVar3, a0Var3);
-        f3803e0 = tVar41;
+        f3915e0 = tVar41;
         t tVar42 = new t("FIXED32_LIST_PACKED", 41, 41, bVar3, a0Var4);
-        f3804f0 = tVar42;
+        f3916f0 = tVar42;
         t tVar43 = new t("BOOL_LIST_PACKED", 42, 42, bVar3, a0Var5);
-        f3805g0 = tVar43;
+        f3917g0 = tVar43;
         t tVar44 = new t("UINT32_LIST_PACKED", 43, 43, bVar3, a0Var4);
-        f3806h0 = tVar44;
+        f3918h0 = tVar44;
         t tVar45 = new t("ENUM_LIST_PACKED", 44, 44, bVar3, a0Var9);
-        f3807i0 = tVar45;
+        f3919i0 = tVar45;
         t tVar46 = new t("SFIXED32_LIST_PACKED", 45, 45, bVar3, a0Var4);
-        f3808j0 = tVar46;
+        f3920j0 = tVar46;
         t tVar47 = new t("SFIXED64_LIST_PACKED", 46, 46, bVar3, a0Var3);
-        f3809k0 = tVar47;
+        f3921k0 = tVar47;
         t tVar48 = new t("SINT32_LIST_PACKED", 47, 47, bVar3, a0Var4);
-        f3810l0 = tVar48;
+        f3922l0 = tVar48;
         t tVar49 = new t("SINT64_LIST_PACKED", 48, 48, bVar3, a0Var3);
-        f3811m0 = tVar49;
+        f3923m0 = tVar49;
         t tVar50 = new t("GROUP_LIST", 49, 49, bVar2, a0Var7);
-        f3812n0 = tVar50;
-        t tVar51 = new t("MAP", 50, 50, b.MAP, a0.f3568o);
-        f3813o0 = tVar51;
-        f3818r0 = new t[]{tVar, tVar2, tVar3, tVar4, tVar5, tVar6, tVar7, tVar8, tVar9, tVar10, tVar11, tVar12, tVar13, tVar14, tVar15, tVar16, tVar17, tVar18, tVar19, tVar20, tVar21, tVar22, tVar23, tVar24, tVar25, tVar26, tVar27, tVar28, tVar29, tVar30, tVar31, tVar32, tVar33, tVar34, tVar35, tVar36, tVar37, tVar38, tVar39, tVar40, tVar41, tVar42, tVar43, tVar44, tVar45, tVar46, tVar47, tVar48, tVar49, tVar50, tVar51};
-        f3816q0 = new Type[0];
+        f3924n0 = tVar50;
+        t tVar51 = new t("MAP", 50, 50, b.MAP, a0.f3680o);
+        f3925o0 = tVar51;
+        f3930r0 = new t[]{tVar, tVar2, tVar3, tVar4, tVar5, tVar6, tVar7, tVar8, tVar9, tVar10, tVar11, tVar12, tVar13, tVar14, tVar15, tVar16, tVar17, tVar18, tVar19, tVar20, tVar21, tVar22, tVar23, tVar24, tVar25, tVar26, tVar27, tVar28, tVar29, tVar30, tVar31, tVar32, tVar33, tVar34, tVar35, tVar36, tVar37, tVar38, tVar39, tVar40, tVar41, tVar42, tVar43, tVar44, tVar45, tVar46, tVar47, tVar48, tVar49, tVar50, tVar51};
+        f3928q0 = new Type[0];
         t[] values = values();
-        f3814p0 = new t[values.length];
+        f3926p0 = new t[values.length];
         for (t tVar52 : values) {
-            f3814p0[tVar52.f3828e] = tVar52;
+            f3926p0[tVar52.f3940e] = tVar52;
         }
     }
 
     private t(String str, int i10, int i11, b bVar, a0 a0Var) {
         int i12;
-        this.f3828e = i11;
-        this.f3829i = bVar;
-        this.f3827d = a0Var;
-        int i13 = a.f3832a[bVar.ordinal()];
+        this.f3940e = i11;
+        this.f3941i = bVar;
+        this.f3939d = a0Var;
+        int i13 = a.f3944a[bVar.ordinal()];
         boolean z10 = true;
         if (i13 != 1) {
             if (i13 != 2) {
-                this.f3830o = null;
+                this.f3942o = null;
             } else {
-                this.f3830o = a0Var.a();
+                this.f3942o = a0Var.a();
             }
         } else {
-            this.f3830o = a0Var.a();
+            this.f3942o = a0Var.a();
         }
-        this.f3831p = (bVar != b.SCALAR || (i12 = a.f3833b[a0Var.ordinal()]) == 1 || i12 == 2 || i12 == 3) ? false : false;
+        this.f3943p = (bVar != b.SCALAR || (i12 = a.f3945b[a0Var.ordinal()]) == 1 || i12 == 2 || i12 == 3) ? false : false;
     }
 
     public static t valueOf(String str) {
@@ -344,10 +344,10 @@ public final class t {
     }
 
     public static t[] values() {
-        return (t[]) f3818r0.clone();
+        return (t[]) f3930r0.clone();
     }
 
     public int a() {
-        return this.f3828e;
+        return this.f3940e;
     }
 }

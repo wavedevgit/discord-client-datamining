@@ -10,13 +10,13 @@ public final class h implements io.sentry.util.runtime.a {
     }
 
     @Override // io.sentry.util.runtime.a
-    public Object a(a.InterfaceC0407a interfaceC0407a) {
+    public Object a(a.InterfaceC0414a interfaceC0414a) {
         StrictMode.ThreadPolicy threadPolicy = StrictMode.getThreadPolicy();
         StrictMode.VmPolicy vmPolicy = StrictMode.getVmPolicy();
         StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.LAX);
         StrictMode.setVmPolicy(StrictMode.VmPolicy.LAX);
         try {
-            return interfaceC0407a.run();
+            return interfaceC0414a.run();
         } finally {
             StrictMode.setThreadPolicy(threadPolicy);
             StrictMode.setVmPolicy(vmPolicy);
@@ -25,8 +25,8 @@ public final class h implements io.sentry.util.runtime.a {
 
     @Override // io.sentry.util.runtime.a
     public void b(final Runnable runnable) {
-        a(new a.InterfaceC0407a() { // from class: io.sentry.android.core.internal.util.g
-            @Override // io.sentry.util.runtime.a.InterfaceC0407a
+        a(new a.InterfaceC0414a() { // from class: io.sentry.android.core.internal.util.g
+            @Override // io.sentry.util.runtime.a.InterfaceC0414a
             public final Object run() {
                 return h.c(runnable);
             }

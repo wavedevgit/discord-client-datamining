@@ -14,7 +14,7 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import rr.b;
+import ur.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.file_manager.FileModule$getSize$1", f = "FileModule.kt", l = {}, m = "invokeSuspend")
 @SourceDebugExtension({"SMAP\nFileModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FileModule.kt\ncom/discord/file_manager/FileModule$getSize$1\n+ 2 Uri.kt\nandroidx/core/net/UriKt\n*L\n1#1,320:1\n29#2:321\n*S KotlinDebug\n*F\n+ 1 FileModule.kt\ncom/discord/file_manager/FileModule$getSize$1\n*L\n161#1:321\n*E\n"})
@@ -55,28 +55,28 @@ final class FileModule$getSize$1 extends k implements Function2<CoroutineScope, 
             String str = this.$uri;
             Promise promise = this.$promise;
             try {
-                Result.a aVar = Result.f32461e;
+                Result.a aVar = Result.f31985e;
                 reactApplicationContext = fileModule.getReactApplicationContext();
                 ParcelFileDescriptor openFileDescriptor = reactApplicationContext.getContentResolver().openFileDescriptor(Uri.parse(str), "r");
                 if (openFileDescriptor != null) {
                     j10 = openFileDescriptor.getStatSize();
-                    wr.c.a(openFileDescriptor, null);
+                    zr.c.a(openFileDescriptor, null);
                 } else {
                     j10 = 0;
                 }
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f32461e;
+                Result.a aVar2 = Result.f31985e;
                 b10 = Result.b(c.a(th2));
             }
             if (j10 >= 0) {
                 promise.resolve(kotlin.coroutines.jvm.internal.b.c(j10));
-                b10 = Result.b(Unit.f32464a);
+                b10 = Result.b(Unit.f31988a);
                 Promise promise2 = this.$promise;
                 Throwable e10 = Result.e(b10);
                 if (e10 != null) {
                     promise2.reject(e10);
                 }
-                return Unit.f32464a;
+                return Unit.f31988a;
             }
             throw new IllegalArgumentException("Failed requirement.");
         }
@@ -85,6 +85,6 @@ final class FileModule$getSize$1 extends k implements Function2<CoroutineScope, 
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$getSize$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((FileModule$getSize$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

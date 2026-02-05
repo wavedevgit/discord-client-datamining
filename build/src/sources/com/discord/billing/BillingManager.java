@@ -19,8 +19,6 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-import js.m0;
-import js.v0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -35,6 +33,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CompletableDeferred;
 import kotlinx.coroutines.CoroutineScope;
+import ms.m0;
+import ms.v0;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000Å\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0015\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\"\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\b*\u0001n\b\u0000\u0018\u00002\u00020\u0001:\u0004uvwxBe\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u0006\u0012\u0018\u0010\u000b\u001a\u0014\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\b0\n\u0012\u001e\u0010\u000e\u001a\u001a\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\b0\f¢\u0006\u0004\b\u000f\u0010\u0010J\u0017\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0011\u001a\u00020\u0002H\u0002¢\u0006\u0004\b\u0013\u0010\u0014J'\u0010\u0018\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\r2\u000e\b\u0002\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\r0\u0016H\u0002¢\u0006\u0004\b\u0018\u0010\u0019J\u0017\u0010\u001c\u001a\u00020\b2\u0006\u0010\u001b\u001a\u00020\u001aH\u0002¢\u0006\u0004\b\u001c\u0010\u001dJ\u001a\u0010!\u001a\u00020 2\b\b\u0002\u0010\u001f\u001a\u00020\u001eH\u0082@¢\u0006\u0004\b!\u0010\"J\u0017\u0010%\u001a\u00020\u00042\u0006\u0010$\u001a\u00020#H\u0002¢\u0006\u0004\b%\u0010&J1\u0010*\u001a\u00020\b2\u0006\u0010$\u001a\u00020#2\u000e\u0010(\u001a\n\u0012\u0004\u0012\u00020'\u0018\u00010\u00162\b\b\u0002\u0010)\u001a\u00020\u0004H\u0002¢\u0006\u0004\b*\u0010+J\u000f\u0010,\u001a\u00020\bH\u0002¢\u0006\u0004\b,\u0010-J\u000f\u0010.\u001a\u00020\u0004H\u0002¢\u0006\u0004\b.\u0010/J\u0017\u00101\u001a\u00020\b2\u0006\u00100\u001a\u00020'H\u0002¢\u0006\u0004\b1\u00102J\u0013\u00103\u001a\u00020\u0004*\u00020#H\u0002¢\u0006\u0004\b3\u0010&J,\u00107\u001a\u00020\b*\u0012\u0012\b\u0012\u000604j\u0002`5\u0012\u0004\u0012\u00020\b0\u00062\u0006\u00106\u001a\u00020\rH\u0082\u0002¢\u0006\u0004\b7\u00108J\r\u00109\u001a\u00020\b¢\u0006\u0004\b9\u0010-J\r\u0010:\u001a\u00020\b¢\u0006\u0004\b:\u0010-J?\u0010B\u001a\u00020\b2\f\u0010;\u001a\b\u0012\u0004\u0012\u00020\r0\u00162\u0006\u0010=\u001a\u00020<2\u0006\u0010?\u001a\u00020>2\u0012\u0010A\u001a\u000e\u0012\u0004\u0012\u00020@\u0012\u0004\u0012\u00020\b0\u0006¢\u0006\u0004\bB\u0010CJu\u00100\u001a\u00020\b2\b\u0010E\u001a\u0004\u0018\u00010D2\u0006\u0010F\u001a\u00020\r2\u0006\u0010=\u001a\u00020<2\u0006\u0010G\u001a\u00020\r2\n\b\u0002\u0010H\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010I\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010J\u001a\u0004\u0018\u00010\r2\f\u0010L\u001a\b\u0012\u0004\u0012\u00020\b0K2\u0012\u0010A\u001a\u000e\u0012\u0004\u0012\u00020@\u0012\u0004\u0012\u00020\b0\u0006¢\u0006\u0004\b0\u0010MJ7\u0010N\u001a\u00020\b2\u0006\u0010I\u001a\u00020\r2\f\u0010L\u001a\b\u0012\u0004\u0012\u00020\b0K2\u0012\u0010A\u001a\u000e\u0012\u0004\u0012\u00020@\u0012\u0004\u0012\u00020\b0\u0006¢\u0006\u0004\bN\u0010OJ7\u0010P\u001a\u00020\b2\u000e\b\u0002\u0010L\u001a\b\u0012\u0004\u0012\u00020\b0K2\u0018\b\u0002\u0010A\u001a\u0012\u0012\b\u0012\u000604j\u0002`5\u0012\u0004\u0012\u00020\b0\u0006¢\u0006\u0004\bP\u0010QJ5\u0010R\u001a\u00020\b2\u0012\u0010L\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\b0\u00062\u0012\u0010A\u001a\u000e\u0012\u0004\u0012\u00020@\u0012\u0004\u0012\u00020\b0\u0006¢\u0006\u0004\bR\u0010SR\u0014\u0010\u0003\u001a\u00020\u00028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0003\u0010TR\u0014\u0010\u0005\u001a\u00020\u00048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0005\u0010UR#\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00068\u0006¢\u0006\f\n\u0004\b\t\u0010V\u001a\u0004\bW\u0010XR)\u0010\u000b\u001a\u0014\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\b0\n8\u0006¢\u0006\f\n\u0004\b\u000b\u0010Y\u001a\u0004\bZ\u0010[R/\u0010\u000e\u001a\u001a\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\b0\f8\u0006¢\u0006\f\n\u0004\b\u000e\u0010\\\u001a\u0004\b]\u0010^R\u0016\u0010_\u001a\u00020\u001a8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b_\u0010`R \u0010c\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040b0a8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bc\u0010dR\u0014\u0010e\u001a\u00020\r8\u0002X\u0082D¢\u0006\u0006\n\u0004\be\u0010fR\u0014\u0010g\u001a\u00020\r8\u0002X\u0082D¢\u0006\u0006\n\u0004\bg\u0010fR\u001a\u0010i\u001a\b\u0012\u0004\u0012\u00020\r0h8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bi\u0010jR\u0016\u0010l\u001a\u00020k8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\bl\u0010mR\u0014\u0010o\u001a\u00020n8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bo\u0010pR\u001a\u0010r\u001a\u00020q8\u0002X\u0082\u0004¢\u0006\f\n\u0004\br\u0010s\u0012\u0004\bt\u0010-¨\u0006y"}, d2 = {"Lcom/discord/billing/BillingManager;", "", "Lcom/facebook/react/bridge/ReactApplicationContext;", "reactContext", "", "isProdBuild", "Lkotlin/Function1;", "", "", "onConnectionUpdated", "Lkotlin/Function2;", "onPurchaseStateUpdated", "Lkotlin/Function3;", "", "onPurchaseUpdated", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;ZLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;)V", "context", "Lkotlinx/coroutines/CoroutineScope;", "getCoroutineScope", "(Lcom/facebook/react/bridge/ReactApplicationContext;)Lkotlinx/coroutines/CoroutineScope;", "metricName", "", "tags", "trackBillingMetric", "(Ljava/lang/String;Ljava/util/List;)V", "Lcom/discord/billing/BillingManager$ConnectionState;", "state", "updateConnectionState", "(Lcom/discord/billing/BillingManager$ConnectionState;)V", "", "timeoutMs", "Lcom/discord/billing/BillingManager$ClientReadyState;", "suspendUntilReady", "(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lcom/android/billingclient/api/BillingResult;", "billingResult", "isRetryableError", "(Lcom/android/billingclient/api/BillingResult;)Z", "Lcom/android/billingclient/api/Purchase;", "purchases", "isActivePurchase", "handlePurchases", "(Lcom/android/billingclient/api/BillingResult;Ljava/util/List;Z)V", "reconnect", "()V", "isBillingClientReady", "()Z", "purchase", "verifyPurchase", "(Lcom/android/billingclient/api/Purchase;)V", "isNotOk", "Ljava/lang/Exception;", "Lkotlin/Exception;", "errorMessage", "invoke", "(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V", "open", "close", "productIds", "Lcom/discord/billing/types/ProductType;", "productType", "Lcom/facebook/react/bridge/Promise;", "reactPromise", "Lcom/discord/billing/BillingManagerException;", "onError", "getProducts", "(Ljava/util/List;Lcom/discord/billing/types/ProductType;Lcom/facebook/react/bridge/Promise;Lkotlin/jvm/functions/Function1;)V", "Landroid/app/Activity;", "activity", "productId", "userId", "oldProductId", "purchaseToken", "offerId", "Lkotlin/Function0;", "onSuccess", "(Landroid/app/Activity;Ljava/lang/String;Lcom/discord/billing/types/ProductType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V", "consumePurchase", "(Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V", "loadPurchases", "(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V", "getUserCountry", "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "Lcom/facebook/react/bridge/ReactApplicationContext;", "Z", "Lkotlin/jvm/functions/Function1;", "getOnConnectionUpdated", "()Lkotlin/jvm/functions/Function1;", "Lkotlin/jvm/functions/Function2;", "getOnPurchaseStateUpdated", "()Lkotlin/jvm/functions/Function2;", "Lkotlin/jvm/functions/Function3;", "getOnPurchaseUpdated", "()Lkotlin/jvm/functions/Function3;", "currentConnectionState", "Lcom/discord/billing/BillingManager$ConnectionState;", "", "Lkotlinx/coroutines/CompletableDeferred;", "connectionReadyListeners", "Ljava/util/List;", "prodPackageName", "Ljava/lang/String;", "devPackageName", "", "allowedPackageNames", "Ljava/util/Set;", "Lcom/android/billingclient/api/BillingClient;", "billingClient", "Lcom/android/billingclient/api/BillingClient;", "com/discord/billing/BillingManager$billingClientStateListener$1", "billingClientStateListener", "Lcom/discord/billing/BillingManager$billingClientStateListener$1;", "Lcom/discord/misc/utilities/backoff/ExponentialBackoff;", "backoff", "Lcom/discord/misc/utilities/backoff/ExponentialBackoff;", "getBackoff$annotations", "ConnectionState", "ClientReadyState", "ProductDetailsResponse", "BillingConfigResponse", "billing_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nBillingManager.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BillingManager.kt\ncom/discord/billing/BillingManager\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,736:1\n1869#2,2:737\n1869#2,2:739\n1869#2,2:742\n1869#2,2:744\n1#3:741\n*S KotlinDebug\n*F\n+ 1 BillingManager.kt\ncom/discord/billing/BillingManager\n*L\n233#1:737,2\n238#1:739,2\n294#1:742,2\n725#1:744,2\n*E\n"})
@@ -158,7 +158,7 @@ public final class BillingManager {
         static {
             ClientReadyState[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = sr.a.a($values);
+            $ENTRIES = vr.a.a($values);
         }
 
         private ClientReadyState(String str, int i10, String str2) {
@@ -205,7 +205,7 @@ public final class BillingManager {
         static {
             ConnectionState[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = sr.a.a($values);
+            $ENTRIES = vr.a.a($values);
         }
 
         private ConnectionState(String str, int i10, int i11) {
@@ -351,7 +351,7 @@ public final class BillingManager {
                 BillingManager.loadPurchases$default(BillingManager.this, null, null, 3, null);
             }
         };
-        this.backoff = new ExponentialBackoff(v0.f31994d, 1000L, LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES, 10);
+        this.backoff = new ExponentialBackoff(v0.f38956d, 1000L, LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES, 10);
     }
 
     private static /* synthetic */ void getBackoff$annotations() {
@@ -372,7 +372,7 @@ public final class BillingManager {
         if (jVar != null) {
             return jVar;
         }
-        return v0.f31994d;
+        return v0.f38956d;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -437,7 +437,7 @@ public final class BillingManager {
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit unit;
-                    unit = Unit.f32464a;
+                    unit = Unit.f31988a;
                     return unit;
                 }
             };
@@ -458,7 +458,7 @@ public final class BillingManager {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit loadPurchases$lambda$8(Exception it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public static /* synthetic */ void purchase$default(BillingManager billingManager, Activity activity, String str, ProductType productType, String str2, String str3, String str4, String str5, Function0 function0, Function1 function1, int i10, Object obj) {
@@ -510,14 +510,14 @@ public final class BillingManager {
             r0.<init>(r7, r10)
         L18:
             java.lang.Object r10 = r0.result
-            java.lang.Object r1 = rr.b.f()
+            java.lang.Object r1 = ur.b.f()
             int r2 = r0.label
             r3 = 1
             if (r2 == 0) goto L35
             if (r2 != r3) goto L2d
             java.lang.Object r8 = r0.L$0
             kotlinx.coroutines.CompletableDeferred r8 = (kotlinx.coroutines.CompletableDeferred) r8
-            kotlin.c.b(r10)     // Catch: js.r1 -> L89
+            kotlin.c.b(r10)     // Catch: ms.r1 -> L89
             goto L85
         L2d:
             java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
@@ -541,7 +541,7 @@ public final class BillingManager {
             r7.reconnect()
         L50:
             r10 = 0
-            kotlinx.coroutines.CompletableDeferred r2 = js.q.b(r10, r3, r10)
+            kotlinx.coroutines.CompletableDeferred r2 = ms.q.b(r10, r3, r10)
             java.util.List<kotlinx.coroutines.CompletableDeferred> r4 = r7.connectionReadyListeners
             monitor-enter(r4)
             com.discord.billing.BillingManager$ConnectionState r5 = r7.currentConnectionState     // Catch: java.lang.Throwable -> L62
@@ -564,17 +564,17 @@ public final class BillingManager {
             java.util.List<kotlinx.coroutines.CompletableDeferred> r5 = r7.connectionReadyListeners     // Catch: java.lang.Throwable -> L62
             r5.add(r2)     // Catch: java.lang.Throwable -> L62
             monitor-exit(r4)
-            com.discord.billing.BillingManager$suspendUntilReady$3 r4 = new com.discord.billing.BillingManager$suspendUntilReady$3     // Catch: js.r1 -> L88
-            r4.<init>(r2, r10)     // Catch: js.r1 -> L88
-            r0.L$0 = r2     // Catch: js.r1 -> L88
-            r0.label = r3     // Catch: js.r1 -> L88
-            java.lang.Object r10 = js.t1.c(r8, r4, r0)     // Catch: js.r1 -> L88
+            com.discord.billing.BillingManager$suspendUntilReady$3 r4 = new com.discord.billing.BillingManager$suspendUntilReady$3     // Catch: ms.r1 -> L88
+            r4.<init>(r2, r10)     // Catch: ms.r1 -> L88
+            r0.L$0 = r2     // Catch: ms.r1 -> L88
+            r0.label = r3     // Catch: ms.r1 -> L88
+            java.lang.Object r10 = ms.t1.c(r8, r4, r0)     // Catch: ms.r1 -> L88
             if (r10 != r1) goto L84
             return r1
         L84:
             r8 = r2
         L85:
-            com.discord.billing.BillingManager$ClientReadyState r10 = (com.discord.billing.BillingManager.ClientReadyState) r10     // Catch: js.r1 -> L89
+            com.discord.billing.BillingManager$ClientReadyState r10 = (com.discord.billing.BillingManager.ClientReadyState) r10     // Catch: ms.r1 -> L89
             return r10
         L88:
             r8 = r2
@@ -630,10 +630,10 @@ public final class BillingManager {
             synchronized (this.connectionReadyListeners) {
                 try {
                     for (CompletableDeferred completableDeferred : this.connectionReadyListeners) {
-                        completableDeferred.J0(Boolean.TRUE);
+                        completableDeferred.K0(Boolean.TRUE);
                     }
                     this.connectionReadyListeners.clear();
-                    Unit unit = Unit.f32464a;
+                    Unit unit = Unit.f31988a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -642,10 +642,10 @@ public final class BillingManager {
             synchronized (this.connectionReadyListeners) {
                 try {
                     for (CompletableDeferred completableDeferred2 : this.connectionReadyListeners) {
-                        completableDeferred2.J0(Boolean.FALSE);
+                        completableDeferred2.K0(Boolean.FALSE);
                     }
                     this.connectionReadyListeners.clear();
-                    Unit unit2 = Unit.f32464a;
+                    Unit unit2 = Unit.f31988a;
                 } catch (Throwable th3) {
                     throw th3;
                 }
@@ -688,7 +688,7 @@ public final class BillingManager {
         Intrinsics.checkNotNullParameter(purchaseToken, "purchaseToken");
         Intrinsics.checkNotNullParameter(onSuccess, "onSuccess");
         Intrinsics.checkNotNullParameter(onError, "onError");
-        js.i.d(getCoroutineScope(this.reactContext), m0.a(), null, new BillingManager$consumePurchase$1(this, onError, purchaseToken, onSuccess, null), 2, null);
+        ms.i.d(getCoroutineScope(this.reactContext), m0.a(), null, new BillingManager$consumePurchase$1(this, onError, purchaseToken, onSuccess, null), 2, null);
     }
 
     @NotNull
@@ -712,20 +712,20 @@ public final class BillingManager {
         Intrinsics.checkNotNullParameter(reactPromise, "reactPromise");
         Intrinsics.checkNotNullParameter(onError, "onError");
         CoroutineScope coroutineScope = getCoroutineScope(this.reactContext);
-        js.i.d(coroutineScope, m0.a(), null, new BillingManager$getProducts$1(this, onError, new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), reactPromise, productType, productIds, null), 2, null);
+        ms.i.d(coroutineScope, m0.a(), null, new BillingManager$getProducts$1(this, onError, new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), reactPromise, productType, productIds, null), 2, null);
     }
 
     public final void getUserCountry(@NotNull Function1<? super String, Unit> onSuccess, @NotNull Function1<? super BillingManagerException, Unit> onError) {
         Intrinsics.checkNotNullParameter(onSuccess, "onSuccess");
         Intrinsics.checkNotNullParameter(onError, "onError");
         CoroutineScope coroutineScope = getCoroutineScope(this.reactContext);
-        js.i.d(coroutineScope, m0.a(), null, new BillingManager$getUserCountry$1(this, onError, new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), onSuccess, null), 2, null);
+        ms.i.d(coroutineScope, m0.a(), null, new BillingManager$getUserCountry$1(this, onError, new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), onSuccess, null), 2, null);
     }
 
     public final void loadPurchases(@NotNull Function0<Unit> onSuccess, @NotNull Function1<? super Exception, Unit> onError) {
         Intrinsics.checkNotNullParameter(onSuccess, "onSuccess");
         Intrinsics.checkNotNullParameter(onError, "onError");
-        js.i.d(getCoroutineScope(this.reactContext), m0.a(), null, new BillingManager$loadPurchases$3(this, onError, onSuccess, null), 2, null);
+        ms.i.d(getCoroutineScope(this.reactContext), m0.a(), null, new BillingManager$loadPurchases$3(this, onError, onSuccess, null), 2, null);
     }
 
     public final void open() {
@@ -767,7 +767,7 @@ public final class BillingManager {
         Intrinsics.checkNotNullParameter(onSuccess, "onSuccess");
         Intrinsics.checkNotNullParameter(onError, "onError");
         if (activity != null) {
-            js.i.d(getCoroutineScope(this.reactContext), m0.a(), null, new BillingManager$purchase$1(this, onError, productType, productId, str, str2, userId, str3, activity, onSuccess, null), 2, null);
+            ms.i.d(getCoroutineScope(this.reactContext), m0.a(), null, new BillingManager$purchase$1(this, onError, productType, productId, str, str2, userId, str3, activity, onSuccess, null), 2, null);
         } else {
             onError.invoke(new BillingManagerException.BillingException("Current React Activity not found"));
         }

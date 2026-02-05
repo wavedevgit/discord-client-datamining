@@ -1,101 +1,101 @@
 package pg;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class l7 implements ui.d {
+final class l7 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l7 f45600a = new l7();
+    static final l7 f45530a = new l7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f45601b;
+    private static final xi.c f45531b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f45602c;
+    private static final xi.c f45532c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f45603d;
+    private static final xi.c f45533d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f45604e;
+    private static final xi.c f45534e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f45605f;
+    private static final xi.c f45535f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f45606g;
+    private static final xi.c f45536g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ui.c f45607h;
+    private static final xi.c f45537h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final ui.c f45608i;
+    private static final xi.c f45538i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final ui.c f45609j;
+    private static final xi.c f45539j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final ui.c f45610k;
+    private static final xi.c f45540k;
 
     static {
-        c.b a10 = ui.c.a("durationMs");
+        c.b a10 = xi.c.a("durationMs");
         v1 v1Var = new v1();
         v1Var.a(1);
-        f45601b = a10.b(v1Var.b()).a();
-        c.b a11 = ui.c.a("errorCode");
+        f45531b = a10.b(v1Var.b()).a();
+        c.b a11 = xi.c.a("errorCode");
         v1 v1Var2 = new v1();
         v1Var2.a(2);
-        f45602c = a11.b(v1Var2.b()).a();
-        c.b a12 = ui.c.a("isColdCall");
+        f45532c = a11.b(v1Var2.b()).a();
+        c.b a12 = xi.c.a("isColdCall");
         v1 v1Var3 = new v1();
         v1Var3.a(3);
-        f45603d = a12.b(v1Var3.b()).a();
-        c.b a13 = ui.c.a("autoManageModelOnBackground");
+        f45533d = a12.b(v1Var3.b()).a();
+        c.b a13 = xi.c.a("autoManageModelOnBackground");
         v1 v1Var4 = new v1();
         v1Var4.a(4);
-        f45604e = a13.b(v1Var4.b()).a();
-        c.b a14 = ui.c.a("autoManageModelOnLowMemory");
+        f45534e = a13.b(v1Var4.b()).a();
+        c.b a14 = xi.c.a("autoManageModelOnLowMemory");
         v1 v1Var5 = new v1();
         v1Var5.a(5);
-        f45605f = a14.b(v1Var5.b()).a();
-        c.b a15 = ui.c.a("isNnApiEnabled");
+        f45535f = a14.b(v1Var5.b()).a();
+        c.b a15 = xi.c.a("isNnApiEnabled");
         v1 v1Var6 = new v1();
         v1Var6.a(6);
-        f45606g = a15.b(v1Var6.b()).a();
-        c.b a16 = ui.c.a("eventsCount");
+        f45536g = a15.b(v1Var6.b()).a();
+        c.b a16 = xi.c.a("eventsCount");
         v1 v1Var7 = new v1();
         v1Var7.a(7);
-        f45607h = a16.b(v1Var7.b()).a();
-        c.b a17 = ui.c.a("otherErrors");
+        f45537h = a16.b(v1Var7.b()).a();
+        c.b a17 = xi.c.a("otherErrors");
         v1 v1Var8 = new v1();
         v1Var8.a(8);
-        f45608i = a17.b(v1Var8.b()).a();
-        c.b a18 = ui.c.a("remoteConfigValueForAcceleration");
+        f45538i = a17.b(v1Var8.b()).a();
+        c.b a18 = xi.c.a("remoteConfigValueForAcceleration");
         v1 v1Var9 = new v1();
         v1Var9.a(9);
-        f45609j = a18.b(v1Var9.b()).a();
-        c.b a19 = ui.c.a("isAccelerated");
+        f45539j = a18.b(v1Var9.b()).a();
+        c.b a19 = xi.c.a("isAccelerated");
         v1 v1Var10 = new v1();
         v1Var10.a(10);
-        f45610k = a19.b(v1Var10.b()).a();
+        f45540k = a19.b(v1Var10.b()).a();
     }
 
     private l7() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         xd xdVar = (xd) obj;
-        ui.e eVar = (ui.e) obj2;
-        eVar.b(f45601b, xdVar.e());
-        eVar.b(f45602c, xdVar.a());
-        eVar.b(f45603d, xdVar.d());
-        eVar.b(f45604e, xdVar.b());
-        eVar.b(f45605f, xdVar.c());
-        eVar.b(f45606g, null);
-        eVar.b(f45607h, null);
-        eVar.b(f45608i, null);
-        eVar.b(f45609j, null);
-        eVar.b(f45610k, null);
+        xi.e eVar = (xi.e) obj2;
+        eVar.d(f45531b, xdVar.e());
+        eVar.d(f45532c, xdVar.a());
+        eVar.d(f45533d, xdVar.d());
+        eVar.d(f45534e, xdVar.b());
+        eVar.d(f45535f, xdVar.c());
+        eVar.d(f45536g, null);
+        eVar.d(f45537h, null);
+        eVar.d(f45538i, null);
+        eVar.d(f45539j, null);
+        eVar.d(f45540k, null);
     }
 }

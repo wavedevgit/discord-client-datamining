@@ -5,19 +5,19 @@ import android.graphics.Rect;
 public final class Insets {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final Insets f3162e = new Insets(0, 0, 0, 0);
+    public static final Insets f3274e = new Insets(0, 0, 0, 0);
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f3163a;
+    public final int f3275a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f3164b;
+    public final int f3276b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f3165c;
+    public final int f3277c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f3166d;
+    public final int f3278d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -27,23 +27,23 @@ public final class Insets {
     }
 
     private Insets(int i10, int i11, int i12, int i13) {
-        this.f3163a = i10;
-        this.f3164b = i11;
-        this.f3165c = i12;
-        this.f3166d = i13;
+        this.f3275a = i10;
+        this.f3276b = i11;
+        this.f3277c = i12;
+        this.f3278d = i13;
     }
 
     public static Insets a(Insets insets, Insets insets2) {
-        return c(insets.f3163a + insets2.f3163a, insets.f3164b + insets2.f3164b, insets.f3165c + insets2.f3165c, insets.f3166d + insets2.f3166d);
+        return c(insets.f3275a + insets2.f3275a, insets.f3276b + insets2.f3276b, insets.f3277c + insets2.f3277c, insets.f3278d + insets2.f3278d);
     }
 
     public static Insets b(Insets insets, Insets insets2) {
-        return c(Math.max(insets.f3163a, insets2.f3163a), Math.max(insets.f3164b, insets2.f3164b), Math.max(insets.f3165c, insets2.f3165c), Math.max(insets.f3166d, insets2.f3166d));
+        return c(Math.max(insets.f3275a, insets2.f3275a), Math.max(insets.f3276b, insets2.f3276b), Math.max(insets.f3277c, insets2.f3277c), Math.max(insets.f3278d, insets2.f3278d));
     }
 
     public static Insets c(int i10, int i11, int i12, int i13) {
         if (i10 == 0 && i11 == 0 && i12 == 0 && i13 == 0) {
-            return f3162e;
+            return f3274e;
         }
         return new Insets(i10, i11, i12, i13);
     }
@@ -53,7 +53,7 @@ public final class Insets {
     }
 
     public static Insets e(Insets insets, Insets insets2) {
-        return c(insets.f3163a - insets2.f3163a, insets.f3164b - insets2.f3164b, insets.f3165c - insets2.f3165c, insets.f3166d - insets2.f3166d);
+        return c(insets.f3275a - insets2.f3275a, insets.f3276b - insets2.f3276b, insets.f3277c - insets2.f3277c, insets.f3278d - insets2.f3278d);
     }
 
     public static Insets f(android.graphics.Insets insets) {
@@ -76,21 +76,21 @@ public final class Insets {
             return false;
         }
         Insets insets = (Insets) obj;
-        if (this.f3166d == insets.f3166d && this.f3163a == insets.f3163a && this.f3165c == insets.f3165c && this.f3164b == insets.f3164b) {
+        if (this.f3278d == insets.f3278d && this.f3275a == insets.f3275a && this.f3277c == insets.f3277c && this.f3276b == insets.f3276b) {
             return true;
         }
         return false;
     }
 
     public android.graphics.Insets g() {
-        return a.a(this.f3163a, this.f3164b, this.f3165c, this.f3166d);
+        return a.a(this.f3275a, this.f3276b, this.f3277c, this.f3278d);
     }
 
     public int hashCode() {
-        return (((((this.f3163a * 31) + this.f3164b) * 31) + this.f3165c) * 31) + this.f3166d;
+        return (((((this.f3275a * 31) + this.f3276b) * 31) + this.f3277c) * 31) + this.f3278d;
     }
 
     public String toString() {
-        return "Insets{left=" + this.f3163a + ", top=" + this.f3164b + ", right=" + this.f3165c + ", bottom=" + this.f3166d + '}';
+        return "Insets{left=" + this.f3275a + ", top=" + this.f3276b + ", right=" + this.f3277c + ", bottom=" + this.f3278d + '}';
     }
 }

@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var5 = dependencyMap;
     var0 = function arg0, arg1() {
-        _fun65495: for (var _fun65495_ip = 0;;) switch (_fun65495_ip) {
+        _fun65519: for (var _fun65519_ip = 0;;) switch (_fun65519_ip) {
             case 0:
                 var1 = arg1;
                 var0 = _closure1_slot1;
@@ -13,16 +13,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = arg0;
                 var2 = var0 === var2;
                 if (!var2) {
-                    _fun65495_ip = 32;
-                    continue _fun65495
+                    _fun65519_ip = 32;
+                    continue _fun65519
                 }
             case 26:
                 var0 = null;
                 var2 = var0 != var1;
             case 32:
                 if (!var2) {
-                    _fun65495_ip = 43;
-                    continue _fun65495
+                    _fun65519_ip = 43;
+                    continue _fun65519
                 }
             case 35:
                 var0 = 'location';
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 43:
                 var0 = null;
                 if (!var2) {
-                    _fun65495_ip = 53;
-                    continue _fun65495
+                    _fun65519_ip = 53;
+                    continue _fun65519
                 }
             case 48:
                 var0 = var1.location;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/utils/EntityUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun65496: for (var _fun65496_ip = 0;;) switch (_fun65496_ip) {
+        _fun65520: for (var _fun65520_ip = 0;;) switch (_fun65520_ip) {
             case 0:
                 var2 = arg0;
                 var4 = var2.entity_type;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot2;
                 var4 = var4 in var0;
                 if (!var4) {
-                    _fun65496_ip = 34;
-                    continue _fun65496
+                    _fun65520_ip = 34;
+                    continue _fun65520
                 }
             case 28:
                 var0 = null;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 34:
                 var0 = undefined;
                 if (!var4) {
-                    _fun65496_ip = 75;
-                    continue _fun65496
+                    _fun65520_ip = 75;
+                    continue _fun65520
                 }
             case 39:
                 var4 = _closure1_slot0;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3 != var2;
                 var1 = undefined;
                 if (!var3) {
-                    _fun65496_ip = 72;
-                    continue _fun65496
+                    _fun65520_ip = 72;
+                    continue _fun65520
                 }
             case 69:
                 var1 = var2;
@@ -130,22 +130,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getLocationFromEventData = var3;
     var1 = function arg0() {
-        _fun65499: for (var _fun65499_ip = 0;;) switch (_fun65499_ip) {
+        _fun65523: for (var _fun65523_ip = 0;;) switch (_fun65523_ip) {
             case 0:
                 var2 = arg0;
                 var0 = _closure1_slot1;
                 var0 = var0.VOICE;
                 if (!(var2 !== var0)) {
-                    _fun65499_ip = 36;
-                    continue _fun65499
+                    _fun65523_ip = 36;
+                    continue _fun65523
                 }
             case 20:
                 var0 = _closure1_slot1;
                 var3 = var0.STAGE_INSTANCE;
                 var0 = undefined;
                 if (!(var2 === var3)) {
-                    _fun65499_ip = 44;
-                    continue _fun65499
+                    _fun65523_ip = 44;
+                    continue _fun65523
                 }
             case 36:
                 var1 = _closure1_slot2;

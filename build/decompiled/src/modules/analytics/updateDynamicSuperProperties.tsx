@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/analytics/updateDynamicSuperProperties.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun112315: for (var _fun112315_ip = 0;;) switch (_fun112315_ip) {
+        _fun112408: for (var _fun112408_ip = 0;;) switch (_fun112408_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6 == var8;
                 var2 = undefined;
                 if (var9) {
-                    _fun112315_ip = 75;
-                    continue _fun112315
+                    _fun112408_ip = 75;
+                    continue _fun112408
                 }
             case 69:
                 var2 = var8.uuid;
@@ -53,15 +53,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6 == var7;
                 var8 = undefined;
                 if (var9) {
-                    _fun112315_ip = 90;
-                    continue _fun112315
+                    _fun112408_ip = 90;
+                    continue _fun112408
                 }
             case 84:
                 var8 = var7.client_heartbeat_session_id;
             case 90:
                 if (!(var2 !== var8)) {
-                    _fun112315_ip = 100;
-                    continue _fun112315
+                    _fun112408_ip = 100;
+                    continue _fun112408
                 }
             case 94:
                 var3.client_heartbeat_session_id = var2;
@@ -76,15 +76,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6 == var7;
                 var6 = undefined;
                 if (var8) {
-                    _fun112315_ip = 145;
-                    continue _fun112315
+                    _fun112408_ip = 145;
+                    continue _fun112408
                 }
             case 139:
                 var6 = var7.client_app_state;
             case 145:
                 if (!(var2 !== var6)) {
-                    _fun112315_ip = 155;
-                    continue _fun112315
+                    _fun112408_ip = 155;
+                    continue _fun112408
                 }
             case 149:
                 var3.client_app_state = var2;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var6)(var3);
                 var2 = var2.length;
                 if (!(var2 > var5)) {
-                    _fun112315_ip = 210;
-                    continue _fun112315
+                    _fun112408_ip = 210;
+                    continue _fun112408
                 }
             case 182:
                 var2 = _closure1_slot0;
@@ -111,4 +111,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.updateDynamicSuperProperties = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4314, 481, 5283, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4314, 481, 5287, 2]);

@@ -5,18 +5,18 @@ import com.withpersona.sdk2.inquiry.internal.fallbackmode.f;
 public final class h implements f.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f18505a;
+    private final g f18911a;
 
     h(g gVar) {
-        this.f18505a = gVar;
+        this.f18911a = gVar;
     }
 
-    public static wq.h a(g gVar) {
-        return wq.e.a(new h(gVar));
+    public static zq.h a(g gVar) {
+        return zq.e.a(new h(gVar));
     }
 
     @Override // com.withpersona.sdk2.inquiry.internal.fallbackmode.f.a
     public f b(int i10) {
-        return this.f18505a.b(i10);
+        return this.f18911a.b(i10);
     }
 }

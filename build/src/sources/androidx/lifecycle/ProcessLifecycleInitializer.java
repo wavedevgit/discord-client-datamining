@@ -17,7 +17,7 @@ public final class ProcessLifecycleInitializer implements a4.a {
         Intrinsics.checkNotNullExpressionValue(e10, "getInstance(...)");
         if (e10.g(ProcessLifecycleInitializer.class)) {
             l.a(context);
-            ProcessLifecycleOwner.b bVar = ProcessLifecycleOwner.f4445t;
+            ProcessLifecycleOwner.b bVar = ProcessLifecycleOwner.f4557t;
             bVar.b(context);
             return bVar.a();
         }

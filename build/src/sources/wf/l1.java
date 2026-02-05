@@ -26,7 +26,7 @@ public final class l1 implements Parcelable.Creator {
         }
         hf.b.k(parcel, A);
         if (bArr != null) {
-            v4Var = v4.m(bArr, 0, bArr.length);
+            v4Var = v4.n(bArr, 0, bArr.length);
         }
         return new k1(z10, v4Var);
     }

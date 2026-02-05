@@ -8,10 +8,10 @@ import x.o;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private s0 f51783a;
+    private s0 f52440a;
 
     public h(s0 s0Var) {
-        this.f51783a = s0Var;
+        this.f52440a = s0Var;
     }
 
     public static h a(o oVar) {
@@ -21,10 +21,10 @@ public final class h {
     }
 
     public Object b(CameraCharacteristics.Key key) {
-        return this.f51783a.m().a(key);
+        return this.f52440a.m().a(key);
     }
 
     public String c() {
-        return this.f51783a.b();
+        return this.f52440a.b();
     }
 }

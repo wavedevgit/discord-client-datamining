@@ -13,64 +13,64 @@ import androidx.core.view.h0;
 abstract class c extends e {
 
     /* renamed from: o  reason: collision with root package name */
-    private Runnable f14119o;
+    private Runnable f14513o;
 
     /* renamed from: p  reason: collision with root package name */
-    OverScroller f14120p;
+    OverScroller f14514p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f14121q;
+    private boolean f14515q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f14122r;
+    private int f14516r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f14123s;
+    private int f14517s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f14124t;
+    private int f14518t;
 
     /* renamed from: u  reason: collision with root package name */
-    private VelocityTracker f14125u;
+    private VelocityTracker f14519u;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final CoordinatorLayout f14126d;
+        private final CoordinatorLayout f14520d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final View f14127e;
+        private final View f14521e;
 
         a(CoordinatorLayout coordinatorLayout, View view) {
-            this.f14126d = coordinatorLayout;
-            this.f14127e = view;
+            this.f14520d = coordinatorLayout;
+            this.f14521e = view;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             OverScroller overScroller;
-            if (this.f14127e != null && (overScroller = c.this.f14120p) != null) {
+            if (this.f14521e != null && (overScroller = c.this.f14514p) != null) {
                 if (overScroller.computeScrollOffset()) {
                     c cVar = c.this;
-                    cVar.T(this.f14126d, this.f14127e, cVar.f14120p.getCurrY());
-                    h0.f0(this.f14127e, this);
+                    cVar.T(this.f14520d, this.f14521e, cVar.f14514p.getCurrY());
+                    h0.f0(this.f14521e, this);
                     return;
                 }
-                c.this.R(this.f14126d, this.f14127e);
+                c.this.R(this.f14520d, this.f14521e);
             }
         }
     }
 
     public c() {
-        this.f14122r = -1;
-        this.f14124t = -1;
+        this.f14516r = -1;
+        this.f14518t = -1;
     }
 
     private void M() {
-        if (this.f14125u == null) {
-            this.f14125u = VelocityTracker.obtain();
+        if (this.f14519u == null) {
+            this.f14519u = VelocityTracker.obtain();
         }
     }
 
@@ -106,24 +106,24 @@ abstract class c extends e {
             r1 = r7
         L1c:
             int r2 = r12.getPointerId(r1)
-            r9.f14122r = r2
+            r9.f14516r = r2
             float r1 = r12.getY(r1)
             r2 = 1056964608(0x3f000000, float:0.5)
             float r1 = r1 + r2
             int r1 = (int) r1
-            r9.f14123s = r1
+            r9.f14517s = r1
             goto L4b
         L2d:
-            int r1 = r9.f14122r
+            int r1 = r9.f14516r
             int r1 = r12.findPointerIndex(r1)
             if (r1 != r6) goto L36
             return r7
         L36:
             float r1 = r12.getY(r1)
             int r1 = (int) r1
-            int r3 = r9.f14123s
+            int r3 = r9.f14517s
             int r3 = r3 - r1
-            r9.f14123s = r1
+            r9.f14517s = r1
             int r4 = r9.O(r11)
             r5 = 0
             r0 = r9
@@ -134,14 +134,14 @@ abstract class c extends e {
             r1 = r7
             goto L80
         L4d:
-            android.view.VelocityTracker r1 = r9.f14125u
+            android.view.VelocityTracker r1 = r9.f14519u
             if (r1 == 0) goto L71
             r1.addMovement(r12)
-            android.view.VelocityTracker r1 = r9.f14125u
+            android.view.VelocityTracker r1 = r9.f14519u
             r3 = 1000(0x3e8, float:1.401E-42)
             r1.computeCurrentVelocity(r3)
-            android.view.VelocityTracker r1 = r9.f14125u
-            int r3 = r9.f14122r
+            android.view.VelocityTracker r1 = r9.f14519u
+            int r3 = r9.f14516r
             float r5 = r1.getYVelocity(r3)
             int r1 = r9.P(r11)
             int r3 = -r1
@@ -155,19 +155,19 @@ abstract class c extends e {
         L71:
             r1 = r7
         L72:
-            r9.f14121q = r7
-            r9.f14122r = r6
-            android.view.VelocityTracker r2 = r9.f14125u
+            r9.f14515q = r7
+            r9.f14516r = r6
+            android.view.VelocityTracker r2 = r9.f14519u
             if (r2 == 0) goto L80
             r2.recycle()
             r2 = 0
-            r9.f14125u = r2
+            r9.f14519u = r2
         L80:
-            android.view.VelocityTracker r2 = r9.f14125u
+            android.view.VelocityTracker r2 = r9.f14519u
             if (r2 == 0) goto L87
             r2.addMovement(r12)
         L87:
-            boolean r2 = r9.f14121q
+            boolean r2 = r9.f14515q
             if (r2 != 0) goto L8f
             if (r1 == 0) goto L8e
             goto L8f
@@ -182,18 +182,18 @@ abstract class c extends e {
     abstract boolean L(View view);
 
     final boolean N(CoordinatorLayout coordinatorLayout, View view, int i10, int i11, float f10) {
-        Runnable runnable = this.f14119o;
+        Runnable runnable = this.f14513o;
         if (runnable != null) {
             view.removeCallbacks(runnable);
-            this.f14119o = null;
+            this.f14513o = null;
         }
-        if (this.f14120p == null) {
-            this.f14120p = new OverScroller(view.getContext());
+        if (this.f14514p == null) {
+            this.f14514p = new OverScroller(view.getContext());
         }
-        this.f14120p.fling(0, I(), 0, Math.round(f10), 0, 0, i10, i11);
-        if (this.f14120p.computeScrollOffset()) {
+        this.f14514p.fling(0, I(), 0, Math.round(f10), 0, 0, i10, i11);
+        if (this.f14514p.computeScrollOffset()) {
             a aVar = new a(coordinatorLayout, view);
-            this.f14119o = aVar;
+            this.f14513o = aVar;
             h0.f0(view, aVar);
             return true;
         }
@@ -225,22 +225,22 @@ abstract class c extends e {
     public boolean o(CoordinatorLayout coordinatorLayout, View view, MotionEvent motionEvent) {
         boolean z10;
         int findPointerIndex;
-        if (this.f14124t < 0) {
-            this.f14124t = ViewConfiguration.get(coordinatorLayout.getContext()).getScaledTouchSlop();
+        if (this.f14518t < 0) {
+            this.f14518t = ViewConfiguration.get(coordinatorLayout.getContext()).getScaledTouchSlop();
         }
-        if (motionEvent.getActionMasked() == 2 && this.f14121q) {
-            int i10 = this.f14122r;
+        if (motionEvent.getActionMasked() == 2 && this.f14515q) {
+            int i10 = this.f14516r;
             if (i10 == -1 || (findPointerIndex = motionEvent.findPointerIndex(i10)) == -1) {
                 return false;
             }
             int y10 = (int) motionEvent.getY(findPointerIndex);
-            if (Math.abs(y10 - this.f14123s) > this.f14124t) {
-                this.f14123s = y10;
+            if (Math.abs(y10 - this.f14517s) > this.f14518t) {
+                this.f14517s = y10;
                 return true;
             }
         }
         if (motionEvent.getActionMasked() == 0) {
-            this.f14122r = -1;
+            this.f14516r = -1;
             int x10 = (int) motionEvent.getX();
             int y11 = (int) motionEvent.getY();
             if (L(view) && coordinatorLayout.w(view, x10, y11)) {
@@ -248,19 +248,19 @@ abstract class c extends e {
             } else {
                 z10 = false;
             }
-            this.f14121q = z10;
+            this.f14515q = z10;
             if (z10) {
-                this.f14123s = y11;
-                this.f14122r = motionEvent.getPointerId(0);
+                this.f14517s = y11;
+                this.f14516r = motionEvent.getPointerId(0);
                 M();
-                OverScroller overScroller = this.f14120p;
+                OverScroller overScroller = this.f14514p;
                 if (overScroller != null && !overScroller.isFinished()) {
-                    this.f14120p.abortAnimation();
+                    this.f14514p.abortAnimation();
                     return true;
                 }
             }
         }
-        VelocityTracker velocityTracker = this.f14125u;
+        VelocityTracker velocityTracker = this.f14519u;
         if (velocityTracker != null) {
             velocityTracker.addMovement(motionEvent);
         }
@@ -269,7 +269,7 @@ abstract class c extends e {
 
     public c(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f14122r = -1;
-        this.f14124t = -1;
+        this.f14516r = -1;
+        this.f14518t = -1;
     }
 }

@@ -30,22 +30,22 @@ import org.jetbrains.annotations.NotNull;
 public class ClassDescriptorImpl extends ClassDescriptorBase {
 
     /* renamed from: s  reason: collision with root package name */
-    private final Modality f32884s;
+    private final Modality f32408s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final ClassKind f32885t;
+    private final ClassKind f32409t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final TypeConstructor f32886u;
+    private final TypeConstructor f32410u;
 
     /* renamed from: v  reason: collision with root package name */
-    private MemberScope f32887v;
+    private MemberScope f32411v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Set f32888w;
+    private Set f32412w;
 
     /* renamed from: x  reason: collision with root package name */
-    private ClassConstructorDescriptor f32889x;
+    private ClassConstructorDescriptor f32413x;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ClassDescriptorImpl(@NotNull DeclarationDescriptor declarationDescriptor, @NotNull Name name, @NotNull Modality modality, @NotNull ClassKind classKind, @NotNull Collection<KotlinType> collection, @NotNull SourceElement sourceElement, boolean z10, @NotNull StorageManager storageManager) {
@@ -71,9 +71,9 @@ public class ClassDescriptorImpl extends ClassDescriptorBase {
         if (storageManager == null) {
             a(6);
         }
-        this.f32884s = modality;
-        this.f32885t = classKind;
-        this.f32886u = new ClassTypeConstructorImpl(this, Collections.EMPTY_LIST, collection, storageManager);
+        this.f32408s = modality;
+        this.f32409t = classKind;
+        this.f32410u = new ClassTypeConstructorImpl(this, Collections.EMPTY_LIST, collection, storageManager);
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -250,14 +250,14 @@ public class ClassDescriptorImpl extends ClassDescriptorBase {
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     /* renamed from: getCompanionObjectDescriptor */
-    public ClassDescriptor mo1191getCompanionObjectDescriptor() {
+    public ClassDescriptor mo1193getCompanionObjectDescriptor() {
         return null;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public Collection<ClassConstructorDescriptor> getConstructors() {
-        Set set = this.f32888w;
+        Set set = this.f32412w;
         if (set == null) {
             a(11);
         }
@@ -277,7 +277,7 @@ public class ClassDescriptorImpl extends ClassDescriptorBase {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public ClassKind getKind() {
-        ClassKind classKind = this.f32885t;
+        ClassKind classKind = this.f32409t;
         if (classKind == null) {
             a(15);
         }
@@ -287,7 +287,7 @@ public class ClassDescriptorImpl extends ClassDescriptorBase {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     @NotNull
     public Modality getModality() {
-        Modality modality = this.f32884s;
+        Modality modality = this.f32408s;
         if (modality == null) {
             a(16);
         }
@@ -317,7 +317,7 @@ public class ClassDescriptorImpl extends ClassDescriptorBase {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
     @NotNull
     public TypeConstructor getTypeConstructor() {
-        TypeConstructor typeConstructor = this.f32886u;
+        TypeConstructor typeConstructor = this.f32410u;
         if (typeConstructor == null) {
             a(10);
         }
@@ -330,7 +330,7 @@ public class ClassDescriptorImpl extends ClassDescriptorBase {
         if (kotlinTypeRefiner == null) {
             a(12);
         }
-        MemberScope memberScope = this.f32887v;
+        MemberScope memberScope = this.f32411v;
         if (memberScope == null) {
             a(13);
         }
@@ -339,8 +339,8 @@ public class ClassDescriptorImpl extends ClassDescriptorBase {
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     /* renamed from: getUnsubstitutedPrimaryConstructor */
-    public ClassConstructorDescriptor mo1192getUnsubstitutedPrimaryConstructor() {
-        return this.f32889x;
+    public ClassConstructorDescriptor mo1194getUnsubstitutedPrimaryConstructor() {
+        return this.f32413x;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
@@ -365,9 +365,9 @@ public class ClassDescriptorImpl extends ClassDescriptorBase {
         if (set == null) {
             a(8);
         }
-        this.f32887v = memberScope;
-        this.f32888w = set;
-        this.f32889x = classConstructorDescriptor;
+        this.f32411v = memberScope;
+        this.f32412w = set;
+        this.f32413x = classConstructorDescriptor;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor

@@ -7,19 +7,19 @@ import java.util.Set;
 abstract class c1 extends AbstractMap {
 
     /* renamed from: d  reason: collision with root package name */
-    private transient Set f45219d;
+    private transient Set f45149d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient Collection f45220e;
+    private transient Collection f45150e;
 
     abstract Set a();
 
     @Override // java.util.AbstractMap, java.util.Map
     public final Set entrySet() {
-        Set set = this.f45219d;
+        Set set = this.f45149d;
         if (set == null) {
             Set a10 = a();
-            this.f45219d = a10;
+            this.f45149d = a10;
             return a10;
         }
         return set;
@@ -27,10 +27,10 @@ abstract class c1 extends AbstractMap {
 
     @Override // java.util.AbstractMap, java.util.Map
     public final Collection values() {
-        Collection collection = this.f45220e;
+        Collection collection = this.f45150e;
         if (collection == null) {
             a1 a1Var = new a1(this);
-            this.f45220e = a1Var;
+            this.f45150e = a1Var;
             return a1Var;
         }
         return collection;

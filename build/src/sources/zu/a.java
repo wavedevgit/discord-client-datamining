@@ -1,6 +1,5 @@
 package zu;
 
-import java.util.ArrayList;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
 import kotlin.text.StringsKt;
@@ -9,44 +8,50 @@ public interface a {
 
     /* renamed from: zu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0796a {
-        private static Double a(a aVar, Object obj) {
+    public static final class C0800a {
+        private static Object a(a aVar, List list) {
+            if (vv.a.g(list)) {
+                return Double.valueOf(0.0d);
+            }
+            if (list.isEmpty()) {
+                return "";
+            }
+            return b(aVar, list);
+        }
+
+        private static Object b(a aVar, List list) {
+            List list2;
+            if (list.size() == 1 && !(CollectionsKt.firstOrNull(list) instanceof Boolean)) {
+                list2 = list;
+            } else {
+                list2 = null;
+            }
+            if (list2 == null) {
+                return null;
+            }
+            return aVar.a(CollectionsKt.firstOrNull(list));
+        }
+
+        public static Object c(a aVar, Object obj) {
             if (obj instanceof Number) {
                 return Double.valueOf(((Number) obj).doubleValue());
             }
             if (obj instanceof String) {
-                return StringsKt.p((String) obj);
-            }
-            if (obj instanceof List) {
-                return b(aVar, (List) obj);
-            }
-            if (obj instanceof Boolean) {
-                return Double.valueOf(sv.b.a(((Boolean) obj).booleanValue()));
-            }
-            if (obj == null) {
-                return Double.valueOf(0.0d);
-            }
-            return null;
-        }
-
-        private static Double b(a aVar, List list) {
-            int size = list.size();
-            if (size != 0) {
-                if (size != 1) {
-                    return null;
+                Double p10 = StringsKt.p((String) obj);
+                if (p10 != null) {
+                    return p10;
                 }
-                return a(aVar, CollectionsKt.o0(list));
+            } else if (obj instanceof List) {
+                Object a10 = a(aVar, (List) obj);
+                if (a10 != null) {
+                    return a10;
+                }
+            } else if (obj instanceof Boolean) {
+                return Double.valueOf(vv.b.a(((Boolean) obj).booleanValue()));
             }
-            return Double.valueOf(0.0d);
-        }
-
-        public static List c(a aVar, Object obj) {
-            List<Object> c10 = sv.a.c(obj);
-            ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
-            for (Object obj2 : c10) {
-                arrayList.add(a(aVar, obj2));
-            }
-            return arrayList;
+            return obj;
         }
     }
+
+    Object a(Object obj);
 }

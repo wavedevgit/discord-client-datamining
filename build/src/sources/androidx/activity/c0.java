@@ -7,6 +7,6 @@ public abstract class c0 {
     public static final void a(View view, x fullyDrawnReporterOwner) {
         Intrinsics.checkNotNullParameter(view, "<this>");
         Intrinsics.checkNotNullParameter(fullyDrawnReporterOwner, "fullyDrawnReporterOwner");
-        view.setTag(a0.f841a, fullyDrawnReporterOwner);
+        view.setTag(a0.f953a, fullyDrawnReporterOwner);
     }
 }

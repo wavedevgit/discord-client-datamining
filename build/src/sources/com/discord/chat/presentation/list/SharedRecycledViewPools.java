@@ -21,9 +21,9 @@ public final class SharedRecycledViewPools {
     @NotNull
     public static final SharedRecycledViewPools INSTANCE = new SharedRecycledViewPools();
     @NotNull
-    private static final Map<? extends Class<? extends BaseChatListItemDelegate<? extends ChatListItem, ?>>, Integer> recycledViewPoolSizes = o0.m(lr.v.a(RegularMessageDelegate.class, 50), lr.v.a(SystemMessageDelegate.class, 25), lr.v.a(SeparatorDelegate.class, 25));
+    private static final Map<? extends Class<? extends BaseChatListItemDelegate<? extends ChatListItem, ?>>, Integer> recycledViewPoolSizes = o0.m(or.v.a(RegularMessageDelegate.class, 50), or.v.a(SystemMessageDelegate.class, 25), or.v.a(SeparatorDelegate.class, 25));
     @NotNull
-    private static final Lazy chatListViewPool$delegate = lr.l.a(new Function0() { // from class: com.discord.chat.presentation.list.z
+    private static final Lazy chatListViewPool$delegate = or.l.a(new Function0() { // from class: com.discord.chat.presentation.list.z
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             NoneClearingRecycledViewPool chatListViewPool_delegate$lambda$0;
@@ -32,7 +32,7 @@ public final class SharedRecycledViewPools {
         }
     });
     @NotNull
-    private static final Lazy accessoriesViewPool$delegate = lr.l.a(new Function0() { // from class: com.discord.chat.presentation.list.a0
+    private static final Lazy accessoriesViewPool$delegate = or.l.a(new Function0() { // from class: com.discord.chat.presentation.list.a0
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             AccessoriesViewPool accessoriesViewPool_delegate$lambda$2;

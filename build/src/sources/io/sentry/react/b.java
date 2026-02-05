@@ -16,7 +16,7 @@ import java.util.Map;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ILogger f30510a = new z("RNSentry.MapConverter");
+    private static final ILogger f29568a = new z("RNSentry.MapConverter");
 
     private static void a(WritableArray writableArray, Object obj) {
         if (obj == null) {
@@ -46,7 +46,7 @@ public abstract class b {
         } else if (obj instanceof ReadableArray) {
             writableArray.pushArray((ReadableArray) obj);
         } else {
-            ILogger iLogger = f30510a;
+            ILogger iLogger = f29568a;
             SentryLevel sentryLevel = SentryLevel.ERROR;
             iLogger.c(sentryLevel, "Could not convert object: " + obj, new Object[0]);
         }
@@ -80,7 +80,7 @@ public abstract class b {
         } else if (obj instanceof ReadableMap) {
             writableMap.putMap(str, (ReadableMap) obj);
         } else {
-            ILogger iLogger = f30510a;
+            ILogger iLogger = f29568a;
             SentryLevel sentryLevel = SentryLevel.ERROR;
             iLogger.c(sentryLevel, "Could not convert object" + obj, new Object[0]);
         }
@@ -101,7 +101,7 @@ public abstract class b {
                 if (key instanceof String) {
                     b(createMap, (String) key, c(value));
                 } else {
-                    f30510a.c(SentryLevel.ERROR, "Only String keys are supported in Map.", key);
+                    f29568a.c(SentryLevel.ERROR, "Only String keys are supported in Map.", key);
                 }
             }
             return createMap;
@@ -127,7 +127,7 @@ public abstract class b {
                 if (obj instanceof String) {
                     return obj;
                 }
-                ILogger iLogger = f30510a;
+                ILogger iLogger = f29568a;
                 SentryLevel sentryLevel = SentryLevel.ERROR;
                 iLogger.c(sentryLevel, "Supplied serialized value could not be converted." + obj, new Object[0]);
                 return null;

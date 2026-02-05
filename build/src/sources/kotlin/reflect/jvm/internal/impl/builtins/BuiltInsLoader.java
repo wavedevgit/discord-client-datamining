@@ -10,22 +10,22 @@ import kotlin.reflect.jvm.internal.impl.descriptors.deserialization.AdditionalCl
 import kotlin.reflect.jvm.internal.impl.descriptors.deserialization.ClassDescriptorFactory;
 import kotlin.reflect.jvm.internal.impl.descriptors.deserialization.PlatformDependentDeclarationFilter;
 import kotlin.reflect.jvm.internal.impl.storage.StorageManager;
-import lr.l;
-import lr.o;
+import or.l;
+import or.o;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface BuiltInsLoader {
     @NotNull
-    public static final Companion Companion = Companion.f32588a;
+    public static final Companion Companion = Companion.f32112a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f32588a = new Companion();
+        static final /* synthetic */ Companion f32112a = new Companion();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Lazy f32589b = l.b(o.f37120e, a.f32641d);
+        private static final Lazy f32113b = l.b(o.f44232e, a.f32165d);
 
         private Companion() {
         }
@@ -43,7 +43,7 @@ public interface BuiltInsLoader {
 
         @NotNull
         public final BuiltInsLoader getInstance() {
-            return (BuiltInsLoader) f32589b.getValue();
+            return (BuiltInsLoader) f32113b.getValue();
         }
     }
 

@@ -15,39 +15,39 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18813a;
+    private final m.b f19219a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18814b;
+    private final com.squareup.moshi.h f19220b;
 
     public ExchangeOneTimeLinkCodeResponse_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("relationships");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18813a = a10;
+        this.f19219a = a10;
         com.squareup.moshi.h f10 = moshi.f(a0.j(Map.class, String.class, ExchangeOneTimeLinkCodeResponse.Relationship.class), x0.d(), "relationships");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18814b = f10;
+        this.f19220b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public ExchangeOneTimeLinkCodeResponse.Data fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         Map map = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f18813a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    map = (Map) this.f18814b.fromJson(reader);
+            int W = reader.W(this.f19219a);
+            if (W != -1) {
+                if (W == 0) {
+                    map = (Map) this.f19220b.fromJson(reader);
                 }
             } else {
                 reader.E0();
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         return new ExchangeOneTimeLinkCodeResponse.Data(map);
     }
 
@@ -56,9 +56,9 @@ public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.s
     public void toJson(t writer, ExchangeOneTimeLinkCodeResponse.Data data) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (data != null) {
-            writer.l();
-            writer.A0("relationships");
-            this.f18814b.toJson(writer, data.a());
+            writer.k();
+            writer.W("relationships");
+            this.f19220b.toJson(writer, data.a());
             writer.E();
             return;
         }

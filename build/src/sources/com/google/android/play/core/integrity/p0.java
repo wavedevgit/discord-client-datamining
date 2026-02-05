@@ -7,15 +7,15 @@ import com.google.android.play.core.integrity.c;
 public final class p0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final j0 f15828a;
+    private final j0 f16222a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p0(j0 j0Var) {
-        this.f15828a = j0Var;
+        this.f16222a = j0Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ Task a(long j10, long j11, int i10, c.d dVar) {
-        return this.f15828a.c(dVar, j10, j11, 0);
+        return this.f16222a.c(dVar, j10, j11, 0);
     }
 }

@@ -25,10 +25,10 @@ import org.jetbrains.annotations.NotNull;
 public final class LazyJavaTypeParameterDescriptor extends AbstractLazyTypeParameterDescriptor {
 
     /* renamed from: v  reason: collision with root package name */
-    private final LazyJavaResolverContext f33424v;
+    private final LazyJavaResolverContext f32948v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final JavaTypeParameter f33425w;
+    private final JavaTypeParameter f32949w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public LazyJavaTypeParameterDescriptor(@NotNull LazyJavaResolverContext c10, @NotNull JavaTypeParameter javaTypeParameter, int i10, @NotNull DeclarationDescriptor containingDeclaration) {
@@ -36,23 +36,23 @@ public final class LazyJavaTypeParameterDescriptor extends AbstractLazyTypeParam
         Intrinsics.checkNotNullParameter(c10, "c");
         Intrinsics.checkNotNullParameter(javaTypeParameter, "javaTypeParameter");
         Intrinsics.checkNotNullParameter(containingDeclaration, "containingDeclaration");
-        this.f33424v = c10;
-        this.f33425w = javaTypeParameter;
+        this.f32948v = c10;
+        this.f32949w = javaTypeParameter;
     }
 
     private final List d() {
-        Collection<JavaClassifierType> upperBounds = this.f33425w.getUpperBounds();
+        Collection<JavaClassifierType> upperBounds = this.f32949w.getUpperBounds();
         if (upperBounds.isEmpty()) {
-            SimpleType anyType = this.f33424v.getModule().getBuiltIns().getAnyType();
+            SimpleType anyType = this.f32948v.getModule().getBuiltIns().getAnyType();
             Intrinsics.checkNotNullExpressionValue(anyType, "getAnyType(...)");
-            SimpleType nullableAnyType = this.f33424v.getModule().getBuiltIns().getNullableAnyType();
+            SimpleType nullableAnyType = this.f32948v.getModule().getBuiltIns().getNullableAnyType();
             Intrinsics.checkNotNullExpressionValue(nullableAnyType, "getNullableAnyType(...)");
             return CollectionsKt.e(KotlinTypeFactory.flexibleType(anyType, nullableAnyType));
         }
         Collection<JavaClassifierType> collection = upperBounds;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(collection, 10));
         for (JavaClassifierType javaClassifierType : collection) {
-            arrayList.add(this.f33424v.getTypeResolver().transformJavaType(javaClassifierType, JavaTypeAttributesKt.toAttributes$default(TypeUsage.COMMON, false, false, this, 3, null)));
+            arrayList.add(this.f32948v.getTypeResolver().transformJavaType(javaClassifierType, JavaTypeAttributesKt.toAttributes$default(TypeUsage.COMMON, false, false, this, 3, null)));
         }
         return arrayList;
     }
@@ -60,7 +60,7 @@ public final class LazyJavaTypeParameterDescriptor extends AbstractLazyTypeParam
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.AbstractTypeParameterDescriptor
     protected List b(List bounds) {
         Intrinsics.checkNotNullParameter(bounds, "bounds");
-        return this.f33424v.getComponents().getSignatureEnhancement().enhanceTypeParameterBounds(this, bounds, this.f33424v);
+        return this.f32948v.getComponents().getSignatureEnhancement().enhanceTypeParameterBounds(this, bounds, this.f32948v);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.AbstractTypeParameterDescriptor

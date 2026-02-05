@@ -42,48 +42,48 @@ public final class InternalErrorInfo_NetworkErrorInfoJsonAdapter extends h {
     @Override // com.squareup.moshi.h
     @NotNull
     public InternalErrorInfo.NetworkErrorInfo fromJson(@NotNull m mVar) {
-        mVar.r();
+        mVar.s();
         Integer num = null;
         String str = null;
         Boolean bool = null;
         ErrorResponse.Error error = null;
         int i10 = -1;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
+            int W = mVar.W(this.options);
+            if (W == -1) {
                 mVar.E0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 num = (Integer) this.intAdapter.fromJson(mVar);
                 if (num == null) {
-                    throw vm.c.x("code", "code", mVar);
+                    throw ym.c.x("code", "code", mVar);
                 }
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str = (String) this.nullableStringAdapter.fromJson(mVar);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 bool = (Boolean) this.booleanAdapter.fromJson(mVar);
                 if (bool == null) {
-                    throw vm.c.x("isRecoverable", "isRecoverable", mVar);
+                    throw ym.c.x("isRecoverable", "isRecoverable", mVar);
                 }
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 error = (ErrorResponse.Error) this.nullableErrorAdapter.fromJson(mVar);
                 i10 = -9;
             }
         }
-        mVar.y();
+        mVar.z();
         if (i10 == -9) {
             if (num != null) {
                 int intValue = num.intValue();
                 if (bool != null) {
                     return new InternalErrorInfo.NetworkErrorInfo(intValue, str, bool.booleanValue(), error);
                 }
-                throw vm.c.o("isRecoverable", "isRecoverable", mVar);
+                throw ym.c.o("isRecoverable", "isRecoverable", mVar);
             }
-            throw vm.c.o("code", "code", mVar);
+            throw ym.c.o("code", "code", mVar);
         }
         Constructor<InternalErrorInfo.NetworkErrorInfo> constructor = this.constructorRef;
         if (constructor == null) {
-            Class cls = vm.c.f51688c;
+            Class cls = ym.c.f54853c;
             Class cls2 = Integer.TYPE;
             constructor = InternalErrorInfo.NetworkErrorInfo.class.getDeclaredConstructor(cls2, String.class, Boolean.TYPE, ErrorResponse.Error.class, cls2, cls);
             this.constructorRef = constructor;
@@ -92,22 +92,22 @@ public final class InternalErrorInfo_NetworkErrorInfoJsonAdapter extends h {
             if (bool != null) {
                 return constructor.newInstance(num, str, bool, error, Integer.valueOf(i10), null);
             }
-            throw vm.c.o("isRecoverable", "isRecoverable", mVar);
+            throw ym.c.o("isRecoverable", "isRecoverable", mVar);
         }
-        throw vm.c.o("code", "code", mVar);
+        throw ym.c.o("code", "code", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, InternalErrorInfo.NetworkErrorInfo networkErrorInfo) {
         if (networkErrorInfo != null) {
-            tVar.l();
-            tVar.A0("code");
+            tVar.k();
+            tVar.W("code");
             this.intAdapter.toJson(tVar, Integer.valueOf(networkErrorInfo.getCode()));
-            tVar.A0("message");
+            tVar.W("message");
             this.nullableStringAdapter.toJson(tVar, networkErrorInfo.getMessage());
-            tVar.A0("isRecoverable");
+            tVar.W("isRecoverable");
             this.booleanAdapter.toJson(tVar, Boolean.valueOf(networkErrorInfo.isRecoverable()));
-            tVar.A0("responseError");
+            tVar.W("responseError");
             this.nullableErrorAdapter.toJson(tVar, networkErrorInfo.getResponseError());
             tVar.E();
             return;

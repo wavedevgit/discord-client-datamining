@@ -21,7 +21,7 @@ public final class NativeKind {
     static {
         NativeKind[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = sr.a.a($values);
+        $ENTRIES = vr.a.a($values);
     }
 
     private NativeKind(String str, int i10) {

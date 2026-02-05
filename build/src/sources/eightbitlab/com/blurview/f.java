@@ -12,31 +12,31 @@ import android.renderscript.ScriptIntrinsicBlur;
 public class f implements BlurAlgorithm {
 
     /* renamed from: b  reason: collision with root package name */
-    private final RenderScript f21572b;
+    private final RenderScript f21619b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ScriptIntrinsicBlur f21573c;
+    private final ScriptIntrinsicBlur f21620c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Allocation f21574d;
+    private Allocation f21621d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Paint f21571a = new Paint(2);
+    private final Paint f21618a = new Paint(2);
 
     /* renamed from: e  reason: collision with root package name */
-    private int f21575e = -1;
+    private int f21622e = -1;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f21576f = -1;
+    private int f21623f = -1;
 
     public f(Context context) {
         RenderScript create = RenderScript.create(context);
-        this.f21572b = create;
-        this.f21573c = ScriptIntrinsicBlur.create(create, Element.U8_4(create));
+        this.f21619b = create;
+        this.f21620c = ScriptIntrinsicBlur.create(create, Element.U8_4(create));
     }
 
     private boolean f(Bitmap bitmap) {
-        if (bitmap.getHeight() == this.f21576f && bitmap.getWidth() == this.f21575e) {
+        if (bitmap.getHeight() == this.f21623f && bitmap.getWidth() == this.f21622e) {
             return true;
         }
         return false;
@@ -54,7 +54,7 @@ public class f implements BlurAlgorithm {
 
     @Override // eightbitlab.com.blurview.BlurAlgorithm
     public void c(Canvas canvas, Bitmap bitmap) {
-        canvas.drawBitmap(bitmap, 0.0f, 0.0f, this.f21571a);
+        canvas.drawBitmap(bitmap, 0.0f, 0.0f, this.f21618a);
     }
 
     @Override // eightbitlab.com.blurview.BlurAlgorithm
@@ -64,9 +64,9 @@ public class f implements BlurAlgorithm {
 
     @Override // eightbitlab.com.blurview.BlurAlgorithm
     public final void destroy() {
-        this.f21573c.destroy();
-        this.f21572b.destroy();
-        Allocation allocation = this.f21574d;
+        this.f21620c.destroy();
+        this.f21619b.destroy();
+        Allocation allocation = this.f21621d;
         if (allocation != null) {
             allocation.destroy();
         }
@@ -74,20 +74,20 @@ public class f implements BlurAlgorithm {
 
     @Override // eightbitlab.com.blurview.BlurAlgorithm
     public Bitmap e(Bitmap bitmap, float f10) {
-        Allocation createFromBitmap = Allocation.createFromBitmap(this.f21572b, bitmap);
+        Allocation createFromBitmap = Allocation.createFromBitmap(this.f21619b, bitmap);
         if (!f(bitmap)) {
-            Allocation allocation = this.f21574d;
+            Allocation allocation = this.f21621d;
             if (allocation != null) {
                 allocation.destroy();
             }
-            this.f21574d = Allocation.createTyped(this.f21572b, createFromBitmap.getType());
-            this.f21575e = bitmap.getWidth();
-            this.f21576f = bitmap.getHeight();
+            this.f21621d = Allocation.createTyped(this.f21619b, createFromBitmap.getType());
+            this.f21622e = bitmap.getWidth();
+            this.f21623f = bitmap.getHeight();
         }
-        this.f21573c.setRadius(f10);
-        this.f21573c.setInput(createFromBitmap);
-        this.f21573c.forEach(this.f21574d);
-        this.f21574d.copyTo(bitmap);
+        this.f21620c.setRadius(f10);
+        this.f21620c.setInput(createFromBitmap);
+        this.f21620c.forEach(this.f21621d);
+        this.f21621d.copyTo(bitmap);
         createFromBitmap.destroy();
         return bitmap;
     }

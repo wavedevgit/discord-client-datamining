@@ -1,27 +1,25 @@
 package xo;
-
-import androidx.activity.result.ActivityResultLauncher;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e implements wq.d {
+public final class e implements zq.d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final b f53509a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static final class a {
 
-    public e(b bVar) {
-        this.f53509a = bVar;
+        /* renamed from: a  reason: collision with root package name */
+        static final e f54053a = new e();
     }
 
-    public static e a(b bVar) {
-        return new e(bVar);
+    public static e a() {
+        return a.f54053a;
     }
 
-    public static ActivityResultLauncher b(b bVar) {
-        return (ActivityResultLauncher) wq.g.d(bVar.a());
+    public static d c() {
+        return new d();
     }
 
     @Override // javax.inject.Provider
-    /* renamed from: c */
-    public ActivityResultLauncher get() {
-        return b(this.f53509a);
+    /* renamed from: b */
+    public d get() {
+        return c();
     }
 }

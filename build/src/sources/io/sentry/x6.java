@@ -9,32 +9,32 @@ import java.util.Map;
 public final class x6 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private io.sentry.protocol.x f30884d;
+    private io.sentry.protocol.x f29942d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Double f30885e;
+    private Double f29943e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30886i;
+    private String f29944i;
 
     /* renamed from: o  reason: collision with root package name */
-    private a7 f30887o;
+    private a7 f29945o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Integer f30888p;
+    private Integer f29946p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f30889q;
+    private Map f29947q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f30890r;
+    private Map f29948r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public x6 a(e3 e3Var, ILogger iLogger) {
-            e3Var.r();
+            e3Var.s();
             io.sentry.protocol.x xVar = null;
             Double d10 = null;
             String str = null;
@@ -43,42 +43,42 @@ public final class x6 implements w1 {
             Map map = null;
             Integer num = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
+                String m02 = e3Var.m0();
+                m02.getClass();
                 char c10 = 65535;
-                switch (l02.hashCode()) {
+                switch (m02.hashCode()) {
                     case -1615012149:
-                        if (l02.equals("severity_number")) {
+                        if (m02.equals("severity_number")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case 3029410:
-                        if (l02.equals("body")) {
+                        if (m02.equals("body")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 55126294:
-                        if (l02.equals("timestamp")) {
+                        if (m02.equals("timestamp")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case 102865796:
-                        if (l02.equals("level")) {
+                        if (m02.equals("level")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 405645655:
-                        if (l02.equals("attributes")) {
+                        if (m02.equals("attributes")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 1270300245:
-                        if (l02.equals("trace_id")) {
+                        if (m02.equals("trace_id")) {
                             c10 = 5;
                             break;
                         }
@@ -92,7 +92,7 @@ public final class x6 implements w1 {
                         str = e3Var.r1();
                         break;
                     case 2:
-                        d10 = e3Var.k0();
+                        d10 = e3Var.l0();
                         break;
                     case 3:
                         a7Var = (a7) e3Var.G0(iLogger, new a7.a());
@@ -107,11 +107,11 @@ public final class x6 implements w1 {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, l02);
+                        e3Var.v1(iLogger, hashMap, m02);
                         break;
                 }
             }
-            e3Var.y();
+            e3Var.z();
             if (xVar != null) {
                 if (d10 != null) {
                     if (str != null) {
@@ -141,43 +141,43 @@ public final class x6 implements w1 {
     }
 
     public x6(io.sentry.protocol.x xVar, Double d10, String str, a7 a7Var) {
-        this.f30884d = xVar;
-        this.f30885e = d10;
-        this.f30886i = str;
-        this.f30887o = a7Var;
+        this.f29942d = xVar;
+        this.f29943e = d10;
+        this.f29944i = str;
+        this.f29945o = a7Var;
     }
 
     public void a(Map map) {
-        this.f30889q = map;
+        this.f29947q = map;
     }
 
     public void b(Integer num) {
-        this.f30888p = num;
+        this.f29946p = num;
     }
 
     public void c(Map map) {
-        this.f30890r = map;
+        this.f29948r = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.r();
-        f3Var.e("timestamp").j(iLogger, k.c(this.f30885e));
-        f3Var.e("trace_id").j(iLogger, this.f30884d);
-        f3Var.e("body").f(this.f30886i);
-        f3Var.e("level").j(iLogger, this.f30887o);
-        if (this.f30888p != null) {
-            f3Var.e("severity_number").j(iLogger, this.f30888p);
+        f3Var.s();
+        f3Var.e("timestamp").j(iLogger, k.c(this.f29943e));
+        f3Var.e("trace_id").j(iLogger, this.f29942d);
+        f3Var.e("body").f(this.f29944i);
+        f3Var.e("level").j(iLogger, this.f29945o);
+        if (this.f29946p != null) {
+            f3Var.e("severity_number").j(iLogger, this.f29946p);
         }
-        if (this.f30889q != null) {
-            f3Var.e("attributes").j(iLogger, this.f30889q);
+        if (this.f29947q != null) {
+            f3Var.e("attributes").j(iLogger, this.f29947q);
         }
-        Map map = this.f30890r;
+        Map map = this.f29948r;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30890r.get(str));
+                f3Var.e(str).j(iLogger, this.f29948r.get(str));
             }
         }
-        f3Var.y();
+        f3Var.z();
     }
 }

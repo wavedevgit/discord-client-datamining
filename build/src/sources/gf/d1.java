@@ -1,65 +1,39 @@
 package gf;
 
 import android.os.Bundle;
-import android.os.IBinder;
-import android.os.IInterface;
-import android.os.RemoteException;
-import android.util.Log;
-import gf.c;
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class d1 extends r0 {
+public final class d1 extends hf.a {
+    public static final Parcelable.Creator<d1> CREATOR = new e1();
 
-    /* renamed from: g  reason: collision with root package name */
-    public final IBinder f26095g;
+    /* renamed from: d  reason: collision with root package name */
+    Bundle f24792d;
 
-    /* renamed from: h  reason: collision with root package name */
-    final /* synthetic */ c f26096h;
+    /* renamed from: e  reason: collision with root package name */
+    com.google.android.gms.common.d[] f24793e;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public d1(c cVar, int i10, IBinder iBinder, Bundle bundle) {
-        super(cVar, i10, bundle);
-        this.f26096h = cVar;
-        this.f26095g = iBinder;
+    /* renamed from: i  reason: collision with root package name */
+    int f24794i;
+
+    /* renamed from: o  reason: collision with root package name */
+    e f24795o;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public d1(Bundle bundle, com.google.android.gms.common.d[] dVarArr, int i10, e eVar) {
+        this.f24792d = bundle;
+        this.f24793e = dVarArr;
+        this.f24794i = i10;
+        this.f24795o = eVar;
     }
 
-    @Override // gf.r0
-    protected final void f(com.google.android.gms.common.b bVar) {
-        if (this.f26096h.G != null) {
-            this.f26096h.G.h(bVar);
-        }
-        this.f26096h.K(bVar);
-    }
-
-    @Override // gf.r0
-    protected final boolean g() {
-        c.a aVar;
-        c.a aVar2;
-        try {
-            IBinder iBinder = this.f26095g;
-            q.l(iBinder);
-            String interfaceDescriptor = iBinder.getInterfaceDescriptor();
-            if (!this.f26096h.D().equals(interfaceDescriptor)) {
-                String D = this.f26096h.D();
-                Log.w("GmsClient", "service descriptor mismatch: " + D + " vs. " + interfaceDescriptor);
-                return false;
-            }
-            IInterface r10 = this.f26096h.r(this.f26095g);
-            if (r10 != null && (c.e0(this.f26096h, 2, 4, r10) || c.e0(this.f26096h, 3, 4, r10))) {
-                this.f26096h.K = null;
-                c cVar = this.f26096h;
-                Bundle w10 = cVar.w();
-                aVar = cVar.F;
-                if (aVar != null) {
-                    aVar2 = this.f26096h.F;
-                    aVar2.e(w10);
-                    return true;
-                }
-                return true;
-            }
-            return false;
-        } catch (RemoteException unused) {
-            Log.w("GmsClient", "service probably died");
-            return false;
-        }
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i10) {
+        int a10 = hf.c.a(parcel);
+        hf.c.e(parcel, 1, this.f24792d, false);
+        hf.c.v(parcel, 2, this.f24793e, i10, false);
+        hf.c.l(parcel, 3, this.f24794i);
+        hf.c.q(parcel, 4, this.f24795o, i10, false);
+        hf.c.b(parcel, a10);
     }
 }

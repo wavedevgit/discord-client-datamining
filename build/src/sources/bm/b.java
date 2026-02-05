@@ -1,22 +1,20 @@
 package bm;
 
-import com.facebook.react.uimanager.ViewProps;
+import com.facebook.react.ReactPackage;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.reactnativecommunity.cameraroll.CameraRollModule;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public enum b {
-    BLUETOOTH("bluetooth"),
-    CELLULAR("cellular"),
-    ETHERNET("ethernet"),
-    NONE(ViewProps.NONE),
-    UNKNOWN("unknown"),
-    WIFI("wifi"),
-    WIMAX("wimax"),
-    VPN("vpn");
-    
+public class b implements ReactPackage {
+    @Override // com.facebook.react.ReactPackage
+    public List createNativeModules(ReactApplicationContext reactApplicationContext) {
+        return Arrays.asList(new CameraRollModule(reactApplicationContext));
+    }
 
-    /* renamed from: d  reason: collision with root package name */
-    public final String f6640d;
-
-    b(String str) {
-        this.f6640d = str;
+    @Override // com.facebook.react.ReactPackage
+    public List createViewManagers(ReactApplicationContext reactApplicationContext) {
+        return Collections.EMPTY_LIST;
     }
 }

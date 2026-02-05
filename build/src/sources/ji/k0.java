@@ -1,65 +1,17 @@
 package ji;
 
-import java.util.Objects;
-/* JADX INFO: Access modifiers changed from: package-private */
+import android.os.IBinder;
+import android.os.IInterface;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class k0 extends s {
-
-    /* renamed from: p  reason: collision with root package name */
-    static final s f31671p = new k0(new Object[0], 0);
-
-    /* renamed from: i  reason: collision with root package name */
-    final transient Object[] f31672i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private final transient int f31673o;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public k0(Object[] objArr, int i10) {
-        this.f31672i = objArr;
-        this.f31673o = i10;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // ji.s, ji.q
-    public int c(Object[] objArr, int i10) {
-        System.arraycopy(this.f31672i, 0, objArr, i10, this.f31673o);
-        return i10 + this.f31673o;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // ji.q
-    public Object[] d() {
-        return this.f31672i;
-    }
-
-    @Override // ji.q
-    int e() {
-        return this.f31673o;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // ji.q
-    public int f() {
-        return 0;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // ji.q
-    public boolean g() {
-        return false;
-    }
-
-    @Override // java.util.List
-    public Object get(int i10) {
-        ii.m.h(i10, this.f31673o);
-        Object obj = this.f31672i[i10];
-        Objects.requireNonNull(obj);
-        return obj;
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
-    public int size() {
-        return this.f31673o;
+public abstract class k0 extends b0 implements l0 {
+    public static l0 f(IBinder iBinder) {
+        if (iBinder == null) {
+            return null;
+        }
+        IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.play.core.integrity.protocol.IExpressIntegrityService");
+        if (queryLocalInterface instanceof l0) {
+            return (l0) queryLocalInterface;
+        }
+        return new j0(iBinder);
     }
 }

@@ -12,18 +12,18 @@ import java.util.Set;
 public class a extends SimpleArrayMap implements Map {
 
     /* renamed from: o  reason: collision with root package name */
-    C0630a f50335o;
+    C0659a f51107o;
 
     /* renamed from: p  reason: collision with root package name */
-    c f50336p;
+    c f51108p;
 
     /* renamed from: q  reason: collision with root package name */
-    e f50337q;
+    e f51109q;
 
     /* renamed from: u0.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    final class C0630a extends AbstractSet {
-        C0630a() {
+    final class C0659a extends AbstractSet {
+        C0659a() {
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
@@ -58,24 +58,24 @@ public class a extends SimpleArrayMap implements Map {
     final class d implements Iterator, Map.Entry {
 
         /* renamed from: d  reason: collision with root package name */
-        int f50341d;
+        int f51113d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f50342e = -1;
+        int f51114e = -1;
 
         /* renamed from: i  reason: collision with root package name */
-        boolean f50343i;
+        boolean f51115i;
 
         d() {
-            this.f50341d = a.this.size() - 1;
+            this.f51113d = a.this.size() - 1;
         }
 
         @Override // java.util.Iterator
         /* renamed from: a */
         public Map.Entry next() {
             if (hasNext()) {
-                this.f50342e++;
-                this.f50343i = true;
+                this.f51114e++;
+                this.f51115i = true;
                 return this;
             }
             throw new NoSuchElementException();
@@ -83,12 +83,12 @@ public class a extends SimpleArrayMap implements Map {
 
         @Override // java.util.Map.Entry
         public boolean equals(Object obj) {
-            if (this.f50343i) {
+            if (this.f51115i) {
                 if (!(obj instanceof Map.Entry)) {
                     return false;
                 }
                 Map.Entry entry = (Map.Entry) obj;
-                if (!v0.a.c(entry.getKey(), a.this.f(this.f50342e)) || !v0.a.c(entry.getValue(), a.this.j(this.f50342e))) {
+                if (!v0.a.c(entry.getKey(), a.this.f(this.f51114e)) || !v0.a.c(entry.getValue(), a.this.j(this.f51114e))) {
                     return false;
                 }
                 return true;
@@ -98,23 +98,23 @@ public class a extends SimpleArrayMap implements Map {
 
         @Override // java.util.Map.Entry
         public Object getKey() {
-            if (this.f50343i) {
-                return a.this.f(this.f50342e);
+            if (this.f51115i) {
+                return a.this.f(this.f51114e);
             }
             throw new IllegalStateException("This container does not support retaining Map.Entry objects");
         }
 
         @Override // java.util.Map.Entry
         public Object getValue() {
-            if (this.f50343i) {
-                return a.this.j(this.f50342e);
+            if (this.f51115i) {
+                return a.this.j(this.f51114e);
             }
             throw new IllegalStateException("This container does not support retaining Map.Entry objects");
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f50342e < this.f50341d) {
+            if (this.f51114e < this.f51113d) {
                 return true;
             }
             return false;
@@ -123,9 +123,9 @@ public class a extends SimpleArrayMap implements Map {
         @Override // java.util.Map.Entry
         public int hashCode() {
             int hashCode;
-            if (this.f50343i) {
-                Object f10 = a.this.f(this.f50342e);
-                Object j10 = a.this.j(this.f50342e);
+            if (this.f51115i) {
+                Object f10 = a.this.f(this.f51114e);
+                Object j10 = a.this.j(this.f51114e);
                 int i10 = 0;
                 if (f10 == null) {
                     hashCode = 0;
@@ -142,11 +142,11 @@ public class a extends SimpleArrayMap implements Map {
 
         @Override // java.util.Iterator
         public void remove() {
-            if (this.f50343i) {
-                a.this.h(this.f50342e);
-                this.f50342e--;
-                this.f50341d--;
-                this.f50343i = false;
+            if (this.f51115i) {
+                a.this.h(this.f51114e);
+                this.f51114e--;
+                this.f51113d--;
+                this.f51115i = false;
                 return;
             }
             throw new IllegalStateException();
@@ -154,8 +154,8 @@ public class a extends SimpleArrayMap implements Map {
 
         @Override // java.util.Map.Entry
         public Object setValue(Object obj) {
-            if (this.f50343i) {
-                return a.this.i(this.f50342e, obj);
+            if (this.f51115i) {
+                return a.this.i(this.f51114e, obj);
             }
             throw new IllegalStateException("This container does not support retaining Map.Entry objects");
         }
@@ -215,13 +215,13 @@ public class a extends SimpleArrayMap implements Map {
 
     @Override // java.util.Map
     public Set entrySet() {
-        C0630a c0630a = this.f50335o;
-        if (c0630a == null) {
-            C0630a c0630a2 = new C0630a();
-            this.f50335o = c0630a2;
-            return c0630a2;
+        C0659a c0659a = this.f51107o;
+        if (c0659a == null) {
+            C0659a c0659a2 = new C0659a();
+            this.f51107o = c0659a2;
+            return c0659a2;
         }
-        return c0630a;
+        return c0659a;
     }
 
     @Override // androidx.collection.SimpleArrayMap, java.util.Map
@@ -240,10 +240,10 @@ public class a extends SimpleArrayMap implements Map {
 
     @Override // java.util.Map
     public Set keySet() {
-        c cVar = this.f50336p;
+        c cVar = this.f51108p;
         if (cVar == null) {
             c cVar2 = new c();
-            this.f50336p = cVar2;
+            this.f51108p = cVar2;
             return cVar2;
         }
         return cVar;
@@ -288,10 +288,10 @@ public class a extends SimpleArrayMap implements Map {
 
     @Override // java.util.Map
     public Collection values() {
-        e eVar = this.f50337q;
+        e eVar = this.f51109q;
         if (eVar == null) {
             e eVar2 = new e();
-            this.f50337q = eVar2;
+            this.f51109q = eVar2;
             return eVar2;
         }
         return eVar;

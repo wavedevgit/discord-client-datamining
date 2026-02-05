@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var4 = function arg0() {
-            _fun42397: for (var _fun42397_ip = 0;;) switch (_fun42397_ip) {
+            _fun42395: for (var _fun42395_ip = 0;;) switch (_fun42395_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = this;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var1 == var5;
                     var1 = undefined;
                     if (var4) {
-                        _fun42397_ip = 89;
-                        continue _fun42397
+                        _fun42395_ip = 89;
+                        continue _fun42395
                     }
                 case 74:
                     var4 = var5.map;

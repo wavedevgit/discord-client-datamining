@@ -1,38 +1,52 @@
 package li;
 
-import ii.m;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class g {
-    public static int a(long j10, long j11) {
-        int i10 = (j10 > j11 ? 1 : (j10 == j11 ? 0 : -1));
-        if (i10 < 0) {
-            return -1;
-        }
-        if (i10 > 0) {
-            return 1;
-        }
-        return 0;
+public class g {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final String f36886a;
+
+    private g(String str) {
+        this.f36886a = (String) m.j(str);
     }
 
-    public static int b(long j10) {
-        return (int) (j10 ^ (j10 >>> 32));
+    public static g d(char c10) {
+        return new g(String.valueOf(c10));
     }
 
-    public static long c(long... jArr) {
-        boolean z10;
-        if (jArr.length > 0) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        m.d(z10);
-        long j10 = jArr[0];
-        for (int i10 = 1; i10 < jArr.length; i10++) {
-            long j11 = jArr[i10];
-            if (j11 > j10) {
-                j10 = j11;
+    public Appendable a(Appendable appendable, Iterator it) {
+        m.j(appendable);
+        if (it.hasNext()) {
+            appendable.append(e(it.next()));
+            while (it.hasNext()) {
+                appendable.append(this.f36886a);
+                appendable.append(e(it.next()));
             }
         }
-        return j10;
+        return appendable;
+    }
+
+    public final StringBuilder b(StringBuilder sb2, Iterable iterable) {
+        return c(sb2, iterable.iterator());
+    }
+
+    public final StringBuilder c(StringBuilder sb2, Iterator it) {
+        try {
+            a(sb2, it);
+            return sb2;
+        } catch (IOException e10) {
+            throw new AssertionError(e10);
+        }
+    }
+
+    CharSequence e(Object obj) {
+        Objects.requireNonNull(obj);
+        if (obj instanceof CharSequence) {
+            return (CharSequence) obj;
+        }
+        return obj.toString();
     }
 }

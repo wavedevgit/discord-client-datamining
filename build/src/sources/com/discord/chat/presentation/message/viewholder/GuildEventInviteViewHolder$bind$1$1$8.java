@@ -19,7 +19,7 @@ public /* synthetic */ class GuildEventInviteViewHolder$bind$1$1$8 extends Funct
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((CommandMentionContentNode) obj);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public final void invoke(CommandMentionContentNode p02) {

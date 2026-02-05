@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var3 = function arg0, arg1, arg2, arg3() {
-        _fun111037: for (var _fun111037_ip = 0;;) switch (_fun111037_ip) {
+        _fun111113: for (var _fun111113_ip = 0;;) switch (_fun111113_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -19,26 +19,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot2 = var1;
                 var2 = arg2;
                 if (var2) {
-                    _fun111037_ip = 38;
-                    continue _fun111037
+                    _fun111113_ip = 38;
+                    continue _fun111113
                 }
             case 32:
                 var2 = _closure1_slot4;
-                _fun111037_ip = 42;
-                continue _fun111037;
+                _fun111113_ip = 42;
+                continue _fun111113;
             case 38:
                 var2 = _closure1_slot5;
             case 42:
                 var1 = var2.every;
                 var0 = function(arg0) { // Environment: var0
-                    _fun111038: for (var _fun111038_ip = 0;;) switch (_fun111038_ip) {
+                    _fun111114: for (var _fun111114_ip = 0;;) switch (_fun111114_ip) {
                         case 0:
                             var4 = arg0;
                             var2 = _closure2_slot2;
                             var0 = null;
                             if (!(var0 != var2)) {
-                                _fun111038_ip = 77;
-                                continue _fun111038
+                                _fun111114_ip = 77;
+                                continue _fun111114
                             }
                         case 16:
                             var3 = _closure1_slot1;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = _closure2_slot0;
                             var0.context = var5;
                             var0 = var2.bind(var3)(var0);
-                            _fun111038_ip = 97;
-                            continue _fun111038;
+                            _fun111114_ip = 97;
+                            continue _fun111114;
                         case 77:
                             var3 = _closure2_slot1;
                             var2 = var3.can;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/calls/useCanSetVoiceChannelStatus.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function arg0() {
-        _fun111039: for (var _fun111039_ip = 0;;) switch (_fun111039_ip) {
+        _fun111115: for (var _fun111115_ip = 0;;) switch (_fun111115_ip) {
             case 0:
                 var7 = arg0;
                 var6 = arguments[1];
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var7;
                 var4 = undefined;
                 if (!(var6 === var4)) {
-                    _fun111039_ip = 23;
-                    continue _fun111039
+                    _fun111115_ip = 23;
+                    continue _fun111115
                 }
             case 21:
                 var6 = false;
@@ -154,13 +154,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var4;
     var2._canSetVoiceChannelStatus = var3;
     var1 = function arg0() {
-        _fun111041: for (var _fun111041_ip = 0;;) switch (_fun111041_ip) {
+        _fun111117: for (var _fun111117_ip = 0;;) switch (_fun111117_ip) {
             case 0:
                 var5 = arguments[1];
                 var4 = undefined;
                 if (!(var5 === var4)) {
-                    _fun111041_ip = 11;
-                    continue _fun111041
+                    _fun111117_ip = 11;
+                    continue _fun111117
                 }
             case 9:
                 var5 = false;

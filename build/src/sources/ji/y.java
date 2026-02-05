@@ -1,127 +1,51 @@
 package ji;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.RandomAccess;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class y {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static List a(Iterable iterable) {
-        return (List) iterable;
+public final class y implements d0 {
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final Object f30958c = new Object();
+
+    /* renamed from: a  reason: collision with root package name */
+    private volatile d0 f30959a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private volatile Object f30960b = f30958c;
+
+    private y(d0 d0Var) {
+        this.f30959a = d0Var;
     }
 
-    static int b(int i10) {
-        h.b(i10, "arraySize");
-        return li.e.k(i10 + 5 + (i10 / 10));
+    public static d0 b(d0 d0Var) {
+        if (d0Var instanceof y) {
+            return d0Var;
+        }
+        return new y(d0Var);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static boolean c(List list, Object obj) {
-        if (obj == ii.m.j(list)) {
-            return true;
-        }
-        if (!(obj instanceof List)) {
-            return false;
-        }
-        List list2 = (List) obj;
-        int size = list.size();
-        if (size != list2.size()) {
-            return false;
-        }
-        if ((list instanceof RandomAccess) && (list2 instanceof RandomAccess)) {
-            for (int i10 = 0; i10 < size; i10++) {
-                if (!ii.j.a(list.get(i10), list2.get(i10))) {
-                    return false;
+    @Override // ji.e0
+    public final Object a() {
+        Object obj;
+        Object obj2 = this.f30960b;
+        Object obj3 = f30958c;
+        if (obj2 == obj3) {
+            synchronized (this) {
+                try {
+                    obj = this.f30960b;
+                    if (obj == obj3) {
+                        obj = this.f30959a.a();
+                        Object obj4 = this.f30960b;
+                        if (obj4 != obj3 && obj4 != obj) {
+                            throw new IllegalStateException("Scoped provider was invoked recursively returning different results: " + obj4 + " & " + obj + ". This is likely due to a circular dependency.");
+                        }
+                        this.f30960b = obj;
+                        this.f30959a = null;
+                    }
+                } catch (Throwable th2) {
+                    throw th2;
                 }
             }
-            return true;
+            return obj;
         }
-        return w.e(list.iterator(), list2.iterator());
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static int d(List list, Object obj) {
-        if (list instanceof RandomAccess) {
-            return e(list, obj);
-        }
-        ListIterator listIterator = list.listIterator();
-        while (listIterator.hasNext()) {
-            if (ii.j.a(obj, listIterator.next())) {
-                return listIterator.previousIndex();
-            }
-        }
-        return -1;
-    }
-
-    private static int e(List list, Object obj) {
-        int size = list.size();
-        int i10 = 0;
-        if (obj == null) {
-            while (i10 < size) {
-                if (list.get(i10) == null) {
-                    return i10;
-                }
-                i10++;
-            }
-            return -1;
-        }
-        while (i10 < size) {
-            if (obj.equals(list.get(i10))) {
-                return i10;
-            }
-            i10++;
-        }
-        return -1;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static int f(List list, Object obj) {
-        if (list instanceof RandomAccess) {
-            return g(list, obj);
-        }
-        ListIterator listIterator = list.listIterator(list.size());
-        while (listIterator.hasPrevious()) {
-            if (ii.j.a(obj, listIterator.previous())) {
-                return listIterator.nextIndex();
-            }
-        }
-        return -1;
-    }
-
-    private static int g(List list, Object obj) {
-        if (obj == null) {
-            for (int size = list.size() - 1; size >= 0; size--) {
-                if (list.get(size) == null) {
-                    return size;
-                }
-            }
-            return -1;
-        }
-        for (int size2 = list.size() - 1; size2 >= 0; size2--) {
-            if (obj.equals(list.get(size2))) {
-                return size2;
-            }
-        }
-        return -1;
-    }
-
-    public static ArrayList h() {
-        return new ArrayList();
-    }
-
-    public static ArrayList i(Iterator it) {
-        ArrayList h10 = h();
-        w.a(h10, it);
-        return h10;
-    }
-
-    public static ArrayList j(Object... objArr) {
-        ii.m.j(objArr);
-        ArrayList arrayList = new ArrayList(b(objArr.length));
-        Collections.addAll(arrayList, objArr);
-        return arrayList;
+        return obj2;
     }
 }

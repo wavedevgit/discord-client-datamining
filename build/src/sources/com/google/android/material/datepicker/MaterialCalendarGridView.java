@@ -16,10 +16,10 @@ import java.util.Calendar;
 public final class MaterialCalendarGridView extends GridView {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Calendar f14474d;
+    private final Calendar f14868d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f14475e;
+    private final boolean f14869e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends androidx.core.view.a {
@@ -97,7 +97,7 @@ public final class MaterialCalendarGridView extends GridView {
 
     @Override // android.widget.GridView, android.widget.AbsListView, android.view.View
     public void onMeasure(int i10, int i11) {
-        if (this.f14475e) {
+        if (this.f14869e) {
             super.onMeasure(i10, View.MeasureSpec.makeMeasureSpec(16777215, Integer.MIN_VALUE));
             getLayoutParams().height = getMeasuredHeight();
             return;
@@ -116,12 +116,12 @@ public final class MaterialCalendarGridView extends GridView {
 
     public MaterialCalendarGridView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f14474d = t.i();
+        this.f14868d = t.i();
         if (k.J(getContext())) {
-            setNextFocusLeftId(yg.f.f54167a);
-            setNextFocusRightId(yg.f.f54170d);
+            setNextFocusLeftId(zg.f.f55625a);
+            setNextFocusRightId(zg.f.f55628d);
         }
-        this.f14475e = k.L(getContext());
+        this.f14869e = k.L(getContext());
         h0.n0(this, new a());
     }
 

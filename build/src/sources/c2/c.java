@@ -13,10 +13,10 @@ public abstract class c {
     private static final class b implements AccessibilityManager.TouchExplorationStateChangeListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final a f6953a;
+        final a f7371a;
 
         b(a aVar) {
-            this.f6953a = aVar;
+            this.f7371a = aVar;
         }
 
         public boolean equals(Object obj) {
@@ -26,16 +26,16 @@ public abstract class c {
             if (!(obj instanceof b)) {
                 return false;
             }
-            return this.f6953a.equals(((b) obj).f6953a);
+            return this.f7371a.equals(((b) obj).f7371a);
         }
 
         public int hashCode() {
-            return this.f6953a.hashCode();
+            return this.f7371a.hashCode();
         }
 
         @Override // android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener
         public void onTouchExplorationStateChanged(boolean z10) {
-            this.f6953a.onTouchExplorationStateChanged(z10);
+            this.f7371a.onTouchExplorationStateChanged(z10);
         }
     }
 

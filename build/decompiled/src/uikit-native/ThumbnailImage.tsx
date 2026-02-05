@@ -1,7 +1,7 @@
 // uikit-native/ThumbnailImage.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun70446: for (var _fun70446_ip = 0;;) switch (_fun70446_ip) {
+    _fun70464: for (var _fun70464_ip = 0;;) switch (_fun70464_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -34,8 +34,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var7.isAndroid;
             var6 = var6.bind(var7)();
             if (!var6) {
-                _fun70446_ip = 140;
-                continue _fun70446
+                _fun70464_ip = 140;
+                continue _fun70464
             }
         case 123:
             var6 = 4;
@@ -64,4 +64,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 478, 8852, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 478, 8870, 2]);

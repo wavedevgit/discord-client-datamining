@@ -9,10 +9,10 @@ public final class Result implements Serializable {
     @NotNull
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f32461e = new a(null);
+    public static final a f31985e = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f32462d;
+    private final Object f31986d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -28,31 +28,31 @@ public final class Result implements Serializable {
     public static final class b implements Serializable {
 
         /* renamed from: d  reason: collision with root package name */
-        public final Throwable f32463d;
+        public final Throwable f31987d;
 
         public b(Throwable exception) {
             Intrinsics.checkNotNullParameter(exception, "exception");
-            this.f32463d = exception;
+            this.f31987d = exception;
         }
 
         public boolean equals(Object obj) {
-            if ((obj instanceof b) && Intrinsics.areEqual(this.f32463d, ((b) obj).f32463d)) {
+            if ((obj instanceof b) && Intrinsics.areEqual(this.f31987d, ((b) obj).f31987d)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f32463d.hashCode();
+            return this.f31987d.hashCode();
         }
 
         public String toString() {
-            return "Failure(" + this.f32463d + ')';
+            return "Failure(" + this.f31987d + ')';
         }
     }
 
     private /* synthetic */ Result(Object obj) {
-        this.f32462d = obj;
+        this.f31986d = obj;
     }
 
     public static final /* synthetic */ Result a(Object obj) {
@@ -73,7 +73,7 @@ public final class Result implements Serializable {
 
     public static final Throwable e(Object obj) {
         if (obj instanceof b) {
-            return ((b) obj).f32463d;
+            return ((b) obj).f31987d;
         }
         return null;
     }
@@ -101,18 +101,18 @@ public final class Result implements Serializable {
     }
 
     public boolean equals(Object obj) {
-        return c(this.f32462d, obj);
+        return c(this.f31986d, obj);
     }
 
     public int hashCode() {
-        return f(this.f32462d);
+        return f(this.f31986d);
     }
 
     public final /* synthetic */ Object j() {
-        return this.f32462d;
+        return this.f31986d;
     }
 
     public String toString() {
-        return i(this.f32462d);
+        return i(this.f31986d);
     }
 }

@@ -13,83 +13,83 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
-import tl.a;
-import vl.b;
-import vl.c;
+import wl.a;
+import yl.b;
+import yl.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class ZoomEngine implements com.otaliastudios.zoom.c {
 
     /* renamed from: w  reason: collision with root package name */
-    public static final b f16879w = new b(null);
+    public static final b f17285w = new b(null);
 
     /* renamed from: x  reason: collision with root package name */
-    private static final String f16880x;
+    private static final String f17286x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final ZoomLogger f16881y;
+    private static final ZoomLogger f17287y;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f16882d;
+    private int f17288d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f16883e;
+    private int f17289e;
 
     /* renamed from: i  reason: collision with root package name */
-    private View f16884i;
+    private View f17290i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final a f16885o;
+    private final a f17291o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final tl.b f16886p;
+    private final wl.b f17292p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final tl.a f16887q;
+    private final wl.a f17293q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final wl.b f16888r;
+    private final zl.b f17294r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final wl.c f16889s;
+    private final zl.c f17295s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final vl.b f16890t;
+    private final yl.b f17296t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final ul.b f16891u;
+    private final xl.b f17297u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final ul.a f16892v;
+    private final xl.a f17298v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private final class a implements ViewTreeObserver.OnGlobalLayoutListener, a.InterfaceC0624a, b.a {
+    private final class a implements ViewTreeObserver.OnGlobalLayoutListener, a.InterfaceC0701a, b.a {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ZoomEngine f16893d;
+        final /* synthetic */ ZoomEngine f17299d;
 
         /* renamed from: com.otaliastudios.zoom.ZoomEngine$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        static final class C0192a extends Lambda implements Function1 {
+        static final class C0210a extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ ZoomEngine f16894d;
+            final /* synthetic */ ZoomEngine f17300d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0192a(ZoomEngine zoomEngine) {
+            C0210a(ZoomEngine zoomEngine) {
                 super(1);
-                this.f16894d = zoomEngine;
+                this.f17300d = zoomEngine;
             }
 
             public final void a(c.a applyUpdate) {
                 Intrinsics.checkNotNullParameter(applyUpdate, "$this$applyUpdate");
-                applyUpdate.i(this.f16894d.L().k(), false);
+                applyUpdate.i(this.f17300d.L().k(), false);
                 applyUpdate.g(false);
             }
 
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((c.a) obj);
-                return Unit.f32464a;
+                return Unit.f31988a;
             }
         }
 
@@ -97,23 +97,23 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
         static final class b extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ ScaledPoint f16895d;
+            final /* synthetic */ ScaledPoint f17301d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             b(ScaledPoint scaledPoint) {
                 super(1);
-                this.f16895d = scaledPoint;
+                this.f17301d = scaledPoint;
             }
 
             public final void a(c.a applyUpdate) {
                 Intrinsics.checkNotNullParameter(applyUpdate, "$this$applyUpdate");
-                applyUpdate.e(this.f16895d, false);
+                applyUpdate.e(this.f17301d, false);
             }
 
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((c.a) obj);
-                return Unit.f32464a;
+                return Unit.f31988a;
             }
         }
 
@@ -121,67 +121,67 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
         static final class c extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ ZoomEngine f16896d;
+            final /* synthetic */ ZoomEngine f17302d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             c(ZoomEngine zoomEngine) {
                 super(1);
-                this.f16896d = zoomEngine;
+                this.f17302d = zoomEngine;
             }
 
             public final void a(c.a applyUpdate) {
                 Intrinsics.checkNotNullParameter(applyUpdate, "$this$applyUpdate");
-                applyUpdate.i(this.f16896d.G(), false);
+                applyUpdate.i(this.f17302d.G(), false);
             }
 
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((c.a) obj);
-                return Unit.f32464a;
+                return Unit.f31988a;
             }
         }
 
         public a(ZoomEngine this$0) {
             Intrinsics.checkNotNullParameter(this$0, "this$0");
-            this.f16893d = this$0;
+            this.f17299d = this$0;
         }
 
-        @Override // tl.a.InterfaceC0624a
+        @Override // wl.a.InterfaceC0701a
         public void a(int i10) {
             if (i10 != 3) {
                 if (i10 != 4) {
                     return;
                 }
-                this.f16893d.f16891u.e();
+                this.f17299d.f17297u.e();
                 return;
             }
-            this.f16893d.f16890t.i();
+            this.f17299d.f17296t.i();
         }
 
-        @Override // tl.a.InterfaceC0624a
+        @Override // wl.a.InterfaceC0701a
         public void b() {
-            this.f16893d.f16886p.b();
+            this.f17299d.f17292p.b();
         }
 
-        @Override // vl.b.a
+        @Override // yl.b.a
         public void c(float f10, boolean z10) {
-            ZoomEngine.f16881y.h("onMatrixSizeChanged: firstTime:", Boolean.valueOf(z10), "oldZoom:", Float.valueOf(f10), "transformation:", Integer.valueOf(this.f16893d.f16882d), "transformationZoom:", Float.valueOf(this.f16893d.L().k()));
-            this.f16893d.f16887q.f();
+            ZoomEngine.f17287y.h("onMatrixSizeChanged: firstTime:", Boolean.valueOf(z10), "oldZoom:", Float.valueOf(f10), "transformation:", Integer.valueOf(this.f17299d.f17288d), "transformationZoom:", Float.valueOf(this.f17299d.L().k()));
+            this.f17299d.f17293q.f();
             if (z10) {
-                this.f16893d.L().t(this.f16893d.r());
-                this.f16893d.f16890t.g(new C0192a(this.f16893d));
-                this.f16893d.f16890t.g(new b(this.f16893d.q()));
+                this.f17299d.L().t(this.f17299d.r());
+                this.f17299d.f17296t.g(new C0210a(this.f17299d));
+                this.f17299d.f17296t.g(new b(this.f17299d.q()));
             } else {
-                this.f16893d.L().t(this.f16893d.r());
-                this.f16893d.f16890t.g(new c(this.f16893d));
+                this.f17299d.L().t(this.f17299d.r());
+                this.f17299d.f17296t.g(new c(this.f17299d));
             }
-            ZoomEngine.f16881y.b("onMatrixSizeChanged: newTransformationZoom:", Float.valueOf(this.f16893d.L().k()), "newRealZoom:", Float.valueOf(this.f16893d.G()), "newZoom:", Float.valueOf(this.f16893d.K()));
+            ZoomEngine.f17287y.b("onMatrixSizeChanged: newTransformationZoom:", Float.valueOf(this.f17299d.L().k()), "newRealZoom:", Float.valueOf(this.f17299d.G()), "newZoom:", Float.valueOf(this.f17299d.K()));
         }
 
-        @Override // vl.b.a
+        @Override // yl.b.a
         public void d(Runnable action) {
             Intrinsics.checkNotNullParameter(action, "action");
-            View view = this.f16893d.f16884i;
+            View view = this.f17299d.f17290i;
             if (view != null) {
                 view.postOnAnimation(action);
             } else {
@@ -190,41 +190,41 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
             }
         }
 
-        @Override // tl.a.InterfaceC0624a
+        @Override // wl.a.InterfaceC0701a
         public void e() {
-            this.f16893d.f16891u.f();
+            this.f17299d.f17297u.f();
         }
 
-        @Override // tl.a.InterfaceC0624a
+        @Override // wl.a.InterfaceC0701a
         public boolean f(MotionEvent event) {
             Intrinsics.checkNotNullParameter(event, "event");
-            return this.f16893d.f16891u.h(event);
+            return this.f17299d.f17297u.h(event);
         }
 
-        @Override // tl.a.InterfaceC0624a
+        @Override // wl.a.InterfaceC0701a
         public boolean g(MotionEvent event) {
             Intrinsics.checkNotNullParameter(event, "event");
-            return this.f16893d.f16892v.f(event);
+            return this.f17299d.f17298v.f(event);
         }
 
-        @Override // tl.a.InterfaceC0624a
+        @Override // wl.a.InterfaceC0701a
         public boolean h(int i10) {
-            return this.f16893d.f16890t.z();
+            return this.f17299d.f17296t.z();
         }
 
-        @Override // vl.b.a
+        @Override // yl.b.a
         public void i() {
-            this.f16893d.f16886p.c();
+            this.f17299d.f17292p.c();
         }
 
         @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
         public void onGlobalLayout() {
             View view;
-            ZoomEngine zoomEngine = this.f16893d;
-            View view2 = zoomEngine.f16884i;
+            ZoomEngine zoomEngine = this.f17299d;
+            View view2 = zoomEngine.f17290i;
             if (view2 != null) {
                 float width = view2.getWidth();
-                if (this.f16893d.f16884i != null) {
+                if (this.f17299d.f17290i != null) {
                     ZoomEngine.Y(zoomEngine, width, view.getHeight(), false, 4, null);
                     return;
                 } else {
@@ -236,10 +236,10 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
             throw null;
         }
 
-        @Override // vl.b.a
+        @Override // yl.b.a
         public boolean post(Runnable action) {
             Intrinsics.checkNotNullParameter(action, "action");
-            View view = this.f16893d.f16884i;
+            View view = this.f17299d.f17290i;
             if (view != null) {
                 return view.post(action);
             }
@@ -270,32 +270,32 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     public static final class d extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ float f16897d;
+        final /* synthetic */ float f17303d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ float f16898e;
+        final /* synthetic */ float f17304e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ float f16899i;
+        final /* synthetic */ float f17305i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(float f10, float f11, float f12) {
             super(1);
-            this.f16897d = f10;
-            this.f16898e = f11;
-            this.f16899i = f12;
+            this.f17303d = f10;
+            this.f17304e = f11;
+            this.f17305i = f12;
         }
 
         public final void a(c.a obtain) {
             Intrinsics.checkNotNullParameter(obtain, "$this$obtain");
-            obtain.i(this.f16897d, false);
-            obtain.d(new AbsolutePoint(this.f16898e, this.f16899i), false);
+            obtain.i(this.f17303d, false);
+            obtain.d(new AbsolutePoint(this.f17304e, this.f17305i), false);
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
     }
 
@@ -304,27 +304,27 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     public static final class e extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ float f16900d;
+        final /* synthetic */ float f17306d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ float f16901e;
+        final /* synthetic */ float f17307e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(float f10, float f11) {
             super(1);
-            this.f16900d = f10;
-            this.f16901e = f11;
+            this.f17306d = f10;
+            this.f17307e = f11;
         }
 
         public final void a(c.a obtain) {
             Intrinsics.checkNotNullParameter(obtain, "$this$obtain");
-            obtain.b(new AbsolutePoint(this.f16900d, this.f16901e), false);
+            obtain.b(new AbsolutePoint(this.f17306d, this.f17307e), false);
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
     }
 
@@ -336,8 +336,8 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
-        public final vl.b invoke() {
-            return ZoomEngine.this.f16890t;
+        public final yl.b invoke() {
+            return ZoomEngine.this.f17296t;
         }
     }
 
@@ -346,23 +346,23 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     public static final class g extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ float f16903d;
+        final /* synthetic */ float f17309d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         g(float f10) {
             super(1);
-            this.f16903d = f10;
+            this.f17309d = f10;
         }
 
         public final void a(c.a obtain) {
             Intrinsics.checkNotNullParameter(obtain, "$this$obtain");
-            obtain.i(this.f16903d, false);
+            obtain.i(this.f17309d, false);
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
     }
 
@@ -374,13 +374,13 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
         @Override // android.view.View.OnAttachStateChangeListener
         public void onViewAttachedToWindow(View view) {
             Intrinsics.checkNotNullParameter(view, "view");
-            view.getViewTreeObserver().addOnGlobalLayoutListener(ZoomEngine.this.f16885o);
+            view.getViewTreeObserver().addOnGlobalLayoutListener(ZoomEngine.this.f17291o);
         }
 
         @Override // android.view.View.OnAttachStateChangeListener
         public void onViewDetachedFromWindow(View view) {
             Intrinsics.checkNotNullParameter(view, "view");
-            view.getViewTreeObserver().removeOnGlobalLayoutListener(ZoomEngine.this.f16885o);
+            view.getViewTreeObserver().removeOnGlobalLayoutListener(ZoomEngine.this.f17291o);
         }
     }
 
@@ -392,34 +392,34 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
-        public final vl.b invoke() {
-            return ZoomEngine.this.f16890t;
+        public final yl.b invoke() {
+            return ZoomEngine.this.f17296t;
         }
     }
 
     static {
         String TAG = ZoomEngine.class.getSimpleName();
-        f16880x = TAG;
-        ZoomLogger.a aVar = ZoomLogger.f16907b;
+        f17286x = TAG;
+        ZoomLogger.a aVar = ZoomLogger.f17313b;
         Intrinsics.checkNotNullExpressionValue(TAG, "TAG");
-        f16881y = aVar.a(TAG);
+        f17287y = aVar.a(TAG);
     }
 
     public ZoomEngine(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
         a aVar = new a(this);
-        this.f16885o = aVar;
-        this.f16886p = new tl.b(this);
-        tl.a aVar2 = new tl.a(aVar);
-        this.f16887q = aVar2;
-        wl.b bVar = new wl.b(this, new f());
-        this.f16888r = bVar;
-        wl.c cVar = new wl.c(this, new i());
-        this.f16889s = cVar;
-        vl.b bVar2 = new vl.b(cVar, bVar, aVar2, aVar);
-        this.f16890t = bVar2;
-        this.f16891u = new ul.b(context, bVar, aVar2, bVar2);
-        this.f16892v = new ul.a(context, cVar, bVar, aVar2, bVar2);
+        this.f17291o = aVar;
+        this.f17292p = new wl.b(this);
+        wl.a aVar2 = new wl.a(aVar);
+        this.f17293q = aVar2;
+        zl.b bVar = new zl.b(this, new f());
+        this.f17294r = bVar;
+        zl.c cVar = new zl.c(this, new i());
+        this.f17295s = cVar;
+        yl.b bVar2 = new yl.b(cVar, bVar, aVar2, aVar);
+        this.f17296t = bVar2;
+        this.f17297u = new xl.b(context, bVar, aVar2, bVar2);
+        this.f17298v = new xl.a(context, cVar, bVar, aVar2, bVar2);
     }
 
     public static /* synthetic */ void Y(ZoomEngine zoomEngine, float f10, float f11, boolean z10, int i10, Object obj) {
@@ -446,8 +446,8 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
 
     private final int p(int i10) {
         if (i10 == 0) {
-            com.otaliastudios.zoom.a aVar = com.otaliastudios.zoom.a.f16912a;
-            return aVar.e(this.f16888r.e(), 16) | aVar.d(this.f16888r.e(), 1);
+            com.otaliastudios.zoom.a aVar = com.otaliastudios.zoom.a.f17318a;
+            return aVar.e(this.f17294r.e(), 16) | aVar.d(this.f17294r.e(), 1);
         }
         return i10;
     }
@@ -456,84 +456,84 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     public final ScaledPoint q() {
         float x10 = (x() * G()) - v();
         float w10 = (w() * G()) - u();
-        int p10 = p(this.f16883e);
-        return new ScaledPoint(-this.f16888r.b(p10, x10, true), -this.f16888r.b(p10, w10, false));
+        int p10 = p(this.f17289e);
+        return new ScaledPoint(-this.f17294r.b(p10, x10, true), -this.f17294r.b(p10, w10, false));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final float r() {
-        int i10 = this.f16882d;
+        int i10 = this.f17288d;
         if (i10 != 0) {
             if (i10 != 1) {
                 return 1.0f;
             }
             float v10 = v() / x();
             float u10 = u() / w();
-            f16881y.f("computeTransformationZoom", "centerCrop", "scaleX:", Float.valueOf(v10), "scaleY:", Float.valueOf(u10));
+            f17287y.f("computeTransformationZoom", "centerCrop", "scaleX:", Float.valueOf(v10), "scaleY:", Float.valueOf(u10));
             return Math.max(v10, u10);
         }
         float v11 = v() / x();
         float u11 = u() / w();
-        f16881y.f("computeTransformationZoom", "centerInside", "scaleX:", Float.valueOf(v11), "scaleY:", Float.valueOf(u11));
+        f17287y.f("computeTransformationZoom", "centerInside", "scaleX:", Float.valueOf(v11), "scaleY:", Float.valueOf(u11));
         return Math.min(v11, u11);
     }
 
     public int A() {
-        return this.f16889s.g();
+        return this.f17295s.g();
     }
 
     public float B() {
-        return this.f16889s.h();
+        return this.f17295s.h();
     }
 
     public int C() {
-        return this.f16889s.j();
+        return this.f17295s.j();
     }
 
     public AbsolutePoint D() {
-        return AbsolutePoint.b(this.f16890t.s(), 0.0f, 0.0f, 3, null);
+        return AbsolutePoint.b(this.f17296t.s(), 0.0f, 0.0f, 3, null);
     }
 
     public float E() {
-        return this.f16890t.t();
+        return this.f17296t.t();
     }
 
     public float F() {
-        return this.f16890t.u();
+        return this.f17296t.u();
     }
 
     public float G() {
-        return this.f16890t.y();
+        return this.f17296t.y();
     }
 
     public ScaledPoint H() {
-        return ScaledPoint.b(this.f16890t.v(), 0.0f, 0.0f, 3, null);
+        return ScaledPoint.b(this.f17296t.v(), 0.0f, 0.0f, 3, null);
     }
 
     public float I() {
-        return this.f16890t.w();
+        return this.f17296t.w();
     }
 
     public float J() {
-        return this.f16890t.x();
+        return this.f17296t.x();
     }
 
     public float K() {
-        return this.f16889s.n(G());
+        return this.f17295s.n(G());
     }
 
-    public final wl.c L() {
-        return this.f16889s;
+    public final zl.c L() {
+        return this.f17295s;
     }
 
     public void M(float f10, float f11, float f12, boolean z10) {
-        vl.c a10 = vl.c.f51660l.a(new d(this.f16889s.u(f10), f11, f12));
+        yl.c a10 = yl.c.f54825l.a(new d(this.f17295s.u(f10), f11, f12));
         if (z10) {
-            this.f16890t.f(a10);
+            this.f17296t.f(a10);
             return;
         }
         m();
-        this.f16890t.h(a10);
+        this.f17296t.h(a10);
     }
 
     public void N(Float f10, boolean z10) {
@@ -543,9 +543,9 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
             valueOf = null;
         } else {
             float floatValue2 = f10.floatValue();
-            wl.c cVar = this.f16889s;
+            zl.c cVar = this.f17295s;
             float n10 = cVar.n(cVar.i());
-            wl.c cVar2 = this.f16889s;
+            zl.c cVar2 = this.f17295s;
             valueOf = Float.valueOf(kotlin.ranges.d.l(floatValue2, n10, cVar2.n(cVar2.f())));
         }
         if (valueOf == null) {
@@ -553,28 +553,28 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
         } else {
             floatValue = valueOf.floatValue();
         }
-        float u10 = this.f16889s.u(floatValue);
+        float u10 = this.f17295s.u(floatValue);
         M(floatValue, -((x() / 2.0f) - ((v() / u10) / 2.0f)), -((w() / 2.0f) - ((u() / u10) / 2.0f)), z10);
     }
 
     public final boolean O(MotionEvent ev2) {
         Intrinsics.checkNotNullParameter(ev2, "ev");
-        return this.f16887q.h(ev2);
+        return this.f17293q.h(ev2);
     }
 
     public final boolean P(MotionEvent ev2) {
         Intrinsics.checkNotNullParameter(ev2, "ev");
-        return this.f16887q.i(ev2);
+        return this.f17293q.i(ev2);
     }
 
     public void Q(float f10, float f11, boolean z10) {
-        vl.c a10 = vl.c.f51660l.a(new e(f10, f11));
+        yl.c a10 = yl.c.f54825l.a(new e(f10, f11));
         if (z10) {
-            this.f16890t.f(a10);
+            this.f17296t.f(a10);
             return;
         }
         m();
-        this.f16890t.h(a10);
+        this.f17296t.h(a10);
     }
 
     public void R(float f10, float f11, boolean z10) {
@@ -582,31 +582,31 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     }
 
     public void S(float f10, boolean z10) {
-        vl.c a10 = vl.c.f51660l.a(new g(f10));
+        yl.c a10 = yl.c.f54825l.a(new g(f10));
         if (z10) {
-            this.f16890t.f(a10);
+            this.f17296t.f(a10);
             return;
         }
         m();
-        this.f16890t.h(a10);
+        this.f17296t.h(a10);
     }
 
     public void T(int i10) {
-        this.f16888r.o(i10);
+        this.f17294r.o(i10);
     }
 
     public void U(boolean z10) {
-        this.f16891u.j(z10);
+        this.f17297u.j(z10);
     }
 
     public void V(long j10) {
-        this.f16890t.D(j10);
+        this.f17296t.D(j10);
     }
 
     public final void W(View container) {
         Intrinsics.checkNotNullParameter(container, "container");
-        if (this.f16884i == null) {
-            this.f16884i = container;
+        if (this.f17290i == null) {
+            this.f17290i = container;
             if (container != null) {
                 container.addOnAttachStateChangeListener(new h());
                 return;
@@ -619,19 +619,19 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     }
 
     public final void X(float f10, float f11, boolean z10) {
-        this.f16890t.E(f10, f11, z10);
+        this.f17296t.E(f10, f11, z10);
     }
 
     public final void Z(float f10, float f11, boolean z10) {
-        this.f16890t.F(f10, f11, z10);
+        this.f17296t.F(f10, f11, z10);
     }
 
     public void b0(boolean z10) {
-        this.f16891u.i(z10);
+        this.f17297u.i(z10);
     }
 
     public void c0(boolean z10) {
-        this.f16888r.q(z10);
+        this.f17294r.q(z10);
     }
 
     public void d0(float f10) {
@@ -643,50 +643,50 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     }
 
     public void f0(boolean z10) {
-        this.f16891u.k(z10);
+        this.f17297u.k(z10);
     }
 
     public void g0(OverPanRangeProvider provider) {
         Intrinsics.checkNotNullParameter(provider, "provider");
-        this.f16888r.r(provider);
+        this.f17294r.r(provider);
     }
 
     public void h0(boolean z10) {
-        this.f16889s.r(z10);
+        this.f17295s.r(z10);
     }
 
     public void i0(boolean z10) {
-        this.f16888r.p(z10);
+        this.f17294r.p(z10);
     }
 
     public void j0(boolean z10) {
-        this.f16888r.s(z10);
+        this.f17294r.s(z10);
     }
 
     public void k0(OverZoomRangeProvider provider) {
         Intrinsics.checkNotNullParameter(provider, "provider");
-        this.f16889s.s(provider);
+        this.f17295s.s(provider);
     }
 
     public final void l(c listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
-        if (this.f16884i != null) {
-            this.f16886p.a(listener);
+        if (this.f17290i != null) {
+            this.f17292p.a(listener);
             return;
         }
         throw new IllegalStateException("container is not initialized.");
     }
 
     public void l0(boolean z10) {
-        this.f16891u.l(z10);
+        this.f17297u.l(z10);
     }
 
     public boolean m() {
-        if (this.f16887q.b()) {
-            this.f16891u.e();
+        if (this.f17293q.b()) {
+            this.f17297u.e();
             return true;
-        } else if (this.f16887q.a()) {
-            this.f16887q.f();
+        } else if (this.f17293q.a()) {
+            this.f17293q.f();
             return true;
         } else {
             return false;
@@ -694,11 +694,11 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     }
 
     public void m0(boolean z10) {
-        this.f16891u.m(z10);
+        this.f17297u.m(z10);
     }
 
     public final int n() {
-        return (int) (-this.f16890t.w());
+        return (int) (-this.f17296t.w());
     }
 
     public void n0(int i10) {
@@ -706,19 +706,19 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     }
 
     public final int o() {
-        return (int) this.f16890t.p();
+        return (int) this.f17296t.p();
     }
 
     public void o0(boolean z10) {
-        this.f16891u.n(z10);
+        this.f17297u.n(z10);
     }
 
     public void p0(boolean z10) {
-        this.f16888r.t(z10);
+        this.f17294r.t(z10);
     }
 
     public void q0(boolean z10) {
-        this.f16889s.o(z10);
+        this.f17295s.o(z10);
     }
 
     public void r0(float f10, boolean z10) {
@@ -726,7 +726,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     }
 
     public final int s() {
-        return (int) (-this.f16890t.x());
+        return (int) (-this.f17296t.x());
     }
 
     public void s0() {
@@ -735,28 +735,28 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
 
     @Override // com.otaliastudios.zoom.c
     public void setMaxZoom(float f10, int i10) {
-        this.f16889s.p(f10, i10);
-        if (K() > this.f16889s.f()) {
-            S(this.f16889s.f(), true);
+        this.f17295s.p(f10, i10);
+        if (K() > this.f17295s.f()) {
+            S(this.f17295s.f(), true);
         }
     }
 
     @Override // com.otaliastudios.zoom.c
     public void setMinZoom(float f10, int i10) {
-        this.f16889s.q(f10, i10);
-        if (G() <= this.f16889s.i()) {
-            S(this.f16889s.i(), true);
+        this.f17295s.q(f10, i10);
+        if (G() <= this.f17295s.i()) {
+            S(this.f17295s.i(), true);
         }
     }
 
     @Override // com.otaliastudios.zoom.c
     public void setTransformation(int i10, int i11) {
-        this.f16882d = i10;
-        this.f16883e = i11;
+        this.f17288d = i10;
+        this.f17289e = i11;
     }
 
     public final int t() {
-        return (int) this.f16890t.o();
+        return (int) this.f17296t.o();
     }
 
     public void t0() {
@@ -764,30 +764,30 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     }
 
     public final float u() {
-        return this.f16890t.l();
+        return this.f17296t.l();
     }
 
     public void u0(float f10, boolean z10) {
-        S(this.f16889s.u(f10), z10);
+        S(this.f17295s.u(f10), z10);
     }
 
     public final float v() {
-        return this.f16890t.m();
+        return this.f17296t.m();
     }
 
     public final float w() {
-        return this.f16890t.n();
+        return this.f17296t.n();
     }
 
     public final float x() {
-        return this.f16890t.q();
+        return this.f17296t.q();
     }
 
     public final Matrix y() {
-        return this.f16890t.r();
+        return this.f17296t.r();
     }
 
     public float z() {
-        return this.f16889s.e();
+        return this.f17295s.e();
     }
 }

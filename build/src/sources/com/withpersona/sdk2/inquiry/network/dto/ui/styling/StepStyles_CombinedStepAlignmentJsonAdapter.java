@@ -41,18 +41,18 @@ public final class StepStyles_CombinedStepAlignmentJsonAdapter extends h {
     @NotNull
     public StepStyles.CombinedStepAlignment fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.Position position = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 position = (StyleElements.Position) this.nullablePositionAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.CombinedStepAlignment(position);
     }
 
@@ -60,8 +60,8 @@ public final class StepStyles_CombinedStepAlignmentJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.CombinedStepAlignment combinedStepAlignment) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (combinedStepAlignment != null) {
-            writer.l();
-            writer.A0("pendingPage");
+            writer.k();
+            writer.W("pendingPage");
             this.nullablePositionAdapter.toJson(writer, combinedStepAlignment.getPendingPage());
             writer.E();
             return;

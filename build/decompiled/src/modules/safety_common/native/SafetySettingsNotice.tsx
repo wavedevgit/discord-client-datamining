@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/safety_common/native/SafetySettingsNotice.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80130: for (var _fun80130_ip = 0;;) switch (_fun80130_ip) {
+        _fun80149: for (var _fun80149_ip = 0;;) switch (_fun80149_ip) {
             case 0:
                 var1 = arg0;
                 var12 = var1.label;
@@ -181,8 +181,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.variant = var8;
                 var8 = null;
                 if (!(var8 == var13)) {
-                    _fun80130_ip = 290;
-                    continue _fun80130
+                    _fun80149_ip = 290;
+                    continue _fun80149
                 }
             case 238:
                 var10 = _closure1_slot0;
@@ -216,8 +216,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var8.hook = var15;
                 var8 = var10.bind(var11)(var12, var8);
-                _fun80130_ip = 345;
-                continue _fun80130;
+                _fun80149_ip = 345;
+                continue _fun80149;
             case 290:
                 var10 = _closure1_slot0;
                 var11 = _closure1_slot1;
@@ -262,4 +262,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5917, 33, 1297, 671, 10190, 3266, 3941, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5921, 33, 1297, 671, 10208, 3266, 3941, 1234, 2]);

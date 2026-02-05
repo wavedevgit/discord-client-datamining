@@ -9,10 +9,10 @@ import va.z;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final s8.c f10245a;
+    private final s8.c f10630a;
 
     /* renamed from: b  reason: collision with root package name */
-    final b f10246b;
+    final b f10631b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements s8.c {
@@ -35,27 +35,27 @@ public class d {
 
         @Override // com.facebook.imagepipeline.memory.a
         com.facebook.imagepipeline.memory.b x(int i10) {
-            return new h(p(i10), this.f10230c.f51313g, 0);
+            return new h(p(i10), this.f10615c.f52002g, 0);
         }
     }
 
     public d(r8.d dVar, z zVar) {
         boolean z10;
-        if (zVar.f51313g > 0) {
+        if (zVar.f52002g > 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         j.b(Boolean.valueOf(z10));
-        this.f10246b = new b(dVar, zVar, u.h());
-        this.f10245a = new a();
+        this.f10631b = new b(dVar, zVar, u.h());
+        this.f10630a = new a();
     }
 
     public CloseableReference a(int i10) {
-        return CloseableReference.V0((byte[]) this.f10246b.get(i10), this.f10245a);
+        return CloseableReference.V0((byte[]) this.f10631b.get(i10), this.f10630a);
     }
 
     public void b(byte[] bArr) {
-        this.f10246b.release(bArr);
+        this.f10631b.release(bArr);
     }
 }

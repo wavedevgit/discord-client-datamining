@@ -1,64 +1,64 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class j4 implements ui.d {
+final class j4 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j4 f41232a = new j4();
+    static final j4 f40692a = new j4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41233b;
+    private static final xi.c f40693b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41234c;
+    private static final xi.c f40694c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41235d;
+    private static final xi.c f40695d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41236e;
+    private static final xi.c f40696e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41237f;
+    private static final xi.c f40697f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f41238g;
+    private static final xi.c f40698g;
 
     static {
-        c.b a10 = ui.c.a("inferenceCommonLogEvent");
+        c.b a10 = xi.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f41233b = a10.b(fVar.b()).a();
-        c.b a11 = ui.c.a("options");
+        f40693b = a10.b(fVar.b()).a();
+        c.b a11 = xi.c.a("options");
         f fVar2 = new f();
         fVar2.a(2);
-        f41234c = a11.b(fVar2.b()).a();
-        c.b a12 = ui.c.a("imageInfo");
+        f40694c = a11.b(fVar2.b()).a();
+        c.b a12 = xi.c.a("imageInfo");
         f fVar3 = new f();
         fVar3.a(3);
-        f41235d = a12.b(fVar3.b()).a();
-        c.b a13 = ui.c.a("detectorOptions");
+        f40695d = a12.b(fVar3.b()).a();
+        c.b a13 = xi.c.a("detectorOptions");
         f fVar4 = new f();
         fVar4.a(4);
-        f41236e = a13.b(fVar4.b()).a();
-        c.b a14 = ui.c.a("contourDetectedFaces");
+        f40696e = a13.b(fVar4.b()).a();
+        c.b a14 = xi.c.a("contourDetectedFaces");
         f fVar5 = new f();
         fVar5.a(5);
-        f41237f = a14.b(fVar5.b()).a();
-        c.b a15 = ui.c.a("nonContourDetectedFaces");
+        f40697f = a14.b(fVar5.b()).a();
+        c.b a15 = xi.c.a("nonContourDetectedFaces");
         f fVar6 = new f();
         fVar6.a(6);
-        f41238g = a15.b(fVar6.b()).a();
+        f40698g = a15.b(fVar6.b()).a();
     }
 
     private j4() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

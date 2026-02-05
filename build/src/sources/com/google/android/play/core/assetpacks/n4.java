@@ -4,5 +4,5 @@ package com.google.android.play.core.assetpacks;
 public abstract class n4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final sh.i f15541a = new sh.i();
+    private static final vh.i f15935a = new vh.i();
 }

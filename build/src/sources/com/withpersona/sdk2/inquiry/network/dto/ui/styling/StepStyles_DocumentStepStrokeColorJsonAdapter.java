@@ -41,24 +41,24 @@ public final class StepStyles_DocumentStepStrokeColorJsonAdapter extends h {
     @NotNull
     public StepStyles.DocumentStepStrokeColor fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         StyleElements.SimpleElementColor simpleElementColor3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 simpleElementColor3 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.DocumentStepStrokeColor(simpleElementColor, simpleElementColor2, simpleElementColor3);
     }
 
@@ -66,12 +66,12 @@ public final class StepStyles_DocumentStepStrokeColorJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.DocumentStepStrokeColor documentStepStrokeColor) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStepStrokeColor != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, documentStepStrokeColor.getBase());
-            writer.A0("imagePreviewPlusIcon");
+            writer.W("imagePreviewPlusIcon");
             this.nullableSimpleElementColorAdapter.toJson(writer, documentStepStrokeColor.getImagePreviewPlusIcon());
-            writer.A0("imagePreviewXIcon");
+            writer.W("imagePreviewXIcon");
             this.nullableSimpleElementColorAdapter.toJson(writer, documentStepStrokeColor.getImagePreviewXIcon());
             writer.E();
             return;

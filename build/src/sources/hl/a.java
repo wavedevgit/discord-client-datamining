@@ -1,45 +1,50 @@
 package hl;
 
-import android.media.MediaFormat;
+import android.graphics.Paint;
+import com.henninghall.date_picker.n;
+import java.util.ArrayList;
+import java.util.Calendar;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private MediaFormat f27064a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private MediaFormat f27065b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private String f27066c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private String f27067d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private long f27068e = -1;
-
-    public long a() {
-        return this.f27068e;
+public class a extends g {
+    public a(com.henninghall.date_picker.pickers.a aVar, n nVar) {
+        super(aVar, nVar);
     }
 
-    public void b(String str) {
-        this.f27066c = str;
+    @Override // hl.g
+    public String e() {
+        if (this.f25948a.f16717o.g()) {
+            return " a ";
+        }
+        return "";
     }
 
-    public void c(long j10) {
-        this.f27068e = j10;
+    @Override // hl.g
+    public Paint.Align k() {
+        return Paint.Align.RIGHT;
     }
 
-    public void d(String str) {
-        this.f27067d = str;
+    @Override // hl.g
+    public ArrayList n() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2000, 0, 0, 0, 0, 0);
+        ArrayList arrayList = new ArrayList();
+        calendar.set(11, 0);
+        arrayList.add(this.f25952e.format(calendar.getTime()));
+        calendar.add(11, 12);
+        arrayList.add(this.f25952e.format(calendar.getTime()));
+        return arrayList;
     }
 
-    public void e(MediaFormat mediaFormat) {
-        this.f27064a = mediaFormat;
+    @Override // hl.g
+    public boolean u() {
+        if (this.f25948a.f16717o.g() && this.f25948a.z() != dl.b.date) {
+            return true;
+        }
+        return false;
     }
 
-    public void f(MediaFormat mediaFormat) {
-        this.f27065b = mediaFormat;
+    @Override // hl.g
+    public boolean v() {
+        return false;
     }
 }

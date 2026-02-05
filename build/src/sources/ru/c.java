@@ -1,94 +1,69 @@
 package ru;
 
+import java.util.Collection;
 import java.util.List;
-import java.util.Map;
 import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
-import su.a;
-import sv.d;
+import ru.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements nu.b, su.a {
+public interface c extends b {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final c f49127a = new c();
-
-    private c() {
-    }
-
-    private final Object a(List list, Object obj, Object obj2) {
-        List list2;
-        if (!list.isEmpty()) {
-            obj2 = b(obj2, list);
-        }
-        if (d(obj2, obj)) {
-            obj2 = null;
-            if (obj instanceof List) {
-                list2 = (List) obj;
-            } else {
-                list2 = null;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        private static boolean a(c cVar, List list, Function2 function2) {
+            Integer c10 = c(cVar, (Comparable) CollectionsKt.firstOrNull(list), (Comparable) vv.c.b(list));
+            if (c10 == null) {
+                return false;
             }
-            if (list2 != null) {
-                return sv.c.b(list2);
-            }
+            return ((Boolean) function2.invoke(Integer.valueOf(c10.intValue()), 0)).booleanValue();
         }
-        return obj2;
-    }
 
-    private final Object b(Object obj, List list) {
-        Map map;
-        if (obj instanceof List) {
-            if (list.size() == 1) {
-                return ((List) obj).get(d.b((String) CollectionsKt.o0(list)));
+        public static boolean b(c cVar, List list, Function2 operator) {
+            List d10;
+            Intrinsics.checkNotNullParameter(operator, "operator");
+            if (list != null && (d10 = vv.a.d(list)) != null) {
+                return a(cVar, d10, operator);
             }
-            return c(list, (List) obj);
+            return false;
         }
-        if (obj instanceof Map) {
-            obj = ((Map) obj).get(CollectionsKt.o0(list));
-            for (String str : CollectionsKt.f0(list, 1)) {
-                if (obj instanceof Map) {
-                    map = (Map) obj;
-                } else {
-                    map = null;
-                }
-                if (map != null) {
-                    obj = map.get(str);
-                } else {
-                    obj = null;
+
+        private static Integer c(c cVar, Comparable comparable, Comparable comparable2) {
+            List g10 = cVar.g(comparable, comparable2);
+            if (g10 == null) {
+                return null;
+            }
+            List<Comparable> list = g10;
+            boolean z10 = list instanceof Collection;
+            if (!z10 || !list.isEmpty()) {
+                for (Comparable comparable3 : list) {
+                    if (comparable3 != null) {
+                        if (!z10 || !list.isEmpty()) {
+                            for (Comparable comparable4 : list) {
+                                if (comparable4 == null) {
+                                    return null;
+                                }
+                            }
+                        }
+                        return Integer.valueOf(rr.a.d((Comparable) CollectionsKt.firstOrNull(g10), (Comparable) vv.c.b(g10)));
+                    }
                 }
             }
+            return Integer.valueOf(rr.a.d((Comparable) CollectionsKt.firstOrNull(g10), (Comparable) vv.c.b(g10)));
         }
-        return obj;
+
+        public static List d(c cVar, Comparable comparable, Comparable comparable2) {
+            return b.a.a(cVar, comparable, comparable2);
+        }
+
+        public static List e(c cVar, Comparable comparable, Comparable comparable2) {
+            return b.a.b(cVar, comparable, comparable2);
+        }
+
+        public static Boolean f(c cVar, Object obj) {
+            return b.a.c(cVar, obj);
+        }
     }
 
-    private final Object c(List list, List list2) {
-        String str = (String) CollectionsKt.firstOrNull(list);
-        if (str != null) {
-            Object q02 = CollectionsKt.q0(list2, d.b(str));
-            if (q02 instanceof List) {
-                return f49127a.c(list.subList(1, list.size()), (List) q02);
-            }
-            return CollectionsKt.q0(list2, d.b(str));
-        }
-        return null;
-    }
-
-    private final boolean d(Object obj, Object obj2) {
-        if ((Intrinsics.areEqual(obj, obj2) || obj == null) && (obj2 instanceof List) && ((List) obj2).size() > 1) {
-            return true;
-        }
-        return false;
-    }
-
-    public List e(Object obj) {
-        return a.C0615a.b(this, obj);
-    }
-
-    @Override // nu.b
-    public Object f(Object obj, Object obj2) {
-        List e10 = e(sv.a.c(obj));
-        if (e10 != null) {
-            return a(e10, obj, obj2);
-        }
-        return null;
-    }
+    boolean b(List list, Function2 function2);
 }

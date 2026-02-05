@@ -12,35 +12,35 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j implements androidx.core.view.v, LifecycleEventListener {
 
     /* renamed from: o  reason: collision with root package name */
-    private static boolean f17893o;
+    private static boolean f18299o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static boolean f17894p;
+    private static boolean f18300p;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final j f17890d = new j();
+    public static final j f18296d = new j();
 
     /* renamed from: e  reason: collision with root package name */
-    private static final HashSet f17891e = new HashSet();
+    private static final HashSet f18297e = new HashSet();
 
     /* renamed from: i  reason: collision with root package name */
-    private static WeakReference f17892i = new WeakReference(null);
+    private static WeakReference f18298i = new WeakReference(null);
 
     /* renamed from: q  reason: collision with root package name */
-    private static boolean f17895q = true;
+    private static boolean f18301q = true;
 
     private j() {
     }
 
     private final boolean c() {
-        if (f17893o && f17892i.get() != null) {
+        if (f18299o && f18298i.get() != null) {
             return false;
         }
         return true;
     }
 
     private final View d() {
-        return (View) f17892i.get();
+        return (View) f18298i.get();
     }
 
     @Override // androidx.core.view.v
@@ -48,13 +48,13 @@ public final class j implements androidx.core.view.v, LifecycleEventListener {
         WindowInsetsCompat windowInsetsCompat;
         Intrinsics.checkNotNullParameter(v10, "v");
         Intrinsics.checkNotNullParameter(insets, "insets");
-        if (f17895q) {
+        if (f18301q) {
             windowInsetsCompat = androidx.core.view.h0.Z(v10, insets);
         } else {
             windowInsetsCompat = insets;
         }
         Intrinsics.checkNotNull(windowInsetsCompat);
-        for (androidx.core.view.v vVar : f17891e) {
+        for (androidx.core.view.v vVar : f18297e) {
             windowInsetsCompat = vVar.a(v10, insets);
             Intrinsics.checkNotNullExpressionValue(windowInsetsCompat, "onApplyWindowInsets(...)");
         }
@@ -63,15 +63,15 @@ public final class j implements androidx.core.view.v, LifecycleEventListener {
 
     public final void b(androidx.core.view.v listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
-        f17891e.add(listener);
+        f18297e.add(listener);
     }
 
     public final boolean e(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
         if (c()) {
             androidx.core.view.h0.D0(view, this);
-            f17892i = new WeakReference(view);
-            f17893o = true;
+            f18298i = new WeakReference(view);
+            f18299o = true;
             return true;
         }
         return false;
@@ -79,27 +79,27 @@ public final class j implements androidx.core.view.v, LifecycleEventListener {
 
     public final void f(ReactApplicationContext context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        if (f17894p) {
+        if (f18300p) {
             Log.w("[RNScreens]", "InsetObserverProxy registers on new context while it has not been invalidated on the old one. Please report this as issue at https://github.com/software-mansion/react-native-screens/issues");
         }
-        f17894p = true;
+        f18300p = true;
         context.addLifecycleEventListener(this);
     }
 
     public final void g(androidx.core.view.v listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
-        f17891e.remove(listener);
+        f18297e.remove(listener);
     }
 
     @Override // com.facebook.react.bridge.LifecycleEventListener
     public void onHostDestroy() {
         View d10 = d();
-        if (f17893o && d10 != null) {
+        if (f18299o && d10 != null) {
             androidx.core.view.h0.D0(d10, null);
-            f17893o = false;
-            f17892i.clear();
+            f18299o = false;
+            f18298i.clear();
         }
-        f17894p = false;
+        f18300p = false;
     }
 
     @Override // com.facebook.react.bridge.LifecycleEventListener

@@ -22,11 +22,11 @@ public abstract class m5 {
     private static final l5 b(InputStream inputStream, o5 o5Var) {
         long j10;
         try {
-            n5 n10 = o5Var.n();
-            if (n10 != null) {
+            n5 m10 = o5Var.m();
+            if (m10 != null) {
                 try {
-                    byte a10 = n10.a();
-                    byte b10 = n10.b();
+                    byte a10 = m10.a();
+                    byte b10 = m10.b();
                     int i10 = 0;
                     if (b10 != Byte.MIN_VALUE) {
                         if (b10 != -96) {
@@ -35,16 +35,16 @@ public abstract class m5 {
                                     if (b10 != 0 && b10 != 32) {
                                         if (b10 != 64) {
                                             if (b10 == 96) {
-                                                String x10 = o5Var.x();
-                                                c(a10, x10.length(), inputStream, o5Var);
-                                                return new j5(x10);
+                                                String o10 = o5Var.o();
+                                                c(a10, o10.length(), inputStream, o5Var);
+                                                return new j5(o10);
                                             }
-                                            throw new f5("Unidentifiable major type: " + n10.c());
+                                            throw new f5("Unidentifiable major type: " + m10.c());
                                         }
                                         byte[] E = o5Var.E();
                                         int length = E.length;
                                         c(a10, length, inputStream, o5Var);
-                                        return new e5(v4.m(E, 0, length));
+                                        return new e5(v4.n(E, 0, length));
                                     }
                                     long h10 = o5Var.h();
                                     if (h10 > 0) {
@@ -55,18 +55,18 @@ public abstract class m5 {
                                     c(a10, j10, inputStream, o5Var);
                                     return new g5(h10);
                                 }
-                                return new d5(o5Var.B());
+                                return new d5(o5Var.y());
                             }
                             throw new f5("Tags are currently unsupported");
                         }
-                        long l10 = o5Var.l();
-                        if (l10 <= 1000) {
-                            c(a10, l10, inputStream, o5Var);
-                            int i11 = (int) l10;
+                        long k10 = o5Var.k();
+                        if (k10 <= 1000) {
+                            c(a10, k10, inputStream, o5Var);
+                            int i11 = (int) k10;
                             h5[] h5VarArr = new h5[i11];
                             l5 l5Var = null;
                             int i12 = 0;
-                            while (i12 < l10) {
+                            while (i12 < k10) {
                                 l5 b11 = b(inputStream, o5Var);
                                 if (l5Var != null && b11.compareTo(l5Var) <= 0) {
                                     throw new b5(String.format("Keys in CBOR Map not in strictly ascending natural order:\nPrevious key: %s\nCurrent key: %s", l5Var.toString(), b11.toString()));

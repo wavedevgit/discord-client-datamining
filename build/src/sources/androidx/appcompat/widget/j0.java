@@ -44,49 +44,49 @@ public class j0 implements k.e {
     PopupWindow Q;
 
     /* renamed from: d  reason: collision with root package name */
-    private Context f1721d;
+    private Context f1833d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ListAdapter f1722e;
+    private ListAdapter f1834e;
 
     /* renamed from: i  reason: collision with root package name */
-    f0 f1723i;
+    f0 f1835i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f1724o;
+    private int f1836o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f1725p;
+    private int f1837p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f1726q;
+    private int f1838q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f1727r;
+    private int f1839r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f1728s;
+    private int f1840s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f1729t;
+    private boolean f1841t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f1730u;
+    private boolean f1842u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f1731v;
+    private boolean f1843v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f1732w;
+    private int f1844w;
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f1733x;
+    private boolean f1845x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f1734y;
+    private boolean f1846y;
 
     /* renamed from: z  reason: collision with root package name */
-    int f1735z;
+    int f1847z;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -112,7 +112,7 @@ public class j0 implements k.e {
         @Override // android.widget.AdapterView.OnItemSelectedListener
         public void onItemSelected(AdapterView adapterView, View view, int i10, long j10) {
             f0 f0Var;
-            if (i10 != -1 && (f0Var = j0.this.f1723i) != null) {
+            if (i10 != -1 && (f0Var = j0.this.f1835i) != null) {
                 f0Var.setListSelectionHidden(false);
             }
         }
@@ -226,11 +226,11 @@ public class j0 implements k.e {
 
         @Override // java.lang.Runnable
         public void run() {
-            f0 f0Var = j0.this.f1723i;
-            if (f0Var != null && f0Var.isAttachedToWindow() && j0.this.f1723i.getCount() > j0.this.f1723i.getChildCount()) {
-                int childCount = j0.this.f1723i.getChildCount();
+            f0 f0Var = j0.this.f1835i;
+            if (f0Var != null && f0Var.isAttachedToWindow() && j0.this.f1835i.getCount() > j0.this.f1835i.getChildCount()) {
+                int childCount = j0.this.f1835i.getChildCount();
                 j0 j0Var = j0.this;
-                if (childCount <= j0Var.f1735z) {
+                if (childCount <= j0Var.f1847z) {
                     j0Var.Q.setInputMethodMode(2);
                     j0.this.show();
                 }
@@ -291,26 +291,26 @@ public class j0 implements k.e {
         int makeMeasureSpec;
         int i12;
         boolean z10 = true;
-        if (this.f1723i == null) {
-            Context context = this.f1721d;
+        if (this.f1835i == null) {
+            Context context = this.f1833d;
             this.L = new a();
             f0 q10 = q(context, !this.P);
-            this.f1723i = q10;
+            this.f1835i = q10;
             Drawable drawable = this.E;
             if (drawable != null) {
                 q10.setSelector(drawable);
             }
-            this.f1723i.setAdapter(this.f1722e);
-            this.f1723i.setOnItemClickListener(this.F);
-            this.f1723i.setFocusable(true);
-            this.f1723i.setFocusableInTouchMode(true);
-            this.f1723i.setOnItemSelectedListener(new b());
-            this.f1723i.setOnScrollListener(this.J);
+            this.f1835i.setAdapter(this.f1834e);
+            this.f1835i.setOnItemClickListener(this.F);
+            this.f1835i.setFocusable(true);
+            this.f1835i.setFocusableInTouchMode(true);
+            this.f1835i.setOnItemSelectedListener(new b());
+            this.f1835i.setOnScrollListener(this.J);
             AdapterView.OnItemSelectedListener onItemSelectedListener = this.G;
             if (onItemSelectedListener != null) {
-                this.f1723i.setOnItemSelectedListener(onItemSelectedListener);
+                this.f1835i.setOnItemSelectedListener(onItemSelectedListener);
             }
-            f0 f0Var = this.f1723i;
+            f0 f0Var = this.f1835i;
             View view = this.A;
             if (view != null) {
                 LinearLayout linearLayout = new LinearLayout(context);
@@ -328,7 +328,7 @@ public class j0 implements k.e {
                     linearLayout.addView(view);
                     linearLayout.addView(f0Var, layoutParams);
                 }
-                int i14 = this.f1725p;
+                int i14 = this.f1837p;
                 if (i14 >= 0) {
                     i12 = Integer.MIN_VALUE;
                 } else {
@@ -359,8 +359,8 @@ public class j0 implements k.e {
             Rect rect = this.N;
             int i15 = rect.top;
             i11 = rect.bottom + i15;
-            if (!this.f1729t) {
-                this.f1727r = -i15;
+            if (!this.f1841t) {
+                this.f1839r = -i15;
             }
         } else {
             this.N.setEmpty();
@@ -369,25 +369,25 @@ public class j0 implements k.e {
         if (this.Q.getInputMethodMode() != 2) {
             z10 = false;
         }
-        int s10 = s(r(), this.f1727r, z10);
-        if (!this.f1733x && this.f1724o != -1) {
-            int i16 = this.f1725p;
+        int s10 = s(r(), this.f1839r, z10);
+        if (!this.f1845x && this.f1836o != -1) {
+            int i16 = this.f1837p;
             if (i16 != -2) {
                 if (i16 != -1) {
                     makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(i16, 1073741824);
                 } else {
-                    int i17 = this.f1721d.getResources().getDisplayMetrics().widthPixels;
+                    int i17 = this.f1833d.getResources().getDisplayMetrics().widthPixels;
                     Rect rect2 = this.N;
                     makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(i17 - (rect2.left + rect2.right), 1073741824);
                 }
             } else {
-                int i18 = this.f1721d.getResources().getDisplayMetrics().widthPixels;
+                int i18 = this.f1833d.getResources().getDisplayMetrics().widthPixels;
                 Rect rect3 = this.N;
                 makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(i18 - (rect3.left + rect3.right), Integer.MIN_VALUE);
             }
-            int d10 = this.f1723i.d(makeMeasureSpec, 0, -1, s10 - i10, -1);
+            int d10 = this.f1835i.d(makeMeasureSpec, 0, -1, s10 - i10, -1);
             if (d10 > 0) {
-                i10 += i11 + this.f1723i.getPaddingTop() + this.f1723i.getPaddingBottom();
+                i10 += i11 + this.f1835i.getPaddingTop() + this.f1835i.getPaddingBottom();
             }
             return d10 + i10;
         }
@@ -411,14 +411,14 @@ public class j0 implements k.e {
         if (background != null) {
             background.getPadding(this.N);
             Rect rect = this.N;
-            this.f1725p = rect.left + rect.right + i10;
+            this.f1837p = rect.left + rect.right + i10;
             return;
         }
         P(i10);
     }
 
     public void E(int i10) {
-        this.f1732w = i10;
+        this.f1844w = i10;
     }
 
     public void F(Rect rect) {
@@ -453,8 +453,8 @@ public class j0 implements k.e {
     }
 
     public void L(boolean z10) {
-        this.f1731v = true;
-        this.f1730u = z10;
+        this.f1843v = true;
+        this.f1842u = z10;
     }
 
     public void N(int i10) {
@@ -462,7 +462,7 @@ public class j0 implements k.e {
     }
 
     public void O(int i10) {
-        f0 f0Var = this.f1723i;
+        f0 f0Var = this.f1835i;
         if (isShowing() && f0Var != null) {
             f0Var.setListSelectionHidden(false);
             f0Var.setSelection(i10);
@@ -473,7 +473,7 @@ public class j0 implements k.e {
     }
 
     public void P(int i10) {
-        this.f1725p = i10;
+        this.f1837p = i10;
     }
 
     public void b(Drawable drawable) {
@@ -481,11 +481,11 @@ public class j0 implements k.e {
     }
 
     public int c() {
-        return this.f1726q;
+        return this.f1838q;
     }
 
     public void d(int i10) {
-        this.f1726q = i10;
+        this.f1838q = i10;
     }
 
     @Override // k.e
@@ -493,7 +493,7 @@ public class j0 implements k.e {
         this.Q.dismiss();
         A();
         this.Q.setContentView(null);
-        this.f1723i = null;
+        this.f1835i = null;
         this.M.removeCallbacks(this.H);
     }
 
@@ -502,8 +502,8 @@ public class j0 implements k.e {
     }
 
     public void h(int i10) {
-        this.f1727r = i10;
-        this.f1729t = true;
+        this.f1839r = i10;
+        this.f1841t = true;
     }
 
     @Override // k.e
@@ -512,10 +512,10 @@ public class j0 implements k.e {
     }
 
     public int k() {
-        if (!this.f1729t) {
+        if (!this.f1841t) {
             return 0;
         }
-        return this.f1727r;
+        return this.f1839r;
     }
 
     public void l(ListAdapter listAdapter) {
@@ -523,28 +523,28 @@ public class j0 implements k.e {
         if (dataSetObserver == null) {
             this.C = new f();
         } else {
-            ListAdapter listAdapter2 = this.f1722e;
+            ListAdapter listAdapter2 = this.f1834e;
             if (listAdapter2 != null) {
                 listAdapter2.unregisterDataSetObserver(dataSetObserver);
             }
         }
-        this.f1722e = listAdapter;
+        this.f1834e = listAdapter;
         if (listAdapter != null) {
             listAdapter.registerDataSetObserver(this.C);
         }
-        f0 f0Var = this.f1723i;
+        f0 f0Var = this.f1835i;
         if (f0Var != null) {
-            f0Var.setAdapter(this.f1722e);
+            f0Var.setAdapter(this.f1834e);
         }
     }
 
     @Override // k.e
     public ListView n() {
-        return this.f1723i;
+        return this.f1835i;
     }
 
     public void p() {
-        f0 f0Var = this.f1723i;
+        f0 f0Var = this.f1835i;
         if (f0Var != null) {
             f0Var.setListSelectionHidden(true);
             f0Var.requestLayout();
@@ -567,24 +567,24 @@ public class j0 implements k.e {
         int i13;
         int o10 = o();
         boolean y10 = y();
-        androidx.core.widget.i.b(this.Q, this.f1728s);
+        androidx.core.widget.i.b(this.Q, this.f1840s);
         boolean z10 = true;
         if (this.Q.isShowing()) {
             if (r().isAttachedToWindow()) {
-                int i14 = this.f1725p;
+                int i14 = this.f1837p;
                 if (i14 == -1) {
                     i14 = -1;
                 } else if (i14 == -2) {
                     i14 = r().getWidth();
                 }
-                int i15 = this.f1724o;
+                int i15 = this.f1836o;
                 if (i15 == -1) {
                     if (!y10) {
                         o10 = -1;
                     }
                     if (y10) {
                         PopupWindow popupWindow = this.Q;
-                        if (this.f1725p == -1) {
+                        if (this.f1837p == -1) {
                             i13 = -1;
                         } else {
                             i13 = 0;
@@ -593,7 +593,7 @@ public class j0 implements k.e {
                         this.Q.setHeight(0);
                     } else {
                         PopupWindow popupWindow2 = this.Q;
-                        if (this.f1725p == -1) {
+                        if (this.f1837p == -1) {
                             i12 = -1;
                         } else {
                             i12 = 0;
@@ -605,14 +605,14 @@ public class j0 implements k.e {
                     o10 = i15;
                 }
                 PopupWindow popupWindow3 = this.Q;
-                if (this.f1734y || this.f1733x) {
+                if (this.f1846y || this.f1845x) {
                     z10 = false;
                 }
                 popupWindow3.setOutsideTouchable(z10);
                 PopupWindow popupWindow4 = this.Q;
                 View r10 = r();
-                int i16 = this.f1726q;
-                int i17 = this.f1727r;
+                int i16 = this.f1838q;
+                int i17 = this.f1839r;
                 if (i14 < 0) {
                     i10 = -1;
                 } else {
@@ -628,13 +628,13 @@ public class j0 implements k.e {
             }
             return;
         }
-        int i18 = this.f1725p;
+        int i18 = this.f1837p;
         if (i18 == -1) {
             i18 = -1;
         } else if (i18 == -2) {
             i18 = r().getWidth();
         }
-        int i19 = this.f1724o;
+        int i19 = this.f1836o;
         if (i19 == -1) {
             o10 = -1;
         } else if (i19 != -2) {
@@ -644,13 +644,13 @@ public class j0 implements k.e {
         this.Q.setHeight(o10);
         M(true);
         PopupWindow popupWindow5 = this.Q;
-        if (this.f1734y || this.f1733x) {
+        if (this.f1846y || this.f1845x) {
             z10 = false;
         }
         popupWindow5.setOutsideTouchable(z10);
         this.Q.setTouchInterceptor(this.I);
-        if (this.f1731v) {
-            androidx.core.widget.i.a(this.Q, this.f1730u);
+        if (this.f1843v) {
+            androidx.core.widget.i.a(this.Q, this.f1842u);
         }
         if (Build.VERSION.SDK_INT <= 28) {
             Method method = S;
@@ -664,9 +664,9 @@ public class j0 implements k.e {
         } else {
             d.a(this.Q, this.O);
         }
-        androidx.core.widget.i.c(this.Q, r(), this.f1726q, this.f1727r, this.f1732w);
-        this.f1723i.setSelection(-1);
-        if (!this.P || this.f1723i.isInTouchMode()) {
+        androidx.core.widget.i.c(this.Q, r(), this.f1838q, this.f1839r, this.f1844w);
+        this.f1835i.setSelection(-1);
+        if (!this.P || this.f1835i.isInTouchMode()) {
             p();
         }
         if (!this.P) {
@@ -678,32 +678,32 @@ public class j0 implements k.e {
         if (!isShowing()) {
             return null;
         }
-        return this.f1723i.getSelectedItem();
+        return this.f1835i.getSelectedItem();
     }
 
     public long u() {
         if (!isShowing()) {
             return Long.MIN_VALUE;
         }
-        return this.f1723i.getSelectedItemId();
+        return this.f1835i.getSelectedItemId();
     }
 
     public int v() {
         if (!isShowing()) {
             return -1;
         }
-        return this.f1723i.getSelectedItemPosition();
+        return this.f1835i.getSelectedItemPosition();
     }
 
     public View w() {
         if (!isShowing()) {
             return null;
         }
-        return this.f1723i.getSelectedView();
+        return this.f1835i.getSelectedView();
     }
 
     public int x() {
-        return this.f1725p;
+        return this.f1837p;
     }
 
     public boolean y() {
@@ -722,27 +722,27 @@ public class j0 implements k.e {
     }
 
     public j0(Context context, AttributeSet attributeSet, int i10, int i11) {
-        this.f1724o = -2;
-        this.f1725p = -2;
-        this.f1728s = RNCWebViewManager.COMMAND_CLEAR_HISTORY;
-        this.f1732w = 0;
-        this.f1733x = false;
-        this.f1734y = false;
-        this.f1735z = Integer.MAX_VALUE;
+        this.f1836o = -2;
+        this.f1837p = -2;
+        this.f1840s = RNCWebViewManager.COMMAND_CLEAR_HISTORY;
+        this.f1844w = 0;
+        this.f1845x = false;
+        this.f1846y = false;
+        this.f1847z = Integer.MAX_VALUE;
         this.B = 0;
         this.H = new i();
         this.I = new h();
         this.J = new g();
         this.K = new e();
         this.N = new Rect();
-        this.f1721d = context;
+        this.f1833d = context;
         this.M = new Handler(context.getMainLooper());
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23067l1, i10, i11);
-        this.f1726q = obtainStyledAttributes.getDimensionPixelOffset(f.j.f23072m1, 0);
-        int dimensionPixelOffset = obtainStyledAttributes.getDimensionPixelOffset(f.j.f23077n1, 0);
-        this.f1727r = dimensionPixelOffset;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f22092l1, i10, i11);
+        this.f1838q = obtainStyledAttributes.getDimensionPixelOffset(f.j.f22097m1, 0);
+        int dimensionPixelOffset = obtainStyledAttributes.getDimensionPixelOffset(f.j.f22102n1, 0);
+        this.f1839r = dimensionPixelOffset;
         if (dimensionPixelOffset != 0) {
-            this.f1729t = true;
+            this.f1841t = true;
         }
         obtainStyledAttributes.recycle();
         o oVar = new o(context, attributeSet, i10, i11);

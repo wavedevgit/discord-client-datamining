@@ -1,68 +1,63 @@
 package pu;
 
-import java.util.List;
-import java.util.Map;
-import kotlin.collections.o0;
+import java.io.IOException;
 import kotlin.jvm.internal.Intrinsics;
-import lr.v;
-import pu.a;
+import okio.Buffer;
+import okio.Source;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g implements nu.a, a {
+public final class g extends ou.k {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final g f46632a = new g();
+    /* renamed from: d  reason: collision with root package name */
+    private final long f46657d;
 
-    private g() {
+    /* renamed from: e  reason: collision with root package name */
+    private final boolean f46658e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private long f46659i;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public g(Source delegate, long j10, boolean z10) {
+        super(delegate);
+        Intrinsics.checkNotNullParameter(delegate, "delegate");
+        this.f46657d = j10;
+        this.f46658e = z10;
     }
 
-    private final Object f(b bVar, Object obj, h hVar) {
-        List<Object> b10 = bVar.b();
-        if (b10 != null) {
-            Object obj2 = obj;
-            for (Object obj3 : b10) {
-                obj2 = f46632a.h(hVar, obj2, obj3, bVar.a());
-                if (obj2 == null) {
-                    return bVar.c();
-                }
+    private final void a(Buffer buffer, long j10) {
+        Buffer buffer2 = new Buffer();
+        buffer2.z0(buffer);
+        buffer.u0(buffer2, j10);
+        buffer2.k();
+    }
+
+    @Override // ou.k, okio.Source
+    public long read(Buffer sink, long j10) {
+        Intrinsics.checkNotNullParameter(sink, "sink");
+        long j11 = this.f46659i;
+        long j12 = this.f46657d;
+        if (j11 > j12) {
+            j10 = 0;
+        } else if (this.f46658e) {
+            long j13 = j12 - j11;
+            if (j13 == 0) {
+                return -1L;
             }
-            if (obj2 != null) {
-                return obj2;
+            j10 = Math.min(j10, j13);
+        }
+        long read = super.read(sink, j10);
+        int i10 = (read > (-1L) ? 1 : (read == (-1L) ? 0 : -1));
+        if (i10 != 0) {
+            this.f46659i += read;
+        }
+        long j14 = this.f46659i;
+        long j15 = this.f46657d;
+        if ((j14 < j15 && i10 == 0) || j14 > j15) {
+            if (read > 0 && j14 > j15) {
+                a(sink, sink.size() - (this.f46659i - this.f46657d));
             }
+            throw new IOException("expected " + this.f46657d + " bytes but got " + this.f46659i);
         }
-        return obj;
-    }
-
-    private final Object h(h hVar, Object obj, Object obj2, Map map) {
-        if (map != null) {
-            return hVar.a(map, f46632a.i(obj, obj2));
-        }
-        return null;
-    }
-
-    private final Map i(Object obj, Object obj2) {
-        return o0.m(v.a("accumulator", obj), v.a("current", obj2));
-    }
-
-    @Override // pu.a
-    public Object a(Map map, List list) {
-        return a.C0565a.b(this, map, list);
-    }
-
-    @Override // pu.a
-    public b c(List list, Object obj, h hVar) {
-        return a.C0565a.a(this, list, obj, hVar);
-    }
-
-    @Override // nu.a
-    public Object d(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        List c10 = sv.a.c(obj);
-        g gVar = f46632a;
-        return gVar.f(gVar.c(c10, obj2, evaluator), sv.c.c(c10), evaluator);
-    }
-
-    @Override // rv.a
-    public List e(List list, Object obj, h hVar) {
-        return a.C0565a.c(this, list, obj, hVar);
+        return read;
     }
 }

@@ -19,7 +19,7 @@ import gf.q;
 public class GoogleApiActivity extends Activity implements DialogInterface.OnCancelListener {
 
     /* renamed from: d  reason: collision with root package name */
-    protected int f13382d = 0;
+    protected int f13775d = 0;
 
     public static Intent a(Context context, PendingIntent pendingIntent, int i10, boolean z10) {
         Intent intent = new Intent(context, GoogleApiActivity.class);
@@ -47,7 +47,7 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
                 googleApiActivity = this;
                 try {
                     googleApiActivity.startIntentSenderForResult(pendingIntent.getIntentSender(), 1, null, 0, 0, 0);
-                    googleApiActivity.f13382d = 1;
+                    googleApiActivity.f13775d = 1;
                 } catch (ActivityNotFoundException e10) {
                     e = e10;
                     if (extras.getBoolean("notify_manager", true)) {
@@ -59,7 +59,7 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
                         }
                         Log.e("GoogleApiActivity", str, e);
                     }
-                    googleApiActivity.f13382d = 1;
+                    googleApiActivity.f13775d = 1;
                     finish();
                 } catch (IntentSender.SendIntentException e11) {
                     e = e11;
@@ -74,7 +74,7 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
             }
         } else {
             f.m().n(this, ((Integer) q.l(num)).intValue(), 2, this);
-            this.f13382d = 1;
+            this.f13775d = 1;
         }
     }
 
@@ -83,7 +83,7 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
         super.onActivityResult(i10, i11, intent);
         if (i10 == 1) {
             boolean booleanExtra = getIntent().getBooleanExtra("notify_manager", true);
-            this.f13382d = 0;
+            this.f13775d = 0;
             setResult(i11, intent);
             if (booleanExtra) {
                 e u10 = e.u(this);
@@ -96,7 +96,7 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
                 }
             }
         } else if (i10 == 2) {
-            this.f13382d = 0;
+            this.f13775d = 0;
             setResult(i11, intent);
         }
         finish();
@@ -104,7 +104,7 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
 
     @Override // android.content.DialogInterface.OnCancelListener
     public final void onCancel(DialogInterface dialogInterface) {
-        this.f13382d = 0;
+        this.f13775d = 0;
         setResult(0);
         finish();
     }
@@ -113,16 +113,16 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if (bundle != null) {
-            this.f13382d = bundle.getInt("resolution");
+            this.f13775d = bundle.getInt("resolution");
         }
-        if (this.f13382d != 1) {
+        if (this.f13775d != 1) {
             b();
         }
     }
 
     @Override // android.app.Activity
     protected final void onSaveInstanceState(Bundle bundle) {
-        bundle.putInt("resolution", this.f13382d);
+        bundle.putInt("resolution", this.f13775d);
         super.onSaveInstanceState(bundle);
     }
 }

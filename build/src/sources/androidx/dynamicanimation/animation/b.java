@@ -11,82 +11,82 @@ import java.util.ArrayList;
 public abstract class b implements a.b {
 
     /* renamed from: m  reason: collision with root package name */
-    public static final s f3897m = new g("translationX");
+    public static final s f4009m = new g("translationX");
 
     /* renamed from: n  reason: collision with root package name */
-    public static final s f3898n = new h("translationY");
+    public static final s f4010n = new h("translationY");
 
     /* renamed from: o  reason: collision with root package name */
-    public static final s f3899o = new i("translationZ");
+    public static final s f4011o = new i("translationZ");
 
     /* renamed from: p  reason: collision with root package name */
-    public static final s f3900p = new j(ViewProps.SCALE_X);
+    public static final s f4012p = new j(ViewProps.SCALE_X);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final s f3901q = new k(ViewProps.SCALE_Y);
+    public static final s f4013q = new k(ViewProps.SCALE_Y);
 
     /* renamed from: r  reason: collision with root package name */
-    public static final s f3902r = new l(ViewProps.ROTATION);
+    public static final s f4014r = new l(ViewProps.ROTATION);
 
     /* renamed from: s  reason: collision with root package name */
-    public static final s f3903s = new m("rotationX");
+    public static final s f4015s = new m("rotationX");
 
     /* renamed from: t  reason: collision with root package name */
-    public static final s f3904t = new n("rotationY");
+    public static final s f4016t = new n("rotationY");
 
     /* renamed from: u  reason: collision with root package name */
-    public static final s f3905u = new o("x");
+    public static final s f4017u = new o("x");
 
     /* renamed from: v  reason: collision with root package name */
-    public static final s f3906v = new a("y");
+    public static final s f4018v = new a("y");
 
     /* renamed from: w  reason: collision with root package name */
-    public static final s f3907w = new C0048b("z");
+    public static final s f4019w = new C0049b("z");
 
     /* renamed from: x  reason: collision with root package name */
-    public static final s f3908x = new c("alpha");
+    public static final s f4020x = new c("alpha");
 
     /* renamed from: y  reason: collision with root package name */
-    public static final s f3909y = new d("scrollX");
+    public static final s f4021y = new d("scrollX");
 
     /* renamed from: z  reason: collision with root package name */
-    public static final s f3910z = new e("scrollY");
+    public static final s f4022z = new e("scrollY");
 
     /* renamed from: a  reason: collision with root package name */
-    float f3911a;
+    float f4023a;
 
     /* renamed from: b  reason: collision with root package name */
-    float f3912b;
+    float f4024b;
 
     /* renamed from: c  reason: collision with root package name */
-    boolean f3913c;
+    boolean f4025c;
 
     /* renamed from: d  reason: collision with root package name */
-    final Object f3914d;
+    final Object f4026d;
 
     /* renamed from: e  reason: collision with root package name */
-    final b3.b f3915e;
+    final b3.b f4027e;
 
     /* renamed from: f  reason: collision with root package name */
-    boolean f3916f;
+    boolean f4028f;
 
     /* renamed from: g  reason: collision with root package name */
-    float f3917g;
+    float f4029g;
 
     /* renamed from: h  reason: collision with root package name */
-    float f3918h;
+    float f4030h;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f3919i;
+    private long f4031i;
 
     /* renamed from: j  reason: collision with root package name */
-    private float f3920j;
+    private float f4032j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final ArrayList f3921k;
+    private final ArrayList f4033k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final ArrayList f3922l;
+    private final ArrayList f4034l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a extends s {
@@ -109,8 +109,8 @@ public abstract class b implements a.b {
 
     /* renamed from: androidx.dynamicanimation.animation.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    static class C0048b extends s {
-        C0048b(String str) {
+    static class C0049b extends s {
+        C0049b(String str) {
             super(str, null);
         }
 
@@ -188,22 +188,22 @@ public abstract class b implements a.b {
     class f extends b3.b {
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ b3.c f3923b;
+        final /* synthetic */ b3.c f4035b;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         f(String str, b3.c cVar) {
             super(str);
-            this.f3923b = cVar;
+            this.f4035b = cVar;
         }
 
         @Override // b3.b
         public float a(Object obj) {
-            return this.f3923b.a();
+            return this.f4035b.a();
         }
 
         @Override // b3.b
         public void b(Object obj, float f10) {
-            this.f3923b.b(f10);
+            this.f4035b.b(f10);
         }
     }
 
@@ -382,10 +382,10 @@ public abstract class b implements a.b {
     static class p {
 
         /* renamed from: a  reason: collision with root package name */
-        float f3925a;
+        float f4037a;
 
         /* renamed from: b  reason: collision with root package name */
-        float f3926b;
+        float f4038b;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -411,35 +411,35 @@ public abstract class b implements a.b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(b3.c cVar) {
-        this.f3911a = 0.0f;
-        this.f3912b = Float.MAX_VALUE;
-        this.f3913c = false;
-        this.f3916f = false;
-        this.f3917g = Float.MAX_VALUE;
-        this.f3918h = -Float.MAX_VALUE;
-        this.f3919i = 0L;
-        this.f3921k = new ArrayList();
-        this.f3922l = new ArrayList();
-        this.f3914d = null;
-        this.f3915e = new f("FloatValueHolder", cVar);
-        this.f3920j = 1.0f;
+        this.f4023a = 0.0f;
+        this.f4024b = Float.MAX_VALUE;
+        this.f4025c = false;
+        this.f4028f = false;
+        this.f4029g = Float.MAX_VALUE;
+        this.f4030h = -Float.MAX_VALUE;
+        this.f4031i = 0L;
+        this.f4033k = new ArrayList();
+        this.f4034l = new ArrayList();
+        this.f4026d = null;
+        this.f4027e = new f("FloatValueHolder", cVar);
+        this.f4032j = 1.0f;
     }
 
     private void e(boolean z10) {
-        this.f3916f = false;
+        this.f4028f = false;
         androidx.dynamicanimation.animation.a.d().g(this);
-        this.f3919i = 0L;
-        this.f3913c = false;
-        for (int i10 = 0; i10 < this.f3921k.size(); i10++) {
-            if (this.f3921k.get(i10) != null) {
-                ((q) this.f3921k.get(i10)).a(this, z10, this.f3912b, this.f3911a);
+        this.f4031i = 0L;
+        this.f4025c = false;
+        for (int i10 = 0; i10 < this.f4033k.size(); i10++) {
+            if (this.f4033k.get(i10) != null) {
+                ((q) this.f4033k.get(i10)).a(this, z10, this.f4024b, this.f4023a);
             }
         }
-        i(this.f3921k);
+        i(this.f4033k);
     }
 
     private float f() {
-        return this.f3915e.a(this.f3914d);
+        return this.f4027e.a(this.f4026d);
     }
 
     private static void i(ArrayList arrayList) {
@@ -451,13 +451,13 @@ public abstract class b implements a.b {
     }
 
     private void r() {
-        if (!this.f3916f) {
-            this.f3916f = true;
-            if (!this.f3913c) {
-                this.f3912b = f();
+        if (!this.f4028f) {
+            this.f4028f = true;
+            if (!this.f4025c) {
+                this.f4024b = f();
             }
-            float f10 = this.f3912b;
-            if (f10 <= this.f3917g && f10 >= this.f3918h) {
+            float f10 = this.f4024b;
+            if (f10 <= this.f4029g && f10 >= this.f4030h) {
                 androidx.dynamicanimation.animation.a.d().a(this, 0L);
                 return;
             }
@@ -467,18 +467,18 @@ public abstract class b implements a.b {
 
     @Override // androidx.dynamicanimation.animation.a.b
     public boolean a(long j10) {
-        long j11 = this.f3919i;
+        long j11 = this.f4031i;
         if (j11 == 0) {
-            this.f3919i = j10;
-            m(this.f3912b);
+            this.f4031i = j10;
+            m(this.f4024b);
             return false;
         }
-        this.f3919i = j10;
+        this.f4031i = j10;
         boolean s10 = s(j10 - j11);
-        float min = Math.min(this.f3912b, this.f3917g);
-        this.f3912b = min;
-        float max = Math.max(min, this.f3918h);
-        this.f3912b = max;
+        float min = Math.min(this.f4024b, this.f4029g);
+        this.f4024b = min;
+        float max = Math.max(min, this.f4030h);
+        this.f4024b = max;
         m(max);
         if (s10) {
             e(false);
@@ -487,16 +487,16 @@ public abstract class b implements a.b {
     }
 
     public b b(q qVar) {
-        if (!this.f3921k.contains(qVar)) {
-            this.f3921k.add(qVar);
+        if (!this.f4033k.contains(qVar)) {
+            this.f4033k.add(qVar);
         }
         return this;
     }
 
     public b c(r rVar) {
         if (!h()) {
-            if (!this.f3922l.contains(rVar)) {
-                this.f3922l.add(rVar);
+            if (!this.f4034l.contains(rVar)) {
+                this.f4034l.add(rVar);
             }
             return this;
         }
@@ -505,7 +505,7 @@ public abstract class b implements a.b {
 
     public void d() {
         if (Looper.myLooper() == Looper.getMainLooper()) {
-            if (this.f3916f) {
+            if (this.f4028f) {
                 e(true);
                 return;
             }
@@ -516,26 +516,26 @@ public abstract class b implements a.b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float g() {
-        return this.f3920j * 0.75f;
+        return this.f4032j * 0.75f;
     }
 
     public boolean h() {
-        return this.f3916f;
+        return this.f4028f;
     }
 
     public b j(float f10) {
-        this.f3917g = f10;
+        this.f4029g = f10;
         return this;
     }
 
     public b k(float f10) {
-        this.f3918h = f10;
+        this.f4030h = f10;
         return this;
     }
 
     public b l(float f10) {
         if (f10 > 0.0f) {
-            this.f3920j = f10;
+            this.f4032j = f10;
             p(f10 * 0.75f);
             return this;
         }
@@ -543,23 +543,23 @@ public abstract class b implements a.b {
     }
 
     void m(float f10) {
-        this.f3915e.b(this.f3914d, f10);
-        for (int i10 = 0; i10 < this.f3922l.size(); i10++) {
-            if (this.f3922l.get(i10) != null) {
-                ((r) this.f3922l.get(i10)).b(this, this.f3912b, this.f3911a);
+        this.f4027e.b(this.f4026d, f10);
+        for (int i10 = 0; i10 < this.f4034l.size(); i10++) {
+            if (this.f4034l.get(i10) != null) {
+                ((r) this.f4034l.get(i10)).b(this, this.f4024b, this.f4023a);
             }
         }
-        i(this.f3922l);
+        i(this.f4034l);
     }
 
     public b n(float f10) {
-        this.f3912b = f10;
-        this.f3913c = true;
+        this.f4024b = f10;
+        this.f4025c = true;
         return this;
     }
 
     public b o(float f10) {
-        this.f3911a = f10;
+        this.f4023a = f10;
         return this;
     }
 
@@ -567,7 +567,7 @@ public abstract class b implements a.b {
 
     public void q() {
         if (Looper.myLooper() == Looper.getMainLooper()) {
-            if (!this.f3916f) {
+            if (!this.f4028f) {
                 r();
                 return;
             }
@@ -580,29 +580,29 @@ public abstract class b implements a.b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Object obj, b3.b bVar) {
-        this.f3911a = 0.0f;
-        this.f3912b = Float.MAX_VALUE;
-        this.f3913c = false;
-        this.f3916f = false;
-        this.f3917g = Float.MAX_VALUE;
-        this.f3918h = -Float.MAX_VALUE;
-        this.f3919i = 0L;
-        this.f3921k = new ArrayList();
-        this.f3922l = new ArrayList();
-        this.f3914d = obj;
-        this.f3915e = bVar;
-        if (bVar != f3902r && bVar != f3903s && bVar != f3904t) {
-            if (bVar == f3908x) {
-                this.f3920j = 0.00390625f;
+        this.f4023a = 0.0f;
+        this.f4024b = Float.MAX_VALUE;
+        this.f4025c = false;
+        this.f4028f = false;
+        this.f4029g = Float.MAX_VALUE;
+        this.f4030h = -Float.MAX_VALUE;
+        this.f4031i = 0L;
+        this.f4033k = new ArrayList();
+        this.f4034l = new ArrayList();
+        this.f4026d = obj;
+        this.f4027e = bVar;
+        if (bVar != f4014r && bVar != f4015s && bVar != f4016t) {
+            if (bVar == f4020x) {
+                this.f4032j = 0.00390625f;
                 return;
-            } else if (bVar != f3900p && bVar != f3901q) {
-                this.f3920j = 1.0f;
+            } else if (bVar != f4012p && bVar != f4013q) {
+                this.f4032j = 1.0f;
                 return;
             } else {
-                this.f3920j = 0.00390625f;
+                this.f4032j = 0.00390625f;
                 return;
             }
         }
-        this.f3920j = 0.1f;
+        this.f4032j = 0.1f;
     }
 }

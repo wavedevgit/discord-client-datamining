@@ -1,88 +1,45 @@
 package pu;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.FunctionReferenceImpl;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Iterator;
+import kotlin.collections.ArrayDeque;
 import kotlin.jvm.internal.Intrinsics;
-import pu.f;
-import wu.d;
+import ou.c0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements nu.a, f, wu.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final c f46629a = new c();
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
-        a(Object obj) {
-            super(2, obj, c.class, "filterOrEmptyList", "filterOrEmptyList(Loperations/array/ArrayOperationInputData;LLogicEvaluator;)Ljava/util/List;", 0);
+public abstract class c {
+    public static final void a(ou.h hVar, c0 dir, boolean z10) {
+        Intrinsics.checkNotNullParameter(hVar, "<this>");
+        Intrinsics.checkNotNullParameter(dir, "dir");
+        ArrayDeque arrayDeque = new ArrayDeque();
+        for (c0 c0Var = dir; c0Var != null && !hVar.j(c0Var); c0Var = c0Var.i()) {
+            arrayDeque.addFirst(c0Var);
         }
-
-        @Override // kotlin.jvm.functions.Function2
-        /* renamed from: a */
-        public final List invoke(b p02, h p12) {
-            Intrinsics.checkNotNullParameter(p02, "p0");
-            Intrinsics.checkNotNullParameter(p12, "p1");
-            return ((c) this.receiver).h(p02, p12);
+        if (z10 && arrayDeque.isEmpty()) {
+            throw new IOException(dir + " already exists.");
+        }
+        Iterator<E> it = arrayDeque.iterator();
+        while (it.hasNext()) {
+            hVar.f((c0) it.next());
         }
     }
 
-    private c() {
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final List h(b bVar, h hVar) {
-        List b10 = bVar.b();
-        if (b10 == null) {
-            b10 = CollectionsKt.l();
+    public static final boolean b(ou.h hVar, c0 path) {
+        Intrinsics.checkNotNullParameter(hVar, "<this>");
+        Intrinsics.checkNotNullParameter(path, "path");
+        if (hVar.m(path) != null) {
+            return true;
         }
-        ArrayList arrayList = new ArrayList();
-        for (Object obj : b10) {
-            if (f46629a.i(hVar, obj, bVar.a(), bVar.c())) {
-                arrayList.add(obj);
-            }
+        return false;
+    }
+
+    public static final ou.g c(ou.h hVar, c0 path) {
+        Intrinsics.checkNotNullParameter(hVar, "<this>");
+        Intrinsics.checkNotNullParameter(path, "path");
+        ou.g m10 = hVar.m(path);
+        if (m10 != null) {
+            return m10;
         }
-        return arrayList;
-    }
-
-    private final boolean i(h hVar, Object obj, Map map, Object obj2) {
-        Object a10;
-        if (map != null && (a10 = hVar.a(map, obj)) != null) {
-            obj2 = a10;
-        }
-        return j(obj2);
-    }
-
-    @Override // pu.a
-    public Object a(Map map, List list) {
-        return f.a.b(this, map, list);
-    }
-
-    @Override // pu.f
-    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
-        return f.a.c(this, obj, obj2, hVar, function2);
-    }
-
-    @Override // pu.a
-    public b c(List list, Object obj, h hVar) {
-        return f.a.a(this, list, obj, hVar);
-    }
-
-    @Override // nu.a
-    public Object d(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        return b(obj, obj2, evaluator, new a(this));
-    }
-
-    @Override // rv.a
-    public List e(List list, Object obj, h hVar) {
-        return f.a.d(this, list, obj, hVar);
-    }
-
-    public boolean j(Object obj) {
-        return d.a.a(this, obj);
+        throw new FileNotFoundException("no such file: " + path);
     }
 }

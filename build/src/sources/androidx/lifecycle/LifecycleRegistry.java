@@ -13,34 +13,34 @@ import m.b;
 public class LifecycleRegistry extends Lifecycle {
 
     /* renamed from: k  reason: collision with root package name */
-    public static final a f4414k = new a(null);
+    public static final a f4526k = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f4415b;
+    private final boolean f4527b;
 
     /* renamed from: c  reason: collision with root package name */
-    private m.a f4416c;
+    private m.a f4528c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Lifecycle.State f4417d;
+    private Lifecycle.State f4529d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final WeakReference f4418e;
+    private final WeakReference f4530e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f4419f;
+    private int f4531f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f4420g;
+    private boolean f4532g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f4421h;
+    private boolean f4533h;
 
     /* renamed from: i  reason: collision with root package name */
-    private ArrayList f4422i;
+    private ArrayList f4534i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final MutableStateFlow f4423j;
+    private final MutableStateFlow f4535j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -69,30 +69,30 @@ public class LifecycleRegistry extends Lifecycle {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private Lifecycle.State f4424a;
+        private Lifecycle.State f4536a;
 
         /* renamed from: b  reason: collision with root package name */
-        private m f4425b;
+        private m f4537b;
 
         public b(o oVar, Lifecycle.State initialState) {
             Intrinsics.checkNotNullParameter(initialState, "initialState");
             Intrinsics.checkNotNull(oVar);
-            this.f4425b = t.f(oVar);
-            this.f4424a = initialState;
+            this.f4537b = t.f(oVar);
+            this.f4536a = initialState;
         }
 
         public final void a(LifecycleOwner lifecycleOwner, Lifecycle.a event) {
             Intrinsics.checkNotNullParameter(event, "event");
             Lifecycle.State e10 = event.e();
-            this.f4424a = LifecycleRegistry.f4414k.b(this.f4424a, e10);
-            m mVar = this.f4425b;
+            this.f4536a = LifecycleRegistry.f4526k.b(this.f4536a, e10);
+            m mVar = this.f4537b;
             Intrinsics.checkNotNull(lifecycleOwner);
             mVar.h(lifecycleOwner, event);
-            this.f4424a = e10;
+            this.f4536a = e10;
         }
 
         public final Lifecycle.State b() {
-            return this.f4424a;
+            return this.f4536a;
         }
     }
 
@@ -101,14 +101,14 @@ public class LifecycleRegistry extends Lifecycle {
     }
 
     private final void e(LifecycleOwner lifecycleOwner) {
-        Iterator descendingIterator = this.f4416c.descendingIterator();
+        Iterator descendingIterator = this.f4528c.descendingIterator();
         Intrinsics.checkNotNullExpressionValue(descendingIterator, "descendingIterator(...)");
-        while (descendingIterator.hasNext() && !this.f4421h) {
+        while (descendingIterator.hasNext() && !this.f4533h) {
             Map.Entry entry = (Map.Entry) descendingIterator.next();
             Intrinsics.checkNotNull(entry);
             o oVar = (o) entry.getKey();
             b bVar = (b) entry.getValue();
-            while (bVar.b().compareTo(this.f4417d) > 0 && !this.f4421h && this.f4416c.contains(oVar)) {
+            while (bVar.b().compareTo(this.f4529d) > 0 && !this.f4533h && this.f4528c.contains(oVar)) {
                 Lifecycle.a a10 = Lifecycle.a.Companion.a(bVar.b());
                 if (a10 != null) {
                     n(a10.e());
@@ -125,38 +125,38 @@ public class LifecycleRegistry extends Lifecycle {
         Lifecycle.State state;
         ArrayList arrayList;
         b bVar;
-        Map.Entry i10 = this.f4416c.i(oVar);
+        Map.Entry i10 = this.f4528c.i(oVar);
         Lifecycle.State state2 = null;
         if (i10 != null && (bVar = (b) i10.getValue()) != null) {
             state = bVar.b();
         } else {
             state = null;
         }
-        if (!this.f4422i.isEmpty()) {
-            state2 = (Lifecycle.State) this.f4422i.get(arrayList.size() - 1);
+        if (!this.f4534i.isEmpty()) {
+            state2 = (Lifecycle.State) this.f4534i.get(arrayList.size() - 1);
         }
-        a aVar = f4414k;
-        return aVar.b(aVar.b(this.f4417d, state), state2);
+        a aVar = f4526k;
+        return aVar.b(aVar.b(this.f4529d, state), state2);
     }
 
     public static final LifecycleRegistry g(LifecycleOwner lifecycleOwner) {
-        return f4414k.a(lifecycleOwner);
+        return f4526k.a(lifecycleOwner);
     }
 
     private final void h(String str) {
-        if (this.f4415b && !r.a()) {
+        if (this.f4527b && !r.a()) {
             throw new IllegalStateException(("Method " + str + " must be called on the main thread").toString());
         }
     }
 
     private final void i(LifecycleOwner lifecycleOwner) {
-        b.d d10 = this.f4416c.d();
+        b.d d10 = this.f4528c.d();
         Intrinsics.checkNotNullExpressionValue(d10, "iteratorWithAdditions(...)");
-        while (d10.hasNext() && !this.f4421h) {
+        while (d10.hasNext() && !this.f4533h) {
             Map.Entry entry = (Map.Entry) d10.next();
             o oVar = (o) entry.getKey();
             b bVar = (b) entry.getValue();
-            while (bVar.b().compareTo(this.f4417d) < 0 && !this.f4421h && this.f4416c.contains(oVar)) {
+            while (bVar.b().compareTo(this.f4529d) < 0 && !this.f4533h && this.f4528c.contains(oVar)) {
                 n(bVar.b());
                 Lifecycle.a b10 = Lifecycle.a.Companion.b(bVar.b());
                 if (b10 != null) {
@@ -170,66 +170,66 @@ public class LifecycleRegistry extends Lifecycle {
     }
 
     private final boolean k() {
-        if (this.f4416c.size() == 0) {
+        if (this.f4528c.size() == 0) {
             return true;
         }
-        Map.Entry b10 = this.f4416c.b();
+        Map.Entry b10 = this.f4528c.b();
         Intrinsics.checkNotNull(b10);
         Lifecycle.State b11 = ((b) b10.getValue()).b();
-        Map.Entry e10 = this.f4416c.e();
+        Map.Entry e10 = this.f4528c.e();
         Intrinsics.checkNotNull(e10);
         Lifecycle.State b12 = ((b) e10.getValue()).b();
-        if (b11 == b12 && this.f4417d == b12) {
+        if (b11 == b12 && this.f4529d == b12) {
             return true;
         }
         return false;
     }
 
     private final void l(Lifecycle.State state) {
-        if (this.f4417d != state) {
-            q.a((LifecycleOwner) this.f4418e.get(), this.f4417d, state);
-            this.f4417d = state;
-            if (!this.f4420g && this.f4419f == 0) {
-                this.f4420g = true;
+        if (this.f4529d != state) {
+            q.a((LifecycleOwner) this.f4530e.get(), this.f4529d, state);
+            this.f4529d = state;
+            if (!this.f4532g && this.f4531f == 0) {
+                this.f4532g = true;
                 p();
-                this.f4420g = false;
-                if (this.f4417d == Lifecycle.State.f4405d) {
-                    this.f4416c = new m.a();
+                this.f4532g = false;
+                if (this.f4529d == Lifecycle.State.f4517d) {
+                    this.f4528c = new m.a();
                     return;
                 }
                 return;
             }
-            this.f4421h = true;
+            this.f4533h = true;
         }
     }
 
     private final void m() {
-        ArrayList arrayList = this.f4422i;
+        ArrayList arrayList = this.f4534i;
         arrayList.remove(arrayList.size() - 1);
     }
 
     private final void n(Lifecycle.State state) {
-        this.f4422i.add(state);
+        this.f4534i.add(state);
     }
 
     private final void p() {
-        LifecycleOwner lifecycleOwner = (LifecycleOwner) this.f4418e.get();
+        LifecycleOwner lifecycleOwner = (LifecycleOwner) this.f4530e.get();
         if (lifecycleOwner != null) {
             while (!k()) {
-                this.f4421h = false;
-                Lifecycle.State state = this.f4417d;
-                Map.Entry b10 = this.f4416c.b();
+                this.f4533h = false;
+                Lifecycle.State state = this.f4529d;
+                Map.Entry b10 = this.f4528c.b();
                 Intrinsics.checkNotNull(b10);
                 if (state.compareTo(((b) b10.getValue()).b()) < 0) {
                     e(lifecycleOwner);
                 }
-                Map.Entry e10 = this.f4416c.e();
-                if (!this.f4421h && e10 != null && this.f4417d.compareTo(((b) e10.getValue()).b()) > 0) {
+                Map.Entry e10 = this.f4528c.e();
+                if (!this.f4533h && e10 != null && this.f4529d.compareTo(((b) e10.getValue()).b()) > 0) {
                     i(lifecycleOwner);
                 }
             }
-            this.f4421h = false;
-            this.f4423j.setValue(b());
+            this.f4533h = false;
+            this.f4535j.setValue(b());
             return;
         }
         throw new IllegalStateException("LifecycleOwner of this LifecycleRegistry is already garbage collected. It is too late to change lifecycle state.");
@@ -241,23 +241,23 @@ public class LifecycleRegistry extends Lifecycle {
         boolean z10;
         Intrinsics.checkNotNullParameter(observer, "observer");
         h("addObserver");
-        Lifecycle.State state = this.f4417d;
-        Lifecycle.State state2 = Lifecycle.State.f4405d;
+        Lifecycle.State state = this.f4529d;
+        Lifecycle.State state2 = Lifecycle.State.f4517d;
         if (state != state2) {
-            state2 = Lifecycle.State.f4406e;
+            state2 = Lifecycle.State.f4518e;
         }
         b bVar = new b(observer, state2);
-        if (((b) this.f4416c.g(observer, bVar)) != null || (lifecycleOwner = (LifecycleOwner) this.f4418e.get()) == null) {
+        if (((b) this.f4528c.g(observer, bVar)) != null || (lifecycleOwner = (LifecycleOwner) this.f4530e.get()) == null) {
             return;
         }
-        if (this.f4419f == 0 && !this.f4420g) {
+        if (this.f4531f == 0 && !this.f4532g) {
             z10 = false;
         } else {
             z10 = true;
         }
         Lifecycle.State f10 = f(observer);
-        this.f4419f++;
-        while (bVar.b().compareTo(f10) < 0 && this.f4416c.contains(observer)) {
+        this.f4531f++;
+        while (bVar.b().compareTo(f10) < 0 && this.f4528c.contains(observer)) {
             n(bVar.b());
             Lifecycle.a b10 = Lifecycle.a.Companion.b(bVar.b());
             if (b10 != null) {
@@ -271,19 +271,19 @@ public class LifecycleRegistry extends Lifecycle {
         if (!z10) {
             p();
         }
-        this.f4419f--;
+        this.f4531f--;
     }
 
     @Override // androidx.lifecycle.Lifecycle
     public Lifecycle.State b() {
-        return this.f4417d;
+        return this.f4529d;
     }
 
     @Override // androidx.lifecycle.Lifecycle
     public void d(o observer) {
         Intrinsics.checkNotNullParameter(observer, "observer");
         h("removeObserver");
-        this.f4416c.h(observer);
+        this.f4528c.h(observer);
     }
 
     public void j(Lifecycle.a event) {
@@ -299,13 +299,13 @@ public class LifecycleRegistry extends Lifecycle {
     }
 
     private LifecycleRegistry(LifecycleOwner lifecycleOwner, boolean z10) {
-        this.f4415b = z10;
-        this.f4416c = new m.a();
-        Lifecycle.State state = Lifecycle.State.f4406e;
-        this.f4417d = state;
-        this.f4422i = new ArrayList();
-        this.f4418e = new WeakReference(lifecycleOwner);
-        this.f4423j = ms.l0.a(state);
+        this.f4527b = z10;
+        this.f4528c = new m.a();
+        Lifecycle.State state = Lifecycle.State.f4518e;
+        this.f4529d = state;
+        this.f4534i = new ArrayList();
+        this.f4530e = new WeakReference(lifecycleOwner);
+        this.f4535j = ps.l0.a(state);
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

@@ -8,25 +8,25 @@ import o8.j;
 public class f implements Supplier {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f53819a;
+    private final List f54515a;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public class a extends y8.a {
 
         /* renamed from: h  reason: collision with root package name */
-        private int f53820h = 0;
+        private int f54516h = 0;
 
         /* renamed from: i  reason: collision with root package name */
-        private DataSource f53821i = null;
+        private DataSource f54517i = null;
 
         /* renamed from: j  reason: collision with root package name */
-        private DataSource f53822j = null;
+        private DataSource f54518j = null;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* renamed from: y8.f$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public class C0736a implements e {
+        public class C0756a implements e {
             @Override // y8.e
             public void onFailure(DataSource dataSource) {
                 a.this.C(dataSource);
@@ -46,7 +46,7 @@ public class f implements Supplier {
                 a.this.q(Math.max(a.this.d(), dataSource.d()));
             }
 
-            private C0736a() {
+            private C0756a() {
             }
 
             @Override // y8.e
@@ -61,10 +61,10 @@ public class f implements Supplier {
         }
 
         private synchronized Supplier A() {
-            if (!i() && this.f53820h < f.this.f53819a.size()) {
-                List list = f.this.f53819a;
-                int i10 = this.f53820h;
-                this.f53820h = i10 + 1;
+            if (!i() && this.f54516h < f.this.f54515a.size()) {
+                List list = f.this.f54515a;
+                int i10 = this.f54516h;
+                this.f54516h = i10 + 1;
                 return (Supplier) list.get(i10);
             }
             return null;
@@ -73,12 +73,12 @@ public class f implements Supplier {
         private void B(DataSource dataSource, boolean z10) {
             DataSource dataSource2;
             synchronized (this) {
-                if (dataSource == this.f53821i && dataSource != (dataSource2 = this.f53822j)) {
+                if (dataSource == this.f54517i && dataSource != (dataSource2 = this.f54518j)) {
                     if (dataSource2 != null && !z10) {
                         dataSource2 = null;
                         y(dataSource2);
                     }
-                    this.f53822j = dataSource;
+                    this.f54518j = dataSource;
                     y(dataSource2);
                 }
             }
@@ -108,7 +108,7 @@ public class f implements Supplier {
             if (i()) {
                 return false;
             }
-            this.f53821i = dataSource;
+            this.f54517i = dataSource;
             return true;
         }
 
@@ -121,7 +121,7 @@ public class f implements Supplier {
                 dataSource = null;
             }
             if (E(dataSource) && dataSource != null) {
-                dataSource.c(new C0736a(), m8.a.a());
+                dataSource.c(new C0756a(), m8.a.a());
                 return true;
             }
             y(dataSource);
@@ -129,8 +129,8 @@ public class f implements Supplier {
         }
 
         private synchronized boolean x(DataSource dataSource) {
-            if (!i() && dataSource == this.f53821i) {
-                this.f53821i = null;
+            if (!i() && dataSource == this.f54517i) {
+                this.f54517i = null;
                 return true;
             }
             return false;
@@ -143,7 +143,7 @@ public class f implements Supplier {
         }
 
         private synchronized DataSource z() {
-            return this.f53822j;
+            return this.f54518j;
         }
 
         @Override // y8.a, com.facebook.datasource.DataSource
@@ -166,10 +166,10 @@ public class f implements Supplier {
                     if (!super.close()) {
                         return false;
                     }
-                    DataSource dataSource = this.f53821i;
-                    this.f53821i = null;
-                    DataSource dataSource2 = this.f53822j;
-                    this.f53822j = null;
+                    DataSource dataSource = this.f54517i;
+                    this.f54517i = null;
+                    DataSource dataSource2 = this.f54518j;
+                    this.f54518j = null;
                     y(dataSource2);
                     y(dataSource);
                     return true;
@@ -194,7 +194,7 @@ public class f implements Supplier {
 
     private f(List list) {
         j.c(!list.isEmpty(), "List of suppliers is empty!");
-        this.f53819a = list;
+        this.f54515a = list;
     }
 
     public static f b(List list) {
@@ -214,14 +214,14 @@ public class f implements Supplier {
         if (!(obj instanceof f)) {
             return false;
         }
-        return o8.h.a(this.f53819a, ((f) obj).f53819a);
+        return o8.h.a(this.f54515a, ((f) obj).f54515a);
     }
 
     public int hashCode() {
-        return this.f53819a.hashCode();
+        return this.f54515a.hashCode();
     }
 
     public String toString() {
-        return o8.h.b(this).b("list", this.f53819a).toString();
+        return o8.h.b(this).b("list", this.f54515a).toString();
     }
 }

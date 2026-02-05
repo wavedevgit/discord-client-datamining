@@ -16,55 +16,55 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class SendCachedEnvelopeIntegration implements io.sentry.k1, k0.b, Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final r4 f28755d;
+    private final r4 f27813d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final io.sentry.util.r f28756e;
+    private final io.sentry.util.r f27814e;
 
     /* renamed from: o  reason: collision with root package name */
-    private io.sentry.k0 f28758o;
+    private io.sentry.k0 f27816o;
 
     /* renamed from: p  reason: collision with root package name */
-    private io.sentry.w0 f28759p;
+    private io.sentry.w0 f27817p;
 
     /* renamed from: q  reason: collision with root package name */
-    private SentryAndroidOptions f28760q;
+    private SentryAndroidOptions f27818q;
 
     /* renamed from: r  reason: collision with root package name */
-    private o4 f28761r;
+    private o4 f27819r;
 
     /* renamed from: i  reason: collision with root package name */
-    private final AtomicBoolean f28757i = new AtomicBoolean(false);
+    private final AtomicBoolean f27815i = new AtomicBoolean(false);
 
     /* renamed from: s  reason: collision with root package name */
-    private final AtomicBoolean f28762s = new AtomicBoolean(false);
+    private final AtomicBoolean f27820s = new AtomicBoolean(false);
 
     /* renamed from: t  reason: collision with root package name */
-    private final AtomicBoolean f28763t = new AtomicBoolean(false);
+    private final AtomicBoolean f27821t = new AtomicBoolean(false);
 
     /* renamed from: u  reason: collision with root package name */
-    private final io.sentry.util.a f28764u = new io.sentry.util.a();
+    private final io.sentry.util.a f27822u = new io.sentry.util.a();
 
     public SendCachedEnvelopeIntegration(r4 r4Var, io.sentry.util.r rVar) {
-        this.f28755d = (r4) io.sentry.util.y.c(r4Var, "SendFireAndForgetFactory is required");
-        this.f28756e = rVar;
+        this.f27813d = (r4) io.sentry.util.y.c(r4Var, "SendFireAndForgetFactory is required");
+        this.f27814e = rVar;
     }
 
-    public static /* synthetic */ void l(SendCachedEnvelopeIntegration sendCachedEnvelopeIntegration, SentryAndroidOptions sentryAndroidOptions, io.sentry.w0 w0Var) {
+    public static /* synthetic */ void k(SendCachedEnvelopeIntegration sendCachedEnvelopeIntegration, SentryAndroidOptions sentryAndroidOptions, io.sentry.w0 w0Var) {
         sendCachedEnvelopeIntegration.getClass();
         try {
-            if (sendCachedEnvelopeIntegration.f28763t.get()) {
+            if (sendCachedEnvelopeIntegration.f27821t.get()) {
                 sentryAndroidOptions.getLogger().c(SentryLevel.INFO, "SendCachedEnvelopeIntegration, not trying to send after closing.", new Object[0]);
                 return;
             }
-            if (!sendCachedEnvelopeIntegration.f28762s.getAndSet(true)) {
+            if (!sendCachedEnvelopeIntegration.f27820s.getAndSet(true)) {
                 io.sentry.k0 connectionStatusProvider = sentryAndroidOptions.getConnectionStatusProvider();
-                sendCachedEnvelopeIntegration.f28758o = connectionStatusProvider;
+                sendCachedEnvelopeIntegration.f27816o = connectionStatusProvider;
                 connectionStatusProvider.M1(sendCachedEnvelopeIntegration);
-                sendCachedEnvelopeIntegration.f28761r = sendCachedEnvelopeIntegration.f28755d.c(w0Var, sentryAndroidOptions);
+                sendCachedEnvelopeIntegration.f27819r = sendCachedEnvelopeIntegration.f27813d.c(w0Var, sentryAndroidOptions);
             }
-            io.sentry.k0 k0Var = sendCachedEnvelopeIntegration.f28758o;
-            if (k0Var != null && k0Var.x0() == k0.a.DISCONNECTED) {
+            io.sentry.k0 k0Var = sendCachedEnvelopeIntegration.f27816o;
+            if (k0Var != null && k0Var.y0() == k0.a.DISCONNECTED) {
                 sentryAndroidOptions.getLogger().c(SentryLevel.INFO, "SendCachedEnvelopeIntegration, no connection.", new Object[0]);
                 return;
             }
@@ -73,7 +73,7 @@ public final class SendCachedEnvelopeIntegration implements io.sentry.k1, k0.b, 
                 sentryAndroidOptions.getLogger().c(SentryLevel.INFO, "SendCachedEnvelopeIntegration, rate limiting active.", new Object[0]);
                 return;
             }
-            o4 o4Var = sendCachedEnvelopeIntegration.f28761r;
+            o4 o4Var = sendCachedEnvelopeIntegration.f27819r;
             if (o4Var == null) {
                 sentryAndroidOptions.getLogger().c(SentryLevel.ERROR, "SendCachedEnvelopeIntegration factory is null.", new Object[0]);
             } else {
@@ -84,16 +84,16 @@ public final class SendCachedEnvelopeIntegration implements io.sentry.k1, k0.b, 
         }
     }
 
-    private void n(final io.sentry.w0 w0Var, final SentryAndroidOptions sentryAndroidOptions) {
+    private void m(final io.sentry.w0 w0Var, final SentryAndroidOptions sentryAndroidOptions) {
         try {
-            io.sentry.a1 a10 = this.f28764u.a();
+            io.sentry.a1 a10 = this.f27822u.a();
             Future submit = sentryAndroidOptions.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.core.g2
                 @Override // java.lang.Runnable
                 public final void run() {
-                    SendCachedEnvelopeIntegration.l(SendCachedEnvelopeIntegration.this, sentryAndroidOptions, w0Var);
+                    SendCachedEnvelopeIntegration.k(SendCachedEnvelopeIntegration.this, sentryAndroidOptions, w0Var);
                 }
             });
-            if (((Boolean) this.f28756e.a()).booleanValue() && this.f28757i.compareAndSet(false, true)) {
+            if (((Boolean) this.f27814e.a()).booleanValue() && this.f27815i.compareAndSet(false, true)) {
                 sentryAndroidOptions.getLogger().c(SentryLevel.DEBUG, "Startup Crash marker exists, blocking flush.", new Object[0]);
                 try {
                     submit.get(sentryAndroidOptions.getStartupCrashFlushTimeoutMillis(), TimeUnit.MILLISECONDS);
@@ -115,16 +115,16 @@ public final class SendCachedEnvelopeIntegration implements io.sentry.k1, k0.b, 
     @Override // io.sentry.k0.b
     public void a(k0.a aVar) {
         SentryAndroidOptions sentryAndroidOptions;
-        io.sentry.w0 w0Var = this.f28759p;
-        if (w0Var != null && (sentryAndroidOptions = this.f28760q) != null && aVar != k0.a.DISCONNECTED) {
-            n(w0Var, sentryAndroidOptions);
+        io.sentry.w0 w0Var = this.f27817p;
+        if (w0Var != null && (sentryAndroidOptions = this.f27818q) != null && aVar != k0.a.DISCONNECTED) {
+            m(w0Var, sentryAndroidOptions);
         }
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f28763t.set(true);
-        io.sentry.k0 k0Var = this.f28758o;
+        this.f27821t.set(true);
+        io.sentry.k0 k0Var = this.f27816o;
         if (k0Var != null) {
             k0Var.Z1(this);
         }
@@ -133,18 +133,18 @@ public final class SendCachedEnvelopeIntegration implements io.sentry.k1, k0.b, 
     @Override // io.sentry.k1
     public void h(io.sentry.w0 w0Var, k7 k7Var) {
         SentryAndroidOptions sentryAndroidOptions;
-        this.f28759p = (io.sentry.w0) io.sentry.util.y.c(w0Var, "Scopes are required");
+        this.f27817p = (io.sentry.w0) io.sentry.util.y.c(w0Var, "Scopes are required");
         if (k7Var instanceof SentryAndroidOptions) {
             sentryAndroidOptions = (SentryAndroidOptions) k7Var;
         } else {
             sentryAndroidOptions = null;
         }
-        this.f28760q = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
-        if (!this.f28755d.d(k7Var.getCacheDirPath(), k7Var.getLogger())) {
+        this.f27818q = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
+        if (!this.f27813d.d(k7Var.getCacheDirPath(), k7Var.getLogger())) {
             k7Var.getLogger().c(SentryLevel.ERROR, "No cache dir path is defined in options.", new Object[0]);
             return;
         }
         io.sentry.util.p.a("SendCachedEnvelope");
-        n(w0Var, this.f28760q);
+        m(w0Var, this.f27818q);
     }
 }

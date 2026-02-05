@@ -1,78 +1,63 @@
 package uu;
 
-import java.util.ArrayList;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import ou.c;
-import wu.a;
-import wu.c;
+import vv.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface b extends ou.c, wu.a, wu.c {
+public final class b implements qu.b {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static boolean a(b bVar, Object obj, Function2 operator) {
-            boolean z10;
-            boolean z11;
-            Intrinsics.checkNotNullParameter(operator, "operator");
-            List c10 = sv.a.c(obj);
-            Object e10 = bVar.e(CollectionsKt.firstOrNull(c10));
-            Object e11 = bVar.e(sv.c.b(c10));
-            c cVar = c.f51037a;
-            List a10 = cVar.a(e10);
-            List a11 = cVar.a(e11);
-            if (a10 == null && a11 == null) {
-                List<Object> list = c10;
-                ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-                for (Object obj2 : list) {
-                    arrayList.add(bVar.a(obj2));
-                }
-                return bVar.b(arrayList, operator);
-            }
-            if (a10 != null) {
-                z10 = a10.contains(e11);
-            } else {
-                z10 = false;
-            }
-            if (!z10) {
-                if (a11 != null) {
-                    z11 = a11.contains(e10);
-                } else {
-                    z11 = false;
-                }
-                if (!z11) {
-                    return false;
-                }
-                return true;
-            }
-            return true;
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f51728a = new b();
 
-        public static boolean b(b bVar, List list, Function2 operator) {
-            Intrinsics.checkNotNullParameter(operator, "operator");
-            return c.a.b(bVar, list, operator);
-        }
+    private b() {
+    }
 
-        public static List c(b bVar, Comparable comparable, Comparable comparable2) {
-            return c.a.d(bVar, comparable, comparable2);
+    @Override // qu.b
+    public Object f(Object obj, Object obj2) {
+        List list;
+        long j10;
+        List list2;
+        Object obj3;
+        List list3;
+        Object firstOrNull;
+        String obj4;
+        boolean z10 = obj instanceof List;
+        List list4 = null;
+        if (z10) {
+            list = (List) obj;
+        } else {
+            list = null;
         }
-
-        public static List d(b bVar, Comparable comparable, Comparable comparable2) {
-            return c.a.e(bVar, comparable, comparable2);
+        if (list != null && (firstOrNull = CollectionsKt.firstOrNull(list)) != null && (obj4 = firstOrNull.toString()) != null) {
+            j10 = d.c(obj4);
+        } else {
+            j10 = 0;
         }
-
-        public static Object e(b bVar, Object obj) {
-            return c.a.c(bVar, obj);
+        if (z10) {
+            list2 = (List) obj;
+        } else {
+            list2 = null;
         }
-
-        public static Object f(b bVar, Object obj) {
-            return a.C0716a.c(bVar, obj);
+        if (list2 != null) {
+            obj3 = vv.c.b(list2);
+        } else {
+            obj3 = null;
         }
-
-        public static Boolean g(b bVar, Object obj) {
-            return c.a.f(bVar, obj);
+        if (obj3 instanceof List) {
+            list3 = (List) obj3;
+        } else {
+            list3 = null;
         }
+        if (list3 == null) {
+            list3 = CollectionsKt.l();
+        }
+        List f10 = a.f51727a.f(list3, obj2);
+        if (list3.size() - f10.size() < j10) {
+            list4 = f10;
+        }
+        if (list4 == null) {
+            return CollectionsKt.l();
+        }
+        return list4;
     }
 }

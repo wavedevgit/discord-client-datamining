@@ -1,57 +1,57 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class n5 implements ui.d {
+final class n5 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n5 f41399a = new n5();
+    static final n5 f40859a = new n5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41400b;
+    private static final xi.c f40860b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41401c;
+    private static final xi.c f40861c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41402d;
+    private static final xi.c f40862d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41403e;
+    private static final xi.c f40863e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41404f;
+    private static final xi.c f40864f;
 
     static {
-        c.b a10 = ui.c.a("inferenceCommonLogEvent");
+        c.b a10 = xi.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f41400b = a10.b(fVar.b()).a();
-        c.b a11 = ui.c.a("smartReplies");
+        f40860b = a10.b(fVar.b()).a();
+        c.b a11 = xi.c.a("smartReplies");
         f fVar2 = new f();
         fVar2.a(2);
-        f41401c = a11.b(fVar2.b()).a();
-        c.b a12 = ui.c.a("resultStatus");
+        f40861c = a11.b(fVar2.b()).a();
+        c.b a12 = xi.c.a("resultStatus");
         f fVar3 = new f();
         fVar3.a(3);
-        f41402d = a12.b(fVar3.b()).a();
-        c.b a13 = ui.c.a("suggestionsCount");
+        f40862d = a12.b(fVar3.b()).a();
+        c.b a13 = xi.c.a("suggestionsCount");
         f fVar4 = new f();
         fVar4.a(4);
-        f41403e = a13.b(fVar4.b()).a();
-        c.b a14 = ui.c.a("blacklistErrorCode");
+        f40863e = a13.b(fVar4.b()).a();
+        c.b a14 = xi.c.a("blacklistErrorCode");
         f fVar5 = new f();
         fVar5.a(5);
-        f41404f = a14.b(fVar5.b()).a();
+        f40864f = a14.b(fVar5.b()).a();
     }
 
     private n5() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

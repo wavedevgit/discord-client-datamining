@@ -5,19 +5,19 @@ import android.graphics.drawable.Drawable;
 public final class j extends h implements g {
 
     /* renamed from: o  reason: collision with root package name */
-    private Drawable f49345o;
+    private Drawable f49494o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f49346p;
+    private boolean f49495p;
 
     public j(Drawable drawable) {
-        this.f49345o = drawable;
+        this.f49494o = drawable;
     }
 
     @Override // sa.g
     public Drawable F1() {
         Drawable.ConstantState constantState;
-        Drawable drawable = this.f49345o;
+        Drawable drawable = this.f49494o;
         if (drawable != null && (constantState = drawable.getConstantState()) != null) {
             return constantState.newDrawable();
         }
@@ -26,13 +26,13 @@ public final class j extends h implements g {
 
     @Override // sa.e, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f49345o = null;
-        this.f49346p = true;
+        this.f49494o = null;
+        this.f49495p = true;
     }
 
     @Override // sa.e, com.facebook.imagepipeline.image.ImageInfo
     public int getHeight() {
-        Drawable drawable = this.f49345o;
+        Drawable drawable = this.f49494o;
         if (drawable != null) {
             Integer valueOf = Integer.valueOf(drawable.getIntrinsicHeight());
             if (valueOf.intValue() < 0) {
@@ -48,7 +48,7 @@ public final class j extends h implements g {
 
     @Override // sa.e, com.facebook.imagepipeline.image.ImageInfo
     public int getWidth() {
-        Drawable drawable = this.f49345o;
+        Drawable drawable = this.f49494o;
         if (drawable != null) {
             Integer valueOf = Integer.valueOf(drawable.getIntrinsicWidth());
             if (valueOf.intValue() < 0) {
@@ -64,11 +64,11 @@ public final class j extends h implements g {
 
     @Override // sa.e
     public boolean isClosed() {
-        return this.f49346p;
+        return this.f49495p;
     }
 
     @Override // sa.e
-    public int t() {
+    public int u() {
         return getWidth() * getHeight() * 4;
     }
 }

@@ -1,32 +1,19 @@
 package lv;
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.concurrent.Executor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class c {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends c {
-        @Override // lv.c
-        List a(Executor executor) {
-            return Arrays.asList(new g(), new i(executor));
-        }
-
-        @Override // lv.c
-        List b() {
-            return Collections.singletonList(new t());
-        }
+public abstract class c {
+    public static c a(int i10) {
+        return new gv.b(-1, i10, false);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public List a(Executor executor) {
-        return Collections.singletonList(new i(executor));
+    public static c b(int i10) {
+        return new gv.b(i10, -1, false);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public List b() {
-        return Collections.EMPTY_LIST;
+    public static c c() {
+        return new gv.b(-1, -1, true);
+    }
+
+    public static c d() {
+        return null;
     }
 }

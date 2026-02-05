@@ -9,23 +9,23 @@ import j$.time.temporal.p;
 public final /* synthetic */ class c implements TemporalQuery {
 
     /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ int f31083a;
+    public final /* synthetic */ int f30432a;
 
     public /* synthetic */ c(int i10) {
-        this.f31083a = i10;
+        this.f30432a = i10;
     }
 
     @Override // j$.time.temporal.TemporalQuery
     public final Object queryFrom(TemporalAccessor temporalAccessor) {
-        int i10 = this.f31083a;
-        c cVar = o.f31195a;
+        int i10 = this.f30432a;
+        c cVar = o.f30544a;
         switch (i10) {
             case 0:
                 return LocalDate.t(temporalAccessor);
             case 1:
                 return LocalTime.t(temporalAccessor);
             case 2:
-                c cVar2 = DateTimeFormatterBuilder.f31105f;
+                c cVar2 = DateTimeFormatterBuilder.f30454f;
                 k kVar = (k) temporalAccessor.a(cVar);
                 if (kVar == null || (kVar instanceof ZoneOffset)) {
                     return null;
@@ -34,9 +34,9 @@ public final /* synthetic */ class c implements TemporalQuery {
             case 3:
                 return (k) temporalAccessor.a(cVar);
             case 4:
-                return (j$.time.chrono.j) temporalAccessor.a(o.f31196b);
+                return (j$.time.chrono.j) temporalAccessor.a(o.f30545b);
             case 5:
-                return (p) temporalAccessor.a(o.f31197c);
+                return (p) temporalAccessor.a(o.f30546c);
             case 6:
                 j$.time.temporal.a aVar = j$.time.temporal.a.OFFSET_SECONDS;
                 if (temporalAccessor.j(aVar)) {
@@ -45,7 +45,7 @@ public final /* synthetic */ class c implements TemporalQuery {
                 return null;
             case 7:
                 k kVar2 = (k) temporalAccessor.a(cVar);
-                return kVar2 != null ? kVar2 : (k) temporalAccessor.a(o.f31198d);
+                return kVar2 != null ? kVar2 : (k) temporalAccessor.a(o.f30547d);
             case 8:
                 j$.time.temporal.a aVar2 = j$.time.temporal.a.EPOCH_DAY;
                 if (temporalAccessor.j(aVar2)) {

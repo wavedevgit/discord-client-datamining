@@ -59,7 +59,7 @@ public final class BillingManager$consumePurchase$1 extends kotlin.coroutines.jv
         BillingManager$consumePurchase$1 billingManager$consumePurchase$1;
         Exception exc;
         BillingClient billingClient;
-        Object f10 = rr.b.f();
+        Object f10 = ur.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -73,7 +73,7 @@ public final class BillingManager$consumePurchase$1 extends kotlin.coroutines.jv
                     billingManager$consumePurchase$1 = this;
                     CrashReporting.captureException$default(CrashReporting.INSTANCE, exc, false, 2, null);
                     billingManager$consumePurchase$1.$onError.invoke(BillingManagerException.Companion.wrap(exc, "consumePurchase"));
-                    return Unit.f32464a;
+                    return Unit.f31988a;
                 }
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -97,7 +97,7 @@ public final class BillingManager$consumePurchase$1 extends kotlin.coroutines.jv
                     exc = e;
                     CrashReporting.captureException$default(CrashReporting.INSTANCE, exc, false, 2, null);
                     billingManager$consumePurchase$1.$onError.invoke(BillingManagerException.Companion.wrap(exc, "consumePurchase"));
-                    return Unit.f32464a;
+                    return Unit.f31988a;
                 }
             } catch (CancellationException e14) {
                 e = e14;
@@ -110,7 +110,7 @@ public final class BillingManager$consumePurchase$1 extends kotlin.coroutines.jv
         billingManager$consumePurchase$1.this$0.trackBillingMetric("operation", CollectionsKt.o("method:consume_purchase", "client_ready:" + clientReadyState.getMetricValue()));
         if (clientReadyState == BillingManager.ClientReadyState.TIMEOUT) {
             billingManager$consumePurchase$1.$onError.invoke(new BillingManagerException.BillingClientNotReadyException());
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
         a6.e a10 = a6.e.b().b(billingManager$consumePurchase$1.$purchaseToken).a();
         Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
@@ -128,11 +128,11 @@ public final class BillingManager$consumePurchase$1 extends kotlin.coroutines.jv
                 BillingManager$consumePurchase$1.invokeSuspend$lambda$0(BillingManager.this, function1, function0, billingResult, str);
             }
         });
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((BillingManager$consumePurchase$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((BillingManager$consumePurchase$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

@@ -3,5 +3,5 @@ package com.google.android.gms.internal.fido;
 abstract class l2 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j2 f13654a = new p2("SHA-256", "Hashing.sha256()");
+    static final j2 f14048a = new p2("SHA-256", "Hashing.sha256()");
 }

@@ -41,18 +41,18 @@ public final class AttributeStyles_InputSelectBackgroundColorStyleJsonAdapter ex
     @NotNull
     public AttributeStyles.InputSelectBackgroundColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.ComplexElementColor complexElementColor = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.InputSelectBackgroundColorStyle(complexElementColor);
     }
 
@@ -60,8 +60,8 @@ public final class AttributeStyles_InputSelectBackgroundColorStyleJsonAdapter ex
     public void toJson(@NotNull t writer, AttributeStyles.InputSelectBackgroundColorStyle inputSelectBackgroundColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputSelectBackgroundColorStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableComplexElementColorAdapter.toJson(writer, inputSelectBackgroundColorStyle.getBase());
             writer.E();
             return;

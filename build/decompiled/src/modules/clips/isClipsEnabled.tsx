@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
     var4 = function() {
-        _fun93479: for (var _fun93479_ip = 0;;) switch (_fun93479_ip) {
+        _fun93498: for (var _fun93498_ip = 0;;) switch (_fun93498_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -23,8 +23,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.clipsSettings;
                 var1 = var1.clipsEnabled;
                 if (!var0) {
-                    _fun93479_ip = 67;
-                    continue _fun93479
+                    _fun93498_ip = 67;
+                    continue _fun93498
                 }
             case 64:
                 var0 = var1;
@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot3 = var4;
     var3 = function() {
-        _fun93480: for (var _fun93480_ip = 0;;) switch (_fun93480_ip) {
+        _fun93499: for (var _fun93499_ip = 0;;) switch (_fun93499_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot1;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var3.bind(var4)(var2, var1);
                 if (!var0) {
-                    _fun93480_ip = 85;
-                    continue _fun93480
+                    _fun93499_ip = 85;
+                    continue _fun93499
                 }
             case 82:
                 var0 = var1;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isClipsEnabled = var4;
     var2.useIsClipsEnabled = var3;
     var3 = function() {
-        _fun93482: for (var _fun93482_ip = 0;;) switch (_fun93482_ip) {
+        _fun93501: for (var _fun93501_ip = 0;;) switch (_fun93501_ip) {
             case 0:
                 var0 = _closure1_slot3;
                 var4 = undefined;
@@ -112,15 +112,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.clipsSettings;
                 var1 = var1.decoupledClipsEnabled;
                 if (!var0) {
-                    _fun93482_ip = 75;
-                    continue _fun93482
+                    _fun93501_ip = 75;
+                    continue _fun93501
                 }
             case 72:
                 var0 = var2;
             case 75:
                 if (!var0) {
-                    _fun93482_ip = 81;
-                    continue _fun93482
+                    _fun93501_ip = 81;
+                    continue _fun93501
                 }
             case 78:
                 var0 = var1;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isDecoupledClipsEnabled = var3;
     var1 = function() {
-        _fun93483: for (var _fun93483_ip = 0;;) switch (_fun93483_ip) {
+        _fun93502: for (var _fun93502_ip = 0;;) switch (_fun93502_ip) {
             case 0:
                 var0 = _closure1_slot4;
                 var5 = undefined;
@@ -159,15 +159,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var4.bind(var5)(var3, var1);
                 if (!var0) {
-                    _fun93483_ip = 93;
-                    continue _fun93483
+                    _fun93502_ip = 93;
+                    continue _fun93502
                 }
             case 90:
                 var0 = var2;
             case 93:
                 if (!var0) {
-                    _fun93483_ip = 99;
-                    continue _fun93483
+                    _fun93502_ip = 99;
+                    continue _fun93502
                 }
             case 96:
                 var0 = var1;

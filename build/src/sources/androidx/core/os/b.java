@@ -6,47 +6,47 @@ import java.util.Locale;
 final class b implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LocaleList f3181a;
+    private final LocaleList f3293a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Object obj) {
-        this.f3181a = (LocaleList) obj;
+        this.f3293a = (LocaleList) obj;
     }
 
     @Override // androidx.core.os.a
     public String a() {
-        return this.f3181a.toLanguageTags();
+        return this.f3293a.toLanguageTags();
     }
 
     @Override // androidx.core.os.a
     public Object b() {
-        return this.f3181a;
+        return this.f3293a;
     }
 
     public boolean equals(Object obj) {
-        return this.f3181a.equals(((a) obj).b());
+        return this.f3293a.equals(((a) obj).b());
     }
 
     @Override // androidx.core.os.a
     public Locale get(int i10) {
-        return this.f3181a.get(i10);
+        return this.f3293a.get(i10);
     }
 
     public int hashCode() {
-        return this.f3181a.hashCode();
+        return this.f3293a.hashCode();
     }
 
     @Override // androidx.core.os.a
     public boolean isEmpty() {
-        return this.f3181a.isEmpty();
+        return this.f3293a.isEmpty();
     }
 
     @Override // androidx.core.os.a
     public int size() {
-        return this.f3181a.size();
+        return this.f3293a.size();
     }
 
     public String toString() {
-        return this.f3181a.toString();
+        return this.f3293a.toString();
     }
 }

@@ -1,287 +1,201 @@
 package zt;
 
-import com.facebook.react.views.image.ReactImageView;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
+import java.security.cert.Certificate;
+import java.security.cert.X509Certificate;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+import javax.net.ssl.SSLPeerUnverifiedException;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
-import okhttp3.CacheControl;
-import okhttp3.Headers;
-import okhttp3.Request;
-import okhttp3.Response;
+import kotlin.jvm.internal.Lambda;
+import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class c {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f56156c = new a(null);
+    public static final b f56275c = new b(null);
+
+    /* renamed from: d  reason: collision with root package name */
+    public static final c f56276d = new a().a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Request f56157a;
+    private final Set f56277a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Response f56158b;
+    private final mu.c f56278b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
 
-        public final boolean a(Response response, Request request) {
-            Intrinsics.checkNotNullParameter(response, "response");
-            Intrinsics.checkNotNullParameter(request, "request");
-            int L = response.L();
-            if (L != 200 && L != 410 && L != 414 && L != 501 && L != 203 && L != 204) {
-                if (L != 307) {
-                    if (L != 308 && L != 404 && L != 405) {
-                        switch (L) {
-                            case ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS /* 300 */:
-                            case 301:
-                                break;
-                            case 302:
-                                break;
-                            default:
-                                return false;
-                        }
-                    }
-                }
-                if (Response.D0(response, "Expires", null, 2, null) == null && response.B().c() == -1 && !response.B().b() && !response.B().a()) {
-                    return false;
-                }
-            }
-            if (response.B().h() || request.d().h()) {
-                return false;
-            }
-            return true;
-        }
+        /* renamed from: a  reason: collision with root package name */
+        private final List f56279a = new ArrayList();
 
-        private a() {
+        public final c a() {
+            return new c(CollectionsKt.l1(this.f56279a), null, 2, null);
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class b {
+        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
 
-        /* renamed from: a  reason: collision with root package name */
-        private final long f56159a;
+        public final String a(Certificate certificate) {
+            Intrinsics.checkNotNullParameter(certificate, "certificate");
+            if (certificate instanceof X509Certificate) {
+                return "sha256/" + b((X509Certificate) certificate).d();
+            }
+            throw new IllegalArgumentException("Certificate pinning requires X509 certificates");
+        }
 
-        /* renamed from: b  reason: collision with root package name */
-        private final Request f56160b;
+        public final ByteString b(X509Certificate x509Certificate) {
+            Intrinsics.checkNotNullParameter(x509Certificate, "<this>");
+            ByteString.a aVar = ByteString.f44060o;
+            byte[] encoded = x509Certificate.getPublicKey().getEncoded();
+            Intrinsics.checkNotNullExpressionValue(encoded, "publicKey.encoded");
+            return ByteString.a.j(aVar, encoded, 0, 0, 3, null).F();
+        }
 
-        /* renamed from: c  reason: collision with root package name */
-        private final Response f56161c;
+        private b() {
+        }
+    }
 
-        /* renamed from: d  reason: collision with root package name */
-        private Date f56162d;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* renamed from: zt.c$c  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0798c extends Lambda implements Function0 {
 
         /* renamed from: e  reason: collision with root package name */
-        private String f56163e;
-
-        /* renamed from: f  reason: collision with root package name */
-        private Date f56164f;
-
-        /* renamed from: g  reason: collision with root package name */
-        private String f56165g;
-
-        /* renamed from: h  reason: collision with root package name */
-        private Date f56166h;
+        final /* synthetic */ List f56281e;
 
         /* renamed from: i  reason: collision with root package name */
-        private long f56167i;
+        final /* synthetic */ String f56282i;
 
-        /* renamed from: j  reason: collision with root package name */
-        private long f56168j;
-
-        /* renamed from: k  reason: collision with root package name */
-        private String f56169k;
-
-        /* renamed from: l  reason: collision with root package name */
-        private int f56170l;
-
-        public b(long j10, Request request, Response response) {
-            Intrinsics.checkNotNullParameter(request, "request");
-            this.f56159a = j10;
-            this.f56160b = request;
-            this.f56161c = response;
-            this.f56170l = -1;
-            if (response != null) {
-                this.f56167i = response.e1();
-                this.f56168j = response.Y0();
-                Headers E0 = response.E0();
-                int size = E0.size();
-                for (int i10 = 0; i10 < size; i10++) {
-                    String e10 = E0.e(i10);
-                    String j11 = E0.j(i10);
-                    if (StringsKt.A(e10, "Date", true)) {
-                        this.f56162d = cu.c.a(j11);
-                        this.f56163e = j11;
-                    } else if (StringsKt.A(e10, "Expires", true)) {
-                        this.f56166h = cu.c.a(j11);
-                    } else if (StringsKt.A(e10, "Last-Modified", true)) {
-                        this.f56164f = cu.c.a(j11);
-                        this.f56165g = j11;
-                    } else if (StringsKt.A(e10, "ETag", true)) {
-                        this.f56169k = j11;
-                    } else if (StringsKt.A(e10, "Age", true)) {
-                        this.f56170l = xt.e.Y(j11, -1);
-                    }
-                }
-            }
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        C0798c(List list, String str) {
+            super(0);
+            this.f56281e = list;
+            this.f56282i = str;
         }
 
-        private final long a() {
-            Date date = this.f56162d;
-            long j10 = 0;
-            if (date != null) {
-                j10 = Math.max(0L, this.f56168j - date.getTime());
+        @Override // kotlin.jvm.functions.Function0
+        public final List invoke() {
+            List list;
+            mu.c d10 = c.this.d();
+            if (d10 == null || (list = d10.a(this.f56281e, this.f56282i)) == null) {
+                list = this.f56281e;
             }
-            int i10 = this.f56170l;
-            if (i10 != -1) {
-                j10 = Math.max(j10, TimeUnit.SECONDS.toMillis(i10));
+            List<Certificate> list2 = list;
+            ArrayList arrayList = new ArrayList(CollectionsKt.w(list2, 10));
+            for (Certificate certificate : list2) {
+                Intrinsics.checkNotNull(certificate, "null cannot be cast to non-null type java.security.cert.X509Certificate");
+                arrayList.add((X509Certificate) certificate);
             }
-            long j11 = this.f56168j;
-            return j10 + (j11 - this.f56167i) + (this.f56159a - j11);
+            return arrayList;
         }
+    }
 
-        private final c c() {
-            long j10;
-            String str;
-            if (this.f56161c == null) {
-                return new c(this.f56160b, null);
-            }
-            if (this.f56160b.i() && this.f56161c.V() == null) {
-                return new c(this.f56160b, null);
-            }
-            if (!c.f56156c.a(this.f56161c, this.f56160b)) {
-                return new c(this.f56160b, null);
-            }
-            CacheControl d10 = this.f56160b.d();
-            if (!d10.g() && !e(this.f56160b)) {
-                CacheControl B = this.f56161c.B();
-                long a10 = a();
-                long d11 = d();
-                if (d10.c() != -1) {
-                    d11 = Math.min(d11, TimeUnit.SECONDS.toMillis(d10.c()));
-                }
-                long j11 = 0;
-                if (d10.e() != -1) {
-                    j10 = TimeUnit.SECONDS.toMillis(d10.e());
-                } else {
-                    j10 = 0;
-                }
-                if (!B.f() && d10.d() != -1) {
-                    j11 = TimeUnit.SECONDS.toMillis(d10.d());
-                }
-                if (!B.g()) {
-                    long j12 = j10 + a10;
-                    if (j12 < j11 + d11) {
-                        Response.a M0 = this.f56161c.M0();
-                        if (j12 >= d11) {
-                            M0.a("Warning", "110 HttpURLConnection \"Response is stale\"");
-                        }
-                        if (a10 > 86400000 && f()) {
-                            M0.a("Warning", "113 HttpURLConnection \"Heuristic expiration\"");
-                        }
-                        return new c(null, M0.c());
-                    }
-                }
-                String str2 = this.f56169k;
-                if (str2 != null) {
-                    str = "If-None-Match";
-                } else {
-                    if (this.f56164f != null) {
-                        str2 = this.f56165g;
-                    } else if (this.f56162d != null) {
-                        str2 = this.f56163e;
-                    } else {
-                        return new c(this.f56160b, null);
-                    }
-                    str = "If-Modified-Since";
-                }
-                Headers.a g10 = this.f56160b.h().g();
-                Intrinsics.checkNotNull(str2);
-                g10.d(str, str2);
-                return new c(this.f56160b.k().f(g10.f()).b(), this.f56161c);
-            }
-            return new c(this.f56160b, null);
+    public c(Set pins, mu.c cVar) {
+        Intrinsics.checkNotNullParameter(pins, "pins");
+        this.f56277a = pins;
+        this.f56278b = cVar;
+    }
+
+    public final void a(String hostname, List peerCertificates) {
+        Intrinsics.checkNotNullParameter(hostname, "hostname");
+        Intrinsics.checkNotNullParameter(peerCertificates, "peerCertificates");
+        b(hostname, new C0798c(peerCertificates, hostname));
+    }
+
+    public final void b(String hostname, Function0 cleanedPeerCertificatesFn) {
+        Intrinsics.checkNotNullParameter(hostname, "hostname");
+        Intrinsics.checkNotNullParameter(cleanedPeerCertificatesFn, "cleanedPeerCertificatesFn");
+        List<Object> c10 = c(hostname);
+        if (c10.isEmpty()) {
+            return;
         }
-
-        private final long d() {
-            long j10;
-            long j11;
-            Response response = this.f56161c;
-            Intrinsics.checkNotNull(response);
-            CacheControl B = response.B();
-            if (B.c() != -1) {
-                return TimeUnit.SECONDS.toMillis(B.c());
+        List<X509Certificate> list = (List) cleanedPeerCertificatesFn.invoke();
+        for (X509Certificate x509Certificate : list) {
+            Iterator it = c10.iterator();
+            if (it.hasNext()) {
+                android.support.v4.media.session.b.a(it.next());
+                throw null;
             }
-            Date date = this.f56166h;
-            if (date != null) {
-                Date date2 = this.f56162d;
-                if (date2 != null) {
-                    j11 = date2.getTime();
-                } else {
-                    j11 = this.f56168j;
-                }
-                long time = date.getTime() - j11;
-                if (time <= 0) {
-                    return 0L;
-                }
-                return time;
-            }
-            if (this.f56164f != null && this.f56161c.Z0().n().p() == null) {
-                Date date3 = this.f56162d;
-                if (date3 != null) {
-                    j10 = date3.getTime();
-                } else {
-                    j10 = this.f56167i;
-                }
-                Date date4 = this.f56164f;
-                Intrinsics.checkNotNull(date4);
-                long time2 = j10 - date4.getTime();
-                if (time2 > 0) {
-                    return time2 / 10;
-                }
-            }
-            return 0L;
         }
-
-        private final boolean e(Request request) {
-            if (request.f("If-Modified-Since") == null && request.f("If-None-Match") == null) {
-                return false;
-            }
-            return true;
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("Certificate pinning failure!");
+        sb2.append("\n  Peer certificate chain:");
+        for (X509Certificate x509Certificate2 : list) {
+            sb2.append("\n    ");
+            sb2.append(f56275c.a(x509Certificate2));
+            sb2.append(": ");
+            sb2.append(x509Certificate2.getSubjectDN().getName());
         }
+        sb2.append("\n  Pinned certificates for ");
+        sb2.append(hostname);
+        sb2.append(":");
+        for (Object obj : c10) {
+            android.support.v4.media.session.b.a(obj);
+            sb2.append("\n    ");
+            sb2.append((Object) null);
+        }
+        String sb3 = sb2.toString();
+        Intrinsics.checkNotNullExpressionValue(sb3, "StringBuilder().apply(builderAction).toString()");
+        throw new SSLPeerUnverifiedException(sb3);
+    }
 
-        private final boolean f() {
-            Response response = this.f56161c;
-            Intrinsics.checkNotNull(response);
-            if (response.B().c() == -1 && this.f56166h == null) {
+    public final List c(String hostname) {
+        Intrinsics.checkNotNullParameter(hostname, "hostname");
+        List l10 = CollectionsKt.l();
+        Iterator it = this.f56277a.iterator();
+        if (!it.hasNext()) {
+            return l10;
+        }
+        android.support.v4.media.session.b.a(it.next());
+        throw null;
+    }
+
+    public final mu.c d() {
+        return this.f56278b;
+    }
+
+    public final c e(mu.c certificateChainCleaner) {
+        Intrinsics.checkNotNullParameter(certificateChainCleaner, "certificateChainCleaner");
+        if (Intrinsics.areEqual(this.f56278b, certificateChainCleaner)) {
+            return this;
+        }
+        return new c(this.f56277a, certificateChainCleaner);
+    }
+
+    public boolean equals(Object obj) {
+        if (obj instanceof c) {
+            c cVar = (c) obj;
+            if (Intrinsics.areEqual(cVar.f56277a, this.f56277a) && Intrinsics.areEqual(cVar.f56278b, this.f56278b)) {
                 return true;
             }
             return false;
         }
+        return false;
+    }
 
-        public final c b() {
-            c c10 = c();
-            if (c10.b() != null && this.f56160b.d().i()) {
-                return new c(null, null);
-            }
-            return c10;
+    public int hashCode() {
+        int i10;
+        int hashCode = (1517 + this.f56277a.hashCode()) * 41;
+        mu.c cVar = this.f56278b;
+        if (cVar != null) {
+            i10 = cVar.hashCode();
+        } else {
+            i10 = 0;
         }
+        return hashCode + i10;
     }
 
-    public c(Request request, Response response) {
-        this.f56157a = request;
-        this.f56158b = response;
-    }
-
-    public final Response a() {
-        return this.f56158b;
-    }
-
-    public final Request b() {
-        return this.f56157a;
+    public /* synthetic */ c(Set set, mu.c cVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(set, (i10 & 2) != 0 ? null : cVar);
     }
 }

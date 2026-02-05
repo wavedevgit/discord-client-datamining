@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function1;
 public class i implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AbstractTypeConstructor f35190d;
+    private final AbstractTypeConstructor f34714d;
 
     public i(AbstractTypeConstructor abstractTypeConstructor) {
-        this.f35190d = abstractTypeConstructor;
+        this.f34714d = abstractTypeConstructor;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Unit z10;
-        z10 = AbstractTypeConstructor.z(this.f35190d, (KotlinType) obj);
+        z10 = AbstractTypeConstructor.z(this.f34714d, (KotlinType) obj);
         return z10;
     }
 }

@@ -17,7 +17,7 @@ public /* synthetic */ class Log$e$1 extends FunctionReferenceImpl implements Fu
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
         invoke((String) obj, (String) obj2, (Throwable) obj3);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public final void invoke(String p02, String p12, Throwable th2) {

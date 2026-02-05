@@ -10,17 +10,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var1);
     var1 = {};
-    var6 = 'RNSVGFeBlend';
+    var6 = 'RNSVGDefs';
     var1.uiViewClassName = var6;
     var0 = {
-        'x': true,
-        'y': true,
-        'width': true,
-        'height': true,
-        'result': true,
-        'in1': true,
-        'in2': true,
-        'mode': true
+        'name': true,
+        'opacity': true,
+        'matrix': true,
+        'mask': true,
+        'markerStart': true,
+        'markerMid': true,
+        'markerEnd': true,
+        'clipPath': true,
+        'clipRule': true,
+        'responsible': true,
+        'display': true,
+        'pointerEvents': true
     };
     var1.validAttributes = var0;
     var _closure1_slot0 = var1;

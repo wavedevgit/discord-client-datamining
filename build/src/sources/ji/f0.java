@@ -1,29 +1,31 @@
 package ji;
 
-import java.io.Serializable;
+import android.os.BadParcelableException;
+import android.os.Parcel;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class f0 extends i0 implements Serializable {
-
-    /* renamed from: d  reason: collision with root package name */
-    static final f0 f31643d = new f0();
-
-    private f0() {
+public abstract class f0 {
+    static {
+        f0.class.getClassLoader();
     }
 
-    @Override // ji.i0
-    public i0 h() {
-        return n0.f31700d;
+    public static Parcelable a(Parcel parcel, Parcelable.Creator creator) {
+        if (parcel.readInt() == 0) {
+            return null;
+        }
+        return (Parcelable) creator.createFromParcel(parcel);
     }
 
-    @Override // ji.i0, java.util.Comparator
-    /* renamed from: l */
-    public int compare(Comparable comparable, Comparable comparable2) {
-        ii.m.j(comparable);
-        ii.m.j(comparable2);
-        return comparable.compareTo(comparable2);
+    public static void b(Parcel parcel) {
+        int dataAvail = parcel.dataAvail();
+        if (dataAvail <= 0) {
+            return;
+        }
+        throw new BadParcelableException("Parcel data not fully consumed, unread size: " + dataAvail);
     }
 
-    public String toString() {
-        return "Ordering.natural()";
+    public static void c(Parcel parcel, Parcelable parcelable) {
+        parcel.writeInt(1);
+        parcelable.writeToParcel(parcel, 0);
     }
 }

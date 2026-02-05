@@ -308,4 +308,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useLiveStageData = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4245, 1372, 632, 5662, 22, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4245, 1372, 632, 5666, 22, 2]);

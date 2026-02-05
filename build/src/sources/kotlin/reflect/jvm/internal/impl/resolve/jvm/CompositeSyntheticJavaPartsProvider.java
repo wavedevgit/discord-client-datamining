@@ -18,11 +18,11 @@ import org.jetbrains.annotations.NotNull;
 public final class CompositeSyntheticJavaPartsProvider implements SyntheticJavaPartsProvider {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f34632a;
+    private final List f34156a;
 
     public CompositeSyntheticJavaPartsProvider(@NotNull List<? extends SyntheticJavaPartsProvider> inner) {
         Intrinsics.checkNotNullParameter(inner, "inner");
-        this.f34632a = inner;
+        this.f34156a = inner;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.jvm.SyntheticJavaPartsProvider
@@ -30,7 +30,7 @@ public final class CompositeSyntheticJavaPartsProvider implements SyntheticJavaP
         Intrinsics.checkNotNullParameter(thisDescriptor, "thisDescriptor");
         Intrinsics.checkNotNullParameter(result, "result");
         Intrinsics.checkNotNullParameter(c10, "c");
-        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34632a) {
+        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34156a) {
             syntheticJavaPartsProvider.generateConstructors(thisDescriptor, result, c10);
         }
     }
@@ -41,7 +41,7 @@ public final class CompositeSyntheticJavaPartsProvider implements SyntheticJavaP
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(result, "result");
         Intrinsics.checkNotNullParameter(c10, "c");
-        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34632a) {
+        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34156a) {
             syntheticJavaPartsProvider.generateMethods(thisDescriptor, name, result, c10);
         }
     }
@@ -52,7 +52,7 @@ public final class CompositeSyntheticJavaPartsProvider implements SyntheticJavaP
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(result, "result");
         Intrinsics.checkNotNullParameter(c10, "c");
-        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34632a) {
+        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34156a) {
             syntheticJavaPartsProvider.generateNestedClass(thisDescriptor, name, result, c10);
         }
     }
@@ -63,7 +63,7 @@ public final class CompositeSyntheticJavaPartsProvider implements SyntheticJavaP
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(result, "result");
         Intrinsics.checkNotNullParameter(c10, "c");
-        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34632a) {
+        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34156a) {
             syntheticJavaPartsProvider.generateStaticFunctions(thisDescriptor, name, result, c10);
         }
     }
@@ -74,7 +74,7 @@ public final class CompositeSyntheticJavaPartsProvider implements SyntheticJavaP
         Intrinsics.checkNotNullParameter(thisDescriptor, "thisDescriptor");
         Intrinsics.checkNotNullParameter(c10, "c");
         ArrayList arrayList = new ArrayList();
-        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34632a) {
+        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34156a) {
             CollectionsKt.B(arrayList, syntheticJavaPartsProvider.getMethodNames(thisDescriptor, c10));
         }
         return arrayList;
@@ -86,7 +86,7 @@ public final class CompositeSyntheticJavaPartsProvider implements SyntheticJavaP
         Intrinsics.checkNotNullParameter(thisDescriptor, "thisDescriptor");
         Intrinsics.checkNotNullParameter(c10, "c");
         ArrayList arrayList = new ArrayList();
-        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34632a) {
+        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34156a) {
             CollectionsKt.B(arrayList, syntheticJavaPartsProvider.getNestedClassNames(thisDescriptor, c10));
         }
         return arrayList;
@@ -98,7 +98,7 @@ public final class CompositeSyntheticJavaPartsProvider implements SyntheticJavaP
         Intrinsics.checkNotNullParameter(thisDescriptor, "thisDescriptor");
         Intrinsics.checkNotNullParameter(c10, "c");
         ArrayList arrayList = new ArrayList();
-        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34632a) {
+        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34156a) {
             CollectionsKt.B(arrayList, syntheticJavaPartsProvider.getStaticFunctionNames(thisDescriptor, c10));
         }
         return arrayList;
@@ -110,7 +110,7 @@ public final class CompositeSyntheticJavaPartsProvider implements SyntheticJavaP
         Intrinsics.checkNotNullParameter(thisDescriptor, "thisDescriptor");
         Intrinsics.checkNotNullParameter(propertyDescriptor, "propertyDescriptor");
         Intrinsics.checkNotNullParameter(c10, "c");
-        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34632a) {
+        for (SyntheticJavaPartsProvider syntheticJavaPartsProvider : this.f34156a) {
             propertyDescriptor = syntheticJavaPartsProvider.modifyField(thisDescriptor, propertyDescriptor, c10);
         }
         return propertyDescriptor;

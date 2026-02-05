@@ -40,18 +40,18 @@ public final class StepStyles_StepTextBasedComponentStyleJsonAdapter extends h {
     @NotNull
     public StepStyles.StepTextBasedComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 stepTextBasedComponentStyleContainer = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.StepTextBasedComponentStyle(stepTextBasedComponentStyleContainer);
     }
 
@@ -59,8 +59,8 @@ public final class StepStyles_StepTextBasedComponentStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.StepTextBasedComponentStyle stepTextBasedComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepTextBasedComponentStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, stepTextBasedComponentStyle.getBase());
             writer.E();
             return;

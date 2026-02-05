@@ -7,22 +7,22 @@ import java.io.File;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String[] f45053a;
+    private final String[] f44983a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f45054b;
+    private int f44984b;
 
     public a(int i10) {
         if (i10 > 0) {
-            this.f45053a = new String[i10];
-            this.f45054b = 0;
+            this.f44983a = new String[i10];
+            this.f44984b = 0;
             return;
         }
         throw new IllegalArgumentException();
     }
 
     public synchronized boolean a(String str) {
-        for (String str2 : this.f45053a) {
+        for (String str2 : this.f44983a) {
             if (str.equals(str2)) {
                 return false;
             }
@@ -32,10 +32,10 @@ public class a {
         sb2.append(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
         b(sb2);
         p.g("SoLoader", sb2.toString());
-        String[] strArr = this.f45053a;
-        int i10 = this.f45054b;
+        String[] strArr = this.f44983a;
+        int i10 = this.f44984b;
         strArr[i10 % strArr.length] = str;
-        this.f45054b = i10 + 1;
+        this.f44984b = i10 + 1;
         return true;
     }
 
@@ -43,16 +43,16 @@ public class a {
         String str;
         try {
             sb2.append("Previously recorded ");
-            sb2.append(this.f45054b);
+            sb2.append(this.f44984b);
             sb2.append(" base apk paths.");
-            if (this.f45054b > 0) {
+            if (this.f44984b > 0) {
                 sb2.append(" Most recent ones:");
             }
             int i10 = 0;
             while (true) {
-                String[] strArr = this.f45053a;
+                String[] strArr = this.f44983a;
                 if (i10 < strArr.length) {
-                    int i11 = (this.f45054b - i10) - 1;
+                    int i11 = (this.f44984b - i10) - 1;
                     if (i11 >= 0) {
                         String str2 = strArr[i11 % strArr.length];
                         sb2.append(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
@@ -75,6 +75,6 @@ public class a {
     }
 
     public synchronized int c() {
-        return this.f45054b;
+        return this.f44984b;
     }
 }

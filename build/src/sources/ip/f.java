@@ -1,98 +1,93 @@
 package ip;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewbinding.ViewBinding;
-import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
-import hp.w0;
-import hp.x0;
+import java.util.Set;
+import kotlin.collections.CollectionsKt;
+import kotlin.collections.x0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import okhttp3.Interceptor;
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import okio.Buffer;
+import org.json.JSONObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f implements ViewBinding {
+public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f31024a;
+    public static final a f30056a = new a(null);
 
-    /* renamed from: b  reason: collision with root package name */
-    public final TextView f31025b;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
 
-    /* renamed from: c  reason: collision with root package name */
-    public final ConstraintLayout f31026c;
+        public final Set a() {
+            return x0.c(p.f30074d);
+        }
 
-    /* renamed from: d  reason: collision with root package name */
-    public final Pi2NavigationBar f31027d;
-
-    /* renamed from: e  reason: collision with root package name */
-    public final RecyclerView f31028e;
-
-    /* renamed from: f  reason: collision with root package name */
-    public final Button f31029f;
-
-    /* renamed from: g  reason: collision with root package name */
-    public final TextView f31030g;
-
-    /* renamed from: h  reason: collision with root package name */
-    public final Button f31031h;
-
-    private f(ConstraintLayout constraintLayout, TextView textView, ConstraintLayout constraintLayout2, Pi2NavigationBar pi2NavigationBar, RecyclerView recyclerView, Button button, TextView textView2, Button button2) {
-        this.f31024a = constraintLayout;
-        this.f31025b = textView;
-        this.f31026c = constraintLayout2;
-        this.f31027d = pi2NavigationBar;
-        this.f31028e = recyclerView;
-        this.f31029f = button;
-        this.f31030g = textView2;
-        this.f31031h = button2;
+        private a() {
+        }
     }
 
-    public static f a(View view) {
-        int i10 = w0.f27646e;
-        TextView textView = (TextView) e4.a.a(view, i10);
-        if (textView != null) {
-            i10 = w0.f27658q;
-            ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
-            if (constraintLayout != null) {
-                i10 = w0.E;
-                Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
-                if (pi2NavigationBar != null) {
-                    i10 = w0.O;
-                    RecyclerView recyclerView = (RecyclerView) e4.a.a(view, i10);
-                    if (recyclerView != null) {
-                        i10 = w0.P;
-                        Button button = (Button) e4.a.a(view, i10);
-                        if (button != null) {
-                            i10 = w0.Y;
-                            TextView textView2 = (TextView) e4.a.a(view, i10);
-                            if (textView2 != null) {
-                                i10 = w0.f27643b0;
-                                Button button2 = (Button) e4.a.a(view, i10);
-                                if (button2 != null) {
-                                    return new f((ConstraintLayout) view, textView, constraintLayout, pi2NavigationBar, recyclerView, button, textView2, button2);
-                                }
-                            }
-                        }
-                    }
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Response c(c cVar, Interceptor.Chain chain) {
+        String str;
+        Intrinsics.checkNotNullParameter(chain, "chain");
+        Request h10 = chain.h();
+        RequestBody c10 = h10.c();
+        if ((Intrinsics.areEqual(CollectionsKt.z0(h10.n().n()), "transition") || Intrinsics.areEqual(CollectionsKt.z0(h10.n().n()), "government-id-classification")) && c10 != null && cVar.c()) {
+            String a10 = c.f30044d.a(cVar.a());
+            MediaType contentType = c10.contentType();
+            if (contentType != null) {
+                str = contentType.g();
+            } else {
+                str = null;
+            }
+            if (Intrinsics.areEqual(str, "form-data")) {
+                MultipartBody multipartBody = (MultipartBody) c10;
+                MultipartBody.Builder e10 = new MultipartBody.Builder(null, 1, null).e(multipartBody.contentType());
+                for (MultipartBody.b bVar : multipartBody.b()) {
+                    e10.c(bVar);
                 }
+                return chain.a(h10.k().g(h10.j(), e10.a("meta[workflowInitialVariables][debugForcedStatus]", a10).d()).b());
+            } else if (Intrinsics.areEqual(str, "json")) {
+                Buffer buffer = new Buffer();
+                c10.writeTo(buffer);
+                JSONObject jSONObject = new JSONObject(buffer.T1());
+                JSONObject optJSONObject = jSONObject.optJSONObject("meta");
+                if (optJSONObject == null) {
+                    optJSONObject = new JSONObject();
+                }
+                optJSONObject.put("workflowInitialVariables", new JSONObject().put("debugForcedStatus", a10));
+                jSONObject.put("meta", optJSONObject);
+                RequestBody.Companion companion = RequestBody.Companion;
+                String jSONObject2 = jSONObject.toString();
+                Intrinsics.checkNotNullExpressionValue(jSONObject2, "toString(...)");
+                return chain.a(h10.k().g(h10.j(), companion.b(jSONObject2, c10.contentType())).b());
+            } else {
+                return chain.a(h10);
             }
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+        return chain.a(h10);
     }
 
-    public static f c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(x0.f27685f, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
-        }
-        return a(inflate);
+    public static final Set d() {
+        return f30056a.a();
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public ConstraintLayout getRoot() {
-        return this.f31024a;
+    public final Interceptor b(final c flags) {
+        Intrinsics.checkNotNullParameter(flags, "flags");
+        return new Interceptor() { // from class: ip.e
+            @Override // okhttp3.Interceptor
+            public final Response intercept(Interceptor.Chain chain) {
+                Response c10;
+                c10 = f.c(c.this, chain);
+                return c10;
+            }
+        };
     }
 }

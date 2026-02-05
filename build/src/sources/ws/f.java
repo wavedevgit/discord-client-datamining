@@ -1,31 +1,175 @@
 package ws;
 
-import java.util.List;
+import j$.time.DayOfWeek;
+import j$.time.LocalDate;
+import j$.time.Month;
+import j$.time.chrono.ChronoLocalDate;
+import j$.time.format.DateTimeParseException;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import org.jetbrains.annotations.NotNull;
+import xs.z;
+@Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u000f\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0007\u0018\u0000 (2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0002\u0015)B\u0011\b\u0000\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005B!\b\u0016\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\u0006\u0010\b\u001a\u00020\u0006\u0012\u0006\u0010\t\u001a\u00020\u0006¢\u0006\u0004\b\u0004\u0010\nJ\u001a\u0010\u000e\u001a\u00020\r2\b\u0010\f\u001a\u0004\u0018\u00010\u000bH\u0096\u0002¢\u0006\u0004\b\u000e\u0010\u000fJ\u000f\u0010\u0010\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0010\u0010\u0011J\u000f\u0010\u0013\u001a\u00020\u0012H\u0016¢\u0006\u0004\b\u0013\u0010\u0014J\u0018\u0010\u0015\u001a\u00020\u00062\u0006\u0010\f\u001a\u00020\u0000H\u0096\u0002¢\u0006\u0004\b\u0015\u0010\u0016J\r\u0010\u0017\u001a\u00020\u0006¢\u0006\u0004\b\u0017\u0010\u0011R\u001a\u0010\u0003\u001a\u00020\u00028\u0000X\u0080\u0004¢\u0006\f\n\u0004\b\u0018\u0010\u0019\u001a\u0004\b\u001a\u0010\u001bR\u0011\u0010\u0007\u001a\u00020\u00068F¢\u0006\u0006\u001a\u0004\b\u001c\u0010\u0011R\u0011\u0010\b\u001a\u00020\u00068F¢\u0006\u0006\u001a\u0004\b\u001d\u0010\u0011R\u0015\u0010\"\u001a\u00060\u001ej\u0002`\u001f8F¢\u0006\u0006\u001a\u0004\b \u0010!R\u0011\u0010\t\u001a\u00020\u00068F¢\u0006\u0006\u001a\u0004\b\u0018\u0010\u0011R\u0015\u0010'\u001a\u00060#j\u0002`$8F¢\u0006\u0006\u001a\u0004\b%\u0010&¨\u0006*"}, d2 = {"Lws/f;", "", "j$/time/LocalDate", "value", "<init>", "(Lj$/time/LocalDate;)V", "", "year", "monthNumber", "dayOfMonth", "(III)V", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "hashCode", "()I", "", "toString", "()Ljava/lang/String;", "a", "(Lws/f;)I", "k", "d", "Lj$/time/LocalDate;", "h", "()Lj$/time/LocalDate;", "i", "g", "j$/time/Month", "Lkotlinx/datetime/Month;", "f", "()Lj$/time/Month;", "month", "j$/time/DayOfWeek", "Lkotlinx/datetime/DayOfWeek;", "e", "()Lj$/time/DayOfWeek;", "dayOfWeek", "Companion", "b", "kotlinx-datetime"}, k = 1, mv = {1, 9, 0}, xi = 48)
+@dt.m(with = ct.f.class)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class f extends h {
+public final class f implements Comparable<f> {
+    @NotNull
+    public static final a Companion = new a(null);
 
-    /* renamed from: b  reason: collision with root package name */
-    private final xs.e f52705b;
+    /* renamed from: e  reason: collision with root package name */
+    private static final f f53277e;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final ys.q f52706c;
+    /* renamed from: i  reason: collision with root package name */
+    private static final f f53278i;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public f(List formats) {
-        super(formats);
-        Intrinsics.checkNotNullParameter(formats, "formats");
-        this.f52705b = super.a();
-        this.f52706c = super.b();
+    /* renamed from: d  reason: collision with root package name */
+    private final LocalDate f53279d;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public static /* synthetic */ f b(a aVar, CharSequence charSequence, xs.n nVar, int i10, Object obj) {
+            if ((i10 & 2) != 0) {
+                nVar = h.a();
+            }
+            return aVar.a(charSequence, nVar);
+        }
+
+        public final f a(CharSequence input, xs.n format) {
+            Intrinsics.checkNotNullParameter(input, "input");
+            Intrinsics.checkNotNullParameter(format, "format");
+            if (format == b.f53280a.a()) {
+                try {
+                    return new f(LocalDate.parse(ys.d.d(input.toString())));
+                } catch (DateTimeParseException e10) {
+                    throw new ws.b(e10);
+                }
+            }
+            return (f) format.a(input);
+        }
+
+        @NotNull
+        public final KSerializer serializer() {
+            return ct.f.f20022a;
+        }
+
+        private a() {
+        }
     }
 
-    @Override // ws.h, ws.o
-    public xs.e a() {
-        return this.f52705b;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final b f53280a = new b();
+
+        /* renamed from: b  reason: collision with root package name */
+        private static final xs.n f53281b = z.c();
+
+        private b() {
+        }
+
+        public final xs.n a() {
+            return z.b();
+        }
     }
 
-    @Override // ws.h, ws.o
-    public ys.q b() {
-        return this.f52706c;
+    static {
+        LocalDate MIN = LocalDate.MIN;
+        Intrinsics.checkNotNullExpressionValue(MIN, "MIN");
+        f53277e = new f(MIN);
+        LocalDate MAX = LocalDate.MAX;
+        Intrinsics.checkNotNullExpressionValue(MAX, "MAX");
+        f53278i = new f(MAX);
+    }
+
+    public f(LocalDate value) {
+        Intrinsics.checkNotNullParameter(value, "value");
+        this.f53279d = value;
+    }
+
+    @Override // java.lang.Comparable
+    /* renamed from: a */
+    public int compareTo(f other) {
+        Intrinsics.checkNotNullParameter(other, "other");
+        return this.f53279d.compareTo((ChronoLocalDate) other.f53279d);
+    }
+
+    public final int d() {
+        return this.f53279d.getDayOfMonth();
+    }
+
+    public final DayOfWeek e() {
+        DayOfWeek dayOfWeek = this.f53279d.getDayOfWeek();
+        Intrinsics.checkNotNullExpressionValue(dayOfWeek, "getDayOfWeek(...)");
+        return dayOfWeek;
+    }
+
+    public boolean equals(Object obj) {
+        if (this != obj) {
+            if (!(obj instanceof f) || !Intrinsics.areEqual(this.f53279d, ((f) obj).f53279d)) {
+                return false;
+            }
+            return true;
+        }
+        return true;
+    }
+
+    public final Month f() {
+        Month month = this.f53279d.getMonth();
+        Intrinsics.checkNotNullExpressionValue(month, "getMonth(...)");
+        return month;
+    }
+
+    public final int g() {
+        return this.f53279d.getMonthValue();
+    }
+
+    public final LocalDate h() {
+        return this.f53279d;
+    }
+
+    public int hashCode() {
+        return this.f53279d.hashCode();
+    }
+
+    public final int i() {
+        return this.f53279d.getYear();
+    }
+
+    public final int k() {
+        return ys.c.a(this.f53279d.toEpochDay());
+    }
+
+    public String toString() {
+        String localDate = this.f53279d.toString();
+        Intrinsics.checkNotNullExpressionValue(localDate, "toString(...)");
+        return localDate;
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public f(int r1, int r2, int r3) {
+        /*
+            r0 = this;
+            j$.time.LocalDate r1 = j$.time.LocalDate.of(r1, r2, r3)     // Catch: j$.time.DateTimeException -> Lb
+            kotlin.jvm.internal.Intrinsics.checkNotNull(r1)
+            r0.<init>(r1)
+            return
+        Lb:
+            r1 = move-exception
+            java.lang.IllegalArgumentException r2 = new java.lang.IllegalArgumentException
+            r2.<init>(r1)
+            throw r2
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ws.f.<init>(int, int, int):void");
     }
 }

@@ -4,62 +4,62 @@ public interface a {
 
     /* renamed from: com.facebook.hermes.intl.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    static /* synthetic */ class C0138a {
+    static /* synthetic */ class C0154a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f9864a;
+        static final /* synthetic */ int[] f10249a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f9865b;
+        static final /* synthetic */ int[] f10250b;
 
         /* renamed from: c  reason: collision with root package name */
-        static final /* synthetic */ int[] f9866c;
+        static final /* synthetic */ int[] f10251c;
 
         static {
             int[] iArr = new int[b.values().length];
-            f9866c = iArr;
+            f10251c = iArr;
             try {
                 iArr[b.UPPER.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f9866c[b.LOWER.ordinal()] = 2;
+                f10251c[b.LOWER.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f9866c[b.FALSE.ordinal()] = 3;
+                f10251c[b.FALSE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             int[] iArr2 = new int[d.values().length];
-            f9865b = iArr2;
+            f10250b = iArr2;
             try {
                 iArr2[d.SORT.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f9865b[d.SEARCH.ordinal()] = 2;
+                f10250b[d.SEARCH.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
             int[] iArr3 = new int[c.values().length];
-            f9864a = iArr3;
+            f10249a = iArr3;
             try {
                 iArr3[c.BASE.ordinal()] = 1;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f9864a[c.ACCENT.ordinal()] = 2;
+                f10249a[c.ACCENT.ordinal()] = 2;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f9864a[c.CASE.ordinal()] = 3;
+                f10249a[c.CASE.ordinal()] = 3;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f9864a[c.VARIANT.ordinal()] = 4;
+                f10249a[c.VARIANT.ordinal()] = 4;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f9864a[c.LOCALE.ordinal()] = 5;
+                f10249a[c.LOCALE.ordinal()] = 5;
             } catch (NoSuchFieldError unused10) {
             }
         }
@@ -73,7 +73,7 @@ public interface a {
 
         @Override // java.lang.Enum
         public String toString() {
-            int i10 = C0138a.f9866c[ordinal()];
+            int i10 = C0154a.f10251c[ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
@@ -97,7 +97,7 @@ public interface a {
 
         @Override // java.lang.Enum
         public String toString() {
-            int i10 = C0138a.f9864a[ordinal()];
+            int i10 = C0154a.f10249a[ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
@@ -124,7 +124,7 @@ public interface a {
 
         @Override // java.lang.Enum
         public String toString() {
-            int i10 = C0138a.f9865b[ordinal()];
+            int i10 = C0154a.f10250b[ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
                     return "search";

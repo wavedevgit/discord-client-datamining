@@ -41,18 +41,18 @@ public final class AttributeStyles_TextBasedFontFamilyStyleJsonAdapter extends h
     @NotNull
     public AttributeStyles.TextBasedFontFamilyStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.FontName fontName = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 fontName = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.TextBasedFontFamilyStyle(fontName);
     }
 
@@ -60,8 +60,8 @@ public final class AttributeStyles_TextBasedFontFamilyStyleJsonAdapter extends h
     public void toJson(@NotNull t writer, AttributeStyles.TextBasedFontFamilyStyle textBasedFontFamilyStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (textBasedFontFamilyStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableFontNameAdapter.toJson(writer, textBasedFontFamilyStyle.getBase());
             writer.E();
             return;

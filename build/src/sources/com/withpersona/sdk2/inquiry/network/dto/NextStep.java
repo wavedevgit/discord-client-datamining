@@ -35,7 +35,7 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
-import lr.l;
+import or.l;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.MediaStreamTrack;
 @Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u0000 \b2\u00020\u0001:\b\b\t\n\u000b\f\r\u000e\u000fB\u0011\b\u0004\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007\u0082\u0001\u0006\u0010\u0011\u0012\u0013\u0014\u0015¨\u0006\u0016"}, d2 = {"Lcom/withpersona/sdk2/inquiry/network/dto/NextStep;", "", StackTraceHelper.NAME_KEY, "", "<init>", "(Ljava/lang/String;)V", "getName", "()Ljava/lang/String;", "Companion", "Unknown", "Ui", "GovernmentId", "Selfie", "Document", "CancelDialog", "Complete", "Lcom/withpersona/sdk2/inquiry/network/dto/NextStep$Complete;", "Lcom/withpersona/sdk2/inquiry/network/dto/NextStep$Document;", "Lcom/withpersona/sdk2/inquiry/network/dto/NextStep$GovernmentId;", "Lcom/withpersona/sdk2/inquiry/network/dto/NextStep$Selfie;", "Lcom/withpersona/sdk2/inquiry/network/dto/NextStep$Ui;", "Lcom/withpersona/sdk2/inquiry/network/dto/NextStep$Unknown;", "network-inquiry_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -121,7 +121,7 @@ public abstract class NextStep {
 
         @NotNull
         public final h.e createAdapter() {
-            um.b e10 = um.b.b(NextStep.class, "type").c(Unknown.INSTANCE).e(Ui.class, "ui").e(GovernmentId.class, "government_id").e(Selfie.class, "selfie").e(Document.class, "document").e(Complete.class, "complete");
+            xm.b e10 = xm.b.b(NextStep.class, "type").c(Unknown.INSTANCE).e(Ui.class, "ui").e(GovernmentId.class, "government_id").e(Selfie.class, "selfie").e(Document.class, "document").e(Complete.class, "complete");
             Intrinsics.checkNotNullExpressionValue(e10, "withSubtype(...)");
             return e10;
         }
@@ -1688,7 +1688,7 @@ public abstract class NextStep {
             static {
                 StartPage[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = sr.a.a($values);
+                $ENTRIES = vr.a.a($values);
             }
 
             private StartPage(String str, int i10) {
@@ -3140,7 +3140,7 @@ public abstract class NextStep {
             static {
                 CaptureFileType[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = sr.a.a($values);
+                $ENTRIES = vr.a.a($values);
                 Companion = new Companion(null);
             }
 
@@ -3965,7 +3965,7 @@ public abstract class NextStep {
             static {
                 PassportNfcOption[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = sr.a.a($values);
+                $ENTRIES = vr.a.a($values);
                 Companion = new Companion(null);
             }
 
@@ -4454,38 +4454,38 @@ public abstract class NextStep {
                 public SelectPage fromJson(@NotNull m reader) {
                     Intrinsics.checkNotNullParameter(reader, "reader");
                     LinkedHashMap linkedHashMap = new LinkedHashMap();
-                    reader.r();
+                    reader.s();
                     String str = "";
                     String str2 = str;
                     String str3 = str2;
                     String str4 = null;
                     while (reader.hasNext()) {
-                        String l02 = reader.l0();
-                        if (l02 != null) {
-                            switch (l02.hashCode()) {
+                        String m02 = reader.m0();
+                        if (m02 != null) {
+                            switch (m02.hashCode()) {
                                 case -979805852:
-                                    if (!l02.equals("prompt")) {
+                                    if (!m02.equals("prompt")) {
                                         break;
                                     } else {
                                         str2 = reader.f1();
                                         continue;
                                     }
                                 case 110371416:
-                                    if (!l02.equals("title")) {
+                                    if (!m02.equals("title")) {
                                         break;
                                     } else {
                                         str = reader.f1();
                                         continue;
                                     }
                                 case 432371099:
-                                    if (!l02.equals("disclaimer")) {
+                                    if (!m02.equals("disclaimer")) {
                                         break;
                                     } else {
                                         str4 = JsonReaderUtilsKt.nextStringOrNull(reader);
                                         continue;
                                     }
                                 case 1282023341:
-                                    if (!l02.equals("optionNotice")) {
+                                    if (!m02.equals("optionNotice")) {
                                         break;
                                     } else {
                                         str3 = reader.f1();
@@ -4494,12 +4494,12 @@ public abstract class NextStep {
                             }
                         }
                         if (reader.hasNext() && reader.E() == m.c.STRING) {
-                            linkedHashMap.put(l02, reader.f1());
+                            linkedHashMap.put(m02, reader.f1());
                         } else {
                             reader.P();
                         }
                     }
-                    reader.y();
+                    reader.z();
                     return new SelectPage(str, str2, str3, str4, linkedHashMap);
                 }
             }
@@ -4634,7 +4634,7 @@ public abstract class NextStep {
             static {
                 VideoCaptureMethod[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = sr.a.a($values);
+                $ENTRIES = vr.a.a($values);
                 Companion = new Companion(null);
             }
 
@@ -5192,7 +5192,7 @@ public abstract class NextStep {
             static {
                 CaptureFileType[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = sr.a.a($values);
+                $ENTRIES = vr.a.a($values);
                 Companion = new Companion(null);
             }
 
@@ -5235,7 +5235,7 @@ public abstract class NextStep {
             static {
                 CaptureMethod[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = sr.a.a($values);
+                $ENTRIES = vr.a.a($values);
             }
 
             private CaptureMethod(String str, int i10) {
@@ -5965,7 +5965,7 @@ public abstract class NextStep {
             static {
                 SelfiePose[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = sr.a.a($values);
+                $ENTRIES = vr.a.a($values);
             }
 
             private SelfiePose(String str, int i10) {
@@ -6032,7 +6032,7 @@ public abstract class NextStep {
             static {
                 VideoCaptureMethod[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = sr.a.a($values);
+                $ENTRIES = vr.a.a($values);
                 Companion = new Companion(null);
             }
 

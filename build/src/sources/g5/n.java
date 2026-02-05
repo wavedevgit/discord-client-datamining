@@ -12,26 +12,26 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public final class n implements Iterable, KMappedMarker {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final b f25099e = new b(null);
+    public static final b f23798e = new b(null);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final n f25100i = new n();
+    public static final n f23799i = new n();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f25101d;
+    private final Map f23800d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Map f25102a;
+        private final Map f23801a;
 
         public a(n nVar) {
-            this.f25102a = o0.y(nVar.f25101d);
+            this.f23801a = o0.y(nVar.f23800d);
         }
 
         public final n a() {
-            return new n(k5.c.b(this.f25102a), null);
+            return new n(k5.c.b(this.f23801a), null);
         }
     }
 
@@ -53,7 +53,7 @@ public final class n implements Iterable, KMappedMarker {
         if (isEmpty()) {
             return o0.i();
         }
-        Map map = this.f25101d;
+        Map map = this.f23800d;
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         Iterator it = map.entrySet().iterator();
         if (!it.hasNext()) {
@@ -68,7 +68,7 @@ public final class n implements Iterable, KMappedMarker {
     }
 
     public final Object e(String str) {
-        android.support.v4.media.session.b.a(this.f25101d.get(str));
+        android.support.v4.media.session.b.a(this.f23800d.get(str));
         return null;
     }
 
@@ -76,37 +76,37 @@ public final class n implements Iterable, KMappedMarker {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof n) && Intrinsics.areEqual(this.f25101d, ((n) obj).f25101d)) {
+        if ((obj instanceof n) && Intrinsics.areEqual(this.f23800d, ((n) obj).f23800d)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f25101d.hashCode();
+        return this.f23800d.hashCode();
     }
 
     public final boolean isEmpty() {
-        return this.f25101d.isEmpty();
+        return this.f23800d.isEmpty();
     }
 
     @Override // java.lang.Iterable
     public Iterator iterator() {
-        Map map = this.f25101d;
+        Map map = this.f23800d;
         ArrayList arrayList = new ArrayList(map.size());
         for (Map.Entry entry : map.entrySet()) {
             android.support.v4.media.session.b.a(entry.getValue());
-            arrayList.add(lr.v.a((String) entry.getKey(), null));
+            arrayList.add(or.v.a((String) entry.getKey(), null));
         }
         return arrayList.iterator();
     }
 
     public String toString() {
-        return "Parameters(entries=" + this.f25101d + ')';
+        return "Parameters(entries=" + this.f23800d + ')';
     }
 
     private n(Map map) {
-        this.f25101d = map;
+        this.f23800d = map;
     }
 
     public n() {

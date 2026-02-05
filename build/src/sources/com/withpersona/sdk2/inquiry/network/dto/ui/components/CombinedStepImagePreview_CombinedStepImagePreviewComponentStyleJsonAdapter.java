@@ -57,27 +57,27 @@ public final class CombinedStepImagePreview_CombinedStepImagePreviewComponentSty
     @NotNull
     public CombinedStepImagePreview.CombinedStepImagePreviewComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         AttributeStyles.RemoteImageHeightStyle remoteImageHeightStyle = null;
         AttributeStyles.RemoteImageWidthStyle remoteImageWidthStyle = null;
         AttributeStyles.RemoteImageJustifyStyle remoteImageJustifyStyle = null;
         AttributeStyles.RemoteImageMarginStyle remoteImageMarginStyle = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 remoteImageHeightStyle = (AttributeStyles.RemoteImageHeightStyle) this.nullableRemoteImageHeightStyleAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 remoteImageWidthStyle = (AttributeStyles.RemoteImageWidthStyle) this.nullableRemoteImageWidthStyleAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 remoteImageJustifyStyle = (AttributeStyles.RemoteImageJustifyStyle) this.nullableRemoteImageJustifyStyleAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 remoteImageMarginStyle = (AttributeStyles.RemoteImageMarginStyle) this.nullableRemoteImageMarginStyleAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new CombinedStepImagePreview.CombinedStepImagePreviewComponentStyle(remoteImageHeightStyle, remoteImageWidthStyle, remoteImageJustifyStyle, remoteImageMarginStyle);
     }
 
@@ -85,14 +85,14 @@ public final class CombinedStepImagePreview_CombinedStepImagePreviewComponentSty
     public void toJson(@NotNull t writer, CombinedStepImagePreview.CombinedStepImagePreviewComponentStyle combinedStepImagePreviewComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (combinedStepImagePreviewComponentStyle != null) {
-            writer.l();
-            writer.A0("height");
+            writer.k();
+            writer.W("height");
             this.nullableRemoteImageHeightStyleAdapter.toJson(writer, combinedStepImagePreviewComponentStyle.getHeight());
-            writer.A0("width");
+            writer.W("width");
             this.nullableRemoteImageWidthStyleAdapter.toJson(writer, combinedStepImagePreviewComponentStyle.getWidth());
-            writer.A0("justify");
+            writer.W("justify");
             this.nullableRemoteImageJustifyStyleAdapter.toJson(writer, combinedStepImagePreviewComponentStyle.getJustify());
-            writer.A0(ViewProps.MARGIN);
+            writer.W(ViewProps.MARGIN);
             this.nullableRemoteImageMarginStyleAdapter.toJson(writer, combinedStepImagePreviewComponentStyle.getMargin());
             writer.E();
             return;

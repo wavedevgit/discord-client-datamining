@@ -21,19 +21,19 @@ public enum a {
     private static final m B;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f13775d;
+    private final int f14169d;
 
     static {
         a[] values;
         l lVar = new l();
         for (a aVar : values()) {
-            lVar.a(Integer.valueOf(aVar.f13775d), aVar);
+            lVar.a(Integer.valueOf(aVar.f14169d), aVar);
         }
         B = lVar.b();
     }
 
     a(int i10) {
-        this.f13775d = i10;
+        this.f14169d = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

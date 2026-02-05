@@ -1,20 +1,11 @@
 package ak;
 
-import com.google.android.gms.dynamite.DynamiteModule;
-import java.util.concurrent.atomic.AtomicReference;
+import gf.q;
+import sj.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {
-    public static boolean a(AtomicReference atomicReference, String str) {
-        boolean z10;
-        if (atomicReference.get() != null) {
-            return ((Boolean) atomicReference.get()).booleanValue();
-        }
-        if (DynamiteModule.a(pj.i.c().b(), str) > 0) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        atomicReference.set(Boolean.valueOf(z10));
-        return z10;
+    public static d a(e eVar) {
+        q.m(eVar, "You must provide a valid FaceDetectorOptions.");
+        return ((bk.d) i.c().a(bk.d.class)).a(eVar);
     }
 }

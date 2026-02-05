@@ -1,38 +1,31 @@
 package pu;
-
-import java.util.List;
-import java.util.Map;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import pu.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface f extends pu.a {
+final class f {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static b a(f fVar, List expressionValues, Object obj, h evaluator) {
-            Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
-            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-            return a.C0565a.a(fVar, expressionValues, obj, evaluator);
-        }
+    /* renamed from: a  reason: collision with root package name */
+    private final long f46654a;
 
-        public static Object b(f fVar, Map map, List expressionValues) {
-            Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
-            return a.C0565a.b(fVar, map, expressionValues);
-        }
+    /* renamed from: b  reason: collision with root package name */
+    private final long f46655b;
 
-        public static Object c(f fVar, Object obj, Object obj2, h evaluator, Function2 arrayOperation) {
-            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-            Intrinsics.checkNotNullParameter(arrayOperation, "arrayOperation");
-            return arrayOperation.invoke(fVar.c(sv.a.c(obj), obj2, evaluator), evaluator);
-        }
+    /* renamed from: c  reason: collision with root package name */
+    private final int f46656c;
 
-        public static List d(f fVar, List expression, Object obj, h evaluator) {
-            Intrinsics.checkNotNullParameter(expression, "expression");
-            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-            return a.C0565a.c(fVar, expression, obj, evaluator);
-        }
+    public f(long j10, long j11, int i10) {
+        this.f46654a = j10;
+        this.f46655b = j11;
+        this.f46656c = i10;
     }
 
-    Object b(Object obj, Object obj2, h hVar, Function2 function2);
+    public final long a() {
+        return this.f46655b;
+    }
+
+    public final int b() {
+        return this.f46656c;
+    }
+
+    public final long c() {
+        return this.f46654a;
+    }
 }

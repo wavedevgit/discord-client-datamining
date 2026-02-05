@@ -325,4 +325,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useMaybeFetchCollectiblesCategoriesShared = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1590, 4598, 5729, 566, 4649, 4597, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1590, 4598, 5733, 566, 4649, 4597, 2]);

@@ -47,24 +47,24 @@ public final class NextStep_GovernmentId_DigitalIdRequestJsonAdapter extends h {
     @NotNull
     public NextStep.GovernmentId.DigitalIdRequest fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         Map map = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 map = (Map) this.nullableMapOfStringIntAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new NextStep.GovernmentId.DigitalIdRequest(str, str2, map);
     }
 
@@ -72,12 +72,12 @@ public final class NextStep_GovernmentId_DigitalIdRequestJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.GovernmentId.DigitalIdRequest digitalIdRequest) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (digitalIdRequest != null) {
-            writer.l();
-            writer.A0("idType");
+            writer.k();
+            writer.W("idType");
             this.nullableStringAdapter.toJson(writer, digitalIdRequest.getIdType());
-            writer.A0("minAge");
+            writer.W("minAge");
             this.nullableStringAdapter.toJson(writer, digitalIdRequest.getMinAge());
-            writer.A0("elementToStoreLength");
+            writer.W("elementToStoreLength");
             this.nullableMapOfStringIntAdapter.toJson(writer, digitalIdRequest.getElementToStoreLength());
             writer.E();
             return;

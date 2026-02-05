@@ -10,14 +10,14 @@ public final class g extends fg.a implements IInterface {
         super(iBinder, "com.google.android.gms.common.moduleinstall.internal.IModuleInstallService");
     }
 
-    public final void S0(f fVar, a aVar) {
+    public final void W0(f fVar, a aVar) {
         Parcel e10 = e();
         fg.c.d(e10, fVar);
         fg.c.c(e10, aVar);
         f(1, e10);
     }
 
-    public final void T0(f fVar, a aVar, h hVar) {
+    public final void X0(f fVar, a aVar, h hVar) {
         Parcel e10 = e();
         fg.c.d(e10, fVar);
         fg.c.c(e10, aVar);

@@ -1,21 +1,27 @@
 package ov;
 
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface o {
+public class o extends RuntimeException {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static String a(o oVar, Object obj) {
-            List c10 = sv.a.c(obj);
-            if (c10.size() <= 1) {
-                Object firstOrNull = CollectionsKt.firstOrNull(c10);
-                if (firstOrNull instanceof String) {
-                    return (String) firstOrNull;
-                }
-            }
-            return null;
-        }
+    /* renamed from: d  reason: collision with root package name */
+    private final int f44608d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final String f44609e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final transient z f44610i;
+
+    public o(z zVar) {
+        super(a(zVar));
+        this.f44608d = zVar.b();
+        this.f44609e = zVar.h();
+        this.f44610i = zVar;
+    }
+
+    private static String a(z zVar) {
+        Objects.requireNonNull(zVar, "response == null");
+        return "HTTP " + zVar.b() + " " + zVar.h();
     }
 }

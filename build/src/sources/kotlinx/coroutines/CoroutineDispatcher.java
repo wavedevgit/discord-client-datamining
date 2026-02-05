@@ -11,7 +11,7 @@ import kotlinx.coroutines.CoroutineDispatcher;
 public abstract class CoroutineDispatcher extends kotlin.coroutines.a implements kotlin.coroutines.d {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f35472e = new a(null);
+    public static final a f34996e = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.coroutines.b {
@@ -28,7 +28,7 @@ public abstract class CoroutineDispatcher extends kotlin.coroutines.a implements
         }
 
         private a() {
-            super(kotlin.coroutines.d.f32536g, new Function1() { // from class: js.y
+            super(kotlin.coroutines.d.f32060g, new Function1() { // from class: ms.y
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     CoroutineDispatcher d10;
@@ -40,7 +40,7 @@ public abstract class CoroutineDispatcher extends kotlin.coroutines.a implements
     }
 
     public CoroutineDispatcher() {
-        super(kotlin.coroutines.d.f32536g);
+        super(kotlin.coroutines.d.f32060g);
     }
 
     public static /* synthetic */ CoroutineDispatcher c2(CoroutineDispatcher coroutineDispatcher, int i10, String str, int i11, Object obj) {
@@ -55,13 +55,13 @@ public abstract class CoroutineDispatcher extends kotlin.coroutines.a implements
 
     @Override // kotlin.coroutines.d
     public final Continuation E(Continuation continuation) {
-        return new os.i(this, continuation);
+        return new rs.i(this, continuation);
     }
 
     public abstract void E1(CoroutineContext coroutineContext, Runnable runnable);
 
     public void U1(CoroutineContext coroutineContext, Runnable runnable) {
-        os.j.c(this, coroutineContext, runnable);
+        rs.j.c(this, coroutineContext, runnable);
     }
 
     public boolean W1(CoroutineContext coroutineContext) {
@@ -73,27 +73,27 @@ public abstract class CoroutineDispatcher extends kotlin.coroutines.a implements
     }
 
     public CoroutineDispatcher b2(int i10, String str) {
-        os.m.a(i10);
-        return new os.l(this, i10, str);
-    }
-
-    @Override // kotlin.coroutines.a, kotlin.coroutines.CoroutineContext
-    public CoroutineContext e1(CoroutineContext.b bVar) {
-        return d.a.b(this, bVar);
+        rs.m.a(i10);
+        return new rs.l(this, i10, str);
     }
 
     @Override // kotlin.coroutines.a, kotlin.coroutines.CoroutineContext.Element, kotlin.coroutines.CoroutineContext
-    public CoroutineContext.Element l(CoroutineContext.b bVar) {
+    public CoroutineContext.Element k(CoroutineContext.b bVar) {
         return d.a.a(this, bVar);
     }
 
     @Override // kotlin.coroutines.d
-    public final void n(Continuation continuation) {
+    public final void o(Continuation continuation) {
         Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlinx.coroutines.internal.DispatchedContinuation<*>");
-        ((os.i) continuation).x();
+        ((rs.i) continuation).w();
     }
 
     public String toString() {
-        return js.e0.a(this) + '@' + js.e0.b(this);
+        return ms.e0.a(this) + '@' + ms.e0.b(this);
+    }
+
+    @Override // kotlin.coroutines.a, kotlin.coroutines.CoroutineContext
+    public CoroutineContext x1(CoroutineContext.b bVar) {
+        return d.a.b(this, bVar);
     }
 }

@@ -5,7 +5,7 @@ public interface i1 extends Comparable {
 
     boolean c();
 
-    boolean n();
+    boolean o();
 
     int zza();
 }

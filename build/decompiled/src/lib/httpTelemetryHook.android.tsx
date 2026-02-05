@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'lib/httpTelemetryHook.android.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun112319: for (var _fun112319_ip = 0;;) switch (_fun112319_ip) {
+        _fun112412: for (var _fun112412_ip = 0;;) switch (_fun112412_ip) {
             case 0:
                 var5 = arg0;
                 var4 = arg1;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.method = var4;
                 var0 = var2.bind(var3)(var1, var0);
             case 70: // try_end0
-                _fun112319_ip = 74;
-                continue _fun112319;
+                _fun112412_ip = 74;
+                continue _fun112412;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 0);
             case 74:

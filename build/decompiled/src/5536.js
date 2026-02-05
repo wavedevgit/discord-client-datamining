@@ -1,53 +1,116 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var1);
-    var1 = {};
-    var6 = 'RNSVGLinearGradient';
-    var1.uiViewClassName = var6;
-    var0 = {
-        'name': true,
-        'opacity': true,
-        'matrix': true,
-        'mask': true,
-        'markerStart': true,
-        'markerMid': true,
-        'markerEnd': true,
-        'clipPath': true,
-        'clipRule': true,
-        'responsible': true,
-        'display': true,
-        'pointerEvents': true,
-        'x1': true,
-        'y1': true,
-        'x2': true,
-        'y2': true,
-        'gradient': true,
-        'gradientUnits': true,
-        'gradientTransform': true
-    };
-    var1.validAttributes = var0;
-    var _closure1_slot0 = var1;
-    var4 = dependencyMap;
-    var0 = 0;
-    var5 = var4[var0];
-    var4 = require;
-    var0 = undefined;
-    var5 = var4.bind(var0)(var5);
-    var4 = var5.get;
-    var3 = function() { // Environment: var3
-        var0 = _closure1_slot0;
-        return var0;
-    };
-    var3 = var4.bind(var5)(var6, var3);
-    var2.default = var3;
-    var2.__INTERNAL_VIEW_CONFIG = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [42]);
+    _fun48890: for (var _fun48890_ip = 0;;) switch (_fun48890_ip) {
+        case 0:
+            var5 = require;
+            var2 = exports;
+            var7 = dependencyMap;
+            var0 = global;
+            var8 = var0.Object;
+            var6 = var8.defineProperty;
+            var4 = {};
+            var1 = true;
+            var4.value = var1;
+            var1 = '__esModule';
+            var1 = var6.bind(var8)(var2, var1, var4);
+            var1 = {};
+            var6 = 'RNSVGImage';
+            var1.uiViewClassName = var6;
+            var4 = {};
+            var8 = {};
+            var9 = 'onLoad';
+            var8.registrationName = var9;
+            var4.topLoad = var8;
+            var8 = {};
+            var9 = 'onSvgLayout';
+            var8.registrationName = var9;
+            var4.topSvgLayout = var8;
+            var1.directEventTypes = var4;
+            var10 = var0.Object;
+            var9 = var10.assign;
+            var8 = {
+                'name': true,
+                'opacity': true,
+                'matrix': true,
+                'mask': true,
+                'markerStart': true,
+                'markerMid': true,
+                'markerEnd': true,
+                'clipPath': true,
+                'clipRule': true,
+                'responsible': true,
+                'display': true,
+                'pointerEvents': true,
+                'color': null,
+                'fill': true,
+                'fillOpacity': true,
+                'fillRule': true,
+                'stroke': true,
+                'strokeOpacity': true,
+                'strokeWidth': true,
+                'strokeLinecap': true,
+                'strokeLinejoin': true,
+                'strokeDasharray': true,
+                'strokeDashoffset': true,
+                'strokeMiterlimit': true,
+                'vectorEffect': true,
+                'propList': true,
+                'filter': true,
+                'x': true,
+                'y': true,
+                'width': true,
+                'height': true,
+                'src': null,
+                'align': true,
+                'meetOrSlice': true
+            };
+            var4 = {};
+            var0 = 0;
+            var11 = var7[var0];
+            var0 = undefined;
+            var11 = var5.bind(var0)(var11);
+            var11 = var11.default;
+            var4.process = var11;
+            var8.color = var4;
+            var4 = {};
+            var11 = 1;
+            var11 = var7[var11];
+            var12 = var5.bind(var0)(var11);
+            var11 = 'default';
+            var13 = var11 in var12;
+            var11 = var12;
+            if (!var13) {
+                _fun48890_ip = 182;
+                continue _fun48890
+            }
+        case 177:
+            var11 = var12.default;
+        case 182:
+            var4.process = var11;
+            var8.src = var4;
+            var4 = 2;
+            var4 = var7[var4];
+            var12 = var5.bind(var0)(var4);
+            var11 = var12.ConditionallyIgnoredEventHandlers;
+            var4 = {
+                'onLoad': true,
+                'onSvgLayout': true
+            };
+            var4 = var11.bind(var12)(var4);
+            var4 = var9.bind(var10)(var8, var4);
+            var1.validAttributes = var4;
+            var _closure1_slot0 = var1;
+            var4 = 3;
+            var4 = var7[var4];
+            var5 = var5.bind(var0)(var4);
+            var4 = var5.get;
+            var3 = function() { // Environment: var3
+                var0 = _closure1_slot0;
+                return var0;
+            };
+            var3 = var4.bind(var5)(var6, var3);
+            var2.default = var3;
+            var2.__INTERNAL_VIEW_CONFIG = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [38, 90, 110, 42]);

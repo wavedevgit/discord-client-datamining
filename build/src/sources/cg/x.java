@@ -13,7 +13,7 @@ public abstract class x extends o implements y {
     protected final boolean e(int i10, Parcel parcel, Parcel parcel2, int i11) {
         if (i10 == 1) {
             p.b(parcel);
-            y0((Status) p.a(parcel, Status.CREATOR), (PendingIntent) p.a(parcel, PendingIntent.CREATOR));
+            E0((Status) p.a(parcel, Status.CREATOR), (PendingIntent) p.a(parcel, PendingIntent.CREATOR));
             return true;
         }
         return false;

@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.name.FqName;
 public class c implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final NotFoundClasses f32843d;
+    private final NotFoundClasses f32367d;
 
     public c(NotFoundClasses notFoundClasses) {
-        this.f32843d = notFoundClasses;
+        this.f32367d = notFoundClasses;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         PackageFragmentDescriptor d10;
-        d10 = NotFoundClasses.d(this.f32843d, (FqName) obj);
+        d10 = NotFoundClasses.d(this.f32367d, (FqName) obj);
         return d10;
     }
 }

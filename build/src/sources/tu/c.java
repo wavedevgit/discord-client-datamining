@@ -1,49 +1,70 @@
 package tu;
 
 import java.util.List;
-import kotlin.collections.CollectionsKt;
-import wu.d;
+import java.util.Map;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements nu.b, wu.d {
+public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f50295a = new c();
+    private final List f51064a;
 
-    private c() {
+    /* renamed from: b  reason: collision with root package name */
+    private final Map f51065b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final Object f51066c;
+
+    public c(List operationData, Map mappingOperation, Object obj) {
+        Intrinsics.checkNotNullParameter(operationData, "operationData");
+        Intrinsics.checkNotNullParameter(mappingOperation, "mappingOperation");
+        this.f51064a = operationData;
+        this.f51065b = mappingOperation;
+        this.f51066c = obj;
     }
 
-    private final Object a(List list) {
-        int size = list.size();
-        if (size == 0) {
-            return null;
+    public final Map a() {
+        return this.f51065b;
+    }
+
+    public final List b() {
+        return this.f51064a;
+    }
+
+    public final Object c() {
+        return this.f51066c;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        if (size != 1) {
-            if (size != 2) {
-                if (size != 3) {
-                    if (b(CollectionsKt.firstOrNull(list))) {
-                        return sv.c.b(list);
-                    }
-                    return a(list.subList(2, list.size()));
-                } else if (b(CollectionsKt.firstOrNull(list))) {
-                    return sv.c.b(list);
-                } else {
-                    return sv.c.c(list);
-                }
-            } else if (!b(CollectionsKt.firstOrNull(list))) {
-                return null;
-            } else {
-                return sv.c.b(list);
-            }
+        if (!(obj instanceof c)) {
+            return false;
         }
-        return CollectionsKt.firstOrNull(list);
+        c cVar = (c) obj;
+        if (Intrinsics.areEqual(this.f51064a, cVar.f51064a) && Intrinsics.areEqual(this.f51065b, cVar.f51065b) && Intrinsics.areEqual(this.f51066c, cVar.f51066c)) {
+            return true;
+        }
+        return false;
     }
 
-    public boolean b(Object obj) {
-        return d.a.a(this, obj);
+    public int hashCode() {
+        int hashCode;
+        int hashCode2 = ((this.f51064a.hashCode() * 31) + this.f51065b.hashCode()) * 31;
+        Object obj = this.f51066c;
+        if (obj == null) {
+            hashCode = 0;
+        } else {
+            hashCode = obj.hashCode();
+        }
+        return hashCode2 + hashCode;
     }
 
-    @Override // nu.b
-    public Object f(Object obj, Object obj2) {
-        return a(sv.a.c(obj));
+    public String toString() {
+        List list = this.f51064a;
+        Map map = this.f51065b;
+        Object obj = this.f51066c;
+        return "OccurrenceCheckInputData(operationData=" + list + ", mappingOperation=" + map + ", operationDefault=" + obj + ")";
     }
 }

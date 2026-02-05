@@ -61,7 +61,7 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
     @NotNull
     public NextStep.Ui.Config fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         int i10 = -1;
         List list = null;
         Boolean bool = null;
@@ -70,7 +70,7 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
         NextStep.Ui.Localizations localizations = null;
         List list2 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -100,7 +100,7 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
                     break;
             }
         }
-        reader.y();
+        reader.z();
         if (i10 == -63) {
             List list3 = list2;
             NextStep.Ui.Localizations localizations2 = localizations;
@@ -115,7 +115,7 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
         List list5 = list;
         Constructor<NextStep.Ui.Config> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Ui.Config.class.getDeclaredConstructor(List.class, Boolean.class, Boolean.class, Boolean.class, NextStep.Ui.Localizations.class, List.class, Integer.TYPE, vm.c.f51688c);
+            constructor = NextStep.Ui.Config.class.getDeclaredConstructor(List.class, Boolean.class, Boolean.class, Boolean.class, NextStep.Ui.Localizations.class, List.class, Integer.TYPE, ym.c.f54853c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -128,18 +128,18 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Ui.Config config) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (config != null) {
-            writer.l();
-            writer.A0("components");
+            writer.k();
+            writer.W("components");
             this.nullableListOfUiComponentConfigAdapter.toJson(writer, config.getComponents());
-            writer.A0("backStepEnabled");
+            writer.W("backStepEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getBackStepEnabled());
-            writer.A0("cancelButtonEnabled");
+            writer.W("cancelButtonEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getCancelButtonEnabled());
-            writer.A0("terminal");
+            writer.W("terminal");
             this.nullableBooleanAdapter.toJson(writer, config.getTerminal());
-            writer.A0("localizations");
+            writer.W("localizations");
             this.nullableLocalizationsAdapter.toJson(writer, config.getLocalizations());
-            writer.A0("serverComponentErrors");
+            writer.W("serverComponentErrors");
             this.nullableListOfUiComponentErrorAdapter.toJson(writer, config.getServerComponentErrors());
             writer.E();
             return;

@@ -10,49 +10,49 @@ import android.widget.ImageView;
 public class AppCompatImageHelper {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ImageView f1445a;
+    private final ImageView f1557a;
 
     /* renamed from: b  reason: collision with root package name */
-    private t0 f1446b;
+    private t0 f1558b;
 
     /* renamed from: c  reason: collision with root package name */
-    private t0 f1447c;
+    private t0 f1559c;
 
     /* renamed from: d  reason: collision with root package name */
-    private t0 f1448d;
+    private t0 f1560d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f1449e = 0;
+    private int f1561e = 0;
 
     public AppCompatImageHelper(ImageView imageView) {
-        this.f1445a = imageView;
+        this.f1557a = imageView;
     }
 
     private boolean a(Drawable drawable) {
-        if (this.f1448d == null) {
-            this.f1448d = new t0();
+        if (this.f1560d == null) {
+            this.f1560d = new t0();
         }
-        t0 t0Var = this.f1448d;
+        t0 t0Var = this.f1560d;
         t0Var.a();
-        ColorStateList a10 = androidx.core.widget.f.a(this.f1445a);
+        ColorStateList a10 = androidx.core.widget.f.a(this.f1557a);
         if (a10 != null) {
-            t0Var.f1808d = true;
-            t0Var.f1805a = a10;
+            t0Var.f1920d = true;
+            t0Var.f1917a = a10;
         }
-        PorterDuff.Mode b10 = androidx.core.widget.f.b(this.f1445a);
+        PorterDuff.Mode b10 = androidx.core.widget.f.b(this.f1557a);
         if (b10 != null) {
-            t0Var.f1807c = true;
-            t0Var.f1806b = b10;
+            t0Var.f1919c = true;
+            t0Var.f1918b = b10;
         }
-        if (!t0Var.f1808d && !t0Var.f1807c) {
+        if (!t0Var.f1920d && !t0Var.f1919c) {
             return false;
         }
-        j.i(drawable, t0Var, this.f1445a.getDrawableState());
+        j.i(drawable, t0Var, this.f1557a.getDrawableState());
         return true;
     }
 
     private boolean l() {
-        if (this.f1446b != null) {
+        if (this.f1558b != null) {
             return true;
         }
         return false;
@@ -60,27 +60,27 @@ public class AppCompatImageHelper {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b() {
-        if (this.f1445a.getDrawable() != null) {
-            this.f1445a.getDrawable().setLevel(this.f1449e);
+        if (this.f1557a.getDrawable() != null) {
+            this.f1557a.getDrawable().setLevel(this.f1561e);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c() {
-        Drawable drawable = this.f1445a.getDrawable();
+        Drawable drawable = this.f1557a.getDrawable();
         if (drawable != null) {
             e0.b(drawable);
         }
         if (drawable != null) {
             if (!l() || !a(drawable)) {
-                t0 t0Var = this.f1447c;
+                t0 t0Var = this.f1559c;
                 if (t0Var != null) {
-                    j.i(drawable, t0Var, this.f1445a.getDrawableState());
+                    j.i(drawable, t0Var, this.f1557a.getDrawableState());
                     return;
                 }
-                t0 t0Var2 = this.f1446b;
+                t0 t0Var2 = this.f1558b;
                 if (t0Var2 != null) {
-                    j.i(drawable, t0Var2, this.f1445a.getDrawableState());
+                    j.i(drawable, t0Var2, this.f1557a.getDrawableState());
                 }
             }
         }
@@ -88,25 +88,25 @@ public class AppCompatImageHelper {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ColorStateList d() {
-        t0 t0Var = this.f1447c;
+        t0 t0Var = this.f1559c;
         if (t0Var != null) {
-            return t0Var.f1805a;
+            return t0Var.f1917a;
         }
         return null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public PorterDuff.Mode e() {
-        t0 t0Var = this.f1447c;
+        t0 t0Var = this.f1559c;
         if (t0Var != null) {
-            return t0Var.f1806b;
+            return t0Var.f1918b;
         }
         return null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean f() {
-        if (this.f1445a.getBackground() instanceof RippleDrawable) {
+        if (this.f1557a.getBackground() instanceof RippleDrawable) {
             return false;
         }
         return true;
@@ -114,22 +114,22 @@ public class AppCompatImageHelper {
 
     public void g(AttributeSet attributeSet, int i10) {
         int n10;
-        v0 v10 = v0.v(this.f1445a.getContext(), attributeSet, f.j.P, i10, 0);
-        ImageView imageView = this.f1445a;
+        v0 v10 = v0.v(this.f1557a.getContext(), attributeSet, f.j.P, i10, 0);
+        ImageView imageView = this.f1557a;
         androidx.core.view.h0.l0(imageView, imageView.getContext(), f.j.P, attributeSet, v10.r(), i10, 0);
         try {
-            Drawable drawable = this.f1445a.getDrawable();
-            if (drawable == null && (n10 = v10.n(f.j.Q, -1)) != -1 && (drawable = g.a.b(this.f1445a.getContext(), n10)) != null) {
-                this.f1445a.setImageDrawable(drawable);
+            Drawable drawable = this.f1557a.getDrawable();
+            if (drawable == null && (n10 = v10.n(f.j.Q, -1)) != -1 && (drawable = g.a.b(this.f1557a.getContext(), n10)) != null) {
+                this.f1557a.setImageDrawable(drawable);
             }
             if (drawable != null) {
                 e0.b(drawable);
             }
             if (v10.s(f.j.R)) {
-                androidx.core.widget.f.c(this.f1445a, v10.c(f.j.R));
+                androidx.core.widget.f.c(this.f1557a, v10.c(f.j.R));
             }
             if (v10.s(f.j.S)) {
-                androidx.core.widget.f.d(this.f1445a, e0.e(v10.k(f.j.S, -1), null));
+                androidx.core.widget.f.d(this.f1557a, e0.e(v10.k(f.j.S, -1), null));
             }
             v10.x();
         } catch (Throwable th2) {
@@ -140,41 +140,41 @@ public class AppCompatImageHelper {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void h(Drawable drawable) {
-        this.f1449e = drawable.getLevel();
+        this.f1561e = drawable.getLevel();
     }
 
     public void i(int i10) {
         if (i10 != 0) {
-            Drawable b10 = g.a.b(this.f1445a.getContext(), i10);
+            Drawable b10 = g.a.b(this.f1557a.getContext(), i10);
             if (b10 != null) {
                 e0.b(b10);
             }
-            this.f1445a.setImageDrawable(b10);
+            this.f1557a.setImageDrawable(b10);
         } else {
-            this.f1445a.setImageDrawable(null);
+            this.f1557a.setImageDrawable(null);
         }
         c();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void j(ColorStateList colorStateList) {
-        if (this.f1447c == null) {
-            this.f1447c = new t0();
+        if (this.f1559c == null) {
+            this.f1559c = new t0();
         }
-        t0 t0Var = this.f1447c;
-        t0Var.f1805a = colorStateList;
-        t0Var.f1808d = true;
+        t0 t0Var = this.f1559c;
+        t0Var.f1917a = colorStateList;
+        t0Var.f1920d = true;
         c();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void k(PorterDuff.Mode mode) {
-        if (this.f1447c == null) {
-            this.f1447c = new t0();
+        if (this.f1559c == null) {
+            this.f1559c = new t0();
         }
-        t0 t0Var = this.f1447c;
-        t0Var.f1806b = mode;
-        t0Var.f1807c = true;
+        t0 t0Var = this.f1559c;
+        t0Var.f1918b = mode;
+        t0Var.f1919c = true;
         c();
     }
 }

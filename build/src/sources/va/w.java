@@ -3,92 +3,92 @@ package va;
 public class w {
 
     /* renamed from: a  reason: collision with root package name */
-    private final z f51272a;
+    private final z f51961a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a0 f51273b;
+    private final a0 f51962b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final z f51274c;
+    private final z f51963c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final r8.d f51275d;
+    private final r8.d f51964d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final z f51276e;
+    private final z f51965e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final a0 f51277f;
+    private final a0 f51966f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final z f51278g;
+    private final z f51967g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final a0 f51279h;
+    private final a0 f51968h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f51280i;
+    private final String f51969i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final int f51281j;
+    private final int f51970j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final int f51282k;
+    private final int f51971k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final boolean f51283l;
+    private final boolean f51972l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final boolean f51284m;
+    private final boolean f51973m;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private z f51285a;
+        private z f51974a;
 
         /* renamed from: b  reason: collision with root package name */
-        private a0 f51286b;
+        private a0 f51975b;
 
         /* renamed from: c  reason: collision with root package name */
-        private z f51287c;
+        private z f51976c;
 
         /* renamed from: d  reason: collision with root package name */
-        private r8.d f51288d;
+        private r8.d f51977d;
 
         /* renamed from: e  reason: collision with root package name */
-        private z f51289e;
+        private z f51978e;
 
         /* renamed from: f  reason: collision with root package name */
-        private a0 f51290f;
+        private a0 f51979f;
 
         /* renamed from: g  reason: collision with root package name */
-        private z f51291g;
+        private z f51980g;
 
         /* renamed from: h  reason: collision with root package name */
-        private a0 f51292h;
+        private a0 f51981h;
 
         /* renamed from: i  reason: collision with root package name */
-        private String f51293i;
+        private String f51982i;
 
         /* renamed from: j  reason: collision with root package name */
-        private int f51294j;
+        private int f51983j;
 
         /* renamed from: k  reason: collision with root package name */
-        private int f51295k;
+        private int f51984k;
 
         /* renamed from: l  reason: collision with root package name */
-        private boolean f51296l;
+        private boolean f51985l;
 
         /* renamed from: m  reason: collision with root package name */
-        public boolean f51297m;
+        public boolean f51986m;
 
         public w m() {
             return new w(this);
         }
 
         public a n(z zVar) {
-            this.f51291g = (z) o8.j.g(zVar);
+            this.f51980g = (z) o8.j.g(zVar);
             return this;
         }
 
@@ -101,55 +101,55 @@ public class w {
     }
 
     public int a() {
-        return this.f51282k;
+        return this.f51971k;
     }
 
     public int b() {
-        return this.f51281j;
+        return this.f51970j;
     }
 
     public z c() {
-        return this.f51272a;
+        return this.f51961a;
     }
 
     public a0 d() {
-        return this.f51273b;
+        return this.f51962b;
     }
 
     public String e() {
-        return this.f51280i;
+        return this.f51969i;
     }
 
     public z f() {
-        return this.f51274c;
+        return this.f51963c;
     }
 
     public z g() {
-        return this.f51276e;
+        return this.f51965e;
     }
 
     public a0 h() {
-        return this.f51277f;
+        return this.f51966f;
     }
 
     public r8.d i() {
-        return this.f51275d;
+        return this.f51964d;
     }
 
     public z j() {
-        return this.f51278g;
+        return this.f51967g;
     }
 
     public a0 k() {
-        return this.f51279h;
+        return this.f51968h;
     }
 
     public boolean l() {
-        return this.f51284m;
+        return this.f51973m;
     }
 
     public boolean m() {
-        return this.f51283l;
+        return this.f51972l;
     }
 
     private w(a aVar) {
@@ -164,61 +164,61 @@ public class w {
         if (ya.b.d()) {
             ya.b.a("PoolConfig()");
         }
-        if (aVar.f51285a != null) {
-            zVar = aVar.f51285a;
+        if (aVar.f51974a != null) {
+            zVar = aVar.f51974a;
         } else {
             zVar = i.a();
         }
-        this.f51272a = zVar;
-        if (aVar.f51286b != null) {
-            a0Var = aVar.f51286b;
+        this.f51961a = zVar;
+        if (aVar.f51975b != null) {
+            a0Var = aVar.f51975b;
         } else {
             a0Var = u.h();
         }
-        this.f51273b = a0Var;
-        if (aVar.f51287c != null) {
-            zVar2 = aVar.f51287c;
+        this.f51962b = a0Var;
+        if (aVar.f51976c != null) {
+            zVar2 = aVar.f51976c;
         } else {
             zVar2 = k.b();
         }
-        this.f51274c = zVar2;
-        if (aVar.f51288d != null) {
-            dVar = aVar.f51288d;
+        this.f51963c = zVar2;
+        if (aVar.f51977d != null) {
+            dVar = aVar.f51977d;
         } else {
             dVar = r8.e.b();
         }
-        this.f51275d = dVar;
-        if (aVar.f51289e != null) {
-            zVar3 = aVar.f51289e;
+        this.f51964d = dVar;
+        if (aVar.f51978e != null) {
+            zVar3 = aVar.f51978e;
         } else {
             zVar3 = l.a();
         }
-        this.f51276e = zVar3;
-        if (aVar.f51290f != null) {
-            a0Var2 = aVar.f51290f;
+        this.f51965e = zVar3;
+        if (aVar.f51979f != null) {
+            a0Var2 = aVar.f51979f;
         } else {
             a0Var2 = u.h();
         }
-        this.f51277f = a0Var2;
-        if (aVar.f51291g != null) {
-            zVar4 = aVar.f51291g;
+        this.f51966f = a0Var2;
+        if (aVar.f51980g != null) {
+            zVar4 = aVar.f51980g;
         } else {
             zVar4 = j.a();
         }
-        this.f51278g = zVar4;
-        if (aVar.f51292h != null) {
-            a0Var3 = aVar.f51292h;
+        this.f51967g = zVar4;
+        if (aVar.f51981h != null) {
+            a0Var3 = aVar.f51981h;
         } else {
             a0Var3 = u.h();
         }
-        this.f51279h = a0Var3;
-        this.f51280i = aVar.f51293i == null ? "legacy" : aVar.f51293i;
-        this.f51281j = aVar.f51294j;
-        this.f51282k = aVar.f51295k > 0 ? aVar.f51295k : 4194304;
-        this.f51283l = aVar.f51296l;
+        this.f51968h = a0Var3;
+        this.f51969i = aVar.f51982i == null ? "legacy" : aVar.f51982i;
+        this.f51970j = aVar.f51983j;
+        this.f51971k = aVar.f51984k > 0 ? aVar.f51984k : 4194304;
+        this.f51972l = aVar.f51985l;
         if (ya.b.d()) {
             ya.b.b();
         }
-        this.f51284m = aVar.f51297m;
+        this.f51973m = aVar.f51986m;
     }
 }

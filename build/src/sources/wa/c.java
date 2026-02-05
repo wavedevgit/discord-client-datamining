@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c extends b {
 
     /* renamed from: h  reason: collision with root package name */
-    private final f f52074h;
+    private final f f52731h;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c(va.d bitmapPool, b2.d decodeBuffers, f platformDecoderOptions) {
@@ -15,7 +15,7 @@ public final class c extends b {
         Intrinsics.checkNotNullParameter(bitmapPool, "bitmapPool");
         Intrinsics.checkNotNullParameter(decodeBuffers, "decodeBuffers");
         Intrinsics.checkNotNullParameter(platformDecoderOptions, "platformDecoderOptions");
-        this.f52074h = platformDecoderOptions;
+        this.f52731h = platformDecoderOptions;
     }
 
     @Override // wa.b

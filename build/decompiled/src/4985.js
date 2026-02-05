@@ -1,53 +1,21 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun44887: for (var _fun44887_ip = 0;;) switch (_fun44887_ip) {
-        case 0:
-            var1 = exports;
-            var2 = global;
-            var5 = var2.Object;
-            var4 = var5.defineProperty;
-            var3 = {};
-            var0 = true;
-            var3.value = var0;
-            var0 = '__esModule';
-            var0 = var4.bind(var5)(var1, var0, var3);
-            var0 = var2.setImmediate;
-            var3 = 'function';
-            var0 = typeof var0;
-            if (!(var3 !== var0)) {
-                _fun44887_ip = 105;
-                continue _fun44887
-            }
-        case 52:
-            var0 = var2.requestAnimationFrame;
-            var0 = typeof var0;
-            if (!(var3 !== var0)) {
-                _fun44887_ip = 85;
-                continue _fun44887
-            }
-        case 65:
-            var4 = var2.queueMicrotask;
-            var3 = var4.bind;
-            var0 = null;
-            var0 = var3.bind(var4)(var0);
-            _fun44887_ip = 103;
-            continue _fun44887;
-        case 85:
-            var5 = var2.requestAnimationFrame;
-            var4 = var5.bind;
-            var3 = null;
-            var0 = var4.bind(var5)(var3);
-        case 103:
-            _fun44887_ip = 123;
-            continue _fun44887;
-        case 105:
-            var4 = var2.setImmediate;
-            var3 = var4.bind;
-            var2 = null;
-            var0 = var3.bind(var4)(var2);
-        case 123:
-            var1.ghQueueMicrotask = var0;
-            var0 = undefined;
-            return var0;
-    }
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = {
+        'REANIMATED_WORKLET': 1,
+        'NATIVE_ANIMATED_EVENT': 2,
+        'JS_FUNCTION_OLD_API': 3,
+        'JS_FUNCTION_NEW_API': 4
+    };
+    var1.ActionType = var0;
+    var0 = undefined;
+    return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

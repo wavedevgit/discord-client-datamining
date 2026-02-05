@@ -41,30 +41,30 @@ public final class StepStyles_DocumentStepFillColorJsonAdapter extends h {
     @NotNull
     public StepStyles.DocumentStepFillColor fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         StyleElements.SimpleElementColor simpleElementColor3 = null;
         StyleElements.SimpleElementColor simpleElementColor4 = null;
         StyleElements.SimpleElementColor simpleElementColor5 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 simpleElementColor3 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 simpleElementColor4 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 4) {
+            } else if (W == 4) {
                 simpleElementColor5 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.DocumentStepFillColor(simpleElementColor, simpleElementColor2, simpleElementColor3, simpleElementColor4, simpleElementColor5);
     }
 
@@ -72,16 +72,16 @@ public final class StepStyles_DocumentStepFillColorJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.DocumentStepFillColor documentStepFillColor) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStepFillColor != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, documentStepFillColor.getBase());
-            writer.A0("imagePreviewPlusIcon");
+            writer.W("imagePreviewPlusIcon");
             this.nullableSimpleElementColorAdapter.toJson(writer, documentStepFillColor.getImagePreviewPlusIcon());
-            writer.A0("imagePreviewXIcon");
+            writer.W("imagePreviewXIcon");
             this.nullableSimpleElementColorAdapter.toJson(writer, documentStepFillColor.getImagePreviewXIcon());
-            writer.A0("imagePreviewMainArea");
+            writer.W("imagePreviewMainArea");
             this.nullableSimpleElementColorAdapter.toJson(writer, documentStepFillColor.getImagePreviewMainArea());
-            writer.A0("imagePreviewCropArea");
+            writer.W("imagePreviewCropArea");
             this.nullableSimpleElementColorAdapter.toJson(writer, documentStepFillColor.getImagePreviewCropArea());
             writer.E();
             return;

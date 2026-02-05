@@ -1,43 +1,45 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
+    var0 = global;
+    var5 = var0.Object;
     var4 = var5.defineProperty;
     var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function arg0() {
-        _fun99113: for (var _fun99113_ip = 0;;) switch (_fun99113_ip) {
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = ['fatal', 'error', 'warning', 'log', 'info', 'debug'];
+    var _closure1_slot0 = var0;
+    var2 = function arg0() {
+        _fun99026: for (var _fun99026_ip = 0;;) switch (_fun99026_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var2 = var2.bind(var0)(var1);
-                var1 = var2._optionalChain;
-                var0 = arg0;
-                var1 = var1.bind(var2)(var0);
-                var0 = null;
-                var0 = var0 == var1;
-                if (var0) {
-                    _fun99113_ip = 50;
-                    continue _fun99113
+                var2 = arg0;
+                var0 = 'warning';
+                var1 = 'warn';
+                if (!(var1 !== var2)) {
+                    _fun99026_ip = 45;
+                    continue _fun99026
                 }
-            case 47:
+            case 15:
+                var3 = _closure1_slot0;
+                var1 = var3.includes;
+                var3 = var1.bind(var3)(var2);
+                var1 = 'log';
+                if (!var3) {
+                    _fun99026_ip = 42;
+                    continue _fun99026
+                }
+            case 39:
+                var1 = var2;
+            case 42:
                 var0 = var1;
-            case 50:
+            case 45:
                 return var0;
         }
     };
-    var1._optionalChainDelete = var0;
+    var1.severityLevelFromString = var2;
+    var1.validSeverityLevels = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12920]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

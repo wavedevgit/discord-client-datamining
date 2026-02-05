@@ -1,159 +1,47 @@
 package us;
+
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface o {
+public final class o {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public interface a extends o {
+    /* renamed from: d  reason: collision with root package name */
+    public static final o f51706d = new o("SUCCESSFUL", 0);
 
-        /* renamed from: us.o$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class C0659a {
-            public static /* synthetic */ void a(a aVar, h0 h0Var, int i10, Object obj) {
-                if (obj == null) {
-                    if ((i10 & 1) != 0) {
-                        h0Var = h0.f50890e;
-                    }
-                    aVar.u(h0Var);
-                    return;
-                }
-                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: dayOfMonth");
-            }
+    /* renamed from: e  reason: collision with root package name */
+    public static final o f51707e = new o("REREGISTER", 1);
 
-            public static /* synthetic */ void b(a aVar, h0 h0Var, int i10, Object obj) {
-                if (obj == null) {
-                    if ((i10 & 1) != 0) {
-                        h0Var = h0.f50890e;
-                    }
-                    aVar.v(h0Var);
-                    return;
-                }
-                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: monthNumber");
-            }
+    /* renamed from: i  reason: collision with root package name */
+    public static final o f51708i = new o("CANCELLED", 2);
 
-            public static /* synthetic */ void c(a aVar, h0 h0Var, int i10, Object obj) {
-                if (obj == null) {
-                    if ((i10 & 1) != 0) {
-                        h0Var = h0.f50890e;
-                    }
-                    aVar.p(h0Var);
-                    return;
-                }
-                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: year");
-            }
-        }
+    /* renamed from: o  reason: collision with root package name */
+    public static final o f51709o = new o("ALREADY_SELECTED", 3);
 
-        void c(s sVar);
+    /* renamed from: p  reason: collision with root package name */
+    private static final /* synthetic */ o[] f51710p;
 
-        void e(f0 f0Var);
+    /* renamed from: q  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f51711q;
 
-        void p(h0 h0Var);
-
-        void t(n nVar);
-
-        void u(h0 h0Var);
-
-        void v(h0 h0Var);
+    static {
+        o[] a10 = a();
+        f51710p = a10;
+        f51711q = vr.a.a(a10);
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public interface b extends a, c, d {
+    private o(String str, int i10) {
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public interface c extends o {
-
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class a {
-            public static /* synthetic */ void a(c cVar, h0 h0Var, int i10, Object obj) {
-                if (obj == null) {
-                    if ((i10 & 1) != 0) {
-                        h0Var = h0.f50890e;
-                    }
-                    cVar.m(h0Var);
-                    return;
-                }
-                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: hour");
-            }
-
-            public static /* synthetic */ void b(c cVar, h0 h0Var, int i10, Object obj) {
-                if (obj == null) {
-                    if ((i10 & 1) != 0) {
-                        h0Var = h0.f50890e;
-                    }
-                    cVar.n(h0Var);
-                    return;
-                }
-                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: minute");
-            }
-
-            public static /* synthetic */ void c(c cVar, h0 h0Var, int i10, Object obj) {
-                if (obj == null) {
-                    if ((i10 & 1) != 0) {
-                        h0Var = h0.f50890e;
-                    }
-                    cVar.l(h0Var);
-                    return;
-                }
-                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: second");
-            }
-        }
-
-        void l(h0 h0Var);
-
-        void m(h0 h0Var);
-
-        void n(h0 h0Var);
-
-        void o(int i10, int i11);
+    private static final /* synthetic */ o[] a() {
+        return new o[]{f51706d, f51707e, f51708i, f51709o};
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public interface d extends o {
-
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class a {
-            public static /* synthetic */ void a(d dVar, h0 h0Var, int i10, Object obj) {
-                if (obj == null) {
-                    if ((i10 & 1) != 0) {
-                        h0Var = h0.f50890e;
-                    }
-                    dVar.q(h0Var);
-                    return;
-                }
-                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: offsetHours");
-            }
-
-            public static /* synthetic */ void b(d dVar, h0 h0Var, int i10, Object obj) {
-                if (obj == null) {
-                    if ((i10 & 1) != 0) {
-                        h0Var = h0.f50890e;
-                    }
-                    dVar.d(h0Var);
-                    return;
-                }
-                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: offsetMinutesOfHour");
-            }
-
-            public static /* synthetic */ void c(d dVar, h0 h0Var, int i10, Object obj) {
-                if (obj == null) {
-                    if ((i10 & 1) != 0) {
-                        h0Var = h0.f50890e;
-                    }
-                    dVar.j(h0Var);
-                    return;
-                }
-                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: offsetSecondsOfMinute");
-            }
-        }
-
-        void d(h0 h0Var);
-
-        void j(h0 h0Var);
-
-        void q(h0 h0Var);
-
-        void r(n nVar);
+    public static o valueOf(String str) {
+        return (o) Enum.valueOf(o.class, str);
     }
 
-    void k(String str);
+    public static o[] values() {
+        return (o[]) f51710p.clone();
+    }
 }

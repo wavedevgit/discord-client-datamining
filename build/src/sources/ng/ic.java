@@ -7,7 +7,7 @@ import java.util.Map;
 public abstract class ic {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f41218a = new HashMap();
+    private static final Map f40678a = new HashMap();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean a(String str) {

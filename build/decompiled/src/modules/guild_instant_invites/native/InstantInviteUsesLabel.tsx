@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_instant_invites/native/InstantInviteUsesLabel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73074: for (var _fun73074_ip = 0;;) switch (_fun73074_ip) {
+        _fun73092: for (var _fun73092_ip = 0;;) switch (_fun73092_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.uses;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 0;
                 var5 = var6;
                 if (!(var0 !== var3)) {
-                    _fun73074_ip = 57;
-                    continue _fun73074
+                    _fun73092_ip = 57;
+                    continue _fun73092
                 }
             case 29:
                 var0 = global;

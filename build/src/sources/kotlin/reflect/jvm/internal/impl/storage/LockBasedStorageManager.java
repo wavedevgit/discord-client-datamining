@@ -15,16 +15,16 @@ import org.jetbrains.annotations.NotNull;
 public class LockBasedStorageManager implements StorageManager {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final SimpleLock f34969a;
+    protected final SimpleLock f34493a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ExceptionHandlingStrategy f34970b;
+    private final ExceptionHandlingStrategy f34494b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f34971c;
+    private final String f34495c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String f34968d = StringsKt.g1(LockBasedStorageManager.class.getCanonicalName(), ".", "");
+    private static final String f34492d = StringsKt.g1(LockBasedStorageManager.class.getCanonicalName(), ".", "");
     public static final StorageManager NO_LOCKS = new a("NO_LOCKS", ExceptionHandlingStrategy.THROW, EmptySimpleLock.INSTANCE);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -98,12 +98,12 @@ public class LockBasedStorageManager implements StorageManager {
     class b extends i {
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Object f34972o;
+        final /* synthetic */ Object f34496o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(LockBasedStorageManager lockBasedStorageManager, Function0 function0, Object obj) {
             super(lockBasedStorageManager, function0);
-            this.f34972o = obj;
+            this.f34496o = obj;
         }
 
         private static /* synthetic */ void a(int i10) {
@@ -112,7 +112,7 @@ public class LockBasedStorageManager implements StorageManager {
 
         @Override // kotlin.reflect.jvm.internal.impl.storage.LockBasedStorageManager.g
         protected n c(boolean z10) {
-            n d10 = n.d(this.f34972o);
+            n d10 = n.d(this.f34496o);
             if (d10 == null) {
                 a(0);
             }
@@ -124,16 +124,16 @@ public class LockBasedStorageManager implements StorageManager {
     class c extends j {
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ Function1 f34974p;
+        final /* synthetic */ Function1 f34498p;
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ Function1 f34975q;
+        final /* synthetic */ Function1 f34499q;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(LockBasedStorageManager lockBasedStorageManager, Function0 function0, Function1 function1, Function1 function12) {
             super(lockBasedStorageManager, function0);
-            this.f34974p = function1;
-            this.f34975q = function12;
+            this.f34498p = function1;
+            this.f34499q = function12;
         }
 
         private static /* synthetic */ void a(int i10) {
@@ -160,7 +160,7 @@ public class LockBasedStorageManager implements StorageManager {
 
         @Override // kotlin.reflect.jvm.internal.impl.storage.LockBasedStorageManager.g
         protected n c(boolean z10) {
-            Function1 function1 = this.f34974p;
+            Function1 function1 = this.f34498p;
             if (function1 == null) {
                 n c10 = super.c(z10);
                 if (c10 == null) {
@@ -180,7 +180,7 @@ public class LockBasedStorageManager implements StorageManager {
             if (obj == null) {
                 a(2);
             }
-            this.f34975q.invoke(obj);
+            this.f34499q.invoke(obj);
         }
     }
 
@@ -253,7 +253,7 @@ public class LockBasedStorageManager implements StorageManager {
             @Override // kotlin.jvm.functions.Function1
             /* renamed from: a */
             public Object invoke(f fVar) {
-                return fVar.f34978b.invoke();
+                return fVar.f34502b.invoke();
             }
         }
 
@@ -303,28 +303,28 @@ public class LockBasedStorageManager implements StorageManager {
     public static class f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f34977a;
+        private final Object f34501a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Function0 f34978b;
+        private final Function0 f34502b;
 
         public f(Object obj, Function0 function0) {
-            this.f34977a = obj;
-            this.f34978b = function0;
+            this.f34501a = obj;
+            this.f34502b = function0;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if (obj != null && getClass() == obj.getClass() && this.f34977a.equals(((f) obj).f34977a)) {
+            if (obj != null && getClass() == obj.getClass() && this.f34501a.equals(((f) obj).f34501a)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f34977a.hashCode();
+            return this.f34501a.hashCode();
         }
     }
 
@@ -333,13 +333,13 @@ public class LockBasedStorageManager implements StorageManager {
     public static class g implements NullableLazyValue {
 
         /* renamed from: d  reason: collision with root package name */
-        private final LockBasedStorageManager f34979d;
+        private final LockBasedStorageManager f34503d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Function0 f34980e;
+        private final Function0 f34504e;
 
         /* renamed from: i  reason: collision with root package name */
-        private volatile Object f34981i;
+        private volatile Object f34505i;
 
         public g(LockBasedStorageManager lockBasedStorageManager, Function0 function0) {
             if (lockBasedStorageManager == null) {
@@ -348,9 +348,9 @@ public class LockBasedStorageManager implements StorageManager {
             if (function0 == null) {
                 a(1);
             }
-            this.f34981i = m.NOT_COMPUTED;
-            this.f34979d = lockBasedStorageManager;
-            this.f34980e = function0;
+            this.f34505i = m.NOT_COMPUTED;
+            this.f34503d = lockBasedStorageManager;
+            this.f34504e = function0;
         }
 
         private static /* synthetic */ void a(int i10) {
@@ -384,7 +384,7 @@ public class LockBasedStorageManager implements StorageManager {
         }
 
         protected n c(boolean z10) {
-            n e10 = this.f34979d.e("in a lazy value", null);
+            n e10 = this.f34503d.e("in a lazy value", null);
             if (e10 == null) {
                 a(2);
             }
@@ -394,19 +394,19 @@ public class LockBasedStorageManager implements StorageManager {
         @Override // kotlin.reflect.jvm.internal.impl.storage.NullableLazyValue, kotlin.jvm.functions.Function0
         public Object invoke() {
             Object invoke;
-            Object obj = this.f34981i;
+            Object obj = this.f34505i;
             if (!(obj instanceof m)) {
                 return WrappedValues.unescapeThrowable(obj);
             }
-            this.f34979d.f34969a.lock();
+            this.f34503d.f34493a.lock();
             try {
-                Object obj2 = this.f34981i;
+                Object obj2 = this.f34505i;
                 if (!(obj2 instanceof m)) {
                     invoke = WrappedValues.unescapeThrowable(obj2);
                 } else {
                     m mVar = m.COMPUTING;
                     if (obj2 == mVar) {
-                        this.f34981i = m.RECURSION_WAS_DETECTED;
+                        this.f34505i = m.RECURSION_WAS_DETECTED;
                         n c10 = c(true);
                         if (!c10.c()) {
                             invoke = c10.b();
@@ -418,19 +418,19 @@ public class LockBasedStorageManager implements StorageManager {
                             invoke = c11.b();
                         }
                     }
-                    this.f34981i = mVar;
-                    invoke = this.f34980e.invoke();
+                    this.f34505i = mVar;
+                    invoke = this.f34504e.invoke();
                     b(invoke);
-                    this.f34981i = invoke;
+                    this.f34505i = invoke;
                 }
                 return invoke;
             } finally {
-                this.f34979d.f34969a.unlock();
+                this.f34503d.f34493a.unlock();
             }
         }
 
         public boolean isComputed() {
-            if (this.f34981i != m.NOT_COMPUTED && this.f34981i != m.COMPUTING) {
+            if (this.f34505i != m.NOT_COMPUTED && this.f34505i != m.COMPUTING) {
                 return true;
             }
             return false;
@@ -441,7 +441,7 @@ public class LockBasedStorageManager implements StorageManager {
     private static abstract class h extends g {
 
         /* renamed from: o  reason: collision with root package name */
-        private volatile kotlin.reflect.jvm.internal.impl.storage.a f34982o;
+        private volatile kotlin.reflect.jvm.internal.impl.storage.a f34506o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public h(LockBasedStorageManager lockBasedStorageManager, Function0 function0) {
@@ -452,7 +452,7 @@ public class LockBasedStorageManager implements StorageManager {
             if (function0 == null) {
                 a(1);
             }
-            this.f34982o = null;
+            this.f34506o = null;
         }
 
         private static /* synthetic */ void a(int i10) {
@@ -469,11 +469,11 @@ public class LockBasedStorageManager implements StorageManager {
 
         @Override // kotlin.reflect.jvm.internal.impl.storage.LockBasedStorageManager.g
         protected final void b(Object obj) {
-            this.f34982o = new kotlin.reflect.jvm.internal.impl.storage.a(obj);
+            this.f34506o = new kotlin.reflect.jvm.internal.impl.storage.a(obj);
             try {
                 d(obj);
             } finally {
-                this.f34982o = null;
+                this.f34506o = null;
             }
         }
 
@@ -481,7 +481,7 @@ public class LockBasedStorageManager implements StorageManager {
 
         @Override // kotlin.reflect.jvm.internal.impl.storage.LockBasedStorageManager.g, kotlin.reflect.jvm.internal.impl.storage.NullableLazyValue, kotlin.jvm.functions.Function0
         public Object invoke() {
-            kotlin.reflect.jvm.internal.impl.storage.a aVar = this.f34982o;
+            kotlin.reflect.jvm.internal.impl.storage.a aVar = this.f34506o;
             if (aVar != null && aVar.b()) {
                 return aVar.a();
             }
@@ -588,13 +588,13 @@ public class LockBasedStorageManager implements StorageManager {
     public static class k implements MemoizedFunctionToNullable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final LockBasedStorageManager f34983d;
+        private final LockBasedStorageManager f34507d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ConcurrentMap f34984e;
+        private final ConcurrentMap f34508e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Function1 f34985i;
+        private final Function1 f34509i;
 
         public k(LockBasedStorageManager lockBasedStorageManager, ConcurrentMap concurrentMap, Function1 function1) {
             if (lockBasedStorageManager == null) {
@@ -606,9 +606,9 @@ public class LockBasedStorageManager implements StorageManager {
             if (function1 == null) {
                 a(2);
             }
-            this.f34983d = lockBasedStorageManager;
-            this.f34984e = concurrentMap;
-            this.f34985i = function1;
+            this.f34507d = lockBasedStorageManager;
+            this.f34508e = concurrentMap;
+            this.f34509i = function1;
         }
 
         private static /* synthetic */ void a(int i10) {
@@ -641,11 +641,11 @@ public class LockBasedStorageManager implements StorageManager {
         }
 
         private AssertionError b(Object obj, Object obj2) {
-            return (AssertionError) LockBasedStorageManager.f(new AssertionError("Inconsistent key detected. " + m.COMPUTING + " is expected, was: " + obj2 + ", most probably race condition detected on input " + obj + " under " + this.f34983d));
+            return (AssertionError) LockBasedStorageManager.f(new AssertionError("Inconsistent key detected. " + m.COMPUTING + " is expected, was: " + obj2 + ", most probably race condition detected on input " + obj + " under " + this.f34507d));
         }
 
         private AssertionError c(Object obj, Object obj2) {
-            AssertionError assertionError = (AssertionError) LockBasedStorageManager.f(new AssertionError("Race condition detected on input " + obj + ". Old value is " + obj2 + " under " + this.f34983d));
+            AssertionError assertionError = (AssertionError) LockBasedStorageManager.f(new AssertionError("Race condition detected on input " + obj + ". Old value is " + obj2 + " under " + this.f34507d));
             if (assertionError == null) {
                 a(4);
             }
@@ -653,11 +653,11 @@ public class LockBasedStorageManager implements StorageManager {
         }
 
         private AssertionError e(Object obj, Throwable th2) {
-            return (AssertionError) LockBasedStorageManager.f(new AssertionError("Unable to remove " + obj + " under " + this.f34983d, th2));
+            return (AssertionError) LockBasedStorageManager.f(new AssertionError("Unable to remove " + obj + " under " + this.f34507d, th2));
         }
 
         protected n d(Object obj, boolean z10) {
-            n e10 = this.f34983d.e("", obj);
+            n e10 = this.f34507d.e("", obj);
             if (e10 == null) {
                 a(3);
             }
@@ -667,13 +667,13 @@ public class LockBasedStorageManager implements StorageManager {
         @Override // kotlin.reflect.jvm.internal.impl.storage.MemoizedFunctionToNullable, kotlin.jvm.functions.Function1
         public Object invoke(Object obj) {
             Object unescapeExceptionOrNull;
-            Object obj2 = this.f34984e.get(obj);
+            Object obj2 = this.f34508e.get(obj);
             if (obj2 != null && obj2 != m.COMPUTING) {
                 return WrappedValues.unescapeExceptionOrNull(obj2);
             }
-            this.f34983d.f34969a.lock();
+            this.f34507d.f34493a.lock();
             try {
-                Object obj3 = this.f34984e.get(obj);
+                Object obj3 = this.f34508e.get(obj);
                 m mVar = m.COMPUTING;
                 if (obj3 == mVar) {
                     obj3 = m.RECURSION_WAS_DETECTED;
@@ -694,21 +694,21 @@ public class LockBasedStorageManager implements StorageManager {
                     unescapeExceptionOrNull = WrappedValues.unescapeExceptionOrNull(obj3);
                     return unescapeExceptionOrNull;
                 }
-                this.f34984e.put(obj, mVar);
-                Object invoke = this.f34985i.invoke(obj);
-                Object put = this.f34984e.put(obj, WrappedValues.escapeNull(invoke));
+                this.f34508e.put(obj, mVar);
+                Object invoke = this.f34509i.invoke(obj);
+                Object put = this.f34508e.put(obj, WrappedValues.escapeNull(invoke));
                 if (put == mVar) {
                     return invoke;
                 }
                 throw c(obj, put);
             } finally {
-                this.f34983d.f34969a.unlock();
+                this.f34507d.f34493a.unlock();
             }
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.storage.MemoizedFunctionToNullable
         public boolean isComputed(Object obj) {
-            Object obj2 = this.f34984e.get(obj);
+            Object obj2 = this.f34508e.get(obj);
             if (obj2 != null && obj2 != m.COMPUTING) {
                 return true;
             }
@@ -782,14 +782,14 @@ public class LockBasedStorageManager implements StorageManager {
     public static class n {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f34990a;
+        private final Object f34514a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f34991b;
+        private final boolean f34515b;
 
         private n(Object obj, boolean z10) {
-            this.f34990a = obj;
-            this.f34991b = z10;
+            this.f34514a = obj;
+            this.f34515b = z10;
         }
 
         public static n a() {
@@ -801,18 +801,18 @@ public class LockBasedStorageManager implements StorageManager {
         }
 
         public Object b() {
-            return this.f34990a;
+            return this.f34514a;
         }
 
         public boolean c() {
-            return this.f34991b;
+            return this.f34515b;
         }
 
         public String toString() {
             if (c()) {
                 return "FALL_THROUGH";
             }
-            return String.valueOf(this.f34990a);
+            return String.valueOf(this.f34514a);
         }
     }
 
@@ -847,7 +847,7 @@ public class LockBasedStorageManager implements StorageManager {
     }
 
     static /* synthetic */ ExceptionHandlingStrategy b(LockBasedStorageManager lockBasedStorageManager) {
-        return lockBasedStorageManager.f34970b;
+        return lockBasedStorageManager.f34494b;
     }
 
     private static ConcurrentMap d() {
@@ -864,7 +864,7 @@ public class LockBasedStorageManager implements StorageManager {
         int i10 = 0;
         while (true) {
             if (i10 < length) {
-                if (!stackTrace[i10].getClassName().startsWith(f34968d)) {
+                if (!stackTrace[i10].getClassName().startsWith(f34492d)) {
                     break;
                 }
                 i10++;
@@ -883,7 +883,7 @@ public class LockBasedStorageManager implements StorageManager {
         if (function0 == null) {
             a(34);
         }
-        this.f34969a.lock();
+        this.f34493a.lock();
         try {
             return (T) function0.invoke();
         } finally {
@@ -990,7 +990,7 @@ public class LockBasedStorageManager implements StorageManager {
     }
 
     public String toString() {
-        return getClass().getSimpleName() + "@" + Integer.toHexString(hashCode()) + " (" + this.f34971c + ")";
+        return getClass().getSimpleName() + "@" + Integer.toHexString(hashCode()) + " (" + this.f34495c + ")";
     }
 
     private LockBasedStorageManager(String str, ExceptionHandlingStrategy exceptionHandlingStrategy, SimpleLock simpleLock) {
@@ -1003,9 +1003,9 @@ public class LockBasedStorageManager implements StorageManager {
         if (simpleLock == null) {
             a(6);
         }
-        this.f34969a = simpleLock;
-        this.f34970b = exceptionHandlingStrategy;
-        this.f34971c = str;
+        this.f34493a = simpleLock;
+        this.f34494b = exceptionHandlingStrategy;
+        this.f34495c = str;
     }
 
     @NotNull

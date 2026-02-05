@@ -2,11 +2,11 @@ package com.google.android.gms.tasks;
 
 import androidx.annotation.NonNull;
 import java.util.concurrent.Executor;
-import wg.c;
-import wg.e;
-import wg.f;
-import wg.g;
-import wg.j;
+import xg.c;
+import xg.e;
+import xg.f;
+import xg.g;
+import xg.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class Task<TResult> {
     public Task a(Executor executor, e eVar) {

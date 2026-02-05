@@ -59,14 +59,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/UnlockWithNitroButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun87880: for (var _fun87880_ip = 0;;) switch (_fun87880_ip) {
+        _fun87899: for (var _fun87899_ip = 0;;) switch (_fun87899_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.shouldShrink;
                 var3 = undefined;
                 if (!(var8 === var3)) {
-                    _fun87880_ip = 21;
-                    continue _fun87880
+                    _fun87899_ip = 21;
+                    continue _fun87899
                 }
             case 19:
                 var8 = false;
@@ -84,15 +84,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot3;
                 var2[1] = var1;
                 var1 = function() { // Environment: var7
-                    _fun87881: for (var _fun87881_ip = 0;;) switch (_fun87881_ip) {
+                    _fun87900: for (var _fun87900_ip = 0;;) switch (_fun87900_ip) {
                         case 0:
                             var0 = _closure1_slot4;
                             var2 = var0.isClaiming;
                             var0 = null;
                             var0 = var0 != var2;
                             if (var0) {
-                                _fun87881_ip = 71;
-                                continue _fun87881
+                                _fun87900_ip = 71;
+                                continue _fun87900
                             }
                         case 22:
                             var3 = _closure1_slot3;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
                 if (var8) {
-                    _fun87880_ip = 196;
-                    continue _fun87880
+                    _fun87899_ip = 196;
+                    continue _fun87899
                 }
             case 139:
                 var14 = _closure1_slot0;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.t;
                 var10 = var10.sEAnVH;
                 var10 = var12.bind(var13)(var10);
-                _fun87880_ip = 296;
-                continue _fun87880;
+                _fun87899_ip = 296;
+                continue _fun87899;
             case 196:
                 var14 = _closure1_slot5;
                 var18 = _closure1_slot0;
@@ -183,13 +183,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10.bind(var3)(var9);
                 var9 = var9.ButtonSizes;
                 if (var8) {
-                    _fun87880_ip = 367;
-                    continue _fun87880
+                    _fun87899_ip = 367;
+                    continue _fun87899
                 }
             case 359:
                 var8 = var9.MEDIUM;
-                _fun87880_ip = 373;
-                continue _fun87880;
+                _fun87899_ip = 373;
+                continue _fun87899;
             case 367:
                 var8 = var9.SMALL;
             case 373:
@@ -224,4 +224,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.UnlockWithNitroButton = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4611, 4616, 33, 1297, 671, 566, 4608, 11332, 4873, 4876, 1234, 5749, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4611, 4616, 33, 1297, 671, 566, 4608, 11350, 4875, 4878, 1234, 5753, 2]);

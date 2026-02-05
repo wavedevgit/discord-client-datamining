@@ -5,27 +5,27 @@ import java.util.Iterator;
 final class a4 implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    final Iterator f13779d;
+    final Iterator f14173d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ b4 f13780e;
+    final /* synthetic */ b4 f14174e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a4(b4 b4Var) {
         e2 e2Var;
-        this.f13780e = b4Var;
-        e2Var = b4Var.f13799d;
-        this.f13779d = e2Var.iterator();
+        this.f14174e = b4Var;
+        e2Var = b4Var.f14193d;
+        this.f14173d = e2Var.iterator();
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f13779d.hasNext();
+        return this.f14173d.hasNext();
     }
 
     @Override // java.util.Iterator
     public final /* bridge */ /* synthetic */ Object next() {
-        return (String) this.f13779d.next();
+        return (String) this.f14173d.next();
     }
 
     @Override // java.util.Iterator

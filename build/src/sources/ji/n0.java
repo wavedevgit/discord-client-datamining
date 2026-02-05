@@ -1,31 +1,14 @@
 package ji;
 
-import java.io.Serializable;
+import android.os.Bundle;
+import android.os.IInterface;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class n0 extends i0 implements Serializable {
+public interface n0 extends IInterface {
+    void B0(Bundle bundle);
 
-    /* renamed from: d  reason: collision with root package name */
-    static final n0 f31700d = new n0();
+    void c(Bundle bundle);
 
-    private n0() {
-    }
+    void d(Bundle bundle);
 
-    @Override // ji.i0
-    public i0 h() {
-        return i0.b();
-    }
-
-    @Override // ji.i0, java.util.Comparator
-    /* renamed from: l */
-    public int compare(Comparable comparable, Comparable comparable2) {
-        ii.m.j(comparable);
-        if (comparable == comparable2) {
-            return 0;
-        }
-        return comparable2.compareTo(comparable);
-    }
-
-    public String toString() {
-        return "Ordering.natural().reverse()";
-    }
+    void g(Bundle bundle);
 }

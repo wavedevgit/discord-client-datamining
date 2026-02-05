@@ -61,14 +61,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = 'registerFrameCallback';
         var0.key = var1;
         var1 = function arg0() {
-            _fun35005: for (var _fun35005_ip = 0;;) switch (_fun35005_ip) {
+            _fun35015: for (var _fun35015_ip = 0;;) switch (_fun35015_ip) {
                 case 0:
                     var7 = arg0;
                     var3 = this;
                     var _closure3_slot0 = var7;
                     if (var7) {
-                        _fun35005_ip = 23;
-                        continue _fun35005
+                        _fun35015_ip = 23;
+                        continue _fun35015
                     }
                 case 15:
                     var0 = -1;

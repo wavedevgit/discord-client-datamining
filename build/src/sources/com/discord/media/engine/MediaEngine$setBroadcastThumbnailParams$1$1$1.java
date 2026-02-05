@@ -33,7 +33,7 @@ public final class MediaEngine$setBroadcastThumbnailParams$1$1$1 extends kotlin.
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        Object f10 = rr.b.f();
+        Object f10 = ur.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -52,11 +52,11 @@ public final class MediaEngine$setBroadcastThumbnailParams$1$1$1 extends kotlin.
             }
         }
         this.$callback.invoke((String) obj);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngine$setBroadcastThumbnailParams$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((MediaEngine$setBroadcastThumbnailParams$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

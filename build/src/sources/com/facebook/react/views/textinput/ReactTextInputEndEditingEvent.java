@@ -57,7 +57,7 @@ public final class ReactTextInputEndEditingEvent extends Event<ReactTextInputEnd
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    @lr.c
+    @or.c
     public ReactTextInputEndEditingEvent(int i10, @NotNull String text) {
         this(-1, i10, text);
         Intrinsics.checkNotNullParameter(text, "text");

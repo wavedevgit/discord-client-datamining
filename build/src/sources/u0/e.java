@@ -3,7 +3,7 @@ package u0;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f50351a = new e();
+    public static final e f51123a = new e();
 
     private e() {
     }

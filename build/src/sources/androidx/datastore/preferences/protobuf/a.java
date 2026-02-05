@@ -11,7 +11,7 @@ public abstract class a implements o0 {
 
     /* renamed from: androidx.datastore.preferences.protobuf.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static abstract class AbstractC0043a implements o0.a {
+    public static abstract class AbstractC0044a implements o0.a {
         protected static void b(Iterable iterable, List list) {
             y.a(iterable);
             if (iterable instanceof d0) {
@@ -26,7 +26,7 @@ public abstract class a implements o0 {
                         }
                         throw new NullPointerException(str);
                     } else if (obj instanceof g) {
-                        d0Var.F0((g) obj);
+                        d0Var.K0((g) obj);
                     } else {
                         d0Var.add((String) obj);
                     }
@@ -60,11 +60,11 @@ public abstract class a implements o0 {
             return new j1(o0Var);
         }
 
-        protected abstract AbstractC0043a d(a aVar);
+        protected abstract AbstractC0044a d(a aVar);
 
         @Override // androidx.datastore.preferences.protobuf.o0.a
         /* renamed from: e */
-        public AbstractC0043a L(o0 o0Var) {
+        public AbstractC0044a L(o0 o0Var) {
             if (getDefaultInstanceForType().getClass().isInstance(o0Var)) {
                 return d((a) o0Var);
             }
@@ -74,7 +74,7 @@ public abstract class a implements o0 {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public static void b(Iterable iterable, List list) {
-        AbstractC0043a.b(iterable, list);
+        AbstractC0044a.b(iterable, list);
     }
 
     abstract int c();

@@ -1,0 +1,27 @@
+package zt;
+
+import kotlin.jvm.internal.Intrinsics;
+import okhttp3.Response;
+import okhttp3.WebSocket;
+import okio.ByteString;
+import org.jetbrains.annotations.NotNull;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public abstract class l {
+    public abstract void onClosed(WebSocket webSocket, int i10, String str);
+
+    public void onClosing(@NotNull WebSocket webSocket, int i10, @NotNull String reason) {
+        Intrinsics.checkNotNullParameter(webSocket, "webSocket");
+        Intrinsics.checkNotNullParameter(reason, "reason");
+    }
+
+    public abstract void onFailure(WebSocket webSocket, Throwable th2, Response response);
+
+    public abstract void onMessage(WebSocket webSocket, String str);
+
+    public void onMessage(@NotNull WebSocket webSocket, @NotNull ByteString bytes) {
+        Intrinsics.checkNotNullParameter(webSocket, "webSocket");
+        Intrinsics.checkNotNullParameter(bytes, "bytes");
+    }
+
+    public abstract void onOpen(WebSocket webSocket, Response response);
+}

@@ -1,141 +1,141 @@
 package com.linkedin.android.litr;
 
 import android.media.MediaFormat;
-import ol.e;
-import ol.f;
-import pl.i;
+import rl.e;
+import rl.f;
+import sl.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f16811a;
+    private final e f17205a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final il.a f16812b;
+    private final ll.a f17206b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final i f16813c;
+    private final i f17207c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final il.b f16814d;
+    private final ll.b f17208d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final f f16815e;
+    private final f f17209e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final MediaFormat f16816f;
+    private final MediaFormat f17210f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f16817g;
+    private final int f17211g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f16818h;
+    private final int f17212h;
 
     /* renamed from: com.linkedin.android.litr.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class C0189b {
+    public static class C0205b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final e f16819a;
+        private final e f17213a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f16820b;
+        private final int f17214b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final f f16821c;
+        private final f f17215c;
 
         /* renamed from: d  reason: collision with root package name */
-        private il.a f16822d;
+        private ll.a f17216d;
 
         /* renamed from: e  reason: collision with root package name */
-        private i f16823e;
+        private i f17217e;
 
         /* renamed from: f  reason: collision with root package name */
-        private il.b f16824f;
+        private ll.b f17218f;
 
         /* renamed from: g  reason: collision with root package name */
-        private MediaFormat f16825g;
+        private MediaFormat f17219g;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f16826h;
+        private int f17220h;
 
-        public C0189b(e eVar, int i10, f fVar) {
-            this.f16819a = eVar;
-            this.f16820b = i10;
-            this.f16821c = fVar;
-            this.f16826h = i10;
+        public C0205b(e eVar, int i10, f fVar) {
+            this.f17213a = eVar;
+            this.f17214b = i10;
+            this.f17215c = fVar;
+            this.f17220h = i10;
         }
 
         public b a() {
-            return new b(this.f16819a, this.f16822d, this.f16823e, this.f16824f, this.f16821c, this.f16825g, this.f16820b, this.f16826h);
+            return new b(this.f17213a, this.f17216d, this.f17217e, this.f17218f, this.f17215c, this.f17219g, this.f17214b, this.f17220h);
         }
 
-        public C0189b b(il.a aVar) {
-            this.f16822d = aVar;
+        public C0205b b(ll.a aVar) {
+            this.f17216d = aVar;
             return this;
         }
 
-        public C0189b c(il.b bVar) {
-            this.f16824f = bVar;
+        public C0205b c(ll.b bVar) {
+            this.f17218f = bVar;
             return this;
         }
 
-        public C0189b d(i iVar) {
-            this.f16823e = iVar;
+        public C0205b d(i iVar) {
+            this.f17217e = iVar;
             return this;
         }
 
-        public C0189b e(MediaFormat mediaFormat) {
-            this.f16825g = mediaFormat;
+        public C0205b e(MediaFormat mediaFormat) {
+            this.f17219g = mediaFormat;
             return this;
         }
 
-        public C0189b f(int i10) {
-            this.f16826h = i10;
+        public C0205b f(int i10) {
+            this.f17220h = i10;
             return this;
         }
     }
 
-    public il.a a() {
-        return this.f16812b;
+    public ll.a a() {
+        return this.f17206b;
     }
 
-    public il.b b() {
-        return this.f16814d;
+    public ll.b b() {
+        return this.f17208d;
     }
 
     public e c() {
-        return this.f16811a;
+        return this.f17205a;
     }
 
     public f d() {
-        return this.f16815e;
+        return this.f17209e;
     }
 
     public i e() {
-        return this.f16813c;
+        return this.f17207c;
     }
 
     public int f() {
-        return this.f16817g;
+        return this.f17211g;
     }
 
     public MediaFormat g() {
-        return this.f16816f;
+        return this.f17210f;
     }
 
     public int h() {
-        return this.f16818h;
+        return this.f17212h;
     }
 
-    private b(e eVar, il.a aVar, i iVar, il.b bVar, f fVar, MediaFormat mediaFormat, int i10, int i11) {
-        this.f16811a = eVar;
-        this.f16812b = aVar;
-        this.f16813c = iVar;
-        this.f16814d = bVar;
-        this.f16815e = fVar;
-        this.f16816f = mediaFormat;
-        this.f16817g = i10;
-        this.f16818h = i11;
+    private b(e eVar, ll.a aVar, i iVar, ll.b bVar, f fVar, MediaFormat mediaFormat, int i10, int i11) {
+        this.f17205a = eVar;
+        this.f17206b = aVar;
+        this.f17207c = iVar;
+        this.f17208d = bVar;
+        this.f17209e = fVar;
+        this.f17210f = mediaFormat;
+        this.f17211g = i10;
+        this.f17212h = i11;
     }
 }

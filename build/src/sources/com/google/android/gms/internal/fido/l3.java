@@ -16,25 +16,25 @@ import java.util.logging.Logger;
 public abstract class l3 extends m4 implements c4 {
 
     /* renamed from: o  reason: collision with root package name */
-    static final boolean f13655o;
+    static final boolean f14049o;
 
     /* renamed from: p  reason: collision with root package name */
-    static final b4 f13656p;
+    static final b4 f14050p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final c3 f13657q;
+    private static final c3 f14051q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Object f13658r;
+    private static final Object f14052r;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile Object f13659d;
+    private volatile Object f14053d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile g3 f13660e;
+    private volatile g3 f14054e;
 
     /* renamed from: i  reason: collision with root package name */
-    private volatile k3 f13661i;
+    private volatile k3 f14055i;
 
     static {
         boolean z10;
@@ -46,8 +46,8 @@ public abstract class l3 extends m4 implements c4 {
         } catch (SecurityException unused) {
             z10 = false;
         }
-        f13655o = z10;
-        f13656p = new b4(l3.class);
+        f14049o = z10;
+        f14050p = new b4(l3.class);
         try {
             h3Var = new j3(null);
             th2 = null;
@@ -63,15 +63,15 @@ public abstract class l3 extends m4 implements c4 {
                 h3Var = new h3(null);
             }
         }
-        f13657q = h3Var;
+        f14051q = h3Var;
         if (th2 != null) {
-            b4 b4Var = f13656p;
+            b4 b4Var = f14050p;
             Logger a10 = b4Var.a();
             Level level = Level.SEVERE;
             a10.logp(level, "com.google.common.util.concurrent.AbstractFuture", "<clinit>", "UnsafeAtomicHelper is broken!", th3);
             b4Var.a().logp(level, "com.google.common.util.concurrent.AbstractFuture", "<clinit>", "AtomicReferenceFieldUpdaterAtomicHelper is broken!", th2);
         }
-        f13658r = new Object();
+        f14052r = new Object();
     }
 
     private static Object n(Future future) {
@@ -174,55 +174,55 @@ public abstract class l3 extends m4 implements c4 {
     }
 
     private static void q(l3 l3Var, boolean z10) {
-        for (k3 b10 = f13657q.b(l3Var, k3.f13642c); b10 != null; b10 = b10.f13644b) {
-            Thread thread = b10.f13643a;
+        for (k3 b10 = f14051q.b(l3Var, k3.f14036c); b10 != null; b10 = b10.f14038b) {
+            Thread thread = b10.f14037a;
             if (thread != null) {
-                b10.f13643a = null;
+                b10.f14037a = null;
                 LockSupport.unpark(thread);
             }
         }
         l3Var.j();
-        g3 a10 = f13657q.a(l3Var, g3.f13610d);
+        g3 a10 = f14051q.a(l3Var, g3.f14004d);
         g3 g3Var = null;
         while (a10 != null) {
-            g3 g3Var2 = a10.f13613c;
-            a10.f13613c = g3Var;
+            g3 g3Var2 = a10.f14007c;
+            a10.f14007c = g3Var;
             g3Var = a10;
             a10 = g3Var2;
         }
         while (g3Var != null) {
-            Runnable runnable = g3Var.f13611a;
-            g3 g3Var3 = g3Var.f13613c;
+            Runnable runnable = g3Var.f14005a;
+            g3 g3Var3 = g3Var.f14007c;
             Objects.requireNonNull(runnable);
             Runnable runnable2 = runnable;
-            Executor executor = g3Var.f13612b;
+            Executor executor = g3Var.f14006b;
             Objects.requireNonNull(executor);
             Executor executor2 = executor;
             try {
                 executor2.execute(runnable2);
             } catch (Exception e10) {
-                f13656p.a().logp(Level.SEVERE, "com.google.common.util.concurrent.AbstractFuture", "executeListener", "RuntimeException while executing runnable " + String.valueOf(runnable2) + " with executor " + String.valueOf(executor2), (Throwable) e10);
+                f14050p.a().logp(Level.SEVERE, "com.google.common.util.concurrent.AbstractFuture", "executeListener", "RuntimeException while executing runnable " + String.valueOf(runnable2) + " with executor " + String.valueOf(executor2), (Throwable) e10);
             }
             g3Var = g3Var3;
         }
     }
 
     private final void r(k3 k3Var) {
-        k3Var.f13643a = null;
+        k3Var.f14037a = null;
         while (true) {
-            k3 k3Var2 = this.f13661i;
-            if (k3Var2 != k3.f13642c) {
+            k3 k3Var2 = this.f14055i;
+            if (k3Var2 != k3.f14036c) {
                 k3 k3Var3 = null;
                 while (k3Var2 != null) {
-                    k3 k3Var4 = k3Var2.f13644b;
-                    if (k3Var2.f13643a != null) {
+                    k3 k3Var4 = k3Var2.f14038b;
+                    if (k3Var2.f14037a != null) {
                         k3Var3 = k3Var2;
                     } else if (k3Var3 != null) {
-                        k3Var3.f13644b = k3Var4;
-                        if (k3Var3.f13643a == null) {
+                        k3Var3.f14038b = k3Var4;
+                        if (k3Var3.f14037a == null) {
                             break;
                         }
-                    } else if (!f13657q.f(this, k3Var2, k3Var4)) {
+                    } else if (!f14051q.f(this, k3Var2, k3Var4)) {
                         break;
                     }
                     k3Var2 = k3Var4;
@@ -236,14 +236,14 @@ public abstract class l3 extends m4 implements c4 {
     private static final Object s(Object obj) {
         if (!(obj instanceof e3)) {
             if (!(obj instanceof f3)) {
-                if (obj == f13658r) {
+                if (obj == f14052r) {
                     return null;
                 }
                 return obj;
             }
-            throw new ExecutionException(((f3) obj).f13608a);
+            throw new ExecutionException(((f3) obj).f14002a);
         }
-        Throwable th2 = ((e3) obj).f13597b;
+        Throwable th2 = ((e3) obj).f13991b;
         CancellationException cancellationException = new CancellationException("Task was cancelled.");
         cancellationException.initCause(th2);
         throw cancellationException;
@@ -253,24 +253,24 @@ public abstract class l3 extends m4 implements c4 {
     public final boolean cancel(boolean z10) {
         boolean z11;
         e3 e3Var;
-        Object obj = this.f13659d;
+        Object obj = this.f14053d;
         if (obj == null) {
             z11 = true;
         } else {
             z11 = false;
         }
         if (z11) {
-            if (f13655o) {
+            if (f14049o) {
                 e3Var = new e3(z10, new CancellationException("Future.cancel() was called."));
             } else {
                 if (z10) {
-                    e3Var = e3.f13594c;
+                    e3Var = e3.f13988c;
                 } else {
-                    e3Var = e3.f13595d;
+                    e3Var = e3.f13989d;
                 }
                 Objects.requireNonNull(e3Var);
             }
-            if (f13657q.e(this, obj, e3Var)) {
+            if (f14051q.e(this, obj, e3Var)) {
                 q(this, z10);
                 return true;
             }
@@ -292,21 +292,21 @@ public abstract class l3 extends m4 implements c4 {
         Object obj;
         boolean z10;
         if (!Thread.interrupted()) {
-            Object obj2 = this.f13659d;
+            Object obj2 = this.f14053d;
             if (obj2 != null) {
                 return s(obj2);
             }
-            k3 k3Var = this.f13661i;
-            if (k3Var != k3.f13642c) {
+            k3 k3Var = this.f14055i;
+            if (k3Var != k3.f14036c) {
                 k3 k3Var2 = new k3();
                 do {
-                    c3 c3Var = f13657q;
+                    c3 c3Var = f14051q;
                     c3Var.c(k3Var2, k3Var);
                     if (c3Var.f(this, k3Var, k3Var2)) {
                         do {
                             LockSupport.park(this);
                             if (!Thread.interrupted()) {
-                                obj = this.f13659d;
+                                obj = this.f14053d;
                                 if (obj != null) {
                                     z10 = true;
                                     continue;
@@ -321,13 +321,13 @@ public abstract class l3 extends m4 implements c4 {
                         } while (!z10);
                         return s(obj);
                     }
-                    k3Var = this.f13661i;
-                } while (k3Var != k3.f13642c);
-                Object obj3 = this.f13659d;
+                    k3Var = this.f14055i;
+                } while (k3Var != k3.f14036c);
+                Object obj3 = this.f14053d;
                 Objects.requireNonNull(obj3);
                 return s(obj3);
             }
-            Object obj32 = this.f13659d;
+            Object obj32 = this.f14053d;
             Objects.requireNonNull(obj32);
             return s(obj32);
         }
@@ -336,12 +336,12 @@ public abstract class l3 extends m4 implements c4 {
 
     @Override // java.util.concurrent.Future
     public final boolean isCancelled() {
-        return this.f13659d instanceof e3;
+        return this.f14053d instanceof e3;
     }
 
     @Override // java.util.concurrent.Future
     public final boolean isDone() {
-        return this.f13659d != null;
+        return this.f14053d != null;
     }
 
     protected void j() {
@@ -350,9 +350,9 @@ public abstract class l3 extends m4 implements c4 {
     /* JADX INFO: Access modifiers changed from: protected */
     public final boolean k(Object obj) {
         if (obj == null) {
-            obj = f13658r;
+            obj = f14052r;
         }
-        if (!f13657q.e(this, null, obj)) {
+        if (!f14051q.e(this, null, obj)) {
             return false;
         }
         q(this, false);
@@ -361,7 +361,7 @@ public abstract class l3 extends m4 implements c4 {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final boolean l(Throwable th2) {
-        if (!f13657q.e(this, null, new f3(th2))) {
+        if (!f14051q.e(this, null, new f3(th2))) {
             return false;
         }
         q(this, false);
@@ -370,8 +370,8 @@ public abstract class l3 extends m4 implements c4 {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final boolean m() {
-        Object obj = this.f13659d;
-        if ((obj instanceof e3) && ((e3) obj).f13596a) {
+        Object obj = this.f14053d;
+        if ((obj instanceof e3) && ((e3) obj).f13990a) {
             return true;
         }
         return false;
@@ -387,7 +387,7 @@ public abstract class l3 extends m4 implements c4 {
         sb2.append('@');
         sb2.append(Integer.toHexString(System.identityHashCode(this)));
         sb2.append("[status=");
-        if (this.f13659d instanceof e3) {
+        if (this.f14053d instanceof e3) {
             sb2.append("CANCELLED");
         } else if (isDone()) {
             o(sb2);
@@ -402,24 +402,24 @@ public abstract class l3 extends m4 implements c4 {
     public final Object get(long j10, TimeUnit timeUnit) {
         long nanos = timeUnit.toNanos(j10);
         if (!Thread.interrupted()) {
-            Object obj = this.f13659d;
+            Object obj = this.f14053d;
             boolean z10 = true;
             if (obj != null) {
                 return s(obj);
             }
             long nanoTime = nanos > 0 ? System.nanoTime() + nanos : 0L;
             if (nanos >= 1000) {
-                k3 k3Var = this.f13661i;
-                if (k3Var != k3.f13642c) {
+                k3 k3Var = this.f14055i;
+                if (k3Var != k3.f14036c) {
                     k3 k3Var2 = new k3();
                     do {
-                        c3 c3Var = f13657q;
+                        c3 c3Var = f14051q;
                         c3Var.c(k3Var2, k3Var);
                         if (c3Var.f(this, k3Var, k3Var2)) {
                             do {
                                 LockSupport.parkNanos(this, Math.min(nanos, 2147483647999999999L));
                                 if (!Thread.interrupted()) {
-                                    Object obj2 = this.f13659d;
+                                    Object obj2 = this.f14053d;
                                     if (obj2 != null) {
                                         return s(obj2);
                                     }
@@ -431,19 +431,19 @@ public abstract class l3 extends m4 implements c4 {
                             } while (nanos >= 1000);
                             r(k3Var2);
                         } else {
-                            k3Var = this.f13661i;
+                            k3Var = this.f14055i;
                         }
-                    } while (k3Var != k3.f13642c);
-                    Object obj3 = this.f13659d;
+                    } while (k3Var != k3.f14036c);
+                    Object obj3 = this.f14053d;
                     Objects.requireNonNull(obj3);
                     return s(obj3);
                 }
-                Object obj32 = this.f13659d;
+                Object obj32 = this.f14053d;
                 Objects.requireNonNull(obj32);
                 return s(obj32);
             }
             while (nanos > 0) {
-                Object obj4 = this.f13659d;
+                Object obj4 = this.f14053d;
                 if (obj4 != null) {
                     return s(obj4);
                 }

@@ -11,18 +11,18 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public final class a implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile CopyOnWriteArrayList f29933a;
+    private volatile CopyOnWriteArrayList f28991a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final io.sentry.util.a f29934b;
+    private final io.sentry.util.a f28992b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f29935c;
+    private int f28993c;
 
     private a(int i10) {
-        this.f29934b = new io.sentry.util.a();
-        this.f29935c = i10;
-        this.f29933a = new CopyOnWriteArrayList();
+        this.f28992b = new io.sentry.util.a();
+        this.f28993c = i10;
+        this.f28991a = new CopyOnWriteArrayList();
     }
 
     public static b a(k7 k7Var) {
@@ -42,15 +42,15 @@ public final class a implements b {
         if (aVar == null) {
             copyOnWriteArrayList = null;
         } else {
-            copyOnWriteArrayList = aVar.f29933a;
+            copyOnWriteArrayList = aVar.f28991a;
         }
         if (aVar2 == null) {
             copyOnWriteArrayList2 = null;
         } else {
-            copyOnWriteArrayList2 = aVar2.f29933a;
+            copyOnWriteArrayList2 = aVar2.f28991a;
         }
         if (aVar3 != null) {
-            copyOnWriteArrayList3 = aVar3.f29933a;
+            copyOnWriteArrayList3 = aVar3.f28991a;
         }
         int i11 = 0;
         if (copyOnWriteArrayList == null) {
@@ -113,9 +113,9 @@ public final class a implements b {
     }
 
     @Override // io.sentry.featureflags.b
-    public g n() {
+    public g p() {
         ArrayList arrayList = new ArrayList();
-        Iterator it = this.f29933a.iterator();
+        Iterator it = this.f28991a.iterator();
         if (!it.hasNext()) {
             return new g(arrayList);
         }
@@ -125,19 +125,19 @@ public final class a implements b {
 
     @Override // io.sentry.featureflags.b
     /* renamed from: clone */
-    public b m1180clone() {
+    public b m1182clone() {
         return new a(this);
     }
 
     private a(int i10, CopyOnWriteArrayList copyOnWriteArrayList) {
-        this.f29934b = new io.sentry.util.a();
-        this.f29935c = i10;
-        this.f29933a = copyOnWriteArrayList;
+        this.f28992b = new io.sentry.util.a();
+        this.f28993c = i10;
+        this.f28991a = copyOnWriteArrayList;
     }
 
     private a(a aVar) {
-        this.f29934b = new io.sentry.util.a();
-        this.f29935c = aVar.f29935c;
-        this.f29933a = new CopyOnWriteArrayList(aVar.f29933a);
+        this.f28992b = new io.sentry.util.a();
+        this.f28993c = aVar.f28993c;
+        this.f28991a = new CopyOnWriteArrayList(aVar.f28991a);
     }
 }

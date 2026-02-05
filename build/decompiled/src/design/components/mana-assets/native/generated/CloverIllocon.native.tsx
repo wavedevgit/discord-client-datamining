@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CloverIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6048, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6052, 2]);

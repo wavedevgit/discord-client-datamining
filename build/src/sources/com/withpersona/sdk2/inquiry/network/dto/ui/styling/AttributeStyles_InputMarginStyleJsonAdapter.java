@@ -41,21 +41,21 @@ public final class AttributeStyles_InputMarginStyleJsonAdapter extends h {
     @NotNull
     public AttributeStyles.InputMarginStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.MeasurementSet measurementSet = null;
         StyleElements.MeasurementSet measurementSet2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 measurementSet = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 measurementSet2 = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.InputMarginStyle(measurementSet, measurementSet2);
     }
 
@@ -63,10 +63,10 @@ public final class AttributeStyles_InputMarginStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, AttributeStyles.InputMarginStyle inputMarginStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputMarginStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableMeasurementSetAdapter.toJson(writer, inputMarginStyle.getBase());
-            writer.A0("option");
+            writer.W("option");
             this.nullableMeasurementSetAdapter.toJson(writer, inputMarginStyle.getOption());
             writer.E();
             return;

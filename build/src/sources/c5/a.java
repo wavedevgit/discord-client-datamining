@@ -6,16 +6,16 @@ import java.io.File;
 public final class a implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f6965a;
+    private final boolean f7383a;
 
     public a(boolean z10) {
-        this.f6965a = z10;
+        this.f7383a = z10;
     }
 
     @Override // c5.b
     /* renamed from: b */
     public String a(File file, m mVar) {
-        if (this.f6965a) {
+        if (this.f7383a) {
             return file.getPath() + ':' + file.lastModified();
         }
         return file.getPath();

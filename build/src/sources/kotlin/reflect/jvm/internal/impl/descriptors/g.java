@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope;
 public class g implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ScopesHolderForClass f32848d;
+    private final ScopesHolderForClass f32372d;
 
     public g(ScopesHolderForClass scopesHolderForClass) {
-        this.f32848d = scopesHolderForClass;
+        this.f32372d = scopesHolderForClass;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         MemberScope e10;
-        e10 = ScopesHolderForClass.e(this.f32848d);
+        e10 = ScopesHolderForClass.e(this.f32372d);
         return e10;
     }
 }

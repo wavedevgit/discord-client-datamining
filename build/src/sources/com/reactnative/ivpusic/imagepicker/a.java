@@ -142,14 +142,14 @@ class a {
             Log.d("image-crop-picker", "Pictures Directory is not existing. Will create this directory.");
             externalFilesDir.mkdirs();
         }
-        if (xl.b.a(str2) == Bitmap.CompressFormat.PNG) {
+        if (am.b.a(str2) == Bitmap.CompressFormat.PNG) {
             str3 = ".png";
         } else {
             str3 = ".jpg";
         }
         File file = new File(externalFilesDir, UUID.randomUUID() + str3);
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(file));
-        createScaledBitmap.compress(xl.b.a(str2), i14, bufferedOutputStream);
+        createScaledBitmap.compress(am.b.a(str2), i14, bufferedOutputStream);
         if (f(attribute)) {
             ExifInterface exifInterface = new ExifInterface(file.getAbsolutePath());
             exifInterface.setAttribute("Orientation", attribute);

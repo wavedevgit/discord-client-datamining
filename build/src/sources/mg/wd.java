@@ -5,50 +5,50 @@ import kotlin.jvm.internal.LongCompanionObject;
 public final class wd {
 
     /* renamed from: a  reason: collision with root package name */
-    private Long f38544a;
+    private Long f38206a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Long f38545b;
+    private Long f38207b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Long f38546c;
+    private Long f38208c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Long f38547d;
+    private Long f38209d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Long f38548e;
+    private Long f38210e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Long f38549f;
+    private Long f38211f;
 
     public final wd a(Long l10) {
-        this.f38546c = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f38208c = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final wd b(Long l10) {
-        this.f38547d = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f38209d = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final wd c(Long l10) {
-        this.f38544a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f38206a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final wd d(Long l10) {
-        this.f38548e = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f38210e = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final wd e(Long l10) {
-        this.f38545b = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f38207b = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final wd f(Long l10) {
-        this.f38549f = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f38211f = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 

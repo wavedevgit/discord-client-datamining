@@ -1,19 +1,10 @@
 package ii;
 
-import java.util.Arrays;
+import java.io.File;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class j extends e {
-    public static boolean a(Object obj, Object obj2) {
-        if (obj != obj2) {
-            if (obj == null || !obj.equals(obj2)) {
-                return false;
-            }
-            return true;
-        }
-        return true;
-    }
-
-    public static int b(Object... objArr) {
-        return Arrays.hashCode(objArr);
+final class j implements k {
+    @Override // ii.k
+    public final boolean a(Object obj, File file, File file2) {
+        return new File((String) d0.g(obj.getClass(), "optimizedPathFor", String.class, File.class, file, File.class, file2)).exists();
     }
 }

@@ -19,19 +19,19 @@ import org.jetbrains.annotations.NotNull;
 public class d extends Toolbar {
 
     /* renamed from: i0  reason: collision with root package name */
-    private final ScreenStackHeaderConfig f17834i0;
+    private final ScreenStackHeaderConfig f18240i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private Insets f17835j0;
+    private Insets f18241j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private boolean f17836k0;
+    private boolean f18242k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private boolean f17837l0;
+    private boolean f18243l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private final Choreographer.FrameCallback f17838m0;
+    private final Choreographer.FrameCallback f18244m0;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Choreographer.FrameCallback {
@@ -40,7 +40,7 @@ public class d extends Toolbar {
 
         @Override // android.view.Choreographer.FrameCallback
         public void doFrame(long j10) {
-            d.this.f17837l0 = false;
+            d.this.f18243l0 = false;
             d dVar = d.this;
             dVar.measure(View.MeasureSpec.makeMeasureSpec(dVar.getWidth(), Integer.MIN_VALUE), View.MeasureSpec.makeMeasureSpec(d.this.getHeight(), Integer.MIN_VALUE));
             d dVar2 = d.this;
@@ -53,11 +53,11 @@ public class d extends Toolbar {
         super(context);
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(config, "config");
-        this.f17834i0 = config;
-        Insets NONE = Insets.f3162e;
+        this.f18240i0 = config;
+        Insets NONE = Insets.f3274e;
         Intrinsics.checkNotNullExpressionValue(NONE, "NONE");
-        this.f17835j0 = NONE;
-        this.f17838m0 = new a();
+        this.f18241j0 = NONE;
+        this.f18244m0 = new a();
     }
 
     private final void T(int i10, int i11, int i12, int i13) {
@@ -66,25 +66,25 @@ public class d extends Toolbar {
     }
 
     private final void U() {
-        this.f17836k0 = getShouldAvoidDisplayCutout();
+        this.f18242k0 = getShouldAvoidDisplayCutout();
     }
 
     private final boolean getShouldApplyTopInset() {
-        return this.f17834i0.i();
+        return this.f18240i0.i();
     }
 
     private final boolean getShouldAvoidDisplayCutout() {
-        return this.f17834i0.i();
+        return this.f18240i0.i();
     }
 
     public final void V() {
-        setContentInsetStartWithNavigation(this.f17834i0.getPreferredContentInsetStartWithNavigation());
-        J(this.f17834i0.getPreferredContentInsetStart(), this.f17834i0.getPreferredContentInsetEnd());
+        setContentInsetStartWithNavigation(this.f18240i0.getPreferredContentInsetStartWithNavigation());
+        J(this.f18240i0.getPreferredContentInsetStart(), this.f18240i0.getPreferredContentInsetEnd());
     }
 
     @NotNull
     public final ScreenStackHeaderConfig getConfig() {
-        return this.f17834i0;
+        return this.f18240i0;
     }
 
     @Override // android.view.View
@@ -92,24 +92,24 @@ public class d extends Toolbar {
         int i10;
         WindowInsets onApplyWindowInsets = super.onApplyWindowInsets(windowInsets);
         WindowInsets rootWindowInsets = getRootWindowInsets();
-        Insets b10 = nn.d.b(this, WindowInsetsCompat.p.b(), rootWindowInsets, false, 4, null);
-        Insets b11 = nn.d.b(this, WindowInsetsCompat.p.h(), rootWindowInsets, false, 4, null);
-        Insets a10 = nn.d.a(this, WindowInsetsCompat.p.h(), rootWindowInsets, true);
-        Insets c10 = Insets.c(b10.f3163a + b11.f3163a, 0, b10.f3165c + b11.f3165c, 0);
+        Insets b10 = qn.d.b(this, WindowInsetsCompat.p.b(), rootWindowInsets, false, 4, null);
+        Insets b11 = qn.d.b(this, WindowInsetsCompat.p.h(), rootWindowInsets, false, 4, null);
+        Insets a10 = qn.d.a(this, WindowInsetsCompat.p.h(), rootWindowInsets, true);
+        Insets c10 = Insets.c(b10.f3275a + b11.f3275a, 0, b10.f3277c + b11.f3277c, 0);
         Intrinsics.checkNotNullExpressionValue(c10, "of(...)");
-        int i11 = b10.f3164b;
+        int i11 = b10.f3276b;
         if (getShouldApplyTopInset()) {
-            i10 = a10.f3164b;
+            i10 = a10.f3276b;
         } else {
             i10 = 0;
         }
-        Insets c11 = Insets.c(0, Math.max(i11, i10), 0, Math.max(b10.f3166d, 0));
+        Insets c11 = Insets.c(0, Math.max(i11, i10), 0, Math.max(b10.f3278d, 0));
         Intrinsics.checkNotNullExpressionValue(c11, "of(...)");
         Insets a11 = Insets.a(c10, c11);
         Intrinsics.checkNotNullExpressionValue(a11, "add(...)");
-        if (!Intrinsics.areEqual(this.f17835j0, a11)) {
-            this.f17835j0 = a11;
-            T(a11.f3163a, a11.f3164b, a11.f3165c, a11.f3166d);
+        if (!Intrinsics.areEqual(this.f18241j0, a11)) {
+            this.f18241j0 = a11;
+            T(a11.f3275a, a11.f3276b, a11.f3277c, a11.f3278d);
         }
         return onApplyWindowInsets;
     }
@@ -119,14 +119,14 @@ public class d extends Toolbar {
     public void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         boolean z11;
         super.onLayout(z10, i10, i11, i12, i13);
-        ScreenStackHeaderConfig screenStackHeaderConfig = this.f17834i0;
-        if (!z10 && !this.f17836k0) {
+        ScreenStackHeaderConfig screenStackHeaderConfig = this.f18240i0;
+        if (!z10 && !this.f18242k0) {
             z11 = false;
         } else {
             z11 = true;
         }
         screenStackHeaderConfig.k(this, z11);
-        this.f17836k0 = false;
+        this.f18242k0 = false;
     }
 
     @Override // android.view.View, android.view.ViewParent
@@ -143,9 +143,9 @@ public class d extends Toolbar {
         } else {
             num = null;
         }
-        if (Build.VERSION.SDK_INT <= 29 && num != null && num.intValue() == 32 && !this.f17837l0 && this.f17838m0 != null) {
-            this.f17837l0 = true;
-            ReactChoreographer.Companion.getInstance().postFrameCallback(ReactChoreographer.CallbackType.NATIVE_ANIMATED_MODULE, this.f17838m0);
+        if (Build.VERSION.SDK_INT <= 29 && num != null && num.intValue() == 32 && !this.f18243l0 && this.f18244m0 != null) {
+            this.f18243l0 = true;
+            ReactChoreographer.Companion.getInstance().postFrameCallback(ReactChoreographer.CallbackType.NATIVE_ANIMATED_MODULE, this.f18244m0);
         }
     }
 }

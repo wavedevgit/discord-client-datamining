@@ -70,16 +70,16 @@ public final class t extends io.sentry.android.replay.a {
 
     @Override // io.sentry.android.replay.a, io.sentry.t3
     public io.sentry.rrweb.b a(Breadcrumb breadcrumb) {
-        if (breadcrumb.l() == null || "sentry.event".equals(breadcrumb.l()) || "sentry.transaction".equals(breadcrumb.l()) || "http".equals(breadcrumb.l())) {
+        if (breadcrumb.m() == null || "sentry.event".equals(breadcrumb.m()) || "sentry.transaction".equals(breadcrumb.m()) || "http".equals(breadcrumb.m())) {
             return null;
         }
-        if (PointerEventHelper.POINTER_TYPE_TOUCH.equals(breadcrumb.l())) {
+        if (PointerEventHelper.POINTER_TYPE_TOUCH.equals(breadcrumb.m())) {
             return h(breadcrumb);
         }
-        if ("navigation".equals(breadcrumb.l())) {
+        if ("navigation".equals(breadcrumb.m())) {
             return f(breadcrumb);
         }
-        if ("xhr".equals(breadcrumb.l())) {
+        if ("xhr".equals(breadcrumb.m())) {
             return g(breadcrumb);
         }
         io.sentry.rrweb.b a10 = super.a(breadcrumb);
@@ -91,7 +91,7 @@ public final class t extends io.sentry.android.replay.a {
 
     public io.sentry.rrweb.b f(Breadcrumb breadcrumb) {
         io.sentry.rrweb.a aVar = new io.sentry.rrweb.a();
-        aVar.t(breadcrumb.l());
+        aVar.t(breadcrumb.m());
         j(aVar, breadcrumb);
         return aVar;
     }
@@ -100,18 +100,18 @@ public final class t extends io.sentry.android.replay.a {
         Double d10;
         Double d11;
         String str;
-        if (breadcrumb.o("start_timestamp") instanceof Number) {
-            d10 = (Double) breadcrumb.o("start_timestamp");
+        if (breadcrumb.n("start_timestamp") instanceof Number) {
+            d10 = (Double) breadcrumb.n("start_timestamp");
         } else {
             d10 = null;
         }
-        if (breadcrumb.o("end_timestamp") instanceof Number) {
-            d11 = (Double) breadcrumb.o("end_timestamp");
+        if (breadcrumb.n("end_timestamp") instanceof Number) {
+            d11 = (Double) breadcrumb.n("end_timestamp");
         } else {
             d11 = null;
         }
-        if (breadcrumb.o("url") instanceof String) {
-            str = (String) breadcrumb.o("url");
+        if (breadcrumb.n("url") instanceof String) {
+            str = (String) breadcrumb.n("url");
         } else {
             str = null;
         }
@@ -119,20 +119,20 @@ public final class t extends io.sentry.android.replay.a {
             return null;
         }
         HashMap hashMap = new HashMap();
-        if (breadcrumb.o("method") instanceof String) {
-            hashMap.put("method", breadcrumb.o("method"));
+        if (breadcrumb.n("method") instanceof String) {
+            hashMap.put("method", breadcrumb.n("method"));
         }
-        if (breadcrumb.o("status_code") instanceof Double) {
-            Double d12 = (Double) breadcrumb.o("status_code");
+        if (breadcrumb.n("status_code") instanceof Double) {
+            Double d12 = (Double) breadcrumb.n("status_code");
             if (d12.doubleValue() > 0.0d) {
                 hashMap.put("statusCode", Integer.valueOf(d12.intValue()));
             }
         }
-        if (breadcrumb.o("request_body_size") instanceof Double) {
-            hashMap.put("requestBodySize", breadcrumb.o("request_body_size"));
+        if (breadcrumb.n("request_body_size") instanceof Double) {
+            hashMap.put("requestBodySize", breadcrumb.n("request_body_size"));
         }
-        if (breadcrumb.o("response_body_size") instanceof Double) {
-            hashMap.put("responseBodySize", breadcrumb.o("response_body_size"));
+        if (breadcrumb.n("response_body_size") instanceof Double) {
+            hashMap.put("responseBodySize", breadcrumb.n("response_body_size"));
         }
         io.sentry.rrweb.i iVar = new io.sentry.rrweb.i();
         iVar.s("resource.http");
@@ -146,7 +146,7 @@ public final class t extends io.sentry.android.replay.a {
     public io.sentry.rrweb.b h(Breadcrumb breadcrumb) {
         io.sentry.rrweb.a aVar = new io.sentry.rrweb.a();
         aVar.t("ui.tap");
-        aVar.x(i(breadcrumb.o("path")));
+        aVar.x(i(breadcrumb.n("path")));
         j(aVar, breadcrumb);
         return aVar;
     }

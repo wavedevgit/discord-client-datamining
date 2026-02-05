@@ -3,17 +3,17 @@ package io.sentry.util;
 public abstract class a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    static boolean f30739a;
+    static boolean f29797a;
 
     /* renamed from: b  reason: collision with root package name */
-    static boolean f30740b;
+    static boolean f29798b;
 
     static {
         boolean z10;
         try {
-            f30739a = "The Android Project".equals(System.getProperty("java.vendor"));
+            f29797a = "The Android Project".equals(System.getProperty("java.vendor"));
         } catch (Throwable unused) {
-            f30739a = false;
+            f29797a = false;
         }
         try {
             String property = System.getProperty("java.specification.version");
@@ -23,24 +23,24 @@ public abstract class a0 {
                 } else {
                     z10 = false;
                 }
-                f30740b = z10;
+                f29798b = z10;
                 return;
             }
-            f30740b = false;
+            f29798b = false;
         } catch (Throwable unused2) {
-            f30740b = false;
+            f29798b = false;
         }
     }
 
     public static boolean a() {
-        return f30739a;
+        return f29797a;
     }
 
     public static boolean b() {
-        return f30740b;
+        return f29798b;
     }
 
     public static boolean c() {
-        return !f30739a;
+        return !f29797a;
     }
 }

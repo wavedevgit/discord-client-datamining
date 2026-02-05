@@ -294,15 +294,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'prepareOtaMetricForDatadog';
         var0.key = var5;
         var1 = function arg0() {
-            _fun79210: for (var _fun79210_ip = 0;;) switch (_fun79210_ip) {
+            _fun79229: for (var _fun79229_ip = 0;;) switch (_fun79229_ip) {
                 case 0:
                     var2 = arg0;
                     var3 = arguments[1];
                     var _closure3_slot0 = var2;
                     var0 = undefined;
                     if (!(var3 === var0)) {
-                        _fun79210_ip = 22;
-                        continue _fun79210
+                        _fun79229_ip = 22;
+                        continue _fun79229
                     }
                 case 18:
                     var3 = new Array(0);

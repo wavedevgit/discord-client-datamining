@@ -1,226 +1,165 @@
 package zm;
 
-import android.os.Bundle;
-import android.view.View;
-import androidx.lifecycle.Lifecycle;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.m;
-import androidx.lifecycle.r0;
-import androidx.savedstate.SavedStateRegistry;
-import java.util.Collection;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
-import kotlin.Pair;
+import java.util.List;
+import java.util.concurrent.CancellationException;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt;
-import kotlin.collections.x0;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
-import lr.v;
-import u3.j;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.flow.MutableStateFlow;
+import ms.s0;
+import ps.j0;
+import ps.l0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f {
-
-    /* renamed from: a  reason: collision with root package name */
-    private Map f56076a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private u3.f f56077b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private String f56078c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Map f56079d = new LinkedHashMap();
-
-    /* renamed from: e  reason: collision with root package name */
-    private final a f56080e = new a();
+public abstract class f {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements m {
-        a() {
+    static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        int f56061d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private /* synthetic */ Object f56062e;
+
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ an.m f56063i;
+
+        /* renamed from: o  reason: collision with root package name */
+        final /* synthetic */ MutableStateFlow f56064o;
+
+        /* renamed from: p  reason: collision with root package name */
+        final /* synthetic */ Function2 f56065p;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        a(an.m mVar, MutableStateFlow mutableStateFlow, Function2 function2, Continuation continuation) {
+            super(2, continuation);
+            this.f56063i = mVar;
+            this.f56064o = mutableStateFlow;
+            this.f56065p = function2;
         }
 
-        @Override // androidx.lifecycle.m
-        public void h(LifecycleOwner source, Lifecycle.a event) {
-            Intrinsics.checkNotNullParameter(source, "source");
-            Intrinsics.checkNotNullParameter(event, "event");
-            if (event == Lifecycle.a.ON_CREATE) {
-                if (!f.this.i()) {
-                    source.getLifecycle().d(this);
-                    f fVar = f.this;
-                    u3.f fVar2 = fVar.f56077b;
-                    Intrinsics.checkNotNull(fVar2);
-                    SavedStateRegistry savedStateRegistry = fVar2.getSavedStateRegistry();
-                    String str = f.this.f56078c;
-                    Intrinsics.checkNotNull(str);
-                    fVar.k(savedStateRegistry.a(str));
-                    return;
-                }
-                throw new IllegalStateException("Expected not to be observing lifecycle after restoration.");
-            }
-            throw new IllegalStateException(Intrinsics.stringPlus("Expected to receive ON_CREATE event before anything else, but got ", event).toString());
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            a aVar = new a(this.f56063i, this.f56064o, this.f56065p, continuation);
+            aVar.f56062e = obj;
+            return aVar;
+        }
+
+        /* JADX WARN: Code restructure failed: missing block: B:25:0x006b, code lost:
+            if (r4.invoke(r8, r7) == r0) goto L21;
+         */
+        /* JADX WARN: Removed duplicated region for block: B:13:0x0033  */
+        /* JADX WARN: Removed duplicated region for block: B:19:0x004b  */
+        /* JADX WARN: Removed duplicated region for block: B:21:0x004e  */
+        /* JADX WARN: Removed duplicated region for block: B:27:0x006e  */
+        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:22:0x0059 -> B:23:0x005b). Please submit an issue!!! */
+        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:25:0x006b -> B:23:0x005b). Please submit an issue!!! */
+        @Override // kotlin.coroutines.jvm.internal.a
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public final java.lang.Object invokeSuspend(java.lang.Object r8) {
+            /*
+                r7 = this;
+                java.lang.Object r0 = ur.b.f()
+                int r1 = r7.f56061d
+                r2 = 2
+                r3 = 1
+                if (r1 == 0) goto L26
+                if (r1 == r3) goto L1e
+                if (r1 != r2) goto L16
+                java.lang.Object r1 = r7.f56062e
+                kotlinx.coroutines.CoroutineScope r1 = (kotlinx.coroutines.CoroutineScope) r1
+                kotlin.c.b(r8)
+                goto L5b
+            L16:
+                java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
+                java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
+                r8.<init>(r0)
+                throw r8
+            L1e:
+                java.lang.Object r1 = r7.f56062e
+                kotlinx.coroutines.CoroutineScope r1 = (kotlinx.coroutines.CoroutineScope) r1
+                kotlin.c.b(r8)
+                goto L43
+            L26:
+                kotlin.c.b(r8)
+                java.lang.Object r8 = r7.f56062e
+                kotlinx.coroutines.CoroutineScope r8 = (kotlinx.coroutines.CoroutineScope) r8
+            L2d:
+                boolean r1 = kotlinx.coroutines.i.i(r8)
+                if (r1 == 0) goto L6e
+                an.m r1 = r7.f56063i
+                r7.f56062e = r8
+                r7.f56061d = r3
+                java.lang.Object r1 = r1.f(r7)
+                if (r1 != r0) goto L40
+                goto L6d
+            L40:
+                r6 = r1
+                r1 = r8
+                r8 = r6
+            L43:
+                zm.v r8 = (zm.v) r8
+                boolean r4 = kotlinx.coroutines.i.i(r1)
+                if (r4 != 0) goto L4e
+                kotlin.Unit r8 = kotlin.Unit.f31988a
+                return r8
+            L4e:
+                kotlinx.coroutines.flow.MutableStateFlow r4 = r7.f56064o
+                an.m r5 = r7.f56063i
+                zm.g r5 = r5.g()
+                r4.setValue(r5)
+                if (r8 != 0) goto L5d
+            L5b:
+                r8 = r1
+                goto L2d
+            L5d:
+                kotlin.jvm.functions.Function2 r4 = r7.f56065p
+                java.lang.Object r8 = r8.a()
+                r7.f56062e = r1
+                r7.f56061d = r2
+                java.lang.Object r8 = r4.invoke(r8, r7)
+                if (r8 != r0) goto L5b
+            L6d:
+                return r0
+            L6e:
+                kotlin.Unit r8 = kotlin.Unit.f31988a
+                return r8
+            */
+            throw new UnsupportedOperationException("Method not decompiled: zm.f.a.invokeSuspend(java.lang.Object):java.lang.Object");
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public final boolean i() {
-        if (this.f56076a != null) {
-            return true;
-        }
-        return false;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final void k(Bundle bundle) {
-        Set<String> keySet;
-        if (this.f56076a == null) {
-            this.f56076a = new LinkedHashMap();
-            if (bundle != null && (keySet = bundle.keySet()) != null) {
-                for (String str : keySet) {
-                    Map map = this.f56076a;
-                    Intrinsics.checkNotNull(map);
-                    Bundle bundle2 = bundle.getBundle(str);
-                    Intrinsics.checkNotNull(bundle2);
-                    Pair a10 = v.a(str, bundle2);
-                    map.put(a10.c(), a10.d());
-                }
-            }
-            for (zm.a aVar : this.f56079d.values()) {
-                if (aVar.getLifecycle().b() == Lifecycle.State.f4406e) {
-                    l(aVar);
-                }
-            }
-            return;
-        }
-        throw new IllegalStateException("Expected performRestore to be called only once.");
-    }
-
-    private final void l(zm.a aVar) {
-        Map map = this.f56076a;
-        if (map == null) {
-            return;
-        }
-        aVar.a().d((Bundle) map.remove(aVar.b()));
-    }
-
-    private final void n(zm.a aVar) {
-        Map map = this.f56076a;
-        if (map == null) {
-            return;
-        }
-        Bundle bundle = new Bundle();
-        aVar.a().e(bundle);
-        Pair a10 = v.a(aVar.b(), bundle);
-        map.put(a10.c(), a10.d());
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final Bundle o() {
-        Bundle bundle = new Bundle();
-        Map map = this.f56076a;
-        if (map != null) {
-            for (zm.a aVar : this.f56079d.values()) {
-                n(aVar);
-            }
-            for (Map.Entry entry : map.entrySet()) {
-                bundle.putBundle((String) entry.getKey(), (Bundle) entry.getValue());
-            }
-        }
-        return bundle;
-    }
-
-    public final void f(String key, u3.f parentOwner) {
-        Intrinsics.checkNotNullParameter(key, "key");
-        Intrinsics.checkNotNullParameter(parentOwner, "parentOwner");
-        g();
-        this.f56077b = parentOwner;
-        this.f56078c = key;
-        if (i()) {
-            return;
-        }
-        SavedStateRegistry savedStateRegistry = parentOwner.getSavedStateRegistry();
-        Intrinsics.checkNotNullExpressionValue(savedStateRegistry, "parentOwner.savedStateRegistry");
-        Lifecycle lifecycle = parentOwner.getLifecycle();
-        Intrinsics.checkNotNullExpressionValue(lifecycle, "parentOwner.lifecycle");
+    public static final j0 a(q workflow, CoroutineScope scope, j0 props, m mVar, List interceptors, Function2 onOutput) {
+        Intrinsics.checkNotNullParameter(workflow, "workflow");
+        Intrinsics.checkNotNullParameter(scope, "scope");
+        Intrinsics.checkNotNullParameter(props, "props");
+        Intrinsics.checkNotNullParameter(interceptors, "interceptors");
+        Intrinsics.checkNotNullParameter(onOutput, "onOutput");
+        an.m mVar2 = new an.m(scope, workflow, props, mVar, an.c.a(interceptors));
+        CancellationException cancellationException = null;
         try {
-            savedStateRegistry.c(key, new SavedStateRegistry.b() { // from class: zm.e
-                @Override // androidx.savedstate.SavedStateRegistry.b
-                public final Bundle a() {
-                    Bundle o10;
-                    o10 = f.this.o();
-                    return o10;
-                }
-            });
-            lifecycle.a(this.f56080e);
-        } catch (IllegalArgumentException e10) {
-            throw new IllegalArgumentException("Error registering SavedStateProvider: key \"" + key + "\" is already in use on parent SavedStateRegistryOwner " + parentOwner + ".\nThis is most easily remedied by giving your container Screen rendering a unique Compatible.compatibilityKey, perhaps by wrapping it with Named.", e10);
-        }
-    }
-
-    public final void g() {
-        Lifecycle lifecycle;
-        SavedStateRegistry savedStateRegistry;
-        u3.f fVar = this.f56077b;
-        if (fVar != null && (savedStateRegistry = fVar.getSavedStateRegistry()) != null) {
-            String str = this.f56078c;
-            Intrinsics.checkNotNull(str);
-            savedStateRegistry.e(str);
-        }
-        u3.f fVar2 = this.f56077b;
-        if (fVar2 != null && (lifecycle = fVar2.getLifecycle()) != null) {
-            lifecycle.d(this.f56080e);
-        }
-        this.f56077b = null;
-        this.f56078c = null;
-    }
-
-    public final void h(View view, String key) {
-        Intrinsics.checkNotNullParameter(view, "view");
-        Intrinsics.checkNotNullParameter(key, "key");
-        LifecycleOwner a10 = r0.a(view);
-        if (a10 != null) {
-            zm.a aVar = new zm.a(key, a10);
-            if (((zm.a) this.f56079d.put(key, aVar)) == null) {
-                u3.f a11 = j.a(view);
-                if (a11 == null) {
-                    j.b(view, aVar);
-                    l(aVar);
-                    return;
-                }
-                throw new IllegalArgumentException(view + " already has ViewTreeSavedStateRegistryOwner: " + a11);
+            MutableStateFlow a10 = l0.a(mVar2.g());
+            ms.i.d(scope, null, null, new a(mVar2, a10, onOutput, null), 3, null);
+            return a10;
+        } catch (Throwable th2) {
+            if (th2 instanceof CancellationException) {
+                cancellationException = th2;
             }
-            throw new IllegalArgumentException(key + " is already in use, it cannot be used to register " + view);
+            if (cancellationException == null) {
+                cancellationException = s0.a("Workflow runtime failed", th2);
+            }
+            mVar2.e(cancellationException);
+            throw th2;
         }
-        throw new IllegalArgumentException(("Expected " + view + '(' + key + ") to have a ViewTreeLifecycleOwner. Use WorkflowLifecycleOwner to fix that.").toString());
-    }
-
-    public final void j(Collection keysToKeep) {
-        Intrinsics.checkNotNullParameter(keysToKeep, "keysToKeep");
-        Collection collection = keysToKeep;
-        for (String str : x0.j(this.f56079d.keySet(), collection)) {
-            this.f56079d.remove(str);
-        }
-        Map map = this.f56076a;
-        if (map == null) {
-            return;
-        }
-        CollectionsKt.I(map.keySet(), x0.j(map.keySet(), collection));
-    }
-
-    public final void m(String key) {
-        Unit unit;
-        Intrinsics.checkNotNullParameter(key, "key");
-        zm.a aVar = (zm.a) this.f56079d.remove(key);
-        if (aVar == null) {
-            unit = null;
-        } else {
-            n(aVar);
-            unit = Unit.f32464a;
-        }
-        if (unit != null) {
-            return;
-        }
-        throw new IllegalArgumentException(Intrinsics.stringPlus("No such child: ", key));
     }
 }

@@ -1,20 +1,33 @@
 package is;
 
+import kotlin.Result;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-abstract class b {
-    public static final void a(long j10, byte[] dst, int i10, int i11, int i12) {
-        Intrinsics.checkNotNullParameter(dst, "dst");
-        c.f(j10, dst, i10, i11, i12);
+public abstract class b {
+    static {
+        Object b10;
+        try {
+            Result.a aVar = Result.f31985e;
+            b10 = Result.b(Class.forName("java.lang.ClassValue"));
+        } catch (Throwable th2) {
+            Result.a aVar2 = Result.f31985e;
+            b10 = Result.b(kotlin.c.a(th2));
+        }
+        if (Result.h(b10)) {
+            Class cls = (Class) b10;
+            b10 = Boolean.TRUE;
+        }
+        Object b11 = Result.b(b10);
+        Boolean bool = Boolean.FALSE;
+        if (Result.g(b11)) {
+            b11 = bool;
+        }
+        ((Boolean) b11).getClass();
     }
 
-    public static final a b(String hexString) {
-        Intrinsics.checkNotNullParameter(hexString, "hexString");
-        return c.h(hexString);
-    }
-
-    public static final a c(String hexDashString) {
-        Intrinsics.checkNotNullParameter(hexDashString, "hexDashString");
-        return c.i(hexDashString);
+    public static final a a(Function1 compute) {
+        Intrinsics.checkNotNullParameter(compute, "compute");
+        return new i(compute);
     }
 }

@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/gif_picker/native/GIFPickerCategoryView.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun74408: for (var _fun74408_ip = 0;;) switch (_fun74408_ip) {
+        _fun74427: for (var _fun74427_ip = 0;;) switch (_fun74427_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.onSelectCategory;
@@ -214,8 +214,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot6;
                 var7 = var7.TRENDING_GIFS;
                 if (!(var9 !== var7)) {
-                    _fun74408_ip = 442;
-                    continue _fun74408
+                    _fun74427_ip = 442;
+                    continue _fun74427
                 }
             case 332:
                 var10 = var11.type;
@@ -223,8 +223,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.FAVORITES;
                 var9 = null;
                 if (!(var10 === var7)) {
-                    _fun74408_ip = 440;
-                    continue _fun74408
+                    _fun74427_ip = 440;
+                    continue _fun74427
                 }
             case 353:
                 var12 = _closure1_slot7;
@@ -248,8 +248,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.color = var14;
                 var9 = var12.bind(var3)(var10, var7);
             case 440:
-                _fun74408_ip = 529;
-                continue _fun74408;
+                _fun74427_ip = 529;
+                continue _fun74427;
             case 442:
                 var12 = _closure1_slot7;
                 var10 = _closure1_slot0;
@@ -302,4 +302,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 1234, 8147, 4704, 9371, 8578, 3941, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 1234, 8166, 4704, 9389, 8596, 3941, 2]);

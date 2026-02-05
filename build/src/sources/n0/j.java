@@ -32,40 +32,40 @@ import x.z;
 public class j implements x1.b {
 
     /* renamed from: d  reason: collision with root package name */
-    final Set f39547d;
+    final Set f39007d;
 
     /* renamed from: p  reason: collision with root package name */
-    private final y2 f39551p;
+    private final y2 f39011p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final e0 f39552q;
+    private final e0 f39012q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final e0 f39553r;
+    private final e0 f39013r;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Set f39555t;
+    private final Set f39015t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Map f39556u;
+    private final Map f39016u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final b f39557v;
+    private final b f39017v;
 
     /* renamed from: w  reason: collision with root package name */
-    private b f39558w;
+    private b f39018w;
 
     /* renamed from: e  reason: collision with root package name */
-    final Map f39548e = new HashMap();
+    final Map f39008e = new HashMap();
 
     /* renamed from: i  reason: collision with root package name */
-    private final Map f39549i = new HashMap();
+    private final Map f39009i = new HashMap();
 
     /* renamed from: o  reason: collision with root package name */
-    final Map f39550o = new HashMap();
+    final Map f39010o = new HashMap();
 
     /* renamed from: s  reason: collision with root package name */
-    private final a0.k f39554s = t();
+    private final a0.k f39014s = t();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -76,7 +76,7 @@ public class j implements x1.b {
         @Override // a0.k
         public void b(int i10, u uVar) {
             super.b(i10, uVar);
-            for (x1 x1Var : j.this.f39547d) {
+            for (x1 x1Var : j.this.f39007d) {
                 j.K(uVar, x1Var.w(), i10);
             }
         }
@@ -84,23 +84,23 @@ public class j implements x1.b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(e0 e0Var, e0 e0Var2, Set set, y2 y2Var, f.a aVar) {
-        this.f39552q = e0Var;
-        this.f39553r = e0Var2;
-        this.f39551p = y2Var;
-        this.f39547d = set;
+        this.f39012q = e0Var;
+        this.f39013r = e0Var2;
+        this.f39011p = y2Var;
+        this.f39007d = set;
         Map M = M(e0Var, set, y2Var);
-        this.f39556u = M;
+        this.f39016u = M;
         HashSet hashSet = new HashSet(M.values());
-        this.f39555t = hashSet;
-        this.f39557v = new b(e0Var, hashSet);
+        this.f39015t = hashSet;
+        this.f39017v = new b(e0Var, hashSet);
         if (e0Var2 != null) {
-            this.f39558w = new b(e0Var2, hashSet);
+            this.f39018w = new b(e0Var2, hashSet);
         }
         Iterator it = set.iterator();
         while (it.hasNext()) {
             x1 x1Var = (x1) it.next();
-            this.f39550o.put(x1Var, Boolean.FALSE);
-            this.f39549i.put(x1Var, new i(e0Var, this, aVar));
+            this.f39010o.put(x1Var, Boolean.FALSE);
+            this.f39009i.put(x1Var, new i(e0Var, this, aVar));
         }
     }
 
@@ -114,13 +114,13 @@ public class j implements x1.b {
     }
 
     private l0 E(x1 x1Var) {
-        l0 l0Var = (l0) this.f39548e.get(x1Var);
+        l0 l0Var = (l0) this.f39008e.get(x1Var);
         Objects.requireNonNull(l0Var);
         return l0Var;
     }
 
     private boolean F(x1 x1Var) {
-        Boolean bool = (Boolean) this.f39550o.get(x1Var);
+        Boolean bool = (Boolean) this.f39010o.get(x1Var);
         Objects.requireNonNull(bool);
         return bool.booleanValue();
     }
@@ -136,7 +136,7 @@ public class j implements x1.b {
         Iterator it = set.iterator();
         while (it.hasNext()) {
             x1 x1Var = (x1) it.next();
-            hashMap.put(x1Var, x1Var.D(e0Var.m(), null, x1Var.k(true, y2Var)));
+            hashMap.put(x1Var, x1Var.D(e0Var.l(), null, x1Var.k(true, y2Var)));
         }
         return hashMap;
     }
@@ -144,14 +144,14 @@ public class j implements x1.b {
     private l0.f s(x1 x1Var, b bVar, e0 e0Var, l0 l0Var, int i10, boolean z10) {
         int j10 = e0Var.b().j(i10);
         boolean l10 = q.l(l0Var.q());
-        x2 x2Var = (x2) this.f39556u.get(x1Var);
+        x2 x2Var = (x2) this.f39016u.get(x1Var);
         Objects.requireNonNull(x2Var);
         Pair s10 = bVar.s(x2Var, l0Var.n(), q.g(l0Var.q()), z10);
         Rect rect = (Rect) s10.first;
-        int w10 = w(x1Var, this.f39552q);
-        i iVar = (i) this.f39549i.get(x1Var);
+        int w10 = w(x1Var, this.f39012q);
+        i iVar = (i) this.f39009i.get(x1Var);
         Objects.requireNonNull(iVar);
-        iVar.n(w10);
+        iVar.r(w10);
         int u10 = q.u((l0Var.p() + w10) - j10);
         return l0.f.h(y(x1Var), v(x1Var), rect, q.o((Size) s10.second, u10), u10, x1Var.C(e0Var) ^ l10);
     }
@@ -211,9 +211,9 @@ public class j implements x1.b {
     /* JADX INFO: Access modifiers changed from: package-private */
     public Map A(l0 l0Var, int i10, boolean z10) {
         HashMap hashMap = new HashMap();
-        for (x1 x1Var : this.f39547d) {
+        for (x1 x1Var : this.f39007d) {
             l0 l0Var2 = l0Var;
-            hashMap.put(x1Var, s(x1Var, this.f39557v, this.f39552q, l0Var2, i10, z10));
+            hashMap.put(x1Var, s(x1Var, this.f39017v, this.f39012q, l0Var2, i10, z10));
             l0Var = l0Var2;
         }
         return hashMap;
@@ -222,13 +222,13 @@ public class j implements x1.b {
     /* JADX INFO: Access modifiers changed from: package-private */
     public Map B(l0 l0Var, l0 l0Var2, int i10, boolean z10) {
         HashMap hashMap = new HashMap();
-        for (x1 x1Var : this.f39547d) {
+        for (x1 x1Var : this.f39007d) {
             l0 l0Var3 = l0Var;
             int i11 = i10;
             boolean z11 = z10;
-            l0.f s10 = s(x1Var, this.f39557v, this.f39552q, l0Var3, i11, z11);
-            b bVar = this.f39558w;
-            e0 e0Var = this.f39553r;
+            l0.f s10 = s(x1Var, this.f39017v, this.f39012q, l0Var3, i11, z11);
+            b bVar = this.f39018w;
+            e0 e0Var = this.f39013r;
             Objects.requireNonNull(e0Var);
             l0 l0Var4 = l0Var2;
             hashMap.put(x1Var, k0.d.c(s10, s(x1Var, bVar, e0Var, l0Var4, i11, z11)));
@@ -242,17 +242,17 @@ public class j implements x1.b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a0.k D() {
-        return this.f39554s;
+        return this.f39014s;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void G(q1 q1Var) {
-        q1Var.V(i1.f93s, this.f39557v.o(q1Var));
-        q1Var.V(x2.f321x, Integer.valueOf(C(this.f39555t)));
-        z d10 = n0.a.d(this.f39555t);
+        q1Var.V(i1.f93s, this.f39017v.o(q1Var));
+        q1Var.V(x2.f321x, Integer.valueOf(C(this.f39015t)));
+        z d10 = n0.a.d(this.f39015t);
         if (d10 != null) {
             q1Var.V(h1.f77i, d10);
-            for (x1 x1Var : this.f39547d) {
+            for (x1 x1Var : this.f39007d) {
                 if (x1Var.j().t() != 0) {
                     q1Var.V(x2.D, Integer.valueOf(x1Var.j().t()));
                 }
@@ -267,7 +267,7 @@ public class j implements x1.b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void H() {
-        for (x1 x1Var : this.f39547d) {
+        for (x1 x1Var : this.f39007d) {
             x1Var.L();
             x1Var.J();
         }
@@ -275,7 +275,7 @@ public class j implements x1.b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void I() {
-        for (x1 x1Var : this.f39547d) {
+        for (x1 x1Var : this.f39007d) {
             x1Var.M();
         }
     }
@@ -283,16 +283,16 @@ public class j implements x1.b {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void J() {
         b0.p.a();
-        for (x1 x1Var : this.f39547d) {
-            h(x1Var);
+        for (x1 x1Var : this.f39007d) {
+            o(x1Var);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void L(Map map) {
-        this.f39548e.clear();
-        this.f39548e.putAll(map);
-        for (Map.Entry entry : this.f39548e.entrySet()) {
+        this.f39008e.clear();
+        this.f39008e.putAll(map);
+        for (Map.Entry entry : this.f39008e.entrySet()) {
             x1 x1Var = (x1) entry.getKey();
             l0 l0Var = (l0) entry.getValue();
             x1Var.T(l0Var.n());
@@ -304,8 +304,8 @@ public class j implements x1.b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void N() {
-        for (x1 x1Var : this.f39547d) {
-            i iVar = (i) this.f39549i.get(x1Var);
+        for (x1 x1Var : this.f39007d) {
+            i iVar = (i) this.f39009i.get(x1Var);
             Objects.requireNonNull(iVar);
             x1Var.U(iVar);
         }
@@ -330,7 +330,7 @@ public class j implements x1.b {
     public void e(x1 x1Var) {
         b0.p.a();
         if (!F(x1Var)) {
-            this.f39550o.put(x1Var, Boolean.TRUE);
+            this.f39010o.put(x1Var, Boolean.TRUE);
             w0 x10 = x(x1Var);
             if (x10 != null) {
                 u(E(x1Var), x10, x1Var.w());
@@ -339,17 +339,17 @@ public class j implements x1.b {
     }
 
     @Override // x.x1.b
-    public void g(x1 x1Var) {
+    public void h(x1 x1Var) {
         b0.p.a();
         if (!F(x1Var)) {
             return;
         }
-        this.f39550o.put(x1Var, Boolean.FALSE);
+        this.f39010o.put(x1Var, Boolean.FALSE);
         E(x1Var).m();
     }
 
     @Override // x.x1.b
-    public void h(x1 x1Var) {
+    public void o(x1 x1Var) {
         w0 x10;
         b0.p.a();
         l0 E = E(x1Var);
@@ -359,11 +359,11 @@ public class j implements x1.b {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void n() {
-        for (x1 x1Var : this.f39547d) {
-            i iVar = (i) this.f39549i.get(x1Var);
+    public void r() {
+        for (x1 x1Var : this.f39007d) {
+            i iVar = (i) this.f39009i.get(x1Var);
             Objects.requireNonNull(iVar);
-            x1Var.b(iVar, null, null, x1Var.k(true, this.f39551p));
+            x1Var.b(iVar, null, null, x1Var.k(true, this.f39011p));
         }
     }
 
@@ -373,6 +373,6 @@ public class j implements x1.b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Set z() {
-        return this.f39547d;
+        return this.f39007d;
     }
 }

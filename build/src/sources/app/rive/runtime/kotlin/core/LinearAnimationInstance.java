@@ -7,8 +7,8 @@ import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
-import lr.c;
-import lr.p;
+import or.c;
+import or.p;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u000e\n\u0002\b\r\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0010\u000b\n\u0002\b\u0015\b\u0007\u0018\u00002\u00020\u00012\u00020\u0002B\u001f\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\b\b\u0002\u0010\u0007\u001a\u00020\b¢\u0006\u0002\u0010\tJ\u0012\u00102\u001a\u0004\u0018\u00010\u001e2\u0006\u00103\u001a\u00020\bH\u0007J\u000e\u00104\u001a\u0002052\u0006\u00103\u001a\u00020\bJ\u0006\u00106\u001a\u000207J\u000e\u00106\u001a\u0002082\u0006\u00109\u001a\u00020\bJ\u001b\u0010:\u001a\u0004\u0018\u00010\u001e2\u0006\u0010;\u001a\u00020\u00042\u0006\u00103\u001a\u00020\bH\u0082 J\u0019\u0010<\u001a\u0002052\u0006\u0010;\u001a\u00020\u00042\u0006\u00103\u001a\u00020\bH\u0082 J\u0019\u0010=\u001a\u0002072\u0006\u0010;\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\bH\u0082 J\u0011\u0010>\u001a\u0002072\u0006\u0010;\u001a\u00020\u0004H\u0096 J\u0011\u0010?\u001a\u00020\u00112\u0006\u0010@\u001a\u00020\u0004H\u0082 J\u0011\u0010A\u001a\u00020\u00112\u0006\u0010@\u001a\u00020\u0004H\u0082 J\u0011\u0010B\u001a\u00020\u00112\u0006\u0010;\u001a\u00020\u0004H\u0082 J\u0011\u0010C\u001a\u00020\u00112\u0006\u0010@\u001a\u00020\u0004H\u0082 J\u0011\u0010D\u001a\u00020\b2\u0006\u0010;\u001a\u00020\u0004H\u0082 J\u0011\u0010E\u001a\u00020'2\u0006\u0010@\u001a\u00020\u0004H\u0082 J\u0019\u0010F\u001a\u0002072\u0006\u0010;\u001a\u00020\u00042\u0006\u0010G\u001a\u00020\u0011H\u0082 J\u0019\u0010H\u001a\u0002072\u0006\u0010@\u001a\u00020\u00042\u0006\u0010I\u001a\u00020\u0011H\u0082 J\u0019\u0010J\u001a\u0002072\u0006\u0010;\u001a\u00020\u00042\u0006\u0010,\u001a\u00020\bH\u0082 J\u0011\u0010K\u001a\u00020\u00112\u0006\u0010@\u001a\u00020\u0004H\u0082 J\u0011\u0010L\u001a\u00020\u00112\u0006\u0010@\u001a\u00020\u0004H\u0082 J\u000e\u0010,\u001a\u0002072\u0006\u0010,\u001a\u00020\bR$\u0010\n\u001a\u00020\u000b2\u0006\u0010\n\u001a\u00020\u000b8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\u0011\u0010\u0010\u001a\u00020\u00118F¢\u0006\u0006\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\u0014\u001a\u00020\u00118F¢\u0006\u0006\u001a\u0004\b\u0015\u0010\u0013R\u0011\u0010\u0016\u001a\u00020\b8F¢\u0006\u0006\u001a\u0004\b\u0017\u0010\u0018R\u0011\u0010\u0019\u001a\u00020\b8F¢\u0006\u0006\u001a\u0004\b\u001a\u0010\u0018R\u0011\u0010\u001b\u001a\u00020\u00118F¢\u0006\u0006\u001a\u0004\b\u001c\u0010\u0013R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R$\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001d\u001a\u00020\u001e8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b\u001f\u0010 \"\u0004\b!\u0010\"R\u001a\u0010\u0007\u001a\u00020\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b#\u0010\u0018\"\u0004\b$\u0010%R\u0014\u0010&\u001a\u00020'8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b(\u0010)R\u0011\u0010*\u001a\u00020\b8F¢\u0006\u0006\u001a\u0004\b+\u0010\u0018R\u0011\u0010,\u001a\u00020\b8F¢\u0006\u0006\u001a\u0004\b-\u0010\u0018R\u0011\u0010.\u001a\u00020\u00118F¢\u0006\u0006\u001a\u0004\b/\u0010\u0013R\u0011\u00100\u001a\u00020\u00118F¢\u0006\u0006\u001a\u0004\b1\u0010\u0013¨\u0006M"}, d2 = {"Lapp/rive/runtime/kotlin/core/LinearAnimationInstance;", "Lapp/rive/runtime/kotlin/core/PlayableInstance;", "Lapp/rive/runtime/kotlin/core/NativeObject;", "unsafeCppPointer", "", "lock", "Ljava/util/concurrent/locks/ReentrantLock;", "mix", "", "(JLjava/util/concurrent/locks/ReentrantLock;F)V", "direction", "Lapp/rive/runtime/kotlin/core/Direction;", "getDirection", "()Lapp/rive/runtime/kotlin/core/Direction;", "setDirection", "(Lapp/rive/runtime/kotlin/core/Direction;)V", "duration", "", "getDuration", "()I", "effectiveDuration", "getEffectiveDuration", "effectiveDurationInSeconds", "getEffectiveDurationInSeconds", "()F", "endTime", "getEndTime", "fps", "getFps", "loop", "Lapp/rive/runtime/kotlin/core/Loop;", "getLoop", "()Lapp/rive/runtime/kotlin/core/Loop;", "setLoop", "(Lapp/rive/runtime/kotlin/core/Loop;)V", "getMix", "setMix", "(F)V", StackTraceHelper.NAME_KEY, "", "getName", "()Ljava/lang/String;", "startTime", "getStartTime", "time", "getTime", "workEnd", "getWorkEnd", "workStart", "getWorkStart", "advance", "elapsedTime", "advanceAndGetResult", "Lapp/rive/runtime/kotlin/core/AdvanceResult;", "apply", "", "", "elapsed", "cppAdvance", "pointer", "cppAdvanceAndGetResult", "cppApply", "cppDelete", "cppDuration", "cppPointer", "cppFps", "cppGetDirection", "cppGetLoop", "cppGetTime", "cppName", "cppSetDirection", "int", "cppSetLoop", "value", "cppSetTime", "cppWorkEnd", "cppWorkStart", "kotlin_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nLinearAnimationInstance.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LinearAnimationInstance.kt\napp/rive/runtime/kotlin/core/LinearAnimationInstance\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,185:1\n1#2:186\n*E\n"})
@@ -103,7 +103,7 @@ public final class LinearAnimationInstance extends NativeObject implements Playa
     public final void apply() {
         synchronized (this.lock) {
             cppApply(getCppPointer(), this.mix);
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
     }
 
@@ -189,7 +189,7 @@ public final class LinearAnimationInstance extends NativeObject implements Playa
         Intrinsics.checkNotNullParameter(direction, "direction");
         synchronized (this.lock) {
             cppSetDirection(getCppPointer(), direction.getValue());
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
     }
 
@@ -197,7 +197,7 @@ public final class LinearAnimationInstance extends NativeObject implements Playa
         Intrinsics.checkNotNullParameter(loop, "loop");
         synchronized (this.lock) {
             cppSetLoop(getCppPointer(), loop.ordinal());
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
     }
 
@@ -208,7 +208,7 @@ public final class LinearAnimationInstance extends NativeObject implements Playa
     public final void time(float f10) {
         synchronized (this.lock) {
             cppSetTime(getCppPointer(), f10);
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
     }
 
@@ -223,7 +223,7 @@ public final class LinearAnimationInstance extends NativeObject implements Playa
     public final boolean apply(float f10) {
         synchronized (this.lock) {
             cppApply(getCppPointer(), this.mix);
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
         int i10 = WhenMappings.$EnumSwitchMapping$0[advanceAndGetResult(f10).ordinal()];
         if (i10 == 1 || i10 == 2 || i10 == 3) {

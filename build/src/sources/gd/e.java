@@ -7,14 +7,14 @@ public abstract class e implements a {
     @Override // gd.a
     public final Metadata a(c cVar) {
         boolean z10;
-        ByteBuffer byteBuffer = (ByteBuffer) ne.a.e(cVar.f47497i);
+        ByteBuffer byteBuffer = (ByteBuffer) ne.a.e(cVar.f47561i);
         if (byteBuffer.position() == 0 && byteBuffer.hasArray() && byteBuffer.arrayOffset() == 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         ne.a.a(z10);
-        if (cVar.l()) {
+        if (cVar.m()) {
             return null;
         }
         return b(cVar, byteBuffer);

@@ -1,25 +1,20 @@
 package qj;
 
-import gf.i;
+import lg.i0;
+import lg.q0;
+import sj.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a {
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final i f47891b = new i("ModelFileHelper", "");
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final String f47892c = String.format("com.google.mlkit.%s.models", "translate");
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final String f47893d = String.format("com.google.mlkit.%s.models", "custom");
-
-    /* renamed from: e  reason: collision with root package name */
-    static final String f47894e = String.format("com.google.mlkit.%s.models", "base");
+public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final pj.i f47895a;
+    private final i f47943a;
 
-    public a(pj.i iVar) {
-        this.f47895a = iVar;
+    /* renamed from: b  reason: collision with root package name */
+    private final i0 f47944b;
+
+    public a(i iVar) {
+        i0 b10 = q0.b("common");
+        this.f47943a = iVar;
+        this.f47944b = b10;
     }
 }

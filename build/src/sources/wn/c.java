@@ -1,81 +1,73 @@
 package wn;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.IntentFilter;
-import android.os.Build;
-import kotlin.Lazy;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.flow.Flow;
-import lr.l;
-import ms.j0;
+import sn.y0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
+public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Lazy f52601a = l.a(new Function0() { // from class: wn.b
-        @Override // kotlin.jvm.functions.Function0
-        public final Object invoke() {
-            BroadcastReceiver e10;
-            e10 = c.e();
-            return e10;
-        }
-    });
+    private final y0 f53172a;
 
-    public static final Flow b() {
-        try {
-            Object newInstance = Class.forName("com.withpersona.sdk2.inquiry.appdomethreatevents.impl.ThreatEventFlow").getConstructor(null).newInstance(null);
-            Intrinsics.checkNotNull(newInstance, "null cannot be cast to non-null type kotlinx.coroutines.flow.StateFlow<com.withpersona.sdk2.inquiry.appdomethreatevents.ThreatEventState>");
-            return (j0) newInstance;
-        } catch (Exception unused) {
-            return null;
-        }
+    /* renamed from: b  reason: collision with root package name */
+    private final b f53173b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final int f53174c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final boolean f53175d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final boolean f53176e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final boolean f53177f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final float f53178g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final a f53179h;
+
+    public c(y0 y0Var, b bVar, int i10, boolean z10, boolean z11, boolean z12, float f10, a aVar) {
+        this.f53172a = y0Var;
+        this.f53173b = bVar;
+        this.f53174c = i10;
+        this.f53175d = z10;
+        this.f53176e = z11;
+        this.f53177f = z12;
+        this.f53178g = f10;
+        this.f53179h = aVar;
     }
 
-    private static final BroadcastReceiver c() {
-        return (BroadcastReceiver) f52601a.getValue();
+    public final a a() {
+        return this.f53179h;
     }
 
-    public static final void d(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        Context applicationContext = context.getApplicationContext();
-        BroadcastReceiver c10 = c();
-        if (c() == null) {
-            return;
-        }
-        IntentFilter intentFilter = new IntentFilter();
-        for (String str : a.f52599a.a()) {
-            intentFilter.addAction(str);
-        }
-        if (Build.VERSION.SDK_INT >= 33) {
-            applicationContext.registerReceiver(c10, intentFilter, null, null, 4);
-        } else {
-            applicationContext.registerReceiver(c10, intentFilter);
-        }
+    public final b b() {
+        return this.f53173b;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final BroadcastReceiver e() {
-        try {
-            Object newInstance = Class.forName("com.withpersona.sdk2.inquiry.appdomethreatevents.impl.ThreatEventReceiver").getConstructor(null).newInstance(null);
-            Intrinsics.checkNotNull(newInstance, "null cannot be cast to non-null type android.content.BroadcastReceiver");
-            return (BroadcastReceiver) newInstance;
-        } catch (Exception unused) {
-            return null;
-        }
+    public final float c() {
+        return this.f53178g;
     }
 
-    public static final void f(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        Context applicationContext = context.getApplicationContext();
-        BroadcastReceiver c10 = c();
-        if (c() == null) {
-            return;
-        }
-        try {
-            applicationContext.unregisterReceiver(c10);
-        } catch (Exception unused) {
-        }
+    public final int d() {
+        return this.f53174c;
+    }
+
+    public final y0 e() {
+        return this.f53172a;
+    }
+
+    public final boolean f() {
+        return this.f53177f;
+    }
+
+    public final boolean g() {
+        return this.f53175d;
+    }
+
+    public final boolean h() {
+        return this.f53176e;
     }
 }

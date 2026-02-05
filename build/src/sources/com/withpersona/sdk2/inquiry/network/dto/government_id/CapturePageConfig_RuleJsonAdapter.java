@@ -45,21 +45,21 @@ public final class CapturePageConfig_RuleJsonAdapter extends h {
     @NotNull
     public CapturePageConfig.Rule fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         CapturePageConfig.RuleType ruleType = null;
         Boolean bool = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 ruleType = (CapturePageConfig.RuleType) this.nullableRuleTypeAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 bool = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new CapturePageConfig.Rule(ruleType, bool);
     }
 
@@ -67,10 +67,10 @@ public final class CapturePageConfig_RuleJsonAdapter extends h {
     public void toJson(@NotNull t writer, CapturePageConfig.Rule rule) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (rule != null) {
-            writer.l();
-            writer.A0("type");
+            writer.k();
+            writer.W("type");
             this.nullableRuleTypeAdapter.toJson(writer, rule.getType());
-            writer.A0("isRequired");
+            writer.W("isRequired");
             this.nullableBooleanAdapter.toJson(writer, rule.isRequired());
             writer.E();
             return;

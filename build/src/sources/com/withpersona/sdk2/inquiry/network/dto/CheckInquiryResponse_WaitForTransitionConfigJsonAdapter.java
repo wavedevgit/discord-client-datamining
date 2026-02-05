@@ -45,40 +45,40 @@ public final class CheckInquiryResponse_WaitForTransitionConfigJsonAdapter exten
     @NotNull
     public CheckInquiryResponse.WaitForTransitionConfig fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         Long l10 = null;
         Long l11 = null;
         CheckInquiryResponse.PollingMode pollingMode = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 l10 = (Long) this.nullableLongAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 l11 = (Long) this.nullableLongAdapter.fromJson(reader);
-            } else if (A0 == 2 && (pollingMode = (CheckInquiryResponse.PollingMode) this.pollingModeAdapter.fromJson(reader)) == null) {
-                throw vm.c.x("pollingMode", "pollingMode", reader);
+            } else if (W == 2 && (pollingMode = (CheckInquiryResponse.PollingMode) this.pollingModeAdapter.fromJson(reader)) == null) {
+                throw ym.c.x("pollingMode", "pollingMode", reader);
             }
         }
-        reader.y();
+        reader.z();
         if (pollingMode != null) {
             return new CheckInquiryResponse.WaitForTransitionConfig(l10, l11, pollingMode);
         }
-        throw vm.c.o("pollingMode", "pollingMode", reader);
+        throw ym.c.o("pollingMode", "pollingMode", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, CheckInquiryResponse.WaitForTransitionConfig waitForTransitionConfig) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (waitForTransitionConfig != null) {
-            writer.l();
-            writer.A0("intervalMs");
+            writer.k();
+            writer.W("intervalMs");
             this.nullableLongAdapter.toJson(writer, waitForTransitionConfig.getIntervalMs());
-            writer.A0("maxAttempts");
+            writer.W("maxAttempts");
             this.nullableLongAdapter.toJson(writer, waitForTransitionConfig.getMaxAttempts());
-            writer.A0("pollingMode");
+            writer.W("pollingMode");
             this.pollingModeAdapter.toJson(writer, waitForTransitionConfig.getPollingMode());
             writer.E();
             return;

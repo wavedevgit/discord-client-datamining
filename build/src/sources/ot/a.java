@@ -1,10 +1,20 @@
 package ot;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class a extends mt.r {
-    private static final long serialVersionUID = -4315329288187364457L;
+abstract class a {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int a(double d10) {
+        long doubleToLongBits = Double.doubleToLongBits(d10);
+        return (int) (doubleToLongBits ^ (doubleToLongBits >>> 32));
+    }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public a(mt.p pVar) {
-        super("Duplicate element parsed with different values: " + pVar.name());
+    public static double b(double d10) {
+        while (Double.compare(0.0d, d10) > 0) {
+            d10 += 360.0d;
+        }
+        while (Double.compare(d10, 360.0d) >= 0) {
+            d10 -= 360.0d;
+        }
+        return d10;
     }
 }

@@ -49,30 +49,30 @@ public final class NextStep_Document_AssetConfigJsonAdapter extends h {
     @NotNull
     public NextStep.Document.AssetConfig fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         NextStep.Document.AssetConfig.PromptPage promptPage = null;
         NextStep.Document.AssetConfig.PendingPage pendingPage = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 promptPage = (NextStep.Document.AssetConfig.PromptPage) this.nullablePromptPageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 pendingPage = (NextStep.Document.AssetConfig.PendingPage) this.nullablePendingPageAdapter.fromJson(reader);
                 i10 &= -3;
             }
         }
-        reader.y();
+        reader.z();
         if (i10 == -4) {
             return new NextStep.Document.AssetConfig(promptPage, pendingPage);
         }
         Constructor<NextStep.Document.AssetConfig> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Document.AssetConfig.class.getDeclaredConstructor(NextStep.Document.AssetConfig.PromptPage.class, NextStep.Document.AssetConfig.PendingPage.class, Integer.TYPE, vm.c.f51688c);
+            constructor = NextStep.Document.AssetConfig.class.getDeclaredConstructor(NextStep.Document.AssetConfig.PromptPage.class, NextStep.Document.AssetConfig.PendingPage.class, Integer.TYPE, ym.c.f54853c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -85,10 +85,10 @@ public final class NextStep_Document_AssetConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Document.AssetConfig assetConfig) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (assetConfig != null) {
-            writer.l();
-            writer.A0("promptPage");
+            writer.k();
+            writer.W("promptPage");
             this.nullablePromptPageAdapter.toJson(writer, assetConfig.getPromptPage());
-            writer.A0("pendingPage");
+            writer.W("pendingPage");
             this.nullablePendingPageAdapter.toJson(writer, assetConfig.getPendingPage());
             writer.E();
             return;

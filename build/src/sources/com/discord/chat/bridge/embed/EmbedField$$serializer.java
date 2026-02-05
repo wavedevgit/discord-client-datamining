@@ -1,12 +1,12 @@
 package com.discord.chat.bridge.embed;
 
-import at.b0;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.bridge.structurabletext.StructurableTextSerializer;
 import com.facebook.react.devsupport.StackTraceHelper;
-import dt.a2;
-import dt.h0;
-import dt.n2;
+import dt.b0;
+import gt.a2;
+import gt.h0;
+import gt.n2;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -16,8 +16,8 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/embed/EmbedField.$serializer", "Ldt/h0;", "Lcom/discord/chat/bridge/embed/EmbedField;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/embed/EmbedField;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/embed/EmbedField;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@lr.c
+@or.c
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/embed/EmbedField.$serializer", "Lgt/h0;", "Lcom/discord/chat/bridge/embed/EmbedField;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/embed/EmbedField;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/embed/EmbedField;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class EmbedField$$serializer implements h0 {
     @NotNull
@@ -39,14 +39,14 @@ public /* synthetic */ class EmbedField$$serializer implements h0 {
     private EmbedField$$serializer() {
     }
 
-    @Override // dt.h0
+    @Override // gt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f20978a;
-        KSerializer u10 = bt.a.u(n2Var);
-        KSerializer u11 = bt.a.u(n2Var);
+        n2 n2Var = n2.f25302a;
+        KSerializer u10 = et.a.u(n2Var);
+        KSerializer u11 = et.a.u(n2Var);
         StructurableTextSerializer structurableTextSerializer = StructurableTextSerializer.INSTANCE;
-        return new KSerializer[]{u10, u11, bt.a.u(structurableTextSerializer), bt.a.u(structurableTextSerializer)};
+        return new KSerializer[]{u10, u11, et.a.u(structurableTextSerializer), et.a.u(structurableTextSerializer)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -62,7 +62,7 @@ public /* synthetic */ class EmbedField$$serializer implements h0 {
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         String str3 = null;
         if (b10.p()) {
-            n2 n2Var = n2.f20978a;
+            n2 n2Var = n2.f25302a;
             StructurableTextSerializer structurableTextSerializer = StructurableTextSerializer.INSTANCE;
             str2 = (String) b10.n(serialDescriptor, 1, n2Var, null);
             structurableText2 = (StructurableText) b10.n(serialDescriptor, 3, structurableTextSerializer, null);
@@ -80,10 +80,10 @@ public /* synthetic */ class EmbedField$$serializer implements h0 {
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    str3 = (String) b10.n(serialDescriptor, 0, n2.f20978a, str3);
+                    str3 = (String) b10.n(serialDescriptor, 0, n2.f25302a, str3);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    str4 = (String) b10.n(serialDescriptor, 1, n2.f20978a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 1, n2.f25302a, str4);
                     i11 |= 2;
                 } else if (o10 == 2) {
                     structurableText3 = (StructurableText) b10.n(serialDescriptor, 2, StructurableTextSerializer.INSTANCE, structurableText3);
@@ -105,13 +105,13 @@ public /* synthetic */ class EmbedField$$serializer implements h0 {
         return new EmbedField(i10, str, str2, structurableText, structurableText2, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // at.o
+    @Override // dt.o
     public final void serialize(@NotNull Encoder encoder, @NotNull EmbedField value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -121,7 +121,7 @@ public /* synthetic */ class EmbedField$$serializer implements h0 {
         b10.c(serialDescriptor);
     }
 
-    @Override // dt.h0
+    @Override // gt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

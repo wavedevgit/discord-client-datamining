@@ -13,7 +13,7 @@ public abstract class f {
     private static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final i f24981a = new i(f.d().getWebkitToCompatConverter());
+        static final i f23680a = new i(f.d().getWebkitToCompatConverter());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -21,12 +21,12 @@ public abstract class f {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final g f24982a = f.a();
+        static final g f23681a = f.a();
     }
 
     static g a() {
         try {
-            return new h((WebViewProviderFactoryBoundaryInterface) cv.a.a(WebViewProviderFactoryBoundaryInterface.class, b()));
+            return new h((WebViewProviderFactoryBoundaryInterface) fv.a.a(WebViewProviderFactoryBoundaryInterface.class, b()));
         } catch (ClassNotFoundException unused) {
             return new c();
         } catch (IllegalAccessException e10) {
@@ -43,11 +43,11 @@ public abstract class f {
     }
 
     public static i c() {
-        return a.f24981a;
+        return a.f23680a;
     }
 
     public static g d() {
-        return b.f24982a;
+        return b.f23681a;
     }
 
     public static ClassLoader e() {

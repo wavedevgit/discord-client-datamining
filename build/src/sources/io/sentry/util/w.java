@@ -19,24 +19,24 @@ import java.util.TimeZone;
 public final class w implements e3 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Deque f30770d;
+    private final Deque f29828d;
 
     public w(Map map) {
         ArrayDeque arrayDeque = new ArrayDeque();
-        this.f30770d = arrayDeque;
+        this.f29828d = arrayDeque;
         arrayDeque.addLast(new AbstractMap.SimpleEntry(null, map));
     }
 
     private Object h() {
         try {
-            return l(null, null);
+            return k(null, null);
         } catch (Exception e10) {
             throw new IOException(e10);
         }
     }
 
-    private Object l(ILogger iLogger, m1 m1Var) {
-        Map.Entry entry = (Map.Entry) this.f30770d.peekLast();
+    private Object k(ILogger iLogger, m1 m1Var) {
+        Map.Entry entry = (Map.Entry) this.f29828d.peekLast();
         if (entry == null) {
             return null;
         }
@@ -44,13 +44,13 @@ public final class w implements e3 {
         if (m1Var != null && iLogger != null) {
             return m1Var.a(this, iLogger);
         }
-        this.f30770d.removeLast();
+        this.f29828d.removeLast();
         return value;
     }
 
     @Override // io.sentry.e3
     public Object G0(ILogger iLogger, m1 m1Var) {
-        return l(iLogger, m1Var);
+        return k(iLogger, m1Var);
     }
 
     @Override // io.sentry.e3
@@ -72,7 +72,7 @@ public final class w implements e3 {
     }
 
     @Override // io.sentry.e3
-    public TimeZone W(ILogger iLogger) {
+    public TimeZone X(ILogger iLogger) {
         String r12 = r1();
         if (r12 != null) {
             return DesugarTimeZone.getTimeZone(r12);
@@ -89,7 +89,7 @@ public final class w implements e3 {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f30770d.clear();
+        this.f29828d.clear();
     }
 
     @Override // io.sentry.e3
@@ -108,7 +108,7 @@ public final class w implements e3 {
             return null;
         }
         try {
-            u();
+            v();
             ArrayList arrayList = new ArrayList();
             if (hasNext()) {
                 do {
@@ -119,7 +119,7 @@ public final class w implements e3 {
                     }
                 } while (peek() == io.sentry.vendor.gson.stream.b.BEGIN_OBJECT);
             }
-            s();
+            t();
             return arrayList;
         } catch (Exception e11) {
             throw new IOException(e11);
@@ -128,16 +128,7 @@ public final class w implements e3 {
 
     @Override // io.sentry.e3
     public boolean hasNext() {
-        return !this.f30770d.isEmpty();
-    }
-
-    @Override // io.sentry.e3
-    public Double k0() {
-        Object h10 = h();
-        if (h10 instanceof Number) {
-            return Double.valueOf(((Number) h10).doubleValue());
-        }
-        return null;
+        return !this.f29828d.isEmpty();
     }
 
     @Override // io.sentry.e3
@@ -150,8 +141,17 @@ public final class w implements e3 {
     }
 
     @Override // io.sentry.e3
-    public String l0() {
-        Map.Entry entry = (Map.Entry) this.f30770d.peekLast();
+    public Double l0() {
+        Object h10 = h();
+        if (h10 instanceof Number) {
+            return Double.valueOf(((Number) h10).doubleValue());
+        }
+        return null;
+    }
+
+    @Override // io.sentry.e3
+    public String m0() {
+        Map.Entry entry = (Map.Entry) this.f29828d.peekLast();
         if (entry != null && entry.getKey() != null) {
             return (String) entry.getKey();
         }
@@ -205,10 +205,10 @@ public final class w implements e3 {
 
     @Override // io.sentry.e3
     public io.sentry.vendor.gson.stream.b peek() {
-        if (this.f30770d.isEmpty()) {
+        if (this.f29828d.isEmpty()) {
             return io.sentry.vendor.gson.stream.b.END_DOCUMENT;
         }
-        Map.Entry entry = (Map.Entry) this.f30770d.peekLast();
+        Map.Entry entry = (Map.Entry) this.f29828d.peekLast();
         if (entry == null) {
             return io.sentry.vendor.gson.stream.b.END_DOCUMENT;
         }
@@ -238,55 +238,37 @@ public final class w implements e3 {
     }
 
     @Override // io.sentry.e3
-    public void r() {
-        Map.Entry entry = (Map.Entry) this.f30770d.removeLast();
-        if (entry != null) {
-            Object value = entry.getValue();
-            if (value instanceof Map) {
-                this.f30770d.addLast(new AbstractMap.SimpleEntry(null, io.sentry.vendor.gson.stream.b.END_OBJECT));
-                for (Map.Entry entry2 : ((Map) value).entrySet()) {
-                    this.f30770d.addLast(entry2);
-                }
-                return;
-            }
-            throw new IOException("Current token is not an object");
-        }
-        throw new IOException("No more entries");
-    }
-
-    @Override // io.sentry.e3
-    public Date r0(ILogger iLogger) {
-        return e3.P0(r1(), iLogger);
-    }
-
-    @Override // io.sentry.e3
     public String r1() {
         return (String) h();
     }
 
     @Override // io.sentry.e3
     public void s() {
-        if (this.f30770d.size() > 1) {
-            this.f30770d.removeLast();
-        }
-    }
-
-    @Override // io.sentry.e3
-    public void u() {
-        Map.Entry entry = (Map.Entry) this.f30770d.removeLast();
+        Map.Entry entry = (Map.Entry) this.f29828d.removeLast();
         if (entry != null) {
             Object value = entry.getValue();
-            if (value instanceof List) {
-                this.f30770d.addLast(new AbstractMap.SimpleEntry(null, io.sentry.vendor.gson.stream.b.END_ARRAY));
-                List list = (List) value;
-                for (int size = list.size() - 1; size >= 0; size--) {
-                    this.f30770d.addLast(new AbstractMap.SimpleEntry(null, list.get(size)));
+            if (value instanceof Map) {
+                this.f29828d.addLast(new AbstractMap.SimpleEntry(null, io.sentry.vendor.gson.stream.b.END_OBJECT));
+                for (Map.Entry entry2 : ((Map) value).entrySet()) {
+                    this.f29828d.addLast(entry2);
                 }
                 return;
             }
             throw new IOException("Current token is not an object");
         }
         throw new IOException("No more entries");
+    }
+
+    @Override // io.sentry.e3
+    public Date s0(ILogger iLogger) {
+        return e3.Q0(r1(), iLogger);
+    }
+
+    @Override // io.sentry.e3
+    public void t() {
+        if (this.f29828d.size() > 1) {
+            this.f29828d.removeLast();
+        }
     }
 
     @Override // io.sentry.e3
@@ -296,12 +278,12 @@ public final class w implements e3 {
             return null;
         }
         try {
-            r();
+            s();
             HashMap hashMap = new HashMap();
             if (hasNext()) {
                 while (true) {
                     try {
-                        hashMap.put(l0(), m1Var.a(this, iLogger));
+                        hashMap.put(m0(), m1Var.a(this, iLogger));
                     } catch (Exception e10) {
                         iLogger.b(SentryLevel.WARNING, "Failed to deserialize object in map.", e10);
                     }
@@ -310,7 +292,7 @@ public final class w implements e3 {
                     }
                 }
             }
-            y();
+            z();
             return hashMap;
         } catch (Exception e11) {
             throw new IOException(e11);
@@ -318,12 +300,21 @@ public final class w implements e3 {
     }
 
     @Override // io.sentry.e3
-    public void v(boolean z10) {
-    }
-
-    @Override // io.sentry.e3
-    public Boolean v0() {
-        return (Boolean) h();
+    public void v() {
+        Map.Entry entry = (Map.Entry) this.f29828d.removeLast();
+        if (entry != null) {
+            Object value = entry.getValue();
+            if (value instanceof List) {
+                this.f29828d.addLast(new AbstractMap.SimpleEntry(null, io.sentry.vendor.gson.stream.b.END_ARRAY));
+                List list = (List) value;
+                for (int size = list.size() - 1; size >= 0; size--) {
+                    this.f29828d.addLast(new AbstractMap.SimpleEntry(null, list.get(size)));
+                }
+                return;
+            }
+            throw new IOException("Current token is not an object");
+        }
+        throw new IOException("No more entries");
     }
 
     @Override // io.sentry.e3
@@ -336,9 +327,18 @@ public final class w implements e3 {
     }
 
     @Override // io.sentry.e3
-    public void y() {
-        if (this.f30770d.size() > 1) {
-            this.f30770d.removeLast();
+    public void w(boolean z10) {
+    }
+
+    @Override // io.sentry.e3
+    public Boolean w0() {
+        return (Boolean) h();
+    }
+
+    @Override // io.sentry.e3
+    public void z() {
+        if (this.f29828d.size() > 1) {
+            this.f29828d.removeLast();
         }
     }
 }

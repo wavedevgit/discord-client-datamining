@@ -9,28 +9,28 @@ import android.widget.EditText;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f20075a;
+    private final b f20291a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f20076b = Integer.MAX_VALUE;
+    private int f20292b = Integer.MAX_VALUE;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f20077c = 0;
+    private int f20293c = 0;
 
     /* renamed from: d3.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    private static class C0268a extends b {
+    private static class C0284a extends b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final EditText f20078a;
+        private final EditText f20294a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final g f20079b;
+        private final g f20295b;
 
-        C0268a(EditText editText, boolean z10) {
-            this.f20078a = editText;
+        C0284a(EditText editText, boolean z10) {
+            this.f20294a = editText;
             g gVar = new g(editText, z10);
-            this.f20079b = gVar;
+            this.f20295b = gVar;
             editText.addTextChangedListener(gVar);
             editText.setEditableFactory(d3.b.getInstance());
         }
@@ -51,7 +51,7 @@ public final class a {
 
         @Override // d3.a.b
         boolean b() {
-            return this.f20079b.b();
+            return this.f20295b.b();
         }
 
         @Override // d3.a.b
@@ -59,12 +59,12 @@ public final class a {
             if (inputConnection instanceof c) {
                 return inputConnection;
             }
-            return new c(this.f20078a, inputConnection, editorInfo);
+            return new c(this.f20294a, inputConnection, editorInfo);
         }
 
         @Override // d3.a.b
         void d(boolean z10) {
-            this.f20079b.d(z10);
+            this.f20295b.d(z10);
         }
     }
 
@@ -84,25 +84,25 @@ public final class a {
 
     public a(EditText editText, boolean z10) {
         b2.e.h(editText, "editText cannot be null");
-        this.f20075a = new C0268a(editText, z10);
+        this.f20291a = new C0284a(editText, z10);
     }
 
     public KeyListener a(KeyListener keyListener) {
-        return this.f20075a.a(keyListener);
+        return this.f20291a.a(keyListener);
     }
 
     public boolean b() {
-        return this.f20075a.b();
+        return this.f20291a.b();
     }
 
     public InputConnection c(InputConnection inputConnection, EditorInfo editorInfo) {
         if (inputConnection == null) {
             return null;
         }
-        return this.f20075a.c(inputConnection, editorInfo);
+        return this.f20291a.c(inputConnection, editorInfo);
     }
 
     public void d(boolean z10) {
-        this.f20075a.d(z10);
+        this.f20291a.d(z10);
     }
 }

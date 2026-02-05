@@ -11,23 +11,23 @@ import java.util.Properties;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f29813a;
+    private final String f28871a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ClassLoader f29814b;
+    private final ClassLoader f28872b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ILogger f29815c;
+    private final ILogger f28873c;
 
     public b(String str, ClassLoader classLoader, ILogger iLogger) {
-        this.f29813a = str;
-        this.f29814b = io.sentry.util.b.a(classLoader);
-        this.f29815c = iLogger;
+        this.f28871a = str;
+        this.f28872b = io.sentry.util.b.a(classLoader);
+        this.f28873c = iLogger;
     }
 
     public Properties a() {
         try {
-            InputStream resourceAsStream = this.f29814b.getResourceAsStream(this.f29813a);
+            InputStream resourceAsStream = this.f28872b.getResourceAsStream(this.f28871a);
             if (resourceAsStream != null) {
                 BufferedInputStream bufferedInputStream = new BufferedInputStream(resourceAsStream);
                 Properties properties = new Properties();
@@ -41,7 +41,7 @@ public final class b {
             }
             return null;
         } catch (IOException e10) {
-            this.f29815c.a(SentryLevel.ERROR, e10, "Failed to load Sentry configuration from classpath resource: %s", this.f29813a);
+            this.f28873c.a(SentryLevel.ERROR, e10, "Failed to load Sentry configuration from classpath resource: %s", this.f28871a);
             return null;
         }
     }

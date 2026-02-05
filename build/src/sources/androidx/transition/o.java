@@ -6,10 +6,10 @@ import android.view.ViewGroup;
 public class o extends o0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private float f5319b = 3.0f;
+    private float f5431b = 3.0f;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f5320c = 80;
+    private int f5432c = 80;
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x001d, code lost:
         if (r6.getLayoutDirection() == 1) goto L22;
@@ -30,7 +30,7 @@ public class o extends o0 {
     private int h(android.view.View r6, int r7, int r8, int r9, int r10, int r11, int r12, int r13, int r14) {
         /*
             r5 = this;
-            int r0 = r5.f5320c
+            int r0 = r5.f5432c
             r1 = 8388611(0x800003, float:1.1754948E-38)
             r2 = 1
             r3 = 3
@@ -88,7 +88,7 @@ public class o extends o0 {
     }
 
     private int i(ViewGroup viewGroup) {
-        int i10 = this.f5320c;
+        int i10 = this.f5432c;
         if (i10 != 3 && i10 != 5 && i10 != 8388611 && i10 != 8388613) {
             return viewGroup.getHeight();
         }
@@ -141,10 +141,10 @@ public class o extends o0 {
         if (v10 < 0) {
             v10 = 300;
         }
-        return Math.round((((float) (v10 * i10)) / this.f5319b) * h10);
+        return Math.round((((float) (v10 * i10)) / this.f5431b) * h10);
     }
 
     public void j(int i10) {
-        this.f5320c = i10;
+        this.f5432c = i10;
     }
 }

@@ -71,9 +71,9 @@ public final class DescriptorUtilKt {
         if (fqName.isRoot()) {
             return null;
         }
-        ClassifierDescriptor mo1198getContributedClassifier = moduleDescriptor.getPackage(fqName.parent()).getMemberScope().mo1198getContributedClassifier(fqName.shortName(), lookupLocation);
-        if (mo1198getContributedClassifier instanceof ClassDescriptor) {
-            classDescriptor = (ClassDescriptor) mo1198getContributedClassifier;
+        ClassifierDescriptor mo1200getContributedClassifier = moduleDescriptor.getPackage(fqName.parent()).getMemberScope().mo1200getContributedClassifier(fqName.shortName(), lookupLocation);
+        if (mo1200getContributedClassifier instanceof ClassDescriptor) {
+            classDescriptor = (ClassDescriptor) mo1200getContributedClassifier;
         } else {
             classDescriptor = null;
         }
@@ -82,7 +82,7 @@ public final class DescriptorUtilKt {
         }
         ClassDescriptor resolveClassByFqName = resolveClassByFqName(moduleDescriptor, fqName.parent(), lookupLocation);
         if (resolveClassByFqName != null && (unsubstitutedInnerClassesScope = resolveClassByFqName.getUnsubstitutedInnerClassesScope()) != null) {
-            classifierDescriptor = unsubstitutedInnerClassesScope.mo1198getContributedClassifier(fqName.shortName(), lookupLocation);
+            classifierDescriptor = unsubstitutedInnerClassesScope.mo1200getContributedClassifier(fqName.shortName(), lookupLocation);
         } else {
             classifierDescriptor = null;
         }

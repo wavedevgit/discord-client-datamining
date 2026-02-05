@@ -1,49 +1,34 @@
 package eu;
 
-import cu.k;
-import java.io.IOException;
-import java.net.ProtocolException;
-import java.util.ArrayList;
+import eu.e;
+import java.lang.ref.Reference;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Locale;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.TimeUnit;
+import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import okhttp3.Headers;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
-import okio.Sink;
-import okio.Source;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g implements cu.d {
-
-    /* renamed from: g  reason: collision with root package name */
-    public static final a f22799g = new a(null);
-
-    /* renamed from: h  reason: collision with root package name */
-    private static final List f22800h = xt.e.w("connection", "host", "keep-alive", "proxy-connection", "te", "transfer-encoding", "encoding", "upgrade", ":method", ":path", ":scheme", ":authority");
-
-    /* renamed from: i  reason: collision with root package name */
-    private static final List f22801i = xt.e.w("connection", "host", "keep-alive", "proxy-connection", "te", "transfer-encoding", "encoding", "upgrade");
-
-    /* renamed from: a  reason: collision with root package name */
-    private final bu.f f22802a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final cu.g f22803b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final f f22804c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private volatile i f22805d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final wt.j f22806e;
+public final class g {
 
     /* renamed from: f  reason: collision with root package name */
-    private volatile boolean f22807f;
+    public static final a f21873f = new a(null);
+
+    /* renamed from: a  reason: collision with root package name */
+    private final int f21874a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final long f21875b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final du.d f21876c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final b f21877d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final ConcurrentLinkedQueue f21878e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -51,160 +36,161 @@ public final class g implements cu.d {
             this();
         }
 
-        public final List a(Request request) {
-            Intrinsics.checkNotNullParameter(request, "request");
-            Headers h10 = request.h();
-            ArrayList arrayList = new ArrayList(h10.size() + 4);
-            arrayList.add(new c(c.f22704g, request.j()));
-            arrayList.add(new c(c.f22705h, cu.i.f19877a.c(request.n())));
-            String f10 = request.f("Host");
-            if (f10 != null) {
-                arrayList.add(new c(c.f22707j, f10));
-            }
-            arrayList.add(new c(c.f22706i, request.n().s()));
-            int size = h10.size();
-            for (int i10 = 0; i10 < size; i10++) {
-                String e10 = h10.e(i10);
-                Locale US = Locale.US;
-                Intrinsics.checkNotNullExpressionValue(US, "US");
-                String lowerCase = e10.toLowerCase(US);
-                Intrinsics.checkNotNullExpressionValue(lowerCase, "this as java.lang.String).toLowerCase(locale)");
-                if (!g.f22800h.contains(lowerCase) || (Intrinsics.areEqual(lowerCase, "te") && Intrinsics.areEqual(h10.j(i10), "trailers"))) {
-                    arrayList.add(new c(lowerCase, h10.j(i10)));
-                }
-            }
-            return arrayList;
-        }
-
-        public final Response.a b(Headers headerBlock, wt.j protocol) {
-            Intrinsics.checkNotNullParameter(headerBlock, "headerBlock");
-            Intrinsics.checkNotNullParameter(protocol, "protocol");
-            Headers.a aVar = new Headers.a();
-            int size = headerBlock.size();
-            cu.k kVar = null;
-            for (int i10 = 0; i10 < size; i10++) {
-                String e10 = headerBlock.e(i10);
-                String j10 = headerBlock.j(i10);
-                if (Intrinsics.areEqual(e10, ":status")) {
-                    k.a aVar2 = cu.k.f19880d;
-                    kVar = aVar2.a("HTTP/1.1 " + j10);
-                } else if (!g.f22801i.contains(e10)) {
-                    aVar.d(e10, j10);
-                }
-            }
-            if (kVar != null) {
-                return new Response.a().p(protocol).g(kVar.f19882b).m(kVar.f19883c).k(aVar.f());
-            }
-            throw new ProtocolException("Expected ':status' header not present");
-        }
-
         private a() {
         }
     }
 
-    public g(OkHttpClient client, bu.f connection, cu.g chain, f http2Connection) {
-        Intrinsics.checkNotNullParameter(client, "client");
-        Intrinsics.checkNotNullParameter(connection, "connection");
-        Intrinsics.checkNotNullParameter(chain, "chain");
-        Intrinsics.checkNotNullParameter(http2Connection, "http2Connection");
-        this.f22802a = connection;
-        this.f22803b = chain;
-        this.f22804c = http2Connection;
-        List G = client.G();
-        wt.j jVar = wt.j.H2_PRIOR_KNOWLEDGE;
-        this.f22806e = G.contains(jVar) ? jVar : wt.j.HTTP_2;
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b extends du.a {
+        b(String str) {
+            super(str, false, 2, null);
+        }
 
-    @Override // cu.d
-    public void a() {
-        i iVar = this.f22805d;
-        Intrinsics.checkNotNull(iVar);
-        iVar.n().close();
-    }
-
-    @Override // cu.d
-    public Source b(Response response) {
-        Intrinsics.checkNotNullParameter(response, "response");
-        i iVar = this.f22805d;
-        Intrinsics.checkNotNull(iVar);
-        return iVar.p();
-    }
-
-    @Override // cu.d
-    public bu.f c() {
-        return this.f22802a;
-    }
-
-    @Override // cu.d
-    public void cancel() {
-        this.f22807f = true;
-        i iVar = this.f22805d;
-        if (iVar != null) {
-            iVar.f(b.CANCEL);
+        @Override // du.a
+        public long f() {
+            return g.this.b(System.nanoTime());
         }
     }
 
-    @Override // cu.d
-    public long d(Response response) {
-        Intrinsics.checkNotNullParameter(response, "response");
-        if (!cu.e.b(response)) {
+    public g(du.e taskRunner, int i10, long j10, TimeUnit timeUnit) {
+        Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
+        Intrinsics.checkNotNullParameter(timeUnit, "timeUnit");
+        this.f21874a = i10;
+        this.f21875b = timeUnit.toNanos(j10);
+        this.f21876c = taskRunner.i();
+        this.f21877d = new b(au.e.f6001i + " ConnectionPool");
+        this.f21878e = new ConcurrentLinkedQueue();
+        if (j10 > 0) {
+            return;
+        }
+        throw new IllegalArgumentException(("keepAliveDuration <= 0: " + j10).toString());
+    }
+
+    private final int d(f fVar, long j10) {
+        if (au.e.f6000h && !Thread.holdsLock(fVar)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + fVar);
+        }
+        List n10 = fVar.n();
+        int i10 = 0;
+        while (i10 < n10.size()) {
+            Reference reference = (Reference) n10.get(i10);
+            if (reference.get() != null) {
+                i10++;
+            } else {
+                Intrinsics.checkNotNull(reference, "null cannot be cast to non-null type okhttp3.internal.connection.RealCall.CallReference");
+                ju.h.f31441a.g().m("A connection to " + fVar.A().a().l() + " was leaked. Did you forget to close a response body?", ((e.b) reference).a());
+                n10.remove(i10);
+                fVar.D(true);
+                if (n10.isEmpty()) {
+                    fVar.C(j10 - this.f21875b);
+                    return 0;
+                }
+            }
+        }
+        return n10.size();
+    }
+
+    public final boolean a(okhttp3.a address, e call, List list, boolean z10) {
+        Intrinsics.checkNotNullParameter(address, "address");
+        Intrinsics.checkNotNullParameter(call, "call");
+        Iterator it = this.f21878e.iterator();
+        while (it.hasNext()) {
+            f connection = (f) it.next();
+            Intrinsics.checkNotNullExpressionValue(connection, "connection");
+            synchronized (connection) {
+                if (z10) {
+                    try {
+                        if (connection.v()) {
+                        }
+                        Unit unit = Unit.f31988a;
+                    } catch (Throwable th2) {
+                        throw th2;
+                    }
+                }
+                if (connection.t(address, list)) {
+                    call.c(connection);
+                    return true;
+                }
+                Unit unit2 = Unit.f31988a;
+            }
+        }
+        return false;
+    }
+
+    public final long b(long j10) {
+        Iterator it = this.f21878e.iterator();
+        int i10 = 0;
+        long j11 = Long.MIN_VALUE;
+        f fVar = null;
+        int i11 = 0;
+        while (it.hasNext()) {
+            f connection = (f) it.next();
+            Intrinsics.checkNotNullExpressionValue(connection, "connection");
+            synchronized (connection) {
+                if (d(connection, j10) > 0) {
+                    i11++;
+                } else {
+                    i10++;
+                    long o10 = j10 - connection.o();
+                    if (o10 > j11) {
+                        fVar = connection;
+                        j11 = o10;
+                    }
+                    Unit unit = Unit.f31988a;
+                }
+            }
+        }
+        long j12 = this.f21875b;
+        if (j11 < j12 && i10 <= this.f21874a) {
+            if (i10 > 0) {
+                return j12 - j11;
+            }
+            if (i11 > 0) {
+                return j12;
+            }
+            return -1L;
+        }
+        Intrinsics.checkNotNull(fVar);
+        synchronized (fVar) {
+            if (!fVar.n().isEmpty()) {
+                return 0L;
+            }
+            if (fVar.o() + j11 != j10) {
+                return 0L;
+            }
+            fVar.D(true);
+            this.f21878e.remove(fVar);
+            au.e.n(fVar.E());
+            if (this.f21878e.isEmpty()) {
+                this.f21876c.a();
+            }
             return 0L;
         }
-        return xt.e.v(response);
     }
 
-    @Override // cu.d
-    public Sink e(Request request, long j10) {
-        Intrinsics.checkNotNullParameter(request, "request");
-        i iVar = this.f22805d;
-        Intrinsics.checkNotNull(iVar);
-        return iVar.n();
-    }
-
-    @Override // cu.d
-    public void f(Request request) {
-        boolean z10;
-        Intrinsics.checkNotNullParameter(request, "request");
-        if (this.f22805d != null) {
-            return;
-        }
-        if (request.c() != null) {
-            z10 = true;
+    public final boolean c(f connection) {
+        Intrinsics.checkNotNullParameter(connection, "connection");
+        if (au.e.f6000h && !Thread.holdsLock(connection)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
+        } else if (!connection.p() && this.f21874a != 0) {
+            du.d.j(this.f21876c, this.f21877d, 0L, 2, null);
+            return false;
         } else {
-            z10 = false;
-        }
-        this.f22805d = this.f22804c.c2(f22799g.a(request), z10);
-        if (!this.f22807f) {
-            i iVar = this.f22805d;
-            Intrinsics.checkNotNull(iVar);
-            TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-            iVar.v().g(this.f22803b.g(), timeUnit);
-            i iVar2 = this.f22805d;
-            Intrinsics.checkNotNull(iVar2);
-            iVar2.E().g(this.f22803b.j(), timeUnit);
-            return;
-        }
-        i iVar3 = this.f22805d;
-        Intrinsics.checkNotNull(iVar3);
-        iVar3.f(b.CANCEL);
-        throw new IOException("Canceled");
-    }
-
-    @Override // cu.d
-    public Response.a g(boolean z10) {
-        i iVar = this.f22805d;
-        if (iVar != null) {
-            Response.a b10 = f22799g.b(iVar.C(), this.f22806e);
-            if (z10 && b10.h() == 100) {
-                return null;
+            connection.D(true);
+            this.f21878e.remove(connection);
+            if (this.f21878e.isEmpty()) {
+                this.f21876c.a();
             }
-            return b10;
+            return true;
         }
-        throw new IOException("stream wasn't created");
     }
 
-    @Override // cu.d
-    public void h() {
-        this.f22804c.flush();
+    public final void e(f connection) {
+        Intrinsics.checkNotNullParameter(connection, "connection");
+        if (au.e.f6000h && !Thread.holdsLock(connection)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
+        }
+        this.f21878e.add(connection);
+        du.d.j(this.f21876c, this.f21877d, 0L, 2, null);
     }
 }

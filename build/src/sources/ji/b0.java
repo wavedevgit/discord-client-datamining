@@ -1,24 +1,32 @@
 package ji;
 
-import java.util.Collection;
-import java.util.Map;
+import android.os.Binder;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface b0 {
-    Collection a();
+public abstract class b0 extends Binder implements IInterface {
+    /* JADX INFO: Access modifiers changed from: protected */
+    public b0(String str) {
+        attachInterface(this, str);
+    }
 
-    Map asMap();
+    protected abstract boolean e(int i10, Parcel parcel, Parcel parcel2, int i11);
 
-    boolean b(Object obj, Object obj2);
+    @Override // android.os.Binder
+    public final boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
+        if (i10 > 16777215) {
+            if (super.onTransact(i10, parcel, parcel2, i11)) {
+                return true;
+            }
+        } else {
+            parcel.enforceInterface(getInterfaceDescriptor());
+        }
+        return e(i10, parcel, parcel2, i11);
+    }
 
-    void clear();
-
-    Collection get(Object obj);
-
-    boolean put(Object obj, Object obj2);
-
-    boolean remove(Object obj, Object obj2);
-
-    int size();
-
-    Collection values();
+    @Override // android.os.IInterface
+    public final IBinder asBinder() {
+        return this;
+    }
 }

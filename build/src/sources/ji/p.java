@@ -1,33 +1,86 @@
 package ji;
+
+import java.io.Serializable;
+import java.util.AbstractCollection;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Spliterator;
+import java.util.Spliterators;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-abstract class p {
+public abstract class p extends AbstractCollection implements Serializable {
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final Object[] f30936d = new Object[0];
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean add(Object obj) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean addAll(Collection collection) {
+        throw new UnsupportedOperationException();
+    }
+
+    abstract int b(Object[] objArr, int i10);
+
+    abstract int c();
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final void clear() {
+        throw new UnsupportedOperationException();
+    }
+
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static int a(int i10, double d10) {
-        int max = Math.max(i10, 2);
-        int highestOneBit = Integer.highestOneBit(max);
-        if (max > ((int) (d10 * highestOneBit))) {
-            int i11 = highestOneBit << 1;
-            if (i11 > 0) {
-                return i11;
+    public abstract int d();
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public abstract Object[] e();
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean remove(Object obj) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean removeAll(Collection collection) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean retainAll(Collection collection) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // java.util.Collection, java.lang.Iterable
+    public final Spliterator spliterator() {
+        return Spliterators.spliterator(this, 1296);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final Object[] toArray() {
+        return toArray(f30936d);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final Object[] toArray(Object[] objArr) {
+        objArr.getClass();
+        int size = size();
+        int length = objArr.length;
+        if (length < size) {
+            Object[] e10 = e();
+            if (e10 == null) {
+                if (length != 0) {
+                    objArr = Arrays.copyOf(objArr, 0);
+                }
+                objArr = Arrays.copyOf(objArr, size);
+            } else {
+                return Arrays.copyOfRange(e10, d(), c(), objArr.getClass());
             }
-            return 1073741824;
+        } else if (length > size) {
+            objArr[size] = null;
         }
-        return highestOneBit;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static int b(int i10) {
-        return (int) (Integer.rotateLeft((int) (i10 * (-862048943)), 15) * 461845907);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static int c(Object obj) {
-        int hashCode;
-        if (obj == null) {
-            hashCode = 0;
-        } else {
-            hashCode = obj.hashCode();
-        }
-        return b(hashCode);
+        b(objArr, 0);
+        return objArr;
     }
 }

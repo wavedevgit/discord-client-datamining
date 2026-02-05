@@ -5,19 +5,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f55590a;
+    private final String f55179a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f55591b;
+    private final String f55180b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f55592c;
+    private final int f55181c;
 
     public a(String name, String description, int i10) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(description, "description");
-        this.f55590a = name;
-        this.f55591b = description;
-        this.f55592c = i10;
+        this.f55179a = name;
+        this.f55180b = description;
+        this.f55181c = i10;
     }
 }

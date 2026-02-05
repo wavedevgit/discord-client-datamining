@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/DefaultDMSettingsExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Environment: var1
-        _fun88864: for (var _fun88864_ip = 0;;) switch (_fun88864_ip) {
+        _fun88883: for (var _fun88883_ip = 0;;) switch (_fun88883_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot1;
@@ -49,13 +49,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.shouldShowTiggerPawtect;
                 var0 = var0.bind(var3)();
                 if (!var0) {
-                    _fun88864_ip = 120;
-                    continue _fun88864
+                    _fun88883_ip = 120;
+                    continue _fun88883
                 }
             case 111:
                 if (var1) {
-                    _fun88864_ip = 117;
-                    continue _fun88864
+                    _fun88883_ip = 117;
+                    continue _fun88883
                 }
             case 114:
                 var1 = var2;

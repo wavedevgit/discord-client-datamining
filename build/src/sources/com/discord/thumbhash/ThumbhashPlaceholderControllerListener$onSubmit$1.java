@@ -6,8 +6,6 @@ import android.graphics.drawable.BitmapDrawable;
 import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 import com.facebook.drawee.generic.GenericDraweeHierarchy;
 import com.facebook.drawee.view.SimpleDraweeView;
-import js.g;
-import js.m0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.c;
@@ -20,7 +18,9 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.i;
-import rr.b;
+import ms.g;
+import ms.m0;
+import ur.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.thumbhash.ThumbhashPlaceholderControllerListener$onSubmit$1", f = "ThumbhashPlaceholderControllerListener.kt", l = {ChatViewRecyclerTypes.FORWARD_BREADCRUMB}, m = "invokeSuspend")
 @SourceDebugExtension({"SMAP\nThumbhashPlaceholderControllerListener.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ThumbhashPlaceholderControllerListener.kt\ncom/discord/thumbhash/ThumbhashPlaceholderControllerListener$onSubmit$1\n+ 2 BitmapDrawable.kt\nandroidx/core/graphics/drawable/BitmapDrawableKt\n*L\n1#1,63:1\n27#2:64\n*S KotlinDebug\n*F\n+ 1 ThumbhashPlaceholderControllerListener.kt\ncom/discord/thumbhash/ThumbhashPlaceholderControllerListener$onSubmit$1\n*L\n53#1:64\n*E\n"})
@@ -74,7 +74,7 @@ final class ThumbhashPlaceholderControllerListener$onSubmit$1 extends k implemen
         }
         Bitmap bitmap = (Bitmap) obj;
         if (!i.i(coroutineScope)) {
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
         Intrinsics.checkNotNull(bitmap);
         simpleDraweeView = this.this$0.draweeView;
@@ -83,11 +83,11 @@ final class ThumbhashPlaceholderControllerListener$onSubmit$1 extends k implemen
         BitmapDrawable bitmapDrawable = new BitmapDrawable(resources, bitmap);
         simpleDraweeView2 = this.this$0.draweeView;
         ((GenericDraweeHierarchy) simpleDraweeView2.getHierarchy()).z(bitmapDrawable);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ThumbhashPlaceholderControllerListener$onSubmit$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((ThumbhashPlaceholderControllerListener$onSubmit$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

@@ -15,16 +15,16 @@ import java.util.Set;
 public class ExtraSupportedSurfaceCombinationsQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final n2 f1913a = c();
+    private static final n2 f2025a = c();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final n2 f1914b = d();
+    private static final n2 f2026b = d();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Set f1915c = new HashSet(Arrays.asList("PIXEL 6", "PIXEL 6 PRO", "PIXEL 7", "PIXEL 7 PRO", "PIXEL 8", "PIXEL 8 PRO"));
+    private static final Set f2027c = new HashSet(Arrays.asList("PIXEL 6", "PIXEL 6 PRO", "PIXEL 7", "PIXEL 7 PRO", "PIXEL 8", "PIXEL 8 PRO"));
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Set f1916d = new HashSet(Arrays.asList("SM-S921", "SC-51E", "SCG25", "SM-S926", "SM-S928", "SC-52E", "SCG26"));
+    private static final Set f2028d = new HashSet(Arrays.asList("SM-S921", "SC-51E", "SCG25", "SM-S926", "SM-S928", "SC-52E", "SCG26"));
 
     private static n2 c() {
         n2 n2Var = new n2();
@@ -47,7 +47,7 @@ public class ExtraSupportedSurfaceCombinationsQuirk implements y1 {
     private List f(String str) {
         ArrayList arrayList = new ArrayList();
         if (str.equals("1")) {
-            arrayList.add(f1913a);
+            arrayList.add(f2025a);
         }
         return arrayList;
     }
@@ -72,7 +72,7 @@ public class ExtraSupportedSurfaceCombinationsQuirk implements y1 {
         if (!"google".equalsIgnoreCase(Build.BRAND)) {
             return false;
         }
-        return f1915c.contains(Build.MODEL.toUpperCase(Locale.US));
+        return f2027c.contains(Build.MODEL.toUpperCase(Locale.US));
     }
 
     private static boolean j() {
@@ -80,7 +80,7 @@ public class ExtraSupportedSurfaceCombinationsQuirk implements y1 {
             return false;
         }
         String upperCase = Build.MODEL.toUpperCase(Locale.US);
-        for (String str : f1916d) {
+        for (String str : f2028d) {
             if (upperCase.startsWith(str)) {
                 return true;
             }
@@ -95,6 +95,6 @@ public class ExtraSupportedSurfaceCombinationsQuirk implements y1 {
         if (!i() && !j()) {
             return Collections.EMPTY_LIST;
         }
-        return Collections.singletonList(f1914b);
+        return Collections.singletonList(f2026b);
     }
 }

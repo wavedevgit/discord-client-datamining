@@ -23,49 +23,49 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class SoLoader {
 
     /* renamed from: b  reason: collision with root package name */
-    static x f11015b;
+    static x f11400b;
 
     /* renamed from: m  reason: collision with root package name */
-    private static int f11026m;
+    private static int f11411m;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ReentrantReadWriteLock f11016c = new ReentrantReadWriteLock();
+    private static final ReentrantReadWriteLock f11401c = new ReentrantReadWriteLock();
 
     /* renamed from: d  reason: collision with root package name */
-    static Context f11017d = null;
+    static Context f11402d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private static volatile e0[] f11018e = null;
+    private static volatile e0[] f11403e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final AtomicInteger f11019f = new AtomicInteger(0);
+    private static final AtomicInteger f11404f = new AtomicInteger(0);
 
     /* renamed from: g  reason: collision with root package name */
-    private static pb.i f11020g = null;
+    private static pb.i f11405g = null;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Set f11021h = Collections.newSetFromMap(new ConcurrentHashMap());
+    private static final Set f11406h = Collections.newSetFromMap(new ConcurrentHashMap());
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Map f11022i = new HashMap();
+    private static final Map f11407i = new HashMap();
 
     /* renamed from: j  reason: collision with root package name */
-    private static final Set f11023j = Collections.newSetFromMap(new ConcurrentHashMap());
+    private static final Set f11408j = Collections.newSetFromMap(new ConcurrentHashMap());
 
     /* renamed from: k  reason: collision with root package name */
-    private static final Map f11024k = new HashMap();
+    private static final Map f11409k = new HashMap();
 
     /* renamed from: l  reason: collision with root package name */
-    private static boolean f11025l = true;
+    private static boolean f11410l = true;
 
     /* renamed from: n  reason: collision with root package name */
-    private static int f11027n = 0;
+    private static int f11412n = 0;
 
     /* renamed from: o  reason: collision with root package name */
-    private static l f11028o = null;
+    private static l f11413o = null;
 
     /* renamed from: a  reason: collision with root package name */
-    static final boolean f11014a = true;
+    static final boolean f11399a = true;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends UnsatisfiedLinkError {
@@ -77,10 +77,10 @@ public class SoLoader {
 
     private static int A() {
         int i10;
-        ReentrantReadWriteLock reentrantReadWriteLock = f11016c;
+        ReentrantReadWriteLock reentrantReadWriteLock = f11401c;
         reentrantReadWriteLock.writeLock().lock();
         try {
-            int i11 = f11026m;
+            int i11 = f11411m;
             if ((i11 & 2) != 0) {
                 i10 = 1;
             } else {
@@ -95,7 +95,7 @@ public class SoLoader {
             reentrantReadWriteLock.writeLock().unlock();
             return i10;
         } catch (Throwable th2) {
-            f11016c.writeLock().unlock();
+            f11401c.writeLock().unlock();
             throw th2;
         }
     }
@@ -106,7 +106,7 @@ public class SoLoader {
 
     private static pb.h C(String str, UnsatisfiedLinkError unsatisfiedLinkError, pb.h hVar) {
         p.g("SoLoader", "Running a recovery step for " + str + " due to " + unsatisfiedLinkError.toString());
-        ReentrantReadWriteLock reentrantReadWriteLock = f11016c;
+        ReentrantReadWriteLock reentrantReadWriteLock = f11401c;
         reentrantReadWriteLock.writeLock().lock();
         try {
             if (hVar == null) {
@@ -125,7 +125,7 @@ public class SoLoader {
                 }
             }
             if (D(unsatisfiedLinkError, hVar)) {
-                f11019f.getAndIncrement();
+                f11404f.getAndIncrement();
                 reentrantReadWriteLock.writeLock().unlock();
                 return hVar;
             }
@@ -133,7 +133,7 @@ public class SoLoader {
             p.g("SoLoader", "Failed to recover");
             throw unsatisfiedLinkError;
         } catch (Throwable th2) {
-            f11016c.writeLock().unlock();
+            f11401c.writeLock().unlock();
             throw th2;
         }
     }
@@ -141,7 +141,7 @@ public class SoLoader {
     private static boolean D(UnsatisfiedLinkError unsatisfiedLinkError, pb.h hVar) {
         ob.b.h(hVar);
         try {
-            boolean a10 = hVar.a(unsatisfiedLinkError, f11018e);
+            boolean a10 = hVar.a(unsatisfiedLinkError, f11403e);
             ob.b.g(null);
             return a10;
         } finally {
@@ -149,13 +149,13 @@ public class SoLoader {
     }
 
     private static void a(ArrayList arrayList, int i10) {
-        com.facebook.soloader.a aVar = new com.facebook.soloader.a(f11017d, i10);
+        com.facebook.soloader.a aVar = new com.facebook.soloader.a(f11402d, i10);
         p.a("SoLoader", "Adding application source: " + aVar.toString());
         arrayList.add(0, aVar);
     }
 
     private static void b(Context context, ArrayList arrayList, boolean z10) {
-        if ((f11026m & 8) != 0) {
+        if ((f11411m & 8) != 0) {
             return;
         }
         arrayList.add(0, new c(context, "lib-main", !z10));
@@ -201,10 +201,10 @@ public class SoLoader {
 
     private static void g(String str, String str2, int i10, StrictMode.ThreadPolicy threadPolicy) {
         boolean z10;
-        ReentrantReadWriteLock reentrantReadWriteLock = f11016c;
+        ReentrantReadWriteLock reentrantReadWriteLock = f11401c;
         reentrantReadWriteLock.readLock().lock();
         try {
-            if (f11018e != null) {
+            if (f11403e != null) {
                 reentrantReadWriteLock.readLock().unlock();
                 if (threadPolicy == null) {
                     threadPolicy = StrictMode.allowThreadDiskReads();
@@ -212,7 +212,7 @@ public class SoLoader {
                 } else {
                     z10 = false;
                 }
-                if (f11014a) {
+                if (f11399a) {
                     if (str2 != null) {
                         Api18TraceUtils.a("SoLoader.loadLibrary[", str2, "]");
                     }
@@ -221,7 +221,7 @@ public class SoLoader {
                 try {
                     reentrantReadWriteLock.readLock().lock();
                     try {
-                        for (e0 e0Var : f11018e) {
+                        for (e0 e0Var : f11403e) {
                             if (x(e0Var, str, i10, threadPolicy)) {
                                 if (z10) {
                                     return;
@@ -229,14 +229,14 @@ public class SoLoader {
                                 return;
                             }
                         }
-                        throw b0.b(str, f11017d, f11018e);
+                        throw b0.b(str, f11402d, f11403e);
                     } catch (IOException e10) {
                         c0 c0Var = new c0(str, e10.toString());
                         c0Var.initCause(e10);
                         throw c0Var;
                     }
                 } finally {
-                    if (f11014a) {
+                    if (f11399a) {
                         if (str2 != null) {
                             Api18TraceUtils.b();
                         }
@@ -250,12 +250,12 @@ public class SoLoader {
             p.b("SoLoader", "Could not load: " + str + " because SoLoader is not initialized");
             throw new UnsatisfiedLinkError("SoLoader not initialized, couldn't find DSO to load: " + str);
         } finally {
-            f11016c.readLock().unlock();
+            f11401c.readLock().unlock();
         }
     }
 
     private static int h(Context context) {
-        int i10 = f11027n;
+        int i10 = f11412n;
         if (i10 != 0) {
             return i10;
         }
@@ -278,7 +278,7 @@ public class SoLoader {
     }
 
     private static int i() {
-        int i10 = f11027n;
+        int i10 = f11412n;
         if (i10 != 1) {
             if (i10 == 2 || i10 == 3) {
                 return 1;
@@ -295,7 +295,7 @@ public class SoLoader {
     private static synchronized pb.h j() {
         pb.h hVar;
         synchronized (SoLoader.class) {
-            pb.i iVar = f11020g;
+            pb.i iVar = f11405g;
             if (iVar == null) {
                 hVar = null;
             } else {
@@ -314,10 +314,10 @@ public class SoLoader {
         StrictMode.ThreadPolicy allowThreadDiskWrites = StrictMode.allowThreadDiskWrites();
         try {
             boolean o10 = o(context);
-            f11025l = o10;
+            f11410l = o10;
             if (o10) {
                 int h10 = h(context);
-                f11027n = h10;
+                f11412n = h10;
                 if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 0 && SysUtil.l(context, h10)) {
                     i10 |= 8;
                 }
@@ -340,7 +340,7 @@ public class SoLoader {
 
     public static void l(Context context, l lVar) {
         synchronized (SoLoader.class) {
-            f11028o = lVar;
+            f11413o = lVar;
         }
         init(context, 0);
     }
@@ -354,25 +354,25 @@ public class SoLoader {
     }
 
     private static void n() {
-        if (f11018e != null) {
+        if (f11403e != null) {
             return;
         }
-        ReentrantReadWriteLock reentrantReadWriteLock = f11016c;
+        ReentrantReadWriteLock reentrantReadWriteLock = f11401c;
         reentrantReadWriteLock.writeLock().lock();
         try {
-            if (f11018e == null) {
-                f11018e = new e0[0];
+            if (f11403e == null) {
+                f11403e = new e0[0];
             }
             reentrantReadWriteLock.writeLock().unlock();
         } catch (Throwable th2) {
-            f11016c.writeLock().unlock();
+            f11401c.writeLock().unlock();
             throw th2;
         }
     }
 
     private static boolean o(Context context) {
         String str;
-        if (f11028o != null) {
+        if (f11413o != null) {
             return true;
         }
         Bundle bundle = null;
@@ -404,19 +404,19 @@ public class SoLoader {
                     } else {
                         context = applicationContext;
                     }
-                    f11017d = context;
-                    f11020g = new pb.f(context, B(i10));
+                    f11402d = context;
+                    f11405g = new pb.f(context, B(i10));
                 } catch (Throwable th2) {
                     throw th2;
                 }
             }
-            if (xVar == null && f11015b != null) {
+            if (xVar == null && f11400b != null) {
                 return;
             }
             if (xVar != null) {
-                f11015b = xVar;
+                f11400b = xVar;
             } else {
-                f11015b = new o(new y());
+                f11400b = new o(new y());
             }
         }
     }
@@ -425,16 +425,16 @@ public class SoLoader {
         boolean z10;
         boolean z11;
         ReentrantReadWriteLock.WriteLock writeLock;
-        if (f11018e != null) {
+        if (f11403e != null) {
             return;
         }
-        ReentrantReadWriteLock reentrantReadWriteLock = f11016c;
+        ReentrantReadWriteLock reentrantReadWriteLock = f11401c;
         reentrantReadWriteLock.writeLock().lock();
         try {
-            if (f11018e != null) {
+            if (f11403e != null) {
                 writeLock = reentrantReadWriteLock.writeLock();
             } else {
-                f11026m = i10;
+                f11411m = i10;
                 ArrayList arrayList = new ArrayList();
                 boolean z12 = true;
                 if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
@@ -460,7 +460,7 @@ public class SoLoader {
                             p.a("SoLoader", "Adding exo package source: lib-main");
                             arrayList.add(0, new k(context, "lib-main"));
                         } else {
-                            if (SysUtil.l(context, f11027n)) {
+                            if (SysUtil.l(context, f11412n)) {
                                 c(context, arrayList);
                             }
                             a(arrayList, i());
@@ -480,7 +480,7 @@ public class SoLoader {
                         break;
                     }
                     p.d("SoLoader", "Preparing SO source: " + e0VarArr[i11]);
-                    boolean z13 = f11014a;
+                    boolean z13 = f11399a;
                     if (z13) {
                         Api18TraceUtils.a("SoLoader", "_", e0VarArr[i11].getClass().getSimpleName());
                     }
@@ -490,33 +490,33 @@ public class SoLoader {
                     }
                     length = i11;
                 }
-                f11018e = e0VarArr;
-                f11019f.getAndIncrement();
-                p.d("SoLoader", "init finish: " + f11018e.length + " SO sources prepared");
-                writeLock = f11016c.writeLock();
+                f11403e = e0VarArr;
+                f11404f.getAndIncrement();
+                p.d("SoLoader", "init finish: " + f11403e.length + " SO sources prepared");
+                writeLock = f11401c.writeLock();
             }
             writeLock.unlock();
         } catch (Throwable th2) {
-            f11016c.writeLock().unlock();
+            f11401c.writeLock().unlock();
             throw th2;
         }
     }
 
     public static boolean r() {
         boolean z10 = true;
-        if (f11018e != null) {
+        if (f11403e != null) {
             return true;
         }
-        ReentrantReadWriteLock reentrantReadWriteLock = f11016c;
+        ReentrantReadWriteLock reentrantReadWriteLock = f11401c;
         reentrantReadWriteLock.readLock().lock();
         try {
-            if (f11018e == null) {
+            if (f11403e == null) {
                 z10 = false;
             }
             reentrantReadWriteLock.readLock().unlock();
             return z10;
         } catch (Throwable th2) {
-            f11016c.readLock().unlock();
+            f11401c.readLock().unlock();
             throw th2;
         }
     }
@@ -531,7 +531,7 @@ public class SoLoader {
     }
 
     public static boolean t(String str) {
-        if (f11025l) {
+        if (f11410l) {
             return u(str, 0);
         }
         return nb.a.d(str);
@@ -542,10 +542,10 @@ public class SoLoader {
         if (z10 != null) {
             return z10.booleanValue();
         }
-        if (!f11025l) {
+        if (!f11410l) {
             return nb.a.d(str);
         }
-        if (f11027n != 2) {
+        if (f11412n != 2) {
         }
         return y(str, i10);
     }
@@ -565,10 +565,10 @@ public class SoLoader {
         boolean z10;
         Object obj;
         Object obj2;
-        if (!TextUtils.isEmpty(str2) && f11023j.contains(str2)) {
+        if (!TextUtils.isEmpty(str2) && f11408j.contains(str2)) {
             return false;
         }
-        Set set = f11021h;
+        Set set = f11406h;
         if (set.contains(str) && str3 == null) {
             return false;
         }
@@ -582,7 +582,7 @@ public class SoLoader {
                 } else {
                     z10 = false;
                 }
-                Map map = f11022i;
+                Map map = f11407i;
                 if (map.containsKey(str)) {
                     obj = map.get(str);
                 } else {
@@ -590,7 +590,7 @@ public class SoLoader {
                     map.put(str, obj3);
                     obj = obj3;
                 }
-                Map map2 = f11024k;
+                Map map2 = f11409k;
                 if (map2.containsKey(str2)) {
                     obj2 = map2.get(str2);
                 } else {
@@ -598,7 +598,7 @@ public class SoLoader {
                     map2.put(str2, obj4);
                     obj2 = obj4;
                 }
-                ReentrantReadWriteLock reentrantReadWriteLock = f11016c;
+                ReentrantReadWriteLock reentrantReadWriteLock = f11401c;
                 reentrantReadWriteLock.readLock().lock();
                 try {
                     synchronized (obj) {
@@ -626,29 +626,29 @@ public class SoLoader {
                             }
                         }
                         synchronized (obj2) {
-                            if ((i10 & 16) == 0 && str3 != null && (TextUtils.isEmpty(str2) || !f11023j.contains(str2))) {
-                                boolean z11 = f11014a;
-                                if (z11 && f11028o == null) {
+                            if ((i10 & 16) == 0 && str3 != null && (TextUtils.isEmpty(str2) || !f11408j.contains(str2))) {
+                                boolean z11 = f11399a;
+                                if (z11 && f11413o == null) {
                                     Api18TraceUtils.a("MergedSoMapping.invokeJniOnload[", str2, "]");
                                 }
                                 try {
                                     try {
                                         p.a("SoLoader", "About to invoke JNI_OnLoad for merged library " + str2 + ", which was merged into " + str);
-                                        l lVar = f11028o;
+                                        l lVar = f11413o;
                                         if (lVar != null) {
                                             lVar.invokeJniOnload(str2);
                                         } else {
                                             r.a(str2);
                                         }
-                                        f11023j.add(str2);
-                                        if (z11 && f11028o == null) {
+                                        f11408j.add(str2);
+                                        if (z11 && f11413o == null) {
                                             Api18TraceUtils.b();
                                         }
                                     } catch (UnsatisfiedLinkError e11) {
                                         throw new RuntimeException("Failed to call JNI_OnLoad from '" + str2 + "', which has been merged into '" + str + "'.  See comment for details.", e11);
                                     }
                                 } catch (Throwable th2) {
-                                    if (f11014a && f11028o == null) {
+                                    if (f11399a && f11413o == null) {
                                         Api18TraceUtils.b();
                                     }
                                     throw th2;
@@ -659,7 +659,7 @@ public class SoLoader {
                         return !z10;
                     }
                 } catch (Throwable th3) {
-                    f11016c.readLock().unlock();
+                    f11401c.readLock().unlock();
                     throw th3;
                 }
             } finally {
@@ -685,7 +685,7 @@ public class SoLoader {
     private static boolean y(String str, int i10) {
         String b10;
         String str2;
-        l lVar = f11028o;
+        l lVar = f11413o;
         if (lVar != null) {
             b10 = lVar.mapLibName(str);
         } else {
@@ -707,16 +707,16 @@ public class SoLoader {
 
     private static Boolean z(String str) {
         Boolean valueOf;
-        if (f11018e == null) {
-            ReentrantReadWriteLock reentrantReadWriteLock = f11016c;
+        if (f11403e == null) {
+            ReentrantReadWriteLock reentrantReadWriteLock = f11401c;
             reentrantReadWriteLock.readLock().lock();
             try {
-                if (f11018e == null) {
+                if (f11403e == null) {
                     if ("http://www.android.com/".equals(System.getProperty("java.vendor.url"))) {
                         f();
                     } else {
                         synchronized (SoLoader.class) {
-                            boolean contains = f11021h.contains(str);
+                            boolean contains = f11406h.contains(str);
                             boolean z10 = !contains;
                             if (!contains) {
                                 System.loadLibrary(str);
@@ -730,7 +730,7 @@ public class SoLoader {
                 reentrantReadWriteLock.readLock().unlock();
                 return null;
             } catch (Throwable th2) {
-                f11016c.readLock().unlock();
+                f11401c.readLock().unlock();
                 throw th2;
             }
         }

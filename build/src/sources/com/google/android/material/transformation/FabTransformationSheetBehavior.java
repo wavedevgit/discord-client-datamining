@@ -1,5 +1,7 @@
 package com.google.android.material.transformation;
 
+import ah.g;
+import ah.i;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
@@ -9,15 +11,13 @@ import androidx.core.view.h0;
 import com.google.android.material.transformation.FabTransformationBehavior;
 import java.util.HashMap;
 import java.util.Map;
-import yg.a;
-import zg.g;
-import zg.i;
+import zg.a;
 @Deprecated
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class FabTransformationSheetBehavior extends FabTransformationBehavior {
 
     /* renamed from: t  reason: collision with root package name */
-    private Map f15267t;
+    private Map f15661t;
 
     public FabTransformationSheetBehavior() {
     }
@@ -29,7 +29,7 @@ public class FabTransformationSheetBehavior extends FabTransformationBehavior {
             CoordinatorLayout coordinatorLayout = (CoordinatorLayout) parent;
             int childCount = coordinatorLayout.getChildCount();
             if (z10) {
-                this.f15267t = new HashMap(childCount);
+                this.f15661t = new HashMap(childCount);
             }
             for (int i10 = 0; i10 < childCount; i10++) {
                 View childAt = coordinatorLayout.getChildAt(i10);
@@ -40,18 +40,18 @@ public class FabTransformationSheetBehavior extends FabTransformationBehavior {
                 }
                 if (childAt != view && !z11) {
                     if (!z10) {
-                        Map map = this.f15267t;
+                        Map map = this.f15661t;
                         if (map != null && map.containsKey(childAt)) {
-                            h0.x0(childAt, ((Integer) this.f15267t.get(childAt)).intValue());
+                            h0.x0(childAt, ((Integer) this.f15661t.get(childAt)).intValue());
                         }
                     } else {
-                        this.f15267t.put(childAt, Integer.valueOf(childAt.getImportantForAccessibility()));
+                        this.f15661t.put(childAt, Integer.valueOf(childAt.getImportantForAccessibility()));
                         h0.x0(childAt, 4);
                     }
                 }
             }
             if (!z10) {
-                this.f15267t = null;
+                this.f15661t = null;
             }
         }
     }
@@ -67,13 +67,13 @@ public class FabTransformationSheetBehavior extends FabTransformationBehavior {
     protected FabTransformationBehavior.b d0(Context context, boolean z10) {
         int i10;
         if (z10) {
-            i10 = a.f54075d;
+            i10 = a.f55533d;
         } else {
-            i10 = a.f54074c;
+            i10 = a.f55532c;
         }
         FabTransformationBehavior.b bVar = new FabTransformationBehavior.b();
-        bVar.f15260a = g.c(context, i10);
-        bVar.f15261b = new i(17, 0.0f, 0.0f);
+        bVar.f15654a = g.c(context, i10);
+        bVar.f15655b = new i(17, 0.0f, 0.0f);
         return bVar;
     }
 

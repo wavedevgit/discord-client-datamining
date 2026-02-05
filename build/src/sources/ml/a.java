@@ -1,13 +1,27 @@
 package ml;
 
-import kl.c;
+import java.util.Locale;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a extends b {
-    public a() {
-        this(null);
+public class a extends d {
+
+    /* renamed from: e  reason: collision with root package name */
+    private final long f38712e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final long f38713i;
+
+    public a(long j10, long j11) {
+        this(j10, j11, new Throwable());
     }
 
-    public a(c cVar) {
-        super("uniform mat4 uMVPMatrix;\nuniform mat4 uSTMatrix;\nattribute vec4 aPosition;\nattribute vec4 aTextureCoord;\nvarying vec2 vTextureCoord;\nvoid main()\n{\ngl_Position = uMVPMatrix * aPosition;\nvTextureCoord = (uSTMatrix * aTextureCoord).xy;\n}", "#extension GL_OES_EGL_image_external : require\nprecision mediump float;\nvarying vec2 vTextureCoord;\nuniform samplerExternalOES sTexture;\nvoid main()\n{\ngl_FragColor = texture2D(sTexture, vTextureCoord);\n}", null, cVar);
+    @Override // java.lang.Throwable
+    public String getMessage() {
+        return String.format(Locale.ENGLISH, "Insufficient disk space, estimated file size in bytes %d, available disk space in bytes %d", Long.valueOf(this.f38712e), Long.valueOf(this.f38713i));
+    }
+
+    public a(long j10, long j11, Throwable th2) {
+        super(th2);
+        this.f38712e = j10;
+        this.f38713i = j11;
     }
 }

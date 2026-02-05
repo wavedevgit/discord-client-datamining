@@ -1,96 +1,67 @@
 package bv;
 
-import java.util.Locale;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
+import java.util.List;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Lambda;
+import ru.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
+public final class a implements qu.b, ru.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ConcurrentMap f6868a = new ConcurrentHashMap();
+    public static final a f7280a = new a();
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final ConcurrentMap f6869b = new ConcurrentHashMap();
+    /* renamed from: bv.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class C0129a extends Lambda implements Function2 {
 
-    private static boolean a(String str) {
-        if (b.b(str) && str.length() == 2) {
-            return true;
+        /* renamed from: d  reason: collision with root package name */
+        public static final C0129a f7281d = new C0129a();
+
+        C0129a() {
+            super(2);
         }
-        return false;
+
+        public final Boolean a(int i10, int i11) {
+            boolean z10;
+            if (i10 > i11) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            return Boolean.valueOf(z10);
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+        }
     }
 
-    private static boolean b(String str) {
-        if (b.a(str)) {
-            if (str.length() == 2 || str.length() == 3) {
-                return true;
-            }
-            return false;
-        }
-        return false;
+    private a() {
     }
 
-    private static boolean c(String str) {
-        if (b.d(str) && str.length() == 3) {
-            return true;
-        }
-        return false;
+    @Override // ru.c
+    public boolean b(List list, Function2 function2) {
+        return c.a.b(this, list, function2);
     }
 
-    private static Locale d(String str) {
-        if (b(str)) {
-            return new Locale(str);
-        }
-        String[] split = str.split("_", -1);
-        String str2 = split[0];
-        if (split.length == 2) {
-            String str3 = split[1];
-            if ((b(str2) && a(str3)) || c(str3)) {
-                return new Locale(str2, str3);
-            }
-        } else if (split.length == 3) {
-            String str4 = split[1];
-            String str5 = split[2];
-            if (b(str2) && ((str4.isEmpty() || a(str4) || c(str4)) && !str5.isEmpty())) {
-                return new Locale(str2, str4, str5);
-            }
-        }
-        throw new IllegalArgumentException("Invalid locale format: " + str);
+    @Override // ru.a
+    public Boolean c(Object obj) {
+        return c.a.f(this, obj);
     }
 
-    public static Locale e(String str) {
-        if (str == null) {
-            return null;
-        }
-        if (str.isEmpty()) {
-            return new Locale("", "");
-        }
-        if (!str.contains("#")) {
-            int length = str.length();
-            if (length >= 2) {
-                if (str.charAt(0) == '_') {
-                    if (length >= 3) {
-                        char charAt = str.charAt(1);
-                        char charAt2 = str.charAt(2);
-                        if (Character.isUpperCase(charAt) && Character.isUpperCase(charAt2)) {
-                            if (length == 3) {
-                                return new Locale("", str.substring(1, 3));
-                            }
-                            if (length >= 5) {
-                                if (str.charAt(3) == '_') {
-                                    return new Locale("", str.substring(1, 3), str.substring(4));
-                                }
-                                throw new IllegalArgumentException("Invalid locale format: " + str);
-                            }
-                            throw new IllegalArgumentException("Invalid locale format: " + str);
-                        }
-                        throw new IllegalArgumentException("Invalid locale format: " + str);
-                    }
-                    throw new IllegalArgumentException("Invalid locale format: " + str);
-                }
-                return d(str);
-            }
-            throw new IllegalArgumentException("Invalid locale format: " + str);
-        }
-        throw new IllegalArgumentException("Invalid locale format: " + str);
+    @Override // ru.b
+    public List d(Comparable comparable, Comparable comparable2) {
+        return c.a.e(this, comparable, comparable2);
+    }
+
+    @Override // qu.b
+    public Object f(Object obj, Object obj2) {
+        return Boolean.valueOf(b(vv.a.c(obj), C0129a.f7281d));
+    }
+
+    @Override // ru.b
+    public List g(Comparable comparable, Comparable comparable2) {
+        return c.a.d(this, comparable, comparable2);
     }
 }

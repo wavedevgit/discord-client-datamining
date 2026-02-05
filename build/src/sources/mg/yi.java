@@ -3,91 +3,91 @@ package mg;
 public final class yi {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f38793a;
+    private String f38455a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f38794b;
+    private String f38456b;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f38795c;
+    private String f38457c;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f38796d;
+    private String f38458d;
 
     /* renamed from: e  reason: collision with root package name */
-    private i1 f38797e;
+    private i1 f38459e;
 
     /* renamed from: f  reason: collision with root package name */
-    private String f38798f;
+    private String f38460f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Boolean f38799g;
+    private Boolean f38461g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Boolean f38800h;
+    private Boolean f38462h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Boolean f38801i;
+    private Boolean f38463i;
 
     /* renamed from: j  reason: collision with root package name */
-    private Integer f38802j;
+    private Integer f38464j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Integer f38803k;
+    private Integer f38465k;
 
     public final yi b(String str) {
-        this.f38793a = str;
+        this.f38455a = str;
         return this;
     }
 
     public final yi c(String str) {
-        this.f38794b = str;
+        this.f38456b = str;
         return this;
     }
 
     public final yi d(Integer num) {
         num.getClass();
-        this.f38802j = 10;
+        this.f38464j = 10;
         return this;
     }
 
     public final yi e(Boolean bool) {
-        this.f38799g = bool;
+        this.f38461g = bool;
         return this;
     }
 
     public final yi f(Boolean bool) {
-        this.f38801i = bool;
+        this.f38463i = bool;
         return this;
     }
 
     public final yi g(Boolean bool) {
-        this.f38800h = bool;
+        this.f38462h = bool;
         return this;
     }
 
     public final yi h(i1 i1Var) {
-        this.f38797e = i1Var;
+        this.f38459e = i1Var;
         return this;
     }
 
     public final yi i(String str) {
-        this.f38798f = str;
+        this.f38460f = str;
         return this;
     }
 
     public final yi j(String str) {
-        this.f38795c = str;
+        this.f38457c = str;
         return this;
     }
 
     public final yi k(Integer num) {
-        this.f38803k = num;
+        this.f38465k = num;
         return this;
     }
 
     public final yi l(String str) {
-        this.f38796d = str;
+        this.f38458d = str;
         return this;
     }
 

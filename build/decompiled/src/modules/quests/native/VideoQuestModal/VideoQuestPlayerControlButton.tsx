@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun84045: for (var _fun84045_ip = 0;;) switch (_fun84045_ip) {
+        _fun84064: for (var _fun84064_ip = 0;;) switch (_fun84064_ip) {
             case 0:
                 var2 = arg0;
                 var9 = var2.style;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[0] = var10;
                 var10 = var5.disabled;
                 if (!var10) {
-                    _fun84045_ip = 111;
-                    continue _fun84045
+                    _fun84064_ip = 111;
+                    continue _fun84064
                 }
             case 106:
                 var10 = var8.disabled;
@@ -142,4 +142,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.VideoQuestPlayerControlButton = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 669, 4902, 4073, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 669, 4904, 4073, 2]);

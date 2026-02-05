@@ -49,7 +49,7 @@ public final class PNGStickerView extends SimpleDraweeView {
         int i10;
         Intrinsics.checkNotNullParameter(url, "url");
         setImageURI(url);
-        ((GenericDraweeHierarchy) getHierarchy()).t(ScalingUtils$ScaleType.f9634e);
+        ((GenericDraweeHierarchy) getHierarchy()).t(ScalingUtils$ScaleType.f10019e);
         ((GenericDraweeHierarchy) getHierarchy()).z(this.placeholder);
         int i11 = Integer.MAX_VALUE;
         if (num != null) {

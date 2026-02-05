@@ -6,32 +6,32 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a extends i9.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f32211d;
+    private final b f31674d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f32212e = -1;
+    private long f31675e = -1;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f32213i = -1;
+    private long f31676i = -1;
 
     public a(b bVar) {
-        this.f32211d = bVar;
+        this.f31674d = bVar;
     }
 
     @Override // i9.a, com.facebook.drawee.controller.ControllerListener
     public void onFinalImageSet(String id2, Object obj, Animatable animatable) {
         Intrinsics.checkNotNullParameter(id2, "id");
         long currentTimeMillis = System.currentTimeMillis();
-        this.f32213i = currentTimeMillis;
-        b bVar = this.f32211d;
+        this.f31676i = currentTimeMillis;
+        b bVar = this.f31674d;
         if (bVar != null) {
-            bVar.a(currentTimeMillis - this.f32212e);
+            bVar.a(currentTimeMillis - this.f31675e);
         }
     }
 
     @Override // i9.a, com.facebook.drawee.controller.ControllerListener
     public void onSubmit(String id2, Object obj) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        this.f32212e = System.currentTimeMillis();
+        this.f31675e = System.currentTimeMillis();
     }
 }

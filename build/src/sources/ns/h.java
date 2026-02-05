@@ -1,37 +1,47 @@
 package ns;
 
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
-import kotlin.coroutines.CoroutineContext;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
+import android.os.Build;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.Choreographer;
+import kotlin.Result;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class h extends g {
-    public /* synthetic */ h(Flow flow, CoroutineContext coroutineContext, int i10, ls.a aVar, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-        this(flow, (i11 & 2) != 0 ? kotlin.coroutines.e.f32538d : coroutineContext, (i11 & 4) != 0 ? -3 : i10, (i11 & 8) != 0 ? ls.a.f37142d : aVar);
-    }
+public abstract class h {
 
-    @Override // ns.e
-    protected e g(CoroutineContext coroutineContext, int i10, ls.a aVar) {
-        return new h(this.f41958o, coroutineContext, i10, aVar);
-    }
+    /* renamed from: a  reason: collision with root package name */
+    public static final g f41971a;
+    private static volatile Choreographer choreographer;
 
-    @Override // ns.e
-    public Flow j() {
-        return this.f41958o;
-    }
-
-    @Override // ns.g
-    protected Object q(FlowCollector flowCollector, Continuation continuation) {
-        Object collect = this.f41958o.collect(flowCollector, continuation);
-        if (collect == rr.b.f()) {
-            return collect;
+    static {
+        Object b10;
+        g gVar = null;
+        try {
+            Result.a aVar = Result.f31985e;
+            b10 = Result.b(new f(a(Looper.getMainLooper(), true), null, 2, null));
+        } catch (Throwable th2) {
+            Result.a aVar2 = Result.f31985e;
+            b10 = Result.b(kotlin.c.a(th2));
         }
-        return Unit.f32464a;
+        if (!Result.g(b10)) {
+            gVar = b10;
+        }
+        f41971a = gVar;
     }
 
-    public h(Flow flow, CoroutineContext coroutineContext, int i10, ls.a aVar) {
-        super(flow, coroutineContext, i10, aVar);
+    public static final Handler a(Looper looper, boolean z10) {
+        if (z10) {
+            if (Build.VERSION.SDK_INT >= 28) {
+                Object invoke = Handler.class.getDeclaredMethod("createAsync", Looper.class).invoke(null, looper);
+                Intrinsics.checkNotNull(invoke, "null cannot be cast to non-null type android.os.Handler");
+                return (Handler) invoke;
+            }
+            try {
+                return (Handler) Handler.class.getDeclaredConstructor(Looper.class, Handler.Callback.class, Boolean.TYPE).newInstance(looper, null, Boolean.TRUE);
+            } catch (NoSuchMethodException unused) {
+                return new Handler(looper);
+            }
+        }
+        return new Handler(looper);
     }
 }

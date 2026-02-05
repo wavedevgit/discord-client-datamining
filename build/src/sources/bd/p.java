@@ -6,19 +6,19 @@ import tc.b0;
 public final class p {
 
     /* renamed from: a  reason: collision with root package name */
-    public final boolean f6517a;
+    public final boolean f6364a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final String f6518b;
+    public final String f6365b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final b0.a f6519c;
+    public final b0.a f6366c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f6520d;
+    public final int f6367d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final byte[] f6521e;
+    public final byte[] f6368e;
 
     public p(boolean z10, String str, int i10, byte[] bArr, int i11, int i12, byte[] bArr2) {
         boolean z11;
@@ -28,11 +28,11 @@ public final class p {
             z11 = false;
         }
         ne.a.a((bArr2 == null) ^ z11);
-        this.f6517a = z10;
-        this.f6518b = str;
-        this.f6520d = i10;
-        this.f6521e = bArr2;
-        this.f6519c = new b0.a(a(str), bArr, i11, i12);
+        this.f6364a = z10;
+        this.f6365b = str;
+        this.f6367d = i10;
+        this.f6368e = bArr2;
+        this.f6366c = new b0.a(a(str), bArr, i11, i12);
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */

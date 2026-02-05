@@ -1,43 +1,43 @@
 package og;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class w3 implements ui.d {
+final class w3 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w3 f43569a = new w3();
+    static final w3 f43475a = new w3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43570b;
+    private static final xi.c f43476b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43571c;
+    private static final xi.c f43477c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43572d;
+    private static final xi.c f43478d;
 
     static {
-        c.b a10 = ui.c.a("logEventKey");
+        c.b a10 = xi.c.a("logEventKey");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43570b = a10.b(s1Var.b()).a();
-        c.b a11 = ui.c.a("eventCount");
+        f43476b = a10.b(s1Var.b()).a();
+        c.b a11 = xi.c.a("eventCount");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43571c = a11.b(s1Var2.b()).a();
-        c.b a12 = ui.c.a("inferenceDurationStats");
+        f43477c = a11.b(s1Var2.b()).a();
+        c.b a12 = xi.c.a("inferenceDurationStats");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43572d = a12.b(s1Var3.b()).a();
+        f43478d = a12.b(s1Var3.b()).a();
     }
 
     private w3() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

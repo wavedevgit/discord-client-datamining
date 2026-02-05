@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_engine/VideoCaptureDeviceForEncode.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun93678: for (var _fun93678_ip = 0;;) switch (_fun93678_ip) {
+        _fun93695: for (var _fun93695_ip = 0;;) switch (_fun93695_ip) {
             case 0:
                 var5 = arguments[1];
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun93678_ip = 11;
-                    continue _fun93678
+                    _fun93695_ip = 11;
+                    continue _fun93695
                 }
             case 9:
                 var5 = true;

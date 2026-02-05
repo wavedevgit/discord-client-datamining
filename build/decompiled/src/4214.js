@@ -6,9 +6,38 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
     var0 = function arg0() {
-        _fun38504: for (var _fun38504_ip = 0;;) switch (_fun38504_ip) {
+        _fun38503: for (var _fun38503_ip = 0;;) switch (_fun38503_ip) {
             case 0:
                 var1 = 16;
+                var0 = arg0;
+                var2 = var1 & var0;
+                var0 = {};
+                var1 = 0;
+                if (!var2) {
+                    _fun38503_ip = 20;
+                    continue _fun38503
+                }
+            case 17:
+                var1 = 1;
+            case 20:
+                var0.value = var1;
+                var1 = 'No';
+                if (!var2) {
+                    _fun38503_ip = 39;
+                    continue _fun38503
+                }
+            case 33:
+                var1 = 'Yes';
+            case 39:
+                var0.description = var1;
+                return var0;
+        }
+    };
+    var _closure1_slot4 = var0;
+    var0 = function arg0() {
+        _fun38504: for (var _fun38504_ip = 0;;) switch (_fun38504_ip) {
+            case 0:
+                var1 = 2;
                 var0 = arg0;
                 var2 = var1 & var0;
                 var0 = {};
@@ -25,35 +54,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 if (!var2) {
                     _fun38504_ip = 39;
                     continue _fun38504
-                }
-            case 33:
-                var1 = 'Yes';
-            case 39:
-                var0.description = var1;
-                return var0;
-        }
-    };
-    var _closure1_slot4 = var0;
-    var0 = function arg0() {
-        _fun38505: for (var _fun38505_ip = 0;;) switch (_fun38505_ip) {
-            case 0:
-                var1 = 2;
-                var0 = arg0;
-                var2 = var1 & var0;
-                var0 = {};
-                var1 = 0;
-                if (!var2) {
-                    _fun38505_ip = 20;
-                    continue _fun38505
-                }
-            case 17:
-                var1 = 1;
-            case 20:
-                var0.value = var1;
-                var1 = 'No';
-                if (!var2) {
-                    _fun38505_ip = 39;
-                    continue _fun38505
                 }
             case 33:
                 var1 = 'Yes';

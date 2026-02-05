@@ -1,70 +1,82 @@
 package ku;
 
-import java.io.Closeable;
-import java.util.zip.Deflater;
+import android.net.ssl.SSLSockets;
+import android.os.Build;
+import java.io.IOException;
+import java.util.List;
+import javax.net.ssl.SSLParameters;
+import javax.net.ssl.SSLSocket;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import okio.Buffer;
-import okio.ByteString;
-import okio.Sink;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements Closeable {
+public final class a implements k {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final boolean f36170d;
+    /* renamed from: a  reason: collision with root package name */
+    public static final C0470a f36142a = new C0470a(null);
 
-    /* renamed from: e  reason: collision with root package name */
-    private final Buffer f36171e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final Deflater f36172i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private final lu.e f36173o;
-
-    public a(boolean z10) {
-        this.f36170d = z10;
-        Buffer buffer = new Buffer();
-        this.f36171e = buffer;
-        Deflater deflater = new Deflater(-1, true);
-        this.f36172i = deflater;
-        this.f36173o = new lu.e((Sink) buffer, deflater);
-    }
-
-    private final boolean h(Buffer buffer, ByteString byteString) {
-        return buffer.p0(buffer.size() - byteString.G(), byteString);
-    }
-
-    public final void a(Buffer buffer) {
-        ByteString byteString;
-        Intrinsics.checkNotNullParameter(buffer, "buffer");
-        if (this.f36171e.size() == 0) {
-            if (this.f36170d) {
-                this.f36172i.reset();
-            }
-            this.f36173o.t0(buffer, buffer.size());
-            this.f36173o.flush();
-            Buffer buffer2 = this.f36171e;
-            byteString = b.f36174a;
-            if (h(buffer2, byteString)) {
-                long size = this.f36171e.size() - 4;
-                Buffer.a V0 = Buffer.V0(this.f36171e, null, 1, null);
-                try {
-                    V0.l(size);
-                    wr.c.a(V0, null);
-                } finally {
-                }
-            } else {
-                this.f36171e.writeByte(0);
-            }
-            Buffer buffer3 = this.f36171e;
-            buffer.t0(buffer3, buffer3.size());
-            return;
+    /* renamed from: ku.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0470a {
+        public /* synthetic */ C0470a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        throw new IllegalArgumentException("Failed requirement.");
+
+        public final k a() {
+            if (b()) {
+                return new a();
+            }
+            return null;
+        }
+
+        public final boolean b() {
+            if (ju.h.f31441a.h() && Build.VERSION.SDK_INT >= 29) {
+                return true;
+            }
+            return false;
+        }
+
+        private C0470a() {
+        }
     }
 
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        this.f36173o.close();
+    @Override // ku.k
+    public boolean a() {
+        return f36142a.b();
+    }
+
+    @Override // ku.k
+    public boolean b(SSLSocket sslSocket) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        return SSLSockets.isSupportedSocket(sslSocket);
+    }
+
+    @Override // ku.k
+    public String c(SSLSocket sslSocket) {
+        boolean areEqual;
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        String applicationProtocol = sslSocket.getApplicationProtocol();
+        if (applicationProtocol == null) {
+            areEqual = true;
+        } else {
+            areEqual = Intrinsics.areEqual(applicationProtocol, "");
+        }
+        if (areEqual) {
+            return null;
+        }
+        return applicationProtocol;
+    }
+
+    @Override // ku.k
+    public void d(SSLSocket sslSocket, String str, List protocols) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Intrinsics.checkNotNullParameter(protocols, "protocols");
+        try {
+            SSLSockets.setUseSessionTickets(sslSocket, true);
+            SSLParameters sSLParameters = sslSocket.getSSLParameters();
+            sSLParameters.setApplicationProtocols((String[]) ju.h.f31441a.b(protocols).toArray(new String[0]));
+            sslSocket.setSSLParameters(sSLParameters);
+        } catch (IllegalArgumentException e10) {
+            throw new IOException("Android internal error", e10);
+        }
     }
 }

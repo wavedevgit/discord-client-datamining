@@ -87,7 +87,7 @@ public final class Task<TResult> implements TaskInterface<TResult> {
             } else {
                 taskCompletionSource.setResult(task.getResult());
             }
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -138,7 +138,7 @@ public final class Task<TResult> implements TaskInterface<TResult> {
             } else {
                 taskCompletionSource.setResult(task.getResult());
             }
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -249,7 +249,7 @@ public final class Task<TResult> implements TaskInterface<TResult> {
     public static final Unit continueWith$lambda$9$lambda$8(TaskCompletionSource taskCompletionSource, Continuation continuation, Executor executor, Task task) {
         Intrinsics.checkNotNullParameter(task, "task");
         Companion.completeImmediately(taskCompletionSource, continuation, task, executor);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public static /* synthetic */ Task continueWithTask$default(Task task, Continuation continuation, Executor executor, int i10, Object obj) {
@@ -263,7 +263,7 @@ public final class Task<TResult> implements TaskInterface<TResult> {
     public static final Unit continueWithTask$lambda$11$lambda$10(TaskCompletionSource taskCompletionSource, Continuation continuation, Executor executor, Task task) {
         Intrinsics.checkNotNullParameter(task, "task");
         Companion.completeAfterTask(taskCompletionSource, continuation, task, executor);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @NotNull
@@ -338,7 +338,7 @@ public final class Task<TResult> implements TaskInterface<TResult> {
                 }
             }
             this.continuations.clear();
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
     }
 
@@ -489,7 +489,7 @@ public final class Task<TResult> implements TaskInterface<TResult> {
                 if (!isCompleted()) {
                     this.lock.wait();
                 }
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -515,7 +515,7 @@ public final class Task<TResult> implements TaskInterface<TResult> {
                         }
                     });
                 }
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -545,7 +545,7 @@ public final class Task<TResult> implements TaskInterface<TResult> {
                         }
                     });
                 }
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }

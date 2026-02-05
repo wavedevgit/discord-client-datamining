@@ -18,13 +18,13 @@ import java.util.Map;
 public class d extends Transition {
 
     /* renamed from: b0  reason: collision with root package name */
-    private static final String[] f5230b0 = {"android:changeImageTransform:matrix", "android:changeImageTransform:bounds"};
+    private static final String[] f5342b0 = {"android:changeImageTransform:matrix", "android:changeImageTransform:bounds"};
 
     /* renamed from: c0  reason: collision with root package name */
-    private static final TypeEvaluator f5231c0 = new a();
+    private static final TypeEvaluator f5343c0 = new a();
 
     /* renamed from: d0  reason: collision with root package name */
-    private static final Property f5232d0 = new b(Matrix.class, "animatedTransform");
+    private static final Property f5344d0 = new b(Matrix.class, "animatedTransform");
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements TypeEvaluator {
@@ -62,17 +62,17 @@ public class d extends Transition {
     public static /* synthetic */ class c {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f5233a;
+        static final /* synthetic */ int[] f5345a;
 
         static {
             int[] iArr = new int[ImageView.ScaleType.values().length];
-            f5233a = iArr;
+            f5345a = iArr;
             try {
                 iArr[ImageView.ScaleType.FIT_XY.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f5233a[ImageView.ScaleType.CENTER_CROP.ordinal()] = 2;
+                f5345a[ImageView.ScaleType.CENTER_CROP.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -80,42 +80,42 @@ public class d extends Transition {
 
     /* renamed from: androidx.transition.d$d  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    private static class C0071d extends AnimatorListenerAdapter implements Transition.h {
+    private static class C0072d extends AnimatorListenerAdapter implements Transition.h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ImageView f5234a;
+        private final ImageView f5346a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Matrix f5235b;
+        private final Matrix f5347b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Matrix f5236c;
+        private final Matrix f5348c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f5237d = true;
+        private boolean f5349d = true;
 
-        C0071d(ImageView imageView, Matrix matrix, Matrix matrix2) {
-            this.f5234a = imageView;
-            this.f5235b = matrix;
-            this.f5236c = matrix2;
+        C0072d(ImageView imageView, Matrix matrix, Matrix matrix2) {
+            this.f5346a = imageView;
+            this.f5347b = matrix;
+            this.f5348c = matrix2;
         }
 
         private void a() {
-            Matrix matrix = (Matrix) this.f5234a.getTag(l.f5289d);
+            Matrix matrix = (Matrix) this.f5346a.getTag(l.f5401d);
             if (matrix != null) {
-                h.a(this.f5234a, matrix);
-                this.f5234a.setTag(l.f5289d, null);
+                h.a(this.f5346a, matrix);
+                this.f5346a.setTag(l.f5401d, null);
             }
         }
 
         private void b(Matrix matrix) {
-            this.f5234a.setTag(l.f5289d, matrix);
-            h.a(this.f5234a, this.f5236c);
+            this.f5346a.setTag(l.f5401d, matrix);
+            h.a(this.f5346a, this.f5348c);
         }
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator, boolean z10) {
-            this.f5237d = z10;
+            this.f5349d = z10;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorPauseListener
@@ -130,7 +130,7 @@ public class d extends Transition {
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator, boolean z10) {
-            this.f5237d = false;
+            this.f5349d = false;
         }
 
         @Override // androidx.transition.Transition.h
@@ -143,8 +143,8 @@ public class d extends Transition {
 
         @Override // androidx.transition.Transition.h
         public void onTransitionPause(Transition transition) {
-            if (this.f5237d) {
-                b(this.f5235b);
+            if (this.f5349d) {
+                b(this.f5347b);
             }
         }
 
@@ -159,37 +159,37 @@ public class d extends Transition {
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            this.f5237d = false;
+            this.f5349d = false;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            this.f5237d = false;
+            this.f5349d = false;
         }
     }
 
-    private void t0(c0 c0Var, boolean z10) {
+    private void u0(c0 c0Var, boolean z10) {
         Matrix matrix;
-        View view = c0Var.f5228b;
+        View view = c0Var.f5340b;
         if ((view instanceof ImageView) && view.getVisibility() == 0) {
             ImageView imageView = (ImageView) view;
             if (imageView.getDrawable() != null) {
-                Map map = c0Var.f5227a;
+                Map map = c0Var.f5339a;
                 map.put("android:changeImageTransform:bounds", new Rect(view.getLeft(), view.getTop(), view.getRight(), view.getBottom()));
                 if (z10) {
-                    matrix = (Matrix) imageView.getTag(l.f5289d);
+                    matrix = (Matrix) imageView.getTag(l.f5401d);
                 } else {
                     matrix = null;
                 }
                 if (matrix == null) {
-                    matrix = v0(imageView);
+                    matrix = w0(imageView);
                 }
                 map.put("android:changeImageTransform:matrix", matrix);
             }
         }
     }
 
-    private static Matrix u0(ImageView imageView) {
+    private static Matrix v0(ImageView imageView) {
         Drawable drawable = imageView.getDrawable();
         int intrinsicWidth = drawable.getIntrinsicWidth();
         float width = imageView.getWidth();
@@ -206,33 +206,33 @@ public class d extends Transition {
         return matrix;
     }
 
-    private static Matrix v0(ImageView imageView) {
+    private static Matrix w0(ImageView imageView) {
         Drawable drawable = imageView.getDrawable();
         if (drawable.getIntrinsicWidth() > 0 && drawable.getIntrinsicHeight() > 0) {
-            int i10 = c.f5233a[imageView.getScaleType().ordinal()];
+            int i10 = c.f5345a[imageView.getScaleType().ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     return new Matrix(imageView.getImageMatrix());
                 }
-                return u0(imageView);
+                return v0(imageView);
             }
-            return y0(imageView);
+            return z0(imageView);
         }
         return new Matrix(imageView.getImageMatrix());
     }
 
-    private ObjectAnimator w0(ImageView imageView, Matrix matrix, Matrix matrix2) {
-        return ObjectAnimator.ofObject(imageView, f5232d0, new b0.b(), matrix, matrix2);
+    private ObjectAnimator x0(ImageView imageView, Matrix matrix, Matrix matrix2) {
+        return ObjectAnimator.ofObject(imageView, f5344d0, new b0.b(), matrix, matrix2);
     }
 
-    private ObjectAnimator x0(ImageView imageView) {
-        Property property = f5232d0;
-        TypeEvaluator typeEvaluator = f5231c0;
-        Matrix matrix = i.f5279a;
+    private ObjectAnimator y0(ImageView imageView) {
+        Property property = f5344d0;
+        TypeEvaluator typeEvaluator = f5343c0;
+        Matrix matrix = i.f5391a;
         return ObjectAnimator.ofObject(imageView, property, typeEvaluator, matrix, matrix);
     }
 
-    private static Matrix y0(ImageView imageView) {
+    private static Matrix z0(ImageView imageView) {
         Drawable drawable = imageView.getDrawable();
         Matrix matrix = new Matrix();
         matrix.postScale(imageView.getWidth() / drawable.getIntrinsicWidth(), imageView.getHeight() / drawable.getIntrinsicHeight());
@@ -241,7 +241,7 @@ public class d extends Transition {
 
     @Override // androidx.transition.Transition
     public String[] N() {
-        return f5230b0;
+        return f5342b0;
     }
 
     @Override // androidx.transition.Transition
@@ -251,12 +251,12 @@ public class d extends Transition {
 
     @Override // androidx.transition.Transition
     public void i(c0 c0Var) {
-        t0(c0Var, false);
+        u0(c0Var, false);
     }
 
     @Override // androidx.transition.Transition
     public void l(c0 c0Var) {
-        t0(c0Var, true);
+        u0(c0Var, true);
     }
 
     @Override // androidx.transition.Transition
@@ -265,13 +265,13 @@ public class d extends Transition {
         if (c0Var == null || c0Var2 == null) {
             return null;
         }
-        Rect rect = (Rect) c0Var.f5227a.get("android:changeImageTransform:bounds");
-        Rect rect2 = (Rect) c0Var2.f5227a.get("android:changeImageTransform:bounds");
+        Rect rect = (Rect) c0Var.f5339a.get("android:changeImageTransform:bounds");
+        Rect rect2 = (Rect) c0Var2.f5339a.get("android:changeImageTransform:bounds");
         if (rect == null || rect2 == null) {
             return null;
         }
-        Matrix matrix = (Matrix) c0Var.f5227a.get("android:changeImageTransform:matrix");
-        Matrix matrix2 = (Matrix) c0Var2.f5227a.get("android:changeImageTransform:matrix");
+        Matrix matrix = (Matrix) c0Var.f5339a.get("android:changeImageTransform:matrix");
+        Matrix matrix2 = (Matrix) c0Var2.f5339a.get("android:changeImageTransform:matrix");
         if ((matrix == null && matrix2 == null) || (matrix != null && matrix.equals(matrix2))) {
             z10 = true;
         } else {
@@ -280,25 +280,25 @@ public class d extends Transition {
         if (rect.equals(rect2) && z10) {
             return null;
         }
-        ImageView imageView = (ImageView) c0Var2.f5228b;
+        ImageView imageView = (ImageView) c0Var2.f5340b;
         Drawable drawable = imageView.getDrawable();
         int intrinsicWidth = drawable.getIntrinsicWidth();
         int intrinsicHeight = drawable.getIntrinsicHeight();
         if (intrinsicWidth > 0 && intrinsicHeight > 0) {
             if (matrix == null) {
-                matrix = i.f5279a;
+                matrix = i.f5391a;
             }
             if (matrix2 == null) {
-                matrix2 = i.f5279a;
+                matrix2 = i.f5391a;
             }
-            f5232d0.set(imageView, matrix);
-            ObjectAnimator w02 = w0(imageView, matrix, matrix2);
-            C0071d c0071d = new C0071d(imageView, matrix, matrix2);
-            w02.addListener(c0071d);
-            w02.addPauseListener(c0071d);
-            c(c0071d);
-            return w02;
+            f5344d0.set(imageView, matrix);
+            ObjectAnimator x02 = x0(imageView, matrix, matrix2);
+            C0072d c0072d = new C0072d(imageView, matrix, matrix2);
+            x02.addListener(c0072d);
+            x02.addPauseListener(c0072d);
+            c(c0072d);
+            return x02;
         }
-        return x0(imageView);
+        return y0(imageView);
     }
 }

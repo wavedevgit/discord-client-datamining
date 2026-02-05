@@ -20,47 +20,47 @@ import org.jetbrains.annotations.NotNull;
 public final class ProtoBasedClassDataFinder implements ClassDataFinder {
 
     /* renamed from: a  reason: collision with root package name */
-    private final NameResolver f34796a;
+    private final NameResolver f34320a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final BinaryVersion f34797b;
+    private final BinaryVersion f34321b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Function1 f34798c;
+    private final Function1 f34322c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f34799d;
+    private final Map f34323d;
 
     public ProtoBasedClassDataFinder(@NotNull ProtoBuf.PackageFragment proto, @NotNull NameResolver nameResolver, @NotNull BinaryVersion metadataVersion, @NotNull Function1<? super ClassId, ? extends SourceElement> classSource) {
         Intrinsics.checkNotNullParameter(proto, "proto");
         Intrinsics.checkNotNullParameter(nameResolver, "nameResolver");
         Intrinsics.checkNotNullParameter(metadataVersion, "metadataVersion");
         Intrinsics.checkNotNullParameter(classSource, "classSource");
-        this.f34796a = nameResolver;
-        this.f34797b = metadataVersion;
-        this.f34798c = classSource;
+        this.f34320a = nameResolver;
+        this.f34321b = metadataVersion;
+        this.f34322c = classSource;
         List<ProtoBuf.Class> class_List = proto.getClass_List();
         Intrinsics.checkNotNullExpressionValue(class_List, "getClass_List(...)");
         List<ProtoBuf.Class> list = class_List;
         LinkedHashMap linkedHashMap = new LinkedHashMap(kotlin.ranges.d.d(o0.e(CollectionsKt.w(list, 10)), 16));
         for (Object obj : list) {
-            linkedHashMap.put(NameResolverUtilKt.getClassId(this.f34796a, ((ProtoBuf.Class) obj).getFqName()), obj);
+            linkedHashMap.put(NameResolverUtilKt.getClassId(this.f34320a, ((ProtoBuf.Class) obj).getFqName()), obj);
         }
-        this.f34799d = linkedHashMap;
+        this.f34323d = linkedHashMap;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.ClassDataFinder
     public ClassData findClassData(@NotNull ClassId classId) {
         Intrinsics.checkNotNullParameter(classId, "classId");
-        ProtoBuf.Class r02 = (ProtoBuf.Class) this.f34799d.get(classId);
+        ProtoBuf.Class r02 = (ProtoBuf.Class) this.f34323d.get(classId);
         if (r02 == null) {
             return null;
         }
-        return new ClassData(this.f34796a, r02, this.f34797b, (SourceElement) this.f34798c.invoke(classId));
+        return new ClassData(this.f34320a, r02, this.f34321b, (SourceElement) this.f34322c.invoke(classId));
     }
 
     @NotNull
     public final Collection<ClassId> getAllClassIds() {
-        return this.f34799d.keySet();
+        return this.f34323d.keySet();
     }
 }

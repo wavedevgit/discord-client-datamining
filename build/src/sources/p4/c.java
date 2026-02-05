@@ -8,10 +8,10 @@ import java.util.List;
 public final class c implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f44923a;
+    private final r3.u f44853a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f44924b;
+    private final r3.i f44854b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -41,8 +41,8 @@ public final class c implements b {
     }
 
     public c(r3.u uVar) {
-        this.f44923a = uVar;
-        this.f44924b = new a(uVar);
+        this.f44853a = uVar;
+        this.f44854b = new a(uVar);
     }
 
     public static List e() {
@@ -52,14 +52,14 @@ public final class c implements b {
     @Override // p4.b
     public List a(String str) {
         String string;
-        r3.x l10 = r3.x.l("SELECT work_spec_id FROM dependency WHERE prerequisite_id=?", 1);
+        r3.x k10 = r3.x.k("SELECT work_spec_id FROM dependency WHERE prerequisite_id=?", 1);
         if (str == null) {
-            l10.P1(1);
+            k10.P1(1);
         } else {
-            l10.h1(1, str);
+            k10.h1(1, str);
         }
-        this.f44923a.d();
-        Cursor b10 = t3.b.b(this.f44923a, l10, false, null);
+        this.f44853a.d();
+        Cursor b10 = t3.b.b(this.f44853a, k10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -73,22 +73,22 @@ public final class c implements b {
             return arrayList;
         } finally {
             b10.close();
-            l10.B();
+            k10.y();
         }
     }
 
     @Override // p4.b
     public boolean b(String str) {
         boolean z10 = true;
-        r3.x l10 = r3.x.l("SELECT COUNT(*)=0 FROM dependency WHERE work_spec_id=? AND prerequisite_id IN (SELECT id FROM workspec WHERE state!=2)", 1);
+        r3.x k10 = r3.x.k("SELECT COUNT(*)=0 FROM dependency WHERE work_spec_id=? AND prerequisite_id IN (SELECT id FROM workspec WHERE state!=2)", 1);
         if (str == null) {
-            l10.P1(1);
+            k10.P1(1);
         } else {
-            l10.h1(1, str);
+            k10.h1(1, str);
         }
-        this.f44923a.d();
+        this.f44853a.d();
         boolean z11 = false;
-        Cursor b10 = t3.b.b(this.f44923a, l10, false, null);
+        Cursor b10 = t3.b.b(this.f44853a, k10, false, null);
         try {
             if (b10.moveToFirst()) {
                 if (b10.getInt(0) == 0) {
@@ -99,34 +99,34 @@ public final class c implements b {
             return z11;
         } finally {
             b10.close();
-            l10.B();
+            k10.y();
         }
     }
 
     @Override // p4.b
     public void c(p4.a aVar) {
-        this.f44923a.d();
-        this.f44923a.e();
+        this.f44853a.d();
+        this.f44853a.e();
         try {
-            this.f44924b.j(aVar);
-            this.f44923a.A();
+            this.f44854b.j(aVar);
+            this.f44853a.A();
         } finally {
-            this.f44923a.i();
+            this.f44853a.i();
         }
     }
 
     @Override // p4.b
     public boolean d(String str) {
         boolean z10 = true;
-        r3.x l10 = r3.x.l("SELECT COUNT(*)>0 FROM dependency WHERE prerequisite_id=?", 1);
+        r3.x k10 = r3.x.k("SELECT COUNT(*)>0 FROM dependency WHERE prerequisite_id=?", 1);
         if (str == null) {
-            l10.P1(1);
+            k10.P1(1);
         } else {
-            l10.h1(1, str);
+            k10.h1(1, str);
         }
-        this.f44923a.d();
+        this.f44853a.d();
         boolean z11 = false;
-        Cursor b10 = t3.b.b(this.f44923a, l10, false, null);
+        Cursor b10 = t3.b.b(this.f44853a, k10, false, null);
         try {
             if (b10.moveToFirst()) {
                 if (b10.getInt(0) == 0) {
@@ -137,7 +137,7 @@ public final class c implements b {
             return z11;
         } finally {
             b10.close();
-            l10.B();
+            k10.y();
         }
     }
 }

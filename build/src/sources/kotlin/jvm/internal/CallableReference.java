@@ -1,5 +1,6 @@
 package kotlin.jvm.internal;
 
+import bs.b;
 import java.io.Serializable;
 import java.lang.annotation.Annotation;
 import java.util.List;
@@ -10,7 +11,6 @@ import kotlin.reflect.KType;
 import kotlin.reflect.KVisibility;
 import kotlin.reflect.i;
 import kotlin.reflect.l;
-import yr.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class CallableReference implements KCallable, Serializable {
     public static final Object NO_RECEIVER = NoReceiver.INSTANCE;

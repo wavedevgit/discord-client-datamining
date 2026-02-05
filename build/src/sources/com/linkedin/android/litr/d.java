@@ -7,65 +7,65 @@ import kotlin.jvm.internal.LongCompanionObject;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f16837a;
+    public final int f17231a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final List f16838b;
+    public final List f17232b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final List f16839c;
+    public final List f17233c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final MediaRange f16840d;
+    public final MediaRange f17234d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final boolean f16841e;
+    public final boolean f17235e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final boolean f16842f;
+    public final boolean f17236f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f16843a = 100;
+        private int f17237a = 100;
 
         /* renamed from: b  reason: collision with root package name */
-        private List f16844b;
+        private List f17238b;
 
         /* renamed from: c  reason: collision with root package name */
-        private List f16845c;
+        private List f17239c;
 
         /* renamed from: d  reason: collision with root package name */
-        private MediaRange f16846d;
+        private MediaRange f17240d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f16847e;
+        private boolean f17241e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f16848f;
+        private boolean f17242f;
 
         public d a() {
-            return new d(this.f16843a, this.f16844b, this.f16845c, this.f16846d, this.f16847e, this.f16848f);
+            return new d(this.f17237a, this.f17238b, this.f17239c, this.f17240d, this.f17241e, this.f17242f);
         }
 
         public b b(int i10) {
-            this.f16843a = i10;
+            this.f17237a = i10;
             return this;
         }
 
         public b c(boolean z10) {
-            this.f16848f = z10;
+            this.f17242f = z10;
             return this;
         }
     }
 
     private d(int i10, List list, List list2, MediaRange mediaRange, boolean z10, boolean z11) {
-        this.f16837a = i10;
-        this.f16838b = list;
-        this.f16839c = list2;
-        this.f16840d = mediaRange == null ? new MediaRange(0L, LongCompanionObject.MAX_VALUE) : mediaRange;
-        this.f16841e = z10;
-        this.f16842f = z11;
+        this.f17231a = i10;
+        this.f17232b = list;
+        this.f17233c = list2;
+        this.f17234d = mediaRange == null ? new MediaRange(0L, LongCompanionObject.MAX_VALUE) : mediaRange;
+        this.f17235e = z10;
+        this.f17236f = z11;
     }
 }

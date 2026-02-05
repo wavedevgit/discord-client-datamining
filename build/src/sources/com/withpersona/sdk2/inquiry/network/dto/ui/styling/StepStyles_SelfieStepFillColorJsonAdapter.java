@@ -41,24 +41,24 @@ public final class StepStyles_SelfieStepFillColorJsonAdapter extends h {
     @NotNull
     public StepStyles.SelfieStepFillColor fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         StyleElements.SimpleElementColor simpleElementColor3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 simpleElementColor3 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.SelfieStepFillColor(simpleElementColor, simpleElementColor2, simpleElementColor3);
     }
 
@@ -66,12 +66,12 @@ public final class StepStyles_SelfieStepFillColorJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.SelfieStepFillColor selfieStepFillColor) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfieStepFillColor != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, selfieStepFillColor.getBase());
-            writer.A0("selfieCaptureIconFillColor");
+            writer.W("selfieCaptureIconFillColor");
             this.nullableSimpleElementColorAdapter.toJson(writer, selfieStepFillColor.getSelfieCaptureIconFillColor());
-            writer.A0("selfieCaptureIconBackgroundFillColor");
+            writer.W("selfieCaptureIconBackgroundFillColor");
             this.nullableSimpleElementColorAdapter.toJson(writer, selfieStepFillColor.getSelfieCaptureIconBackgroundFillColor());
             writer.E();
             return;

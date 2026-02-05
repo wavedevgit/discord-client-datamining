@@ -48,7 +48,7 @@ public final class FrescoBitmapSupplier extends o {
     @NotNull
     public MemoryCacheParams get() {
         MemoryCacheParams memoryCacheParams = super.get();
-        int i10 = memoryCacheParams.f10032a;
-        return new MemoryCacheParams(i10, memoryCacheParams.f10033b, memoryCacheParams.f10034c, memoryCacheParams.f10035d, i10 / 3, 0L, 32, null);
+        int i10 = memoryCacheParams.f10417a;
+        return new MemoryCacheParams(i10, memoryCacheParams.f10418b, memoryCacheParams.f10419c, memoryCacheParams.f10420d, i10 / 3, 0L, 32, null);
     }
 }

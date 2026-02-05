@@ -1,33 +1,46 @@
 package ou;
 
-import kotlin.text.StringsKt;
+import java.io.File;
+import java.io.InputStream;
+import java.io.OutputStream;
+import kotlin.jvm.internal.Intrinsics;
+import okio.BufferedSink;
+import okio.BufferedSource;
+import okio.Sink;
+import okio.Source;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a {
+public final class a {
 
-    /* renamed from: ou.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0553a {
-        public static Boolean a(a aVar, Object obj) {
-            Double p10;
-            if (obj instanceof Boolean) {
-                return (Boolean) obj;
-            }
-            boolean z10 = false;
-            if (obj instanceof Number) {
-                if (((Number) obj).longValue() > 0) {
-                    z10 = true;
-                }
-                return Boolean.valueOf(z10);
-            } else if (!(obj instanceof String) || (p10 = StringsKt.p((String) obj)) == null) {
-                return null;
-            } else {
-                if (((long) p10.doubleValue()) > 0) {
-                    z10 = true;
-                }
-                return Boolean.valueOf(z10);
-            }
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f44463a = new a();
+
+    private a() {
     }
 
-    Boolean c(Object obj);
+    public final BufferedSink a(Sink sink) {
+        Intrinsics.checkNotNullParameter(sink, "sink");
+        return x.c(sink);
+    }
+
+    public final BufferedSource b(Source source) {
+        Intrinsics.checkNotNullParameter(source, "source");
+        return x.d(source);
+    }
+
+    public final Sink c(File file) {
+        Sink g10;
+        Intrinsics.checkNotNullParameter(file, "file");
+        g10 = y.g(file, false, 1, null);
+        return g10;
+    }
+
+    public final Sink d(OutputStream outputStream) {
+        Intrinsics.checkNotNullParameter(outputStream, "outputStream");
+        return x.g(outputStream);
+    }
+
+    public final Source e(InputStream inputStream) {
+        Intrinsics.checkNotNullParameter(inputStream, "inputStream");
+        return x.k(inputStream);
+    }
 }

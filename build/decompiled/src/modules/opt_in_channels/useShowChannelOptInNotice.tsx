@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/opt_in_channels/useShowChannelOptInNotice.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun77209: for (var _fun77209_ip = 0;;) switch (_fun77209_ip) {
+        _fun77228: for (var _fun77228_ip = 0;;) switch (_fun77228_ip) {
             case 0:
                 var2 = arg0;
                 var _closure2_slot0 = var2;
@@ -52,21 +52,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var5 == var2;
                 var0 = undefined;
                 if (var8) {
-                    _fun77209_ip = 61;
-                    continue _fun77209
+                    _fun77228_ip = 61;
+                    continue _fun77228
                 }
             case 51:
                 var8 = var2.getGuildId;
                 var0 = var8.bind(var2)();
             case 61:
                 if (!(var5 == var0)) {
-                    _fun77209_ip = 71;
-                    continue _fun77209
+                    _fun77228_ip = 71;
+                    continue _fun77228
                 }
             case 65:
                 var0 = _closure1_slot3;
-                _fun77209_ip = 76;
-                continue _fun77209;
+                _fun77228_ip = 76;
+                continue _fun77228;
             case 71:
                 var0 = var2.guild_id;
             case 76:
@@ -81,14 +81,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(1);
                 var6[0] = var11;
                 var1 = function() { // Environment: var1
-                    _fun77210: for (var _fun77210_ip = 0;;) switch (_fun77210_ip) {
+                    _fun77229: for (var _fun77229_ip = 0;;) switch (_fun77229_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             var0 = var0 != var2;
                             if (!var0) {
-                                _fun77210_ip = 38;
-                                continue _fun77210
+                                _fun77229_ip = 38;
+                                continue _fun77229
                             }
                         case 16:
                             var3 = _closure1_slot2;
@@ -107,28 +107,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var5 == var2;
                 var3 = undefined;
                 if (var8) {
-                    _fun77209_ip = 163;
-                    continue _fun77209
+                    _fun77228_ip = 163;
+                    continue _fun77228
                 }
             case 158:
                 var3 = var2.guild_id;
             case 163:
                 if (!(var5 == var3)) {
-                    _fun77209_ip = 171;
-                    continue _fun77209
+                    _fun77228_ip = 171;
+                    continue _fun77228
                 }
             case 167:
                 var3 = _closure1_slot3;
             case 171:
                 var3 = var6.bind(var7)(var3);
                 if (!(var5 != var2)) {
-                    _fun77209_ip = 234;
-                    continue _fun77209
+                    _fun77228_ip = 234;
+                    continue _fun77228
                 }
             case 180:
                 if (!var3) {
-                    _fun77209_ip = 204;
-                    continue _fun77209
+                    _fun77228_ip = 204;
+                    continue _fun77228
                 }
             case 183:
                 var5 = var2.hasFlag;
@@ -137,22 +137,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.bind(var2)(var4);
             case 204:
                 if (!var0) {
-                    _fun77209_ip = 210;
-                    continue _fun77209
+                    _fun77228_ip = 210;
+                    continue _fun77228
                 }
             case 207:
                 var0 = !var3;
             case 210:
                 if (!var0) {
-                    _fun77209_ip = 216;
-                    continue _fun77209
+                    _fun77228_ip = 216;
+                    continue _fun77228
                 }
             case 213:
                 var0 = !var1;
             case 216:
                 if (!var0) {
-                    _fun77209_ip = 232;
-                    continue _fun77209
+                    _fun77228_ip = 232;
+                    continue _fun77228
                 }
             case 219:
                 var1 = var2.isThread;

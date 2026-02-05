@@ -7,8 +7,8 @@ public abstract class j {
         return new d(list);
     }
 
-    public static ui.a b() {
-        return new wi.d().j(b.f53840a).k(true).i();
+    public static xi.a b() {
+        return new zi.d().j(b.f54536a).k(true).i();
     }
 
     public abstract List c();

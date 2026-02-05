@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CouchSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6074, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6078, 2]);

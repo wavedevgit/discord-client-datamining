@@ -4,7 +4,7 @@ import com.facebook.react.views.text.internal.span.SetSpanOperation;
 import com.google.android.exoplayer2.Format;
 import com.google.android.exoplayer2.metadata.Metadata;
 import com.reactnativecommunity.clipboard.ClipboardModule;
-import ji.s;
+import mi.s;
 import ne.h0;
 import ne.y;
 import tc.v;
@@ -12,7 +12,7 @@ import tc.v;
 abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    static final String[] f6463a = {"Blues", "Classic Rock", "Country", "Dance", "Disco", "Funk", "Grunge", "Hip-Hop", "Jazz", "Metal", "New Age", "Oldies", "Other", "Pop", "R&B", "Rap", "Reggae", "Rock", "Techno", "Industrial", "Alternative", "Ska", "Death Metal", "Pranks", "Soundtrack", "Euro-Techno", "Ambient", "Trip-Hop", "Vocal", "Jazz+Funk", "Fusion", "Trance", "Classical", "Instrumental", "Acid", "House", "Game", "Sound Clip", "Gospel", "Noise", "AlternRock", "Bass", "Soul", "Punk", "Space", "Meditative", "Instrumental Pop", "Instrumental Rock", "Ethnic", "Gothic", "Darkwave", "Techno-Industrial", "Electronic", "Pop-Folk", "Eurodance", "Dream", "Southern Rock", "Comedy", "Cult", "Gangsta", "Top 40", "Christian Rap", "Pop/Funk", "Jungle", "Native American", "Cabaret", "New Wave", "Psychadelic", "Rave", "Showtunes", "Trailer", "Lo-Fi", "Tribal", "Acid Punk", "Acid Jazz", "Polka", "Retro", "Musical", "Rock & Roll", "Hard Rock", "Folk", "Folk-Rock", "National Folk", "Swing", "Fast Fusion", "Bebob", "Latin", "Revival", "Celtic", "Bluegrass", "Avantgarde", "Gothic Rock", "Progressive Rock", "Psychedelic Rock", "Symphonic Rock", "Slow Rock", "Big Band", "Chorus", "Easy Listening", "Acoustic", "Humour", "Speech", "Chanson", "Opera", "Chamber Music", "Sonata", "Symphony", "Booty Bass", "Primus", "Porn Groove", "Satire", "Slow Jam", "Club", "Tango", "Samba", "Folklore", "Ballad", "Power Ballad", "Rhythmic Soul", "Freestyle", "Duet", "Punk Rock", "Drum Solo", "A capella", "Euro-House", "Dance Hall", "Goa", "Drum & Bass", "Club-House", "Hardcore", "Terror", "Indie", "BritPop", "Afro-Punk", "Polsk Punk", "Beat", "Christian Gangsta Rap", "Heavy Metal", "Black Metal", "Crossover", "Contemporary Christian", "Christian Rock", "Merengue", "Salsa", "Thrash Metal", "Anime", "Jpop", "Synthpop", "Abstract", "Art Rock", "Baroque", "Bhangra", "Big beat", "Breakbeat", "Chillout", "Downtempo", "Dub", "EBM", "Eclectic", "Electro", "Electroclash", "Emo", "Experimental", "Garage", "Global", "IDM", "Illbient", "Industro-Goth", "Jam Band", "Krautrock", "Leftfield", "Lounge", "Math Rock", "New Romantic", "Nu-Breakz", "Post-Punk", "Post-Rock", "Psytrance", "Shoegaze", "Space Rock", "Trop Rock", "World Music", "Neoclassical", "Audiobook", "Audio theatre", "Neue Deutsche Welle", "Podcast", "Indie-Rock", "G-Funk", "Dubstep", "Garage Rock", "Psybient"};
+    static final String[] f6310a = {"Blues", "Classic Rock", "Country", "Dance", "Disco", "Funk", "Grunge", "Hip-Hop", "Jazz", "Metal", "New Age", "Oldies", "Other", "Pop", "R&B", "Rap", "Reggae", "Rock", "Techno", "Industrial", "Alternative", "Ska", "Death Metal", "Pranks", "Soundtrack", "Euro-Techno", "Ambient", "Trip-Hop", "Vocal", "Jazz+Funk", "Fusion", "Trance", "Classical", "Instrumental", "Acid", "House", "Game", "Sound Clip", "Gospel", "Noise", "AlternRock", "Bass", "Soul", "Punk", "Space", "Meditative", "Instrumental Pop", "Instrumental Rock", "Ethnic", "Gothic", "Darkwave", "Techno-Industrial", "Electronic", "Pop-Folk", "Eurodance", "Dream", "Southern Rock", "Comedy", "Cult", "Gangsta", "Top 40", "Christian Rap", "Pop/Funk", "Jungle", "Native American", "Cabaret", "New Wave", "Psychadelic", "Rave", "Showtunes", "Trailer", "Lo-Fi", "Tribal", "Acid Punk", "Acid Jazz", "Polka", "Retro", "Musical", "Rock & Roll", "Hard Rock", "Folk", "Folk-Rock", "National Folk", "Swing", "Fast Fusion", "Bebob", "Latin", "Revival", "Celtic", "Bluegrass", "Avantgarde", "Gothic Rock", "Progressive Rock", "Psychedelic Rock", "Symphonic Rock", "Slow Rock", "Big Band", "Chorus", "Easy Listening", "Acoustic", "Humour", "Speech", "Chanson", "Opera", "Chamber Music", "Sonata", "Symphony", "Booty Bass", "Primus", "Porn Groove", "Satire", "Slow Jam", "Club", "Tango", "Samba", "Folklore", "Ballad", "Power Ballad", "Rhythmic Soul", "Freestyle", "Duet", "Punk Rock", "Drum Solo", "A capella", "Euro-House", "Dance Hall", "Goa", "Drum & Bass", "Club-House", "Hardcore", "Terror", "Indie", "BritPop", "Afro-Punk", "Polsk Punk", "Beat", "Christian Gangsta Rap", "Heavy Metal", "Black Metal", "Crossover", "Contemporary Christian", "Christian Rock", "Merengue", "Salsa", "Thrash Metal", "Anime", "Jpop", "Synthpop", "Abstract", "Art Rock", "Baroque", "Bhangra", "Big beat", "Breakbeat", "Chillout", "Downtempo", "Dub", "EBM", "Eclectic", "Electro", "Electroclash", "Emo", "Experimental", "Garage", "Global", "IDM", "Illbient", "Industro-Goth", "Jam Band", "Krautrock", "Leftfield", "Lounge", "Math Rock", "New Romantic", "Nu-Breakz", "Post-Punk", "Post-Rock", "Psytrance", "Shoegaze", "Space Rock", "Trop Rock", "World Music", "Neoclassical", "Audiobook", "Audio theatre", "Neue Deutsche Welle", "Podcast", "Indie-Rock", "G-Funk", "Dubstep", "Garage Rock", "Psybient"};
 
     private static ld.e a(int i10, h0 h0Var) {
         int q10 = h0Var.q();
@@ -162,7 +162,7 @@ abstract class h {
                 if (N2 > 0) {
                     str2 = str2 + "/" + N2;
                 }
-                return new ld.m(str, null, s.s(str2));
+                return new ld.m(str, null, s.t(str2));
             }
         }
         y.i("MetadataUtil", "Failed to parse index/count attribute: " + a.a(i10));
@@ -230,7 +230,7 @@ abstract class h {
             int r3 = j(r3)
             r0 = 0
             if (r3 <= 0) goto L11
-            java.lang.String[] r1 = bd.h.f6463a
+            java.lang.String[] r1 = bd.h.f6310a
             int r2 = r1.length
             if (r3 > r2) goto L11
             int r3 = r3 + (-1)
@@ -242,7 +242,7 @@ abstract class h {
             if (r3 == 0) goto L20
             ld.m r1 = new ld.m
             java.lang.String r2 = "TCON"
-            ji.s r3 = ji.s.s(r3)
+            mi.s r3 = mi.s.t(r3)
             r1.<init>(r2, r0, r3)
             return r1
         L20:
@@ -258,7 +258,7 @@ abstract class h {
         int q10 = h0Var.q();
         if (h0Var.q() == 1684108385) {
             h0Var.V(8);
-            return new ld.m(str, null, s.s(h0Var.C(q10 - 16)));
+            return new ld.m(str, null, s.t(h0Var.C(q10 - 16)));
         }
         y.i("MetadataUtil", "Failed to parse text attribute: " + a.a(i10));
         return null;
@@ -271,7 +271,7 @@ abstract class h {
         }
         if (j10 >= 0) {
             if (z10) {
-                return new ld.m(str, null, s.s(Integer.toString(j10)));
+                return new ld.m(str, null, s.t(Integer.toString(j10)));
             }
             return new ld.e("und", str, Integer.toString(j10));
         }
@@ -291,7 +291,7 @@ abstract class h {
 
     public static void k(int i10, v vVar, Format.b bVar) {
         if (i10 == 1 && vVar.a()) {
-            bVar.P(vVar.f49991a).Q(vVar.f49992b);
+            bVar.P(vVar.f50596a).Q(vVar.f50597b);
         }
     }
 
@@ -305,7 +305,7 @@ abstract class h {
                 Metadata.b d10 = metadata2.d(i11);
                 if (d10 instanceof md.a) {
                     md.a aVar = (md.a) d10;
-                    if (aVar.f37805d.equals("com.android.capture.fps")) {
+                    if (aVar.f37467d.equals("com.android.capture.fps")) {
                         if (i10 == 2) {
                             metadata = metadata.a(aVar);
                         }

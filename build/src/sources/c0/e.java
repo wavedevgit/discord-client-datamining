@@ -8,10 +8,10 @@ import java.util.concurrent.ThreadFactory;
 final class e implements Executor {
 
     /* renamed from: e  reason: collision with root package name */
-    private static volatile Executor f6901e;
+    private static volatile Executor f7319e;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ExecutorService f6902d = Executors.newSingleThreadExecutor(new a());
+    private final ExecutorService f7320d = Executors.newSingleThreadExecutor(new a());
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements ThreadFactory {
@@ -32,23 +32,23 @@ final class e implements Executor {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Executor a() {
-        if (f6901e != null) {
-            return f6901e;
+        if (f7319e != null) {
+            return f7319e;
         }
         synchronized (e.class) {
             try {
-                if (f6901e == null) {
-                    f6901e = new e();
+                if (f7319e == null) {
+                    f7319e = new e();
                 }
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        return f6901e;
+        return f7319e;
     }
 
     @Override // java.util.concurrent.Executor
     public void execute(Runnable runnable) {
-        this.f6902d.execute(runnable);
+        this.f7320d.execute(runnable);
     }
 }

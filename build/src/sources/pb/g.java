@@ -9,37 +9,37 @@ import java.io.File;
 public class g implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f45063a;
+    private final Context f44993a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f45064b;
+    private final a f44994b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f45065c;
+    private final int f44995c;
 
     public g(Context context, a aVar) {
-        this.f45063a = context;
-        this.f45064b = aVar;
-        this.f45065c = aVar.c();
+        this.f44993a = context;
+        this.f44994b = aVar;
+        this.f44995c = aVar.c();
     }
 
     private boolean b() {
         String c10 = c();
-        if (new File(c10).exists() && this.f45064b.a(c10)) {
+        if (new File(c10).exists() && this.f44994b.a(c10)) {
             return true;
         }
         return false;
     }
 
     private String c() {
-        return this.f45063a.getApplicationInfo().sourceDir;
+        return this.f44993a.getApplicationInfo().sourceDir;
     }
 
     private void d(e0[] e0VarArr) {
         for (int i10 = 0; i10 < e0VarArr.length; i10++) {
             e0 e0Var = e0VarArr[i10];
             if (e0Var instanceof w) {
-                e0VarArr[i10] = ((w) e0Var).b(this.f45063a);
+                e0VarArr[i10] = ((w) e0Var).b(this.f44993a);
             }
         }
     }
@@ -49,7 +49,7 @@ public class g implements h {
         if (b()) {
             d(e0VarArr);
             return true;
-        } else if (this.f45065c != this.f45064b.c()) {
+        } else if (this.f44995c != this.f44994b.c()) {
             p.g("soloader.recovery.DetectDataAppMove", "Context was updated (perhaps by another thread)");
             return true;
         } else {

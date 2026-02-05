@@ -1,11 +1,13 @@
 package fr;
 
-import dr.q;
-import dr.s;
+import id.zelory.compressor.constraint.Compression;
+import java.io.File;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class e implements s {
-    @Override // dr.s
-    public Object a(dr.g gVar, q qVar) {
-        return new gr.f(gVar.e(), ((Integer) er.b.f22586d.c(qVar)).intValue());
+public abstract class e {
+    public static final void a(Compression destination, File destination2) {
+        Intrinsics.checkParameterIsNotNull(destination, "$this$destination");
+        Intrinsics.checkParameterIsNotNull(destination2, "destination");
+        destination.a(new d(destination2));
     }
 }

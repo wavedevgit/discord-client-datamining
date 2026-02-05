@@ -16,11 +16,11 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import lr.v;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
+import or.v;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.samsung.SamsungModule$finishSamsungAuthorization$1$1$1", f = "SamsungModule.kt", l = {}, m = "invokeSuspend")
 @SourceDebugExtension({"SMAP\nSamsungModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SamsungModule.kt\ncom/discord/samsung/SamsungModule$finishSamsungAuthorization$1$1$1\n+ 2 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n*L\n1#1,303:1\n126#2:304\n153#2,3:305\n*S KotlinDebug\n*F\n+ 1 SamsungModule.kt\ncom/discord/samsung/SamsungModule$finishSamsungAuthorization$1$1$1\n*L\n195#1:304\n195#1:305,3\n*E\n"})
@@ -53,7 +53,7 @@ final class SamsungModule$finishSamsungAuthorization$1$1$1 extends k implements 
     public final Object invokeSuspend(Object obj) {
         Uri handleSamsungCallback;
         String queryParameter;
-        rr.b.f();
+        ur.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             Request.Builder d10 = new Request.Builder().d();
@@ -68,9 +68,9 @@ final class SamsungModule$finishSamsungAuthorization$1$1$1 extends k implements 
                 for (Map.Entry entry : m10.entrySet()) {
                     arrayList.add(((String) entry.getKey()) + "=" + ((String) entry.getValue()));
                 }
-                this.this$0.handleSamsungCallback(this.$client.a(new Request.Builder().h(RequestBody.Companion.b(CollectionsKt.x0(arrayList, "&", null, null, 0, null, null, 62, null), MediaType.f44013e.b("application/x-www-form-urlencoded"))).l(queryParameter).b()).execute());
+                this.this$0.handleSamsungCallback(this.$client.a(new Request.Builder().h(RequestBody.Companion.b(CollectionsKt.x0(arrayList, "&", null, null, 0, null, null, 62, null), MediaType.f43766e.b("application/x-www-form-urlencoded"))).l(queryParameter).b()).execute());
                 SamsungModule.resolveConnection$default(this.this$0, null, 1, null);
-                return Unit.f32464a;
+                return Unit.f31988a;
             }
             throw new SamsungModule.Companion.SamsungCallbackException("no_redirect_uri", "No redirect uri returned from GET /callback");
         }
@@ -79,6 +79,6 @@ final class SamsungModule$finishSamsungAuthorization$1$1$1 extends k implements 
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((SamsungModule$finishSamsungAuthorization$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((SamsungModule$finishSamsungAuthorization$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

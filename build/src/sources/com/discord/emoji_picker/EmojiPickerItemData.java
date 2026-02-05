@@ -182,7 +182,7 @@ public final class EmojiPickerItemData {
                 if (this instanceof Unicode) {
                     return ((Unicode) this).getEmojiCount();
                 }
-                throw new lr.p();
+                throw new or.p();
             }
 
             private NativeSection() {
@@ -202,7 +202,7 @@ public final class EmojiPickerItemData {
             this.trailing = trailing;
             this.nativeSectionsEmojis = nativeSectionsEmojis;
             this.nativeSectionsEmojisUnicode = nativeSectionsEmojisUnicode;
-            this.categoryIndices$delegate = lr.l.a(new Function0() { // from class: com.discord.emoji_picker.b
+            this.categoryIndices$delegate = or.l.a(new Function0() { // from class: com.discord.emoji_picker.b
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Map categoryIndices_delegate$lambda$1;
@@ -451,7 +451,7 @@ public final class EmojiPickerItemData {
         List<EmojiPickerItem>[] listArr = this.dataSets;
         List<EmojiPickerItem> leading = coreData.getLeading();
         leading.set(0, this.coreData.getLeading().get(0));
-        Unit unit = Unit.f32464a;
+        Unit unit = Unit.f31988a;
         listArr[0] = leading;
         List<EmojiPickerItem>[] listArr2 = this.dataSets;
         List<EmojiPickerItem> trailing = coreData.getTrailing();

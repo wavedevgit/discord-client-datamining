@@ -1,7 +1,22 @@
 package os;
 
-import js.c1;
-/* JADX INFO: Access modifiers changed from: package-private */
+import java.util.concurrent.CancellationException;
+import kotlin.coroutines.Continuation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class v extends c1 implements kotlinx.coroutines.k {
+public interface v {
+    boolean b();
+
+    void h(CancellationException cancellationException);
+
+    i iterator();
+
+    us.h j();
+
+    us.h l();
+
+    Object n();
+
+    Object p(Continuation continuation);
+
+    Object s(Continuation continuation);
 }

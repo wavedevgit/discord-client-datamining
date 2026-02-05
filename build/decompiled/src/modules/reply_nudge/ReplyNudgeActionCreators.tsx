@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/reply_nudge/ReplyNudgeActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function arg0, arg1() {
+    var3 = function arg0, arg1, arg2, arg3, arg4() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -37,11 +37,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.channelId = var3;
         var3 = arg1;
         var0.timestamp = var3;
+        var3 = arg2;
+        var0.lastMessageId = var3;
+        var3 = arg3;
+        var0.affinity = var3;
+        var3 = arg4;
+        var0.authorId = var3;
         var0 = var1.bind(var2)(var0);
         return var0;
     };
     var2.setReplyNudge = var3;
-    var1 = function arg0() {
+    var3 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 0;
@@ -57,6 +63,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var2.clearReplyNudge = var1;
+    var2.clearReplyNudge = var3;
+    var1 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var2 = var2.bind(var0)(var1);
+        var1 = var2.dispatch;
+        var0 = {};
+        var3 = 'REPLY_NUDGES_INITIALIZED';
+        var0.type = var3;
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var2.setNudgesInitialized = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [806, 2]);

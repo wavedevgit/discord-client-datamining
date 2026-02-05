@@ -1,11 +1,11 @@
 package com.discord.chat.bridge.threads;
 
-import at.b0;
-import bt.a;
-import dt.a2;
-import dt.h;
-import dt.h0;
-import dt.n2;
+import dt.b0;
+import et.a;
+import gt.a2;
+import gt.h;
+import gt.h0;
+import gt.n2;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -14,10 +14,10 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import lr.c;
+import or.c;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/threads/ThreadEmbed.$serializer", "Ldt/h0;", "Lcom/discord/chat/bridge/threads/ThreadEmbed;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/threads/ThreadEmbed;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/threads/ThreadEmbed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @c
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/threads/ThreadEmbed.$serializer", "Lgt/h0;", "Lcom/discord/chat/bridge/threads/ThreadEmbed;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/threads/ThreadEmbed;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/threads/ThreadEmbed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class ThreadEmbed$$serializer implements h0 {
     @NotNull
@@ -41,11 +41,11 @@ public /* synthetic */ class ThreadEmbed$$serializer implements h0 {
     private ThreadEmbed$$serializer() {
     }
 
-    @Override // dt.h0
+    @Override // gt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f20978a;
-        return new KSerializer[]{n2Var, n2Var, a.u(n2Var), a.u(h.f20942a), a.u(n2Var), a.u(ThreadEmbedMessage$$serializer.INSTANCE)};
+        n2 n2Var = n2.f25302a;
+        return new KSerializer[]{n2Var, n2Var, a.u(n2Var), a.u(h.f25266a), a.u(n2Var), a.u(ThreadEmbedMessage$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -65,10 +65,10 @@ public /* synthetic */ class ThreadEmbed$$serializer implements h0 {
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
             String m11 = b10.m(serialDescriptor, 1);
-            n2 n2Var = n2.f20978a;
+            n2 n2Var = n2.f25302a;
             str = m10;
             threadEmbedMessage = (ThreadEmbedMessage) b10.n(serialDescriptor, 5, ThreadEmbedMessage$$serializer.INSTANCE, null);
-            bool = (Boolean) b10.n(serialDescriptor, 3, h.f20942a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 3, h.f25266a, null);
             str4 = (String) b10.n(serialDescriptor, 4, n2Var, null);
             str3 = (String) b10.n(serialDescriptor, 2, n2Var, null);
             str2 = m11;
@@ -96,15 +96,15 @@ public /* synthetic */ class ThreadEmbed$$serializer implements h0 {
                         i11 |= 2;
                         break;
                     case 2:
-                        str7 = (String) b10.n(serialDescriptor, 2, n2.f20978a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 2, n2.f25302a, str7);
                         i11 |= 4;
                         break;
                     case 3:
-                        bool2 = (Boolean) b10.n(serialDescriptor, 3, h.f20942a, bool2);
+                        bool2 = (Boolean) b10.n(serialDescriptor, 3, h.f25266a, bool2);
                         i11 |= 8;
                         break;
                     case 4:
-                        str8 = (String) b10.n(serialDescriptor, 4, n2.f20978a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 4, n2.f25302a, str8);
                         i11 |= 16;
                         break;
                     case 5:
@@ -127,13 +127,13 @@ public /* synthetic */ class ThreadEmbed$$serializer implements h0 {
         return new ThreadEmbed(i10, str, str2, str3, bool, str4, threadEmbedMessage, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // at.o
+    @Override // dt.o
     public final void serialize(@NotNull Encoder encoder, @NotNull ThreadEmbed value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -143,7 +143,7 @@ public /* synthetic */ class ThreadEmbed$$serializer implements h0 {
         b10.c(serialDescriptor);
     }
 
-    @Override // dt.h0
+    @Override // gt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

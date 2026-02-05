@@ -1,92 +1,92 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class m3 implements ui.d {
+final class m3 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final m3 f41346a = new m3();
+    static final m3 f40806a = new m3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41347b;
+    private static final xi.c f40807b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41348c;
+    private static final xi.c f40808c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41349d;
+    private static final xi.c f40809d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41350e;
+    private static final xi.c f40810e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41351f;
+    private static final xi.c f40811f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f41352g;
+    private static final xi.c f40812g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ui.c f41353h;
+    private static final xi.c f40813h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final ui.c f41354i;
+    private static final xi.c f40814i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final ui.c f41355j;
+    private static final xi.c f40815j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final ui.c f41356k;
+    private static final xi.c f40816k;
 
     static {
-        c.b a10 = ui.c.a("durationMs");
+        c.b a10 = xi.c.a("durationMs");
         f fVar = new f();
         fVar.a(1);
-        f41347b = a10.b(fVar.b()).a();
-        c.b a11 = ui.c.a("errorCode");
+        f40807b = a10.b(fVar.b()).a();
+        c.b a11 = xi.c.a("errorCode");
         f fVar2 = new f();
         fVar2.a(2);
-        f41348c = a11.b(fVar2.b()).a();
-        c.b a12 = ui.c.a("isColdCall");
+        f40808c = a11.b(fVar2.b()).a();
+        c.b a12 = xi.c.a("isColdCall");
         f fVar3 = new f();
         fVar3.a(3);
-        f41349d = a12.b(fVar3.b()).a();
-        c.b a13 = ui.c.a("autoManageModelOnBackground");
+        f40809d = a12.b(fVar3.b()).a();
+        c.b a13 = xi.c.a("autoManageModelOnBackground");
         f fVar4 = new f();
         fVar4.a(4);
-        f41350e = a13.b(fVar4.b()).a();
-        c.b a14 = ui.c.a("autoManageModelOnLowMemory");
+        f40810e = a13.b(fVar4.b()).a();
+        c.b a14 = xi.c.a("autoManageModelOnLowMemory");
         f fVar5 = new f();
         fVar5.a(5);
-        f41351f = a14.b(fVar5.b()).a();
-        c.b a15 = ui.c.a("isNnApiEnabled");
+        f40811f = a14.b(fVar5.b()).a();
+        c.b a15 = xi.c.a("isNnApiEnabled");
         f fVar6 = new f();
         fVar6.a(6);
-        f41352g = a15.b(fVar6.b()).a();
-        c.b a16 = ui.c.a("eventsCount");
+        f40812g = a15.b(fVar6.b()).a();
+        c.b a16 = xi.c.a("eventsCount");
         f fVar7 = new f();
         fVar7.a(7);
-        f41353h = a16.b(fVar7.b()).a();
-        c.b a17 = ui.c.a("otherErrors");
+        f40813h = a16.b(fVar7.b()).a();
+        c.b a17 = xi.c.a("otherErrors");
         f fVar8 = new f();
         fVar8.a(8);
-        f41354i = a17.b(fVar8.b()).a();
-        c.b a18 = ui.c.a("remoteConfigValueForAcceleration");
+        f40814i = a17.b(fVar8.b()).a();
+        c.b a18 = xi.c.a("remoteConfigValueForAcceleration");
         f fVar9 = new f();
         fVar9.a(9);
-        f41355j = a18.b(fVar9.b()).a();
-        c.b a19 = ui.c.a("isAccelerated");
+        f40815j = a18.b(fVar9.b()).a();
+        c.b a19 = xi.c.a("isAccelerated");
         f fVar10 = new f();
         fVar10.a(10);
-        f41356k = a19.b(fVar10.b()).a();
+        f40816k = a19.b(fVar10.b()).a();
     }
 
     private m3() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

@@ -19,25 +19,25 @@ import com.google.android.material.chip.Chip;
 import com.google.android.material.internal.k;
 import com.google.android.material.internal.o;
 import com.google.android.material.textfield.TextInputLayout;
-import yg.h;
+import zg.h;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class ChipTextInputComboView extends FrameLayout implements Checkable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Chip f15183d;
+    private final Chip f15577d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final TextInputLayout f15184e;
+    private final TextInputLayout f15578e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final EditText f15185i;
+    private final EditText f15579i;
 
     /* renamed from: o  reason: collision with root package name */
-    private TextWatcher f15186o;
+    private TextWatcher f15580o;
 
     /* renamed from: p  reason: collision with root package name */
-    private TextView f15187p;
+    private TextView f15581p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private class b extends k {
@@ -48,14 +48,14 @@ public class ChipTextInputComboView extends FrameLayout implements Checkable {
         public void afterTextChanged(Editable editable) {
             if (!TextUtils.isEmpty(editable)) {
                 String c10 = ChipTextInputComboView.this.c(editable);
-                Chip chip = ChipTextInputComboView.this.f15183d;
+                Chip chip = ChipTextInputComboView.this.f15577d;
                 if (TextUtils.isEmpty(c10)) {
                     c10 = ChipTextInputComboView.this.c("00");
                 }
                 chip.setText(c10);
                 return;
             }
-            ChipTextInputComboView.this.f15183d.setText(ChipTextInputComboView.this.c("00"));
+            ChipTextInputComboView.this.f15577d.setText(ChipTextInputComboView.this.c("00"));
         }
     }
 
@@ -69,12 +69,12 @@ public class ChipTextInputComboView extends FrameLayout implements Checkable {
     }
 
     private void d() {
-        this.f15185i.setImeHintLocales(getContext().getResources().getConfiguration().getLocales());
+        this.f15579i.setImeHintLocales(getContext().getResources().getConfiguration().getLocales());
     }
 
     @Override // android.widget.Checkable
     public boolean isChecked() {
-        return this.f15183d.isChecked();
+        return this.f15577d.isChecked();
     }
 
     @Override // android.view.View
@@ -87,15 +87,15 @@ public class ChipTextInputComboView extends FrameLayout implements Checkable {
     public void setChecked(boolean z10) {
         int i10;
         int i11;
-        this.f15183d.setChecked(z10);
-        EditText editText = this.f15185i;
+        this.f15577d.setChecked(z10);
+        EditText editText = this.f15579i;
         if (z10) {
             i10 = 0;
         } else {
             i10 = 4;
         }
         editText.setVisibility(i10);
-        Chip chip = this.f15183d;
+        Chip chip = this.f15577d;
         if (z10) {
             i11 = 8;
         } else {
@@ -103,45 +103,45 @@ public class ChipTextInputComboView extends FrameLayout implements Checkable {
         }
         chip.setVisibility(i11);
         if (isChecked()) {
-            o.m(this.f15185i, false);
+            o.m(this.f15579i, false);
         }
     }
 
     @Override // android.view.View
     public void setOnClickListener(View.OnClickListener onClickListener) {
-        this.f15183d.setOnClickListener(onClickListener);
+        this.f15577d.setOnClickListener(onClickListener);
     }
 
     @Override // android.view.View
     public void setTag(int i10, Object obj) {
-        this.f15183d.setTag(i10, obj);
+        this.f15577d.setTag(i10, obj);
     }
 
     @Override // android.widget.Checkable
     public void toggle() {
-        this.f15183d.toggle();
+        this.f15577d.toggle();
     }
 
     public ChipTextInputComboView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         LayoutInflater from = LayoutInflater.from(context);
-        Chip chip = (Chip) from.inflate(h.f54207j, (ViewGroup) this, false);
-        this.f15183d = chip;
+        Chip chip = (Chip) from.inflate(h.f55665j, (ViewGroup) this, false);
+        this.f15577d = chip;
         chip.setAccessibilityClassName("android.view.View");
-        TextInputLayout textInputLayout = (TextInputLayout) from.inflate(h.f54208k, (ViewGroup) this, false);
-        this.f15184e = textInputLayout;
+        TextInputLayout textInputLayout = (TextInputLayout) from.inflate(h.f55666k, (ViewGroup) this, false);
+        this.f15578e = textInputLayout;
         EditText editText = textInputLayout.getEditText();
-        this.f15185i = editText;
+        this.f15579i = editText;
         editText.setVisibility(4);
         b bVar = new b();
-        this.f15186o = bVar;
+        this.f15580o = bVar;
         editText.addTextChangedListener(bVar);
         d();
         addView(chip);
         addView(textInputLayout);
-        this.f15187p = (TextView) findViewById(yg.f.f54182p);
+        this.f15581p = (TextView) findViewById(zg.f.f55640p);
         editText.setId(h0.k());
-        h0.B0(this.f15187p, editText.getId());
+        h0.B0(this.f15581p, editText.getId());
         editText.setSaveEnabled(false);
         editText.setLongClickable(false);
     }

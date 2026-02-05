@@ -2,8 +2,8 @@ package yc;
 
 import com.reactnativecommunity.clipboard.ClipboardModule;
 import java.io.StringReader;
-import ji.s;
 import lc.l0;
+import mi.s;
 import ne.y;
 import ne.y0;
 import org.xmlpull.v1.XmlPullParser;
@@ -14,13 +14,13 @@ import yc.b;
 abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String[] f54004a = {"Camera:MotionPhoto", "GCamera:MotionPhoto", "Camera:MicroVideo", "GCamera:MicroVideo"};
+    private static final String[] f54700a = {"Camera:MotionPhoto", "GCamera:MotionPhoto", "Camera:MicroVideo", "GCamera:MicroVideo"};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String[] f54005b = {"Camera:MotionPhotoPresentationTimestampUs", "GCamera:MotionPhotoPresentationTimestampUs", "Camera:MicroVideoPresentationTimestampUs", "GCamera:MicroVideoPresentationTimestampUs"};
+    private static final String[] f54701b = {"Camera:MotionPhotoPresentationTimestampUs", "GCamera:MotionPhotoPresentationTimestampUs", "Camera:MicroVideoPresentationTimestampUs", "GCamera:MicroVideoPresentationTimestampUs"};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String[] f54006c = {"Camera:MicroVideoOffset", "GCamera:MicroVideoOffset"};
+    private static final String[] f54702c = {"Camera:MicroVideoOffset", "GCamera:MicroVideoOffset"};
 
     public static b a(String str) {
         try {
@@ -36,7 +36,7 @@ abstract class e {
         newPullParser.setInput(new StringReader(str));
         newPullParser.next();
         if (y0.f(newPullParser, "x:xmpmeta")) {
-            s r10 = s.r();
+            s s10 = s.s();
             long j10 = -9223372036854775807L;
             do {
                 newPullParser.next();
@@ -45,33 +45,33 @@ abstract class e {
                         return null;
                     }
                     j10 = e(newPullParser);
-                    r10 = c(newPullParser);
+                    s10 = c(newPullParser);
                 } else if (y0.f(newPullParser, "Container:Directory")) {
-                    r10 = f(newPullParser, "Container", "Item");
+                    s10 = f(newPullParser, "Container", "Item");
                 } else if (y0.f(newPullParser, "GContainer:Directory")) {
-                    r10 = f(newPullParser, "GContainer", "GContainerItem");
+                    s10 = f(newPullParser, "GContainer", "GContainerItem");
                 }
             } while (!y0.d(newPullParser, "x:xmpmeta"));
-            if (r10.isEmpty()) {
+            if (s10.isEmpty()) {
                 return null;
             }
-            return new b(j10, r10);
+            return new b(j10, s10);
         }
         throw l0.a("Couldn't find xmp metadata", null);
     }
 
     private static s c(XmlPullParser xmlPullParser) {
-        for (String str : f54006c) {
+        for (String str : f54702c) {
             String a10 = y0.a(xmlPullParser, str);
             if (a10 != null) {
-                return s.t(new b.a(ClipboardModule.MIMETYPE_JPEG, "Primary", 0L, 0L), new b.a("video/mp4", "MotionPhoto", Long.parseLong(a10), 0L));
+                return s.u(new b.a(ClipboardModule.MIMETYPE_JPEG, "Primary", 0L, 0L), new b.a("video/mp4", "MotionPhoto", Long.parseLong(a10), 0L));
             }
         }
-        return s.r();
+        return s.s();
     }
 
     private static boolean d(XmlPullParser xmlPullParser) {
-        for (String str : f54004a) {
+        for (String str : f54700a) {
             String a10 = y0.a(xmlPullParser, str);
             if (a10 != null) {
                 if (Integer.parseInt(a10) != 1) {
@@ -84,7 +84,7 @@ abstract class e {
     }
 
     private static long e(XmlPullParser xmlPullParser) {
-        for (String str : f54005b) {
+        for (String str : f54701b) {
             String a10 = y0.a(xmlPullParser, str);
             if (a10 != null) {
                 long parseLong = Long.parseLong(a10);
@@ -121,7 +121,7 @@ abstract class e {
                     }
                     j11.a(new b.a(a10, a11, j10, j12));
                 } else {
-                    return s.r();
+                    return s.s();
                 }
             }
         } while (!y0.d(xmlPullParser, str4));

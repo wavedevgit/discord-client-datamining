@@ -79,7 +79,7 @@ public final class MediaGalleryDisplayComponentView extends LinearLayout impleme
             Intrinsics.checkNotNullExpressionValue(itemView, "itemView");
             onMediaItemClicked.invoke(itemView, component.getId(), Integer.valueOf(component.getItems().indexOf(item)), item.getPortalId());
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -91,7 +91,7 @@ public final class MediaGalleryDisplayComponentView extends LinearLayout impleme
         if (mediaItemEventHandlers != null && (onMediaItemLongClicked = mediaItemEventHandlers.getOnMediaItemLongClicked()) != null) {
             onMediaItemLongClicked.invoke(component.getId(), Integer.valueOf(component.getItems().indexOf(item)));
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -102,7 +102,7 @@ public final class MediaGalleryDisplayComponentView extends LinearLayout impleme
         if (mediaItemEventHandlers != null && (onMediaItemSpoilerClicked = mediaItemEventHandlers.getOnMediaItemSpoilerClicked()) != null) {
             onMediaItemSpoilerClicked.invoke();
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -112,7 +112,7 @@ public final class MediaGalleryDisplayComponentView extends LinearLayout impleme
         if (mediaItemEventHandlers != null && (onMediaItemObscureToggle = mediaItemEventHandlers.getOnMediaItemObscureToggle()) != null) {
             onMediaItemObscureToggle.invoke(Boolean.valueOf(z10));
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -123,7 +123,7 @@ public final class MediaGalleryDisplayComponentView extends LinearLayout impleme
         if (mediaItemEventHandlers != null && (onMediaItemAltTextButtonClicked = mediaItemEventHandlers.getOnMediaItemAltTextButtonClicked()) != null) {
             onMediaItemAltTextButtonClicked.invoke(altText);
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @NotNull

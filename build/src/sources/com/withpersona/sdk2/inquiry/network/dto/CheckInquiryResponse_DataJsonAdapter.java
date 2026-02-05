@@ -48,50 +48,50 @@ public final class CheckInquiryResponse_DataJsonAdapter extends h {
     @NotNull
     public CheckInquiryResponse.Data fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         CheckInquiryResponse.Attributes attributes = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw vm.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+                    throw ym.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                 }
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str2 = (String) this.stringAdapter.fromJson(reader);
                 if (str2 == null) {
-                    throw vm.c.x("type", "type", reader);
+                    throw ym.c.x("type", "type", reader);
                 }
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 attributes = (CheckInquiryResponse.Attributes) this.attributesAdapter.fromJson(reader);
                 if (attributes == null) {
-                    throw vm.c.x("attributes", "attributes", reader);
+                    throw ym.c.x("attributes", "attributes", reader);
                 }
                 i10 = -5;
             } else {
                 continue;
             }
         }
-        reader.y();
+        reader.z();
         if (i10 == -5) {
             if (str != null) {
                 if (str2 != null) {
                     Intrinsics.checkNotNull(attributes, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.network.dto.CheckInquiryResponse.Attributes");
                     return new CheckInquiryResponse.Data(str, str2, attributes);
                 }
-                throw vm.c.o("type", "type", reader);
+                throw ym.c.o("type", "type", reader);
             }
-            throw vm.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+            throw ym.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
         }
         Constructor<CheckInquiryResponse.Data> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = CheckInquiryResponse.Data.class.getDeclaredConstructor(String.class, String.class, CheckInquiryResponse.Attributes.class, Integer.TYPE, vm.c.f51688c);
+            constructor = CheckInquiryResponse.Data.class.getDeclaredConstructor(String.class, String.class, CheckInquiryResponse.Attributes.class, Integer.TYPE, ym.c.f54853c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -101,21 +101,21 @@ public final class CheckInquiryResponse_DataJsonAdapter extends h {
                 Intrinsics.checkNotNullExpressionValue(newInstance, "newInstance(...)");
                 return newInstance;
             }
-            throw vm.c.o("type", "type", reader);
+            throw ym.c.o("type", "type", reader);
         }
-        throw vm.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+        throw ym.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, CheckInquiryResponse.Data data) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (data != null) {
-            writer.l();
-            writer.A0(StackTraceHelper.ID_KEY);
+            writer.k();
+            writer.W(StackTraceHelper.ID_KEY);
             this.stringAdapter.toJson(writer, data.getId());
-            writer.A0("type");
+            writer.W("type");
             this.stringAdapter.toJson(writer, data.getType());
-            writer.A0("attributes");
+            writer.W("attributes");
             this.attributesAdapter.toJson(writer, data.getAttributes());
             writer.E();
             return;

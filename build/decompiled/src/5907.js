@@ -1,30 +1,25 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0, arg1() {
-        _fun51899: for (var _fun51899_ip = 0;;) switch (_fun51899_ip) {
+    var1 = global;
+    var1 = var1.Array;
+    var1 = var1.prototype;
+    var1 = var1.reverse;
+    var _closure1_slot0 = var1;
+    var1 = function arg0() {
+        _fun51887: for (var _fun51887_ip = 0;;) switch (_fun51887_ip) {
             case 0:
-                var0 = arg0;
-                var1 = var0.length;
-                var3 = var0.sort;
-                var2 = arg1;
-                var2 = var3.bind(var0)(var2);
-                var1 = parseFloat(var1);
-                var2 = var1 - 1;
-                if (!var1) {
-                    _fun51899_ip = 53;
-                    continue _fun51899
+                var3 = arg0;
+                var1 = null;
+                var0 = var3;
+                if (!(var1 != var0)) {
+                    _fun51887_ip = 29;
+                    continue _fun51887
                 }
-            case 31:
-                var1 = var0[var2];
-                var1 = var1.value;
-                var0[var2] = var1;
-                var1 = parseFloat(var2);
-                var2 = var1 - 1;
-                if (var1) {
-                    _fun51899_ip = 31;
-                    continue _fun51899
-                }
-            case 53:
+            case 12:
+                var2 = _closure1_slot0;
+                var1 = var2.call;
+                var0 = var1.bind(var2)(var3);
+            case 29:
                 return var0;
         }
     };

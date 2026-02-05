@@ -12,10 +12,10 @@ public enum p {
     
 
     /* renamed from: s  reason: collision with root package name */
-    private static final SparseArray f53980s;
+    private static final SparseArray f54676s;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f53982d;
+    private final int f54678d;
 
     static {
         p pVar = DEFAULT;
@@ -25,7 +25,7 @@ public enum p {
         p pVar5 = NEVER;
         p pVar6 = UNRECOGNIZED;
         SparseArray sparseArray = new SparseArray();
-        f53980s = sparseArray;
+        f54676s = sparseArray;
         sparseArray.put(0, pVar);
         sparseArray.put(1, pVar2);
         sparseArray.put(2, pVar3);
@@ -35,6 +35,6 @@ public enum p {
     }
 
     p(int i10) {
-        this.f53982d = i10;
+        this.f54678d = i10;
     }
 }

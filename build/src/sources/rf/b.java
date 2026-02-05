@@ -11,15 +11,15 @@ public interface b extends IInterface {
 
         /* renamed from: rf.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static class C0599a extends ig.a implements b {
-            C0599a(IBinder iBinder) {
+        public static class C0624a extends ig.a implements b {
+            C0624a(IBinder iBinder) {
                 super(iBinder, "com.google.android.gms.deviceperformance.internal.IDevicePerformanceService");
             }
 
             @Override // rf.b
-            public void L(rf.a aVar) {
+            public void N(rf.a aVar) {
                 Parcel e10 = e();
-                int i10 = ig.c.f28391b;
+                int i10 = ig.c.f27380b;
                 if (aVar == null) {
                     e10.writeStrongBinder(null);
                 } else {
@@ -37,9 +37,9 @@ public interface b extends IInterface {
             if (queryLocalInterface instanceof b) {
                 return (b) queryLocalInterface;
             }
-            return new C0599a(iBinder);
+            return new C0624a(iBinder);
         }
     }
 
-    void L(rf.a aVar);
+    void N(rf.a aVar);
 }

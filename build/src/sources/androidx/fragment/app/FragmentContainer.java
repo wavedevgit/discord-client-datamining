@@ -11,5 +11,5 @@ public abstract class FragmentContainer {
 
     public abstract View c(int i10);
 
-    public abstract boolean d();
+    public abstract boolean e();
 }

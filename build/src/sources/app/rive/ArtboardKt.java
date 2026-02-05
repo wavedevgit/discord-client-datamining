@@ -41,7 +41,7 @@ public final class ArtboardKt {
         }
         boolean z12 = z10 | z11;
         Object d10 = aVar.d();
-        if (z12 || d10 == a.f51787a.a()) {
+        if (z12 || d10 == a.f52444a.a()) {
             d10 = Artboard.Companion.fromFile(file, str);
             aVar.c(d10);
         }

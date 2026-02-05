@@ -11,43 +11,43 @@ public abstract class c {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        Object f2221a;
+        Object f2333a;
 
         /* renamed from: b  reason: collision with root package name */
-        d f2222b;
+        d f2334b;
 
         /* renamed from: c  reason: collision with root package name */
-        private androidx.concurrent.futures.d f2223c = androidx.concurrent.futures.d.w();
+        private androidx.concurrent.futures.d f2335c = androidx.concurrent.futures.d.w();
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f2224d;
+        private boolean f2336d;
 
         a() {
         }
 
         private void e() {
-            this.f2221a = null;
-            this.f2222b = null;
-            this.f2223c = null;
+            this.f2333a = null;
+            this.f2334b = null;
+            this.f2335c = null;
         }
 
         public void a(Runnable runnable, Executor executor) {
-            androidx.concurrent.futures.d dVar = this.f2223c;
+            androidx.concurrent.futures.d dVar = this.f2335c;
             if (dVar != null) {
                 dVar.a(runnable, executor);
             }
         }
 
         void b() {
-            this.f2221a = null;
-            this.f2222b = null;
-            this.f2223c.s(null);
+            this.f2333a = null;
+            this.f2334b = null;
+            this.f2335c.s(null);
         }
 
         public boolean c(Object obj) {
             boolean z10 = true;
-            this.f2224d = true;
-            d dVar = this.f2222b;
+            this.f2336d = true;
+            d dVar = this.f2334b;
             z10 = (dVar == null || !dVar.c(obj)) ? false : false;
             if (z10) {
                 e();
@@ -57,8 +57,8 @@ public abstract class c {
 
         public boolean d() {
             boolean z10 = true;
-            this.f2224d = true;
-            d dVar = this.f2222b;
+            this.f2336d = true;
+            d dVar = this.f2334b;
             z10 = (dVar == null || !dVar.b(true)) ? false : false;
             if (z10) {
                 e();
@@ -68,8 +68,8 @@ public abstract class c {
 
         public boolean f(Throwable th2) {
             boolean z10 = true;
-            this.f2224d = true;
-            d dVar = this.f2222b;
+            this.f2336d = true;
+            d dVar = this.f2334b;
             z10 = (dVar == null || !dVar.d(th2)) ? false : false;
             if (z10) {
                 e();
@@ -79,11 +79,11 @@ public abstract class c {
 
         protected void finalize() {
             androidx.concurrent.futures.d dVar;
-            d dVar2 = this.f2222b;
+            d dVar2 = this.f2334b;
             if (dVar2 != null && !dVar2.isDone()) {
-                dVar2.d(new b("The completer object was garbage collected - this future would otherwise never complete. The tag was: " + this.f2221a));
+                dVar2.d(new b("The completer object was garbage collected - this future would otherwise never complete. The tag was: " + this.f2333a));
             }
-            if (!this.f2224d && (dVar = this.f2223c) != null) {
+            if (!this.f2336d && (dVar = this.f2335c) != null) {
                 dVar.s(null);
             }
         }
@@ -103,7 +103,7 @@ public abstract class c {
 
     /* renamed from: androidx.concurrent.futures.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public interface InterfaceC0028c {
+    public interface InterfaceC0029c {
         Object a(a aVar);
     }
 
@@ -112,10 +112,10 @@ public abstract class c {
     public static final class d implements ListenableFuture {
 
         /* renamed from: d  reason: collision with root package name */
-        final WeakReference f2225d;
+        final WeakReference f2337d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final androidx.concurrent.futures.a f2226e = new a();
+        private final androidx.concurrent.futures.a f2338e = new a();
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a extends androidx.concurrent.futures.a {
@@ -124,35 +124,35 @@ public abstract class c {
 
             @Override // androidx.concurrent.futures.a
             protected String p() {
-                a aVar = (a) d.this.f2225d.get();
+                a aVar = (a) d.this.f2337d.get();
                 if (aVar == null) {
                     return "Completer object has been garbage collected, future will fail soon";
                 }
-                return "tag=[" + aVar.f2221a + "]";
+                return "tag=[" + aVar.f2333a + "]";
             }
         }
 
         d(a aVar) {
-            this.f2225d = new WeakReference(aVar);
+            this.f2337d = new WeakReference(aVar);
         }
 
         @Override // com.google.common.util.concurrent.ListenableFuture
         public void a(Runnable runnable, Executor executor) {
-            this.f2226e.a(runnable, executor);
+            this.f2338e.a(runnable, executor);
         }
 
         boolean b(boolean z10) {
-            return this.f2226e.cancel(z10);
+            return this.f2338e.cancel(z10);
         }
 
         boolean c(Object obj) {
-            return this.f2226e.s(obj);
+            return this.f2338e.s(obj);
         }
 
         @Override // java.util.concurrent.Future
         public boolean cancel(boolean z10) {
-            a aVar = (a) this.f2225d.get();
-            boolean cancel = this.f2226e.cancel(z10);
+            a aVar = (a) this.f2337d.get();
+            boolean cancel = this.f2338e.cancel(z10);
             if (cancel && aVar != null) {
                 aVar.b();
             }
@@ -160,43 +160,43 @@ public abstract class c {
         }
 
         boolean d(Throwable th2) {
-            return this.f2226e.t(th2);
+            return this.f2338e.t(th2);
         }
 
         @Override // java.util.concurrent.Future
         public Object get() {
-            return this.f2226e.get();
+            return this.f2338e.get();
         }
 
         @Override // java.util.concurrent.Future
         public boolean isCancelled() {
-            return this.f2226e.isCancelled();
+            return this.f2338e.isCancelled();
         }
 
         @Override // java.util.concurrent.Future
         public boolean isDone() {
-            return this.f2226e.isDone();
+            return this.f2338e.isDone();
         }
 
         public String toString() {
-            return this.f2226e.toString();
+            return this.f2338e.toString();
         }
 
         @Override // java.util.concurrent.Future
         public Object get(long j10, TimeUnit timeUnit) {
-            return this.f2226e.get(j10, timeUnit);
+            return this.f2338e.get(j10, timeUnit);
         }
     }
 
-    public static ListenableFuture a(InterfaceC0028c interfaceC0028c) {
+    public static ListenableFuture a(InterfaceC0029c interfaceC0029c) {
         a aVar = new a();
         d dVar = new d(aVar);
-        aVar.f2222b = dVar;
-        aVar.f2221a = interfaceC0028c.getClass();
+        aVar.f2334b = dVar;
+        aVar.f2333a = interfaceC0029c.getClass();
         try {
-            Object a10 = interfaceC0028c.a(aVar);
+            Object a10 = interfaceC0029c.a(aVar);
             if (a10 != null) {
-                aVar.f2221a = a10;
+                aVar.f2333a = a10;
                 return dVar;
             }
             return dVar;

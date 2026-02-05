@@ -3,43 +3,43 @@ package cc;
 public final class c {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c f7045c = new a().a();
+    private static final c f7463c = new a().a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f7046a;
+    private final long f7464a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f7047b;
+    private final b f7465b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private long f7048a = 0;
+        private long f7466a = 0;
 
         /* renamed from: b  reason: collision with root package name */
-        private b f7049b = b.REASON_UNKNOWN;
+        private b f7467b = b.REASON_UNKNOWN;
 
         a() {
         }
 
         public c a() {
-            return new c(this.f7048a, this.f7049b);
+            return new c(this.f7466a, this.f7467b);
         }
 
         public a b(long j10) {
-            this.f7048a = j10;
+            this.f7466a = j10;
             return this;
         }
 
         public a c(b bVar) {
-            this.f7049b = bVar;
+            this.f7467b = bVar;
             return this;
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public enum b implements xi.c {
+    public enum b implements aj.c {
         REASON_UNKNOWN(0),
         MESSAGE_TOO_OLD(1),
         CACHE_FULL(2),
@@ -50,21 +50,21 @@ public final class c {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f7058d;
+        private final int f7476d;
 
         b(int i10) {
-            this.f7058d = i10;
+            this.f7476d = i10;
         }
 
-        @Override // xi.c
+        @Override // aj.c
         public int getNumber() {
-            return this.f7058d;
+            return this.f7476d;
         }
     }
 
     c(long j10, b bVar) {
-        this.f7046a = j10;
-        this.f7047b = bVar;
+        this.f7464a = j10;
+        this.f7465b = bVar;
     }
 
     public static a c() {
@@ -72,10 +72,10 @@ public final class c {
     }
 
     public long a() {
-        return this.f7046a;
+        return this.f7464a;
     }
 
     public b b() {
-        return this.f7047b;
+        return this.f7465b;
     }
 }

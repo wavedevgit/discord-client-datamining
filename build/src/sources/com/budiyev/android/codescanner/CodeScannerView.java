@@ -22,74 +22,74 @@ public final class CodeScannerView extends ViewGroup {
     private int E;
 
     /* renamed from: d  reason: collision with root package name */
-    private SurfaceView f8026d;
+    private SurfaceView f8411d;
 
     /* renamed from: e  reason: collision with root package name */
-    private o f8027e;
+    private o f8412e;
 
     /* renamed from: i  reason: collision with root package name */
-    private ImageView f8028i;
+    private ImageView f8413i;
 
     /* renamed from: o  reason: collision with root package name */
-    private com.budiyev.android.codescanner.b f8029o;
+    private com.budiyev.android.codescanner.b f8414o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f8030p;
+    private int f8415p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f8031q;
+    private int f8416q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f8032r;
+    private int f8417r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Drawable f8033s;
+    private Drawable f8418s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Drawable f8034t;
+    private Drawable f8419t;
 
     /* renamed from: u  reason: collision with root package name */
-    private ImageView f8035u;
+    private ImageView f8420u;
 
     /* renamed from: v  reason: collision with root package name */
-    private com.budiyev.android.codescanner.b f8036v;
+    private com.budiyev.android.codescanner.b f8421v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f8037w;
+    private int f8422w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f8038x;
+    private int f8423x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f8039y;
+    private int f8424y;
 
     /* renamed from: z  reason: collision with root package name */
-    private Drawable f8040z;
+    private Drawable f8425z;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f8041a;
+        static final /* synthetic */ int[] f8426a;
 
         static {
             int[] iArr = new int[com.budiyev.android.codescanner.b.values().length];
-            f8041a = iArr;
+            f8426a = iArr;
             try {
                 iArr[com.budiyev.android.codescanner.b.TOP_START.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f8041a[com.budiyev.android.codescanner.b.TOP_END.ordinal()] = 2;
+                f8426a[com.budiyev.android.codescanner.b.TOP_END.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f8041a[com.budiyev.android.codescanner.b.BOTTOM_START.ordinal()] = 3;
+                f8426a[com.budiyev.android.codescanner.b.BOTTOM_START.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f8041a[com.budiyev.android.codescanner.b.BOTTOM_END.ordinal()] = 4;
+                f8426a[com.budiyev.android.codescanner.b.BOTTOM_END.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
@@ -181,7 +181,7 @@ public final class CodeScannerView extends ViewGroup {
     }
 
     private static int c(com.budiyev.android.codescanner.b bVar) {
-        int i10 = a.f8041a[bVar.ordinal()];
+        int i10 = a.f8426a[bVar.ordinal()];
         if (i10 != 2) {
             if (i10 == 3) {
                 return 2;
@@ -196,20 +196,20 @@ public final class CodeScannerView extends ViewGroup {
 
     private void d(Context context, AttributeSet attributeSet, int i10, int i11) {
         TypedArray typedArray;
-        this.f8026d = new SurfaceView(context);
-        this.f8027e = new o(context);
+        this.f8411d = new SurfaceView(context);
+        this.f8412e = new o(context);
         float f10 = context.getResources().getDisplayMetrics().density;
         int round = Math.round(16.0f * f10);
         this.E = Math.round(20.0f * f10);
         ImageView imageView = new ImageView(context);
-        this.f8028i = imageView;
+        this.f8413i = imageView;
         ImageView.ScaleType scaleType = ImageView.ScaleType.CENTER;
         imageView.setScaleType(scaleType);
-        this.f8028i.setOnClickListener(new b(this, null));
+        this.f8413i.setOnClickListener(new b(this, null));
         ImageView imageView2 = new ImageView(context);
-        this.f8035u = imageView2;
+        this.f8420u = imageView2;
         imageView2.setScaleType(scaleType);
-        this.f8035u.setOnClickListener(new c(this, null));
+        this.f8420u.setOnClickListener(new c(this, null));
         if (attributeSet == null) {
             h(1.0f, 1.0f);
             setMaskColor(1996488704);
@@ -232,53 +232,53 @@ public final class CodeScannerView extends ViewGroup {
             setAutoFocusButtonPaddingVertical(round);
             setFlashButtonPaddingHorizontal(round);
             setFlashButtonPaddingVertical(round);
-            setAutoFocusButtonOnIcon(n.l(context, j.f8087b));
-            setAutoFocusButtonOffIcon(n.l(context, j.f8086a));
-            setFlashButtonOnIcon(n.l(context, j.f8089d));
-            setFlashButtonOffIcon(n.l(context, j.f8088c));
+            setAutoFocusButtonOnIcon(n.l(context, j.f8472b));
+            setAutoFocusButtonOffIcon(n.l(context, j.f8471a));
+            setFlashButtonOnIcon(n.l(context, j.f8474d));
+            setFlashButtonOffIcon(n.l(context, j.f8473c));
         } else {
             try {
-                typedArray = context.getTheme().obtainStyledAttributes(attributeSet, k.f8090a, i10, i11);
+                typedArray = context.getTheme().obtainStyledAttributes(attributeSet, k.f8475a, i10, i11);
                 try {
-                    setMaskColor(typedArray.getColor(k.f8115z, 1996488704));
+                    setMaskColor(typedArray.getColor(k.f8500z, 1996488704));
                     setMaskVisible(typedArray.getBoolean(k.A, true));
-                    setFrameColor(typedArray.getColor(k.f8107r, -1));
-                    setFrameVisible(typedArray.getBoolean(k.f8114y, true));
-                    setFrameThickness(typedArray.getDimensionPixelOffset(k.f8112w, Math.round(f10 * 2.0f)));
-                    setFrameCornersSize(typedArray.getDimensionPixelOffset(k.f8110u, Math.round(f10 * 50.0f)));
-                    setFrameCornersRadius(typedArray.getDimensionPixelOffset(k.f8109t, Math.round(f10 * 0.0f)));
-                    setFrameCornersCapRounded(typedArray.getBoolean(k.f8108s, false));
-                    h(typedArray.getFloat(k.f8106q, 1.0f), typedArray.getFloat(k.f8105p, 1.0f));
-                    setFrameSize(typedArray.getFloat(k.f8111v, 0.75f));
-                    setFrameVerticalBias(typedArray.getFloat(k.f8113x, 0.5f));
-                    setAutoFocusButtonVisible(typedArray.getBoolean(k.f8097h, true));
-                    setAutoFocusButtonColor(typedArray.getColor(k.f8091b, -1));
-                    setAutoFocusButtonPosition(b(typedArray.getInt(k.f8096g, c(F))));
-                    setAutoFocusButtonPaddingHorizontal(typedArray.getDimensionPixelOffset(k.f8094e, round));
-                    setAutoFocusButtonPaddingVertical(typedArray.getDimensionPixelOffset(k.f8095f, round));
-                    Drawable drawable = typedArray.getDrawable(k.f8093d);
+                    setFrameColor(typedArray.getColor(k.f8492r, -1));
+                    setFrameVisible(typedArray.getBoolean(k.f8499y, true));
+                    setFrameThickness(typedArray.getDimensionPixelOffset(k.f8497w, Math.round(f10 * 2.0f)));
+                    setFrameCornersSize(typedArray.getDimensionPixelOffset(k.f8495u, Math.round(f10 * 50.0f)));
+                    setFrameCornersRadius(typedArray.getDimensionPixelOffset(k.f8494t, Math.round(f10 * 0.0f)));
+                    setFrameCornersCapRounded(typedArray.getBoolean(k.f8493s, false));
+                    h(typedArray.getFloat(k.f8491q, 1.0f), typedArray.getFloat(k.f8490p, 1.0f));
+                    setFrameSize(typedArray.getFloat(k.f8496v, 0.75f));
+                    setFrameVerticalBias(typedArray.getFloat(k.f8498x, 0.5f));
+                    setAutoFocusButtonVisible(typedArray.getBoolean(k.f8482h, true));
+                    setAutoFocusButtonColor(typedArray.getColor(k.f8476b, -1));
+                    setAutoFocusButtonPosition(b(typedArray.getInt(k.f8481g, c(F))));
+                    setAutoFocusButtonPaddingHorizontal(typedArray.getDimensionPixelOffset(k.f8479e, round));
+                    setAutoFocusButtonPaddingVertical(typedArray.getDimensionPixelOffset(k.f8480f, round));
+                    Drawable drawable = typedArray.getDrawable(k.f8478d);
                     if (drawable == null) {
-                        drawable = n.l(context, j.f8087b);
+                        drawable = n.l(context, j.f8472b);
                     }
                     setAutoFocusButtonOnIcon(drawable);
-                    Drawable drawable2 = typedArray.getDrawable(k.f8092c);
+                    Drawable drawable2 = typedArray.getDrawable(k.f8477c);
                     if (drawable2 == null) {
-                        drawable2 = n.l(context, j.f8086a);
+                        drawable2 = n.l(context, j.f8471a);
                     }
                     setAutoFocusButtonOffIcon(drawable2);
-                    setFlashButtonVisible(typedArray.getBoolean(k.f8104o, true));
-                    setFlashButtonColor(typedArray.getColor(k.f8098i, -1));
-                    setFlashButtonPosition(b(typedArray.getInt(k.f8103n, c(G))));
-                    setFlashButtonPaddingHorizontal(typedArray.getDimensionPixelOffset(k.f8101l, round));
-                    setFlashButtonPaddingVertical(typedArray.getDimensionPixelOffset(k.f8102m, round));
-                    Drawable drawable3 = typedArray.getDrawable(k.f8100k);
+                    setFlashButtonVisible(typedArray.getBoolean(k.f8489o, true));
+                    setFlashButtonColor(typedArray.getColor(k.f8483i, -1));
+                    setFlashButtonPosition(b(typedArray.getInt(k.f8488n, c(G))));
+                    setFlashButtonPaddingHorizontal(typedArray.getDimensionPixelOffset(k.f8486l, round));
+                    setFlashButtonPaddingVertical(typedArray.getDimensionPixelOffset(k.f8487m, round));
+                    Drawable drawable3 = typedArray.getDrawable(k.f8485k);
                     if (drawable3 == null) {
-                        drawable3 = n.l(context, j.f8089d);
+                        drawable3 = n.l(context, j.f8474d);
                     }
                     setFlashButtonOnIcon(drawable3);
-                    Drawable drawable4 = typedArray.getDrawable(k.f8099j);
+                    Drawable drawable4 = typedArray.getDrawable(k.f8484j);
                     if (drawable4 == null) {
-                        drawable4 = n.l(context, j.f8088c);
+                        drawable4 = n.l(context, j.f8473c);
                     }
                     setFlashButtonOffIcon(drawable4);
                     typedArray.recycle();
@@ -298,29 +298,29 @@ public final class CodeScannerView extends ViewGroup {
             setAutoFocusEnabled(true);
             setFlashEnabled(true);
         }
-        addView(this.f8026d, new d(-1, -1));
-        addView(this.f8027e, new d(-1, -1));
-        addView(this.f8028i, new d(-2, -2));
-        addView(this.f8035u, new d(-2, -2));
+        addView(this.f8411d, new d(-1, -1));
+        addView(this.f8412e, new d(-1, -1));
+        addView(this.f8413i, new d(-2, -2));
+        addView(this.f8420u, new d(-2, -2));
     }
 
     private void e() {
-        int i10 = this.f8030p;
-        int i11 = this.f8031q;
-        this.f8028i.setPadding(i10, i11, i10, i11);
+        int i10 = this.f8415p;
+        int i11 = this.f8416q;
+        this.f8413i.setPadding(i10, i11, i10, i11);
     }
 
     private void f() {
-        int i10 = this.f8037w;
-        int i11 = this.f8038x;
-        this.f8035u.setPadding(i10, i11, i10, i11);
+        int i10 = this.f8422w;
+        int i11 = this.f8423x;
+        this.f8420u.setPadding(i10, i11, i10, i11);
     }
 
     private void g(View view, com.budiyev.android.codescanner.b bVar, int i10, int i11) {
         int measuredWidth = view.getMeasuredWidth();
         int measuredHeight = view.getMeasuredHeight();
         int layoutDirection = getLayoutDirection();
-        int i12 = a.f8041a[bVar.ordinal()];
+        int i12 = a.f8426a[bVar.ordinal()];
         if (i12 != 1) {
             if (i12 != 2) {
                 if (i12 != 3) {
@@ -365,34 +365,34 @@ public final class CodeScannerView extends ViewGroup {
     }
 
     public int getAutoFocusButtonColor() {
-        return this.f8032r;
+        return this.f8417r;
     }
 
     @NonNull
     public Drawable getAutoFocusButtonOffIcon() {
-        return this.f8034t;
+        return this.f8419t;
     }
 
     @NonNull
     public Drawable getAutoFocusButtonOnIcon() {
-        return this.f8033s;
+        return this.f8418s;
     }
 
     public int getAutoFocusButtonPaddingHorizontal() {
-        return this.f8030p;
+        return this.f8415p;
     }
 
     public int getAutoFocusButtonPaddingVertical() {
-        return this.f8031q;
+        return this.f8416q;
     }
 
     @NonNull
     public com.budiyev.android.codescanner.b getAutoFocusButtonPosition() {
-        return this.f8029o;
+        return this.f8414o;
     }
 
     public int getFlashButtonColor() {
-        return this.f8039y;
+        return this.f8424y;
     }
 
     @NonNull
@@ -402,77 +402,77 @@ public final class CodeScannerView extends ViewGroup {
 
     @NonNull
     public Drawable getFlashButtonOnIcon() {
-        return this.f8040z;
+        return this.f8425z;
     }
 
     public int getFlashButtonPaddingHorizontal() {
-        return this.f8037w;
+        return this.f8422w;
     }
 
     public int getFlashButtonPaddingVertical() {
-        return this.f8038x;
+        return this.f8423x;
     }
 
     @NonNull
     public com.budiyev.android.codescanner.b getFlashButtonPosition() {
-        return this.f8036v;
+        return this.f8421v;
     }
 
     public float getFrameAspectRatioHeight() {
-        return this.f8027e.a();
+        return this.f8412e.a();
     }
 
     public float getFrameAspectRatioWidth() {
-        return this.f8027e.b();
+        return this.f8412e.b();
     }
 
     public int getFrameColor() {
-        return this.f8027e.c();
+        return this.f8412e.c();
     }
 
     public int getFrameCornersRadius() {
-        return this.f8027e.d();
+        return this.f8412e.d();
     }
 
     public int getFrameCornersSize() {
-        return this.f8027e.e();
+        return this.f8412e.e();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l getFrameRect() {
-        return this.f8027e.f();
+        return this.f8412e.f();
     }
 
     public float getFrameSize() {
-        return this.f8027e.g();
+        return this.f8412e.g();
     }
 
     public int getFrameThickness() {
-        return this.f8027e.h();
+        return this.f8412e.h();
     }
 
     public float getFrameVerticalBias() {
-        return this.f8027e.i();
+        return this.f8412e.i();
     }
 
     public int getMaskColor() {
-        return this.f8027e.j();
+        return this.f8412e.j();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @NonNull
     public SurfaceView getPreviewView() {
-        return this.f8026d;
+        return this.f8411d;
     }
 
     @NonNull
     o getViewFinderView() {
-        return this.f8027e;
+        return this.f8412e;
     }
 
     public void h(float f10, float f11) {
         if (f10 > 0.0f && f11 > 0.0f) {
-            this.f8027e.m(f10, f11);
+            this.f8412e.m(f10, f11);
             return;
         }
         throw new IllegalArgumentException("Frame aspect ratio values should be greater than zero");
@@ -491,7 +491,7 @@ public final class CodeScannerView extends ViewGroup {
             i iVar = this.B;
             int i20 = 0;
             if (iVar == null) {
-                this.f8026d.layout(0, 0, i18, i19);
+                this.f8411d.layout(0, 0, i18, i19);
             } else {
                 int a10 = iVar.a();
                 if (a10 > i18) {
@@ -511,13 +511,13 @@ public final class CodeScannerView extends ViewGroup {
                     i16 = 0;
                     i17 = i19;
                 }
-                this.f8026d.layout(i14, i16, i15, i17);
+                this.f8411d.layout(i14, i16, i15, i17);
             }
-            this.f8027e.layout(0, 0, i18, i19);
-            g(this.f8028i, this.f8029o, i18, i19);
-            g(this.f8035u, this.f8036v, i18, i19);
+            this.f8412e.layout(0, 0, i18, i19);
+            g(this.f8413i, this.f8414o, i18, i19);
+            g(this.f8420u, this.f8421v, i18, i19);
             if (childCount == 5) {
-                l f10 = this.f8027e.f();
+                l f10 = this.f8412e.f();
                 if (f10 != null) {
                     i20 = f10.c();
                 }
@@ -543,12 +543,12 @@ public final class CodeScannerView extends ViewGroup {
         int i12;
         int childCount = getChildCount();
         if (childCount <= 5) {
-            measureChildWithMargins(this.f8026d, i10, 0, i11, 0);
-            measureChildWithMargins(this.f8027e, i10, 0, i11, 0);
-            measureChildWithMargins(this.f8028i, i10, 0, i11, 0);
-            measureChildWithMargins(this.f8035u, i10, 0, i11, 0);
+            measureChildWithMargins(this.f8411d, i10, 0, i11, 0);
+            measureChildWithMargins(this.f8412e, i10, 0, i11, 0);
+            measureChildWithMargins(this.f8413i, i10, 0, i11, 0);
+            measureChildWithMargins(this.f8420u, i10, 0, i11, 0);
             if (childCount == 5) {
-                l f10 = this.f8027e.f();
+                l f10 = this.f8412e.f();
                 View childAt = getChildAt(4);
                 if (f10 != null) {
                     i12 = f10.c();
@@ -585,19 +585,19 @@ public final class CodeScannerView extends ViewGroup {
     }
 
     public void setAutoFocusButtonColor(int i10) {
-        this.f8032r = i10;
-        this.f8028i.setColorFilter(i10);
+        this.f8417r = i10;
+        this.f8413i.setColorFilter(i10);
     }
 
     public void setAutoFocusButtonOffIcon(@NonNull Drawable drawable) {
         boolean z10;
         Objects.requireNonNull(drawable);
-        if (drawable != this.f8034t) {
+        if (drawable != this.f8419t) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f8034t = drawable;
+        this.f8419t = drawable;
         CodeScanner codeScanner = this.D;
         if (z10 && codeScanner != null) {
             setAutoFocusEnabled(codeScanner.O());
@@ -607,12 +607,12 @@ public final class CodeScannerView extends ViewGroup {
     public void setAutoFocusButtonOnIcon(@NonNull Drawable drawable) {
         boolean z10;
         Objects.requireNonNull(drawable);
-        if (drawable != this.f8033s) {
+        if (drawable != this.f8418s) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f8033s = drawable;
+        this.f8418s = drawable;
         CodeScanner codeScanner = this.D;
         if (z10 && codeScanner != null) {
             setAutoFocusEnabled(codeScanner.O());
@@ -622,12 +622,12 @@ public final class CodeScannerView extends ViewGroup {
     public void setAutoFocusButtonPaddingHorizontal(int i10) {
         boolean z10;
         if (i10 >= 0) {
-            if (i10 != this.f8030p) {
+            if (i10 != this.f8415p) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f8030p = i10;
+            this.f8415p = i10;
             if (z10) {
                 e();
                 return;
@@ -640,12 +640,12 @@ public final class CodeScannerView extends ViewGroup {
     public void setAutoFocusButtonPaddingVertical(int i10) {
         boolean z10;
         if (i10 >= 0) {
-            if (i10 != this.f8031q) {
+            if (i10 != this.f8416q) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f8031q = i10;
+            this.f8416q = i10;
             if (z10) {
                 e();
                 return;
@@ -658,12 +658,12 @@ public final class CodeScannerView extends ViewGroup {
     public void setAutoFocusButtonPosition(@NonNull com.budiyev.android.codescanner.b bVar) {
         boolean z10;
         Objects.requireNonNull(bVar);
-        if (bVar != this.f8029o) {
+        if (bVar != this.f8414o) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f8029o = bVar;
+        this.f8414o = bVar;
         if (z10 && isLaidOut()) {
             requestLayout();
         }
@@ -671,7 +671,7 @@ public final class CodeScannerView extends ViewGroup {
 
     public void setAutoFocusButtonVisible(boolean z10) {
         int i10;
-        ImageView imageView = this.f8028i;
+        ImageView imageView = this.f8413i;
         if (z10) {
             i10 = 0;
         } else {
@@ -683,11 +683,11 @@ public final class CodeScannerView extends ViewGroup {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setAutoFocusEnabled(boolean z10) {
         Drawable drawable;
-        ImageView imageView = this.f8028i;
+        ImageView imageView = this.f8413i;
         if (z10) {
-            drawable = this.f8033s;
+            drawable = this.f8418s;
         } else {
-            drawable = this.f8034t;
+            drawable = this.f8419t;
         }
         imageView.setImageDrawable(drawable);
     }
@@ -704,8 +704,8 @@ public final class CodeScannerView extends ViewGroup {
     }
 
     public void setFlashButtonColor(int i10) {
-        this.f8039y = i10;
-        this.f8035u.setColorFilter(i10);
+        this.f8424y = i10;
+        this.f8420u.setColorFilter(i10);
     }
 
     public void setFlashButtonOffIcon(@NonNull Drawable drawable) {
@@ -726,12 +726,12 @@ public final class CodeScannerView extends ViewGroup {
     public void setFlashButtonOnIcon(@NonNull Drawable drawable) {
         boolean z10;
         Objects.requireNonNull(drawable);
-        if (drawable != this.f8040z) {
+        if (drawable != this.f8425z) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f8040z = drawable;
+        this.f8425z = drawable;
         CodeScanner codeScanner = this.D;
         if (z10 && codeScanner != null) {
             setFlashEnabled(codeScanner.Q());
@@ -741,12 +741,12 @@ public final class CodeScannerView extends ViewGroup {
     public void setFlashButtonPaddingHorizontal(int i10) {
         boolean z10;
         if (i10 >= 0) {
-            if (i10 != this.f8037w) {
+            if (i10 != this.f8422w) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f8037w = i10;
+            this.f8422w = i10;
             if (z10) {
                 f();
                 return;
@@ -759,12 +759,12 @@ public final class CodeScannerView extends ViewGroup {
     public void setFlashButtonPaddingVertical(int i10) {
         boolean z10;
         if (i10 >= 0) {
-            if (i10 != this.f8038x) {
+            if (i10 != this.f8423x) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f8038x = i10;
+            this.f8423x = i10;
             if (z10) {
                 f();
                 return;
@@ -777,12 +777,12 @@ public final class CodeScannerView extends ViewGroup {
     public void setFlashButtonPosition(@NonNull com.budiyev.android.codescanner.b bVar) {
         boolean z10;
         Objects.requireNonNull(bVar);
-        if (bVar != this.f8036v) {
+        if (bVar != this.f8421v) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f8036v = bVar;
+        this.f8421v = bVar;
         if (z10) {
             requestLayout();
         }
@@ -790,7 +790,7 @@ public final class CodeScannerView extends ViewGroup {
 
     public void setFlashButtonVisible(boolean z10) {
         int i10;
-        ImageView imageView = this.f8035u;
+        ImageView imageView = this.f8420u;
         if (z10) {
             i10 = 0;
         } else {
@@ -802,9 +802,9 @@ public final class CodeScannerView extends ViewGroup {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setFlashEnabled(boolean z10) {
         Drawable drawable;
-        ImageView imageView = this.f8035u;
+        ImageView imageView = this.f8420u;
         if (z10) {
-            drawable = this.f8040z;
+            drawable = this.f8425z;
         } else {
             drawable = this.A;
         }
@@ -813,7 +813,7 @@ public final class CodeScannerView extends ViewGroup {
 
     public void setFrameAspectRatioHeight(float f10) {
         if (f10 > 0.0f) {
-            this.f8027e.n(f10);
+            this.f8412e.n(f10);
             return;
         }
         throw new IllegalArgumentException("Frame aspect ratio values should be greater than zero");
@@ -821,23 +821,23 @@ public final class CodeScannerView extends ViewGroup {
 
     public void setFrameAspectRatioWidth(float f10) {
         if (f10 > 0.0f) {
-            this.f8027e.o(f10);
+            this.f8412e.o(f10);
             return;
         }
         throw new IllegalArgumentException("Frame aspect ratio values should be greater than zero");
     }
 
     public void setFrameColor(int i10) {
-        this.f8027e.p(i10);
+        this.f8412e.p(i10);
     }
 
     public void setFrameCornersCapRounded(boolean z10) {
-        this.f8027e.q(z10);
+        this.f8412e.q(z10);
     }
 
     public void setFrameCornersRadius(int i10) {
         if (i10 >= 0) {
-            this.f8027e.r(i10);
+            this.f8412e.r(i10);
             return;
         }
         throw new IllegalArgumentException("Frame corners radius can't be negative");
@@ -845,7 +845,7 @@ public final class CodeScannerView extends ViewGroup {
 
     public void setFrameCornersSize(int i10) {
         if (i10 >= 0) {
-            this.f8027e.s(i10);
+            this.f8412e.s(i10);
             return;
         }
         throw new IllegalArgumentException("Frame corners size can't be negative");
@@ -853,7 +853,7 @@ public final class CodeScannerView extends ViewGroup {
 
     public void setFrameSize(float f10) {
         if (f10 >= 0.1d && f10 <= 1.0f) {
-            this.f8027e.t(f10);
+            this.f8412e.t(f10);
             return;
         }
         throw new IllegalArgumentException("Max frame size value should be between 0.1 and 1, inclusive");
@@ -861,7 +861,7 @@ public final class CodeScannerView extends ViewGroup {
 
     public void setFrameThickness(int i10) {
         if (i10 >= 0) {
-            this.f8027e.u(i10);
+            this.f8412e.u(i10);
             return;
         }
         throw new IllegalArgumentException("Frame thickness can't be negative");
@@ -869,22 +869,22 @@ public final class CodeScannerView extends ViewGroup {
 
     public void setFrameVerticalBias(float f10) {
         if (f10 >= 0.0f && f10 <= 1.0f) {
-            this.f8027e.v(f10);
+            this.f8412e.v(f10);
             return;
         }
         throw new IllegalArgumentException("Max frame size value should be between 0 and 1, inclusive");
     }
 
     public void setFrameVisible(boolean z10) {
-        this.f8027e.w(z10);
+        this.f8412e.w(z10);
     }
 
     public void setMaskColor(int i10) {
-        this.f8027e.x(i10);
+        this.f8412e.x(i10);
     }
 
     public void setMaskVisible(boolean z10) {
-        this.f8027e.y(z10);
+        this.f8412e.y(z10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

@@ -8,24 +8,24 @@ import kotlin.jvm.internal.LongCompanionObject;
 public abstract class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final SimpleDateFormat f32361a;
+    private static final SimpleDateFormat f31824a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SimpleDateFormat f32362b;
+    private static final SimpleDateFormat f31825b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final StringBuilder f32363c;
+    private static final StringBuilder f31826c;
 
     static {
         Locale locale = Locale.ROOT;
-        f32361a = new SimpleDateFormat("MM-dd HH:mm:ss.SSS", locale);
-        f32362b = new SimpleDateFormat("MM-dd HH:mm:ss", locale);
-        f32363c = new StringBuilder(33);
+        f31824a = new SimpleDateFormat("MM-dd HH:mm:ss.SSS", locale);
+        f31825b = new SimpleDateFormat("MM-dd HH:mm:ss", locale);
+        f31826c = new StringBuilder(33);
     }
 
     public static String a(long j10) {
         String sb2;
-        StringBuilder sb3 = f32363c;
+        StringBuilder sb3 = f31826c;
         synchronized (sb3) {
             sb3.setLength(0);
             b(j10, sb3);

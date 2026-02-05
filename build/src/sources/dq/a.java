@@ -1,108 +1,238 @@
 package dq;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewbinding.ViewBinding;
-import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements ViewBinding {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final FrameLayout f20724a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final FrameLayout f20725b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final LinearLayout f20726c;
+public final class a implements h {
+    @NotNull
+    public static final Parcelable.Creator<a> CREATOR = new C0288a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final View f20727d;
+    private final String f20918d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final RecyclerView f20728e;
-
-    /* renamed from: f  reason: collision with root package name */
-    public final TextInputEditText f20729f;
-
-    /* renamed from: g  reason: collision with root package name */
-    public final TextInputLayout f20730g;
-
-    /* renamed from: h  reason: collision with root package name */
-    public final View f20731h;
+    private final JsonLogicBoolean f20919e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextView f20732i;
+    private final JsonLogicBoolean f20920i;
 
-    /* renamed from: j  reason: collision with root package name */
-    public final MaterialToolbar f20733j;
+    /* renamed from: o  reason: collision with root package name */
+    private final String f20921o;
 
-    private a(FrameLayout frameLayout, FrameLayout frameLayout2, LinearLayout linearLayout, View view, RecyclerView recyclerView, TextInputEditText textInputEditText, TextInputLayout textInputLayout, View view2, TextView textView, MaterialToolbar materialToolbar) {
-        this.f20724a = frameLayout;
-        this.f20725b = frameLayout2;
-        this.f20726c = linearLayout;
-        this.f20727d = view;
-        this.f20728e = recyclerView;
-        this.f20729f = textInputEditText;
-        this.f20730g = textInputLayout;
-        this.f20731h = view2;
-        this.f20732i = textView;
-        this.f20733j = materialToolbar;
-    }
+    /* renamed from: p  reason: collision with root package name */
+    private final Integer f20922p;
 
-    public static a a(View view) {
-        View a10;
-        View a11;
-        int i10 = yp.e.f55189n;
-        FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
-        if (frameLayout != null) {
-            i10 = yp.e.X;
-            LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
-            if (linearLayout != null && (a10 = e4.a.a(view, (i10 = yp.e.Y))) != null) {
-                i10 = yp.e.f55196q0;
-                RecyclerView recyclerView = (RecyclerView) e4.a.a(view, i10);
-                if (recyclerView != null) {
-                    i10 = yp.e.f55200s0;
-                    TextInputEditText textInputEditText = (TextInputEditText) e4.a.a(view, i10);
-                    if (textInputEditText != null) {
-                        i10 = yp.e.f55202t0;
-                        TextInputLayout textInputLayout = (TextInputLayout) e4.a.a(view, i10);
-                        if (textInputLayout != null && (a11 = e4.a.a(view, (i10 = yp.e.f55208w0))) != null) {
-                            i10 = yp.e.A0;
-                            TextView textView = (TextView) e4.a.a(view, i10);
-                            if (textView != null) {
-                                i10 = yp.e.C0;
-                                MaterialToolbar materialToolbar = (MaterialToolbar) e4.a.a(view, i10);
-                                if (materialToolbar != null) {
-                                    return new a((FrameLayout) view, frameLayout, linearLayout, a10, recyclerView, textInputEditText, textInputLayout, a11, textView, materialToolbar);
-                                }
-                            }
-                        }
-                    }
-                }
+    /* renamed from: q  reason: collision with root package name */
+    private final List f20923q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private boolean f20924r;
+
+    /* renamed from: dq.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0288a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final a createFromParcel(Parcel parcel) {
+            Integer valueOf;
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            String readString = parcel.readString();
+            JsonLogicBoolean jsonLogicBoolean = (JsonLogicBoolean) parcel.readParcelable(a.class.getClassLoader());
+            JsonLogicBoolean jsonLogicBoolean2 = (JsonLogicBoolean) parcel.readParcelable(a.class.getClassLoader());
+            String readString2 = parcel.readString();
+            if (parcel.readInt() == 0) {
+                valueOf = null;
+            } else {
+                valueOf = Integer.valueOf(parcel.readInt());
             }
+            return new a(readString, jsonLogicBoolean, jsonLogicBoolean2, readString2, valueOf);
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final a[] newArray(int i10) {
+            return new a[i10];
+        }
     }
 
-    public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(yp.f.f55215a, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
-        }
-        return a(inflate);
+    public a(String name, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str, Integer num) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        this.f20918d = name;
+        this.f20919e = jsonLogicBoolean;
+        this.f20920i = jsonLogicBoolean2;
+        this.f20921o = str;
+        this.f20922p = num;
+        this.f20923q = new ArrayList();
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public FrameLayout getRoot() {
-        return this.f20724a;
+    @Override // dq.h
+    public boolean E0() {
+        return this.f20924r;
+    }
+
+    @Override // dq.e0
+    public List d() {
+        return this.f20923q;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof a)) {
+            return false;
+        }
+        a aVar = (a) obj;
+        if (Intrinsics.areEqual(this.f20918d, aVar.f20918d) && Intrinsics.areEqual(this.f20919e, aVar.f20919e) && Intrinsics.areEqual(this.f20920i, aVar.f20920i) && Intrinsics.areEqual(this.f20921o, aVar.f20921o) && Intrinsics.areEqual(this.f20922p, aVar.f20922p)) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // dq.h
+    public String getAutoSubmitCountdownText() {
+        return this.f20921o;
+    }
+
+    @Override // dq.h
+    public Integer getAutoSubmitIntervalSeconds() {
+        return this.f20922p;
+    }
+
+    @Override // dq.v
+    public JsonLogicBoolean getDisabled() {
+        return this.f20920i;
+    }
+
+    @Override // dq.e0
+    public JsonLogicBoolean getHidden() {
+        return this.f20919e;
+    }
+
+    @Override // dq.h, dq.k5
+    public String getName() {
+        return this.f20918d;
+    }
+
+    public int hashCode() {
+        int hashCode;
+        int hashCode2;
+        int hashCode3;
+        int hashCode4 = this.f20918d.hashCode() * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20919e;
+        int i10 = 0;
+        if (jsonLogicBoolean == null) {
+            hashCode = 0;
+        } else {
+            hashCode = jsonLogicBoolean.hashCode();
+        }
+        int i11 = (hashCode4 + hashCode) * 31;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20920i;
+        if (jsonLogicBoolean2 == null) {
+            hashCode2 = 0;
+        } else {
+            hashCode2 = jsonLogicBoolean2.hashCode();
+        }
+        int i12 = (i11 + hashCode2) * 31;
+        String str = this.f20921o;
+        if (str == null) {
+            hashCode3 = 0;
+        } else {
+            hashCode3 = str.hashCode();
+        }
+        int i13 = (i12 + hashCode3) * 31;
+        Integer num = this.f20922p;
+        if (num != null) {
+            i10 = num.hashCode();
+        }
+        return i13 + i10;
+    }
+
+    @Override // dq.h, dq.j2
+    public void m(boolean z10) {
+        this.f20924r = z10;
+    }
+
+    public String toString() {
+        String str = this.f20918d;
+        JsonLogicBoolean jsonLogicBoolean = this.f20919e;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20920i;
+        String str2 = this.f20921o;
+        Integer num = this.f20922p;
+        return "ActionButtonComponent(name=" + str + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", autoSubmitCountdownText=" + str2 + ", autoSubmitIntervalSeconds=" + num + ")";
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeString(this.f20918d);
+        dest.writeParcelable(this.f20919e, i10);
+        dest.writeParcelable(this.f20920i, i10);
+        dest.writeString(this.f20921o);
+        Integer num = this.f20922p;
+        if (num == null) {
+            dest.writeInt(0);
+            return;
+        }
+        dest.writeInt(1);
+        dest.writeInt(num.intValue());
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public a(com.withpersona.sdk2.inquiry.network.dto.ui.components.ActionButton r8) {
+        /*
+            r7 = this;
+            java.lang.String r0 = "config"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r8, r0)
+            java.lang.String r2 = r8.getName()
+            com.withpersona.sdk2.inquiry.network.dto.ui.BasicButtonAttributes r0 = r8.getAttributes()
+            r1 = 0
+            if (r0 == 0) goto L16
+            com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean r0 = r0.getHidden()
+            r3 = r0
+            goto L17
+        L16:
+            r3 = r1
+        L17:
+            com.withpersona.sdk2.inquiry.network.dto.ui.BasicButtonAttributes r0 = r8.getAttributes()
+            if (r0 == 0) goto L23
+            com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean r0 = r0.getDisabled()
+            r4 = r0
+            goto L24
+        L23:
+            r4 = r1
+        L24:
+            com.withpersona.sdk2.inquiry.network.dto.ui.BasicButtonAttributes r0 = r8.getAttributes()
+            if (r0 == 0) goto L30
+            java.lang.String r0 = r0.getAutoSubmitCountdownText()
+            r5 = r0
+            goto L31
+        L30:
+            r5 = r1
+        L31:
+            com.withpersona.sdk2.inquiry.network.dto.ui.BasicButtonAttributes r8 = r8.getAttributes()
+            if (r8 == 0) goto L3b
+            java.lang.Integer r1 = r8.getAutoSubmitIntervalSeconds()
+        L3b:
+            r6 = r1
+            r1 = r7
+            r1.<init>(r2, r3, r4, r5, r6)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: dq.a.<init>(com.withpersona.sdk2.inquiry.network.dto.ui.components.ActionButton):void");
     }
 }

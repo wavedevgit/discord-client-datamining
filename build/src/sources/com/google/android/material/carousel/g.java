@@ -11,36 +11,36 @@ import java.util.Map;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f14411a;
+    private final f f14805a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f14412b;
+    private final List f14806b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f14413c;
+    private final List f14807c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float[] f14414d;
+    private final float[] f14808d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float[] f14415e;
+    private final float[] f14809e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f14416f;
+    private final float f14810f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f14417g;
+    private final float f14811g;
 
     private g(f fVar, List list, List list2) {
-        this.f14411a = fVar;
-        this.f14412b = Collections.unmodifiableList(list);
-        this.f14413c = Collections.unmodifiableList(list2);
-        float f10 = ((f) list.get(list.size() - 1)).c().f14403a - fVar.c().f14403a;
-        this.f14416f = f10;
-        float f11 = fVar.j().f14403a - ((f) list2.get(list2.size() - 1)).j().f14403a;
-        this.f14417g = f11;
-        this.f14414d = m(f10, list, true);
-        this.f14415e = m(f11, list2, false);
+        this.f14805a = fVar;
+        this.f14806b = Collections.unmodifiableList(list);
+        this.f14807c = Collections.unmodifiableList(list2);
+        float f10 = ((f) list.get(list.size() - 1)).c().f14797a - fVar.c().f14797a;
+        this.f14810f = f10;
+        float f11 = fVar.j().f14797a - ((f) list2.get(list2.size() - 1)).j().f14797a;
+        this.f14811g = f11;
+        this.f14808d = m(f10, list, true);
+        this.f14809e = m(f11, list2, false);
     }
 
     private f a(List list, float f10, float[] fArr) {
@@ -53,7 +53,7 @@ public class g {
 
     private static int b(f fVar, float f10) {
         for (int i10 = fVar.i(); i10 < fVar.g().size(); i10++) {
-            if (f10 == ((f.c) fVar.g().get(i10)).f14405c) {
+            if (f10 == ((f.c) fVar.g().get(i10)).f14799c) {
                 return i10;
             }
         }
@@ -62,7 +62,7 @@ public class g {
 
     private static int c(f fVar) {
         for (int i10 = 0; i10 < fVar.g().size(); i10++) {
-            if (!((f.c) fVar.g().get(i10)).f14407e) {
+            if (!((f.c) fVar.g().get(i10)).f14801e) {
                 return i10;
             }
         }
@@ -71,7 +71,7 @@ public class g {
 
     private static int d(f fVar, float f10) {
         for (int b10 = fVar.b() - 1; b10 >= 0; b10--) {
-            if (f10 == ((f.c) fVar.g().get(b10)).f14405c) {
+            if (f10 == ((f.c) fVar.g().get(b10)).f14799c) {
                 return b10;
             }
         }
@@ -80,7 +80,7 @@ public class g {
 
     private static int e(f fVar) {
         for (int size = fVar.g().size() - 1; size >= 0; size--) {
-            if (!((f.c) fVar.g().get(size)).f14407e) {
+            if (!((f.c) fVar.g().get(size)).f14801e) {
                 return size;
             }
         }
@@ -102,9 +102,9 @@ public class g {
             f fVar = (f) list.get(i11);
             f fVar2 = (f) list.get(i10);
             if (z10) {
-                f11 = fVar2.c().f14403a - fVar.c().f14403a;
+                f11 = fVar2.c().f14797a - fVar.c().f14797a;
             } else {
-                f11 = fVar.j().f14403a - fVar2.j().f14403a;
+                f11 = fVar.j().f14797a - fVar2.j().f14797a;
             }
             float f13 = f11 / f10;
             if (i10 == size - 1) {
@@ -131,9 +131,9 @@ public class g {
         float f12 = b10;
         if (!r(bVar, fVar) && e10 != -1) {
             int i11 = e10 - fVar.i();
-            float f13 = fVar.c().f14404b - (fVar.c().f14406d / 2.0f);
-            if (i11 <= 0 && fVar.h().f14408f > 0.0f) {
-                arrayList.add(v(fVar, f13 - fVar.h().f14408f, f12));
+            float f13 = fVar.c().f14798b - (fVar.c().f14800d / 2.0f);
+            if (i11 <= 0 && fVar.h().f14802f > 0.0f) {
+                arrayList.add(v(fVar, f13 - fVar.h().f14802f, f12));
                 return arrayList;
             }
             int i12 = 0;
@@ -141,10 +141,10 @@ public class g {
             while (i12 < i11) {
                 f fVar2 = (f) arrayList.get(arrayList.size() - 1);
                 int i13 = e10 - i12;
-                float f15 = f14 + ((f.c) fVar.g().get(i13)).f14408f;
+                float f15 = f14 + ((f.c) fVar.g().get(i13)).f14802f;
                 int i14 = i13 + 1;
                 if (i14 < fVar.g().size()) {
-                    i10 = d(fVar2, ((f.c) fVar.g().get(i14)).f14405c) + 1;
+                    i10 = d(fVar2, ((f.c) fVar.g().get(i14)).f14799c) + 1;
                 } else {
                     i10 = 0;
                 }
@@ -169,7 +169,7 @@ public class g {
         while (i10 < size) {
             float f12 = fArr[i10];
             if (f10 <= f12) {
-                return new float[]{zg.a.b(0.0f, 1.0f, f11, f12, f10), (float) (i10 - 1), i10};
+                return new float[]{ah.a.b(0.0f, 1.0f, f11, f12, f10), (float) (i10 - 1), i10};
             }
             i10++;
             f11 = f12;
@@ -190,9 +190,9 @@ public class g {
         float f12 = b10;
         if (!q(fVar) && c10 != -1) {
             int b11 = fVar.b() - c10;
-            float f13 = fVar.c().f14404b - (fVar.c().f14406d / 2.0f);
-            if (b11 <= 0 && fVar.a().f14408f > 0.0f) {
-                arrayList.add(v(fVar, f13 + fVar.a().f14408f, f12));
+            float f13 = fVar.c().f14798b - (fVar.c().f14800d / 2.0f);
+            if (b11 <= 0 && fVar.a().f14802f > 0.0f) {
+                arrayList.add(v(fVar, f13 + fVar.a().f14802f, f12));
                 return arrayList;
             }
             int i10 = 0;
@@ -201,10 +201,10 @@ public class g {
                 f fVar2 = (f) arrayList.get(arrayList.size() - 1);
                 int i11 = c10 + i10;
                 int size = fVar.g().size() - 1;
-                float f15 = f14 + ((f.c) fVar.g().get(i11)).f14408f;
+                float f15 = f14 + ((f.c) fVar.g().get(i11)).f14802f;
                 int i12 = i11 - 1;
                 if (i12 >= 0) {
-                    size = b(fVar2, ((f.c) fVar.g().get(i12)).f14405c) - 1;
+                    size = b(fVar2, ((f.c) fVar.g().get(i12)).f14799c) - 1;
                 }
                 int i13 = size;
                 f t10 = t(fVar2, c10, i13, f13 + f15, (fVar.b() - i10) - 1, (fVar.i() - i10) - 1, f12);
@@ -222,7 +222,7 @@ public class g {
     }
 
     private static boolean q(f fVar) {
-        if (fVar.a().f14404b - (fVar.a().f14406d / 2.0f) >= 0.0f && fVar.a() == fVar.d()) {
+        if (fVar.a().f14798b - (fVar.a().f14800d / 2.0f) >= 0.0f && fVar.a() == fVar.d()) {
             return true;
         }
         return false;
@@ -233,7 +233,7 @@ public class g {
         if (bVar.d()) {
             b10 = bVar.a();
         }
-        if (fVar.h().f14404b + (fVar.h().f14406d / 2.0f) <= b10 && fVar.h() == fVar.k()) {
+        if (fVar.h().f14798b + (fVar.h().f14800d / 2.0f) <= b10 && fVar.h() == fVar.k()) {
             return true;
         }
         return false;
@@ -251,15 +251,15 @@ public class g {
         f.b bVar = new f.b(fVar.f(), f11);
         for (int i14 = 0; i14 < arrayList.size(); i14++) {
             f.c cVar = (f.c) arrayList.get(i14);
-            float f12 = cVar.f14406d;
+            float f12 = cVar.f14800d;
             float f13 = f10 + (f12 / 2.0f);
             if (i14 >= i12 && i14 <= i13) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            bVar.e(f13, cVar.f14405c, f12, z10, cVar.f14407e, cVar.f14408f);
-            f10 += cVar.f14406d;
+            bVar.e(f13, cVar.f14799c, f12, z10, cVar.f14801e, cVar.f14802f);
+            f10 += cVar.f14800d;
         }
         return bVar.i();
     }
@@ -280,19 +280,19 @@ public class g {
         float f16 = f13;
         for (int i10 = 0; i10 < arrayList.size(); i10++) {
             f.c cVar = (f.c) arrayList.get(i10);
-            if (cVar.f14407e) {
-                bVar.e(cVar.f14404b, cVar.f14405c, cVar.f14406d, false, true, cVar.f14408f);
+            if (cVar.f14801e) {
+                bVar.e(cVar.f14798b, cVar.f14799c, cVar.f14800d, false, true, cVar.f14802f);
             } else {
                 if (i10 >= fVar.b() && i10 <= fVar.i()) {
                     z11 = true;
                 } else {
                     z11 = false;
                 }
-                float f17 = cVar.f14406d - l10;
+                float f17 = cVar.f14800d - l10;
                 float b10 = d.b(f17, fVar.f(), f12);
                 float f18 = (f17 / 2.0f) + f16;
-                float f19 = f18 - cVar.f14404b;
-                float f20 = cVar.f14408f;
+                float f19 = f18 - cVar.f14798b;
+                float f20 = cVar.f14802f;
                 if (z10) {
                     f14 = f19;
                 } else {
@@ -316,12 +316,12 @@ public class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f g() {
-        return this.f14411a;
+        return this.f14805a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f h() {
-        List list = this.f14413c;
+        List list = this.f14807c;
         return (f) list.get(list.size() - 1);
     }
 
@@ -330,7 +330,7 @@ public class g {
         int i13;
         int i14;
         int i15;
-        float f10 = this.f14411a.f();
+        float f10 = this.f14805a.f();
         HashMap hashMap = new HashMap();
         int i16 = 0;
         int i17 = 0;
@@ -348,9 +348,9 @@ public class g {
             if (!z10) {
                 i18 = 1;
             }
-            if (f11 * i18 > i12 - this.f14417g || i16 >= i10 - this.f14413c.size()) {
+            if (f11 * i18 > i12 - this.f14811g || i16 >= i10 - this.f14807c.size()) {
                 Integer valueOf = Integer.valueOf(i15);
-                List list = this.f14413c;
+                List list = this.f14807c;
                 hashMap.put(valueOf, (f) list.get(u1.a.b(i17, 0, list.size() - 1)));
                 i17++;
             }
@@ -369,9 +369,9 @@ public class g {
             } else {
                 i14 = 1;
             }
-            if (f12 * i14 < i11 + this.f14416f || i20 < this.f14412b.size()) {
+            if (f12 * i14 < i11 + this.f14810f || i20 < this.f14806b.size()) {
                 Integer valueOf2 = Integer.valueOf(i13);
-                List list2 = this.f14412b;
+                List list2 = this.f14806b;
                 hashMap.put(valueOf2, (f) list2.get(u1.a.b(i19, 0, list2.size() - 1)));
                 i19++;
             }
@@ -387,26 +387,26 @@ public class g {
         float b10;
         List list;
         float[] fArr;
-        float f13 = this.f14416f + f11;
-        float f14 = f12 - this.f14417g;
-        float f15 = l().a().f14409g;
-        float f16 = h().h().f14410h;
-        if (this.f14416f == f15) {
+        float f13 = this.f14810f + f11;
+        float f14 = f12 - this.f14811g;
+        float f15 = l().a().f14803g;
+        float f16 = h().h().f14804h;
+        if (this.f14810f == f15) {
             f13 += f15;
         }
-        if (this.f14417g == f16) {
+        if (this.f14811g == f16) {
             f14 -= f16;
         }
         if (f10 < f13) {
-            b10 = zg.a.b(1.0f, 0.0f, f11, f13, f10);
-            list = this.f14412b;
-            fArr = this.f14414d;
+            b10 = ah.a.b(1.0f, 0.0f, f11, f13, f10);
+            list = this.f14806b;
+            fArr = this.f14808d;
         } else if (f10 > f14) {
-            b10 = zg.a.b(0.0f, 1.0f, f14, f12, f10);
-            list = this.f14413c;
-            fArr = this.f14415e;
+            b10 = ah.a.b(0.0f, 1.0f, f14, f12, f10);
+            list = this.f14807c;
+            fArr = this.f14809e;
         } else {
-            return this.f14411a;
+            return this.f14805a;
         }
         if (z10) {
             return a(list, b10, fArr);
@@ -416,7 +416,7 @@ public class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f l() {
-        List list = this.f14412b;
+        List list = this.f14806b;
         return (f) list.get(list.size() - 1);
     }
 }

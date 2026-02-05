@@ -42,30 +42,30 @@ public final class AttributeStyles_ComplexTextBasedLetterSpacingStyleJsonAdapter
     @NotNull
     public AttributeStyles.ComplexTextBasedLetterSpacingStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.Measurement measurement = null;
         StyleElements.Measurement measurement2 = null;
         StyleElements.Measurement measurement3 = null;
         StyleElements.Measurement measurement4 = null;
         StyleElements.Measurement measurement5 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 measurement2 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 measurement3 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 measurement4 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 4) {
+            } else if (W == 4) {
                 measurement5 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.ComplexTextBasedLetterSpacingStyle(measurement, measurement2, measurement3, measurement4, measurement5);
     }
 
@@ -73,16 +73,16 @@ public final class AttributeStyles_ComplexTextBasedLetterSpacingStyleJsonAdapter
     public void toJson(@NotNull t writer, AttributeStyles.ComplexTextBasedLetterSpacingStyle complexTextBasedLetterSpacingStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complexTextBasedLetterSpacingStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLetterSpacingStyle.getBase());
-            writer.A0("value");
+            writer.W("value");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLetterSpacingStyle.getValue());
-            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLetterSpacingStyle.getPlaceholder());
-            writer.A0("label");
+            writer.W("label");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLetterSpacingStyle.getLabel());
-            writer.A0("error");
+            writer.W("error");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLetterSpacingStyle.getError());
             writer.E();
             return;

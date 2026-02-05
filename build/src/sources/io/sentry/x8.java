@@ -8,56 +8,56 @@ import java.util.Map;
 public final class x8 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.protocol.x f30891d;
+    private final io.sentry.protocol.x f29949d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f30892e;
+    private String f29950e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30893i;
+    private String f29951i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f30894o;
+    private String f29952o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f30895p;
+    private Map f29953p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public x8 a(e3 e3Var, ILogger iLogger) {
-            e3Var.r();
+            e3Var.s();
             io.sentry.protocol.x xVar = null;
             String str = null;
             String str2 = null;
             String str3 = null;
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
+                String m02 = e3Var.m0();
+                m02.getClass();
                 char c10 = 65535;
-                switch (l02.hashCode()) {
+                switch (m02.hashCode()) {
                     case -602415628:
-                        if (l02.equals("comments")) {
+                        if (m02.equals("comments")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case 3373707:
-                        if (l02.equals(StackTraceHelper.NAME_KEY)) {
+                        if (m02.equals(StackTraceHelper.NAME_KEY)) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 96619420:
-                        if (l02.equals("email")) {
+                        if (m02.equals("email")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case 278118624:
-                        if (l02.equals("event_id")) {
+                        if (m02.equals("event_id")) {
                             c10 = 3;
                             break;
                         }
@@ -80,11 +80,11 @@ public final class x8 implements w1 {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, l02);
+                        e3Var.v1(iLogger, hashMap, m02);
                         break;
                 }
             }
-            e3Var.y();
+            e3Var.z();
             if (xVar != null) {
                 x8 x8Var = new x8(xVar, str, str2, str3);
                 x8Var.a(hashMap);
@@ -97,40 +97,40 @@ public final class x8 implements w1 {
     }
 
     public x8(io.sentry.protocol.x xVar, String str, String str2, String str3) {
-        this.f30891d = xVar;
-        this.f30892e = str;
-        this.f30893i = str2;
-        this.f30894o = str3;
+        this.f29949d = xVar;
+        this.f29950e = str;
+        this.f29951i = str2;
+        this.f29952o = str3;
     }
 
     public void a(Map map) {
-        this.f30895p = map;
+        this.f29953p = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.r();
+        f3Var.s();
         f3Var.e("event_id");
-        this.f30891d.serialize(f3Var, iLogger);
-        if (this.f30892e != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f30892e);
+        this.f29949d.serialize(f3Var, iLogger);
+        if (this.f29950e != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29950e);
         }
-        if (this.f30893i != null) {
-            f3Var.e("email").f(this.f30893i);
+        if (this.f29951i != null) {
+            f3Var.e("email").f(this.f29951i);
         }
-        if (this.f30894o != null) {
-            f3Var.e("comments").f(this.f30894o);
+        if (this.f29952o != null) {
+            f3Var.e("comments").f(this.f29952o);
         }
-        Map map = this.f30895p;
+        Map map = this.f29953p;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30895p.get(str));
+                f3Var.e(str).j(iLogger, this.f29953p.get(str));
             }
         }
-        f3Var.y();
+        f3Var.z();
     }
 
     public String toString() {
-        return "UserFeedback{eventId=" + this.f30891d + ", name='" + this.f30892e + "', email='" + this.f30893i + "', comments='" + this.f30894o + "'}";
+        return "UserFeedback{eventId=" + this.f29949d + ", name='" + this.f29950e + "', email='" + this.f29951i + "', comments='" + this.f29952o + "'}";
     }
 }

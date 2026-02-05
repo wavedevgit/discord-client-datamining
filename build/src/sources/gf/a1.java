@@ -1,65 +1,59 @@
 package gf;
 
-import android.util.Log;
-import java.util.ArrayList;
+import android.content.ComponentName;
+import android.content.ServiceConnection;
+import android.os.Handler;
+import android.os.IBinder;
+import android.os.IInterface;
+import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class a1 {
+public final class a1 implements ServiceConnection {
 
-    /* renamed from: a  reason: collision with root package name */
-    private Object f26050a;
+    /* renamed from: d  reason: collision with root package name */
+    private final int f24749d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private boolean f26051b = false;
+    /* renamed from: e  reason: collision with root package name */
+    final /* synthetic */ c f24750e;
 
-    /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ c f26052c;
-
-    public a1(c cVar, Object obj) {
-        this.f26052c = cVar;
-        this.f26050a = obj;
+    public a1(c cVar, int i10) {
+        Objects.requireNonNull(cVar);
+        this.f24750e = cVar;
+        this.f24749d = i10;
     }
 
-    protected abstract void a(Object obj);
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public abstract void b();
-
-    public final void c() {
-        Object obj;
-        synchronized (this) {
+    @Override // android.content.ServiceConnection
+    public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
+        l s0Var;
+        c cVar = this.f24750e;
+        if (iBinder == null) {
+            cVar.W(16);
+            return;
+        }
+        synchronized (cVar.Y()) {
             try {
-                obj = this.f26050a;
-                if (this.f26051b) {
-                    String obj2 = toString();
-                    Log.w("GmsClient", "Callback proxy " + obj2 + " being reused. This is not safe.");
+                IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.internal.IGmsServiceBroker");
+                if (queryLocalInterface != null && (queryLocalInterface instanceof l)) {
+                    s0Var = (l) queryLocalInterface;
+                } else {
+                    s0Var = new s0(iBinder);
                 }
+                cVar.Z(s0Var);
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        if (obj != null) {
-            a(obj);
-        }
-        synchronized (this) {
-            this.f26051b = true;
-        }
-        e();
+        this.f24750e.S(0, null, this.f24749d);
     }
 
-    public final void d() {
-        synchronized (this) {
-            this.f26050a = null;
+    @Override // android.content.ServiceConnection
+    public final void onServiceDisconnected(ComponentName componentName) {
+        c cVar = this.f24750e;
+        synchronized (cVar.Y()) {
+            cVar.Z(null);
         }
-    }
-
-    public final void e() {
-        ArrayList arrayList;
-        ArrayList arrayList2;
-        d();
-        arrayList = this.f26052c.C;
-        synchronized (arrayList) {
-            arrayList2 = this.f26052c.C;
-            arrayList2.remove(this);
-        }
+        c cVar2 = this.f24750e;
+        int i10 = this.f24749d;
+        Handler handler = cVar2.f24766w;
+        handler.sendMessage(handler.obtainMessage(6, i10, 1));
     }
 }

@@ -1,82 +1,250 @@
 package pu;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
-import pu.f;
+import okio.Buffer;
+import okio.ByteString;
+import ou.c0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements nu.a, f {
+public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f46630a = new d();
+    private static final ByteString f46649a;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
-        a(Object obj) {
-            super(2, obj, d.class, "mapOrEmptyList", "mapOrEmptyList(Loperations/array/ArrayOperationInputData;LLogicEvaluator;)Ljava/util/List;", 0);
-        }
+    /* renamed from: b  reason: collision with root package name */
+    private static final ByteString f46650b;
 
-        @Override // kotlin.jvm.functions.Function2
-        /* renamed from: a */
-        public final List invoke(b p02, h p12) {
-            Intrinsics.checkNotNullParameter(p02, "p0");
-            Intrinsics.checkNotNullParameter(p12, "p1");
-            return ((d) this.receiver).h(p02, p12);
-        }
+    /* renamed from: c  reason: collision with root package name */
+    private static final ByteString f46651c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final ByteString f46652d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final ByteString f46653e;
+
+    static {
+        ByteString.a aVar = ByteString.f44060o;
+        f46649a = aVar.g("/");
+        f46650b = aVar.g("\\");
+        f46651c = aVar.g("/\\");
+        f46652d = aVar.g(".");
+        f46653e = aVar.g("..");
     }
 
-    private d() {
+    public static final c0 j(c0 c0Var, c0 child, boolean z10) {
+        Intrinsics.checkNotNullParameter(c0Var, "<this>");
+        Intrinsics.checkNotNullParameter(child, "child");
+        if (!child.isAbsolute() && child.q() == null) {
+            ByteString m10 = m(c0Var);
+            if (m10 == null && (m10 = m(child)) == null) {
+                m10 = s(c0.f44473i);
+            }
+            Buffer buffer = new Buffer();
+            buffer.a2(c0Var.d());
+            if (buffer.size() > 0) {
+                buffer.a2(m10);
+            }
+            buffer.a2(child.d());
+            return q(buffer, z10);
+        }
+        return child;
+    }
+
+    public static final c0 k(String str, boolean z10) {
+        Intrinsics.checkNotNullParameter(str, "<this>");
+        return q(new Buffer().o0(str), z10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final List h(b bVar, h hVar) {
-        List b10 = bVar.b();
-        if (b10 == null) {
-            b10 = CollectionsKt.l();
+    public static final int l(c0 c0Var) {
+        int y10 = ByteString.y(c0Var.d(), f46649a, 0, 2, null);
+        if (y10 != -1) {
+            return y10;
         }
-        List<Object> list = b10;
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-        for (Object obj : list) {
-            arrayList.add(f46630a.i(hVar, obj, bVar.a(), bVar.c()));
+        return ByteString.y(c0Var.d(), f46650b, 0, 2, null);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final ByteString m(c0 c0Var) {
+        ByteString d10 = c0Var.d();
+        ByteString byteString = f46649a;
+        if (ByteString.t(d10, byteString, 0, 2, null) != -1) {
+            return byteString;
         }
-        return arrayList;
-    }
-
-    private final Object i(h hVar, Object obj, Map map, Object obj2) {
-        Object a10;
-        if (map != null && (a10 = hVar.a(map, obj)) != null) {
-            return a10;
+        ByteString d11 = c0Var.d();
+        ByteString byteString2 = f46650b;
+        if (ByteString.t(d11, byteString2, 0, 2, null) == -1) {
+            return null;
         }
-        return obj2;
+        return byteString2;
     }
 
-    @Override // pu.a
-    public Object a(Map map, List list) {
-        return f.a.b(this, map, list);
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final boolean n(c0 c0Var) {
+        if (!c0Var.d().i(f46653e) || (c0Var.d().G() != 2 && !c0Var.d().A(c0Var.d().G() - 3, f46649a, 0, 1) && !c0Var.d().A(c0Var.d().G() - 3, f46650b, 0, 1))) {
+            return false;
+        }
+        return true;
     }
 
-    @Override // pu.f
-    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
-        return f.a.c(this, obj, obj2, hVar, function2);
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int o(c0 c0Var) {
+        if (c0Var.d().G() == 0) {
+            return -1;
+        }
+        if (c0Var.d().k(0) == 47) {
+            return 1;
+        }
+        if (c0Var.d().k(0) == 92) {
+            if (c0Var.d().G() <= 2 || c0Var.d().k(1) != 92) {
+                return 1;
+            }
+            int r10 = c0Var.d().r(f46650b, 2);
+            if (r10 == -1) {
+                return c0Var.d().G();
+            }
+            return r10;
+        }
+        if (c0Var.d().G() > 2 && c0Var.d().k(1) == 58 && c0Var.d().k(2) == 92) {
+            char k10 = (char) c0Var.d().k(0);
+            if ('a' > k10 || k10 >= '{') {
+                if ('A' <= k10 && k10 < '[') {
+                    return 3;
+                }
+            } else {
+                return 3;
+            }
+        }
+        return -1;
     }
 
-    @Override // pu.a
-    public b c(List list, Object obj, h hVar) {
-        return f.a.a(this, list, obj, hVar);
+    private static final boolean p(Buffer buffer, ByteString byteString) {
+        if (!Intrinsics.areEqual(byteString, f46650b) || buffer.size() < 2 || buffer.F0(1L) != 58) {
+            return false;
+        }
+        char F0 = (char) buffer.F0(0L);
+        if ('a' > F0 || F0 >= '{') {
+            if ('A' > F0 || F0 >= '[') {
+                return false;
+            }
+            return true;
+        }
+        return true;
     }
 
-    @Override // nu.a
-    public Object d(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        return b(obj, obj2, evaluator, new a(this));
+    public static final c0 q(Buffer buffer, boolean z10) {
+        ByteString byteString;
+        boolean z11;
+        boolean z12;
+        ByteString g12;
+        Intrinsics.checkNotNullParameter(buffer, "<this>");
+        Buffer buffer2 = new Buffer();
+        ByteString byteString2 = null;
+        int i10 = 0;
+        while (true) {
+            if (!buffer.q0(0L, f46649a)) {
+                byteString = f46650b;
+                if (!buffer.q0(0L, byteString)) {
+                    break;
+                }
+            }
+            byte readByte = buffer.readByte();
+            if (byteString2 == null) {
+                byteString2 = r(readByte);
+            }
+            i10++;
+        }
+        if (i10 >= 2 && Intrinsics.areEqual(byteString2, byteString)) {
+            z11 = true;
+        } else {
+            z11 = false;
+        }
+        if (z11) {
+            Intrinsics.checkNotNull(byteString2);
+            buffer2.a2(byteString2);
+            buffer2.a2(byteString2);
+        } else if (i10 > 0) {
+            Intrinsics.checkNotNull(byteString2);
+            buffer2.a2(byteString2);
+        } else {
+            long d02 = buffer.d0(f46651c);
+            if (byteString2 == null) {
+                if (d02 == -1) {
+                    byteString2 = s(c0.f44473i);
+                } else {
+                    byteString2 = r(buffer.F0(d02));
+                }
+            }
+            if (p(buffer, byteString2)) {
+                if (d02 == 2) {
+                    buffer2.u0(buffer, 3L);
+                } else {
+                    buffer2.u0(buffer, 2L);
+                }
+            }
+        }
+        if (buffer2.size() > 0) {
+            z12 = true;
+        } else {
+            z12 = false;
+        }
+        ArrayList arrayList = new ArrayList();
+        while (!buffer.o1()) {
+            long d03 = buffer.d0(f46651c);
+            if (d03 == -1) {
+                g12 = buffer.L1();
+            } else {
+                g12 = buffer.g1(d03);
+                buffer.readByte();
+            }
+            ByteString byteString3 = f46653e;
+            if (Intrinsics.areEqual(g12, byteString3)) {
+                if (!z12 || !arrayList.isEmpty()) {
+                    if (z10 && (z12 || (!arrayList.isEmpty() && !Intrinsics.areEqual(CollectionsKt.z0(arrayList), byteString3)))) {
+                        if (!z11 || arrayList.size() != 1) {
+                            CollectionsKt.M(arrayList);
+                        }
+                    } else {
+                        arrayList.add(g12);
+                    }
+                }
+            } else if (!Intrinsics.areEqual(g12, f46652d) && !Intrinsics.areEqual(g12, ByteString.f44061p)) {
+                arrayList.add(g12);
+            }
+        }
+        int size = arrayList.size();
+        for (int i11 = 0; i11 < size; i11++) {
+            if (i11 > 0) {
+                buffer2.a2(byteString2);
+            }
+            buffer2.a2((ByteString) arrayList.get(i11));
+        }
+        if (buffer2.size() == 0) {
+            buffer2.a2(f46652d);
+        }
+        return new c0(buffer2.L1());
     }
 
-    @Override // rv.a
-    public List e(List list, Object obj, h hVar) {
-        return f.a.d(this, list, obj, hVar);
+    private static final ByteString r(byte b10) {
+        if (b10 != 47) {
+            if (b10 == 92) {
+                return f46650b;
+            }
+            throw new IllegalArgumentException("not a directory separator: " + ((int) b10));
+        }
+        return f46649a;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final ByteString s(String str) {
+        if (Intrinsics.areEqual(str, "/")) {
+            return f46649a;
+        }
+        if (Intrinsics.areEqual(str, "\\")) {
+            return f46650b;
+        }
+        throw new IllegalArgumentException("not a directory separator: " + str);
     }
 }

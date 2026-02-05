@@ -18,7 +18,7 @@ public final class AFd1pSDK {
         Intrinsics.checkNotNullParameter(th2, "");
         String name = th2.getClass().getName();
         Intrinsics.checkNotNullExpressionValue(name, "");
-        return new AFc1cSDK(name + ": " + str, getRevenue(th2), lr.e.b(th2), 0, 8, null);
+        return new AFc1cSDK(name + ": " + str, getRevenue(th2), or.e.b(th2), 0, 8, null);
     }
 
     @NotNull

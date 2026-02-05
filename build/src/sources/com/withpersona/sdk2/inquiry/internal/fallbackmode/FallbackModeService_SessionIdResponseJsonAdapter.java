@@ -13,43 +13,43 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_SessionIdResponseJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18432a;
+    private final m.b f18838a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18433b;
+    private final com.squareup.moshi.h f18839b;
 
     public FallbackModeService_SessionIdResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("token");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18432a = a10;
+        this.f18838a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "token");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18433b = f10;
+        this.f18839b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public FallbackModeService.SessionIdResponse fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f18432a);
-            if (A0 != -1) {
-                if (A0 == 0 && (str = (String) this.f18433b.fromJson(reader)) == null) {
-                    throw vm.c.x("token", "token", reader);
+            int W = reader.W(this.f18838a);
+            if (W != -1) {
+                if (W == 0 && (str = (String) this.f18839b.fromJson(reader)) == null) {
+                    throw ym.c.x("token", "token", reader);
                 }
             } else {
                 reader.E0();
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         if (str != null) {
             return new FallbackModeService.SessionIdResponse(str);
         }
-        throw vm.c.o("token", "token", reader);
+        throw ym.c.o("token", "token", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -57,9 +57,9 @@ public final class FallbackModeService_SessionIdResponseJsonAdapter extends com.
     public void toJson(t writer, FallbackModeService.SessionIdResponse sessionIdResponse) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (sessionIdResponse != null) {
-            writer.l();
-            writer.A0("token");
-            this.f18433b.toJson(writer, sessionIdResponse.a());
+            writer.k();
+            writer.W("token");
+            this.f18839b.toJson(writer, sessionIdResponse.a());
             writer.E();
             return;
         }

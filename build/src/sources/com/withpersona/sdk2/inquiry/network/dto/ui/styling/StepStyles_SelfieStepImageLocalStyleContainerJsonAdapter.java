@@ -40,18 +40,18 @@ public final class StepStyles_SelfieStepImageLocalStyleContainerJsonAdapter exte
     @NotNull
     public StepStyles.SelfieStepImageLocalStyleContainer fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         LocalImageComponentStyle localImageComponentStyle = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 localImageComponentStyle = (LocalImageComponentStyle) this.nullableLocalImageComponentStyleAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.SelfieStepImageLocalStyleContainer(localImageComponentStyle);
     }
 
@@ -59,8 +59,8 @@ public final class StepStyles_SelfieStepImageLocalStyleContainerJsonAdapter exte
     public void toJson(@NotNull t writer, StepStyles.SelfieStepImageLocalStyleContainer selfieStepImageLocalStyleContainer) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfieStepImageLocalStyleContainer != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableLocalImageComponentStyleAdapter.toJson(writer, selfieStepImageLocalStyleContainer.getBase());
             writer.E();
             return;

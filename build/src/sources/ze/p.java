@@ -7,22 +7,22 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 public final class p {
 
     /* renamed from: d  reason: collision with root package name */
-    private static p f55932d;
+    private static p f55521d;
 
     /* renamed from: a  reason: collision with root package name */
-    final c f55933a;
+    final c f55522a;
 
     /* renamed from: b  reason: collision with root package name */
-    GoogleSignInAccount f55934b;
+    GoogleSignInAccount f55523b;
 
     /* renamed from: c  reason: collision with root package name */
-    GoogleSignInOptions f55935c;
+    GoogleSignInOptions f55524c;
 
     private p(Context context) {
         c b10 = c.b(context);
-        this.f55933a = b10;
-        this.f55934b = b10.c();
-        this.f55935c = b10.d();
+        this.f55522a = b10;
+        this.f55523b = b10.c();
+        this.f55524c = b10.d();
     }
 
     public static synchronized p a(Context context) {
@@ -35,25 +35,25 @@ public final class p {
 
     private static synchronized p d(Context context) {
         synchronized (p.class) {
-            p pVar = f55932d;
+            p pVar = f55521d;
             if (pVar != null) {
                 return pVar;
             }
             p pVar2 = new p(context);
-            f55932d = pVar2;
+            f55521d = pVar2;
             return pVar2;
         }
     }
 
     public final synchronized void b() {
-        this.f55933a.a();
-        this.f55934b = null;
-        this.f55935c = null;
+        this.f55522a.a();
+        this.f55523b = null;
+        this.f55524c = null;
     }
 
     public final synchronized void c(GoogleSignInOptions googleSignInOptions, GoogleSignInAccount googleSignInAccount) {
-        this.f55933a.f(googleSignInAccount, googleSignInOptions);
-        this.f55934b = googleSignInAccount;
-        this.f55935c = googleSignInOptions;
+        this.f55522a.f(googleSignInAccount, googleSignInOptions);
+        this.f55523b = googleSignInAccount;
+        this.f55524c = googleSignInOptions;
     }
 }

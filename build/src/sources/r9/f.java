@@ -14,68 +14,68 @@ import t9.l;
 public final class f implements r9.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o9.d f48608a;
+    private final o9.d f48618a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final p9.c f48609b;
+    private final p9.c f48619b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final k f48610c;
+    private final k f48620c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f48611d;
+    private final boolean f48621d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f48612e;
+    private final String f48622e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f48613f;
+    private final int f48623f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f48614g;
+    private final int f48624g;
 
     /* renamed from: h  reason: collision with root package name */
-    private j f48615h;
+    private j f48625h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f48616i;
+    private final int f48626i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f48617j;
+    private int f48627j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final a f48618k;
+    private final a f48628k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a implements i {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f48619a;
+        private final int f48629a;
 
         a() {
-            this.f48619a = f.this.f48616i;
+            this.f48629a = f.this.f48626i;
         }
 
         @Override // t9.i
         public int a() {
-            return f.this.f48617j;
+            return f.this.f48627j;
         }
 
         @Override // t9.i
         public void b(int i10) {
-            if (i10 != f.this.f48617j) {
+            if (i10 != f.this.f48627j) {
                 f fVar = f.this;
-                fVar.f48617j = kotlin.ranges.d.m(i10, 1, fVar.f48616i);
+                fVar.f48627j = kotlin.ranges.d.m(i10, 1, fVar.f48626i);
                 j m10 = f.this.m();
                 if (m10 != null) {
-                    m10.d(f.this.f48617j);
+                    m10.d(f.this.f48627j);
                 }
             }
         }
 
         @Override // t9.i
         public int c() {
-            return this.f48619a;
+            return this.f48629a;
         }
     }
 
@@ -83,25 +83,25 @@ public final class f implements r9.a {
         Intrinsics.checkNotNullParameter(animationInformation, "animationInformation");
         Intrinsics.checkNotNullParameter(bitmapFrameRenderer, "bitmapFrameRenderer");
         Intrinsics.checkNotNullParameter(frameLoaderFactory, "frameLoaderFactory");
-        this.f48608a = animationInformation;
-        this.f48609b = bitmapFrameRenderer;
-        this.f48610c = frameLoaderFactory;
-        this.f48611d = z10;
-        this.f48612e = str == null ? String.valueOf(hashCode()) : str;
-        this.f48613f = animationInformation.n();
-        this.f48614g = animationInformation.g();
+        this.f48618a = animationInformation;
+        this.f48619b = bitmapFrameRenderer;
+        this.f48620c = frameLoaderFactory;
+        this.f48621d = z10;
+        this.f48622e = str == null ? String.valueOf(hashCode()) : str;
+        this.f48623f = animationInformation.n();
+        this.f48624g = animationInformation.g();
         int l10 = l(animationInformation);
-        this.f48616i = l10;
-        this.f48617j = l10;
-        this.f48618k = new a();
+        this.f48626i = l10;
+        this.f48627j = l10;
+        this.f48628k = new a();
     }
 
     private final g k(int i10, int i11) {
-        if (!this.f48611d) {
-            return new g(this.f48613f, this.f48614g);
+        if (!this.f48621d) {
+            return new g(this.f48623f, this.f48624g);
         }
-        int i12 = this.f48613f;
-        int i13 = this.f48614g;
+        int i12 = this.f48623f;
+        int i13 = this.f48624g;
         if (i10 < i12 || i11 < i13) {
             double d10 = i12 / i13;
             if (i11 > i10) {
@@ -121,20 +121,20 @@ public final class f implements r9.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final j m() {
-        if (this.f48615h == null) {
-            this.f48615h = this.f48610c.b(this.f48612e, this.f48609b, this.f48608a);
+        if (this.f48625h == null) {
+            this.f48625h = this.f48620c.b(this.f48622e, this.f48619b, this.f48618a);
         }
-        return this.f48615h;
+        return this.f48625h;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit n() {
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @Override // r9.a
     public void a(int i10, int i11, Function0 function0) {
-        if (i10 > 0 && i11 > 0 && this.f48613f > 0 && this.f48614g > 0) {
+        if (i10 > 0 && i11 > 0 && this.f48623f > 0 && this.f48624g > 0) {
             g k10 = k(i10, i11);
             j m10 = m();
             if (m10 != null) {
@@ -175,7 +175,7 @@ public final class f implements r9.a {
             lVar = null;
         }
         if (lVar != null) {
-            t9.e.f49814a.h(this.f48618k, lVar);
+            t9.e.f50419a.h(this.f48628k, lVar);
         }
         if (lVar == null) {
             return null;
@@ -187,13 +187,13 @@ public final class f implements r9.a {
     public void d() {
         j m10 = m();
         if (m10 != null) {
-            k.f49843d.b(this.f48612e, m10);
+            k.f50448d.b(this.f48622e, m10);
         }
-        this.f48615h = null;
+        this.f48625h = null;
     }
 
     @Override // r9.a
     public void e(b bVar, p9.b bVar2, o9.a aVar, int i10, Function0 function0) {
-        a.C0595a.e(this, bVar, bVar2, aVar, i10, function0);
+        a.C0620a.e(this, bVar, bVar2, aVar, i10, function0);
     }
 }

@@ -5,13 +5,13 @@ import okhttp3.Call;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class b {
     public static final Object a(Call call, Continuation continuation) {
-        kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(rr.b.c(continuation), 1);
+        kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(ur.b.c(continuation), 1);
         eVar.H();
         m mVar = new m(call, eVar);
-        call.M0(mVar);
+        call.V(mVar);
         eVar.c(mVar);
         Object B = eVar.B();
-        if (B == rr.b.f()) {
+        if (B == ur.b.f()) {
             kotlin.coroutines.jvm.internal.g.c(continuation);
         }
         return B;

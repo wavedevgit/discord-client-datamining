@@ -41,24 +41,24 @@ public final class AttributeStyles_InputSelectTextFontFamilyStyleJsonAdapter ext
     @NotNull
     public AttributeStyles.InputSelectTextFontFamilyStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.FontName fontName = null;
         StyleElements.FontName fontName2 = null;
         StyleElements.FontName fontName3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 fontName = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 fontName2 = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 fontName3 = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.InputSelectTextFontFamilyStyle(fontName, fontName2, fontName3);
     }
 
@@ -66,12 +66,12 @@ public final class AttributeStyles_InputSelectTextFontFamilyStyleJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.InputSelectTextFontFamilyStyle inputSelectTextFontFamilyStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputSelectTextFontFamilyStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableFontNameAdapter.toJson(writer, inputSelectTextFontFamilyStyle.getBase());
-            writer.A0("label");
+            writer.W("label");
             this.nullableFontNameAdapter.toJson(writer, inputSelectTextFontFamilyStyle.getLabel());
-            writer.A0("error");
+            writer.W("error");
             this.nullableFontNameAdapter.toJson(writer, inputSelectTextFontFamilyStyle.getError());
             writer.E();
             return;

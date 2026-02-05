@@ -9,28 +9,28 @@ import org.webrtc.MediaStreamTrack;
 public abstract class c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ArrayList f40046a = new ArrayList();
+    private static final ArrayList f39506a = new ArrayList();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f40047b = Pattern.compile("^mp4a\\.([a-zA-Z0-9]{2})(?:\\.([0-9]{1,2}))?$");
+    private static final Pattern f39507b = Pattern.compile("^mp4a\\.([a-zA-Z0-9]{2})(?:\\.([0-9]{1,2}))?$");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f40048a;
+        public final int f39508a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f40049b;
+        public final int f39509b;
 
         public a(int i10, int i11) {
-            this.f40048a = i10;
-            this.f40049b = i11;
+            this.f39508a = i10;
+            this.f39509b = i11;
         }
 
         public int a() {
-            int i10 = this.f40049b;
+            int i10 = this.f39509b;
             if (i10 != 2) {
                 if (i10 != 5) {
                     if (i10 != 29) {
@@ -190,7 +190,7 @@ public abstract class c0 {
     }
 
     private static String e(String str) {
-        ArrayList arrayList = f40046a;
+        ArrayList arrayList = f39506a;
         if (arrayList.size() <= 0) {
             return null;
         }
@@ -315,7 +315,7 @@ public abstract class c0 {
         if (str == null) {
             return null;
         }
-        String e10 = ii.b.e(str.trim());
+        String e10 = li.b.e(str.trim());
         if (!e10.startsWith("avc1") && !e10.startsWith("avc3")) {
             if (!e10.startsWith("hev1") && !e10.startsWith("hvc1")) {
                 if (!e10.startsWith("dvav") && !e10.startsWith("dva1") && !e10.startsWith("dvhe") && !e10.startsWith("dvh1")) {
@@ -326,7 +326,7 @@ public abstract class c0 {
                         if (!e10.startsWith("vp8") && !e10.startsWith("vp08")) {
                             if (e10.startsWith("mp4a")) {
                                 if (e10.startsWith("mp4a.") && (i10 = i(e10)) != null) {
-                                    str2 = h(i10.f40048a);
+                                    str2 = h(i10.f39508a);
                                 }
                                 if (str2 == null) {
                                     return "audio/mp4a-latm";
@@ -459,7 +459,7 @@ public abstract class c0 {
 
     static a i(String str) {
         int i10;
-        Matcher matcher = f40047b.matcher(str);
+        Matcher matcher = f39507b.matcher(str);
         if (!matcher.matches()) {
             return null;
         }
@@ -512,7 +512,7 @@ public abstract class c0 {
     }
 
     private static int l(String str) {
-        ArrayList arrayList = f40046a;
+        ArrayList arrayList = f39506a;
         if (arrayList.size() <= 0) {
             return -1;
         }

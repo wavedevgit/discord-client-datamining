@@ -1,29 +1,31 @@
 package yo;
 
-import kotlin.jvm.internal.Intrinsics;
+import ov.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e {
+public final class e implements zq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f55151a;
+    private final com.withpersona.sdk2.inquiry.internal.network.f f54885a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f55152b;
+    private final zq.h f54886b;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface a {
-        e a(String str);
+    public e(com.withpersona.sdk2.inquiry.internal.network.f fVar, zq.h hVar) {
+        this.f54885a = fVar;
+        this.f54886b = hVar;
     }
 
-    public e(b logger, String subsystem) {
-        Intrinsics.checkNotNullParameter(logger, "logger");
-        Intrinsics.checkNotNullParameter(subsystem, "subsystem");
-        this.f55151a = logger;
-        this.f55152b = subsystem;
+    public static e a(com.withpersona.sdk2.inquiry.internal.network.f fVar, zq.h hVar) {
+        return new e(fVar, hVar);
     }
 
-    public final void a(String message) {
-        Intrinsics.checkNotNullParameter(message, "message");
-        this.f55151a.f(this.f55152b, yo.a.f55123i, message);
+    public static eo.b b(com.withpersona.sdk2.inquiry.internal.network.f fVar, a0 a0Var) {
+        return (eo.b) zq.g.d(fVar.a(a0Var));
+    }
+
+    @Override // javax.inject.Provider
+    /* renamed from: c */
+    public eo.b get() {
+        return b(this.f54885a, (a0) this.f54886b.get());
     }
 }

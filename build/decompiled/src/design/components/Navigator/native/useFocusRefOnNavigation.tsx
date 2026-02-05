@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Navigator/native/useFocusRefOnNavigation.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun100393: for (var _fun100393_ip = 0;;) switch (_fun100393_ip) {
+        _fun100410: for (var _fun100410_ip = 0;;) switch (_fun100410_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.inputRef;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.enabled;
                 var0 = undefined;
                 if (!(var7 === var0)) {
-                    _fun100393_ip = 28;
-                    continue _fun100393
+                    _fun100410_ip = 28;
+                    continue _fun100410
                 }
             case 26:
                 var7 = true;
@@ -66,27 +66,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3.bind(var1)(var2);
                     var2 = var3.runAfterInteractions;
                     var1 = function() { // Environment: var0
-                        _fun100395: for (var _fun100395_ip = 0;;) switch (_fun100395_ip) {
+                        _fun100412: for (var _fun100412_ip = 0;;) switch (_fun100412_ip) {
                             case 0:
                                 var1 = _closure2_slot1;
                                 if (!var1) {
-                                    _fun100395_ip = 14;
-                                    continue _fun100395
+                                    _fun100412_ip = 14;
+                                    continue _fun100412
                                 }
                             case 10:
                                 var1 = _closure2_slot2;
                             case 14:
                                 if (!var1) {
-                                    _fun100395_ip = 42;
-                                    continue _fun100395
+                                    _fun100412_ip = 42;
+                                    continue _fun100412
                                 }
                             case 17:
                                 var0 = _closure2_slot0;
                                 var1 = var0.current;
                                 var0 = null;
                                 if (!(var0 != var1)) {
-                                    _fun100395_ip = 42;
-                                    continue _fun100395
+                                    _fun100412_ip = 42;
+                                    continue _fun100412
                                 }
                             case 32:
                                 var0 = var1.focus;
@@ -113,4 +113,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1470, 5851, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1470, 5855, 2]);

@@ -9,45 +9,45 @@ import ne.y;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f13030a;
+    public final int f13415a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final String f13031b;
+    public final String f13416b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final TreeSet f13032c;
+    private final TreeSet f13417c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ArrayList f13033d;
+    private final ArrayList f13418d;
 
     /* renamed from: e  reason: collision with root package name */
-    private me.f f13034e;
+    private me.f f13419e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long f13035a;
+        public final long f13420a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f13036b;
+        public final long f13421b;
 
         public a(long j10, long j11) {
-            this.f13035a = j10;
-            this.f13036b = j11;
+            this.f13420a = j10;
+            this.f13421b = j11;
         }
 
         public boolean a(long j10, long j11) {
-            long j12 = this.f13036b;
+            long j12 = this.f13421b;
             if (j12 == -1) {
-                if (j10 >= this.f13035a) {
+                if (j10 >= this.f13420a) {
                     return true;
                 }
                 return false;
             } else if (j11 == -1) {
                 return false;
             } else {
-                long j13 = this.f13035a;
+                long j13 = this.f13420a;
                 if (j13 <= j10 && j10 + j11 <= j13 + j12) {
                     return true;
                 }
@@ -56,9 +56,9 @@ public final class g {
         }
 
         public boolean b(long j10, long j11) {
-            long j12 = this.f13035a;
+            long j12 = this.f13420a;
             if (j12 <= j10) {
-                long j13 = this.f13036b;
+                long j13 = this.f13421b;
                 if (j13 == -1 || j12 + j13 > j10) {
                     return true;
                 }
@@ -72,44 +72,44 @@ public final class g {
     }
 
     public g(int i10, String str) {
-        this(i10, str, me.f.f37830c);
+        this(i10, str, me.f.f37492c);
     }
 
     public void a(j jVar) {
-        this.f13032c.add(jVar);
+        this.f13417c.add(jVar);
     }
 
     public boolean b(me.e eVar) {
-        me.f fVar = this.f13034e;
+        me.f fVar = this.f13419e;
         me.f g10 = fVar.g(eVar);
-        this.f13034e = g10;
+        this.f13419e = g10;
         return !g10.equals(fVar);
     }
 
     public me.f c() {
-        return this.f13034e;
+        return this.f13419e;
     }
 
     public j d(long j10, long j11) {
-        j j12 = j.j(this.f13031b, j10);
-        j jVar = (j) this.f13032c.floor(j12);
-        if (jVar != null && jVar.f37823e + jVar.f37824i > j10) {
+        j k10 = j.k(this.f13416b, j10);
+        j jVar = (j) this.f13417c.floor(k10);
+        if (jVar != null && jVar.f37485e + jVar.f37486i > j10) {
             return jVar;
         }
-        j jVar2 = (j) this.f13032c.ceiling(j12);
+        j jVar2 = (j) this.f13417c.ceiling(k10);
         if (jVar2 != null) {
-            long j13 = jVar2.f37823e - j10;
+            long j12 = jVar2.f37485e - j10;
             if (j11 == -1) {
-                j11 = j13;
+                j11 = j12;
             } else {
-                j11 = Math.min(j13, j11);
+                j11 = Math.min(j12, j11);
             }
         }
-        return j.i(this.f13031b, j10, j11);
+        return j.i(this.f13416b, j10, j11);
     }
 
     public TreeSet e() {
-        return this.f13032c;
+        return this.f13417c;
     }
 
     public boolean equals(Object obj) {
@@ -118,7 +118,7 @@ public final class g {
         }
         if (obj != null && g.class == obj.getClass()) {
             g gVar = (g) obj;
-            if (this.f13030a == gVar.f13030a && this.f13031b.equals(gVar.f13031b) && this.f13032c.equals(gVar.f13032c) && this.f13034e.equals(gVar.f13034e)) {
+            if (this.f13415a == gVar.f13415a && this.f13416b.equals(gVar.f13416b) && this.f13417c.equals(gVar.f13417c) && this.f13419e.equals(gVar.f13419e)) {
                 return true;
             }
         }
@@ -126,12 +126,12 @@ public final class g {
     }
 
     public boolean f() {
-        return this.f13032c.isEmpty();
+        return this.f13417c.isEmpty();
     }
 
     public boolean g(long j10, long j11) {
-        for (int i10 = 0; i10 < this.f13033d.size(); i10++) {
-            if (((a) this.f13033d.get(i10)).a(j10, j11)) {
+        for (int i10 = 0; i10 < this.f13418d.size(); i10++) {
+            if (((a) this.f13418d.get(i10)).a(j10, j11)) {
                 return true;
             }
         }
@@ -139,26 +139,26 @@ public final class g {
     }
 
     public boolean h() {
-        return this.f13033d.isEmpty();
+        return this.f13418d.isEmpty();
     }
 
     public int hashCode() {
-        return (((this.f13030a * 31) + this.f13031b.hashCode()) * 31) + this.f13034e.hashCode();
+        return (((this.f13415a * 31) + this.f13416b.hashCode()) * 31) + this.f13419e.hashCode();
     }
 
     public boolean i(long j10, long j11) {
-        for (int i10 = 0; i10 < this.f13033d.size(); i10++) {
-            if (((a) this.f13033d.get(i10)).b(j10, j11)) {
+        for (int i10 = 0; i10 < this.f13418d.size(); i10++) {
+            if (((a) this.f13418d.get(i10)).b(j10, j11)) {
                 return false;
             }
         }
-        this.f13033d.add(new a(j10, j11));
+        this.f13418d.add(new a(j10, j11));
         return true;
     }
 
     public boolean j(me.c cVar) {
-        if (this.f13032c.remove(cVar)) {
-            File file = cVar.f37826p;
+        if (this.f13417c.remove(cVar)) {
+            File file = cVar.f37488p;
             if (file != null) {
                 file.delete();
                 return true;
@@ -170,28 +170,28 @@ public final class g {
 
     public j k(j jVar, long j10, boolean z10) {
         long j11;
-        ne.a.g(this.f13032c.remove(jVar));
-        File file = (File) ne.a.e(jVar.f37826p);
+        ne.a.g(this.f13417c.remove(jVar));
+        File file = (File) ne.a.e(jVar.f37488p);
         if (z10) {
             j11 = j10;
-            File k10 = j.k((File) ne.a.e(file.getParentFile()), this.f13030a, jVar.f37823e, j11);
-            if (file.renameTo(k10)) {
-                file = k10;
+            File l10 = j.l((File) ne.a.e(file.getParentFile()), this.f13415a, jVar.f37485e, j11);
+            if (file.renameTo(l10)) {
+                file = l10;
             } else {
-                y.i("CachedContent", "Failed to rename " + file + " to " + k10);
+                y.i("CachedContent", "Failed to rename " + file + " to " + l10);
             }
         } else {
             j11 = j10;
         }
         j f10 = jVar.f(file, j11);
-        this.f13032c.add(f10);
+        this.f13417c.add(f10);
         return f10;
     }
 
     public void l(long j10) {
-        for (int i10 = 0; i10 < this.f13033d.size(); i10++) {
-            if (((a) this.f13033d.get(i10)).f13035a == j10) {
-                this.f13033d.remove(i10);
+        for (int i10 = 0; i10 < this.f13418d.size(); i10++) {
+            if (((a) this.f13418d.get(i10)).f13420a == j10) {
+                this.f13418d.remove(i10);
                 return;
             }
         }
@@ -199,10 +199,10 @@ public final class g {
     }
 
     public g(int i10, String str, me.f fVar) {
-        this.f13030a = i10;
-        this.f13031b = str;
-        this.f13034e = fVar;
-        this.f13032c = new TreeSet();
-        this.f13033d = new ArrayList();
+        this.f13415a = i10;
+        this.f13416b = str;
+        this.f13419e = fVar;
+        this.f13417c = new TreeSet();
+        this.f13418d = new ArrayList();
     }
 }

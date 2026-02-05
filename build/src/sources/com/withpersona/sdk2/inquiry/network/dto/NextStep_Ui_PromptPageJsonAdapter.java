@@ -40,7 +40,7 @@ public final class NextStep_Ui_PromptPageJsonAdapter extends h {
     @NotNull
     public NextStep.Ui.PromptPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -49,7 +49,7 @@ public final class NextStep_Ui_PromptPageJsonAdapter extends h {
         String str6 = null;
         String str7 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -77,7 +77,7 @@ public final class NextStep_Ui_PromptPageJsonAdapter extends h {
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new NextStep.Ui.PromptPage(str, str2, str3, str4, str5, str6, str7);
     }
 
@@ -85,20 +85,20 @@ public final class NextStep_Ui_PromptPageJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Ui.PromptPage promptPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
-            writer.l();
-            writer.A0("gpsPermissionsBtnCancel");
+            writer.k();
+            writer.W("gpsPermissionsBtnCancel");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsPermissionsBtnCancel());
-            writer.A0("gpsPermissionsBtnContinueMobile");
+            writer.W("gpsPermissionsBtnContinueMobile");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsPermissionsAllowButtonText());
-            writer.A0("gpsDeviceFeatureBtnContinueMobile");
+            writer.W("gpsDeviceFeatureBtnContinueMobile");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsFeatureTurnOnText());
-            writer.A0("gpsPermissionsPrompt");
+            writer.W("gpsPermissionsPrompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsPermissionsPrompt());
-            writer.A0("gpsPermissionsTitle");
+            writer.W("gpsPermissionsTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsPermissionsTitle());
-            writer.A0("gpsFeaturePrompt");
+            writer.W("gpsFeaturePrompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsFeaturePrompt());
-            writer.A0("gpsFeatureTitle");
+            writer.W("gpsFeatureTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsFeatureTitle());
             writer.E();
             return;

@@ -21,10 +21,10 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class d extends AbstractExecutorService implements ScheduledExecutorService, AutoCloseable {
 
     /* renamed from: e  reason: collision with root package name */
-    private static ThreadLocal f6889e = new a();
+    private static ThreadLocal f7307e = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Handler f6890d;
+    private final Handler f7308d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends ThreadLocal {
@@ -48,16 +48,16 @@ public final class d extends AbstractExecutorService implements ScheduledExecuto
     class b implements Callable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Runnable f6891d;
+        final /* synthetic */ Runnable f7309d;
 
         b(Runnable runnable) {
-            this.f6891d = runnable;
+            this.f7309d = runnable;
         }
 
         @Override // java.util.concurrent.Callable
         /* renamed from: a */
         public Void call() {
-            this.f6891d.run();
+            this.f7309d.run();
             return null;
         }
     }
@@ -67,63 +67,63 @@ public final class d extends AbstractExecutorService implements ScheduledExecuto
     public static class c implements RunnableScheduledFuture {
 
         /* renamed from: d  reason: collision with root package name */
-        final AtomicReference f6893d = new AtomicReference(null);
+        final AtomicReference f7311d = new AtomicReference(null);
 
         /* renamed from: e  reason: collision with root package name */
-        private final long f6894e;
+        private final long f7312e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Callable f6895i;
+        private final Callable f7313i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final ListenableFuture f6896o;
+        private final ListenableFuture f7314o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        class a implements c.InterfaceC0028c {
+        class a implements c.InterfaceC0029c {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ Handler f6897a;
+            final /* synthetic */ Handler f7315a;
 
             /* renamed from: b  reason: collision with root package name */
-            final /* synthetic */ Callable f6898b;
+            final /* synthetic */ Callable f7316b;
 
             /* renamed from: c0.d$c$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-            class RunnableC0115a implements Runnable {
-                RunnableC0115a() {
+            class RunnableC0134a implements Runnable {
+                RunnableC0134a() {
                 }
 
                 @Override // java.lang.Runnable
                 public void run() {
-                    if (c.this.f6893d.getAndSet(null) != null) {
+                    if (c.this.f7311d.getAndSet(null) != null) {
                         a aVar = a.this;
-                        aVar.f6897a.removeCallbacks(c.this);
+                        aVar.f7315a.removeCallbacks(c.this);
                     }
                 }
             }
 
             a(Handler handler, Callable callable) {
-                this.f6897a = handler;
-                this.f6898b = callable;
+                this.f7315a = handler;
+                this.f7316b = callable;
             }
 
-            @Override // androidx.concurrent.futures.c.InterfaceC0028c
+            @Override // androidx.concurrent.futures.c.InterfaceC0029c
             public Object a(c.a aVar) {
-                aVar.a(new RunnableC0115a(), c0.a.a());
-                c.this.f6893d.set(aVar);
-                return "HandlerScheduledFuture-" + this.f6898b.toString();
+                aVar.a(new RunnableC0134a(), c0.a.a());
+                c.this.f7311d.set(aVar);
+                return "HandlerScheduledFuture-" + this.f7316b.toString();
             }
         }
 
         c(Handler handler, long j10, Callable callable) {
-            this.f6894e = j10;
-            this.f6895i = callable;
-            this.f6896o = androidx.concurrent.futures.c.a(new a(handler, callable));
+            this.f7312e = j10;
+            this.f7313i = callable;
+            this.f7314o = androidx.concurrent.futures.c.a(new a(handler, callable));
         }
 
         @Override // java.util.concurrent.Future
         public boolean cancel(boolean z10) {
-            return this.f6896o.cancel(z10);
+            return this.f7314o.cancel(z10);
         }
 
         @Override // java.lang.Comparable
@@ -135,22 +135,22 @@ public final class d extends AbstractExecutorService implements ScheduledExecuto
 
         @Override // java.util.concurrent.Future
         public Object get() {
-            return this.f6896o.get();
+            return this.f7314o.get();
         }
 
         @Override // java.util.concurrent.Delayed
         public long getDelay(TimeUnit timeUnit) {
-            return timeUnit.convert(this.f6894e - System.currentTimeMillis(), TimeUnit.MILLISECONDS);
+            return timeUnit.convert(this.f7312e - System.currentTimeMillis(), TimeUnit.MILLISECONDS);
         }
 
         @Override // java.util.concurrent.Future
         public boolean isCancelled() {
-            return this.f6896o.isCancelled();
+            return this.f7314o.isCancelled();
         }
 
         @Override // java.util.concurrent.Future
         public boolean isDone() {
-            return this.f6896o.isDone();
+            return this.f7314o.isDone();
         }
 
         @Override // java.util.concurrent.RunnableScheduledFuture
@@ -160,10 +160,10 @@ public final class d extends AbstractExecutorService implements ScheduledExecuto
 
         @Override // java.util.concurrent.RunnableFuture, java.lang.Runnable
         public void run() {
-            c.a aVar = (c.a) this.f6893d.getAndSet(null);
+            c.a aVar = (c.a) this.f7311d.getAndSet(null);
             if (aVar != null) {
                 try {
-                    aVar.c(this.f6895i.call());
+                    aVar.c(this.f7313i.call());
                 } catch (Exception e10) {
                     aVar.f(e10);
                 }
@@ -172,17 +172,17 @@ public final class d extends AbstractExecutorService implements ScheduledExecuto
 
         @Override // java.util.concurrent.Future
         public Object get(long j10, TimeUnit timeUnit) {
-            return this.f6896o.get(j10, timeUnit);
+            return this.f7314o.get(j10, timeUnit);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(Handler handler) {
-        this.f6890d = handler;
+        this.f7308d = handler;
     }
 
     private RejectedExecutionException a() {
-        return new RejectedExecutionException(this.f6890d + " is shutting down");
+        return new RejectedExecutionException(this.f7308d + " is shutting down");
     }
 
     @Override // java.util.concurrent.ExecutorService
@@ -197,7 +197,7 @@ public final class d extends AbstractExecutorService implements ScheduledExecuto
 
     @Override // java.util.concurrent.Executor
     public void execute(Runnable runnable) {
-        if (this.f6890d.post(runnable)) {
+        if (this.f7308d.post(runnable)) {
             return;
         }
         throw a();
@@ -241,7 +241,7 @@ public final class d extends AbstractExecutorService implements ScheduledExecuto
     @Override // java.util.concurrent.ScheduledExecutorService
     public ScheduledFuture schedule(Callable callable, long j10, TimeUnit timeUnit) {
         long uptimeMillis = SystemClock.uptimeMillis() + TimeUnit.MILLISECONDS.convert(j10, timeUnit);
-        c cVar = new c(this.f6890d, uptimeMillis, callable);
-        return this.f6890d.postAtTime(cVar, uptimeMillis) ? cVar : n.o(a());
+        c cVar = new c(this.f7308d, uptimeMillis, callable);
+        return this.f7308d.postAtTime(cVar, uptimeMillis) ? cVar : n.o(a());
     }
 }

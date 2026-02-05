@@ -8,7 +8,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f7026a = new h();
+    public static final h f7444a = new h();
 
     private h() {
     }

@@ -8,13 +8,13 @@ import com.google.firebase.components.ComponentRegistrar;
 import com.google.firebase.datatransport.TransportRegistrar;
 import java.util.Arrays;
 import java.util.List;
-import jj.h;
-import qi.c;
-import qi.d;
-import qi.d0;
-import qi.g;
-import qi.q;
-import si.b;
+import mj.h;
+import ti.c;
+import ti.d;
+import ti.d0;
+import ti.g;
+import ti.q;
+import vi.b;
 import xb.i;
 import zb.t;
 @Keep
@@ -24,35 +24,35 @@ public class TransportRegistrar implements ComponentRegistrar {
 
     public static /* synthetic */ i a(d dVar) {
         t.f((Context) dVar.a(Context.class));
-        return t.c().g(a.f11234g);
+        return t.c().g(a.f11619g);
     }
 
     public static /* synthetic */ i b(d dVar) {
         t.f((Context) dVar.a(Context.class));
-        return t.c().g(a.f11235h);
+        return t.c().g(a.f11620h);
     }
 
     public static /* synthetic */ i c(d dVar) {
         t.f((Context) dVar.a(Context.class));
-        return t.c().g(a.f11235h);
+        return t.c().g(a.f11620h);
     }
 
     @Override // com.google.firebase.components.ComponentRegistrar
     @NonNull
     public List<c> getComponents() {
-        return Arrays.asList(c.c(i.class).g(LIBRARY_NAME).b(q.j(Context.class)).e(new g() { // from class: si.c
-            @Override // qi.g
-            public final Object a(qi.d dVar) {
+        return Arrays.asList(c.c(i.class).g(LIBRARY_NAME).b(q.j(Context.class)).e(new g() { // from class: vi.c
+            @Override // ti.g
+            public final Object a(ti.d dVar) {
                 return TransportRegistrar.c(dVar);
             }
-        }).d(), c.e(d0.a(si.a.class, i.class)).b(q.j(Context.class)).e(new g() { // from class: si.d
-            @Override // qi.g
-            public final Object a(qi.d dVar) {
+        }).d(), c.e(d0.a(vi.a.class, i.class)).b(q.j(Context.class)).e(new g() { // from class: vi.d
+            @Override // ti.g
+            public final Object a(ti.d dVar) {
                 return TransportRegistrar.b(dVar);
             }
-        }).d(), c.e(d0.a(b.class, i.class)).b(q.j(Context.class)).e(new g() { // from class: si.e
-            @Override // qi.g
-            public final Object a(qi.d dVar) {
+        }).d(), c.e(d0.a(b.class, i.class)).b(q.j(Context.class)).e(new g() { // from class: vi.e
+            @Override // ti.g
+            public final Object a(ti.d dVar) {
                 return TransportRegistrar.a(dVar);
             }
         }).d(), h.b(LIBRARY_NAME, "18.2.0"));

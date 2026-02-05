@@ -1,42 +1,48 @@
 package uo;
 
-import android.content.Context;
-import kotlinx.coroutines.CoroutineDispatcher;
-import wq.h;
-import yo.e;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import androidx.viewbinding.ViewBinding;
+import so.g2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements wq.d {
+public final class c implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f50810a;
+    private final FrameLayout f51647a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f50811b;
+    public final FrameLayout f51648b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final h f50812c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final h f50813d;
-
-    public c(h hVar, h hVar2, h hVar3, h hVar4) {
-        this.f50810a = hVar;
-        this.f50811b = hVar2;
-        this.f50812c = hVar3;
-        this.f50813d = hVar4;
+    private c(FrameLayout frameLayout, FrameLayout frameLayout2) {
+        this.f51647a = frameLayout;
+        this.f51648b = frameLayout2;
     }
 
-    public static c a(h hVar, h hVar2, h hVar3, h hVar4) {
-        return new c(hVar, hVar2, hVar3, hVar4);
+    public static c a(View view) {
+        if (view != null) {
+            FrameLayout frameLayout = (FrameLayout) view;
+            return new c(frameLayout, frameLayout);
+        }
+        throw new NullPointerException("rootView");
     }
 
-    public static a c(Context context, e.a aVar, f fVar, CoroutineDispatcher coroutineDispatcher) {
-        return new a(context, aVar, fVar, coroutineDispatcher);
+    public static c c(LayoutInflater layoutInflater) {
+        return d(layoutInflater, null, false);
     }
 
-    @Override // javax.inject.Provider
+    public static c d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(g2.f50103c, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return a(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
-    public a get() {
-        return c((Context) this.f50810a.get(), (e.a) this.f50811b.get(), (f) this.f50812c.get(), (CoroutineDispatcher) this.f50813d.get());
+    public FrameLayout getRoot() {
+        return this.f51647a;
     }
 }

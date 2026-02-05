@@ -9,7 +9,7 @@ import androidx.core.content.FileProvider;
 import com.discord.chatreplay.ReplayProviderActivity;
 import com.discord.misc.utilities.activity.ActivityUtilities;
 import com.discord.misc.utilities.threading.ThreadUtilsKt;
-import dt.f;
+import gt.f;
 import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -52,10 +52,10 @@ public final class ReplayProviderActivity extends Activity {
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit requestReplayList$lambda$0(Activity activity, Unit unit, Throwable th2) {
             if (th2 == null) {
-                return Unit.f32464a;
+                return Unit.f31988a;
             }
             Toast.makeText(activity, "Unable to fetch replay list, activity not available.", 1).show();
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
 
         @NotNull
@@ -71,7 +71,7 @@ public final class ReplayProviderActivity extends Activity {
             Intrinsics.checkNotNullParameter(intent, "intent");
             String stringExtra = intent.getStringExtra(ReplayProviderActivity.INTENT_EXTRA_REPLAYS_LIST);
             Intrinsics.checkNotNull(stringExtra);
-            Json.a aVar = Json.f35576d;
+            Json.a aVar = Json.f35100d;
             aVar.a();
             return (List) aVar.b(new f(Replay.Companion.serializer()), stringExtra);
         }
@@ -153,7 +153,7 @@ public final class ReplayProviderActivity extends Activity {
         if (Intrinsics.areEqual(getIntent().getAction(), "com.discord.GET_REPLAY_LIST")) {
             List<Replay> replaysList = getReplaysList();
             Intent intent = new Intent();
-            Json.a aVar = Json.f35576d;
+            Json.a aVar = Json.f35100d;
             aVar.a();
             intent.putExtra(INTENT_EXTRA_REPLAYS_LIST, aVar.c(new f(Replay.Companion.serializer()), replaysList));
             setResult(-1, intent);
@@ -170,7 +170,7 @@ public final class ReplayProviderActivity extends Activity {
             Uri grantAccessToFile = grantAccessToFile(queryParameter2, getReplayFile(queryParameter));
             Intent intent2 = new Intent();
             intent2.putExtra(INTENT_EXTRA_GRANTED_URI, grantAccessToFile);
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
             setResult(-1, intent2);
             finish();
         }

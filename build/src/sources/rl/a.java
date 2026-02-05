@@ -1,53 +1,127 @@
 package rl;
 
+import android.content.Context;
+import android.media.MediaExtractor;
+import android.media.MediaFormat;
+import android.media.MediaMetadataRetriever;
+import android.net.Uri;
+import androidx.annotation.NonNull;
+import com.linkedin.android.litr.io.MediaRange;
+import java.io.IOException;
 import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.util.concurrent.LinkedBlockingQueue;
-import kotlin.jvm.internal.Intrinsics;
+import java.util.Map;
+import kotlin.jvm.internal.LongCompanionObject;
+import ml.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public class a implements e {
+    private final long duration;
+    private final MediaExtractor mediaExtractor;
+    private final MediaRange mediaRange;
+    private int orientationHint;
+    private long size;
 
-    /* renamed from: a  reason: collision with root package name */
-    private final boolean f48861a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final LinkedBlockingQueue f48862b = new LinkedBlockingQueue();
-
-    public a(boolean z10) {
-        this.f48861a = z10;
+    public a(Context context, Uri uri) {
+        this(context, uri, new MediaRange(0L, LongCompanionObject.MAX_VALUE));
     }
 
-    private final ByteBuffer a(int i10) {
-        if (this.f48861a) {
-            ByteBuffer order = ByteBuffer.allocateDirect(i10).order(ByteOrder.LITTLE_ENDIAN);
-            Intrinsics.checkNotNullExpressionValue(order, "{\n            ByteBuffer….LITTLE_ENDIAN)\n        }");
-            return order;
+    private void a(MediaMetadataRetriever mediaMetadataRetriever) {
+        try {
+            mediaMetadataRetriever.release();
+        } catch (IOException unused) {
         }
-        ByteBuffer order2 = ByteBuffer.allocate(i10).order(ByteOrder.LITTLE_ENDIAN);
-        Intrinsics.checkNotNullExpressionValue(order2, "{\n            ByteBuffer….LITTLE_ENDIAN)\n        }");
-        return order2;
     }
 
-    public final void b() {
-        this.f48862b.clear();
+    @Override // rl.e
+    public void advance() {
+        this.mediaExtractor.advance();
     }
 
-    public final ByteBuffer c(int i10) {
-        ByteBuffer byteBuffer = (ByteBuffer) this.f48862b.poll();
-        if (byteBuffer != null) {
-            if (byteBuffer.capacity() < i10) {
-                byteBuffer = a(i10);
+    @Override // rl.e
+    public long getDuration() {
+        return this.duration;
+    }
+
+    @Override // rl.e
+    public int getOrientationHint() {
+        return this.orientationHint;
+    }
+
+    @Override // rl.e
+    public int getSampleFlags() {
+        return this.mediaExtractor.getSampleFlags();
+    }
+
+    @Override // rl.e
+    public long getSampleTime() {
+        return this.mediaExtractor.getSampleTime();
+    }
+
+    @Override // rl.e
+    public int getSampleTrackIndex() {
+        return this.mediaExtractor.getSampleTrackIndex();
+    }
+
+    @Override // rl.e
+    @NonNull
+    public MediaRange getSelection() {
+        return this.mediaRange;
+    }
+
+    @Override // rl.e
+    public long getSize() {
+        return this.size;
+    }
+
+    @Override // rl.e
+    public int getTrackCount() {
+        return this.mediaExtractor.getTrackCount();
+    }
+
+    @Override // rl.e
+    @NonNull
+    public MediaFormat getTrackFormat(int i10) {
+        return this.mediaExtractor.getTrackFormat(i10);
+    }
+
+    @Override // rl.e
+    public int readSampleData(@NonNull ByteBuffer byteBuffer, int i10) {
+        return this.mediaExtractor.readSampleData(byteBuffer, i10);
+    }
+
+    @Override // rl.e
+    public void release() {
+        this.mediaExtractor.release();
+    }
+
+    @Override // rl.e
+    public void seekTo(long j10, int i10) {
+        this.mediaExtractor.seekTo(j10, i10);
+    }
+
+    @Override // rl.e
+    public void selectTrack(int i10) {
+        this.mediaExtractor.selectTrack(i10);
+    }
+
+    public a(Context context, Uri uri, MediaRange mediaRange) {
+        this.mediaRange = mediaRange;
+        MediaExtractor mediaExtractor = new MediaExtractor();
+        this.mediaExtractor = mediaExtractor;
+        MediaMetadataRetriever mediaMetadataRetriever = new MediaMetadataRetriever();
+        try {
+            mediaExtractor.setDataSource(context, uri, (Map<String, String>) null);
+            mediaMetadataRetriever.setDataSource(context, uri);
+            String extractMetadata = mediaMetadataRetriever.extractMetadata(24);
+            if (extractMetadata != null) {
+                this.orientationHint = Integer.parseInt(extractMetadata);
             }
-            if (byteBuffer != null) {
-                return byteBuffer;
-            }
+            String extractMetadata2 = mediaMetadataRetriever.extractMetadata(9);
+            this.duration = extractMetadata2 != null ? Long.parseLong(extractMetadata2) : -1L;
+            this.size = ul.g.g(context, uri);
+            a(mediaMetadataRetriever);
+        } catch (IOException e10) {
+            a(mediaMetadataRetriever);
+            throw new ml.b(b.a.DATA_SOURCE, uri, e10);
         }
-        return a(i10);
-    }
-
-    public final void d(ByteBuffer byteBuffer) {
-        Intrinsics.checkNotNullParameter(byteBuffer, "byteBuffer");
-        byteBuffer.clear();
-        this.f48862b.put(byteBuffer);
     }
 }

@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CampfireSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6032, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6036, 2]);

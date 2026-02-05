@@ -7,18 +7,18 @@ import kotlin.enums.EnumEntries;
 public final class ParameterNameRenderingPolicy {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ ParameterNameRenderingPolicy[] f34523d;
+    private static final /* synthetic */ ParameterNameRenderingPolicy[] f34047d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f34524e;
+    private static final /* synthetic */ EnumEntries f34048e;
     public static final ParameterNameRenderingPolicy ALL = new ParameterNameRenderingPolicy("ALL", 0);
     public static final ParameterNameRenderingPolicy ONLY_NON_SYNTHESIZED = new ParameterNameRenderingPolicy("ONLY_NON_SYNTHESIZED", 1);
     public static final ParameterNameRenderingPolicy NONE = new ParameterNameRenderingPolicy("NONE", 2);
 
     static {
         ParameterNameRenderingPolicy[] a10 = a();
-        f34523d = a10;
-        f34524e = sr.a.a(a10);
+        f34047d = a10;
+        f34048e = vr.a.a(a10);
     }
 
     private ParameterNameRenderingPolicy(String str, int i10) {
@@ -33,6 +33,6 @@ public final class ParameterNameRenderingPolicy {
     }
 
     public static ParameterNameRenderingPolicy[] values() {
-        return (ParameterNameRenderingPolicy[]) f34523d.clone();
+        return (ParameterNameRenderingPolicy[]) f34047d.clone();
     }
 }

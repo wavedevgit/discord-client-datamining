@@ -1,38 +1,33 @@
 package ru;
 
-import java.util.ArrayList;
-import java.util.List;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements nu.b {
+public interface a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f49125a = new a();
-
-    private a() {
-    }
-
-    private final boolean b(Object obj) {
-        if (obj != null) {
-            if (!(obj instanceof String) || ((CharSequence) obj).length() != 0) {
-                return false;
+    /* renamed from: ru.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0629a {
+        public static Boolean a(a aVar, Object obj) {
+            Double p10;
+            if (obj instanceof Boolean) {
+                return (Boolean) obj;
             }
-            return true;
-        }
-        return true;
-    }
-
-    @Override // nu.b
-    /* renamed from: a */
-    public List f(Object obj, Object obj2) {
-        ArrayList arrayList = new ArrayList();
-        for (Object obj3 : sv.a.c(obj)) {
-            if (!f49125a.b(c.f49127a.f(obj3, obj2))) {
-                obj3 = null;
-            }
-            if (obj3 != null) {
-                arrayList.add(obj3);
+            boolean z10 = false;
+            if (obj instanceof Number) {
+                if (((Number) obj).longValue() > 0) {
+                    z10 = true;
+                }
+                return Boolean.valueOf(z10);
+            } else if (!(obj instanceof String) || (p10 = StringsKt.p((String) obj)) == null) {
+                return null;
+            } else {
+                if (((long) p10.doubleValue()) > 0) {
+                    z10 = true;
+                }
+                return Boolean.valueOf(z10);
             }
         }
-        return arrayList;
     }
+
+    Boolean c(Object obj);
 }

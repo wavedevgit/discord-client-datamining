@@ -16,7 +16,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var1;
     var1 = function() { // Environment: var0
         var0 = function arg0, arg1() {
-            _fun62244: for (var _fun62244_ip = 0;;) switch (_fun62244_ip) {
+            _fun62267: for (var _fun62267_ip = 0;;) switch (_fun62267_ip) {
                 case 0:
                     var3 = arg0;
                     var4 = arg1;
@@ -28,22 +28,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = 1;
                     var0 = var0 - var4;
                     if (!(!(var2 >= var0))) {
-                        _fun62244_ip = 66;
-                        continue _fun62244
+                        _fun62267_ip = 66;
+                        continue _fun62267
                     }
                 case 40:
                     var0 = var3;
                     if (!(var2 <= var4)) {
-                        _fun62244_ip = 64;
-                        continue _fun62244
+                        _fun62267_ip = 64;
+                        continue _fun62267
                     }
                 case 47:
                     var4 = var1.Math;
                     var2 = var4.floor;
                     var0 = var2.bind(var4)(var3);
                 case 64:
-                    _fun62244_ip = 83;
-                    continue _fun62244;
+                    _fun62267_ip = 83;
+                    continue _fun62267;
                 case 66:
                     var2 = var1.Math;
                     var1 = var2.ceil;

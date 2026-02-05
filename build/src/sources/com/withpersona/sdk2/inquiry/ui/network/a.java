@@ -3,8 +3,8 @@ package com.withpersona.sdk2.inquiry.ui.network;
 import com.withpersona.sdk2.inquiry.ui.network.ComponentParam;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
-import lr.p;
-import lr.v;
+import or.p;
+import or.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class a {
     public static final Object a(ComponentParam componentParam) {

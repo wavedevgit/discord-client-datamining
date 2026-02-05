@@ -1,107 +1,172 @@
 package gf;
 
-import android.accounts.Account;
-import android.os.Bundle;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.IBinder;
-import android.os.Parcel;
-import android.os.Parcelable;
-import com.google.android.gms.common.api.Scope;
+import android.os.StrictMode;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+import java.util.concurrent.Executor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class i1 implements Parcelable.Creator {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static void a(f fVar, Parcel parcel, int i10) {
-        int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 1, fVar.f26105d);
-        hf.c.l(parcel, 2, fVar.f26106e);
-        hf.c.l(parcel, 3, fVar.f26107i);
-        hf.c.s(parcel, 4, fVar.f26108o, false);
-        hf.c.k(parcel, 5, fVar.f26109p, false);
-        hf.c.v(parcel, 6, fVar.f26110q, i10, false);
-        hf.c.e(parcel, 7, fVar.f26111r, false);
-        hf.c.q(parcel, 8, fVar.f26112s, i10, false);
-        hf.c.v(parcel, 10, fVar.f26113t, i10, false);
-        hf.c.v(parcel, 11, fVar.f26114u, i10, false);
-        hf.c.c(parcel, 12, fVar.f26115v);
-        hf.c.l(parcel, 13, fVar.f26116w);
-        hf.c.c(parcel, 14, fVar.f26117x);
-        hf.c.s(parcel, 15, fVar.b(), false);
-        hf.c.b(parcel, a10);
+final class i1 implements ServiceConnection, l1 {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Map f24834d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private int f24835e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private boolean f24836i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private IBinder f24837o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private final h1 f24838p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private ComponentName f24839q;
+
+    /* renamed from: r  reason: collision with root package name */
+    final /* synthetic */ k1 f24840r;
+
+    public i1(k1 k1Var, h1 h1Var) {
+        Objects.requireNonNull(k1Var);
+        this.f24840r = k1Var;
+        this.f24838p = h1Var;
+        this.f24834d = new HashMap();
+        this.f24835e = 2;
     }
 
-    @Override // android.os.Parcelable.Creator
-    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
-        Scope[] scopeArr = f.f26104z;
-        Bundle bundle = new Bundle();
-        com.google.android.gms.common.d[] dVarArr = f.A;
-        com.google.android.gms.common.d[] dVarArr2 = dVarArr;
-        String str = null;
-        IBinder iBinder = null;
-        Account account = null;
-        String str2 = null;
-        int i10 = 0;
-        int i11 = 0;
-        int i12 = 0;
-        boolean z10 = false;
-        int i13 = 0;
-        boolean z11 = false;
-        while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            switch (hf.b.l(r10)) {
-                case 1:
-                    i10 = hf.b.t(parcel, r10);
-                    break;
-                case 2:
-                    i11 = hf.b.t(parcel, r10);
-                    break;
-                case 3:
-                    i12 = hf.b.t(parcel, r10);
-                    break;
-                case 4:
-                    str = hf.b.f(parcel, r10);
-                    break;
-                case 5:
-                    iBinder = hf.b.s(parcel, r10);
-                    break;
-                case 6:
-                    scopeArr = (Scope[]) hf.b.i(parcel, r10, Scope.CREATOR);
-                    break;
-                case 7:
-                    bundle = hf.b.a(parcel, r10);
-                    break;
-                case 8:
-                    account = (Account) hf.b.e(parcel, r10, Account.CREATOR);
-                    break;
-                case 9:
-                default:
-                    hf.b.z(parcel, r10);
-                    break;
-                case 10:
-                    dVarArr = (com.google.android.gms.common.d[]) hf.b.i(parcel, r10, com.google.android.gms.common.d.CREATOR);
-                    break;
-                case 11:
-                    dVarArr2 = (com.google.android.gms.common.d[]) hf.b.i(parcel, r10, com.google.android.gms.common.d.CREATOR);
-                    break;
-                case 12:
-                    z10 = hf.b.m(parcel, r10);
-                    break;
-                case 13:
-                    i13 = hf.b.t(parcel, r10);
-                    break;
-                case 14:
-                    z11 = hf.b.m(parcel, r10);
-                    break;
-                case 15:
-                    str2 = hf.b.f(parcel, r10);
-                    break;
+    public final void a(String str) {
+        h1 h1Var = this.f24838p;
+        k1 k1Var = this.f24840r;
+        k1Var.h().removeMessages(1, h1Var);
+        k1Var.i().c(k1Var.g(), this);
+        this.f24836i = false;
+        this.f24835e = 2;
+    }
+
+    public final void b(ServiceConnection serviceConnection, ServiceConnection serviceConnection2, String str) {
+        this.f24834d.put(serviceConnection, serviceConnection2);
+    }
+
+    public final void c(ServiceConnection serviceConnection, String str) {
+        this.f24834d.remove(serviceConnection);
+    }
+
+    public final boolean d() {
+        return this.f24836i;
+    }
+
+    public final int e() {
+        return this.f24835e;
+    }
+
+    public final boolean f(ServiceConnection serviceConnection) {
+        return this.f24834d.containsKey(serviceConnection);
+    }
+
+    public final boolean g() {
+        return this.f24834d.isEmpty();
+    }
+
+    public final IBinder h() {
+        return this.f24837o;
+    }
+
+    public final ComponentName i() {
+        return this.f24839q;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ com.google.android.gms.common.b j(String str, Executor executor) {
+        k1 k1Var;
+        nf.a i10;
+        Context g10;
+        h1 h1Var;
+        try {
+            Intent a10 = w0.a(this.f24840r.g(), this.f24838p);
+            this.f24835e = 3;
+            StrictMode.VmPolicy a11 = com.google.android.gms.common.util.r.a();
+            try {
+                k1Var = this.f24840r;
+                i10 = k1Var.i();
+                g10 = k1Var.g();
+                h1Var = this.f24838p;
+            } catch (Throwable th2) {
+                th = th2;
+            }
+            try {
+                boolean d10 = i10.d(g10, str, a10, this, 4225, executor);
+                this.f24836i = d10;
+                if (d10) {
+                    k1Var.h().sendMessageDelayed(k1Var.h().obtainMessage(1, h1Var), k1Var.j());
+                    com.google.android.gms.common.b bVar = com.google.android.gms.common.b.f13792q;
+                    StrictMode.setVmPolicy(a11);
+                    return bVar;
+                }
+                this.f24835e = 2;
+                try {
+                    k1Var.i().c(k1Var.g(), this);
+                } catch (IllegalArgumentException unused) {
+                }
+                com.google.android.gms.common.b bVar2 = new com.google.android.gms.common.b(16);
+                StrictMode.setVmPolicy(a11);
+                return bVar2;
+            } catch (Throwable th3) {
+                th = th3;
+                Throwable th4 = th;
+                StrictMode.setVmPolicy(a11);
+                throw th4;
+            }
+        } catch (u0 e10) {
+            return e10.f24901d;
+        }
+    }
+
+    @Override // android.content.ServiceConnection
+    public final void onBindingDied(ComponentName componentName) {
+        onServiceDisconnected(componentName);
+    }
+
+    @Override // android.content.ServiceConnection
+    public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
+        k1 k1Var = this.f24840r;
+        synchronized (k1Var.f()) {
+            try {
+                k1Var.h().removeMessages(1, this.f24838p);
+                this.f24837o = iBinder;
+                this.f24839q = componentName;
+                for (ServiceConnection serviceConnection : this.f24834d.values()) {
+                    serviceConnection.onServiceConnected(componentName, iBinder);
+                }
+                this.f24835e = 1;
+            } catch (Throwable th2) {
+                throw th2;
             }
         }
-        hf.b.k(parcel, A);
-        return new f(i10, i11, i12, str, iBinder, scopeArr, bundle, account, dVarArr, dVarArr2, z10, i13, z11, str2);
     }
 
-    @Override // android.os.Parcelable.Creator
-    public final /* synthetic */ Object[] newArray(int i10) {
-        return new f[i10];
+    @Override // android.content.ServiceConnection
+    public final void onServiceDisconnected(ComponentName componentName) {
+        k1 k1Var = this.f24840r;
+        synchronized (k1Var.f()) {
+            try {
+                k1Var.h().removeMessages(1, this.f24838p);
+                this.f24837o = null;
+                this.f24839q = componentName;
+                for (ServiceConnection serviceConnection : this.f24834d.values()) {
+                    serviceConnection.onServiceDisconnected(componentName);
+                }
+                this.f24835e = 2;
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
     }
 }

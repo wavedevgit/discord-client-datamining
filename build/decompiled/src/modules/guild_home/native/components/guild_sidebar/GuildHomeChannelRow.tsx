@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_home/native/components/guild_sidebar/GuildHomeChannelRow.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102146: for (var _fun102146_ip = 0;;) switch (_fun102146_ip) {
+        _fun102174: for (var _fun102174_ip = 0;;) switch (_fun102174_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.guild;
@@ -105,13 +105,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var3)(var0);
                 var0 = var0.ChannelModes;
                 if (var9) {
-                    _fun102146_ip = 105;
-                    continue _fun102146
+                    _fun102174_ip = 105;
+                    continue _fun102174
                 }
             case 97:
                 var6 = var0.DEFAULT;
-                _fun102146_ip = 111;
-                continue _fun102146;
+                _fun102174_ip = 111;
+                continue _fun102174;
             case 105:
                 var6 = var0.SELECTED;
             case 111:
@@ -177,4 +177,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 1379, 8803, 33, 1297, 671, 1220, 11696, 1234, 11140, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 1379, 8821, 33, 1297, 671, 1220, 11714, 1234, 11158, 2]);

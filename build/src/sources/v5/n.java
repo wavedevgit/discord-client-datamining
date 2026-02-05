@@ -5,21 +5,21 @@ import w5.c;
 abstract class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f51164a = c.a.a("fFamily", "fName", "fStyle", "ascent");
+    private static final c.a f51853a = c.a.a("fFamily", "fName", "fStyle", "ascent");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static q5.c a(w5.c cVar) {
-        cVar.r();
+        cVar.s();
         String str = null;
         String str2 = null;
         float f10 = 0.0f;
         String str3 = null;
         while (cVar.hasNext()) {
-            int B = cVar.B(f51164a);
-            if (B != 0) {
-                if (B != 1) {
-                    if (B != 2) {
-                        if (B != 3) {
+            int y10 = cVar.y(f51853a);
+            if (y10 != 0) {
+                if (y10 != 1) {
+                    if (y10 != 2) {
+                        if (y10 != 3) {
                             cVar.E();
                             cVar.P();
                         } else {
@@ -35,7 +35,7 @@ abstract class n {
                 str = cVar.f1();
             }
         }
-        cVar.y();
+        cVar.z();
         return new q5.c(str, str3, str2, f10);
     }
 }

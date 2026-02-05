@@ -1,44 +1,87 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var3 = dependencyMap;
-    var0 = 0;
-    var4 = var3[var0];
-    var3 = require;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var3 = var3.Animated;
-    var4 = var3.add;
-    var _closure1_slot0 = var4;
-    var3 = var3.multiply;
-    var _closure1_slot1 = var3;
-    var1 = function arg0, arg1, arg2() {
-        var6 = arg0;
-        var3 = _closure1_slot0;
-        var5 = _closure1_slot1;
-        var2 = undefined;
-        var0 = arg1;
-        var1 = var5.bind(var2)(var6, var0);
-        var4 = var6.interpolate;
-        var0 = {};
-        var7 = [0, 1];
-        var0.inputRange = var7;
-        var7 = [1, 0];
-        var0.outputRange = var7;
-        var4 = var4.bind(var6)(var0);
-        var0 = arg2;
-        var0 = var5.bind(var2)(var4, var0);
-        var0 = var3.bind(var2)(var1, var0);
-        return var0;
+    var1 = function arg0() {
+        _fun51493: for (var _fun51493_ip = 0;;) switch (_fun51493_ip) {
+            case 0:
+                var5 = arg0;
+                var1 = !var5;
+                if (var1) {
+                    _fun51493_ip = 20;
+                    continue _fun51493
+                }
+            case 9:
+                var2 = 'string';
+                var0 = typeof var5;
+                var1 = var2 === var0;
+            case 20:
+                var0 = !var1;
+                if (var1) {
+                    _fun51493_ip = 159;
+                    continue _fun51493
+                }
+            case 29:
+                var4 = global;
+                var1 = var4.Array;
+                var1 = var5 instanceof var1;
+                if (var1) {
+                    _fun51493_ip = 60;
+                    continue _fun51493
+                }
+            case 44:
+                var3 = var4.Array;
+                var2 = var3.isArray;
+                var1 = var2.bind(var3)(var5);
+            case 60:
+                if (var1) {
+                    _fun51493_ip = 156;
+                    continue _fun51493
+                }
+            case 63:
+                var3 = var5.length;
+                var2 = 0;
+                var2 = var3 >= var2;
+                if (!var2) {
+                    _fun51493_ip = 153;
+                    continue _fun51493
+                }
+            case 77:
+                var6 = var5.splice;
+                var3 = var4.Function;
+                var3 = var6 instanceof var3;
+                if (var3) {
+                    _fun51493_ip = 150;
+                    continue _fun51493
+                }
+            case 96:
+                var7 = var4.Object;
+                var6 = var7.getOwnPropertyDescriptor;
+                var8 = var5.length;
+                var4 = 1;
+                var4 = var8 - var4;
+                var4 = var6.bind(var7)(var5, var4);
+                if (!var4) {
+                    _fun51493_ip = 147;
+                    continue _fun51493
+                }
+            case 129:
+                var5 = var5.constructor;
+                var6 = var5.name;
+                var5 = 'String';
+                var4 = var5 !== var6;
+            case 147:
+                var3 = var4;
+            case 150:
+                var2 = var3;
+            case 153:
+                var1 = var2;
+            case 156:
+                var0 = var1;
+            case 159:
+                return var0;
+        }
     };
-    var2.default = var1;
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

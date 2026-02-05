@@ -7,15 +7,15 @@ import r.a0;
 public class y implements a0.a {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final CameraCharacteristics f48299a;
+    protected final CameraCharacteristics f48309a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public y(CameraCharacteristics cameraCharacteristics) {
-        this.f48299a = cameraCharacteristics;
+        this.f48309a = cameraCharacteristics;
     }
 
     @Override // r.a0.a
     public Object a(CameraCharacteristics.Key key) {
-        return this.f48299a.get(key);
+        return this.f48309a.get(key);
     }
 }

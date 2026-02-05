@@ -8,11 +8,11 @@ import java.util.List;
 public class ImageCapturePixelHDRPlusQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final List f1923a = Arrays.asList("Pixel 2", "Pixel 2 XL", "Pixel 3", "Pixel 3 XL");
+    public static final List f2035a = Arrays.asList("Pixel 2", "Pixel 2 XL", "Pixel 3", "Pixel 3 XL");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean c() {
-        if (f1923a.contains(Build.MODEL) && "Google".equals(Build.MANUFACTURER) && Build.VERSION.SDK_INT >= 26) {
+        if (f2035a.contains(Build.MODEL) && "Google".equals(Build.MANUFACTURER) && Build.VERSION.SDK_INT >= 26) {
             return true;
         }
         return false;

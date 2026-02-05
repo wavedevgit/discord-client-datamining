@@ -10,24 +10,24 @@ import ef.a;
 import ff.m;
 import ff.q;
 import wf.r;
-import wg.k;
+import xg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class a extends ef.d {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final a.g f51587k;
+    private static final a.g f52276k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final ef.a f51588l;
+    private static final ef.a f52277l;
 
     static {
         a.g gVar = new a.g();
-        f51587k = gVar;
-        f51588l = new ef.a("Fido.FIDO2_API", new t5(), gVar);
+        f52276k = gVar;
+        f52277l = new ef.a("Fido.FIDO2_API", new t5(), gVar);
     }
 
     public a(Activity activity) {
-        super(activity, f51588l, a.d.f21485c, new ff.a());
+        super(activity, f52277l, a.d.f21557f, new ff.a());
     }
 
     public Task C(final r rVar) {
@@ -43,7 +43,7 @@ public class a extends ef.d {
         return p(q.a().b(new m() { // from class: vf.c
             @Override // ff.m
             public final void accept(Object obj, Object obj2) {
-                ((x5) ((u5) obj).C()).S0(new e(a.this, (k) obj2), publicKeyCredentialRequestOptions);
+                ((x5) ((u5) obj).C()).W0(new e(a.this, (k) obj2), publicKeyCredentialRequestOptions);
             }
         }).e(5408).a());
     }

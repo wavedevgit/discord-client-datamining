@@ -1,39 +1,39 @@
 package com.google.android.play.core.assetpacks;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class l3 implements th.t {
+public final class l3 implements wh.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final th.w f15489a;
+    private final wh.w f15883a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final th.w f15490b;
+    private final wh.w f15884b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final th.w f15491c;
+    private final wh.w f15885c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final th.w f15492d;
+    private final wh.w f15886d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final th.w f15493e;
+    private final wh.w f15887e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final th.w f15494f;
+    private final wh.w f15888f;
 
-    public l3(th.w wVar, th.w wVar2, th.w wVar3, th.w wVar4, th.w wVar5, th.w wVar6) {
-        this.f15489a = wVar;
-        this.f15490b = wVar2;
-        this.f15491c = wVar3;
-        this.f15492d = wVar4;
-        this.f15493e = wVar5;
-        this.f15494f = wVar6;
+    public l3(wh.w wVar, wh.w wVar2, wh.w wVar3, wh.w wVar4, wh.w wVar5, wh.w wVar6) {
+        this.f15883a = wVar;
+        this.f15884b = wVar2;
+        this.f15885c = wVar3;
+        this.f15886d = wVar4;
+        this.f15887e = wVar5;
+        this.f15888f = wVar6;
     }
 
-    @Override // th.w
+    @Override // wh.w
     public final /* bridge */ /* synthetic */ Object a() {
-        Object a10 = this.f15489a.a();
-        th.r c10 = th.r.c(th.v.a(this.f15490b));
-        Object a11 = this.f15491c.a();
-        return new k3((n0) a10, c10, (r2) a11, th.r.c(th.v.a(this.f15492d)), (b2) this.f15493e.a(), (o3) this.f15494f.a());
+        Object a10 = this.f15883a.a();
+        wh.r c10 = wh.r.c(wh.v.a(this.f15884b));
+        Object a11 = this.f15885c.a();
+        return new k3((n0) a10, c10, (r2) a11, wh.r.c(wh.v.a(this.f15886d)), (b2) this.f15887e.a(), (o3) this.f15888f.a());
     }
 }

@@ -14,16 +14,16 @@ import kotlin.reflect.jvm.internal.impl.protobuf.WireFormat;
 public final class FieldSet {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final FieldSet f34386d = new FieldSet(true);
+    private static final FieldSet f33910d = new FieldSet(true);
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f34388b;
+    private boolean f33912b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f34389c = false;
+    private boolean f33913c = false;
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f34387a = d.n(16);
+    private final d f33911a = d.n(16);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public interface FieldDescriptorLite<T extends FieldDescriptorLite<T>> extends Comparable<T> {
@@ -45,122 +45,122 @@ public final class FieldSet {
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f34390a;
+        static final /* synthetic */ int[] f33914a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f34391b;
+        static final /* synthetic */ int[] f33915b;
 
         static {
             int[] iArr = new int[WireFormat.FieldType.values().length];
-            f34391b = iArr;
+            f33915b = iArr;
             try {
                 iArr[WireFormat.FieldType.DOUBLE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f34391b[WireFormat.FieldType.FLOAT.ordinal()] = 2;
+                f33915b[WireFormat.FieldType.FLOAT.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f34391b[WireFormat.FieldType.INT64.ordinal()] = 3;
+                f33915b[WireFormat.FieldType.INT64.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f34391b[WireFormat.FieldType.UINT64.ordinal()] = 4;
+                f33915b[WireFormat.FieldType.UINT64.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f34391b[WireFormat.FieldType.INT32.ordinal()] = 5;
+                f33915b[WireFormat.FieldType.INT32.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f34391b[WireFormat.FieldType.FIXED64.ordinal()] = 6;
+                f33915b[WireFormat.FieldType.FIXED64.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f34391b[WireFormat.FieldType.FIXED32.ordinal()] = 7;
+                f33915b[WireFormat.FieldType.FIXED32.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f34391b[WireFormat.FieldType.BOOL.ordinal()] = 8;
+                f33915b[WireFormat.FieldType.BOOL.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f34391b[WireFormat.FieldType.STRING.ordinal()] = 9;
+                f33915b[WireFormat.FieldType.STRING.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f34391b[WireFormat.FieldType.BYTES.ordinal()] = 10;
+                f33915b[WireFormat.FieldType.BYTES.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f34391b[WireFormat.FieldType.UINT32.ordinal()] = 11;
+                f33915b[WireFormat.FieldType.UINT32.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f34391b[WireFormat.FieldType.SFIXED32.ordinal()] = 12;
+                f33915b[WireFormat.FieldType.SFIXED32.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                f34391b[WireFormat.FieldType.SFIXED64.ordinal()] = 13;
+                f33915b[WireFormat.FieldType.SFIXED64.ordinal()] = 13;
             } catch (NoSuchFieldError unused13) {
             }
             try {
-                f34391b[WireFormat.FieldType.SINT32.ordinal()] = 14;
+                f33915b[WireFormat.FieldType.SINT32.ordinal()] = 14;
             } catch (NoSuchFieldError unused14) {
             }
             try {
-                f34391b[WireFormat.FieldType.SINT64.ordinal()] = 15;
+                f33915b[WireFormat.FieldType.SINT64.ordinal()] = 15;
             } catch (NoSuchFieldError unused15) {
             }
             try {
-                f34391b[WireFormat.FieldType.GROUP.ordinal()] = 16;
+                f33915b[WireFormat.FieldType.GROUP.ordinal()] = 16;
             } catch (NoSuchFieldError unused16) {
             }
             try {
-                f34391b[WireFormat.FieldType.MESSAGE.ordinal()] = 17;
+                f33915b[WireFormat.FieldType.MESSAGE.ordinal()] = 17;
             } catch (NoSuchFieldError unused17) {
             }
             try {
-                f34391b[WireFormat.FieldType.ENUM.ordinal()] = 18;
+                f33915b[WireFormat.FieldType.ENUM.ordinal()] = 18;
             } catch (NoSuchFieldError unused18) {
             }
             int[] iArr2 = new int[WireFormat.JavaType.values().length];
-            f34390a = iArr2;
+            f33914a = iArr2;
             try {
                 iArr2[WireFormat.JavaType.INT.ordinal()] = 1;
             } catch (NoSuchFieldError unused19) {
             }
             try {
-                f34390a[WireFormat.JavaType.LONG.ordinal()] = 2;
+                f33914a[WireFormat.JavaType.LONG.ordinal()] = 2;
             } catch (NoSuchFieldError unused20) {
             }
             try {
-                f34390a[WireFormat.JavaType.FLOAT.ordinal()] = 3;
+                f33914a[WireFormat.JavaType.FLOAT.ordinal()] = 3;
             } catch (NoSuchFieldError unused21) {
             }
             try {
-                f34390a[WireFormat.JavaType.DOUBLE.ordinal()] = 4;
+                f33914a[WireFormat.JavaType.DOUBLE.ordinal()] = 4;
             } catch (NoSuchFieldError unused22) {
             }
             try {
-                f34390a[WireFormat.JavaType.BOOLEAN.ordinal()] = 5;
+                f33914a[WireFormat.JavaType.BOOLEAN.ordinal()] = 5;
             } catch (NoSuchFieldError unused23) {
             }
             try {
-                f34390a[WireFormat.JavaType.STRING.ordinal()] = 6;
+                f33914a[WireFormat.JavaType.STRING.ordinal()] = 6;
             } catch (NoSuchFieldError unused24) {
             }
             try {
-                f34390a[WireFormat.JavaType.BYTE_STRING.ordinal()] = 7;
+                f33914a[WireFormat.JavaType.BYTE_STRING.ordinal()] = 7;
             } catch (NoSuchFieldError unused25) {
             }
             try {
-                f34390a[WireFormat.JavaType.ENUM.ordinal()] = 8;
+                f33914a[WireFormat.JavaType.ENUM.ordinal()] = 8;
             } catch (NoSuchFieldError unused26) {
             }
             try {
-                f34390a[WireFormat.JavaType.MESSAGE.ordinal()] = 9;
+                f33914a[WireFormat.JavaType.MESSAGE.ordinal()] = 9;
             } catch (NoSuchFieldError unused27) {
             }
         }
@@ -188,7 +188,7 @@ public final class FieldSet {
     }
 
     private static int e(WireFormat.FieldType fieldType, Object obj) {
-        switch (a.f34391b[fieldType.ordinal()]) {
+        switch (a.f33915b[fieldType.ordinal()]) {
             case 1:
                 return CodedOutputStream.computeDoubleSizeNoTag(((Double) obj).doubleValue());
             case 2:
@@ -259,7 +259,7 @@ public final class FieldSet {
     }
 
     public static FieldSet g() {
-        return f34386d;
+        return f33910d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -309,16 +309,16 @@ public final class FieldSet {
             for (Object obj : (List) value) {
                 ((List) h10).add(c(obj));
             }
-            this.f34387a.o(fieldDescriptorLite, h10);
+            this.f33911a.o(fieldDescriptorLite, h10);
         } else if (fieldDescriptorLite.getLiteJavaType() == WireFormat.JavaType.MESSAGE) {
             Object h11 = h(fieldDescriptorLite);
             if (h11 == null) {
-                this.f34387a.o(fieldDescriptorLite, c(value));
+                this.f33911a.o(fieldDescriptorLite, c(value));
                 return;
             }
-            this.f34387a.o(fieldDescriptorLite, fieldDescriptorLite.internalMergeFrom(((MessageLite) h11).toBuilder(), (MessageLite) value).build());
+            this.f33911a.o(fieldDescriptorLite, fieldDescriptorLite.internalMergeFrom(((MessageLite) h11).toBuilder(), (MessageLite) value).build());
         } else {
-            this.f34387a.o(fieldDescriptorLite, c(value));
+            this.f33911a.o(fieldDescriptorLite, c(value));
         }
     }
 
@@ -327,7 +327,7 @@ public final class FieldSet {
     }
 
     public static Object u(CodedInputStream codedInputStream, WireFormat.FieldType fieldType, boolean z10) {
-        switch (a.f34391b[fieldType.ordinal()]) {
+        switch (a.f33915b[fieldType.ordinal()]) {
             case 1:
                 return Double.valueOf(codedInputStream.readDouble());
             case 2:
@@ -391,7 +391,7 @@ public final class FieldSet {
     private static void w(kotlin.reflect.jvm.internal.impl.protobuf.WireFormat.FieldType r2, java.lang.Object r3) {
         /*
             r3.getClass()
-            int[] r0 = kotlin.reflect.jvm.internal.impl.protobuf.FieldSet.a.f34390a
+            int[] r0 = kotlin.reflect.jvm.internal.impl.protobuf.FieldSet.a.f33914a
             kotlin.reflect.jvm.internal.impl.protobuf.WireFormat$JavaType r2 = r2.getJavaType()
             int r2 = r2.ordinal()
             r2 = r0[r2]
@@ -473,7 +473,7 @@ public final class FieldSet {
     }
 
     private static void y(CodedOutputStream codedOutputStream, WireFormat.FieldType fieldType, Object obj) {
-        switch (a.f34391b[fieldType.ordinal()]) {
+        switch (a.f33915b[fieldType.ordinal()]) {
             case 1:
                 codedOutputStream.writeDoubleNoTag(((Double) obj).doubleValue());
                 return;
@@ -577,7 +577,7 @@ public final class FieldSet {
             Object h10 = h(fieldDescriptorLite);
             if (h10 == null) {
                 list = new ArrayList();
-                this.f34387a.o(fieldDescriptorLite, list);
+                this.f33911a.o(fieldDescriptorLite, list);
             } else {
                 list = (List) h10;
             }
@@ -590,19 +590,19 @@ public final class FieldSet {
     /* renamed from: b */
     public FieldSet clone() {
         FieldSet t10 = t();
-        for (int i10 = 0; i10 < this.f34387a.i(); i10++) {
-            Map.Entry h10 = this.f34387a.h(i10);
+        for (int i10 = 0; i10 < this.f33911a.i(); i10++) {
+            Map.Entry h10 = this.f33911a.h(i10);
             t10.v((FieldDescriptorLite) h10.getKey(), h10.getValue());
         }
-        for (Map.Entry entry : this.f34387a.j()) {
+        for (Map.Entry entry : this.f33911a.j()) {
             t10.v((FieldDescriptorLite) entry.getKey(), entry.getValue());
         }
-        t10.f34389c = this.f34389c;
+        t10.f33913c = this.f33913c;
         return t10;
     }
 
     public Object h(FieldDescriptorLite fieldDescriptorLite) {
-        Object obj = this.f34387a.get(fieldDescriptorLite);
+        Object obj = this.f33911a.get(fieldDescriptorLite);
         if (obj instanceof LazyField) {
             return ((LazyField) obj).getValue();
         }
@@ -633,11 +633,11 @@ public final class FieldSet {
 
     public int k() {
         int i10 = 0;
-        for (int i11 = 0; i11 < this.f34387a.i(); i11++) {
-            Map.Entry h10 = this.f34387a.h(i11);
+        for (int i11 = 0; i11 < this.f33911a.i(); i11++) {
+            Map.Entry h10 = this.f33911a.h(i11);
             i10 += f((FieldDescriptorLite) h10.getKey(), h10.getValue());
         }
-        for (Map.Entry entry : this.f34387a.j()) {
+        for (Map.Entry entry : this.f33911a.j()) {
             i10 += f((FieldDescriptorLite) entry.getKey(), entry.getValue());
         }
         return i10;
@@ -645,7 +645,7 @@ public final class FieldSet {
 
     public boolean m(FieldDescriptorLite fieldDescriptorLite) {
         if (!fieldDescriptorLite.isRepeated()) {
-            if (this.f34387a.get(fieldDescriptorLite) != null) {
+            if (this.f33911a.get(fieldDescriptorLite) != null) {
                 return true;
             }
             return false;
@@ -654,12 +654,12 @@ public final class FieldSet {
     }
 
     public boolean n() {
-        for (int i10 = 0; i10 < this.f34387a.i(); i10++) {
-            if (!o(this.f34387a.h(i10))) {
+        for (int i10 = 0; i10 < this.f33911a.i(); i10++) {
+            if (!o(this.f33911a.h(i10))) {
                 return false;
             }
         }
-        for (Map.Entry entry : this.f34387a.j()) {
+        for (Map.Entry entry : this.f33911a.j()) {
             if (!o(entry)) {
                 return false;
             }
@@ -668,25 +668,25 @@ public final class FieldSet {
     }
 
     public Iterator p() {
-        if (this.f34389c) {
-            return new LazyField.c(this.f34387a.entrySet().iterator());
+        if (this.f33913c) {
+            return new LazyField.c(this.f33911a.entrySet().iterator());
         }
-        return this.f34387a.entrySet().iterator();
+        return this.f33911a.entrySet().iterator();
     }
 
     public void q() {
-        if (this.f34388b) {
+        if (this.f33912b) {
             return;
         }
-        this.f34387a.m();
-        this.f34388b = true;
+        this.f33911a.m();
+        this.f33912b = true;
     }
 
     public void r(FieldSet fieldSet) {
-        for (int i10 = 0; i10 < fieldSet.f34387a.i(); i10++) {
-            s(fieldSet.f34387a.h(i10));
+        for (int i10 = 0; i10 < fieldSet.f33911a.i(); i10++) {
+            s(fieldSet.f33911a.h(i10));
         }
-        for (Map.Entry entry : fieldSet.f34387a.j()) {
+        for (Map.Entry entry : fieldSet.f33911a.j()) {
             s(entry);
         }
     }
@@ -707,9 +707,9 @@ public final class FieldSet {
             w(fieldDescriptorLite.getLiteType(), obj);
         }
         if (obj instanceof LazyField) {
-            this.f34389c = true;
+            this.f33913c = true;
         }
-        this.f34387a.o(fieldDescriptorLite, obj);
+        this.f33911a.o(fieldDescriptorLite, obj);
     }
 
     private FieldSet(boolean z10) {

@@ -1,107 +1,132 @@
 package ju;
 
-import java.security.GeneralSecurityException;
-import java.security.cert.X509Certificate;
-import java.util.ArrayDeque;
+import android.os.Build;
+import android.security.NetworkSecurityPolicy;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import javax.net.ssl.SSLPeerUnverifiedException;
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.X509TrustManager;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import ku.i;
+import ku.j;
+import ku.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a extends c {
+public final class a extends h {
 
-    /* renamed from: c  reason: collision with root package name */
-    public static final C0430a f32005c = new C0430a(null);
+    /* renamed from: e  reason: collision with root package name */
+    public static final C0432a f31411e = new C0432a(null);
 
-    /* renamed from: b  reason: collision with root package name */
-    private final e f32006b;
+    /* renamed from: f  reason: collision with root package name */
+    private static final boolean f31412f;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final List f31413d;
 
     /* renamed from: ju.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0430a {
-        public /* synthetic */ C0430a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0432a {
+        public /* synthetic */ C0432a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0430a() {
+        public final h a() {
+            if (b()) {
+                return new a();
+            }
+            return null;
+        }
+
+        public final boolean b() {
+            return a.f31412f;
+        }
+
+        private C0432a() {
         }
     }
 
-    public a(e trustRootIndex) {
-        Intrinsics.checkNotNullParameter(trustRootIndex, "trustRootIndex");
-        this.f32006b = trustRootIndex;
+    static {
+        boolean z10;
+        if (h.f31441a.h() && Build.VERSION.SDK_INT >= 29) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        f31412f = z10;
     }
 
-    private final boolean b(X509Certificate x509Certificate, X509Certificate x509Certificate2) {
-        if (!Intrinsics.areEqual(x509Certificate.getIssuerDN(), x509Certificate2.getSubjectDN())) {
-            return false;
-        }
-        try {
-            x509Certificate.verify(x509Certificate2.getPublicKey());
-            return true;
-        } catch (GeneralSecurityException unused) {
-            return false;
-        }
-    }
-
-    @Override // ju.c
-    public List a(List chain, String hostname) {
-        Intrinsics.checkNotNullParameter(chain, "chain");
-        Intrinsics.checkNotNullParameter(hostname, "hostname");
-        ArrayDeque arrayDeque = new ArrayDeque(chain);
+    public a() {
+        k[] kVarArr = {ku.a.f36142a.a(), new j(ku.f.f36150f.d()), new j(i.f36164a.a()), new j(ku.g.f36158a.a())};
         ArrayList arrayList = new ArrayList();
-        Object removeFirst = arrayDeque.removeFirst();
-        Intrinsics.checkNotNullExpressionValue(removeFirst, "queue.removeFirst()");
-        arrayList.add(removeFirst);
-        boolean z10 = false;
-        for (int i10 = 0; i10 < 9; i10++) {
-            Object obj = arrayList.get(arrayList.size() - 1);
-            Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.security.cert.X509Certificate");
-            X509Certificate x509Certificate = (X509Certificate) obj;
-            X509Certificate a10 = this.f32006b.a(x509Certificate);
-            if (a10 != null) {
-                if (arrayList.size() > 1 || !Intrinsics.areEqual(x509Certificate, a10)) {
-                    arrayList.add(a10);
-                }
-                if (!b(a10, a10)) {
-                    z10 = true;
-                } else {
-                    return arrayList;
-                }
-            } else {
-                Iterator it = arrayDeque.iterator();
-                Intrinsics.checkNotNullExpressionValue(it, "queue.iterator()");
-                while (it.hasNext()) {
-                    Object next = it.next();
-                    Intrinsics.checkNotNull(next, "null cannot be cast to non-null type java.security.cert.X509Certificate");
-                    X509Certificate x509Certificate2 = (X509Certificate) next;
-                    if (b(x509Certificate, x509Certificate2)) {
-                        it.remove();
-                        arrayList.add(x509Certificate2);
-                    }
-                }
-                if (!z10) {
-                    throw new SSLPeerUnverifiedException("Failed to find a trusted cert that signed " + x509Certificate);
-                }
-                return arrayList;
+        for (Object obj : CollectionsKt.q(kVarArr)) {
+            if (((k) obj).a()) {
+                arrayList.add(obj);
             }
         }
-        throw new SSLPeerUnverifiedException("Certificate chain too long: " + arrayList);
+        this.f31413d = arrayList;
     }
 
-    public boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
+    @Override // ju.h
+    public mu.c c(X509TrustManager trustManager) {
+        Intrinsics.checkNotNullParameter(trustManager, "trustManager");
+        ku.b a10 = ku.b.f36143d.a(trustManager);
+        if (a10 != null) {
+            return a10;
         }
-        if ((obj instanceof a) && Intrinsics.areEqual(((a) obj).f32006b, this.f32006b)) {
-            return true;
-        }
-        return false;
+        return super.c(trustManager);
     }
 
-    public int hashCode() {
-        return this.f32006b.hashCode();
+    @Override // ju.h
+    public void e(SSLSocket sslSocket, String str, List protocols) {
+        Object obj;
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Intrinsics.checkNotNullParameter(protocols, "protocols");
+        Iterator it = this.f31413d.iterator();
+        while (true) {
+            if (it.hasNext()) {
+                obj = it.next();
+                if (((k) obj).b(sslSocket)) {
+                    break;
+                }
+            } else {
+                obj = null;
+                break;
+            }
+        }
+        k kVar = (k) obj;
+        if (kVar != null) {
+            kVar.d(sslSocket, str, protocols);
+        }
+    }
+
+    @Override // ju.h
+    public String h(SSLSocket sslSocket) {
+        Object obj;
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Iterator it = this.f31413d.iterator();
+        while (true) {
+            if (it.hasNext()) {
+                obj = it.next();
+                if (((k) obj).b(sslSocket)) {
+                    break;
+                }
+            } else {
+                obj = null;
+                break;
+            }
+        }
+        k kVar = (k) obj;
+        if (kVar == null) {
+            return null;
+        }
+        return kVar.c(sslSocket);
+    }
+
+    @Override // ju.h
+    public boolean j(String hostname) {
+        Intrinsics.checkNotNullParameter(hostname, "hostname");
+        return NetworkSecurityPolicy.getInstance().isCleartextTrafficPermitted(hostname);
     }
 }

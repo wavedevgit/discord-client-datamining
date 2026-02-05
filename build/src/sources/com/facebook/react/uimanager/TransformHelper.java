@@ -139,14 +139,14 @@ public final class TransformHelper {
         }
     }
 
-    @lr.c
+    @or.c
     public static final void processTransform(@NotNull ReadableArray transforms, @NotNull double[] result) {
         Intrinsics.checkNotNullParameter(transforms, "transforms");
         Intrinsics.checkNotNullParameter(result, "result");
         processTransform(transforms, result, 0.0f, 0.0f, null, false);
     }
 
-    @lr.c
+    @or.c
     public static final void processTransform(@NotNull ReadableArray transforms, @NotNull double[] result, float f10, float f11, ReadableArray readableArray) {
         Intrinsics.checkNotNullParameter(transforms, "transforms");
         Intrinsics.checkNotNullParameter(result, "result");

@@ -22,16 +22,16 @@ import org.webrtc.PeerConnection;
 public class AccessibilityNodeInfoCompat {
 
     /* renamed from: d  reason: collision with root package name */
-    private static int f3308d;
+    private static int f3420d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final AccessibilityNodeInfo f3309a;
+    private final AccessibilityNodeInfo f3421a;
 
     /* renamed from: b  reason: collision with root package name */
-    public int f3310b = -1;
+    public int f3422b = -1;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f3311c = -1;
+    private int f3423c = -1;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
@@ -59,82 +59,82 @@ public class AccessibilityNodeInfoCompat {
         public static final a V;
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f3312e = new a(1, null);
+        public static final a f3424e = new a(1, null);
 
         /* renamed from: f  reason: collision with root package name */
-        public static final a f3313f = new a(2, null);
+        public static final a f3425f = new a(2, null);
 
         /* renamed from: g  reason: collision with root package name */
-        public static final a f3314g = new a(4, null);
+        public static final a f3426g = new a(4, null);
 
         /* renamed from: h  reason: collision with root package name */
-        public static final a f3315h = new a(8, null);
+        public static final a f3427h = new a(8, null);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final a f3316i = new a(16, null);
+        public static final a f3428i = new a(16, null);
 
         /* renamed from: j  reason: collision with root package name */
-        public static final a f3317j = new a(32, null);
+        public static final a f3429j = new a(32, null);
 
         /* renamed from: k  reason: collision with root package name */
-        public static final a f3318k = new a(64, null);
+        public static final a f3430k = new a(64, null);
 
         /* renamed from: l  reason: collision with root package name */
-        public static final a f3319l = new a(IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, null);
+        public static final a f3431l = new a(IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, null);
 
         /* renamed from: m  reason: collision with root package name */
-        public static final a f3320m = new a((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, (CharSequence) null, AccessibilityViewCommand.b.class);
+        public static final a f3432m = new a((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, (CharSequence) null, AccessibilityViewCommand.b.class);
 
         /* renamed from: n  reason: collision with root package name */
-        public static final a f3321n = new a((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, (CharSequence) null, AccessibilityViewCommand.b.class);
+        public static final a f3433n = new a((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, (CharSequence) null, AccessibilityViewCommand.b.class);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final a f3322o = new a((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET, (CharSequence) null, AccessibilityViewCommand.c.class);
+        public static final a f3434o = new a((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET, (CharSequence) null, AccessibilityViewCommand.c.class);
 
         /* renamed from: p  reason: collision with root package name */
-        public static final a f3323p = new a((int) RecyclerView.ItemAnimator.FLAG_MOVED, (CharSequence) null, AccessibilityViewCommand.c.class);
+        public static final a f3435p = new a((int) RecyclerView.ItemAnimator.FLAG_MOVED, (CharSequence) null, AccessibilityViewCommand.c.class);
 
         /* renamed from: q  reason: collision with root package name */
-        public static final a f3324q = new a(RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, null);
+        public static final a f3436q = new a(RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, null);
 
         /* renamed from: r  reason: collision with root package name */
-        public static final a f3325r = new a(8192, null);
+        public static final a f3437r = new a(8192, null);
 
         /* renamed from: s  reason: collision with root package name */
-        public static final a f3326s = new a(16384, null);
+        public static final a f3438s = new a(16384, null);
 
         /* renamed from: t  reason: collision with root package name */
-        public static final a f3327t = new a(PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS, null);
+        public static final a f3439t = new a(PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS, null);
 
         /* renamed from: u  reason: collision with root package name */
-        public static final a f3328u = new a(65536, null);
+        public static final a f3440u = new a(65536, null);
 
         /* renamed from: v  reason: collision with root package name */
-        public static final a f3329v = new a(131072, (CharSequence) null, AccessibilityViewCommand.g.class);
+        public static final a f3441v = new a(131072, (CharSequence) null, AccessibilityViewCommand.g.class);
 
         /* renamed from: w  reason: collision with root package name */
-        public static final a f3330w = new a(262144, null);
+        public static final a f3442w = new a(262144, null);
 
         /* renamed from: x  reason: collision with root package name */
-        public static final a f3331x = new a(524288, null);
+        public static final a f3443x = new a(524288, null);
 
         /* renamed from: y  reason: collision with root package name */
-        public static final a f3332y = new a(1048576, null);
+        public static final a f3444y = new a(1048576, null);
 
         /* renamed from: z  reason: collision with root package name */
-        public static final a f3333z = new a(2097152, (CharSequence) null, AccessibilityViewCommand.h.class);
+        public static final a f3445z = new a(2097152, (CharSequence) null, AccessibilityViewCommand.h.class);
 
         /* renamed from: a  reason: collision with root package name */
-        final Object f3334a;
+        final Object f3446a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f3335b;
+        private final int f3447b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Class f3336c;
+        private final Class f3448c;
 
         /* renamed from: d  reason: collision with root package name */
-        protected final AccessibilityViewCommand f3337d;
+        protected final AccessibilityViewCommand f3449d;
 
         static {
             AccessibilityNodeInfo.AccessibilityAction accessibilityAction;
@@ -269,27 +269,27 @@ public class AccessibilityNodeInfoCompat {
         }
 
         public a a(CharSequence charSequence, AccessibilityViewCommand accessibilityViewCommand) {
-            return new a(null, this.f3335b, charSequence, accessibilityViewCommand, this.f3336c);
+            return new a(null, this.f3447b, charSequence, accessibilityViewCommand, this.f3448c);
         }
 
         public int b() {
-            return ((AccessibilityNodeInfo.AccessibilityAction) this.f3334a).getId();
+            return ((AccessibilityNodeInfo.AccessibilityAction) this.f3446a).getId();
         }
 
         public CharSequence c() {
-            return ((AccessibilityNodeInfo.AccessibilityAction) this.f3334a).getLabel();
+            return ((AccessibilityNodeInfo.AccessibilityAction) this.f3446a).getLabel();
         }
 
         public boolean d(View view, Bundle bundle) {
             String name;
-            if (this.f3337d != null) {
-                Class cls = this.f3336c;
+            if (this.f3449d != null) {
+                Class cls = this.f3448c;
                 if (cls != null) {
                     try {
                         android.support.v4.media.session.b.a(cls.getDeclaredConstructor(null).newInstance(null));
                         throw null;
                     } catch (Exception e10) {
-                        Class cls2 = this.f3336c;
+                        Class cls2 = this.f3448c;
                         if (cls2 == null) {
                             name = "null";
                         } else {
@@ -298,7 +298,7 @@ public class AccessibilityNodeInfoCompat {
                         Log.e("A11yActionCompat", "Failed to execute command with argument class ViewCommandArgument: " + name, e10);
                     }
                 }
-                return this.f3337d.a(view, null);
+                return this.f3449d.a(view, null);
             }
             return false;
         }
@@ -308,13 +308,13 @@ public class AccessibilityNodeInfoCompat {
                 return false;
             }
             a aVar = (a) obj;
-            Object obj2 = this.f3334a;
+            Object obj2 = this.f3446a;
             if (obj2 == null) {
-                if (aVar.f3334a != null) {
+                if (aVar.f3446a != null) {
                     return false;
                 }
                 return true;
-            } else if (!obj2.equals(aVar.f3334a)) {
+            } else if (!obj2.equals(aVar.f3446a)) {
                 return false;
             } else {
                 return true;
@@ -322,7 +322,7 @@ public class AccessibilityNodeInfoCompat {
         }
 
         public int hashCode() {
-            Object obj = this.f3334a;
+            Object obj = this.f3446a;
             if (obj != null) {
                 return obj.hashCode();
             }
@@ -332,7 +332,7 @@ public class AccessibilityNodeInfoCompat {
         public String toString() {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("AccessibilityActionCompat: ");
-            String j10 = AccessibilityNodeInfoCompat.j(this.f3335b);
+            String j10 = AccessibilityNodeInfoCompat.j(this.f3447b);
             if (j10.equals("ACTION_UNKNOWN") && c() != null) {
                 j10 = c().toString();
             }
@@ -353,14 +353,14 @@ public class AccessibilityNodeInfoCompat {
         }
 
         a(Object obj, int i10, CharSequence charSequence, AccessibilityViewCommand accessibilityViewCommand, Class cls) {
-            this.f3335b = i10;
-            this.f3337d = accessibilityViewCommand;
+            this.f3447b = i10;
+            this.f3449d = accessibilityViewCommand;
             if (obj == null) {
-                this.f3334a = new AccessibilityNodeInfo.AccessibilityAction(i10, charSequence);
+                this.f3446a = new AccessibilityNodeInfo.AccessibilityAction(i10, charSequence);
             } else {
-                this.f3334a = obj;
+                this.f3446a = obj;
             }
-            this.f3336c = cls;
+            this.f3448c = cls;
         }
     }
 
@@ -433,10 +433,10 @@ public class AccessibilityNodeInfoCompat {
     public static class f {
 
         /* renamed from: a  reason: collision with root package name */
-        final Object f3338a;
+        final Object f3450a;
 
         f(Object obj) {
-            this.f3338a = obj;
+            this.f3450a = obj;
         }
 
         public static f a(int i10, int i11, boolean z10) {
@@ -452,10 +452,10 @@ public class AccessibilityNodeInfoCompat {
     public static class g {
 
         /* renamed from: a  reason: collision with root package name */
-        final Object f3339a;
+        final Object f3451a;
 
         g(Object obj) {
-            this.f3339a = obj;
+            this.f3451a = obj;
         }
 
         public static g a(int i10, int i11, int i12, int i13, boolean z10) {
@@ -471,10 +471,10 @@ public class AccessibilityNodeInfoCompat {
     public static class h {
 
         /* renamed from: a  reason: collision with root package name */
-        final Object f3340a;
+        final Object f3452a;
 
         h(Object obj) {
-            this.f3340a = obj;
+            this.f3452a = obj;
         }
 
         public static h d(int i10, float f10, float f11, float f12) {
@@ -482,20 +482,20 @@ public class AccessibilityNodeInfoCompat {
         }
 
         public float a() {
-            return ((AccessibilityNodeInfo.RangeInfo) this.f3340a).getCurrent();
+            return ((AccessibilityNodeInfo.RangeInfo) this.f3452a).getCurrent();
         }
 
         public float b() {
-            return ((AccessibilityNodeInfo.RangeInfo) this.f3340a).getMax();
+            return ((AccessibilityNodeInfo.RangeInfo) this.f3452a).getMax();
         }
 
         public float c() {
-            return ((AccessibilityNodeInfo.RangeInfo) this.f3340a).getMin();
+            return ((AccessibilityNodeInfo.RangeInfo) this.f3452a).getMin();
         }
     }
 
     private AccessibilityNodeInfoCompat(AccessibilityNodeInfo accessibilityNodeInfo) {
-        this.f3309a = accessibilityNodeInfo;
+        this.f3421a = accessibilityNodeInfo;
     }
 
     private SparseArray D(View view) {
@@ -524,8 +524,8 @@ public class AccessibilityNodeInfoCompat {
                 }
             }
         }
-        int i11 = f3308d;
-        f3308d = i11 + 1;
+        int i11 = f3420d;
+        f3420d = i11 + 1;
         return i11;
     }
 
@@ -537,17 +537,17 @@ public class AccessibilityNodeInfoCompat {
     }
 
     private void g() {
-        this.f3309a.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_START_KEY");
-        this.f3309a.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_END_KEY");
-        this.f3309a.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_FLAGS_KEY");
-        this.f3309a.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_ID_KEY");
+        this.f3421a.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_START_KEY");
+        this.f3421a.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_END_KEY");
+        this.f3421a.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_FLAGS_KEY");
+        this.f3421a.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_ID_KEY");
     }
 
     private List h(String str) {
-        ArrayList<Integer> integerArrayList = this.f3309a.getExtras().getIntegerArrayList(str);
+        ArrayList<Integer> integerArrayList = this.f3421a.getExtras().getIntegerArrayList(str);
         if (integerArrayList == null) {
             ArrayList<Integer> arrayList = new ArrayList<>();
-            this.f3309a.getExtras().putIntegerArrayList(str, arrayList);
+            this.f3421a.getExtras().putIntegerArrayList(str, arrayList);
             return arrayList;
         }
         return integerArrayList;
@@ -676,7 +676,7 @@ public class AccessibilityNodeInfoCompat {
     }
 
     public static AccessibilityNodeInfoCompat l0(AccessibilityNodeInfoCompat accessibilityNodeInfoCompat) {
-        return h1(AccessibilityNodeInfo.obtain(accessibilityNodeInfoCompat.f3309a));
+        return h1(AccessibilityNodeInfo.obtain(accessibilityNodeInfoCompat.f3421a));
     }
 
     private void p0(View view) {
@@ -740,46 +740,46 @@ public class AccessibilityNodeInfoCompat {
     }
 
     public Bundle A() {
-        return this.f3309a.getExtras();
+        return this.f3421a.getExtras();
     }
 
     public void A0(CharSequence charSequence) {
-        this.f3309a.setContentDescription(charSequence);
+        this.f3421a.setContentDescription(charSequence);
     }
 
     public CharSequence B() {
         if (Build.VERSION.SDK_INT >= 26) {
-            return this.f3309a.getHintText();
+            return this.f3421a.getHintText();
         }
-        return this.f3309a.getExtras().getCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.HINT_TEXT_KEY");
+        return this.f3421a.getExtras().getCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.HINT_TEXT_KEY");
     }
 
     public void B0(boolean z10) {
-        this.f3309a.setDismissable(z10);
+        this.f3421a.setDismissable(z10);
     }
 
     public int C() {
-        return this.f3309a.getMaxTextLength();
+        return this.f3421a.getMaxTextLength();
     }
 
     public void C0(boolean z10) {
-        this.f3309a.setEnabled(z10);
+        this.f3421a.setEnabled(z10);
     }
 
     public void D0(CharSequence charSequence) {
-        this.f3309a.setError(charSequence);
+        this.f3421a.setError(charSequence);
     }
 
     public CharSequence E() {
-        return this.f3309a.getPackageName();
+        return this.f3421a.getPackageName();
     }
 
     public void E0(boolean z10) {
-        this.f3309a.setFocusable(z10);
+        this.f3421a.setFocusable(z10);
     }
 
     public h F() {
-        AccessibilityNodeInfo.RangeInfo rangeInfo = this.f3309a.getRangeInfo();
+        AccessibilityNodeInfo.RangeInfo rangeInfo = this.f3421a.getRangeInfo();
         if (rangeInfo != null) {
             return new h(rangeInfo);
         }
@@ -787,7 +787,7 @@ public class AccessibilityNodeInfoCompat {
     }
 
     public void F0(boolean z10) {
-        this.f3309a.setFocused(z10);
+        this.f3421a.setFocused(z10);
     }
 
     public void G0(boolean z10) {
@@ -796,14 +796,14 @@ public class AccessibilityNodeInfoCompat {
 
     public CharSequence H() {
         if (Build.VERSION.SDK_INT >= 30) {
-            return b.a(this.f3309a);
+            return b.a(this.f3421a);
         }
-        return this.f3309a.getExtras().getCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.STATE_DESCRIPTION_KEY");
+        return this.f3421a.getExtras().getCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.STATE_DESCRIPTION_KEY");
     }
 
     public void H0(boolean z10) {
         if (Build.VERSION.SDK_INT >= 28) {
-            this.f3309a.setHeading(z10);
+            this.f3421a.setHeading(z10);
         } else {
             r0(2, z10);
         }
@@ -811,16 +811,16 @@ public class AccessibilityNodeInfoCompat {
 
     public CharSequence I() {
         if (Build.VERSION.SDK_INT >= 36) {
-            return e.d(this.f3309a);
+            return e.d(this.f3421a);
         }
-        return this.f3309a.getExtras().getCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.SUPPLEMENTAL_DESCRIPTION_KEY");
+        return this.f3421a.getExtras().getCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.SUPPLEMENTAL_DESCRIPTION_KEY");
     }
 
     public void I0(CharSequence charSequence) {
         if (Build.VERSION.SDK_INT >= 26) {
-            this.f3309a.setHintText(charSequence);
+            this.f3421a.setHintText(charSequence);
         } else {
-            this.f3309a.getExtras().putCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.HINT_TEXT_KEY", charSequence);
+            this.f3421a.getExtras().putCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.HINT_TEXT_KEY", charSequence);
         }
     }
 
@@ -830,156 +830,156 @@ public class AccessibilityNodeInfoCompat {
             List h11 = h("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_END_KEY");
             List h12 = h("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_FLAGS_KEY");
             List h13 = h("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_ID_KEY");
-            SpannableString spannableString = new SpannableString(TextUtils.substring(this.f3309a.getText(), 0, this.f3309a.getText().length()));
+            SpannableString spannableString = new SpannableString(TextUtils.substring(this.f3421a.getText(), 0, this.f3421a.getText().length()));
             for (int i10 = 0; i10 < h10.size(); i10++) {
                 spannableString.setSpan(new c2.a(((Integer) h13.get(i10)).intValue(), this, A().getInt("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_ACTION_ID_KEY")), ((Integer) h10.get(i10)).intValue(), ((Integer) h11.get(i10)).intValue(), ((Integer) h12.get(i10)).intValue());
             }
             return spannableString;
         }
-        return this.f3309a.getText();
+        return this.f3421a.getText();
     }
 
     public void J0(boolean z10) {
-        this.f3309a.setImportantForAccessibility(z10);
+        this.f3421a.setImportantForAccessibility(z10);
     }
 
     public CharSequence K() {
         if (Build.VERSION.SDK_INT >= 28) {
-            return this.f3309a.getTooltipText();
+            return this.f3421a.getTooltipText();
         }
-        return this.f3309a.getExtras().getCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.TOOLTIP_TEXT_KEY");
+        return this.f3421a.getExtras().getCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.TOOLTIP_TEXT_KEY");
     }
 
     public void K0(View view) {
-        this.f3309a.setLabelFor(view);
+        this.f3421a.setLabelFor(view);
     }
 
     public String L() {
         if (Build.VERSION.SDK_INT >= 33) {
-            return c.a(this.f3309a);
+            return c.a(this.f3421a);
         }
-        return this.f3309a.getExtras().getString("androidx.view.accessibility.AccessibilityNodeInfoCompat.UNIQUE_ID_KEY");
+        return this.f3421a.getExtras().getString("androidx.view.accessibility.AccessibilityNodeInfoCompat.UNIQUE_ID_KEY");
     }
 
     public void L0(View view) {
-        this.f3309a.setLabeledBy(view);
+        this.f3421a.setLabeledBy(view);
     }
 
     public String M() {
-        return this.f3309a.getViewIdResourceName();
+        return this.f3421a.getViewIdResourceName();
     }
 
     public void M0(int i10) {
-        this.f3309a.setMaxTextLength(i10);
+        this.f3421a.setMaxTextLength(i10);
     }
 
     public void N0(int i10) {
-        this.f3309a.setMovementGranularities(i10);
+        this.f3421a.setMovementGranularities(i10);
     }
 
     public void O0(CharSequence charSequence) {
-        this.f3309a.setPackageName(charSequence);
+        this.f3421a.setPackageName(charSequence);
     }
 
     public boolean P() {
         if (Build.VERSION.SDK_INT >= 34) {
-            return d.d(this.f3309a);
+            return d.d(this.f3421a);
         }
         return l(64);
     }
 
     public void P0(CharSequence charSequence) {
         if (Build.VERSION.SDK_INT >= 28) {
-            this.f3309a.setPaneTitle(charSequence);
+            this.f3421a.setPaneTitle(charSequence);
         } else {
-            this.f3309a.getExtras().putCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.PANE_TITLE_KEY", charSequence);
+            this.f3421a.getExtras().putCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.PANE_TITLE_KEY", charSequence);
         }
     }
 
     public boolean Q() {
-        return this.f3309a.isAccessibilityFocused();
+        return this.f3421a.isAccessibilityFocused();
     }
 
     public void Q0(View view) {
-        this.f3310b = -1;
-        this.f3309a.setParent(view);
+        this.f3422b = -1;
+        this.f3421a.setParent(view);
     }
 
     public boolean R() {
-        return this.f3309a.isCheckable();
+        return this.f3421a.isCheckable();
     }
 
     public void R0(View view, int i10) {
-        this.f3310b = i10;
-        this.f3309a.setParent(view, i10);
+        this.f3422b = i10;
+        this.f3421a.setParent(view, i10);
     }
 
     public boolean S() {
-        return this.f3309a.isChecked();
+        return this.f3421a.isChecked();
     }
 
     public void S0(h hVar) {
-        this.f3309a.setRangeInfo((AccessibilityNodeInfo.RangeInfo) hVar.f3340a);
+        this.f3421a.setRangeInfo((AccessibilityNodeInfo.RangeInfo) hVar.f3452a);
     }
 
     public boolean T() {
-        return this.f3309a.isClickable();
+        return this.f3421a.isClickable();
     }
 
     public void T0(CharSequence charSequence) {
-        this.f3309a.getExtras().putCharSequence("AccessibilityNodeInfo.roleDescription", charSequence);
+        this.f3421a.getExtras().putCharSequence("AccessibilityNodeInfo.roleDescription", charSequence);
     }
 
     public boolean U() {
-        return this.f3309a.isContextClickable();
+        return this.f3421a.isContextClickable();
     }
 
     public void U0(boolean z10) {
         if (Build.VERSION.SDK_INT >= 28) {
-            this.f3309a.setScreenReaderFocusable(z10);
+            this.f3421a.setScreenReaderFocusable(z10);
         } else {
             r0(1, z10);
         }
     }
 
     public boolean V() {
-        return this.f3309a.isEnabled();
+        return this.f3421a.isEnabled();
     }
 
     public void V0(boolean z10) {
-        this.f3309a.setScrollable(z10);
+        this.f3421a.setScrollable(z10);
     }
 
     public boolean W() {
         if (Build.VERSION.SDK_INT >= 36) {
-            return e.e(this.f3309a);
+            return e.e(this.f3421a);
         }
-        return this.f3309a.getExtras().getBoolean("androidx.view.accessibility.AccessibilityNodeInfoCompat.IS_REQUIRED_KEY");
+        return this.f3421a.getExtras().getBoolean("androidx.view.accessibility.AccessibilityNodeInfoCompat.IS_REQUIRED_KEY");
     }
 
     public void W0(boolean z10) {
-        this.f3309a.setSelected(z10);
+        this.f3421a.setSelected(z10);
     }
 
     public boolean X() {
-        return this.f3309a.isFocusable();
+        return this.f3421a.isFocusable();
     }
 
     public void X0(boolean z10) {
         if (Build.VERSION.SDK_INT >= 26) {
-            this.f3309a.setShowingHintText(z10);
+            this.f3421a.setShowingHintText(z10);
         } else {
             r0(4, z10);
         }
     }
 
     public boolean Y() {
-        return this.f3309a.isFocused();
+        return this.f3421a.isFocused();
     }
 
     public void Y0(View view) {
-        this.f3311c = -1;
-        this.f3309a.setSource(view);
+        this.f3423c = -1;
+        this.f3421a.setSource(view);
     }
 
     public boolean Z() {
@@ -987,75 +987,75 @@ public class AccessibilityNodeInfoCompat {
     }
 
     public void Z0(View view, int i10) {
-        this.f3311c = i10;
-        this.f3309a.setSource(view, i10);
+        this.f3423c = i10;
+        this.f3421a.setSource(view, i10);
     }
 
     public void a(int i10) {
-        this.f3309a.addAction(i10);
+        this.f3421a.addAction(i10);
     }
 
     public boolean a0() {
-        return this.f3309a.isImportantForAccessibility();
+        return this.f3421a.isImportantForAccessibility();
     }
 
     public void a1(CharSequence charSequence) {
         if (Build.VERSION.SDK_INT >= 30) {
-            b.b(this.f3309a, charSequence);
+            b.b(this.f3421a, charSequence);
         } else {
-            this.f3309a.getExtras().putCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.STATE_DESCRIPTION_KEY", charSequence);
+            this.f3421a.getExtras().putCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.STATE_DESCRIPTION_KEY", charSequence);
         }
     }
 
     public void b(a aVar) {
-        this.f3309a.addAction((AccessibilityNodeInfo.AccessibilityAction) aVar.f3334a);
+        this.f3421a.addAction((AccessibilityNodeInfo.AccessibilityAction) aVar.f3446a);
     }
 
     public boolean b0() {
-        return this.f3309a.isLongClickable();
+        return this.f3421a.isLongClickable();
     }
 
     public void b1(CharSequence charSequence) {
-        this.f3309a.setText(charSequence);
+        this.f3421a.setText(charSequence);
     }
 
     public void c(View view) {
-        this.f3309a.addChild(view);
+        this.f3421a.addChild(view);
     }
 
     public boolean c0() {
-        return this.f3309a.isPassword();
+        return this.f3421a.isPassword();
     }
 
     public void c1(CharSequence charSequence) {
         if (Build.VERSION.SDK_INT >= 28) {
-            this.f3309a.setTooltipText(charSequence);
+            this.f3421a.setTooltipText(charSequence);
         } else {
-            this.f3309a.getExtras().putCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.TOOLTIP_TEXT_KEY", charSequence);
+            this.f3421a.getExtras().putCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.TOOLTIP_TEXT_KEY", charSequence);
         }
     }
 
     public void d(View view, int i10) {
-        this.f3309a.addChild(view, i10);
+        this.f3421a.addChild(view, i10);
     }
 
     public boolean d0() {
         if (Build.VERSION.SDK_INT >= 28) {
-            return this.f3309a.isScreenReaderFocusable();
+            return this.f3421a.isScreenReaderFocusable();
         }
         return l(1);
     }
 
     public void d1(View view) {
-        this.f3309a.setTraversalAfter(view);
+        this.f3421a.setTraversalAfter(view);
     }
 
     public boolean e0() {
-        return this.f3309a.isScrollable();
+        return this.f3421a.isScrollable();
     }
 
     public void e1(String str) {
-        this.f3309a.setViewIdResourceName(str);
+        this.f3421a.setViewIdResourceName(str);
     }
 
     public boolean equals(Object obj) {
@@ -1066,15 +1066,15 @@ public class AccessibilityNodeInfoCompat {
             return false;
         }
         AccessibilityNodeInfoCompat accessibilityNodeInfoCompat = (AccessibilityNodeInfoCompat) obj;
-        AccessibilityNodeInfo accessibilityNodeInfo = this.f3309a;
+        AccessibilityNodeInfo accessibilityNodeInfo = this.f3421a;
         if (accessibilityNodeInfo == null) {
-            if (accessibilityNodeInfoCompat.f3309a != null) {
+            if (accessibilityNodeInfoCompat.f3421a != null) {
                 return false;
             }
-        } else if (!accessibilityNodeInfo.equals(accessibilityNodeInfoCompat.f3309a)) {
+        } else if (!accessibilityNodeInfo.equals(accessibilityNodeInfoCompat.f3421a)) {
             return false;
         }
-        if (this.f3311c == accessibilityNodeInfoCompat.f3311c && this.f3310b == accessibilityNodeInfoCompat.f3310b) {
+        if (this.f3423c == accessibilityNodeInfoCompat.f3423c && this.f3422b == accessibilityNodeInfoCompat.f3422b) {
             return true;
         }
         return false;
@@ -1086,7 +1086,7 @@ public class AccessibilityNodeInfoCompat {
             p0(view);
             ClickableSpan[] t10 = t(charSequence);
             if (t10 != null && t10.length > 0) {
-                A().putInt("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_ACTION_ID_KEY", o1.e.f42196a);
+                A().putInt("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_ACTION_ID_KEY", o1.e.f42102a);
                 SparseArray D = D(view);
                 for (int i10 = 0; i10 < t10.length; i10++) {
                     int O = O(t10[i10], D);
@@ -1098,33 +1098,33 @@ public class AccessibilityNodeInfoCompat {
     }
 
     public boolean f0() {
-        return this.f3309a.isSelected();
+        return this.f3421a.isSelected();
     }
 
     public void f1(boolean z10) {
-        this.f3309a.setVisibleToUser(z10);
+        this.f3421a.setVisibleToUser(z10);
     }
 
     public boolean g0() {
         if (Build.VERSION.SDK_INT >= 26) {
-            return this.f3309a.isShowingHintText();
+            return this.f3421a.isShowingHintText();
         }
         return l(4);
     }
 
     public AccessibilityNodeInfo g1() {
-        return this.f3309a;
+        return this.f3421a;
     }
 
     public boolean h0() {
         if (Build.VERSION.SDK_INT >= 33) {
-            return c.b(this.f3309a);
+            return c.b(this.f3421a);
         }
         return l(8388608);
     }
 
     public int hashCode() {
-        AccessibilityNodeInfo accessibilityNodeInfo = this.f3309a;
+        AccessibilityNodeInfo accessibilityNodeInfo = this.f3421a;
         if (accessibilityNodeInfo == null) {
             return 0;
         }
@@ -1132,7 +1132,7 @@ public class AccessibilityNodeInfoCompat {
     }
 
     public List i() {
-        List<AccessibilityNodeInfo.AccessibilityAction> actionList = this.f3309a.getActionList();
+        List<AccessibilityNodeInfo.AccessibilityAction> actionList = this.f3421a.getActionList();
         ArrayList arrayList = new ArrayList();
         int size = actionList.size();
         for (int i10 = 0; i10 < size; i10++) {
@@ -1142,23 +1142,23 @@ public class AccessibilityNodeInfoCompat {
     }
 
     public boolean i0() {
-        return this.f3309a.isVisibleToUser();
+        return this.f3421a.isVisibleToUser();
     }
 
     public int k() {
-        return this.f3309a.getActions();
+        return this.f3421a.getActions();
     }
 
     public void m(Rect rect) {
-        this.f3309a.getBoundsInParent(rect);
+        this.f3421a.getBoundsInParent(rect);
     }
 
     public boolean m0(int i10, Bundle bundle) {
-        return this.f3309a.performAction(i10, bundle);
+        return this.f3421a.performAction(i10, bundle);
     }
 
     public void n(Rect rect) {
-        this.f3309a.getBoundsInScreen(rect);
+        this.f3421a.getBoundsInScreen(rect);
     }
 
     public void n0() {
@@ -1166,44 +1166,44 @@ public class AccessibilityNodeInfoCompat {
 
     public void o(Rect rect) {
         if (Build.VERSION.SDK_INT >= 34) {
-            d.b(this.f3309a, rect);
+            d.b(this.f3421a, rect);
             return;
         }
-        Rect rect2 = (Rect) this.f3309a.getExtras().getParcelable("androidx.view.accessibility.AccessibilityNodeInfoCompat.BOUNDS_IN_WINDOW_KEY");
+        Rect rect2 = (Rect) this.f3421a.getExtras().getParcelable("androidx.view.accessibility.AccessibilityNodeInfoCompat.BOUNDS_IN_WINDOW_KEY");
         if (rect2 != null) {
             rect.set(rect2.left, rect2.top, rect2.right, rect2.bottom);
         }
     }
 
     public boolean o0(a aVar) {
-        return this.f3309a.removeAction((AccessibilityNodeInfo.AccessibilityAction) aVar.f3334a);
+        return this.f3421a.removeAction((AccessibilityNodeInfo.AccessibilityAction) aVar.f3446a);
     }
 
     public int p() {
         if (Build.VERSION.SDK_INT >= 36) {
-            return e.b(this.f3309a);
+            return e.b(this.f3421a);
         }
-        return this.f3309a.getExtras().getInt("androidx.view.accessibility.AccessibilityNodeInfoCompat.CHECKED_KEY", this.f3309a.isChecked() ? 1 : 0);
+        return this.f3421a.getExtras().getInt("androidx.view.accessibility.AccessibilityNodeInfoCompat.CHECKED_KEY", this.f3421a.isChecked() ? 1 : 0);
     }
 
     public void q0(boolean z10) {
-        this.f3309a.setAccessibilityFocused(z10);
+        this.f3421a.setAccessibilityFocused(z10);
     }
 
     public int r() {
-        return this.f3309a.getChildCount();
+        return this.f3421a.getChildCount();
     }
 
     public CharSequence s() {
-        return this.f3309a.getClassName();
+        return this.f3421a.getClassName();
     }
 
     public void s0(Rect rect) {
-        this.f3309a.setBoundsInParent(rect);
+        this.f3421a.setBoundsInParent(rect);
     }
 
     public void t0(Rect rect) {
-        this.f3309a.setBoundsInScreen(rect);
+        this.f3421a.setBoundsInScreen(rect);
     }
 
     public String toString() {
@@ -1293,7 +1293,7 @@ public class AccessibilityNodeInfoCompat {
     }
 
     public f u() {
-        AccessibilityNodeInfo.CollectionInfo collectionInfo = this.f3309a.getCollectionInfo();
+        AccessibilityNodeInfo.CollectionInfo collectionInfo = this.f3421a.getCollectionInfo();
         if (collectionInfo != null) {
             return new f(collectionInfo);
         }
@@ -1301,61 +1301,61 @@ public class AccessibilityNodeInfoCompat {
     }
 
     public void u0(boolean z10) {
-        this.f3309a.setCheckable(z10);
+        this.f3421a.setCheckable(z10);
     }
 
     public CharSequence v() {
         if (Build.VERSION.SDK_INT >= 34) {
-            return d.c(this.f3309a);
+            return d.c(this.f3421a);
         }
-        return this.f3309a.getExtras().getCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.CONTAINER_TITLE_KEY");
+        return this.f3421a.getExtras().getCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.CONTAINER_TITLE_KEY");
     }
 
     public void v0(boolean z10) {
-        this.f3309a.setChecked(z10);
+        this.f3421a.setChecked(z10);
     }
 
     public CharSequence w() {
-        return this.f3309a.getContentDescription();
+        return this.f3421a.getContentDescription();
     }
 
     public void w0(CharSequence charSequence) {
-        this.f3309a.setClassName(charSequence);
+        this.f3421a.setClassName(charSequence);
     }
 
     public CharSequence x() {
-        return this.f3309a.getError();
+        return this.f3421a.getError();
     }
 
     public void x0(boolean z10) {
-        this.f3309a.setClickable(z10);
+        this.f3421a.setClickable(z10);
     }
 
     public int y() {
         if (Build.VERSION.SDK_INT >= 36) {
-            return e.c(this.f3309a);
+            return e.c(this.f3421a);
         }
-        return this.f3309a.getExtras().getInt("androidx.view.accessibility.AccessibilityNodeInfoCompat.EXPANDED_STATE_KEY", 0);
+        return this.f3421a.getExtras().getInt("androidx.view.accessibility.AccessibilityNodeInfoCompat.EXPANDED_STATE_KEY", 0);
     }
 
     public void y0(Object obj) {
         AccessibilityNodeInfo.CollectionInfo collectionInfo;
-        AccessibilityNodeInfo accessibilityNodeInfo = this.f3309a;
+        AccessibilityNodeInfo accessibilityNodeInfo = this.f3421a;
         if (obj == null) {
             collectionInfo = null;
         } else {
-            collectionInfo = (AccessibilityNodeInfo.CollectionInfo) ((f) obj).f3338a;
+            collectionInfo = (AccessibilityNodeInfo.CollectionInfo) ((f) obj).f3450a;
         }
         accessibilityNodeInfo.setCollectionInfo(collectionInfo);
     }
 
     public void z0(Object obj) {
         AccessibilityNodeInfo.CollectionItemInfo collectionItemInfo;
-        AccessibilityNodeInfo accessibilityNodeInfo = this.f3309a;
+        AccessibilityNodeInfo accessibilityNodeInfo = this.f3421a;
         if (obj == null) {
             collectionItemInfo = null;
         } else {
-            collectionItemInfo = (AccessibilityNodeInfo.CollectionItemInfo) ((g) obj).f3339a;
+            collectionItemInfo = (AccessibilityNodeInfo.CollectionItemInfo) ((g) obj).f3451a;
         }
         accessibilityNodeInfo.setCollectionItemInfo(collectionItemInfo);
     }

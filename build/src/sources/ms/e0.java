@@ -1,44 +1,32 @@
 package ms;
 
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import kotlin.Result;
+import kotlin.coroutines.Continuation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e0 {
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final e0 f39155d = new e0("START", 0);
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final e0 f39156e = new e0("STOP", 1);
-
-    /* renamed from: i  reason: collision with root package name */
-    public static final e0 f39157i = new e0("STOP_AND_RESET_REPLAY_CACHE", 2);
-
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ e0[] f39158o;
-
-    /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f39159p;
-
-    static {
-        e0[] a10 = a();
-        f39158o = a10;
-        f39159p = sr.a.a(a10);
+public abstract class e0 {
+    public static final String a(Object obj) {
+        return obj.getClass().getSimpleName();
     }
 
-    private e0(String str, int i10) {
+    public static final String b(Object obj) {
+        return Integer.toHexString(System.identityHashCode(obj));
     }
 
-    private static final /* synthetic */ e0[] a() {
-        return new e0[]{f39155d, f39156e, f39157i};
-    }
-
-    public static e0 valueOf(String str) {
-        return (e0) Enum.valueOf(e0.class, str);
-    }
-
-    public static e0[] values() {
-        return (e0[]) f39158o.clone();
+    public static final String c(Continuation continuation) {
+        String b10;
+        if (continuation instanceof rs.i) {
+            return ((rs.i) continuation).toString();
+        }
+        try {
+            Result.a aVar = Result.f31985e;
+            b10 = Result.b(continuation + '@' + b(continuation));
+        } catch (Throwable th2) {
+            Result.a aVar2 = Result.f31985e;
+            b10 = Result.b(kotlin.c.a(th2));
+        }
+        if (Result.e(b10) != null) {
+            b10 = continuation.getClass().getName() + '@' + b(continuation);
+        }
+        return (String) b10;
     }
 }

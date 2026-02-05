@@ -1,29 +1,29 @@
 package kotlinx.coroutines;
 
-import js.z0;
 import kotlin.Result;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
+import ms.z0;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class f0 extends z0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private final Continuation f35510p;
+    private final Continuation f35034p;
 
     public f0(Continuation continuation) {
-        this.f35510p = continuation;
+        this.f35034p = continuation;
     }
 
-    @Override // js.z0
+    @Override // ms.z0
     public boolean v() {
         return false;
     }
 
-    @Override // js.z0
+    @Override // ms.z0
     public void w(Throwable th2) {
-        Continuation continuation = this.f35510p;
-        Result.a aVar = Result.f32461e;
-        continuation.resumeWith(Result.b(Unit.f32464a));
+        Continuation continuation = this.f35034p;
+        Result.a aVar = Result.f31985e;
+        continuation.resumeWith(Result.b(Unit.f31988a));
     }
 }

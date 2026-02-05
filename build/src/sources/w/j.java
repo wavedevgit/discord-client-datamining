@@ -15,7 +15,7 @@ public class j implements e2 {
     public static final class a implements a0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final r1 f51786a = r1.Z();
+        private final r1 f52443a = r1.Z();
 
         public static /* synthetic */ boolean c(a aVar, r0 r0Var, r0.a aVar2) {
             aVar.a().K(aVar2, r0Var.f(aVar2), r0Var.a(aVar2));
@@ -35,11 +35,11 @@ public class j implements e2 {
 
         @Override // x.a0
         public q1 a() {
-            return this.f51786a;
+            return this.f52443a;
         }
 
         public j d() {
-            return new j(w1.Y(this.f51786a));
+            return new j(w1.Y(this.f52443a));
         }
     }
 

@@ -5,23 +5,23 @@ import java.util.Objects;
 final class a0 extends z {
 
     /* renamed from: p  reason: collision with root package name */
-    static final z f32345p = new a0(new Object[0], 0);
+    static final z f31808p = new a0(new Object[0], 0);
 
     /* renamed from: i  reason: collision with root package name */
-    final transient Object[] f32346i;
+    final transient Object[] f31809i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f32347o;
+    private final transient int f31810o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a0(Object[] objArr, int i10) {
-        this.f32346i = objArr;
-        this.f32347o = i10;
+        this.f31809i = objArr;
+        this.f31810o = i10;
     }
 
     @Override // kg.w
     final Object[] b() {
-        return this.f32346i;
+        return this.f31809i;
     }
 
     @Override // kg.w
@@ -31,7 +31,7 @@ final class a0 extends z {
 
     @Override // kg.w
     final int d() {
-        return this.f32347o;
+        return this.f31810o;
     }
 
     @Override // kg.w
@@ -41,20 +41,20 @@ final class a0 extends z {
 
     @Override // kg.z, kg.w
     final int g(Object[] objArr, int i10) {
-        System.arraycopy(this.f32346i, 0, objArr, 0, this.f32347o);
-        return this.f32347o;
+        System.arraycopy(this.f31809i, 0, objArr, 0, this.f31810o);
+        return this.f31810o;
     }
 
     @Override // java.util.List
     public final Object get(int i10) {
-        t.a(i10, this.f32347o, "index");
-        Object obj = this.f32346i[i10];
+        t.a(i10, this.f31810o, "index");
+        Object obj = this.f31809i[i10];
         Objects.requireNonNull(obj);
         return obj;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f32347o;
+        return this.f31810o;
     }
 }

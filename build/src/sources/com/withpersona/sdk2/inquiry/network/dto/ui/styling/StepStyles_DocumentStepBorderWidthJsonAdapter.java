@@ -41,18 +41,18 @@ public final class StepStyles_DocumentStepBorderWidthJsonAdapter extends h {
     @NotNull
     public StepStyles.DocumentStepBorderWidth fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.MeasurementSet measurementSet = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 measurementSet = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.DocumentStepBorderWidth(measurementSet);
     }
 
@@ -60,8 +60,8 @@ public final class StepStyles_DocumentStepBorderWidthJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.DocumentStepBorderWidth documentStepBorderWidth) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStepBorderWidth != null) {
-            writer.l();
-            writer.A0("imagePreview");
+            writer.k();
+            writer.W("imagePreview");
             this.nullableMeasurementSetAdapter.toJson(writer, documentStepBorderWidth.getImagePreview());
             writer.E();
             return;

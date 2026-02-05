@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = function(arg0) { // Environment: var1
-        _fun111567: for (var _fun111567_ip = 0;;) switch (_fun111567_ip) {
+        _fun111653: for (var _fun111653_ip = 0;;) switch (_fun111653_ip) {
             case 0:
                 var2 = arg0;
                 var0 = {};
@@ -51,13 +51,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7.bind(var5)(var4);
                 var7 = var4.colors;
                 if (var2) {
-                    _fun111567_ip = 118;
-                    continue _fun111567
+                    _fun111653_ip = 118;
+                    continue _fun111653
                 }
             case 110:
                 var4 = var7.WHITE;
-                _fun111567_ip = 124;
-                continue _fun111567;
+                _fun111653_ip = 124;
+                continue _fun111653;
             case 118:
                 var4 = var7.INTERACTIVE_TEXT_DEFAULT;
             case 124:
@@ -66,6 +66,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var7 = _closure1_slot1;
                 var4 = _closure1_slot2;
+                var8 = var4[var6];
+                var8 = var7.bind(var5)(var8);
+                var8 = var8.colors;
+                var8 = var8.ICON_MUTED;
+                var1.color = var8;
+                var0.iconFillMuted = var1;
+                var1 = {};
                 var8 = var4[var6];
                 var8 = var7.bind(var5)(var8);
                 var8 = var8.unsafe_rawColors;
@@ -86,16 +93,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.bind(var5)(var3);
                 var3 = var3.colors;
                 if (var2) {
-                    _fun111567_ip = 238;
-                    continue _fun111567
+                    _fun111653_ip = 269;
+                    continue _fun111653
                 }
-            case 230:
+            case 261:
                 var2 = var3.WHITE;
-                _fun111567_ip = 244;
-                continue _fun111567;
-            case 238:
+                _fun111653_ip = 275;
+                continue _fun111653;
+            case 269:
                 var2 = var3.CONTROL_BRAND_FOREGROUND;
-            case 244:
+            case 275:
                 var1.backgroundColor = var2;
                 var0.iconBadgeIndicator = var1;
                 return var0;
@@ -130,4 +137,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useVoicePanelButtonStyles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1297, 671, 8193, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1297, 671, 8212, 2]);

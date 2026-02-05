@@ -252,7 +252,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0() {
-        _fun54648: for (var _fun54648_ip = 0;;) switch (_fun54648_ip) {
+        _fun54672: for (var _fun54672_ip = 0;;) switch (_fun54672_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.channelId;
@@ -278,8 +278,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.SUPER_REACTIONS_FIRST_SENT;
                 var2 = var7.bind(var10)(var2);
                 if (var2) {
-                    _fun54648_ip = 239;
-                    continue _fun54648
+                    _fun54672_ip = 239;
+                    continue _fun54672
                 }
             case 111:
                 var7 = _closure1_slot0;
@@ -309,8 +309,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.emoji = var4;
                 var2 = 'BurstReactionFirstSendActionSheet';
                 var2 = var8.bind(var9)(var7, var2, var3);
-                _fun54648_ip = 294;
-                continue _fun54648;
+                _fun54672_ip = 294;
+                continue _fun54672;
             case 239:
                 var2 = _closure1_slot1;
                 var3 = _closure1_slot2;
@@ -331,4 +331,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openBurstReactionFirstSendActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3278, 4931, 6556, 6596, 6554, 6605, 3941, 1234, 4873, 3212, 1358, 6595, 1307, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3278, 4933, 6576, 6616, 6574, 6625, 3941, 1234, 4875, 3212, 1358, 6615, 1307, 806, 2]);

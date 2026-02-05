@@ -2,49 +2,49 @@ package net.time4j;
 
 import java.util.Iterator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class q0 implements kt.e {
+public final class q0 implements nt.e {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final tt.e f40703c;
+    private static final wt.e f40163c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final boolean f40704d;
+    private static final boolean f40164d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final q0 f40705e;
+    public static final q0 f40165e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final q0 f40706f;
+    public static final q0 f40166f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f40707a;
+    private final boolean f40167a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f40708b;
+    private final long f40168b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class b implements tt.e {
+    private static class b implements wt.e {
         private b() {
         }
 
-        @Override // tt.e
+        @Override // wt.e
         public long a() {
             return System.nanoTime();
         }
 
-        @Override // tt.e
+        @Override // wt.e
         public String b() {
             return "";
         }
     }
 
     static {
-        tt.e eVar;
+        wt.e eVar;
         String property = System.getProperty("java.vm.name");
-        Iterator it = kt.d.c().g(tt.e.class).iterator();
+        Iterator it = nt.d.c().g(wt.e.class).iterator();
         while (true) {
             if (it.hasNext()) {
-                eVar = (tt.e) it.next();
+                eVar = (wt.e) it.next();
                 if (property.equals(eVar.b())) {
                     break;
                 }
@@ -56,15 +56,15 @@ public final class q0 implements kt.e {
         if (eVar == null) {
             eVar = new b();
         }
-        f40703c = eVar;
-        f40704d = Boolean.getBoolean("net.time4j.systemclock.nanoTime");
-        f40705e = new q0(false, a());
-        f40706f = new q0(true, a());
+        f40163c = eVar;
+        f40164d = Boolean.getBoolean("net.time4j.systemclock.nanoTime");
+        f40165e = new q0(false, a());
+        f40166f = new q0(true, a());
     }
 
     private q0(boolean z10, long j10) {
-        this.f40707a = z10;
-        this.f40708b = j10;
+        this.f40167a = z10;
+        this.f40168b = j10;
     }
 
     private static long a() {
@@ -72,10 +72,10 @@ public final class q0 implements kt.e {
         long j10 = 0;
         int i10 = 0;
         while (i10 < 10) {
-            if (f40704d) {
+            if (f40164d) {
                 j10 = System.nanoTime();
             } else {
-                j10 = f40703c.a();
+                j10 = f40163c.a();
             }
             long currentTimeMillis2 = System.currentTimeMillis();
             if (currentTimeMillis == currentTimeMillis2) {
@@ -84,29 +84,29 @@ public final class q0 implements kt.e {
             i10++;
             currentTimeMillis = currentTimeMillis2;
         }
-        return kt.c.m(kt.c.i(tt.d.r().h(kt.c.b(currentTimeMillis, 1000)), 1000000000L) + (kt.c.d(currentTimeMillis, 1000) * 1000000), j10);
+        return nt.c.m(nt.c.i(wt.d.w().h(nt.c.b(currentTimeMillis, 1000)), 1000000000L) + (nt.c.d(currentTimeMillis, 1000) * 1000000), j10);
     }
 
     public static a0 b() {
-        return f40705e.c();
+        return f40165e.c();
     }
 
     private long d() {
         long a10;
-        if (f40704d) {
+        if (f40164d) {
             a10 = System.nanoTime();
         } else {
-            a10 = f40703c.a();
+            a10 = f40163c.a();
         }
-        return kt.c.f(a10, this.f40708b);
+        return nt.c.f(a10, this.f40168b);
     }
 
     public a0 c() {
-        if ((this.f40707a || f40704d) && tt.d.r().D()) {
+        if ((this.f40167a || f40164d) && wt.d.w().D()) {
             long d10 = d();
-            return a0.l0(kt.c.b(d10, 1000000000), kt.c.d(d10, 1000000000), tt.f.UTC);
+            return a0.l0(nt.c.b(d10, 1000000000), nt.c.d(d10, 1000000000), wt.f.UTC);
         }
         long currentTimeMillis = System.currentTimeMillis();
-        return a0.l0(kt.c.b(currentTimeMillis, 1000), kt.c.d(currentTimeMillis, 1000) * 1000000, tt.f.POSIX);
+        return a0.l0(nt.c.b(currentTimeMillis, 1000), nt.c.d(currentTimeMillis, 1000) * 1000000, wt.f.POSIX);
     }
 }

@@ -29,63 +29,63 @@ public final class DebugImage implements w1 {
         /* renamed from: b */
         public DebugImage a(e3 e3Var, ILogger iLogger) {
             DebugImage debugImage = new DebugImage();
-            e3Var.r();
+            e3Var.s();
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
+                String m02 = e3Var.m0();
+                m02.getClass();
                 char c10 = 65535;
-                switch (l02.hashCode()) {
+                switch (m02.hashCode()) {
                     case -1840639000:
-                        if (l02.equals("debug_file")) {
+                        if (m02.equals("debug_file")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -1443345323:
-                        if (l02.equals("image_addr")) {
+                        if (m02.equals("image_addr")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case -1442803611:
-                        if (l02.equals("image_size")) {
+                        if (m02.equals("image_size")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case -1127437170:
-                        if (l02.equals("code_file")) {
+                        if (m02.equals("code_file")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 3002454:
-                        if (l02.equals("arch")) {
+                        if (m02.equals("arch")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 3575610:
-                        if (l02.equals("type")) {
+                        if (m02.equals("type")) {
                             c10 = 5;
                             break;
                         }
                         break;
                     case 3601339:
-                        if (l02.equals("uuid")) {
+                        if (m02.equals("uuid")) {
                             c10 = 6;
                             break;
                         }
                         break;
                     case 547804807:
-                        if (l02.equals("debug_id")) {
+                        if (m02.equals("debug_id")) {
                             c10 = 7;
                             break;
                         }
                         break;
                     case 941842605:
-                        if (l02.equals("code_id")) {
+                        if (m02.equals("code_id")) {
                             c10 = '\b';
                             break;
                         }
@@ -123,11 +123,11 @@ public final class DebugImage implements w1 {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, l02);
+                        e3Var.v1(iLogger, hashMap, m02);
                         break;
                 }
             }
-            e3Var.y();
+            e3Var.z();
             debugImage.setUnknown(hashMap);
             return debugImage;
         }
@@ -175,7 +175,7 @@ public final class DebugImage implements w1 {
 
     @Override // io.sentry.w1
     public void serialize(@NotNull f3 f3Var, @NotNull ILogger iLogger) {
-        f3Var.r();
+        f3Var.s();
         if (this.uuid != null) {
             f3Var.e("uuid").f(this.uuid);
         }
@@ -209,7 +209,7 @@ public final class DebugImage implements w1 {
                 f3Var.e(str).j(iLogger, this.unknown.get(str));
             }
         }
-        f3Var.y();
+        f3Var.z();
     }
 
     public void setArch(String str) {

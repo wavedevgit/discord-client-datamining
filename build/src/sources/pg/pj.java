@@ -7,11 +7,11 @@ import java.util.List;
 public final class pj implements mj {
 
     /* renamed from: a  reason: collision with root package name */
-    final List f45697a;
+    final List f45627a;
 
     public pj(Context context, oj ojVar) {
         ArrayList arrayList = new ArrayList();
-        this.f45697a = arrayList;
+        this.f45627a = arrayList;
         if (ojVar.c()) {
             arrayList.add(new fk(context, ojVar));
         }
@@ -19,7 +19,7 @@ public final class pj implements mj {
 
     @Override // pg.mj
     public final void a(lj ljVar) {
-        for (mj mjVar : this.f45697a) {
+        for (mj mjVar : this.f45627a) {
             mjVar.a(ljVar);
         }
     }

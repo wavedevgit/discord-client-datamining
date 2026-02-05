@@ -16,16 +16,16 @@ public interface c extends j$.time.temporal.k, l, Comparable {
 
     @Override // j$.time.temporal.TemporalAccessor
     default Object a(TemporalQuery temporalQuery) {
-        if (temporalQuery == o.f31195a || temporalQuery == o.f31199e || temporalQuery == o.f31198d) {
+        if (temporalQuery == o.f30544a || temporalQuery == o.f30548e || temporalQuery == o.f30547d) {
             return null;
         }
-        if (temporalQuery == o.f31201g) {
+        if (temporalQuery == o.f30550g) {
             return e();
         }
-        if (temporalQuery == o.f31196b) {
+        if (temporalQuery == o.f30545b) {
             l().f();
-            return k.f31092a;
-        } else if (temporalQuery == o.f31197c) {
+            return k.f30441a;
+        } else if (temporalQuery == o.f30546c) {
             return j$.time.temporal.b.NANOS;
         } else {
             return temporalQuery.queryFrom(this);
@@ -48,7 +48,7 @@ public interface c extends j$.time.temporal.k, l, Comparable {
         int compareTo = l().compareTo(cVar.l());
         if (compareTo == 0 && (compareTo = e().compareTo(cVar.e())) == 0) {
             l().f();
-            k kVar = k.f31092a;
+            k kVar = k.f30441a;
             cVar.l().f();
             return 0;
         }

@@ -25,10 +25,10 @@ public final class OnLayoutEvent extends Event<OnLayoutEvent> {
     private int width;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f10946x;
+    private int f11331x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f10947y;
+    private int f11332y;
 
     @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0006\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J0\u0010\u0007\u001a\u00020\u00062\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\u000b\u001a\u00020\t2\u0006\u0010\f\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\tH\u0007J8\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u000e\u001a\u00020\t2\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\u000b\u001a\u00020\t2\u0006\u0010\f\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\tH\u0007R\u0014\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000f"}, d2 = {"Lcom/facebook/react/uimanager/OnLayoutEvent$Companion;", "", "<init>", "()V", "EVENTS_POOL", "Landroidx/core/util/Pools$SynchronizedPool;", "Lcom/facebook/react/uimanager/OnLayoutEvent;", "obtain", "viewTag", "", "x", "y", "width", "height", "surfaceId", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -37,7 +37,7 @@ public final class OnLayoutEvent extends Event<OnLayoutEvent> {
             this();
         }
 
-        @lr.c
+        @or.c
         @NotNull
         public final OnLayoutEvent obtain(int i10, int i11, int i12, int i13, int i14) {
             return obtain(-1, i10, i11, i12, i13, i14);
@@ -83,7 +83,7 @@ public final class OnLayoutEvent extends Event<OnLayoutEvent> {
     public static /* synthetic */ void getY$ReactAndroid_release$annotations() {
     }
 
-    @lr.c
+    @or.c
     @NotNull
     public static final OnLayoutEvent obtain(int i10, int i11, int i12, int i13, int i14) {
         return Companion.obtain(i10, i11, i12, i13, i14);
@@ -95,8 +95,8 @@ public final class OnLayoutEvent extends Event<OnLayoutEvent> {
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
         ReadableMapBuilder readableMapBuilder = new ReadableMapBuilder(createMap);
-        readableMapBuilder.put("x", PixelUtil.toDIPFromPixel(this.f10946x));
-        readableMapBuilder.put("y", PixelUtil.toDIPFromPixel(this.f10947y));
+        readableMapBuilder.put("x", PixelUtil.toDIPFromPixel(this.f11331x));
+        readableMapBuilder.put("y", PixelUtil.toDIPFromPixel(this.f11332y));
         readableMapBuilder.put("width", PixelUtil.toDIPFromPixel(this.width));
         readableMapBuilder.put("height", PixelUtil.toDIPFromPixel(this.height));
         WritableMap createMap2 = Arguments.createMap();
@@ -121,17 +121,17 @@ public final class OnLayoutEvent extends Event<OnLayoutEvent> {
     }
 
     public final int getX$ReactAndroid_release() {
-        return this.f10946x;
+        return this.f11331x;
     }
 
     public final int getY$ReactAndroid_release() {
-        return this.f10947y;
+        return this.f11332y;
     }
 
     protected final void init(int i10, int i11, int i12, int i13, int i14, int i15) {
         super.init(i10, i11);
-        this.f10946x = i12;
-        this.f10947y = i13;
+        this.f11331x = i12;
+        this.f11332y = i13;
         this.width = i14;
         this.height = i15;
     }
@@ -150,11 +150,11 @@ public final class OnLayoutEvent extends Event<OnLayoutEvent> {
     }
 
     public final void setX$ReactAndroid_release(int i10) {
-        this.f10946x = i10;
+        this.f11331x = i10;
     }
 
     public final void setY$ReactAndroid_release(int i10) {
-        this.f10947y = i10;
+        this.f11332y = i10;
     }
 
     private OnLayoutEvent() {

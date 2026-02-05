@@ -7,7 +7,7 @@ import ff.m;
 import ff.q;
 import ff.r;
 import kotlin.jvm.internal.Intrinsics;
-import wg.k;
+import xg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class f extends ef.d implements xf.e {
 
@@ -15,16 +15,16 @@ public final class f extends ef.d implements xf.e {
     public static final class a extends c {
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ k f54068c;
+        final /* synthetic */ k f54764c;
 
         a(k kVar) {
-            this.f54068c = kVar;
+            this.f54764c = kVar;
         }
 
         @Override // yf.a
-        public void i(Status status, xf.g gVar) {
+        public void j(Status status, xf.g gVar) {
             Intrinsics.checkNotNullParameter(status, "status");
-            r.a(status, gVar, this.f54068c);
+            r.a(status, gVar, this.f54764c);
         }
     }
 
@@ -39,8 +39,8 @@ public final class f extends ef.d implements xf.e {
             java.lang.String r0 = "context"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r4, r0)
             ef.a r0 = yf.g.a()
-            ef.a$d$a r1 = ef.a.d.f21485c
-            ef.d$a r2 = ef.d.a.f21497c
+            ef.a$d$a r1 = ef.a.d.f21557f
+            ef.d$a r2 = ef.d.a.f21569c
             r3.<init>(r4, r0, r1, r2)
             return
         */
@@ -50,13 +50,13 @@ public final class f extends ef.d implements xf.e {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void D(GetCredentialRequest request, d dVar, k kVar) {
         Intrinsics.checkNotNullParameter(request, "$request");
-        ((b) dVar.C()).r0(new a(kVar), request);
+        ((b) dVar.C()).z0(new a(kVar), request);
     }
 
     @Override // xf.e
-    public Task i(final GetCredentialRequest request) {
+    public Task h(final GetCredentialRequest request) {
         Intrinsics.checkNotNullParameter(request, "request");
-        Task p10 = p(q.a().d(jg.d.f31556a).b(new m() { // from class: yf.e
+        Task p10 = p(q.a().d(jg.d.f30905a).b(new m() { // from class: yf.e
             @Override // ff.m
             public final void accept(Object obj, Object obj2) {
                 f.D(GetCredentialRequest.this, (d) obj, (k) obj2);

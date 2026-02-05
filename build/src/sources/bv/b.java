@@ -1,49 +1,66 @@
 package bv;
+
+import java.util.List;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Lambda;
+import ru.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
-    public static boolean a(CharSequence charSequence) {
-        if (charSequence == null || c(charSequence)) {
-            return false;
+public final class b implements qu.b, ru.c {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f7282a = new b();
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class a extends Lambda implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f7283d = new a();
+
+        a() {
+            super(2);
         }
-        int length = charSequence.length();
-        for (int i10 = 0; i10 < length; i10++) {
-            if (!Character.isLowerCase(charSequence.charAt(i10))) {
-                return false;
+
+        public final Boolean a(int i10, int i11) {
+            boolean z10;
+            if (i10 >= i11) {
+                z10 = true;
+            } else {
+                z10 = false;
             }
+            return Boolean.valueOf(z10);
         }
-        return true;
+
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+        }
     }
 
-    public static boolean b(CharSequence charSequence) {
-        if (charSequence == null || c(charSequence)) {
-            return false;
-        }
-        int length = charSequence.length();
-        for (int i10 = 0; i10 < length; i10++) {
-            if (!Character.isUpperCase(charSequence.charAt(i10))) {
-                return false;
-            }
-        }
-        return true;
+    private b() {
     }
 
-    public static boolean c(CharSequence charSequence) {
-        if (charSequence != null && charSequence.length() != 0) {
-            return false;
-        }
-        return true;
+    @Override // ru.c
+    public boolean b(List list, Function2 function2) {
+        return c.a.b(this, list, function2);
     }
 
-    public static boolean d(CharSequence charSequence) {
-        if (c(charSequence)) {
-            return false;
-        }
-        int length = charSequence.length();
-        for (int i10 = 0; i10 < length; i10++) {
-            if (!Character.isDigit(charSequence.charAt(i10))) {
-                return false;
-            }
-        }
-        return true;
+    @Override // ru.a
+    public Boolean c(Object obj) {
+        return c.a.f(this, obj);
+    }
+
+    @Override // ru.b
+    public List d(Comparable comparable, Comparable comparable2) {
+        return c.a.e(this, comparable, comparable2);
+    }
+
+    @Override // qu.b
+    public Object f(Object obj, Object obj2) {
+        return Boolean.valueOf(b(vv.a.c(obj), a.f7283d));
+    }
+
+    @Override // ru.b
+    public List g(Comparable comparable, Comparable comparable2) {
+        return c.a.d(this, comparable, comparable2);
     }
 }

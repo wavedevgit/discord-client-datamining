@@ -22,7 +22,7 @@ public final class StartupInitSection {
     static {
         StartupInitSection[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = sr.a.a($values);
+        $ENTRIES = vr.a.a($values);
     }
 
     private StartupInitSection(String str, int i10) {

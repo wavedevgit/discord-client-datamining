@@ -1,30 +1,110 @@
 package iv;
+
+import java.nio.charset.Charset;
+import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a implements d {
-    @Override // iv.d
-    public boolean b() {
-        return false;
+public abstract class a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final Pattern f30388a = Pattern.compile("[\\\\&]");
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final Pattern f30389b = Pattern.compile("\\\\[!\"#$%&'()*+,./:;<=>?@\\[\\\\\\]^_`{|}~-]|&(?:#x[a-f0-9]{1,6}|#[0-9]{1,7}|[a-z][a-z0-9]{1,31});", 2);
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final Pattern f30390c = Pattern.compile("(%[a-fA-F0-9]{0,2}|[^:/?#@!$&'()*+,;=a-zA-Z0-9\\-._~])");
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final char[] f30391d = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final Pattern f30392e = Pattern.compile("[ \t\r\n]+");
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final c f30393f = new C0422a();
+
+    /* renamed from: g  reason: collision with root package name */
+    private static final c f30394g = new b();
+
+    /* renamed from: iv.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static class C0422a implements c {
+        C0422a() {
+        }
+
+        @Override // iv.a.c
+        public void a(String str, StringBuilder sb2) {
+            if (str.charAt(0) == '\\') {
+                sb2.append((CharSequence) str, 1, str.length());
+            } else {
+                sb2.append(iv.b.a(str));
+            }
+        }
     }
 
-    @Override // iv.d
-    public boolean c() {
-        return false;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static class b implements c {
+        b() {
+        }
+
+        @Override // iv.a.c
+        public void a(String str, StringBuilder sb2) {
+            byte[] bytes;
+            if (str.startsWith("%")) {
+                if (str.length() == 3) {
+                    sb2.append(str);
+                    return;
+                }
+                sb2.append("%25");
+                sb2.append((CharSequence) str, 1, str.length());
+                return;
+            }
+            for (byte b10 : str.getBytes(Charset.forName("UTF-8"))) {
+                sb2.append('%');
+                sb2.append(a.f30391d[(b10 >> 4) & 15]);
+                sb2.append(a.f30391d[b10 & 15]);
+            }
+        }
     }
 
-    @Override // iv.d
-    public boolean h(gv.a aVar) {
-        return false;
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public interface c {
+        void a(String str, StringBuilder sb2);
     }
 
-    @Override // iv.d
-    public void f() {
+    public static String b(String str) {
+        return f30392e.matcher(str.trim().toLowerCase(Locale.ROOT)).replaceAll(" ");
     }
 
-    @Override // iv.d
-    public void a(hv.a aVar) {
+    public static String c(String str) {
+        return b(str.substring(1, str.length() - 1));
     }
 
-    @Override // iv.d
-    public void e(CharSequence charSequence) {
+    private static String d(Pattern pattern, String str, c cVar) {
+        Matcher matcher = pattern.matcher(str);
+        if (!matcher.find()) {
+            return str;
+        }
+        StringBuilder sb2 = new StringBuilder(str.length() + 16);
+        int i10 = 0;
+        do {
+            sb2.append((CharSequence) str, i10, matcher.start());
+            cVar.a(matcher.group(), sb2);
+            i10 = matcher.end();
+        } while (matcher.find());
+        if (i10 != str.length()) {
+            sb2.append((CharSequence) str, i10, str.length());
+        }
+        return sb2.toString();
+    }
+
+    public static String e(String str) {
+        if (f30388a.matcher(str).find()) {
+            return d(f30389b, str, f30393f);
+        }
+        return str;
     }
 }

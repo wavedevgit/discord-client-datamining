@@ -7,7 +7,7 @@ import com.google.android.gms.internal.fido.v4;
 public final class j1 implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator
     public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        v4 m10;
+        v4 n10;
         int A = hf.b.A(parcel);
         v4 v4Var = null;
         byte[] bArr = null;
@@ -27,14 +27,14 @@ public final class j1 implements Parcelable.Creator {
         }
         hf.b.k(parcel, A);
         if (bArr == null) {
-            m10 = null;
+            n10 = null;
         } else {
-            m10 = v4.m(bArr, 0, bArr.length);
+            n10 = v4.n(bArr, 0, bArr.length);
         }
         if (bArr2 != null) {
-            v4Var = v4.m(bArr2, 0, bArr2.length);
+            v4Var = v4.n(bArr2, 0, bArr2.length);
         }
-        return new i1(m10, v4Var);
+        return new i1(n10, v4Var);
     }
 
     @Override // android.os.Parcelable.Creator

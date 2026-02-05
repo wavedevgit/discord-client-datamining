@@ -1,39 +1,50 @@
 package gf;
 
-import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class f1 extends hf.a {
-    public static final Parcelable.Creator<f1> CREATOR = new g1();
-
-    /* renamed from: d  reason: collision with root package name */
-    Bundle f26120d;
-
-    /* renamed from: e  reason: collision with root package name */
-    com.google.android.gms.common.d[] f26121e;
-
-    /* renamed from: i  reason: collision with root package name */
-    int f26122i;
-
-    /* renamed from: o  reason: collision with root package name */
-    e f26123o;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public f1(Bundle bundle, com.google.android.gms.common.d[] dVarArr, int i10, e eVar) {
-        this.f26120d = bundle;
-        this.f26121e = dVarArr;
-        this.f26122i = i10;
-        this.f26123o = eVar;
+public final class f1 implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int A = hf.b.A(parcel);
+        s sVar = null;
+        int[] iArr = null;
+        int[] iArr2 = null;
+        boolean z10 = false;
+        boolean z11 = false;
+        int i10 = 0;
+        while (parcel.dataPosition() < A) {
+            int r10 = hf.b.r(parcel);
+            switch (hf.b.l(r10)) {
+                case 1:
+                    sVar = (s) hf.b.e(parcel, r10, s.CREATOR);
+                    break;
+                case 2:
+                    z10 = hf.b.m(parcel, r10);
+                    break;
+                case 3:
+                    z11 = hf.b.m(parcel, r10);
+                    break;
+                case 4:
+                    iArr = hf.b.d(parcel, r10);
+                    break;
+                case 5:
+                    i10 = hf.b.t(parcel, r10);
+                    break;
+                case 6:
+                    iArr2 = hf.b.d(parcel, r10);
+                    break;
+                default:
+                    hf.b.z(parcel, r10);
+                    break;
+            }
+        }
+        hf.b.k(parcel, A);
+        return new e(sVar, z10, z11, iArr, i10, iArr2);
     }
 
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i10) {
-        int a10 = hf.c.a(parcel);
-        hf.c.e(parcel, 1, this.f26120d, false);
-        hf.c.v(parcel, 2, this.f26121e, i10, false);
-        hf.c.l(parcel, 3, this.f26122i);
-        hf.c.q(parcel, 4, this.f26123o, i10, false);
-        hf.c.b(parcel, a10);
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i10) {
+        return new e[i10];
     }
 }

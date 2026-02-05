@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var3 = var6.forwardRef;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun44497: for (var _fun44497_ip = 0;;) switch (_fun44497_ip) {
+        _fun44500: for (var _fun44500_ip = 0;;) switch (_fun44500_ip) {
             case 0:
                 var2 = arg0;
                 var8 = var2.style;
@@ -100,13 +100,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var0);
                 var0 = var0.unsafe_rawColors;
                 if (var1) {
-                    _fun44497_ip = 136;
-                    continue _fun44497
+                    _fun44500_ip = 136;
+                    continue _fun44500
                 }
             case 128:
                 var9 = var0.PRIMARY_500;
-                _fun44497_ip = 142;
-                continue _fun44497;
+                _fun44500_ip = 142;
+                continue _fun44500;
             case 136:
                 var9 = var0.PRIMARY_100;
             case 142:
@@ -128,13 +128,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.bind(var8)(var10);
                 var8 = _closure1_slot4;
                 if (var7) {
-                    _fun44497_ip = 224;
-                    continue _fun44497
+                    _fun44500_ip = 224;
+                    continue _fun44500
                 }
             case 216:
                 var7 = var8.LIGHT;
-                _fun44497_ip = 230;
-                continue _fun44497;
+                _fun44500_ip = 230;
+                continue _fun44500;
             case 224:
                 var7 = var8.DARK;
             case 230:
@@ -151,8 +151,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var5.bind(var7)();
                 var5 = var9;
                 if (!var7) {
-                    _fun44497_ip = 329;
-                    continue _fun44497
+                    _fun44500_ip = 329;
+                    continue _fun44500
                 }
             case 287:
                 var7 = _closure1_slot0;

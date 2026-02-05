@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.handleRoleSubscriptionPurchaseSystemMessageCtaClicked = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 6526, 6691, 4302, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 6546, 6711, 4302, 2]);

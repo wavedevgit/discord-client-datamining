@@ -953,4 +953,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.StageChannelParticipantTypes = var3;
     var2.isRequestedToSpeakAll = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 3714, 1372, 5663, 1681, 3100, 1621, 3521, 3526, 4246, 1377, 3954, 4238, 3087, 3961, 5665, 3505, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 3714, 1372, 5667, 1681, 3100, 1621, 3521, 3526, 4246, 1377, 3954, 4238, 3087, 3960, 5669, 3505, 2]);

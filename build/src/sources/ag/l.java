@@ -82,7 +82,7 @@ public final class l implements te.b {
         return context.getSharedPreferences("app_set_id_storage", 0);
     }
 
-    private static final void g(Context context) {
+    private static final void h(Context context) {
         String str;
         SharedPreferences f10 = f(context);
         if (!f10.edit().putLong("app_set_id_last_used_time", com.google.android.gms.common.util.f.c().a()).commit()) {
@@ -105,14 +105,14 @@ public final class l implements te.b {
         return j10 + 33696000000L;
     }
 
-    public final /* synthetic */ void d(wg.k kVar) {
+    public final /* synthetic */ void d(xg.k kVar) {
         String str;
         String str2;
         String string = f(this.f611a).getString("app_set_id", null);
         long a10 = a();
         if (string != null && com.google.android.gms.common.util.f.c().a() <= a10) {
             try {
-                g(this.f611a);
+                h(this.f611a);
             } catch (k e10) {
                 kVar.b(e10);
                 return;
@@ -131,7 +131,7 @@ public final class l implements te.b {
                     Log.e("AppSet", str2);
                     throw new k("Failed to store the app set ID.");
                 }
-                g(context);
+                h(context);
                 Context context2 = this.f611a;
                 SharedPreferences f10 = f(context2);
                 if (!f10.edit().putLong("app_set_id_creation_time", com.google.android.gms.common.util.f.c().a()).commit()) {
@@ -153,8 +153,8 @@ public final class l implements te.b {
     }
 
     @Override // te.b
-    public final Task h() {
-        final wg.k kVar = new wg.k();
+    public final Task g() {
+        final xg.k kVar = new xg.k();
         this.f614d.execute(new Runnable() { // from class: ag.h
             @Override // java.lang.Runnable
             public final void run() {

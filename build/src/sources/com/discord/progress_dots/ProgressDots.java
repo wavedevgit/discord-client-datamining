@@ -37,7 +37,7 @@ public final class ProgressDots extends ConstraintLayout {
         if (progressDots.isAttachedToWindow() && progressDots.getVisibility() == 0) {
             progressDots.start(true);
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     private final void start(boolean z10) {

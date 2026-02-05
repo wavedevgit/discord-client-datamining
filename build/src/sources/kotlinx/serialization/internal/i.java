@@ -1,45 +1,45 @@
 package kotlinx.serialization.internal;
 
-import dt.f2;
-import dt.v2;
+import gt.f2;
+import gt.v2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.encoding.CompositeEncoder;
-import lr.x;
-import lr.y;
+import or.x;
+import or.y;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class i extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final i f35572c = new i();
+    public static final i f35096c = new i();
 
     private i() {
-        super(bt.a.H(x.f37135e));
+        super(et.a.H(x.f44247e));
     }
 
-    @Override // dt.a
+    @Override // gt.a
     public /* bridge */ /* synthetic */ int e(Object obj) {
-        return v(((y) obj).r());
+        return v(((y) obj).s());
     }
 
-    @Override // dt.a
+    @Override // gt.a
     public /* bridge */ /* synthetic */ Object k(Object obj) {
-        return y(((y) obj).r());
+        return y(((y) obj).s());
     }
 
-    @Override // dt.f2
+    @Override // gt.f2
     public /* bridge */ /* synthetic */ Object r() {
         return y.b(w());
     }
 
-    @Override // dt.f2
+    @Override // gt.f2
     public /* bridge */ /* synthetic */ void u(CompositeEncoder compositeEncoder, Object obj, int i10) {
-        z(compositeEncoder, ((y) obj).r(), i10);
+        z(compositeEncoder, ((y) obj).s(), i10);
     }
 
     protected int v(byte[] collectionSize) {
         Intrinsics.checkNotNullParameter(collectionSize, "$this$collectionSize");
-        return y.k(collectionSize);
+        return y.l(collectionSize);
     }
 
     protected byte[] w() {
@@ -47,7 +47,7 @@ public final class i extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // dt.s, dt.a
+    @Override // gt.s, gt.a
     /* renamed from: x */
     public void h(kotlinx.serialization.encoding.c decoder, int i10, v2 builder, boolean z10) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");

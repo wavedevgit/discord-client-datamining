@@ -15,39 +15,39 @@ import org.jetbrains.annotations.NotNull;
 public final class TransitionInquiryRequest_AttributesJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19451a;
+    private final m.b f19857a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19452b;
+    private final h f19858b;
 
     public TransitionInquiryRequest_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("componentParams");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19451a = a10;
+        this.f19857a = a10;
         h f10 = moshi.f(a0.j(Map.class, String.class, ComponentParam.class), x0.d(), "componentParams");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19452b = f10;
+        this.f19858b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public TransitionInquiryRequest.Attributes fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         Map map = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f19451a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    map = (Map) this.f19452b.fromJson(reader);
+            int W = reader.W(this.f19857a);
+            if (W != -1) {
+                if (W == 0) {
+                    map = (Map) this.f19858b.fromJson(reader);
                 }
             } else {
                 reader.E0();
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         return new TransitionInquiryRequest.Attributes(map);
     }
 
@@ -56,9 +56,9 @@ public final class TransitionInquiryRequest_AttributesJsonAdapter extends h {
     public void toJson(t writer, TransitionInquiryRequest.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.l();
-            writer.A0("componentParams");
-            this.f19452b.toJson(writer, attributes.a());
+            writer.k();
+            writer.W("componentParams");
+            this.f19858b.toJson(writer, attributes.a());
             writer.E();
             return;
         }

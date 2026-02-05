@@ -7,7 +7,7 @@ import android.os.IInterface;
 public interface k extends IInterface {
     void D(int i10, IBinder iBinder, Bundle bundle);
 
-    void i0(int i10, Bundle bundle);
+    void I0(int i10, IBinder iBinder, d1 d1Var);
 
-    void w0(int i10, IBinder iBinder, f1 f1Var);
+    void r0(int i10, Bundle bundle);
 }

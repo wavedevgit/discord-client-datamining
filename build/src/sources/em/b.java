@@ -1,17 +1,22 @@
 package em;
+
+import com.facebook.react.uimanager.ViewProps;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
+public enum b {
+    BLUETOOTH("bluetooth"),
+    CELLULAR("cellular"),
+    ETHERNET("ethernet"),
+    NONE(ViewProps.NONE),
+    UNKNOWN("unknown"),
+    WIFI("wifi"),
+    WIMAX("wimax"),
+    VPN("vpn");
+    
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final b f21645a = new b();
+    /* renamed from: d  reason: collision with root package name */
+    public final String f21650d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final long f21646b = (long) Math.floor(16.666666666666668d);
-
-    private b() {
-    }
-
-    public final long a() {
-        return f21646b;
+    b(String str) {
+        this.f21650d = str;
     }
 }

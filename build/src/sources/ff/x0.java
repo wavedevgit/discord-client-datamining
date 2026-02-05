@@ -8,21 +8,21 @@ import com.google.android.gms.common.api.Status;
 public abstract class x0 extends m0 {
 
     /* renamed from: b  reason: collision with root package name */
-    protected final wg.k f23974b;
+    protected final xg.k f22999b;
 
-    public x0(int i10, wg.k kVar) {
+    public x0(int i10, xg.k kVar) {
         super(i10);
-        this.f23974b = kVar;
+        this.f22999b = kVar;
     }
 
     @Override // ff.b1
     public final void a(Status status) {
-        this.f23974b.d(new ef.b(status));
+        this.f22999b.d(new ef.b(status));
     }
 
     @Override // ff.b1
     public final void b(Exception exc) {
-        this.f23974b.d(exc);
+        this.f22999b.d(exc);
     }
 
     @Override // ff.b1
@@ -35,7 +35,7 @@ public abstract class x0 extends m0 {
         } catch (RemoteException e11) {
             a(b1.e(e11));
         } catch (RuntimeException e12) {
-            this.f23974b.d(e12);
+            this.f22999b.d(e12);
         }
     }
 

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var3 = function arg0, arg1() {
-        _fun30981: for (var _fun30981_ip = 0;;) switch (_fun30981_ip) {
+        _fun30991: for (var _fun30991_ip = 0;;) switch (_fun30991_ip) {
             case 0:
                 var4 = arg0;
                 var1 = arg1;
@@ -20,8 +20,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2[var0];
                 var0 = '';
                 if (!(var0 !== var5)) {
-                    _fun30981_ip = 67;
-                    continue _fun30981
+                    _fun30991_ip = 67;
+                    continue _fun30991
                 }
             case 54:
                 var0 = var2.length;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 != var1;
                 if (!var2) {
-                    _fun30981_ip = 87;
-                    continue _fun30981
+                    _fun30991_ip = 87;
+                    continue _fun30991
                 }
             case 76:
                 var0 = var4.endsWith;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 87:
                 var0 = var4;
                 if (!var2) {
-                    _fun30981_ip = 114;
-                    continue _fun30981
+                    _fun30991_ip = 114;
+                    continue _fun30991
                 }
             case 93:
                 var3 = var4.slice;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'utils/PathUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function arg0() {
-        _fun30982: for (var _fun30982_ip = 0;;) switch (_fun30982_ip) {
+        _fun30992: for (var _fun30992_ip = 0;;) switch (_fun30992_ip) {
             case 0:
                 var1 = 0;
                 var4 = 0;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var1)();
                 var2 = '/';
                 if (!var0) {
-                    _fun30982_ip = 51;
-                    continue _fun30982
+                    _fun30992_ip = 51;
+                    continue _fun30992
                 }
             case 47:
                 var2 = '\\';
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.pathJoin = var4;
     var2.pathBasename = var3;
     var1 = function arg0() {
-        _fun30984: for (var _fun30984_ip = 0;;) switch (_fun30984_ip) {
+        _fun30994: for (var _fun30994_ip = 0;;) switch (_fun30994_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = undefined;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 0;
                 var0 = var4;
                 if (!(!(var3 <= var2))) {
-                    _fun30984_ip = 52;
-                    continue _fun30984
+                    _fun30994_ip = 52;
+                    continue _fun30994
                 }
             case 41:
                 var1 = var4.slice;

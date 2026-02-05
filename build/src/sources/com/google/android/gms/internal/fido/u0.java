@@ -5,35 +5,35 @@ import java.util.NoSuchElementException;
 abstract class u0 extends d2 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f13728d;
+    private final int f14122d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f13729e;
+    private int f14123e;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public u0(int i10, int i11) {
         k0.b(i11, i10, "index");
-        this.f13728d = i10;
-        this.f13729e = i11;
+        this.f14122d = i10;
+        this.f14123e = i11;
     }
 
     protected abstract Object a(int i10);
 
     @Override // java.util.Iterator, java.util.ListIterator
     public final boolean hasNext() {
-        return this.f13729e < this.f13728d;
+        return this.f14123e < this.f14122d;
     }
 
     @Override // java.util.ListIterator
     public final boolean hasPrevious() {
-        return this.f13729e > 0;
+        return this.f14123e > 0;
     }
 
     @Override // java.util.Iterator, java.util.ListIterator
     public final Object next() {
         if (hasNext()) {
-            int i10 = this.f13729e;
-            this.f13729e = i10 + 1;
+            int i10 = this.f14123e;
+            this.f14123e = i10 + 1;
             return a(i10);
         }
         throw new NoSuchElementException();
@@ -41,14 +41,14 @@ abstract class u0 extends d2 {
 
     @Override // java.util.ListIterator
     public final int nextIndex() {
-        return this.f13729e;
+        return this.f14123e;
     }
 
     @Override // java.util.ListIterator
     public final Object previous() {
         if (hasPrevious()) {
-            int i10 = this.f13729e - 1;
-            this.f13729e = i10;
+            int i10 = this.f14123e - 1;
+            this.f14123e = i10;
             return a(i10);
         }
         throw new NoSuchElementException();
@@ -56,6 +56,6 @@ abstract class u0 extends d2 {
 
     @Override // java.util.ListIterator
     public final int previousIndex() {
-        return this.f13729e - 1;
+        return this.f14123e - 1;
     }
 }

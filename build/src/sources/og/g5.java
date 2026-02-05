@@ -1,43 +1,43 @@
 package og;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class g5 implements ui.d {
+final class g5 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final g5 f42994a = new g5();
+    static final g5 f42900a = new g5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f42995b;
+    private static final xi.c f42901b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f42996c;
+    private static final xi.c f42902c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f42997d;
+    private static final xi.c f42903d;
 
     static {
-        c.b a10 = ui.c.a("modelType");
+        c.b a10 = xi.c.a("modelType");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f42995b = a10.b(s1Var.b()).a();
-        c.b a11 = ui.c.a("isSuccessful");
+        f42901b = a10.b(s1Var.b()).a();
+        c.b a11 = xi.c.a("isSuccessful");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f42996c = a11.b(s1Var2.b()).a();
-        c.b a12 = ui.c.a("modelName");
+        f42902c = a11.b(s1Var2.b()).a();
+        c.b a12 = xi.c.a("modelName");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f42997d = a12.b(s1Var3.b()).a();
+        f42903d = a12.b(s1Var3.b()).a();
     }
 
     private g5() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

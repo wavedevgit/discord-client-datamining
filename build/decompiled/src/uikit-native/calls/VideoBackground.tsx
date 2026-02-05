@@ -481,4 +481,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useDominantRGBFromImage = var3;
     var2.useDominantColorFromImage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 22, 5739, 5740, 3240, 671, 5452, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 22, 5743, 5744, 3240, 671, 5456, 2]);

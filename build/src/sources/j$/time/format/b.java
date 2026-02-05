@@ -3,25 +3,25 @@ package j$.time.format;
 public abstract /* synthetic */ class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int[] f31113a;
+    public static final /* synthetic */ int[] f30462a;
 
     static {
         int[] iArr = new int[w.values().length];
-        f31113a = iArr;
+        f30462a = iArr;
         try {
             iArr[w.EXCEEDS_PAD.ordinal()] = 1;
         } catch (NoSuchFieldError unused) {
         }
         try {
-            f31113a[w.ALWAYS.ordinal()] = 2;
+            f30462a[w.ALWAYS.ordinal()] = 2;
         } catch (NoSuchFieldError unused2) {
         }
         try {
-            f31113a[w.NORMAL.ordinal()] = 3;
+            f30462a[w.NORMAL.ordinal()] = 3;
         } catch (NoSuchFieldError unused3) {
         }
         try {
-            f31113a[w.NOT_NEGATIVE.ordinal()] = 4;
+            f30462a[w.NOT_NEGATIVE.ordinal()] = 4;
         } catch (NoSuchFieldError unused4) {
         }
     }

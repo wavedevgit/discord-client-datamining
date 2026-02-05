@@ -13,15 +13,15 @@ public class l extends k {
     public static final class a extends d implements RandomAccess {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int[] f32512e;
+        final /* synthetic */ int[] f32036e;
 
         a(int[] iArr) {
-            this.f32512e = iArr;
+            this.f32036e = iArr;
         }
 
         @Override // kotlin.collections.b
         public int c() {
-            return this.f32512e.length;
+            return this.f32036e.length;
         }
 
         @Override // kotlin.collections.b, java.util.Collection
@@ -35,15 +35,15 @@ public class l extends k {
         @Override // kotlin.collections.d, java.util.List
         /* renamed from: e */
         public Integer get(int i10) {
-            return Integer.valueOf(this.f32512e[i10]);
+            return Integer.valueOf(this.f32036e[i10]);
         }
 
         public int f(int i10) {
-            return n.f0(this.f32512e, i10);
+            return n.f0(this.f32036e, i10);
         }
 
         public int g(int i10) {
-            return n.x0(this.f32512e, i10);
+            return n.x0(this.f32036e, i10);
         }
 
         @Override // kotlin.collections.d, java.util.List
@@ -56,7 +56,7 @@ public class l extends k {
 
         @Override // kotlin.collections.b, java.util.Collection
         public boolean isEmpty() {
-            if (this.f32512e.length == 0) {
+            if (this.f32036e.length == 0) {
                 return true;
             }
             return false;
@@ -71,7 +71,7 @@ public class l extends k {
         }
 
         public boolean contains(int i10) {
-            return n.L(this.f32512e, i10);
+            return n.L(this.f32036e, i10);
         }
     }
 

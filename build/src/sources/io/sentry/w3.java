@@ -8,27 +8,27 @@ import java.util.Map;
 public final class w3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final URL f30840a;
+    private final URL f29898a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f30841b;
+    private final Map f29899b;
 
     public w3(String str, Map map) {
         io.sentry.util.y.c(str, "url is required");
         io.sentry.util.y.c(map, "headers is required");
         try {
-            this.f30840a = URI.create(str).toURL();
-            this.f30841b = map;
+            this.f29898a = URI.create(str).toURL();
+            this.f29899b = map;
         } catch (MalformedURLException e10) {
             throw new IllegalArgumentException("Failed to compose the Sentry's server URL.", e10);
         }
     }
 
     public Map a() {
-        return this.f30841b;
+        return this.f29899b;
     }
 
     public URL b() {
-        return this.f30840a;
+        return this.f29898a;
     }
 }

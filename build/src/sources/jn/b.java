@@ -1,17 +1,35 @@
 package jn;
+
+import com.facebook.react.bridge.WritableMap;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class b {
-    public static final boolean a(float f10, float f11, float f12) {
-        if (Math.abs(f10 - f11) <= f12) {
-            return true;
-        }
-        return false;
+
+    /* renamed from: a  reason: collision with root package name */
+    private final int f31044a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final int f31045b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final int f31046c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final int f31047d;
+
+    public b(in.d handler) {
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        this.f31044a = handler.O();
+        this.f31045b = handler.T();
+        this.f31046c = handler.S();
+        this.f31047d = handler.Q();
     }
 
-    public static /* synthetic */ boolean b(float f10, float f11, float f12, int i10, Object obj) {
-        if ((i10 & 2) != 0) {
-            f12 = 1.0E-4f;
-        }
-        return a(f10, f11, f12);
+    public void a(WritableMap eventData) {
+        Intrinsics.checkNotNullParameter(eventData, "eventData");
+        eventData.putInt("numberOfPointers", this.f31044a);
+        eventData.putInt("handlerTag", this.f31045b);
+        eventData.putInt("state", this.f31046c);
+        eventData.putInt("pointerType", this.f31047d);
     }
 }

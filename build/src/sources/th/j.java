@@ -1,71 +1,58 @@
 package th;
 
 import android.content.Context;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
-import android.os.Binder;
-import android.os.Build;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
+import android.os.Bundle;
+import android.os.RemoteException;
+import java.util.Objects;
+import qg.p;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class j {
+public final class j extends qg.e {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final k0 f50047a = new k0("PhoneskyVerificationUtils");
+    /* renamed from: e  reason: collision with root package name */
+    final /* synthetic */ xg.k f50662e;
 
-    public static boolean a(Context context) {
-        String[] packagesForUid = context.getPackageManager().getPackagesForUid(Binder.getCallingUid());
-        if (packagesForUid != null && Arrays.asList(packagesForUid).contains("com.android.vending")) {
-            return true;
-        }
-        return false;
+    /* renamed from: i  reason: collision with root package name */
+    final /* synthetic */ d f50663i;
+
+    /* renamed from: o  reason: collision with root package name */
+    final /* synthetic */ l f50664o;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public j(l lVar, xg.k kVar, xg.k kVar2, d dVar) {
+        super(kVar);
+        this.f50662e = kVar2;
+        this.f50663i = dVar;
+        Objects.requireNonNull(lVar);
+        this.f50664o = lVar;
     }
 
-    public static boolean b(Context context) {
-        try {
-            if (!context.getPackageManager().getApplicationInfo("com.android.vending", 0).enabled) {
-                f50047a.e("Play Store package is disabled.", new Object[0]);
-            } else {
-                try {
-                    Signature[] signatureArr = context.getPackageManager().getPackageInfo("com.android.vending", 64).signatures;
-                    if (signatureArr != null && (r0 = signatureArr.length) != 0) {
-                        ArrayList arrayList = new ArrayList();
-                        for (Signature signature : signatureArr) {
-                            String a10 = i.a(signature.toByteArray());
-                            arrayList.add(a10);
-                            if (!"8P1sW0EPJcslw7UzRsiXL64w-O50Ed-RBICtay1g24M".equals(a10)) {
-                                String str = Build.TAGS;
-                                if ((str.contains("dev-keys") || str.contains("test-keys")) && "GXWy8XF3vIml3_MfnmSmyuKBpT3B0dWbHRR_4cgq-gA".equals(a10)) {
-                                    return true;
-                                }
-                            } else {
-                                return true;
-                            }
-                        }
-                        k0 k0Var = f50047a;
-                        StringBuilder sb2 = new StringBuilder();
-                        Iterator it = arrayList.iterator();
-                        if (it.hasNext()) {
-                            while (true) {
-                                sb2.append((CharSequence) it.next());
-                                if (!it.hasNext()) {
-                                    break;
-                                }
-                                sb2.append((CharSequence) ", ");
-                            }
-                        }
-                        k0Var.e(String.format("Play Store package certs are not valid. Found these sha256 certs: [%s].", sb2.toString()), new Object[0]);
-                    } else {
-                        f50047a.e("Play Store package is not signed -- possibly self-built package. Could not verify.", new Object[0]);
-                    }
-                } catch (PackageManager.NameNotFoundException unused) {
-                    f50047a.e("Play Store package is not found.", new Object[0]);
-                }
-            }
-        } catch (PackageManager.NameNotFoundException unused2) {
-            f50047a.e("Play Store package is not found.", new Object[0]);
+    @Override // qg.e
+    public final void a(Exception exc) {
+        if (exc instanceof p) {
+            super.a(new a(-5));
+        } else {
+            super.a(exc);
         }
-        return false;
+    }
+
+    @Override // qg.e
+    protected final void b() {
+        qg.d dVar;
+        Context context;
+        try {
+            l lVar = this.f50664o;
+            context = lVar.f50669a;
+            String packageName = context.getPackageName();
+            Bundle bundle = new Bundle();
+            bundle.putInt("playcore.version.code", 2);
+            ((uh.a) lVar.f50670b.e()).T(packageName, bundle, new k(lVar, this.f50662e));
+        } catch (RemoteException e10) {
+            d dVar2 = this.f50663i;
+            dVar = l.f50668c;
+            dVar.b(e10, "checkAgeSignals(%s)", dVar2);
+            this.f50662e.d(new a(-100));
+        }
     }
 }

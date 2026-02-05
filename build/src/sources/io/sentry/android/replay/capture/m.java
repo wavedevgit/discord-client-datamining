@@ -26,19 +26,19 @@ import kotlin.text.StringsKt;
 public final class m extends io.sentry.android.replay.capture.a {
 
     /* renamed from: y  reason: collision with root package name */
-    public static final a f29442y = new a(null);
+    public static final a f28500y = new a(null);
 
     /* renamed from: z  reason: collision with root package name */
-    public static final int f29443z = 8;
+    public static final int f28501z = 8;
 
     /* renamed from: v  reason: collision with root package name */
-    private final k7 f29444v;
+    private final k7 f28502v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final w0 f29445w;
+    private final w0 f28503w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final p f29446x;
+    private final p f28504x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -60,7 +60,7 @@ public final class m extends io.sentry.android.replay.capture.a {
             Intrinsics.checkNotNullParameter(segment, "segment");
             if (segment instanceof h.c.a) {
                 h.c.a aVar = (h.c.a) segment;
-                h.c.a.b(aVar, m.this.f29445w, null, 2, null);
+                h.c.a.b(aVar, m.this.f28503w, null, 2, null);
                 m mVar = m.this;
                 mVar.c(mVar.d() + 1);
                 m.this.j(aVar.c().i0());
@@ -70,7 +70,7 @@ public final class m extends io.sentry.android.replay.capture.a {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((h.c) obj);
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
     }
 
@@ -83,7 +83,7 @@ public final class m extends io.sentry.android.replay.capture.a {
         public final void a(h.c segment) {
             Intrinsics.checkNotNullParameter(segment, "segment");
             if (segment instanceof h.c.a) {
-                h.c.a.b((h.c.a) segment, m.this.f29445w, null, 2, null);
+                h.c.a.b((h.c.a) segment, m.this.f28503w, null, 2, null);
                 m mVar = m.this;
                 mVar.c(mVar.d() + 1);
             }
@@ -92,7 +92,7 @@ public final class m extends io.sentry.android.replay.capture.a {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((h.c) obj);
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
     }
 
@@ -100,27 +100,27 @@ public final class m extends io.sentry.android.replay.capture.a {
     static final class d extends Lambda implements Function1 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ File f29450e;
+        final /* synthetic */ File f28508e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(File file) {
             super(1);
-            this.f29450e = file;
+            this.f28508e = file;
         }
 
         public final void a(h.c segment) {
             Intrinsics.checkNotNullParameter(segment, "segment");
             if (segment instanceof h.c.a) {
-                h.c.a.b((h.c.a) segment, m.this.f29445w, null, 2, null);
+                h.c.a.b((h.c.a) segment, m.this.f28503w, null, 2, null);
             }
             m.this.c(-1);
-            io.sentry.util.i.a(this.f29450e);
+            io.sentry.util.i.a(this.f28508e);
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((h.c) obj);
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
     }
 
@@ -131,12 +131,12 @@ public final class m extends io.sentry.android.replay.capture.a {
     private final void I(String str, final Function1 function1) {
         final s s10 = s();
         if (s10 == null) {
-            ILogger logger = this.f29444v.getLogger();
+            ILogger logger = this.f28502v.getLogger();
             SentryLevel sentryLevel = SentryLevel.DEBUG;
             logger.c(sentryLevel, "Recorder config is not set, not creating segment for task: " + str, new Object[0]);
             return;
         }
-        long a10 = this.f29446x.a();
+        long a10 = this.f28504x.a();
         final Date x10 = x();
         if (x10 == null) {
             return;
@@ -165,25 +165,25 @@ public final class m extends io.sentry.android.replay.capture.a {
         }
         Date x10 = mVar.x();
         if (x10 == null) {
-            mVar.f29444v.getLogger().c(SentryLevel.DEBUG, "Segment timestamp is not set, not recording frame", new Object[0]);
+            mVar.f28502v.getLogger().c(SentryLevel.DEBUG, "Segment timestamp is not set, not recording frame", new Object[0]);
         } else if (mVar.y().get()) {
-            mVar.f29444v.getLogger().c(SentryLevel.DEBUG, "Not capturing segment, because the app is terminating, will be captured on next launch", new Object[0]);
+            mVar.f28502v.getLogger().c(SentryLevel.DEBUG, "Not capturing segment, because the app is terminating, will be captured on next launch", new Object[0]);
         } else if (sVar == null) {
-            mVar.f29444v.getLogger().c(SentryLevel.DEBUG, "Recorder config is not set, not capturing a segment", new Object[0]);
+            mVar.f28502v.getLogger().c(SentryLevel.DEBUG, "Recorder config is not set, not capturing a segment", new Object[0]);
         } else {
-            long a10 = mVar.f29446x.a();
-            if (a10 - x10.getTime() >= mVar.f29444v.getSessionReplay().r()) {
-                h.c o10 = io.sentry.android.replay.capture.a.o(mVar, mVar.f29444v.getSessionReplay().r(), x10, mVar.a(), mVar.d(), sVar.c(), sVar.d(), sVar.b(), sVar.a(), null, null, null, null, null, 7936, null);
+            long a10 = mVar.f28504x.a();
+            if (a10 - x10.getTime() >= mVar.f28502v.getSessionReplay().r()) {
+                h.c o10 = io.sentry.android.replay.capture.a.o(mVar, mVar.f28502v.getSessionReplay().r(), x10, mVar.a(), mVar.d(), sVar.c(), sVar.d(), sVar.b(), sVar.a(), null, null, null, null, null, 7936, null);
                 if (o10 instanceof h.c.a) {
                     h.c.a aVar = (h.c.a) o10;
-                    h.c.a.b(aVar, mVar.f29445w, null, 2, null);
+                    h.c.a.b(aVar, mVar.f28503w, null, 2, null);
                     mVar.c(mVar.d() + 1);
                     mVar.j(aVar.c().i0());
                 }
             }
-            if (a10 - mVar.u().get() >= mVar.f29444v.getSessionReplay().p()) {
-                mVar.f29444v.getReplayController().stop();
-                mVar.f29444v.getLogger().c(SentryLevel.INFO, "Session replay deadline exceeded (1h), stopping recording", new Object[0]);
+            if (a10 - mVar.u().get() >= mVar.f28502v.getSessionReplay().p()) {
+                mVar.f28502v.getReplayController().stop();
+                mVar.f28502v.getLogger().c(SentryLevel.INFO, "Session replay deadline exceeded (1h), stopping recording", new Object[0]);
             }
         }
     }
@@ -191,7 +191,7 @@ public final class m extends io.sentry.android.replay.capture.a {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void L(m mVar, IScope it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        it.o(mVar.a());
+        it.q(mVar.a());
         String h10 = it.h();
         String str = null;
         if (h10 != null) {
@@ -203,7 +203,7 @@ public final class m extends io.sentry.android.replay.capture.a {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void M(IScope it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        it.o(x.f30413e);
+        it.q(x.f29471e);
     }
 
     @Override // io.sentry.android.replay.capture.a, io.sentry.android.replay.capture.h
@@ -215,8 +215,8 @@ public final class m extends io.sentry.android.replay.capture.a {
     @Override // io.sentry.android.replay.capture.h
     public void e(boolean z10, Function1 onSegmentSent) {
         Intrinsics.checkNotNullParameter(onSegmentSent, "onSegmentSent");
-        if (this.f29444v.getSessionReplay().u()) {
-            this.f29444v.getLogger().c(SentryLevel.DEBUG, "Replay is already running in 'session' mode, not capturing for event", new Object[0]);
+        if (this.f28502v.getSessionReplay().u()) {
+            this.f28502v.getLogger().c(SentryLevel.DEBUG, "Replay is already running in 'session' mode, not capturing for event", new Object[0]);
         }
         y().set(z10);
     }
@@ -225,7 +225,7 @@ public final class m extends io.sentry.android.replay.capture.a {
     public void f(Bitmap bitmap, final Function2 store) {
         Intrinsics.checkNotNullParameter(store, "store");
         final s s10 = s();
-        final long a10 = this.f29446x.a();
+        final long a10 = this.f28504x.a();
         t().submit(new io.sentry.android.replay.util.j("SessionCaptureStrategy.add_frame", new Runnable() { // from class: io.sentry.android.replay.capture.l
             @Override // java.lang.Runnable
             public final void run() {
@@ -243,9 +243,9 @@ public final class m extends io.sentry.android.replay.capture.a {
     public void h(int i10, x replayId, l7.b bVar) {
         Intrinsics.checkNotNullParameter(replayId, "replayId");
         super.h(i10, replayId, bVar);
-        w0 w0Var = this.f29445w;
+        w0 w0Var = this.f28503w;
         if (w0Var != null) {
-            w0Var.o(new b4() { // from class: io.sentry.android.replay.capture.j
+            w0Var.p(new b4() { // from class: io.sentry.android.replay.capture.j
                 @Override // io.sentry.b4
                 public final void a(IScope iScope) {
                     m.L(m.this, iScope);
@@ -255,10 +255,10 @@ public final class m extends io.sentry.android.replay.capture.a {
     }
 
     @Override // io.sentry.android.replay.capture.a, io.sentry.android.replay.capture.h
-    public void m(s recorderConfig) {
+    public void n(s recorderConfig) {
         Intrinsics.checkNotNullParameter(recorderConfig, "recorderConfig");
         I("onConfigurationChanged", new b());
-        super.m(recorderConfig);
+        super.n(recorderConfig);
     }
 
     @Override // io.sentry.android.replay.capture.a, io.sentry.android.replay.capture.h
@@ -271,9 +271,9 @@ public final class m extends io.sentry.android.replay.capture.a {
             file = null;
         }
         I("stop", new d(file));
-        w0 w0Var = this.f29445w;
+        w0 w0Var = this.f28503w;
         if (w0Var != null) {
-            w0Var.o(new b4() { // from class: io.sentry.android.replay.capture.k
+            w0Var.p(new b4() { // from class: io.sentry.android.replay.capture.k
                 @Override // io.sentry.b4
                 public final void a(IScope iScope) {
                     m.M(iScope);
@@ -289,8 +289,8 @@ public final class m extends io.sentry.android.replay.capture.a {
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(dateProvider, "dateProvider");
         Intrinsics.checkNotNullParameter(executor, "executor");
-        this.f29444v = options;
-        this.f29445w = w0Var;
-        this.f29446x = dateProvider;
+        this.f28502v = options;
+        this.f28503w = w0Var;
+        this.f28504x = dateProvider;
     }
 }

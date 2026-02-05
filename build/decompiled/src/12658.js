@@ -1,59 +1,133 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun96879: for (var _fun96879_ip = 0;;) switch (_fun96879_ip) {
+    _fun96860: for (var _fun96860_ip = 0;;) switch (_fun96860_ip) {
         case 0:
-            var5 = require;
-            var6 = dependencyMap;
-            var0 = 0;
-            var1 = var6[var0];
-            var0 = undefined;
-            var1 = var5.bind(var0)(var1);
-            var2 = var1["__core-js_shared__"];
-            if (var2) {
-                _fun96879_ip = 52;
-                continue _fun96879
-            }
-        case 28:
-            var1 = 1;
-            var1 = var6[var1];
-            var4 = var5.bind(var0)(var1);
-            var3 = '__core-js_shared__';
-            var1 = {};
-            var2 = var4.bind(var0)(var3, var1);
-        case 52:
-            var1 = module;
-            var1.exports = var2;
-            var3 = var2.versions;
-            if (var3) {
-                _fun96879_ip = 83;
-                continue _fun96879
-            }
-        case 70:
-            var1 = new Array(0);
-            var2.versions = var1;
-            var3 = var1;
-        case 83:
-            var2 = var3.push;
-            var1 = {
-                'version': '3.41.0',
-                'mode': null,
-                'copyright': '© 2014-2025 Denis Pushkarev (zloirock.ru)',
-                'license': 'https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE',
-                'source': 'https://github.com/zloirock/core-js'
+            var7 = global;
+            var5 = this;
+            var4 = function arg0() {
+                _fun96861: for (var _fun96861_ip = 0;;) switch (_fun96861_ip) {
+                    case 0:
+                        var1 = arg0;
+                        var0 = var1;
+                        if (!var1) {
+                            _fun96861_ip = 26;
+                            continue _fun96861
+                        }
+                    case 9:
+                        var3 = var1.Math;
+                        var2 = global;
+                        var2 = var2.Math;
+                        var0 = var3 === var2;
+                    case 26:
+                        if (!var0) {
+                            _fun96861_ip = 32;
+                            continue _fun96861
+                        }
+                    case 29:
+                        var0 = var1;
+                    case 32:
+                        return var0;
+                }
             };
-            var4 = 2;
-            var4 = var6[var4];
-            var5 = var5.bind(var0)(var4);
-            var4 = 'global';
-            if (!var5) {
-                _fun96879_ip = 127;
-                continue _fun96879
+            var1 = global;
+            var0 = var1.globalThis;
+            var6 = 'object';
+            var0 = typeof var0;
+            var2 = var6 === var0;
+            if (!var2) {
+                _fun96860_ip = 43;
+                continue _fun96860
             }
-        case 121:
-            var4 = 'pure';
-        case 127:
-            var1.mode = var4;
-            var1 = var2.bind(var3)(var1);
+        case 37:
+            var2 = var1.globalThis;
+        case 43:
+            var0 = undefined;
+            var2 = var4.bind(var0)(var2);
+            if (var2) {
+                _fun96860_ip = 79;
+                continue _fun96860
+            }
+        case 53:
+            var3 = var1.window;
+            var3 = typeof var3;
+            var3 = var6 === var3;
+            if (!var3) {
+                _fun96860_ip = 74;
+                continue _fun96860
+            }
+        case 68:
+            var3 = var1.window;
+        case 74:
+            var2 = var4.bind(var0)(var3);
+        case 79:
+            if (var2) {
+                _fun96860_ip = 109;
+                continue _fun96860
+            }
+        case 82:
+            var3 = var1.self;
+            var3 = typeof var3;
+            var3 = var6 === var3;
+            if (!var3) {
+                _fun96860_ip = 104;
+                continue _fun96860
+            }
+        case 98:
+            var3 = var1.self;
+        case 104:
+            var2 = var4.bind(var0)(var3);
+        case 109:
+            if (var2) {
+                _fun96860_ip = 130;
+                continue _fun96860
+            }
+        case 112:
+            var3 = typeof var7;
+            var3 = var6 === var3;
+            if (!var3) {
+                _fun96860_ip = 125;
+                continue _fun96860
+            }
+        case 122:
+            var3 = var7;
+        case 125:
+            var2 = var4.bind(var0)(var3);
+        case 130:
+            if (var2) {
+                _fun96860_ip = 151;
+                continue _fun96860
+            }
+        case 133:
+            var3 = typeof var5;
+            var3 = var6 === var3;
+            if (!var3) {
+                _fun96860_ip = 146;
+                continue _fun96860
+            }
+        case 143:
+            var3 = var5;
+        case 146:
+            var2 = var4.bind(var0)(var3);
+        case 151:
+            if (var2) {
+                _fun96860_ip = 156;
+                continue _fun96860
+            }
+        case 154:
+            var2 = undefined;
+        case 156:
+            if (var2) {
+                _fun96860_ip = 180;
+                continue _fun96860
+            }
+        case 159:
+            var3 = var1.Function;
+            var1 = 'return this';
+            var1 = var3.bind(var0)(var1);
+            var2 = var1.bind(var0)();
+        case 180:
+            var1 = arg4;
+            var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12642, 12643, 12659]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

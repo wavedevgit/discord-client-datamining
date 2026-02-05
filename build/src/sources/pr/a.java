@@ -1,66 +1,33 @@
 package pr;
 
-import kotlin.jvm.functions.Function0;
+import java.util.Map;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-
-    /* renamed from: pr.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0564a extends Thread {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f46624d;
-
-        C0564a(Function0 function0) {
-            this.f46624d = function0;
-        }
-
-        @Override // java.lang.Thread, java.lang.Runnable
-        public void run() {
-            this.f46624d.invoke();
-        }
+public abstract class a extends kotlin.collections.g {
+    public final boolean b(Map.Entry element) {
+        Intrinsics.checkNotNullParameter(element, "element");
+        return c(element);
     }
 
-    public static final Thread a(boolean z10, boolean z11, ClassLoader classLoader, String str, int i10, Function0 block) {
-        Intrinsics.checkNotNullParameter(block, "block");
-        C0564a c0564a = new C0564a(block);
-        if (z11) {
-            c0564a.setDaemon(true);
+    public abstract boolean c(Map.Entry entry);
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final /* bridge */ boolean contains(Object obj) {
+        if (!(obj instanceof Map.Entry)) {
+            return false;
         }
-        if (i10 > 0) {
-            c0564a.setPriority(i10);
-        }
-        if (str != null) {
-            c0564a.setName(str);
-        }
-        if (classLoader != null) {
-            c0564a.setContextClassLoader(classLoader);
-        }
-        if (z10) {
-            c0564a.start();
-        }
-        return c0564a;
+        return b((Map.Entry) obj);
     }
 
-    public static /* synthetic */ Thread b(boolean z10, boolean z11, ClassLoader classLoader, String str, int i10, Function0 function0, int i11, Object obj) {
-        if ((i11 & 1) != 0) {
-            z10 = true;
+    public /* bridge */ boolean d(Map.Entry entry) {
+        return super.remove(entry);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final /* bridge */ boolean remove(Object obj) {
+        if (!(obj instanceof Map.Entry)) {
+            return false;
         }
-        if ((i11 & 2) != 0) {
-            z11 = false;
-        }
-        if ((i11 & 4) != 0) {
-            classLoader = null;
-        }
-        if ((i11 & 8) != 0) {
-            str = null;
-        }
-        if ((i11 & 16) != 0) {
-            i10 = -1;
-        }
-        int i12 = i10;
-        String str2 = str;
-        return a(z10, z11, classLoader, str2, i12, function0);
+        return d((Map.Entry) obj);
     }
 }

@@ -25,13 +25,13 @@ public final class KotlinTypeFactory {
     public static final KotlinTypeFactory INSTANCE = new KotlinTypeFactory();
 
     /* renamed from: a */
-    private static final Function1 f35037a = a.f35038d;
+    private static final Function1 f34561a = a.f34562d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a implements Function1 {
 
         /* renamed from: d */
-        public static final a f35038d = new a();
+        public static final a f34562d = new a();
 
         a() {
         }
@@ -48,22 +48,22 @@ public final class KotlinTypeFactory {
     public static final class b {
 
         /* renamed from: a */
-        private final SimpleType f35039a;
+        private final SimpleType f34563a;
 
         /* renamed from: b */
-        private final TypeConstructor f35040b;
+        private final TypeConstructor f34564b;
 
         public b(SimpleType simpleType, TypeConstructor typeConstructor) {
-            this.f35039a = simpleType;
-            this.f35040b = typeConstructor;
+            this.f34563a = simpleType;
+            this.f34564b = typeConstructor;
         }
 
         public final SimpleType a() {
-            return this.f35039a;
+            return this.f34563a;
         }
 
         public final TypeConstructor b() {
-            return this.f35040b;
+            return this.f34564b;
         }
     }
 
@@ -71,25 +71,25 @@ public final class KotlinTypeFactory {
     }
 
     private final MemberScope c(TypeConstructor typeConstructor, List list, KotlinTypeRefiner kotlinTypeRefiner) {
-        ClassifierDescriptor mo1197getDeclarationDescriptor = typeConstructor.mo1197getDeclarationDescriptor();
-        if (mo1197getDeclarationDescriptor instanceof TypeParameterDescriptor) {
-            return ((TypeParameterDescriptor) mo1197getDeclarationDescriptor).getDefaultType().getMemberScope();
+        ClassifierDescriptor mo1199getDeclarationDescriptor = typeConstructor.mo1199getDeclarationDescriptor();
+        if (mo1199getDeclarationDescriptor instanceof TypeParameterDescriptor) {
+            return ((TypeParameterDescriptor) mo1199getDeclarationDescriptor).getDefaultType().getMemberScope();
         }
-        if (mo1197getDeclarationDescriptor instanceof ClassDescriptor) {
+        if (mo1199getDeclarationDescriptor instanceof ClassDescriptor) {
             if (kotlinTypeRefiner == null) {
-                kotlinTypeRefiner = DescriptorUtilsKt.getKotlinTypeRefiner(DescriptorUtilsKt.getModule(mo1197getDeclarationDescriptor));
+                kotlinTypeRefiner = DescriptorUtilsKt.getKotlinTypeRefiner(DescriptorUtilsKt.getModule(mo1199getDeclarationDescriptor));
             }
             if (list.isEmpty()) {
-                return ModuleAwareClassDescriptorKt.getRefinedUnsubstitutedMemberScopeIfPossible((ClassDescriptor) mo1197getDeclarationDescriptor, kotlinTypeRefiner);
+                return ModuleAwareClassDescriptorKt.getRefinedUnsubstitutedMemberScopeIfPossible((ClassDescriptor) mo1199getDeclarationDescriptor, kotlinTypeRefiner);
             }
-            return ModuleAwareClassDescriptorKt.getRefinedMemberScopeIfPossible((ClassDescriptor) mo1197getDeclarationDescriptor, TypeConstructorSubstitution.Companion.create(typeConstructor, list), kotlinTypeRefiner);
-        } else if (mo1197getDeclarationDescriptor instanceof TypeAliasDescriptor) {
-            return ErrorUtils.createErrorScope(ErrorScopeKind.SCOPE_FOR_ABBREVIATION_TYPE, true, ((TypeAliasDescriptor) mo1197getDeclarationDescriptor).getName().toString());
+            return ModuleAwareClassDescriptorKt.getRefinedMemberScopeIfPossible((ClassDescriptor) mo1199getDeclarationDescriptor, TypeConstructorSubstitution.Companion.create(typeConstructor, list), kotlinTypeRefiner);
+        } else if (mo1199getDeclarationDescriptor instanceof TypeAliasDescriptor) {
+            return ErrorUtils.createErrorScope(ErrorScopeKind.SCOPE_FOR_ABBREVIATION_TYPE, true, ((TypeAliasDescriptor) mo1199getDeclarationDescriptor).getName().toString());
         } else {
             if (typeConstructor instanceof IntersectionTypeConstructor) {
                 return ((IntersectionTypeConstructor) typeConstructor).createScopeForKotlinType();
             }
-            throw new IllegalStateException("Unsupported classifier: " + mo1197getDeclarationDescriptor + " for constructor: " + typeConstructor);
+            throw new IllegalStateException("Unsupported classifier: " + mo1199getDeclarationDescriptor + " for constructor: " + typeConstructor);
         }
     }
 
@@ -102,8 +102,8 @@ public final class KotlinTypeFactory {
 
     private final b d(TypeConstructor typeConstructor, KotlinTypeRefiner kotlinTypeRefiner, List list) {
         ClassifierDescriptor refineDescriptor;
-        ClassifierDescriptor mo1197getDeclarationDescriptor = typeConstructor.mo1197getDeclarationDescriptor();
-        if (mo1197getDeclarationDescriptor == null || (refineDescriptor = kotlinTypeRefiner.refineDescriptor(mo1197getDeclarationDescriptor)) == null) {
+        ClassifierDescriptor mo1199getDeclarationDescriptor = typeConstructor.mo1199getDeclarationDescriptor();
+        if (mo1199getDeclarationDescriptor == null || (refineDescriptor = kotlinTypeRefiner.refineDescriptor(mo1199getDeclarationDescriptor)) == null) {
             return null;
         }
         if (refineDescriptor instanceof TypeAliasDescriptor) {
@@ -201,10 +201,10 @@ public final class KotlinTypeFactory {
         Intrinsics.checkNotNullParameter(attributes, "attributes");
         Intrinsics.checkNotNullParameter(constructor, "constructor");
         Intrinsics.checkNotNullParameter(arguments, "arguments");
-        if (attributes.isEmpty() && arguments.isEmpty() && !z10 && constructor.mo1197getDeclarationDescriptor() != null) {
-            ClassifierDescriptor mo1197getDeclarationDescriptor = constructor.mo1197getDeclarationDescriptor();
-            Intrinsics.checkNotNull(mo1197getDeclarationDescriptor);
-            SimpleType defaultType = mo1197getDeclarationDescriptor.getDefaultType();
+        if (attributes.isEmpty() && arguments.isEmpty() && !z10 && constructor.mo1199getDeclarationDescriptor() != null) {
+            ClassifierDescriptor mo1199getDeclarationDescriptor = constructor.mo1199getDeclarationDescriptor();
+            Intrinsics.checkNotNull(mo1199getDeclarationDescriptor);
+            SimpleType defaultType = mo1199getDeclarationDescriptor.getDefaultType();
             Intrinsics.checkNotNullExpressionValue(defaultType, "getDefaultType(...)");
             return defaultType;
         }

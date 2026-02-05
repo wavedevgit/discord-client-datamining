@@ -24,7 +24,7 @@ import f.j;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import lr.c;
+import or.c;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\b\u0007\u0018\u0000 \u00152\u00020\u00012\u00020\u0002:\u0001\u0015B\t\b\u0016¢\u0006\u0004\b\u0003\u0010\u0004B!\b\u0011\u0012\f\u0010\u0005\u001a\b\u0018\u00010\u0006R\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\u0004\b\u0003\u0010\nJ\u0012\u0010\u000b\u001a\u00020\f2\b\u0010\r\u001a\u0004\u0018\u00010\tH\u0016J\u0018\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u0013H\u0016J\u0010\u0010\u0014\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0011H\u0016R\u0014\u0010\u0005\u001a\b\u0018\u00010\u0006R\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0016"}, d2 = {"Lcom/facebook/react/modules/dialog/AlertFragment;", "Landroidx/fragment/app/DialogFragment;", "Landroid/content/DialogInterface$OnClickListener;", "<init>", "()V", "listener", "Lcom/facebook/react/modules/dialog/DialogModule$AlertFragmentListener;", "Lcom/facebook/react/modules/dialog/DialogModule;", "arguments", "Landroid/os/Bundle;", "(Lcom/facebook/react/modules/dialog/DialogModule$AlertFragmentListener;Landroid/os/Bundle;)V", "onCreateDialog", "Landroid/app/Dialog;", "savedInstanceState", ViewProps.ON_CLICK, "", "dialog", "Landroid/content/DialogInterface;", "which", "", "onDismiss", "Companion", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SuppressLint({"fragment_subclass_nonempty_constructor"})
@@ -54,28 +54,28 @@ public final class AlertFragment extends DialogFragment implements DialogInterfa
         }
 
         private final Dialog createAppCompatDialog(Context context, Bundle bundle, DialogInterface.OnClickListener onClickListener) {
-            a.C0017a c0017a = new a.C0017a(context);
+            a.C0018a c0018a = new a.C0018a(context);
             if (bundle.containsKey("title")) {
                 String str = (String) db.a.c(bundle.getString("title"));
                 Intrinsics.checkNotNull(str);
-                c0017a.b(getAccessibleTitle(context, str));
+                c0018a.b(getAccessibleTitle(context, str));
             }
             if (bundle.containsKey(AlertFragment.ARG_BUTTON_POSITIVE)) {
-                c0017a.i(bundle.getString(AlertFragment.ARG_BUTTON_POSITIVE), onClickListener);
+                c0018a.i(bundle.getString(AlertFragment.ARG_BUTTON_POSITIVE), onClickListener);
             }
             if (bundle.containsKey(AlertFragment.ARG_BUTTON_NEGATIVE)) {
-                c0017a.f(bundle.getString(AlertFragment.ARG_BUTTON_NEGATIVE), onClickListener);
+                c0018a.f(bundle.getString(AlertFragment.ARG_BUTTON_NEGATIVE), onClickListener);
             }
             if (bundle.containsKey(AlertFragment.ARG_BUTTON_NEUTRAL)) {
-                c0017a.g(bundle.getString(AlertFragment.ARG_BUTTON_NEUTRAL), onClickListener);
+                c0018a.g(bundle.getString(AlertFragment.ARG_BUTTON_NEUTRAL), onClickListener);
             }
             if (bundle.containsKey("message")) {
-                c0017a.e(bundle.getString("message"));
+                c0018a.e(bundle.getString("message"));
             }
             if (bundle.containsKey(AlertFragment.ARG_ITEMS)) {
-                c0017a.d(bundle.getCharSequenceArray(AlertFragment.ARG_ITEMS), onClickListener);
+                c0018a.d(bundle.getCharSequenceArray(AlertFragment.ARG_ITEMS), onClickListener);
             }
-            androidx.appcompat.app.a create = c0017a.create();
+            androidx.appcompat.app.a create = c0018a.create();
             Intrinsics.checkNotNullExpressionValue(create, "create(...)");
             return create;
         }
@@ -133,7 +133,7 @@ public final class AlertFragment extends DialogFragment implements DialogInterfa
         }
 
         private final boolean isAppCompatTheme(Context context) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(j.f23131y0);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(j.f22156y0);
             Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "obtainStyledAttributes(...)");
             boolean hasValue = obtainStyledAttributes.hasValue(j.D0);
             obtainStyledAttributes.recycle();

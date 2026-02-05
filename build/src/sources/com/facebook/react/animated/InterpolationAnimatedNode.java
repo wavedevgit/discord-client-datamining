@@ -319,7 +319,7 @@ public final class InterpolationAnimatedNode extends ValueAnimatedNode {
         static {
             OutputType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = sr.a.a($values);
+            $ENTRIES = vr.a.a($values);
         }
 
         private OutputType(String str, int i10) {

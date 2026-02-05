@@ -13,11 +13,11 @@ public abstract class x {
     public static final class a implements a0.o0 {
 
         /* renamed from: a  reason: collision with root package name */
-        final List f52996a;
+        final List f53540a;
 
         a(List list) {
             if (list != null && !list.isEmpty()) {
-                this.f52996a = Collections.unmodifiableList(new ArrayList(list));
+                this.f53540a = Collections.unmodifiableList(new ArrayList(list));
                 return;
             }
             throw new IllegalArgumentException("Cannot set an empty CaptureStage list.");
@@ -25,7 +25,7 @@ public abstract class x {
 
         @Override // a0.o0
         public List a() {
-            return this.f52996a;
+            return this.f53540a;
         }
     }
 

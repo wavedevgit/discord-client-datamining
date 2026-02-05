@@ -1,189 +1,121 @@
 package xk;
+
+import fk.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class a {
+public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gk.b f53341a;
+    private final b f53924a = b.f53925f;
 
-    /* renamed from: b  reason: collision with root package name */
-    private j f53342b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private g f53343c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private boolean f53344d;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public a(gk.b bVar) {
-        int i10 = bVar.i();
-        if (i10 >= 21 && (i10 & 3) == 1) {
-            this.f53341a = bVar;
-            return;
-        }
-        throw ck.g.a();
-    }
-
-    private int a(int i10, int i11, int i12) {
-        boolean e10;
-        if (this.f53344d) {
-            e10 = this.f53341a.e(i11, i10);
-        } else {
-            e10 = this.f53341a.e(i10, i11);
-        }
-        if (e10) {
-            return (i12 << 1) | 1;
-        }
-        return i12 << 1;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public void b() {
+    private int[] b(c cVar) {
+        int d10 = cVar.d();
+        int[] iArr = new int[d10];
         int i10 = 0;
-        while (i10 < this.f53341a.l()) {
-            int i11 = i10 + 1;
-            for (int i12 = i11; i12 < this.f53341a.i(); i12++) {
-                if (this.f53341a.e(i10, i12) != this.f53341a.e(i12, i10)) {
-                    this.f53341a.d(i12, i10);
-                    this.f53341a.d(i10, i12);
-                }
+        for (int i11 = 1; i11 < this.f53924a.e() && i10 < d10; i11++) {
+            if (cVar.b(i11) == 0) {
+                iArr[i10] = this.f53924a.g(i11);
+                i10++;
             }
-            i10 = i11;
         }
+        if (i10 == d10) {
+            return iArr;
+        }
+        throw d.a();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public byte[] c() {
-        int i10;
-        g d10 = d();
-        j e10 = e();
-        c cVar = c.values()[d10.c()];
-        int i11 = this.f53341a.i();
-        cVar.d(this.f53341a, i11);
-        gk.b a10 = e10.a();
-        byte[] bArr = new byte[e10.h()];
-        int i12 = i11 - 1;
-        boolean z10 = true;
-        int i13 = i12;
-        int i14 = 0;
-        int i15 = 0;
-        int i16 = 0;
-        while (i13 > 0) {
-            if (i13 == 6) {
-                i13--;
-            }
-            for (int i17 = 0; i17 < i11; i17++) {
-                if (z10) {
-                    i10 = i12 - i17;
-                } else {
-                    i10 = i17;
-                }
-                for (int i18 = 0; i18 < 2; i18++) {
-                    int i19 = i13 - i18;
-                    if (!a10.e(i19, i10)) {
-                        i15++;
-                        i16 <<= 1;
-                        if (this.f53341a.e(i19, i10)) {
-                            i16 |= 1;
-                        }
-                        if (i15 == 8) {
-                            bArr[i14] = (byte) i16;
-                            i14++;
-                            i15 = 0;
-                            i16 = 0;
-                        }
+    private int[] c(c cVar, c cVar2, int[] iArr) {
+        int d10 = cVar2.d();
+        if (d10 < 1) {
+            return new int[0];
+        }
+        int[] iArr2 = new int[d10];
+        for (int i10 = 1; i10 <= d10; i10++) {
+            iArr2[d10 - i10] = this.f53924a.i(i10, cVar2.c(i10));
+        }
+        c cVar3 = new c(this.f53924a, iArr2);
+        int length = iArr.length;
+        int[] iArr3 = new int[length];
+        for (int i11 = 0; i11 < length; i11++) {
+            int g10 = this.f53924a.g(iArr[i11]);
+            iArr3[i11] = this.f53924a.i(this.f53924a.j(0, cVar.b(g10)), this.f53924a.g(cVar3.b(g10)));
+        }
+        return iArr3;
+    }
+
+    private c[] d(c cVar, c cVar2, int i10) {
+        if (cVar.d() < cVar2.d()) {
+            cVar2 = cVar;
+            cVar = cVar2;
+        }
+        c f10 = this.f53924a.f();
+        c d10 = this.f53924a.d();
+        while (true) {
+            c cVar3 = cVar2;
+            cVar2 = cVar;
+            cVar = cVar3;
+            c cVar4 = d10;
+            c cVar5 = f10;
+            f10 = cVar4;
+            if (cVar.d() >= i10 / 2) {
+                if (!cVar.e()) {
+                    c f11 = this.f53924a.f();
+                    int g10 = this.f53924a.g(cVar.c(cVar.d()));
+                    while (cVar2.d() >= cVar.d() && !cVar2.e()) {
+                        int d11 = cVar2.d() - cVar.d();
+                        int i11 = this.f53924a.i(cVar2.c(cVar2.d()), g10);
+                        f11 = f11.a(this.f53924a.b(d11, i11));
+                        cVar2 = cVar2.j(cVar.h(d11, i11));
                     }
+                    d10 = f11.g(f10).j(cVar5).i();
+                } else {
+                    throw d.a();
                 }
-            }
-            z10 = !z10;
-            i13 -= 2;
-        }
-        if (i14 == e10.h()) {
-            return bArr;
-        }
-        throw ck.g.a();
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public g d() {
-        g gVar = this.f53343c;
-        if (gVar != null) {
-            return gVar;
-        }
-        int i10 = 0;
-        int i11 = 0;
-        for (int i12 = 0; i12 < 6; i12++) {
-            i11 = a(i12, 8, i11);
-        }
-        int a10 = a(8, 7, a(8, 8, a(7, 8, i11)));
-        for (int i13 = 5; i13 >= 0; i13--) {
-            a10 = a(8, i13, a10);
-        }
-        int i14 = this.f53341a.i();
-        int i15 = i14 - 7;
-        for (int i16 = i14 - 1; i16 >= i15; i16--) {
-            i10 = a(8, i16, i10);
-        }
-        for (int i17 = i14 - 8; i17 < i14; i17++) {
-            i10 = a(i17, 8, i10);
-        }
-        g a11 = g.a(a10, i10);
-        this.f53343c = a11;
-        if (a11 != null) {
-            return a11;
-        }
-        throw ck.g.a();
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public j e() {
-        j jVar = this.f53342b;
-        if (jVar != null) {
-            return jVar;
-        }
-        int i10 = this.f53341a.i();
-        int i11 = (i10 - 17) / 4;
-        if (i11 <= 6) {
-            return j.i(i11);
-        }
-        int i12 = i10 - 11;
-        int i13 = 0;
-        int i14 = 0;
-        for (int i15 = 5; i15 >= 0; i15--) {
-            for (int i16 = i10 - 9; i16 >= i12; i16--) {
-                i14 = a(i16, i15, i14);
+            } else {
+                int c10 = f10.c(0);
+                if (c10 != 0) {
+                    int g11 = this.f53924a.g(c10);
+                    return new c[]{f10.f(g11), cVar.f(g11)};
+                }
+                throw d.a();
             }
         }
-        j c10 = j.c(i14);
-        if (c10 != null && c10.e() == i10) {
-            this.f53342b = c10;
-            return c10;
-        }
-        for (int i17 = 5; i17 >= 0; i17--) {
-            for (int i18 = i10 - 9; i18 >= i12; i18--) {
-                i13 = a(i17, i18, i13);
+    }
+
+    public int a(int[] iArr, int i10, int[] iArr2) {
+        c cVar = new c(this.f53924a, iArr);
+        int[] iArr3 = new int[i10];
+        boolean z10 = false;
+        for (int i11 = i10; i11 > 0; i11--) {
+            int b10 = cVar.b(this.f53924a.c(i11));
+            iArr3[i10 - i11] = b10;
+            if (b10 != 0) {
+                z10 = true;
             }
         }
-        j c11 = j.c(i13);
-        if (c11 != null && c11.e() == i10) {
-            this.f53342b = c11;
-            return c11;
+        if (!z10) {
+            return 0;
         }
-        throw ck.g.a();
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public void f() {
-        if (this.f53343c == null) {
-            return;
+        c d10 = this.f53924a.d();
+        if (iArr2 != null) {
+            for (int i12 : iArr2) {
+                int c10 = this.f53924a.c((iArr.length - 1) - i12);
+                b bVar = this.f53924a;
+                d10 = d10.g(new c(bVar, new int[]{bVar.j(0, c10), 1}));
+            }
         }
-        c.values()[this.f53343c.c()].d(this.f53341a, this.f53341a.i());
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public void g(boolean z10) {
-        this.f53342b = null;
-        this.f53343c = null;
-        this.f53344d = z10;
+        c[] d11 = d(this.f53924a.b(i10, 1), new c(this.f53924a, iArr3), i10);
+        c cVar2 = d11[0];
+        c cVar3 = d11[1];
+        int[] b11 = b(cVar2);
+        int[] c11 = c(cVar3, cVar2, b11);
+        for (int i13 = 0; i13 < b11.length; i13++) {
+            int length = (iArr.length - 1) - this.f53924a.h(b11[i13]);
+            if (length >= 0) {
+                iArr[length] = this.f53924a.j(iArr[length], c11[i13]);
+            } else {
+                throw d.a();
+            }
+        }
+        return b11.length;
     }
 }

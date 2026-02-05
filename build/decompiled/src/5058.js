@@ -1,8 +1,8 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var5 = global;
-    var4 = var5.Object;
+    var0 = global;
+    var4 = var0.Object;
     var3 = var4.defineProperty;
     var1 = {};
     var0 = true;
@@ -15,19 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = require;
     var0 = undefined;
     var1 = var1.bind(var0)(var3);
-    var4 = var1.StyleSheet;
-    var3 = var4.create;
-    var1 = {};
-    var9 = var5.Object;
-    var8 = var9.assign;
-    var7 = var4.absoluteFillObject;
-    var6 = {};
-    var5 = 'box-none';
-    var6.pointerEvents = var5;
-    var5 = {};
-    var5 = var8.bind(var9)(var5, var7, var6);
-    var1.container = var5;
-    var1 = var3.bind(var4)(var1);
-    var2.styles = var1;
+    var1 = var1.BottomSheetHostingContainer;
+    var2.BottomSheetHostingContainer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5059]);

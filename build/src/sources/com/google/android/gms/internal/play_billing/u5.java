@@ -17,27 +17,27 @@ public final class u5 extends o1 implements w2 {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.internal.play_billing.u5.<init>(com.google.android.gms.internal.play_billing.t5):void");
     }
 
-    public final u5 m(r4 r4Var) {
+    public final u5 l(r4 r4Var) {
         i();
-        v5.D((v5) this.f13949e, r4Var);
+        v5.D((v5) this.f14343e, r4Var);
         return this;
     }
 
-    public final u5 o(v4 v4Var) {
+    public final u5 n(v4 v4Var) {
         i();
-        v5.E((v5) this.f13949e, v4Var);
+        v5.E((v5) this.f14343e, v4Var);
         return this;
     }
 
     public final u5 p(l5 l5Var) {
         i();
-        v5.C((v5) this.f13949e, l5Var);
+        v5.C((v5) this.f14343e, l5Var);
         return this;
     }
 
     public final u5 q(c6 c6Var) {
         i();
-        v5.B((v5) this.f13949e, c6Var);
+        v5.B((v5) this.f14343e, c6Var);
         return this;
     }
 }

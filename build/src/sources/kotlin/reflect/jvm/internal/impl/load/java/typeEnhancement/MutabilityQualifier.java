@@ -7,17 +7,17 @@ import kotlin.enums.EnumEntries;
 public final class MutabilityQualifier {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ MutabilityQualifier[] f33521d;
+    private static final /* synthetic */ MutabilityQualifier[] f33045d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f33522e;
+    private static final /* synthetic */ EnumEntries f33046e;
     public static final MutabilityQualifier READ_ONLY = new MutabilityQualifier("READ_ONLY", 0);
     public static final MutabilityQualifier MUTABLE = new MutabilityQualifier("MUTABLE", 1);
 
     static {
         MutabilityQualifier[] a10 = a();
-        f33521d = a10;
-        f33522e = sr.a.a(a10);
+        f33045d = a10;
+        f33046e = vr.a.a(a10);
     }
 
     private MutabilityQualifier(String str, int i10) {
@@ -32,6 +32,6 @@ public final class MutabilityQualifier {
     }
 
     public static MutabilityQualifier[] values() {
-        return (MutabilityQualifier[]) f33521d.clone();
+        return (MutabilityQualifier[]) f33045d.clone();
     }
 }

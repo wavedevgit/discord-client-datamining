@@ -9,19 +9,19 @@ import java.lang.reflect.Method;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static long f6960a;
+    private static long f7378a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static Method f6961b;
+    private static Method f7379b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static Method f6962c;
+    private static Method f7380c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static Method f6963d;
+    private static Method f7381d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static Method f6964e;
+    private static Method f7382e;
 
     public static void a(String str, int i10) {
         if (Build.VERSION.SDK_INT >= 29) {
@@ -33,10 +33,10 @@ public abstract class a {
 
     private static void b(String str, int i10) {
         try {
-            if (f6962c == null) {
-                f6962c = Trace.class.getMethod("asyncTraceBegin", Long.TYPE, String.class, Integer.TYPE);
+            if (f7380c == null) {
+                f7380c = Trace.class.getMethod("asyncTraceBegin", Long.TYPE, String.class, Integer.TYPE);
             }
-            f6962c.invoke(null, Long.valueOf(f6960a), str, Integer.valueOf(i10));
+            f7380c.invoke(null, Long.valueOf(f7378a), str, Integer.valueOf(i10));
         } catch (Exception e10) {
             g("asyncTraceBegin", e10);
         }
@@ -56,10 +56,10 @@ public abstract class a {
 
     private static void e(String str, int i10) {
         try {
-            if (f6963d == null) {
-                f6963d = Trace.class.getMethod("asyncTraceEnd", Long.TYPE, String.class, Integer.TYPE);
+            if (f7381d == null) {
+                f7381d = Trace.class.getMethod("asyncTraceEnd", Long.TYPE, String.class, Integer.TYPE);
             }
-            f6963d.invoke(null, Long.valueOf(f6960a), str, Integer.valueOf(i10));
+            f7381d.invoke(null, Long.valueOf(f7378a), str, Integer.valueOf(i10));
         } catch (Exception e10) {
             g("asyncTraceEnd", e10);
         }
@@ -89,11 +89,11 @@ public abstract class a {
 
     private static boolean i() {
         try {
-            if (f6961b == null) {
-                f6960a = Trace.class.getField("TRACE_TAG_APP").getLong(null);
-                f6961b = Trace.class.getMethod("isTagEnabled", Long.TYPE);
+            if (f7379b == null) {
+                f7378a = Trace.class.getField("TRACE_TAG_APP").getLong(null);
+                f7379b = Trace.class.getMethod("isTagEnabled", Long.TYPE);
             }
-            return ((Boolean) f6961b.invoke(null, Long.valueOf(f6960a))).booleanValue();
+            return ((Boolean) f7379b.invoke(null, Long.valueOf(f7378a))).booleanValue();
         } catch (Exception e10) {
             g("isTagEnabled", e10);
             return false;
@@ -110,10 +110,10 @@ public abstract class a {
 
     private static void k(String str, int i10) {
         try {
-            if (f6964e == null) {
-                f6964e = Trace.class.getMethod("traceCounter", Long.TYPE, String.class, Integer.TYPE);
+            if (f7382e == null) {
+                f7382e = Trace.class.getMethod("traceCounter", Long.TYPE, String.class, Integer.TYPE);
             }
-            f6964e.invoke(null, Long.valueOf(f6960a), str, Integer.valueOf(i10));
+            f7382e.invoke(null, Long.valueOf(f7378a), str, Integer.valueOf(i10));
         } catch (Exception e10) {
             g("traceCounter", e10);
         }

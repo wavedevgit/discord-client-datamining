@@ -9,8 +9,6 @@ import com.discord.misc.utilities.coroutines.CoroutineViewUtilsKt;
 import com.linecorp.apng.ApngDrawable;
 import java.security.MessageDigest;
 import java.util.Arrays;
-import js.i;
-import js.m0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -20,6 +18,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.Charsets;
 import kotlin.text.StringsKt;
+import ms.i;
+import ms.m0;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 (2\u00020\u0001:\u0002()B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u0017\u0010\t\u001a\u00020\b2\u0006\u0010\u0007\u001a\u00020\u0006H\u0002¢\u0006\u0004\b\t\u0010\nJ\u000f\u0010\u000b\u001a\u00020\bH\u0002¢\u0006\u0004\b\u000b\u0010\fJ\u000f\u0010\r\u001a\u00020\bH\u0002¢\u0006\u0004\b\r\u0010\fJ\u000f\u0010\u000e\u001a\u00020\bH\u0002¢\u0006\u0004\b\u000e\u0010\fJ\r\u0010\u000f\u001a\u00020\b¢\u0006\u0004\b\u000f\u0010\fJ\r\u0010\u0010\u001a\u00020\b¢\u0006\u0004\b\u0010\u0010\fJ\u0015\u0010\u0011\u001a\u00020\b2\u0006\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\u0011\u0010\nJ!\u0010\u0015\u001a\u00020\b2\b\b\u0002\u0010\u0013\u001a\u00020\u00122\b\b\u0002\u0010\u0014\u001a\u00020\u0012¢\u0006\u0004\b\u0015\u0010\u0016J\u000f\u0010\u0017\u001a\u00020\bH\u0014¢\u0006\u0004\b\u0017\u0010\fJ\u000f\u0010\u0018\u001a\u00020\bH\u0014¢\u0006\u0004\b\u0018\u0010\fJ\u0015\u0010\u001b\u001a\u00020\b2\u0006\u0010\u001a\u001a\u00020\u0019¢\u0006\u0004\b\u001b\u0010\u001cR0\u0010\u001f\u001a\u0010\u0012\u0004\u0012\u00020\u001e\u0012\u0004\u0012\u00020\b\u0018\u00010\u001d8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b\u001f\u0010 \u001a\u0004\b!\u0010\"\"\u0004\b#\u0010$R\u001a\u0010&\u001a\b\u0012\u0004\u0012\u00020\u00060%8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b&\u0010'¨\u0006*"}, d2 = {"Lcom/discord/image/animated_image/apng/APNGView;", "Landroidx/appcompat/widget/m;", "Landroid/content/Context;", "context", "<init>", "(Landroid/content/Context;)V", "Lcom/discord/image/animated_image/apng/APNGView$Config;", "config", "", "fetchAPNG", "(Lcom/discord/image/animated_image/apng/APNGView$Config;)V", "playApngAnimation", "()V", "pauseApngAnimation", "stopApngAnimation", "play", "pause", "loadImage", "", "resetState", "showLoading", "recycle", "(ZZ)V", "onDetachedFromWindow", "onAttachedToWindow", "", "positionMillis", "seek", "(J)V", "Lkotlin/Function1;", "", "onImageLoaded", "Lkotlin/jvm/functions/Function1;", "getOnImageLoaded", "()Lkotlin/jvm/functions/Function1;", "setOnImageLoaded", "(Lkotlin/jvm/functions/Function1;)V", "Lcom/discord/image/animated_image/animated_image_utils/AnimatedImageStateManager;", "apngStateManager", "Lcom/discord/image/animated_image/animated_image_utils/AnimatedImageStateManager;", "Companion", "Config", "animated_image_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -112,23 +112,23 @@ public final class APNGView extends m {
 
     public static final Unit apngStateManager$lambda$0(APNGView aPNGView) {
         aPNGView.playApngAnimation();
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public static final Unit apngStateManager$lambda$1(APNGView aPNGView) {
         aPNGView.pauseApngAnimation();
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public static final Unit apngStateManager$lambda$2(APNGView aPNGView) {
         aPNGView.stopApngAnimation();
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public static final Unit apngStateManager$lambda$3(APNGView aPNGView, Config config) {
         Intrinsics.checkNotNullParameter(config, "<unused var>");
         recycle$default(aPNGView, false, false, 2, null);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public static final boolean apngStateManager$lambda$4(APNGView aPNGView, Config config) {
@@ -142,7 +142,7 @@ public final class APNGView extends m {
     public static final Unit apngStateManager$lambda$5(APNGView aPNGView, Config config) {
         Intrinsics.checkNotNullParameter(config, "config");
         aPNGView.fetchAPNG(config);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     private final void fetchAPNG(Config config) {

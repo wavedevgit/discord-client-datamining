@@ -4,23 +4,23 @@ import android.util.SparseArray;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.swmansion.gesturehandler.react.RNGestureHandlerRootHelper;
-import fn.q;
+import in.q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f implements fn.e {
+public final class f implements in.e {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f17702d = new a(null);
+    public static final a f18108d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final SparseArray f17703a = new SparseArray();
+    private final SparseArray f18109a = new SparseArray();
 
     /* renamed from: b  reason: collision with root package name */
-    private final SparseArray f17704b = new SparseArray();
+    private final SparseArray f18110b = new SparseArray();
 
     /* renamed from: c  reason: collision with root package name */
-    private final SparseArray f17705c = new SparseArray();
+    private final SparseArray f18111c = new SparseArray();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -43,11 +43,11 @@ public final class f implements fn.e {
         return iArr;
     }
 
-    @Override // fn.e
-    public boolean a(fn.d handler, fn.d otherHandler) {
+    @Override // in.e
+    public boolean a(in.d handler, in.d otherHandler) {
         Intrinsics.checkNotNullParameter(handler, "handler");
         Intrinsics.checkNotNullParameter(otherHandler, "otherHandler");
-        int[] iArr = (int[]) this.f17705c.get(handler.T());
+        int[] iArr = (int[]) this.f18111c.get(handler.T());
         if (iArr != null) {
             for (int i10 : iArr) {
                 if (i10 == otherHandler.T()) {
@@ -58,11 +58,11 @@ public final class f implements fn.e {
         return false;
     }
 
-    @Override // fn.e
-    public boolean b(fn.d handler, fn.d otherHandler) {
+    @Override // in.e
+    public boolean b(in.d handler, in.d otherHandler) {
         Intrinsics.checkNotNullParameter(handler, "handler");
         Intrinsics.checkNotNullParameter(otherHandler, "otherHandler");
-        int[] iArr = (int[]) this.f17704b.get(handler.T());
+        int[] iArr = (int[]) this.f18109a.get(handler.T());
         if (iArr != null) {
             for (int i10 : iArr) {
                 if (i10 == otherHandler.T()) {
@@ -73,8 +73,8 @@ public final class f implements fn.e {
         return false;
     }
 
-    @Override // fn.e
-    public boolean c(fn.d handler, fn.d otherHandler) {
+    @Override // in.e
+    public boolean c(in.d handler, in.d otherHandler) {
         Intrinsics.checkNotNullParameter(handler, "handler");
         Intrinsics.checkNotNullParameter(otherHandler, "otherHandler");
         if (otherHandler instanceof q) {
@@ -86,11 +86,11 @@ public final class f implements fn.e {
         return false;
     }
 
-    @Override // fn.e
-    public boolean d(fn.d handler, fn.d otherHandler) {
+    @Override // in.e
+    public boolean d(in.d handler, in.d otherHandler) {
         Intrinsics.checkNotNullParameter(handler, "handler");
         Intrinsics.checkNotNullParameter(otherHandler, "otherHandler");
-        int[] iArr = (int[]) this.f17703a.get(handler.T());
+        int[] iArr = (int[]) this.f18110b.get(handler.T());
         if (iArr != null) {
             for (int i10 : iArr) {
                 if (i10 == otherHandler.T()) {
@@ -101,28 +101,28 @@ public final class f implements fn.e {
         return false;
     }
 
-    public final void e(fn.d handler, ReadableMap config) {
+    public final void e(in.d handler, ReadableMap config) {
         Intrinsics.checkNotNullParameter(handler, "handler");
         Intrinsics.checkNotNullParameter(config, "config");
         handler.A0(this);
         if (config.hasKey("waitFor")) {
-            this.f17703a.put(handler.T(), f(config, "waitFor"));
+            this.f18109a.put(handler.T(), f(config, "waitFor"));
         }
         if (config.hasKey("simultaneousHandlers")) {
-            this.f17704b.put(handler.T(), f(config, "simultaneousHandlers"));
+            this.f18110b.put(handler.T(), f(config, "simultaneousHandlers"));
         }
         if (config.hasKey("blocksHandlers")) {
-            this.f17705c.put(handler.T(), f(config, "blocksHandlers"));
+            this.f18111c.put(handler.T(), f(config, "blocksHandlers"));
         }
     }
 
     public final void g(int i10) {
-        this.f17703a.remove(i10);
-        this.f17704b.remove(i10);
+        this.f18109a.remove(i10);
+        this.f18110b.remove(i10);
     }
 
     public final void h() {
-        this.f17703a.clear();
-        this.f17704b.clear();
+        this.f18109a.clear();
+        this.f18110b.clear();
     }
 }

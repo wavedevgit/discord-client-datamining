@@ -6,7 +6,7 @@ import w5.c;
 public class g implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f51136a = new g();
+    public static final g f51825a = new g();
 
     private g() {
     }
@@ -16,24 +16,24 @@ public class g implements n0 {
     public Integer a(w5.c cVar, float f10) {
         boolean z10;
         double d10;
-        if (cVar.n() == c.b.BEGIN_ARRAY) {
+        if (cVar.m() == c.b.BEGIN_ARRAY) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (z10) {
-            cVar.u();
+            cVar.v();
         }
         double nextDouble = cVar.nextDouble();
         double nextDouble2 = cVar.nextDouble();
         double nextDouble3 = cVar.nextDouble();
-        if (cVar.n() == c.b.NUMBER) {
+        if (cVar.m() == c.b.NUMBER) {
             d10 = cVar.nextDouble();
         } else {
             d10 = 1.0d;
         }
         if (z10) {
-            cVar.s();
+            cVar.t();
         }
         if (nextDouble <= 1.0d && nextDouble2 <= 1.0d && nextDouble3 <= 1.0d) {
             nextDouble *= 255.0d;

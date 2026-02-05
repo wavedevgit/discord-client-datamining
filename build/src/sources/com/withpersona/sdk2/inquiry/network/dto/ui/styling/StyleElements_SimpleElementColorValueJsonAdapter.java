@@ -62,18 +62,18 @@ public final class StyleElements_SimpleElementColorValueJsonAdapter extends h {
     @NotNull
     public StyleElements.SimpleElementColorValue fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         Integer num = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 num = (Integer) this.nullableIntAtRgbaHexColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StyleElements.SimpleElementColorValue(num);
     }
 
@@ -81,8 +81,8 @@ public final class StyleElements_SimpleElementColorValueJsonAdapter extends h {
     public void toJson(@NotNull t writer, StyleElements.SimpleElementColorValue simpleElementColorValue) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (simpleElementColorValue != null) {
-            writer.l();
-            writer.A0("value");
+            writer.k();
+            writer.W("value");
             this.nullableIntAtRgbaHexColorAdapter.toJson(writer, simpleElementColorValue.getValue());
             writer.E();
             return;

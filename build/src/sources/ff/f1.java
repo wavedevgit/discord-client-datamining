@@ -11,34 +11,34 @@ import java.util.concurrent.atomic.AtomicReference;
 public abstract class f1 extends g implements DialogInterface.OnCancelListener {
 
     /* renamed from: e  reason: collision with root package name */
-    protected volatile boolean f23903e;
+    protected volatile boolean f22928e;
 
     /* renamed from: i  reason: collision with root package name */
-    protected final AtomicReference f23904i;
+    protected final AtomicReference f22929i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Handler f23905o;
+    private final Handler f22930o;
 
     /* renamed from: p  reason: collision with root package name */
-    protected final com.google.android.gms.common.f f23906p;
+    protected final com.google.android.gms.common.f f22931p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f1(h hVar, com.google.android.gms.common.f fVar) {
         super(hVar);
-        this.f23904i = new AtomicReference(null);
-        this.f23905o = new fg.h(Looper.getMainLooper());
-        this.f23906p = fVar;
+        this.f22929i = new AtomicReference(null);
+        this.f22930o = new fg.h(Looper.getMainLooper());
+        this.f22931p = fVar;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void l(com.google.android.gms.common.b bVar, int i10) {
-        this.f23904i.set(null);
+        this.f22929i.set(null);
         m(bVar, i10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void o() {
-        this.f23904i.set(null);
+        this.f22929i.set(null);
         n();
     }
 
@@ -51,15 +51,15 @@ public abstract class f1 extends g implements DialogInterface.OnCancelListener {
 
     @Override // ff.g
     public final void e(int i10, int i11, Intent intent) {
-        c1 c1Var = (c1) this.f23904i.get();
+        c1 c1Var = (c1) this.f22929i.get();
         if (i10 != 1) {
             if (i10 == 2) {
-                int g10 = this.f23906p.g(b());
+                int g10 = this.f22931p.g(b());
                 if (g10 == 0) {
                     o();
                     return;
                 } else if (c1Var != null) {
-                    if (c1Var.b().b() == 18 && g10 == 18) {
+                    if (c1Var.b().c() == 18 && g10 == 18) {
                         return;
                     }
                 } else {
@@ -90,7 +90,7 @@ public abstract class f1 extends g implements DialogInterface.OnCancelListener {
         c1 c1Var;
         super.f(bundle);
         if (bundle != null) {
-            AtomicReference atomicReference = this.f23904i;
+            AtomicReference atomicReference = this.f22929i;
             if (bundle.getBoolean("resolving_error", false)) {
                 c1Var = new c1(new com.google.android.gms.common.b(bundle.getInt("failed_status"), (PendingIntent) bundle.getParcelable("failed_resolution")), bundle.getInt("failed_client_id", -1));
             } else {
@@ -103,26 +103,26 @@ public abstract class f1 extends g implements DialogInterface.OnCancelListener {
     @Override // ff.g
     public final void i(Bundle bundle) {
         super.i(bundle);
-        c1 c1Var = (c1) this.f23904i.get();
+        c1 c1Var = (c1) this.f22929i.get();
         if (c1Var == null) {
             return;
         }
         bundle.putBoolean("resolving_error", true);
         bundle.putInt("failed_client_id", c1Var.a());
-        bundle.putInt("failed_status", c1Var.b().b());
-        bundle.putParcelable("failed_resolution", c1Var.b().d());
+        bundle.putInt("failed_status", c1Var.b().c());
+        bundle.putParcelable("failed_resolution", c1Var.b().e());
     }
 
     @Override // ff.g
     public void j() {
         super.j();
-        this.f23903e = true;
+        this.f22928e = true;
     }
 
     @Override // ff.g
     public void k() {
         super.k();
-        this.f23903e = false;
+        this.f22928e = false;
     }
 
     protected abstract void m(com.google.android.gms.common.b bVar, int i10);
@@ -131,16 +131,16 @@ public abstract class f1 extends g implements DialogInterface.OnCancelListener {
 
     @Override // android.content.DialogInterface.OnCancelListener
     public final void onCancel(DialogInterface dialogInterface) {
-        l(new com.google.android.gms.common.b(13, null), p((c1) this.f23904i.get()));
+        l(new com.google.android.gms.common.b(13, null), p((c1) this.f22929i.get()));
     }
 
     public final void s(com.google.android.gms.common.b bVar, int i10) {
         AtomicReference atomicReference;
         c1 c1Var = new c1(bVar, i10);
         do {
-            atomicReference = this.f23904i;
+            atomicReference = this.f22929i;
             if (p0.d.a(atomicReference, null, c1Var)) {
-                this.f23905o.post(new e1(this, c1Var));
+                this.f22930o.post(new e1(this, c1Var));
                 return;
             }
         } while (atomicReference.get() == null);

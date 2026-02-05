@@ -52,25 +52,25 @@ import org.jetbrains.annotations.NotNull;
 public final class JavaTypeResolver {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LazyJavaResolverContext f33486a;
+    private final LazyJavaResolverContext f33010a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TypeParameterResolver f33487b;
+    private final TypeParameterResolver f33011b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final RawProjectionComputer f33488c;
+    private final RawProjectionComputer f33012c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeParameterUpperBoundEraser f33489d;
+    private final TypeParameterUpperBoundEraser f33013d;
 
     public JavaTypeResolver(@NotNull LazyJavaResolverContext c10, @NotNull TypeParameterResolver typeParameterResolver) {
         Intrinsics.checkNotNullParameter(c10, "c");
         Intrinsics.checkNotNullParameter(typeParameterResolver, "typeParameterResolver");
-        this.f33486a = c10;
-        this.f33487b = typeParameterResolver;
+        this.f33010a = c10;
+        this.f33011b = typeParameterResolver;
         RawProjectionComputer rawProjectionComputer = new RawProjectionComputer();
-        this.f33488c = rawProjectionComputer;
-        this.f33489d = new TypeParameterUpperBoundEraser(rawProjectionComputer, null, 2, null);
+        this.f33012c = rawProjectionComputer;
+        this.f33013d = new TypeParameterUpperBoundEraser(rawProjectionComputer, null, 2, null);
     }
 
     private final boolean b(JavaClassifierType javaClassifierType, ClassDescriptor classDescriptor) {
@@ -204,7 +204,7 @@ public final class JavaTypeResolver {
                 javaClassifierType2 = javaClassifierType;
                 typeConstructor2 = typeConstructor;
                 javaTypeAttributes2 = javaTypeAttributes;
-                computeProjection = this.f33488c.computeProjection(typeParameterDescriptor, javaTypeAttributes2.markIsRaw(javaClassifierType2.isRaw()), this.f33489d, new LazyWrappedType(this.f33486a.getStorageManager(), new a(this, typeParameterDescriptor, javaTypeAttributes2, typeConstructor2, javaClassifierType2)));
+                computeProjection = this.f33012c.computeProjection(typeParameterDescriptor, javaTypeAttributes2.markIsRaw(javaClassifierType2.isRaw()), this.f33013d, new LazyWrappedType(this.f33010a.getStorageManager(), new a(this, typeParameterDescriptor, javaTypeAttributes2, typeConstructor2, javaClassifierType2)));
             }
             arrayList.add(computeProjection);
             javaTypeAttributes = javaTypeAttributes2;
@@ -217,10 +217,10 @@ public final class JavaTypeResolver {
     /* JADX INFO: Access modifiers changed from: private */
     public static final KotlinType e(JavaTypeResolver javaTypeResolver, TypeParameterDescriptor typeParameterDescriptor, JavaTypeAttributes javaTypeAttributes, TypeConstructor typeConstructor, JavaClassifierType javaClassifierType) {
         SimpleType simpleType;
-        TypeParameterUpperBoundEraser typeParameterUpperBoundEraser = javaTypeResolver.f33489d;
-        ClassifierDescriptor mo1197getDeclarationDescriptor = typeConstructor.mo1197getDeclarationDescriptor();
-        if (mo1197getDeclarationDescriptor != null) {
-            simpleType = mo1197getDeclarationDescriptor.getDefaultType();
+        TypeParameterUpperBoundEraser typeParameterUpperBoundEraser = javaTypeResolver.f33013d;
+        ClassifierDescriptor mo1199getDeclarationDescriptor = typeConstructor.mo1199getDeclarationDescriptor();
+        if (mo1199getDeclarationDescriptor != null) {
+            simpleType = mo1199getDeclarationDescriptor.getDefaultType();
         } else {
             simpleType = null;
         }
@@ -234,7 +234,7 @@ public final class JavaTypeResolver {
             javaClassifierType2 = javaClassifierType;
         } else {
             javaClassifierType2 = javaClassifierType;
-            defaultAttributes = TypeAttributesKt.toDefaultAttributes(new LazyJavaAnnotations(this.f33486a, javaClassifierType2, false, 4, null));
+            defaultAttributes = TypeAttributesKt.toDefaultAttributes(new LazyJavaAnnotations(this.f33010a, javaClassifierType2, false, 4, null));
         }
         TypeAttributes typeAttributes = defaultAttributes;
         TypeConstructor g10 = g(javaClassifierType2, javaTypeAttributes);
@@ -264,7 +264,7 @@ public final class JavaTypeResolver {
             if (fqName != null) {
                 ClassDescriptor k10 = k(javaClassifierType, javaTypeAttributes, fqName);
                 if (k10 == null) {
-                    k10 = this.f33486a.getComponents().getModuleClassResolver().resolveClass(javaClass);
+                    k10 = this.f33010a.getComponents().getModuleClassResolver().resolveClass(javaClass);
                 }
                 if (k10 != null && (typeConstructor = k10.getTypeConstructor()) != null) {
                     return typeConstructor;
@@ -273,7 +273,7 @@ public final class JavaTypeResolver {
             }
             throw new AssertionError("Class type should have a FQ name: " + classifier);
         } else if (classifier instanceof JavaTypeParameter) {
-            TypeParameterDescriptor resolveTypeParameter = this.f33487b.resolveTypeParameter((JavaTypeParameter) classifier);
+            TypeParameterDescriptor resolveTypeParameter = this.f33011b.resolveTypeParameter((JavaTypeParameter) classifier);
             if (resolveTypeParameter != null) {
                 return resolveTypeParameter.getTypeConstructor();
             }
@@ -284,7 +284,7 @@ public final class JavaTypeResolver {
     }
 
     private final TypeConstructor h(JavaClassifierType javaClassifierType) {
-        TypeConstructor typeConstructor = this.f33486a.getComponents().getDeserializedDescriptorResolver().getComponents().getNotFoundClasses().getClass(ClassId.Companion.topLevel(new FqName(javaClassifierType.getClassifierQualifiedName())), CollectionsKt.e(0)).getTypeConstructor();
+        TypeConstructor typeConstructor = this.f33010a.getComponents().getDeserializedDescriptorResolver().getComponents().getNotFoundClasses().getClass(ClassId.Companion.topLevel(new FqName(javaClassifierType.getClassifierQualifiedName())), CollectionsKt.e(0)).getTypeConstructor();
         Intrinsics.checkNotNullExpressionValue(typeConstructor, "getTypeConstructor(...)");
         return typeConstructor;
     }
@@ -306,13 +306,13 @@ public final class JavaTypeResolver {
     private final ClassDescriptor k(JavaClassifierType javaClassifierType, JavaTypeAttributes javaTypeAttributes, FqName fqName) {
         FqName fqName2;
         if (javaTypeAttributes.isForAnnotationParameter()) {
-            fqName2 = JavaTypeResolverKt.f33490a;
+            fqName2 = JavaTypeResolverKt.f33014a;
             if (Intrinsics.areEqual(fqName, fqName2)) {
-                return this.f33486a.getComponents().getReflectionTypes().getKClass();
+                return this.f33010a.getComponents().getReflectionTypes().getKClass();
             }
         }
         JavaToKotlinClassMapper javaToKotlinClassMapper = JavaToKotlinClassMapper.INSTANCE;
-        ClassDescriptor mapJavaToKotlin$default = JavaToKotlinClassMapper.mapJavaToKotlin$default(javaToKotlinClassMapper, fqName, this.f33486a.getModule().getBuiltIns(), null, 4, null);
+        ClassDescriptor mapJavaToKotlin$default = JavaToKotlinClassMapper.mapJavaToKotlin$default(javaToKotlinClassMapper, fqName, this.f33010a.getModule().getBuiltIns(), null, 4, null);
         if (mapJavaToKotlin$default == null) {
             return null;
         }
@@ -366,7 +366,7 @@ public final class JavaTypeResolver {
                 variance = Variance.IN_VARIANCE;
             }
             if (bound != null && !i(variance, typeParameterDescriptor)) {
-                AnnotationDescriptor extractNullabilityAnnotationOnBoundedWildcard = UtilsKt.extractNullabilityAnnotationOnBoundedWildcard(this.f33486a, javaWildcardType);
+                AnnotationDescriptor extractNullabilityAnnotationOnBoundedWildcard = UtilsKt.extractNullabilityAnnotationOnBoundedWildcard(this.f33010a, javaWildcardType);
                 KotlinType transformJavaType = transformJavaType(bound, JavaTypeAttributesKt.toAttributes$default(TypeUsage.COMMON, false, false, null, 7, null));
                 if (extractNullabilityAnnotationOnBoundedWildcard != null) {
                     transformJavaType = TypeUtilsKt.replaceAnnotations(transformJavaType, Annotations.Companion.create(CollectionsKt.K0(transformJavaType.getAnnotations(), extractNullabilityAnnotationOnBoundedWildcard)));
@@ -403,9 +403,9 @@ public final class JavaTypeResolver {
         if (javaPrimitiveType != null) {
             primitiveType = javaPrimitiveType.getType();
         }
-        LazyJavaAnnotations lazyJavaAnnotations = new LazyJavaAnnotations(this.f33486a, arrayType, true);
+        LazyJavaAnnotations lazyJavaAnnotations = new LazyJavaAnnotations(this.f33010a, arrayType, true);
         if (primitiveType != null) {
-            SimpleType primitiveArrayKotlinType = this.f33486a.getModule().getBuiltIns().getPrimitiveArrayKotlinType(primitiveType);
+            SimpleType primitiveArrayKotlinType = this.f33010a.getModule().getBuiltIns().getPrimitiveArrayKotlinType(primitiveType);
             Intrinsics.checkNotNull(primitiveArrayKotlinType);
             KotlinType replaceAnnotations = TypeUtilsKt.replaceAnnotations(primitiveArrayKotlinType, new CompositeAnnotations(primitiveArrayKotlinType.getAnnotations(), lazyJavaAnnotations));
             Intrinsics.checkNotNull(replaceAnnotations, "null cannot be cast to non-null type org.jetbrains.kotlin.types.SimpleType");
@@ -422,13 +422,13 @@ public final class JavaTypeResolver {
             } else {
                 variance = Variance.INVARIANT;
             }
-            SimpleType arrayType2 = this.f33486a.getModule().getBuiltIns().getArrayType(variance, transformJavaType, lazyJavaAnnotations);
+            SimpleType arrayType2 = this.f33010a.getModule().getBuiltIns().getArrayType(variance, transformJavaType, lazyJavaAnnotations);
             Intrinsics.checkNotNullExpressionValue(arrayType2, "getArrayType(...)");
             return arrayType2;
         }
-        SimpleType arrayType3 = this.f33486a.getModule().getBuiltIns().getArrayType(Variance.INVARIANT, transformJavaType, lazyJavaAnnotations);
+        SimpleType arrayType3 = this.f33010a.getModule().getBuiltIns().getArrayType(Variance.INVARIANT, transformJavaType, lazyJavaAnnotations);
         Intrinsics.checkNotNullExpressionValue(arrayType3, "getArrayType(...)");
-        return KotlinTypeFactory.flexibleType(arrayType3, this.f33486a.getModule().getBuiltIns().getArrayType(Variance.OUT_VARIANCE, transformJavaType, lazyJavaAnnotations).makeNullableAsSpecified(true));
+        return KotlinTypeFactory.flexibleType(arrayType3, this.f33010a.getModule().getBuiltIns().getArrayType(Variance.OUT_VARIANCE, transformJavaType, lazyJavaAnnotations).makeNullableAsSpecified(true));
     }
 
     @NotNull
@@ -439,9 +439,9 @@ public final class JavaTypeResolver {
         if (javaType instanceof JavaPrimitiveType) {
             PrimitiveType type = ((JavaPrimitiveType) javaType).getType();
             if (type != null) {
-                unitType = this.f33486a.getModule().getBuiltIns().getPrimitiveKotlinType(type);
+                unitType = this.f33010a.getModule().getBuiltIns().getPrimitiveKotlinType(type);
             } else {
-                unitType = this.f33486a.getModule().getBuiltIns().getUnitType();
+                unitType = this.f33010a.getModule().getBuiltIns().getUnitType();
             }
             Intrinsics.checkNotNull(unitType);
             return unitType;
@@ -456,11 +456,11 @@ public final class JavaTypeResolver {
                 if (bound != null && (transformJavaType = transformJavaType(bound, attr)) != null) {
                     return transformJavaType;
                 }
-                SimpleType defaultBound = this.f33486a.getModule().getBuiltIns().getDefaultBound();
+                SimpleType defaultBound = this.f33010a.getModule().getBuiltIns().getDefaultBound();
                 Intrinsics.checkNotNullExpressionValue(defaultBound, "getDefaultBound(...)");
                 return defaultBound;
             } else if (javaType == null) {
-                SimpleType defaultBound2 = this.f33486a.getModule().getBuiltIns().getDefaultBound();
+                SimpleType defaultBound2 = this.f33010a.getModule().getBuiltIns().getDefaultBound();
                 Intrinsics.checkNotNullExpressionValue(defaultBound2, "getDefaultBound(...)");
                 return defaultBound2;
             } else {

@@ -30,160 +30,160 @@ public class ConstraintWidget {
     public b[] Z;
 
     /* renamed from: a0  reason: collision with root package name */
-    public ConstraintWidget f2255a0;
+    public ConstraintWidget f2367a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    int f2257b0;
+    int f2369b0;
 
     /* renamed from: c  reason: collision with root package name */
-    public l1.c f2258c;
+    public l1.c f2370c;
 
     /* renamed from: c0  reason: collision with root package name */
-    int f2259c0;
+    int f2371c0;
 
     /* renamed from: d  reason: collision with root package name */
-    public l1.c f2260d;
+    public l1.c f2372d;
 
     /* renamed from: d0  reason: collision with root package name */
-    public float f2261d0;
+    public float f2373d0;
 
     /* renamed from: e0  reason: collision with root package name */
-    protected int f2263e0;
+    protected int f2375e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    protected int f2265f0;
+    protected int f2377f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    protected int f2267g0;
+    protected int f2379g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    int f2269h0;
+    int f2381h0;
 
     /* renamed from: i0  reason: collision with root package name */
-    int f2271i0;
+    int f2383i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    protected int f2273j0;
+    protected int f2385j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    protected int f2275k0;
+    protected int f2387k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    int f2277l0;
+    int f2389l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    protected int f2279m0;
+    protected int f2391m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    protected int f2281n0;
+    protected int f2393n0;
 
     /* renamed from: o  reason: collision with root package name */
-    public String f2282o;
+    public String f2394o;
 
     /* renamed from: o0  reason: collision with root package name */
-    float f2283o0;
+    float f2395o0;
 
     /* renamed from: p0  reason: collision with root package name */
-    float f2285p0;
+    float f2397p0;
 
     /* renamed from: q0  reason: collision with root package name */
-    private Object f2287q0;
+    private Object f2399q0;
 
     /* renamed from: r0  reason: collision with root package name */
-    private int f2289r0;
+    private int f2401r0;
 
     /* renamed from: s0  reason: collision with root package name */
-    private int f2291s0;
+    private int f2403s0;
 
     /* renamed from: t0  reason: collision with root package name */
-    private boolean f2293t0;
+    private boolean f2405t0;
 
     /* renamed from: u0  reason: collision with root package name */
-    private String f2295u0;
+    private String f2407u0;
 
     /* renamed from: v0  reason: collision with root package name */
-    private String f2297v0;
+    private String f2409v0;
 
     /* renamed from: w0  reason: collision with root package name */
-    boolean f2299w0;
+    boolean f2411w0;
 
     /* renamed from: x0  reason: collision with root package name */
-    boolean f2301x0;
+    boolean f2413x0;
 
     /* renamed from: y0  reason: collision with root package name */
-    boolean f2303y0;
+    boolean f2415y0;
 
     /* renamed from: z0  reason: collision with root package name */
-    int f2305z0;
+    int f2417z0;
 
     /* renamed from: a  reason: collision with root package name */
-    public boolean f2254a = false;
+    public boolean f2366a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    public p[] f2256b = new p[2];
+    public p[] f2368b = new p[2];
 
     /* renamed from: e  reason: collision with root package name */
-    public l f2262e = null;
+    public l f2374e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    public n f2264f = null;
+    public n f2376f = null;
 
     /* renamed from: g  reason: collision with root package name */
-    public boolean[] f2266g = {true, true};
+    public boolean[] f2378g = {true, true};
 
     /* renamed from: h  reason: collision with root package name */
-    boolean f2268h = false;
+    boolean f2380h = false;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f2270i = true;
+    private boolean f2382i = true;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f2272j = false;
+    private boolean f2384j = false;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f2274k = true;
+    private boolean f2386k = true;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f2276l = -1;
+    private int f2388l = -1;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f2278m = -1;
+    private int f2390m = -1;
 
     /* renamed from: n  reason: collision with root package name */
-    public j1.a f2280n = new j1.a(this);
+    public j1.a f2392n = new j1.a(this);
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f2284p = false;
+    private boolean f2396p = false;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f2286q = false;
+    private boolean f2398q = false;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f2288r = false;
+    private boolean f2400r = false;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f2290s = false;
+    private boolean f2402s = false;
 
     /* renamed from: t  reason: collision with root package name */
-    public int f2292t = -1;
+    public int f2404t = -1;
 
     /* renamed from: u  reason: collision with root package name */
-    public int f2294u = -1;
+    public int f2406u = -1;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f2296v = 0;
+    private int f2408v = 0;
 
     /* renamed from: w  reason: collision with root package name */
-    public int f2298w = 0;
+    public int f2410w = 0;
 
     /* renamed from: x  reason: collision with root package name */
-    public int f2300x = 0;
+    public int f2412x = 0;
 
     /* renamed from: y  reason: collision with root package name */
-    public int[] f2302y = new int[2];
+    public int[] f2414y = new int[2];
 
     /* renamed from: z  reason: collision with root package name */
-    public int f2304z = 0;
+    public int f2416z = 0;
     public int A = 0;
     public float B = 1.0f;
     public int C = 0;
@@ -210,45 +210,45 @@ public class ConstraintWidget {
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f2306a;
+        static final /* synthetic */ int[] f2418a;
 
         static {
             int[] iArr = new int[d.a.values().length];
-            f2306a = iArr;
+            f2418a = iArr;
             try {
                 iArr[d.a.LEFT.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f2306a[d.a.TOP.ordinal()] = 2;
+                f2418a[d.a.TOP.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f2306a[d.a.RIGHT.ordinal()] = 3;
+                f2418a[d.a.RIGHT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f2306a[d.a.BOTTOM.ordinal()] = 4;
+                f2418a[d.a.BOTTOM.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f2306a[d.a.BASELINE.ordinal()] = 5;
+                f2418a[d.a.BASELINE.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f2306a[d.a.CENTER.ordinal()] = 6;
+                f2418a[d.a.CENTER.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f2306a[d.a.CENTER_X.ordinal()] = 7;
+                f2418a[d.a.CENTER_X.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f2306a[d.a.CENTER_Y.ordinal()] = 8;
+                f2418a[d.a.CENTER_Y.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f2306a[d.a.NONE.ordinal()] = 9;
+                f2418a[d.a.NONE.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
         }
@@ -270,28 +270,28 @@ public class ConstraintWidget {
         this.Y = new boolean[2];
         b bVar = b.FIXED;
         this.Z = new b[]{bVar, bVar};
-        this.f2255a0 = null;
-        this.f2257b0 = 0;
-        this.f2259c0 = 0;
-        this.f2261d0 = 0.0f;
-        this.f2263e0 = -1;
-        this.f2265f0 = 0;
-        this.f2267g0 = 0;
-        this.f2269h0 = 0;
-        this.f2271i0 = 0;
-        this.f2273j0 = 0;
-        this.f2275k0 = 0;
-        this.f2277l0 = 0;
+        this.f2367a0 = null;
+        this.f2369b0 = 0;
+        this.f2371c0 = 0;
+        this.f2373d0 = 0.0f;
+        this.f2375e0 = -1;
+        this.f2377f0 = 0;
+        this.f2379g0 = 0;
+        this.f2381h0 = 0;
+        this.f2383i0 = 0;
+        this.f2385j0 = 0;
+        this.f2387k0 = 0;
+        this.f2389l0 = 0;
         float f10 = K0;
-        this.f2283o0 = f10;
-        this.f2285p0 = f10;
-        this.f2289r0 = 0;
-        this.f2291s0 = 0;
-        this.f2293t0 = false;
-        this.f2295u0 = null;
-        this.f2297v0 = null;
-        this.f2303y0 = false;
-        this.f2305z0 = 0;
+        this.f2395o0 = f10;
+        this.f2397p0 = f10;
+        this.f2401r0 = 0;
+        this.f2403s0 = 0;
+        this.f2405t0 = false;
+        this.f2407u0 = null;
+        this.f2409v0 = null;
+        this.f2415y0 = false;
+        this.f2417z0 = 0;
         this.A0 = 0;
         this.D0 = new float[]{-1.0f, -1.0f};
         this.E0 = new ConstraintWidget[]{null, null};
@@ -330,20 +330,20 @@ public class ConstraintWidget {
     }
 
     private void Q(StringBuilder sb2, String str, d dVar) {
-        if (dVar.f2356f == null) {
+        if (dVar.f2468f == null) {
             return;
         }
         sb2.append("    ");
         sb2.append(str);
         sb2.append(" : [ '");
-        sb2.append(dVar.f2356f);
+        sb2.append(dVar.f2468f);
         sb2.append("'");
-        if (dVar.f2358h != Integer.MIN_VALUE || dVar.f2357g != 0) {
+        if (dVar.f2470h != Integer.MIN_VALUE || dVar.f2469g != 0) {
             sb2.append(",");
-            sb2.append(dVar.f2357g);
-            if (dVar.f2358h != Integer.MIN_VALUE) {
+            sb2.append(dVar.f2469g);
+            if (dVar.f2470h != Integer.MIN_VALUE) {
                 sb2.append(",");
-                sb2.append(dVar.f2358h);
+                sb2.append(dVar.f2470h);
                 sb2.append(",");
             }
         }
@@ -367,8 +367,8 @@ public class ConstraintWidget {
         int i11 = i10 * 2;
         d[] dVarArr = this.W;
         d dVar3 = dVarArr[i11];
-        d dVar4 = dVar3.f2356f;
-        if (dVar4 != null && dVar4.f2356f != dVar3 && (dVar2 = (dVar = dVarArr[i11 + 1]).f2356f) != null && dVar2.f2356f == dVar) {
+        d dVar4 = dVar3.f2468f;
+        if (dVar4 != null && dVar4.f2468f != dVar3 && (dVar2 = (dVar = dVarArr[i11 + 1]).f2468f) != null && dVar2.f2468f == dVar) {
             return true;
         }
         return false;
@@ -426,20 +426,20 @@ public class ConstraintWidget {
         int i10;
         d dVar = this.O;
         if (dVar != null) {
-            i10 = dVar.f2357g;
+            i10 = dVar.f2469g;
         } else {
             i10 = 0;
         }
         d dVar2 = this.Q;
         if (dVar2 != null) {
-            return i10 + dVar2.f2357g;
+            return i10 + dVar2.f2469g;
         }
         return i10;
     }
 
     public void B0(int i10) {
         boolean z10;
-        this.f2277l0 = i10;
+        this.f2389l0 = i10;
         if (i10 > 0) {
             z10 = true;
         } else {
@@ -453,7 +453,7 @@ public class ConstraintWidget {
     }
 
     public void C0(Object obj) {
-        this.f2287q0 = obj;
+        this.f2399q0 = obj;
     }
 
     public int D() {
@@ -461,7 +461,7 @@ public class ConstraintWidget {
     }
 
     public void D0(String str) {
-        this.f2295u0 = str;
+        this.f2407u0 = str;
     }
 
     public int E(int i10) {
@@ -520,13 +520,13 @@ public class ConstraintWidget {
             }
             i10 = (f10 > i10 ? 1 : (f10 == i10 ? 0 : -1));
             if (i10 > 0) {
-                this.f2261d0 = f10;
-                this.f2263e0 = i12;
+                this.f2373d0 = f10;
+                this.f2375e0 = i12;
                 return;
             }
             return;
         }
-        this.f2261d0 = 0.0f;
+        this.f2373d0 = 0.0f;
     }
 
     public int F() {
@@ -537,13 +537,13 @@ public class ConstraintWidget {
         if (!this.J) {
             return;
         }
-        int i11 = i10 - this.f2277l0;
-        int i12 = this.f2259c0 + i11;
-        this.f2267g0 = i11;
+        int i11 = i10 - this.f2389l0;
+        int i12 = this.f2371c0 + i11;
+        this.f2379g0 = i11;
         this.P.t(i11);
         this.R.t(i12);
         this.S.t(i10);
-        this.f2286q = true;
+        this.f2398q = true;
     }
 
     public int G() {
@@ -551,32 +551,32 @@ public class ConstraintWidget {
     }
 
     public void G0(int i10, int i11) {
-        if (this.f2284p) {
+        if (this.f2396p) {
             return;
         }
         this.O.t(i10);
         this.Q.t(i11);
-        this.f2265f0 = i10;
-        this.f2257b0 = i11 - i10;
-        this.f2284p = true;
+        this.f2377f0 = i10;
+        this.f2369b0 = i11 - i10;
+        this.f2396p = true;
     }
 
     public int H() {
-        return this.f2281n0;
+        return this.f2393n0;
     }
 
     public void H0(int i10) {
         this.O.t(i10);
-        this.f2265f0 = i10;
+        this.f2377f0 = i10;
     }
 
     public int I() {
-        return this.f2279m0;
+        return this.f2391m0;
     }
 
     public void I0(int i10) {
         this.P.t(i10);
-        this.f2267g0 = i10;
+        this.f2379g0 = i10;
     }
 
     public ConstraintWidget J(int i10) {
@@ -584,34 +584,34 @@ public class ConstraintWidget {
         d dVar2;
         if (i10 == 0) {
             d dVar3 = this.Q;
-            d dVar4 = dVar3.f2356f;
-            if (dVar4 != null && dVar4.f2356f == dVar3) {
-                return dVar4.f2354d;
+            d dVar4 = dVar3.f2468f;
+            if (dVar4 != null && dVar4.f2468f == dVar3) {
+                return dVar4.f2466d;
             }
             return null;
-        } else if (i10 == 1 && (dVar2 = (dVar = this.R).f2356f) != null && dVar2.f2356f == dVar) {
-            return dVar2.f2354d;
+        } else if (i10 == 1 && (dVar2 = (dVar = this.R).f2468f) != null && dVar2.f2468f == dVar) {
+            return dVar2.f2466d;
         } else {
             return null;
         }
     }
 
     public void J0(int i10, int i11) {
-        if (this.f2286q) {
+        if (this.f2398q) {
             return;
         }
         this.P.t(i10);
         this.R.t(i11);
-        this.f2267g0 = i10;
-        this.f2259c0 = i11 - i10;
+        this.f2379g0 = i10;
+        this.f2371c0 = i11 - i10;
         if (this.J) {
-            this.S.t(i10 + this.f2277l0);
+            this.S.t(i10 + this.f2389l0);
         }
-        this.f2286q = true;
+        this.f2398q = true;
     }
 
     public ConstraintWidget K() {
-        return this.f2255a0;
+        return this.f2367a0;
     }
 
     public void K0(int i10, int i11, int i12, int i13) {
@@ -619,47 +619,47 @@ public class ConstraintWidget {
         int i15;
         int i16 = i12 - i10;
         int i17 = i13 - i11;
-        this.f2265f0 = i10;
-        this.f2267g0 = i11;
-        if (this.f2291s0 == 8) {
-            this.f2257b0 = 0;
-            this.f2259c0 = 0;
+        this.f2377f0 = i10;
+        this.f2379g0 = i11;
+        if (this.f2403s0 == 8) {
+            this.f2369b0 = 0;
+            this.f2371c0 = 0;
             return;
         }
         b[] bVarArr = this.Z;
         b bVar = bVarArr[0];
         b bVar2 = b.FIXED;
-        if (bVar == bVar2 && i16 < (i15 = this.f2257b0)) {
+        if (bVar == bVar2 && i16 < (i15 = this.f2369b0)) {
             i16 = i15;
         }
-        if (bVarArr[1] == bVar2 && i17 < (i14 = this.f2259c0)) {
+        if (bVarArr[1] == bVar2 && i17 < (i14 = this.f2371c0)) {
             i17 = i14;
         }
-        this.f2257b0 = i16;
-        this.f2259c0 = i17;
-        int i18 = this.f2281n0;
+        this.f2369b0 = i16;
+        this.f2371c0 = i17;
+        int i18 = this.f2393n0;
         if (i17 < i18) {
-            this.f2259c0 = i18;
+            this.f2371c0 = i18;
         }
-        int i19 = this.f2279m0;
+        int i19 = this.f2391m0;
         if (i16 < i19) {
-            this.f2257b0 = i19;
+            this.f2369b0 = i19;
         }
         int i20 = this.A;
         if (i20 > 0 && bVar == b.MATCH_CONSTRAINT) {
-            this.f2257b0 = Math.min(this.f2257b0, i20);
+            this.f2369b0 = Math.min(this.f2369b0, i20);
         }
         int i21 = this.D;
         if (i21 > 0 && this.Z[1] == b.MATCH_CONSTRAINT) {
-            this.f2259c0 = Math.min(this.f2259c0, i21);
+            this.f2371c0 = Math.min(this.f2371c0, i21);
         }
-        int i22 = this.f2257b0;
+        int i22 = this.f2369b0;
         if (i16 != i22) {
-            this.f2276l = i22;
+            this.f2388l = i22;
         }
-        int i23 = this.f2259c0;
+        int i23 = this.f2371c0;
         if (i17 != i23) {
-            this.f2278m = i23;
+            this.f2390m = i23;
         }
     }
 
@@ -668,13 +668,13 @@ public class ConstraintWidget {
         d dVar2;
         if (i10 == 0) {
             d dVar3 = this.O;
-            d dVar4 = dVar3.f2356f;
-            if (dVar4 != null && dVar4.f2356f == dVar3) {
-                return dVar4.f2354d;
+            d dVar4 = dVar3.f2468f;
+            if (dVar4 != null && dVar4.f2468f == dVar3) {
+                return dVar4.f2466d;
             }
             return null;
-        } else if (i10 == 1 && (dVar2 = (dVar = this.P).f2356f) != null && dVar2.f2356f == dVar) {
-            return dVar2.f2354d;
+        } else if (i10 == 1 && (dVar2 = (dVar = this.P).f2468f) != null && dVar2.f2468f == dVar) {
+            return dVar2.f2466d;
         } else {
             return null;
         }
@@ -685,43 +685,43 @@ public class ConstraintWidget {
     }
 
     public int M() {
-        return X() + this.f2257b0;
+        return X() + this.f2369b0;
     }
 
     public void M0(int i10) {
-        this.f2259c0 = i10;
-        int i11 = this.f2281n0;
+        this.f2371c0 = i10;
+        int i11 = this.f2393n0;
         if (i10 < i11) {
-            this.f2259c0 = i11;
+            this.f2371c0 = i11;
         }
     }
 
     public p N(int i10) {
         if (i10 == 0) {
-            return this.f2262e;
+            return this.f2374e;
         }
         if (i10 == 1) {
-            return this.f2264f;
+            return this.f2376f;
         }
         return null;
     }
 
     public void N0(float f10) {
-        this.f2283o0 = f10;
+        this.f2395o0 = f10;
     }
 
     public void O(StringBuilder sb2) {
-        sb2.append("  " + this.f2282o + ":{\n");
+        sb2.append("  " + this.f2394o + ":{\n");
         StringBuilder sb3 = new StringBuilder();
         sb3.append("    actualWidth:");
-        sb3.append(this.f2257b0);
+        sb3.append(this.f2369b0);
         sb2.append(sb3.toString());
         sb2.append(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
-        sb2.append("    actualHeight:" + this.f2259c0);
+        sb2.append("    actualHeight:" + this.f2371c0);
         sb2.append(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
-        sb2.append("    actualLeft:" + this.f2265f0);
+        sb2.append("    actualLeft:" + this.f2377f0);
         sb2.append(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
-        sb2.append("    actualTop:" + this.f2267g0);
+        sb2.append("    actualTop:" + this.f2379g0);
         sb2.append(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
         Q(sb2, ViewProps.LEFT, this.O);
         Q(sb2, ViewProps.TOP, this.P);
@@ -730,27 +730,27 @@ public class ConstraintWidget {
         Q(sb2, "baseline", this.S);
         Q(sb2, "centerX", this.T);
         Q(sb2, "centerY", this.U);
-        P(sb2, "    width", this.f2257b0, this.f2279m0, this.H[0], this.f2276l, this.f2304z, this.f2298w, this.B, this.Z[0], this.D0[0]);
-        P(sb2, "    height", this.f2259c0, this.f2281n0, this.H[1], this.f2278m, this.C, this.f2300x, this.E, this.Z[1], this.D0[1]);
-        A0(sb2, "    dimensionRatio", this.f2261d0, this.f2263e0);
-        x0(sb2, "    horizontalBias", this.f2283o0, K0);
-        x0(sb2, "    verticalBias", this.f2285p0, K0);
-        y0(sb2, "    horizontalChainStyle", this.f2305z0, 0);
+        P(sb2, "    width", this.f2369b0, this.f2391m0, this.H[0], this.f2388l, this.f2416z, this.f2410w, this.B, this.Z[0], this.D0[0]);
+        P(sb2, "    height", this.f2371c0, this.f2393n0, this.H[1], this.f2390m, this.C, this.f2412x, this.E, this.Z[1], this.D0[1]);
+        A0(sb2, "    dimensionRatio", this.f2373d0, this.f2375e0);
+        x0(sb2, "    horizontalBias", this.f2395o0, K0);
+        x0(sb2, "    verticalBias", this.f2397p0, K0);
+        y0(sb2, "    horizontalChainStyle", this.f2417z0, 0);
         y0(sb2, "    verticalChainStyle", this.A0, 0);
         sb2.append("  }");
     }
 
     public void O0(int i10) {
-        this.f2305z0 = i10;
+        this.f2417z0 = i10;
     }
 
     public void P0(int i10, int i11) {
-        this.f2265f0 = i10;
+        this.f2377f0 = i10;
         int i12 = i11 - i10;
-        this.f2257b0 = i12;
-        int i13 = this.f2279m0;
+        this.f2369b0 = i12;
+        int i13 = this.f2391m0;
         if (i12 < i13) {
-            this.f2257b0 = i13;
+            this.f2369b0 = i13;
         }
     }
 
@@ -759,19 +759,19 @@ public class ConstraintWidget {
     }
 
     public float R() {
-        return this.f2285p0;
+        return this.f2397p0;
     }
 
     public void R0(int i10, int i11, int i12, float f10) {
-        this.f2298w = i10;
-        this.f2304z = i11;
+        this.f2410w = i10;
+        this.f2416z = i11;
         if (i12 == Integer.MAX_VALUE) {
             i12 = 0;
         }
         this.A = i12;
         this.B = f10;
         if (f10 > 0.0f && f10 < 1.0f && i10 == 0) {
-            this.f2298w = 2;
+            this.f2410w = 2;
         }
     }
 
@@ -795,12 +795,12 @@ public class ConstraintWidget {
     public int U() {
         int i10;
         if (this.O != null) {
-            i10 = this.P.f2357g;
+            i10 = this.P.f2469g;
         } else {
             i10 = 0;
         }
         if (this.Q != null) {
-            return i10 + this.R.f2357g;
+            return i10 + this.R.f2469g;
         }
         return i10;
     }
@@ -810,7 +810,7 @@ public class ConstraintWidget {
     }
 
     public int V() {
-        return this.f2291s0;
+        return this.f2403s0;
     }
 
     public void V0(boolean z10) {
@@ -818,10 +818,10 @@ public class ConstraintWidget {
     }
 
     public int W() {
-        if (this.f2291s0 == 8) {
+        if (this.f2403s0 == 8) {
             return 0;
         }
-        return this.f2257b0;
+        return this.f2369b0;
     }
 
     public void W0(int i10, int i11) {
@@ -831,11 +831,11 @@ public class ConstraintWidget {
     }
 
     public int X() {
-        ConstraintWidget constraintWidget = this.f2255a0;
+        ConstraintWidget constraintWidget = this.f2367a0;
         if (constraintWidget != null && (constraintWidget instanceof ConstraintWidgetContainer)) {
-            return ((ConstraintWidgetContainer) constraintWidget).T0 + this.f2265f0;
+            return ((ConstraintWidgetContainer) constraintWidget).T0 + this.f2377f0;
         }
-        return this.f2265f0;
+        return this.f2377f0;
     }
 
     public void X0(int i10) {
@@ -843,11 +843,11 @@ public class ConstraintWidget {
     }
 
     public int Y() {
-        ConstraintWidget constraintWidget = this.f2255a0;
+        ConstraintWidget constraintWidget = this.f2367a0;
         if (constraintWidget != null && (constraintWidget instanceof ConstraintWidgetContainer)) {
-            return ((ConstraintWidgetContainer) constraintWidget).U0 + this.f2267g0;
+            return ((ConstraintWidgetContainer) constraintWidget).U0 + this.f2379g0;
         }
-        return this.f2267g0;
+        return this.f2379g0;
     }
 
     public void Y0(int i10) {
@@ -859,7 +859,7 @@ public class ConstraintWidget {
     }
 
     public void Z0(boolean z10) {
-        this.f2270i = z10;
+        this.f2382i = z10;
     }
 
     public boolean a0(int i10) {
@@ -869,12 +869,12 @@ public class ConstraintWidget {
         int i14;
         int i15;
         if (i10 == 0) {
-            if (this.O.f2356f != null) {
+            if (this.O.f2468f != null) {
                 i14 = 1;
             } else {
                 i14 = 0;
             }
-            if (this.Q.f2356f != null) {
+            if (this.Q.f2468f != null) {
                 i15 = 1;
             } else {
                 i15 = 0;
@@ -884,18 +884,18 @@ public class ConstraintWidget {
             }
             return true;
         }
-        if (this.P.f2356f != null) {
+        if (this.P.f2468f != null) {
             i11 = 1;
         } else {
             i11 = 0;
         }
-        if (this.R.f2356f != null) {
+        if (this.R.f2468f != null) {
             i12 = 1;
         } else {
             i12 = 0;
         }
         int i16 = i11 + i12;
-        if (this.S.f2356f != null) {
+        if (this.S.f2468f != null) {
             i13 = 1;
         } else {
             i13 = 0;
@@ -908,9 +908,9 @@ public class ConstraintWidget {
 
     public void a1(int i10) {
         if (i10 < 0) {
-            this.f2281n0 = 0;
+            this.f2393n0 = 0;
         } else {
-            this.f2281n0 = i10;
+            this.f2393n0 = i10;
         }
     }
 
@@ -926,43 +926,43 @@ public class ConstraintWidget {
 
     public void b1(int i10) {
         if (i10 < 0) {
-            this.f2279m0 = 0;
+            this.f2391m0 = 0;
         } else {
-            this.f2279m0 = i10;
+            this.f2391m0 = i10;
         }
     }
 
     public boolean c0() {
-        if (this.f2276l == -1 && this.f2278m == -1) {
+        if (this.f2388l == -1 && this.f2390m == -1) {
             return false;
         }
         return true;
     }
 
     public void c1(int i10, int i11) {
-        this.f2265f0 = i10;
-        this.f2267g0 = i11;
+        this.f2377f0 = i10;
+        this.f2379g0 = i11;
     }
 
     public boolean d0(int i10, int i11) {
         d dVar;
         d dVar2;
         if (i10 == 0) {
-            d dVar3 = this.O.f2356f;
-            if (dVar3 != null && dVar3.n() && (dVar2 = this.Q.f2356f) != null && dVar2.n() && (this.Q.f2356f.e() - this.Q.f()) - (this.O.f2356f.e() + this.O.f()) >= i11) {
+            d dVar3 = this.O.f2468f;
+            if (dVar3 != null && dVar3.n() && (dVar2 = this.Q.f2468f) != null && dVar2.n() && (this.Q.f2468f.e() - this.Q.f()) - (this.O.f2468f.e() + this.O.f()) >= i11) {
                 return true;
             }
             return false;
         }
-        d dVar4 = this.P.f2356f;
-        if (dVar4 != null && dVar4.n() && (dVar = this.R.f2356f) != null && dVar.n() && (this.R.f2356f.e() - this.R.f()) - (this.P.f2356f.e() + this.P.f()) >= i11) {
+        d dVar4 = this.P.f2468f;
+        if (dVar4 != null && dVar4.n() && (dVar = this.R.f2468f) != null && dVar.n() && (this.R.f2468f.e() - this.R.f()) - (this.P.f2468f.e() + this.P.f()) >= i11) {
             return true;
         }
         return false;
     }
 
     public void d1(ConstraintWidget constraintWidget) {
-        this.f2255a0 = constraintWidget;
+        this.f2367a0 = constraintWidget;
     }
 
     public void e(ConstraintWidgetContainer constraintWidgetContainer, h1.d dVar, HashSet hashSet, int i10, boolean z10) {
@@ -980,14 +980,14 @@ public class ConstraintWidget {
             if (d10 != null) {
                 Iterator it = d10.iterator();
                 while (it.hasNext()) {
-                    ((d) it.next()).f2354d.e(constraintWidgetContainer, dVar, hashSet, i10, true);
+                    ((d) it.next()).f2466d.e(constraintWidgetContainer, dVar, hashSet, i10, true);
                 }
             }
             HashSet d11 = this.Q.d();
             if (d11 != null) {
                 Iterator it2 = d11.iterator();
                 while (it2.hasNext()) {
-                    ((d) it2.next()).f2354d.e(constraintWidgetContainer, dVar, hashSet, i10, true);
+                    ((d) it2.next()).f2466d.e(constraintWidgetContainer, dVar, hashSet, i10, true);
                 }
                 return;
             }
@@ -997,21 +997,21 @@ public class ConstraintWidget {
         if (d12 != null) {
             Iterator it3 = d12.iterator();
             while (it3.hasNext()) {
-                ((d) it3.next()).f2354d.e(constraintWidgetContainer, dVar, hashSet, i10, true);
+                ((d) it3.next()).f2466d.e(constraintWidgetContainer, dVar, hashSet, i10, true);
             }
         }
         HashSet d13 = this.R.d();
         if (d13 != null) {
             Iterator it4 = d13.iterator();
             while (it4.hasNext()) {
-                ((d) it4.next()).f2354d.e(constraintWidgetContainer, dVar, hashSet, i10, true);
+                ((d) it4.next()).f2466d.e(constraintWidgetContainer, dVar, hashSet, i10, true);
             }
         }
         HashSet d14 = this.S.d();
         if (d14 != null) {
             Iterator it5 = d14.iterator();
             while (it5.hasNext()) {
-                ((d) it5.next()).f2354d.e(constraintWidgetContainer, dVar, hashSet, i10, true);
+                ((d) it5.next()).f2466d.e(constraintWidgetContainer, dVar, hashSet, i10, true);
             }
         }
     }
@@ -1021,7 +1021,7 @@ public class ConstraintWidget {
     }
 
     public void e1(float f10) {
-        this.f2285p0 = f10;
+        this.f2397p0 = f10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1093,21 +1093,21 @@ public class ConstraintWidget {
     }
 
     public boolean g0() {
-        return this.f2288r;
+        return this.f2400r;
     }
 
     public void g1(int i10, int i11) {
-        this.f2267g0 = i10;
+        this.f2379g0 = i10;
         int i12 = i11 - i10;
-        this.f2259c0 = i12;
-        int i13 = this.f2281n0;
+        this.f2371c0 = i12;
+        int i13 = this.f2393n0;
         if (i12 < i13) {
-            this.f2259c0 = i13;
+            this.f2371c0 = i13;
         }
     }
 
     public boolean h() {
-        if (this.f2291s0 != 8) {
+        if (this.f2403s0 != 8) {
             return true;
         }
         return false;
@@ -1123,11 +1123,11 @@ public class ConstraintWidget {
 
     public boolean i0() {
         d dVar = this.O;
-        d dVar2 = dVar.f2356f;
-        if (dVar2 == null || dVar2.f2356f != dVar) {
+        d dVar2 = dVar.f2468f;
+        if (dVar2 == null || dVar2.f2468f != dVar) {
             d dVar3 = this.Q;
-            d dVar4 = dVar3.f2356f;
-            if (dVar4 != null && dVar4.f2356f == dVar3) {
+            d dVar4 = dVar3.f2468f;
+            if (dVar4 != null && dVar4.f2468f == dVar3) {
                 return true;
             }
             return false;
@@ -1136,7 +1136,7 @@ public class ConstraintWidget {
     }
 
     public void i1(int i10, int i11, int i12, float f10) {
-        this.f2300x = i10;
+        this.f2412x = i10;
         this.C = i11;
         if (i12 == Integer.MAX_VALUE) {
             i12 = 0;
@@ -1144,7 +1144,7 @@ public class ConstraintWidget {
         this.D = i12;
         this.E = f10;
         if (f10 > 0.0f && f10 < 1.0f && i10 == 0) {
-            this.f2300x = 2;
+            this.f2412x = 2;
         }
     }
 
@@ -1300,11 +1300,11 @@ public class ConstraintWidget {
 
     public boolean k0() {
         d dVar = this.P;
-        d dVar2 = dVar.f2356f;
-        if (dVar2 == null || dVar2.f2356f != dVar) {
+        d dVar2 = dVar.f2468f;
+        if (dVar2 == null || dVar2.f2468f != dVar) {
             d dVar3 = this.R;
-            d dVar4 = dVar3.f2356f;
-            if (dVar4 != null && dVar4.f2356f == dVar3) {
+            d dVar4 = dVar3.f2468f;
+            if (dVar4 != null && dVar4.f2468f == dVar3) {
                 return true;
             }
             return false;
@@ -1313,7 +1313,7 @@ public class ConstraintWidget {
     }
 
     public void k1(int i10) {
-        this.f2291s0 = i10;
+        this.f2403s0 = i10;
     }
 
     public void l(ConstraintWidget constraintWidget, float f10, int i10) {
@@ -1327,10 +1327,10 @@ public class ConstraintWidget {
     }
 
     public void l1(int i10) {
-        this.f2257b0 = i10;
-        int i11 = this.f2279m0;
+        this.f2369b0 = i10;
+        int i11 = this.f2391m0;
         if (i10 < i11) {
-            this.f2257b0 = i11;
+            this.f2369b0 = i11;
         }
     }
 
@@ -1339,13 +1339,13 @@ public class ConstraintWidget {
         dVar.q(this.P);
         dVar.q(this.Q);
         dVar.q(this.R);
-        if (this.f2277l0 > 0) {
+        if (this.f2389l0 > 0) {
             dVar.q(this.S);
         }
     }
 
     public boolean m0() {
-        if (this.f2270i && this.f2291s0 != 8) {
+        if (this.f2382i && this.f2403s0 != 8) {
             return true;
         }
         return false;
@@ -1353,21 +1353,21 @@ public class ConstraintWidget {
 
     public void m1(int i10) {
         if (i10 >= 0 && i10 <= 3) {
-            this.f2296v = i10;
+            this.f2408v = i10;
         }
     }
 
     public void n() {
-        if (this.f2262e == null) {
-            this.f2262e = new l(this);
+        if (this.f2374e == null) {
+            this.f2374e = new l(this);
         }
-        if (this.f2264f == null) {
-            this.f2264f = new n(this);
+        if (this.f2376f == null) {
+            this.f2376f = new n(this);
         }
     }
 
     public boolean n0() {
-        if (!this.f2284p) {
+        if (!this.f2396p) {
             if (!this.O.n() || !this.Q.n()) {
                 return false;
             }
@@ -1377,11 +1377,11 @@ public class ConstraintWidget {
     }
 
     public void n1(int i10) {
-        this.f2265f0 = i10;
+        this.f2377f0 = i10;
     }
 
     public d o(d.a aVar) {
-        switch (a.f2306a[aVar.ordinal()]) {
+        switch (a.f2418a[aVar.ordinal()]) {
             case 1:
                 return this.O;
             case 2:
@@ -1406,7 +1406,7 @@ public class ConstraintWidget {
     }
 
     public boolean o0() {
-        if (!this.f2286q) {
+        if (!this.f2398q) {
             if (!this.P.n() || !this.R.n()) {
                 return false;
             }
@@ -1416,15 +1416,15 @@ public class ConstraintWidget {
     }
 
     public void o1(int i10) {
-        this.f2267g0 = i10;
+        this.f2379g0 = i10;
     }
 
     public int p() {
-        return this.f2277l0;
+        return this.f2389l0;
     }
 
     public boolean p0() {
-        return this.f2290s;
+        return this.f2402s;
     }
 
     public void p1(boolean z10, boolean z11, boolean z12, boolean z13) {
@@ -1433,7 +1433,7 @@ public class ConstraintWidget {
                 this.F = 0;
             } else if (!z12 && z13) {
                 this.F = 1;
-                if (this.f2263e0 == -1) {
+                if (this.f2375e0 == -1) {
                     this.G = 1.0f / this.G;
                 }
             }
@@ -1452,7 +1452,7 @@ public class ConstraintWidget {
             }
         }
         if (this.F == -1) {
-            int i10 = this.f2304z;
+            int i10 = this.f2416z;
             if (i10 > 0 && this.C == 0) {
                 this.F = 0;
             } else if (i10 == 0 && this.C > 0) {
@@ -1464,29 +1464,29 @@ public class ConstraintWidget {
 
     public float q(int i10) {
         if (i10 == 0) {
-            return this.f2283o0;
+            return this.f2395o0;
         }
         if (i10 == 1) {
-            return this.f2285p0;
+            return this.f2397p0;
         }
         return -1.0f;
     }
 
     public void q0() {
-        this.f2288r = true;
+        this.f2400r = true;
     }
 
     public void q1(boolean z10, boolean z11) {
         int i10;
         int i11;
-        boolean k10 = z10 & this.f2262e.k();
-        boolean k11 = z11 & this.f2264f.k();
-        l lVar = this.f2262e;
-        int i12 = lVar.f36392h.f36339g;
-        n nVar = this.f2264f;
-        int i13 = nVar.f36392h.f36339g;
-        int i14 = lVar.f36393i.f36339g;
-        int i15 = nVar.f36393i.f36339g;
+        boolean k10 = z10 & this.f2374e.k();
+        boolean k11 = z11 & this.f2376f.k();
+        l lVar = this.f2374e;
+        int i12 = lVar.f36319h.f36266g;
+        n nVar = this.f2376f;
+        int i13 = nVar.f36319h.f36266g;
+        int i14 = lVar.f36320i.f36266g;
+        int i15 = nVar.f36320i.f36266g;
         int i16 = i15 - i13;
         if (i14 - i12 < 0 || i16 < 0 || i12 == Integer.MIN_VALUE || i12 == Integer.MAX_VALUE || i13 == Integer.MIN_VALUE || i13 == Integer.MAX_VALUE || i14 == Integer.MIN_VALUE || i14 == Integer.MAX_VALUE || i15 == Integer.MIN_VALUE || i15 == Integer.MAX_VALUE) {
             i14 = 0;
@@ -1497,44 +1497,44 @@ public class ConstraintWidget {
         int i17 = i14 - i12;
         int i18 = i15 - i13;
         if (k10) {
-            this.f2265f0 = i12;
+            this.f2377f0 = i12;
         }
         if (k11) {
-            this.f2267g0 = i13;
+            this.f2379g0 = i13;
         }
-        if (this.f2291s0 == 8) {
-            this.f2257b0 = 0;
-            this.f2259c0 = 0;
+        if (this.f2403s0 == 8) {
+            this.f2369b0 = 0;
+            this.f2371c0 = 0;
             return;
         }
         if (k10) {
-            if (this.Z[0] == b.FIXED && i17 < (i11 = this.f2257b0)) {
+            if (this.Z[0] == b.FIXED && i17 < (i11 = this.f2369b0)) {
                 i17 = i11;
             }
-            this.f2257b0 = i17;
-            int i19 = this.f2279m0;
+            this.f2369b0 = i17;
+            int i19 = this.f2391m0;
             if (i17 < i19) {
-                this.f2257b0 = i19;
+                this.f2369b0 = i19;
             }
         }
         if (k11) {
-            if (this.Z[1] == b.FIXED && i18 < (i10 = this.f2259c0)) {
+            if (this.Z[1] == b.FIXED && i18 < (i10 = this.f2371c0)) {
                 i18 = i10;
             }
-            this.f2259c0 = i18;
-            int i20 = this.f2281n0;
+            this.f2371c0 = i18;
+            int i20 = this.f2393n0;
             if (i18 < i20) {
-                this.f2259c0 = i20;
+                this.f2371c0 = i20;
             }
         }
     }
 
     public int r() {
-        return Y() + this.f2259c0;
+        return Y() + this.f2371c0;
     }
 
     public void r0() {
-        this.f2290s = true;
+        this.f2402s = true;
     }
 
     public void r1(h1.d dVar, boolean z10) {
@@ -1544,23 +1544,23 @@ public class ConstraintWidget {
         int A2 = dVar.A(this.P);
         int A3 = dVar.A(this.Q);
         int A4 = dVar.A(this.R);
-        if (z10 && (lVar = this.f2262e) != null) {
-            l1.f fVar = lVar.f36392h;
-            if (fVar.f36342j) {
-                l1.f fVar2 = lVar.f36393i;
-                if (fVar2.f36342j) {
-                    A = fVar.f36339g;
-                    A3 = fVar2.f36339g;
+        if (z10 && (lVar = this.f2374e) != null) {
+            l1.f fVar = lVar.f36319h;
+            if (fVar.f36269j) {
+                l1.f fVar2 = lVar.f36320i;
+                if (fVar2.f36269j) {
+                    A = fVar.f36266g;
+                    A3 = fVar2.f36266g;
                 }
             }
         }
-        if (z10 && (nVar = this.f2264f) != null) {
-            l1.f fVar3 = nVar.f36392h;
-            if (fVar3.f36342j) {
-                l1.f fVar4 = nVar.f36393i;
-                if (fVar4.f36342j) {
-                    A2 = fVar3.f36339g;
-                    A4 = fVar4.f36339g;
+        if (z10 && (nVar = this.f2376f) != null) {
+            l1.f fVar3 = nVar.f36319h;
+            if (fVar3.f36269j) {
+                l1.f fVar4 = nVar.f36320i;
+                if (fVar4.f36269j) {
+                    A2 = fVar3.f36266g;
+                    A4 = fVar4.f36266g;
                 }
             }
         }
@@ -1575,7 +1575,7 @@ public class ConstraintWidget {
     }
 
     public Object s() {
-        return this.f2287q0;
+        return this.f2399q0;
     }
 
     public boolean s0() {
@@ -1589,7 +1589,7 @@ public class ConstraintWidget {
     }
 
     public String t() {
-        return this.f2295u0;
+        return this.f2407u0;
     }
 
     public void t0() {
@@ -1601,93 +1601,93 @@ public class ConstraintWidget {
         this.T.q();
         this.U.q();
         this.V.q();
-        this.f2255a0 = null;
+        this.f2367a0 = null;
         this.I = Float.NaN;
-        this.f2257b0 = 0;
-        this.f2259c0 = 0;
-        this.f2261d0 = 0.0f;
-        this.f2263e0 = -1;
-        this.f2265f0 = 0;
-        this.f2267g0 = 0;
-        this.f2273j0 = 0;
-        this.f2275k0 = 0;
-        this.f2277l0 = 0;
-        this.f2279m0 = 0;
-        this.f2281n0 = 0;
+        this.f2369b0 = 0;
+        this.f2371c0 = 0;
+        this.f2373d0 = 0.0f;
+        this.f2375e0 = -1;
+        this.f2377f0 = 0;
+        this.f2379g0 = 0;
+        this.f2385j0 = 0;
+        this.f2387k0 = 0;
+        this.f2389l0 = 0;
+        this.f2391m0 = 0;
+        this.f2393n0 = 0;
         float f10 = K0;
-        this.f2283o0 = f10;
-        this.f2285p0 = f10;
+        this.f2395o0 = f10;
+        this.f2397p0 = f10;
         b[] bVarArr = this.Z;
         b bVar = b.FIXED;
         bVarArr[0] = bVar;
         bVarArr[1] = bVar;
-        this.f2287q0 = null;
-        this.f2289r0 = 0;
-        this.f2291s0 = 0;
-        this.f2297v0 = null;
-        this.f2299w0 = false;
-        this.f2301x0 = false;
-        this.f2305z0 = 0;
+        this.f2399q0 = null;
+        this.f2401r0 = 0;
+        this.f2403s0 = 0;
+        this.f2409v0 = null;
+        this.f2411w0 = false;
+        this.f2413x0 = false;
+        this.f2417z0 = 0;
         this.A0 = 0;
         this.B0 = false;
         this.C0 = false;
         float[] fArr = this.D0;
         fArr[0] = -1.0f;
         fArr[1] = -1.0f;
-        this.f2292t = -1;
-        this.f2294u = -1;
+        this.f2404t = -1;
+        this.f2406u = -1;
         int[] iArr = this.H;
         iArr[0] = Integer.MAX_VALUE;
         iArr[1] = Integer.MAX_VALUE;
-        this.f2298w = 0;
-        this.f2300x = 0;
+        this.f2410w = 0;
+        this.f2412x = 0;
         this.B = 1.0f;
         this.E = 1.0f;
         this.A = Integer.MAX_VALUE;
         this.D = Integer.MAX_VALUE;
-        this.f2304z = 0;
+        this.f2416z = 0;
         this.C = 0;
-        this.f2268h = false;
+        this.f2380h = false;
         this.F = -1;
         this.G = 1.0f;
-        this.f2303y0 = false;
-        boolean[] zArr = this.f2266g;
+        this.f2415y0 = false;
+        boolean[] zArr = this.f2378g;
         zArr[0] = true;
         zArr[1] = true;
         this.L = false;
         boolean[] zArr2 = this.Y;
         zArr2[0] = false;
         zArr2[1] = false;
-        this.f2270i = true;
-        int[] iArr2 = this.f2302y;
+        this.f2382i = true;
+        int[] iArr2 = this.f2414y;
         iArr2[0] = 0;
         iArr2[1] = 0;
-        this.f2276l = -1;
-        this.f2278m = -1;
+        this.f2388l = -1;
+        this.f2390m = -1;
     }
 
     public String toString() {
         String str;
         StringBuilder sb2 = new StringBuilder();
         String str2 = "";
-        if (this.f2297v0 == null) {
+        if (this.f2409v0 == null) {
             str = "";
         } else {
-            str = "type: " + this.f2297v0 + " ";
+            str = "type: " + this.f2409v0 + " ";
         }
         sb2.append(str);
-        if (this.f2295u0 != null) {
-            str2 = "id: " + this.f2295u0 + " ";
+        if (this.f2407u0 != null) {
+            str2 = "id: " + this.f2407u0 + " ";
         }
         sb2.append(str2);
         sb2.append("(");
-        sb2.append(this.f2265f0);
+        sb2.append(this.f2377f0);
         sb2.append(", ");
-        sb2.append(this.f2267g0);
+        sb2.append(this.f2379g0);
         sb2.append(") - (");
-        sb2.append(this.f2257b0);
+        sb2.append(this.f2369b0);
         sb2.append(" x ");
-        sb2.append(this.f2259c0);
+        sb2.append(this.f2371c0);
         sb2.append(")");
         return sb2.toString();
     }
@@ -1713,14 +1713,14 @@ public class ConstraintWidget {
     }
 
     public float v() {
-        return this.f2261d0;
+        return this.f2373d0;
     }
 
     public void v0() {
-        this.f2284p = false;
-        this.f2286q = false;
-        this.f2288r = false;
-        this.f2290s = false;
+        this.f2396p = false;
+        this.f2398q = false;
+        this.f2400r = false;
+        this.f2402s = false;
         int size = this.X.size();
         for (int i10 = 0; i10 < size; i10++) {
             ((d) this.X.get(i10)).r();
@@ -1728,7 +1728,7 @@ public class ConstraintWidget {
     }
 
     public int w() {
-        return this.f2263e0;
+        return this.f2375e0;
     }
 
     public void w0(h1.c cVar) {
@@ -1743,17 +1743,17 @@ public class ConstraintWidget {
     }
 
     public int x() {
-        if (this.f2291s0 == 8) {
+        if (this.f2403s0 == 8) {
             return 0;
         }
-        return this.f2259c0;
+        return this.f2371c0;
     }
 
     public float y() {
-        return this.f2283o0;
+        return this.f2395o0;
     }
 
     public int z() {
-        return this.f2305z0;
+        return this.f2417z0;
     }
 }

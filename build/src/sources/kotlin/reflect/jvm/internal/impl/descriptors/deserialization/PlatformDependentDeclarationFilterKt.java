@@ -7,10 +7,10 @@ import org.jetbrains.annotations.NotNull;
 public final class PlatformDependentDeclarationFilterKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final FqName f32845a = StandardNames.FqNames.platformDependent;
+    private static final FqName f32369a = StandardNames.FqNames.platformDependent;
 
     @NotNull
     public static final FqName getPLATFORM_DEPENDENT_ANNOTATION_FQ_NAME() {
-        return f32845a;
+        return f32369a;
     }
 }

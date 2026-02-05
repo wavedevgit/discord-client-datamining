@@ -9,10 +9,10 @@ import android.view.ViewGroup;
 public final class l<S> extends q {
 
     /* renamed from: e  reason: collision with root package name */
-    private int f14567e;
+    private int f14961e;
 
     /* renamed from: i  reason: collision with root package name */
-    private com.google.android.material.datepicker.a f14568i;
+    private com.google.android.material.datepicker.a f14962i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends p {
@@ -37,14 +37,14 @@ public final class l<S> extends q {
         if (bundle == null) {
             bundle = getArguments();
         }
-        this.f14567e = bundle.getInt("THEME_RES_ID_KEY");
+        this.f14961e = bundle.getInt("THEME_RES_ID_KEY");
         android.support.v4.media.session.b.a(bundle.getParcelable("DATE_SELECTOR_KEY"));
-        this.f14568i = (com.google.android.material.datepicker.a) bundle.getParcelable("CALENDAR_CONSTRAINTS_KEY");
+        this.f14962i = (com.google.android.material.datepicker.a) bundle.getParcelable("CALENDAR_CONSTRAINTS_KEY");
     }
 
     @Override // androidx.fragment.app.Fragment
     public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
-        layoutInflater.cloneInContext(new ContextThemeWrapper(getContext(), this.f14567e));
+        layoutInflater.cloneInContext(new ContextThemeWrapper(getContext(), this.f14961e));
         new a();
         throw null;
     }
@@ -52,8 +52,8 @@ public final class l<S> extends q {
     @Override // androidx.fragment.app.Fragment
     public void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        bundle.putInt("THEME_RES_ID_KEY", this.f14567e);
+        bundle.putInt("THEME_RES_ID_KEY", this.f14961e);
         bundle.putParcelable("DATE_SELECTOR_KEY", null);
-        bundle.putParcelable("CALENDAR_CONSTRAINTS_KEY", this.f14568i);
+        bundle.putParcelable("CALENDAR_CONSTRAINTS_KEY", this.f14962i);
     }
 }

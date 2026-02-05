@@ -7,42 +7,42 @@ import kotlinx.coroutines.Job;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ViewModelInstance f17206a;
+    private final ViewModelInstance f17612a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f17207b;
+    private final String f17613b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f17208c;
+    private final String f17614c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Job f17209d;
+    private final Job f17615d;
 
     public b(ViewModelInstance instance, String path, String propertyType, Job job) {
         Intrinsics.checkNotNullParameter(instance, "instance");
         Intrinsics.checkNotNullParameter(path, "path");
         Intrinsics.checkNotNullParameter(propertyType, "propertyType");
         Intrinsics.checkNotNullParameter(job, "job");
-        this.f17206a = instance;
-        this.f17207b = path;
-        this.f17208c = propertyType;
-        this.f17209d = job;
+        this.f17612a = instance;
+        this.f17613b = path;
+        this.f17614c = propertyType;
+        this.f17615d = job;
     }
 
     public final ViewModelInstance a() {
-        return this.f17206a;
+        return this.f17612a;
     }
 
     public final Job b() {
-        return this.f17209d;
+        return this.f17615d;
     }
 
     public final String c() {
-        return this.f17207b;
+        return this.f17613b;
     }
 
     public final String d() {
-        return this.f17208c;
+        return this.f17614c;
     }
 
     public boolean equals(Object obj) {
@@ -51,20 +51,20 @@ public final class b {
         }
         if (obj instanceof b) {
             b bVar = (b) obj;
-            return Intrinsics.areEqual(this.f17206a, bVar.f17206a) && Intrinsics.areEqual(this.f17207b, bVar.f17207b) && Intrinsics.areEqual(this.f17208c, bVar.f17208c) && Intrinsics.areEqual(this.f17209d, bVar.f17209d);
+            return Intrinsics.areEqual(this.f17612a, bVar.f17612a) && Intrinsics.areEqual(this.f17613b, bVar.f17613b) && Intrinsics.areEqual(this.f17614c, bVar.f17614c) && Intrinsics.areEqual(this.f17615d, bVar.f17615d);
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((this.f17206a.hashCode() * 31) + this.f17207b.hashCode()) * 31) + this.f17208c.hashCode()) * 31) + this.f17209d.hashCode();
+        return (((((this.f17612a.hashCode() * 31) + this.f17613b.hashCode()) * 31) + this.f17614c.hashCode()) * 31) + this.f17615d.hashCode();
     }
 
     public String toString() {
-        ViewModelInstance viewModelInstance = this.f17206a;
-        String str = this.f17207b;
-        String str2 = this.f17208c;
-        Job job = this.f17209d;
+        ViewModelInstance viewModelInstance = this.f17612a;
+        String str = this.f17613b;
+        String str2 = this.f17614c;
+        Job job = this.f17615d;
         return "PropertyListener(instance=" + viewModelInstance + ", path=" + str + ", propertyType=" + str2 + ", job=" + job + ")";
     }
 }

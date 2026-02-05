@@ -1,10 +1,13 @@
 package rs;
 
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function2;
+import java.util.concurrent.atomic.AtomicReference;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface d {
-    void a(h hVar, Function2 function2);
+public abstract class d {
+    public static final Object a(AtomicReference atomicReference) {
+        return atomicReference.get();
+    }
 
-    void b(f fVar, Function1 function1);
+    public static final void b(AtomicReference atomicReference, Object obj) {
+        atomicReference.set(obj);
+    }
 }

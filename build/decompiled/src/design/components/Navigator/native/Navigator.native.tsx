@@ -918,4 +918,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.Navigator = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 5787, 4705, 3151, 5788, 1568, 478, 1234, 22, 5848, 1470, 3246, 5853, 1208, 5854, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 5791, 4705, 3151, 5792, 1568, 478, 1234, 22, 5852, 1470, 3246, 5857, 1208, 5858, 2]);

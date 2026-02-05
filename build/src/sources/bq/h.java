@@ -1,32 +1,36 @@
 package bq;
 
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.MutableStateFlow;
-import ms.l0;
+import android.view.View;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MutableStateFlow f6749a;
+    private final i f7188a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Flow f6750b;
+    private final View f7189b;
 
-    public h(g gVar) {
-        MutableStateFlow a10 = l0.a(gVar);
-        this.f6749a = a10;
-        this.f6750b = ms.g.m(a10, 1);
+    /* renamed from: c  reason: collision with root package name */
+    private final View f7190c;
+
+    public h(i viewBindings, View contentView, View view) {
+        Intrinsics.checkNotNullParameter(viewBindings, "viewBindings");
+        Intrinsics.checkNotNullParameter(contentView, "contentView");
+        this.f7188a = viewBindings;
+        this.f7189b = contentView;
+        this.f7190c = view;
     }
 
-    public final Flow a() {
-        return this.f6750b;
+    public final View a() {
+        return this.f7189b;
     }
 
-    public final g b() {
-        return (g) this.f6749a.getValue();
+    public final View b() {
+        return this.f7190c;
     }
 
-    public final void c(g gVar) {
-        this.f6749a.setValue(gVar);
+    public final i c() {
+        return this.f7188a;
     }
 }

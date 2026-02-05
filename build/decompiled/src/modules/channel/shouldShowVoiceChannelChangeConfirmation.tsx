@@ -41,14 +41,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel/shouldShowVoiceChannelChangeConfirmation.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun92722: for (var _fun92722_ip = 0;;) switch (_fun92722_ip) {
+        _fun92743: for (var _fun92743_ip = 0;;) switch (_fun92743_ip) {
             case 0:
                 var5 = arg0;
                 var0 = _closure1_slot1;
                 var0 = var0.disableVoiceChannelChangeAlert;
                 if (var0) {
-                    _fun92722_ip = 196;
-                    continue _fun92722
+                    _fun92743_ip = 196;
+                    continue _fun92743
                 }
             case 22:
                 var1 = _closure1_slot0;
@@ -62,16 +62,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var3)(var0, var4);
                 var3 = null;
                 if (!(var3 == var0)) {
-                    _fun92722_ip = 192;
-                    continue _fun92722
+                    _fun92743_ip = 192;
+                    continue _fun92743
                 }
             case 72:
                 var1 = _closure1_slot4;
                 var0 = var1.isCurrentClientInVoiceChannel;
                 var0 = var0.bind(var1)();
                 if (var0) {
-                    _fun92722_ip = 93;
-                    continue _fun92722
+                    _fun92743_ip = 93;
+                    continue _fun92743
                 }
             case 89:
                 var0 = false;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.id;
                 var0 = var1.bind(var4)(var0);
                 if (var0) {
-                    _fun92722_ip = 188;
-                    continue _fun92722
+                    _fun92743_ip = 188;
+                    continue _fun92743
                 }
             case 116:
                 var4 = _closure1_slot3;
@@ -94,16 +94,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3 == var1;
                 var0 = undefined;
                 if (var4) {
-                    _fun92722_ip = 155;
-                    continue _fun92722
+                    _fun92743_ip = 155;
+                    continue _fun92743
                 }
             case 149:
                 var0 = var1.afkChannelId;
             case 155:
                 var0 = var3 == var0;
                 if (var0) {
-                    _fun92722_ip = 186;
-                    continue _fun92722
+                    _fun92743_ip = 186;
+                    continue _fun92743
                 }
             case 162:
                 var3 = _closure1_slot4;

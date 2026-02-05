@@ -1,21 +1,21 @@
 package com.google.android.play.core.integrity;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class z implements gi.z {
+public final class z implements ji.z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gi.e0 f15851a;
+    private final ji.e0 f16245a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final gi.e0 f15852b;
+    private final ji.e0 f16246b;
 
-    public z(gi.e0 e0Var, gi.e0 e0Var2) {
-        this.f15851a = e0Var;
-        this.f15852b = e0Var2;
+    public z(ji.e0 e0Var, ji.e0 e0Var2) {
+        this.f16245a = e0Var;
+        this.f16246b = e0Var2;
     }
 
-    @Override // gi.e0
+    @Override // ji.e0
     public final /* bridge */ /* synthetic */ Object a() {
-        gi.e0 e0Var = this.f15852b;
-        return new x((j0) this.f15851a.a(), (p0) e0Var.a());
+        ji.e0 e0Var = this.f16246b;
+        return new x((j0) this.f16245a.a(), (p0) e0Var.a());
     }
 }

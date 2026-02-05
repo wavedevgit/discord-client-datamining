@@ -8,22 +8,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function arg0() {
-        _fun93731: for (var _fun93731_ip = 0;;) switch (_fun93731_ip) {
+        _fun93748: for (var _fun93748_ip = 0;;) switch (_fun93748_ip) {
             case 0:
                 var3 = arg0;
                 var0 = arguments[1];
                 var1 = undefined;
                 if (!(var0 === var1)) {
-                    _fun93731_ip = 14;
-                    continue _fun93731
+                    _fun93748_ip = 14;
+                    continue _fun93748
                 }
             case 12:
                 var0 = 0;
             case 14:
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun93731_ip = 38;
-                    continue _fun93731
+                    _fun93748_ip = 38;
+                    continue _fun93748
                 }
             case 20:
                 var1 = global;
@@ -210,7 +210,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'incrementNetworkStats';
         var0.key = var5;
         var4 = function arg0() {
-            _fun93738: for (var _fun93738_ip = 0;;) switch (_fun93738_ip) {
+            _fun93755: for (var _fun93755_ip = 0;;) switch (_fun93755_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = this;
@@ -224,8 +224,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure1_slot6;
                     var3 = var3.SLOW_TWO_G;
                     if (!(var6 === var3)) {
-                        _fun93738_ip = 67;
-                        continue _fun93738
+                        _fun93755_ip = 67;
+                        continue _fun93755
                     }
                 case 57:
                     var3 = _closure1_slot6;
@@ -237,8 +237,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure1_slot5;
                     var3 = var3.WIMAX;
                     if (!(var4 === var3)) {
-                        _fun93738_ip = 105;
-                        continue _fun93738
+                        _fun93755_ip = 105;
+                        continue _fun93755
                     }
                 case 95:
                     var2 = _closure1_slot5;

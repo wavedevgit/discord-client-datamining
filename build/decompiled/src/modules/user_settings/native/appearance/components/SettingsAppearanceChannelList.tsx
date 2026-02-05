@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/appearance/components/SettingsAppearanceChannelList.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun85061: for (var _fun85061_ip = 0;;) switch (_fun85061_ip) {
+        _fun85080: for (var _fun85080_ip = 0;;) switch (_fun85080_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.themes;
@@ -108,27 +108,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var11;
                 var0 = function(arg0) { // Environment: var13
-                    _fun85062: for (var _fun85062_ip = 0;;) switch (_fun85062_ip) {
+                    _fun85081: for (var _fun85081_ip = 0;;) switch (_fun85081_ip) {
                         case 0:
                             var0 = arg0;
                             var4 = var0.item;
                             var1 = var4.kind;
                             var0 = 'channel-row';
                             if (!(var0 !== var1)) {
-                                _fun85062_ip = 180;
-                                continue _fun85062
+                                _fun85081_ip = 180;
+                                continue _fun85081
                             }
                         case 26:
                             var0 = 'messages-header';
                             if (!(var0 !== var1)) {
-                                _fun85062_ip = 115;
-                                continue _fun85062
+                                _fun85081_ip = 115;
+                                continue _fun85081
                             }
                         case 36:
                             var0 = 'activity-cards';
                             if (!(var0 !== var1)) {
-                                _fun85062_ip = 50;
-                                continue _fun85062
+                                _fun85081_ip = 50;
+                                continue _fun85081
                             }
                         case 46:
                             var0 = null;
@@ -206,8 +206,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[1] = var7;
                 var7 = !var4;
                 if (!var7) {
-                    _fun85061_ip = 166;
-                    continue _fun85061
+                    _fun85080_ip = 166;
+                    continue _fun85080
                 }
             case 160:
                 var7 = var11.bgBasePrimary;
@@ -229,8 +229,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.accessibilityLabel = var5;
                 var5 = null;
                 if (!var4) {
-                    _fun85061_ip = 317;
-                    continue _fun85061
+                    _fun85080_ip = 317;
+                    continue _fun85080
                 }
             case 242:
                 var11 = _closure1_slot5;
@@ -303,4 +303,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 10898, 10899, 10900, 3720, 1234, 10894, 5753, 10906, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 10916, 10917, 10918, 3720, 1234, 10912, 5757, 10924, 2]);

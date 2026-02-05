@@ -1,15 +1,21 @@
 package th;
-
-import java.util.concurrent.atomic.AtomicReference;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class d {
+public class d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final AtomicReference f50041a = new AtomicReference(null);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static class a {
+        /* synthetic */ a(h hVar) {
+        }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static c a() {
-        android.support.v4.media.session.b.a(f50041a.get());
-        return null;
+        public d a() {
+            return new d(null);
+        }
+    }
+
+    /* synthetic */ d(h hVar) {
+    }
+
+    public static a a() {
+        return new a(null);
     }
 }

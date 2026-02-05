@@ -45,21 +45,21 @@ public final class NextStep_Document_Pages_DocumentPagesJsonAdapter extends h {
     @NotNull
     public NextStep.Document.Pages.DocumentPages fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         NextStep.Document.Pages.DocumentStartPage documentStartPage = null;
         NextStep.Document.Pages.UploadOptionsDialog uploadOptionsDialog = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 documentStartPage = (NextStep.Document.Pages.DocumentStartPage) this.nullableDocumentStartPageAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 uploadOptionsDialog = (NextStep.Document.Pages.UploadOptionsDialog) this.nullableUploadOptionsDialogAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new NextStep.Document.Pages.DocumentPages(documentStartPage, uploadOptionsDialog);
     }
 
@@ -67,10 +67,10 @@ public final class NextStep_Document_Pages_DocumentPagesJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Document.Pages.DocumentPages documentPages) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentPages != null) {
-            writer.l();
-            writer.A0("prompt");
+            writer.k();
+            writer.W("prompt");
             this.nullableDocumentStartPageAdapter.toJson(writer, documentPages.getPrompt());
-            writer.A0("uploadOptionsDialog");
+            writer.W("uploadOptionsDialog");
             this.nullableUploadOptionsDialogAdapter.toJson(writer, documentPages.getUploadOptionsDialog());
             writer.E();
             return;

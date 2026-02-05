@@ -86,7 +86,7 @@ public final class EmojiPickerPlaceholderList extends StubbedList<EmojiPickerIte
             } else if (nativeSection instanceof EmojiPickerItemData.CoreData.NativeSection.Guild) {
                 guildName = ((EmojiPickerItemData.CoreData.NativeSection.Guild) nativeSection).getGuildName();
             } else {
-                throw new lr.p();
+                throw new or.p();
             }
             return new EmojiPickerItem.Category(guildName, 0L, false, 6, null);
         }

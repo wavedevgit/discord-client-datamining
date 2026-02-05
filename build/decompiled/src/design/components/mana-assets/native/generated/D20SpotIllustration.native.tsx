@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.D20SpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6080, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6084, 2]);

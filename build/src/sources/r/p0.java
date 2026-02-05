@@ -16,7 +16,7 @@ public class p0 extends o0 {
     @Override // r.o0, r.r0, r.n0.b
     public CameraCharacteristics b(String str) {
         try {
-            return this.f48280a.getCameraCharacteristics(str);
+            return this.f48290a.getCameraCharacteristics(str);
         } catch (CameraAccessException e10) {
             throw f.e(e10);
         }
@@ -25,7 +25,7 @@ public class p0 extends o0 {
     @Override // r.o0, r.r0, r.n0.b
     public void d(String str, Executor executor, CameraDevice.StateCallback stateCallback) {
         try {
-            this.f48280a.openCamera(str, executor, stateCallback);
+            this.f48290a.openCamera(str, executor, stateCallback);
         } catch (CameraAccessException e10) {
             throw f.e(e10);
         }

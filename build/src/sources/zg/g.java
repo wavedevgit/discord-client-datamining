@@ -1,107 +1,19 @@
 package zg;
-
-import android.animation.Animator;
-import android.animation.AnimatorInflater;
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
-import android.animation.PropertyValuesHolder;
-import android.content.Context;
-import android.content.res.TypedArray;
-import android.util.Log;
-import androidx.collection.SimpleArrayMap;
-import java.util.ArrayList;
-import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class g {
+public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SimpleArrayMap f55952a = new SimpleArrayMap();
+    public static int f55651a = 2131427330;
 
     /* renamed from: b  reason: collision with root package name */
-    private final SimpleArrayMap f55953b = new SimpleArrayMap();
+    public static int f55652b = 2131427370;
 
-    private static void a(g gVar, Animator animator) {
-        if (animator instanceof ObjectAnimator) {
-            ObjectAnimator objectAnimator = (ObjectAnimator) animator;
-            gVar.g(objectAnimator.getPropertyName(), objectAnimator.getValues());
-            gVar.h(objectAnimator.getPropertyName(), h.b(objectAnimator));
-            return;
-        }
-        throw new IllegalArgumentException("Animator must be an ObjectAnimator: " + animator);
-    }
+    /* renamed from: c  reason: collision with root package name */
+    public static int f55653c = 2131427371;
 
-    public static g b(Context context, TypedArray typedArray, int i10) {
-        int resourceId;
-        if (typedArray.hasValue(i10) && (resourceId = typedArray.getResourceId(i10, 0)) != 0) {
-            return c(context, resourceId);
-        }
-        return null;
-    }
+    /* renamed from: d  reason: collision with root package name */
+    public static int f55654d = 2131427374;
 
-    public static g c(Context context, int i10) {
-        try {
-            Animator loadAnimator = AnimatorInflater.loadAnimator(context, i10);
-            if (loadAnimator instanceof AnimatorSet) {
-                return d(((AnimatorSet) loadAnimator).getChildAnimations());
-            }
-            if (loadAnimator == null) {
-                return null;
-            }
-            ArrayList arrayList = new ArrayList();
-            arrayList.add(loadAnimator);
-            return d(arrayList);
-        } catch (Exception e10) {
-            Log.w("MotionSpec", "Can't load animation resource ID #0x" + Integer.toHexString(i10), e10);
-            return null;
-        }
-    }
-
-    private static g d(List list) {
-        g gVar = new g();
-        int size = list.size();
-        for (int i10 = 0; i10 < size; i10++) {
-            a(gVar, (Animator) list.get(i10));
-        }
-        return gVar;
-    }
-
-    public h e(String str) {
-        if (f(str)) {
-            return (h) this.f55952a.get(str);
-        }
-        throw new IllegalArgumentException();
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof g)) {
-            return false;
-        }
-        return this.f55952a.equals(((g) obj).f55952a);
-    }
-
-    public boolean f(String str) {
-        if (this.f55952a.get(str) != null) {
-            return true;
-        }
-        return false;
-    }
-
-    public void g(String str, PropertyValuesHolder[] propertyValuesHolderArr) {
-        this.f55953b.put(str, propertyValuesHolderArr);
-    }
-
-    public void h(String str, h hVar) {
-        this.f55952a.put(str, hVar);
-    }
-
-    public int hashCode() {
-        return this.f55952a.hashCode();
-    }
-
-    public String toString() {
-        return '\n' + getClass().getName() + '{' + Integer.toHexString(System.identityHashCode(this)) + " timings: " + this.f55952a + "}\n";
-    }
+    /* renamed from: e  reason: collision with root package name */
+    public static int f55655e = 2131427382;
 }

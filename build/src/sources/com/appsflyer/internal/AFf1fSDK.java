@@ -78,7 +78,7 @@ public final class AFf1fSDK implements AFf1gSDK {
         if (aFe1mSDK == AFe1mSDK.CONVERSION && this.getRevenue.getString(AppsFlyerProperties.ENABLE_TCF_DATA_COLLECTION) != null) {
             Map<String, Object> monetizationNetwork = AFa1uSDK.getMonetizationNetwork(map);
             Intrinsics.checkNotNullExpressionValue(monetizationNetwork, "");
-            monetizationNetwork.put("api", o0.f(lr.v.a(AppsFlyerProperties.ENABLE_TCF_DATA_COLLECTION, this.getRevenue.getString(AppsFlyerProperties.ENABLE_TCF_DATA_COLLECTION))));
+            monetizationNetwork.put("api", o0.f(or.v.a(AppsFlyerProperties.ENABLE_TCF_DATA_COLLECTION, this.getRevenue.getString(AppsFlyerProperties.ENABLE_TCF_DATA_COLLECTION))));
         }
     }
 }

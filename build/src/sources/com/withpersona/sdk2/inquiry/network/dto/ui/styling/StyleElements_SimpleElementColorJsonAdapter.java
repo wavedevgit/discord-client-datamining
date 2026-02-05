@@ -40,18 +40,18 @@ public final class StyleElements_SimpleElementColorJsonAdapter extends h {
     @NotNull
     public StyleElements.SimpleElementColor fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.SimpleElementColorValue simpleElementColorValue = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 simpleElementColorValue = (StyleElements.SimpleElementColorValue) this.nullableSimpleElementColorValueAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StyleElements.SimpleElementColor(simpleElementColorValue);
     }
 
@@ -59,8 +59,8 @@ public final class StyleElements_SimpleElementColorJsonAdapter extends h {
     public void toJson(@NotNull t writer, StyleElements.SimpleElementColor simpleElementColor) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (simpleElementColor != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableSimpleElementColorValueAdapter.toJson(writer, simpleElementColor.getBase());
             writer.E();
             return;

@@ -23,8 +23,8 @@ import kotlin.reflect.jvm.internal.impl.types.TypeProjectionImpl;
 import kotlin.reflect.jvm.internal.impl.types.TypeSubstitutionKt;
 import kotlin.reflect.jvm.internal.impl.types.Variance;
 import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
-import lr.l;
-import lr.p;
+import or.l;
+import or.p;
 import org.jetbrains.annotations.NotNull;
 @SourceDebugExtension({"SMAP\nIntegerLiteralTypeConstructor.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IntegerLiteralTypeConstructor.kt\norg/jetbrains/kotlin/resolve/constants/IntegerLiteralTypeConstructor\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,181:1\n1740#2,3:182\n1761#2,3:185\n*S KotlinDebug\n*F\n+ 1 IntegerLiteralTypeConstructor.kt\norg/jetbrains/kotlin/resolve/constants/IntegerLiteralTypeConstructor\n*L\n132#1:182,3\n176#1:185,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -33,19 +33,19 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f34596a;
+    private final long f34120a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ModuleDescriptor f34597b;
+    private final ModuleDescriptor f34121b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f34598c;
+    private final Set f34122c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final SimpleType f34599d;
+    private final SimpleType f34123d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Lazy f34600e;
+    private final Lazy f34124e;
 
     @SourceDebugExtension({"SMAP\nIntegerLiteralTypeConstructor.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IntegerLiteralTypeConstructor.kt\norg/jetbrains/kotlin/resolve/constants/IntegerLiteralTypeConstructor$Companion\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,181:1\n2783#2,7:182\n*S KotlinDebug\n*F\n+ 1 IntegerLiteralTypeConstructor.kt\norg/jetbrains/kotlin/resolve/constants/IntegerLiteralTypeConstructor$Companion\n*L\n40#1:182,7\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -58,11 +58,11 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
             static {
                 int[] iArr = new int[a.values().length];
                 try {
-                    iArr[a.f34601d.ordinal()] = 1;
+                    iArr[a.f34125d.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[a.f34602e.ordinal()] = 2;
+                    iArr[a.f34126e.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
                 $EnumSwitchMapping$0 = iArr;
@@ -76,28 +76,28 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
         public static final class a {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final a f34601d = new a("COMMON_SUPER_TYPE", 0);
+            public static final a f34125d = new a("COMMON_SUPER_TYPE", 0);
 
             /* renamed from: e  reason: collision with root package name */
-            public static final a f34602e = new a("INTERSECTION_TYPE", 1);
+            public static final a f34126e = new a("INTERSECTION_TYPE", 1);
 
             /* renamed from: i  reason: collision with root package name */
-            private static final /* synthetic */ a[] f34603i;
+            private static final /* synthetic */ a[] f34127i;
 
             /* renamed from: o  reason: collision with root package name */
-            private static final /* synthetic */ EnumEntries f34604o;
+            private static final /* synthetic */ EnumEntries f34128o;
 
             static {
                 a[] a10 = a();
-                f34603i = a10;
-                f34604o = sr.a.a(a10);
+                f34127i = a10;
+                f34128o = vr.a.a(a10);
             }
 
             private a(String str, int i10) {
             }
 
             private static final /* synthetic */ a[] a() {
-                return new a[]{f34601d, f34602e};
+                return new a[]{f34125d, f34126e};
             }
 
             public static a valueOf(String str) {
@@ -105,7 +105,7 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
             }
 
             public static a[] values() {
-                return (a[]) f34603i.clone();
+                return (a[]) f34127i.clone();
             }
         }
 
@@ -141,7 +141,7 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
             } else {
                 t02 = CollectionsKt.t0(integerLiteralTypeConstructor.getPossibleTypes(), integerLiteralTypeConstructor2.getPossibleTypes());
             }
-            return KotlinTypeFactory.integerLiteralType(TypeAttributes.Companion.getEmpty(), new IntegerLiteralTypeConstructor(integerLiteralTypeConstructor.f34596a, integerLiteralTypeConstructor.f34597b, t02, null), false);
+            return KotlinTypeFactory.integerLiteralType(TypeAttributes.Companion.getEmpty(), new IntegerLiteralTypeConstructor(integerLiteralTypeConstructor.f34120a, integerLiteralTypeConstructor.f34121b, t02, null), false);
         }
 
         private final SimpleType c(IntegerLiteralTypeConstructor integerLiteralTypeConstructor, SimpleType simpleType) {
@@ -171,7 +171,7 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
 
         public final SimpleType findIntersectionType(@NotNull Collection<? extends SimpleType> types) {
             Intrinsics.checkNotNullParameter(types, "types");
-            return a(types, a.f34602e);
+            return a(types, a.f34126e);
         }
 
         private Companion() {
@@ -183,16 +183,16 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
     }
 
     private final List c() {
-        return (List) this.f34600e.getValue();
+        return (List) this.f34124e.getValue();
     }
 
     private final boolean d() {
-        Collection<KotlinType> allSignedLiteralTypes = PrimitiveTypeUtilKt.getAllSignedLiteralTypes(this.f34597b);
+        Collection<KotlinType> allSignedLiteralTypes = PrimitiveTypeUtilKt.getAllSignedLiteralTypes(this.f34121b);
         if ((allSignedLiteralTypes instanceof Collection) && allSignedLiteralTypes.isEmpty()) {
             return true;
         }
         for (KotlinType kotlinType : allSignedLiteralTypes) {
-            if (this.f34598c.contains(kotlinType)) {
+            if (this.f34122c.contains(kotlinType)) {
                 return false;
             }
         }
@@ -203,7 +203,7 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
     public static final List e(IntegerLiteralTypeConstructor integerLiteralTypeConstructor) {
         SimpleType defaultType = integerLiteralTypeConstructor.getBuiltIns().getComparable().getDefaultType();
         Intrinsics.checkNotNullExpressionValue(defaultType, "getDefaultType(...)");
-        List r10 = CollectionsKt.r(TypeSubstitutionKt.replace$default(defaultType, CollectionsKt.e(new TypeProjectionImpl(Variance.IN_VARIANCE, integerLiteralTypeConstructor.f34599d)), null, 2, null));
+        List r10 = CollectionsKt.r(TypeSubstitutionKt.replace$default(defaultType, CollectionsKt.e(new TypeProjectionImpl(Variance.IN_VARIANCE, integerLiteralTypeConstructor.f34123d)), null, 2, null));
         if (!integerLiteralTypeConstructor.d()) {
             r10.add(integerLiteralTypeConstructor.getBuiltIns().getNumberType());
         }
@@ -211,7 +211,7 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
     }
 
     private final String f() {
-        return '[' + CollectionsKt.x0(this.f34598c, ",", null, null, 0, null, c.f34613d, 30, null) + ']';
+        return '[' + CollectionsKt.x0(this.f34122c, ",", null, null, 0, null, c.f34137d, 30, null) + ']';
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -223,12 +223,12 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     public KotlinBuiltIns getBuiltIns() {
-        return this.f34597b.getBuiltIns();
+        return this.f34121b.getBuiltIns();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     /* renamed from: getDeclarationDescriptor */
-    public ClassifierDescriptor mo1197getDeclarationDescriptor() {
+    public ClassifierDescriptor mo1199getDeclarationDescriptor() {
         return null;
     }
 
@@ -240,7 +240,7 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
 
     @NotNull
     public final Set<KotlinType> getPossibleTypes() {
-        return this.f34598c;
+        return this.f34122c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -267,10 +267,10 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
     }
 
     private IntegerLiteralTypeConstructor(long j10, ModuleDescriptor moduleDescriptor, Set set) {
-        this.f34599d = KotlinTypeFactory.integerLiteralType(TypeAttributes.Companion.getEmpty(), this, false);
-        this.f34600e = l.a(new b(this));
-        this.f34596a = j10;
-        this.f34597b = moduleDescriptor;
-        this.f34598c = set;
+        this.f34123d = KotlinTypeFactory.integerLiteralType(TypeAttributes.Companion.getEmpty(), this, false);
+        this.f34124e = l.a(new b(this));
+        this.f34120a = j10;
+        this.f34121b = moduleDescriptor;
+        this.f34122c = set;
     }
 }

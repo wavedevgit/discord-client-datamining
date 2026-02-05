@@ -40,18 +40,18 @@ public final class AttributeStyles_GovernmentIdNfcScanInputTextStylesJsonAdapter
     @NotNull
     public AttributeStyles.GovernmentIdNfcScanInputTextStyles fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         AttributeStyles.GovernmentIdNfcScanInputTextStylesContainer governmentIdNfcScanInputTextStylesContainer = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 governmentIdNfcScanInputTextStylesContainer = (AttributeStyles.GovernmentIdNfcScanInputTextStylesContainer) this.nullableGovernmentIdNfcScanInputTextStylesContainerAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.GovernmentIdNfcScanInputTextStyles(governmentIdNfcScanInputTextStylesContainer);
     }
 
@@ -59,8 +59,8 @@ public final class AttributeStyles_GovernmentIdNfcScanInputTextStylesJsonAdapter
     public void toJson(@NotNull t writer, AttributeStyles.GovernmentIdNfcScanInputTextStyles governmentIdNfcScanInputTextStyles) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdNfcScanInputTextStyles != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableGovernmentIdNfcScanInputTextStylesContainerAdapter.toJson(writer, governmentIdNfcScanInputTextStyles.getBase());
             writer.E();
             return;

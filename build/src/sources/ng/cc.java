@@ -5,22 +5,22 @@ import android.content.Context;
 public final class cc implements pb {
 
     /* renamed from: a  reason: collision with root package name */
-    private bj.b f40944a;
+    private ej.b f40404a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final bj.b f40945b;
+    private final ej.b f40405b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final rb f40946c;
+    private final rb f40406c;
 
     public cc(Context context, rb rbVar) {
-        this.f40946c = rbVar;
-        com.google.android.datatransport.cct.a aVar = com.google.android.datatransport.cct.a.f11234g;
+        this.f40406c = rbVar;
+        com.google.android.datatransport.cct.a aVar = com.google.android.datatransport.cct.a.f11619g;
         zb.t.f(context);
         final xb.i g10 = zb.t.c().g(aVar);
         if (aVar.a().contains(xb.c.b("json"))) {
-            this.f40944a = new qi.w(new bj.b() { // from class: ng.zb
-                @Override // bj.b
+            this.f40404a = new ti.w(new ej.b() { // from class: ng.zb
+                @Override // ej.b
                 public final Object get() {
                     return xb.i.this.a("FIREBASE_ML_SDK", byte[].class, xb.c.b("json"), new xb.g() { // from class: ng.bc
                         @Override // xb.g
@@ -31,8 +31,8 @@ public final class cc implements pb {
                 }
             });
         }
-        this.f40945b = new qi.w(new bj.b() { // from class: ng.ac
-            @Override // bj.b
+        this.f40405b = new ti.w(new ej.b() { // from class: ng.ac
+            @Override // ej.b
             public final Object get() {
                 return xb.i.this.a("FIREBASE_ML_SDK", byte[].class, xb.c.b("proto"), new xb.g() { // from class: ng.yb
                     @Override // xb.g
@@ -50,14 +50,14 @@ public final class cc implements pb {
 
     @Override // ng.pb
     public final void a(ob obVar) {
-        if (this.f40946c.a() == 0) {
-            bj.b bVar = this.f40944a;
+        if (this.f40406c.a() == 0) {
+            ej.b bVar = this.f40404a;
             if (bVar != null) {
-                ((xb.h) bVar.get()).a(b(this.f40946c, obVar));
+                ((xb.h) bVar.get()).a(b(this.f40406c, obVar));
                 return;
             }
             return;
         }
-        ((xb.h) this.f40945b.get()).a(b(this.f40946c, obVar));
+        ((xb.h) this.f40405b.get()).a(b(this.f40406c, obVar));
     }
 }

@@ -10,19 +10,19 @@ import java.util.WeakHashMap;
 public final class v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f23968a = Collections.synchronizedMap(new WeakHashMap());
+    private final Map f22993a = Collections.synchronizedMap(new WeakHashMap());
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f23969b = Collections.synchronizedMap(new WeakHashMap());
+    private final Map f22994b = Collections.synchronizedMap(new WeakHashMap());
 
     private final void h(boolean z10, Status status) {
         HashMap hashMap;
         HashMap hashMap2;
-        synchronized (this.f23968a) {
-            hashMap = new HashMap(this.f23968a);
+        synchronized (this.f22993a) {
+            hashMap = new HashMap(this.f22993a);
         }
-        synchronized (this.f23969b) {
-            hashMap2 = new HashMap(this.f23969b);
+        synchronized (this.f22994b) {
+            hashMap2 = new HashMap(this.f22994b);
         }
         for (Map.Entry entry : hashMap.entrySet()) {
             if (z10 || ((Boolean) entry.getValue()).booleanValue()) {
@@ -31,20 +31,20 @@ public final class v {
         }
         for (Map.Entry entry2 : hashMap2.entrySet()) {
             if (z10 || ((Boolean) entry2.getValue()).booleanValue()) {
-                ((wg.k) entry2.getKey()).d(new ef.b(status));
+                ((xg.k) entry2.getKey()).d(new ef.b(status));
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void c(BasePendingResult basePendingResult, boolean z10) {
-        this.f23968a.put(basePendingResult, Boolean.valueOf(z10));
+        this.f22993a.put(basePendingResult, Boolean.valueOf(z10));
         basePendingResult.addStatusListener(new t(this, basePendingResult));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final void d(wg.k kVar, boolean z10) {
-        this.f23969b.put(kVar, Boolean.valueOf(z10));
+    public final void d(xg.k kVar, boolean z10) {
+        this.f22994b.put(kVar, Boolean.valueOf(z10));
         kVar.a().addOnCompleteListener(new u(this, kVar));
     }
 
@@ -69,7 +69,7 @@ public final class v {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final boolean g() {
-        if (this.f23968a.isEmpty() && this.f23969b.isEmpty()) {
+        if (this.f22993a.isEmpty() && this.f22994b.isEmpty()) {
             return false;
         }
         return true;

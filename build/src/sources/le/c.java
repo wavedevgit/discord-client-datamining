@@ -11,19 +11,19 @@ import ne.w0;
 public final class c extends f {
 
     /* renamed from: e  reason: collision with root package name */
-    private final AssetManager f36767e;
+    private final AssetManager f36694e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Uri f36768f;
+    private Uri f36695f;
 
     /* renamed from: g  reason: collision with root package name */
-    private InputStream f36769g;
+    private InputStream f36696g;
 
     /* renamed from: h  reason: collision with root package name */
-    private long f36770h;
+    private long f36697h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f36771i;
+    private boolean f36698i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends m {
@@ -34,15 +34,15 @@ public final class c extends f {
 
     public c(Context context) {
         super(false);
-        this.f36767e = context.getAssets();
+        this.f36694e = context.getAssets();
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public long b(com.google.android.exoplayer2.upstream.a aVar) {
         int i10;
         try {
-            Uri uri = aVar.f12943a;
-            this.f36768f = uri;
+            Uri uri = aVar.f13328a;
+            this.f36695f = uri;
             String str = (String) ne.a.e(uri.getPath());
             if (str.startsWith("/android_asset/")) {
                 str = str.substring(15);
@@ -50,22 +50,22 @@ public final class c extends f {
                 str = str.substring(1);
             }
             q(aVar);
-            InputStream open = this.f36767e.open(str, 1);
-            this.f36769g = open;
-            if (open.skip(aVar.f12949g) >= aVar.f12949g) {
-                long j10 = aVar.f12950h;
+            InputStream open = this.f36694e.open(str, 1);
+            this.f36696g = open;
+            if (open.skip(aVar.f13334g) >= aVar.f13334g) {
+                long j10 = aVar.f13335h;
                 if (j10 != -1) {
-                    this.f36770h = j10;
+                    this.f36697h = j10;
                 } else {
-                    long available = this.f36769g.available();
-                    this.f36770h = available;
+                    long available = this.f36696g.available();
+                    this.f36697h = available;
                     if (available == 2147483647L) {
-                        this.f36770h = -1L;
+                        this.f36697h = -1L;
                     }
                 }
-                this.f36771i = true;
+                this.f36698i = true;
                 r(aVar);
-                return this.f36770h;
+                return this.f36697h;
             }
             throw new a(null, 2008);
         } catch (a e10) {
@@ -82,10 +82,10 @@ public final class c extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void close() {
-        this.f36768f = null;
+        this.f36695f = null;
         try {
             try {
-                InputStream inputStream = this.f36769g;
+                InputStream inputStream = this.f36696g;
                 if (inputStream != null) {
                     inputStream.close();
                 }
@@ -93,9 +93,9 @@ public final class c extends f {
                 throw new a(e10, 2000);
             }
         } finally {
-            this.f36769g = null;
-            if (this.f36771i) {
-                this.f36771i = false;
+            this.f36696g = null;
+            if (this.f36698i) {
+                this.f36698i = false;
                 p();
             }
         }
@@ -103,7 +103,7 @@ public final class c extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Uri m() {
-        return this.f36768f;
+        return this.f36695f;
     }
 
     @Override // le.j
@@ -111,7 +111,7 @@ public final class c extends f {
         if (i11 == 0) {
             return 0;
         }
-        long j10 = this.f36770h;
+        long j10 = this.f36697h;
         if (j10 == 0) {
             return -1;
         }
@@ -122,13 +122,13 @@ public final class c extends f {
                 throw new a(e10, 2000);
             }
         }
-        int read = ((InputStream) w0.j(this.f36769g)).read(bArr, i10, i11);
+        int read = ((InputStream) w0.j(this.f36696g)).read(bArr, i10, i11);
         if (read == -1) {
             return -1;
         }
-        long j11 = this.f36770h;
+        long j11 = this.f36697h;
         if (j11 != -1) {
-            this.f36770h = j11 - read;
+            this.f36697h = j11 - read;
         }
         o(read);
         return read;

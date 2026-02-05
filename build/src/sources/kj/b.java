@@ -1,37 +1,47 @@
 package kj;
 
-import com.google.firebase.components.ComponentRegistrar;
-import java.util.ArrayList;
-import java.util.List;
-import qi.d;
-import qi.g;
-import qi.i;
+import com.google.firebase.messaging.j0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class b implements i {
-    public static /* synthetic */ Object b(String str, qi.c cVar, d dVar) {
-        try {
-            c.b(str);
-            return cVar.h().a(dVar);
-        } finally {
-            c.a();
+public final class b {
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final b f31906b = new a().a();
+
+    /* renamed from: a  reason: collision with root package name */
+    private final kj.a f31907a;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private kj.a f31908a = null;
+
+        a() {
+        }
+
+        public b a() {
+            return new b(this.f31908a);
+        }
+
+        public a b(kj.a aVar) {
+            this.f31908a = aVar;
+            return this;
         }
     }
 
-    @Override // qi.i
-    public List a(ComponentRegistrar componentRegistrar) {
-        ArrayList arrayList = new ArrayList();
-        for (final qi.c cVar : componentRegistrar.getComponents()) {
-            final String i10 = cVar.i();
-            if (i10 != null) {
-                cVar = cVar.r(new g() { // from class: kj.a
-                    @Override // qi.g
-                    public final Object a(d dVar) {
-                        return b.b(i10, cVar, dVar);
-                    }
-                });
-            }
-            arrayList.add(cVar);
-        }
-        return arrayList;
+    b(kj.a aVar) {
+        this.f31907a = aVar;
+    }
+
+    public static a b() {
+        return new a();
+    }
+
+    public kj.a a() {
+        return this.f31907a;
+    }
+
+    public byte[] c() {
+        return j0.a(this);
     }
 }

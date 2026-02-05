@@ -8,106 +8,106 @@ import ef.a;
 import ef.e;
 import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class u0 extends ug.d implements e.a, e.b {
+public final class u0 extends vg.d implements e.a, e.b {
 
     /* renamed from: j  reason: collision with root package name */
-    private static final a.AbstractC0279a f23960j = tg.d.f50033c;
+    private static final a.AbstractC0294a f22985j = ug.d.f51405c;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f23961c;
+    private final Context f22986c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Handler f23962d;
+    private final Handler f22987d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a.AbstractC0279a f23963e;
+    private final a.AbstractC0294a f22988e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Set f23964f;
+    private final Set f22989f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final gf.d f23965g;
+    private final gf.d f22990g;
 
     /* renamed from: h  reason: collision with root package name */
-    private tg.e f23966h;
+    private ug.e f22991h;
 
     /* renamed from: i  reason: collision with root package name */
-    private t0 f23967i;
+    private t0 f22992i;
 
     public u0(Context context, Handler handler, gf.d dVar) {
-        a.AbstractC0279a abstractC0279a = f23960j;
-        this.f23961c = context;
-        this.f23962d = handler;
-        this.f23965g = (gf.d) gf.q.m(dVar, "ClientSettings must not be null");
-        this.f23964f = dVar.g();
-        this.f23963e = abstractC0279a;
+        a.AbstractC0294a abstractC0294a = f22985j;
+        this.f22986c = context;
+        this.f22987d = handler;
+        this.f22990g = (gf.d) gf.q.m(dVar, "ClientSettings must not be null");
+        this.f22989f = dVar.g();
+        this.f22988e = abstractC0294a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ void U0(u0 u0Var, ug.l lVar) {
+    public static /* bridge */ /* synthetic */ void Y0(u0 u0Var, vg.l lVar) {
         com.google.android.gms.common.b b10 = lVar.b();
-        if (b10.f()) {
+        if (b10.g()) {
             gf.p0 p0Var = (gf.p0) gf.q.l(lVar.c());
             com.google.android.gms.common.b b11 = p0Var.b();
-            if (!b11.f()) {
+            if (!b11.g()) {
                 String valueOf = String.valueOf(b11);
                 Log.wtf("SignInCoordinator", "Sign-in succeeded with resolve account failure: ".concat(valueOf), new Exception());
-                u0Var.f23967i.c(b11);
-                u0Var.f23966h.k();
+                u0Var.f22992i.c(b11);
+                u0Var.f22991h.l();
                 return;
             }
-            u0Var.f23967i.b(p0Var.c(), u0Var.f23964f);
+            u0Var.f22992i.b(p0Var.c(), u0Var.f22989f);
         } else {
-            u0Var.f23967i.c(b10);
+            u0Var.f22992i.c(b10);
         }
-        u0Var.f23966h.k();
+        u0Var.f22991h.l();
     }
 
-    /* JADX WARN: Type inference failed for: r0v3, types: [ef.a$f, tg.e] */
-    public final void V0(t0 t0Var) {
-        tg.e eVar = this.f23966h;
+    /* JADX WARN: Type inference failed for: r0v3, types: [ef.a$f, ug.e] */
+    public final void Z0(t0 t0Var) {
+        ug.e eVar = this.f22991h;
         if (eVar != null) {
-            eVar.k();
+            eVar.l();
         }
-        this.f23965g.k(Integer.valueOf(System.identityHashCode(this)));
-        a.AbstractC0279a abstractC0279a = this.f23963e;
-        Context context = this.f23961c;
-        Handler handler = this.f23962d;
-        gf.d dVar = this.f23965g;
-        this.f23966h = abstractC0279a.a(context, handler.getLooper(), dVar, dVar.h(), this, this);
-        this.f23967i = t0Var;
-        Set set = this.f23964f;
+        this.f22990g.k(Integer.valueOf(System.identityHashCode(this)));
+        a.AbstractC0294a abstractC0294a = this.f22988e;
+        Context context = this.f22986c;
+        Handler handler = this.f22987d;
+        gf.d dVar = this.f22990g;
+        this.f22991h = abstractC0294a.a(context, handler.getLooper(), dVar, dVar.h(), this, this);
+        this.f22992i = t0Var;
+        Set set = this.f22989f;
         if (set != null && !set.isEmpty()) {
-            this.f23966h.h();
+            this.f22991h.i();
         } else {
-            this.f23962d.post(new r0(this));
+            this.f22987d.post(new r0(this));
         }
     }
 
-    public final void W0() {
-        tg.e eVar = this.f23966h;
+    public final void a1() {
+        ug.e eVar = this.f22991h;
         if (eVar != null) {
-            eVar.k();
+            eVar.l();
         }
-    }
-
-    @Override // ug.f
-    public final void Z(ug.l lVar) {
-        this.f23962d.post(new s0(this, lVar));
     }
 
     @Override // ff.d
     public final void e(Bundle bundle) {
-        this.f23966h.m(this);
+        this.f22991h.h(this);
     }
 
     @Override // ff.d
     public final void f(int i10) {
-        this.f23967i.d(i10);
+        this.f22992i.d(i10);
     }
 
     @Override // ff.k
     public final void h(com.google.android.gms.common.b bVar) {
-        this.f23967i.c(bVar);
+        this.f22992i.c(bVar);
+    }
+
+    @Override // vg.f
+    public final void q0(vg.l lVar) {
+        this.f22987d.post(new s0(this, lVar));
     }
 }

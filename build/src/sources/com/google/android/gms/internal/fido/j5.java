@@ -5,11 +5,11 @@ import java.util.Arrays;
 public final class j5 extends l5 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f13638d;
+    private final String f14032d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j5(String str) {
-        this.f13638d = str;
+        this.f14032d = str;
     }
 
     @Override // java.lang.Comparable
@@ -21,8 +21,8 @@ public final class j5 extends l5 {
             length = l5Var.zza();
             length2 = l5.e((byte) 96);
         } else {
-            String str = this.f13638d;
-            String str2 = ((j5) l5Var).f13638d;
+            String str = this.f14032d;
+            String str2 = ((j5) l5Var).f14032d;
             if (str.length() != str2.length()) {
                 length = str2.length();
                 length2 = str.length();
@@ -40,20 +40,19 @@ public final class j5 extends l5 {
         if (obj == null || j5.class != obj.getClass()) {
             return false;
         }
-        return this.f13638d.equals(((j5) obj).f13638d);
+        return this.f14032d.equals(((j5) obj).f14032d);
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(l5.e((byte) 96)), this.f13638d});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(l5.e((byte) 96)), this.f14032d});
     }
 
     public final String toString() {
-        return "\"" + this.f13638d + "\"";
+        return "\"" + this.f14032d + "\"";
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.google.android.gms.internal.fido.l5
-    public final int zza() {
+    protected final int zza() {
         return l5.e((byte) 96);
     }
 }

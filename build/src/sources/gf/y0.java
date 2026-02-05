@@ -1,48 +1,65 @@
 package gf;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+import android.util.Log;
+import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class y0 implements Parcelable.Creator {
-    @Override // android.os.Parcelable.Creator
-    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int A = hf.b.A(parcel);
-        int i10 = 0;
-        boolean z10 = false;
-        boolean z11 = false;
-        int i11 = 0;
-        int i12 = 0;
-        while (parcel.dataPosition() < A) {
-            int r10 = hf.b.r(parcel);
-            int l10 = hf.b.l(r10);
-            if (l10 != 1) {
-                if (l10 != 2) {
-                    if (l10 != 3) {
-                        if (l10 != 4) {
-                            if (l10 != 5) {
-                                hf.b.z(parcel, r10);
-                            } else {
-                                i12 = hf.b.t(parcel, r10);
-                            }
-                        } else {
-                            i11 = hf.b.t(parcel, r10);
-                        }
-                    } else {
-                        z11 = hf.b.m(parcel, r10);
-                    }
-                } else {
-                    z10 = hf.b.m(parcel, r10);
-                }
-            } else {
-                i10 = hf.b.t(parcel, r10);
-            }
-        }
-        hf.b.k(parcel, A);
-        return new s(i10, z10, z11, i11, i12);
+public abstract class y0 {
+
+    /* renamed from: a  reason: collision with root package name */
+    private Object f24907a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private boolean f24908b;
+
+    /* renamed from: c  reason: collision with root package name */
+    final /* synthetic */ c f24909c;
+
+    public y0(c cVar, Object obj) {
+        Objects.requireNonNull(cVar);
+        this.f24909c = cVar;
+        this.f24907a = obj;
+        this.f24908b = false;
     }
 
-    @Override // android.os.Parcelable.Creator
-    public final /* synthetic */ Object[] newArray(int i10) {
-        return new s[i10];
+    protected abstract void a(Object obj);
+
+    public final void b() {
+        Object obj;
+        synchronized (this) {
+            try {
+                obj = this.f24907a;
+                if (this.f24908b) {
+                    String obj2 = toString();
+                    StringBuilder sb2 = new StringBuilder(obj2.length() + 47);
+                    sb2.append("Callback proxy ");
+                    sb2.append(obj2);
+                    sb2.append(" being reused. This is not safe.");
+                    Log.w("GmsClient", sb2.toString());
+                }
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+        if (obj != null) {
+            a(obj);
+        }
+        synchronized (this) {
+            this.f24908b = true;
+        }
+        c();
+    }
+
+    public final void c() {
+        d();
+        c cVar = this.f24909c;
+        synchronized (cVar.a0()) {
+            cVar.a0().remove(this);
+        }
+    }
+
+    public final void d() {
+        synchronized (this) {
+            this.f24907a = null;
+        }
     }
 }

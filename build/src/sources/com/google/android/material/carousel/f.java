@@ -8,51 +8,51 @@ import java.util.List;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f14390a;
+    private final float f14784a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f14391b;
+    private final List f14785b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f14392c;
+    private final int f14786c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f14393d;
+    private final int f14787d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final float f14394a;
+        private final float f14788a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final float f14395b;
+        private final float f14789b;
 
         /* renamed from: d  reason: collision with root package name */
-        private c f14397d;
+        private c f14791d;
 
         /* renamed from: e  reason: collision with root package name */
-        private c f14398e;
+        private c f14792e;
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f14396c = new ArrayList();
+        private final List f14790c = new ArrayList();
 
         /* renamed from: f  reason: collision with root package name */
-        private int f14399f = -1;
+        private int f14793f = -1;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f14400g = -1;
+        private int f14794g = -1;
 
         /* renamed from: h  reason: collision with root package name */
-        private float f14401h = 0.0f;
+        private float f14795h = 0.0f;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f14402i = -1;
+        private int f14796i = -1;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public b(float f10, float f11) {
-            this.f14394a = f10;
-            this.f14395b = f11;
+            this.f14788a = f10;
+            this.f14789b = f11;
         }
 
         private static float j(float f10, float f11, int i10, int i11) {
@@ -78,7 +78,7 @@ public final class f {
             float f14 = f12 / 2.0f;
             float f15 = f10 - f14;
             float f16 = f14 + f10;
-            float f17 = this.f14395b;
+            float f17 = this.f14789b;
             if (f16 > f17) {
                 f13 = Math.abs(f16 - Math.max(f16 - f12, f17));
             } else {
@@ -102,39 +102,39 @@ public final class f {
             }
             if (z11) {
                 if (!z10) {
-                    int i10 = this.f14402i;
+                    int i10 = this.f14796i;
                     if (i10 != -1 && i10 != 0) {
                         throw new IllegalArgumentException("Anchor keylines must be either the first or last keyline.");
                     }
-                    this.f14402i = this.f14396c.size();
+                    this.f14796i = this.f14790c.size();
                 } else {
                     throw new IllegalArgumentException("Anchor keylines cannot be focal.");
                 }
             }
             c cVar = new c(Float.MIN_VALUE, f10, f11, f12, z11, f13, f14, f15);
             if (z10) {
-                if (this.f14397d == null) {
-                    this.f14397d = cVar;
-                    this.f14399f = this.f14396c.size();
+                if (this.f14791d == null) {
+                    this.f14791d = cVar;
+                    this.f14793f = this.f14790c.size();
                 }
-                if (this.f14400g != -1 && this.f14396c.size() - this.f14400g > 1) {
+                if (this.f14794g != -1 && this.f14790c.size() - this.f14794g > 1) {
                     throw new IllegalArgumentException("Keylines marked as focal must be placed next to each other. There cannot be non-focal keylines between focal keylines.");
                 }
-                if (f12 == this.f14397d.f14406d) {
-                    this.f14398e = cVar;
-                    this.f14400g = this.f14396c.size();
+                if (f12 == this.f14791d.f14800d) {
+                    this.f14792e = cVar;
+                    this.f14794g = this.f14790c.size();
                 } else {
                     throw new IllegalArgumentException("Keylines that are marked as focal must all have the same masked item size.");
                 }
-            } else if (this.f14397d == null && cVar.f14406d < this.f14401h) {
+            } else if (this.f14791d == null && cVar.f14800d < this.f14795h) {
                 throw new IllegalArgumentException("Keylines before the first focal keyline must be ordered by incrementing masked item size.");
             } else {
-                if (this.f14398e != null && cVar.f14406d > this.f14401h) {
+                if (this.f14792e != null && cVar.f14800d > this.f14795h) {
                     throw new IllegalArgumentException("Keylines after the last focal keyline must be ordered by decreasing masked item size.");
                 }
             }
-            this.f14401h = cVar.f14406d;
-            this.f14396c.add(cVar);
+            this.f14795h = cVar.f14800d;
+            this.f14790c.add(cVar);
             return this;
         }
 
@@ -155,13 +155,13 @@ public final class f {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public f i() {
-            if (this.f14397d != null) {
+            if (this.f14791d != null) {
                 ArrayList arrayList = new ArrayList();
-                for (int i10 = 0; i10 < this.f14396c.size(); i10++) {
-                    c cVar = (c) this.f14396c.get(i10);
-                    arrayList.add(new c(j(this.f14397d.f14404b, this.f14394a, this.f14399f, i10), cVar.f14404b, cVar.f14405c, cVar.f14406d, cVar.f14407e, cVar.f14408f, cVar.f14409g, cVar.f14410h));
+                for (int i10 = 0; i10 < this.f14790c.size(); i10++) {
+                    c cVar = (c) this.f14790c.get(i10);
+                    arrayList.add(new c(j(this.f14791d.f14798b, this.f14788a, this.f14793f, i10), cVar.f14798b, cVar.f14799c, cVar.f14800d, cVar.f14801e, cVar.f14802f, cVar.f14803g, cVar.f14804h));
                 }
-                return new f(this.f14394a, arrayList, this.f14399f, this.f14400g);
+                return new f(this.f14788a, arrayList, this.f14793f, this.f14794g);
             }
             throw new IllegalStateException("There must be a keyline marked as focal.");
         }
@@ -172,46 +172,46 @@ public final class f {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        final float f14403a;
+        final float f14797a;
 
         /* renamed from: b  reason: collision with root package name */
-        final float f14404b;
+        final float f14798b;
 
         /* renamed from: c  reason: collision with root package name */
-        final float f14405c;
+        final float f14799c;
 
         /* renamed from: d  reason: collision with root package name */
-        final float f14406d;
+        final float f14800d;
 
         /* renamed from: e  reason: collision with root package name */
-        final boolean f14407e;
+        final boolean f14801e;
 
         /* renamed from: f  reason: collision with root package name */
-        final float f14408f;
+        final float f14802f;
 
         /* renamed from: g  reason: collision with root package name */
-        final float f14409g;
+        final float f14803g;
 
         /* renamed from: h  reason: collision with root package name */
-        final float f14410h;
+        final float f14804h;
 
         c(float f10, float f11, float f12, float f13) {
             this(f10, f11, f12, f13, false, 0.0f, 0.0f, 0.0f);
         }
 
         static c a(c cVar, c cVar2, float f10) {
-            return new c(zg.a.a(cVar.f14403a, cVar2.f14403a, f10), zg.a.a(cVar.f14404b, cVar2.f14404b, f10), zg.a.a(cVar.f14405c, cVar2.f14405c, f10), zg.a.a(cVar.f14406d, cVar2.f14406d, f10));
+            return new c(ah.a.a(cVar.f14797a, cVar2.f14797a, f10), ah.a.a(cVar.f14798b, cVar2.f14798b, f10), ah.a.a(cVar.f14799c, cVar2.f14799c, f10), ah.a.a(cVar.f14800d, cVar2.f14800d, f10));
         }
 
         c(float f10, float f11, float f12, float f13, boolean z10, float f14, float f15, float f16) {
-            this.f14403a = f10;
-            this.f14404b = f11;
-            this.f14405c = f12;
-            this.f14406d = f13;
-            this.f14407e = z10;
-            this.f14408f = f14;
-            this.f14409g = f15;
-            this.f14410h = f16;
+            this.f14797a = f10;
+            this.f14798b = f11;
+            this.f14799c = f12;
+            this.f14800d = f13;
+            this.f14801e = z10;
+            this.f14802f = f14;
+            this.f14803g = f15;
+            this.f14804h = f16;
         }
     }
 
@@ -225,7 +225,7 @@ public final class f {
                 for (int i10 = 0; i10 < fVar.g().size(); i10++) {
                     arrayList.add(c.a((c) g10.get(i10), (c) g11.get(i10), f10));
                 }
-                return new f(fVar.f(), arrayList, zg.a.c(fVar.b(), fVar2.b(), f10), zg.a.c(fVar.i(), fVar2.i(), f10));
+                return new f(fVar.f(), arrayList, ah.a.c(fVar.b(), fVar2.b(), f10), ah.a.c(fVar.i(), fVar2.i(), f10));
             }
             throw new IllegalArgumentException("Keylines being linearly interpolated must have the same number of keylines.");
         }
@@ -236,41 +236,41 @@ public final class f {
     public static f n(f fVar, float f10) {
         boolean z10;
         b bVar = new b(fVar.f(), f10);
-        float f11 = (f10 - fVar.j().f14404b) - (fVar.j().f14406d / 2.0f);
+        float f11 = (f10 - fVar.j().f14798b) - (fVar.j().f14800d / 2.0f);
         for (int size = fVar.g().size() - 1; size >= 0; size--) {
             c cVar = (c) fVar.g().get(size);
-            float f12 = (cVar.f14406d / 2.0f) + f11;
+            float f12 = (cVar.f14800d / 2.0f) + f11;
             if (size >= fVar.b() && size <= fVar.i()) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            bVar.d(f12, cVar.f14405c, cVar.f14406d, z10, cVar.f14407e);
-            f11 += cVar.f14406d;
+            bVar.d(f12, cVar.f14799c, cVar.f14800d, z10, cVar.f14801e);
+            f11 += cVar.f14800d;
         }
         return bVar.i();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c a() {
-        return (c) this.f14391b.get(this.f14392c);
+        return (c) this.f14785b.get(this.f14786c);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int b() {
-        return this.f14392c;
+        return this.f14786c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c c() {
-        return (c) this.f14391b.get(0);
+        return (c) this.f14785b.get(0);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c d() {
-        for (int i10 = 0; i10 < this.f14391b.size(); i10++) {
-            c cVar = (c) this.f14391b.get(i10);
-            if (!cVar.f14407e) {
+        for (int i10 = 0; i10 < this.f14785b.size(); i10++) {
+            c cVar = (c) this.f14785b.get(i10);
+            if (!cVar.f14801e) {
                 return cVar;
             }
         }
@@ -279,40 +279,40 @@ public final class f {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List e() {
-        return this.f14391b.subList(this.f14392c, this.f14393d + 1);
+        return this.f14785b.subList(this.f14786c, this.f14787d + 1);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float f() {
-        return this.f14390a;
+        return this.f14784a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List g() {
-        return this.f14391b;
+        return this.f14785b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c h() {
-        return (c) this.f14391b.get(this.f14393d);
+        return (c) this.f14785b.get(this.f14787d);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int i() {
-        return this.f14393d;
+        return this.f14787d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c j() {
-        List list = this.f14391b;
+        List list = this.f14785b;
         return (c) list.get(list.size() - 1);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c k() {
-        for (int size = this.f14391b.size() - 1; size >= 0; size--) {
-            c cVar = (c) this.f14391b.get(size);
-            if (!cVar.f14407e) {
+        for (int size = this.f14785b.size() - 1; size >= 0; size--) {
+            c cVar = (c) this.f14785b.get(size);
+            if (!cVar.f14801e) {
                 return cVar;
             }
         }
@@ -322,18 +322,18 @@ public final class f {
     /* JADX INFO: Access modifiers changed from: package-private */
     public int l() {
         int i10 = 0;
-        for (c cVar : this.f14391b) {
-            if (cVar.f14407e) {
+        for (c cVar : this.f14785b) {
+            if (cVar.f14801e) {
                 i10++;
             }
         }
-        return this.f14391b.size() - i10;
+        return this.f14785b.size() - i10;
     }
 
     private f(float f10, List list, int i10, int i11) {
-        this.f14390a = f10;
-        this.f14391b = Collections.unmodifiableList(list);
-        this.f14392c = i10;
-        this.f14393d = i11;
+        this.f14784a = f10;
+        this.f14785b = Collections.unmodifiableList(list);
+        this.f14786c = i10;
+        this.f14787d = i11;
     }
 }

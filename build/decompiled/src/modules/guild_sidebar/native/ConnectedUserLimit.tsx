@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_sidebar/native/ConnectedUserLimit.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun102064: for (var _fun102064_ip = 0;;) switch (_fun102064_ip) {
+        _fun102092: for (var _fun102092_ip = 0;;) switch (_fun102092_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.channel;
@@ -51,15 +51,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4 > var7;
                 var9 = -1;
                 if (!var4) {
-                    _fun102064_ip = 82;
-                    continue _fun102064
+                    _fun102092_ip = 82;
+                    continue _fun102092
                 }
             case 76:
                 var9 = var2.userLimit;
             case 82:
                 if (!var1) {
-                    _fun102064_ip = 89;
-                    continue _fun102064
+                    _fun102092_ip = 89;
+                    continue _fun102092
                 }
             case 85:
                 var1 = var10 > var7;
@@ -67,22 +67,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var9;
                 var4 = false;
                 if (!var1) {
-                    _fun102064_ip = 140;
-                    continue _fun102064
+                    _fun102092_ip = 140;
+                    continue _fun102092
                 }
             case 97:
                 var1 = var9 < var7;
                 if (var1) {
-                    _fun102064_ip = 108;
-                    continue _fun102064
+                    _fun102092_ip = 108;
+                    continue _fun102092
                 }
             case 104:
                 var1 = var10 < var9;
             case 108:
                 var2 = var10;
                 if (!(var9 > var7)) {
-                    _fun102064_ip = 134;
-                    continue _fun102064
+                    _fun102092_ip = 134;
+                    continue _fun102092
                 }
             case 115:
                 var7 = global;
@@ -109,4 +109,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ConnectedUserLimit = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8210, 13300, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8229, 13316, 2]);

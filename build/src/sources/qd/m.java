@@ -8,19 +8,19 @@ import java.util.Map;
 final class m implements DataSource {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DataSource f47673a;
+    private final DataSource f47737a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f47674b;
+    private final int f47738b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a f47675c;
+    private final a f47739c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final byte[] f47676d;
+    private final byte[] f47740d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f47677e;
+    private int f47741e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -35,18 +35,18 @@ final class m implements DataSource {
             z10 = false;
         }
         ne.a.a(z10);
-        this.f47673a = dataSource;
-        this.f47674b = i10;
-        this.f47675c = aVar;
-        this.f47676d = new byte[1];
-        this.f47677e = i10;
+        this.f47737a = dataSource;
+        this.f47738b = i10;
+        this.f47739c = aVar;
+        this.f47740d = new byte[1];
+        this.f47741e = i10;
     }
 
     private boolean o() {
-        if (this.f47673a.read(this.f47676d, 0, 1) == -1) {
+        if (this.f47737a.read(this.f47740d, 0, 1) == -1) {
             return false;
         }
-        int i10 = (this.f47676d[0] & SetSpanOperation.SPAN_MAX_PRIORITY) << 4;
+        int i10 = (this.f47740d[0] & SetSpanOperation.SPAN_MAX_PRIORITY) << 4;
         if (i10 == 0) {
             return true;
         }
@@ -54,7 +54,7 @@ final class m implements DataSource {
         int i11 = i10;
         int i12 = 0;
         while (i11 > 0) {
-            int read = this.f47673a.read(bArr, i12, i11);
+            int read = this.f47737a.read(bArr, i12, i11);
             if (read == -1) {
                 return false;
             }
@@ -65,7 +65,7 @@ final class m implements DataSource {
             i10--;
         }
         if (i10 > 0) {
-            this.f47675c.a(new ne.h0(bArr, i10));
+            this.f47739c.a(new ne.h0(bArr, i10));
         }
         return true;
     }
@@ -82,31 +82,31 @@ final class m implements DataSource {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Map d() {
-        return this.f47673a.d();
+        return this.f47737a.d();
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void j(le.c0 c0Var) {
         ne.a.e(c0Var);
-        this.f47673a.j(c0Var);
+        this.f47737a.j(c0Var);
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Uri m() {
-        return this.f47673a.m();
+        return this.f47737a.m();
     }
 
     @Override // le.j
     public int read(byte[] bArr, int i10, int i11) {
-        if (this.f47677e == 0) {
+        if (this.f47741e == 0) {
             if (!o()) {
                 return -1;
             }
-            this.f47677e = this.f47674b;
+            this.f47741e = this.f47738b;
         }
-        int read = this.f47673a.read(bArr, i10, Math.min(this.f47677e, i11));
+        int read = this.f47737a.read(bArr, i10, Math.min(this.f47741e, i11));
         if (read != -1) {
-            this.f47677e -= read;
+            this.f47741e -= read;
         }
         return read;
     }

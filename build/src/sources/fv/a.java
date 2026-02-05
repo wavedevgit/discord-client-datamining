@@ -1,110 +1,36 @@
 package fv;
 
-import java.nio.charset.Charset;
-import java.util.Locale;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import android.os.Build;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Proxy;
+import java.util.Collection;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final Pattern f24816a = Pattern.compile("[\\\\&]");
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f24817b = Pattern.compile("\\\\[!\"#$%&'()*+,./:;<=>?@\\[\\\\\\]^_`{|}~-]|&(?:#x[a-f0-9]{1,6}|#[0-9]{1,7}|[a-z][a-z0-9]{1,31});", 2);
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f24818c = Pattern.compile("(%[a-fA-F0-9]{0,2}|[^:/?#@!$&'()*+,;=a-zA-Z0-9\\-._~])");
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final char[] f24819d = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final Pattern f24820e = Pattern.compile("[ \t\r\n]+");
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final c f24821f = new C0329a();
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final c f24822g = new b();
-
-    /* renamed from: fv.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static class C0329a implements c {
-        C0329a() {
+    public static Object a(Class cls, InvocationHandler invocationHandler) {
+        if (invocationHandler == null) {
+            return null;
         }
-
-        @Override // fv.a.c
-        public void a(String str, StringBuilder sb2) {
-            if (str.charAt(0) == '\\') {
-                sb2.append((CharSequence) str, 1, str.length());
-            } else {
-                sb2.append(fv.b.a(str));
-            }
-        }
+        return cls.cast(Proxy.newProxyInstance(a.class.getClassLoader(), new Class[]{cls}, invocationHandler));
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static class b implements c {
-        b() {
-        }
-
-        @Override // fv.a.c
-        public void a(String str, StringBuilder sb2) {
-            byte[] bytes;
-            if (str.startsWith("%")) {
-                if (str.length() == 3) {
-                    sb2.append(str);
-                    return;
+    public static boolean b(Collection collection, String str) {
+        if (!collection.contains(str)) {
+            if (c()) {
+                if (!collection.contains(str + ":dev")) {
+                    return false;
                 }
-                sb2.append("%25");
-                sb2.append((CharSequence) str, 1, str.length());
-                return;
+                return true;
             }
-            for (byte b10 : str.getBytes(Charset.forName("UTF-8"))) {
-                sb2.append('%');
-                sb2.append(a.f24819d[(b10 >> 4) & 15]);
-                sb2.append(a.f24819d[b10 & 15]);
-            }
+            return false;
         }
+        return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public interface c {
-        void a(String str, StringBuilder sb2);
-    }
-
-    public static String b(String str) {
-        return f24820e.matcher(str.trim().toLowerCase(Locale.ROOT)).replaceAll(" ");
-    }
-
-    public static String c(String str) {
-        return b(str.substring(1, str.length() - 1));
-    }
-
-    private static String d(Pattern pattern, String str, c cVar) {
-        Matcher matcher = pattern.matcher(str);
-        if (!matcher.find()) {
-            return str;
+    private static boolean c() {
+        String str = Build.TYPE;
+        if (!"eng".equals(str) && !"userdebug".equals(str)) {
+            return false;
         }
-        StringBuilder sb2 = new StringBuilder(str.length() + 16);
-        int i10 = 0;
-        do {
-            sb2.append((CharSequence) str, i10, matcher.start());
-            cVar.a(matcher.group(), sb2);
-            i10 = matcher.end();
-        } while (matcher.find());
-        if (i10 != str.length()) {
-            sb2.append((CharSequence) str, i10, str.length());
-        }
-        return sb2.toString();
-    }
-
-    public static String e(String str) {
-        if (f24816a.matcher(str).find()) {
-            return d(f24817b, str, f24821f);
-        }
-        return str;
+        return true;
     }
 }

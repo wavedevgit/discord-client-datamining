@@ -7,7 +7,7 @@ import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import sr.a;
+import vr.a;
 @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0006\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0080\b\u0018\u00002\u00020\u0001:\u0001\u001eB/\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u000e\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\t0\b¢\u0006\u0004\b\n\u0010\u000bJ\t\u0010\u0013\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0014\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0015\u001a\u00020\u0005HÆ\u0003J\u0011\u0010\u0016\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\t0\bHÆ\u0003J9\u0010\u0017\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\u0010\b\u0002\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\t0\bHÆ\u0001J\u0013\u0010\u0018\u001a\u00020\u00192\b\u0010\u001a\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001b\u001a\u00020\u0005HÖ\u0001J\t\u0010\u001c\u001a\u00020\u001dHÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000fR\u0019\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\t0\b¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012¨\u0006\u001f"}, d2 = {"Lcom/discord/sticker_picker/StickerPickerRow;", "", "rowContentWidth", "", "rowContentPaddingVertical", "", "itemSize", AlertFragment.ARG_ITEMS, "", "Lcom/discord/sticker_picker/StickerPickerRow$Sticker;", "<init>", "(DIILjava/util/List;)V", "getRowContentWidth", "()D", "getRowContentPaddingVertical", "()I", "getItemSize", "getItems", "()Ljava/util/List;", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "hashCode", "toString", "", "Sticker", "sticker_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class StickerPickerRow {
@@ -25,7 +25,7 @@ public final class StickerPickerRow {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f9423id;
+        private final String f9808id;
         @NotNull
         private final String name;
         private final boolean opaque;
@@ -78,7 +78,7 @@ public final class StickerPickerRow {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(type, "type");
             Intrinsics.checkNotNullParameter(url, "url");
-            this.f9423id = id2;
+            this.f9808id = id2;
             this.name = name;
             this.type = type;
             this.animated = z10;
@@ -89,7 +89,7 @@ public final class StickerPickerRow {
 
         public static /* synthetic */ Sticker copy$default(Sticker sticker, String str, String str2, Type type, boolean z10, String str3, boolean z11, boolean z12, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = sticker.f9423id;
+                str = sticker.f9808id;
             }
             if ((i10 & 2) != 0) {
                 str2 = sticker.name;
@@ -118,7 +118,7 @@ public final class StickerPickerRow {
 
         @NotNull
         public final String component1() {
-            return this.f9423id;
+            return this.f9808id;
         }
 
         @NotNull
@@ -163,7 +163,7 @@ public final class StickerPickerRow {
             }
             if (obj instanceof Sticker) {
                 Sticker sticker = (Sticker) obj;
-                return Intrinsics.areEqual(this.f9423id, sticker.f9423id) && Intrinsics.areEqual(this.name, sticker.name) && this.type == sticker.type && this.animated == sticker.animated && Intrinsics.areEqual(this.url, sticker.url) && this.disabled == sticker.disabled && this.opaque == sticker.opaque;
+                return Intrinsics.areEqual(this.f9808id, sticker.f9808id) && Intrinsics.areEqual(this.name, sticker.name) && this.type == sticker.type && this.animated == sticker.animated && Intrinsics.areEqual(this.url, sticker.url) && this.disabled == sticker.disabled && this.opaque == sticker.opaque;
             }
             return false;
         }
@@ -178,7 +178,7 @@ public final class StickerPickerRow {
 
         @NotNull
         public final String getId() {
-            return this.f9423id;
+            return this.f9808id;
         }
 
         @NotNull
@@ -201,12 +201,12 @@ public final class StickerPickerRow {
         }
 
         public int hashCode() {
-            return (((((((((((this.f9423id.hashCode() * 31) + this.name.hashCode()) * 31) + this.type.hashCode()) * 31) + Boolean.hashCode(this.animated)) * 31) + this.url.hashCode()) * 31) + Boolean.hashCode(this.disabled)) * 31) + Boolean.hashCode(this.opaque);
+            return (((((((((((this.f9808id.hashCode() * 31) + this.name.hashCode()) * 31) + this.type.hashCode()) * 31) + Boolean.hashCode(this.animated)) * 31) + this.url.hashCode()) * 31) + Boolean.hashCode(this.disabled)) * 31) + Boolean.hashCode(this.opaque);
         }
 
         @NotNull
         public String toString() {
-            String str = this.f9423id;
+            String str = this.f9808id;
             String str2 = this.name;
             Type type = this.type;
             boolean z10 = this.animated;

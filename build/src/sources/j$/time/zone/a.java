@@ -8,33 +8,33 @@ import java.io.Serializable;
 public final class a implements Comparable, Serializable {
 
     /* renamed from: a  reason: collision with root package name */
-    public final LocalDateTime f31206a;
+    public final LocalDateTime f30555a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ZoneOffset f31207b;
+    public final ZoneOffset f30556b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final ZoneOffset f31208c;
+    public final ZoneOffset f30557c;
 
     @Override // java.lang.Comparable
     public final int compareTo(Object obj) {
         a aVar = (a) obj;
-        LocalDateTime localDateTime = this.f31206a;
-        Instant ofEpochSecond = Instant.ofEpochSecond(localDateTime.q(this.f31207b), localDateTime.e().f31067d);
-        LocalDateTime localDateTime2 = aVar.f31206a;
-        return ofEpochSecond.compareTo(Instant.ofEpochSecond(localDateTime2.q(aVar.f31207b), localDateTime2.e().f31067d));
+        LocalDateTime localDateTime = this.f30555a;
+        Instant ofEpochSecond = Instant.ofEpochSecond(localDateTime.q(this.f30556b), localDateTime.e().f30416d);
+        LocalDateTime localDateTime2 = aVar.f30555a;
+        return ofEpochSecond.compareTo(Instant.ofEpochSecond(localDateTime2.q(aVar.f30556b), localDateTime2.e().f30416d));
     }
 
     public a(LocalDateTime localDateTime, ZoneOffset zoneOffset, ZoneOffset zoneOffset2) {
-        this.f31206a = localDateTime;
-        this.f31207b = zoneOffset;
-        this.f31208c = zoneOffset2;
+        this.f30555a = localDateTime;
+        this.f30556b = zoneOffset;
+        this.f30557c = zoneOffset2;
     }
 
     public a(long j10, ZoneOffset zoneOffset, ZoneOffset zoneOffset2) {
-        this.f31206a = LocalDateTime.B(j10, 0, zoneOffset);
-        this.f31207b = zoneOffset;
-        this.f31208c = zoneOffset2;
+        this.f30555a = LocalDateTime.B(j10, 0, zoneOffset);
+        this.f30556b = zoneOffset;
+        this.f30557c = zoneOffset2;
     }
 
     public final boolean equals(Object obj) {
@@ -43,7 +43,7 @@ public final class a implements Comparable, Serializable {
         }
         if (obj instanceof a) {
             a aVar = (a) obj;
-            if (this.f31206a.equals(aVar.f31206a) && this.f31207b.equals(aVar.f31207b) && this.f31208c.equals(aVar.f31208c)) {
+            if (this.f30555a.equals(aVar.f30555a) && this.f30556b.equals(aVar.f30556b) && this.f30557c.equals(aVar.f30557c)) {
                 return true;
             }
         }
@@ -51,17 +51,17 @@ public final class a implements Comparable, Serializable {
     }
 
     public final int hashCode() {
-        return (this.f31206a.hashCode() ^ this.f31207b.hashCode()) ^ Integer.rotateLeft(this.f31208c.hashCode(), 16);
+        return (this.f30555a.hashCode() ^ this.f30556b.hashCode()) ^ Integer.rotateLeft(this.f30557c.hashCode(), 16);
     }
 
     public final String toString() {
         StringBuilder sb2 = new StringBuilder("Transition[");
-        sb2.append(this.f31208c.getTotalSeconds() > this.f31207b.getTotalSeconds() ? "Gap" : "Overlap");
+        sb2.append(this.f30557c.getTotalSeconds() > this.f30556b.getTotalSeconds() ? "Gap" : "Overlap");
         sb2.append(" at ");
-        sb2.append(this.f31206a);
-        sb2.append(this.f31207b);
+        sb2.append(this.f30555a);
+        sb2.append(this.f30556b);
         sb2.append(" to ");
-        sb2.append(this.f31208c);
+        sb2.append(this.f30557c);
         sb2.append(']');
         return sb2.toString();
     }

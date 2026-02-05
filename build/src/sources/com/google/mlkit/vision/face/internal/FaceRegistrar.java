@@ -1,27 +1,27 @@
 package com.google.mlkit.vision.face.internal;
 
+import bk.d;
+import bk.f;
 import com.google.firebase.components.ComponentRegistrar;
 import java.util.List;
 import og.p0;
-import pj.i;
-import qi.c;
-import qi.g;
-import qi.q;
-import yj.d;
-import yj.f;
+import sj.i;
+import ti.c;
+import ti.g;
+import ti.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class FaceRegistrar implements ComponentRegistrar {
     @Override // com.google.firebase.components.ComponentRegistrar
     public final List getComponents() {
-        return p0.i(c.c(f.class).b(q.j(i.class)).e(new g() { // from class: yj.l
-            @Override // qi.g
-            public final Object a(qi.d dVar) {
-                return new f((pj.i) dVar.a(pj.i.class));
+        return p0.i(c.c(f.class).b(q.j(i.class)).e(new g() { // from class: bk.l
+            @Override // ti.g
+            public final Object a(ti.d dVar) {
+                return new f((sj.i) dVar.a(sj.i.class));
             }
-        }).d(), c.c(d.class).b(q.j(f.class)).b(q.j(pj.d.class)).e(new g() { // from class: yj.m
-            @Override // qi.g
-            public final Object a(qi.d dVar) {
-                return new d((f) dVar.a(f.class), (pj.d) dVar.a(pj.d.class));
+        }).d(), c.c(d.class).b(q.j(f.class)).b(q.j(sj.d.class)).e(new g() { // from class: bk.m
+            @Override // ti.g
+            public final Object a(ti.d dVar) {
+                return new d((f) dVar.a(f.class), (sj.d) dVar.a(sj.d.class));
             }
         }).d());
     }

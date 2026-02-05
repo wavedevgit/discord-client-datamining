@@ -17,19 +17,19 @@ import java.util.concurrent.Future;
 public class e0 implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final URL f16074d;
+    private final URL f16468d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile Future f16075e;
+    private volatile Future f16469e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Task f16076i;
+    private Task f16470i;
 
     private e0(URL url) {
-        this.f16074d = url;
+        this.f16468d = url;
     }
 
-    public static /* synthetic */ void a(e0 e0Var, wg.k kVar) {
+    public static /* synthetic */ void a(e0 e0Var, xg.k kVar) {
         e0Var.getClass();
         try {
             kVar.c(e0Var.h());
@@ -38,8 +38,8 @@ public class e0 implements Closeable {
         }
     }
 
-    private byte[] l() {
-        URLConnection openConnection = this.f16074d.openConnection();
+    private byte[] k() {
+        URLConnection openConnection = this.f16468d.openConnection();
         if (openConnection.getContentLength() <= 1048576) {
             InputStream inputStream = openConnection.getInputStream();
             try {
@@ -48,7 +48,7 @@ public class e0 implements Closeable {
                     inputStream.close();
                 }
                 if (Log.isLoggable("FirebaseMessaging", 2)) {
-                    Log.v("FirebaseMessaging", "Downloaded " + d10.length + " bytes from " + this.f16074d);
+                    Log.v("FirebaseMessaging", "Downloaded " + d10.length + " bytes from " + this.f16468d);
                 }
                 if (d10.length <= 1048576) {
                     return d10;
@@ -68,7 +68,7 @@ public class e0 implements Closeable {
         throw new IOException("Content-Length exceeds max size of 1048576");
     }
 
-    public static e0 n(String str) {
+    public static e0 m(String str) {
         if (TextUtils.isEmpty(str)) {
             return null;
         }
@@ -80,38 +80,38 @@ public class e0 implements Closeable {
         }
     }
 
-    public void B(ExecutorService executorService) {
-        final wg.k kVar = new wg.k();
-        this.f16075e = executorService.submit(new Runnable() { // from class: com.google.firebase.messaging.d0
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        this.f16469e.cancel(true);
+    }
+
+    public Bitmap h() {
+        if (Log.isLoggable("FirebaseMessaging", 4)) {
+            Log.i("FirebaseMessaging", "Starting download of: " + this.f16468d);
+        }
+        byte[] k10 = k();
+        Bitmap decodeByteArray = BitmapFactory.decodeByteArray(k10, 0, k10.length);
+        if (decodeByteArray != null) {
+            if (Log.isLoggable("FirebaseMessaging", 3)) {
+                Log.d("FirebaseMessaging", "Successfully downloaded image: " + this.f16468d);
+            }
+            return decodeByteArray;
+        }
+        throw new IOException("Failed to decode image: " + this.f16468d);
+    }
+
+    public Task o() {
+        return (Task) gf.q.l(this.f16470i);
+    }
+
+    public void y(ExecutorService executorService) {
+        final xg.k kVar = new xg.k();
+        this.f16469e = executorService.submit(new Runnable() { // from class: com.google.firebase.messaging.d0
             @Override // java.lang.Runnable
             public final void run() {
                 e0.a(e0.this, kVar);
             }
         });
-        this.f16076i = kVar.a();
-    }
-
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        this.f16075e.cancel(true);
-    }
-
-    public Bitmap h() {
-        if (Log.isLoggable("FirebaseMessaging", 4)) {
-            Log.i("FirebaseMessaging", "Starting download of: " + this.f16074d);
-        }
-        byte[] l10 = l();
-        Bitmap decodeByteArray = BitmapFactory.decodeByteArray(l10, 0, l10.length);
-        if (decodeByteArray != null) {
-            if (Log.isLoggable("FirebaseMessaging", 3)) {
-                Log.d("FirebaseMessaging", "Successfully downloaded image: " + this.f16074d);
-            }
-            return decodeByteArray;
-        }
-        throw new IOException("Failed to decode image: " + this.f16074d);
-    }
-
-    public Task x() {
-        return (Task) gf.q.l(this.f16076i);
+        this.f16470i = kVar.a();
     }
 }

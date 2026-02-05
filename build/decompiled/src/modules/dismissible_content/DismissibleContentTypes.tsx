@@ -297,7 +297,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var13.GUILD_TAG_AVAILABLE_COACHMARK_V2;
     var14[5] = var13;
     var _closure1_slot4 = var14;
-    var13 = new Array(0);
+    var13 = var21[var1];
+    var13 = var20.bind(var0)(var13);
+    var13 = var13.DismissibleContent;
+    var19 = var13.BOOST_TO_UNLOCK_COACHMARK;
+    var13 = new Array(1);
+    var13[0] = var19;
     var _closure1_slot5 = var13;
     var19 = var3.Object;
     var3 = var19.keys;

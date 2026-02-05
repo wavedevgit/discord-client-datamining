@@ -6,11 +6,11 @@ abstract class z {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static o5.i a(w5.c cVar, l5.i iVar) {
         boolean z10;
-        if (cVar.n() == c.b.BEGIN_OBJECT) {
+        if (cVar.m() == c.b.BEGIN_OBJECT) {
             z10 = true;
         } else {
             z10 = false;
         }
-        return new o5.i(iVar, t.c(cVar, iVar, x5.j.e(), a0.f51123a, z10, false));
+        return new o5.i(iVar, t.c(cVar, iVar, x5.j.e(), a0.f51812a, z10, false));
     }
 }

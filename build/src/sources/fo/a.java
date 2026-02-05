@@ -1,118 +1,150 @@
 package fo;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import eo.c4;
-import eo.f5;
+import android.content.Context;
+import com.withpersona.sdk2.inquiry.BuildConfig;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.nio.charset.Charset;
+import kotlin.Unit;
+import kotlin.collections.i;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import kotlin.text.StringsKt;
+import zr.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements Parcelable {
+public final class a {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final boolean f24260d;
+    /* renamed from: b  reason: collision with root package name */
+    public static final C0318a f23197b = new C0318a(null);
 
-    /* renamed from: e  reason: collision with root package name */
-    private final boolean f24261e;
+    /* renamed from: c  reason: collision with root package name */
+    private static final Charset f23198c = Charset.forName("UTF-8");
 
-    /* renamed from: i  reason: collision with root package name */
-    private final c4.c f24262i;
-
-    /* renamed from: o  reason: collision with root package name */
-    public static final C0320a f24259o = new C0320a(null);
-    @NotNull
-    public static final Parcelable.Creator<a> CREATOR = new b();
+    /* renamed from: a  reason: collision with root package name */
+    private final File f23199a;
 
     /* renamed from: fo.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0320a {
-        public /* synthetic */ C0320a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0318a {
+        public /* synthetic */ C0318a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private final c4.c a() {
-            return new c4.c("unknown", c4.e.f21714o, f5.d.b.f21863d, new c4.a(null, 1, null), new c4.d(true, 0L));
-        }
-
-        public final a b(Boolean bool, Boolean bool2, c4.c cVar) {
-            boolean z10;
-            boolean z11;
-            if (bool != null) {
-                z10 = bool.booleanValue();
-            } else {
-                z10 = false;
-            }
-            if (bool2 != null) {
-                z11 = bool2.booleanValue();
-            } else {
-                z11 = true;
-            }
-            if (cVar == null) {
-                cVar = a();
-            }
-            return new a(z10, z11, cVar);
-        }
-
-        private C0320a() {
+        private C0318a() {
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class b implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final a createFromParcel(Parcel parcel) {
-            boolean z10;
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            boolean z11 = false;
-            if (parcel.readInt() != 0) {
-                z10 = true;
-            } else {
-                z10 = false;
+    public a(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        this.f23199a = new File(new File(context.getFilesDir(), ".com.withpersona.sdk2.inquiry"), "errors");
+    }
+
+    private final String b(Throwable th2) {
+        while (th2 != null) {
+            StackTraceElement[] stackTrace = th2.getStackTrace();
+            Intrinsics.checkNotNullExpressionValue(stackTrace, "getStackTrace(...)");
+            for (StackTraceElement stackTraceElement : stackTrace) {
+                String className = stackTraceElement.getClassName();
+                Intrinsics.checkNotNullExpressionValue(className, "getClassName(...)");
+                if (StringsKt.P(className, BuildConfig.LIBRARY_PACKAGE_NAME, false, 2, null)) {
+                    return stackTraceElement.getClassName() + " in " + stackTraceElement.getMethodName() + " at line " + stackTraceElement.getLineNumber();
+                }
             }
-            if (parcel.readInt() != 0) {
-                z11 = true;
+            th2 = th2.getCause();
+        }
+        return null;
+    }
+
+    private final String c(Throwable th2) {
+        StackTraceElement[] stackTrace = th2.getStackTrace();
+        Intrinsics.checkNotNullExpressionValue(stackTrace, "getStackTrace(...)");
+        StackTraceElement stackTraceElement = (StackTraceElement) i.V(stackTrace);
+        if (stackTraceElement != null) {
+            String className = stackTraceElement.getClassName();
+            String methodName = stackTraceElement.getMethodName();
+            int lineNumber = stackTraceElement.getLineNumber();
+            return className + " in " + methodName + " at line " + lineNumber;
+        }
+        return null;
+    }
+
+    private final File d() {
+        return new File(this.f23199a, "last_error.txt");
+    }
+
+    private final void h(File file) {
+        if (file.exists()) {
+            if (file.isDirectory()) {
+                return;
             }
-            return new a(z10, z11, c4.c.CREATOR.createFromParcel(parcel));
+            file.delete();
         }
+        file.mkdirs();
+    }
 
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final a[] newArray(int i10) {
-            return new a[i10];
+    private final String i(File file) {
+        if (!file.exists() || !file.isFile()) {
+            return null;
+        }
+        byte[] bArr = new byte[8192];
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        FileInputStream fileInputStream = new FileInputStream(file);
+        while (true) {
+            try {
+                int read = fileInputStream.read(bArr);
+                if (read > 0) {
+                    byteArrayOutputStream.write(bArr, 0, read);
+                } else {
+                    byte[] byteArray = byteArrayOutputStream.toByteArray();
+                    Intrinsics.checkNotNullExpressionValue(byteArray, "toByteArray(...)");
+                    Charset UTF_8 = f23198c;
+                    Intrinsics.checkNotNullExpressionValue(UTF_8, "UTF_8");
+                    String str = new String(byteArray, UTF_8);
+                    c.a(fileInputStream, null);
+                    return str;
+                }
+            } finally {
+            }
         }
     }
 
-    public a(boolean z10, boolean z11, c4.c idSideConfig) {
-        Intrinsics.checkNotNullParameter(idSideConfig, "idSideConfig");
-        this.f24260d = z10;
-        this.f24261e = z11;
-        this.f24262i = idSideConfig;
+    private final void j(File file, String str) {
+        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(new FileOutputStream(file), f23198c);
+        try {
+            outputStreamWriter.write(str);
+            Unit unit = Unit.f31988a;
+            c.a(outputStreamWriter, null);
+        } finally {
+        }
     }
 
-    public final boolean a() {
-        return this.f24261e;
+    public final void a() {
+        d().delete();
     }
 
-    public final c4.c b() {
-        return this.f24262i;
+    public final String e() {
+        return i(d());
     }
 
-    public final boolean c() {
-        return this.f24260d;
+    public final boolean f() {
+        return d().exists();
     }
 
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeInt(this.f24260d ? 1 : 0);
-        dest.writeInt(this.f24261e ? 1 : 0);
-        this.f24262i.writeToParcel(dest, i10);
+    public final void g(Throwable error) {
+        Intrinsics.checkNotNullParameter(error, "error");
+        h(this.f23199a);
+        File d10 = d();
+        if (d10.isDirectory()) {
+            d10.delete();
+        }
+        String canonicalName = error.getClass().getCanonicalName();
+        String b10 = b(error);
+        if (b10 == null) {
+            b10 = c(error);
+        }
+        j(d10, canonicalName + " in " + b10);
     }
 }

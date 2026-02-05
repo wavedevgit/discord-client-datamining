@@ -1,18 +1,18 @@
 package mg;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class ub implements ui.d {
+final class ub implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ub f38494a = new ub();
+    static final ub f38156a = new ub();
 
     static {
-        c.b a10 = ui.c.a("stageId");
+        c.b a10 = xi.c.a("stageId");
         l2 l2Var = new l2();
         l2Var.a(1);
         a10.b(l2Var.b()).a();
-        c.b a11 = ui.c.a("device");
+        c.b a11 = xi.c.a("device");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
         a11.b(l2Var2.b()).a();
@@ -21,10 +21,10 @@ final class ub implements ui.d {
     private ub() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

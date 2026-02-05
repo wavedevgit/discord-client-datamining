@@ -37,7 +37,7 @@ public final class b extends g {
     @Override // gf.c, ef.a.f
     public final boolean g() {
         gf.d h02 = h0();
-        if (!TextUtils.isEmpty(h02.b()) && !h02.e(ue.b.f50606a).isEmpty()) {
+        if (!TextUtils.isEmpty(h02.b()) && !h02.e(ue.b.f51378a).isEmpty()) {
             return true;
         }
         return false;
@@ -45,7 +45,7 @@ public final class b extends g {
 
     @Override // gf.c, ef.a.f
     public final int n() {
-        return j.f13418a;
+        return j.f13813a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

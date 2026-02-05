@@ -3,24 +3,24 @@ package ne;
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f40110a;
+    private final e f39570a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f40111b;
+    private boolean f39571b;
 
     public h() {
-        this(e.f40090a);
+        this(e.f39550a);
     }
 
     public synchronized void a() {
-        while (!this.f40111b) {
+        while (!this.f39571b) {
             wait();
         }
     }
 
     public synchronized void b() {
         boolean z10 = false;
-        while (!this.f40111b) {
+        while (!this.f39571b) {
             try {
                 wait();
             } catch (InterruptedException unused) {
@@ -34,25 +34,25 @@ public class h {
 
     public synchronized boolean c() {
         boolean z10;
-        z10 = this.f40111b;
-        this.f40111b = false;
+        z10 = this.f39571b;
+        this.f39571b = false;
         return z10;
     }
 
     public synchronized boolean d() {
-        return this.f40111b;
+        return this.f39571b;
     }
 
     public synchronized boolean e() {
-        if (this.f40111b) {
+        if (this.f39571b) {
             return false;
         }
-        this.f40111b = true;
+        this.f39571b = true;
         notifyAll();
         return true;
     }
 
     public h(e eVar) {
-        this.f40110a = eVar;
+        this.f39570a = eVar;
     }
 }

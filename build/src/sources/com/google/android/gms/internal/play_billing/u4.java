@@ -17,15 +17,15 @@ public final class u4 extends o1 implements w2 {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.internal.play_billing.u4.<init>(com.google.android.gms.internal.play_billing.t4):void");
     }
 
-    public final u4 m(s5 s5Var) {
+    public final u4 l(s5 s5Var) {
         i();
-        v4.B((v4) this.f13949e, s5Var);
+        v4.B((v4) this.f14343e, s5Var);
         return this;
     }
 
-    public final u4 o(int i10) {
+    public final u4 n(int i10) {
         i();
-        v4.C((v4) this.f13949e, i10);
+        v4.C((v4) this.f14343e, i10);
         return this;
     }
 }

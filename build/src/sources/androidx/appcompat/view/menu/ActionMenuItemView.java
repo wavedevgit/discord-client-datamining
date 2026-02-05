@@ -21,37 +21,37 @@ import androidx.appcompat.widget.h0;
 public class ActionMenuItemView extends AppCompatTextView implements k.a, View.OnClickListener, ActionMenuView.a {
 
     /* renamed from: d  reason: collision with root package name */
-    g f1221d;
+    g f1333d;
 
     /* renamed from: e  reason: collision with root package name */
-    private CharSequence f1222e;
+    private CharSequence f1334e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Drawable f1223i;
+    private Drawable f1335i;
 
     /* renamed from: o  reason: collision with root package name */
-    e.b f1224o;
+    e.b f1336o;
 
     /* renamed from: p  reason: collision with root package name */
-    private h0 f1225p;
+    private h0 f1337p;
 
     /* renamed from: q  reason: collision with root package name */
-    b f1226q;
+    b f1338q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f1227r;
+    private boolean f1339r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f1228s;
+    private boolean f1340s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f1229t;
+    private int f1341t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f1230u;
+    private int f1342u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f1231v;
+    private int f1343v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private class a extends h0 {
@@ -61,7 +61,7 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
 
         @Override // androidx.appcompat.widget.h0
         public k.e b() {
-            b bVar = ActionMenuItemView.this.f1226q;
+            b bVar = ActionMenuItemView.this.f1338q;
             if (bVar != null) {
                 return bVar.a();
             }
@@ -72,8 +72,8 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
         protected boolean c() {
             k.e b10;
             ActionMenuItemView actionMenuItemView = ActionMenuItemView.this;
-            e.b bVar = actionMenuItemView.f1224o;
-            if (bVar == null || !bVar.b(actionMenuItemView.f1221d) || (b10 = b()) == null || !b10.isShowing()) {
+            e.b bVar = actionMenuItemView.f1336o;
+            if (bVar == null || !bVar.b(actionMenuItemView.f1333d) || (b10 = b()) == null || !b10.isShowing()) {
                 return false;
             }
             return true;
@@ -106,33 +106,33 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
         CharSequence charSequence;
         CharSequence title;
         boolean z10 = true;
-        boolean z11 = !TextUtils.isEmpty(this.f1222e);
-        if (this.f1223i != null && (!this.f1221d.B() || (!this.f1227r && !this.f1228s))) {
+        boolean z11 = !TextUtils.isEmpty(this.f1334e);
+        if (this.f1335i != null && (!this.f1333d.B() || (!this.f1339r && !this.f1340s))) {
             z10 = false;
         }
         boolean z12 = z11 & z10;
         CharSequence charSequence2 = null;
         if (z12) {
-            charSequence = this.f1222e;
+            charSequence = this.f1334e;
         } else {
             charSequence = null;
         }
         setText(charSequence);
-        CharSequence contentDescription = this.f1221d.getContentDescription();
+        CharSequence contentDescription = this.f1333d.getContentDescription();
         if (TextUtils.isEmpty(contentDescription)) {
             if (z12) {
                 title = null;
             } else {
-                title = this.f1221d.getTitle();
+                title = this.f1333d.getTitle();
             }
             setContentDescription(title);
         } else {
             setContentDescription(contentDescription);
         }
-        CharSequence tooltipText = this.f1221d.getTooltipText();
+        CharSequence tooltipText = this.f1333d.getTooltipText();
         if (TextUtils.isEmpty(tooltipText)) {
             if (!z12) {
-                charSequence2 = this.f1221d.getTitle();
+                charSequence2 = this.f1333d.getTitle();
             }
             a1.a(this, charSequence2);
             return;
@@ -147,7 +147,7 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
 
     @Override // androidx.appcompat.widget.ActionMenuView.a
     public boolean b() {
-        if (f() && this.f1221d.getIcon() == null) {
+        if (f() && this.f1333d.getIcon() == null) {
             return true;
         }
         return false;
@@ -156,7 +156,7 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
     @Override // androidx.appcompat.view.menu.k.a
     public void c(g gVar, int i10) {
         int i11;
-        this.f1221d = gVar;
+        this.f1333d = gVar;
         setIcon(gVar.getIcon());
         setTitle(gVar.i(this));
         setId(gVar.getItemId());
@@ -167,8 +167,8 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
         }
         setVisibility(i11);
         setEnabled(gVar.isEnabled());
-        if (gVar.hasSubMenu() && this.f1225p == null) {
-            this.f1225p = new a();
+        if (gVar.hasSubMenu() && this.f1337p == null) {
+            this.f1337p = new a();
         }
     }
 
@@ -188,21 +188,21 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
 
     @Override // androidx.appcompat.view.menu.k.a
     public g getItemData() {
-        return this.f1221d;
+        return this.f1333d;
     }
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        e.b bVar = this.f1224o;
+        e.b bVar = this.f1336o;
         if (bVar != null) {
-            bVar.b(this.f1221d);
+            bVar.b(this.f1333d);
         }
     }
 
     @Override // android.widget.TextView, android.view.View
     public void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
-        this.f1227r = g();
+        this.f1339r = g();
         h();
     }
 
@@ -212,7 +212,7 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
         int i12;
         int i13;
         boolean f10 = f();
-        if (f10 && (i13 = this.f1230u) >= 0) {
+        if (f10 && (i13 = this.f1342u) >= 0) {
             super.setPadding(i13, getPaddingTop(), getPaddingRight(), getPaddingBottom());
         }
         super.onMeasure(i10, i11);
@@ -220,15 +220,15 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
         int size = View.MeasureSpec.getSize(i10);
         int measuredWidth = getMeasuredWidth();
         if (mode == Integer.MIN_VALUE) {
-            i12 = Math.min(size, this.f1229t);
+            i12 = Math.min(size, this.f1341t);
         } else {
-            i12 = this.f1229t;
+            i12 = this.f1341t;
         }
-        if (mode != 1073741824 && this.f1229t > 0 && measuredWidth < i12) {
+        if (mode != 1073741824 && this.f1341t > 0 && measuredWidth < i12) {
             super.onMeasure(View.MeasureSpec.makeMeasureSpec(i12, 1073741824), i11);
         }
-        if (!f10 && this.f1223i != null) {
-            super.setPadding((getMeasuredWidth() - this.f1223i.getBounds().width()) / 2, getPaddingTop(), getPaddingRight(), getPaddingBottom());
+        if (!f10 && this.f1335i != null) {
+            super.setPadding((getMeasuredWidth() - this.f1335i.getBounds().width()) / 2, getPaddingTop(), getPaddingRight(), getPaddingBottom());
         }
     }
 
@@ -240,7 +240,7 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
     @Override // android.widget.TextView, android.view.View
     public boolean onTouchEvent(MotionEvent motionEvent) {
         h0 h0Var;
-        if (this.f1221d.hasSubMenu() && (h0Var = this.f1225p) != null && h0Var.onTouch(this, motionEvent)) {
+        if (this.f1333d.hasSubMenu() && (h0Var = this.f1337p) != null && h0Var.onTouch(this, motionEvent)) {
             return true;
         }
         return super.onTouchEvent(motionEvent);
@@ -253,9 +253,9 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
     }
 
     public void setExpandedFormat(boolean z10) {
-        if (this.f1228s != z10) {
-            this.f1228s = z10;
-            g gVar = this.f1221d;
+        if (this.f1340s != z10) {
+            this.f1340s = z10;
+            g gVar = this.f1333d;
             if (gVar != null) {
                 gVar.c();
             }
@@ -263,11 +263,11 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
     }
 
     public void setIcon(Drawable drawable) {
-        this.f1223i = drawable;
+        this.f1335i = drawable;
         if (drawable != null) {
             int intrinsicWidth = drawable.getIntrinsicWidth();
             int intrinsicHeight = drawable.getIntrinsicHeight();
-            int i10 = this.f1231v;
+            int i10 = this.f1343v;
             if (intrinsicWidth > i10) {
                 intrinsicHeight = (int) (intrinsicHeight * (i10 / intrinsicWidth));
                 intrinsicWidth = i10;
@@ -284,34 +284,34 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
     }
 
     public void setItemInvoker(e.b bVar) {
-        this.f1224o = bVar;
+        this.f1336o = bVar;
     }
 
     @Override // android.widget.TextView, android.view.View
     public void setPadding(int i10, int i11, int i12, int i13) {
-        this.f1230u = i10;
+        this.f1342u = i10;
         super.setPadding(i10, i11, i12, i13);
     }
 
     public void setPopupCallback(b bVar) {
-        this.f1226q = bVar;
+        this.f1338q = bVar;
     }
 
     public void setTitle(CharSequence charSequence) {
-        this.f1222e = charSequence;
+        this.f1334e = charSequence;
         h();
     }
 
     public ActionMenuItemView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         Resources resources = context.getResources();
-        this.f1227r = g();
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23115v, i10, 0);
-        this.f1229t = obtainStyledAttributes.getDimensionPixelSize(f.j.f23120w, 0);
+        this.f1339r = g();
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f22140v, i10, 0);
+        this.f1341t = obtainStyledAttributes.getDimensionPixelSize(f.j.f22145w, 0);
         obtainStyledAttributes.recycle();
-        this.f1231v = (int) ((resources.getDisplayMetrics().density * 32.0f) + 0.5f);
+        this.f1343v = (int) ((resources.getDisplayMetrics().density * 32.0f) + 0.5f);
         setOnClickListener(this);
-        this.f1230u = -1;
+        this.f1342u = -1;
         setSaveEnabled(false);
     }
 }

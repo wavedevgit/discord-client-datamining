@@ -3,10 +3,10 @@ package com.google.android.gms.internal.play_billing;
 abstract class h1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final f1 f13850a = new g1();
+    private static final f1 f14244a = new g1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final f1 f13851b;
+    private static final f1 f14245b;
 
     static {
         f1 f1Var = null;
@@ -14,12 +14,12 @@ abstract class h1 {
             f1Var = (f1) Class.forName("com.google.protobuf.ExtensionSchemaFull").getDeclaredConstructor(null).newInstance(null);
         } catch (Exception unused) {
         }
-        f13851b = f1Var;
+        f14245b = f1Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static f1 a() {
-        f1 f1Var = f13851b;
+        f1 f1Var = f14245b;
         if (f1Var != null) {
             return f1Var;
         }
@@ -28,6 +28,6 @@ abstract class h1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static f1 b() {
-        return f13850a;
+        return f14244a;
     }
 }

@@ -41,18 +41,18 @@ public final class AttributeStyles_DateSelectStrokeColorStyleJsonAdapter extends
     @NotNull
     public AttributeStyles.DateSelectStrokeColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.SimpleElementColor simpleElementColor = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.DateSelectStrokeColorStyle(simpleElementColor);
     }
 
@@ -60,8 +60,8 @@ public final class AttributeStyles_DateSelectStrokeColorStyleJsonAdapter extends
     public void toJson(@NotNull t writer, AttributeStyles.DateSelectStrokeColorStyle dateSelectStrokeColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (dateSelectStrokeColorStyle != null) {
-            writer.l();
-            writer.A0("chevron");
+            writer.k();
+            writer.W("chevron");
             this.nullableSimpleElementColorAdapter.toJson(writer, dateSelectStrokeColorStyle.getChevron());
             writer.E();
             return;

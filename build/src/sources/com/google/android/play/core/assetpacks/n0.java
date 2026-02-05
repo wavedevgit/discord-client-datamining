@@ -17,30 +17,30 @@ import java.util.concurrent.TimeUnit;
 public final class n0 {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final th.k0 f15524c = new th.k0("AssetPackStorage");
+    private static final wh.k0 f15918c = new wh.k0("AssetPackStorage");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final long f15525d;
+    private static final long f15919d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final long f15526e;
+    private static final long f15920e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f15527a;
+    private final Context f15921a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final q3 f15528b;
+    private final q3 f15922b;
 
     static {
         TimeUnit timeUnit = TimeUnit.DAYS;
-        f15525d = timeUnit.toMillis(14L);
-        f15526e = timeUnit.toMillis(28L);
+        f15919d = timeUnit.toMillis(14L);
+        f15920e = timeUnit.toMillis(28L);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n0(Context context, q3 q3Var) {
-        this.f15527a = context;
-        this.f15528b = q3Var;
+        this.f15921a = context;
+        this.f15922b = q3Var;
     }
 
     private static long g(File file, boolean z10) {
@@ -48,7 +48,7 @@ public final class n0 {
         if (file.exists()) {
             ArrayList arrayList = new ArrayList();
             if (z10 && file.listFiles().length > 1) {
-                f15524c.e("Multiple pack versions found, using highest version code.", new Object[0]);
+                f15918c.e("Multiple pack versions found, using highest version code.", new Object[0]);
             }
             try {
                 for (File file2 : file.listFiles()) {
@@ -57,7 +57,7 @@ public final class n0 {
                     }
                 }
             } catch (NumberFormatException e10) {
-                f15524c.c(e10, "Corrupt asset pack directories.", new Object[0]);
+                f15918c.c(e10, "Corrupt asset pack directories.", new Object[0]);
             }
             if (!arrayList.isEmpty()) {
                 Collections.sort(arrayList);
@@ -81,7 +81,7 @@ public final class n0 {
     }
 
     private final File k() {
-        return new File(this.f15527a.getFilesDir(), "assetpacks");
+        return new File(this.f15921a.getFilesDir(), "assetpacks");
     }
 
     private final File l() {
@@ -101,7 +101,7 @@ public final class n0 {
             }
             return arrayList;
         } catch (IOException e10) {
-            f15524c.b("Could not process directory while scanning installed packs. %s", e10);
+            f15918c.b("Could not process directory while scanning installed packs. %s", e10);
             return arrayList;
         }
     }
@@ -156,23 +156,23 @@ public final class n0 {
         int length;
         File file = new File(k(), str);
         if (!file.exists()) {
-            f15524c.a("Pack not found with pack name: %s", str);
+            f15918c.a("Pack not found with pack name: %s", str);
             return null;
         }
-        File file2 = new File(file, String.valueOf(this.f15528b.a()));
+        File file2 = new File(file, String.valueOf(this.f15922b.a()));
         if (!file2.exists()) {
-            f15524c.a("Pack not found with pack name: %s app version: %s", str, Integer.valueOf(this.f15528b.a()));
+            f15918c.a("Pack not found with pack name: %s app version: %s", str, Integer.valueOf(this.f15922b.a()));
             return null;
         }
         File[] listFiles = file2.listFiles();
         if (listFiles != null && (length = listFiles.length) != 0) {
             if (length > 1) {
-                f15524c.b("Multiple pack versions found for pack name: %s app version: %s", str, Integer.valueOf(this.f15528b.a()));
+                f15918c.b("Multiple pack versions found for pack name: %s app version: %s", str, Integer.valueOf(this.f15922b.a()));
                 return null;
             }
             return listFiles[0].getCanonicalPath();
         }
-        f15524c.a("No pack version found for pack name: %s app version: %s", str, Integer.valueOf(this.f15528b.a()));
+        f15918c.a("No pack version found for pack name: %s app version: %s", str, Integer.valueOf(this.f15922b.a()));
         return null;
     }
 
@@ -210,7 +210,7 @@ public final class n0 {
             }
             return hashMap;
         } catch (IOException e10) {
-            f15524c.b("Could not process directory while scanning installed packs: %s", e10);
+            f15918c.b("Could not process directory while scanning installed packs: %s", e10);
             return hashMap;
         }
     }
@@ -221,11 +221,11 @@ public final class n0 {
             if (file.listFiles() != null) {
                 n(file);
                 long g10 = g(file, false);
-                if (this.f15528b.a() != g10) {
+                if (this.f15922b.a() != g10) {
                     try {
                         new File(new File(file, String.valueOf(g10)), "stale.tmp").createNewFile();
                     } catch (IOException unused) {
-                        f15524c.b("Could not write staleness marker.", new Object[0]);
+                        f15918c.b("Could not write staleness marker.", new Object[0]);
                     }
                 }
                 for (File file2 : file.listFiles()) {
@@ -240,7 +240,7 @@ public final class n0 {
         File[] listFiles;
         if (l().exists()) {
             for (File file : l().listFiles()) {
-                if (System.currentTimeMillis() - file.lastModified() > f15525d) {
+                if (System.currentTimeMillis() - file.lastModified() > f15919d) {
                     o(file);
                 } else {
                     n(file);
@@ -256,7 +256,7 @@ public final class n0 {
             if (file.listFiles() != null) {
                 for (File file2 : file.listFiles()) {
                     File file3 = new File(file2, "stale.tmp");
-                    if (file3.exists() && System.currentTimeMillis() - file3.lastModified() > f15526e) {
+                    if (file3.exists() && System.currentTimeMillis() - file3.lastModified() > f15920e) {
                         o(file2);
                     }
                 }
@@ -303,7 +303,7 @@ public final class n0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void c(List list) {
-        int a10 = this.f15528b.a();
+        int a10 = this.f15922b.a();
         for (File file : m()) {
             if (!list.contains(file.getName()) && g(file, true) != a10) {
                 o(file);
@@ -382,11 +382,11 @@ public final class n0 {
         }
         File file = new File(E, "assets");
         if (!file.isDirectory()) {
-            f15524c.b("Failed to find assets directory: %s", file);
+            f15918c.b("Failed to find assets directory: %s", file);
             return null;
         }
         String canonicalPath = file.getCanonicalPath();
-        int i10 = b.f15293b;
+        int i10 = b.f15687b;
         return new r0(0, E, canonicalPath);
     }
 

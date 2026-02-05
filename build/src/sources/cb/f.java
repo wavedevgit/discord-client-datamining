@@ -6,27 +6,27 @@ import kotlin.Pair;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ColorSpace f7023a;
+    private final ColorSpace f7441a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Pair f7024b;
+    private final Pair f7442b;
 
     public f(int i10, int i11, ColorSpace colorSpace) {
         Pair pair;
-        this.f7023a = colorSpace;
+        this.f7441a = colorSpace;
         if (i10 != -1 && i11 != -1) {
             pair = new Pair(Integer.valueOf(i10), Integer.valueOf(i11));
         } else {
             pair = null;
         }
-        this.f7024b = pair;
+        this.f7442b = pair;
     }
 
     public final ColorSpace a() {
-        return this.f7023a;
+        return this.f7441a;
     }
 
     public final Pair b() {
-        return this.f7024b;
+        return this.f7442b;
     }
 }

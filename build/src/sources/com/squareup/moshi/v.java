@@ -8,13 +8,13 @@ import java.util.Set;
 final class v extends h {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final h.e f17617c = new a();
+    public static final h.e f18023c = new a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f17618a;
+    private final h f18024a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f17619b;
+    private final h f18025b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements h.e {
@@ -33,45 +33,45 @@ final class v extends h {
     }
 
     v(w wVar, Type type, Type type2) {
-        this.f17618a = wVar.d(type);
-        this.f17619b = wVar.d(type2);
+        this.f18024a = wVar.d(type);
+        this.f18025b = wVar.d(type2);
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public Map fromJson(m mVar) {
         u uVar = new u();
-        mVar.r();
+        mVar.s();
         while (mVar.hasNext()) {
             mVar.L();
-            Object fromJson = this.f17618a.fromJson(mVar);
-            Object fromJson2 = this.f17619b.fromJson(mVar);
+            Object fromJson = this.f18024a.fromJson(mVar);
+            Object fromJson2 = this.f18025b.fromJson(mVar);
             Object put = uVar.put(fromJson, fromJson2);
             if (put != null) {
-                throw new j("Map key '" + fromJson + "' has multiple values at path " + mVar.q() + ": " + put + " and " + fromJson2);
+                throw new j("Map key '" + fromJson + "' has multiple values at path " + mVar.r() + ": " + put + " and " + fromJson2);
             }
         }
-        mVar.y();
+        mVar.z();
         return uVar;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: b */
     public void toJson(t tVar, Map map) {
-        tVar.l();
+        tVar.k();
         for (Map.Entry entry : map.entrySet()) {
             if (entry.getKey() != null) {
                 tVar.F0();
-                this.f17618a.toJson(tVar, entry.getKey());
-                this.f17619b.toJson(tVar, entry.getValue());
+                this.f18024a.toJson(tVar, entry.getKey());
+                this.f18025b.toJson(tVar, entry.getValue());
             } else {
-                throw new j("Map key is null at " + tVar.q());
+                throw new j("Map key is null at " + tVar.r());
             }
         }
         tVar.E();
     }
 
     public String toString() {
-        return "JsonAdapter(" + this.f17618a + "=" + this.f17619b + ")";
+        return "JsonAdapter(" + this.f18024a + "=" + this.f18025b + ")";
     }
 }

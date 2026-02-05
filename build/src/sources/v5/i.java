@@ -7,10 +7,10 @@ import w5.c;
 public class i implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f51141a = new i();
+    public static final i f51830a = new i();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f51142b = c.a.a("t", "f", "s", "j", "tr", "lh", "ls", "fc", "sc", "sw", "of", "ps", "sz");
+    private static final c.a f51831b = c.a.a("t", "f", "s", "j", "tr", "lh", "ls", "fc", "sc", "sw", "of", "ps", "sz");
 
     private i() {
     }
@@ -19,7 +19,7 @@ public class i implements n0 {
     /* renamed from: b */
     public q5.b a(w5.c cVar, float f10) {
         b.a aVar = b.a.CENTER;
-        cVar.r();
+        cVar.s();
         b.a aVar2 = aVar;
         String str = null;
         String str2 = null;
@@ -34,7 +34,7 @@ public class i implements n0 {
         int i12 = 0;
         boolean z10 = true;
         while (cVar.hasNext()) {
-            switch (cVar.B(f51142b)) {
+            switch (cVar.y(f51831b)) {
                 case 0:
                     str = cVar.f1();
                     break;
@@ -74,15 +74,15 @@ public class i implements n0 {
                     z10 = cVar.h();
                     break;
                 case 11:
-                    cVar.u();
+                    cVar.v();
                     PointF pointF3 = new PointF(((float) cVar.nextDouble()) * f10, ((float) cVar.nextDouble()) * f10);
-                    cVar.s();
+                    cVar.t();
                     pointF = pointF3;
                     break;
                 case 12:
-                    cVar.u();
+                    cVar.v();
                     PointF pointF4 = new PointF(((float) cVar.nextDouble()) * f10, ((float) cVar.nextDouble()) * f10);
-                    cVar.s();
+                    cVar.t();
                     pointF2 = pointF4;
                     break;
                 default:
@@ -91,7 +91,7 @@ public class i implements n0 {
                     break;
             }
         }
-        cVar.y();
+        cVar.z();
         return new q5.b(str, str2, f11, aVar2, i10, f12, f13, i11, i12, f14, z10, pointF, pointF2);
     }
 }

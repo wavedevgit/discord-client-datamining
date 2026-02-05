@@ -8,22 +8,22 @@ import o5.a;
 public class q implements s, a.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.airbnb.lottie.n f39791a;
+    private final com.airbnb.lottie.n f39251a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f39792b;
+    private final String f39252b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final o5.a f39793c;
+    private final o5.a f39253c;
 
     /* renamed from: d  reason: collision with root package name */
-    private s5.o f39794d;
+    private s5.o f39254d;
 
     public q(com.airbnb.lottie.n nVar, t5.b bVar, s5.n nVar2) {
-        this.f39791a = nVar;
-        this.f39792b = nVar2.c();
+        this.f39251a = nVar;
+        this.f39252b = nVar2.c();
         o5.a a10 = nVar2.b().a();
-        this.f39793c = a10;
+        this.f39253c = a10;
         bVar.i(a10);
         a10.a(this);
     }
@@ -72,25 +72,25 @@ public class q implements s, a.b {
                 i10++;
             }
         }
-        s5.o oVar2 = this.f39794d;
+        s5.o oVar2 = this.f39254d;
         if (oVar2 == null || oVar2.a().size() != i10) {
             ArrayList arrayList = new ArrayList(i10);
             for (int i11 = 0; i11 < i10; i11++) {
                 arrayList.add(new q5.a());
             }
-            this.f39794d = new s5.o(new PointF(0.0f, 0.0f), false, arrayList);
+            this.f39254d = new s5.o(new PointF(0.0f, 0.0f), false, arrayList);
         }
-        this.f39794d.e(d10);
-        return this.f39794d;
+        this.f39254d.e(d10);
+        return this.f39254d;
     }
 
     @Override // o5.a.b
     public void a() {
-        this.f39791a.invalidateSelf();
+        this.f39251a.invalidateSelf();
     }
 
     public o5.a f() {
-        return this.f39793c;
+        return this.f39253c;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:25:0x009e, code lost:

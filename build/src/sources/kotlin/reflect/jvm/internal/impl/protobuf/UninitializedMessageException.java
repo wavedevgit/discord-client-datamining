@@ -5,11 +5,11 @@ import java.util.List;
 public class UninitializedMessageException extends RuntimeException {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f34421d;
+    private final List f33945d;
 
     public UninitializedMessageException(MessageLite messageLite) {
         super("Message was missing required fields.  (Lite runtime could not determine which fields were missing).");
-        this.f34421d = null;
+        this.f33945d = null;
     }
 
     public InvalidProtocolBufferException asInvalidProtocolBufferException() {

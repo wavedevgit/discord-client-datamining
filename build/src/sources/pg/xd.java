@@ -3,19 +3,19 @@ package pg;
 public final class xd {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Long f45956a;
+    private final Long f45886a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ie f45957b;
+    private final ie f45887b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Boolean f45958c;
+    private final Boolean f45888c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Boolean f45959d;
+    private final Boolean f45889d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Boolean f45960e;
+    private final Boolean f45890e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ xd(vd vdVar, wd wdVar) {
@@ -24,35 +24,35 @@ public final class xd {
         Boolean bool;
         Boolean bool2;
         Boolean bool3;
-        l10 = vdVar.f45833a;
-        this.f45956a = l10;
-        ieVar = vdVar.f45834b;
-        this.f45957b = ieVar;
-        bool = vdVar.f45835c;
-        this.f45958c = bool;
-        bool2 = vdVar.f45836d;
-        this.f45959d = bool2;
-        bool3 = vdVar.f45837e;
-        this.f45960e = bool3;
+        l10 = vdVar.f45763a;
+        this.f45886a = l10;
+        ieVar = vdVar.f45764b;
+        this.f45887b = ieVar;
+        bool = vdVar.f45765c;
+        this.f45888c = bool;
+        bool2 = vdVar.f45766d;
+        this.f45889d = bool2;
+        bool3 = vdVar.f45767e;
+        this.f45890e = bool3;
     }
 
     public final ie a() {
-        return this.f45957b;
+        return this.f45887b;
     }
 
     public final Boolean b() {
-        return this.f45959d;
+        return this.f45889d;
     }
 
     public final Boolean c() {
-        return this.f45960e;
+        return this.f45890e;
     }
 
     public final Boolean d() {
-        return this.f45958c;
+        return this.f45888c;
     }
 
     public final Long e() {
-        return this.f45956a;
+        return this.f45886a;
     }
 }

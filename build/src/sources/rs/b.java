@@ -1,70 +1,49 @@
 package rs;
 
-import js.i0;
-import kotlin.Unit;
-import kotlin.coroutines.CoroutineContext;
-import kotlin.jvm.functions.Function3;
-import kotlin.jvm.internal.FunctionReferenceImpl;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.TypeIntrinsics;
-/* JADX INFO: Access modifiers changed from: package-private */
+import kotlin.jvm.functions.Function2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b {
+public abstract class b {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final long f49065a;
+    /* renamed from: a */
+    private static final e0 f48950a = new e0("CLOSED");
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function3 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f49066d = new a();
-
-        a() {
-            super(3, b.class, "register", "register(Lkotlinx/coroutines/selects/SelectInstance;Ljava/lang/Object;)V", 0);
-        }
-
-        public final void a(b bVar, l lVar, Object obj) {
-            bVar.d(lVar, obj);
-        }
-
-        @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
-            a((b) obj, (l) obj2, obj3);
-            return Unit.f32464a;
-        }
-    }
-
-    public b(long j10) {
-        this.f49065a = j10;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final void d(final l lVar, Object obj) {
-        if (this.f49065a <= 0) {
-            lVar.d(Unit.f32464a);
-            return;
-        }
-        Runnable runnable = new Runnable() { // from class: rs.a
-            @Override // java.lang.Runnable
-            public final void run() {
-                b.e(l.this, this);
+    public static final c b(c cVar) {
+        while (true) {
+            Object g10 = cVar.g();
+            if (g10 == f48950a) {
+                return cVar;
             }
-        };
-        Intrinsics.checkNotNull(lVar, "null cannot be cast to non-null type kotlinx.coroutines.selects.SelectImplementation<*>");
-        k kVar = (k) lVar;
-        CoroutineContext context = kVar.getContext();
-        kVar.n(i0.c(context).D0(this.f49065a, runnable, context));
+            c cVar2 = (c) g10;
+            if (cVar2 == null) {
+                if (cVar.m()) {
+                    return cVar;
+                }
+            } else {
+                cVar = cVar2;
+            }
+        }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void e(l lVar, b bVar) {
-        lVar.e(bVar, Unit.f32464a);
-    }
-
-    public final f c() {
-        a aVar = a.f49066d;
-        Intrinsics.checkNotNull(aVar, "null cannot be cast to non-null type kotlin.Function3<@[ParameterName(name = \"clauseObject\")] kotlin.Any, @[ParameterName(name = \"select\")] kotlinx.coroutines.selects.SelectInstance<*>, @[ParameterName(name = \"param\")] kotlin.Any?, kotlin.Unit>");
-        return new g(this, (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(aVar, 3), null, 4, null);
+    public static final Object c(b0 b0Var, long j10, Function2 function2) {
+        while (true) {
+            if (b0Var.f48952i < j10 || b0Var.k()) {
+                Object g10 = b0Var.g();
+                if (g10 == f48950a) {
+                    return c0.a(f48950a);
+                }
+                b0 b0Var2 = (b0) ((c) g10);
+                if (b0Var2 == null) {
+                    b0Var2 = (b0) function2.invoke(Long.valueOf(b0Var.f48952i + 1), b0Var);
+                    if (b0Var.o(b0Var2)) {
+                        if (b0Var.k()) {
+                            b0Var.n();
+                        }
+                    }
+                }
+                b0Var = b0Var2;
+            } else {
+                return c0.a(b0Var);
+            }
+        }
     }
 }

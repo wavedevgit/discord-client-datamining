@@ -7,25 +7,25 @@ import java.util.Map;
 public final class u2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f38484a;
+    private final Map f38146a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f38485b;
+    private final Map f38147b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ui.d f38486c;
+    private final xi.d f38148c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public u2(Map map, Map map2, ui.d dVar) {
-        this.f38484a = map;
-        this.f38485b = map2;
-        this.f38486c = dVar;
+    public u2(Map map, Map map2, xi.d dVar) {
+        this.f38146a = map;
+        this.f38147b = map2;
+        this.f38148c = dVar;
     }
 
     public final byte[] a(Object obj) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         try {
-            new r2(byteArrayOutputStream, this.f38484a, this.f38485b, this.f38486c).i(obj);
+            new r2(byteArrayOutputStream, this.f38146a, this.f38147b, this.f38148c).i(obj);
         } catch (IOException unused) {
         }
         return byteArrayOutputStream.toByteArray();

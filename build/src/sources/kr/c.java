@@ -1,19 +1,15 @@
 package kr;
 
-import android.text.Spanned;
+import gr.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {
-    public static boolean a(int i10, CharSequence charSequence, Object obj) {
-        if ((charSequence instanceof Spanned) && ((Spanned) charSequence).getSpanEnd(obj) == i10) {
-            return true;
-        }
-        return false;
-    }
 
-    public static boolean b(int i10, CharSequence charSequence, Object obj) {
-        if ((charSequence instanceof Spanned) && ((Spanned) charSequence).getSpanStart(obj) == i10) {
-            return true;
-        }
-        return false;
-    }
+    /* renamed from: a  reason: collision with root package name */
+    public static final o f36120a = o.b("image-destination");
+
+    /* renamed from: b  reason: collision with root package name */
+    public static final o f36121b = o.b("image-replacement-text-is-link");
+
+    /* renamed from: c  reason: collision with root package name */
+    public static final o f36122c = o.b("image-size");
 }

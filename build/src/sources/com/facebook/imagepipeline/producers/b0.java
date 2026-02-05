@@ -16,38 +16,38 @@ import java.util.concurrent.Future;
 public class b0 extends d {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f10290a;
+    private int f10675a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f10291b;
+    private String f10676b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f10292c;
+    private final Map f10677c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ExecutorService f10293d;
+    private final ExecutorService f10678d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final v8.b f10294e;
+    private final v8.b f10679e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ c f10295d;
+        final /* synthetic */ c f10680d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ NetworkFetcher.Callback f10296e;
+        final /* synthetic */ NetworkFetcher.Callback f10681e;
 
         a(c cVar, NetworkFetcher.Callback callback) {
-            this.f10295d = cVar;
-            this.f10296e = callback;
+            this.f10680d = cVar;
+            this.f10681e = callback;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            b0.this.e(this.f10295d, this.f10296e);
+            b0.this.e(this.f10680d, this.f10681e);
         }
     }
 
@@ -56,20 +56,20 @@ public class b0 extends d {
     public class b extends f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Future f10298a;
+        final /* synthetic */ Future f10683a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ NetworkFetcher.Callback f10299b;
+        final /* synthetic */ NetworkFetcher.Callback f10684b;
 
         b(Future future, NetworkFetcher.Callback callback) {
-            this.f10298a = future;
-            this.f10299b = callback;
+            this.f10683a = future;
+            this.f10684b = callback;
         }
 
         @Override // com.facebook.imagepipeline.producers.x0
         public void b() {
-            if (this.f10298a.cancel(false)) {
-                this.f10299b.a();
+            if (this.f10683a.cancel(false)) {
+                this.f10684b.a();
             }
         }
     }
@@ -78,13 +78,13 @@ public class b0 extends d {
     public static class c extends FetchState {
 
         /* renamed from: f  reason: collision with root package name */
-        private long f10301f;
+        private long f10686f;
 
         /* renamed from: g  reason: collision with root package name */
-        private long f10302g;
+        private long f10687g;
 
         /* renamed from: h  reason: collision with root package name */
-        private long f10303h;
+        private long f10688h;
 
         public c(Consumer consumer, ProducerContext producerContext) {
             super(consumer, producerContext);
@@ -93,24 +93,24 @@ public class b0 extends d {
 
     public b0(int i10) {
         this(null, null, RealtimeSinceBootClock.get());
-        this.f10290a = i10;
+        this.f10675a = i10;
     }
 
     private HttpURLConnection b(Uri uri, int i10) {
         Uri parse;
         String c10;
         HttpURLConnection j10 = j(uri);
-        String str = this.f10291b;
+        String str = this.f10676b;
         if (str != null) {
             j10.setRequestProperty("User-Agent", str);
         }
-        Map map = this.f10292c;
+        Map map = this.f10677c;
         if (map != null) {
             for (Map.Entry entry : map.entrySet()) {
                 j10.setRequestProperty((String) entry.getKey(), (String) entry.getValue());
             }
         }
-        j10.setConnectTimeout(this.f10290a);
+        j10.setConnectTimeout(this.f10675a);
         int responseCode = j10.getResponseCode();
         if (h(responseCode)) {
             return j10;
@@ -174,8 +174,8 @@ public class b0 extends d {
     @Override // com.facebook.imagepipeline.producers.NetworkFetcher
     /* renamed from: d */
     public void fetch(c cVar, NetworkFetcher.Callback callback) {
-        cVar.f10301f = this.f10294e.now();
-        cVar.b().h(new b(this.f10293d.submit(new a(cVar, callback)), callback));
+        cVar.f10686f = this.f10679e.now();
+        cVar.b().h(new b(this.f10678d.submit(new a(cVar, callback)), callback));
     }
 
     /* JADX WARN: Removed duplicated region for block: B:29:0x0045  */
@@ -191,7 +191,7 @@ public class b0 extends d {
             android.net.Uri r1 = r5.g()     // Catch: java.lang.Throwable -> L2d java.io.IOException -> L30
             r2 = 5
             java.net.HttpURLConnection r1 = r4.b(r1, r2)     // Catch: java.lang.Throwable -> L2d java.io.IOException -> L30
-            v8.b r2 = r4.f10294e     // Catch: java.lang.Throwable -> L1e java.io.IOException -> L20
+            v8.b r2 = r4.f10679e     // Catch: java.lang.Throwable -> L1e java.io.IOException -> L20
             long r2 = r2.now()     // Catch: java.lang.Throwable -> L1e java.io.IOException -> L20
             com.facebook.imagepipeline.producers.b0.c.o(r5, r2)     // Catch: java.lang.Throwable -> L1e java.io.IOException -> L20
             if (r1 == 0) goto L22
@@ -245,9 +245,9 @@ public class b0 extends d {
     /* renamed from: f */
     public Map getExtraMap(c cVar, int i10) {
         HashMap hashMap = new HashMap(4);
-        hashMap.put("queue_time", Long.toString(cVar.f10302g - cVar.f10301f));
-        hashMap.put("fetch_time", Long.toString(cVar.f10303h - cVar.f10302g));
-        hashMap.put("total_time", Long.toString(cVar.f10303h - cVar.f10301f));
+        hashMap.put("queue_time", Long.toString(cVar.f10687g - cVar.f10686f));
+        hashMap.put("fetch_time", Long.toString(cVar.f10688h - cVar.f10687g));
+        hashMap.put("total_time", Long.toString(cVar.f10688h - cVar.f10686f));
         hashMap.put("image_size", Integer.toString(i10));
         return hashMap;
     }
@@ -255,13 +255,13 @@ public class b0 extends d {
     @Override // com.facebook.imagepipeline.producers.NetworkFetcher
     /* renamed from: i */
     public void onFetchCompletion(c cVar, int i10) {
-        cVar.f10303h = this.f10294e.now();
+        cVar.f10688h = this.f10679e.now();
     }
 
     b0(String str, Map map, v8.b bVar) {
-        this.f10293d = Executors.newFixedThreadPool(3);
-        this.f10294e = bVar;
-        this.f10292c = map;
-        this.f10291b = str;
+        this.f10678d = Executors.newFixedThreadPool(3);
+        this.f10679e = bVar;
+        this.f10677c = map;
+        this.f10676b = str;
     }
 }

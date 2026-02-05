@@ -1,380 +1,212 @@
 package xm;
 
+import com.squareup.moshi.a0;
+import com.squareup.moshi.h;
+import com.squareup.moshi.j;
+import com.squareup.moshi.m;
+import com.squareup.moshi.t;
+import com.squareup.moshi.w;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-import java.util.ListIterator;
-import kotlin.Unit;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.functions.Function3;
-import kotlin.jvm.functions.Function4;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
-import kotlinx.coroutines.CoroutineScope;
-import wm.q;
-import wm.r;
-import wm.t;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements t {
+public final class b implements h.e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f53397a;
+    final Class f53979a;
 
+    /* renamed from: b  reason: collision with root package name */
+    final String f53980b;
+
+    /* renamed from: c  reason: collision with root package name */
+    final List f53981c;
+
+    /* renamed from: d  reason: collision with root package name */
+    final List f53982d;
+
+    /* renamed from: e  reason: collision with root package name */
+    final h f53983e;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class a extends Lambda implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ t f53398d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function2 f53399e;
-
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ t.c f53400i;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        a(t tVar, Function2 function2, t.c cVar) {
-            super(2);
-            this.f53398d = tVar;
-            this.f53399e = function2;
-            this.f53400i = cVar;
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        /* renamed from: a */
-        public final Object invoke(Object obj, wm.i iVar) {
-            return this.f53398d.a(obj, iVar, this.f53399e, this.f53400i);
-        }
-    }
-
-    /* renamed from: xm.b$b  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class C0725b extends Lambda implements Function3 {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ t f53401d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function3 f53402e;
-
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ t.c f53403i;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        C0725b(t tVar, Function3 function3, t.c cVar) {
-            super(3);
-            this.f53401d = tVar;
-            this.f53402e = function3;
-            this.f53403i = cVar;
-        }
-
-        @Override // kotlin.jvm.functions.Function3
-        public final Object invoke(Object obj, Object obj2, Object obj3) {
-            return this.f53401d.d(obj, obj2, obj3, this.f53402e, this.f53403i);
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class c extends Lambda implements Function3 {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ t f53404d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ wm.a f53405e;
-
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ t.c f53406i;
-
-        /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ b f53407o;
-
-        /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ Function3 f53408p;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class a extends Lambda implements Function3 {
-
-            /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ b f53409d;
-
-            /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ t.b f53410e;
-
-            /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Function3 f53411i;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            a(b bVar, t.b bVar2, Function3 function3) {
-                super(3);
-                this.f53409d = bVar;
-                this.f53410e = bVar2;
-                this.f53411i = function3;
-            }
-
-            @Override // kotlin.jvm.functions.Function3
-            /* renamed from: a */
-            public final Object invoke(Object obj, Object obj2, t.b bVar) {
-                return this.f53411i.invoke(obj, obj2, this.f53409d.g(this.f53410e, bVar));
-            }
-        }
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        c(t tVar, wm.a aVar, t.c cVar, b bVar, Function3 function3) {
-            super(3);
-            this.f53404d = tVar;
-            this.f53405e = aVar;
-            this.f53406i = cVar;
-            this.f53407o = bVar;
-            this.f53408p = function3;
-        }
-
-        @Override // kotlin.jvm.functions.Function3
-        /* renamed from: a */
-        public final Object invoke(Object obj, Object obj2, t.b bVar) {
-            return this.f53404d.b(obj, obj2, this.f53405e, new a(this.f53407o, bVar, this.f53408p), this.f53406i);
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class d extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ t f53412d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function1 f53413e;
-
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ t.c f53414i;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        d(t tVar, Function1 function1, t.c cVar) {
-            super(1);
-            this.f53412d = tVar;
-            this.f53413e = function1;
-            this.f53414i = cVar;
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final wm.i invoke(Object obj) {
-            return this.f53412d.e(obj, this.f53413e, this.f53414i);
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class e implements t.b {
+    public class a extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final t.b f53415a;
+        final /* synthetic */ Object f53984a;
+
+        a(Object obj) {
+            this.f53984a = obj;
+        }
+
+        @Override // com.squareup.moshi.h
+        public Object fromJson(m mVar) {
+            mVar.P();
+            return this.f53984a;
+        }
+
+        @Override // com.squareup.moshi.h
+        public void toJson(t tVar, Object obj) {
+            throw new IllegalArgumentException("Expected one of " + b.this.f53982d + " but found " + obj + ", a " + obj.getClass() + ". Register this subtype.");
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* renamed from: xm.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0714b extends h {
+
+        /* renamed from: a  reason: collision with root package name */
+        final String f53986a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ t.b f53416b;
+        final List f53987b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ t.b f53417c;
+        final List f53988c;
 
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        static final class a extends Lambda implements Function1 {
+        /* renamed from: d  reason: collision with root package name */
+        final List f53989d;
 
-            /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ t.b f53418d;
+        /* renamed from: e  reason: collision with root package name */
+        final h f53990e;
 
-            /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Function1 f53419e;
+        /* renamed from: f  reason: collision with root package name */
+        final m.b f53991f;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            a(t.b bVar, Function1 function1) {
-                super(1);
-                this.f53418d = bVar;
-                this.f53419e = function1;
+        /* renamed from: g  reason: collision with root package name */
+        final m.b f53992g;
+
+        C0714b(String str, List list, List list2, List list3, h hVar) {
+            this.f53986a = str;
+            this.f53987b = list;
+            this.f53988c = list2;
+            this.f53989d = list3;
+            this.f53990e = hVar;
+            this.f53991f = m.b.a(str);
+            this.f53992g = m.b.a((String[]) list.toArray(new String[0]));
+        }
+
+        private int a(m mVar) {
+            mVar.s();
+            while (mVar.hasNext()) {
+                if (mVar.W(this.f53991f) == -1) {
+                    mVar.E0();
+                    mVar.P();
+                } else {
+                    int C0 = mVar.C0(this.f53992g);
+                    if (C0 == -1 && this.f53990e == null) {
+                        throw new j("Expected one of " + this.f53987b + " for key '" + this.f53986a + "' but found '" + mVar.f1() + "'. Register a subtype for this label.");
+                    }
+                    return C0;
+                }
             }
+            throw new j("Missing label for " + this.f53986a);
+        }
 
-            public final void a(r interceptedAction) {
-                Intrinsics.checkNotNullParameter(interceptedAction, "interceptedAction");
-                this.f53418d.b(interceptedAction, this.f53419e);
-            }
-
-            @Override // kotlin.jvm.functions.Function1
-            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-                a((r) obj);
-                return Unit.f32464a;
+        @Override // com.squareup.moshi.h
+        public Object fromJson(m mVar) {
+            m F = mVar.F();
+            F.D0(false);
+            try {
+                int a10 = a(F);
+                F.close();
+                if (a10 == -1) {
+                    return this.f53990e.fromJson(mVar);
+                }
+                return ((h) this.f53989d.get(a10)).fromJson(mVar);
+            } catch (Throwable th2) {
+                F.close();
+                throw th2;
             }
         }
 
-        /* renamed from: xm.b$e$b  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        static final class C0726b extends Lambda implements Function4 {
-
-            /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ t.b f53420d;
-
-            /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Function4 f53421e;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0726b(t.b bVar, Function4 function4) {
-                super(4);
-                this.f53420d = bVar;
-                this.f53421e = function4;
+        @Override // com.squareup.moshi.h
+        public void toJson(t tVar, Object obj) {
+            h hVar;
+            int indexOf = this.f53988c.indexOf(obj.getClass());
+            if (indexOf == -1) {
+                hVar = this.f53990e;
+                if (hVar == null) {
+                    throw new IllegalArgumentException("Expected one of " + this.f53988c + " but found " + obj + ", a " + obj.getClass() + ". Register this subtype.");
+                }
+            } else {
+                hVar = (h) this.f53989d.get(indexOf);
             }
-
-            @Override // kotlin.jvm.functions.Function4
-            /* renamed from: a */
-            public final Object invoke(q c10, Object obj, String k10, Function1 h10) {
-                Intrinsics.checkNotNullParameter(c10, "c");
-                Intrinsics.checkNotNullParameter(k10, "k");
-                Intrinsics.checkNotNullParameter(h10, "h");
-                return this.f53420d.a(c10, obj, k10, h10, this.f53421e);
+            tVar.k();
+            if (hVar != this.f53990e) {
+                tVar.W(this.f53986a).x1((String) this.f53987b.get(indexOf));
             }
+            int h10 = tVar.h();
+            hVar.toJson(tVar, obj);
+            tVar.y(h10);
+            tVar.E();
         }
 
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        static final class c extends Lambda implements Function2 {
-
-            /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ t.b f53422d;
-
-            /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Function2 f53423e;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            c(t.b bVar, Function2 function2) {
-                super(2);
-                this.f53422d = bVar;
-                this.f53423e = function2;
-            }
-
-            public final void a(String iKey, Function1 iSideEffect) {
-                Intrinsics.checkNotNullParameter(iKey, "iKey");
-                Intrinsics.checkNotNullParameter(iSideEffect, "iSideEffect");
-                this.f53422d.c(iKey, iSideEffect, this.f53423e);
-            }
-
-            @Override // kotlin.jvm.functions.Function2
-            public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-                a((String) obj, (Function1) obj2);
-                return Unit.f32464a;
-            }
-        }
-
-        e(t.b bVar, t.b bVar2) {
-            this.f53416b = bVar;
-            this.f53417c = bVar2;
-            Intrinsics.checkNotNull(bVar);
-            this.f53415a = bVar;
-        }
-
-        @Override // wm.t.b
-        public Object a(q child, Object obj, String key, Function1 handler, Function4 proceed) {
-            Intrinsics.checkNotNullParameter(child, "child");
-            Intrinsics.checkNotNullParameter(key, "key");
-            Intrinsics.checkNotNullParameter(handler, "handler");
-            Intrinsics.checkNotNullParameter(proceed, "proceed");
-            return this.f53415a.a(child, obj, key, handler, new C0726b(this.f53417c, proceed));
-        }
-
-        @Override // wm.t.b
-        public void b(r action, Function1 proceed) {
-            Intrinsics.checkNotNullParameter(action, "action");
-            Intrinsics.checkNotNullParameter(proceed, "proceed");
-            this.f53415a.b(action, new a(this.f53417c, proceed));
-        }
-
-        @Override // wm.t.b
-        public void c(String key, Function1 sideEffect, Function2 proceed) {
-            Intrinsics.checkNotNullParameter(key, "key");
-            Intrinsics.checkNotNullParameter(sideEffect, "sideEffect");
-            Intrinsics.checkNotNullParameter(proceed, "proceed");
-            this.f53415a.c(key, sideEffect, new c(this.f53417c, proceed));
+        public String toString() {
+            return "PolymorphicJsonAdapter(" + this.f53986a + ")";
         }
     }
 
-    public b(List interceptors) {
-        Intrinsics.checkNotNullParameter(interceptors, "interceptors");
-        this.f53397a = interceptors;
+    b(Class cls, String str, List list, List list2, h hVar) {
+        this.f53979a = cls;
+        this.f53980b = str;
+        this.f53981c = list;
+        this.f53982d = list2;
+        this.f53983e = hVar;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public final t.b g(t.b bVar, t.b bVar2) {
-        if (bVar == null && bVar2 == null) {
-            return null;
-        }
-        if (bVar == null) {
-            return bVar2;
-        }
-        if (bVar2 == null) {
-            return bVar;
-        }
-        return new e(bVar, bVar2);
+    private h a(Object obj) {
+        return new a(obj);
     }
 
-    @Override // wm.t
-    public Object a(Object obj, wm.i iVar, Function2 proceed, t.c session) {
-        Intrinsics.checkNotNullParameter(proceed, "proceed");
-        Intrinsics.checkNotNullParameter(session, "session");
-        List list = this.f53397a;
-        if (!list.isEmpty()) {
-            ListIterator listIterator = list.listIterator(list.size());
-            while (listIterator.hasPrevious()) {
-                proceed = new a((t) listIterator.previous(), proceed, session);
+    public static b b(Class cls, String str) {
+        if (cls != null) {
+            if (str != null) {
+                List list = Collections.EMPTY_LIST;
+                return new b(cls, str, list, list, null);
             }
+            throw new NullPointerException("labelKey == null");
         }
-        return proceed.invoke(obj, iVar);
+        throw new NullPointerException("baseType == null");
     }
 
-    @Override // wm.t
-    public Object b(Object obj, Object obj2, wm.a context, Function3 proceed, t.c session) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        Intrinsics.checkNotNullParameter(proceed, "proceed");
-        Intrinsics.checkNotNullParameter(session, "session");
-        List list = this.f53397a;
-        if (!list.isEmpty()) {
-            ListIterator listIterator = list.listIterator(list.size());
-            c cVar = proceed;
-            while (listIterator.hasPrevious()) {
-                cVar = new c((t) listIterator.previous(), context, session, this, cVar);
+    public b c(Object obj) {
+        return d(a(obj));
+    }
+
+    @Override // com.squareup.moshi.h.e
+    public h create(Type type, Set set, w wVar) {
+        if (a0.g(type) == this.f53979a && set.isEmpty()) {
+            ArrayList arrayList = new ArrayList(this.f53982d.size());
+            int size = this.f53982d.size();
+            for (int i10 = 0; i10 < size; i10++) {
+                arrayList.add(wVar.d((Type) this.f53982d.get(i10)));
             }
-            proceed = cVar;
+            return new C0714b(this.f53980b, this.f53981c, this.f53982d, arrayList, this.f53983e).nullSafe();
         }
-        return proceed.invoke(obj, obj2, null);
+        return null;
     }
 
-    @Override // wm.t
-    public void c(CoroutineScope workflowScope, t.c session) {
-        Intrinsics.checkNotNullParameter(workflowScope, "workflowScope");
-        Intrinsics.checkNotNullParameter(session, "session");
-        for (t tVar : this.f53397a) {
-            tVar.c(workflowScope, session);
-        }
+    public b d(h hVar) {
+        return new b(this.f53979a, this.f53980b, this.f53981c, this.f53982d, hVar);
     }
 
-    @Override // wm.t
-    public Object d(Object obj, Object obj2, Object obj3, Function3 proceed, t.c session) {
-        Intrinsics.checkNotNullParameter(proceed, "proceed");
-        Intrinsics.checkNotNullParameter(session, "session");
-        List list = this.f53397a;
-        if (!list.isEmpty()) {
-            ListIterator listIterator = list.listIterator(list.size());
-            while (listIterator.hasPrevious()) {
-                proceed = new C0725b((t) listIterator.previous(), proceed, session);
+    public b e(Class cls, String str) {
+        if (cls != null) {
+            if (str != null) {
+                if (!this.f53981c.contains(str)) {
+                    ArrayList arrayList = new ArrayList(this.f53981c);
+                    arrayList.add(str);
+                    ArrayList arrayList2 = new ArrayList(this.f53982d);
+                    arrayList2.add(cls);
+                    return new b(this.f53979a, this.f53980b, arrayList, arrayList2, this.f53983e);
+                }
+                throw new IllegalArgumentException("Labels must be unique.");
             }
+            throw new NullPointerException("label == null");
         }
-        return proceed.invoke(obj, obj2, obj3);
-    }
-
-    @Override // wm.t
-    public wm.i e(Object obj, Function1 proceed, t.c session) {
-        Intrinsics.checkNotNullParameter(proceed, "proceed");
-        Intrinsics.checkNotNullParameter(session, "session");
-        List list = this.f53397a;
-        if (!list.isEmpty()) {
-            ListIterator listIterator = list.listIterator(list.size());
-            while (listIterator.hasPrevious()) {
-                proceed = new d((t) listIterator.previous(), proceed, session);
-            }
-        }
-        return (wm.i) proceed.invoke(obj);
+        throw new NullPointerException("subtype == null");
     }
 }

@@ -48,7 +48,7 @@ public final class InputPhoneNumber_AttributesJsonAdapter extends h {
     @NotNull
     public InputPhoneNumber.Attributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -56,7 +56,7 @@ public final class InputPhoneNumber_AttributesJsonAdapter extends h {
         JsonLogicBoolean jsonLogicBoolean2 = null;
         String str4 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -81,7 +81,7 @@ public final class InputPhoneNumber_AttributesJsonAdapter extends h {
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new InputPhoneNumber.Attributes(str, str2, str3, jsonLogicBoolean, jsonLogicBoolean2, str4);
     }
 
@@ -89,18 +89,18 @@ public final class InputPhoneNumber_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, InputPhoneNumber.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.l();
-            writer.A0("prefill");
+            writer.k();
+            writer.W("prefill");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefill());
-            writer.A0("label");
+            writer.W("label");
             this.nullableStringAdapter.toJson(writer, attributes.getLabel());
-            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholder());
-            writer.A0(ViewProps.HIDDEN);
+            writer.W(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
-            writer.A0("disabled");
+            writer.W("disabled");
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getDisabled());
-            writer.A0("countryCode");
+            writer.W("countryCode");
             this.nullableStringAdapter.toJson(writer, attributes.getCountryCode());
             writer.E();
             return;

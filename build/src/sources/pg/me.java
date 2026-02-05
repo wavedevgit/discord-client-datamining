@@ -3,22 +3,22 @@ package pg;
 public final class me {
 
     /* renamed from: a  reason: collision with root package name */
-    private final mi f45626a;
+    private final mi f45556a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final je f45627b;
+    private final je f45557b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final he f45628c;
+    private final he f45558c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final rh f45629d;
+    private final rh f45559d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final oh f45630e;
+    private final oh f45560e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final y3 f45631f;
+    private final y3 f45561f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ me(ke keVar, le leVar) {
@@ -28,41 +28,41 @@ public final class me {
         rh rhVar;
         oh ohVar;
         y3 y3Var;
-        miVar = keVar.f45567a;
-        this.f45626a = miVar;
-        jeVar = keVar.f45568b;
-        this.f45627b = jeVar;
-        heVar = keVar.f45569c;
-        this.f45628c = heVar;
-        rhVar = keVar.f45570d;
-        this.f45629d = rhVar;
-        ohVar = keVar.f45571e;
-        this.f45630e = ohVar;
-        y3Var = keVar.f45572f;
-        this.f45631f = y3Var;
+        miVar = keVar.f45497a;
+        this.f45556a = miVar;
+        jeVar = keVar.f45498b;
+        this.f45557b = jeVar;
+        heVar = keVar.f45499c;
+        this.f45558c = heVar;
+        rhVar = keVar.f45500d;
+        this.f45559d = rhVar;
+        ohVar = keVar.f45501e;
+        this.f45560e = ohVar;
+        y3Var = keVar.f45502f;
+        this.f45561f = y3Var;
     }
 
     public final y3 a() {
-        return this.f45631f;
+        return this.f45561f;
     }
 
     public final he b() {
-        return this.f45628c;
+        return this.f45558c;
     }
 
     public final je c() {
-        return this.f45627b;
+        return this.f45557b;
     }
 
     public final oh d() {
-        return this.f45630e;
+        return this.f45560e;
     }
 
     public final rh e() {
-        return this.f45629d;
+        return this.f45559d;
     }
 
     public final mi f() {
-        return this.f45626a;
+        return this.f45556a;
     }
 }

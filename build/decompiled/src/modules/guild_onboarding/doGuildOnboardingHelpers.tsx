@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = _closure1_slot3;
             var1 = var2.addConditionalChangeListener;
             var0 = function() { // Environment: var0
-                _fun43405: for (var _fun43405_ip = 0;;) switch (_fun43405_ip) {
+                _fun43401: for (var _fun43401_ip = 0;;) switch (_fun43401_ip) {
                     case 0:
                         var4 = _closure1_slot3;
                         var2 = var4.getSelfMember;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = var4 == var7;
                         var0 = undefined;
                         if (var8) {
-                            _fun43405_ip = 69;
-                            continue _fun43405
+                            _fun43401_ip = 69;
+                            continue _fun43401
                         }
                     case 64:
                         var0 = var7.flags;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var4 != var0;
                         var4 = 0;
                         if (!var7) {
-                            _fun43405_ip = 81;
-                            continue _fun43405
+                            _fun43401_ip = 81;
+                            continue _fun43401
                         }
                     case 78:
                         var4 = var0;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var5.bind(var6)(var4, var0);
                         var0 = !var0;
                         if (var0) {
-                            _fun43405_ip = 151;
-                            continue _fun43405
+                            _fun43401_ip = 151;
+                            continue _fun43401
                         }
                     case 103:
                         var4 = _closure1_slot1;

@@ -7,13 +7,13 @@ import java.util.List;
 public final class QueryProductDetailsParams {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.google.android.gms.internal.play_billing.j f7602a;
+    private final com.google.android.gms.internal.play_billing.j f7987a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private com.google.android.gms.internal.play_billing.j f7603a;
+        private com.google.android.gms.internal.play_billing.j f7988a;
 
         /* synthetic */ a(a6.j0 j0Var) {
         }
@@ -33,7 +33,7 @@ public final class QueryProductDetailsParams {
                     }
                 }
                 if (hashSet.size() <= 1) {
-                    this.f7603a = com.google.android.gms.internal.play_billing.j.j(list);
+                    this.f7988a = com.google.android.gms.internal.play_billing.j.j(list);
                     return this;
                 }
                 throw new IllegalArgumentException("All products should be of the same product type.");
@@ -46,27 +46,27 @@ public final class QueryProductDetailsParams {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f7604a;
+        private final String f7989a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f7605b;
+        private final String f7990b;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private String f7606a;
+            private String f7991a;
 
             /* renamed from: b  reason: collision with root package name */
-            private String f7607b;
+            private String f7992b;
 
             /* synthetic */ a(a6.k0 k0Var) {
             }
 
             public b a() {
-                if (!"first_party".equals(this.f7607b)) {
-                    if (this.f7606a != null) {
-                        if (this.f7607b != null) {
+                if (!"first_party".equals(this.f7992b)) {
+                    if (this.f7991a != null) {
+                        if (this.f7992b != null) {
                             return new b(this, null);
                         }
                         throw new IllegalArgumentException("Product type must be provided.");
@@ -77,19 +77,19 @@ public final class QueryProductDetailsParams {
             }
 
             public a b(String str) {
-                this.f7606a = str;
+                this.f7991a = str;
                 return this;
             }
 
             public a c(String str) {
-                this.f7607b = str;
+                this.f7992b = str;
                 return this;
             }
         }
 
         /* synthetic */ b(a aVar, a6.l0 l0Var) {
-            this.f7604a = aVar.f7606a;
-            this.f7605b = aVar.f7607b;
+            this.f7989a = aVar.f7991a;
+            this.f7990b = aVar.f7992b;
         }
 
         public static a a() {
@@ -97,16 +97,16 @@ public final class QueryProductDetailsParams {
         }
 
         public final String b() {
-            return this.f7604a;
+            return this.f7989a;
         }
 
         public final String c() {
-            return this.f7605b;
+            return this.f7990b;
         }
     }
 
     /* synthetic */ QueryProductDetailsParams(a aVar, a6.m0 m0Var) {
-        this.f7602a = aVar.f7603a;
+        this.f7987a = aVar.f7988a;
     }
 
     public static a a() {
@@ -114,10 +114,10 @@ public final class QueryProductDetailsParams {
     }
 
     public final com.google.android.gms.internal.play_billing.j b() {
-        return this.f7602a;
+        return this.f7987a;
     }
 
     public final String c() {
-        return ((b) this.f7602a.get(0)).c();
+        return ((b) this.f7987a.get(0)).c();
     }
 }

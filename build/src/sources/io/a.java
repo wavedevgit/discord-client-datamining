@@ -1,83 +1,118 @@
 package io;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.viewbinding.ViewBinding;
-import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
-import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
-import eo.m4;
-import eo.n4;
+import android.os.Parcel;
+import android.os.Parcelable;
+import ho.c4;
+import ho.f5;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements ViewBinding {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f28517a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final LinearLayout f28518b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final Button f28519c;
+public final class a implements Parcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f28520d;
+    private final boolean f27652d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Pi2NavigationBar f28521e;
+    private final boolean f27653e;
 
-    /* renamed from: f  reason: collision with root package name */
-    public final TextView f28522f;
+    /* renamed from: i  reason: collision with root package name */
+    private final c4.c f27654i;
 
-    private a(CoordinatorLayout coordinatorLayout, LinearLayout linearLayout, Button button, ThemeableLottieAnimationView themeableLottieAnimationView, Pi2NavigationBar pi2NavigationBar, TextView textView) {
-        this.f28517a = coordinatorLayout;
-        this.f28518b = linearLayout;
-        this.f28519c = button;
-        this.f28520d = themeableLottieAnimationView;
-        this.f28521e = pi2NavigationBar;
-        this.f28522f = textView;
-    }
+    /* renamed from: o  reason: collision with root package name */
+    public static final C0387a f27651o = new C0387a(null);
+    @NotNull
+    public static final Parcelable.Creator<a> CREATOR = new b();
 
-    public static a a(View view) {
-        int i10 = m4.f22105t;
-        LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
-        if (linearLayout != null) {
-            i10 = m4.f22107u;
-            Button button = (Button) e4.a.a(view, i10);
-            if (button != null) {
-                i10 = m4.P;
-                ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
-                if (themeableLottieAnimationView != null) {
-                    i10 = m4.Y;
-                    Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
-                    if (pi2NavigationBar != null) {
-                        i10 = m4.D0;
-                        TextView textView = (TextView) e4.a.a(view, i10);
-                        if (textView != null) {
-                            return new a((CoordinatorLayout) view, linearLayout, button, themeableLottieAnimationView, pi2NavigationBar, textView);
-                        }
-                    }
-                }
+    /* renamed from: io.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0387a {
+        public /* synthetic */ C0387a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private final c4.c a() {
+            return new c4.c("unknown", c4.e.f26026o, f5.d.b.f26175d, new c4.a(null, 1, null), new c4.d(true, 0L));
+        }
+
+        public final a b(Boolean bool, Boolean bool2, c4.c cVar) {
+            boolean z10;
+            boolean z11;
+            if (bool != null) {
+                z10 = bool.booleanValue();
+            } else {
+                z10 = false;
             }
+            if (bool2 != null) {
+                z11 = bool2.booleanValue();
+            } else {
+                z11 = true;
+            }
+            if (cVar == null) {
+                cVar = a();
+            }
+            return new a(z10, z11, cVar);
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+
+        private C0387a() {
+        }
     }
 
-    public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n4.f22237a, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final a createFromParcel(Parcel parcel) {
+            boolean z10;
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            boolean z11 = false;
+            if (parcel.readInt() != 0) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            if (parcel.readInt() != 0) {
+                z11 = true;
+            }
+            return new a(z10, z11, c4.c.CREATOR.createFromParcel(parcel));
         }
-        return a(inflate);
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final a[] newArray(int i10) {
+            return new a[i10];
+        }
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public CoordinatorLayout getRoot() {
-        return this.f28517a;
+    public a(boolean z10, boolean z11, c4.c idSideConfig) {
+        Intrinsics.checkNotNullParameter(idSideConfig, "idSideConfig");
+        this.f27652d = z10;
+        this.f27653e = z11;
+        this.f27654i = idSideConfig;
+    }
+
+    public final boolean a() {
+        return this.f27653e;
+    }
+
+    public final c4.c b() {
+        return this.f27654i;
+    }
+
+    public final boolean c() {
+        return this.f27652d;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeInt(this.f27652d ? 1 : 0);
+        dest.writeInt(this.f27653e ? 1 : 0);
+        this.f27654i.writeToParcel(dest, i10);
     }
 }

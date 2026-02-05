@@ -7,12 +7,7 @@ public class c extends CloseableReference {
     }
 
     @Override // com.facebook.common.references.CloseableReference
-    public CloseableReference B() {
-        return this;
-    }
-
-    @Override // com.facebook.common.references.CloseableReference
-    public boolean E0() {
+    public boolean I0() {
         return true;
     }
 
@@ -21,8 +16,13 @@ public class c extends CloseableReference {
     }
 
     @Override // com.facebook.common.references.CloseableReference
-    /* renamed from: l */
+    /* renamed from: k */
     public CloseableReference clone() {
+        return this;
+    }
+
+    @Override // com.facebook.common.references.CloseableReference
+    public CloseableReference m() {
         return this;
     }
 }

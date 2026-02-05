@@ -5,67 +5,67 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.events.Event;
 import com.swmansion.gesturehandler.react.c;
-import fn.d;
-import fn.r;
+import in.d;
+import in.r;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class d implements r {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReactApplicationContext f17698a;
+    private final ReactApplicationContext f18104a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final en.h f17699b;
+    private final hn.h f18105b;
 
     public d(ReactApplicationContext reactApplicationContext) {
         Intrinsics.checkNotNullParameter(reactApplicationContext, "reactApplicationContext");
-        this.f17698a = reactApplicationContext;
-        this.f17699b = new en.h();
+        this.f18104a = reactApplicationContext;
+        this.f18105b = new hn.h();
     }
 
-    private final void d(fn.d dVar) {
+    private final void d(in.d dVar) {
         d.c a10;
-        if (dVar.T() >= 0 && dVar.S() == 4 && (a10 = e.f17700a.a(dVar)) != null) {
+        if (dVar.T() >= 0 && dVar.S() == 4 && (a10 = e.f18106a.a(dVar)) != null) {
             int F = dVar.F();
             if (F != 1) {
                 if (F != 2) {
                     if (F != 3) {
                         if (F == 4) {
-                            g("onGestureHandlerEvent", c.f17693d.a(a10.c(dVar)));
+                            g("onGestureHandlerEvent", c.f18099d.a(a10.c(dVar)));
                             return;
                         }
                         return;
                     }
-                    g("onGestureHandlerEvent", c.f17693d.a(a10.c(dVar)));
+                    g("onGestureHandlerEvent", c.f18099d.a(a10.c(dVar)));
                     return;
                 }
-                h(c.f17693d.b(dVar, a10.c(dVar), true));
+                h(c.f18099d.b(dVar, a10.c(dVar), true));
                 return;
             }
-            i(c.a.c(c.f17693d, dVar, a10.c(dVar), false, 4, null));
+            i(c.a.c(c.f18099d, dVar, a10.c(dVar), false, 4, null));
         }
     }
 
-    private final void e(fn.d dVar, int i10, int i11) {
+    private final void e(in.d dVar, int i10, int i11) {
         d.c a10;
-        if (dVar.T() >= 0 && (a10 = e.f17700a.a(dVar)) != null) {
+        if (dVar.T() >= 0 && (a10 = e.f18106a.a(dVar)) != null) {
             int F = dVar.F();
             if (F != 1) {
                 if (F != 2 && F != 3) {
                     if (F != 4) {
                         return;
                     }
-                    g("onGestureHandlerStateChange", k.f17712d.a(a10.c(dVar), i10, i11));
+                    g("onGestureHandlerStateChange", k.f18118d.a(a10.c(dVar), i10, i11));
                     return;
                 }
-                g("onGestureHandlerStateChange", k.f17712d.a(a10.c(dVar), i10, i11));
+                g("onGestureHandlerStateChange", k.f18118d.a(a10.c(dVar), i10, i11));
                 return;
             }
-            i(k.f17712d.b(dVar, i10, i11, a10.c(dVar)));
+            i(k.f18118d.b(dVar, i10, i11, a10.c(dVar)));
         }
     }
 
-    private final void f(fn.d dVar) {
+    private final void f(in.d dVar) {
         if (dVar.T() >= 0) {
             if (dVar.S() == 2 || dVar.S() == 4 || dVar.S() == 0 || dVar.W() != null) {
                 int F = dVar.F();
@@ -73,41 +73,41 @@ public final class d implements r {
                     if (F != 4) {
                         return;
                     }
-                    g("onGestureHandlerEvent", l.f17717c.a(dVar));
+                    g("onGestureHandlerEvent", l.f18123c.a(dVar));
                     return;
                 }
-                i(l.f17717c.b(dVar));
+                i(l.f18123c.b(dVar));
             }
         }
     }
 
     private final void g(String str, WritableMap writableMap) {
-        a.a(this.f17698a).emit(str, writableMap);
+        a.a(this.f18104a).emit(str, writableMap);
     }
 
     private final void h(c cVar) {
-        en.g.a(this.f17698a, cVar);
+        hn.g.a(this.f18104a, cVar);
     }
 
     private final void i(Event event) {
-        this.f17699b.a(event, this.f17698a);
+        this.f18105b.a(event, this.f18104a);
     }
 
-    @Override // fn.r
-    public void a(fn.d handler, int i10, int i11) {
-        Intrinsics.checkNotNullParameter(handler, "handler");
-        e(handler, i10, i11);
-    }
-
-    @Override // fn.r
-    public void b(fn.d handler, MotionEvent event) {
+    @Override // in.r
+    public void a(in.d handler, MotionEvent event) {
         Intrinsics.checkNotNullParameter(handler, "handler");
         Intrinsics.checkNotNullParameter(event, "event");
         d(handler);
     }
 
-    @Override // fn.r
-    public void c(fn.d handler) {
+    @Override // in.r
+    public void b(in.d handler, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        e(handler, i10, i11);
+    }
+
+    @Override // in.r
+    public void c(in.d handler) {
         Intrinsics.checkNotNullParameter(handler, "handler");
         f(handler);
     }

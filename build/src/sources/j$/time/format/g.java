@@ -17,24 +17,24 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public final class g implements e {
 
     /* renamed from: b  reason: collision with root package name */
-    public static volatile Map.Entry f31120b;
+    public static volatile Map.Entry f30469b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static volatile Map.Entry f31121c;
+    public static volatile Map.Entry f30470c;
 
     /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ int f31122a;
+    public final /* synthetic */ int f30471a;
 
     public /* synthetic */ g(int i10) {
-        this.f31122a = i10;
+        this.f30471a = i10;
     }
 
     @Override // j$.time.format.e
     public final boolean r(q qVar, StringBuilder sb2) {
-        switch (this.f31122a) {
+        switch (this.f30471a) {
             case 0:
                 Long a10 = qVar.a(j$.time.temporal.a.INSTANT_SECONDS);
-                TemporalAccessor temporalAccessor = qVar.f31153a;
+                TemporalAccessor temporalAccessor = qVar.f30502a;
                 j$.time.temporal.a aVar = j$.time.temporal.a.NANO_OF_SECOND;
                 Long valueOf = temporalAccessor.j(aVar) ? Long.valueOf(temporalAccessor.m(aVar)) : null;
                 int i10 = 0;
@@ -42,7 +42,7 @@ public final class g implements e {
                     return false;
                 }
                 long longValue = a10.longValue();
-                int a11 = aVar.f31183b.a(valueOf != null ? valueOf.longValue() : 0L, aVar);
+                int a11 = aVar.f30532b.a(valueOf != null ? valueOf.longValue() : 0L, aVar);
                 if (longValue >= -62167219200L) {
                     long j10 = longValue - 253402300800L;
                     long floorDiv = Math.floorDiv(j10, 315569520000L) + 1;
@@ -52,7 +52,7 @@ public final class g implements e {
                         sb2.append(floorDiv);
                     }
                     sb2.append(B);
-                    if (B.f31061b.f31066c == 0) {
+                    if (B.f30410b.f30415c == 0) {
                         sb2.append(":00");
                     }
                 } else {
@@ -62,11 +62,11 @@ public final class g implements e {
                     LocalDateTime B2 = LocalDateTime.B(j13 - 62167219200L, 0, ZoneOffset.UTC);
                     int length = sb2.length();
                     sb2.append(B2);
-                    if (B2.f31061b.f31066c == 0) {
+                    if (B2.f30410b.f30415c == 0) {
                         sb2.append(":00");
                     }
                     if (j12 < 0) {
-                        if (B2.f31060a.getYear() == -10000) {
+                        if (B2.f30409a.getYear() == -10000) {
                             sb2.replace(length, length + 2, Long.toString(j12 - 1));
                         } else if (j13 == 0) {
                             sb2.insert(length, j12);
@@ -91,10 +91,10 @@ public final class g implements e {
                 sb2.append('Z');
                 return true;
             default:
-                j$.time.c cVar = DateTimeFormatterBuilder.f31105f;
-                TemporalAccessor temporalAccessor2 = qVar.f31153a;
+                j$.time.c cVar = DateTimeFormatterBuilder.f30454f;
+                TemporalAccessor temporalAccessor2 = qVar.f30502a;
                 Object a12 = temporalAccessor2.a(cVar);
-                if (a12 == null && qVar.f31155c == 0) {
+                if (a12 == null && qVar.f30504c == 0) {
                     throw new DateTimeException("Unable to extract value: " + temporalAccessor2.getClass());
                 }
                 j$.time.k kVar = (j$.time.k) a12;
@@ -110,7 +110,7 @@ public final class g implements e {
     public final int t(o oVar, CharSequence charSequence, int i10) {
         int i11;
         int i12 = 1;
-        switch (this.f31122a) {
+        switch (this.f30471a) {
             case 0:
                 DateTimeFormatterBuilder dateTimeFormatterBuilder = new DateTimeFormatterBuilder();
                 dateTimeFormatterBuilder.a(DateTimeFormatter.ISO_LOCAL_DATE);
@@ -126,13 +126,13 @@ public final class g implements e {
                 j$.time.temporal.a aVar4 = j$.time.temporal.a.NANO_OF_SECOND;
                 dateTimeFormatterBuilder.b(new f(aVar4));
                 dateTimeFormatterBuilder.c('Z');
-                d dVar = dateTimeFormatterBuilder.toFormatter().f31100a;
-                if (dVar.f31116b) {
-                    dVar = new d(dVar.f31115a, false);
+                d dVar = dateTimeFormatterBuilder.toFormatter().f30449a;
+                if (dVar.f30465b) {
+                    dVar = new d(dVar.f30464a, false);
                 }
-                o oVar2 = new o(oVar.f31145a);
-                oVar2.f31146b = oVar.f31146b;
-                oVar2.f31147c = oVar.f31147c;
+                o oVar2 = new o(oVar.f30494a);
+                oVar2.f30495b = oVar.f30495b;
+                oVar2.f30496c = oVar.f30496c;
                 int t10 = dVar.t(oVar2, charSequence, i10);
                 if (t10 < 0) {
                     return t10;
@@ -149,7 +149,7 @@ public final class g implements e {
                 if (intValue3 == 24 && intValue4 == 0 && intValue5 == 0 && intValue6 == 0) {
                     intValue3 = 0;
                 } else if (intValue3 == 23 && intValue4 == 59 && intValue5 == 60) {
-                    oVar.c().f31162d = true;
+                    oVar.c().f30511d = true;
                     i12 = 0;
                     intValue5 = 59;
                 } else {
@@ -157,7 +157,7 @@ public final class g implements e {
                 }
                 int i13 = ((int) longValue) % 10000;
                 try {
-                    LocalDateTime localDateTime = LocalDateTime.f31058c;
+                    LocalDateTime localDateTime = LocalDateTime.f30407c;
                     LocalDate of2 = LocalDate.of(i13, intValue, intValue2);
                     LocalTime of3 = LocalTime.of(intValue3, intValue4, intValue5, 0);
                     return oVar.f(aVar4, intValue6, i10, oVar.f(j$.time.temporal.a.INSTANT_SECONDS, new LocalDateTime(of2, of3).G(of2.F(i12), of3).q(ZoneOffset.UTC) + Math.multiplyExact(longValue / 10000, 315569520000L), i10, t10));
@@ -170,39 +170,39 @@ public final class g implements e {
                     if (i10 != length) {
                         char charAt = charSequence.charAt(i10);
                         if (charAt == '+' || charAt == '-') {
-                            return a(oVar, charSequence, i10, i10, i.f31130d);
+                            return a(oVar, charSequence, i10, i10, i.f30479d);
                         }
                         int i14 = i10 + 2;
                         if (length >= i14) {
                             char charAt2 = charSequence.charAt(i10 + 1);
                             if (oVar.a(charAt, 'U') && oVar.a(charAt2, 'T')) {
                                 int i15 = i10 + 3;
-                                return (length < i15 || !oVar.a(charSequence.charAt(i14), 'C')) ? a(oVar, charSequence, i10, i14, i.f31131e) : a(oVar, charSequence, i10, i15, i.f31131e);
+                                return (length < i15 || !oVar.a(charSequence.charAt(i14), 'C')) ? a(oVar, charSequence, i10, i14, i.f30480e) : a(oVar, charSequence, i10, i15, i.f30480e);
                             } else if (oVar.a(charAt, 'G') && length >= (i11 = i10 + 3) && oVar.a(charAt2, 'M') && oVar.a(charSequence.charAt(i14), 'T')) {
-                                return a(oVar, charSequence, i10, i11, i.f31131e);
+                                return a(oVar, charSequence, i10, i11, i.f30480e);
                             }
                         }
-                        CopyOnWriteArrayList copyOnWriteArrayList = j$.time.zone.e.f31222b;
-                        HashSet hashSet = new HashSet(((ConcurrentHashMap) j$.time.zone.e.f31223c).keySet());
+                        CopyOnWriteArrayList copyOnWriteArrayList = j$.time.zone.e.f30571b;
+                        HashSet hashSet = new HashSet(((ConcurrentHashMap) j$.time.zone.e.f30572c).keySet());
                         int size = hashSet.size();
-                        Map.Entry entry = oVar.f31146b ? f31120b : f31121c;
+                        Map.Entry entry = oVar.f30495b ? f30469b : f30470c;
                         if (entry == null || ((Integer) entry.getKey()).intValue() != size) {
                             synchronized (this) {
                                 try {
-                                    entry = oVar.f31146b ? f31120b : f31121c;
+                                    entry = oVar.f30495b ? f30469b : f30470c;
                                     if (entry == null || ((Integer) entry.getKey()).intValue() != size) {
                                         Integer valueOf = Integer.valueOf(size);
-                                        k kVar = oVar.f31146b ? new k("", null, null) : new k("", null, null);
+                                        k kVar = oVar.f30495b ? new k("", null, null) : new k("", null, null);
                                         Iterator it = hashSet.iterator();
                                         while (it.hasNext()) {
                                             String str = (String) it.next();
                                             kVar.a(str, str);
                                         }
                                         entry = new AbstractMap.SimpleImmutableEntry(valueOf, kVar);
-                                        if (oVar.f31146b) {
-                                            f31120b = entry;
+                                        if (oVar.f30495b) {
+                                            f30469b = entry;
                                         } else {
-                                            f31121c = entry;
+                                            f30470c = entry;
                                         }
                                     }
                                 } catch (Throwable th2) {
@@ -232,13 +232,13 @@ public final class g implements e {
             oVar.e(j$.time.k.w(upperCase));
             return i11;
         } else if (charSequence.charAt(i11) != '0' && !oVar.a(charSequence.charAt(i11), 'Z')) {
-            o oVar2 = new o(oVar.f31145a);
-            oVar2.f31146b = oVar.f31146b;
-            oVar2.f31147c = oVar.f31147c;
+            o oVar2 = new o(oVar.f30494a);
+            oVar2.f30495b = oVar.f30495b;
+            oVar2.f30496c = oVar.f30496c;
             int t10 = iVar.t(oVar2, charSequence, i11);
             try {
                 if (t10 < 0) {
-                    if (iVar == i.f31130d) {
+                    if (iVar == i.f30479d) {
                         return ~i10;
                     }
                     oVar.e(j$.time.k.w(upperCase));
@@ -256,7 +256,7 @@ public final class g implements e {
     }
 
     public final String toString() {
-        switch (this.f31122a) {
+        switch (this.f30471a) {
             case 0:
                 return "Instant()";
             default:

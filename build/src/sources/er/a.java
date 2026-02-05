@@ -1,452 +1,124 @@
 package er;
 
-import android.text.Spannable;
-import android.text.Spanned;
-import android.text.method.LinkMovementMethod;
-import android.widget.TextView;
-import dr.j;
-import dr.l;
-import dr.q;
-import dr.s;
-import er.b;
-import gv.p;
-import gv.r;
-import gv.t;
-import gv.u;
-import gv.v;
-import gv.w;
-import gv.x;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import android.content.Context;
+import android.net.Uri;
+import id.zelory.compressor.constraint.Compression;
+import java.io.File;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.jvm.internal.k;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+import kotlinx.coroutines.CoroutineScope;
+import ms.g;
+import ms.m0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a extends dr.a {
+public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f22580a = new ArrayList(0);
-
-    /* renamed from: b  reason: collision with root package name */
-    private boolean f22581b;
+    public static final a f21787a = new a();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: er.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class C0304a implements l.c {
-        C0304a() {
+    public static final class C0305a extends Lambda implements Function1 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final C0305a f21788d = new C0305a();
+
+        C0305a() {
+            super(1);
         }
 
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, x xVar) {
-            lVar.b(xVar);
-            int length = lVar.length();
-            lVar.builder().append((char) 160);
-            lVar.y(xVar, length);
-            lVar.E(xVar);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class b implements l.c {
-        b() {
+        public final void a(Compression receiver) {
+            Intrinsics.checkParameterIsNotNull(receiver, "$receiver");
+            fr.c.b(receiver, 0, 0, null, 0, 15, null);
         }
 
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, gv.i iVar) {
-            lVar.b(iVar);
-            int length = lVar.length();
-            lVar.l(iVar);
-            er.b.f22586d.d(lVar.o(), Integer.valueOf(iVar.n()));
-            lVar.y(iVar, length);
-            lVar.E(iVar);
+        @Override // kotlin.jvm.functions.Function1
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((Compression) obj);
+            return Unit.f31988a;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class c implements l.c {
-        c() {
+    public static final class b extends k implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        private CoroutineScope f21789d;
+
+        /* renamed from: e  reason: collision with root package name */
+        int f21790e;
+
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ Function1 f21791i;
+
+        /* renamed from: o  reason: collision with root package name */
+        final /* synthetic */ Context f21792o;
+
+        /* renamed from: p  reason: collision with root package name */
+        final /* synthetic */ Uri f21793p;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        b(Function1 function1, Context context, Uri uri, Continuation continuation) {
+            super(2, continuation);
+            this.f21791i = function1;
+            this.f21792o = context;
+            this.f21793p = uri;
         }
 
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, u uVar) {
-            lVar.builder().append(' ');
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class d implements l.c {
-        d() {
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation completion) {
+            Intrinsics.checkParameterIsNotNull(completion, "completion");
+            b bVar = new b(this.f21791i, this.f21792o, this.f21793p, completion);
+            bVar.f21789d = (CoroutineScope) obj;
+            return bVar;
         }
 
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, gv.h hVar) {
-            lVar.B();
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class e implements l.c {
-        e() {
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(Object obj, Object obj2) {
+            return ((b) create(obj, (Continuation) obj2)).invokeSuspend(Unit.f31988a);
         }
 
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, t tVar) {
-            boolean y10 = a.y(tVar);
-            if (!y10) {
-                lVar.b(tVar);
-            }
-            int length = lVar.length();
-            lVar.l(tVar);
-            er.b.f22588f.d(lVar.o(), Boolean.valueOf(y10));
-            lVar.y(tVar, length);
-            if (!y10) {
-                lVar.E(tVar);
-            }
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class f implements l.c {
-        f() {
-        }
-
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, gv.n nVar) {
-            int length = lVar.length();
-            lVar.l(nVar);
-            er.b.f22587e.d(lVar.o(), nVar.m());
-            lVar.y(nVar, length);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class g implements l.c {
-        g() {
-        }
-
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, w wVar) {
-            String m10 = wVar.m();
-            lVar.builder().d(m10);
-            if (!a.this.f22580a.isEmpty()) {
-                lVar.length();
-                m10.length();
-                Iterator it = a.this.f22580a.iterator();
-                if (it.hasNext()) {
-                    android.support.v4.media.session.b.a(it.next());
-                    throw null;
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            ur.b.f();
+            if (this.f21790e == 0) {
+                kotlin.c.b(obj);
+                Compression compression = new Compression();
+                this.f21791i.invoke(compression);
+                File d10 = c.d(this.f21792o, this.f21793p);
+                for (fr.a aVar : compression.b()) {
+                    while (!aVar.isSatisfied(d10)) {
+                        d10 = aVar.satisfy(d10);
+                    }
                 }
+                return d10;
             }
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class h implements l.c {
-        h() {
+    private a() {
+    }
+
+    public static /* synthetic */ Object b(a aVar, Context context, Uri uri, CoroutineContext coroutineContext, Function1 function1, Continuation continuation, int i10, Object obj) {
+        if ((i10 & 4) != 0) {
+            coroutineContext = m0.b();
         }
-
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, v vVar) {
-            int length = lVar.length();
-            lVar.l(vVar);
-            lVar.y(vVar, length);
+        CoroutineContext coroutineContext2 = coroutineContext;
+        if ((i10 & 8) != 0) {
+            function1 = C0305a.f21788d;
         }
+        return aVar.a(context, uri, coroutineContext2, function1, continuation);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class i implements l.c {
-        i() {
-        }
-
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, gv.f fVar) {
-            int length = lVar.length();
-            lVar.l(fVar);
-            lVar.y(fVar, length);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class j implements l.c {
-        j() {
-        }
-
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, gv.b bVar) {
-            lVar.b(bVar);
-            int length = lVar.length();
-            lVar.l(bVar);
-            lVar.y(bVar, length);
-            lVar.E(bVar);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class k implements l.c {
-        k() {
-        }
-
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, gv.d dVar) {
-            int length = lVar.length();
-            lVar.builder().append((char) 160).d(dVar.m()).append((char) 160);
-            lVar.y(dVar, length);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class l implements l.c {
-        l() {
-        }
-
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, gv.g gVar) {
-            a.I(lVar, gVar.q(), gVar.r(), gVar);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class m implements l.c {
-        m() {
-        }
-
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, gv.m mVar) {
-            a.I(lVar, null, mVar.n(), mVar);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class n implements l.c {
-        n() {
-        }
-
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, gv.l lVar2) {
-            s a10 = lVar.z().c().a(gv.l.class);
-            if (a10 == null) {
-                lVar.l(lVar2);
-                return;
-            }
-            int length = lVar.length();
-            lVar.l(lVar2);
-            if (length == lVar.length()) {
-                lVar.builder().append((char) 65532);
-            }
-            dr.g z10 = lVar.z();
-            String b10 = z10.a().b(lVar2.m());
-            q o10 = lVar.o();
-            hr.c.f28127a.d(o10, b10);
-            hr.c.f28128b.d(o10, Boolean.valueOf(lVar2.f() instanceof gv.n));
-            hr.c.f28129c.d(o10, null);
-            lVar.c(length, a10.a(z10, o10));
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class o implements l.c {
-        o() {
-        }
-
-        @Override // dr.l.c
-        /* renamed from: b */
-        public void a(dr.l lVar, gv.q qVar) {
-            int length = lVar.length();
-            lVar.l(qVar);
-            gv.a f10 = qVar.f();
-            if (f10 instanceof gv.s) {
-                gv.s sVar = (gv.s) f10;
-                int q10 = sVar.q();
-                er.b.f22583a.d(lVar.o(), b.a.ORDERED);
-                er.b.f22585c.d(lVar.o(), Integer.valueOf(q10));
-                sVar.s(sVar.q() + 1);
-            } else {
-                er.b.f22583a.d(lVar.o(), b.a.BULLET);
-                er.b.f22584b.d(lVar.o(), Integer.valueOf(a.B(qVar)));
-            }
-            lVar.y(qVar, length);
-            if (lVar.r(qVar)) {
-                lVar.B();
-            }
-        }
-    }
-
-    protected a() {
-    }
-
-    private static void A(l.b bVar) {
-        bVar.a(gv.q.class, new o());
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static int B(r rVar) {
-        int i10 = 0;
-        for (r f10 = rVar.f(); f10 != null; f10 = f10.f()) {
-            if (f10 instanceof gv.q) {
-                i10++;
-            }
-        }
-        return i10;
-    }
-
-    private static void C(l.b bVar) {
-        bVar.a(gv.s.class, new er.d());
-    }
-
-    private static void D(l.b bVar) {
-        bVar.a(t.class, new e());
-    }
-
-    private static void E(l.b bVar) {
-        bVar.a(u.class, new c());
-    }
-
-    private static void F(l.b bVar) {
-        bVar.a(v.class, new h());
-    }
-
-    private void G(l.b bVar) {
-        bVar.a(w.class, new g());
-    }
-
-    private static void H(l.b bVar) {
-        bVar.a(x.class, new C0304a());
-    }
-
-    static void I(dr.l lVar, String str, String str2, r rVar) {
-        lVar.b(rVar);
-        int length = lVar.length();
-        lVar.builder().append((char) 160).append('\n').append(lVar.z().d().a(str, str2));
-        lVar.B();
-        lVar.builder().append((char) 160);
-        er.b.f22589g.d(lVar.o(), str);
-        lVar.y(rVar, length);
-        lVar.E(rVar);
-    }
-
-    private static void o(l.b bVar) {
-        bVar.a(gv.b.class, new j());
-    }
-
-    private static void p(l.b bVar) {
-        bVar.a(gv.c.class, new er.d());
-    }
-
-    private static void q(l.b bVar) {
-        bVar.a(gv.d.class, new k());
-    }
-
-    public static a r() {
-        return new a();
-    }
-
-    private static void s(l.b bVar) {
-        bVar.a(gv.f.class, new i());
-    }
-
-    private static void t(l.b bVar) {
-        bVar.a(gv.g.class, new l());
-    }
-
-    private static void u(l.b bVar) {
-        bVar.a(gv.h.class, new d());
-    }
-
-    private static void v(l.b bVar) {
-        bVar.a(gv.i.class, new b());
-    }
-
-    private static void w(l.b bVar) {
-        bVar.a(gv.l.class, new n());
-    }
-
-    private static void x(l.b bVar) {
-        bVar.a(gv.m.class, new m());
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static boolean y(t tVar) {
-        gv.a f10 = tVar.f();
-        if (f10 != null) {
-            r f11 = f10.f();
-            if (f11 instanceof p) {
-                return ((p) f11).n();
-            }
-            return false;
-        }
-        return false;
-    }
-
-    private static void z(l.b bVar) {
-        bVar.a(gv.n.class, new f());
-    }
-
-    @Override // dr.i
-    public void d(TextView textView) {
-        if (!this.f22581b && textView.getMovementMethod() == null) {
-            textView.setMovementMethod(LinkMovementMethod.getInstance());
-        }
-    }
-
-    @Override // dr.i
-    public void f(j.a aVar) {
-        fr.b bVar = new fr.b();
-        aVar.a(v.class, new fr.h()).a(gv.f.class, new fr.d()).a(gv.b.class, new fr.a()).a(gv.d.class, new fr.c()).a(gv.g.class, bVar).a(gv.m.class, bVar).a(gv.q.class, new fr.g()).a(gv.i.class, new fr.e()).a(gv.n.class, new fr.f()).a(x.class, new fr.i());
-    }
-
-    @Override // dr.i
-    public void j(l.b bVar) {
-        G(bVar);
-        F(bVar);
-        s(bVar);
-        o(bVar);
-        q(bVar);
-        t(bVar);
-        x(bVar);
-        w(bVar);
-        p(bVar);
-        C(bVar);
-        A(bVar);
-        H(bVar);
-        v(bVar);
-        E(bVar);
-        u(bVar);
-        D(bVar);
-        z(bVar);
-    }
-
-    @Override // dr.i
-    public void k(TextView textView, Spanned spanned) {
-        gr.i.a(textView, spanned);
-        if (spanned instanceof Spannable) {
-            gr.k.a((Spannable) spanned, textView);
-        }
+    public final Object a(Context context, Uri uri, CoroutineContext coroutineContext, Function1 function1, Continuation continuation) {
+        return g.g(coroutineContext, new b(function1, context, uri, null), continuation);
     }
 }

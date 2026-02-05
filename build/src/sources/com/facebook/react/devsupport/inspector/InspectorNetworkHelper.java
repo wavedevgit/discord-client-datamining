@@ -16,8 +16,8 @@ import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 import org.jetbrains.annotations.NotNull;
-import wr.c;
-import wt.b;
+import zr.c;
+import zt.b;
 @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\bÀ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0018\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0007R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082.¢\u0006\u0002\n\u0000¨\u0006\f"}, d2 = {"Lcom/facebook/react/devsupport/inspector/InspectorNetworkHelper;", "", "<init>", "()V", "client", "Lokhttp3/OkHttpClient;", "loadNetworkResource", "", "url", "", "listener", "Lcom/facebook/react/devsupport/inspector/InspectorNetworkRequestListener;", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class InspectorNetworkHelper {
@@ -43,25 +43,25 @@ public final class InspectorNetworkHelper {
                 Intrinsics.throwUninitializedPropertyAccessException("client");
                 okHttpClient = null;
             }
-            okHttpClient.a(b10).M0(new b() { // from class: com.facebook.react.devsupport.inspector.InspectorNetworkHelper$loadNetworkResource$1
-                @Override // wt.b
+            okHttpClient.a(b10).V(new b() { // from class: com.facebook.react.devsupport.inspector.InspectorNetworkHelper$loadNetworkResource$1
+                @Override // zt.b
                 public void onFailure(Call call, IOException e10) {
                     Intrinsics.checkNotNullParameter(call, "call");
                     Intrinsics.checkNotNullParameter(e10, "e");
-                    if (call.x()) {
+                    if (call.y()) {
                         return;
                     }
                     InspectorNetworkRequestListener.this.onError(e10.getMessage());
                 }
 
-                @Override // wt.b
+                @Override // zt.b
                 public void onResponse(Call call, Response response) {
                     Intrinsics.checkNotNullParameter(call, "call");
                     Intrinsics.checkNotNullParameter(response, "response");
-                    Headers l10 = response.l();
+                    Headers k10 = response.k();
                     HashMap hashMap = new HashMap();
-                    for (String str : l10.f()) {
-                        hashMap.put(str, l10.c(str));
+                    for (String str : k10.f()) {
+                        hashMap.put(str, k10.c(str));
                     }
                     InspectorNetworkRequestListener.this.onHeaders(response.h(), hashMap);
                     try {
@@ -77,11 +77,11 @@ public final class InspectorNetworkHelper {
                                 }
                                 inspectorNetworkRequestListener.onData(new String(bArr, 0, read, Charsets.UTF_8));
                             }
-                            Unit unit = Unit.f32464a;
+                            Unit unit = Unit.f31988a;
                             c.a(byteStream, null);
                         }
                         inspectorNetworkRequestListener.onCompletion();
-                        Unit unit2 = Unit.f32464a;
+                        Unit unit2 = Unit.f31988a;
                         c.a(a10, null);
                     } catch (IOException e10) {
                         InspectorNetworkRequestListener.this.onError(e10.getMessage());

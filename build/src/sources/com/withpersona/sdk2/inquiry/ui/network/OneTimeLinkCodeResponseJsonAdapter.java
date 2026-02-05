@@ -12,39 +12,39 @@ import org.jetbrains.annotations.NotNull;
 public final class OneTimeLinkCodeResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19439a;
+    private final m.b f19845a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19440b;
+    private final h f19846b;
 
     public OneTimeLinkCodeResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19439a = a10;
+        this.f19845a = a10;
         h f10 = moshi.f(Metadata.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19440b = f10;
+        this.f19846b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public OneTimeLinkCodeResponse fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         Metadata metadata = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f19439a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    metadata = (Metadata) this.f19440b.fromJson(reader);
+            int W = reader.W(this.f19845a);
+            if (W != -1) {
+                if (W == 0) {
+                    metadata = (Metadata) this.f19846b.fromJson(reader);
                 }
             } else {
                 reader.E0();
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         return new OneTimeLinkCodeResponse(metadata);
     }
 
@@ -53,9 +53,9 @@ public final class OneTimeLinkCodeResponseJsonAdapter extends h {
     public void toJson(t writer, OneTimeLinkCodeResponse oneTimeLinkCodeResponse) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (oneTimeLinkCodeResponse != null) {
-            writer.l();
-            writer.A0("meta");
-            this.f19440b.toJson(writer, oneTimeLinkCodeResponse.a());
+            writer.k();
+            writer.W("meta");
+            this.f19846b.toJson(writer, oneTimeLinkCodeResponse.a());
             writer.E();
             return;
         }

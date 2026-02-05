@@ -45,7 +45,7 @@ public final class NextStep_Selfie_AssetConfig_PromptPageJsonAdapter extends h {
     @NotNull
     public NextStep.Selfie.AssetConfig.PromptPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         RemoteImage remoteImage = null;
         RemoteImage remoteImage2 = null;
         RemoteImage remoteImage3 = null;
@@ -53,28 +53,28 @@ public final class NextStep_Selfie_AssetConfig_PromptPageJsonAdapter extends h {
         RemoteImage remoteImage5 = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 remoteImage2 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -3;
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 remoteImage3 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -5;
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 remoteImage4 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -9;
-            } else if (A0 == 4) {
+            } else if (W == 4) {
                 remoteImage5 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -17;
             }
         }
-        reader.y();
+        reader.z();
         if (i10 == -32) {
             RemoteImage remoteImage6 = remoteImage5;
             RemoteImage remoteImage7 = remoteImage4;
@@ -87,7 +87,7 @@ public final class NextStep_Selfie_AssetConfig_PromptPageJsonAdapter extends h {
         RemoteImage remoteImage12 = remoteImage;
         Constructor<NextStep.Selfie.AssetConfig.PromptPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Selfie.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, vm.c.f51688c);
+            constructor = NextStep.Selfie.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, ym.c.f54853c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -100,16 +100,16 @@ public final class NextStep_Selfie_AssetConfig_PromptPageJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Selfie.AssetConfig.PromptPage promptPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
-            writer.l();
-            writer.A0("headerPictograph");
+            writer.k();
+            writer.W("headerPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getHeaderPictograph());
-            writer.A0("selfiePictograph");
+            writer.W("selfiePictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getSelfiePictograph());
-            writer.A0("selfieCenterPictograph");
+            writer.W("selfieCenterPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getSelfieCenterPictograph());
-            writer.A0("selfieLeftPictograph");
+            writer.W("selfieLeftPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getSelfieLeftPictograph());
-            writer.A0("selfieRightPictograph");
+            writer.W("selfieRightPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getSelfieRightPictograph());
             writer.E();
             return;

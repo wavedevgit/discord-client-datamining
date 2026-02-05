@@ -2,50 +2,52 @@ package gf;
 
 import android.app.PendingIntent;
 import android.os.Bundle;
+import java.util.Objects;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class r0 extends a1 {
+public abstract class r0 extends y0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f26194d;
+    public final int f24884d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Bundle f26195e;
+    public final Bundle f24885e;
 
     /* renamed from: f  reason: collision with root package name */
-    final /* synthetic */ c f26196f;
+    final /* synthetic */ c f24886f;
 
     /* JADX INFO: Access modifiers changed from: protected */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public r0(c cVar, int i10, Bundle bundle) {
         super(cVar, Boolean.TRUE);
-        this.f26196f = cVar;
-        this.f26194d = i10;
-        this.f26195e = bundle;
+        Objects.requireNonNull(cVar);
+        this.f24886f = cVar;
+        this.f24884d = i10;
+        this.f24885e = bundle;
     }
 
-    @Override // gf.a1
+    @Override // gf.y0
     protected final /* bridge */ /* synthetic */ void a(Object obj) {
         Boolean bool = (Boolean) obj;
+        int i10 = this.f24884d;
         PendingIntent pendingIntent = null;
-        if (this.f26194d != 0) {
-            this.f26196f.g0(1, null);
-            Bundle bundle = this.f26195e;
-            if (bundle != null) {
-                pendingIntent = (PendingIntent) bundle.getParcelable("pendingIntent");
+        if (i10 == 0) {
+            if (!e()) {
+                this.f24886f.U(1, null);
+                f(new com.google.android.gms.common.b(8, null));
+                return;
             }
-            f(new com.google.android.gms.common.b(this.f26194d, pendingIntent));
-        } else if (!g()) {
-            this.f26196f.g0(1, null);
-            f(new com.google.android.gms.common.b(8, null));
+            return;
         }
+        this.f24886f.U(1, null);
+        Bundle bundle = this.f24885e;
+        if (bundle != null) {
+            pendingIntent = (PendingIntent) bundle.getParcelable("pendingIntent");
+        }
+        f(new com.google.android.gms.common.b(i10, pendingIntent));
     }
+
+    protected abstract boolean e();
 
     protected abstract void f(com.google.android.gms.common.b bVar);
-
-    protected abstract boolean g();
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // gf.a1
-    public final void b() {
-    }
 }

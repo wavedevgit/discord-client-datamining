@@ -3,10 +3,10 @@ package u0;
 public abstract class r {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final long[] f50376a = {-9187201950435737345L, -1};
+    public static final long[] f51148a = {-9187201950435737345L, -1};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final n f50377b = new n(0);
+    private static final n f51149b = new n(0);
 
     public static final int a(int i10) {
         if (i10 == 7) {

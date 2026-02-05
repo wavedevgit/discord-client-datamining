@@ -6,32 +6,32 @@ import java.nio.charset.Charset;
 public abstract class y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Charset f14007a = Charset.forName("US-ASCII");
+    static final Charset f14401a = Charset.forName("US-ASCII");
 
     /* renamed from: b  reason: collision with root package name */
-    static final Charset f14008b = Charset.forName("UTF-8");
+    static final Charset f14402b = Charset.forName("UTF-8");
 
     /* renamed from: c  reason: collision with root package name */
-    static final Charset f14009c = Charset.forName("ISO-8859-1");
+    static final Charset f14403c = Charset.forName("ISO-8859-1");
 
     /* renamed from: d  reason: collision with root package name */
-    public static final byte[] f14010d;
+    public static final byte[] f14404d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final ByteBuffer f14011e;
+    public static final ByteBuffer f14405e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final v0 f14012f;
+    public static final v0 f14406f;
 
     static {
         byte[] bArr = new byte[0];
-        f14010d = bArr;
-        f14011e = ByteBuffer.wrap(bArr);
-        int i10 = v0.f13996a;
+        f14404d = bArr;
+        f14405e = ByteBuffer.wrap(bArr);
+        int i10 = v0.f14390a;
         t0 t0Var = new t0(bArr, 0, 0, false, null);
         try {
             t0Var.c(0);
-            f14012f = t0Var;
+            f14406f = t0Var;
         } catch (a2 e10) {
             throw new IllegalArgumentException(e10);
         }
@@ -58,6 +58,6 @@ public abstract class y1 {
     }
 
     public static String d(byte[] bArr) {
-        return new String(bArr, f14008b);
+        return new String(bArr, f14402b);
     }
 }

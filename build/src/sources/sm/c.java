@@ -1,73 +1,152 @@
 package sm;
 
-import android.view.MotionEvent;
+import android.view.View;
 import android.view.ViewGroup;
-import com.facebook.react.uimanager.JSPointerDispatcher;
-import com.facebook.react.uimanager.events.EventDispatcher;
-import java.lang.reflect.Method;
-import kotlin.Lazy;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import android.view.ViewParent;
+import android.widget.EditText;
+import com.facebook.react.bridge.UiThreadUtil;
+import java.util.ArrayList;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
-import lr.l;
+import kotlin.ranges.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c extends JSPointerDispatcher {
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final a f49548b = new a(null);
+public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f49549a;
+    public static final c f49785a = new c();
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        private a() {
-        }
+    private c() {
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public c(ViewGroup viewGroup) {
-        super(viewGroup);
-        Intrinsics.checkNotNullParameter(viewGroup, "viewGroup");
-        this.f49549a = l.a(new Function0() { // from class: sm.b
-            @Override // kotlin.jvm.functions.Function0
-            public final Object invoke() {
-                Method g10;
-                g10 = c.g();
-                return g10;
+    private final EditText b(View view, int i10) {
+        ViewGroup viewGroup;
+        int i11;
+        int i12;
+        ViewParent parent = view.getParent();
+        if (parent instanceof ViewGroup) {
+            viewGroup = (ViewGroup) parent;
+        } else {
+            viewGroup = null;
+        }
+        if (viewGroup == null) {
+            return null;
+        }
+        int indexOfChild = viewGroup.indexOfChild(view);
+        if (i10 > 0) {
+            i11 = indexOfChild + 1;
+        } else {
+            i11 = indexOfChild - 1;
+        }
+        if (i10 > 0) {
+            i12 = viewGroup.getChildCount();
+        } else {
+            i12 = -1;
+        }
+        while (i11 != i12) {
+            View childAt = viewGroup.getChildAt(i11);
+            Intrinsics.checkNotNull(childAt);
+            EditText d10 = d(childAt, i10);
+            if (d10 != null) {
+                return d10;
             }
-        });
+            i11 += i10;
+        }
+        return b(viewGroup, i10);
     }
 
-    private final Method e() {
-        return (Method) this.f49549a.getValue();
+    private final EditText c(ViewGroup viewGroup, int i10) {
+        kotlin.ranges.a p10;
+        int childCount = viewGroup.getChildCount();
+        if (i10 > 0) {
+            p10 = d.u(0, childCount);
+        } else {
+            p10 = d.p(childCount - 1, 0);
+        }
+        int d10 = p10.d();
+        int e10 = p10.e();
+        int f10 = p10.f();
+        if ((f10 <= 0 || d10 > e10) && (f10 >= 0 || e10 > d10)) {
+            return null;
+        }
+        while (true) {
+            View childAt = viewGroup.getChildAt(d10);
+            Intrinsics.checkNotNull(childAt);
+            EditText d11 = d(childAt, i10);
+            if (d11 != null) {
+                return d11;
+            }
+            if (d10 != e10) {
+                d10 += f10;
+            } else {
+                return null;
+            }
+        }
+    }
+
+    private final EditText d(View view, int i10) {
+        if (i(view)) {
+            Intrinsics.checkNotNull(view, "null cannot be cast to non-null type android.widget.EditText");
+            return (EditText) view;
+        } else if (view instanceof ViewGroup) {
+            return c((ViewGroup) view, i10);
+        } else {
+            return null;
+        }
+    }
+
+    private final EditText e(View view) {
+        return b(view, 1);
+    }
+
+    private final EditText f(View view) {
+        return b(view, -1);
+    }
+
+    private static final void h(List list, View view) {
+        if (f49785a.i(view)) {
+            Intrinsics.checkNotNull(view, "null cannot be cast to non-null type android.widget.EditText");
+            list.add((EditText) view);
+        } else if (view instanceof ViewGroup) {
+            ViewGroup viewGroup = (ViewGroup) view;
+            int childCount = viewGroup.getChildCount();
+            for (int i10 = 0; i10 < childCount; i10++) {
+                h(list, viewGroup.getChildAt(i10));
+            }
+        }
+    }
+
+    private final boolean i(View view) {
+        if ((view instanceof EditText) && ((EditText) view).isEnabled()) {
+            return true;
+        }
+        return false;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Method g() {
-        try {
-            try {
-                return JSPointerDispatcher.class.getMethod("handleMotionEvent", MotionEvent.class, EventDispatcher.class, Boolean.TYPE);
-            } catch (NoSuchMethodException unused) {
-                return null;
-            }
-        } catch (NoSuchMethodException unused2) {
-            return JSPointerDispatcher.class.getMethod("handleMotionEvent", MotionEvent.class, EventDispatcher.class);
-        }
+    public static final void k(EditText editText) {
+        jm.c.e(editText);
     }
 
-    public final void f(MotionEvent motionEvent, EventDispatcher eventDispatcher, boolean z10) {
-        Method e10 = e();
-        if (e10 != null) {
-            if (sm.a.a(e10) == 3) {
-                e10.invoke(this, motionEvent, eventDispatcher, Boolean.valueOf(z10));
-            } else {
-                e10.invoke(this, motionEvent, eventDispatcher);
-            }
+    public final List g(View view) {
+        ArrayList arrayList = new ArrayList();
+        h(arrayList, view);
+        return arrayList;
+    }
+
+    public final void j(String direction, View view) {
+        final EditText f10;
+        Intrinsics.checkNotNullParameter(direction, "direction");
+        Intrinsics.checkNotNullParameter(view, "view");
+        if (Intrinsics.areEqual(direction, "next")) {
+            f10 = e(view);
+        } else {
+            f10 = f(view);
         }
+        UiThreadUtil.runOnUiThread(new Runnable() { // from class: sm.b
+            @Override // java.lang.Runnable
+            public final void run() {
+                c.k(f10);
+            }
+        });
     }
 }

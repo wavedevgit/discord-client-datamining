@@ -34,7 +34,7 @@ public final class ImageQualityCalculator$calculateQualityMetrics$2 extends k im
     public final Object invokeSuspend(Object obj) {
         Bitmap decodeByteArraySafely;
         Bitmap decodeByteArraySafely2;
-        Object f10 = rr.b.f();
+        Object f10 = ur.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -60,6 +60,6 @@ public final class ImageQualityCalculator$calculateQualityMetrics$2 extends k im
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super ImageQualityCalculator.ImageQualityMetrics> continuation) {
-        return ((ImageQualityCalculator$calculateQualityMetrics$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((ImageQualityCalculator$calculateQualityMetrics$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

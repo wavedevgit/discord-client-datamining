@@ -1,37 +1,68 @@
 package com.google.android.gms.common;
 
-import java.lang.ref.WeakReference;
+import android.os.RemoteException;
+import android.util.Log;
+import gf.o1;
+import gf.p1;
+import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class w extends u {
+abstract class w extends o1 {
 
-    /* renamed from: e  reason: collision with root package name */
-    private static final WeakReference f13458e = new WeakReference(null);
+    /* renamed from: c  reason: collision with root package name */
+    private final int f13853c;
 
-    /* renamed from: d  reason: collision with root package name */
-    private WeakReference f13459d;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* JADX INFO: Access modifiers changed from: protected */
     public w(byte[] bArr) {
-        super(bArr);
-        this.f13459d = f13458e;
+        boolean z10;
+        if (bArr.length == 25) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        gf.q.a(z10);
+        this.f13853c = Arrays.hashCode(bArr);
     }
 
-    protected abstract byte[] S0();
-
-    @Override // com.google.android.gms.common.u
-    final byte[] h() {
-        byte[] bArr;
-        synchronized (this) {
-            try {
-                bArr = (byte[]) this.f13459d.get();
-                if (bArr == null) {
-                    bArr = S0();
-                    this.f13459d = new WeakReference(bArr);
-                }
-            } catch (Throwable th2) {
-                throw th2;
-            }
+    /* JADX INFO: Access modifiers changed from: protected */
+    public static byte[] h(String str) {
+        try {
+            return str.getBytes("ISO-8859-1");
+        } catch (UnsupportedEncodingException e10) {
+            throw new AssertionError(e10);
         }
-        return bArr;
+    }
+
+    @Override // gf.p1
+    public final sf.a b() {
+        return sf.b.W0(f());
+    }
+
+    public final boolean equals(Object obj) {
+        sf.a b10;
+        if (!(obj instanceof p1)) {
+            return false;
+        }
+        try {
+            p1 p1Var = (p1) obj;
+            if (p1Var.k() != this.f13853c || (b10 = p1Var.b()) == null) {
+                return false;
+            }
+            return Arrays.equals(f(), (byte[]) sf.b.h(b10));
+        } catch (RemoteException e10) {
+            Log.e("GoogleCertificates", "Failed to get Google certificates from remote", e10);
+            return false;
+        }
+    }
+
+    abstract byte[] f();
+
+    public final int hashCode() {
+        return this.f13853c;
+    }
+
+    @Override // gf.p1
+    public final int k() {
+        return this.f13853c;
     }
 }

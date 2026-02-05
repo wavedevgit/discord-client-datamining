@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/premium_marketing/PremiumFeaturesWumpus.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun61754: for (var _fun61754_ip = 0;;) switch (_fun61754_ip) {
+        _fun61777: for (var _fun61777_ip = 0;;) switch (_fun61777_ip) {
             case 0:
                 var1 = arg0;
                 var13 = var1.premiumType;
@@ -91,28 +91,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var13;
                 var1[1] = var5;
                 var0 = function() { // Environment: var0
-                    _fun61755: for (var _fun61755_ip = 0;;) switch (_fun61755_ip) {
+                    _fun61778: for (var _fun61778_ip = 0;;) switch (_fun61778_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var0 = _closure1_slot3;
                             var0 = var0.TIER_0;
                             if (!(var1 !== var0)) {
-                                _fun61755_ip = 96;
-                                continue _fun61755
+                                _fun61778_ip = 96;
+                                continue _fun61778
                             }
                         case 24:
                             var1 = _closure1_slot0;
                             var0 = _closure2_slot1;
                             var4 = _closure1_slot1;
                             if (var0) {
-                                _fun61755_ip = 48;
-                                continue _fun61755
+                                _fun61778_ip = 48;
+                                continue _fun61778
                             }
                         case 39:
                             var0 = 9;
                             var0 = var4[var0];
-                            _fun61755_ip = 55;
-                            continue _fun61755;
+                            _fun61778_ip = 55;
+                            continue _fun61778;
                         case 48:
                             var3 = 8;
                             var0 = var4[var3];
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var4.bind(var6)(var3);
                             var0.wumpusImageSource = var3;
                             var0.cloudsImageSource = var1;
-                            _fun61755_ip = 165;
-                            continue _fun61755;
+                            _fun61778_ip = 165;
+                            continue _fun61778;
                         case 96:
                             var1 = {};
                             var4 = _closure1_slot0;
@@ -141,14 +141,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot1;
                             var6 = _closure1_slot1;
                             if (var2) {
-                                _fun61755_ip = 145;
-                                continue _fun61755
+                                _fun61778_ip = 145;
+                                continue _fun61778
                             }
                         case 136:
                             var2 = 7;
                             var2 = var6[var2];
-                            _fun61755_ip = 152;
-                            continue _fun61755;
+                            _fun61778_ip = 152;
+                            continue _fun61778;
                         case 145:
                             var5 = 6;
                             var2 = var6[var5];
@@ -189,8 +189,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.TIER_0;
                 var11 = var13 === var11;
                 if (!var11) {
-                    _fun61754_ip = 212;
-                    continue _fun61754
+                    _fun61777_ip = 212;
+                    continue _fun61777
                 }
             case 206:
                 var11 = var12.wumpusLeft;
@@ -208,4 +208,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1623, 33, 1297, 7688, 7070, 7689, 7690, 7691, 7692, 7072, 4704, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1623, 33, 1297, 7707, 7090, 7708, 7709, 7710, 7711, 7092, 4704, 2]);

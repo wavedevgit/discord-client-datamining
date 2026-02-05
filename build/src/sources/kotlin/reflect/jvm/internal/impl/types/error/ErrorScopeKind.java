@@ -8,13 +8,13 @@ import org.jetbrains.annotations.NotNull;
 public final class ErrorScopeKind {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ ErrorScopeKind[] f35162e;
+    private static final /* synthetic */ ErrorScopeKind[] f34686e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f35163i;
+    private static final /* synthetic */ EnumEntries f34687i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f35164d;
+    private final String f34688d;
     public static final ErrorScopeKind CAPTURED_TYPE_SCOPE = new ErrorScopeKind("CAPTURED_TYPE_SCOPE", 0, "No member resolution should be done on captured type, it used only during constraint system resolution");
     public static final ErrorScopeKind INTEGER_LITERAL_TYPE_SCOPE = new ErrorScopeKind("INTEGER_LITERAL_TYPE_SCOPE", 1, "Scope for integer literal type (%s)");
     public static final ErrorScopeKind ERASED_RECEIVER_TYPE_SCOPE = new ErrorScopeKind("ERASED_RECEIVER_TYPE_SCOPE", 2, "Error scope for erased receiver type");
@@ -28,12 +28,12 @@ public final class ErrorScopeKind {
 
     static {
         ErrorScopeKind[] a10 = a();
-        f35162e = a10;
-        f35163i = sr.a.a(a10);
+        f34686e = a10;
+        f34687i = vr.a.a(a10);
     }
 
     private ErrorScopeKind(String str, int i10, String str2) {
-        this.f35164d = str2;
+        this.f34688d = str2;
     }
 
     private static final /* synthetic */ ErrorScopeKind[] a() {
@@ -45,11 +45,11 @@ public final class ErrorScopeKind {
     }
 
     public static ErrorScopeKind[] values() {
-        return (ErrorScopeKind[]) f35162e.clone();
+        return (ErrorScopeKind[]) f34686e.clone();
     }
 
     @NotNull
     public final String getDebugMessage() {
-        return this.f35164d;
+        return this.f34688d;
     }
 }

@@ -2,62 +2,46 @@ package ru;
 
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import sv.d;
+import kotlin.text.StringsKt;
+import ru.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements nu.b {
+public interface b extends ru.a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final b f49126a = new b();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static List a(b bVar, Comparable comparable, Comparable comparable2) {
+            boolean z10 = comparable instanceof Number;
+            if (z10 && (comparable2 instanceof Number)) {
+                return CollectionsKt.o(Double.valueOf(((Number) comparable).doubleValue()), Double.valueOf(((Number) comparable2).doubleValue()));
+            }
+            if ((comparable instanceof String) && (comparable2 instanceof Number)) {
+                return CollectionsKt.o(StringsKt.p((String) comparable), Double.valueOf(((Number) comparable2).doubleValue()));
+            }
+            if (z10 && (comparable2 instanceof String)) {
+                return CollectionsKt.o(Double.valueOf(((Number) comparable).doubleValue()), StringsKt.p((String) comparable2));
+            }
+            if (!(comparable instanceof Boolean) && !(comparable2 instanceof Boolean)) {
+                return bVar.d(comparable, comparable2);
+            }
+            return CollectionsKt.o(bVar.c(comparable), bVar.c(comparable2));
+        }
 
-    private b() {
+        public static List b(b bVar, Comparable comparable, Comparable comparable2) {
+            if (comparable != null && comparable2 != null && comparable.getClass() == comparable2.getClass()) {
+                return CollectionsKt.o(comparable, comparable2);
+            }
+            if (comparable == null && comparable2 == null) {
+                return CollectionsKt.o((Void) comparable, (Void) comparable2);
+            }
+            return null;
+        }
+
+        public static Boolean c(b bVar, Object obj) {
+            return a.C0629a.a(bVar, obj);
+        }
     }
 
-    @Override // nu.b
-    public Object f(Object obj, Object obj2) {
-        List list;
-        long j10;
-        List list2;
-        Object obj3;
-        List list3;
-        Object firstOrNull;
-        String obj4;
-        boolean z10 = obj instanceof List;
-        List list4 = null;
-        if (z10) {
-            list = (List) obj;
-        } else {
-            list = null;
-        }
-        if (list != null && (firstOrNull = CollectionsKt.firstOrNull(list)) != null && (obj4 = firstOrNull.toString()) != null) {
-            j10 = d.c(obj4);
-        } else {
-            j10 = 0;
-        }
-        if (z10) {
-            list2 = (List) obj;
-        } else {
-            list2 = null;
-        }
-        if (list2 != null) {
-            obj3 = sv.c.b(list2);
-        } else {
-            obj3 = null;
-        }
-        if (obj3 instanceof List) {
-            list3 = (List) obj3;
-        } else {
-            list3 = null;
-        }
-        if (list3 == null) {
-            list3 = CollectionsKt.l();
-        }
-        List f10 = a.f49125a.f(list3, obj2);
-        if (list3.size() - f10.size() < j10) {
-            list4 = f10;
-        }
-        if (list4 == null) {
-            return CollectionsKt.l();
-        }
-        return list4;
-    }
+    List d(Comparable comparable, Comparable comparable2);
+
+    List g(Comparable comparable, Comparable comparable2);
 }

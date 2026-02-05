@@ -1,90 +1,211 @@
 package zm;
 
-import android.view.View;
-import android.view.ViewParent;
-import androidx.lifecycle.Lifecycle;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.r0;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
 import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
+import kotlinx.coroutines.CoroutineScope;
+import zm.t;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface d extends LifecycleOwner {
+public final class d implements zm.a, h {
 
-    /* renamed from: n */
-    public static final a f56072n = a.f56073a;
+    /* renamed from: a  reason: collision with root package name */
+    private final zm.a f56050a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final t.b f56051b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
+    static final class a extends Lambda implements Function4 {
+        a() {
+            super(4);
+        }
 
+        @Override // kotlin.jvm.functions.Function4
         /* renamed from: a */
-        static final /* synthetic */ a f56073a = new a();
-
-        /* renamed from: zm.d$a$a */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0786a extends Lambda implements Function1 {
-
-            /* renamed from: d */
-            public static final C0786a f56074d = new C0786a();
-
-            C0786a() {
-                super(1);
-            }
-
-            @Override // kotlin.jvm.functions.Function1
-            /* renamed from: a */
-            public final Lifecycle invoke(View v10) {
-                Intrinsics.checkNotNullParameter(v10, "v");
-                return a.f56073a.b(v10);
-            }
-        }
-
-        private a() {
-        }
-
-        public final Lifecycle b(View view) {
-            View view2;
-            LifecycleOwner a10;
-            ViewParent parent = view.getParent();
-            Lifecycle lifecycle = null;
-            if (parent instanceof View) {
-                view2 = (View) parent;
-            } else {
-                view2 = null;
-            }
-            if (view2 != null && (a10 = c.f56071a.a(view2)) != null) {
-                lifecycle = a10.getLifecycle();
-            }
-            if (lifecycle != null) {
-                return lifecycle;
-            }
-            throw new IllegalStateException(("Expected parent or context of " + view + " to have or be a ViewTreeLifecycleOwner").toString());
-        }
-
-        public static /* synthetic */ void e(a aVar, View view, Function1 function1, int i10, Object obj) {
-            if ((i10 & 2) != 0) {
-                function1 = C0786a.f56074d;
-            }
-            aVar.d(view, function1);
-        }
-
-        public final d c(View view) {
-            Intrinsics.checkNotNullParameter(view, "view");
-            LifecycleOwner a10 = r0.a(view);
-            if (a10 instanceof d) {
-                return (d) a10;
-            }
-            return null;
-        }
-
-        public final void d(View view, Function1 findParentLifecycle) {
-            Intrinsics.checkNotNullParameter(view, "view");
-            Intrinsics.checkNotNullParameter(findParentLifecycle, "findParentLifecycle");
-            b bVar = new b(findParentLifecycle, false, 2, null);
-            r0.b(view, bVar);
-            view.addOnAttachStateChangeListener(bVar);
+        public final Object invoke(q iChild, Object obj, String iKey, Function1 iHandler) {
+            Intrinsics.checkNotNullParameter(iChild, "iChild");
+            Intrinsics.checkNotNullParameter(iKey, "iKey");
+            Intrinsics.checkNotNullParameter(iHandler, "iHandler");
+            return d.this.f56050a.b(iChild, obj, iKey, iHandler);
         }
     }
 
-    void j();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class b extends Lambda implements Function2 {
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
+
+            /* renamed from: d  reason: collision with root package name */
+            int f56054d;
+
+            /* renamed from: e  reason: collision with root package name */
+            final /* synthetic */ Function1 f56055e;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            a(Function1 function1, Continuation continuation) {
+                super(2, continuation);
+                this.f56055e = function1;
+            }
+
+            @Override // kotlin.coroutines.jvm.internal.a
+            public final Continuation create(Object obj, Continuation continuation) {
+                return new a(this.f56055e, continuation);
+            }
+
+            @Override // kotlin.coroutines.jvm.internal.a
+            public final Object invokeSuspend(Object obj) {
+                Object f10 = ur.b.f();
+                int i10 = this.f56054d;
+                if (i10 != 0) {
+                    if (i10 == 1) {
+                        kotlin.c.b(obj);
+                    } else {
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                    }
+                } else {
+                    kotlin.c.b(obj);
+                    Function1 function1 = this.f56055e;
+                    this.f56054d = 1;
+                    if (function1.invoke(this) == f10) {
+                        return f10;
+                    }
+                }
+                return Unit.f31988a;
+            }
+
+            @Override // kotlin.jvm.functions.Function2
+            public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            }
+        }
+
+        b() {
+            super(2);
+        }
+
+        public final void a(String iKey, Function1 iSideEffect) {
+            Intrinsics.checkNotNullParameter(iKey, "iKey");
+            Intrinsics.checkNotNullParameter(iSideEffect, "iSideEffect");
+            d.this.f56050a.a(iKey, new a(iSideEffect, null));
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            a((String) obj, (Function1) obj2);
+            return Unit.f31988a;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class c extends kotlin.coroutines.jvm.internal.k implements Function1 {
+
+        /* renamed from: d  reason: collision with root package name */
+        int f56056d;
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ Function2 f56057e;
+
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ d f56058i;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        c(Function2 function2, d dVar, Continuation continuation) {
+            super(1, continuation);
+            this.f56057e = function2;
+            this.f56058i = dVar;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Continuation continuation) {
+            return new c(this.f56057e, this.f56058i, continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            Object f10 = ur.b.f();
+            int i10 = this.f56056d;
+            if (i10 != 0) {
+                if (i10 == 1) {
+                    kotlin.c.b(obj);
+                } else {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+            } else {
+                kotlin.c.b(obj);
+                Function2 function2 = this.f56057e;
+                CoroutineScope a10 = kotlinx.coroutines.i.a(getContext());
+                this.f56056d = 1;
+                if (function2.invoke(a10, this) == f10) {
+                    return f10;
+                }
+            }
+            return Unit.f31988a;
+        }
+
+        @Override // kotlin.jvm.functions.Function1
+        public final Object invoke(Continuation continuation) {
+            return ((c) create(continuation)).invokeSuspend(Unit.f31988a);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* renamed from: zm.d$d  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0786d extends Lambda implements Function1 {
+        C0786d() {
+            super(1);
+        }
+
+        public final void a(r interceptedAction) {
+            Intrinsics.checkNotNullParameter(interceptedAction, "interceptedAction");
+            d.this.f56050a.c().d(interceptedAction);
+        }
+
+        @Override // kotlin.jvm.functions.Function1
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((r) obj);
+            return Unit.f31988a;
+        }
+    }
+
+    public d(zm.a baseRenderContext, t.b interceptor) {
+        Intrinsics.checkNotNullParameter(baseRenderContext, "baseRenderContext");
+        Intrinsics.checkNotNullParameter(interceptor, "interceptor");
+        this.f56050a = baseRenderContext;
+        this.f56051b = interceptor;
+    }
+
+    @Override // zm.a
+    public void a(String key, Function2 sideEffect) {
+        Intrinsics.checkNotNullParameter(key, "key");
+        Intrinsics.checkNotNullParameter(sideEffect, "sideEffect");
+        this.f56051b.c(key, new c(sideEffect, this, null), new b());
+    }
+
+    @Override // zm.a
+    public Object b(q child, Object obj, String key, Function1 handler) {
+        Intrinsics.checkNotNullParameter(child, "child");
+        Intrinsics.checkNotNullParameter(key, "key");
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        return this.f56051b.b(child, obj, key, handler, new a());
+    }
+
+    @Override // zm.h
+    /* renamed from: f */
+    public void d(r value) {
+        Intrinsics.checkNotNullParameter(value, "value");
+        this.f56051b.a(value, new C0786d());
+    }
+
+    @Override // zm.a
+    public h c() {
+        return this;
+    }
 }

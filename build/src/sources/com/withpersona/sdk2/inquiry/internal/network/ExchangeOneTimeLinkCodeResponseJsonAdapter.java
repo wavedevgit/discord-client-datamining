@@ -13,50 +13,50 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponseJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18810a;
+    private final m.b f19216a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18811b;
+    private final com.squareup.moshi.h f19217b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f18812c;
+    private final com.squareup.moshi.h f19218c;
 
     public ExchangeOneTimeLinkCodeResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data", "meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18810a = a10;
+        this.f19216a = a10;
         com.squareup.moshi.h f10 = moshi.f(ExchangeOneTimeLinkCodeResponse.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18811b = f10;
+        this.f19217b = f10;
         com.squareup.moshi.h f11 = moshi.f(ExchangeOneTimeLinkCodeResponse.Metadata.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f18812c = f11;
+        this.f19218c = f11;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public ExchangeOneTimeLinkCodeResponse fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         ExchangeOneTimeLinkCodeResponse.Data data = null;
         ExchangeOneTimeLinkCodeResponse.Metadata metadata = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f18810a);
-            if (A0 != -1) {
-                if (A0 != 0) {
-                    if (A0 == 1) {
-                        metadata = (ExchangeOneTimeLinkCodeResponse.Metadata) this.f18812c.fromJson(reader);
+            int W = reader.W(this.f19216a);
+            if (W != -1) {
+                if (W != 0) {
+                    if (W == 1) {
+                        metadata = (ExchangeOneTimeLinkCodeResponse.Metadata) this.f19218c.fromJson(reader);
                     }
                 } else {
-                    data = (ExchangeOneTimeLinkCodeResponse.Data) this.f18811b.fromJson(reader);
+                    data = (ExchangeOneTimeLinkCodeResponse.Data) this.f19217b.fromJson(reader);
                 }
             } else {
                 reader.E0();
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         return new ExchangeOneTimeLinkCodeResponse(data, metadata);
     }
 
@@ -65,11 +65,11 @@ public final class ExchangeOneTimeLinkCodeResponseJsonAdapter extends com.square
     public void toJson(t writer, ExchangeOneTimeLinkCodeResponse exchangeOneTimeLinkCodeResponse) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (exchangeOneTimeLinkCodeResponse != null) {
-            writer.l();
-            writer.A0("data");
-            this.f18811b.toJson(writer, exchangeOneTimeLinkCodeResponse.a());
-            writer.A0("meta");
-            this.f18812c.toJson(writer, exchangeOneTimeLinkCodeResponse.b());
+            writer.k();
+            writer.W("data");
+            this.f19217b.toJson(writer, exchangeOneTimeLinkCodeResponse.a());
+            writer.W("meta");
+            this.f19218c.toJson(writer, exchangeOneTimeLinkCodeResponse.b());
             writer.E();
             return;
         }

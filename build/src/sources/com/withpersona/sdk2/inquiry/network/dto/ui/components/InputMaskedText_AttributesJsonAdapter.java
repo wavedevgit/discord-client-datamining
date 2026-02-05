@@ -53,7 +53,7 @@ public final class InputMaskedText_AttributesJsonAdapter extends h {
     @NotNull
     public InputMaskedText.Attributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         Boolean bool = null;
@@ -62,7 +62,7 @@ public final class InputMaskedText_AttributesJsonAdapter extends h {
         JsonLogicBoolean jsonLogicBoolean = null;
         JsonLogicBoolean jsonLogicBoolean2 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -90,7 +90,7 @@ public final class InputMaskedText_AttributesJsonAdapter extends h {
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new InputMaskedText.Attributes(str, str2, bool, str3, str4, jsonLogicBoolean, jsonLogicBoolean2);
     }
 
@@ -98,20 +98,20 @@ public final class InputMaskedText_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, InputMaskedText.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.l();
-            writer.A0("prefill");
+            writer.k();
+            writer.W("prefill");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefill());
-            writer.A0("mask");
+            writer.W("mask");
             this.nullableStringAdapter.toJson(writer, attributes.getMask());
-            writer.A0("secure");
+            writer.W("secure");
             this.nullableBooleanAdapter.toJson(writer, attributes.getSecure());
-            writer.A0("label");
+            writer.W("label");
             this.nullableStringAdapter.toJson(writer, attributes.getLabel());
-            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholder());
-            writer.A0(ViewProps.HIDDEN);
+            writer.W(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
-            writer.A0("disabled");
+            writer.W("disabled");
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getDisabled());
             writer.E();
             return;

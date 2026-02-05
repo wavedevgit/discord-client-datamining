@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/options/AppLauncherCommandOptionActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun105498: for (var _fun105498_ip = 0;;) switch (_fun105498_ip) {
+        _fun105559: for (var _fun105559_ip = 0;;) switch (_fun105559_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.option;
@@ -84,16 +84,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var3.scrollable;
                 var4 = undefined;
                 if (!(var10 === var4)) {
-                    _fun105498_ip = 36;
-                    continue _fun105498
+                    _fun105559_ip = 36;
+                    continue _fun105559
                 }
             case 34:
                 var10 = true;
             case 36:
                 var6 = var3.startExpanded;
                 if (!(var6 === var4)) {
-                    _fun105498_ip = 48;
-                    continue _fun105498
+                    _fun105559_ip = 48;
+                    continue _fun105559
                 }
             case 46:
                 var6 = true;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var14.ActionSheetCloseButton;
                 var14 = {};
                 var16 = function() {
-                    _fun105499: for (var _fun105499_ip = 0;;) switch (_fun105499_ip) {
+                    _fun105560: for (var _fun105560_ip = 0;;) switch (_fun105560_ip) {
                         case 0:
                             var2 = _closure1_slot1;
                             var1 = _closure1_slot2;
@@ -170,8 +170,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var2.onDismiss;
                             var2 = null;
                             if (!(var2 != var3)) {
-                                _fun105499_ip = 68;
-                                continue _fun105499
+                                _fun105560_ip = 68;
+                                continue _fun105560
                             }
                         case 54:
                             var2 = _closure2_slot0;
@@ -219,4 +219,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AppLauncherCommandOptionActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1468, 33, 1297, 671, 4931, 5211, 5209, 3278, 9282, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1468, 33, 1297, 671, 4933, 5213, 5211, 3278, 9300, 2]);

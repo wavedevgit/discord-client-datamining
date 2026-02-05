@@ -1,31 +1,51 @@
 package gf;
 
+import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.os.Parcel;
+import android.util.Log;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class t0 extends hg.e implements k {
-    public t0() {
-        super("com.google.android.gms.common.internal.IGmsCallbacks");
+public abstract class t0 {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final Object f24895a = new Object();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static boolean f24896b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static String f24897c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private static int f24898d;
+
+    public static int a(Context context) {
+        b(context);
+        return f24898d;
     }
 
-    @Override // hg.e
-    protected final boolean e(int i10, Parcel parcel, Parcel parcel2, int i11) {
-        if (i10 != 1) {
-            if (i10 != 2) {
-                if (i10 != 3) {
-                    return false;
+    private static void b(Context context) {
+        Bundle bundle;
+        synchronized (f24895a) {
+            try {
+                if (f24896b) {
+                    return;
                 }
-                hg.f.b(parcel);
-                w0(parcel.readInt(), parcel.readStrongBinder(), (f1) hg.f.a(parcel, f1.CREATOR));
-            } else {
-                hg.f.b(parcel);
-                i0(parcel.readInt(), (Bundle) hg.f.a(parcel, Bundle.CREATOR));
+                f24896b = true;
+                try {
+                    bundle = pf.c.a(context).c(context.getPackageName(), IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT).metaData;
+                } catch (PackageManager.NameNotFoundException e10) {
+                    Log.wtf("MetadataValueReader", "This should never happen.", e10);
+                }
+                if (bundle == null) {
+                    return;
+                }
+                f24897c = bundle.getString("com.google.app.id");
+                f24898d = bundle.getInt("com.google.android.gms.version");
+            } catch (Throwable th2) {
+                throw th2;
             }
-        } else {
-            hg.f.b(parcel);
-            D(parcel.readInt(), parcel.readStrongBinder(), (Bundle) hg.f.a(parcel, Bundle.CREATOR));
         }
-        parcel2.writeNoException();
-        return true;
     }
 }

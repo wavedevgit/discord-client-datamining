@@ -10,44 +10,44 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import ms.g;
-import wm.o;
-@Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\r\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0002\u0014\u000fB1\b\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\b\u0012\u0006\u0010\n\u001a\u00020\u0003¢\u0006\u0004\b\u000b\u0010\fJ\u001b\u0010\u000f\u001a\u00020\u000e2\n\u0010\r\u001a\u0006\u0012\u0002\b\u00030\u0001H\u0016¢\u0006\u0004\b\u000f\u0010\u0010J\u0015\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00020\u0011H\u0016¢\u0006\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0014\u0010\u0015R\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0016\u0010\u0017R\u0017\u0010\u0007\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b\u0018\u0010\u0015\u001a\u0004\b\u0018\u0010\u0019R\u0017\u0010\t\u001a\u00020\b8\u0006¢\u0006\f\n\u0004\b\u001a\u0010\u001b\u001a\u0004\b\u001c\u0010\u001dR\u0017\u0010\n\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b\u001c\u0010\u0015\u001a\u0004\b\u001a\u0010\u0019¨\u0006\u001e"}, d2 = {"Lcom/withpersona/sdk2/inquiry/document/network/a;", "Lwm/o;", "Lcom/withpersona/sdk2/inquiry/document/network/a$b;", "", "sessionToken", "Lao/b;", "service", "documentKind", "", "fileLimit", "fieldKeyDocument", "<init>", "(Ljava/lang/String;Lao/b;Ljava/lang/String;ILjava/lang/String;)V", "otherWorker", "", "a", "(Lwm/o;)Z", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "b", "Ljava/lang/String;", "c", "Lao/b;", "d", "()Ljava/lang/String;", "e", "I", "f", "()I", "document_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import ps.g;
+import zm.o;
+@Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\r\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0002\u0014\u000fB1\b\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\b\u0012\u0006\u0010\n\u001a\u00020\u0003¢\u0006\u0004\b\u000b\u0010\fJ\u001b\u0010\u000f\u001a\u00020\u000e2\n\u0010\r\u001a\u0006\u0012\u0002\b\u00030\u0001H\u0016¢\u0006\u0004\b\u000f\u0010\u0010J\u0015\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00020\u0011H\u0016¢\u0006\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0014\u0010\u0015R\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0016\u0010\u0017R\u0017\u0010\u0007\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b\u0018\u0010\u0015\u001a\u0004\b\u0018\u0010\u0019R\u0017\u0010\t\u001a\u00020\b8\u0006¢\u0006\f\n\u0004\b\u001a\u0010\u001b\u001a\u0004\b\u001c\u0010\u001dR\u0017\u0010\n\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b\u001c\u0010\u0015\u001a\u0004\b\u001a\u0010\u0019¨\u0006\u001e"}, d2 = {"Lcom/withpersona/sdk2/inquiry/document/network/a;", "Lzm/o;", "Lcom/withpersona/sdk2/inquiry/document/network/a$b;", "", "sessionToken", "Leo/b;", "service", "documentKind", "", "fileLimit", "fieldKeyDocument", "<init>", "(Ljava/lang/String;Leo/b;Ljava/lang/String;ILjava/lang/String;)V", "otherWorker", "", "a", "(Lzm/o;)Z", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "b", "Ljava/lang/String;", "c", "Leo/b;", "d", "()Ljava/lang/String;", "e", "I", "f", "()I", "document_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class a implements o<b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f18132b;
+    private final String f18538b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ao.b f18133c;
+    private final eo.b f18539c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f18134d;
+    private final String f18540d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f18135e;
+    private final int f18541e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f18136f;
+    private final String f18542f;
 
     /* renamed from: com.withpersona.sdk2.inquiry.document.network.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0212a {
+    public static final class C0230a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ao.b f18137a;
+        private final eo.b f18543a;
 
-        public C0212a(ao.b service) {
+        public C0230a(eo.b service) {
             Intrinsics.checkNotNullParameter(service, "service");
-            this.f18137a = service;
+            this.f18543a = service;
         }
 
         public final a a(String sessionToken, String documentKind, String fieldKeyDocument, int i10) {
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
             Intrinsics.checkNotNullParameter(documentKind, "documentKind");
             Intrinsics.checkNotNullParameter(fieldKeyDocument, "fieldKeyDocument");
-            return new a(sessionToken, this.f18137a, documentKind, i10, fieldKeyDocument, null);
+            return new a(sessionToken, this.f18543a, documentKind, i10, fieldKeyDocument, null);
         }
     }
 
@@ -56,55 +56,55 @@ public final class a implements o<b> {
 
         /* renamed from: com.withpersona.sdk2.inquiry.document.network.a$b$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0213a extends b {
+        public static final class C0231a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo.NetworkErrorInfo f18138a;
+            private final InternalErrorInfo.NetworkErrorInfo f18544a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public C0213a(InternalErrorInfo.NetworkErrorInfo cause) {
+            public C0231a(InternalErrorInfo.NetworkErrorInfo cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f18138a = cause;
+                this.f18544a = cause;
             }
 
             public final InternalErrorInfo.NetworkErrorInfo a() {
-                return this.f18138a;
+                return this.f18544a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof C0213a) && Intrinsics.areEqual(this.f18138a, ((C0213a) obj).f18138a);
+                return (obj instanceof C0231a) && Intrinsics.areEqual(this.f18544a, ((C0231a) obj).f18544a);
             }
 
             public int hashCode() {
-                return this.f18138a.hashCode();
+                return this.f18544a.hashCode();
             }
 
             public String toString() {
-                InternalErrorInfo.NetworkErrorInfo networkErrorInfo = this.f18138a;
+                InternalErrorInfo.NetworkErrorInfo networkErrorInfo = this.f18544a;
                 return "Error(cause=" + networkErrorInfo + ")";
             }
         }
 
         /* renamed from: com.withpersona.sdk2.inquiry.document.network.a$b$b  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0214b extends b {
+        public static final class C0232b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final String f18139a;
+            private final String f18545a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public C0214b(String documentId) {
+            public C0232b(String documentId) {
                 super(null);
                 Intrinsics.checkNotNullParameter(documentId, "documentId");
-                this.f18139a = documentId;
+                this.f18545a = documentId;
             }
 
             public final String a() {
-                return this.f18139a;
+                return this.f18545a;
             }
         }
 
@@ -120,10 +120,10 @@ public final class a implements o<b> {
     static final class c extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f18140d;
+        int f18546d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f18141e;
+        private /* synthetic */ Object f18547e;
 
         c(Continuation continuation) {
             super(2, continuation);
@@ -132,7 +132,7 @@ public final class a implements o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             c cVar = new c(continuation);
-            cVar.f18141e = obj;
+            cVar.f18547e = obj;
             return cVar;
         }
 
@@ -156,8 +156,8 @@ public final class a implements o<b> {
         public final java.lang.Object invokeSuspend(java.lang.Object r12) {
             /*
                 r11 = this;
-                java.lang.Object r0 = rr.b.f()
-                int r1 = r11.f18140d
+                java.lang.Object r0 = ur.b.f()
+                int r1 = r11.f18546d
                 r2 = 3
                 r3 = 2
                 r4 = 1
@@ -175,20 +175,20 @@ public final class a implements o<b> {
                 kotlin.c.b(r12)
                 goto L9e
             L1f:
-                java.lang.Object r1 = r11.f18141e
+                java.lang.Object r1 = r11.f18547e
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r12)
                 goto L60
             L27:
                 kotlin.c.b(r12)
-                java.lang.Object r12 = r11.f18141e
+                java.lang.Object r12 = r11.f18547e
                 r1 = r12
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 com.withpersona.sdk2.inquiry.document.network.a r12 = com.withpersona.sdk2.inquiry.document.network.a.this
-                ao.b r12 = com.withpersona.sdk2.inquiry.document.network.a.b(r12)
+                eo.b r12 = com.withpersona.sdk2.inquiry.document.network.a.b(r12)
                 com.withpersona.sdk2.inquiry.document.network.a r5 = com.withpersona.sdk2.inquiry.document.network.a.this
                 java.lang.String r5 = com.withpersona.sdk2.inquiry.document.network.a.c(r5)
-                com.withpersona.sdk2.inquiry.document.network.CreateDocumentRequest$a r6 = com.withpersona.sdk2.inquiry.document.network.CreateDocumentRequest.f18075c
+                com.withpersona.sdk2.inquiry.document.network.CreateDocumentRequest$a r6 = com.withpersona.sdk2.inquiry.document.network.CreateDocumentRequest.f18481c
                 com.withpersona.sdk2.inquiry.document.network.a r7 = com.withpersona.sdk2.inquiry.document.network.a.this
                 java.lang.String r7 = r7.d()
                 com.withpersona.sdk2.inquiry.document.network.a r8 = com.withpersona.sdk2.inquiry.document.network.a.this
@@ -197,13 +197,13 @@ public final class a implements o<b> {
                 java.lang.String r9 = r9.e()
                 java.lang.String r10 = "document"
                 com.withpersona.sdk2.inquiry.document.network.CreateDocumentRequest r6 = r6.a(r10, r7, r8, r9)
-                r11.f18141e = r1
-                r11.f18140d = r4
+                r11.f18547e = r1
+                r11.f18546d = r4
                 java.lang.Object r12 = r12.a(r5, r6, r11)
                 if (r12 != r0) goto L60
                 goto L9d
             L60:
-                lv.z r12 = (lv.z) r12
+                ov.z r12 = (ov.z) r12
                 boolean r4 = r12.g()
                 r5 = 0
                 if (r4 == 0) goto L8a
@@ -214,8 +214,8 @@ public final class a implements o<b> {
                 com.withpersona.sdk2.inquiry.document.network.CreateDocumentResponse$Data r12 = r12.a()
                 java.lang.String r12 = r12.a()
                 r2.<init>(r12)
-                r11.f18141e = r5
-                r11.f18140d = r3
+                r11.f18547e = r5
+                r11.f18546d = r3
                 java.lang.Object r12 = r1.emit(r2, r11)
                 if (r12 != r0) goto L9e
                 goto L9d
@@ -223,14 +223,14 @@ public final class a implements o<b> {
                 com.withpersona.sdk2.inquiry.document.network.a$b$a r3 = new com.withpersona.sdk2.inquiry.document.network.a$b$a
                 com.withpersona.sdk2.inquiry.network.core.InternalErrorInfo$NetworkErrorInfo r12 = com.withpersona.sdk2.inquiry.network.core.NetworkUtilsKt.toErrorInfo(r12)
                 r3.<init>(r12)
-                r11.f18141e = r5
-                r11.f18140d = r2
+                r11.f18547e = r5
+                r11.f18546d = r2
                 java.lang.Object r12 = r1.emit(r3, r11)
                 if (r12 != r0) goto L9e
             L9d:
                 return r0
             L9e:
-                kotlin.Unit r12 = kotlin.Unit.f32464a
+                kotlin.Unit r12 = kotlin.Unit.f31988a
                 return r12
             */
             throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.document.network.a.c.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -238,20 +238,20 @@ public final class a implements o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f32464a);
+            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
-    public /* synthetic */ a(String str, ao.b bVar, String str2, int i10, String str3, DefaultConstructorMarker defaultConstructorMarker) {
+    public /* synthetic */ a(String str, eo.b bVar, String str2, int i10, String str3, DefaultConstructorMarker defaultConstructorMarker) {
         this(str, bVar, str2, i10, str3);
     }
 
-    @Override // wm.o
+    @Override // zm.o
     public boolean a(o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
         if (otherWorker instanceof a) {
             a aVar = (a) otherWorker;
-            if (Intrinsics.areEqual(this.f18132b, aVar.f18132b) && Intrinsics.areEqual(this.f18136f, aVar.f18136f)) {
+            if (Intrinsics.areEqual(this.f18538b, aVar.f18538b) && Intrinsics.areEqual(this.f18542f, aVar.f18542f)) {
                 return true;
             }
             return false;
@@ -260,27 +260,27 @@ public final class a implements o<b> {
     }
 
     public final String d() {
-        return this.f18134d;
+        return this.f18540d;
     }
 
     public final String e() {
-        return this.f18136f;
+        return this.f18542f;
     }
 
     public final int f() {
-        return this.f18135e;
+        return this.f18541e;
     }
 
-    @Override // wm.o
+    @Override // zm.o
     public Flow run() {
         return g.v(new c(null));
     }
 
-    private a(String str, ao.b bVar, String str2, int i10, String str3) {
-        this.f18132b = str;
-        this.f18133c = bVar;
-        this.f18134d = str2;
-        this.f18135e = i10;
-        this.f18136f = str3;
+    private a(String str, eo.b bVar, String str2, int i10, String str3) {
+        this.f18538b = str;
+        this.f18539c = bVar;
+        this.f18540d = str2;
+        this.f18541e = i10;
+        this.f18542f = str3;
     }
 }

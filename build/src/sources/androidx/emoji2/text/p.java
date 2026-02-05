@@ -9,10 +9,10 @@ import android.text.style.CharacterStyle;
 public final class p extends i {
 
     /* renamed from: r  reason: collision with root package name */
-    private static Paint f4034r;
+    private static Paint f4146r;
 
     /* renamed from: q  reason: collision with root package name */
-    private TextPaint f4035q;
+    private TextPaint f4147q;
 
     public p(o oVar) {
         super(oVar);
@@ -23,10 +23,10 @@ public final class p extends i {
             CharacterStyle[] characterStyleArr = (CharacterStyle[]) ((Spanned) charSequence).getSpans(i10, i11, CharacterStyle.class);
             if (characterStyleArr.length != 0) {
                 if (characterStyleArr.length != 1 || characterStyleArr[0] != this) {
-                    TextPaint textPaint = this.f4035q;
+                    TextPaint textPaint = this.f4147q;
                     if (textPaint == null) {
                         textPaint = new TextPaint();
-                        this.f4035q = textPaint;
+                        this.f4147q = textPaint;
                     }
                     textPaint.set(paint);
                     for (CharacterStyle characterStyle : characterStyleArr) {
@@ -47,13 +47,13 @@ public final class p extends i {
     }
 
     private static Paint e() {
-        if (f4034r == null) {
+        if (f4146r == null) {
             TextPaint textPaint = new TextPaint();
-            f4034r = textPaint;
+            f4146r = textPaint;
             textPaint.setColor(e.c().d());
-            f4034r.setStyle(Paint.Style.FILL);
+            f4146r.setStyle(Paint.Style.FILL);
         }
-        return f4034r;
+        return f4146r;
     }
 
     void d(Canvas canvas, TextPaint textPaint, float f10, float f11, float f12, float f13) {

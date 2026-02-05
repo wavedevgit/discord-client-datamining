@@ -3,16 +3,16 @@ package ne;
 public final class l0 {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final l0 f40127c = new l0(-1, -1);
+    public static final l0 f39587c = new l0(-1, -1);
 
     /* renamed from: d  reason: collision with root package name */
-    public static final l0 f40128d = new l0(0, 0);
+    public static final l0 f39588d = new l0(0, 0);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f40129a;
+    private final int f39589a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f40130b;
+    private final int f39590b;
 
     public l0(int i10, int i11) {
         boolean z10;
@@ -22,16 +22,16 @@ public final class l0 {
             z10 = true;
         }
         a.a(z10);
-        this.f40129a = i10;
-        this.f40130b = i11;
+        this.f39589a = i10;
+        this.f39590b = i11;
     }
 
     public int a() {
-        return this.f40130b;
+        return this.f39590b;
     }
 
     public int b() {
-        return this.f40129a;
+        return this.f39589a;
     }
 
     public boolean equals(Object obj) {
@@ -43,7 +43,7 @@ public final class l0 {
         }
         if (obj instanceof l0) {
             l0 l0Var = (l0) obj;
-            if (this.f40129a == l0Var.f40129a && this.f40130b == l0Var.f40130b) {
+            if (this.f39589a == l0Var.f39589a && this.f39590b == l0Var.f39590b) {
                 return true;
             }
         }
@@ -51,12 +51,12 @@ public final class l0 {
     }
 
     public int hashCode() {
-        int i10 = this.f40130b;
-        int i11 = this.f40129a;
+        int i10 = this.f39590b;
+        int i11 = this.f39589a;
         return i10 ^ ((i11 >>> 16) | (i11 << 16));
     }
 
     public String toString() {
-        return this.f40129a + "x" + this.f40130b;
+        return this.f39589a + "x" + this.f39590b;
     }
 }

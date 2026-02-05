@@ -1,49 +1,27 @@
 package zm;
 
-import androidx.lifecycle.Lifecycle;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.savedstate.SavedStateRegistry;
-import androidx.savedstate.SavedStateRegistryController;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements u3.f, LifecycleOwner {
+public interface a {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f56062d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final /* synthetic */ LifecycleOwner f56063e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final SavedStateRegistryController f56064i;
-
-    public a(String key, LifecycleOwner lifecycleOwner) {
-        Intrinsics.checkNotNullParameter(key, "key");
-        Intrinsics.checkNotNullParameter(lifecycleOwner, "lifecycleOwner");
-        this.f56062d = key;
-        this.f56063e = lifecycleOwner;
-        SavedStateRegistryController a10 = SavedStateRegistryController.a(this);
-        Intrinsics.checkNotNullExpressionValue(a10, "create(this)");
-        this.f56064i = a10;
+    /* renamed from: zm.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0784a {
+        public static /* synthetic */ Object a(a aVar, q qVar, Object obj, String str, Function1 function1, int i10, Object obj2) {
+            if (obj2 == null) {
+                if ((i10 & 4) != 0) {
+                    str = "";
+                }
+                return aVar.b(qVar, obj, str, function1);
+            }
+            throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: renderChild");
+        }
     }
 
-    public final SavedStateRegistryController a() {
-        return this.f56064i;
-    }
+    void a(String str, Function2 function2);
 
-    public final String b() {
-        return this.f56062d;
-    }
+    Object b(q qVar, Object obj, String str, Function1 function1);
 
-    @Override // androidx.lifecycle.LifecycleOwner
-    public Lifecycle getLifecycle() {
-        return this.f56063e.getLifecycle();
-    }
-
-    @Override // u3.f
-    public SavedStateRegistry getSavedStateRegistry() {
-        SavedStateRegistry b10 = this.f56064i.b();
-        Intrinsics.checkNotNullExpressionValue(b10, "controller.savedStateRegistry");
-        return b10;
-    }
+    h c();
 }

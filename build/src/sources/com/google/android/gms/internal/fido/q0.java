@@ -4,7 +4,7 @@ package com.google.android.gms.internal.fido;
 public final class q0 implements n0 {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final n0 f13691o = new n0() { // from class: com.google.android.gms.internal.fido.p0
+    private static final n0 f14085o = new n0() { // from class: com.google.android.gms.internal.fido.p0
         @Override // com.google.android.gms.internal.fido.n0
         public final Object zza() {
             throw new IllegalStateException();
@@ -12,44 +12,44 @@ public final class q0 implements n0 {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    private final t0 f13692d = new t0();
+    private final t0 f14086d = new t0();
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile n0 f13693e;
+    private volatile n0 f14087e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Object f13694i;
+    private Object f14088i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q0(n0 n0Var) {
-        this.f13693e = n0Var;
+        this.f14087e = n0Var;
     }
 
     public final String toString() {
-        Object obj = this.f13693e;
-        if (obj == f13691o) {
-            obj = "<supplier that returned " + String.valueOf(this.f13694i) + ">";
+        Object obj = this.f14087e;
+        if (obj == f14085o) {
+            obj = "<supplier that returned " + String.valueOf(this.f14088i) + ">";
         }
         return "Suppliers.memoize(" + String.valueOf(obj) + ")";
     }
 
     @Override // com.google.android.gms.internal.fido.n0
     public final Object zza() {
-        n0 n0Var = this.f13693e;
-        n0 n0Var2 = f13691o;
+        n0 n0Var = this.f14087e;
+        n0 n0Var2 = f14085o;
         if (n0Var != n0Var2) {
-            synchronized (this.f13692d) {
+            synchronized (this.f14086d) {
                 try {
-                    if (this.f13693e != n0Var2) {
-                        Object zza = this.f13693e.zza();
-                        this.f13694i = zza;
-                        this.f13693e = n0Var2;
+                    if (this.f14087e != n0Var2) {
+                        Object zza = this.f14087e.zza();
+                        this.f14088i = zza;
+                        this.f14087e = n0Var2;
                         return zza;
                     }
                 } finally {
                 }
             }
         }
-        return this.f13694i;
+        return this.f14088i;
     }
 }

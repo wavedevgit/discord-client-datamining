@@ -1,64 +1,32 @@
 package gv;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class g extends a {
+public class g extends lv.a {
 
-    /* renamed from: f  reason: collision with root package name */
-    private char f26656f;
+    /* renamed from: a  reason: collision with root package name */
+    private final jv.e f25434a = new jv.e();
 
-    /* renamed from: g  reason: collision with root package name */
-    private int f26657g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private int f26658h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private String f26659i;
-
-    /* renamed from: j  reason: collision with root package name */
-    private String f26660j;
-
-    @Override // gv.r
-    public void a(y yVar) {
-        yVar.i(this);
+    @Override // lv.a, lv.d
+    public boolean a() {
+        return true;
     }
 
-    public char n() {
-        return this.f26656f;
+    @Override // lv.d
+    public lv.c g(lv.h hVar) {
+        return lv.c.b(hVar.getIndex());
     }
 
-    public int o() {
-        return this.f26658h;
+    @Override // lv.a, lv.d
+    public boolean h(jv.a aVar) {
+        return true;
     }
 
-    public int p() {
-        return this.f26657g;
+    @Override // lv.d
+    /* renamed from: i */
+    public jv.e c() {
+        return this.f25434a;
     }
 
-    public String q() {
-        return this.f26659i;
-    }
-
-    public String r() {
-        return this.f26660j;
-    }
-
-    public void s(char c10) {
-        this.f26656f = c10;
-    }
-
-    public void t(int i10) {
-        this.f26658h = i10;
-    }
-
-    public void u(int i10) {
-        this.f26657g = i10;
-    }
-
-    public void v(String str) {
-        this.f26659i = str;
-    }
-
-    public void w(String str) {
-        this.f26660j = str;
+    @Override // lv.a, lv.d
+    public void e(CharSequence charSequence) {
     }
 }

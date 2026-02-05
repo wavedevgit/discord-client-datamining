@@ -1,35 +1,18 @@
 package hg;
-
-import android.os.BadParcelableException;
-import android.os.IInterface;
-import android.os.Parcel;
-import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class f {
+final class f extends h0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final ClassLoader f26986a = f.class.getClassLoader();
+    /* renamed from: i  reason: collision with root package name */
+    private final i f25840i;
 
-    public static Parcelable a(Parcel parcel, Parcelable.Creator creator) {
-        if (parcel.readInt() == 0) {
-            return null;
-        }
-        return (Parcelable) creator.createFromParcel(parcel);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public f(i iVar, int i10) {
+        super(iVar.size(), i10);
+        this.f25840i = iVar;
     }
 
-    public static void b(Parcel parcel) {
-        int dataAvail = parcel.dataAvail();
-        if (dataAvail <= 0) {
-            return;
-        }
-        throw new BadParcelableException("Parcel data not fully consumed, unread size: " + dataAvail);
-    }
-
-    public static void c(Parcel parcel, IInterface iInterface) {
-        if (iInterface == null) {
-            parcel.writeStrongBinder(null);
-        } else {
-            parcel.writeStrongBinder(iInterface.asBinder());
-        }
+    @Override // hg.h0
+    protected final Object a(int i10) {
+        return this.f25840i.get(i10);
     }
 }

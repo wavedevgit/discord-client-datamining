@@ -14,7 +14,10 @@ public abstract class c {
             case 11:
             case 12:
             default:
-                return "unknown status code: " + i10;
+                StringBuilder sb2 = new StringBuilder(String.valueOf(i10).length() + 21);
+                sb2.append("unknown status code: ");
+                sb2.append(i10);
+                return sb2.toString();
             case 2:
                 return "SERVICE_VERSION_UPDATE_REQUIRED";
             case 3:

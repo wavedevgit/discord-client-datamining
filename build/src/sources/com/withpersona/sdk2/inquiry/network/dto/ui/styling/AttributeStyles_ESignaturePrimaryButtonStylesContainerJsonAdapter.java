@@ -40,18 +40,18 @@ public final class AttributeStyles_ESignaturePrimaryButtonStylesContainerJsonAda
     @NotNull
     public AttributeStyles.ESignaturePrimaryButtonStylesContainer fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         ButtonSubmitComponentStyle buttonSubmitComponentStyle = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 buttonSubmitComponentStyle = (ButtonSubmitComponentStyle) this.nullableButtonSubmitComponentStyleAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.ESignaturePrimaryButtonStylesContainer(buttonSubmitComponentStyle);
     }
 
@@ -59,8 +59,8 @@ public final class AttributeStyles_ESignaturePrimaryButtonStylesContainerJsonAda
     public void toJson(@NotNull t writer, AttributeStyles.ESignaturePrimaryButtonStylesContainer eSignaturePrimaryButtonStylesContainer) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignaturePrimaryButtonStylesContainer != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableButtonSubmitComponentStyleAdapter.toJson(writer, eSignaturePrimaryButtonStylesContainer.getBase());
             writer.E();
             return;

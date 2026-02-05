@@ -1,20 +1,20 @@
 package vc;
 
-import ji.s;
-import ji.t0;
+import mi.s;
+import mi.t0;
 import ne.h0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class f implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final s f51373a;
+    public final s f52062a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f51374b;
+    private final int f52063b;
 
     private f(int i10, s sVar) {
-        this.f51374b = i10;
-        this.f51373a = sVar;
+        this.f52063b = i10;
+        this.f52062a = sVar;
     }
 
     private static a a(int i10, int i11, h0 h0Var) {
@@ -59,7 +59,7 @@ final class f implements a {
     }
 
     public a b(Class cls) {
-        t0 it = this.f51373a.iterator();
+        t0 it = this.f52062a.iterator();
         while (it.hasNext()) {
             a aVar = (a) it.next();
             if (aVar.getClass() == cls) {
@@ -71,6 +71,6 @@ final class f implements a {
 
     @Override // vc.a
     public int getType() {
-        return this.f51374b;
+        return this.f52063b;
     }
 }

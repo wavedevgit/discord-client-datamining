@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingWave.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun78611: for (var _fun78611_ip = 0;;) switch (_fun78611_ip) {
+        _fun78630: for (var _fun78630_ip = 0;;) switch (_fun78630_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 != var0;
                 var6 = undefined;
                 if (!var1) {
-                    _fun78611_ip = 77;
-                    continue _fun78611
+                    _fun78630_ip = 77;
+                    continue _fun78630
                 }
             case 74:
                 var6 = var0;
@@ -90,4 +90,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3151, 671, 5460, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3151, 671, 5464, 2]);

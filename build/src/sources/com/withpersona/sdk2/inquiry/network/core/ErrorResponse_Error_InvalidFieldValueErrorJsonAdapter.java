@@ -36,31 +36,31 @@ public final class ErrorResponse_Error_InvalidFieldValueErrorJsonAdapter extends
     @Override // com.squareup.moshi.h
     @NotNull
     public ErrorResponse.Error.InvalidFieldValueError fromJson(@NotNull m mVar) {
-        mVar.r();
+        mVar.s();
         String str = null;
         Map map = null;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
+            int W = mVar.W(this.options);
+            if (W == -1) {
                 mVar.E0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(mVar);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 map = (Map) this.nullableMapOfStringUiComponentErrorAdapter.fromJson(mVar);
             }
         }
-        mVar.y();
+        mVar.z();
         return new ErrorResponse.Error.InvalidFieldValueError(str, map);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, ErrorResponse.Error.InvalidFieldValueError invalidFieldValueError) {
         if (invalidFieldValueError != null) {
-            tVar.l();
-            tVar.A0("title");
+            tVar.k();
+            tVar.W("title");
             this.nullableStringAdapter.toJson(tVar, invalidFieldValueError.getTitle());
-            tVar.A0("details");
+            tVar.W("details");
             this.nullableMapOfStringUiComponentErrorAdapter.toJson(tVar, invalidFieldValueError.getDetails());
             tVar.E();
             return;

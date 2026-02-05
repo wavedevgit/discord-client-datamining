@@ -9,11 +9,11 @@ import java.io.PrintWriter;
 public abstract class g {
 
     /* renamed from: d  reason: collision with root package name */
-    protected final h f23907d;
+    protected final h f22932d;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public g(h hVar) {
-        this.f23907d = hVar;
+        this.f22932d = hVar;
     }
 
     public static h c(Activity activity) {
@@ -21,19 +21,19 @@ public abstract class g {
     }
 
     protected static h d(f fVar) {
-        if (fVar.d()) {
-            return j1.x(fVar.b());
+        if (fVar.a()) {
+            return j1.x(fVar.d());
         }
-        if (fVar.c()) {
-            return g1.a(fVar.a());
+        if (fVar.b()) {
+            return g1.a(fVar.c());
         }
         throw new IllegalArgumentException("Can't get fragment for unexpected activity.");
     }
 
     public Activity b() {
-        Activity n10 = this.f23907d.n();
-        gf.q.l(n10);
-        return n10;
+        Activity g10 = this.f22932d.g();
+        gf.q.l(g10);
+        return g10;
     }
 
     public abstract void e(int i10, int i11, Intent intent);

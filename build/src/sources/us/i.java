@@ -1,93 +1,45 @@
 package us;
 
-import kotlin.jvm.internal.MutablePropertyReference1Impl;
+import kotlin.jvm.functions.Function3;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class i {
+public final class i implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f50894a = new i();
+    private final Object f51676a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ws.q f50895b = new ws.q(new ws.x(new MutablePropertyReference1Impl() { // from class: us.i.e
-        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
-        public Object get(Object obj) {
-            return ((h) obj).f();
-        }
-
-        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
-        public void set(Object obj, Object obj2) {
-            ((h) obj).B((Integer) obj2);
-        }
-    }), null, null, null, 14, null);
+    private final Function3 f51677b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ws.b0 f50896c = new ws.b0(new ws.x(new MutablePropertyReference1Impl() { // from class: us.i.d
-        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
-        public Object get(Object obj) {
-            return ((h) obj).C();
-        }
-
-        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
-        public void set(Object obj, Object obj2) {
-            ((h) obj).v((Integer) obj2);
-        }
-    }), 1, 12, null, null, null, 56, null);
+    private final Function3 f51678c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ws.b0 f50897d = new ws.b0(new ws.x(new MutablePropertyReference1Impl() { // from class: us.i.a
-        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
-        public Object get(Object obj) {
-            return ((h) obj).g();
-        }
+    private final Function3 f51679d;
 
-        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
-        public void set(Object obj, Object obj2) {
-            ((h) obj).y((Integer) obj2);
-        }
-    }), 1, 31, null, null, null, 56, null);
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final ws.b0 f50898e = new ws.b0(new ws.x(new MutablePropertyReference1Impl() { // from class: us.i.c
-        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
-        public Object get(Object obj) {
-            return ((h) obj).j();
-        }
-
-        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
-        public void set(Object obj, Object obj2) {
-            ((h) obj).E((Integer) obj2);
-        }
-    }), 1, 7, null, null, null, 56, null);
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final ws.b0 f50899f = new ws.b0(new ws.x(new MutablePropertyReference1Impl() { // from class: us.i.b
-        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
-        public Object get(Object obj) {
-            return ((h) obj).A();
-        }
-
-        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
-        public void set(Object obj, Object obj2) {
-            ((h) obj).o((Integer) obj2);
-        }
-    }), 1, 366, null, null, null, 56, null);
-
-    private i() {
+    public i(Object obj, Function3 function3, Function3 function32, Function3 function33) {
+        this.f51676a = obj;
+        this.f51677b = function3;
+        this.f51678c = function32;
+        this.f51679d = function33;
     }
 
-    public final ws.b0 a() {
-        return f50897d;
+    @Override // us.j
+    public Function3 a() {
+        return this.f51677b;
     }
 
-    public final ws.b0 b() {
-        return f50898e;
+    @Override // us.j
+    public Function3 b() {
+        return this.f51679d;
     }
 
-    public final ws.b0 c() {
-        return f50896c;
+    @Override // us.j
+    public Function3 c() {
+        return this.f51678c;
     }
 
-    public final ws.q d() {
-        return f50895b;
+    @Override // us.j
+    public Object d() {
+        return this.f51676a;
     }
 }

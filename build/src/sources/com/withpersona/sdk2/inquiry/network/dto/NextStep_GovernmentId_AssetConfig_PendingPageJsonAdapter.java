@@ -45,30 +45,30 @@ public final class NextStep_GovernmentId_AssetConfig_PendingPageJsonAdapter exte
     @NotNull
     public NextStep.GovernmentId.AssetConfig.PendingPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         RemoteImage remoteImage = null;
         RemoteImage remoteImage2 = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 remoteImage2 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -3;
             }
         }
-        reader.y();
+        reader.z();
         if (i10 == -4) {
             return new NextStep.GovernmentId.AssetConfig.PendingPage(remoteImage, remoteImage2);
         }
         Constructor<NextStep.GovernmentId.AssetConfig.PendingPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.PendingPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, Integer.TYPE, vm.c.f51688c);
+            constructor = NextStep.GovernmentId.AssetConfig.PendingPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, Integer.TYPE, ym.c.f54853c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -81,10 +81,10 @@ public final class NextStep_GovernmentId_AssetConfig_PendingPageJsonAdapter exte
     public void toJson(@NotNull t writer, NextStep.GovernmentId.AssetConfig.PendingPage pendingPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (pendingPage != null) {
-            writer.l();
-            writer.A0("headerPictograph");
+            writer.k();
+            writer.W("headerPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, pendingPage.getHeaderPictograph());
-            writer.A0("loadingPictograph");
+            writer.W("loadingPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, pendingPage.getLoadingPictograph());
             writer.E();
             return;

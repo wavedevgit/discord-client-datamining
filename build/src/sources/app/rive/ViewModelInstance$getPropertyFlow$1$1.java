@@ -15,7 +15,7 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.flow.FlowCollector;
 import org.jetbrains.annotations.NotNull;
-import rr.b;
+import ur.b;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00020\u00040\u0003H\u008a@"}, d2 = {"<anonymous>", "", "T", "Lkotlinx/coroutines/flow/FlowCollector;", "Lapp/rive/core/CommandQueue$PropertyUpdate;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @e(c = "app.rive.ViewModelInstance$getPropertyFlow$1$1", f = "ViewModelInstance.kt", l = {91}, m = "invokeSuspend")
@@ -67,7 +67,7 @@ public final class ViewModelInstance$getPropertyFlow$1$1 extends k implements Fu
                 Function3 function3 = this.$getter;
                 ViewModelInstance viewModelInstance = this.this$0;
                 String str = this.$propertyPath;
-                Result.a aVar = kotlin.Result.f32461e;
+                Result.a aVar = kotlin.Result.f31985e;
                 ViewModelInstanceHandle m197boximpl = ViewModelInstanceHandle.m197boximpl(viewModelInstance.m46getInstanceHandleVPLto4w$kotlin_release());
                 this.label = 1;
                 obj = function3.invoke(m197boximpl, str, this);
@@ -77,14 +77,14 @@ public final class ViewModelInstance$getPropertyFlow$1$1 extends k implements Fu
             }
             kotlin.Result.b(obj);
         } catch (Throwable th2) {
-            Result.a aVar2 = kotlin.Result.f32461e;
+            Result.a aVar2 = kotlin.Result.f31985e;
             kotlin.Result.b(c.a(th2));
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull FlowCollector flowCollector, Continuation<? super Unit> continuation) {
-        return ((ViewModelInstance$getPropertyFlow$1$1) create(flowCollector, continuation)).invokeSuspend(Unit.f32464a);
+        return ((ViewModelInstance$getPropertyFlow$1$1) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

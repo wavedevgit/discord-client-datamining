@@ -29,37 +29,37 @@ import kotlin.jvm.internal.SourceDebugExtension;
 public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
 
     /* renamed from: u  reason: collision with root package name */
-    public static final a f17960u = new a(null);
+    public static final a f18366u = new a(null);
 
     /* renamed from: v  reason: collision with root package name */
-    private static WeakReference f17961v = new WeakReference(null);
+    private static WeakReference f18367v = new WeakReference(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private CoordinatorLayout f17962d;
+    private CoordinatorLayout f18368d;
 
     /* renamed from: e  reason: collision with root package name */
-    private AppBarLayout f17963e;
+    private AppBarLayout f18369e;
 
     /* renamed from: i  reason: collision with root package name */
-    private View f17964i;
+    private View f18370i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Toolbar f17965o;
+    private Toolbar f18371o;
 
     /* renamed from: p  reason: collision with root package name */
-    private float f17966p;
+    private float f18372p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f17967q;
+    private int f18373q;
 
     /* renamed from: r  reason: collision with root package name */
-    private com.swmansion.rnscreens.utils.a f17968r;
+    private com.swmansion.rnscreens.utils.a f18374r;
 
     /* renamed from: s  reason: collision with root package name */
-    private WeakReference f17969s;
+    private WeakReference f18375s;
 
     /* renamed from: t  reason: collision with root package name */
-    private volatile boolean f17970t;
+    private volatile boolean f18376t;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -69,7 +69,7 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
 
         @DoNotStrip
         public final ScreenDummyLayoutHelper getInstance() {
-            return (ScreenDummyLayoutHelper) ScreenDummyLayoutHelper.f17961v.get();
+            return (ScreenDummyLayoutHelper) ScreenDummyLayoutHelper.f18367v.get();
         }
 
         private a() {
@@ -78,14 +78,14 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
 
     public ScreenDummyLayoutHelper(ReactApplicationContext reactContext) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.f17968r = com.swmansion.rnscreens.utils.a.f17971c.a();
-        this.f17969s = new WeakReference(reactContext);
+        this.f18374r = com.swmansion.rnscreens.utils.a.f18377c.a();
+        this.f18375s = new WeakReference(reactContext);
         try {
             System.loadLibrary("react_codegen_rnscreens");
         } catch (UnsatisfiedLinkError unused) {
             Log.w("ScreenDummyLayoutHelper", "[RNScreens] Failed to load react_codegen_rnscreens library.");
         }
-        f17961v = new WeakReference(this);
+        f18367v = new WeakReference(this);
         if (!reactContext.hasCurrentActivity() || !g(reactContext)) {
             reactContext.addLifecycleEventListener(this);
         }
@@ -94,7 +94,7 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
     @DoNotStrip
     private final float computeDummyLayout(int i10, boolean z10) {
         float f10;
-        if (!this.f17970t && !g(j(new Function0() { // from class: nn.e
+        if (!this.f18376t && !g(j(new Function0() { // from class: qn.e
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Object e10;
@@ -104,8 +104,8 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
         }))) {
             Log.e("ScreenDummyLayoutHelper", "[RNScreens] Failed to late-init layout while computing header height. This is most likely a race-condition-bug in react-native-screens, please file an issue at https://github.com/software-mansion/react-native-screens/issues");
             return 0.0f;
-        } else if (this.f17968r.c(new b(i10, z10))) {
-            return this.f17968r.b();
+        } else if (this.f18374r.c(new b(i10, z10))) {
+            return this.f18374r.b();
         } else {
             View decorView = i().getWindow().getDecorView();
             Intrinsics.checkNotNullExpressionValue(decorView, "getDecorView(...)");
@@ -115,34 +115,34 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
             int makeMeasureSpec2 = View.MeasureSpec.makeMeasureSpec(height, 1073741824);
             AppBarLayout appBarLayout = null;
             if (z10) {
-                Toolbar toolbar = this.f17965o;
+                Toolbar toolbar = this.f18371o;
                 if (toolbar == null) {
                     Intrinsics.throwUninitializedPropertyAccessException("toolbar");
                     toolbar = null;
                 }
                 toolbar.setTitle("");
-                Toolbar toolbar2 = this.f17965o;
+                Toolbar toolbar2 = this.f18371o;
                 if (toolbar2 == null) {
                     Intrinsics.throwUninitializedPropertyAccessException("toolbar");
                     toolbar2 = null;
                 }
                 toolbar2.setContentInsetStartWithNavigation(0);
             } else {
-                Toolbar toolbar3 = this.f17965o;
+                Toolbar toolbar3 = this.f18371o;
                 if (toolbar3 == null) {
                     Intrinsics.throwUninitializedPropertyAccessException("toolbar");
                     toolbar3 = null;
                 }
                 toolbar3.setTitle("FontSize123!#$");
-                Toolbar toolbar4 = this.f17965o;
+                Toolbar toolbar4 = this.f18371o;
                 if (toolbar4 == null) {
                     Intrinsics.throwUninitializedPropertyAccessException("toolbar");
                     toolbar4 = null;
                 }
-                toolbar4.setContentInsetStartWithNavigation(this.f17967q);
+                toolbar4.setContentInsetStartWithNavigation(this.f18373q);
             }
             ScreenStackHeaderConfig.a aVar = ScreenStackHeaderConfig.O;
-            Toolbar toolbar5 = this.f17965o;
+            Toolbar toolbar5 = this.f18371o;
             if (toolbar5 == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("toolbar");
                 toolbar5 = null;
@@ -152,30 +152,30 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
                 if (i10 != -1) {
                     f10 = i10;
                 } else {
-                    f10 = this.f17966p;
+                    f10 = this.f18372p;
                 }
                 a10.setTextSize(f10);
             }
-            CoordinatorLayout coordinatorLayout = this.f17962d;
+            CoordinatorLayout coordinatorLayout = this.f18368d;
             if (coordinatorLayout == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("coordinatorLayout");
                 coordinatorLayout = null;
             }
             coordinatorLayout.measure(makeMeasureSpec, makeMeasureSpec2);
-            CoordinatorLayout coordinatorLayout2 = this.f17962d;
+            CoordinatorLayout coordinatorLayout2 = this.f18368d;
             if (coordinatorLayout2 == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("coordinatorLayout");
                 coordinatorLayout2 = null;
             }
             coordinatorLayout2.layout(0, 0, width, height);
-            AppBarLayout appBarLayout2 = this.f17963e;
+            AppBarLayout appBarLayout2 = this.f18369e;
             if (appBarLayout2 == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("appBarLayout");
             } else {
                 appBarLayout = appBarLayout2;
             }
             float dIPFromPixel = PixelUtil.toDIPFromPixel(appBarLayout.getHeight());
-            this.f17968r = new com.swmansion.rnscreens.utils.a(new b(i10, z10), dIPFromPixel);
+            this.f18374r = new com.swmansion.rnscreens.utils.a(new b(i10, z10), dIPFromPixel);
             return dIPFromPixel;
         }
     }
@@ -186,32 +186,32 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
     }
 
     private final void f(Context context) {
-        this.f17962d = new CoordinatorLayout(context);
+        this.f18368d = new CoordinatorLayout(context);
         AppBarLayout appBarLayout = new AppBarLayout(context);
         appBarLayout.setLayoutParams(new CoordinatorLayout.f(-1, -2));
-        this.f17963e = appBarLayout;
+        this.f18369e = appBarLayout;
         Toolbar toolbar = new Toolbar(context);
         toolbar.setTitle("FontSize123!#$");
         AppBarLayout.d dVar = new AppBarLayout.d(-1, -2);
         dVar.g(0);
         toolbar.setLayoutParams(dVar);
-        this.f17965o = toolbar;
+        this.f18371o = toolbar;
         TextView a10 = ScreenStackHeaderConfig.O.a(toolbar);
         Intrinsics.checkNotNull(a10);
-        this.f17966p = a10.getTextSize();
-        Toolbar toolbar2 = this.f17965o;
+        this.f18372p = a10.getTextSize();
+        Toolbar toolbar2 = this.f18371o;
         View view = null;
         if (toolbar2 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("toolbar");
             toolbar2 = null;
         }
-        this.f17967q = toolbar2.getContentInsetStartWithNavigation();
-        AppBarLayout appBarLayout2 = this.f17963e;
+        this.f18373q = toolbar2.getContentInsetStartWithNavigation();
+        AppBarLayout appBarLayout2 = this.f18369e;
         if (appBarLayout2 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("appBarLayout");
             appBarLayout2 = null;
         }
-        Toolbar toolbar3 = this.f17965o;
+        Toolbar toolbar3 = this.f18371o;
         if (toolbar3 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("toolbar");
             toolbar3 = null;
@@ -219,30 +219,30 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
         appBarLayout2.addView(toolbar3);
         View view2 = new View(context);
         view2.setLayoutParams(new CoordinatorLayout.f(-1, -1));
-        this.f17964i = view2;
-        CoordinatorLayout coordinatorLayout = this.f17962d;
+        this.f18370i = view2;
+        CoordinatorLayout coordinatorLayout = this.f18368d;
         if (coordinatorLayout == null) {
             Intrinsics.throwUninitializedPropertyAccessException("coordinatorLayout");
             coordinatorLayout = null;
         }
-        AppBarLayout appBarLayout3 = this.f17963e;
+        AppBarLayout appBarLayout3 = this.f18369e;
         if (appBarLayout3 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("appBarLayout");
             appBarLayout3 = null;
         }
         coordinatorLayout.addView(appBarLayout3);
-        View view3 = this.f17964i;
+        View view3 = this.f18370i;
         if (view3 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("dummyContentView");
         } else {
             view = view3;
         }
         coordinatorLayout.addView(view);
-        this.f17970t = true;
+        this.f18376t = true;
     }
 
     private final boolean g(ReactApplicationContext reactApplicationContext) {
-        if (this.f17970t) {
+        if (this.f18376t) {
             return true;
         }
         if (!reactApplicationContext.hasCurrentActivity()) {
@@ -251,11 +251,11 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
         Activity currentActivity = reactApplicationContext.getCurrentActivity();
         if (currentActivity != null) {
             synchronized (this) {
-                if (this.f17970t) {
+                if (this.f18376t) {
                     return true;
                 }
                 f(currentActivity);
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
                 return true;
             }
         }
@@ -264,7 +264,7 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
 
     @DoNotStrip
     public static final ScreenDummyLayoutHelper getInstance() {
-        return f17960u.getInstance();
+        return f18366u.getInstance();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -281,9 +281,9 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
     }
 
     private final ReactApplicationContext j(Function0 function0) {
-        Object obj = this.f17969s.get();
+        Object obj = this.f18375s.get();
         if (function0 == null) {
-            function0 = new Function0() { // from class: nn.g
+            function0 = new Function0() { // from class: qn.g
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Object l10;
@@ -312,7 +312,7 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
 
     @Override // com.facebook.react.bridge.LifecycleEventListener
     public void onHostDestroy() {
-        ReactApplicationContext reactApplicationContext = (ReactApplicationContext) this.f17969s.get();
+        ReactApplicationContext reactApplicationContext = (ReactApplicationContext) this.f18375s.get();
         if (reactApplicationContext != null) {
             reactApplicationContext.removeLifecycleEventListener(this);
         }
@@ -324,7 +324,7 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
 
     @Override // com.facebook.react.bridge.LifecycleEventListener
     public void onHostResume() {
-        ReactApplicationContext j10 = j(new Function0() { // from class: nn.f
+        ReactApplicationContext j10 = j(new Function0() { // from class: qn.f
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Object h10;

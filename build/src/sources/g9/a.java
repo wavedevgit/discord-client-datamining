@@ -6,44 +6,44 @@ import z9.j;
 public class a extends ua.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final v8.b f25873a;
+    private final v8.b f24572a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final j f25874b;
+    private final j f24573b;
 
     public a(v8.b bVar, j jVar) {
-        this.f25873a = bVar;
-        this.f25874b = jVar;
+        this.f24572a = bVar;
+        this.f24573b = jVar;
     }
 
     @Override // com.facebook.imagepipeline.listener.RequestListener
     public void onRequestCancellation(String str) {
-        this.f25874b.J(this.f25873a.now());
-        this.f25874b.P(str);
+        this.f24573b.J(this.f24572a.now());
+        this.f24573b.P(str);
     }
 
     @Override // com.facebook.imagepipeline.listener.RequestListener
     public void onRequestFailure(ImageRequest imageRequest, String str, Throwable th2, boolean z10) {
-        this.f25874b.J(this.f25873a.now());
-        this.f25874b.I(imageRequest);
-        this.f25874b.P(str);
-        this.f25874b.O(z10);
+        this.f24573b.J(this.f24572a.now());
+        this.f24573b.I(imageRequest);
+        this.f24573b.P(str);
+        this.f24573b.O(z10);
     }
 
     @Override // com.facebook.imagepipeline.listener.RequestListener
     public void onRequestStart(ImageRequest imageRequest, Object obj, String str, boolean z10) {
-        this.f25874b.K(this.f25873a.now());
-        this.f25874b.I(imageRequest);
-        this.f25874b.y(obj);
-        this.f25874b.P(str);
-        this.f25874b.O(z10);
+        this.f24573b.K(this.f24572a.now());
+        this.f24573b.I(imageRequest);
+        this.f24573b.y(obj);
+        this.f24573b.P(str);
+        this.f24573b.O(z10);
     }
 
     @Override // com.facebook.imagepipeline.listener.RequestListener
     public void onRequestSuccess(ImageRequest imageRequest, String str, boolean z10) {
-        this.f25874b.J(this.f25873a.now());
-        this.f25874b.I(imageRequest);
-        this.f25874b.P(str);
-        this.f25874b.O(z10);
+        this.f24573b.J(this.f24572a.now());
+        this.f24573b.I(imageRequest);
+        this.f24573b.P(str);
+        this.f24573b.O(z10);
     }
 }

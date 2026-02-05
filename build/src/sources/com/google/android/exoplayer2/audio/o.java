@@ -8,95 +8,95 @@ import java.util.Arrays;
 final class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f11998a;
+    private final int f12383a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f11999b;
+    private final int f12384b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f12000c;
+    private final float f12385c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f12001d;
+    private final float f12386d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f12002e;
+    private final float f12387e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f12003f;
+    private final int f12388f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f12004g;
+    private final int f12389g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f12005h;
+    private final int f12390h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final short[] f12006i;
+    private final short[] f12391i;
 
     /* renamed from: j  reason: collision with root package name */
-    private short[] f12007j;
+    private short[] f12392j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f12008k;
+    private int f12393k;
 
     /* renamed from: l  reason: collision with root package name */
-    private short[] f12009l;
+    private short[] f12394l;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f12010m;
+    private int f12395m;
 
     /* renamed from: n  reason: collision with root package name */
-    private short[] f12011n;
+    private short[] f12396n;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f12012o;
+    private int f12397o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f12013p;
+    private int f12398p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f12014q;
+    private int f12399q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f12015r;
+    private int f12400r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f12016s;
+    private int f12401s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f12017t;
+    private int f12402t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f12018u;
+    private int f12403u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f12019v;
+    private int f12404v;
 
     public o(int i10, int i11, float f10, float f11, int i12) {
-        this.f11998a = i10;
-        this.f11999b = i11;
-        this.f12000c = f10;
-        this.f12001d = f11;
-        this.f12002e = i10 / i12;
-        this.f12003f = i10 / ReactFontManager.TypefaceStyle.NORMAL;
+        this.f12383a = i10;
+        this.f12384b = i11;
+        this.f12385c = f10;
+        this.f12386d = f11;
+        this.f12387e = i10 / i12;
+        this.f12388f = i10 / ReactFontManager.TypefaceStyle.NORMAL;
         int i13 = i10 / 65;
-        this.f12004g = i13;
+        this.f12389g = i13;
         int i14 = i13 * 2;
-        this.f12005h = i14;
-        this.f12006i = new short[i14];
-        this.f12007j = new short[i14 * i11];
-        this.f12009l = new short[i14 * i11];
-        this.f12011n = new short[i14 * i11];
+        this.f12390h = i14;
+        this.f12391i = new short[i14];
+        this.f12392j = new short[i14 * i11];
+        this.f12394l = new short[i14 * i11];
+        this.f12396n = new short[i14 * i11];
     }
 
     private void a(float f10, int i10) {
         int i11;
         int i12;
-        if (this.f12010m == i10) {
+        if (this.f12395m == i10) {
             return;
         }
-        int i13 = this.f11998a;
+        int i13 = this.f12383a;
         int i14 = (int) (i13 / f10);
         while (true) {
             if (i14 <= 16384 && i13 <= 16384) {
@@ -108,37 +108,37 @@ final class o {
         o(i10);
         int i15 = 0;
         while (true) {
-            int i16 = this.f12012o;
+            int i16 = this.f12397o;
             boolean z10 = true;
             if (i15 < i16 - 1) {
                 while (true) {
-                    i11 = this.f12013p;
+                    i11 = this.f12398p;
                     int i17 = (i11 + 1) * i14;
-                    i12 = this.f12014q;
+                    i12 = this.f12399q;
                     if (i17 <= i12 * i13) {
                         break;
                     }
-                    this.f12009l = f(this.f12009l, this.f12010m, 1);
+                    this.f12394l = f(this.f12394l, this.f12395m, 1);
                     int i18 = 0;
                     while (true) {
-                        int i19 = this.f11999b;
+                        int i19 = this.f12384b;
                         if (i18 < i19) {
-                            this.f12009l[(this.f12010m * i19) + i18] = n(this.f12011n, (i19 * i15) + i18, i13, i14);
+                            this.f12394l[(this.f12395m * i19) + i18] = n(this.f12396n, (i19 * i15) + i18, i13, i14);
                             i18++;
                         }
                     }
-                    this.f12014q++;
-                    this.f12010m++;
+                    this.f12399q++;
+                    this.f12395m++;
                 }
                 int i20 = i11 + 1;
-                this.f12013p = i20;
+                this.f12398p = i20;
                 if (i20 == i13) {
-                    this.f12013p = 0;
+                    this.f12398p = 0;
                     if (i12 != i14) {
                         z10 = false;
                     }
                     ne.a.g(z10);
-                    this.f12014q = 0;
+                    this.f12399q = 0;
                 }
                 i15++;
             } else {
@@ -150,45 +150,45 @@ final class o {
 
     private void b(float f10) {
         int m10;
-        int i10 = this.f12008k;
-        if (i10 < this.f12005h) {
+        int i10 = this.f12393k;
+        if (i10 < this.f12390h) {
             return;
         }
         int i11 = 0;
         do {
-            if (this.f12015r > 0) {
+            if (this.f12400r > 0) {
                 m10 = c(i11);
             } else {
-                int g10 = g(this.f12007j, i11);
+                int g10 = g(this.f12392j, i11);
                 if (f10 > 1.0d) {
-                    m10 = g10 + w(this.f12007j, i11, f10, g10);
+                    m10 = g10 + w(this.f12392j, i11, f10, g10);
                 } else {
-                    m10 = m(this.f12007j, i11, f10, g10);
+                    m10 = m(this.f12392j, i11, f10, g10);
                 }
             }
             i11 += m10;
-        } while (this.f12005h + i11 <= i10);
+        } while (this.f12390h + i11 <= i10);
         v(i11);
     }
 
     private int c(int i10) {
-        int min = Math.min(this.f12005h, this.f12015r);
-        d(this.f12007j, i10, min);
-        this.f12015r -= min;
+        int min = Math.min(this.f12390h, this.f12400r);
+        d(this.f12392j, i10, min);
+        this.f12400r -= min;
         return min;
     }
 
     private void d(short[] sArr, int i10, int i11) {
-        short[] f10 = f(this.f12009l, this.f12010m, i11);
-        this.f12009l = f10;
-        int i12 = this.f11999b;
-        System.arraycopy(sArr, i10 * i12, f10, this.f12010m * i12, i12 * i11);
-        this.f12010m += i11;
+        short[] f10 = f(this.f12394l, this.f12395m, i11);
+        this.f12394l = f10;
+        int i12 = this.f12384b;
+        System.arraycopy(sArr, i10 * i12, f10, this.f12395m * i12, i12 * i11);
+        this.f12395m += i11;
     }
 
     private void e(short[] sArr, int i10, int i11) {
-        int i12 = this.f12005h / i11;
-        int i13 = this.f11999b;
+        int i12 = this.f12390h / i11;
+        int i13 = this.f12384b;
         int i14 = i11 * i13;
         int i15 = i10 * i13;
         for (int i16 = 0; i16 < i12; i16++) {
@@ -196,13 +196,13 @@ final class o {
             for (int i18 = 0; i18 < i14; i18++) {
                 i17 += sArr[(i16 * i14) + i15 + i18];
             }
-            this.f12006i[i16] = (short) (i17 / i14);
+            this.f12391i[i16] = (short) (i17 / i14);
         }
     }
 
     private short[] f(short[] sArr, int i10, int i11) {
         int length = sArr.length;
-        int i12 = this.f11999b;
+        int i12 = this.f12384b;
         int i13 = length / i12;
         if (i10 + i11 <= i13) {
             return sArr;
@@ -214,52 +214,52 @@ final class o {
         int i11;
         int i12;
         int i13;
-        int i14 = this.f11998a;
+        int i14 = this.f12383a;
         if (i14 > 4000) {
             i11 = i14 / 4000;
         } else {
             i11 = 1;
         }
-        if (this.f11999b == 1 && i11 == 1) {
-            i12 = h(sArr, i10, this.f12003f, this.f12004g);
+        if (this.f12384b == 1 && i11 == 1) {
+            i12 = h(sArr, i10, this.f12388f, this.f12389g);
         } else {
             e(sArr, i10, i11);
-            int h10 = h(this.f12006i, 0, this.f12003f / i11, this.f12004g / i11);
+            int h10 = h(this.f12391i, 0, this.f12388f / i11, this.f12389g / i11);
             if (i11 != 1) {
                 int i15 = h10 * i11;
                 int i16 = i11 * 4;
                 int i17 = i15 - i16;
                 int i18 = i15 + i16;
-                int i19 = this.f12003f;
+                int i19 = this.f12388f;
                 if (i17 < i19) {
                     i17 = i19;
                 }
-                int i20 = this.f12004g;
+                int i20 = this.f12389g;
                 if (i18 > i20) {
                     i18 = i20;
                 }
-                if (this.f11999b == 1) {
+                if (this.f12384b == 1) {
                     i12 = h(sArr, i10, i17, i18);
                 } else {
                     e(sArr, i10, 1);
-                    i12 = h(this.f12006i, 0, i17, i18);
+                    i12 = h(this.f12391i, 0, i17, i18);
                 }
             } else {
                 i12 = h10;
             }
         }
-        if (q(this.f12018u, this.f12019v)) {
-            i13 = this.f12016s;
+        if (q(this.f12403u, this.f12404v)) {
+            i13 = this.f12401s;
         } else {
             i13 = i12;
         }
-        this.f12017t = this.f12018u;
-        this.f12016s = i12;
+        this.f12402t = this.f12403u;
+        this.f12401s = i12;
         return i13;
     }
 
     private int h(short[] sArr, int i10, int i11, int i12) {
-        int i13 = i10 * this.f11999b;
+        int i13 = i10 * this.f12384b;
         int i14 = SetSpanOperation.SPAN_MAX_PRIORITY;
         int i15 = 1;
         int i16 = 0;
@@ -279,8 +279,8 @@ final class o {
             }
             i11++;
         }
-        this.f12018u = i15 / i16;
-        this.f12019v = i17 / i14;
+        this.f12403u = i15 / i16;
+        this.f12404v = i17 / i14;
         return i16;
     }
 
@@ -289,24 +289,24 @@ final class o {
         if (f10 < 0.5f) {
             i12 = (int) ((i11 * f10) / (1.0f - f10));
         } else {
-            this.f12015r = (int) ((i11 * ((2.0f * f10) - 1.0f)) / (1.0f - f10));
+            this.f12400r = (int) ((i11 * ((2.0f * f10) - 1.0f)) / (1.0f - f10));
             i12 = i11;
         }
         int i13 = i11 + i12;
-        short[] f11 = f(this.f12009l, this.f12010m, i13);
-        this.f12009l = f11;
-        int i14 = this.f11999b;
-        System.arraycopy(sArr, i10 * i14, f11, this.f12010m * i14, i14 * i11);
-        p(i12, this.f11999b, this.f12009l, this.f12010m + i11, sArr, i10 + i11, sArr, i10);
-        this.f12010m += i13;
+        short[] f11 = f(this.f12394l, this.f12395m, i13);
+        this.f12394l = f11;
+        int i14 = this.f12384b;
+        System.arraycopy(sArr, i10 * i14, f11, this.f12395m * i14, i14 * i11);
+        p(i12, this.f12384b, this.f12394l, this.f12395m + i11, sArr, i10 + i11, sArr, i10);
+        this.f12395m += i13;
         return i12;
     }
 
     private short n(short[] sArr, int i10, int i11, int i12) {
         short s10 = sArr[i10];
-        short s11 = sArr[i10 + this.f11999b];
-        int i13 = this.f12014q * i11;
-        int i14 = this.f12013p;
+        short s11 = sArr[i10 + this.f12384b];
+        int i13 = this.f12399q * i11;
+        int i14 = this.f12398p;
         int i15 = i14 * i12;
         int i16 = (i14 + 1) * i12;
         int i17 = i16 - i13;
@@ -315,14 +315,14 @@ final class o {
     }
 
     private void o(int i10) {
-        int i11 = this.f12010m - i10;
-        short[] f10 = f(this.f12011n, this.f12012o, i11);
-        this.f12011n = f10;
-        short[] sArr = this.f12009l;
-        int i12 = this.f11999b;
-        System.arraycopy(sArr, i10 * i12, f10, this.f12012o * i12, i12 * i11);
-        this.f12010m = i10;
-        this.f12012o += i11;
+        int i11 = this.f12395m - i10;
+        short[] f10 = f(this.f12396n, this.f12397o, i11);
+        this.f12396n = f10;
+        short[] sArr = this.f12394l;
+        int i12 = this.f12384b;
+        System.arraycopy(sArr, i10 * i12, f10, this.f12397o * i12, i12 * i11);
+        this.f12395m = i10;
+        this.f12397o += i11;
     }
 
     private static void p(int i10, int i11, short[] sArr, int i12, short[] sArr2, int i13, short[] sArr3, int i14) {
@@ -340,22 +340,22 @@ final class o {
     }
 
     private boolean q(int i10, int i11) {
-        if (i10 == 0 || this.f12016s == 0 || i11 > i10 * 3 || i10 * 2 <= this.f12017t * 3) {
+        if (i10 == 0 || this.f12401s == 0 || i11 > i10 * 3 || i10 * 2 <= this.f12402t * 3) {
             return false;
         }
         return true;
     }
 
     private void r() {
-        int i10 = this.f12010m;
-        float f10 = this.f12000c;
-        float f11 = this.f12001d;
+        int i10 = this.f12395m;
+        float f10 = this.f12385c;
+        float f11 = this.f12386d;
         float f12 = f10 / f11;
-        float f13 = this.f12002e * f11;
+        float f13 = this.f12387e * f11;
         double d10 = f12;
         if (d10 <= 1.00001d && d10 >= 0.99999d) {
-            d(this.f12007j, 0, this.f12008k);
-            this.f12008k = 0;
+            d(this.f12392j, 0, this.f12393k);
+            this.f12393k = 0;
         } else {
             b(f12);
         }
@@ -368,18 +368,18 @@ final class o {
         if (i10 == 0) {
             return;
         }
-        short[] sArr = this.f12011n;
-        int i11 = this.f11999b;
-        System.arraycopy(sArr, i10 * i11, sArr, 0, (this.f12012o - i10) * i11);
-        this.f12012o -= i10;
+        short[] sArr = this.f12396n;
+        int i11 = this.f12384b;
+        System.arraycopy(sArr, i10 * i11, sArr, 0, (this.f12397o - i10) * i11);
+        this.f12397o -= i10;
     }
 
     private void v(int i10) {
-        int i11 = this.f12008k - i10;
-        short[] sArr = this.f12007j;
-        int i12 = this.f11999b;
+        int i11 = this.f12393k - i10;
+        short[] sArr = this.f12392j;
+        int i12 = this.f12384b;
         System.arraycopy(sArr, i10 * i12, sArr, 0, i12 * i11);
-        this.f12008k = i11;
+        this.f12393k = i11;
     }
 
     private int w(short[] sArr, int i10, float f10, int i11) {
@@ -387,82 +387,82 @@ final class o {
         if (f10 >= 2.0f) {
             i12 = (int) (i11 / (f10 - 1.0f));
         } else {
-            this.f12015r = (int) ((i11 * (2.0f - f10)) / (f10 - 1.0f));
+            this.f12400r = (int) ((i11 * (2.0f - f10)) / (f10 - 1.0f));
             i12 = i11;
         }
-        short[] f11 = f(this.f12009l, this.f12010m, i12);
-        this.f12009l = f11;
-        p(i12, this.f11999b, f11, this.f12010m, sArr, i10, sArr, i10 + i11);
-        this.f12010m += i12;
+        short[] f11 = f(this.f12394l, this.f12395m, i12);
+        this.f12394l = f11;
+        p(i12, this.f12384b, f11, this.f12395m, sArr, i10, sArr, i10 + i11);
+        this.f12395m += i12;
         return i12;
     }
 
     public void i() {
-        this.f12008k = 0;
-        this.f12010m = 0;
-        this.f12012o = 0;
-        this.f12013p = 0;
-        this.f12014q = 0;
-        this.f12015r = 0;
-        this.f12016s = 0;
-        this.f12017t = 0;
-        this.f12018u = 0;
-        this.f12019v = 0;
+        this.f12393k = 0;
+        this.f12395m = 0;
+        this.f12397o = 0;
+        this.f12398p = 0;
+        this.f12399q = 0;
+        this.f12400r = 0;
+        this.f12401s = 0;
+        this.f12402t = 0;
+        this.f12403u = 0;
+        this.f12404v = 0;
     }
 
     public void j(ShortBuffer shortBuffer) {
-        int min = Math.min(shortBuffer.remaining() / this.f11999b, this.f12010m);
-        shortBuffer.put(this.f12009l, 0, this.f11999b * min);
-        int i10 = this.f12010m - min;
-        this.f12010m = i10;
-        short[] sArr = this.f12009l;
-        int i11 = this.f11999b;
+        int min = Math.min(shortBuffer.remaining() / this.f12384b, this.f12395m);
+        shortBuffer.put(this.f12394l, 0, this.f12384b * min);
+        int i10 = this.f12395m - min;
+        this.f12395m = i10;
+        short[] sArr = this.f12394l;
+        int i11 = this.f12384b;
         System.arraycopy(sArr, min * i11, sArr, 0, i10 * i11);
     }
 
     public int k() {
-        return this.f12010m * this.f11999b * 2;
+        return this.f12395m * this.f12384b * 2;
     }
 
     public int l() {
-        return this.f12008k * this.f11999b * 2;
+        return this.f12393k * this.f12384b * 2;
     }
 
     public void s() {
         int i10;
-        int i11 = this.f12008k;
-        float f10 = this.f12000c;
-        float f11 = this.f12001d;
-        int i12 = this.f12010m + ((int) ((((i11 / (f10 / f11)) + this.f12012o) / (this.f12002e * f11)) + 0.5f));
-        this.f12007j = f(this.f12007j, i11, (this.f12005h * 2) + i11);
+        int i11 = this.f12393k;
+        float f10 = this.f12385c;
+        float f11 = this.f12386d;
+        int i12 = this.f12395m + ((int) ((((i11 / (f10 / f11)) + this.f12397o) / (this.f12387e * f11)) + 0.5f));
+        this.f12392j = f(this.f12392j, i11, (this.f12390h * 2) + i11);
         int i13 = 0;
         while (true) {
-            i10 = this.f12005h;
-            int i14 = this.f11999b;
+            i10 = this.f12390h;
+            int i14 = this.f12384b;
             if (i13 >= i10 * 2 * i14) {
                 break;
             }
-            this.f12007j[(i14 * i11) + i13] = 0;
+            this.f12392j[(i14 * i11) + i13] = 0;
             i13++;
         }
-        this.f12008k += i10 * 2;
+        this.f12393k += i10 * 2;
         r();
-        if (this.f12010m > i12) {
-            this.f12010m = i12;
+        if (this.f12395m > i12) {
+            this.f12395m = i12;
         }
-        this.f12008k = 0;
-        this.f12015r = 0;
-        this.f12012o = 0;
+        this.f12393k = 0;
+        this.f12400r = 0;
+        this.f12397o = 0;
     }
 
     public void t(ShortBuffer shortBuffer) {
         int remaining = shortBuffer.remaining();
-        int i10 = this.f11999b;
+        int i10 = this.f12384b;
         int i11 = remaining / i10;
-        short[] f10 = f(this.f12007j, this.f12008k, i11);
-        this.f12007j = f10;
-        shortBuffer.get(f10, this.f12008k * this.f11999b, ((i10 * i11) * 2) / 2);
-        this.f12008k += i11;
+        short[] f10 = f(this.f12392j, this.f12393k, i11);
+        this.f12392j = f10;
+        shortBuffer.get(f10, this.f12393k * this.f12384b, ((i10 * i11) * 2) / 2);
+        this.f12393k += i11;
         r();
     }
 }

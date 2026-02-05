@@ -1,11 +1,22 @@
 package jm;
+
+import android.view.ViewGroup;
+import android.view.ViewParent;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class h {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final fm.b f31807a = new fm.b(0.0d, 0.0d, 0.0d, 0.0d, 0.0d, 0.0d, -1, -1);
-
-    public static final fm.b a() {
-        return f31807a;
+    public static final void a(ViewGroup viewGroup) {
+        ViewGroup viewGroup2;
+        if (viewGroup != null) {
+            ViewParent parent = viewGroup.getParent();
+            if (parent instanceof ViewGroup) {
+                viewGroup2 = (ViewGroup) parent;
+            } else {
+                viewGroup2 = null;
+            }
+            if (viewGroup2 == null) {
+                return;
+            }
+            viewGroup2.removeView(viewGroup);
+        }
     }
 }

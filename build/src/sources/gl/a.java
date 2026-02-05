@@ -1,15 +1,40 @@
 package gl;
 
-import java.util.List;
+import com.henninghall.date_picker.pickers.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
-    void onCancelled(String str, List list);
+public class a implements h {
 
-    void onCompleted(String str, List list);
+    /* renamed from: a  reason: collision with root package name */
+    private final fl.f f24983a;
 
-    void onError(String str, Throwable th2, List list);
+    /* renamed from: gl.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    class C0342a implements a.InterfaceC0200a {
 
-    void onProgress(String str, float f10);
+        /* renamed from: a  reason: collision with root package name */
+        final /* synthetic */ hl.g f24984a;
 
-    void onStarted(String str);
+        C0342a(hl.g gVar) {
+            this.f24984a = gVar;
+        }
+
+        @Override // com.henninghall.date_picker.pickers.a.InterfaceC0200a
+        public void a() {
+            a.this.f24983a.b(this.f24984a);
+        }
+
+        @Override // com.henninghall.date_picker.pickers.a.InterfaceC0200a
+        public void b() {
+            a.this.f24983a.a(this.f24984a);
+        }
+    }
+
+    public a(fl.f fVar) {
+        this.f24983a = fVar;
+    }
+
+    @Override // gl.h
+    public void a(hl.g gVar) {
+        gVar.f25951d.setOnValueChangedListener(new C0342a(gVar));
+    }
 }

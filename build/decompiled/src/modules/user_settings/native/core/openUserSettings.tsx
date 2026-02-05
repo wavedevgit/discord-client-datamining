@@ -104,4 +104,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openUserSettings = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5923, 660, 3920, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5927, 660, 3920, 806, 2]);

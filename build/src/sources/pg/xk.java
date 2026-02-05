@@ -8,30 +8,30 @@ public final class xk extends hf.a {
     public static final Parcelable.Creator<xk> CREATOR = new yk();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f45973d;
+    private final String f45903d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f45974e;
+    private final List f45904e;
 
     public xk(String str, List list) {
-        this.f45973d = str;
-        this.f45974e = list;
+        this.f45903d = str;
+        this.f45904e = list;
     }
 
     public final String b() {
-        return this.f45973d;
+        return this.f45903d;
     }
 
     public final List c() {
-        return this.f45974e;
+        return this.f45904e;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        String str = this.f45973d;
+        String str = this.f45903d;
         int a10 = hf.c.a(parcel);
         hf.c.s(parcel, 1, str, false);
-        hf.c.w(parcel, 2, this.f45974e, false);
+        hf.c.w(parcel, 2, this.f45904e, false);
         hf.c.b(parcel, a10);
     }
 }

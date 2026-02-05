@@ -5,25 +5,25 @@ import android.util.SparseIntArray;
 public class z {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f51307a;
+    public final int f51996a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f51308b;
+    public final int f51997b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final SparseIntArray f51309c;
+    public final SparseIntArray f51998c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f51310d;
+    public final int f51999d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f51311e;
+    public final int f52000e;
 
     /* renamed from: f  reason: collision with root package name */
-    public boolean f51312f;
+    public boolean f52001f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final int f51313g;
+    public final int f52002g;
 
     public z(int i10, int i11, SparseIntArray sparseIntArray) {
         this(i10, i11, sparseIntArray, 0, Integer.MAX_VALUE, -1);
@@ -31,11 +31,11 @@ public class z {
 
     public z(int i10, int i11, SparseIntArray sparseIntArray, int i12, int i13, int i14) {
         o8.j.i(i10 >= 0 && i11 >= i10);
-        this.f51308b = i10;
-        this.f51307a = i11;
-        this.f51309c = sparseIntArray;
-        this.f51310d = i12;
-        this.f51311e = i13;
-        this.f51313g = i14;
+        this.f51997b = i10;
+        this.f51996a = i11;
+        this.f51998c = sparseIntArray;
+        this.f51999d = i12;
+        this.f52000e = i13;
+        this.f52002g = i14;
     }
 }

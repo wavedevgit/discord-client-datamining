@@ -10,10 +10,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
     var0 = {
-        'luminance': 0,
-        'alpha': 1
+        'objectBoundingBox': 0,
+        'userSpaceOnUse': 1
     };
-    var1.maskType = var0;
+    var1.default = var0;
+    var1.units = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

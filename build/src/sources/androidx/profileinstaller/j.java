@@ -3,22 +3,22 @@ package androidx.profileinstaller;
 class j {
 
     /* renamed from: a  reason: collision with root package name */
-    final e f4700a;
+    final e f4812a;
 
     /* renamed from: b  reason: collision with root package name */
-    final int f4701b;
+    final int f4813b;
 
     /* renamed from: c  reason: collision with root package name */
-    final byte[] f4702c;
+    final byte[] f4814c;
 
     /* renamed from: d  reason: collision with root package name */
-    final boolean f4703d;
+    final boolean f4815d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(e eVar, int i10, byte[] bArr, boolean z10) {
-        this.f4700a = eVar;
-        this.f4701b = i10;
-        this.f4702c = bArr;
-        this.f4703d = z10;
+        this.f4812a = eVar;
+        this.f4813b = i10;
+        this.f4814c = bArr;
+        this.f4815d = z10;
     }
 }

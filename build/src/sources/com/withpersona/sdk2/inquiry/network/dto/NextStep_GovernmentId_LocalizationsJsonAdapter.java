@@ -80,7 +80,7 @@ public final class NextStep_GovernmentId_LocalizationsJsonAdapter extends h {
     @NotNull
     public NextStep.GovernmentId.Localizations fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         NextStep.GovernmentId.SelectPage selectPage = null;
         NextStep.GovernmentId.PromptPage promptPage = null;
         NextStep.GovernmentId.CapturePage capturePage = null;
@@ -95,7 +95,7 @@ public final class NextStep_GovernmentId_LocalizationsJsonAdapter extends h {
             NextStep.GovernmentId.PromptPage promptPage2 = promptPage;
             if (reader.hasNext()) {
                 NextStep.GovernmentId.CapturePage capturePage2 = capturePage;
-                switch (reader.A0(this.options)) {
+                switch (reader.W(this.options)) {
                     case -1:
                         reader.E0();
                         reader.P();
@@ -108,7 +108,7 @@ public final class NextStep_GovernmentId_LocalizationsJsonAdapter extends h {
                             capturePage = capturePage2;
                             break;
                         } else {
-                            throw vm.c.x("selectPage", "selectPage", reader);
+                            throw ym.c.x("selectPage", "selectPage", reader);
                         }
                     case 1:
                         promptPage = (NextStep.GovernmentId.PromptPage) this.promptPageAdapter.fromJson(reader);
@@ -117,19 +117,19 @@ public final class NextStep_GovernmentId_LocalizationsJsonAdapter extends h {
                             selectPage = selectPage2;
                             continue;
                         } else {
-                            throw vm.c.x("promptPage", "promptPage", reader);
+                            throw ym.c.x("promptPage", "promptPage", reader);
                         }
                     case 2:
                         capturePage = (NextStep.GovernmentId.CapturePage) this.capturePageAdapter.fromJson(reader);
                         if (capturePage == null) {
-                            throw vm.c.x("capturePage", "capturePage", reader);
+                            throw ym.c.x("capturePage", "capturePage", reader);
                         }
                         selectPage = selectPage2;
                         break;
                     case 3:
                         checkPage = (NextStep.GovernmentId.CheckPage) this.checkPageAdapter.fromJson(reader);
                         if (checkPage == null) {
-                            throw vm.c.x("checkPage", "checkPage", reader);
+                            throw ym.c.x("checkPage", "checkPage", reader);
                         }
                         capturePage = capturePage2;
                         selectPage = selectPage2;
@@ -137,7 +137,7 @@ public final class NextStep_GovernmentId_LocalizationsJsonAdapter extends h {
                     case 4:
                         pendingPage = (NextStep.GovernmentId.PendingPage) this.pendingPageAdapter.fromJson(reader);
                         if (pendingPage == null) {
-                            throw vm.c.x("pendingPage", "pendingPage", reader);
+                            throw ym.c.x("pendingPage", "pendingPage", reader);
                         }
                         capturePage = capturePage2;
                         selectPage = selectPage2;
@@ -145,7 +145,7 @@ public final class NextStep_GovernmentId_LocalizationsJsonAdapter extends h {
                     case 5:
                         requestPage = (NextStep.GovernmentId.RequestPage) this.requestPageAdapter.fromJson(reader);
                         if (requestPage == null) {
-                            throw vm.c.x("requestPage", "requestPage", reader);
+                            throw ym.c.x("requestPage", "requestPage", reader);
                         }
                         capturePage = capturePage2;
                         selectPage = selectPage2;
@@ -153,7 +153,7 @@ public final class NextStep_GovernmentId_LocalizationsJsonAdapter extends h {
                     case 6:
                         reviewUploadPage = (NextStep.GovernmentId.ReviewUploadPage) this.reviewUploadPageAdapter.fromJson(reader);
                         if (reviewUploadPage == null) {
-                            throw vm.c.x("reviewUploadPage", "reviewUploadPage", reader);
+                            throw ym.c.x("reviewUploadPage", "reviewUploadPage", reader);
                         }
                         capturePage = capturePage2;
                         selectPage = selectPage2;
@@ -176,7 +176,7 @@ public final class NextStep_GovernmentId_LocalizationsJsonAdapter extends h {
                 promptPage = promptPage2;
             } else {
                 NextStep.GovernmentId.CapturePage capturePage3 = capturePage;
-                reader.y();
+                reader.z();
                 if (selectPage2 != null) {
                     if (promptPage2 != null) {
                         if (capturePage3 != null) {
@@ -186,19 +186,19 @@ public final class NextStep_GovernmentId_LocalizationsJsonAdapter extends h {
                                         if (reviewUploadPage != null) {
                                             return new NextStep.GovernmentId.Localizations(selectPage2, promptPage2, capturePage3, checkPage, pendingPage, requestPage, reviewUploadPage, cancelDialog, autoClassificationPage);
                                         }
-                                        throw vm.c.o("reviewUploadPage", "reviewUploadPage", reader);
+                                        throw ym.c.o("reviewUploadPage", "reviewUploadPage", reader);
                                     }
-                                    throw vm.c.o("requestPage", "requestPage", reader);
+                                    throw ym.c.o("requestPage", "requestPage", reader);
                                 }
-                                throw vm.c.o("pendingPage", "pendingPage", reader);
+                                throw ym.c.o("pendingPage", "pendingPage", reader);
                             }
-                            throw vm.c.o("checkPage", "checkPage", reader);
+                            throw ym.c.o("checkPage", "checkPage", reader);
                         }
-                        throw vm.c.o("capturePage", "capturePage", reader);
+                        throw ym.c.o("capturePage", "capturePage", reader);
                     }
-                    throw vm.c.o("promptPage", "promptPage", reader);
+                    throw ym.c.o("promptPage", "promptPage", reader);
                 }
-                throw vm.c.o("selectPage", "selectPage", reader);
+                throw ym.c.o("selectPage", "selectPage", reader);
             }
         }
     }
@@ -207,24 +207,24 @@ public final class NextStep_GovernmentId_LocalizationsJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.GovernmentId.Localizations localizations) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (localizations != null) {
-            writer.l();
-            writer.A0("selectPage");
+            writer.k();
+            writer.W("selectPage");
             this.selectPageAdapter.toJson(writer, localizations.getSelectPage());
-            writer.A0("promptPage");
+            writer.W("promptPage");
             this.promptPageAdapter.toJson(writer, localizations.getPromptPage());
-            writer.A0("capturePage");
+            writer.W("capturePage");
             this.capturePageAdapter.toJson(writer, localizations.getCapturePage());
-            writer.A0("checkPage");
+            writer.W("checkPage");
             this.checkPageAdapter.toJson(writer, localizations.getCheckPage());
-            writer.A0("pendingPage");
+            writer.W("pendingPage");
             this.pendingPageAdapter.toJson(writer, localizations.getPendingPage());
-            writer.A0("requestPage");
+            writer.W("requestPage");
             this.requestPageAdapter.toJson(writer, localizations.getRequestPage());
-            writer.A0("reviewUploadPage");
+            writer.W("reviewUploadPage");
             this.reviewUploadPageAdapter.toJson(writer, localizations.getReviewUploadPage());
-            writer.A0("cancelDialog");
+            writer.W("cancelDialog");
             this.nullableCancelDialogAdapter.toJson(writer, localizations.getCancelDialog());
-            writer.A0("autoClassificationPage");
+            writer.W("autoClassificationPage");
             this.nullableAutoClassificationPageAdapter.toJson(writer, localizations.getAutoClassificationPage());
             writer.E();
             return;

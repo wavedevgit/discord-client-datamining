@@ -39,7 +39,7 @@ public class EglRenderer implements VideoSink {
     private int framesRendered;
 
     /* renamed from: id  reason: collision with root package name */
-    private Optional<UUID> f44409id;
+    private Optional<UUID> f44260id;
     private float layoutAspectRatio;
     private final Object layoutLock;
     private final Runnable logStatisticsRunnable;
@@ -472,8 +472,8 @@ public class EglRenderer implements VideoSink {
                         EglRenderer.this.lambda$swapBuffersOnRenderThread$6(videoFrame, j10, z10);
                     }
                 };
-                if (this.f44409id.isPresent()) {
-                    this.eglThread.scheduleRenderUpdate(this.f44409id.get(), renderUpdate);
+                if (this.f44260id.isPresent()) {
+                    this.eglThread.scheduleRenderUpdate(this.f44260id.get(), renderUpdate);
                 } else {
                     this.eglThread.scheduleRenderUpdate(renderUpdate);
                 }
@@ -744,7 +744,7 @@ public class EglRenderer implements VideoSink {
     }
 
     public EglRenderer(String str, VideoFrameDrawer videoFrameDrawer) {
-        this.f44409id = Optional.empty();
+        this.f44260id = Optional.empty();
         this.threadLock = new Object();
         this.eglExceptionCallback = new Runnable() { // from class: org.webrtc.EglRenderer.1
             @Override // java.lang.Runnable
@@ -821,7 +821,7 @@ public class EglRenderer implements VideoSink {
 
     public void init(EglThread eglThread, RendererCommon.GlDrawer glDrawer, boolean z10, boolean z11) {
         if (z11) {
-            this.f44409id = Optional.of(UUID.randomUUID());
+            this.f44260id = Optional.of(UUID.randomUUID());
         }
         init(eglThread, glDrawer, z10);
     }

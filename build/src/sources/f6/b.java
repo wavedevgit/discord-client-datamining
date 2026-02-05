@@ -16,135 +16,135 @@ import java.util.Map;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private f f23196a;
+    private f f22221a;
 
     /* renamed from: b  reason: collision with root package name */
-    private u f23197b;
+    private u f22222b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f23198c;
+    private boolean f22223c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f23199a;
+        static final /* synthetic */ int[] f22224a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f23200b;
+        static final /* synthetic */ int[] f22225b;
 
         static {
             int[] iArr = new int[j.values().length];
-            f23200b = iArr;
+            f22225b = iArr;
             try {
                 iArr[j.first_child.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f23200b[j.last_child.ordinal()] = 2;
+                f22225b[j.last_child.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f23200b[j.only_child.ordinal()] = 3;
+                f22225b[j.only_child.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f23200b[j.first_of_type.ordinal()] = 4;
+                f22225b[j.first_of_type.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f23200b[j.last_of_type.ordinal()] = 5;
+                f22225b[j.last_of_type.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f23200b[j.only_of_type.ordinal()] = 6;
+                f22225b[j.only_of_type.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f23200b[j.root.ordinal()] = 7;
+                f22225b[j.root.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f23200b[j.empty.ordinal()] = 8;
+                f22225b[j.empty.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f23200b[j.nth_child.ordinal()] = 9;
+                f22225b[j.nth_child.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f23200b[j.nth_last_child.ordinal()] = 10;
+                f22225b[j.nth_last_child.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f23200b[j.nth_of_type.ordinal()] = 11;
+                f22225b[j.nth_of_type.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f23200b[j.nth_last_of_type.ordinal()] = 12;
+                f22225b[j.nth_last_of_type.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                f23200b[j.not.ordinal()] = 13;
+                f22225b[j.not.ordinal()] = 13;
             } catch (NoSuchFieldError unused13) {
             }
             try {
-                f23200b[j.target.ordinal()] = 14;
+                f22225b[j.target.ordinal()] = 14;
             } catch (NoSuchFieldError unused14) {
             }
             try {
-                f23200b[j.lang.ordinal()] = 15;
+                f22225b[j.lang.ordinal()] = 15;
             } catch (NoSuchFieldError unused15) {
             }
             try {
-                f23200b[j.link.ordinal()] = 16;
+                f22225b[j.link.ordinal()] = 16;
             } catch (NoSuchFieldError unused16) {
             }
             try {
-                f23200b[j.visited.ordinal()] = 17;
+                f22225b[j.visited.ordinal()] = 17;
             } catch (NoSuchFieldError unused17) {
             }
             try {
-                f23200b[j.hover.ordinal()] = 18;
+                f22225b[j.hover.ordinal()] = 18;
             } catch (NoSuchFieldError unused18) {
             }
             try {
-                f23200b[j.active.ordinal()] = 19;
+                f22225b[j.active.ordinal()] = 19;
             } catch (NoSuchFieldError unused19) {
             }
             try {
-                f23200b[j.focus.ordinal()] = 20;
+                f22225b[j.focus.ordinal()] = 20;
             } catch (NoSuchFieldError unused20) {
             }
             try {
-                f23200b[j.enabled.ordinal()] = 21;
+                f22225b[j.enabled.ordinal()] = 21;
             } catch (NoSuchFieldError unused21) {
             }
             try {
-                f23200b[j.disabled.ordinal()] = 22;
+                f22225b[j.disabled.ordinal()] = 22;
             } catch (NoSuchFieldError unused22) {
             }
             try {
-                f23200b[j.checked.ordinal()] = 23;
+                f22225b[j.checked.ordinal()] = 23;
             } catch (NoSuchFieldError unused23) {
             }
             try {
-                f23200b[j.indeterminate.ordinal()] = 24;
+                f22225b[j.indeterminate.ordinal()] = 24;
             } catch (NoSuchFieldError unused24) {
             }
             int[] iArr2 = new int[c.values().length];
-            f23199a = iArr2;
+            f22224a = iArr2;
             try {
                 iArr2[c.EQUALS.ordinal()] = 1;
             } catch (NoSuchFieldError unused25) {
             }
             try {
-                f23199a[c.INCLUDES.ordinal()] = 2;
+                f22224a[c.INCLUDES.ordinal()] = 2;
             } catch (NoSuchFieldError unused26) {
             }
             try {
-                f23199a[c.DASHMATCH.ordinal()] = 3;
+                f22224a[c.DASHMATCH.ordinal()] = 3;
             } catch (NoSuchFieldError unused27) {
             }
         }
@@ -153,21 +153,21 @@ public class b {
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: f6.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class C0309b {
+    public static class C0307b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f23201a;
+        public final String f22226a;
 
         /* renamed from: b  reason: collision with root package name */
-        final c f23202b;
+        final c f22227b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final String f23203c;
+        public final String f22228c;
 
-        C0309b(String str, c cVar, String str2) {
-            this.f23201a = str;
-            this.f23202b = cVar;
-            this.f23203c = str2;
+        C0307b(String str, c cVar, String str2) {
+            this.f22226a = str;
+            this.f22227b = cVar;
+            this.f22228c = str2;
         }
     }
 
@@ -189,14 +189,14 @@ public class b {
         public static class a {
 
             /* renamed from: a  reason: collision with root package name */
-            public int f23209a;
+            public int f22234a;
 
             /* renamed from: b  reason: collision with root package name */
-            public int f23210b;
+            public int f22235b;
 
             a(int i10, int i11) {
-                this.f23209a = i10;
-                this.f23210b = i11;
+                this.f22234a = i10;
+                this.f22235b = i11;
             }
         }
 
@@ -225,7 +225,7 @@ public class b {
             if (h()) {
                 return null;
             }
-            int i11 = this.f23631b;
+            int i11 = this.f22656b;
             if (!f('(')) {
                 return null;
             }
@@ -243,16 +243,16 @@ public class b {
                     } else {
                         i10 = 1;
                     }
-                    f6.c c10 = f6.c.c(this.f23630a, this.f23631b, this.f23632c, false);
+                    f6.c c10 = f6.c.c(this.f22655a, this.f22656b, this.f22657c, false);
                     if (c10 != null) {
-                        this.f23631b = c10.a();
+                        this.f22656b = c10.a();
                     }
                     if (!f('n') && !f('N')) {
                         cVar = c10;
                         c10 = null;
                     } else {
                         if (c10 == null) {
-                            c10 = new f6.c(1L, this.f23631b);
+                            c10 = new f6.c(1L, this.f22656b);
                         }
                         A();
                         boolean f10 = f('+');
@@ -261,14 +261,14 @@ public class b {
                         }
                         if (f10) {
                             A();
-                            cVar = f6.c.c(this.f23630a, this.f23631b, this.f23632c, false);
+                            cVar = f6.c.c(this.f22655a, this.f22656b, this.f22657c, false);
                             if (cVar != null) {
-                                this.f23631b = cVar.a();
+                                this.f22656b = cVar.a();
                                 int i14 = i12;
                                 i12 = i10;
                                 i10 = i14;
                             } else {
-                                this.f23631b = i11;
+                                this.f22656b = i11;
                                 return null;
                             }
                         } else {
@@ -293,7 +293,7 @@ public class b {
             if (f(')')) {
                 return aVar;
             }
-            this.f23631b = i11;
+            this.f22656b = i11;
             return null;
         }
 
@@ -312,7 +312,7 @@ public class b {
             if (h()) {
                 return null;
             }
-            int i10 = this.f23631b;
+            int i10 = this.f22656b;
             if (!f('(')) {
                 return null;
             }
@@ -321,7 +321,7 @@ public class b {
             do {
                 String H = H();
                 if (H == null) {
-                    this.f23631b = i10;
+                    this.f22656b = i10;
                     return null;
                 }
                 if (arrayList == null) {
@@ -333,7 +333,7 @@ public class b {
             if (f(')')) {
                 return arrayList;
             }
-            this.f23631b = i10;
+            this.f22656b = i10;
             return null;
         }
 
@@ -343,23 +343,23 @@ public class b {
             if (h()) {
                 return null;
             }
-            int i10 = this.f23631b;
+            int i10 = this.f22656b;
             if (!f('(')) {
                 return null;
             }
             A();
             List L = L();
             if (L == null) {
-                this.f23631b = i10;
+                this.f22656b = i10;
                 return null;
             } else if (!f(')')) {
-                this.f23631b = i10;
+                this.f22656b = i10;
                 return null;
             } else {
                 Iterator it = L.iterator();
-                while (it.hasNext() && (list = ((s) it.next()).f23256a) != null) {
+                while (it.hasNext() && (list = ((s) it.next()).f22281a) != null) {
                     Iterator it2 = list.iterator();
-                    while (it2.hasNext() && (list2 = ((t) it2.next()).f23261d) != null) {
+                    while (it2.hasNext() && (list2 = ((t) it2.next()).f22286d) != null) {
                         for (g gVar : list2) {
                             if (gVar instanceof k) {
                                 return null;
@@ -400,7 +400,7 @@ public class b {
             String H = H();
             if (H != null) {
                 j a10 = j.a(H);
-                switch (a.f23200b[a10.ordinal()]) {
+                switch (a.f22225b[a10.ordinal()]) {
                     case 1:
                         h hVar3 = new h(0, 1, true, false, null);
                         sVar.b();
@@ -417,17 +417,17 @@ public class b {
                         sVar.b();
                         break;
                     case 4:
-                        hVar = new h(0, 1, true, true, tVar.f23259b);
+                        hVar = new h(0, 1, true, true, tVar.f22284b);
                         sVar.b();
                         gVar = hVar;
                         break;
                     case 5:
-                        h hVar5 = new h(0, 1, false, true, tVar.f23259b);
+                        h hVar5 = new h(0, 1, false, true, tVar.f22284b);
                         sVar.b();
                         gVar = hVar5;
                         break;
                     case 6:
-                        gVar = new m(true, tVar.f23259b);
+                        gVar = new m(true, tVar.f22284b);
                         sVar.b();
                         break;
                     case 7:
@@ -454,7 +454,7 @@ public class b {
                         }
                         a D = D();
                         if (D != null) {
-                            hVar = new h(D.f23209a, D.f23210b, z10, z11, tVar.f23259b);
+                            hVar = new h(D.f22234a, D.f22235b, z10, z11, tVar.f22284b);
                             sVar.b();
                             gVar = hVar;
                             break;
@@ -465,7 +465,7 @@ public class b {
                         List K = K();
                         if (K != null) {
                             k kVar = new k(K);
-                            sVar.f23257b = kVar.b();
+                            sVar.f22282b = kVar.b();
                             hVar2 = kVar;
                             gVar = hVar2;
                             break;
@@ -505,10 +505,10 @@ public class b {
         private int P() {
             int i10;
             if (h()) {
-                return this.f23631b;
+                return this.f22656b;
             }
-            int i11 = this.f23631b;
-            int charAt = this.f23630a.charAt(i11);
+            int i11 = this.f22656b;
+            int charAt = this.f22655a.charAt(i11);
             if (charAt == 45) {
                 charAt = a();
             }
@@ -520,11 +520,11 @@ public class b {
                     }
                     a10 = a();
                 }
-                i10 = this.f23631b;
+                i10 = this.f22656b;
             } else {
                 i10 = i11;
             }
-            this.f23631b = i11;
+            this.f22656b = i11;
             return i10;
         }
 
@@ -533,12 +533,12 @@ public class b {
             if (h()) {
                 return null;
             }
-            char charAt = this.f23630a.charAt(this.f23631b);
+            char charAt = this.f22655a.charAt(this.f22656b);
             if (charAt != '\'' && charAt != '\"') {
                 return null;
             }
             StringBuilder sb2 = new StringBuilder();
-            this.f23631b++;
+            this.f22656b++;
             int intValue = l().intValue();
             while (intValue != -1 && intValue != charAt) {
                 if (intValue == 92) {
@@ -565,12 +565,12 @@ public class b {
 
         String H() {
             int P = P();
-            int i10 = this.f23631b;
+            int i10 = this.f22656b;
             if (P == i10) {
                 return null;
             }
-            String substring = this.f23630a.substring(i10, P);
-            this.f23631b = P;
+            String substring = this.f22655a.substring(i10, P);
+            this.f22656b = P;
             return substring;
         }
 
@@ -578,19 +578,19 @@ public class b {
             char charAt;
             int C;
             StringBuilder sb2 = new StringBuilder();
-            while (!h() && (charAt = this.f23630a.charAt(this.f23631b)) != '\'' && charAt != '\"' && charAt != '(' && charAt != ')' && !k(charAt) && !Character.isISOControl((int) charAt)) {
-                this.f23631b++;
+            while (!h() && (charAt = this.f22655a.charAt(this.f22656b)) != '\'' && charAt != '\"' && charAt != '(' && charAt != ')' && !k(charAt) && !Character.isISOControl((int) charAt)) {
+                this.f22656b++;
                 if (charAt == '\\') {
                     if (!h()) {
-                        String str = this.f23630a;
-                        int i10 = this.f23631b;
-                        this.f23631b = i10 + 1;
+                        String str = this.f22655a;
+                        int i10 = this.f22656b;
+                        this.f22656b = i10 + 1;
                         charAt = str.charAt(i10);
                         if (charAt != '\n' && charAt != '\r' && charAt != '\f') {
                             int C2 = C(charAt);
                             if (C2 != -1) {
-                                for (int i11 = 1; i11 <= 5 && !h() && (C = C(this.f23630a.charAt(this.f23631b))) != -1; i11++) {
-                                    this.f23631b++;
+                                for (int i11 = 1; i11 <= 5 && !h() && (C = C(this.f22655a.charAt(this.f22656b))) != -1; i11++) {
+                                    this.f22656b++;
                                     C2 = (C2 * 16) + C;
                                 }
                                 sb2.append((char) C2);
@@ -610,19 +610,19 @@ public class b {
             if (h()) {
                 return null;
             }
-            int i10 = this.f23631b;
-            int charAt = this.f23630a.charAt(i10);
+            int i10 = this.f22656b;
+            int charAt = this.f22655a.charAt(i10);
             int i11 = i10;
             while (charAt != -1 && charAt != 59 && charAt != 125 && charAt != 33 && !j(charAt)) {
                 if (!k(charAt)) {
-                    i11 = this.f23631b + 1;
+                    i11 = this.f22656b + 1;
                 }
                 charAt = a();
             }
-            if (this.f23631b > i10) {
-                return this.f23630a.substring(i10, i11);
+            if (this.f22656b > i10) {
+                return this.f22655a.substring(i10, i11);
             }
-            this.f23631b = i10;
+            this.f22656b = i10;
             return null;
         }
 
@@ -647,7 +647,7 @@ public class b {
             if (h()) {
                 return null;
             }
-            int i10 = this.f23631b;
+            int i10 = this.f22656b;
             if (!g("url(")) {
                 return null;
             }
@@ -657,12 +657,12 @@ public class b {
                 F = I();
             }
             if (F == null) {
-                this.f23631b = i10;
+                this.f22656b = i10;
                 return null;
             }
             A();
             if (!h() && !g(")")) {
-                this.f23631b = i10;
+                this.f22656b = i10;
                 return null;
             }
             return F;
@@ -704,26 +704,26 @@ public class b {
     public static class h implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f23227a;
+        private int f22252a;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f23228b;
+        private int f22253b;
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f23229c;
+        private boolean f22254c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f23230d;
+        private boolean f22255d;
 
         /* renamed from: e  reason: collision with root package name */
-        private String f23231e;
+        private String f22256e;
 
         h(int i10, int i11, boolean z10, boolean z11, String str) {
-            this.f23227a = i10;
-            this.f23228b = i11;
-            this.f23229c = z10;
-            this.f23230d = z11;
-            this.f23231e = str;
+            this.f22252a = i10;
+            this.f22253b = i11;
+            this.f22254c = z10;
+            this.f22255d = z11;
+            this.f22256e = str;
         }
 
         @Override // f6.b.g
@@ -732,12 +732,12 @@ public class b {
             int i10;
             int i11;
             int i12;
-            if (this.f23230d && this.f23231e == null) {
+            if (this.f22255d && this.f22256e == null) {
                 str = l0Var.n();
             } else {
-                str = this.f23231e;
+                str = this.f22256e;
             }
-            g.j0 j0Var = l0Var.f23445b;
+            g.j0 j0Var = l0Var.f22470b;
             if (j0Var != null) {
                 i10 = 0;
                 i11 = 0;
@@ -754,20 +754,20 @@ public class b {
                 i10 = 0;
                 i11 = 1;
             }
-            if (this.f23229c) {
+            if (this.f22254c) {
                 i12 = i10 + 1;
             } else {
                 i12 = i11 - i10;
             }
-            int i13 = this.f23227a;
+            int i13 = this.f22252a;
             if (i13 == 0) {
-                if (i12 != this.f23228b) {
+                if (i12 != this.f22253b) {
                     return false;
                 }
                 return true;
             }
-            int i14 = this.f23228b;
-            if ((i12 - i14) % i13 != 0 || (Integer.signum(i12 - i14) != 0 && Integer.signum(i12 - this.f23228b) != Integer.signum(this.f23227a))) {
+            int i14 = this.f22253b;
+            if ((i12 - i14) % i13 != 0 || (Integer.signum(i12 - i14) != 0 && Integer.signum(i12 - this.f22253b) != Integer.signum(this.f22252a))) {
                 return false;
             }
             return true;
@@ -775,15 +775,15 @@ public class b {
 
         public String toString() {
             String str;
-            if (this.f23229c) {
+            if (this.f22254c) {
                 str = "";
             } else {
                 str = "last-";
             }
-            if (this.f23230d) {
-                return String.format("nth-%schild(%dn%+d of type <%s>)", str, Integer.valueOf(this.f23227a), Integer.valueOf(this.f23228b), this.f23231e);
+            if (this.f22255d) {
+                return String.format("nth-%schild(%dn%+d of type <%s>)", str, Integer.valueOf(this.f22252a), Integer.valueOf(this.f22253b), this.f22256e);
             }
-            return String.format("nth-%schild(%dn%+d)", str, Integer.valueOf(this.f23227a), Integer.valueOf(this.f23228b));
+            return String.format("nth-%schild(%dn%+d)", str, Integer.valueOf(this.f22252a), Integer.valueOf(this.f22253b));
         }
     }
 
@@ -864,15 +864,15 @@ public class b {
     public static class k implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        private List f23247a;
+        private List f22272a;
 
         k(List list) {
-            this.f23247a = list;
+            this.f22272a = list;
         }
 
         @Override // f6.b.g
         public boolean a(q qVar, g.l0 l0Var) {
-            for (s sVar : this.f23247a) {
+            for (s sVar : this.f22272a) {
                 if (b.l(qVar, sVar, l0Var)) {
                     return false;
                 }
@@ -882,8 +882,8 @@ public class b {
 
         int b() {
             int i10 = Integer.MIN_VALUE;
-            for (s sVar : this.f23247a) {
-                int i11 = sVar.f23257b;
+            for (s sVar : this.f22272a) {
+                int i11 = sVar.f22282b;
                 if (i11 > i10) {
                     i10 = i11;
                 }
@@ -892,7 +892,7 @@ public class b {
         }
 
         public String toString() {
-            return "not(" + this.f23247a + ")";
+            return "not(" + this.f22272a + ")";
         }
     }
 
@@ -901,10 +901,10 @@ public class b {
     public static class l implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f23248a;
+        private String f22273a;
 
         l(String str) {
-            this.f23248a = str;
+            this.f22273a = str;
         }
 
         @Override // f6.b.g
@@ -913,7 +913,7 @@ public class b {
         }
 
         public String toString() {
-            return this.f23248a;
+            return this.f22273a;
         }
     }
 
@@ -922,26 +922,26 @@ public class b {
     public static class m implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f23249a;
+        private boolean f22274a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f23250b;
+        private String f22275b;
 
         public m(boolean z10, String str) {
-            this.f23249a = z10;
-            this.f23250b = str;
+            this.f22274a = z10;
+            this.f22275b = str;
         }
 
         @Override // f6.b.g
         public boolean a(q qVar, g.l0 l0Var) {
             String str;
             int i10;
-            if (this.f23249a && this.f23250b == null) {
+            if (this.f22274a && this.f22275b == null) {
                 str = l0Var.n();
             } else {
-                str = this.f23250b;
+                str = this.f22275b;
             }
-            g.j0 j0Var = l0Var.f23445b;
+            g.j0 j0Var = l0Var.f22470b;
             if (j0Var != null) {
                 i10 = 0;
                 for (g.n0 n0Var : j0Var.getChildren()) {
@@ -960,8 +960,8 @@ public class b {
         }
 
         public String toString() {
-            if (this.f23249a) {
-                return String.format("only-of-type <%s>", this.f23250b);
+            if (this.f22274a) {
+                return String.format("only-of-type <%s>", this.f22275b);
             }
             return String.format("only-child", new Object[0]);
         }
@@ -975,7 +975,7 @@ public class b {
 
         @Override // f6.b.g
         public boolean a(q qVar, g.l0 l0Var) {
-            if (l0Var.f23445b == null) {
+            if (l0Var.f22470b == null) {
                 return true;
             }
             return false;
@@ -998,7 +998,7 @@ public class b {
 
         @Override // f6.b.g
         public boolean a(q qVar, g.l0 l0Var) {
-            if (qVar == null || l0Var != qVar.f23254a) {
+            if (qVar == null || l0Var != qVar.f22279a) {
                 return false;
             }
             return true;
@@ -1018,22 +1018,22 @@ public class b {
     public static class p {
 
         /* renamed from: a  reason: collision with root package name */
-        s f23251a;
+        s f22276a;
 
         /* renamed from: b  reason: collision with root package name */
-        g.e0 f23252b;
+        g.e0 f22277b;
 
         /* renamed from: c  reason: collision with root package name */
-        u f23253c;
+        u f22278c;
 
         p(s sVar, g.e0 e0Var, u uVar) {
-            this.f23251a = sVar;
-            this.f23252b = e0Var;
-            this.f23253c = uVar;
+            this.f22276a = sVar;
+            this.f22277b = e0Var;
+            this.f22278c = uVar;
         }
 
         public String toString() {
-            return String.valueOf(this.f23251a) + " {...} (src=" + this.f23253c + ")";
+            return String.valueOf(this.f22276a) + " {...} (src=" + this.f22278c + ")";
         }
     }
 
@@ -1042,12 +1042,12 @@ public class b {
     public static class q {
 
         /* renamed from: a  reason: collision with root package name */
-        g.l0 f23254a;
+        g.l0 f22279a;
 
         public String toString() {
-            g.l0 l0Var = this.f23254a;
+            g.l0 l0Var = this.f22279a;
             if (l0Var != null) {
-                return String.format("<%s id=\"%s\">", l0Var.n(), this.f23254a.f23434c);
+                return String.format("<%s id=\"%s\">", l0Var.n(), this.f22279a.f22459c);
             }
             return "";
         }
@@ -1058,28 +1058,28 @@ public class b {
     public static class r {
 
         /* renamed from: a  reason: collision with root package name */
-        private List f23255a = null;
+        private List f22280a = null;
 
         void a(p pVar) {
-            if (this.f23255a == null) {
-                this.f23255a = new ArrayList();
+            if (this.f22280a == null) {
+                this.f22280a = new ArrayList();
             }
-            for (int i10 = 0; i10 < this.f23255a.size(); i10++) {
-                if (((p) this.f23255a.get(i10)).f23251a.f23257b > pVar.f23251a.f23257b) {
-                    this.f23255a.add(i10, pVar);
+            for (int i10 = 0; i10 < this.f22280a.size(); i10++) {
+                if (((p) this.f22280a.get(i10)).f22276a.f22282b > pVar.f22276a.f22282b) {
+                    this.f22280a.add(i10, pVar);
                     return;
                 }
             }
-            this.f23255a.add(pVar);
+            this.f22280a.add(pVar);
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public void b(r rVar) {
-            if (rVar.f23255a != null) {
-                if (this.f23255a == null) {
-                    this.f23255a = new ArrayList(rVar.f23255a.size());
+            if (rVar.f22280a != null) {
+                if (this.f22280a == null) {
+                    this.f22280a = new ArrayList(rVar.f22280a.size());
                 }
-                for (p pVar : rVar.f23255a) {
+                for (p pVar : rVar.f22280a) {
                     a(pVar);
                 }
             }
@@ -1087,12 +1087,12 @@ public class b {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public List c() {
-            return this.f23255a;
+            return this.f22280a;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public boolean d() {
-            List list = this.f23255a;
+            List list = this.f22280a;
             if (list != null && !list.isEmpty()) {
                 return false;
             }
@@ -1101,11 +1101,11 @@ public class b {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public void e(u uVar) {
-            List list = this.f23255a;
+            List list = this.f22280a;
             if (list != null) {
                 Iterator it = list.iterator();
                 while (it.hasNext()) {
-                    if (((p) it.next()).f23253c == uVar) {
+                    if (((p) it.next()).f22278c == uVar) {
                         it.remove();
                     }
                 }
@@ -1114,7 +1114,7 @@ public class b {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public int f() {
-            List list = this.f23255a;
+            List list = this.f22280a;
             if (list != null) {
                 return list.size();
             }
@@ -1122,11 +1122,11 @@ public class b {
         }
 
         public String toString() {
-            if (this.f23255a == null) {
+            if (this.f22280a == null) {
                 return "";
             }
             StringBuilder sb2 = new StringBuilder();
-            for (p pVar : this.f23255a) {
+            for (p pVar : this.f22280a) {
                 sb2.append(pVar.toString());
                 sb2.append('\n');
             }
@@ -1139,75 +1139,75 @@ public class b {
     public static class t {
 
         /* renamed from: a  reason: collision with root package name */
-        e f23258a;
+        e f22283a;
 
         /* renamed from: b  reason: collision with root package name */
-        String f23259b;
+        String f22284b;
 
         /* renamed from: c  reason: collision with root package name */
-        List f23260c = null;
+        List f22285c = null;
 
         /* renamed from: d  reason: collision with root package name */
-        List f23261d = null;
+        List f22286d = null;
 
         t(e eVar, String str) {
-            this.f23258a = null;
-            this.f23259b = null;
-            this.f23258a = eVar == null ? e.DESCENDANT : eVar;
-            this.f23259b = str;
+            this.f22283a = null;
+            this.f22284b = null;
+            this.f22283a = eVar == null ? e.DESCENDANT : eVar;
+            this.f22284b = str;
         }
 
         void a(String str, c cVar, String str2) {
-            if (this.f23260c == null) {
-                this.f23260c = new ArrayList();
+            if (this.f22285c == null) {
+                this.f22285c = new ArrayList();
             }
-            this.f23260c.add(new C0309b(str, cVar, str2));
+            this.f22285c.add(new C0307b(str, cVar, str2));
         }
 
         void b(g gVar) {
-            if (this.f23261d == null) {
-                this.f23261d = new ArrayList();
+            if (this.f22286d == null) {
+                this.f22286d = new ArrayList();
             }
-            this.f23261d.add(gVar);
+            this.f22286d.add(gVar);
         }
 
         public String toString() {
             StringBuilder sb2 = new StringBuilder();
-            e eVar = this.f23258a;
+            e eVar = this.f22283a;
             if (eVar == e.CHILD) {
                 sb2.append("> ");
             } else if (eVar == e.FOLLOWS) {
                 sb2.append("+ ");
             }
-            String str = this.f23259b;
+            String str = this.f22284b;
             if (str == null) {
                 str = "*";
             }
             sb2.append(str);
-            List<C0309b> list = this.f23260c;
+            List<C0307b> list = this.f22285c;
             if (list != null) {
-                for (C0309b c0309b : list) {
+                for (C0307b c0307b : list) {
                     sb2.append('[');
-                    sb2.append(c0309b.f23201a);
-                    int i10 = a.f23199a[c0309b.f23202b.ordinal()];
+                    sb2.append(c0307b.f22226a);
+                    int i10 = a.f22224a[c0307b.f22227b.ordinal()];
                     if (i10 != 1) {
                         if (i10 != 2) {
                             if (i10 == 3) {
                                 sb2.append("|=");
-                                sb2.append(c0309b.f23203c);
+                                sb2.append(c0307b.f22228c);
                             }
                         } else {
                             sb2.append("~=");
-                            sb2.append(c0309b.f23203c);
+                            sb2.append(c0307b.f22228c);
                         }
                     } else {
                         sb2.append('=');
-                        sb2.append(c0309b.f23203c);
+                        sb2.append(c0307b.f22228c);
                     }
                     sb2.append(']');
                 }
             }
-            List<g> list2 = this.f23261d;
+            List<g> list2 = this.f22286d;
             if (list2 != null) {
                 for (g gVar : list2) {
                     sb2.append(':');
@@ -1236,7 +1236,7 @@ public class b {
             return 0;
         }
         Object obj = list.get(i10);
-        g.j0 j0Var = l0Var.f23445b;
+        g.j0 j0Var = l0Var.f22470b;
         if (obj != j0Var) {
             return -1;
         }
@@ -1275,14 +1275,14 @@ public class b {
         String H = dVar.H();
         dVar.A();
         if (H != null) {
-            if (!this.f23198c && H.equals("media")) {
+            if (!this.f22223c && H.equals("media")) {
                 List h10 = h(dVar);
                 if (dVar.f('{')) {
                     dVar.A();
-                    if (c(h10, this.f23196a)) {
-                        this.f23198c = true;
+                    if (c(h10, this.f22221a)) {
+                        this.f22223c = true;
                         rVar.b(j(dVar));
-                        this.f23198c = false;
+                        this.f22223c = false;
                     } else {
                         j(dVar);
                     }
@@ -1292,7 +1292,7 @@ public class b {
                 } else {
                     throw new f6.a("Invalid @media rule: missing rule set");
                 }
-            } else if (!this.f23198c && H.equals("import")) {
+            } else if (!this.f22223c && H.equals("import")) {
                 String N = dVar.N();
                 if (N == null) {
                     N = dVar.F();
@@ -1390,7 +1390,7 @@ public class b {
                 g.e0 g10 = g(dVar);
                 dVar.A();
                 for (s sVar : L) {
-                    rVar.a(new p(sVar, g10, this.f23197b));
+                    rVar.a(new p(sVar, g10, this.f22222b));
                 }
                 return true;
             }
@@ -1423,7 +1423,7 @@ public class b {
         if (!n(qVar, e10, list, i11, l0Var)) {
             return false;
         }
-        e eVar = e10.f23258a;
+        e eVar = e10.f22283a;
         if (eVar == e.DESCENDANT) {
             if (i10 == 0) {
                 return true;
@@ -1442,14 +1442,14 @@ public class b {
             if (a10 <= 0) {
                 return false;
             }
-            return k(qVar, sVar, i10 - 1, list, i11, (g.l0) l0Var.f23445b.getChildren().get(a10 - 1));
+            return k(qVar, sVar, i10 - 1, list, i11, (g.l0) l0Var.f22470b.getChildren().get(a10 - 1));
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean l(q qVar, s sVar, g.l0 l0Var) {
         ArrayList arrayList = new ArrayList();
-        for (g.j0 j0Var = l0Var.f23445b; j0Var != null; j0Var = ((g.n0) j0Var).f23445b) {
+        for (g.j0 j0Var = l0Var.f22470b; j0Var != null; j0Var = ((g.n0) j0Var).f22470b) {
             arrayList.add(0, j0Var);
         }
         int size = arrayList.size() - 1;
@@ -1465,7 +1465,7 @@ public class b {
         if (!n(qVar, e10, list, i11, l0Var)) {
             return false;
         }
-        e eVar = e10.f23258a;
+        e eVar = e10.f22283a;
         if (eVar == e.DESCENDANT) {
             if (i10 == 0) {
                 return true;
@@ -1484,31 +1484,31 @@ public class b {
             if (a10 <= 0) {
                 return false;
             }
-            return k(qVar, sVar, i10 - 1, list, i11, (g.l0) l0Var.f23445b.getChildren().get(a10 - 1));
+            return k(qVar, sVar, i10 - 1, list, i11, (g.l0) l0Var.f22470b.getChildren().get(a10 - 1));
         }
     }
 
     private static boolean n(q qVar, t tVar, List list, int i10, g.l0 l0Var) {
         List list2;
-        String str = tVar.f23259b;
+        String str = tVar.f22284b;
         if (str != null && !str.equals(l0Var.n().toLowerCase(Locale.US))) {
             return false;
         }
-        List<C0309b> list3 = tVar.f23260c;
+        List<C0307b> list3 = tVar.f22285c;
         if (list3 != null) {
-            for (C0309b c0309b : list3) {
-                String str2 = c0309b.f23201a;
+            for (C0307b c0307b : list3) {
+                String str2 = c0307b.f22226a;
                 str2.getClass();
                 if (!str2.equals(StackTraceHelper.ID_KEY)) {
-                    if (!str2.equals("class") || (list2 = l0Var.f23438g) == null || !list2.contains(c0309b.f23203c)) {
+                    if (!str2.equals("class") || (list2 = l0Var.f22463g) == null || !list2.contains(c0307b.f22228c)) {
                         return false;
                     }
-                } else if (!c0309b.f23203c.equals(l0Var.f23434c)) {
+                } else if (!c0307b.f22228c.equals(l0Var.f22459c)) {
                     return false;
                 }
             }
         }
-        List<g> list4 = tVar.f23261d;
+        List<g> list4 = tVar.f22286d;
         if (list4 != null) {
             for (g gVar : list4) {
                 if (!gVar.a(qVar, l0Var)) {
@@ -1549,9 +1549,9 @@ public class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(f fVar, u uVar) {
-        this.f23198c = false;
-        this.f23196a = fVar;
-        this.f23197b = uVar;
+        this.f22223c = false;
+        this.f22221a = fVar;
+        this.f22222b = uVar;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1559,41 +1559,41 @@ public class b {
     public static class s {
 
         /* renamed from: a  reason: collision with root package name */
-        List f23256a;
+        List f22281a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f23257b;
+        int f22282b;
 
         private s() {
-            this.f23256a = null;
-            this.f23257b = 0;
+            this.f22281a = null;
+            this.f22282b = 0;
         }
 
         void a(t tVar) {
-            if (this.f23256a == null) {
-                this.f23256a = new ArrayList();
+            if (this.f22281a == null) {
+                this.f22281a = new ArrayList();
             }
-            this.f23256a.add(tVar);
+            this.f22281a.add(tVar);
         }
 
         void b() {
-            this.f23257b += 1000;
+            this.f22282b += 1000;
         }
 
         void c() {
-            this.f23257b++;
+            this.f22282b++;
         }
 
         void d() {
-            this.f23257b += 1000000;
+            this.f22282b += 1000000;
         }
 
         t e(int i10) {
-            return (t) this.f23256a.get(i10);
+            return (t) this.f22281a.get(i10);
         }
 
         boolean f() {
-            List list = this.f23256a;
+            List list = this.f22281a;
             if (list != null && !list.isEmpty()) {
                 return false;
             }
@@ -1601,7 +1601,7 @@ public class b {
         }
 
         int g() {
-            List list = this.f23256a;
+            List list = this.f22281a;
             if (list == null) {
                 return 0;
             }
@@ -1610,12 +1610,12 @@ public class b {
 
         public String toString() {
             StringBuilder sb2 = new StringBuilder();
-            for (t tVar : this.f23256a) {
+            for (t tVar : this.f22281a) {
                 sb2.append(tVar);
                 sb2.append(' ');
             }
             sb2.append('[');
-            sb2.append(this.f23257b);
+            sb2.append(this.f22282b);
             sb2.append(']');
             return sb2.toString();
         }

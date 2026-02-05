@@ -7,12 +7,12 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d extends m {
 
     /* renamed from: e  reason: collision with root package name */
-    private final ViewGroup f24946e;
+    private final ViewGroup f23645e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public d(Fragment fragment, ViewGroup viewGroup) {
         super(fragment, "Attempting to use <fragment> tag to add fragment " + fragment + " to container " + viewGroup);
         Intrinsics.checkNotNullParameter(fragment, "fragment");
-        this.f24946e = viewGroup;
+        this.f23645e = viewGroup;
     }
 }

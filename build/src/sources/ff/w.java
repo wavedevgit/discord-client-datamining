@@ -5,32 +5,32 @@ import android.app.Activity;
 public final class w extends f1 {
 
     /* renamed from: q  reason: collision with root package name */
-    private final u0.b f23971q;
+    private final u0.b f22996q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final e f23972r;
+    private final e f22997r;
 
     w(h hVar, e eVar, com.google.android.gms.common.f fVar) {
         super(hVar, fVar);
-        this.f23971q = new u0.b();
-        this.f23972r = eVar;
-        this.f23907d.k("ConnectionlessLifecycleHelper", this);
+        this.f22996q = new u0.b();
+        this.f22997r = eVar;
+        this.f22932d.e("ConnectionlessLifecycleHelper", this);
     }
 
     public static void u(Activity activity, e eVar, b bVar) {
         h c10 = g.c(activity);
-        w wVar = (w) c10.d("ConnectionlessLifecycleHelper", w.class);
+        w wVar = (w) c10.b("ConnectionlessLifecycleHelper", w.class);
         if (wVar == null) {
             wVar = new w(c10, eVar, com.google.android.gms.common.f.m());
         }
         gf.q.m(bVar, "ApiKey cannot be null");
-        wVar.f23971q.add(bVar);
+        wVar.f22996q.add(bVar);
         eVar.b(wVar);
     }
 
     private final void v() {
-        if (!this.f23971q.isEmpty()) {
-            this.f23972r.b(this);
+        if (!this.f22996q.isEmpty()) {
+            this.f22997r.b(this);
         }
     }
 
@@ -49,21 +49,21 @@ public final class w extends f1 {
     @Override // ff.f1, ff.g
     public final void k() {
         super.k();
-        this.f23972r.c(this);
+        this.f22997r.c(this);
     }
 
     @Override // ff.f1
     protected final void m(com.google.android.gms.common.b bVar, int i10) {
-        this.f23972r.D(bVar, i10);
+        this.f22997r.D(bVar, i10);
     }
 
     @Override // ff.f1
     protected final void n() {
-        this.f23972r.E();
+        this.f22997r.E();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final u0.b t() {
-        return this.f23971q;
+        return this.f22996q;
     }
 }

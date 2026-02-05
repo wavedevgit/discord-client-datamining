@@ -7,43 +7,43 @@ import kotlin.jvm.internal.Intrinsics;
 final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Object f35514a;
+    public final Object f35038a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final d f35515b;
+    public final d f35039b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Function3 f35516c;
+    public final Function3 f35040c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Object f35517d;
+    public final Object f35041d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Throwable f35518e;
+    public final Throwable f35042e;
 
     public h(Object obj, d dVar, Function3 function3, Object obj2, Throwable th2) {
-        this.f35514a = obj;
-        this.f35515b = dVar;
-        this.f35516c = function3;
-        this.f35517d = obj2;
-        this.f35518e = th2;
+        this.f35038a = obj;
+        this.f35039b = dVar;
+        this.f35040c = function3;
+        this.f35041d = obj2;
+        this.f35042e = th2;
     }
 
     public static /* synthetic */ h b(h hVar, Object obj, d dVar, Function3 function3, Object obj2, Throwable th2, int i10, Object obj3) {
         if ((i10 & 1) != 0) {
-            obj = hVar.f35514a;
+            obj = hVar.f35038a;
         }
         if ((i10 & 2) != 0) {
-            dVar = hVar.f35515b;
+            dVar = hVar.f35039b;
         }
         if ((i10 & 4) != 0) {
-            function3 = hVar.f35516c;
+            function3 = hVar.f35040c;
         }
         if ((i10 & 8) != 0) {
-            obj2 = hVar.f35517d;
+            obj2 = hVar.f35041d;
         }
         if ((i10 & 16) != 0) {
-            th2 = hVar.f35518e;
+            th2 = hVar.f35042e;
         }
         Throwable th3 = th2;
         Function3 function32 = function3;
@@ -55,20 +55,20 @@ final class h {
     }
 
     public final boolean c() {
-        if (this.f35518e != null) {
+        if (this.f35042e != null) {
             return true;
         }
         return false;
     }
 
     public final void d(e eVar, Throwable th2) {
-        d dVar = this.f35515b;
+        d dVar = this.f35039b;
         if (dVar != null) {
             eVar.o(dVar, th2);
         }
-        Function3 function3 = this.f35516c;
+        Function3 function3 = this.f35040c;
         if (function3 != null) {
-            eVar.r(function3, th2, this.f35514a);
+            eVar.p(function3, th2, this.f35038a);
         }
     }
 
@@ -78,26 +78,26 @@ final class h {
         }
         if (obj instanceof h) {
             h hVar = (h) obj;
-            return Intrinsics.areEqual(this.f35514a, hVar.f35514a) && Intrinsics.areEqual(this.f35515b, hVar.f35515b) && Intrinsics.areEqual(this.f35516c, hVar.f35516c) && Intrinsics.areEqual(this.f35517d, hVar.f35517d) && Intrinsics.areEqual(this.f35518e, hVar.f35518e);
+            return Intrinsics.areEqual(this.f35038a, hVar.f35038a) && Intrinsics.areEqual(this.f35039b, hVar.f35039b) && Intrinsics.areEqual(this.f35040c, hVar.f35040c) && Intrinsics.areEqual(this.f35041d, hVar.f35041d) && Intrinsics.areEqual(this.f35042e, hVar.f35042e);
         }
         return false;
     }
 
     public int hashCode() {
-        Object obj = this.f35514a;
+        Object obj = this.f35038a;
         int hashCode = (obj == null ? 0 : obj.hashCode()) * 31;
-        d dVar = this.f35515b;
+        d dVar = this.f35039b;
         int hashCode2 = (hashCode + (dVar == null ? 0 : dVar.hashCode())) * 31;
-        Function3 function3 = this.f35516c;
+        Function3 function3 = this.f35040c;
         int hashCode3 = (hashCode2 + (function3 == null ? 0 : function3.hashCode())) * 31;
-        Object obj2 = this.f35517d;
+        Object obj2 = this.f35041d;
         int hashCode4 = (hashCode3 + (obj2 == null ? 0 : obj2.hashCode())) * 31;
-        Throwable th2 = this.f35518e;
+        Throwable th2 = this.f35042e;
         return hashCode4 + (th2 != null ? th2.hashCode() : 0);
     }
 
     public String toString() {
-        return "CompletedContinuation(result=" + this.f35514a + ", cancelHandler=" + this.f35515b + ", onCancellation=" + this.f35516c + ", idempotentResume=" + this.f35517d + ", cancelCause=" + this.f35518e + ')';
+        return "CompletedContinuation(result=" + this.f35038a + ", cancelHandler=" + this.f35039b + ", onCancellation=" + this.f35040c + ", idempotentResume=" + this.f35041d + ", cancelCause=" + this.f35042e + ')';
     }
 
     public /* synthetic */ h(Object obj, d dVar, Function3 function3, Object obj2, Throwable th2, int i10, DefaultConstructorMarker defaultConstructorMarker) {

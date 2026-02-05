@@ -1,96 +1,145 @@
 package ov;
 
-import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
-import kotlin.Result;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.Regex;
-import kotlin.text.StringsKt;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.concurrent.CompletableFuture;
+import ov.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g implements nu.b, o {
+final class g extends e.a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final g f44807a = new g();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    private static final class a implements e {
 
-    private g() {
-    }
+        /* renamed from: a  reason: collision with root package name */
+        private final Type f44586a;
 
-    private final Set a(List list) {
-        List list2 = list;
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(list2, 10));
-        for (Object obj : list2) {
-            Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlin.String");
-            arrayList.add(kotlin.text.m.valueOf((String) obj));
-        }
-        return CollectionsKt.l1(arrayList);
-    }
+        /* JADX INFO: Access modifiers changed from: private */
+        /* renamed from: ov.g$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public class C0563a implements f {
 
-    private final boolean b(h hVar) {
-        List a10 = hVar.a();
-        if (a10 != null && !a10.isEmpty()) {
-            return d(hVar.a(), hVar.b(), hVar.c());
-        }
-        return c(hVar.b(), hVar.c());
-    }
+            /* renamed from: a  reason: collision with root package name */
+            private final CompletableFuture f44587a;
 
-    private final boolean c(String str, String str2) {
-        return new Regex(str).i(str2);
-    }
+            public C0563a(CompletableFuture completableFuture) {
+                this.f44587a = completableFuture;
+            }
 
-    private final boolean d(List list, String str, String str2) {
-        Set a10 = a(list);
-        Regex regex = new Regex(str, a10);
-        Set<kotlin.text.m> set = a10;
-        if (!(set instanceof Collection) || !set.isEmpty()) {
-            for (kotlin.text.m mVar : set) {
-                if (mVar == kotlin.text.m.f35448o) {
-                    List<String> split$default = StringsKt.split$default(str2, new String[]{ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE}, false, 0, 6, null);
-                    if ((split$default instanceof Collection) && split$default.isEmpty()) {
-                        return true;
-                    }
-                    for (String str3 : split$default) {
-                        if (!regex.i(str3)) {
-                            return false;
-                        }
-                    }
-                    return true;
+            @Override // ov.f
+            public void a(d dVar, z zVar) {
+                if (zVar.g()) {
+                    this.f44587a.complete(zVar.a());
+                } else {
+                    this.f44587a.completeExceptionally(new o(zVar));
                 }
             }
+
+            @Override // ov.f
+            public void b(d dVar, Throwable th2) {
+                this.f44587a.completeExceptionally(th2);
+            }
         }
-        return regex.i(str2);
+
+        a(Type type) {
+            this.f44586a = type;
+        }
+
+        @Override // ov.e
+        public Type a() {
+            return this.f44586a;
+        }
+
+        @Override // ov.e
+        /* renamed from: c */
+        public CompletableFuture b(d dVar) {
+            b bVar = new b(dVar);
+            dVar.C0(new C0563a(bVar));
+            return bVar;
+        }
     }
 
-    private final h e(List list) {
-        Object b10;
-        try {
-            Result.a aVar = Result.f32461e;
-            Object obj = list.get(0);
-            Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlin.String");
-            Object obj2 = list.get(1);
-            Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.String");
-            Object obj3 = list.get(2);
-            Intrinsics.checkNotNull(obj3, "null cannot be cast to non-null type kotlin.collections.List<kotlin.Any?>");
-            b10 = Result.b(new h((String) obj, (String) obj2, (List) obj3));
-        } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32461e;
-            b10 = Result.b(kotlin.c.a(th2));
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b extends CompletableFuture {
+
+        /* renamed from: d  reason: collision with root package name */
+        private final d f44589d;
+
+        b(d dVar) {
+            this.f44589d = dVar;
         }
-        if (Result.e(b10) == null) {
-            return (h) b10;
+
+        @Override // java.util.concurrent.CompletableFuture, java.util.concurrent.Future
+        public boolean cancel(boolean z10) {
+            if (z10) {
+                this.f44589d.cancel();
+            }
+            return super.cancel(z10);
         }
-        return null;
     }
 
-    @Override // nu.b
-    public Object f(Object obj, Object obj2) {
-        h e10 = e(sv.a.c(obj));
-        if (e10 != null) {
-            return Boolean.valueOf(b(e10));
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    private static final class c implements e {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final Type f44590a;
+
+        /* JADX INFO: Access modifiers changed from: private */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public class a implements f {
+
+            /* renamed from: a  reason: collision with root package name */
+            private final CompletableFuture f44591a;
+
+            public a(CompletableFuture completableFuture) {
+                this.f44591a = completableFuture;
+            }
+
+            @Override // ov.f
+            public void a(d dVar, z zVar) {
+                this.f44591a.complete(zVar);
+            }
+
+            @Override // ov.f
+            public void b(d dVar, Throwable th2) {
+                this.f44591a.completeExceptionally(th2);
+            }
         }
-        return null;
+
+        c(Type type) {
+            this.f44590a = type;
+        }
+
+        @Override // ov.e
+        public Type a() {
+            return this.f44590a;
+        }
+
+        @Override // ov.e
+        /* renamed from: c */
+        public CompletableFuture b(d dVar) {
+            b bVar = new b(dVar);
+            dVar.C0(new a(bVar));
+            return bVar;
+        }
+    }
+
+    @Override // ov.e.a
+    public e a(Type type, Annotation[] annotationArr, a0 a0Var) {
+        if (e.a.c(type) != CompletableFuture.class) {
+            return null;
+        }
+        if (type instanceof ParameterizedType) {
+            Type b10 = e.a.b(0, (ParameterizedType) type);
+            if (e.a.c(b10) != z.class) {
+                return new a(b10);
+            }
+            if (b10 instanceof ParameterizedType) {
+                return new c(e.a.b(0, (ParameterizedType) b10));
+            }
+            throw new IllegalStateException("Response must be parameterized as Response<Foo> or Response<? extends Foo>");
+        }
+        throw new IllegalStateException("CompletableFuture return type must be parameterized as CompletableFuture<Foo> or CompletableFuture<? extends Foo>");
     }
 }

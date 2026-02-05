@@ -1,9 +1,9 @@
 package qs;
 
-import os.q;
+import kotlin.coroutines.Continuation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d extends q {
-    public d() {
-        super(false);
-    }
+public abstract class d {
+    public abstract boolean a(Object obj);
+
+    public abstract Continuation[] b(Object obj);
 }

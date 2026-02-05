@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/navigator/getNavigatorCurrentRoute.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun61956: for (var _fun61956_ip = 0;;) switch (_fun61956_ip) {
+        _fun61979: for (var _fun61979_ip = 0;;) switch (_fun61979_ip) {
             case 0:
                 var3 = arguments[0];
                 var1 = undefined;
                 if (!(var3 === var1)) {
-                    _fun61956_ip = 41;
-                    continue _fun61956
+                    _fun61979_ip = 41;
+                    continue _fun61979
                 }
             case 9:
                 var2 = _closure1_slot0;
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2 == var3;
                 var5 = undefined;
                 if (var0) {
-                    _fun61956_ip = 62;
-                    continue _fun61956
+                    _fun61979_ip = 62;
+                    continue _fun61979
                 }
             case 52:
                 var0 = var3.isReady;
@@ -53,15 +53,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = true;
                 var0 = undefined;
                 if (!(var4 === var5)) {
-                    _fun61956_ip = 92;
-                    continue _fun61956
+                    _fun61979_ip = 92;
+                    continue _fun61979
                 }
             case 70:
                 var2 = var2 == var3;
                 var1 = undefined;
                 if (var2) {
-                    _fun61956_ip = 89;
-                    continue _fun61956
+                    _fun61979_ip = 89;
+                    continue _fun61979
                 }
             case 79:
                 var2 = var3.getCurrentRoute;

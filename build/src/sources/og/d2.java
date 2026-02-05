@@ -1,51 +1,51 @@
 package og;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class d2 implements ui.g {
+public final class d2 implements xi.g {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f42769a = false;
+    private boolean f42675a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f42770b = false;
+    private boolean f42676b = false;
 
     /* renamed from: c  reason: collision with root package name */
-    private ui.c f42771c;
+    private xi.c f42677c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final y1 f42772d;
+    private final y1 f42678d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d2(y1 y1Var) {
-        this.f42772d = y1Var;
+        this.f42678d = y1Var;
     }
 
-    private final void d() {
-        if (!this.f42769a) {
-            this.f42769a = true;
+    private final void c() {
+        if (!this.f42675a) {
+            this.f42675a = true;
             return;
         }
-        throw new ui.b("Cannot encode a second value in the ValueEncoderContext");
+        throw new xi.b("Cannot encode a second value in the ValueEncoderContext");
     }
 
-    @Override // ui.g
-    public final ui.g a(String str) {
-        d();
-        this.f42772d.f(this.f42771c, str, this.f42770b);
+    @Override // xi.g
+    public final xi.g a(String str) {
+        c();
+        this.f42678d.f(this.f42677c, str, this.f42676b);
         return this;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final void b(ui.c cVar, boolean z10) {
-        this.f42769a = false;
-        this.f42771c = cVar;
-        this.f42770b = z10;
+    public final void b(xi.c cVar, boolean z10) {
+        this.f42675a = false;
+        this.f42677c = cVar;
+        this.f42676b = z10;
     }
 
-    @Override // ui.g
-    public final ui.g c(boolean z10) {
-        d();
-        this.f42772d.g(this.f42771c, z10 ? 1 : 0, this.f42770b);
+    @Override // xi.g
+    public final xi.g e(boolean z10) {
+        c();
+        this.f42678d.g(this.f42677c, z10 ? 1 : 0, this.f42676b);
         return this;
     }
 }

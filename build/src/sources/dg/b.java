@@ -15,8 +15,8 @@ public final class b extends we.b {
         return r(q.a().b(new m() { // from class: dg.j
             @Override // ff.m
             public final void accept(Object obj, Object obj2) {
-                ((f) ((i) obj).C()).h(new k(b.this, (wg.k) obj2));
+                ((f) ((i) obj).C()).h(new k(b.this, (xg.k) obj2));
             }
-        }).d(c.f20589c).e(1567).a());
+        }).d(c.f20805c).e(1567).a());
     }
 }

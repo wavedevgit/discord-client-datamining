@@ -3,38 +3,38 @@ package h9;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f26869a;
+    private boolean f25710a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f26870b;
+    private int f25711b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f26871c;
+    private int f25712c;
 
     public d() {
         a();
     }
 
     public void a() {
-        this.f26869a = false;
-        this.f26870b = 4;
+        this.f25710a = false;
+        this.f25711b = 4;
         c();
     }
 
     public void b() {
-        this.f26871c++;
+        this.f25712c++;
     }
 
     public void c() {
-        this.f26871c = 0;
+        this.f25712c = 0;
     }
 
     public void d(boolean z10) {
-        this.f26869a = z10;
+        this.f25710a = z10;
     }
 
     public boolean e() {
-        if (this.f26869a && this.f26871c < this.f26870b) {
+        if (this.f25710a && this.f25712c < this.f25711b) {
             return true;
         }
         return false;

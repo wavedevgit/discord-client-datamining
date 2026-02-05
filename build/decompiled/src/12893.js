@@ -3,109 +3,74 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var2 = require;
     var _closure1_slot0 = var2;
-    var2 = module;
-    var _closure1_slot1 = var2;
     var2 = dependencyMap;
-    var _closure1_slot2 = var2;
-    var2 = function arg0, arg1() {
-        var2 = arg0;
-        var1 = var2.require;
-        var0 = arg1;
-        var0 = var1.bind(var2)(var0);
-        return var0;
-    };
-    var _closure1_slot3 = var2;
-    var3 = global;
-    var6 = var3.Object;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var6 = var2.Object;
     var5 = var6.defineProperty;
     var4 = {};
     var3 = true;
     var4.value = var3;
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
-    var1.dynamicRequire = var2;
-    var2 = function() {
-        _fun98899: for (var _fun98899_ip = 0;;) switch (_fun98899_ip) {
+    var2 = var2.globalThis;
+    var _closure1_slot2 = var2;
+    var1.GLOBAL_OBJ = var2;
+    var0 = function arg0, arg1, arg2() {
+        _fun98783: for (var _fun98783_ip = 0;;) switch (_fun98783_ip) {
             case 0:
-                var2 = _closure1_slot0;
+                var3 = arg0;
+                var0 = arg2;
+                if (var0) {
+                    _fun98783_ip = 16;
+                    continue _fun98783
+                }
+            case 9:
                 var0 = _closure1_slot2;
-                var3 = 0;
-                var1 = var0[var3];
-                var0 = undefined;
-                var1 = var2.bind(var0)(var1);
-                var0 = var1.isBrowserBundle;
-                var0 = var0.bind(var1)();
-                var0 = !var0;
-                if (!var0) {
-                    _fun98899_ip = 103;
-                    continue _fun98899
+            case 16:
+                var1 = var0.__SENTRY__;
+                if (var1) {
+                    _fun98783_ip = 27;
+                    continue _fun98783
                 }
-            case 40:
-                var4 = global;
-                var1 = var4.Object;
-                var1 = var1.prototype;
-                var2 = var1.toString;
-                var1 = var2.call;
-                var5 = var4.process;
-                var6 = 'undefined';
-                var5 = typeof var5;
-                var3 = 0;
-                if (!(var6 !== var5)) {
-                    _fun98899_ip = 88;
-                    continue _fun98899
-                }
-            case 82:
-                var3 = var4.process;
-            case 88:
-                var2 = var1.bind(var2)(var3);
-                var1 = '[object process]';
-                var0 = var1 === var2;
-            case 103:
-                return var0;
-        }
-    };
-    var1.isNodeEnv = var2;
-    var0 = function arg0() {
-        _fun98900: for (var _fun98900_ip = 0;;) switch (_fun98900_ip) {
-            case 0:
-                var1 = arg0;
+            case 25:
+                var1 = {};
+            case 27:
+                var0.__SENTRY__ = var1;
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var2 = 0;
+                var0 = var6[var2];
                 var4 = undefined;
-                var0 = undefined;
-            case 7: // try_start_0
-                var5 = _closure1_slot3;
-                var3 = _closure1_slot1;
-                var2 = var1;
-                var0 = var5.bind(var4)(var3, var2);
-            case 27: // try_end0
-                _fun98900_ip = 31;
-                continue _fun98900;
-            case 29: // catch_target0
-                CatchBlockStart(arg_register = 2);
-            case 31: // try_start_1
-                var3 = _closure1_slot3;
-                var2 = _closure1_slot1;
-                var5 = 'process';
-                var5 = var3.bind(var4)(var2, var5);
-                var5 = var5.cwd;
-                var8 = var5.bind(var4)();
-                var7 = var1;
-                var1 = global;
-                var1 = var1.HermesInternal;
-                var6 = var1.concat;
-                var5 = '';
-                var1 = '/node_modules/';
-                var1 = var6.bind(var5)(var8, var1, var7);
-                var0 = var3.bind(var4)(var2, var1);
-            case 101: // try_end1
-                _fun98900_ip = 105;
-                continue _fun98900;
-            case 103: // catch_target1
-                CatchBlockStart(arg_register = 1);
-            case 105:
+                var0 = var5.bind(var4)(var0);
+                var0 = var0.SDK_VERSION;
+                var2 = var6[var2];
+                var2 = var5.bind(var4)(var2);
+                var2 = var2.SDK_VERSION;
+                var2 = var1[var2];
+                if (var2) {
+                    _fun98783_ip = 87;
+                    continue _fun98783
+                }
+            case 85:
+                var2 = {};
+            case 87:
+                var1[var0] = var2;
+                var0 = var2[var3];
+                if (var0) {
+                    _fun98783_ip = 112;
+                    continue _fun98783
+                }
+            case 98:
+                var1 = arg1;
+                var1 = var1.bind(var4)();
+                var2[var3] = var1;
+                var0 = var1;
+            case 112:
                 return var0;
         }
     };
-    var1.loadModule = var0;
+    var1.getGlobalSingleton = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [12894]);

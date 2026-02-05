@@ -15,7 +15,7 @@ public abstract class q0 {
     public /* synthetic */ class a extends FunctionReferenceImpl implements Function6 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f5681d = new a();
+        public static final a f5793d = new a();
 
         a() {
             super(6, q0.class, "createSchedulers", "createSchedulers(Landroid/content/Context;Landroidx/work/Configuration;Landroidx/work/impl/utils/taskexecutor/TaskExecutor;Landroidx/work/impl/WorkDatabase;Landroidx/work/impl/constraints/trackers/Trackers;Landroidx/work/impl/Processor;)Ljava/util/List;", 1);
@@ -67,12 +67,12 @@ public abstract class q0 {
         }
         r4.b bVar2 = bVar;
         if ((i10 & 8) != 0) {
-            WorkDatabase.a aVar3 = WorkDatabase.f5520p;
+            WorkDatabase.a aVar3 = WorkDatabase.f5632p;
             Context applicationContext = context.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext, "context.applicationContext");
             r4.a c10 = bVar2.c();
             Intrinsics.checkNotNullExpressionValue(c10, "workTaskExecutor.serialTaskExecutor");
-            workDatabase = aVar3.b(applicationContext, c10, aVar.a(), context.getResources().getBoolean(k4.t.f32151a));
+            workDatabase = aVar3.b(applicationContext, c10, aVar.a(), context.getResources().getBoolean(k4.t.f31614a));
         }
         if ((i10 & 16) != 0) {
             Context applicationContext2 = context.getApplicationContext();
@@ -87,7 +87,7 @@ public abstract class q0 {
             uVar2 = uVar;
         }
         if ((i10 & 64) != 0) {
-            aVar2 = a.f5681d;
+            aVar2 = a.f5793d;
         } else {
             aVar2 = function6;
         }

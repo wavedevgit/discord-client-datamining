@@ -3,7 +3,7 @@ package app.rive;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
-import lr.p;
+import or.p;
 import org.jetbrains.annotations.NotNull;
 import w0.a;
 import w0.c;

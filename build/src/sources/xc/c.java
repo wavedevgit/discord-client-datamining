@@ -12,7 +12,7 @@ import tc.z;
 public final class c implements k {
 
     /* renamed from: q  reason: collision with root package name */
-    public static final p f53220q = new p() { // from class: xc.b
+    public static final p f53764q = new p() { // from class: xc.b
         @Override // tc.p
         public final k[] b() {
             return c.b();
@@ -20,95 +20,95 @@ public final class c implements k {
     };
 
     /* renamed from: f  reason: collision with root package name */
-    private m f53226f;
+    private m f53770f;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f53228h;
+    private boolean f53772h;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f53229i;
+    private long f53773i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f53230j;
+    private int f53774j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f53231k;
+    private int f53775k;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f53232l;
+    private int f53776l;
 
     /* renamed from: m  reason: collision with root package name */
-    private long f53233m;
+    private long f53777m;
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f53234n;
+    private boolean f53778n;
 
     /* renamed from: o  reason: collision with root package name */
-    private a f53235o;
+    private a f53779o;
 
     /* renamed from: p  reason: collision with root package name */
-    private f f53236p;
+    private f f53780p;
 
     /* renamed from: a  reason: collision with root package name */
-    private final h0 f53221a = new h0(4);
+    private final h0 f53765a = new h0(4);
 
     /* renamed from: b  reason: collision with root package name */
-    private final h0 f53222b = new h0(9);
+    private final h0 f53766b = new h0(9);
 
     /* renamed from: c  reason: collision with root package name */
-    private final h0 f53223c = new h0(11);
+    private final h0 f53767c = new h0(11);
 
     /* renamed from: d  reason: collision with root package name */
-    private final h0 f53224d = new h0();
+    private final h0 f53768d = new h0();
 
     /* renamed from: e  reason: collision with root package name */
-    private final d f53225e = new d();
+    private final d f53769e = new d();
 
     /* renamed from: g  reason: collision with root package name */
-    private int f53227g = 1;
+    private int f53771g = 1;
 
     public static /* synthetic */ k[] b() {
         return new k[]{new c()};
     }
 
     private void e() {
-        if (!this.f53234n) {
-            this.f53226f.q(new z.b(-9223372036854775807L));
-            this.f53234n = true;
+        if (!this.f53778n) {
+            this.f53770f.q(new z.b(-9223372036854775807L));
+            this.f53778n = true;
         }
     }
 
     private long g() {
-        if (this.f53228h) {
-            return this.f53229i + this.f53233m;
+        if (this.f53772h) {
+            return this.f53773i + this.f53777m;
         }
-        if (this.f53225e.d() == -9223372036854775807L) {
+        if (this.f53769e.d() == -9223372036854775807L) {
             return 0L;
         }
-        return this.f53233m;
+        return this.f53777m;
     }
 
     private h0 h(l lVar) {
-        if (this.f53232l > this.f53224d.b()) {
-            h0 h0Var = this.f53224d;
-            h0Var.S(new byte[Math.max(h0Var.b() * 2, this.f53232l)], 0);
+        if (this.f53776l > this.f53768d.b()) {
+            h0 h0Var = this.f53768d;
+            h0Var.S(new byte[Math.max(h0Var.b() * 2, this.f53776l)], 0);
         } else {
-            this.f53224d.U(0);
+            this.f53768d.U(0);
         }
-        this.f53224d.T(this.f53232l);
-        lVar.readFully(this.f53224d.e(), 0, this.f53232l);
-        return this.f53224d;
+        this.f53768d.T(this.f53776l);
+        lVar.readFully(this.f53768d.e(), 0, this.f53776l);
+        return this.f53768d;
     }
 
     private boolean i(l lVar) {
         boolean z10;
         boolean z11 = false;
-        if (!lVar.f(this.f53222b.e(), 0, 9, true)) {
+        if (!lVar.f(this.f53766b.e(), 0, 9, true)) {
             return false;
         }
-        this.f53222b.U(0);
-        this.f53222b.V(4);
-        int H = this.f53222b.H();
+        this.f53766b.U(0);
+        this.f53766b.V(4);
+        int H = this.f53766b.H();
         if ((H & 4) != 0) {
             z10 = true;
         } else {
@@ -117,15 +117,15 @@ public final class c implements k {
         if ((H & 1) != 0) {
             z11 = true;
         }
-        if (z10 && this.f53235o == null) {
-            this.f53235o = new a(this.f53226f.c(8, 1));
+        if (z10 && this.f53779o == null) {
+            this.f53779o = new a(this.f53770f.c(8, 1));
         }
-        if (z11 && this.f53236p == null) {
-            this.f53236p = new f(this.f53226f.c(9, 2));
+        if (z11 && this.f53780p == null) {
+            this.f53780p = new f(this.f53770f.c(9, 2));
         }
-        this.f53226f.s();
-        this.f53230j = this.f53222b.q() - 5;
-        this.f53227g = 2;
+        this.f53770f.s();
+        this.f53774j = this.f53766b.q() - 5;
+        this.f53771g = 2;
         return true;
     }
 
@@ -139,15 +139,15 @@ public final class c implements k {
         /*
             r9 = this;
             long r0 = r9.g()
-            int r2 = r9.f53231k
+            int r2 = r9.f53775k
             r3 = 8
             r4 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
             r6 = 1
             if (r2 != r3) goto L23
-            xc.a r3 = r9.f53235o
+            xc.a r3 = r9.f53779o
             if (r3 == 0) goto L23
             r9.e()
-            xc.a r2 = r9.f53235o
+            xc.a r2 = r9.f53779o
             ne.h0 r10 = r9.h(r10)
             boolean r10 = r2.a(r10, r0)
         L21:
@@ -156,107 +156,107 @@ public final class c implements k {
         L23:
             r3 = 9
             if (r2 != r3) goto L39
-            xc.f r3 = r9.f53236p
+            xc.f r3 = r9.f53780p
             if (r3 == 0) goto L39
             r9.e()
-            xc.f r2 = r9.f53236p
+            xc.f r2 = r9.f53780p
             ne.h0 r10 = r9.h(r10)
             boolean r10 = r2.a(r10, r0)
             goto L21
         L39:
             r3 = 18
             if (r2 != r3) goto L6e
-            boolean r2 = r9.f53234n
+            boolean r2 = r9.f53778n
             if (r2 != 0) goto L6e
-            xc.d r2 = r9.f53225e
+            xc.d r2 = r9.f53769e
             ne.h0 r10 = r9.h(r10)
             boolean r10 = r2.a(r10, r0)
-            xc.d r0 = r9.f53225e
+            xc.d r0 = r9.f53769e
             long r0 = r0.d()
             int r2 = (r0 > r4 ? 1 : (r0 == r4 ? 0 : -1))
             if (r2 == 0) goto L21
-            tc.m r2 = r9.f53226f
+            tc.m r2 = r9.f53770f
             tc.x r3 = new tc.x
-            xc.d r7 = r9.f53225e
+            xc.d r7 = r9.f53769e
             long[] r7 = r7.e()
-            xc.d r8 = r9.f53225e
+            xc.d r8 = r9.f53769e
             long[] r8 = r8.f()
             r3.<init>(r7, r8, r0)
             r2.q(r3)
-            r9.f53234n = r6
+            r9.f53778n = r6
             goto L21
         L6e:
-            int r0 = r9.f53232l
+            int r0 = r9.f53776l
             r10.k(r0)
             r10 = 0
             r0 = r10
         L75:
-            boolean r1 = r9.f53228h
+            boolean r1 = r9.f53772h
             if (r1 != 0) goto L8f
             if (r10 == 0) goto L8f
-            r9.f53228h = r6
-            xc.d r10 = r9.f53225e
+            r9.f53772h = r6
+            xc.d r10 = r9.f53769e
             long r1 = r10.d()
             int r10 = (r1 > r4 ? 1 : (r1 == r4 ? 0 : -1))
             if (r10 != 0) goto L8b
-            long r1 = r9.f53233m
+            long r1 = r9.f53777m
             long r1 = -r1
             goto L8d
         L8b:
             r1 = 0
         L8d:
-            r9.f53229i = r1
+            r9.f53773i = r1
         L8f:
             r10 = 4
-            r9.f53230j = r10
+            r9.f53774j = r10
             r10 = 2
-            r9.f53227g = r10
+            r9.f53771g = r10
             return r0
         */
         throw new UnsupportedOperationException("Method not decompiled: xc.c.j(tc.l):boolean");
     }
 
     private boolean k(l lVar) {
-        if (!lVar.f(this.f53223c.e(), 0, 11, true)) {
+        if (!lVar.f(this.f53767c.e(), 0, 11, true)) {
             return false;
         }
-        this.f53223c.U(0);
-        this.f53231k = this.f53223c.H();
-        this.f53232l = this.f53223c.K();
-        this.f53233m = this.f53223c.K();
-        this.f53233m = ((this.f53223c.H() << 24) | this.f53233m) * 1000;
-        this.f53223c.V(3);
-        this.f53227g = 4;
+        this.f53767c.U(0);
+        this.f53775k = this.f53767c.H();
+        this.f53776l = this.f53767c.K();
+        this.f53777m = this.f53767c.K();
+        this.f53777m = ((this.f53767c.H() << 24) | this.f53777m) * 1000;
+        this.f53767c.V(3);
+        this.f53771g = 4;
         return true;
     }
 
     private void l(l lVar) {
-        lVar.k(this.f53230j);
-        this.f53230j = 0;
-        this.f53227g = 3;
+        lVar.k(this.f53774j);
+        this.f53774j = 0;
+        this.f53771g = 3;
     }
 
     @Override // tc.k
     public void a(long j10, long j11) {
         if (j10 == 0) {
-            this.f53227g = 1;
-            this.f53228h = false;
+            this.f53771g = 1;
+            this.f53772h = false;
         } else {
-            this.f53227g = 3;
+            this.f53771g = 3;
         }
-        this.f53230j = 0;
+        this.f53774j = 0;
     }
 
     @Override // tc.k
     public void c(m mVar) {
-        this.f53226f = mVar;
+        this.f53770f = mVar;
     }
 
     @Override // tc.k
     public int d(l lVar, y yVar) {
-        ne.a.i(this.f53226f);
+        ne.a.i(this.f53770f);
         while (true) {
-            int i10 = this.f53227g;
+            int i10 = this.f53771g;
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
@@ -281,24 +281,24 @@ public final class c implements k {
 
     @Override // tc.k
     public boolean f(l lVar) {
-        lVar.n(this.f53221a.e(), 0, 3);
-        this.f53221a.U(0);
-        if (this.f53221a.K() != 4607062) {
+        lVar.n(this.f53765a.e(), 0, 3);
+        this.f53765a.U(0);
+        if (this.f53765a.K() != 4607062) {
             return false;
         }
-        lVar.n(this.f53221a.e(), 0, 2);
-        this.f53221a.U(0);
-        if ((this.f53221a.N() & h.DEFAULT_SWIPE_ANIMATION_DURATION) != 0) {
+        lVar.n(this.f53765a.e(), 0, 2);
+        this.f53765a.U(0);
+        if ((this.f53765a.N() & h.DEFAULT_SWIPE_ANIMATION_DURATION) != 0) {
             return false;
         }
-        lVar.n(this.f53221a.e(), 0, 4);
-        this.f53221a.U(0);
-        int q10 = this.f53221a.q();
+        lVar.n(this.f53765a.e(), 0, 4);
+        this.f53765a.U(0);
+        int q10 = this.f53765a.q();
         lVar.e();
         lVar.h(q10);
-        lVar.n(this.f53221a.e(), 0, 4);
-        this.f53221a.U(0);
-        if (this.f53221a.q() != 0) {
+        lVar.n(this.f53765a.e(), 0, 4);
+        this.f53765a.U(0);
+        if (this.f53765a.q() != 0) {
             return false;
         }
         return true;

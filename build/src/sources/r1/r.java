@@ -16,7 +16,7 @@ import z1.g;
 public abstract class r {
 
     /* renamed from: a  reason: collision with root package name */
-    private ConcurrentHashMap f48342a = new ConcurrentHashMap();
+    private ConcurrentHashMap f48352a = new ConcurrentHashMap();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */

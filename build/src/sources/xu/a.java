@@ -1,50 +1,83 @@
 package xu;
 
 import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Lambda;
-import xu.c;
-import zu.b;
+import xu.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements nu.b, c, zu.b {
+public final class a implements qu.b, b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f53573a = new a();
+    public static final a f54274a = new a();
 
+    /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: xu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class C0727a extends Lambda implements Function1 {
+    public static final class C0747a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0727a f53574d = new C0727a();
+        public static final C0747a f54275d = new C0747a();
 
-        C0727a() {
-            super(1);
+        C0747a() {
+            super(2);
         }
 
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final Double invoke(List it) {
-            Intrinsics.checkNotNullParameter(it, "it");
-            return Double.valueOf(CollectionsKt.Y0(it));
+        public final Boolean a(int i10, int i11) {
+            boolean z10;
+            if (i10 == i11) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            return Boolean.valueOf(z10);
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
         }
     }
 
     private a() {
     }
 
-    public Double a(Object obj, Function1 function1) {
-        return c.a.a(this, obj, function1);
+    @Override // zu.a
+    public Object a(Object obj) {
+        return b.a.f(this, obj);
     }
 
-    public List b(Object obj) {
-        return b.a.b(this, obj);
+    @Override // ru.c
+    public boolean b(List list, Function2 function2) {
+        return b.a.b(this, list, function2);
     }
 
-    @Override // nu.b
-    public Object f(Object obj, Object obj2) {
-        return a(b(obj), C0727a.f53574d);
+    @Override // ru.a
+    public Boolean c(Object obj) {
+        return b.a.g(this, obj);
+    }
+
+    @Override // ru.b
+    public List d(Comparable comparable, Comparable comparable2) {
+        return b.a.d(this, comparable, comparable2);
+    }
+
+    @Override // zu.c
+    public Object e(Object obj) {
+        return b.a.e(this, obj);
+    }
+
+    @Override // ru.b
+    public List g(Comparable comparable, Comparable comparable2) {
+        return b.a.c(this, comparable, comparable2);
+    }
+
+    public boolean h(Object obj, Function2 function2) {
+        return b.a.a(this, obj, function2);
+    }
+
+    @Override // qu.b
+    /* renamed from: i */
+    public Boolean f(Object obj, Object obj2) {
+        return Boolean.valueOf(h(obj, C0747a.f54275d));
     }
 }

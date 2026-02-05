@@ -10,45 +10,45 @@ import java.util.List;
 final class t1 extends com.google.android.exoplayer2.a {
 
     /* renamed from: t  reason: collision with root package name */
-    private final int f12579t;
+    private final int f12964t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final int f12580u;
+    private final int f12965u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final int[] f12581v;
+    private final int[] f12966v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final int[] f12582w;
+    private final int[] f12967w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final Timeline[] f12583x;
+    private final Timeline[] f12968x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Object[] f12584y;
+    private final Object[] f12969y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final HashMap f12585z;
+    private final HashMap f12970z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends qd.l {
 
         /* renamed from: r  reason: collision with root package name */
-        private final Timeline.d f12586r;
+        private final Timeline.d f12971r;
 
         a(Timeline timeline) {
             super(timeline);
-            this.f12586r = new Timeline.d();
+            this.f12971r = new Timeline.d();
         }
 
         @Override // qd.l, com.google.android.exoplayer2.Timeline
         public Timeline.b k(int i10, Timeline.b bVar, boolean z10) {
             Timeline.b k10 = super.k(i10, bVar, z10);
-            if (super.r(k10.f11593i, this.f12586r).g()) {
-                k10.w(bVar.f11591d, bVar.f11592e, bVar.f11593i, bVar.f11594o, bVar.f11595p, rd.c.f48773r, true);
+            if (super.r(k10.f11978i, this.f12971r).g()) {
+                k10.w(bVar.f11976d, bVar.f11977e, bVar.f11978i, bVar.f11979o, bVar.f11980p, rd.c.f48783r, true);
                 return k10;
             }
-            k10.f11596q = true;
+            k10.f11981q = true;
             return k10;
         }
     }
@@ -81,56 +81,56 @@ final class t1 extends com.google.android.exoplayer2.a {
 
     @Override // com.google.android.exoplayer2.a
     protected Object B(int i10) {
-        return this.f12584y[i10];
+        return this.f12969y[i10];
     }
 
     @Override // com.google.android.exoplayer2.a
     protected int D(int i10) {
-        return this.f12581v[i10];
+        return this.f12966v[i10];
     }
 
     @Override // com.google.android.exoplayer2.a
     protected int E(int i10) {
-        return this.f12582w[i10];
+        return this.f12967w[i10];
     }
 
     @Override // com.google.android.exoplayer2.a
     protected Timeline H(int i10) {
-        return this.f12583x[i10];
+        return this.f12968x[i10];
     }
 
     public t1 I(qd.o0 o0Var) {
-        Timeline[] timelineArr = new Timeline[this.f12583x.length];
+        Timeline[] timelineArr = new Timeline[this.f12968x.length];
         int i10 = 0;
         while (true) {
-            Timeline[] timelineArr2 = this.f12583x;
+            Timeline[] timelineArr2 = this.f12968x;
             if (i10 < timelineArr2.length) {
                 timelineArr[i10] = new a(timelineArr2[i10]);
                 i10++;
             } else {
-                return new t1(timelineArr, this.f12584y, o0Var);
+                return new t1(timelineArr, this.f12969y, o0Var);
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List J() {
-        return Arrays.asList(this.f12583x);
+        return Arrays.asList(this.f12968x);
     }
 
     @Override // com.google.android.exoplayer2.Timeline
     public int m() {
-        return this.f12580u;
+        return this.f12965u;
     }
 
     @Override // com.google.android.exoplayer2.Timeline
     public int t() {
-        return this.f12579t;
+        return this.f12964t;
     }
 
     @Override // com.google.android.exoplayer2.a
     protected int w(Object obj) {
-        Integer num = (Integer) this.f12585z.get(obj);
+        Integer num = (Integer) this.f12970z.get(obj);
         if (num == null) {
             return -1;
         }
@@ -139,12 +139,12 @@ final class t1 extends com.google.android.exoplayer2.a {
 
     @Override // com.google.android.exoplayer2.a
     protected int x(int i10) {
-        return ne.w0.h(this.f12581v, i10 + 1, false, false);
+        return ne.w0.h(this.f12966v, i10 + 1, false, false);
     }
 
     @Override // com.google.android.exoplayer2.a
     protected int y(int i10) {
-        return ne.w0.h(this.f12582w, i10 + 1, false, false);
+        return ne.w0.h(this.f12967w, i10 + 1, false, false);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -152,27 +152,27 @@ final class t1 extends com.google.android.exoplayer2.a {
         super(false, o0Var);
         int i10 = 0;
         int length = timelineArr.length;
-        this.f12583x = timelineArr;
-        this.f12581v = new int[length];
-        this.f12582w = new int[length];
-        this.f12584y = objArr;
-        this.f12585z = new HashMap();
+        this.f12968x = timelineArr;
+        this.f12966v = new int[length];
+        this.f12967w = new int[length];
+        this.f12969y = objArr;
+        this.f12970z = new HashMap();
         int length2 = timelineArr.length;
         int i11 = 0;
         int i12 = 0;
         int i13 = 0;
         while (i10 < length2) {
             Timeline timeline = timelineArr[i10];
-            this.f12583x[i13] = timeline;
-            this.f12582w[i13] = i11;
-            this.f12581v[i13] = i12;
+            this.f12968x[i13] = timeline;
+            this.f12967w[i13] = i11;
+            this.f12966v[i13] = i12;
             i11 += timeline.t();
-            i12 += this.f12583x[i13].m();
-            this.f12585z.put(objArr[i13], Integer.valueOf(i13));
+            i12 += this.f12968x[i13].m();
+            this.f12970z.put(objArr[i13], Integer.valueOf(i13));
             i10++;
             i13++;
         }
-        this.f12579t = i11;
-        this.f12580u = i12;
+        this.f12964t = i11;
+        this.f12965u = i12;
     }
 }

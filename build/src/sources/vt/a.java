@@ -1,174 +1,189 @@
 package vt;
 
-import java.io.File;
-import java.io.FileDescriptor;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.channels.FileChannel;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+import qt.k;
+import qt.o;
+import qt.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
+public final class a implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static boolean f51749a = false;
+    private static final Map f52388a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int f51750b = d(new byte[]{102, 114, 101, 101});
+    private static final p f52389b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int f51751c = d(new byte[]{106, 117, 110, 107});
+    private static final Map f52390c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int f51752d = d(new byte[]{109, 100, 97, 116});
+    private static final p f52391d;
 
-    /* renamed from: e  reason: collision with root package name */
-    private static final int f51753e = d(new byte[]{109, 111, 111, 118});
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final int f51754f = d(new byte[]{112, 110, 111, 116});
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final int f51755g = d(new byte[]{115, 107, 105, 112});
-
-    /* renamed from: h  reason: collision with root package name */
-    private static final int f51756h = d(new byte[]{119, 105, 100, 101});
-
-    /* renamed from: i  reason: collision with root package name */
-    private static final int f51757i = d(new byte[]{80, 73, 67, 84});
-
-    /* renamed from: j  reason: collision with root package name */
-    private static final int f51758j = d(new byte[]{102, 116, 121, 112});
-
-    /* renamed from: k  reason: collision with root package name */
-    private static final int f51759k = d(new byte[]{117, 117, 105, 100});
-
-    /* renamed from: l  reason: collision with root package name */
-    private static final int f51760l = d(new byte[]{99, 109, 111, 118});
-
-    /* renamed from: m  reason: collision with root package name */
-    private static final int f51761m = d(new byte[]{115, 116, 99, 111});
-
-    /* renamed from: n  reason: collision with root package name */
-    private static final int f51762n = d(new byte[]{99, 111, 54, 52});
-
+    /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: vt.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class C0685a extends b {
-        private C0685a(String str) {
-            super(str);
-        }
-    }
+    public static /* synthetic */ class C0687a {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class b extends Exception {
-        private b(String str) {
-            super(str);
-        }
-    }
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ int[] f52392a;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class c extends b {
-        private c(String str) {
-            super(str);
-        }
-    }
-
-    public static boolean a(FileDescriptor fileDescriptor, File file) {
-        return c(new FileInputStream(fileDescriptor), file);
-    }
-
-    /* JADX WARN: Removed duplicated region for block: B:103:0x00ed A[EDGE_INSN: B:103:0x00ed->B:40:0x00ed ?: BREAK  , SYNTHETIC] */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    private static boolean b(java.nio.channels.FileChannel r24, java.nio.channels.FileChannel r25) {
-        /*
-            Method dump skipped, instructions count: 564
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: vt.a.b(java.nio.channels.FileChannel, java.nio.channels.FileChannel):boolean");
-    }
-
-    private static boolean c(FileInputStream fileInputStream, File file) {
-        FileOutputStream fileOutputStream = null;
-        try {
-            FileChannel channel = fileInputStream.getChannel();
-            FileOutputStream fileOutputStream2 = new FileOutputStream(file);
+        static {
+            int[] iArr = new int[k.values().length];
+            f52392a = iArr;
             try {
-                boolean b10 = b(channel, fileOutputStream2.getChannel());
-                fileInputStream.close();
-                fileOutputStream2.close();
-                return b10;
-            } catch (Throwable th2) {
-                th = th2;
-                fileOutputStream = fileOutputStream2;
-                fileInputStream.close();
-                if (fileOutputStream != null) {
-                    fileOutputStream.close();
-                }
-                throw th;
+                iArr[k.CARDINALS.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
             }
-        } catch (Throwable th3) {
-            th = th3;
+            try {
+                f52392a[k.ORDINALS.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
         }
     }
 
-    private static int d(byte[] bArr) {
-        return ByteBuffer.wrap(bArr).order(ByteOrder.BIG_ENDIAN).getInt();
-    }
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static class b extends p {
 
-    private static void e(String str, Object... objArr) {
-        if (f51749a) {
-            PrintStream printStream = System.err;
-            printStream.println("QtFastStart: " + String.format(str, objArr));
+        /* renamed from: g  reason: collision with root package name */
+        private final int f52393g;
+
+        /* synthetic */ b(int i10, C0687a c0687a) {
+            this(i10);
+        }
+
+        private b(int i10) {
+            this.f52393g = i10;
         }
     }
 
-    private static boolean f(FileChannel fileChannel, ByteBuffer byteBuffer) {
-        byteBuffer.clear();
-        int read = fileChannel.read(byteBuffer);
-        byteBuffer.flip();
-        if (read == byteBuffer.capacity()) {
-            return true;
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static class c extends p {
+
+        /* renamed from: g  reason: collision with root package name */
+        private final int f52394g;
+
+        /* synthetic */ c(int i10, C0687a c0687a) {
+            this(i10);
         }
-        return false;
+
+        private c(int i10) {
+            this.f52394g = i10;
+        }
     }
 
-    private static boolean g(FileChannel fileChannel, ByteBuffer byteBuffer, long j10) {
-        byteBuffer.clear();
-        int read = fileChannel.read(byteBuffer, j10);
-        byteBuffer.flip();
-        if (read == byteBuffer.capacity()) {
-            return true;
-        }
-        return false;
+    static {
+        HashMap hashMap = new HashMap(140);
+        f52388a = hashMap;
+        f52389b = new b(0, null);
+        HashMap hashMap2 = new HashMap();
+        b(hashMap2, "bm bo dz id ig ii in ja jbo jv jw kde kea km ko lkt", -1);
+        b(hashMap2, "lo ms my nqo root sah ses sg th to vi wo yo zh", -1);
+        b(hashMap2, "pt_PT", 0);
+        b(hashMap2, "am as bn fa gu hi kn zu", 1);
+        b(hashMap2, "ff fr hy kab pt", 1);
+        b(hashMap2, "si", 1);
+        b(hashMap2, "ak bh guw ln mg nso pa ti wa", 1);
+        b(hashMap2, "tzm", 2);
+        b(hashMap2, "is", 3);
+        b(hashMap2, "mk", 4);
+        b(hashMap2, "ceb fil tl", 5);
+        b(hashMap2, "lv prg", 6);
+        b(hashMap2, "lag ksh", 7);
+        b(hashMap2, "iu naq se sma smi smj smn sms", 8);
+        b(hashMap2, "shi", 9);
+        b(hashMap2, "mo ro", 10);
+        b(hashMap2, "bs hr sh sr", 11);
+        b(hashMap2, "gd", 12);
+        b(hashMap2, "sl", 13);
+        b(hashMap2, "he iw", 14);
+        b(hashMap2, "cs sk", 15);
+        b(hashMap2, "pl", 16);
+        b(hashMap2, "be", 17);
+        b(hashMap2, "lt", 18);
+        b(hashMap2, "mt", 19);
+        b(hashMap2, "ru uk", 17);
+        b(hashMap2, "br", 20);
+        b(hashMap2, "ga", 21);
+        b(hashMap2, "gv", 22);
+        b(hashMap2, "ar", 23);
+        b(hashMap2, "cy", 24);
+        b(hashMap2, "dsb hsb", 25);
+        b(hashMap2, "kw", 26);
+        hashMap.putAll(hashMap2);
+        HashMap hashMap3 = new HashMap(140);
+        f52390c = hashMap3;
+        f52391d = new c(0, null);
+        HashMap hashMap4 = new HashMap();
+        c(hashMap4, "sv", 1);
+        c(hashMap4, "fil fr ga hy lo mo ms ro tl vi", 2);
+        c(hashMap4, "hu", 3);
+        c(hashMap4, "ne", 4);
+        c(hashMap4, "kk", 5);
+        c(hashMap4, "it sc scn", 6);
+        c(hashMap4, "ka", 7);
+        c(hashMap4, "sq", 8);
+        c(hashMap4, "en", 9);
+        c(hashMap4, "mr", 10);
+        c(hashMap4, "ca", 11);
+        c(hashMap4, "mk", 12);
+        c(hashMap4, "az", 13);
+        c(hashMap4, "gu hi", 14);
+        c(hashMap4, "as bn", 15);
+        c(hashMap4, "cy", 16);
+        c(hashMap4, "be", 17);
+        c(hashMap4, "uk", 18);
+        c(hashMap4, "tk", 19);
+        c(hashMap4, "or", 20);
+        c(hashMap4, "gd", 21);
+        c(hashMap4, "kw", 22);
+        hashMap3.putAll(hashMap4);
     }
 
-    static int h(int i10) {
-        if (i10 >= 0) {
-            return i10;
+    private static void b(Map map, String str, int i10) {
+        for (String str2 : str.split(" ")) {
+            map.put(str2, new b(i10, null));
         }
-        throw new c("uint32 value is too large");
     }
 
-    static int i(long j10) {
-        if (j10 <= 2147483647L && j10 >= 0) {
-            return (int) j10;
+    private static void c(Map map, String str, int i10) {
+        for (String str2 : str.split(" ")) {
+            map.put(str2, new c(i10, null));
         }
-        throw new c("uint32 value is too large");
     }
 
-    static long j(int i10) {
-        return i10 & 4294967295L;
-    }
-
-    static long k(long j10) {
-        if (j10 >= 0) {
-            return j10;
+    @Override // qt.o
+    public p a(Locale locale, k kVar) {
+        Map map;
+        p pVar;
+        p pVar2;
+        int i10 = C0687a.f52392a[kVar.ordinal()];
+        if (i10 != 1) {
+            if (i10 == 2) {
+                map = f52390c;
+                pVar = f52391d;
+            } else {
+                throw new UnsupportedOperationException(kVar.name());
+            }
+        } else {
+            map = f52388a;
+            pVar = f52389b;
         }
-        throw new c("uint64 value is too large");
+        String country = locale.getCountry();
+        if (!country.isEmpty()) {
+            pVar2 = (p) map.get(locale.getLanguage() + '_' + country);
+        } else {
+            pVar2 = null;
+        }
+        if (pVar2 == null) {
+            pVar2 = (p) map.get(locale.getLanguage());
+        }
+        if (pVar2 == null) {
+            return pVar;
+        }
+        return pVar2;
     }
 }

@@ -6,27 +6,27 @@ import android.net.wifi.WifiManager;
 final class c2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final WifiManager f12062a;
+    private final WifiManager f12447a;
 
     /* renamed from: b  reason: collision with root package name */
-    private WifiManager.WifiLock f12063b;
+    private WifiManager.WifiLock f12448b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f12064c;
+    private boolean f12449c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f12065d;
+    private boolean f12450d;
 
     public c2(Context context) {
-        this.f12062a = (WifiManager) context.getApplicationContext().getSystemService("wifi");
+        this.f12447a = (WifiManager) context.getApplicationContext().getSystemService("wifi");
     }
 
     private void c() {
-        WifiManager.WifiLock wifiLock = this.f12063b;
+        WifiManager.WifiLock wifiLock = this.f12448b;
         if (wifiLock == null) {
             return;
         }
-        if (this.f12064c && this.f12065d) {
+        if (this.f12449c && this.f12450d) {
             wifiLock.acquire();
         } else {
             wifiLock.release();
@@ -34,22 +34,22 @@ final class c2 {
     }
 
     public void a(boolean z10) {
-        if (z10 && this.f12063b == null) {
-            WifiManager wifiManager = this.f12062a;
+        if (z10 && this.f12448b == null) {
+            WifiManager wifiManager = this.f12447a;
             if (wifiManager == null) {
                 ne.y.i("WifiLockManager", "WifiManager is null, therefore not creating the WifiLock.");
                 return;
             }
             WifiManager.WifiLock createWifiLock = wifiManager.createWifiLock(3, "ExoPlayer:WifiLockManager");
-            this.f12063b = createWifiLock;
+            this.f12448b = createWifiLock;
             createWifiLock.setReferenceCounted(false);
         }
-        this.f12064c = z10;
+        this.f12449c = z10;
         c();
     }
 
     public void b(boolean z10) {
-        this.f12065d = z10;
+        this.f12450d = z10;
         c();
     }
 }

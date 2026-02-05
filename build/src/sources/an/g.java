@@ -1,93 +1,44 @@
 package an;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.util.SparseArray;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import an.e;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import kotlinx.coroutines.Job;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g implements Parcelable {
-    @NotNull
-    public static final a CREATOR = new a(null);
+public final class g implements e.a {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f730d;
+    /* renamed from: a  reason: collision with root package name */
+    private final String f798a;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final SparseArray f731e;
+    /* renamed from: b  reason: collision with root package name */
+    private final Job f799b;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable.Creator {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: c  reason: collision with root package name */
+    private g f800c;
 
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public g createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            String readString = parcel.readString();
-            Intrinsics.checkNotNull(readString);
-            Intrinsics.checkNotNullExpressionValue(readString, "parcel.readString()!!");
-            SparseArray readSparseArray = parcel.readSparseArray(g.class.getClassLoader());
-            Intrinsics.checkNotNull(readSparseArray);
-            Intrinsics.checkNotNullExpressionValue(readSparseArray, "parcel.readSparseArray<P…class.java.classLoader)!!");
-            return new g(readString, readSparseArray);
-        }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public g[] newArray(int i10) {
-            return new g[i10];
-        }
-
-        private a() {
-        }
-    }
-
-    public g(String key, SparseArray viewState) {
+    public g(String key, Job job) {
         Intrinsics.checkNotNullParameter(key, "key");
-        Intrinsics.checkNotNullParameter(viewState, "viewState");
-        this.f730d = key;
-        this.f731e = viewState;
+        Intrinsics.checkNotNullParameter(job, "job");
+        this.f798a = key;
+        this.f799b = job;
     }
 
-    public final SparseArray a() {
-        return this.f731e;
+    public final Job c() {
+        return this.f799b;
     }
 
-    @Override // android.os.Parcelable
-    public int describeContents() {
-        return 0;
+    public final String d() {
+        return this.f798a;
     }
 
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof g)) {
-            return false;
-        }
-        g gVar = (g) obj;
-        if (Intrinsics.areEqual(this.f730d, gVar.f730d) && Intrinsics.areEqual(this.f731e, gVar.f731e)) {
-            return true;
-        }
-        return false;
+    @Override // an.e.a
+    /* renamed from: e */
+    public g a() {
+        return this.f800c;
     }
 
-    public int hashCode() {
-        return (this.f730d.hashCode() * 31) + this.f731e.hashCode();
-    }
-
-    public String toString() {
-        return "ViewStateFrame(key=" + this.f730d + ", viewState=" + this.f731e + ')';
-    }
-
-    @Override // android.os.Parcelable
-    public void writeToParcel(Parcel parcel, int i10) {
-        Intrinsics.checkNotNullParameter(parcel, "parcel");
-        parcel.writeString(this.f730d);
-        parcel.writeSparseArray(this.f731e);
+    @Override // an.e.a
+    /* renamed from: f */
+    public void b(g gVar) {
+        this.f800c = gVar;
     }
 }

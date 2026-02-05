@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.useRef;
     var _closure1_slot3 = var3;
     var1 = function arg0, arg1() {
-        _fun34869: for (var _fun34869_ip = 0;;) switch (_fun34869_ip) {
+        _fun34879: for (var _fun34879_ip = 0;;) switch (_fun34879_ip) {
             case 0:
                 var11 = arg0;
                 var0 = _closure1_slot3;
@@ -32,8 +32,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot0 = var0;
                 var3 = var0.current;
                 if (!(var5 === var3)) {
-                    _fun34869_ip = 88;
-                    continue _fun34869
+                    _fun34879_ip = 88;
+                    continue _fun34879
                 }
             case 34:
                 var5 = _closure1_slot0;
@@ -79,8 +79,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var11[var1];
                         var1 = var13.bind(var14)(var1);
                         if (var1) {
-                            _fun34869_ip = 137;
-                            continue _fun34869
+                            _fun34879_ip = 137;
+                            continue _fun34879
                         }
                         case 184: var3 = _closure1_slot0;
                         var5 = _closure1_slot1;
@@ -125,8 +125,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3.isWeb;
                 var1 = var1.bind(var3)();
                 if (var1) {
-                    _fun34869_ip = 371;
-                    continue _fun34869
+                    _fun34879_ip = 371;
+                    continue _fun34879
                 }
             case 344:
                 var3 = _closure1_slot0;

@@ -1,36 +1,23 @@
 package wu;
 
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.collections.CollectionsKt;
+import zu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b {
+public final class b implements qu.b, zu.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f52774a;
+    public static final b f53315a = new b();
 
-    public b(Object obj) {
-        this.f52774a = obj;
+    private b() {
     }
 
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if ((obj instanceof b) && Intrinsics.areEqual(this.f52774a, ((b) obj).f52774a)) {
-            return true;
-        }
-        return false;
+    @Override // qu.b
+    /* renamed from: a */
+    public Boolean f(Object obj, Object obj2) {
+        return Boolean.valueOf(b(CollectionsKt.firstOrNull(vv.a.c(obj))));
     }
 
-    public int hashCode() {
-        Object obj = this.f52774a;
-        if (obj == null) {
-            return 0;
-        }
-        return obj.hashCode();
-    }
-
-    public String toString() {
-        Object obj = this.f52774a;
-        return "SingleNestedValue(value=" + obj + ")";
+    public boolean b(Object obj) {
+        return d.a.a(this, obj);
     }
 }

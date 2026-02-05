@@ -52,30 +52,30 @@ public final class InputCheckbox_AttributesJsonAdapter extends h {
     @NotNull
     public InputCheckbox.Attributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         Boolean bool = null;
         String str = null;
         String str2 = null;
         JsonLogicBoolean jsonLogicBoolean = null;
         JsonLogicBoolean jsonLogicBoolean2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 bool = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 jsonLogicBoolean = (JsonLogicBoolean) this.nullableJsonLogicBooleanAdapter.fromJson(reader);
-            } else if (A0 == 4) {
+            } else if (W == 4) {
                 jsonLogicBoolean2 = (JsonLogicBoolean) this.nullableJsonLogicBooleanAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new InputCheckbox.Attributes(bool, str, str2, jsonLogicBoolean, jsonLogicBoolean2);
     }
 
@@ -83,16 +83,16 @@ public final class InputCheckbox_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, InputCheckbox.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.l();
-            writer.A0("prefill");
+            writer.k();
+            writer.W("prefill");
             this.nullableBooleanAdapter.toJson(writer, attributes.getPrefill());
-            writer.A0("label");
+            writer.W("label");
             this.nullableStringAdapter.toJson(writer, attributes.getLabel());
-            writer.A0("descriptionText");
+            writer.W("descriptionText");
             this.nullableStringAdapter.toJson(writer, attributes.getDescriptionText());
-            writer.A0(ViewProps.HIDDEN);
+            writer.W(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
-            writer.A0("disabled");
+            writer.W("disabled");
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getDisabled());
             writer.E();
             return;

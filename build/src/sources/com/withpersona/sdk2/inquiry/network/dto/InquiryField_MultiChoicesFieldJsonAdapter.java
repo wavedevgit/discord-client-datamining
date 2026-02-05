@@ -48,35 +48,35 @@ public final class InquiryField_MultiChoicesFieldJsonAdapter extends h {
     @NotNull
     public InquiryField.MultiChoicesField fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String[] strArr = null;
         String str = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 strArr = (String[]) this.nullableArrayOfStringAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw vm.c.x("type", "type", reader);
+                    throw ym.c.x("type", "type", reader);
                 }
                 i10 = -3;
             } else {
                 continue;
             }
         }
-        reader.y();
+        reader.z();
         if (i10 == -3) {
             Intrinsics.checkNotNull(str, "null cannot be cast to non-null type kotlin.String");
             return new InquiryField.MultiChoicesField(strArr, str);
         }
         Constructor<InquiryField.MultiChoicesField> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InquiryField.MultiChoicesField.class.getDeclaredConstructor(String[].class, String.class, Integer.TYPE, vm.c.f51688c);
+            constructor = InquiryField.MultiChoicesField.class.getDeclaredConstructor(String[].class, String.class, Integer.TYPE, ym.c.f54853c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -89,10 +89,10 @@ public final class InquiryField_MultiChoicesFieldJsonAdapter extends h {
     public void toJson(@NotNull t writer, InquiryField.MultiChoicesField multiChoicesField) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (multiChoicesField != null) {
-            writer.l();
-            writer.A0("value");
+            writer.k();
+            writer.W("value");
             this.nullableArrayOfStringAdapter.toJson(writer, multiChoicesField.getValue());
-            writer.A0("type");
+            writer.W("type");
             this.stringAdapter.toJson(writer, multiChoicesField.getType());
             writer.E();
             return;

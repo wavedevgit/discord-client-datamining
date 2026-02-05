@@ -1,20 +1,34 @@
 package os;
 
-import kotlin.coroutines.CoroutineContext;
+import os.w;
+import rs.f0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class g {
-    public static final void a(CoroutineContext coroutineContext, Throwable th2) {
-        for (js.z zVar : f.a()) {
-            try {
-                zVar.R0(coroutineContext, th2);
-            } catch (Throwable th3) {
-                f.b(js.a0.b(th2, th3));
-            }
+public interface g extends w, v {
+
+    /* renamed from: k  reason: collision with root package name */
+    public static final b f44410k = b.f44411a;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static boolean a(g gVar, Object obj) {
+            return w.a.b(gVar, obj);
         }
-        try {
-            lr.e.a(th2, new h(coroutineContext));
-        } catch (Throwable unused) {
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ b f44411a = new b();
+
+        /* renamed from: b  reason: collision with root package name */
+        private static final int f44412b = f0.b("kotlinx.coroutines.channels.defaultBuffer", 64, 1, 2147483646);
+
+        private b() {
         }
-        f.b(th2);
+
+        public final int a() {
+            return f44412b;
+        }
     }
 }

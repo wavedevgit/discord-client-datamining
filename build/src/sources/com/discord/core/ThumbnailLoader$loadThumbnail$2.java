@@ -13,7 +13,7 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import rr.b;
+import ur.b;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "Landroid/graphics/Bitmap;", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.core.ThumbnailLoader$loadThumbnail$2", f = "ThumbnailLoader.kt", l = {118, 108, 109}, m = "invokeSuspend")
@@ -64,7 +64,7 @@ public final class ThumbnailLoader$loadThumbnail$2 extends k implements Function
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -105,6 +105,6 @@ public final class ThumbnailLoader$loadThumbnail$2 extends k implements Function
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-        return ((ThumbnailLoader$loadThumbnail$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((ThumbnailLoader$loadThumbnail$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

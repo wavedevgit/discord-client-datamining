@@ -6,7 +6,7 @@ import w0.w;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final w f28247a;
+    private static final w f27236a;
 
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0026, code lost:
         r1 = null;
@@ -14,7 +14,7 @@ public abstract class b {
     static {
         /*
             r0 = 0
-            kotlin.Result$a r1 = kotlin.Result.f32461e     // Catch: java.lang.Throwable -> L2b
+            kotlin.Result$a r1 = kotlin.Result.f31985e     // Catch: java.lang.Throwable -> L2b
             java.lang.Class<androidx.lifecycle.LifecycleOwner> r1 = androidx.lifecycle.LifecycleOwner.class
             java.lang.ClassLoader r1 = r1.getClassLoader()     // Catch: java.lang.Throwable -> L2b
             kotlin.jvm.internal.Intrinsics.checkNotNull(r1)     // Catch: java.lang.Throwable -> L2b
@@ -28,7 +28,7 @@ public abstract class b {
         L1e:
             if (r4 >= r3) goto L2d
             r5 = r2[r4]     // Catch: java.lang.Throwable -> L2b
-            boolean r5 = r5 instanceof lr.c     // Catch: java.lang.Throwable -> L2b
+            boolean r5 = r5 instanceof or.c     // Catch: java.lang.Throwable -> L2b
             if (r5 == 0) goto L28
         L26:
             r1 = r0
@@ -48,7 +48,7 @@ public abstract class b {
             java.lang.Object r1 = kotlin.Result.b(r1)     // Catch: java.lang.Throwable -> L2b
             goto L46
         L3c:
-            kotlin.Result$a r2 = kotlin.Result.f32461e
+            kotlin.Result$a r2 = kotlin.Result.f31985e
             java.lang.Object r1 = kotlin.c.a(r1)
             java.lang.Object r1 = kotlin.Result.b(r1)
         L46:
@@ -64,7 +64,7 @@ public abstract class b {
             r0.<init>()
             w0.w r0 = w0.e.a(r0)
         L5b:
-            i3.b.f28247a = r0
+            i3.b.f27236a = r0
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: i3.b.<clinit>():void");
@@ -76,6 +76,6 @@ public abstract class b {
     }
 
     public static final w c() {
-        return f28247a;
+        return f27236a;
     }
 }

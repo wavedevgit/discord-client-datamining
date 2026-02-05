@@ -24,7 +24,7 @@ public abstract class b extends Binder implements IInterface {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void f(Parcel parcel) {
-        int i10 = c.f31555a;
+        int i10 = c.f30904a;
         int dataAvail = parcel.dataAvail();
         if (dataAvail <= 0) {
             return;

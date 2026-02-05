@@ -60,7 +60,7 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager
     @NotNull
     public Map<String, Object> getExportedCustomDirectEventTypeConstants() {
-        return kotlin.collections.o0.n(lr.v.a("topDismissed", MapBuilder.of("registrationName", "onDismissed")), lr.v.a("topWillAppear", MapBuilder.of("registrationName", "onWillAppear")), lr.v.a("topAppear", MapBuilder.of("registrationName", "onAppear")), lr.v.a("topWillDisappear", MapBuilder.of("registrationName", "onWillDisappear")), lr.v.a("topDisappear", MapBuilder.of("registrationName", "onDisappear")), lr.v.a("topHeaderHeightChange", MapBuilder.of("registrationName", "onHeaderHeightChange")), lr.v.a("topHeaderBackButtonClicked", MapBuilder.of("registrationName", "onHeaderBackButtonClicked")), lr.v.a("topTransitionProgress", MapBuilder.of("registrationName", "onTransitionProgress")), lr.v.a("topSheetDetentChanged", MapBuilder.of("registrationName", "onSheetDetentChanged")));
+        return kotlin.collections.o0.n(or.v.a("topDismissed", MapBuilder.of("registrationName", "onDismissed")), or.v.a("topWillAppear", MapBuilder.of("registrationName", "onWillAppear")), or.v.a("topAppear", MapBuilder.of("registrationName", "onAppear")), or.v.a("topWillDisappear", MapBuilder.of("registrationName", "onWillDisappear")), or.v.a("topDisappear", MapBuilder.of("registrationName", "onDisappear")), or.v.a("topHeaderHeightChange", MapBuilder.of("registrationName", "onHeaderHeightChange")), or.v.a("topHeaderBackButtonClicked", MapBuilder.of("registrationName", "onHeaderBackButtonClicked")), or.v.a("topTransitionProgress", MapBuilder.of("registrationName", "onTransitionProgress")), or.v.a("topSheetDetentChanged", MapBuilder.of("registrationName", "onSheetDetentChanged")));
     }
 
     @Override // com.facebook.react.uimanager.ViewManager, com.facebook.react.bridge.NativeModule
@@ -152,8 +152,8 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
     }
 
     @Override // com.facebook.react.viewmanagers.RNSScreenManagerInterface
+    @or.c
     @ReactProp(customType = "Color", name = "navigationBarColor")
-    @lr.c
     public void setNavigationBarColor(@NotNull Screen view, Integer num) {
         Intrinsics.checkNotNullParameter(view, "view");
         view.setNavigationBarColor(num);
@@ -167,8 +167,8 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
     }
 
     @Override // com.facebook.react.viewmanagers.RNSScreenManagerInterface
+    @or.c
     @ReactProp(name = "navigationBarTranslucent")
-    @lr.c
     public void setNavigationBarTranslucent(@NotNull Screen view, boolean z10) {
         Intrinsics.checkNotNullParameter(view, "view");
         view.setNavigationBarTranslucent(Boolean.valueOf(z10));
@@ -183,9 +183,9 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
             if (!Intrinsics.areEqual(str, "push")) {
                 throw new JSApplicationIllegalArgumentException("Unknown replace animation type " + str);
             }
-            replaceAnimation = Screen.ReplaceAnimation.f17762d;
+            replaceAnimation = Screen.ReplaceAnimation.f18168d;
         } else {
-            replaceAnimation = Screen.ReplaceAnimation.f17763e;
+            replaceAnimation = Screen.ReplaceAnimation.f18169e;
         }
         view.setReplaceAnimation(replaceAnimation);
     }
@@ -203,7 +203,7 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
         Intrinsics.checkNotNullParameter(view, "view");
         view.getSheetDetents().clear();
         if (readableArray != null && readableArray.size() != 0) {
-            kotlin.sequences.k.X(kotlin.sequences.k.R(CollectionsKt.b0(kotlin.ranges.a.f32558o.a(0, readableArray.size() - 1, 1)), new Function1() { // from class: com.swmansion.rnscreens.r0
+            kotlin.sequences.k.X(kotlin.sequences.k.R(CollectionsKt.b0(kotlin.ranges.a.f32082o.a(0, readableArray.size() - 1, 1)), new Function1() { // from class: com.swmansion.rnscreens.r0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     double d10;
@@ -305,7 +305,7 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
             java.lang.String r0 = "slide_from_bottom"
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L86
-            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f17769o
+            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f18175o
             goto L9f
         L1c:
             java.lang.String r0 = "default"
@@ -316,19 +316,19 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
             java.lang.String r0 = "ios_from_right"
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L86
-            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f17773s
+            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f18179s
             goto L9f
         L32:
             java.lang.String r0 = "fade_from_bottom"
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L86
-            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f17772r
+            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f18178r
             goto L9f
         L3d:
             java.lang.String r0 = "none"
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L86
-            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f17767e
+            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f18173e
             goto L9f
         L48:
             java.lang.String r0 = "flip"
@@ -339,25 +339,25 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
             java.lang.String r0 = "fade"
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L86
-            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f17768i
+            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f18174i
             goto L9f
         L5c:
             java.lang.String r0 = "slide_from_right"
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L86
-            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f17770p
+            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f18176p
             goto L9f
         L67:
             java.lang.String r0 = "slide_from_left"
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L86
-            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f17771q
+            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f18177q
             goto L9f
         L72:
             java.lang.String r0 = "ios_from_left"
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L86
-            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f17774t
+            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f18180t
             goto L9f
         L7d:
             java.lang.String r0 = "simple_push"
@@ -375,7 +375,7 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
             r3.<init>(r4)
             throw r3
         L9d:
-            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f17766d
+            com.swmansion.rnscreens.Screen$StackAnimation r4 = com.swmansion.rnscreens.Screen.StackAnimation.f18172d
         L9f:
             r3.setStackAnimation(r4)
             return
@@ -399,13 +399,13 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
         if (r4.equals("modal") != false) goto L13;
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x0046, code lost:
-        r4 = com.swmansion.rnscreens.Screen.StackPresentation.f17778e;
+        r4 = com.swmansion.rnscreens.Screen.StackPresentation.f18184e;
      */
     /* JADX WARN: Code restructure failed: missing block: B:29:0x005a, code lost:
         if (r4.equals("transparentModal") != false) goto L16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:30:0x005c, code lost:
-        r4 = com.swmansion.rnscreens.Screen.StackPresentation.f17779i;
+        r4 = com.swmansion.rnscreens.Screen.StackPresentation.f18185i;
      */
     @Override // com.facebook.react.viewmanagers.RNSScreenManagerInterface
     @com.facebook.react.uimanager.annotations.ReactProp(name = "stackPresentation")
@@ -437,7 +437,7 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
             java.lang.String r0 = "formSheet"
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L62
-            com.swmansion.rnscreens.Screen$StackPresentation r4 = com.swmansion.rnscreens.Screen.StackPresentation.f17780o
+            com.swmansion.rnscreens.Screen$StackPresentation r4 = com.swmansion.rnscreens.Screen.StackPresentation.f18186o
             goto L5e
         L1a:
             java.lang.String r0 = "fullScreenModal"
@@ -464,20 +464,20 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L62
         L46:
-            com.swmansion.rnscreens.Screen$StackPresentation r4 = com.swmansion.rnscreens.Screen.StackPresentation.f17778e
+            com.swmansion.rnscreens.Screen$StackPresentation r4 = com.swmansion.rnscreens.Screen.StackPresentation.f18184e
             goto L5e
         L49:
             java.lang.String r0 = "push"
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L62
-            com.swmansion.rnscreens.Screen$StackPresentation r4 = com.swmansion.rnscreens.Screen.StackPresentation.f17777d
+            com.swmansion.rnscreens.Screen$StackPresentation r4 = com.swmansion.rnscreens.Screen.StackPresentation.f18183d
             goto L5e
         L54:
             java.lang.String r0 = "transparentModal"
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L62
         L5c:
-            com.swmansion.rnscreens.Screen$StackPresentation r4 = com.swmansion.rnscreens.Screen.StackPresentation.f17779i
+            com.swmansion.rnscreens.Screen$StackPresentation r4 = com.swmansion.rnscreens.Screen.StackPresentation.f18185i
         L5e:
             r3.setStackPresentation(r4)
             return
@@ -503,8 +503,8 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
     }
 
     @Override // com.facebook.react.viewmanagers.RNSScreenManagerInterface
+    @or.c
     @ReactProp(customType = "Color", name = "statusBarColor")
-    @lr.c
     public void setStatusBarColor(@NotNull Screen view, Integer num) {
         Intrinsics.checkNotNullParameter(view, "view");
         view.setStatusBarColor(num);
@@ -525,8 +525,8 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
     }
 
     @Override // com.facebook.react.viewmanagers.RNSScreenManagerInterface
+    @or.c
     @ReactProp(name = "statusBarTranslucent")
-    @lr.c
     public void setStatusBarTranslucent(@NotNull Screen view, boolean z10) {
         Intrinsics.checkNotNullParameter(view, "view");
         view.setStatusBarTranslucent(Boolean.valueOf(z10));
@@ -567,12 +567,12 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
             return;
         }
         if (i10 == 0) {
-            view.setActivityState(Screen.ActivityState.f17757d);
+            view.setActivityState(Screen.ActivityState.f18163d);
         } else if (i10 == 1) {
-            view.setActivityState(Screen.ActivityState.f17758e);
+            view.setActivityState(Screen.ActivityState.f18164e);
         } else if (i10 != 2) {
         } else {
-            view.setActivityState(Screen.ActivityState.f17759i);
+            view.setActivityState(Screen.ActivityState.f18165i);
         }
     }
 }

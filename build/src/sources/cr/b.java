@@ -1,45 +1,43 @@
 package cr;
 
-import android.graphics.Bitmap;
-import java.io.File;
+import java.util.List;
+import kotlin.Result;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.Regex;
+import kotlin.text.StringsKt;
+import vv.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements a {
+public interface b {
 
-    /* renamed from: a  reason: collision with root package name */
-    private boolean f19807a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        private static String a(b bVar, String str, String str2, Function2 function2) {
+            Double p10;
+            if (!new Regex("%[\\d|.]*[f]").i(str) || (p10 = StringsKt.p(str2)) == null) {
+                return null;
+            }
+            return (String) function2.invoke(str, Double.valueOf(p10.doubleValue()));
+        }
 
-    /* renamed from: b  reason: collision with root package name */
-    private final int f19808b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final int f19809c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Bitmap.CompressFormat f19810d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final int f19811e;
-
-    public b(int i10, int i11, Bitmap.CompressFormat format, int i12) {
-        Intrinsics.checkParameterIsNotNull(format, "format");
-        this.f19808b = i10;
-        this.f19809c = i11;
-        this.f19810d = format;
-        this.f19811e = i12;
-    }
-
-    @Override // cr.a
-    public boolean isSatisfied(File imageFile) {
-        Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
-        return this.f19807a;
-    }
-
-    @Override // cr.a
-    public File satisfy(File imageFile) {
-        Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
-        File j10 = br.c.j(imageFile, br.c.f(imageFile, br.c.e(imageFile, this.f19808b, this.f19809c)), this.f19810d, this.f19811e);
-        this.f19807a = true;
-        return j10;
+        public static String b(b bVar, Object obj, Object obj2, Function2 formatFloatingPoint) {
+            Object b10;
+            Intrinsics.checkNotNullParameter(formatFloatingPoint, "formatFloatingPoint");
+            List c10 = vv.a.c(obj);
+            String valueOf = String.valueOf(CollectionsKt.firstOrNull(c10));
+            String valueOf2 = String.valueOf(c.b(c10));
+            try {
+                Result.a aVar = Result.f31985e;
+                b10 = Result.b(a(bVar, valueOf, valueOf2, formatFloatingPoint));
+            } catch (Throwable th2) {
+                Result.a aVar2 = Result.f31985e;
+                b10 = Result.b(kotlin.c.a(th2));
+            }
+            if (Result.e(b10) == null) {
+                return (String) b10;
+            }
+            return null;
+        }
     }
 }

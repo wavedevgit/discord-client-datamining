@@ -23,7 +23,7 @@ public final class TraceTransaction {
     static {
         TraceTransaction[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = sr.a.a($values);
+        $ENTRIES = vr.a.a($values);
     }
 
     private TraceTransaction(String str, int i10, String str2, String str3) {

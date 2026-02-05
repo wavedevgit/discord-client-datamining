@@ -41,18 +41,18 @@ public final class AttributeStyles_HorizontalStackChildSizesStyleJsonAdapter ext
     @NotNull
     public AttributeStyles.HorizontalStackChildSizesStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.ChildSizes childSizes = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 childSizes = (StyleElements.ChildSizes) this.nullableChildSizesAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.HorizontalStackChildSizesStyle(childSizes);
     }
 
@@ -60,8 +60,8 @@ public final class AttributeStyles_HorizontalStackChildSizesStyleJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.HorizontalStackChildSizesStyle horizontalStackChildSizesStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (horizontalStackChildSizesStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableChildSizesAdapter.toJson(writer, horizontalStackChildSizesStyle.getBase());
             writer.E();
             return;

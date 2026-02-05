@@ -56,7 +56,7 @@ public final class ShortcutData {
                     c10.add(value);
                 }
             }
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
             Intent putExtra2 = putExtra.putExtra(ShortcutData.KEY_DATA, (String[]) CollectionsKt.a(c10).toArray(new String[0]));
             Intrinsics.checkNotNullExpressionValue(putExtra2, "putExtra(...)");
             return putExtra2;

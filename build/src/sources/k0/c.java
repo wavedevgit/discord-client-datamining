@@ -18,20 +18,20 @@ import x.z;
 public final class c extends x {
 
     /* renamed from: n  reason: collision with root package name */
-    private int f32049n = -1;
+    private int f31512n = -1;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f32050o = -1;
+    private int f31513o = -1;
 
     /* renamed from: p  reason: collision with root package name */
-    private final x0 f32051p;
+    private final x0 f31514p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final x0 f32052q;
+    private final x0 f31515q;
 
     public c(x0 x0Var, x0 x0Var2) {
-        this.f32051p = x0Var;
-        this.f32052q = x0Var2;
+        this.f31514p = x0Var;
+        this.f31515q = x0Var2;
     }
 
     private static float[] u(Size size, Size size2, x0 x0Var) {
@@ -52,7 +52,7 @@ public final class c extends x {
         surfaceTexture.getTransformMatrix(fArr);
         float[] fArr2 = new float[16];
         l1Var.M(fArr2, fArr, z10);
-        d.f fVar = (d.f) b2.e.g(this.f31359k);
+        d.f fVar = (d.f) b2.e.g(this.f30708k);
         if (fVar instanceof d.g) {
             ((d.g) fVar).h(fArr2);
         }
@@ -68,50 +68,50 @@ public final class c extends x {
     @Override // j0.x
     public l0.e h(z zVar, Map map) {
         l0.e h10 = super.h(zVar, map);
-        this.f32049n = l0.d.p();
-        this.f32050o = l0.d.p();
+        this.f31512n = l0.d.p();
+        this.f31513o = l0.d.p();
         return h10;
     }
 
     @Override // j0.x
     public void k() {
         super.k();
-        this.f32049n = -1;
-        this.f32050o = -1;
+        this.f31512n = -1;
+        this.f31513o = -1;
     }
 
     public int t(boolean z10) {
-        l0.d.i(this.f31349a, true);
-        l0.d.h(this.f31351c);
+        l0.d.i(this.f30698a, true);
+        l0.d.h(this.f30700c);
         if (z10) {
-            return this.f32049n;
+            return this.f31512n;
         }
-        return this.f32050o;
+        return this.f31513o;
     }
 
     public void v(long j10, Surface surface, l1 l1Var, SurfaceTexture surfaceTexture, SurfaceTexture surfaceTexture2) {
-        l0.d.i(this.f31349a, true);
-        l0.d.h(this.f31351c);
+        l0.d.i(this.f30698a, true);
+        l0.d.h(this.f30700c);
         l0.g f10 = f(surface);
-        if (f10 == l0.d.f36294l) {
+        if (f10 == l0.d.f36221l) {
             f10 = c(surface);
             if (f10 != null) {
-                this.f31350b.put(surface, f10);
+                this.f30699b.put(surface, f10);
             } else {
                 return;
             }
         }
         l0.g gVar = f10;
-        if (surface != this.f31357i) {
+        if (surface != this.f30706i) {
             i(gVar.a());
-            this.f31357i = surface;
+            this.f30706i = surface;
         }
         GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         GLES20.glClear(16384);
-        w(gVar, l1Var, surfaceTexture, this.f32051p, this.f32049n, true);
-        w(gVar, l1Var, surfaceTexture2, this.f32052q, this.f32050o, true);
-        EGLExt.eglPresentationTimeANDROID(this.f31352d, gVar.a(), j10);
-        if (!EGL14.eglSwapBuffers(this.f31352d, gVar.a())) {
+        w(gVar, l1Var, surfaceTexture, this.f31514p, this.f31512n, true);
+        w(gVar, l1Var, surfaceTexture2, this.f31515q, this.f31513o, true);
+        EGLExt.eglPresentationTimeANDROID(this.f30701d, gVar.a(), j10);
+        if (!EGL14.eglSwapBuffers(this.f30701d, gVar.a())) {
             y0.l("DualOpenGlRenderer", "Failed to swap buffers with EGL error: 0x" + Integer.toHexString(EGL14.eglGetError()));
             m(surface, false);
         }

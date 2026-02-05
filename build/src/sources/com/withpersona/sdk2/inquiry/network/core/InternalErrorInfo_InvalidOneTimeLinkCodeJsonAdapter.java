@@ -30,29 +30,29 @@ public final class InternalErrorInfo_InvalidOneTimeLinkCodeJsonAdapter extends h
     @Override // com.squareup.moshi.h
     @NotNull
     public InternalErrorInfo.InvalidOneTimeLinkCode fromJson(@NotNull m mVar) {
-        mVar.r();
+        mVar.s();
         String str = null;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
+            int W = mVar.W(this.options);
+            if (W == -1) {
                 mVar.E0();
                 mVar.P();
-            } else if (A0 == 0 && (str = (String) this.stringAdapter.fromJson(mVar)) == null) {
-                throw vm.c.x("oneTimeLinkCode", "oneTimeLinkCode", mVar);
+            } else if (W == 0 && (str = (String) this.stringAdapter.fromJson(mVar)) == null) {
+                throw ym.c.x("oneTimeLinkCode", "oneTimeLinkCode", mVar);
             }
         }
-        mVar.y();
+        mVar.z();
         if (str != null) {
             return new InternalErrorInfo.InvalidOneTimeLinkCode(str);
         }
-        throw vm.c.o("oneTimeLinkCode", "oneTimeLinkCode", mVar);
+        throw ym.c.o("oneTimeLinkCode", "oneTimeLinkCode", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, InternalErrorInfo.InvalidOneTimeLinkCode invalidOneTimeLinkCode) {
         if (invalidOneTimeLinkCode != null) {
-            tVar.l();
-            tVar.A0("oneTimeLinkCode");
+            tVar.k();
+            tVar.W("oneTimeLinkCode");
             this.stringAdapter.toJson(tVar, invalidOneTimeLinkCode.getOneTimeLinkCode());
             tVar.E();
             return;

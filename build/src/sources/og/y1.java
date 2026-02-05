@@ -7,83 +7,83 @@ import java.nio.ByteOrder;
 import java.nio.charset.Charset;
 import java.util.Collection;
 import java.util.Map;
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class y1 implements ui.e {
+final class y1 implements xi.e {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Charset f43693f = Charset.forName("UTF-8");
+    private static final Charset f43599f = Charset.forName("UTF-8");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f43694g;
+    private static final xi.c f43600g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ui.c f43695h;
+    private static final xi.c f43601h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final ui.d f43696i;
+    private static final xi.d f43602i;
 
     /* renamed from: a  reason: collision with root package name */
-    private OutputStream f43697a;
+    private OutputStream f43603a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f43698b;
+    private final Map f43604b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f43699c;
+    private final Map f43605c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ui.d f43700d;
+    private final xi.d f43606d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final d2 f43701e = new d2(this);
+    private final d2 f43607e = new d2(this);
 
     static {
-        c.b a10 = ui.c.a("key");
+        c.b a10 = xi.c.a("key");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43694g = a10.b(s1Var.b()).a();
-        c.b a11 = ui.c.a("value");
+        f43600g = a10.b(s1Var.b()).a();
+        c.b a11 = xi.c.a("value");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43695h = a11.b(s1Var2.b()).a();
-        f43696i = new ui.d() { // from class: og.x1
-            @Override // ui.d
+        f43601h = a11.b(s1Var2.b()).a();
+        f43602i = new xi.d() { // from class: og.x1
+            @Override // xi.d
             public final void a(Object obj, Object obj2) {
-                y1.j((Map.Entry) obj, (ui.e) obj2);
+                y1.j((Map.Entry) obj, (xi.e) obj2);
             }
         };
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public y1(OutputStream outputStream, Map map, Map map2, ui.d dVar) {
-        this.f43697a = outputStream;
-        this.f43698b = map;
-        this.f43699c = map2;
-        this.f43700d = dVar;
+    public y1(OutputStream outputStream, Map map, Map map2, xi.d dVar) {
+        this.f43603a = outputStream;
+        this.f43604b = map;
+        this.f43605c = map2;
+        this.f43606d = dVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* synthetic */ void j(Map.Entry entry, ui.e eVar) {
-        eVar.b(f43694g, entry.getKey());
-        eVar.b(f43695h, entry.getValue());
+    public static /* synthetic */ void j(Map.Entry entry, xi.e eVar) {
+        eVar.d(f43600g, entry.getKey());
+        eVar.d(f43601h, entry.getValue());
     }
 
-    private static int k(ui.c cVar) {
+    private static int k(xi.c cVar) {
         w1 w1Var = (w1) cVar.c(w1.class);
         if (w1Var != null) {
             return w1Var.zza();
         }
-        throw new ui.b("Field has no @Protobuf config");
+        throw new xi.b("Field has no @Protobuf config");
     }
 
-    private final long l(ui.d dVar, Object obj) {
+    private final long l(xi.d dVar, Object obj) {
         t1 t1Var = new t1();
         try {
-            OutputStream outputStream = this.f43697a;
-            this.f43697a = t1Var;
+            OutputStream outputStream = this.f43603a;
+            this.f43603a = t1Var;
             dVar.a(obj, this);
-            this.f43697a = outputStream;
+            this.f43603a = outputStream;
             long a10 = t1Var.a();
             t1Var.close();
             return a10;
@@ -100,15 +100,15 @@ final class y1 implements ui.e {
         }
     }
 
-    private static w1 m(ui.c cVar) {
+    private static w1 m(xi.c cVar) {
         w1 w1Var = (w1) cVar.c(w1.class);
         if (w1Var != null) {
             return w1Var;
         }
-        throw new ui.b("Field has no @Protobuf config");
+        throw new xi.b("Field has no @Protobuf config");
     }
 
-    private final y1 n(ui.d dVar, ui.c cVar, Object obj, boolean z10) {
+    private final y1 n(xi.d dVar, xi.c cVar, Object obj, boolean z10) {
         long l10 = l(dVar, obj);
         if (z10 && l10 == 0) {
             return this;
@@ -119,9 +119,9 @@ final class y1 implements ui.e {
         return this;
     }
 
-    private final y1 o(ui.f fVar, ui.c cVar, Object obj, boolean z10) {
-        this.f43701e.b(cVar, z10);
-        fVar.a(obj, this.f43701e);
+    private final y1 o(xi.f fVar, xi.c cVar, Object obj, boolean z10) {
+        this.f43607e.b(cVar, z10);
+        fVar.a(obj, this.f43607e);
         return this;
     }
 
@@ -131,66 +131,66 @@ final class y1 implements ui.e {
 
     private final void q(int i10) {
         while ((i10 & (-128)) != 0) {
-            this.f43697a.write((i10 & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            this.f43603a.write((i10 & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
             i10 >>>= 7;
         }
-        this.f43697a.write(i10 & 127);
+        this.f43603a.write(i10 & 127);
     }
 
     private final void r(long j10) {
         while (((-128) & j10) != 0) {
-            this.f43697a.write((((int) j10) & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            this.f43603a.write((((int) j10) & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
             j10 >>>= 7;
         }
-        this.f43697a.write(((int) j10) & 127);
+        this.f43603a.write(((int) j10) & 127);
     }
 
-    final ui.e a(ui.c cVar, double d10, boolean z10) {
+    final xi.e a(xi.c cVar, double d10, boolean z10) {
         if (z10 && d10 == 0.0d) {
             return this;
         }
         q((k(cVar) << 3) | 1);
-        this.f43697a.write(p(8).putDouble(d10).array());
+        this.f43603a.write(p(8).putDouble(d10).array());
         return this;
     }
 
-    @Override // ui.e
-    public final ui.e b(ui.c cVar, Object obj) {
-        f(cVar, obj, true);
-        return this;
-    }
-
-    final ui.e c(ui.c cVar, float f10, boolean z10) {
-        if (z10 && f10 == 0.0f) {
-            return this;
-        }
-        q((k(cVar) << 3) | 5);
-        this.f43697a.write(p(4).putFloat(f10).array());
-        return this;
-    }
-
-    @Override // ui.e
-    public final /* synthetic */ ui.e d(ui.c cVar, long j10) {
-        h(cVar, j10, true);
-        return this;
-    }
-
-    @Override // ui.e
-    public final /* synthetic */ ui.e e(ui.c cVar, int i10) {
+    @Override // xi.e
+    public final /* synthetic */ xi.e b(xi.c cVar, int i10) {
         g(cVar, i10, true);
         return this;
     }
 
+    @Override // xi.e
+    public final /* synthetic */ xi.e c(xi.c cVar, long j10) {
+        h(cVar, j10, true);
+        return this;
+    }
+
+    @Override // xi.e
+    public final xi.e d(xi.c cVar, Object obj) {
+        f(cVar, obj, true);
+        return this;
+    }
+
+    final xi.e e(xi.c cVar, float f10, boolean z10) {
+        if (z10 && f10 == 0.0f) {
+            return this;
+        }
+        q((k(cVar) << 3) | 5);
+        this.f43603a.write(p(4).putFloat(f10).array());
+        return this;
+    }
+
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final ui.e f(ui.c cVar, Object obj, boolean z10) {
+    public final xi.e f(xi.c cVar, Object obj, boolean z10) {
         if (obj != null) {
             if (obj instanceof CharSequence) {
                 CharSequence charSequence = (CharSequence) obj;
                 if (!z10 || charSequence.length() != 0) {
                     q((k(cVar) << 3) | 2);
-                    byte[] bytes = charSequence.toString().getBytes(f43693f);
+                    byte[] bytes = charSequence.toString().getBytes(f43599f);
                     q(bytes.length);
-                    this.f43697a.write(bytes);
+                    this.f43603a.write(bytes);
                     return this;
                 }
             } else if (obj instanceof Collection) {
@@ -199,13 +199,13 @@ final class y1 implements ui.e {
                 }
             } else if (obj instanceof Map) {
                 for (Map.Entry entry : ((Map) obj).entrySet()) {
-                    n(f43696i, cVar, entry, false);
+                    n(f43602i, cVar, entry, false);
                 }
             } else if (obj instanceof Double) {
                 a(cVar, ((Double) obj).doubleValue(), z10);
                 return this;
             } else if (obj instanceof Float) {
-                c(cVar, ((Float) obj).floatValue(), z10);
+                e(cVar, ((Float) obj).floatValue(), z10);
                 return this;
             } else if (obj instanceof Number) {
                 h(cVar, ((Number) obj).longValue(), z10);
@@ -218,16 +218,16 @@ final class y1 implements ui.e {
                 if (!z10 || bArr.length != 0) {
                     q((k(cVar) << 3) | 2);
                     q(bArr.length);
-                    this.f43697a.write(bArr);
+                    this.f43603a.write(bArr);
                     return this;
                 }
             } else {
-                ui.d dVar = (ui.d) this.f43698b.get(obj.getClass());
+                xi.d dVar = (xi.d) this.f43604b.get(obj.getClass());
                 if (dVar != null) {
                     n(dVar, cVar, obj, z10);
                     return this;
                 }
-                ui.f fVar = (ui.f) this.f43699c.get(obj.getClass());
+                xi.f fVar = (xi.f) this.f43605c.get(obj.getClass());
                 if (fVar != null) {
                     o(fVar, cVar, obj, z10);
                     return this;
@@ -238,7 +238,7 @@ final class y1 implements ui.e {
                     g(cVar, ((Enum) obj).ordinal(), true);
                     return this;
                 } else {
-                    n(this.f43700d, cVar, obj, z10);
+                    n(this.f43606d, cVar, obj, z10);
                     return this;
                 }
             }
@@ -247,7 +247,7 @@ final class y1 implements ui.e {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final y1 g(ui.c cVar, int i10, boolean z10) {
+    public final y1 g(xi.c cVar, int i10, boolean z10) {
         if (!z10 || i10 != 0) {
             w1 m10 = m(cVar);
             v1 v1Var = v1.DEFAULT;
@@ -256,7 +256,7 @@ final class y1 implements ui.e {
                 if (ordinal != 1) {
                     if (ordinal == 2) {
                         q((m10.zza() << 3) | 5);
-                        this.f43697a.write(p(4).putInt(i10).array());
+                        this.f43603a.write(p(4).putInt(i10).array());
                         return this;
                     }
                 } else {
@@ -273,7 +273,7 @@ final class y1 implements ui.e {
         return this;
     }
 
-    final y1 h(ui.c cVar, long j10, boolean z10) {
+    final y1 h(xi.c cVar, long j10, boolean z10) {
         if (!z10 || j10 != 0) {
             w1 m10 = m(cVar);
             v1 v1Var = v1.DEFAULT;
@@ -282,7 +282,7 @@ final class y1 implements ui.e {
                 if (ordinal != 1) {
                     if (ordinal == 2) {
                         q((m10.zza() << 3) | 1);
-                        this.f43697a.write(p(8).putLong(j10).array());
+                        this.f43603a.write(p(8).putLong(j10).array());
                         return this;
                     }
                 } else {
@@ -304,11 +304,11 @@ final class y1 implements ui.e {
         if (obj == null) {
             return this;
         }
-        ui.d dVar = (ui.d) this.f43698b.get(obj.getClass());
+        xi.d dVar = (xi.d) this.f43604b.get(obj.getClass());
         if (dVar != null) {
             dVar.a(obj, this);
             return this;
         }
-        throw new ui.b("No encoder for ".concat(String.valueOf(obj.getClass())));
+        throw new xi.b("No encoder for ".concat(String.valueOf(obj.getClass())));
     }
 }

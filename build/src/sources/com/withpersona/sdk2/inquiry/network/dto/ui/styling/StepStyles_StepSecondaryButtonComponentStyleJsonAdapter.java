@@ -40,21 +40,21 @@ public final class StepStyles_StepSecondaryButtonComponentStyleJsonAdapter exten
     @NotNull
     public StepStyles.StepSecondaryButtonComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StepStyles.StepCancelButtonComponentStyleContainer stepCancelButtonComponentStyleContainer = null;
         StepStyles.StepCancelButtonComponentStyleContainer stepCancelButtonComponentStyleContainer2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 stepCancelButtonComponentStyleContainer = (StepStyles.StepCancelButtonComponentStyleContainer) this.nullableStepCancelButtonComponentStyleContainerAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 stepCancelButtonComponentStyleContainer2 = (StepStyles.StepCancelButtonComponentStyleContainer) this.nullableStepCancelButtonComponentStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.StepSecondaryButtonComponentStyle(stepCancelButtonComponentStyleContainer, stepCancelButtonComponentStyleContainer2);
     }
 
@@ -62,10 +62,10 @@ public final class StepStyles_StepSecondaryButtonComponentStyleJsonAdapter exten
     public void toJson(@NotNull t writer, StepStyles.StepSecondaryButtonComponentStyle stepSecondaryButtonComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepSecondaryButtonComponentStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableStepCancelButtonComponentStyleContainerAdapter.toJson(writer, stepSecondaryButtonComponentStyle.getBase());
-            writer.A0("cancelDialogResume");
+            writer.W("cancelDialogResume");
             this.nullableStepCancelButtonComponentStyleContainerAdapter.toJson(writer, stepSecondaryButtonComponentStyle.getCancelDialogResume());
             writer.E();
             return;

@@ -3,5 +3,5 @@ package k5;
 public interface t {
     void a(String str, int i10, String str2, Throwable th2);
 
-    int m();
+    int o();
 }

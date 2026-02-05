@@ -1,7 +1,17 @@
 package lv;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface f {
-    void a(d dVar, z zVar);
+public abstract class f {
+    public static f c() {
+        return null;
+    }
 
-    void b(d dVar, Throwable th2);
+    public static f d(d... dVarArr) {
+        return new gv.d(dVarArr);
+    }
+
+    public abstract f a(int i10);
+
+    public abstract f b(int i10);
+
+    public abstract f e();
 }

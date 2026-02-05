@@ -28,10 +28,10 @@ public abstract class InquiryField implements Parcelable {
 
         @NotNull
         public final h.e createAdapter() {
-            um.b b10 = um.b.b(InquiryField.class, "type");
+            xm.b b10 = xm.b.b(InquiryField.class, "type");
             UnknownAdapter unknownAdapter = UnknownAdapter.INSTANCE;
             Intrinsics.checkNotNull(unknownAdapter, "null cannot be cast to non-null type com.squareup.moshi.JsonAdapter<kotlin.Any>");
-            um.b e10 = b10.d(unknownAdapter).e(StringField.class, StringField.TYPE).e(IntegerField.class, IntegerField.TYPE).e(BooleanField.class, BooleanField.TYPE).e(FloatField.class, FloatField.TYPE).e(FloatField.class, FloatField.TYPE2).e(DateField.class, DateField.TYPE).e(DatetimeField.class, DatetimeField.TYPE).e(ChoicesField.class, ChoicesField.TYPE).e(MultiChoicesField.class, MultiChoicesField.TYPE);
+            xm.b e10 = b10.d(unknownAdapter).e(StringField.class, StringField.TYPE).e(IntegerField.class, IntegerField.TYPE).e(BooleanField.class, BooleanField.TYPE).e(FloatField.class, FloatField.TYPE).e(FloatField.class, FloatField.TYPE2).e(DateField.class, DateField.TYPE).e(DatetimeField.class, DatetimeField.TYPE).e(ChoicesField.class, ChoicesField.TYPE).e(MultiChoicesField.class, MultiChoicesField.TYPE);
             Intrinsics.checkNotNullExpressionValue(e10, "withSubtype(...)");
             return e10;
         }
@@ -103,24 +103,24 @@ public abstract class InquiryField implements Parcelable {
         @NotNull
         public InquiryField fromJson(@NotNull m reader) {
             Intrinsics.checkNotNullParameter(reader, "reader");
-            reader.r();
+            reader.s();
             String str = "";
             while (reader.hasNext()) {
-                if (Intrinsics.areEqual(reader.l0(), "type")) {
+                if (Intrinsics.areEqual(reader.m0(), "type")) {
                     str = reader.f1();
                 } else {
                     reader.P();
                 }
             }
-            reader.y();
+            reader.z();
             return new Unknown(str);
         }
 
         @Override // com.squareup.moshi.h
         public void toJson(@NotNull t writer, InquiryField inquiryField) {
             Intrinsics.checkNotNullParameter(writer, "writer");
-            writer.l();
-            writer.A0("type");
+            writer.k();
+            writer.W("type");
             writer.x1(inquiryField != null ? inquiryField.getType() : null);
             writer.E();
         }

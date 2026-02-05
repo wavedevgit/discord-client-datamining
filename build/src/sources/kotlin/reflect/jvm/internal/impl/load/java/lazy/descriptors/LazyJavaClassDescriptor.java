@@ -88,28 +88,28 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
     private final NotNullLazyValue H;
 
     /* renamed from: s  reason: collision with root package name */
-    private final LazyJavaResolverContext f33365s;
+    private final LazyJavaResolverContext f32889s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final JavaClass f33366t;
+    private final JavaClass f32890t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final ClassDescriptor f33367u;
+    private final ClassDescriptor f32891u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final LazyJavaResolverContext f33368v;
+    private final LazyJavaResolverContext f32892v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Lazy f33369w;
+    private final Lazy f32893w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final ClassKind f33370x;
+    private final ClassKind f32894x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Modality f33371y;
+    private final Modality f32895y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final Visibility f33372z;
+    private final Visibility f32896z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -126,11 +126,11 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
     public final class a extends AbstractClassTypeConstructor {
 
         /* renamed from: d  reason: collision with root package name */
-        private final NotNullLazyValue f33373d;
+        private final NotNullLazyValue f32897d;
 
         public a() {
-            super(LazyJavaClassDescriptor.this.f33368v.getStorageManager());
-            this.f33373d = LazyJavaClassDescriptor.this.f33368v.getStorageManager().createLazyValue(new i(LazyJavaClassDescriptor.this));
+            super(LazyJavaClassDescriptor.this.f32892v.getStorageManager());
+            this.f32897d = LazyJavaClassDescriptor.this.f32892v.getStorageManager().createLazyValue(new i(LazyJavaClassDescriptor.this));
         }
 
         private final KotlinType C() {
@@ -146,7 +146,7 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
             } else {
                 fqName = D;
             }
-            ClassDescriptor resolveTopLevelClass = DescriptorUtilsKt.resolveTopLevelClass(LazyJavaClassDescriptor.this.f33368v.getModule(), fqName, NoLookupLocation.FROM_JAVA_LOADER);
+            ClassDescriptor resolveTopLevelClass = DescriptorUtilsKt.resolveTopLevelClass(LazyJavaClassDescriptor.this.f32892v.getModule(), fqName, NoLookupLocation.FROM_JAVA_LOADER);
             if (resolveTopLevelClass == null) {
                 return null;
             }
@@ -182,11 +182,11 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
             Annotations annotations = LazyJavaClassDescriptor.this.getAnnotations();
             FqName PURELY_IMPLEMENTS_ANNOTATION = JvmAnnotationNames.PURELY_IMPLEMENTS_ANNOTATION;
             Intrinsics.checkNotNullExpressionValue(PURELY_IMPLEMENTS_ANNOTATION, "PURELY_IMPLEMENTS_ANNOTATION");
-            AnnotationDescriptor mo1193findAnnotation = annotations.mo1193findAnnotation(PURELY_IMPLEMENTS_ANNOTATION);
-            if (mo1193findAnnotation == null) {
+            AnnotationDescriptor mo1195findAnnotation = annotations.mo1195findAnnotation(PURELY_IMPLEMENTS_ANNOTATION);
+            if (mo1195findAnnotation == null) {
                 return null;
             }
-            Object R0 = CollectionsKt.R0(mo1193findAnnotation.getAllValueArguments().values());
+            Object R0 = CollectionsKt.R0(mo1195findAnnotation.getAllValueArguments().values());
             if (R0 instanceof StringValue) {
                 stringValue = (StringValue) R0;
             } else {
@@ -205,7 +205,7 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
 
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
         public List getParameters() {
-            return (List) this.f33373d.invoke();
+            return (List) this.f32897d.invoke();
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -228,8 +228,8 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
                     break;
                 }
                 JavaClassifierType next = it.next();
-                KotlinType enhanceSuperType = LazyJavaClassDescriptor.this.f33368v.getComponents().getSignatureEnhancement().enhanceSuperType(LazyJavaClassDescriptor.this.f33368v.getTypeResolver().transformJavaType(next, JavaTypeAttributesKt.toAttributes$default(TypeUsage.SUPERTYPE, false, false, null, 7, null)), LazyJavaClassDescriptor.this.f33368v);
-                if (enhanceSuperType.getConstructor().mo1197getDeclarationDescriptor() instanceof NotFoundClasses.MockClassDescriptor) {
+                KotlinType enhanceSuperType = LazyJavaClassDescriptor.this.f32892v.getComponents().getSignatureEnhancement().enhanceSuperType(LazyJavaClassDescriptor.this.f32892v.getTypeResolver().transformJavaType(next, JavaTypeAttributesKt.toAttributes$default(TypeUsage.SUPERTYPE, false, false, null, 7, null)), LazyJavaClassDescriptor.this.f32892v);
+                if (enhanceSuperType.getConstructor().mo1199getDeclarationDescriptor() instanceof NotFoundClasses.MockClassDescriptor) {
                     arrayList2.add(next);
                 }
                 TypeConstructor constructor = enhanceSuperType.getConstructor();
@@ -240,33 +240,33 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
                     arrayList.add(enhanceSuperType);
                 }
             }
-            ClassDescriptor classDescriptor = LazyJavaClassDescriptor.this.f33367u;
+            ClassDescriptor classDescriptor = LazyJavaClassDescriptor.this.f32891u;
             if (classDescriptor != null) {
                 obj = MappingUtilKt.createMappedTypeParametersSubstitution(classDescriptor, LazyJavaClassDescriptor.this).buildSubstitutor().substitute(classDescriptor.getDefaultType(), Variance.INVARIANT);
             }
             kotlin.reflect.jvm.internal.impl.utils.CollectionsKt.addIfNotNull(arrayList, obj);
             kotlin.reflect.jvm.internal.impl.utils.CollectionsKt.addIfNotNull(arrayList, C);
             if (!arrayList2.isEmpty()) {
-                ErrorReporter errorReporter = LazyJavaClassDescriptor.this.f33368v.getComponents().getErrorReporter();
-                ClassDescriptor mo1197getDeclarationDescriptor = mo1197getDeclarationDescriptor();
+                ErrorReporter errorReporter = LazyJavaClassDescriptor.this.f32892v.getComponents().getErrorReporter();
+                ClassDescriptor mo1199getDeclarationDescriptor = mo1199getDeclarationDescriptor();
                 ArrayList arrayList3 = new ArrayList(CollectionsKt.w(arrayList2, 10));
                 for (JavaType javaType : arrayList2) {
                     Intrinsics.checkNotNull(javaType, "null cannot be cast to non-null type org.jetbrains.kotlin.load.java.structure.JavaClassifierType");
                     arrayList3.add(((JavaClassifierType) javaType).getPresentableText());
                 }
-                errorReporter.reportIncompleteHierarchy(mo1197getDeclarationDescriptor, arrayList3);
+                errorReporter.reportIncompleteHierarchy(mo1199getDeclarationDescriptor, arrayList3);
             }
             if (!arrayList.isEmpty()) {
                 e10 = CollectionsKt.h1(arrayList);
             } else {
-                e10 = CollectionsKt.e(LazyJavaClassDescriptor.this.f33368v.getModule().getBuiltIns().getAnyType());
+                e10 = CollectionsKt.e(LazyJavaClassDescriptor.this.f32892v.getModule().getBuiltIns().getAnyType());
             }
             return e10;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.AbstractTypeConstructor
         protected SupertypeLoopChecker p() {
-            return LazyJavaClassDescriptor.this.f33368v.getComponents().getSupertypeLoopChecker();
+            return LazyJavaClassDescriptor.this.f32892v.getComponents().getSupertypeLoopChecker();
         }
 
         public String toString() {
@@ -277,7 +277,7 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
 
         @Override // kotlin.reflect.jvm.internal.impl.types.AbstractClassTypeConstructor, kotlin.reflect.jvm.internal.impl.types.ClassifierBasedTypeConstructor, kotlin.reflect.jvm.internal.impl.types.TypeConstructor
         /* renamed from: getDeclarationDescriptor */
-        public ClassDescriptor mo1197getDeclarationDescriptor() {
+        public ClassDescriptor mo1199getDeclarationDescriptor() {
             return LazyJavaClassDescriptor.this;
         }
     }
@@ -288,14 +288,14 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List e(LazyJavaClassDescriptor lazyJavaClassDescriptor) {
-        List<JavaTypeParameter> typeParameters = lazyJavaClassDescriptor.f33366t.getTypeParameters();
+        List<JavaTypeParameter> typeParameters = lazyJavaClassDescriptor.f32890t.getTypeParameters();
         ArrayList arrayList = new ArrayList(CollectionsKt.w(typeParameters, 10));
         for (JavaTypeParameter javaTypeParameter : typeParameters) {
-            TypeParameterDescriptor resolveTypeParameter = lazyJavaClassDescriptor.f33368v.getTypeParameterResolver().resolveTypeParameter(javaTypeParameter);
+            TypeParameterDescriptor resolveTypeParameter = lazyJavaClassDescriptor.f32892v.getTypeParameterResolver().resolveTypeParameter(javaTypeParameter);
             if (resolveTypeParameter != null) {
                 arrayList.add(resolveTypeParameter);
             } else {
-                throw new AssertionError("Parameter " + javaTypeParameter + " surely belongs to class " + lazyJavaClassDescriptor.f33366t + ", so it must be resolved");
+                throw new AssertionError("Parameter " + javaTypeParameter + " surely belongs to class " + lazyJavaClassDescriptor.f32890t + ", so it must be resolved");
             }
         }
         return arrayList;
@@ -305,7 +305,7 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
     public static final List g(LazyJavaClassDescriptor lazyJavaClassDescriptor) {
         ClassId classId = DescriptorUtilsKt.getClassId(lazyJavaClassDescriptor);
         if (classId != null) {
-            return lazyJavaClassDescriptor.f33365s.getComponents().getJavaModuleResolver().getAnnotationsForModuleOwnerOfClass(classId);
+            return lazyJavaClassDescriptor.f32889s.getComponents().getJavaModuleResolver().getAnnotationsForModuleOwnerOfClass(classId);
         }
         return null;
     }
@@ -314,9 +314,9 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
     public static final LazyJavaClassMemberScope h(LazyJavaClassDescriptor lazyJavaClassDescriptor, KotlinTypeRefiner it) {
         boolean z10;
         Intrinsics.checkNotNullParameter(it, "it");
-        LazyJavaResolverContext lazyJavaResolverContext = lazyJavaClassDescriptor.f33368v;
-        JavaClass javaClass = lazyJavaClassDescriptor.f33366t;
-        if (lazyJavaClassDescriptor.f33367u != null) {
+        LazyJavaResolverContext lazyJavaResolverContext = lazyJavaClassDescriptor.f32892v;
+        JavaClass javaClass = lazyJavaClassDescriptor.f32890t;
+        if (lazyJavaClassDescriptor.f32891u != null) {
             z10 = true;
         } else {
             z10 = false;
@@ -327,11 +327,11 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
     @NotNull
     public final LazyJavaClassDescriptor copy$descriptors_jvm(@NotNull JavaResolverCache javaResolverCache, ClassDescriptor classDescriptor) {
         Intrinsics.checkNotNullParameter(javaResolverCache, "javaResolverCache");
-        LazyJavaResolverContext lazyJavaResolverContext = this.f33368v;
+        LazyJavaResolverContext lazyJavaResolverContext = this.f32892v;
         LazyJavaResolverContext replaceComponents = ContextKt.replaceComponents(lazyJavaResolverContext, lazyJavaResolverContext.getComponents().replace(javaResolverCache));
         DeclarationDescriptor containingDeclaration = getContainingDeclaration();
         Intrinsics.checkNotNullExpressionValue(containingDeclaration, "getContainingDeclaration(...)");
-        return new LazyJavaClassDescriptor(replaceComponents, containingDeclaration, this.f33366t, classDescriptor);
+        return new LazyJavaClassDescriptor(replaceComponents, containingDeclaration, this.f32890t, classDescriptor);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -350,7 +350,7 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     /* renamed from: getCompanionObjectDescriptor */
-    public ClassDescriptor mo1191getCompanionObjectDescriptor() {
+    public ClassDescriptor mo1193getCompanionObjectDescriptor() {
         return null;
     }
 
@@ -362,37 +362,37 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
 
     @NotNull
     public final JavaClass getJClass() {
-        return this.f33366t;
+        return this.f32890t;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public ClassKind getKind() {
-        return this.f33370x;
+        return this.f32894x;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     @NotNull
     public Modality getModality() {
-        return this.f33371y;
+        return this.f32895y;
     }
 
     public final List<JavaAnnotation> getModuleAnnotations() {
-        return (List) this.f33369w.getValue();
+        return (List) this.f32893w.getValue();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public Collection<ClassDescriptor> getSealedSubclasses() {
         ClassDescriptor classDescriptor;
-        if (this.f33371y == Modality.SEALED) {
+        if (this.f32895y == Modality.SEALED) {
             JavaTypeAttributes attributes$default = JavaTypeAttributesKt.toAttributes$default(TypeUsage.COMMON, false, false, null, 7, null);
-            Sequence<JavaClassifierType> permittedTypes = this.f33366t.getPermittedTypes();
+            Sequence<JavaClassifierType> permittedTypes = this.f32890t.getPermittedTypes();
             ArrayList arrayList = new ArrayList();
             for (JavaClassifierType javaClassifierType : permittedTypes) {
-                ClassifierDescriptor mo1197getDeclarationDescriptor = this.f33368v.getTypeResolver().transformJavaType(javaClassifierType, attributes$default).getConstructor().mo1197getDeclarationDescriptor();
-                if (mo1197getDeclarationDescriptor instanceof ClassDescriptor) {
-                    classDescriptor = (ClassDescriptor) mo1197getDeclarationDescriptor;
+                ClassifierDescriptor mo1199getDeclarationDescriptor = this.f32892v.getTypeResolver().transformJavaType(javaClassifierType, attributes$default).getConstructor().mo1199getDeclarationDescriptor();
+                if (mo1199getDeclarationDescriptor instanceof ClassDescriptor) {
+                    classDescriptor = (ClassDescriptor) mo1199getDeclarationDescriptor;
                 } else {
                     classDescriptor = null;
                 }
@@ -403,7 +403,7 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
             return CollectionsKt.W0(arrayList, new Comparator() { // from class: kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaClassDescriptor$getSealedSubclasses$$inlined$sortedBy$1
                 @Override // java.util.Comparator
                 public final int compare(T t10, T t11) {
-                    return or.a.d(DescriptorUtilsKt.getFqNameSafe((ClassDescriptor) t10).asString(), DescriptorUtilsKt.getFqNameSafe((ClassDescriptor) t11).asString());
+                    return rr.a.d(DescriptorUtilsKt.getFqNameSafe((ClassDescriptor) t10).asString(), DescriptorUtilsKt.getFqNameSafe((ClassDescriptor) t11).asString());
                 }
             });
         }
@@ -430,7 +430,7 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     /* renamed from: getUnsubstitutedPrimaryConstructor */
-    public ClassConstructorDescriptor mo1192getUnsubstitutedPrimaryConstructor() {
+    public ClassConstructorDescriptor mo1194getUnsubstitutedPrimaryConstructor() {
         return null;
     }
 
@@ -442,12 +442,12 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithVisibility
     @NotNull
     public DescriptorVisibility getVisibility() {
-        if (Intrinsics.areEqual(this.f33372z, DescriptorVisibilities.PRIVATE) && this.f33366t.getOuterClass() == null) {
+        if (Intrinsics.areEqual(this.f32896z, DescriptorVisibilities.PRIVATE) && this.f32890t.getOuterClass() == null) {
             DescriptorVisibility descriptorVisibility = JavaDescriptorVisibilities.PACKAGE_VISIBILITY;
             Intrinsics.checkNotNull(descriptorVisibility);
             return descriptorVisibility;
         }
-        return UtilsKt.toDescriptorVisibility(this.f33372z);
+        return UtilsKt.toDescriptorVisibility(this.f32896z);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
@@ -503,14 +503,14 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
         Intrinsics.checkNotNullParameter(outerContext, "outerContext");
         Intrinsics.checkNotNullParameter(containingDeclaration, "containingDeclaration");
         Intrinsics.checkNotNullParameter(jClass, "jClass");
-        this.f33365s = outerContext;
-        this.f33366t = jClass;
-        this.f33367u = classDescriptor;
+        this.f32889s = outerContext;
+        this.f32890t = jClass;
+        this.f32891u = classDescriptor;
         LazyJavaResolverContext childForClassOrPackage$default = ContextKt.childForClassOrPackage$default(outerContext, this, jClass, 0, 4, null);
-        this.f33368v = childForClassOrPackage$default;
+        this.f32892v = childForClassOrPackage$default;
         childForClassOrPackage$default.getComponents().getJavaResolverCache().recordClass(jClass, this);
         jClass.getLightClassOriginKind();
-        this.f33369w = lr.l.a(new f(this));
+        this.f32893w = or.l.a(new f(this));
         if (jClass.isAnnotationType()) {
             classKind = ClassKind.ANNOTATION_CLASS;
         } else if (jClass.isInterface()) {
@@ -518,14 +518,14 @@ public final class LazyJavaClassDescriptor extends ClassDescriptorBase implement
         } else {
             classKind = jClass.isEnum() ? ClassKind.ENUM_CLASS : ClassKind.CLASS;
         }
-        this.f33370x = classKind;
+        this.f32894x = classKind;
         if (!jClass.isAnnotationType() && !jClass.isEnum()) {
             modality = Modality.Companion.convertFromFlags(jClass.isSealed(), jClass.isSealed() || jClass.isAbstract() || jClass.isInterface(), !jClass.isFinal());
         } else {
             modality = Modality.FINAL;
         }
-        this.f33371y = modality;
-        this.f33372z = jClass.getVisibility();
+        this.f32895y = modality;
+        this.f32896z = jClass.getVisibility();
         this.A = (jClass.getOuterClass() == null || jClass.isStatic()) ? false : true;
         this.B = new a();
         LazyJavaClassMemberScope lazyJavaClassMemberScope = new LazyJavaClassMemberScope(childForClassOrPackage$default, this, jClass, classDescriptor != null, null, 16, null);

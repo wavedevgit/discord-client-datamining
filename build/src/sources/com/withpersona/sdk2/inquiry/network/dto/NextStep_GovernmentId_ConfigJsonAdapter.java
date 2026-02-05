@@ -121,7 +121,7 @@ public final class NextStep_GovernmentId_ConfigJsonAdapter extends h {
     @NotNull
     public NextStep.GovernmentId.Config fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         List list = null;
         Boolean bool = null;
         Boolean bool2 = null;
@@ -146,7 +146,7 @@ public final class NextStep_GovernmentId_ConfigJsonAdapter extends h {
             List list6 = list;
             if (reader.hasNext()) {
                 Boolean bool5 = bool;
-                switch (reader.A0(this.options)) {
+                switch (reader.W(this.options)) {
                     case -1:
                         reader.E0();
                         reader.P();
@@ -166,7 +166,7 @@ public final class NextStep_GovernmentId_ConfigJsonAdapter extends h {
                     case 3:
                         localizations = (NextStep.GovernmentId.Localizations) this.localizationsAdapter.fromJson(reader);
                         if (localizations == null) {
-                            throw vm.c.x("localizations", "localizations", reader);
+                            throw ym.c.x("localizations", "localizations", reader);
                         }
                         bool = bool5;
                         break;
@@ -185,14 +185,14 @@ public final class NextStep_GovernmentId_ConfigJsonAdapter extends h {
                     case 7:
                         str = (String) this.stringAdapter.fromJson(reader);
                         if (str == null) {
-                            throw vm.c.x("fieldKeyDocument", "fieldKeyDocument", reader);
+                            throw ym.c.x("fieldKeyDocument", "fieldKeyDocument", reader);
                         }
                         bool = bool5;
                         break;
                     case 8:
                         str2 = (String) this.stringAdapter.fromJson(reader);
                         if (str2 == null) {
-                            throw vm.c.x("fieldKeyIdclass", "fieldKeyIdclass", reader);
+                            throw ym.c.x("fieldKeyIdclass", "fieldKeyIdclass", reader);
                         }
                         bool = bool5;
                         break;
@@ -247,17 +247,17 @@ public final class NextStep_GovernmentId_ConfigJsonAdapter extends h {
                 list = list6;
             } else {
                 Boolean bool6 = bool;
-                reader.y();
+                reader.z();
                 if (localizations != null) {
                     if (str != null) {
                         if (str2 != null) {
                             return new NextStep.GovernmentId.Config(list6, bool6, bool2, localizations, list2, num, l10, str, str2, list3, bool3, list4, list5, str3, assetConfig, autoClassificationConfig, axis, pendingPageTextPosition, bool4, digitalIdConfig);
                         }
-                        throw vm.c.o("fieldKeyIdclass", "fieldKeyIdclass", reader);
+                        throw ym.c.o("fieldKeyIdclass", "fieldKeyIdclass", reader);
                     }
-                    throw vm.c.o("fieldKeyDocument", "fieldKeyDocument", reader);
+                    throw ym.c.o("fieldKeyDocument", "fieldKeyDocument", reader);
                 }
-                throw vm.c.o("localizations", "localizations", reader);
+                throw ym.c.o("localizations", "localizations", reader);
             }
         }
     }
@@ -266,46 +266,46 @@ public final class NextStep_GovernmentId_ConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.GovernmentId.Config config) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (config != null) {
-            writer.l();
-            writer.A0("idclasses");
+            writer.k();
+            writer.W("idclasses");
             this.nullableListOfIdAdapter.toJson(writer, config.getIdclasses());
-            writer.A0("backStepEnabled");
+            writer.W("backStepEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getBackStepEnabled());
-            writer.A0("cancelButtonEnabled");
+            writer.W("cancelButtonEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getCancelButtonEnabled());
-            writer.A0("localizations");
+            writer.W("localizations");
             this.localizationsAdapter.toJson(writer, config.getLocalizations());
-            writer.A0("enabledCaptureOptionsNativeMobile");
+            writer.W("enabledCaptureOptionsNativeMobile");
             this.nullableListOfCaptureOptionNativeMobileAdapter.toJson(writer, config.getEnabledCaptureOptionsNativeMobile());
-            writer.A0("imageCaptureCount");
+            writer.W("imageCaptureCount");
             this.nullableIntAdapter.toJson(writer, config.getImageCaptureCount());
-            writer.A0("nativeMobileCameraManualCaptureDelayMs");
+            writer.W("nativeMobileCameraManualCaptureDelayMs");
             this.nullableLongAdapter.toJson(writer, config.getNativeMobileCameraManualCaptureDelayMs());
-            writer.A0("fieldKeyDocument");
+            writer.W("fieldKeyDocument");
             this.stringAdapter.toJson(writer, config.getFieldKeyDocument());
-            writer.A0("fieldKeyIdclass");
+            writer.W("fieldKeyIdclass");
             this.stringAdapter.toJson(writer, config.getFieldKeyIdclass());
-            writer.A0("localizationOverrides");
+            writer.W("localizationOverrides");
             this.nullableListOfLocalizationOverrideAdapter.toJson(writer, config.getLocalizationOverrides());
-            writer.A0("shouldSkipReviewScreen");
+            writer.W("shouldSkipReviewScreen");
             this.nullableBooleanAdapter.toJson(writer, config.getShouldSkipReviewScreen());
-            writer.A0("enabledCaptureFileTypes");
+            writer.W("enabledCaptureFileTypes");
             this.nullableListOfCaptureFileTypeAdapter.toJson(writer, config.getEnabledCaptureFileTypes());
-            writer.A0("videoCaptureMethods");
+            writer.W("videoCaptureMethods");
             this.nullableListOfVideoCaptureMethodAdapter.toJson(writer, config.getVideoCaptureMethods());
-            writer.A0("videoSessionJWT");
+            writer.W("videoSessionJWT");
             this.nullableStringAdapter.toJson(writer, config.getVideoSessionJwt());
-            writer.A0("assets");
+            writer.W("assets");
             this.nullableAssetConfigAdapter.toJson(writer, config.getAssets());
-            writer.A0("autoClassificationConfig");
+            writer.W("autoClassificationConfig");
             this.nullableAutoClassificationConfigAdapter.toJson(writer, config.getAutoClassificationConfig());
-            writer.A0("reviewCaptureButtonsAxis");
+            writer.W("reviewCaptureButtonsAxis");
             this.nullableAxisAdapter.toJson(writer, config.getReviewCaptureButtonsAxis());
-            writer.A0("pendingPageTextVerticalPosition");
+            writer.W("pendingPageTextVerticalPosition");
             this.nullablePendingPageTextPositionAdapter.toJson(writer, config.getPendingPageTextVerticalPosition());
-            writer.A0("audioEnabled");
+            writer.W("audioEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getAudioEnabled());
-            writer.A0("mobileDriversLicense");
+            writer.W("mobileDriversLicense");
             this.nullableDigitalIdConfigAdapter.toJson(writer, config.getMobileDriversLicense());
             writer.E();
             return;

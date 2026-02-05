@@ -10,7 +10,7 @@ import com.withpersona.sdk2.inquiry.network.core.dto.UiComponentError;
 import java.util.Map;
 import kotlin.collections.x0;
 import org.jetbrains.annotations.NotNull;
-import vm.c;
+import ym.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class UiComponentError_UiInputAddressComponentErrorJsonAdapter extends h {
     @NotNull
@@ -37,30 +37,30 @@ public final class UiComponentError_UiInputAddressComponentErrorJsonAdapter exte
     @Override // com.squareup.moshi.h
     @NotNull
     public UiComponentError.UiInputAddressComponentError fromJson(@NotNull m mVar) {
-        mVar.r();
+        mVar.s();
         String str = null;
         String str2 = null;
         Map map = null;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
+            int W = mVar.W(this.options);
+            if (W == -1) {
                 mVar.E0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
                     throw c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, mVar);
                 }
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str2 = (String) this.stringAdapter.fromJson(mVar);
                 if (str2 == null) {
                     throw c.x("type", "type", mVar);
                 }
-            } else if (A0 == 2 && (map = (Map) this.mapOfStringStringAdapter.fromJson(mVar)) == null) {
+            } else if (W == 2 && (map = (Map) this.mapOfStringStringAdapter.fromJson(mVar)) == null) {
                 throw c.x("message", "message", mVar);
             }
         }
-        mVar.y();
+        mVar.z();
         if (str != null) {
             if (str2 != null) {
                 if (map != null) {
@@ -76,12 +76,12 @@ public final class UiComponentError_UiInputAddressComponentErrorJsonAdapter exte
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, UiComponentError.UiInputAddressComponentError uiInputAddressComponentError) {
         if (uiInputAddressComponentError != null) {
-            tVar.l();
-            tVar.A0(StackTraceHelper.NAME_KEY);
+            tVar.k();
+            tVar.W(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(tVar, uiInputAddressComponentError.getName());
-            tVar.A0("type");
+            tVar.W("type");
             this.stringAdapter.toJson(tVar, uiInputAddressComponentError.getType());
-            tVar.A0("message");
+            tVar.W("message");
             this.mapOfStringStringAdapter.toJson(tVar, uiInputAddressComponentError.getMessage());
             tVar.E();
             return;

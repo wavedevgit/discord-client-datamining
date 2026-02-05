@@ -19,13 +19,13 @@ public abstract class AssetPackState {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static AssetPackState e(Bundle bundle, String str, b2 b2Var, o3 o3Var, g0 g0Var) {
-        int a10 = g0Var.a(bundle.getInt(uh.b.a("status", str)), str);
-        int i10 = bundle.getInt(uh.b.a("error_code", str));
-        long j10 = bundle.getLong(uh.b.a("bytes_downloaded", str));
-        long j11 = bundle.getLong(uh.b.a("total_bytes_to_download", str));
+        int a10 = g0Var.a(bundle.getInt(xh.b.a("status", str)), str);
+        int i10 = bundle.getInt(xh.b.a("error_code", str));
+        long j10 = bundle.getLong(xh.b.a("bytes_downloaded", str));
+        long j11 = bundle.getLong(xh.b.a("total_bytes_to_download", str));
         double a11 = b2Var.a(str);
-        long j12 = bundle.getLong(uh.b.a("pack_version", str));
-        long j13 = bundle.getLong(uh.b.a("pack_base_version", str));
+        long j12 = bundle.getLong(xh.b.a("pack_version", str));
+        long j13 = bundle.getLong(xh.b.a("pack_base_version", str));
         int i11 = 1;
         if (a10 == 4) {
             if (j13 != 0 && j13 != j12) {
@@ -33,7 +33,7 @@ public abstract class AssetPackState {
             }
             a10 = 4;
         }
-        return a(str, a10, i10, j10, j11, a11, i11, bundle.getString(uh.b.a("pack_version_tag", str), String.valueOf(bundle.getInt("app_version_code"))), o3Var.a(str));
+        return a(str, a10, i10, j10, j11, a11, i11, bundle.getString(xh.b.a("pack_version_tag", str), String.valueOf(bundle.getInt("app_version_code"))), o3Var.a(str));
     }
 
     public abstract String b();

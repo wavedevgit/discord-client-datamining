@@ -1,13 +1,17 @@
 package gt;
 
-import kotlin.collections.o0;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class e {
+public final class e extends x0 {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public e(SerialDescriptor elementDesc) {
+        super(elementDesc, null);
+        Intrinsics.checkNotNullParameter(elementDesc, "elementDesc");
+    }
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final b f26619a = new a(o0.i(), o0.i(), o0.i(), o0.i(), o0.i(), false);
-
-    public static final b a() {
-        return f26619a;
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public String h() {
+        return "kotlin.collections.ArrayList";
     }
 }

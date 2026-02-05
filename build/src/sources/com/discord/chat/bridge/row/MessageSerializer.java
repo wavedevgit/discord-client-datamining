@@ -5,8 +5,8 @@ import com.discord.chat.bridge.Message;
 import com.discord.chat.bridge.MessageBase;
 import com.discord.crash_reporting.CrashReporting;
 import com.discord.primitives.MessageId;
-import ct.e;
-import ct.j;
+import ft.e;
+import ft.j;
 import java.util.UUID;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
@@ -24,10 +24,10 @@ public final class MessageSerializer implements KSerializer {
     private MessageSerializer() {
     }
 
-    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
-        return j.b("Message", e.i.f19842a);
+        return j.b("Message", e.i.f23483a);
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -39,11 +39,11 @@ public final class MessageSerializer implements KSerializer {
         } catch (Exception e10) {
             CrashReporting.captureException$default(CrashReporting.INSTANCE, e10, false, 2, null);
             UUID randomUUID = UUID.randomUUID();
-            return new ErrorMessage(MessageId.m1086constructorimpl("RENDERING_ERROR_" + randomUUID), lr.e.b(e10), null);
+            return new ErrorMessage(MessageId.m1086constructorimpl("RENDERING_ERROR_" + randomUUID), or.e.b(e10), null);
         }
     }
 
-    @Override // at.o
+    @Override // dt.o
     public void serialize(@NotNull Encoder encoder, @NotNull MessageBase value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");

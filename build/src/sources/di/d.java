@@ -1,10 +1,21 @@
 package di;
 
-import java.util.concurrent.ThreadFactory;
+import android.os.Bundle;
+import android.os.IBinder;
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class d implements ThreadFactory {
-    @Override // java.util.concurrent.ThreadFactory
-    public final Thread newThread(Runnable runnable) {
-        return new Thread(runnable, "SplitCompatBackgroundThread");
+public final class d extends a implements f {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public d(IBinder iBinder) {
+        super(iBinder, "com.google.android.play.core.inappreview.protocol.IInAppReviewService");
+    }
+
+    @Override // di.f
+    public final void T0(String str, Bundle bundle, h hVar) {
+        Parcel e10 = e();
+        e10.writeString(str);
+        c.c(e10, bundle);
+        c.d(e10, hVar);
+        f(2, e10);
     }
 }

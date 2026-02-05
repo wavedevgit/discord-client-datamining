@@ -9,20 +9,20 @@ import kotlin.reflect.jvm.internal.impl.name.Name;
 public class p implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final SimpleFunctionDescriptor f33461d;
+    private final SimpleFunctionDescriptor f32985d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final LazyJavaClassMemberScope f33462e;
+    private final LazyJavaClassMemberScope f32986e;
 
     public p(SimpleFunctionDescriptor simpleFunctionDescriptor, LazyJavaClassMemberScope lazyJavaClassMemberScope) {
-        this.f33461d = simpleFunctionDescriptor;
-        this.f33462e = lazyJavaClassMemberScope;
+        this.f32985d = simpleFunctionDescriptor;
+        this.f32986e = lazyJavaClassMemberScope;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Collection T0;
-        T0 = LazyJavaClassMemberScope.T0(this.f33461d, this.f33462e, (Name) obj);
+        T0 = LazyJavaClassMemberScope.T0(this.f32985d, this.f32986e, (Name) obj);
         return T0;
     }
 }

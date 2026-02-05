@@ -7,10 +7,10 @@ public abstract class q {
     public static final void a(LifecycleOwner lifecycleOwner, Lifecycle.State current, Lifecycle.State next) {
         Intrinsics.checkNotNullParameter(current, "current");
         Intrinsics.checkNotNullParameter(next, "next");
-        if (current == Lifecycle.State.f4406e && next == Lifecycle.State.f4405d) {
-            throw new IllegalStateException(("State must be at least '" + Lifecycle.State.f4407i + "' to be moved to '" + next + "' in component " + lifecycleOwner).toString());
+        if (current == Lifecycle.State.f4518e && next == Lifecycle.State.f4517d) {
+            throw new IllegalStateException(("State must be at least '" + Lifecycle.State.f4519i + "' to be moved to '" + next + "' in component " + lifecycleOwner).toString());
         }
-        Lifecycle.State state = Lifecycle.State.f4405d;
+        Lifecycle.State state = Lifecycle.State.f4517d;
         if (current == state && current != next) {
             throw new IllegalStateException(("State is '" + state + "' and cannot be moved to `" + next + "` in component " + lifecycleOwner).toString());
         }

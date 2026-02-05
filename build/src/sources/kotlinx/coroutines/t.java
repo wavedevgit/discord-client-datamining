@@ -6,19 +6,19 @@ import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
-import js.m0;
-import js.n0;
-import js.s0;
 import kotlin.coroutines.CoroutineContext;
+import ms.m0;
+import ms.n0;
+import ms.s0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class t extends s implements k {
 
     /* renamed from: o  reason: collision with root package name */
-    private final Executor f35539o;
+    private final Executor f35063o;
 
     public t(Executor executor) {
-        this.f35539o = executor;
-        os.a.a(f2());
+        this.f35063o = executor;
+        rs.a.a(f2());
     }
 
     private final void h2(CoroutineContext coroutineContext, RejectedExecutionException rejectedExecutionException) {
@@ -60,17 +60,17 @@ public final class t extends s implements k {
         if (scheduledFuture != null) {
             return new n(scheduledFuture);
         }
-        return j.f35522t.D0(j11, runnable2, coroutineContext2);
+        return j.f35046t.D0(j11, runnable2, coroutineContext2);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public void E1(CoroutineContext coroutineContext, Runnable runnable) {
         try {
             Executor f22 = f2();
-            js.b.a();
+            ms.b.a();
             f22.execute(runnable);
         } catch (RejectedExecutionException e10) {
-            js.b.a();
+            ms.b.a();
             h2(coroutineContext, e10);
             m0.b().E1(coroutineContext, runnable);
         }
@@ -94,9 +94,9 @@ public final class t extends s implements k {
             j11 = j10;
         }
         if (scheduledFuture != null) {
-            js.l.c(cancellableContinuation, new c(scheduledFuture));
+            ms.l.c(cancellableContinuation, new c(scheduledFuture));
         } else {
-            j.f35522t.F(j11, cancellableContinuation);
+            j.f35046t.F(j11, cancellableContinuation);
         }
     }
 
@@ -123,7 +123,7 @@ public final class t extends s implements k {
 
     @Override // kotlinx.coroutines.s
     public Executor f2() {
-        return this.f35539o;
+        return this.f35063o;
     }
 
     public int hashCode() {

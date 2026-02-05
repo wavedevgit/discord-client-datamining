@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_uploads/experiments/VideoUploadBitrateExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun37715: for (var _fun37715_ip = 0;;) switch (_fun37715_ip) {
+        _fun37714: for (var _fun37714_ip = 0;;) switch (_fun37714_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.location;
@@ -74,16 +74,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.isInHoldout;
                 var1 = {};
                 if (var2) {
-                    _fun37715_ip = 98;
-                    continue _fun37715
+                    _fun37714_ip = 98;
+                    continue _fun37714
                 }
             case 77:
                 var2 = _closure1_slot3;
                 var0 = var2.getConfig;
                 var1.location = var3;
                 var0 = var0.bind(var2)(var1);
-                _fun37715_ip = 109;
-                continue _fun37715;
+                _fun37714_ip = 109;
+                continue _fun37714;
             case 98:
                 var2 = 1;
                 var1.bitrateMultiplier = var2;
@@ -94,15 +94,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getVideoUploadBitrateConfig = var3;
     var1 = function arg0() {
-        _fun37716: for (var _fun37716_ip = 0;;) switch (_fun37716_ip) {
+        _fun37715: for (var _fun37715_ip = 0;;) switch (_fun37715_ip) {
             case 0:
                 var2 = arg0;
                 var0 = _closure1_slot2;
                 var0 = var0.MEDIUM;
                 var0 = var2 === var0;
                 if (var0) {
-                    _fun37716_ip = 37;
-                    continue _fun37716
+                    _fun37715_ip = 37;
+                    continue _fun37715
                 }
             case 23:
                 var1 = _closure1_slot2;

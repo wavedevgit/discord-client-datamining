@@ -1,39 +1,25 @@
 package ip;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.viewbinding.ViewBinding;
-import hp.x0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements ViewBinding {
+public final class d implements zq.d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f31010a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static final class a {
 
-    private d(ConstraintLayout constraintLayout) {
-        this.f31010a = constraintLayout;
+        /* renamed from: a  reason: collision with root package name */
+        static final d f30054a = new d();
     }
 
-    public static d a(View view) {
-        if (view != null) {
-            return new d((ConstraintLayout) view);
-        }
-        throw new NullPointerException("rootView");
+    public static d a() {
+        return a.f30054a;
     }
 
-    public static d c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(x0.f27683d, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
-        }
-        return a(inflate);
+    public static c c() {
+        return new c();
     }
 
-    @Override // androidx.viewbinding.ViewBinding
+    @Override // javax.inject.Provider
     /* renamed from: b */
-    public ConstraintLayout getRoot() {
-        return this.f31010a;
+    public c get() {
+        return c();
     }
 }

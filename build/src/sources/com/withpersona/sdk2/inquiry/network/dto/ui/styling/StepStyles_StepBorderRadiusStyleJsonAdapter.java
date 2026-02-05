@@ -41,18 +41,18 @@ public final class StepStyles_StepBorderRadiusStyleJsonAdapter extends h {
     @NotNull
     public StepStyles.StepBorderRadiusStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.Measurement measurement = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.StepBorderRadiusStyle(measurement);
     }
 
@@ -60,8 +60,8 @@ public final class StepStyles_StepBorderRadiusStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.StepBorderRadiusStyle stepBorderRadiusStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepBorderRadiusStyle != null) {
-            writer.l();
-            writer.A0("modal");
+            writer.k();
+            writer.W("modal");
             this.nullableMeasurementAdapter.toJson(writer, stepBorderRadiusStyle.getModal());
             writer.E();
             return;

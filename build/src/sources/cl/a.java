@@ -1,17 +1,24 @@
 package cl;
-
-import android.view.accessibility.AccessibilityManager;
-import java.util.Locale;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
+final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final AccessibilityManager f7291a = (AccessibilityManager) com.henninghall.date_picker.c.f16205a.getApplicationContext().getSystemService("accessibility");
+    private final byte[] f7677a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static Locale f7292b = Locale.getDefault();
+    private final byte[] f7678b;
 
-    public static void a(Locale locale) {
-        f7292b = locale;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public a(byte[] bArr, byte[] bArr2) {
+        this.f7677a = bArr;
+        this.f7678b = bArr2;
+    }
+
+    public byte[] a() {
+        return this.f7677a;
+    }
+
+    public byte[] b() {
+        return this.f7678b;
     }
 }

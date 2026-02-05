@@ -40,7 +40,7 @@ public final class NextStep_Document_PromptPageJsonAdapter extends h {
     @NotNull
     public NextStep.Document.PromptPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -53,7 +53,7 @@ public final class NextStep_Document_PromptPageJsonAdapter extends h {
         String str10 = null;
         String str11 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -93,7 +93,7 @@ public final class NextStep_Document_PromptPageJsonAdapter extends h {
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new NextStep.Document.PromptPage(str, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11);
     }
 
@@ -101,28 +101,28 @@ public final class NextStep_Document_PromptPageJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Document.PromptPage promptPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
-            writer.l();
-            writer.A0("title");
+            writer.k();
+            writer.W("title");
             this.nullableStringAdapter.toJson(writer, promptPage.getTitle());
-            writer.A0("prompt");
+            writer.W("prompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getPrompt());
-            writer.A0("disclaimer");
+            writer.W("disclaimer");
             this.nullableStringAdapter.toJson(writer, promptPage.getDisclaimer());
-            writer.A0("captureOptionsDialogTitle");
+            writer.W("captureOptionsDialogTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getCaptureOptionsDialogTitle());
-            writer.A0("btnCapture");
+            writer.W("btnCapture");
             this.nullableStringAdapter.toJson(writer, promptPage.getBtnCapture());
-            writer.A0("btnUpload");
+            writer.W("btnUpload");
             this.nullableStringAdapter.toJson(writer, promptPage.getBtnUpload());
-            writer.A0("btnSubmit");
+            writer.W("btnSubmit");
             this.nullableStringAdapter.toJson(writer, promptPage.getBtnSubmit());
-            writer.A0("cameraPermissionsTitle");
+            writer.W("cameraPermissionsTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsTitle());
-            writer.A0("cameraPermissionsPrompt");
+            writer.W("cameraPermissionsPrompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsPrompt());
-            writer.A0("cameraPermissionsBtnContinueMobile");
+            writer.W("cameraPermissionsBtnContinueMobile");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsAllowButtonText());
-            writer.A0("cameraPermissionsBtnCancel");
+            writer.W("cameraPermissionsBtnCancel");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsCancelButtonText());
             writer.E();
             return;

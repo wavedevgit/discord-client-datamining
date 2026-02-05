@@ -13,29 +13,29 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaValueParameter extends ReflectJavaElement implements JavaValueParameter {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReflectJavaType f33117a;
+    private final ReflectJavaType f32641a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Annotation[] f33118b;
+    private final Annotation[] f32642b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f33119c;
+    private final String f32643c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f33120d;
+    private final boolean f32644d;
 
     public ReflectJavaValueParameter(@NotNull ReflectJavaType type, @NotNull Annotation[] reflectAnnotations, String str, boolean z10) {
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(reflectAnnotations, "reflectAnnotations");
-        this.f33117a = type;
-        this.f33118b = reflectAnnotations;
-        this.f33119c = str;
-        this.f33120d = z10;
+        this.f32641a = type;
+        this.f32642b = reflectAnnotations;
+        this.f32643c = str;
+        this.f32644d = z10;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaValueParameter
     public Name getName() {
-        String str = this.f33119c;
+        String str = this.f32643c;
         if (str != null) {
             return Name.guessByFirstCharacter(str);
         }
@@ -49,7 +49,7 @@ public final class ReflectJavaValueParameter extends ReflectJavaElement implemen
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaValueParameter
     public boolean isVararg() {
-        return this.f33120d;
+        return this.f32644d;
     }
 
     @NotNull
@@ -73,18 +73,18 @@ public final class ReflectJavaValueParameter extends ReflectJavaElement implemen
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationOwner
     public ReflectJavaAnnotation findAnnotation(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        return ReflectJavaAnnotationOwnerKt.findAnnotation(this.f33118b, fqName);
+        return ReflectJavaAnnotationOwnerKt.findAnnotation(this.f32642b, fqName);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationOwner
     @NotNull
     public List<ReflectJavaAnnotation> getAnnotations() {
-        return ReflectJavaAnnotationOwnerKt.getAnnotations(this.f33118b);
+        return ReflectJavaAnnotationOwnerKt.getAnnotations(this.f32642b);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaValueParameter
     @NotNull
     public ReflectJavaType getType() {
-        return this.f33117a;
+        return this.f32641a;
     }
 }

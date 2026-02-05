@@ -10,9 +10,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
     var0 = {
-        'SRT': 'application/x-subrip',
-        'TTML': 'application/ttml+xml',
-        'VTT': 'text/vtt'
+        'WIDEVINE': 'widevine',
+        'PLAYREADY': 'playready',
+        'CLEARKEY': 'clearkey',
+        'FAIRPLAY': 'fairplay'
     };
     var1.default = var0;
     var0 = undefined;

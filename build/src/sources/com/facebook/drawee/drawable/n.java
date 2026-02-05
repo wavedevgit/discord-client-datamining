@@ -10,32 +10,32 @@ import kotlin.jvm.internal.Intrinsics;
 public final class n extends f {
 
     /* renamed from: d  reason: collision with root package name */
-    private ScalingUtils$ScaleType f9717d;
+    private ScalingUtils$ScaleType f10102d;
 
     /* renamed from: e  reason: collision with root package name */
-    public Object f9718e;
+    public Object f10103e;
 
     /* renamed from: i  reason: collision with root package name */
-    public PointF f9719i;
+    public PointF f10104i;
 
     /* renamed from: o  reason: collision with root package name */
-    public int f9720o;
+    public int f10105o;
 
     /* renamed from: p  reason: collision with root package name */
-    public int f9721p;
+    public int f10106p;
 
     /* renamed from: q  reason: collision with root package name */
-    public Matrix f9722q;
+    public Matrix f10107q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Matrix f9723r;
+    private final Matrix f10108r;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public n(Drawable drawable, ScalingUtils$ScaleType scaleType) {
         super(drawable);
         Intrinsics.checkNotNullParameter(scaleType, "scaleType");
-        this.f9723r = new Matrix();
-        this.f9717d = scaleType;
+        this.f10108r = new Matrix();
+        this.f10102d = scaleType;
     }
 
     private final void j() {
@@ -43,7 +43,7 @@ public final class n extends f {
         if (current == null) {
             return;
         }
-        if (this.f9720o == current.getIntrinsicWidth() && this.f9721p == current.getIntrinsicHeight()) {
+        if (this.f10105o == current.getIntrinsicWidth() && this.f10106p == current.getIntrinsicHeight()) {
             return;
         }
         i();
@@ -53,10 +53,10 @@ public final class n extends f {
     public void draw(Canvas canvas) {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
         j();
-        if (this.f9722q != null) {
+        if (this.f10107q != null) {
             int save = canvas.save();
             canvas.clipRect(getBounds());
-            canvas.concat(this.f9722q);
+            canvas.concat(this.f10107q);
             super.draw(canvas);
             canvas.restoreToCount(save);
             return;
@@ -69,7 +69,7 @@ public final class n extends f {
         Intrinsics.checkNotNullParameter(transform, "transform");
         getParentTransform(transform);
         j();
-        Matrix matrix = this.f9722q;
+        Matrix matrix = this.f10107q;
         if (matrix != null) {
             transform.preConcat(matrix);
         }
@@ -79,9 +79,9 @@ public final class n extends f {
         float f10;
         Drawable current = getCurrent();
         if (current == null) {
-            this.f9721p = 0;
-            this.f9720o = 0;
-            this.f9722q = null;
+            this.f10106p = 0;
+            this.f10105o = 0;
+            this.f10107q = null;
             return;
         }
         Rect bounds = getBounds();
@@ -89,24 +89,24 @@ public final class n extends f {
         int width = bounds.width();
         int height = bounds.height();
         int intrinsicWidth = current.getIntrinsicWidth();
-        this.f9720o = intrinsicWidth;
+        this.f10105o = intrinsicWidth;
         int intrinsicHeight = current.getIntrinsicHeight();
-        this.f9721p = intrinsicHeight;
+        this.f10106p = intrinsicHeight;
         if (intrinsicWidth > 0 && intrinsicHeight > 0) {
             if (intrinsicWidth == width && intrinsicHeight == height) {
                 current.setBounds(bounds);
-                this.f9722q = null;
+                this.f10107q = null;
                 return;
-            } else if (this.f9717d == ScalingUtils$ScaleType.f9630a) {
+            } else if (this.f10102d == ScalingUtils$ScaleType.f10015a) {
                 current.setBounds(bounds);
-                this.f9722q = null;
+                this.f10107q = null;
                 return;
             } else {
                 current.setBounds(0, 0, intrinsicWidth, intrinsicHeight);
-                this.f9723r.reset();
-                ScalingUtils$ScaleType scalingUtils$ScaleType = this.f9717d;
-                Matrix matrix = this.f9723r;
-                PointF pointF = this.f9719i;
+                this.f10108r.reset();
+                ScalingUtils$ScaleType scalingUtils$ScaleType = this.f10102d;
+                Matrix matrix = this.f10108r;
+                PointF pointF = this.f10104i;
                 float f11 = 0.5f;
                 if (pointF != null) {
                     Intrinsics.checkNotNull(pointF);
@@ -114,39 +114,39 @@ public final class n extends f {
                 } else {
                     f10 = 0.5f;
                 }
-                PointF pointF2 = this.f9719i;
+                PointF pointF2 = this.f10104i;
                 if (pointF2 != null) {
                     Intrinsics.checkNotNull(pointF2);
                     f11 = pointF2.y;
                 }
                 scalingUtils$ScaleType.getTransform(matrix, bounds, intrinsicWidth, intrinsicHeight, f10, f11);
-                this.f9722q = this.f9723r;
+                this.f10107q = this.f10108r;
                 return;
             }
         }
         current.setBounds(bounds);
-        this.f9722q = null;
+        this.f10107q = null;
     }
 
     public final PointF k() {
-        return this.f9719i;
+        return this.f10104i;
     }
 
     public final ScalingUtils$ScaleType l() {
-        return this.f9717d;
+        return this.f10102d;
     }
 
     public final void m(PointF pointF) {
-        if (o8.h.a(this.f9719i, pointF)) {
+        if (o8.h.a(this.f10104i, pointF)) {
             return;
         }
         if (pointF == null) {
-            this.f9719i = null;
+            this.f10104i = null;
         } else {
-            if (this.f9719i == null) {
-                this.f9719i = new PointF();
+            if (this.f10104i == null) {
+                this.f10104i = new PointF();
             }
-            PointF pointF2 = this.f9719i;
+            PointF pointF2 = this.f10104i;
             Intrinsics.checkNotNull(pointF2);
             pointF2.set(pointF);
         }
@@ -156,11 +156,11 @@ public final class n extends f {
 
     public final void n(ScalingUtils$ScaleType scaleType) {
         Intrinsics.checkNotNullParameter(scaleType, "scaleType");
-        if (o8.h.a(this.f9717d, scaleType)) {
+        if (o8.h.a(this.f10102d, scaleType)) {
             return;
         }
-        this.f9717d = scaleType;
-        this.f9718e = null;
+        this.f10102d = scaleType;
+        this.f10103e = null;
         i();
         invalidateSelf();
     }

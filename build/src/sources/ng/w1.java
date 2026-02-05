@@ -1,57 +1,57 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class w1 implements ui.d {
+final class w1 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w1 f41695a = new w1();
+    static final w1 f41155a = new w1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41696b;
+    private static final xi.c f41156b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41697c;
+    private static final xi.c f41157c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41698d;
+    private static final xi.c f41158d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41699e;
+    private static final xi.c f41159e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41700f;
+    private static final xi.c f41160f;
 
     static {
-        c.b a10 = ui.c.a("errorCode");
+        c.b a10 = xi.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f41696b = a10.b(fVar.b()).a();
-        c.b a11 = ui.c.a("hasResult");
+        f41156b = a10.b(fVar.b()).a();
+        c.b a11 = xi.c.a("hasResult");
         f fVar2 = new f();
         fVar2.a(2);
-        f41697c = a11.b(fVar2.b()).a();
-        c.b a12 = ui.c.a("isColdCall");
+        f41157c = a11.b(fVar2.b()).a();
+        c.b a12 = xi.c.a("isColdCall");
         f fVar3 = new f();
         fVar3.a(3);
-        f41698d = a12.b(fVar3.b()).a();
-        c.b a13 = ui.c.a("imageInfo");
+        f41158d = a12.b(fVar3.b()).a();
+        c.b a13 = xi.c.a("imageInfo");
         f fVar4 = new f();
         fVar4.a(4);
-        f41699e = a13.b(fVar4.b()).a();
-        c.b a14 = ui.c.a("recognizerOptions");
+        f41159e = a13.b(fVar4.b()).a();
+        c.b a14 = xi.c.a("recognizerOptions");
         f fVar5 = new f();
         fVar5.a(5);
-        f41700f = a14.b(fVar5.b()).a();
+        f41160f = a14.b(fVar5.b()).a();
     }
 
     private w1() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

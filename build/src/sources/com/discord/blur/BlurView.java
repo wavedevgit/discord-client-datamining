@@ -107,13 +107,13 @@ public final class BlurView extends eightbitlab.com.blurview.BlurView implements
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$1(BlurView blurView) {
         blurView.maybeUpdate();
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit blurTargetChangeListener$lambda$0(BlurView blurView) {
         blurView.maybeUpdate();
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     private final void maybeUpdate() {
@@ -151,13 +151,13 @@ public final class BlurView extends eightbitlab.com.blurview.BlurView implements
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onAttachedToWindow$lambda$2(BlurView blurView) {
         blurView.maybeUpdate();
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onDetachedFromWindow$lambda$3(BlurView blurView) {
         blurView.maybeUpdate();
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

@@ -21,15 +21,15 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaClassifierType extends ReflectJavaType implements JavaClassifierType {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Type f33104a;
+    private final Type f32628a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final JavaClassifier f33105b;
+    private final JavaClassifier f32629b;
 
     public ReflectJavaClassifierType(@NotNull Type reflectType) {
         JavaClassifier reflectJavaClass;
         Intrinsics.checkNotNullParameter(reflectType, "reflectType");
-        this.f33104a = reflectType;
+        this.f32628a = reflectType;
         Type reflectType2 = getReflectType();
         if (reflectType2 instanceof Class) {
             reflectJavaClass = new ReflectJavaClass((Class) reflectType2);
@@ -42,7 +42,7 @@ public final class ReflectJavaClassifierType extends ReflectJavaType implements 
         } else {
             throw new IllegalStateException("Not a classifier type (" + reflectType2.getClass() + "): " + reflectType2);
         }
-        this.f33105b = reflectJavaClass;
+        this.f32629b = reflectJavaClass;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaType, kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationOwner
@@ -60,7 +60,7 @@ public final class ReflectJavaClassifierType extends ReflectJavaType implements 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClassifierType
     @NotNull
     public JavaClassifier getClassifier() {
-        return this.f33105b;
+        return this.f32629b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClassifierType
@@ -78,7 +78,7 @@ public final class ReflectJavaClassifierType extends ReflectJavaType implements 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaType
     @NotNull
     public Type getReflectType() {
-        return this.f33104a;
+        return this.f32628a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClassifierType

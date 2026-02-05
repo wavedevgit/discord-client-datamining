@@ -1,71 +1,71 @@
 package og;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class p3 implements ui.d {
+final class p3 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final p3 f43322a = new p3();
+    static final p3 f43228a = new p3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43323b;
+    private static final xi.c f43229b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43324c;
+    private static final xi.c f43230c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43325d;
+    private static final xi.c f43231d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43326e;
+    private static final xi.c f43232e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f43327f;
+    private static final xi.c f43233f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f43328g;
+    private static final xi.c f43234g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ui.c f43329h;
+    private static final xi.c f43235h;
 
     static {
-        c.b a10 = ui.c.a("errorCode");
+        c.b a10 = xi.c.a("errorCode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43323b = a10.b(s1Var.b()).a();
-        c.b a11 = ui.c.a("hasResult");
+        f43229b = a10.b(s1Var.b()).a();
+        c.b a11 = xi.c.a("hasResult");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43324c = a11.b(s1Var2.b()).a();
-        c.b a12 = ui.c.a("isColdCall");
+        f43230c = a11.b(s1Var2.b()).a();
+        c.b a12 = xi.c.a("isColdCall");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43325d = a12.b(s1Var3.b()).a();
-        c.b a13 = ui.c.a("imageInfo");
+        f43231d = a12.b(s1Var3.b()).a();
+        c.b a13 = xi.c.a("imageInfo");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43326e = a13.b(s1Var4.b()).a();
-        c.b a14 = ui.c.a("options");
+        f43232e = a13.b(s1Var4.b()).a();
+        c.b a14 = xi.c.a("options");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f43327f = a14.b(s1Var5.b()).a();
-        c.b a15 = ui.c.a("detectedBarcodeFormats");
+        f43233f = a14.b(s1Var5.b()).a();
+        c.b a15 = xi.c.a("detectedBarcodeFormats");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f43328g = a15.b(s1Var6.b()).a();
-        c.b a16 = ui.c.a("detectedBarcodeValueTypes");
+        f43234g = a15.b(s1Var6.b()).a();
+        c.b a16 = xi.c.a("detectedBarcodeValueTypes");
         s1 s1Var7 = new s1();
         s1Var7.a(7);
-        f43329h = a16.b(s1Var7.b()).a();
+        f43235h = a16.b(s1Var7.b()).a();
     }
 
     private p3() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

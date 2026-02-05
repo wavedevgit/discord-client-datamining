@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.NOTIFICATIONS;
     var1.parent = var8;
     var8 = function() {
-        _fun85702: for (var _fun85702_ip = 0;;) switch (_fun85702_ip) {
+        _fun85721: for (var _fun85721_ip = 0;;) switch (_fun85721_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot2;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var2)();
                 var0 = !var0;
                 if (!var0) {
-                    _fun85702_ip = 75;
-                    continue _fun85702
+                    _fun85721_ip = 75;
+                    continue _fun85721
                 }
             case 72:
                 var0 = var1;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.onValueChange = var8;
     var7 = function() {
-        _fun85704: for (var _fun85704_ip = 0;;) switch (_fun85704_ip) {
+        _fun85723: for (var _fun85723_ip = 0;;) switch (_fun85723_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.bind(var2)();
                 var0 = undefined;
                 if (!var2) {
-                    _fun85704_ip = 97;
-                    continue _fun85704
+                    _fun85723_ip = 97;
+                    continue _fun85723
                 }
             case 40:
                 var4 = _closure1_slot0;
@@ -151,4 +151,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7008, 660, 1348, 8739, 1234, 795, 8999, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7028, 660, 1348, 8757, 1234, 795, 9017, 2]);

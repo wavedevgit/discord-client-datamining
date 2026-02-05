@@ -42,27 +42,27 @@ public final class AttributeStyles_ComplexTextBasedFontWeightStyleJsonAdapter ex
     @NotNull
     public AttributeStyles.ComplexTextBasedFontWeightStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.FontWeightContainer fontWeightContainer = null;
         StyleElements.FontWeightContainer fontWeightContainer2 = null;
         StyleElements.FontWeightContainer fontWeightContainer3 = null;
         StyleElements.FontWeightContainer fontWeightContainer4 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 fontWeightContainer = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 fontWeightContainer2 = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 fontWeightContainer3 = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 fontWeightContainer4 = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.ComplexTextBasedFontWeightStyle(fontWeightContainer, fontWeightContainer2, fontWeightContainer3, fontWeightContainer4);
     }
 
@@ -70,14 +70,14 @@ public final class AttributeStyles_ComplexTextBasedFontWeightStyleJsonAdapter ex
     public void toJson(@NotNull t writer, AttributeStyles.ComplexTextBasedFontWeightStyle complexTextBasedFontWeightStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complexTextBasedFontWeightStyle != null) {
-            writer.l();
-            writer.A0("value");
+            writer.k();
+            writer.W("value");
             this.nullableFontWeightContainerAdapter.toJson(writer, complexTextBasedFontWeightStyle.getValue());
-            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableFontWeightContainerAdapter.toJson(writer, complexTextBasedFontWeightStyle.getPlaceholder());
-            writer.A0("label");
+            writer.W("label");
             this.nullableFontWeightContainerAdapter.toJson(writer, complexTextBasedFontWeightStyle.getLabel());
-            writer.A0("error");
+            writer.W("error");
             this.nullableFontWeightContainerAdapter.toJson(writer, complexTextBasedFontWeightStyle.getError());
             writer.E();
             return;

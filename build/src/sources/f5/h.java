@@ -18,7 +18,7 @@ public abstract class h {
                 return new e();
             }
         }
-        if (tVar != null && tVar.m() <= 5) {
+        if (tVar != null && tVar.o() <= 5) {
             tVar.a("NetworkObserver", 5, "Unable to register network observer.", null);
         }
         return new e();

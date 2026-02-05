@@ -27,7 +27,7 @@ public final class SystraceRequestListener extends a {
         if (!qb.a.j(0L)) {
             return;
         }
-        qb.a.n(0L, "FRESCO_PRODUCER_EVENT_" + StringsKt.I(requestId, ':', '_', false, 4, null) + "_" + StringsKt.I(producerName, ':', '_', false, 4, null) + "_" + StringsKt.I(eventName, ':', '_', false, 4, null), a.EnumC0572a.f47471e);
+        qb.a.n(0L, "FRESCO_PRODUCER_EVENT_" + StringsKt.I(requestId, ':', '_', false, 4, null) + "_" + StringsKt.I(producerName, ':', '_', false, 4, null) + "_" + StringsKt.I(eventName, ':', '_', false, 4, null), a.EnumC0596a.f47535e);
     }
 
     @Override // ua.a, com.facebook.imagepipeline.producers.z0

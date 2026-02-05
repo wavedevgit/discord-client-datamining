@@ -1,43 +1,43 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class k1 implements ui.d {
+final class k1 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k1 f41273a = new k1();
+    static final k1 f40733a = new k1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41274b;
+    private static final xi.c f40734b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41275c;
+    private static final xi.c f40735c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41276d;
+    private static final xi.c f40736d;
 
     static {
-        c.b a10 = ui.c.a("errorCode");
+        c.b a10 = xi.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f41274b = a10.b(fVar.b()).a();
-        c.b a11 = ui.c.a("isColdCall");
+        f40734b = a10.b(fVar.b()).a();
+        c.b a11 = xi.c.a("isColdCall");
         f fVar2 = new f();
         fVar2.a(2);
-        f41275c = a11.b(fVar2.b()).a();
-        c.b a12 = ui.c.a("imageInfo");
+        f40735c = a11.b(fVar2.b()).a();
+        c.b a12 = xi.c.a("imageInfo");
         f fVar3 = new f();
         fVar3.a(3);
-        f41276d = a12.b(fVar3.b()).a();
+        f40736d = a12.b(fVar3.b()).a();
     }
 
     private k1() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

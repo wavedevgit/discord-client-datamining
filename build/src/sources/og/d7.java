@@ -1,43 +1,43 @@
 package og;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class d7 implements ui.d {
+final class d7 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d7 f42789a = new d7();
+    static final d7 f42695a = new d7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f42790b;
+    private static final xi.c f42696b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f42791c;
+    private static final xi.c f42697c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f42792d;
+    private static final xi.c f42698d;
 
     static {
-        c.b a10 = ui.c.a("detectorMode");
+        c.b a10 = xi.c.a("detectorMode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f42790b = a10.b(s1Var.b()).a();
-        c.b a11 = ui.c.a("streamModeSmoothingRatio");
+        f42696b = a10.b(s1Var.b()).a();
+        c.b a11 = xi.c.a("streamModeSmoothingRatio");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f42791c = a11.b(s1Var2.b()).a();
-        c.b a12 = ui.c.a("rawSizeMaskEnabled");
+        f42697c = a11.b(s1Var2.b()).a();
+        c.b a12 = xi.c.a("rawSizeMaskEnabled");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f42792d = a12.b(s1Var3.b()).a();
+        f42698d = a12.b(s1Var3.b()).a();
     }
 
     private d7() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

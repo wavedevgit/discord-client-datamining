@@ -1,152 +1,207 @@
 package xk;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-abstract class c {
+public final class c {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final c f53347d;
+    /* renamed from: a  reason: collision with root package name */
+    private final b f53931a;
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final c f53348e;
-
-    /* renamed from: i  reason: collision with root package name */
-    public static final c f53349i;
-
-    /* renamed from: o  reason: collision with root package name */
-    public static final c f53350o;
-
-    /* renamed from: p  reason: collision with root package name */
-    public static final c f53351p;
-
-    /* renamed from: q  reason: collision with root package name */
-    public static final c f53352q;
-
-    /* renamed from: r  reason: collision with root package name */
-    public static final c f53353r;
-
-    /* renamed from: s  reason: collision with root package name */
-    public static final c f53354s;
-
-    /* renamed from: t  reason: collision with root package name */
-    private static final /* synthetic */ c[] f53355t;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    enum a extends c {
-        a(String str, int i10) {
-            super(str, i10, null);
-        }
-
-        @Override // xk.c
-        boolean a(int i10, int i11) {
-            if (((i10 + i11) & 1) == 0) {
-                return true;
-            }
-            return false;
-        }
-    }
-
-    static {
-        a aVar = new a("DATA_MASK_000", 0);
-        f53347d = aVar;
-        c cVar = new c("DATA_MASK_001", 1) { // from class: xk.c.b
-            @Override // xk.c
-            boolean a(int i10, int i11) {
-                if ((i10 & 1) == 0) {
-                    return true;
-                }
-                return false;
-            }
-        };
-        f53348e = cVar;
-        c cVar2 = new c("DATA_MASK_010", 2) { // from class: xk.c.c
-            @Override // xk.c
-            boolean a(int i10, int i11) {
-                if (i11 % 3 == 0) {
-                    return true;
-                }
-                return false;
-            }
-        };
-        f53349i = cVar2;
-        c cVar3 = new c("DATA_MASK_011", 3) { // from class: xk.c.d
-            @Override // xk.c
-            boolean a(int i10, int i11) {
-                if ((i10 + i11) % 3 == 0) {
-                    return true;
-                }
-                return false;
-            }
-        };
-        f53350o = cVar3;
-        c cVar4 = new c("DATA_MASK_100", 4) { // from class: xk.c.e
-            @Override // xk.c
-            boolean a(int i10, int i11) {
-                if ((((i10 / 2) + (i11 / 3)) & 1) == 0) {
-                    return true;
-                }
-                return false;
-            }
-        };
-        f53351p = cVar4;
-        c cVar5 = new c("DATA_MASK_101", 5) { // from class: xk.c.f
-            @Override // xk.c
-            boolean a(int i10, int i11) {
-                if ((i10 * i11) % 6 == 0) {
-                    return true;
-                }
-                return false;
-            }
-        };
-        f53352q = cVar5;
-        c cVar6 = new c("DATA_MASK_110", 6) { // from class: xk.c.g
-            @Override // xk.c
-            boolean a(int i10, int i11) {
-                if ((i10 * i11) % 6 < 3) {
-                    return true;
-                }
-                return false;
-            }
-        };
-        f53353r = cVar6;
-        c cVar7 = new c("DATA_MASK_111", 7) { // from class: xk.c.h
-            @Override // xk.c
-            boolean a(int i10, int i11) {
-                if (((i10 + i11 + ((i10 * i11) % 3)) & 1) == 0) {
-                    return true;
-                }
-                return false;
-            }
-        };
-        f53354s = cVar7;
-        f53355t = new c[]{aVar, cVar, cVar2, cVar3, cVar4, cVar5, cVar6, cVar7};
-    }
-
-    private c(String str, int i10) {
-    }
-
-    public static c valueOf(String str) {
-        return (c) Enum.valueOf(c.class, str);
-    }
-
-    public static c[] values() {
-        return (c[]) f53355t.clone();
-    }
-
-    abstract boolean a(int i10, int i11);
+    /* renamed from: b  reason: collision with root package name */
+    private final int[] f53932b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final void d(gk.b bVar, int i10) {
-        for (int i11 = 0; i11 < i10; i11++) {
-            for (int i12 = 0; i12 < i10; i12++) {
-                if (a(i11, i12)) {
-                    bVar.d(i12, i11);
+    public c(b bVar, int[] iArr) {
+        if (iArr.length != 0) {
+            this.f53931a = bVar;
+            int length = iArr.length;
+            int i10 = 1;
+            if (length > 1 && iArr[0] == 0) {
+                while (i10 < length && iArr[i10] == 0) {
+                    i10++;
+                }
+                if (i10 == length) {
+                    this.f53932b = new int[]{0};
+                    return;
+                }
+                int[] iArr2 = new int[length - i10];
+                this.f53932b = iArr2;
+                System.arraycopy(iArr, i10, iArr2, 0, iArr2.length);
+                return;
+            }
+            this.f53932b = iArr;
+            return;
+        }
+        throw new IllegalArgumentException();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c a(c cVar) {
+        if (this.f53931a.equals(cVar.f53931a)) {
+            if (e()) {
+                return cVar;
+            }
+            if (cVar.e()) {
+                return this;
+            }
+            int[] iArr = this.f53932b;
+            int[] iArr2 = cVar.f53932b;
+            if (iArr.length <= iArr2.length) {
+                iArr = iArr2;
+                iArr2 = iArr;
+            }
+            int[] iArr3 = new int[iArr.length];
+            int length = iArr.length - iArr2.length;
+            System.arraycopy(iArr, 0, iArr3, 0, length);
+            for (int i10 = length; i10 < iArr.length; i10++) {
+                iArr3[i10] = this.f53931a.a(iArr2[i10 - length], iArr[i10]);
+            }
+            return new c(this.f53931a, iArr3);
+        }
+        throw new IllegalArgumentException("ModulusPolys do not have same ModulusGF field");
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int b(int i10) {
+        if (i10 == 0) {
+            return c(0);
+        }
+        if (i10 == 1) {
+            int i11 = 0;
+            for (int i12 : this.f53932b) {
+                i11 = this.f53931a.a(i11, i12);
+            }
+            return i11;
+        }
+        int[] iArr = this.f53932b;
+        int i13 = iArr[0];
+        int length = iArr.length;
+        for (int i14 = 1; i14 < length; i14++) {
+            b bVar = this.f53931a;
+            i13 = bVar.a(bVar.i(i10, i13), this.f53932b[i14]);
+        }
+        return i13;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int c(int i10) {
+        int[] iArr = this.f53932b;
+        return iArr[(iArr.length - 1) - i10];
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int d() {
+        return this.f53932b.length - 1;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public boolean e() {
+        if (this.f53932b[0] != 0) {
+            return false;
+        }
+        return true;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c f(int i10) {
+        if (i10 == 0) {
+            return this.f53931a.f();
+        }
+        if (i10 == 1) {
+            return this;
+        }
+        int length = this.f53932b.length;
+        int[] iArr = new int[length];
+        for (int i11 = 0; i11 < length; i11++) {
+            iArr[i11] = this.f53931a.i(this.f53932b[i11], i10);
+        }
+        return new c(this.f53931a, iArr);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c g(c cVar) {
+        if (this.f53931a.equals(cVar.f53931a)) {
+            if (!e() && !cVar.e()) {
+                int[] iArr = this.f53932b;
+                int length = iArr.length;
+                int[] iArr2 = cVar.f53932b;
+                int length2 = iArr2.length;
+                int[] iArr3 = new int[(length + length2) - 1];
+                for (int i10 = 0; i10 < length; i10++) {
+                    int i11 = iArr[i10];
+                    for (int i12 = 0; i12 < length2; i12++) {
+                        int i13 = i10 + i12;
+                        b bVar = this.f53931a;
+                        iArr3[i13] = bVar.a(iArr3[i13], bVar.i(i11, iArr2[i12]));
+                    }
+                }
+                return new c(this.f53931a, iArr3);
+            }
+            return this.f53931a.f();
+        }
+        throw new IllegalArgumentException("ModulusPolys do not have same ModulusGF field");
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c h(int i10, int i11) {
+        if (i10 >= 0) {
+            if (i11 == 0) {
+                return this.f53931a.f();
+            }
+            int length = this.f53932b.length;
+            int[] iArr = new int[i10 + length];
+            for (int i12 = 0; i12 < length; i12++) {
+                iArr[i12] = this.f53931a.i(this.f53932b[i12], i11);
+            }
+            return new c(this.f53931a, iArr);
+        }
+        throw new IllegalArgumentException();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c i() {
+        int length = this.f53932b.length;
+        int[] iArr = new int[length];
+        for (int i10 = 0; i10 < length; i10++) {
+            iArr[i10] = this.f53931a.j(0, this.f53932b[i10]);
+        }
+        return new c(this.f53931a, iArr);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c j(c cVar) {
+        if (this.f53931a.equals(cVar.f53931a)) {
+            if (cVar.e()) {
+                return this;
+            }
+            return a(cVar.i());
+        }
+        throw new IllegalArgumentException("ModulusPolys do not have same ModulusGF field");
+    }
+
+    public String toString() {
+        StringBuilder sb2 = new StringBuilder(d() * 8);
+        for (int d10 = d(); d10 >= 0; d10--) {
+            int c10 = c(d10);
+            if (c10 != 0) {
+                if (c10 < 0) {
+                    sb2.append(" - ");
+                    c10 = -c10;
+                } else if (sb2.length() > 0) {
+                    sb2.append(" + ");
+                }
+                if (d10 == 0 || c10 != 1) {
+                    sb2.append(c10);
+                }
+                if (d10 != 0) {
+                    if (d10 == 1) {
+                        sb2.append('x');
+                    } else {
+                        sb2.append("x^");
+                        sb2.append(d10);
+                    }
                 }
             }
         }
-    }
-
-    /* synthetic */ c(String str, int i10, a aVar) {
-        this(str, i10);
+        return sb2.toString();
     }
 }

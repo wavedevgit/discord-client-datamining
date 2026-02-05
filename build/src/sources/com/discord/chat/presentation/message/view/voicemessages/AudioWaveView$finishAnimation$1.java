@@ -42,7 +42,7 @@ final class AudioWaveView$finishAnimation$1 extends kotlin.coroutines.jvm.intern
     public final java.lang.Object invokeSuspend(java.lang.Object r9) {
         /*
             r8 = this;
-            java.lang.Object r0 = rr.b.f()
+            java.lang.Object r0 = ur.b.f()
             int r1 = r8.label
             r2 = 1
             if (r1 == 0) goto L23
@@ -73,7 +73,7 @@ final class AudioWaveView$finishAnimation$1 extends kotlin.coroutines.jvm.intern
             r5 = r9
         L33:
             if (r1 >= r3) goto L5b
-            kotlinx.coroutines.CoroutineDispatcher r9 = js.m0.a()
+            kotlinx.coroutines.CoroutineDispatcher r9 = ms.m0.a()
             com.discord.chat.presentation.message.view.voicemessages.AudioWaveView$finishAnimation$1$1$1 r6 = new com.discord.chat.presentation.message.view.voicemessages.AudioWaveView$finishAnimation$1$1$1
             r7 = 0
             r6.<init>(r7)
@@ -82,7 +82,7 @@ final class AudioWaveView$finishAnimation$1 extends kotlin.coroutines.jvm.intern
             r8.I$0 = r3
             r8.I$1 = r1
             r8.label = r2
-            java.lang.Object r9 = js.g.g(r9, r6, r8)
+            java.lang.Object r9 = ms.g.g(r9, r6, r8)
             if (r9 != r0) goto L50
             return r0
         L50:
@@ -93,7 +93,7 @@ final class AudioWaveView$finishAnimation$1 extends kotlin.coroutines.jvm.intern
             int r1 = r1 + r2
             goto L33
         L5b:
-            kotlin.Unit r9 = kotlin.Unit.f32464a
+            kotlin.Unit r9 = kotlin.Unit.f31988a
             return r9
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.voicemessages.AudioWaveView$finishAnimation$1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -101,6 +101,6 @@ final class AudioWaveView$finishAnimation$1 extends kotlin.coroutines.jvm.intern
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioWaveView$finishAnimation$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((AudioWaveView$finishAnimation$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

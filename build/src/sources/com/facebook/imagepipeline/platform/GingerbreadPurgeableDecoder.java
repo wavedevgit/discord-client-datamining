@@ -21,10 +21,10 @@ import x8.c;
 public class GingerbreadPurgeableDecoder extends DalvikPurgeableDecoder {
 
     /* renamed from: d  reason: collision with root package name */
-    private static Method f10267d;
+    private static Method f10652d;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b f10268c = c.i();
+    private final b f10653c = c.i();
 
     private static MemoryFile h(CloseableReference closeableReference, int i10, byte[] bArr) {
         int length;
@@ -41,7 +41,7 @@ public class GingerbreadPurgeableDecoder extends DalvikPurgeableDecoder {
         MemoryFile memoryFile = new MemoryFile(null, length + i10);
         memoryFile.allowPurging(false);
         try {
-            jVar = new j((h) closeableReference.C0());
+            jVar = new j((h) closeableReference.E0());
             try {
                 aVar = new a(jVar, i10);
             } catch (Throwable th2) {
@@ -91,7 +91,7 @@ public class GingerbreadPurgeableDecoder extends DalvikPurgeableDecoder {
         }
         try {
             FileDescriptor k10 = k(h10);
-            b bVar = this.f10268c;
+            b bVar = this.f10653c;
             if (bVar != null) {
                 Bitmap bitmap = (Bitmap) o8.j.h(bVar.b(k10, null, options), "BitmapFactory returned null");
                 if (h10 != null) {
@@ -115,14 +115,14 @@ public class GingerbreadPurgeableDecoder extends DalvikPurgeableDecoder {
     }
 
     private synchronized Method j() {
-        if (f10267d == null) {
+        if (f10652d == null) {
             try {
-                f10267d = MemoryFile.class.getDeclaredMethod("getFileDescriptor", null);
+                f10652d = MemoryFile.class.getDeclaredMethod("getFileDescriptor", null);
             } catch (Exception e10) {
                 throw n.a(e10);
             }
         }
-        return f10267d;
+        return f10652d;
     }
 
     private FileDescriptor k(MemoryFile memoryFile) {
@@ -135,7 +135,7 @@ public class GingerbreadPurgeableDecoder extends DalvikPurgeableDecoder {
 
     @Override // com.facebook.imagepipeline.nativecode.DalvikPurgeableDecoder
     protected Bitmap c(CloseableReference closeableReference, BitmapFactory.Options options) {
-        return i(closeableReference, ((h) closeableReference.C0()).size(), null, options);
+        return i(closeableReference, ((h) closeableReference.E0()).size(), null, options);
     }
 
     @Override // com.facebook.imagepipeline.nativecode.DalvikPurgeableDecoder
@@ -144,7 +144,7 @@ public class GingerbreadPurgeableDecoder extends DalvikPurgeableDecoder {
         if (DalvikPurgeableDecoder.e(closeableReference, i10)) {
             bArr = null;
         } else {
-            bArr = DalvikPurgeableDecoder.f10255b;
+            bArr = DalvikPurgeableDecoder.f10640b;
         }
         return i(closeableReference, i10, bArr, options);
     }

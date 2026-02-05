@@ -10,39 +10,39 @@ import org.jetbrains.annotations.NotNull;
 public final class ErrorLogJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18284a;
+    private final m.b f18690a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18285b;
+    private final com.squareup.moshi.h f18691b;
 
     public ErrorLogJsonAdapter(@NotNull com.squareup.moshi.w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("info");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18284a = a10;
+        this.f18690a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "info");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18285b = f10;
+        this.f18691b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public ErrorLog fromJson(com.squareup.moshi.m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f18284a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    str = (String) this.f18285b.fromJson(reader);
+            int W = reader.W(this.f18690a);
+            if (W != -1) {
+                if (W == 0) {
+                    str = (String) this.f18691b.fromJson(reader);
                 }
             } else {
                 reader.E0();
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         return new ErrorLog(str);
     }
 
@@ -51,9 +51,9 @@ public final class ErrorLogJsonAdapter extends com.squareup.moshi.h {
     public void toJson(com.squareup.moshi.t writer, ErrorLog errorLog) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (errorLog != null) {
-            writer.l();
-            writer.A0("info");
-            this.f18285b.toJson(writer, errorLog.a());
+            writer.k();
+            writer.W("info");
+            this.f18691b.toJson(writer, errorLog.a());
             writer.E();
             return;
         }

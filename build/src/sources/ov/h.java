@@ -1,62 +1,33 @@
 package ov;
 
-import java.util.List;
-import kotlin.jvm.internal.Intrinsics;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class h {
+public interface h {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final String f44808a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final String f44809b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final List f44810c;
-
-    public h(String text, String regexPattern, List regexOptions) {
-        Intrinsics.checkNotNullParameter(text, "text");
-        Intrinsics.checkNotNullParameter(regexPattern, "regexPattern");
-        Intrinsics.checkNotNullParameter(regexOptions, "regexOptions");
-        this.f44808a = text;
-        this.f44809b = regexPattern;
-        this.f44810c = regexOptions;
-    }
-
-    public final List a() {
-        return this.f44810c;
-    }
-
-    public final String b() {
-        return this.f44809b;
-    }
-
-    public final String c() {
-        return this.f44808a;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static abstract class a {
+        /* JADX INFO: Access modifiers changed from: protected */
+        public static Type a(int i10, ParameterizedType parameterizedType) {
+            return e0.g(i10, parameterizedType);
         }
-        if (!(obj instanceof h)) {
-            return false;
+
+        /* JADX INFO: Access modifiers changed from: protected */
+        public static Class b(Type type) {
+            return e0.h(type);
         }
-        h hVar = (h) obj;
-        if (Intrinsics.areEqual(this.f44808a, hVar.f44808a) && Intrinsics.areEqual(this.f44809b, hVar.f44809b) && Intrinsics.areEqual(this.f44810c, hVar.f44810c)) {
-            return true;
+
+        public h c(Type type, Annotation[] annotationArr, Annotation[] annotationArr2, a0 a0Var) {
+            return null;
         }
-        return false;
+
+        public abstract h d(Type type, Annotation[] annotationArr, a0 a0Var);
+
+        public h e(Type type, Annotation[] annotationArr, a0 a0Var) {
+            return null;
+        }
     }
 
-    public int hashCode() {
-        return (((this.f44808a.hashCode() * 31) + this.f44809b.hashCode()) * 31) + this.f44810c.hashCode();
-    }
-
-    public String toString() {
-        String str = this.f44808a;
-        String str2 = this.f44809b;
-        List list = this.f44810c;
-        return "MatchArguments(text=" + str + ", regexPattern=" + str2 + ", regexOptions=" + list + ")";
-    }
+    Object a(Object obj);
 }

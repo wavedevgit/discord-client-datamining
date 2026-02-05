@@ -1,294 +1,155 @@
 package ot;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import nt.a;
-/* JADX INFO: Access modifiers changed from: package-private */
+import net.time4j.a0;
+import wt.f;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements mt.d {
+public enum b {
+    VERNAL_EQUINOX,
+    SUMMER_SOLSTICE,
+    AUTUMNAL_EQUINOX,
+    WINTER_SOLSTICE;
+    
 
-    /* renamed from: g  reason: collision with root package name */
-    static final mt.c f44568g = nt.a.e("PLUS_SIGN", String.class);
+    /* renamed from: p  reason: collision with root package name */
+    private static final int[] f44433p = {485, 203, 199, 182, 156, 136, 77, 74, 70, 58, 52, 50, 45, 44, 29, 18, 17, 16, 14, 12, 12, 12, 9, 8};
 
-    /* renamed from: h  reason: collision with root package name */
-    static final mt.c f44569h = nt.a.e("MINUS_SIGN", String.class);
+    /* renamed from: q  reason: collision with root package name */
+    private static final double[] f44434q = {324.96d, 337.23d, 342.08d, 27.85d, 73.14d, 171.52d, 222.54d, 296.72d, 243.58d, 119.81d, 297.17d, 21.02d, 247.54d, 325.15d, 60.93d, 155.12d, 288.79d, 198.04d, 199.76d, 95.39d, 287.11d, 320.81d, 227.73d, 15.45d};
 
-    /* renamed from: i  reason: collision with root package name */
-    private static final nt.i f44570i;
+    /* renamed from: r  reason: collision with root package name */
+    private static final double[] f44435r = {1934.136d, 32964.467d, 20.186d, 445267.112d, 45036.886d, 22518.443d, 65928.934d, 3034.906d, 9037.513d, 33718.147d, 150.678d, 2281.226d, 29929.562d, 31555.956d, 4443.417d, 67555.328d, 4562.452d, 62894.029d, 31436.921d, 14577.848d, 31931.756d, 34777.259d, 1222.114d, 16859.074d};
 
-    /* renamed from: j  reason: collision with root package name */
-    private static final char f44571j;
-
-    /* renamed from: k  reason: collision with root package name */
-    private static final ConcurrentMap f44572k;
-
-    /* renamed from: l  reason: collision with root package name */
-    private static final a f44573l;
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Map f44574a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final nt.a f44575b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final Locale f44576c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final int f44577d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final int f44578e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final mt.n f44579f;
-
-    /* JADX INFO: Access modifiers changed from: private */
+    /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class a {
+    public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final nt.j f44580a;
+        static final /* synthetic */ int[] f44437a;
 
-        /* renamed from: b  reason: collision with root package name */
-        private final char f44581b;
-
-        /* renamed from: c  reason: collision with root package name */
-        private final char f44582c;
-
-        /* renamed from: d  reason: collision with root package name */
-        private final String f44583d;
-
-        /* renamed from: e  reason: collision with root package name */
-        private final String f44584e;
-
-        a(nt.j jVar, char c10, char c11, String str, String str2) {
-            this.f44580a = jVar;
-            this.f44581b = c10;
-            this.f44582c = c11;
-            this.f44583d = str;
-            this.f44584e = str2;
-        }
-    }
-
-    static {
-        char c10;
-        nt.i iVar = null;
-        int i10 = 0;
-        for (nt.i iVar2 : kt.d.c().g(nt.i.class)) {
-            int length = iVar2.a().length;
-            if (length > i10) {
-                iVar = iVar2;
-                i10 = length;
+        static {
+            int[] iArr = new int[b.values().length];
+            f44437a = iArr;
+            try {
+                iArr[b.VERNAL_EQUINOX.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f44437a[b.SUMMER_SOLSTICE.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f44437a[b.AUTUMNAL_EQUINOX.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            try {
+                f44437a[b.WINTER_SOLSTICE.ordinal()] = 4;
+            } catch (NoSuchFieldError unused4) {
             }
         }
-        if (iVar == null) {
-            iVar = st.f.f49646d;
-        }
-        f44570i = iVar;
-        if (Boolean.getBoolean("net.time4j.format.iso.decimal.dot")) {
-            c10 = '.';
-        } else {
-            c10 = ',';
-        }
-        char c11 = c10;
-        f44571j = c11;
-        f44572k = new ConcurrentHashMap();
-        f44573l = new a(nt.j.f42086d, '0', c11, "+", "-");
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b(nt.a aVar, Locale locale) {
-        this(aVar, locale, 0, 0, null);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static b d(mt.x xVar, nt.a aVar, Locale locale) {
-        a.b bVar = new a.b(xVar);
-        bVar.d(nt.a.f42031f, nt.g.SMART);
-        bVar.d(nt.a.f42032g, nt.v.WIDE);
-        bVar.d(nt.a.f42033h, nt.m.FORMAT);
-        bVar.b(nt.a.f42041p, ' ');
-        bVar.f(aVar);
-        return new b(bVar.a(), locale).n(locale);
-    }
-
-    private static boolean j(Object obj, Object obj2) {
-        if (obj == null) {
-            if (obj2 == null) {
-                return true;
-            }
-            return false;
-        }
-        return obj.equals(obj2);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static b k(b bVar, b bVar2) {
-        HashMap hashMap = new HashMap();
-        hashMap.putAll(bVar2.f44574a);
-        hashMap.putAll(bVar.f44574a);
-        return new b(new a.b().f(bVar2.f44575b).f(bVar.f44575b).a(), Locale.ROOT, 0, 0, null, hashMap).n(bVar.f44576c);
-    }
-
-    @Override // mt.d
-    public boolean a(mt.c cVar) {
-        if (this.f44574a.containsKey(cVar.name())) {
-            return true;
-        }
-        return this.f44575b.a(cVar);
-    }
-
-    @Override // mt.d
-    public Object b(mt.c cVar, Object obj) {
-        if (this.f44574a.containsKey(cVar.name())) {
-            return cVar.type().cast(this.f44574a.get(cVar.name()));
-        }
-        return this.f44575b.b(cVar, obj);
-    }
-
-    @Override // mt.d
-    public Object c(mt.c cVar) {
-        if (this.f44574a.containsKey(cVar.name())) {
-            return cVar.type().cast(this.f44574a.get(cVar.name()));
-        }
-        return this.f44575b.c(cVar);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public nt.a e() {
-        return this.f44575b;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj instanceof b) {
-            b bVar = (b) obj;
-            if (this.f44575b.equals(bVar.f44575b) && this.f44576c.equals(bVar.f44576c) && this.f44577d == bVar.f44577d && this.f44578e == bVar.f44578e && j(this.f44579f, bVar.f44579f) && this.f44574a.equals(bVar.f44574a)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public mt.n f() {
-        return this.f44579f;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int g() {
-        return this.f44577d;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public Locale h() {
-        return this.f44576c;
-    }
-
-    public int hashCode() {
-        return (this.f44575b.hashCode() * 7) + (this.f44574a.hashCode() * 37);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public int i() {
-        return this.f44578e;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b l(nt.a aVar) {
-        return new b(aVar, this.f44576c, this.f44577d, this.f44578e, this.f44579f, this.f44574a);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b m(mt.c cVar, Object obj) {
-        HashMap hashMap = new HashMap(this.f44574a);
-        if (obj == null) {
-            hashMap.remove(cVar.name());
-        } else {
-            hashMap.put(cVar.name(), obj);
-        }
-        return new b(this.f44575b, this.f44576c, this.f44577d, this.f44578e, this.f44579f, hashMap);
-    }
-
-    b n(Locale locale) {
-        String str;
-        String str2;
-        a.b bVar = new a.b();
-        bVar.f(this.f44575b);
-        String a10 = st.d.a(locale);
-        String country = locale.getCountry();
-        if (a10.isEmpty() && country.isEmpty()) {
-            locale = Locale.ROOT;
-            bVar.d(nt.a.f42037l, nt.j.f42086d);
-            bVar.b(nt.a.f42040o, f44571j);
-            str = "+";
-            str2 = "-";
-        } else {
-            if (!country.isEmpty()) {
-                a10 = a10 + "_" + country;
-            }
-            a aVar = (a) f44572k.get(a10);
-            if (aVar == null) {
-                try {
-                    nt.i iVar = f44570i;
-                    aVar = new a(iVar.d(locale), iVar.f(locale), iVar.b(locale), iVar.c(locale), iVar.e(locale));
-                } catch (RuntimeException unused) {
-                    aVar = f44573l;
-                }
-                a aVar2 = (a) f44572k.putIfAbsent(a10, aVar);
-                if (aVar2 != null) {
-                    aVar = aVar2;
-                }
-            }
-            bVar.d(nt.a.f42037l, aVar.f44580a);
-            bVar.b(nt.a.f42038m, aVar.f44581b);
-            bVar.b(nt.a.f42040o, aVar.f44582c);
-            str = aVar.f44583d;
-            str2 = aVar.f44584e;
-        }
-        Locale locale2 = locale;
-        bVar.h(locale2);
-        HashMap hashMap = new HashMap(this.f44574a);
-        hashMap.put(f44568g.name(), str);
-        hashMap.put(f44569h.name(), str2);
-        return new b(bVar.a(), locale2, this.f44577d, this.f44578e, this.f44579f, hashMap);
-    }
-
-    public String toString() {
-        return b.class.getName() + "[attributes=" + this.f44575b + ",locale=" + this.f44576c + ",level=" + this.f44577d + ",section=" + this.f44578e + ",print-condition=" + this.f44579f + ",other=" + this.f44574a + ']';
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b(nt.a aVar, Locale locale, int i10, int i11, mt.n nVar) {
-        if (aVar != null) {
-            this.f44575b = aVar;
-            this.f44576c = locale == null ? Locale.ROOT : locale;
-            this.f44577d = i10;
-            this.f44578e = i11;
-            this.f44579f = nVar;
-            this.f44574a = Collections.EMPTY_MAP;
+    private static void a(int i10) {
+        if (i10 >= -2000 && i10 <= 3000) {
             return;
         }
-        throw new NullPointerException("Missing format attributes.");
+        throw new IllegalArgumentException("Year out of supported range: -2000 <= " + i10 + " <= +3000");
     }
 
-    private b(nt.a aVar, Locale locale, int i10, int i11, mt.n nVar, Map map) {
-        if (aVar != null) {
-            this.f44575b = aVar;
-            this.f44576c = locale == null ? Locale.ROOT : locale;
-            this.f44577d = i10;
-            this.f44578e = i11;
-            this.f44579f = nVar;
-            this.f44574a = Collections.unmodifiableMap(map);
-            return;
+    private static double d(double d10) {
+        return Math.cos((d10 * 3.141592653589793d) / 180.0d);
+    }
+
+    private double f(int i10) {
+        double g10 = g(i10);
+        double d10 = (g10 - 2451545.0d) / 36525.0d;
+        double d11 = (35999.373d * d10) - 2.47d;
+        return g10 + ((h(d10) * 1.0E-5d) / (((d(d11) * 0.0334d) + 1.0d) + (d(d11 * 2.0d) * 7.0E-4d)));
+    }
+
+    private double g(int i10) {
+        double d10;
+        double d11;
+        double d12;
+        double d13;
+        if (i10 < 1000) {
+            double d14 = i10 / 1000.0d;
+            int i11 = a.f44437a[ordinal()];
+            if (i11 != 1) {
+                if (i11 != 2) {
+                    if (i11 != 3) {
+                        if (i11 == 4) {
+                            d10 = ((((((-0.00933d) - (6.0E-5d * d14)) * d14) - 0.00769d) * d14) + 365242.88257d) * d14;
+                            d11 = 1721414.39987d;
+                        } else {
+                            throw new AssertionError(this);
+                        }
+                    } else {
+                        d12 = ((((((7.4E-4d * d14) - 0.00297d) * d14) - 0.11677d) * d14) + 365242.49558d) * d14;
+                        d13 = 1721325.70455d;
+                    }
+                } else {
+                    d12 = ((((((2.5E-4d * d14) + 0.00907d) * d14) - 0.05323d) * d14) + 365241.72562d) * d14;
+                    d13 = 1721233.25401d;
+                }
+                return d12 + d13;
+            }
+            d10 = (((((0.00111d - (7.1E-4d * d14)) * d14) + 0.06134d) * d14) + 365242.1374d) * d14;
+            d11 = 1721139.29189d;
+            return d10 + d11;
         }
-        throw new NullPointerException("Missing format attributes.");
+        double d15 = (i10 - 2000) / 1000.0d;
+        int i12 = a.f44437a[ordinal()];
+        if (i12 != 1) {
+            if (i12 != 2) {
+                if (i12 != 3) {
+                    if (i12 == 4) {
+                        d12 = ((((((3.2E-4d * d15) - 0.00823d) * d15) - 0.06223d) * d15) + 365242.74049d) * d15;
+                        d13 = 2451900.05952d;
+                    } else {
+                        throw new AssertionError(this);
+                    }
+                } else {
+                    d12 = ((((((7.8E-4d * d15) + 0.00337d) * d15) - 0.11575d) * d15) + 365242.01767d) * d15;
+                    d13 = 2451810.21715d;
+                }
+                return d12 + d13;
+            }
+            d10 = (((((0.00888d - (3.0E-4d * d15)) * d15) + 0.00325d) * d15) + 365241.62603d) * d15;
+            d11 = 2451716.56767d;
+        } else {
+            d10 = ((((((-0.00411d) - (5.7E-4d * d15)) * d15) + 0.05169d) * d15) + 365242.37404d) * d15;
+            d11 = 2451623.80984d;
+        }
+        return d10 + d11;
+    }
+
+    private static double h(double d10) {
+        double d11 = 0.0d;
+        for (int i10 = 0; i10 < 24; i10++) {
+            d11 += f44433p[i10] * d(f44434q[i10] + (f44435r[i10] * d10));
+        }
+        return d11;
+    }
+
+    public a0 e(int i10) {
+        double d10;
+        f fVar;
+        a(i10);
+        double f10 = (f(i10) - 2441317.5d) * 86400.0d;
+        boolean D = wt.d.w().D();
+        if (D && i10 >= 1972) {
+            d10 = f10 - 42.184d;
+            fVar = f.UTC;
+        } else {
+            d10 = f10 - f.d(i10, (ordinal() + 1) * 3);
+            fVar = f.UT;
+        }
+        long floor = (long) Math.floor(d10);
+        int i11 = (int) ((d10 - floor) * 1.0E9d);
+        if (!D) {
+            floor += 63072000;
+            fVar = f.POSIX;
+        }
+        return a0.l0(floor, i11, fVar);
     }
 }

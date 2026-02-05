@@ -1,32 +1,26 @@
 package xj;
 
-import android.graphics.PointF;
-import com.facebook.react.uimanager.ViewProps;
-import og.xe;
-import og.ye;
+import mg.zk;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class f {
+public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f53339a;
+    private final h f53884a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final PointF f53340b;
+    private final sj.d f53885b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final sj.i f53886c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public f(int i10, PointF pointF) {
-        this.f53339a = i10;
-        this.f53340b = pointF;
+    public f(h hVar, sj.d dVar, sj.i iVar) {
+        this.f53884a = hVar;
+        this.f53885b = dVar;
+        this.f53886c = iVar;
     }
 
-    public PointF a() {
-        return this.f53340b;
-    }
-
-    public String toString() {
-        xe a10 = ye.a("FaceLandmark");
-        a10.b("type", this.f53339a);
-        a10.c(ViewProps.POSITION, this.f53340b);
-        return a10.toString();
+    public final g a(uj.b bVar) {
+        return new g(bVar, (k) this.f53884a.b(bVar), this.f53885b.a(bVar.c()), zk.b(b.d()), this.f53886c);
     }
 }

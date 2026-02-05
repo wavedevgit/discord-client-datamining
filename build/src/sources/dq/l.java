@@ -1,47 +1,94 @@
 package dq;
 
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import androidx.viewbinding.ViewBinding;
-import com.google.android.material.textfield.TextInputLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
+import com.withpersona.sdk2.inquiry.network.dto.ui.components.ClickableStack;
+import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StyleElements;
+import com.withpersona.sdk2.inquiry.steps.ui.components.ClickableStackComponent;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.Unit;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class l implements ViewBinding {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final TextInputLayout f20795a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final TextInputLayout f20796b;
-
-    private l(TextInputLayout textInputLayout, TextInputLayout textInputLayout2) {
-        this.f20795a = textInputLayout;
-        this.f20796b = textInputLayout2;
-    }
-
-    public static l a(View view) {
-        if (view != null) {
-            TextInputLayout textInputLayout = (TextInputLayout) view;
-            return new l(textInputLayout, textInputLayout);
+public abstract class l {
+    public static final ConstraintLayout b(ClickableStackComponent clickableStackComponent, m5 uiComponentHelper, List componentViews, List children, ClickableStack config) {
+        double d10;
+        StyleElements.Axis axis;
+        int[] iArr;
+        StyleElements.Size gapValue;
+        Double dp2;
+        Intrinsics.checkNotNullParameter(clickableStackComponent, "<this>");
+        Intrinsics.checkNotNullParameter(uiComponentHelper, "uiComponentHelper");
+        Intrinsics.checkNotNullParameter(componentViews, "componentViews");
+        Intrinsics.checkNotNullParameter(children, "children");
+        Intrinsics.checkNotNullParameter(config, "config");
+        final gq.e c10 = gq.e.c(uiComponentHelper.b());
+        ConstraintSet constraintSet = new ConstraintSet();
+        constraintSet.f(c10.getRoot());
+        List<View> list = children;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+        for (View view : list) {
+            view.setId(View.generateViewId());
+            view.setSaveEnabled(false);
+            c10.getRoot().addView(view);
+            arrayList.add(Integer.valueOf(view.getId()));
         }
-        throw new NullPointerException("rootView");
-    }
-
-    public static l c(LayoutInflater layoutInflater) {
-        return d(layoutInflater, null, false);
-    }
-
-    public static l d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(yp.f.f55227m, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
+        final ClickableStack.ClickableStackComponentStyle styles = config.getStyles();
+        if (styles != null && (gapValue = styles.getGapValue()) != null && (dp2 = gapValue.getDp()) != null) {
+            d10 = dp2.doubleValue();
+        } else {
+            d10 = 16.0d;
         }
-        return a(inflate);
+        int a10 = (int) pp.h.a(d10);
+        if (styles == null || (axis = styles.getAxisValue()) == null) {
+            axis = StyleElements.Axis.HORIZONTAL;
+        }
+        StyleElements.PositionType positionType = null;
+        if (axis == StyleElements.Axis.HORIZONTAL) {
+            ConstraintLayout root = c10.getRoot();
+            Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
+            if (styles != null) {
+                iArr = styles.getChildSizesValue();
+            } else {
+                iArr = null;
+            }
+            if (styles != null) {
+                positionType = styles.getAlignmentValue();
+            }
+            a5.a(root, constraintSet, componentViews, arrayList, iArr, positionType, a10);
+        } else {
+            StyleElements.PositionType positionType2 = null;
+            ConstraintLayout root2 = c10.getRoot();
+            Intrinsics.checkNotNullExpressionValue(root2, "getRoot(...)");
+            if (styles != null) {
+                positionType2 = styles.getAlignmentValue();
+            }
+            a5.b(root2, constraintSet, componentViews, arrayList, positionType2, a10);
+        }
+        if (styles != null) {
+            uiComponentHelper.d(new Function0() { // from class: dq.k
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    Unit c11;
+                    c11 = l.c(gq.e.this, styles);
+                    return c11;
+                }
+            });
+        }
+        constraintSet.c(c10.getRoot());
+        ConstraintLayout root3 = c10.getRoot();
+        Intrinsics.checkNotNullExpressionValue(root3, "getRoot(...)");
+        return root3;
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public TextInputLayout getRoot() {
-        return this.f20795a;
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit c(gq.e eVar, ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle) {
+        ConstraintLayout root = eVar.getRoot();
+        Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
+        iq.q.b(root, clickableStackComponentStyle);
+        return Unit.f31988a;
     }
 }

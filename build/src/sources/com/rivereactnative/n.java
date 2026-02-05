@@ -9,10 +9,10 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class n {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f17300a = new a(null);
+    public static final a f17706a = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static Function2 f17301b;
+    private static Function2 f17707b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -21,7 +21,7 @@ public abstract class n {
         }
 
         public final Function2 a() {
-            return n.f17301b;
+            return n.f17707b;
         }
 
         public final void b(Throwable error, String context) {
@@ -31,7 +31,7 @@ public abstract class n {
             if (a10 != null) {
                 try {
                     a10.invoke(error, context);
-                    Unit unit = Unit.f32464a;
+                    Unit unit = Unit.f31988a;
                     return;
                 } catch (Throwable th2) {
                     Log.e("RiveReactNative", "Error in custom error handler for context: " + context, th2);
@@ -43,7 +43,7 @@ public abstract class n {
         }
 
         public final void c(Function2 function2) {
-            n.f17301b = function2;
+            n.f17707b = function2;
         }
 
         private a() {

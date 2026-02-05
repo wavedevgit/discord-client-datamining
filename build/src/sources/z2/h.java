@@ -10,7 +10,7 @@ import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.jvm.internal.Intrinsics;
-import lr.p;
+import or.p;
 import w2.k;
 import y2.d;
 import y2.f;
@@ -19,16 +19,16 @@ import z2.d;
 public final class h implements k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f55566a = new h();
+    public static final h f55155a = new h();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String f55567b = "preferences_pb";
+    private static final String f55156b = "preferences_pb";
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f55568a;
+        public static final /* synthetic */ int[] f55157a;
 
         static {
             int[] iArr = new int[f.b.values().length];
@@ -40,7 +40,7 @@ public final class h implements k {
             iArr[f.b.STRING.ordinal()] = 6;
             iArr[f.b.STRING_SET.ordinal()] = 7;
             iArr[f.b.VALUE_NOT_SET.ordinal()] = 8;
-            f55568a = iArr;
+            f55157a = iArr;
         }
     }
 
@@ -53,7 +53,7 @@ public final class h implements k {
         if (S == null) {
             i10 = -1;
         } else {
-            i10 = a.f55568a[S.ordinal()];
+            i10 = a.f55157a[S.ordinal()];
         }
         switch (i10) {
             case -1:
@@ -129,14 +129,14 @@ public final class h implements k {
 
     @Override // w2.k
     public Object c(InputStream inputStream, Continuation continuation) {
-        y2.d a10 = y2.b.f53637a.a(inputStream);
+        y2.d a10 = y2.b.f54333a.a(inputStream);
         z2.a b10 = e.b(new d.b[0]);
         Map E = a10.E();
         Intrinsics.checkNotNullExpressionValue(E, "preferencesProto.preferencesMap");
         for (Map.Entry entry : E.entrySet()) {
             String name = (String) entry.getKey();
             y2.f value = (y2.f) entry.getValue();
-            h hVar = f55566a;
+            h hVar = f55155a;
             Intrinsics.checkNotNullExpressionValue(name, "name");
             Intrinsics.checkNotNullExpressionValue(value, "value");
             hVar.d(name, value, b10);
@@ -151,7 +151,7 @@ public final class h implements k {
     }
 
     public final String f() {
-        return f55567b;
+        return f55156b;
     }
 
     @Override // w2.k
@@ -163,6 +163,6 @@ public final class h implements k {
             H.q(((d.a) entry.getKey()).a(), g(entry.getValue()));
         }
         ((y2.d) H.g()).g(outputStream);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 }

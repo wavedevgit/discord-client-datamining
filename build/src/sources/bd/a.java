@@ -9,52 +9,52 @@ import ne.h0;
 abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f6372a;
+    public final int f6219a;
 
     /* renamed from: bd.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    static final class C0100a extends a {
+    static final class C0097a extends a {
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f6373b;
+        public final long f6220b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final List f6374c;
+        public final List f6221c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final List f6375d;
+        public final List f6222d;
 
-        public C0100a(int i10, long j10) {
+        public C0097a(int i10, long j10) {
             super(i10);
-            this.f6373b = j10;
-            this.f6374c = new ArrayList();
-            this.f6375d = new ArrayList();
+            this.f6220b = j10;
+            this.f6221c = new ArrayList();
+            this.f6222d = new ArrayList();
         }
 
-        public void d(C0100a c0100a) {
-            this.f6375d.add(c0100a);
+        public void d(C0097a c0097a) {
+            this.f6222d.add(c0097a);
         }
 
         public void e(b bVar) {
-            this.f6374c.add(bVar);
+            this.f6221c.add(bVar);
         }
 
-        public C0100a f(int i10) {
-            int size = this.f6375d.size();
+        public C0097a f(int i10) {
+            int size = this.f6222d.size();
             for (int i11 = 0; i11 < size; i11++) {
-                C0100a c0100a = (C0100a) this.f6375d.get(i11);
-                if (c0100a.f6372a == i10) {
-                    return c0100a;
+                C0097a c0097a = (C0097a) this.f6222d.get(i11);
+                if (c0097a.f6219a == i10) {
+                    return c0097a;
                 }
             }
             return null;
         }
 
         public b g(int i10) {
-            int size = this.f6374c.size();
+            int size = this.f6221c.size();
             for (int i11 = 0; i11 < size; i11++) {
-                b bVar = (b) this.f6374c.get(i11);
-                if (bVar.f6372a == i10) {
+                b bVar = (b) this.f6221c.get(i11);
+                if (bVar.f6219a == i10) {
                     return bVar;
                 }
             }
@@ -63,7 +63,7 @@ abstract class a {
 
         @Override // bd.a
         public String toString() {
-            return a.a(this.f6372a) + " leaves: " + Arrays.toString(this.f6374c.toArray()) + " containers: " + Arrays.toString(this.f6375d.toArray());
+            return a.a(this.f6219a) + " leaves: " + Arrays.toString(this.f6221c.toArray()) + " containers: " + Arrays.toString(this.f6222d.toArray());
         }
     }
 
@@ -71,16 +71,16 @@ abstract class a {
     static final class b extends a {
 
         /* renamed from: b  reason: collision with root package name */
-        public final h0 f6376b;
+        public final h0 f6223b;
 
         public b(int i10, h0 h0Var) {
             super(i10);
-            this.f6376b = h0Var;
+            this.f6223b = h0Var;
         }
     }
 
     public a(int i10) {
-        this.f6372a = i10;
+        this.f6219a = i10;
     }
 
     public static String a(int i10) {
@@ -96,6 +96,6 @@ abstract class a {
     }
 
     public String toString() {
-        return a(this.f6372a);
+        return a(this.f6219a);
     }
 }

@@ -1,34 +1,24 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function arg0() {
-        var0 = arg0;
-        var3 = var0.kind;
-        var2 = var0.value;
-        var4 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 0;
-        var1 = var1[var0];
-        var0 = undefined;
-        var0 = var4.bind(var0)(var1);
-        var1 = var0.NativeDocumentPicker;
-        var0 = var1.isKnownType;
-        var0 = var0.bind(var1)(var3, var2);
-        return var0;
-    };
-    var1.isKnownType = var0;
+    var1 = dependencyMap;
+    var0 = 0;
+    var2 = var1[var0];
+    var1 = require;
     var0 = undefined;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/design/components/LottieIcon/native/generated/lotties',
+        'scales': null,
+        'hash': '6ab310fc9336bead9d2a9726051f2397',
+        'name': 'SpendEarnOrbsLightTheme',
+        'type': 'lottie'
+    };
+    var4 = [1];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9577]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);

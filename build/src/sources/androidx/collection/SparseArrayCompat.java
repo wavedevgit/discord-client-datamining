@@ -11,53 +11,53 @@ import v0.a;
 public class SparseArrayCompat implements Cloneable {
 
     /* renamed from: d  reason: collision with root package name */
-    public /* synthetic */ boolean f2192d;
+    public /* synthetic */ boolean f2304d;
 
     /* renamed from: e  reason: collision with root package name */
-    public /* synthetic */ int[] f2193e;
+    public /* synthetic */ int[] f2305e;
 
     /* renamed from: i  reason: collision with root package name */
-    public /* synthetic */ Object[] f2194i;
+    public /* synthetic */ Object[] f2306i;
 
     /* renamed from: o  reason: collision with root package name */
-    public /* synthetic */ int f2195o;
+    public /* synthetic */ int f2307o;
 
     public SparseArrayCompat() {
         this(0, 1, null);
     }
 
     public void a(int i10, Object obj) {
-        int i11 = this.f2195o;
-        if (i11 != 0 && i10 <= this.f2193e[i11 - 1]) {
+        int i11 = this.f2307o;
+        if (i11 != 0 && i10 <= this.f2305e[i11 - 1]) {
             k(i10, obj);
             return;
         }
-        if (this.f2192d && i11 >= this.f2193e.length) {
+        if (this.f2304d && i11 >= this.f2305e.length) {
             u.e(this);
         }
-        int i12 = this.f2195o;
-        if (i12 >= this.f2193e.length) {
+        int i12 = this.f2307o;
+        if (i12 >= this.f2305e.length) {
             int e10 = a.e(i12 + 1);
-            int[] copyOf = Arrays.copyOf(this.f2193e, e10);
+            int[] copyOf = Arrays.copyOf(this.f2305e, e10);
             Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f2193e = copyOf;
-            Object[] copyOf2 = Arrays.copyOf(this.f2194i, e10);
+            this.f2305e = copyOf;
+            Object[] copyOf2 = Arrays.copyOf(this.f2306i, e10);
             Intrinsics.checkNotNullExpressionValue(copyOf2, "copyOf(...)");
-            this.f2194i = copyOf2;
+            this.f2306i = copyOf2;
         }
-        this.f2193e[i12] = i10;
-        this.f2194i[i12] = obj;
-        this.f2195o = i12 + 1;
+        this.f2305e[i12] = i10;
+        this.f2306i[i12] = obj;
+        this.f2307o = i12 + 1;
     }
 
     public void b() {
-        int i10 = this.f2195o;
-        Object[] objArr = this.f2194i;
+        int i10 = this.f2307o;
+        Object[] objArr = this.f2306i;
         for (int i11 = 0; i11 < i10; i11++) {
             objArr[i11] = null;
         }
-        this.f2195o = 0;
-        this.f2192d = false;
+        this.f2307o = 0;
+        this.f2304d = false;
     }
 
     /* renamed from: c */
@@ -65,8 +65,8 @@ public class SparseArrayCompat implements Cloneable {
         Object clone = super.clone();
         Intrinsics.checkNotNull(clone, "null cannot be cast to non-null type androidx.collection.SparseArrayCompat<E of androidx.collection.SparseArrayCompat>");
         SparseArrayCompat sparseArrayCompat = (SparseArrayCompat) clone;
-        sparseArrayCompat.f2193e = (int[]) this.f2193e.clone();
-        sparseArrayCompat.f2194i = (Object[]) this.f2194i.clone();
+        sparseArrayCompat.f2305e = (int[]) this.f2305e.clone();
+        sparseArrayCompat.f2306i = (Object[]) this.f2306i.clone();
         return sparseArrayCompat;
     }
 
@@ -86,19 +86,19 @@ public class SparseArrayCompat implements Cloneable {
     }
 
     public int g(int i10) {
-        if (this.f2192d) {
+        if (this.f2304d) {
             u.e(this);
         }
-        return a.a(this.f2193e, this.f2195o, i10);
+        return a.a(this.f2305e, this.f2307o, i10);
     }
 
     public int i(Object obj) {
-        if (this.f2192d) {
+        if (this.f2304d) {
             u.e(this);
         }
-        int i10 = this.f2195o;
+        int i10 = this.f2307o;
         for (int i11 = 0; i11 < i10; i11++) {
-            if (this.f2194i[i11] == obj) {
+            if (this.f2306i[i11] == obj) {
                 return i11;
             }
         }
@@ -106,72 +106,72 @@ public class SparseArrayCompat implements Cloneable {
     }
 
     public int j(int i10) {
-        if (this.f2192d) {
+        if (this.f2304d) {
             u.e(this);
         }
-        return this.f2193e[i10];
+        return this.f2305e[i10];
     }
 
     public void k(int i10, Object obj) {
         Object obj2;
-        int a10 = a.a(this.f2193e, this.f2195o, i10);
+        int a10 = a.a(this.f2305e, this.f2307o, i10);
         if (a10 >= 0) {
-            this.f2194i[a10] = obj;
+            this.f2306i[a10] = obj;
             return;
         }
         int i11 = ~a10;
-        if (i11 < this.f2195o) {
-            Object obj3 = this.f2194i[i11];
-            obj2 = u.f50384a;
+        if (i11 < this.f2307o) {
+            Object obj3 = this.f2306i[i11];
+            obj2 = u.f51156a;
             if (obj3 == obj2) {
-                this.f2193e[i11] = i10;
-                this.f2194i[i11] = obj;
+                this.f2305e[i11] = i10;
+                this.f2306i[i11] = obj;
                 return;
             }
         }
-        if (this.f2192d && this.f2195o >= this.f2193e.length) {
+        if (this.f2304d && this.f2307o >= this.f2305e.length) {
             u.e(this);
-            i11 = ~a.a(this.f2193e, this.f2195o, i10);
+            i11 = ~a.a(this.f2305e, this.f2307o, i10);
         }
-        int i12 = this.f2195o;
-        if (i12 >= this.f2193e.length) {
+        int i12 = this.f2307o;
+        if (i12 >= this.f2305e.length) {
             int e10 = a.e(i12 + 1);
-            int[] copyOf = Arrays.copyOf(this.f2193e, e10);
+            int[] copyOf = Arrays.copyOf(this.f2305e, e10);
             Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f2193e = copyOf;
-            Object[] copyOf2 = Arrays.copyOf(this.f2194i, e10);
+            this.f2305e = copyOf;
+            Object[] copyOf2 = Arrays.copyOf(this.f2306i, e10);
             Intrinsics.checkNotNullExpressionValue(copyOf2, "copyOf(...)");
-            this.f2194i = copyOf2;
+            this.f2306i = copyOf2;
         }
-        int i13 = this.f2195o;
+        int i13 = this.f2307o;
         if (i13 - i11 != 0) {
-            int[] iArr = this.f2193e;
+            int[] iArr = this.f2305e;
             int i14 = i11 + 1;
             i.i(iArr, iArr, i14, i11, i13);
-            Object[] objArr = this.f2194i;
-            i.k(objArr, objArr, i14, i11, this.f2195o);
+            Object[] objArr = this.f2306i;
+            i.k(objArr, objArr, i14, i11, this.f2307o);
         }
-        this.f2193e[i11] = i10;
-        this.f2194i[i11] = obj;
-        this.f2195o++;
+        this.f2305e[i11] = i10;
+        this.f2306i[i11] = obj;
+        this.f2307o++;
     }
 
     public int l() {
-        if (this.f2192d) {
+        if (this.f2304d) {
             u.e(this);
         }
-        return this.f2195o;
+        return this.f2307o;
     }
 
     public Object m(int i10) {
-        if (this.f2192d) {
+        if (this.f2304d) {
             u.e(this);
         }
-        Object[] objArr = this.f2194i;
+        Object[] objArr = this.f2306i;
         if (i10 < objArr.length) {
             return objArr[i10];
         }
-        e eVar = e.f50351a;
+        e eVar = e.f51123a;
         throw new ArrayIndexOutOfBoundsException();
     }
 
@@ -179,9 +179,9 @@ public class SparseArrayCompat implements Cloneable {
         if (l() <= 0) {
             return "{}";
         }
-        StringBuilder sb2 = new StringBuilder(this.f2195o * 28);
+        StringBuilder sb2 = new StringBuilder(this.f2307o * 28);
         sb2.append('{');
-        int i10 = this.f2195o;
+        int i10 = this.f2307o;
         for (int i11 = 0; i11 < i10; i11++) {
             if (i11 > 0) {
                 sb2.append(", ");
@@ -203,13 +203,13 @@ public class SparseArrayCompat implements Cloneable {
 
     public SparseArrayCompat(int i10) {
         if (i10 == 0) {
-            this.f2193e = a.f51047a;
-            this.f2194i = a.f51049c;
+            this.f2305e = a.f51736a;
+            this.f2306i = a.f51738c;
             return;
         }
         int e10 = a.e(i10);
-        this.f2193e = new int[e10];
-        this.f2194i = new Object[e10];
+        this.f2305e = new int[e10];
+        this.f2306i = new Object[e10];
     }
 
     public /* synthetic */ SparseArrayCompat(int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {

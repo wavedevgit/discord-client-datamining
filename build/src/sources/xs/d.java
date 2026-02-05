@@ -1,36 +1,73 @@
 package xs;
 
-import java.util.List;
-import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
+import xs.c;
+import xs.f;
+import xs.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements e {
+public interface d extends c, f, o.a, o.c {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Function1 f53546a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int f53547b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final int f53548c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final List f53549d;
-
-    public d(Function1 number, int i10, int i11, List zerosToAdd) {
-        Intrinsics.checkNotNullParameter(number, "number");
-        Intrinsics.checkNotNullParameter(zerosToAdd, "zerosToAdd");
-        this.f53546a = number;
-        this.f53547b = i10;
-        this.f53548c = i11;
-        this.f53549d = zerosToAdd;
-        if (1 <= i10 && i10 < 10) {
-            if (i10 <= i11 && i11 < 10) {
-                return;
-            }
-            throw new IllegalArgumentException(("The maximum number of digits (" + i11 + ") is not in range " + i10 + "..9").toString());
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static void a(d dVar, zs.o structure) {
+            Intrinsics.checkNotNullParameter(structure, "structure");
+            dVar.d(structure);
         }
-        throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") is not in range 1..9").toString());
+
+        public static void b(d dVar, zs.o structure) {
+            Intrinsics.checkNotNullParameter(structure, "structure");
+            dVar.d(structure);
+        }
+
+        public static void c(d dVar, n format) {
+            Intrinsics.checkNotNullParameter(format, "format");
+            c.a.a(dVar, format);
+        }
+
+        public static void d(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            c.a.b(dVar, padding);
+        }
+
+        public static void e(d dVar, s names) {
+            Intrinsics.checkNotNullParameter(names, "names");
+            c.a.c(dVar, names);
+        }
+
+        public static void f(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            f.a.a(dVar, padding);
+        }
+
+        public static void g(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            f.a.b(dVar, padding);
+        }
+
+        public static void h(d dVar, f0 names) {
+            Intrinsics.checkNotNullParameter(names, "names");
+            c.a.d(dVar, names);
+        }
+
+        public static void i(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            c.a.e(dVar, padding);
+        }
+
+        public static void j(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            f.a.c(dVar, padding);
+        }
+
+        public static void k(d dVar, int i10, int i11) {
+            f.a.d(dVar, i10, i11);
+        }
+
+        public static void l(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            c.a.f(dVar, padding);
+        }
     }
+
+    void d(zs.o oVar);
 }

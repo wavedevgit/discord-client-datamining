@@ -5,23 +5,23 @@ import org.json.JSONObject;
 public final class BillingConfig {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f7515a;
+    private final String f7900a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final JSONObject f7516b;
+    private final JSONObject f7901b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f7517c;
+    private final String f7902c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public BillingConfig(String str) {
-        this.f7515a = str;
+        this.f7900a = str;
         JSONObject jSONObject = new JSONObject(str);
-        this.f7516b = jSONObject;
-        this.f7517c = jSONObject.optString("countryCode");
+        this.f7901b = jSONObject;
+        this.f7902c = jSONObject.optString("countryCode");
     }
 
     public String a() {
-        return this.f7517c;
+        return this.f7902c;
     }
 }

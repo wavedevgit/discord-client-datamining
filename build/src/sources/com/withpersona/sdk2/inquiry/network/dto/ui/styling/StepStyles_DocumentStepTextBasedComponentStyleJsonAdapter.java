@@ -40,24 +40,24 @@ public final class StepStyles_DocumentStepTextBasedComponentStyleJsonAdapter ext
     @NotNull
     public StepStyles.DocumentStepTextBasedComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer = null;
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer2 = null;
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 stepTextBasedComponentStyleContainer = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 stepTextBasedComponentStyleContainer2 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 stepTextBasedComponentStyleContainer3 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.DocumentStepTextBasedComponentStyle(stepTextBasedComponentStyleContainer, stepTextBasedComponentStyleContainer2, stepTextBasedComponentStyleContainer3);
     }
 
@@ -65,12 +65,12 @@ public final class StepStyles_DocumentStepTextBasedComponentStyleJsonAdapter ext
     public void toJson(@NotNull t writer, StepStyles.DocumentStepTextBasedComponentStyle documentStepTextBasedComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStepTextBasedComponentStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, documentStepTextBasedComponentStyle.getBase());
-            writer.A0("documentProcessingText");
+            writer.W("documentProcessingText");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, documentStepTextBasedComponentStyle.getDocumentProcessingText());
-            writer.A0("imageName");
+            writer.W("imageName");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, documentStepTextBasedComponentStyle.getImageName());
             writer.E();
             return;

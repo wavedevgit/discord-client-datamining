@@ -12,9 +12,9 @@ import java.nio.ByteOrder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import ji.s;
 import kotlin.jvm.internal.LongCompanionObject;
 import lc.l0;
+import mi.s;
 import ne.c0;
 import ne.h0;
 import ne.w0;
@@ -25,76 +25,76 @@ import tc.v;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final byte[] f6377a = w0.s0("OpusHead");
+    private static final byte[] f6224a = w0.s0("OpusHead");
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f6378a;
+        public final int f6225a;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f6379b;
+        public int f6226b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f6380c;
+        public int f6227c;
 
         /* renamed from: d  reason: collision with root package name */
-        public long f6381d;
+        public long f6228d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f6382e;
+        private final boolean f6229e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final h0 f6383f;
+        private final h0 f6230f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final h0 f6384g;
+        private final h0 f6231g;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f6385h;
+        private int f6232h;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f6386i;
+        private int f6233i;
 
         public a(h0 h0Var, h0 h0Var2, boolean z10) {
-            this.f6384g = h0Var;
-            this.f6383f = h0Var2;
-            this.f6382e = z10;
+            this.f6231g = h0Var;
+            this.f6230f = h0Var2;
+            this.f6229e = z10;
             h0Var2.U(12);
-            this.f6378a = h0Var2.L();
+            this.f6225a = h0Var2.L();
             h0Var.U(12);
-            this.f6386i = h0Var.L();
+            this.f6233i = h0Var.L();
             tc.n.a(h0Var.q() == 1, "first_chunk must be 1");
-            this.f6379b = -1;
+            this.f6226b = -1;
         }
 
         public boolean a() {
             long J;
             int i10;
-            int i11 = this.f6379b + 1;
-            this.f6379b = i11;
-            if (i11 == this.f6378a) {
+            int i11 = this.f6226b + 1;
+            this.f6226b = i11;
+            if (i11 == this.f6225a) {
                 return false;
             }
-            if (this.f6382e) {
-                J = this.f6383f.M();
+            if (this.f6229e) {
+                J = this.f6230f.M();
             } else {
-                J = this.f6383f.J();
+                J = this.f6230f.J();
             }
-            this.f6381d = J;
-            if (this.f6379b == this.f6385h) {
-                this.f6380c = this.f6384g.L();
-                this.f6384g.V(4);
-                int i12 = this.f6386i - 1;
-                this.f6386i = i12;
+            this.f6228d = J;
+            if (this.f6226b == this.f6232h) {
+                this.f6227c = this.f6231g.L();
+                this.f6231g.V(4);
+                int i12 = this.f6233i - 1;
+                this.f6233i = i12;
                 if (i12 > 0) {
-                    i10 = this.f6384g.L() - 1;
+                    i10 = this.f6231g.L() - 1;
                 } else {
                     i10 = -1;
                 }
-                this.f6385h = i10;
+                this.f6232h = i10;
             }
             return true;
         }
@@ -103,25 +103,25 @@ public abstract class b {
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: bd.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0101b {
+    public static final class C0098b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f6387a;
+        private final String f6234a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final byte[] f6388b;
+        private final byte[] f6235b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final long f6389c;
+        private final long f6236c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final long f6390d;
+        private final long f6237d;
 
-        public C0101b(String str, byte[] bArr, long j10, long j11) {
-            this.f6387a = str;
-            this.f6388b = bArr;
-            this.f6389c = j10;
-            this.f6390d = j11;
+        public C0098b(String str, byte[] bArr, long j10, long j11) {
+            this.f6234a = str;
+            this.f6235b = bArr;
+            this.f6236c = j10;
+            this.f6237d = j11;
         }
     }
 
@@ -129,14 +129,14 @@ public abstract class b {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Metadata f6391a;
+        public final Metadata f6238a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f6392b;
+        public final long f6239b;
 
         public c(Metadata metadata, long j10) {
-            this.f6391a = metadata;
-            this.f6392b = j10;
+            this.f6238a = metadata;
+            this.f6239b = j10;
         }
     }
 
@@ -155,19 +155,19 @@ public abstract class b {
     public static final class e {
 
         /* renamed from: a  reason: collision with root package name */
-        public final p[] f6393a;
+        public final p[] f6240a;
 
         /* renamed from: b  reason: collision with root package name */
-        public Format f6394b;
+        public Format f6241b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f6395c;
+        public int f6242c;
 
         /* renamed from: d  reason: collision with root package name */
-        public int f6396d = 0;
+        public int f6243d = 0;
 
         public e(int i10) {
-            this.f6393a = new p[i10];
+            this.f6240a = new p[i10];
         }
     }
 
@@ -176,47 +176,47 @@ public abstract class b {
     public static final class f implements d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f6397a;
+        private final int f6244a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f6398b;
+        private final int f6245b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final h0 f6399c;
+        private final h0 f6246c;
 
         public f(a.b bVar, Format format) {
-            h0 h0Var = bVar.f6376b;
-            this.f6399c = h0Var;
+            h0 h0Var = bVar.f6223b;
+            this.f6246c = h0Var;
             h0Var.U(12);
             int L = h0Var.L();
-            if ("audio/raw".equals(format.f11303w)) {
+            if ("audio/raw".equals(format.f11688w)) {
                 int i02 = w0.i0(format.L, format.J);
                 if (L == 0 || L % i02 != 0) {
                     y.i("AtomParsers", "Audio sample size mismatch. stsd sample size: " + i02 + ", stsz sample size: " + L);
                     L = i02;
                 }
             }
-            this.f6397a = L == 0 ? -1 : L;
-            this.f6398b = h0Var.L();
+            this.f6244a = L == 0 ? -1 : L;
+            this.f6245b = h0Var.L();
         }
 
         @Override // bd.b.d
         public int a() {
-            int i10 = this.f6397a;
+            int i10 = this.f6244a;
             if (i10 == -1) {
-                return this.f6399c.L();
+                return this.f6246c.L();
             }
             return i10;
         }
 
         @Override // bd.b.d
         public int b() {
-            return this.f6397a;
+            return this.f6244a;
         }
 
         @Override // bd.b.d
         public int c() {
-            return this.f6398b;
+            return this.f6245b;
         }
     }
 
@@ -225,45 +225,45 @@ public abstract class b {
     public static final class g implements d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final h0 f6400a;
+        private final h0 f6247a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f6401b;
+        private final int f6248b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f6402c;
+        private final int f6249c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f6403d;
+        private int f6250d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f6404e;
+        private int f6251e;
 
         public g(a.b bVar) {
-            h0 h0Var = bVar.f6376b;
-            this.f6400a = h0Var;
+            h0 h0Var = bVar.f6223b;
+            this.f6247a = h0Var;
             h0Var.U(12);
-            this.f6402c = h0Var.L() & SetSpanOperation.SPAN_MAX_PRIORITY;
-            this.f6401b = h0Var.L();
+            this.f6249c = h0Var.L() & SetSpanOperation.SPAN_MAX_PRIORITY;
+            this.f6248b = h0Var.L();
         }
 
         @Override // bd.b.d
         public int a() {
-            int i10 = this.f6402c;
+            int i10 = this.f6249c;
             if (i10 == 8) {
-                return this.f6400a.H();
+                return this.f6247a.H();
             }
             if (i10 == 16) {
-                return this.f6400a.N();
+                return this.f6247a.N();
             }
-            int i11 = this.f6403d;
-            this.f6403d = i11 + 1;
+            int i11 = this.f6250d;
+            this.f6250d = i11 + 1;
             if (i11 % 2 == 0) {
-                int H = this.f6400a.H();
-                this.f6404e = H;
+                int H = this.f6247a.H();
+                this.f6251e = H;
                 return (H & 240) >> 4;
             }
-            return this.f6404e & 15;
+            return this.f6251e & 15;
         }
 
         @Override // bd.b.d
@@ -273,7 +273,7 @@ public abstract class b {
 
         @Override // bd.b.d
         public int c() {
-            return this.f6401b;
+            return this.f6248b;
         }
     }
 
@@ -282,18 +282,18 @@ public abstract class b {
     public static final class h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f6405a;
+        private final int f6252a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final long f6406b;
+        private final long f6253b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f6407c;
+        private final int f6254c;
 
         public h(int i10, long j10, int i11) {
-            this.f6405a = i10;
-            this.f6406b = j10;
-            this.f6407c = i11;
+            this.f6252a = i10;
+            this.f6253b = j10;
+            this.f6254c = i11;
         }
     }
 
@@ -301,77 +301,77 @@ public abstract class b {
     public static final class i {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Metadata f6408a;
+        public final Metadata f6255a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Metadata f6409b;
+        public final Metadata f6256b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final Metadata f6410c;
+        public final Metadata f6257c;
 
         public i(Metadata metadata, Metadata metadata2, Metadata metadata3) {
-            this.f6408a = metadata;
-            this.f6409b = metadata2;
-            this.f6410c = metadata3;
+            this.f6255a = metadata;
+            this.f6256b = metadata2;
+            this.f6257c = metadata3;
         }
     }
 
-    private static o A(a.C0100a c0100a, a.b bVar, long j10, rc.m mVar, boolean z10, boolean z11) {
+    private static o A(a.C0097a c0097a, a.b bVar, long j10, rc.m mVar, boolean z10, boolean z11) {
         long j11;
         long[] jArr;
         long[] jArr2;
-        a.C0100a f10;
+        a.C0097a f10;
         Pair i10;
-        a.C0100a c0100a2 = (a.C0100a) ne.a.e(c0100a.f(1835297121));
-        int e10 = e(l(((a.b) ne.a.e(c0100a2.g(1751411826))).f6376b));
+        a.C0097a c0097a2 = (a.C0097a) ne.a.e(c0097a.f(1835297121));
+        int e10 = e(l(((a.b) ne.a.e(c0097a2.g(1751411826))).f6223b));
         if (e10 == -1) {
             return null;
         }
-        h z12 = z(((a.b) ne.a.e(c0100a.g(1953196132))).f6376b);
+        h z12 = z(((a.b) ne.a.e(c0097a.g(1953196132))).f6223b);
         long j12 = -9223372036854775807L;
         if (j10 == -9223372036854775807L) {
-            j11 = z12.f6406b;
+            j11 = z12.f6253b;
         } else {
             j11 = j10;
         }
-        long j13 = q(bVar.f6376b).f6392b;
+        long j13 = q(bVar.f6223b).f6239b;
         if (j11 != -9223372036854775807L) {
             j12 = w0.X0(j11, 1000000L, j13);
         }
         long j14 = j12;
-        Pair n10 = n(((a.b) ne.a.e(c0100a2.g(1835296868))).f6376b);
-        a.b g10 = ((a.C0100a) ne.a.e(((a.C0100a) ne.a.e(c0100a2.f(1835626086))).f(1937007212))).g(1937011556);
+        Pair n10 = n(((a.b) ne.a.e(c0097a2.g(1835296868))).f6223b);
+        a.b g10 = ((a.C0097a) ne.a.e(((a.C0097a) ne.a.e(c0097a2.f(1835626086))).f(1937007212))).g(1937011556);
         if (g10 != null) {
-            e x10 = x(g10.f6376b, z12.f6405a, z12.f6407c, (String) n10.second, mVar, z11);
-            if (!z10 && (f10 = c0100a.f(1701082227)) != null && (i10 = i(f10)) != null) {
+            e x10 = x(g10.f6223b, z12.f6252a, z12.f6254c, (String) n10.second, mVar, z11);
+            if (!z10 && (f10 = c0097a.f(1701082227)) != null && (i10 = i(f10)) != null) {
                 jArr2 = (long[]) i10.second;
                 jArr = (long[]) i10.first;
             } else {
                 jArr = null;
                 jArr2 = null;
             }
-            if (x10.f6394b == null) {
+            if (x10.f6241b == null) {
                 return null;
             }
-            return new o(z12.f6405a, e10, ((Long) n10.first).longValue(), j13, j14, x10.f6394b, x10.f6396d, x10.f6393a, x10.f6395c, jArr, jArr2);
+            return new o(z12.f6252a, e10, ((Long) n10.first).longValue(), j13, j14, x10.f6241b, x10.f6243d, x10.f6240a, x10.f6242c, jArr, jArr2);
         }
         throw l0.a("Malformed sample table (stbl) missing sample description (stsd)", null);
     }
 
-    public static List B(a.C0100a c0100a, v vVar, long j10, rc.m mVar, boolean z10, boolean z11, ii.f fVar) {
+    public static List B(a.C0097a c0097a, v vVar, long j10, rc.m mVar, boolean z10, boolean z11, li.f fVar) {
         o oVar;
         ArrayList arrayList = new ArrayList();
-        for (int i10 = 0; i10 < c0100a.f6375d.size(); i10++) {
-            a.C0100a c0100a2 = (a.C0100a) c0100a.f6375d.get(i10);
-            if (c0100a2.f6372a == 1953653099 && (oVar = (o) fVar.apply(A(c0100a2, (a.b) ne.a.e(c0100a.g(1836476516)), j10, mVar, z10, z11))) != null) {
-                arrayList.add(w(oVar, (a.C0100a) ne.a.e(((a.C0100a) ne.a.e(((a.C0100a) ne.a.e(c0100a2.f(1835297121))).f(1835626086))).f(1937007212)), vVar));
+        for (int i10 = 0; i10 < c0097a.f6222d.size(); i10++) {
+            a.C0097a c0097a2 = (a.C0097a) c0097a.f6222d.get(i10);
+            if (c0097a2.f6219a == 1953653099 && (oVar = (o) fVar.apply(A(c0097a2, (a.b) ne.a.e(c0097a.g(1836476516)), j10, mVar, z10, z11))) != null) {
+                arrayList.add(w(oVar, (a.C0097a) ne.a.e(((a.C0097a) ne.a.e(((a.C0097a) ne.a.e(c0097a2.f(1835297121))).f(1835626086))).f(1937007212)), vVar));
             }
         }
         return arrayList;
     }
 
     public static i C(a.b bVar) {
-        h0 h0Var = bVar.f6376b;
+        h0 h0Var = bVar.f6223b;
         h0Var.U(8);
         Metadata metadata = null;
         Metadata metadata2 = null;
@@ -452,9 +452,9 @@ public abstract class b {
                 if (mVar3 == null) {
                     mVar3 = null;
                 } else {
-                    mVar3 = mVar3.c(((p) t10.second).f6518b);
+                    mVar3 = mVar3.c(((p) t10.second).f6365b);
                 }
-                eVar2.f6393a[i15] = (p) t10.second;
+                eVar2.f6240a[i15] = (p) t10.second;
             }
             h0Var.U(f11);
         }
@@ -475,7 +475,7 @@ public abstract class b {
         int i28 = -1;
         int i29 = -1;
         ByteBuffer byteBuffer = null;
-        C0101b c0101b = null;
+        C0098b c0098b = null;
         boolean z19 = false;
         while (f11 - i23 < i24) {
             h0Var.U(f11);
@@ -500,15 +500,15 @@ public abstract class b {
                 tc.n.a(z18, null);
                 h0Var.U(f13 + 8);
                 oe.a b10 = oe.a.b(h0Var);
-                list2 = b10.f42453a;
-                eVar2.f6395c = b10.f42454b;
+                list2 = b10.f42359a;
+                eVar2.f6242c = b10.f42360b;
                 if (!z19) {
-                    f12 = b10.f42460h;
+                    f12 = b10.f42366h;
                 }
-                str6 = b10.f42461i;
-                i20 = b10.f42457e;
-                i21 = b10.f42458f;
-                i22 = b10.f42459g;
+                str6 = b10.f42367i;
+                i20 = b10.f42363e;
+                i21 = b10.f42364f;
+                i22 = b10.f42365g;
                 str4 = "video/avc";
             } else if (q11 == 1752589123) {
                 if (str == null) {
@@ -519,15 +519,15 @@ public abstract class b {
                 tc.n.a(z17, null);
                 h0Var.U(f13 + 8);
                 oe.f a10 = oe.f.a(h0Var);
-                list2 = a10.f42495a;
-                eVar2.f6395c = a10.f42496b;
+                list2 = a10.f42401a;
+                eVar2.f6242c = a10.f42402b;
                 if (!z19) {
-                    f12 = a10.f42502h;
+                    f12 = a10.f42408h;
                 }
-                str6 = a10.f42503i;
-                i20 = a10.f42499e;
-                i21 = a10.f42500f;
-                i22 = a10.f42501g;
+                str6 = a10.f42409i;
+                i20 = a10.f42405e;
+                i21 = a10.f42406f;
+                i22 = a10.f42407g;
                 str4 = "video/hevc";
             } else {
                 if (q11 == 1685480259 || q11 == 1685485123) {
@@ -541,7 +541,7 @@ public abstract class b {
                     i19 = i29;
                     oe.d a11 = oe.d.a(h0Var);
                     if (a11 != null) {
-                        str6 = a11.f42480c;
+                        str6 = a11.f42386c;
                         str = "video/dolby-vision";
                     }
                 } else {
@@ -662,11 +662,11 @@ public abstract class b {
                                 z12 = false;
                             }
                             tc.n.a(z12, null);
-                            c0101b = j(h0Var, f13);
-                            String str7 = c0101b.f6387a;
-                            byte[] bArr3 = c0101b.f6388b;
+                            c0098b = j(h0Var, f13);
+                            String str7 = c0098b.f6234a;
+                            byte[] bArr3 = c0098b.f6235b;
                             if (bArr3 != null) {
-                                list2 = s.s(bArr3);
+                                list2 = s.t(bArr3);
                             } else {
                                 list2 = list;
                             }
@@ -811,10 +811,10 @@ public abstract class b {
             }
             O.L(new oe.c(i30, i32, i31, bArr));
         }
-        if (c0101b != null) {
-            O.I(li.e.k(c0101b.f6389c)).b0(li.e.k(c0101b.f6390d));
+        if (c0098b != null) {
+            O.I(oi.e.k(c0098b.f6236c)).b0(oi.e.k(c0098b.f6237d));
         }
-        eVar.f6394b = O.G();
+        eVar.f6241b = O.G();
     }
 
     private static Metadata F(h0 h0Var) {
@@ -962,14 +962,14 @@ public abstract class b {
         return Pair.create(num, (p) w0.j(u10));
     }
 
-    private static Pair i(a.C0100a c0100a) {
+    private static Pair i(a.C0097a c0097a) {
         long J;
         long q10;
-        a.b g10 = c0100a.g(1701606260);
+        a.b g10 = c0097a.g(1701606260);
         if (g10 == null) {
             return null;
         }
-        h0 h0Var = g10.f6376b;
+        h0 h0Var = g10.f6223b;
         h0Var.U(8);
         int c10 = bd.a.c(h0Var.q());
         int L = h0Var.L();
@@ -997,7 +997,7 @@ public abstract class b {
         return Pair.create(jArr, jArr2);
     }
 
-    private static C0101b j(h0 h0Var, int i10) {
+    private static C0098b j(h0 h0Var, int i10) {
         long j10;
         h0Var.U(i10 + 12);
         h0Var.V(1);
@@ -1033,9 +1033,9 @@ public abstract class b {
             } else {
                 j10 = -1;
             }
-            return new C0101b(h10, bArr, j11, j10);
+            return new C0098b(h10, bArr, j11, j10);
         }
-        return new C0101b(h10, null, -1L, -1L);
+        return new C0098b(h10, null, -1L, -1L);
     }
 
     private static int k(h0 h0Var) {
@@ -1088,14 +1088,14 @@ public abstract class b {
         return Pair.create(Long.valueOf(J), "" + ((char) (((N >> 10) & 31) + 96)) + ((char) (((N >> 5) & 31) + 96)) + ((char) ((N & 31) + 96)));
     }
 
-    public static Metadata o(a.C0100a c0100a) {
-        a.b g10 = c0100a.g(1751411826);
-        a.b g11 = c0100a.g(1801812339);
-        a.b g12 = c0100a.g(1768715124);
-        if (g10 == null || g11 == null || g12 == null || l(g10.f6376b) != 1835299937) {
+    public static Metadata o(a.C0097a c0097a) {
+        a.b g10 = c0097a.g(1751411826);
+        a.b g11 = c0097a.g(1801812339);
+        a.b g12 = c0097a.g(1768715124);
+        if (g10 == null || g11 == null || g12 == null || l(g10.f6223b) != 1835299937) {
             return null;
         }
-        h0 h0Var = g11.f6376b;
+        h0 h0Var = g11.f6223b;
         h0Var.U(12);
         int q10 = h0Var.q();
         String[] strArr = new String[q10];
@@ -1104,7 +1104,7 @@ public abstract class b {
             h0Var.V(4);
             strArr[i10] = h0Var.E(q11 - 8);
         }
-        h0 h0Var2 = g12.f6376b;
+        h0 h0Var2 = g12.f6223b;
         h0Var2.U(8);
         ArrayList arrayList = new ArrayList();
         while (h0Var2.a() > 8) {
@@ -1133,7 +1133,7 @@ public abstract class b {
             h0Var.B();
             String B = h0Var.B();
             if (B != null) {
-                eVar.f6394b = new Format.b().T(i12).g0(B).G();
+                eVar.f6241b = new Format.b().T(i12).g0(B).G();
             }
         }
     }
@@ -1269,7 +1269,7 @@ public abstract class b {
     /* JADX WARN: Type inference failed for: r11v17 */
     /* JADX WARN: Type inference failed for: r11v18 */
     /* JADX WARN: Type inference failed for: r11v23, types: [boolean] */
-    private static r w(o oVar, a.C0100a c0100a, v vVar) {
+    private static r w(o oVar, a.C0097a c0097a, v vVar) {
         d gVar;
         boolean z10;
         h0 h0Var;
@@ -1305,11 +1305,11 @@ public abstract class b {
         int i22;
         int i23;
         int i24;
-        a.b g10 = c0100a.g(1937011578);
+        a.b g10 = c0097a.g(1937011578);
         if (g10 != null) {
-            gVar = new f(g10, oVar.f6511f);
+            gVar = new f(g10, oVar.f6358f);
         } else {
-            a.b g11 = c0100a.g(1937013298);
+            a.b g11 = c0097a.g(1937013298);
             if (g11 != null) {
                 gVar = new g(g11);
             } else {
@@ -1320,25 +1320,25 @@ public abstract class b {
         if (c10 == 0) {
             return new r(oVar, new long[0], new int[0], 0, new long[0], new int[0], 0L);
         }
-        a.b g12 = c0100a.g(1937007471);
+        a.b g12 = c0097a.g(1937007471);
         if (g12 == null) {
-            g12 = (a.b) ne.a.e(c0100a.g(1668232756));
+            g12 = (a.b) ne.a.e(c0097a.g(1668232756));
             z10 = true;
         } else {
             z10 = false;
         }
-        h0 h0Var3 = g12.f6376b;
-        h0 h0Var4 = ((a.b) ne.a.e(c0100a.g(1937011555))).f6376b;
-        h0 h0Var5 = ((a.b) ne.a.e(c0100a.g(1937011827))).f6376b;
-        a.b g13 = c0100a.g(1937011571);
+        h0 h0Var3 = g12.f6223b;
+        h0 h0Var4 = ((a.b) ne.a.e(c0097a.g(1937011555))).f6223b;
+        h0 h0Var5 = ((a.b) ne.a.e(c0097a.g(1937011827))).f6223b;
+        a.b g13 = c0097a.g(1937011571);
         if (g13 != null) {
-            h0Var = g13.f6376b;
+            h0Var = g13.f6223b;
         } else {
             h0Var = null;
         }
-        a.b g14 = c0100a.g(1668576371);
+        a.b g14 = c0097a.g(1668576371);
         if (g14 != null) {
-            h0Var2 = g14.f6376b;
+            h0Var2 = g14.f6223b;
         } else {
             h0Var2 = null;
         }
@@ -1370,7 +1370,7 @@ public abstract class b {
             i13 = 0;
         }
         int b10 = gVar.b();
-        String str2 = oVar.f6511f.f11303w;
+        String str2 = oVar.f6358f.f11688w;
         if (b10 != -1 && (("audio/raw".equals(str2) || "audio/g711-mlaw".equals(str2) || "audio/g711-alaw".equals(str2)) && L == 0 && i10 == 0 && i12 == 0)) {
             i14 = 1;
         } else {
@@ -1378,21 +1378,21 @@ public abstract class b {
         }
         d dVar = gVar;
         if (i14 != 0) {
-            int i25 = aVar.f6378a;
+            int i25 = aVar.f6225a;
             long[] jArr4 = new long[i25];
             int[] iArr8 = new int[i25];
             while (aVar.a()) {
-                int i26 = aVar.f6379b;
-                jArr4[i26] = aVar.f6381d;
-                iArr8[i26] = aVar.f6380c;
+                int i26 = aVar.f6226b;
+                jArr4[i26] = aVar.f6228d;
+                iArr8[i26] = aVar.f6227c;
             }
             d.b a10 = bd.d.a(b10, jArr4, iArr8, L3);
-            long[] jArr5 = a10.f6415a;
-            iArr = a10.f6416b;
-            int i27 = a10.f6417c;
-            long[] jArr6 = a10.f6418d;
-            int[] iArr9 = a10.f6419e;
-            j11 = a10.f6420f;
+            long[] jArr5 = a10.f6262a;
+            iArr = a10.f6263b;
+            int i27 = a10.f6264c;
+            long[] jArr6 = a10.f6265d;
+            int[] iArr9 = a10.f6266e;
+            j11 = a10.f6267f;
             jArr2 = jArr5;
             i18 = i27;
             jArr = jArr6;
@@ -1429,8 +1429,8 @@ public abstract class b {
                             break;
                         }
                         int i39 = i35;
-                        long j16 = aVar.f6381d;
-                        i38 = aVar.f6380c;
+                        long j16 = aVar.f6228d;
+                        i38 = aVar.f6227c;
                         j15 = j16;
                         i35 = i39;
                         i34 = i34;
@@ -1514,7 +1514,7 @@ public abstract class b {
             if (i12 != 0 || i15 != 0 || i16 != 0 || i36 != 0 || i32 != 0 || i17 == 0) {
                 StringBuilder sb2 = new StringBuilder();
                 sb2.append("Inconsistent stbl box for track ");
-                sb2.append(oVar.f6506a);
+                sb2.append(oVar.f6353a);
                 sb2.append(": remainingSynchronizationSamples ");
                 sb2.append(i12);
                 sb2.append(", remainingSamplesAtTimestampDelta ");
@@ -1539,58 +1539,58 @@ public abstract class b {
             iArr2 = iArr11;
         }
         long j17 = j11;
-        long X0 = w0.X0(j17, 1000000L, oVar.f6508c);
-        long[] jArr8 = oVar.f6513h;
+        long X0 = w0.X0(j17, 1000000L, oVar.f6355c);
+        long[] jArr8 = oVar.f6360h;
         if (jArr8 == null) {
-            w0.Z0(jArr, 1000000L, oVar.f6508c);
+            w0.Z0(jArr, 1000000L, oVar.f6355c);
             return new r(oVar, jArr2, iArr, i18, jArr, iArr2, X0);
         }
         int[] iArr12 = iArr;
         int i44 = c10;
         int[] iArr13 = iArr12;
-        if (jArr8.length == 1 && oVar.f6507b == 1 && jArr.length >= 2) {
-            long j18 = ((long[]) ne.a.e(oVar.f6514i))[i13];
-            long X02 = j18 + w0.X0(oVar.f6513h[i13], oVar.f6508c, oVar.f6509d);
+        if (jArr8.length == 1 && oVar.f6354b == 1 && jArr.length >= 2) {
+            long j18 = ((long[]) ne.a.e(oVar.f6361i))[i13];
+            long X02 = j18 + w0.X0(oVar.f6360h[i13], oVar.f6355c, oVar.f6356d);
             long[] jArr9 = jArr2;
             long[] jArr10 = jArr;
             boolean b11 = b(jArr10, j17, j18, X02);
             jArr = jArr10;
             j17 = j17;
             if (b11) {
-                long X03 = w0.X0(j18 - jArr[i13], oVar.f6511f.K, oVar.f6508c);
-                long X04 = w0.X0(j17 - X02, oVar.f6511f.K, oVar.f6508c);
+                long X03 = w0.X0(j18 - jArr[i13], oVar.f6358f.K, oVar.f6355c);
+                long X04 = w0.X0(j17 - X02, oVar.f6358f.K, oVar.f6355c);
                 if ((X03 != j10 || X04 != j10) && X03 <= 2147483647L && X04 <= 2147483647L) {
-                    vVar.f49991a = (int) X03;
-                    vVar.f49992b = (int) X04;
-                    w0.Z0(jArr, 1000000L, oVar.f6508c);
-                    return new r(oVar, jArr9, iArr13, i18, jArr, iArr2, w0.X0(oVar.f6513h[i13], 1000000L, oVar.f6509d));
+                    vVar.f50596a = (int) X03;
+                    vVar.f50597b = (int) X04;
+                    w0.Z0(jArr, 1000000L, oVar.f6355c);
+                    return new r(oVar, jArr9, iArr13, i18, jArr, iArr2, w0.X0(oVar.f6360h[i13], 1000000L, oVar.f6356d));
                 }
             }
             jArr2 = jArr9;
             iArr13 = iArr13;
         }
-        long[] jArr11 = oVar.f6513h;
+        long[] jArr11 = oVar.f6360h;
         if (jArr11.length == 1 && jArr11[i13] == j10) {
-            long j19 = ((long[]) ne.a.e(oVar.f6514i))[i13];
+            long j19 = ((long[]) ne.a.e(oVar.f6361i))[i13];
             for (int i45 = i13; i45 < jArr.length; i45++) {
-                jArr[i45] = w0.X0(jArr[i45] - j19, 1000000L, oVar.f6508c);
+                jArr[i45] = w0.X0(jArr[i45] - j19, 1000000L, oVar.f6355c);
             }
-            return new r(oVar, jArr2, iArr13, i18, jArr, iArr2, w0.X0(j17 - j19, 1000000L, oVar.f6508c));
+            return new r(oVar, jArr2, iArr13, i18, jArr, iArr2, w0.X0(j17 - j19, 1000000L, oVar.f6355c));
         }
-        if (oVar.f6507b == 1) {
+        if (oVar.f6354b == 1) {
             r10 = 1;
         } else {
             r10 = i13;
         }
         int[] iArr14 = new int[jArr11.length];
         int[] iArr15 = new int[jArr11.length];
-        long[] jArr12 = (long[]) ne.a.e(oVar.f6514i);
+        long[] jArr12 = (long[]) ne.a.e(oVar.f6361i);
         int i46 = i13;
         int i47 = i46;
         int i48 = i47;
         int i49 = i48;
         while (true) {
-            long[] jArr13 = oVar.f6513h;
+            long[] jArr13 = oVar.f6360h;
             iArr3 = iArr15;
             if (i46 >= jArr13.length) {
                 break;
@@ -1602,7 +1602,7 @@ public abstract class b {
                 long j21 = jArr13[i46];
                 i21 = i46;
                 int i50 = i47;
-                long X05 = w0.X0(j21, oVar.f6508c, oVar.f6509d);
+                long X05 = w0.X0(j21, oVar.f6355c, oVar.f6356d);
                 iArr7 = iArr16;
                 iArr7[i21] = w0.i(jArr, j20, true, true);
                 long j22 = j20 + X05;
@@ -1665,8 +1665,8 @@ public abstract class b {
         long[] jArr15 = new long[i48];
         int i54 = i52;
         long j23 = j10;
-        while (i52 < oVar.f6513h.length) {
-            long j24 = oVar.f6514i[i52];
+        while (i52 < oVar.f6360h.length) {
+            long j24 = oVar.f6361i[i52];
             int i55 = iArr17[i52];
             int i56 = i53;
             int i57 = iArr3[i52];
@@ -1681,11 +1681,11 @@ public abstract class b {
             while (i55 < i57) {
                 long[] jArr16 = jArr2;
                 int[] iArr18 = iArr13;
-                long X06 = w0.X0(j23, 1000000L, oVar.f6509d);
-                long X07 = w0.X0(jArr[i55] - j24, 1000000L, oVar.f6508c);
+                long X06 = w0.X0(j23, 1000000L, oVar.f6356d);
+                long X07 = w0.X0(jArr[i55] - j24, 1000000L, oVar.f6355c);
                 int i60 = i57;
                 long[] jArr17 = jArr;
-                if (c(oVar.f6507b)) {
+                if (c(oVar.f6354b)) {
                     iArr6 = iArr2;
                     j12 = j10;
                     X07 = Math.max(j12, X07);
@@ -1706,14 +1706,14 @@ public abstract class b {
                 iArr2 = iArr6;
                 i57 = i60;
             }
-            j23 += oVar.f6513h[i52];
+            j23 += oVar.f6360h[i52];
             i52++;
             jArr2 = jArr2;
             jArr = jArr;
             iArr2 = iArr2;
             i53 = i56;
         }
-        return new r(oVar, jArr3, iArr4, i18, jArr15, iArr5, w0.X0(j23, 1000000L, oVar.f6509d));
+        return new r(oVar, jArr3, iArr4, i18, jArr15, iArr5, w0.X0(j23, 1000000L, oVar.f6356d));
     }
 
     private static e x(h0 h0Var, int i10, int i11, String str, rc.m mVar, boolean z10) {
@@ -1746,7 +1746,7 @@ public abstract class b {
                 if (q12 == 1835365492) {
                     p(h0Var, q12, f10, i10, eVar);
                 } else if (q12 == 1667329389) {
-                    eVar.f6394b = new Format.b().T(i10).g0("application/x-camera-motion").G();
+                    eVar.f6241b = new Format.b().T(i10).g0("application/x-camera-motion").G();
                 }
             } else {
                 y(h0Var, q12, f10, q11, i10, str, eVar);
@@ -1767,20 +1767,20 @@ public abstract class b {
                 int i14 = i12 - 16;
                 byte[] bArr = new byte[i14];
                 h0Var.l(bArr, 0, i14);
-                sVar = s.s(bArr);
+                sVar = s.t(bArr);
                 str2 = "application/x-quicktime-tx3g";
             } else if (i10 == 2004251764) {
                 str2 = "application/x-mp4-vtt";
             } else if (i10 == 1937010800) {
                 j10 = 0;
             } else if (i10 == 1664495672) {
-                eVar.f6396d = 1;
+                eVar.f6243d = 1;
                 str2 = "application/x-mp4-cea-608";
             } else {
                 throw new IllegalStateException();
             }
         }
-        eVar.f6394b = new Format.b().T(i13).g0(str2).X(str).k0(j10).V(sVar).G();
+        eVar.f6241b = new Format.b().T(i13).g0(str2).X(str).k0(j10).V(sVar).G();
     }
 
     private static h z(h0 h0Var) {

@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/SelectedUserField.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun87686: for (var _fun87686_ip = 0;;) switch (_fun87686_ip) {
+        _fun87705: for (var _fun87705_ip = 0;;) switch (_fun87705_ip) {
             case 0:
                 var0 = arg0;
                 var21 = var0.selectedUser;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var5;
                 var5 = null;
                 if (!(var5 == var21)) {
-                    _fun87686_ip = 253;
-                    continue _fun87686
+                    _fun87705_ip = 253;
+                    continue _fun87705
                 }
             case 142:
                 var7 = _closure1_slot5;
@@ -188,8 +188,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var9.bind(var11)(var8);
                 var5.children = var8;
                 var5 = var7.bind(var3)(var6, var5);
-                _fun87686_ip = 525;
-                continue _fun87686;
+                _fun87705_ip = 525;
+                continue _fun87705;
             case 253:
                 var8 = _closure1_slot6;
                 var7 = _closure1_slot4;
@@ -268,4 +268,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5396, 7013, 5452, 3941, 3236, 5373, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5400, 7033, 5456, 3941, 3236, 5377, 1234, 2]);

@@ -12,7 +12,7 @@ public abstract class a {
 
     /* renamed from: s1.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    static class C0609a {
+    static class C0631a {
         static void a(Drawable drawable, Resources.Theme theme) {
             drawable.applyTheme(theme);
         }
@@ -62,11 +62,11 @@ public abstract class a {
     }
 
     public static void a(Drawable drawable, Resources.Theme theme) {
-        C0609a.a(drawable, theme);
+        C0631a.a(drawable, theme);
     }
 
     public static boolean b(Drawable drawable) {
-        return C0609a.b(drawable);
+        return C0631a.b(drawable);
     }
 
     public static void c(Drawable drawable) {
@@ -78,7 +78,7 @@ public abstract class a {
     }
 
     public static ColorFilter e(Drawable drawable) {
-        return C0609a.c(drawable);
+        return C0631a.c(drawable);
     }
 
     public static int f(Drawable drawable) {
@@ -86,7 +86,7 @@ public abstract class a {
     }
 
     public static void g(Drawable drawable, Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
-        C0609a.d(drawable, resources, xmlPullParser, attributeSet, theme);
+        C0631a.d(drawable, resources, xmlPullParser, attributeSet, theme);
     }
 
     public static boolean h(Drawable drawable) {
@@ -102,11 +102,11 @@ public abstract class a {
     }
 
     public static void k(Drawable drawable, float f10, float f11) {
-        C0609a.e(drawable, f10, f11);
+        C0631a.e(drawable, f10, f11);
     }
 
     public static void l(Drawable drawable, int i10, int i11, int i12, int i13) {
-        C0609a.f(drawable, i10, i11, i12, i13);
+        C0631a.f(drawable, i10, i11, i12, i13);
     }
 
     public static boolean m(Drawable drawable, int i10) {
@@ -114,15 +114,15 @@ public abstract class a {
     }
 
     public static void n(Drawable drawable, int i10) {
-        C0609a.g(drawable, i10);
+        C0631a.g(drawable, i10);
     }
 
     public static void o(Drawable drawable, ColorStateList colorStateList) {
-        C0609a.h(drawable, colorStateList);
+        C0631a.h(drawable, colorStateList);
     }
 
     public static void p(Drawable drawable, PorterDuff.Mode mode) {
-        C0609a.i(drawable, mode);
+        C0631a.i(drawable, mode);
     }
 
     public static Drawable q(Drawable drawable) {

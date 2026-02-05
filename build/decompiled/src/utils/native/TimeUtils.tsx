@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'utils/native/TimeUtils.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0, arg1() {
-        _fun37748: for (var _fun37748_ip = 0;;) switch (_fun37748_ip) {
+        _fun37747: for (var _fun37747_ip = 0;;) switch (_fun37747_ip) {
             case 0:
                 var2 = arg1;
                 var0 = arg0;
@@ -34,20 +34,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = undefined;
                 var0 = undefined;
                 if (var5) {
-                    _fun37748_ip = 43;
-                    continue _fun37748
+                    _fun37747_ip = 43;
+                    continue _fun37747
                 }
             case 37:
                 var0 = var2.padMinutes;
             case 43:
                 if (!(var1 != var0)) {
-                    _fun37748_ip = 50;
-                    continue _fun37748
+                    _fun37747_ip = 50;
+                    continue _fun37747
                 }
             case 47:
                 if (var0) {
-                    _fun37748_ip = 123;
-                    continue _fun37748
+                    _fun37747_ip = 123;
+                    continue _fun37747
                 }
             case 50:
                 var0 = global;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = '';
                 var0 = ':';
                 var0 = var2.bind(var1)(var6, var0, var5);
-                _fun37748_ip = 206;
-                continue _fun37748;
+                _fun37747_ip = 206;
+                continue _fun37747;
             case 123:
                 var1 = global;
                 var2 = var1.String;

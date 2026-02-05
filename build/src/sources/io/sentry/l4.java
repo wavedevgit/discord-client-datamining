@@ -3,42 +3,47 @@ package io.sentry;
 public final class l4 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final l4 f30075a = new l4();
+    private static final l4 f29133a = new l4();
 
     private l4() {
     }
 
-    public static l4 h() {
-        return f30075a;
+    public static l4 f() {
+        return f29133a;
     }
 
     @Override // io.sentry.w0
-    public Boolean A() {
+    public e1 A(t8 t8Var, v8 v8Var) {
+        return b5.R(t8Var, v8Var);
+    }
+
+    @Override // io.sentry.w0
+    public Boolean B() {
         return b5.H();
     }
 
     @Override // io.sentry.w0
-    public IScope B() {
-        return b5.v().B();
+    public IScope C() {
+        return b5.v().C();
     }
 
     @Override // io.sentry.w0
-    public void C(b4 b4Var) {
+    public void D(b4 b4Var) {
         b5.T(b4Var);
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x E(Throwable th2, Hint hint) {
+    public io.sentry.protocol.x F(Throwable th2, Hint hint) {
         return b5.m(th2, hint);
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x G(io.sentry.protocol.d0 d0Var, q8 q8Var, Hint hint, q3 q3Var) {
-        return b5.v().G(d0Var, q8Var, hint, q3Var);
+    public io.sentry.protocol.x H(io.sentry.protocol.d0 d0Var, q8 q8Var, Hint hint, q3 q3Var) {
+        return b5.v().H(d0Var, q8Var, hint, q3Var);
     }
 
     @Override // io.sentry.w0
-    public w0 H(String str) {
+    public w0 I(String str) {
         return b5.u(str);
     }
 
@@ -64,22 +69,17 @@ public final class l4 implements w0 {
 
     @Override // io.sentry.w0
     public void e(Breadcrumb breadcrumb) {
-        g(breadcrumb, new Hint());
+        i(breadcrumb, new Hint());
     }
 
     @Override // io.sentry.w0
-    public boolean f() {
+    public boolean g() {
         return b5.J();
     }
 
     @Override // io.sentry.w0
-    public void g(Breadcrumb breadcrumb, Hint hint) {
+    public void i(Breadcrumb breadcrumb, Hint hint) {
         b5.i(breadcrumb, hint);
-    }
-
-    @Override // io.sentry.w0
-    public void i(Throwable th2, ISpan iSpan, String str) {
-        b5.v().i(th2, iSpan, str);
     }
 
     @Override // io.sentry.w0
@@ -93,18 +93,18 @@ public final class l4 implements w0 {
     }
 
     @Override // io.sentry.w0
-    public e1 k() {
-        return b5.v().k();
+    public void k(Throwable th2, ISpan iSpan, String str) {
+        b5.v().k(th2, iSpan, str);
     }
 
     @Override // io.sentry.w0
-    public void l() {
-        b5.r();
+    public io.sentry.protocol.x l(l5 l5Var, Hint hint) {
+        return b5.v().l(l5Var, hint);
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x m(l5 l5Var, Hint hint) {
-        return b5.v().m(l5Var, hint);
+    public e1 m() {
+        return b5.v().m();
     }
 
     @Override // io.sentry.w0
@@ -113,48 +113,48 @@ public final class l4 implements w0 {
     }
 
     @Override // io.sentry.w0
-    public void p() {
+    public void n() {
+        b5.r();
+    }
+
+    @Override // io.sentry.w0
+    public void r() {
         b5.Q();
     }
 
     @Override // io.sentry.w0
-    public void r(d4 d4Var, b4 b4Var) {
+    public void s(d4 d4Var, b4 b4Var) {
         b5.q(d4Var, b4Var);
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x s(l7 l7Var, Hint hint) {
-        return b5.v().s(l7Var, hint);
+    public io.sentry.protocol.x t(l7 l7Var, Hint hint) {
+        return b5.v().t(l7Var, hint);
     }
 
     @Override // io.sentry.w0
-    public IScope t() {
+    public IScope u() {
         return b5.w();
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x u(String str, SentryLevel sentryLevel) {
+    public io.sentry.protocol.x v(String str, SentryLevel sentryLevel) {
         return b5.n(str, sentryLevel);
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x v(m3 m3Var) {
-        return b5.v().v(m3Var);
+    public io.sentry.protocol.x w(m3 m3Var) {
+        return b5.v().w(m3Var);
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x x(SentryEvent sentryEvent, Hint hint) {
+    public io.sentry.protocol.x y(SentryEvent sentryEvent, Hint hint) {
         return b5.k(sentryEvent, hint);
     }
 
     @Override // io.sentry.w0
-    public e1 z(t8 t8Var, v8 v8Var) {
-        return b5.R(t8Var, v8Var);
-    }
-
-    @Override // io.sentry.w0
     /* renamed from: clone */
-    public p0 m1187clone() {
+    public p0 m1189clone() {
         return b5.v().clone();
     }
 }

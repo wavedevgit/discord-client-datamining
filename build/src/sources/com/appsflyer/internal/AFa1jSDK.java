@@ -19,21 +19,21 @@ public class AFa1jSDK {
     private static int afWarnLog;
 
     /* renamed from: d  reason: collision with root package name */
-    private static byte[] f7839d;
+    private static byte[] f8224d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static byte[] f7840e;
+    private static byte[] f8225e;
     private static long force;
 
     /* renamed from: i  reason: collision with root package name */
-    private static Object f7841i;
+    private static Object f8226i;
     public static final Map unregisterClient;
 
     /* renamed from: v  reason: collision with root package name */
-    private static long f7842v;
+    private static long f8227v;
 
     /* renamed from: w  reason: collision with root package name */
-    private static Object f7843w;
+    private static Object f8228w;
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0028, code lost:
         r4 = 0;
@@ -137,7 +137,7 @@ public class AFa1jSDK {
         r8 = r58;
         r0 = r57.getDeclaredConstructor(java.lang.Object.class, java.lang.Boolean.TYPE);
         r0.setAccessible(true);
-        com.appsflyer.internal.AFa1jSDK.f7843w = r0.newInstance(r1, java.lang.Boolean.valueOf(!r40));
+        com.appsflyer.internal.AFa1jSDK.f8228w = r0.newInstance(r1, java.lang.Boolean.valueOf(!r40));
      */
     /* JADX WARN: Code restructure failed: missing block: B:653:0x1a53, code lost:
         r0 = com.appsflyer.internal.AFa1jSDK.$11;
@@ -164,8 +164,8 @@ public class AFa1jSDK {
         if (r67[r2] != false) goto L287;
      */
     /* JADX WARN: Code restructure failed: missing block: B:815:0x1d8a, code lost:
-        com.appsflyer.internal.AFa1jSDK.f7843w = null;
-        com.appsflyer.internal.AFa1jSDK.f7841i = null;
+        com.appsflyer.internal.AFa1jSDK.f8228w = null;
+        com.appsflyer.internal.AFa1jSDK.f8226i = null;
         r20 = 0;
         r27 = true;
         r52 = r52;
@@ -230,12 +230,12 @@ public class AFa1jSDK {
         int i14 = i13 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         $11 = i14;
         if (i13 % 2 != 0) {
-            Object obj = f7843w;
+            Object obj = f8228w;
             $10 = (((i14 | 113) << 1) - (i14 ^ 113)) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             try {
                 Object[] objArr = {Integer.valueOf(i10), Character.valueOf(c10), Integer.valueOf(i11)};
                 byte b10 = $$a[488];
-                Class<?> cls = Class.forName($$c(bArr[84], b10, (short) ((b10 ^ 530) | (b10 & 530))), true, (ClassLoader) f7841i);
+                Class<?> cls = Class.forName($$c(bArr[84], b10, (short) ((b10 ^ 530) | (b10 & 530))), true, (ClassLoader) f8226i);
                 int i15 = $$b;
                 String $$c = $$c(bArr[4], bArr[49], (short) ((i15 & 1097) | (i15 ^ 1097)));
                 Class cls2 = Integer.TYPE;
@@ -260,12 +260,12 @@ public class AFa1jSDK {
         int i13 = i12 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         $10 = i13;
         if (i12 % 2 == 0) {
-            Object obj = f7843w;
+            Object obj = f8228w;
             $11 = (i13 + 101) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             try {
                 byte[] bArr = $$a;
                 byte b10 = bArr[488];
-                Class<?> cls = Class.forName($$c(bArr[84], b10, (short) ((b10 ^ 530) | (b10 & 530))), true, (ClassLoader) f7841i);
+                Class<?> cls = Class.forName($$c(bArr[84], b10, (short) ((b10 ^ 530) | (b10 & 530))), true, (ClassLoader) f8226i);
                 byte b11 = bArr[14];
                 int intValue = ((Integer) cls.getMethod($$c(bArr[4], b11, (short) (b11 | 576)), Integer.TYPE).invoke(obj, Integer.valueOf(i10))).intValue();
                 int i14 = $10 + 77;
@@ -292,11 +292,11 @@ public class AFa1jSDK {
         int i12 = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         $10 = i12;
         if (i11 % 2 == 0) {
-            Object obj2 = f7843w;
+            Object obj2 = f8228w;
             $11 = ((i12 & 71) + (i12 | 71)) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             try {
                 byte b10 = $$a[488];
-                int intValue = ((Integer) Class.forName($$c(bArr[84], b10, (short) (b10 | 530)), true, (ClassLoader) f7841i).getMethod($$c(bArr[62], bArr[12], (short) 1152), Object.class).invoke(obj2, obj)).intValue();
+                int intValue = ((Integer) Class.forName($$c(bArr[84], b10, (short) (b10 | 530)), true, (ClassLoader) f8226i).getMethod($$c(bArr[62], bArr[12], (short) 1152), Object.class).invoke(obj2, obj)).intValue();
                 int currentTimeMillis = (int) System.currentTimeMillis();
                 int i13 = ~currentTimeMillis;
                 int i14 = ~((i13 & (-1521606923)) | ((-1521606923) ^ i13));

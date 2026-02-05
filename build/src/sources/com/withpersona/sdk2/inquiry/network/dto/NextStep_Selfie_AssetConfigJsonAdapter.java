@@ -49,30 +49,30 @@ public final class NextStep_Selfie_AssetConfigJsonAdapter extends h {
     @NotNull
     public NextStep.Selfie.AssetConfig fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         NextStep.Selfie.AssetConfig.PromptPage promptPage = null;
         NextStep.Selfie.AssetConfig.RecordPage recordPage = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 promptPage = (NextStep.Selfie.AssetConfig.PromptPage) this.nullablePromptPageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 recordPage = (NextStep.Selfie.AssetConfig.RecordPage) this.nullableRecordPageAdapter.fromJson(reader);
                 i10 &= -3;
             }
         }
-        reader.y();
+        reader.z();
         if (i10 == -4) {
             return new NextStep.Selfie.AssetConfig(promptPage, recordPage);
         }
         Constructor<NextStep.Selfie.AssetConfig> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Selfie.AssetConfig.class.getDeclaredConstructor(NextStep.Selfie.AssetConfig.PromptPage.class, NextStep.Selfie.AssetConfig.RecordPage.class, Integer.TYPE, vm.c.f51688c);
+            constructor = NextStep.Selfie.AssetConfig.class.getDeclaredConstructor(NextStep.Selfie.AssetConfig.PromptPage.class, NextStep.Selfie.AssetConfig.RecordPage.class, Integer.TYPE, ym.c.f54853c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -85,10 +85,10 @@ public final class NextStep_Selfie_AssetConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Selfie.AssetConfig assetConfig) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (assetConfig != null) {
-            writer.l();
-            writer.A0("promptPage");
+            writer.k();
+            writer.W("promptPage");
             this.nullablePromptPageAdapter.toJson(writer, assetConfig.getPromptPage());
-            writer.A0("recordPage");
+            writer.W("recordPage");
             this.nullableRecordPageAdapter.toJson(writer, assetConfig.getRecordPage());
             writer.E();
             return;

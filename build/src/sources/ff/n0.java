@@ -9,26 +9,26 @@ import com.google.android.gms.tasks.Task;
 public final class n0 implements OnCompleteListener {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f23931a;
+    private final e f22956a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f23932b;
+    private final int f22957b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b f23933c;
+    private final b f22958c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f23934d;
+    private final long f22959d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f23935e;
+    private final long f22960e;
 
     n0(e eVar, int i10, b bVar, long j10, long j11, String str, String str2) {
-        this.f23931a = eVar;
-        this.f23932b = i10;
-        this.f23933c = bVar;
-        this.f23934d = j10;
-        this.f23935e = j11;
+        this.f22956a = eVar;
+        this.f22957b = i10;
+        this.f22958c = bVar;
+        this.f22959d = j10;
+        this.f22960e = j11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -94,16 +94,16 @@ public final class n0 implements OnCompleteListener {
         int i10;
         int i11;
         int i12;
-        int b10;
+        int c10;
         long j10;
         long j11;
-        if (this.f23931a.e()) {
+        if (this.f22956a.e()) {
             gf.s a10 = gf.r.b().a();
-            if ((a10 == null || a10.d()) && (t10 = this.f23931a.t(this.f23933c)) != null && (t10.v() instanceof gf.c)) {
+            if ((a10 == null || a10.d()) && (t10 = this.f22956a.t(this.f22958c)) != null && (t10.v() instanceof gf.c)) {
                 gf.c cVar = (gf.c) t10.v();
                 boolean z11 = true;
                 int i13 = 0;
-                if (this.f23934d > 0) {
+                if (this.f22959d > 0) {
                     z10 = true;
                 } else {
                     z10 = false;
@@ -112,54 +112,54 @@ public final class n0 implements OnCompleteListener {
                 int i14 = 100;
                 if (a10 != null) {
                     z10 &= a10.e();
-                    int b11 = a10.b();
-                    int c10 = a10.c();
+                    int b10 = a10.b();
+                    int c11 = a10.c();
                     i10 = a10.f();
                     if (cVar.I() && !cVar.c()) {
-                        gf.e b12 = b(t10, cVar, this.f23932b);
-                        if (b12 != null) {
-                            if (!b12.f() || this.f23934d <= 0) {
+                        gf.e b11 = b(t10, cVar, this.f22957b);
+                        if (b11 != null) {
+                            if (!b11.f() || this.f22959d <= 0) {
                                 z11 = false;
                             }
-                            c10 = b12.b();
+                            c11 = b11.b();
                             z10 = z11;
                         } else {
                             return;
                         }
                     }
-                    i12 = b11;
-                    i11 = c10;
+                    i12 = b10;
+                    i11 = c11;
                 } else {
                     i10 = 0;
                     i11 = 100;
                     i12 = 5000;
                 }
-                e eVar = this.f23931a;
+                e eVar = this.f22956a;
                 int i15 = -1;
                 if (task.p()) {
-                    b10 = 0;
+                    c10 = 0;
                 } else {
                     if (!task.n()) {
                         Exception k10 = task.k();
                         if (k10 instanceof ef.b) {
                             Status a11 = ((ef.b) k10).a();
                             i14 = a11.d();
-                            com.google.android.gms.common.b b13 = a11.b();
-                            if (b13 != null) {
-                                b10 = b13.b();
+                            com.google.android.gms.common.b b12 = a11.b();
+                            if (b12 != null) {
+                                c10 = b12.c();
                                 i13 = i14;
                             }
                         } else {
                             i13 = 101;
-                            b10 = -1;
+                            c10 = -1;
                         }
                     }
                     i13 = i14;
-                    b10 = -1;
+                    c10 = -1;
                 }
                 if (z10) {
-                    long j12 = this.f23934d;
-                    long j13 = this.f23935e;
+                    long j12 = this.f22959d;
+                    long j13 = this.f22960e;
                     long currentTimeMillis = System.currentTimeMillis();
                     i15 = (int) (SystemClock.elapsedRealtime() - j13);
                     j11 = currentTimeMillis;
@@ -168,7 +168,7 @@ public final class n0 implements OnCompleteListener {
                     j10 = 0;
                     j11 = 0;
                 }
-                eVar.C(new gf.n(this.f23932b, i13, b10, j10, j11, null, null, y10, i15), i10, i12, i11);
+                eVar.C(new gf.n(this.f22957b, i13, c10, j10, j11, null, null, y10, i15), i10, i12, i11);
             }
         }
     }

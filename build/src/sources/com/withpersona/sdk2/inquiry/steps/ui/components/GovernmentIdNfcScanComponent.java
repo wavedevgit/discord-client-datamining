@@ -2,27 +2,27 @@ package com.withpersona.sdk2.inquiry.steps.ui.components;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import aq.e0;
-import aq.j2;
-import aq.k5;
-import aq.v;
-import bq.g;
-import bq.h;
+import bn.t;
+import bn.w;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.GovernmentIdNfcScan;
+import dq.e0;
+import dq.j2;
+import dq.k5;
+import dq.v;
+import eq.g;
+import eq.h;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import ym.t;
-import ym.w;
-@Metadata(d1 = {"\u0000x\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0018\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\t\b\u0087\b\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004B[\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\f\u001a\u00020\u0005\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0010¢\u0006\u0004\b\u0012\u0010\u0013B\u0011\b\u0016\u0012\u0006\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b\u0012\u0010\u0014J\u0015\u0010\u0016\u001a\u00020\u00002\u0006\u0010\u0015\u001a\u00020\u0005¢\u0006\u0004\b\u0016\u0010\u0017J\u0015\u0010\u0018\u001a\u00020\u00002\u0006\u0010\u0015\u001a\u00020\u0005¢\u0006\u0004\b\u0018\u0010\u0017J\u0017\u0010\u001a\u001a\u00020\u00002\b\u0010\u0019\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u001a\u0010\u0017J\u0017\u0010\u001b\u001a\u00020\u00002\b\u0010\u0019\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u001b\u0010\u0017J\u0017\u0010\u001c\u001a\u00020\u00002\b\u0010\u0015\u001a\u0004\u0018\u00010\u0010¢\u0006\u0004\b\u001c\u0010\u001dJ\u001d\u0010#\u001a\u00020\"2\u0006\u0010\u001f\u001a\u00020\u001e2\u0006\u0010!\u001a\u00020 ¢\u0006\u0004\b#\u0010$J\r\u0010%\u001a\u00020 ¢\u0006\u0004\b%\u0010&Jt\u0010'\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\u00072\b\b\u0002\u0010\t\u001a\u00020\u00052\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\f\u001a\u00020\u00052\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0010HÆ\u0001¢\u0006\u0004\b'\u0010(J\u0010\u0010)\u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b)\u0010*J\u0010\u0010+\u001a\u00020 HÖ\u0001¢\u0006\u0004\b+\u0010&J\u001a\u0010/\u001a\u00020.2\b\u0010-\u001a\u0004\u0018\u00010,HÖ\u0003¢\u0006\u0004\b/\u00100R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b1\u00102\u001a\u0004\b3\u0010*R\u0017\u0010\b\u001a\u00020\u00078\u0006¢\u0006\f\n\u0004\b4\u00105\u001a\u0004\b4\u00106R\u0017\u0010\t\u001a\u00020\u00058\u0006¢\u0006\f\n\u0004\b7\u00102\u001a\u0004\b8\u0010*R\u0019\u0010\n\u001a\u0004\u0018\u00010\u00058\u0006¢\u0006\f\n\u0004\b\u001b\u00102\u001a\u0004\b9\u0010*R\u0019\u0010\u000b\u001a\u0004\u0018\u00010\u00058\u0006¢\u0006\f\n\u0004\b\u001c\u00102\u001a\u0004\b:\u0010*R\u0017\u0010\f\u001a\u00020\u00058\u0006¢\u0006\f\n\u0004\b;\u00102\u001a\u0004\b<\u0010*R\u001c\u0010\u000e\u001a\u0004\u0018\u00010\r8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b=\u0010>\u001a\u0004\b?\u0010@R\u001c\u0010\u000f\u001a\u0004\u0018\u00010\r8\u0016X\u0096\u0004¢\u0006\f\n\u0004\bA\u0010>\u001a\u0004\bB\u0010@R\u0019\u0010\u0011\u001a\u0004\u0018\u00010\u00108\u0006¢\u0006\f\n\u0004\bC\u0010D\u001a\u0004\bE\u0010FR&\u0010N\u001a\b\u0012\u0004\u0012\u00020H0G8\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\bI\u0010J\u0012\u0004\bL\u0010M\u001a\u0004\b1\u0010KR(\u0010V\u001a\u00020.8\u0016@\u0016X\u0096\u000e¢\u0006\u0018\n\u0004\bO\u0010P\u0012\u0004\bU\u0010M\u001a\u0004\bQ\u0010R\"\u0004\bS\u0010TR(\u0010_\u001a\u00020W8\u0006@\u0006X\u0087\u000e¢\u0006\u0018\n\u0004\bX\u0010Y\u0012\u0004\b^\u0010M\u001a\u0004\bZ\u0010[\"\u0004\b\\\u0010]R(\u0010c\u001a\u00020W8\u0006@\u0006X\u0087\u000e¢\u0006\u0018\n\u0004\bS\u0010Y\u0012\u0004\bb\u0010M\u001a\u0004\b`\u0010[\"\u0004\ba\u0010]R(\u0010l\u001a\u00020d8\u0006@\u0006X\u0087\u000e¢\u0006\u0018\n\u0004\be\u0010f\u0012\u0004\bk\u0010M\u001a\u0004\bg\u0010h\"\u0004\bi\u0010jR(\u0010p\u001a\u00020d8\u0006@\u0006X\u0087\u000e¢\u0006\u0018\n\u0004\bm\u0010f\u0012\u0004\bo\u0010M\u001a\u0004\b7\u0010h\"\u0004\bn\u0010jR(\u0010y\u001a\u00020q8\u0006@\u0006X\u0087\u000e¢\u0006\u0018\n\u0004\br\u0010s\u0012\u0004\bx\u0010M\u001a\u0004\bt\u0010u\"\u0004\bv\u0010w¨\u0006z"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/GovernmentIdNfcScanComponent;", "Laq/k5;", "Laq/v;", "Laq/e0;", "Laq/j2;", "", StackTraceHelper.NAME_KEY, "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/GovernmentIdNfcScan;", "config", "documentNumber", "dateOfBirth", "expirationDate", "cardAccessNumber", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "Lbq/g;", "governmentIdNfcData", "<init>", "(Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/GovernmentIdNfcScan;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lbq/g;)V", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/GovernmentIdNfcScan;)V", "newValue", "k", "(Ljava/lang/String;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/GovernmentIdNfcScanComponent;", "n", "newDate", "m", "o", "p", "(Lbq/g;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/GovernmentIdNfcScanComponent;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "a", "(Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/GovernmentIdNfcScan;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lbq/g;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/GovernmentIdNfcScanComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/GovernmentIdNfcScan;", "()Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/GovernmentIdNfcScan;", "i", "getDocumentNumber", "getDateOfBirth", "getExpirationDate", "q", "getCardAccessNumber", "r", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "s", "getDisabled", "t", "Lbq/g;", "getGovernmentIdNfcData", "()Lbq/g;", "", "Liq/a;", "u", "Ljava/util/List;", "()Ljava/util/List;", "getAssociatedViews$annotations", "()V", "associatedViews", "v", "Z", "E0", "()Z", "x", "(Z)V", "getWasTapped$annotations", "wasTapped", "Lym/t;", "w", "Lym/t;", "c", "()Lym/t;", "setCardAccessNumberController", "(Lym/t;)V", "getCardAccessNumberController$annotations", "cardAccessNumberController", "g", "setDocumentNumberController", "getDocumentNumberController$annotations", "documentNumberController", "Lbq/e;", "y", "Lbq/e;", "f", "()Lbq/e;", "setDateOfBirthController", "(Lbq/e;)V", "getDateOfBirthController$annotations", "dateOfBirthController", "z", "setExpirationDateController", "getExpirationDateController$annotations", "expirationDateController", "Lbq/h;", "A", "Lbq/h;", "j", "()Lbq/h;", "setNfcDataController", "(Lbq/h;)V", "getNfcDataController$annotations", "nfcDataController", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+@Metadata(d1 = {"\u0000x\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0017\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\t\b\u0087\b\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004B[\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\f\u001a\u00020\u0005\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0010¢\u0006\u0004\b\u0012\u0010\u0013B\u0011\b\u0016\u0012\u0006\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b\u0012\u0010\u0014J\u0015\u0010\u0016\u001a\u00020\u00002\u0006\u0010\u0015\u001a\u00020\u0005¢\u0006\u0004\b\u0016\u0010\u0017J\u0015\u0010\u0018\u001a\u00020\u00002\u0006\u0010\u0015\u001a\u00020\u0005¢\u0006\u0004\b\u0018\u0010\u0017J\u0017\u0010\u001a\u001a\u00020\u00002\b\u0010\u0019\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u001a\u0010\u0017J\u0017\u0010\u001b\u001a\u00020\u00002\b\u0010\u0019\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u001b\u0010\u0017J\u0017\u0010\u001c\u001a\u00020\u00002\b\u0010\u0015\u001a\u0004\u0018\u00010\u0010¢\u0006\u0004\b\u001c\u0010\u001dJ\u001d\u0010#\u001a\u00020\"2\u0006\u0010\u001f\u001a\u00020\u001e2\u0006\u0010!\u001a\u00020 ¢\u0006\u0004\b#\u0010$J\r\u0010%\u001a\u00020 ¢\u0006\u0004\b%\u0010&Jt\u0010'\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\u00072\b\b\u0002\u0010\t\u001a\u00020\u00052\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\f\u001a\u00020\u00052\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0010HÆ\u0001¢\u0006\u0004\b'\u0010(J\u0010\u0010)\u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b)\u0010*J\u0010\u0010+\u001a\u00020 HÖ\u0001¢\u0006\u0004\b+\u0010&J\u001a\u0010/\u001a\u00020.2\b\u0010-\u001a\u0004\u0018\u00010,HÖ\u0003¢\u0006\u0004\b/\u00100R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b1\u00102\u001a\u0004\b3\u0010*R\u0017\u0010\b\u001a\u00020\u00078\u0006¢\u0006\f\n\u0004\b4\u00105\u001a\u0004\b4\u00106R\u0017\u0010\t\u001a\u00020\u00058\u0006¢\u0006\f\n\u0004\b7\u00102\u001a\u0004\b8\u0010*R\u0019\u0010\n\u001a\u0004\u0018\u00010\u00058\u0006¢\u0006\f\n\u0004\b\u0018\u00102\u001a\u0004\b9\u0010*R\u0019\u0010\u000b\u001a\u0004\u0018\u00010\u00058\u0006¢\u0006\f\n\u0004\b\u001b\u00102\u001a\u0004\b:\u0010*R\u0017\u0010\f\u001a\u00020\u00058\u0006¢\u0006\f\n\u0004\b\u001c\u00102\u001a\u0004\b;\u0010*R\u001c\u0010\u000e\u001a\u0004\u0018\u00010\r8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b<\u0010=\u001a\u0004\b>\u0010?R\u001c\u0010\u000f\u001a\u0004\u0018\u00010\r8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b@\u0010=\u001a\u0004\bA\u0010?R\u0019\u0010\u0011\u001a\u0004\u0018\u00010\u00108\u0006¢\u0006\f\n\u0004\bB\u0010C\u001a\u0004\bD\u0010ER&\u0010M\u001a\b\u0012\u0004\u0012\u00020G0F8\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\bH\u0010I\u0012\u0004\bK\u0010L\u001a\u0004\b1\u0010JR(\u0010U\u001a\u00020.8\u0016@\u0016X\u0096\u000e¢\u0006\u0018\n\u0004\bN\u0010O\u0012\u0004\bT\u0010L\u001a\u0004\bP\u0010Q\"\u0004\bR\u0010SR(\u0010^\u001a\u00020V8\u0006@\u0006X\u0087\u000e¢\u0006\u0018\n\u0004\bW\u0010X\u0012\u0004\b]\u0010L\u001a\u0004\bY\u0010Z\"\u0004\b[\u0010\\R(\u0010c\u001a\u00020V8\u0006@\u0006X\u0087\u000e¢\u0006\u0018\n\u0004\b_\u0010X\u0012\u0004\bb\u0010L\u001a\u0004\b`\u0010Z\"\u0004\ba\u0010\\R(\u0010l\u001a\u00020d8\u0006@\u0006X\u0087\u000e¢\u0006\u0018\n\u0004\be\u0010f\u0012\u0004\bk\u0010L\u001a\u0004\bg\u0010h\"\u0004\bi\u0010jR(\u0010p\u001a\u00020d8\u0006@\u0006X\u0087\u000e¢\u0006\u0018\n\u0004\bm\u0010f\u0012\u0004\bo\u0010L\u001a\u0004\b7\u0010h\"\u0004\bn\u0010jR(\u0010y\u001a\u00020q8\u0006@\u0006X\u0087\u000e¢\u0006\u0018\n\u0004\br\u0010s\u0012\u0004\bx\u0010L\u001a\u0004\bt\u0010u\"\u0004\bv\u0010w¨\u0006z"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/GovernmentIdNfcScanComponent;", "Ldq/k5;", "Ldq/v;", "Ldq/e0;", "Ldq/j2;", "", StackTraceHelper.NAME_KEY, "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/GovernmentIdNfcScan;", "config", "documentNumber", "dateOfBirth", "expirationDate", "cardAccessNumber", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "Leq/g;", "governmentIdNfcData", "<init>", "(Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/GovernmentIdNfcScan;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Leq/g;)V", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/GovernmentIdNfcScan;)V", "newValue", "l", "(Ljava/lang/String;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/GovernmentIdNfcScanComponent;", "o", "newDate", "n", "p", "q", "(Leq/g;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/GovernmentIdNfcScanComponent;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "a", "(Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/GovernmentIdNfcScan;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Leq/g;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/GovernmentIdNfcScanComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/GovernmentIdNfcScan;", "()Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/GovernmentIdNfcScan;", "i", "getDocumentNumber", "getDateOfBirth", "getExpirationDate", "getCardAccessNumber", "r", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "s", "getDisabled", "t", "Leq/g;", "getGovernmentIdNfcData", "()Leq/g;", "", "Llq/a;", "u", "Ljava/util/List;", "()Ljava/util/List;", "getAssociatedViews$annotations", "()V", "associatedViews", "v", "Z", "E0", "()Z", "m", "(Z)V", "getWasTapped$annotations", "wasTapped", "Lbn/t;", "w", "Lbn/t;", "c", "()Lbn/t;", "setCardAccessNumberController", "(Lbn/t;)V", "getCardAccessNumberController$annotations", "cardAccessNumberController", "x", "g", "setDocumentNumberController", "getDocumentNumberController$annotations", "documentNumberController", "Leq/e;", "y", "Leq/e;", "f", "()Leq/e;", "setDateOfBirthController", "(Leq/e;)V", "getDateOfBirthController$annotations", "dateOfBirthController", "z", "setExpirationDateController", "getExpirationDateController$annotations", "expirationDateController", "Leq/h;", "A", "Leq/h;", "j", "()Leq/h;", "setNfcDataController", "(Leq/h;)V", "getNfcDataController$annotations", "nfcDataController", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
     @NotNull
@@ -30,49 +30,49 @@ public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
     private h A;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19193d;
+    private final String f19599d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final GovernmentIdNfcScan f19194e;
+    private final GovernmentIdNfcScan f19600e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f19195i;
+    private final String f19601i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f19196o;
+    private final String f19602o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f19197p;
+    private final String f19603p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f19198q;
+    private final String f19604q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final JsonLogicBoolean f19199r;
+    private final JsonLogicBoolean f19605r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final JsonLogicBoolean f19200s;
+    private final JsonLogicBoolean f19606s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final g f19201t;
+    private final g f19607t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final List f19202u;
+    private final List f19608u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f19203v;
+    private boolean f19609v;
 
     /* renamed from: w  reason: collision with root package name */
-    private t f19204w;
+    private t f19610w;
 
     /* renamed from: x  reason: collision with root package name */
-    private t f19205x;
+    private t f19611x;
 
     /* renamed from: y  reason: collision with root package name */
-    private bq.e f19206y;
+    private eq.e f19612y;
 
     /* renamed from: z  reason: collision with root package name */
-    private bq.e f19207z;
+    private eq.e f19613z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -95,51 +95,51 @@ public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
         Intrinsics.checkNotNullParameter(config, "config");
         Intrinsics.checkNotNullParameter(documentNumber, "documentNumber");
         Intrinsics.checkNotNullParameter(cardAccessNumber, "cardAccessNumber");
-        this.f19193d = name;
-        this.f19194e = config;
-        this.f19195i = documentNumber;
-        this.f19196o = str;
-        this.f19197p = str2;
-        this.f19198q = cardAccessNumber;
-        this.f19199r = jsonLogicBoolean;
-        this.f19200s = jsonLogicBoolean2;
-        this.f19201t = gVar;
-        this.f19202u = new ArrayList();
-        this.f19204w = w.a(cardAccessNumber);
-        this.f19205x = w.a(documentNumber);
+        this.f19599d = name;
+        this.f19600e = config;
+        this.f19601i = documentNumber;
+        this.f19602o = str;
+        this.f19603p = str2;
+        this.f19604q = cardAccessNumber;
+        this.f19605r = jsonLogicBoolean;
+        this.f19606s = jsonLogicBoolean2;
+        this.f19607t = gVar;
+        this.f19608u = new ArrayList();
+        this.f19610w = w.a(cardAccessNumber);
+        this.f19611x = w.a(documentNumber);
         GovernmentIdNfcScan.Companion companion = GovernmentIdNfcScan.Companion;
-        this.f19206y = new bq.e(str, null, companion.generateTextMonths());
-        this.f19207z = new bq.e(str2, null, companion.generateTextMonths());
+        this.f19612y = new eq.e(str, null, companion.generateTextMonths());
+        this.f19613z = new eq.e(str2, null, companion.generateTextMonths());
         this.A = new h(gVar);
     }
 
     public static /* synthetic */ GovernmentIdNfcScanComponent b(GovernmentIdNfcScanComponent governmentIdNfcScanComponent, String str, GovernmentIdNfcScan governmentIdNfcScan, String str2, String str3, String str4, String str5, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, g gVar, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = governmentIdNfcScanComponent.f19193d;
+            str = governmentIdNfcScanComponent.f19599d;
         }
         if ((i10 & 2) != 0) {
-            governmentIdNfcScan = governmentIdNfcScanComponent.f19194e;
+            governmentIdNfcScan = governmentIdNfcScanComponent.f19600e;
         }
         if ((i10 & 4) != 0) {
-            str2 = governmentIdNfcScanComponent.f19195i;
+            str2 = governmentIdNfcScanComponent.f19601i;
         }
         if ((i10 & 8) != 0) {
-            str3 = governmentIdNfcScanComponent.f19196o;
+            str3 = governmentIdNfcScanComponent.f19602o;
         }
         if ((i10 & 16) != 0) {
-            str4 = governmentIdNfcScanComponent.f19197p;
+            str4 = governmentIdNfcScanComponent.f19603p;
         }
         if ((i10 & 32) != 0) {
-            str5 = governmentIdNfcScanComponent.f19198q;
+            str5 = governmentIdNfcScanComponent.f19604q;
         }
         if ((i10 & 64) != 0) {
-            jsonLogicBoolean = governmentIdNfcScanComponent.f19199r;
+            jsonLogicBoolean = governmentIdNfcScanComponent.f19605r;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-            jsonLogicBoolean2 = governmentIdNfcScanComponent.f19200s;
+            jsonLogicBoolean2 = governmentIdNfcScanComponent.f19606s;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-            gVar = governmentIdNfcScanComponent.f19201t;
+            gVar = governmentIdNfcScanComponent.f19607t;
         }
         JsonLogicBoolean jsonLogicBoolean3 = jsonLogicBoolean2;
         g gVar2 = gVar;
@@ -171,7 +171,7 @@ public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
     }
 
     public boolean E0() {
-        return this.f19203v;
+        return this.f19609v;
     }
 
     public final GovernmentIdNfcScanComponent a(String name, GovernmentIdNfcScan config, String documentNumber, String str, String str2, String cardAccessNumber, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, g gVar) {
@@ -183,12 +183,12 @@ public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
     }
 
     public final t c() {
-        return this.f19204w;
+        return this.f19610w;
     }
 
-    @Override // aq.e0
+    @Override // dq.e0
     public List d() {
-        return this.f19202u;
+        return this.f19608u;
     }
 
     @Override // android.os.Parcelable
@@ -197,7 +197,7 @@ public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
     }
 
     public final GovernmentIdNfcScan e() {
-        return this.f19194e;
+        return this.f19600e;
     }
 
     public boolean equals(Object obj) {
@@ -206,144 +206,144 @@ public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
         }
         if (obj instanceof GovernmentIdNfcScanComponent) {
             GovernmentIdNfcScanComponent governmentIdNfcScanComponent = (GovernmentIdNfcScanComponent) obj;
-            return Intrinsics.areEqual(this.f19193d, governmentIdNfcScanComponent.f19193d) && Intrinsics.areEqual(this.f19194e, governmentIdNfcScanComponent.f19194e) && Intrinsics.areEqual(this.f19195i, governmentIdNfcScanComponent.f19195i) && Intrinsics.areEqual(this.f19196o, governmentIdNfcScanComponent.f19196o) && Intrinsics.areEqual(this.f19197p, governmentIdNfcScanComponent.f19197p) && Intrinsics.areEqual(this.f19198q, governmentIdNfcScanComponent.f19198q) && Intrinsics.areEqual(this.f19199r, governmentIdNfcScanComponent.f19199r) && Intrinsics.areEqual(this.f19200s, governmentIdNfcScanComponent.f19200s) && Intrinsics.areEqual(this.f19201t, governmentIdNfcScanComponent.f19201t);
+            return Intrinsics.areEqual(this.f19599d, governmentIdNfcScanComponent.f19599d) && Intrinsics.areEqual(this.f19600e, governmentIdNfcScanComponent.f19600e) && Intrinsics.areEqual(this.f19601i, governmentIdNfcScanComponent.f19601i) && Intrinsics.areEqual(this.f19602o, governmentIdNfcScanComponent.f19602o) && Intrinsics.areEqual(this.f19603p, governmentIdNfcScanComponent.f19603p) && Intrinsics.areEqual(this.f19604q, governmentIdNfcScanComponent.f19604q) && Intrinsics.areEqual(this.f19605r, governmentIdNfcScanComponent.f19605r) && Intrinsics.areEqual(this.f19606s, governmentIdNfcScanComponent.f19606s) && Intrinsics.areEqual(this.f19607t, governmentIdNfcScanComponent.f19607t);
         }
         return false;
     }
 
-    public final bq.e f() {
-        return this.f19206y;
+    public final eq.e f() {
+        return this.f19612y;
     }
 
     public final t g() {
-        return this.f19205x;
+        return this.f19611x;
     }
 
-    @Override // aq.v
+    @Override // dq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f19200s;
+        return this.f19606s;
     }
 
-    @Override // aq.e0
+    @Override // dq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f19199r;
+        return this.f19605r;
     }
 
-    @Override // aq.k5
+    @Override // dq.k5
     public String getName() {
-        return this.f19193d;
+        return this.f19599d;
     }
 
     public int hashCode() {
-        int hashCode = ((((this.f19193d.hashCode() * 31) + this.f19194e.hashCode()) * 31) + this.f19195i.hashCode()) * 31;
-        String str = this.f19196o;
+        int hashCode = ((((this.f19599d.hashCode() * 31) + this.f19600e.hashCode()) * 31) + this.f19601i.hashCode()) * 31;
+        String str = this.f19602o;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
-        String str2 = this.f19197p;
-        int hashCode3 = (((hashCode2 + (str2 == null ? 0 : str2.hashCode())) * 31) + this.f19198q.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f19199r;
+        String str2 = this.f19603p;
+        int hashCode3 = (((hashCode2 + (str2 == null ? 0 : str2.hashCode())) * 31) + this.f19604q.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f19605r;
         int hashCode4 = (hashCode3 + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19200s;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f19606s;
         int hashCode5 = (hashCode4 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        g gVar = this.f19201t;
+        g gVar = this.f19607t;
         return hashCode5 + (gVar != null ? gVar.hashCode() : 0);
     }
 
-    public final bq.e i() {
-        return this.f19207z;
+    public final eq.e i() {
+        return this.f19613z;
     }
 
     public final h j() {
         return this.A;
     }
 
-    public final GovernmentIdNfcScanComponent k(String newValue) {
+    public final GovernmentIdNfcScanComponent l(String newValue) {
         Intrinsics.checkNotNullParameter(newValue, "newValue");
         GovernmentIdNfcScanComponent b10 = b(this, null, null, null, null, null, newValue, null, null, null, 479, null);
-        b10.f19204w = this.f19204w;
-        b10.f19205x = this.f19205x;
-        b10.f19206y = this.f19206y;
-        b10.f19207z = this.f19207z;
+        b10.f19610w = this.f19610w;
+        b10.f19611x = this.f19611x;
+        b10.f19612y = this.f19612y;
+        b10.f19613z = this.f19613z;
         b10.A = this.A;
         return b10;
     }
 
-    public final GovernmentIdNfcScanComponent m(String str) {
+    @Override // dq.j2
+    public void m(boolean z10) {
+        this.f19609v = z10;
+    }
+
+    public final GovernmentIdNfcScanComponent n(String str) {
         GovernmentIdNfcScanComponent b10 = b(this, null, null, null, str, null, null, null, null, null, 503, null);
-        b10.f19204w = this.f19204w;
-        b10.f19205x = this.f19205x;
-        b10.f19206y = this.f19206y;
-        b10.f19207z = this.f19207z;
+        b10.f19610w = this.f19610w;
+        b10.f19611x = this.f19611x;
+        b10.f19612y = this.f19612y;
+        b10.f19613z = this.f19613z;
         b10.A = this.A;
         return b10;
     }
 
-    public final GovernmentIdNfcScanComponent n(String newValue) {
+    public final GovernmentIdNfcScanComponent o(String newValue) {
         Intrinsics.checkNotNullParameter(newValue, "newValue");
         GovernmentIdNfcScanComponent b10 = b(this, null, null, newValue, null, null, null, null, null, null, 507, null);
-        b10.f19204w = this.f19204w;
-        b10.f19205x = this.f19205x;
-        b10.f19206y = this.f19206y;
-        b10.f19207z = this.f19207z;
+        b10.f19610w = this.f19610w;
+        b10.f19611x = this.f19611x;
+        b10.f19612y = this.f19612y;
+        b10.f19613z = this.f19613z;
         b10.A = this.A;
         return b10;
     }
 
-    public final GovernmentIdNfcScanComponent o(String str) {
+    public final GovernmentIdNfcScanComponent p(String str) {
         GovernmentIdNfcScanComponent b10 = b(this, null, null, null, null, str, null, null, null, null, 495, null);
-        b10.f19204w = this.f19204w;
-        b10.f19205x = this.f19205x;
-        b10.f19206y = this.f19206y;
-        b10.f19207z = this.f19207z;
+        b10.f19610w = this.f19610w;
+        b10.f19611x = this.f19611x;
+        b10.f19612y = this.f19612y;
+        b10.f19613z = this.f19613z;
         b10.A = this.A;
         return b10;
     }
 
-    public final GovernmentIdNfcScanComponent p(g gVar) {
+    public final GovernmentIdNfcScanComponent q(g gVar) {
         GovernmentIdNfcScanComponent b10 = b(this, null, null, null, null, null, null, null, null, gVar, SetSpanOperation.SPAN_MAX_PRIORITY, null);
-        b10.f19204w = this.f19204w;
-        b10.f19205x = this.f19205x;
-        b10.f19206y = this.f19206y;
-        b10.f19207z = this.f19207z;
+        b10.f19610w = this.f19610w;
+        b10.f19611x = this.f19611x;
+        b10.f19612y = this.f19612y;
+        b10.f19613z = this.f19613z;
         b10.A = this.A;
         return b10;
     }
 
     public String toString() {
-        String str = this.f19193d;
-        GovernmentIdNfcScan governmentIdNfcScan = this.f19194e;
-        String str2 = this.f19195i;
-        String str3 = this.f19196o;
-        String str4 = this.f19197p;
-        String str5 = this.f19198q;
-        JsonLogicBoolean jsonLogicBoolean = this.f19199r;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19200s;
-        g gVar = this.f19201t;
+        String str = this.f19599d;
+        GovernmentIdNfcScan governmentIdNfcScan = this.f19600e;
+        String str2 = this.f19601i;
+        String str3 = this.f19602o;
+        String str4 = this.f19603p;
+        String str5 = this.f19604q;
+        JsonLogicBoolean jsonLogicBoolean = this.f19605r;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f19606s;
+        g gVar = this.f19607t;
         return "GovernmentIdNfcScanComponent(name=" + str + ", config=" + governmentIdNfcScan + ", documentNumber=" + str2 + ", dateOfBirth=" + str3 + ", expirationDate=" + str4 + ", cardAccessNumber=" + str5 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", governmentIdNfcData=" + gVar + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f19193d);
-        dest.writeParcelable(this.f19194e, i10);
-        dest.writeString(this.f19195i);
-        dest.writeString(this.f19196o);
-        dest.writeString(this.f19197p);
-        dest.writeString(this.f19198q);
-        dest.writeParcelable(this.f19199r, i10);
-        dest.writeParcelable(this.f19200s, i10);
-        g gVar = this.f19201t;
+        dest.writeString(this.f19599d);
+        dest.writeParcelable(this.f19600e, i10);
+        dest.writeString(this.f19601i);
+        dest.writeString(this.f19602o);
+        dest.writeString(this.f19603p);
+        dest.writeString(this.f19604q);
+        dest.writeParcelable(this.f19605r, i10);
+        dest.writeParcelable(this.f19606s, i10);
+        g gVar = this.f19607t;
         if (gVar == null) {
             dest.writeInt(0);
             return;
         }
         dest.writeInt(1);
         gVar.writeToParcel(dest, i10);
-    }
-
-    @Override // aq.j2
-    public void x(boolean z10) {
-        this.f19203v = z10;
     }
 
     public /* synthetic */ GovernmentIdNfcScanComponent(String str, GovernmentIdNfcScan governmentIdNfcScan, String str2, String str3, String str4, String str5, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, g gVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {

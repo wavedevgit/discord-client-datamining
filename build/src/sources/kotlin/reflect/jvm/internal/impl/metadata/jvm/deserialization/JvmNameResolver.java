@@ -7,7 +7,7 @@ import kotlin.reflect.jvm.internal.impl.metadata.jvm.JvmProtoBuf;
 public final class JvmNameResolver extends JvmNameResolverBase {
 
     /* renamed from: g  reason: collision with root package name */
-    private final JvmProtoBuf.StringTableTypes f34265g;
+    private final JvmProtoBuf.StringTableTypes f33789g;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -36,7 +36,7 @@ public final class JvmNameResolver extends JvmNameResolverBase {
             kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r1, r2)
             java.util.List r1 = kotlin.reflect.jvm.internal.impl.metadata.jvm.deserialization.JvmNameResolverKt.toExpandedRecordsList(r1)
             r3.<init>(r5, r0, r1)
-            r3.f34265g = r4
+            r3.f33789g = r4
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: kotlin.reflect.jvm.internal.impl.metadata.jvm.deserialization.JvmNameResolver.<init>(kotlin.reflect.jvm.internal.impl.metadata.jvm.JvmProtoBuf$StringTableTypes, java.lang.String[]):void");

@@ -25,49 +25,49 @@ public class a extends Drawable implements b {
     private String G;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f31484d;
+    private String f30833d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f31485e;
+    private String f30834e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f31486i;
+    private int f30835i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f31487o;
+    private int f30836o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f31488p;
+    private int f30837p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f31489q;
+    private String f30838q;
 
     /* renamed from: r  reason: collision with root package name */
-    private ScalingUtils$ScaleType f31490r;
+    private ScalingUtils$ScaleType f30839r;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f31492t;
+    private int f30841t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f31493u;
+    private int f30842u;
 
     /* renamed from: s  reason: collision with root package name */
-    private HashMap f31491s = new HashMap();
+    private HashMap f30840s = new HashMap();
 
     /* renamed from: v  reason: collision with root package name */
-    private int f31494v = 80;
+    private int f30843v = 80;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Paint f31495w = new Paint(1);
+    private final Paint f30844w = new Paint(1);
 
     /* renamed from: x  reason: collision with root package name */
-    private final Matrix f31496x = new Matrix();
+    private final Matrix f30845x = new Matrix();
 
     /* renamed from: y  reason: collision with root package name */
-    private final Rect f31497y = new Rect();
+    private final Rect f30846y = new Rect();
 
     /* renamed from: z  reason: collision with root package name */
-    private final RectF f31498z = new RectF();
+    private final RectF f30847z = new RectF();
     private int H = -1;
     private int I = 0;
 
@@ -85,16 +85,16 @@ public class a extends Drawable implements b {
 
     private void e(Canvas canvas, String str, String str2, int i10) {
         String str3 = str + ": ";
-        float measureText = this.f31495w.measureText(str3);
-        float measureText2 = this.f31495w.measureText(str2);
-        this.f31495w.setColor(1711276032);
+        float measureText = this.f30844w.measureText(str3);
+        float measureText2 = this.f30844w.measureText(str2);
+        this.f30844w.setColor(1711276032);
         int i11 = this.D;
         int i12 = this.E;
-        canvas.drawRect(i11 - 4, i12 + 8, i11 + measureText + measureText2 + 4.0f, i12 + this.C + 8, this.f31495w);
-        this.f31495w.setColor(-1);
-        canvas.drawText(str3, this.D, this.E, this.f31495w);
-        this.f31495w.setColor(i10);
-        canvas.drawText(str2, this.D + measureText, this.E, this.f31495w);
+        canvas.drawRect(i11 - 4, i12 + 8, i11 + measureText + measureText2 + 4.0f, i12 + this.C + 8, this.f30844w);
+        this.f30844w.setColor(-1);
+        canvas.drawText(str3, this.D, this.E, this.f30844w);
+        this.f30844w.setColor(i10);
+        canvas.drawText(str2, this.D + measureText, this.E, this.f30844w);
         this.E += this.C;
     }
 
@@ -108,10 +108,10 @@ public class a extends Drawable implements b {
     private void h(Rect rect, int i10, int i11) {
         int i12;
         int min = Math.min(40, Math.max(10, Math.min(rect.width() / i11, rect.height() / i10)));
-        this.f31495w.setTextSize(min);
+        this.f30844w.setTextSize(min);
         int i13 = min + 8;
         this.C = i13;
-        int i14 = this.f31494v;
+        int i14 = this.f30843v;
         if (i14 == 80) {
             this.C = i13 * (-1);
         }
@@ -131,51 +131,51 @@ public class a extends Drawable implements b {
     }
 
     public void b(String str, String str2) {
-        this.f31491s.put(str, str2);
+        this.f30840s.put(str, str2);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
         Rect bounds = getBounds();
-        this.f31495w.setStyle(Paint.Style.STROKE);
-        this.f31495w.setStrokeWidth(2.0f);
-        this.f31495w.setColor(-26624);
-        canvas.drawRect(bounds.left, bounds.top, bounds.right, bounds.bottom, this.f31495w);
-        Paint paint = this.f31495w;
+        this.f30844w.setStyle(Paint.Style.STROKE);
+        this.f30844w.setStrokeWidth(2.0f);
+        this.f30844w.setColor(-26624);
+        canvas.drawRect(bounds.left, bounds.top, bounds.right, bounds.bottom, this.f30844w);
+        Paint paint = this.f30844w;
         Paint.Style style = Paint.Style.FILL;
         paint.setStyle(style);
-        this.f31495w.setColor(this.I);
-        canvas.drawRect(bounds.left, bounds.top, bounds.right, bounds.bottom, this.f31495w);
-        this.f31495w.setStyle(style);
-        this.f31495w.setStrokeWidth(0.0f);
-        this.f31495w.setColor(-1);
+        this.f30844w.setColor(this.I);
+        canvas.drawRect(bounds.left, bounds.top, bounds.right, bounds.bottom, this.f30844w);
+        this.f30844w.setStyle(style);
+        this.f30844w.setStrokeWidth(0.0f);
+        this.f30844w.setColor(-1);
         this.D = this.A;
         this.E = this.B;
-        String str = this.f31485e;
+        String str = this.f30834e;
         if (str != null) {
-            d(canvas, "IDs", g("%s, %s", this.f31484d, str));
+            d(canvas, "IDs", g("%s, %s", this.f30833d, str));
         } else {
-            d(canvas, "ID", this.f31484d);
+            d(canvas, "ID", this.f30833d);
         }
         d(canvas, "D", g("%dx%d", Integer.valueOf(bounds.width()), Integer.valueOf(bounds.height())));
         if (bounds.height() > 0) {
             c(canvas, "DAR", Float.valueOf(bounds.width() / bounds.height()));
         }
-        e(canvas, "I", g("%dx%d", Integer.valueOf(this.f31486i), Integer.valueOf(this.f31487o)), f(this.f31486i, this.f31487o, this.f31490r));
-        int i10 = this.f31487o;
+        e(canvas, "I", g("%dx%d", Integer.valueOf(this.f30835i), Integer.valueOf(this.f30836o)), f(this.f30835i, this.f30836o, this.f30839r));
+        int i10 = this.f30836o;
         if (i10 > 0) {
-            c(canvas, "IAR", Float.valueOf(this.f31486i / i10));
+            c(canvas, "IAR", Float.valueOf(this.f30835i / i10));
         }
-        d(canvas, "I", g("%d KiB", Integer.valueOf(this.f31488p / IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET)));
-        String str2 = this.f31489q;
+        d(canvas, "I", g("%d KiB", Integer.valueOf(this.f30837p / IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET)));
+        String str2 = this.f30838q;
         if (str2 != null) {
             d(canvas, "i format", str2);
         }
-        int i11 = this.f31492t;
+        int i11 = this.f30841t;
         if (i11 > 0) {
-            d(canvas, "anim", g("f %d, l %d", Integer.valueOf(i11), Integer.valueOf(this.f31493u)));
+            d(canvas, "anim", g("f %d, l %d", Integer.valueOf(i11), Integer.valueOf(this.f30842u)));
         }
-        ScalingUtils$ScaleType scalingUtils$ScaleType = this.f31490r;
+        ScalingUtils$ScaleType scalingUtils$ScaleType = this.f30839r;
         if (scalingUtils$ScaleType != null) {
             c(canvas, "scale", scalingUtils$ScaleType);
         }
@@ -187,7 +187,7 @@ public class a extends Drawable implements b {
         if (str3 != null) {
             e(canvas, "origin", str3, this.H);
         }
-        for (Map.Entry entry : this.f31491s.entrySet()) {
+        for (Map.Entry entry : this.f30840s.entrySet()) {
             d(canvas, (String) entry.getKey(), (String) entry.getValue());
         }
     }
@@ -199,23 +199,23 @@ public class a extends Drawable implements b {
         int height = getBounds().height();
         if (width > 0 && height > 0 && i10 > 0 && i11 > 0) {
             if (scalingUtils$ScaleType != null) {
-                Rect rect = this.f31497y;
+                Rect rect = this.f30846y;
                 rect.top = 0;
                 rect.left = 0;
                 rect.right = width;
                 rect.bottom = height;
-                this.f31496x.reset();
+                this.f30845x.reset();
                 i12 = i10;
                 i13 = i11;
-                scalingUtils$ScaleType.getTransform(this.f31496x, this.f31497y, i12, i13, 0.0f, 0.0f);
-                RectF rectF = this.f31498z;
+                scalingUtils$ScaleType.getTransform(this.f30845x, this.f30846y, i12, i13, 0.0f, 0.0f);
+                RectF rectF = this.f30847z;
                 rectF.top = 0.0f;
                 rectF.left = 0.0f;
                 rectF.right = i12;
                 rectF.bottom = i13;
-                this.f31496x.mapRect(rectF);
-                width = Math.min(width, (int) this.f31498z.width());
-                height = Math.min(height, (int) this.f31498z.height());
+                this.f30845x.mapRect(rectF);
+                width = Math.min(width, (int) this.f30847z.width());
+                height = Math.min(height, (int) this.f30847z.height());
             } else {
                 i12 = i10;
                 i13 = i11;
@@ -245,13 +245,13 @@ public class a extends Drawable implements b {
     }
 
     public void i() {
-        this.f31486i = -1;
-        this.f31487o = -1;
-        this.f31488p = -1;
-        this.f31491s = new HashMap();
-        this.f31492t = -1;
-        this.f31493u = -1;
-        this.f31489q = null;
+        this.f30835i = -1;
+        this.f30836o = -1;
+        this.f30837p = -1;
+        this.f30840s = new HashMap();
+        this.f30841t = -1;
+        this.f30842u = -1;
+        this.f30838q = null;
         j(null);
         this.F = -1L;
         this.G = null;
@@ -263,22 +263,22 @@ public class a extends Drawable implements b {
         if (str == null) {
             str = ViewProps.NONE;
         }
-        this.f31484d = str;
+        this.f30833d = str;
         invalidateSelf();
     }
 
     public void k(int i10, int i11) {
-        this.f31486i = i10;
-        this.f31487o = i11;
+        this.f30835i = i10;
+        this.f30836o = i11;
         invalidateSelf();
     }
 
     public void l(int i10) {
-        this.f31488p = i10;
+        this.f30837p = i10;
     }
 
     public void m(ScalingUtils$ScaleType scalingUtils$ScaleType) {
-        this.f31490r = scalingUtils$ScaleType;
+        this.f30839r = scalingUtils$ScaleType;
     }
 
     @Override // android.graphics.drawable.Drawable

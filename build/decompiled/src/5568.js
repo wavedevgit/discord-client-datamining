@@ -1,203 +1,268 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
+    var6 = require;
+    var4 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
+    var _closure1_slot0 = var6;
+    var _closure1_slot1 = var4;
+    var _closure1_slot2 = var5;
+    var0 = function() {
+        _fun49046: for (var _fun49046_ip = 0;;) switch (_fun49046_ip) {
+            case 0:
+            case 2: // try_start_0
+                var1 = global;
+                var2 = var1.Boolean;
+                var2 = var2.prototype;
+                var3 = var2.valueOf;
+                var2 = var3.call;
+                var7 = var1.Reflect;
+                var6 = var7.construct;
+                var5 = var1.Boolean;
+                var4 = new Array(0);
+                var1 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = var6.bind(var7)(var5, var4, var1);
+                var1 = var2.bind(var3)(var1);
+                var1 = !var1;
+                var _closure2_slot0 = var1;
+            case 70: // try_end0
+                _fun49046_ip = 74;
+                continue _fun49046;
+            case 72: // catch_target0
+                CatchBlockStart(arg_register = 1);
+            case 74:
+                var1 = function() {
+                    var0 = _closure2_slot0;
+                    var0 = !var0;
+                    var0 = !var0;
+                    return var0;
+                };
+                _closure1_slot9 = var1;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                return var0;
+        }
+    };
+    var _closure1_slot9 = var0;
     var0 = global;
-    var6 = var0.Object;
-    var3 = var6.defineProperty;
-    var1 = {};
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
     var0 = true;
-    var1.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var6)(var2, var0, var1);
-    var1 = {};
-    var3 = 0;
-    var6 = var5[var3];
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
     var0 = undefined;
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Circle;
-    var1.circle = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.ClipPath;
-    var1.clipPath = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Defs;
-    var1.defs = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Ellipse;
-    var1.ellipse = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Filter;
-    var1.filter = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeBlend;
-    var1.feBlend = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeColorMatrix;
-    var1.feColorMatrix = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeComponentTransfer;
-    var1.feComponentTransfer = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeComposite;
-    var1.feComposite = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeConvolveMatrix;
-    var1.feConvolveMatrix = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeDiffuseLighting;
-    var1.feDiffuseLighting = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeDisplacementMap;
-    var1.feDisplacementMap = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeDistantLight;
-    var1.feDistantLight = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeDropShadow;
-    var1.feDropShadow = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeFlood;
-    var1.feFlood = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeGaussianBlur;
-    var1.feGaussianBlur = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeImage;
-    var1.feImage = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeMerge;
-    var1.feMerge = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeMergeNode;
-    var1.feMergeNode = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeMorphology;
-    var1.feMorphology = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeOffset;
-    var1.feOffset = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FePointLight;
-    var1.fePointLight = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeSpecularLighting;
-    var1.feSpecularLighting = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeSpotLight;
-    var1.feSpotLight = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeTile;
-    var1.feTile = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeTurbulence;
-    var1.feTurbulence = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.ForeignObject;
-    var1.foreignObject = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.G;
-    var1.g = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Image;
-    var1.image = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Line;
-    var1.line = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.LinearGradient;
-    var1.linearGradient = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Marker;
-    var1.marker = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Mask;
-    var1.mask = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Path;
-    var1.path = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Pattern;
-    var1.pattern = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Polygon;
-    var1.polygon = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Polyline;
-    var1.polyline = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.RadialGradient;
-    var1.radialGradient = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Rect;
-    var1.rect = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Stop;
-    var1.stop = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Svg;
-    var1.svg = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Symbol;
-    var1.symbol = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Text;
-    var1.text = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.TextPath;
-    var1.textPath = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.TSpan;
-    var1.tspan = var6;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.Use;
-    var1.use = var3;
-    var2.tags = var1;
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot6 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot7 = var3;
+    var3 = 5;
+    var7 = var5[var3];
+    var3 = arg3;
+    var3 = var3.bind(var0)(var7);
+    var3 = 6;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var3 = var3.jsx;
+    var _closure1_slot8 = var3;
+    var3 = 10;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var1 = function(arg0) { // Environment: var1
+        var3 = function() {
+            _fun49050: for (var _fun49050_ip = 0;;) switch (_fun49050_ip) {
+                case 0:
+                    var3 = this;
+                    var2 = undefined;
+                    var4 = undefined;
+                    var0 = _closure1_slot3;
+                    var1 = _closure2_slot0;
+                    var0 = var0.bind(var2)(var3, var1);
+                    var0 = _closure1_slot6;
+                    var8 = var0.bind(var2)(var1);
+                    var1 = _closure1_slot5;
+                    var0 = _closure1_slot9;
+                    var0 = var0.bind(var2)();
+                    if (var0) {
+                        _fun49050_ip = 69;
+                        continue _fun49050
+                    }
+                case 51:
+                    var6 = var8.apply;
+                    var4 = arguments;
+                    var0 = var4;
+                    var0 = var6.bind(var8)(var3, var0);
+                    _fun49050_ip = 105;
+                    continue _fun49050;
+                case 69:
+                    var6 = global;
+                    var7 = var6.Reflect;
+                    var6 = var7.construct;
+                    var5 = _closure1_slot6;
+                    var5 = var5.bind(var2)(var3);
+                    var5 = var5.constructor;
+                    var4 = arguments;
+                    var0 = var6.bind(var7)(var8, var4, var5);
+                case 105:
+                    var0 = var1.bind(var2)(var3, var0);
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var3;
+        var5 = _closure1_slot7;
+        var2 = undefined;
+        var4 = arg0;
+        var4 = var5.bind(var2)(var3, var4);
+        var1 = _closure1_slot4;
+        var4 = {};
+        var5 = 'render';
+        var4.key = var5;
+        var0 = function() {
+            _fun49051: for (var _fun49051_ip = 0;;) switch (_fun49051_ip) {
+                case 0:
+                    var11 = this;
+                    var _closure3_slot0 = var11;
+                    var10 = var11.props;
+                    var9 = var10.children;
+                    var5 = var10.x;
+                    var2 = var10.y;
+                    var1 = var10.width;
+                    var0 = var10.height;
+                    var6 = var10.xlinkHref;
+                    var13 = var10.href;
+                    var3 = undefined;
+                    if (!(var3 === var13)) {
+                        _fun49051_ip = 60;
+                        continue _fun49051
+                    }
+                case 57:
+                    var13 = var6;
+                case 60:
+                    var8 = var13;
+                    if (!var8) {
+                        _fun49051_ip = 106;
+                        continue _fun49051
+                    }
+                case 66:
+                    var7 = var13.match;
+                    var12 = _closure1_slot0;
+                    var14 = _closure1_slot2;
+                    var6 = 7;
+                    var6 = var14[var6];
+                    var6 = var12.bind(var3)(var6);
+                    var6 = var6.idPattern;
+                    var8 = var7.bind(var13)(var6);
+                case 106:
+                    var7 = var8;
+                    if (!var7) {
+                        _fun49051_ip = 119;
+                        continue _fun49051
+                    }
+                case 112:
+                    var6 = 1;
+                    var7 = var8[var6];
+                case 119:
+                    if (var7) {
+                        _fun49051_ip = 158;
+                        continue _fun49051
+                    }
+                case 122:
+                    var6 = global;
+                    var12 = var6.console;
+                    var8 = var12.warn;
+                    var6 = 'Invalid `href` prop for `Use` element, expected a href like "#id", but got: "';
+                    var13 = var6 + var13;
+                    var6 = '"';
+                    var6 = var13 + var6;
+                    var6 = var8.bind(var12)(var6);
+                case 158:
+                    var8 = {};
+                    var6 = null;
+                    var12 = var6 != var7;
+                    var6 = undefined;
+                    if (!var12) {
+                        _fun49051_ip = 174;
+                        continue _fun49051
+                    }
+                case 171:
+                    var6 = var7;
+                case 174:
+                    var8.href = var6;
+                    var8.x = var5;
+                    var8.y = var2;
+                    var8.width = var1;
+                    var8.height = var0;
+                    var2 = _closure1_slot8;
+                    var5 = _closure1_slot1;
+                    var12 = _closure1_slot2;
+                    var1 = 8;
+                    var1 = var12[var1];
+                    var1 = var5.bind(var3)(var1);
+                    var5 = global;
+                    var7 = var5.Object;
+                    var6 = var7.assign;
+                    var5 = {};
+                    var4 = function arg0() {
+                        var2 = _closure3_slot0;
+                        var1 = var2.refMethod;
+                        var0 = arg0;
+                        var0 = var1.bind(var2)(var0);
+                        return var0;
+                    };
+                    var5.ref = var4;
+                    var4 = _closure1_slot0;
+                    var0 = 9;
+                    var0 = var12[var0];
+                    var4 = var4.bind(var3)(var0);
+                    var0 = var4.withoutXY;
+                    var17 = var0.bind(var4)(var11, var10);
+                    var0 = {};
+                    var0.children = var9;
+                    var19 = var7;
+                    var18 = var5;
+                    var16 = var8;
+                    var15 = var0;
+                    var0 = var19[var6](var18, var17, var16, var15, var14);
+                    var0 = var2.bind(var3)(var1, var0);
+                    return var0;
+            }
+        };
+        var4.value = var0;
+        var0 = new Array(1);
+        var0[0] = var4;
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var1 = var1.bind(var0)(var3);
+    var3 = 'Use';
+    var1.displayName = var3;
+    var3 = {
+        'x': 0,
+        'y': 0,
+        'width': 0,
+        'height': 0
+    };
+    var1.defaultProps = var3;
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5463]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 33, 5480, 5569, 5479, 5488]);

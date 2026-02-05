@@ -1,53 +1,39 @@
 package su;
 
 import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.text.StringsKt;
+import java.util.Map;
+import kotlin.jvm.internal.Intrinsics;
+import uv.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a {
+public interface a extends uv.a {
 
     /* renamed from: su.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0615a {
-        private static boolean a(a aVar, Object obj) {
-            return CollectionsKt.o(null, "", CollectionsKt.l()).contains(obj);
+    public static final class C0641a {
+        public static b a(a aVar, List expressionValues, Object obj, h evaluator) {
+            Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
+            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+            List f10 = aVar.f(expressionValues, obj, evaluator);
+            Map a10 = vv.c.a(expressionValues);
+            return new b(f10, a10, aVar.a(a10, expressionValues));
         }
 
-        public static List b(a aVar, Object obj) {
-            String obj2;
-            if (obj instanceof List) {
-                obj = d(aVar, (List) obj);
+        public static Object b(a aVar, Map map, List expressionValues) {
+            Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
+            if (map == null) {
+                return vv.c.b(expressionValues);
             }
-            List list = null;
-            if (obj instanceof List) {
-                return null;
-            }
-            if (obj != null && (obj2 = obj.toString()) != null) {
-                list = StringsKt.split$default(obj2, new String[]{"."}, false, 0, 6, null);
-            }
-            if (list == null) {
-                return CollectionsKt.l();
-            }
-            return list;
+            return null;
         }
 
-        private static Object c(a aVar, List list) {
-            Object d10;
-            if (list.size() > 1 || (d10 = d(aVar, list)) == null) {
-                return list;
-            }
-            return d10;
-        }
-
-        private static Object d(a aVar, List list) {
-            Object firstOrNull = CollectionsKt.firstOrNull(list);
-            if (firstOrNull instanceof List) {
-                return c(aVar, (List) firstOrNull);
-            }
-            if (a(aVar, firstOrNull)) {
-                return null;
-            }
-            return firstOrNull;
+        public static List c(a aVar, List expression, Object obj, h evaluator) {
+            Intrinsics.checkNotNullParameter(expression, "expression");
+            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+            return a.C0674a.a(aVar, expression, obj, evaluator);
         }
     }
+
+    Object a(Map map, List list);
+
+    b c(List list, Object obj, h hVar);
 }

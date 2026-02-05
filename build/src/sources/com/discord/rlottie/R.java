@@ -742,7 +742,7 @@ public final class R {
         public static int off = 0x7f0a039c;
 
         /* renamed from: on  reason: collision with root package name */
-        public static int f9393on = 0x7f0a039d;
+        public static int f9778on = 0x7f0a039d;
         public static int parentPanel = 0x7f0a03d2;
         public static int progress_circular = 0x7f0a0412;
         public static int progress_horizontal = 0x7f0a0413;
@@ -794,7 +794,7 @@ public final class R {
         public static int uniform = 0x7f0a057e;
 
         /* renamed from: up  reason: collision with root package name */
-        public static int f9394up = 0x7f0a0580;
+        public static int f9779up = 0x7f0a0580;
         public static int wrap_content = 0x7f0a05c8;
 
         private id() {

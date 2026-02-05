@@ -6,7 +6,7 @@ import android.graphics.Rect;
 class u extends o {
 
     /* renamed from: l  reason: collision with root package name */
-    public static final ScalingUtils$ScaleType f9729l = new u();
+    public static final ScalingUtils$ScaleType f10114l = new u();
 
     private u() {
     }

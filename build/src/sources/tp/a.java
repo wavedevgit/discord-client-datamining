@@ -1,75 +1,39 @@
 package tp;
-
-import android.os.Parcel;
-import android.os.Parcelable;
-import kotlin.enums.EnumEntries;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<a> CREATOR;
+public interface a {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final a f50199d = new a("REQUIRED", 0);
+    /* renamed from: tp.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0653a implements a {
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final a f50200e = new a("OPTIONAL", 1);
+        /* renamed from: a  reason: collision with root package name */
+        private final boolean f50884a;
 
-    /* renamed from: i  reason: collision with root package name */
-    public static final a f50201i = new a("NONE", 2);
+        public C0653a(boolean z10) {
+            this.f50884a = z10;
+        }
 
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ a[] f50202o;
+        public final boolean a() {
+            return this.f50884a;
+        }
 
-    /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f50203p;
-
-    static {
-        a[] a10 = a();
-        f50202o = a10;
-        f50203p = sr.a.a(a10);
-        CREATOR = new Parcelable.Creator() { // from class: tp.a.a
-            @Override // android.os.Parcelable.Creator
-            /* renamed from: a */
-            public final a createFromParcel(Parcel parcel) {
-                Intrinsics.checkNotNullParameter(parcel, "parcel");
-                return a.valueOf(parcel.readString());
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
             }
-
-            @Override // android.os.Parcelable.Creator
-            /* renamed from: b */
-            public final a[] newArray(int i10) {
-                return new a[i10];
+            if ((obj instanceof C0653a) && this.f50884a == ((C0653a) obj).f50884a) {
+                return true;
             }
-        };
-    }
+            return false;
+        }
 
-    private a(String str, int i10) {
-    }
+        public int hashCode() {
+            return Boolean.hashCode(this.f50884a);
+        }
 
-    private static final /* synthetic */ a[] a() {
-        return new a[]{f50199d, f50200e, f50201i};
-    }
-
-    public static a valueOf(String str) {
-        return (a) Enum.valueOf(a.class, str);
-    }
-
-    public static a[] values() {
-        return (a[]) f50202o.clone();
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(name());
+        public String toString() {
+            boolean z10 = this.f50884a;
+            return "CancelRequest(force=" + z10 + ")";
+        }
     }
 }

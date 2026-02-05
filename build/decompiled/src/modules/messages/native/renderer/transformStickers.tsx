@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var1.bind(var2)(var3);
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
-            _fun92580: for (var _fun92580_ip = 0;;) switch (_fun92580_ip) {
+            _fun92601: for (var _fun92601_ip = 0;;) switch (_fun92601_ip) {
                 case 0:
                     var9 = arg0;
                     var2 = _closure1_slot0;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = '';
                     var7 = var4;
                     if (!var10) {
-                        _fun92580_ip = 86;
-                        continue _fun92580
+                        _fun92601_ip = 86;
+                        continue _fun92601
                     }
                 case 83:
                     var7 = var2;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var7.bind(var8)(var9, var2);
                     var6 = var6 != var2;
                     if (!var6) {
-                        _fun92580_ip = 144;
-                        continue _fun92580
+                        _fun92601_ip = 144;
+                        continue _fun92601
                     }
                 case 141:
                     var4 = var2;
@@ -100,13 +100,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var4.bind(var5)(var2);
                     var2 = var2.NativeLottieRenderMode;
                     if (var3) {
-                        _fun92580_ip = 211;
-                        continue _fun92580
+                        _fun92601_ip = 211;
+                        continue _fun92601
                     }
                 case 203:
                     var3 = var2.STILL;
-                    _fun92580_ip = 217;
-                    continue _fun92580;
+                    _fun92601_ip = 217;
+                    continue _fun92601;
                 case 211:
                     var3 = var2.LOOP;
                 case 217:
@@ -148,4 +148,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3999, 6700, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3998, 6720, 1234, 2]);

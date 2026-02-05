@@ -6,132 +6,132 @@ import com.google.android.exoplayer2.MediaItem;
 public final class h implements v0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f12126a;
+    private final float f12511a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f12127b;
+    private final float f12512b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f12128c;
+    private final long f12513c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f12129d;
+    private final float f12514d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f12130e;
+    private final long f12515e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final long f12131f;
+    private final long f12516f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f12132g;
+    private final float f12517g;
 
     /* renamed from: h  reason: collision with root package name */
-    private long f12133h;
+    private long f12518h;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f12134i;
+    private long f12519i;
 
     /* renamed from: j  reason: collision with root package name */
-    private long f12135j;
+    private long f12520j;
 
     /* renamed from: k  reason: collision with root package name */
-    private long f12136k;
+    private long f12521k;
 
     /* renamed from: l  reason: collision with root package name */
-    private long f12137l;
+    private long f12522l;
 
     /* renamed from: m  reason: collision with root package name */
-    private long f12138m;
+    private long f12523m;
 
     /* renamed from: n  reason: collision with root package name */
-    private float f12139n;
+    private float f12524n;
 
     /* renamed from: o  reason: collision with root package name */
-    private float f12140o;
+    private float f12525o;
 
     /* renamed from: p  reason: collision with root package name */
-    private float f12141p;
+    private float f12526p;
 
     /* renamed from: q  reason: collision with root package name */
-    private long f12142q;
+    private long f12527q;
 
     /* renamed from: r  reason: collision with root package name */
-    private long f12143r;
+    private long f12528r;
 
     /* renamed from: s  reason: collision with root package name */
-    private long f12144s;
+    private long f12529s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private float f12145a = 0.97f;
+        private float f12530a = 0.97f;
 
         /* renamed from: b  reason: collision with root package name */
-        private float f12146b = 1.03f;
+        private float f12531b = 1.03f;
 
         /* renamed from: c  reason: collision with root package name */
-        private long f12147c = 1000;
+        private long f12532c = 1000;
 
         /* renamed from: d  reason: collision with root package name */
-        private float f12148d = 1.0E-7f;
+        private float f12533d = 1.0E-7f;
 
         /* renamed from: e  reason: collision with root package name */
-        private long f12149e = ne.w0.K0(20);
+        private long f12534e = ne.w0.K0(20);
 
         /* renamed from: f  reason: collision with root package name */
-        private long f12150f = ne.w0.K0(500);
+        private long f12535f = ne.w0.K0(500);
 
         /* renamed from: g  reason: collision with root package name */
-        private float f12151g = 0.999f;
+        private float f12536g = 0.999f;
 
         public h a() {
-            return new h(this.f12145a, this.f12146b, this.f12147c, this.f12148d, this.f12149e, this.f12150f, this.f12151g);
+            return new h(this.f12530a, this.f12531b, this.f12532c, this.f12533d, this.f12534e, this.f12535f, this.f12536g);
         }
     }
 
     private void f(long j10) {
-        long j11 = this.f12143r + (this.f12144s * 3);
-        if (this.f12138m > j11) {
-            float K0 = (float) ne.w0.K0(this.f12128c);
-            this.f12138m = li.g.c(j11, this.f12135j, this.f12138m - (((this.f12141p - 1.0f) * K0) + ((this.f12139n - 1.0f) * K0)));
+        long j11 = this.f12528r + (this.f12529s * 3);
+        if (this.f12523m > j11) {
+            float K0 = (float) ne.w0.K0(this.f12513c);
+            this.f12523m = oi.g.c(j11, this.f12520j, this.f12523m - (((this.f12526p - 1.0f) * K0) + ((this.f12524n - 1.0f) * K0)));
             return;
         }
-        long r10 = ne.w0.r(j10 - (Math.max(0.0f, this.f12141p - 1.0f) / this.f12129d), this.f12138m, j11);
-        this.f12138m = r10;
-        long j12 = this.f12137l;
+        long r10 = ne.w0.r(j10 - (Math.max(0.0f, this.f12526p - 1.0f) / this.f12514d), this.f12523m, j11);
+        this.f12523m = r10;
+        long j12 = this.f12522l;
         if (j12 != -9223372036854775807L && r10 > j12) {
-            this.f12138m = j12;
+            this.f12523m = j12;
         }
     }
 
     private void g() {
-        long j10 = this.f12133h;
+        long j10 = this.f12518h;
         if (j10 != -9223372036854775807L) {
-            long j11 = this.f12134i;
+            long j11 = this.f12519i;
             if (j11 != -9223372036854775807L) {
                 j10 = j11;
             }
-            long j12 = this.f12136k;
+            long j12 = this.f12521k;
             if (j12 != -9223372036854775807L && j10 < j12) {
                 j10 = j12;
             }
-            long j13 = this.f12137l;
+            long j13 = this.f12522l;
             if (j13 != -9223372036854775807L && j10 > j13) {
                 j10 = j13;
             }
         } else {
             j10 = -9223372036854775807L;
         }
-        if (this.f12135j == j10) {
+        if (this.f12520j == j10) {
             return;
         }
-        this.f12135j = j10;
-        this.f12138m = j10;
-        this.f12143r = -9223372036854775807L;
-        this.f12144s = -9223372036854775807L;
-        this.f12142q = -9223372036854775807L;
+        this.f12520j = j10;
+        this.f12523m = j10;
+        this.f12528r = -9223372036854775807L;
+        this.f12529s = -9223372036854775807L;
+        this.f12527q = -9223372036854775807L;
     }
 
     private static long h(long j10, long j11, float f10) {
@@ -140,103 +140,103 @@ public final class h implements v0 {
 
     private void i(long j10, long j11) {
         long j12 = j10 - j11;
-        long j13 = this.f12143r;
+        long j13 = this.f12528r;
         if (j13 == -9223372036854775807L) {
-            this.f12143r = j12;
-            this.f12144s = 0L;
+            this.f12528r = j12;
+            this.f12529s = 0L;
             return;
         }
-        long max = Math.max(j12, h(j13, j12, this.f12132g));
-        this.f12143r = max;
-        this.f12144s = h(this.f12144s, Math.abs(j12 - max), this.f12132g);
+        long max = Math.max(j12, h(j13, j12, this.f12517g));
+        this.f12528r = max;
+        this.f12529s = h(this.f12529s, Math.abs(j12 - max), this.f12517g);
     }
 
     @Override // com.google.android.exoplayer2.v0
     public void a(MediaItem.g gVar) {
-        this.f12133h = ne.w0.K0(gVar.f11415d);
-        this.f12136k = ne.w0.K0(gVar.f11416e);
-        this.f12137l = ne.w0.K0(gVar.f11417i);
-        float f10 = gVar.f11418o;
+        this.f12518h = ne.w0.K0(gVar.f11800d);
+        this.f12521k = ne.w0.K0(gVar.f11801e);
+        this.f12522l = ne.w0.K0(gVar.f11802i);
+        float f10 = gVar.f11803o;
         if (f10 == -3.4028235E38f) {
-            f10 = this.f12126a;
+            f10 = this.f12511a;
         }
-        this.f12140o = f10;
-        float f11 = gVar.f11419p;
+        this.f12525o = f10;
+        float f11 = gVar.f11804p;
         if (f11 == -3.4028235E38f) {
-            f11 = this.f12127b;
+            f11 = this.f12512b;
         }
-        this.f12139n = f11;
+        this.f12524n = f11;
         if (f10 == 1.0f && f11 == 1.0f) {
-            this.f12133h = -9223372036854775807L;
+            this.f12518h = -9223372036854775807L;
         }
         g();
     }
 
     @Override // com.google.android.exoplayer2.v0
     public float b(long j10, long j11) {
-        if (this.f12133h == -9223372036854775807L) {
+        if (this.f12518h == -9223372036854775807L) {
             return 1.0f;
         }
         i(j10, j11);
-        if (this.f12142q != -9223372036854775807L && SystemClock.elapsedRealtime() - this.f12142q < this.f12128c) {
-            return this.f12141p;
+        if (this.f12527q != -9223372036854775807L && SystemClock.elapsedRealtime() - this.f12527q < this.f12513c) {
+            return this.f12526p;
         }
-        this.f12142q = SystemClock.elapsedRealtime();
+        this.f12527q = SystemClock.elapsedRealtime();
         f(j10);
-        long j12 = j10 - this.f12138m;
-        if (Math.abs(j12) < this.f12130e) {
-            this.f12141p = 1.0f;
+        long j12 = j10 - this.f12523m;
+        if (Math.abs(j12) < this.f12515e) {
+            this.f12526p = 1.0f;
         } else {
-            this.f12141p = ne.w0.p((this.f12129d * ((float) j12)) + 1.0f, this.f12140o, this.f12139n);
+            this.f12526p = ne.w0.p((this.f12514d * ((float) j12)) + 1.0f, this.f12525o, this.f12524n);
         }
-        return this.f12141p;
+        return this.f12526p;
     }
 
     @Override // com.google.android.exoplayer2.v0
     public long c() {
-        return this.f12138m;
+        return this.f12523m;
     }
 
     @Override // com.google.android.exoplayer2.v0
     public void d() {
-        long j10 = this.f12138m;
+        long j10 = this.f12523m;
         if (j10 == -9223372036854775807L) {
             return;
         }
-        long j11 = j10 + this.f12131f;
-        this.f12138m = j11;
-        long j12 = this.f12137l;
+        long j11 = j10 + this.f12516f;
+        this.f12523m = j11;
+        long j12 = this.f12522l;
         if (j12 != -9223372036854775807L && j11 > j12) {
-            this.f12138m = j12;
+            this.f12523m = j12;
         }
-        this.f12142q = -9223372036854775807L;
+        this.f12527q = -9223372036854775807L;
     }
 
     @Override // com.google.android.exoplayer2.v0
     public void e(long j10) {
-        this.f12134i = j10;
+        this.f12519i = j10;
         g();
     }
 
     private h(float f10, float f11, long j10, float f12, long j11, long j12, float f13) {
-        this.f12126a = f10;
-        this.f12127b = f11;
-        this.f12128c = j10;
-        this.f12129d = f12;
-        this.f12130e = j11;
-        this.f12131f = j12;
-        this.f12132g = f13;
-        this.f12133h = -9223372036854775807L;
-        this.f12134i = -9223372036854775807L;
-        this.f12136k = -9223372036854775807L;
-        this.f12137l = -9223372036854775807L;
-        this.f12140o = f10;
-        this.f12139n = f11;
-        this.f12141p = 1.0f;
-        this.f12142q = -9223372036854775807L;
-        this.f12135j = -9223372036854775807L;
-        this.f12138m = -9223372036854775807L;
-        this.f12143r = -9223372036854775807L;
-        this.f12144s = -9223372036854775807L;
+        this.f12511a = f10;
+        this.f12512b = f11;
+        this.f12513c = j10;
+        this.f12514d = f12;
+        this.f12515e = j11;
+        this.f12516f = j12;
+        this.f12517g = f13;
+        this.f12518h = -9223372036854775807L;
+        this.f12519i = -9223372036854775807L;
+        this.f12521k = -9223372036854775807L;
+        this.f12522l = -9223372036854775807L;
+        this.f12525o = f10;
+        this.f12524n = f11;
+        this.f12526p = 1.0f;
+        this.f12527q = -9223372036854775807L;
+        this.f12520j = -9223372036854775807L;
+        this.f12523m = -9223372036854775807L;
+        this.f12528r = -9223372036854775807L;
+        this.f12529s = -9223372036854775807L;
     }
 }

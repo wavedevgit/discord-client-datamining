@@ -7,16 +7,16 @@ import java.util.WeakHashMap;
 public class b implements Iterable {
 
     /* renamed from: d  reason: collision with root package name */
-    c f37551d;
+    c f37213d;
 
     /* renamed from: e  reason: collision with root package name */
-    private c f37552e;
+    private c f37214e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final WeakHashMap f37553i = new WeakHashMap();
+    private final WeakHashMap f37215i = new WeakHashMap();
 
     /* renamed from: o  reason: collision with root package name */
-    private int f37554o = 0;
+    private int f37216o = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -27,30 +27,30 @@ public class b implements Iterable {
 
         @Override // m.b.e
         c b(c cVar) {
-            return cVar.f37558o;
+            return cVar.f37220o;
         }
 
         @Override // m.b.e
         c c(c cVar) {
-            return cVar.f37557i;
+            return cVar.f37219i;
         }
     }
 
     /* renamed from: m.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    private static class C0476b extends e {
-        C0476b(c cVar, c cVar2) {
+    private static class C0488b extends e {
+        C0488b(c cVar, c cVar2) {
             super(cVar, cVar2);
         }
 
         @Override // m.b.e
         c b(c cVar) {
-            return cVar.f37557i;
+            return cVar.f37219i;
         }
 
         @Override // m.b.e
         c c(c cVar) {
-            return cVar.f37558o;
+            return cVar.f37220o;
         }
     }
 
@@ -59,20 +59,20 @@ public class b implements Iterable {
     public static class c implements Map.Entry {
 
         /* renamed from: d  reason: collision with root package name */
-        final Object f37555d;
+        final Object f37217d;
 
         /* renamed from: e  reason: collision with root package name */
-        final Object f37556e;
+        final Object f37218e;
 
         /* renamed from: i  reason: collision with root package name */
-        c f37557i;
+        c f37219i;
 
         /* renamed from: o  reason: collision with root package name */
-        c f37558o;
+        c f37220o;
 
         c(Object obj, Object obj2) {
-            this.f37555d = obj;
-            this.f37556e = obj2;
+            this.f37217d = obj;
+            this.f37218e = obj2;
         }
 
         @Override // java.util.Map.Entry
@@ -84,7 +84,7 @@ public class b implements Iterable {
                 return false;
             }
             c cVar = (c) obj;
-            if (this.f37555d.equals(cVar.f37555d) && this.f37556e.equals(cVar.f37556e)) {
+            if (this.f37217d.equals(cVar.f37217d) && this.f37218e.equals(cVar.f37218e)) {
                 return true;
             }
             return false;
@@ -92,17 +92,17 @@ public class b implements Iterable {
 
         @Override // java.util.Map.Entry
         public Object getKey() {
-            return this.f37555d;
+            return this.f37217d;
         }
 
         @Override // java.util.Map.Entry
         public Object getValue() {
-            return this.f37556e;
+            return this.f37218e;
         }
 
         @Override // java.util.Map.Entry
         public int hashCode() {
-            return this.f37555d.hashCode() ^ this.f37556e.hashCode();
+            return this.f37217d.hashCode() ^ this.f37218e.hashCode();
         }
 
         @Override // java.util.Map.Entry
@@ -111,7 +111,7 @@ public class b implements Iterable {
         }
 
         public String toString() {
-            return this.f37555d + "=" + this.f37556e;
+            return this.f37217d + "=" + this.f37218e;
         }
     }
 
@@ -119,10 +119,10 @@ public class b implements Iterable {
     public class d extends f implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private c f37559d;
+        private c f37221d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f37560e = true;
+        private boolean f37222e = true;
 
         d() {
         }
@@ -130,16 +130,16 @@ public class b implements Iterable {
         @Override // m.b.f
         void a(c cVar) {
             boolean z10;
-            c cVar2 = this.f37559d;
+            c cVar2 = this.f37221d;
             if (cVar == cVar2) {
-                c cVar3 = cVar2.f37558o;
-                this.f37559d = cVar3;
+                c cVar3 = cVar2.f37220o;
+                this.f37221d = cVar3;
                 if (cVar3 == null) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
-                this.f37560e = z10;
+                this.f37222e = z10;
             }
         }
 
@@ -147,31 +147,31 @@ public class b implements Iterable {
         /* renamed from: b */
         public Map.Entry next() {
             c cVar;
-            if (this.f37560e) {
-                this.f37560e = false;
-                this.f37559d = b.this.f37551d;
+            if (this.f37222e) {
+                this.f37222e = false;
+                this.f37221d = b.this.f37213d;
             } else {
-                c cVar2 = this.f37559d;
+                c cVar2 = this.f37221d;
                 if (cVar2 != null) {
-                    cVar = cVar2.f37557i;
+                    cVar = cVar2.f37219i;
                 } else {
                     cVar = null;
                 }
-                this.f37559d = cVar;
+                this.f37221d = cVar;
             }
-            return this.f37559d;
+            return this.f37221d;
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f37560e) {
-                if (b.this.f37551d == null) {
+            if (this.f37222e) {
+                if (b.this.f37213d == null) {
                     return false;
                 }
                 return true;
             }
-            c cVar = this.f37559d;
-            if (cVar == null || cVar.f37557i == null) {
+            c cVar = this.f37221d;
+            if (cVar == null || cVar.f37219i == null) {
                 return false;
             }
             return true;
@@ -182,19 +182,19 @@ public class b implements Iterable {
     private static abstract class e extends f implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        c f37562d;
+        c f37224d;
 
         /* renamed from: e  reason: collision with root package name */
-        c f37563e;
+        c f37225e;
 
         e(c cVar, c cVar2) {
-            this.f37562d = cVar2;
-            this.f37563e = cVar;
+            this.f37224d = cVar2;
+            this.f37225e = cVar;
         }
 
         private c e() {
-            c cVar = this.f37563e;
-            c cVar2 = this.f37562d;
+            c cVar = this.f37225e;
+            c cVar2 = this.f37224d;
             if (cVar != cVar2 && cVar2 != null) {
                 return c(cVar);
             }
@@ -203,16 +203,16 @@ public class b implements Iterable {
 
         @Override // m.b.f
         public void a(c cVar) {
-            if (this.f37562d == cVar && cVar == this.f37563e) {
-                this.f37563e = null;
-                this.f37562d = null;
+            if (this.f37224d == cVar && cVar == this.f37225e) {
+                this.f37225e = null;
+                this.f37224d = null;
             }
-            c cVar2 = this.f37562d;
+            c cVar2 = this.f37224d;
             if (cVar2 == cVar) {
-                this.f37562d = b(cVar2);
+                this.f37224d = b(cVar2);
             }
-            if (this.f37563e == cVar) {
-                this.f37563e = e();
+            if (this.f37225e == cVar) {
+                this.f37225e = e();
             }
         }
 
@@ -223,14 +223,14 @@ public class b implements Iterable {
         @Override // java.util.Iterator
         /* renamed from: d */
         public Map.Entry next() {
-            c cVar = this.f37563e;
-            this.f37563e = e();
+            c cVar = this.f37225e;
+            this.f37225e = e();
             return cVar;
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f37563e != null) {
+            if (this.f37225e != null) {
                 return true;
             }
             return false;
@@ -243,31 +243,31 @@ public class b implements Iterable {
     }
 
     public Map.Entry b() {
-        return this.f37551d;
+        return this.f37213d;
     }
 
     protected c c(Object obj) {
-        c cVar = this.f37551d;
-        while (cVar != null && !cVar.f37555d.equals(obj)) {
-            cVar = cVar.f37557i;
+        c cVar = this.f37213d;
+        while (cVar != null && !cVar.f37217d.equals(obj)) {
+            cVar = cVar.f37219i;
         }
         return cVar;
     }
 
     public d d() {
         d dVar = new d();
-        this.f37553i.put(dVar, Boolean.FALSE);
+        this.f37215i.put(dVar, Boolean.FALSE);
         return dVar;
     }
 
     public Iterator descendingIterator() {
-        C0476b c0476b = new C0476b(this.f37552e, this.f37551d);
-        this.f37553i.put(c0476b, Boolean.FALSE);
-        return c0476b;
+        C0488b c0488b = new C0488b(this.f37214e, this.f37213d);
+        this.f37215i.put(c0488b, Boolean.FALSE);
+        return c0488b;
     }
 
     public Map.Entry e() {
-        return this.f37552e;
+        return this.f37214e;
     }
 
     public boolean equals(Object obj) {
@@ -299,23 +299,23 @@ public class b implements Iterable {
     /* JADX INFO: Access modifiers changed from: package-private */
     public c f(Object obj, Object obj2) {
         c cVar = new c(obj, obj2);
-        this.f37554o++;
-        c cVar2 = this.f37552e;
+        this.f37216o++;
+        c cVar2 = this.f37214e;
         if (cVar2 == null) {
-            this.f37551d = cVar;
-            this.f37552e = cVar;
+            this.f37213d = cVar;
+            this.f37214e = cVar;
             return cVar;
         }
-        cVar2.f37557i = cVar;
-        cVar.f37558o = cVar2;
-        this.f37552e = cVar;
+        cVar2.f37219i = cVar;
+        cVar.f37220o = cVar2;
+        this.f37214e = cVar;
         return cVar;
     }
 
     public Object g(Object obj, Object obj2) {
         c c10 = c(obj);
         if (c10 != null) {
-            return c10.f37556e;
+            return c10.f37218e;
         }
         f(obj, obj2);
         return null;
@@ -326,27 +326,27 @@ public class b implements Iterable {
         if (c10 == null) {
             return null;
         }
-        this.f37554o--;
-        if (!this.f37553i.isEmpty()) {
-            for (f fVar : this.f37553i.keySet()) {
+        this.f37216o--;
+        if (!this.f37215i.isEmpty()) {
+            for (f fVar : this.f37215i.keySet()) {
                 fVar.a(c10);
             }
         }
-        c cVar = c10.f37558o;
+        c cVar = c10.f37220o;
         if (cVar != null) {
-            cVar.f37557i = c10.f37557i;
+            cVar.f37219i = c10.f37219i;
         } else {
-            this.f37551d = c10.f37557i;
+            this.f37213d = c10.f37219i;
         }
-        c cVar2 = c10.f37557i;
+        c cVar2 = c10.f37219i;
         if (cVar2 != null) {
-            cVar2.f37558o = cVar;
+            cVar2.f37220o = cVar;
         } else {
-            this.f37552e = cVar;
+            this.f37214e = cVar;
         }
-        c10.f37557i = null;
-        c10.f37558o = null;
-        return c10.f37556e;
+        c10.f37219i = null;
+        c10.f37220o = null;
+        return c10.f37218e;
     }
 
     public int hashCode() {
@@ -360,13 +360,13 @@ public class b implements Iterable {
 
     @Override // java.lang.Iterable
     public Iterator iterator() {
-        a aVar = new a(this.f37551d, this.f37552e);
-        this.f37553i.put(aVar, Boolean.FALSE);
+        a aVar = new a(this.f37213d, this.f37214e);
+        this.f37215i.put(aVar, Boolean.FALSE);
         return aVar;
     }
 
     public int size() {
-        return this.f37554o;
+        return this.f37216o;
     }
 
     public String toString() {

@@ -14,10 +14,10 @@ import java.util.Arrays;
 public abstract class g0 extends f implements com.facebook.soloader.b {
 
     /* renamed from: d  reason: collision with root package name */
-    protected final Context f11044d;
+    protected final Context f11429d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String[] f11045e;
+    private String[] f11430e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -39,30 +39,30 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
     public class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ boolean f11047d;
+        final /* synthetic */ boolean f11432d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ File f11048e;
+        final /* synthetic */ File f11433e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ n f11049i;
+        final /* synthetic */ n f11434i;
 
         b(boolean z10, File file, n nVar) {
-            this.f11047d = z10;
-            this.f11048e = file;
-            this.f11049i = nVar;
+            this.f11432d = z10;
+            this.f11433e = file;
+            this.f11434i = nVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             p.f("fb-UnpackingSoSource", "starting syncer worker");
             try {
-                if (this.f11047d) {
-                    SysUtil.f(g0.this.f11041a);
+                if (this.f11432d) {
+                    SysUtil.f(g0.this.f11426a);
                 }
-                g0.u(this.f11048e, (byte) 1, this.f11047d);
-                p.f("fb-UnpackingSoSource", "releasing dso store lock for " + g0.this.f11041a + " (from syncer thread)");
-                this.f11049i.close();
+                g0.u(this.f11433e, (byte) 1, this.f11432d);
+                p.f("fb-UnpackingSoSource", "releasing dso store lock for " + g0.this.f11426a + " (from syncer thread)");
+                this.f11434i.close();
             } catch (IOException e10) {
                 throw new RuntimeException(e10);
             }
@@ -73,14 +73,14 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
     public static class c {
 
         /* renamed from: d  reason: collision with root package name */
-        public final String f11051d;
+        public final String f11436d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final String f11052e;
+        public final String f11437e;
 
         public c(String str, String str2) {
-            this.f11051d = str;
-            this.f11052e = str2;
+            this.f11436d = str;
+            this.f11437e = str2;
         }
     }
 
@@ -88,27 +88,27 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
     protected static final class d implements Closeable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final c f11053d;
+        private final c f11438d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final InputStream f11054e;
+        private final InputStream f11439e;
 
         public d(c cVar, InputStream inputStream) {
-            this.f11053d = cVar;
-            this.f11054e = inputStream;
+            this.f11438d = cVar;
+            this.f11439e = inputStream;
         }
 
         public int available() {
-            return this.f11054e.available();
+            return this.f11439e.available();
         }
 
         @Override // java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            this.f11054e.close();
+            this.f11439e.close();
         }
 
         public c h() {
-            return this.f11053d;
+            return this.f11438d;
         }
     }
 
@@ -118,8 +118,8 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
         public void a(d dVar, byte[] bArr, File file) {
             boolean exists;
             boolean writable;
-            p.d("fb-UnpackingSoSource", "extracting DSO " + dVar.h().f11051d);
-            File file2 = new File(file, dVar.h().f11051d);
+            p.d("fb-UnpackingSoSource", "extracting DSO " + dVar.h().f11436d);
+            File file2 = new File(file, dVar.h().f11436d);
             try {
                 try {
                     RandomAccessFile randomAccessFile = new RandomAccessFile(file2, "rw");
@@ -128,7 +128,7 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
                         if (available > 1) {
                             SysUtil.d(randomAccessFile.getFD(), available);
                         }
-                        SysUtil.a(randomAccessFile, dVar.f11054e, Integer.MAX_VALUE, bArr);
+                        SysUtil.a(randomAccessFile, dVar.f11439e, Integer.MAX_VALUE, bArr);
                         randomAccessFile.setLength(randomAccessFile.getFilePointer());
                         if (file2.setExecutable(true, false)) {
                             randomAccessFile.close();
@@ -167,17 +167,17 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
 
         public abstract c[] h();
 
-        public abstract void l(File file);
+        public abstract void k(File file);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public g0(Context context, String str, boolean z10) {
         super(p(context, str), z10 ? 1 : 0);
-        this.f11044d = context;
+        this.f11429d = context;
     }
 
     private void j() {
-        File[] listFiles = this.f11041a.listFiles(new a());
+        File[] listFiles = this.f11426a.listFiles(new a());
         if (listFiles != null) {
             for (File file : listFiles) {
                 p.f("fb-UnpackingSoSource", "Deleting " + file);
@@ -185,7 +185,7 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
             }
             return;
         }
-        throw new IOException("unable to list directory " + this.f11041a);
+        throw new IOException("unable to list directory " + this.f11426a);
     }
 
     private static boolean m(int i10) {
@@ -200,7 +200,7 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
         byte b10;
         boolean z10;
         RandomAccessFile randomAccessFile;
-        File file = new File(this.f11041a, "dso_state");
+        File file = new File(this.f11426a, "dso_state");
         byte[] n10 = n();
         if (!m(i10) && !k(n10)) {
             randomAccessFile = new RandomAccessFile(file, "rw");
@@ -209,10 +209,10 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
                     try {
                         b10 = randomAccessFile.readByte();
                     } catch (IOException e10) {
-                        p.f("fb-UnpackingSoSource", "dso store " + this.f11041a + " regeneration interrupted: " + e10.getMessage());
+                        p.f("fb-UnpackingSoSource", "dso store " + this.f11426a + " regeneration interrupted: " + e10.getMessage());
                     }
                     if (b10 == 1) {
-                        p.f("fb-UnpackingSoSource", "dso store " + this.f11041a + " regeneration not needed: state file clean");
+                        p.f("fb-UnpackingSoSource", "dso store " + this.f11426a + " regeneration not needed: state file clean");
                         randomAccessFile.close();
                     }
                 }
@@ -237,16 +237,16 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
         j();
         e q10 = q();
         try {
-            q10.l(this.f11041a);
+            q10.k(this.f11426a);
             q10.close();
-            randomAccessFile = new RandomAccessFile(new File(this.f11041a, "dso_deps"), "rw");
+            randomAccessFile = new RandomAccessFile(new File(this.f11426a, "dso_deps"), "rw");
             try {
                 randomAccessFile.write(n10);
                 randomAccessFile.setLength(randomAccessFile.getFilePointer());
                 randomAccessFile.close();
                 b bVar = new b(z10, file, nVar);
                 if (s(i10)) {
-                    new Thread(bVar, "SoSync:" + this.f11041a.getName()).start();
+                    new Thread(bVar, "SoSync:" + this.f11426a.getName()).start();
                 } else {
                     bVar.run();
                 }
@@ -293,57 +293,57 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
     @Override // com.facebook.soloader.b
     public void a() {
         try {
-            n i10 = SysUtil.i(this.f11041a, new File(this.f11041a, "dso_lock"));
+            n i10 = SysUtil.i(this.f11426a, new File(this.f11426a, "dso_lock"));
             if (i10 != null) {
                 i10.close();
             }
         } catch (Exception e10) {
-            p.c("fb-UnpackingSoSource", "Encountered exception during wait for unpacking trying to acquire file lock for " + getClass().getName() + " (" + this.f11041a + "): ", e10);
+            p.c("fb-UnpackingSoSource", "Encountered exception during wait for unpacking trying to acquire file lock for " + getClass().getName() + " (" + this.f11426a + "): ", e10);
         }
     }
 
     @Override // com.facebook.soloader.e0
     public void e(int i10) {
-        SysUtil.m(this.f11041a);
-        if (!this.f11041a.canWrite() && !this.f11041a.setWritable(true)) {
-            throw new IOException("error adding " + this.f11041a.getCanonicalPath() + " write permission");
+        SysUtil.m(this.f11426a);
+        if (!this.f11426a.canWrite() && !this.f11426a.setWritable(true)) {
+            throw new IOException("error adding " + this.f11426a.getCanonicalPath() + " write permission");
         }
         n nVar = null;
         try {
             try {
-                n i11 = SysUtil.i(this.f11041a, new File(this.f11041a, "dso_lock"));
+                n i11 = SysUtil.i(this.f11426a, new File(this.f11426a, "dso_lock"));
                 try {
-                    p.f("fb-UnpackingSoSource", "locked dso store " + this.f11041a);
-                    if (!this.f11041a.canWrite() && !this.f11041a.setWritable(true)) {
-                        throw new IOException("error adding " + this.f11041a.getCanonicalPath() + " write permission");
+                    p.f("fb-UnpackingSoSource", "locked dso store " + this.f11426a);
+                    if (!this.f11426a.canWrite() && !this.f11426a.setWritable(true)) {
+                        throw new IOException("error adding " + this.f11426a.getCanonicalPath() + " write permission");
                     }
                     if (!r(i11, i10)) {
-                        p.d("fb-UnpackingSoSource", "dso store is up-to-date: " + this.f11041a);
+                        p.d("fb-UnpackingSoSource", "dso store is up-to-date: " + this.f11426a);
                         nVar = i11;
                     }
                     if (nVar != null) {
-                        p.f("fb-UnpackingSoSource", "releasing dso store lock for " + this.f11041a);
+                        p.f("fb-UnpackingSoSource", "releasing dso store lock for " + this.f11426a);
                         nVar.close();
                     } else {
-                        p.f("fb-UnpackingSoSource", "not releasing dso store lock for " + this.f11041a + " (syncer thread started)");
+                        p.f("fb-UnpackingSoSource", "not releasing dso store lock for " + this.f11426a + " (syncer thread started)");
                     }
-                    if (this.f11041a.canWrite() && !this.f11041a.setWritable(false)) {
-                        throw new IOException("error removing " + this.f11041a.getCanonicalPath() + " write permission");
+                    if (this.f11426a.canWrite() && !this.f11426a.setWritable(false)) {
+                        throw new IOException("error removing " + this.f11426a.getCanonicalPath() + " write permission");
                     }
                 } catch (Throwable th2) {
                     th = th2;
                     nVar = i11;
                     if (nVar != null) {
-                        p.f("fb-UnpackingSoSource", "releasing dso store lock for " + this.f11041a);
+                        p.f("fb-UnpackingSoSource", "releasing dso store lock for " + this.f11426a);
                         nVar.close();
                     } else {
-                        p.f("fb-UnpackingSoSource", "not releasing dso store lock for " + this.f11041a + " (syncer thread started)");
+                        p.f("fb-UnpackingSoSource", "not releasing dso store lock for " + this.f11426a + " (syncer thread started)");
                     }
                     throw th;
                 }
             } catch (Throwable th3) {
-                if (this.f11041a.canWrite() && !this.f11041a.setWritable(false)) {
-                    throw new IOException("error removing " + this.f11041a.getCanonicalPath() + " write permission");
+                if (this.f11426a.canWrite() && !this.f11426a.setWritable(false)) {
+                    throw new IOException("error removing " + this.f11426a.getCanonicalPath() + " write permission");
                 }
                 throw th3;
             }
@@ -354,7 +354,7 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
 
     protected boolean k(byte[] bArr) {
         try {
-            RandomAccessFile randomAccessFile = new RandomAccessFile(new File(this.f11041a, "dso_deps"), "rw");
+            RandomAccessFile randomAccessFile = new RandomAccessFile(new File(this.f11426a, "dso_deps"), "rw");
             if (randomAccessFile.length() != 0) {
                 int length = (int) randomAccessFile.length();
                 byte[] bArr2 = new byte[length];
@@ -386,8 +386,8 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
             c[] h10 = q10.h();
             obtain.writeInt(h10.length);
             for (c cVar : h10) {
-                obtain.writeString(cVar.f11051d);
-                obtain.writeString(cVar.f11052e);
+                obtain.writeString(cVar.f11436d);
+                obtain.writeString(cVar.f11437e);
             }
             q10.close();
             byte[] marshall = obtain.marshall();
@@ -426,7 +426,7 @@ public abstract class g0 extends f implements com.facebook.soloader.b {
     protected abstract e q();
 
     public void t(String[] strArr) {
-        this.f11045e = strArr;
+        this.f11430e = strArr;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

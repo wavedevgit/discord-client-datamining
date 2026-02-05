@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7 = 'getDuration';
         var0.key = var7;
         var6 = function() {
-            _fun33873: for (var _fun33873_ip = 0;;) switch (_fun33873_ip) {
+            _fun33883: for (var _fun33883_ip = 0;;) switch (_fun33883_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.durationV;
@@ -130,8 +130,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var0 != var1;
                     var0 = 300;
                     if (!var2) {
-                        _fun33873_ip = 27;
-                        continue _fun33873
+                        _fun33883_ip = 27;
+                        continue _fun33883
                     }
                 case 24:
                     var0 = var1;
@@ -156,13 +156,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var11 = 'getDelay';
         var0.key = var11;
         var11 = function() {
-            _fun33875: for (var _fun33875_ip = 0;;) switch (_fun33875_ip) {
+            _fun33885: for (var _fun33885_ip = 0;;) switch (_fun33885_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.randomizeDelay;
                     if (var0) {
-                        _fun33875_ip = 34;
-                        continue _fun33875
+                        _fun33885_ip = 34;
+                        continue _fun33885
                     }
                 case 12:
                     var2 = var1.delayV;
@@ -170,14 +170,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var0 != var2;
                     var0 = 0;
                     if (!var3) {
-                        _fun33875_ip = 32;
-                        continue _fun33875
+                        _fun33885_ip = 32;
+                        continue _fun33885
                     }
                 case 29:
                     var0 = var2;
                 case 32:
-                    _fun33875_ip = 80;
-                    continue _fun33875;
+                    _fun33885_ip = 80;
+                    continue _fun33885;
                 case 34:
                     var2 = global;
                     var3 = var2.Math;
@@ -188,8 +188,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var1 != var3;
                     var1 = 1000;
                     if (!var4) {
-                        _fun33875_ip = 76;
-                        continue _fun33875
+                        _fun33885_ip = 76;
+                        continue _fun33885
                     }
                 case 73:
                     var1 = var3;
@@ -215,13 +215,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var11 = 'getDelayFunction';
         var0.key = var11;
         var11 = function() {
-            _fun33877: for (var _fun33877_ip = 0;;) switch (_fun33877_ip) {
+            _fun33887: for (var _fun33887_ip = 0;;) switch (_fun33887_ip) {
                 case 0:
                     var3 = this;
                     var0 = var3.randomizeDelay;
                     if (var0) {
-                        _fun33877_ip = 20;
-                        continue _fun33877
+                        _fun33887_ip = 20;
+                        continue _fun33887
                     }
                 case 14:
                     var0 = var3.delayV;
@@ -230,8 +230,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var2.bind(var3)();
                     var _closure3_slot0 = var4;
                     if (var0) {
-                        _fun33877_ip = 119;
-                        continue _fun33877
+                        _fun33887_ip = 119;
+                        continue _fun33887
                     }
                 case 37:
                     var0 = function arg0, arg1() {
@@ -263,8 +263,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0.__workletHash = var3;
                     var2 = _closure1_slot5;
                     var0.__initData = var2;
-                    _fun33877_ip = 202;
-                    continue _fun33877;
+                    _fun33887_ip = 202;
+                    continue _fun33887;
                 case 119:
                     var1 = function arg0, arg1() {
                         var2 = _closure1_slot0;

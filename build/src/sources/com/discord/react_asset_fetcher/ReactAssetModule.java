@@ -64,7 +64,7 @@ public final class ReactAssetModule extends NativeReactAssetModuleSpec {
             hashMap.put(name, string);
             i10 = i11;
         }
-        Unit unit = Unit.f32464a;
+        Unit unit = Unit.f31988a;
         reactAssetCache.set(reactApplicationContext, hashMap);
     }
 }

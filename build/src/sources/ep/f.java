@@ -1,10 +1,31 @@
 package ep;
+
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import androidx.activity.result.contract.ActivityResultContract;
+import ep.k;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class f {
+public final class f extends ActivityResultContract {
+    @Override // androidx.activity.result.contract.ActivityResultContract
+    /* renamed from: a */
+    public Intent createIntent(Context context, e input) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        Intrinsics.checkNotNullParameter(input, "input");
+        Intent intent = new Intent(context, d.f21688a.a());
+        intent.putExtra("EXTRA_NFC_READER_CONFIG", input);
+        return intent;
+    }
 
-    /* renamed from: a  reason: collision with root package name */
-    public static int f22510a = 2132017523;
-
-    /* renamed from: b  reason: collision with root package name */
-    public static int f22511b = 2132017518;
+    @Override // androidx.activity.result.contract.ActivityResultContract
+    /* renamed from: b */
+    public k parseResult(int i10, Intent intent) {
+        Bundle extras;
+        k kVar;
+        if (intent != null && (extras = intent.getExtras()) != null && (kVar = (k) w1.b.a(extras, "EXTRA_RESULT", k.class)) != null) {
+            return kVar;
+        }
+        return new k.b("Unable to extract output from result intent.", k.c.f21701e);
+    }
 }

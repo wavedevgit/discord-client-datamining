@@ -1,29 +1,59 @@
 package gv;
+
+import java.util.ArrayList;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class l extends r {
+public class l extends lv.a {
 
-    /* renamed from: f  reason: collision with root package name */
-    private String f26664f;
+    /* renamed from: a  reason: collision with root package name */
+    private final jv.m f25463a = new jv.m();
 
-    /* renamed from: g  reason: collision with root package name */
-    private String f26665g;
+    /* renamed from: b  reason: collision with root package name */
+    private final List f25464b = new ArrayList();
 
-    public l(String str, String str2) {
-        this.f26664f = str;
-        this.f26665g = str2;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static class a extends lv.b {
+        @Override // lv.e
+        public lv.f a(lv.h hVar, lv.g gVar) {
+            if (hVar.a() >= iv.d.f30397a && !hVar.b() && !(hVar.d().c() instanceof jv.t)) {
+                return lv.f.d(new l()).a(hVar.getColumn() + iv.d.f30397a);
+            }
+            return lv.f.c();
+        }
     }
 
-    @Override // gv.r
-    public void a(y yVar) {
-        yVar.j(this);
+    @Override // lv.d
+    public jv.a c() {
+        return this.f25463a;
     }
 
-    @Override // gv.r
-    protected String k() {
-        return "destination=" + this.f26664f + ", title=" + this.f26665g;
+    @Override // lv.a, lv.d
+    public void e(CharSequence charSequence) {
+        this.f25464b.add(charSequence);
     }
 
-    public String m() {
-        return this.f26664f;
+    @Override // lv.a, lv.d
+    public void f() {
+        int size = this.f25464b.size() - 1;
+        while (size >= 0 && iv.d.f((CharSequence) this.f25464b.get(size))) {
+            size--;
+        }
+        StringBuilder sb2 = new StringBuilder();
+        for (int i10 = 0; i10 < size + 1; i10++) {
+            sb2.append((CharSequence) this.f25464b.get(i10));
+            sb2.append('\n');
+        }
+        this.f25463a.o(sb2.toString());
+    }
+
+    @Override // lv.d
+    public lv.c g(lv.h hVar) {
+        if (hVar.a() >= iv.d.f30397a) {
+            return lv.c.a(hVar.getColumn() + iv.d.f30397a);
+        }
+        if (hVar.b()) {
+            return lv.c.b(hVar.c());
+        }
+        return lv.c.d();
     }
 }

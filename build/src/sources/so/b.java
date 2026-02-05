@@ -1,88 +1,71 @@
 package so;
 
-import android.content.Context;
-import java.io.File;
-import java.lang.Thread;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import com.withpersona.sdk2.inquiry.internal.network.CreateInquirySessionResponse;
 import kotlin.jvm.internal.Intrinsics;
-import wr.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
+public abstract class b {
 
-    /* renamed from: a  reason: collision with root package name */
-    private boolean f49565a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public /* synthetic */ class a {
 
-    /* renamed from: b  reason: collision with root package name */
-    private boolean f49566b;
+        /* renamed from: a  reason: collision with root package name */
+        public static final /* synthetic */ int[] f50030a;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final bo.a f49567c;
+        /* renamed from: b  reason: collision with root package name */
+        public static final /* synthetic */ int[] f50031b;
 
-    /* renamed from: d  reason: collision with root package name */
-    private List f49568d;
-
-    public b(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        this.f49566b = true;
-        this.f49567c = new bo.a(context);
-        this.f49568d = CollectionsKt.l();
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void e(b bVar, Thread.UncaughtExceptionHandler uncaughtExceptionHandler, Thread thread, Throwable th2) {
-        Intrinsics.checkNotNull(th2);
-        bVar.c(th2);
-        if (uncaughtExceptionHandler != null) {
-            uncaughtExceptionHandler.uncaughtException(thread, th2);
-        } else {
-            System.exit(1);
-            throw new RuntimeException("System.exit returned normally, while it was supposed to halt JVM.");
+        static {
+            int[] iArr = new int[CreateInquirySessionResponse.GpsCollectionRequirement.values().length];
+            try {
+                iArr[CreateInquirySessionResponse.GpsCollectionRequirement.REQUIRE.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                iArr[CreateInquirySessionResponse.GpsCollectionRequirement.OPTIONAL.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                iArr[CreateInquirySessionResponse.GpsCollectionRequirement.NONE.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            f50030a = iArr;
+            int[] iArr2 = new int[CreateInquirySessionResponse.GpsPrecisionRequirement.values().length];
+            try {
+                iArr2[CreateInquirySessionResponse.GpsPrecisionRequirement.PRECISE.ordinal()] = 1;
+            } catch (NoSuchFieldError unused4) {
+            }
+            try {
+                iArr2[CreateInquirySessionResponse.GpsPrecisionRequirement.ROUGH.ordinal()] = 2;
+            } catch (NoSuchFieldError unused5) {
+            }
+            f50031b = iArr2;
         }
     }
 
-    public final void b() {
-        this.f49567c.a();
-    }
-
-    public final void c(Throwable e10) {
-        Intrinsics.checkNotNullParameter(e10, "e");
-        if (this.f49566b) {
-            try {
-                this.f49567c.g(e10);
-            } catch (Exception unused) {
-            }
-            try {
-                for (File file : this.f49568d) {
-                    j.r(file);
+    public static final wp.a a(CreateInquirySessionResponse.GpsCollectionRequirement gpsCollectionRequirement) {
+        Intrinsics.checkNotNullParameter(gpsCollectionRequirement, "<this>");
+        int i10 = a.f50030a[gpsCollectionRequirement.ordinal()];
+        if (i10 != 1) {
+            if (i10 != 2) {
+                if (i10 == 3) {
+                    return wp.a.f53222i;
                 }
-            } catch (Exception unused2) {
+                throw new or.p();
             }
+            return wp.a.f53221e;
         }
+        return wp.a.f53220d;
     }
 
-    public final synchronized void d() {
-        if (this.f49565a) {
-            return;
-        }
-        this.f49565a = true;
-        final Thread.UncaughtExceptionHandler defaultUncaughtExceptionHandler = Thread.getDefaultUncaughtExceptionHandler();
-        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() { // from class: so.a
-            @Override // java.lang.Thread.UncaughtExceptionHandler
-            public final void uncaughtException(Thread thread, Throwable th2) {
-                b.e(b.this, defaultUncaughtExceptionHandler, thread, th2);
+    public static final wp.e b(CreateInquirySessionResponse.GpsPrecisionRequirement gpsPrecisionRequirement) {
+        Intrinsics.checkNotNullParameter(gpsPrecisionRequirement, "<this>");
+        int i10 = a.f50031b[gpsPrecisionRequirement.ordinal()];
+        if (i10 != 1) {
+            if (i10 == 2) {
+                return wp.e.f53232d;
             }
-        });
-    }
-
-    public final void f(List list) {
-        Intrinsics.checkNotNullParameter(list, "<set-?>");
-        this.f49568d = list;
-    }
-
-    public final synchronized void g() {
-        if (this.f49565a) {
-            this.f49566b = false;
+            throw new or.p();
         }
+        return wp.e.f53233e;
     }
 }

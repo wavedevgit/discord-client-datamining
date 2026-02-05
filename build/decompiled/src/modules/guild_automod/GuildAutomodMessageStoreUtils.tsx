@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_automod/GuildAutomodMessageStoreUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun93414: for (var _fun93414_ip = 0;;) switch (_fun93414_ip) {
+        _fun93433: for (var _fun93433_ip = 0;;) switch (_fun93433_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.type;
@@ -36,8 +36,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.AUTO_MODERATION_MESSAGE;
                 var0 = var2 !== var0;
                 if (!var0) {
-                    _fun93414_ip = 84;
-                    continue _fun93414
+                    _fun93433_ip = 84;
+                    continue _fun93433
                 }
             case 51:
                 var3 = _closure1_slot0;

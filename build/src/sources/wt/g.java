@@ -1,22 +1,7 @@
 package wt;
-
-import java.nio.charset.Charset;
-import kotlin.jvm.internal.Intrinsics;
-import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g {
+public interface g extends nt.f {
+    long l(f fVar);
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final g f52757a = new g();
-
-    private g() {
-    }
-
-    public static final String a(String username, String password, Charset charset) {
-        Intrinsics.checkNotNullParameter(username, "username");
-        Intrinsics.checkNotNullParameter(password, "password");
-        Intrinsics.checkNotNullParameter(charset, "charset");
-        String d10 = ByteString.f44307o.f(username + ':' + password, charset).d();
-        return "Basic " + d10;
-    }
+    int p(f fVar);
 }

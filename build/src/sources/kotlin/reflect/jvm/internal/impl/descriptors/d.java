@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.descriptors.NotFoundClasses;
 public class d implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final NotFoundClasses f32844d;
+    private final NotFoundClasses f32368d;
 
     public d(NotFoundClasses notFoundClasses) {
-        this.f32844d = notFoundClasses;
+        this.f32368d = notFoundClasses;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         ClassDescriptor c10;
-        c10 = NotFoundClasses.c(this.f32844d, (NotFoundClasses.a) obj);
+        c10 = NotFoundClasses.c(this.f32368d, (NotFoundClasses.a) obj);
         return c10;
     }
 }

@@ -44,13 +44,13 @@ public abstract class e implements h {
         @Override // java.lang.Comparable
         /* renamed from: A */
         public int compareTo(b bVar) {
-            if (o() != bVar.o()) {
-                if (!o()) {
+            if (n() != bVar.n()) {
+                if (!n()) {
                     return -1;
                 }
                 return 1;
             }
-            long j10 = this.f47499p - bVar.f47499p;
+            long j10 = this.f47563p - bVar.f47563p;
             if (j10 == 0) {
                 j10 = this.f596u - bVar.f596u;
                 if (j10 == 0) {
@@ -149,9 +149,9 @@ public abstract class e implements h {
         if (this.f591b.isEmpty()) {
             return null;
         }
-        while (!this.f592c.isEmpty() && ((b) w0.j((b) this.f592c.peek())).f47499p <= this.f594e) {
+        while (!this.f592c.isEmpty() && ((b) w0.j((b) this.f592c.peek())).f47563p <= this.f594e) {
             b bVar = (b) w0.j((b) this.f592c.poll());
-            if (bVar.o()) {
+            if (bVar.n()) {
                 l lVar = (l) w0.j((l) this.f591b.pollFirst());
                 lVar.g(4);
                 m(bVar);
@@ -161,7 +161,7 @@ public abstract class e implements h {
             if (k()) {
                 zd.g e10 = e();
                 l lVar2 = (l) w0.j((l) this.f591b.pollFirst());
-                lVar2.u(bVar.f47499p, e10, LongCompanionObject.MAX_VALUE);
+                lVar2.u(bVar.f47563p, e10, LongCompanionObject.MAX_VALUE);
                 m(bVar);
                 return lVar2;
             }
@@ -193,7 +193,7 @@ public abstract class e implements h {
         }
         ne.a.a(z10);
         b bVar = (b) kVar;
-        if (bVar.l()) {
+        if (bVar.m()) {
             m(bVar);
         } else {
             long j10 = this.f595f;

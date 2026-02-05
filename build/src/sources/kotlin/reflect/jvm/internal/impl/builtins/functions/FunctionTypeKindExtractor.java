@@ -19,13 +19,13 @@ public final class FunctionTypeKindExtractor {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final FunctionTypeKindExtractor f32666c = new FunctionTypeKindExtractor(CollectionsKt.o(FunctionTypeKind.Function.INSTANCE, FunctionTypeKind.SuspendFunction.INSTANCE, FunctionTypeKind.KFunction.INSTANCE, FunctionTypeKind.KSuspendFunction.INSTANCE));
+    private static final FunctionTypeKindExtractor f32190c = new FunctionTypeKindExtractor(CollectionsKt.o(FunctionTypeKind.Function.INSTANCE, FunctionTypeKind.SuspendFunction.INSTANCE, FunctionTypeKind.KFunction.INSTANCE, FunctionTypeKind.KSuspendFunction.INSTANCE));
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f32667a;
+    private final List f32191a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f32668b;
+    private final Map f32192b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -35,7 +35,7 @@ public final class FunctionTypeKindExtractor {
 
         @NotNull
         public final FunctionTypeKindExtractor getDefault() {
-            return FunctionTypeKindExtractor.f32666c;
+            return FunctionTypeKindExtractor.f32190c;
         }
 
         private Companion() {
@@ -46,24 +46,24 @@ public final class FunctionTypeKindExtractor {
     public static final class KindWithArity {
 
         /* renamed from: a  reason: collision with root package name */
-        private final FunctionTypeKind f32669a;
+        private final FunctionTypeKind f32193a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f32670b;
+        private final int f32194b;
 
         public KindWithArity(@NotNull FunctionTypeKind kind, int i10) {
             Intrinsics.checkNotNullParameter(kind, "kind");
-            this.f32669a = kind;
-            this.f32670b = i10;
+            this.f32193a = kind;
+            this.f32194b = i10;
         }
 
         @NotNull
         public final FunctionTypeKind component1() {
-            return this.f32669a;
+            return this.f32193a;
         }
 
         public final int component2() {
-            return this.f32670b;
+            return this.f32194b;
         }
 
         public boolean equals(Object obj) {
@@ -72,29 +72,29 @@ public final class FunctionTypeKindExtractor {
             }
             if (obj instanceof KindWithArity) {
                 KindWithArity kindWithArity = (KindWithArity) obj;
-                return Intrinsics.areEqual(this.f32669a, kindWithArity.f32669a) && this.f32670b == kindWithArity.f32670b;
+                return Intrinsics.areEqual(this.f32193a, kindWithArity.f32193a) && this.f32194b == kindWithArity.f32194b;
             }
             return false;
         }
 
         @NotNull
         public final FunctionTypeKind getKind() {
-            return this.f32669a;
+            return this.f32193a;
         }
 
         public int hashCode() {
-            return (this.f32669a.hashCode() * 31) + Integer.hashCode(this.f32670b);
+            return (this.f32193a.hashCode() * 31) + Integer.hashCode(this.f32194b);
         }
 
         @NotNull
         public String toString() {
-            return "KindWithArity(kind=" + this.f32669a + ", arity=" + this.f32670b + ')';
+            return "KindWithArity(kind=" + this.f32193a + ", arity=" + this.f32194b + ')';
         }
     }
 
     public FunctionTypeKindExtractor(@NotNull List<? extends FunctionTypeKind> kinds) {
         Intrinsics.checkNotNullParameter(kinds, "kinds");
-        this.f32667a = kinds;
+        this.f32191a = kinds;
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         for (Object obj : kinds) {
             FqName packageFqName = ((FunctionTypeKind) obj).getPackageFqName();
@@ -105,7 +105,7 @@ public final class FunctionTypeKindExtractor {
             }
             ((List) obj2).add(obj);
         }
-        this.f32668b = linkedHashMap;
+        this.f32192b = linkedHashMap;
     }
 
     private final Integer a(String str) {
@@ -137,7 +137,7 @@ public final class FunctionTypeKindExtractor {
     public final KindWithArity getFunctionalClassKindWithArity(@NotNull FqName packageFqName, @NotNull String className) {
         Intrinsics.checkNotNullParameter(packageFqName, "packageFqName");
         Intrinsics.checkNotNullParameter(className, "className");
-        List<FunctionTypeKind> list = (List) this.f32668b.get(packageFqName);
+        List<FunctionTypeKind> list = (List) this.f32192b.get(packageFqName);
         if (list == null) {
             return null;
         }

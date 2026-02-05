@@ -41,7 +41,7 @@ public final class SamsungConnectActivity extends AppCompatActivity {
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             ISACallback iSACallback;
             SamsungConnectActivity.this.serviceBound = true;
-            com.msc.sa.aidl.a e10 = a.AbstractBinderC0190a.e(iBinder);
+            com.msc.sa.aidl.a e10 = a.AbstractBinderC0208a.e(iBinder);
             Log log = Log.INSTANCE;
             Log.i$default(log, "Samsung", "Samsung Account service connection established", (Throwable) null, 4, (Object) null);
             try {
@@ -50,16 +50,16 @@ public final class SamsungConnectActivity extends AppCompatActivity {
                     Intrinsics.throwUninitializedPropertyAccessException("samsungAccountServiceCallback");
                     iSACallback = null;
                 }
-                String n02 = e10.n0(BuildConfig.SAMSUNGxDISCORD_CLIENT_ID, "dummy", com.discord.BuildConfig.APPLICATION_ID, iSACallback);
-                Log.i$default(log, "Samsung", "Samsung Account service connection established: " + n02, (Throwable) null, 4, (Object) null);
-                if (n02 == null) {
+                String v02 = e10.v0(BuildConfig.SAMSUNGxDISCORD_CLIENT_ID, "dummy", com.discord.BuildConfig.APPLICATION_ID, iSACallback);
+                Log.i$default(log, "Samsung", "Samsung Account service connection established: " + v02, (Throwable) null, 4, (Object) null);
+                if (v02 == null) {
                     SamsungConnectActivity.this.finishedWithRestartRequested();
                     return;
                 }
                 Bundle bundle = new Bundle();
                 bundle.putStringArray("additional", new String[]{"api_server_url", "auth_server_url"});
-                Unit unit = Unit.f32464a;
-                Log.i$default(log, "Samsung", "Samsung Account service connection established: isReqSucc? " + e10.D0(1221, n02, bundle), (Throwable) null, 4, (Object) null);
+                Unit unit = Unit.f31988a;
+                Log.i$default(log, "Samsung", "Samsung Account service connection established: isReqSucc? " + e10.H0(1221, v02, bundle), (Throwable) null, 4, (Object) null);
             } catch (Throwable th2) {
                 Log.INSTANCE.e("Samsung", "Unable to connect to Samsung", th2);
                 SamsungConnectActivity.this.finishWithResult(null, null);
@@ -355,7 +355,7 @@ public final class SamsungConnectActivity extends AppCompatActivity {
             Intent intent = new Intent();
             intent.putExtra(EXTRA_REQ_AUTH_PARAM_AUTH_CODE, str);
             intent.putExtra(EXTRA_REQ_AUTH_PARAM_AUTH_SERVER_URL, str2);
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
             setResult(-1, intent);
         } else {
             setResult(0);

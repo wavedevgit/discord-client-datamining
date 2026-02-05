@@ -2,13 +2,13 @@ package com.discord.media_player;
 
 import com.discord.media_player.MediaPlayerManager;
 import java.lang.ref.WeakReference;
-import js.i0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
+import ms.i0;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @kotlin.coroutines.jvm.internal.e(c = "com.discord.media_player.MediaPlayerManager$startProgressMonitor$1", f = "MediaPlayerManager.kt", l = {112}, m = "invokeSuspend")
@@ -31,7 +31,7 @@ public final class MediaPlayerManager$startProgressMonitor$1 extends k implement
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        Object f10 = rr.b.f();
+        Object f10 = ur.b.f();
         int i10 = this.label;
         if (i10 != 0 && i10 != 1) {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -43,7 +43,7 @@ public final class MediaPlayerManager$startProgressMonitor$1 extends k implement
                 MediaPlayerManager.INSTANCE.getPlaybackProgressFlow$media_player_release().setValue(new MediaPlayerManager.PlaybackProgress(mediaPlayer.getMediaSource(), mediaPlayer.currentPositionMs(), mediaPlayer.durationMs()));
                 this.label = 1;
             } else {
-                return Unit.f32464a;
+                return Unit.f31988a;
             }
         } while (i0.a(100L, this) != f10);
         return f10;
@@ -51,6 +51,6 @@ public final class MediaPlayerManager$startProgressMonitor$1 extends k implement
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManager$startProgressMonitor$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((MediaPlayerManager$startProgressMonitor$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

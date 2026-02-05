@@ -19,7 +19,7 @@ public final class YogaNodePool {
 
     static {
         LegacyArchitectureLogger.assertLegacyArchitecture("YogaNodePool", LegacyArchitectureLogLevel.ERROR);
-        pool$delegate = lr.l.b(lr.o.f37119d, new Function0() { // from class: com.facebook.react.uimanager.j0
+        pool$delegate = or.l.b(or.o.f44231d, new Function0() { // from class: com.facebook.react.uimanager.j0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 ClearableSynchronizedPool pool_delegate$lambda$0;

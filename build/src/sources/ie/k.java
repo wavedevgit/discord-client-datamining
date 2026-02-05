@@ -10,34 +10,34 @@ import ne.w0;
 final class k implements zd.g {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f28385d;
+    private final List f27374d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long[] f28386e;
+    private final long[] f27375e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final long[] f28387i;
+    private final long[] f27376i;
 
     public k(List list) {
-        this.f28385d = Collections.unmodifiableList(new ArrayList(list));
-        this.f28386e = new long[list.size() * 2];
+        this.f27374d = Collections.unmodifiableList(new ArrayList(list));
+        this.f27375e = new long[list.size() * 2];
         for (int i10 = 0; i10 < list.size(); i10++) {
             e eVar = (e) list.get(i10);
             int i11 = i10 * 2;
-            long[] jArr = this.f28386e;
-            jArr[i11] = eVar.f28356b;
-            jArr[i11 + 1] = eVar.f28357c;
+            long[] jArr = this.f27375e;
+            jArr[i11] = eVar.f27345b;
+            jArr[i11 + 1] = eVar.f27346c;
         }
-        long[] jArr2 = this.f28386e;
+        long[] jArr2 = this.f27375e;
         long[] copyOf = Arrays.copyOf(jArr2, jArr2.length);
-        this.f28387i = copyOf;
+        this.f27376i = copyOf;
         Arrays.sort(copyOf);
     }
 
     @Override // zd.g
     public int a(long j10) {
-        int e10 = w0.e(this.f28387i, j10, false, false);
-        if (e10 < this.f28387i.length) {
+        int e10 = w0.e(this.f27376i, j10, false, false);
+        if (e10 < this.f27376i.length) {
             return e10;
         }
         return -1;
@@ -47,13 +47,13 @@ final class k implements zd.g {
     public List d(long j10) {
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
-        for (int i10 = 0; i10 < this.f28385d.size(); i10++) {
-            long[] jArr = this.f28386e;
+        for (int i10 = 0; i10 < this.f27374d.size(); i10++) {
+            long[] jArr = this.f27375e;
             int i11 = i10 * 2;
             if (jArr[i11] <= j10 && j10 < jArr[i11 + 1]) {
-                e eVar = (e) this.f28385d.get(i10);
-                zd.b bVar = eVar.f28355a;
-                if (bVar.f55874p == -3.4028235E38f) {
+                e eVar = (e) this.f27374d.get(i10);
+                zd.b bVar = eVar.f27344a;
+                if (bVar.f55463p == -3.4028235E38f) {
                     arrayList2.add(eVar);
                 } else {
                     arrayList.add(bVar);
@@ -64,12 +64,12 @@ final class k implements zd.g {
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
                 int compare;
-                compare = Long.compare(((e) obj).f28356b, ((e) obj2).f28356b);
+                compare = Long.compare(((e) obj).f27345b, ((e) obj2).f27345b);
                 return compare;
             }
         });
         for (int i12 = 0; i12 < arrayList2.size(); i12++) {
-            arrayList.add(((e) arrayList2.get(i12)).f28355a.b().h((-1) - i12, 1).a());
+            arrayList.add(((e) arrayList2.get(i12)).f27344a.b().h((-1) - i12, 1).a());
         }
         return arrayList;
     }
@@ -84,15 +84,15 @@ final class k implements zd.g {
             z10 = false;
         }
         ne.a.a(z10);
-        if (i10 < this.f28387i.length) {
+        if (i10 < this.f27376i.length) {
             z11 = true;
         }
         ne.a.a(z11);
-        return this.f28387i[i10];
+        return this.f27376i[i10];
     }
 
     @Override // zd.g
     public int f() {
-        return this.f28387i.length;
+        return this.f27376i.length;
     }
 }

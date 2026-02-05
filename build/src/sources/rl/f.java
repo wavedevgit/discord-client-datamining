@@ -1,11 +1,15 @@
 package rl;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-abstract class f {
-    public static float a(long j10) {
-        return ((float) j10) / 1000000.0f;
-    }
 
-    public static float b(long j10) {
-        return ((float) j10) / 1000.0f;
-    }
+import android.media.MediaCodec;
+import android.media.MediaFormat;
+import java.nio.ByteBuffer;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public interface f {
+    String a();
+
+    void b(int i10, ByteBuffer byteBuffer, MediaCodec.BufferInfo bufferInfo);
+
+    int c(MediaFormat mediaFormat, int i10);
+
+    void release();
 }

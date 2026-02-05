@@ -24,19 +24,19 @@ import n5.u;
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ThreadLocal f53185a = new a();
+    private static final ThreadLocal f53729a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ThreadLocal f53186b = new b();
+    private static final ThreadLocal f53730b = new b();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ThreadLocal f53187c = new c();
+    private static final ThreadLocal f53731c = new c();
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ThreadLocal f53188d = new d();
+    private static final ThreadLocal f53732d = new d();
 
     /* renamed from: e  reason: collision with root package name */
-    private static final float f53189e = (float) (Math.sqrt(2.0d) / 2.0d);
+    private static final float f53733e = (float) (Math.sqrt(2.0d) / 2.0d);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends ThreadLocal {
@@ -92,9 +92,9 @@ public abstract class j {
 
     public static void a(Path path, float f10, float f11, float f12) {
         l5.e.b("applyTrimPathIfNeeded");
-        PathMeasure pathMeasure = (PathMeasure) f53185a.get();
-        Path path2 = (Path) f53186b.get();
-        Path path3 = (Path) f53187c.get();
+        PathMeasure pathMeasure = (PathMeasure) f53729a.get();
+        Path path2 = (Path) f53730b.get();
+        Path path3 = (Path) f53731c.get();
         pathMeasure.setPath(path, false);
         float length = pathMeasure.getLength();
         if (f10 == 1.0f && f11 == 0.0f) {
@@ -181,10 +181,10 @@ public abstract class j {
     }
 
     public static float g(Matrix matrix) {
-        float[] fArr = (float[]) f53188d.get();
+        float[] fArr = (float[]) f53732d.get();
         fArr[0] = 0.0f;
         fArr[1] = 0.0f;
-        float f10 = f53189e;
+        float f10 = f53733e;
         fArr[2] = f10;
         fArr[3] = f10;
         matrix.mapPoints(fArr);
@@ -192,7 +192,7 @@ public abstract class j {
     }
 
     public static boolean h(Matrix matrix) {
-        float[] fArr = (float[]) f53188d.get();
+        float[] fArr = (float[]) f53732d.get();
         fArr[0] = 0.0f;
         fArr[1] = 0.0f;
         fArr[2] = 37394.73f;

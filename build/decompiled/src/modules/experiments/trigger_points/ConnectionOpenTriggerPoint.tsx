@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.TestBadgesExistingUsersExperiment;
-    var8 = new Array(27);
+    var8 = new Array(26);
     var8[0] = var3;
     var3 = 2;
     var3 = var5[var3];
@@ -146,11 +146,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 24;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.YouBarExperiment;
-    var8[26] = var3;
-    var3 = 25;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
     var7 = var3.CommonTriggerPointConfiguration;
     var10 = var1.CONNECTION_OPEN;
     var1 = {};
@@ -167,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var1;
     var1 = new var12[var7](var11, var10, var9, var8);
     var1 = var1 instanceof Object ? var1 : var3;
-    var3 = 26;
+    var3 = 25;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -175,4 +170,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.ConnectionOpenTriggerPoint = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 12453, 12454, 12455, 12456, 12457, 12458, 12459, 12460, 12461, 10052, 12462, 7099, 7000, 4796, 9431, 12463, 12464, 12465, 12466, 5343, 12467, 12468, 3622, 12157, 7107, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 12469, 12470, 12471, 12472, 12473, 12474, 12475, 12476, 12477, 10070, 12478, 7119, 7020, 4798, 9449, 12479, 12480, 12481, 12482, 5347, 12483, 12484, 3622, 7126, 2]);

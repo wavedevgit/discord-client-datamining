@@ -66,7 +66,7 @@ public abstract class q1 extends z {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public static q1 m(q1 q1Var, byte[] bArr, e1 e1Var) {
+    public static q1 l(q1 q1Var, byte[] bArr, e1 e1Var) {
         q1 A = A(q1Var, bArr, 0, bArr.length, e1Var);
         if (A != null && !A.j()) {
             a2 a10 = new v3(A).a();
@@ -77,7 +77,7 @@ public abstract class q1 extends z {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public static v1 o() {
+    public static v1 n() {
         return r1.d();
     }
 
@@ -241,7 +241,7 @@ public abstract class q1 extends z {
     }
 
     @Override // com.google.android.gms.internal.play_billing.w2
-    public final /* synthetic */ v2 l() {
+    public final /* synthetic */ v2 m() {
         return (q1) y(6, null, null);
     }
 

@@ -11,7 +11,7 @@ import java.lang.reflect.Constructor;
 import java.util.Map;
 import kotlin.collections.x0;
 import org.jetbrains.annotations.NotNull;
-import vm.c;
+import ym.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class UiComponentError_UiGovernmentIdNfcScanComponentErrorJsonAdapter extends h {
     private volatile Constructor<UiComponentError.UiGovernmentIdNfcScanComponentError> constructorRef;
@@ -39,32 +39,32 @@ public final class UiComponentError_UiGovernmentIdNfcScanComponentErrorJsonAdapt
     @Override // com.squareup.moshi.h
     @NotNull
     public UiComponentError.UiGovernmentIdNfcScanComponentError fromJson(@NotNull m mVar) {
-        mVar.r();
+        mVar.s();
         String str = null;
         Map map = null;
         String str2 = null;
         int i10 = -1;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
+            int W = mVar.W(this.options);
+            if (W == -1) {
                 mVar.E0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
                     throw c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, mVar);
                 }
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str2 = (String) this.stringAdapter.fromJson(mVar);
                 if (str2 == null) {
                     throw c.x("type", "type", mVar);
                 }
                 i10 = -3;
-            } else if (A0 == 2 && (map = (Map) this.mapOfStringStringAdapter.fromJson(mVar)) == null) {
+            } else if (W == 2 && (map = (Map) this.mapOfStringStringAdapter.fromJson(mVar)) == null) {
                 throw c.x("message", "message", mVar);
             }
         }
-        mVar.y();
+        mVar.z();
         if (i10 == -3) {
             if (str != null) {
                 if (map != null) {
@@ -76,7 +76,7 @@ public final class UiComponentError_UiGovernmentIdNfcScanComponentErrorJsonAdapt
         }
         Constructor<UiComponentError.UiGovernmentIdNfcScanComponentError> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = UiComponentError.UiGovernmentIdNfcScanComponentError.class.getDeclaredConstructor(String.class, String.class, Map.class, Integer.TYPE, c.f51688c);
+            constructor = UiComponentError.UiGovernmentIdNfcScanComponentError.class.getDeclaredConstructor(String.class, String.class, Map.class, Integer.TYPE, c.f54853c);
             this.constructorRef = constructor;
         }
         if (str != null) {
@@ -91,12 +91,12 @@ public final class UiComponentError_UiGovernmentIdNfcScanComponentErrorJsonAdapt
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, UiComponentError.UiGovernmentIdNfcScanComponentError uiGovernmentIdNfcScanComponentError) {
         if (uiGovernmentIdNfcScanComponentError != null) {
-            tVar.l();
-            tVar.A0(StackTraceHelper.NAME_KEY);
+            tVar.k();
+            tVar.W(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(tVar, uiGovernmentIdNfcScanComponentError.getName());
-            tVar.A0("type");
+            tVar.W("type");
             this.stringAdapter.toJson(tVar, uiGovernmentIdNfcScanComponentError.getType());
-            tVar.A0("message");
+            tVar.W("message");
             this.mapOfStringStringAdapter.toJson(tVar, uiGovernmentIdNfcScanComponentError.getMessage());
             tVar.E();
             return;

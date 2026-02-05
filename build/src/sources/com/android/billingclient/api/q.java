@@ -8,28 +8,28 @@ import org.json.JSONException;
 final class q extends g6 {
 
     /* renamed from: c  reason: collision with root package name */
-    final a6.d f7711c;
+    final a6.d f8096c;
 
     /* renamed from: d  reason: collision with root package name */
-    final t f7712d;
+    final t f8097d;
 
     /* renamed from: e  reason: collision with root package name */
-    final int f7713e;
+    final int f8098e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ q(a6.d dVar, t tVar, int i10, a6.r rVar) {
-        this.f7711c = dVar;
-        this.f7712d = tVar;
-        this.f7713e = i10;
+        this.f8096c = dVar;
+        this.f8097d = tVar;
+        this.f8098e = i10;
     }
 
     @Override // com.google.android.gms.internal.play_billing.h6
-    public final void H0(Bundle bundle) {
+    public final void N0(Bundle bundle) {
         if (bundle == null) {
-            t tVar = this.f7712d;
-            BillingResult billingResult = u.f7727j;
-            tVar.d(s.a(63, 13, billingResult), this.f7713e);
-            this.f7711c.onBillingConfigResponse(billingResult, null);
+            t tVar = this.f8097d;
+            BillingResult billingResult = u.f8112j;
+            tVar.d(s.a(63, 13, billingResult), this.f8098e);
+            this.f8096c.onBillingConfigResponse(billingResult, null);
             return;
         }
         int b10 = com.google.android.gms.internal.play_billing.a0.b(bundle, "BillingClient");
@@ -40,23 +40,23 @@ final class q extends g6 {
         if (b10 != 0) {
             com.google.android.gms.internal.play_billing.a0.i("BillingClient", "getBillingConfig() failed. Response code: " + b10);
             BillingResult a10 = c10.a();
-            this.f7712d.d(s.a(23, 13, a10), this.f7713e);
-            this.f7711c.onBillingConfigResponse(a10, null);
+            this.f8097d.d(s.a(23, 13, a10), this.f8098e);
+            this.f8096c.onBillingConfigResponse(a10, null);
         } else if (!bundle.containsKey("BILLING_CONFIG")) {
             com.google.android.gms.internal.play_billing.a0.i("BillingClient", "getBillingConfig() returned a bundle with neither an error nor a billing config response");
             c10.c(6);
             BillingResult a11 = c10.a();
-            this.f7712d.d(s.a(64, 13, a11), this.f7713e);
-            this.f7711c.onBillingConfigResponse(a11, null);
+            this.f8097d.d(s.a(64, 13, a11), this.f8098e);
+            this.f8096c.onBillingConfigResponse(a11, null);
         } else {
             try {
-                this.f7711c.onBillingConfigResponse(c10.a(), new BillingConfig(bundle.getString("BILLING_CONFIG")));
+                this.f8096c.onBillingConfigResponse(c10.a(), new BillingConfig(bundle.getString("BILLING_CONFIG")));
             } catch (JSONException e11) {
                 com.google.android.gms.internal.play_billing.a0.j("BillingClient", "Got a JSON exception trying to decode BillingConfig. \n Exception: ", e11);
-                t tVar2 = this.f7712d;
-                BillingResult billingResult2 = u.f7727j;
-                tVar2.d(s.a(65, 13, billingResult2), this.f7713e);
-                this.f7711c.onBillingConfigResponse(billingResult2, null);
+                t tVar2 = this.f8097d;
+                BillingResult billingResult2 = u.f8112j;
+                tVar2.d(s.a(65, 13, billingResult2), this.f8098e);
+                this.f8096c.onBillingConfigResponse(billingResult2, null);
             }
         }
     }

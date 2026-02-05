@@ -40,24 +40,24 @@ public final class StepStyles_SelfieStepTextBasedComponentStyleJsonAdapter exten
     @NotNull
     public StepStyles.SelfieStepTextBasedComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer = null;
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer2 = null;
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 stepTextBasedComponentStyleContainer = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 stepTextBasedComponentStyleContainer2 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 stepTextBasedComponentStyleContainer3 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.SelfieStepTextBasedComponentStyle(stepTextBasedComponentStyleContainer, stepTextBasedComponentStyleContainer2, stepTextBasedComponentStyleContainer3);
     }
 
@@ -65,12 +65,12 @@ public final class StepStyles_SelfieStepTextBasedComponentStyleJsonAdapter exten
     public void toJson(@NotNull t writer, StepStyles.SelfieStepTextBasedComponentStyle selfieStepTextBasedComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfieStepTextBasedComponentStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, selfieStepTextBasedComponentStyle.getBase());
-            writer.A0("selfieProcessingText");
+            writer.W("selfieProcessingText");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, selfieStepTextBasedComponentStyle.getSelfieProcessingText());
-            writer.A0("selfieCaptureHintText");
+            writer.W("selfieCaptureHintText");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, selfieStepTextBasedComponentStyle.getSelfieCaptureHintText());
             writer.E();
             return;

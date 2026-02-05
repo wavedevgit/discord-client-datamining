@@ -13,7 +13,7 @@ public abstract class v5 extends b0 implements w5 {
     protected final boolean e(int i10, Parcel parcel, Parcel parcel2, int i11) {
         if (i10 == 1) {
             c1.b(parcel);
-            O((Status) c1.a(parcel, Status.CREATOR), (PendingIntent) c1.a(parcel, PendingIntent.CREATOR));
+            S((Status) c1.a(parcel, Status.CREATOR), (PendingIntent) c1.a(parcel, PendingIntent.CREATOR));
             return true;
         }
         return false;

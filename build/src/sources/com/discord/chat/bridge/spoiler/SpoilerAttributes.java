@@ -148,7 +148,7 @@ public final class SpoilerAttributes {
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit unit;
-                    unit = Unit.f32464a;
+                    unit = Unit.f31988a;
                     return unit;
                 }
             };
@@ -168,7 +168,7 @@ public final class SpoilerAttributes {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configure$lambda$1(boolean z10) {
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* renamed from: copy-5Uv3usY$default  reason: not valid java name */
@@ -243,7 +243,7 @@ public final class SpoilerAttributes {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 m412invokeV2PEE7g(((SpoilerIdentifier) obj).m420unboximpl());
-                return Unit.f32464a;
+                return Unit.f31988a;
             }
 
             /* renamed from: invoke-V2PEE7g  reason: not valid java name */
@@ -256,7 +256,7 @@ public final class SpoilerAttributes {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 m413invokeV2PEE7g(((SpoilerIdentifier) obj).m420unboximpl());
-                return Unit.f32464a;
+                return Unit.f31988a;
             }
 
             /* renamed from: invoke-V2PEE7g  reason: not valid java name */

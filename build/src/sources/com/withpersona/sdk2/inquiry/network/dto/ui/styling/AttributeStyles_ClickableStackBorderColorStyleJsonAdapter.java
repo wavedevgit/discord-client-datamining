@@ -41,18 +41,18 @@ public final class AttributeStyles_ClickableStackBorderColorStyleJsonAdapter ext
     @NotNull
     public AttributeStyles.ClickableStackBorderColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.ComplexElementColor complexElementColor = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.ClickableStackBorderColorStyle(complexElementColor);
     }
 
@@ -60,8 +60,8 @@ public final class AttributeStyles_ClickableStackBorderColorStyleJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.ClickableStackBorderColorStyle clickableStackBorderColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (clickableStackBorderColorStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableComplexElementColorAdapter.toJson(writer, clickableStackBorderColorStyle.getBase());
             writer.E();
             return;

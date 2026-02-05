@@ -10,39 +10,39 @@ public final class l extends g {
     }
 
     public final boolean c(long j10) {
-        e(this.f50356b + 1);
-        long[] jArr = this.f50355a;
-        int i10 = this.f50356b;
+        e(this.f51128b + 1);
+        long[] jArr = this.f51127a;
+        int i10 = this.f51128b;
         jArr[i10] = j10;
-        this.f50356b = i10 + 1;
+        this.f51128b = i10 + 1;
         return true;
     }
 
     public final boolean d(int i10, long[] elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        if (i10 < 0 || i10 > this.f50356b) {
+        if (i10 < 0 || i10 > this.f51128b) {
             v0.d.c("");
         }
         if (elements.length == 0) {
             return false;
         }
-        e(this.f50356b + elements.length);
-        long[] jArr = this.f50355a;
-        int i11 = this.f50356b;
+        e(this.f51128b + elements.length);
+        long[] jArr = this.f51127a;
+        int i11 = this.f51128b;
         if (i10 != i11) {
             kotlin.collections.i.j(jArr, jArr, elements.length + i10, i10, i11);
         }
         kotlin.collections.i.o(elements, jArr, i10, 0, 0, 12, null);
-        this.f50356b += elements.length;
+        this.f51128b += elements.length;
         return true;
     }
 
     public final void e(int i10) {
-        long[] jArr = this.f50355a;
+        long[] jArr = this.f51127a;
         if (jArr.length < i10) {
             long[] copyOf = Arrays.copyOf(jArr, Math.max(i10, (jArr.length * 3) / 2));
             Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f50355a = copyOf;
+            this.f51127a = copyOf;
         }
     }
 

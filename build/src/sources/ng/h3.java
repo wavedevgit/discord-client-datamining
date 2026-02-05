@@ -1,71 +1,71 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class h3 implements ui.d {
+final class h3 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final h3 f41169a = new h3();
+    static final h3 f40629a = new h3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41170b;
+    private static final xi.c f40630b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41171c;
+    private static final xi.c f40631c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41172d;
+    private static final xi.c f40632d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41173e;
+    private static final xi.c f40633e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41174f;
+    private static final xi.c f40634f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f41175g;
+    private static final xi.c f40635g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ui.c f41176h;
+    private static final xi.c f40636h;
 
     static {
-        c.b a10 = ui.c.a("renderer");
+        c.b a10 = xi.c.a("renderer");
         f fVar = new f();
         fVar.a(1);
-        f41170b = a10.b(fVar.b()).a();
-        c.b a11 = ui.c.a("vendor");
+        f40630b = a10.b(fVar.b()).a();
+        c.b a11 = xi.c.a("vendor");
         f fVar2 = new f();
         fVar2.a(2);
-        f41171c = a11.b(fVar2.b()).a();
-        c.b a12 = ui.c.a("version");
+        f40631c = a11.b(fVar2.b()).a();
+        c.b a12 = xi.c.a("version");
         f fVar3 = new f();
         fVar3.a(3);
-        f41172d = a12.b(fVar3.b()).a();
-        c.b a13 = ui.c.a("maxImages");
+        f40632d = a12.b(fVar3.b()).a();
+        c.b a13 = xi.c.a("maxImages");
         f fVar4 = new f();
         fVar4.a(4);
-        f41173e = a13.b(fVar4.b()).a();
-        c.b a14 = ui.c.a("maxSsbo");
+        f40633e = a13.b(fVar4.b()).a();
+        c.b a14 = xi.c.a("maxSsbo");
         f fVar5 = new f();
         fVar5.a(5);
-        f41174f = a14.b(fVar5.b()).a();
-        c.b a15 = ui.c.a("workGroupSizes");
+        f40634f = a14.b(fVar5.b()).a();
+        c.b a15 = xi.c.a("workGroupSizes");
         f fVar6 = new f();
         fVar6.a(6);
-        f41175g = a15.b(fVar6.b()).a();
-        c.b a16 = ui.c.a("errorCode");
+        f40635g = a15.b(fVar6.b()).a();
+        c.b a16 = xi.c.a("errorCode");
         f fVar7 = new f();
         fVar7.a(7);
-        f41176h = a16.b(fVar7.b()).a();
+        f40636h = a16.b(fVar7.b()).a();
     }
 
     private h3() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

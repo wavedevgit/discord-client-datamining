@@ -14,47 +14,47 @@ public class i extends a {
     private o5.q B;
 
     /* renamed from: r  reason: collision with root package name */
-    private final String f39735r;
+    private final String f39195r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f39736s;
+    private final boolean f39196s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final u0.j f39737t;
+    private final u0.j f39197t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final u0.j f39738u;
+    private final u0.j f39198u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final RectF f39739v;
+    private final RectF f39199v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final s5.g f39740w;
+    private final s5.g f39200w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final int f39741x;
+    private final int f39201x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final o5.a f39742y;
+    private final o5.a f39202y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final o5.a f39743z;
+    private final o5.a f39203z;
 
     public i(com.airbnb.lottie.n nVar, t5.b bVar, s5.f fVar) {
         super(nVar, bVar, fVar.b().d(), fVar.g().d(), fVar.i(), fVar.k(), fVar.m(), fVar.h(), fVar.c());
-        this.f39737t = new u0.j();
-        this.f39738u = new u0.j();
-        this.f39739v = new RectF();
-        this.f39735r = fVar.j();
-        this.f39740w = fVar.f();
-        this.f39736s = fVar.n();
-        this.f39741x = (int) (nVar.K().d() / 32.0f);
+        this.f39197t = new u0.j();
+        this.f39198u = new u0.j();
+        this.f39199v = new RectF();
+        this.f39195r = fVar.j();
+        this.f39200w = fVar.f();
+        this.f39196s = fVar.n();
+        this.f39201x = (int) (nVar.K().d() / 32.0f);
         o5.a a10 = fVar.e().a();
-        this.f39742y = a10;
+        this.f39202y = a10;
         a10.a(this);
         bVar.i(a10);
         o5.a a11 = fVar.l().a();
-        this.f39743z = a11;
+        this.f39203z = a11;
         a11.a(this);
         bVar.i(a11);
         o5.a a12 = fVar.d().a();
@@ -86,9 +86,9 @@ public class i extends a {
 
     private int k() {
         int i10;
-        int round = Math.round(this.f39743z.f() * this.f39741x);
-        int round2 = Math.round(this.A.f() * this.f39741x);
-        int round3 = Math.round(this.f39742y.f() * this.f39741x);
+        int round = Math.round(this.f39203z.f() * this.f39201x);
+        int round2 = Math.round(this.A.f() * this.f39201x);
+        int round3 = Math.round(this.f39202y.f() * this.f39201x);
         if (round != 0) {
             i10 = 527 * round;
         } else {
@@ -105,15 +105,15 @@ public class i extends a {
 
     private LinearGradient l() {
         long k10 = k();
-        LinearGradient linearGradient = (LinearGradient) this.f39737t.d(k10);
+        LinearGradient linearGradient = (LinearGradient) this.f39197t.d(k10);
         if (linearGradient != null) {
             return linearGradient;
         }
-        PointF pointF = (PointF) this.f39743z.h();
+        PointF pointF = (PointF) this.f39203z.h();
         PointF pointF2 = (PointF) this.A.h();
-        s5.d dVar = (s5.d) this.f39742y.h();
+        s5.d dVar = (s5.d) this.f39202y.h();
         LinearGradient linearGradient2 = new LinearGradient(pointF.x, pointF.y, pointF2.x, pointF2.y, j(dVar.d()), dVar.e(), Shader.TileMode.CLAMP);
-        this.f39737t.g(k10, linearGradient2);
+        this.f39197t.g(k10, linearGradient2);
         return linearGradient2;
     }
 
@@ -121,17 +121,17 @@ public class i extends a {
         float f10;
         float f11;
         long k10 = k();
-        RadialGradient radialGradient = (RadialGradient) this.f39738u.d(k10);
+        RadialGradient radialGradient = (RadialGradient) this.f39198u.d(k10);
         if (radialGradient != null) {
             return radialGradient;
         }
-        PointF pointF = (PointF) this.f39743z.h();
+        PointF pointF = (PointF) this.f39203z.h();
         PointF pointF2 = (PointF) this.A.h();
-        s5.d dVar = (s5.d) this.f39742y.h();
+        s5.d dVar = (s5.d) this.f39202y.h();
         int[] j10 = j(dVar.d());
         float[] e10 = dVar.e();
         RadialGradient radialGradient2 = new RadialGradient(pointF.x, pointF.y, (float) Math.hypot(pointF2.x - f10, pointF2.y - f11), j10, e10, Shader.TileMode.CLAMP);
-        this.f39738u.g(k10, radialGradient2);
+        this.f39198u.g(k10, radialGradient2);
         return radialGradient2;
     }
 
@@ -141,7 +141,7 @@ public class i extends a {
         if (obj == a0.L) {
             o5.q qVar = this.B;
             if (qVar != null) {
-                this.f39667f.H(qVar);
+                this.f39127f.H(qVar);
             }
             if (cVar == null) {
                 this.B = null;
@@ -150,29 +150,29 @@ public class i extends a {
             o5.q qVar2 = new o5.q(cVar);
             this.B = qVar2;
             qVar2.a(this);
-            this.f39667f.i(this.B);
+            this.f39127f.i(this.B);
         }
     }
 
     @Override // n5.a, n5.e
     public void g(Canvas canvas, Matrix matrix, int i10) {
         Shader m10;
-        if (this.f39736s) {
+        if (this.f39196s) {
             return;
         }
-        e(this.f39739v, matrix, false);
-        if (this.f39740w == s5.g.LINEAR) {
+        e(this.f39199v, matrix, false);
+        if (this.f39200w == s5.g.LINEAR) {
             m10 = l();
         } else {
             m10 = m();
         }
         m10.setLocalMatrix(matrix);
-        this.f39670i.setShader(m10);
+        this.f39130i.setShader(m10);
         super.g(canvas, matrix, i10);
     }
 
     @Override // n5.c
     public String getName() {
-        return this.f39735r;
+        return this.f39195r;
     }
 }

@@ -671,17 +671,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.value = var3;
                     var2 = var8.bind(var9)(var0, var7, var2);
                     if (!(var5 !== var4)) {
-                        _fun28480_ip = 175;
+                        _fun28480_ip = 171;
                         continue _fun28480
                     }
-                case 145:
+                case 141:
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var1 = var1[var6];
                     var2 = var2.bind(var5)(var1);
                     var1 = var2.reflectionMergePartial;
                     var1 = var1.bind(var2)(var3, var0, var4);
-                case 175:
+                case 171:
                     return var0;
             }
         };

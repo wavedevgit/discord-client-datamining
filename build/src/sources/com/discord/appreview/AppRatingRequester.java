@@ -1,20 +1,20 @@
 package com.discord.appreview;
 
 import android.app.Activity;
-import ci.a;
+import ci.b;
+import ci.c;
 import com.discord.appreview.AppRatingRequester;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.play.core.review.ReviewManager;
+import fi.a;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import wg.e;
-import zh.b;
-import zh.c;
+import xg.e;
 @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u00002\u00020\u0001B=\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007\u0012\u0016\u0010\t\u001a\u0012\u0012\b\u0012\u00060\u000bj\u0002`\f\u0012\u0004\u0012\u00020\b0\n¢\u0006\u0004\b\r\u0010\u000eJ\u0006\u0010\u000f\u001a\u00020\bJ\u0018\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u00052\u0006\u0010\u0002\u001a\u00020\u0003H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u001e\u0010\t\u001a\u0012\u0012\b\u0012\u00060\u000bj\u0002`\f\u0012\u0004\u0012\u00020\b0\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0013"}, d2 = {"Lcom/discord/appreview/AppRatingRequester;", "", "activity", "Landroid/app/Activity;", "useFakeReviewManager", "", "onComplete", "Lkotlin/Function0;", "", "onFailure", "Lkotlin/Function1;", "Ljava/lang/Exception;", "Lkotlin/Exception;", "<init>", "(Landroid/app/Activity;ZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V", "executeRequest", "createReviewManager", "Lcom/google/android/play/core/review/ReviewManager;", "fake", "app_review_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class AppRatingRequester {
@@ -50,9 +50,9 @@ public final class AppRatingRequester {
     public static final void executeRequest$lambda$1(ReviewManager reviewManager, final AppRatingRequester appRatingRequester, Task task) {
         Intrinsics.checkNotNullParameter(task, "task");
         if (task.p()) {
-            Task a10 = reviewManager.a(appRatingRequester.activity, (b) task.l());
-            Intrinsics.checkNotNullExpressionValue(a10, "launchReviewFlow(...)");
-            a10.addOnCompleteListener(new OnCompleteListener() { // from class: g6.e
+            Task b10 = reviewManager.b(appRatingRequester.activity, (b) task.l());
+            Intrinsics.checkNotNullExpressionValue(b10, "launchReviewFlow(...)");
+            b10.addOnCompleteListener(new OnCompleteListener() { // from class: g6.e
                 @Override // com.google.android.gms.tasks.OnCompleteListener
                 public final void onComplete(Task task2) {
                     AppRatingRequester.executeRequest$lambda$1$lambda$0(AppRatingRequester.this, task2);
@@ -81,16 +81,16 @@ public final class AppRatingRequester {
 
     public final void executeRequest() {
         final ReviewManager createReviewManager = createReviewManager(this.useFakeReviewManager, this.activity);
-        Task b10 = createReviewManager.b();
-        Intrinsics.checkNotNullExpressionValue(b10, "requestReviewFlow(...)");
-        b10.addOnCompleteListener(new OnCompleteListener() { // from class: g6.c
+        Task a10 = createReviewManager.a();
+        Intrinsics.checkNotNullExpressionValue(a10, "requestReviewFlow(...)");
+        a10.addOnCompleteListener(new OnCompleteListener() { // from class: g6.c
             @Override // com.google.android.gms.tasks.OnCompleteListener
             public final void onComplete(Task task) {
                 AppRatingRequester.executeRequest$lambda$1(ReviewManager.this, this, task);
             }
         });
-        b10.b(new e() { // from class: g6.d
-            @Override // wg.e
+        a10.b(new e() { // from class: g6.d
+            @Override // xg.e
             public final void a() {
                 AppRatingRequester.executeRequest$lambda$2(AppRatingRequester.this);
             }

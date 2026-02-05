@@ -7,7 +7,7 @@ import android.util.Log;
 import com.google.firebase.messaging.g0;
 import df.a;
 import java.util.concurrent.ExecutionException;
-import wg.m;
+import xg.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class FirebaseInstanceIdReceiver extends a {
     private static Intent f(Context context, String str, Bundle bundle) {

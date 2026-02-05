@@ -1,21 +1,26 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = {
-        'WIDEVINE': 'widevine',
-        'PLAYREADY': 'playready',
-        'CLEARKEY': 'clearkey',
-        'FAIRPLAY': 'fairplay'
-    };
-    var1.default = var0;
+    var1 = dependencyMap;
+    var0 = 0;
+    var2 = var1[var0];
+    var1 = require;
     var0 = undefined;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/images/native/premium/logos',
+        'width': 163.5,
+        'height': 20,
+        'scales': null,
+        'hash': 'cd3f012d84fd9fd0e06d08e5556058d7',
+        'name': 'img_logo_nitro_tier_0_horizontal_dark',
+        'type': 'png'
+    };
+    var4 = [2, 3];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);

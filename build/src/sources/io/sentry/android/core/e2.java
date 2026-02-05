@@ -17,21 +17,21 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class e2 implements io.sentry.b0 {
 
     /* renamed from: e  reason: collision with root package name */
-    private final i f28833e;
+    private final i f27891e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final SentryAndroidOptions f28834i;
+    private final SentryAndroidOptions f27892i;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f28832d = false;
+    private boolean f27890d = false;
 
     /* renamed from: o  reason: collision with root package name */
-    private final io.sentry.util.a f28835o = new io.sentry.util.a();
+    private final io.sentry.util.a f27893o = new io.sentry.util.a();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e2(SentryAndroidOptions sentryAndroidOptions, i iVar) {
-        this.f28834i = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
-        this.f28833e = (i) io.sentry.util.y.c(iVar, "ActivityFramesTracker is required");
+        this.f27892i = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
+        this.f27891e = (i) io.sentry.util.y.c(iVar, "ActivityFramesTracker is required");
     }
 
     private void b(io.sentry.android.core.performance.h hVar, io.sentry.protocol.d0 d0Var) {
@@ -178,12 +178,12 @@ public final class e2 implements io.sentry.b0 {
 
     private static io.sentry.protocol.a0 f(io.sentry.android.core.performance.i iVar, j8 j8Var, io.sentry.protocol.x xVar, String str) {
         HashMap hashMap = new HashMap(2);
-        hashMap.put("thread.id", Long.valueOf(io.sentry.android.core.internal.util.j.f28989b));
+        hashMap.put("thread.id", Long.valueOf(io.sentry.android.core.internal.util.j.f28047b));
         hashMap.put("thread.name", "main");
         Boolean bool = Boolean.TRUE;
         hashMap.put("ui.contributes_to_ttid", bool);
         hashMap.put("ui.contributes_to_ttfd", bool);
-        return new io.sentry.protocol.a0(Double.valueOf(iVar.k()), Double.valueOf(iVar.h()), xVar, new j8(), j8Var, str, iVar.d(), l8.OK, "auto.ui", new ConcurrentHashMap(), new ConcurrentHashMap(), hashMap);
+        return new io.sentry.protocol.a0(Double.valueOf(iVar.l()), Double.valueOf(iVar.h()), xVar, new j8(), j8Var, str, iVar.d(), l8.OK, "auto.ui", new ConcurrentHashMap(), new ConcurrentHashMap(), hashMap);
     }
 
     @Override // io.sentry.b0
@@ -192,13 +192,13 @@ public final class e2 implements io.sentry.b0 {
     }
 
     @Override // io.sentry.b0
-    public io.sentry.protocol.d0 l(io.sentry.protocol.d0 d0Var, Hint hint) {
+    public io.sentry.protocol.d0 k(io.sentry.protocol.d0 d0Var, Hint hint) {
         Map n10;
         String str;
         String str2;
-        io.sentry.a1 a10 = this.f28835o.a();
+        io.sentry.a1 a10 = this.f27893o.a();
         try {
-            if (!this.f28834i.isTracingEnabled()) {
+            if (!this.f27892i.isTracingEnabled()) {
                 if (a10 != null) {
                     a10.close();
                 }
@@ -207,7 +207,7 @@ public final class e2 implements io.sentry.b0 {
             io.sentry.android.core.performance.h q10 = io.sentry.android.core.performance.h.q();
             if (c(d0Var)) {
                 if (q10.z()) {
-                    long e10 = q10.m(this.f28834i).e();
+                    long e10 = q10.m(this.f27892i).e();
                     if (e10 != 0) {
                         io.sentry.protocol.k kVar = new io.sentry.protocol.k(Float.valueOf((float) e10), a2.a.MILLISECOND.apiName());
                         if (q10.n() == h.a.COLD) {
@@ -235,7 +235,7 @@ public final class e2 implements io.sentry.b0 {
             e(d0Var);
             io.sentry.protocol.x G = d0Var.G();
             e8 j10 = d0Var.C().j();
-            if (G != null && j10 != null && j10.f().contentEquals("ui.load") && (n10 = this.f28833e.n(G)) != null) {
+            if (G != null && j10 != null && j10.f().contentEquals("ui.load") && (n10 = this.f27891e.n(G)) != null) {
                 d0Var.o0().putAll(n10);
             }
             if (a10 != null) {

@@ -6,10 +6,10 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatTextView;
-import lh.b;
-import lh.c;
-import rh.a;
-import yg.k;
+import mh.b;
+import mh.c;
+import sh.a;
+import zg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class MaterialTextView extends AppCompatTextView {
     public MaterialTextView(Context context) {
@@ -17,7 +17,7 @@ public class MaterialTextView extends AppCompatTextView {
     }
 
     private void f(Resources.Theme theme, int i10) {
-        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(i10, k.f54512z4);
+        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(i10, k.f55970z4);
         int j10 = j(getContext(), obtainStyledAttributes, k.B4, k.C4);
         obtainStyledAttributes.recycle();
         if (j10 >= 0) {
@@ -26,7 +26,7 @@ public class MaterialTextView extends AppCompatTextView {
     }
 
     private static boolean g(Context context) {
-        return b.b(context, yg.b.f54089g0, true);
+        return b.b(context, zg.b.f55547g0, true);
     }
 
     private static int h(Resources.Theme theme, AttributeSet attributeSet, int i10, int i11) {

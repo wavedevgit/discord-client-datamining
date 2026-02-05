@@ -29,7 +29,7 @@ final class MediaEngineModule$setVideoInputDevice$1 extends kotlin.coroutines.jv
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object awaitMediaEngine;
-        Object f10 = rr.b.f();
+        Object f10 = ur.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -47,11 +47,11 @@ final class MediaEngineModule$setVideoInputDevice$1 extends kotlin.coroutines.jv
             }
         }
         this.this$0.getMediaEngine().setVideoInputDevice$media_engine_release((int) this.$deviceIndex);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$setVideoInputDevice$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((MediaEngineModule$setVideoInputDevice$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

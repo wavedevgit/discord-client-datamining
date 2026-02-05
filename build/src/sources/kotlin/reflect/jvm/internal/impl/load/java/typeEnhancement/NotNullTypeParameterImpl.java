@@ -17,11 +17,11 @@ import org.jetbrains.annotations.NotNull;
 public final class NotNullTypeParameterImpl extends DelegatingSimpleType implements NotNullTypeParameter {
 
     /* renamed from: e  reason: collision with root package name */
-    private final SimpleType f33523e;
+    private final SimpleType f33047e;
 
     public NotNullTypeParameterImpl(@NotNull SimpleType delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f33523e = delegate;
+        this.f33047e = delegate;
     }
 
     private final SimpleType b(SimpleType simpleType) {
@@ -34,7 +34,7 @@ public final class NotNullTypeParameterImpl extends DelegatingSimpleType impleme
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
     protected SimpleType getDelegate() {
-        return this.f33523e;
+        return this.f33047e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType, kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -62,7 +62,7 @@ public final class NotNullTypeParameterImpl extends DelegatingSimpleType impleme
             FlexibleType flexibleType = (FlexibleType) unwrap;
             return TypeWithEnhancementKt.wrapEnhancement(KotlinTypeFactory.flexibleType(b(flexibleType.getLowerBound()), b(flexibleType.getUpperBound())), TypeWithEnhancementKt.getEnhancement(unwrap));
         }
-        throw new lr.p();
+        throw new or.p();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType

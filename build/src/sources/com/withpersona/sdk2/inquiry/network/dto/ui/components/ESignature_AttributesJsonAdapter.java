@@ -48,7 +48,7 @@ public final class ESignature_AttributesJsonAdapter extends h {
     @NotNull
     public ESignature.Attributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         JsonLogicBoolean jsonLogicBoolean = null;
         JsonLogicBoolean jsonLogicBoolean2 = null;
@@ -59,7 +59,7 @@ public final class ESignature_AttributesJsonAdapter extends h {
         String str6 = null;
         String str7 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -93,7 +93,7 @@ public final class ESignature_AttributesJsonAdapter extends h {
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new ESignature.Attributes(str, jsonLogicBoolean, jsonLogicBoolean2, str2, str3, str4, str5, str6, str7);
     }
 
@@ -101,24 +101,24 @@ public final class ESignature_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, ESignature.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.l();
-            writer.A0("label");
+            writer.k();
+            writer.W("label");
             this.nullableStringAdapter.toJson(writer, attributes.getLabel());
-            writer.A0(ViewProps.HIDDEN);
+            writer.W(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
-            writer.A0("disabled");
+            writer.W("disabled");
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getDisabled());
-            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholder());
-            writer.A0("saveButtonText");
+            writer.W("saveButtonText");
             this.nullableStringAdapter.toJson(writer, attributes.getSaveButtonText());
-            writer.A0("clearButtonText");
+            writer.W("clearButtonText");
             this.nullableStringAdapter.toJson(writer, attributes.getClearButtonText());
-            writer.A0("dialogTitle");
+            writer.W("dialogTitle");
             this.nullableStringAdapter.toJson(writer, attributes.getDialogTitle());
-            writer.A0("dialogText");
+            writer.W("dialogText");
             this.nullableStringAdapter.toJson(writer, attributes.getDialogText());
-            writer.A0("prefill");
+            writer.W("prefill");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefill());
             writer.E();
             return;

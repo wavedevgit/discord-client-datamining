@@ -33,11 +33,11 @@ public abstract class c4 implements v0 {
     }
 
     @Override // io.sentry.v0
-    public void k(io.sentry.protocol.c cVar) {
+    public void j(io.sentry.protocol.c cVar) {
     }
 
     @Override // io.sentry.v0
-    public void l(Map map) {
+    public void k(Map map) {
     }
 
     @Override // io.sentry.v0
@@ -45,6 +45,6 @@ public abstract class c4 implements v0 {
     }
 
     @Override // io.sentry.v0
-    public void o(io.sentry.protocol.x xVar) {
+    public void q(io.sentry.protocol.x xVar) {
     }
 }

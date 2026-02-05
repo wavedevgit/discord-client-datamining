@@ -9,27 +9,27 @@ import xc.e;
 final class f extends e {
 
     /* renamed from: b  reason: collision with root package name */
-    private final h0 f53241b;
+    private final h0 f53785b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h0 f53242c;
+    private final h0 f53786c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f53243d;
+    private int f53787d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f53244e;
+    private boolean f53788e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f53245f;
+    private boolean f53789f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f53246g;
+    private int f53790g;
 
     public f(b0 b0Var) {
         super(b0Var);
-        this.f53241b = new h0(d0.f40050a);
-        this.f53242c = new h0(4);
+        this.f53785b = new h0(d0.f39510a);
+        this.f53786c = new h0(4);
     }
 
     @Override // xc.e
@@ -38,7 +38,7 @@ final class f extends e {
         int i10 = (H >> 4) & 15;
         int i11 = H & 15;
         if (i11 == 7) {
-            this.f53246g = i10;
+            this.f53790g = i10;
             if (i10 != 5) {
                 return true;
             }
@@ -52,42 +52,42 @@ final class f extends e {
         int i10;
         int H = h0Var.H();
         long r10 = j10 + (h0Var.r() * 1000);
-        if (H == 0 && !this.f53244e) {
+        if (H == 0 && !this.f53788e) {
             h0 h0Var2 = new h0(new byte[h0Var.a()]);
             h0Var.l(h0Var2.e(), 0, h0Var.a());
             oe.a b10 = oe.a.b(h0Var2);
-            this.f53243d = b10.f42454b;
-            this.f53240a.b(new Format.b().g0("video/avc").K(b10.f42461i).n0(b10.f42455c).S(b10.f42456d).c0(b10.f42460h).V(b10.f42453a).G());
-            this.f53244e = true;
+            this.f53787d = b10.f42360b;
+            this.f53784a.b(new Format.b().g0("video/avc").K(b10.f42367i).n0(b10.f42361c).S(b10.f42362d).c0(b10.f42366h).V(b10.f42359a).G());
+            this.f53788e = true;
             return false;
-        } else if (H != 1 || !this.f53244e) {
+        } else if (H != 1 || !this.f53788e) {
             return false;
         } else {
-            if (this.f53246g == 1) {
+            if (this.f53790g == 1) {
                 i10 = 1;
             } else {
                 i10 = 0;
             }
-            if (!this.f53245f && i10 == 0) {
+            if (!this.f53789f && i10 == 0) {
                 return false;
             }
-            byte[] e10 = this.f53242c.e();
+            byte[] e10 = this.f53786c.e();
             e10[0] = 0;
             e10[1] = 0;
             e10[2] = 0;
-            int i11 = 4 - this.f53243d;
+            int i11 = 4 - this.f53787d;
             int i12 = 0;
             while (h0Var.a() > 0) {
-                h0Var.l(this.f53242c.e(), i11, this.f53243d);
-                this.f53242c.U(0);
-                int L = this.f53242c.L();
-                this.f53241b.U(0);
-                this.f53240a.f(this.f53241b, 4);
-                this.f53240a.f(h0Var, L);
+                h0Var.l(this.f53786c.e(), i11, this.f53787d);
+                this.f53786c.U(0);
+                int L = this.f53786c.L();
+                this.f53785b.U(0);
+                this.f53784a.f(this.f53785b, 4);
+                this.f53784a.f(h0Var, L);
                 i12 = i12 + 4 + L;
             }
-            this.f53240a.d(r10, i10, i12, 0, null);
-            this.f53245f = true;
+            this.f53784a.d(r10, i10, i12, 0, null);
+            this.f53789f = true;
             return true;
         }
     }

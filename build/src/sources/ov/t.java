@@ -1,29 +1,36 @@
 package ov;
 
-import java.util.Locale;
-import kotlin.jvm.internal.Intrinsics;
-import ov.o;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.Optional;
+import okhttp3.ResponseBody;
+import ov.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class t implements nu.b, o {
+public final class t extends h.a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final t f44827a = new t();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class a implements h {
 
-    private t() {
-    }
+        /* renamed from: a  reason: collision with root package name */
+        private final h f44651a;
 
-    public String a(Object obj) {
-        return o.a.a(this, obj);
-    }
-
-    @Override // nu.b
-    public Object f(Object obj, Object obj2) {
-        String a10 = a(obj);
-        if (a10 != null) {
-            String upperCase = a10.toUpperCase(Locale.ROOT);
-            Intrinsics.checkNotNullExpressionValue(upperCase, "this as java.lang.String).toUpperCase(Locale.ROOT)");
-            return upperCase;
+        a(h hVar) {
+            this.f44651a = hVar;
         }
-        return null;
+
+        @Override // ov.h
+        /* renamed from: b */
+        public Optional a(ResponseBody responseBody) {
+            return Optional.ofNullable(this.f44651a.a(responseBody));
+        }
+    }
+
+    @Override // ov.h.a
+    public h d(Type type, Annotation[] annotationArr, a0 a0Var) {
+        if (h.a.b(type) != Optional.class) {
+            return null;
+        }
+        return new a(a0Var.i(h.a.a(0, (ParameterizedType) type), annotationArr));
     }
 }

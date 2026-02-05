@@ -80,7 +80,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
     @NotNull
     public NextStep.Document.Config fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         Integer num = null;
         Boolean bool = null;
         Boolean bool2 = null;
@@ -97,7 +97,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
             Boolean bool3 = bool;
             if (reader.hasNext()) {
                 Boolean bool4 = bool2;
-                switch (reader.A0(this.options)) {
+                switch (reader.W(this.options)) {
                     case -1:
                         reader.E0();
                         reader.P();
@@ -116,7 +116,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                     case 2:
                         num = (Integer) this.intAdapter.fromJson(reader);
                         if (num == null) {
-                            throw vm.c.x("documentFileLimit", "documentFileLimit", reader);
+                            throw ym.c.x("documentFileLimit", "documentFileLimit", reader);
                         }
                         bool2 = bool4;
                         break;
@@ -128,7 +128,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                     case 4:
                         startPage = (NextStep.Document.StartPage) this.startPageAdapter.fromJson(reader);
                         if (startPage == null) {
-                            throw vm.c.x("startPage", "startPage", reader);
+                            throw ym.c.x("startPage", "startPage", reader);
                         }
                         num = num2;
                         bool2 = bool4;
@@ -136,7 +136,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                     case 5:
                         str2 = (String) this.stringAdapter.fromJson(reader);
                         if (str2 == null) {
-                            throw vm.c.x("fieldKeyDocument", "fieldKeyDocument", reader);
+                            throw ym.c.x("fieldKeyDocument", "fieldKeyDocument", reader);
                         }
                         num = num2;
                         bool2 = bool4;
@@ -144,7 +144,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                     case 6:
                         str3 = (String) this.stringAdapter.fromJson(reader);
                         if (str3 == null) {
-                            throw vm.c.x("kind", "kind", reader);
+                            throw ym.c.x("kind", "kind", reader);
                         }
                         num = num2;
                         bool2 = bool4;
@@ -152,7 +152,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                     case 7:
                         localizations = (NextStep.Document.Localizations) this.localizationsAdapter.fromJson(reader);
                         if (localizations == null) {
-                            throw vm.c.x("localizations", "localizations", reader);
+                            throw ym.c.x("localizations", "localizations", reader);
                         }
                         num = num2;
                         bool2 = bool4;
@@ -180,7 +180,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                 bool = bool3;
             } else {
                 Boolean bool5 = bool2;
-                reader.y();
+                reader.z();
                 if (num2 != null) {
                     int intValue = num2.intValue();
                     if (startPage != null) {
@@ -189,15 +189,15 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                                 if (localizations != null) {
                                     return new NextStep.Document.Config(bool3, bool5, intValue, str, startPage, str2, str3, localizations, pages, assetConfig, pendingPageTextPosition);
                                 }
-                                throw vm.c.o("localizations", "localizations", reader);
+                                throw ym.c.o("localizations", "localizations", reader);
                             }
-                            throw vm.c.o("kind", "kind", reader);
+                            throw ym.c.o("kind", "kind", reader);
                         }
-                        throw vm.c.o("fieldKeyDocument", "fieldKeyDocument", reader);
+                        throw ym.c.o("fieldKeyDocument", "fieldKeyDocument", reader);
                     }
-                    throw vm.c.o("startPage", "startPage", reader);
+                    throw ym.c.o("startPage", "startPage", reader);
                 }
-                throw vm.c.o("documentFileLimit", "documentFileLimit", reader);
+                throw ym.c.o("documentFileLimit", "documentFileLimit", reader);
             }
         }
     }
@@ -206,28 +206,28 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Document.Config config) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (config != null) {
-            writer.l();
-            writer.A0("backStepEnabled");
+            writer.k();
+            writer.W("backStepEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getBackStepEnabled());
-            writer.A0("cancelButtonEnabled");
+            writer.W("cancelButtonEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getCancelButtonEnabled());
-            writer.A0("documentFileLimit");
+            writer.W("documentFileLimit");
             this.intAdapter.toJson(writer, Integer.valueOf(config.getDocumentFileLimit()));
-            writer.A0("documentId");
+            writer.W("documentId");
             this.nullableStringAdapter.toJson(writer, config.getDocumentId());
-            writer.A0("startPage");
+            writer.W("startPage");
             this.startPageAdapter.toJson(writer, config.getStartPage());
-            writer.A0("fieldKeyDocument");
+            writer.W("fieldKeyDocument");
             this.stringAdapter.toJson(writer, config.getFieldKeyDocument());
-            writer.A0("kind");
+            writer.W("kind");
             this.stringAdapter.toJson(writer, config.getKind());
-            writer.A0("localizations");
+            writer.W("localizations");
             this.localizationsAdapter.toJson(writer, config.getLocalizations());
-            writer.A0("pages");
+            writer.W("pages");
             this.nullablePagesAdapter.toJson(writer, config.getPages());
-            writer.A0("assets");
+            writer.W("assets");
             this.nullableAssetConfigAdapter.toJson(writer, config.getAssets());
-            writer.A0("pendingPageTextVerticalPosition");
+            writer.W("pendingPageTextVerticalPosition");
             this.nullablePendingPageTextPositionAdapter.toJson(writer, config.getPendingPageTextVerticalPosition());
             writer.E();
             return;

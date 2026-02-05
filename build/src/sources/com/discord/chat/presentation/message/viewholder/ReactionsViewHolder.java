@@ -67,14 +67,14 @@ public final class ReactionsViewHolder extends MessagePartViewHolder {
     public static final Unit bind$lambda$1(Function1 function1, ReactionView.Reaction reaction) {
         Intrinsics.checkNotNullParameter(reaction, "reaction");
         function1.invoke(reaction);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$2(Function1 function1, ReactionView.Reaction reaction) {
         Intrinsics.checkNotNullParameter(reaction, "reaction");
         function1.invoke(reaction);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public final void bind(@NotNull List<MessageReaction> reactions, boolean z10, @NotNull String addNewReactionAccessibilityLabel, ReactionsTheme reactionsTheme, @NotNull View.OnClickListener onAddReactionClick, @NotNull final Function1<? super ReactionView.Reaction, Unit> onReactionClick, @NotNull final Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, DiscordTheme discordTheme, boolean z11, boolean z12, @NotNull View.OnClickListener onReplyClick) {

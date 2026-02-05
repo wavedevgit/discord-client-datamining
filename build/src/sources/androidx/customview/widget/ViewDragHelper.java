@@ -15,76 +15,76 @@ import java.util.Arrays;
 public class ViewDragHelper {
 
     /* renamed from: x  reason: collision with root package name */
-    private static final Interpolator f3543x = new a();
+    private static final Interpolator f3655x = new a();
 
     /* renamed from: a  reason: collision with root package name */
-    private int f3544a;
+    private int f3656a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f3545b;
+    private int f3657b;
 
     /* renamed from: d  reason: collision with root package name */
-    private float[] f3547d;
+    private float[] f3659d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float[] f3548e;
+    private float[] f3660e;
 
     /* renamed from: f  reason: collision with root package name */
-    private float[] f3549f;
+    private float[] f3661f;
 
     /* renamed from: g  reason: collision with root package name */
-    private float[] f3550g;
+    private float[] f3662g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int[] f3551h;
+    private int[] f3663h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int[] f3552i;
+    private int[] f3664i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int[] f3553j;
+    private int[] f3665j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f3554k;
+    private int f3666k;
 
     /* renamed from: l  reason: collision with root package name */
-    private VelocityTracker f3555l;
+    private VelocityTracker f3667l;
 
     /* renamed from: m  reason: collision with root package name */
-    private float f3556m;
+    private float f3668m;
 
     /* renamed from: n  reason: collision with root package name */
-    private float f3557n;
+    private float f3669n;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f3558o;
+    private int f3670o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f3559p;
+    private final int f3671p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f3560q;
+    private int f3672q;
 
     /* renamed from: r  reason: collision with root package name */
-    private OverScroller f3561r;
+    private OverScroller f3673r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final c f3562s;
+    private final c f3674s;
 
     /* renamed from: t  reason: collision with root package name */
-    private View f3563t;
+    private View f3675t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f3564u;
+    private boolean f3676u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final ViewGroup f3565v;
+    private final ViewGroup f3677v;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f3546c = -1;
+    private int f3658c = -1;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Runnable f3566w = new b();
+    private final Runnable f3678w = new b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Interpolator {
@@ -152,16 +152,16 @@ public class ViewDragHelper {
     private ViewDragHelper(Context context, ViewGroup viewGroup, c cVar) {
         if (viewGroup != null) {
             if (cVar != null) {
-                this.f3565v = viewGroup;
-                this.f3562s = cVar;
+                this.f3677v = viewGroup;
+                this.f3674s = cVar;
                 ViewConfiguration viewConfiguration = ViewConfiguration.get(context);
                 int i10 = (int) ((context.getResources().getDisplayMetrics().density * 20.0f) + 0.5f);
-                this.f3559p = i10;
-                this.f3558o = i10;
-                this.f3545b = viewConfiguration.getScaledTouchSlop();
-                this.f3556m = viewConfiguration.getScaledMaximumFlingVelocity();
-                this.f3557n = viewConfiguration.getScaledMinimumFlingVelocity();
-                this.f3561r = new OverScroller(context, f3543x);
+                this.f3671p = i10;
+                this.f3670o = i10;
+                this.f3657b = viewConfiguration.getScaledTouchSlop();
+                this.f3668m = viewConfiguration.getScaledMaximumFlingVelocity();
+                this.f3669n = viewConfiguration.getScaledMinimumFlingVelocity();
+                this.f3673r = new OverScroller(context, f3655x);
                 return;
             }
             throw new IllegalArgumentException("Callback may not be null");
@@ -178,8 +178,8 @@ public class ViewDragHelper {
     }
 
     private void G() {
-        this.f3555l.computeCurrentVelocity(1000, this.f3556m);
-        p(g(this.f3555l.getXVelocity(this.f3546c), this.f3557n, this.f3556m), g(this.f3555l.getYVelocity(this.f3546c), this.f3557n, this.f3556m));
+        this.f3667l.computeCurrentVelocity(1000, this.f3668m);
+        p(g(this.f3667l.getXVelocity(this.f3658c), this.f3669n, this.f3668m), g(this.f3667l.getYVelocity(this.f3658c), this.f3669n, this.f3668m));
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -202,22 +202,22 @@ public class ViewDragHelper {
             r02 = (z11 ? 1 : 0) | true;
         }
         if (r02 != 0) {
-            int[] iArr = this.f3552i;
+            int[] iArr = this.f3664i;
             iArr[i10] = iArr[i10] | r02;
-            this.f3562s.f(r02, i10);
+            this.f3674s.f(r02, i10);
         }
     }
 
     private void I(float f10, float f11, int i10) {
         s(i10);
-        float[] fArr = this.f3547d;
-        this.f3549f[i10] = f10;
+        float[] fArr = this.f3659d;
+        this.f3661f[i10] = f10;
         fArr[i10] = f10;
-        float[] fArr2 = this.f3548e;
-        this.f3550g[i10] = f11;
+        float[] fArr2 = this.f3660e;
+        this.f3662g[i10] = f11;
         fArr2[i10] = f11;
-        this.f3551h[i10] = y((int) f10, (int) f11);
-        this.f3554k |= 1 << i10;
+        this.f3663h[i10] = y((int) f10, (int) f11);
+        this.f3666k |= 1 << i10;
     }
 
     private void J(MotionEvent motionEvent) {
@@ -227,8 +227,8 @@ public class ViewDragHelper {
             if (D(pointerId)) {
                 float x10 = motionEvent.getX(i10);
                 float y10 = motionEvent.getY(i10);
-                this.f3549f[pointerId] = x10;
-                this.f3550g[pointerId] = y10;
+                this.f3661f[pointerId] = x10;
+                this.f3662g[pointerId] = y10;
             }
         }
     }
@@ -236,14 +236,14 @@ public class ViewDragHelper {
     private boolean c(float f10, float f11, int i10, int i11) {
         float abs = Math.abs(f10);
         float abs2 = Math.abs(f11);
-        if ((this.f3551h[i10] & i11) == i11 && (this.f3560q & i11) != 0 && (this.f3553j[i10] & i11) != i11 && (this.f3552i[i10] & i11) != i11) {
-            int i12 = this.f3545b;
+        if ((this.f3663h[i10] & i11) == i11 && (this.f3672q & i11) != 0 && (this.f3665j[i10] & i11) != i11 && (this.f3664i[i10] & i11) != i11) {
+            int i12 = this.f3657b;
             if (abs > i12 || abs2 > i12) {
-                if (abs < abs2 * 0.5f && this.f3562s.g(i11)) {
-                    int[] iArr = this.f3553j;
+                if (abs < abs2 * 0.5f && this.f3674s.g(i11)) {
+                    int[] iArr = this.f3665j;
                     iArr[i10] = iArr[i10] | i11;
                     return false;
-                } else if ((this.f3552i[i10] & i11) == 0 && abs > this.f3545b) {
+                } else if ((this.f3664i[i10] & i11) == 0 && abs > this.f3657b) {
                     return true;
                 }
             }
@@ -257,28 +257,28 @@ public class ViewDragHelper {
         if (view == null) {
             return false;
         }
-        if (this.f3562s.d(view) > 0) {
+        if (this.f3674s.d(view) > 0) {
             z10 = true;
         } else {
             z10 = false;
         }
-        if (this.f3562s.e(view) > 0) {
+        if (this.f3674s.e(view) > 0) {
             z11 = true;
         } else {
             z11 = false;
         }
         if (z10 && z11) {
-            int i10 = this.f3545b;
+            int i10 = this.f3657b;
             if ((f10 * f10) + (f11 * f11) <= i10 * i10) {
                 return false;
             }
             return true;
         } else if (z10) {
-            if (Math.abs(f10) <= this.f3545b) {
+            if (Math.abs(f10) <= this.f3657b) {
                 return false;
             }
             return true;
-        } else if (!z11 || Math.abs(f11) <= this.f3545b) {
+        } else if (!z11 || Math.abs(f11) <= this.f3657b) {
             return false;
         } else {
             return true;
@@ -314,30 +314,30 @@ public class ViewDragHelper {
     }
 
     private void i() {
-        float[] fArr = this.f3547d;
+        float[] fArr = this.f3659d;
         if (fArr == null) {
             return;
         }
         Arrays.fill(fArr, 0.0f);
-        Arrays.fill(this.f3548e, 0.0f);
-        Arrays.fill(this.f3549f, 0.0f);
-        Arrays.fill(this.f3550g, 0.0f);
-        Arrays.fill(this.f3551h, 0);
-        Arrays.fill(this.f3552i, 0);
-        Arrays.fill(this.f3553j, 0);
-        this.f3554k = 0;
+        Arrays.fill(this.f3660e, 0.0f);
+        Arrays.fill(this.f3661f, 0.0f);
+        Arrays.fill(this.f3662g, 0.0f);
+        Arrays.fill(this.f3663h, 0);
+        Arrays.fill(this.f3664i, 0);
+        Arrays.fill(this.f3665j, 0);
+        this.f3666k = 0;
     }
 
     private void j(int i10) {
-        if (this.f3547d != null && C(i10)) {
-            this.f3547d[i10] = 0.0f;
-            this.f3548e[i10] = 0.0f;
-            this.f3549f[i10] = 0.0f;
-            this.f3550g[i10] = 0.0f;
-            this.f3551h[i10] = 0;
-            this.f3552i[i10] = 0;
-            this.f3553j[i10] = 0;
-            this.f3554k = (~(1 << i10)) & this.f3554k;
+        if (this.f3659d != null && C(i10)) {
+            this.f3659d[i10] = 0.0f;
+            this.f3660e[i10] = 0.0f;
+            this.f3661f[i10] = 0.0f;
+            this.f3662g[i10] = 0.0f;
+            this.f3663h[i10] = 0;
+            this.f3664i[i10] = 0;
+            this.f3665j[i10] = 0;
+            this.f3666k = (~(1 << i10)) & this.f3666k;
         }
     }
 
@@ -346,7 +346,7 @@ public class ViewDragHelper {
         if (i10 == 0) {
             return 0;
         }
-        int width = this.f3565v.getWidth();
+        int width = this.f3677v.getWidth();
         float f10 = width / 2;
         float q10 = f10 + (q(Math.min(1.0f, Math.abs(i10) / width)) * f10);
         int abs2 = Math.abs(i11);
@@ -363,8 +363,8 @@ public class ViewDragHelper {
         float f11;
         float f12;
         float f13;
-        int h10 = h(i12, (int) this.f3557n, (int) this.f3556m);
-        int h11 = h(i13, (int) this.f3557n, (int) this.f3556m);
+        int h10 = h(i12, (int) this.f3669n, (int) this.f3668m);
+        int h11 = h(i13, (int) this.f3669n, (int) this.f3668m);
         int abs = Math.abs(i10);
         int abs2 = Math.abs(i11);
         int abs3 = Math.abs(h10);
@@ -386,12 +386,12 @@ public class ViewDragHelper {
             f12 = abs2;
             f13 = i15;
         }
-        return (int) ((k(i10, h10, this.f3562s.d(view)) * f14) + (k(i11, h11, this.f3562s.e(view)) * (f12 / f13)));
+        return (int) ((k(i10, h10, this.f3674s.d(view)) * f14) + (k(i11, h11, this.f3674s.e(view)) * (f12 / f13)));
     }
 
     public static ViewDragHelper n(ViewGroup viewGroup, float f10, c cVar) {
         ViewDragHelper o10 = o(viewGroup, cVar);
-        o10.f3545b = (int) (o10.f3545b * (1.0f / f10));
+        o10.f3657b = (int) (o10.f3657b * (1.0f / f10));
         return o10;
     }
 
@@ -400,10 +400,10 @@ public class ViewDragHelper {
     }
 
     private void p(float f10, float f11) {
-        this.f3564u = true;
-        this.f3562s.l(this.f3563t, f10, f11);
-        this.f3564u = false;
-        if (this.f3544a == 1) {
+        this.f3676u = true;
+        this.f3674s.l(this.f3675t, f10, f11);
+        this.f3676u = false;
+        if (this.f3656a == 1) {
             K(0);
         }
     }
@@ -413,26 +413,26 @@ public class ViewDragHelper {
     }
 
     private void r(int i10, int i11, int i12, int i13) {
-        int left = this.f3563t.getLeft();
-        int top = this.f3563t.getTop();
+        int left = this.f3675t.getLeft();
+        int top = this.f3675t.getTop();
         if (i12 != 0) {
-            i10 = this.f3562s.a(this.f3563t, i10, i12);
-            h0.X(this.f3563t, i10 - left);
+            i10 = this.f3674s.a(this.f3675t, i10, i12);
+            h0.X(this.f3675t, i10 - left);
         }
         int i14 = i10;
         if (i13 != 0) {
-            i11 = this.f3562s.b(this.f3563t, i11, i13);
-            h0.Y(this.f3563t, i11 - top);
+            i11 = this.f3674s.b(this.f3675t, i11, i13);
+            h0.Y(this.f3675t, i11 - top);
         }
         int i15 = i11;
         if (i12 == 0 && i13 == 0) {
             return;
         }
-        this.f3562s.k(this.f3563t, i14, i15, i14 - left, i15 - top);
+        this.f3674s.k(this.f3675t, i14, i15, i14 - left, i15 - top);
     }
 
     private void s(int i10) {
-        float[] fArr = this.f3547d;
+        float[] fArr = this.f3659d;
         if (fArr != null && fArr.length > i10) {
             return;
         }
@@ -446,72 +446,72 @@ public class ViewDragHelper {
         int[] iArr3 = new int[i11];
         if (fArr != null) {
             System.arraycopy(fArr, 0, fArr2, 0, fArr.length);
-            float[] fArr6 = this.f3548e;
+            float[] fArr6 = this.f3660e;
             System.arraycopy(fArr6, 0, fArr3, 0, fArr6.length);
-            float[] fArr7 = this.f3549f;
+            float[] fArr7 = this.f3661f;
             System.arraycopy(fArr7, 0, fArr4, 0, fArr7.length);
-            float[] fArr8 = this.f3550g;
+            float[] fArr8 = this.f3662g;
             System.arraycopy(fArr8, 0, fArr5, 0, fArr8.length);
-            int[] iArr4 = this.f3551h;
+            int[] iArr4 = this.f3663h;
             System.arraycopy(iArr4, 0, iArr, 0, iArr4.length);
-            int[] iArr5 = this.f3552i;
+            int[] iArr5 = this.f3664i;
             System.arraycopy(iArr5, 0, iArr2, 0, iArr5.length);
-            int[] iArr6 = this.f3553j;
+            int[] iArr6 = this.f3665j;
             System.arraycopy(iArr6, 0, iArr3, 0, iArr6.length);
         }
-        this.f3547d = fArr2;
-        this.f3548e = fArr3;
-        this.f3549f = fArr4;
-        this.f3550g = fArr5;
-        this.f3551h = iArr;
-        this.f3552i = iArr2;
-        this.f3553j = iArr3;
+        this.f3659d = fArr2;
+        this.f3660e = fArr3;
+        this.f3661f = fArr4;
+        this.f3662g = fArr5;
+        this.f3663h = iArr;
+        this.f3664i = iArr2;
+        this.f3665j = iArr3;
     }
 
     private boolean u(int i10, int i11, int i12, int i13) {
-        int left = this.f3563t.getLeft();
-        int top = this.f3563t.getTop();
+        int left = this.f3675t.getLeft();
+        int top = this.f3675t.getTop();
         int i14 = i10 - left;
         int i15 = i11 - top;
         if (i14 == 0 && i15 == 0) {
-            this.f3561r.abortAnimation();
+            this.f3673r.abortAnimation();
             K(0);
             return false;
         }
-        this.f3561r.startScroll(left, top, i14, i15, l(this.f3563t, i14, i15, i12, i13));
+        this.f3673r.startScroll(left, top, i14, i15, l(this.f3675t, i14, i15, i12, i13));
         K(2);
         return true;
     }
 
     private int y(int i10, int i11) {
         int i12;
-        if (i10 < this.f3565v.getLeft() + this.f3558o) {
+        if (i10 < this.f3677v.getLeft() + this.f3670o) {
             i12 = 1;
         } else {
             i12 = 0;
         }
-        if (i11 < this.f3565v.getTop() + this.f3558o) {
+        if (i11 < this.f3677v.getTop() + this.f3670o) {
             i12 |= 4;
         }
-        if (i10 > this.f3565v.getRight() - this.f3558o) {
+        if (i10 > this.f3677v.getRight() - this.f3670o) {
             i12 |= 2;
         }
-        if (i11 > this.f3565v.getBottom() - this.f3558o) {
+        if (i11 > this.f3677v.getBottom() - this.f3670o) {
             return i12 | 8;
         }
         return i12;
     }
 
     public int A() {
-        return this.f3544a;
+        return this.f3656a;
     }
 
     public boolean B(int i10, int i11) {
-        return E(this.f3563t, i10, i11);
+        return E(this.f3675t, i10, i11);
     }
 
     public boolean C(int i10) {
-        if (((1 << i10) & this.f3554k) != 0) {
+        if (((1 << i10) & this.f3666k) != 0) {
             return true;
         }
         return false;
@@ -531,10 +531,10 @@ public class ViewDragHelper {
         if (actionMasked == 0) {
             a();
         }
-        if (this.f3555l == null) {
-            this.f3555l = VelocityTracker.obtain();
+        if (this.f3667l == null) {
+            this.f3667l = VelocityTracker.obtain();
         }
-        this.f3555l.addMovement(motionEvent);
+        this.f3667l.addMovement(motionEvent);
         int i11 = 0;
         if (actionMasked != 0) {
             if (actionMasked != 1) {
@@ -543,16 +543,16 @@ public class ViewDragHelper {
                         if (actionMasked != 5) {
                             if (actionMasked == 6) {
                                 int pointerId = motionEvent.getPointerId(actionIndex);
-                                if (this.f3544a == 1 && pointerId == this.f3546c) {
+                                if (this.f3656a == 1 && pointerId == this.f3658c) {
                                     int pointerCount = motionEvent.getPointerCount();
                                     while (true) {
                                         if (i11 < pointerCount) {
                                             int pointerId2 = motionEvent.getPointerId(i11);
-                                            if (pointerId2 != this.f3546c) {
+                                            if (pointerId2 != this.f3658c) {
                                                 View t10 = t((int) motionEvent.getX(i11), (int) motionEvent.getY(i11));
-                                                View view = this.f3563t;
+                                                View view = this.f3675t;
                                                 if (t10 == view && R(view, pointerId2)) {
-                                                    i10 = this.f3546c;
+                                                    i10 = this.f3658c;
                                                     break;
                                                 }
                                             }
@@ -575,37 +575,37 @@ public class ViewDragHelper {
                         float x10 = motionEvent.getX(actionIndex);
                         float y10 = motionEvent.getY(actionIndex);
                         I(x10, y10, pointerId3);
-                        if (this.f3544a == 0) {
+                        if (this.f3656a == 0) {
                             R(t((int) x10, (int) y10), pointerId3);
-                            int i12 = this.f3551h[pointerId3];
-                            int i13 = this.f3560q;
+                            int i12 = this.f3663h[pointerId3];
+                            int i13 = this.f3672q;
                             if ((i12 & i13) != 0) {
-                                this.f3562s.h(i12 & i13, pointerId3);
+                                this.f3674s.h(i12 & i13, pointerId3);
                                 return;
                             }
                             return;
                         } else if (B((int) x10, (int) y10)) {
-                            R(this.f3563t, pointerId3);
+                            R(this.f3675t, pointerId3);
                             return;
                         } else {
                             return;
                         }
                     }
-                    if (this.f3544a == 1) {
+                    if (this.f3656a == 1) {
                         p(0.0f, 0.0f);
                     }
                     a();
                     return;
-                } else if (this.f3544a == 1) {
-                    if (D(this.f3546c)) {
-                        int findPointerIndex = motionEvent.findPointerIndex(this.f3546c);
+                } else if (this.f3656a == 1) {
+                    if (D(this.f3658c)) {
+                        int findPointerIndex = motionEvent.findPointerIndex(this.f3658c);
                         float x11 = motionEvent.getX(findPointerIndex);
                         float y11 = motionEvent.getY(findPointerIndex);
-                        float[] fArr = this.f3549f;
-                        int i14 = this.f3546c;
+                        float[] fArr = this.f3661f;
+                        int i14 = this.f3658c;
                         int i15 = (int) (x11 - fArr[i14]);
-                        int i16 = (int) (y11 - this.f3550g[i14]);
-                        r(this.f3563t.getLeft() + i15, this.f3563t.getTop() + i16, i15, i16);
+                        int i16 = (int) (y11 - this.f3662g[i14]);
+                        r(this.f3675t.getLeft() + i15, this.f3675t.getTop() + i16, i15, i16);
                         J(motionEvent);
                         return;
                     }
@@ -617,10 +617,10 @@ public class ViewDragHelper {
                         if (D(pointerId4)) {
                             float x12 = motionEvent.getX(i11);
                             float y12 = motionEvent.getY(i11);
-                            float f10 = x12 - this.f3547d[pointerId4];
-                            float f11 = y12 - this.f3548e[pointerId4];
+                            float f10 = x12 - this.f3659d[pointerId4];
+                            float f11 = y12 - this.f3660e[pointerId4];
                             H(f10, f11, pointerId4);
-                            if (this.f3544a != 1) {
+                            if (this.f3656a != 1) {
                                 View t11 = t((int) x12, (int) y12);
                                 if (f(t11, f10, f11) && R(t11, pointerId4)) {
                                     break;
@@ -635,7 +635,7 @@ public class ViewDragHelper {
                     return;
                 }
             }
-            if (this.f3544a == 1) {
+            if (this.f3656a == 1) {
                 G();
             }
             a();
@@ -647,39 +647,39 @@ public class ViewDragHelper {
         View t12 = t((int) x13, (int) y13);
         I(x13, y13, pointerId5);
         R(t12, pointerId5);
-        int i17 = this.f3551h[pointerId5];
-        int i18 = this.f3560q;
+        int i17 = this.f3663h[pointerId5];
+        int i18 = this.f3672q;
         if ((i17 & i18) != 0) {
-            this.f3562s.h(i17 & i18, pointerId5);
+            this.f3674s.h(i17 & i18, pointerId5);
         }
     }
 
     void K(int i10) {
-        this.f3565v.removeCallbacks(this.f3566w);
-        if (this.f3544a != i10) {
-            this.f3544a = i10;
-            this.f3562s.j(i10);
-            if (this.f3544a == 0) {
-                this.f3563t = null;
+        this.f3677v.removeCallbacks(this.f3678w);
+        if (this.f3656a != i10) {
+            this.f3656a = i10;
+            this.f3674s.j(i10);
+            if (this.f3656a == 0) {
+                this.f3675t = null;
             }
         }
     }
 
     public void L(int i10) {
-        this.f3558o = i10;
+        this.f3670o = i10;
     }
 
     public void M(int i10) {
-        this.f3560q = i10;
+        this.f3672q = i10;
     }
 
     public void N(float f10) {
-        this.f3557n = f10;
+        this.f3669n = f10;
     }
 
     public boolean O(int i10, int i11) {
-        if (this.f3564u) {
-            return u(i10, i11, (int) this.f3555l.getXVelocity(this.f3546c), (int) this.f3555l.getYVelocity(this.f3546c));
+        if (this.f3676u) {
+            return u(i10, i11, (int) this.f3667l.getXVelocity(this.f3658c), (int) this.f3667l.getYVelocity(this.f3658c));
         }
         throw new IllegalStateException("Cannot settleCapturedViewAt outside of a call to Callback#onViewReleased");
     }
@@ -700,21 +700,21 @@ public class ViewDragHelper {
     }
 
     public boolean Q(View view, int i10, int i11) {
-        this.f3563t = view;
-        this.f3546c = -1;
+        this.f3675t = view;
+        this.f3658c = -1;
         boolean u10 = u(i10, i11, 0, 0);
-        if (!u10 && this.f3544a == 0 && this.f3563t != null) {
-            this.f3563t = null;
+        if (!u10 && this.f3656a == 0 && this.f3675t != null) {
+            this.f3675t = null;
         }
         return u10;
     }
 
     boolean R(View view, int i10) {
-        if (view == this.f3563t && this.f3546c == i10) {
+        if (view == this.f3675t && this.f3658c == i10) {
             return true;
         }
-        if (view != null && this.f3562s.m(view, i10)) {
-            this.f3546c = i10;
+        if (view != null && this.f3674s.m(view, i10)) {
+            this.f3658c = i10;
             b(view, i10);
             return true;
         }
@@ -722,28 +722,28 @@ public class ViewDragHelper {
     }
 
     public void a() {
-        this.f3546c = -1;
+        this.f3658c = -1;
         i();
-        VelocityTracker velocityTracker = this.f3555l;
+        VelocityTracker velocityTracker = this.f3667l;
         if (velocityTracker != null) {
             velocityTracker.recycle();
-            this.f3555l = null;
+            this.f3667l = null;
         }
     }
 
     public void b(View view, int i10) {
-        if (view.getParent() == this.f3565v) {
-            this.f3563t = view;
-            this.f3546c = i10;
-            this.f3562s.i(view, i10);
+        if (view.getParent() == this.f3677v) {
+            this.f3675t = view;
+            this.f3658c = i10;
+            this.f3674s.i(view, i10);
             K(1);
             return;
         }
-        throw new IllegalArgumentException("captureChildView: parameter must be a descendant of the ViewDragHelper's tracked parent view (" + this.f3565v + ")");
+        throw new IllegalArgumentException("captureChildView: parameter must be a descendant of the ViewDragHelper's tracked parent view (" + this.f3677v + ")");
     }
 
     public boolean d(int i10) {
-        int length = this.f3547d.length;
+        int length = this.f3659d.length;
         for (int i11 = 0; i11 < length; i11++) {
             if (e(i10, i11)) {
                 return true;
@@ -768,20 +768,20 @@ public class ViewDragHelper {
         } else {
             z11 = false;
         }
-        float f10 = this.f3549f[i11] - this.f3547d[i11];
-        float f11 = this.f3550g[i11] - this.f3548e[i11];
+        float f10 = this.f3661f[i11] - this.f3659d[i11];
+        float f11 = this.f3662g[i11] - this.f3660e[i11];
         if (z10 && z11) {
-            int i12 = this.f3545b;
+            int i12 = this.f3657b;
             if ((f10 * f10) + (f11 * f11) <= i12 * i12) {
                 return false;
             }
             return true;
         } else if (z10) {
-            if (Math.abs(f10) <= this.f3545b) {
+            if (Math.abs(f10) <= this.f3657b) {
                 return false;
             }
             return true;
-        } else if (!z11 || Math.abs(f11) <= this.f3545b) {
+        } else if (!z11 || Math.abs(f11) <= this.f3657b) {
             return false;
         } else {
             return true;
@@ -789,42 +789,42 @@ public class ViewDragHelper {
     }
 
     public boolean m(boolean z10) {
-        if (this.f3544a == 2) {
-            boolean computeScrollOffset = this.f3561r.computeScrollOffset();
-            int currX = this.f3561r.getCurrX();
-            int currY = this.f3561r.getCurrY();
-            int left = currX - this.f3563t.getLeft();
-            int top = currY - this.f3563t.getTop();
+        if (this.f3656a == 2) {
+            boolean computeScrollOffset = this.f3673r.computeScrollOffset();
+            int currX = this.f3673r.getCurrX();
+            int currY = this.f3673r.getCurrY();
+            int left = currX - this.f3675t.getLeft();
+            int top = currY - this.f3675t.getTop();
             if (left != 0) {
-                h0.X(this.f3563t, left);
+                h0.X(this.f3675t, left);
             }
             if (top != 0) {
-                h0.Y(this.f3563t, top);
+                h0.Y(this.f3675t, top);
             }
             if (left != 0 || top != 0) {
-                this.f3562s.k(this.f3563t, currX, currY, left, top);
+                this.f3674s.k(this.f3675t, currX, currY, left, top);
             }
-            if (computeScrollOffset && currX == this.f3561r.getFinalX() && currY == this.f3561r.getFinalY()) {
-                this.f3561r.abortAnimation();
+            if (computeScrollOffset && currX == this.f3673r.getFinalX() && currY == this.f3673r.getFinalY()) {
+                this.f3673r.abortAnimation();
                 computeScrollOffset = false;
             }
             if (!computeScrollOffset) {
                 if (z10) {
-                    this.f3565v.post(this.f3566w);
+                    this.f3677v.post(this.f3678w);
                 } else {
                     K(0);
                 }
             }
         }
-        if (this.f3544a != 2) {
+        if (this.f3656a != 2) {
             return false;
         }
         return true;
     }
 
     public View t(int i10, int i11) {
-        for (int childCount = this.f3565v.getChildCount() - 1; childCount >= 0; childCount--) {
-            View childAt = this.f3565v.getChildAt(this.f3562s.c(childCount));
+        for (int childCount = this.f3677v.getChildCount() - 1; childCount >= 0; childCount--) {
+            View childAt = this.f3677v.getChildAt(this.f3674s.c(childCount));
             if (i10 >= childAt.getLeft() && i10 < childAt.getRight() && i11 >= childAt.getTop() && i11 < childAt.getBottom()) {
                 return childAt;
             }
@@ -833,18 +833,18 @@ public class ViewDragHelper {
     }
 
     public View v() {
-        return this.f3563t;
+        return this.f3675t;
     }
 
     public int w() {
-        return this.f3559p;
+        return this.f3671p;
     }
 
     public int x() {
-        return this.f3558o;
+        return this.f3670o;
     }
 
     public int z() {
-        return this.f3545b;
+        return this.f3657b;
     }
 }

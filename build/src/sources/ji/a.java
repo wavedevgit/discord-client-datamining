@@ -1,67 +1,41 @@
 package ji;
 
-import java.util.NoSuchElementException;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-abstract class a extends u0 {
+public abstract class a implements IInterface {
+
+    /* renamed from: c  reason: collision with root package name */
+    private final IBinder f30909c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f31582d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private int f31583e;
+    private final String f30910d;
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public a(int i10, int i11) {
-        ii.m.l(i11, i10);
-        this.f31582d = i10;
-        this.f31583e = i11;
+    public a(IBinder iBinder, String str) {
+        this.f30909c = iBinder;
+        this.f30910d = str;
     }
 
-    protected abstract Object a(int i10);
+    @Override // android.os.IInterface
+    public final IBinder asBinder() {
+        return this.f30909c;
+    }
 
-    @Override // java.util.Iterator, java.util.ListIterator
-    public final boolean hasNext() {
-        if (this.f31583e < this.f31582d) {
-            return true;
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final Parcel e() {
+        Parcel obtain = Parcel.obtain();
+        obtain.writeInterfaceToken(this.f30910d);
+        return obtain;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void f(int i10, Parcel parcel) {
+        try {
+            this.f30909c.transact(i10, parcel, null, 1);
+        } finally {
+            parcel.recycle();
         }
-        return false;
-    }
-
-    @Override // java.util.ListIterator
-    public final boolean hasPrevious() {
-        if (this.f31583e > 0) {
-            return true;
-        }
-        return false;
-    }
-
-    @Override // java.util.Iterator, java.util.ListIterator
-    public final Object next() {
-        if (hasNext()) {
-            int i10 = this.f31583e;
-            this.f31583e = i10 + 1;
-            return a(i10);
-        }
-        throw new NoSuchElementException();
-    }
-
-    @Override // java.util.ListIterator
-    public final int nextIndex() {
-        return this.f31583e;
-    }
-
-    @Override // java.util.ListIterator
-    public final Object previous() {
-        if (hasPrevious()) {
-            int i10 = this.f31583e - 1;
-            this.f31583e = i10;
-            return a(i10);
-        }
-        throw new NoSuchElementException();
-    }
-
-    @Override // java.util.ListIterator
-    public final int previousIndex() {
-        return this.f31583e - 1;
     }
 }

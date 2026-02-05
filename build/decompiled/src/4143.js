@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.isPSD = var0;
     var2.isWEBP = var0;
     var3 = function arg0() {
-        _fun37899: for (var _fun37899_ip = 0;;) switch (_fun37899_ip) {
+        _fun37898: for (var _fun37898_ip = 0;;) switch (_fun37898_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -51,8 +51,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = !var0;
                 var0 = !var4;
                 if (var4) {
-                    _fun37899_ip = 111;
-                    continue _fun37899
+                    _fun37898_ip = 111;
+                    continue _fun37898
                 }
             case 83:
                 var4 = _closure1_slot0;
@@ -167,7 +167,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.isGIF = var3;
     var3 = function arg0() {
-        _fun37905: for (var _fun37905_ip = 0;;) switch (_fun37905_ip) {
+        _fun37904: for (var _fun37904_ip = 0;;) switch (_fun37904_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -188,8 +188,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = !var0;
                 var0 = !var4;
                 if (var4) {
-                    _fun37905_ip = 111;
-                    continue _fun37905
+                    _fun37904_ip = 111;
+                    continue _fun37904
                 }
             case 83:
                 var4 = _closure1_slot0;

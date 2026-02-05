@@ -7,28 +7,28 @@ import java.util.concurrent.ConcurrentMap;
 public final class d3 {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final d3 f13814c = new d3();
+    private static final d3 f14208c = new d3();
 
     /* renamed from: b  reason: collision with root package name */
-    private final ConcurrentMap f13816b = new ConcurrentHashMap();
+    private final ConcurrentMap f14210b = new ConcurrentHashMap();
 
     /* renamed from: a  reason: collision with root package name */
-    private final h3 f13815a = new o2();
+    private final h3 f14209a = new o2();
 
     private d3() {
     }
 
     public static d3 a() {
-        return f13814c;
+        return f14208c;
     }
 
     public final g3 b(Class cls) {
         y1.c(cls, "messageType");
-        g3 g3Var = (g3) this.f13816b.get(cls);
+        g3 g3Var = (g3) this.f14210b.get(cls);
         if (g3Var == null) {
-            g3 a10 = this.f13815a.a(cls);
+            g3 a10 = this.f14209a.a(cls);
             y1.c(cls, "messageType");
-            g3 g3Var2 = (g3) this.f13816b.putIfAbsent(cls, a10);
+            g3 g3Var2 = (g3) this.f14210b.putIfAbsent(cls, a10);
             if (g3Var2 == null) {
                 return a10;
             }

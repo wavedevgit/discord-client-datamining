@@ -25,20 +25,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'utils/native/KeyboardUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun74051: for (var _fun74051_ip = 0;;) switch (_fun74051_ip) {
+        _fun74070: for (var _fun74070_ip = 0;;) switch (_fun74070_ip) {
             case 0:
                 var1 = arguments[0];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun74051_ip = 11;
-                    continue _fun74051
+                    _fun74070_ip = 11;
+                    continue _fun74070
                 }
             case 9:
                 var1 = true;
             case 11:
                 if (var1) {
-                    _fun74051_ip = 31;
-                    continue _fun74051
+                    _fun74070_ip = 31;
+                    continue _fun74070
                 }
             case 14:
                 var2 = _closure1_slot0;

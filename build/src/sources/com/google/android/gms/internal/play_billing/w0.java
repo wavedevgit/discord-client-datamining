@@ -7,22 +7,22 @@ import com.facebook.react.views.text.internal.span.SetSpanOperation;
 public final class w0 extends z0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final byte[] f13997d;
+    private final byte[] f14391d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f13998e;
+    private final int f14392e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f13999f;
+    private int f14393f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public w0(byte[] bArr, int i10, int i11) {
         super(null);
         int length = bArr.length;
         if (((length - i11) | i11) >= 0) {
-            this.f13997d = bArr;
-            this.f13999f = 0;
-            this.f13998e = i11;
+            this.f14391d = bArr;
+            this.f14393f = 0;
+            this.f14392e = i11;
             return;
         }
         throw new IllegalArgumentException(String.format("Array range is invalid. Buffer.length=%d, offset=%d, length=%d", Integer.valueOf(length), 0, Integer.valueOf(i11)));
@@ -30,33 +30,33 @@ public final class w0 extends z0 {
 
     public final void A(byte[] bArr, int i10, int i11) {
         try {
-            System.arraycopy(bArr, 0, this.f13997d, this.f13999f, i11);
-            this.f13999f += i11;
+            System.arraycopy(bArr, 0, this.f14391d, this.f14393f, i11);
+            this.f14393f += i11;
         } catch (IndexOutOfBoundsException e10) {
-            throw new x0(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.f13999f), Integer.valueOf(this.f13998e), Integer.valueOf(i11)), e10);
+            throw new x0(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.f14393f), Integer.valueOf(this.f14392e), Integer.valueOf(i11)), e10);
         }
     }
 
     public final void B(String str) {
-        int i10 = this.f13999f;
+        int i10 = this.f14393f;
         try {
             int w10 = z0.w(str.length() * 3);
             int w11 = z0.w(str.length());
             if (w11 == w10) {
                 int i11 = i10 + w11;
-                this.f13999f = i11;
-                int b10 = l4.b(str, this.f13997d, i11, this.f13998e - i11);
-                this.f13999f = i10;
+                this.f14393f = i11;
+                int b10 = l4.b(str, this.f14391d, i11, this.f14392e - i11);
+                this.f14393f = i10;
                 q((b10 - i10) - w11);
-                this.f13999f = b10;
+                this.f14393f = b10;
                 return;
             }
             q(l4.c(str));
-            byte[] bArr = this.f13997d;
-            int i12 = this.f13999f;
-            this.f13999f = l4.b(str, bArr, i12, this.f13998e - i12);
+            byte[] bArr = this.f14391d;
+            int i12 = this.f14393f;
+            this.f14393f = l4.b(str, bArr, i12, this.f14392e - i12);
         } catch (k4 e10) {
-            this.f13999f = i10;
+            this.f14393f = i10;
             a(str, e10);
         } catch (IndexOutOfBoundsException e11) {
             throw new x0(e11);
@@ -65,18 +65,18 @@ public final class w0 extends z0 {
 
     @Override // com.google.android.gms.internal.play_billing.z0
     public final int c() {
-        return this.f13998e - this.f13999f;
+        return this.f14392e - this.f14393f;
     }
 
     @Override // com.google.android.gms.internal.play_billing.z0
     public final void d(byte b10) {
         try {
-            byte[] bArr = this.f13997d;
-            int i10 = this.f13999f;
-            this.f13999f = i10 + 1;
+            byte[] bArr = this.f14391d;
+            int i10 = this.f14393f;
+            this.f14393f = i10 + 1;
             bArr[i10] = b10;
         } catch (IndexOutOfBoundsException e10) {
-            throw new x0(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.f13999f), Integer.valueOf(this.f13998e), 1), e10);
+            throw new x0(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.f14393f), Integer.valueOf(this.f14392e), 1), e10);
         }
     }
 
@@ -102,21 +102,21 @@ public final class w0 extends z0 {
     @Override // com.google.android.gms.internal.play_billing.z0
     public final void h(int i10) {
         try {
-            byte[] bArr = this.f13997d;
-            int i11 = this.f13999f;
+            byte[] bArr = this.f14391d;
+            int i11 = this.f14393f;
             int i12 = i11 + 1;
-            this.f13999f = i12;
+            this.f14393f = i12;
             bArr[i11] = (byte) (i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
             int i13 = i11 + 2;
-            this.f13999f = i13;
+            this.f14393f = i13;
             bArr[i12] = (byte) ((i10 >> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
             int i14 = i11 + 3;
-            this.f13999f = i14;
+            this.f14393f = i14;
             bArr[i13] = (byte) ((i10 >> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
-            this.f13999f = i11 + 4;
+            this.f14393f = i11 + 4;
             bArr[i14] = (byte) ((i10 >> 24) & SetSpanOperation.SPAN_MAX_PRIORITY);
         } catch (IndexOutOfBoundsException e10) {
-            throw new x0(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.f13999f), Integer.valueOf(this.f13998e), 1), e10);
+            throw new x0(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.f14393f), Integer.valueOf(this.f14392e), 1), e10);
         }
     }
 
@@ -129,33 +129,33 @@ public final class w0 extends z0 {
     @Override // com.google.android.gms.internal.play_billing.z0
     public final void j(long j10) {
         try {
-            byte[] bArr = this.f13997d;
-            int i10 = this.f13999f;
+            byte[] bArr = this.f14391d;
+            int i10 = this.f14393f;
             int i11 = i10 + 1;
-            this.f13999f = i11;
+            this.f14393f = i11;
             bArr[i10] = (byte) (((int) j10) & SetSpanOperation.SPAN_MAX_PRIORITY);
             int i12 = i10 + 2;
-            this.f13999f = i12;
+            this.f14393f = i12;
             bArr[i11] = (byte) (((int) (j10 >> 8)) & SetSpanOperation.SPAN_MAX_PRIORITY);
             int i13 = i10 + 3;
-            this.f13999f = i13;
+            this.f14393f = i13;
             bArr[i12] = (byte) (((int) (j10 >> 16)) & SetSpanOperation.SPAN_MAX_PRIORITY);
             int i14 = i10 + 4;
-            this.f13999f = i14;
+            this.f14393f = i14;
             bArr[i13] = (byte) (((int) (j10 >> 24)) & SetSpanOperation.SPAN_MAX_PRIORITY);
             int i15 = i10 + 5;
-            this.f13999f = i15;
+            this.f14393f = i15;
             bArr[i14] = (byte) (((int) (j10 >> 32)) & SetSpanOperation.SPAN_MAX_PRIORITY);
             int i16 = i10 + 6;
-            this.f13999f = i16;
+            this.f14393f = i16;
             bArr[i15] = (byte) (((int) (j10 >> 40)) & SetSpanOperation.SPAN_MAX_PRIORITY);
             int i17 = i10 + 7;
-            this.f13999f = i17;
+            this.f14393f = i17;
             bArr[i16] = (byte) (((int) (j10 >> 48)) & SetSpanOperation.SPAN_MAX_PRIORITY);
-            this.f13999f = i10 + 8;
+            this.f14393f = i10 + 8;
             bArr[i17] = (byte) (((int) (j10 >> 56)) & SetSpanOperation.SPAN_MAX_PRIORITY);
         } catch (IndexOutOfBoundsException e10) {
-            throw new x0(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.f13999f), Integer.valueOf(this.f13998e), 1), e10);
+            throw new x0(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.f14393f), Integer.valueOf(this.f14392e), 1), e10);
         }
     }
 
@@ -200,18 +200,18 @@ public final class w0 extends z0 {
     public final void q(int i10) {
         while ((i10 & (-128)) != 0) {
             try {
-                byte[] bArr = this.f13997d;
-                int i11 = this.f13999f;
-                this.f13999f = i11 + 1;
+                byte[] bArr = this.f14391d;
+                int i11 = this.f14393f;
+                this.f14393f = i11 + 1;
                 bArr[i11] = (byte) ((i10 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) & SetSpanOperation.SPAN_MAX_PRIORITY);
                 i10 >>>= 7;
             } catch (IndexOutOfBoundsException e10) {
-                throw new x0(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.f13999f), Integer.valueOf(this.f13998e), 1), e10);
+                throw new x0(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.f14393f), Integer.valueOf(this.f14392e), 1), e10);
             }
         }
-        byte[] bArr2 = this.f13997d;
-        int i12 = this.f13999f;
-        this.f13999f = i12 + 1;
+        byte[] bArr2 = this.f14391d;
+        int i12 = this.f14393f;
+        this.f14393f = i12 + 1;
         bArr2[i12] = (byte) i10;
     }
 
@@ -224,37 +224,37 @@ public final class w0 extends z0 {
     @Override // com.google.android.gms.internal.play_billing.z0
     public final void s(long j10) {
         boolean z10;
-        z10 = z0.f14030c;
-        if (!z10 || this.f13998e - this.f13999f < 10) {
+        z10 = z0.f14424c;
+        if (!z10 || this.f14392e - this.f14393f < 10) {
             while ((j10 & (-128)) != 0) {
                 try {
-                    byte[] bArr = this.f13997d;
-                    int i10 = this.f13999f;
-                    this.f13999f = i10 + 1;
+                    byte[] bArr = this.f14391d;
+                    int i10 = this.f14393f;
+                    this.f14393f = i10 + 1;
                     bArr[i10] = (byte) ((((int) j10) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) & SetSpanOperation.SPAN_MAX_PRIORITY);
                     j10 >>>= 7;
                 } catch (IndexOutOfBoundsException e10) {
-                    throw new x0(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.f13999f), Integer.valueOf(this.f13998e), 1), e10);
+                    throw new x0(String.format("Pos: %d, limit: %d, len: %d", Integer.valueOf(this.f14393f), Integer.valueOf(this.f14392e), 1), e10);
                 }
             }
-            byte[] bArr2 = this.f13997d;
-            int i11 = this.f13999f;
-            this.f13999f = i11 + 1;
+            byte[] bArr2 = this.f14391d;
+            int i11 = this.f14393f;
+            this.f14393f = i11 + 1;
             bArr2[i11] = (byte) j10;
             return;
         }
         while (true) {
             int i12 = (int) j10;
             if ((j10 & (-128)) == 0) {
-                byte[] bArr3 = this.f13997d;
-                int i13 = this.f13999f;
-                this.f13999f = i13 + 1;
+                byte[] bArr3 = this.f14391d;
+                int i13 = this.f14393f;
+                this.f14393f = i13 + 1;
                 g4.s(bArr3, i13, (byte) i12);
                 return;
             }
-            byte[] bArr4 = this.f13997d;
-            int i14 = this.f13999f;
-            this.f13999f = i14 + 1;
+            byte[] bArr4 = this.f14391d;
+            int i14 = this.f14393f;
+            this.f14393f = i14 + 1;
             g4.s(bArr4, i14, (byte) ((i12 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) & SetSpanOperation.SPAN_MAX_PRIORITY));
             j10 >>>= 7;
         }

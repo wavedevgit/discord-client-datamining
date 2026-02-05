@@ -1,136 +1,99 @@
 package fu;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
-import lu.x;
-import lu.y;
-import okio.Sink;
-import okio.Source;
+import kotlin.text.StringsKt;
+import okhttp3.Cookie;
+import okhttp3.CookieJar;
+import okhttp3.Interceptor;
+import okhttp3.MediaType;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import okhttp3.ResponseBody;
+import ou.m;
+import ou.x;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a {
+public final class a implements Interceptor {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0327a f24813a = C0327a.f24815a;
+    private final CookieJar f23498a;
 
-    /* renamed from: b  reason: collision with root package name */
-    public static final a f24814b = new C0327a.C0328a();
-
-    /* renamed from: fu.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0327a {
-
-        /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ C0327a f24815a = new C0327a();
-
-        /* renamed from: fu.a$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        private static final class C0328a implements a {
-            @Override // fu.a
-            public void a(File directory) {
-                Intrinsics.checkNotNullParameter(directory, "directory");
-                File[] listFiles = directory.listFiles();
-                if (listFiles != null) {
-                    for (File file : listFiles) {
-                        if (file.isDirectory()) {
-                            Intrinsics.checkNotNullExpressionValue(file, "file");
-                            a(file);
-                        }
-                        if (!file.delete()) {
-                            throw new IOException("failed to delete " + file);
-                        }
-                    }
-                    return;
-                }
-                throw new IOException("not a readable directory: " + directory);
-            }
-
-            @Override // fu.a
-            public boolean b(File file) {
-                Intrinsics.checkNotNullParameter(file, "file");
-                return file.exists();
-            }
-
-            @Override // fu.a
-            public Sink c(File file) {
-                Intrinsics.checkNotNullParameter(file, "file");
-                try {
-                    return x.a(file);
-                } catch (FileNotFoundException unused) {
-                    file.getParentFile().mkdirs();
-                    return x.a(file);
-                }
-            }
-
-            @Override // fu.a
-            public long d(File file) {
-                Intrinsics.checkNotNullParameter(file, "file");
-                return file.length();
-            }
-
-            @Override // fu.a
-            public Source e(File file) {
-                Intrinsics.checkNotNullParameter(file, "file");
-                return x.j(file);
-            }
-
-            @Override // fu.a
-            public Sink f(File file) {
-                Sink g10;
-                Sink g11;
-                Intrinsics.checkNotNullParameter(file, "file");
-                try {
-                    g11 = y.g(file, false, 1, null);
-                    return g11;
-                } catch (FileNotFoundException unused) {
-                    file.getParentFile().mkdirs();
-                    g10 = y.g(file, false, 1, null);
-                    return g10;
-                }
-            }
-
-            @Override // fu.a
-            public void g(File from, File to2) {
-                Intrinsics.checkNotNullParameter(from, "from");
-                Intrinsics.checkNotNullParameter(to2, "to");
-                h(to2);
-                if (from.renameTo(to2)) {
-                    return;
-                }
-                throw new IOException("failed to rename " + from + " to " + to2);
-            }
-
-            @Override // fu.a
-            public void h(File file) {
-                Intrinsics.checkNotNullParameter(file, "file");
-                if (!file.delete() && file.exists()) {
-                    throw new IOException("failed to delete " + file);
-                }
-            }
-
-            public String toString() {
-                return "FileSystem.SYSTEM";
-            }
-        }
-
-        private C0327a() {
-        }
+    public a(CookieJar cookieJar) {
+        Intrinsics.checkNotNullParameter(cookieJar, "cookieJar");
+        this.f23498a = cookieJar;
     }
 
-    void a(File file);
+    private final String a(List list) {
+        StringBuilder sb2 = new StringBuilder();
+        int i10 = 0;
+        for (Object obj : list) {
+            int i11 = i10 + 1;
+            if (i10 < 0) {
+                CollectionsKt.v();
+            }
+            Cookie cookie = (Cookie) obj;
+            if (i10 > 0) {
+                sb2.append("; ");
+            }
+            sb2.append(cookie.g());
+            sb2.append('=');
+            sb2.append(cookie.i());
+            i10 = i11;
+        }
+        String sb3 = sb2.toString();
+        Intrinsics.checkNotNullExpressionValue(sb3, "StringBuilder().apply(builderAction).toString()");
+        return sb3;
+    }
 
-    boolean b(File file);
-
-    Sink c(File file);
-
-    long d(File file);
-
-    Source e(File file);
-
-    Sink f(File file);
-
-    void g(File file, File file2);
-
-    void h(File file);
+    @Override // okhttp3.Interceptor
+    public Response intercept(Interceptor.Chain chain) {
+        ResponseBody o10;
+        Intrinsics.checkNotNullParameter(chain, "chain");
+        Request h10 = chain.h();
+        Request.Builder k10 = h10.k();
+        RequestBody c10 = h10.c();
+        if (c10 != null) {
+            MediaType contentType = c10.contentType();
+            if (contentType != null) {
+                k10.e("Content-Type", contentType.toString());
+            }
+            long contentLength = c10.contentLength();
+            if (contentLength != -1) {
+                k10.e("Content-Length", String.valueOf(contentLength));
+                k10.i("Transfer-Encoding");
+            } else {
+                k10.e("Transfer-Encoding", "chunked");
+                k10.i("Content-Length");
+            }
+        }
+        boolean z10 = false;
+        if (h10.f("Host") == null) {
+            k10.e("Host", au.e.U(h10.n(), false, 1, null));
+        }
+        if (h10.f("Connection") == null) {
+            k10.e("Connection", "Keep-Alive");
+        }
+        if (h10.f("Accept-Encoding") == null && h10.f("Range") == null) {
+            k10.e("Accept-Encoding", "gzip");
+            z10 = true;
+        }
+        List loadForRequest = this.f23498a.loadForRequest(h10.n());
+        if (!loadForRequest.isEmpty()) {
+            k10.e("Cookie", a(loadForRequest));
+        }
+        if (h10.f("User-Agent") == null) {
+            k10.e("User-Agent", "okhttp/4.12.0");
+        }
+        Response a10 = chain.a(k10.b());
+        e.f(this.f23498a, h10.n(), a10.E0());
+        Response.a r10 = a10.N0().r(h10);
+        if (z10 && StringsKt.A("gzip", Response.D0(a10, "Content-Encoding", null, 2, null), true) && e.b(a10) && (o10 = a10.o()) != null) {
+            m mVar = new m(o10.source());
+            r10.k(a10.E0().g().i("Content-Encoding").i("Content-Length").f());
+            r10.b(new h(Response.D0(a10, "Content-Type", null, 2, null), -1L, x.d(mVar)));
+        }
+        return r10.c();
+    }
 }

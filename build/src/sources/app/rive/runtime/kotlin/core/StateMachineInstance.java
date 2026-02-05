@@ -196,28 +196,28 @@ public final class StateMachineInstance extends NativeObject implements Playable
     public final void pointerDown(int i10, float f10, float f11) {
         synchronized (this.lock) {
             cppPointerDown(getCppPointer(), i10, f10, f11);
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
     }
 
     public final void pointerExit(int i10, float f10, float f11) {
         synchronized (this.lock) {
             cppPointerExit(getCppPointer(), i10, f10, f11);
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
     }
 
     public final void pointerMove(int i10, float f10, float f11) {
         synchronized (this.lock) {
             cppPointerMove(getCppPointer(), i10, f10, f11);
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
     }
 
     public final void pointerUp(int i10, float f10, float f11) {
         synchronized (this.lock) {
             cppPointerUp(getCppPointer(), i10, f10, f11);
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
     }
 

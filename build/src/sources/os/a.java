@@ -1,40 +1,44 @@
 package os;
 
-import java.lang.reflect.Method;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
+public final class a {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final Method f44499a;
+    /* renamed from: d  reason: collision with root package name */
+    public static final a f44350d = new a("SUSPEND", 0);
+
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f44351e = new a("DROP_OLDEST", 1);
+
+    /* renamed from: i  reason: collision with root package name */
+    public static final a f44352i = new a("DROP_LATEST", 2);
+
+    /* renamed from: o  reason: collision with root package name */
+    private static final /* synthetic */ a[] f44353o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f44354p;
 
     static {
-        Method method;
-        try {
-            method = ScheduledThreadPoolExecutor.class.getMethod("setRemoveOnCancelPolicy", Boolean.TYPE);
-        } catch (Throwable unused) {
-            method = null;
-        }
-        f44499a = method;
+        a[] a10 = a();
+        f44353o = a10;
+        f44354p = vr.a.a(a10);
     }
 
-    public static final boolean a(Executor executor) {
-        ScheduledThreadPoolExecutor scheduledThreadPoolExecutor;
-        Method method;
-        try {
-            if (executor instanceof ScheduledThreadPoolExecutor) {
-                scheduledThreadPoolExecutor = (ScheduledThreadPoolExecutor) executor;
-            } else {
-                scheduledThreadPoolExecutor = null;
-            }
-            if (scheduledThreadPoolExecutor == null || (method = f44499a) == null) {
-                return false;
-            }
-            method.invoke(scheduledThreadPoolExecutor, Boolean.TRUE);
-            return true;
-        } catch (Throwable unused) {
-            return false;
-        }
+    private a(String str, int i10) {
+    }
+
+    private static final /* synthetic */ a[] a() {
+        return new a[]{f44350d, f44351e, f44352i};
+    }
+
+    public static a valueOf(String str) {
+        return (a) Enum.valueOf(a.class, str);
+    }
+
+    public static a[] values() {
+        return (a[]) f44353o.clone();
     }
 }

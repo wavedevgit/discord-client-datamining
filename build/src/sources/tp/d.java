@@ -1,39 +1,25 @@
 package tp;
-
-import kotlin.jvm.internal.Intrinsics;
-import lr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class d {
+public final class d implements zq.d {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public /* synthetic */ class a {
+    /* renamed from: a  reason: collision with root package name */
+    private final zq.h f50895a;
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f50210a;
-
-        static {
-            int[] iArr = new int[c.values().length];
-            try {
-                iArr[c.f50206d.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                iArr[c.f50207e.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
-            }
-            f50210a = iArr;
-        }
+    public d(zq.h hVar) {
+        this.f50895a = hVar;
     }
 
-    public static final String a(c cVar) {
-        Intrinsics.checkNotNullParameter(cVar, "<this>");
-        int i10 = a.f50210a[cVar.ordinal()];
-        if (i10 != 1) {
-            if (i10 == 2) {
-                return "precise";
-            }
-            throw new p();
-        }
-        return "rough";
+    public static d a(zq.h hVar) {
+        return new d(hVar);
+    }
+
+    public static c c(e eVar) {
+        return new c(eVar);
+    }
+
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public c get() {
+        return c((e) this.f50895a.get());
     }
 }

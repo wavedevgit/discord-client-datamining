@@ -8,11 +8,11 @@ import org.jetbrains.annotations.NotNull;
 public final class ResolutionAnchorProviderKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ModuleCapability f34576a = new ModuleCapability("ResolutionAnchorProvider");
+    private static final ModuleCapability f34100a = new ModuleCapability("ResolutionAnchorProvider");
 
     public static final ModuleDescriptor getResolutionAnchorIfAny(@NotNull ModuleDescriptor moduleDescriptor) {
         Intrinsics.checkNotNullParameter(moduleDescriptor, "<this>");
-        ResolutionAnchorProvider resolutionAnchorProvider = (ResolutionAnchorProvider) moduleDescriptor.getCapability(f34576a);
+        ResolutionAnchorProvider resolutionAnchorProvider = (ResolutionAnchorProvider) moduleDescriptor.getCapability(f34100a);
         if (resolutionAnchorProvider != null) {
             return resolutionAnchorProvider.getResolutionAnchor(moduleDescriptor);
         }

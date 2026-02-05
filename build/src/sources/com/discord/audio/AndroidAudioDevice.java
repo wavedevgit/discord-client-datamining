@@ -1,11 +1,11 @@
 package com.discord.audio;
 
 import android.media.AudioDeviceInfo;
-import at.m;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableNativeMap;
-import dt.e0;
+import dt.m;
+import gt.e0;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -15,12 +15,12 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import lr.l;
-import lr.o;
-import lr.v;
+import or.l;
+import or.o;
+import or.v;
 import org.jetbrains.annotations.NotNull;
-@m
 @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0007\u0018\u0000 '2\u00020\u0001:\u0002'(B\u0007¢\u0006\u0004\b\u0002\u0010\u0003B?\b\u0010\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\u0002\u0010\u000eJ\u0006\u0010\u001d\u001a\u00020\u001eJ%\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u00002\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%H\u0001¢\u0006\u0002\b&R\u001a\u0010\u0006\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u0010\"\u0004\b\u0011\u0010\u0012R\u001a\u0010\u0007\u001a\u00020\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u0014\"\u0004\b\u0015\u0010\u0016R\u001a\u0010\t\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0010\"\u0004\b\u0018\u0010\u0012R\u001a\u0010\n\u001a\u00020\u000bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u001a\"\u0004\b\u001b\u0010\u001c¨\u0006)"}, d2 = {"Lcom/discord/audio/AndroidAudioDevice;", "", "<init>", "()V", "seen0", "", "deviceType", "simpleDeviceType", "Lcom/discord/audio/SimpleDeviceType;", "deviceId", "deviceName", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILcom/discord/audio/SimpleDeviceType;ILjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getDeviceType", "()I", "setDeviceType", "(I)V", "getSimpleDeviceType", "()Lcom/discord/audio/SimpleDeviceType;", "setSimpleDeviceType", "(Lcom/discord/audio/SimpleDeviceType;)V", "getDeviceId", "setDeviceId", "getDeviceName", "()Ljava/lang/String;", "setDeviceName", "(Ljava/lang/String;)V", "toNativeMap", "Lcom/facebook/react/bridge/WritableNativeMap;", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$audio_release", "Companion", "$serializer", "audio_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@m
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class AndroidAudioDevice {
     private int deviceId;
@@ -32,7 +32,7 @@ public final class AndroidAudioDevice {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, l.b(o.f37120e, new Function0() { // from class: com.discord.audio.a
+    private static final Lazy[] $childSerializers = {null, l.b(o.f44232e, new Function0() { // from class: com.discord.audio.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -122,16 +122,16 @@ public final class AndroidAudioDevice {
     public static final /* synthetic */ void write$Self$audio_release(AndroidAudioDevice androidAudioDevice, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
         if (compositeEncoder.z(serialDescriptor, 0) || androidAudioDevice.deviceType != 0) {
-            compositeEncoder.w(serialDescriptor, 0, androidAudioDevice.deviceType);
+            compositeEncoder.v(serialDescriptor, 0, androidAudioDevice.deviceType);
         }
         if (compositeEncoder.z(serialDescriptor, 1) || androidAudioDevice.simpleDeviceType != SimpleDeviceType.INVALID) {
-            compositeEncoder.D(serialDescriptor, 1, (at.o) lazyArr[1].getValue(), androidAudioDevice.simpleDeviceType);
+            compositeEncoder.l(serialDescriptor, 1, (dt.o) lazyArr[1].getValue(), androidAudioDevice.simpleDeviceType);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || androidAudioDevice.deviceId != -1) {
-            compositeEncoder.w(serialDescriptor, 2, androidAudioDevice.deviceId);
+            compositeEncoder.v(serialDescriptor, 2, androidAudioDevice.deviceId);
         }
         if (compositeEncoder.z(serialDescriptor, 3) || !Intrinsics.areEqual(androidAudioDevice.deviceName, "")) {
-            compositeEncoder.y(serialDescriptor, 3, androidAudioDevice.deviceName);
+            compositeEncoder.x(serialDescriptor, 3, androidAudioDevice.deviceName);
         }
     }
 

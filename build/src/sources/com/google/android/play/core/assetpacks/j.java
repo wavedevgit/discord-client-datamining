@@ -3,53 +3,49 @@ package com.google.android.play.core.assetpacks;
 import android.os.Bundle;
 import android.os.RemoteException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class j extends th.l0 {
+final class j extends wh.l0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ int f15409e;
+    final /* synthetic */ int f15803e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ String f15410i;
+    final /* synthetic */ String f15804i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ String f15411o;
+    final /* synthetic */ String f15805o;
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ int f15412p;
+    final /* synthetic */ int f15806p;
 
     /* renamed from: q  reason: collision with root package name */
-    final /* synthetic */ wg.k f15413q;
+    final /* synthetic */ xg.k f15807q;
 
     /* renamed from: r  reason: collision with root package name */
-    final /* synthetic */ x f15414r;
+    final /* synthetic */ x f15808r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public j(x xVar, wg.k kVar, int i10, String str, String str2, int i11, wg.k kVar2) {
+    public j(x xVar, xg.k kVar, int i10, String str, String str2, int i11, xg.k kVar2) {
         super(kVar);
-        this.f15409e = i10;
-        this.f15410i = str;
-        this.f15411o = str2;
-        this.f15412p = i11;
-        this.f15413q = kVar2;
-        this.f15414r = xVar;
+        this.f15803e = i10;
+        this.f15804i = str;
+        this.f15805o = str2;
+        this.f15806p = i11;
+        this.f15807q = kVar2;
+        this.f15808r = xVar;
     }
 
-    @Override // th.l0
+    @Override // wh.l0
     protected final void a() {
-        th.k0 k0Var;
-        th.v0 v0Var;
         String str;
         Bundle h10;
         try {
-            v0Var = this.f15414r.f15692d;
-            str = this.f15414r.f15689a;
-            Bundle l10 = x.l(this.f15409e, this.f15410i, this.f15411o, this.f15412p);
+            str = this.f15808r.f16083a;
+            Bundle l10 = x.l(this.f15803e, this.f15804i, this.f15805o, this.f15806p);
             h10 = x.h();
-            ((th.b0) v0Var.e()).x0(str, l10, h10, new t(this.f15414r, this.f15413q));
+            ((wh.b0) this.f15808r.f16086d.e()).M0(str, l10, h10, new t(this.f15808r, this.f15807q));
         } catch (RemoteException e10) {
-            k0Var = x.f15687g;
-            k0Var.c(e10, "notifyChunkTransferred", new Object[0]);
+            x.f16081g.c(e10, "notifyChunkTransferred", new Object[0]);
         }
     }
 }

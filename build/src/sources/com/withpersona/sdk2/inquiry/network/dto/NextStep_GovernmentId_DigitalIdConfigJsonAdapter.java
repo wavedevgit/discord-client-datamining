@@ -47,27 +47,27 @@ public final class NextStep_GovernmentId_DigitalIdConfigJsonAdapter extends h {
     @NotNull
     public NextStep.GovernmentId.DigitalIdConfig fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         String str3 = null;
         List list = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 str3 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 list = (List) this.nullableListOfDigitalIdRequestAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new NextStep.GovernmentId.DigitalIdConfig(str, str2, str3, list);
     }
 
@@ -75,14 +75,14 @@ public final class NextStep_GovernmentId_DigitalIdConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.GovernmentId.DigitalIdConfig digitalIdConfig) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (digitalIdConfig != null) {
-            writer.l();
-            writer.A0("merchantId");
+            writer.k();
+            writer.W("merchantId");
             this.nullableStringAdapter.toJson(writer, digitalIdConfig.getMerchantId());
-            writer.A0("nonce");
+            writer.W("nonce");
             this.nullableStringAdapter.toJson(writer, digitalIdConfig.getNonce());
-            writer.A0("fieldKeyMobileDriversLicense");
+            writer.W("fieldKeyMobileDriversLicense");
             this.nullableStringAdapter.toJson(writer, digitalIdConfig.getFieldKeyMobileDriversLicense());
-            writer.A0("mobileRequests");
+            writer.W("mobileRequests");
             this.nullableListOfDigitalIdRequestAdapter.toJson(writer, digitalIdConfig.getMobileRequests());
             writer.E();
             return;

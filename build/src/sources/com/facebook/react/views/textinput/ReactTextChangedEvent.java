@@ -55,7 +55,7 @@ public final class ReactTextChangedEvent extends Event<ReactTextChangedEvent> {
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    @lr.c
+    @or.c
     public ReactTextChangedEvent(int i10, @NotNull String text, int i11) {
         this(-1, i10, text, i11);
         Intrinsics.checkNotNullParameter(text, "text");

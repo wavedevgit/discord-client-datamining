@@ -10,32 +10,36 @@ import gf.o;
 public final class b extends hf.a {
 
     /* renamed from: d  reason: collision with root package name */
-    final int f13400d;
+    final int f13793d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f13401e;
+    private final int f13794e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final PendingIntent f13402i;
+    private final PendingIntent f13795i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f13403o;
+    private final String f13796o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final b f13399p = new b(0);
+    private final Integer f13797p;
+
+    /* renamed from: q  reason: collision with root package name */
+    public static final b f13792q = new b(0);
     @NonNull
     public static final Parcelable.Creator<b> CREATOR = new o();
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public b(int i10, int i11, PendingIntent pendingIntent, String str) {
-        this.f13400d = i10;
-        this.f13401e = i11;
-        this.f13402i = pendingIntent;
-        this.f13403o = str;
+    public b(int i10, int i11, PendingIntent pendingIntent, String str, Integer num) {
+        this.f13793d = i10;
+        this.f13794e = i11;
+        this.f13795i = pendingIntent;
+        this.f13796o = str;
+        this.f13797p = num;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static String g(int i10) {
+    public static String i(int i10) {
         if (i10 != 99) {
             if (i10 != 1500) {
                 switch (i10) {
@@ -94,7 +98,11 @@ public final class b extends hf.a {
                             case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
                                 return "API_INSTALL_REQUIRED";
                             default:
-                                return "UNKNOWN_ERROR_CODE(" + i10 + ")";
+                                StringBuilder sb2 = new StringBuilder(String.valueOf(i10).length() + 20);
+                                sb2.append("UNKNOWN_ERROR_CODE(");
+                                sb2.append(i10);
+                                sb2.append(")");
+                                return sb2.toString();
                         }
                 }
             }
@@ -103,20 +111,20 @@ public final class b extends hf.a {
         return "UNFINISHED";
     }
 
-    public int b() {
-        return this.f13401e;
+    public Integer b() {
+        return this.f13797p;
     }
 
-    public String c() {
-        return this.f13403o;
+    public int c() {
+        return this.f13794e;
     }
 
-    public PendingIntent d() {
-        return this.f13402i;
+    public String d() {
+        return this.f13796o;
     }
 
-    public boolean e() {
-        return (this.f13401e == 0 || this.f13402i == null) ? false : true;
+    public PendingIntent e() {
+        return this.f13795i;
     }
 
     public boolean equals(Object obj) {
@@ -127,36 +135,42 @@ public final class b extends hf.a {
             return false;
         }
         b bVar = (b) obj;
-        if (this.f13401e == bVar.f13401e && gf.o.a(this.f13402i, bVar.f13402i) && gf.o.a(this.f13403o, bVar.f13403o)) {
+        if (this.f13794e == bVar.f13794e && gf.o.a(this.f13795i, bVar.f13795i) && gf.o.a(this.f13796o, bVar.f13796o) && gf.o.a(this.f13797p, bVar.f13797p)) {
             return true;
         }
         return false;
     }
 
     public boolean f() {
-        return this.f13401e == 0;
+        return (this.f13794e == 0 || this.f13795i == null) ? false : true;
+    }
+
+    public boolean g() {
+        return this.f13794e == 0;
     }
 
     public int hashCode() {
-        return gf.o.b(Integer.valueOf(this.f13401e), this.f13402i, this.f13403o);
+        return gf.o.b(Integer.valueOf(this.f13794e), this.f13795i, this.f13796o, this.f13797p);
     }
 
     public String toString() {
         o.a c10 = gf.o.c(this);
-        c10.a("statusCode", g(this.f13401e));
-        c10.a("resolution", this.f13402i);
-        c10.a("message", this.f13403o);
+        c10.a("statusCode", i(this.f13794e));
+        c10.a("resolution", this.f13795i);
+        c10.a("message", this.f13796o);
+        c10.a("clientMethodKey", this.f13797p);
         return c10.toString();
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        int i11 = this.f13400d;
+        int i11 = this.f13793d;
         int a10 = hf.c.a(parcel);
         hf.c.l(parcel, 1, i11);
-        hf.c.l(parcel, 2, b());
-        hf.c.q(parcel, 3, d(), i10, false);
-        hf.c.s(parcel, 4, c(), false);
+        hf.c.l(parcel, 2, c());
+        hf.c.q(parcel, 3, e(), i10, false);
+        hf.c.s(parcel, 4, d(), false);
+        hf.c.n(parcel, 5, b(), false);
         hf.c.b(parcel, a10);
     }
 
@@ -169,6 +183,6 @@ public final class b extends hf.a {
     }
 
     public b(int i10, PendingIntent pendingIntent, String str) {
-        this(1, i10, pendingIntent, str);
+        this(1, i10, pendingIntent, str, null);
     }
 }

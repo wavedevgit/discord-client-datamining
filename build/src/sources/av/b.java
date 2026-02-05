@@ -1,67 +1,36 @@
 package av;
 
-import java.util.ArrayList;
+import cv.a;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface b {
+public final class b implements qu.b, cv.a {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        private static List a(b bVar, Object obj) {
-            List<Object> list;
-            if (obj instanceof List) {
-                list = (List) obj;
-            } else {
-                list = null;
-            }
-            if (list != null) {
-                ArrayList arrayList = new ArrayList();
-                for (Object obj2 : list) {
-                    CollectionsKt.B(arrayList, a(bVar, obj2));
-                }
-                return arrayList;
-            }
-            return CollectionsKt.e(b(bVar, obj));
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f6004a = new b();
 
-        private static String b(b bVar, Object obj) {
-            if (obj instanceof Number) {
-                Number number = (Number) obj;
-                if (number.doubleValue() == number.intValue()) {
-                    return String.valueOf(number.intValue());
-                }
-            }
-            return sv.a.h(obj);
-        }
+    private b() {
+    }
 
-        private static String c(b bVar, Object obj) {
-            List<Object> list;
-            if (obj instanceof List) {
-                list = (List) obj;
-            } else {
-                list = null;
-            }
-            if (list != null) {
-                ArrayList arrayList = new ArrayList();
-                for (Object obj2 : list) {
-                    CollectionsKt.B(arrayList, a(bVar, obj2));
-                }
-                String x02 = CollectionsKt.x0(arrayList, ",", null, null, 0, null, null, 62, null);
-                if (x02 != null) {
-                    return x02;
-                }
-            }
-            return b(bVar, obj);
+    @Override // qu.b
+    /* renamed from: a */
+    public Double f(Object obj, Object obj2) {
+        List b10 = b(obj);
+        if (b10.size() < 2) {
+            b10 = null;
         }
+        if (b10 != null) {
+            Double d10 = (Double) b10.get(1);
+            Double d11 = (Double) CollectionsKt.o0(b10);
+            if (d11 != null && d10 != null && !Intrinsics.areEqual(d10, 0.0d)) {
+                return Double.valueOf(d11.doubleValue() / d10.doubleValue());
+            }
+        }
+        return null;
+    }
 
-        public static List d(b bVar, Object obj) {
-            List<Object> c10 = sv.a.c(obj);
-            ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
-            for (Object obj2 : c10) {
-                arrayList.add(c(bVar, obj2));
-            }
-            return arrayList;
-        }
+    public List b(Object obj) {
+        return a.C0279a.c(this, obj);
     }
 }

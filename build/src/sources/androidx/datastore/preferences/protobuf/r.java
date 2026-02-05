@@ -3,14 +3,14 @@ package androidx.datastore.preferences.protobuf;
 abstract class r {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final p f3765a = new q();
+    private static final p f3877a = new q();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final p f3766b = c();
+    private static final p f3878b = c();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static p a() {
-        p pVar = f3766b;
+        p pVar = f3878b;
         if (pVar != null) {
             return pVar;
         }
@@ -19,7 +19,7 @@ abstract class r {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static p b() {
-        return f3765a;
+        return f3877a;
     }
 
     private static p c() {

@@ -36,6 +36,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.CONNECTED_BUTTON = var4;
     var4 = 'voice controls';
     var1.VOICE_CONTROLS = var4;
+    var4 = 'header button';
+    var1.HEADER_BUTTON = var4;
     var4 = 3;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
@@ -43,15 +45,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/voice_panel/native/controls/trackVoicePanelTabOpened.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0, arg1, arg2() {
-        _fun111492: for (var _fun111492_ip = 0;;) switch (_fun111492_ip) {
+        _fun111577: for (var _fun111577_ip = 0;;) switch (_fun111577_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot2;
                 var0 = var2.hasUnread;
                 var5 = var0.bind(var2)(var3);
                 if (var5) {
-                    _fun111492_ip = 45;
-                    continue _fun111492
+                    _fun111577_ip = 45;
+                    continue _fun111577
                 }
             case 24:
                 var2 = _closure1_slot2;

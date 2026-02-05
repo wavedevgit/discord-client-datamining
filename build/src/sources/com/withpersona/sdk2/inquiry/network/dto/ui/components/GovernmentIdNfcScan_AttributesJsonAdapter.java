@@ -60,7 +60,7 @@ public final class GovernmentIdNfcScan_AttributesJsonAdapter extends h {
     @NotNull
     public GovernmentIdNfcScan.Attributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         JsonLogicBoolean jsonLogicBoolean = null;
         JsonLogicBoolean jsonLogicBoolean2 = null;
         String str = null;
@@ -86,7 +86,7 @@ public final class GovernmentIdNfcScan_AttributesJsonAdapter extends h {
         String str19 = null;
         String str20 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -165,7 +165,7 @@ public final class GovernmentIdNfcScan_AttributesJsonAdapter extends h {
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new GovernmentIdNfcScan.Attributes(jsonLogicBoolean, jsonLogicBoolean2, str, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11, list, str12, str13, str14, str15, str16, str17, bool, str18, str19, str20);
     }
 
@@ -173,54 +173,54 @@ public final class GovernmentIdNfcScan_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, GovernmentIdNfcScan.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.l();
-            writer.A0(ViewProps.HIDDEN);
+            writer.k();
+            writer.W(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
-            writer.A0("disabled");
+            writer.W("disabled");
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getDisabled());
-            writer.A0("documentNumberLabel");
+            writer.W("documentNumberLabel");
             this.nullableStringAdapter.toJson(writer, attributes.getDocumentNumberLabel());
-            writer.A0("prefillCardAccessNumber");
+            writer.W("prefillCardAccessNumber");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillCardAccessNumber());
-            writer.A0("prefillDocumentNumber");
+            writer.W("prefillDocumentNumber");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillDocumentNumber());
-            writer.A0("dateOfBirthLabel");
+            writer.W("dateOfBirthLabel");
             this.nullableStringAdapter.toJson(writer, attributes.getDateOfBirthLabel());
-            writer.A0("prefillDateOfBirth");
+            writer.W("prefillDateOfBirth");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillDateOfBirth());
-            writer.A0("cardAccessNumberLabel");
+            writer.W("cardAccessNumberLabel");
             this.nullableStringAdapter.toJson(writer, attributes.getCardAccessNumberLabel());
-            writer.A0("expirationDateLabel");
+            writer.W("expirationDateLabel");
             this.nullableStringAdapter.toJson(writer, attributes.getExpirationDateLabel());
-            writer.A0("prefillExpirationDate");
+            writer.W("prefillExpirationDate");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillExpirationDate());
-            writer.A0("launchButtonText");
+            writer.W("launchButtonText");
             this.nullableStringAdapter.toJson(writer, attributes.getLaunchButtonText());
-            writer.A0("scanDocumentPrompt");
+            writer.W("scanDocumentPrompt");
             this.nullableStringAdapter.toJson(writer, attributes.getScanDocumentPrompt());
-            writer.A0("scanDocumentSuccess");
+            writer.W("scanDocumentSuccess");
             this.nullableStringAdapter.toJson(writer, attributes.getScanDocumentSuccess());
-            writer.A0("enabledDataGroups");
+            writer.W("enabledDataGroups");
             this.nullableListOfDataGroupTypesAdapter.toJson(writer, attributes.getEnabledDataGroups());
-            writer.A0("authenticating");
+            writer.W("authenticating");
             this.nullableStringAdapter.toJson(writer, attributes.getAuthenticating());
-            writer.A0("reading");
+            writer.W("reading");
             this.nullableStringAdapter.toJson(writer, attributes.getReading());
-            writer.A0("requiredText");
+            writer.W("requiredText");
             this.nullableStringAdapter.toJson(writer, attributes.getRequiredText());
-            writer.A0("scanDocumentError");
+            writer.W("scanDocumentError");
             this.nullableStringAdapter.toJson(writer, attributes.getScanDocumentError());
-            writer.A0("enableNfcPrompt");
+            writer.W("enableNfcPrompt");
             this.nullableStringAdapter.toJson(writer, attributes.getEnableNfcPrompt());
-            writer.A0("authenticationErrorPrompt");
+            writer.W("authenticationErrorPrompt");
             this.nullableStringAdapter.toJson(writer, attributes.getAuthenticationErrorPrompt());
-            writer.A0("hidePrefilledInputs");
+            writer.W("hidePrefilledInputs");
             this.nullableBooleanAdapter.toJson(writer, attributes.getHidePrefilledInputs());
-            writer.A0("connectionLostPrompt");
+            writer.W("connectionLostPrompt");
             this.nullableStringAdapter.toJson(writer, attributes.getConnectionLostPrompt());
-            writer.A0("unsupportedDocumentType");
+            writer.W("unsupportedDocumentType");
             this.nullableStringAdapter.toJson(writer, attributes.getUnsupportedDocumentType());
-            writer.A0("retryError");
+            writer.W("retryError");
             this.nullableStringAdapter.toJson(writer, attributes.getRetryError());
             writer.E();
             return;

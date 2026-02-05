@@ -18,8 +18,8 @@ import kotlin.jvm.internal.StringCompanionObject;
 import kotlin.text.Charsets;
 import kotlin.text.StringsKt;
 import org.jetbrains.annotations.NotNull;
-import wr.c;
-import wr.r;
+import zr.c;
+import zr.r;
 @Metadata(d1 = {"\u0000\u0018\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a\b\u0010\u0000\u001a\u00020\u0001H\u0000\u001a\b\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0010\u0010\u0004\u001a\u00020\u00012\u0006\u0010\u0005\u001a\u00020\u0006H\u0000\u001a\b\u0010\u0007\u001a\u00020\u0001H\u0000\u001a\b\u0010\b\u001a\u00020\u0001H\u0000¨\u0006\t"}, d2 = {"getSocFromProcCpuInfo", "", "getNumCpuCores", "", "ramSize", "context", "Landroid/content/Context;", "maxCpuFreq", "socName", "device_release"}, k = 2, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nDeviceHardwareInfo.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DeviceHardwareInfo.kt\ncom/discord/device/utils/DeviceHardwareInfoKt\n+ 2 ReadWrite.kt\nkotlin/io/TextStreamsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,72:1\n57#2:73\n1#3:74\n1#3:75\n*S KotlinDebug\n*F\n+ 1 DeviceHardwareInfo.kt\ncom/discord/device/utils/DeviceHardwareInfoKt\n*L\n10#1:73\n10#1:74\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -78,7 +78,7 @@ public final class DeviceHardwareInfoKt {
                 if (j10 > j11) {
                     j11 = j10;
                 }
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
                 c.a(bufferedReader, null);
             } catch (Exception unused) {
             }

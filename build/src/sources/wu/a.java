@@ -1,57 +1,64 @@
 package wu;
 
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.text.StringsKt;
+import zu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a {
+public final class a implements qu.b, zu.d {
 
-    /* renamed from: wu.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0716a {
-        private static Object a(a aVar, List list) {
-            if (sv.a.g(list)) {
-                return Double.valueOf(0.0d);
-            }
-            if (list.isEmpty()) {
-                return "";
-            }
-            return b(aVar, list);
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f53314a = new a();
 
-        private static Object b(a aVar, List list) {
-            List list2;
-            if (list.size() == 1 && !(CollectionsKt.firstOrNull(list) instanceof Boolean)) {
-                list2 = list;
-            } else {
-                list2 = null;
-            }
-            if (list2 == null) {
-                return null;
-            }
-            return aVar.a(CollectionsKt.firstOrNull(list));
-        }
-
-        public static Object c(a aVar, Object obj) {
-            if (obj instanceof Number) {
-                return Double.valueOf(((Number) obj).doubleValue());
-            }
-            if (obj instanceof String) {
-                Double p10 = StringsKt.p((String) obj);
-                if (p10 != null) {
-                    return p10;
-                }
-            } else if (obj instanceof List) {
-                Object a10 = a(aVar, (List) obj);
-                if (a10 != null) {
-                    return a10;
-                }
-            } else if (obj instanceof Boolean) {
-                return Double.valueOf(sv.b.a(((Boolean) obj).booleanValue()));
-            }
-            return obj;
-        }
+    private a() {
     }
 
-    Object a(Object obj);
+    public boolean a(Object obj) {
+        return d.a.a(this, obj);
+    }
+
+    @Override // qu.b
+    public Object f(Object obj, Object obj2) {
+        Object obj3;
+        List c10 = vv.a.c(obj);
+        List<Object> list = c10;
+        boolean z10 = list instanceof Collection;
+        if (!z10 || !list.isEmpty()) {
+            for (Object obj4 : list) {
+                if (!(obj4 instanceof Boolean)) {
+                    Iterator it = list.iterator();
+                    while (true) {
+                        if (it.hasNext()) {
+                            obj3 = it.next();
+                            if (!f53314a.a(obj3)) {
+                                break;
+                            }
+                        } else {
+                            obj3 = null;
+                            break;
+                        }
+                    }
+                    if (obj3 == null) {
+                        return CollectionsKt.z0(c10);
+                    }
+                    return obj3;
+                }
+            }
+        }
+        boolean z11 = true;
+        if (!z10 || !list.isEmpty()) {
+            Iterator it2 = list.iterator();
+            while (true) {
+                if (!it2.hasNext()) {
+                    break;
+                }
+                if (!f53314a.a(it2.next())) {
+                    z11 = false;
+                    break;
+                }
+            }
+        }
+        return Boolean.valueOf(z11);
+    }
 }

@@ -8,29 +8,29 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public final class y implements Sequence {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Sequence f35372a;
+    private final Sequence f34896a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function1 f35373b;
+    private final Function1 f34897b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements Iterator, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Iterator f35374d;
+        private final Iterator f34898d;
 
         a() {
-            this.f35374d = y.this.f35372a.iterator();
+            this.f34898d = y.this.f34896a.iterator();
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            return this.f35374d.hasNext();
+            return this.f34898d.hasNext();
         }
 
         @Override // java.util.Iterator
         public Object next() {
-            return y.this.f35373b.invoke(this.f35374d.next());
+            return y.this.f34897b.invoke(this.f34898d.next());
         }
 
         @Override // java.util.Iterator
@@ -42,13 +42,13 @@ public final class y implements Sequence {
     public y(Sequence sequence, Function1 transformer) {
         Intrinsics.checkNotNullParameter(sequence, "sequence");
         Intrinsics.checkNotNullParameter(transformer, "transformer");
-        this.f35372a = sequence;
-        this.f35373b = transformer;
+        this.f34896a = sequence;
+        this.f34897b = transformer;
     }
 
     public final Sequence d(Function1 iterator) {
         Intrinsics.checkNotNullParameter(iterator, "iterator");
-        return new g(this.f35372a, this.f35373b, iterator);
+        return new g(this.f34896a, this.f34897b, iterator);
     }
 
     @Override // kotlin.sequences.Sequence

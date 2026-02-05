@@ -1,33 +1,35 @@
 package ei;
 
-import android.app.PendingIntent;
-import android.os.Bundle;
-import com.discord.js_watchdog.SharedPreferencesKey;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class a {
-    public static a j(Bundle bundle) {
-        return new b(bundle.getInt(SharedPreferencesKey.SESSION_ID), bundle.getInt("status"), bundle.getInt("error_code"), bundle.getLong("bytes_downloaded"), bundle.getLong("total_bytes_to_download"), bundle.getStringArrayList("module_names"), bundle.getStringArrayList("languages"), (PendingIntent) bundle.getParcelable("user_confirmation_intent"), bundle.getParcelableArrayList("split_file_intents"));
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final Map f21594a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final Map f21595b;
+
+    static {
+        HashMap hashMap = new HashMap();
+        f21594a = hashMap;
+        HashMap hashMap2 = new HashMap();
+        f21595b = hashMap2;
+        hashMap.put(-1, "The Play Store app is either not installed or not the official version.");
+        hashMap.put(-2, "Call first requestReviewFlow to get the ReviewInfo.");
+        hashMap.put(-100, "Retry with an exponential backoff. Consider filing a bug if fails consistently.");
+        hashMap2.put(-1, "PLAY_STORE_NOT_FOUND");
+        hashMap2.put(-2, "INVALID_REQUEST");
+        hashMap2.put(-100, "INTERNAL_ERROR");
     }
 
-    public abstract long a();
-
-    public abstract int b();
-
-    public abstract PendingIntent c();
-
-    public abstract int d();
-
-    public abstract int e();
-
-    public abstract long f();
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public abstract List g();
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public abstract List h();
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public abstract List i();
+    public static String a(int i10) {
+        Map map = f21594a;
+        Integer valueOf = Integer.valueOf(i10);
+        if (!map.containsKey(valueOf)) {
+            return "";
+        }
+        return ((String) map.get(valueOf)) + " (https://developer.android.com/reference/com/google/android/play/core/review/model/ReviewErrorCode.html#" + ((String) f21595b.get(valueOf)) + ")";
+    }
 }

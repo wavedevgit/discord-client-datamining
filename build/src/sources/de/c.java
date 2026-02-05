@@ -3,13 +3,13 @@ package de;
 public final class c implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f20538a;
+    public final String f20754a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f20539b;
+    public final int f20755b;
 
     public c(String str, int i10) {
-        this.f20538a = str;
-        this.f20539b = i10;
+        this.f20754a = str;
+        this.f20755b = i10;
     }
 }

@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 abstract class d4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Pattern f15337a = Pattern.compile("[0-9]+-(NAM|LFH)\\.dat");
+    private static final Pattern f15731a = Pattern.compile("[0-9]+-(NAM|LFH)\\.dat");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static List a(File file, File file2) {
@@ -20,7 +20,7 @@ abstract class d4 {
             @Override // java.io.FilenameFilter
             public final boolean accept(File file3, String str) {
                 boolean matches;
-                matches = d4.f15337a.matcher(str).matches();
+                matches = d4.f15731a.matcher(str).matches();
                 return matches;
             }
         });

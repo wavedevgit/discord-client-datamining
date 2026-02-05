@@ -57,7 +57,7 @@ public final class AttachmentMediaMosaicContainerView extends ConstraintLayout {
         if (function3 != null) {
             function3.invoke(Integer.valueOf(attachmentMediaMosaicContainerView.getAttachmentIndex(item)), item, viewHolder);
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -67,7 +67,7 @@ public final class AttachmentMediaMosaicContainerView extends ConstraintLayout {
         if (function1 != null) {
             function1.invoke(Integer.valueOf(attachmentMediaMosaicContainerView.getAttachmentIndex(item)));
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -77,7 +77,7 @@ public final class AttachmentMediaMosaicContainerView extends ConstraintLayout {
         if (function0 != null) {
             function0.invoke();
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -86,7 +86,7 @@ public final class AttachmentMediaMosaicContainerView extends ConstraintLayout {
         if (function1 != null) {
             function1.invoke(Boolean.valueOf(z10));
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     private final int getAttachmentIndex(MessageAttachmentAccessory messageAttachmentAccessory) {

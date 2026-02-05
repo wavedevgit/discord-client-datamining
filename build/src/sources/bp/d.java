@@ -1,18 +1,28 @@
 package bp;
+
+import android.content.Context;
+import zq.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d {
+public final class d implements zq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f6662a = new d();
+    private final h f7095a;
 
-    private d() {
+    public d(h hVar) {
+        this.f7095a = hVar;
     }
 
-    public final Class a() {
-        try {
-            return Class.forName("com.withpersona.sdk2.inquiry.nfc.impl.NfcReaderActivity");
-        } catch (ClassNotFoundException unused) {
-            return null;
-        }
+    public static d a(h hVar) {
+        return new d(hVar);
+    }
+
+    public static b c(Context context) {
+        return new b(context);
+    }
+
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public b get() {
+        return c((Context) this.f7095a.get());
     }
 }

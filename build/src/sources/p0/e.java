@@ -3,11 +3,11 @@ package p0;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int[] f44831a = {2130969231, 2130969750};
+    public static int[] f44761a = {2130969231, 2130969750};
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f44832b = 0;
+    public static int f44762b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    public static int f44833c = 1;
+    public static int f44763c = 1;
 }

@@ -40,18 +40,18 @@ public final class Branding_AttributesJsonAdapter extends h {
     @NotNull
     public Branding.Attributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         Boolean bool = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 bool = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new Branding.Attributes(bool);
     }
 
@@ -59,8 +59,8 @@ public final class Branding_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, Branding.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.l();
-            writer.A0("hideLogo");
+            writer.k();
+            writer.W("hideLogo");
             this.nullableBooleanAdapter.toJson(writer, attributes.getHideLogo());
             writer.E();
             return;

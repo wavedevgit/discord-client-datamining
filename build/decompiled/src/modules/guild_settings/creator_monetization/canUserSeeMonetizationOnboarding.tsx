@@ -97,4 +97,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canUserSeeMonetizationOnboarding = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 5632, 5636, 5633, 3084, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 5636, 5640, 5637, 3084, 2]);

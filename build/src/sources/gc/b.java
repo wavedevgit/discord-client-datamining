@@ -5,17 +5,17 @@ import java.util.Map;
 final class b extends f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final jc.a f25904a;
+    private final jc.a f24603a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f25905b;
+    private final Map f24604b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(jc.a aVar, Map map) {
         if (aVar != null) {
-            this.f25904a = aVar;
+            this.f24603a = aVar;
             if (map != null) {
-                this.f25905b = map;
+                this.f24604b = map;
                 return;
             }
             throw new NullPointerException("Null values");
@@ -25,7 +25,7 @@ final class b extends f {
 
     @Override // gc.f
     jc.a e() {
-        return this.f25904a;
+        return this.f24603a;
     }
 
     public boolean equals(Object obj) {
@@ -34,7 +34,7 @@ final class b extends f {
         }
         if (obj instanceof f) {
             f fVar = (f) obj;
-            if (this.f25904a.equals(fVar.e()) && this.f25905b.equals(fVar.h())) {
+            if (this.f24603a.equals(fVar.e()) && this.f24604b.equals(fVar.h())) {
                 return true;
             }
         }
@@ -43,14 +43,14 @@ final class b extends f {
 
     @Override // gc.f
     Map h() {
-        return this.f25905b;
+        return this.f24604b;
     }
 
     public int hashCode() {
-        return ((this.f25904a.hashCode() ^ 1000003) * 1000003) ^ this.f25905b.hashCode();
+        return ((this.f24603a.hashCode() ^ 1000003) * 1000003) ^ this.f24604b.hashCode();
     }
 
     public String toString() {
-        return "SchedulerConfig{clock=" + this.f25904a + ", values=" + this.f25905b + "}";
+        return "SchedulerConfig{clock=" + this.f24603a + ", values=" + this.f24604b + "}";
     }
 }

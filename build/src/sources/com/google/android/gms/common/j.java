@@ -6,28 +6,29 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageInstaller;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.UserManager;
 import android.util.Log;
-import gf.v0;
+import gf.t0;
 import java.util.concurrent.atomic.AtomicBoolean;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final int f13418a = 12451000;
+    public static final int f13813a = 12451000;
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f13420c = false;
+    public static boolean f13815c = false;
 
     /* renamed from: d  reason: collision with root package name */
-    static boolean f13421d = false;
+    public static boolean f13816d = false;
 
     /* renamed from: b  reason: collision with root package name */
-    static final AtomicBoolean f13419b = new AtomicBoolean();
+    static final AtomicBoolean f13814b = new AtomicBoolean();
 
     /* renamed from: e  reason: collision with root package name */
-    private static final AtomicBoolean f13422e = new AtomicBoolean();
+    private static final AtomicBoolean f13817e = new AtomicBoolean();
 
     public static int a(Context context) {
         try {
@@ -39,7 +40,7 @@ public abstract class j {
     }
 
     public static String b(int i10) {
-        return b.g(i10);
+        return b.i(i10);
     }
 
     public static Resources c(Context context) {
@@ -51,28 +52,35 @@ public abstract class j {
     }
 
     public static boolean d(Context context) {
+        int i10;
         try {
-            if (!f13421d) {
+            if (!f13816d) {
                 try {
-                    PackageInfo e10 = pf.c.a(context).e("com.google.android.gms", 64);
-                    k.a(context);
-                    if (e10 != null && !k.d(e10, false) && k.d(e10, true)) {
-                        f13420c = true;
+                    pf.b a10 = pf.c.a(context);
+                    if (Build.VERSION.SDK_INT >= 28) {
+                        i10 = 134217792;
                     } else {
-                        f13420c = false;
+                        i10 = 64;
                     }
-                    f13421d = true;
+                    PackageInfo e10 = a10.e("com.google.android.gms", i10);
+                    k.a(context);
+                    if (e10 != null && !k.c(e10, false) && k.c(e10, true)) {
+                        f13815c = true;
+                    } else {
+                        f13815c = false;
+                    }
+                    f13816d = true;
                 } catch (PackageManager.NameNotFoundException e11) {
                     Log.w("GooglePlayServicesUtil", "Cannot find Google Play services package name.", e11);
-                    f13421d = true;
+                    f13816d = true;
                 }
             }
-            if (!f13420c && com.google.android.gms.common.util.g.b()) {
+            if (!f13815c && com.google.android.gms.common.util.g.b()) {
                 return false;
             }
             return true;
         } catch (Throwable th2) {
-            f13421d = true;
+            f13816d = true;
             throw th2;
         }
     }
@@ -80,23 +88,25 @@ public abstract class j {
     public static int e(Context context, int i10) {
         boolean z10;
         boolean z11;
+        int i11;
         PackageInfo packageInfo;
+        int i12;
         try {
-            context.getResources().getString(l.f13425a);
+            context.getResources().getString(l.f13820a);
         } catch (Throwable unused) {
             Log.e("GooglePlayServicesUtil", "The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.");
         }
-        if (!"com.google.android.gms".equals(context.getPackageName()) && !f13422e.get()) {
-            int a10 = v0.a(context);
+        if (!"com.google.android.gms".equals(context.getPackageName()) && !f13817e.get()) {
+            int a10 = t0.a(context);
             if (a10 != 0) {
-                if (a10 != f13418a) {
+                if (a10 != f13813a) {
                     throw new GooglePlayServicesIncorrectManifestValueException(a10);
                 }
             } else {
                 throw new GooglePlayServicesMissingManifestValueException();
             }
         }
-        if (!com.google.android.gms.common.util.g.d(context) && !com.google.android.gms.common.util.g.f(context)) {
+        if (!com.google.android.gms.common.util.g.d(context) && !com.google.android.gms.common.util.g.g(context)) {
             z10 = true;
         } else {
             z10 = false;
@@ -111,7 +121,12 @@ public abstract class j {
         PackageManager packageManager = context.getPackageManager();
         if (z10) {
             try {
-                packageInfo = packageManager.getPackageInfo("com.android.vending", 8256);
+                if (Build.VERSION.SDK_INT >= 28) {
+                    i11 = 134225984;
+                } else {
+                    i11 = 8256;
+                }
+                packageInfo = packageManager.getPackageInfo("com.android.vending", i11);
             } catch (PackageManager.NameNotFoundException unused2) {
                 Log.w("GooglePlayServicesUtil", String.valueOf(packageName).concat(" requires the Google Play Store, but it is missing."));
             }
@@ -119,21 +134,34 @@ public abstract class j {
             packageInfo = null;
         }
         try {
-            PackageInfo packageInfo2 = packageManager.getPackageInfo("com.google.android.gms", 64);
+            if (Build.VERSION.SDK_INT >= 28) {
+                i12 = 134217792;
+            } else {
+                i12 = 64;
+            }
+            PackageInfo packageInfo2 = packageManager.getPackageInfo("com.google.android.gms", i12);
             k.a(context);
-            if (!k.d(packageInfo2, true)) {
+            if (!k.c(packageInfo2, true)) {
                 Log.w("GooglePlayServicesUtil", String.valueOf(packageName).concat(" requires Google Play services, but their signature is invalid."));
             } else {
                 if (z10) {
                     gf.q.l(packageInfo);
-                    if (!k.d(packageInfo, true)) {
+                    if (!k.c(packageInfo, true)) {
                         Log.w("GooglePlayServicesUtil", String.valueOf(packageName).concat(" requires Google Play Store, but its signature is invalid."));
                     }
                 }
                 if (z10 && packageInfo != null && !packageInfo.signatures[0].equals(packageInfo2.signatures[0])) {
                     Log.w("GooglePlayServicesUtil", String.valueOf(packageName).concat(" requires Google Play Store, but its signature doesn't match that of Google Play services."));
                 } else if (com.google.android.gms.common.util.p.a(packageInfo2.versionCode) < com.google.android.gms.common.util.p.a(i10)) {
-                    Log.w("GooglePlayServicesUtil", "Google Play services out of date for " + packageName + ".  Requires " + i10 + " but found " + packageInfo2.versionCode);
+                    int i13 = packageInfo2.versionCode;
+                    StringBuilder sb2 = new StringBuilder(String.valueOf(packageName).length() + 49 + String.valueOf(i10).length() + 11 + String.valueOf(i13).length());
+                    sb2.append("Google Play services out of date for ");
+                    sb2.append(packageName);
+                    sb2.append(".  Requires ");
+                    sb2.append(i10);
+                    sb2.append(" but found ");
+                    sb2.append(i13);
+                    Log.w("GooglePlayServicesUtil", sb2.toString());
                     return 2;
                 } else {
                     ApplicationInfo applicationInfo = packageInfo2.applicationInfo;

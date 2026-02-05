@@ -12,7 +12,7 @@ import tc.y;
 public class d implements k {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final p f7093d = new p() { // from class: cd.c
+    public static final p f7511d = new p() { // from class: cd.c
         @Override // tc.p
         public final k[] b() {
             return d.b();
@@ -20,13 +20,13 @@ public class d implements k {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private m f7094a;
+    private m f7512a;
 
     /* renamed from: b  reason: collision with root package name */
-    private i f7095b;
+    private i f7513b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f7096c;
+    private boolean f7514c;
 
     public static /* synthetic */ k[] b() {
         return new k[]{new d()};
@@ -39,16 +39,16 @@ public class d implements k {
 
     private boolean g(l lVar) {
         f fVar = new f();
-        if (fVar.a(lVar, true) && (fVar.f7103b & 2) == 2) {
-            int min = Math.min(fVar.f7110i, 8);
+        if (fVar.a(lVar, true) && (fVar.f7521b & 2) == 2) {
+            int min = Math.min(fVar.f7528i, 8);
             h0 h0Var = new h0(min);
             lVar.n(h0Var.e(), 0, min);
             if (b.p(e(h0Var))) {
-                this.f7095b = new b();
+                this.f7513b = new b();
             } else if (j.r(e(h0Var))) {
-                this.f7095b = new j();
+                this.f7513b = new j();
             } else if (h.o(e(h0Var))) {
-                this.f7095b = new h();
+                this.f7513b = new h();
             }
             return true;
         }
@@ -57,7 +57,7 @@ public class d implements k {
 
     @Override // tc.k
     public void a(long j10, long j11) {
-        i iVar = this.f7095b;
+        i iVar = this.f7513b;
         if (iVar != null) {
             iVar.m(j10, j11);
         }
@@ -65,26 +65,26 @@ public class d implements k {
 
     @Override // tc.k
     public void c(m mVar) {
-        this.f7094a = mVar;
+        this.f7512a = mVar;
     }
 
     @Override // tc.k
     public int d(l lVar, y yVar) {
-        ne.a.i(this.f7094a);
-        if (this.f7095b == null) {
+        ne.a.i(this.f7512a);
+        if (this.f7513b == null) {
             if (g(lVar)) {
                 lVar.e();
             } else {
                 throw l0.a("Failed to determine bitstream type", null);
             }
         }
-        if (!this.f7096c) {
-            b0 c10 = this.f7094a.c(0, 1);
-            this.f7094a.s();
-            this.f7095b.d(this.f7094a, c10);
-            this.f7096c = true;
+        if (!this.f7514c) {
+            b0 c10 = this.f7512a.c(0, 1);
+            this.f7512a.s();
+            this.f7513b.d(this.f7512a, c10);
+            this.f7514c = true;
         }
-        return this.f7095b.g(lVar, yVar);
+        return this.f7513b.g(lVar, yVar);
     }
 
     @Override // tc.k

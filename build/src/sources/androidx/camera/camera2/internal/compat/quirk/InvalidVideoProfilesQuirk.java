@@ -9,13 +9,13 @@ import java.util.Locale;
 public class InvalidVideoProfilesQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f1926a = Arrays.asList("pixel 4", "pixel 4a", "pixel 4a (5g)", "pixel 4 xl", "pixel 5", "pixel 5a", "pixel 6", "pixel 6a", "pixel 6 pro", "pixel 7", "pixel 7 pro");
+    private static final List f2038a = Arrays.asList("pixel 4", "pixel 4a", "pixel 4a (5g)", "pixel 4 xl", "pixel 5", "pixel 5a", "pixel 6", "pixel 6a", "pixel 6 pro", "pixel 7", "pixel 7 pro");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final List f1927b = Arrays.asList("cph2417", "cph2451");
+    private static final List f2039b = Arrays.asList("cph2417", "cph2451");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final List f1928c = Arrays.asList("cph2437", "cph2525", "pht110");
+    private static final List f2040c = Arrays.asList("cph2437", "cph2525", "pht110");
 
     private static boolean c() {
         if (Build.VERSION.SDK_INT == 33) {
@@ -32,7 +32,7 @@ public class InvalidVideoProfilesQuirk implements y1 {
     }
 
     private static boolean e() {
-        return f1927b.contains(Build.MODEL.toLowerCase(Locale.ROOT));
+        return f2039b.contains(Build.MODEL.toLowerCase(Locale.ROOT));
     }
 
     private static boolean f() {
@@ -43,7 +43,7 @@ public class InvalidVideoProfilesQuirk implements y1 {
     }
 
     private static boolean g() {
-        return f1928c.contains(Build.MODEL.toLowerCase(Locale.ROOT));
+        return f2040c.contains(Build.MODEL.toLowerCase(Locale.ROOT));
     }
 
     private static boolean h() {
@@ -61,7 +61,7 @@ public class InvalidVideoProfilesQuirk implements y1 {
     }
 
     private static boolean j() {
-        return f1926a.contains(Build.MODEL.toLowerCase(Locale.ROOT));
+        return f2038a.contains(Build.MODEL.toLowerCase(Locale.ROOT));
     }
 
     private static boolean k() {

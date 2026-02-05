@@ -12,63 +12,63 @@ public abstract class j2 {
     static final class a extends CameraCaptureSession.StateCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f46823a = new ArrayList();
+        private final List f46887a = new ArrayList();
 
         a(List list) {
             Iterator it = list.iterator();
             while (it.hasNext()) {
                 CameraCaptureSession.StateCallback stateCallback = (CameraCaptureSession.StateCallback) it.next();
                 if (!(stateCallback instanceof b)) {
-                    this.f46823a.add(stateCallback);
+                    this.f46887a.add(stateCallback);
                 }
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onActive(CameraCaptureSession cameraCaptureSession) {
-            for (CameraCaptureSession.StateCallback stateCallback : this.f46823a) {
+            for (CameraCaptureSession.StateCallback stateCallback : this.f46887a) {
                 stateCallback.onActive(cameraCaptureSession);
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onCaptureQueueEmpty(CameraCaptureSession cameraCaptureSession) {
-            for (CameraCaptureSession.StateCallback stateCallback : this.f46823a) {
+            for (CameraCaptureSession.StateCallback stateCallback : this.f46887a) {
                 r.d.a(stateCallback, cameraCaptureSession);
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onClosed(CameraCaptureSession cameraCaptureSession) {
-            for (CameraCaptureSession.StateCallback stateCallback : this.f46823a) {
+            for (CameraCaptureSession.StateCallback stateCallback : this.f46887a) {
                 stateCallback.onClosed(cameraCaptureSession);
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onConfigureFailed(CameraCaptureSession cameraCaptureSession) {
-            for (CameraCaptureSession.StateCallback stateCallback : this.f46823a) {
+            for (CameraCaptureSession.StateCallback stateCallback : this.f46887a) {
                 stateCallback.onConfigureFailed(cameraCaptureSession);
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onConfigured(CameraCaptureSession cameraCaptureSession) {
-            for (CameraCaptureSession.StateCallback stateCallback : this.f46823a) {
+            for (CameraCaptureSession.StateCallback stateCallback : this.f46887a) {
                 stateCallback.onConfigured(cameraCaptureSession);
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onReady(CameraCaptureSession cameraCaptureSession) {
-            for (CameraCaptureSession.StateCallback stateCallback : this.f46823a) {
+            for (CameraCaptureSession.StateCallback stateCallback : this.f46887a) {
                 stateCallback.onReady(cameraCaptureSession);
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onSurfacePrepared(CameraCaptureSession cameraCaptureSession, Surface surface) {
-            for (CameraCaptureSession.StateCallback stateCallback : this.f46823a) {
+            for (CameraCaptureSession.StateCallback stateCallback : this.f46887a) {
                 r.b.a(stateCallback, cameraCaptureSession, surface);
             }
         }

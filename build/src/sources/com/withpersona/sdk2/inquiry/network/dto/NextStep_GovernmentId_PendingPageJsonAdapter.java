@@ -40,41 +40,41 @@ public final class NextStep_GovernmentId_PendingPageJsonAdapter extends h {
     @NotNull
     public NextStep.GovernmentId.PendingPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw vm.c.x("title", "title", reader);
+                    throw ym.c.x("title", "title", reader);
                 }
-            } else if (A0 == 1 && (str2 = (String) this.stringAdapter.fromJson(reader)) == null) {
-                throw vm.c.x("description", "description", reader);
+            } else if (W == 1 && (str2 = (String) this.stringAdapter.fromJson(reader)) == null) {
+                throw ym.c.x("description", "description", reader);
             }
         }
-        reader.y();
+        reader.z();
         if (str != null) {
             if (str2 != null) {
                 return new NextStep.GovernmentId.PendingPage(str, str2);
             }
-            throw vm.c.o("description", "description", reader);
+            throw ym.c.o("description", "description", reader);
         }
-        throw vm.c.o("title", "title", reader);
+        throw ym.c.o("title", "title", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.GovernmentId.PendingPage pendingPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (pendingPage != null) {
-            writer.l();
-            writer.A0("title");
+            writer.k();
+            writer.W("title");
             this.stringAdapter.toJson(writer, pendingPage.getTitle());
-            writer.A0("description");
+            writer.W("description");
             this.stringAdapter.toJson(writer, pendingPage.getDescription());
             writer.E();
             return;

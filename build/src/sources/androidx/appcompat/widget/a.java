@@ -14,66 +14,66 @@ import android.view.ViewGroup;
 public abstract class a extends ViewGroup {
 
     /* renamed from: d  reason: collision with root package name */
-    protected final C0020a f1578d;
+    protected final C0021a f1690d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected final Context f1579e;
+    protected final Context f1691e;
 
     /* renamed from: i  reason: collision with root package name */
-    protected ActionMenuView f1580i;
+    protected ActionMenuView f1692i;
 
     /* renamed from: o  reason: collision with root package name */
-    protected c f1581o;
+    protected c f1693o;
 
     /* renamed from: p  reason: collision with root package name */
-    protected int f1582p;
+    protected int f1694p;
 
     /* renamed from: q  reason: collision with root package name */
-    protected androidx.core.view.r0 f1583q;
+    protected androidx.core.view.r0 f1695q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f1584r;
+    private boolean f1696r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f1585s;
+    private boolean f1697s;
 
     /* renamed from: androidx.appcompat.widget.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    protected class C0020a implements androidx.core.view.s0 {
+    protected class C0021a implements androidx.core.view.s0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f1586a = false;
+        private boolean f1698a = false;
 
         /* renamed from: b  reason: collision with root package name */
-        int f1587b;
+        int f1699b;
 
-        protected C0020a() {
+        protected C0021a() {
         }
 
         @Override // androidx.core.view.s0
         public void a(View view) {
-            this.f1586a = true;
+            this.f1698a = true;
         }
 
         @Override // androidx.core.view.s0
         public void b(View view) {
-            if (this.f1586a) {
+            if (this.f1698a) {
                 return;
             }
             a aVar = a.this;
-            aVar.f1583q = null;
-            a.super.setVisibility(this.f1587b);
+            aVar.f1695q = null;
+            a.super.setVisibility(this.f1699b);
         }
 
         @Override // androidx.core.view.s0
         public void c(View view) {
             a.super.setVisibility(0);
-            this.f1586a = false;
+            this.f1698a = false;
         }
 
-        public C0020a d(androidx.core.view.r0 r0Var, int i10) {
-            a.this.f1583q = r0Var;
-            this.f1587b = i10;
+        public C0021a d(androidx.core.view.r0 r0Var, int i10) {
+            a.this.f1695q = r0Var;
+            this.f1699b = i10;
             return this;
         }
     }
@@ -81,12 +81,12 @@ public abstract class a extends ViewGroup {
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f1578d = new C0020a();
+        this.f1690d = new C0021a();
         TypedValue typedValue = new TypedValue();
-        if (context.getTheme().resolveAttribute(f.a.f22872a, typedValue, true) && typedValue.resourceId != 0) {
-            this.f1579e = new ContextThemeWrapper(context, typedValue.resourceId);
+        if (context.getTheme().resolveAttribute(f.a.f21897a, typedValue, true) && typedValue.resourceId != 0) {
+            this.f1691e = new ContextThemeWrapper(context, typedValue.resourceId);
         } else {
-            this.f1579e = context;
+            this.f1691e = context;
         }
     }
 
@@ -118,7 +118,7 @@ public abstract class a extends ViewGroup {
     }
 
     public androidx.core.view.r0 f(int i10, long j10) {
-        androidx.core.view.r0 r0Var = this.f1583q;
+        androidx.core.view.r0 r0Var = this.f1695q;
         if (r0Var != null) {
             r0Var.c();
         }
@@ -128,33 +128,33 @@ public abstract class a extends ViewGroup {
             }
             androidx.core.view.r0 b10 = androidx.core.view.h0.e(this).b(1.0f);
             b10.e(j10);
-            b10.g(this.f1578d.d(b10, i10));
+            b10.g(this.f1690d.d(b10, i10));
             return b10;
         }
         androidx.core.view.r0 b11 = androidx.core.view.h0.e(this).b(0.0f);
         b11.e(j10);
-        b11.g(this.f1578d.d(b11, i10));
+        b11.g(this.f1690d.d(b11, i10));
         return b11;
     }
 
     public int getAnimatedVisibility() {
-        if (this.f1583q != null) {
-            return this.f1578d.f1587b;
+        if (this.f1695q != null) {
+            return this.f1690d.f1699b;
         }
         return getVisibility();
     }
 
     public int getContentHeight() {
-        return this.f1582p;
+        return this.f1694p;
     }
 
     @Override // android.view.View
     protected void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
-        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(null, f.j.f23010a, f.a.f22874c, 0);
-        setContentHeight(obtainStyledAttributes.getLayoutDimension(f.j.f23055j, 0));
+        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(null, f.j.f22035a, f.a.f21899c, 0);
+        setContentHeight(obtainStyledAttributes.getLayoutDimension(f.j.f22080j, 0));
         obtainStyledAttributes.recycle();
-        c cVar = this.f1581o;
+        c cVar = this.f1693o;
         if (cVar != null) {
             cVar.F(configuration);
         }
@@ -164,16 +164,16 @@ public abstract class a extends ViewGroup {
     public boolean onHoverEvent(MotionEvent motionEvent) {
         int actionMasked = motionEvent.getActionMasked();
         if (actionMasked == 9) {
-            this.f1585s = false;
+            this.f1697s = false;
         }
-        if (!this.f1585s) {
+        if (!this.f1697s) {
             boolean onHoverEvent = super.onHoverEvent(motionEvent);
             if (actionMasked == 9 && !onHoverEvent) {
-                this.f1585s = true;
+                this.f1697s = true;
             }
         }
         if (actionMasked == 10 || actionMasked == 3) {
-            this.f1585s = false;
+            this.f1697s = false;
         }
         return true;
     }
@@ -182,16 +182,16 @@ public abstract class a extends ViewGroup {
     public boolean onTouchEvent(MotionEvent motionEvent) {
         int actionMasked = motionEvent.getActionMasked();
         if (actionMasked == 0) {
-            this.f1584r = false;
+            this.f1696r = false;
         }
-        if (!this.f1584r) {
+        if (!this.f1696r) {
             boolean onTouchEvent = super.onTouchEvent(motionEvent);
             if (actionMasked == 0 && !onTouchEvent) {
-                this.f1584r = true;
+                this.f1696r = true;
             }
         }
         if (actionMasked == 1 || actionMasked == 3) {
-            this.f1584r = false;
+            this.f1696r = false;
         }
         return true;
     }
@@ -201,7 +201,7 @@ public abstract class a extends ViewGroup {
     @Override // android.view.View
     public void setVisibility(int i10) {
         if (i10 != getVisibility()) {
-            androidx.core.view.r0 r0Var = this.f1583q;
+            androidx.core.view.r0 r0Var = this.f1695q;
             if (r0Var != null) {
                 r0Var.c();
             }

@@ -3,37 +3,37 @@ package og;
 public final class hc {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f43049a;
+    private final String f42955a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f43050b;
+    private final String f42956b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f43051c;
+    private final String f42957c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f43052d;
+    private final String f42958d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final p0 f43053e;
+    private final p0 f42959e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f43054f;
+    private final String f42960f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Boolean f43055g;
+    private final Boolean f42961g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Boolean f43056h;
+    private final Boolean f42962h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Boolean f43057i;
+    private final Boolean f42963i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Integer f43058j;
+    private final Integer f42964j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Integer f43059k;
+    private final Integer f42965k;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ hc(fc fcVar, gc gcVar) {
@@ -48,71 +48,71 @@ public final class hc {
         Boolean bool3;
         Integer num;
         Integer num2;
-        str = fcVar.f42971a;
-        this.f43049a = str;
-        str2 = fcVar.f42972b;
-        this.f43050b = str2;
-        str3 = fcVar.f42973c;
-        this.f43051c = str3;
-        str4 = fcVar.f42974d;
-        this.f43052d = str4;
-        p0Var = fcVar.f42975e;
-        this.f43053e = p0Var;
-        str5 = fcVar.f42976f;
-        this.f43054f = str5;
-        bool = fcVar.f42977g;
-        this.f43055g = bool;
-        bool2 = fcVar.f42978h;
-        this.f43056h = bool2;
-        bool3 = fcVar.f42979i;
-        this.f43057i = bool3;
-        num = fcVar.f42980j;
-        this.f43058j = num;
-        num2 = fcVar.f42981k;
-        this.f43059k = num2;
+        str = fcVar.f42877a;
+        this.f42955a = str;
+        str2 = fcVar.f42878b;
+        this.f42956b = str2;
+        str3 = fcVar.f42879c;
+        this.f42957c = str3;
+        str4 = fcVar.f42880d;
+        this.f42958d = str4;
+        p0Var = fcVar.f42881e;
+        this.f42959e = p0Var;
+        str5 = fcVar.f42882f;
+        this.f42960f = str5;
+        bool = fcVar.f42883g;
+        this.f42961g = bool;
+        bool2 = fcVar.f42884h;
+        this.f42962h = bool2;
+        bool3 = fcVar.f42885i;
+        this.f42963i = bool3;
+        num = fcVar.f42886j;
+        this.f42964j = num;
+        num2 = fcVar.f42887k;
+        this.f42965k = num2;
     }
 
     public final p0 a() {
-        return this.f43053e;
+        return this.f42959e;
     }
 
     public final Boolean b() {
-        return this.f43055g;
+        return this.f42961g;
     }
 
     public final Boolean c() {
-        return this.f43057i;
+        return this.f42963i;
     }
 
     public final Boolean d() {
-        return this.f43056h;
+        return this.f42962h;
     }
 
     public final Integer e() {
-        return this.f43058j;
+        return this.f42964j;
     }
 
     public final Integer f() {
-        return this.f43059k;
+        return this.f42965k;
     }
 
     public final String g() {
-        return this.f43049a;
+        return this.f42955a;
     }
 
     public final String h() {
-        return this.f43050b;
+        return this.f42956b;
     }
 
     public final String i() {
-        return this.f43054f;
+        return this.f42960f;
     }
 
     public final String j() {
-        return this.f43051c;
+        return this.f42957c;
     }
 
     public final String k() {
-        return this.f43052d;
+        return this.f42958d;
     }
 }

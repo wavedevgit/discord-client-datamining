@@ -7,21 +7,21 @@ import java.util.Set;
 final class g extends w0 {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ i f42984d;
+    final /* synthetic */ i f42890d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(i iVar) {
-        this.f42984d = iVar;
+        this.f42890d = iVar;
     }
 
     @Override // og.w0
     final Map b() {
-        return this.f42984d;
+        return this.f42890d;
     }
 
     @Override // og.w0, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean contains(Object obj) {
-        Set entrySet = this.f42984d.f43067i.entrySet();
+        Set entrySet = this.f42890d.f42973i.entrySet();
         entrySet.getClass();
         try {
             return entrySet.contains(obj);
@@ -32,7 +32,7 @@ final class g extends w0 {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final Iterator iterator() {
-        return new h(this.f42984d);
+        return new h(this.f42890d);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
@@ -42,7 +42,7 @@ final class g extends w0 {
         }
         Map.Entry entry = (Map.Entry) obj;
         entry.getClass();
-        q.p(this.f42984d.f43068o, entry.getKey());
+        q.p(this.f42890d.f42974o, entry.getKey());
         return true;
     }
 }

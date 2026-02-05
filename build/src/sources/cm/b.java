@@ -1,54 +1,86 @@
 package cm;
 
-import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.events.Event;
-import com.facebook.react.uimanager.events.RCTEventEmitter;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
+import com.facebook.react.TurboReactPackage;
+import com.facebook.react.ViewManagerOnDemandReactPackage;
+import com.facebook.react.bridge.NativeModule;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.module.annotations.ReactModule;
+import com.facebook.react.module.model.ReactModuleInfo;
+import com.facebook.react.module.model.ReactModuleInfoProvider;
+import com.facebook.react.turbomodule.core.interfaces.TurboModule;
+import com.facebook.react.uimanager.ViewManager;
+import com.reactnativecommunity.clipboard.ClipboardModule;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b extends Event {
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final a f7323b = new a(null);
-
-    /* renamed from: a  reason: collision with root package name */
-    private final WritableMap f7324a;
+public class b extends TurboReactPackage implements ViewManagerOnDemandReactPackage {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    class a implements ReactModuleInfoProvider {
+        a() {
         }
 
-        private a() {
+        @Override // com.facebook.react.module.model.ReactModuleInfoProvider
+        public Map getReactModuleInfos() {
+            HashMap hashMap = new HashMap();
+            Class cls = new Class[]{ClipboardModule.class}[0];
+            ReactModule reactModule = (ReactModule) cls.getAnnotation(ReactModule.class);
+            hashMap.put(reactModule.name(), new ReactModuleInfo(reactModule.name(), cls.getName(), reactModule.canOverrideExistingModule(), reactModule.needsEagerInit(), reactModule.hasConstants(), reactModule.isCxxModule(), TurboModule.class.isAssignableFrom(cls)));
+            return hashMap;
         }
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public b(int i10, WritableMap mEventData) {
-        super(i10);
-        Intrinsics.checkNotNullParameter(mEventData, "mEventData");
-        this.f7324a = mEventData;
+    @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
+    public List createNativeModules(ReactApplicationContext reactApplicationContext) {
+        ArrayList arrayList = new ArrayList();
+        arrayList.add(new ClipboardModule(reactApplicationContext));
+        return arrayList;
     }
 
-    @Override // com.facebook.react.uimanager.events.Event
-    public boolean canCoalesce() {
-        return false;
+    @Override // com.facebook.react.ViewManagerOnDemandReactPackage
+    public ViewManager createViewManager(ReactApplicationContext reactApplicationContext, String str) {
+        return null;
     }
 
-    @Override // com.facebook.react.uimanager.events.Event
-    public void dispatch(RCTEventEmitter rctEventEmitter) {
-        Intrinsics.checkNotNullParameter(rctEventEmitter, "rctEventEmitter");
-        rctEventEmitter.receiveEvent(getViewTag(), internal_getEventNameCompat(), this.f7324a);
+    @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
+    public List createViewManagers(ReactApplicationContext reactApplicationContext) {
+        return Collections.EMPTY_LIST;
     }
 
-    @Override // com.facebook.react.uimanager.events.Event
-    public short getCoalescingKey() {
-        return (short) 0;
+    @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
+    public NativeModule getModule(String str, ReactApplicationContext reactApplicationContext) {
+        str.getClass();
+        if (!str.equals("RNCClipboard")) {
+            return null;
+        }
+        return new ClipboardModule(reactApplicationContext);
     }
 
-    @Override // com.facebook.react.uimanager.events.Event
-    public String getEventName() {
-        return "topLoadingError";
+    @Override // com.facebook.react.BaseReactPackage
+    public ReactModuleInfoProvider getReactModuleInfoProvider() {
+        try {
+            return (ReactModuleInfoProvider) Class.forName("com.reactnativecommunity.clipboard.ClipboardPackage$$ReactModuleInfoProvider").newInstance();
+        } catch (ClassNotFoundException unused) {
+            return new a();
+        } catch (IllegalAccessException e10) {
+            e = e10;
+            throw new RuntimeException("No ReactModuleInfoProvider for com.reactnativecommunity.clipboard.ClipboardPackage$$ReactModuleInfoProvider", e);
+        } catch (InstantiationException e11) {
+            e = e11;
+            throw new RuntimeException("No ReactModuleInfoProvider for com.reactnativecommunity.clipboard.ClipboardPackage$$ReactModuleInfoProvider", e);
+        }
+    }
+
+    @Override // com.facebook.react.BaseReactPackage
+    protected List getViewManagers(ReactApplicationContext reactApplicationContext) {
+        return null;
+    }
+
+    @Override // com.facebook.react.ViewManagerOnDemandReactPackage
+    public List getViewManagerNames(ReactApplicationContext reactApplicationContext) {
+        return null;
     }
 }

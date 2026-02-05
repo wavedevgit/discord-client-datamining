@@ -10,34 +10,34 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f32107i = new a(null);
+    public static final a f31570i = new a(null);
 
     /* renamed from: j  reason: collision with root package name */
-    public static final d f32108j = new d(null, false, false, false, 15, null);
+    public static final d f31571j = new d(null, false, false, false, 15, null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f32109a;
+    private final n f31572a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f32110b;
+    private final boolean f31573b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f32111c;
+    private final boolean f31574c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f32112d;
+    private final boolean f31575d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f32113e;
+    private final boolean f31576e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final long f32114f;
+    private final long f31577f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final long f32115g;
+    private final long f31578g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Set f32116h;
+    private final Set f31579h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -53,23 +53,23 @@ public final class d {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Uri f32117a;
+        private final Uri f31580a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f32118b;
+        private final boolean f31581b;
 
         public b(Uri uri, boolean z10) {
             Intrinsics.checkNotNullParameter(uri, "uri");
-            this.f32117a = uri;
-            this.f32118b = z10;
+            this.f31580a = uri;
+            this.f31581b = z10;
         }
 
         public final Uri a() {
-            return this.f32117a;
+            return this.f31580a;
         }
 
         public final boolean b() {
-            return this.f32118b;
+            return this.f31581b;
         }
 
         public boolean equals(Object obj) {
@@ -87,14 +87,14 @@ public final class d {
             }
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type androidx.work.Constraints.ContentUriTrigger");
             b bVar = (b) obj;
-            if (Intrinsics.areEqual(this.f32117a, bVar.f32117a) && this.f32118b == bVar.f32118b) {
+            if (Intrinsics.areEqual(this.f31580a, bVar.f31580a) && this.f31581b == bVar.f31581b) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f32117a.hashCode() * 31) + Boolean.hashCode(this.f32118b);
+            return (this.f31580a.hashCode() * 31) + Boolean.hashCode(this.f31581b);
         }
     }
 
@@ -103,23 +103,23 @@ public final class d {
     }
 
     public final long a() {
-        return this.f32115g;
+        return this.f31578g;
     }
 
     public final long b() {
-        return this.f32114f;
+        return this.f31577f;
     }
 
     public final Set c() {
-        return this.f32116h;
+        return this.f31579h;
     }
 
     public final n d() {
-        return this.f32109a;
+        return this.f31572a;
     }
 
     public final boolean e() {
-        if (!this.f32116h.isEmpty()) {
+        if (!this.f31579h.isEmpty()) {
             return true;
         }
         return false;
@@ -133,36 +133,36 @@ public final class d {
             return false;
         }
         d dVar = (d) obj;
-        if (this.f32110b != dVar.f32110b || this.f32111c != dVar.f32111c || this.f32112d != dVar.f32112d || this.f32113e != dVar.f32113e || this.f32114f != dVar.f32114f || this.f32115g != dVar.f32115g || this.f32109a != dVar.f32109a) {
+        if (this.f31573b != dVar.f31573b || this.f31574c != dVar.f31574c || this.f31575d != dVar.f31575d || this.f31576e != dVar.f31576e || this.f31577f != dVar.f31577f || this.f31578g != dVar.f31578g || this.f31572a != dVar.f31572a) {
             return false;
         }
-        return Intrinsics.areEqual(this.f32116h, dVar.f32116h);
+        return Intrinsics.areEqual(this.f31579h, dVar.f31579h);
     }
 
     public final boolean f() {
-        return this.f32112d;
+        return this.f31575d;
     }
 
     public final boolean g() {
-        return this.f32110b;
+        return this.f31573b;
     }
 
     public final boolean h() {
-        return this.f32111c;
+        return this.f31574c;
     }
 
     public int hashCode() {
-        long j10 = this.f32114f;
-        long j11 = this.f32115g;
-        return (((((((((((((this.f32109a.hashCode() * 31) + (this.f32110b ? 1 : 0)) * 31) + (this.f32111c ? 1 : 0)) * 31) + (this.f32112d ? 1 : 0)) * 31) + (this.f32113e ? 1 : 0)) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + this.f32116h.hashCode();
+        long j10 = this.f31577f;
+        long j11 = this.f31578g;
+        return (((((((((((((this.f31572a.hashCode() * 31) + (this.f31573b ? 1 : 0)) * 31) + (this.f31574c ? 1 : 0)) * 31) + (this.f31575d ? 1 : 0)) * 31) + (this.f31576e ? 1 : 0)) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + this.f31579h.hashCode();
     }
 
     public final boolean i() {
-        return this.f32113e;
+        return this.f31576e;
     }
 
     public String toString() {
-        return "Constraints{requiredNetworkType=" + this.f32109a + ", requiresCharging=" + this.f32110b + ", requiresDeviceIdle=" + this.f32111c + ", requiresBatteryNotLow=" + this.f32112d + ", requiresStorageNotLow=" + this.f32113e + ", contentTriggerUpdateDelayMillis=" + this.f32114f + ", contentTriggerMaxDelayMillis=" + this.f32115g + ", contentUriTriggers=" + this.f32116h + ", }";
+        return "Constraints{requiredNetworkType=" + this.f31572a + ", requiresCharging=" + this.f31573b + ", requiresDeviceIdle=" + this.f31574c + ", requiresBatteryNotLow=" + this.f31575d + ", requiresStorageNotLow=" + this.f31576e + ", contentTriggerUpdateDelayMillis=" + this.f31577f + ", contentTriggerMaxDelayMillis=" + this.f31578g + ", contentUriTriggers=" + this.f31579h + ", }";
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
@@ -184,25 +184,25 @@ public final class d {
     public d(n requiredNetworkType, boolean z10, boolean z11, boolean z12, boolean z13, long j10, long j11, Set contentUriTriggers) {
         Intrinsics.checkNotNullParameter(requiredNetworkType, "requiredNetworkType");
         Intrinsics.checkNotNullParameter(contentUriTriggers, "contentUriTriggers");
-        this.f32109a = requiredNetworkType;
-        this.f32110b = z10;
-        this.f32111c = z11;
-        this.f32112d = z12;
-        this.f32113e = z13;
-        this.f32114f = j10;
-        this.f32115g = j11;
-        this.f32116h = contentUriTriggers;
+        this.f31572a = requiredNetworkType;
+        this.f31573b = z10;
+        this.f31574c = z11;
+        this.f31575d = z12;
+        this.f31576e = z13;
+        this.f31577f = j10;
+        this.f31578g = j11;
+        this.f31579h = contentUriTriggers;
     }
 
     public d(d other) {
         Intrinsics.checkNotNullParameter(other, "other");
-        this.f32110b = other.f32110b;
-        this.f32111c = other.f32111c;
-        this.f32109a = other.f32109a;
-        this.f32112d = other.f32112d;
-        this.f32113e = other.f32113e;
-        this.f32116h = other.f32116h;
-        this.f32114f = other.f32114f;
-        this.f32115g = other.f32115g;
+        this.f31573b = other.f31573b;
+        this.f31574c = other.f31574c;
+        this.f31572a = other.f31572a;
+        this.f31575d = other.f31575d;
+        this.f31576e = other.f31576e;
+        this.f31579h = other.f31579h;
+        this.f31577f = other.f31577f;
+        this.f31578g = other.f31578g;
     }
 }

@@ -9,10 +9,10 @@ import w5.c;
 public abstract class l0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f51159a = c.a.a("nm", "c", "w", "o", "lc", "lj", "ml", "hd", "d");
+    private static final c.a f51848a = c.a.a("nm", "c", "w", "o", "lc", "lj", "ml", "hd", "d");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f51160b = c.a.a("n", "v");
+    private static final c.a f51849b = c.a.a("n", "v");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static s5.s a(w5.c cVar, l5.i iVar) {
@@ -28,7 +28,7 @@ public abstract class l0 {
         boolean z10 = false;
         r5.d dVar = null;
         while (cVar.hasNext()) {
-            switch (cVar.B(f51159a)) {
+            switch (cVar.y(f51848a)) {
                 case 0:
                     str = cVar.f1();
                     break;
@@ -54,15 +54,15 @@ public abstract class l0 {
                     z10 = cVar.h();
                     break;
                 case 8:
-                    cVar.u();
+                    cVar.v();
                     while (cVar.hasNext()) {
-                        cVar.r();
+                        cVar.s();
                         String str3 = str2;
                         Object obj2 = str3;
                         while (cVar.hasNext()) {
-                            int B = cVar.B(f51160b);
-                            if (B != 0) {
-                                if (B != 1) {
+                            int y10 = cVar.y(f51849b);
+                            if (y10 != 0) {
+                                if (y10 != 1) {
                                     cVar.E();
                                     cVar.P();
                                 } else {
@@ -73,7 +73,7 @@ public abstract class l0 {
                             }
                             obj2 = obj2;
                         }
-                        cVar.y();
+                        cVar.z();
                         str3.getClass();
                         char c10 = 65535;
                         switch (str3.hashCode()) {
@@ -108,7 +108,7 @@ public abstract class l0 {
                         }
                         str2 = null;
                     }
-                    cVar.s();
+                    cVar.t();
                     if (arrayList.size() == 1) {
                         arrayList.add((r5.b) arrayList.get(0));
                         break;

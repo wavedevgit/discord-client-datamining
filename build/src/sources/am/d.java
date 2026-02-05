@@ -1,37 +1,46 @@
 package am;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.IntentFilter;
-import android.os.Build;
+import com.facebook.react.TurboReactPackage;
+import com.facebook.react.bridge.NativeModule;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.module.model.ReactModuleInfo;
+import com.facebook.react.module.model.ReactModuleInfoProvider;
+import com.reactnative.ivpusic.imagepicker.NativeImageCropPickerSpec;
+import com.reactnative.ivpusic.imagepicker.PickerModule;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class d {
-    public static void a(Context context, BroadcastReceiver broadcastReceiver, IntentFilter intentFilter, boolean z10) {
-        int i10;
-        if (Build.VERSION.SDK_INT >= 34 && context.getApplicationInfo().targetSdkVersion >= 34) {
-            if (z10) {
-                i10 = 2;
-            } else {
-                i10 = 4;
+public class d extends TurboReactPackage {
+    public static /* synthetic */ Map a() {
+        HashMap hashMap = new HashMap();
+        hashMap.put(NativeImageCropPickerSpec.NAME, new ReactModuleInfo(NativeImageCropPickerSpec.NAME, NativeImageCropPickerSpec.NAME, false, false, false, true));
+        return hashMap;
+    }
+
+    @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
+    public List createNativeModules(ReactApplicationContext reactApplicationContext) {
+        ArrayList arrayList = new ArrayList();
+        arrayList.add(new PickerModule(reactApplicationContext));
+        return arrayList;
+    }
+
+    @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
+    public NativeModule getModule(String str, ReactApplicationContext reactApplicationContext) {
+        if (str.equals(NativeImageCropPickerSpec.NAME)) {
+            return new PickerModule(reactApplicationContext);
+        }
+        return null;
+    }
+
+    @Override // com.facebook.react.BaseReactPackage
+    public ReactModuleInfoProvider getReactModuleInfoProvider() {
+        return new ReactModuleInfoProvider() { // from class: am.c
+            @Override // com.facebook.react.module.model.ReactModuleInfoProvider
+            public final Map getReactModuleInfos() {
+                return d.a();
             }
-            context.registerReceiver(broadcastReceiver, intentFilter, i10);
-            return;
-        }
-        context.registerReceiver(broadcastReceiver, intentFilter);
-    }
-
-    public static boolean b(Context context) {
-        if (androidx.core.content.a.a(context, "android.permission.ACCESS_WIFI_STATE") == 0) {
-            return true;
-        }
-        return false;
-    }
-
-    public static void c(byte[] bArr) {
-        for (int i10 = 0; i10 < bArr.length / 2; i10++) {
-            byte b10 = bArr[i10];
-            bArr[i10] = bArr[(bArr.length - i10) - 1];
-            bArr[(bArr.length - i10) - 1] = b10;
-        }
+        };
     }
 }

@@ -41,21 +41,21 @@ public final class AttributeStyles_RemoteImageStrokeColorStyleJsonAdapter extend
     @NotNull
     public AttributeStyles.RemoteImageStrokeColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.RemoteImageStrokeColorStyle(simpleElementColor, simpleElementColor2);
     }
 
@@ -63,10 +63,10 @@ public final class AttributeStyles_RemoteImageStrokeColorStyleJsonAdapter extend
     public void toJson(@NotNull t writer, AttributeStyles.RemoteImageStrokeColorStyle remoteImageStrokeColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (remoteImageStrokeColorStyle != null) {
-            writer.l();
-            writer.A0("stroke");
+            writer.k();
+            writer.W("stroke");
             this.nullableSimpleElementColorAdapter.toJson(writer, remoteImageStrokeColorStyle.getStroke());
-            writer.A0("originalStroke");
+            writer.W("originalStroke");
             this.nullableSimpleElementColorAdapter.toJson(writer, remoteImageStrokeColorStyle.getOriginalStroke());
             writer.E();
             return;

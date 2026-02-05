@@ -42,7 +42,7 @@ public abstract class h {
 
     private int a(RecyclerView recyclerView) {
         if (this.mCachedMaxScrollSpeed == -1) {
-            this.mCachedMaxScrollSpeed = recyclerView.getResources().getDimensionPixelSize(q3.b.f47313d);
+            this.mCachedMaxScrollSpeed = recyclerView.getResources().getDimensionPixelSize(q3.b.f47377d);
         }
         return this.mCachedMaxScrollSpeed;
     }
@@ -66,7 +66,7 @@ public abstract class h {
 
     @NonNull
     public static ItemTouchUIUtil getDefaultUIUtil() {
-        return j.f5033a;
+        return j.f5145a;
     }
 
     public static int makeFlag(int i10, int i11) {
@@ -122,7 +122,7 @@ public abstract class h {
     }
 
     public void clearView(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder) {
-        j.f5033a.a(viewHolder.itemView);
+        j.f5145a.a(viewHolder.itemView);
     }
 
     public int convertToAbsoluteDirection(int i10, int i11) {
@@ -214,11 +214,11 @@ public abstract class h {
     }
 
     public void onChildDraw(@NonNull Canvas canvas, @NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, float f10, float f11, int i10, boolean z10) {
-        j.f5033a.c(canvas, recyclerView, viewHolder.itemView, f10, f11, i10, z10);
+        j.f5145a.c(canvas, recyclerView, viewHolder.itemView, f10, f11, i10, z10);
     }
 
     public void onChildDrawOver(@NonNull Canvas canvas, @NonNull RecyclerView recyclerView, @SuppressLint({"UnknownNullness"}) RecyclerView.ViewHolder viewHolder, float f10, float f11, int i10, boolean z10) {
-        j.f5033a.d(canvas, recyclerView, viewHolder.itemView, f10, f11, i10, z10);
+        j.f5145a.d(canvas, recyclerView, viewHolder.itemView, f10, f11, i10, z10);
     }
 
     public abstract boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder viewHolder2);
@@ -249,7 +249,7 @@ public abstract class h {
 
     public void onSelectedChanged(RecyclerView.ViewHolder viewHolder, int i10) {
         if (viewHolder != null) {
-            j.f5033a.b(viewHolder.itemView);
+            j.f5145a.b(viewHolder.itemView);
         }
     }
 

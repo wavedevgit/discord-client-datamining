@@ -20,13 +20,13 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
 import kotlinx.coroutines.flow.MutableSharedFlow;
-import ls.a;
-import ms.a0;
-import ms.c0;
-import ms.g;
 import org.jetbrains.annotations.NotNull;
-import rr.b;
-@Metadata(d1 = {"\u0000t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0011\n\u0002\u0018\u0002\n\u0002\b\u000f\b\u0007\u0018\u0000 I2\u00020\u0001:\u0001IB!\b\u0000\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u0006\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\b\u0010\tJ\u0083\u0001\u0010\u0019\u001a\b\u0012\u0004\u0012\u00028\u00000\u000e\"\u0004\b\u0000\u0010\n2\u0006\u0010\f\u001a\u00020\u000b2\u0018\u0010\u000f\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00000\u000e0\r2(\u0010\u0013\u001a$\b\u0001\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00000\u0011\u0012\u0006\u0012\u0004\u0018\u00010\u00120\u00102\u0012\u0010\u0016\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00000\u00150\u00142\u0006\u0010\u0018\u001a\u00020\u0017H\u0002¢\u0006\u0004\b\u0019\u0010\u001aJE\u0010\u001e\u001a\u00020\u001c\"\u0004\b\u0000\u0010\n2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u001b\u001a\u00028\u00002\u001e\u0010\u001d\u001a\u001a\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u001c0\u0010H\u0002¢\u0006\u0004\b\u001e\u0010\u001fJ\u0010\u0010 \u001a\u00020\u001cH\u0096\u0001¢\u0006\u0004\b \u0010!J\u001b\u0010#\u001a\b\u0012\u0004\u0012\u00020\"0\u000e2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b#\u0010$J\u001b\u0010%\u001a\b\u0012\u0004\u0012\u00020\u000b0\u000e2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b%\u0010$J\u001b\u0010'\u001a\b\u0012\u0004\u0012\u00020&0\u000e2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b'\u0010$J\u001b\u0010(\u001a\b\u0012\u0004\u0012\u00020\u000b0\u000e2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b(\u0010$J\u001b\u0010*\u001a\b\u0012\u0004\u0012\u00020)0\u000e2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b*\u0010$J\u001b\u0010+\u001a\b\u0012\u0004\u0012\u00020\u001c0\u000e2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b+\u0010$J\u001d\u0010,\u001a\u00020\u001c2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u001b\u001a\u00020\"¢\u0006\u0004\b,\u0010-J\u001d\u0010.\u001a\u00020\u001c2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u001b\u001a\u00020\u000b¢\u0006\u0004\b.\u0010/J\u001d\u00100\u001a\u00020\u001c2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u001b\u001a\u00020&¢\u0006\u0004\b0\u00101J\u001d\u00102\u001a\u00020\u001c2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u001b\u001a\u00020\u000b¢\u0006\u0004\b2\u0010/J\u001f\u00103\u001a\u00020\u001c2\u0006\u0010\f\u001a\u00020\u000b2\b\b\u0001\u0010\u001b\u001a\u00020)¢\u0006\u0004\b3\u00104J\u0015\u00105\u001a\u00020\u001c2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b5\u00106R \u0010\u0003\u001a\u00020\u00028\u0000X\u0080\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\f\n\u0004\b\u0003\u00107\u001a\u0004\b8\u00109R\u0014\u0010\u0005\u001a\u00020\u00048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0005\u0010:R\u001a\u0010\u0007\u001a\u00020\u00068\u0002X\u0082\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\n\u0004\b\u0007\u00107R\u001a\u0010<\u001a\b\u0012\u0004\u0012\u00020\u001c0;8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b<\u0010=R \u0010>\u001a\b\u0012\u0004\u0012\u00020\u001c0\u00148\u0000X\u0080\u0004¢\u0006\f\n\u0004\b>\u0010?\u001a\u0004\b@\u0010AR&\u0010B\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00020\"0\u000e0\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bB\u0010CR&\u0010D\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u000b0\u000e0\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bD\u0010CR&\u0010E\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00020&0\u000e0\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bE\u0010CR&\u0010F\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u000b0\u000e0\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bF\u0010CR&\u0010G\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00020)0\u000e0\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bG\u0010CR&\u0010H\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001c0\u000e0\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bH\u0010C\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006J"}, d2 = {"Lapp/rive/ViewModelInstance;", "Ljava/lang/AutoCloseable;", "Lapp/rive/core/ViewModelInstanceHandle;", "instanceHandle", "Lapp/rive/core/CommandQueue;", "commandQueue", "Lapp/rive/core/FileHandle;", "fileHandle", "<init>", "(JLapp/rive/core/CommandQueue;JLkotlin/jvm/internal/DefaultConstructorMarker;)V", "T", "", "propertyPath", "", "Lkotlinx/coroutines/flow/Flow;", "cache", "Lkotlin/Function3;", "Lkotlin/coroutines/Continuation;", "", "getter", "Lms/a0;", "Lapp/rive/core/CommandQueue$PropertyUpdate;", "updateFlow", "Lapp/rive/runtime/kotlin/core/ViewModel$PropertyDataType;", "propertyType", "getPropertyFlow", "(Ljava/lang/String;Ljava/util/Map;Lkotlin/jvm/functions/Function3;Lms/a0;Lapp/rive/runtime/kotlin/core/ViewModel$PropertyDataType;)Lkotlinx/coroutines/flow/Flow;", "value", "", "setter", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;Lkotlin/jvm/functions/Function3;)V", "close", "()V", "", "getNumberFlow", "(Ljava/lang/String;)Lkotlinx/coroutines/flow/Flow;", "getStringFlow", "", "getBooleanFlow", "getEnumFlow", "", "getColorFlow", "getTriggerFlow", "setNumber", "(Ljava/lang/String;F)V", "setString", "(Ljava/lang/String;Ljava/lang/String;)V", "setBoolean", "(Ljava/lang/String;Z)V", "setEnum", "setColor", "(Ljava/lang/String;I)V", "fireTrigger", "(Ljava/lang/String;)V", "J", "getInstanceHandle-VPLto4w$kotlin_release", "()J", "Lapp/rive/core/CommandQueue;", "Lkotlinx/coroutines/flow/MutableSharedFlow;", "_dirtyFlow", "Lkotlinx/coroutines/flow/MutableSharedFlow;", "dirtyFlow", "Lms/a0;", "getDirtyFlow$kotlin_release", "()Lms/a0;", "numberFlows", "Ljava/util/Map;", "stringFlows", "booleanFlows", "enumFlows", "colorFlows", "triggerFlows", "Companion", "kotlin_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
+import os.a;
+import ps.a0;
+import ps.c0;
+import ps.g;
+import ur.b;
+@Metadata(d1 = {"\u0000t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0011\n\u0002\u0018\u0002\n\u0002\b\u000f\b\u0007\u0018\u0000 I2\u00020\u0001:\u0001IB!\b\u0000\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u0006\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\b\u0010\tJ\u0083\u0001\u0010\u0019\u001a\b\u0012\u0004\u0012\u00028\u00000\u000e\"\u0004\b\u0000\u0010\n2\u0006\u0010\f\u001a\u00020\u000b2\u0018\u0010\u000f\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00000\u000e0\r2(\u0010\u0013\u001a$\b\u0001\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00000\u0011\u0012\u0006\u0012\u0004\u0018\u00010\u00120\u00102\u0012\u0010\u0016\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00000\u00150\u00142\u0006\u0010\u0018\u001a\u00020\u0017H\u0002¢\u0006\u0004\b\u0019\u0010\u001aJE\u0010\u001e\u001a\u00020\u001c\"\u0004\b\u0000\u0010\n2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u001b\u001a\u00028\u00002\u001e\u0010\u001d\u001a\u001a\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u001c0\u0010H\u0002¢\u0006\u0004\b\u001e\u0010\u001fJ\u0010\u0010 \u001a\u00020\u001cH\u0096\u0001¢\u0006\u0004\b \u0010!J\u001b\u0010#\u001a\b\u0012\u0004\u0012\u00020\"0\u000e2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b#\u0010$J\u001b\u0010%\u001a\b\u0012\u0004\u0012\u00020\u000b0\u000e2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b%\u0010$J\u001b\u0010'\u001a\b\u0012\u0004\u0012\u00020&0\u000e2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b'\u0010$J\u001b\u0010(\u001a\b\u0012\u0004\u0012\u00020\u000b0\u000e2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b(\u0010$J\u001b\u0010*\u001a\b\u0012\u0004\u0012\u00020)0\u000e2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b*\u0010$J\u001b\u0010+\u001a\b\u0012\u0004\u0012\u00020\u001c0\u000e2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b+\u0010$J\u001d\u0010,\u001a\u00020\u001c2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u001b\u001a\u00020\"¢\u0006\u0004\b,\u0010-J\u001d\u0010.\u001a\u00020\u001c2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u001b\u001a\u00020\u000b¢\u0006\u0004\b.\u0010/J\u001d\u00100\u001a\u00020\u001c2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u001b\u001a\u00020&¢\u0006\u0004\b0\u00101J\u001d\u00102\u001a\u00020\u001c2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u001b\u001a\u00020\u000b¢\u0006\u0004\b2\u0010/J\u001f\u00103\u001a\u00020\u001c2\u0006\u0010\f\u001a\u00020\u000b2\b\b\u0001\u0010\u001b\u001a\u00020)¢\u0006\u0004\b3\u00104J\u0015\u00105\u001a\u00020\u001c2\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b5\u00106R \u0010\u0003\u001a\u00020\u00028\u0000X\u0080\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\f\n\u0004\b\u0003\u00107\u001a\u0004\b8\u00109R\u0014\u0010\u0005\u001a\u00020\u00048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0005\u0010:R\u001a\u0010\u0007\u001a\u00020\u00068\u0002X\u0082\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\n\u0004\b\u0007\u00107R\u001a\u0010<\u001a\b\u0012\u0004\u0012\u00020\u001c0;8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b<\u0010=R \u0010>\u001a\b\u0012\u0004\u0012\u00020\u001c0\u00148\u0000X\u0080\u0004¢\u0006\f\n\u0004\b>\u0010?\u001a\u0004\b@\u0010AR&\u0010B\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00020\"0\u000e0\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bB\u0010CR&\u0010D\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u000b0\u000e0\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bD\u0010CR&\u0010E\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00020&0\u000e0\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bE\u0010CR&\u0010F\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u000b0\u000e0\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bF\u0010CR&\u0010G\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00020)0\u000e0\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bG\u0010CR&\u0010H\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001c0\u000e0\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bH\u0010C\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006J"}, d2 = {"Lapp/rive/ViewModelInstance;", "Ljava/lang/AutoCloseable;", "Lapp/rive/core/ViewModelInstanceHandle;", "instanceHandle", "Lapp/rive/core/CommandQueue;", "commandQueue", "Lapp/rive/core/FileHandle;", "fileHandle", "<init>", "(JLapp/rive/core/CommandQueue;JLkotlin/jvm/internal/DefaultConstructorMarker;)V", "T", "", "propertyPath", "", "Lkotlinx/coroutines/flow/Flow;", "cache", "Lkotlin/Function3;", "Lkotlin/coroutines/Continuation;", "", "getter", "Lps/a0;", "Lapp/rive/core/CommandQueue$PropertyUpdate;", "updateFlow", "Lapp/rive/runtime/kotlin/core/ViewModel$PropertyDataType;", "propertyType", "getPropertyFlow", "(Ljava/lang/String;Ljava/util/Map;Lkotlin/jvm/functions/Function3;Lps/a0;Lapp/rive/runtime/kotlin/core/ViewModel$PropertyDataType;)Lkotlinx/coroutines/flow/Flow;", "value", "", "setter", "setProperty", "(Ljava/lang/String;Ljava/lang/Object;Lkotlin/jvm/functions/Function3;)V", "close", "()V", "", "getNumberFlow", "(Ljava/lang/String;)Lkotlinx/coroutines/flow/Flow;", "getStringFlow", "", "getBooleanFlow", "getEnumFlow", "", "getColorFlow", "getTriggerFlow", "setNumber", "(Ljava/lang/String;F)V", "setString", "(Ljava/lang/String;Ljava/lang/String;)V", "setBoolean", "(Ljava/lang/String;Z)V", "setEnum", "setColor", "(Ljava/lang/String;I)V", "fireTrigger", "(Ljava/lang/String;)V", "J", "getInstanceHandle-VPLto4w$kotlin_release", "()J", "Lapp/rive/core/CommandQueue;", "Lkotlinx/coroutines/flow/MutableSharedFlow;", "_dirtyFlow", "Lkotlinx/coroutines/flow/MutableSharedFlow;", "dirtyFlow", "Lps/a0;", "getDirtyFlow$kotlin_release", "()Lps/a0;", "numberFlows", "Ljava/util/Map;", "stringFlows", "booleanFlows", "enumFlows", "colorFlows", "triggerFlows", "Companion", "kotlin_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nViewModelInstance.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ViewModelInstance.kt\napp/rive/ViewModelInstance\n+ 2 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n+ 3 Transform.kt\nkotlinx/coroutines/flow/FlowKt__TransformKt\n+ 4 Emitters.kt\nkotlinx/coroutines/flow/FlowKt__EmittersKt\n+ 5 SafeCollector.common.kt\nkotlinx/coroutines/flow/internal/SafeCollector_commonKt\n*L\n1#1,364:1\n381#2,3:365\n384#2,4:378\n381#2,3:382\n384#2,4:395\n17#3:368\n19#3:372\n49#3:373\n51#3:377\n17#3:385\n19#3:389\n49#3:390\n51#3:394\n46#4:369\n51#4:371\n46#4:374\n51#4:376\n46#4:386\n51#4:388\n46#4:391\n51#4:393\n105#5:370\n105#5:375\n105#5:387\n105#5:392\n*S KotlinDebug\n*F\n+ 1 ViewModelInstance.kt\napp/rive/ViewModelInstance\n*L\n84#1:365,3\n84#1:378,4\n201#1:382,3\n201#1:395,4\n93#1:368\n93#1:372\n94#1:373\n94#1:377\n210#1:385\n210#1:389\n211#1:390\n211#1:394\n93#1:369\n93#1:371\n94#1:374\n94#1:376\n210#1:386\n210#1:388\n211#1:391\n211#1:393\n93#1:370\n94#1:375\n210#1:387\n211#1:392\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class ViewModelInstance implements AutoCloseable {
@@ -165,7 +165,7 @@ public final class ViewModelInstance implements AutoCloseable {
                             r0.<init>(r10)
                         L18:
                             java.lang.Object r10 = r0.result
-                            java.lang.Object r1 = rr.b.f()
+                            java.lang.Object r1 = ur.b.f()
                             int r2 = r0.label
                             r3 = 1
                             if (r2 == 0) goto L31
@@ -196,7 +196,7 @@ public final class ViewModelInstance implements AutoCloseable {
                             if (r9 != r1) goto L5e
                             return r1
                         L5e:
-                            kotlin.Unit r9 = kotlin.Unit.f32464a
+                            kotlin.Unit r9 = kotlin.Unit.f31988a
                             return r9
                         */
                         throw new UnsupportedOperationException("Method not decompiled: app.rive.ViewModelInstance$getPropertyFlow$lambda$2$$inlined$filter$1.AnonymousClass2.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -209,7 +209,7 @@ public final class ViewModelInstance implements AutoCloseable {
                     if (collect == b.f()) {
                         return collect;
                     }
-                    return Unit.f32464a;
+                    return Unit.f31988a;
                 }
             };
             flow = g.l(new Flow() { // from class: app.rive.ViewModelInstance$getPropertyFlow$lambda$2$$inlined$map$1
@@ -273,7 +273,7 @@ public final class ViewModelInstance implements AutoCloseable {
                             r0.<init>(r6)
                         L18:
                             java.lang.Object r6 = r0.result
-                            java.lang.Object r1 = rr.b.f()
+                            java.lang.Object r1 = ur.b.f()
                             int r2 = r0.label
                             r3 = 1
                             if (r2 == 0) goto L31
@@ -295,7 +295,7 @@ public final class ViewModelInstance implements AutoCloseable {
                             if (r5 != r1) goto L45
                             return r1
                         L45:
-                            kotlin.Unit r5 = kotlin.Unit.f32464a
+                            kotlin.Unit r5 = kotlin.Unit.f31988a
                             return r5
                         */
                         throw new UnsupportedOperationException("Method not decompiled: app.rive.ViewModelInstance$getPropertyFlow$lambda$2$$inlined$map$1.AnonymousClass2.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -308,7 +308,7 @@ public final class ViewModelInstance implements AutoCloseable {
                     if (collect == b.f()) {
                         return collect;
                     }
-                    return Unit.f32464a;
+                    return Unit.f31988a;
                 }
             });
             map.put(str, flow);
@@ -318,7 +318,7 @@ public final class ViewModelInstance implements AutoCloseable {
 
     private final <T> void setProperty(String str, T t10, Function3 function3) {
         function3.invoke(ViewModelInstanceHandle.m197boximpl(this.instanceHandle), str, t10);
-        this._dirtyFlow.b(Unit.f32464a);
+        this._dirtyFlow.b(Unit.f31988a);
     }
 
     @Override // java.lang.AutoCloseable
@@ -444,7 +444,7 @@ public final class ViewModelInstance implements AutoCloseable {
                             r0.<init>(r10)
                         L18:
                             java.lang.Object r10 = r0.result
-                            java.lang.Object r1 = rr.b.f()
+                            java.lang.Object r1 = ur.b.f()
                             int r2 = r0.label
                             r3 = 1
                             if (r2 == 0) goto L31
@@ -475,7 +475,7 @@ public final class ViewModelInstance implements AutoCloseable {
                             if (r9 != r1) goto L5e
                             return r1
                         L5e:
-                            kotlin.Unit r9 = kotlin.Unit.f32464a
+                            kotlin.Unit r9 = kotlin.Unit.f31988a
                             return r9
                         */
                         throw new UnsupportedOperationException("Method not decompiled: app.rive.ViewModelInstance$getTriggerFlow$lambda$5$$inlined$filter$1.AnonymousClass2.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -488,7 +488,7 @@ public final class ViewModelInstance implements AutoCloseable {
                     if (collect == b.f()) {
                         return collect;
                     }
-                    return Unit.f32464a;
+                    return Unit.f31988a;
                 }
             };
             flow = g.b(new Flow() { // from class: app.rive.ViewModelInstance$getTriggerFlow$lambda$5$$inlined$map$1
@@ -552,7 +552,7 @@ public final class ViewModelInstance implements AutoCloseable {
                             r0.<init>(r6)
                         L18:
                             java.lang.Object r6 = r0.result
-                            java.lang.Object r1 = rr.b.f()
+                            java.lang.Object r1 = ur.b.f()
                             int r2 = r0.label
                             r3 = 1
                             if (r2 == 0) goto L31
@@ -568,13 +568,13 @@ public final class ViewModelInstance implements AutoCloseable {
                             kotlin.c.b(r6)
                             kotlinx.coroutines.flow.FlowCollector r6 = r4.$this_unsafeFlow
                             app.rive.core.CommandQueue$PropertyUpdate r5 = (app.rive.core.CommandQueue.PropertyUpdate) r5
-                            kotlin.Unit r5 = kotlin.Unit.f32464a
+                            kotlin.Unit r5 = kotlin.Unit.f31988a
                             r0.label = r3
                             java.lang.Object r5 = r6.emit(r5, r0)
                             if (r5 != r1) goto L43
                             return r1
                         L43:
-                            kotlin.Unit r5 = kotlin.Unit.f32464a
+                            kotlin.Unit r5 = kotlin.Unit.f31988a
                             return r5
                         */
                         throw new UnsupportedOperationException("Method not decompiled: app.rive.ViewModelInstance$getTriggerFlow$lambda$5$$inlined$map$1.AnonymousClass2.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -587,9 +587,9 @@ public final class ViewModelInstance implements AutoCloseable {
                     if (collect == b.f()) {
                         return collect;
                     }
-                    return Unit.f32464a;
+                    return Unit.f31988a;
                 }
-            }, 32, a.f37143e);
+            }, 32, a.f44351e);
             map.put(propertyPath, flow);
         }
         return flow;
@@ -636,7 +636,7 @@ public final class ViewModelInstance implements AutoCloseable {
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
                 m47invoke();
-                return Unit.f32464a;
+                return Unit.f31988a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
@@ -660,7 +660,7 @@ public final class ViewModelInstance implements AutoCloseable {
                 CommandQueue.this.m124deleteViewModelInstancemBajs_U(j10);
             }
         });
-        MutableSharedFlow a10 = c0.a(1, 1, a.f37143e);
+        MutableSharedFlow a10 = c0.a(1, 1, a.f44351e);
         this._dirtyFlow = a10;
         this.dirtyFlow = a10;
         this.numberFlows = new LinkedHashMap();

@@ -3,17 +3,17 @@ package ng;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f41099a;
+    private int f40559a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i f41100b = i.DEFAULT;
+    private final i f40560b = i.DEFAULT;
 
     public final f a(int i10) {
-        this.f41099a = i10;
+        this.f40559a = i10;
         return this;
     }
 
     public final j b() {
-        return new e(this.f41099a, this.f41100b);
+        return new e(this.f40559a, this.f40560b);
     }
 }

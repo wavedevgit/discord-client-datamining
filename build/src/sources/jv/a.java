@@ -1,15 +1,19 @@
 package jv;
-
-import gv.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a {
-    char a();
+public abstract class a extends r {
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // jv.r
+    public void j(r rVar) {
+        if (rVar instanceof a) {
+            super.j(rVar);
+            return;
+        }
+        throw new IllegalArgumentException("Parent of block must also be block (can not be inline)");
+    }
 
-    void b(w wVar, w wVar2, int i10);
-
-    int c();
-
-    char d();
-
-    int e(b bVar, b bVar2);
+    @Override // jv.r
+    /* renamed from: m */
+    public a f() {
+        return (a) super.f();
+    }
 }

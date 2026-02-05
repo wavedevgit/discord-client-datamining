@@ -1,0 +1,15 @@
+package aj;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public @interface d {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public enum a {
+        DEFAULT,
+        SIGNED,
+        FIXED
+    }
+
+    a intEncoding() default a.DEFAULT;
+
+    int tag();
+}

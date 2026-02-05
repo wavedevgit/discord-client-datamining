@@ -39,13 +39,13 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
     public static final Unit invokeSuspend$lambda$0(Ref.LongRef longRef, ProducerScope producerScope, DownloadManager downloadManager, String str) {
         PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(longRef.element));
         PublicFileDownloader.INSTANCE.onFileDownloaded(producerScope, downloadManager, longRef.element, str);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit invokeSuspend$lambda$1(Ref.LongRef longRef) {
         PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(longRef.element));
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -57,7 +57,7 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
 
     /* JADX WARN: Can't wrap try/catch for region: R(10:1|(1:(1:(1:(3:6|7|8)(2:10|11))(6:12|13|14|15|16|17))(1:23))(1:37)|24|25|26|(2:31|17)|32|(4:34|15|16|17)|19|(1:(0))) */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0049, code lost:
-        if (r12.u(r1, r11) == r0) goto L19;
+        if (r12.v(r1, r11) == r0) goto L19;
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0099, code lost:
         r1 = move-exception;
@@ -68,7 +68,7 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
         r1 = r6;
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x00e2, code lost:
-        if (ls.s.a(r12, r1, r11) != r0) goto L7;
+        if (os.s.a(r12, r1, r11) != r0) goto L7;
      */
     @Override // kotlin.coroutines.jvm.internal.a
     /*
@@ -85,6 +85,6 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(ProducerScope producerScope, Continuation<? super Unit> continuation) {
-        return ((PublicFileDownloader$downloadFile$1) create(producerScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((PublicFileDownloader$downloadFile$1) create(producerScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

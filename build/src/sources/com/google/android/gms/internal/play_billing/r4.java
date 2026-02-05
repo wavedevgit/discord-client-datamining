@@ -18,7 +18,7 @@ public final class r4 extends q1 implements w2 {
     }
 
     public static r4 B(byte[] bArr, e1 e1Var) {
-        return (r4) q1.m(zzb, bArr, e1Var);
+        return (r4) q1.l(zzb, bArr, e1Var);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -61,7 +61,7 @@ public final class r4 extends q1 implements w2 {
                 }
                 return new r4();
             }
-            return q1.r(zzb, "\u0001\u0003\u0001\u0001\u0001\u0004\u0003\u0000\u0000\u0000\u0001᠌\u0000\u0002ဉ\u0001\u0004<\u0000", new Object[]{"zzf", "zze", "zzd", "zzg", s4.f13978a, "zzh", s5.class});
+            return q1.r(zzb, "\u0001\u0003\u0001\u0001\u0001\u0004\u0003\u0000\u0000\u0000\u0001᠌\u0000\u0002ဉ\u0001\u0004<\u0000", new Object[]{"zzf", "zze", "zzd", "zzg", s4.f14372a, "zzh", s5.class});
         }
         return (byte) 1;
     }

@@ -35,40 +35,40 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Disabled
     @Override // com.squareup.moshi.h
     @NotNull
     public GenericFileUploadErrorResponse.DocumentErrorResponse.DisabledFileTypeError.Details fromJson(@NotNull m mVar) {
-        mVar.r();
+        mVar.s();
         String str = null;
         List list = null;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
+            int W = mVar.W(this.options);
+            if (W == -1) {
                 mVar.E0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw vm.c.x("uploadedFileType", "uploaded_file_type", mVar);
+                    throw ym.c.x("uploadedFileType", "uploaded_file_type", mVar);
                 }
-            } else if (A0 == 1 && (list = (List) this.listOfStringAdapter.fromJson(mVar)) == null) {
-                throw vm.c.x("enabledFileTypes", "enabled_file_types", mVar);
+            } else if (W == 1 && (list = (List) this.listOfStringAdapter.fromJson(mVar)) == null) {
+                throw ym.c.x("enabledFileTypes", "enabled_file_types", mVar);
             }
         }
-        mVar.y();
+        mVar.z();
         if (str != null) {
             if (list != null) {
                 return new GenericFileUploadErrorResponse.DocumentErrorResponse.DisabledFileTypeError.Details(str, list);
             }
-            throw vm.c.o("enabledFileTypes", "enabled_file_types", mVar);
+            throw ym.c.o("enabledFileTypes", "enabled_file_types", mVar);
         }
-        throw vm.c.o("uploadedFileType", "uploaded_file_type", mVar);
+        throw ym.c.o("uploadedFileType", "uploaded_file_type", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.DisabledFileTypeError.Details details) {
         if (details != null) {
-            tVar.l();
-            tVar.A0("uploaded_file_type");
+            tVar.k();
+            tVar.W("uploaded_file_type");
             this.stringAdapter.toJson(tVar, details.getUploadedFileType());
-            tVar.A0("enabled_file_types");
+            tVar.W("enabled_file_types");
             this.listOfStringAdapter.toJson(tVar, details.getEnabledFileTypes());
             tVar.E();
             return;

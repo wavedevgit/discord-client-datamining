@@ -75,74 +75,74 @@ import org.jetbrains.annotations.NotNull;
 public abstract class LazyJavaScope extends MemberScopeImpl {
 
     /* renamed from: l  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f33399l = {Reflection.property1(new PropertyReference1Impl(LazyJavaScope.class, "functionNamesLazy", "getFunctionNamesLazy()Ljava/util/Set;", 0)), Reflection.property1(new PropertyReference1Impl(LazyJavaScope.class, "propertyNamesLazy", "getPropertyNamesLazy()Ljava/util/Set;", 0)), Reflection.property1(new PropertyReference1Impl(LazyJavaScope.class, "classNamesLazy", "getClassNamesLazy()Ljava/util/Set;", 0))};
+    static final /* synthetic */ KProperty[] f32923l = {Reflection.property1(new PropertyReference1Impl(LazyJavaScope.class, "functionNamesLazy", "getFunctionNamesLazy()Ljava/util/Set;", 0)), Reflection.property1(new PropertyReference1Impl(LazyJavaScope.class, "propertyNamesLazy", "getPropertyNamesLazy()Ljava/util/Set;", 0)), Reflection.property1(new PropertyReference1Impl(LazyJavaScope.class, "classNamesLazy", "getClassNamesLazy()Ljava/util/Set;", 0))};
 
     /* renamed from: a  reason: collision with root package name */
-    private final LazyJavaResolverContext f33400a;
+    private final LazyJavaResolverContext f32924a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final LazyJavaScope f33401b;
+    private final LazyJavaScope f32925b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NotNullLazyValue f33402c;
+    private final NotNullLazyValue f32926c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final NotNullLazyValue f33403d;
+    private final NotNullLazyValue f32927d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final MemoizedFunctionToNotNull f33404e;
+    private final MemoizedFunctionToNotNull f32928e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final MemoizedFunctionToNullable f33405f;
+    private final MemoizedFunctionToNullable f32929f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final MemoizedFunctionToNotNull f33406g;
+    private final MemoizedFunctionToNotNull f32930g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final NotNullLazyValue f33407h;
+    private final NotNullLazyValue f32931h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final NotNullLazyValue f33408i;
+    private final NotNullLazyValue f32932i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final NotNullLazyValue f33409j;
+    private final NotNullLazyValue f32933j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final MemoizedFunctionToNotNull f33410k;
+    private final MemoizedFunctionToNotNull f32934k;
 
     /* JADX INFO: Access modifiers changed from: protected */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class MethodSignatureData {
 
         /* renamed from: a  reason: collision with root package name */
-        private final KotlinType f33411a;
+        private final KotlinType f32935a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final KotlinType f33412b;
+        private final KotlinType f32936b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f33413c;
+        private final List f32937c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f33414d;
+        private final List f32938d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f33415e;
+        private final boolean f32939e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final List f33416f;
+        private final List f32940f;
 
         public MethodSignatureData(@NotNull KotlinType returnType, KotlinType kotlinType, @NotNull List<? extends ValueParameterDescriptor> valueParameters, @NotNull List<? extends TypeParameterDescriptor> typeParameters, boolean z10, @NotNull List<String> errors) {
             Intrinsics.checkNotNullParameter(returnType, "returnType");
             Intrinsics.checkNotNullParameter(valueParameters, "valueParameters");
             Intrinsics.checkNotNullParameter(typeParameters, "typeParameters");
             Intrinsics.checkNotNullParameter(errors, "errors");
-            this.f33411a = returnType;
-            this.f33412b = kotlinType;
-            this.f33413c = valueParameters;
-            this.f33414d = typeParameters;
-            this.f33415e = z10;
-            this.f33416f = errors;
+            this.f32935a = returnType;
+            this.f32936b = kotlinType;
+            this.f32937c = valueParameters;
+            this.f32938d = typeParameters;
+            this.f32939e = z10;
+            this.f32940f = errors;
         }
 
         public boolean equals(Object obj) {
@@ -151,48 +151,48 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
             }
             if (obj instanceof MethodSignatureData) {
                 MethodSignatureData methodSignatureData = (MethodSignatureData) obj;
-                return Intrinsics.areEqual(this.f33411a, methodSignatureData.f33411a) && Intrinsics.areEqual(this.f33412b, methodSignatureData.f33412b) && Intrinsics.areEqual(this.f33413c, methodSignatureData.f33413c) && Intrinsics.areEqual(this.f33414d, methodSignatureData.f33414d) && this.f33415e == methodSignatureData.f33415e && Intrinsics.areEqual(this.f33416f, methodSignatureData.f33416f);
+                return Intrinsics.areEqual(this.f32935a, methodSignatureData.f32935a) && Intrinsics.areEqual(this.f32936b, methodSignatureData.f32936b) && Intrinsics.areEqual(this.f32937c, methodSignatureData.f32937c) && Intrinsics.areEqual(this.f32938d, methodSignatureData.f32938d) && this.f32939e == methodSignatureData.f32939e && Intrinsics.areEqual(this.f32940f, methodSignatureData.f32940f);
             }
             return false;
         }
 
         @NotNull
         public final List<String> getErrors() {
-            return this.f33416f;
+            return this.f32940f;
         }
 
         public final boolean getHasStableParameterNames() {
-            return this.f33415e;
+            return this.f32939e;
         }
 
         public final KotlinType getReceiverType() {
-            return this.f33412b;
+            return this.f32936b;
         }
 
         @NotNull
         public final KotlinType getReturnType() {
-            return this.f33411a;
+            return this.f32935a;
         }
 
         @NotNull
         public final List<TypeParameterDescriptor> getTypeParameters() {
-            return this.f33414d;
+            return this.f32938d;
         }
 
         @NotNull
         public final List<ValueParameterDescriptor> getValueParameters() {
-            return this.f33413c;
+            return this.f32937c;
         }
 
         public int hashCode() {
-            int hashCode = this.f33411a.hashCode() * 31;
-            KotlinType kotlinType = this.f33412b;
-            return ((((((((hashCode + (kotlinType == null ? 0 : kotlinType.hashCode())) * 31) + this.f33413c.hashCode()) * 31) + this.f33414d.hashCode()) * 31) + Boolean.hashCode(this.f33415e)) * 31) + this.f33416f.hashCode();
+            int hashCode = this.f32935a.hashCode() * 31;
+            KotlinType kotlinType = this.f32936b;
+            return ((((((((hashCode + (kotlinType == null ? 0 : kotlinType.hashCode())) * 31) + this.f32937c.hashCode()) * 31) + this.f32938d.hashCode()) * 31) + Boolean.hashCode(this.f32939e)) * 31) + this.f32940f.hashCode();
         }
 
         @NotNull
         public String toString() {
-            return "MethodSignatureData(returnType=" + this.f33411a + ", receiverType=" + this.f33412b + ", valueParameters=" + this.f33413c + ", typeParameters=" + this.f33414d + ", hasStableParameterNames=" + this.f33415e + ", errors=" + this.f33416f + ')';
+            return "MethodSignatureData(returnType=" + this.f32935a + ", receiverType=" + this.f32936b + ", valueParameters=" + this.f32937c + ", typeParameters=" + this.f32938d + ", hasStableParameterNames=" + this.f32939e + ", errors=" + this.f32940f + ')';
         }
     }
 
@@ -201,24 +201,24 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
     public static final class ResolvedValueParameters {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f33417a;
+        private final List f32941a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f33418b;
+        private final boolean f32942b;
 
         public ResolvedValueParameters(@NotNull List<? extends ValueParameterDescriptor> descriptors, boolean z10) {
             Intrinsics.checkNotNullParameter(descriptors, "descriptors");
-            this.f33417a = descriptors;
-            this.f33418b = z10;
+            this.f32941a = descriptors;
+            this.f32942b = z10;
         }
 
         @NotNull
         public final List<ValueParameterDescriptor> getDescriptors() {
-            return this.f33417a;
+            return this.f32941a;
         }
 
         public final boolean getHasSynthesizedNames() {
-            return this.f33418b;
+            return this.f32942b;
         }
     }
 
@@ -229,26 +229,26 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Collection A(LazyJavaScope lazyJavaScope, Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        LinkedHashSet linkedHashSet = new LinkedHashSet((Collection) lazyJavaScope.f33404e.invoke(name));
+        LinkedHashSet linkedHashSet = new LinkedHashSet((Collection) lazyJavaScope.f32928e.invoke(name));
         lazyJavaScope.U(linkedHashSet);
         lazyJavaScope.s(linkedHashSet, name);
-        return CollectionsKt.h1(lazyJavaScope.f33400a.getComponents().getSignatureEnhancement().enhanceSignatures(lazyJavaScope.f33400a, linkedHashSet));
+        return CollectionsKt.h1(lazyJavaScope.f32924a.getComponents().getSignatureEnhancement().enhanceSignatures(lazyJavaScope.f32924a, linkedHashSet));
     }
 
     private final Set D() {
-        return (Set) StorageKt.getValue(this.f33409j, this, f33399l[2]);
+        return (Set) StorageKt.getValue(this.f32933j, this, f32923l[2]);
     }
 
     private final Set G() {
-        return (Set) StorageKt.getValue(this.f33407h, this, f33399l[0]);
+        return (Set) StorageKt.getValue(this.f32931h, this, f32923l[0]);
     }
 
     private final Set I() {
-        return (Set) StorageKt.getValue(this.f33408i, this, f33399l[1]);
+        return (Set) StorageKt.getValue(this.f32932i, this, f32923l[1]);
     }
 
     private final KotlinType J(JavaField javaField) {
-        KotlinType transformJavaType = this.f33400a.getTypeResolver().transformJavaType(javaField.getType(), JavaTypeAttributesKt.toAttributes$default(TypeUsage.COMMON, false, false, null, 7, null));
+        KotlinType transformJavaType = this.f32924a.getTypeResolver().transformJavaType(javaField.getType(), JavaTypeAttributesKt.toAttributes$default(TypeUsage.COMMON, false, false, null, 7, null));
         if ((KotlinBuiltIns.isPrimitiveType(transformJavaType) || KotlinBuiltIns.isString(transformJavaType)) && K(javaField) && javaField.getHasConstantNotNullInitializer()) {
             KotlinType makeNotNullable = TypeUtils.makeNotNullable(transformJavaType);
             Intrinsics.checkNotNullExpressionValue(makeNotNullable, "makeNotNullable(...)");
@@ -268,12 +268,12 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
     public static final List M(LazyJavaScope lazyJavaScope, Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
         ArrayList arrayList = new ArrayList();
-        kotlin.reflect.jvm.internal.impl.utils.CollectionsKt.addIfNotNull(arrayList, lazyJavaScope.f33405f.invoke(name));
+        kotlin.reflect.jvm.internal.impl.utils.CollectionsKt.addIfNotNull(arrayList, lazyJavaScope.f32929f.invoke(name));
         lazyJavaScope.t(name, arrayList);
         if (DescriptorUtils.isAnnotationClass(lazyJavaScope.getOwnerDescriptor())) {
             return CollectionsKt.h1(arrayList);
         }
-        return CollectionsKt.h1(lazyJavaScope.f33400a.getComponents().getSignatureEnhancement().enhanceSignatures(lazyJavaScope.f33400a, arrayList));
+        return CollectionsKt.h1(lazyJavaScope.f32924a.getComponents().getSignatureEnhancement().enhanceSignatures(lazyJavaScope.f32924a, arrayList));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -295,24 +295,24 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
             classDescriptor = (ClassDescriptor) ownerDescriptor;
         }
         if (classDescriptor != null) {
-            objectRef.element = this.f33400a.getComponents().getSyntheticPartsProvider().modifyField(classDescriptor, (PropertyDescriptorImpl) objectRef.element, this.f33400a);
+            objectRef.element = this.f32924a.getComponents().getSyntheticPartsProvider().modifyField(classDescriptor, (PropertyDescriptorImpl) objectRef.element, this.f32924a);
         }
         T t10 = objectRef.element;
         if (DescriptorUtils.shouldRecordInitializerForProperty((VariableDescriptor) t10, ((PropertyDescriptorImpl) t10).getType())) {
             ((PropertyDescriptorImpl) objectRef.element).setCompileTimeInitializerFactory(new z(this, javaField, objectRef));
         }
-        this.f33400a.getComponents().getJavaResolverCache().recordField(javaField, (PropertyDescriptor) objectRef.element);
+        this.f32924a.getComponents().getJavaResolverCache().recordField(javaField, (PropertyDescriptor) objectRef.element);
         return (PropertyDescriptor) objectRef.element;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final NullableLazyValue R(LazyJavaScope lazyJavaScope, JavaField javaField, Ref.ObjectRef objectRef) {
-        return lazyJavaScope.f33400a.getStorageManager().createNullableLazyValue(new a0(lazyJavaScope, javaField, objectRef));
+        return lazyJavaScope.f32924a.getStorageManager().createNullableLazyValue(new a0(lazyJavaScope, javaField, objectRef));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ConstantValue S(LazyJavaScope lazyJavaScope, JavaField javaField, Ref.ObjectRef objectRef) {
-        return lazyJavaScope.f33400a.getComponents().getJavaPropertyInitializerEvaluator().getInitializerConstant(javaField, (PropertyDescriptor) objectRef.element);
+        return lazyJavaScope.f32924a.getComponents().getJavaPropertyInitializerEvaluator().getInitializerConstant(javaField, (PropertyDescriptor) objectRef.element);
     }
 
     private final void U(Set set) {
@@ -329,7 +329,7 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
         for (List list : linkedHashMap.values()) {
             if (list.size() != 1) {
                 List list2 = list;
-                Collection selectMostSpecificInEachOverridableGroup = OverridingUtilsKt.selectMostSpecificInEachOverridableGroup(list2, j0.f33448d);
+                Collection selectMostSpecificInEachOverridableGroup = OverridingUtilsKt.selectMostSpecificInEachOverridableGroup(list2, j0.f32972d);
                 set.removeAll(list2);
                 set.addAll(selectMostSpecificInEachOverridableGroup);
             }
@@ -353,7 +353,7 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
     }
 
     private final PropertyDescriptorImpl v(JavaField javaField) {
-        JavaPropertyDescriptor create = JavaPropertyDescriptor.create(getOwnerDescriptor(), LazyJavaAnnotationsKt.resolveAnnotations(this.f33400a, javaField), Modality.FINAL, UtilsKt.toDescriptorVisibility(javaField.getVisibility()), !javaField.isFinal(), javaField.getName(), this.f33400a.getComponents().getSourceElementFactory().source(javaField), K(javaField));
+        JavaPropertyDescriptor create = JavaPropertyDescriptor.create(getOwnerDescriptor(), LazyJavaAnnotationsKt.resolveAnnotations(this.f32924a, javaField), Modality.FINAL, UtilsKt.toDescriptorVisibility(javaField.getVisibility()), !javaField.isFinal(), javaField.getName(), this.f32924a.getComponents().getSourceElementFactory().source(javaField), K(javaField));
         Intrinsics.checkNotNullExpressionValue(create, "create(...)");
         return create;
     }
@@ -361,11 +361,11 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
     /* JADX INFO: Access modifiers changed from: private */
     public static final PropertyDescriptor w(LazyJavaScope lazyJavaScope, Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        LazyJavaScope lazyJavaScope2 = lazyJavaScope.f33401b;
+        LazyJavaScope lazyJavaScope2 = lazyJavaScope.f32925b;
         if (lazyJavaScope2 != null) {
-            return (PropertyDescriptor) lazyJavaScope2.f33405f.invoke(name);
+            return (PropertyDescriptor) lazyJavaScope2.f32929f.invoke(name);
         }
-        JavaField findFieldByName = ((DeclaredMemberIndex) lazyJavaScope.f33403d.invoke()).findFieldByName(name);
+        JavaField findFieldByName = ((DeclaredMemberIndex) lazyJavaScope.f32927d.invoke()).findFieldByName(name);
         if (findFieldByName != null && !findFieldByName.isEnumEntry()) {
             return lazyJavaScope.Q(findFieldByName);
         }
@@ -375,15 +375,15 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Collection x(LazyJavaScope lazyJavaScope, Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        LazyJavaScope lazyJavaScope2 = lazyJavaScope.f33401b;
+        LazyJavaScope lazyJavaScope2 = lazyJavaScope.f32925b;
         if (lazyJavaScope2 != null) {
-            return (Collection) lazyJavaScope2.f33404e.invoke(name);
+            return (Collection) lazyJavaScope2.f32928e.invoke(name);
         }
         ArrayList arrayList = new ArrayList();
-        for (JavaMethod javaMethod : ((DeclaredMemberIndex) lazyJavaScope.f33403d.invoke()).findMethodsByName(name)) {
+        for (JavaMethod javaMethod : ((DeclaredMemberIndex) lazyJavaScope.f32927d.invoke()).findMethodsByName(name)) {
             JavaMethodDescriptor P = lazyJavaScope.P(javaMethod);
             if (lazyJavaScope.L(P)) {
-                lazyJavaScope.f33400a.getComponents().getJavaResolverCache().recordMethod(javaMethod, P);
+                lazyJavaScope.f32924a.getComponents().getJavaResolverCache().recordMethod(javaMethod, P);
                 arrayList.add(P);
             }
         }
@@ -403,24 +403,24 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final NotNullLazyValue B() {
-        return this.f33402c;
+        return this.f32926c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final LazyJavaResolverContext C() {
-        return this.f33400a;
+        return this.f32924a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final NotNullLazyValue E() {
-        return this.f33403d;
+        return this.f32927d;
     }
 
     protected abstract ReceiverParameterDescriptor F();
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final LazyJavaScope H() {
-        return this.f33401b;
+        return this.f32925b;
     }
 
     protected boolean L(JavaMethodDescriptor javaMethodDescriptor) {
@@ -436,18 +436,18 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
         ReceiverParameterDescriptor receiverParameterDescriptor;
         Map<? extends CallableDescriptor.UserDataKey<?>, ?> i10;
         Intrinsics.checkNotNullParameter(method, "method");
-        Annotations resolveAnnotations = LazyJavaAnnotationsKt.resolveAnnotations(this.f33400a, method);
+        Annotations resolveAnnotations = LazyJavaAnnotationsKt.resolveAnnotations(this.f32924a, method);
         DeclarationDescriptor ownerDescriptor = getOwnerDescriptor();
         Name name = method.getName();
-        JavaSourceElement source = this.f33400a.getComponents().getSourceElementFactory().source(method);
-        if (((DeclaredMemberIndex) this.f33403d.invoke()).findRecordComponentByName(method.getName()) != null && method.getValueParameters().isEmpty()) {
+        JavaSourceElement source = this.f32924a.getComponents().getSourceElementFactory().source(method);
+        if (((DeclaredMemberIndex) this.f32927d.invoke()).findRecordComponentByName(method.getName()) != null && method.getValueParameters().isEmpty()) {
             z10 = true;
         } else {
             z10 = false;
         }
         JavaMethodDescriptor createJavaMethod = JavaMethodDescriptor.createJavaMethod(ownerDescriptor, resolveAnnotations, name, source, z10);
         Intrinsics.checkNotNullExpressionValue(createJavaMethod, "createJavaMethod(...)");
-        LazyJavaResolverContext childForMethod$default = ContextKt.childForMethod$default(this.f33400a, createJavaMethod, method, 0, 4, null);
+        LazyJavaResolverContext childForMethod$default = ContextKt.childForMethod$default(this.f32924a, createJavaMethod, method, 0, 4, null);
         List<JavaTypeParameter> typeParameters = method.getTypeParameters();
         List arrayList = new ArrayList(CollectionsKt.w(typeParameters, 10));
         for (JavaTypeParameter javaTypeParameter : typeParameters) {
@@ -472,7 +472,7 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
         Modality convertFromFlags = Modality.Companion.convertFromFlags(false, method.isAbstract(), !method.isFinal());
         DescriptorVisibility descriptorVisibility = UtilsKt.toDescriptorVisibility(method.getVisibility());
         if (O.getReceiverType() != null) {
-            i10 = kotlin.collections.o0.f(lr.v.a(JavaMethodDescriptor.ORIGINAL_VALUE_PARAMETER_FOR_EXTENSION_RECEIVER, CollectionsKt.o0(T.getDescriptors())));
+            i10 = kotlin.collections.o0.f(or.v.a(JavaMethodDescriptor.ORIGINAL_VALUE_PARAMETER_FOR_EXTENSION_RECEIVER, CollectionsKt.o0(T.getDescriptors())));
         } else {
             i10 = kotlin.collections.o0.i();
         }
@@ -508,12 +508,12 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
                 }
                 if (javaArrayType != null) {
                     KotlinType transformArrayType = c10.getTypeResolver().transformArrayType(javaArrayType, attributes$default, true);
-                    a10 = lr.v.a(transformArrayType, c10.getModule().getBuiltIns().getArrayElementType(transformArrayType));
+                    a10 = or.v.a(transformArrayType, c10.getModule().getBuiltIns().getArrayElementType(transformArrayType));
                 } else {
                     throw new AssertionError("Vararg parameter should be an array: " + javaValueParameter);
                 }
             } else {
-                a10 = lr.v.a(c10.getTypeResolver().transformJavaType(javaValueParameter.getType(), attributes$default), null);
+                a10 = or.v.a(c10.getTypeResolver().transformJavaType(javaValueParameter.getType(), attributes$default), null);
             }
             KotlinType kotlinType = (KotlinType) a10.a();
             KotlinType kotlinType2 = (KotlinType) a10.b();
@@ -556,7 +556,7 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
     public Collection<DeclarationDescriptor> getContributedDescriptors(@NotNull DescriptorKindFilter kindFilter, @NotNull Function1<? super Name, Boolean> nameFilter) {
         Intrinsics.checkNotNullParameter(kindFilter, "kindFilter");
         Intrinsics.checkNotNullParameter(nameFilter, "nameFilter");
-        return (Collection) this.f33402c.invoke();
+        return (Collection) this.f32926c.invoke();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
@@ -567,7 +567,7 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
         if (!getFunctionNames().contains(name)) {
             return CollectionsKt.l();
         }
-        return (Collection) this.f33406g.invoke(name);
+        return (Collection) this.f32930g.invoke(name);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
@@ -578,7 +578,7 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
         if (!getVariableNames().contains(name)) {
             return CollectionsKt.l();
         }
-        return (Collection) this.f33410k.invoke(name);
+        return (Collection) this.f32934k.invoke(name);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
@@ -605,7 +605,7 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
         if (kindFilter.acceptsKinds(DescriptorKindFilter.Companion.getCLASSIFIERS_MASK())) {
             for (Name name : o(kindFilter, nameFilter)) {
                 if (((Boolean) nameFilter.invoke(name)).booleanValue()) {
-                    kotlin.reflect.jvm.internal.impl.utils.CollectionsKt.addIfNotNull(linkedHashSet, mo1198getContributedClassifier(name, noLookupLocation));
+                    kotlin.reflect.jvm.internal.impl.utils.CollectionsKt.addIfNotNull(linkedHashSet, mo1200getContributedClassifier(name, noLookupLocation));
                 }
             }
         }
@@ -651,16 +651,16 @@ public abstract class LazyJavaScope extends MemberScopeImpl {
 
     public LazyJavaScope(@NotNull LazyJavaResolverContext c10, LazyJavaScope lazyJavaScope) {
         Intrinsics.checkNotNullParameter(c10, "c");
-        this.f33400a = c10;
-        this.f33401b = lazyJavaScope;
-        this.f33402c = c10.getStorageManager().createRecursionTolerantLazyValue(new y(this), CollectionsKt.l());
-        this.f33403d = c10.getStorageManager().createLazyValue(new b0(this));
-        this.f33404e = c10.getStorageManager().createMemoizedFunction(new c0(this));
-        this.f33405f = c10.getStorageManager().createMemoizedFunctionWithNullableValues(new d0(this));
-        this.f33406g = c10.getStorageManager().createMemoizedFunction(new e0(this));
-        this.f33407h = c10.getStorageManager().createLazyValue(new f0(this));
-        this.f33408i = c10.getStorageManager().createLazyValue(new g0(this));
-        this.f33409j = c10.getStorageManager().createLazyValue(new h0(this));
-        this.f33410k = c10.getStorageManager().createMemoizedFunction(new i0(this));
+        this.f32924a = c10;
+        this.f32925b = lazyJavaScope;
+        this.f32926c = c10.getStorageManager().createRecursionTolerantLazyValue(new y(this), CollectionsKt.l());
+        this.f32927d = c10.getStorageManager().createLazyValue(new b0(this));
+        this.f32928e = c10.getStorageManager().createMemoizedFunction(new c0(this));
+        this.f32929f = c10.getStorageManager().createMemoizedFunctionWithNullableValues(new d0(this));
+        this.f32930g = c10.getStorageManager().createMemoizedFunction(new e0(this));
+        this.f32931h = c10.getStorageManager().createLazyValue(new f0(this));
+        this.f32932i = c10.getStorageManager().createLazyValue(new g0(this));
+        this.f32933j = c10.getStorageManager().createLazyValue(new h0(this));
+        this.f32934k = c10.getStorageManager().createMemoizedFunction(new i0(this));
     }
 }

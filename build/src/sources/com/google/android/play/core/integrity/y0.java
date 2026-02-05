@@ -4,5 +4,5 @@ package com.google.android.play.core.integrity;
 public abstract class y0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final z0 f15850a = new z0();
+    private static final z0 f16244a = new z0();
 }

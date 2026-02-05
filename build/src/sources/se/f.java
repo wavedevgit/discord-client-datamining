@@ -9,40 +9,40 @@ import java.util.Map;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f49471a;
+    private final h f49620a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.google.android.gms.common.util.d f49472b;
+    private final com.google.android.gms.common.util.d f49621b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f49473c;
+    private long f49622c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f49474d;
+    private long f49623d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f49475e;
+    private boolean f49624e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Map f49476f;
+    private final Map f49625f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f49477g;
+    private final List f49626g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(h hVar, com.google.android.gms.common.util.d dVar) {
         q.l(hVar);
         q.l(dVar);
-        this.f49471a = hVar;
-        this.f49472b = dVar;
-        this.f49473c = 1800000L;
-        this.f49474d = 3024000000L;
-        this.f49476f = new HashMap();
-        this.f49477g = new ArrayList();
+        this.f49620a = hVar;
+        this.f49621b = dVar;
+        this.f49622c = 1800000L;
+        this.f49623d = 3024000000L;
+        this.f49625f = new HashMap();
+        this.f49626g = new ArrayList();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void a() {
-        this.f49475e = true;
+        this.f49624e = true;
     }
 }

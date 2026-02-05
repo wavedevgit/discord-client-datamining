@@ -1,32 +1,48 @@
 package ji;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class h0 {
+final class h0 extends i0 {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final int f30931a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final long f30932b;
+
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static Object a(Object obj, int i10) {
-        if (obj != null) {
-            return obj;
+    public h0(int i10, long j10) {
+        this.f30931a = i10;
+        this.f30932b = j10;
+    }
+
+    @Override // ji.i0
+    public final int a() {
+        return this.f30931a;
+    }
+
+    @Override // ji.i0
+    public final long b() {
+        return this.f30932b;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
         }
-        StringBuilder sb2 = new StringBuilder(20);
-        sb2.append("at index ");
-        sb2.append(i10);
-        throw new NullPointerException(sb2.toString());
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static Object[] b(Object... objArr) {
-        c(objArr, objArr.length);
-        return objArr;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static Object[] c(Object[] objArr, int i10) {
-        for (int i11 = 0; i11 < i10; i11++) {
-            a(objArr[i11], i11);
+        if (obj instanceof i0) {
+            i0 i0Var = (i0) obj;
+            if (this.f30931a == i0Var.a() && this.f30932b == i0Var.b()) {
+                return true;
+            }
         }
-        return objArr;
+        return false;
     }
 
-    public static Object[] d(Object[] objArr, int i10) {
-        return j0.b(objArr, i10);
+    public final int hashCode() {
+        long j10 = this.f30932b;
+        return ((int) (j10 ^ (j10 >>> 32))) ^ ((this.f30931a ^ 1000003) * 1000003);
+    }
+
+    public final String toString() {
+        return "EventRecord{eventType=" + this.f30931a + ", eventTimestamp=" + this.f30932b + "}";
     }
 }

@@ -19,25 +19,25 @@ import org.jetbrains.annotations.NotNull;
 public final class SignatureEnhancementBuilder {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f33537a = new LinkedHashMap();
+    private final Map f33061a = new LinkedHashMap();
 
     public final Map b() {
-        return this.f33537a;
+        return this.f33061a;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public final class ClassEnhancementBuilder {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f33538a;
+        private final String f33062a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ SignatureEnhancementBuilder f33539b;
+        final /* synthetic */ SignatureEnhancementBuilder f33063b;
 
         public ClassEnhancementBuilder(@NotNull SignatureEnhancementBuilder signatureEnhancementBuilder, String className) {
             Intrinsics.checkNotNullParameter(className, "className");
-            this.f33539b = signatureEnhancementBuilder;
-            this.f33538a = className;
+            this.f33063b = signatureEnhancementBuilder;
+            this.f33062a = className;
         }
 
         public static /* synthetic */ void function$default(ClassEnhancementBuilder classEnhancementBuilder, String str, String str2, Function1 function1, int i10, Object obj) {
@@ -50,7 +50,7 @@ public final class SignatureEnhancementBuilder {
         public final void function(@NotNull String name, String str, @NotNull Function1<? super FunctionEnhancementBuilder, Unit> block) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(block, "block");
-            Map map = this.f33539b.f33537a;
+            Map map = this.f33063b.f33061a;
             FunctionEnhancementBuilder functionEnhancementBuilder = new FunctionEnhancementBuilder(this, name, str);
             block.invoke(functionEnhancementBuilder);
             Pair<String, PredefinedFunctionEnhancementInfo> build = functionEnhancementBuilder.build();
@@ -59,7 +59,7 @@ public final class SignatureEnhancementBuilder {
 
         @NotNull
         public final String getClassName() {
-            return this.f33538a;
+            return this.f33062a;
         }
 
         @SourceDebugExtension({"SMAP\npredefinedEnhancementInfo.kt\nKotlin\n*S Kotlin\n*F\n+ 1 predefinedEnhancementInfo.kt\norg/jetbrains/kotlin/load/java/typeEnhancement/SignatureEnhancementBuilder$ClassEnhancementBuilder$FunctionEnhancementBuilder\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,347:1\n1222#2,2:348\n1252#2,4:350\n1222#2,2:354\n1252#2,4:356\n1563#2:360\n1634#2,3:361\n1563#2:364\n1634#2,3:365\n*S KotlinDebug\n*F\n+ 1 predefinedEnhancementInfo.kt\norg/jetbrains/kotlin/load/java/typeEnhancement/SignatureEnhancementBuilder$ClassEnhancementBuilder$FunctionEnhancementBuilder\n*L\n319#1:348,2\n319#1:350,4\n330#1:354,2\n330#1:356,4\n338#1:360\n338#1:361,3\n339#1:364\n339#1:365,3\n*E\n"})
@@ -67,54 +67,54 @@ public final class SignatureEnhancementBuilder {
         public final class FunctionEnhancementBuilder {
 
             /* renamed from: a  reason: collision with root package name */
-            private final String f33540a;
+            private final String f33064a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final String f33541b;
+            private final String f33065b;
 
             /* renamed from: c  reason: collision with root package name */
-            private final List f33542c;
+            private final List f33066c;
 
             /* renamed from: d  reason: collision with root package name */
-            private Pair f33543d;
+            private Pair f33067d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ ClassEnhancementBuilder f33544e;
+            final /* synthetic */ ClassEnhancementBuilder f33068e;
 
             public FunctionEnhancementBuilder(@NotNull ClassEnhancementBuilder classEnhancementBuilder, String functionName, String str) {
                 Intrinsics.checkNotNullParameter(functionName, "functionName");
-                this.f33544e = classEnhancementBuilder;
-                this.f33540a = functionName;
-                this.f33541b = str;
-                this.f33542c = new ArrayList();
-                this.f33543d = lr.v.a("V", null);
+                this.f33068e = classEnhancementBuilder;
+                this.f33064a = functionName;
+                this.f33065b = str;
+                this.f33066c = new ArrayList();
+                this.f33067d = or.v.a("V", null);
             }
 
             @NotNull
             public final Pair<String, PredefinedFunctionEnhancementInfo> build() {
                 SignatureBuildingComponents signatureBuildingComponents = SignatureBuildingComponents.INSTANCE;
-                String className = this.f33544e.getClassName();
-                String str = this.f33540a;
-                List<Pair> list = this.f33542c;
+                String className = this.f33068e.getClassName();
+                String str = this.f33064a;
+                List<Pair> list = this.f33066c;
                 ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
                 for (Pair pair : list) {
                     arrayList.add((String) pair.c());
                 }
-                String signature = signatureBuildingComponents.signature(className, signatureBuildingComponents.jvmDescriptor(str, arrayList, (String) this.f33543d.c()));
-                TypeEnhancementInfo typeEnhancementInfo = (TypeEnhancementInfo) this.f33543d.d();
-                List<Pair> list2 = this.f33542c;
+                String signature = signatureBuildingComponents.signature(className, signatureBuildingComponents.jvmDescriptor(str, arrayList, (String) this.f33067d.c()));
+                TypeEnhancementInfo typeEnhancementInfo = (TypeEnhancementInfo) this.f33067d.d();
+                List<Pair> list2 = this.f33066c;
                 ArrayList arrayList2 = new ArrayList(CollectionsKt.w(list2, 10));
                 for (Pair pair2 : list2) {
                     arrayList2.add((TypeEnhancementInfo) pair2.d());
                 }
-                return lr.v.a(signature, new PredefinedFunctionEnhancementInfo(typeEnhancementInfo, arrayList2, this.f33541b));
+                return or.v.a(signature, new PredefinedFunctionEnhancementInfo(typeEnhancementInfo, arrayList2, this.f33065b));
             }
 
             public final void parameter(@NotNull String type, @NotNull JavaTypeQualifiers... qualifiers) {
                 TypeEnhancementInfo typeEnhancementInfo;
                 Intrinsics.checkNotNullParameter(type, "type");
                 Intrinsics.checkNotNullParameter(qualifiers, "qualifiers");
-                List list = this.f33542c;
+                List list = this.f33066c;
                 if (qualifiers.length == 0) {
                     typeEnhancementInfo = null;
                 } else {
@@ -125,7 +125,7 @@ public final class SignatureEnhancementBuilder {
                     }
                     typeEnhancementInfo = new TypeEnhancementInfo(linkedHashMap);
                 }
-                list.add(lr.v.a(type, typeEnhancementInfo));
+                list.add(or.v.a(type, typeEnhancementInfo));
             }
 
             public final void returns(@NotNull String type, @NotNull JavaTypeQualifiers... qualifiers) {
@@ -136,14 +136,14 @@ public final class SignatureEnhancementBuilder {
                 for (IndexedValue indexedValue : g12) {
                     linkedHashMap.put(Integer.valueOf(indexedValue.c()), (JavaTypeQualifiers) indexedValue.d());
                 }
-                this.f33543d = lr.v.a(type, new TypeEnhancementInfo(linkedHashMap));
+                this.f33067d = or.v.a(type, new TypeEnhancementInfo(linkedHashMap));
             }
 
             public final void returns(@NotNull JvmPrimitiveType type) {
                 Intrinsics.checkNotNullParameter(type, "type");
                 String desc = type.getDesc();
                 Intrinsics.checkNotNullExpressionValue(desc, "getDesc(...)");
-                this.f33543d = lr.v.a(desc, null);
+                this.f33067d = or.v.a(desc, null);
             }
         }
     }

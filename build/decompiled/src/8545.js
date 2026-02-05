@@ -17,347 +17,153 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5[var0];
     var0 = undefined;
     var3 = var4.bind(var0)(var3);
-    var3 = var3.useLayoutEffect;
+    var3 = var3.useRef;
     var _closure1_slot2 = var3;
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.Platform;
-    var3 = {};
-    var4 = 'function pnpm_hooksTs1(e){const{isClosed,heightWhenOpened}=this.__closure;if(e.height>0){isClosed.value=false;heightWhenOpened.value=e.height;}}';
-    var3.code = var4;
+    var3 = var3.Animated;
     var _closure1_slot3 = var3;
-    var3 = {};
-    var4 = 'function pnpm_hooksTs2(e){const{progress,height}=this.__closure;progress.value=e.progress;height.value=e.height;}';
-    var3.code = var4;
-    var _closure1_slot4 = var3;
-    var3 = {};
-    var4 = 'function pnpm_hooksTs3(e){const{progress,height}=this.__closure;progress.value=e.progress;height.value=e.height;}';
-    var3.code = var4;
-    var _closure1_slot5 = var3;
-    var3 = {};
-    var4 = 'function pnpm_hooksTs4(e){const{isClosed,height,progress}=this.__closure;isClosed.value=e.height===0;height.value=e.height;progress.value=e.progress;}';
-    var3.code = var4;
-    var _closure1_slot6 = var3;
-    var3 = {};
-    var4 = 'function pnpm_hooksTs5(e){const{padding,OS,translate}=this.__closure;if(e.height===0){padding.value=0;}if(OS==="ios"){translate.value=e.progress;}}';
-    var3.code = var4;
-    var _closure1_slot7 = var3;
-    var3 = {};
-    var4 = 'function pnpm_hooksTs6(e){const{OS,translate}=this.__closure;if(OS!=="ios"){translate.value=e.progress;}}';
-    var3.code = var4;
-    var _closure1_slot8 = var3;
-    var3 = {};
-    var4 = 'function pnpm_hooksTs7(e){const{padding,translate}=this.__closure;padding.value=0;translate.value=e.progress;}';
-    var3.code = var4;
-    var _closure1_slot9 = var3;
-    var3 = {};
-    var4 = 'function pnpm_hooksTs8(e){const{padding,OS,translate}=this.__closure;padding.value=e.progress;if(OS!=="ios"){translate.value=e.progress;}}';
-    var3.code = var4;
-    var _closure1_slot10 = var3;
-    var3 = function() {
-        var7 = _closure1_slot0;
-        var9 = _closure1_slot1;
-        var1 = 2;
-        var1 = var9[var1];
-        var6 = undefined;
-        var2 = var7.bind(var6)(var1);
-        var1 = var2.useKeyboardContext;
-        var1 = var1.bind(var2)();
-        var1 = var1.reanimated;
+    var3 = function arg0() {
+        var1 = arg0;
         var _closure2_slot0 = var1;
-        var1 = 3;
-        var2 = var9[var1];
-        var3 = var7.bind(var6)(var2);
-        var2 = var3.useSharedValue;
-        var10 = 0;
-        var2 = var2.bind(var3)(var10);
-        var _closure2_slot1 = var2;
-        var3 = var9[var1];
-        var4 = var7.bind(var6)(var3);
-        var3 = var4.useSharedValue;
-        var4 = var3.bind(var4)(var10);
-        var _closure2_slot2 = var4;
-        var3 = var9[var1];
-        var5 = var7.bind(var6)(var3);
-        var3 = var5.useSharedValue;
-        var3 = var3.bind(var5)(var10);
-        var _closure2_slot3 = var3;
-        var1 = var9[var1];
-        var10 = var7.bind(var6)(var1);
-        var5 = var10.useSharedValue;
-        var1 = true;
-        var1 = var5.bind(var10)(var1);
-        var _closure2_slot4 = var1;
-        var11 = _closure1_slot2;
-        var10 = function() { // Environment: var0
-            var1 = _closure2_slot0;
-            var2 = var1.height;
-            var2 = var2.value;
-            var3 = -var2;
-            var1 = var1.progress;
-            var2 = var1.value;
-            var1 = _closure2_slot1;
-            var1.value = var3;
-            var1 = _closure2_slot2;
-            var1.value = var3;
-            var1 = _closure2_slot3;
-            var1.value = var2;
-            var1 = _closure2_slot4;
-            var0 = 0;
-            var0 = var0 === var2;
-            var1.value = var0;
-            var0 = undefined;
-            return var0;
-        };
-        var5 = new Array(0);
-        var5 = var11.bind(var6)(var10, var5);
-        var5 = 4;
-        var5 = var9[var5];
-        var7 = var7.bind(var6)(var5);
-        var6 = var7.useKeyboardHandler;
-        var5 = {};
-        var9 = function arg0() {
-            _fun68551: for (var _fun68551_ip = 0;;) switch (_fun68551_ip) {
+        var0 = function arg0() {
+            _fun68482: for (var _fun68482_ip = 0;;) switch (_fun68482_ip) {
                 case 0:
-                    var0 = arg0;
-                    var2 = var0.height;
-                    var1 = 0;
-                    if (!(var2 > var1)) {
-                        _fun68551_ip = 44;
-                        continue _fun68551
+                    var1 = arg0;
+                    var _closure3_slot0 = var1;
+                    var2 = function() {
+                        _fun68483: for (var _fun68483_ip = 0;;) switch (_fun68483_ip) {
+                            case 0:
+                                var2 = _closure1_slot0;
+                                var1 = _closure1_slot1;
+                                var0 = 2;
+                                var1 = var1[var0];
+                                var0 = undefined;
+                                var3 = var2.bind(var0)(var1);
+                                var2 = var3.findNodeHandle;
+                                var1 = _closure2_slot0;
+                                var1 = var1.current;
+                                var3 = var2.bind(var3)(var1);
+                                if (!var3) {
+                                    _fun68483_ip = 103;
+                                    continue _fun68483
+                                }
+                            case 51:
+                                var4 = _closure3_slot0;
+                                var2 = 'workletEventHandler';
+                                var2 = var2 in var4;
+                                var1 = _closure3_slot0;
+                                if (var2) {
+                                    _fun68483_ip = 86;
+                                    continue _fun68483
+                                }
+                            case 73:
+                                var2 = var1.registerForEvents;
+                                var2 = var2.bind(var1)(var3);
+                                _fun68483_ip = 103;
+                                continue _fun68483;
+                            case 86:
+                                var2 = var1.workletEventHandler;
+                                var1 = var2.registerForEvents;
+                                var1 = var1.bind(var2)(var3);
+                            case 103:
+                                return var0;
+                        }
+                    };
+                    var1 = _closure2_slot0;
+                    var3 = var1.current;
+                    var1 = undefined;
+                    if (var3) {
+                        _fun68482_ip = 48;
+                        continue _fun68482
                     }
-                case 14:
-                    var3 = _closure2_slot4;
-                    var2 = false;
-                    var3.value = var2;
-                    var1 = _closure2_slot1;
-                    var0 = var0.height;
-                    var1.value = var0;
-                case 44:
-                    var0 = undefined;
+                case 33:
+                    var3 = global;
+                    var3 = var3.queueMicrotask;
+                    var3 = var3.bind(var1)(var2);
+                    _fun68482_ip = 52;
+                    continue _fun68482;
+                case 48:
+                    var1 = var2.bind(var1)();
+                case 52:
+                    var0 = function() { // Environment: var0
+                        _fun68484: for (var _fun68484_ip = 0;;) switch (_fun68484_ip) {
+                            case 0:
+                                var2 = _closure1_slot0;
+                                var1 = _closure1_slot1;
+                                var0 = 2;
+                                var1 = var1[var0];
+                                var0 = undefined;
+                                var3 = var2.bind(var0)(var1);
+                                var2 = var3.findNodeHandle;
+                                var1 = _closure2_slot0;
+                                var1 = var1.current;
+                                var3 = var2.bind(var3)(var1);
+                                if (!var3) {
+                                    _fun68484_ip = 103;
+                                    continue _fun68484
+                                }
+                            case 51:
+                                var4 = _closure3_slot0;
+                                var2 = 'workletEventHandler';
+                                var2 = var2 in var4;
+                                var1 = _closure3_slot0;
+                                if (var2) {
+                                    _fun68484_ip = 86;
+                                    continue _fun68484
+                                }
+                            case 73:
+                                var2 = var1.unregisterFromEvents;
+                                var2 = var2.bind(var1)(var3);
+                                _fun68484_ip = 103;
+                                continue _fun68484;
+                            case 86:
+                                var2 = var1.workletEventHandler;
+                                var1 = var2.unregisterFromEvents;
+                                var1 = var1.bind(var2)(var3);
+                            case 103:
+                                return var0;
+                        }
+                    };
                     return var0;
             }
         };
-        var10 = {};
-        var10.isClosed = var1;
-        var10.heightWhenOpened = var2;
-        var9.__closure = var10;
-        var10 = 12249381939606.0;
-        var9.__workletHash = var10;
-        var10 = _closure1_slot3;
-        var9.__initData = var10;
-        var5.onStart = var9;
-        var9 = function arg0() {
-            var0 = arg0;
-            var3 = _closure2_slot3;
-            var2 = var0.progress;
-            var3.value = var2;
-            var1 = _closure2_slot2;
-            var0 = var0.height;
-            var1.value = var0;
-            var0 = undefined;
-            return var0;
-        };
-        var10 = {};
-        var10.progress = var3;
-        var10.height = var4;
-        var9.__closure = var10;
-        var10 = 6522928191084.0;
-        var9.__workletHash = var10;
-        var10 = _closure1_slot4;
-        var9.__initData = var10;
-        var5.onMove = var9;
-        var9 = function arg0() {
-            var0 = arg0;
-            var3 = _closure2_slot3;
-            var2 = var0.progress;
-            var3.value = var2;
-            var1 = _closure2_slot2;
-            var0 = var0.height;
-            var1.value = var0;
-            var0 = undefined;
-            return var0;
-        };
-        var10 = {};
-        var10.progress = var3;
-        var10.height = var4;
-        var9.__closure = var10;
-        var10 = 4743203414413.0;
-        var9.__workletHash = var10;
-        var10 = _closure1_slot5;
-        var9.__initData = var10;
-        var5.onInteractive = var9;
-        var0 = function arg0() {
-            var0 = arg0;
-            var3 = _closure2_slot4;
-            var4 = var0.height;
-            var2 = 0;
-            var2 = var2 === var4;
-            var3.value = var2;
-            var3 = _closure2_slot2;
-            var2 = var0.height;
-            var3.value = var2;
-            var1 = _closure2_slot3;
-            var0 = var0.progress;
-            var1.value = var0;
-            var0 = undefined;
-            return var0;
-        };
-        var9 = {};
-        var9.isClosed = var1;
-        var9.height = var4;
-        var9.progress = var3;
-        var0.__closure = var9;
-        var9 = 7189399485148.0;
-        var0.__workletHash = var9;
-        var8 = _closure1_slot6;
-        var0.__initData = var8;
-        var5.onEnd = var0;
-        var0 = new Array(0);
-        var0 = var6.bind(var7)(var5, var0);
-        var0 = {};
-        var0.height = var4;
-        var0.progress = var3;
-        var0.heightWhenOpened = var2;
-        var0.isClosed = var1;
         return var0;
     };
-    var2.useKeyboardAnimation = var3;
-    var1 = function() {
-        var5 = _closure1_slot0;
-        var7 = _closure1_slot1;
-        var1 = 2;
-        var1 = var7[var1];
-        var4 = undefined;
-        var2 = var5.bind(var4)(var1);
-        var1 = var2.useKeyboardContext;
-        var1 = var1.bind(var2)();
-        var1 = var1.reanimated;
-        var _closure2_slot0 = var1;
-        var2 = 3;
-        var1 = var7[var2];
-        var3 = var5.bind(var4)(var1);
-        var1 = var3.useSharedValue;
-        var8 = 0;
-        var1 = var1.bind(var3)(var8);
-        var _closure2_slot1 = var1;
-        var2 = var7[var2];
-        var3 = var5.bind(var4)(var2);
-        var2 = var3.useSharedValue;
-        var2 = var2.bind(var3)(var8);
-        var _closure2_slot2 = var2;
-        var9 = _closure1_slot2;
-        var8 = function() { // Environment: var0
-            var1 = _closure2_slot1;
-            var0 = _closure2_slot0;
-            var0 = var0.progress;
-            var0 = var0.value;
-            var1.value = var0;
-            var0 = undefined;
-            return var0;
-        };
-        var3 = new Array(0);
-        var3 = var9.bind(var4)(var8, var3);
-        var3 = 4;
-        var3 = var7[var3];
-        var5 = var5.bind(var4)(var3);
-        var4 = var5.useKeyboardHandler;
-        var3 = {};
-        var7 = function arg0() {
-            _fun68557: for (var _fun68557_ip = 0;;) switch (_fun68557_ip) {
-                case 0:
-                    var0 = arg0;
-                    var0 = var0.height;
-                    var1 = 0;
-                    if (!(var1 === var0)) {
-                        _fun68557_ip = 27;
-                        continue _fun68557
+    var2.useEventHandlerRegistration = var3;
+    var1 = function arg0, arg1() {
+        _fun68485: for (var _fun68485_ip = 0;;) switch (_fun68485_ip) {
+            case 0:
+                var2 = _closure1_slot2;
+                var0 = undefined;
+                var3 = null;
+                var0 = var2.bind(var0)(var3);
+                var2 = var0.current;
+                if (!(var3 === var2)) {
+                    _fun68485_ip = 67;
+                    continue _fun68485
+                }
+            case 25:
+                var1 = _closure1_slot3;
+                var4 = var1.Value;
+                var1 = var4.prototype;
+                var2 = Object.create(var1, {
+                    constructor: {
+                        value: var4
                     }
-                case 14:
-                    var0 = _closure2_slot1;
-                    var0.value = var1;
-                case 27:
-                    var0 = undefined;
-                    return var0;
-            }
-        };
-        var9 = {};
-        var9.padding = var1;
-        var8 = 'android';
-        var9.OS = var8;
-        var9.translate = var2;
-        var7.__closure = var9;
-        var9 = 12261942243858.0;
-        var7.__workletHash = var9;
-        var9 = _closure1_slot7;
-        var7.__initData = var9;
-        var3.onStart = var7;
-        var7 = function arg0() {
-            var1 = _closure2_slot2;
-            var0 = arg0;
-            var0 = var0.progress;
-            var1.value = var0;
-            var0 = undefined;
-            return var0;
-        };
-        var9 = {};
-        var9.OS = var8;
-        var9.translate = var2;
-        var7.__closure = var9;
-        var9 = 4704193858755.0;
-        var7.__workletHash = var9;
-        var9 = _closure1_slot8;
-        var7.__initData = var9;
-        var3.onMove = var7;
-        var7 = function arg0() {
-            var2 = _closure2_slot1;
-            var1 = 0;
-            var2.value = var1;
-            var1 = _closure2_slot2;
-            var0 = arg0;
-            var0 = var0.progress;
-            var1.value = var0;
-            var0 = undefined;
-            return var0;
-        };
-        var9 = {};
-        var9.padding = var1;
-        var9.translate = var2;
-        var7.__closure = var9;
-        var9 = 3250463859117.0;
-        var7.__workletHash = var9;
-        var9 = _closure1_slot9;
-        var7.__initData = var9;
-        var3.onInteractive = var7;
-        var0 = function arg0() {
-            var0 = arg0;
-            var3 = _closure2_slot1;
-            var2 = var0.progress;
-            var3.value = var2;
-            var1 = _closure2_slot2;
-            var0 = var0.progress;
-            var1.value = var0;
-            var0 = undefined;
-            return var0;
-        };
-        var7 = {};
-        var7.padding = var1;
-        var7.OS = var8;
-        var7.translate = var2;
-        var0.__closure = var7;
-        var7 = 14425204766932.0;
-        var0.__workletHash = var7;
-        var6 = _closure1_slot10;
-        var0.__initData = var6;
-        var3.onEnd = var0;
-        var0 = new Array(0);
-        var0 = var4.bind(var5)(var3, var0);
-        var0 = {};
-        var0.translate = var2;
-        var0.padding = var1;
-        return var0;
+                });
+                var6 = arg0;
+                var5 = arg1;
+                var7 = var2;
+                var1 = new var7[var4](var6, var5, var4);
+                var1 = var1 instanceof Object ? var1 : var2;
+                var0.current = var1;
+            case 67:
+                var0 = var0.current;
+                return var0;
+        }
     };
-    var2.useTranslateAnimation = var1;
+    var2.useAnimatedValue = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8531, 3721, 8532]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8546]);

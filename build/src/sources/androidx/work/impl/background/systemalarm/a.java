@@ -14,12 +14,12 @@ import q4.h;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f5543a = m.i("Alarms");
+    private static final String f5655a = m.i("Alarms");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: androidx.work.impl.background.systemalarm.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class C0078a {
+    public static class C0079a {
         static void a(AlarmManager alarmManager, int i10, long j10, PendingIntent pendingIntent) {
             alarmManager.setExact(i10, j10, pendingIntent);
         }
@@ -29,9 +29,9 @@ public abstract class a {
         j E = workDatabase.E();
         i a10 = E.a(mVar);
         if (a10 != null) {
-            b(context, mVar, a10.f44933c);
+            b(context, mVar, a10.f44863c);
             m e10 = m.e();
-            String str = f5543a;
+            String str = f5655a;
             e10.a(str, "Removing SystemIdInfo for workSpecId (" + mVar + ")");
             E.d(mVar);
         }
@@ -42,7 +42,7 @@ public abstract class a {
         PendingIntent service = PendingIntent.getService(context, i10, b.c(context, mVar), 603979776);
         if (service != null && alarmManager != null) {
             m e10 = m.e();
-            String str = f5543a;
+            String str = f5655a;
             e10.a(str, "Cancelling existing alarm with (workSpecId, systemId) (" + mVar + ", " + i10 + ")");
             alarmManager.cancel(service);
         }
@@ -52,8 +52,8 @@ public abstract class a {
         j E = workDatabase.E();
         i a10 = E.a(mVar);
         if (a10 != null) {
-            b(context, mVar, a10.f44933c);
-            d(context, mVar, a10.f44933c, j10);
+            b(context, mVar, a10.f44863c);
+            d(context, mVar, a10.f44863c, j10);
             return;
         }
         int c10 = new h(workDatabase).c();
@@ -65,7 +65,7 @@ public abstract class a {
         AlarmManager alarmManager = (AlarmManager) context.getSystemService("alarm");
         PendingIntent service = PendingIntent.getService(context, i10, b.c(context, mVar), 201326592);
         if (alarmManager != null) {
-            C0078a.a(alarmManager, 0, j10, service);
+            C0079a.a(alarmManager, 0, j10, service);
         }
     }
 }

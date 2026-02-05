@@ -48,30 +48,30 @@ public final class InputConfirmationCode_AttributesJsonAdapter extends h {
     @NotNull
     public InputConfirmationCode.Attributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         String str3 = null;
         JsonLogicBoolean jsonLogicBoolean = null;
         JsonLogicBoolean jsonLogicBoolean2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 str3 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 jsonLogicBoolean = (JsonLogicBoolean) this.nullableJsonLogicBooleanAdapter.fromJson(reader);
-            } else if (A0 == 4) {
+            } else if (W == 4) {
                 jsonLogicBoolean2 = (JsonLogicBoolean) this.nullableJsonLogicBooleanAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new InputConfirmationCode.Attributes(str, str2, str3, jsonLogicBoolean, jsonLogicBoolean2);
     }
 
@@ -79,16 +79,16 @@ public final class InputConfirmationCode_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, InputConfirmationCode.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.l();
-            writer.A0("prefill");
+            writer.k();
+            writer.W("prefill");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefill());
-            writer.A0("label");
+            writer.W("label");
             this.nullableStringAdapter.toJson(writer, attributes.getLabel());
-            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholder());
-            writer.A0(ViewProps.HIDDEN);
+            writer.W(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
-            writer.A0("disabled");
+            writer.W("disabled");
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getDisabled());
             writer.E();
             return;

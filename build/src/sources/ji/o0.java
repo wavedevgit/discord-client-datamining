@@ -1,47 +1,21 @@
 package ji;
 
-import java.io.Serializable;
+import android.os.Bundle;
+import android.os.IBinder;
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class o0 extends i0 implements Serializable {
-
-    /* renamed from: d  reason: collision with root package name */
-    final i0 f31701d;
-
+public final class o0 extends a implements q0 {
     /* JADX INFO: Access modifiers changed from: package-private */
-    public o0(i0 i0Var) {
-        this.f31701d = (i0) ii.m.j(i0Var);
+    public o0(IBinder iBinder) {
+        super(iBinder, "com.google.android.play.core.integrity.protocol.IIntegrityService");
     }
 
-    @Override // ji.i0, java.util.Comparator
-    public int compare(Object obj, Object obj2) {
-        return this.f31701d.compare(obj2, obj);
-    }
-
-    @Override // java.util.Comparator
-    public boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj instanceof o0) {
-            return this.f31701d.equals(((o0) obj).f31701d);
-        }
-        return false;
-    }
-
-    @Override // ji.i0
-    public i0 h() {
-        return this.f31701d;
-    }
-
-    public int hashCode() {
-        return -this.f31701d.hashCode();
-    }
-
-    public String toString() {
-        String valueOf = String.valueOf(this.f31701d);
-        StringBuilder sb2 = new StringBuilder(valueOf.length() + 10);
-        sb2.append(valueOf);
-        sb2.append(".reverse()");
-        return sb2.toString();
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // ji.q0
+    public final void i(Bundle bundle, s0 s0Var) {
+        Parcel e10 = e();
+        f0.c(e10, bundle);
+        e10.writeStrongBinder(s0Var);
+        f(2, e10);
     }
 }

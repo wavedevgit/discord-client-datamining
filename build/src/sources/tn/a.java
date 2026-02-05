@@ -1,102 +1,144 @@
 package tn;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import sn.d0;
+import sn.h0;
+import sn.i0;
+import sn.t0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<a> CREATOR = new C0625a();
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Float[] f50139d;
+public abstract class a {
 
     /* renamed from: tn.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0625a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final a createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            int readInt = parcel.readInt();
-            Float[] fArr = new Float[readInt];
-            for (int i10 = 0; i10 != readInt; i10++) {
-                fArr[i10] = Float.valueOf(parcel.readFloat());
+    public static final class C0651a extends a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final sn.g f50841a;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public C0651a(sn.g extractedBarcode) {
+            super(null);
+            Intrinsics.checkNotNullParameter(extractedBarcode, "extractedBarcode");
+            this.f50841a = extractedBarcode;
+        }
+
+        public final sn.g a() {
+            return this.f50841a;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b extends a {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final b f50842a = new b();
+
+        private b() {
+            super(null);
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof b)) {
+                return true;
             }
-            return new a(fArr);
+            return false;
         }
 
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final a[] newArray(int i10) {
-            return new a[i10];
+        public int hashCode() {
+            return 801215118;
         }
-    }
 
-    public a(Float[] averageBrightness3x3) {
-        Intrinsics.checkNotNullParameter(averageBrightness3x3, "averageBrightness3x3");
-        this.f50139d = averageBrightness3x3;
-    }
-
-    public final float a() {
-        return ((this.f50139d[7].floatValue() * 2.0f) + ((this.f50139d[6].floatValue() + this.f50139d[8].floatValue()) * 0.5f)) / 3;
-    }
-
-    public final float b() {
-        return ((this.f50139d[3].floatValue() * 2.0f) + ((this.f50139d[0].floatValue() + this.f50139d[6].floatValue()) * 0.5f)) / 3;
-    }
-
-    public final float c() {
-        return ((this.f50139d[5].floatValue() * 2.0f) + ((this.f50139d[2].floatValue() + this.f50139d[8].floatValue()) * 0.5f)) / 3;
-    }
-
-    public final float d() {
-        return ((this.f50139d[1].floatValue() * 2.0f) + ((this.f50139d[0].floatValue() + this.f50139d[2].floatValue()) * 0.5f)) / 3;
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        Float[] fArr = this.f50139d;
-        int length = fArr.length;
-        dest.writeInt(length);
-        for (int i11 = 0; i11 != length; i11++) {
-            dest.writeFloat(fArr[i11].floatValue());
+        public String toString() {
+            return "Empty";
         }
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public /* synthetic */ a(java.lang.Float[] r2, int r3, kotlin.jvm.internal.DefaultConstructorMarker r4) {
-        /*
-            r1 = this;
-            r3 = r3 & 1
-            if (r3 == 0) goto L16
-            r2 = 9
-            java.lang.Float[] r3 = new java.lang.Float[r2]
-            r4 = 0
-        L9:
-            if (r4 >= r2) goto L15
-            r0 = 0
-            java.lang.Float r0 = java.lang.Float.valueOf(r0)
-            r3[r4] = r0
-            int r4 = r4 + 1
-            goto L9
-        L15:
-            r2 = r3
-        L16:
-            r1.<init>(r2)
-            return
-        */
-        throw new UnsupportedOperationException("Method not decompiled: tn.a.<init>(java.lang.Float[], int, kotlin.jvm.internal.DefaultConstructorMarker):void");
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c extends a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final t0.c f50843a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final a f50844b;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public c(t0.c side, a frontOrBackData) {
+            super(null);
+            Intrinsics.checkNotNullParameter(side, "side");
+            Intrinsics.checkNotNullParameter(frontOrBackData, "frontOrBackData");
+            this.f50843a = side;
+            this.f50844b = frontOrBackData;
+        }
+
+        public final a a() {
+            return this.f50844b;
+        }
+
+        public final t0.c b() {
+            return this.f50843a;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class d extends a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final h0 f50845a;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public d(h0 metadata) {
+            super(null);
+            Intrinsics.checkNotNullParameter(metadata, "metadata");
+            this.f50845a = metadata;
+        }
+
+        public final h0 a() {
+            return this.f50845a;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class e extends a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final i0 f50846a;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public e(i0 imageLightCondition) {
+            super(null);
+            Intrinsics.checkNotNullParameter(imageLightCondition, "imageLightCondition");
+            this.f50846a = imageLightCondition;
+        }
+
+        public final i0 a() {
+            return this.f50846a;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class f extends a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final d0 f50847a;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public f(d0 extractedTexts) {
+            super(null);
+            Intrinsics.checkNotNullParameter(extractedTexts, "extractedTexts");
+            this.f50847a = extractedTexts;
+        }
+
+        public final d0 a() {
+            return this.f50847a;
+        }
+    }
+
+    public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    private a() {
     }
 }

@@ -15,11 +15,11 @@ import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.button.MaterialButton;
 import java.util.List;
-import yg.j;
-import yg.k;
+import zg.j;
+import zg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class ExtendedFloatingActionButton extends MaterialButton implements CoordinatorLayout.b {
-    private static final int F = j.f54263t;
+    private static final int F = j.f55721t;
     static final Property G = new a(Float.class, "width");
     static final Property H = new b(Float.class, "height");
     static final Property I = new c(Float.class, ViewProps.PADDING_START);
@@ -115,17 +115,17 @@ public abstract class ExtendedFloatingActionButton extends MaterialButton implem
     protected static class ExtendedFloatingActionButtonBehavior<T extends ExtendedFloatingActionButton> extends CoordinatorLayout.c {
 
         /* renamed from: d  reason: collision with root package name */
-        private Rect f14604d;
+        private Rect f14998d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f14605e;
+        private boolean f14999e;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f14606i;
+        private boolean f15000i;
 
         public ExtendedFloatingActionButtonBehavior() {
-            this.f14605e = false;
-            this.f14606i = true;
+            this.f14999e = false;
+            this.f15000i = true;
         }
 
         private static boolean K(View view) {
@@ -144,10 +144,10 @@ public abstract class ExtendedFloatingActionButton extends MaterialButton implem
             if (!N(appBarLayout, extendedFloatingActionButton)) {
                 return false;
             }
-            if (this.f14604d == null) {
-                this.f14604d = new Rect();
+            if (this.f14998d == null) {
+                this.f14998d = new Rect();
             }
-            Rect rect = this.f14604d;
+            Rect rect = this.f14998d;
             com.google.android.material.internal.b.a(coordinatorLayout, appBarLayout, rect);
             if (rect.bottom <= appBarLayout.getMinimumHeightForVisibleOverlappingContent()) {
                 O(extendedFloatingActionButton);
@@ -166,7 +166,7 @@ public abstract class ExtendedFloatingActionButton extends MaterialButton implem
 
         protected void I(ExtendedFloatingActionButton extendedFloatingActionButton) {
             int i10;
-            if (this.f14606i) {
+            if (this.f15000i) {
                 i10 = 3;
             } else {
                 i10 = 0;
@@ -211,7 +211,7 @@ public abstract class ExtendedFloatingActionButton extends MaterialButton implem
 
         protected void O(ExtendedFloatingActionButton extendedFloatingActionButton) {
             int i10;
-            if (this.f14606i) {
+            if (this.f15000i) {
                 i10 = 2;
             } else {
                 i10 = 1;
@@ -227,8 +227,8 @@ public abstract class ExtendedFloatingActionButton extends MaterialButton implem
 
         @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
         public void k(CoordinatorLayout.f fVar) {
-            if (fVar.f2868h == 0) {
-                fVar.f2868h = 80;
+            if (fVar.f2980h == 0) {
+                fVar.f2980h = 80;
             }
         }
 
@@ -247,8 +247,8 @@ public abstract class ExtendedFloatingActionButton extends MaterialButton implem
         public ExtendedFloatingActionButtonBehavior(@NonNull Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
             TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.M1);
-            this.f14605e = obtainStyledAttributes.getBoolean(k.N1, false);
-            this.f14606i = obtainStyledAttributes.getBoolean(k.O1, true);
+            this.f14999e = obtainStyledAttributes.getBoolean(k.N1, false);
+            this.f15000i = obtainStyledAttributes.getBoolean(k.O1, true);
             obtainStyledAttributes.recycle();
         }
     }

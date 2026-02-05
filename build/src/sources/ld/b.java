@@ -9,7 +9,7 @@ public final class b extends i {
     public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    public final byte[] f36717e;
+    public final byte[] f36644e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -31,7 +31,7 @@ public final class b extends i {
 
     public b(String str, byte[] bArr) {
         super(str);
-        this.f36717e = bArr;
+        this.f36644e = bArr;
     }
 
     public boolean equals(Object obj) {
@@ -40,7 +40,7 @@ public final class b extends i {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (this.f36741d.equals(bVar.f36741d) && Arrays.equals(this.f36717e, bVar.f36717e)) {
+            if (this.f36668d.equals(bVar.f36668d) && Arrays.equals(this.f36644e, bVar.f36644e)) {
                 return true;
             }
         }
@@ -48,17 +48,17 @@ public final class b extends i {
     }
 
     public int hashCode() {
-        return ((527 + this.f36741d.hashCode()) * 31) + Arrays.hashCode(this.f36717e);
+        return ((527 + this.f36668d.hashCode()) * 31) + Arrays.hashCode(this.f36644e);
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f36741d);
-        parcel.writeByteArray(this.f36717e);
+        parcel.writeString(this.f36668d);
+        parcel.writeByteArray(this.f36644e);
     }
 
     b(Parcel parcel) {
         super((String) w0.j(parcel.readString()));
-        this.f36717e = (byte[]) w0.j(parcel.createByteArray());
+        this.f36644e = (byte[]) w0.j(parcel.createByteArray());
     }
 }

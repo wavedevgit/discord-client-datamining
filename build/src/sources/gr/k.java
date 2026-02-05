@@ -1,25 +1,43 @@
 package gr;
 
-import android.text.Spannable;
-import android.widget.TextView;
-import java.lang.ref.WeakReference;
+import gr.j;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class k {
+class k implements j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final WeakReference f26550a;
+    private final Map f25187a;
 
-    public k(TextView textView) {
-        this.f26550a = new WeakReference(textView);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static class a implements j.a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final Map f25188a = new HashMap(3);
+
+        @Override // gr.j.a
+        public j.a a(Class cls, s sVar) {
+            if (sVar == null) {
+                this.f25188a.remove(cls);
+                return this;
+            }
+            this.f25188a.put(cls, sVar);
+            return this;
+        }
+
+        @Override // gr.j.a
+        public j build() {
+            return new k(Collections.unmodifiableMap(this.f25188a));
+        }
     }
 
-    public static void a(Spannable spannable, TextView textView) {
-        k[] kVarArr = (k[]) spannable.getSpans(0, spannable.length(), k.class);
-        if (kVarArr != null) {
-            for (k kVar : kVarArr) {
-                spannable.removeSpan(kVar);
-            }
-        }
-        spannable.setSpan(new k(textView), 0, spannable.length(), 18);
+    k(Map map) {
+        this.f25187a = map;
+    }
+
+    @Override // gr.j
+    public s a(Class cls) {
+        return (s) this.f25187a.get(cls);
     }
 }

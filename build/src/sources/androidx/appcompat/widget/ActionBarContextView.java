@@ -20,39 +20,39 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
     private int E;
 
     /* renamed from: t  reason: collision with root package name */
-    private CharSequence f1399t;
+    private CharSequence f1511t;
 
     /* renamed from: u  reason: collision with root package name */
-    private CharSequence f1400u;
+    private CharSequence f1512u;
 
     /* renamed from: v  reason: collision with root package name */
-    private View f1401v;
+    private View f1513v;
 
     /* renamed from: w  reason: collision with root package name */
-    private View f1402w;
+    private View f1514w;
 
     /* renamed from: x  reason: collision with root package name */
-    private View f1403x;
+    private View f1515x;
 
     /* renamed from: y  reason: collision with root package name */
-    private LinearLayout f1404y;
+    private LinearLayout f1516y;
 
     /* renamed from: z  reason: collision with root package name */
-    private TextView f1405z;
+    private TextView f1517z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements View.OnClickListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ActionMode f1406d;
+        final /* synthetic */ ActionMode f1518d;
 
         a(ActionMode actionMode) {
-            this.f1406d = actionMode;
+            this.f1518d = actionMode;
         }
 
         @Override // android.view.View.OnClickListener
         public void onClick(View view) {
-            this.f1406d.c();
+            this.f1518d.c();
         }
     }
 
@@ -62,23 +62,23 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
 
     private void i() {
         int i10;
-        if (this.f1404y == null) {
-            LayoutInflater.from(getContext()).inflate(f.g.f22972a, this);
+        if (this.f1516y == null) {
+            LayoutInflater.from(getContext()).inflate(f.g.f21997a, this);
             LinearLayout linearLayout = (LinearLayout) getChildAt(getChildCount() - 1);
-            this.f1404y = linearLayout;
-            this.f1405z = (TextView) linearLayout.findViewById(f.f.f22951f);
-            this.A = (TextView) this.f1404y.findViewById(f.f.f22950e);
+            this.f1516y = linearLayout;
+            this.f1517z = (TextView) linearLayout.findViewById(f.f.f21976f);
+            this.A = (TextView) this.f1516y.findViewById(f.f.f21975e);
             if (this.B != 0) {
-                this.f1405z.setTextAppearance(getContext(), this.B);
+                this.f1517z.setTextAppearance(getContext(), this.B);
             }
             if (this.C != 0) {
                 this.A.setTextAppearance(getContext(), this.C);
             }
         }
-        this.f1405z.setText(this.f1399t);
-        this.A.setText(this.f1400u);
-        boolean isEmpty = TextUtils.isEmpty(this.f1399t);
-        boolean isEmpty2 = TextUtils.isEmpty(this.f1400u);
+        this.f1517z.setText(this.f1511t);
+        this.A.setText(this.f1512u);
+        boolean isEmpty = TextUtils.isEmpty(this.f1511t);
+        boolean isEmpty2 = TextUtils.isEmpty(this.f1512u);
         TextView textView = this.A;
         int i11 = 8;
         if (!isEmpty2) {
@@ -87,13 +87,13 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
             i10 = 8;
         }
         textView.setVisibility(i10);
-        LinearLayout linearLayout2 = this.f1404y;
+        LinearLayout linearLayout2 = this.f1516y;
         if (!isEmpty || !isEmpty2) {
             i11 = 0;
         }
         linearLayout2.setVisibility(i11);
-        if (this.f1404y.getParent() == null) {
-            addView(this.f1404y);
+        if (this.f1516y.getParent() == null) {
+            addView(this.f1516y);
         }
     }
 
@@ -103,7 +103,7 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
     }
 
     public void g() {
-        if (this.f1401v == null) {
+        if (this.f1513v == null) {
             k();
         }
     }
@@ -129,39 +129,39 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
     }
 
     public CharSequence getSubtitle() {
-        return this.f1400u;
+        return this.f1512u;
     }
 
     public CharSequence getTitle() {
-        return this.f1399t;
+        return this.f1511t;
     }
 
     public void h(ActionMode actionMode) {
-        View view = this.f1401v;
+        View view = this.f1513v;
         if (view == null) {
             View inflate = LayoutInflater.from(getContext()).inflate(this.E, (ViewGroup) this, false);
-            this.f1401v = inflate;
+            this.f1513v = inflate;
             addView(inflate);
         } else if (view.getParent() == null) {
-            addView(this.f1401v);
+            addView(this.f1513v);
         }
-        View findViewById = this.f1401v.findViewById(f.f.f22955j);
-        this.f1402w = findViewById;
+        View findViewById = this.f1513v.findViewById(f.f.f21980j);
+        this.f1514w = findViewById;
         findViewById.setOnClickListener(new a(actionMode));
         androidx.appcompat.view.menu.e eVar = (androidx.appcompat.view.menu.e) actionMode.e();
-        c cVar = this.f1581o;
+        c cVar = this.f1693o;
         if (cVar != null) {
             cVar.y();
         }
         c cVar2 = new c(getContext());
-        this.f1581o = cVar2;
+        this.f1693o = cVar2;
         cVar2.J(true);
         ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(-2, -1);
-        eVar.c(this.f1581o, this.f1579e);
-        ActionMenuView actionMenuView = (ActionMenuView) this.f1581o.o(this);
-        this.f1580i = actionMenuView;
+        eVar.c(this.f1693o, this.f1691e);
+        ActionMenuView actionMenuView = (ActionMenuView) this.f1693o.o(this);
+        this.f1692i = actionMenuView;
         actionMenuView.setBackground(null);
-        addView(this.f1580i, layoutParams);
+        addView(this.f1692i, layoutParams);
     }
 
     public boolean j() {
@@ -170,17 +170,17 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
 
     public void k() {
         removeAllViews();
-        this.f1403x = null;
-        this.f1580i = null;
-        this.f1581o = null;
-        View view = this.f1402w;
+        this.f1515x = null;
+        this.f1692i = null;
+        this.f1693o = null;
+        View view = this.f1514w;
         if (view != null) {
             view.setOnClickListener(null);
         }
     }
 
     public boolean l() {
-        c cVar = this.f1581o;
+        c cVar = this.f1693o;
         if (cVar != null) {
             return cVar.K();
         }
@@ -190,10 +190,10 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
     @Override // android.view.ViewGroup, android.view.View
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        c cVar = this.f1581o;
+        c cVar = this.f1693o;
         if (cVar != null) {
             cVar.B();
-            this.f1581o.C();
+            this.f1693o.C();
         }
     }
 
@@ -216,9 +216,9 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
         }
         int paddingTop = getPaddingTop();
         int paddingTop2 = ((i13 - i11) - getPaddingTop()) - getPaddingBottom();
-        View view = this.f1401v;
+        View view = this.f1513v;
         if (view != null && view.getVisibility() != 8) {
-            ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) this.f1401v.getLayoutParams();
+            ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) this.f1513v.getLayoutParams();
             if (b10) {
                 i14 = marginLayoutParams.rightMargin;
             } else {
@@ -231,14 +231,14 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
             }
             int i16 = i15;
             int d10 = androidx.appcompat.widget.a.d(paddingLeft, i14, b10);
-            paddingLeft = androidx.appcompat.widget.a.d(d10 + e(this.f1401v, d10, paddingTop, paddingTop2, b10), i16, b10);
+            paddingLeft = androidx.appcompat.widget.a.d(d10 + e(this.f1513v, d10, paddingTop, paddingTop2, b10), i16, b10);
         }
         int i17 = paddingLeft;
-        LinearLayout linearLayout = this.f1404y;
-        if (linearLayout != null && this.f1403x == null && linearLayout.getVisibility() != 8) {
-            i17 += e(this.f1404y, i17, paddingTop, paddingTop2, b10);
+        LinearLayout linearLayout = this.f1516y;
+        if (linearLayout != null && this.f1515x == null && linearLayout.getVisibility() != 8) {
+            i17 += e(this.f1516y, i17, paddingTop, paddingTop2, b10);
         }
-        View view2 = this.f1403x;
+        View view2 = this.f1515x;
         if (view2 != null) {
             e(view2, i17, paddingTop, paddingTop2, b10);
         }
@@ -248,7 +248,7 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
             paddingRight = (i12 - i10) - getPaddingRight();
         }
         int i18 = paddingRight;
-        ActionMenuView actionMenuView = this.f1580i;
+        ActionMenuView actionMenuView = this.f1692i;
         if (actionMenuView != null) {
             e(actionMenuView, i18, paddingTop, paddingTop2, !b10);
         }
@@ -263,7 +263,7 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
         if (View.MeasureSpec.getMode(i10) == 1073741824) {
             if (View.MeasureSpec.getMode(i11) != 0) {
                 int size = View.MeasureSpec.getSize(i10);
-                int i15 = this.f1582p;
+                int i15 = this.f1694p;
                 if (i15 <= 0) {
                     i15 = View.MeasureSpec.getSize(i11);
                 }
@@ -271,21 +271,21 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
                 int paddingLeft = (size - getPaddingLeft()) - getPaddingRight();
                 int i16 = i15 - paddingTop;
                 int makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(i16, Integer.MIN_VALUE);
-                View view = this.f1401v;
+                View view = this.f1513v;
                 if (view != null) {
                     int c10 = c(view, paddingLeft, makeMeasureSpec, 0);
-                    ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) this.f1401v.getLayoutParams();
+                    ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) this.f1513v.getLayoutParams();
                     paddingLeft = c10 - (marginLayoutParams.leftMargin + marginLayoutParams.rightMargin);
                 }
-                ActionMenuView actionMenuView = this.f1580i;
+                ActionMenuView actionMenuView = this.f1692i;
                 if (actionMenuView != null && actionMenuView.getParent() == this) {
-                    paddingLeft = c(this.f1580i, paddingLeft, makeMeasureSpec, 0);
+                    paddingLeft = c(this.f1692i, paddingLeft, makeMeasureSpec, 0);
                 }
-                LinearLayout linearLayout = this.f1404y;
-                if (linearLayout != null && this.f1403x == null) {
+                LinearLayout linearLayout = this.f1516y;
+                if (linearLayout != null && this.f1515x == null) {
                     if (this.D) {
-                        this.f1404y.measure(View.MeasureSpec.makeMeasureSpec(0, 0), makeMeasureSpec);
-                        int measuredWidth = this.f1404y.getMeasuredWidth();
+                        this.f1516y.measure(View.MeasureSpec.makeMeasureSpec(0, 0), makeMeasureSpec);
+                        int measuredWidth = this.f1516y.getMeasuredWidth();
                         if (measuredWidth <= paddingLeft) {
                             z10 = true;
                         } else {
@@ -294,7 +294,7 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
                         if (z10) {
                             paddingLeft -= measuredWidth;
                         }
-                        LinearLayout linearLayout2 = this.f1404y;
+                        LinearLayout linearLayout2 = this.f1516y;
                         if (z10) {
                             i13 = 0;
                         } else {
@@ -305,7 +305,7 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
                         paddingLeft = c(linearLayout, paddingLeft, makeMeasureSpec, 0);
                     }
                 }
-                View view2 = this.f1403x;
+                View view2 = this.f1515x;
                 if (view2 != null) {
                     ViewGroup.LayoutParams layoutParams = view2.getLayoutParams();
                     int i17 = layoutParams.width;
@@ -324,9 +324,9 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
                     if (i18 >= 0) {
                         i16 = Math.min(i18, i16);
                     }
-                    this.f1403x.measure(View.MeasureSpec.makeMeasureSpec(paddingLeft, i12), View.MeasureSpec.makeMeasureSpec(i16, i14));
+                    this.f1515x.measure(View.MeasureSpec.makeMeasureSpec(paddingLeft, i12), View.MeasureSpec.makeMeasureSpec(i16, i14));
                 }
-                if (this.f1582p <= 0) {
+                if (this.f1694p <= 0) {
                     int childCount = getChildCount();
                     int i19 = 0;
                     for (int i20 = 0; i20 < childCount; i20++) {
@@ -353,19 +353,19 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
 
     @Override // androidx.appcompat.widget.a
     public void setContentHeight(int i10) {
-        this.f1582p = i10;
+        this.f1694p = i10;
     }
 
     public void setCustomView(View view) {
         LinearLayout linearLayout;
-        View view2 = this.f1403x;
+        View view2 = this.f1515x;
         if (view2 != null) {
             removeView(view2);
         }
-        this.f1403x = view;
-        if (view != null && (linearLayout = this.f1404y) != null) {
+        this.f1515x = view;
+        if (view != null && (linearLayout = this.f1516y) != null) {
             removeView(linearLayout);
-            this.f1404y = null;
+            this.f1516y = null;
         }
         if (view != null) {
             addView(view);
@@ -374,12 +374,12 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
     }
 
     public void setSubtitle(CharSequence charSequence) {
-        this.f1400u = charSequence;
+        this.f1512u = charSequence;
         i();
     }
 
     public void setTitle(CharSequence charSequence) {
-        this.f1399t = charSequence;
+        this.f1511t = charSequence;
         i();
         androidx.core.view.h0.q0(this, charSequence);
     }
@@ -402,17 +402,17 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
     }
 
     public ActionBarContextView(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.f22878g);
+        this(context, attributeSet, f.a.f21903g);
     }
 
     public ActionBarContextView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        v0 v10 = v0.v(context, attributeSet, f.j.f23130y, i10, 0);
-        setBackground(v10.g(f.j.f23135z));
+        v0 v10 = v0.v(context, attributeSet, f.j.f22155y, i10, 0);
+        setBackground(v10.g(f.j.f22160z));
         this.B = v10.n(f.j.D, 0);
         this.C = v10.n(f.j.C, 0);
-        this.f1582p = v10.m(f.j.B, 0);
-        this.E = v10.n(f.j.A, f.g.f22975d);
+        this.f1694p = v10.m(f.j.B, 0);
+        this.E = v10.n(f.j.A, f.g.f22000d);
         v10.x();
     }
 }

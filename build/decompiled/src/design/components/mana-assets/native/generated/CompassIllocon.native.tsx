@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CompassIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6064, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6068, 2]);

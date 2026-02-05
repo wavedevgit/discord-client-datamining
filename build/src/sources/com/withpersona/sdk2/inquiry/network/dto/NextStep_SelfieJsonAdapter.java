@@ -52,49 +52,49 @@ public final class NextStep_SelfieJsonAdapter extends h {
     @NotNull
     public NextStep.Selfie fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         NextStep.Selfie.Config config = null;
         StepStyles.SelfieStepStyle selfieStepStyle = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw vm.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+                    throw ym.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
                 }
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 config = (NextStep.Selfie.Config) this.configAdapter.fromJson(reader);
                 if (config == null) {
-                    throw vm.c.x("config", "config", reader);
+                    throw ym.c.x("config", "config", reader);
                 }
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 selfieStepStyle = (StepStyles.SelfieStepStyle) this.nullableSelfieStepStyleAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         if (str != null) {
             if (config != null) {
                 return new NextStep.Selfie(str, config, selfieStepStyle);
             }
-            throw vm.c.o("config", "config", reader);
+            throw ym.c.o("config", "config", reader);
         }
-        throw vm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw ym.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.Selfie selfie) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfie != null) {
-            writer.l();
-            writer.A0(StackTraceHelper.NAME_KEY);
+            writer.k();
+            writer.W(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(writer, selfie.getName());
-            writer.A0("config");
+            writer.W("config");
             this.configAdapter.toJson(writer, selfie.getConfig());
-            writer.A0("styles");
+            writer.W("styles");
             this.nullableSelfieStepStyleAdapter.toJson(writer, selfie.getStyles());
             writer.E();
             return;

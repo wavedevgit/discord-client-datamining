@@ -17,44 +17,44 @@ import com.reactnativecommunity.webview.RNCWebViewManager;
 class e1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f1634a;
+    private final Context f1746a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final View f1635b;
+    private final View f1747b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final TextView f1636c;
+    private final TextView f1748c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final WindowManager.LayoutParams f1637d;
+    private final WindowManager.LayoutParams f1749d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Rect f1638e;
+    private final Rect f1750e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int[] f1639f;
+    private final int[] f1751f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int[] f1640g;
+    private final int[] f1752g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e1(Context context) {
         WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
-        this.f1637d = layoutParams;
-        this.f1638e = new Rect();
-        this.f1639f = new int[2];
-        this.f1640g = new int[2];
-        this.f1634a = context;
-        View inflate = LayoutInflater.from(context).inflate(f.g.f22990s, (ViewGroup) null);
-        this.f1635b = inflate;
-        this.f1636c = (TextView) inflate.findViewById(f.f.f22965t);
+        this.f1749d = layoutParams;
+        this.f1750e = new Rect();
+        this.f1751f = new int[2];
+        this.f1752g = new int[2];
+        this.f1746a = context;
+        View inflate = LayoutInflater.from(context).inflate(f.g.f22015s, (ViewGroup) null);
+        this.f1747b = inflate;
+        this.f1748c = (TextView) inflate.findViewById(f.f.f21990t);
         layoutParams.setTitle(getClass().getSimpleName());
         layoutParams.packageName = context.getPackageName();
         layoutParams.type = RNCWebViewManager.COMMAND_CLEAR_HISTORY;
         layoutParams.width = -2;
         layoutParams.height = -2;
         layoutParams.format = -3;
-        layoutParams.windowAnimations = f.i.f23006a;
+        layoutParams.windowAnimations = f.i.f22031a;
         layoutParams.flags = 24;
     }
 
@@ -64,12 +64,12 @@ class e1 {
         int i13;
         int i14;
         layoutParams.token = view.getApplicationWindowToken();
-        int dimensionPixelOffset = this.f1634a.getResources().getDimensionPixelOffset(f.d.f22917k);
+        int dimensionPixelOffset = this.f1746a.getResources().getDimensionPixelOffset(f.d.f21942k);
         if (view.getWidth() < dimensionPixelOffset) {
             i10 = view.getWidth() / 2;
         }
         if (view.getHeight() >= dimensionPixelOffset) {
-            int dimensionPixelOffset2 = this.f1634a.getResources().getDimensionPixelOffset(f.d.f22916j);
+            int dimensionPixelOffset2 = this.f1746a.getResources().getDimensionPixelOffset(f.d.f21941j);
             height = i11 + dimensionPixelOffset2;
             i12 = i11 - dimensionPixelOffset2;
         } else {
@@ -77,11 +77,11 @@ class e1 {
             i12 = 0;
         }
         layoutParams.gravity = 49;
-        Resources resources = this.f1634a.getResources();
+        Resources resources = this.f1746a.getResources();
         if (z10) {
-            i13 = f.d.f22919m;
+            i13 = f.d.f21944m;
         } else {
-            i13 = f.d.f22918l;
+            i13 = f.d.f21943l;
         }
         int dimensionPixelOffset3 = resources.getDimensionPixelOffset(i13);
         View b10 = b(view);
@@ -89,10 +89,10 @@ class e1 {
             Log.e("TooltipPopup", "Cannot find app view");
             return;
         }
-        b10.getWindowVisibleDisplayFrame(this.f1638e);
-        Rect rect = this.f1638e;
+        b10.getWindowVisibleDisplayFrame(this.f1750e);
+        Rect rect = this.f1750e;
         if (rect.left < 0 && rect.top < 0) {
-            Resources resources2 = this.f1634a.getResources();
+            Resources resources2 = this.f1746a.getResources();
             int identifier = resources2.getIdentifier("status_bar_height", "dimen", "android");
             if (identifier != 0) {
                 i14 = resources2.getDimensionPixelSize(identifier);
@@ -100,21 +100,21 @@ class e1 {
                 i14 = 0;
             }
             DisplayMetrics displayMetrics = resources2.getDisplayMetrics();
-            this.f1638e.set(0, i14, displayMetrics.widthPixels, displayMetrics.heightPixels);
+            this.f1750e.set(0, i14, displayMetrics.widthPixels, displayMetrics.heightPixels);
         }
-        b10.getLocationOnScreen(this.f1640g);
-        view.getLocationOnScreen(this.f1639f);
-        int[] iArr = this.f1639f;
+        b10.getLocationOnScreen(this.f1752g);
+        view.getLocationOnScreen(this.f1751f);
+        int[] iArr = this.f1751f;
         int i15 = iArr[0];
-        int[] iArr2 = this.f1640g;
+        int[] iArr2 = this.f1752g;
         int i16 = i15 - iArr2[0];
         iArr[0] = i16;
         iArr[1] = iArr[1] - iArr2[1];
         layoutParams.x = (i16 + i10) - (b10.getWidth() / 2);
         int makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, 0);
-        this.f1635b.measure(makeMeasureSpec, makeMeasureSpec);
-        int measuredHeight = this.f1635b.getMeasuredHeight();
-        int i17 = this.f1639f[1];
+        this.f1747b.measure(makeMeasureSpec, makeMeasureSpec);
+        int measuredHeight = this.f1747b.getMeasuredHeight();
+        int i17 = this.f1751f[1];
         int i18 = ((i12 + i17) - dimensionPixelOffset3) - measuredHeight;
         int i19 = i17 + height + dimensionPixelOffset3;
         if (z10) {
@@ -123,7 +123,7 @@ class e1 {
             } else {
                 layoutParams.y = i19;
             }
-        } else if (measuredHeight + i19 <= this.f1638e.height()) {
+        } else if (measuredHeight + i19 <= this.f1750e.height()) {
             layoutParams.y = i19;
         } else {
             layoutParams.y = i18;
@@ -148,11 +148,11 @@ class e1 {
         if (!d()) {
             return;
         }
-        ((WindowManager) this.f1634a.getSystemService("window")).removeView(this.f1635b);
+        ((WindowManager) this.f1746a.getSystemService("window")).removeView(this.f1747b);
     }
 
     boolean d() {
-        if (this.f1635b.getParent() != null) {
+        if (this.f1747b.getParent() != null) {
             return true;
         }
         return false;
@@ -163,8 +163,8 @@ class e1 {
         if (d()) {
             c();
         }
-        this.f1636c.setText(charSequence);
-        a(view, i10, i11, z10, this.f1637d);
-        ((WindowManager) this.f1634a.getSystemService("window")).addView(this.f1635b, this.f1637d);
+        this.f1748c.setText(charSequence);
+        a(view, i10, i11, z10, this.f1749d);
+        ((WindowManager) this.f1746a.getSystemService("window")).addView(this.f1747b, this.f1749d);
     }
 }

@@ -12,16 +12,16 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface Annotations extends Iterable<AnnotationDescriptor>, KMappedMarker {
     @NotNull
-    public static final Companion Companion = Companion.f32809a;
+    public static final Companion Companion = Companion.f32333a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f32809a = new Companion();
+        static final /* synthetic */ Companion f32333a = new Companion();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Annotations f32810b = new Annotations() { // from class: kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations$Companion$EMPTY$1
+        private static final Annotations f32334b = new Annotations() { // from class: kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations$Companion$EMPTY$1
             public Void findAnnotation(FqName fqName) {
                 Intrinsics.checkNotNullParameter(fqName, "fqName");
                 return null;
@@ -48,7 +48,7 @@ public interface Annotations extends Iterable<AnnotationDescriptor>, KMappedMark
 
             @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations
             /* renamed from: findAnnotation  reason: collision with other method in class */
-            public /* bridge */ /* synthetic */ AnnotationDescriptor mo1193findAnnotation(FqName fqName) {
+            public /* bridge */ /* synthetic */ AnnotationDescriptor mo1195findAnnotation(FqName fqName) {
                 return (AnnotationDescriptor) findAnnotation(fqName);
             }
         };
@@ -60,14 +60,14 @@ public interface Annotations extends Iterable<AnnotationDescriptor>, KMappedMark
         public final Annotations create(@NotNull List<? extends AnnotationDescriptor> annotations) {
             Intrinsics.checkNotNullParameter(annotations, "annotations");
             if (annotations.isEmpty()) {
-                return f32810b;
+                return f32334b;
             }
             return new AnnotationsImpl(annotations);
         }
 
         @NotNull
         public final Annotations getEMPTY() {
-            return f32810b;
+            return f32334b;
         }
     }
 
@@ -94,7 +94,7 @@ public interface Annotations extends Iterable<AnnotationDescriptor>, KMappedMark
 
         public static boolean hasAnnotation(@NotNull Annotations annotations, @NotNull FqName fqName) {
             Intrinsics.checkNotNullParameter(fqName, "fqName");
-            if (annotations.mo1193findAnnotation(fqName) != null) {
+            if (annotations.mo1195findAnnotation(fqName) != null) {
                 return true;
             }
             return false;
@@ -102,7 +102,7 @@ public interface Annotations extends Iterable<AnnotationDescriptor>, KMappedMark
     }
 
     /* renamed from: findAnnotation */
-    AnnotationDescriptor mo1193findAnnotation(@NotNull FqName fqName);
+    AnnotationDescriptor mo1195findAnnotation(@NotNull FqName fqName);
 
     boolean hasAnnotation(@NotNull FqName fqName);
 

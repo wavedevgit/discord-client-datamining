@@ -1,41 +1,43 @@
 package zs;
 
-import ct.e;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import ts.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e implements KSerializer {
+public final class e implements s {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f56134a = new e();
+    private final l f56233a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f56135b = ct.j.b("kotlinx.datetime.Instant", e.i.f19842a);
-
-    private e() {
+    public e(l directive) {
+        Intrinsics.checkNotNullParameter(directive, "directive");
+        this.f56233a = directive;
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public ts.e deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return e.a.g(ts.e.Companion, decoder.z(), null, 2, null);
+    @Override // zs.o
+    public at.e a() {
+        return this.f56233a.a();
     }
 
-    @Override // at.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, ts.e value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        encoder.F(value.toString());
+    @Override // zs.o
+    public bt.q b() {
+        return this.f56233a.b();
     }
 
-    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f56135b;
+    public final l c() {
+        return this.f56233a;
+    }
+
+    public boolean equals(Object obj) {
+        if ((obj instanceof e) && Intrinsics.areEqual(this.f56233a, ((e) obj).f56233a)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return this.f56233a.hashCode();
+    }
+
+    public String toString() {
+        return "BasicFormatStructure(" + this.f56233a + ')';
     }
 }

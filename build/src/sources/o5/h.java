@@ -6,33 +6,33 @@ import java.util.List;
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f42373a;
+    private final List f42279a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f42374b;
+    private final List f42280b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f42375c;
+    private final List f42281c;
 
     public h(List list) {
-        this.f42375c = list;
-        this.f42373a = new ArrayList(list.size());
-        this.f42374b = new ArrayList(list.size());
+        this.f42281c = list;
+        this.f42279a = new ArrayList(list.size());
+        this.f42280b = new ArrayList(list.size());
         for (int i10 = 0; i10 < list.size(); i10++) {
-            this.f42373a.add(((s5.i) list.get(i10)).b().a());
-            this.f42374b.add(((s5.i) list.get(i10)).c().a());
+            this.f42279a.add(((s5.i) list.get(i10)).b().a());
+            this.f42280b.add(((s5.i) list.get(i10)).c().a());
         }
     }
 
     public List a() {
-        return this.f42373a;
+        return this.f42279a;
     }
 
     public List b() {
-        return this.f42375c;
+        return this.f42281c;
     }
 
     public List c() {
-        return this.f42374b;
+        return this.f42280b;
     }
 }

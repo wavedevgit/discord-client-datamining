@@ -1,64 +1,44 @@
 package ur;
 
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a extends tr.a {
+public final class a {
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* renamed from: ur.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0650a {
-        @NotNull
+    /* renamed from: d  reason: collision with root package name */
+    public static final a f51654d = new a("COROUTINE_SUSPENDED", 0);
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final C0650a f50855a = new C0650a();
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f51655e = new a("UNDECIDED", 1);
 
-        /* renamed from: b  reason: collision with root package name */
-        public static final Integer f50856b;
+    /* renamed from: i  reason: collision with root package name */
+    public static final a f51656i = new a("RESUMED", 2);
 
-        static {
-            Integer num;
-            Object obj;
-            Integer num2 = null;
-            try {
-                obj = Class.forName("android.os.Build$VERSION").getField("SDK_INT").get(null);
-            } catch (Throwable unused) {
-            }
-            if (obj instanceof Integer) {
-                num = (Integer) obj;
-                if (num != null && num.intValue() > 0) {
-                    num2 = num;
-                }
-                f50856b = num2;
-            }
-            num = null;
-            if (num != null) {
-                num2 = num;
-            }
-            f50856b = num2;
-        }
+    /* renamed from: o  reason: collision with root package name */
+    private static final /* synthetic */ a[] f51657o;
 
-        private C0650a() {
-        }
+    /* renamed from: p  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f51658p;
+
+    static {
+        a[] a10 = a();
+        f51657o = a10;
+        f51658p = vr.a.a(a10);
     }
 
-    private final boolean c(int i10) {
-        Integer num = C0650a.f50856b;
-        if (num != null && num.intValue() < i10) {
-            return false;
-        }
-        return true;
+    private a(String str, int i10) {
     }
 
-    @Override // tr.a
-    public void a(Throwable cause, Throwable exception) {
-        Intrinsics.checkNotNullParameter(cause, "cause");
-        Intrinsics.checkNotNullParameter(exception, "exception");
-        if (c(19)) {
-            cause.addSuppressed(exception);
-        } else {
-            super.a(cause, exception);
-        }
+    private static final /* synthetic */ a[] a() {
+        return new a[]{f51654d, f51655e, f51656i};
+    }
+
+    public static a valueOf(String str) {
+        return (a) Enum.valueOf(a.class, str);
+    }
+
+    public static a[] values() {
+        return (a[]) f51657o.clone();
     }
 }

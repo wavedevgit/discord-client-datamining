@@ -20,29 +20,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/perceptual_volume/PerceptualVolumeUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun36178: for (var _fun36178_ip = 0;;) switch (_fun36178_ip) {
+        _fun36180: for (var _fun36180_ip = 0;;) switch (_fun36180_ip) {
             case 0:
                 var1 = arg0;
                 var2 = arguments[1];
                 var0 = undefined;
                 if (!(var2 === var0)) {
-                    _fun36178_ip = 15;
-                    continue _fun36178
+                    _fun36180_ip = 15;
+                    continue _fun36180
                 }
             case 12:
                 var2 = 100;
             case 15:
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun36178_ip = 111;
-                    continue _fun36178
+                    _fun36180_ip = 111;
+                    continue _fun36180
                 }
             case 21:
                 var6 = var1 / var2;
                 var1 = 1;
                 if (!(!(var6 < var1))) {
-                    _fun36178_ip = 75;
-                    continue _fun36178
+                    _fun36180_ip = 75;
+                    continue _fun36180
                 }
             case 32:
                 var3 = global;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 20;
                 var1 = var7 / var1;
                 var1 = var4.bind(var5)(var3, var1);
-                _fun36178_ip = 105;
-                continue _fun36178;
+                _fun36180_ip = 105;
+                continue _fun36180;
             case 75:
                 var3 = global;
                 var5 = var3.Math;
@@ -72,29 +72,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.perceptualToAmplitude = var3;
     var1 = function arg0() {
-        _fun36179: for (var _fun36179_ip = 0;;) switch (_fun36179_ip) {
+        _fun36181: for (var _fun36181_ip = 0;;) switch (_fun36181_ip) {
             case 0:
                 var1 = arg0;
                 var2 = arguments[1];
                 var0 = undefined;
                 if (!(var2 === var0)) {
-                    _fun36179_ip = 15;
-                    continue _fun36179
+                    _fun36181_ip = 15;
+                    continue _fun36181
                 }
             case 12:
                 var2 = 100;
             case 15:
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun36179_ip = 107;
-                    continue _fun36179
+                    _fun36181_ip = 107;
+                    continue _fun36181
                 }
             case 21:
                 var6 = var1 / var2;
                 var3 = 1;
                 if (!(!(var6 < var3))) {
-                    _fun36179_ip = 71;
-                    continue _fun36179
+                    _fun36181_ip = 71;
+                    continue _fun36181
                 }
             case 32:
                 var1 = global;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 6;
                 var1 = var4 / var1;
                 var1 = var1 + var3;
-                _fun36179_ip = 101;
-                continue _fun36179;
+                _fun36181_ip = 101;
+                continue _fun36181;
             case 71:
                 var3 = global;
                 var5 = var3.Math;

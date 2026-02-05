@@ -1,39 +1,20 @@
 package yp;
 
-import android.os.Parcelable;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyles;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import kotlin.collections.o0;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
+import bn.b0;
+import kotlin.jvm.internal.Reflection;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface b extends Parcelable {
+public final class b extends b0 {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
+    /* renamed from: b  reason: collision with root package name */
+    public static final b f54908b = new b();
 
-        /* renamed from: a  reason: collision with root package name */
-        private final Map f55157a = new LinkedHashMap();
-
-        public final a a(String str, Function1 cb2) {
-            Intrinsics.checkNotNullParameter(cb2, "cb");
-            if (str == null) {
-                return this;
-            }
-            this.f55157a.put(str, cb2);
-            return this;
-        }
-
-        public final List b() {
-            return o0.A(this.f55157a);
-        }
+    private b() {
+        super(Reflection.getOrCreateKotlinClass(a.class));
     }
 
-    List C0();
-
-    List getComponents();
-
-    StepStyles.UiStepStyle getStyles();
+    @Override // bn.b0
+    /* renamed from: b */
+    public a a() {
+        throw new IllegalStateException("Unset");
+    }
 }

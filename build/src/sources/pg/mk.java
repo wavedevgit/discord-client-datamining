@@ -11,7 +11,7 @@ public final class mk extends a implements IInterface {
         super(iBinder, "com.google.mlkit.vision.text.aidls.ITextRecognizer");
     }
 
-    public final xk S0(sf.a aVar, kk kkVar) {
+    public final xk W0(sf.a aVar, kk kkVar) {
         xk createFromParcel;
         Parcel e10 = e();
         b1.b(e10, aVar);
@@ -28,11 +28,11 @@ public final class mk extends a implements IInterface {
         return xkVar;
     }
 
-    public final void T0() {
+    public final void X0() {
         h(1, e());
     }
 
-    public final void U0() {
+    public final void Y0() {
         h(2, e());
     }
 }

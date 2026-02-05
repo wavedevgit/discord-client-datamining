@@ -8,10 +8,10 @@ import java.util.List;
 public final class p implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f44945a;
+    private final r3.u f44875a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f44946b;
+    private final r3.i f44876b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -41,8 +41,8 @@ public final class p implements o {
     }
 
     public p(r3.u uVar) {
-        this.f44945a = uVar;
-        this.f44946b = new a(uVar);
+        this.f44875a = uVar;
+        this.f44876b = new a(uVar);
     }
 
     public static List c() {
@@ -52,14 +52,14 @@ public final class p implements o {
     @Override // p4.o
     public List a(String str) {
         String string;
-        r3.x l10 = r3.x.l("SELECT name FROM workname WHERE work_spec_id=?", 1);
+        r3.x k10 = r3.x.k("SELECT name FROM workname WHERE work_spec_id=?", 1);
         if (str == null) {
-            l10.P1(1);
+            k10.P1(1);
         } else {
-            l10.h1(1, str);
+            k10.h1(1, str);
         }
-        this.f44945a.d();
-        Cursor b10 = t3.b.b(this.f44945a, l10, false, null);
+        this.f44875a.d();
+        Cursor b10 = t3.b.b(this.f44875a, k10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -73,19 +73,19 @@ public final class p implements o {
             return arrayList;
         } finally {
             b10.close();
-            l10.B();
+            k10.y();
         }
     }
 
     @Override // p4.o
     public void b(n nVar) {
-        this.f44945a.d();
-        this.f44945a.e();
+        this.f44875a.d();
+        this.f44875a.e();
         try {
-            this.f44946b.j(nVar);
-            this.f44945a.A();
+            this.f44876b.j(nVar);
+            this.f44875a.A();
         } finally {
-            this.f44945a.i();
+            this.f44875a.i();
         }
     }
 }

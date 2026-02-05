@@ -1,45 +1,45 @@
 package pg;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class ya implements ui.d {
+final class ya implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ya f45989a = new ya();
+    static final ya f45919a = new ya();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f45990b;
+    private static final xi.c f45920b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f45991c;
+    private static final xi.c f45921c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f45992d;
+    private static final xi.c f45922d;
 
     static {
-        c.b a10 = ui.c.a("inferenceCommonLogEvent");
+        c.b a10 = xi.c.a("inferenceCommonLogEvent");
         v1 v1Var = new v1();
         v1Var.a(1);
-        f45990b = a10.b(v1Var.b()).a();
-        c.b a11 = ui.c.a("imageInfo");
+        f45920b = a10.b(v1Var.b()).a();
+        c.b a11 = xi.c.a("imageInfo");
         v1 v1Var2 = new v1();
         v1Var2.a(2);
-        f45991c = a11.b(v1Var2.b()).a();
-        c.b a12 = ui.c.a("recognizerOptions");
+        f45921c = a11.b(v1Var2.b()).a();
+        c.b a12 = xi.c.a("recognizerOptions");
         v1 v1Var3 = new v1();
         v1Var3.a(3);
-        f45992d = a12.b(v1Var3.b()).a();
+        f45922d = a12.b(v1Var3.b()).a();
     }
 
     private ya() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         rh rhVar = (rh) obj;
-        ui.e eVar = (ui.e) obj2;
-        eVar.b(f45990b, rhVar.b());
-        eVar.b(f45991c, rhVar.a());
-        eVar.b(f45992d, rhVar.c());
+        xi.e eVar = (xi.e) obj2;
+        eVar.d(f45920b, rhVar.b());
+        eVar.d(f45921c, rhVar.a());
+        eVar.d(f45922d, rhVar.c());
     }
 }

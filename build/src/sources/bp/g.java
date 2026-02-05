@@ -1,19 +1,23 @@
 package bp;
 
-import androidx.activity.result.ActivityResultLauncher;
-import kotlin.jvm.internal.Intrinsics;
+import bp.e;
+import zq.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g {
+public final class g implements e.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ActivityResultLauncher f6669a;
+    private final f f7099a;
 
-    public g(ActivityResultLauncher passportNfcReaderLauncher) {
-        Intrinsics.checkNotNullParameter(passportNfcReaderLauncher, "passportNfcReaderLauncher");
-        this.f6669a = passportNfcReaderLauncher;
+    g(f fVar) {
+        this.f7099a = fVar;
     }
 
-    public final ActivityResultLauncher a() {
-        return this.f6669a;
+    public static h b(f fVar) {
+        return zq.e.a(new g(fVar));
+    }
+
+    @Override // bp.e.a
+    public e a(String str) {
+        return this.f7099a.b(str);
     }
 }

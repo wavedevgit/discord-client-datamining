@@ -45,7 +45,7 @@ public final class NextStep_GovernmentId_AssetConfig_SelectPageJsonAdapter exten
     @NotNull
     public NextStep.GovernmentId.AssetConfig.SelectPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         RemoteImage remoteImage = null;
         RemoteImage remoteImage2 = null;
         RemoteImage remoteImage3 = null;
@@ -53,28 +53,28 @@ public final class NextStep_GovernmentId_AssetConfig_SelectPageJsonAdapter exten
         RemoteImage remoteImage5 = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 remoteImage2 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -3;
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 remoteImage3 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -5;
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 remoteImage4 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -9;
-            } else if (A0 == 4) {
+            } else if (W == 4) {
                 remoteImage5 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -17;
             }
         }
-        reader.y();
+        reader.z();
         if (i10 == -32) {
             RemoteImage remoteImage6 = remoteImage5;
             RemoteImage remoteImage7 = remoteImage4;
@@ -87,7 +87,7 @@ public final class NextStep_GovernmentId_AssetConfig_SelectPageJsonAdapter exten
         RemoteImage remoteImage12 = remoteImage;
         Constructor<NextStep.GovernmentId.AssetConfig.SelectPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.SelectPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, vm.c.f51688c);
+            constructor = NextStep.GovernmentId.AssetConfig.SelectPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, ym.c.f54853c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -100,16 +100,16 @@ public final class NextStep_GovernmentId_AssetConfig_SelectPageJsonAdapter exten
     public void toJson(@NotNull t writer, NextStep.GovernmentId.AssetConfig.SelectPage selectPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selectPage != null) {
-            writer.l();
-            writer.A0("headerPictograph");
+            writer.k();
+            writer.W("headerPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, selectPage.getHeaderPictograph());
-            writer.A0("iconDriversLicense");
+            writer.W("iconDriversLicense");
             this.nullableRemoteImageAdapter.toJson(writer, selectPage.getIconDriversLicense());
-            writer.A0("iconPassport");
+            writer.W("iconPassport");
             this.nullableRemoteImageAdapter.toJson(writer, selectPage.getIconPassport());
-            writer.A0("iconNationalId");
+            writer.W("iconNationalId");
             this.nullableRemoteImageAdapter.toJson(writer, selectPage.getIconNationalId());
-            writer.A0("iconGovernmentId");
+            writer.W("iconGovernmentId");
             this.nullableRemoteImageAdapter.toJson(writer, selectPage.getIconGovernmentId());
             writer.E();
             return;

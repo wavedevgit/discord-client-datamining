@@ -1,50 +1,50 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class z1 implements ui.d {
+final class z1 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z1 f41820a = new z1();
+    static final z1 f41280a = new z1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41821b;
+    private static final xi.c f41281b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41822c;
+    private static final xi.c f41282c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41823d;
+    private static final xi.c f41283d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41824e;
+    private static final xi.c f41284e;
 
     static {
-        c.b a10 = ui.c.a("remoteModelOptions");
+        c.b a10 = xi.c.a("remoteModelOptions");
         f fVar = new f();
         fVar.a(1);
-        f41821b = a10.b(fVar.b()).a();
-        c.b a11 = ui.c.a("localModelOptions");
+        f41281b = a10.b(fVar.b()).a();
+        c.b a11 = xi.c.a("localModelOptions");
         f fVar2 = new f();
         fVar2.a(2);
-        f41822c = a11.b(fVar2.b()).a();
-        c.b a12 = ui.c.a("errorCodes");
+        f41282c = a11.b(fVar2.b()).a();
+        c.b a12 = xi.c.a("errorCodes");
         f fVar3 = new f();
         fVar3.a(3);
-        f41823d = a12.b(fVar3.b()).a();
-        c.b a13 = ui.c.a("modelInitializationMs");
+        f41283d = a12.b(fVar3.b()).a();
+        c.b a13 = xi.c.a("modelInitializationMs");
         f fVar4 = new f();
         fVar4.a(4);
-        f41824e = a13.b(fVar4.b()).a();
+        f41284e = a13.b(fVar4.b()).a();
     }
 
     private z1() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

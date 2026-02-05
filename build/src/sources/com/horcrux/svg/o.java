@@ -10,7 +10,7 @@ import java.util.HashMap;
 class o extends q {
 
     /* renamed from: i  reason: collision with root package name */
-    private ReadableArray f16603i;
+    private ReadableArray f16997i;
 
     public o(ReactContext reactContext) {
         super(reactContext);
@@ -21,9 +21,9 @@ class o extends q {
         Bitmap bitmap2;
         Bitmap createBitmap = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(createBitmap);
-        int size = this.f16603i.size();
+        int size = this.f16997i.size();
         for (int i10 = 0; i10 < size; i10++) {
-            String string = this.f16603i.getString(i10);
+            String string = this.f16997i.getString(i10);
             if (string.isEmpty()) {
                 bitmap2 = bitmap;
             } else {
@@ -37,7 +37,7 @@ class o extends q {
     }
 
     public void k(ReadableArray readableArray) {
-        this.f16603i = readableArray;
+        this.f16997i = readableArray;
         invalidate();
     }
 }

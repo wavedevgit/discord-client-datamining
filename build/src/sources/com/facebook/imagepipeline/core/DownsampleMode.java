@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class DownsampleMode {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final DownsampleMode f10078d = new DownsampleMode("ALWAYS", 0);
+    public static final DownsampleMode f10463d = new DownsampleMode("ALWAYS", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final DownsampleMode f10079e = new DownsampleMode("AUTO", 1);
+    public static final DownsampleMode f10464e = new DownsampleMode("AUTO", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final DownsampleMode f10080i = new DownsampleMode("NEVER", 2);
+    public static final DownsampleMode f10465i = new DownsampleMode("NEVER", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ DownsampleMode[] f10081o;
+    private static final /* synthetic */ DownsampleMode[] f10466o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f10082p;
+    private static final /* synthetic */ EnumEntries f10467p;
 
     static {
         DownsampleMode[] a10 = a();
-        f10081o = a10;
-        f10082p = sr.a.a(a10);
+        f10466o = a10;
+        f10467p = vr.a.a(a10);
     }
 
     private DownsampleMode(String str, int i10) {
     }
 
     private static final /* synthetic */ DownsampleMode[] a() {
-        return new DownsampleMode[]{f10078d, f10079e, f10080i};
+        return new DownsampleMode[]{f10463d, f10464e, f10465i};
     }
 
     public static DownsampleMode valueOf(String str) {
@@ -39,6 +39,6 @@ public final class DownsampleMode {
     }
 
     public static DownsampleMode[] values() {
-        return (DownsampleMode[]) f10081o.clone();
+        return (DownsampleMode[]) f10466o.clone();
     }
 }

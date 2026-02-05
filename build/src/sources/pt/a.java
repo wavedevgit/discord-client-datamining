@@ -1,17 +1,17 @@
 package pt;
 
-import java.text.ParsePosition;
-import mt.o;
-import mt.q;
-import nt.j;
-import nt.t;
+import java.util.List;
+import pt.l0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a extends t {
-
-    /* renamed from: k  reason: collision with root package name */
-    public static final mt.c f46625k = nt.a.e("COUNT_OF_PATTERN_SYMBOLS", Integer.class);
-
-    void i(o oVar, Appendable appendable, mt.d dVar, j jVar, char c10, int i10, int i11);
-
-    Integer u(CharSequence charSequence, ParsePosition parsePosition, mt.d dVar, q qVar);
+public abstract class a implements l0 {
+    public boolean b() {
+        List a10 = a();
+        int size = a10.size();
+        for (int i10 = 0; i10 < size; i10++) {
+            if (((l0.a) a10.get(i10)).a() > 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

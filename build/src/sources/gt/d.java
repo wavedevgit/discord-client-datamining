@@ -1,13 +1,17 @@
 package gt;
 
-import kotlin.jvm.functions.Function1;
-import kotlin.reflect.KClass;
-import kotlinx.serialization.KSerializer;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface d {
-    void a(KClass kClass, KClass kClass2, KSerializer kSerializer);
+public final class d extends x0 {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public d(SerialDescriptor elementDesc) {
+        super(elementDesc, null);
+        Intrinsics.checkNotNullParameter(elementDesc, "elementDesc");
+    }
 
-    void b(KClass kClass, Function1 function1);
-
-    void c(KClass kClass, Function1 function1);
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public String h() {
+        return "kotlin.Array";
+    }
 }

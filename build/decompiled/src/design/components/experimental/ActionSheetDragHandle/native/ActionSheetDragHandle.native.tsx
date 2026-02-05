@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun57593: for (var _fun57593_ip = 0;;) switch (_fun57593_ip) {
+        _fun57619: for (var _fun57619_ip = 0;;) switch (_fun57619_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.onPress;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0.accessibilityLabel;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun57593_ip = 83;
-                    continue _fun57593
+                    _fun57619_ip = 83;
+                    continue _fun57619
                 }
             case 25:
                 var7 = _closure1_slot0;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var7 != var10;
                 var10 = null;
                 if (!var13) {
-                    _fun57593_ip = 148;
-                    continue _fun57593
+                    _fun57619_ip = 148;
+                    continue _fun57619
                 }
             case 142:
                 var10 = var11.containerOverlay;
@@ -137,8 +137,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var11.handle;
                 var4.style = var9;
                 if (!(var7 == var12)) {
-                    _fun57593_ip = 229;
-                    continue _fun57593
+                    _fun57619_ip = 229;
+                    continue _fun57619
                 }
             case 201:
                 var10 = _closure1_slot5;
@@ -147,8 +147,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var11.bar;
                 var7.style = var13;
                 var7 = var10.bind(var3)(var9, var7);
-                _fun57593_ip = 288;
-                continue _fun57593;
+                _fun57619_ip = 288;
+                continue _fun57619;
             case 229:
                 var10 = _closure1_slot5;
                 var9 = _closure1_slot1;
@@ -181,4 +181,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.ActionSheetDragHandle = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7029, 33, 1297, 671, 1234, 3720, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7049, 33, 1297, 671, 1234, 3720, 2]);

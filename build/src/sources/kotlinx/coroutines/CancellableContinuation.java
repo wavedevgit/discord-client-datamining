@@ -31,11 +31,11 @@ public interface CancellableContinuation extends Continuation {
 
     boolean isCompleted();
 
-    void p(Object obj, Function3 function3);
+    void q(Object obj, Function3 function3);
 
-    void q(CoroutineDispatcher coroutineDispatcher, Object obj);
+    void r(CoroutineDispatcher coroutineDispatcher, Object obj);
 
-    Object t(Object obj, Object obj2, Function3 function3);
+    Object u(Object obj, Object obj2, Function3 function3);
 
-    void w(Object obj);
+    void x(Object obj);
 }

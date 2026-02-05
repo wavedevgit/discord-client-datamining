@@ -34,14 +34,14 @@ public final class CombinedStepImagePreview_AttributesJsonAdapter extends h {
     @NotNull
     public CombinedStepImagePreview.Attributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         while (reader.hasNext()) {
-            if (reader.A0(this.options) == -1) {
+            if (reader.W(this.options) == -1) {
                 reader.E0();
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         return new CombinedStepImagePreview.Attributes();
     }
 
@@ -49,7 +49,7 @@ public final class CombinedStepImagePreview_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, CombinedStepImagePreview.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.l();
+            writer.k();
             writer.E();
             return;
         }

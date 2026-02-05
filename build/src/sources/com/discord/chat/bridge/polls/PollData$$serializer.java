@@ -1,15 +1,15 @@
 package com.discord.chat.bridge.polls;
 
 import androidx.recyclerview.widget.RecyclerView;
-import at.b0;
-import bt.a;
 import com.discord.chat.bridge.polls.PollChatAnswerInteractionType;
 import com.discord.chat.bridge.polls.PollLayoutType;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import dt.a2;
-import dt.h;
-import dt.h0;
-import dt.n2;
+import dt.b0;
+import et.a;
+import gt.a2;
+import gt.h;
+import gt.h0;
+import gt.n2;
 import java.util.List;
 import kotlin.Lazy;
 import kotlin.Metadata;
@@ -21,11 +21,11 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import lr.c;
+import or.c;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/polls/PollData.$serializer", "Ldt/h0;", "Lcom/discord/chat/bridge/polls/PollData;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/polls/PollData;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/polls/PollData;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @c
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/polls/PollData.$serializer", "Lgt/h0;", "Lcom/discord/chat/bridge/polls/PollData;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/polls/PollData;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/polls/PollData;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class PollData$$serializer implements h0 {
     @NotNull
@@ -61,13 +61,13 @@ public /* synthetic */ class PollData$$serializer implements h0 {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // dt.h0
+    @Override // gt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = PollData.$childSerializers;
-        n2 n2Var = n2.f20978a;
-        h hVar = h.f20942a;
+        n2 n2Var = n2.f25302a;
+        h hVar = h.f25266a;
         PollAction$$serializer pollAction$$serializer = PollAction$$serializer.INSTANCE;
         return new KSerializer[]{PollResources$$serializer.INSTANCE, PollMedia$$serializer.INSTANCE, lazyArr[2].getValue(), PollChatAnswerInteractionType.Serializer.INSTANCE, a.u(n2Var), PollLayoutType.Serializer.INSTANCE, hVar, hVar, hVar, hVar, hVar, n2Var, a.u(n2Var), a.u(pollAction$$serializer), a.u(pollAction$$serializer), a.u(pollAction$$serializer), a.u(n2Var)};
     }
@@ -106,7 +106,7 @@ public /* synthetic */ class PollData$$serializer implements h0 {
             PollResources pollResources3 = (PollResources) b10.y(serialDescriptor, 0, PollResources$$serializer.INSTANCE, null);
             List list2 = (List) b10.y(serialDescriptor, 2, (DeserializationStrategy) lazyArr[2].getValue(), null);
             pollChatAnswerInteractionType = (PollChatAnswerInteractionType) b10.y(serialDescriptor, 3, PollChatAnswerInteractionType.Serializer.INSTANCE, null);
-            n2 n2Var = n2.f20978a;
+            n2 n2Var = n2.f25302a;
             boolean C = b10.C(serialDescriptor, 6);
             boolean C2 = b10.C(serialDescriptor, 7);
             boolean C3 = b10.C(serialDescriptor, 8);
@@ -189,7 +189,7 @@ public /* synthetic */ class PollData$$serializer implements h0 {
                         break;
                     case 4:
                         lazyArr2 = lazyArr;
-                        str8 = (String) b10.n(serialDescriptor, 4, n2.f20978a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 4, n2.f25302a, str8);
                         i13 |= 16;
                         lazyArr = lazyArr2;
                         break;
@@ -236,7 +236,7 @@ public /* synthetic */ class PollData$$serializer implements h0 {
                         break;
                     case 12:
                         lazyArr2 = lazyArr;
-                        str7 = (String) b10.n(serialDescriptor, 12, n2.f20978a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 12, n2.f25302a, str7);
                         i13 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         lazyArr = lazyArr2;
                         break;
@@ -261,7 +261,7 @@ public /* synthetic */ class PollData$$serializer implements h0 {
                         break;
                     case 16:
                         lazyArr2 = lazyArr;
-                        str6 = (String) b10.n(serialDescriptor, 16, n2.f20978a, str6);
+                        str6 = (String) b10.n(serialDescriptor, 16, n2.f25302a, str6);
                         i11 = 65536;
                         i13 |= i11;
                         lazyArr = lazyArr2;
@@ -293,13 +293,13 @@ public /* synthetic */ class PollData$$serializer implements h0 {
         return new PollData(i10, pollResources, pollMedia, list, pollChatAnswerInteractionType2, str3, pollLayoutType, z13, z12, z14, z11, z10, str4, str2, pollAction2, pollAction, pollAction3, str, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // at.o
+    @Override // dt.o
     public final void serialize(@NotNull Encoder encoder, @NotNull PollData value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -309,7 +309,7 @@ public /* synthetic */ class PollData$$serializer implements h0 {
         b10.c(serialDescriptor);
     }
 
-    @Override // dt.h0
+    @Override // gt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

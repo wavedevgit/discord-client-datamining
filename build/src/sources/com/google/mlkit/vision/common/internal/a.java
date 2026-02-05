@@ -8,11 +8,11 @@ import java.util.Set;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f16177a = new HashMap();
+    private final Map f16571a = new HashMap();
 
     /* renamed from: com.google.mlkit.vision.common.internal.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class C0181a {
+    public static class C0197a {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

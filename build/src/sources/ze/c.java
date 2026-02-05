@@ -12,34 +12,34 @@ import org.json.JSONException;
 public class c {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Lock f55920c = new ReentrantLock();
+    private static final Lock f55509c = new ReentrantLock();
 
     /* renamed from: d  reason: collision with root package name */
-    private static c f55921d;
+    private static c f55510d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lock f55922a = new ReentrantLock();
+    private final Lock f55511a = new ReentrantLock();
 
     /* renamed from: b  reason: collision with root package name */
-    private final SharedPreferences f55923b;
+    private final SharedPreferences f55512b;
 
     c(Context context) {
-        this.f55923b = context.getSharedPreferences("com.google.android.gms.signin", 0);
+        this.f55512b = context.getSharedPreferences("com.google.android.gms.signin", 0);
     }
 
     public static c b(Context context) {
         gf.q.l(context);
-        Lock lock = f55920c;
+        Lock lock = f55509c;
         lock.lock();
         try {
-            if (f55921d == null) {
-                f55921d = new c(context.getApplicationContext());
+            if (f55510d == null) {
+                f55510d = new c(context.getApplicationContext());
             }
-            c cVar = f55921d;
+            c cVar = f55510d;
             lock.unlock();
             return cVar;
         } catch (Throwable th2) {
-            f55920c.unlock();
+            f55509c.unlock();
             throw th2;
         }
     }
@@ -49,11 +49,11 @@ public class c {
     }
 
     public void a() {
-        this.f55922a.lock();
+        this.f55511a.lock();
         try {
-            this.f55923b.edit().clear().apply();
+            this.f55512b.edit().clear().apply();
         } finally {
-            this.f55922a.unlock();
+            this.f55511a.unlock();
         }
     }
 
@@ -62,7 +62,7 @@ public class c {
         String g11 = g("defaultGoogleSignInAccount");
         if (!TextUtils.isEmpty(g11) && (g10 = g(i("googleSignInAccount", g11))) != null) {
             try {
-                return GoogleSignInAccount.n(g10);
+                return GoogleSignInAccount.o(g10);
             } catch (JSONException unused) {
             }
         }
@@ -74,7 +74,7 @@ public class c {
         String g11 = g("defaultGoogleSignInAccount");
         if (!TextUtils.isEmpty(g11) && (g10 = g(i("googleSignInOptions", g11))) != null) {
             try {
-                return GoogleSignInOptions.m(g10);
+                return GoogleSignInOptions.n(g10);
             } catch (JSONException unused) {
             }
         }
@@ -88,29 +88,29 @@ public class c {
     public void f(GoogleSignInAccount googleSignInAccount, GoogleSignInOptions googleSignInOptions) {
         gf.q.l(googleSignInAccount);
         gf.q.l(googleSignInOptions);
-        h("defaultGoogleSignInAccount", googleSignInAccount.o());
+        h("defaultGoogleSignInAccount", googleSignInAccount.p());
         gf.q.l(googleSignInAccount);
         gf.q.l(googleSignInOptions);
-        String o10 = googleSignInAccount.o();
-        h(i("googleSignInAccount", o10), googleSignInAccount.p());
-        h(i("googleSignInOptions", o10), googleSignInOptions.q());
+        String p10 = googleSignInAccount.p();
+        h(i("googleSignInAccount", p10), googleSignInAccount.q());
+        h(i("googleSignInOptions", p10), googleSignInOptions.r());
     }
 
     protected final String g(String str) {
-        this.f55922a.lock();
+        this.f55511a.lock();
         try {
-            return this.f55923b.getString(str, null);
+            return this.f55512b.getString(str, null);
         } finally {
-            this.f55922a.unlock();
+            this.f55511a.unlock();
         }
     }
 
     protected final void h(String str, String str2) {
-        this.f55922a.lock();
+        this.f55511a.lock();
         try {
-            this.f55923b.edit().putString(str, str2).apply();
+            this.f55512b.edit().putString(str, str2).apply();
         } finally {
-            this.f55922a.unlock();
+            this.f55511a.unlock();
         }
     }
 }

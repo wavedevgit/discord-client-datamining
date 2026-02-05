@@ -1,11 +1,11 @@
 package com.discord.chat.bridge.premium_group_invite;
 
-import at.m;
 import com.discord.chat.bridge.structurabletext.AnnotatedStructurableText;
 import com.discord.chat.bridge.structurabletext.AnnotatedStructurableTextSerializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.ViewProps;
-import dt.v1;
+import dt.m;
+import gt.v1;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -14,8 +14,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-@m
 @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u001c\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 >2\u00020\u0001:\u0002=>B_\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\u0003\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0005\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\u0006\u0010\r\u001a\u00020\u0005\u0012\u0006\u0010\u000e\u001a\u00020\u000f¢\u0006\u0004\b\u0010\u0010\u0011B}\b\u0010\u0012\u0006\u0010\u0012\u001a\u00020\u0005\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0005\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\r\u001a\u00020\u0005\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014¢\u0006\u0004\b\u0010\u0010\u0015J\t\u0010$\u001a\u00020\u0003HÆ\u0003J\t\u0010%\u001a\u00020\u0005HÆ\u0003J\t\u0010&\u001a\u00020\u0005HÆ\u0003J\t\u0010'\u001a\u00020\u0005HÆ\u0003J\t\u0010(\u001a\u00020\u0003HÆ\u0003J\t\u0010)\u001a\u00020\u0003HÆ\u0003J\t\u0010*\u001a\u00020\u0005HÆ\u0003J\t\u0010+\u001a\u00020\u0005HÆ\u0003J\t\u0010,\u001a\u00020\u0003HÆ\u0003J\t\u0010-\u001a\u00020\u0005HÆ\u0003J\t\u0010.\u001a\u00020\u000fHÆ\u0003Jw\u0010/\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\u00032\b\b\u0002\u0010\t\u001a\u00020\u00032\b\b\u0002\u0010\n\u001a\u00020\u00052\b\b\u0002\u0010\u000b\u001a\u00020\u00052\b\b\u0002\u0010\f\u001a\u00020\u00032\b\b\u0002\u0010\r\u001a\u00020\u00052\b\b\u0002\u0010\u000e\u001a\u00020\u000fHÆ\u0001J\u0013\u00100\u001a\u0002012\b\u00102\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00103\u001a\u00020\u0005HÖ\u0001J\t\u00104\u001a\u00020\u0003HÖ\u0001J%\u00105\u001a\u0002062\u0006\u00107\u001a\u00020\u00002\u0006\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020;H\u0001¢\u0006\u0002\b<R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0019R\u0011\u0010\u0007\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0019R\u0011\u0010\b\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0017R\u0011\u0010\t\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0017R\u0011\u0010\n\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0019R\u0011\u0010\u000b\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u0019R\u0011\u0010\f\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u0017R\u0011\u0010\r\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u0019R\u0011\u0010\u000e\u001a\u00020\u000f¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010#¨\u0006?"}, d2 = {"Lcom/discord/chat/bridge/premium_group_invite/PremiumGroupInviteEmbed;", "", "headerText", "", "headerColor", "", ViewProps.BACKGROUND_COLOR, ViewProps.BORDER_COLOR, "headerImageUrl", "betaPillText", "betaPillTextColor", "betaPillBackgroundColor", "bodyText", "bodyTextColor", "learnMoreLink", "Lcom/discord/chat/bridge/structurabletext/AnnotatedStructurableText;", "<init>", "(Ljava/lang/String;IIILjava/lang/String;Ljava/lang/String;IILjava/lang/String;ILcom/discord/chat/bridge/structurabletext/AnnotatedStructurableText;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;IIILjava/lang/String;Ljava/lang/String;IILjava/lang/String;ILcom/discord/chat/bridge/structurabletext/AnnotatedStructurableText;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getHeaderText", "()Ljava/lang/String;", "getHeaderColor", "()I", "getBackgroundColor", "getBorderColor", "getHeaderImageUrl", "getBetaPillText", "getBetaPillTextColor", "getBetaPillBackgroundColor", "getBodyText", "getBodyTextColor", "getLearnMoreLink", "()Lcom/discord/chat/bridge/structurabletext/AnnotatedStructurableText;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@m
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class PremiumGroupInviteEmbed {
     @NotNull
@@ -116,17 +116,17 @@ public final class PremiumGroupInviteEmbed {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(PremiumGroupInviteEmbed premiumGroupInviteEmbed, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.y(serialDescriptor, 0, premiumGroupInviteEmbed.headerText);
-        compositeEncoder.w(serialDescriptor, 1, premiumGroupInviteEmbed.headerColor);
-        compositeEncoder.w(serialDescriptor, 2, premiumGroupInviteEmbed.backgroundColor);
-        compositeEncoder.w(serialDescriptor, 3, premiumGroupInviteEmbed.borderColor);
-        compositeEncoder.y(serialDescriptor, 4, premiumGroupInviteEmbed.headerImageUrl);
-        compositeEncoder.y(serialDescriptor, 5, premiumGroupInviteEmbed.betaPillText);
-        compositeEncoder.w(serialDescriptor, 6, premiumGroupInviteEmbed.betaPillTextColor);
-        compositeEncoder.w(serialDescriptor, 7, premiumGroupInviteEmbed.betaPillBackgroundColor);
-        compositeEncoder.y(serialDescriptor, 8, premiumGroupInviteEmbed.bodyText);
-        compositeEncoder.w(serialDescriptor, 9, premiumGroupInviteEmbed.bodyTextColor);
-        compositeEncoder.D(serialDescriptor, 10, AnnotatedStructurableTextSerializer.INSTANCE, premiumGroupInviteEmbed.learnMoreLink);
+        compositeEncoder.x(serialDescriptor, 0, premiumGroupInviteEmbed.headerText);
+        compositeEncoder.v(serialDescriptor, 1, premiumGroupInviteEmbed.headerColor);
+        compositeEncoder.v(serialDescriptor, 2, premiumGroupInviteEmbed.backgroundColor);
+        compositeEncoder.v(serialDescriptor, 3, premiumGroupInviteEmbed.borderColor);
+        compositeEncoder.x(serialDescriptor, 4, premiumGroupInviteEmbed.headerImageUrl);
+        compositeEncoder.x(serialDescriptor, 5, premiumGroupInviteEmbed.betaPillText);
+        compositeEncoder.v(serialDescriptor, 6, premiumGroupInviteEmbed.betaPillTextColor);
+        compositeEncoder.v(serialDescriptor, 7, premiumGroupInviteEmbed.betaPillBackgroundColor);
+        compositeEncoder.x(serialDescriptor, 8, premiumGroupInviteEmbed.bodyText);
+        compositeEncoder.v(serialDescriptor, 9, premiumGroupInviteEmbed.bodyTextColor);
+        compositeEncoder.l(serialDescriptor, 10, AnnotatedStructurableTextSerializer.INSTANCE, premiumGroupInviteEmbed.learnMoreLink);
     }
 
     @NotNull

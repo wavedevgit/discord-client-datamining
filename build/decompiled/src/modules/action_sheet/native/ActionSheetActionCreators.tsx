@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var6;
-    var0 = ['impressionName', 'impressionProperties', 'backdropKind'];
+    var0 = ['impressionName', 'impressionProperties', 'backdropKind', 'disableHapticOnOpen'];
     var _closure1_slot3 = var0;
     var0 = global;
     var8 = var0.Object;
@@ -44,8 +44,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot3 = var2;
         var2 = var0.backdropKind;
         var _closure2_slot4 = var2;
-        var0 = var0.stackingBehavior;
-        var _closure2_slot5 = var0;
+        var2 = var0.stackingBehavior;
+        var _closure2_slot5 = var2;
+        var0 = var0.disableHapticOnOpen;
+        var _closure2_slot6 = var0;
         var3 = _closure1_slot1;
         var2 = _closure1_slot2;
         var0 = 3;
@@ -54,40 +56,53 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var3.bind(var0)(var2);
         var2 = var3.wait;
         var1 = function() { // Environment: var1
-            var4 = _closure1_slot0;
-            var3 = _closure1_slot2;
-            var0 = 4;
-            var2 = var3[var0];
-            var0 = undefined;
-            var5 = var4.bind(var0)(var2);
-            var4 = var5.triggerHapticFeedback;
-            var2 = _closure1_slot1;
-            var1 = 5;
-            var1 = var3[var1];
-            var1 = var2.bind(var0)(var1);
-            var1 = var1.IMPACT_LIGHT;
-            var1 = var4.bind(var5)(var1);
-            var1 = 3;
-            var1 = var3[var1];
-            var3 = var2.bind(var0)(var1);
-            var2 = var3.dispatch;
-            var1 = {};
-            var4 = 'SHOW_ACTION_SHEET';
-            var1.type = var4;
-            var5 = _closure2_slot0;
-            var1.content = var5;
-            var5 = _closure2_slot1;
-            var1.key = var5;
-            var5 = _closure2_slot2;
-            var1.impressionName = var5;
-            var5 = _closure2_slot3;
-            var1.impressionProperties = var5;
-            var5 = _closure2_slot4;
-            var1.backdropKind = var5;
-            var4 = _closure2_slot5;
-            var1.stackingBehavior = var4;
-            var1 = var2.bind(var3)(var1);
-            return var0;
+            _fun28275: for (var _fun28275_ip = 0;;) switch (_fun28275_ip) {
+                case 0:
+                    var0 = _closure2_slot6;
+                    if (var0) {
+                        _fun28275_ip = 68;
+                        continue _fun28275
+                    }
+                case 10:
+                    var2 = _closure1_slot0;
+                    var6 = _closure1_slot2;
+                    var1 = 4;
+                    var1 = var6[var1];
+                    var5 = undefined;
+                    var2 = var2.bind(var5)(var1);
+                    var1 = var2.triggerHapticFeedback;
+                    var3 = _closure1_slot1;
+                    var0 = 5;
+                    var0 = var6[var0];
+                    var0 = var3.bind(var5)(var0);
+                    var0 = var0.IMPACT_LIGHT;
+                    var0 = var1.bind(var2)(var0);
+                case 68:
+                    var2 = _closure1_slot1;
+                    var1 = _closure1_slot2;
+                    var0 = 3;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var3 = var2.bind(var0)(var1);
+                    var2 = var3.dispatch;
+                    var1 = {};
+                    var5 = 'SHOW_ACTION_SHEET';
+                    var1.type = var5;
+                    var5 = _closure2_slot0;
+                    var1.content = var5;
+                    var5 = _closure2_slot1;
+                    var1.key = var5;
+                    var5 = _closure2_slot2;
+                    var1.impressionName = var5;
+                    var5 = _closure2_slot3;
+                    var1.impressionProperties = var5;
+                    var5 = _closure2_slot4;
+                    var1.backdropKind = var5;
+                    var4 = _closure2_slot5;
+                    var1.stackingBehavior = var4;
+                    var1 = var2.bind(var3)(var1);
+                    return var0;
+            }
         };
         var1 = var2.bind(var3)(var1);
         return var0;
@@ -136,35 +151,37 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 continue _fun28278
                             }
                         case 13:
-                            var8 = {};
+                            var9 = {};
                             _fun28278_ip = 21;
                             continue _fun28278;
                         case 17:
-                            var8 = _closure2_slot1;
+                            var9 = _closure2_slot1;
                         case 21:
-                            var6 = var8.impressionName;
-                            var5 = var8.impressionProperties;
-                            var4 = var8.backdropKind;
-                            var7 = _closure1_slot4;
+                            var7 = var9.impressionName;
+                            var6 = var9.impressionProperties;
+                            var5 = var9.backdropKind;
+                            var3 = var9.disableHapticOnOpen;
+                            var8 = _closure1_slot4;
                             var2 = _closure1_slot3;
                             var0 = undefined;
-                            var9 = var7.bind(var0)(var8, var2);
-                            var8 = _closure1_slot5;
-                            var7 = {};
-                            var10 = var7;
-                            var2 = copyDataProperties(var10, var9);
+                            var10 = var8.bind(var0)(var9, var2);
+                            var9 = _closure1_slot5;
+                            var8 = {};
+                            var11 = var8;
+                            var2 = copyDataProperties(var11, var10);
                             var2 = arg0;
-                            var7 = var8.bind(var0)(var2, var7);
+                            var8 = var9.bind(var0)(var2, var8);
                             var2 = _closure1_slot6;
                             var1 = {};
-                            var1.content = var7;
-                            var7 = _closure2_slot0;
-                            var1.key = var7;
-                            var1.impressionName = var6;
-                            var1.impressionProperties = var5;
-                            var1.backdropKind = var4;
-                            var3 = _closure2_slot2;
-                            var1.stackingBehavior = var3;
+                            var1.content = var8;
+                            var8 = _closure2_slot0;
+                            var1.key = var8;
+                            var1.impressionName = var7;
+                            var1.impressionProperties = var6;
+                            var1.backdropKind = var5;
+                            var4 = _closure2_slot2;
+                            var1.stackingBehavior = var4;
+                            var1.disableHapticOnOpen = var3;
                             var1 = var2.bind(var0)(var1);
                             return var0;
                     }

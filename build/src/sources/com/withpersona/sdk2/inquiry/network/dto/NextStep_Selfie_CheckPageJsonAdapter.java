@@ -40,7 +40,7 @@ public final class NextStep_Selfie_CheckPageJsonAdapter extends h {
     @NotNull
     public NextStep.Selfie.CheckPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -49,7 +49,7 @@ public final class NextStep_Selfie_CheckPageJsonAdapter extends h {
         String str6 = null;
         String str7 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -77,7 +77,7 @@ public final class NextStep_Selfie_CheckPageJsonAdapter extends h {
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new NextStep.Selfie.CheckPage(str, str2, str3, str4, str5, str6, str7);
     }
 
@@ -85,20 +85,20 @@ public final class NextStep_Selfie_CheckPageJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Selfie.CheckPage checkPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkPage != null) {
-            writer.l();
-            writer.A0("title");
+            writer.k();
+            writer.W("title");
             this.nullableStringAdapter.toJson(writer, checkPage.getTitle());
-            writer.A0("description");
+            writer.W("description");
             this.nullableStringAdapter.toJson(writer, checkPage.getDescription());
-            writer.A0("selfieLabelFront");
+            writer.W("selfieLabelFront");
             this.nullableStringAdapter.toJson(writer, checkPage.getSelfieLabelFront());
-            writer.A0("selfieLabelLeft");
+            writer.W("selfieLabelLeft");
             this.nullableStringAdapter.toJson(writer, checkPage.getSelfieLabelLeft());
-            writer.A0("selfieLabelRight");
+            writer.W("selfieLabelRight");
             this.nullableStringAdapter.toJson(writer, checkPage.getSelfieLabelRight());
-            writer.A0("btnSubmit");
+            writer.W("btnSubmit");
             this.nullableStringAdapter.toJson(writer, checkPage.getBtnSubmit());
-            writer.A0("btnRetake");
+            writer.W("btnRetake");
             this.nullableStringAdapter.toJson(writer, checkPage.getBtnRetake());
             writer.E();
             return;

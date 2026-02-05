@@ -6,5 +6,5 @@ import io.sentry.l5;
 public interface g extends Iterable {
     void E(l5 l5Var);
 
-    boolean J0(l5 l5Var, Hint hint);
+    boolean N0(l5 l5Var, Hint hint);
 }

@@ -1,16 +1,16 @@
 package com.reactnativecommunity.netinfo;
 
-import am.b;
-import am.f;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
 import com.reactnativecommunity.netinfo.a;
+import dm.b;
+import dm.f;
 @ReactModule(name = NetInfoModule.NAME)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class NetInfoModule extends ReactContextBaseJavaModule implements a.InterfaceC0194a {
+public class NetInfoModule extends ReactContextBaseJavaModule implements a.InterfaceC0212a {
     public static final String NAME = "RNCNetInfo";
     private final a mAmazonConnectivityChecker;
     private final b mConnectivityReceiver;
@@ -26,7 +26,7 @@ public class NetInfoModule extends ReactContextBaseJavaModule implements a.Inter
     @ReactMethod
     public void addListener(String str) {
         this.numberOfListeners++;
-        this.mConnectivityReceiver.f707e = true;
+        this.mConnectivityReceiver.f20893e = true;
     }
 
     @ReactMethod
@@ -49,10 +49,10 @@ public class NetInfoModule extends ReactContextBaseJavaModule implements a.Inter
     public void invalidate() {
         this.mAmazonConnectivityChecker.k();
         this.mConnectivityReceiver.j();
-        this.mConnectivityReceiver.f707e = false;
+        this.mConnectivityReceiver.f20893e = false;
     }
 
-    @Override // com.reactnativecommunity.netinfo.a.InterfaceC0194a
+    @Override // com.reactnativecommunity.netinfo.a.InterfaceC0212a
     public void onAmazonFireDeviceConnectivityChanged(boolean z10) {
         this.mConnectivityReceiver.i(z10);
     }
@@ -67,7 +67,7 @@ public class NetInfoModule extends ReactContextBaseJavaModule implements a.Inter
         int intValue = this.numberOfListeners - num.intValue();
         this.numberOfListeners = intValue;
         if (intValue == 0) {
-            this.mConnectivityReceiver.f707e = false;
+            this.mConnectivityReceiver.f20893e = false;
         }
     }
 }

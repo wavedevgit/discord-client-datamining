@@ -60,7 +60,7 @@ public final class MediaResolver$resolveToUri$2 extends k implements Function2<C
     public final java.lang.Object invokeSuspend(java.lang.Object r11) {
         /*
             r10 = this;
-            java.lang.Object r0 = rr.b.f()
+            java.lang.Object r0 = ur.b.f()
             int r1 = r10.label
             r2 = 4
             r3 = 3
@@ -155,6 +155,6 @@ public final class MediaResolver$resolveToUri$2 extends k implements Function2<C
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Uri> continuation) {
-        return ((MediaResolver$resolveToUri$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((MediaResolver$resolveToUri$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

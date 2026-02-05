@@ -7,8 +7,8 @@ import kotlin.jvm.functions.Function2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface n extends CoroutineContext.Element {
 
-    /* renamed from: m  reason: collision with root package name */
-    public static final b f51813m = b.f51814d;
+    /* renamed from: n  reason: collision with root package name */
+    public static final b f52470n = b.f52471d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -33,16 +33,16 @@ public interface n extends CoroutineContext.Element {
     public static final class b implements CoroutineContext.b {
 
         /* renamed from: d  reason: collision with root package name */
-        static final /* synthetic */ b f51814d = new b();
+        static final /* synthetic */ b f52471d = new b();
 
         private b() {
         }
     }
 
-    Object A0(Function1 function1, Continuation continuation);
+    Object W(Function1 function1, Continuation continuation);
 
     @Override // kotlin.coroutines.CoroutineContext.Element
     default CoroutineContext.b getKey() {
-        return f51813m;
+        return f52470n;
     }
 }

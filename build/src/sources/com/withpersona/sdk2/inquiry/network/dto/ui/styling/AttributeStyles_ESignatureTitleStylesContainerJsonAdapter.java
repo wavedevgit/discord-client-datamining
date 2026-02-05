@@ -40,18 +40,18 @@ public final class AttributeStyles_ESignatureTitleStylesContainerJsonAdapter ext
     @NotNull
     public AttributeStyles.ESignatureTitleStylesContainer fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         AttributeStyles.ESignatureBaseTextStyle eSignatureBaseTextStyle = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 eSignatureBaseTextStyle = (AttributeStyles.ESignatureBaseTextStyle) this.nullableESignatureBaseTextStyleAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.ESignatureTitleStylesContainer(eSignatureBaseTextStyle);
     }
 
@@ -59,8 +59,8 @@ public final class AttributeStyles_ESignatureTitleStylesContainerJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.ESignatureTitleStylesContainer eSignatureTitleStylesContainer) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignatureTitleStylesContainer != null) {
-            writer.l();
-            writer.A0("dialogTitle");
+            writer.k();
+            writer.W("dialogTitle");
             this.nullableESignatureBaseTextStyleAdapter.toJson(writer, eSignatureTitleStylesContainer.getDialogTitle());
             writer.E();
             return;

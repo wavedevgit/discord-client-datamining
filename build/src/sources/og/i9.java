@@ -7,14 +7,14 @@ public enum i9 implements u1 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f43096d;
+    private final int f43002d;
 
     i9(int i10) {
-        this.f43096d = i10;
+        this.f43002d = i10;
     }
 
     @Override // og.u1
     public final int zza() {
-        return this.f43096d;
+        return this.f43002d;
     }
 }

@@ -1,58 +1,90 @@
 package cn;
 
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import android.view.View;
+import android.view.ViewParent;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.r0;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements f {
+public interface d extends LifecycleOwner {
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Object f7347b;
+    /* renamed from: a */
+    public static final a f7731a = a.f7732a;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final List f7348c;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
 
-    public d(Object beneathModals, List modals) {
-        Intrinsics.checkNotNullParameter(beneathModals, "beneathModals");
-        Intrinsics.checkNotNullParameter(modals, "modals");
-        this.f7347b = beneathModals;
-        this.f7348c = modals;
-    }
+        /* renamed from: a */
+        static final /* synthetic */ a f7732a = new a();
 
-    @Override // cn.f
-    public List a() {
-        return this.f7348c;
-    }
+        /* renamed from: cn.d$a$a */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0140a extends Lambda implements Function1 {
 
-    @Override // cn.f
-    public Object b() {
-        return this.f7347b;
-    }
+            /* renamed from: d */
+            public static final C0140a f7733d = new C0140a();
 
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+            C0140a() {
+                super(1);
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            /* renamed from: a */
+            public final Lifecycle invoke(View v10) {
+                Intrinsics.checkNotNullParameter(v10, "v");
+                return a.f7732a.b(v10);
+            }
         }
-        if (!(obj instanceof d)) {
-            return false;
+
+        private a() {
         }
-        d dVar = (d) obj;
-        if (Intrinsics.areEqual(b(), dVar.b()) && Intrinsics.areEqual(a(), dVar.a())) {
-            return true;
+
+        public final Lifecycle b(View view) {
+            View view2;
+            LifecycleOwner a10;
+            ViewParent parent = view.getParent();
+            Lifecycle lifecycle = null;
+            if (parent instanceof View) {
+                view2 = (View) parent;
+            } else {
+                view2 = null;
+            }
+            if (view2 != null && (a10 = c.f7730a.a(view2)) != null) {
+                lifecycle = a10.getLifecycle();
+            }
+            if (lifecycle != null) {
+                return lifecycle;
+            }
+            throw new IllegalStateException(("Expected parent or context of " + view + " to have or be a ViewTreeLifecycleOwner").toString());
         }
-        return false;
+
+        public static /* synthetic */ void e(a aVar, View view, Function1 function1, int i10, Object obj) {
+            if ((i10 & 2) != 0) {
+                function1 = C0140a.f7733d;
+            }
+            aVar.d(view, function1);
+        }
+
+        public final d c(View view) {
+            Intrinsics.checkNotNullParameter(view, "view");
+            LifecycleOwner a10 = r0.a(view);
+            if (a10 instanceof d) {
+                return (d) a10;
+            }
+            return null;
+        }
+
+        public final void d(View view, Function1 findParentLifecycle) {
+            Intrinsics.checkNotNullParameter(view, "view");
+            Intrinsics.checkNotNullParameter(findParentLifecycle, "findParentLifecycle");
+            b bVar = new b(findParentLifecycle, false, 2, null);
+            r0.b(view, bVar);
+            view.addOnAttachStateChangeListener(bVar);
+        }
     }
 
-    public int hashCode() {
-        return (b().hashCode() * 31) + a().hashCode();
-    }
-
-    public String toString() {
-        return "AlertContainerScreen(beneathModals=" + b() + ", modals=" + a() + ')';
-    }
-
-    public /* synthetic */ d(Object obj, List list, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(obj, (i10 & 2) != 0 ? CollectionsKt.l() : list);
-    }
+    void d();
 }

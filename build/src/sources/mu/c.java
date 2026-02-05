@@ -1,45 +1,30 @@
 package mu;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Iterator;
-import kotlin.collections.ArrayDeque;
+import java.util.List;
+import javax.net.ssl.X509TrustManager;
+import ju.h;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import lu.c0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class c {
-    public static final void a(lu.h hVar, c0 dir, boolean z10) {
-        Intrinsics.checkNotNullParameter(hVar, "<this>");
-        Intrinsics.checkNotNullParameter(dir, "dir");
-        ArrayDeque arrayDeque = new ArrayDeque();
-        for (c0 c0Var = dir; c0Var != null && !hVar.j(c0Var); c0Var = c0Var.i()) {
-            arrayDeque.addFirst(c0Var);
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f38970a = new a(null);
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        if (z10 && arrayDeque.isEmpty()) {
-            throw new IOException(dir + " already exists.");
+
+        public final c a(X509TrustManager trustManager) {
+            Intrinsics.checkNotNullParameter(trustManager, "trustManager");
+            return h.f31441a.g().c(trustManager);
         }
-        Iterator<E> it = arrayDeque.iterator();
-        while (it.hasNext()) {
-            hVar.f((c0) it.next());
+
+        private a() {
         }
     }
 
-    public static final boolean b(lu.h hVar, c0 path) {
-        Intrinsics.checkNotNullParameter(hVar, "<this>");
-        Intrinsics.checkNotNullParameter(path, "path");
-        if (hVar.m(path) != null) {
-            return true;
-        }
-        return false;
-    }
-
-    public static final lu.g c(lu.h hVar, c0 path) {
-        Intrinsics.checkNotNullParameter(hVar, "<this>");
-        Intrinsics.checkNotNullParameter(path, "path");
-        lu.g m10 = hVar.m(path);
-        if (m10 != null) {
-            return m10;
-        }
-        throw new FileNotFoundException("no such file: " + path);
-    }
+    public abstract List a(List list, String str);
 }

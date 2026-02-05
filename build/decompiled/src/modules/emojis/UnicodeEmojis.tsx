@@ -1357,4 +1357,4 @@ case 72:
             }
         };
         var2.asUnicodeEmoji = var1;
-        return var0;})(undefined,undefined,undefined,undefined,undefined,undefined,[6,7,3105,3106,3107,3108,22,12606,2]);
+        return var0;})(undefined,undefined,undefined,undefined,undefined,undefined,[6,7,3105,3106,3107,3108,22,12622,2]);

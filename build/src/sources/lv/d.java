@@ -1,16 +1,19 @@
 package lv;
-
-import okhttp3.Request;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface d<T> extends Cloneable {
-    void I0(f fVar);
+public interface d {
+    boolean a();
 
-    void cancel();
+    boolean b();
 
-    /* renamed from: clone */
-    d mo1203clone();
+    jv.a c();
 
-    Request h();
+    void d(kv.a aVar);
 
-    boolean x();
+    void e(CharSequence charSequence);
+
+    void f();
+
+    c g(h hVar);
+
+    boolean h(jv.a aVar);
 }

@@ -12,7 +12,7 @@ public final class le extends a implements IInterface {
         super(iBinder, "com.google.mlkit.vision.face.aidls.IFaceDetector");
     }
 
-    public final List S0(sf.a aVar, de deVar) {
+    public final List W0(sf.a aVar, de deVar) {
         Parcel e10 = e();
         b1.b(e10, aVar);
         b1.a(e10, deVar);
@@ -22,11 +22,11 @@ public final class le extends a implements IInterface {
         return createTypedArrayList;
     }
 
-    public final void T0() {
+    public final void X0() {
         h(1, e());
     }
 
-    public final void U0() {
+    public final void Y0() {
         h(2, e());
     }
 }

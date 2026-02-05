@@ -29,10 +29,10 @@ public final class ChainedMemberScope implements MemberScope {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f34651a;
+    private final String f34175a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final MemberScope[] f34652b;
+    private final MemberScope[] f34176b;
 
     @SourceDebugExtension({"SMAP\nChainedMemberScope.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ChainedMemberScope.kt\norg/jetbrains/kotlin/resolve/scopes/ChainedMemberScope$Companion\n+ 2 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,91:1\n37#2:92\n36#2,3:93\n*S KotlinDebug\n*F\n+ 1 ChainedMemberScope.kt\norg/jetbrains/kotlin/resolve/scopes/ChainedMemberScope$Companion\n*L\n87#1:92\n87#1:93,3\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -49,7 +49,7 @@ public final class ChainedMemberScope implements MemberScope {
             for (MemberScope memberScope : scopes) {
                 if (memberScope != MemberScope.Empty.INSTANCE) {
                     if (memberScope instanceof ChainedMemberScope) {
-                        CollectionsKt.D(smartList, ((ChainedMemberScope) memberScope).f34652b);
+                        CollectionsKt.D(smartList, ((ChainedMemberScope) memberScope).f34176b);
                     } else {
                         smartList.add(memberScope);
                     }
@@ -82,24 +82,24 @@ public final class ChainedMemberScope implements MemberScope {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     public Set<Name> getClassifierNames() {
-        return MemberScopeKt.flatMapClassifierNamesOrNull(kotlin.collections.i.H(this.f34652b));
+        return MemberScopeKt.flatMapClassifierNamesOrNull(kotlin.collections.i.H(this.f34176b));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     /* renamed from: getContributedClassifier */
-    public ClassifierDescriptor mo1198getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
+    public ClassifierDescriptor mo1200getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
         ClassifierDescriptor classifierDescriptor = null;
-        for (MemberScope memberScope : this.f34652b) {
-            ClassifierDescriptor mo1198getContributedClassifier = memberScope.mo1198getContributedClassifier(name, location);
-            if (mo1198getContributedClassifier != null) {
-                if ((mo1198getContributedClassifier instanceof ClassifierDescriptorWithTypeParameters) && ((MemberDescriptor) mo1198getContributedClassifier).isExpect()) {
+        for (MemberScope memberScope : this.f34176b) {
+            ClassifierDescriptor mo1200getContributedClassifier = memberScope.mo1200getContributedClassifier(name, location);
+            if (mo1200getContributedClassifier != null) {
+                if ((mo1200getContributedClassifier instanceof ClassifierDescriptorWithTypeParameters) && ((MemberDescriptor) mo1200getContributedClassifier).isExpect()) {
                     if (classifierDescriptor == null) {
-                        classifierDescriptor = mo1198getContributedClassifier;
+                        classifierDescriptor = mo1200getContributedClassifier;
                     }
                 } else {
-                    return mo1198getContributedClassifier;
+                    return mo1200getContributedClassifier;
                 }
             }
         }
@@ -111,7 +111,7 @@ public final class ChainedMemberScope implements MemberScope {
     public Collection<DeclarationDescriptor> getContributedDescriptors(@NotNull DescriptorKindFilter kindFilter, @NotNull Function1<? super Name, Boolean> nameFilter) {
         Intrinsics.checkNotNullParameter(kindFilter, "kindFilter");
         Intrinsics.checkNotNullParameter(nameFilter, "nameFilter");
-        MemberScope[] memberScopeArr = this.f34652b;
+        MemberScope[] memberScopeArr = this.f34176b;
         int length = memberScopeArr.length;
         if (length != 0) {
             if (length != 1) {
@@ -134,7 +134,7 @@ public final class ChainedMemberScope implements MemberScope {
     public Collection<SimpleFunctionDescriptor> getContributedFunctions(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        MemberScope[] memberScopeArr = this.f34652b;
+        MemberScope[] memberScopeArr = this.f34176b;
         int length = memberScopeArr.length;
         if (length != 0) {
             if (length != 1) {
@@ -157,7 +157,7 @@ public final class ChainedMemberScope implements MemberScope {
     public Collection<PropertyDescriptor> getContributedVariables(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        MemberScope[] memberScopeArr = this.f34652b;
+        MemberScope[] memberScopeArr = this.f34176b;
         int length = memberScopeArr.length;
         if (length != 0) {
             if (length != 1) {
@@ -178,7 +178,7 @@ public final class ChainedMemberScope implements MemberScope {
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     @NotNull
     public Set<Name> getFunctionNames() {
-        MemberScope[] memberScopeArr = this.f34652b;
+        MemberScope[] memberScopeArr = this.f34176b;
         LinkedHashSet linkedHashSet = new LinkedHashSet();
         for (MemberScope memberScope : memberScopeArr) {
             CollectionsKt.B(linkedHashSet, memberScope.getFunctionNames());
@@ -189,7 +189,7 @@ public final class ChainedMemberScope implements MemberScope {
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     @NotNull
     public Set<Name> getVariableNames() {
-        MemberScope[] memberScopeArr = this.f34652b;
+        MemberScope[] memberScopeArr = this.f34176b;
         LinkedHashSet linkedHashSet = new LinkedHashSet();
         for (MemberScope memberScope : memberScopeArr) {
             CollectionsKt.B(linkedHashSet, memberScope.getVariableNames());
@@ -199,21 +199,21 @@ public final class ChainedMemberScope implements MemberScope {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     /* renamed from: recordLookup */
-    public void mo1201recordLookup(@NotNull Name name, @NotNull LookupLocation location) {
+    public void mo1203recordLookup(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        for (MemberScope memberScope : this.f34652b) {
-            memberScope.mo1201recordLookup(name, location);
+        for (MemberScope memberScope : this.f34176b) {
+            memberScope.mo1203recordLookup(name, location);
         }
     }
 
     @NotNull
     public String toString() {
-        return this.f34651a;
+        return this.f34175a;
     }
 
     private ChainedMemberScope(String str, MemberScope[] memberScopeArr) {
-        this.f34651a = str;
-        this.f34652b = memberScopeArr;
+        this.f34175a = str;
+        this.f34176b = memberScopeArr;
     }
 }

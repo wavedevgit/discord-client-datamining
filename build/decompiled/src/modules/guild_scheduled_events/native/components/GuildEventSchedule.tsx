@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/GuildEventSchedule.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun65510: for (var _fun65510_ip = 0;;) switch (_fun65510_ip) {
+        _fun65534: for (var _fun65534_ip = 0;;) switch (_fun65534_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.guildEvent;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var2.bind(var4)(var1, var8);
                 var8 = null;
                 if (!(var8 != var0)) {
-                    _fun65510_ip = 259;
-                    continue _fun65510
+                    _fun65534_ip = 259;
+                    continue _fun65534
                 }
             case 195:
                 var9 = var13.add;
@@ -171,10 +171,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.scheduled_end_time;
                 var5 = var8 != var5;
                 if (!var5) {
-                    _fun65510_ip = 627;
-                    continue _fun65510
+                    _fun65534_ip = 631;
+                    continue _fun65534
                 }
-            case 463:
+            case 465:
                 var8 = _closure1_slot4;
                 var12 = _closure1_slot0;
                 var9 = _closure1_slot2;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10.bind(var11)(var9);
                 var6.timeLabel = var9;
                 var5 = var8.bind(var3)(var7, var6);
-            case 627:
+            case 631:
                 var4[1] = var5;
                 var0.children = var4;
                 var0 = var2.bind(var3)(var1, var0);
@@ -230,4 +230,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3045, 8086, 8110, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3045, 8105, 8129, 1234, 2]);

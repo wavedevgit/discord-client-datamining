@@ -1,5 +1,9 @@
 package fs;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
-    public abstract Object a(Class cls);
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public interface a {
+    Comparable b();
+
+    Comparable c();
+
+    boolean isEmpty();
 }

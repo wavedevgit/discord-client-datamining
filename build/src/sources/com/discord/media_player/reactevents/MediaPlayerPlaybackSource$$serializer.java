@@ -1,14 +1,14 @@
 package com.discord.media_player.reactevents;
 
-import at.b0;
-import bt.a;
 import com.discord.primitives.MessageId;
 import com.discord.primitives.MessageId$$serializer;
 import com.facebook.react.devsupport.StackTraceHelper;
-import dt.a2;
-import dt.h0;
-import dt.n2;
-import dt.p0;
+import dt.b0;
+import et.a;
+import gt.a2;
+import gt.h0;
+import gt.n2;
+import gt.p0;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -16,10 +16,10 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
-import lr.c;
+import or.c;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/media_player/reactevents/MediaPlayerPlaybackSource.$serializer", "Ldt/h0;", "Lcom/discord/media_player/reactevents/MediaPlayerPlaybackSource;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/media_player/reactevents/MediaPlayerPlaybackSource;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/media_player/reactevents/MediaPlayerPlaybackSource;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "media_player_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @c
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/media_player/reactevents/MediaPlayerPlaybackSource.$serializer", "Lgt/h0;", "Lcom/discord/media_player/reactevents/MediaPlayerPlaybackSource;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/media_player/reactevents/MediaPlayerPlaybackSource;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/media_player/reactevents/MediaPlayerPlaybackSource;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "media_player_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public /* synthetic */ class MediaPlayerPlaybackSource$$serializer implements h0 {
     @NotNull
@@ -42,11 +42,11 @@ public /* synthetic */ class MediaPlayerPlaybackSource$$serializer implements h0
     private MediaPlayerPlaybackSource$$serializer() {
     }
 
-    @Override // dt.h0
+    @Override // gt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f20978a;
-        return new KSerializer[]{a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(MessageId$$serializer.INSTANCE), a.u(p0.f20994a)};
+        n2 n2Var = n2.f25302a;
+        return new KSerializer[]{a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(MessageId$$serializer.INSTANCE), a.u(p0.f25318a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -62,13 +62,13 @@ public /* synthetic */ class MediaPlayerPlaybackSource$$serializer implements h0
         SerialDescriptor serialDescriptor = descriptor;
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         if (b10.p()) {
-            n2 n2Var = n2.f20978a;
+            n2 n2Var = n2.f25302a;
             String str5 = (String) b10.n(serialDescriptor, 0, n2Var, null);
             String str6 = (String) b10.n(serialDescriptor, 1, n2Var, null);
             str = (String) b10.n(serialDescriptor, 2, n2Var, null);
             MessageId messageId = (MessageId) b10.n(serialDescriptor, 3, MessageId$$serializer.INSTANCE, null);
             str2 = messageId != null ? messageId.m1094unboximpl() : null;
-            num = (Integer) b10.n(serialDescriptor, 4, p0.f20994a, null);
+            num = (Integer) b10.n(serialDescriptor, 4, p0.f25318a, null);
             i10 = 31;
             str3 = str6;
             str4 = str5;
@@ -85,13 +85,13 @@ public /* synthetic */ class MediaPlayerPlaybackSource$$serializer implements h0
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    str9 = (String) b10.n(serialDescriptor, 0, n2.f20978a, str9);
+                    str9 = (String) b10.n(serialDescriptor, 0, n2.f25302a, str9);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    str8 = (String) b10.n(serialDescriptor, 1, n2.f20978a, str8);
+                    str8 = (String) b10.n(serialDescriptor, 1, n2.f25302a, str8);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    str = (String) b10.n(serialDescriptor, 2, n2.f20978a, str);
+                    str = (String) b10.n(serialDescriptor, 2, n2.f25302a, str);
                     i11 |= 4;
                 } else if (o10 == 3) {
                     MessageId messageId2 = (MessageId) b10.n(serialDescriptor, 3, MessageId$$serializer.INSTANCE, str7 != null ? MessageId.m1085boximpl(str7) : null);
@@ -100,7 +100,7 @@ public /* synthetic */ class MediaPlayerPlaybackSource$$serializer implements h0
                 } else if (o10 != 4) {
                     throw new b0(o10);
                 } else {
-                    num2 = (Integer) b10.n(serialDescriptor, 4, p0.f20994a, num2);
+                    num2 = (Integer) b10.n(serialDescriptor, 4, p0.f25318a, num2);
                     i11 |= 16;
                 }
             }
@@ -115,13 +115,13 @@ public /* synthetic */ class MediaPlayerPlaybackSource$$serializer implements h0
         return new MediaPlayerPlaybackSource(i10, str4, str3, str10, str2, num, null, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // at.o
+    @Override // dt.o
     public final void serialize(@NotNull Encoder encoder, @NotNull MediaPlayerPlaybackSource value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -131,7 +131,7 @@ public /* synthetic */ class MediaPlayerPlaybackSource$$serializer implements h0
         b10.c(serialDescriptor);
     }
 
-    @Override // dt.h0
+    @Override // gt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

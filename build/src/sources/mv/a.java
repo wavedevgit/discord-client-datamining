@@ -1,86 +1,15 @@
 package mv;
 
-import com.squareup.moshi.l;
-import com.squareup.moshi.w;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Type;
-import java.util.Collections;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import lv.a0;
-import lv.h;
+import jv.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a extends h.a {
+public interface a {
+    char a();
 
-    /* renamed from: a  reason: collision with root package name */
-    private final w f39504a;
+    int b();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final boolean f39505b;
+    char c();
 
-    /* renamed from: c  reason: collision with root package name */
-    private final boolean f39506c;
+    int d(b bVar, b bVar2);
 
-    /* renamed from: d  reason: collision with root package name */
-    private final boolean f39507d;
-
-    private a(w wVar, boolean z10, boolean z11, boolean z12) {
-        this.f39504a = wVar;
-        this.f39505b = z10;
-        this.f39506c = z11;
-        this.f39507d = z12;
-    }
-
-    public static a f(w wVar) {
-        if (wVar != null) {
-            return new a(wVar, false, false, false);
-        }
-        throw new NullPointerException("moshi == null");
-    }
-
-    private static Set g(Annotation[] annotationArr) {
-        LinkedHashSet linkedHashSet = null;
-        for (Annotation annotation : annotationArr) {
-            if (annotation.annotationType().isAnnotationPresent(l.class)) {
-                if (linkedHashSet == null) {
-                    linkedHashSet = new LinkedHashSet();
-                }
-                linkedHashSet.add(annotation);
-            }
-        }
-        if (linkedHashSet != null) {
-            return Collections.unmodifiableSet(linkedHashSet);
-        }
-        return Collections.EMPTY_SET;
-    }
-
-    @Override // lv.h.a
-    public h c(Type type, Annotation[] annotationArr, Annotation[] annotationArr2, a0 a0Var) {
-        com.squareup.moshi.h e10 = this.f39504a.e(type, g(annotationArr));
-        if (this.f39505b) {
-            e10 = e10.lenient();
-        }
-        if (this.f39506c) {
-            e10 = e10.failOnUnknown();
-        }
-        if (this.f39507d) {
-            e10 = e10.serializeNulls();
-        }
-        return new b(e10);
-    }
-
-    @Override // lv.h.a
-    public h d(Type type, Annotation[] annotationArr, a0 a0Var) {
-        com.squareup.moshi.h e10 = this.f39504a.e(type, g(annotationArr));
-        if (this.f39505b) {
-            e10 = e10.lenient();
-        }
-        if (this.f39506c) {
-            e10 = e10.failOnUnknown();
-        }
-        if (this.f39507d) {
-            e10 = e10.serializeNulls();
-        }
-        return new c(e10);
-    }
+    void e(w wVar, w wVar2, int i10);
 }

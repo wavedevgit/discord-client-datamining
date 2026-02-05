@@ -7,34 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class a {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f6647d = new a("NotRequested", 0);
+    public static final a f7066d = new a("Debug", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f6648e = new a("NotSupported", 1);
+    public static final a f7067e = new a("Warning", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f6649i = new a("Failed", 2);
+    public static final a f7068i = new a("Error", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f6650o = new a("Success", 3);
+    private static final /* synthetic */ a[] f7069o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ a[] f6651p;
-
-    /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f6652q;
+    private static final /* synthetic */ EnumEntries f7070p;
 
     static {
         a[] a10 = a();
-        f6651p = a10;
-        f6652q = sr.a.a(a10);
+        f7069o = a10;
+        f7070p = vr.a.a(a10);
     }
 
     private a(String str, int i10) {
     }
 
     private static final /* synthetic */ a[] a() {
-        return new a[]{f6647d, f6648e, f6649i, f6650o};
+        return new a[]{f7066d, f7067e, f7068i};
     }
 
     public static a valueOf(String str) {
@@ -42,6 +39,6 @@ public final class a {
     }
 
     public static a[] values() {
-        return (a[]) f6651p.clone();
+        return (a[]) f7069o.clone();
     }
 }

@@ -3,46 +3,46 @@ package io.sentry;
 public final class k3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private Double f30030a = null;
+    private Double f29088a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private Long f30031b = null;
+    private Long f29089b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private Long f30032c = null;
+    private Long f29090c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f30033d;
+    private final long f29091d;
 
     public k3(long j10) {
-        this.f30033d = j10;
+        this.f29091d = j10;
     }
 
     public Double a() {
-        return this.f30030a;
+        return this.f29088a;
     }
 
     public long b() {
-        return this.f30033d;
+        return this.f29091d;
     }
 
     public Long c() {
-        return this.f30031b;
+        return this.f29089b;
     }
 
     public Long d() {
-        return this.f30032c;
+        return this.f29090c;
     }
 
     public void e(Double d10) {
-        this.f30030a = d10;
+        this.f29088a = d10;
     }
 
     public void f(Long l10) {
-        this.f30031b = l10;
+        this.f29089b = l10;
     }
 
     public void g(Long l10) {
-        this.f30032c = l10;
+        this.f29090c = l10;
     }
 }

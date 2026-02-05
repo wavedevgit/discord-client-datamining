@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var5 = dependencyMap;
     var0 = function() {
-        _fun107308: for (var _fun107308_ip = 0;;) switch (_fun107308_ip) {
+        _fun107369: for (var _fun107369_ip = 0;;) switch (_fun107369_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun107308_ip = 76;
-                continue _fun107308;
+                _fun107369_ip = 76;
+                continue _fun107369;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var3.PersistedStore;
     var3 = function(arg0) { // Environment: var4
         var3 = function() {
-            _fun107312: for (var _fun107312_ip = 0;;) switch (_fun107312_ip) {
+            _fun107373: for (var _fun107373_ip = 0;;) switch (_fun107373_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -103,16 +103,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot7;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun107312_ip = 69;
-                        continue _fun107312
+                        _fun107373_ip = 69;
+                        continue _fun107373
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun107312_ip = 105;
-                    continue _fun107312;
+                    _fun107373_ip = 105;
+                    continue _fun107373;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -137,13 +137,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'initialize';
         var4.key = var0;
         var0 = function arg0() {
-            _fun107313: for (var _fun107313_ip = 0;;) switch (_fun107313_ip) {
+            _fun107374: for (var _fun107374_ip = 0;;) switch (_fun107374_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun107313_ip = 16;
-                        continue _fun107313
+                        _fun107374_ip = 16;
+                        continue _fun107374
                     }
                 case 9:
                     _closure1_slot6 = var1;
@@ -168,20 +168,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'getSelection';
         var4.key = var6;
         var5 = function() {
-            _fun107315: for (var _fun107315_ip = 0;;) switch (_fun107315_ip) {
+            _fun107376: for (var _fun107376_ip = 0;;) switch (_fun107376_ip) {
                 case 0:
                     var0 = _closure1_slot6;
                     var2 = var0.selection;
                     var0 = null;
                     if (!(var0 == var2)) {
-                        _fun107315_ip = 31;
-                        continue _fun107315
+                        _fun107376_ip = 31;
+                        continue _fun107376
                     }
                 case 19:
                     var0 = _closure1_slot5;
                     var0 = var0.COMMANDS;
-                    _fun107315_ip = 41;
-                    continue _fun107315;
+                    _fun107376_ip = 41;
+                    continue _fun107376;
                 case 31:
                     var1 = _closure1_slot6;
                     var0 = var1.selection;

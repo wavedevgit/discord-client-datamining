@@ -1,36 +1,125 @@
 package ct;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import gt.p0;
+import kotlin.Lazy;
+import kotlin.Unit;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.CompositeEncoder;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
+import or.l;
+import or.o;
+import ws.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d extends k {
+public final class d implements KSerializer {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final d f20016a = new d();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final Lazy f20017b = l.b(o.f44232e, a.f20018d);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a extends d {
+    static final class a extends Lambda implements Function0 {
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final a f19832a = new a();
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f20018d = new a();
 
-        private a() {
-            super(null);
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: ct.d$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class C0274a extends Lambda implements Function1 {
+
+            /* renamed from: d  reason: collision with root package name */
+            public static final C0274a f20019d = new C0274a();
+
+            C0274a() {
+                super(1);
+            }
+
+            public final void a(ft.a buildClassSerialDescriptor) {
+                Intrinsics.checkNotNullParameter(buildClassSerialDescriptor, "$this$buildClassSerialDescriptor");
+                buildClassSerialDescriptor.a("days", p0.f25318a.getDescriptor(), CollectionsKt.l(), false);
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                a((ft.a) obj);
+                return Unit.f31988a;
+            }
         }
-    }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b extends d {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final b f19833a = new b();
-
-        private b() {
-            super(null);
+        a() {
+            super(0);
         }
-    }
 
-    public /* synthetic */ d(DefaultConstructorMarker defaultConstructorMarker) {
-        this();
+        @Override // kotlin.jvm.functions.Function0
+        /* renamed from: a */
+        public final SerialDescriptor invoke() {
+            return ft.j.c("kotlinx.datetime.DayBased", new SerialDescriptor[0], C0274a.f20019d);
+        }
     }
 
     private d() {
-        super(null);
+    }
+
+    @Override // kotlinx.serialization.DeserializationStrategy
+    /* renamed from: a */
+    public c.C0706c deserialize(Decoder decoder) {
+        int i10;
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        SerialDescriptor descriptor = getDescriptor();
+        kotlinx.serialization.encoding.c b10 = decoder.b(descriptor);
+        boolean z10 = true;
+        if (b10.p()) {
+            i10 = b10.i(f20016a.getDescriptor(), 0);
+        } else {
+            i10 = 0;
+            boolean z11 = false;
+            while (true) {
+                d dVar = f20016a;
+                int o10 = b10.o(dVar.getDescriptor());
+                if (o10 != -1) {
+                    if (o10 == 0) {
+                        i10 = b10.i(dVar.getDescriptor(), 0);
+                        z11 = true;
+                    } else {
+                        c.a(o10);
+                        throw new or.h();
+                    }
+                } else {
+                    z10 = z11;
+                    break;
+                }
+            }
+        }
+        Unit unit = Unit.f31988a;
+        b10.c(descriptor);
+        if (z10) {
+            return new c.C0706c(i10);
+        }
+        throw new dt.c("days", getDescriptor().h());
+    }
+
+    @Override // dt.o
+    /* renamed from: b */
+    public void serialize(Encoder encoder, c.C0706c value) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        Intrinsics.checkNotNullParameter(value, "value");
+        SerialDescriptor descriptor = getDescriptor();
+        CompositeEncoder b10 = encoder.b(descriptor);
+        b10.v(f20016a.getDescriptor(), 0, value.d());
+        b10.c(descriptor);
+    }
+
+    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return (SerialDescriptor) f20017b.getValue();
     }
 }

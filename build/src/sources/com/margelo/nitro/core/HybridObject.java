@@ -32,7 +32,8 @@ public abstract class HybridObject {
         return "[HybridObject " + simpleName + "]";
     }
 
-    protected void updateNative(@NotNull HybridData hybridData) {
+    /* JADX INFO: Access modifiers changed from: protected */
+    public void updateNative(@NotNull HybridData hybridData) {
         Intrinsics.checkNotNullParameter(hybridData, "hybridData");
         this.mHybridData = hybridData;
     }

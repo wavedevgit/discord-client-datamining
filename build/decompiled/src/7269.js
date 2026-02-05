@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/images/native/premium/illustrations',
-        'width': 222.5,
-        'height': 118,
+        'httpServerLocation': '/assets/images/native/premium/logos',
+        'width': 605.5,
+        'height': 244.5,
         'scales': null,
-        'hash': '2762ca199009f1ddb659b515502ab30e',
-        'name': 'img_tier_0_perk_custom_video_backgrounds',
+        'hash': 'fdaf8ab7fb8f1ab3047aef93e706bcc1',
+        'name': 'img_discord_nitro_logo_left_light',
         'type': 'png'
     };
     var4 = [2, 3];

@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = '../discord_common/js/packages/rpc-schema/rpc-schema.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun98062: for (var _fun98062_ip = 0;;) switch (_fun98062_ip) {
+        _fun98079: for (var _fun98079_ip = 0;;) switch (_fun98079_ip) {
             case 0:
                 var0 = arg1;
                 var4 = var0.scope;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var5 = var3 == var4;
                 if (var5) {
-                    _fun98062_ip = 89;
-                    continue _fun98062
+                    _fun98079_ip = 89;
+                    continue _fun98079
                 }
             case 83:
                 var2 = var4.request;
@@ -53,19 +53,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot0 = var2;
                 _closure2_slot1 = var3;
                 if (!(var3 != var2)) {
-                    _fun98062_ip = 114;
-                    continue _fun98062
+                    _fun98079_ip = 114;
+                    continue _fun98079
                 }
             case 101:
                 var1 = function(arg0) { // Environment: var1
-                    _fun98063: for (var _fun98063_ip = 0;;) switch (_fun98063_ip) {
+                    _fun98080: for (var _fun98080_ip = 0;;) switch (_fun98080_ip) {
                         case 0:
                             var5 = arg0;
                             var2 = _closure2_slot1;
                             var1 = null;
                             if (!(var1 == var2)) {
-                                _fun98063_ip = 76;
-                                continue _fun98063
+                                _fun98080_ip = 76;
+                                continue _fun98080
                             }
                         case 16:
                             var2 = _closure1_slot0;
@@ -93,4 +93,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createRPCCommand = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12799, 12800, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12815, 12816, 2]);

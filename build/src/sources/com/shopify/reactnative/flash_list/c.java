@@ -10,13 +10,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c extends Event {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f17463c = new a(null);
+    public static final a f17869c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final double f17464a;
+    private final double f17870a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final double f17465b;
+    private final double f17871b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -30,8 +30,8 @@ public final class c extends Event {
 
     public c(int i10, int i11, double d10, double d11) {
         super(i10, i11);
-        this.f17464a = d10;
-        this.f17465b = d11;
+        this.f17870a = d10;
+        this.f17871b = d11;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -44,8 +44,8 @@ public final class c extends Event {
     protected WritableMap getEventData() {
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
-        createMap.putDouble("offsetStart", this.f17464a);
-        createMap.putDouble("offsetEnd", this.f17465b);
+        createMap.putDouble("offsetStart", this.f17870a);
+        createMap.putDouble("offsetEnd", this.f17871b);
         return createMap;
     }
 

@@ -7,28 +7,28 @@ import java.util.List;
 public abstract class a {
 
     /* renamed from: c  reason: collision with root package name */
-    private final d f42351c;
+    private final d f42257c;
 
     /* renamed from: e  reason: collision with root package name */
-    protected y5.c f42353e;
+    protected y5.c f42259e;
 
     /* renamed from: a  reason: collision with root package name */
-    final List f42349a = new ArrayList(1);
+    final List f42255a = new ArrayList(1);
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f42350b = false;
+    private boolean f42256b = false;
 
     /* renamed from: d  reason: collision with root package name */
-    protected float f42352d = 0.0f;
+    protected float f42258d = 0.0f;
 
     /* renamed from: f  reason: collision with root package name */
-    private Object f42354f = null;
+    private Object f42260f = null;
 
     /* renamed from: g  reason: collision with root package name */
-    private float f42355g = -1.0f;
+    private float f42261g = -1.0f;
 
     /* renamed from: h  reason: collision with root package name */
-    private float f42356h = -1.0f;
+    private float f42262h = -1.0f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface b {
@@ -93,70 +93,70 @@ public abstract class a {
     public static final class e implements d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f42357a;
+        private final List f42263a;
 
         /* renamed from: c  reason: collision with root package name */
-        private y5.a f42359c = null;
+        private y5.a f42265c = null;
 
         /* renamed from: d  reason: collision with root package name */
-        private float f42360d = -1.0f;
+        private float f42266d = -1.0f;
 
         /* renamed from: b  reason: collision with root package name */
-        private y5.a f42358b = f(0.0f);
+        private y5.a f42264b = f(0.0f);
 
         e(List list) {
-            this.f42357a = list;
+            this.f42263a = list;
         }
 
         private y5.a f(float f10) {
-            List list = this.f42357a;
+            List list = this.f42263a;
             y5.a aVar = (y5.a) list.get(list.size() - 1);
             if (f10 >= aVar.f()) {
                 return aVar;
             }
-            for (int size = this.f42357a.size() - 2; size >= 1; size--) {
-                y5.a aVar2 = (y5.a) this.f42357a.get(size);
-                if (this.f42358b != aVar2 && aVar2.a(f10)) {
+            for (int size = this.f42263a.size() - 2; size >= 1; size--) {
+                y5.a aVar2 = (y5.a) this.f42263a.get(size);
+                if (this.f42264b != aVar2 && aVar2.a(f10)) {
                     return aVar2;
                 }
             }
-            return (y5.a) this.f42357a.get(0);
+            return (y5.a) this.f42263a.get(0);
         }
 
         @Override // o5.a.d
         public boolean a(float f10) {
-            y5.a aVar = this.f42359c;
-            y5.a aVar2 = this.f42358b;
-            if (aVar == aVar2 && this.f42360d == f10) {
+            y5.a aVar = this.f42265c;
+            y5.a aVar2 = this.f42264b;
+            if (aVar == aVar2 && this.f42266d == f10) {
                 return true;
             }
-            this.f42359c = aVar2;
-            this.f42360d = f10;
+            this.f42265c = aVar2;
+            this.f42266d = f10;
             return false;
         }
 
         @Override // o5.a.d
         public y5.a b() {
-            return this.f42358b;
+            return this.f42264b;
         }
 
         @Override // o5.a.d
         public boolean c(float f10) {
-            if (this.f42358b.a(f10)) {
-                return !this.f42358b.i();
+            if (this.f42264b.a(f10)) {
+                return !this.f42264b.i();
             }
-            this.f42358b = f(f10);
+            this.f42264b = f(f10);
             return true;
         }
 
         @Override // o5.a.d
         public float d() {
-            return ((y5.a) this.f42357a.get(0)).f();
+            return ((y5.a) this.f42263a.get(0)).f();
         }
 
         @Override // o5.a.d
         public float e() {
-            List list = this.f42357a;
+            List list = this.f42263a;
             return ((y5.a) list.get(list.size() - 1)).c();
         }
 
@@ -171,42 +171,42 @@ public abstract class a {
     public static final class f implements d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final y5.a f42361a;
+        private final y5.a f42267a;
 
         /* renamed from: b  reason: collision with root package name */
-        private float f42362b = -1.0f;
+        private float f42268b = -1.0f;
 
         f(List list) {
-            this.f42361a = (y5.a) list.get(0);
+            this.f42267a = (y5.a) list.get(0);
         }
 
         @Override // o5.a.d
         public boolean a(float f10) {
-            if (this.f42362b == f10) {
+            if (this.f42268b == f10) {
                 return true;
             }
-            this.f42362b = f10;
+            this.f42268b = f10;
             return false;
         }
 
         @Override // o5.a.d
         public y5.a b() {
-            return this.f42361a;
+            return this.f42267a;
         }
 
         @Override // o5.a.d
         public boolean c(float f10) {
-            return !this.f42361a.i();
+            return !this.f42267a.i();
         }
 
         @Override // o5.a.d
         public float d() {
-            return this.f42361a.f();
+            return this.f42267a.f();
         }
 
         @Override // o5.a.d
         public float e() {
-            return this.f42361a.c();
+            return this.f42267a.c();
         }
 
         @Override // o5.a.d
@@ -217,14 +217,14 @@ public abstract class a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(List list) {
-        this.f42351c = p(list);
+        this.f42257c = p(list);
     }
 
     private float g() {
-        if (this.f42355g == -1.0f) {
-            this.f42355g = this.f42351c.d();
+        if (this.f42261g == -1.0f) {
+            this.f42261g = this.f42257c.d();
         }
-        return this.f42355g;
+        return this.f42261g;
     }
 
     private static d p(List list) {
@@ -238,63 +238,63 @@ public abstract class a {
     }
 
     public void a(b bVar) {
-        this.f42349a.add(bVar);
+        this.f42255a.add(bVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public y5.a b() {
         l5.e.b("BaseKeyframeAnimation#getCurrentKeyframe");
-        y5.a b10 = this.f42351c.b();
+        y5.a b10 = this.f42257c.b();
         l5.e.c("BaseKeyframeAnimation#getCurrentKeyframe");
         return b10;
     }
 
     float c() {
-        if (this.f42356h == -1.0f) {
-            this.f42356h = this.f42351c.e();
+        if (this.f42262h == -1.0f) {
+            this.f42262h = this.f42257c.e();
         }
-        return this.f42356h;
+        return this.f42262h;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public float d() {
         y5.a b10 = b();
         if (b10 != null && !b10.i()) {
-            return b10.f53742d.getInterpolation(e());
+            return b10.f54438d.getInterpolation(e());
         }
         return 0.0f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float e() {
-        if (this.f42350b) {
+        if (this.f42256b) {
             return 0.0f;
         }
         y5.a b10 = b();
         if (b10.i()) {
             return 0.0f;
         }
-        return (this.f42352d - b10.f()) / (b10.c() - b10.f());
+        return (this.f42258d - b10.f()) / (b10.c() - b10.f());
     }
 
     public float f() {
-        return this.f42352d;
+        return this.f42258d;
     }
 
     public Object h() {
         Object i10;
         float e10 = e();
-        if (this.f42353e == null && this.f42351c.a(e10)) {
-            return this.f42354f;
+        if (this.f42259e == null && this.f42257c.a(e10)) {
+            return this.f42260f;
         }
         y5.a b10 = b();
-        Interpolator interpolator = b10.f53743e;
-        if (interpolator != null && b10.f53744f != null) {
-            i10 = j(b10, e10, interpolator.getInterpolation(e10), b10.f53744f.getInterpolation(e10));
+        Interpolator interpolator = b10.f54439e;
+        if (interpolator != null && b10.f54440f != null) {
+            i10 = j(b10, e10, interpolator.getInterpolation(e10), b10.f54440f.getInterpolation(e10));
         } else {
             i10 = i(b10, d());
         }
-        this.f42354f = i10;
+        this.f42260f = i10;
         return i10;
     }
 
@@ -305,7 +305,7 @@ public abstract class a {
     }
 
     public boolean k() {
-        if (this.f42353e != null) {
+        if (this.f42259e != null) {
             return true;
         }
         return false;
@@ -313,19 +313,19 @@ public abstract class a {
 
     public void l() {
         l5.e.b("BaseKeyframeAnimation#notifyListeners");
-        for (int i10 = 0; i10 < this.f42349a.size(); i10++) {
-            ((b) this.f42349a.get(i10)).a();
+        for (int i10 = 0; i10 < this.f42255a.size(); i10++) {
+            ((b) this.f42255a.get(i10)).a();
         }
         l5.e.c("BaseKeyframeAnimation#notifyListeners");
     }
 
     public void m() {
-        this.f42350b = true;
+        this.f42256b = true;
     }
 
     public void n(float f10) {
         l5.e.b("BaseKeyframeAnimation#setProgress");
-        if (this.f42351c.isEmpty()) {
+        if (this.f42257c.isEmpty()) {
             l5.e.c("BaseKeyframeAnimation#setProgress");
             return;
         }
@@ -334,23 +334,23 @@ public abstract class a {
         } else if (f10 > c()) {
             f10 = c();
         }
-        if (f10 == this.f42352d) {
+        if (f10 == this.f42258d) {
             l5.e.c("BaseKeyframeAnimation#setProgress");
             return;
         }
-        this.f42352d = f10;
-        if (this.f42351c.c(f10)) {
+        this.f42258d = f10;
+        if (this.f42257c.c(f10)) {
             l();
         }
         l5.e.c("BaseKeyframeAnimation#setProgress");
     }
 
     public void o(y5.c cVar) {
-        y5.c cVar2 = this.f42353e;
+        y5.c cVar2 = this.f42259e;
         if (cVar2 != null) {
             cVar2.c(null);
         }
-        this.f42353e = cVar;
+        this.f42259e = cVar;
         if (cVar != null) {
             cVar.c(this);
         }

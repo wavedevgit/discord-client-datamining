@@ -87,119 +87,119 @@ import java.util.regex.Pattern;
 public class n {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final ILogger f30530o;
+    private static final ILogger f29588o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final x0 f30531p;
+    private static final x0 f29589p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Charset f30532q;
+    private static final Charset f29590q;
 
     /* renamed from: r  reason: collision with root package name */
-    static long f30533r;
+    static long f29591r;
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReactApplicationContext f30534a;
+    private final ReactApplicationContext f29592a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final PackageInfo f30535b;
+    private final PackageInfo f29593b;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f30537d;
+    private boolean f29595d;
 
     /* renamed from: c  reason: collision with root package name */
-    private FrameMetricsAggregator f30536c = null;
+    private FrameMetricsAggregator f29594c = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f30538e = 101;
+    private int f29596e = 101;
 
     /* renamed from: f  reason: collision with root package name */
-    private i0 f30539f = null;
+    private i0 f29597f = null;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f30540g = false;
+    private boolean f29598g = false;
 
     /* renamed from: h  reason: collision with root package name */
-    private String f30541h = null;
+    private String f29599h = null;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30542i = null;
+    private String f29600i = null;
 
     /* renamed from: j  reason: collision with root package name */
-    private z0 f30543j = null;
+    private z0 f29601j = null;
 
     /* renamed from: l  reason: collision with root package name */
-    private long f30545l = 5242880;
+    private long f29603l = 5242880;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Runnable f30544k = w();
+    private final Runnable f29602k = w();
 
     /* renamed from: m  reason: collision with root package name */
-    private final k5 f30546m = new l2();
+    private final k5 f29604m = new l2();
 
     /* renamed from: n  reason: collision with root package name */
-    private final io.sentry.util.u f30547n = new io.sentry.util.u();
+    private final io.sentry.util.u f29605n = new io.sentry.util.u();
 
     static {
         z zVar = new z(NativeRNSentrySpec.NAME);
-        f30530o = zVar;
-        f30531p = new x0(zVar);
-        f30532q = Charset.forName("UTF-8");
-        f30533r = -1L;
+        f29588o = zVar;
+        f29589p = new x0(zVar);
+        f29590q = Charset.forName("UTF-8");
+        f29591r = -1L;
     }
 
     public n(ReactApplicationContext reactApplicationContext) {
-        this.f30535b = R(reactApplicationContext);
-        this.f30534a = reactApplicationContext;
+        this.f29593b = R(reactApplicationContext);
+        this.f29592a = reactApplicationContext;
     }
 
     private Activity N() {
-        return this.f30534a.getCurrentActivity();
+        return this.f29592a.getCurrentActivity();
     }
 
     private static PackageInfo R(Context context) {
         try {
             return context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
         } catch (PackageManager.NameNotFoundException unused) {
-            f30530o.c(SentryLevel.WARNING, "Error getting package info.", new Object[0]);
+            f29588o.c(SentryLevel.WARNING, "Error getting package info.", new Object[0]);
             return null;
         }
     }
 
     private String S() {
-        if (this.f30542i == null) {
-            this.f30542i = new File(U().getCacheDir(), "sentry/react").getAbsolutePath();
+        if (this.f29600i == null) {
+            this.f29600i = new File(U().getCacheDir(), "sentry/react").getAbsolutePath();
         }
-        File file = new File(this.f30542i, "profiling_trace");
+        File file = new File(this.f29600i, "profiling_trace");
         file.mkdirs();
         return file.getAbsolutePath();
     }
 
     private String T() {
-        if (this.f30540g) {
-            return this.f30541h;
+        if (this.f29598g) {
+            return this.f29599h;
         }
-        this.f30540g = true;
-        List<Properties> a10 = new io.sentry.android.core.internal.debugmeta.a(U(), f30530o).a();
+        this.f29598g = true;
+        List<Properties> a10 = new io.sentry.android.core.internal.debugmeta.a(U(), f29588o).a();
         if (a10 == null) {
             return null;
         }
         for (Properties properties : a10) {
             String m10 = io.sentry.util.d.m(properties);
-            this.f30541h = m10;
+            this.f29599h = m10;
             if (m10 != null) {
-                ILogger iLogger = f30530o;
+                ILogger iLogger = f29588o;
                 SentryLevel sentryLevel = SentryLevel.INFO;
-                iLogger.c(sentryLevel, "Proguard uuid found: " + this.f30541h, new Object[0]);
-                return this.f30541h;
+                iLogger.c(sentryLevel, "Proguard uuid found: " + this.f29599h, new Object[0]);
+                return this.f29599h;
             }
         }
-        f30530o.c(SentryLevel.WARNING, "No proguard uuid found in debug meta properties file!", new Object[0]);
+        f29588o.c(SentryLevel.WARNING, "No proguard uuid found in debug meta properties file!", new Object[0]);
         return null;
     }
 
     private ReactApplicationContext U() {
-        return this.f30534a;
+        return this.f29592a;
     }
 
     private m7 V(ReadableMap readableMap) {
@@ -262,7 +262,7 @@ public class n {
 
     private void Y() {
         FragmentManager supportFragmentManager;
-        s sVar = new s(f30531p, this.f30544k, f30530o);
+        s sVar = new s(f29589p, this.f29602k, f29588o);
         FragmentActivity fragmentActivity = (FragmentActivity) N();
         if (fragmentActivity != null && (supportFragmentManager = fragmentActivity.getSupportFragmentManager()) != null) {
             supportFragmentManager.l1(sVar, true);
@@ -271,7 +271,7 @@ public class n {
 
     private void Z() {
         FragmentManager supportFragmentManager;
-        io.sentry.react.replay.a aVar = new io.sentry.react.replay.a(f30530o);
+        io.sentry.react.replay.a aVar = new io.sentry.react.replay.a(f29588o);
         Activity N = N();
         if ((N instanceof FragmentActivity) && (supportFragmentManager = ((FragmentActivity) N).getSupportFragmentManager()) != null) {
             supportFragmentManager.l1(aVar, true);
@@ -279,21 +279,21 @@ public class n {
     }
 
     private void c0() {
-        if (this.f30543j == null) {
-            this.f30543j = new q6();
+        if (this.f29601j == null) {
+            this.f29601j = new q6();
         }
         String S = S();
-        int micros = ((int) TimeUnit.SECONDS.toMicros(1L)) / this.f30538e;
-        ReactApplicationContext reactApplicationContext = this.f30534a;
-        ILogger iLogger = f30530o;
-        this.f30539f = new i0(S, micros, new c0(reactApplicationContext, iLogger, f30531p), this.f30543j, iLogger);
+        int micros = ((int) TimeUnit.SECONDS.toMicros(1L)) / this.f29596e;
+        ReactApplicationContext reactApplicationContext = this.f29592a;
+        ILogger iLogger = f29588o;
+        this.f29597f = new i0(S, micros, new c0(reactApplicationContext, iLogger, f29589p), this.f29601j, iLogger);
     }
 
     public static /* synthetic */ Breadcrumb d(String str, String str2, Breadcrumb breadcrumb, Hint hint) {
         String str3;
-        Object o10 = breadcrumb.o("url");
-        if (o10 instanceof String) {
-            str3 = (String) o10;
+        Object n10 = breadcrumb.n("url");
+        if (n10 instanceof String) {
+            str3 = (String) n10;
         } else {
             str3 = "";
         }
@@ -310,7 +310,7 @@ public class n {
     }
 
     private boolean d0() {
-        if (this.f30537d && this.f30536c != null) {
+        if (this.f29595d && this.f29594c != null) {
             return true;
         }
         return false;
@@ -319,7 +319,7 @@ public class n {
     public static /* synthetic */ void e(ReadableMap readableMap, ReadableMap readableMap2, IScope iScope) {
         ReadableMap map;
         if (readableMap == null && readableMap2 == null) {
-            iScope.j(null);
+            iScope.l(null);
             return;
         }
         h0 h0Var = new h0();
@@ -362,7 +362,7 @@ public class n {
             }
             h0Var.l(hashMap);
         }
-        iScope.j(h0Var);
+        iScope.l(h0Var);
     }
 
     private boolean e0(m7 m7Var) {
@@ -374,15 +374,15 @@ public class n {
 
     public static /* synthetic */ void f(ReadableMap readableMap, String str, IScope iScope) {
         if (readableMap == null) {
-            iScope.H(str);
+            iScope.J(str);
         } else {
-            iScope.z(str, readableMap.toHashMap());
+            iScope.B(str, readableMap.toHashMap());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void f0() {
-        w.f(Double.valueOf(this.f30546m.now().h() / 1.0E9d));
+        w.f(Double.valueOf(this.f29604m.now().h() / 1.0E9d));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -393,13 +393,13 @@ public class n {
     }
 
     public static /* synthetic */ void h(byte[][] bArr, Activity activity, CountDownLatch countDownLatch) {
-        bArr[0] = io.sentry.android.core.internal.util.w.f(activity, f30530o, f30531p);
+        bArr[0] = io.sentry.android.core.internal.util.w.f(activity, f29588o, f29589p);
         countDownLatch.countDown();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void h0(ReadableMap readableMap, SentryAndroidOptions sentryAndroidOptions) {
-        W(sentryAndroidOptions, readableMap, f30530o);
+        W(sentryAndroidOptions, readableMap, f29588o);
     }
 
     private m7.a i0(String str) {
@@ -445,7 +445,7 @@ public class n {
         iScope.e(a.a(readableMap));
         String b10 = a.b(readableMap);
         if (b10 != null) {
-            iScope.L(b10);
+            iScope.N(b10);
         }
     }
 
@@ -557,7 +557,7 @@ public class n {
             countDownLatch.await(2L, TimeUnit.SECONDS);
             return bArr[0];
         } catch (InterruptedException unused) {
-            f30530o.c(SentryLevel.ERROR, "Screenshot process was interrupted.", new Object[0]);
+            f29588o.c(SentryLevel.ERROR, "Screenshot process was interrupted.", new Object[0]);
             return new byte[0];
         }
     }
@@ -569,7 +569,7 @@ public class n {
                 byte[] bArr = new byte[bufferedInputStream.available()];
                 bufferedInputStream.read(bArr);
                 bufferedInputStream.close();
-                promise.resolve(new String(bArr, f30532q));
+                promise.resolve(new String(bArr, f29590q));
                 bufferedInputStream.close();
             } catch (Throwable th2) {
                 try {
@@ -582,13 +582,13 @@ public class n {
         } catch (FileNotFoundException unused) {
             promise.resolve(null);
         } catch (Throwable unused2) {
-            f30530o.c(SentryLevel.WARNING, "Fetching JS Modules failed.", new Object[0]);
+            f29588o.c(SentryLevel.WARNING, "Fetching JS Modules failed.", new Object[0]);
             promise.resolve(null);
         }
     }
 
     public void B(Promise promise) {
-        C(promise, io.sentry.android.core.performance.h.q(), w1.i(), f30530o);
+        C(promise, io.sentry.android.core.performance.h.q(), w1.i(), f29588o);
     }
 
     protected void C(Promise promise, io.sentry.android.core.performance.h hVar, Map map, ILogger iLogger) {
@@ -599,28 +599,28 @@ public class n {
             return;
         }
         WritableMap writableMap = (WritableMap) b.c(map);
-        long j10 = hVar.l().j();
-        long j11 = f30533r;
-        if (j11 > 0 && j11 == j10) {
+        long k10 = hVar.l().k();
+        long j10 = f29591r;
+        if (j10 > 0 && j10 == k10) {
             z10 = true;
         } else {
             z10 = false;
         }
         writableMap.putBoolean("has_fetched", z10);
-        if (f30533r < 0) {
+        if (f29591r < 0) {
             iLogger.c(SentryLevel.DEBUG, "App Start data reported to the RN layer for the first time.", new Object[0]);
         } else if (z10) {
             iLogger.c(SentryLevel.DEBUG, "App Start data already fetched from native before.", new Object[0]);
         } else {
             iLogger.c(SentryLevel.DEBUG, "App Start data updated, reporting to the RN layer again.", new Object[0]);
         }
-        f30533r = j10;
+        f29591r = k10;
         hVar.t();
         promise.resolve(writableMap);
     }
 
     public void D(Promise promise) {
-        E(promise, l4.h().b(), U().getApplicationContext(), w1.j());
+        E(promise, l4.f().b(), U().getApplicationContext(), w1.j());
     }
 
     protected void E(Promise promise, k7 k7Var, Context context, IScope iScope) {
@@ -630,7 +630,7 @@ public class n {
             promise.resolve(null);
         } else {
             if (iScope != null) {
-                Iterator it = iScope.s().iterator();
+                Iterator it = iScope.u().iterator();
                 while (it.hasNext()) {
                     if ("react-native".equals(((Breadcrumb) it.next()).s())) {
                         it.remove();
@@ -651,7 +651,7 @@ public class n {
             return;
         }
         try {
-            SparseIntArray[] b10 = this.f30536c.b();
+            SparseIntArray[] b10 = this.f29594c.b();
             if (b10 != null && (sparseIntArray = b10[0]) != null) {
                 i10 = 0;
                 i11 = 0;
@@ -677,13 +677,13 @@ public class n {
             createMap.putInt("frozenFrames", i12);
             promise.resolve(createMap);
         } catch (Throwable unused) {
-            f30530o.c(SentryLevel.WARNING, "Error fetching native frames.", new Object[0]);
+            f29588o.c(SentryLevel.WARNING, "Error fetching native frames.", new Object[0]);
             promise.resolve(null);
         }
     }
 
     public void G(Promise promise) {
-        H(promise, l4.h().b(), U().getApplicationContext(), w1.j());
+        H(promise, l4.f().b(), U().getApplicationContext(), w1.j());
     }
 
     protected void H(Promise promise, k7 k7Var, Context context, IScope iScope) {
@@ -711,19 +711,19 @@ public class n {
     }
 
     public String I() {
-        return this.f30535b.packageName;
+        return this.f29593b.packageName;
     }
 
     public void J(Promise promise) {
         WritableMap createMap = Arguments.createMap();
-        createMap.putString(StackTraceHelper.ID_KEY, this.f30535b.packageName);
-        createMap.putString("version", this.f30535b.versionName);
-        createMap.putString("build", String.valueOf(this.f30535b.versionCode));
+        createMap.putString(StackTraceHelper.ID_KEY, this.f29593b.packageName);
+        createMap.putString("version", this.f29593b.versionName);
+        createMap.putString("build", String.valueOf(this.f29593b.versionCode));
         promise.resolve(createMap);
     }
 
     public void K(Promise promise) {
-        io.sentry.protocol.r sdkVersion = l4.h().b().getSdkVersion();
+        io.sentry.protocol.r sdkVersion = l4.f().b().getSdkVersion();
         if (sdkVersion == null) {
             promise.resolve(null);
             return;
@@ -736,14 +736,14 @@ public class n {
 
     public void L(Promise promise) {
         Activity N = N();
-        ILogger iLogger = f30530o;
+        ILogger iLogger = f29588o;
         io.sentry.protocol.i0 d10 = ViewHierarchyEventProcessor.d(N, iLogger);
         if (d10 == null) {
             iLogger.c(SentryLevel.ERROR, "Could not get ViewHierarchy.", new Object[0]);
             promise.resolve(null);
             return;
         }
-        byte[] c10 = io.sentry.util.q.c(l4.h().b().getSerializer(), iLogger, d10);
+        byte[] c10 = io.sentry.util.q.c(l4.f().b().getSerializer(), iLogger, d10);
         if (c10 == null) {
             iLogger.c(SentryLevel.ERROR, "Could not serialize ViewHierarchy.", new Object[0]);
             promise.resolve(null);
@@ -762,19 +762,19 @@ public class n {
     protected Context M() {
         Context applicationContext = U().getApplicationContext();
         if (applicationContext == null) {
-            f30530o.c(SentryLevel.ERROR, "ApplicationContext is null, using ReactApplicationContext fallback.", new Object[0]);
+            f29588o.c(SentryLevel.ERROR, "ApplicationContext is null, using ReactApplicationContext fallback.", new Object[0]);
             return U();
         }
         return applicationContext;
     }
 
     public String O() {
-        x J;
+        x L;
         IScope j10 = w1.j();
-        if (j10 == null || (J = j10.J()) == x.f30413e) {
+        if (j10 == null || (L = j10.L()) == x.f29471e) {
             return null;
         }
-        return J.toString();
+        return L.toString();
     }
 
     public void P(String str, Promise promise) {
@@ -782,7 +782,7 @@ public class n {
             InputStream openInputStream = U().getContentResolver().openInputStream(Uri.parse(str));
             if (openInputStream == null) {
                 String str2 = "File not found for uri: " + str;
-                f30530o.c(SentryLevel.ERROR, str2, new Object[0]);
+                f29588o.c(SentryLevel.ERROR, str2, new Object[0]);
                 promise.reject(new Exception(str2));
                 if (openInputStream == null) {
                     return;
@@ -807,13 +807,13 @@ public class n {
             openInputStream.close();
         } catch (IOException e10) {
             String str3 = "Error reading uri: " + str + ": " + e10.getMessage();
-            f30530o.c(SentryLevel.ERROR, str3, new Object[0]);
+            f29588o.c(SentryLevel.ERROR, str3, new Object[0]);
             promise.reject(new Exception(str3));
         }
     }
 
     public void Q(Promise promise) {
-        w.c(promise, this.f30546m);
+        w.c(promise, this.f29604m);
     }
 
     protected void W(final SentryAndroidOptions sentryAndroidOptions, ReadableMap readableMap, ILogger iLogger) {
@@ -908,9 +908,9 @@ public class n {
         }
         m7 V = V(readableMap);
         sentryAndroidOptions.setSessionReplay(V);
-        boolean c10 = this.f30547n.c("io.sentry.android.replay.ReplayIntegration", iLogger);
+        boolean c10 = this.f29605n.c("io.sentry.android.replay.ReplayIntegration", iLogger);
         if (e0(V) && c10) {
-            sentryAndroidOptions.getReplayController().x(new t());
+            sentryAndroidOptions.getReplayController().o(new t());
             Z();
         }
         final String X = X(readableMap.getString("dsn"));
@@ -979,11 +979,11 @@ public class n {
     }
 
     public void m(String str) {
-        f30530o.c(SentryLevel.ERROR, "addListener of NativeEventEmitter can't be used on Android!", new Object[0]);
+        f29588o.c(SentryLevel.ERROR, "addListener of NativeEventEmitter can't be used on Android!", new Object[0]);
     }
 
     public void m0(double d10) {
-        f30530o.c(SentryLevel.ERROR, "removeListeners of NativeEventEmitter can't be used on Android!", new Object[0]);
+        f29588o.c(SentryLevel.ERROR, "removeListeners of NativeEventEmitter can't be used on Android!", new Object[0]);
     }
 
     public boolean n0(String str) {
@@ -996,7 +996,7 @@ public class n {
         byte[] a10 = io.sentry.vendor.a.a(str, 0);
         try {
         } catch (Throwable unused) {
-            f30530o.c(SentryLevel.ERROR, "Error while capturing envelope", new Object[0]);
+            f29588o.c(SentryLevel.ERROR, "Error while capturing envelope", new Object[0]);
             promise.resolve(Boolean.FALSE);
         }
         if (readableMap.hasKey("hardCrashed") && readableMap.getBoolean("hardCrashed")) {
@@ -1011,7 +1011,7 @@ public class n {
 
     public void o0(final String str, final ReadableMap readableMap) {
         if (str == null) {
-            f30530o.c(SentryLevel.ERROR, "RNSentry.setContext called with null key, can't change context.", new Object[0]);
+            f29588o.c(SentryLevel.ERROR, "RNSentry.setContext called with null key, can't change context.", new Object[0]);
         } else {
             b5.p(new b4() { // from class: io.sentry.react.k
                 @Override // io.sentry.b4
@@ -1023,14 +1023,14 @@ public class n {
     }
 
     public void p(boolean z10, Promise promise) {
-        b5.v().b().getReplayController().B(Boolean.valueOf(z10));
+        b5.v().b().getReplayController().y(Boolean.valueOf(z10));
         promise.resolve(O());
     }
 
     public void q(Promise promise) {
         Activity N = N();
         if (N == null) {
-            f30530o.c(SentryLevel.WARNING, "CurrentActivity is null, can't capture screenshot.", new Object[0]);
+            f29588o.c(SentryLevel.WARNING, "CurrentActivity is null, can't capture screenshot.", new Object[0]);
             promise.resolve(null);
             return;
         }
@@ -1049,7 +1049,7 @@ public class n {
             promise.resolve(writableNativeArray2);
             return;
         }
-        f30530o.c(SentryLevel.WARNING, "Screenshot is null, screen was not captured.", new Object[0]);
+        f29588o.c(SentryLevel.WARNING, "Screenshot is null, screen was not captured.", new Object[0]);
         promise.resolve(null);
     }
 
@@ -1062,7 +1062,7 @@ public class n {
                 }
             });
         } else {
-            f30530o.c(SentryLevel.ERROR, "RNSentry.setExtra called with null key or value, can't change extra.", new Object[0]);
+            f29588o.c(SentryLevel.ERROR, "RNSentry.setExtra called with null key or value, can't change extra.", new Object[0]);
         }
     }
 
@@ -1070,7 +1070,7 @@ public class n {
         b5.p(new b4() { // from class: io.sentry.react.h
             @Override // io.sentry.b4
             public final void a(IScope iScope) {
-                iScope.w();
+                iScope.y();
             }
         });
     }
@@ -1105,12 +1105,12 @@ public class n {
 
     public WritableMap u0(boolean z10) {
         WritableNativeMap writableNativeMap = new WritableNativeMap();
-        if (this.f30539f == null && z10) {
+        if (this.f29597f == null && z10) {
             c0();
         }
         try {
             HermesSamplingProfiler.enable();
-            i0 i0Var = this.f30539f;
+            i0 i0Var = this.f29597f;
             if (i0Var != null) {
                 i0Var.j();
             }
@@ -1129,37 +1129,37 @@ public class n {
 
     public WritableMap v0() {
         i0.b bVar;
-        boolean isDebug = l4.h().b().isDebug();
+        boolean isDebug = l4.f().b().isDebug();
         WritableNativeMap writableNativeMap = new WritableNativeMap();
         File file = null;
         try {
-            i0 i0Var = this.f30539f;
+            i0 i0Var = this.f29597f;
             if (i0Var != null) {
                 bVar = i0Var.g(false, null);
             } else {
                 bVar = null;
             }
             HermesSamplingProfiler.disable();
-            file = File.createTempFile("sampling-profiler-trace", ".cpuprofile", this.f30534a.getCacheDir());
+            file = File.createTempFile("sampling-profiler-trace", ".cpuprofile", this.f29592a.getCacheDir());
             if (isDebug) {
-                f30530o.c(SentryLevel.INFO, "Profile saved to: " + file.getAbsolutePath(), new Object[0]);
+                f29588o.c(SentryLevel.INFO, "Profile saved to: " + file.getAbsolutePath(), new Object[0]);
             }
             HermesSamplingProfiler.dumpSampledTraceToFile(file.getPath());
             writableNativeMap.putString("profile", l0(file));
             if (bVar != null) {
                 WritableNativeMap writableNativeMap2 = new WritableNativeMap();
-                writableNativeMap2.putString("sampled_profile", io.sentry.vendor.a.f(io.sentry.util.i.b(bVar.f28882c.getPath(), this.f30545l), 3));
-                writableNativeMap2.putInt("android_api_level", f30531p.d());
+                writableNativeMap2.putString("sampled_profile", io.sentry.vendor.a.f(io.sentry.util.i.b(bVar.f27940c.getPath(), this.f29603l), 3));
+                writableNativeMap2.putInt("android_api_level", f29589p.d());
                 writableNativeMap2.putString("build_id", T());
                 writableNativeMap.putMap("androidProfile", writableNativeMap2);
             }
             try {
                 if (!file.delete()) {
-                    f30530o.c(SentryLevel.WARNING, "Profile not deleted from:" + file.getAbsolutePath(), new Object[0]);
+                    f29588o.c(SentryLevel.WARNING, "Profile not deleted from:" + file.getAbsolutePath(), new Object[0]);
                     return writableNativeMap;
                 }
             } catch (Throwable unused) {
-                f30530o.c(SentryLevel.WARNING, "Profile not deleted from:" + file.getAbsolutePath(), new Object[0]);
+                f29588o.c(SentryLevel.WARNING, "Profile not deleted from:" + file.getAbsolutePath(), new Object[0]);
             }
         } catch (Throwable th2) {
             try {
@@ -1167,20 +1167,20 @@ public class n {
                 if (file != null) {
                     try {
                         if (!file.delete()) {
-                            f30530o.c(SentryLevel.WARNING, "Profile not deleted from:" + file.getAbsolutePath(), new Object[0]);
+                            f29588o.c(SentryLevel.WARNING, "Profile not deleted from:" + file.getAbsolutePath(), new Object[0]);
                         }
                     } catch (Throwable unused2) {
-                        f30530o.c(SentryLevel.WARNING, "Profile not deleted from:" + file.getAbsolutePath(), new Object[0]);
+                        f29588o.c(SentryLevel.WARNING, "Profile not deleted from:" + file.getAbsolutePath(), new Object[0]);
                     }
                 }
             } catch (Throwable th3) {
                 if (file != null) {
                     try {
                         if (!file.delete()) {
-                            f30530o.c(SentryLevel.WARNING, "Profile not deleted from:" + file.getAbsolutePath(), new Object[0]);
+                            f29588o.c(SentryLevel.WARNING, "Profile not deleted from:" + file.getAbsolutePath(), new Object[0]);
                         }
                     } catch (Throwable unused3) {
-                        f30530o.c(SentryLevel.WARNING, "Profile not deleted from:" + file.getAbsolutePath(), new Object[0]);
+                        f29588o.c(SentryLevel.WARNING, "Profile not deleted from:" + file.getAbsolutePath(), new Object[0]);
                     }
                 }
                 throw th3;
@@ -1191,8 +1191,8 @@ public class n {
 
     public void x() {
         if (d0()) {
-            this.f30536c.e();
-            this.f30536c = null;
+            this.f29594c.e();
+            this.f29594c = null;
         }
     }
 
@@ -1238,25 +1238,25 @@ public class n {
 
     public void y() {
         boolean r10 = r();
-        this.f30537d = r10;
+        this.f29595d = r10;
         if (r10) {
-            this.f30536c = new FrameMetricsAggregator();
+            this.f29594c = new FrameMetricsAggregator();
             Activity N = N();
-            FrameMetricsAggregator frameMetricsAggregator = this.f30536c;
+            FrameMetricsAggregator frameMetricsAggregator = this.f29594c;
             if (frameMetricsAggregator != null && N != null) {
                 try {
                     frameMetricsAggregator.a(N);
-                    f30530o.c(SentryLevel.INFO, "FrameMetricsAggregator installed.", new Object[0]);
+                    f29588o.c(SentryLevel.INFO, "FrameMetricsAggregator installed.", new Object[0]);
                     return;
                 } catch (Throwable unused) {
-                    f30530o.c(SentryLevel.ERROR, "Error adding Activity to frameMetricsAggregator.", new Object[0]);
+                    f29588o.c(SentryLevel.ERROR, "Error adding Activity to frameMetricsAggregator.", new Object[0]);
                     return;
                 }
             }
-            f30530o.c(SentryLevel.INFO, "currentActivity isn't available.", new Object[0]);
+            f29588o.c(SentryLevel.INFO, "currentActivity isn't available.", new Object[0]);
             return;
         }
-        f30530o.c(SentryLevel.WARNING, "androidx.core' isn't available as a dependency.", new Object[0]);
+        f29588o.c(SentryLevel.WARNING, "androidx.core' isn't available as a dependency.", new Object[0]);
     }
 
     public void z(ReadableArray readableArray, Promise promise) {

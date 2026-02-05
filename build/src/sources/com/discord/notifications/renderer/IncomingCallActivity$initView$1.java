@@ -42,14 +42,14 @@ public final class IncomingCallActivity$initView$1 extends k implements Function
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        rr.b.f();
+        ur.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             boolean booleanExtra = this.this$0.getIntent().getBooleanExtra(NotificationRenderer.IS_DM, false);
             String stringExtra = this.this$0.getIntent().getStringExtra(NotificationRenderer.CHANNEL_NAME);
             View contentView = ActivityExtensionsKt.getContentView(this.this$0);
             if (contentView == null) {
-                return Unit.f32464a;
+                return Unit.f31988a;
             }
             contentView.setBackgroundColor(ThemeManagerKt.getTheme().getControlPrimaryBackgroundDefault());
             ViewBackgroundUtilsKt.setBackgroundDrawableRes(contentView, R.drawable.incoming_call_gradient);
@@ -76,13 +76,13 @@ public final class IncomingCallActivity$initView$1 extends k implements Function
             if (Build.VERSION.SDK_INT >= 33) {
                 this.this$0.configureActions();
             }
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((IncomingCallActivity$initView$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((IncomingCallActivity$initView$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

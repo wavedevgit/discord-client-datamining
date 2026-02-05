@@ -2,13 +2,13 @@ package com.withpersona.sdk2.inquiry.network.core;
 
 import com.squareup.moshi.w;
 import javax.inject.Provider;
-import lv.a0;
 import okhttp3.OkHttpClient;
-import wq.g;
-import wq.h;
-import wq.i;
+import ov.a0;
+import zq.g;
+import zq.h;
+import zq.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class NetworkCoreModule_RetrofitFactory implements wq.d {
+public final class NetworkCoreModule_RetrofitFactory implements zq.d {
     private final NetworkCoreModule module;
     private final h moshiProvider;
     private final h okHttpClientProvider;

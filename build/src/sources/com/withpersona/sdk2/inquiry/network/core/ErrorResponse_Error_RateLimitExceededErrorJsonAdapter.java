@@ -30,31 +30,31 @@ public final class ErrorResponse_Error_RateLimitExceededErrorJsonAdapter extends
     @Override // com.squareup.moshi.h
     @NotNull
     public ErrorResponse.Error.RateLimitExceededError fromJson(@NotNull m mVar) {
-        mVar.r();
+        mVar.s();
         String str = null;
         String str2 = null;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
+            int W = mVar.W(this.options);
+            if (W == -1) {
                 mVar.E0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(mVar);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(mVar);
             }
         }
-        mVar.y();
+        mVar.z();
         return new ErrorResponse.Error.RateLimitExceededError(str, str2);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, ErrorResponse.Error.RateLimitExceededError rateLimitExceededError) {
         if (rateLimitExceededError != null) {
-            tVar.l();
-            tVar.A0("title");
+            tVar.k();
+            tVar.W("title");
             this.nullableStringAdapter.toJson(tVar, rateLimitExceededError.getTitle());
-            tVar.A0("details");
+            tVar.W("details");
             this.nullableStringAdapter.toJson(tVar, rateLimitExceededError.getDetails());
             tVar.E();
             return;

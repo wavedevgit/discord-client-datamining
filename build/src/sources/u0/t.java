@@ -3,7 +3,7 @@ package u0;
 public abstract class t {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final p f50383a = new p(0);
+    private static final p f51155a = new p(0);
 
     public static final p a() {
         return new p(0, 1, null);

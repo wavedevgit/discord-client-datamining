@@ -10,7 +10,7 @@ public final class b0 extends a implements IInterface {
         super(iBinder, "com.google.android.gms.auth.api.identity.internal.ISignInService");
     }
 
-    public final void S0(y yVar, ve.d dVar) {
+    public final void W0(y yVar, ve.d dVar) {
         Parcel e10 = e();
         p.d(e10, yVar);
         p.c(e10, dVar);

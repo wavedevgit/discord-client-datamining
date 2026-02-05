@@ -17,28 +17,28 @@ public final class h0 extends qd.a implements g0.b {
     private le.c0 D;
 
     /* renamed from: s  reason: collision with root package name */
-    private final MediaItem f47603s;
+    private final MediaItem f47667s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final MediaItem.h f47604t;
+    private final MediaItem.h f47668t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final DataSource.Factory f47605u;
+    private final DataSource.Factory f47669u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final b0.a f47606v;
+    private final b0.a f47670v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final rc.v f47607w;
+    private final rc.v f47671w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.h f47608x;
+    private final com.google.android.exoplayer2.upstream.h f47672x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final int f47609y;
+    private final int f47673y;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f47610z;
+    private boolean f47674z;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -50,14 +50,14 @@ public final class h0 extends qd.a implements g0.b {
         @Override // qd.l, com.google.android.exoplayer2.Timeline
         public Timeline.b k(int i10, Timeline.b bVar, boolean z10) {
             super.k(i10, bVar, z10);
-            bVar.f11596q = true;
+            bVar.f11981q = true;
             return bVar;
         }
 
         @Override // qd.l, com.google.android.exoplayer2.Timeline
         public Timeline.d s(int i10, Timeline.d dVar, long j10) {
             super.s(i10, dVar, j10);
-            dVar.f11613w = true;
+            dVar.f11998w = true;
             return dVar;
         }
     }
@@ -66,19 +66,19 @@ public final class h0 extends qd.a implements g0.b {
     public static final class b implements r.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final DataSource.Factory f47612a;
+        private final DataSource.Factory f47676a;
 
         /* renamed from: b  reason: collision with root package name */
-        private b0.a f47613b;
+        private b0.a f47677b;
 
         /* renamed from: c  reason: collision with root package name */
-        private rc.x f47614c;
+        private rc.x f47678c;
 
         /* renamed from: d  reason: collision with root package name */
-        private com.google.android.exoplayer2.upstream.h f47615d;
+        private com.google.android.exoplayer2.upstream.h f47679d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f47616e;
+        private int f47680e;
 
         public b(DataSource.Factory factory) {
             this(factory, new tc.h());
@@ -89,12 +89,12 @@ public final class h0 extends qd.a implements g0.b {
         }
 
         public h0 b(MediaItem mediaItem) {
-            ne.a.e(mediaItem.f11341e);
-            return new h0(mediaItem, this.f47612a, this.f47613b, this.f47614c.a(mediaItem), this.f47615d, this.f47616e, null);
+            ne.a.e(mediaItem.f11726e);
+            return new h0(mediaItem, this.f47676a, this.f47677b, this.f47678c.a(mediaItem), this.f47679d, this.f47680e, null);
         }
 
         public b c(com.google.android.exoplayer2.upstream.h hVar) {
-            this.f47615d = (com.google.android.exoplayer2.upstream.h) ne.a.f(hVar, "MediaSource.Factory#setLoadErrorHandlingPolicy no longer handles null by instantiating a new DefaultLoadErrorHandlingPolicy. Explicitly construct and pass an instance in order to retain the old behavior.");
+            this.f47679d = (com.google.android.exoplayer2.upstream.h) ne.a.f(hVar, "MediaSource.Factory#setLoadErrorHandlingPolicy no longer handles null by instantiating a new DefaultLoadErrorHandlingPolicy. Explicitly construct and pass an instance in order to retain the old behavior.");
             return this;
         }
 
@@ -112,11 +112,11 @@ public final class h0 extends qd.a implements g0.b {
         }
 
         public b(DataSource.Factory factory, b0.a aVar, rc.x xVar, com.google.android.exoplayer2.upstream.h hVar, int i10) {
-            this.f47612a = factory;
-            this.f47613b = aVar;
-            this.f47614c = xVar;
-            this.f47615d = hVar;
-            this.f47616e = i10;
+            this.f47676a = factory;
+            this.f47677b = aVar;
+            this.f47678c = xVar;
+            this.f47679d = hVar;
+            this.f47680e = i10;
         }
     }
 
@@ -125,8 +125,8 @@ public final class h0 extends qd.a implements g0.b {
     }
 
     private void E() {
-        Timeline p0Var = new p0(this.A, this.B, false, this.C, null, this.f47603s);
-        if (this.f47610z) {
+        Timeline p0Var = new p0(this.A, this.B, false, this.C, null, this.f47667s);
+        if (this.f47674z) {
             p0Var = new a(p0Var);
         }
         C(p0Var);
@@ -135,14 +135,14 @@ public final class h0 extends qd.a implements g0.b {
     @Override // qd.a
     protected void B(le.c0 c0Var) {
         this.D = c0Var;
-        this.f47607w.a((Looper) ne.a.e(Looper.myLooper()), z());
-        this.f47607w.d();
+        this.f47671w.a((Looper) ne.a.e(Looper.myLooper()), z());
+        this.f47671w.d();
         E();
     }
 
     @Override // qd.a
     protected void D() {
-        this.f47607w.release();
+        this.f47671w.release();
     }
 
     @Override // qd.r
@@ -152,17 +152,17 @@ public final class h0 extends qd.a implements g0.b {
 
     @Override // qd.r
     public MediaItem f() {
-        return this.f47603s;
+        return this.f47667s;
     }
 
     @Override // qd.r
     public p h(r.b bVar, le.b bVar2, long j10) {
-        DataSource createDataSource = this.f47605u.createDataSource();
+        DataSource createDataSource = this.f47669u.createDataSource();
         le.c0 c0Var = this.D;
         if (c0Var != null) {
             createDataSource.j(c0Var);
         }
-        return new g0(this.f47604t.f11431d, createDataSource, this.f47606v.a(z()), this.f47607w, u(bVar), this.f47608x, w(bVar), this, bVar2, this.f47604t.f11436q, this.f47609y);
+        return new g0(this.f47668t.f11816d, createDataSource, this.f47670v.a(z()), this.f47671w, u(bVar), this.f47672x, w(bVar), this, bVar2, this.f47668t.f11821q, this.f47673y);
     }
 
     @Override // qd.g0.b
@@ -170,25 +170,25 @@ public final class h0 extends qd.a implements g0.b {
         if (j10 == -9223372036854775807L) {
             j10 = this.A;
         }
-        if (!this.f47610z && this.A == j10 && this.B == z10 && this.C == z11) {
+        if (!this.f47674z && this.A == j10 && this.B == z10 && this.C == z11) {
             return;
         }
         this.A = j10;
         this.B = z10;
         this.C = z11;
-        this.f47610z = false;
+        this.f47674z = false;
         E();
     }
 
     private h0(MediaItem mediaItem, DataSource.Factory factory, b0.a aVar, rc.v vVar, com.google.android.exoplayer2.upstream.h hVar, int i10) {
-        this.f47604t = (MediaItem.h) ne.a.e(mediaItem.f11341e);
-        this.f47603s = mediaItem;
-        this.f47605u = factory;
-        this.f47606v = aVar;
-        this.f47607w = vVar;
-        this.f47608x = hVar;
-        this.f47609y = i10;
-        this.f47610z = true;
+        this.f47668t = (MediaItem.h) ne.a.e(mediaItem.f11726e);
+        this.f47667s = mediaItem;
+        this.f47669u = factory;
+        this.f47670v = aVar;
+        this.f47671w = vVar;
+        this.f47672x = hVar;
+        this.f47673y = i10;
+        this.f47674z = true;
         this.A = -9223372036854775807L;
     }
 

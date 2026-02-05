@@ -8,21 +8,21 @@ public final class c2 extends hf.a {
     public static final Parcelable.Creator<c2> CREATOR = new d3();
 
     /* renamed from: d  reason: collision with root package name */
-    public final PointF[] f42716d;
+    public final PointF[] f42622d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f42717e;
+    public final int f42623e;
 
     public c2(PointF[] pointFArr, int i10) {
-        this.f42716d = pointFArr;
-        this.f42717e = i10;
+        this.f42622d = pointFArr;
+        this.f42623e = i10;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.v(parcel, 2, this.f42716d, i10, false);
-        hf.c.l(parcel, 3, this.f42717e);
+        hf.c.v(parcel, 2, this.f42622d, i10, false);
+        hf.c.l(parcel, 3, this.f42623e);
         hf.c.b(parcel, a10);
     }
 }

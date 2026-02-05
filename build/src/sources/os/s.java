@@ -1,12 +1,190 @@
 package os;
 
-import java.util.List;
-import js.c1;
+import kotlin.Result;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.CancellableContinuation;
+import kotlinx.coroutines.CoroutineScope;
+import ms.c0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface s {
-    String a();
+public abstract class s {
 
-    c1 b(List list);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a extends kotlin.coroutines.jvm.internal.d {
 
-    int c();
+        /* renamed from: d */
+        Object f44422d;
+
+        /* renamed from: e */
+        Object f44423e;
+
+        /* renamed from: i */
+        /* synthetic */ Object f44424i;
+
+        /* renamed from: o */
+        int f44425o;
+
+        a(Continuation continuation) {
+            super(continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            this.f44424i = obj;
+            this.f44425o |= Integer.MIN_VALUE;
+            return s.a(null, null, this);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b implements Function1 {
+
+        /* renamed from: d */
+        final /* synthetic */ CancellableContinuation f44426d;
+
+        b(CancellableContinuation cancellableContinuation) {
+            this.f44426d = cancellableContinuation;
+        }
+
+        public final void a(Throwable th2) {
+            CancellableContinuation cancellableContinuation = this.f44426d;
+            Result.a aVar = Result.f31985e;
+            cancellableContinuation.resumeWith(Result.b(Unit.f31988a));
+        }
+
+        @Override // kotlin.jvm.functions.Function1
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((Throwable) obj);
+            return Unit.f31988a;
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:42:0x0023  */
+    /* JADX WARN: Removed duplicated region for block: B:50:0x003c  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static final java.lang.Object a(kotlinx.coroutines.channels.ProducerScope r4, kotlin.jvm.functions.Function0 r5, kotlin.coroutines.Continuation r6) {
+        /*
+            boolean r0 = r6 instanceof os.s.a
+            if (r0 == 0) goto L13
+            r0 = r6
+            os.s$a r0 = (os.s.a) r0
+            int r1 = r0.f44425o
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.f44425o = r1
+            goto L18
+        L13:
+            os.s$a r0 = new os.s$a
+            r0.<init>(r6)
+        L18:
+            java.lang.Object r6 = r0.f44424i
+            java.lang.Object r1 = ur.b.f()
+            int r2 = r0.f44425o
+            r3 = 1
+            if (r2 == 0) goto L3c
+            if (r2 != r3) goto L34
+            java.lang.Object r4 = r0.f44423e
+            r5 = r4
+            kotlin.jvm.functions.Function0 r5 = (kotlin.jvm.functions.Function0) r5
+            java.lang.Object r4 = r0.f44422d
+            kotlinx.coroutines.channels.ProducerScope r4 = (kotlinx.coroutines.channels.ProducerScope) r4
+            kotlin.c.b(r6)     // Catch: java.lang.Throwable -> L32
+            goto L75
+        L32:
+            r4 = move-exception
+            goto L7b
+        L34:
+            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
+            java.lang.String r5 = "call to 'resume' before 'invoke' with coroutine"
+            r4.<init>(r5)
+            throw r4
+        L3c:
+            kotlin.c.b(r6)
+            kotlin.coroutines.CoroutineContext r6 = r0.getContext()
+            kotlinx.coroutines.Job$b r2 = kotlinx.coroutines.Job.f34997h
+            kotlin.coroutines.CoroutineContext$Element r6 = r6.k(r2)
+            if (r6 != r4) goto L7f
+            r0.f44422d = r4     // Catch: java.lang.Throwable -> L32
+            r0.f44423e = r5     // Catch: java.lang.Throwable -> L32
+            r0.f44425o = r3     // Catch: java.lang.Throwable -> L32
+            kotlinx.coroutines.e r6 = new kotlinx.coroutines.e     // Catch: java.lang.Throwable -> L32
+            kotlin.coroutines.Continuation r2 = ur.b.c(r0)     // Catch: java.lang.Throwable -> L32
+            r6.<init>(r2, r3)     // Catch: java.lang.Throwable -> L32
+            r6.H()     // Catch: java.lang.Throwable -> L32
+            os.s$b r2 = new os.s$b     // Catch: java.lang.Throwable -> L32
+            r2.<init>(r6)     // Catch: java.lang.Throwable -> L32
+            r4.d(r2)     // Catch: java.lang.Throwable -> L32
+            java.lang.Object r4 = r6.B()     // Catch: java.lang.Throwable -> L32
+            java.lang.Object r6 = ur.b.f()     // Catch: java.lang.Throwable -> L32
+            if (r4 != r6) goto L72
+            kotlin.coroutines.jvm.internal.g.c(r0)     // Catch: java.lang.Throwable -> L32
+        L72:
+            if (r4 != r1) goto L75
+            return r1
+        L75:
+            r5.invoke()
+            kotlin.Unit r4 = kotlin.Unit.f31988a
+            return r4
+        L7b:
+            r5.invoke()
+            throw r4
+        L7f:
+            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
+            java.lang.String r5 = "awaitClose() can only be invoked from the producer context"
+            r4.<init>(r5)
+            throw r4
+        */
+        throw new UnsupportedOperationException("Method not decompiled: os.s.a(kotlinx.coroutines.channels.ProducerScope, kotlin.jvm.functions.Function0, kotlin.coroutines.Continuation):java.lang.Object");
+    }
+
+    public static final v b(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, Function2 function2) {
+        return c(coroutineScope, coroutineContext, i10, os.a.f44350d, c0.f38909d, null, function2);
+    }
+
+    public static final v c(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, os.a aVar, c0 c0Var, Function1 function1, Function2 function2) {
+        t tVar = new t(ms.x.k(coroutineScope, coroutineContext), j.b(i10, aVar, null, 4, null));
+        if (function1 != null) {
+            tVar.C0(function1);
+        }
+        tVar.U0(c0Var, tVar, function2);
+        return tVar;
+    }
+
+    public static /* synthetic */ v d(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, Function2 function2, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            coroutineContext = kotlin.coroutines.e.f32062d;
+        }
+        if ((i11 & 2) != 0) {
+            i10 = 0;
+        }
+        return b(coroutineScope, coroutineContext, i10, function2);
+    }
+
+    public static /* synthetic */ v e(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, os.a aVar, c0 c0Var, Function1 function1, Function2 function2, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            coroutineContext = kotlin.coroutines.e.f32062d;
+        }
+        if ((i11 & 2) != 0) {
+            i10 = 0;
+        }
+        if ((i11 & 4) != 0) {
+            aVar = os.a.f44350d;
+        }
+        if ((i11 & 8) != 0) {
+            c0Var = c0.f38909d;
+        }
+        if ((i11 & 16) != 0) {
+            function1 = null;
+        }
+        Function1 function12 = function1;
+        return c(coroutineScope, coroutineContext, i10, aVar, c0Var, function12, function2);
+    }
 }

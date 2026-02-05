@@ -6,30 +6,30 @@ import na.u;
 public final class f implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f55695a;
+    private final int f55284a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f55696b;
+    private final boolean f55285b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final d f55697c;
+    private final d f55286c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Integer f55698d;
+    private final Integer f55287d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f55699e;
+    private final boolean f55288e;
 
     public f(int i10, boolean z10, d dVar, Integer num, boolean z11) {
-        this.f55695a = i10;
-        this.f55696b = z10;
-        this.f55697c = dVar;
-        this.f55698d = num;
-        this.f55699e = z11;
+        this.f55284a = i10;
+        this.f55285b = z10;
+        this.f55286c = dVar;
+        this.f55287d = num;
+        this.f55288e = z11;
     }
 
     private final c a(fa.c cVar, boolean z10) {
-        d dVar = this.f55697c;
+        d dVar = this.f55286c;
         if (dVar != null) {
             return dVar.createImageTranscoder(cVar, z10);
         }
@@ -37,7 +37,7 @@ public final class f implements d {
     }
 
     private final c b(fa.c cVar, boolean z10) {
-        Integer num = this.f55698d;
+        Integer num = this.f55287d;
         if (num == null) {
             return null;
         }
@@ -51,11 +51,11 @@ public final class f implements d {
     }
 
     private final c c(fa.c cVar, boolean z10) {
-        return com.facebook.imagepipeline.nativecode.d.a(this.f55695a, this.f55696b, this.f55699e).createImageTranscoder(cVar, z10);
+        return com.facebook.imagepipeline.nativecode.d.a(this.f55284a, this.f55285b, this.f55288e).createImageTranscoder(cVar, z10);
     }
 
     private final c d(fa.c cVar, boolean z10) {
-        c createImageTranscoder = new h(this.f55695a).createImageTranscoder(cVar, z10);
+        c createImageTranscoder = new h(this.f55284a).createImageTranscoder(cVar, z10);
         Intrinsics.checkNotNullExpressionValue(createImageTranscoder, "createImageTranscoder(...)");
         return createImageTranscoder;
     }

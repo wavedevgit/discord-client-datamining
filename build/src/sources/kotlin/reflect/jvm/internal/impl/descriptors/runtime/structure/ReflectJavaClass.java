@@ -39,14 +39,14 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaClass extends ReflectJavaElement implements ReflectJavaAnnotationOwner, ReflectJavaModifierListOwner, JavaClass {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Class f33097a;
+    private final Class f32621a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f33098d = new a();
+        public static final a f32622d = new a();
 
         a() {
             super(1, Member.class, "isSynthetic", "isSynthetic()Z", 0);
@@ -65,7 +65,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
     public /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f33099d = new b();
+        public static final b f32623d = new b();
 
         b() {
             super(1, ReflectJavaConstructor.class, "<init>", "<init>(Ljava/lang/reflect/Constructor;)V", 0);
@@ -84,7 +84,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
     public /* synthetic */ class c extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f33100d = new c();
+        public static final c f32624d = new c();
 
         c() {
             super(1, Member.class, "isSynthetic", "isSynthetic()Z", 0);
@@ -103,7 +103,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
     public /* synthetic */ class d extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final d f33101d = new d();
+        public static final d f32625d = new d();
 
         d() {
             super(1, ReflectJavaField.class, "<init>", "<init>(Ljava/lang/reflect/Field;)V", 0);
@@ -122,7 +122,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
     public /* synthetic */ class e extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final e f33102d = new e();
+        public static final e f32626d = new e();
 
         e() {
             super(1, ReflectJavaMethod.class, "<init>", "<init>(Ljava/lang/reflect/Method;)V", 0);
@@ -138,7 +138,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
 
     public ReflectJavaClass(@NotNull Class<?> klass) {
         Intrinsics.checkNotNullParameter(klass, "klass");
-        this.f33097a = klass;
+        this.f32621a = klass;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -195,7 +195,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof ReflectJavaClass) && Intrinsics.areEqual(this.f33097a, ((ReflectJavaClass) obj).f33097a)) {
+        if ((obj instanceof ReflectJavaClass) && Intrinsics.areEqual(this.f32621a, ((ReflectJavaClass) obj).f32621a)) {
             return true;
         }
         return false;
@@ -214,7 +214,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
     @NotNull
     public FqName getFqName() {
-        return ReflectClassUtilKt.getClassId(this.f33097a).asSingleFqName();
+        return ReflectClassUtilKt.getClassId(this.f32621a).asSingleFqName();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
@@ -224,20 +224,20 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaModifierListOwner
     public int getModifiers() {
-        return this.f33097a.getModifiers();
+        return this.f32621a.getModifiers();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaNamedElement
     @NotNull
     public Name getName() {
-        if (this.f33097a.isAnonymousClass()) {
-            String name = this.f33097a.getName();
+        if (this.f32621a.isAnonymousClass()) {
+            String name = this.f32621a.getName();
             Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
             Name identifier = Name.identifier(StringsKt.a1(name, ".", null, 2, null));
             Intrinsics.checkNotNull(identifier);
             return identifier;
         }
-        Name identifier2 = Name.identifier(this.f33097a.getSimpleName());
+        Name identifier2 = Name.identifier(this.f32621a.getSimpleName());
         Intrinsics.checkNotNull(identifier2);
         return identifier2;
     }
@@ -245,7 +245,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
     @NotNull
     public Sequence<JavaClassifierType> getPermittedTypes() {
-        Class[] c10 = Java16SealedRecordLoader.f33075a.c(this.f33097a);
+        Class[] c10 = Java16SealedRecordLoader.f32599a.c(this.f32621a);
         if (c10 != null) {
             ArrayList arrayList = new ArrayList(c10.length);
             for (Class cls : c10) {
@@ -262,7 +262,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
     @NotNull
     public Collection<JavaRecordComponent> getRecordComponents() {
-        Object[] d10 = Java16SealedRecordLoader.f33075a.d(this.f33097a);
+        Object[] d10 = Java16SealedRecordLoader.f32599a.d(this.f32621a);
         if (d10 == null) {
             d10 = new Object[0];
         }
@@ -277,16 +277,16 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
     @NotNull
     public Collection<JavaClassifierType> getSupertypes() {
         Class<Object> cls = Object.class;
-        if (Intrinsics.areEqual(this.f33097a, cls)) {
+        if (Intrinsics.areEqual(this.f32621a, cls)) {
             return CollectionsKt.l();
         }
         SpreadBuilder spreadBuilder = new SpreadBuilder(2);
-        Type genericSuperclass = this.f33097a.getGenericSuperclass();
+        Type genericSuperclass = this.f32621a.getGenericSuperclass();
         if (genericSuperclass != null) {
             cls = genericSuperclass;
         }
         spreadBuilder.add(cls);
-        spreadBuilder.addSpread(this.f33097a.getGenericInterfaces());
+        spreadBuilder.addSpread(this.f32621a.getGenericInterfaces());
         List<Type> o10 = CollectionsKt.o(spreadBuilder.toArray(new Type[spreadBuilder.size()]));
         ArrayList arrayList = new ArrayList(CollectionsKt.w(o10, 10));
         for (Type type : o10) {
@@ -298,7 +298,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaTypeParameterListOwner
     @NotNull
     public List<ReflectJavaTypeParameter> getTypeParameters() {
-        TypeVariable[] typeParameters = this.f33097a.getTypeParameters();
+        TypeVariable[] typeParameters = this.f32621a.getTypeParameters();
         Intrinsics.checkNotNullExpressionValue(typeParameters, "getTypeParameters(...)");
         ArrayList arrayList = new ArrayList(typeParameters.length);
         for (TypeVariable typeVariable : typeParameters) {
@@ -332,7 +332,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
     }
 
     public int hashCode() {
-        return this.f33097a.hashCode();
+        return this.f32621a.hashCode();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaModifierListOwner
@@ -342,7 +342,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
     public boolean isAnnotationType() {
-        return this.f33097a.isAnnotation();
+        return this.f32621a.isAnnotation();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationOwner
@@ -352,7 +352,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
     public boolean isEnum() {
-        return this.f33097a.isEnum();
+        return this.f32621a.isEnum();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaModifierListOwner
@@ -362,12 +362,12 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
     public boolean isInterface() {
-        return this.f33097a.isInterface();
+        return this.f32621a.isInterface();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
     public boolean isRecord() {
-        Boolean e10 = Java16SealedRecordLoader.f33075a.e(this.f33097a);
+        Boolean e10 = Java16SealedRecordLoader.f32599a.e(this.f32621a);
         if (e10 != null) {
             return e10.booleanValue();
         }
@@ -376,7 +376,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
     public boolean isSealed() {
-        Boolean f10 = Java16SealedRecordLoader.f33075a.f(this.f33097a);
+        Boolean f10 = Java16SealedRecordLoader.f32599a.f(this.f32621a);
         if (f10 != null) {
             return f10.booleanValue();
         }
@@ -390,7 +390,7 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
 
     @NotNull
     public String toString() {
-        return ReflectJavaClass.class.getName() + ": " + this.f33097a;
+        return ReflectJavaClass.class.getName() + ": " + this.f32621a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaAnnotationOwner, kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationOwner
@@ -416,44 +416,44 @@ public final class ReflectJavaClass extends ReflectJavaElement implements Reflec
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
     @NotNull
     public List<ReflectJavaConstructor> getConstructors() {
-        Constructor<?>[] declaredConstructors = this.f33097a.getDeclaredConstructors();
+        Constructor<?>[] declaredConstructors = this.f32621a.getDeclaredConstructors();
         Intrinsics.checkNotNullExpressionValue(declaredConstructors, "getDeclaredConstructors(...)");
-        return k.Y(k.R(k.G(i.I(declaredConstructors), a.f33098d), b.f33099d));
+        return k.Y(k.R(k.G(i.I(declaredConstructors), a.f32622d), b.f32623d));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaAnnotationOwner
     @NotNull
     public Class<?> getElement() {
-        return this.f33097a;
+        return this.f32621a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
     @NotNull
     public List<ReflectJavaField> getFields() {
-        Field[] declaredFields = this.f33097a.getDeclaredFields();
+        Field[] declaredFields = this.f32621a.getDeclaredFields();
         Intrinsics.checkNotNullExpressionValue(declaredFields, "getDeclaredFields(...)");
-        return k.Y(k.R(k.G(i.I(declaredFields), c.f33100d), d.f33101d));
+        return k.Y(k.R(k.G(i.I(declaredFields), c.f32624d), d.f32625d));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
     @NotNull
     public List<Name> getInnerClassNames() {
-        Class<?>[] declaredClasses = this.f33097a.getDeclaredClasses();
+        Class<?>[] declaredClasses = this.f32621a.getDeclaredClasses();
         Intrinsics.checkNotNullExpressionValue(declaredClasses, "getDeclaredClasses(...)");
-        return k.Y(k.S(k.G(i.I(declaredClasses), kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.c.f33126d), kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.d.f33127d));
+        return k.Y(k.S(k.G(i.I(declaredClasses), kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.c.f32650d), kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.d.f32651d));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
     @NotNull
     public List<ReflectJavaMethod> getMethods() {
-        Method[] declaredMethods = this.f33097a.getDeclaredMethods();
+        Method[] declaredMethods = this.f32621a.getDeclaredMethods();
         Intrinsics.checkNotNullExpressionValue(declaredMethods, "getDeclaredMethods(...)");
-        return k.Y(k.R(k.F(i.I(declaredMethods), new kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.e(this)), e.f33102d));
+        return k.Y(k.R(k.F(i.I(declaredMethods), new kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.e(this)), e.f32626d));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaClass
     public ReflectJavaClass getOuterClass() {
-        Class<?> declaringClass = this.f33097a.getDeclaringClass();
+        Class<?> declaringClass = this.f32621a.getDeclaringClass();
         if (declaringClass != null) {
             return new ReflectJavaClass(declaringClass);
         }

@@ -46,21 +46,21 @@ public final class AttributeStyles_ESignatureBackgroundColorStyleJsonAdapter ext
     @NotNull
     public AttributeStyles.ESignatureBackgroundColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.ComplexElementColor complexElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.ESignatureBackgroundColorStyle(complexElementColor, simpleElementColor);
     }
 
@@ -68,10 +68,10 @@ public final class AttributeStyles_ESignatureBackgroundColorStyleJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.ESignatureBackgroundColorStyle eSignatureBackgroundColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignatureBackgroundColorStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableComplexElementColorAdapter.toJson(writer, eSignatureBackgroundColorStyle.getBase());
-            writer.A0("signaturePreview");
+            writer.W("signaturePreview");
             this.nullableSimpleElementColorAdapter.toJson(writer, eSignatureBackgroundColorStyle.getSignaturePreview());
             writer.E();
             return;

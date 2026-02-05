@@ -7,21 +7,21 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e extends ReactViewGroup implements d {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f17466d;
+    private int f17872d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e(Context context) {
         super(context);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f17466d = -1;
+        this.f17872d = -1;
     }
 
     @Override // com.shopify.reactnative.flash_list.d
     public int getIndex() {
-        return this.f17466d;
+        return this.f17872d;
     }
 
     public void setIndex(int i10) {
-        this.f17466d = i10;
+        this.f17872d = i10;
     }
 }

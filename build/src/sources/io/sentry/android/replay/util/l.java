@@ -3,13 +3,13 @@ package io.sentry.android.replay.util;
 import android.os.Build;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.Intrinsics;
-import lr.p;
+import or.p;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l f29610a = new l();
+    public static final l f28668a = new l();
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -27,7 +27,7 @@ public final class l {
         static {
             a[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = sr.a.a($values);
+            $ENTRIES = vr.a.a($values);
         }
 
         private a(String str, int i10) {
@@ -51,7 +51,7 @@ public final class l {
     public static final /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f29611a;
+        public static final /* synthetic */ int[] f28669a;
 
         static {
             int[] iArr = new int[a.values().length];
@@ -63,7 +63,7 @@ public final class l {
                 iArr[a.SOC_MANUFACTURER.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f29611a = iArr;
+            f28669a = iArr;
         }
     }
 
@@ -82,7 +82,7 @@ public final class l {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(defaultValue, "defaultValue");
         if (Build.VERSION.SDK_INT >= 31) {
-            int i10 = b.f29611a[key.ordinal()];
+            int i10 = b.f28669a[key.ordinal()];
             if (i10 == 1) {
                 str = Build.SOC_MODEL;
             } else if (i10 == 2) {

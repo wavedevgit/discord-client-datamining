@@ -17,36 +17,36 @@ import o8.j;
 public class GenericDraweeHierarchy implements n9.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Drawable f9735a;
+    private final Drawable f10120a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Resources f9736b;
+    private final Resources f10121b;
 
     /* renamed from: c  reason: collision with root package name */
-    private a f9737c;
+    private a f10122c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final l9.b f9738d;
+    private final l9.b f10123d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final e f9739e;
+    private final e f10124e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final f f9740f;
+    private final f f10125f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public GenericDraweeHierarchy(GenericDraweeHierarchyBuilder genericDraweeHierarchyBuilder) {
         int i10;
         int i11;
         ColorDrawable colorDrawable = new ColorDrawable(0);
-        this.f9735a = colorDrawable;
+        this.f10120a = colorDrawable;
         if (ya.b.d()) {
             ya.b.a("GenericDraweeHierarchy()");
         }
-        this.f9736b = genericDraweeHierarchyBuilder.p();
-        this.f9737c = genericDraweeHierarchyBuilder.s();
+        this.f10121b = genericDraweeHierarchyBuilder.p();
+        this.f10122c = genericDraweeHierarchyBuilder.s();
         f fVar = new f(colorDrawable);
-        this.f9740f = fVar;
+        this.f10125f = fVar;
         int i12 = 1;
         if (genericDraweeHierarchyBuilder.j() != null) {
             i10 = genericDraweeHierarchyBuilder.j().size();
@@ -80,10 +80,10 @@ public class GenericDraweeHierarchy implements n9.a {
             }
         }
         e eVar = new e(drawableArr, false, 2);
-        this.f9739e = eVar;
+        this.f10124e = eVar;
         eVar.r(genericDraweeHierarchyBuilder.g());
-        l9.b bVar = new l9.b(b.e(eVar, this.f9737c));
-        this.f9738d = bVar;
+        l9.b bVar = new l9.b(b.e(eVar, this.f10122c));
+        this.f10123d = bVar;
         bVar.mutate();
         s();
         if (ya.b.d()) {
@@ -92,7 +92,7 @@ public class GenericDraweeHierarchy implements n9.a {
     }
 
     private void B(float f10) {
-        Drawable b10 = this.f9739e.b(3);
+        Drawable b10 = this.f10124e.b(3);
         if (b10 == null) {
             return;
         }
@@ -116,12 +116,12 @@ public class GenericDraweeHierarchy implements n9.a {
     }
 
     private Drawable h(Drawable drawable, ScalingUtils$ScaleType scalingUtils$ScaleType) {
-        return b.f(b.d(drawable, this.f9737c, this.f9736b), scalingUtils$ScaleType);
+        return b.f(b.d(drawable, this.f10122c, this.f10121b), scalingUtils$ScaleType);
     }
 
     private void i(int i10) {
         if (i10 >= 0) {
-            this.f9739e.j(i10);
+            this.f10124e.j(i10);
         }
     }
 
@@ -135,12 +135,12 @@ public class GenericDraweeHierarchy implements n9.a {
 
     private void k(int i10) {
         if (i10 >= 0) {
-            this.f9739e.k(i10);
+            this.f10124e.k(i10);
         }
     }
 
     private c n(int i10) {
-        c c10 = this.f9739e.c(i10);
+        c c10 = this.f10124e.c(i10);
         c10.getDrawable();
         if (c10.getDrawable() instanceof n) {
             return (n) c10.getDrawable();
@@ -153,7 +153,7 @@ public class GenericDraweeHierarchy implements n9.a {
         if (n10 instanceof n) {
             return (n) n10;
         }
-        return b.k(n10, ScalingUtils$ScaleType.f9630a);
+        return b.k(n10, ScalingUtils$ScaleType.f10015a);
     }
 
     private boolean q(int i10) {
@@ -161,27 +161,27 @@ public class GenericDraweeHierarchy implements n9.a {
     }
 
     private void r() {
-        this.f9740f.setDrawable(this.f9735a);
+        this.f10125f.setDrawable(this.f10120a);
     }
 
     private void s() {
-        e eVar = this.f9739e;
+        e eVar = this.f10124e;
         if (eVar != null) {
             eVar.f();
-            this.f9739e.i();
+            this.f10124e.i();
             j();
             i(1);
-            this.f9739e.l();
-            this.f9739e.h();
+            this.f10124e.l();
+            this.f10124e.h();
         }
     }
 
     private void v(int i10, Drawable drawable) {
         if (drawable == null) {
-            this.f9739e.e(i10, null);
+            this.f10124e.e(i10, null);
             return;
         }
-        n(i10).setDrawable(b.d(drawable, this.f9737c, this.f9736b));
+        n(i10).setDrawable(b.d(drawable, this.f10122c, this.f10121b));
     }
 
     public void A(Drawable drawable, ScalingUtils$ScaleType scalingUtils$ScaleType) {
@@ -194,78 +194,78 @@ public class GenericDraweeHierarchy implements n9.a {
     }
 
     public void D(a aVar) {
-        this.f9737c = aVar;
-        b.j(this.f9738d, aVar);
-        for (int i10 = 0; i10 < this.f9739e.d(); i10++) {
-            b.i(n(i10), this.f9737c, this.f9736b);
+        this.f10122c = aVar;
+        b.j(this.f10123d, aVar);
+        for (int i10 = 0; i10 < this.f10124e.d(); i10++) {
+            b.i(n(i10), this.f10122c, this.f10121b);
         }
     }
 
     @Override // n9.a
     public void a(Throwable th2) {
-        this.f9739e.f();
+        this.f10124e.f();
         j();
-        if (this.f9739e.b(4) != null) {
+        if (this.f10124e.b(4) != null) {
             i(4);
         } else {
             i(1);
         }
-        this.f9739e.h();
+        this.f10124e.h();
     }
 
     @Override // n9.a
     public void b(Throwable th2) {
-        this.f9739e.f();
+        this.f10124e.f();
         j();
-        if (this.f9739e.b(5) != null) {
+        if (this.f10124e.b(5) != null) {
             i(5);
         } else {
             i(1);
         }
-        this.f9739e.h();
+        this.f10124e.h();
     }
 
     @Override // n9.a
     public void c(float f10, boolean z10) {
-        if (this.f9739e.b(3) == null) {
+        if (this.f10124e.b(3) == null) {
             return;
         }
-        this.f9739e.f();
+        this.f10124e.f();
         B(f10);
         if (z10) {
-            this.f9739e.l();
+            this.f10124e.l();
         }
-        this.f9739e.h();
+        this.f10124e.h();
     }
 
     @Override // com.facebook.drawee.interfaces.DraweeHierarchy
     public Drawable d() {
-        return this.f9738d;
+        return this.f10123d;
     }
 
     @Override // n9.a
     public void e(Drawable drawable, float f10, boolean z10) {
-        Drawable d10 = b.d(drawable, this.f9737c, this.f9736b);
+        Drawable d10 = b.d(drawable, this.f10122c, this.f10121b);
         d10.mutate();
-        this.f9740f.setDrawable(d10);
-        this.f9739e.f();
+        this.f10125f.setDrawable(d10);
+        this.f10124e.f();
         j();
         i(2);
         B(f10);
         if (z10) {
-            this.f9739e.l();
+            this.f10124e.l();
         }
-        this.f9739e.h();
+        this.f10124e.h();
     }
 
     @Override // n9.a
     public void f(Drawable drawable) {
-        this.f9738d.i(drawable);
+        this.f10123d.i(drawable);
     }
 
     @Override // com.facebook.drawee.interfaces.DraweeHierarchy
     public Rect getBounds() {
-        return this.f9738d.getBounds();
+        return this.f10123d.getBounds();
     }
 
     public PointF l() {
@@ -283,7 +283,7 @@ public class GenericDraweeHierarchy implements n9.a {
     }
 
     public a o() {
-        return this.f9737c;
+        return this.f10122c;
     }
 
     @Override // n9.a
@@ -302,12 +302,12 @@ public class GenericDraweeHierarchy implements n9.a {
     }
 
     public void w(int i10) {
-        this.f9739e.r(i10);
+        this.f10124e.r(i10);
     }
 
     public void x(int i10, Drawable drawable) {
         boolean z10;
-        if (i10 >= 0 && i10 + 6 < this.f9739e.d()) {
+        if (i10 >= 0 && i10 + 6 < this.f10124e.d()) {
             z10 = true;
         } else {
             z10 = false;

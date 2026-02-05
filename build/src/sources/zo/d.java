@@ -1,20 +1,37 @@
 package zo;
 
-import kotlin.collections.CollectionsKt;
+import bn.g;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class d {
-    public static final c a(Object obj, Object baseScreen, String compatibilityKey) {
-        Intrinsics.checkNotNullParameter(obj, "<this>");
-        Intrinsics.checkNotNullParameter(baseScreen, "baseScreen");
-        Intrinsics.checkNotNullParameter(compatibilityKey, "compatibilityKey");
-        return b(new an.c(obj, CollectionsKt.l()), baseScreen, compatibilityKey);
+public final class d implements g {
+
+    /* renamed from: b  reason: collision with root package name */
+    private final Object f56136b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final boolean f56137c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final String f56138d;
+
+    public d(Object screen, boolean z10, String name) {
+        Intrinsics.checkNotNullParameter(screen, "screen");
+        Intrinsics.checkNotNullParameter(name, "name");
+        this.f56136b = screen;
+        this.f56137c = z10;
+        this.f56138d = name;
     }
 
-    public static final c b(an.c cVar, Object baseScreen, String compatibilityKey) {
-        Intrinsics.checkNotNullParameter(cVar, "<this>");
-        Intrinsics.checkNotNullParameter(baseScreen, "baseScreen");
-        Intrinsics.checkNotNullParameter(compatibilityKey, "compatibilityKey");
-        return new c(baseScreen, CollectionsKt.e(cVar), compatibilityKey);
+    public final Object a() {
+        return this.f56136b;
+    }
+
+    public final boolean b() {
+        return this.f56137c;
+    }
+
+    @Override // bn.g
+    public String c() {
+        return this.f56138d;
     }
 }

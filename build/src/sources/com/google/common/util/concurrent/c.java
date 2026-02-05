@@ -1,10 +1,10 @@
 package com.google.common.util.concurrent;
 
-import ii.h;
-import ii.m;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Future;
+import li.h;
+import li.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c extends d {
 
@@ -12,39 +12,39 @@ public abstract class c extends d {
     private static final class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final Future f15890d;
+        final Future f16284d;
 
         /* renamed from: e  reason: collision with root package name */
-        final b f15891e;
+        final b f16285e;
 
         a(Future future, b bVar) {
-            this.f15890d = future;
-            this.f15891e = bVar;
+            this.f16284d = future;
+            this.f16285e = bVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             Throwable a10;
-            Future future = this.f15890d;
-            if ((future instanceof mi.a) && (a10 = mi.b.a((mi.a) future)) != null) {
-                this.f15891e.onFailure(a10);
+            Future future = this.f16284d;
+            if ((future instanceof pi.a) && (a10 = pi.b.a((pi.a) future)) != null) {
+                this.f16285e.onFailure(a10);
                 return;
             }
             try {
-                this.f15891e.onSuccess(c.b(this.f15890d));
+                this.f16285e.onSuccess(c.b(this.f16284d));
             } catch (Error e10) {
                 e = e10;
-                this.f15891e.onFailure(e);
+                this.f16285e.onFailure(e);
             } catch (RuntimeException e11) {
                 e = e11;
-                this.f15891e.onFailure(e);
+                this.f16285e.onFailure(e);
             } catch (ExecutionException e12) {
-                this.f15891e.onFailure(e12.getCause());
+                this.f16285e.onFailure(e12.getCause());
             }
         }
 
         public String toString() {
-            return h.b(this).c(this.f15891e).toString();
+            return h.b(this).c(this.f16285e).toString();
         }
     }
 

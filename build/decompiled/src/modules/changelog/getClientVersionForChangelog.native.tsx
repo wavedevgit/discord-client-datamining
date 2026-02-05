@@ -34,4 +34,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getClientVersionForChangelog = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [14505, 2]);

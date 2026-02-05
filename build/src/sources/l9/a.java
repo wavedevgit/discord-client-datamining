@@ -28,23 +28,23 @@ public abstract class a {
             case -1:
                 return null;
             case 0:
-                return ScalingUtils$ScaleType.f9630a;
+                return ScalingUtils$ScaleType.f10015a;
             case 1:
-                return ScalingUtils$ScaleType.f9633d;
+                return ScalingUtils$ScaleType.f10018d;
             case 2:
-                return ScalingUtils$ScaleType.f9634e;
+                return ScalingUtils$ScaleType.f10019e;
             case 3:
-                return ScalingUtils$ScaleType.f9635f;
+                return ScalingUtils$ScaleType.f10020f;
             case 4:
-                return ScalingUtils$ScaleType.f9636g;
+                return ScalingUtils$ScaleType.f10021g;
             case 5:
-                return ScalingUtils$ScaleType.f9637h;
+                return ScalingUtils$ScaleType.f10022h;
             case 6:
-                return ScalingUtils$ScaleType.f9638i;
+                return ScalingUtils$ScaleType.f10023i;
             case 7:
-                return ScalingUtils$ScaleType.f9639j;
+                return ScalingUtils$ScaleType.f10024j;
             case 8:
-                return ScalingUtils$ScaleType.f9640k;
+                return ScalingUtils$ScaleType.f10025k;
             default:
                 throw new RuntimeException("XML attribute not specified!");
         }

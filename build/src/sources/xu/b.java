@@ -1,36 +1,78 @@
 package xu;
 
+import java.util.ArrayList;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
+import ru.c;
 import zu.a;
+import zu.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements nu.b, zu.a {
+public interface b extends ru.c, zu.a, zu.c {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final b f53575a = new b();
-
-    private b() {
-    }
-
-    @Override // nu.b
-    /* renamed from: a */
-    public Double f(Object obj, Object obj2) {
-        List b10 = b(obj);
-        if (b10.size() < 2) {
-            b10 = null;
-        }
-        if (b10 != null) {
-            Double d10 = (Double) b10.get(1);
-            Double d11 = (Double) CollectionsKt.o0(b10);
-            if (d11 != null && d10 != null && !Intrinsics.areEqual(d10, 0.0d)) {
-                return Double.valueOf(d11.doubleValue() / d10.doubleValue());
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static boolean a(b bVar, Object obj, Function2 operator) {
+            boolean z10;
+            boolean z11;
+            Intrinsics.checkNotNullParameter(operator, "operator");
+            List c10 = vv.a.c(obj);
+            Object e10 = bVar.e(CollectionsKt.firstOrNull(c10));
+            Object e11 = bVar.e(vv.c.b(c10));
+            c cVar = c.f54276a;
+            List a10 = cVar.a(e10);
+            List a11 = cVar.a(e11);
+            if (a10 == null && a11 == null) {
+                List<Object> list = c10;
+                ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+                for (Object obj2 : list) {
+                    arrayList.add(bVar.a(obj2));
+                }
+                return bVar.b(arrayList, operator);
             }
+            if (a10 != null) {
+                z10 = a10.contains(e11);
+            } else {
+                z10 = false;
+            }
+            if (!z10) {
+                if (a11 != null) {
+                    z11 = a11.contains(e10);
+                } else {
+                    z11 = false;
+                }
+                if (!z11) {
+                    return false;
+                }
+                return true;
+            }
+            return true;
         }
-        return null;
-    }
 
-    public List b(Object obj) {
-        return a.C0796a.c(this, obj);
+        public static boolean b(b bVar, List list, Function2 operator) {
+            Intrinsics.checkNotNullParameter(operator, "operator");
+            return c.a.b(bVar, list, operator);
+        }
+
+        public static List c(b bVar, Comparable comparable, Comparable comparable2) {
+            return c.a.d(bVar, comparable, comparable2);
+        }
+
+        public static List d(b bVar, Comparable comparable, Comparable comparable2) {
+            return c.a.e(bVar, comparable, comparable2);
+        }
+
+        public static Object e(b bVar, Object obj) {
+            return c.a.c(bVar, obj);
+        }
+
+        public static Object f(b bVar, Object obj) {
+            return a.C0800a.c(bVar, obj);
+        }
+
+        public static Boolean g(b bVar, Object obj) {
+            return c.a.f(bVar, obj);
+        }
     }
 }

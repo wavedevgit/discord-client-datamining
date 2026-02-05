@@ -1,250 +1,150 @@
 package mu;
 
+import java.security.cert.Certificate;
+import java.security.cert.CertificateParsingException;
+import java.security.cert.X509Certificate;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Locale;
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.SSLException;
+import javax.net.ssl.SSLSession;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
-import lu.c0;
-import okio.Buffer;
-import okio.ByteString;
+import kotlin.text.StringsKt;
+import ou.k0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d {
+public final class d implements HostnameVerifier {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ByteString f39452a;
+    public static final d f38971a = new d();
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final ByteString f39453b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final ByteString f39454c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final ByteString f39455d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final ByteString f39456e;
-
-    static {
-        ByteString.a aVar = ByteString.f44307o;
-        f39452a = aVar.g("/");
-        f39453b = aVar.g("\\");
-        f39454c = aVar.g("/\\");
-        f39455d = aVar.g(".");
-        f39456e = aVar.g("..");
+    private d() {
     }
 
-    public static final c0 j(c0 c0Var, c0 child, boolean z10) {
-        Intrinsics.checkNotNullParameter(c0Var, "<this>");
-        Intrinsics.checkNotNullParameter(child, "child");
-        if (!child.isAbsolute() && child.q() == null) {
-            ByteString m10 = m(c0Var);
-            if (m10 == null && (m10 = m(child)) == null) {
-                m10 = s(c0.f37265i);
+    private final String b(String str) {
+        if (d(str)) {
+            Locale US = Locale.US;
+            Intrinsics.checkNotNullExpressionValue(US, "US");
+            String lowerCase = str.toLowerCase(US);
+            Intrinsics.checkNotNullExpressionValue(lowerCase, "this as java.lang.String).toLowerCase(locale)");
+            return lowerCase;
+        }
+        return str;
+    }
+
+    private final List c(X509Certificate x509Certificate, int i10) {
+        Object obj;
+        try {
+            Collection<List<?>> subjectAlternativeNames = x509Certificate.getSubjectAlternativeNames();
+            if (subjectAlternativeNames == null) {
+                return CollectionsKt.l();
             }
-            Buffer buffer = new Buffer();
-            buffer.a2(c0Var.d());
-            if (buffer.size() > 0) {
-                buffer.a2(m10);
+            ArrayList arrayList = new ArrayList();
+            for (List<?> list : subjectAlternativeNames) {
+                if (list != null && list.size() >= 2 && Intrinsics.areEqual(list.get(0), Integer.valueOf(i10)) && (obj = list.get(1)) != null) {
+                    arrayList.add((String) obj);
+                }
             }
-            buffer.a2(child.d());
-            return q(buffer, z10);
+            return arrayList;
+        } catch (CertificateParsingException unused) {
+            return CollectionsKt.l();
         }
-        return child;
     }
 
-    public static final c0 k(String str, boolean z10) {
-        Intrinsics.checkNotNullParameter(str, "<this>");
-        return q(new Buffer().n0(str), z10);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int l(c0 c0Var) {
-        int y10 = ByteString.y(c0Var.d(), f39452a, 0, 2, null);
-        if (y10 != -1) {
-            return y10;
-        }
-        return ByteString.y(c0Var.d(), f39453b, 0, 2, null);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final ByteString m(c0 c0Var) {
-        ByteString d10 = c0Var.d();
-        ByteString byteString = f39452a;
-        if (ByteString.t(d10, byteString, 0, 2, null) != -1) {
-            return byteString;
-        }
-        ByteString d11 = c0Var.d();
-        ByteString byteString2 = f39453b;
-        if (ByteString.t(d11, byteString2, 0, 2, null) == -1) {
-            return null;
-        }
-        return byteString2;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final boolean n(c0 c0Var) {
-        if (!c0Var.d().i(f39456e) || (c0Var.d().G() != 2 && !c0Var.d().A(c0Var.d().G() - 3, f39452a, 0, 1) && !c0Var.d().A(c0Var.d().G() - 3, f39453b, 0, 1))) {
+    private final boolean d(String str) {
+        if (str.length() != ((int) k0.b(str, 0, 0, 3, null))) {
             return false;
         }
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int o(c0 c0Var) {
-        if (c0Var.d().G() == 0) {
-            return -1;
-        }
-        if (c0Var.d().j(0) == 47) {
-            return 1;
-        }
-        if (c0Var.d().j(0) == 92) {
-            if (c0Var.d().G() <= 2 || c0Var.d().j(1) != 92) {
-                return 1;
+    private final boolean f(String str, String str2) {
+        if (str != null && str.length() != 0 && !StringsKt.P(str, ".", false, 2, null) && !StringsKt.z(str, "..", false, 2, null) && str2 != null && str2.length() != 0 && !StringsKt.P(str2, ".", false, 2, null) && !StringsKt.z(str2, "..", false, 2, null)) {
+            if (!StringsKt.z(str, ".", false, 2, null)) {
+                str = str + '.';
             }
-            int r10 = c0Var.d().r(f39453b, 2);
-            if (r10 == -1) {
-                return c0Var.d().G();
+            String str3 = str;
+            if (!StringsKt.z(str2, ".", false, 2, null)) {
+                str2 = str2 + '.';
             }
-            return r10;
-        }
-        if (c0Var.d().G() > 2 && c0Var.d().j(1) == 58 && c0Var.d().j(2) == 92) {
-            char j10 = (char) c0Var.d().j(0);
-            if ('a' > j10 || j10 >= '{') {
-                if ('A' <= j10 && j10 < '[') {
-                    return 3;
-                }
-            } else {
-                return 3;
+            String b10 = b(str2);
+            if (!StringsKt.V(b10, "*", false, 2, null)) {
+                return Intrinsics.areEqual(str3, b10);
             }
-        }
-        return -1;
-    }
-
-    private static final boolean p(Buffer buffer, ByteString byteString) {
-        if (!Intrinsics.areEqual(byteString, f39453b) || buffer.size() < 2 || buffer.D0(1L) != 58) {
-            return false;
-        }
-        char D0 = (char) buffer.D0(0L);
-        if ('a' > D0 || D0 >= '{') {
-            if ('A' > D0 || D0 >= '[') {
+            if (!StringsKt.P(b10, "*.", false, 2, null) || StringsKt.h0(b10, '*', 1, false, 4, null) != -1 || str3.length() < b10.length() || Intrinsics.areEqual("*.", b10)) {
+                return false;
+            }
+            String substring = b10.substring(1);
+            Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String).substring(startIndex)");
+            if (!StringsKt.z(str3, substring, false, 2, null)) {
+                return false;
+            }
+            int length = str3.length() - substring.length();
+            if (length > 0 && StringsKt.n0(str3, '.', length - 1, false, 4, null) != -1) {
                 return false;
             }
             return true;
         }
-        return true;
+        return false;
     }
 
-    public static final c0 q(Buffer buffer, boolean z10) {
-        ByteString byteString;
-        boolean z11;
-        boolean z12;
-        ByteString g12;
-        Intrinsics.checkNotNullParameter(buffer, "<this>");
-        Buffer buffer2 = new Buffer();
-        ByteString byteString2 = null;
-        int i10 = 0;
-        while (true) {
-            if (!buffer.p0(0L, f39452a)) {
-                byteString = f39453b;
-                if (!buffer.p0(0L, byteString)) {
-                    break;
-                }
-            }
-            byte readByte = buffer.readByte();
-            if (byteString2 == null) {
-                byteString2 = r(readByte);
-            }
-            i10++;
+    private final boolean g(String str, X509Certificate x509Certificate) {
+        String b10 = b(str);
+        List<String> c10 = c(x509Certificate, 2);
+        if ((c10 instanceof Collection) && c10.isEmpty()) {
+            return false;
         }
-        if (i10 >= 2 && Intrinsics.areEqual(byteString2, byteString)) {
-            z11 = true;
-        } else {
-            z11 = false;
-        }
-        if (z11) {
-            Intrinsics.checkNotNull(byteString2);
-            buffer2.a2(byteString2);
-            buffer2.a2(byteString2);
-        } else if (i10 > 0) {
-            Intrinsics.checkNotNull(byteString2);
-            buffer2.a2(byteString2);
-        } else {
-            long c02 = buffer.c0(f39454c);
-            if (byteString2 == null) {
-                if (c02 == -1) {
-                    byteString2 = s(c0.f37265i);
-                } else {
-                    byteString2 = r(buffer.D0(c02));
-                }
-            }
-            if (p(buffer, byteString2)) {
-                if (c02 == 2) {
-                    buffer2.t0(buffer, 3L);
-                } else {
-                    buffer2.t0(buffer, 2L);
-                }
+        for (String str2 : c10) {
+            if (f38971a.f(b10, str2)) {
+                return true;
             }
         }
-        if (buffer2.size() > 0) {
-            z12 = true;
-        } else {
-            z12 = false;
-        }
-        ArrayList arrayList = new ArrayList();
-        while (!buffer.o1()) {
-            long c03 = buffer.c0(f39454c);
-            if (c03 == -1) {
-                g12 = buffer.L1();
-            } else {
-                g12 = buffer.g1(c03);
-                buffer.readByte();
-            }
-            ByteString byteString3 = f39456e;
-            if (Intrinsics.areEqual(g12, byteString3)) {
-                if (!z12 || !arrayList.isEmpty()) {
-                    if (z10 && (z12 || (!arrayList.isEmpty() && !Intrinsics.areEqual(CollectionsKt.z0(arrayList), byteString3)))) {
-                        if (!z11 || arrayList.size() != 1) {
-                            CollectionsKt.M(arrayList);
-                        }
-                    } else {
-                        arrayList.add(g12);
-                    }
-                }
-            } else if (!Intrinsics.areEqual(g12, f39455d) && !Intrinsics.areEqual(g12, ByteString.f44308p)) {
-                arrayList.add(g12);
-            }
-        }
-        int size = arrayList.size();
-        for (int i11 = 0; i11 < size; i11++) {
-            if (i11 > 0) {
-                buffer2.a2(byteString2);
-            }
-            buffer2.a2((ByteString) arrayList.get(i11));
-        }
-        if (buffer2.size() == 0) {
-            buffer2.a2(f39455d);
-        }
-        return new c0(buffer2.L1());
+        return false;
     }
 
-    private static final ByteString r(byte b10) {
-        if (b10 != 47) {
-            if (b10 == 92) {
-                return f39453b;
-            }
-            throw new IllegalArgumentException("not a directory separator: " + ((int) b10));
+    private final boolean h(String str, X509Certificate x509Certificate) {
+        String e10 = au.a.e(str);
+        List<String> c10 = c(x509Certificate, 7);
+        if ((c10 instanceof Collection) && c10.isEmpty()) {
+            return false;
         }
-        return f39452a;
+        for (String str2 : c10) {
+            if (Intrinsics.areEqual(e10, au.a.e(str2))) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final ByteString s(String str) {
-        if (Intrinsics.areEqual(str, "/")) {
-            return f39452a;
+    public final List a(X509Certificate certificate) {
+        Intrinsics.checkNotNullParameter(certificate, "certificate");
+        return CollectionsKt.L0(c(certificate, 7), c(certificate, 2));
+    }
+
+    public final boolean e(String host, X509Certificate certificate) {
+        Intrinsics.checkNotNullParameter(host, "host");
+        Intrinsics.checkNotNullParameter(certificate, "certificate");
+        if (au.e.i(host)) {
+            return h(host, certificate);
         }
-        if (Intrinsics.areEqual(str, "\\")) {
-            return f39453b;
+        return g(host, certificate);
+    }
+
+    @Override // javax.net.ssl.HostnameVerifier
+    public boolean verify(String host, SSLSession session) {
+        Intrinsics.checkNotNullParameter(host, "host");
+        Intrinsics.checkNotNullParameter(session, "session");
+        if (!d(host)) {
+            return false;
         }
-        throw new IllegalArgumentException("not a directory separator: " + str);
+        try {
+            Certificate certificate = session.getPeerCertificates()[0];
+            Intrinsics.checkNotNull(certificate, "null cannot be cast to non-null type java.security.cert.X509Certificate");
+            return e(host, (X509Certificate) certificate);
+        } catch (SSLException unused) {
+            return false;
+        }
     }
 }

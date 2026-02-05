@@ -26,7 +26,7 @@ public abstract class TypeSubstitution {
 
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeSubstitution
         /* renamed from: get  reason: collision with other method in class */
-        public /* bridge */ /* synthetic */ TypeProjection mo1200get(KotlinType kotlinType) {
+        public /* bridge */ /* synthetic */ TypeProjection mo1202get(KotlinType kotlinType) {
             return (TypeProjection) get(kotlinType);
         }
     };
@@ -63,7 +63,7 @@ public abstract class TypeSubstitution {
     }
 
     /* renamed from: get */
-    public abstract TypeProjection mo1200get(@NotNull KotlinType kotlinType);
+    public abstract TypeProjection mo1202get(@NotNull KotlinType kotlinType);
 
     public boolean isEmpty() {
         return false;
@@ -97,9 +97,9 @@ public abstract class TypeSubstitution {
 
             @Override // kotlin.reflect.jvm.internal.impl.types.TypeSubstitution
             /* renamed from: get */
-            public TypeProjection mo1200get(KotlinType key) {
+            public TypeProjection mo1202get(KotlinType key) {
                 Intrinsics.checkNotNullParameter(key, "key");
-                return TypeSubstitution.this.mo1200get(key);
+                return TypeSubstitution.this.mo1202get(key);
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.types.TypeSubstitution

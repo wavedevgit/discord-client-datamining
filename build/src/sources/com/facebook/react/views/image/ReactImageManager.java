@@ -26,8 +26,8 @@ import kotlin.collections.o0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.FloatCompanionObject;
 import kotlin.jvm.internal.Intrinsics;
-import lr.c;
-import lr.v;
+import or.c;
+import or.v;
 import org.jetbrains.annotations.NotNull;
 import p8.a;
 @ReactModule(name = ReactImageManager.REACT_CLASS)

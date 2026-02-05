@@ -3,13 +3,13 @@ package tf;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static ClassLoader f50019a;
+    private static ClassLoader f50624a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static Thread f50020b;
+    private static Thread f50625b;
 
-    /* JADX WARN: Code restructure failed: missing block: B:46:0x00a3, code lost:
-        if (r1 == null) goto L13;
+    /* JADX WARN: Code restructure failed: missing block: B:46:0x00af, code lost:
+        if (r2 == null) goto L13;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -17,7 +17,7 @@ public abstract class d {
     */
     public static synchronized java.lang.ClassLoader a() {
         /*
-            Method dump skipped, instructions count: 219
+            Method dump skipped, instructions count: 239
             To view this dump add '--comments-level debug' option
         */
         throw new UnsupportedOperationException("Method not decompiled: tf.d.a():java.lang.ClassLoader");

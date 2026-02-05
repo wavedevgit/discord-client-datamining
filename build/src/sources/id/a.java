@@ -10,34 +10,34 @@ import ne.w0;
 public final class a implements Metadata.b {
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f28323d;
+    public final String f27312d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f28324e;
+    public final String f27313e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final long f28325i;
+    public final long f27314i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final long f28326o;
+    public final long f27315o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final byte[] f28327p;
+    public final byte[] f27316p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f28328q;
+    private int f27317q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Format f28321r = new Format.b().g0("application/id3").G();
+    private static final Format f27310r = new Format.b().g0("application/id3").G();
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Format f28322s = new Format.b().g0("application/x-scte35").G();
-    public static final Parcelable.Creator<a> CREATOR = new C0376a();
+    private static final Format f27311s = new Format.b().g0("application/x-scte35").G();
+    public static final Parcelable.Creator<a> CREATOR = new C0381a();
 
     /* renamed from: id.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    class C0376a implements Parcelable.Creator {
-        C0376a() {
+    class C0381a implements Parcelable.Creator {
+        C0381a() {
         }
 
         @Override // android.os.Parcelable.Creator
@@ -54,16 +54,16 @@ public final class a implements Metadata.b {
     }
 
     public a(String str, String str2, long j10, long j11, byte[] bArr) {
-        this.f28323d = str;
-        this.f28324e = str2;
-        this.f28325i = j10;
-        this.f28326o = j11;
-        this.f28327p = bArr;
+        this.f27312d = str;
+        this.f27313e = str2;
+        this.f27314i = j10;
+        this.f27315o = j11;
+        this.f27316p = bArr;
     }
 
     @Override // com.google.android.exoplayer2.metadata.Metadata.b
     public Format F() {
-        String str = this.f28323d;
+        String str = this.f27312d;
         str.getClass();
         char c10 = 65535;
         switch (str.hashCode()) {
@@ -88,10 +88,10 @@ public final class a implements Metadata.b {
         }
         switch (c10) {
             case 0:
-                return f28322s;
+                return f27311s;
             case 1:
             case 2:
-                return f28321r;
+                return f27310r;
             default:
                 return null;
         }
@@ -108,7 +108,7 @@ public final class a implements Metadata.b {
         }
         if (obj != null && a.class == obj.getClass()) {
             a aVar = (a) obj;
-            if (this.f28325i == aVar.f28325i && this.f28326o == aVar.f28326o && w0.c(this.f28323d, aVar.f28323d) && w0.c(this.f28324e, aVar.f28324e) && Arrays.equals(this.f28327p, aVar.f28327p)) {
+            if (this.f27314i == aVar.f27314i && this.f27315o == aVar.f27315o && w0.c(this.f27312d, aVar.f27312d) && w0.c(this.f27313e, aVar.f27313e) && Arrays.equals(this.f27316p, aVar.f27316p)) {
                 return true;
             }
         }
@@ -117,8 +117,8 @@ public final class a implements Metadata.b {
 
     public int hashCode() {
         int i10;
-        if (this.f28328q == 0) {
-            String str = this.f28323d;
+        if (this.f27317q == 0) {
+            String str = this.f27312d;
             int i11 = 0;
             if (str != null) {
                 i10 = str.hashCode();
@@ -126,43 +126,43 @@ public final class a implements Metadata.b {
                 i10 = 0;
             }
             int i12 = (527 + i10) * 31;
-            String str2 = this.f28324e;
+            String str2 = this.f27313e;
             if (str2 != null) {
                 i11 = str2.hashCode();
             }
-            long j10 = this.f28325i;
-            long j11 = this.f28326o;
-            this.f28328q = ((((((i12 + i11) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + Arrays.hashCode(this.f28327p);
+            long j10 = this.f27314i;
+            long j11 = this.f27315o;
+            this.f27317q = ((((((i12 + i11) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + Arrays.hashCode(this.f27316p);
         }
-        return this.f28328q;
+        return this.f27317q;
     }
 
     @Override // com.google.android.exoplayer2.metadata.Metadata.b
     public byte[] j2() {
         if (F() != null) {
-            return this.f28327p;
+            return this.f27316p;
         }
         return null;
     }
 
     public String toString() {
-        return "EMSG: scheme=" + this.f28323d + ", id=" + this.f28326o + ", durationMs=" + this.f28325i + ", value=" + this.f28324e;
+        return "EMSG: scheme=" + this.f27312d + ", id=" + this.f27315o + ", durationMs=" + this.f27314i + ", value=" + this.f27313e;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f28323d);
-        parcel.writeString(this.f28324e);
-        parcel.writeLong(this.f28325i);
-        parcel.writeLong(this.f28326o);
-        parcel.writeByteArray(this.f28327p);
+        parcel.writeString(this.f27312d);
+        parcel.writeString(this.f27313e);
+        parcel.writeLong(this.f27314i);
+        parcel.writeLong(this.f27315o);
+        parcel.writeByteArray(this.f27316p);
     }
 
     a(Parcel parcel) {
-        this.f28323d = (String) w0.j(parcel.readString());
-        this.f28324e = (String) w0.j(parcel.readString());
-        this.f28325i = parcel.readLong();
-        this.f28326o = parcel.readLong();
-        this.f28327p = (byte[]) w0.j(parcel.createByteArray());
+        this.f27312d = (String) w0.j(parcel.readString());
+        this.f27313e = (String) w0.j(parcel.readString());
+        this.f27314i = parcel.readLong();
+        this.f27315o = parcel.readLong();
+        this.f27316p = (byte[]) w0.j(parcel.createByteArray());
     }
 }

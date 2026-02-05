@@ -6,7 +6,7 @@ import com.discord.notifications.api.NotificationData;
 public abstract class a5 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final t1 f13781a = new y4();
+    private static final t1 f14175a = new y4();
 
     public static int a(int i10) {
         if (i10 != 90) {

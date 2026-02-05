@@ -1,19 +1,22 @@
 package gv;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a extends r {
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // gv.r
-    public void j(r rVar) {
-        if (rVar instanceof a) {
-            super.j(rVar);
-            return;
+class a {
+
+    /* renamed from: b  reason: collision with root package name */
+    private int f25410b = 0;
+
+    /* renamed from: a  reason: collision with root package name */
+    private final StringBuilder f25409a = new StringBuilder();
+
+    public void a(CharSequence charSequence) {
+        if (this.f25410b != 0) {
+            this.f25409a.append('\n');
         }
-        throw new IllegalArgumentException("Parent of block must also be block (can not be inline)");
+        this.f25409a.append(charSequence);
+        this.f25410b++;
     }
 
-    @Override // gv.r
-    /* renamed from: m */
-    public a f() {
-        return (a) super.f();
+    public String b() {
+        return this.f25409a.toString();
     }
 }

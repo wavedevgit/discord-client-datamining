@@ -10,10 +10,10 @@ import r.a0;
 public class FlashTooSlowQuirk implements UseTorchAsFlashQuirk {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f1918a = Arrays.asList("PIXEL 3A", "PIXEL 3A XL", "PIXEL 4", "PIXEL 5", "SM-A320", "MOTO G(20)", "ITEL L6006", "RMX3231");
+    private static final List f2030a = Arrays.asList("PIXEL 3A", "PIXEL 3A XL", "PIXEL 4", "PIXEL 5", "SM-A320", "MOTO G(20)", "ITEL L6006", "RMX3231");
 
     private static boolean c() {
-        for (String str : f1918a) {
+        for (String str : f2030a) {
             if (Build.MODEL.toUpperCase(Locale.US).startsWith(str)) {
                 return true;
             }

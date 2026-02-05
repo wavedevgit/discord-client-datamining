@@ -13,13 +13,13 @@ public interface c {
 
     int getWidth();
 
-    int t();
+    int u();
 
-    boolean u();
+    boolean v();
 
-    Bitmap.Config v();
+    Bitmap.Config w();
 
-    d w(int i10);
+    d x(int i10);
 
-    int[] x();
+    int[] y();
 }

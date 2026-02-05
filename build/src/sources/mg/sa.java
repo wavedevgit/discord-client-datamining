@@ -1,14 +1,14 @@
 package mg;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class sa implements ui.d {
+final class sa implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final sa f38425a = new sa();
+    static final sa f38087a = new sa();
 
     static {
-        c.b a10 = ui.c.a("identifiedLanguage");
+        c.b a10 = xi.c.a("identifiedLanguage");
         l2 l2Var = new l2();
         l2Var.a(1);
         a10.b(l2Var.b()).a();
@@ -17,10 +17,10 @@ final class sa implements ui.d {
     private sa() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

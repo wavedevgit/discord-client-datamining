@@ -7,82 +7,82 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f23670a = new b();
+    public static final b f22695a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final c f23671b;
+    public static final c f22696b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final c f23672c;
+    public static final c f22697c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final c f23673d;
+    public static final c f22698d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final c f23674e;
+    public static final c f22699e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final c f23675f;
+    public static final c f22700f;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final c f23676g;
+    public static final c f22701g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final c f23677h;
+    public static final c f22702h;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final c f23678i;
+    public static final c f22703i;
 
     /* renamed from: j  reason: collision with root package name */
-    public static final c f23679j;
+    public static final c f22704j;
 
     /* renamed from: k  reason: collision with root package name */
-    public static final c f23680k;
+    public static final c f22705k;
 
     /* renamed from: l  reason: collision with root package name */
-    public static final c f23681l;
+    public static final c f22706l;
 
     /* renamed from: m  reason: collision with root package name */
-    public static final c f23682m;
+    public static final c f22707m;
 
     /* renamed from: n  reason: collision with root package name */
-    public static final c f23683n;
+    public static final c f22708n;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final c f23684o;
+    public static final c f22709o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final List f23685p;
+    public static final List f22710p;
 
     static {
         c cVar = new c("JPEG", "jpeg");
-        f23671b = cVar;
+        f22696b = cVar;
         c cVar2 = new c("PNG", "png");
-        f23672c = cVar2;
+        f22697c = cVar2;
         c cVar3 = new c("GIF", "gif");
-        f23673d = cVar3;
+        f22698d = cVar3;
         c cVar4 = new c("BMP", "bmp");
-        f23674e = cVar4;
+        f22699e = cVar4;
         c cVar5 = new c("ICO", "ico");
-        f23675f = cVar5;
+        f22700f = cVar5;
         c cVar6 = new c("WEBP_SIMPLE", "webp");
-        f23676g = cVar6;
+        f22701g = cVar6;
         c cVar7 = new c("WEBP_LOSSLESS", "webp");
-        f23677h = cVar7;
+        f22702h = cVar7;
         c cVar8 = new c("WEBP_EXTENDED", "webp");
-        f23678i = cVar8;
+        f22703i = cVar8;
         c cVar9 = new c("WEBP_EXTENDED_WITH_ALPHA", "webp");
-        f23679j = cVar9;
+        f22704j = cVar9;
         c cVar10 = new c("WEBP_ANIMATED", "webp");
-        f23680k = cVar10;
+        f22705k = cVar10;
         c cVar11 = new c("HEIF", "heif");
-        f23681l = cVar11;
-        f23682m = new c("DNG", "dng");
+        f22706l = cVar11;
+        f22707m = new c("DNG", "dng");
         c cVar12 = new c("BINARY_XML", "xml");
-        f23683n = cVar12;
+        f22708n = cVar12;
         c cVar13 = new c("AVIF", "avif");
-        f23684o = cVar13;
-        f23685p = CollectionsKt.o(cVar, cVar2, cVar3, cVar4, cVar5, cVar6, cVar7, cVar8, cVar9, cVar10, cVar11, cVar12, cVar13);
+        f22709o = cVar13;
+        f22710p = CollectionsKt.o(cVar, cVar2, cVar3, cVar4, cVar5, cVar6, cVar7, cVar8, cVar9, cVar10, cVar11, cVar12, cVar13);
     }
 
     private b() {
@@ -90,7 +90,7 @@ public final class b {
 
     public static final boolean a(c imageFormat) {
         Intrinsics.checkNotNullParameter(imageFormat, "imageFormat");
-        if (imageFormat != f23676g && imageFormat != f23677h && imageFormat != f23678i && imageFormat != f23679j) {
+        if (imageFormat != f22701g && imageFormat != f22702h && imageFormat != f22703i && imageFormat != f22704j) {
             return false;
         }
         return true;
@@ -98,7 +98,7 @@ public final class b {
 
     public static final boolean b(c imageFormat) {
         Intrinsics.checkNotNullParameter(imageFormat, "imageFormat");
-        if (!a(imageFormat) && imageFormat != f23680k) {
+        if (!a(imageFormat) && imageFormat != f22705k) {
             return false;
         }
         return true;

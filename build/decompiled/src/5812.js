@@ -14,9 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var1[var0];
     var1 = metroImportDefault;
     var0 = undefined;
-    var3 = var1.bind(var0)(var3);
-    var1 = 'HeaderHeightContext';
-    var1 = var3.bind(var0)(var1, var0);
+    var1 = var1.bind(var0)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5804]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5813]);

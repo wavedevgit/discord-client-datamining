@@ -35,15 +35,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var4.jsxs;
     var _closure1_slot5 = var4;
     var1 = function arg0() {
-        _fun35456: for (var _fun35456_ip = 0;;) switch (_fun35456_ip) {
+        _fun35466: for (var _fun35466_ip = 0;;) switch (_fun35466_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.rootHostName;
                 var12 = 'root';
                 var3 = undefined;
                 if (!(var3 !== var1)) {
-                    _fun35456_ip = 22;
-                    continue _fun35456
+                    _fun35466_ip = 22;
+                    continue _fun35466
                 }
             case 19:
                 var12 = var1;
@@ -51,8 +51,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.shouldAddRootHost;
                 var8 = var3 === var1;
                 if (var8) {
-                    _fun35456_ip = 40;
-                    continue _fun35456
+                    _fun35466_ip = 40;
+                    continue _fun35466
                 }
             case 37:
                 var8 = var1;
@@ -95,8 +95,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = new Array(2);
                 var7[0] = var10;
                 if (!var8) {
-                    _fun35456_ip = 246;
-                    continue _fun35456
+                    _fun35466_ip = 246;
+                    continue _fun35466
                 }
             case 204:
                 var11 = _closure1_slot4;

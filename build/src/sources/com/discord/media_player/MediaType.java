@@ -22,7 +22,7 @@ public final class MediaType {
     static {
         MediaType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = sr.a.a($values);
+        $ENTRIES = vr.a.a($values);
     }
 
     private MediaType(String str, int i10) {

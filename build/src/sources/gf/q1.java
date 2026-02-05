@@ -1,34 +1,31 @@
 package gf;
+
+import android.os.Bundle;
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class q1 {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final String f26188a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final String f26189b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final boolean f26190c;
-
-    public q1(String str, String str2, boolean z10, int i10, boolean z11) {
-        this.f26189b = str;
-        this.f26188a = str2;
-        this.f26190c = z11;
+public abstract class q1 extends hg.n implements k {
+    public q1() {
+        super("com.google.android.gms.common.internal.IGmsCallbacks");
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final String a() {
-        return this.f26189b;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final String b() {
-        return this.f26188a;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final boolean c() {
-        return this.f26190c;
+    @Override // hg.n
+    protected final boolean e(int i10, Parcel parcel, Parcel parcel2, int i11) {
+        if (i10 != 1) {
+            if (i10 != 2) {
+                if (i10 != 3) {
+                    return false;
+                }
+                hg.o.c(parcel);
+                I0(parcel.readInt(), parcel.readStrongBinder(), (d1) hg.o.a(parcel, d1.CREATOR));
+            } else {
+                hg.o.c(parcel);
+                r0(parcel.readInt(), (Bundle) hg.o.a(parcel, Bundle.CREATOR));
+            }
+        } else {
+            hg.o.c(parcel);
+            D(parcel.readInt(), parcel.readStrongBinder(), (Bundle) hg.o.a(parcel, Bundle.CREATOR));
+        }
+        parcel2.writeNoException();
+        return true;
     }
 }

@@ -10,11 +10,11 @@ public final class g6 extends a implements IInterface {
         super(iBinder, "com.google.android.gms.vision.text.internal.client.INativeTextRecognizer");
     }
 
-    public final void S0() {
+    public final void W0() {
         h(2, e());
     }
 
-    public final ka[] T0(sf.a aVar, c2 c2Var) {
+    public final ka[] X0(sf.a aVar, c2 c2Var) {
         Parcel e10 = e();
         b1.b(e10, aVar);
         b1.a(e10, c2Var);

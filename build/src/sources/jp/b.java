@@ -1,119 +1,54 @@
 package jp;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import hp.a1;
-import kotlin.jvm.internal.Intrinsics;
-import np.f;
-import org.jetbrains.annotations.NotNull;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.viewbinding.ViewBinding;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.squareup.workflow1.ui.WorkflowViewStub;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements f {
-    @NotNull
-    public static final Parcelable.Creator<b> CREATOR = new a();
+public final class b implements ViewBinding {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f31846d;
+    /* renamed from: a  reason: collision with root package name */
+    private final CoordinatorLayout f31165a;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final a1 f31847e;
+    /* renamed from: b  reason: collision with root package name */
+    public final WorkflowViewStub f31166b;
 
-    /* renamed from: i  reason: collision with root package name */
-    private final a1 f31848i;
+    /* renamed from: c  reason: collision with root package name */
+    public final FloatingActionButton f31167c;
 
-    /* renamed from: o  reason: collision with root package name */
-    private final a1 f31849o;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final b createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new b(parcel.readString(), (a1) parcel.readParcelable(b.class.getClassLoader()), (a1) parcel.readParcelable(b.class.getClassLoader()), (a1) parcel.readParcelable(b.class.getClassLoader()));
-        }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final b[] newArray(int i10) {
-            return new b[i10];
-        }
+    private b(CoordinatorLayout coordinatorLayout, WorkflowViewStub workflowViewStub, FloatingActionButton floatingActionButton) {
+        this.f31165a = coordinatorLayout;
+        this.f31166b = workflowViewStub;
+        this.f31167c = floatingActionButton;
     }
 
-    public b(String stepName, a1 a1Var, a1 a1Var2, a1 a1Var3) {
-        Intrinsics.checkNotNullParameter(stepName, "stepName");
-        this.f31846d = stepName;
-        this.f31847e = a1Var;
-        this.f31848i = a1Var2;
-        this.f31849o = a1Var3;
-    }
-
-    public final a1 a() {
-        return this.f31847e;
-    }
-
-    public String b() {
-        return this.f31846d;
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    public static b a(View view) {
+        int i10 = ip.a.f30038a;
+        WorkflowViewStub workflowViewStub = (WorkflowViewStub) e4.a.a(view, i10);
+        if (workflowViewStub != null) {
+            i10 = ip.a.f30039b;
+            FloatingActionButton floatingActionButton = (FloatingActionButton) e4.a.a(view, i10);
+            if (floatingActionButton != null) {
+                return new b((CoordinatorLayout) view, workflowViewStub, floatingActionButton);
+            }
         }
-        if (!(obj instanceof b)) {
-            return false;
-        }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f31846d, bVar.f31846d) && Intrinsics.areEqual(this.f31847e, bVar.f31847e) && Intrinsics.areEqual(this.f31848i, bVar.f31848i) && Intrinsics.areEqual(this.f31849o, bVar.f31849o)) {
-            return true;
-        }
-        return false;
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    public int hashCode() {
-        int hashCode;
-        int hashCode2;
-        int hashCode3 = this.f31846d.hashCode() * 31;
-        a1 a1Var = this.f31847e;
-        int i10 = 0;
-        if (a1Var == null) {
-            hashCode = 0;
-        } else {
-            hashCode = a1Var.hashCode();
+    public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(ip.b.f30043b, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
         }
-        int i11 = (hashCode3 + hashCode) * 31;
-        a1 a1Var2 = this.f31848i;
-        if (a1Var2 == null) {
-            hashCode2 = 0;
-        } else {
-            hashCode2 = a1Var2.hashCode();
-        }
-        int i12 = (i11 + hashCode2) * 31;
-        a1 a1Var3 = this.f31849o;
-        if (a1Var3 != null) {
-            i10 = a1Var3.hashCode();
-        }
-        return i12 + i10;
+        return a(inflate);
     }
 
-    public String toString() {
-        String str = this.f31846d;
-        a1 a1Var = this.f31847e;
-        a1 a1Var2 = this.f31848i;
-        a1 a1Var3 = this.f31849o;
-        return "SelfieStepData(stepName=" + str + ", centerCapture=" + a1Var + ", leftCapture=" + a1Var2 + ", rightCapture=" + a1Var3 + ")";
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f31846d);
-        dest.writeParcelable(this.f31847e, i10);
-        dest.writeParcelable(this.f31848i, i10);
-        dest.writeParcelable(this.f31849o, i10);
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public CoordinatorLayout getRoot() {
+        return this.f31165a;
     }
 }

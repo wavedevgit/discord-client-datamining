@@ -1,1489 +1,709 @@
 package eu;
 
-import com.facebook.react.uimanager.events.PointerEventHelper;
-import eu.h;
-import java.io.Closeable;
+import com.facebook.react.uimanager.ViewProps;
+import hu.f;
+import hu.m;
+import hu.n;
 import java.io.IOException;
+import java.net.ConnectException;
+import java.net.Proxy;
 import java.net.Socket;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
+import java.security.cert.Certificate;
+import java.security.cert.X509Certificate;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
-import kotlin.Unit;
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.SSLPeerUnverifiedException;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.SSLSocketFactory;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Ref;
-import okio.Buffer;
+import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.LongCompanionObject;
+import kotlin.text.StringsKt;
+import nu.d;
+import okhttp3.Call;
+import okhttp3.HttpUrl;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+import okhttp3.g;
 import okio.BufferedSink;
 import okio.BufferedSource;
-import okio.ByteString;
+import ou.x;
+import zt.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class f implements Closeable {
-    public static final b N = new b(null);
-    private static final m O;
-    private long A;
-    private long B;
-    private long C;
-    private final m D;
-    private m E;
-    private long F;
-    private long G;
-    private long H;
-    private long I;
-    private final Socket J;
-    private final eu.j K;
-    private final d L;
-    private final Set M;
+public final class f extends f.c implements zt.e {
 
-    /* renamed from: d */
-    private final boolean f22737d;
+    /* renamed from: t  reason: collision with root package name */
+    public static final a f21849t = new a(null);
 
-    /* renamed from: e */
-    private final c f22738e;
+    /* renamed from: c  reason: collision with root package name */
+    private final g f21850c;
 
-    /* renamed from: i */
-    private final Map f22739i;
+    /* renamed from: d  reason: collision with root package name */
+    private final k f21851d;
 
-    /* renamed from: o */
-    private final String f22740o;
+    /* renamed from: e  reason: collision with root package name */
+    private Socket f21852e;
 
-    /* renamed from: p */
-    private int f22741p;
+    /* renamed from: f  reason: collision with root package name */
+    private Socket f21853f;
 
-    /* renamed from: q */
-    private int f22742q;
+    /* renamed from: g  reason: collision with root package name */
+    private okhttp3.g f21854g;
 
-    /* renamed from: r */
-    private boolean f22743r;
+    /* renamed from: h  reason: collision with root package name */
+    private zt.j f21855h;
 
-    /* renamed from: s */
-    private final au.e f22744s;
+    /* renamed from: i  reason: collision with root package name */
+    private hu.f f21856i;
 
-    /* renamed from: t */
-    private final au.d f22745t;
+    /* renamed from: j  reason: collision with root package name */
+    private BufferedSource f21857j;
 
-    /* renamed from: u */
-    private final au.d f22746u;
+    /* renamed from: k  reason: collision with root package name */
+    private BufferedSink f21858k;
 
-    /* renamed from: v */
-    private final au.d f22747v;
+    /* renamed from: l  reason: collision with root package name */
+    private boolean f21859l;
 
-    /* renamed from: w */
-    private final eu.l f22748w;
+    /* renamed from: m  reason: collision with root package name */
+    private boolean f21860m;
 
-    /* renamed from: x */
-    private long f22749x;
+    /* renamed from: n  reason: collision with root package name */
+    private int f21861n;
 
-    /* renamed from: y */
-    private long f22750y;
+    /* renamed from: o  reason: collision with root package name */
+    private int f21862o;
 
-    /* renamed from: z */
-    private long f22751z;
+    /* renamed from: p  reason: collision with root package name */
+    private int f21863p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private int f21864q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private final List f21865r;
+
+    /* renamed from: s  reason: collision with root package name */
+    private long f21866s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
-
-        /* renamed from: a */
-        private boolean f22752a;
-
-        /* renamed from: b */
-        private final au.e f22753b;
-
-        /* renamed from: c */
-        public Socket f22754c;
-
-        /* renamed from: d */
-        public String f22755d;
-
-        /* renamed from: e */
-        public BufferedSource f22756e;
-
-        /* renamed from: f */
-        public BufferedSink f22757f;
-
-        /* renamed from: g */
-        private c f22758g;
-
-        /* renamed from: h */
-        private eu.l f22759h;
-
-        /* renamed from: i */
-        private int f22760i;
-
-        public a(boolean z10, au.e taskRunner) {
-            Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
-            this.f22752a = z10;
-            this.f22753b = taskRunner;
-            this.f22758g = c.f22762b;
-            this.f22759h = eu.l.f22864b;
-        }
-
-        public final f a() {
-            return new f(this);
-        }
-
-        public final boolean b() {
-            return this.f22752a;
-        }
-
-        public final String c() {
-            String str = this.f22755d;
-            if (str != null) {
-                return str;
-            }
-            Intrinsics.throwUninitializedPropertyAccessException("connectionName");
-            return null;
-        }
-
-        public final c d() {
-            return this.f22758g;
-        }
-
-        public final int e() {
-            return this.f22760i;
-        }
-
-        public final eu.l f() {
-            return this.f22759h;
-        }
-
-        public final BufferedSink g() {
-            BufferedSink bufferedSink = this.f22757f;
-            if (bufferedSink != null) {
-                return bufferedSink;
-            }
-            Intrinsics.throwUninitializedPropertyAccessException("sink");
-            return null;
-        }
-
-        public final Socket h() {
-            Socket socket = this.f22754c;
-            if (socket != null) {
-                return socket;
-            }
-            Intrinsics.throwUninitializedPropertyAccessException("socket");
-            return null;
-        }
-
-        public final BufferedSource i() {
-            BufferedSource bufferedSource = this.f22756e;
-            if (bufferedSource != null) {
-                return bufferedSource;
-            }
-            Intrinsics.throwUninitializedPropertyAccessException("source");
-            return null;
-        }
-
-        public final au.e j() {
-            return this.f22753b;
-        }
-
-        public final a k(c listener) {
-            Intrinsics.checkNotNullParameter(listener, "listener");
-            this.f22758g = listener;
-            return this;
-        }
-
-        public final a l(int i10) {
-            this.f22760i = i10;
-            return this;
-        }
-
-        public final void m(String str) {
-            Intrinsics.checkNotNullParameter(str, "<set-?>");
-            this.f22755d = str;
-        }
-
-        public final void n(BufferedSink bufferedSink) {
-            Intrinsics.checkNotNullParameter(bufferedSink, "<set-?>");
-            this.f22757f = bufferedSink;
-        }
-
-        public final void o(Socket socket) {
-            Intrinsics.checkNotNullParameter(socket, "<set-?>");
-            this.f22754c = socket;
-        }
-
-        public final void p(BufferedSource bufferedSource) {
-            Intrinsics.checkNotNullParameter(bufferedSource, "<set-?>");
-            this.f22756e = bufferedSource;
-        }
-
-        public final a q(Socket socket, String peerName, BufferedSource source, BufferedSink sink) {
-            String str;
-            Intrinsics.checkNotNullParameter(socket, "socket");
-            Intrinsics.checkNotNullParameter(peerName, "peerName");
-            Intrinsics.checkNotNullParameter(source, "source");
-            Intrinsics.checkNotNullParameter(sink, "sink");
-            o(socket);
-            if (this.f22752a) {
-                str = xt.e.f53572i + ' ' + peerName;
-            } else {
-                str = "MockWebServer " + peerName;
-            }
-            m(str);
-            p(source);
-            n(sink);
-            return this;
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b {
-        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        public final m a() {
-            return f.O;
-        }
-
-        private b() {
+        private a() {
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static abstract class c {
+    public /* synthetic */ class b {
 
-        /* renamed from: a */
-        public static final b f22761a = new b(null);
+        /* renamed from: a  reason: collision with root package name */
+        public static final /* synthetic */ int[] f21867a;
 
-        /* renamed from: b */
-        public static final c f22762b = new a();
-
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class a extends c {
-            a() {
-            }
-
-            @Override // eu.f.c
-            public void b(eu.i stream) {
-                Intrinsics.checkNotNullParameter(stream, "stream");
-                stream.d(eu.b.REFUSED_STREAM, null);
-            }
-        }
-
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class b {
-            public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
-                this();
-            }
-
-            private b() {
-            }
-        }
-
-        public void a(f connection, m settings) {
-            Intrinsics.checkNotNullParameter(connection, "connection");
-            Intrinsics.checkNotNullParameter(settings, "settings");
-        }
-
-        public abstract void b(eu.i iVar);
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class e extends au.a {
-
-        /* renamed from: e */
-        final /* synthetic */ f f22775e;
-
-        /* renamed from: f */
-        final /* synthetic */ int f22776f;
-
-        /* renamed from: g */
-        final /* synthetic */ Buffer f22777g;
-
-        /* renamed from: h */
-        final /* synthetic */ int f22778h;
-
-        /* renamed from: i */
-        final /* synthetic */ boolean f22779i;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public e(String str, boolean z10, f fVar, int i10, Buffer buffer, int i11, boolean z11) {
-            super(str, z10);
-            this.f22775e = fVar;
-            this.f22776f = i10;
-            this.f22777g = buffer;
-            this.f22778h = i11;
-            this.f22779i = z11;
-        }
-
-        @Override // au.a
-        public long f() {
+        static {
+            int[] iArr = new int[Proxy.Type.values().length];
             try {
-                boolean d10 = this.f22775e.f22748w.d(this.f22776f, this.f22777g, this.f22778h, this.f22779i);
-                if (d10) {
-                    this.f22775e.W1().V(this.f22776f, eu.b.CANCEL);
-                }
-                if (d10 || this.f22779i) {
-                    synchronized (this.f22775e) {
-                        this.f22775e.M.remove(Integer.valueOf(this.f22776f));
-                    }
-                    return -1L;
-                }
-                return -1L;
-            } catch (IOException unused) {
-                return -1L;
+                iArr[Proxy.Type.DIRECT.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
             }
-        }
-    }
-
-    /* renamed from: eu.f$f */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0306f extends au.a {
-
-        /* renamed from: e */
-        final /* synthetic */ f f22780e;
-
-        /* renamed from: f */
-        final /* synthetic */ int f22781f;
-
-        /* renamed from: g */
-        final /* synthetic */ List f22782g;
-
-        /* renamed from: h */
-        final /* synthetic */ boolean f22783h;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public C0306f(String str, boolean z10, f fVar, int i10, List list, boolean z11) {
-            super(str, z10);
-            this.f22780e = fVar;
-            this.f22781f = i10;
-            this.f22782g = list;
-            this.f22783h = z11;
-        }
-
-        @Override // au.a
-        public long f() {
-            boolean c10 = this.f22780e.f22748w.c(this.f22781f, this.f22782g, this.f22783h);
-            if (c10) {
-                try {
-                    this.f22780e.W1().V(this.f22781f, eu.b.CANCEL);
-                } catch (IOException unused) {
-                    return -1L;
-                }
-            }
-            if (c10 || this.f22783h) {
-                synchronized (this.f22780e) {
-                    this.f22780e.M.remove(Integer.valueOf(this.f22781f));
-                }
-                return -1L;
-            }
-            return -1L;
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class g extends au.a {
-
-        /* renamed from: e */
-        final /* synthetic */ f f22784e;
-
-        /* renamed from: f */
-        final /* synthetic */ int f22785f;
-
-        /* renamed from: g */
-        final /* synthetic */ List f22786g;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public g(String str, boolean z10, f fVar, int i10, List list) {
-            super(str, z10);
-            this.f22784e = fVar;
-            this.f22785f = i10;
-            this.f22786g = list;
-        }
-
-        @Override // au.a
-        public long f() {
-            if (this.f22784e.f22748w.b(this.f22785f, this.f22786g)) {
-                try {
-                    this.f22784e.W1().V(this.f22785f, eu.b.CANCEL);
-                    synchronized (this.f22784e) {
-                        this.f22784e.M.remove(Integer.valueOf(this.f22785f));
-                    }
-                    return -1L;
-                } catch (IOException unused) {
-                    return -1L;
-                }
-            }
-            return -1L;
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class h extends au.a {
-
-        /* renamed from: e */
-        final /* synthetic */ f f22787e;
-
-        /* renamed from: f */
-        final /* synthetic */ int f22788f;
-
-        /* renamed from: g */
-        final /* synthetic */ eu.b f22789g;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public h(String str, boolean z10, f fVar, int i10, eu.b bVar) {
-            super(str, z10);
-            this.f22787e = fVar;
-            this.f22788f = i10;
-            this.f22789g = bVar;
-        }
-
-        @Override // au.a
-        public long f() {
-            this.f22787e.f22748w.a(this.f22788f, this.f22789g);
-            synchronized (this.f22787e) {
-                this.f22787e.M.remove(Integer.valueOf(this.f22788f));
-                Unit unit = Unit.f32464a;
-            }
-            return -1L;
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class i extends au.a {
-
-        /* renamed from: e */
-        final /* synthetic */ f f22790e;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public i(String str, boolean z10, f fVar) {
-            super(str, z10);
-            this.f22790e = fVar;
-        }
-
-        @Override // au.a
-        public long f() {
-            this.f22790e.z2(false, 2, 0);
-            return -1L;
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class j extends au.a {
-
-        /* renamed from: e */
-        final /* synthetic */ f f22791e;
-
-        /* renamed from: f */
-        final /* synthetic */ long f22792f;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public j(String str, f fVar, long j10) {
-            super(str, false, 2, null);
-            this.f22791e = fVar;
-            this.f22792f = j10;
-        }
-
-        @Override // au.a
-        public long f() {
-            boolean z10;
-            synchronized (this.f22791e) {
-                if (this.f22791e.f22750y >= this.f22791e.f22749x) {
-                    this.f22791e.f22749x++;
-                    z10 = false;
-                } else {
-                    z10 = true;
-                }
-            }
-            if (z10) {
-                this.f22791e.R0(null);
-                return -1L;
-            }
-            this.f22791e.z2(false, 1, 0);
-            return this.f22792f;
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class k extends au.a {
-
-        /* renamed from: e */
-        final /* synthetic */ f f22793e;
-
-        /* renamed from: f */
-        final /* synthetic */ int f22794f;
-
-        /* renamed from: g */
-        final /* synthetic */ eu.b f22795g;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public k(String str, boolean z10, f fVar, int i10, eu.b bVar) {
-            super(str, z10);
-            this.f22793e = fVar;
-            this.f22794f = i10;
-            this.f22795g = bVar;
-        }
-
-        @Override // au.a
-        public long f() {
             try {
-                this.f22793e.A2(this.f22794f, this.f22795g);
-                return -1L;
-            } catch (IOException e10) {
-                this.f22793e.R0(e10);
-                return -1L;
+                iArr[Proxy.Type.HTTP.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
             }
+            f21867a = iArr;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class c extends Lambda implements Function0 {
+
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ zt.c f21868d;
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ okhttp3.g f21869e;
+
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ okhttp3.a f21870i;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        c(zt.c cVar, okhttp3.g gVar, okhttp3.a aVar) {
+            super(0);
+            this.f21868d = cVar;
+            this.f21869e = gVar;
+            this.f21870i = aVar;
+        }
+
+        @Override // kotlin.jvm.functions.Function0
+        public final List invoke() {
+            mu.c d10 = this.f21868d.d();
+            Intrinsics.checkNotNull(d10);
+            return d10.a(this.f21869e.d(), this.f21870i.l().i());
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class d extends Lambda implements Function0 {
+        d() {
+            super(0);
+        }
+
+        @Override // kotlin.jvm.functions.Function0
+        public final List invoke() {
+            okhttp3.g gVar = f.this.f21854g;
+            Intrinsics.checkNotNull(gVar);
+            List<Certificate> d10 = gVar.d();
+            ArrayList arrayList = new ArrayList(CollectionsKt.w(d10, 10));
+            for (Certificate certificate : d10) {
+                Intrinsics.checkNotNull(certificate, "null cannot be cast to non-null type java.security.cert.X509Certificate");
+                arrayList.add((X509Certificate) certificate);
+            }
+            return arrayList;
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class l extends au.a {
+    public static final class e extends d.AbstractC0543d {
 
-        /* renamed from: e */
-        final /* synthetic */ f f22796e;
-
-        /* renamed from: f */
-        final /* synthetic */ int f22797f;
-
-        /* renamed from: g */
-        final /* synthetic */ long f22798g;
+        /* renamed from: o  reason: collision with root package name */
+        final /* synthetic */ eu.c f21872o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public l(String str, boolean z10, f fVar, int i10, long j10) {
-            super(str, z10);
-            this.f22796e = fVar;
-            this.f22797f = i10;
-            this.f22798g = j10;
+        e(BufferedSource bufferedSource, BufferedSink bufferedSink, eu.c cVar) {
+            super(true, bufferedSource, bufferedSink);
+            this.f21872o = cVar;
         }
 
-        @Override // au.a
-        public long f() {
-            try {
-                this.f22796e.W1().C0(this.f22797f, this.f22798g);
-                return -1L;
-            } catch (IOException e10) {
-                this.f22796e.R0(e10);
-                return -1L;
+        @Override // java.io.Closeable, java.lang.AutoCloseable
+        public void close() {
+            this.f21872o.a(-1L, true, true, null);
+        }
+    }
+
+    public f(g connectionPool, k route) {
+        Intrinsics.checkNotNullParameter(connectionPool, "connectionPool");
+        Intrinsics.checkNotNullParameter(route, "route");
+        this.f21850c = connectionPool;
+        this.f21851d = route;
+        this.f21864q = 1;
+        this.f21865r = new ArrayList();
+        this.f21866s = LongCompanionObject.MAX_VALUE;
+    }
+
+    private final boolean B(List list) {
+        List<k> list2 = list;
+        if ((list2 instanceof Collection) && list2.isEmpty()) {
+            return false;
+        }
+        for (k kVar : list2) {
+            Proxy.Type type = kVar.b().type();
+            Proxy.Type type2 = Proxy.Type.DIRECT;
+            if (type == type2 && this.f21851d.b().type() == type2 && Intrinsics.areEqual(this.f21851d.d(), kVar.d())) {
+                return true;
             }
         }
+        return false;
     }
 
-    static {
-        m mVar = new m();
-        mVar.h(7, 65535);
-        mVar.h(5, 16384);
-        O = mVar;
+    private final void F(int i10) {
+        Socket socket = this.f21853f;
+        Intrinsics.checkNotNull(socket);
+        BufferedSource bufferedSource = this.f21857j;
+        Intrinsics.checkNotNull(bufferedSource);
+        BufferedSink bufferedSink = this.f21858k;
+        Intrinsics.checkNotNull(bufferedSink);
+        socket.setSoTimeout(0);
+        hu.f a10 = new f.a(true, du.e.f21258i).q(socket, this.f21851d.a().l().i(), bufferedSource, bufferedSink).k(this).l(i10).a();
+        this.f21856i = a10;
+        this.f21864q = hu.f.N.a().d();
+        hu.f.v2(a10, false, null, 3, null);
     }
 
-    public f(a builder) {
-        int i10;
-        Intrinsics.checkNotNullParameter(builder, "builder");
-        boolean b10 = builder.b();
-        this.f22737d = b10;
-        this.f22738e = builder.d();
-        this.f22739i = new LinkedHashMap();
-        String c10 = builder.c();
-        this.f22740o = c10;
-        if (builder.b()) {
-            i10 = 3;
+    private final boolean G(HttpUrl httpUrl) {
+        okhttp3.g gVar;
+        if (au.e.f6000h && !Thread.holdsLock(this)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
+        }
+        HttpUrl l10 = this.f21851d.a().l();
+        if (httpUrl.o() != l10.o()) {
+            return false;
+        }
+        if (Intrinsics.areEqual(httpUrl.i(), l10.i())) {
+            return true;
+        }
+        if (!this.f21860m && (gVar = this.f21854g) != null) {
+            Intrinsics.checkNotNull(gVar);
+            if (e(httpUrl, gVar)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private final boolean e(HttpUrl httpUrl, okhttp3.g gVar) {
+        List d10 = gVar.d();
+        if (!d10.isEmpty()) {
+            mu.d dVar = mu.d.f38971a;
+            String i10 = httpUrl.i();
+            Object obj = d10.get(0);
+            Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.security.cert.X509Certificate");
+            if (dVar.e(i10, (X509Certificate) obj)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private final void h(int i10, int i11, Call call, okhttp3.e eVar) {
+        int i12;
+        Socket createSocket;
+        Proxy b10 = this.f21851d.b();
+        okhttp3.a a10 = this.f21851d.a();
+        Proxy.Type type = b10.type();
+        if (type == null) {
+            i12 = -1;
         } else {
-            i10 = 2;
+            i12 = b.f21867a[type.ordinal()];
         }
-        this.f22742q = i10;
-        au.e j10 = builder.j();
-        this.f22744s = j10;
-        au.d i11 = j10.i();
-        this.f22745t = i11;
-        this.f22746u = j10.i();
-        this.f22747v = j10.i();
-        this.f22748w = builder.f();
-        m mVar = new m();
-        if (builder.b()) {
-            mVar.h(7, PointerEventHelper.X_FLAG_SUPPORTS_HOVER);
+        if (i12 != 1 && i12 != 2) {
+            createSocket = new Socket(b10);
+        } else {
+            createSocket = a10.j().createSocket();
+            Intrinsics.checkNotNull(createSocket);
         }
-        this.D = mVar;
-        m mVar2 = O;
-        this.E = mVar2;
-        this.I = mVar2.c();
-        this.J = builder.h();
-        this.K = new eu.j(builder.g(), b10);
-        this.L = new d(this, new eu.h(builder.i(), b10));
-        this.M = new LinkedHashSet();
-        if (builder.e() != 0) {
-            long nanos = TimeUnit.MILLISECONDS.toNanos(builder.e());
-            i11.i(new j(c10 + " ping", this, nanos), nanos);
+        this.f21852e = createSocket;
+        eVar.j(call, this.f21851d.d(), b10);
+        createSocket.setSoTimeout(i11);
+        try {
+            ju.h.f31441a.g().f(createSocket, this.f21851d.d(), i10);
+            try {
+                this.f21857j = x.d(x.l(createSocket));
+                this.f21858k = x.c(x.h(createSocket));
+            } catch (NullPointerException e10) {
+                if (!Intrinsics.areEqual(e10.getMessage(), "throw with null exception")) {
+                    return;
+                }
+                throw new IOException(e10);
+            }
+        } catch (ConnectException e11) {
+            ConnectException connectException = new ConnectException("Failed to connect to " + this.f21851d.d());
+            connectException.initCause(e11);
+            throw connectException;
         }
     }
 
-    public final void R0(IOException iOException) {
-        eu.b bVar = eu.b.PROTOCOL_ERROR;
-        M0(bVar, bVar, iOException);
+    private final void i(eu.b bVar) {
+        SSLSocket sSLSocket;
+        zt.j jVar;
+        okhttp3.a a10 = this.f21851d.a();
+        SSLSocketFactory k10 = a10.k();
+        SSLSocket sSLSocket2 = null;
+        String str = null;
+        try {
+            Intrinsics.checkNotNull(k10);
+            Socket createSocket = k10.createSocket(this.f21852e, a10.l().i(), a10.l().o(), true);
+            Intrinsics.checkNotNull(createSocket, "null cannot be cast to non-null type javax.net.ssl.SSLSocket");
+            sSLSocket = (SSLSocket) createSocket;
+        } catch (Throwable th2) {
+            th = th2;
+        }
+        try {
+            okhttp3.d a11 = bVar.a(sSLSocket);
+            if (a11.h()) {
+                ju.h.f31441a.g().e(sSLSocket, a10.l().i(), a10.f());
+            }
+            sSLSocket.startHandshake();
+            SSLSession sslSocketSession = sSLSocket.getSession();
+            g.a aVar = okhttp3.g.f44025e;
+            Intrinsics.checkNotNullExpressionValue(sslSocketSession, "sslSocketSession");
+            okhttp3.g a12 = aVar.a(sslSocketSession);
+            HostnameVerifier e10 = a10.e();
+            Intrinsics.checkNotNull(e10);
+            if (!e10.verify(a10.l().i(), sslSocketSession)) {
+                List d10 = a12.d();
+                if (!d10.isEmpty()) {
+                    Object obj = d10.get(0);
+                    Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.security.cert.X509Certificate");
+                    X509Certificate x509Certificate = (X509Certificate) obj;
+                    throw new SSLPeerUnverifiedException(StringsKt.l("\n              |Hostname " + a10.l().i() + " not verified:\n              |    certificate: " + zt.c.f56275c.a(x509Certificate) + "\n              |    DN: " + x509Certificate.getSubjectDN().getName() + "\n              |    subjectAltNames: " + mu.d.f38971a.a(x509Certificate) + "\n              ", null, 1, null));
+                }
+                throw new SSLPeerUnverifiedException("Hostname " + a10.l().i() + " not verified (no certificates)");
+            }
+            zt.c a13 = a10.a();
+            Intrinsics.checkNotNull(a13);
+            this.f21854g = new okhttp3.g(a12.e(), a12.a(), a12.c(), new c(a13, a12, a10));
+            a13.b(a10.l().i(), new d());
+            if (a11.h()) {
+                str = ju.h.f31441a.g().h(sSLSocket);
+            }
+            this.f21853f = sSLSocket;
+            this.f21857j = x.d(x.l(sSLSocket));
+            this.f21858k = x.c(x.h(sSLSocket));
+            if (str != null) {
+                jVar = zt.j.f56291e.a(str);
+            } else {
+                jVar = zt.j.HTTP_1_1;
+            }
+            this.f21855h = jVar;
+            ju.h.f31441a.g().b(sSLSocket);
+        } catch (Throwable th3) {
+            th = th3;
+            sSLSocket2 = sSLSocket;
+            if (sSLSocket2 != null) {
+                ju.h.f31441a.g().b(sSLSocket2);
+            }
+            if (sSLSocket2 != null) {
+                au.e.n(sSLSocket2);
+            }
+            throw th;
+        }
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:104:0x0070  */
-    /* JADX WARN: Removed duplicated region for block: B:92:0x004d A[Catch: all -> 0x0043, TryCatch #1 {all -> 0x0043, blocks: (B:79:0x0027, B:81:0x002c, B:83:0x0034, B:90:0x0047, B:92:0x004d, B:93:0x0056, B:111:0x0082, B:112:0x0087), top: B:120:0x001a }] */
-    /* JADX WARN: Removed duplicated region for block: B:96:0x005b A[Catch: all -> 0x0061, TryCatch #0 {all -> 0x0061, blocks: (B:94:0x0058, B:96:0x005b, B:99:0x0064, B:101:0x0068, B:106:0x0076, B:107:0x007d, B:113:0x0088, B:114:0x0089), top: B:119:0x0005 }] */
-    /* JADX WARN: Removed duplicated region for block: B:99:0x0064 A[Catch: all -> 0x0061, TryCatch #0 {all -> 0x0061, blocks: (B:94:0x0058, B:96:0x005b, B:99:0x0064, B:101:0x0068, B:106:0x0076, B:107:0x007d, B:113:0x0088, B:114:0x0089), top: B:119:0x0005 }] */
+    private final void j(int i10, int i11, int i12, Call call, okhttp3.e eVar) {
+        Request l10 = l();
+        HttpUrl n10 = l10.n();
+        for (int i13 = 0; i13 < 21; i13++) {
+            h(i10, i11, call, eVar);
+            l10 = k(i11, i12, l10, n10);
+            if (l10 != null) {
+                Socket socket = this.f21852e;
+                if (socket != null) {
+                    au.e.n(socket);
+                }
+                this.f21852e = null;
+                this.f21858k = null;
+                this.f21857j = null;
+                eVar.h(call, this.f21851d.d(), this.f21851d.b(), null);
+            } else {
+                return;
+            }
+        }
+    }
+
+    private final Request k(int i10, int i11, Request request, HttpUrl httpUrl) {
+        String str = "CONNECT " + au.e.T(httpUrl, true) + " HTTP/1.1";
+        while (true) {
+            BufferedSource bufferedSource = this.f21857j;
+            Intrinsics.checkNotNull(bufferedSource);
+            BufferedSink bufferedSink = this.f21858k;
+            Intrinsics.checkNotNull(bufferedSink);
+            gu.b bVar = new gu.b(null, this, bufferedSource, bufferedSink);
+            TimeUnit timeUnit = TimeUnit.MILLISECONDS;
+            bufferedSource.timeout().g(i10, timeUnit);
+            bufferedSink.timeout().g(i11, timeUnit);
+            bVar.A(request.h(), str);
+            bVar.a();
+            Response.a g10 = bVar.g(false);
+            Intrinsics.checkNotNull(g10);
+            Response c10 = g10.r(request).c();
+            bVar.z(c10);
+            int L = c10.L();
+            if (L != 200) {
+                if (L == 407) {
+                    Request a10 = this.f21851d.a().h().a(this.f21851d, c10);
+                    if (a10 != null) {
+                        if (StringsKt.A("close", Response.D0(c10, "Connection", null, 2, null), true)) {
+                            return a10;
+                        }
+                        request = a10;
+                    } else {
+                        throw new IOException("Failed to authenticate with proxy");
+                    }
+                } else {
+                    throw new IOException("Unexpected response code for CONNECT: " + c10.L());
+                }
+            } else if (bufferedSource.f().o1() && bufferedSink.f().o1()) {
+                return null;
+            } else {
+                throw new IOException("TLS tunnel buffered too many bytes!");
+            }
+        }
+    }
+
+    private final Request l() {
+        Request b10 = new Request.Builder().m(this.f21851d.a().l()).g("CONNECT", null).e("Host", au.e.T(this.f21851d.a().l(), true)).e("Proxy-Connection", "Keep-Alive").e("User-Agent", "okhttp/4.12.0").b();
+        Request a10 = this.f21851d.a().h().a(this.f21851d, new Response.a().r(b10).p(zt.j.HTTP_1_1).g(407).m("Preemptive Authenticate").b(au.e.f5995c).s(-1L).q(-1L).j("Proxy-Authenticate", "OkHttp-Preemptive").c());
+        if (a10 == null) {
+            return b10;
+        }
+        return a10;
+    }
+
+    private final void m(eu.b bVar, int i10, Call call, okhttp3.e eVar) {
+        if (this.f21851d.a().k() == null) {
+            List f10 = this.f21851d.a().f();
+            zt.j jVar = zt.j.H2_PRIOR_KNOWLEDGE;
+            if (f10.contains(jVar)) {
+                this.f21853f = this.f21852e;
+                this.f21855h = jVar;
+                F(i10);
+                return;
+            }
+            this.f21853f = this.f21852e;
+            this.f21855h = zt.j.HTTP_1_1;
+            return;
+        }
+        eVar.C(call);
+        i(bVar);
+        eVar.B(call, this.f21854g);
+        if (this.f21855h == zt.j.HTTP_2) {
+            F(i10);
+        }
+    }
+
+    public k A() {
+        return this.f21851d;
+    }
+
+    public final void C(long j10) {
+        this.f21866s = j10;
+    }
+
+    public final void D(boolean z10) {
+        this.f21859l = z10;
+    }
+
+    public Socket E() {
+        Socket socket = this.f21853f;
+        Intrinsics.checkNotNull(socket);
+        return socket;
+    }
+
+    public final synchronized void H(eu.e call, IOException iOException) {
+        try {
+            Intrinsics.checkNotNullParameter(call, "call");
+            if (iOException instanceof n) {
+                if (((n) iOException).f27181d == hu.b.REFUSED_STREAM) {
+                    int i10 = this.f21863p + 1;
+                    this.f21863p = i10;
+                    if (i10 > 1) {
+                        this.f21859l = true;
+                        this.f21861n++;
+                    }
+                } else if (((n) iOException).f27181d != hu.b.CANCEL || !call.y()) {
+                    this.f21859l = true;
+                    this.f21861n++;
+                }
+            } else if (!v() || (iOException instanceof hu.a)) {
+                this.f21859l = true;
+                if (this.f21862o == 0) {
+                    if (iOException != null) {
+                        g(call.k(), this.f21851d, iOException);
+                    }
+                    this.f21861n++;
+                }
+            }
+        } catch (Throwable th2) {
+            throw th2;
+        }
+    }
+
+    @Override // hu.f.c
+    public synchronized void a(hu.f connection, m settings) {
+        Intrinsics.checkNotNullParameter(connection, "connection");
+        Intrinsics.checkNotNullParameter(settings, "settings");
+        this.f21864q = settings.d();
+    }
+
+    @Override // hu.f.c
+    public void b(hu.i stream) {
+        Intrinsics.checkNotNullParameter(stream, "stream");
+        stream.d(hu.b.REFUSED_STREAM, null);
+    }
+
+    public final void d() {
+        Socket socket = this.f21852e;
+        if (socket != null) {
+            au.e.n(socket);
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:50:0x00fb  */
+    /* JADX WARN: Removed duplicated region for block: B:53:0x0102  */
+    /* JADX WARN: Removed duplicated region for block: B:56:0x0128  */
+    /* JADX WARN: Removed duplicated region for block: B:57:0x012e  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    private final eu.i b2(int r10, java.util.List r11, boolean r12) {
+    public final void f(int r13, int r14, int r15, int r16, boolean r17, okhttp3.Call r18, okhttp3.e r19) {
         /*
-            r9 = this;
-            r3 = r12 ^ 1
-            eu.j r6 = r9.K
-            monitor-enter(r6)
-            monitor-enter(r9)     // Catch: java.lang.Throwable -> L8a
-            int r0 = r9.f22742q     // Catch: java.lang.Throwable -> L7e
-            r1 = 1073741823(0x3fffffff, float:1.9999999)
-            if (r0 <= r1) goto L18
-            eu.b r0 = eu.b.REFUSED_STREAM     // Catch: java.lang.Throwable -> L13
-            r9.t2(r0)     // Catch: java.lang.Throwable -> L13
-            goto L18
-        L13:
-            r0 = move-exception
-            r10 = r0
-            r2 = r9
-            goto L88
-        L18:
-            boolean r0 = r9.f22743r     // Catch: java.lang.Throwable -> L7e
-            if (r0 != 0) goto L81
-            int r1 = r9.f22742q     // Catch: java.lang.Throwable -> L7e
-            int r0 = r1 + 2
-            r9.f22742q = r0     // Catch: java.lang.Throwable -> L7e
-            eu.i r0 = new eu.i     // Catch: java.lang.Throwable -> L7e
-            r5 = 0
-            r4 = 0
-            r2 = r9
-            r0.<init>(r1, r2, r3, r4, r5)     // Catch: java.lang.Throwable -> L43
-            if (r12 == 0) goto L46
-            long r4 = r2.H     // Catch: java.lang.Throwable -> L43
-            long r7 = r2.I     // Catch: java.lang.Throwable -> L43
-            int r12 = (r4 > r7 ? 1 : (r4 == r7 ? 0 : -1))
-            if (r12 >= 0) goto L46
-            long r4 = r0.r()     // Catch: java.lang.Throwable -> L43
-            long r7 = r0.q()     // Catch: java.lang.Throwable -> L43
-            int r12 = (r4 > r7 ? 1 : (r4 == r7 ? 0 : -1))
-            if (r12 < 0) goto L41
-            goto L46
-        L41:
-            r12 = 0
-            goto L47
-        L43:
-            r0 = move-exception
-        L44:
-            r10 = r0
-            goto L88
-        L46:
-            r12 = 1
-        L47:
-            boolean r4 = r0.u()     // Catch: java.lang.Throwable -> L43
-            if (r4 == 0) goto L56
-            java.util.Map r4 = r2.f22739i     // Catch: java.lang.Throwable -> L43
-            java.lang.Integer r5 = java.lang.Integer.valueOf(r1)     // Catch: java.lang.Throwable -> L43
-            r4.put(r5, r0)     // Catch: java.lang.Throwable -> L43
-        L56:
-            kotlin.Unit r4 = kotlin.Unit.f32464a     // Catch: java.lang.Throwable -> L43
-            monitor-exit(r9)     // Catch: java.lang.Throwable -> L61
-            if (r10 != 0) goto L64
-            eu.j r10 = r2.K     // Catch: java.lang.Throwable -> L61
-            r10.E(r3, r1, r11)     // Catch: java.lang.Throwable -> L61
-            goto L6d
-        L61:
-            r0 = move-exception
-        L62:
-            r10 = r0
-            goto L8d
-        L64:
-            boolean r3 = r2.f22737d     // Catch: java.lang.Throwable -> L61
-            if (r3 != 0) goto L76
-            eu.j r3 = r2.K     // Catch: java.lang.Throwable -> L61
-            r3.N(r10, r1, r11)     // Catch: java.lang.Throwable -> L61
-        L6d:
-            monitor-exit(r6)
-            if (r12 == 0) goto L75
-            eu.j r10 = r2.K
-            r10.flush()
-        L75:
-            return r0
-        L76:
-            java.lang.String r10 = "client streams shouldn't have associated stream IDs"
-            java.lang.IllegalArgumentException r11 = new java.lang.IllegalArgumentException     // Catch: java.lang.Throwable -> L61
-            r11.<init>(r10)     // Catch: java.lang.Throwable -> L61
-            throw r11     // Catch: java.lang.Throwable -> L61
-        L7e:
-            r0 = move-exception
-            r2 = r9
-            goto L44
-        L81:
-            r2 = r9
-            eu.a r10 = new eu.a     // Catch: java.lang.Throwable -> L43
-            r10.<init>()     // Catch: java.lang.Throwable -> L43
-            throw r10     // Catch: java.lang.Throwable -> L43
-        L88:
-            monitor-exit(r9)     // Catch: java.lang.Throwable -> L61
-            throw r10     // Catch: java.lang.Throwable -> L61
-        L8a:
-            r0 = move-exception
-            r2 = r9
-            goto L62
-        L8d:
-            monitor-exit(r6)
-            throw r10
+            Method dump skipped, instructions count: 341
+            To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: eu.f.b2(int, java.util.List, boolean):eu.i");
+        throw new UnsupportedOperationException("Method not decompiled: eu.f.f(int, int, int, int, boolean, okhttp3.Call, okhttp3.e):void");
     }
 
-    public static /* synthetic */ void v2(f fVar, boolean z10, au.e eVar, int i10, Object obj) {
-        if ((i10 & 1) != 0) {
-            z10 = true;
+    public final void g(OkHttpClient client, k failedRoute, IOException failure) {
+        Intrinsics.checkNotNullParameter(client, "client");
+        Intrinsics.checkNotNullParameter(failedRoute, "failedRoute");
+        Intrinsics.checkNotNullParameter(failure, "failure");
+        if (failedRoute.b().type() != Proxy.Type.DIRECT) {
+            okhttp3.a a10 = failedRoute.a();
+            a10.i().connectFailed(a10.l().t(), failedRoute.b().address(), failure);
         }
-        if ((i10 & 2) != 0) {
-            eVar = au.e.f6153i;
-        }
-        fVar.u2(z10, eVar);
+        client.x().b(failedRoute);
     }
 
-    public final m A1() {
-        return this.E;
+    public final List n() {
+        return this.f21865r;
     }
 
-    public final void A2(int i10, eu.b statusCode) {
-        Intrinsics.checkNotNullParameter(statusCode, "statusCode");
-        this.K.V(i10, statusCode);
+    public final long o() {
+        return this.f21866s;
     }
 
-    public final synchronized eu.i B1(int i10) {
-        return (eu.i) this.f22739i.get(Integer.valueOf(i10));
+    public final boolean p() {
+        return this.f21859l;
     }
 
-    public final void B2(int i10, eu.b errorCode) {
-        Intrinsics.checkNotNullParameter(errorCode, "errorCode");
-        au.d dVar = this.f22745t;
-        dVar.i(new k(this.f22740o + '[' + i10 + "] writeSynReset", true, this, i10, errorCode), 0L);
+    public final int q() {
+        return this.f21861n;
     }
 
-    public final void C2(int i10, long j10) {
-        au.d dVar = this.f22745t;
-        dVar.i(new l(this.f22740o + '[' + i10 + "] windowUpdate", true, this, i10, j10), 0L);
+    public okhttp3.g r() {
+        return this.f21854g;
     }
 
-    public final Map E1() {
-        return this.f22739i;
+    public final synchronized void s() {
+        this.f21862o++;
     }
 
-    public final void M0(eu.b connectionCode, eu.b streamCode, IOException iOException) {
-        int i10;
-        Object[] objArr;
-        Intrinsics.checkNotNullParameter(connectionCode, "connectionCode");
-        Intrinsics.checkNotNullParameter(streamCode, "streamCode");
-        if (xt.e.f53571h && Thread.holdsLock(this)) {
-            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
-        }
-        try {
-            t2(connectionCode);
-        } catch (IOException unused) {
-        }
-        synchronized (this) {
-            try {
-                if (!this.f22739i.isEmpty()) {
-                    objArr = this.f22739i.values().toArray(new eu.i[0]);
-                    this.f22739i.clear();
-                } else {
-                    objArr = null;
-                }
-                Unit unit = Unit.f32464a;
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
-        eu.i[] iVarArr = (eu.i[]) objArr;
-        if (iVarArr != null) {
-            for (eu.i iVar : iVarArr) {
-                try {
-                    iVar.d(streamCode, iOException);
-                } catch (IOException unused2) {
-                }
-            }
-        }
-        try {
-            this.K.close();
-        } catch (IOException unused3) {
-        }
-        try {
-            this.J.close();
-        } catch (IOException unused4) {
-        }
-        this.f22745t.n();
-        this.f22746u.n();
-        this.f22747v.n();
-    }
-
-    public final long U1() {
-        return this.I;
-    }
-
-    public final boolean V0() {
-        return this.f22737d;
-    }
-
-    public final eu.j W1() {
-        return this.K;
-    }
-
-    public final String Y0() {
-        return this.f22740o;
-    }
-
-    public final synchronized boolean Y1(long j10) {
-        if (this.f22743r) {
+    public final boolean t(okhttp3.a address, List list) {
+        Intrinsics.checkNotNullParameter(address, "address");
+        if (au.e.f6000h && !Thread.holdsLock(this)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
+        } else if (this.f21865r.size() >= this.f21864q || this.f21859l || !this.f21851d.a().d(address)) {
             return false;
-        }
-        if (this.A < this.f22751z) {
-            if (j10 >= this.C) {
+        } else {
+            if (Intrinsics.areEqual(address.l().i(), A().a().l().i())) {
+                return true;
+            }
+            if (this.f21856i == null || list == null || !B(list) || address.e() != mu.d.f38971a || !G(address.l())) {
+                return false;
+            }
+            try {
+                zt.c a10 = address.a();
+                Intrinsics.checkNotNull(a10);
+                String i10 = address.l().i();
+                okhttp3.g r10 = r();
+                Intrinsics.checkNotNull(r10);
+                a10.a(i10, r10.d());
+                return true;
+            } catch (SSLPeerUnverifiedException unused) {
                 return false;
             }
         }
-        return true;
     }
 
-    public final int Z0() {
-        return this.f22741p;
-    }
-
-    public final eu.i c2(List requestHeaders, boolean z10) {
-        Intrinsics.checkNotNullParameter(requestHeaders, "requestHeaders");
-        return b2(0, requestHeaders, z10);
-    }
-
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        M0(eu.b.NO_ERROR, eu.b.CANCEL, null);
-    }
-
-    public final c e1() {
-        return this.f22738e;
-    }
-
-    public final void f2(int i10, BufferedSource source, int i11, boolean z10) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        Buffer buffer = new Buffer();
-        long j10 = i11;
-        source.T0(j10);
-        source.read(buffer, j10);
-        this.f22746u.i(new e(this.f22740o + '[' + i10 + "] onData", true, this, i10, buffer, i11, z10), 0L);
-    }
-
-    public final void flush() {
-        this.K.flush();
-    }
-
-    public final void h2(int i10, List requestHeaders, boolean z10) {
-        Intrinsics.checkNotNullParameter(requestHeaders, "requestHeaders");
-        au.d dVar = this.f22746u;
-        dVar.i(new C0306f(this.f22740o + '[' + i10 + "] onHeaders", true, this, i10, requestHeaders, z10), 0L);
-    }
-
-    public final void i2(int i10, List requestHeaders) {
-        Throwable th2;
-        Intrinsics.checkNotNullParameter(requestHeaders, "requestHeaders");
-        synchronized (this) {
-            try {
-                if (this.M.contains(Integer.valueOf(i10))) {
-                    try {
-                        B2(i10, eu.b.PROTOCOL_ERROR);
-                        return;
-                    } catch (Throwable th3) {
-                        th2 = th3;
-                        throw th2;
-                    }
-                }
-                this.M.add(Integer.valueOf(i10));
-                au.d dVar = this.f22746u;
-                dVar.i(new g(this.f22740o + '[' + i10 + "] onRequest", true, this, i10, requestHeaders), 0L);
-            } catch (Throwable th4) {
-                th2 = th4;
-            }
+    public String toString() {
+        Object obj;
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("Connection{");
+        sb2.append(this.f21851d.a().l().i());
+        sb2.append(':');
+        sb2.append(this.f21851d.a().l().o());
+        sb2.append(", proxy=");
+        sb2.append(this.f21851d.b());
+        sb2.append(" hostAddress=");
+        sb2.append(this.f21851d.d());
+        sb2.append(" cipherSuite=");
+        okhttp3.g gVar = this.f21854g;
+        if (gVar == null || (obj = gVar.a()) == null) {
+            obj = ViewProps.NONE;
         }
+        sb2.append(obj);
+        sb2.append(" protocol=");
+        sb2.append(this.f21855h);
+        sb2.append('}');
+        return sb2.toString();
     }
 
-    public final void j2(int i10, eu.b errorCode) {
-        Intrinsics.checkNotNullParameter(errorCode, "errorCode");
-        au.d dVar = this.f22746u;
-        dVar.i(new h(this.f22740o + '[' + i10 + "] onReset", true, this, i10, errorCode), 0L);
-    }
-
-    public final boolean o2(int i10) {
-        if (i10 != 0 && (i10 & 1) == 0) {
+    public final boolean u(boolean z10) {
+        long j10;
+        if (au.e.f6000h && Thread.holdsLock(this)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
+        }
+        long nanoTime = System.nanoTime();
+        Socket socket = this.f21852e;
+        Intrinsics.checkNotNull(socket);
+        Socket socket2 = this.f21853f;
+        Intrinsics.checkNotNull(socket2);
+        BufferedSource bufferedSource = this.f21857j;
+        Intrinsics.checkNotNull(bufferedSource);
+        if (!socket.isClosed() && !socket2.isClosed() && !socket2.isInputShutdown() && !socket2.isOutputShutdown()) {
+            hu.f fVar = this.f21856i;
+            if (fVar != null) {
+                return fVar.Y1(nanoTime);
+            }
+            synchronized (this) {
+                j10 = nanoTime - this.f21866s;
+            }
+            if (j10 >= 10000000000L && z10) {
+                return au.e.G(socket2, bufferedSource);
+            }
             return true;
         }
         return false;
     }
 
-    public final synchronized eu.i p2(int i10) {
-        eu.i iVar;
-        iVar = (eu.i) this.f22739i.remove(Integer.valueOf(i10));
-        Intrinsics.checkNotNull(this, "null cannot be cast to non-null type java.lang.Object");
-        notifyAll();
-        return iVar;
+    public final boolean v() {
+        if (this.f21856i != null) {
+            return true;
+        }
+        return false;
     }
 
-    public final void q2() {
-        synchronized (this) {
-            long j10 = this.A;
-            long j11 = this.f22751z;
-            if (j10 < j11) {
-                return;
-            }
-            this.f22751z = j11 + 1;
-            this.C = System.nanoTime() + 1000000000;
-            Unit unit = Unit.f32464a;
-            au.d dVar = this.f22745t;
-            dVar.i(new i(this.f22740o + " ping", true, this), 0L);
+    public final fu.d w(OkHttpClient client, fu.g chain) {
+        Intrinsics.checkNotNullParameter(client, "client");
+        Intrinsics.checkNotNullParameter(chain, "chain");
+        Socket socket = this.f21853f;
+        Intrinsics.checkNotNull(socket);
+        BufferedSource bufferedSource = this.f21857j;
+        Intrinsics.checkNotNull(bufferedSource);
+        BufferedSink bufferedSink = this.f21858k;
+        Intrinsics.checkNotNull(bufferedSink);
+        hu.f fVar = this.f21856i;
+        if (fVar != null) {
+            return new hu.g(client, this, chain, fVar);
         }
+        socket.setSoTimeout(chain.k());
+        TimeUnit timeUnit = TimeUnit.MILLISECONDS;
+        bufferedSource.timeout().g(chain.g(), timeUnit);
+        bufferedSink.timeout().g(chain.j(), timeUnit);
+        return new gu.b(client, this, bufferedSource, bufferedSink);
     }
 
-    public final void r2(int i10) {
-        this.f22741p = i10;
+    public final d.AbstractC0543d x(eu.c exchange) {
+        Intrinsics.checkNotNullParameter(exchange, "exchange");
+        Socket socket = this.f21853f;
+        Intrinsics.checkNotNull(socket);
+        BufferedSource bufferedSource = this.f21857j;
+        Intrinsics.checkNotNull(bufferedSource);
+        BufferedSink bufferedSink = this.f21858k;
+        Intrinsics.checkNotNull(bufferedSink);
+        socket.setSoTimeout(0);
+        z();
+        return new e(bufferedSource, bufferedSink, exchange);
     }
 
-    public final void s2(m mVar) {
-        Intrinsics.checkNotNullParameter(mVar, "<set-?>");
-        this.E = mVar;
+    public final synchronized void y() {
+        this.f21860m = true;
     }
 
-    public final void t2(eu.b statusCode) {
-        Intrinsics.checkNotNullParameter(statusCode, "statusCode");
-        synchronized (this.K) {
-            Ref.IntRef intRef = new Ref.IntRef();
-            synchronized (this) {
-                if (this.f22743r) {
-                    return;
-                }
-                this.f22743r = true;
-                int i10 = this.f22741p;
-                intRef.element = i10;
-                Unit unit = Unit.f32464a;
-                this.K.B(i10, statusCode, xt.e.f53564a);
-            }
-        }
-    }
-
-    public final void u2(boolean z10, au.e taskRunner) {
-        Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
-        if (z10) {
-            this.K.h();
-            this.K.A0(this.D);
-            int c10 = this.D.c();
-            if (c10 != 65535) {
-                this.K.C0(0, c10 - 65535);
-            }
-        }
-        taskRunner.i().i(new au.c(this.f22740o, true, this.L), 0L);
-    }
-
-    public final synchronized void w2(long j10) {
-        long j11 = this.F + j10;
-        this.F = j11;
-        long j12 = j11 - this.G;
-        if (j12 >= this.D.c() / 2) {
-            C2(0, j12);
-            this.G += j12;
-        }
-    }
-
-    public final int x1() {
-        return this.f22742q;
-    }
-
-    /* JADX WARN: Code restructure failed: missing block: B:58:0x0038, code lost:
-        throw new java.io.IOException("stream closed");
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:60:0x003a, code lost:
-        r2 = java.lang.Math.min((int) java.lang.Math.min(r12, r6 - r4), r8.K.F());
-        r6 = r2;
-        r8.H += r6;
-        r4 = kotlin.Unit.f32464a;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final void x2(int r9, boolean r10, okio.Buffer r11, long r12) {
-        /*
-            r8 = this;
-            r0 = 0
-            int r2 = (r12 > r0 ? 1 : (r12 == r0 ? 0 : -1))
-            r3 = 0
-            if (r2 != 0) goto Ld
-            eu.j r12 = r8.K
-            r12.l(r10, r9, r11, r3)
-            return
-        Ld:
-            int r2 = (r12 > r0 ? 1 : (r12 == r0 ? 0 : -1))
-            if (r2 <= 0) goto L71
-            monitor-enter(r8)
-        L12:
-            long r4 = r8.H     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
-            long r6 = r8.I     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
-            int r2 = (r4 > r6 ? 1 : (r4 == r6 ? 0 : -1))
-            if (r2 < 0) goto L39
-            java.util.Map r2 = r8.f22739i     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
-            java.lang.Integer r4 = java.lang.Integer.valueOf(r9)     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
-            boolean r2 = r2.containsKey(r4)     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
-            if (r2 == 0) goto L31
-            java.lang.String r2 = "null cannot be cast to non-null type java.lang.Object"
-            kotlin.jvm.internal.Intrinsics.checkNotNull(r8, r2)     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
-            r8.wait()     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
-            goto L12
-        L2f:
-            r9 = move-exception
-            goto L6f
-        L31:
-            java.io.IOException r9 = new java.io.IOException     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
-            java.lang.String r10 = "stream closed"
-            r9.<init>(r10)     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
-            throw r9     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
-        L39:
-            long r6 = r6 - r4
-            long r4 = java.lang.Math.min(r12, r6)     // Catch: java.lang.Throwable -> L2f
-            int r2 = (int) r4     // Catch: java.lang.Throwable -> L2f
-            eu.j r4 = r8.K     // Catch: java.lang.Throwable -> L2f
-            int r4 = r4.F()     // Catch: java.lang.Throwable -> L2f
-            int r2 = java.lang.Math.min(r2, r4)     // Catch: java.lang.Throwable -> L2f
-            long r4 = r8.H     // Catch: java.lang.Throwable -> L2f
-            long r6 = (long) r2     // Catch: java.lang.Throwable -> L2f
-            long r4 = r4 + r6
-            r8.H = r4     // Catch: java.lang.Throwable -> L2f
-            kotlin.Unit r4 = kotlin.Unit.f32464a     // Catch: java.lang.Throwable -> L2f
-            monitor-exit(r8)
-            long r12 = r12 - r6
-            eu.j r4 = r8.K
-            if (r10 == 0) goto L5d
-            int r5 = (r12 > r0 ? 1 : (r12 == r0 ? 0 : -1))
-            if (r5 != 0) goto L5d
-            r5 = 1
-            goto L5e
-        L5d:
-            r5 = r3
-        L5e:
-            r4.l(r5, r9, r11, r2)
-            goto Ld
-        L62:
-            java.lang.Thread r9 = java.lang.Thread.currentThread()     // Catch: java.lang.Throwable -> L2f
-            r9.interrupt()     // Catch: java.lang.Throwable -> L2f
-            java.io.InterruptedIOException r9 = new java.io.InterruptedIOException     // Catch: java.lang.Throwable -> L2f
-            r9.<init>()     // Catch: java.lang.Throwable -> L2f
-            throw r9     // Catch: java.lang.Throwable -> L2f
-        L6f:
-            monitor-exit(r8)
-            throw r9
-        L71:
-            return
-        */
-        throw new UnsupportedOperationException("Method not decompiled: eu.f.x2(int, boolean, okio.Buffer, long):void");
-    }
-
-    public final m y1() {
-        return this.D;
-    }
-
-    public final void y2(int i10, boolean z10, List alternating) {
-        Intrinsics.checkNotNullParameter(alternating, "alternating");
-        this.K.E(z10, i10, alternating);
-    }
-
-    public final void z2(boolean z10, int i10, int i11) {
-        try {
-            this.K.L(z10, i10, i11);
-        } catch (IOException e10) {
-            R0(e10);
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public final class d implements h.c, Function0 {
-
-        /* renamed from: d */
-        private final eu.h f22763d;
-
-        /* renamed from: e */
-        final /* synthetic */ f f22764e;
-
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class a extends au.a {
-
-            /* renamed from: e */
-            final /* synthetic */ f f22765e;
-
-            /* renamed from: f */
-            final /* synthetic */ Ref.ObjectRef f22766f;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public a(String str, boolean z10, f fVar, Ref.ObjectRef objectRef) {
-                super(str, z10);
-                this.f22765e = fVar;
-                this.f22766f = objectRef;
-            }
-
-            @Override // au.a
-            public long f() {
-                this.f22765e.e1().a(this.f22765e, (m) this.f22766f.element);
-                return -1L;
-            }
-        }
-
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class b extends au.a {
-
-            /* renamed from: e */
-            final /* synthetic */ f f22767e;
-
-            /* renamed from: f */
-            final /* synthetic */ eu.i f22768f;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public b(String str, boolean z10, f fVar, eu.i iVar) {
-                super(str, z10);
-                this.f22767e = fVar;
-                this.f22768f = iVar;
-            }
-
-            @Override // au.a
-            public long f() {
-                try {
-                    this.f22767e.e1().b(this.f22768f);
-                    return -1L;
-                } catch (IOException e10) {
-                    gu.h g10 = gu.h.f26650a.g();
-                    g10.k("Http2Connection.Listener failure for " + this.f22767e.Y0(), 4, e10);
-                    try {
-                        this.f22768f.d(eu.b.PROTOCOL_ERROR, e10);
-                        return -1L;
-                    } catch (IOException unused) {
-                        return -1L;
-                    }
-                }
-            }
-        }
-
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class c extends au.a {
-
-            /* renamed from: e */
-            final /* synthetic */ f f22769e;
-
-            /* renamed from: f */
-            final /* synthetic */ int f22770f;
-
-            /* renamed from: g */
-            final /* synthetic */ int f22771g;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public c(String str, boolean z10, f fVar, int i10, int i11) {
-                super(str, z10);
-                this.f22769e = fVar;
-                this.f22770f = i10;
-                this.f22771g = i11;
-            }
-
-            @Override // au.a
-            public long f() {
-                this.f22769e.z2(true, this.f22770f, this.f22771g);
-                return -1L;
-            }
-        }
-
-        /* renamed from: eu.f$d$d */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class C0305d extends au.a {
-
-            /* renamed from: e */
-            final /* synthetic */ d f22772e;
-
-            /* renamed from: f */
-            final /* synthetic */ boolean f22773f;
-
-            /* renamed from: g */
-            final /* synthetic */ m f22774g;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public C0305d(String str, boolean z10, d dVar, boolean z11, m mVar) {
-                super(str, z10);
-                this.f22772e = dVar;
-                this.f22773f = z11;
-                this.f22774g = mVar;
-            }
-
-            @Override // au.a
-            public long f() {
-                this.f22772e.k(this.f22773f, this.f22774g);
-                return -1L;
-            }
-        }
-
-        public d(f fVar, eu.h reader) {
-            Intrinsics.checkNotNullParameter(reader, "reader");
-            this.f22764e = fVar;
-            this.f22763d = reader;
-        }
-
-        @Override // eu.h.c
-        public void a(boolean z10, m settings) {
-            Intrinsics.checkNotNullParameter(settings, "settings");
-            au.d dVar = this.f22764e.f22745t;
-            dVar.i(new C0305d(this.f22764e.Y0() + " applyAndAckSettings", true, this, z10, settings), 0L);
-        }
-
-        @Override // eu.h.c
-        public void b(boolean z10, int i10, int i11, List headerBlock) {
-            Intrinsics.checkNotNullParameter(headerBlock, "headerBlock");
-            if (this.f22764e.o2(i10)) {
-                this.f22764e.h2(i10, headerBlock, z10);
-                return;
-            }
-            f fVar = this.f22764e;
-            synchronized (fVar) {
-                eu.i B1 = fVar.B1(i10);
-                if (B1 == null) {
-                    if (fVar.f22743r) {
-                        return;
-                    }
-                    if (i10 <= fVar.Z0()) {
-                        return;
-                    }
-                    if (i10 % 2 == fVar.x1() % 2) {
-                        return;
-                    }
-                    eu.i iVar = new eu.i(i10, fVar, false, z10, xt.e.Q(headerBlock));
-                    fVar.r2(i10);
-                    fVar.E1().put(Integer.valueOf(i10), iVar);
-                    au.d i12 = fVar.f22744s.i();
-                    i12.i(new b(fVar.Y0() + '[' + i10 + "] onStream", true, fVar, iVar), 0L);
-                    return;
-                }
-                Unit unit = Unit.f32464a;
-                B1.x(xt.e.Q(headerBlock), z10);
-            }
-        }
-
-        @Override // eu.h.c
-        public void c(int i10, eu.b errorCode, ByteString debugData) {
-            int i11;
-            Object[] array;
-            eu.i[] iVarArr;
-            Intrinsics.checkNotNullParameter(errorCode, "errorCode");
-            Intrinsics.checkNotNullParameter(debugData, "debugData");
-            debugData.G();
-            f fVar = this.f22764e;
-            synchronized (fVar) {
-                array = fVar.E1().values().toArray(new eu.i[0]);
-                fVar.f22743r = true;
-                Unit unit = Unit.f32464a;
-            }
-            for (eu.i iVar : (eu.i[]) array) {
-                if (iVar.j() > i10 && iVar.t()) {
-                    iVar.y(eu.b.REFUSED_STREAM);
-                    this.f22764e.p2(iVar.j());
-                }
-            }
-        }
-
-        @Override // eu.h.c
-        public void d(int i10, long j10) {
-            if (i10 == 0) {
-                f fVar = this.f22764e;
-                synchronized (fVar) {
-                    fVar.I = fVar.U1() + j10;
-                    Intrinsics.checkNotNull(fVar, "null cannot be cast to non-null type java.lang.Object");
-                    fVar.notifyAll();
-                    Unit unit = Unit.f32464a;
-                }
-                return;
-            }
-            eu.i B1 = this.f22764e.B1(i10);
-            if (B1 != null) {
-                synchronized (B1) {
-                    B1.a(j10);
-                    Unit unit2 = Unit.f32464a;
-                }
-            }
-        }
-
-        @Override // eu.h.c
-        public void e(int i10, int i11, List requestHeaders) {
-            Intrinsics.checkNotNullParameter(requestHeaders, "requestHeaders");
-            this.f22764e.i2(i11, requestHeaders);
-        }
-
-        @Override // eu.h.c
-        public void g(int i10, eu.b errorCode) {
-            Intrinsics.checkNotNullParameter(errorCode, "errorCode");
-            if (this.f22764e.o2(i10)) {
-                this.f22764e.j2(i10, errorCode);
-                return;
-            }
-            eu.i p22 = this.f22764e.p2(i10);
-            if (p22 != null) {
-                p22.y(errorCode);
-            }
-        }
-
-        @Override // eu.h.c
-        public void h(boolean z10, int i10, BufferedSource source, int i11) {
-            Intrinsics.checkNotNullParameter(source, "source");
-            if (this.f22764e.o2(i10)) {
-                this.f22764e.f2(i10, source, i11, z10);
-                return;
-            }
-            eu.i B1 = this.f22764e.B1(i10);
-            if (B1 == null) {
-                this.f22764e.B2(i10, eu.b.PROTOCOL_ERROR);
-                long j10 = i11;
-                this.f22764e.w2(j10);
-                source.skip(j10);
-                return;
-            }
-            B1.w(source, i11);
-            if (z10) {
-                B1.x(xt.e.f53565b, true);
-            }
-        }
-
-        @Override // eu.h.c
-        public void i(boolean z10, int i10, int i11) {
-            if (!z10) {
-                this.f22764e.f22745t.i(new c(this.f22764e.Y0() + " ping", true, this.f22764e, i10, i11), 0L);
-                return;
-            }
-            f fVar = this.f22764e;
-            synchronized (fVar) {
-                try {
-                    if (i10 == 1) {
-                        fVar.f22750y++;
-                    } else if (i10 == 2) {
-                        fVar.A++;
-                    } else {
-                        if (i10 == 3) {
-                            fVar.B++;
-                            Intrinsics.checkNotNull(fVar, "null cannot be cast to non-null type java.lang.Object");
-                            fVar.notifyAll();
-                        }
-                        Unit unit = Unit.f32464a;
-                    }
-                } catch (Throwable th2) {
-                    throw th2;
-                }
-            }
-        }
-
-        @Override // kotlin.jvm.functions.Function0
-        public /* bridge */ /* synthetic */ Object invoke() {
-            l();
-            return Unit.f32464a;
-        }
-
-        /* JADX WARN: Type inference failed for: r13v1 */
-        /* JADX WARN: Type inference failed for: r13v2, types: [eu.m, T] */
-        /* JADX WARN: Type inference failed for: r13v3 */
-        public final void k(boolean z10, m settings) {
-            ?? r13;
-            long c10;
-            int i10;
-            eu.i[] iVarArr;
-            Intrinsics.checkNotNullParameter(settings, "settings");
-            Ref.ObjectRef objectRef = new Ref.ObjectRef();
-            eu.j W1 = this.f22764e.W1();
-            f fVar = this.f22764e;
-            synchronized (W1) {
-                synchronized (fVar) {
-                    m A1 = fVar.A1();
-                    if (z10) {
-                        r13 = settings;
-                    } else {
-                        m mVar = new m();
-                        mVar.g(A1);
-                        mVar.g(settings);
-                        r13 = mVar;
-                    }
-                    objectRef.element = r13;
-                    c10 = r13.c() - A1.c();
-                    if (c10 != 0 && !fVar.E1().isEmpty()) {
-                        iVarArr = (eu.i[]) fVar.E1().values().toArray(new eu.i[0]);
-                        fVar.s2((m) objectRef.element);
-                        fVar.f22747v.i(new a(fVar.Y0() + " onSettings", true, fVar, objectRef), 0L);
-                        Unit unit = Unit.f32464a;
-                    }
-                    iVarArr = null;
-                    fVar.s2((m) objectRef.element);
-                    fVar.f22747v.i(new a(fVar.Y0() + " onSettings", true, fVar, objectRef), 0L);
-                    Unit unit2 = Unit.f32464a;
-                }
-                try {
-                    fVar.W1().a((m) objectRef.element);
-                } catch (IOException e10) {
-                    fVar.R0(e10);
-                }
-                Unit unit3 = Unit.f32464a;
-            }
-            if (iVarArr != null) {
-                for (eu.i iVar : iVarArr) {
-                    synchronized (iVar) {
-                        iVar.a(c10);
-                        Unit unit4 = Unit.f32464a;
-                    }
-                }
-            }
-        }
-
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX WARN: Type inference failed for: r0v0, types: [eu.b] */
-        /* JADX WARN: Type inference failed for: r0v3 */
-        /* JADX WARN: Type inference failed for: r0v5, types: [eu.h, java.io.Closeable] */
-        public void l() {
-            eu.b bVar;
-            eu.b bVar2 = eu.b.INTERNAL_ERROR;
-            IOException e10 = null;
-            try {
-                try {
-                    this.f22763d.l(this);
-                    do {
-                    } while (this.f22763d.h(false, this));
-                    eu.b bVar3 = eu.b.NO_ERROR;
-                    try {
-                        this.f22764e.M0(bVar3, eu.b.CANCEL, null);
-                        bVar = bVar3;
-                    } catch (IOException e11) {
-                        e10 = e11;
-                        eu.b bVar4 = eu.b.PROTOCOL_ERROR;
-                        f fVar = this.f22764e;
-                        fVar.M0(bVar4, bVar4, e10);
-                        bVar = fVar;
-                        bVar2 = this.f22763d;
-                        xt.e.m(bVar2);
-                    }
-                } catch (Throwable th2) {
-                    th = th2;
-                    this.f22764e.M0(bVar, bVar2, e10);
-                    xt.e.m(this.f22763d);
-                    throw th;
-                }
-            } catch (IOException e12) {
-                e10 = e12;
-            } catch (Throwable th3) {
-                th = th3;
-                bVar = bVar2;
-                this.f22764e.M0(bVar, bVar2, e10);
-                xt.e.m(this.f22763d);
-                throw th;
-            }
-            bVar2 = this.f22763d;
-            xt.e.m(bVar2);
-        }
-
-        @Override // eu.h.c
-        public void f() {
-        }
-
-        @Override // eu.h.c
-        public void j(int i10, int i11, int i12, boolean z10) {
-        }
+    public final synchronized void z() {
+        this.f21859l = true;
     }
 }

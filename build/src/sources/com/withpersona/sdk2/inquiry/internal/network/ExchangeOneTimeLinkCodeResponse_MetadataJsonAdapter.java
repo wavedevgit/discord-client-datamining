@@ -13,39 +13,39 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18815a;
+    private final m.b f19221a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18816b;
+    private final com.squareup.moshi.h f19222b;
 
     public ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("accessToken");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18815a = a10;
+        this.f19221a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "accessToken");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18816b = f10;
+        this.f19222b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public ExchangeOneTimeLinkCodeResponse.Metadata fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f18815a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    str = (String) this.f18816b.fromJson(reader);
+            int W = reader.W(this.f19221a);
+            if (W != -1) {
+                if (W == 0) {
+                    str = (String) this.f19222b.fromJson(reader);
                 }
             } else {
                 reader.E0();
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         return new ExchangeOneTimeLinkCodeResponse.Metadata(str);
     }
 
@@ -54,9 +54,9 @@ public final class ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter extends c
     public void toJson(t writer, ExchangeOneTimeLinkCodeResponse.Metadata metadata) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (metadata != null) {
-            writer.l();
-            writer.A0("accessToken");
-            this.f18816b.toJson(writer, metadata.a());
+            writer.k();
+            writer.W("accessToken");
+            this.f19222b.toJson(writer, metadata.a());
             writer.E();
             return;
         }

@@ -12,22 +12,22 @@ public class a extends CloseableReference {
         String name;
         try {
             synchronized (this) {
-                if (this.f9557d) {
+                if (this.f9942d) {
                     super.finalize();
                     return;
                 }
-                Object f10 = this.f9558e.f();
+                Object f10 = this.f9943e.f();
                 Integer valueOf = Integer.valueOf(System.identityHashCode(this));
-                Integer valueOf2 = Integer.valueOf(System.identityHashCode(this.f9558e));
+                Integer valueOf2 = Integer.valueOf(System.identityHashCode(this.f9943e));
                 if (f10 == null) {
                     name = null;
                 } else {
                     name = f10.getClass().getName();
                 }
                 p8.a.L("DefaultCloseableReference", "Finalized without closing: %x %x (type = %s)", valueOf, valueOf2, name);
-                CloseableReference.c cVar = this.f9559i;
+                CloseableReference.c cVar = this.f9944i;
                 if (cVar != null) {
-                    cVar.b(this.f9558e, this.f9560o);
+                    cVar.b(this.f9943e, this.f9945o);
                 }
                 close();
                 super.finalize();
@@ -39,13 +39,13 @@ public class a extends CloseableReference {
     }
 
     @Override // com.facebook.common.references.CloseableReference
-    /* renamed from: l */
+    /* renamed from: k */
     public CloseableReference clone() {
         Throwable th2;
-        j.i(E0());
-        s8.d dVar = this.f9558e;
-        CloseableReference.c cVar = this.f9559i;
-        if (this.f9560o != null) {
+        j.i(I0());
+        s8.d dVar = this.f9943e;
+        CloseableReference.c cVar = this.f9944i;
+        if (this.f9945o != null) {
             th2 = new Throwable();
         } else {
             th2 = null;

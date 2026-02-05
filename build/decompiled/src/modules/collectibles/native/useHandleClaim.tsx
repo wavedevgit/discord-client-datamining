@@ -52,13 +52,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = _closure1_slot3;
         var1 = function*() { // Environment: var1
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun87874: for (var _fun87874_ip = 0;;) switch (_fun87874_ip) {
+                _fun87893: for (var _fun87893_ip = 0;;) switch (_fun87893_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun87874_ip = 336;
-                            continue _fun87874
+                            _fun87893_ip = 336;
+                            continue _fun87893
                         }
                     case 10: // try_start_0
                         var2 = _closure1_slot0;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 63:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun87874_ip = 223;
-                            continue _fun87874
+                            _fun87893_ip = 223;
+                            continue _fun87893
                         }
                     case 72:
                         var7 = _closure1_slot1;
@@ -111,21 +111,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var7.bind(var8)(var6);
                         var6 = var6.ShopVariantsReturnStyle;
                         if (var5) {
-                            _fun87874_ip = 205;
-                            continue _fun87874
+                            _fun87893_ip = 205;
+                            continue _fun87893
                         }
                     case 197:
                         var5 = var6.INDIVIDUAL_PRODUCTS;
-                        _fun87874_ip = 211;
-                        continue _fun87874;
+                        _fun87893_ip = 211;
+                        continue _fun87893;
                     case 205:
                         var5 = var6.VARIANTS_GROUP;
                     case 211:
                         var2.variantsReturnStyle = var5;
                         var2 = var3.bind(var4)(var2);
                     case 221: // try_end0
-                        _fun87874_ip = 331;
-                        continue _fun87874;
+                        _fun87893_ip = 331;
+                        continue _fun87893;
                     case 223:
                         return var1;
                     case 226: // catch_target0
@@ -172,4 +172,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useHandleClaim = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 5729, 4597, 3278, 9544, 4649, 3148, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 5733, 4597, 3278, 9562, 4649, 3148, 1234, 2]);

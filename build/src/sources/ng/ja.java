@@ -3,90 +3,90 @@ package ng;
 public final class ja {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f41252a;
+    private String f40712a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f41253b;
+    private String f40713b;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f41254c;
+    private String f40714c;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f41255d;
+    private String f40715d;
 
     /* renamed from: e  reason: collision with root package name */
-    private mc f41256e;
+    private mc f40716e;
 
     /* renamed from: f  reason: collision with root package name */
-    private String f41257f;
+    private String f40717f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Boolean f41258g;
+    private Boolean f40718g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Boolean f41259h;
+    private Boolean f40719h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Boolean f41260i;
+    private Boolean f40720i;
 
     /* renamed from: j  reason: collision with root package name */
-    private Integer f41261j;
+    private Integer f40721j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Integer f41262k;
+    private Integer f40722k;
 
     public final ja b(String str) {
-        this.f41252a = str;
+        this.f40712a = str;
         return this;
     }
 
     public final ja c(String str) {
-        this.f41253b = str;
+        this.f40713b = str;
         return this;
     }
 
     public final ja d(Integer num) {
-        this.f41261j = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f40721j = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 
     public final ja e(Boolean bool) {
-        this.f41258g = bool;
+        this.f40718g = bool;
         return this;
     }
 
     public final ja f(Boolean bool) {
-        this.f41260i = bool;
+        this.f40720i = bool;
         return this;
     }
 
     public final ja g(Boolean bool) {
-        this.f41259h = bool;
+        this.f40719h = bool;
         return this;
     }
 
     public final ja h(mc mcVar) {
-        this.f41256e = mcVar;
+        this.f40716e = mcVar;
         return this;
     }
 
     public final ja i(String str) {
-        this.f41257f = str;
+        this.f40717f = str;
         return this;
     }
 
     public final ja j(String str) {
-        this.f41254c = str;
+        this.f40714c = str;
         return this;
     }
 
     public final ja k(Integer num) {
-        this.f41262k = num;
+        this.f40722k = num;
         return this;
     }
 
     public final ja l(String str) {
-        this.f41255d = str;
+        this.f40715d = str;
         return this;
     }
 

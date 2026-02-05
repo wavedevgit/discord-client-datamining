@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/shared/native/SafetyToolsActionSheetWrapper.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun72573: for (var _fun72573_ip = 0;;) switch (_fun72573_ip) {
+        _fun72591: for (var _fun72591_ip = 0;;) switch (_fun72591_ip) {
             case 0:
                 var1 = arg0;
                 var9 = var1.headerTitle;
@@ -76,13 +76,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var1;
                 var2[1] = var14;
                 var0 = function() { // Environment: var0
-                    _fun72575: for (var _fun72575_ip = 0;;) switch (_fun72575_ip) {
+                    _fun72593: for (var _fun72593_ip = 0;;) switch (_fun72593_ip) {
                         case 0:
                             var2 = _closure2_slot2;
                             var1 = null;
                             if (!(var1 == var2)) {
-                                _fun72575_ip = 23;
-                                continue _fun72575
+                                _fun72593_ip = 23;
+                                continue _fun72593
                             }
                         case 13:
                             var1 = _closure2_slot1;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 != var1;
                 if (!var1) {
-                    _fun72573_ip = 271;
-                    continue _fun72573
+                    _fun72591_ip = 271;
+                    continue _fun72591
                 }
             case 161:
                 var3 = _closure1_slot5;
@@ -133,4 +133,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 33, 566, 4931, 9071, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 33, 566, 4933, 9089, 2]);

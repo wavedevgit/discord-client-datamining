@@ -21,54 +21,54 @@ import n3.b;
 public class a extends LoaderManager {
 
     /* renamed from: c  reason: collision with root package name */
-    static boolean f4583c = false;
+    static boolean f4695c = false;
 
     /* renamed from: a  reason: collision with root package name */
-    private final LifecycleOwner f4584a;
+    private final LifecycleOwner f4696a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f4585b;
+    private final c f4697b;
 
     /* renamed from: androidx.loader.app.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class C0062a extends MutableLiveData implements b.a {
+    public static class C0063a extends MutableLiveData implements b.a {
 
         /* renamed from: l  reason: collision with root package name */
-        private final int f4586l;
+        private final int f4698l;
 
         /* renamed from: m  reason: collision with root package name */
-        private final Bundle f4587m;
+        private final Bundle f4699m;
 
         /* renamed from: n  reason: collision with root package name */
-        private final n3.b f4588n;
+        private final n3.b f4700n;
 
         /* renamed from: o  reason: collision with root package name */
-        private LifecycleOwner f4589o;
+        private LifecycleOwner f4701o;
 
         /* renamed from: p  reason: collision with root package name */
-        private b f4590p;
+        private b f4702p;
 
         /* renamed from: q  reason: collision with root package name */
-        private n3.b f4591q;
+        private n3.b f4703q;
 
-        C0062a(int i10, Bundle bundle, n3.b bVar, n3.b bVar2) {
-            this.f4586l = i10;
-            this.f4587m = bundle;
-            this.f4588n = bVar;
-            this.f4591q = bVar2;
+        C0063a(int i10, Bundle bundle, n3.b bVar, n3.b bVar2) {
+            this.f4698l = i10;
+            this.f4699m = bundle;
+            this.f4700n = bVar;
+            this.f4703q = bVar2;
             bVar.r(i10, this);
         }
 
         @Override // n3.b.a
         public void a(n3.b bVar, Object obj) {
-            if (a.f4583c) {
+            if (a.f4695c) {
                 Log.v("LoaderManager", "onLoadComplete: " + this);
             }
             if (Looper.myLooper() == Looper.getMainLooper()) {
                 o(obj);
                 return;
             }
-            if (a.f4583c) {
+            if (a.f4695c) {
                 Log.w("LoaderManager", "onLoadComplete was incorrectly called on a background thread");
             }
             m(obj);
@@ -76,74 +76,74 @@ public class a extends LoaderManager {
 
         @Override // androidx.lifecycle.LiveData
         protected void k() {
-            if (a.f4583c) {
+            if (a.f4695c) {
                 Log.v("LoaderManager", "  Starting: " + this);
             }
-            this.f4588n.u();
+            this.f4700n.u();
         }
 
         @Override // androidx.lifecycle.LiveData
         protected void l() {
-            if (a.f4583c) {
+            if (a.f4695c) {
                 Log.v("LoaderManager", "  Stopping: " + this);
             }
-            this.f4588n.v();
+            this.f4700n.v();
         }
 
         @Override // androidx.lifecycle.LiveData
         public void n(Observer observer) {
             super.n(observer);
-            this.f4589o = null;
-            this.f4590p = null;
+            this.f4701o = null;
+            this.f4702p = null;
         }
 
         @Override // androidx.lifecycle.MutableLiveData, androidx.lifecycle.LiveData
         public void o(Object obj) {
             super.o(obj);
-            n3.b bVar = this.f4591q;
+            n3.b bVar = this.f4703q;
             if (bVar != null) {
                 bVar.s();
-                this.f4591q = null;
+                this.f4703q = null;
             }
         }
 
         n3.b p(boolean z10) {
-            if (a.f4583c) {
+            if (a.f4695c) {
                 Log.v("LoaderManager", "  Destroying: " + this);
             }
-            this.f4588n.b();
-            this.f4588n.a();
-            b bVar = this.f4590p;
+            this.f4700n.b();
+            this.f4700n.a();
+            b bVar = this.f4702p;
             if (bVar != null) {
                 n(bVar);
                 if (z10) {
                     bVar.d();
                 }
             }
-            this.f4588n.w(this);
+            this.f4700n.w(this);
             if ((bVar != null && !bVar.c()) || z10) {
-                this.f4588n.s();
-                return this.f4591q;
+                this.f4700n.s();
+                return this.f4703q;
             }
-            return this.f4588n;
+            return this.f4700n;
         }
 
         public void q(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
             printWriter.print(str);
             printWriter.print("mId=");
-            printWriter.print(this.f4586l);
+            printWriter.print(this.f4698l);
             printWriter.print(" mArgs=");
-            printWriter.println(this.f4587m);
+            printWriter.println(this.f4699m);
             printWriter.print(str);
             printWriter.print("mLoader=");
-            printWriter.println(this.f4588n);
-            n3.b bVar = this.f4588n;
+            printWriter.println(this.f4700n);
+            n3.b bVar = this.f4700n;
             bVar.g(str + "  ", fileDescriptor, printWriter, strArr);
-            if (this.f4590p != null) {
+            if (this.f4702p != null) {
                 printWriter.print(str);
                 printWriter.print("mCallbacks=");
-                printWriter.println(this.f4590p);
-                b bVar2 = this.f4590p;
+                printWriter.println(this.f4702p);
+                b bVar2 = this.f4702p;
                 bVar2.b(str + "  ", printWriter);
             }
             printWriter.print(str);
@@ -155,12 +155,12 @@ public class a extends LoaderManager {
         }
 
         n3.b r() {
-            return this.f4588n;
+            return this.f4700n;
         }
 
         void s() {
-            LifecycleOwner lifecycleOwner = this.f4589o;
-            b bVar = this.f4590p;
+            LifecycleOwner lifecycleOwner = this.f4701o;
+            b bVar = this.f4702p;
             if (lifecycleOwner != null && bVar != null) {
                 super.n(bVar);
                 i(lifecycleOwner, bVar);
@@ -168,15 +168,15 @@ public class a extends LoaderManager {
         }
 
         n3.b t(LifecycleOwner lifecycleOwner, LoaderManager.a aVar) {
-            b bVar = new b(this.f4588n, aVar);
+            b bVar = new b(this.f4700n, aVar);
             i(lifecycleOwner, bVar);
-            Observer observer = this.f4590p;
+            Observer observer = this.f4702p;
             if (observer != null) {
                 n(observer);
             }
-            this.f4589o = lifecycleOwner;
-            this.f4590p = bVar;
-            return this.f4588n;
+            this.f4701o = lifecycleOwner;
+            this.f4702p = bVar;
+            return this.f4700n;
         }
 
         public String toString() {
@@ -184,9 +184,9 @@ public class a extends LoaderManager {
             sb2.append("LoaderInfo{");
             sb2.append(Integer.toHexString(System.identityHashCode(this)));
             sb2.append(" #");
-            sb2.append(this.f4586l);
+            sb2.append(this.f4698l);
             sb2.append(" : ");
-            Class<?> cls = this.f4588n.getClass();
+            Class<?> cls = this.f4700n.getClass();
             sb2.append(cls.getSimpleName());
             sb2.append("{");
             sb2.append(Integer.toHexString(System.identityHashCode(cls)));
@@ -200,49 +200,49 @@ public class a extends LoaderManager {
     public static class b implements Observer {
 
         /* renamed from: a  reason: collision with root package name */
-        private final n3.b f4592a;
+        private final n3.b f4704a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final LoaderManager.a f4593b;
+        private final LoaderManager.a f4705b;
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f4594c = false;
+        private boolean f4706c = false;
 
         b(n3.b bVar, LoaderManager.a aVar) {
-            this.f4592a = bVar;
-            this.f4593b = aVar;
+            this.f4704a = bVar;
+            this.f4705b = aVar;
         }
 
         @Override // androidx.lifecycle.Observer
         public void a(Object obj) {
-            if (a.f4583c) {
-                Log.v("LoaderManager", "  onLoadFinished in " + this.f4592a + ": " + this.f4592a.d(obj));
+            if (a.f4695c) {
+                Log.v("LoaderManager", "  onLoadFinished in " + this.f4704a + ": " + this.f4704a.d(obj));
             }
-            this.f4594c = true;
-            this.f4593b.b(this.f4592a, obj);
+            this.f4706c = true;
+            this.f4705b.b(this.f4704a, obj);
         }
 
         public void b(String str, PrintWriter printWriter) {
             printWriter.print(str);
             printWriter.print("mDeliveredData=");
-            printWriter.println(this.f4594c);
+            printWriter.println(this.f4706c);
         }
 
         boolean c() {
-            return this.f4594c;
+            return this.f4706c;
         }
 
         void d() {
-            if (this.f4594c) {
-                if (a.f4583c) {
-                    Log.v("LoaderManager", "  Resetting: " + this.f4592a);
+            if (this.f4706c) {
+                if (a.f4695c) {
+                    Log.v("LoaderManager", "  Resetting: " + this.f4704a);
                 }
-                this.f4593b.a(this.f4592a);
+                this.f4705b.a(this.f4704a);
             }
         }
 
         public String toString() {
-            return this.f4593b.toString();
+            return this.f4705b.toString();
         }
     }
 
@@ -251,18 +251,18 @@ public class a extends LoaderManager {
     public static class c extends n0 {
 
         /* renamed from: d  reason: collision with root package name */
-        private static final ViewModelProvider.Factory f4595d = new C0063a();
+        private static final ViewModelProvider.Factory f4707d = new C0064a();
 
         /* renamed from: b  reason: collision with root package name */
-        private SparseArrayCompat f4596b = new SparseArrayCompat();
+        private SparseArrayCompat f4708b = new SparseArrayCompat();
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f4597c = false;
+        private boolean f4709c = false;
 
         /* renamed from: androidx.loader.app.a$c$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        static class C0063a implements ViewModelProvider.Factory {
-            C0063a() {
+        static class C0064a implements ViewModelProvider.Factory {
+            C0064a() {
             }
 
             @Override // androidx.lifecycle.ViewModelProvider.Factory
@@ -275,114 +275,114 @@ public class a extends LoaderManager {
         }
 
         static c g(ViewModelStore viewModelStore) {
-            return (c) new ViewModelProvider(viewModelStore, f4595d).a(c.class);
+            return (c) new ViewModelProvider(viewModelStore, f4707d).a(c.class);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // androidx.lifecycle.n0
         public void d() {
             super.d();
-            int l10 = this.f4596b.l();
+            int l10 = this.f4708b.l();
             for (int i10 = 0; i10 < l10; i10++) {
-                ((C0062a) this.f4596b.m(i10)).p(true);
+                ((C0063a) this.f4708b.m(i10)).p(true);
             }
-            this.f4596b.b();
+            this.f4708b.b();
         }
 
         public void e(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-            if (this.f4596b.l() > 0) {
+            if (this.f4708b.l() > 0) {
                 printWriter.print(str);
                 printWriter.println("Loaders:");
                 String str2 = str + "    ";
-                for (int i10 = 0; i10 < this.f4596b.l(); i10++) {
-                    C0062a c0062a = (C0062a) this.f4596b.m(i10);
+                for (int i10 = 0; i10 < this.f4708b.l(); i10++) {
+                    C0063a c0063a = (C0063a) this.f4708b.m(i10);
                     printWriter.print(str);
                     printWriter.print("  #");
-                    printWriter.print(this.f4596b.j(i10));
+                    printWriter.print(this.f4708b.j(i10));
                     printWriter.print(": ");
-                    printWriter.println(c0062a.toString());
-                    c0062a.q(str2, fileDescriptor, printWriter, strArr);
+                    printWriter.println(c0063a.toString());
+                    c0063a.q(str2, fileDescriptor, printWriter, strArr);
                 }
             }
         }
 
         void f() {
-            this.f4597c = false;
+            this.f4709c = false;
         }
 
-        C0062a h(int i10) {
-            return (C0062a) this.f4596b.e(i10);
+        C0063a h(int i10) {
+            return (C0063a) this.f4708b.e(i10);
         }
 
         boolean i() {
-            return this.f4597c;
+            return this.f4709c;
         }
 
         void j() {
-            int l10 = this.f4596b.l();
+            int l10 = this.f4708b.l();
             for (int i10 = 0; i10 < l10; i10++) {
-                ((C0062a) this.f4596b.m(i10)).s();
+                ((C0063a) this.f4708b.m(i10)).s();
             }
         }
 
-        void k(int i10, C0062a c0062a) {
-            this.f4596b.k(i10, c0062a);
+        void k(int i10, C0063a c0063a) {
+            this.f4708b.k(i10, c0063a);
         }
 
         void l() {
-            this.f4597c = true;
+            this.f4709c = true;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(LifecycleOwner lifecycleOwner, ViewModelStore viewModelStore) {
-        this.f4584a = lifecycleOwner;
-        this.f4585b = c.g(viewModelStore);
+        this.f4696a = lifecycleOwner;
+        this.f4697b = c.g(viewModelStore);
     }
 
     private n3.b e(int i10, Bundle bundle, LoaderManager.a aVar, n3.b bVar) {
         try {
-            this.f4585b.l();
+            this.f4697b.l();
             n3.b c10 = aVar.c(i10, bundle);
             if (c10 != null) {
                 if (c10.getClass().isMemberClass() && !Modifier.isStatic(c10.getClass().getModifiers())) {
                     throw new IllegalArgumentException("Object returned from onCreateLoader must not be a non-static inner member class: " + c10);
                 }
-                C0062a c0062a = new C0062a(i10, bundle, c10, bVar);
-                if (f4583c) {
-                    Log.v("LoaderManager", "  Created new loader " + c0062a);
+                C0063a c0063a = new C0063a(i10, bundle, c10, bVar);
+                if (f4695c) {
+                    Log.v("LoaderManager", "  Created new loader " + c0063a);
                 }
-                this.f4585b.k(i10, c0062a);
-                this.f4585b.f();
-                return c0062a.t(this.f4584a, aVar);
+                this.f4697b.k(i10, c0063a);
+                this.f4697b.f();
+                return c0063a.t(this.f4696a, aVar);
             }
             throw new IllegalArgumentException("Object returned from onCreateLoader must not be null");
         } catch (Throwable th2) {
-            this.f4585b.f();
+            this.f4697b.f();
             throw th2;
         }
     }
 
     @Override // androidx.loader.app.LoaderManager
     public void a(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-        this.f4585b.e(str, fileDescriptor, printWriter, strArr);
+        this.f4697b.e(str, fileDescriptor, printWriter, strArr);
     }
 
     @Override // androidx.loader.app.LoaderManager
     public n3.b c(int i10, Bundle bundle, LoaderManager.a aVar) {
-        if (!this.f4585b.i()) {
+        if (!this.f4697b.i()) {
             if (Looper.getMainLooper() == Looper.myLooper()) {
-                C0062a h10 = this.f4585b.h(i10);
-                if (f4583c) {
+                C0063a h10 = this.f4697b.h(i10);
+                if (f4695c) {
                     Log.v("LoaderManager", "initLoader in " + this + ": args=" + bundle);
                 }
                 if (h10 == null) {
                     return e(i10, bundle, aVar, null);
                 }
-                if (f4583c) {
+                if (f4695c) {
                     Log.v("LoaderManager", "  Re-using existing loader " + h10);
                 }
-                return h10.t(this.f4584a, aVar);
+                return h10.t(this.f4696a, aVar);
             }
             throw new IllegalStateException("initLoader must be called on the main thread");
         }
@@ -391,7 +391,7 @@ public class a extends LoaderManager {
 
     @Override // androidx.loader.app.LoaderManager
     public void d() {
-        this.f4585b.j();
+        this.f4697b.j();
     }
 
     public String toString() {
@@ -399,7 +399,7 @@ public class a extends LoaderManager {
         sb2.append("LoaderManager{");
         sb2.append(Integer.toHexString(System.identityHashCode(this)));
         sb2.append(" in ");
-        Class<?> cls = this.f4584a.getClass();
+        Class<?> cls = this.f4696a.getClass();
         sb2.append(cls.getSimpleName());
         sb2.append("{");
         sb2.append(Integer.toHexString(System.identityHashCode(cls)));

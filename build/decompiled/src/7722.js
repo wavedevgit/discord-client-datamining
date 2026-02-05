@@ -1,101 +1,59 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
-    var4 = dependencyMap;
-    var0 = 0;
-    var1 = var4[var0];
+    var1 = function arg0() {
+        _fun61874: for (var _fun61874_ip = 0;;) switch (_fun61874_ip) {
+            case 0:
+                var7 = arg0;
+                var1 = {};
+                var0 = global;
+                var2 = var0.Object;
+                var2 = var7 instanceof var2;
+                if (!var2) {
+                    _fun61874_ip = 84;
+                    continue _fun61874
+                }
+            case 20:
+                var3 = var0.Array;
+                var2 = var3.isArray;
+                var2 = var2.bind(var3)(var7);
+                if (var2) {
+                    _fun61874_ip = 84;
+                    continue _fun61874
+                }
+            case 39:
+                var5 = var7;
+                for (var2 in var5)
+                    case 50: {
+                        case 59: var8 = var2;
+                        var9 = var7.hasOwnProperty;
+                        var9 = var9.bind(var7)(var8);
+                        if (!var9) {
+                            _fun61874_ip = 50;
+                            continue _fun61874
+                        }
+                        case 76: var1[var8] = var8;
+                        _fun61874_ip = 50;
+                        continue _fun61874;
+                    }
+            case 82:
+                return var1;
+            case 84:
+                var2 = var0.Error;
+                var0 = var2.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var10 = 'keyMirror(...): Argument must be an object.';
+                var11 = var1;
+                var0 = new var11[var2](var10, var9);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
     var0 = undefined;
-    var2 = var3.bind(var0)(var1);
-    var1 = 1;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var5 = var2.bind(var0)(var1);
-    var2 = {};
-    var1 = 2;
-    var6 = var4[var1];
-    var8 = var3.bind(var0)(var6);
-    var7 = var8.oneOf;
-    var6 = ['head', 'middle', 'tail', 'clip'];
-    var6 = var7.bind(var8)(var6);
-    var2.ellipsizeMode = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.number;
-    var2.numberOfLines = var6;
-    var6 = var4[var1];
-    var8 = var3.bind(var0)(var6);
-    var7 = var8.oneOf;
-    var6 = ['simple', 'highQuality', 'balanced'];
-    var6 = var7.bind(var8)(var6);
-    var2.textBreakStrategy = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onLayout = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onPress = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.func;
-    var2.onLongPress = var6;
-    var6 = 3;
-    var6 = var4[var6];
-    var6 = var3.bind(var0)(var6);
-    var2.pressRetentionOffset = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.bool;
-    var2.selectable = var6;
-    var6 = 4;
-    var6 = var4[var6];
-    var6 = var3.bind(var0)(var6);
-    var2.selectionColor = var6;
-    var6 = var4[var1];
-    var6 = var3.bind(var0)(var6);
-    var6 = var6.bool;
-    var2.suppressHighlighting = var6;
-    var2.style = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.string;
-    var2.testID = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.string;
-    var2.nativeID = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.bool;
-    var2.allowFontScaling = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.number;
-    var2.maxFontSizeMultiplier = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.bool;
-    var2.accessible = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.bool;
-    var2.adjustsFontSizeToFit = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.number;
-    var2.minimumFontScale = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.bool;
-    var2.disabled = var5;
-    var1 = var4[var1];
-    var4 = var3.bind(var0)(var1);
-    var3 = var4.oneOf;
-    var1 = ['phoneNumber', 'link', 'email', 'none', 'all'];
-    var1 = var3.bind(var4)(var1);
-    var2.dataDetectorType = var1;
-    var1 = module;
-    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7712, 7723, 3220, 7709, 7707]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

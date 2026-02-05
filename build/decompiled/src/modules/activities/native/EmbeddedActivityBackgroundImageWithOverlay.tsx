@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/native/EmbeddedActivityBackgroundImageWithOverlay.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun64889: for (var _fun64889_ip = 0;;) switch (_fun64889_ip) {
+        _fun64913: for (var _fun64913_ip = 0;;) switch (_fun64913_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.application;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var0.resizeMode;
                 var4 = undefined;
                 if (!(var11 === var4)) {
-                    _fun64889_ip = 36;
-                    continue _fun64889
+                    _fun64913_ip = 36;
+                    continue _fun64913
                 }
             case 32:
                 var11 = 'contain';
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var9 == var1;
                 var13 = undefined;
                 if (var12) {
-                    _fun64889_ip = 135;
-                    continue _fun64889
+                    _fun64913_ip = 135;
+                    continue _fun64913
                 }
             case 130:
                 var13 = var1.id;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = '';
                 var12 = var1;
                 if (!var14) {
-                    _fun64889_ip = 152;
-                    continue _fun64889
+                    _fun64913_ip = 152;
+                    continue _fun64913
                 }
             case 149:
                 var12 = var13;
@@ -131,21 +131,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var0.url;
                 var0 = null;
                 if (var2) {
-                    _fun64889_ip = 342;
-                    continue _fun64889
+                    _fun64913_ip = 342;
+                    continue _fun64913
                 }
             case 192:
                 var2 = var9 == var13;
                 var0 = null;
                 if (var2) {
-                    _fun64889_ip = 342;
-                    continue _fun64889
+                    _fun64913_ip = 342;
+                    continue _fun64913
                 }
             case 204:
                 var0 = null;
                 if (!(var1 !== var13)) {
-                    _fun64889_ip = 342;
-                    continue _fun64889
+                    _fun64913_ip = 342;
+                    continue _fun64913
                 }
             case 213:
                 var3 = _closure1_slot7;
@@ -156,8 +156,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var9 != var13;
                 var12 = undefined;
                 if (!var14) {
-                    _fun64889_ip = 241;
-                    continue _fun64889
+                    _fun64913_ip = 241;
+                    continue _fun64913
                 }
             case 238:
                 var12 = var13;
@@ -165,8 +165,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.uri = var12;
                 var1.source = var11;
                 if (!(var9 == var7)) {
-                    _fun64889_ip = 263;
-                    continue _fun64889
+                    _fun64913_ip = 263;
+                    continue _fun64913
                 }
             case 253:
                 var9 = _closure1_slot6;
@@ -203,4 +203,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 8071, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 8090, 2]);

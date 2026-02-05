@@ -1,39 +1,139 @@
 package ov;
 
-import java.util.Locale;
-import kotlin.jvm.internal.Intrinsics;
-import ov.o;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Type;
+import kotlin.Unit;
+import okhttp3.RequestBody;
+import okhttp3.ResponseBody;
+import ov.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements nu.b, o {
+final class b extends h.a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final b f44801a = new b();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class a implements h {
 
-    private b() {
-    }
+        /* renamed from: a  reason: collision with root package name */
+        static final a f44571a = new a();
 
-    public String a(Object obj) {
-        return o.a.a(this, obj);
-    }
+        a() {
+        }
 
-    @Override // nu.b
-    public Object f(Object obj, Object obj2) {
-        String a10 = a(obj);
-        if (a10 != null) {
-            if (a10.length() > 0) {
-                StringBuilder sb2 = new StringBuilder();
-                String valueOf = String.valueOf(a10.charAt(0));
-                Intrinsics.checkNotNull(valueOf, "null cannot be cast to non-null type java.lang.String");
-                String upperCase = valueOf.toUpperCase(Locale.ROOT);
-                Intrinsics.checkNotNullExpressionValue(upperCase, "this as java.lang.String).toUpperCase(Locale.ROOT)");
-                sb2.append((Object) upperCase);
-                String substring = a10.substring(1);
-                Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String).substring(startIndex)");
-                sb2.append(substring);
-                return sb2.toString();
+        @Override // ov.h
+        /* renamed from: b */
+        public ResponseBody a(ResponseBody responseBody) {
+            try {
+                return e0.a(responseBody);
+            } finally {
+                responseBody.close();
             }
-            return a10;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class d implements h {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final d f44574a = new d();
+
+        d() {
+        }
+
+        @Override // ov.h
+        /* renamed from: b */
+        public String a(Object obj) {
+            return obj.toString();
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class e implements h {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final e f44575a = new e();
+
+        e() {
+        }
+
+        @Override // ov.h
+        /* renamed from: b */
+        public Unit a(ResponseBody responseBody) {
+            responseBody.close();
+            return Unit.f31988a;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class f implements h {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final f f44576a = new f();
+
+        f() {
+        }
+
+        @Override // ov.h
+        /* renamed from: b */
+        public Void a(ResponseBody responseBody) {
+            responseBody.close();
+            return null;
+        }
+    }
+
+    @Override // ov.h.a
+    public h c(Type type, Annotation[] annotationArr, Annotation[] annotationArr2, a0 a0Var) {
+        if (RequestBody.class.isAssignableFrom(e0.h(type))) {
+            return C0562b.f44572a;
         }
         return null;
+    }
+
+    @Override // ov.h.a
+    public h d(Type type, Annotation[] annotationArr, a0 a0Var) {
+        if (type == ResponseBody.class) {
+            if (e0.l(annotationArr, qv.w.class)) {
+                return c.f44573a;
+            }
+            return a.f44571a;
+        } else if (type == Void.class) {
+            return f.f44576a;
+        } else {
+            if (e0.m(type)) {
+                return e.f44575a;
+            }
+            return null;
+        }
+    }
+
+    /* renamed from: ov.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class C0562b implements h {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final C0562b f44572a = new C0562b();
+
+        C0562b() {
+        }
+
+        @Override // ov.h
+        /* renamed from: b */
+        public RequestBody a(RequestBody requestBody) {
+            return requestBody;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class c implements h {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final c f44573a = new c();
+
+        c() {
+        }
+
+        @Override // ov.h
+        /* renamed from: b */
+        public ResponseBody a(ResponseBody responseBody) {
+            return responseBody;
+        }
     }
 }

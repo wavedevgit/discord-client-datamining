@@ -21,17 +21,17 @@ public class a implements c.a {
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: tb.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static class C0619a {
+    public static class C0646a {
 
         /* renamed from: a  reason: collision with root package name */
-        public ZipFile f49858a;
+        public ZipFile f50463a;
 
         /* renamed from: b  reason: collision with root package name */
-        public ZipEntry f49859b;
+        public ZipEntry f50464b;
 
-        public C0619a(ZipFile zipFile, ZipEntry zipEntry) {
-            this.f49858a = zipFile;
-            this.f49859b = zipEntry;
+        public C0646a(ZipFile zipFile, ZipEntry zipEntry) {
+            this.f50463a = zipFile;
+            this.f50464b = zipEntry;
         }
     }
 
@@ -58,7 +58,7 @@ public class a implements c.a {
         }
     }
 
-    private C0619a d(Context context, String[] strArr, String str, d dVar) {
+    private C0646a d(Context context, String[] strArr, String str, d dVar) {
         String[] f10 = f(context);
         int length = f10.length;
         int i10 = 0;
@@ -98,7 +98,7 @@ public class a implements c.a {
                             dVar.i("Looking for %s in APK %s...", sb3, str2);
                             ZipEntry entry = zipFile.getEntry(sb3);
                             if (entry != null) {
-                                return new C0619a(zipFile, entry);
+                                return new C0646a(zipFile, entry);
                             }
                         }
                         i13 = i14;
@@ -190,8 +190,8 @@ public class a implements c.a {
             r0 = r1
             goto La4
         L29:
-            java.util.zip.ZipFile r10 = r1.f49858a     // Catch: java.lang.Throwable -> L72 java.io.IOException -> L75 java.io.FileNotFoundException -> L78
-            java.util.zip.ZipEntry r3 = r1.f49859b     // Catch: java.lang.Throwable -> L72 java.io.IOException -> L75 java.io.FileNotFoundException -> L78
+            java.util.zip.ZipFile r10 = r1.f50463a     // Catch: java.lang.Throwable -> L72 java.io.IOException -> L75 java.io.FileNotFoundException -> L78
+            java.util.zip.ZipEntry r3 = r1.f50464b     // Catch: java.lang.Throwable -> L72 java.io.IOException -> L75 java.io.FileNotFoundException -> L78
             java.io.InputStream r10 = r10.getInputStream(r3)     // Catch: java.lang.Throwable -> L72 java.io.IOException -> L75 java.io.FileNotFoundException -> L78
             java.io.FileOutputStream r3 = new java.io.FileOutputStream     // Catch: java.lang.Throwable -> L6b java.io.IOException -> L6e java.io.FileNotFoundException -> L70
             r3.<init>(r12)     // Catch: java.lang.Throwable -> L6b java.io.IOException -> L6e java.io.FileNotFoundException -> L70
@@ -212,7 +212,7 @@ public class a implements c.a {
             r12.setReadable(r10, r9)     // Catch: java.lang.Throwable -> L25
             r12.setExecutable(r10, r9)     // Catch: java.lang.Throwable -> L25
             r12.setWritable(r10)     // Catch: java.lang.Throwable -> L25
-            java.util.zip.ZipFile r9 = r1.f49858a     // Catch: java.io.IOException -> L8e
+            java.util.zip.ZipFile r9 = r1.f50463a     // Catch: java.io.IOException -> L8e
             if (r9 == 0) goto L8e
         L64:
             r9.close()     // Catch: java.io.IOException -> L8e
@@ -254,7 +254,7 @@ public class a implements c.a {
         L84:
             java.lang.String r9 = "FATAL! Couldn't extract the library from the APK!"
             r13.h(r9)     // Catch: java.lang.Throwable -> L25
-            java.util.zip.ZipFile r9 = r1.f49858a     // Catch: java.io.IOException -> L8e
+            java.util.zip.ZipFile r9 = r1.f50463a     // Catch: java.io.IOException -> L8e
             if (r9 == 0) goto L8e
             goto L64
         L8e:
@@ -274,7 +274,7 @@ public class a implements c.a {
             r9 = move-exception
         La4:
             if (r0 == 0) goto Lad
-            java.util.zip.ZipFile r10 = r0.f49858a     // Catch: java.io.IOException -> Lad
+            java.util.zip.ZipFile r10 = r0.f50463a     // Catch: java.io.IOException -> Lad
             if (r10 == 0) goto Lad
             r10.close()     // Catch: java.io.IOException -> Lad
         Lad:

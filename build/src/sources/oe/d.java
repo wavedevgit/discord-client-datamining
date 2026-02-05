@@ -5,18 +5,18 @@ import ne.h0;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f42478a;
+    public final int f42384a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f42479b;
+    public final int f42385b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final String f42480c;
+    public final String f42386c;
 
     private d(int i10, int i11, String str) {
-        this.f42478a = i10;
-        this.f42479b = i11;
-        this.f42480c = str;
+        this.f42384a = i10;
+        this.f42385b = i11;
+        this.f42386c = str;
     }
 
     public static d a(h0 h0Var) {

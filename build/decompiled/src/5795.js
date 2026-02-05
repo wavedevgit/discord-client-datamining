@@ -1,108 +1,33 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun51239: for (var _fun51239_ip = 0;;) switch (_fun51239_ip) {
+    _fun51230: for (var _fun51230_ip = 0;;) switch (_fun51230_ip) {
         case 0:
-            var11 = require;
-            var4 = metroImportDefault;
-            var2 = exports;
-            var5 = dependencyMap;
+            var9 = require;
+            var8 = exports;
+            var7 = dependencyMap;
             var0 = global;
-            var6 = var0.Object;
-            var3 = var6.defineProperty;
+            var10 = var0.Object;
+            var2 = var10.defineProperty;
             var1 = {};
             var0 = true;
             var1.value = var0;
             var0 = '__esModule';
-            var0 = var3.bind(var6)(var2, var0, var1);
-            var0 = 0;
-            var1 = var5[var0];
+            var0 = var2.bind(var10)(var8, var0, var1);
+            var2 = 0;
+            var1 = var7[var2];
             var0 = undefined;
-            var3 = var11.bind(var0)(var1);
-            var1 = new Array(2);
-            var1[0] = var3;
-            var3 = 1;
-            var3 = var5[var3];
-            var3 = var11.bind(var0)(var3);
-            var1[1] = var3;
-            var6 = 2;
-            var3 = var5[var6];
-            var9 = var11.bind(var0)(var3);
-            for (var3 in var9)
-                case 101: {
-                    case 110: var13 = var3;
-                    var12 = var5[var6];
-                    var12 = var11.bind(var0)(var12);
-                    var12 = var12[var13];
-                    var2[var13] = var12;
-                    _fun51239_ip = 101;
-                    continue _fun51239;
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 62: {
+                    case 71: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun51230_ip = 62;
+                    continue _fun51230;
                 }
-        case 132:
-            var3 = 3;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.Background = var3;
-            var3 = 4;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.getDefaultHeaderHeight = var3;
-            var3 = 5;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.getHeaderTitle = var3;
-            var3 = 6;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.Header = var3;
-            var3 = 7;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.HeaderBackButton = var3;
-            var3 = 8;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.HeaderBackContext = var3;
-            var3 = 9;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.HeaderBackground = var3;
-            var3 = 10;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.HeaderHeightContext = var3;
-            var3 = 11;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.HeaderShownContext = var3;
-            var3 = 12;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.HeaderTitle = var3;
-            var3 = 13;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.useHeaderHeight = var3;
-            var3 = 14;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.MissingIcon = var3;
-            var3 = 15;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.PlatformPressable = var3;
-            var3 = 16;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.ResourceSavingView = var3;
-            var3 = 17;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.SafeAreaProviderCompat = var3;
-            var3 = 18;
-            var3 = var5[var3];
-            var3 = var4.bind(var0)(var3);
-            var2.Screen = var3;
-            var2.Assets = var1;
+        case 93:
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5796, 5797, 5798, 5799, 5800, 5801, 5802, 5807, 5811, 5806, 5812, 5803, 5805, 5813, 5814, 5810, 5815, 5816, 5817]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5796]);

@@ -26,21 +26,21 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_FileLimi
     @Override // com.squareup.moshi.h
     @NotNull
     public GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError.Details fromJson(@NotNull m mVar) {
-        mVar.r();
+        mVar.s();
         while (mVar.hasNext()) {
-            if (mVar.A0(this.options) == -1) {
+            if (mVar.W(this.options) == -1) {
                 mVar.E0();
                 mVar.P();
             }
         }
-        mVar.y();
+        mVar.z();
         return new GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError.Details();
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError.Details details) {
         if (details != null) {
-            tVar.l();
+            tVar.k();
             tVar.E();
             return;
         }

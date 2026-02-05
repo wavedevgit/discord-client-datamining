@@ -12,44 +12,44 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class f implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f30284d;
+    private String f29342d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f30285e;
+    private boolean f29343e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f30286i;
+    private Map f29344i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public f a(e3 e3Var, ILogger iLogger) {
-            e3Var.r();
+            e3Var.s();
             String str = null;
             Boolean bool = null;
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
-                if (!l02.equals("result")) {
-                    if (!l02.equals("flag")) {
+                String m02 = e3Var.m0();
+                m02.getClass();
+                if (!m02.equals("result")) {
+                    if (!m02.equals("flag")) {
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, l02);
+                        e3Var.v1(iLogger, concurrentHashMap, m02);
                     } else {
                         str = e3Var.r1();
                     }
                 } else {
-                    bool = e3Var.v0();
+                    bool = e3Var.w0();
                 }
             }
             if (str != null) {
                 if (bool != null) {
                     f fVar = new f(str, bool.booleanValue());
                     fVar.c(concurrentHashMap);
-                    e3Var.y();
+                    e3Var.z();
                     return fVar;
                 }
                 IllegalStateException illegalStateException = new IllegalStateException("Missing required field \"result\"");
@@ -63,20 +63,20 @@ public final class f implements w1 {
     }
 
     public f(String str, boolean z10) {
-        this.f30284d = str;
-        this.f30285e = z10;
+        this.f29342d = str;
+        this.f29343e = z10;
     }
 
     public String a() {
-        return this.f30284d;
+        return this.f29342d;
     }
 
     public Boolean b() {
-        return Boolean.valueOf(this.f30285e);
+        return Boolean.valueOf(this.f29343e);
     }
 
     public void c(Map map) {
-        this.f30286i = map;
+        this.f29344i = map;
     }
 
     public boolean equals(Object obj) {
@@ -85,7 +85,7 @@ public final class f implements w1 {
         }
         if (obj != null && f.class == obj.getClass()) {
             f fVar = (f) obj;
-            if (io.sentry.util.y.a(this.f30284d, fVar.f30284d) && io.sentry.util.y.a(Boolean.valueOf(this.f30285e), Boolean.valueOf(fVar.f30285e))) {
+            if (io.sentry.util.y.a(this.f29342d, fVar.f29342d) && io.sentry.util.y.a(Boolean.valueOf(this.f29343e), Boolean.valueOf(fVar.f29343e))) {
                 return true;
             }
         }
@@ -93,20 +93,20 @@ public final class f implements w1 {
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f30284d, Boolean.valueOf(this.f30285e));
+        return io.sentry.util.y.b(this.f29342d, Boolean.valueOf(this.f29343e));
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.r();
-        f3Var.e("flag").f(this.f30284d);
-        f3Var.e("result").d(this.f30285e);
-        Map map = this.f30286i;
+        f3Var.s();
+        f3Var.e("flag").f(this.f29342d);
+        f3Var.e("result").d(this.f29343e);
+        Map map = this.f29344i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30286i.get(str));
+                f3Var.e(str).j(iLogger, this.f29344i.get(str));
             }
         }
-        f3Var.y();
+        f3Var.z();
     }
 }

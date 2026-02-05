@@ -7,7 +7,7 @@ import android.os.IBinder;
 public class ExtractionForegroundService extends Service {
 
     /* renamed from: d  reason: collision with root package name */
-    private final IBinder f15269d = new o1(this);
+    private final IBinder f15663d = new o1(this);
 
     public final synchronized void a() {
         stopForeground(true);
@@ -16,6 +16,6 @@ public class ExtractionForegroundService extends Service {
 
     @Override // android.app.Service
     public final IBinder onBind(Intent intent) {
-        return this.f15269d;
+        return this.f15663d;
     }
 }

@@ -6,21 +6,21 @@ import java.util.concurrent.Executor;
 public class f implements q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f7776a;
+    private final Executor f8161a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Executor {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Handler f7777d;
+        final /* synthetic */ Handler f8162d;
 
         a(Handler handler) {
-            this.f7777d = handler;
+            this.f8162d = handler;
         }
 
         @Override // java.util.concurrent.Executor
         public void execute(Runnable runnable) {
-            this.f7777d.post(runnable);
+            this.f8162d.post(runnable);
         }
     }
 
@@ -29,37 +29,37 @@ public class f implements q {
     public static class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final n f7779d;
+        private final n f8164d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final p f7780e;
+        private final p f8165e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Runnable f7781i;
+        private final Runnable f8166i;
 
         public b(n nVar, p pVar, Runnable runnable) {
-            this.f7779d = nVar;
-            this.f7780e = pVar;
-            this.f7781i = runnable;
+            this.f8164d = nVar;
+            this.f8165e = pVar;
+            this.f8166i = runnable;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            if (this.f7779d.isCanceled()) {
-                this.f7779d.finish("canceled-at-delivery");
+            if (this.f8164d.isCanceled()) {
+                this.f8164d.finish("canceled-at-delivery");
                 return;
             }
-            if (this.f7780e.b()) {
-                this.f7779d.deliverResponse(this.f7780e.f7814a);
+            if (this.f8165e.b()) {
+                this.f8164d.deliverResponse(this.f8165e.f8199a);
             } else {
-                this.f7779d.deliverError(this.f7780e.f7816c);
+                this.f8164d.deliverError(this.f8165e.f8201c);
             }
-            if (this.f7780e.f7817d) {
-                this.f7779d.addMarker("intermediate-response");
+            if (this.f8165e.f8202d) {
+                this.f8164d.addMarker("intermediate-response");
             } else {
-                this.f7779d.finish("done");
+                this.f8164d.finish("done");
             }
-            Runnable runnable = this.f7781i;
+            Runnable runnable = this.f8166i;
             if (runnable != null) {
                 runnable.run();
             }
@@ -67,7 +67,7 @@ public class f implements q {
     }
 
     public f(Handler handler) {
-        this.f7776a = new a(handler);
+        this.f8161a = new a(handler);
     }
 
     @Override // com.android.volley.q
@@ -79,12 +79,12 @@ public class f implements q {
     public void b(n nVar, p pVar, Runnable runnable) {
         nVar.markDelivered();
         nVar.addMarker("post-response");
-        this.f7776a.execute(new b(nVar, pVar, runnable));
+        this.f8161a.execute(new b(nVar, pVar, runnable));
     }
 
     @Override // com.android.volley.q
     public void c(n nVar, u uVar) {
         nVar.addMarker("post-error");
-        this.f7776a.execute(new b(nVar, p.a(uVar), null));
+        this.f8161a.execute(new b(nVar, p.a(uVar), null));
     }
 }

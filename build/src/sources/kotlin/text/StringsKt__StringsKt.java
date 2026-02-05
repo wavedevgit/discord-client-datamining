@@ -24,15 +24,15 @@ public class StringsKt__StringsKt extends w {
     public static final class a implements Sequence {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ CharSequence f35390a;
+        final /* synthetic */ CharSequence f34914a;
 
         public a(CharSequence charSequence) {
-            this.f35390a = charSequence;
+            this.f34914a = charSequence;
         }
 
         @Override // kotlin.sequences.Sequence
         public Iterator iterator() {
-            return new g(this.f35390a);
+            return new g(this.f34914a);
         }
     }
 
@@ -408,7 +408,7 @@ public class StringsKt__StringsKt extends w {
             if (o02 < 0) {
                 return null;
             }
-            return lr.v.a(Integer.valueOf(o02), str);
+            return or.v.a(Integer.valueOf(o02), str);
         }
         CharSequence charSequence3 = charSequence;
         if (!z11) {
@@ -441,7 +441,7 @@ public class StringsKt__StringsKt extends w {
                     }
                     String str3 = (String) obj2;
                     if (str3 != null) {
-                        return lr.v.a(Integer.valueOf(i11), str3);
+                        return or.v.a(Integer.valueOf(i11), str3);
                     }
                     if (i11 == e10) {
                         break;
@@ -478,7 +478,7 @@ public class StringsKt__StringsKt extends w {
                     }
                     String str5 = (String) obj;
                     if (str5 != null) {
-                        return lr.v.a(Integer.valueOf(i12), str5);
+                        return or.v.a(Integer.valueOf(i12), str5);
                     }
                     if (i12 == e11) {
                         break;
@@ -997,7 +997,7 @@ public class StringsKt__StringsKt extends w {
         if (j02 < 0) {
             return null;
         }
-        return lr.v.a(Integer.valueOf(j02), 1);
+        return or.v.a(Integer.valueOf(j02), 1);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1005,7 +1005,7 @@ public class StringsKt__StringsKt extends w {
         Intrinsics.checkNotNullParameter(DelimitedRangesSequence, "$this$DelimitedRangesSequence");
         Pair a02 = a0(DelimitedRangesSequence, list, i10, z10, false);
         if (a02 != null) {
-            return lr.v.a(a02.c(), Integer.valueOf(((String) a02.d()).length()));
+            return or.v.a(a02.c(), Integer.valueOf(((String) a02.d()).length()));
         }
         return null;
     }

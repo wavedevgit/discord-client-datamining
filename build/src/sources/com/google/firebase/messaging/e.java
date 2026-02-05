@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final long f16073a = TimeUnit.MINUTES.toMillis(3);
+    public static final long f16467a = TimeUnit.MINUTES.toMillis(3);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {

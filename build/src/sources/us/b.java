@@ -1,53 +1,70 @@
 package us;
 
-import java.util.ArrayList;
 import kotlin.Unit;
-import kotlin.jvm.functions.Function1;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.TypeIntrinsics;
+import ms.i0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface b extends o {
+public final class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final long f51667a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static void a(b bVar, Function1[] otherFormats, Function1 mainFormat) {
-            Intrinsics.checkNotNullParameter(otherFormats, "otherFormats");
-            Intrinsics.checkNotNullParameter(mainFormat, "mainFormat");
-            ArrayList arrayList = new ArrayList(otherFormats.length);
-            for (Function1 function1 : otherFormats) {
-                b i10 = bVar.i();
-                function1.invoke(i10);
-                arrayList.add(i10.a().b());
-            }
-            b i11 = bVar.i();
-            mainFormat.invoke(i11);
-            bVar.a().a(new ws.c(i11.a().b(), arrayList));
+    /* synthetic */ class a extends FunctionReferenceImpl implements Function3 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f51668d = new a();
+
+        a() {
+            super(3, b.class, "register", "register(Lkotlinx/coroutines/selects/SelectInstance;Ljava/lang/Object;)V", 0);
         }
 
-        public static void b(b bVar, String onZero, Function1 format) {
-            Intrinsics.checkNotNullParameter(onZero, "onZero");
-            Intrinsics.checkNotNullParameter(format, "format");
-            ws.d a10 = bVar.a();
-            b i10 = bVar.i();
-            format.invoke(i10);
-            Unit unit = Unit.f32464a;
-            a10.a(new ws.t(onZero, i10.a().b()));
+        public final void a(b bVar, l lVar, Object obj) {
+            bVar.d(lVar, obj);
         }
 
-        public static ws.f c(b bVar) {
-            return new ws.f(bVar.a().b().c());
-        }
-
-        public static void d(b bVar, String value) {
-            Intrinsics.checkNotNullParameter(value, "value");
-            bVar.a().a(new ws.j(value));
+        @Override // kotlin.jvm.functions.Function3
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
+            a((b) obj, (l) obj2, obj3);
+            return Unit.f31988a;
         }
     }
 
-    ws.d a();
+    public b(long j10) {
+        this.f51667a = j10;
+    }
 
-    void b(String str, Function1 function1);
+    /* JADX INFO: Access modifiers changed from: private */
+    public final void d(final l lVar, Object obj) {
+        if (this.f51667a <= 0) {
+            lVar.e(Unit.f31988a);
+            return;
+        }
+        Runnable runnable = new Runnable() { // from class: us.a
+            @Override // java.lang.Runnable
+            public final void run() {
+                b.e(l.this, this);
+            }
+        };
+        Intrinsics.checkNotNull(lVar, "null cannot be cast to non-null type kotlinx.coroutines.selects.SelectImplementation<*>");
+        k kVar = (k) lVar;
+        CoroutineContext context = kVar.getContext();
+        kVar.n(i0.c(context).D0(this.f51667a, runnable, context));
+    }
 
-    void f(Function1[] function1Arr, Function1 function1);
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void e(l lVar, b bVar) {
+        lVar.f(bVar, Unit.f31988a);
+    }
 
-    b i();
+    public final f c() {
+        a aVar = a.f51668d;
+        Intrinsics.checkNotNull(aVar, "null cannot be cast to non-null type kotlin.Function3<@[ParameterName(name = \"clauseObject\")] kotlin.Any, @[ParameterName(name = \"select\")] kotlinx.coroutines.selects.SelectInstance<*>, @[ParameterName(name = \"param\")] kotlin.Any?, kotlin.Unit>");
+        return new g(this, (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(aVar, 3), null, 4, null);
+    }
 }

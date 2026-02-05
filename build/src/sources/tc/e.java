@@ -9,64 +9,64 @@ import ne.w0;
 public final class e implements l {
 
     /* renamed from: b  reason: collision with root package name */
-    private final le.j f49926b;
+    private final le.j f50531b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f49927c;
+    private final long f50532c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f49928d;
+    private long f50533d;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f49930f;
+    private int f50535f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f49931g;
+    private int f50536g;
 
     /* renamed from: e  reason: collision with root package name */
-    private byte[] f49929e = new byte[65536];
+    private byte[] f50534e = new byte[65536];
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f49925a = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
+    private final byte[] f50530a = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
 
     static {
         lc.u.a("goog.exo.extractor");
     }
 
     public e(le.j jVar, long j10, long j11) {
-        this.f49926b = jVar;
-        this.f49928d = j10;
-        this.f49927c = j11;
+        this.f50531b = jVar;
+        this.f50533d = j10;
+        this.f50532c = j11;
     }
 
     private void o(int i10) {
         if (i10 != -1) {
-            this.f49928d += i10;
+            this.f50533d += i10;
         }
     }
 
     private void p(int i10) {
-        int i11 = this.f49930f + i10;
-        byte[] bArr = this.f49929e;
+        int i11 = this.f50535f + i10;
+        byte[] bArr = this.f50534e;
         if (i11 > bArr.length) {
-            this.f49929e = Arrays.copyOf(this.f49929e, w0.q(bArr.length * 2, 65536 + i11, i11 + 524288));
+            this.f50534e = Arrays.copyOf(this.f50534e, w0.q(bArr.length * 2, 65536 + i11, i11 + 524288));
         }
     }
 
     private int q(byte[] bArr, int i10, int i11) {
-        int i12 = this.f49931g;
+        int i12 = this.f50536g;
         if (i12 == 0) {
             return 0;
         }
         int min = Math.min(i12, i11);
-        System.arraycopy(this.f49929e, 0, bArr, i10, min);
+        System.arraycopy(this.f50534e, 0, bArr, i10, min);
         u(min);
         return min;
     }
 
     private int r(byte[] bArr, int i10, int i11, int i12, boolean z10) {
         if (!Thread.interrupted()) {
-            int read = this.f49926b.read(bArr, i10 + i12, i11 - i12);
+            int read = this.f50531b.read(bArr, i10 + i12, i11 - i12);
             if (read == -1) {
                 if (i12 == 0 && z10) {
                     return -1;
@@ -79,31 +79,31 @@ public final class e implements l {
     }
 
     private int s(int i10) {
-        int min = Math.min(this.f49931g, i10);
+        int min = Math.min(this.f50536g, i10);
         u(min);
         return min;
     }
 
     private void u(int i10) {
         byte[] bArr;
-        int i11 = this.f49931g - i10;
-        this.f49931g = i11;
-        this.f49930f = 0;
-        byte[] bArr2 = this.f49929e;
+        int i11 = this.f50536g - i10;
+        this.f50536g = i11;
+        this.f50535f = 0;
+        byte[] bArr2 = this.f50534e;
         if (i11 < bArr2.length - 524288) {
             bArr = new byte[65536 + i11];
         } else {
             bArr = bArr2;
         }
         System.arraycopy(bArr2, i10, bArr, 0, i11);
-        this.f49929e = bArr;
+        this.f50534e = bArr;
     }
 
     @Override // tc.l
     public int a(int i10) {
         int s10 = s(i10);
         if (s10 == 0) {
-            byte[] bArr = this.f49925a;
+            byte[] bArr = this.f50530a;
             s10 = r(bArr, 0, Math.min(i10, bArr.length), 0, true);
         }
         o(s10);
@@ -115,13 +115,13 @@ public final class e implements l {
         if (!l(i11, z10)) {
             return false;
         }
-        System.arraycopy(this.f49929e, this.f49930f - i11, bArr, i10, i11);
+        System.arraycopy(this.f50534e, this.f50535f - i11, bArr, i10, i11);
         return true;
     }
 
     @Override // tc.l
     public void e() {
-        this.f49930f = 0;
+        this.f50535f = 0;
     }
 
     @Override // tc.l
@@ -139,17 +139,17 @@ public final class e implements l {
 
     @Override // tc.l
     public long g() {
-        return this.f49928d + this.f49930f;
+        return this.f50533d + this.f50535f;
     }
 
     @Override // tc.l
     public long getLength() {
-        return this.f49927c;
+        return this.f50532c;
     }
 
     @Override // tc.l
     public long getPosition() {
-        return this.f49928d;
+        return this.f50533d;
     }
 
     @Override // tc.l
@@ -162,22 +162,22 @@ public final class e implements l {
         e eVar;
         int min;
         p(i11);
-        int i12 = this.f49931g;
-        int i13 = this.f49930f;
+        int i12 = this.f50536g;
+        int i13 = this.f50535f;
         int i14 = i12 - i13;
         if (i14 == 0) {
             eVar = this;
-            min = eVar.r(this.f49929e, i13, i11, 0, true);
+            min = eVar.r(this.f50534e, i13, i11, 0, true);
             if (min == -1) {
                 return -1;
             }
-            eVar.f49931g += min;
+            eVar.f50536g += min;
         } else {
             eVar = this;
             min = Math.min(i11, i14);
         }
-        System.arraycopy(eVar.f49929e, eVar.f49930f, bArr, i10, min);
-        eVar.f49930f += min;
+        System.arraycopy(eVar.f50534e, eVar.f50535f, bArr, i10, min);
+        eVar.f50535f += min;
         return min;
     }
 
@@ -189,19 +189,19 @@ public final class e implements l {
     @Override // tc.l
     public boolean l(int i10, boolean z10) {
         p(i10);
-        int i11 = this.f49931g - this.f49930f;
+        int i11 = this.f50536g - this.f50535f;
         while (i11 < i10) {
             int i12 = i10;
             boolean z11 = z10;
-            i11 = r(this.f49929e, this.f49930f, i12, i11, z11);
+            i11 = r(this.f50534e, this.f50535f, i12, i11, z11);
             if (i11 == -1) {
                 return false;
             }
-            this.f49931g = this.f49930f + i11;
+            this.f50536g = this.f50535f + i11;
             i10 = i12;
             z10 = z11;
         }
-        this.f49930f += i10;
+        this.f50535f += i10;
         return true;
     }
 
@@ -228,7 +228,7 @@ public final class e implements l {
     public boolean t(int i10, boolean z10) {
         int s10 = s(i10);
         while (s10 < i10 && s10 != -1) {
-            s10 = r(this.f49925a, -s10, Math.min(i10, this.f49925a.length + s10), s10, z10);
+            s10 = r(this.f50530a, -s10, Math.min(i10, this.f50530a.length + s10), s10, z10);
         }
         o(s10);
         if (s10 != -1) {

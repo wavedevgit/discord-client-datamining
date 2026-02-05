@@ -7,42 +7,42 @@ import z.u;
 public final class b extends u.c {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Size f55347d;
+    private final Size f54936d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f55348e;
+    private final int f54937e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f55349f;
+    private final int f54938f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f55350g;
+    private final boolean f54939g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Size f55351h;
+    private final Size f54940h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f55352i;
+    private final int f54941i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final j0.u f55353j;
+    private final j0.u f54942j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final j0.u f55354k;
+    private final j0.u f54943k;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Size size, int i10, int i11, boolean z10, x.u0 u0Var, Size size2, int i12, j0.u uVar, j0.u uVar2) {
         if (size != null) {
-            this.f55347d = size;
-            this.f55348e = i10;
-            this.f55349f = i11;
-            this.f55350g = z10;
-            this.f55351h = size2;
-            this.f55352i = i12;
+            this.f54936d = size;
+            this.f54937e = i10;
+            this.f54938f = i11;
+            this.f54939g = z10;
+            this.f54940h = size2;
+            this.f54941i = i12;
             if (uVar != null) {
-                this.f55353j = uVar;
+                this.f54942j = uVar;
                 if (uVar2 != null) {
-                    this.f55354k = uVar2;
+                    this.f54943k = uVar2;
                     return;
                 }
                 throw new NullPointerException("Null errorEdge");
@@ -54,7 +54,7 @@ public final class b extends u.c {
 
     @Override // z.u.c
     j0.u b() {
-        return this.f55354k;
+        return this.f54943k;
     }
 
     @Override // z.u.c
@@ -64,12 +64,12 @@ public final class b extends u.c {
 
     @Override // z.u.c
     int d() {
-        return this.f55348e;
+        return this.f54937e;
     }
 
     @Override // z.u.c
     int e() {
-        return this.f55349f;
+        return this.f54938f;
     }
 
     public boolean equals(Object obj) {
@@ -78,11 +78,11 @@ public final class b extends u.c {
         }
         if (obj instanceof u.c) {
             u.c cVar = (u.c) obj;
-            if (this.f55347d.equals(cVar.j()) && this.f55348e == cVar.d() && this.f55349f == cVar.e() && this.f55350g == cVar.l()) {
+            if (this.f54936d.equals(cVar.j()) && this.f54937e == cVar.d() && this.f54938f == cVar.e() && this.f54939g == cVar.l()) {
                 cVar.c();
-                Size size = this.f55351h;
+                Size size = this.f54940h;
                 if (size != null ? size.equals(cVar.g()) : cVar.g() == null) {
-                    if (this.f55352i == cVar.f() && this.f55353j.equals(cVar.i()) && this.f55354k.equals(cVar.b())) {
+                    if (this.f54941i == cVar.f() && this.f54942j.equals(cVar.i()) && this.f54943k.equals(cVar.b())) {
                         return true;
                     }
                 }
@@ -93,49 +93,49 @@ public final class b extends u.c {
 
     @Override // z.u.c
     int f() {
-        return this.f55352i;
+        return this.f54941i;
     }
 
     @Override // z.u.c
     Size g() {
-        return this.f55351h;
+        return this.f54940h;
     }
 
     public int hashCode() {
         int i10;
         int hashCode;
-        int hashCode2 = (((((this.f55347d.hashCode() ^ 1000003) * 1000003) ^ this.f55348e) * 1000003) ^ this.f55349f) * 1000003;
-        if (this.f55350g) {
+        int hashCode2 = (((((this.f54936d.hashCode() ^ 1000003) * 1000003) ^ this.f54937e) * 1000003) ^ this.f54938f) * 1000003;
+        if (this.f54939g) {
             i10 = 1231;
         } else {
             i10 = 1237;
         }
         int i11 = (hashCode2 ^ i10) * (-721379959);
-        Size size = this.f55351h;
+        Size size = this.f54940h;
         if (size == null) {
             hashCode = 0;
         } else {
             hashCode = size.hashCode();
         }
-        return ((((((i11 ^ hashCode) * 1000003) ^ this.f55352i) * 1000003) ^ this.f55353j.hashCode()) * 1000003) ^ this.f55354k.hashCode();
+        return ((((((i11 ^ hashCode) * 1000003) ^ this.f54941i) * 1000003) ^ this.f54942j.hashCode()) * 1000003) ^ this.f54943k.hashCode();
     }
 
     @Override // z.u.c
     j0.u i() {
-        return this.f55353j;
+        return this.f54942j;
     }
 
     @Override // z.u.c
     Size j() {
-        return this.f55347d;
+        return this.f54936d;
     }
 
     @Override // z.u.c
     boolean l() {
-        return this.f55350g;
+        return this.f54939g;
     }
 
     public String toString() {
-        return "In{size=" + this.f55347d + ", inputFormat=" + this.f55348e + ", outputFormat=" + this.f55349f + ", virtualCamera=" + this.f55350g + ", imageReaderProxyProvider=" + ((Object) null) + ", postviewSize=" + this.f55351h + ", postviewImageFormat=" + this.f55352i + ", requestEdge=" + this.f55353j + ", errorEdge=" + this.f55354k + "}";
+        return "In{size=" + this.f54936d + ", inputFormat=" + this.f54937e + ", outputFormat=" + this.f54938f + ", virtualCamera=" + this.f54939g + ", imageReaderProxyProvider=" + ((Object) null) + ", postviewSize=" + this.f54940h + ", postviewImageFormat=" + this.f54941i + ", requestEdge=" + this.f54942j + ", errorEdge=" + this.f54943k + "}";
     }
 }

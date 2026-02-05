@@ -41,27 +41,27 @@ public final class StepStyles_GovernmentIdStepBorderColorJsonAdapter extends h {
     @NotNull
     public StepStyles.GovernmentIdStepBorderColor fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         StyleElements.SimpleElementColor simpleElementColor3 = null;
         StyleElements.SimpleElementColor simpleElementColor4 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 simpleElementColor3 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 simpleElementColor4 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.GovernmentIdStepBorderColor(simpleElementColor, simpleElementColor2, simpleElementColor3, simpleElementColor4);
     }
 
@@ -69,14 +69,14 @@ public final class StepStyles_GovernmentIdStepBorderColorJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.GovernmentIdStepBorderColor governmentIdStepBorderColor) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepBorderColor != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepBorderColor.getBase());
-            writer.A0("governmentIdSelectOption");
+            writer.W("governmentIdSelectOption");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepBorderColor.getGovernmentIdSelectOption());
-            writer.A0("governmentIdCaptureFeedBox");
+            writer.W("governmentIdCaptureFeedBox");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepBorderColor.getGovernmentIdCaptureFeedBox());
-            writer.A0("governmentIdReviewImageBox");
+            writer.W("governmentIdReviewImageBox");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepBorderColor.getGovernmentIdReviewImageBox());
             writer.E();
             return;

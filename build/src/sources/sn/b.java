@@ -1,22 +1,49 @@
 package sn;
 
-import android.graphics.Rect;
-import android.view.View;
-import kotlin.jvm.internal.Intrinsics;
-import pn.i;
+import kotlin.Result;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-    public static final void a(a aVar, i cameraController, View pointOfInterestView) {
-        Intrinsics.checkNotNullParameter(aVar, "<this>");
-        Intrinsics.checkNotNullParameter(cameraController, "cameraController");
-        Intrinsics.checkNotNullParameter(pointOfInterestView, "pointOfInterestView");
-        int[] iArr = new int[2];
-        pointOfInterestView.getLocationOnScreen(iArr);
-        int i10 = iArr[0];
-        Rect rect = new Rect(i10, iArr[1], pointOfInterestView.getWidth() + i10, iArr[1] + pointOfInterestView.getHeight());
-        View e10 = cameraController.e();
-        e10.getLocationOnScreen(iArr);
-        int i11 = iArr[0];
-        aVar.a(rect, new Rect(i11, iArr[1], e10.getWidth() + i11, iArr[1] + e10.getHeight()));
+public final class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Object f49834a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final boolean f49835b;
+
+    public b(Object obj, boolean z10) {
+        this.f49834a = obj;
+        this.f49835b = z10;
+    }
+
+    public final Object a() {
+        return this.f49834a;
+    }
+
+    public final boolean b() {
+        return this.f49835b;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof b)) {
+            return false;
+        }
+        b bVar = (b) obj;
+        if (Result.d(this.f49834a, bVar.f49834a) && this.f49835b == bVar.f49835b) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return (Result.f(this.f49834a) * 31) + Boolean.hashCode(this.f49835b);
+    }
+
+    public String toString() {
+        String i10 = Result.i(this.f49834a);
+        boolean z10 = this.f49835b;
+        return "AnalyzerResult(result=" + i10 + ", isActiveAnalyzer=" + z10 + ")";
     }
 }

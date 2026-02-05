@@ -1,91 +1,52 @@
 package wp;
 
-import android.view.View;
-import android.view.ViewGroup;
-import androidx.core.graphics.Insets;
-import androidx.core.view.WindowInsetsCompat;
-import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.functions.Function1;
+import android.location.Location;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
+public final class b {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a extends BottomSheetBehavior.g {
+    /* renamed from: a  reason: collision with root package name */
+    private final Location f53225a;
 
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function0 f52611a;
+    /* renamed from: b  reason: collision with root package name */
+    private final c f53226b;
 
-        /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ View f52612b;
-
-        a(Function0 function0, View view) {
-            this.f52611a = function0;
-            this.f52612b = view;
-        }
-
-        @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
-        public void b(View bottomSheet, float f10) {
-            View view;
-            Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-            if (f10 > 0.0f && (view = this.f52612b) != null) {
-                view.setVisibility(0);
-            }
-            View view2 = this.f52612b;
-            if (view2 != null) {
-                view2.setAlpha(kotlin.ranges.d.c(f10, 0.0f));
-            }
-        }
-
-        @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
-        public void c(View bottomSheet, int i10) {
-            Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-            if (i10 == 4 || i10 == 5) {
-                this.f52611a.invoke();
-                View view = this.f52612b;
-                if (view != null) {
-                    view.setVisibility(8);
-                }
-            }
-        }
+    public b(Location location, c precision) {
+        Intrinsics.checkNotNullParameter(location, "location");
+        Intrinsics.checkNotNullParameter(precision, "precision");
+        this.f53225a = location;
+        this.f53226b = precision;
     }
 
-    public static final void b(BottomSheetBehavior bottomSheetBehavior, Function0 onCancel, final View bottomSheet, View view, View view2) {
-        Intrinsics.checkNotNullParameter(bottomSheetBehavior, "<this>");
-        Intrinsics.checkNotNullParameter(onCancel, "onCancel");
-        Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-        bottomSheetBehavior.c0(new a(onCancel, view2));
-        bottomSheetBehavior.X0(true);
-        if (view != null) {
-            bottomSheet = view;
-        }
-        f.g(bottomSheet, new Function1() { // from class: wp.a
-            @Override // kotlin.jvm.functions.Function1
-            public final Object invoke(Object obj) {
-                Unit c10;
-                c10 = b.c(bottomSheet, (WindowInsetsCompat) obj);
-                return c10;
-            }
-        });
+    public final Location a() {
+        return this.f53225a;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit c(View view, WindowInsetsCompat insets) {
-        Intrinsics.checkNotNullParameter(insets, "insets");
-        Insets g10 = insets.g(WindowInsetsCompat.p.h());
-        Intrinsics.checkNotNullExpressionValue(g10, "getInsetsIgnoringVisibility(...)");
-        Insets f10 = insets.f(WindowInsetsCompat.p.c());
-        Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
-        view.setPadding(view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(), Integer.max(g10.f3166d, f10.f3166d));
-        ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
-        if (layoutParams != null) {
-            ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
-            marginLayoutParams.topMargin = g10.f3164b;
-            view.setLayoutParams(marginLayoutParams);
-            return Unit.f32464a;
+    public final c b() {
+        return this.f53226b;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
+        if (!(obj instanceof b)) {
+            return false;
+        }
+        b bVar = (b) obj;
+        if (Intrinsics.areEqual(this.f53225a, bVar.f53225a) && this.f53226b == bVar.f53226b) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return (this.f53225a.hashCode() * 31) + this.f53226b.hashCode();
+    }
+
+    public String toString() {
+        Location location = this.f53225a;
+        c cVar = this.f53226b;
+        return "GpsData(location=" + location + ", precision=" + cVar + ")";
     }
 }

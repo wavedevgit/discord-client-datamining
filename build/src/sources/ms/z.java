@@ -1,26 +1,41 @@
 package ms;
 
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function2;
-import kotlinx.coroutines.flow.FlowCollector;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class z extends a {
+public interface z extends CoroutineContext.Element {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final Function2 f39387d;
+    /* renamed from: j  reason: collision with root package name */
+    public static final b f38962j = b.f38963d;
 
-    public z(Function2 function2) {
-        this.f39387d = function2;
-    }
-
-    @Override // ms.a
-    public Object a(FlowCollector flowCollector, Continuation continuation) {
-        Object invoke = this.f39387d.invoke(flowCollector, continuation);
-        if (invoke == rr.b.f()) {
-            return invoke;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static Object a(z zVar, Object obj, Function2 function2) {
+            return CoroutineContext.Element.a.a(zVar, obj, function2);
         }
-        return Unit.f32464a;
+
+        public static CoroutineContext.Element b(z zVar, CoroutineContext.b bVar) {
+            return CoroutineContext.Element.a.b(zVar, bVar);
+        }
+
+        public static CoroutineContext c(z zVar, CoroutineContext.b bVar) {
+            return CoroutineContext.Element.a.c(zVar, bVar);
+        }
+
+        public static CoroutineContext d(z zVar, CoroutineContext coroutineContext) {
+            return CoroutineContext.Element.a.d(zVar, coroutineContext);
+        }
     }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b implements CoroutineContext.b {
+
+        /* renamed from: d  reason: collision with root package name */
+        static final /* synthetic */ b f38963d = new b();
+
+        private b() {
+        }
+    }
+
+    void S0(CoroutineContext coroutineContext, Throwable th2);
 }

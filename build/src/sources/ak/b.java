@@ -1,26 +1,26 @@
 package ak;
+
+import java.util.List;
+import og.xe;
+import og.ye;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static com.google.android.gms.common.d[] a(zj.d dVar) {
-        if (dVar.d()) {
-            return pj.l.f46052a;
-        }
-        switch (dVar.h()) {
-            case 2:
-                return new com.google.android.gms.common.d[]{pj.l.f46058g};
-            case 3:
-                return new com.google.android.gms.common.d[]{pj.l.f46060i};
-            case 4:
-                return new com.google.android.gms.common.d[]{pj.l.f46061j};
-            case 5:
-                return new com.google.android.gms.common.d[]{pj.l.f46062k};
-            case 6:
-            case 7:
-            case 8:
-                return new com.google.android.gms.common.d[]{pj.l.f46059h};
-            default:
-                return new com.google.android.gms.common.d[]{pj.l.f46057f};
-        }
+public class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final int f690a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final List f691b;
+
+    public b(int i10, List list) {
+        this.f690a = i10;
+        this.f691b = list;
+    }
+
+    public String toString() {
+        xe a10 = ye.a("FaceContour");
+        a10.b("type", this.f690a);
+        a10.c("points", this.f691b.toArray());
+        return a10.toString();
     }
 }

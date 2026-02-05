@@ -17,21 +17,21 @@ public final class q4 extends o1 implements w2 {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.internal.play_billing.q4.<init>(com.google.android.gms.internal.play_billing.p4):void");
     }
 
-    public final q4 m(x4 x4Var) {
+    public final q4 l(x4 x4Var) {
         i();
-        r4.C((r4) this.f13949e, (b5) x4Var.f());
+        r4.C((r4) this.f14343e, (b5) x4Var.f());
         return this;
     }
 
-    public final q4 o(s5 s5Var) {
+    public final q4 n(s5 s5Var) {
         i();
-        r4.D((r4) this.f13949e, s5Var);
+        r4.D((r4) this.f14343e, s5Var);
         return this;
     }
 
     public final q4 p(int i10) {
         i();
-        r4.E((r4) this.f13949e, i10);
+        r4.E((r4) this.f14343e, i10);
         return this;
     }
 }

@@ -1,57 +1,26 @@
 package ms;
 
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.flow.Flow;
-/* JADX INFO: Access modifiers changed from: package-private */
+import kotlin.Result;
+import kotlinx.coroutines.CompletableDeferred;
+import kotlinx.coroutines.Job;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract /* synthetic */ class q {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final Function1 f39257a = new Function1() { // from class: ms.o
-        @Override // kotlin.jvm.functions.Function1
-        public final Object invoke(Object obj) {
-            Object d10;
-            d10 = q.d(obj);
-            return d10;
-        }
-    };
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final Function2 f39258b = new Function2() { // from class: ms.p
-        @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(Object obj, Object obj2) {
-            boolean c10;
-            c10 = q.c(obj, obj2);
-            return Boolean.valueOf(c10);
-        }
-    };
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final boolean c(Object obj, Object obj2) {
-        return Intrinsics.areEqual(obj, obj2);
+public abstract class q {
+    public static final CompletableDeferred a(Job job) {
+        return new p(job);
     }
 
-    public static final Flow e(Flow flow) {
-        if (flow instanceof j0) {
-            return flow;
+    public static /* synthetic */ CompletableDeferred b(Job job, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            job = null;
         }
-        return f(flow, f39257a, f39258b);
+        return a(job);
     }
 
-    private static final Flow f(Flow flow, Function1 function1, Function2 function2) {
-        if (flow instanceof f) {
-            f fVar = (f) flow;
-            if (fVar.f39161e == function1 && fVar.f39162i == function2) {
-                return flow;
-            }
+    public static final boolean c(CompletableDeferred completableDeferred, Object obj) {
+        Throwable e10 = Result.e(obj);
+        if (e10 == null) {
+            return completableDeferred.K0(obj);
         }
-        return new f(flow, function1, function2);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Object d(Object obj) {
-        return obj;
+        return completableDeferred.I0(e10);
     }
 }

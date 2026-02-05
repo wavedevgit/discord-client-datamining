@@ -17,21 +17,21 @@ public abstract class InternalErrorInfo implements Parcelable {
     private static final h fallbackAdapter = new h() { // from class: com.withpersona.sdk2.inquiry.network.core.InternalErrorInfo$Companion$fallbackAdapter$1
         @Override // com.squareup.moshi.h
         public Object fromJson(m mVar) {
-            mVar.r();
-            mVar.y();
+            mVar.s();
+            mVar.z();
             return null;
         }
 
         @Override // com.squareup.moshi.h
         public void toJson(t tVar, Object obj) {
             String str;
-            t A0 = tVar.l().A0("message");
+            t W = tVar.k().W("message");
             if (obj != null) {
                 str = obj.getClass().getCanonicalName();
             } else {
                 str = null;
             }
-            A0.x1("Error with class '" + str + "' does not have a json adapter registered.").E();
+            W.x1("Error with class '" + str + "' does not have a json adapter registered.").E();
         }
     }.nullSafe();
 
@@ -121,7 +121,7 @@ public abstract class InternalErrorInfo implements Parcelable {
 
         @NotNull
         public final h.e createAdapter() {
-            return um.b.b(InternalErrorInfo.class, "type").e(NetworkErrorInfo.class, "network").e(IntegrationErrorInfo.class, "integration").e(PermissionErrorInfo.class, "permission").e(CameraErrorInfo.class, "camera").e(ConfigurationErrorInfo.class, "configuration").e(InvalidOneTimeLinkCode.class, "one_time_link_code").e(UnknownErrorInfo.class, "unknown").d(InternalErrorInfo.fallbackAdapter);
+            return xm.b.b(InternalErrorInfo.class, "type").e(NetworkErrorInfo.class, "network").e(IntegrationErrorInfo.class, "integration").e(PermissionErrorInfo.class, "permission").e(CameraErrorInfo.class, "camera").e(ConfigurationErrorInfo.class, "configuration").e(InvalidOneTimeLinkCode.class, "one_time_link_code").e(UnknownErrorInfo.class, "unknown").d(InternalErrorInfo.fallbackAdapter);
         }
 
         private Companion() {

@@ -3,17 +3,19 @@ package com.withpersona.sdk2.inquiry.steps.ui.components;
 import android.os.Parcel;
 import android.os.Parcelable;
 import androidx.recyclerview.widget.RecyclerView;
-import aq.b4;
-import aq.c2;
-import aq.e0;
-import aq.k5;
-import aq.v;
-import bq.k;
+import bn.t;
+import bn.w;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
 import com.withpersona.sdk2.inquiry.network.dto.ui.InputSelectBoxComponentStyle;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.InputInternationalDb;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.InputSelectComponentStyle;
+import dq.b4;
+import dq.c2;
+import dq.e0;
+import dq.k5;
+import dq.v;
+import eq.k;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
@@ -27,8 +29,6 @@ import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import ym.t;
-import ym.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class b implements k5, v, e0 {
     private List A;
@@ -37,50 +37,50 @@ public final class b implements k5, v, e0 {
     private t D;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19312d;
+    private final String f19718d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f19313e;
+    private final String f19719e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f19314i;
+    private final String f19720i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f19315o;
+    private final String f19721o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final JsonLogicBoolean f19316p;
+    private final JsonLogicBoolean f19722p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final JsonLogicBoolean f19317q;
+    private final JsonLogicBoolean f19723q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f19318r;
+    private final boolean f19724r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f19319s;
+    private final boolean f19725s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Boolean f19320t;
+    private final Boolean f19726t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Boolean f19321u;
+    private final Boolean f19727u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final List f19322v;
+    private final List f19728v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final InputSelectComponentStyle f19323w;
+    private final InputSelectComponentStyle f19729w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final List f19324x;
+    private final List f19730x;
 
     /* renamed from: y  reason: collision with root package name */
-    private k f19325y;
+    private k f19731y;
 
     /* renamed from: z  reason: collision with root package name */
-    private k f19326z;
-    public static final C0245b E = new C0245b(null);
+    private k f19732z;
+    public static final C0263b E = new C0263b(null);
     @NotNull
     public static final Parcelable.Creator<b> CREATOR = new d();
 
@@ -88,15 +88,15 @@ public final class b implements k5, v, e0 {
     public static final class a implements c2 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Set f19328e;
+        final /* synthetic */ Set f19734e;
 
         a(Set set) {
-            this.f19328e = set;
+            this.f19734e = set;
         }
 
-        @Override // aq.c2
+        @Override // dq.c2
         public List b() {
-            Set<c> set = this.f19328e;
+            Set<c> set = this.f19734e;
             ArrayList arrayList = new ArrayList(CollectionsKt.w(set, 10));
             for (c cVar : set) {
                 arrayList.add(com.withpersona.sdk2.inquiry.steps.ui.components.c.h(cVar));
@@ -104,41 +104,41 @@ public final class b implements k5, v, e0 {
             return arrayList;
         }
 
-        @Override // aq.c2
+        @Override // dq.c2
         public boolean c() {
             return false;
         }
 
-        @Override // aq.c2
+        @Override // dq.c2
         public List f() {
             return CollectionsKt.l();
         }
 
-        @Override // aq.c2
+        @Override // dq.c2
         public String getLabel() {
             return null;
         }
 
-        @Override // aq.c2
+        @Override // dq.c2
         public InputSelectBoxComponentStyle getStyles() {
-            return b.this.s();
+            return b.this.t();
         }
     }
 
     /* renamed from: com.withpersona.sdk2.inquiry.steps.ui.components.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0245b {
+    public static final class C0263b {
 
         /* renamed from: com.withpersona.sdk2.inquiry.steps.ui.components.b$b$a */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Comparator {
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
-                return or.a.d(((e) obj).b(), ((e) obj2).b());
+                return rr.a.d(((e) obj).b(), ((e) obj2).b());
             }
         }
 
-        public /* synthetic */ C0245b(DefaultConstructorMarker defaultConstructorMarker) {
+        public /* synthetic */ C0263b(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -264,7 +264,7 @@ public final class b implements k5, v, e0 {
             return new b(name2, str, str2, str3, jsonLogicBoolean, jsonLogicBoolean2, z11, z13, bool, bool2, list, inputSelectComponentStyle);
         }
 
-        private C0245b() {
+        private C0263b() {
         }
     }
 
@@ -272,24 +272,24 @@ public final class b implements k5, v, e0 {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19329a;
+        private final String f19735a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f19330b;
+        private final String f19736b;
 
         public c(String countryName, String countryCode) {
             Intrinsics.checkNotNullParameter(countryName, "countryName");
             Intrinsics.checkNotNullParameter(countryCode, "countryCode");
-            this.f19329a = countryName;
-            this.f19330b = countryCode;
+            this.f19735a = countryName;
+            this.f19736b = countryCode;
         }
 
         public final String a() {
-            return this.f19330b;
+            return this.f19736b;
         }
 
         public final String b() {
-            return this.f19329a;
+            return this.f19735a;
         }
 
         public boolean equals(Object obj) {
@@ -298,18 +298,18 @@ public final class b implements k5, v, e0 {
             }
             if (obj instanceof c) {
                 c cVar = (c) obj;
-                return Intrinsics.areEqual(this.f19329a, cVar.f19329a) && Intrinsics.areEqual(this.f19330b, cVar.f19330b);
+                return Intrinsics.areEqual(this.f19735a, cVar.f19735a) && Intrinsics.areEqual(this.f19736b, cVar.f19736b);
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f19329a.hashCode() * 31) + this.f19330b.hashCode();
+            return (this.f19735a.hashCode() * 31) + this.f19736b.hashCode();
         }
 
         public String toString() {
-            String str = this.f19329a;
-            String str2 = this.f19330b;
+            String str = this.f19735a;
+            String str2 = this.f19736b;
             return "CountryOption(countryName=" + str + ", countryCode=" + str2 + ")";
         }
     }
@@ -383,24 +383,24 @@ public final class b implements k5, v, e0 {
     public static final class e {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19331a;
+        private final String f19737a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f19332b;
+        private final String f19738b;
 
         public e(String idType, String name) {
             Intrinsics.checkNotNullParameter(idType, "idType");
             Intrinsics.checkNotNullParameter(name, "name");
-            this.f19331a = idType;
-            this.f19332b = name;
+            this.f19737a = idType;
+            this.f19738b = name;
         }
 
         public final String a() {
-            return this.f19331a;
+            return this.f19737a;
         }
 
         public final String b() {
-            return this.f19332b;
+            return this.f19738b;
         }
 
         public boolean equals(Object obj) {
@@ -409,18 +409,18 @@ public final class b implements k5, v, e0 {
             }
             if (obj instanceof e) {
                 e eVar = (e) obj;
-                return Intrinsics.areEqual(this.f19331a, eVar.f19331a) && Intrinsics.areEqual(this.f19332b, eVar.f19332b);
+                return Intrinsics.areEqual(this.f19737a, eVar.f19737a) && Intrinsics.areEqual(this.f19738b, eVar.f19738b);
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f19331a.hashCode() * 31) + this.f19332b.hashCode();
+            return (this.f19737a.hashCode() * 31) + this.f19738b.hashCode();
         }
 
         public String toString() {
-            String str = this.f19331a;
-            String str2 = this.f19332b;
+            String str = this.f19737a;
+            String str2 = this.f19738b;
             return "IdOption(idType=" + str + ", name=" + str2 + ")";
         }
     }
@@ -429,7 +429,7 @@ public final class b implements k5, v, e0 {
     public static final class f implements Comparator {
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
-            return or.a.d(((e) obj).b(), ((e) obj2).b());
+            return rr.a.d(((e) obj).b(), ((e) obj2).b());
         }
     }
 
@@ -437,15 +437,15 @@ public final class b implements k5, v, e0 {
     public static final class g implements c2 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ List f19334e;
+        final /* synthetic */ List f19740e;
 
         g(List list) {
-            this.f19334e = list;
+            this.f19740e = list;
         }
 
-        @Override // aq.c2
+        @Override // dq.c2
         public List b() {
-            List<e> list = this.f19334e;
+            List<e> list = this.f19740e;
             ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
             for (e eVar : list) {
                 arrayList.add(com.withpersona.sdk2.inquiry.steps.ui.components.c.i(eVar));
@@ -453,24 +453,24 @@ public final class b implements k5, v, e0 {
             return arrayList;
         }
 
-        @Override // aq.c2
+        @Override // dq.c2
         public boolean c() {
             return false;
         }
 
-        @Override // aq.c2
+        @Override // dq.c2
         public List f() {
             return CollectionsKt.l();
         }
 
-        @Override // aq.c2
+        @Override // dq.c2
         public String getLabel() {
             return null;
         }
 
-        @Override // aq.c2
+        @Override // dq.c2
         public InputSelectBoxComponentStyle getStyles() {
-            return b.this.s();
+            return b.this.t();
         }
     }
 
@@ -478,7 +478,7 @@ public final class b implements k5, v, e0 {
     public static final class h implements Comparator {
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
-            return or.a.d(((c) obj).b(), ((c) obj2).b());
+            return rr.a.d(((c) obj).b(), ((c) obj2).b());
         }
     }
 
@@ -491,19 +491,19 @@ public final class b implements k5, v, e0 {
         String countryName;
         String name2;
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f19312d = name;
-        this.f19313e = str;
-        this.f19314i = str2;
-        this.f19315o = str3;
-        this.f19316p = jsonLogicBoolean;
-        this.f19317q = jsonLogicBoolean2;
-        this.f19318r = z10;
-        this.f19319s = z11;
-        this.f19320t = bool;
-        this.f19321u = bool2;
-        this.f19322v = list;
-        this.f19323w = inputSelectComponentStyle;
-        this.f19324x = new ArrayList();
+        this.f19718d = name;
+        this.f19719e = str;
+        this.f19720i = str2;
+        this.f19721o = str3;
+        this.f19722p = jsonLogicBoolean;
+        this.f19723q = jsonLogicBoolean2;
+        this.f19724r = z10;
+        this.f19725s = z11;
+        this.f19726t = bool;
+        this.f19727u = bool2;
+        this.f19728v = list;
+        this.f19729w = inputSelectComponentStyle;
+        this.f19730x = new ArrayList();
         this.D = w.a(str3 == null ? "" : str3);
         LinkedHashSet linkedHashSet = new LinkedHashSet();
         LinkedHashMap linkedHashMap = new LinkedHashMap();
@@ -538,7 +538,7 @@ public final class b implements k5, v, e0 {
             b4Var = null;
             if (it2.hasNext()) {
                 obj = it2.next();
-                if (Intrinsics.areEqual(((c) obj).a(), this.f19313e)) {
+                if (Intrinsics.areEqual(((c) obj).a(), this.f19719e)) {
                     break;
                 }
             } else {
@@ -563,7 +563,7 @@ public final class b implements k5, v, e0 {
             while (true) {
                 if (it3.hasNext()) {
                     obj2 = it3.next();
-                    if (Intrinsics.areEqual(((e) obj2).a(), this.f19314i)) {
+                    if (Intrinsics.areEqual(((e) obj2).a(), this.f19720i)) {
                         break;
                     }
                 } else {
@@ -576,8 +576,8 @@ public final class b implements k5, v, e0 {
                 b4Var = com.withpersona.sdk2.inquiry.steps.ui.components.c.i(eVar);
             }
         }
-        this.f19325y = new k(b4Var2);
-        this.f19326z = new k(b4Var);
+        this.f19731y = new k(b4Var2);
+        this.f19732z = new k(b4Var);
         this.A = CollectionsKt.W0(CollectionsKt.h1(linkedHashSet), new h());
         this.B = linkedHashMap;
         this.C = new a(linkedHashSet);
@@ -585,40 +585,40 @@ public final class b implements k5, v, e0 {
 
     public static /* synthetic */ b b(b bVar, String str, String str2, String str3, String str4, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, boolean z10, boolean z11, Boolean bool, Boolean bool2, List list, InputSelectComponentStyle inputSelectComponentStyle, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = bVar.f19312d;
+            str = bVar.f19718d;
         }
         if ((i10 & 2) != 0) {
-            str2 = bVar.f19313e;
+            str2 = bVar.f19719e;
         }
         if ((i10 & 4) != 0) {
-            str3 = bVar.f19314i;
+            str3 = bVar.f19720i;
         }
         if ((i10 & 8) != 0) {
-            str4 = bVar.f19315o;
+            str4 = bVar.f19721o;
         }
         if ((i10 & 16) != 0) {
-            jsonLogicBoolean = bVar.f19316p;
+            jsonLogicBoolean = bVar.f19722p;
         }
         if ((i10 & 32) != 0) {
-            jsonLogicBoolean2 = bVar.f19317q;
+            jsonLogicBoolean2 = bVar.f19723q;
         }
         if ((i10 & 64) != 0) {
-            z10 = bVar.f19318r;
+            z10 = bVar.f19724r;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-            z11 = bVar.f19319s;
+            z11 = bVar.f19725s;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-            bool = bVar.f19320t;
+            bool = bVar.f19726t;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
-            bool2 = bVar.f19321u;
+            bool2 = bVar.f19727u;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0) {
-            list = bVar.f19322v;
+            list = bVar.f19728v;
         }
         if ((i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0) {
-            inputSelectComponentStyle = bVar.f19323w;
+            inputSelectComponentStyle = bVar.f19729w;
         }
         List list2 = list;
         InputSelectComponentStyle inputSelectComponentStyle2 = inputSelectComponentStyle;
@@ -637,12 +637,12 @@ public final class b implements k5, v, e0 {
     }
 
     public final List c() {
-        return this.f19322v;
+        return this.f19728v;
     }
 
-    @Override // aq.e0
+    @Override // dq.e0
     public List d() {
-        return this.f19324x;
+        return this.f19730x;
     }
 
     @Override // android.os.Parcelable
@@ -660,140 +660,126 @@ public final class b implements k5, v, e0 {
         }
         if (obj instanceof b) {
             b bVar = (b) obj;
-            return Intrinsics.areEqual(this.f19312d, bVar.f19312d) && Intrinsics.areEqual(this.f19313e, bVar.f19313e) && Intrinsics.areEqual(this.f19314i, bVar.f19314i) && Intrinsics.areEqual(this.f19315o, bVar.f19315o) && Intrinsics.areEqual(this.f19316p, bVar.f19316p) && Intrinsics.areEqual(this.f19317q, bVar.f19317q) && this.f19318r == bVar.f19318r && this.f19319s == bVar.f19319s && Intrinsics.areEqual(this.f19320t, bVar.f19320t) && Intrinsics.areEqual(this.f19321u, bVar.f19321u) && Intrinsics.areEqual(this.f19322v, bVar.f19322v) && Intrinsics.areEqual(this.f19323w, bVar.f19323w);
+            return Intrinsics.areEqual(this.f19718d, bVar.f19718d) && Intrinsics.areEqual(this.f19719e, bVar.f19719e) && Intrinsics.areEqual(this.f19720i, bVar.f19720i) && Intrinsics.areEqual(this.f19721o, bVar.f19721o) && Intrinsics.areEqual(this.f19722p, bVar.f19722p) && Intrinsics.areEqual(this.f19723q, bVar.f19723q) && this.f19724r == bVar.f19724r && this.f19725s == bVar.f19725s && Intrinsics.areEqual(this.f19726t, bVar.f19726t) && Intrinsics.areEqual(this.f19727u, bVar.f19727u) && Intrinsics.areEqual(this.f19728v, bVar.f19728v) && Intrinsics.areEqual(this.f19729w, bVar.f19729w);
         }
         return false;
     }
 
     public final k f() {
-        return this.f19325y;
+        return this.f19731y;
     }
 
     public final c2 g() {
         return this.C;
     }
 
-    @Override // aq.v
+    @Override // dq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f19317q;
+        return this.f19723q;
     }
 
-    @Override // aq.e0
+    @Override // dq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f19316p;
+        return this.f19722p;
     }
 
-    @Override // aq.k5
+    @Override // dq.k5
     public String getName() {
-        return this.f19312d;
+        return this.f19718d;
     }
 
     public int hashCode() {
-        int hashCode = this.f19312d.hashCode() * 31;
-        String str = this.f19313e;
+        int hashCode = this.f19718d.hashCode() * 31;
+        String str = this.f19719e;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
-        String str2 = this.f19314i;
+        String str2 = this.f19720i;
         int hashCode3 = (hashCode2 + (str2 == null ? 0 : str2.hashCode())) * 31;
-        String str3 = this.f19315o;
+        String str3 = this.f19721o;
         int hashCode4 = (hashCode3 + (str3 == null ? 0 : str3.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f19316p;
+        JsonLogicBoolean jsonLogicBoolean = this.f19722p;
         int hashCode5 = (hashCode4 + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19317q;
-        int hashCode6 = (((((hashCode5 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31) + Boolean.hashCode(this.f19318r)) * 31) + Boolean.hashCode(this.f19319s)) * 31;
-        Boolean bool = this.f19320t;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f19723q;
+        int hashCode6 = (((((hashCode5 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31) + Boolean.hashCode(this.f19724r)) * 31) + Boolean.hashCode(this.f19725s)) * 31;
+        Boolean bool = this.f19726t;
         int hashCode7 = (hashCode6 + (bool == null ? 0 : bool.hashCode())) * 31;
-        Boolean bool2 = this.f19321u;
+        Boolean bool2 = this.f19727u;
         int hashCode8 = (hashCode7 + (bool2 == null ? 0 : bool2.hashCode())) * 31;
-        List list = this.f19322v;
+        List list = this.f19728v;
         int hashCode9 = (hashCode8 + (list == null ? 0 : list.hashCode())) * 31;
-        InputSelectComponentStyle inputSelectComponentStyle = this.f19323w;
+        InputSelectComponentStyle inputSelectComponentStyle = this.f19729w;
         return hashCode9 + (inputSelectComponentStyle != null ? inputSelectComponentStyle.hashCode() : 0);
     }
 
     public final boolean i() {
-        return this.f19318r;
+        return this.f19724r;
     }
 
     public final Boolean j() {
-        return this.f19320t;
+        return this.f19726t;
     }
 
-    public final boolean k() {
-        return this.f19319s;
+    public final boolean l() {
+        return this.f19725s;
     }
 
-    public final Boolean m() {
-        return this.f19321u;
+    public final Boolean n() {
+        return this.f19727u;
     }
 
-    public final List n() {
+    public final List o() {
         Map map = this.B;
         if (map != null) {
-            return (List) map.get(this.f19313e);
+            return (List) map.get(this.f19719e);
         }
         return null;
     }
 
-    public final k o() {
-        return this.f19326z;
+    public final k p() {
+        return this.f19732z;
     }
 
-    public final c2 p() {
-        List n10 = n();
-        if (n10 == null) {
+    public final c2 q() {
+        List o10 = o();
+        if (o10 == null) {
             return null;
         }
-        return new g(n10);
+        return new g(o10);
     }
 
-    public final String q() {
-        return this.f19315o;
+    public final String r() {
+        return this.f19721o;
     }
 
-    public final t r() {
+    public final t s() {
         return this.D;
     }
 
-    public final InputSelectComponentStyle s() {
-        return this.f19323w;
-    }
-
-    public final String t() {
-        return this.f19313e;
+    public final InputSelectComponentStyle t() {
+        return this.f19729w;
     }
 
     public String toString() {
-        String str = this.f19312d;
-        String str2 = this.f19313e;
-        String str3 = this.f19314i;
-        String str4 = this.f19315o;
-        JsonLogicBoolean jsonLogicBoolean = this.f19316p;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19317q;
-        boolean z10 = this.f19318r;
-        boolean z11 = this.f19319s;
-        Boolean bool = this.f19320t;
-        Boolean bool2 = this.f19321u;
-        List list = this.f19322v;
-        InputSelectComponentStyle inputSelectComponentStyle = this.f19323w;
+        String str = this.f19718d;
+        String str2 = this.f19719e;
+        String str3 = this.f19720i;
+        String str4 = this.f19721o;
+        JsonLogicBoolean jsonLogicBoolean = this.f19722p;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f19723q;
+        boolean z10 = this.f19724r;
+        boolean z11 = this.f19725s;
+        Boolean bool = this.f19726t;
+        Boolean bool2 = this.f19727u;
+        List list = this.f19728v;
+        InputSelectComponentStyle inputSelectComponentStyle = this.f19729w;
         return "InputInternationalDbComponent(name=" + str + ", selectedCountry=" + str2 + ", selectedIdType=" + str3 + ", idValue=" + str4 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", hideCountryField=" + z10 + ", hideIdTypeField=" + z11 + ", hideCountryIfSingleChoice=" + bool + ", hideTypeIfSingleChoice=" + bool2 + ", allowedIdTypes=" + list + ", inputSelectStyle=" + inputSelectComponentStyle + ")";
     }
 
     public final String u() {
-        return this.f19314i;
+        return this.f19719e;
     }
 
-    public final b v(b4 b4Var) {
-        String str;
-        if (b4Var != null) {
-            str = b4Var.a();
-        } else {
-            str = null;
-        }
-        b b10 = b(this, null, str, null, null, null, null, false, false, null, null, null, null, 4093, null);
-        b10.f19325y = this.f19325y;
-        b10.f19326z = this.f19326z;
-        b10.D = this.D;
-        return b10;
+    public final String v() {
+        return this.f19720i;
     }
 
     public final b w(b4 b4Var) {
@@ -803,9 +789,9 @@ public final class b implements k5, v, e0 {
         } else {
             str = null;
         }
-        b b10 = b(this, null, null, str, null, null, null, false, false, null, null, null, null, 4091, null);
-        b10.f19325y = this.f19325y;
-        b10.f19326z = this.f19326z;
+        b b10 = b(this, null, str, null, null, null, null, false, false, null, null, null, null, 4093, null);
+        b10.f19731y = this.f19731y;
+        b10.f19732z = this.f19732z;
         b10.D = this.D;
         return b10;
     }
@@ -813,29 +799,29 @@ public final class b implements k5, v, e0 {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f19312d);
-        dest.writeString(this.f19313e);
-        dest.writeString(this.f19314i);
-        dest.writeString(this.f19315o);
-        dest.writeParcelable(this.f19316p, i10);
-        dest.writeParcelable(this.f19317q, i10);
-        dest.writeInt(this.f19318r ? 1 : 0);
-        dest.writeInt(this.f19319s ? 1 : 0);
-        Boolean bool = this.f19320t;
+        dest.writeString(this.f19718d);
+        dest.writeString(this.f19719e);
+        dest.writeString(this.f19720i);
+        dest.writeString(this.f19721o);
+        dest.writeParcelable(this.f19722p, i10);
+        dest.writeParcelable(this.f19723q, i10);
+        dest.writeInt(this.f19724r ? 1 : 0);
+        dest.writeInt(this.f19725s ? 1 : 0);
+        Boolean bool = this.f19726t;
         if (bool == null) {
             dest.writeInt(0);
         } else {
             dest.writeInt(1);
             dest.writeInt(bool.booleanValue() ? 1 : 0);
         }
-        Boolean bool2 = this.f19321u;
+        Boolean bool2 = this.f19727u;
         if (bool2 == null) {
             dest.writeInt(0);
         } else {
             dest.writeInt(1);
             dest.writeInt(bool2.booleanValue() ? 1 : 0);
         }
-        List<Parcelable> list = this.f19322v;
+        List<Parcelable> list = this.f19728v;
         if (list == null) {
             dest.writeInt(0);
         } else {
@@ -845,13 +831,27 @@ public final class b implements k5, v, e0 {
                 dest.writeParcelable(parcelable, i10);
             }
         }
-        dest.writeParcelable(this.f19323w, i10);
+        dest.writeParcelable(this.f19729w, i10);
     }
 
-    public final b y(String str) {
+    public final b x(b4 b4Var) {
+        String str;
+        if (b4Var != null) {
+            str = b4Var.a();
+        } else {
+            str = null;
+        }
+        b b10 = b(this, null, null, str, null, null, null, false, false, null, null, null, null, 4091, null);
+        b10.f19731y = this.f19731y;
+        b10.f19732z = this.f19732z;
+        b10.D = this.D;
+        return b10;
+    }
+
+    public final b z(String str) {
         b b10 = b(this, null, null, null, str, null, null, false, false, null, null, null, null, 4087, null);
-        b10.f19325y = this.f19325y;
-        b10.f19326z = this.f19326z;
+        b10.f19731y = this.f19731y;
+        b10.f19732z = this.f19732z;
         b10.D = this.D;
         return b10;
     }

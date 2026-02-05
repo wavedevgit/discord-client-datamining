@@ -3,26 +3,26 @@ package ng;
 public final class f8 {
 
     /* renamed from: a  reason: collision with root package name */
-    private ma f41125a;
+    private ma f40585a;
 
     /* renamed from: b  reason: collision with root package name */
-    private e8 f41126b;
+    private e8 f40586b;
 
     /* renamed from: c  reason: collision with root package name */
-    private z7 f41127c;
+    private z7 f40587c;
 
     public final f8 c(e8 e8Var) {
-        this.f41126b = e8Var;
+        this.f40586b = e8Var;
         return this;
     }
 
     public final f8 d(z7 z7Var) {
-        this.f41127c = z7Var;
+        this.f40587c = z7Var;
         return this;
     }
 
     public final f8 e(ma maVar) {
-        this.f41125a = maVar;
+        this.f40585a = maVar;
         return this;
     }
 

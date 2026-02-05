@@ -1,6 +1,6 @@
 package kotlin.jvm.internal;
 
-import fs.a3;
+import is.a3;
 import java.util.Arrays;
 import java.util.Collections;
 import kotlin.collections.i;

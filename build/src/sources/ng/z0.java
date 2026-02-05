@@ -1,57 +1,57 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class z0 implements ui.d {
+final class z0 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z0 f41814a = new z0();
+    static final z0 f41274a = new z0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41815b;
+    private static final xi.c f41275b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41816c;
+    private static final xi.c f41276c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41817d;
+    private static final xi.c f41277d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41818e;
+    private static final xi.c f41278e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41819f;
+    private static final xi.c f41279f;
 
     static {
-        c.b a10 = ui.c.a("errorCode");
+        c.b a10 = xi.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f41815b = a10.b(fVar.b()).a();
-        c.b a11 = ui.c.a("isColdCall");
+        f41275b = a10.b(fVar.b()).a();
+        c.b a11 = xi.c.a("isColdCall");
         f fVar2 = new f();
         fVar2.a(2);
-        f41816c = a11.b(fVar2.b()).a();
-        c.b a12 = ui.c.a("inputsFormats");
+        f41276c = a11.b(fVar2.b()).a();
+        c.b a12 = xi.c.a("inputsFormats");
         f fVar3 = new f();
         fVar3.a(3);
-        f41817d = a12.b(fVar3.b()).a();
-        c.b a13 = ui.c.a("outputFormats");
+        f41277d = a12.b(fVar3.b()).a();
+        c.b a13 = xi.c.a("outputFormats");
         f fVar4 = new f();
         fVar4.a(4);
-        f41818e = a13.b(fVar4.b()).a();
-        c.b a14 = ui.c.a("options");
+        f41278e = a13.b(fVar4.b()).a();
+        c.b a14 = xi.c.a("options");
         f fVar5 = new f();
         fVar5.a(5);
-        f41819f = a14.b(fVar5.b()).a();
+        f41279f = a14.b(fVar5.b()).a();
     }
 
     private z0() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

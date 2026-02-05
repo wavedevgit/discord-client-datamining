@@ -7,7 +7,7 @@ import w5.c;
 abstract class u {
 
     /* renamed from: a  reason: collision with root package name */
-    static c.a f51178a = c.a.a("k");
+    static c.a f51867a = c.a.a("k");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static List a(w5.c cVar, l5.i iVar, float f10, n0 n0Var, boolean z10) {
@@ -17,17 +17,17 @@ abstract class u {
         n0 n0Var2;
         boolean z11;
         ArrayList arrayList = new ArrayList();
-        if (cVar.n() == c.b.STRING) {
+        if (cVar.m() == c.b.STRING) {
             iVar.a("Lottie doesn't support expressions.");
             return arrayList;
         }
-        cVar.r();
+        cVar.s();
         while (cVar.hasNext()) {
-            if (cVar.B(f51178a) != 0) {
+            if (cVar.y(f51867a) != 0) {
                 cVar.P();
-            } else if (cVar.n() == c.b.BEGIN_ARRAY) {
-                cVar.u();
-                if (cVar.n() == c.b.NUMBER) {
+            } else if (cVar.m() == c.b.BEGIN_ARRAY) {
+                cVar.v();
+                if (cVar.m() == c.b.NUMBER) {
                     w5.c cVar3 = cVar;
                     l5.i iVar3 = iVar;
                     float f12 = f10;
@@ -50,7 +50,7 @@ abstract class u {
                         arrayList.add(t.c(cVar2, iVar2, f11, n0Var2, true, z11));
                     }
                 }
-                cVar2.s();
+                cVar2.t();
                 cVar = cVar2;
                 iVar = iVar2;
                 f10 = f11;
@@ -62,7 +62,7 @@ abstract class u {
                 cVar = cVar4;
             }
         }
-        cVar.y();
+        cVar.z();
         b(arrayList);
         return arrayList;
     }
@@ -80,16 +80,16 @@ abstract class u {
             y5.a aVar = (y5.a) list.get(i11);
             i11++;
             y5.a aVar2 = (y5.a) list.get(i11);
-            aVar.f53746h = Float.valueOf(aVar2.f53745g);
-            if (aVar.f53741c == null && (obj = aVar2.f53740b) != null) {
-                aVar.f53741c = obj;
+            aVar.f54442h = Float.valueOf(aVar2.f54441g);
+            if (aVar.f54437c == null && (obj = aVar2.f54436b) != null) {
+                aVar.f54437c = obj;
                 if (aVar instanceof o5.i) {
                     ((o5.i) aVar).j();
                 }
             }
         }
         y5.a aVar3 = (y5.a) list.get(i10);
-        if ((aVar3.f53740b == null || aVar3.f53741c == null) && list.size() > 1) {
+        if ((aVar3.f54436b == null || aVar3.f54437c == null) && list.size() > 1) {
             list.remove(aVar3);
         }
     }

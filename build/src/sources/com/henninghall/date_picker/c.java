@@ -15,13 +15,13 @@ import java.util.Map;
 public class c extends TurboReactPackage implements ReactPackage {
 
     /* renamed from: a  reason: collision with root package name */
-    public static ReactApplicationContext f16205a;
+    public static ReactApplicationContext f16599a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements ReactModuleInfoProvider {
 
         /* renamed from: a  reason: collision with root package name */
-        final boolean f16206a = true;
+        final boolean f16600a = true;
 
         a() {
         }
@@ -43,14 +43,14 @@ public class c extends TurboReactPackage implements ReactPackage {
 
     @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
     public List createViewManagers(ReactApplicationContext reactApplicationContext) {
-        f16205a = reactApplicationContext;
+        f16599a = reactApplicationContext;
         return Arrays.asList(new DatePickerManager());
     }
 
     @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
     public NativeModule getModule(String str, ReactApplicationContext reactApplicationContext) {
         if (str.equals(NativeRNDatePickerSpec.NAME)) {
-            f16205a = reactApplicationContext;
+            f16599a = reactApplicationContext;
             return new DatePickerModule(reactApplicationContext);
         }
         return null;

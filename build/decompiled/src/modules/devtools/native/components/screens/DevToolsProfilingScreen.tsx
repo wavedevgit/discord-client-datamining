@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/devtools/native/components/screens/DevToolsProfilingScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun86704: for (var _fun86704_ip = 0;;) switch (_fun86704_ip) {
+        _fun86723: for (var _fun86723_ip = 0;;) switch (_fun86723_ip) {
             case 0:
                 var2 = _closure1_slot4;
                 var1 = var2.useState;
@@ -204,8 +204,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = 16;
                 var4.spacing = var8;
                 if (var7) {
-                    _fun86704_ip = 429;
-                    continue _fun86704
+                    _fun86723_ip = 429;
+                    continue _fun86723
                 }
             case 208:
                 var10 = _closure1_slot6;
@@ -257,8 +257,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var15.bind(var3)(var12, var11);
                 var7.children = var11;
                 var8 = var10.bind(var3)(var8, var7);
-                _fun86704_ip = 592;
-                continue _fun86704;
+                _fun86723_ip = 592;
+                continue _fun86723;
             case 429:
                 var11 = _closure1_slot8;
                 var10 = _closure1_slot7;
@@ -426,8 +426,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var8.bind(var10)();
                 var8 = null;
                 if (!var10) {
-                    _fun86704_ip = 685;
-                    continue _fun86704
+                    _fun86723_ip = 685;
+                    continue _fun86723
                 }
             case 669:
                 var11 = _closure1_slot6;
@@ -445,4 +445,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 671, 277, 5363, 5416, 8834, 4080, 4898, 3941, 11210, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 671, 277, 5367, 5420, 8852, 4080, 4900, 3941, 11228, 478, 2]);

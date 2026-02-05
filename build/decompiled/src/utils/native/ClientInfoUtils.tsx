@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 0:
                 var1 = ['0', '123456', '1234567890'];
                 var0 = var1.includes;
-                var4 = '5120';
+                var4 = '5126';
                 var1 = var0.bind(var1)(var4);
                 var0 = var4;
                 if (!var1) {

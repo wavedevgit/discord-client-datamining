@@ -1,150 +1,165 @@
 package ju;
 
-import java.security.cert.Certificate;
-import java.security.cert.CertificateParsingException;
-import java.security.cert.X509Certificate;
-import java.util.ArrayList;
-import java.util.Collection;
+import java.security.KeyStore;
+import java.security.Provider;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.SSLException;
-import javax.net.ssl.SSLSession;
-import kotlin.collections.CollectionsKt;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.TrustManagerFactory;
+import javax.net.ssl.X509TrustManager;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
-import lu.k0;
+import org.conscrypt.Conscrypt;
+import org.conscrypt.ConscryptHostnameVerifier;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements HostnameVerifier {
+public final class d extends h {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final d f32009a = new d();
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f31423e;
 
-    private d() {
-    }
+    /* renamed from: f  reason: collision with root package name */
+    private static final boolean f31424f;
 
-    private final String b(String str) {
-        if (d(str)) {
-            Locale US = Locale.US;
-            Intrinsics.checkNotNullExpressionValue(US, "US");
-            String lowerCase = str.toLowerCase(US);
-            Intrinsics.checkNotNullExpressionValue(lowerCase, "this as java.lang.String).toLowerCase(locale)");
-            return lowerCase;
+    /* renamed from: d  reason: collision with root package name */
+    private final Provider f31425d;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        return str;
+
+        public final boolean a(int i10, int i11, int i12) {
+            Conscrypt.Version version = Conscrypt.version();
+            if (version.major() != i10) {
+                if (version.major() <= i10) {
+                    return false;
+                }
+                return true;
+            } else if (version.minor() != i11) {
+                if (version.minor() <= i11) {
+                    return false;
+                }
+                return true;
+            } else if (version.patch() < i12) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        public final d b() {
+            if (!c()) {
+                return null;
+            }
+            return new d(null);
+        }
+
+        public final boolean c() {
+            return d.f31424f;
+        }
+
+        private a() {
+        }
     }
 
-    private final List c(X509Certificate x509Certificate, int i10) {
-        Object obj;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b implements ConscryptHostnameVerifier {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final b f31426a = new b();
+
+        private b() {
+        }
+    }
+
+    static {
+        a aVar = new a(null);
+        f31423e = aVar;
+        boolean z10 = false;
         try {
-            Collection<List<?>> subjectAlternativeNames = x509Certificate.getSubjectAlternativeNames();
-            if (subjectAlternativeNames == null) {
-                return CollectionsKt.l();
-            }
-            ArrayList arrayList = new ArrayList();
-            for (List<?> list : subjectAlternativeNames) {
-                if (list != null && list.size() >= 2 && Intrinsics.areEqual(list.get(0), Integer.valueOf(i10)) && (obj = list.get(1)) != null) {
-                    arrayList.add((String) obj);
+            Class.forName("org.conscrypt.Conscrypt$Version", false, aVar.getClass().getClassLoader());
+            if (Conscrypt.isAvailable()) {
+                if (aVar.a(2, 1, 0)) {
+                    z10 = true;
                 }
             }
-            return arrayList;
-        } catch (CertificateParsingException unused) {
-            return CollectionsKt.l();
+        } catch (ClassNotFoundException | NoClassDefFoundError unused) {
         }
+        f31424f = z10;
     }
 
-    private final boolean d(String str) {
-        if (str.length() != ((int) k0.b(str, 0, 0, 3, null))) {
-            return false;
-        }
-        return true;
+    public /* synthetic */ d(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
     }
 
-    private final boolean f(String str, String str2) {
-        if (str != null && str.length() != 0 && !StringsKt.P(str, ".", false, 2, null) && !StringsKt.z(str, "..", false, 2, null) && str2 != null && str2.length() != 0 && !StringsKt.P(str2, ".", false, 2, null) && !StringsKt.z(str2, "..", false, 2, null)) {
-            if (!StringsKt.z(str, ".", false, 2, null)) {
-                str = str + '.';
-            }
-            String str3 = str;
-            if (!StringsKt.z(str2, ".", false, 2, null)) {
-                str2 = str2 + '.';
-            }
-            String b10 = b(str2);
-            if (!StringsKt.V(b10, "*", false, 2, null)) {
-                return Intrinsics.areEqual(str3, b10);
-            }
-            if (!StringsKt.P(b10, "*.", false, 2, null) || StringsKt.h0(b10, '*', 1, false, 4, null) != -1 || str3.length() < b10.length() || Intrinsics.areEqual("*.", b10)) {
-                return false;
-            }
-            String substring = b10.substring(1);
-            Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String).substring(startIndex)");
-            if (!StringsKt.z(str3, substring, false, 2, null)) {
-                return false;
-            }
-            int length = str3.length() - substring.length();
-            if (length > 0 && StringsKt.n0(str3, '.', length - 1, false, 4, null) != -1) {
-                return false;
-            }
-            return true;
+    @Override // ju.h
+    public void e(SSLSocket sslSocket, String str, List protocols) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Intrinsics.checkNotNullParameter(protocols, "protocols");
+        if (Conscrypt.isConscrypt(sslSocket)) {
+            Conscrypt.setUseSessionTickets(sslSocket, true);
+            Conscrypt.setApplicationProtocols(sslSocket, (String[]) h.f31441a.b(protocols).toArray(new String[0]));
+            return;
         }
-        return false;
+        super.e(sslSocket, str, protocols);
     }
 
-    private final boolean g(String str, X509Certificate x509Certificate) {
-        String b10 = b(str);
-        List<String> c10 = c(x509Certificate, 2);
-        if ((c10 instanceof Collection) && c10.isEmpty()) {
-            return false;
+    @Override // ju.h
+    public String h(SSLSocket sslSocket) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        if (Conscrypt.isConscrypt(sslSocket)) {
+            return Conscrypt.getApplicationProtocol(sslSocket);
         }
-        for (String str2 : c10) {
-            if (f32009a.f(b10, str2)) {
-                return true;
+        return super.h(sslSocket);
+    }
+
+    @Override // ju.h
+    public SSLContext n() {
+        SSLContext sSLContext = SSLContext.getInstance("TLS", this.f31425d);
+        Intrinsics.checkNotNullExpressionValue(sSLContext, "getInstance(\"TLS\", provider)");
+        return sSLContext;
+    }
+
+    @Override // ju.h
+    public SSLSocketFactory o(X509TrustManager trustManager) {
+        Intrinsics.checkNotNullParameter(trustManager, "trustManager");
+        SSLContext n10 = n();
+        n10.init(null, new TrustManager[]{trustManager}, null);
+        SSLSocketFactory socketFactory = n10.getSocketFactory();
+        Intrinsics.checkNotNullExpressionValue(socketFactory, "newSSLContext().apply {\n…null)\n    }.socketFactory");
+        return socketFactory;
+    }
+
+    @Override // ju.h
+    public X509TrustManager p() {
+        TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
+        trustManagerFactory.init((KeyStore) null);
+        TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();
+        Intrinsics.checkNotNull(trustManagers);
+        if (trustManagers.length == 1) {
+            TrustManager trustManager = trustManagers[0];
+            if (trustManager instanceof X509TrustManager) {
+                Intrinsics.checkNotNull(trustManager, "null cannot be cast to non-null type javax.net.ssl.X509TrustManager");
+                X509TrustManager x509TrustManager = (X509TrustManager) trustManager;
+                Conscrypt.setHostnameVerifier(x509TrustManager, b.f31426a);
+                return x509TrustManager;
             }
         }
-        return false;
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("Unexpected default trust managers: ");
+        String arrays = Arrays.toString(trustManagers);
+        Intrinsics.checkNotNullExpressionValue(arrays, "toString(this)");
+        sb2.append(arrays);
+        throw new IllegalStateException(sb2.toString().toString());
     }
 
-    private final boolean h(String str, X509Certificate x509Certificate) {
-        String e10 = xt.a.e(str);
-        List<String> c10 = c(x509Certificate, 7);
-        if ((c10 instanceof Collection) && c10.isEmpty()) {
-            return false;
-        }
-        for (String str2 : c10) {
-            if (Intrinsics.areEqual(e10, xt.a.e(str2))) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public final List a(X509Certificate certificate) {
-        Intrinsics.checkNotNullParameter(certificate, "certificate");
-        return CollectionsKt.L0(c(certificate, 7), c(certificate, 2));
-    }
-
-    public final boolean e(String host, X509Certificate certificate) {
-        Intrinsics.checkNotNullParameter(host, "host");
-        Intrinsics.checkNotNullParameter(certificate, "certificate");
-        if (xt.e.i(host)) {
-            return h(host, certificate);
-        }
-        return g(host, certificate);
-    }
-
-    @Override // javax.net.ssl.HostnameVerifier
-    public boolean verify(String host, SSLSession session) {
-        Intrinsics.checkNotNullParameter(host, "host");
-        Intrinsics.checkNotNullParameter(session, "session");
-        if (!d(host)) {
-            return false;
-        }
-        try {
-            Certificate certificate = session.getPeerCertificates()[0];
-            Intrinsics.checkNotNull(certificate, "null cannot be cast to non-null type java.security.cert.X509Certificate");
-            return e(host, (X509Certificate) certificate);
-        } catch (SSLException unused) {
-            return false;
-        }
+    private d() {
+        Provider newProvider = Conscrypt.newProvider();
+        Intrinsics.checkNotNullExpressionValue(newProvider, "newProvider()");
+        this.f31425d = newProvider;
     }
 }

@@ -3,28 +3,28 @@ package kotlinx.coroutines;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
-import js.l1;
-import js.n0;
-import js.p0;
 import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.LongCompanionObject;
 import kotlinx.coroutines.q;
+import ms.l1;
+import ms.n0;
+import ms.p0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class j extends q implements Runnable {
     private static volatile Thread _thread;
     private static volatile int debugStatus;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final j f35522t;
+    public static final j f35046t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final long f35523u;
+    private static final long f35047u;
 
     static {
         Long l10;
         j jVar = new j();
-        f35522t = jVar;
+        f35046t = jVar;
         p0.q2(jVar, false, 1, null);
         TimeUnit timeUnit = TimeUnit.MILLISECONDS;
         try {
@@ -32,7 +32,7 @@ public final class j extends q implements Runnable {
         } catch (SecurityException unused) {
             l10 = 1000L;
         }
-        f35523u = timeUnit.toNanos(l10.longValue());
+        f35047u = timeUnit.toNanos(l10.longValue());
     }
 
     private j() {
@@ -54,7 +54,7 @@ public final class j extends q implements Runnable {
         if (thread == null) {
             thread = new Thread(this, "kotlinx.coroutines.DefaultExecutor");
             _thread = thread;
-            thread.setContextClassLoader(f35522t.getClass().getClassLoader());
+            thread.setContextClassLoader(f35046t.getClass().getClassLoader());
             thread.setDaemon(true);
             thread.start();
         }
@@ -106,8 +106,8 @@ public final class j extends q implements Runnable {
     @Override // java.lang.Runnable
     public void run() {
         boolean I2;
-        l1.f31964a.d(this);
-        js.b.a();
+        l1.f38926a.d(this);
+        ms.b.a();
         try {
             if (!U2()) {
                 if (!I2) {
@@ -120,16 +120,16 @@ public final class j extends q implements Runnable {
                 Thread.interrupted();
                 long t22 = t2();
                 if (t22 == LongCompanionObject.MAX_VALUE) {
-                    js.b.a();
+                    ms.b.a();
                     long nanoTime = System.nanoTime();
                     if (j10 == LongCompanionObject.MAX_VALUE) {
-                        j10 = f35523u + nanoTime;
+                        j10 = f35047u + nanoTime;
                     }
                     long j11 = j10 - nanoTime;
                     if (j11 <= 0) {
                         _thread = null;
                         Q2();
-                        js.b.a();
+                        ms.b.a();
                         if (!I2()) {
                             w2();
                             return;
@@ -144,28 +144,28 @@ public final class j extends q implements Runnable {
                     if (T2()) {
                         _thread = null;
                         Q2();
-                        js.b.a();
+                        ms.b.a();
                         if (!I2()) {
                             w2();
                             return;
                         }
                         return;
                     }
-                    js.b.a();
+                    ms.b.a();
                     LockSupport.parkNanos(this, t22);
                 }
             }
         } finally {
             _thread = null;
             Q2();
-            js.b.a();
+            ms.b.a();
             if (!I2()) {
                 w2();
             }
         }
     }
 
-    @Override // kotlinx.coroutines.q, js.p0
+    @Override // kotlinx.coroutines.q, ms.p0
     public void shutdown() {
         debugStatus = 4;
         super.shutdown();

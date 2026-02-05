@@ -113,7 +113,7 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
                         eventDispatcherImpl.clearEventsToDispatch();
                         eventDispatcherImpl.eventCookieToLastEventIdx.clear();
                     }
-                    Unit unit = Unit.f32464a;
+                    Unit unit = Unit.f31988a;
                 }
                 Iterator it = EventDispatcherImpl.this.postEventDispatchListeners.iterator();
                 Intrinsics.checkNotNullExpressionValue(it, "iterator(...)");
@@ -308,7 +308,7 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
                         }
                     }
                 }
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             }
             this.eventStaging.clear();
         }
@@ -349,7 +349,7 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
             synchronized (this.eventsStagingLock) {
                 this.eventStaging.add(event);
                 qb.a.l(0L, event.getEventName(), event.getUniqueID());
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             }
             maybePostFrameCallbackFromNonUI();
             return;
@@ -358,7 +358,7 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
     }
 
     @Override // com.facebook.react.uimanager.events.EventDispatcher
-    @lr.c
+    @or.c
     public void onCatalystInstanceDestroyed() {
         UiThreadUtil.runOnUiThread(new Runnable() { // from class: com.facebook.react.uimanager.events.a
             @Override // java.lang.Runnable

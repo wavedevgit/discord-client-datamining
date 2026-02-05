@@ -1,19 +1,24 @@
 package ws;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface b extends ys.a {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static Object a(b bVar, Object obj) {
-            Object a10 = bVar.a(obj);
-            if (a10 != null) {
-                return a10;
-            }
-            throw new IllegalStateException("Field " + bVar.getName() + " is not set");
-        }
+import kotlin.jvm.internal.Intrinsics;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public final class b extends IllegalArgumentException {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(String message) {
+        super(message);
+        Intrinsics.checkNotNullParameter(message, "message");
     }
 
-    Object a(Object obj);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(Throwable cause) {
+        super(cause);
+        Intrinsics.checkNotNullParameter(cause, "cause");
+    }
 
-    Object b(Object obj);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(String message, Throwable cause) {
+        super(message, cause);
+        Intrinsics.checkNotNullParameter(message, "message");
+        Intrinsics.checkNotNullParameter(cause, "cause");
+    }
 }

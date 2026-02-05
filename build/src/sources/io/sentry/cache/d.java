@@ -16,7 +16,7 @@ import java.nio.charset.Charset;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Charset f29738a = Charset.forName("UTF-8");
+    private static final Charset f28796a = Charset.forName("UTF-8");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void a(k7 k7Var, String str, String str2) {
@@ -54,7 +54,7 @@ public abstract class d {
         File file = new File(b10, str2);
         if (file.exists()) {
             try {
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file), f29738a));
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file), f28796a));
                 if (m1Var == null) {
                     e10 = k7Var.getSerializer().c(bufferedReader, cls);
                 } else {
@@ -80,7 +80,7 @@ public abstract class d {
         }
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(new File(b10, str2));
-            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(fileOutputStream, f29738a));
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(fileOutputStream, f28796a));
             try {
                 k7Var.getSerializer().a(obj, bufferedWriter);
                 bufferedWriter.close();

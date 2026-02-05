@@ -1,14 +1,14 @@
 package pg;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class aa implements ui.d {
+final class aa implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final aa f45180a = new aa();
+    static final aa f45110a = new aa();
 
     static {
-        c.b a10 = ui.c.a("optionsType");
+        c.b a10 = xi.c.a("optionsType");
         v1 v1Var = new v1();
         v1Var.a(1);
         a10.b(v1Var.b()).a();
@@ -17,10 +17,10 @@ final class aa implements ui.d {
     private aa() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

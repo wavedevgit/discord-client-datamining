@@ -7,39 +7,39 @@ import kotlin.jvm.internal.Intrinsics;
 public class a extends FrameData {
 
     /* renamed from: e  reason: collision with root package name */
-    private long f42320e;
+    private long f42226e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public a(long j10, long j11, long j12, boolean z10, List states) {
         super(j10, j11, z10, states);
         Intrinsics.checkNotNullParameter(states, "states");
-        this.f42320e = j12;
+        this.f42226e = j12;
     }
 
     @Override // androidx.metrics.performance.FrameData
     public boolean equals(Object obj) {
-        if ((obj instanceof a) && super.equals(obj) && this.f42320e == ((a) obj).f42320e) {
+        if ((obj instanceof a) && super.equals(obj) && this.f42226e == ((a) obj).f42226e) {
             return true;
         }
         return false;
     }
 
     public final long f() {
-        return this.f42320e;
+        return this.f42226e;
     }
 
     public final void g(long j10, long j11, long j12, boolean z10) {
         super.e(j10, j11, z10);
-        this.f42320e = j12;
+        this.f42226e = j12;
     }
 
     @Override // androidx.metrics.performance.FrameData
     public int hashCode() {
-        return (super.hashCode() * 31) + Long.hashCode(this.f42320e);
+        return (super.hashCode() * 31) + Long.hashCode(this.f42226e);
     }
 
     @Override // androidx.metrics.performance.FrameData
     public String toString() {
-        return "FrameData(frameStartNanos=" + b() + ", frameDurationUiNanos=" + a() + ", frameDurationCpuNanos=" + this.f42320e + ", isJank=" + d() + ", states=" + c() + ')';
+        return "FrameData(frameStartNanos=" + b() + ", frameDurationUiNanos=" + a() + ", frameDurationCpuNanos=" + this.f42226e + ", isJank=" + d() + ", states=" + c() + ')';
     }
 }

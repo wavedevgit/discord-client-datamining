@@ -629,6 +629,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var201.PTT_NO_KEYBIND_WARNING = var4;
             var4 = 'E2EE_UPDATE_REQUIRED';
             var201.E2EE_UPDATE_REQUIRED = var4;
+            var4 = 'WINDOWS_MEDIA_PACK_REQUIRED';
+            var201.WINDOWS_MEDIA_PACK_REQUIRED = var4;
             var200 = {};
             var4 = 'RESOLVING';
             var200.RESOLVING = var4;
@@ -6424,8 +6426,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var25.SOUNDBOARD_SOUND_GUILD_DATA = var38;
             var38 = '/soundboard-default-sounds';
             var25.SOUNDBOARD_DEFAULT_SOUNDS = var38;
-            var38 = '/users/@me/top-sounds-for-guilds';
-            var25.TOP_SOUNDS_FOR_GUILDS = var38;
             var38 = function arg0() {
                 var0 = global;
                 var0 = var0.HermesInternal;
@@ -10938,6 +10938,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var119.VOICE_PANEL_CLOSE = var30;
             var30 = 'VOICE_PANEL_TIV_CLOSE';
             var119.VOICE_PANEL_TIV_CLOSE = var30;
+            var30 = 'VOICE_PANEL_OPEN_CHAT_TAB';
+            var119.VOICE_PANEL_OPEN_CHAT_TAB = var30;
             var30 = 'VOICE_PANEL_PIP_CONTENT_READY';
             var119.VOICE_PANEL_PIP_CONTENT_READY = var30;
             var30 = 'MANUAL_IFRAME_RESIZING';
@@ -11598,6 +11600,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var90.INVITE_EMBED_ACTIONED = var44;
             var44 = 'voice_invite_suggestions_entrypoint_closed';
             var90.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED = var44;
+            var44 = 'invite_cta_clicked';
+            var90.INVITE_CTA_CLICKED = var44;
             var44 = 'native_share_sheet_app_clicked';
             var90.NATIVE_SHARE_SHEET_APP_CLICKED = var44;
             var44 = 'channel_link_preview_joined';
@@ -13979,6 +13983,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var90.ACK_COMMUNITY_MESSAGES = var43;
             var43 = 'voice_panel_tab_opened';
             var90.VOICE_PANEL_TAB_OPENED = var43;
+            var43 = 'voice_panel_screenshare_button_tapped';
+            var90.VOICE_PANEL_SCREENSHARE_BUTTON_TAPPED = var43;
             var43 = 'announcement_message_link_clicked';
             var90.ANNOUNCEMENT_MESSAGE_LINK_CLICKED = var43;
             var43 = 'announcement_message_viewed';
@@ -14569,8 +14575,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var90.REPLY_NUDGES_CREATED = var43;
             var43 = 'reply_nudge_opened';
             var90.REPLY_NUDGE_OPENED = var43;
+            var43 = 'reply_nudge_dismissed';
+            var90.REPLY_NUDGE_DISMISSED = var43;
+            var43 = 'reply_nudges_shown';
+            var90.REPLY_NUDGES_SHOWN = var43;
             var43 = 'app_transaction_id_synced';
             var90.APP_TRANSACTION_ID_SYNCED = var43;
+            var43 = 'parental_consent_checked';
+            var90.PARENTAL_CONSENT_CHECKED = var43;
             var89 = {};
             var43 = 'canary';
             var89.CANARY = var43;
@@ -15884,6 +15896,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var64.CHECKPOINT = var37;
             var37 = '37127619588375-Nitro-2-Week-Trial-Offer';
             var64.NITRO_TRIAL_FOR_ALL = var37;
+            var37 = '37976093740695';
+            var64.WINDOWS_MEDIA_PACK = var37;
             var63 = {};
             var37 = '#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618';
             var63.INVALID_BILLING_ADDRESS = var37;
@@ -16715,28 +16729,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var231 = var221[var236];
             var234 = var220.bind(var0)(var231);
             for (var231 in var234)
-                case 62240: {
-                    case 62249: var238 = var231;
+                case 62321: {
+                    case 62330: var238 = var231;
                     var237 = var221[var236];
                     var237 = var220.bind(var0)(var237);
                     var237 = var237[var238];
                     var2[var238] = var237;
-                    _fun7396_ip = 62240;
+                    _fun7396_ip = 62321;
                     continue _fun7396;
                 }
-        case 62271:
+        case 62352:
             var230 = var221[var230];
             var235 = var220.bind(var0)(var230);
             var233 = var235;
             for (var230 in var233)
-                case 62291: {
-                    case 62300: var237 = var230;
+                case 62372: {
+                    case 62381: var237 = var230;
                     var236 = var235[var237];
                     var2[var237] = var236;
-                    _fun7396_ip = 62291;
+                    _fun7396_ip = 62372;
                     continue _fun7396;
                 }
-        case 62313:
+        case 62394:
             var2.Routes = var229;
             var2.ME = var228;
             var2.FAVORITES = var227;
@@ -16836,7 +16850,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.MAX_USER_GUILDS = var8;
             var2.MAX_USER_GUILDS_PREMIUM = var148;
             var2.MAX_MESSAGES_PER_CHANNEL = var142;
-            var2.MAX_MESSAGES_FOR_JUMP = var75;
+            var2.MAX_MESSAGES_FOR_JUMP = var51;
             var2.MAX_MENTIONS_PER_FETCH = var142;
             var2.MAX_LOADED_MESSAGES = var8;
             var2.TRUNCATED_MESSAGE_VIEW_SIZE = var75;

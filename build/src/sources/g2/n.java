@@ -16,19 +16,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class n {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f24913e = new a(null);
+    public static final a f23612e = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f24914a;
+    private final Context f23613a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f24915b;
+    private boolean f23614b;
 
     /* renamed from: c  reason: collision with root package name */
-    private m f24916c;
+    private m f23615c;
 
     /* renamed from: d  reason: collision with root package name */
-    private m f24917d;
+    private m f23616d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -42,7 +42,7 @@ public final class n {
 
     public n(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f24914a = context;
+        this.f23613a = context;
     }
 
     private final List a(Context context) {
@@ -92,8 +92,8 @@ public final class n {
     }
 
     private final m f() {
-        if (this.f24915b) {
-            m mVar = this.f24916c;
+        if (this.f23614b) {
+            m mVar = this.f23615c;
             if (mVar == null) {
                 return null;
             }
@@ -101,9 +101,9 @@ public final class n {
             if (!mVar.isAvailableOnDevice()) {
                 return null;
             }
-            return this.f24916c;
+            return this.f23615c;
         }
-        v vVar = new v(this.f24914a);
+        v vVar = new v(this.f23613a);
         if (!vVar.isAvailableOnDevice()) {
             return null;
         }
@@ -111,8 +111,8 @@ public final class n {
     }
 
     private final m g() {
-        if (this.f24915b) {
-            m mVar = this.f24917d;
+        if (this.f23614b) {
+            m mVar = this.f23616d;
             if (mVar == null) {
                 return null;
             }
@@ -120,13 +120,13 @@ public final class n {
             if (!mVar.isAvailableOnDevice()) {
                 return null;
             }
-            return this.f24917d;
+            return this.f23616d;
         }
-        List a10 = a(this.f24914a);
+        List a10 = a(this.f23613a);
         if (a10.isEmpty()) {
             return null;
         }
-        return e(a10, this.f24914a);
+        return e(a10, this.f23613a);
     }
 
     public final m b(Object request, boolean z10) {

@@ -5,17 +5,17 @@ import java.util.List;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf;
-import lr.p;
-import lr.u;
+import or.p;
+import or.u;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class NameResolverImpl implements NameResolver {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ProtoBuf.StringTable f34181a;
+    private final ProtoBuf.StringTable f33705a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ProtoBuf.QualifiedNameTable f34182b;
+    private final ProtoBuf.QualifiedNameTable f33706b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class WhenMappings {
@@ -42,8 +42,8 @@ public final class NameResolverImpl implements NameResolver {
     public NameResolverImpl(@NotNull ProtoBuf.StringTable strings, @NotNull ProtoBuf.QualifiedNameTable qualifiedNames) {
         Intrinsics.checkNotNullParameter(strings, "strings");
         Intrinsics.checkNotNullParameter(qualifiedNames, "qualifiedNames");
-        this.f34181a = strings;
-        this.f34182b = qualifiedNames;
+        this.f33705a = strings;
+        this.f33706b = qualifiedNames;
     }
 
     private final u a(int i10) {
@@ -51,8 +51,8 @@ public final class NameResolverImpl implements NameResolver {
         LinkedList linkedList2 = new LinkedList();
         boolean z10 = false;
         while (i10 != -1) {
-            ProtoBuf.QualifiedNameTable.QualifiedName qualifiedName = this.f34182b.getQualifiedName(i10);
-            String string = this.f34181a.getString(qualifiedName.getShortName());
+            ProtoBuf.QualifiedNameTable.QualifiedName qualifiedName = this.f33706b.getQualifiedName(i10);
+            String string = this.f33705a.getString(qualifiedName.getShortName());
             ProtoBuf.QualifiedNameTable.QualifiedName.Kind kind = qualifiedName.getKind();
             Intrinsics.checkNotNull(kind);
             int i11 = WhenMappings.$EnumSwitchMapping$0[kind.ordinal()];
@@ -90,7 +90,7 @@ public final class NameResolverImpl implements NameResolver {
     @Override // kotlin.reflect.jvm.internal.impl.metadata.deserialization.NameResolver
     @NotNull
     public String getString(int i10) {
-        String string = this.f34181a.getString(i10);
+        String string = this.f33705a.getString(i10);
         Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
         return string;
     }

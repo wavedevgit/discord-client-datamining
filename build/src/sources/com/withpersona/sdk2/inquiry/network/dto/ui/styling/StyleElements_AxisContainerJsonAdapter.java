@@ -40,18 +40,18 @@ public final class StyleElements_AxisContainerJsonAdapter extends h {
     @NotNull
     public StyleElements.AxisContainer fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.Axis axis = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 axis = (StyleElements.Axis) this.nullableAxisAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StyleElements.AxisContainer(axis);
     }
 
@@ -59,8 +59,8 @@ public final class StyleElements_AxisContainerJsonAdapter extends h {
     public void toJson(@NotNull t writer, StyleElements.AxisContainer axisContainer) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (axisContainer != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableAxisAdapter.toJson(writer, axisContainer.getBase());
             writer.E();
             return;

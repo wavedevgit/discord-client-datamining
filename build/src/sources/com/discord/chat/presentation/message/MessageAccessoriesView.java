@@ -220,7 +220,7 @@ public final class MessageAccessoriesView extends RecyclerView {
         this.accessoriesAdapter = messageAccessoriesAdapter;
         TransitionResilientLinearLayoutManager transitionResilientLinearLayoutManager = new TransitionResilientLinearLayoutManager(context, 1, false, null, 8, null);
         this.transitionResilientLinearLayoutManager = transitionResilientLinearLayoutManager;
-        this.forwardBarPaint$delegate = lr.l.a(new Function0() { // from class: com.discord.chat.presentation.message.q0
+        this.forwardBarPaint$delegate = or.l.a(new Function0() { // from class: com.discord.chat.presentation.message.q0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Paint forwardBarPaint_delegate$lambda$1;

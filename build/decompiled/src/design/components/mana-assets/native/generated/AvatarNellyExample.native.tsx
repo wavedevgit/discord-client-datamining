@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AvatarNellyExample = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 5990, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 5994, 2]);

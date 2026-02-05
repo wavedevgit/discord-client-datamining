@@ -19,19 +19,19 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public final class f0 {
 
     /* renamed from: e  reason: collision with root package name */
-    private static f0 f40095e;
+    private static f0 f39555e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Handler f40096a = new Handler(Looper.getMainLooper());
+    private final Handler f39556a = new Handler(Looper.getMainLooper());
 
     /* renamed from: b  reason: collision with root package name */
-    private final CopyOnWriteArrayList f40097b = new CopyOnWriteArrayList();
+    private final CopyOnWriteArrayList f39557b = new CopyOnWriteArrayList();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f40098c = new Object();
+    private final Object f39558c = new Object();
 
     /* renamed from: d  reason: collision with root package name */
-    private int f40099d = 0;
+    private int f39559d = 0;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class b {
@@ -41,10 +41,10 @@ public final class f0 {
         public static final class a extends TelephonyCallback implements TelephonyCallback.DisplayInfoListener {
 
             /* renamed from: a  reason: collision with root package name */
-            private final f0 f40100a;
+            private final f0 f39560a;
 
             public a(f0 f0Var) {
-                this.f40100a = f0Var;
+                this.f39560a = f0Var;
             }
 
             public void onDisplayInfoChanged(TelephonyDisplayInfo telephonyDisplayInfo) {
@@ -56,7 +56,7 @@ public final class f0 {
                 } else {
                     z10 = true;
                 }
-                f0 f0Var = this.f40100a;
+                f0 f0Var = this.f39560a;
                 if (z10) {
                     i10 = 10;
                 }
@@ -89,7 +89,7 @@ public final class f0 {
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
             int g10 = f0.g(context);
-            if (w0.f40197a < 31 || g10 != 5) {
+            if (w0.f39657a < 31 || g10 != 5) {
                 f0.this.j(g10);
             } else {
                 b.a(context, f0.this);
@@ -107,10 +107,10 @@ public final class f0 {
         f0 f0Var;
         synchronized (f0.class) {
             try {
-                if (f40095e == null) {
-                    f40095e = new f0(context);
+                if (f39555e == null) {
+                    f39555e = new f0(context);
                 }
-                f0Var = f40095e;
+                f0Var = f39555e;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -146,7 +146,7 @@ public final class f0 {
             case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                 return 2;
             case 20:
-                if (w0.f40197a >= 29) {
+                if (w0.f39657a >= 29) {
                     return 9;
                 }
                 return 0;
@@ -188,31 +188,31 @@ public final class f0 {
     }
 
     private void i() {
-        Iterator it = this.f40097b.iterator();
+        Iterator it = this.f39557b.iterator();
         while (it.hasNext()) {
             WeakReference weakReference = (WeakReference) it.next();
             if (weakReference.get() == null) {
-                this.f40097b.remove(weakReference);
+                this.f39557b.remove(weakReference);
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void j(int i10) {
-        synchronized (this.f40098c) {
+        synchronized (this.f39558c) {
             try {
-                if (this.f40099d == i10) {
+                if (this.f39559d == i10) {
                     return;
                 }
-                this.f40099d = i10;
-                Iterator it = this.f40097b.iterator();
+                this.f39559d = i10;
+                Iterator it = this.f39557b.iterator();
                 while (it.hasNext()) {
                     WeakReference weakReference = (WeakReference) it.next();
                     c cVar = (c) weakReference.get();
                     if (cVar != null) {
                         cVar.a(i10);
                     } else {
-                        this.f40097b.remove(weakReference);
+                        this.f39557b.remove(weakReference);
                     }
                 }
             } catch (Throwable th2) {
@@ -223,16 +223,16 @@ public final class f0 {
 
     public int f() {
         int i10;
-        synchronized (this.f40098c) {
-            i10 = this.f40099d;
+        synchronized (this.f39558c) {
+            i10 = this.f39559d;
         }
         return i10;
     }
 
     public void h(final c cVar) {
         i();
-        this.f40097b.add(new WeakReference(cVar));
-        this.f40096a.post(new Runnable() { // from class: ne.e0
+        this.f39557b.add(new WeakReference(cVar));
+        this.f39556a.post(new Runnable() { // from class: ne.e0
             @Override // java.lang.Runnable
             public final void run() {
                 cVar.a(f0.this.f());

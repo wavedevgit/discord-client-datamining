@@ -1,28 +1,11 @@
 package nt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public enum g {
-    STRICT,
-    SMART,
-    LAX;
+public interface g {
+    int a();
 
-    public boolean a() {
-        if (this == LAX) {
-            return true;
-        }
-        return false;
-    }
+    int d();
 
-    public boolean d() {
-        if (this == SMART) {
-            return true;
-        }
-        return false;
-    }
+    int e();
 
-    public boolean e() {
-        if (this == STRICT) {
-            return true;
-        }
-        return false;
-    }
+    int h();
 }

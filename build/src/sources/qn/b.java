@@ -1,35 +1,32 @@
 package qn;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import com.facebook.react.views.view.WindowUtilKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b extends RuntimeException {
+public final class b {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a extends b {
-        public a() {
-            super(null);
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f47970a = new b();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final boolean f47971b;
+
+    static {
+        boolean z10;
+        if (!WindowUtilKt.isEdgeToEdgeFeatureFlagOn()) {
+            try {
+                Class.forName("com.zoontek.rnedgetoedge.EdgeToEdgePackage");
+            } catch (ClassNotFoundException unused) {
+                z10 = false;
+            }
         }
-    }
-
-    /* renamed from: qn.b$b  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0579b extends b {
-        public C0579b() {
-            super(null);
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class c extends b {
-        public c() {
-            super(null);
-        }
-    }
-
-    public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
-        this();
+        z10 = true;
+        f47971b = z10;
     }
 
     private b() {
+    }
+
+    public final boolean a() {
+        return f47971b;
     }
 }

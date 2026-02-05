@@ -1,16 +1,25 @@
 package tj;
 
-import android.graphics.Point;
-import android.graphics.Rect;
+import gf.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
-    Rect a();
+public class a {
 
-    String b();
+    /* renamed from: b  reason: collision with root package name */
+    private static final i f50758b = new i("ModelFileHelper", "");
 
-    int c();
+    /* renamed from: c  reason: collision with root package name */
+    public static final String f50759c = String.format("com.google.mlkit.%s.models", "translate");
 
-    Point[] d();
+    /* renamed from: d  reason: collision with root package name */
+    public static final String f50760d = String.format("com.google.mlkit.%s.models", "custom");
 
-    int getFormat();
+    /* renamed from: e  reason: collision with root package name */
+    static final String f50761e = String.format("com.google.mlkit.%s.models", "base");
+
+    /* renamed from: a  reason: collision with root package name */
+    private final sj.i f50762a;
+
+    public a(sj.i iVar) {
+        this.f50762a = iVar;
+    }
 }

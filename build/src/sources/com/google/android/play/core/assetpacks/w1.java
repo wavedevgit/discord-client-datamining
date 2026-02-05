@@ -4,29 +4,29 @@ package com.google.android.play.core.assetpacks;
 public final class w1 extends RuntimeException {
 
     /* renamed from: d  reason: collision with root package name */
-    final int f15683d;
+    final int f16077d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public w1(String str) {
         super(str);
-        this.f15683d = -1;
+        this.f16077d = -1;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public w1(String str, int i10) {
         super(str);
-        this.f15683d = i10;
+        this.f16077d = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public w1(String str, Exception exc) {
         super(str, exc);
-        this.f15683d = -1;
+        this.f16077d = -1;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public w1(String str, Exception exc, int i10) {
         super(str, exc);
-        this.f15683d = i10;
+        this.f16077d = i10;
     }
 }

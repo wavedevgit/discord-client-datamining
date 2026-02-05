@@ -1,62 +1,14 @@
 package dq;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.viewbinding.ViewBinding;
-import com.google.android.material.radiobutton.MaterialRadioButton;
+import com.withpersona.sdk2.inquiry.network.dto.ui.components.Button;
+import com.withpersona.sdk2.inquiry.shared.ui.ButtonWithLoadingIndicator;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements ViewBinding {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f20734a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final MaterialRadioButton f20735b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final TextView f20736c;
-
-    /* renamed from: d  reason: collision with root package name */
-    public final TextView f20737d;
-
-    private b(ConstraintLayout constraintLayout, MaterialRadioButton materialRadioButton, TextView textView, TextView textView2) {
-        this.f20734a = constraintLayout;
-        this.f20735b = materialRadioButton;
-        this.f20736c = textView;
-        this.f20737d = textView2;
-    }
-
-    public static b a(View view) {
-        int i10 = yp.e.f55184k0;
-        MaterialRadioButton materialRadioButton = (MaterialRadioButton) e4.a.a(view, i10);
-        if (materialRadioButton != null) {
-            i10 = yp.e.f55188m0;
-            TextView textView = (TextView) e4.a.a(view, i10);
-            if (textView != null) {
-                i10 = yp.e.f55190n0;
-                TextView textView2 = (TextView) e4.a.a(view, i10);
-                if (textView2 != null) {
-                    return new b((ConstraintLayout) view, materialRadioButton, textView, textView2);
-                }
-            }
-        }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
-    }
-
-    public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(yp.f.f55216b, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
-        }
-        return a(inflate);
-    }
-
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public ConstraintLayout getRoot() {
-        return this.f20734a;
+public abstract class b {
+    public static final ButtonWithLoadingIndicator a(a aVar, m5 uiComponentHelper, Button config) {
+        Intrinsics.checkNotNullParameter(aVar, "<this>");
+        Intrinsics.checkNotNullParameter(uiComponentHelper, "uiComponentHelper");
+        Intrinsics.checkNotNullParameter(config, "config");
+        return com.withpersona.sdk2.inquiry.steps.ui.components.f.f(aVar, uiComponentHelper, config);
     }
 }

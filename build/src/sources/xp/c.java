@@ -1,17 +1,27 @@
 package xp;
 
-import android.content.Context;
-import android.content.res.Resources;
-import kotlin.jvm.internal.Intrinsics;
-import mp.n;
+import zq.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
-    public static final void a(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        try {
-            context.getResources().getLayout(n.f39004c);
-        } catch (Resources.NotFoundException unused) {
-            di.a.b(context);
-        }
+public final class c implements zq.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final h f54069a;
+
+    public c(h hVar) {
+        this.f54069a = hVar;
+    }
+
+    public static c a(h hVar) {
+        return new c(hVar);
+    }
+
+    public static b c(tp.e eVar) {
+        return new b(eVar);
+    }
+
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public b get() {
+        return c((tp.e) this.f54069a.get());
     }
 }

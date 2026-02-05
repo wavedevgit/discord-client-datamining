@@ -153,7 +153,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
             com.facebook.yoga.e r2 = com.facebook.yoga.e.d(r0)
             com.facebook.react.uimanager.Spacing r3 = r4.mDefaultPadding
             float r3 = r3.getRaw(r0)
-            r1.g0(r2, r3)
+            r1.h0(r2, r3)
             goto Lb2
         L33:
             float[] r2 = r4.mPadding
@@ -173,7 +173,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
             com.facebook.yoga.e r2 = com.facebook.yoga.e.d(r0)
             com.facebook.react.uimanager.Spacing r3 = r4.mDefaultPadding
             float r3 = r3.getRaw(r0)
-            r1.g0(r2, r3)
+            r1.h0(r2, r3)
             goto Lb2
         L62:
             float[] r2 = r4.mPadding
@@ -193,7 +193,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
             com.facebook.yoga.e r2 = com.facebook.yoga.e.d(r0)
             com.facebook.react.uimanager.Spacing r3 = r4.mDefaultPadding
             float r3 = r3.getRaw(r0)
-            r1.g0(r2, r3)
+            r1.h0(r2, r3)
             goto Lb2
         L91:
             boolean[] r1 = r4.mPaddingIsPercent
@@ -203,14 +203,14 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
             com.facebook.yoga.e r2 = com.facebook.yoga.e.d(r0)
             float[] r3 = r4.mPadding
             r3 = r3[r0]
-            r1.h0(r2, r3)
+            r1.i0(r2, r3)
             goto Lb2
         La5:
             com.facebook.yoga.YogaNode r1 = r4.mYogaNode
             com.facebook.yoga.e r2 = com.facebook.yoga.e.d(r0)
             float[] r3 = r4.mPadding
             r3 = r3[r0]
-            r1.g0(r2, r3)
+            r1.h0(r2, r3)
         Lb2:
             int r0 = r0 + 1
             goto L1
@@ -437,7 +437,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public final YogaValue getStyleWidth() {
-        return this.mYogaNode.o();
+        return this.mYogaNode.n();
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -604,7 +604,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setAlignSelf(YogaAlign yogaAlign) {
-        this.mYogaNode.y(yogaAlign);
+        this.mYogaNode.x(yogaAlign);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -675,7 +675,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setFlexWrap(YogaWrap yogaWrap) {
-        this.mYogaNode.o0(yogaWrap);
+        this.mYogaNode.p0(yogaWrap);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -738,12 +738,12 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setMarginPercent(int i10, float f10) {
-        this.mYogaNode.V(com.facebook.yoga.e.d(i10), f10);
+        this.mYogaNode.W(com.facebook.yoga.e.d(i10), f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setMeasureFunction(YogaMeasureFunction yogaMeasureFunction) {
-        this.mYogaNode.a0(yogaMeasureFunction);
+        this.mYogaNode.b0(yogaMeasureFunction);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -754,7 +754,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setOverflow(YogaOverflow yogaOverflow) {
-        this.mYogaNode.f0(yogaOverflow);
+        this.mYogaNode.g0(yogaOverflow);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -774,17 +774,17 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setPosition(int i10, float f10) {
-        this.mYogaNode.i0(com.facebook.yoga.e.d(i10), f10);
-    }
-
-    @Override // com.facebook.react.uimanager.ReactShadowNode
-    public void setPositionPercent(int i10, float f10) {
         this.mYogaNode.j0(com.facebook.yoga.e.d(i10), f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
+    public void setPositionPercent(int i10, float f10) {
+        this.mYogaNode.k0(com.facebook.yoga.e.d(i10), f10);
+    }
+
+    @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setPositionType(YogaPositionType yogaPositionType) {
-        this.mYogaNode.k0(yogaPositionType);
+        this.mYogaNode.l0(yogaPositionType);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -834,57 +834,57 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setStyleMaxHeight(float f10) {
-        this.mYogaNode.W(f10);
-    }
-
-    @Override // com.facebook.react.uimanager.ReactShadowNode
-    public void setStyleMaxHeightPercent(float f10) {
         this.mYogaNode.X(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
-    public void setStyleMaxWidth(float f10) {
+    public void setStyleMaxHeightPercent(float f10) {
         this.mYogaNode.Y(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
-    public void setStyleMaxWidthPercent(float f10) {
+    public void setStyleMaxWidth(float f10) {
         this.mYogaNode.Z(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
-    public void setStyleMinHeight(float f10) {
-        this.mYogaNode.b0(f10);
+    public void setStyleMaxWidthPercent(float f10) {
+        this.mYogaNode.a0(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
-    public void setStyleMinHeightPercent(float f10) {
+    public void setStyleMinHeight(float f10) {
         this.mYogaNode.c0(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
-    public void setStyleMinWidth(float f10) {
+    public void setStyleMinHeightPercent(float f10) {
         this.mYogaNode.d0(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
-    public void setStyleMinWidthPercent(float f10) {
+    public void setStyleMinWidth(float f10) {
         this.mYogaNode.e0(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
+    public void setStyleMinWidthPercent(float f10) {
+        this.mYogaNode.f0(f10);
+    }
+
+    @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setStyleWidth(float f10) {
-        this.mYogaNode.l0(f10);
+        this.mYogaNode.m0(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setStyleWidthAuto() {
-        this.mYogaNode.m0();
+        this.mYogaNode.n0();
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void setStyleWidthPercent(float f10) {
-        this.mYogaNode.n0(f10);
+        this.mYogaNode.o0(f10);
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode

@@ -1,7 +1,5 @@
 package com.github.yamill.orientation;
 
-import js.i;
-import js.i0;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.k;
@@ -10,6 +8,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Job;
+import ms.i;
+import ms.i0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class f {
 
@@ -18,38 +18,38 @@ public abstract class f {
     public static final class a extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f11225d;
+        int f11610d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ long f11226e;
+        final /* synthetic */ long f11611e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function2 f11227i;
+        final /* synthetic */ Function2 f11612i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f11228o;
+        final /* synthetic */ Ref.ObjectRef f11613o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f11229p;
+        final /* synthetic */ Ref.ObjectRef f11614p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(long j10, Function2 function2, Ref.ObjectRef objectRef, Ref.ObjectRef objectRef2, Continuation continuation) {
             super(2, continuation);
-            this.f11226e = j10;
-            this.f11227i = function2;
-            this.f11228o = objectRef;
-            this.f11229p = objectRef2;
+            this.f11611e = j10;
+            this.f11612i = function2;
+            this.f11613o = objectRef;
+            this.f11614p = objectRef2;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f11226e, this.f11227i, this.f11228o, this.f11229p, continuation);
+            return new a(this.f11611e, this.f11612i, this.f11613o, this.f11614p, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = rr.b.f();
-            int i10 = this.f11225d;
+            Object f10 = ur.b.f();
+            int i10 = this.f11610d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -58,19 +58,19 @@ public abstract class f {
                 }
             } else {
                 kotlin.c.b(obj);
-                long j10 = this.f11226e;
-                this.f11225d = 1;
+                long j10 = this.f11611e;
+                this.f11610d = 1;
                 if (i0.a(j10, this) == f10) {
                     return f10;
                 }
             }
-            this.f11227i.invoke(this.f11228o.element, this.f11229p.element);
-            return Unit.f32464a;
+            this.f11612i.invoke(this.f11613o.element, this.f11614p.element);
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -102,6 +102,6 @@ public abstract class f {
             d10 = i.d(coroutineScope, null, null, new a(j10, function2, objectRef, objectRef2, null), 3, null);
             objectRef3.element = d10;
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 }

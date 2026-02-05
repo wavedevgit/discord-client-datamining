@@ -7,7 +7,7 @@ import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
 import android.util.Log;
 import com.google.android.gms.common.util.k;
-import gf.o1;
+import gf.l1;
 import gf.q;
 import java.util.NoSuchElementException;
 import java.util.concurrent.ConcurrentHashMap;
@@ -17,41 +17,34 @@ import pf.c;
 public class a {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object f40858b = new Object();
+    private static final Object f40318b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private static volatile a f40859c;
+    private static volatile a f40319c;
 
     /* renamed from: a  reason: collision with root package name */
-    public final ConcurrentHashMap f40860a = new ConcurrentHashMap();
+    public final ConcurrentHashMap f40320a = new ConcurrentHashMap();
 
     private a() {
     }
 
     public static a b() {
-        if (f40859c == null) {
-            synchronized (f40858b) {
+        if (f40319c == null) {
+            synchronized (f40318b) {
                 try {
-                    if (f40859c == null) {
-                        f40859c = new a();
+                    if (f40319c == null) {
+                        f40319c = new a();
                     }
                 } finally {
                 }
             }
         }
-        a aVar = f40859c;
+        a aVar = f40319c;
         q.l(aVar);
         return aVar;
     }
 
-    private static void e(Context context, ServiceConnection serviceConnection) {
-        try {
-            context.unbindService(serviceConnection);
-        } catch (IllegalArgumentException | IllegalStateException | NoSuchElementException unused) {
-        }
-    }
-
-    private final boolean f(Context context, String str, Intent intent, ServiceConnection serviceConnection, int i10, boolean z10, Executor executor) {
+    private final boolean e(Context context, String str, Intent intent, ServiceConnection serviceConnection, int i10, boolean z10, Executor executor) {
         ComponentName component = intent.getComponent();
         if (component != null) {
             String packageName = component.getPackageName();
@@ -64,8 +57,8 @@ public class a {
             } catch (PackageManager.NameNotFoundException unused) {
             }
         }
-        if (g(serviceConnection)) {
-            ServiceConnection serviceConnection2 = (ServiceConnection) this.f40860a.putIfAbsent(serviceConnection, serviceConnection);
+        if (f(serviceConnection)) {
+            ServiceConnection serviceConnection2 = (ServiceConnection) this.f40320a.putIfAbsent(serviceConnection, serviceConnection);
             if (serviceConnection2 != null && serviceConnection != serviceConnection2) {
                 Log.w("ConnectionTracker", String.format("Duplicate binding with the same ServiceConnection: %s, %s, %s.", serviceConnection, str, intent.getAction()));
             }
@@ -76,17 +69,24 @@ public class a {
                 }
                 return h10;
             } finally {
-                this.f40860a.remove(serviceConnection, serviceConnection);
+                this.f40320a.remove(serviceConnection, serviceConnection);
             }
         }
         return h(context, intent, serviceConnection, i10, executor);
     }
 
-    private static boolean g(ServiceConnection serviceConnection) {
-        if (!(serviceConnection instanceof o1)) {
+    private static boolean f(ServiceConnection serviceConnection) {
+        if (!(serviceConnection instanceof l1)) {
             return true;
         }
         return false;
+    }
+
+    private static void g(Context context, ServiceConnection serviceConnection) {
+        try {
+            context.unbindService(serviceConnection);
+        } catch (IllegalArgumentException | IllegalStateException | NoSuchElementException unused) {
+        }
     }
 
     private static final boolean h(Context context, Intent intent, ServiceConnection serviceConnection, int i10, Executor executor) {
@@ -100,22 +100,25 @@ public class a {
     }
 
     public boolean a(Context context, Intent intent, ServiceConnection serviceConnection, int i10) {
-        return f(context, context.getClass().getName(), intent, serviceConnection, i10, true, null);
+        return e(context, context.getClass().getName(), intent, serviceConnection, i10, true, null);
     }
 
     public void c(Context context, ServiceConnection serviceConnection) {
-        if (g(serviceConnection) && this.f40860a.containsKey(serviceConnection)) {
-            try {
-                e(context, (ServiceConnection) this.f40860a.get(serviceConnection));
-                return;
-            } finally {
-                this.f40860a.remove(serviceConnection);
+        if (f(serviceConnection)) {
+            ConcurrentHashMap concurrentHashMap = this.f40320a;
+            if (concurrentHashMap.containsKey(serviceConnection)) {
+                try {
+                    g(context, (ServiceConnection) concurrentHashMap.get(serviceConnection));
+                    return;
+                } finally {
+                    this.f40320a.remove(serviceConnection);
+                }
             }
         }
-        e(context, serviceConnection);
+        g(context, serviceConnection);
     }
 
     public final boolean d(Context context, String str, Intent intent, ServiceConnection serviceConnection, int i10, Executor executor) {
-        return f(context, str, intent, serviceConnection, 4225, true, executor);
+        return e(context, str, intent, serviceConnection, 4225, true, executor);
     }
 }

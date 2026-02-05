@@ -78,8 +78,8 @@ public class ReadableNativeMap extends NativeMap implements ReadableMap {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public ReadableNativeMap() {
-        lr.o oVar = lr.o.f37119d;
-        this.keys$delegate = lr.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.v
+        or.o oVar = or.o.f44231d;
+        this.keys$delegate = or.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.v
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 String[] keys_delegate$lambda$1;
@@ -87,7 +87,7 @@ public class ReadableNativeMap extends NativeMap implements ReadableMap {
                 return keys_delegate$lambda$1;
             }
         });
-        this.localMap$delegate = lr.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.w
+        this.localMap$delegate = or.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.w
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 HashMap localMap_delegate$lambda$2;
@@ -95,7 +95,7 @@ public class ReadableNativeMap extends NativeMap implements ReadableMap {
                 return localMap_delegate$lambda$2;
             }
         });
-        this.localTypeMap$delegate = lr.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.x
+        this.localTypeMap$delegate = or.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.x
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 HashMap localTypeMap_delegate$lambda$3;
@@ -440,7 +440,7 @@ public class ReadableNativeMap extends NativeMap implements ReadableMap {
                     hashMap.put(str2, ((ReadableArray) db.a.c(getArray(str2))).toArrayList());
                     break;
                 default:
-                    throw new lr.p();
+                    throw new or.p();
             }
         }
         return hashMap;

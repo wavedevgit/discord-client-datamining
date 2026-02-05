@@ -7,6 +7,13 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final Object f13826a = new Object();
+
+    /* renamed from: b  reason: collision with root package name */
+    public static final /* synthetic */ int f13827b = 0;
+
     public static byte[] a(Context context, String str) {
         MessageDigest b10;
         PackageInfo e10 = pf.c.a(context).e(str, 64);

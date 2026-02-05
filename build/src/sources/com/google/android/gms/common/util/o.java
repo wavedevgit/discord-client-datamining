@@ -10,34 +10,34 @@ import java.lang.reflect.Method;
 public abstract class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int f13447a;
+    private static final int f13843a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Method f13448b;
+    private static final Method f13844b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Method f13449c;
+    private static final Method f13845c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Method f13450d;
+    private static final Method f13846d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Method f13451e;
+    private static final Method f13847e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Method f13452f;
+    private static final Method f13848f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Method f13453g;
+    private static final Method f13849g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Method f13454h;
+    private static final Method f13850h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Method f13455i;
+    private static final Method f13851i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static Boolean f13456j;
+    private static Boolean f13852j;
 
     /* JADX WARN: Removed duplicated region for block: B:49:0x006b A[EXC_TOP_SPLITTER, SYNTHETIC] */
     /* JADX WARN: Removed duplicated region for block: B:61:0x008b A[EXC_TOP_SPLITTER, SYNTHETIC] */
@@ -48,7 +48,7 @@ public abstract class o {
             java.lang.Class r2 = java.lang.Integer.TYPE
             java.lang.Class<android.os.WorkSource> r3 = android.os.WorkSource.class
             int r4 = android.os.Process.myUid()
-            com.google.android.gms.common.util.o.f13447a = r4
+            com.google.android.gms.common.util.o.f13843a = r4
             r4 = 0
             java.lang.Class[] r5 = new java.lang.Class[]{r2}     // Catch: java.lang.Exception -> L18
             java.lang.reflect.Method r5 = r3.getMethod(r1, r5)     // Catch: java.lang.Exception -> L18
@@ -56,21 +56,21 @@ public abstract class o {
         L18:
             r5 = r4
         L19:
-            com.google.android.gms.common.util.o.f13448b = r5
+            com.google.android.gms.common.util.o.f13844b = r5
             java.lang.Class[] r5 = new java.lang.Class[]{r2, r0}     // Catch: java.lang.Exception -> L24
             java.lang.reflect.Method r1 = r3.getMethod(r1, r5)     // Catch: java.lang.Exception -> L24
             goto L25
         L24:
             r1 = r4
         L25:
-            com.google.android.gms.common.util.o.f13449c = r1
+            com.google.android.gms.common.util.o.f13845c = r1
             java.lang.String r1 = "size"
             java.lang.reflect.Method r1 = r3.getMethod(r1, r4)     // Catch: java.lang.Exception -> L2e
             goto L2f
         L2e:
             r1 = r4
         L2f:
-            com.google.android.gms.common.util.o.f13450d = r1
+            com.google.android.gms.common.util.o.f13846d = r1
             java.lang.String r1 = "get"
             java.lang.Class[] r5 = new java.lang.Class[]{r2}     // Catch: java.lang.Exception -> L3c
             java.lang.reflect.Method r1 = r3.getMethod(r1, r5)     // Catch: java.lang.Exception -> L3c
@@ -78,7 +78,7 @@ public abstract class o {
         L3c:
             r1 = r4
         L3d:
-            com.google.android.gms.common.util.o.f13451e = r1
+            com.google.android.gms.common.util.o.f13847e = r1
             java.lang.String r1 = "getName"
             java.lang.Class[] r5 = new java.lang.Class[]{r2}     // Catch: java.lang.Exception -> L4a
             java.lang.reflect.Method r1 = r3.getMethod(r1, r5)     // Catch: java.lang.Exception -> L4a
@@ -86,7 +86,7 @@ public abstract class o {
         L4a:
             r1 = r4
         L4b:
-            com.google.android.gms.common.util.o.f13452f = r1
+            com.google.android.gms.common.util.o.f13848f = r1
             boolean r1 = com.google.android.gms.common.util.k.f()
             java.lang.String r5 = "WorkSourceUtil"
             if (r1 == 0) goto L62
@@ -100,7 +100,7 @@ public abstract class o {
         L62:
             r1 = r4
         L63:
-            com.google.android.gms.common.util.o.f13453g = r1
+            com.google.android.gms.common.util.o.f13849g = r1
             boolean r1 = com.google.android.gms.common.util.k.f()
             if (r1 == 0) goto L82
             java.lang.String r1 = "android.os.WorkSource$WorkChain"
@@ -116,7 +116,7 @@ public abstract class o {
         L82:
             r0 = r4
         L83:
-            com.google.android.gms.common.util.o.f13454h = r0
+            com.google.android.gms.common.util.o.f13850h = r0
             boolean r0 = com.google.android.gms.common.util.k.f()
             if (r0 == 0) goto L96
             java.lang.String r0 = "isEmpty"
@@ -127,15 +127,15 @@ public abstract class o {
         L96:
             r0 = r4
         L97:
-            com.google.android.gms.common.util.o.f13455i = r0
-            com.google.android.gms.common.util.o.f13456j = r4
+            com.google.android.gms.common.util.o.f13851i = r0
+            com.google.android.gms.common.util.o.f13852j = r4
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.common.util.o.<clinit>():void");
     }
 
     public static void a(WorkSource workSource, int i10, String str) {
-        Method method = f13449c;
+        Method method = f13845c;
         if (method != null) {
             if (str == null) {
                 str = "";
@@ -148,7 +148,7 @@ public abstract class o {
                 return;
             }
         }
-        Method method2 = f13448b;
+        Method method2 = f13844b;
         if (method2 != null) {
             try {
                 method2.invoke(workSource, Integer.valueOf(i10));
@@ -179,7 +179,7 @@ public abstract class o {
 
     public static synchronized boolean c(Context context) {
         synchronized (o.class) {
-            Boolean bool = f13456j;
+            Boolean bool = f13852j;
             if (bool != null) {
                 return bool.booleanValue();
             }
@@ -190,13 +190,13 @@ public abstract class o {
             if (androidx.core.content.a.a(context, "android.permission.UPDATE_DEVICE_STATS") == 0) {
                 z10 = true;
             }
-            f13456j = Boolean.valueOf(z10);
+            f13852j = Boolean.valueOf(z10);
             return z10;
         }
     }
 
     public static boolean d(WorkSource workSource) {
-        Method method = f13455i;
+        Method method = f13851i;
         if (method != null) {
             try {
                 Object invoke = method.invoke(workSource, null);
@@ -213,7 +213,7 @@ public abstract class o {
     }
 
     public static int e(WorkSource workSource) {
-        Method method = f13450d;
+        Method method = f13846d;
         if (method != null) {
             try {
                 Object invoke = method.invoke(workSource, null);

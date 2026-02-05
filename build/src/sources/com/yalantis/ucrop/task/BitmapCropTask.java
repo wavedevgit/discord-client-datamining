@@ -7,103 +7,103 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.util.Log;
 import java.io.File;
-import rq.a;
-import sq.b;
-import sq.c;
-import sq.d;
-import uq.e;
-import uq.f;
+import uq.a;
+import vq.b;
+import vq.c;
+import vq.d;
+import xq.e;
+import xq.f;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class BitmapCropTask extends AsyncTask<Void, Void, Throwable> {
 
     /* renamed from: a  reason: collision with root package name */
-    private Bitmap f19498a;
+    private Bitmap f19904a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final RectF f19499b;
+    private final RectF f19905b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final RectF f19500c;
+    private final RectF f19906c;
 
     /* renamed from: d  reason: collision with root package name */
-    private float f19501d;
+    private float f19907d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f19502e;
+    private float f19908e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f19503f;
+    private final int f19909f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f19504g;
+    private final int f19910g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Bitmap.CompressFormat f19505h;
+    private final Bitmap.CompressFormat f19911h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f19506i;
+    private final int f19912i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final String f19507j;
+    private final String f19913j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final String f19508k;
+    private final String f19914k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final c f19509l;
+    private final c f19915l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final a f19510m;
+    private final a f19916m;
 
     /* renamed from: n  reason: collision with root package name */
-    private int f19511n;
+    private int f19917n;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f19512o;
+    private int f19918o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f19513p;
+    private int f19919p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f19514q;
+    private int f19920q;
 
     static {
         System.loadLibrary("ucrop");
     }
 
     public BitmapCropTask(Bitmap bitmap, d dVar, b bVar, a aVar) {
-        this.f19498a = bitmap;
-        this.f19499b = dVar.a();
-        this.f19500c = dVar.c();
-        this.f19501d = dVar.d();
-        this.f19502e = dVar.b();
-        this.f19503f = bVar.f();
-        this.f19504g = bVar.g();
-        this.f19505h = bVar.a();
-        this.f19506i = bVar.b();
-        this.f19507j = bVar.d();
-        this.f19508k = bVar.e();
-        this.f19509l = bVar.c();
-        this.f19510m = aVar;
+        this.f19904a = bitmap;
+        this.f19905b = dVar.a();
+        this.f19906c = dVar.c();
+        this.f19907d = dVar.d();
+        this.f19908e = dVar.b();
+        this.f19909f = bVar.f();
+        this.f19910g = bVar.g();
+        this.f19911h = bVar.a();
+        this.f19912i = bVar.b();
+        this.f19913j = bVar.d();
+        this.f19914k = bVar.e();
+        this.f19915l = bVar.c();
+        this.f19916m = aVar;
     }
 
     private boolean a(float f10) {
-        e3.a aVar = new e3.a(this.f19507j);
-        this.f19513p = Math.round((this.f19499b.left - this.f19500c.left) / this.f19501d);
-        this.f19514q = Math.round((this.f19499b.top - this.f19500c.top) / this.f19501d);
-        this.f19511n = Math.round(this.f19499b.width() / this.f19501d);
-        int round = Math.round(this.f19499b.height() / this.f19501d);
-        this.f19512o = round;
-        boolean e10 = e(this.f19511n, round);
+        e3.a aVar = new e3.a(this.f19913j);
+        this.f19919p = Math.round((this.f19905b.left - this.f19906c.left) / this.f19907d);
+        this.f19920q = Math.round((this.f19905b.top - this.f19906c.top) / this.f19907d);
+        this.f19917n = Math.round(this.f19905b.width() / this.f19907d);
+        int round = Math.round(this.f19905b.height() / this.f19907d);
+        this.f19918o = round;
+        boolean e10 = e(this.f19917n, round);
         Log.i("BitmapCropTask", "Should crop: " + e10);
         if (e10) {
-            boolean cropCImg = cropCImg(this.f19507j, this.f19508k, this.f19513p, this.f19514q, this.f19511n, this.f19512o, this.f19502e, f10, this.f19505h.ordinal(), this.f19506i, this.f19509l.a(), this.f19509l.b());
-            if (cropCImg && this.f19505h.equals(Bitmap.CompressFormat.JPEG)) {
-                f.b(aVar, this.f19511n, this.f19512o, this.f19508k);
+            boolean cropCImg = cropCImg(this.f19913j, this.f19914k, this.f19919p, this.f19920q, this.f19917n, this.f19918o, this.f19908e, f10, this.f19911h.ordinal(), this.f19912i, this.f19915l.a(), this.f19915l.b());
+            if (cropCImg && this.f19911h.equals(Bitmap.CompressFormat.JPEG)) {
+                f.b(aVar, this.f19917n, this.f19918o, this.f19914k);
             }
             return cropCImg;
         }
-        e.a(this.f19507j, this.f19508k);
+        e.a(this.f19913j, this.f19914k);
         return false;
     }
 
@@ -115,8 +115,8 @@ public class BitmapCropTask extends AsyncTask<Void, Void, Throwable> {
         BitmapFactory.Options options = new BitmapFactory.Options();
         boolean z10 = true;
         options.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(this.f19507j, options);
-        if (this.f19509l.a() != 90 && this.f19509l.a() != 270) {
+        BitmapFactory.decodeFile(this.f19913j, options);
+        if (this.f19915l.a() != 90 && this.f19915l.a() != 270) {
             z10 = false;
         }
         if (z10) {
@@ -124,20 +124,20 @@ public class BitmapCropTask extends AsyncTask<Void, Void, Throwable> {
         } else {
             i10 = options.outWidth;
         }
-        float width = i10 / this.f19498a.getWidth();
+        float width = i10 / this.f19904a.getWidth();
         if (z10) {
             i11 = options.outWidth;
         } else {
             i11 = options.outHeight;
         }
-        this.f19501d /= Math.min(width, i11 / this.f19498a.getHeight());
-        if (this.f19503f > 0 && this.f19504g > 0) {
-            float width2 = this.f19499b.width() / this.f19501d;
-            float height = this.f19499b.height() / this.f19501d;
-            int i12 = this.f19503f;
-            if (width2 > i12 || height > this.f19504g) {
-                float min = Math.min(i12 / width2, this.f19504g / height);
-                this.f19501d /= min;
+        this.f19907d /= Math.min(width, i11 / this.f19904a.getHeight());
+        if (this.f19909f > 0 && this.f19910g > 0) {
+            float width2 = this.f19905b.width() / this.f19907d;
+            float height = this.f19905b.height() / this.f19907d;
+            int i12 = this.f19909f;
+            if (width2 > i12 || height > this.f19910g) {
+                float min = Math.min(i12 / width2, this.f19910g / height);
+                this.f19907d /= min;
                 return min;
             }
             return 1.0f;
@@ -147,9 +147,9 @@ public class BitmapCropTask extends AsyncTask<Void, Void, Throwable> {
 
     private boolean e(int i10, int i11) {
         int round = Math.round(Math.max(i10, i11) / 1000.0f) + 1;
-        if (this.f19503f <= 0 || this.f19504g <= 0) {
+        if (this.f19909f <= 0 || this.f19910g <= 0) {
             float f10 = round;
-            if (Math.abs(this.f19499b.left - this.f19500c.left) <= f10 && Math.abs(this.f19499b.top - this.f19500c.top) <= f10 && Math.abs(this.f19499b.bottom - this.f19500c.bottom) <= f10 && Math.abs(this.f19499b.right - this.f19500c.right) <= f10 && this.f19502e == 0.0f) {
+            if (Math.abs(this.f19905b.left - this.f19906c.left) <= f10 && Math.abs(this.f19905b.top - this.f19906c.top) <= f10 && Math.abs(this.f19905b.bottom - this.f19906c.bottom) <= f10 && Math.abs(this.f19905b.right - this.f19906c.right) <= f10 && this.f19908e == 0.0f) {
                 return false;
             }
         }
@@ -160,19 +160,19 @@ public class BitmapCropTask extends AsyncTask<Void, Void, Throwable> {
     @Override // android.os.AsyncTask
     /* renamed from: b */
     public Throwable doInBackground(Void... voidArr) {
-        Bitmap bitmap = this.f19498a;
+        Bitmap bitmap = this.f19904a;
         if (bitmap == null) {
             return new NullPointerException("ViewBitmap is null");
         }
         if (bitmap.isRecycled()) {
             return new NullPointerException("ViewBitmap is recycled");
         }
-        if (this.f19500c.isEmpty()) {
+        if (this.f19906c.isEmpty()) {
             return new NullPointerException("CurrentImageRect is empty");
         }
         try {
             a(d());
-            this.f19498a = null;
+            this.f19904a = null;
             return null;
         } catch (Throwable th2) {
             return th2;
@@ -183,10 +183,10 @@ public class BitmapCropTask extends AsyncTask<Void, Void, Throwable> {
     @Override // android.os.AsyncTask
     /* renamed from: c */
     public void onPostExecute(Throwable th2) {
-        a aVar = this.f19510m;
+        a aVar = this.f19916m;
         if (aVar != null) {
             if (th2 == null) {
-                this.f19510m.a(Uri.fromFile(new File(this.f19508k)), this.f19513p, this.f19514q, this.f19511n, this.f19512o);
+                this.f19916m.a(Uri.fromFile(new File(this.f19914k)), this.f19919p, this.f19920q, this.f19917n, this.f19918o);
                 return;
             }
             aVar.b(th2);

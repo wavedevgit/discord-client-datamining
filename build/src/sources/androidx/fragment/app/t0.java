@@ -18,25 +18,25 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class t0 {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f4359g = new a(null);
+    public static final a f4471g = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ViewGroup f4360a;
+    private final ViewGroup f4472a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f4361b;
+    private final List f4473b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f4362c;
+    private final List f4474c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f4363d;
+    private boolean f4475d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f4364e;
+    private boolean f4476e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f4365f;
+    private boolean f4477f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -55,13 +55,13 @@ public abstract class t0 {
         public final t0 b(ViewGroup container, u0 factory) {
             Intrinsics.checkNotNullParameter(container, "container");
             Intrinsics.checkNotNullParameter(factory, "factory");
-            Object tag = container.getTag(f3.b.f23148b);
+            Object tag = container.getTag(f3.b.f22173b);
             if (tag instanceof t0) {
                 return (t0) tag;
             }
             t0 a10 = factory.a(container);
             Intrinsics.checkNotNullExpressionValue(a10, "factory.createController(container)");
-            container.setTag(f3.b.f23148b, a10);
+            container.setTag(f3.b.f22173b, a10);
             return a10;
         }
 
@@ -73,24 +73,24 @@ public abstract class t0 {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean f4366a;
+        private final boolean f4478a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f4367b;
+        private boolean f4479b;
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f4368c;
+        private boolean f4480c;
 
         public final void a(ViewGroup container) {
             Intrinsics.checkNotNullParameter(container, "container");
-            if (!this.f4368c) {
+            if (!this.f4480c) {
                 c(container);
             }
-            this.f4368c = true;
+            this.f4480c = true;
         }
 
         public boolean b() {
-            return this.f4366a;
+            return this.f4478a;
         }
 
         public abstract void c(ViewGroup viewGroup);
@@ -108,10 +108,10 @@ public abstract class t0 {
 
         public final void g(ViewGroup container) {
             Intrinsics.checkNotNullParameter(container, "container");
-            if (!this.f4367b) {
+            if (!this.f4479b) {
                 f(container);
             }
-            this.f4367b = true;
+            this.f4479b = true;
         }
     }
 
@@ -120,7 +120,7 @@ public abstract class t0 {
     public static final class c extends d {
 
         /* renamed from: l  reason: collision with root package name */
-        private final k0 f4369l;
+        private final k0 f4481l;
 
         /* JADX WARN: Illegal instructions before constructor call */
         /*
@@ -140,7 +140,7 @@ public abstract class t0 {
                 java.lang.String r1 = "fragmentStateManager.fragment"
                 kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r0, r1)
                 r2.<init>(r3, r4, r0)
-                r2.f4369l = r5
+                r2.f4481l = r5
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: androidx.fragment.app.t0.c.<init>(androidx.fragment.app.t0$d$b, androidx.fragment.app.t0$d$a, androidx.fragment.app.k0):void");
@@ -150,7 +150,7 @@ public abstract class t0 {
         public void d() {
             super.d();
             h().mTransitioning = false;
-            this.f4369l.m();
+            this.f4481l.m();
         }
 
         @Override // androidx.fragment.app.t0.d
@@ -158,7 +158,7 @@ public abstract class t0 {
             if (!n()) {
                 super.p();
                 if (i() == d.a.ADDING) {
-                    Fragment k10 = this.f4369l.k();
+                    Fragment k10 = this.f4481l.k();
                     Intrinsics.checkNotNullExpressionValue(k10, "fragmentStateManager.fragment");
                     View findFocus = k10.mView.findFocus();
                     if (findFocus != null) {
@@ -170,7 +170,7 @@ public abstract class t0 {
                     View requireView = h().requireView();
                     Intrinsics.checkNotNullExpressionValue(requireView, "this.fragment.requireView()");
                     if (requireView.getParent() == null) {
-                        this.f4369l.b();
+                        this.f4481l.b();
                         requireView.setAlpha(0.0f);
                     }
                     if (requireView.getAlpha() == 0.0f && requireView.getVisibility() == 0) {
@@ -178,7 +178,7 @@ public abstract class t0 {
                     }
                     requireView.setAlpha(k10.getPostOnViewCreatedAlpha());
                 } else if (i() == d.a.REMOVING) {
-                    Fragment k11 = this.f4369l.k();
+                    Fragment k11 = this.f4481l.k();
                     Intrinsics.checkNotNullExpressionValue(k11, "fragmentStateManager.fragment");
                     View requireView2 = k11.requireView();
                     Intrinsics.checkNotNullExpressionValue(requireView2, "fragment.requireView()");
@@ -195,37 +195,37 @@ public abstract class t0 {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private b f4370a;
+        private b f4482a;
 
         /* renamed from: b  reason: collision with root package name */
-        private a f4371b;
+        private a f4483b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Fragment f4372c;
+        private final Fragment f4484c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f4373d;
+        private final List f4485d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f4374e;
+        private boolean f4486e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f4375f;
+        private boolean f4487f;
 
         /* renamed from: g  reason: collision with root package name */
-        private boolean f4376g;
+        private boolean f4488g;
 
         /* renamed from: h  reason: collision with root package name */
-        private boolean f4377h;
+        private boolean f4489h;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f4378i;
+        private boolean f4490i;
 
         /* renamed from: j  reason: collision with root package name */
-        private final List f4379j;
+        private final List f4491j;
 
         /* renamed from: k  reason: collision with root package name */
-        private final List f4380k;
+        private final List f4492k;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public enum a {
@@ -243,7 +243,7 @@ public abstract class t0 {
             
 
             /* renamed from: d  reason: collision with root package name */
-            public static final a f4385d = new a(null);
+            public static final a f4497d = new a(null);
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
             public static final class a {
@@ -278,10 +278,10 @@ public abstract class t0 {
 
             /* renamed from: androidx.fragment.app.t0$d$b$b  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-            public /* synthetic */ class C0054b {
+            public /* synthetic */ class C0055b {
 
                 /* renamed from: a  reason: collision with root package name */
-                public static final /* synthetic */ int[] f4391a;
+                public static final /* synthetic */ int[] f4503a;
 
                 static {
                     int[] iArr = new int[b.values().length];
@@ -301,18 +301,18 @@ public abstract class t0 {
                         iArr[b.INVISIBLE.ordinal()] = 4;
                     } catch (NoSuchFieldError unused4) {
                     }
-                    f4391a = iArr;
+                    f4503a = iArr;
                 }
             }
 
             public static final b e(int i10) {
-                return f4385d.b(i10);
+                return f4497d.b(i10);
             }
 
             public final void d(View view, ViewGroup container) {
                 Intrinsics.checkNotNullParameter(view, "view");
                 Intrinsics.checkNotNullParameter(container, "container");
-                int i10 = C0054b.f4391a[ordinal()];
+                int i10 = C0055b.f4503a[ordinal()];
                 ViewGroup viewGroup = null;
                 if (i10 != 1) {
                     if (i10 != 2) {
@@ -365,7 +365,7 @@ public abstract class t0 {
         public /* synthetic */ class c {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f4392a;
+            public static final /* synthetic */ int[] f4504a;
 
             static {
                 int[] iArr = new int[a.values().length];
@@ -381,7 +381,7 @@ public abstract class t0 {
                     iArr[a.NONE.ordinal()] = 3;
                 } catch (NoSuchFieldError unused3) {
                 }
-                f4392a = iArr;
+                f4504a = iArr;
             }
         }
 
@@ -389,49 +389,49 @@ public abstract class t0 {
             Intrinsics.checkNotNullParameter(finalState, "finalState");
             Intrinsics.checkNotNullParameter(lifecycleImpact, "lifecycleImpact");
             Intrinsics.checkNotNullParameter(fragment, "fragment");
-            this.f4370a = finalState;
-            this.f4371b = lifecycleImpact;
-            this.f4372c = fragment;
-            this.f4373d = new ArrayList();
-            this.f4378i = true;
+            this.f4482a = finalState;
+            this.f4483b = lifecycleImpact;
+            this.f4484c = fragment;
+            this.f4485d = new ArrayList();
+            this.f4490i = true;
             ArrayList arrayList = new ArrayList();
-            this.f4379j = arrayList;
-            this.f4380k = arrayList;
+            this.f4491j = arrayList;
+            this.f4492k = arrayList;
         }
 
         public final void a(Runnable listener) {
             Intrinsics.checkNotNullParameter(listener, "listener");
-            this.f4373d.add(listener);
+            this.f4485d.add(listener);
         }
 
         public final void b(b effect) {
             Intrinsics.checkNotNullParameter(effect, "effect");
-            this.f4379j.add(effect);
+            this.f4491j.add(effect);
         }
 
         public final void c(ViewGroup container) {
             Intrinsics.checkNotNullParameter(container, "container");
-            this.f4377h = false;
-            if (!this.f4374e) {
-                this.f4374e = true;
-                if (this.f4379j.isEmpty()) {
+            this.f4489h = false;
+            if (!this.f4486e) {
+                this.f4486e = true;
+                if (this.f4491j.isEmpty()) {
                     d();
                     return;
                 }
-                for (b bVar : CollectionsKt.h1(this.f4380k)) {
+                for (b bVar : CollectionsKt.h1(this.f4492k)) {
                     bVar.a(container);
                 }
             }
         }
 
         public void d() {
-            this.f4377h = false;
-            if (!this.f4375f) {
+            this.f4489h = false;
+            if (!this.f4487f) {
                 if (FragmentManager.O0(2)) {
                     Log.v("FragmentManager", "SpecialEffectsController: " + this + " has called complete.");
                 }
-                this.f4375f = true;
-                for (Runnable runnable : this.f4373d) {
+                this.f4487f = true;
+                for (Runnable runnable : this.f4485d) {
                     runnable.run();
                 }
             }
@@ -439,93 +439,93 @@ public abstract class t0 {
 
         public final void e(b effect) {
             Intrinsics.checkNotNullParameter(effect, "effect");
-            if (this.f4379j.remove(effect) && this.f4379j.isEmpty()) {
+            if (this.f4491j.remove(effect) && this.f4491j.isEmpty()) {
                 d();
             }
         }
 
         public final List f() {
-            return this.f4380k;
+            return this.f4492k;
         }
 
         public final b g() {
-            return this.f4370a;
+            return this.f4482a;
         }
 
         public final Fragment h() {
-            return this.f4372c;
+            return this.f4484c;
         }
 
         public final a i() {
-            return this.f4371b;
+            return this.f4483b;
         }
 
         public final boolean j() {
-            return this.f4378i;
+            return this.f4490i;
         }
 
         public final boolean k() {
-            return this.f4374e;
+            return this.f4486e;
         }
 
         public final boolean l() {
-            return this.f4375f;
+            return this.f4487f;
         }
 
         public final boolean m() {
-            return this.f4376g;
+            return this.f4488g;
         }
 
         public final boolean n() {
-            return this.f4377h;
+            return this.f4489h;
         }
 
         public final void o(b finalState, a lifecycleImpact) {
             Intrinsics.checkNotNullParameter(finalState, "finalState");
             Intrinsics.checkNotNullParameter(lifecycleImpact, "lifecycleImpact");
-            int i10 = c.f4392a[lifecycleImpact.ordinal()];
+            int i10 = c.f4504a[lifecycleImpact.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
-                    if (i10 == 3 && this.f4370a != b.REMOVED) {
+                    if (i10 == 3 && this.f4482a != b.REMOVED) {
                         if (FragmentManager.O0(2)) {
-                            Log.v("FragmentManager", "SpecialEffectsController: For fragment " + this.f4372c + " mFinalState = " + this.f4370a + " -> " + finalState + '.');
+                            Log.v("FragmentManager", "SpecialEffectsController: For fragment " + this.f4484c + " mFinalState = " + this.f4482a + " -> " + finalState + '.');
                         }
-                        this.f4370a = finalState;
+                        this.f4482a = finalState;
                         return;
                     }
                     return;
                 }
                 if (FragmentManager.O0(2)) {
-                    Log.v("FragmentManager", "SpecialEffectsController: For fragment " + this.f4372c + " mFinalState = " + this.f4370a + " -> REMOVED. mLifecycleImpact  = " + this.f4371b + " to REMOVING.");
+                    Log.v("FragmentManager", "SpecialEffectsController: For fragment " + this.f4484c + " mFinalState = " + this.f4482a + " -> REMOVED. mLifecycleImpact  = " + this.f4483b + " to REMOVING.");
                 }
-                this.f4370a = b.REMOVED;
-                this.f4371b = a.REMOVING;
-                this.f4378i = true;
-            } else if (this.f4370a == b.REMOVED) {
+                this.f4482a = b.REMOVED;
+                this.f4483b = a.REMOVING;
+                this.f4490i = true;
+            } else if (this.f4482a == b.REMOVED) {
                 if (FragmentManager.O0(2)) {
-                    Log.v("FragmentManager", "SpecialEffectsController: For fragment " + this.f4372c + " mFinalState = REMOVED -> VISIBLE. mLifecycleImpact = " + this.f4371b + " to ADDING.");
+                    Log.v("FragmentManager", "SpecialEffectsController: For fragment " + this.f4484c + " mFinalState = REMOVED -> VISIBLE. mLifecycleImpact = " + this.f4483b + " to ADDING.");
                 }
-                this.f4370a = b.VISIBLE;
-                this.f4371b = a.ADDING;
-                this.f4378i = true;
+                this.f4482a = b.VISIBLE;
+                this.f4483b = a.ADDING;
+                this.f4490i = true;
             }
         }
 
         public void p() {
-            this.f4377h = true;
+            this.f4489h = true;
         }
 
         public final void q(boolean z10) {
-            this.f4378i = z10;
+            this.f4490i = z10;
         }
 
         public final void r(boolean z10) {
-            this.f4376g = z10;
+            this.f4488g = z10;
         }
 
         public String toString() {
             String hexString = Integer.toHexString(System.identityHashCode(this));
-            return "Operation {" + hexString + "} {finalState = " + this.f4370a + " lifecycleImpact = " + this.f4371b + " fragment = " + this.f4372c + '}';
+            return "Operation {" + hexString + "} {finalState = " + this.f4482a + " lifecycleImpact = " + this.f4483b + " fragment = " + this.f4484c + '}';
         }
     }
 
@@ -533,7 +533,7 @@ public abstract class t0 {
     public /* synthetic */ class e {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f4393a;
+        public static final /* synthetic */ int[] f4505a;
 
         static {
             int[] iArr = new int[d.a.values().length];
@@ -541,15 +541,15 @@ public abstract class t0 {
                 iArr[d.a.NONE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
-            f4393a = iArr;
+            f4505a = iArr;
         }
     }
 
     public t0(ViewGroup container) {
         Intrinsics.checkNotNullParameter(container, "container");
-        this.f4360a = container;
-        this.f4361b = new ArrayList();
-        this.f4362c = new ArrayList();
+        this.f4472a = container;
+        this.f4473b = new ArrayList();
+        this.f4474c = new ArrayList();
     }
 
     private final void B(List list) {
@@ -565,22 +565,22 @@ public abstract class t0 {
         List h12 = CollectionsKt.h1(CollectionsKt.l1(arrayList));
         int size2 = h12.size();
         for (int i11 = 0; i11 < size2; i11++) {
-            ((b) h12.get(i11)).g(this.f4360a);
+            ((b) h12.get(i11)).g(this.f4472a);
         }
     }
 
     private final void C() {
-        for (d dVar : this.f4361b) {
+        for (d dVar : this.f4473b) {
             if (dVar.i() == d.a.ADDING) {
                 View requireView = dVar.h().requireView();
                 Intrinsics.checkNotNullExpressionValue(requireView, "fragment.requireView()");
-                dVar.o(d.b.f4385d.b(requireView.getVisibility()), d.a.NONE);
+                dVar.o(d.b.f4497d.b(requireView.getVisibility()), d.a.NONE);
             }
         }
     }
 
     private final void g(d.b bVar, d.a aVar, k0 k0Var) {
-        synchronized (this.f4361b) {
+        synchronized (this.f4473b) {
             try {
                 Fragment k10 = k0Var.k();
                 Intrinsics.checkNotNullExpressionValue(k10, "fragmentStateManager.fragment");
@@ -599,7 +599,7 @@ public abstract class t0 {
                     return;
                 }
                 final c cVar = new c(bVar, aVar, k0Var);
-                this.f4361b.add(cVar);
+                this.f4473b.add(cVar);
                 cVar.a(new Runnable() { // from class: androidx.fragment.app.r0
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -612,7 +612,7 @@ public abstract class t0 {
                         t0.i(t0.this, cVar);
                     }
                 });
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -623,11 +623,11 @@ public abstract class t0 {
     public static final void h(t0 this$0, c operation) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(operation, "$operation");
-        if (this$0.f4361b.contains(operation)) {
+        if (this$0.f4473b.contains(operation)) {
             d.b g10 = operation.g();
             View view = operation.h().mView;
             Intrinsics.checkNotNullExpressionValue(view, "operation.fragment.mView");
-            g10.d(view, this$0.f4360a);
+            g10.d(view, this$0.f4472a);
         }
     }
 
@@ -635,13 +635,13 @@ public abstract class t0 {
     public static final void i(t0 this$0, c operation) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(operation, "$operation");
-        this$0.f4361b.remove(operation);
-        this$0.f4362c.remove(operation);
+        this$0.f4473b.remove(operation);
+        this$0.f4474c.remove(operation);
     }
 
     private final d o(Fragment fragment) {
         Object obj;
-        Iterator it = this.f4361b.iterator();
+        Iterator it = this.f4473b.iterator();
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();
@@ -659,7 +659,7 @@ public abstract class t0 {
 
     private final d p(Fragment fragment) {
         Object obj;
-        Iterator it = this.f4362c.iterator();
+        Iterator it = this.f4474c.iterator();
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();
@@ -676,11 +676,11 @@ public abstract class t0 {
     }
 
     public static final t0 u(ViewGroup viewGroup, FragmentManager fragmentManager) {
-        return f4359g.a(viewGroup, fragmentManager);
+        return f4471g.a(viewGroup, fragmentManager);
     }
 
     public static final t0 v(ViewGroup viewGroup, u0 u0Var) {
-        return f4359g.b(viewGroup, u0Var);
+        return f4471g.b(viewGroup, u0Var);
     }
 
     private final boolean w(List list) {
@@ -732,18 +732,18 @@ public abstract class t0 {
             Log.v("FragmentManager", "SpecialEffectsController: Processing Progress " + backEvent.a());
         }
         ArrayList arrayList = new ArrayList();
-        for (d dVar : this.f4362c) {
+        for (d dVar : this.f4474c) {
             CollectionsKt.B(arrayList, dVar.f());
         }
         List h12 = CollectionsKt.h1(CollectionsKt.l1(arrayList));
         int size = h12.size();
         for (int i10 = 0; i10 < size; i10++) {
-            ((b) h12.get(i10)).e(backEvent, this.f4360a);
+            ((b) h12.get(i10)).e(backEvent, this.f4472a);
         }
     }
 
     public final void D(boolean z10) {
-        this.f4364e = z10;
+        this.f4476e = z10;
     }
 
     public final void c(d operation) {
@@ -752,7 +752,7 @@ public abstract class t0 {
             d.b g10 = operation.g();
             View requireView = operation.h().requireView();
             Intrinsics.checkNotNullExpressionValue(requireView, "operation.fragment.requireView()");
-            g10.d(requireView, this.f4360a);
+            g10.d(requireView, this.f4472a);
             operation.q(false);
         }
     }
@@ -769,7 +769,7 @@ public abstract class t0 {
         List h12 = CollectionsKt.h1(CollectionsKt.l1(arrayList));
         int size = h12.size();
         for (int i10 = 0; i10 < size; i10++) {
-            ((b) h12.get(i10)).d(this.f4360a);
+            ((b) h12.get(i10)).d(this.f4472a);
         }
         int size2 = operations.size();
         for (int i11 = 0; i11 < size2; i11++) {
@@ -789,8 +789,8 @@ public abstract class t0 {
         if (FragmentManager.O0(3)) {
             Log.d("FragmentManager", "SpecialEffectsController: Completing Back ");
         }
-        B(this.f4362c);
-        e(this.f4362c);
+        B(this.f4474c);
+        e(this.f4474c);
     }
 
     public final void j(d.b finalState, k0 fragmentStateManager) {
@@ -828,18 +828,18 @@ public abstract class t0 {
 
     public final void n() {
         boolean z10;
-        if (this.f4365f) {
+        if (this.f4477f) {
             return;
         }
-        if (!this.f4360a.isAttachedToWindow()) {
+        if (!this.f4472a.isAttachedToWindow()) {
             q();
-            this.f4364e = false;
+            this.f4476e = false;
             return;
         }
-        synchronized (this.f4361b) {
+        synchronized (this.f4473b) {
             try {
-                List<d> j12 = CollectionsKt.j1(this.f4362c);
-                this.f4362c.clear();
+                List<d> j12 = CollectionsKt.j1(this.f4474c);
+                this.f4474c.clear();
                 Iterator it = j12.iterator();
                 while (true) {
                     z10 = true;
@@ -847,13 +847,13 @@ public abstract class t0 {
                         break;
                     }
                     d dVar = (d) it.next();
-                    if (this.f4361b.isEmpty() || !dVar.h().mTransitioning) {
+                    if (this.f4473b.isEmpty() || !dVar.h().mTransitioning) {
                         z10 = false;
                     }
                     dVar.r(z10);
                 }
                 for (d dVar2 : j12) {
-                    if (this.f4363d) {
+                    if (this.f4475d) {
                         if (FragmentManager.O0(2)) {
                             Log.v("FragmentManager", "SpecialEffectsController: Completing non-seekable operation " + dVar2);
                         }
@@ -862,31 +862,31 @@ public abstract class t0 {
                         if (FragmentManager.O0(2)) {
                             Log.v("FragmentManager", "SpecialEffectsController: Cancelling operation " + dVar2);
                         }
-                        dVar2.c(this.f4360a);
+                        dVar2.c(this.f4472a);
                     }
-                    this.f4363d = false;
+                    this.f4475d = false;
                     if (!dVar2.l()) {
-                        this.f4362c.add(dVar2);
+                        this.f4474c.add(dVar2);
                     }
                 }
-                if (!this.f4361b.isEmpty()) {
+                if (!this.f4473b.isEmpty()) {
                     C();
-                    List j13 = CollectionsKt.j1(this.f4361b);
+                    List j13 = CollectionsKt.j1(this.f4473b);
                     if (j13.isEmpty()) {
                         return;
                     }
-                    this.f4361b.clear();
-                    this.f4362c.addAll(j13);
+                    this.f4473b.clear();
+                    this.f4474c.addAll(j13);
                     if (FragmentManager.O0(2)) {
                         Log.v("FragmentManager", "SpecialEffectsController: Executing pending operations");
                     }
-                    d(j13, this.f4364e);
+                    d(j13, this.f4476e);
                     boolean w10 = w(j13);
                     boolean x10 = x(j13);
                     if (!x10 || w10) {
                         z10 = false;
                     }
-                    this.f4363d = z10;
+                    this.f4475d = z10;
                     if (FragmentManager.O0(2)) {
                         Log.v("FragmentManager", "SpecialEffectsController: Operation seekable = " + w10 + " \ntransition = " + x10);
                     }
@@ -900,12 +900,12 @@ public abstract class t0 {
                             c((d) j13.get(i10));
                         }
                     }
-                    this.f4364e = false;
+                    this.f4476e = false;
                     if (FragmentManager.O0(2)) {
                         Log.v("FragmentManager", "SpecialEffectsController: Finished executing pending operations");
                     }
                 }
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -918,12 +918,12 @@ public abstract class t0 {
         if (FragmentManager.O0(2)) {
             Log.v("FragmentManager", "SpecialEffectsController: Forcing all operations to complete");
         }
-        boolean isAttachedToWindow = this.f4360a.isAttachedToWindow();
-        synchronized (this.f4361b) {
+        boolean isAttachedToWindow = this.f4472a.isAttachedToWindow();
+        synchronized (this.f4473b) {
             try {
                 C();
-                B(this.f4361b);
-                List<d> j12 = CollectionsKt.j1(this.f4362c);
+                B(this.f4473b);
+                List<d> j12 = CollectionsKt.j1(this.f4474c);
                 for (d dVar : j12) {
                     dVar.r(false);
                 }
@@ -932,13 +932,13 @@ public abstract class t0 {
                         if (isAttachedToWindow) {
                             str2 = "";
                         } else {
-                            str2 = "Container " + this.f4360a + " is not attached to window. ";
+                            str2 = "Container " + this.f4472a + " is not attached to window. ";
                         }
                         Log.v("FragmentManager", "SpecialEffectsController: " + str2 + "Cancelling running operation " + dVar2);
                     }
-                    dVar2.c(this.f4360a);
+                    dVar2.c(this.f4472a);
                 }
-                List<d> j13 = CollectionsKt.j1(this.f4361b);
+                List<d> j13 = CollectionsKt.j1(this.f4473b);
                 for (d dVar3 : j13) {
                     dVar3.r(false);
                 }
@@ -947,13 +947,13 @@ public abstract class t0 {
                         if (isAttachedToWindow) {
                             str = "";
                         } else {
-                            str = "Container " + this.f4360a + " is not attached to window. ";
+                            str = "Container " + this.f4472a + " is not attached to window. ";
                         }
                         Log.v("FragmentManager", "SpecialEffectsController: " + str + "Cancelling pending operation " + dVar4);
                     }
-                    dVar4.c(this.f4360a);
+                    dVar4.c(this.f4472a);
                 }
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -961,11 +961,11 @@ public abstract class t0 {
     }
 
     public final void r() {
-        if (this.f4365f) {
+        if (this.f4477f) {
             if (FragmentManager.O0(2)) {
                 Log.v("FragmentManager", "SpecialEffectsController: Forcing postponed operations");
             }
-            this.f4365f = false;
+            this.f4477f = false;
             n();
         }
     }
@@ -990,7 +990,7 @@ public abstract class t0 {
         if (aVar == null) {
             i10 = -1;
         } else {
-            i10 = e.f4393a[aVar.ordinal()];
+            i10 = e.f4505a[aVar.ordinal()];
         }
         if (i10 != -1 && i10 != 1) {
             return aVar;
@@ -999,28 +999,28 @@ public abstract class t0 {
     }
 
     public final ViewGroup t() {
-        return this.f4360a;
+        return this.f4472a;
     }
 
     public final boolean y() {
-        return !this.f4361b.isEmpty();
+        return !this.f4473b.isEmpty();
     }
 
     public final void z() {
         Fragment fragment;
         Object obj;
         boolean z10;
-        synchronized (this.f4361b) {
+        synchronized (this.f4473b) {
             try {
                 C();
-                List list = this.f4361b;
+                List list = this.f4473b;
                 ListIterator listIterator = list.listIterator(list.size());
                 while (true) {
                     fragment = null;
                     if (listIterator.hasPrevious()) {
                         obj = listIterator.previous();
                         d dVar = (d) obj;
-                        d.b.a aVar = d.b.f4385d;
+                        d.b.a aVar = d.b.f4497d;
                         View view = dVar.h().mView;
                         Intrinsics.checkNotNullExpressionValue(view, "operation.fragment.mView");
                         d.b a10 = aVar.a(view);
@@ -1043,8 +1043,8 @@ public abstract class t0 {
                 } else {
                     z10 = false;
                 }
-                this.f4365f = z10;
-                Unit unit = Unit.f32464a;
+                this.f4477f = z10;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }

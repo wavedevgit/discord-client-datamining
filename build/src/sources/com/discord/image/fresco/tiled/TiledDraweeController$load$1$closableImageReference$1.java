@@ -10,7 +10,7 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
-import rr.b;
+import ur.b;
 @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0004\u001a\u000f\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u0001¢\u0006\u0002\b\u0003*\u00020\u0000H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "Lcom/facebook/common/references/CloseableReference;", "Lsa/e;", "Lkotlin/jvm/internal/EnhancedNullability;", "<anonymous>", "(Lkotlinx/coroutines/CoroutineScope;)Lcom/facebook/common/references/CloseableReference;"}, k = 3, mv = {2, 1, 0})
 @e(c = "com.discord.image.fresco.tiled.TiledDraweeController$load$1$closableImageReference$1", f = "TiledDraweeController.kt", l = {}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -42,6 +42,6 @@ final class TiledDraweeController$load$1$closableImageReference$1 extends k impl
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super CloseableReference> continuation) {
-        return ((TiledDraweeController$load$1$closableImageReference$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((TiledDraweeController$load$1$closableImageReference$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

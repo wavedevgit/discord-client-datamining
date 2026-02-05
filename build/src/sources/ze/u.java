@@ -11,7 +11,7 @@ public final class u extends cg.a implements IInterface {
         super(iBinder, "com.google.android.gms.auth.api.signin.internal.ISignInService");
     }
 
-    public final void S0(t tVar, GoogleSignInOptions googleSignInOptions) {
+    public final void W0(t tVar, GoogleSignInOptions googleSignInOptions) {
         Parcel e10 = e();
         cg.p.d(e10, tVar);
         cg.p.c(e10, googleSignInOptions);

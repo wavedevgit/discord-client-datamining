@@ -17,7 +17,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractAnnotationLoader<A> implements AnnotationLoader<A> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SerializerExtensionProtocol f34729a;
+    private final SerializerExtensionProtocol f34253a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class WhenMappings {
@@ -43,12 +43,12 @@ public abstract class AbstractAnnotationLoader<A> implements AnnotationLoader<A>
 
     public AbstractAnnotationLoader(@NotNull SerializerExtensionProtocol protocol) {
         Intrinsics.checkNotNullParameter(protocol, "protocol");
-        this.f34729a = protocol;
+        this.f34253a = protocol;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final SerializerExtensionProtocol a() {
-        return this.f34729a;
+        return this.f34253a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.AnnotationLoader
@@ -59,23 +59,23 @@ public abstract class AbstractAnnotationLoader<A> implements AnnotationLoader<A>
         Intrinsics.checkNotNullParameter(proto, "proto");
         Intrinsics.checkNotNullParameter(kind, "kind");
         if (proto instanceof ProtoBuf.Constructor) {
-            list = (List) ((ProtoBuf.Constructor) proto).getExtension(this.f34729a.getConstructorAnnotation());
+            list = (List) ((ProtoBuf.Constructor) proto).getExtension(this.f34253a.getConstructorAnnotation());
         } else if (proto instanceof ProtoBuf.Function) {
-            list = (List) ((ProtoBuf.Function) proto).getExtension(this.f34729a.getFunctionAnnotation());
+            list = (List) ((ProtoBuf.Function) proto).getExtension(this.f34253a.getFunctionAnnotation());
         } else if (proto instanceof ProtoBuf.Property) {
             int i10 = WhenMappings.$EnumSwitchMapping$0[kind.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
-                        list = (List) ((ProtoBuf.Property) proto).getExtension(this.f34729a.getPropertySetterAnnotation());
+                        list = (List) ((ProtoBuf.Property) proto).getExtension(this.f34253a.getPropertySetterAnnotation());
                     } else {
                         throw new IllegalStateException("Unsupported callable kind with property proto");
                     }
                 } else {
-                    list = (List) ((ProtoBuf.Property) proto).getExtension(this.f34729a.getPropertyGetterAnnotation());
+                    list = (List) ((ProtoBuf.Property) proto).getExtension(this.f34253a.getPropertyGetterAnnotation());
                 }
             } else {
-                list = (List) ((ProtoBuf.Property) proto).getExtension(this.f34729a.getPropertyAnnotation());
+                list = (List) ((ProtoBuf.Property) proto).getExtension(this.f34253a.getPropertyAnnotation());
             }
         } else {
             throw new IllegalStateException(("Unknown message: " + proto).toString());
@@ -95,7 +95,7 @@ public abstract class AbstractAnnotationLoader<A> implements AnnotationLoader<A>
     @NotNull
     public List<A> loadClassAnnotations(@NotNull ProtoContainer.Class container) {
         Intrinsics.checkNotNullParameter(container, "container");
-        List list = (List) container.getClassProto().getExtension(this.f34729a.getClassAnnotation());
+        List list = (List) container.getClassProto().getExtension(this.f34253a.getClassAnnotation());
         if (list == null) {
             list = CollectionsKt.l();
         }
@@ -112,7 +112,7 @@ public abstract class AbstractAnnotationLoader<A> implements AnnotationLoader<A>
     public List<A> loadEnumEntryAnnotations(@NotNull ProtoContainer container, @NotNull ProtoBuf.EnumEntry proto) {
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(proto, "proto");
-        List list = (List) proto.getExtension(this.f34729a.getEnumEntryAnnotation());
+        List list = (List) proto.getExtension(this.f34253a.getEnumEntryAnnotation());
         if (list == null) {
             list = CollectionsKt.l();
         }
@@ -132,7 +132,7 @@ public abstract class AbstractAnnotationLoader<A> implements AnnotationLoader<A>
         Intrinsics.checkNotNullParameter(kind, "kind");
         List list = null;
         if (proto instanceof ProtoBuf.Function) {
-            GeneratedMessageLite.GeneratedExtension<ProtoBuf.Function, List<ProtoBuf.Annotation>> functionExtensionReceiverAnnotation = this.f34729a.getFunctionExtensionReceiverAnnotation();
+            GeneratedMessageLite.GeneratedExtension<ProtoBuf.Function, List<ProtoBuf.Annotation>> functionExtensionReceiverAnnotation = this.f34253a.getFunctionExtensionReceiverAnnotation();
             if (functionExtensionReceiverAnnotation != null) {
                 list = (List) ((ProtoBuf.Function) proto).getExtension(functionExtensionReceiverAnnotation);
             }
@@ -141,7 +141,7 @@ public abstract class AbstractAnnotationLoader<A> implements AnnotationLoader<A>
             if (i10 != 1 && i10 != 2 && i10 != 3) {
                 throw new IllegalStateException(("Unsupported callable kind with property proto for receiver annotations: " + kind).toString());
             }
-            GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> propertyExtensionReceiverAnnotation = this.f34729a.getPropertyExtensionReceiverAnnotation();
+            GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> propertyExtensionReceiverAnnotation = this.f34253a.getPropertyExtensionReceiverAnnotation();
             if (propertyExtensionReceiverAnnotation != null) {
                 list = (List) ((ProtoBuf.Property) proto).getExtension(propertyExtensionReceiverAnnotation);
             }
@@ -165,7 +165,7 @@ public abstract class AbstractAnnotationLoader<A> implements AnnotationLoader<A>
         List list;
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(proto, "proto");
-        GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> propertyBackingFieldAnnotation = this.f34729a.getPropertyBackingFieldAnnotation();
+        GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> propertyBackingFieldAnnotation = this.f34253a.getPropertyBackingFieldAnnotation();
         if (propertyBackingFieldAnnotation != null) {
             list = (List) proto.getExtension(propertyBackingFieldAnnotation);
         } else {
@@ -188,7 +188,7 @@ public abstract class AbstractAnnotationLoader<A> implements AnnotationLoader<A>
         List list;
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(proto, "proto");
-        GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> propertyDelegatedFieldAnnotation = this.f34729a.getPropertyDelegatedFieldAnnotation();
+        GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> propertyDelegatedFieldAnnotation = this.f34253a.getPropertyDelegatedFieldAnnotation();
         if (propertyDelegatedFieldAnnotation != null) {
             list = (List) proto.getExtension(propertyDelegatedFieldAnnotation);
         } else {
@@ -210,7 +210,7 @@ public abstract class AbstractAnnotationLoader<A> implements AnnotationLoader<A>
     public List<A> loadTypeAnnotations(@NotNull ProtoBuf.Type proto, @NotNull NameResolver nameResolver) {
         Intrinsics.checkNotNullParameter(proto, "proto");
         Intrinsics.checkNotNullParameter(nameResolver, "nameResolver");
-        List list = (List) proto.getExtension(this.f34729a.getTypeAnnotation());
+        List list = (List) proto.getExtension(this.f34253a.getTypeAnnotation());
         if (list == null) {
             list = CollectionsKt.l();
         }
@@ -227,7 +227,7 @@ public abstract class AbstractAnnotationLoader<A> implements AnnotationLoader<A>
     public List<A> loadTypeParameterAnnotations(@NotNull ProtoBuf.TypeParameter proto, @NotNull NameResolver nameResolver) {
         Intrinsics.checkNotNullParameter(proto, "proto");
         Intrinsics.checkNotNullParameter(nameResolver, "nameResolver");
-        List list = (List) proto.getExtension(this.f34729a.getTypeParameterAnnotation());
+        List list = (List) proto.getExtension(this.f34253a.getTypeParameterAnnotation());
         if (list == null) {
             list = CollectionsKt.l();
         }
@@ -246,7 +246,7 @@ public abstract class AbstractAnnotationLoader<A> implements AnnotationLoader<A>
         Intrinsics.checkNotNullParameter(callableProto, "callableProto");
         Intrinsics.checkNotNullParameter(kind, "kind");
         Intrinsics.checkNotNullParameter(proto, "proto");
-        List list = (List) proto.getExtension(this.f34729a.getParameterAnnotation());
+        List list = (List) proto.getExtension(this.f34253a.getParameterAnnotation());
         if (list == null) {
             list = CollectionsKt.l();
         }

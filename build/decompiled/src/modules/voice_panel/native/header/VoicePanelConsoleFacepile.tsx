@@ -9,22 +9,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var1 = function arg0() {
-        _fun111141: for (var _fun111141_ip = 0;;) switch (_fun111141_ip) {
+        _fun111217: for (var _fun111217_ip = 0;;) switch (_fun111217_ip) {
             case 0:
                 var2 = arg0;
                 var3 = var2.type;
                 var0 = _closure1_slot4;
                 var0 = var0.XBOX;
                 if (!(var0 !== var3)) {
-                    _fun111141_ip = 222;
-                    continue _fun111141
+                    _fun111217_ip = 222;
+                    continue _fun111217
                 }
             case 28:
                 var0 = _closure1_slot4;
                 var0 = var0.PLAYSTATION;
                 if (!(var0 !== var3)) {
-                    _fun111141_ip = 46;
-                    continue _fun111141
+                    _fun111217_ip = 46;
+                    continue _fun111217
                 }
             case 42:
                 var0 = null;
@@ -263,4 +263,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getConsoleInfo = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 671, 8311, 1234, 8293, 1304, 6457, 4086, 8072, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 671, 8330, 1234, 8312, 1304, 6477, 4086, 8091, 2]);

@@ -1,61 +1,20 @@
 package ji;
-/* JADX INFO: Access modifiers changed from: package-private */
+
+import android.os.Bundle;
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class r0 extends u {
-
-    /* renamed from: i  reason: collision with root package name */
-    final transient Object f31712i;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public r0(Object obj) {
-        this.f31712i = ii.m.j(obj);
+public abstract class r0 extends b0 implements s0 {
+    public r0() {
+        super("com.google.android.play.core.integrity.protocol.IIntegrityServiceCallback");
     }
 
-    @Override // ji.u, ji.q
-    public s b() {
-        return s.s(this.f31712i);
-    }
-
-    @Override // ji.q
-    int c(Object[] objArr, int i10) {
-        objArr[i10] = this.f31712i;
-        return i10 + 1;
-    }
-
-    @Override // ji.q, java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean contains(Object obj) {
-        return this.f31712i.equals(obj);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // ji.q
-    public boolean g() {
+    @Override // ji.b0
+    protected final boolean e(int i10, Parcel parcel, Parcel parcel2, int i11) {
+        if (i10 == 2) {
+            f0.b(parcel);
+            d((Bundle) f0.a(parcel, Bundle.CREATOR));
+            return true;
+        }
         return false;
-    }
-
-    @Override // ji.u, java.util.Collection, java.util.Set
-    public final int hashCode() {
-        return this.f31712i.hashCode();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
-    /* renamed from: q */
-    public t0 iterator() {
-        return w.p(this.f31712i);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public int size() {
-        return 1;
-    }
-
-    @Override // java.util.AbstractCollection
-    public String toString() {
-        String obj = this.f31712i.toString();
-        StringBuilder sb2 = new StringBuilder(String.valueOf(obj).length() + 2);
-        sb2.append('[');
-        sb2.append(obj);
-        sb2.append(']');
-        return sb2.toString();
     }
 }

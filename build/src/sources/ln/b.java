@@ -1,29 +1,41 @@
 package ln;
 
-import java.util.Collections;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.events.Event;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b extends a {
+public final class b extends Event {
 
-    /* renamed from: b  reason: collision with root package name */
-    private final int f36981b;
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f36949a = new a(null);
 
-    public b(int i10) {
-        super(false, 1, null);
-        this.f36981b = i10;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private a() {
+        }
     }
 
-    @Override // com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy
-    public void a(List drawingOperations) {
-        Intrinsics.checkNotNullParameter(drawingOperations, "drawingOperations");
-        if (b()) {
-            int i10 = this.f36981b;
-            for (int n10 = CollectionsKt.n(drawingOperations); i10 < n10; n10--) {
-                Collections.swap(drawingOperations, i10, n10);
-                i10++;
-            }
-        }
+    public b(int i10, int i11) {
+        super(i10, i11);
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public short getCoalescingKey() {
+        return (short) 0;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    protected WritableMap getEventData() {
+        return Arguments.createMap();
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public String getEventName() {
+        return "topHeaderBackButtonClicked";
     }
 }

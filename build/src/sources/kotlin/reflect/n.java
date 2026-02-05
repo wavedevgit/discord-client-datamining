@@ -12,20 +12,20 @@ import kotlin.jvm.internal.Intrinsics;
 public final class n implements ParameterizedType, Type {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f35308d;
+    private final Class f34832d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Type f35309e;
+    private final Type f34833e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Type[] f35310i;
+    private final Type[] f34834i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f35311d = new a();
+        public static final a f34835d = new a();
 
         a() {
             super(1, p.class, "typeToString", "typeToString(Ljava/lang/reflect/Type;)Ljava/lang/String;", 1);
@@ -44,15 +44,15 @@ public final class n implements ParameterizedType, Type {
     public n(Class rawType, Type type, List typeArguments) {
         Intrinsics.checkNotNullParameter(rawType, "rawType");
         Intrinsics.checkNotNullParameter(typeArguments, "typeArguments");
-        this.f35308d = rawType;
-        this.f35309e = type;
-        this.f35310i = (Type[]) typeArguments.toArray(new Type[0]);
+        this.f34832d = rawType;
+        this.f34833e = type;
+        this.f34834i = (Type[]) typeArguments.toArray(new Type[0]);
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof ParameterizedType) {
             ParameterizedType parameterizedType = (ParameterizedType) obj;
-            if (Intrinsics.areEqual(this.f35308d, parameterizedType.getRawType()) && Intrinsics.areEqual(this.f35309e, parameterizedType.getOwnerType()) && Arrays.equals(getActualTypeArguments(), parameterizedType.getActualTypeArguments())) {
+            if (Intrinsics.areEqual(this.f34832d, parameterizedType.getRawType()) && Intrinsics.areEqual(this.f34833e, parameterizedType.getOwnerType()) && Arrays.equals(getActualTypeArguments(), parameterizedType.getActualTypeArguments())) {
                 return true;
             }
             return false;
@@ -62,17 +62,17 @@ public final class n implements ParameterizedType, Type {
 
     @Override // java.lang.reflect.ParameterizedType
     public Type[] getActualTypeArguments() {
-        return this.f35310i;
+        return this.f34834i;
     }
 
     @Override // java.lang.reflect.ParameterizedType
     public Type getOwnerType() {
-        return this.f35309e;
+        return this.f34833e;
     }
 
     @Override // java.lang.reflect.ParameterizedType
     public Type getRawType() {
-        return this.f35308d;
+        return this.f34832d;
     }
 
     @Override // java.lang.reflect.Type
@@ -81,32 +81,32 @@ public final class n implements ParameterizedType, Type {
         boolean z10;
         String h11;
         StringBuilder sb2 = new StringBuilder();
-        Type type = this.f35309e;
+        Type type = this.f34833e;
         if (type != null) {
             h11 = p.h(type);
             sb2.append(h11);
             sb2.append("$");
-            sb2.append(this.f35308d.getSimpleName());
+            sb2.append(this.f34832d.getSimpleName());
         } else {
-            h10 = p.h(this.f35308d);
+            h10 = p.h(this.f34832d);
             sb2.append(h10);
         }
-        Type[] typeArr = this.f35310i;
+        Type[] typeArr = this.f34834i;
         if (typeArr.length == 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (!z10) {
-            kotlin.collections.i.n0(typeArr, sb2, null, "<", ">", 0, null, a.f35311d, 50, null);
+            kotlin.collections.i.n0(typeArr, sb2, null, "<", ">", 0, null, a.f34835d, 50, null);
         }
         return sb2.toString();
     }
 
     public int hashCode() {
         int i10;
-        int hashCode = this.f35308d.hashCode();
-        Type type = this.f35309e;
+        int hashCode = this.f34832d.hashCode();
+        Type type = this.f34833e;
         if (type != null) {
             i10 = type.hashCode();
         } else {

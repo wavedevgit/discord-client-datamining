@@ -1,20 +1,71 @@
 package hg;
 
-import android.os.Handler;
-import android.os.Looper;
+import java.util.List;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public class g extends Handler {
+public final class g extends i {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Looper f26987a;
+    /* renamed from: o  reason: collision with root package name */
+    private final transient i f25841o;
 
-    public g(Looper looper) {
-        super(looper);
-        this.f26987a = Looper.getMainLooper();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public g(i iVar) {
+        this.f25841o = iVar;
     }
 
-    public g(Looper looper, Handler.Callback callback) {
-        super(looper, callback);
-        this.f26987a = Looper.getMainLooper();
+    private final int p(int i10) {
+        return (this.f25841o.size() - 1) - i10;
+    }
+
+    @Override // hg.i, java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final boolean contains(Object obj) {
+        return this.f25841o.contains(obj);
+    }
+
+    @Override // hg.i
+    public final i f() {
+        return this.f25841o;
+    }
+
+    @Override // hg.i
+    public final i g(int i10, int i11) {
+        i iVar = this.f25841o;
+        z.d(i10, i11, iVar.size());
+        return iVar.subList(iVar.size() - i11, iVar.size() - i10).f();
+    }
+
+    @Override // java.util.List
+    public final Object get(int i10) {
+        i iVar = this.f25841o;
+        z.b(i10, iVar.size(), "index");
+        return iVar.get(p(i10));
+    }
+
+    @Override // hg.i, java.util.List
+    public final int indexOf(Object obj) {
+        int lastIndexOf = this.f25841o.lastIndexOf(obj);
+        if (lastIndexOf >= 0) {
+            return p(lastIndexOf);
+        }
+        return -1;
+    }
+
+    @Override // hg.i, java.util.List
+    public final int lastIndexOf(Object obj) {
+        int indexOf = this.f25841o.indexOf(obj);
+        if (indexOf >= 0) {
+            return p(indexOf);
+        }
+        return -1;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final int size() {
+        return this.f25841o.size();
+    }
+
+    @Override // hg.i, java.util.List
+    public final /* bridge */ /* synthetic */ List subList(int i10, int i11) {
+        return subList(i10, i11);
     }
 }

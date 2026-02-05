@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = 'recordChannelFetchStart';
         var0.key = var1;
         var1 = function arg0, arg1, arg2, arg3, arg4() {
-            _fun40358: for (var _fun40358_ip = 0;;) switch (_fun40358_ip) {
+            _fun40357: for (var _fun40357_ip = 0;;) switch (_fun40357_ip) {
                 case 0:
                     var8 = arg0;
                     var9 = arg2;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var6 != var9;
                     var10 = null;
                     if (!var0) {
-                        _fun40358_ip = 63;
-                        continue _fun40358
+                        _fun40357_ip = 63;
+                        continue _fun40357
                     }
                 case 60:
                     var10 = var9;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var6 != var7;
                     var2 = null;
                     if (!var0) {
-                        _fun40358_ip = 75;
-                        continue _fun40358
+                        _fun40357_ip = 75;
+                        continue _fun40357
                     }
                 case 72:
                     var2 = var7;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var6 != var9;
                     var8 = null;
                     if (!var10) {
-                        _fun40358_ip = 116;
-                        continue _fun40358
+                        _fun40357_ip = 116;
+                        continue _fun40357
                     }
                 case 113:
                     var8 = var9;
@@ -155,8 +155,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var6 != var7;
                     var6 = null;
                     if (!var8) {
-                        _fun40358_ip = 133;
-                        continue _fun40358
+                        _fun40357_ip = 133;
+                        continue _fun40357
                     }
                 case 130:
                     var6 = var7;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'recordChannelFetchedLocal';
         var0.key = var5;
         var5 = function arg0, arg1, arg2, arg3, arg4, arg5() {
-            _fun40359: for (var _fun40359_ip = 0;;) switch (_fun40359_ip) {
+            _fun40358: for (var _fun40358_ip = 0;;) switch (_fun40358_ip) {
                 case 0:
                     var10 = arg0;
                     var1 = arg2;
@@ -187,6 +187,84 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = arg5;
                     var2 = this;
                     var4 = var2.channelsFetchedWithLocalMessages;
+                    var3 = var4.add;
+                    var3 = var3.bind(var4)(var10);
+                    var4 = var2.fetchLogs;
+                    var2 = var4.get;
+                    var9 = _closure1_slot2;
+                    var3 = null;
+                    var5 = var3 != var1;
+                    var8 = null;
+                    if (!var5) {
+                        _fun40358_ip = 63;
+                        continue _fun40358
+                    }
+                case 60:
+                    var8 = var1;
+                case 63:
+                    var1 = var3 != var0;
+                    var7 = null;
+                    if (!var1) {
+                        _fun40358_ip = 75;
+                        continue _fun40358
+                    }
+                case 72:
+                    var7 = var0;
+                case 75:
+                    var0 = undefined;
+                    var14 = arg1;
+                    var11 = arg4;
+                    var16 = undefined;
+                    var15 = var10;
+                    var13 = var8;
+                    var12 = var7;
+                    var1 = var16[var9](var15, var14, var13, var12, var11, var10);
+                    var2 = var2.bind(var4)(var1);
+                    if (!(var3 != var2)) {
+                        _fun40358_ip = 183;
+                        continue _fun40358
+                    }
+                case 107:
+                    var1 = {};
+                    var4 = global;
+                    var5 = var4.Date;
+                    var4 = var5.now;
+                    var4 = var4.bind(var5)();
+                    var1.loadTime = var4;
+                    var4 = var6.length;
+                    var1.count = var4;
+                    var5 = var6.at;
+                    var4 = -1;
+                    var4 = var5.bind(var6)(var4);
+                    var5 = var3 == var4;
+                    var3 = undefined;
+                    if (var5) {
+                        _fun40358_ip = 172;
+                        continue _fun40358
+                    }
+                case 167:
+                    var3 = var4.id;
+                case 172:
+                    var1.lastMessageId = var3;
+                    var2.localMessageDetails = var1;
+                case 183:
+                    return var0;
+            }
+        };
+        var0.value = var5;
+        var1[1] = var0;
+        var0 = {};
+        var5 = 'recordChannelFetchedNetwork';
+        var0.key = var5;
+        var4 = function arg0, arg1, arg2, arg3, arg4, arg5() {
+            _fun40359: for (var _fun40359_ip = 0;;) switch (_fun40359_ip) {
+                case 0:
+                    var10 = arg0;
+                    var1 = arg2;
+                    var0 = arg3;
+                    var6 = arg5;
+                    var2 = this;
+                    var4 = var2.channelsFetchedNetwork;
                     var3 = var4.add;
                     var3 = var3.bind(var4)(var10);
                     var4 = var2.fetchLogs;
@@ -241,84 +319,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     if (var5) {
                         _fun40359_ip = 172;
                         continue _fun40359
-                    }
-                case 167:
-                    var3 = var4.id;
-                case 172:
-                    var1.lastMessageId = var3;
-                    var2.localMessageDetails = var1;
-                case 183:
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[1] = var0;
-        var0 = {};
-        var5 = 'recordChannelFetchedNetwork';
-        var0.key = var5;
-        var4 = function arg0, arg1, arg2, arg3, arg4, arg5() {
-            _fun40360: for (var _fun40360_ip = 0;;) switch (_fun40360_ip) {
-                case 0:
-                    var10 = arg0;
-                    var1 = arg2;
-                    var0 = arg3;
-                    var6 = arg5;
-                    var2 = this;
-                    var4 = var2.channelsFetchedNetwork;
-                    var3 = var4.add;
-                    var3 = var3.bind(var4)(var10);
-                    var4 = var2.fetchLogs;
-                    var2 = var4.get;
-                    var9 = _closure1_slot2;
-                    var3 = null;
-                    var5 = var3 != var1;
-                    var8 = null;
-                    if (!var5) {
-                        _fun40360_ip = 63;
-                        continue _fun40360
-                    }
-                case 60:
-                    var8 = var1;
-                case 63:
-                    var1 = var3 != var0;
-                    var7 = null;
-                    if (!var1) {
-                        _fun40360_ip = 75;
-                        continue _fun40360
-                    }
-                case 72:
-                    var7 = var0;
-                case 75:
-                    var0 = undefined;
-                    var14 = arg1;
-                    var11 = arg4;
-                    var16 = undefined;
-                    var15 = var10;
-                    var13 = var8;
-                    var12 = var7;
-                    var1 = var16[var9](var15, var14, var13, var12, var11, var10);
-                    var2 = var2.bind(var4)(var1);
-                    if (!(var3 != var2)) {
-                        _fun40360_ip = 183;
-                        continue _fun40360
-                    }
-                case 107:
-                    var1 = {};
-                    var4 = global;
-                    var5 = var4.Date;
-                    var4 = var5.now;
-                    var4 = var4.bind(var5)();
-                    var1.loadTime = var4;
-                    var4 = var6.length;
-                    var1.count = var4;
-                    var5 = var6.at;
-                    var4 = -1;
-                    var4 = var5.bind(var6)(var4);
-                    var5 = var3 == var4;
-                    var3 = undefined;
-                    if (var5) {
-                        _fun40360_ip = 172;
-                        continue _fun40360
                     }
                 case 167:
                     var3 = var4.id;

@@ -21,70 +21,70 @@ import x.w1;
 public class l0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f31274a;
+    private final int f30623a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Matrix f31275b;
+    private final Matrix f30624b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f31276c;
+    private final boolean f30625c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Rect f31277d;
+    private final Rect f30626d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f31278e;
+    private final boolean f30627e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f31279f;
+    private final int f30628f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final m2 f31280g;
+    private final m2 f30629g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f31281h;
+    private int f30630h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f31282i;
+    private int f30631i;
 
     /* renamed from: k  reason: collision with root package name */
-    private w1 f31284k;
+    private w1 f30633k;
 
     /* renamed from: l  reason: collision with root package name */
-    private a f31285l;
+    private a f30634l;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f31283j = false;
+    private boolean f30632j = false;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Set f31286m = new HashSet();
+    private final Set f30635m = new HashSet();
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f31287n = false;
+    private boolean f30636n = false;
 
     /* renamed from: o  reason: collision with root package name */
-    private final List f31288o = new ArrayList();
+    private final List f30637o = new ArrayList();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a extends w0 {
 
         /* renamed from: o  reason: collision with root package name */
-        final ListenableFuture f31289o;
+        final ListenableFuture f30638o;
 
         /* renamed from: p  reason: collision with root package name */
-        c.a f31290p;
+        c.a f30639p;
 
         /* renamed from: q  reason: collision with root package name */
-        private w0 f31291q;
+        private w0 f30640q;
 
         /* renamed from: r  reason: collision with root package name */
-        private o0 f31292r;
+        private o0 f30641r;
 
         a(Size size, int i10) {
             super(size, i10);
-            this.f31289o = androidx.concurrent.futures.c.a(new c.InterfaceC0028c() { // from class: j0.j0
-                @Override // androidx.concurrent.futures.c.InterfaceC0028c
+            this.f30638o = androidx.concurrent.futures.c.a(new c.InterfaceC0029c() { // from class: j0.j0
+                @Override // androidx.concurrent.futures.c.InterfaceC0029c
                 public final Object a(c.a aVar) {
                     return l0.a.r(l0.a.this, aVar);
                 }
@@ -92,17 +92,17 @@ public class l0 {
         }
 
         public static /* synthetic */ void q(a aVar) {
-            o0 o0Var = aVar.f31292r;
+            o0 o0Var = aVar.f30641r;
             if (o0Var != null) {
-                o0Var.B();
+                o0Var.y();
             }
-            if (aVar.f31291q == null) {
-                aVar.f31290p.d();
+            if (aVar.f30640q == null) {
+                aVar.f30639p.d();
             }
         }
 
         public static /* synthetic */ Object r(a aVar, c.a aVar2) {
-            aVar.f31290p = aVar2;
+            aVar.f30639p = aVar2;
             return "SettableFuture hashCode: " + aVar.hashCode();
         }
 
@@ -119,12 +119,12 @@ public class l0 {
 
         @Override // a0.w0
         protected ListenableFuture o() {
-            return this.f31289o;
+            return this.f30638o;
         }
 
         boolean s() {
             b0.p.a();
-            if (this.f31291q == null && !m()) {
+            if (this.f30640q == null && !m()) {
                 return true;
             }
             return false;
@@ -132,20 +132,20 @@ public class l0 {
 
         public void t(o0 o0Var) {
             boolean z10;
-            if (this.f31292r == null) {
+            if (this.f30641r == null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             b2.e.j(z10, "Consumer can only be linked once.");
-            this.f31292r = o0Var;
+            this.f30641r = o0Var;
         }
 
         public boolean u(final w0 w0Var, Runnable runnable) {
             boolean z10;
             b0.p.a();
             b2.e.g(w0Var);
-            w0 w0Var2 = this.f31291q;
+            w0 w0Var2 = this.f30640q;
             boolean z11 = false;
             if (w0Var2 == w0Var) {
                 return false;
@@ -162,8 +162,8 @@ public class l0 {
             }
             b2.e.b(z11, String.format("The provider's format(%s) must match the parent(%s)", Integer.valueOf(i()), Integer.valueOf(w0Var.i())));
             b2.e.j(!m(), "The parent is closed. Call SurfaceEdge#invalidate() before setting a new provider.");
-            this.f31291q = w0Var;
-            d0.n.t(w0Var.j(), this.f31290p);
+            this.f30640q = w0Var;
+            d0.n.t(w0Var.j(), this.f30639p);
             w0Var.l();
             k().a(new Runnable() { // from class: j0.k0
                 @Override // java.lang.Runnable
@@ -177,16 +177,16 @@ public class l0 {
     }
 
     public l0(int i10, int i11, m2 m2Var, Matrix matrix, boolean z10, Rect rect, int i12, int i13, boolean z11) {
-        this.f31279f = i10;
-        this.f31274a = i11;
-        this.f31280g = m2Var;
-        this.f31275b = matrix;
-        this.f31276c = z10;
-        this.f31277d = rect;
-        this.f31282i = i12;
-        this.f31281h = i13;
-        this.f31278e = z11;
-        this.f31285l = new a(m2Var.e(), i11);
+        this.f30628f = i10;
+        this.f30623a = i11;
+        this.f30629g = m2Var;
+        this.f30624b = matrix;
+        this.f30625c = z10;
+        this.f30626d = rect;
+        this.f30631i = i12;
+        this.f30630h = i13;
+        this.f30627e = z11;
+        this.f30634l = new a(m2Var.e(), i11);
     }
 
     public static /* synthetic */ void a(final l0 l0Var) {
@@ -200,7 +200,7 @@ public class l0 {
     }
 
     public static /* synthetic */ void b(l0 l0Var) {
-        if (!l0Var.f31287n) {
+        if (!l0Var.f30636n) {
             l0Var.u();
         }
     }
@@ -208,14 +208,14 @@ public class l0 {
     public static /* synthetic */ void c(l0 l0Var, int i10, int i11) {
         boolean z10;
         boolean z11 = true;
-        if (l0Var.f31282i != i10) {
-            l0Var.f31282i = i10;
+        if (l0Var.f30631i != i10) {
+            l0Var.f30631i = i10;
             z10 = true;
         } else {
             z10 = false;
         }
-        if (l0Var.f31281h != i11) {
-            l0Var.f31281h = i11;
+        if (l0Var.f30630h != i11) {
+            l0Var.f30630h = i11;
         } else {
             z11 = z10;
         }
@@ -229,8 +229,8 @@ public class l0 {
         b2.e.g(surface);
         try {
             aVar.l();
-            o0 o0Var = new o0(surface, l0Var.s(), i10, l0Var.f31280g.e(), aVar2, aVar3, l0Var.f31275b);
-            o0Var.x().a(new Runnable() { // from class: j0.b0
+            o0 o0Var = new o0(surface, l0Var.s(), i10, l0Var.f30629g.e(), aVar2, aVar3, l0Var.f30624b);
+            o0Var.o().a(new Runnable() { // from class: j0.b0
                 @Override // java.lang.Runnable
                 public final void run() {
                     l0.a.this.e();
@@ -244,22 +244,22 @@ public class l0 {
     }
 
     private void g() {
-        b2.e.j(!this.f31283j, "Consumer can only be linked once.");
-        this.f31283j = true;
+        b2.e.j(!this.f30632j, "Consumer can only be linked once.");
+        this.f30632j = true;
     }
 
     private void h() {
-        b2.e.j(!this.f31287n, "Edge is already closed.");
+        b2.e.j(!this.f30636n, "Edge is already closed.");
     }
 
     private void w() {
         b0.p.a();
-        w1.h g10 = w1.h.g(this.f31277d, this.f31282i, this.f31281h, t(), this.f31275b, this.f31278e);
-        w1 w1Var = this.f31284k;
+        w1.h g10 = w1.h.g(this.f30626d, this.f30631i, this.f30630h, t(), this.f30624b, this.f30627e);
+        w1 w1Var = this.f30633k;
         if (w1Var != null) {
             w1Var.u(g10);
         }
-        for (Consumer consumer : this.f31288o) {
+        for (Consumer consumer : this.f30637o) {
             consumer.accept(g10);
         }
     }
@@ -267,25 +267,25 @@ public class l0 {
     public void e(Runnable runnable) {
         b0.p.a();
         h();
-        this.f31286m.add(runnable);
+        this.f30635m.add(runnable);
     }
 
     public void f(Consumer consumer) {
         b2.e.g(consumer);
-        this.f31288o.add(consumer);
+        this.f30637o.add(consumer);
     }
 
     public final void i() {
         b0.p.a();
-        this.f31285l.d();
-        this.f31287n = true;
+        this.f30634l.d();
+        this.f30636n = true;
     }
 
     public ListenableFuture j(final int i10, final l1.a aVar, final l1.a aVar2) {
         b0.p.a();
         h();
         g();
-        final a aVar3 = this.f31285l;
+        final a aVar3 = this.f30634l;
         return d0.n.y(aVar3.j(), new d0.a() { // from class: j0.g0
             @Override // d0.a
             public final ListenableFuture apply(Object obj) {
@@ -301,7 +301,7 @@ public class l0 {
     public w1 l(a0.e0 e0Var, boolean z10) {
         b0.p.a();
         h();
-        w1 w1Var = new w1(this.f31280g.e(), e0Var, z10, this.f31280g.b(), this.f31280g.c(), new Runnable() { // from class: j0.c0
+        w1 w1Var = new w1(this.f30629g.e(), e0Var, z10, this.f30629g.b(), this.f30629g.c(), new Runnable() { // from class: j0.c0
             @Override // java.lang.Runnable
             public final void run() {
                 l0.a(l0.this);
@@ -309,7 +309,7 @@ public class l0 {
         });
         try {
             final w0 m10 = w1Var.m();
-            a aVar = this.f31285l;
+            a aVar = this.f30634l;
             Objects.requireNonNull(aVar);
             if (aVar.u(m10, new d0(aVar))) {
                 ListenableFuture k10 = aVar.k();
@@ -321,7 +321,7 @@ public class l0 {
                     }
                 }, c0.a.a());
             }
-            this.f31284k = w1Var;
+            this.f30633k = w1Var;
             w();
             return w1Var;
         } catch (w0.a e10) {
@@ -335,61 +335,61 @@ public class l0 {
     public final void m() {
         b0.p.a();
         h();
-        this.f31285l.d();
+        this.f30634l.d();
     }
 
     public Rect n() {
-        return this.f31277d;
+        return this.f30626d;
     }
 
     public w0 o() {
         b0.p.a();
         h();
         g();
-        return this.f31285l;
+        return this.f30634l;
     }
 
     public int p() {
-        return this.f31282i;
+        return this.f30631i;
     }
 
     public Matrix q() {
-        return this.f31275b;
+        return this.f30624b;
     }
 
     public m2 r() {
-        return this.f31280g;
+        return this.f30629g;
     }
 
     public int s() {
-        return this.f31279f;
+        return this.f30628f;
     }
 
     public boolean t() {
-        return this.f31276c;
+        return this.f30625c;
     }
 
     public void u() {
         b0.p.a();
         h();
-        if (!this.f31285l.s()) {
-            this.f31283j = false;
-            this.f31285l.d();
-            this.f31285l = new a(this.f31280g.e(), this.f31274a);
-            for (Runnable runnable : this.f31286m) {
+        if (!this.f30634l.s()) {
+            this.f30632j = false;
+            this.f30634l.d();
+            this.f30634l = new a(this.f30629g.e(), this.f30623a);
+            for (Runnable runnable : this.f30635m) {
                 runnable.run();
             }
         }
     }
 
     public boolean v() {
-        return this.f31278e;
+        return this.f30627e;
     }
 
     public void x(w0 w0Var) {
         b0.p.a();
         h();
-        a aVar = this.f31285l;
+        a aVar = this.f30634l;
         Objects.requireNonNull(aVar);
         aVar.u(w0Var, new d0(aVar));
     }

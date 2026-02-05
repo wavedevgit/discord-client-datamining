@@ -7,8 +7,9 @@ public final class p implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator
     public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
         int A = hf.b.A(parcel);
-        long j10 = -1;
         int i10 = 0;
+        boolean z10 = false;
+        long j10 = -1;
         String str = null;
         while (parcel.dataPosition() < A) {
             int r10 = hf.b.r(parcel);
@@ -16,7 +17,11 @@ public final class p implements Parcelable.Creator {
             if (l10 != 1) {
                 if (l10 != 2) {
                     if (l10 != 3) {
-                        hf.b.z(parcel, r10);
+                        if (l10 != 4) {
+                            hf.b.z(parcel, r10);
+                        } else {
+                            z10 = hf.b.m(parcel, r10);
+                        }
                     } else {
                         j10 = hf.b.v(parcel, r10);
                     }
@@ -28,7 +33,7 @@ public final class p implements Parcelable.Creator {
             }
         }
         hf.b.k(parcel, A);
-        return new d(str, i10, j10);
+        return new d(str, i10, j10, z10);
     }
 
     @Override // android.os.Parcelable.Creator

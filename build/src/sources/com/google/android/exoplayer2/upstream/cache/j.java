@@ -8,13 +8,13 @@ import ne.w0;
 final class j extends me.c {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Pattern f13056r = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v1\\.exo$", 32);
+    private static final Pattern f13441r = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v1\\.exo$", 32);
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Pattern f13057s = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v2\\.exo$", 32);
+    private static final Pattern f13442s = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v2\\.exo$", 32);
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Pattern f13058t = Pattern.compile("^(\\d+)\\.(\\d+)\\.(\\d+)\\.v3\\.exo$", 32);
+    private static final Pattern f13443t = Pattern.compile("^(\\d+)\\.(\\d+)\\.(\\d+)\\.v3\\.exo$", 32);
 
     private j(String str, long j10, long j11, long j12, File file) {
         super(str, j10, j11, j12, file);
@@ -25,14 +25,14 @@ final class j extends me.c {
         long j12;
         String name = file.getName();
         if (!name.endsWith(".v3.exo")) {
-            file = l(file, hVar);
+            file = m(file, hVar);
             if (file == null) {
                 return null;
             }
             name = file.getName();
         }
         File file2 = file;
-        Matcher matcher = f13058t.matcher(name);
+        Matcher matcher = f13443t.matcher(name);
         if (!matcher.matches() || (k10 = hVar.k(Integer.parseInt((String) ne.a.e(matcher.group(1))))) == null) {
             return null;
         }
@@ -60,22 +60,22 @@ final class j extends me.c {
         return new j(str, j10, j11, -9223372036854775807L, null);
     }
 
-    public static j j(String str, long j10) {
+    public static j k(String str, long j10) {
         return new j(str, j10, -1L, -9223372036854775807L, null);
     }
 
-    public static File k(File file, int i10, long j10, long j11) {
+    public static File l(File file, int i10, long j10, long j11) {
         return new File(file, i10 + "." + j10 + "." + j11 + ".v3.exo");
     }
 
-    private static File l(File file, h hVar) {
+    private static File m(File file, h hVar) {
         String str;
         String name = file.getName();
-        Matcher matcher = f13057s.matcher(name);
+        Matcher matcher = f13442s.matcher(name);
         if (matcher.matches()) {
             str = w0.o1((String) ne.a.e(matcher.group(1)));
         } else {
-            matcher = f13056r.matcher(name);
+            matcher = f13441r.matcher(name);
             if (matcher.matches()) {
                 str = (String) ne.a.e(matcher.group(1));
             } else {
@@ -85,15 +85,15 @@ final class j extends me.c {
         if (str == null) {
             return null;
         }
-        File k10 = k((File) ne.a.i(file.getParentFile()), hVar.f(str), Long.parseLong((String) ne.a.e(matcher.group(2))), Long.parseLong((String) ne.a.e(matcher.group(3))));
-        if (!file.renameTo(k10)) {
+        File l10 = l((File) ne.a.i(file.getParentFile()), hVar.f(str), Long.parseLong((String) ne.a.e(matcher.group(2))), Long.parseLong((String) ne.a.e(matcher.group(3))));
+        if (!file.renameTo(l10)) {
             return null;
         }
-        return k10;
+        return l10;
     }
 
     public j f(File file, long j10) {
-        ne.a.g(this.f37825o);
-        return new j(this.f37822d, this.f37823e, this.f37824i, j10, file);
+        ne.a.g(this.f37487o);
+        return new j(this.f37484d, this.f37485e, this.f37486i, j10, file);
     }
 }

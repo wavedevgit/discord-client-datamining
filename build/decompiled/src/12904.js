@@ -1,137 +1,350 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0() {
-        _fun99007: for (var _fun99007_ip = 0;;) switch (_fun99007_ip) {
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = function() {
+        _fun98892: for (var _fun98892_ip = 0;;) switch (_fun98892_ip) {
             case 0:
-                var14 = arg0;
-                var11 = undefined;
-                var12 = undefined;
-                var13 = undefined;
-                var0 = {};
-                var1 = var14.length;
-                var10 = 0;
-                var1 = var10 < var1;
-                var9 = 1;
-                var8 = global;
-                var7 = '%';
-                var6 = -1;
-                var5 = 34;
-                var4 = ';';
-                var3 = '=';
-                var2 = 0;
-                if (!var1) {
-                    _fun99007_ip = 303;
-                    continue _fun99007
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
+                var0 = undefined;
+                var0 = var2.bind(var0)(var1);
+                var1 = var0.GLOBAL_OBJ;
+                var0 = 'fetch';
+                var0 = var0 in var1;
+                if (var0) {
+                    _fun98892_ip = 45;
+                    continue _fun98892
                 }
-            case 56:
-                var1 = var14.indexOf;
-                var15 = var1.bind(var14)(var3, var2);
-                var17 = var2;
-                if (!(var6 !== var15)) {
-                    _fun99007_ip = 303;
-                    continue _fun99007
-                }
-            case 78:
-                var1 = var14.indexOf;
-                var1 = var1.bind(var14)(var4, var17);
-                if (!(var6 !== var1)) {
-                    _fun99007_ip = 123;
-                    continue _fun99007
-                }
-            case 94:
-                if (!(var1 < var15)) {
-                    _fun99007_ip = 128;
-                    continue _fun99007
-                }
-            case 98:
-                var18 = var14.lastIndexOf;
-                var16 = var15 - var9;
-                var16 = var18.bind(var14)(var4, var16);
-                var2 = var16 + var9;
-                _fun99007_ip = 291;
-                continue _fun99007;
-            case 123:
-                var1 = var14.length;
-            case 128:
-                var16 = var14.slice;
-                var17 = var16.bind(var14)(var17, var15);
-                var16 = var17.trim;
-                var17 = var16.bind(var17)();
-                var12 = var17;
-                var16 = var0;
-                var16 = var16[var17];
-                if (!(var11 === var16)) {
-                    _fun99007_ip = 287;
-                    continue _fun99007
-                }
-            case 166:
-                var16 = var14.slice;
-                var15 = var15 + var9;
-                var16 = var16.bind(var14)(var15, var1);
-                var15 = var16.trim;
-                var16 = var15.bind(var16)();
-                var13 = var16;
-                var15 = var16.charCodeAt;
-                var15 = var15.bind(var16)(var10);
-                if (!(var5 === var15)) {
-                    _fun99007_ip = 223;
-                    continue _fun99007
-                }
-            case 209:
-                var16 = var13;
-                var15 = var16.slice;
-                var13 = var15.bind(var16)(var9, var6);
-            case 223: // try_start_0
-                var17 = var0;
-                var16 = var12;
-                var18 = var13;
-                var15 = var18.indexOf;
-                var15 = var15.bind(var18)(var7);
-                if (!(var6 === var15)) {
-                    _fun99007_ip = 252;
-                    continue _fun99007
-                }
-            case 247:
-                var15 = var13;
-                _fun99007_ip = 266;
-                continue _fun99007;
-            case 252:
-                var19 = var8.decodeURIComponent;
-                var18 = var13;
-                var15 = var19.bind(var11)(var18);
-            case 266:
-                var17[var16] = var15;
-            case 270: // try_end0
-                _fun99007_ip = 287;
-                continue _fun99007;
-            case 272: // catch_target0
-                CatchBlockStart(arg_register = 15);
-                var17 = var0;
-                var16 = var12;
-                var15 = var13;
-                var17[var16] = var15;
-            case 287:
-                var2 = var1 + var9;
-            case 291:
-                var1 = var14.length;
-                if (var2 < var1) {
-                    _fun99007_ip = 56;
-                    continue _fun99007
-                }
-            case 303:
+            case 41:
+                var0 = false;
+                return var0;
+            case 45: // try_start_0
+                var0 = global;
+                var2 = var0.Headers;
+                var1 = var2.prototype;
+                var5 = Object.create(var1, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var1 = new var5[var2](var4);
+                var3 = var0.Request;
+                var1 = var3.prototype;
+                var5 = Object.create(var1, {
+                    constructor: {
+                        value: var3
+                    }
+                });
+                var4 = 'http://www.example.com';
+                var1 = new var5[var3](var4, var3);
+                var1 = var0.Response;
+                var0 = var1.prototype;
+                var5 = Object.create(var0, {
+                    constructor: {
+                        value: var1
+                    }
+                });
+                var0 = new var5[var1](var4);
+            case 110: // try_end0
+                var0 = true;
+                return var0;
+            case 114: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var0 = false;
                 return var0;
         }
     };
-    var1.parseCookie = var0;
+    var _closure1_slot2 = var2;
+    var3 = function arg0() {
+        _fun98893: for (var _fun98893_ip = 0;;) switch (_fun98893_ip) {
+            case 0:
+                var4 = arg0;
+                var0 = var4;
+                if (!var0) {
+                    _fun98893_ip = 42;
+                    continue _fun98893
+                }
+            case 9:
+                var3 = /^function\s+\w+\(\)\s+\{\s+\[native code\]\s+\}$/;
+                var2 = var3.test;
+                var1 = var4.toString;
+                var1 = var1.bind(var4)();
+                var0 = var2.bind(var3)(var1);
+            case 42:
+                return var0;
+        }
+    };
+    var _closure1_slot3 = var3;
+    var4 = global;
+    var7 = var4.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var4 = true;
+    var5.value = var4;
+    var4 = '__esModule';
+    var4 = var6.bind(var7)(var1, var4, var5);
+    var1.isNativeFunction = var3;
+    var3 = function() {
+        _fun98894: for (var _fun98894_ip = 0;;) switch (_fun98894_ip) {
+            case 0: // try_start_0
+                var0 = global;
+                var2 = var0.DOMError;
+                var0 = var2.prototype;
+                var4 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var3 = '';
+                var0 = new var4[var2](var3, var2);
+            case 25: // try_end0
+                var0 = true;
+                return var0;
+            case 29: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var0 = false;
+                return var0;
+        }
+    };
+    var1.supportsDOMError = var3;
+    var3 = function() {
+        _fun98895: for (var _fun98895_ip = 0;;) switch (_fun98895_ip) {
+            case 0: // try_start_0
+                var0 = global;
+                var2 = var0.DOMException;
+                var0 = var2.prototype;
+                var4 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var3 = '';
+                var0 = new var4[var2](var3, var2);
+            case 25: // try_end0
+                var0 = true;
+                return var0;
+            case 29: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var0 = false;
+                return var0;
+        }
+    };
+    var1.supportsDOMException = var3;
+    var3 = function() {
+        _fun98896: for (var _fun98896_ip = 0;;) switch (_fun98896_ip) {
+            case 0: // try_start_0
+                var0 = global;
+                var2 = var0.ErrorEvent;
+                var0 = var2.prototype;
+                var4 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var3 = '';
+                var0 = new var4[var2](var3, var2);
+            case 25: // try_end0
+                var0 = true;
+                return var0;
+            case 29: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var0 = false;
+                return var0;
+        }
+    };
+    var1.supportsErrorEvent = var3;
+    var1.supportsFetch = var2;
+    var2 = function() {
+        _fun98897: for (var _fun98897_ip = 0;;) switch (_fun98897_ip) {
+            case 0:
+                var4 = undefined;
+                var0 = undefined;
+                var5 = undefined;
+                var3 = undefined;
+                var2 = global;
+                var2 = var2.EdgeRuntime;
+                var6 = 'string';
+                var2 = typeof var2;
+                if (!(var6 !== var2)) {
+                    _fun98897_ip = 359;
+                    continue _fun98897
+                }
+            case 30:
+                var6 = _closure1_slot2;
+                var6 = var6.bind(var4)();
+                if (var6) {
+                    _fun98897_ip = 48;
+                    continue _fun98897
+                }
+            case 44:
+                var6 = false;
+                return var6;
+            case 48:
+                var7 = _closure1_slot3;
+                var9 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var8 = 0;
+                var6 = var6[var8];
+                var6 = var9.bind(var4)(var6);
+                var6 = var6.GLOBAL_OBJ;
+                var6 = var6.fetch;
+                var6 = var7.bind(var4)(var6);
+                if (var6) {
+                    _fun98897_ip = 355;
+                    continue _fun98897
+                }
+            case 94:
+                var0 = false;
+                var7 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var6 = var6[var8];
+                var6 = var7.bind(var4)(var6);
+                var6 = var6.GLOBAL_OBJ;
+                var6 = var6.document;
+                var5 = var6;
+                if (!var6) {
+                    _fun98897_ip = 353;
+                    continue _fun98897
+                }
+            case 134:
+                var6 = var5;
+                var6 = var6.createElement;
+                var7 = 'function';
+                var6 = typeof var6;
+                if (!(var7 === var6)) {
+                    _fun98897_ip = 353;
+                    continue _fun98897
+                }
+            case 157: // try_start_0
+                var6 = var5;
+                var8 = var6.createElement;
+                var7 = 'iframe';
+                var7 = var8.bind(var6)(var7);
+                var3 = var7;
+                var8 = true;
+                var7.hidden = var8;
+                var8 = var6.head;
+                var6 = var8.appendChild;
+                var6 = var6.bind(var8)(var7);
+                var7 = var7.contentWindow;
+                var6 = var7;
+                if (!var7) {
+                    _fun98897_ip = 230;
+                    continue _fun98897
+                }
+            case 215:
+                var7 = var3;
+                var7 = var7.contentWindow;
+                var6 = var7.fetch;
+            case 230:
+                if (!var6) {
+                    _fun98897_ip = 257;
+                    continue _fun98897
+                }
+            case 233:
+                var7 = _closure1_slot3;
+                var6 = var3;
+                var6 = var6.contentWindow;
+                var6 = var6.fetch;
+                var0 = var7.bind(var4)(var6);
+            case 257:
+                var6 = var5.head;
+                var5 = var6.removeChild;
+                var3 = var5.bind(var6)(var3);
+            case 274: // try_end0
+                _fun98897_ip = 353;
+                continue _fun98897;
+            case 276: // catch_target0
+                CatchBlockStart(arg_register = 1);
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var3 = 1;
+                var3 = var6[var3];
+                var3 = var5.bind(var4)(var3);
+                var3 = var3.DEBUG_BUILD;
+                if (!var3) {
+                    _fun98897_ip = 353;
+                    continue _fun98897
+                }
+            case 307:
+                var3 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var2 = 2;
+                var2 = var5[var2];
+                var2 = var3.bind(var4)(var2);
+                var4 = var2.logger;
+                var3 = var4.warn;
+                var2 = var1;
+                var1 = 'Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ';
+                var1 = var3.bind(var4)(var1, var2);
+            case 353:
+                return var0;
+            case 355:
+                var0 = true;
+                return var0;
+            case 359:
+                var0 = true;
+                return var0;
+        }
+    };
+    var1.supportsNativeFetch = var2;
+    var2 = function() {
+        _fun98898: for (var _fun98898_ip = 0;;) switch (_fun98898_ip) {
+            case 0:
+                var1 = _closure1_slot2;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                if (var0) {
+                    _fun98898_ip = 20;
+                    continue _fun98898
+                }
+            case 16:
+                var0 = false;
+                return var0;
+            case 20: // try_start_0
+                var0 = global;
+                var3 = var0.Request;
+                var2 = {};
+                var0 = 'origin';
+                var2.referrerPolicy = var0;
+                var0 = var3.prototype;
+                var6 = Object.create(var0, {
+                    constructor: {
+                        value: var3
+                    }
+                });
+                var5 = '_';
+                var4 = var2;
+                var0 = new var6[var3](var5, var4, var3);
+            case 59: // try_end0
+                var0 = true;
+                return var0;
+            case 63: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var0 = false;
+                return var0;
+        }
+    };
+    var1.supportsReferrerPolicy = var2;
+    var0 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var1 = var0.GLOBAL_OBJ;
+        var0 = 'ReportingObserver';
+        var0 = var0 in var1;
+        return var0;
+    };
+    var1.supportsReportingObserver = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12893, 12897, 12896]);

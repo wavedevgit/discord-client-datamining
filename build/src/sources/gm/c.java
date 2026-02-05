@@ -1,184 +1,370 @@
 package gm;
 
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.View;
-import android.view.ViewParent;
-import android.widget.EditText;
-import androidx.recyclerview.widget.RecyclerView;
-import com.facebook.react.views.scroll.ReactScrollView;
-import com.facebook.react.views.textinput.ReactEditText;
-import java.lang.reflect.Field;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.res.AssetFileDescriptor;
+import android.net.Uri;
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContext;
+import com.facebook.react.bridge.ReadableArray;
+import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.bridge.WritableArray;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.util.RNLog;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.nio.channels.Channels;
+import java.nio.channels.FileChannel;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.UUID;
 import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
+import kotlin.collections.CollectionsKt;
+import kotlin.collections.m0;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function6;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Ref;
+import kotlin.jvm.internal.LongCompanionObject;
+import kotlin.ranges.IntRange;
+import kotlin.text.StringsKt;
+import kotlinx.coroutines.CoroutineScope;
+import ms.g0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
-    public static final Function0 b(EditText editText, Function6 action) {
-        Intrinsics.checkNotNullParameter(editText, "<this>");
-        Intrinsics.checkNotNullParameter(action, "action");
-        final e eVar = new e(editText, action);
-        eVar.j();
-        return new Function0() { // from class: gm.b
-            @Override // kotlin.jvm.functions.Function0
-            public final Object invoke() {
-                Unit c10;
-                c10 = c.c(e.this);
-                return c10;
+public final class c {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Map f25000a;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class a extends k implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        int f25001d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private /* synthetic */ Object f25002e;
+
+        /* renamed from: o  reason: collision with root package name */
+        final /* synthetic */ ReactContext f25004o;
+
+        /* renamed from: p  reason: collision with root package name */
+        final /* synthetic */ com.reactnativedocumentpicker.a f25005p;
+
+        /* renamed from: q  reason: collision with root package name */
+        final /* synthetic */ ReadableArray f25006q;
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: gm.c$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0343a extends k implements Function2 {
+
+            /* renamed from: d  reason: collision with root package name */
+            int f25007d;
+
+            /* renamed from: e  reason: collision with root package name */
+            final /* synthetic */ ReadableArray f25008e;
+
+            /* renamed from: i  reason: collision with root package name */
+            final /* synthetic */ int f25009i;
+
+            /* renamed from: o  reason: collision with root package name */
+            final /* synthetic */ c f25010o;
+
+            /* renamed from: p  reason: collision with root package name */
+            final /* synthetic */ ReactContext f25011p;
+
+            /* renamed from: q  reason: collision with root package name */
+            final /* synthetic */ File f25012q;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            C0343a(ReadableArray readableArray, int i10, c cVar, ReactContext reactContext, File file, Continuation continuation) {
+                super(2, continuation);
+                this.f25008e = readableArray;
+                this.f25009i = i10;
+                this.f25010o = cVar;
+                this.f25011p = reactContext;
+                this.f25012q = file;
+            }
+
+            @Override // kotlin.coroutines.jvm.internal.a
+            public final Continuation create(Object obj, Continuation continuation) {
+                return new C0343a(this.f25008e, this.f25009i, this.f25010o, this.f25011p, this.f25012q, continuation);
+            }
+
+            @Override // kotlin.coroutines.jvm.internal.a
+            public final Object invokeSuspend(Object obj) {
+                String str;
+                ur.b.f();
+                if (this.f25007d == 0) {
+                    kotlin.c.b(obj);
+                    WritableMap createMap = Arguments.createMap();
+                    Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
+                    ReadableMap map = this.f25008e.getMap(this.f25009i);
+                    try {
+                        if (map != null) {
+                            createMap.merge(this.f25010o.g(map, this.f25011p, this.f25012q));
+                            return createMap;
+                        }
+                        int i10 = this.f25009i;
+                        throw new IllegalArgumentException("keepLocalCopy: The file argument is null at index " + i10);
+                    } catch (Exception e10) {
+                        String localizedMessage = e10.getLocalizedMessage();
+                        if (localizedMessage == null && (localizedMessage = e10.getMessage()) == null) {
+                            localizedMessage = "Unknown error";
+                        }
+                        createMap.putString("status", "error");
+                        createMap.putString("copyError", localizedMessage);
+                        if (map != null) {
+                            str = map.getString("uri");
+                        } else {
+                            str = null;
+                        }
+                        createMap.putString("sourceUri", str);
+                        return createMap;
+                    }
+                }
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+
+            @Override // kotlin.jvm.functions.Function2
+            public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+                return ((C0343a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+            }
+        }
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        a(ReactContext reactContext, com.reactnativedocumentpicker.a aVar, ReadableArray readableArray, Continuation continuation) {
+            super(2, continuation);
+            this.f25004o = reactContext;
+            this.f25005p = aVar;
+            this.f25006q = readableArray;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            a aVar = new a(this.f25004o, this.f25005p, this.f25006q, continuation);
+            aVar.f25002e = obj;
+            return aVar;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            WritableArray writableArray;
+            g0 b10;
+            Object f10 = ur.b.f();
+            int i10 = this.f25001d;
+            if (i10 != 0) {
+                if (i10 == 1) {
+                    writableArray = (WritableArray) this.f25002e;
+                    kotlin.c.b(obj);
+                } else {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+            } else {
+                kotlin.c.b(obj);
+                CoroutineScope coroutineScope = (CoroutineScope) this.f25002e;
+                File i11 = c.this.i(this.f25004o, this.f25005p);
+                IntRange u10 = kotlin.ranges.d.u(0, this.f25006q.size());
+                ReadableArray readableArray = this.f25006q;
+                c cVar = c.this;
+                ReactContext reactContext = this.f25004o;
+                ArrayList arrayList = new ArrayList(CollectionsKt.w(u10, 10));
+                Iterator it = u10.iterator();
+                while (it.hasNext()) {
+                    b10 = ms.i.b(coroutineScope, null, null, new C0343a(readableArray, ((m0) it).nextInt(), cVar, reactContext, i11, null), 3, null);
+                    arrayList.add(b10);
+                    readableArray = readableArray;
+                    cVar = cVar;
+                    reactContext = reactContext;
+                }
+                WritableArray createArray = Arguments.createArray();
+                Intrinsics.checkNotNullExpressionValue(createArray, "createArray(...)");
+                this.f25002e = createArray;
+                this.f25001d = 1;
+                Object a10 = ms.d.a(arrayList, this);
+                if (a10 == f10) {
+                    return f10;
+                }
+                writableArray = createArray;
+                obj = a10;
+            }
+            for (WritableMap writableMap : (Iterable) obj) {
+                writableArray.pushMap(writableMap);
+            }
+            return writableArray;
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        }
+    }
+
+    public c(Map uriMap) {
+        Intrinsics.checkNotNullParameter(uriMap, "uriMap");
+        this.f25000a = uriMap;
+    }
+
+    private final File d(Context context, Uri uri, File file, String str, String str2) {
+        final File j10 = j(new File(file, str), file);
+        Function1 function1 = new Function1() { // from class: gm.b
+            @Override // kotlin.jvm.functions.Function1
+            public final Object invoke(Object obj) {
+                Unit e10;
+                e10 = c.e(j10, (InputStream) obj);
+                return e10;
             }
         };
+        if (str2 == null) {
+            InputStream openInputStream = context.getContentResolver().openInputStream(uri);
+            try {
+                function1.invoke(openInputStream);
+                zr.c.a(openInputStream, null);
+                return j10;
+            } finally {
+            }
+        } else {
+            ContentResolver contentResolver = context.getContentResolver();
+            Intrinsics.checkNotNullExpressionValue(contentResolver, "getContentResolver(...)");
+            InputStream h10 = h(contentResolver, uri, str2);
+            try {
+                function1.invoke(h10);
+                zr.c.a(h10, null);
+                return j10;
+            } finally {
+            }
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit c(e eVar) {
-        eVar.i();
-        return Unit.f32464a;
-    }
-
-    public static final TextWatcher d(EditText editText, Function1 action) {
-        ArrayList<Object> arrayList;
-        Intrinsics.checkNotNullParameter(editText, "<this>");
-        Intrinsics.checkNotNullParameter(action, "action");
-        a aVar = new a(new Ref.ObjectRef(), action);
-        try {
-            Field declaredField = ReactEditText.class.getDeclaredField("mListeners");
-            Intrinsics.checkNotNullExpressionValue(declaredField, "getDeclaredField(...)");
-            declaredField.setAccessible(true);
-            Object obj = declaredField.get(editText);
-            if (obj instanceof ArrayList) {
-                arrayList = (ArrayList) obj;
-            } else {
-                arrayList = null;
-            }
-            if (arrayList != null) {
-                if (!arrayList.isEmpty()) {
-                    for (Object obj2 : arrayList) {
-                        if (!(obj2 instanceof TextWatcher)) {
-                        }
-                    }
+    public static final Unit e(File file, InputStream inputStream) {
+        if (inputStream != null) {
+            FileChannel channel = new FileOutputStream(file).getChannel();
+            try {
+                if (channel.transferFrom(Channels.newChannel(inputStream), 0L, LongCompanionObject.MAX_VALUE) != 0) {
+                    Unit unit = Unit.f31988a;
+                    zr.c.a(channel, null);
+                    return Unit.f31988a;
                 }
-                arrayList.add(0, aVar);
-                return aVar;
+                throw new IOException("No data was copied to the destination file");
+            } finally {
             }
-            km.a.f(km.a.f32427a, editText.getClass().getSimpleName(), "Can not attach listener because `fieldValue` does not belong to `ArrayList<TextWatcher>`", null, 4, null);
-            return aVar;
-        } catch (ClassCastException e10) {
-            km.a aVar2 = km.a.f32427a;
-            String simpleName = editText.getClass().getSimpleName();
-            String message = e10.getMessage();
-            km.a.f(aVar2, simpleName, "Can not attach listener because casting failed: " + message, null, 4, null);
-            return aVar;
-        } catch (IllegalArgumentException e11) {
-            km.a aVar3 = km.a.f32427a;
-            String simpleName2 = editText.getClass().getSimpleName();
-            String message2 = e11.getMessage();
-            km.a.f(aVar3, simpleName2, "Can not attach listener to be the first in the list: " + message2 + ". Attaching to the end...", null, 4, null);
-            editText.addTextChangedListener(aVar);
-            return aVar;
-        } catch (NoSuchFieldException e12) {
-            km.a aVar4 = km.a.f32427a;
-            String simpleName3 = editText.getClass().getSimpleName();
-            String message3 = e12.getMessage();
-            km.a.f(aVar4, simpleName3, "Can not attach listener because field `mListeners` not found: " + message3 + ". Attaching to the end...", null, 4, null);
-            editText.addTextChangedListener(aVar);
-            return aVar;
-        }
-    }
-
-    public static final void e(EditText editText) {
-        if (editText instanceof ReactEditText) {
-            ((ReactEditText) editText).requestFocusFromJS();
-        } else if (editText != null) {
-            editText.requestFocus();
-        }
-    }
-
-    public static final String f(EditText editText) {
-        if (editText == null) {
-            return "default";
-        }
-        int inputType = editText.getInputType() & 15;
-        int inputType2 = editText.getInputType() & 4080;
-        if (inputType2 == 32) {
-            return "email-address";
-        }
-        if (inputType2 == 16) {
-            return "url";
-        }
-        if (inputType2 == 144) {
-            return "visible-password";
-        }
-        if (inputType == 2) {
-            if ((editText.getInputType() & 8192) != 0 && (editText.getInputType() & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) == 0) {
-                return "decimal-pad";
-            }
-            if ((editText.getInputType() & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0) {
-                return "numeric";
-            }
-            return "number-pad";
-        } else if (inputType != 3) {
-            return "default";
         } else {
-            return "phone-pad";
+            throw new FileNotFoundException("No input stream was found for the source file");
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r2v7, types: [android.view.View] */
-    public static final int g(EditText editText) {
-        Intrinsics.checkNotNullParameter(editText, "<this>");
-        while (editText != null) {
-            ViewParent parent = editText.getParent();
-            if (parent instanceof View) {
-                editText = (View) parent;
-            } else {
-                editText = null;
-            }
-            if (editText instanceof ReactScrollView) {
-                ReactScrollView reactScrollView = (ReactScrollView) editText;
-                if (reactScrollView.getScrollEnabled()) {
-                    return reactScrollView.getId();
+    /* JADX INFO: Access modifiers changed from: private */
+    public final ReadableMap g(ReadableMap readableMap, ReactContext reactContext, File file) {
+        String string = readableMap.getString("uri");
+        if (string != null) {
+            String string2 = readableMap.getString("fileName");
+            if (string2 != null) {
+                String string3 = readableMap.getString("convertVirtualFileToType");
+                Uri uri = (Uri) this.f25000a.get(string);
+                if (uri == null) {
+                    RNLog.w(reactContext, "keepLocalCopy: You're trying to copy a file \"" + string2 + "\" that wasn't picked with this module. This can lead to permission errors because the file reference is transient to your activity's current lifecycle. See https://developer.android.com/guide/components/intents-common#GetFile . Please use the result from the picker directly.");
                 }
+                if (uri == null) {
+                    uri = Uri.parse(string);
+                }
+                Uri uri2 = uri;
+                Intrinsics.checkNotNull(uri2);
+                File d10 = d(reactContext, uri2, file, string2, string3);
+                WritableMap createMap = Arguments.createMap();
+                Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
+                createMap.putString("status", "success");
+                createMap.putString("localUri", Uri.fromFile(d10).toString());
+                createMap.putString("sourceUri", string);
+                return createMap;
             }
+            throw new IllegalArgumentException("fileName is missing");
         }
-        return -1;
+        throw new IllegalArgumentException("URI is missing");
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements TextWatcher {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f26347d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function1 f26348e;
-
-        a(Ref.ObjectRef objectRef, Function1 function1) {
-            this.f26347d = objectRef;
-            this.f26348e = function1;
+    private final InputStream h(ContentResolver contentResolver, Uri uri, String str) {
+        AssetFileDescriptor openTypedAssetFileDescriptor = contentResolver.openTypedAssetFileDescriptor(uri, str, null);
+        if (openTypedAssetFileDescriptor == null) {
+            return null;
         }
+        return openTypedAssetFileDescriptor.createInputStream();
+    }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX WARN: Type inference failed for: r1v1, types: [T, java.lang.Object, java.lang.String] */
-        @Override // android.text.TextWatcher
-        public void onTextChanged(CharSequence charSequence, int i10, int i11, int i12) {
-            ?? valueOf = String.valueOf(charSequence);
-            if (!Intrinsics.areEqual((Object) valueOf, this.f26347d.element)) {
-                this.f26347d.element = valueOf;
-                this.f26348e.invoke(valueOf);
+    /* JADX INFO: Access modifiers changed from: private */
+    public final File i(Context context, com.reactnativedocumentpicker.a aVar) {
+        File cacheDir;
+        if (aVar == com.reactnativedocumentpicker.a.f17584o) {
+            cacheDir = context.getFilesDir();
+        } else {
+            cacheDir = context.getCacheDir();
+        }
+        File file = new File(cacheDir, UUID.randomUUID().toString());
+        if (file.mkdir()) {
+            return file;
+        }
+        String absolutePath = file.getAbsolutePath();
+        throw new IOException("Failed to create directory at " + absolutePath);
+    }
+
+    private final File j(File file, File file2) {
+        String canonicalPath = file.getCanonicalPath();
+        Intrinsics.checkNotNull(canonicalPath);
+        String canonicalPath2 = file2.getCanonicalPath();
+        Intrinsics.checkNotNullExpressionValue(canonicalPath2, "getCanonicalPath(...)");
+        if (StringsKt.P(canonicalPath, canonicalPath2, false, 2, null)) {
+            return file;
+        }
+        throw new IllegalArgumentException("The copied file is attempting to write outside of the target directory.");
+    }
+
+    public final Object f(ReactContext reactContext, ReadableArray readableArray, com.reactnativedocumentpicker.a aVar, Continuation continuation) {
+        return ms.g.g(ms.m0.b(), new a(reactContext, aVar, readableArray, null), continuation);
+    }
+
+    public final gm.a k(Uri uri, String str, ReactApplicationContext context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        if (uri != null) {
+            Uri uri2 = (Uri) this.f25000a.get(str);
+            if (uri2 != null) {
+                gm.a aVar = new gm.a(uri2);
+                ContentResolver contentResolver = context.getContentResolver();
+                aVar.h(contentResolver.getType(uri2));
+                InputStream openInputStream = contentResolver.openInputStream(uri);
+                try {
+                    if (openInputStream == null) {
+                        aVar.g("No output stream found for source file");
+                    } else {
+                        OutputStream openOutputStream = contentResolver.openOutputStream(uri2);
+                        if (openOutputStream == null) {
+                            aVar.g("No output stream found for destination file");
+                        } else {
+                            if (zr.b.b(openInputStream, openOutputStream, 0, 2, null) == 0) {
+                                aVar.g("No data was copied to the destination file");
+                            }
+                            openOutputStream.flush();
+                            Unit unit = Unit.f31988a;
+                        }
+                        zr.c.a(openOutputStream, null);
+                    }
+                    zr.c.a(openInputStream, null);
+                    return aVar;
+                } finally {
+                }
+            } else {
+                RNLog.e(context, "writeDocument: You're trying to write from Uri \"" + str + "\" that wasn't picked with this module. Please use the result from saveDocument()");
+                throw new IllegalArgumentException("The provided URI is not known");
             }
-        }
-
-        @Override // android.text.TextWatcher
-        public void afterTextChanged(Editable editable) {
-        }
-
-        @Override // android.text.TextWatcher
-        public void beforeTextChanged(CharSequence charSequence, int i10, int i11, int i12) {
+        } else {
+            throw new IllegalArgumentException("The source URI is null. Call saveDocument() before writeDocument()");
         }
     }
 }

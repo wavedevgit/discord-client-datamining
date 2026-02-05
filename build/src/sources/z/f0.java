@@ -23,8 +23,8 @@ public final class f0 implements j0.y {
     }
 
     private static a0.u d(androidx.camera.core.n nVar) {
-        if (nVar.z() instanceof e0.c) {
-            return ((e0.c) nVar.z()).e();
+        if (nVar.A() instanceof e0.c) {
+            return ((e0.c) nVar.A()).e();
         }
         return u.a.l();
     }
@@ -60,14 +60,14 @@ public final class f0 implements j0.y {
         if (i0.b.i(a10.getFormat())) {
             try {
                 j10 = b0.f.j(a10);
-                a10.d1()[0].e().rewind();
+                a10.d1()[0].f().rewind();
             } catch (IOException e10) {
                 throw new x.o0(1, "Failed to extract EXIF data.", e10);
             }
         } else {
             j10 = null;
         }
-        if (y.f55479g.b(a10)) {
+        if (y.f55068g.b(a10)) {
             b2.e.h(j10, "JPEG image must have exif.");
             return c(b10, j10, a10);
         }

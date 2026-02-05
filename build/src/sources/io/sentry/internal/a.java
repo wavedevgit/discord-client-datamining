@@ -11,40 +11,40 @@ import java.util.jar.Manifest;
 public final class a {
 
     /* renamed from: d  reason: collision with root package name */
-    private static volatile a f29990d;
+    private static volatile a f29048d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final io.sentry.util.a f29991e = new io.sentry.util.a();
+    private static final io.sentry.util.a f29049e = new io.sentry.util.a();
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile boolean f29992a = false;
+    private volatile boolean f29050a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private final C0399a f29993b = new C0399a();
+    private final C0406a f29051b = new C0406a();
 
     /* renamed from: c  reason: collision with root package name */
-    private io.sentry.util.a f29994c = new io.sentry.util.a();
+    private io.sentry.util.a f29052c = new io.sentry.util.a();
 
     /* renamed from: io.sentry.internal.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0399a {
+    public static final class C0406a {
 
         /* renamed from: a  reason: collision with root package name */
-        private volatile String f29995a;
+        private volatile String f29053a;
 
         /* renamed from: b  reason: collision with root package name */
-        private volatile String f29996b;
+        private volatile String f29054b;
     }
 
     private a() {
     }
 
     public static a a() {
-        if (f29990d == null) {
-            a1 a10 = f29991e.a();
+        if (f29048d == null) {
+            a1 a10 = f29049e.a();
             try {
-                if (f29990d == null) {
-                    f29990d = new a();
+                if (f29048d == null) {
+                    f29048d = new a();
                 }
                 if (a10 != null) {
                     a10.close();
@@ -60,24 +60,24 @@ public final class a {
                 throw th2;
             }
         }
-        return f29990d;
+        return f29048d;
     }
 
     public void b() {
         a1 a10;
-        if (!this.f29992a) {
+        if (!this.f29050a) {
             try {
-                a10 = this.f29994c.a();
+                a10 = this.f29052c.a();
             } catch (IOException unused) {
             } catch (Throwable th2) {
-                this.f29992a = true;
+                this.f29050a = true;
                 throw th2;
             }
-            if (this.f29992a) {
+            if (this.f29050a) {
                 if (a10 != null) {
                     a10.close();
                 }
-                this.f29992a = true;
+                this.f29050a = true;
                 return;
             }
             Enumeration<URL> resources = ClassLoader.getSystemClassLoader().getResources("META-INF/MANIFEST.MF");
@@ -90,8 +90,8 @@ public final class a {
                         String value3 = mainAttributes.getValue("Sentry-SDK-Name");
                         String value4 = mainAttributes.getValue("Sentry-SDK-Package-Name");
                         if (value != null && value2 != null) {
-                            this.f29993b.f29995a = value;
-                            this.f29993b.f29996b = value2;
+                            this.f29051b.f29053a = value;
+                            this.f29051b.f29054b = value2;
                             String value5 = mainAttributes.getValue("Sentry-Opentelemetry-Version-Name");
                             if (value5 != null) {
                                 u6.d().b("maven:io.opentelemetry:opentelemetry-sdk", value5);
@@ -119,7 +119,7 @@ public final class a {
             if (a10 != null) {
                 a10.close();
             }
-            this.f29992a = true;
+            this.f29050a = true;
         }
     }
 }

@@ -42,27 +42,27 @@ public final class AttributeStyles_ComplexTextBasedLineHeightStyleJsonAdapter ex
     @NotNull
     public AttributeStyles.ComplexTextBasedLineHeightStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.Measurement measurement = null;
         StyleElements.Measurement measurement2 = null;
         StyleElements.Measurement measurement3 = null;
         StyleElements.Measurement measurement4 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 measurement2 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 measurement3 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 measurement4 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.ComplexTextBasedLineHeightStyle(measurement, measurement2, measurement3, measurement4);
     }
 
@@ -70,14 +70,14 @@ public final class AttributeStyles_ComplexTextBasedLineHeightStyleJsonAdapter ex
     public void toJson(@NotNull t writer, AttributeStyles.ComplexTextBasedLineHeightStyle complexTextBasedLineHeightStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complexTextBasedLineHeightStyle != null) {
-            writer.l();
-            writer.A0("value");
+            writer.k();
+            writer.W("value");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLineHeightStyle.getValue());
-            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLineHeightStyle.getPlaceholder());
-            writer.A0("label");
+            writer.W("label");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLineHeightStyle.getLabel());
-            writer.A0("error");
+            writer.W("error");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLineHeightStyle.getError());
             writer.E();
             return;

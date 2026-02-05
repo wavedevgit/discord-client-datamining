@@ -45,21 +45,21 @@ public final class CapturePageConfig_ManualCaptureConfigJsonAdapter extends h {
     @NotNull
     public CapturePageConfig.ManualCaptureConfig fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         Boolean bool = null;
         Long l10 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 bool = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 l10 = (Long) this.nullableLongAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new CapturePageConfig.ManualCaptureConfig(bool, l10);
     }
 
@@ -67,10 +67,10 @@ public final class CapturePageConfig_ManualCaptureConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, CapturePageConfig.ManualCaptureConfig manualCaptureConfig) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (manualCaptureConfig != null) {
-            writer.l();
-            writer.A0("isEnabled");
+            writer.k();
+            writer.W("isEnabled");
             this.nullableBooleanAdapter.toJson(writer, manualCaptureConfig.isEnabled());
-            writer.A0("delayMs");
+            writer.W("delayMs");
             this.nullableLongAdapter.toJson(writer, manualCaptureConfig.getDelayMs());
             writer.E();
             return;

@@ -5,20 +5,20 @@ import android.util.SparseBooleanArray;
 public final class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SparseBooleanArray f40153a;
+    private final SparseBooleanArray f39613a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final SparseBooleanArray f40154a = new SparseBooleanArray();
+        private final SparseBooleanArray f39614a = new SparseBooleanArray();
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f40155b;
+        private boolean f39615b;
 
         public b a(int i10) {
-            ne.a.g(!this.f40155b);
-            this.f40154a.append(i10, true);
+            ne.a.g(!this.f39615b);
+            this.f39614a.append(i10, true);
             return this;
         }
 
@@ -44,14 +44,14 @@ public final class q {
         }
 
         public q e() {
-            ne.a.g(!this.f40155b);
-            this.f40155b = true;
-            return new q(this.f40154a);
+            ne.a.g(!this.f39615b);
+            this.f39615b = true;
+            return new q(this.f39614a);
         }
     }
 
     public boolean a(int i10) {
-        return this.f40153a.get(i10);
+        return this.f39613a.get(i10);
     }
 
     public boolean b(int... iArr) {
@@ -65,11 +65,11 @@ public final class q {
 
     public int c(int i10) {
         ne.a.c(i10, 0, d());
-        return this.f40153a.keyAt(i10);
+        return this.f39613a.keyAt(i10);
     }
 
     public int d() {
-        return this.f40153a.size();
+        return this.f39613a.size();
     }
 
     public boolean equals(Object obj) {
@@ -80,7 +80,7 @@ public final class q {
             return false;
         }
         q qVar = (q) obj;
-        if (w0.f40197a < 24) {
+        if (w0.f39657a < 24) {
             if (d() != qVar.d()) {
                 return false;
             }
@@ -91,21 +91,21 @@ public final class q {
             }
             return true;
         }
-        return this.f40153a.equals(qVar.f40153a);
+        return this.f39613a.equals(qVar.f39613a);
     }
 
     public int hashCode() {
-        if (w0.f40197a < 24) {
+        if (w0.f39657a < 24) {
             int d10 = d();
             for (int i10 = 0; i10 < d(); i10++) {
                 d10 = (d10 * 31) + c(i10);
             }
             return d10;
         }
-        return this.f40153a.hashCode();
+        return this.f39613a.hashCode();
     }
 
     private q(SparseBooleanArray sparseBooleanArray) {
-        this.f40153a = sparseBooleanArray;
+        this.f39613a = sparseBooleanArray;
     }
 }

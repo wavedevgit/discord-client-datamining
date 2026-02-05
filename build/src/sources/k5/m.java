@@ -8,22 +8,22 @@ import kotlinx.coroutines.CancellableContinuation;
 import okhttp3.Call;
 import okhttp3.Response;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-final class m implements wt.b, Function1 {
+final class m implements zt.b, Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Call f32184d;
+    private final Call f31647d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CancellableContinuation f32185e;
+    private final CancellableContinuation f31648e;
 
     public m(Call call, CancellableContinuation cancellableContinuation) {
-        this.f32184d = call;
-        this.f32185e = cancellableContinuation;
+        this.f31647d = call;
+        this.f31648e = cancellableContinuation;
     }
 
     public void a(Throwable th2) {
         try {
-            this.f32184d.cancel();
+            this.f31647d.cancel();
         } catch (Throwable unused) {
         }
     }
@@ -31,20 +31,20 @@ final class m implements wt.b, Function1 {
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         a((Throwable) obj);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
-    @Override // wt.b
+    @Override // zt.b
     public void onFailure(Call call, IOException iOException) {
-        if (!call.x()) {
-            CancellableContinuation cancellableContinuation = this.f32185e;
-            Result.a aVar = Result.f32461e;
+        if (!call.y()) {
+            CancellableContinuation cancellableContinuation = this.f31648e;
+            Result.a aVar = Result.f31985e;
             cancellableContinuation.resumeWith(Result.b(kotlin.c.a(iOException)));
         }
     }
 
-    @Override // wt.b
+    @Override // zt.b
     public void onResponse(Call call, Response response) {
-        this.f32185e.resumeWith(Result.b(response));
+        this.f31648e.resumeWith(Result.b(response));
     }
 }

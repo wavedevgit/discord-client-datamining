@@ -1,30 +1,30 @@
 package mg;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class fa implements ui.d {
+final class fa implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final fa f37980a = new fa();
+    static final fa f37642a = new fa();
 
     static {
-        c.b a10 = ui.c.a("inferenceCommonLogEvent");
+        c.b a10 = xi.c.a("inferenceCommonLogEvent");
         l2 l2Var = new l2();
         l2Var.a(1);
         a10.b(l2Var.b()).a();
-        c.b a11 = ui.c.a("imageInfo");
+        c.b a11 = xi.c.a("imageInfo");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
         a11.b(l2Var2.b()).a();
-        c.b a12 = ui.c.a("captionCount");
+        c.b a12 = xi.c.a("captionCount");
         l2 l2Var3 = new l2();
         l2Var3.a(4);
         a12.b(l2Var3.b()).a();
-        c.b a13 = ui.c.a("highestScore");
+        c.b a13 = xi.c.a("highestScore");
         l2 l2Var4 = new l2();
         l2Var4.a(5);
         a13.b(l2Var4.b()).a();
-        c.b a14 = ui.c.a("imageType");
+        c.b a14 = xi.c.a("imageType");
         l2 l2Var5 = new l2();
         l2Var5.a(6);
         a14.b(l2Var5.b()).a();
@@ -33,10 +33,10 @@ final class fa implements ui.d {
     private fa() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

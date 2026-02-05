@@ -9,20 +9,20 @@ import io.sentry.util.y;
 public abstract class b {
 
     /* renamed from: d  reason: collision with root package name */
-    private c f30580d;
+    private c f29638d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f30581e = System.currentTimeMillis();
+    private long f29639e = System.currentTimeMillis();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
         public boolean a(b bVar, String str, e3 e3Var, ILogger iLogger) {
             str.getClass();
             if (str.equals("type")) {
-                bVar.f30580d = (c) y.c((c) e3Var.G0(iLogger, new c.a()), "");
+                bVar.f29638d = (c) y.c((c) e3Var.G0(iLogger, new c.a()), "");
                 return true;
             } else if (str.equals("timestamp")) {
-                bVar.f30581e = e3Var.nextLong();
+                bVar.f29639e = e3Var.nextLong();
                 return true;
             } else {
                 return false;
@@ -32,20 +32,20 @@ public abstract class b {
 
     /* renamed from: io.sentry.rrweb.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0405b {
+    public static final class C0412b {
         public void a(b bVar, f3 f3Var, ILogger iLogger) {
-            f3Var.e("type").j(iLogger, bVar.f30580d);
-            f3Var.e("timestamp").b(bVar.f30581e);
+            f3Var.e("type").j(iLogger, bVar.f29638d);
+            f3Var.e("timestamp").b(bVar.f29639e);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public b(c cVar) {
-        this.f30580d = cVar;
+        this.f29638d = cVar;
     }
 
     public long e() {
-        return this.f30581e;
+        return this.f29639e;
     }
 
     public boolean equals(Object obj) {
@@ -56,17 +56,17 @@ public abstract class b {
             return false;
         }
         b bVar = (b) obj;
-        if (this.f30581e == bVar.f30581e && this.f30580d == bVar.f30580d) {
+        if (this.f29639e == bVar.f29639e && this.f29638d == bVar.f29638d) {
             return true;
         }
         return false;
     }
 
     public void f(long j10) {
-        this.f30581e = j10;
+        this.f29639e = j10;
     }
 
     public int hashCode() {
-        return y.b(this.f30580d, Long.valueOf(this.f30581e));
+        return y.b(this.f29638d, Long.valueOf(this.f29639e));
     }
 }

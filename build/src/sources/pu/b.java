@@ -1,81 +1,49 @@
 package pu;
 
-import java.util.List;
-import java.util.Map;
 import kotlin.jvm.internal.Intrinsics;
+import okio.Buffer;
+import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b {
+public abstract class b {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final List f46626a;
+    /* renamed from: a */
+    private static final char[] f46648a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Map f46627b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final Object f46628c;
-
-    public b(List list, Map map, Object obj) {
-        this.f46626a = list;
-        this.f46627b = map;
-        this.f46628c = obj;
+    /* JADX WARN: Code restructure failed: missing block: B:429:0x01ac, code lost:
+        return r4;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static final int c(byte[] r18, int r19) {
+        /*
+            Method dump skipped, instructions count: 429
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: pu.b.c(byte[], int):int");
     }
 
-    public final Map a() {
-        return this.f46627b;
+    public static final void d(ByteString byteString, Buffer buffer, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(byteString, "<this>");
+        Intrinsics.checkNotNullParameter(buffer, "buffer");
+        buffer.write(byteString.l(), i10, i11);
     }
 
-    public final List b() {
-        return this.f46626a;
+    public static final int e(char c10) {
+        if ('0' <= c10 && c10 < ':') {
+            return c10 - '0';
+        }
+        if ('a' <= c10 && c10 < 'g') {
+            return c10 - 'W';
+        }
+        if ('A' <= c10 && c10 < 'G') {
+            return c10 - '7';
+        }
+        throw new IllegalArgumentException("Unexpected hex digit: " + c10);
     }
 
-    public final Object c() {
-        return this.f46628c;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof b)) {
-            return false;
-        }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f46626a, bVar.f46626a) && Intrinsics.areEqual(this.f46627b, bVar.f46627b) && Intrinsics.areEqual(this.f46628c, bVar.f46628c)) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        int hashCode;
-        int hashCode2;
-        List list = this.f46626a;
-        int i10 = 0;
-        if (list == null) {
-            hashCode = 0;
-        } else {
-            hashCode = list.hashCode();
-        }
-        int i11 = hashCode * 31;
-        Map map = this.f46627b;
-        if (map == null) {
-            hashCode2 = 0;
-        } else {
-            hashCode2 = map.hashCode();
-        }
-        int i12 = (i11 + hashCode2) * 31;
-        Object obj = this.f46628c;
-        if (obj != null) {
-            i10 = obj.hashCode();
-        }
-        return i12 + i10;
-    }
-
-    public String toString() {
-        List list = this.f46626a;
-        Map map = this.f46627b;
-        Object obj = this.f46628c;
-        return "ArrayOperationInputData(operationData=" + list + ", mappingOperation=" + map + ", operationDefault=" + obj + ")";
+    public static final char[] f() {
+        return f46648a;
     }
 }

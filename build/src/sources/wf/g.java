@@ -12,46 +12,46 @@ public class g extends i {
     public static final Parcelable.Creator<g> CREATOR = new n1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final v4 f52262d;
+    private final v4 f52919d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final v4 f52263e;
+    private final v4 f52920e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final v4 f52264i;
+    private final v4 f52921i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String[] f52265o;
+    private final String[] f52922o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(byte[] bArr, byte[] bArr2, byte[] bArr3, String[] strArr) {
         byte[] bArr4 = (byte[]) gf.q.l(bArr);
-        v4 v4Var = v4.f13742e;
-        v4 m10 = v4.m(bArr4, 0, bArr4.length);
+        v4 v4Var = v4.f14136e;
+        v4 n10 = v4.n(bArr4, 0, bArr4.length);
         byte[] bArr5 = (byte[]) gf.q.l(bArr2);
-        v4 m11 = v4.m(bArr5, 0, bArr5.length);
+        v4 n11 = v4.n(bArr5, 0, bArr5.length);
         byte[] bArr6 = (byte[]) gf.q.l(bArr3);
-        v4 m12 = v4.m(bArr6, 0, bArr6.length);
-        this.f52262d = (v4) gf.q.l(m10);
-        this.f52263e = (v4) gf.q.l(m11);
-        this.f52264i = (v4) gf.q.l(m12);
-        this.f52265o = (String[]) gf.q.l(strArr);
+        v4 n12 = v4.n(bArr6, 0, bArr6.length);
+        this.f52919d = (v4) gf.q.l(n10);
+        this.f52920e = (v4) gf.q.l(n11);
+        this.f52921i = (v4) gf.q.l(n12);
+        this.f52922o = (String[]) gf.q.l(strArr);
     }
 
     public byte[] b() {
-        return this.f52264i.n();
+        return this.f52921i.o();
     }
 
     public byte[] c() {
-        return this.f52263e.n();
+        return this.f52920e.o();
     }
 
     public byte[] d() {
-        return this.f52262d.n();
+        return this.f52919d.o();
     }
 
     public String[] e() {
-        return this.f52265o;
+        return this.f52922o;
     }
 
     public boolean equals(Object obj) {
@@ -59,7 +59,7 @@ public class g extends i {
             return false;
         }
         g gVar = (g) obj;
-        if (!gf.o.a(this.f52262d, gVar.f52262d) || !gf.o.a(this.f52263e, gVar.f52263e) || !gf.o.a(this.f52264i, gVar.f52264i)) {
+        if (!gf.o.a(this.f52919d, gVar.f52919d) || !gf.o.a(this.f52920e, gVar.f52920e) || !gf.o.a(this.f52921i, gVar.f52921i)) {
             return false;
         }
         return true;
@@ -79,7 +79,7 @@ public class g extends i {
     }
 
     public int hashCode() {
-        return gf.o.b(Integer.valueOf(gf.o.b(this.f52262d)), Integer.valueOf(gf.o.b(this.f52263e)), Integer.valueOf(gf.o.b(this.f52264i)));
+        return gf.o.b(Integer.valueOf(gf.o.b(this.f52919d)), Integer.valueOf(gf.o.b(this.f52920e)), Integer.valueOf(gf.o.b(this.f52921i)));
     }
 
     public String toString() {
@@ -93,7 +93,7 @@ public class g extends i {
         u2 d13 = u2.d();
         byte[] b10 = b();
         a10.b("attestationObject", d13.e(b10, 0, b10.length));
-        a10.b("transports", Arrays.toString(this.f52265o));
+        a10.b("transports", Arrays.toString(this.f52922o));
         return a10.toString();
     }
 

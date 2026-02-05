@@ -1,13 +1,25 @@
 package ji;
+
+import android.os.Bundle;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-abstract class g0 {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static Object b() {
-        return null;
+public abstract class g0 {
+    public static final List a(List list) {
+        ArrayList arrayList = new ArrayList();
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            i0 i0Var = (i0) it.next();
+            Bundle bundle = new Bundle();
+            bundle.putInt("event_type", i0Var.a());
+            bundle.putLong("event_timestamp", i0Var.b());
+            arrayList.add(bundle);
+        }
+        return arrayList;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static Object a(Object obj) {
-        return obj;
+    public static final void b(int i10, List list) {
+        list.add(i0.c(i10, System.currentTimeMillis()));
     }
 }

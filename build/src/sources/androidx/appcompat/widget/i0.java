@@ -13,49 +13,49 @@ import android.widget.LinearLayout;
 public abstract class i0 extends ViewGroup {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f1697d;
+    private boolean f1809d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f1698e;
+    private int f1810e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f1699i;
+    private int f1811i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f1700o;
+    private int f1812o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f1701p;
+    private int f1813p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f1702q;
+    private int f1814q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f1703r;
+    private float f1815r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f1704s;
+    private boolean f1816s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int[] f1705t;
+    private int[] f1817t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int[] f1706u;
+    private int[] f1818u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Drawable f1707v;
+    private Drawable f1819v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f1708w;
+    private int f1820w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f1709x;
+    private int f1821x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f1710y;
+    private int f1822y;
 
     /* renamed from: z  reason: collision with root package name */
-    private int f1711z;
+    private int f1823z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a extends LinearLayout.LayoutParams {
@@ -151,7 +151,7 @@ public abstract class i0 extends ViewGroup {
                 if (b10) {
                     left2 = q10.getRight() + ((LinearLayout.LayoutParams) aVar).rightMargin;
                 } else {
-                    left2 = (q10.getLeft() - ((LinearLayout.LayoutParams) aVar).leftMargin) - this.f1708w;
+                    left2 = (q10.getLeft() - ((LinearLayout.LayoutParams) aVar).leftMargin) - this.f1820w;
                 }
                 h(canvas, left2);
             }
@@ -163,14 +163,14 @@ public abstract class i0 extends ViewGroup {
                     right = getPaddingLeft();
                 } else {
                     left = getWidth() - getPaddingRight();
-                    i10 = this.f1708w;
+                    i10 = this.f1820w;
                     right = left - i10;
                 }
             } else {
                 a aVar2 = (a) q11.getLayoutParams();
                 if (b10) {
                     left = q11.getLeft() - ((LinearLayout.LayoutParams) aVar2).leftMargin;
-                    i10 = this.f1708w;
+                    i10 = this.f1820w;
                     right = left - i10;
                 } else {
                     right = q11.getRight() + ((LinearLayout.LayoutParams) aVar2).rightMargin;
@@ -186,13 +186,13 @@ public abstract class i0 extends ViewGroup {
         for (int i10 = 0; i10 < virtualChildCount; i10++) {
             View q10 = q(i10);
             if (q10 != null && q10.getVisibility() != 8 && r(i10)) {
-                g(canvas, (q10.getTop() - ((LinearLayout.LayoutParams) ((a) q10.getLayoutParams())).topMargin) - this.f1709x);
+                g(canvas, (q10.getTop() - ((LinearLayout.LayoutParams) ((a) q10.getLayoutParams())).topMargin) - this.f1821x);
             }
         }
         if (r(virtualChildCount)) {
             View q11 = q(virtualChildCount - 1);
             if (q11 == null) {
-                bottom = (getHeight() - getPaddingBottom()) - this.f1709x;
+                bottom = (getHeight() - getPaddingBottom()) - this.f1821x;
             } else {
                 bottom = q11.getBottom() + ((LinearLayout.LayoutParams) ((a) q11.getLayoutParams())).bottomMargin;
             }
@@ -201,35 +201,35 @@ public abstract class i0 extends ViewGroup {
     }
 
     void g(Canvas canvas, int i10) {
-        this.f1707v.setBounds(getPaddingLeft() + this.f1711z, i10, (getWidth() - getPaddingRight()) - this.f1711z, this.f1709x + i10);
-        this.f1707v.draw(canvas);
+        this.f1819v.setBounds(getPaddingLeft() + this.f1823z, i10, (getWidth() - getPaddingRight()) - this.f1823z, this.f1821x + i10);
+        this.f1819v.draw(canvas);
     }
 
     @Override // android.view.View
     public int getBaseline() {
         int i10;
-        if (this.f1698e < 0) {
+        if (this.f1810e < 0) {
             return super.getBaseline();
         }
         int childCount = getChildCount();
-        int i11 = this.f1698e;
+        int i11 = this.f1810e;
         if (childCount > i11) {
             View childAt = getChildAt(i11);
             int baseline = childAt.getBaseline();
             if (baseline == -1) {
-                if (this.f1698e == 0) {
+                if (this.f1810e == 0) {
                     return -1;
                 }
                 throw new RuntimeException("mBaselineAlignedChildIndex of LinearLayout points to a View that doesn't know how to get its baseline.");
             }
-            int i12 = this.f1699i;
-            if (this.f1700o == 1 && (i10 = this.f1701p & 112) != 48) {
+            int i12 = this.f1811i;
+            if (this.f1812o == 1 && (i10 = this.f1813p & 112) != 48) {
                 if (i10 != 16) {
                     if (i10 == 80) {
-                        i12 = ((getBottom() - getTop()) - getPaddingBottom()) - this.f1702q;
+                        i12 = ((getBottom() - getTop()) - getPaddingBottom()) - this.f1814q;
                     }
                 } else {
-                    i12 += ((((getBottom() - getTop()) - getPaddingTop()) - getPaddingBottom()) - this.f1702q) / 2;
+                    i12 += ((((getBottom() - getTop()) - getPaddingTop()) - getPaddingBottom()) - this.f1814q) / 2;
                 }
             }
             return i12 + ((LinearLayout.LayoutParams) ((a) childAt.getLayoutParams())).topMargin + baseline;
@@ -238,31 +238,31 @@ public abstract class i0 extends ViewGroup {
     }
 
     public int getBaselineAlignedChildIndex() {
-        return this.f1698e;
+        return this.f1810e;
     }
 
     public Drawable getDividerDrawable() {
-        return this.f1707v;
+        return this.f1819v;
     }
 
     public int getDividerPadding() {
-        return this.f1711z;
+        return this.f1823z;
     }
 
     public int getDividerWidth() {
-        return this.f1708w;
+        return this.f1820w;
     }
 
     public int getGravity() {
-        return this.f1701p;
+        return this.f1813p;
     }
 
     public int getOrientation() {
-        return this.f1700o;
+        return this.f1812o;
     }
 
     public int getShowDividers() {
-        return this.f1710y;
+        return this.f1822y;
     }
 
     int getVirtualChildCount() {
@@ -270,19 +270,19 @@ public abstract class i0 extends ViewGroup {
     }
 
     public float getWeightSum() {
-        return this.f1703r;
+        return this.f1815r;
     }
 
     void h(Canvas canvas, int i10) {
-        this.f1707v.setBounds(i10, getPaddingTop() + this.f1711z, this.f1708w + i10, (getHeight() - getPaddingBottom()) - this.f1711z);
-        this.f1707v.draw(canvas);
+        this.f1819v.setBounds(i10, getPaddingTop() + this.f1823z, this.f1820w + i10, (getHeight() - getPaddingBottom()) - this.f1823z);
+        this.f1819v.draw(canvas);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // android.view.ViewGroup
     /* renamed from: k */
     public a generateDefaultLayoutParams() {
-        int i10 = this.f1700o;
+        int i10 = this.f1812o;
         if (i10 == 0) {
             return new a(-2, -2);
         }
@@ -321,10 +321,10 @@ public abstract class i0 extends ViewGroup {
 
     @Override // android.view.View
     protected void onDraw(Canvas canvas) {
-        if (this.f1707v == null) {
+        if (this.f1819v == null) {
             return;
         }
-        if (this.f1700o == 1) {
+        if (this.f1812o == 1) {
             f(canvas);
         } else {
             e(canvas);
@@ -346,7 +346,7 @@ public abstract class i0 extends ViewGroup {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // android.view.ViewGroup, android.view.View
     public void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
-        if (this.f1700o == 1) {
+        if (this.f1812o == 1) {
             t(i10, i11, i12, i13);
         } else {
             s(i10, i11, i12, i13);
@@ -356,7 +356,7 @@ public abstract class i0 extends ViewGroup {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // android.view.View
     public void onMeasure(int i10, int i11) {
-        if (this.f1700o == 1) {
+        if (this.f1812o == 1) {
             x(i10, i11);
         } else {
             v(i10, i11);
@@ -374,17 +374,17 @@ public abstract class i0 extends ViewGroup {
     /* JADX INFO: Access modifiers changed from: protected */
     public boolean r(int i10) {
         if (i10 == 0) {
-            if ((this.f1710y & 1) == 0) {
+            if ((this.f1822y & 1) == 0) {
                 return false;
             }
             return true;
         } else if (i10 == getChildCount()) {
-            if ((this.f1710y & 4) == 0) {
+            if ((this.f1822y & 4) == 0) {
                 return false;
             }
             return true;
         } else {
-            if ((this.f1710y & 2) != 0) {
+            if ((this.f1822y & 2) != 0) {
                 for (int i11 = i10 - 1; i11 >= 0; i11--) {
                     if (getChildAt(i11).getVisibility() != 8) {
                         return true;
@@ -413,29 +413,29 @@ public abstract class i0 extends ViewGroup {
     }
 
     public void setBaselineAligned(boolean z10) {
-        this.f1697d = z10;
+        this.f1809d = z10;
     }
 
     public void setBaselineAlignedChildIndex(int i10) {
         if (i10 >= 0 && i10 < getChildCount()) {
-            this.f1698e = i10;
+            this.f1810e = i10;
             return;
         }
         throw new IllegalArgumentException("base aligned child index out of range (0, " + getChildCount() + ")");
     }
 
     public void setDividerDrawable(Drawable drawable) {
-        if (drawable == this.f1707v) {
+        if (drawable == this.f1819v) {
             return;
         }
-        this.f1707v = drawable;
+        this.f1819v = drawable;
         boolean z10 = false;
         if (drawable != null) {
-            this.f1708w = drawable.getIntrinsicWidth();
-            this.f1709x = drawable.getIntrinsicHeight();
+            this.f1820w = drawable.getIntrinsicWidth();
+            this.f1821x = drawable.getIntrinsicHeight();
         } else {
-            this.f1708w = 0;
-            this.f1709x = 0;
+            this.f1820w = 0;
+            this.f1821x = 0;
         }
         if (drawable == null) {
             z10 = true;
@@ -445,60 +445,60 @@ public abstract class i0 extends ViewGroup {
     }
 
     public void setDividerPadding(int i10) {
-        this.f1711z = i10;
+        this.f1823z = i10;
     }
 
     public void setGravity(int i10) {
-        if (this.f1701p != i10) {
+        if (this.f1813p != i10) {
             if ((8388615 & i10) == 0) {
                 i10 |= 8388611;
             }
             if ((i10 & 112) == 0) {
                 i10 |= 48;
             }
-            this.f1701p = i10;
+            this.f1813p = i10;
             requestLayout();
         }
     }
 
     public void setHorizontalGravity(int i10) {
         int i11 = i10 & 8388615;
-        int i12 = this.f1701p;
+        int i12 = this.f1813p;
         if ((8388615 & i12) != i11) {
-            this.f1701p = i11 | ((-8388616) & i12);
+            this.f1813p = i11 | ((-8388616) & i12);
             requestLayout();
         }
     }
 
     public void setMeasureWithLargestChildEnabled(boolean z10) {
-        this.f1704s = z10;
+        this.f1816s = z10;
     }
 
     public void setOrientation(int i10) {
-        if (this.f1700o != i10) {
-            this.f1700o = i10;
+        if (this.f1812o != i10) {
+            this.f1812o = i10;
             requestLayout();
         }
     }
 
     public void setShowDividers(int i10) {
-        if (i10 != this.f1710y) {
+        if (i10 != this.f1822y) {
             requestLayout();
         }
-        this.f1710y = i10;
+        this.f1822y = i10;
     }
 
     public void setVerticalGravity(int i10) {
         int i11 = i10 & 112;
-        int i12 = this.f1701p;
+        int i12 = this.f1813p;
         if ((i12 & 112) != i11) {
-            this.f1701p = i11 | (i12 & (-113));
+            this.f1813p = i11 | (i12 & (-113));
             requestLayout();
         }
     }
 
     public void setWeightSum(float f10) {
-        this.f1703r = Math.max(0.0f, f10);
+        this.f1815r = Math.max(0.0f, f10);
     }
 
     @Override // android.view.ViewGroup
@@ -522,7 +522,7 @@ public abstract class i0 extends ViewGroup {
             int r1 = r11.getPaddingRight()
             int r14 = r14 - r1
             int r1 = r11.getVirtualChildCount()
-            int r2 = r11.f1701p
+            int r2 = r11.f1813p
             r3 = r2 & 112(0x70, float:1.57E-43)
             r4 = 8388615(0x800007, float:1.1754953E-38)
             r2 = r2 & r4
@@ -536,13 +536,13 @@ public abstract class i0 extends ViewGroup {
             int r3 = r11.getPaddingTop()
             int r3 = r3 + r15
             int r3 = r3 - r13
-            int r13 = r11.f1702q
+            int r13 = r11.f1814q
             int r13 = r3 - r13
             goto L41
         L35:
             int r3 = r11.getPaddingTop()
             int r15 = r15 - r13
-            int r13 = r11.f1702q
+            int r13 = r11.f1814q
             int r15 = r15 - r13
             int r15 = r15 / 2
             int r13 = r3 + r15
@@ -599,7 +599,7 @@ public abstract class i0 extends ViewGroup {
         L93:
             boolean r3 = r11.r(r15)
             if (r3 == 0) goto L9c
-            int r3 = r11.f1709x
+            int r3 = r11.f1821x
             int r13 = r13 + r3
         L9c:
             int r3 = r10.topMargin
@@ -662,30 +662,30 @@ public abstract class i0 extends ViewGroup {
 
     public i0(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f1697d = true;
-        this.f1698e = -1;
-        this.f1699i = 0;
-        this.f1701p = 8388659;
-        v0 v10 = v0.v(context, attributeSet, f.j.f23012a1, i10, 0);
-        androidx.core.view.h0.l0(this, context, f.j.f23012a1, attributeSet, v10.r(), i10, 0);
-        int k10 = v10.k(f.j.f23022c1, -1);
+        this.f1809d = true;
+        this.f1810e = -1;
+        this.f1811i = 0;
+        this.f1813p = 8388659;
+        v0 v10 = v0.v(context, attributeSet, f.j.f22037a1, i10, 0);
+        androidx.core.view.h0.l0(this, context, f.j.f22037a1, attributeSet, v10.r(), i10, 0);
+        int k10 = v10.k(f.j.f22047c1, -1);
         if (k10 >= 0) {
             setOrientation(k10);
         }
-        int k11 = v10.k(f.j.f23017b1, -1);
+        int k11 = v10.k(f.j.f22042b1, -1);
         if (k11 >= 0) {
             setGravity(k11);
         }
-        boolean a10 = v10.a(f.j.f23027d1, true);
+        boolean a10 = v10.a(f.j.f22052d1, true);
         if (!a10) {
             setBaselineAligned(a10);
         }
-        this.f1703r = v10.i(f.j.f23037f1, -1.0f);
-        this.f1698e = v10.k(f.j.f23032e1, -1);
-        this.f1704s = v10.a(f.j.f23052i1, false);
-        setDividerDrawable(v10.g(f.j.f23042g1));
-        this.f1710y = v10.k(f.j.f23057j1, 0);
-        this.f1711z = v10.f(f.j.f23047h1, 0);
+        this.f1815r = v10.i(f.j.f22062f1, -1.0f);
+        this.f1810e = v10.k(f.j.f22057e1, -1);
+        this.f1816s = v10.a(f.j.f22077i1, false);
+        setDividerDrawable(v10.g(f.j.f22067g1));
+        this.f1822y = v10.k(f.j.f22082j1, 0);
+        this.f1823z = v10.f(f.j.f22072h1, 0);
         v10.x();
     }
 }

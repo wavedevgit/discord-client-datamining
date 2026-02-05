@@ -1,13 +1,18 @@
 package ep;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class d {
+public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f22481a = 2131887100;
+    public static final d f21688a = new d();
 
-    /* renamed from: b  reason: collision with root package name */
-    public static int f22482b = 2131887101;
+    private d() {
+    }
 
-    /* renamed from: c  reason: collision with root package name */
-    public static int f22483c = 2131887102;
+    public final Class a() {
+        try {
+            return Class.forName("com.withpersona.sdk2.inquiry.nfc.impl.NfcReaderActivity");
+        } catch (ClassNotFoundException unused) {
+            return null;
+        }
+    }
 }

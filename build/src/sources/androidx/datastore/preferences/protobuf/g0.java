@@ -4,10 +4,10 @@ package androidx.datastore.preferences.protobuf;
 public final class g0 implements e1 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final n0 f3614b = new a();
+    private static final n0 f3726b = new a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final n0 f3615a;
+    private final n0 f3727a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a implements n0 {
@@ -30,16 +30,16 @@ public final class g0 implements e1 {
     public static class b implements n0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private n0[] f3616a;
+        private n0[] f3728a;
 
         b(n0... n0VarArr) {
-            this.f3616a = n0VarArr;
+            this.f3728a = n0VarArr;
         }
 
         @Override // androidx.datastore.preferences.protobuf.n0
         public m0 a(Class cls) {
             n0[] n0VarArr;
-            for (n0 n0Var : this.f3616a) {
+            for (n0 n0Var : this.f3728a) {
                 if (n0Var.b(cls)) {
                     return n0Var.a(cls);
                 }
@@ -49,7 +49,7 @@ public final class g0 implements e1 {
 
         @Override // androidx.datastore.preferences.protobuf.n0
         public boolean b(Class cls) {
-            for (n0 n0Var : this.f3616a) {
+            for (n0 n0Var : this.f3728a) {
                 if (n0Var.b(cls)) {
                     return true;
                 }
@@ -70,7 +70,7 @@ public final class g0 implements e1 {
         try {
             return (n0) Class.forName("androidx.datastore.preferences.protobuf.DescriptorMessageInfoFactory").getDeclaredMethod("getInstance", null).invoke(null, null);
         } catch (Exception unused) {
-            return f3614b;
+            return f3726b;
         }
     }
 
@@ -97,7 +97,7 @@ public final class g0 implements e1 {
     @Override // androidx.datastore.preferences.protobuf.e1
     public d1 a(Class cls) {
         f1.I(cls);
-        m0 a10 = this.f3615a.a(cls);
+        m0 a10 = this.f3727a.a(cls);
         if (a10.a()) {
             if (w.class.isAssignableFrom(cls)) {
                 return s0.l(f1.L(), r.b(), a10.b());
@@ -108,6 +108,6 @@ public final class g0 implements e1 {
     }
 
     private g0(n0 n0Var) {
-        this.f3615a = (n0) y.b(n0Var, "messageInfoFactory");
+        this.f3727a = (n0) y.b(n0Var, "messageInfoFactory");
     }
 }

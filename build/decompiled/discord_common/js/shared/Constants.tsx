@@ -1443,6 +1443,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var19.TWITTER_SUPPORT = var8;
     var8 = '/quests';
     var19.QUESTS = var8;
+    var8 = '/terms/paid-services-terms';
+    var19.PAID_SERVICES_TERMS = var8;
+    var8 = '/terms/paid-services-terms#:~:text=one%2Dtime%20purchases.-,VIRTUAL%20GOODS,-You%20may%20be';
+    var19.VIRTUAL_GOODS_TERMS = var8;
     var11 = var1.Object;
     var9 = var11.freeze;
     var8 = {};

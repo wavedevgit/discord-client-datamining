@@ -10,56 +10,56 @@ import android.text.TextUtils;
 final class h {
 
     /* renamed from: n  reason: collision with root package name */
-    static final int f14780n = 1;
+    static final int f15174n = 1;
 
     /* renamed from: a  reason: collision with root package name */
-    private CharSequence f14781a;
+    private CharSequence f15175a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TextPaint f14782b;
+    private final TextPaint f15176b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f14783c;
+    private final int f15177c;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f14785e;
+    private int f15179e;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f14792l;
+    private boolean f15186l;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f14784d = 0;
+    private int f15178d = 0;
 
     /* renamed from: f  reason: collision with root package name */
-    private Layout.Alignment f14786f = Layout.Alignment.ALIGN_NORMAL;
+    private Layout.Alignment f15180f = Layout.Alignment.ALIGN_NORMAL;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f14787g = Integer.MAX_VALUE;
+    private int f15181g = Integer.MAX_VALUE;
 
     /* renamed from: h  reason: collision with root package name */
-    private float f14788h = 0.0f;
+    private float f15182h = 0.0f;
 
     /* renamed from: i  reason: collision with root package name */
-    private float f14789i = 1.0f;
+    private float f15183i = 1.0f;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f14790j = f14780n;
+    private int f15184j = f15174n;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f14791k = true;
+    private boolean f15185k = true;
 
     /* renamed from: m  reason: collision with root package name */
-    private TextUtils.TruncateAt f14793m = null;
+    private TextUtils.TruncateAt f15187m = null;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static class a extends Exception {
     }
 
     private h(CharSequence charSequence, TextPaint textPaint, int i10) {
-        this.f14781a = charSequence;
-        this.f14782b = textPaint;
-        this.f14783c = i10;
-        this.f14785e = charSequence.length();
+        this.f15175a = charSequence;
+        this.f15176b = textPaint;
+        this.f15177c = i10;
+        this.f15179e = charSequence.length();
     }
 
     public static h b(CharSequence charSequence, TextPaint textPaint, int i10) {
@@ -68,76 +68,76 @@ final class h {
 
     public StaticLayout a() {
         TextDirectionHeuristic textDirectionHeuristic;
-        if (this.f14781a == null) {
-            this.f14781a = "";
+        if (this.f15175a == null) {
+            this.f15175a = "";
         }
-        int max = Math.max(0, this.f14783c);
-        CharSequence charSequence = this.f14781a;
-        if (this.f14787g == 1) {
-            charSequence = TextUtils.ellipsize(charSequence, this.f14782b, max, this.f14793m);
+        int max = Math.max(0, this.f15177c);
+        CharSequence charSequence = this.f15175a;
+        if (this.f15181g == 1) {
+            charSequence = TextUtils.ellipsize(charSequence, this.f15176b, max, this.f15187m);
         }
-        int min = Math.min(charSequence.length(), this.f14785e);
-        this.f14785e = min;
-        if (this.f14792l && this.f14787g == 1) {
-            this.f14786f = Layout.Alignment.ALIGN_OPPOSITE;
+        int min = Math.min(charSequence.length(), this.f15179e);
+        this.f15179e = min;
+        if (this.f15186l && this.f15181g == 1) {
+            this.f15180f = Layout.Alignment.ALIGN_OPPOSITE;
         }
-        StaticLayout.Builder obtain = StaticLayout.Builder.obtain(charSequence, this.f14784d, min, this.f14782b, max);
-        obtain.setAlignment(this.f14786f);
-        obtain.setIncludePad(this.f14791k);
-        if (this.f14792l) {
+        StaticLayout.Builder obtain = StaticLayout.Builder.obtain(charSequence, this.f15178d, min, this.f15176b, max);
+        obtain.setAlignment(this.f15180f);
+        obtain.setIncludePad(this.f15185k);
+        if (this.f15186l) {
             textDirectionHeuristic = TextDirectionHeuristics.RTL;
         } else {
             textDirectionHeuristic = TextDirectionHeuristics.LTR;
         }
         obtain.setTextDirection(textDirectionHeuristic);
-        TextUtils.TruncateAt truncateAt = this.f14793m;
+        TextUtils.TruncateAt truncateAt = this.f15187m;
         if (truncateAt != null) {
             obtain.setEllipsize(truncateAt);
         }
-        obtain.setMaxLines(this.f14787g);
-        float f10 = this.f14788h;
-        if (f10 != 0.0f || this.f14789i != 1.0f) {
-            obtain.setLineSpacing(f10, this.f14789i);
+        obtain.setMaxLines(this.f15181g);
+        float f10 = this.f15182h;
+        if (f10 != 0.0f || this.f15183i != 1.0f) {
+            obtain.setLineSpacing(f10, this.f15183i);
         }
-        if (this.f14787g > 1) {
-            obtain.setHyphenationFrequency(this.f14790j);
+        if (this.f15181g > 1) {
+            obtain.setHyphenationFrequency(this.f15184j);
         }
         return obtain.build();
     }
 
     public h c(Layout.Alignment alignment) {
-        this.f14786f = alignment;
+        this.f15180f = alignment;
         return this;
     }
 
     public h d(TextUtils.TruncateAt truncateAt) {
-        this.f14793m = truncateAt;
+        this.f15187m = truncateAt;
         return this;
     }
 
     public h e(int i10) {
-        this.f14790j = i10;
+        this.f15184j = i10;
         return this;
     }
 
     public h f(boolean z10) {
-        this.f14791k = z10;
+        this.f15185k = z10;
         return this;
     }
 
     public h g(boolean z10) {
-        this.f14792l = z10;
+        this.f15186l = z10;
         return this;
     }
 
     public h h(float f10, float f11) {
-        this.f14788h = f10;
-        this.f14789i = f11;
+        this.f15182h = f10;
+        this.f15183i = f11;
         return this;
     }
 
     public h i(int i10) {
-        this.f14787g = i10;
+        this.f15181g = i10;
         return this;
     }
 

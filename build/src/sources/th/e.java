@@ -1,69 +1,67 @@
 package th;
 
-import android.content.Context;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Date;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e {
+public abstract class e {
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final k0 f50042c = new k0("SplitInstallInfoProvider");
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static abstract class a {
+        public abstract e a();
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Context f50043a;
+        public abstract a b(Integer num);
 
-    /* renamed from: b  reason: collision with root package name */
-    private final String f50044b;
+        public abstract a c(Integer num);
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public e(Context context) {
-        this.f50043a = context;
-        this.f50044b = context.getPackageName();
+        public abstract a d(String str);
+
+        public abstract a e(Date date);
+
+        public abstract a f(Integer num);
     }
 
-    public final Set a() {
-        PackageInfo packageInfo;
-        try {
-            packageInfo = this.f50043a.getPackageManager().getPackageInfo(this.f50044b, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-        } catch (PackageManager.NameNotFoundException unused) {
-            f50042c.b("App is not found in PackageManager", new Object[0]);
-            packageInfo = null;
-        }
-        if (packageInfo != null && packageInfo.applicationInfo != null) {
-            HashSet hashSet = new HashSet();
-            Bundle bundle = packageInfo.applicationInfo.metaData;
-            HashSet<String> hashSet2 = new HashSet();
-            if (bundle != null) {
-                String string = bundle.getString("com.android.dynamic.apk.fused.modules");
-                if (string != null && !string.isEmpty()) {
-                    Collections.addAll(hashSet2, string.split(",", -1));
-                    hashSet2.remove("");
-                    hashSet2.remove("base");
-                } else {
-                    f50042c.a("App has no fused modules.", new Object[0]);
-                }
-            }
-            String[] strArr = packageInfo.splitNames;
-            if (strArr != null) {
-                f50042c.a("Adding splits from package manager: %s", Arrays.toString(strArr));
-                Collections.addAll(hashSet2, strArr);
-            } else {
-                f50042c.a("No splits are found or app cannot be found in package manager.", new Object[0]);
-            }
-            d.a();
-            for (String str : hashSet2) {
-                if (!str.startsWith("config.") && !str.contains(".config.")) {
-                    hashSet.add(str);
-                }
-            }
-            return hashSet;
-        }
-        return new HashSet();
+    /* JADX WARN: Type inference failed for: r0v0, types: [java.lang.Object, th.e$a] */
+    public static a c() {
+        return new Object();
     }
+
+    public static e g(Bundle bundle) {
+        Date date;
+        if (!bundle.containsKey("user.status")) {
+            return c().a();
+        }
+        a c10 = c();
+        c10.f(h(bundle, "user.status"));
+        c10.b(h(bundle, "age.range.lower"));
+        c10.c(h(bundle, "age.range.upper"));
+        String str = null;
+        if (bundle.containsKey("most.recent.approval.date")) {
+            date = new Date(bundle.getLong("most.recent.approval.date"));
+        } else {
+            date = null;
+        }
+        c10.e(date);
+        if (bundle.containsKey("install.id")) {
+            str = bundle.getString("install.id");
+        }
+        c10.d(str);
+        return c10.a();
+    }
+
+    private static Integer h(Bundle bundle, String str) {
+        if (bundle.containsKey(str)) {
+            return Integer.valueOf(bundle.getInt(str));
+        }
+        return null;
+    }
+
+    public abstract Integer a();
+
+    public abstract Integer b();
+
+    public abstract String d();
+
+    public abstract Date e();
+
+    public abstract Integer f();
 }

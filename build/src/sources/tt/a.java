@@ -1,7 +1,7 @@
 package tt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-interface a extends b {
-    long b();
-
-    long d();
+public enum a {
+    DUAL_DATING,
+    AFTER_NEW_YEAR,
+    BEFORE_NEW_YEAR
 }

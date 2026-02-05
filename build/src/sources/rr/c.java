@@ -1,171 +1,63 @@
 package rr;
 
-import kotlin.coroutines.Continuation;
-import kotlin.coroutines.CoroutineContext;
-import kotlin.coroutines.e;
-import kotlin.coroutines.jvm.internal.g;
-import kotlin.coroutines.jvm.internal.i;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.functions.Function3;
+import java.util.Comparator;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.TypeIntrinsics;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class c {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a extends i {
-
-        /* renamed from: d  reason: collision with root package name */
-        private int f49057d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function2 f49058e;
-
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Object f49059i;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public a(Continuation continuation, Function2 function2, Object obj) {
-            super(continuation);
-            this.f49058e = function2;
-            this.f49059i = obj;
-            Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        protected Object invokeSuspend(Object obj) {
-            int i10 = this.f49057d;
-            if (i10 != 0) {
-                if (i10 == 1) {
-                    this.f49057d = 2;
-                    kotlin.c.b(obj);
-                    return obj;
+    public static Comparator b(final Function1... selectors) {
+        Intrinsics.checkNotNullParameter(selectors, "selectors");
+        if (selectors.length > 0) {
+            return new Comparator() { // from class: rr.b
+                @Override // java.util.Comparator
+                public final int compare(Object obj, Object obj2) {
+                    int c10;
+                    c10 = c.c(selectors, obj, obj2);
+                    return c10;
                 }
-                throw new IllegalStateException("This coroutine had already completed");
+            };
+        }
+        throw new IllegalArgumentException("Failed requirement.");
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int c(Function1[] function1Arr, Object obj, Object obj2) {
+        return e(obj, obj2, function1Arr);
+    }
+
+    public static int d(Comparable comparable, Comparable comparable2) {
+        if (comparable == comparable2) {
+            return 0;
+        }
+        if (comparable == null) {
+            return -1;
+        }
+        if (comparable2 == null) {
+            return 1;
+        }
+        return comparable.compareTo(comparable2);
+    }
+
+    private static final int e(Object obj, Object obj2, Function1[] function1Arr) {
+        for (Function1 function1 : function1Arr) {
+            int d10 = d((Comparable) function1.invoke(obj), (Comparable) function1.invoke(obj2));
+            if (d10 != 0) {
+                return d10;
             }
-            this.f49057d = 1;
-            kotlin.c.b(obj);
-            Intrinsics.checkNotNull(this.f49058e, "null cannot be cast to non-null type kotlin.Function2<R of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted, kotlin.coroutines.Continuation<T of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted>, kotlin.Any?>");
-            return ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(this.f49058e, 2)).invoke(this.f49059i, this);
         }
+        return 0;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class b extends kotlin.coroutines.jvm.internal.d {
-
-        /* renamed from: d  reason: collision with root package name */
-        private int f49060d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function2 f49061e;
-
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Object f49062i;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public b(Continuation continuation, CoroutineContext coroutineContext, Function2 function2, Object obj) {
-            super(continuation, coroutineContext);
-            this.f49061e = function2;
-            this.f49062i = obj;
-            Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        protected Object invokeSuspend(Object obj) {
-            int i10 = this.f49060d;
-            if (i10 != 0) {
-                if (i10 == 1) {
-                    this.f49060d = 2;
-                    kotlin.c.b(obj);
-                    return obj;
-                }
-                throw new IllegalStateException("This coroutine had already completed");
-            }
-            this.f49060d = 1;
-            kotlin.c.b(obj);
-            Intrinsics.checkNotNull(this.f49061e, "null cannot be cast to non-null type kotlin.Function2<R of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted, kotlin.coroutines.Continuation<T of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted>, kotlin.Any?>");
-            return ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(this.f49061e, 2)).invoke(this.f49062i, this);
-        }
+    public static Comparator f() {
+        f fVar = f.f48946d;
+        Intrinsics.checkNotNull(fVar, "null cannot be cast to non-null type java.util.Comparator<T of kotlin.comparisons.ComparisonsKt__ComparisonsKt.naturalOrder>");
+        return fVar;
     }
 
-    /* renamed from: rr.c$c  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0607c extends i {
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        C0607c(Continuation continuation) {
-            super(continuation);
-            Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        protected Object invokeSuspend(Object obj) {
-            kotlin.c.b(obj);
-            return obj;
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class d extends kotlin.coroutines.jvm.internal.d {
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        d(Continuation continuation, CoroutineContext coroutineContext) {
-            super(continuation, coroutineContext);
-            Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        protected Object invokeSuspend(Object obj) {
-            kotlin.c.b(obj);
-            return obj;
-        }
-    }
-
-    public static Continuation a(Function2 function2, Object obj, Continuation completion) {
-        Intrinsics.checkNotNullParameter(function2, "<this>");
-        Intrinsics.checkNotNullParameter(completion, "completion");
-        Continuation<?> a10 = g.a(completion);
-        if (function2 instanceof kotlin.coroutines.jvm.internal.a) {
-            return ((kotlin.coroutines.jvm.internal.a) function2).create(obj, a10);
-        }
-        CoroutineContext context = a10.getContext();
-        if (context == e.f32538d) {
-            return new a(a10, function2, obj);
-        }
-        return new b(a10, context, function2, obj);
-    }
-
-    private static final Continuation b(Continuation continuation) {
-        CoroutineContext context = continuation.getContext();
-        if (context == e.f32538d) {
-            return new C0607c(continuation);
-        }
-        return new d(continuation, context);
-    }
-
-    public static Continuation c(Continuation continuation) {
-        kotlin.coroutines.jvm.internal.d dVar;
-        Continuation<Object> intercepted;
-        Intrinsics.checkNotNullParameter(continuation, "<this>");
-        if (continuation instanceof kotlin.coroutines.jvm.internal.d) {
-            dVar = (kotlin.coroutines.jvm.internal.d) continuation;
-        } else {
-            dVar = null;
-        }
-        if (dVar != null && (intercepted = dVar.intercepted()) != null) {
-            return intercepted;
-        }
-        return continuation;
-    }
-
-    public static Object d(Function2 function2, Object obj, Continuation completion) {
-        Intrinsics.checkNotNullParameter(function2, "<this>");
-        Intrinsics.checkNotNullParameter(completion, "completion");
-        return ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(function2, 2)).invoke(obj, b(g.a(completion)));
-    }
-
-    public static Object e(Function3 function3, Object obj, Object obj2, Continuation completion) {
-        Intrinsics.checkNotNullParameter(function3, "<this>");
-        Intrinsics.checkNotNullParameter(completion, "completion");
-        return ((Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(function3, 3)).invoke(obj, obj2, b(g.a(completion)));
+    public static Comparator g() {
+        g gVar = g.f48947d;
+        Intrinsics.checkNotNull(gVar, "null cannot be cast to non-null type java.util.Comparator<T of kotlin.comparisons.ComparisonsKt__ComparisonsKt.reverseOrder>");
+        return gVar;
     }
 }

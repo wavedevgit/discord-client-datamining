@@ -1,50 +1,50 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class h5 implements ui.d {
+final class h5 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final h5 f41180a = new h5();
+    static final h5 f40640a = new h5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41181b;
+    private static final xi.c f40641b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41182c;
+    private static final xi.c f40642c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41183d;
+    private static final xi.c f40643d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41184e;
+    private static final xi.c f40644e;
 
     static {
-        c.b a10 = ui.c.a("inferenceCommonLogEvent");
+        c.b a10 = xi.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f41181b = a10.b(fVar.b()).a();
-        c.b a11 = ui.c.a("imageInfo");
+        f40641b = a10.b(fVar.b()).a();
+        c.b a11 = xi.c.a("imageInfo");
         f fVar2 = new f();
         fVar2.a(2);
-        f41182c = a11.b(fVar2.b()).a();
-        c.b a12 = ui.c.a("detectorOptions");
+        f40642c = a11.b(fVar2.b()).a();
+        c.b a12 = xi.c.a("detectorOptions");
         f fVar3 = new f();
         fVar3.a(3);
-        f41183d = a12.b(fVar3.b()).a();
-        c.b a13 = ui.c.a("objectInfos");
+        f40643d = a12.b(fVar3.b()).a();
+        c.b a13 = xi.c.a("objectInfos");
         f fVar4 = new f();
         fVar4.a(4);
-        f41184e = a13.b(fVar4.b()).a();
+        f40644e = a13.b(fVar4.b()).a();
     }
 
     private h5() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

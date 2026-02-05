@@ -60,65 +60,65 @@ public final class NextStep_Selfie_LocalizationsJsonAdapter extends h {
     @NotNull
     public NextStep.Selfie.Localizations fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         NextStep.Selfie.PromptPage promptPage = null;
         NextStep.Selfie.CapturePage capturePage = null;
         NextStep.Selfie.PendingPage pendingPage = null;
         NextStep.CancelDialog cancelDialog = null;
         NextStep.Selfie.CheckPage checkPage = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 promptPage = (NextStep.Selfie.PromptPage) this.promptPageAdapter.fromJson(reader);
                 if (promptPage == null) {
-                    throw vm.c.x("promptPage", "promptPage", reader);
+                    throw ym.c.x("promptPage", "promptPage", reader);
                 }
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 capturePage = (NextStep.Selfie.CapturePage) this.capturePageAdapter.fromJson(reader);
                 if (capturePage == null) {
-                    throw vm.c.x("capturePage", "capturePage", reader);
+                    throw ym.c.x("capturePage", "capturePage", reader);
                 }
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 pendingPage = (NextStep.Selfie.PendingPage) this.pendingPageAdapter.fromJson(reader);
                 if (pendingPage == null) {
-                    throw vm.c.x("pendingPage", "pendingPage", reader);
+                    throw ym.c.x("pendingPage", "pendingPage", reader);
                 }
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 cancelDialog = (NextStep.CancelDialog) this.nullableCancelDialogAdapter.fromJson(reader);
-            } else if (A0 == 4) {
+            } else if (W == 4) {
                 checkPage = (NextStep.Selfie.CheckPage) this.nullableCheckPageAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         if (promptPage != null) {
             if (capturePage != null) {
                 if (pendingPage != null) {
                     return new NextStep.Selfie.Localizations(promptPage, capturePage, pendingPage, cancelDialog, checkPage);
                 }
-                throw vm.c.o("pendingPage", "pendingPage", reader);
+                throw ym.c.o("pendingPage", "pendingPage", reader);
             }
-            throw vm.c.o("capturePage", "capturePage", reader);
+            throw ym.c.o("capturePage", "capturePage", reader);
         }
-        throw vm.c.o("promptPage", "promptPage", reader);
+        throw ym.c.o("promptPage", "promptPage", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.Selfie.Localizations localizations) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (localizations != null) {
-            writer.l();
-            writer.A0("promptPage");
+            writer.k();
+            writer.W("promptPage");
             this.promptPageAdapter.toJson(writer, localizations.getPromptPage());
-            writer.A0("capturePage");
+            writer.W("capturePage");
             this.capturePageAdapter.toJson(writer, localizations.getCapturePage());
-            writer.A0("pendingPage");
+            writer.W("pendingPage");
             this.pendingPageAdapter.toJson(writer, localizations.getPendingPage());
-            writer.A0("cancelDialog");
+            writer.W("cancelDialog");
             this.nullableCancelDialogAdapter.toJson(writer, localizations.getCancelDialog());
-            writer.A0("checkPage");
+            writer.W("checkPage");
             this.nullableCheckPageAdapter.toJson(writer, localizations.getCheckPage());
             writer.E();
             return;

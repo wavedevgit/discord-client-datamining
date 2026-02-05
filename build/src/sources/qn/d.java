@@ -1,122 +1,38 @@
 package qn;
 
-import android.graphics.Bitmap;
-import android.graphics.Rect;
-import androidx.recyclerview.widget.RecyclerView;
-import com.google.android.gms.tasks.Task;
-import com.google.android.renderscript.Toolkit;
-import java.util.List;
-import java.util.concurrent.ExecutionException;
-import kotlin.Lazy;
-import kotlin.Result;
-import kotlin.collections.CollectionsKt;
-import kotlin.coroutines.Continuation;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import android.view.View;
+import android.view.WindowInsets;
+import androidx.core.graphics.Insets;
+import androidx.core.view.WindowInsetsCompat;
 import kotlin.jvm.internal.Intrinsics;
-import pn.g;
-import pn.j0;
-import qn.a;
-import qn.b;
-import rj.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements e {
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final a f47981b = new a(null);
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final float[] f47982c = {-0.15f, -0.15f, -0.15f, -0.15f, 2.2f, -0.15f, -0.15f, -0.15f, -0.15f};
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Lazy f47983a = lr.l.a(new Function0() { // from class: qn.c
-        @Override // kotlin.jvm.functions.Function0
-        public final Object invoke() {
-            rj.a c10;
-            c10 = d.c();
-            return c10;
+public abstract class d {
+    public static final Insets a(View view, int i10, WindowInsets windowInsets, boolean z10) {
+        Intrinsics.checkNotNullParameter(view, "<this>");
+        if (windowInsets == null) {
+            Insets NONE = Insets.f3274e;
+            Intrinsics.checkNotNullExpressionValue(NONE, "NONE");
+            return NONE;
         }
-    });
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+        WindowInsetsCompat D = WindowInsetsCompat.D(windowInsets, view);
+        Intrinsics.checkNotNullExpressionValue(D, "toWindowInsetsCompat(...)");
+        if (!z10) {
+            Insets f10 = D.f(i10);
+            Intrinsics.checkNotNull(f10);
+            return f10;
         }
-
-        private a() {
-        }
+        Insets g10 = D.g(i10);
+        Intrinsics.checkNotNull(g10);
+        return g10;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final rj.a c() {
-        rj.a a10 = rj.c.a(new b.a().b(RecyclerView.ItemAnimator.FLAG_MOVED, new int[0]).a());
-        Intrinsics.checkNotNullExpressionValue(a10, "getClient(...)");
-        return a10;
-    }
-
-    private final rj.a d() {
-        return (rj.a) this.f47983a.getValue();
-    }
-
-    private final Bitmap e(Bitmap bitmap) {
-        try {
-            return Toolkit.b(Toolkit.f15857a, bitmap, f47982c, null, 4, null);
-        } catch (UnsatisfiedLinkError unused) {
-            return null;
+    public static /* synthetic */ Insets b(View view, int i10, WindowInsets windowInsets, boolean z10, int i11, Object obj) {
+        if ((i11 & 2) != 0) {
+            windowInsets = view.getRootWindowInsets();
         }
-    }
-
-    @Override // qn.e
-    public Object a(j0 j0Var, Rect rect, Continuation continuation) {
-        Bitmap e10 = j0Var.e();
-        if (e10 == null) {
-            Result.a aVar = Result.f32461e;
-            return Result.b(a.b.f47975a);
+        if ((i11 & 4) != 0) {
+            z10 = false;
         }
-        Bitmap e11 = e(e10);
-        if (e11 != null) {
-            e10 = e11;
-        }
-        vj.a a10 = vj.a.a(e10, j0Var.f().k());
-        Intrinsics.checkNotNullExpressionValue(a10, "fromBitmap(...)");
-        Task g10 = d().g(a10);
-        Intrinsics.checkNotNullExpressionValue(g10, "process(...)");
-        try {
-            List list = (List) wg.m.a(g10);
-            Object l10 = g10.l();
-            Intrinsics.checkNotNullExpressionValue(l10, "getResult(...)");
-            sj.a aVar2 = (sj.a) CollectionsKt.q0((List) l10, 0);
-            if (aVar2 == null) {
-                Result.a aVar3 = Result.f32461e;
-                return Result.b(a.b.f47975a);
-            }
-            String d10 = aVar2.d();
-            if (d10 == null) {
-                Result.a aVar4 = Result.f32461e;
-                return Result.b(a.b.f47975a);
-            } else if (aVar2.c() == 2048) {
-                g.b bVar = new g.b(d10);
-                Rect rect2 = new Rect(0, 0, j0Var.f().l(), j0Var.f().h());
-                Rect a11 = aVar2.a();
-                if (a11 == null) {
-                    Result.a aVar5 = Result.f32461e;
-                    return Result.b(a.b.f47975a);
-                }
-                rect2.inset(1, 1);
-                if (rect2.contains(a11)) {
-                    Result.a aVar6 = Result.f32461e;
-                    return Result.b(new a.C0578a(bVar));
-                }
-                Result.a aVar7 = Result.f32461e;
-                return Result.b(a.b.f47975a);
-            } else {
-                Result.a aVar8 = Result.f32461e;
-                return Result.b(a.b.f47975a);
-            }
-        } catch (ExecutionException unused) {
-            Result.a aVar9 = Result.f32461e;
-            return Result.b(kotlin.c.a(new b.C0579b()));
-        }
+        return a(view, i10, windowInsets, z10);
     }
 }

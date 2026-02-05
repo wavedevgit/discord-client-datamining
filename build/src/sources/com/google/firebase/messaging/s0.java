@@ -13,19 +13,19 @@ import java.util.Queue;
 public class s0 {
 
     /* renamed from: e  reason: collision with root package name */
-    private static s0 f16128e;
+    private static s0 f16522e;
 
     /* renamed from: a  reason: collision with root package name */
-    private String f16129a = null;
+    private String f16523a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private Boolean f16130b = null;
+    private Boolean f16524b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private Boolean f16131c = null;
+    private Boolean f16525c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Queue f16132d = new ArrayDeque();
+    private final Queue f16526d = new ArrayDeque();
 
     private s0() {
     }
@@ -65,10 +65,10 @@ public class s0 {
         s0 s0Var;
         synchronized (s0.class) {
             try {
-                if (f16128e == null) {
-                    f16128e = new s0();
+                if (f16522e == null) {
+                    f16522e = new s0();
                 }
-                s0Var = f16128e;
+                s0Var = f16522e;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -80,7 +80,7 @@ public class s0 {
         ServiceInfo serviceInfo;
         String str;
         try {
-            String str2 = this.f16129a;
+            String str2 = this.f16523a;
             if (str2 != null) {
                 return str2;
             }
@@ -88,11 +88,11 @@ public class s0 {
             if (resolveService != null && (serviceInfo = resolveService.serviceInfo) != null) {
                 if (context.getPackageName().equals(serviceInfo.packageName) && (str = serviceInfo.name) != null) {
                     if (str.startsWith(".")) {
-                        this.f16129a = context.getPackageName() + serviceInfo.name;
+                        this.f16523a = context.getPackageName() + serviceInfo.name;
                     } else {
-                        this.f16129a = serviceInfo.name;
+                        this.f16523a = serviceInfo.name;
                     }
-                    return this.f16129a;
+                    return this.f16523a;
                 }
                 Log.e("FirebaseMessaging", "Error resolving target intent service, skipping classname enforcement. Resolved service was: " + serviceInfo.packageName + "/" + serviceInfo.name);
                 return null;
@@ -106,48 +106,48 @@ public class s0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Intent c() {
-        return (Intent) this.f16132d.poll();
+        return (Intent) this.f16526d.poll();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean d(Context context) {
         boolean z10;
-        if (this.f16131c == null) {
+        if (this.f16525c == null) {
             if (context.checkCallingOrSelfPermission("android.permission.ACCESS_NETWORK_STATE") == 0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f16131c = Boolean.valueOf(z10);
+            this.f16525c = Boolean.valueOf(z10);
         }
-        if (!this.f16130b.booleanValue() && Log.isLoggable("FirebaseMessaging", 3)) {
+        if (!this.f16524b.booleanValue() && Log.isLoggable("FirebaseMessaging", 3)) {
             Log.d("FirebaseMessaging", "Missing Permission: android.permission.ACCESS_NETWORK_STATE this should normally be included by the manifest merger, but may needed to be manually added to your manifest");
         }
-        return this.f16131c.booleanValue();
+        return this.f16525c.booleanValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean e(Context context) {
         boolean z10;
-        if (this.f16130b == null) {
+        if (this.f16524b == null) {
             if (context.checkCallingOrSelfPermission("android.permission.WAKE_LOCK") == 0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f16130b = Boolean.valueOf(z10);
+            this.f16524b = Boolean.valueOf(z10);
         }
-        if (!this.f16130b.booleanValue() && Log.isLoggable("FirebaseMessaging", 3)) {
+        if (!this.f16524b.booleanValue() && Log.isLoggable("FirebaseMessaging", 3)) {
             Log.d("FirebaseMessaging", "Missing Permission: android.permission.WAKE_LOCK this should normally be included by the manifest merger, but may needed to be manually added to your manifest");
         }
-        return this.f16130b.booleanValue();
+        return this.f16524b.booleanValue();
     }
 
     public int g(Context context, Intent intent) {
         if (Log.isLoggable("FirebaseMessaging", 3)) {
             Log.d("FirebaseMessaging", "Starting service");
         }
-        this.f16132d.offer(intent);
+        this.f16526d.offer(intent);
         Intent intent2 = new Intent("com.google.firebase.MESSAGING_EVENT");
         intent2.setPackage(context.getPackageName());
         return a(context, intent2);

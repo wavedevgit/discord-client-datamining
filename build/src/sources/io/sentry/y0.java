@@ -10,14 +10,14 @@ public interface y0 {
     void d(long j10);
 
     default io.sentry.protocol.x e(SentryEvent sentryEvent, IScope iScope) {
-        return l(sentryEvent, iScope, null);
+        return m(sentryEvent, iScope, null);
     }
 
-    default boolean f() {
+    void f(z7 z7Var, Hint hint);
+
+    default boolean g() {
         return true;
     }
-
-    void g(z7 z7Var, Hint hint);
 
     void h(z6 z6Var);
 
@@ -36,7 +36,7 @@ public interface y0 {
 
     io.sentry.protocol.x k(m3 m3Var, IScope iScope);
 
-    io.sentry.protocol.x l(SentryEvent sentryEvent, IScope iScope, Hint hint);
+    io.sentry.protocol.x l(l5 l5Var, Hint hint);
 
-    io.sentry.protocol.x m(l5 l5Var, Hint hint);
+    io.sentry.protocol.x m(SentryEvent sentryEvent, IScope iScope, Hint hint);
 }

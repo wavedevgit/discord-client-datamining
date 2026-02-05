@@ -9,54 +9,54 @@ import java.util.concurrent.Executor;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f26125a = new Object();
+    private static final Object f24819a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private static int f26126b = 9;
+    private static int f24820b = 9;
 
     /* renamed from: c  reason: collision with root package name */
-    private static n1 f26127c = null;
+    private static k1 f24821c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    static HandlerThread f26128d = null;
+    static HandlerThread f24822d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private static Executor f26129e = null;
+    private static Executor f24823e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private static boolean f26130f = false;
+    private static boolean f24824f = false;
 
     public static h a(Context context) {
         Looper mainLooper;
-        synchronized (f26125a) {
+        synchronized (f24819a) {
             try {
-                if (f26127c == null) {
+                if (f24821c == null) {
                     Context applicationContext = context.getApplicationContext();
-                    if (f26130f) {
+                    if (f24824f) {
                         mainLooper = b().getLooper();
                     } else {
                         mainLooper = context.getMainLooper();
                     }
-                    f26127c = new n1(applicationContext, mainLooper, f26129e);
+                    f24821c = new k1(applicationContext, mainLooper, f24823e);
                 }
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        return f26127c;
+        return f24821c;
     }
 
     public static HandlerThread b() {
-        synchronized (f26125a) {
+        synchronized (f24819a) {
             try {
-                HandlerThread handlerThread = f26128d;
+                HandlerThread handlerThread = f24822d;
                 if (handlerThread != null) {
                     return handlerThread;
                 }
-                HandlerThread handlerThread2 = new HandlerThread("GoogleApiHandler", f26126b);
-                f26128d = handlerThread2;
+                HandlerThread handlerThread2 = new HandlerThread("GoogleApiHandler", f24820b);
+                f24822d = handlerThread2;
                 handlerThread2.start();
-                return f26128d;
+                return f24822d;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -64,11 +64,11 @@ public abstract class h {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public abstract com.google.android.gms.common.b c(j1 j1Var, ServiceConnection serviceConnection, String str, Executor executor);
+    public abstract com.google.android.gms.common.b c(h1 h1Var, ServiceConnection serviceConnection, String str, Executor executor);
 
-    protected abstract void d(j1 j1Var, ServiceConnection serviceConnection, String str);
-
-    public final void e(String str, String str2, int i10, ServiceConnection serviceConnection, String str3, boolean z10) {
-        d(new j1(str, str2, 4225, z10), serviceConnection, str3);
+    public final void d(String str, String str2, int i10, ServiceConnection serviceConnection, String str3, boolean z10) {
+        e(new h1(str, str2, 4225, z10), serviceConnection, str3);
     }
+
+    protected abstract void e(h1 h1Var, ServiceConnection serviceConnection, String str);
 }

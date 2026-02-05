@@ -18,39 +18,39 @@ public class e extends a {
     private boolean I;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Drawable[] f9656t;
+    private final Drawable[] f10041t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final boolean f9657u;
+    private final boolean f10042u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final int f9658v;
+    private final int f10043v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final int f9659w;
+    private final int f10044w;
 
     /* renamed from: x  reason: collision with root package name */
-    int f9660x;
+    int f10045x;
 
     /* renamed from: y  reason: collision with root package name */
-    int f9661y;
+    int f10046y;
 
     /* renamed from: z  reason: collision with root package name */
-    long f9662z;
+    long f10047z;
 
     public e(Drawable[] drawableArr, boolean z10, int i10) {
         super(drawableArr);
         this.I = true;
         o8.j.j(drawableArr.length >= 1, "At least one layer required!");
-        this.f9656t = drawableArr;
+        this.f10041t = drawableArr;
         this.A = new int[drawableArr.length];
         this.B = new int[drawableArr.length];
         this.C = SetSpanOperation.SPAN_MAX_PRIORITY;
         this.D = new boolean[drawableArr.length];
         this.E = 0;
-        this.f9657u = z10;
-        this.f9658v = z10 ? 255 : 0;
-        this.f9659w = i10;
+        this.f10042u = z10;
+        this.f10043v = z10 ? 255 : 0;
+        this.f10044w = i10;
         q();
     }
 
@@ -78,7 +78,7 @@ public class e extends a {
 
     private void o() {
         int i10;
-        if (!this.G && (i10 = this.f9659w) >= 0) {
+        if (!this.G && (i10 = this.f10044w) >= 0) {
             boolean[] zArr = this.D;
             if (i10 < zArr.length && zArr[i10]) {
                 this.G = true;
@@ -91,7 +91,7 @@ public class e extends a {
     }
 
     private void p() {
-        if (this.H && this.f9660x == 2 && this.D[this.f9659w]) {
+        if (this.H && this.f10045x == 2 && this.D[this.f10044w]) {
             z9.m mVar = this.F;
             if (mVar != null) {
                 mVar.b();
@@ -101,19 +101,19 @@ public class e extends a {
     }
 
     private void q() {
-        this.f9660x = 2;
-        Arrays.fill(this.A, this.f9658v);
+        this.f10045x = 2;
+        Arrays.fill(this.A, this.f10043v);
         this.A[0] = 255;
-        Arrays.fill(this.B, this.f9658v);
+        Arrays.fill(this.B, this.f10043v);
         this.B[0] = 255;
-        Arrays.fill(this.D, this.f9657u);
+        Arrays.fill(this.D, this.f10042u);
         this.D[0] = true;
     }
 
     private boolean s(float f10) {
         int i10;
         boolean z10 = true;
-        for (int i11 = 0; i11 < this.f9656t.length; i11++) {
+        for (int i11 = 0; i11 < this.f10041t.length; i11++) {
             boolean z11 = this.D[i11];
             if (z11) {
                 i10 = 1;
@@ -151,7 +151,7 @@ public class e extends a {
     public void draw(android.graphics.Canvas r9) {
         /*
             r8 = this;
-            int r0 = r8.f9660x
+            int r0 = r8.f10045x
             r1 = 2
             r2 = 0
             r3 = 1
@@ -159,7 +159,7 @@ public class e extends a {
             if (r0 == r3) goto La
             goto L52
         La:
-            int r0 = r8.f9661y
+            int r0 = r8.f10046y
             if (r0 <= 0) goto L10
             r0 = r3
             goto L11
@@ -168,10 +168,10 @@ public class e extends a {
         L11:
             o8.j.i(r0)
             long r4 = r8.m()
-            long r6 = r8.f9662z
+            long r6 = r8.f10047z
             long r4 = r4 - r6
             float r0 = (float) r4
-            int r4 = r8.f9661y
+            int r4 = r8.f10046y
             float r4 = (float) r4
             float r0 = r0 / r4
             boolean r0 = r8.s(r0)
@@ -180,19 +180,19 @@ public class e extends a {
         L27:
             r1 = r3
         L28:
-            r8.f9660x = r1
+            r8.f10045x = r1
         L2a:
             r3 = r0
             goto L52
         L2c:
             int[] r0 = r8.B
             int[] r4 = r8.A
-            android.graphics.drawable.Drawable[] r5 = r8.f9656t
+            android.graphics.drawable.Drawable[] r5 = r8.f10041t
             int r5 = r5.length
             java.lang.System.arraycopy(r0, r2, r4, r2, r5)
             long r4 = r8.m()
-            r8.f9662z = r4
-            int r0 = r8.f9661y
+            r8.f10047z = r4
+            int r0 = r8.f10046y
             if (r0 != 0) goto L43
             r0 = 1065353216(0x3f800000, float:1.0)
             goto L44
@@ -206,10 +206,10 @@ public class e extends a {
         L4e:
             r1 = r3
         L4f:
-            r8.f9660x = r1
+            r8.f10045x = r1
             goto L2a
         L52:
-            android.graphics.drawable.Drawable[] r0 = r8.f9656t
+            android.graphics.drawable.Drawable[] r0 = r8.f10041t
             int r1 = r0.length
             if (r2 >= r1) goto L72
             r0 = r0[r2]
@@ -252,7 +252,7 @@ public class e extends a {
     }
 
     public void i() {
-        this.f9660x = 0;
+        this.f10045x = 0;
         Arrays.fill(this.D, true);
         invalidateSelf();
     }
@@ -265,21 +265,21 @@ public class e extends a {
     }
 
     public void j(int i10) {
-        this.f9660x = 0;
+        this.f10045x = 0;
         this.D[i10] = true;
         invalidateSelf();
     }
 
     public void k(int i10) {
-        this.f9660x = 0;
+        this.f10045x = 0;
         this.D[i10] = false;
         invalidateSelf();
     }
 
     public void l() {
         int i10;
-        this.f9660x = 2;
-        for (int i11 = 0; i11 < this.f9656t.length; i11++) {
+        this.f10045x = 2;
+        for (int i11 = 0; i11 < this.f10041t.length; i11++) {
             int[] iArr = this.B;
             if (this.D[i11]) {
                 i10 = SetSpanOperation.SPAN_MAX_PRIORITY;
@@ -296,9 +296,9 @@ public class e extends a {
     }
 
     public void r(int i10) {
-        this.f9661y = i10;
-        if (this.f9660x == 1) {
-            this.f9660x = 0;
+        this.f10046y = i10;
+        if (this.f10045x == 1) {
+            this.f10045x = 0;
         }
     }
 

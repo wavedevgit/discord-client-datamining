@@ -13,31 +13,31 @@ import android.widget.EditText;
 public class f extends s {
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f15075e;
+    private final int f15469e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f15076f;
+    private final int f15470f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final TimeInterpolator f15077g;
+    private final TimeInterpolator f15471g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final TimeInterpolator f15078h;
+    private final TimeInterpolator f15472h;
 
     /* renamed from: i  reason: collision with root package name */
-    private EditText f15079i;
+    private EditText f15473i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final View.OnClickListener f15080j;
+    private final View.OnClickListener f15474j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final View.OnFocusChangeListener f15081k;
+    private final View.OnFocusChangeListener f15475k;
 
     /* renamed from: l  reason: collision with root package name */
-    private AnimatorSet f15082l;
+    private AnimatorSet f15476l;
 
     /* renamed from: m  reason: collision with root package name */
-    private ValueAnimator f15083m;
+    private ValueAnimator f15477m;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -47,7 +47,7 @@ public class f extends s {
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            f.this.f15133b.a0(true);
+            f.this.f15527b.a0(true);
         }
     }
 
@@ -59,58 +59,58 @@ public class f extends s {
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            f.this.f15133b.a0(false);
+            f.this.f15527b.a0(false);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(r rVar) {
         super(rVar);
-        this.f15080j = new View.OnClickListener() { // from class: com.google.android.material.textfield.a
+        this.f15474j = new View.OnClickListener() { // from class: com.google.android.material.textfield.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 f.v(f.this, view);
             }
         };
-        this.f15081k = new View.OnFocusChangeListener() { // from class: com.google.android.material.textfield.b
+        this.f15475k = new View.OnFocusChangeListener() { // from class: com.google.android.material.textfield.b
             @Override // android.view.View.OnFocusChangeListener
             public final void onFocusChange(View view, boolean z10) {
                 r0.A(f.this.E());
             }
         };
-        this.f15075e = jh.g.f(rVar.getContext(), yg.b.L, 100);
-        this.f15076f = jh.g.f(rVar.getContext(), yg.b.L, 150);
-        this.f15077g = jh.g.g(rVar.getContext(), yg.b.Q, zg.a.f55941a);
-        this.f15078h = jh.g.g(rVar.getContext(), yg.b.P, zg.a.f55944d);
+        this.f15469e = kh.g.f(rVar.getContext(), zg.b.L, 100);
+        this.f15470f = kh.g.f(rVar.getContext(), zg.b.L, 150);
+        this.f15471g = kh.g.g(rVar.getContext(), zg.b.Q, ah.a.f625a);
+        this.f15472h = kh.g.g(rVar.getContext(), zg.b.P, ah.a.f628d);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void A(boolean z10) {
         boolean z11;
-        if (this.f15133b.F() == z10) {
+        if (this.f15527b.F() == z10) {
             z11 = true;
         } else {
             z11 = false;
         }
-        if (z10 && !this.f15082l.isRunning()) {
-            this.f15083m.cancel();
-            this.f15082l.start();
+        if (z10 && !this.f15476l.isRunning()) {
+            this.f15477m.cancel();
+            this.f15476l.start();
             if (z11) {
-                this.f15082l.end();
+                this.f15476l.end();
             }
         } else if (!z10) {
-            this.f15082l.cancel();
-            this.f15083m.start();
+            this.f15476l.cancel();
+            this.f15477m.start();
             if (z11) {
-                this.f15083m.end();
+                this.f15477m.end();
             }
         }
     }
 
     private ValueAnimator B(float... fArr) {
         ValueAnimator ofFloat = ValueAnimator.ofFloat(fArr);
-        ofFloat.setInterpolator(this.f15077g);
-        ofFloat.setDuration(this.f15075e);
+        ofFloat.setInterpolator(this.f15471g);
+        ofFloat.setDuration(this.f15469e);
         ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.material.textfield.c
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -122,8 +122,8 @@ public class f extends s {
 
     private ValueAnimator C() {
         ValueAnimator ofFloat = ValueAnimator.ofFloat(0.8f, 1.0f);
-        ofFloat.setInterpolator(this.f15078h);
-        ofFloat.setDuration(this.f15076f);
+        ofFloat.setInterpolator(this.f15472h);
+        ofFloat.setDuration(this.f15470f);
         ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.material.textfield.e
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -137,18 +137,18 @@ public class f extends s {
         ValueAnimator C = C();
         ValueAnimator B = B(0.0f, 1.0f);
         AnimatorSet animatorSet = new AnimatorSet();
-        this.f15082l = animatorSet;
+        this.f15476l = animatorSet;
         animatorSet.playTogether(C, B);
-        this.f15082l.addListener(new a());
+        this.f15476l.addListener(new a());
         ValueAnimator B2 = B(1.0f, 0.0f);
-        this.f15083m = B2;
+        this.f15477m = B2;
         B2.addListener(new b());
     }
 
     private boolean E() {
-        EditText editText = this.f15079i;
+        EditText editText = this.f15473i;
         if (editText != null) {
-            if ((editText.hasFocus() || this.f15135d.hasFocus()) && this.f15079i.getText().length() > 0) {
+            if ((editText.hasFocus() || this.f15529d.hasFocus()) && this.f15473i.getText().length() > 0) {
                 return true;
             }
             return false;
@@ -157,7 +157,7 @@ public class f extends s {
     }
 
     public static /* synthetic */ void v(f fVar, View view) {
-        EditText editText = fVar.f15079i;
+        EditText editText = fVar.f15473i;
         if (editText == null) {
             return;
         }
@@ -170,20 +170,20 @@ public class f extends s {
 
     public static /* synthetic */ void x(f fVar, ValueAnimator valueAnimator) {
         fVar.getClass();
-        fVar.f15135d.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
+        fVar.f15529d.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
     }
 
     public static /* synthetic */ void y(f fVar, ValueAnimator valueAnimator) {
         fVar.getClass();
         float floatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
-        fVar.f15135d.setScaleX(floatValue);
-        fVar.f15135d.setScaleY(floatValue);
+        fVar.f15529d.setScaleX(floatValue);
+        fVar.f15529d.setScaleY(floatValue);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public void a(Editable editable) {
-        if (this.f15133b.w() != null) {
+        if (this.f15527b.w() != null) {
             return;
         }
         A(E());
@@ -192,43 +192,43 @@ public class f extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public int c() {
-        return yg.i.f54225e;
+        return zg.i.f55683e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public int d() {
-        return yg.e.f54165j;
+        return zg.e.f55623j;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public View.OnFocusChangeListener e() {
-        return this.f15081k;
+        return this.f15475k;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public View.OnClickListener f() {
-        return this.f15080j;
+        return this.f15474j;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public View.OnFocusChangeListener g() {
-        return this.f15081k;
+        return this.f15475k;
     }
 
     @Override // com.google.android.material.textfield.s
     public void n(EditText editText) {
-        this.f15079i = editText;
-        this.f15132a.setEndIconVisible(E());
+        this.f15473i = editText;
+        this.f15526a.setEndIconVisible(E());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public void q(boolean z10) {
-        if (this.f15133b.w() == null) {
+        if (this.f15527b.w() == null) {
             return;
         }
         A(z10);
@@ -243,7 +243,7 @@ public class f extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public void u() {
-        EditText editText = this.f15079i;
+        EditText editText = this.f15473i;
         if (editText != null) {
             editText.post(new Runnable() { // from class: com.google.android.material.textfield.d
                 @Override // java.lang.Runnable

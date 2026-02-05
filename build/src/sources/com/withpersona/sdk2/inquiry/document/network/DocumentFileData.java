@@ -11,10 +11,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class DocumentFileData {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f18102a;
+    private final String f18508a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Attributes f18103b;
+    private final Attributes f18509b;
 
     @i(generateAdapter = true)
     @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0007\u0018\u00002\u00020\u0001B\u0017\u0012\u000e\u0010\u0004\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0002¢\u0006\u0004\b\u0005\u0010\u0006R\u001f\u0010\u0004\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\u0007\u0010\t¨\u0006\n"}, d2 = {"Lcom/withpersona/sdk2/inquiry/document/network/DocumentFileData$Attributes;", "", "", "Lcom/withpersona/sdk2/inquiry/document/network/DocumentFileData$RemoteDocumentFile;", "originals", "<init>", "(Ljava/util/List;)V", "a", "Ljava/util/List;", "()Ljava/util/List;", "document_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -22,14 +22,14 @@ public final class DocumentFileData {
     public static final class Attributes {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f18104a;
+        private final List f18510a;
 
         public Attributes(List list) {
-            this.f18104a = list;
+            this.f18510a = list;
         }
 
         public final List a() {
-            return this.f18104a;
+            return this.f18510a;
         }
     }
 
@@ -39,38 +39,38 @@ public final class DocumentFileData {
     public static final class RemoteDocumentFile {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f18105a;
+        private final String f18511a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f18106b;
+        private final String f18512b;
 
         public RemoteDocumentFile(String url, String filename) {
             Intrinsics.checkNotNullParameter(url, "url");
             Intrinsics.checkNotNullParameter(filename, "filename");
-            this.f18105a = url;
-            this.f18106b = filename;
+            this.f18511a = url;
+            this.f18512b = filename;
         }
 
         public final String a() {
-            return this.f18106b;
+            return this.f18512b;
         }
 
         public final String b() {
-            return this.f18105a;
+            return this.f18511a;
         }
     }
 
     public DocumentFileData(String id2, Attributes attributes) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        this.f18102a = id2;
-        this.f18103b = attributes;
+        this.f18508a = id2;
+        this.f18509b = attributes;
     }
 
     public final Attributes a() {
-        return this.f18103b;
+        return this.f18509b;
     }
 
     public final String b() {
-        return this.f18102a;
+        return this.f18508a;
     }
 }

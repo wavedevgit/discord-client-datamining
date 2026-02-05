@@ -6,82 +6,82 @@ import java.util.LinkedList;
 public class f {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final SparseArray f51242a = new SparseArray();
+    protected final SparseArray f51931a = new SparseArray();
 
     /* renamed from: b  reason: collision with root package name */
-    a f51243b;
+    a f51932b;
 
     /* renamed from: c  reason: collision with root package name */
-    a f51244c;
+    a f51933c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        a f51245a;
+        a f51934a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f51246b;
+        int f51935b;
 
         /* renamed from: c  reason: collision with root package name */
-        LinkedList f51247c;
+        LinkedList f51936c;
 
         /* renamed from: d  reason: collision with root package name */
-        a f51248d;
+        a f51937d;
 
         public String toString() {
-            return "LinkedEntry(key: " + this.f51246b + ")";
+            return "LinkedEntry(key: " + this.f51935b + ")";
         }
 
         private a(a aVar, int i10, LinkedList linkedList, a aVar2) {
-            this.f51245a = aVar;
-            this.f51246b = i10;
-            this.f51247c = linkedList;
-            this.f51248d = aVar2;
+            this.f51934a = aVar;
+            this.f51935b = i10;
+            this.f51936c = linkedList;
+            this.f51937d = aVar2;
         }
     }
 
     private void b(a aVar) {
-        if (aVar != null && aVar.f51247c.isEmpty()) {
+        if (aVar != null && aVar.f51936c.isEmpty()) {
             d(aVar);
-            this.f51242a.remove(aVar.f51246b);
+            this.f51931a.remove(aVar.f51935b);
         }
     }
 
     private void c(a aVar) {
-        if (this.f51243b == aVar) {
+        if (this.f51932b == aVar) {
             return;
         }
         d(aVar);
-        a aVar2 = this.f51243b;
+        a aVar2 = this.f51932b;
         if (aVar2 == null) {
-            this.f51243b = aVar;
-            this.f51244c = aVar;
+            this.f51932b = aVar;
+            this.f51933c = aVar;
             return;
         }
-        aVar.f51248d = aVar2;
-        aVar2.f51245a = aVar;
-        this.f51243b = aVar;
+        aVar.f51937d = aVar2;
+        aVar2.f51934a = aVar;
+        this.f51932b = aVar;
     }
 
     private synchronized void d(a aVar) {
         try {
-            a aVar2 = aVar.f51245a;
-            a aVar3 = aVar.f51248d;
+            a aVar2 = aVar.f51934a;
+            a aVar3 = aVar.f51937d;
             if (aVar2 != null) {
-                aVar2.f51248d = aVar3;
+                aVar2.f51937d = aVar3;
             }
             if (aVar3 != null) {
-                aVar3.f51245a = aVar2;
+                aVar3.f51934a = aVar2;
             }
-            aVar.f51245a = null;
-            aVar.f51248d = null;
-            if (aVar == this.f51243b) {
-                this.f51243b = aVar3;
+            aVar.f51934a = null;
+            aVar.f51937d = null;
+            if (aVar == this.f51932b) {
+                this.f51932b = aVar3;
             }
-            if (aVar == this.f51244c) {
-                this.f51244c = aVar2;
+            if (aVar == this.f51933c) {
+                this.f51933c = aVar2;
             }
         } catch (Throwable th2) {
             throw th2;
@@ -89,24 +89,24 @@ public class f {
     }
 
     public synchronized Object a(int i10) {
-        a aVar = (a) this.f51242a.get(i10);
+        a aVar = (a) this.f51931a.get(i10);
         if (aVar == null) {
             return null;
         }
-        Object pollFirst = aVar.f51247c.pollFirst();
+        Object pollFirst = aVar.f51936c.pollFirst();
         c(aVar);
         return pollFirst;
     }
 
     public synchronized void e(int i10, Object obj) {
         try {
-            a aVar = (a) this.f51242a.get(i10);
+            a aVar = (a) this.f51931a.get(i10);
             if (aVar == null) {
                 a aVar2 = new a(null, i10, new LinkedList(), null);
-                this.f51242a.put(i10, aVar2);
+                this.f51931a.put(i10, aVar2);
                 aVar = aVar2;
             }
-            aVar.f51247c.addLast(obj);
+            aVar.f51936c.addLast(obj);
             c(aVar);
         } catch (Throwable th2) {
             throw th2;
@@ -114,11 +114,11 @@ public class f {
     }
 
     public synchronized Object f() {
-        a aVar = this.f51244c;
+        a aVar = this.f51933c;
         if (aVar == null) {
             return null;
         }
-        Object pollLast = aVar.f51247c.pollLast();
+        Object pollLast = aVar.f51936c.pollLast();
         b(aVar);
         return pollLast;
     }

@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/referral_program/ReferralProgramUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function arg0() {
-        _fun55393: for (var _fun55393_ip = 0;;) switch (_fun55393_ip) {
+        _fun55417: for (var _fun55417_ip = 0;;) switch (_fun55417_ip) {
             case 0:
                 var6 = global;
                 var1 = var6.Date;
@@ -64,13 +64,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var3 / var2;
                 var5 = 24;
                 if (!(!(var8 > var5))) {
-                    _fun55393_ip = 254;
-                    continue _fun55393
+                    _fun55417_ip = 254;
+                    continue _fun55417
                 }
             case 75:
                 if (!(!(var8 >= var0))) {
-                    _fun55393_ip = 170;
-                    continue _fun55393
+                    _fun55417_ip = 170;
+                    continue _fun55417
                 }
             case 79:
                 var2 = _closure1_slot0;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10.bind(var11)(var9);
                 var0.numMinutes = var9;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun55393_ip = 252;
-                continue _fun55393;
+                _fun55417_ip = 252;
+                continue _fun55417;
             case 170:
                 var3 = _closure1_slot0;
                 var10 = _closure1_slot2;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.numHours = var10;
                 var0 = var4.bind(var9)(var3, var2);
             case 252:
-                _fun55393_ip = 340;
-                continue _fun55393;
+                _fun55417_ip = 340;
+                continue _fun55417;
             case 254:
                 var2 = _closure1_slot0;
                 var9 = _closure1_slot2;
@@ -174,14 +174,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.markReferralProgramBadgeAcknowledged = var4;
     var4 = function(arg0) { // Environment: var1
-        _fun55396: for (var _fun55396_ip = 0;;) switch (_fun55396_ip) {
+        _fun55420: for (var _fun55420_ip = 0;;) switch (_fun55420_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.trialOffer;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun55396_ip = 148;
-                    continue _fun55396
+                    _fun55420_ip = 148;
+                    continue _fun55420
                 }
             case 18:
                 var0 = var2.referrer_id;
@@ -219,15 +219,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new var10[var1](var9);
                 var1 = var1 instanceof Object ? var1 : var4;
                 if (!var0) {
-                    _fun55396_ip = 139;
-                    continue _fun55396
+                    _fun55420_ip = 139;
+                    continue _fun55420
                 }
             case 136:
                 var0 = var3;
             case 139:
                 if (!var0) {
-                    _fun55396_ip = 146;
-                    continue _fun55396
+                    _fun55420_ip = 146;
+                    continue _fun55420
                 }
             case 142:
                 var0 = var1 >= var2;
@@ -258,7 +258,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.markReferralProgramPopoverSeen = var4;
     var2.isReferralProgramPopoverSeen = var3;
     var1 = function() { // Environment: var1
-        _fun55398: for (var _fun55398_ip = 0;;) switch (_fun55398_ip) {
+        _fun55422: for (var _fun55422_ip = 0;;) switch (_fun55422_ip) {
             case 0:
                 var6 = _closure1_slot0;
                 var7 = _closure1_slot2;
@@ -286,23 +286,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var2 = var5.bind(var6)(var4, var2);
                 if (!var0) {
-                    _fun55398_ip = 95;
-                    continue _fun55398
+                    _fun55422_ip = 95;
+                    continue _fun55422
                 }
             case 91:
                 var0 = var3 === var1;
             case 95:
                 if (!var0) {
-                    _fun55398_ip = 104;
-                    continue _fun55398
+                    _fun55422_ip = 104;
+                    continue _fun55422
                 }
             case 98:
                 var1 = null;
                 var0 = var1 !== var2;
             case 104:
                 if (!var0) {
-                    _fun55398_ip = 113;
-                    continue _fun55398
+                    _fun55422_ip = 113;
+                    continue _fun55422
                 }
             case 107:
                 var1 = 0;
@@ -313,4 +313,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsReferralProgramPopoverShowable = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6642, 667, 1234, 3212, 1358, 21, 6650, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6662, 667, 1234, 3212, 1358, 21, 6670, 566, 2]);

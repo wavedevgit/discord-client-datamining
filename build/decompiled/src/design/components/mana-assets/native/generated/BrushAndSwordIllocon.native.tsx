@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.BrushAndSwordIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6016, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6020, 2]);

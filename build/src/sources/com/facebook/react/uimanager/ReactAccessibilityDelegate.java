@@ -603,12 +603,12 @@ public class ReactAccessibilityDelegate extends ExploreByTouchHelper {
         sActionIdMap = hashMap;
         sCounter = 1056964608;
         delimiterLength = 2;
-        hashMap.put("activate", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3316i.b()));
-        hashMap.put("longpress", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3317j.b()));
-        hashMap.put("increment", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3324q.b()));
-        hashMap.put("decrement", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3325r.b()));
-        hashMap.put("expand", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3330w.b()));
-        hashMap.put(StackTraceHelper.COLLAPSE_KEY, Integer.valueOf(AccessibilityNodeInfoCompat.a.f3331x.b()));
+        hashMap.put("activate", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3428i.b()));
+        hashMap.put("longpress", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3429j.b()));
+        hashMap.put("increment", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3436q.b()));
+        hashMap.put("decrement", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3437r.b()));
+        hashMap.put("expand", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3442w.b()));
+        hashMap.put(StackTraceHelper.COLLAPSE_KEY, Integer.valueOf(AccessibilityNodeInfoCompat.a.f3443x.b()));
     }
 
     public ReactAccessibilityDelegate(View view, boolean z10, int i10) {
@@ -1066,7 +1066,7 @@ public class ReactAccessibilityDelegate extends ExploreByTouchHelper {
             AccessibilityRole accessibilityRole = (AccessibilityRole) view.getTag(R.id.accessibility_role);
             ReadableMap readableMap = (ReadableMap) view.getTag(R.id.accessibility_value);
             if (accessibilityRole == AccessibilityRole.ADJUSTABLE) {
-                if (i10 == AccessibilityNodeInfoCompat.a.f3324q.b() || i10 == AccessibilityNodeInfoCompat.a.f3325r.b()) {
+                if (i10 == AccessibilityNodeInfoCompat.a.f3436q.b() || i10 == AccessibilityNodeInfoCompat.a.f3437r.b()) {
                     if (readableMap != null && !readableMap.hasKey("text")) {
                         scheduleAccessibilityEventSender(view);
                     }

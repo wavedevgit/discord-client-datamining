@@ -122,13 +122,13 @@ public class DrawerLayout extends ViewGroup {
     public class ViewDragCallback extends ViewDragHelper.c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f3867a;
+        private final int f3979a;
 
         /* renamed from: b  reason: collision with root package name */
-        private ViewDragHelper f3868b;
+        private ViewDragHelper f3980b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Runnable f3869c = new a();
+        private final Runnable f3981c = new a();
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Runnable {
@@ -142,12 +142,12 @@ public class DrawerLayout extends ViewGroup {
         }
 
         ViewDragCallback(int i10) {
-            this.f3867a = i10;
+            this.f3979a = i10;
         }
 
         private void n() {
             int i10 = 3;
-            if (this.f3867a == 3) {
+            if (this.f3979a == 3) {
                 i10 = 5;
             }
             View findDrawerWithGravity = DrawerLayout.this.findDrawerWithGravity(i10);
@@ -187,7 +187,7 @@ public class DrawerLayout extends ViewGroup {
                 findDrawerWithGravity = DrawerLayout.this.findDrawerWithGravity(5);
             }
             if (findDrawerWithGravity != null && DrawerLayout.this.getDrawerLockMode(findDrawerWithGravity) == 0) {
-                this.f3868b.b(findDrawerWithGravity, i11);
+                this.f3980b.b(findDrawerWithGravity, i11);
             }
         }
 
@@ -198,18 +198,18 @@ public class DrawerLayout extends ViewGroup {
 
         @Override // androidx.customview.widget.ViewDragHelper.c
         public void h(int i10, int i11) {
-            DrawerLayout.this.postDelayed(this.f3869c, 160L);
+            DrawerLayout.this.postDelayed(this.f3981c, 160L);
         }
 
         @Override // androidx.customview.widget.ViewDragHelper.c
         public void i(View view, int i10) {
-            ((d) view.getLayoutParams()).f3878c = false;
+            ((d) view.getLayoutParams()).f3990c = false;
             n();
         }
 
         @Override // androidx.customview.widget.ViewDragHelper.c
         public void j(int i10) {
-            DrawerLayout.this.updateDrawerState(i10, this.f3868b.v());
+            DrawerLayout.this.updateDrawerState(i10, this.f3980b.v());
         }
 
         @Override // androidx.customview.widget.ViewDragHelper.c
@@ -252,13 +252,13 @@ public class DrawerLayout extends ViewGroup {
                 }
                 i10 = width2;
             }
-            this.f3868b.O(i10, view.getTop());
+            this.f3980b.O(i10, view.getTop());
             DrawerLayout.this.invalidate();
         }
 
         @Override // androidx.customview.widget.ViewDragHelper.c
         public boolean m(View view, int i10) {
-            if (DrawerLayout.this.isDrawerView(view) && DrawerLayout.this.checkDrawerViewAbsoluteGravity(view, this.f3867a) && DrawerLayout.this.getDrawerLockMode(view) == 0) {
+            if (DrawerLayout.this.isDrawerView(view) && DrawerLayout.this.checkDrawerViewAbsoluteGravity(view, this.f3979a) && DrawerLayout.this.getDrawerLockMode(view) == 0) {
                 return true;
             }
             return false;
@@ -268,9 +268,9 @@ public class DrawerLayout extends ViewGroup {
             boolean z10;
             View findDrawerWithGravity;
             int width;
-            int x10 = this.f3868b.x();
+            int x10 = this.f3980b.x();
             int i10 = 0;
-            if (this.f3867a == 3) {
+            if (this.f3979a == 3) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -287,8 +287,8 @@ public class DrawerLayout extends ViewGroup {
             }
             if (findDrawerWithGravity != null) {
                 if (((z10 && findDrawerWithGravity.getLeft() < width) || (!z10 && findDrawerWithGravity.getLeft() > width)) && DrawerLayout.this.getDrawerLockMode(findDrawerWithGravity) == 0) {
-                    this.f3868b.Q(findDrawerWithGravity, width, findDrawerWithGravity.getTop());
-                    ((d) findDrawerWithGravity.getLayoutParams()).f3878c = true;
+                    this.f3980b.Q(findDrawerWithGravity, width, findDrawerWithGravity.getTop());
+                    ((d) findDrawerWithGravity.getLayoutParams()).f3990c = true;
                     DrawerLayout.this.invalidate();
                     n();
                     DrawerLayout.this.cancelChildViewTouch();
@@ -297,11 +297,11 @@ public class DrawerLayout extends ViewGroup {
         }
 
         public void p() {
-            DrawerLayout.this.removeCallbacks(this.f3869c);
+            DrawerLayout.this.removeCallbacks(this.f3981c);
         }
 
         public void q(ViewDragHelper viewDragHelper) {
-            this.f3868b = viewDragHelper;
+            this.f3980b = viewDragHelper;
         }
     }
 
@@ -343,7 +343,7 @@ public class DrawerLayout extends ViewGroup {
     class c extends androidx.core.view.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Rect f3874a = new Rect();
+        private final Rect f3986a = new Rect();
 
         c() {
         }
@@ -359,7 +359,7 @@ public class DrawerLayout extends ViewGroup {
         }
 
         private void d(AccessibilityNodeInfoCompat accessibilityNodeInfoCompat, AccessibilityNodeInfoCompat accessibilityNodeInfoCompat2) {
-            Rect rect = this.f3874a;
+            Rect rect = this.f3986a;
             accessibilityNodeInfoCompat2.n(rect);
             accessibilityNodeInfoCompat.t0(rect);
             accessibilityNodeInfoCompat.f1(accessibilityNodeInfoCompat2.i0());
@@ -416,8 +416,8 @@ public class DrawerLayout extends ViewGroup {
             accessibilityNodeInfoCompat.w0(DrawerLayout.ACCESSIBILITY_CLASS_NAME);
             accessibilityNodeInfoCompat.E0(false);
             accessibilityNodeInfoCompat.F0(false);
-            accessibilityNodeInfoCompat.o0(AccessibilityNodeInfoCompat.a.f3312e);
-            accessibilityNodeInfoCompat.o0(AccessibilityNodeInfoCompat.a.f3313f);
+            accessibilityNodeInfoCompat.o0(AccessibilityNodeInfoCompat.a.f3424e);
+            accessibilityNodeInfoCompat.o0(AccessibilityNodeInfoCompat.a.f3425f);
         }
 
         @Override // androidx.core.view.a
@@ -484,7 +484,7 @@ public class DrawerLayout extends ViewGroup {
     private boolean d() {
         int childCount = getChildCount();
         for (int i10 = 0; i10 < childCount; i10++) {
-            if (((d) getChildAt(i10).getLayoutParams()).f3878c) {
+            if (((d) getChildAt(i10).getLayoutParams()).f3990c) {
                 return true;
             }
         }
@@ -574,7 +574,7 @@ public class DrawerLayout extends ViewGroup {
     }
 
     private void k(View view) {
-        AccessibilityNodeInfoCompat.a aVar = AccessibilityNodeInfoCompat.a.f3332y;
+        AccessibilityNodeInfoCompat.a aVar = AccessibilityNodeInfoCompat.a.f3444y;
         h0.h0(view, aVar.b());
         if (isDrawerOpen(view) && getDrawerLockMode(view) != 2) {
             h0.j0(view, aVar, null, this.mActionDismiss);
@@ -691,7 +691,7 @@ public class DrawerLayout extends ViewGroup {
         int childCount = getChildCount();
         float f10 = 0.0f;
         for (int i10 = 0; i10 < childCount; i10++) {
-            f10 = Math.max(f10, ((d) getChildAt(i10).getLayoutParams()).f3877b);
+            f10 = Math.max(f10, ((d) getChildAt(i10).getLayoutParams()).f3989b);
         }
         this.mScrimOpacity = f10;
         boolean m10 = this.mLeftDragger.m(true);
@@ -725,8 +725,8 @@ public class DrawerLayout extends ViewGroup {
     void dispatchOnDrawerClosed(View view) {
         View rootView;
         d dVar = (d) view.getLayoutParams();
-        if ((dVar.f3879d & 1) == 1) {
-            dVar.f3879d = 0;
+        if ((dVar.f3991d & 1) == 1) {
+            dVar.f3991d = 0;
             List<DrawerListener> list = this.mListeners;
             if (list != null) {
                 for (int size = list.size() - 1; size >= 0; size--) {
@@ -743,8 +743,8 @@ public class DrawerLayout extends ViewGroup {
 
     void dispatchOnDrawerOpened(View view) {
         d dVar = (d) view.getLayoutParams();
-        if ((dVar.f3879d & 1) == 0) {
-            dVar.f3879d = 1;
+        if ((dVar.f3991d & 1) == 0) {
+            dVar.f3991d = 1;
             List<DrawerListener> list = this.mListeners;
             if (list != null) {
                 for (int size = list.size() - 1; size >= 0; size--) {
@@ -842,7 +842,7 @@ public class DrawerLayout extends ViewGroup {
         int childCount = getChildCount();
         for (int i10 = 0; i10 < childCount; i10++) {
             View childAt = getChildAt(i10);
-            if ((((d) childAt.getLayoutParams()).f3879d & 1) == 1) {
+            if ((((d) childAt.getLayoutParams()).f3991d & 1) == 1) {
                 return childAt;
             }
         }
@@ -942,11 +942,11 @@ public class DrawerLayout extends ViewGroup {
     }
 
     int getDrawerViewAbsoluteGravity(View view) {
-        return j.b(((d) view.getLayoutParams()).f3876a, h0.z(this));
+        return j.b(((d) view.getLayoutParams()).f3988a, h0.z(this));
     }
 
     float getDrawerViewOffset(View view) {
-        return ((d) view.getLayoutParams()).f3877b;
+        return ((d) view.getLayoutParams()).f3989b;
     }
 
     public Drawable getStatusBarBackgroundDrawable() {
@@ -954,7 +954,7 @@ public class DrawerLayout extends ViewGroup {
     }
 
     boolean isContentView(View view) {
-        if (((d) view.getLayoutParams()).f3876a == 0) {
+        if (((d) view.getLayoutParams()).f3988a == 0) {
             return true;
         }
         return false;
@@ -962,13 +962,13 @@ public class DrawerLayout extends ViewGroup {
 
     public boolean isDrawerOpen(@NonNull View view) {
         if (isDrawerView(view)) {
-            return (((d) view.getLayoutParams()).f3879d & 1) == 1;
+            return (((d) view.getLayoutParams()).f3991d & 1) == 1;
         }
         throw new IllegalArgumentException("View " + view + " is not a drawer");
     }
 
     boolean isDrawerView(View view) {
-        int b10 = j.b(((d) view.getLayoutParams()).f3876a, h0.z(view));
+        int b10 = j.b(((d) view.getLayoutParams()).f3988a, h0.z(view));
         if ((b10 & 3) != 0 || (b10 & 5) != 0) {
             return true;
         }
@@ -977,7 +977,7 @@ public class DrawerLayout extends ViewGroup {
 
     public boolean isDrawerVisible(@NonNull View view) {
         if (isDrawerView(view)) {
-            return ((d) view.getLayoutParams()).f3877b > 0.0f;
+            return ((d) view.getLayoutParams()).f3989b > 0.0f;
         }
         throw new IllegalArgumentException("View " + view + " is not a drawer");
     }
@@ -1155,19 +1155,19 @@ public class DrawerLayout extends ViewGroup {
                     int measuredHeight = childAt.getMeasuredHeight();
                     if (checkDrawerViewAbsoluteGravity(childAt, 3)) {
                         float f11 = measuredWidth;
-                        i15 = (-measuredWidth) + ((int) (dVar.f3877b * f11));
+                        i15 = (-measuredWidth) + ((int) (dVar.f3989b * f11));
                         f10 = (measuredWidth + i15) / f11;
                     } else {
                         float f12 = measuredWidth;
                         f10 = (i17 - i14) / f12;
-                        i15 = i17 - ((int) (dVar.f3877b * f12));
+                        i15 = i17 - ((int) (dVar.f3989b * f12));
                     }
-                    if (f10 != dVar.f3877b) {
+                    if (f10 != dVar.f3989b) {
                         z11 = z12;
                     } else {
                         z11 = false;
                     }
-                    int i20 = dVar.f3876a & 112;
+                    int i20 = dVar.f3988a & 112;
                     if (i20 != 16) {
                         if (i20 != 80) {
                             int i21 = ((ViewGroup.MarginLayoutParams) dVar).topMargin;
@@ -1194,7 +1194,7 @@ public class DrawerLayout extends ViewGroup {
                     if (z11) {
                         setDrawerViewOffset(childAt, f10);
                     }
-                    if (dVar.f3877b > 0.0f) {
+                    if (dVar.f3989b > 0.0f) {
                         i16 = 0;
                     } else {
                         i16 = 4;
@@ -1210,9 +1210,9 @@ public class DrawerLayout extends ViewGroup {
         if (sEdgeSizeUsingSystemGestureInsets && (rootWindowInsets = getRootWindowInsets()) != null) {
             Insets m10 = WindowInsetsCompat.C(rootWindowInsets).m();
             ViewDragHelper viewDragHelper = this.mLeftDragger;
-            viewDragHelper.L(Math.max(viewDragHelper.w(), m10.f3163a));
+            viewDragHelper.L(Math.max(viewDragHelper.w(), m10.f3275a));
             ViewDragHelper viewDragHelper2 = this.mRightDragger;
-            viewDragHelper2.L(Math.max(viewDragHelper2.w(), m10.f3165c));
+            viewDragHelper2.L(Math.max(viewDragHelper2.w(), m10.f3277c));
         }
         this.mInLayout = false;
         this.mFirstLayout = false;
@@ -1255,7 +1255,7 @@ public class DrawerLayout extends ViewGroup {
             if (childAt.getVisibility() != 8) {
                 d dVar = (d) childAt.getLayoutParams();
                 if (z10) {
-                    int b10 = j.b(dVar.f3876a, z12);
+                    int b10 = j.b(dVar.f3988a, z12);
                     if (h0.w(childAt)) {
                         WindowInsets windowInsets = (WindowInsets) this.mLastInsets;
                         if (b10 == 3) {
@@ -1317,23 +1317,23 @@ public class DrawerLayout extends ViewGroup {
         }
         e eVar = (e) parcelable;
         super.onRestoreInstanceState(eVar.a());
-        int i10 = eVar.f3880i;
+        int i10 = eVar.f3992i;
         if (i10 != 0 && (findDrawerWithGravity = findDrawerWithGravity(i10)) != null) {
             openDrawer(findDrawerWithGravity);
         }
-        int i11 = eVar.f3881o;
+        int i11 = eVar.f3993o;
         if (i11 != 3) {
             setDrawerLockMode(i11, 3);
         }
-        int i12 = eVar.f3882p;
+        int i12 = eVar.f3994p;
         if (i12 != 3) {
             setDrawerLockMode(i12, 5);
         }
-        int i13 = eVar.f3883q;
+        int i13 = eVar.f3995q;
         if (i13 != 3) {
             setDrawerLockMode(i13, 8388611);
         }
-        int i14 = eVar.f3884r;
+        int i14 = eVar.f3996r;
         if (i14 != 3) {
             setDrawerLockMode(i14, 8388613);
         }
@@ -1351,7 +1351,7 @@ public class DrawerLayout extends ViewGroup {
         int childCount = getChildCount();
         for (int i10 = 0; i10 < childCount; i10++) {
             d dVar = (d) getChildAt(i10).getLayoutParams();
-            int i11 = dVar.f3879d;
+            int i11 = dVar.f3991d;
             boolean z11 = true;
             if (i11 == 1) {
                 z10 = true;
@@ -1362,14 +1362,14 @@ public class DrawerLayout extends ViewGroup {
                 z11 = false;
             }
             if (z10 || z11) {
-                eVar.f3880i = dVar.f3876a;
+                eVar.f3992i = dVar.f3988a;
                 break;
             }
         }
-        eVar.f3881o = this.mLockModeLeft;
-        eVar.f3882p = this.mLockModeRight;
-        eVar.f3883q = this.mLockModeStart;
-        eVar.f3884r = this.mLockModeEnd;
+        eVar.f3993o = this.mLockModeLeft;
+        eVar.f3994p = this.mLockModeRight;
+        eVar.f3995q = this.mLockModeStart;
+        eVar.f3996r = this.mLockModeEnd;
         return eVar;
     }
 
@@ -1547,10 +1547,10 @@ public class DrawerLayout extends ViewGroup {
 
     void setDrawerViewOffset(View view, float f10) {
         d dVar = (d) view.getLayoutParams();
-        if (f10 == dVar.f3877b) {
+        if (f10 == dVar.f3989b) {
             return;
         }
-        dVar.f3877b = f10;
+        dVar.f3989b = f10;
         dispatchOnDrawerSlide(view, f10);
     }
 
@@ -1582,7 +1582,7 @@ public class DrawerLayout extends ViewGroup {
             i11 = 1;
         }
         if (view != null && i10 == 0) {
-            float f10 = ((d) view.getLayoutParams()).f3877b;
+            float f10 = ((d) view.getLayoutParams()).f3989b;
             if (f10 == 0.0f) {
                 dispatchOnDrawerClosed(view);
             } else if (f10 == 1.0f) {
@@ -1608,10 +1608,10 @@ public class DrawerLayout extends ViewGroup {
         if (isDrawerView(view)) {
             d dVar = (d) view.getLayoutParams();
             if (this.mFirstLayout) {
-                dVar.f3877b = 0.0f;
-                dVar.f3879d = 0;
+                dVar.f3989b = 0.0f;
+                dVar.f3991d = 0;
             } else if (z10) {
-                dVar.f3879d |= 4;
+                dVar.f3991d |= 4;
                 if (checkDrawerViewAbsoluteGravity(view, 3)) {
                     this.mLeftDragger.Q(view, -view.getWidth(), view.getTop());
                 } else {
@@ -1635,7 +1635,7 @@ public class DrawerLayout extends ViewGroup {
         for (int i10 = 0; i10 < childCount; i10++) {
             View childAt = getChildAt(i10);
             d dVar = (d) childAt.getLayoutParams();
-            if (isDrawerView(childAt) && (!z10 || dVar.f3878c)) {
+            if (isDrawerView(childAt) && (!z10 || dVar.f3990c)) {
                 int width = childAt.getWidth();
                 if (checkDrawerViewAbsoluteGravity(childAt, 3)) {
                     Q = this.mLeftDragger.Q(childAt, -width, childAt.getTop());
@@ -1643,7 +1643,7 @@ public class DrawerLayout extends ViewGroup {
                     Q = this.mRightDragger.Q(childAt, getWidth(), childAt.getTop());
                 }
                 z11 |= Q;
-                dVar.f3878c = false;
+                dVar.f3990c = false;
             }
         }
         this.mLeftCallback.p();
@@ -1657,12 +1657,12 @@ public class DrawerLayout extends ViewGroup {
         if (isDrawerView(view)) {
             d dVar = (d) view.getLayoutParams();
             if (this.mFirstLayout) {
-                dVar.f3877b = 1.0f;
-                dVar.f3879d = 1;
+                dVar.f3989b = 1.0f;
+                dVar.f3991d = 1;
                 l(view, true);
                 k(view);
             } else if (z10) {
-                dVar.f3879d |= 2;
+                dVar.f3991d |= 2;
                 if (checkDrawerViewAbsoluteGravity(view, 3)) {
                     this.mLeftDragger.Q(view, 0, view.getTop());
                 } else {
@@ -1786,44 +1786,44 @@ public class DrawerLayout extends ViewGroup {
     public static class d extends ViewGroup.MarginLayoutParams {
 
         /* renamed from: a  reason: collision with root package name */
-        public int f3876a;
+        public int f3988a;
 
         /* renamed from: b  reason: collision with root package name */
-        float f3877b;
+        float f3989b;
 
         /* renamed from: c  reason: collision with root package name */
-        boolean f3878c;
+        boolean f3990c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f3879d;
+        int f3991d;
 
         public d(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            this.f3876a = 0;
+            this.f3988a = 0;
             TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, DrawerLayout.LAYOUT_ATTRS);
-            this.f3876a = obtainStyledAttributes.getInt(0, 0);
+            this.f3988a = obtainStyledAttributes.getInt(0, 0);
             obtainStyledAttributes.recycle();
         }
 
         public d(int i10, int i11) {
             super(i10, i11);
-            this.f3876a = 0;
+            this.f3988a = 0;
         }
 
         public d(d dVar) {
             super((ViewGroup.MarginLayoutParams) dVar);
-            this.f3876a = 0;
-            this.f3876a = dVar.f3876a;
+            this.f3988a = 0;
+            this.f3988a = dVar.f3988a;
         }
 
         public d(ViewGroup.LayoutParams layoutParams) {
             super(layoutParams);
-            this.f3876a = 0;
+            this.f3988a = 0;
         }
 
         public d(ViewGroup.MarginLayoutParams marginLayoutParams) {
             super(marginLayoutParams);
-            this.f3876a = 0;
+            this.f3988a = 0;
         }
     }
 
@@ -1846,19 +1846,19 @@ public class DrawerLayout extends ViewGroup {
         public static final Parcelable.Creator<e> CREATOR = new a();
 
         /* renamed from: i  reason: collision with root package name */
-        int f3880i;
+        int f3992i;
 
         /* renamed from: o  reason: collision with root package name */
-        int f3881o;
+        int f3993o;
 
         /* renamed from: p  reason: collision with root package name */
-        int f3882p;
+        int f3994p;
 
         /* renamed from: q  reason: collision with root package name */
-        int f3883q;
+        int f3995q;
 
         /* renamed from: r  reason: collision with root package name */
-        int f3884r;
+        int f3996r;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Parcelable.ClassLoaderCreator {
@@ -1886,27 +1886,27 @@ public class DrawerLayout extends ViewGroup {
 
         public e(Parcel parcel, ClassLoader classLoader) {
             super(parcel, classLoader);
-            this.f3880i = 0;
-            this.f3880i = parcel.readInt();
-            this.f3881o = parcel.readInt();
-            this.f3882p = parcel.readInt();
-            this.f3883q = parcel.readInt();
-            this.f3884r = parcel.readInt();
+            this.f3992i = 0;
+            this.f3992i = parcel.readInt();
+            this.f3993o = parcel.readInt();
+            this.f3994p = parcel.readInt();
+            this.f3995q = parcel.readInt();
+            this.f3996r = parcel.readInt();
         }
 
         @Override // u2.a, android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
             super.writeToParcel(parcel, i10);
-            parcel.writeInt(this.f3880i);
-            parcel.writeInt(this.f3881o);
-            parcel.writeInt(this.f3882p);
-            parcel.writeInt(this.f3883q);
-            parcel.writeInt(this.f3884r);
+            parcel.writeInt(this.f3992i);
+            parcel.writeInt(this.f3993o);
+            parcel.writeInt(this.f3994p);
+            parcel.writeInt(this.f3995q);
+            parcel.writeInt(this.f3996r);
         }
 
         public e(Parcelable parcelable) {
             super(parcelable);
-            this.f3880i = 0;
+            this.f3992i = 0;
         }
     }
 
@@ -1916,14 +1916,14 @@ public class DrawerLayout extends ViewGroup {
 
     public int getDrawerLockMode(@NonNull View view) {
         if (isDrawerView(view)) {
-            return getDrawerLockMode(((d) view.getLayoutParams()).f3876a);
+            return getDrawerLockMode(((d) view.getLayoutParams()).f3988a);
         }
         throw new IllegalArgumentException("View " + view + " is not a drawer");
     }
 
     public void setDrawerLockMode(int i10, @NonNull View view) {
         if (isDrawerView(view)) {
-            setDrawerLockMode(i10, ((d) view.getLayoutParams()).f3876a);
+            setDrawerLockMode(i10, ((d) view.getLayoutParams()).f3988a);
             return;
         }
         throw new IllegalArgumentException("View " + view + " is not a drawer with appropriate layout_gravity");

@@ -1,36 +1,52 @@
 package cv;
 
-import android.os.Build;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Proxy;
-import java.util.Collection;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
-    public static Object a(Class cls, InvocationHandler invocationHandler) {
-        if (invocationHandler == null) {
+public interface a {
+
+    /* renamed from: cv.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0279a {
+        private static Double a(a aVar, Object obj) {
+            if (obj instanceof Number) {
+                return Double.valueOf(((Number) obj).doubleValue());
+            }
+            if (obj instanceof String) {
+                return StringsKt.p((String) obj);
+            }
+            if (obj instanceof List) {
+                return b(aVar, (List) obj);
+            }
+            if (obj instanceof Boolean) {
+                return Double.valueOf(vv.b.a(((Boolean) obj).booleanValue()));
+            }
+            if (obj == null) {
+                return Double.valueOf(0.0d);
+            }
             return null;
         }
-        return cls.cast(Proxy.newProxyInstance(a.class.getClassLoader(), new Class[]{cls}, invocationHandler));
-    }
 
-    public static boolean b(Collection collection, String str) {
-        if (!collection.contains(str)) {
-            if (c()) {
-                if (!collection.contains(str + ":dev")) {
-                    return false;
+        private static Double b(a aVar, List list) {
+            int size = list.size();
+            if (size != 0) {
+                if (size != 1) {
+                    return null;
                 }
-                return true;
+                return a(aVar, CollectionsKt.o0(list));
             }
-            return false;
+            return Double.valueOf(0.0d);
         }
-        return true;
-    }
 
-    private static boolean c() {
-        String str = Build.TYPE;
-        if (!"eng".equals(str) && !"userdebug".equals(str)) {
-            return false;
+        public static List c(a aVar, Object obj) {
+            List<Object> c10 = vv.a.c(obj);
+            ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
+            for (Object obj2 : c10) {
+                arrayList.add(a(aVar, obj2));
+            }
+            return arrayList;
         }
-        return true;
     }
 }

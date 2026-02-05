@@ -1,14 +1,14 @@
 package kotlinx.coroutines;
 
-import js.n0;
 import kotlin.coroutines.CoroutineContext;
+import ms.n0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface k {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
         public static n0 a(k kVar, long j10, Runnable runnable, CoroutineContext coroutineContext) {
-            return js.f0.a().D0(j10, runnable, coroutineContext);
+            return ms.f0.a().D0(j10, runnable, coroutineContext);
         }
     }
 

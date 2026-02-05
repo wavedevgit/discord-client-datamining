@@ -2,8 +2,8 @@ package tc;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface m {
 
-    /* renamed from: l  reason: collision with root package name */
-    public static final m f49969l = new a();
+    /* renamed from: m  reason: collision with root package name */
+    public static final m f50574m = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements m {

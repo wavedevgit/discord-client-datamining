@@ -8,6 +8,6 @@ public final class JsonReaderUtilsKt {
         if (mVar.E() != m.c.NULL) {
             return mVar.f1();
         }
-        return (String) mVar.n();
+        return (String) mVar.m();
     }
 }

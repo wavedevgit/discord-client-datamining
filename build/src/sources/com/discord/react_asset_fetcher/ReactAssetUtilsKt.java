@@ -8,10 +8,10 @@ import com.discord.misc.utilities.coroutines.CoroutineViewUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.react.views.imagehelper.ImageSource;
 import com.google.android.material.button.MaterialButton;
-import js.g;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
+import ms.g;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000.\n\u0000\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\u001a\u0012\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0001\u001a\u0016\u0010\u0004\u001a\u0004\u0018\u00010\u0001*\u00020\u00022\b\u0010\u0005\u001a\u0004\u0018\u00010\u0001\u001a\u0014\u0010\u0006\u001a\u00020\u0007*\u00020\b2\b\u0010\u0005\u001a\u0004\u0018\u00010\u0001\u001a\u0012\u0010\t\u001a\u00020\u0007*\u00020\b2\u0006\u0010\n\u001a\u00020\u000b\u001a\u0012\u0010\f\u001a\u00020\u0007*\u00020\b2\u0006\u0010\u0003\u001a\u00020\u0001\u001a\u001c\u0010\r\u001a\u00020\u0007*\u00020\u000e2\u0006\u0010\u0003\u001a\u00020\u00012\b\b\u0001\u0010\u000f\u001a\u00020\u0010¨\u0006\u0011"}, d2 = {"getReactImageUrl", "", "Landroid/content/Context;", "assetUrl", "inflateUrl", "url", "setOptionalReactImageUrl", "", "Lcom/facebook/drawee/view/SimpleDraweeView;", "setReactAsset", "asset", "Lcom/discord/react_asset_fetcher/ReactAsset;", "setReactImageUrl", "setReactIcon", "Lcom/google/android/material/button/MaterialButton;", "iconSize", "", "react_asset_fetcher_release"}, k = 2, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */

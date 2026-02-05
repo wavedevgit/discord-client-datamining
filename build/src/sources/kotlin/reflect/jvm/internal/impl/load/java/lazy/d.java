@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.load.java.structure.JavaPackage;
 public class d implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaPackageFragmentProvider f33343d;
+    private final LazyJavaPackageFragmentProvider f32867d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JavaPackage f33344e;
+    private final JavaPackage f32868e;
 
     public d(LazyJavaPackageFragmentProvider lazyJavaPackageFragmentProvider, JavaPackage javaPackage) {
-        this.f33343d = lazyJavaPackageFragmentProvider;
-        this.f33344e = javaPackage;
+        this.f32867d = lazyJavaPackageFragmentProvider;
+        this.f32868e = javaPackage;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         LazyJavaPackageFragment c10;
-        c10 = LazyJavaPackageFragmentProvider.c(this.f33343d, this.f33344e);
+        c10 = LazyJavaPackageFragmentProvider.c(this.f32867d, this.f32868e);
         return c10;
     }
 }

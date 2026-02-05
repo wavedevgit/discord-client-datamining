@@ -13,45 +13,45 @@ import java.io.Closeable;
 public final class ActivityBreadcrumbsIntegration implements io.sentry.k1, Closeable, Application.ActivityLifecycleCallbacks {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Application f28680d;
+    private final Application f27738d;
 
     /* renamed from: e  reason: collision with root package name */
-    private io.sentry.w0 f28681e;
+    private io.sentry.w0 f27739e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f28682i;
+    private boolean f27740i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final io.sentry.util.a f28683o = new io.sentry.util.a();
+    private final io.sentry.util.a f27741o = new io.sentry.util.a();
 
     public ActivityBreadcrumbsIntegration(Application application) {
-        this.f28680d = (Application) io.sentry.util.y.c(application, "Application is required");
+        this.f27738d = (Application) io.sentry.util.y.c(application, "Application is required");
     }
 
     private void a(Activity activity, String str) {
-        if (this.f28681e == null) {
+        if (this.f27739e == null) {
             return;
         }
         Breadcrumb breadcrumb = new Breadcrumb();
         breadcrumb.E("navigation");
         breadcrumb.A("state", str);
-        breadcrumb.A("screen", l(activity));
+        breadcrumb.A("screen", k(activity));
         breadcrumb.z("ui.lifecycle");
         breadcrumb.B(SentryLevel.INFO);
         Hint hint = new Hint();
         hint.k("android:activity", activity);
-        this.f28681e.g(breadcrumb, hint);
+        this.f27739e.i(breadcrumb, hint);
     }
 
-    private String l(Activity activity) {
+    private String k(Activity activity) {
         return activity.getClass().getSimpleName();
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        if (this.f28682i) {
-            this.f28680d.unregisterActivityLifecycleCallbacks(this);
-            io.sentry.w0 w0Var = this.f28681e;
+        if (this.f27740i) {
+            this.f27738d.unregisterActivityLifecycleCallbacks(this);
+            io.sentry.w0 w0Var = this.f27739e;
             if (w0Var != null) {
                 w0Var.b().getLogger().c(SentryLevel.DEBUG, "ActivityBreadcrumbsIntegration removed.", new Object[0]);
             }
@@ -66,13 +66,13 @@ public final class ActivityBreadcrumbsIntegration implements io.sentry.k1, Close
         } else {
             sentryAndroidOptions = null;
         }
-        this.f28681e = (io.sentry.w0) io.sentry.util.y.c(w0Var, "Scopes are required");
-        this.f28682i = ((SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required")).isEnableActivityLifecycleBreadcrumbs();
+        this.f27739e = (io.sentry.w0) io.sentry.util.y.c(w0Var, "Scopes are required");
+        this.f27740i = ((SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required")).isEnableActivityLifecycleBreadcrumbs();
         ILogger logger = k7Var.getLogger();
         SentryLevel sentryLevel = SentryLevel.DEBUG;
-        logger.c(sentryLevel, "ActivityBreadcrumbsIntegration enabled: %s", Boolean.valueOf(this.f28682i));
-        if (this.f28682i) {
-            this.f28680d.registerActivityLifecycleCallbacks(this);
+        logger.c(sentryLevel, "ActivityBreadcrumbsIntegration enabled: %s", Boolean.valueOf(this.f27740i));
+        if (this.f27740i) {
+            this.f27738d.registerActivityLifecycleCallbacks(this);
             k7Var.getLogger().c(sentryLevel, "ActivityBreadcrumbIntegration installed.", new Object[0]);
             io.sentry.util.p.a("ActivityBreadcrumbs");
         }
@@ -80,7 +80,7 @@ public final class ActivityBreadcrumbsIntegration implements io.sentry.k1, Close
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityCreated(Activity activity, Bundle bundle) {
-        io.sentry.a1 a10 = this.f28683o.a();
+        io.sentry.a1 a10 = this.f27741o.a();
         try {
             a(activity, "created");
             if (a10 != null) {
@@ -100,7 +100,7 @@ public final class ActivityBreadcrumbsIntegration implements io.sentry.k1, Close
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityDestroyed(Activity activity) {
-        io.sentry.a1 a10 = this.f28683o.a();
+        io.sentry.a1 a10 = this.f27741o.a();
         try {
             a(activity, "destroyed");
             if (a10 != null) {
@@ -120,7 +120,7 @@ public final class ActivityBreadcrumbsIntegration implements io.sentry.k1, Close
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityPaused(Activity activity) {
-        io.sentry.a1 a10 = this.f28683o.a();
+        io.sentry.a1 a10 = this.f27741o.a();
         try {
             a(activity, "paused");
             if (a10 != null) {
@@ -140,7 +140,7 @@ public final class ActivityBreadcrumbsIntegration implements io.sentry.k1, Close
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityResumed(Activity activity) {
-        io.sentry.a1 a10 = this.f28683o.a();
+        io.sentry.a1 a10 = this.f27741o.a();
         try {
             a(activity, "resumed");
             if (a10 != null) {
@@ -160,7 +160,7 @@ public final class ActivityBreadcrumbsIntegration implements io.sentry.k1, Close
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
-        io.sentry.a1 a10 = this.f28683o.a();
+        io.sentry.a1 a10 = this.f27741o.a();
         try {
             a(activity, "saveInstanceState");
             if (a10 != null) {
@@ -180,7 +180,7 @@ public final class ActivityBreadcrumbsIntegration implements io.sentry.k1, Close
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityStarted(Activity activity) {
-        io.sentry.a1 a10 = this.f28683o.a();
+        io.sentry.a1 a10 = this.f27741o.a();
         try {
             a(activity, "started");
             if (a10 != null) {
@@ -200,7 +200,7 @@ public final class ActivityBreadcrumbsIntegration implements io.sentry.k1, Close
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityStopped(Activity activity) {
-        io.sentry.a1 a10 = this.f28683o.a();
+        io.sentry.a1 a10 = this.f27741o.a();
         try {
             a(activity, "stopped");
             if (a10 != null) {

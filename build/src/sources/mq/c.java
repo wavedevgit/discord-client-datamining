@@ -2,21 +2,16 @@ package mq;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.io.File;
 import kotlin.jvm.internal.Intrinsics;
-import np.f;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements f {
+public final class c implements Parcelable {
     @NotNull
     public static final Parcelable.Creator<c> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f39069d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final Map f39070e;
+    private final File f38849d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -24,13 +19,7 @@ public final class c implements f {
         /* renamed from: a */
         public final c createFromParcel(Parcel parcel) {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
-            String readString = parcel.readString();
-            int readInt = parcel.readInt();
-            LinkedHashMap linkedHashMap = new LinkedHashMap(readInt);
-            for (int i10 = 0; i10 != readInt; i10++) {
-                linkedHashMap.put(parcel.readString(), parcel.readParcelable(c.class.getClassLoader()));
-            }
-            return new c(readString, linkedHashMap);
+            return new c((File) parcel.readSerializable());
         }
 
         @Override // android.os.Parcelable.Creator
@@ -40,19 +29,13 @@ public final class c implements f {
         }
     }
 
-    public c(String stepName, Map componentParams) {
-        Intrinsics.checkNotNullParameter(stepName, "stepName");
-        Intrinsics.checkNotNullParameter(componentParams, "componentParams");
-        this.f39069d = stepName;
-        this.f39070e = componentParams;
+    public c(File data) {
+        Intrinsics.checkNotNullParameter(data, "data");
+        this.f38849d = data;
     }
 
-    public final Map a() {
-        return this.f39070e;
-    }
-
-    public String b() {
-        return this.f39069d;
+    public final File a() {
+        return this.f38849d;
     }
 
     @Override // android.os.Parcelable
@@ -64,35 +47,24 @@ public final class c implements f {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof c)) {
-            return false;
-        }
-        c cVar = (c) obj;
-        if (Intrinsics.areEqual(this.f39069d, cVar.f39069d) && Intrinsics.areEqual(this.f39070e, cVar.f39070e)) {
+        if ((obj instanceof c) && Intrinsics.areEqual(this.f38849d, ((c) obj).f38849d)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f39069d.hashCode() * 31) + this.f39070e.hashCode();
+        return this.f38849d.hashCode();
     }
 
     public String toString() {
-        String str = this.f39069d;
-        Map map = this.f39070e;
-        return "UiStepData(stepName=" + str + ", componentParams=" + map + ")";
+        File file = this.f38849d;
+        return "DocumentFile(data=" + file + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f39069d);
-        Map map = this.f39070e;
-        dest.writeInt(map.size());
-        for (Map.Entry entry : map.entrySet()) {
-            dest.writeString((String) entry.getKey());
-            dest.writeParcelable((Parcelable) entry.getValue(), i10);
-        }
+        dest.writeSerializable(this.f38849d);
     }
 }

@@ -41,18 +41,18 @@ public final class AttributeStyles_TextBasedFontSizeStyleJsonAdapter extends h {
     @NotNull
     public AttributeStyles.TextBasedFontSizeStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.Measurement measurement = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.TextBasedFontSizeStyle(measurement);
     }
 
@@ -60,8 +60,8 @@ public final class AttributeStyles_TextBasedFontSizeStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, AttributeStyles.TextBasedFontSizeStyle textBasedFontSizeStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (textBasedFontSizeStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableMeasurementAdapter.toJson(writer, textBasedFontSizeStyle.getBase());
             writer.E();
             return;

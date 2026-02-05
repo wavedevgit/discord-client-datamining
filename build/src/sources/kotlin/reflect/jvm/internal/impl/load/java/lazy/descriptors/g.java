@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
 public class g implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaClassDescriptor f33440d;
+    private final LazyJavaClassDescriptor f32964d;
 
     public g(LazyJavaClassDescriptor lazyJavaClassDescriptor) {
-        this.f33440d = lazyJavaClassDescriptor;
+        this.f32964d = lazyJavaClassDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         LazyJavaClassMemberScope h10;
-        h10 = LazyJavaClassDescriptor.h(this.f33440d, (KotlinTypeRefiner) obj);
+        h10 = LazyJavaClassDescriptor.h(this.f32964d, (KotlinTypeRefiner) obj);
         return h10;
     }
 }

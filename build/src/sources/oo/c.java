@@ -1,20 +1,70 @@
 package oo;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c {
+public final class c implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<c> CREATOR = new a();
 
-    /* renamed from: a  reason: collision with root package name */
-    private final boolean f44382a;
+    /* renamed from: d  reason: collision with root package name */
+    private final List f44096d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final boolean f44383b;
+    /* renamed from: e  reason: collision with root package name */
+    private final String f44097e;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final boolean f44384c;
+    /* renamed from: i  reason: collision with root package name */
+    private final String f44098i;
 
-    public c(boolean z10, boolean z11, boolean z12) {
-        this.f44382a = z10;
-        this.f44383b = z11;
-        this.f44384c = z12;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final c createFromParcel(Parcel parcel) {
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            int readInt = parcel.readInt();
+            ArrayList arrayList = new ArrayList(readInt);
+            for (int i10 = 0; i10 != readInt; i10++) {
+                arrayList.add(parcel.readParcelable(c.class.getClassLoader()));
+            }
+            return new c(arrayList, parcel.readString(), parcel.readString());
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final c[] newArray(int i10) {
+            return new c[i10];
+        }
+    }
+
+    public c(List ids, String fieldKeyDocument, String fieldKeyIdClass) {
+        Intrinsics.checkNotNullParameter(ids, "ids");
+        Intrinsics.checkNotNullParameter(fieldKeyDocument, "fieldKeyDocument");
+        Intrinsics.checkNotNullParameter(fieldKeyIdClass, "fieldKeyIdClass");
+        this.f44096d = ids;
+        this.f44097e = fieldKeyDocument;
+        this.f44098i = fieldKeyIdClass;
+    }
+
+    public final String a() {
+        return this.f44097e;
+    }
+
+    public final String b() {
+        return this.f44098i;
+    }
+
+    public final List c() {
+        return this.f44096d;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
     }
 
     public boolean equals(Object obj) {
@@ -25,20 +75,32 @@ public final class c {
             return false;
         }
         c cVar = (c) obj;
-        if (this.f44382a == cVar.f44382a && this.f44383b == cVar.f44383b && this.f44384c == cVar.f44384c) {
+        if (Intrinsics.areEqual(this.f44096d, cVar.f44096d) && Intrinsics.areEqual(this.f44097e, cVar.f44097e) && Intrinsics.areEqual(this.f44098i, cVar.f44098i)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((Boolean.hashCode(this.f44382a) * 31) + Boolean.hashCode(this.f44383b)) * 31) + Boolean.hashCode(this.f44384c);
+        return (((this.f44096d.hashCode() * 31) + this.f44097e.hashCode()) * 31) + this.f44098i.hashCode();
     }
 
     public String toString() {
-        boolean z10 = this.f44382a;
-        boolean z11 = this.f44383b;
-        boolean z12 = this.f44384c;
-        return "ScreenState(shouldShowBackButton=" + z10 + ", shouldShowCancelButton=" + z11 + ", isNavigationEnabled=" + z12 + ")";
+        List list = this.f44096d;
+        String str = this.f44097e;
+        String str2 = this.f44098i;
+        return "GovernmentIdRequestArguments(ids=" + list + ", fieldKeyDocument=" + str + ", fieldKeyIdClass=" + str2 + ")";
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        List<Parcelable> list = this.f44096d;
+        dest.writeInt(list.size());
+        for (Parcelable parcelable : list) {
+            dest.writeParcelable(parcelable, i10);
+        }
+        dest.writeString(this.f44097e);
+        dest.writeString(this.f44098i);
     }
 }

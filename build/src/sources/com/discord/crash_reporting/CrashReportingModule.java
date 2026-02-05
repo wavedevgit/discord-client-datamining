@@ -25,7 +25,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.ranges.IntRange;
 import kotlin.text.StringsKt;
-import lr.v;
+import or.v;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000[\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002*\u0001\u0012\u0018\u0000 )2\u00020\u0001:\u0001)B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\b\u0010\u0010\u001a\u00020\rH\u0016J\b\u0010\u0014\u001a\u00020\u0015H\u0016J\b\u0010\u0016\u001a\u00020\u0015H\u0007J\u0010\u0010\u0017\u001a\u00020\u00152\u0006\u0010\u0018\u001a\u00020\u0019H\u0007J\u0010\u0010\u001a\u001a\u00020\u00152\u0006\u0010\u0018\u001a\u00020\u0019H\u0007J\u0010\u0010\u001b\u001a\u00020\u00152\u0006\u0010\u0018\u001a\u00020\u0019H\u0007J\u0012\u0010\u001c\u001a\u00020\u00152\b\u0010\u001d\u001a\u0004\u0018\u00010\rH\u0007J\u0010\u0010\u001e\u001a\u00020\u00152\u0006\u0010\u0018\u001a\u00020\u0019H\u0007J\u0010\u0010\u001f\u001a\u00020\u00152\u0006\u0010 \u001a\u00020!H\u0007J\b\u0010\"\u001a\u00020\u0015H\u0007J\u001a\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&2\b\u0010'\u001a\u0004\u0018\u00010(H\u0002R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u0014\u0010\b\u001a\u00020\t8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\n\u0010\u000bR\u0010\u0010\f\u001a\u0004\u0018\u00010\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u00020\u0012X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0013¨\u0006*"}, d2 = {"Lcom/discord/crash_reporting/CrashReportingModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getReactContext", "()Lcom/facebook/react/bridge/ReactApplicationContext;", "sentryModule", "Lio/sentry/react/RNSentryModule;", "getSentryModule", "()Lio/sentry/react/RNSentryModule;", "pendingCrashEventId", "", "pendingCrashLock", "", "getName", "reactSoftExceptionListener", "com/discord/crash_reporting/CrashReportingModule$reactSoftExceptionListener$1", "Lcom/discord/crash_reporting/CrashReportingModule$reactSoftExceptionListener$1;", "invalidate", "", "initializeManager", "getSystemLog", "callback", "Lcom/facebook/react/bridge/Callback;", "getDidCrashDuringPreviousExecution", "getLastCrashReport", "markCrashHandled", "eventId", "getIsUserStaffForCrashReporting", "setUser", "user", "Lcom/facebook/react/bridge/ReadableMap;", "crash", "buildCrashReportMap", "Lcom/facebook/react/bridge/WritableMap;", "info", "Lcom/discord/crash_reporting/CrashPersistence$LastCrashInfo;", "diagnostics", "Lcom/discord/crash_reporting/system_logs/SystemLogReport$NativeCrashDiagnostics;", "Companion", "crash_reporting_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -71,7 +71,7 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
                 if (message == null) {
                     message = "No message";
                 }
-                CrashReporting.addBreadcrumb$default(crashReporting, str, o0.m(v.a("message", message), v.a("stacktrace", lr.e.b(cause))), "react.softexception", CrashReporting.BreadcrumbLevel.ERROR, false, 16, null);
+                CrashReporting.addBreadcrumb$default(crashReporting, str, o0.m(v.a("message", message), v.a("stacktrace", or.e.b(cause))), "react.softexception", CrashReporting.BreadcrumbLevel.ERROR, false, 16, null);
                 Log.INSTANCE.e(category, "Unhandled SoftException", cause);
             }
         };
@@ -93,7 +93,7 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
             createMap.putString("exit_description", exitReason.getDescription());
         }
         if (nativeCrashDiagnostics != null && (tombstone = nativeCrashDiagnostics.getTombstone()) != null) {
-            if (kotlin.ranges.d.q(new IntRange(0, 1000), kotlin.random.c.f32554d) == 0 && !StringsKt.k0(tombstone.getText())) {
+            if (kotlin.ranges.d.q(new IntRange(0, 1000), kotlin.random.c.f32078d) == 0 && !StringsKt.k0(tombstone.getText())) {
                 createMap.putString("tombstone", StringsKt.x1(tombstone.getText(), 6291456));
             }
             createMap.putString("tombstone_cause", tombstone.getCause());
@@ -109,7 +109,7 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
     public static final Unit getLastCrashReport$lambda$2(CrashReportingModule crashReportingModule, CrashPersistence.LastCrashInfo lastCrashInfo, Callback callback, SystemLogReport.NativeCrashDiagnostics diagnostics) {
         Intrinsics.checkNotNullParameter(diagnostics, "diagnostics");
         callback.invoke(crashReportingModule.buildCrashReportMap(lastCrashInfo, diagnostics));
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     private final RNSentryModule getSentryModule() {
@@ -235,7 +235,7 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
                     if (Intrinsics.areEqual(this.pendingCrashEventId, str)) {
                         this.pendingCrashEventId = null;
                     }
-                    Unit unit = Unit.f32464a;
+                    Unit unit = Unit.f31988a;
                 }
             } catch (Throwable th2) {
                 Log.INSTANCE.e(TAG, "Failed to mark crash handled", th2);

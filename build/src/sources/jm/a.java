@@ -1,47 +1,62 @@
 package jm;
+
+import android.app.UiModeManager;
+import android.content.ComponentName;
+import android.content.Context;
+import android.graphics.Point;
+import android.graphics.Rect;
+import android.os.Build;
+import android.provider.Settings;
+import android.view.Display;
+import android.view.WindowManager;
+import android.view.WindowMetrics;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final double f31787a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final double f31788b;
-
-    public a(double d10, double d11) {
-        this.f31787a = d10;
-        this.f31788b = d11;
-    }
-
-    public final double a() {
-        return this.f31788b;
-    }
-
-    public final double b() {
-        return this.f31787a;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+public abstract class a {
+    public static final String a(Context context) {
+        ComponentName unflattenFromString;
+        Intrinsics.checkNotNullParameter(context, "<this>");
+        String string = Settings.Secure.getString(context.getContentResolver(), "default_input_method");
+        if (string == null || (unflattenFromString = ComponentName.unflattenFromString(string)) == null) {
+            return null;
         }
-        if (!(obj instanceof a)) {
-            return false;
+        return unflattenFromString.getPackageName();
+    }
+
+    public static final Point b(Context context) {
+        Intrinsics.checkNotNullParameter(context, "<this>");
+        Point point = new Point();
+        if (Build.VERSION.SDK_INT >= 30) {
+            WindowMetrics currentWindowMetrics = ((WindowManager) context.getSystemService(WindowManager.class)).getCurrentWindowMetrics();
+            Intrinsics.checkNotNullExpressionValue(currentWindowMetrics, "getCurrentWindowMetrics(...)");
+            Rect bounds = currentWindowMetrics.getBounds();
+            Intrinsics.checkNotNullExpressionValue(bounds, "getBounds(...)");
+            point.x = bounds.width();
+            point.y = bounds.height();
+            return point;
         }
-        a aVar = (a) obj;
-        if (Double.compare(this.f31787a, aVar.f31787a) == 0 && Double.compare(this.f31788b, aVar.f31788b) == 0) {
-            return true;
+        Object systemService = context.getSystemService("window");
+        Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.view.WindowManager");
+        Display defaultDisplay = ((WindowManager) systemService).getDefaultDisplay();
+        Intrinsics.checkNotNullExpressionValue(defaultDisplay, "getDefaultDisplay(...)");
+        defaultDisplay.getRealSize(point);
+        return point;
+    }
+
+    public static final boolean c(Context context) {
+        UiModeManager uiModeManager;
+        Intrinsics.checkNotNullParameter(context, "<this>");
+        if (Build.VERSION.SDK_INT >= 29) {
+            Object systemService = context.getSystemService("uimode");
+            if (systemService instanceof UiModeManager) {
+                uiModeManager = (UiModeManager) systemService;
+            } else {
+                uiModeManager = null;
+            }
+            if (uiModeManager != null && uiModeManager.getNightMode() == 2) {
+                return true;
+            }
         }
         return false;
-    }
-
-    public int hashCode() {
-        return (Double.hashCode(this.f31787a) * 31) + Double.hashCode(this.f31788b);
-    }
-
-    public String toString() {
-        double d10 = this.f31787a;
-        double d11 = this.f31788b;
-        return "Dimensions(width=" + d10 + ", height=" + d11 + ")";
     }
 }

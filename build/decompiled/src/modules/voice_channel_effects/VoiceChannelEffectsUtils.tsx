@@ -631,4 +631,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getEffectAnnouncement = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 5693, 5695, 5696, 5697, 5698, 5699, 5700, 5701, 5702, 5703, 5704, 5705, 5706, 5707, 5708, 5709, 5710, 5711, 5712, 5713, 5714, 5715, 5716, 22, 1443, 1417, 3104, 3108, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 5697, 5699, 5700, 5701, 5702, 5703, 5704, 5705, 5706, 5707, 5708, 5709, 5710, 5711, 5712, 5713, 5714, 5715, 5716, 5717, 5718, 5719, 5720, 22, 1443, 1417, 3104, 3108, 1234, 2]);

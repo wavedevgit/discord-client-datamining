@@ -60,4 +60,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.icymiTabBadgeShown = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8878, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8896, 566, 2]);

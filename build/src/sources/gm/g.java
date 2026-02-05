@@ -1,51 +1,70 @@
 package gm;
 
-import com.facebook.react.bridge.Arguments;
-import com.facebook.react.bridge.ReactApplicationContext;
-import com.facebook.react.bridge.WritableArray;
-import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.modules.core.DeviceEventManagerModule;
-import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.uimanager.UIManagerHelper;
-import com.facebook.react.uimanager.events.Event;
-import com.facebook.react.uimanager.events.EventDispatcher;
+import android.content.Intent;
+import com.facebook.react.bridge.ReadableArray;
+import com.facebook.react.bridge.ReadableMap;
+import java.util.ArrayList;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class g {
-    public static final void a(ThemedReactContext themedReactContext, int i10, Event event) {
-        Intrinsics.checkNotNullParameter(event, "event");
-        Intrinsics.checkNotNull(themedReactContext, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
-        EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag(themedReactContext, i10);
-        if (eventDispatcherForReactTag != null) {
-            eventDispatcherForReactTag.dispatchEvent(event);
+    public static final f a(ReadableMap readableMap) {
+        String[] strArr;
+        String str;
+        boolean z10;
+        boolean z11;
+        boolean z12;
+        boolean z13;
+        Intrinsics.checkNotNullParameter(readableMap, "readableMap");
+        String string = readableMap.getString("mode");
+        boolean z14 = true;
+        if (!readableMap.hasKey("type") || readableMap.isNull("type")) {
+            strArr = new String[]{"*/*"};
+        } else {
+            ReadableArray array = readableMap.getArray("type");
+            if (array == null || (strArr = b(array)) == null) {
+                strArr = new String[]{"*/*"};
+            }
         }
+        String[] strArr2 = strArr;
+        if (readableMap.hasKey("initialDirectoryUrl")) {
+            str = readableMap.getString("initialDirectoryUrl");
+        } else {
+            str = null;
+        }
+        if (readableMap.hasKey("localOnly") && readableMap.getBoolean("localOnly")) {
+            z10 = true;
+        } else {
+            z10 = true;
+            z14 = false;
+        }
+        if (readableMap.hasKey("allowMultiSelection") && readableMap.getBoolean("allowMultiSelection")) {
+            z11 = z10;
+        } else {
+            z11 = false;
+        }
+        if (readableMap.hasKey("requestLongTermAccess") && readableMap.getBoolean("requestLongTermAccess")) {
+            z12 = z10;
+        } else {
+            z12 = false;
+        }
+        if (readableMap.hasKey("allowVirtualFiles") && readableMap.getBoolean("allowVirtualFiles")) {
+            z13 = z10;
+        } else {
+            z13 = false;
+        }
+        return new f(string, strArr2, str, z14, z11, z12, z13);
     }
 
-    public static final void b(ThemedReactContext themedReactContext, String event, WritableMap params) {
-        ReactApplicationContext reactApplicationContext;
-        DeviceEventManagerModule.RCTDeviceEventEmitter rCTDeviceEventEmitter;
-        Intrinsics.checkNotNullParameter(event, "event");
-        Intrinsics.checkNotNullParameter(params, "params");
-        if (themedReactContext != null && (reactApplicationContext = themedReactContext.getReactApplicationContext()) != null && (rCTDeviceEventEmitter = (DeviceEventManagerModule.RCTDeviceEventEmitter) reactApplicationContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)) != null) {
-            rCTDeviceEventEmitter.emit(event, params);
+    public static final String[] b(ReadableArray readableArray) {
+        Intrinsics.checkNotNullParameter(readableArray, "readableArray");
+        ArrayList<Object> arrayList = readableArray.toArrayList();
+        ArrayList arrayList2 = new ArrayList(CollectionsKt.w(arrayList, 10));
+        for (Object obj : arrayList) {
+            String normalizeMimeType = Intent.normalizeMimeType(String.valueOf(obj));
+            Intrinsics.checkNotNull(normalizeMimeType);
+            arrayList2.add(normalizeMimeType);
         }
-        km.a.c(km.a.f32427a, "ThemedReactContext", event, null, 4, null);
-    }
-
-    public static final String c(ThemedReactContext themedReactContext) {
-        if (themedReactContext == null || !a.c(themedReactContext)) {
-            return "light";
-        }
-        return "dark";
-    }
-
-    public static final void d(ThemedReactContext themedReactContext, int i10) {
-        WritableArray createArray = Arguments.createArray();
-        Intrinsics.checkNotNullExpressionValue(createArray, "createArray(...)");
-        createArray.pushInt(new int[]{i10}[0]);
-        WritableMap createMap = Arguments.createMap();
-        Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
-        createMap.putArray("tags", createArray);
-        b(themedReactContext, "onUserDrivenAnimationEnded", createMap);
+        return (String[]) arrayList2.toArray(new String[0]);
     }
 }

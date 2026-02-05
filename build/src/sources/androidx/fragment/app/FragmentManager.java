@@ -67,70 +67,70 @@ public abstract class FragmentManager {
     private ArrayList P;
     private ArrayList Q;
     private g0 R;
-    private c.C0335c S;
+    private c.C0337c S;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f4098b;
+    private boolean f4210b;
 
     /* renamed from: e  reason: collision with root package name */
-    private ArrayList f4101e;
+    private ArrayList f4213e;
 
     /* renamed from: g  reason: collision with root package name */
-    private OnBackPressedDispatcher f4103g;
+    private OnBackPressedDispatcher f4215g;
 
     /* renamed from: x  reason: collision with root package name */
-    private FragmentHostCallback f4120x;
+    private FragmentHostCallback f4232x;
 
     /* renamed from: y  reason: collision with root package name */
-    private FragmentContainer f4121y;
+    private FragmentContainer f4233y;
 
     /* renamed from: z  reason: collision with root package name */
-    private Fragment f4122z;
+    private Fragment f4234z;
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayList f4097a = new ArrayList();
+    private final ArrayList f4209a = new ArrayList();
 
     /* renamed from: c  reason: collision with root package name */
-    private final l0 f4099c = new l0();
+    private final l0 f4211c = new l0();
 
     /* renamed from: d  reason: collision with root package name */
-    ArrayList f4100d = new ArrayList();
+    ArrayList f4212d = new ArrayList();
 
     /* renamed from: f  reason: collision with root package name */
-    private final w f4102f = new w(this);
+    private final w f4214f = new w(this);
 
     /* renamed from: h  reason: collision with root package name */
-    androidx.fragment.app.a f4104h = null;
+    androidx.fragment.app.a f4216h = null;
 
     /* renamed from: i  reason: collision with root package name */
-    boolean f4105i = false;
+    boolean f4217i = false;
 
     /* renamed from: j  reason: collision with root package name */
-    private final OnBackPressedCallback f4106j = new b(false);
+    private final OnBackPressedCallback f4218j = new b(false);
 
     /* renamed from: k  reason: collision with root package name */
-    private final AtomicInteger f4107k = new AtomicInteger();
+    private final AtomicInteger f4219k = new AtomicInteger();
 
     /* renamed from: l  reason: collision with root package name */
-    private final Map f4108l = Collections.synchronizedMap(new HashMap());
+    private final Map f4220l = Collections.synchronizedMap(new HashMap());
 
     /* renamed from: m  reason: collision with root package name */
-    private final Map f4109m = Collections.synchronizedMap(new HashMap());
+    private final Map f4221m = Collections.synchronizedMap(new HashMap());
 
     /* renamed from: n  reason: collision with root package name */
-    private final Map f4110n = Collections.synchronizedMap(new HashMap());
+    private final Map f4222n = Collections.synchronizedMap(new HashMap());
 
     /* renamed from: o  reason: collision with root package name */
-    ArrayList f4111o = new ArrayList();
+    ArrayList f4223o = new ArrayList();
 
     /* renamed from: p  reason: collision with root package name */
-    private final x f4112p = new x(this);
+    private final x f4224p = new x(this);
 
     /* renamed from: q  reason: collision with root package name */
-    private final CopyOnWriteArrayList f4113q = new CopyOnWriteArrayList();
+    private final CopyOnWriteArrayList f4225q = new CopyOnWriteArrayList();
 
     /* renamed from: r  reason: collision with root package name */
-    private final Consumer f4114r = new Consumer() { // from class: androidx.fragment.app.y
+    private final Consumer f4226r = new Consumer() { // from class: androidx.fragment.app.y
         @Override // androidx.core.util.Consumer
         public final void accept(Object obj) {
             FragmentManager.f(FragmentManager.this, (Configuration) obj);
@@ -138,7 +138,7 @@ public abstract class FragmentManager {
     };
 
     /* renamed from: s  reason: collision with root package name */
-    private final Consumer f4115s = new Consumer() { // from class: androidx.fragment.app.z
+    private final Consumer f4227s = new Consumer() { // from class: androidx.fragment.app.z
         @Override // androidx.core.util.Consumer
         public final void accept(Object obj) {
             FragmentManager.a(FragmentManager.this, (Integer) obj);
@@ -146,7 +146,7 @@ public abstract class FragmentManager {
     };
 
     /* renamed from: t  reason: collision with root package name */
-    private final Consumer f4116t = new Consumer() { // from class: androidx.fragment.app.a0
+    private final Consumer f4228t = new Consumer() { // from class: androidx.fragment.app.a0
         @Override // androidx.core.util.Consumer
         public final void accept(Object obj) {
             FragmentManager.e(FragmentManager.this, (androidx.core.app.h) obj);
@@ -154,7 +154,7 @@ public abstract class FragmentManager {
     };
 
     /* renamed from: u  reason: collision with root package name */
-    private final Consumer f4117u = new Consumer() { // from class: androidx.fragment.app.b0
+    private final Consumer f4229u = new Consumer() { // from class: androidx.fragment.app.b0
         @Override // androidx.core.util.Consumer
         public final void accept(Object obj) {
             FragmentManager.d(FragmentManager.this, (androidx.core.app.v) obj);
@@ -162,10 +162,10 @@ public abstract class FragmentManager {
     };
 
     /* renamed from: v  reason: collision with root package name */
-    private final MenuProvider f4118v = new c();
+    private final MenuProvider f4230v = new c();
 
     /* renamed from: w  reason: collision with root package name */
-    int f4119w = -1;
+    int f4231w = -1;
     private u B = null;
     private u C = new d();
     private u0 D = null;
@@ -199,9 +199,9 @@ public abstract class FragmentManager {
                 Log.w("FragmentManager", "No permissions were requested for " + this);
                 return;
             }
-            String str = mVar.f4137d;
-            int i12 = mVar.f4138e;
-            Fragment i13 = FragmentManager.this.f4099c.i(str);
+            String str = mVar.f4249d;
+            int i12 = mVar.f4250e;
+            Fragment i13 = FragmentManager.this.f4211c.i(str);
             if (i13 == null) {
                 Log.w("FragmentManager", "Permission request result delivered for unknown Fragment " + str);
                 return;
@@ -240,11 +240,11 @@ public abstract class FragmentManager {
                 Log.v("FragmentManager", "handleOnBackProgressed. PREDICTIVE_BACK = " + FragmentManager.V + " fragment manager " + FragmentManager.this);
             }
             FragmentManager fragmentManager = FragmentManager.this;
-            if (fragmentManager.f4104h != null) {
-                for (t0 t0Var : fragmentManager.z(new ArrayList(Collections.singletonList(FragmentManager.this.f4104h)), 0, 1)) {
+            if (fragmentManager.f4216h != null) {
+                for (t0 t0Var : fragmentManager.z(new ArrayList(Collections.singletonList(FragmentManager.this.f4216h)), 0, 1)) {
                     t0Var.A(backEventCompat);
                 }
-                Iterator it = FragmentManager.this.f4111o.iterator();
+                Iterator it = FragmentManager.this.f4223o.iterator();
                 if (it.hasNext()) {
                     android.support.v4.media.session.b.a(it.next());
                     throw null;
@@ -297,7 +297,7 @@ public abstract class FragmentManager {
 
         @Override // androidx.fragment.app.u
         public Fragment a(ClassLoader classLoader, String str) {
-            return FragmentManager.this.B0().b(FragmentManager.this.B0().f(), str, null);
+            return FragmentManager.this.B0().b(FragmentManager.this.B0().g(), str, null);
         }
     }
 
@@ -327,30 +327,30 @@ public abstract class FragmentManager {
     class g implements androidx.lifecycle.m {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f4129d;
+        final /* synthetic */ String f4241d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ i0 f4130e;
+        final /* synthetic */ i0 f4242e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Lifecycle f4131i;
+        final /* synthetic */ Lifecycle f4243i;
 
         g(String str, i0 i0Var, Lifecycle lifecycle) {
-            this.f4129d = str;
-            this.f4130e = i0Var;
-            this.f4131i = lifecycle;
+            this.f4241d = str;
+            this.f4242e = i0Var;
+            this.f4243i = lifecycle;
         }
 
         @Override // androidx.lifecycle.m
         public void h(LifecycleOwner lifecycleOwner, Lifecycle.a aVar) {
             Bundle bundle;
-            if (aVar == Lifecycle.a.ON_START && (bundle = (Bundle) FragmentManager.this.f4109m.get(this.f4129d)) != null) {
-                this.f4130e.a(this.f4129d, bundle);
-                FragmentManager.this.x(this.f4129d);
+            if (aVar == Lifecycle.a.ON_START && (bundle = (Bundle) FragmentManager.this.f4221m.get(this.f4241d)) != null) {
+                this.f4242e.a(this.f4241d, bundle);
+                FragmentManager.this.x(this.f4241d);
             }
             if (aVar == Lifecycle.a.ON_DESTROY) {
-                this.f4131i.d(this);
-                FragmentManager.this.f4110n.remove(this.f4129d);
+                this.f4243i.d(this);
+                FragmentManager.this.f4222n.remove(this.f4241d);
             }
         }
     }
@@ -360,15 +360,15 @@ public abstract class FragmentManager {
     public class h implements h0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Fragment f4133d;
+        final /* synthetic */ Fragment f4245d;
 
         h(Fragment fragment) {
-            this.f4133d = fragment;
+            this.f4245d = fragment;
         }
 
         @Override // androidx.fragment.app.h0
         public void a(FragmentManager fragmentManager, Fragment fragment) {
-            this.f4133d.onAttachFragment(fragment);
+            this.f4245d.onAttachFragment(fragment);
         }
     }
 
@@ -386,9 +386,9 @@ public abstract class FragmentManager {
                 Log.w("FragmentManager", "No Activities were started for result for " + this);
                 return;
             }
-            String str = mVar.f4137d;
-            int i10 = mVar.f4138e;
-            Fragment i11 = FragmentManager.this.f4099c.i(str);
+            String str = mVar.f4249d;
+            int i10 = mVar.f4250e;
+            Fragment i11 = FragmentManager.this.f4211c.i(str);
             if (i11 == null) {
                 Log.w("FragmentManager", "Activity result delivered for unknown Fragment " + str);
                 return;
@@ -411,9 +411,9 @@ public abstract class FragmentManager {
                 Log.w("FragmentManager", "No IntentSenders were started for " + this);
                 return;
             }
-            String str = mVar.f4137d;
-            int i10 = mVar.f4138e;
-            Fragment i11 = FragmentManager.this.f4099c.i(str);
+            String str = mVar.f4249d;
+            int i10 = mVar.f4250e;
+            Fragment i11 = FragmentManager.this.f4211c.i(str);
             if (i11 == null) {
                 Log.w("FragmentManager", "Intent Sender result delivered for unknown Fragment " + str);
                 return;
@@ -505,31 +505,31 @@ public abstract class FragmentManager {
     private static class n implements i0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Lifecycle f4139a;
+        private final Lifecycle f4251a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final i0 f4140b;
+        private final i0 f4252b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final androidx.lifecycle.m f4141c;
+        private final androidx.lifecycle.m f4253c;
 
         n(Lifecycle lifecycle, i0 i0Var, androidx.lifecycle.m mVar) {
-            this.f4139a = lifecycle;
-            this.f4140b = i0Var;
-            this.f4141c = mVar;
+            this.f4251a = lifecycle;
+            this.f4252b = i0Var;
+            this.f4253c = mVar;
         }
 
         @Override // androidx.fragment.app.i0
         public void a(String str, Bundle bundle) {
-            this.f4140b.a(str, bundle);
+            this.f4252b.a(str, bundle);
         }
 
         public boolean b(Lifecycle.State state) {
-            return this.f4139a.b().d(state);
+            return this.f4251a.b().d(state);
         }
 
         public void c() {
-            this.f4139a.d(this.f4141c);
+            this.f4251a.d(this.f4253c);
         }
     }
 
@@ -543,27 +543,27 @@ public abstract class FragmentManager {
     private class p implements o {
 
         /* renamed from: a  reason: collision with root package name */
-        final String f4142a;
+        final String f4254a;
 
         /* renamed from: b  reason: collision with root package name */
-        final int f4143b;
+        final int f4255b;
 
         /* renamed from: c  reason: collision with root package name */
-        final int f4144c;
+        final int f4256c;
 
         p(String str, int i10, int i11) {
-            this.f4142a = str;
-            this.f4143b = i10;
-            this.f4144c = i11;
+            this.f4254a = str;
+            this.f4255b = i10;
+            this.f4256c = i11;
         }
 
         @Override // androidx.fragment.app.FragmentManager.o
         public boolean a(ArrayList arrayList, ArrayList arrayList2) {
             Fragment fragment = FragmentManager.this.A;
-            if (fragment != null && this.f4143b < 0 && this.f4142a == null && fragment.getChildFragmentManager().f1()) {
+            if (fragment != null && this.f4255b < 0 && this.f4254a == null && fragment.getChildFragmentManager().f1()) {
                 return false;
             }
-            return FragmentManager.this.i1(arrayList, arrayList2, this.f4142a, this.f4143b, this.f4144c);
+            return FragmentManager.this.i1(arrayList, arrayList2, this.f4254a, this.f4255b, this.f4256c);
         }
     }
 
@@ -576,14 +576,14 @@ public abstract class FragmentManager {
         @Override // androidx.fragment.app.FragmentManager.o
         public boolean a(ArrayList arrayList, ArrayList arrayList2) {
             boolean j12 = FragmentManager.this.j1(arrayList, arrayList2);
-            if (!FragmentManager.this.f4111o.isEmpty() && arrayList.size() > 0) {
+            if (!FragmentManager.this.f4223o.isEmpty() && arrayList.size() > 0) {
                 ((Boolean) arrayList2.get(arrayList.size() - 1)).booleanValue();
                 LinkedHashSet linkedHashSet = new LinkedHashSet();
                 Iterator it = arrayList.iterator();
                 while (it.hasNext()) {
                     linkedHashSet.addAll(FragmentManager.this.t0((androidx.fragment.app.a) it.next()));
                 }
-                Iterator it2 = FragmentManager.this.f4111o.iterator();
+                Iterator it2 = FragmentManager.this.f4223o.iterator();
                 while (it2.hasNext()) {
                     android.support.v4.media.session.b.a(it2.next());
                     Iterator it3 = linkedHashSet.iterator();
@@ -598,7 +598,7 @@ public abstract class FragmentManager {
     }
 
     private void B1() {
-        for (k0 k0Var : this.f4099c.k()) {
+        for (k0 k0Var : this.f4211c.k()) {
             c1(k0Var);
         }
     }
@@ -607,10 +607,10 @@ public abstract class FragmentManager {
         Log.e("FragmentManager", runtimeException.getMessage());
         Log.e("FragmentManager", "Activity state:");
         PrintWriter printWriter = new PrintWriter(new q0("FragmentManager"));
-        FragmentHostCallback fragmentHostCallback = this.f4120x;
+        FragmentHostCallback fragmentHostCallback = this.f4232x;
         if (fragmentHostCallback != null) {
             try {
-                fragmentHostCallback.i("  ", null, printWriter, new String[0]);
+                fragmentHostCallback.j("  ", null, printWriter, new String[0]);
             } catch (Exception e10) {
                 Log.e("FragmentManager", "Failed dumping state", e10);
             }
@@ -625,21 +625,21 @@ public abstract class FragmentManager {
     }
 
     private void D1() {
-        synchronized (this.f4097a) {
+        synchronized (this.f4209a) {
             try {
                 boolean z10 = true;
-                if (!this.f4097a.isEmpty()) {
-                    this.f4106j.setEnabled(true);
+                if (!this.f4209a.isEmpty()) {
+                    this.f4218j.setEnabled(true);
                     if (O0(3)) {
                         Log.d("FragmentManager", "FragmentManager " + this + " enabling OnBackPressedCallback, caused by non-empty pending actions");
                     }
                     return;
                 }
-                z10 = (v0() <= 0 || !T0(this.f4122z)) ? false : false;
+                z10 = (v0() <= 0 || !T0(this.f4234z)) ? false : false;
                 if (O0(3)) {
                     Log.d("FragmentManager", "OnBackPressedCallback for FragmentManager " + this + " enabled state is " + z10);
                 }
-                this.f4106j.setEnabled(z10);
+                this.f4218j.setEnabled(z10);
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -648,7 +648,7 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Fragment I0(View view) {
-        Object tag = view.getTag(f3.b.f23147a);
+        Object tag = view.getTag(f3.b.f22172a);
         if (tag instanceof Fragment) {
             return (Fragment) tag;
         }
@@ -676,11 +676,11 @@ public abstract class FragmentManager {
     }
 
     private boolean Q0() {
-        Fragment fragment = this.f4122z;
+        Fragment fragment = this.f4234z;
         if (fragment == null) {
             return true;
         }
-        if (fragment.isAdded() && this.f4122z.getParentFragmentManager().Q0()) {
+        if (fragment.isAdded() && this.f4234z.getParentFragmentManager().Q0()) {
             return true;
         }
         return false;
@@ -688,16 +688,16 @@ public abstract class FragmentManager {
 
     private void X(int i10) {
         try {
-            this.f4098b = true;
-            this.f4099c.d(i10);
+            this.f4210b = true;
+            this.f4211c.d(i10);
             Z0(i10, false);
             for (t0 t0Var : y()) {
                 t0Var.q();
             }
-            this.f4098b = false;
+            this.f4210b = false;
             f0(true);
         } catch (Throwable th2) {
-            this.f4098b = false;
+            this.f4210b = false;
             throw th2;
         }
     }
@@ -716,7 +716,7 @@ public abstract class FragmentManager {
     }
 
     public static /* synthetic */ void c(FragmentManager fragmentManager) {
-        Iterator it = fragmentManager.f4111o.iterator();
+        Iterator it = fragmentManager.f4223o.iterator();
         if (!it.hasNext()) {
             return;
         }
@@ -744,13 +744,13 @@ public abstract class FragmentManager {
     }
 
     private void e0(boolean z10) {
-        if (!this.f4098b) {
-            if (this.f4120x == null) {
+        if (!this.f4210b) {
+            if (this.f4232x == null) {
                 if (this.M) {
                     throw new IllegalStateException("FragmentManager has been destroyed");
                 }
                 throw new IllegalStateException("FragmentManager has not been attached to a host.");
-            } else if (Looper.myLooper() == this.f4120x.h().getLooper()) {
+            } else if (Looper.myLooper() == this.f4232x.i().getLooper()) {
                 if (!z10) {
                     u();
                 }
@@ -796,7 +796,7 @@ public abstract class FragmentManager {
         }
         boolean i12 = i1(this.O, this.P, str, i10, i11);
         if (i12) {
-            this.f4098b = true;
+            this.f4210b = true;
             try {
                 n1(this.O, this.P);
             } finally {
@@ -805,19 +805,19 @@ public abstract class FragmentManager {
         }
         D1();
         a0();
-        this.f4099c.b();
+        this.f4211c.b();
         return i12;
     }
 
     private void i0(ArrayList arrayList, ArrayList arrayList2, int i10, int i11) {
-        boolean z10 = ((androidx.fragment.app.a) arrayList.get(i10)).f4164r;
+        boolean z10 = ((androidx.fragment.app.a) arrayList.get(i10)).f4276r;
         ArrayList arrayList3 = this.Q;
         if (arrayList3 == null) {
             this.Q = new ArrayList();
         } else {
             arrayList3.clear();
         }
-        this.Q.addAll(this.f4099c.o());
+        this.Q.addAll(this.f4211c.o());
         Fragment F0 = F0();
         boolean z11 = false;
         for (int i12 = i10; i12 < i11; i12++) {
@@ -827,34 +827,34 @@ public abstract class FragmentManager {
             } else {
                 F0 = aVar.E(this.Q, F0);
             }
-            if (!z11 && !aVar.f4155i) {
+            if (!z11 && !aVar.f4267i) {
                 z11 = false;
             } else {
                 z11 = true;
             }
         }
         this.Q.clear();
-        if (!z10 && this.f4119w >= 1) {
+        if (!z10 && this.f4231w >= 1) {
             for (int i13 = i10; i13 < i11; i13++) {
-                Iterator it = ((androidx.fragment.app.a) arrayList.get(i13)).f4149c.iterator();
+                Iterator it = ((androidx.fragment.app.a) arrayList.get(i13)).f4261c.iterator();
                 while (it.hasNext()) {
-                    Fragment fragment = ((FragmentTransaction.a) it.next()).f4167b;
+                    Fragment fragment = ((FragmentTransaction.a) it.next()).f4279b;
                     if (fragment != null && fragment.mFragmentManager != null) {
-                        this.f4099c.r(A(fragment));
+                        this.f4211c.r(A(fragment));
                     }
                 }
             }
         }
         h0(arrayList, arrayList2, i10, i11);
         boolean booleanValue = ((Boolean) arrayList2.get(i11 - 1)).booleanValue();
-        if (z11 && !this.f4111o.isEmpty()) {
+        if (z11 && !this.f4223o.isEmpty()) {
             LinkedHashSet linkedHashSet = new LinkedHashSet();
             Iterator it2 = arrayList.iterator();
             while (it2.hasNext()) {
                 linkedHashSet.addAll(t0((androidx.fragment.app.a) it2.next()));
             }
-            if (this.f4104h == null) {
-                Iterator it3 = this.f4111o.iterator();
+            if (this.f4216h == null) {
+                Iterator it3 = this.f4223o.iterator();
                 while (it3.hasNext()) {
                     android.support.v4.media.session.b.a(it3.next());
                     Iterator it4 = linkedHashSet.iterator();
@@ -863,7 +863,7 @@ public abstract class FragmentManager {
                         throw null;
                     }
                 }
-                Iterator it5 = this.f4111o.iterator();
+                Iterator it5 = this.f4223o.iterator();
                 while (it5.hasNext()) {
                     android.support.v4.media.session.b.a(it5.next());
                     Iterator it6 = linkedHashSet.iterator();
@@ -877,23 +877,23 @@ public abstract class FragmentManager {
         for (int i14 = i10; i14 < i11; i14++) {
             androidx.fragment.app.a aVar2 = (androidx.fragment.app.a) arrayList.get(i14);
             if (booleanValue) {
-                for (int size = aVar2.f4149c.size() - 1; size >= 0; size--) {
-                    Fragment fragment4 = ((FragmentTransaction.a) aVar2.f4149c.get(size)).f4167b;
+                for (int size = aVar2.f4261c.size() - 1; size >= 0; size--) {
+                    Fragment fragment4 = ((FragmentTransaction.a) aVar2.f4261c.get(size)).f4279b;
                     if (fragment4 != null) {
                         A(fragment4).m();
                     }
                 }
             } else {
-                Iterator it7 = aVar2.f4149c.iterator();
+                Iterator it7 = aVar2.f4261c.iterator();
                 while (it7.hasNext()) {
-                    Fragment fragment5 = ((FragmentTransaction.a) it7.next()).f4167b;
+                    Fragment fragment5 = ((FragmentTransaction.a) it7.next()).f4279b;
                     if (fragment5 != null) {
                         A(fragment5).m();
                     }
                 }
             }
         }
-        Z0(this.f4119w, true);
+        Z0(this.f4231w, true);
         for (t0 t0Var : z(arrayList, i10, i11)) {
             t0Var.D(booleanValue);
             t0Var.z();
@@ -901,8 +901,8 @@ public abstract class FragmentManager {
         }
         while (i10 < i11) {
             androidx.fragment.app.a aVar3 = (androidx.fragment.app.a) arrayList.get(i10);
-            if (((Boolean) arrayList2.get(i10)).booleanValue() && aVar3.f4183v >= 0) {
-                aVar3.f4183v = -1;
+            if (((Boolean) arrayList2.get(i10)).booleanValue() && aVar3.f4295v >= 0) {
+                aVar3.f4295v = -1;
             }
             aVar3.D();
             i10++;
@@ -913,19 +913,19 @@ public abstract class FragmentManager {
     }
 
     private int l0(String str, int i10, boolean z10) {
-        if (this.f4100d.isEmpty()) {
+        if (this.f4212d.isEmpty()) {
             return -1;
         }
         if (str == null && i10 < 0) {
             if (z10) {
                 return 0;
             }
-            return this.f4100d.size() - 1;
+            return this.f4212d.size() - 1;
         }
-        int size = this.f4100d.size() - 1;
+        int size = this.f4212d.size() - 1;
         while (size >= 0) {
-            androidx.fragment.app.a aVar = (androidx.fragment.app.a) this.f4100d.get(size);
-            if ((str != null && str.equals(aVar.C())) || (i10 >= 0 && i10 == aVar.f4183v)) {
+            androidx.fragment.app.a aVar = (androidx.fragment.app.a) this.f4212d.get(size);
+            if ((str != null && str.equals(aVar.C())) || (i10 >= 0 && i10 == aVar.f4295v)) {
                 break;
             }
             size--;
@@ -935,14 +935,14 @@ public abstract class FragmentManager {
         }
         if (z10) {
             while (size > 0) {
-                androidx.fragment.app.a aVar2 = (androidx.fragment.app.a) this.f4100d.get(size - 1);
-                if ((str == null || !str.equals(aVar2.C())) && (i10 < 0 || i10 != aVar2.f4183v)) {
+                androidx.fragment.app.a aVar2 = (androidx.fragment.app.a) this.f4212d.get(size - 1);
+                if ((str == null || !str.equals(aVar2.C())) && (i10 < 0 || i10 != aVar2.f4295v)) {
                     break;
                 }
                 size--;
             }
             return size;
-        } else if (size == this.f4100d.size() - 1) {
+        } else if (size == this.f4212d.size() - 1) {
             return -1;
         } else {
             return size + 1;
@@ -964,13 +964,13 @@ public abstract class FragmentManager {
                 int i10 = 0;
                 int i11 = 0;
                 while (i10 < size) {
-                    if (!((androidx.fragment.app.a) arrayList.get(i10)).f4164r) {
+                    if (!((androidx.fragment.app.a) arrayList.get(i10)).f4276r) {
                         if (i11 != i10) {
                             i0(arrayList, arrayList2, i11, i10);
                         }
                         i11 = i10 + 1;
                         if (((Boolean) arrayList2.get(i10)).booleanValue()) {
-                            while (i11 < size && ((Boolean) arrayList2.get(i11)).booleanValue() && !((androidx.fragment.app.a) arrayList.get(i11)).f4164r) {
+                            while (i11 < size && ((Boolean) arrayList2.get(i11)).booleanValue() && !((androidx.fragment.app.a) arrayList.get(i11)).f4276r) {
                                 i11++;
                             }
                         }
@@ -990,10 +990,10 @@ public abstract class FragmentManager {
     }
 
     private void p1() {
-        if (this.f4111o.size() <= 0) {
+        if (this.f4223o.size() <= 0) {
             return;
         }
-        android.support.v4.media.session.b.a(this.f4111o.get(0));
+        android.support.v4.media.session.b.a(this.f4223o.get(0));
         throw null;
     }
 
@@ -1073,41 +1073,41 @@ public abstract class FragmentManager {
     }
 
     private boolean u0(ArrayList arrayList, ArrayList arrayList2) {
-        synchronized (this.f4097a) {
-            if (this.f4097a.isEmpty()) {
+        synchronized (this.f4209a) {
+            if (this.f4209a.isEmpty()) {
                 return false;
             }
-            int size = this.f4097a.size();
+            int size = this.f4209a.size();
             boolean z10 = false;
             for (int i10 = 0; i10 < size; i10++) {
-                z10 |= ((o) this.f4097a.get(i10)).a(arrayList, arrayList2);
+                z10 |= ((o) this.f4209a.get(i10)).a(arrayList, arrayList2);
             }
-            this.f4097a.clear();
-            this.f4120x.h().removeCallbacks(this.T);
+            this.f4209a.clear();
+            this.f4232x.i().removeCallbacks(this.T);
             return z10;
         }
     }
 
     private void v() {
-        this.f4098b = false;
+        this.f4210b = false;
         this.P.clear();
         this.O.clear();
     }
 
     private void w() {
         boolean z10;
-        FragmentHostCallback fragmentHostCallback = this.f4120x;
+        FragmentHostCallback fragmentHostCallback = this.f4232x;
         if (fragmentHostCallback instanceof androidx.lifecycle.q0) {
-            z10 = this.f4099c.p().n();
-        } else if (fragmentHostCallback.f() instanceof Activity) {
-            z10 = !((Activity) this.f4120x.f()).isChangingConfigurations();
+            z10 = this.f4211c.p().n();
+        } else if (fragmentHostCallback.g() instanceof Activity) {
+            z10 = !((Activity) this.f4232x.g()).isChangingConfigurations();
         } else {
             z10 = true;
         }
         if (z10) {
-            for (androidx.fragment.app.c cVar : this.f4108l.values()) {
-                for (String str : cVar.f4201d) {
-                    this.f4099c.p().g(str, false);
+            for (androidx.fragment.app.c cVar : this.f4220l.values()) {
+                for (String str : cVar.f4313d) {
+                    this.f4211c.p().g(str, false);
                 }
             }
         }
@@ -1119,7 +1119,7 @@ public abstract class FragmentManager {
 
     private Set y() {
         HashSet hashSet = new HashSet();
-        for (k0 k0Var : this.f4099c.k()) {
+        for (k0 k0Var : this.f4211c.k()) {
             ViewGroup viewGroup = k0Var.k().mContainer;
             if (viewGroup != null) {
                 hashSet.add(t0.v(viewGroup, G0()));
@@ -1133,8 +1133,8 @@ public abstract class FragmentManager {
         if (viewGroup != null) {
             return viewGroup;
         }
-        if (fragment.mContainerId > 0 && this.f4121y.d()) {
-            View c10 = this.f4121y.c(fragment.mContainerId);
+        if (fragment.mContainerId > 0 && this.f4233y.e()) {
+            View c10 = this.f4233y.c(fragment.mContainerId);
             if (c10 instanceof ViewGroup) {
                 return (ViewGroup) c10;
             }
@@ -1145,27 +1145,27 @@ public abstract class FragmentManager {
     private void z1(Fragment fragment) {
         ViewGroup y02 = y0(fragment);
         if (y02 != null && fragment.getEnterAnim() + fragment.getExitAnim() + fragment.getPopEnterAnim() + fragment.getPopExitAnim() > 0) {
-            if (y02.getTag(f3.b.f23149c) == null) {
-                y02.setTag(f3.b.f23149c, fragment);
+            if (y02.getTag(f3.b.f22174c) == null) {
+                y02.setTag(f3.b.f22174c, fragment);
             }
-            ((Fragment) y02.getTag(f3.b.f23149c)).setPopDirection(fragment.getPopDirection());
+            ((Fragment) y02.getTag(f3.b.f22174c)).setPopDirection(fragment.getPopDirection());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k0 A(Fragment fragment) {
-        k0 n10 = this.f4099c.n(fragment.mWho);
+        k0 n10 = this.f4211c.n(fragment.mWho);
         if (n10 != null) {
             return n10;
         }
-        k0 k0Var = new k0(this.f4112p, this.f4099c, fragment);
-        k0Var.o(this.f4120x.f().getClassLoader());
-        k0Var.s(this.f4119w);
+        k0 k0Var = new k0(this.f4224p, this.f4211c, fragment);
+        k0Var.o(this.f4232x.g().getClassLoader());
+        k0Var.s(this.f4231w);
         return k0Var;
     }
 
     public List A0() {
-        return this.f4099c.o();
+        return this.f4211c.o();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1190,7 +1190,7 @@ public abstract class FragmentManager {
                 if (O0(2)) {
                     Log.v("FragmentManager", "remove from detach: " + fragment);
                 }
-                this.f4099c.u(fragment);
+                this.f4211c.u(fragment);
                 if (P0(fragment)) {
                     this.J = true;
                 }
@@ -1200,7 +1200,7 @@ public abstract class FragmentManager {
     }
 
     public FragmentHostCallback B0() {
-        return this.f4120x;
+        return this.f4232x;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1213,7 +1213,7 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public LayoutInflater.Factory2 C0() {
-        return this.f4102f;
+        return this.f4214f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1226,14 +1226,14 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public x D0() {
-        return this.f4112p;
+        return this.f4224p;
     }
 
     void E(Configuration configuration, boolean z10) {
-        if (z10 && (this.f4120x instanceof androidx.core.content.d)) {
+        if (z10 && (this.f4232x instanceof androidx.core.content.d)) {
             C1(new IllegalStateException("Do not call dispatchConfigurationChanged() on host. Host implements OnConfigurationChangedProvider and automatically dispatches configuration changes to fragments."));
         }
-        for (Fragment fragment : this.f4099c.o()) {
+        for (Fragment fragment : this.f4211c.o()) {
             if (fragment != null) {
                 fragment.performConfigurationChanged(configuration);
                 if (z10) {
@@ -1245,15 +1245,15 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Fragment E0() {
-        return this.f4122z;
+        return this.f4234z;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean F(MenuItem menuItem) {
-        if (this.f4119w < 1) {
+        if (this.f4231w < 1) {
             return false;
         }
-        for (Fragment fragment : this.f4099c.o()) {
+        for (Fragment fragment : this.f4211c.o()) {
             if (fragment != null && fragment.performContextItemSelected(menuItem)) {
                 return true;
             }
@@ -1279,7 +1279,7 @@ public abstract class FragmentManager {
         if (u0Var != null) {
             return u0Var;
         }
-        Fragment fragment = this.f4122z;
+        Fragment fragment = this.f4234z;
         if (fragment != null) {
             return fragment.mFragmentManager.G0();
         }
@@ -1288,12 +1288,12 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean H(Menu menu, MenuInflater menuInflater) {
-        if (this.f4119w < 1) {
+        if (this.f4231w < 1) {
             return false;
         }
         ArrayList arrayList = null;
         boolean z10 = false;
-        for (Fragment fragment : this.f4099c.o()) {
+        for (Fragment fragment : this.f4211c.o()) {
             if (fragment != null && S0(fragment) && fragment.performCreateOptionsMenu(menu, menuInflater)) {
                 if (arrayList == null) {
                     arrayList = new ArrayList();
@@ -1302,19 +1302,19 @@ public abstract class FragmentManager {
                 z10 = true;
             }
         }
-        if (this.f4101e != null) {
-            for (int i10 = 0; i10 < this.f4101e.size(); i10++) {
-                Fragment fragment2 = (Fragment) this.f4101e.get(i10);
+        if (this.f4213e != null) {
+            for (int i10 = 0; i10 < this.f4213e.size(); i10++) {
+                Fragment fragment2 = (Fragment) this.f4213e.get(i10);
                 if (arrayList == null || !arrayList.contains(fragment2)) {
                     fragment2.onDestroyOptionsMenu();
                 }
             }
         }
-        this.f4101e = arrayList;
+        this.f4213e = arrayList;
         return z10;
     }
 
-    public c.C0335c H0() {
+    public c.C0337c H0() {
         return this.S;
     }
 
@@ -1325,32 +1325,32 @@ public abstract class FragmentManager {
         c0();
         w();
         X(-1);
-        FragmentHostCallback fragmentHostCallback = this.f4120x;
+        FragmentHostCallback fragmentHostCallback = this.f4232x;
         if (fragmentHostCallback instanceof androidx.core.content.e) {
-            ((androidx.core.content.e) fragmentHostCallback).removeOnTrimMemoryListener(this.f4115s);
+            ((androidx.core.content.e) fragmentHostCallback).removeOnTrimMemoryListener(this.f4227s);
         }
-        FragmentHostCallback fragmentHostCallback2 = this.f4120x;
+        FragmentHostCallback fragmentHostCallback2 = this.f4232x;
         if (fragmentHostCallback2 instanceof androidx.core.content.d) {
-            ((androidx.core.content.d) fragmentHostCallback2).removeOnConfigurationChangedListener(this.f4114r);
+            ((androidx.core.content.d) fragmentHostCallback2).removeOnConfigurationChangedListener(this.f4226r);
         }
-        FragmentHostCallback fragmentHostCallback3 = this.f4120x;
+        FragmentHostCallback fragmentHostCallback3 = this.f4232x;
         if (fragmentHostCallback3 instanceof androidx.core.app.s) {
-            ((androidx.core.app.s) fragmentHostCallback3).removeOnMultiWindowModeChangedListener(this.f4116t);
+            ((androidx.core.app.s) fragmentHostCallback3).removeOnMultiWindowModeChangedListener(this.f4228t);
         }
-        FragmentHostCallback fragmentHostCallback4 = this.f4120x;
+        FragmentHostCallback fragmentHostCallback4 = this.f4232x;
         if (fragmentHostCallback4 instanceof androidx.core.app.t) {
-            ((androidx.core.app.t) fragmentHostCallback4).removeOnPictureInPictureModeChangedListener(this.f4117u);
+            ((androidx.core.app.t) fragmentHostCallback4).removeOnPictureInPictureModeChangedListener(this.f4229u);
         }
-        FragmentHostCallback fragmentHostCallback5 = this.f4120x;
-        if ((fragmentHostCallback5 instanceof androidx.core.view.n) && this.f4122z == null) {
-            ((androidx.core.view.n) fragmentHostCallback5).removeMenuProvider(this.f4118v);
+        FragmentHostCallback fragmentHostCallback5 = this.f4232x;
+        if ((fragmentHostCallback5 instanceof androidx.core.view.n) && this.f4234z == null) {
+            ((androidx.core.view.n) fragmentHostCallback5).removeMenuProvider(this.f4230v);
         }
-        this.f4120x = null;
-        this.f4121y = null;
-        this.f4122z = null;
-        if (this.f4103g != null) {
-            this.f4106j.remove();
-            this.f4103g = null;
+        this.f4232x = null;
+        this.f4233y = null;
+        this.f4234z = null;
+        if (this.f4215g != null) {
+            this.f4218j.remove();
+            this.f4215g = null;
         }
         ActivityResultLauncher activityResultLauncher = this.F;
         if (activityResultLauncher != null) {
@@ -1371,10 +1371,10 @@ public abstract class FragmentManager {
     }
 
     void K(boolean z10) {
-        if (z10 && (this.f4120x instanceof androidx.core.content.e)) {
+        if (z10 && (this.f4232x instanceof androidx.core.content.e)) {
             C1(new IllegalStateException("Do not call dispatchLowMemory() on host. Host implements OnTrimMemoryProvider and automatically dispatches low memory callbacks to fragments."));
         }
-        for (Fragment fragment : this.f4099c.o()) {
+        for (Fragment fragment : this.f4211c.o()) {
             if (fragment != null) {
                 fragment.performLowMemory();
                 if (z10) {
@@ -1385,13 +1385,13 @@ public abstract class FragmentManager {
     }
 
     void K0() {
-        this.f4105i = true;
+        this.f4217i = true;
         f0(true);
-        this.f4105i = false;
-        if (V && this.f4104h != null) {
-            if (!this.f4111o.isEmpty()) {
-                LinkedHashSet linkedHashSet = new LinkedHashSet(t0(this.f4104h));
-                Iterator it = this.f4111o.iterator();
+        this.f4217i = false;
+        if (V && this.f4216h != null) {
+            if (!this.f4223o.isEmpty()) {
+                LinkedHashSet linkedHashSet = new LinkedHashSet(t0(this.f4216h));
+                Iterator it = this.f4223o.iterator();
                 while (it.hasNext()) {
                     android.support.v4.media.session.b.a(it.next());
                     Iterator it2 = linkedHashSet.iterator();
@@ -1401,30 +1401,30 @@ public abstract class FragmentManager {
                     }
                 }
             }
-            Iterator it3 = this.f4104h.f4149c.iterator();
+            Iterator it3 = this.f4216h.f4261c.iterator();
             while (it3.hasNext()) {
-                Fragment fragment2 = ((FragmentTransaction.a) it3.next()).f4167b;
+                Fragment fragment2 = ((FragmentTransaction.a) it3.next()).f4279b;
                 if (fragment2 != null) {
                     fragment2.mTransitioning = false;
                 }
             }
-            for (t0 t0Var : z(new ArrayList(Collections.singletonList(this.f4104h)), 0, 1)) {
+            for (t0 t0Var : z(new ArrayList(Collections.singletonList(this.f4216h)), 0, 1)) {
                 t0Var.f();
             }
-            Iterator it4 = this.f4104h.f4149c.iterator();
+            Iterator it4 = this.f4216h.f4261c.iterator();
             while (it4.hasNext()) {
-                Fragment fragment3 = ((FragmentTransaction.a) it4.next()).f4167b;
+                Fragment fragment3 = ((FragmentTransaction.a) it4.next()).f4279b;
                 if (fragment3 != null && fragment3.mContainer == null) {
                     A(fragment3).m();
                 }
             }
-            this.f4104h = null;
+            this.f4216h = null;
             D1();
             if (O0(3)) {
                 Log.d("FragmentManager", "Op is being set to null");
-                Log.d("FragmentManager", "OnBackPressedCallback enabled=" + this.f4106j.isEnabled() + " for  FragmentManager " + this);
+                Log.d("FragmentManager", "OnBackPressedCallback enabled=" + this.f4218j.isEnabled() + " for  FragmentManager " + this);
             }
-        } else if (this.f4106j.isEnabled()) {
+        } else if (this.f4218j.isEnabled()) {
             if (O0(3)) {
                 Log.d("FragmentManager", "Calling popBackStackImmediate via onBackPressed callback");
             }
@@ -1433,15 +1433,15 @@ public abstract class FragmentManager {
             if (O0(3)) {
                 Log.d("FragmentManager", "Calling onBackPressed via onBackPressed callback");
             }
-            this.f4103g.l();
+            this.f4215g.l();
         }
     }
 
     void L(boolean z10, boolean z11) {
-        if (z11 && (this.f4120x instanceof androidx.core.app.s)) {
+        if (z11 && (this.f4232x instanceof androidx.core.app.s)) {
             C1(new IllegalStateException("Do not call dispatchMultiWindowModeChanged() on host. Host implements OnMultiWindowModeChangedProvider and automatically dispatches multi-window mode changes to fragments."));
         }
-        for (Fragment fragment : this.f4099c.o()) {
+        for (Fragment fragment : this.f4211c.o()) {
             if (fragment != null) {
                 fragment.performMultiWindowModeChanged(z10);
                 if (z11) {
@@ -1465,7 +1465,7 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void M(Fragment fragment) {
-        Iterator it = this.f4113q.iterator();
+        Iterator it = this.f4225q.iterator();
         while (it.hasNext()) {
             ((h0) it.next()).a(this, fragment);
         }
@@ -1480,7 +1480,7 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void N() {
-        for (Fragment fragment : this.f4099c.l()) {
+        for (Fragment fragment : this.f4211c.l()) {
             if (fragment != null) {
                 fragment.onHiddenChanged(fragment.isHidden());
                 fragment.mChildFragmentManager.N();
@@ -1494,10 +1494,10 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean O(MenuItem menuItem) {
-        if (this.f4119w < 1) {
+        if (this.f4231w < 1) {
             return false;
         }
-        for (Fragment fragment : this.f4099c.o()) {
+        for (Fragment fragment : this.f4211c.o()) {
             if (fragment != null && fragment.performOptionsItemSelected(menuItem)) {
                 return true;
             }
@@ -1507,8 +1507,8 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void P(Menu menu) {
-        if (this.f4119w >= 1) {
-            for (Fragment fragment : this.f4099c.o()) {
+        if (this.f4231w >= 1) {
+            for (Fragment fragment : this.f4211c.o()) {
                 if (fragment != null) {
                     fragment.performOptionsMenuClosed(menu);
                 }
@@ -1530,10 +1530,10 @@ public abstract class FragmentManager {
     }
 
     void S(boolean z10, boolean z11) {
-        if (z11 && (this.f4120x instanceof androidx.core.app.t)) {
+        if (z11 && (this.f4232x instanceof androidx.core.app.t)) {
             C1(new IllegalStateException("Do not call dispatchPictureInPictureModeChanged() on host. Host implements OnPictureInPictureModeChangedProvider and automatically dispatches picture-in-picture mode changes to fragments."));
         }
-        for (Fragment fragment : this.f4099c.o()) {
+        for (Fragment fragment : this.f4211c.o()) {
             if (fragment != null) {
                 fragment.performPictureInPictureModeChanged(z10);
                 if (z11) {
@@ -1554,10 +1554,10 @@ public abstract class FragmentManager {
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean T(Menu menu) {
         boolean z10 = false;
-        if (this.f4119w < 1) {
+        if (this.f4231w < 1) {
             return false;
         }
-        for (Fragment fragment : this.f4099c.o()) {
+        for (Fragment fragment : this.f4211c.o()) {
             if (fragment != null && S0(fragment) && fragment.performPrepareOptionsMenu(menu)) {
                 z10 = true;
             }
@@ -1571,7 +1571,7 @@ public abstract class FragmentManager {
             return true;
         }
         FragmentManager fragmentManager = fragment.mFragmentManager;
-        if (fragment.equals(fragmentManager.F0()) && T0(fragmentManager.f4122z)) {
+        if (fragment.equals(fragmentManager.F0()) && T0(fragmentManager.f4234z)) {
             return true;
         }
         return false;
@@ -1585,7 +1585,7 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean U0(int i10) {
-        if (this.f4119w >= i10) {
+        if (this.f4231w >= i10) {
             return true;
         }
         return false;
@@ -1621,7 +1621,7 @@ public abstract class FragmentManager {
             this.H.b(strArr);
             return;
         }
-        this.f4120x.m(fragment, strArr, i10);
+        this.f4232x.m(fragment, strArr, i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1634,7 +1634,7 @@ public abstract class FragmentManager {
             this.F.b(intent);
             return;
         }
-        this.f4120x.o(fragment, intent, i10, bundle);
+        this.f4232x.o(fragment, intent, i10, bundle);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1665,7 +1665,7 @@ public abstract class FragmentManager {
             this.G.b(a10);
             return;
         }
-        this.f4120x.p(fragment, intentSender, i10, intent, i11, i12, i13, bundle);
+        this.f4232x.p(fragment, intentSender, i10, intent, i11, i12, i13, bundle);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1675,14 +1675,14 @@ public abstract class FragmentManager {
 
     void Z0(int i10, boolean z10) {
         FragmentHostCallback fragmentHostCallback;
-        if (this.f4120x == null && i10 != -1) {
+        if (this.f4232x == null && i10 != -1) {
             throw new IllegalStateException("No activity");
         }
-        if (z10 || i10 != this.f4119w) {
-            this.f4119w = i10;
-            this.f4099c.t();
+        if (z10 || i10 != this.f4231w) {
+            this.f4231w = i10;
+            this.f4211c.t();
             B1();
-            if (this.J && (fragmentHostCallback = this.f4120x) != null && this.f4119w == 7) {
+            if (this.J && (fragmentHostCallback = this.f4232x) != null && this.f4231w == 7) {
                 fragmentHostCallback.q();
                 this.J = false;
             }
@@ -1691,11 +1691,11 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a1() {
-        if (this.f4120x != null) {
+        if (this.f4232x != null) {
             this.K = false;
             this.L = false;
             this.R.p(false);
-            for (Fragment fragment : this.f4099c.o()) {
+            for (Fragment fragment : this.f4211c.o()) {
                 if (fragment != null) {
                     fragment.noteStateNotSaved();
                 }
@@ -1706,8 +1706,8 @@ public abstract class FragmentManager {
     public void b0(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         int size;
         String str2 = str + "    ";
-        this.f4099c.e(str, fileDescriptor, printWriter, strArr);
-        ArrayList arrayList = this.f4101e;
+        this.f4211c.e(str, fileDescriptor, printWriter, strArr);
+        ArrayList arrayList = this.f4213e;
         if (arrayList != null && (size = arrayList.size()) > 0) {
             printWriter.print(str);
             printWriter.println("Fragments Created Menus:");
@@ -1716,15 +1716,15 @@ public abstract class FragmentManager {
                 printWriter.print("  #");
                 printWriter.print(i10);
                 printWriter.print(": ");
-                printWriter.println(((Fragment) this.f4101e.get(i10)).toString());
+                printWriter.println(((Fragment) this.f4213e.get(i10)).toString());
             }
         }
-        int size2 = this.f4100d.size();
+        int size2 = this.f4212d.size();
         if (size2 > 0) {
             printWriter.print(str);
             printWriter.println("Back Stack:");
             for (int i11 = 0; i11 < size2; i11++) {
-                androidx.fragment.app.a aVar = (androidx.fragment.app.a) this.f4100d.get(i11);
+                androidx.fragment.app.a aVar = (androidx.fragment.app.a) this.f4212d.get(i11);
                 printWriter.print(str);
                 printWriter.print("  #");
                 printWriter.print(i11);
@@ -1734,10 +1734,10 @@ public abstract class FragmentManager {
             }
         }
         printWriter.print(str);
-        printWriter.println("Back Stack Index: " + this.f4107k.get());
-        synchronized (this.f4097a) {
+        printWriter.println("Back Stack Index: " + this.f4219k.get());
+        synchronized (this.f4209a) {
             try {
-                int size3 = this.f4097a.size();
+                int size3 = this.f4209a.size();
                 if (size3 > 0) {
                     printWriter.print(str);
                     printWriter.println("Pending Actions:");
@@ -1746,7 +1746,7 @@ public abstract class FragmentManager {
                         printWriter.print("  #");
                         printWriter.print(i12);
                         printWriter.print(": ");
-                        printWriter.println((o) this.f4097a.get(i12));
+                        printWriter.println((o) this.f4209a.get(i12));
                     }
                 }
             } catch (Throwable th2) {
@@ -1757,18 +1757,18 @@ public abstract class FragmentManager {
         printWriter.println("FragmentManager misc state:");
         printWriter.print(str);
         printWriter.print("  mHost=");
-        printWriter.println(this.f4120x);
+        printWriter.println(this.f4232x);
         printWriter.print(str);
         printWriter.print("  mContainer=");
-        printWriter.println(this.f4121y);
-        if (this.f4122z != null) {
+        printWriter.println(this.f4233y);
+        if (this.f4234z != null) {
             printWriter.print(str);
             printWriter.print("  mParent=");
-            printWriter.println(this.f4122z);
+            printWriter.println(this.f4234z);
         }
         printWriter.print(str);
         printWriter.print("  mCurState=");
-        printWriter.print(this.f4119w);
+        printWriter.print(this.f4231w);
         printWriter.print(" mStateSaved=");
         printWriter.print(this.K);
         printWriter.print(" mStopped=");
@@ -1784,7 +1784,7 @@ public abstract class FragmentManager {
 
     public final void b1(FragmentContainerView fragmentContainerView) {
         View view;
-        for (k0 k0Var : this.f4099c.k()) {
+        for (k0 k0Var : this.f4211c.k()) {
             Fragment k10 = k0Var.k();
             if (k10.mContainerId == fragmentContainerView.getId() && (view = k10.mView) != null && view.getParent() == null) {
                 k10.mContainer = fragmentContainerView;
@@ -1798,7 +1798,7 @@ public abstract class FragmentManager {
     public void c1(k0 k0Var) {
         Fragment k10 = k0Var.k();
         if (k10.mDeferStart) {
-            if (this.f4098b) {
+            if (this.f4210b) {
                 this.N = true;
                 return;
             }
@@ -1810,7 +1810,7 @@ public abstract class FragmentManager {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d0(o oVar, boolean z10) {
         if (!z10) {
-            if (this.f4120x == null) {
+            if (this.f4232x == null) {
                 if (this.M) {
                     throw new IllegalStateException("FragmentManager has been destroyed");
                 }
@@ -1818,15 +1818,15 @@ public abstract class FragmentManager {
             }
             u();
         }
-        synchronized (this.f4097a) {
+        synchronized (this.f4209a) {
             try {
-                if (this.f4120x == null) {
+                if (this.f4232x == null) {
                     if (z10) {
                         return;
                     }
                     throw new IllegalStateException("Activity has been destroyed");
                 }
-                this.f4097a.add(oVar);
+                this.f4209a.add(oVar);
                 t1();
             } catch (Throwable th2) {
                 throw th2;
@@ -1852,26 +1852,26 @@ public abstract class FragmentManager {
         androidx.fragment.app.a aVar;
         e0(z10);
         boolean z11 = false;
-        if (!this.f4105i && (aVar = this.f4104h) != null) {
-            aVar.f4182u = false;
+        if (!this.f4217i && (aVar = this.f4216h) != null) {
+            aVar.f4294u = false;
             aVar.v();
             if (O0(3)) {
-                Log.d("FragmentManager", "Reversing mTransitioningOp " + this.f4104h + " as part of execPendingActions for actions " + this.f4097a);
+                Log.d("FragmentManager", "Reversing mTransitioningOp " + this.f4216h + " as part of execPendingActions for actions " + this.f4209a);
             }
-            this.f4104h.w(false, false);
-            this.f4097a.add(0, this.f4104h);
-            Iterator it = this.f4104h.f4149c.iterator();
+            this.f4216h.w(false, false);
+            this.f4209a.add(0, this.f4216h);
+            Iterator it = this.f4216h.f4261c.iterator();
             while (it.hasNext()) {
-                Fragment fragment = ((FragmentTransaction.a) it.next()).f4167b;
+                Fragment fragment = ((FragmentTransaction.a) it.next()).f4279b;
                 if (fragment != null) {
                     fragment.mTransitioning = false;
                 }
             }
-            this.f4104h = null;
+            this.f4216h = null;
         }
         while (u0(this.O, this.P)) {
             z11 = true;
-            this.f4098b = true;
+            this.f4210b = true;
             try {
                 n1(this.O, this.P);
             } finally {
@@ -1880,7 +1880,7 @@ public abstract class FragmentManager {
         }
         D1();
         a0();
-        this.f4099c.b();
+        this.f4211c.b();
         return z11;
     }
 
@@ -1890,33 +1890,33 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g0(o oVar, boolean z10) {
-        if (z10 && (this.f4120x == null || this.M)) {
+        if (z10 && (this.f4232x == null || this.M)) {
             return;
         }
         e0(z10);
-        androidx.fragment.app.a aVar = this.f4104h;
+        androidx.fragment.app.a aVar = this.f4216h;
         boolean z11 = false;
         if (aVar != null) {
-            aVar.f4182u = false;
+            aVar.f4294u = false;
             aVar.v();
             if (O0(3)) {
-                Log.d("FragmentManager", "Reversing mTransitioningOp " + this.f4104h + " as part of execSingleAction for action " + oVar);
+                Log.d("FragmentManager", "Reversing mTransitioningOp " + this.f4216h + " as part of execSingleAction for action " + oVar);
             }
-            this.f4104h.w(false, false);
-            boolean a10 = this.f4104h.a(this.O, this.P);
-            Iterator it = this.f4104h.f4149c.iterator();
+            this.f4216h.w(false, false);
+            boolean a10 = this.f4216h.a(this.O, this.P);
+            Iterator it = this.f4216h.f4261c.iterator();
             while (it.hasNext()) {
-                Fragment fragment = ((FragmentTransaction.a) it.next()).f4167b;
+                Fragment fragment = ((FragmentTransaction.a) it.next()).f4279b;
                 if (fragment != null) {
                     fragment.mTransitioning = false;
                 }
             }
-            this.f4104h = null;
+            this.f4216h = null;
             z11 = a10;
         }
         boolean a11 = oVar.a(this.O, this.P);
         if (z11 || a11) {
-            this.f4098b = true;
+            this.f4210b = true;
             try {
                 n1(this.O, this.P);
             } finally {
@@ -1925,7 +1925,7 @@ public abstract class FragmentManager {
         }
         D1();
         a0();
-        this.f4099c.b();
+        this.f4211c.b();
     }
 
     public boolean g1(int i10, int i11) {
@@ -1946,8 +1946,8 @@ public abstract class FragmentManager {
         if (l02 < 0) {
             return false;
         }
-        for (int size = this.f4100d.size() - 1; size >= l02; size--) {
-            arrayList.add((androidx.fragment.app.a) this.f4100d.remove(size));
+        for (int size = this.f4212d.size() - 1; size >= l02; size--) {
+            arrayList.add((androidx.fragment.app.a) this.f4212d.remove(size));
             arrayList2.add(Boolean.TRUE);
         }
         return true;
@@ -1961,18 +1961,18 @@ public abstract class FragmentManager {
 
     boolean j1(ArrayList arrayList, ArrayList arrayList2) {
         if (O0(2)) {
-            Log.v("FragmentManager", "FragmentManager has the following pending actions inside of prepareBackStackState: " + this.f4097a);
+            Log.v("FragmentManager", "FragmentManager has the following pending actions inside of prepareBackStackState: " + this.f4209a);
         }
-        if (this.f4100d.isEmpty()) {
+        if (this.f4212d.isEmpty()) {
             Log.i("FragmentManager", "Ignoring call to start back stack pop because the back stack is empty.");
             return false;
         }
-        ArrayList arrayList3 = this.f4100d;
+        ArrayList arrayList3 = this.f4212d;
         androidx.fragment.app.a aVar = (androidx.fragment.app.a) arrayList3.get(arrayList3.size() - 1);
-        this.f4104h = aVar;
-        Iterator it = aVar.f4149c.iterator();
+        this.f4216h = aVar;
+        Iterator it = aVar.f4261c.iterator();
         while (it.hasNext()) {
-            Fragment fragment = ((FragmentTransaction.a) it.next()).f4167b;
+            Fragment fragment = ((FragmentTransaction.a) it.next()).f4279b;
             if (fragment != null) {
                 fragment.mTransitioning = true;
             }
@@ -1982,12 +1982,12 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void k(androidx.fragment.app.a aVar) {
-        this.f4100d.add(aVar);
+        this.f4212d.add(aVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Fragment k0(String str) {
-        return this.f4099c.f(str);
+        return this.f4211c.f(str);
     }
 
     void k1() {
@@ -2005,9 +2005,9 @@ public abstract class FragmentManager {
         }
         k0 A = A(fragment);
         fragment.mFragmentManager = this;
-        this.f4099c.r(A);
+        this.f4211c.r(A);
         if (!fragment.mDetached) {
-            this.f4099c.a(fragment);
+            this.f4211c.a(fragment);
             fragment.mRemoving = false;
             if (fragment.mView == null) {
                 fragment.mHiddenChanged = false;
@@ -2020,11 +2020,11 @@ public abstract class FragmentManager {
     }
 
     public void l1(l lVar, boolean z10) {
-        this.f4112p.o(lVar, z10);
+        this.f4224p.o(lVar, z10);
     }
 
     public void m(h0 h0Var) {
-        this.f4113q.add(h0Var);
+        this.f4225q.add(h0Var);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -2036,7 +2036,7 @@ public abstract class FragmentManager {
         if (fragment.mDetached && isInBackStack) {
             return;
         }
-        this.f4099c.u(fragment);
+        this.f4211c.u(fragment);
         if (P0(fragment)) {
             this.J = true;
         }
@@ -2050,16 +2050,16 @@ public abstract class FragmentManager {
     }
 
     public Fragment n0(int i10) {
-        return this.f4099c.g(i10);
+        return this.f4211c.g(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int o() {
-        return this.f4107k.getAndIncrement();
+        return this.f4219k.getAndIncrement();
     }
 
     public Fragment o0(String str) {
-        return this.f4099c.h(str);
+        return this.f4211c.h(str);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -2070,27 +2070,27 @@ public abstract class FragmentManager {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void p(FragmentHostCallback fragmentHostCallback, FragmentContainer fragmentContainer, Fragment fragment) {
         String str;
-        if (this.f4120x == null) {
-            this.f4120x = fragmentHostCallback;
-            this.f4121y = fragmentContainer;
-            this.f4122z = fragment;
+        if (this.f4232x == null) {
+            this.f4232x = fragmentHostCallback;
+            this.f4233y = fragmentContainer;
+            this.f4234z = fragment;
             if (fragment != null) {
                 m(new h(fragment));
             } else if (fragmentHostCallback instanceof h0) {
                 m((h0) fragmentHostCallback);
             }
-            if (this.f4122z != null) {
+            if (this.f4234z != null) {
                 D1();
             }
             if (fragmentHostCallback instanceof androidx.activity.z) {
                 androidx.activity.z zVar = (androidx.activity.z) fragmentHostCallback;
                 OnBackPressedDispatcher onBackPressedDispatcher = zVar.getOnBackPressedDispatcher();
-                this.f4103g = onBackPressedDispatcher;
+                this.f4215g = onBackPressedDispatcher;
                 LifecycleOwner lifecycleOwner = zVar;
                 if (fragment != null) {
                     lifecycleOwner = fragment;
                 }
-                onBackPressedDispatcher.h(lifecycleOwner, this.f4106j);
+                onBackPressedDispatcher.h(lifecycleOwner, this.f4218j);
             }
             if (fragment != null) {
                 this.R = fragment.mFragmentManager.w0(fragment);
@@ -2100,8 +2100,8 @@ public abstract class FragmentManager {
                 this.R = new g0(false);
             }
             this.R.p(V0());
-            this.f4099c.A(this.R);
-            FragmentHostCallback fragmentHostCallback2 = this.f4120x;
+            this.f4211c.A(this.R);
+            FragmentHostCallback fragmentHostCallback2 = this.f4232x;
             if ((fragmentHostCallback2 instanceof u3.f) && fragment == null) {
                 SavedStateRegistry savedStateRegistry = ((u3.f) fragmentHostCallback2).getSavedStateRegistry();
                 savedStateRegistry.c("android:support:fragments", new SavedStateRegistry.b() { // from class: androidx.fragment.app.c0
@@ -2117,7 +2117,7 @@ public abstract class FragmentManager {
                     q1(a10);
                 }
             }
-            FragmentHostCallback fragmentHostCallback3 = this.f4120x;
+            FragmentHostCallback fragmentHostCallback3 = this.f4232x;
             if (fragmentHostCallback3 instanceof d.d) {
                 ActivityResultRegistry activityResultRegistry = ((d.d) fragmentHostCallback3).getActivityResultRegistry();
                 if (fragment != null) {
@@ -2130,25 +2130,25 @@ public abstract class FragmentManager {
                 this.G = activityResultRegistry.l(str2 + "StartIntentSenderForResult", new k(), new j());
                 this.H = activityResultRegistry.l(str2 + "RequestPermissions", new androidx.activity.result.contract.f(), new a());
             }
-            FragmentHostCallback fragmentHostCallback4 = this.f4120x;
+            FragmentHostCallback fragmentHostCallback4 = this.f4232x;
             if (fragmentHostCallback4 instanceof androidx.core.content.d) {
-                ((androidx.core.content.d) fragmentHostCallback4).addOnConfigurationChangedListener(this.f4114r);
+                ((androidx.core.content.d) fragmentHostCallback4).addOnConfigurationChangedListener(this.f4226r);
             }
-            FragmentHostCallback fragmentHostCallback5 = this.f4120x;
+            FragmentHostCallback fragmentHostCallback5 = this.f4232x;
             if (fragmentHostCallback5 instanceof androidx.core.content.e) {
-                ((androidx.core.content.e) fragmentHostCallback5).addOnTrimMemoryListener(this.f4115s);
+                ((androidx.core.content.e) fragmentHostCallback5).addOnTrimMemoryListener(this.f4227s);
             }
-            FragmentHostCallback fragmentHostCallback6 = this.f4120x;
+            FragmentHostCallback fragmentHostCallback6 = this.f4232x;
             if (fragmentHostCallback6 instanceof androidx.core.app.s) {
-                ((androidx.core.app.s) fragmentHostCallback6).addOnMultiWindowModeChangedListener(this.f4116t);
+                ((androidx.core.app.s) fragmentHostCallback6).addOnMultiWindowModeChangedListener(this.f4228t);
             }
-            FragmentHostCallback fragmentHostCallback7 = this.f4120x;
+            FragmentHostCallback fragmentHostCallback7 = this.f4232x;
             if (fragmentHostCallback7 instanceof androidx.core.app.t) {
-                ((androidx.core.app.t) fragmentHostCallback7).addOnPictureInPictureModeChangedListener(this.f4117u);
+                ((androidx.core.app.t) fragmentHostCallback7).addOnPictureInPictureModeChangedListener(this.f4229u);
             }
-            FragmentHostCallback fragmentHostCallback8 = this.f4120x;
+            FragmentHostCallback fragmentHostCallback8 = this.f4232x;
             if ((fragmentHostCallback8 instanceof androidx.core.view.n) && fragment == null) {
-                ((androidx.core.view.n) fragmentHostCallback8).addMenuProvider(this.f4118v);
+                ((androidx.core.view.n) fragmentHostCallback8).addMenuProvider(this.f4230v);
                 return;
             }
             return;
@@ -2158,7 +2158,7 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Fragment p0(String str) {
-        return this.f4099c.i(str);
+        return this.f4211c.i(str);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -2169,7 +2169,7 @@ public abstract class FragmentManager {
         if (fragment.mDetached) {
             fragment.mDetached = false;
             if (!fragment.mAdded) {
-                this.f4099c.a(fragment);
+                this.f4211c.a(fragment);
                 if (O0(2)) {
                     Log.v("FragmentManager", "add from attach: " + fragment);
                 }
@@ -2189,35 +2189,35 @@ public abstract class FragmentManager {
             Bundle bundle3 = (Bundle) parcelable;
             for (String str : bundle3.keySet()) {
                 if (str.startsWith("result_") && (bundle2 = bundle3.getBundle(str)) != null) {
-                    bundle2.setClassLoader(this.f4120x.f().getClassLoader());
-                    this.f4109m.put(str.substring(7), bundle2);
+                    bundle2.setClassLoader(this.f4232x.g().getClassLoader());
+                    this.f4221m.put(str.substring(7), bundle2);
                 }
             }
             HashMap hashMap = new HashMap();
             for (String str2 : bundle3.keySet()) {
                 if (str2.startsWith("fragment_") && (bundle = bundle3.getBundle(str2)) != null) {
-                    bundle.setClassLoader(this.f4120x.f().getClassLoader());
+                    bundle.setClassLoader(this.f4232x.g().getClassLoader());
                     hashMap.put(str2.substring(9), bundle);
                 }
             }
-            this.f4099c.x(hashMap);
+            this.f4211c.x(hashMap);
             f0 f0Var = (f0) bundle3.getParcelable("state");
             if (f0Var == null) {
                 return;
             }
-            this.f4099c.v();
-            Iterator it = f0Var.f4257d.iterator();
+            this.f4211c.v();
+            Iterator it = f0Var.f4369d.iterator();
             while (it.hasNext()) {
-                Bundle B = this.f4099c.B((String) it.next(), null);
+                Bundle B = this.f4211c.B((String) it.next(), null);
                 if (B != null) {
-                    Fragment i10 = this.R.i(((j0) B.getParcelable("state")).f4282e);
+                    Fragment i10 = this.R.i(((j0) B.getParcelable("state")).f4394e);
                     if (i10 != null) {
                         if (O0(2)) {
                             Log.v("FragmentManager", "restoreSaveState: re-attaching retained " + i10);
                         }
-                        k0Var = new k0(this.f4112p, this.f4099c, i10, B);
+                        k0Var = new k0(this.f4224p, this.f4211c, i10, B);
                     } else {
-                        k0Var = new k0(this.f4112p, this.f4099c, this.f4120x.f().getClassLoader(), z0(), B);
+                        k0Var = new k0(this.f4224p, this.f4211c, this.f4232x.g().getClassLoader(), z0(), B);
                     }
                     Fragment k10 = k0Var.k();
                     k10.mSavedFragmentState = B;
@@ -2225,61 +2225,61 @@ public abstract class FragmentManager {
                     if (O0(2)) {
                         Log.v("FragmentManager", "restoreSaveState: active (" + k10.mWho + "): " + k10);
                     }
-                    k0Var.o(this.f4120x.f().getClassLoader());
-                    this.f4099c.r(k0Var);
-                    k0Var.s(this.f4119w);
+                    k0Var.o(this.f4232x.g().getClassLoader());
+                    this.f4211c.r(k0Var);
+                    k0Var.s(this.f4231w);
                 }
             }
             for (Fragment fragment : this.R.l()) {
-                if (!this.f4099c.c(fragment.mWho)) {
+                if (!this.f4211c.c(fragment.mWho)) {
                     if (O0(2)) {
-                        Log.v("FragmentManager", "Discarding retained Fragment " + fragment + " that was not found in the set of active Fragments " + f0Var.f4257d);
+                        Log.v("FragmentManager", "Discarding retained Fragment " + fragment + " that was not found in the set of active Fragments " + f0Var.f4369d);
                     }
                     this.R.o(fragment);
                     fragment.mFragmentManager = this;
-                    k0 k0Var2 = new k0(this.f4112p, this.f4099c, fragment);
+                    k0 k0Var2 = new k0(this.f4224p, this.f4211c, fragment);
                     k0Var2.s(1);
                     k0Var2.m();
                     fragment.mRemoving = true;
                     k0Var2.m();
                 }
             }
-            this.f4099c.w(f0Var.f4258e);
-            if (f0Var.f4259i != null) {
-                this.f4100d = new ArrayList(f0Var.f4259i.length);
+            this.f4211c.w(f0Var.f4370e);
+            if (f0Var.f4371i != null) {
+                this.f4212d = new ArrayList(f0Var.f4371i.length);
                 int i11 = 0;
                 while (true) {
-                    androidx.fragment.app.b[] bVarArr = f0Var.f4259i;
+                    androidx.fragment.app.b[] bVarArr = f0Var.f4371i;
                     if (i11 >= bVarArr.length) {
                         break;
                     }
                     androidx.fragment.app.a b10 = bVarArr[i11].b(this);
                     if (O0(2)) {
-                        Log.v("FragmentManager", "restoreAllState: back stack #" + i11 + " (index " + b10.f4183v + "): " + b10);
+                        Log.v("FragmentManager", "restoreAllState: back stack #" + i11 + " (index " + b10.f4295v + "): " + b10);
                         PrintWriter printWriter = new PrintWriter(new q0("FragmentManager"));
                         b10.y("  ", printWriter, false);
                         printWriter.close();
                     }
-                    this.f4100d.add(b10);
+                    this.f4212d.add(b10);
                     i11++;
                 }
             } else {
-                this.f4100d = new ArrayList();
+                this.f4212d = new ArrayList();
             }
-            this.f4107k.set(f0Var.f4260o);
-            String str3 = f0Var.f4261p;
+            this.f4219k.set(f0Var.f4372o);
+            String str3 = f0Var.f4373p;
             if (str3 != null) {
                 Fragment k02 = k0(str3);
                 this.A = k02;
                 Q(k02);
             }
-            ArrayList arrayList = f0Var.f4262q;
+            ArrayList arrayList = f0Var.f4374q;
             if (arrayList != null) {
                 for (int i12 = 0; i12 < arrayList.size(); i12++) {
-                    this.f4108l.put((String) arrayList.get(i12), (androidx.fragment.app.c) f0Var.f4263r.get(i12));
+                    this.f4220l.put((String) arrayList.get(i12), (androidx.fragment.app.c) f0Var.f4375r.get(i12));
                 }
             }
-            this.I = new ArrayDeque(f0Var.f4264s);
+            this.I = new ArrayDeque(f0Var.f4376s);
         }
     }
 
@@ -2289,23 +2289,23 @@ public abstract class FragmentManager {
 
     void s() {
         if (O0(3)) {
-            Log.d("FragmentManager", "cancelBackStackTransition for transition " + this.f4104h);
+            Log.d("FragmentManager", "cancelBackStackTransition for transition " + this.f4216h);
         }
-        androidx.fragment.app.a aVar = this.f4104h;
+        androidx.fragment.app.a aVar = this.f4216h;
         if (aVar != null) {
-            aVar.f4182u = false;
+            aVar.f4294u = false;
             aVar.v();
-            this.f4104h.q(true, new Runnable() { // from class: androidx.fragment.app.d0
+            this.f4216h.q(true, new Runnable() { // from class: androidx.fragment.app.d0
                 @Override // java.lang.Runnable
                 public final void run() {
                     FragmentManager.c(FragmentManager.this);
                 }
             });
-            this.f4104h.g();
-            this.f4105i = true;
+            this.f4216h.g();
+            this.f4217i = true;
             j0();
-            this.f4105i = false;
-            this.f4104h = null;
+            this.f4217i = false;
+            this.f4216h = null;
         }
     }
 
@@ -2318,42 +2318,42 @@ public abstract class FragmentManager {
         f0(true);
         this.K = true;
         this.R.p(true);
-        ArrayList y10 = this.f4099c.y();
-        HashMap m10 = this.f4099c.m();
+        ArrayList y10 = this.f4211c.y();
+        HashMap m10 = this.f4211c.m();
         if (m10.isEmpty()) {
             if (O0(2)) {
                 Log.v("FragmentManager", "saveAllState: no fragments!");
                 return bundle;
             }
         } else {
-            ArrayList z10 = this.f4099c.z();
-            int size = this.f4100d.size();
+            ArrayList z10 = this.f4211c.z();
+            int size = this.f4212d.size();
             if (size > 0) {
                 bVarArr = new androidx.fragment.app.b[size];
                 for (int i10 = 0; i10 < size; i10++) {
-                    bVarArr[i10] = new androidx.fragment.app.b((androidx.fragment.app.a) this.f4100d.get(i10));
+                    bVarArr[i10] = new androidx.fragment.app.b((androidx.fragment.app.a) this.f4212d.get(i10));
                     if (O0(2)) {
-                        Log.v("FragmentManager", "saveAllState: adding back stack #" + i10 + ": " + this.f4100d.get(i10));
+                        Log.v("FragmentManager", "saveAllState: adding back stack #" + i10 + ": " + this.f4212d.get(i10));
                     }
                 }
             } else {
                 bVarArr = null;
             }
             f0 f0Var = new f0();
-            f0Var.f4257d = y10;
-            f0Var.f4258e = z10;
-            f0Var.f4259i = bVarArr;
-            f0Var.f4260o = this.f4107k.get();
+            f0Var.f4369d = y10;
+            f0Var.f4370e = z10;
+            f0Var.f4371i = bVarArr;
+            f0Var.f4372o = this.f4219k.get();
             Fragment fragment = this.A;
             if (fragment != null) {
-                f0Var.f4261p = fragment.mWho;
+                f0Var.f4373p = fragment.mWho;
             }
-            f0Var.f4262q.addAll(this.f4108l.keySet());
-            f0Var.f4263r.addAll(this.f4108l.values());
-            f0Var.f4264s = new ArrayList(this.I);
+            f0Var.f4374q.addAll(this.f4220l.keySet());
+            f0Var.f4375r.addAll(this.f4220l.values());
+            f0Var.f4376s = new ArrayList(this.I);
             bundle.putParcelable("state", f0Var);
-            for (String str : this.f4109m.keySet()) {
-                bundle.putBundle("result_" + str, (Bundle) this.f4109m.get(str));
+            for (String str : this.f4221m.keySet()) {
+                bundle.putBundle("result_" + str, (Bundle) this.f4221m.get(str));
             }
             for (String str2 : m10.keySet()) {
                 bundle.putBundle("fragment_" + str2, (Bundle) m10.get(str2));
@@ -2364,7 +2364,7 @@ public abstract class FragmentManager {
 
     boolean t() {
         boolean z10 = false;
-        for (Fragment fragment : this.f4099c.l()) {
+        for (Fragment fragment : this.f4211c.l()) {
             if (fragment != null) {
                 z10 = P0(fragment);
                 continue;
@@ -2378,9 +2378,9 @@ public abstract class FragmentManager {
 
     Set t0(androidx.fragment.app.a aVar) {
         HashSet hashSet = new HashSet();
-        for (int i10 = 0; i10 < aVar.f4149c.size(); i10++) {
-            Fragment fragment = ((FragmentTransaction.a) aVar.f4149c.get(i10)).f4167b;
-            if (fragment != null && aVar.f4155i) {
+        for (int i10 = 0; i10 < aVar.f4261c.size(); i10++) {
+            Fragment fragment = ((FragmentTransaction.a) aVar.f4261c.get(i10)).f4279b;
+            if (fragment != null && aVar.f4267i) {
                 hashSet.add(fragment);
             }
         }
@@ -2388,11 +2388,11 @@ public abstract class FragmentManager {
     }
 
     void t1() {
-        synchronized (this.f4097a) {
+        synchronized (this.f4209a) {
             try {
-                if (this.f4097a.size() == 1) {
-                    this.f4120x.h().removeCallbacks(this.T);
-                    this.f4120x.h().post(this.T);
+                if (this.f4209a.size() == 1) {
+                    this.f4232x.i().removeCallbacks(this.T);
+                    this.f4232x.i().post(this.T);
                     D1();
                 }
             } catch (Throwable th2) {
@@ -2406,18 +2406,18 @@ public abstract class FragmentManager {
         sb2.append("FragmentManager{");
         sb2.append(Integer.toHexString(System.identityHashCode(this)));
         sb2.append(" in ");
-        Fragment fragment = this.f4122z;
+        Fragment fragment = this.f4234z;
         if (fragment != null) {
             sb2.append(fragment.getClass().getSimpleName());
             sb2.append("{");
-            sb2.append(Integer.toHexString(System.identityHashCode(this.f4122z)));
+            sb2.append(Integer.toHexString(System.identityHashCode(this.f4234z)));
             sb2.append("}");
         } else {
-            FragmentHostCallback fragmentHostCallback = this.f4120x;
+            FragmentHostCallback fragmentHostCallback = this.f4232x;
             if (fragmentHostCallback != null) {
                 sb2.append(fragmentHostCallback.getClass().getSimpleName());
                 sb2.append("{");
-                sb2.append(Integer.toHexString(System.identityHashCode(this.f4120x)));
+                sb2.append(Integer.toHexString(System.identityHashCode(this.f4232x)));
                 sb2.append("}");
             } else {
                 sb2.append("null");
@@ -2437,8 +2437,8 @@ public abstract class FragmentManager {
 
     public int v0() {
         int i10;
-        int size = this.f4100d.size();
-        if (this.f4104h != null) {
+        int size = this.f4212d.size();
+        if (this.f4216h != null) {
             i10 = 1;
         } else {
             i10 = 0;
@@ -2447,11 +2447,11 @@ public abstract class FragmentManager {
     }
 
     public final void v1(String str, Bundle bundle) {
-        n nVar = (n) this.f4110n.get(str);
-        if (nVar != null && nVar.b(Lifecycle.State.f4408o)) {
+        n nVar = (n) this.f4222n.get(str);
+        if (nVar != null && nVar.b(Lifecycle.State.f4520o)) {
             nVar.a(str, bundle);
         } else {
-            this.f4109m.put(str, bundle);
+            this.f4221m.put(str, bundle);
         }
         if (O0(2)) {
             Log.v("FragmentManager", "Setting fragment result with key " + str + " and result " + bundle);
@@ -2460,11 +2460,11 @@ public abstract class FragmentManager {
 
     public final void w1(String str, LifecycleOwner lifecycleOwner, i0 i0Var) {
         Lifecycle lifecycle = lifecycleOwner.getLifecycle();
-        if (lifecycle.b() == Lifecycle.State.f4405d) {
+        if (lifecycle.b() == Lifecycle.State.f4517d) {
             return;
         }
         g gVar = new g(str, i0Var, lifecycle);
-        n nVar = (n) this.f4110n.put(str, new n(lifecycle, i0Var, gVar));
+        n nVar = (n) this.f4222n.put(str, new n(lifecycle, i0Var, gVar));
         if (nVar != null) {
             nVar.c();
         }
@@ -2475,7 +2475,7 @@ public abstract class FragmentManager {
     }
 
     public final void x(String str) {
-        this.f4109m.remove(str);
+        this.f4221m.remove(str);
         if (O0(2)) {
             Log.v("FragmentManager", "Clearing fragment result with key " + str);
         }
@@ -2483,7 +2483,7 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public FragmentContainer x0() {
-        return this.f4121y;
+        return this.f4233y;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -2510,9 +2510,9 @@ public abstract class FragmentManager {
         ViewGroup viewGroup;
         HashSet hashSet = new HashSet();
         while (i10 < i11) {
-            Iterator it = ((androidx.fragment.app.a) arrayList.get(i10)).f4149c.iterator();
+            Iterator it = ((androidx.fragment.app.a) arrayList.get(i10)).f4261c.iterator();
             while (it.hasNext()) {
-                Fragment fragment = ((FragmentTransaction.a) it.next()).f4167b;
+                Fragment fragment = ((FragmentTransaction.a) it.next()).f4279b;
                 if (fragment != null && (viewGroup = fragment.mContainer) != null) {
                     hashSet.add(t0.u(viewGroup, this));
                 }
@@ -2527,7 +2527,7 @@ public abstract class FragmentManager {
         if (uVar != null) {
             return uVar;
         }
-        Fragment fragment = this.f4122z;
+        Fragment fragment = this.f4234z;
         if (fragment != null) {
             return fragment.mFragmentManager.z0();
         }
@@ -2540,10 +2540,10 @@ public abstract class FragmentManager {
         public static final Parcelable.Creator<m> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        String f4137d;
+        String f4249d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f4138e;
+        int f4250e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Parcelable.Creator {
@@ -2564,8 +2564,8 @@ public abstract class FragmentManager {
         }
 
         m(String str, int i10) {
-            this.f4137d = str;
-            this.f4138e = i10;
+            this.f4249d = str;
+            this.f4250e = i10;
         }
 
         @Override // android.os.Parcelable
@@ -2575,13 +2575,13 @@ public abstract class FragmentManager {
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeString(this.f4137d);
-            parcel.writeInt(this.f4138e);
+            parcel.writeString(this.f4249d);
+            parcel.writeInt(this.f4250e);
         }
 
         m(Parcel parcel) {
-            this.f4137d = parcel.readString();
-            this.f4138e = parcel.readInt();
+            this.f4249d = parcel.readString();
+            this.f4250e = parcel.readInt();
         }
     }
 }

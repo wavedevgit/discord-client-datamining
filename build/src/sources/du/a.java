@@ -2,51 +2,68 @@ package du;
 
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import okhttp3.Headers;
-import okio.BufferedSource;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a {
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final C0272a f21057c = new C0272a(null);
+public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final BufferedSource f21058a;
+    private final String f21246a;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f21059b;
+    private final boolean f21247b;
 
-    /* renamed from: du.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0272a {
-        public /* synthetic */ C0272a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: c  reason: collision with root package name */
+    private d f21248c;
 
-        private C0272a() {
-        }
+    /* renamed from: d  reason: collision with root package name */
+    private long f21249d;
+
+    public a(String name, boolean z10) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        this.f21246a = name;
+        this.f21247b = z10;
+        this.f21249d = -1L;
     }
 
-    public a(BufferedSource source) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        this.f21058a = source;
-        this.f21059b = 262144L;
-    }
-
-    public final Headers a() {
-        Headers.a aVar = new Headers.a();
-        while (true) {
-            String b10 = b();
-            if (b10.length() == 0) {
-                return aVar.f();
-            }
-            aVar.c(b10);
-        }
+    public final boolean a() {
+        return this.f21247b;
     }
 
     public final String b() {
-        String e02 = this.f21058a.e0(this.f21059b);
-        this.f21059b -= e02.length();
-        return e02;
+        return this.f21246a;
+    }
+
+    public final long c() {
+        return this.f21249d;
+    }
+
+    public final d d() {
+        return this.f21248c;
+    }
+
+    public final void e(d queue) {
+        Intrinsics.checkNotNullParameter(queue, "queue");
+        d dVar = this.f21248c;
+        if (dVar == queue) {
+            return;
+        }
+        if (dVar == null) {
+            this.f21248c = queue;
+            return;
+        }
+        throw new IllegalStateException("task is in multiple queues");
+    }
+
+    public abstract long f();
+
+    public final void g(long j10) {
+        this.f21249d = j10;
+    }
+
+    public String toString() {
+        return this.f21246a;
+    }
+
+    public /* synthetic */ a(String str, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(str, (i10 & 2) != 0 ? true : z10);
     }
 }

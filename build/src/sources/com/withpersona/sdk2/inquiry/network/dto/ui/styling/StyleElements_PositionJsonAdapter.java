@@ -40,18 +40,18 @@ public final class StyleElements_PositionJsonAdapter extends h {
     @NotNull
     public StyleElements.Position fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.PositionType positionType = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 positionType = (StyleElements.PositionType) this.nullablePositionTypeAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StyleElements.Position(positionType);
     }
 
@@ -59,8 +59,8 @@ public final class StyleElements_PositionJsonAdapter extends h {
     public void toJson(@NotNull t writer, StyleElements.Position position) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (position != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullablePositionTypeAdapter.toJson(writer, position.getBase());
             writer.E();
             return;

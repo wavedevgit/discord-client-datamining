@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = _closure1_slot2;
         var1 = var2.addConditionalChangeListener;
         var0 = function() { // Environment: var0
-            _fun81081: for (var _fun81081_ip = 0;;) switch (_fun81081_ip) {
+            _fun81100: for (var _fun81100_ip = 0;;) switch (_fun81100_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var2 = var3.getDefaultChannel;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 == var2;
                     if (var0) {
-                        _fun81081_ip = 64;
-                        continue _fun81081
+                        _fun81100_ip = 64;
+                        continue _fun81100
                     }
                 case 40:
                     var2 = global;
@@ -82,4 +82,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showInstantInviteModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1671, 660, 8331, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1671, 660, 8350, 2]);

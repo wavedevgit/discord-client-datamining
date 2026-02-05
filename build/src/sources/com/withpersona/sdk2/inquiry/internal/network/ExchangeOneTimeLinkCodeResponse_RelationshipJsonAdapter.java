@@ -13,39 +13,39 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_RelationshipJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18819a;
+    private final m.b f19225a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18820b;
+    private final com.squareup.moshi.h f19226b;
 
     public ExchangeOneTimeLinkCodeResponse_RelationshipJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18819a = a10;
+        this.f19225a = a10;
         com.squareup.moshi.h f10 = moshi.f(ExchangeOneTimeLinkCodeResponse.RelationshipData.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18820b = f10;
+        this.f19226b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public ExchangeOneTimeLinkCodeResponse.Relationship fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         ExchangeOneTimeLinkCodeResponse.RelationshipData relationshipData = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f18819a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    relationshipData = (ExchangeOneTimeLinkCodeResponse.RelationshipData) this.f18820b.fromJson(reader);
+            int W = reader.W(this.f19225a);
+            if (W != -1) {
+                if (W == 0) {
+                    relationshipData = (ExchangeOneTimeLinkCodeResponse.RelationshipData) this.f19226b.fromJson(reader);
                 }
             } else {
                 reader.E0();
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         return new ExchangeOneTimeLinkCodeResponse.Relationship(relationshipData);
     }
 
@@ -54,9 +54,9 @@ public final class ExchangeOneTimeLinkCodeResponse_RelationshipJsonAdapter exten
     public void toJson(t writer, ExchangeOneTimeLinkCodeResponse.Relationship relationship) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (relationship != null) {
-            writer.l();
-            writer.A0("data");
-            this.f18820b.toJson(writer, relationship.a());
+            writer.k();
+            writer.W("data");
+            this.f19226b.toJson(writer, relationship.a());
             writer.E();
             return;
         }

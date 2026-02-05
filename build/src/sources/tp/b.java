@@ -1,52 +1,105 @@
 package tp;
-
-import android.location.Location;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
+public interface b {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Location f50204a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements b {
 
-    /* renamed from: b  reason: collision with root package name */
-    private final c f50205b;
+        /* renamed from: a  reason: collision with root package name */
+        public static final a f50885a = new a();
 
-    public b(Location location, c precision) {
-        Intrinsics.checkNotNullParameter(location, "location");
-        Intrinsics.checkNotNullParameter(precision, "precision");
-        this.f50204a = location;
-        this.f50205b = precision;
-    }
-
-    public final Location a() {
-        return this.f50204a;
-    }
-
-    public final c b() {
-        return this.f50205b;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+        private a() {
         }
-        if (!(obj instanceof b)) {
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof a)) {
+                return true;
+            }
             return false;
         }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f50204a, bVar.f50204a) && this.f50205b == bVar.f50205b) {
-            return true;
+
+        public int hashCode() {
+            return -1611120582;
         }
-        return false;
+
+        public String toString() {
+            return "Pending";
+        }
     }
 
-    public int hashCode() {
-        return (this.f50204a.hashCode() * 31) + this.f50205b.hashCode();
+    /* renamed from: tp.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0654b implements b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final C0654b f50886a = new C0654b();
+
+        private C0654b() {
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof C0654b)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return -39927199;
+        }
+
+        public String toString() {
+            return "Prompt";
+        }
     }
 
-    public String toString() {
-        Location location = this.f50204a;
-        c cVar = this.f50205b;
-        return "GpsData(location=" + location + ", precision=" + cVar + ")";
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c implements b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final c f50887a = new c();
+
+        private c() {
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof c)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return 5529685;
+        }
+
+        public String toString() {
+            return "Review";
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class d implements b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final d f50888a = new d();
+
+        private d() {
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof d)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return -1776980018;
+        }
+
+        public String toString() {
+            return "TakePhoto";
+        }
     }
 }

@@ -7,50 +7,50 @@ import kotlin.collections.o0;
 import kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.NullabilityQualifier;
 import kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.NullabilityQualifierWithMigrationStatus;
 import kotlin.reflect.jvm.internal.impl.name.FqName;
-import lr.v;
+import or.v;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class JavaDefaultQualifiersKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f33157a;
+    private static final List f32681a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final List f33158b;
+    private static final List f32682b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f33159c;
+    private static final Map f32683c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f33160d;
+    private static final Map f32684d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Map f33161e;
+    private static final Map f32685e;
 
     static {
         AnnotationQualifierApplicabilityType annotationQualifierApplicabilityType = AnnotationQualifierApplicabilityType.FIELD;
         AnnotationQualifierApplicabilityType annotationQualifierApplicabilityType2 = AnnotationQualifierApplicabilityType.METHOD_RETURN_TYPE;
         AnnotationQualifierApplicabilityType annotationQualifierApplicabilityType3 = AnnotationQualifierApplicabilityType.VALUE_PARAMETER;
         List o10 = CollectionsKt.o(annotationQualifierApplicabilityType, annotationQualifierApplicabilityType2, annotationQualifierApplicabilityType3, AnnotationQualifierApplicabilityType.TYPE_PARAMETER_BOUNDS, AnnotationQualifierApplicabilityType.TYPE_USE);
-        f33157a = o10;
+        f32681a = o10;
         List e10 = CollectionsKt.e(annotationQualifierApplicabilityType3);
-        f33158b = e10;
+        f32682b = e10;
         FqName jspecify_old_null_marked_annotation_fq_name = JvmAnnotationNamesKt.getJSPECIFY_OLD_NULL_MARKED_ANNOTATION_FQ_NAME();
         NullabilityQualifier nullabilityQualifier = NullabilityQualifier.NOT_NULL;
         Map m10 = o0.m(v.a(jspecify_old_null_marked_annotation_fq_name, new JavaDefaultQualifiers(new NullabilityQualifierWithMigrationStatus(nullabilityQualifier, false, 2, null), o10, false)), v.a(JvmAnnotationNamesKt.getJSPECIFY_NULL_MARKED_ANNOTATION_FQ_NAME(), new JavaDefaultQualifiers(new NullabilityQualifierWithMigrationStatus(nullabilityQualifier, false, 2, null), o10, false)), v.a(JvmAnnotationNamesKt.getJSPECIFY_NULL_UNMARKED_ANNOTATION_FQ_NAME(), new JavaDefaultQualifiers(new NullabilityQualifierWithMigrationStatus(NullabilityQualifier.FORCE_FLEXIBILITY, false, 2, null), o10, false, 4, null)));
-        f33159c = m10;
+        f32683c = m10;
         Map m11 = o0.m(v.a(JvmAnnotationNamesKt.getJAVAX_PARAMETERS_ARE_NONNULL_BY_DEFAULT_ANNOTATION_FQ_NAME(), new JavaDefaultQualifiers(new NullabilityQualifierWithMigrationStatus(nullabilityQualifier, false, 2, null), e10, false, 4, null)), v.a(JvmAnnotationNamesKt.getJAVAX_PARAMETERS_ARE_NULLABLE_BY_DEFAULT_ANNOTATION_FQ_NAME(), new JavaDefaultQualifiers(new NullabilityQualifierWithMigrationStatus(NullabilityQualifier.NULLABLE, false, 2, null), e10, false, 4, null)));
-        f33160d = m11;
-        f33161e = o0.q(m10, m11);
+        f32684d = m11;
+        f32685e = o0.q(m10, m11);
     }
 
     @NotNull
     public static final Map<FqName, JavaDefaultQualifiers> getBUILT_IN_TYPE_QUALIFIER_DEFAULT_ANNOTATIONS() {
-        return f33161e;
+        return f32685e;
     }
 
     @NotNull
     public static final Map<FqName, JavaDefaultQualifiers> getJSPECIFY_DEFAULT_ANNOTATIONS() {
-        return f33159c;
+        return f32683c;
     }
 }

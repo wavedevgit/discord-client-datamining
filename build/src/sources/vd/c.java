@@ -5,14 +5,14 @@ import com.google.android.exoplayer2.upstream.DataSource;
 public final class c implements g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DataSource.Factory f51385a;
+    private final DataSource.Factory f52074a;
 
     public c(DataSource.Factory factory) {
-        this.f51385a = factory;
+        this.f52074a = factory;
     }
 
     @Override // vd.g
     public DataSource a(int i10) {
-        return this.f51385a.createDataSource();
+        return this.f52074a.createDataSource();
     }
 }

@@ -6,60 +6,60 @@ import kotlin.jvm.internal.LongCompanionObject;
 public final class r0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private long[] f40168a;
+    private long[] f39628a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Object[] f40169b;
+    private Object[] f39629b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f40170c;
+    private int f39630c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f40171d;
+    private int f39631d;
 
     public r0() {
         this(10);
     }
 
     private void b(long j10, Object obj) {
-        int i10 = this.f40170c;
-        int i11 = this.f40171d;
-        Object[] objArr = this.f40169b;
+        int i10 = this.f39630c;
+        int i11 = this.f39631d;
+        Object[] objArr = this.f39629b;
         int length = (i10 + i11) % objArr.length;
-        this.f40168a[length] = j10;
+        this.f39628a[length] = j10;
         objArr[length] = obj;
-        this.f40171d = i11 + 1;
+        this.f39631d = i11 + 1;
     }
 
     private void d(long j10) {
-        int i10 = this.f40171d;
+        int i10 = this.f39631d;
         if (i10 > 0) {
-            if (j10 <= this.f40168a[((this.f40170c + i10) - 1) % this.f40169b.length]) {
+            if (j10 <= this.f39628a[((this.f39630c + i10) - 1) % this.f39629b.length]) {
                 c();
             }
         }
     }
 
     private void e() {
-        int length = this.f40169b.length;
-        if (this.f40171d < length) {
+        int length = this.f39629b.length;
+        if (this.f39631d < length) {
             return;
         }
         int i10 = length * 2;
         long[] jArr = new long[i10];
         Object[] f10 = f(i10);
-        int i11 = this.f40170c;
+        int i11 = this.f39630c;
         int i12 = length - i11;
-        System.arraycopy(this.f40168a, i11, jArr, 0, i12);
-        System.arraycopy(this.f40169b, this.f40170c, f10, 0, i12);
-        int i13 = this.f40170c;
+        System.arraycopy(this.f39628a, i11, jArr, 0, i12);
+        System.arraycopy(this.f39629b, this.f39630c, f10, 0, i12);
+        int i13 = this.f39630c;
         if (i13 > 0) {
-            System.arraycopy(this.f40168a, 0, jArr, i12, i13);
-            System.arraycopy(this.f40169b, 0, f10, i12, this.f40170c);
+            System.arraycopy(this.f39628a, 0, jArr, i12, i13);
+            System.arraycopy(this.f39629b, 0, f10, i12, this.f39630c);
         }
-        this.f40168a = jArr;
-        this.f40169b = f10;
-        this.f40170c = 0;
+        this.f39628a = jArr;
+        this.f39629b = f10;
+        this.f39630c = 0;
     }
 
     private static Object[] f(int i10) {
@@ -69,8 +69,8 @@ public final class r0 {
     private Object h(long j10, boolean z10) {
         Object obj = null;
         long j11 = LongCompanionObject.MAX_VALUE;
-        while (this.f40171d > 0) {
-            long j12 = j10 - this.f40168a[this.f40170c];
+        while (this.f39631d > 0) {
+            long j12 = j10 - this.f39628a[this.f39630c];
             if (j12 < 0 && (z10 || (-j12) >= j11)) {
                 break;
             }
@@ -82,18 +82,18 @@ public final class r0 {
 
     private Object k() {
         boolean z10;
-        if (this.f40171d > 0) {
+        if (this.f39631d > 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         a.g(z10);
-        Object[] objArr = this.f40169b;
-        int i10 = this.f40170c;
+        Object[] objArr = this.f39629b;
+        int i10 = this.f39630c;
         Object obj = objArr[i10];
         objArr[i10] = null;
-        this.f40170c = (i10 + 1) % objArr.length;
-        this.f40171d--;
+        this.f39630c = (i10 + 1) % objArr.length;
+        this.f39631d--;
         return obj;
     }
 
@@ -104,9 +104,9 @@ public final class r0 {
     }
 
     public synchronized void c() {
-        this.f40170c = 0;
-        this.f40171d = 0;
-        Arrays.fill(this.f40169b, (Object) null);
+        this.f39630c = 0;
+        this.f39631d = 0;
+        Arrays.fill(this.f39629b, (Object) null);
     }
 
     public synchronized Object g(long j10) {
@@ -115,7 +115,7 @@ public final class r0 {
 
     public synchronized Object i() {
         Object k10;
-        if (this.f40171d == 0) {
+        if (this.f39631d == 0) {
             k10 = null;
         } else {
             k10 = k();
@@ -128,11 +128,11 @@ public final class r0 {
     }
 
     public synchronized int l() {
-        return this.f40171d;
+        return this.f39631d;
     }
 
     public r0(int i10) {
-        this.f40168a = new long[i10];
-        this.f40169b = f(i10);
+        this.f39628a = new long[i10];
+        this.f39629b = f(i10);
     }
 }

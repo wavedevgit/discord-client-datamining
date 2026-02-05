@@ -1,7 +1,7 @@
 package vc;
 
 import com.google.android.exoplayer2.Format;
-import ji.s;
+import mi.s;
 import ne.h0;
 import ne.w0;
 import ne.y;
@@ -9,10 +9,10 @@ import ne.y;
 final class g implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Format f51375a;
+    public final Format f52064a;
 
     public g(Format format) {
-        this.f51375a = format;
+        this.f52064a = format;
     }
 
     private static String a(int i10) {
@@ -107,7 +107,7 @@ final class g implements a {
             bVar.a0(g02);
         }
         if ("audio/mp4a-latm".equals(b10) && z12 > 0) {
-            bVar.V(s.s(bArr));
+            bVar.V(s.t(bArr));
         }
         return new g(bVar.G());
     }

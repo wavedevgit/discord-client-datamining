@@ -86,7 +86,7 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
     static {
         LegacyArchitectureLogger.assertLegacyArchitecture("UIManagerModule", LegacyArchitectureLogLevel.ERROR);
         TAG = UIManagerModule.class.getSimpleName();
-        DEBUG = a9.c.a().a(b9.a.f6363g);
+        DEBUG = a9.c.a().a(b9.a.f6210g);
     }
 
     public UIManagerModule(ReactApplicationContext reactApplicationContext, ViewManagerResolver viewManagerResolver, int i10) {
@@ -150,7 +150,7 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
         if (DEBUG) {
             String str2 = "(UIManager.createView) tag: " + i10 + ", class: " + str + ", props: " + readableMap;
             p8.a.b(ReactConstants.TAG, str2);
-            a9.c.a().c(b9.a.f6363g, str2);
+            a9.c.a().c(b9.a.f6210g, str2);
         }
         this.mUIImplementation.createView(i10, str, i11, readableMap);
     }
@@ -266,7 +266,7 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
         if (DEBUG) {
             String str = "(UIManager.manageChildren) tag: " + i10 + ", moveFrom: " + readableArray + ", moveTo: " + readableArray2 + ", addTags: " + readableArray3 + ", atIndices: " + readableArray4 + ", removeFrom: " + readableArray5;
             p8.a.b(ReactConstants.TAG, str);
-            a9.c.a().c(b9.a.f6363g, str);
+            a9.c.a().c(b9.a.f6210g, str);
         }
         this.mUIImplementation.manageChildren(i10, readableArray, readableArray2, readableArray3, readableArray4, readableArray5);
     }
@@ -401,7 +401,7 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
         if (DEBUG) {
             String str = "(UIManager.setChildren) tag: " + i10 + ", children: " + readableArray;
             p8.a.b(ReactConstants.TAG, str);
-            a9.c.a().c(b9.a.f6363g, str);
+            a9.c.a().c(b9.a.f6210g, str);
         }
         this.mUIImplementation.setChildren(i10, readableArray);
     }
@@ -477,7 +477,7 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements OnBat
         if (DEBUG) {
             String str2 = "(UIManager.updateView) tag: " + i10 + ", class: " + str + ", props: " + readableMap;
             p8.a.b(ReactConstants.TAG, str2);
-            a9.c.a().c(b9.a.f6363g, str2);
+            a9.c.a().c(b9.a.f6210g, str2);
         }
         this.mUIImplementation.updateView(i10, str, readableMap);
     }

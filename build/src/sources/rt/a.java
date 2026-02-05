@@ -1,15 +1,10 @@
 package rt;
-
-import net.time4j.history.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
+class a extends pt.r {
+    private static final long serialVersionUID = -4315329288187364457L;
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final mt.c f49110a = nt.a.e("CALENDAR_HISTORY", d.class);
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final mt.c f49111b = nt.a.e("COMMON_ERA", Boolean.class);
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final mt.c f49112c = nt.a.e("LATIN_ERA", Boolean.class);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public a(pt.p pVar) {
+        super("Duplicate element parsed with different values: " + pVar.name());
+    }
 }

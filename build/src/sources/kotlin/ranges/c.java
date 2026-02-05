@@ -3,14 +3,14 @@ package kotlin.ranges;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c extends b implements cs.a {
+public final class c extends b implements fs.a {
     @NotNull
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f32566p = new a(null);
+    public static final a f32090p = new a(null);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final c f32567q = new c(1, 0);
+    private static final c f32091q = new c(1, 0);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -19,7 +19,7 @@ public final class c extends b implements cs.a {
         }
 
         public final c a() {
-            return c.f32567q;
+            return c.f32091q;
         }
 
         private a() {
@@ -53,13 +53,13 @@ public final class c extends b implements cs.a {
         return (int) ((31 * (d() ^ (d() >>> 32))) + (e() ^ (e() >>> 32)));
     }
 
-    @Override // cs.a
+    @Override // fs.a
     /* renamed from: i */
     public Long c() {
         return Long.valueOf(e());
     }
 
-    @Override // kotlin.ranges.b, cs.a
+    @Override // kotlin.ranges.b, fs.a
     public boolean isEmpty() {
         if (d() > e()) {
             return true;
@@ -67,7 +67,7 @@ public final class c extends b implements cs.a {
         return false;
     }
 
-    @Override // cs.a
+    @Override // fs.a
     /* renamed from: j */
     public Long b() {
         return Long.valueOf(d());

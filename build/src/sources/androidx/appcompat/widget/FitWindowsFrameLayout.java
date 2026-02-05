@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 public class FitWindowsFrameLayout extends FrameLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private g0 f1487d;
+    private g0 f1599d;
 
     public FitWindowsFrameLayout(@NonNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -17,7 +17,7 @@ public class FitWindowsFrameLayout extends FrameLayout {
 
     @Override // android.view.View
     protected boolean fitSystemWindows(Rect rect) {
-        g0 g0Var = this.f1487d;
+        g0 g0Var = this.f1599d;
         if (g0Var != null) {
             g0Var.a(rect);
         }
@@ -25,6 +25,6 @@ public class FitWindowsFrameLayout extends FrameLayout {
     }
 
     public void setOnFitSystemWindowsListener(g0 g0Var) {
-        this.f1487d = g0Var;
+        this.f1599d = g0Var;
     }
 }

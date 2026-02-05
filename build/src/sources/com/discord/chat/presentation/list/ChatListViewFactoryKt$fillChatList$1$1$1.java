@@ -32,20 +32,20 @@ final class ChatListViewFactoryKt$fillChatList$1$1$1 extends kotlin.coroutines.j
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        rr.b.f();
+        ur.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             RecyclerView.RecycledViewPool recycledViewPool = this.$chatListViewPool;
             for (RecyclerView.ViewHolder viewHolder : this.$items) {
                 recycledViewPool.putRecycledView(viewHolder);
             }
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatListViewFactoryKt$fillChatList$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((ChatListViewFactoryKt$fillChatList$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

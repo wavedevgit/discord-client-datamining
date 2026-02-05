@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var6.bind(var0)(var1);
     var5 = var8.memoize;
     var1 = function(arg0) { // Environment: var3
-        _fun54643: for (var _fun54643_ip = 0;;) switch (_fun54643_ip) {
+        _fun54667: for (var _fun54667_ip = 0;;) switch (_fun54667_ip) {
             case 0:
                 var5 = arg0;
                 var0 = var5.length;
@@ -33,8 +33,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 0;
                 var1 = 0;
                 if (!var0) {
-                    _fun54643_ip = 62;
-                    continue _fun54643
+                    _fun54667_ip = 62;
+                    continue _fun54667
                 }
             case 24:
                 var0 = var5.charCodeAt;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.length;
                 var2 = var3;
                 if (var1 < var0) {
-                    _fun54643_ip = 24;
-                    continue _fun54643
+                    _fun54667_ip = 24;
+                    continue _fun54667
                 }
             case 62:
                 var0 = global;

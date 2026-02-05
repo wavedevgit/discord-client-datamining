@@ -74,7 +74,7 @@ public final class RecyclerViewExtensionsKt {
                 recyclerView.scrollToPosition(i10);
                 return;
             } else {
-                scrollToPositionWithOffset(recyclerView, i10, (recyclerView.getHeight() - (i12 * 2)) - i11);
+                scrollToPositionWithOffset(recyclerView, i10, (recyclerView.getHeight() - i12) - i11);
                 return;
             }
         }

@@ -1,115 +1,124 @@
 package hu;
 
-import android.util.Log;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.concurrent.CopyOnWriteArraySet;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import kotlin.collections.o0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
-import okhttp3.OkHttpClient;
+import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class c {
 
+    /* renamed from: d  reason: collision with root package name */
+    public static final a f27013d = new a(null);
+
+    /* renamed from: e  reason: collision with root package name */
+    public static final ByteString f27014e;
+
+    /* renamed from: f  reason: collision with root package name */
+    public static final ByteString f27015f;
+
+    /* renamed from: g  reason: collision with root package name */
+    public static final ByteString f27016g;
+
+    /* renamed from: h  reason: collision with root package name */
+    public static final ByteString f27017h;
+
+    /* renamed from: i  reason: collision with root package name */
+    public static final ByteString f27018i;
+
+    /* renamed from: j  reason: collision with root package name */
+    public static final ByteString f27019j;
+
     /* renamed from: a  reason: collision with root package name */
-    public static final c f28159a = new c();
+    public final ByteString f27020a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final CopyOnWriteArraySet f28160b = new CopyOnWriteArraySet();
+    public final ByteString f27021b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f28161c;
+    public final int f27022c;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private a() {
+        }
+    }
 
     static {
-        String str;
-        LinkedHashMap linkedHashMap = new LinkedHashMap();
-        Package r22 = OkHttpClient.class.getPackage();
-        if (r22 != null) {
-            str = r22.getName();
-        } else {
-            str = null;
-        }
-        if (str != null) {
-            linkedHashMap.put(str, "OkHttp");
-        }
-        String name = OkHttpClient.class.getName();
-        Intrinsics.checkNotNullExpressionValue(name, "OkHttpClient::class.java.name");
-        linkedHashMap.put(name, "okhttp.OkHttpClient");
-        String name2 = eu.e.class.getName();
-        Intrinsics.checkNotNullExpressionValue(name2, "Http2::class.java.name");
-        linkedHashMap.put(name2, "okhttp.Http2");
-        String name3 = au.e.class.getName();
-        Intrinsics.checkNotNullExpressionValue(name3, "TaskRunner::class.java.name");
-        linkedHashMap.put(name3, "okhttp.TaskRunner");
-        linkedHashMap.put("okhttp3.mockwebserver.MockWebServer", "okhttp.MockWebServer");
-        f28161c = o0.w(linkedHashMap);
+        ByteString.a aVar = ByteString.f44060o;
+        f27014e = aVar.g(":");
+        f27015f = aVar.g(":status");
+        f27016g = aVar.g(":method");
+        f27017h = aVar.g(":path");
+        f27018i = aVar.g(":scheme");
+        f27019j = aVar.g(":authority");
     }
 
-    private c() {
+    public c(ByteString name, ByteString value) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        Intrinsics.checkNotNullParameter(value, "value");
+        this.f27020a = name;
+        this.f27021b = value;
+        this.f27022c = name.G() + 32 + value.G();
     }
 
-    private final void c(String str, String str2) {
-        Level level;
-        Logger logger = Logger.getLogger(str);
-        if (f28160b.add(logger)) {
-            logger.setUseParentHandlers(false);
-            if (Log.isLoggable(str2, 3)) {
-                level = Level.FINE;
-            } else if (Log.isLoggable(str2, 4)) {
-                level = Level.INFO;
-            } else {
-                level = Level.WARNING;
-            }
-            logger.setLevel(level);
-            logger.addHandler(d.f28162a);
-        }
+    public final ByteString a() {
+        return this.f27020a;
     }
 
-    private final String d(String str) {
-        String str2 = (String) f28161c.get(str);
-        if (str2 == null) {
-            return StringsKt.x1(str, 23);
-        }
-        return str2;
+    public final ByteString b() {
+        return this.f27021b;
     }
 
-    public final void a(String loggerName, int i10, String message, Throwable th2) {
-        int min;
-        Intrinsics.checkNotNullParameter(loggerName, "loggerName");
-        Intrinsics.checkNotNullParameter(message, "message");
-        String d10 = d(loggerName);
-        if (Log.isLoggable(d10, i10)) {
-            if (th2 != null) {
-                message = message + '\n' + Log.getStackTraceString(th2);
-            }
-            String str = message;
-            int length = str.length();
-            int i11 = 0;
-            while (i11 < length) {
-                int h02 = StringsKt.h0(str, '\n', i11, false, 4, null);
-                if (h02 == -1) {
-                    h02 = length;
-                }
-                while (true) {
-                    min = Math.min(h02, i11 + 4000);
-                    String substring = str.substring(i11, min);
-                    Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
-                    Log.println(i10, d10, substring);
-                    if (min >= h02) {
-                        break;
-                    }
-                    i11 = min;
-                }
-                i11 = min + 1;
-            }
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
+        if (!(obj instanceof c)) {
+            return false;
+        }
+        c cVar = (c) obj;
+        if (Intrinsics.areEqual(this.f27020a, cVar.f27020a) && Intrinsics.areEqual(this.f27021b, cVar.f27021b)) {
+            return true;
+        }
+        return false;
     }
 
-    public final void b() {
-        for (Map.Entry entry : f28161c.entrySet()) {
-            c((String) entry.getKey(), (String) entry.getValue());
-        }
+    public int hashCode() {
+        return (this.f27020a.hashCode() * 31) + this.f27021b.hashCode();
+    }
+
+    public String toString() {
+        return this.f27020a.M() + ": " + this.f27021b.M();
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public c(java.lang.String r2, java.lang.String r3) {
+        /*
+            r1 = this;
+            java.lang.String r0 = "name"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r2, r0)
+            java.lang.String r0 = "value"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r3, r0)
+            okio.ByteString$a r0 = okio.ByteString.f44060o
+            okio.ByteString r2 = r0.g(r2)
+            okio.ByteString r3 = r0.g(r3)
+            r1.<init>(r2, r3)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: hu.c.<init>(java.lang.String, java.lang.String):void");
+    }
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public c(ByteString name, String value) {
+        this(name, ByteString.f44060o.g(value));
+        Intrinsics.checkNotNullParameter(name, "name");
+        Intrinsics.checkNotNullParameter(value, "value");
     }
 }

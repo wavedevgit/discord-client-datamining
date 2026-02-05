@@ -776,7 +776,7 @@ public final class SwipeHelper extends ChatListCallback {
                     if (i10 == 2) {
                         swipeReplyInitiator.getOnInitiateEdit().invoke();
                     } else {
-                        throw new lr.p();
+                        throw new or.p();
                     }
                 } else {
                     swipeReplyInitiator.getOnInitiateReply().invoke();

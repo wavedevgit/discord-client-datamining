@@ -9,10 +9,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class ExchangeOneTimeLinkCodeResponse {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Data f18803a;
+    private final Data f19209a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Metadata f18804b;
+    private final Metadata f19210b;
 
     @com.squareup.moshi.i(generateAdapter = true)
     @kotlin.Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0007\u0018\u00002\u00020\u0001B\u001f\u0012\u0016\u0010\u0005\u001a\u0012\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u0004\u0018\u00010\u0002¢\u0006\u0004\b\u0006\u0010\u0007R'\u0010\u0005\u001a\u0012\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\b\u0010\t\u001a\u0004\b\b\u0010\n¨\u0006\u000b"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/network/ExchangeOneTimeLinkCodeResponse$Data;", "", "", "", "Lcom/withpersona/sdk2/inquiry/internal/network/ExchangeOneTimeLinkCodeResponse$Relationship;", "relationships", "<init>", "(Ljava/util/Map;)V", "a", "Ljava/util/Map;", "()Ljava/util/Map;", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -20,14 +20,14 @@ public final class ExchangeOneTimeLinkCodeResponse {
     public static final class Data {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Map f18805a;
+        private final Map f19211a;
 
         public Data(Map map) {
-            this.f18805a = map;
+            this.f19211a = map;
         }
 
         public final Map a() {
-            return this.f18805a;
+            return this.f19211a;
         }
     }
 
@@ -37,25 +37,25 @@ public final class ExchangeOneTimeLinkCodeResponse {
     public static final class Metadata {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f18806a;
+        private final String f19212a;
 
         public Metadata(String str) {
-            this.f18806a = str;
+            this.f19212a = str;
         }
 
         public final String a() {
-            return this.f18806a;
+            return this.f19212a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof Metadata) && Intrinsics.areEqual(this.f18806a, ((Metadata) obj).f18806a);
+            return (obj instanceof Metadata) && Intrinsics.areEqual(this.f19212a, ((Metadata) obj).f19212a);
         }
 
         public int hashCode() {
-            String str = this.f18806a;
+            String str = this.f19212a;
             if (str == null) {
                 return 0;
             }
@@ -63,7 +63,7 @@ public final class ExchangeOneTimeLinkCodeResponse {
         }
 
         public String toString() {
-            String str = this.f18806a;
+            String str = this.f19212a;
             return "Metadata(accessToken=" + str + ")";
         }
     }
@@ -74,14 +74,14 @@ public final class ExchangeOneTimeLinkCodeResponse {
     public static final class Relationship {
 
         /* renamed from: a  reason: collision with root package name */
-        private final RelationshipData f18807a;
+        private final RelationshipData f19213a;
 
         public Relationship(RelationshipData relationshipData) {
-            this.f18807a = relationshipData;
+            this.f19213a = relationshipData;
         }
 
         public final RelationshipData a() {
-            return this.f18807a;
+            return this.f19213a;
         }
     }
 
@@ -91,35 +91,35 @@ public final class ExchangeOneTimeLinkCodeResponse {
     public static final class RelationshipData {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f18808a;
+        private final String f19214a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f18809b;
+        private final String f19215b;
 
         public RelationshipData(String str, String str2) {
-            this.f18808a = str;
-            this.f18809b = str2;
+            this.f19214a = str;
+            this.f19215b = str2;
         }
 
         public final String a() {
-            return this.f18809b;
+            return this.f19215b;
         }
 
         public final String b() {
-            return this.f18808a;
+            return this.f19214a;
         }
     }
 
     public ExchangeOneTimeLinkCodeResponse(Data data, Metadata metadata) {
-        this.f18803a = data;
-        this.f18804b = metadata;
+        this.f19209a = data;
+        this.f19210b = metadata;
     }
 
     public final Data a() {
-        return this.f18803a;
+        return this.f19209a;
     }
 
     public final Metadata b() {
-        return this.f18804b;
+        return this.f19210b;
     }
 }

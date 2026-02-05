@@ -8,13 +8,13 @@ import java.util.Map;
 public final class l implements b0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f30068d = Collections.synchronizedMap(new HashMap());
+    private final Map f29126d = Collections.synchronizedMap(new HashMap());
 
     /* renamed from: e  reason: collision with root package name */
-    private final k7 f30069e;
+    private final k7 f29127e;
 
     public l(k7 k7Var) {
-        this.f30069e = k7Var;
+        this.f29127e = k7Var;
     }
 
     @Override // io.sentry.b0
@@ -28,13 +28,13 @@ public final class l implements b0 {
         if (z02 == null || (k10 = z02.k()) == null || (j10 = z02.j()) == null) {
             return sentryEvent;
         }
-        Long l10 = (Long) this.f30068d.get(k10);
+        Long l10 = (Long) this.f29126d.get(k10);
         if (l10 != null && !l10.equals(j10)) {
-            this.f30069e.getLogger().c(SentryLevel.INFO, "Event %s has been dropped due to multi-threaded deduplication", sentryEvent.G());
+            this.f29127e.getLogger().c(SentryLevel.INFO, "Event %s has been dropped due to multi-threaded deduplication", sentryEvent.G());
             io.sentry.util.n.n(hint, io.sentry.hints.h.MULTITHREADED_DEDUPLICATION);
             return null;
         }
-        this.f30068d.put(k10, j10);
+        this.f29126d.put(k10, j10);
         return sentryEvent;
     }
 }

@@ -13,45 +13,45 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18440a;
+    private final m.b f18846a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18441b;
+    private final com.squareup.moshi.h f18847b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f18442c;
+    private final com.squareup.moshi.h f18848c;
 
     public FallbackModeService_UploadUrlRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("expected-content-length", "expected-content-type");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18440a = a10;
+        this.f18846a = a10;
         com.squareup.moshi.h f10 = moshi.f(Long.TYPE, x0.d(), "expectedContentLength");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18441b = f10;
+        this.f18847b = f10;
         com.squareup.moshi.h f11 = moshi.f(String.class, x0.d(), "expectedContentType");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f18442c = f11;
+        this.f18848c = f11;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public FallbackModeService.UploadUrlRequest fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         Long l10 = null;
         String str = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f18440a);
-            if (A0 != -1) {
-                if (A0 != 0) {
-                    if (A0 == 1 && (str = (String) this.f18442c.fromJson(reader)) == null) {
-                        throw vm.c.x("expectedContentType", "expected-content-type", reader);
+            int W = reader.W(this.f18846a);
+            if (W != -1) {
+                if (W != 0) {
+                    if (W == 1 && (str = (String) this.f18848c.fromJson(reader)) == null) {
+                        throw ym.c.x("expectedContentType", "expected-content-type", reader);
                     }
                 } else {
-                    l10 = (Long) this.f18441b.fromJson(reader);
+                    l10 = (Long) this.f18847b.fromJson(reader);
                     if (l10 == null) {
-                        throw vm.c.x("expectedContentLength", "expected-content-length", reader);
+                        throw ym.c.x("expectedContentLength", "expected-content-length", reader);
                     }
                 }
             } else {
@@ -59,15 +59,15 @@ public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.s
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         if (l10 != null) {
             long longValue = l10.longValue();
             if (str != null) {
                 return new FallbackModeService.UploadUrlRequest(longValue, str);
             }
-            throw vm.c.o("expectedContentType", "expected-content-type", reader);
+            throw ym.c.o("expectedContentType", "expected-content-type", reader);
         }
-        throw vm.c.o("expectedContentLength", "expected-content-length", reader);
+        throw ym.c.o("expectedContentLength", "expected-content-length", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -75,11 +75,11 @@ public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.s
     public void toJson(t writer, FallbackModeService.UploadUrlRequest uploadUrlRequest) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (uploadUrlRequest != null) {
-            writer.l();
-            writer.A0("expected-content-length");
-            this.f18441b.toJson(writer, Long.valueOf(uploadUrlRequest.a()));
-            writer.A0("expected-content-type");
-            this.f18442c.toJson(writer, uploadUrlRequest.b());
+            writer.k();
+            writer.W("expected-content-length");
+            this.f18847b.toJson(writer, Long.valueOf(uploadUrlRequest.a()));
+            writer.W("expected-content-type");
+            this.f18848c.toJson(writer, uploadUrlRequest.b());
             writer.E();
             return;
         }

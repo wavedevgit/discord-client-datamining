@@ -288,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showChannelChangeConfirmationAlert = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5913, 4235, 3278, 5915, 1307, 6446, 6453, 6461, 12117, 4561, 7884, 7879, 7353, 6455, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5917, 4235, 3278, 5919, 1307, 6466, 6473, 6481, 12134, 4561, 7903, 7898, 7372, 6475, 2]);

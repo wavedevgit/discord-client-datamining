@@ -1,31 +1,25 @@
 package bp;
 
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import androidx.activity.result.contract.ActivityResultContract;
-import bp.k;
-import kotlin.jvm.internal.Intrinsics;
+import zq.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f extends ActivityResultContract {
-    @Override // androidx.activity.result.contract.ActivityResultContract
-    /* renamed from: a */
-    public Intent createIntent(Context context, e input) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        Intrinsics.checkNotNullParameter(input, "input");
-        Intent intent = new Intent(context, d.f6662a.a());
-        intent.putExtra("EXTRA_NFC_READER_CONFIG", input);
-        return intent;
+public final class f {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final h f7098a;
+
+    public f(h hVar) {
+        this.f7098a = hVar;
     }
 
-    @Override // androidx.activity.result.contract.ActivityResultContract
-    /* renamed from: b */
-    public k parseResult(int i10, Intent intent) {
-        Bundle extras;
-        k kVar;
-        if (intent != null && (extras = intent.getExtras()) != null && (kVar = (k) w1.b.a(extras, "EXTRA_RESULT", k.class)) != null) {
-            return kVar;
-        }
-        return new k.b("Unable to extract output from result intent.", k.c.f6675e);
+    public static f a(h hVar) {
+        return new f(hVar);
+    }
+
+    public static e c(b bVar, String str) {
+        return new e(bVar, str);
+    }
+
+    public e b(String str) {
+        return c((b) this.f7098a.get(), str);
     }
 }

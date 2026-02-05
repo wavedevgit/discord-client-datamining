@@ -7,16 +7,16 @@ import com.google.android.exoplayer2.g;
 public final class PlaybackParameters implements g {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final PlaybackParameters f11548o = new PlaybackParameters(1.0f);
+    public static final PlaybackParameters f11933o = new PlaybackParameters(1.0f);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f11549p = ne.w0.B0(0);
+    private static final String f11934p = ne.w0.B0(0);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String f11550q = ne.w0.B0(1);
+    private static final String f11935q = ne.w0.B0(1);
 
     /* renamed from: r  reason: collision with root package name */
-    public static final g.a f11551r = new g.a() { // from class: lc.n0
+    public static final g.a f11936r = new g.a() { // from class: lc.n0
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             return PlaybackParameters.a(bundle);
@@ -24,28 +24,28 @@ public final class PlaybackParameters implements g {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    public final float f11552d;
+    public final float f11937d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final float f11553e;
+    public final float f11938e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f11554i;
+    private final int f11939i;
 
     public PlaybackParameters(float f10) {
         this(f10, 1.0f);
     }
 
     public static /* synthetic */ PlaybackParameters a(Bundle bundle) {
-        return new PlaybackParameters(bundle.getFloat(f11549p, 1.0f), bundle.getFloat(f11550q, 1.0f));
+        return new PlaybackParameters(bundle.getFloat(f11934p, 1.0f), bundle.getFloat(f11935q, 1.0f));
     }
 
     public long b(long j10) {
-        return j10 * this.f11554i;
+        return j10 * this.f11939i;
     }
 
     public PlaybackParameters c(float f10) {
-        return new PlaybackParameters(f10, this.f11553e);
+        return new PlaybackParameters(f10, this.f11938e);
     }
 
     public boolean equals(Object obj) {
@@ -54,7 +54,7 @@ public final class PlaybackParameters implements g {
         }
         if (obj != null && PlaybackParameters.class == obj.getClass()) {
             PlaybackParameters playbackParameters = (PlaybackParameters) obj;
-            if (this.f11552d == playbackParameters.f11552d && this.f11553e == playbackParameters.f11553e) {
+            if (this.f11937d == playbackParameters.f11937d && this.f11938e == playbackParameters.f11938e) {
                 return true;
             }
         }
@@ -62,18 +62,18 @@ public final class PlaybackParameters implements g {
     }
 
     public int hashCode() {
-        return ((527 + Float.floatToRawIntBits(this.f11552d)) * 31) + Float.floatToRawIntBits(this.f11553e);
+        return ((527 + Float.floatToRawIntBits(this.f11937d)) * 31) + Float.floatToRawIntBits(this.f11938e);
     }
 
     public String toString() {
-        return ne.w0.D("PlaybackParameters(speed=%.2f, pitch=%.2f)", Float.valueOf(this.f11552d), Float.valueOf(this.f11553e));
+        return ne.w0.D("PlaybackParameters(speed=%.2f, pitch=%.2f)", Float.valueOf(this.f11937d), Float.valueOf(this.f11938e));
     }
 
     public PlaybackParameters(float f10, float f11) {
         ne.a.a(f10 > 0.0f);
         ne.a.a(f11 > 0.0f);
-        this.f11552d = f10;
-        this.f11553e = f11;
-        this.f11554i = Math.round(f10 * 1000.0f);
+        this.f11937d = f10;
+        this.f11938e = f11;
+        this.f11939i = Math.round(f10 * 1000.0f);
     }
 }

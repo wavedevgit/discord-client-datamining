@@ -20,82 +20,82 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
     private final RecyclerView.OnScrollListener C;
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f5002a;
+    private final int f5114a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f5003b;
+    private final int f5115b;
 
     /* renamed from: c  reason: collision with root package name */
-    final StateListDrawable f5004c;
+    final StateListDrawable f5116c;
 
     /* renamed from: d  reason: collision with root package name */
-    final Drawable f5005d;
+    final Drawable f5117d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f5006e;
+    private final int f5118e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f5007f;
+    private final int f5119f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final StateListDrawable f5008g;
+    private final StateListDrawable f5120g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Drawable f5009h;
+    private final Drawable f5121h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f5010i;
+    private final int f5122i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final int f5011j;
+    private final int f5123j;
 
     /* renamed from: k  reason: collision with root package name */
-    int f5012k;
+    int f5124k;
 
     /* renamed from: l  reason: collision with root package name */
-    int f5013l;
+    int f5125l;
 
     /* renamed from: m  reason: collision with root package name */
-    float f5014m;
+    float f5126m;
 
     /* renamed from: n  reason: collision with root package name */
-    int f5015n;
+    int f5127n;
 
     /* renamed from: o  reason: collision with root package name */
-    int f5016o;
+    int f5128o;
 
     /* renamed from: p  reason: collision with root package name */
-    float f5017p;
+    float f5129p;
 
     /* renamed from: s  reason: collision with root package name */
-    private RecyclerView f5020s;
+    private RecyclerView f5132s;
 
     /* renamed from: z  reason: collision with root package name */
-    final ValueAnimator f5027z;
+    final ValueAnimator f5139z;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f5018q = 0;
+    private int f5130q = 0;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f5019r = 0;
+    private int f5131r = 0;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f5021t = false;
+    private boolean f5133t = false;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f5022u = false;
+    private boolean f5134u = false;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f5023v = 0;
+    private int f5135v = 0;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f5024w = 0;
+    private int f5136w = 0;
 
     /* renamed from: x  reason: collision with root package name */
-    private final int[] f5025x = new int[2];
+    private final int[] f5137x = new int[2];
 
     /* renamed from: y  reason: collision with root package name */
-    private final int[] f5026y = new int[2];
+    private final int[] f5138y = new int[2];
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Runnable {
@@ -123,21 +123,21 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
     private class c extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f5030a = false;
+        private boolean f5142a = false;
 
         c() {
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationCancel(Animator animator) {
-            this.f5030a = true;
+            this.f5142a = true;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            if (this.f5030a) {
-                this.f5030a = false;
-            } else if (((Float) g.this.f5027z.getAnimatedValue()).floatValue() == 0.0f) {
+            if (this.f5142a) {
+                this.f5142a = false;
+            } else if (((Float) g.this.f5139z.getAnimatedValue()).floatValue() == 0.0f) {
                 g gVar = g.this;
                 gVar.A = 0;
                 gVar.n(0);
@@ -157,8 +157,8 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
             int floatValue = (int) (((Float) valueAnimator.getAnimatedValue()).floatValue() * 255.0f);
-            g.this.f5004c.setAlpha(floatValue);
-            g.this.f5005d.setAlpha(floatValue);
+            g.this.f5116c.setAlpha(floatValue);
+            g.this.f5117d.setAlpha(floatValue);
             g.this.k();
         }
     }
@@ -166,20 +166,20 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(RecyclerView recyclerView, StateListDrawable stateListDrawable, Drawable drawable, StateListDrawable stateListDrawable2, Drawable drawable2, int i10, int i11, int i12) {
         ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, 1.0f);
-        this.f5027z = ofFloat;
+        this.f5139z = ofFloat;
         this.A = 0;
         this.B = new a();
         this.C = new b();
-        this.f5004c = stateListDrawable;
-        this.f5005d = drawable;
-        this.f5008g = stateListDrawable2;
-        this.f5009h = drawable2;
-        this.f5006e = Math.max(i10, stateListDrawable.getIntrinsicWidth());
-        this.f5007f = Math.max(i10, drawable.getIntrinsicWidth());
-        this.f5010i = Math.max(i10, stateListDrawable2.getIntrinsicWidth());
-        this.f5011j = Math.max(i10, drawable2.getIntrinsicWidth());
-        this.f5002a = i11;
-        this.f5003b = i12;
+        this.f5116c = stateListDrawable;
+        this.f5117d = drawable;
+        this.f5120g = stateListDrawable2;
+        this.f5121h = drawable2;
+        this.f5118e = Math.max(i10, stateListDrawable.getIntrinsicWidth());
+        this.f5119f = Math.max(i10, drawable.getIntrinsicWidth());
+        this.f5122i = Math.max(i10, stateListDrawable2.getIntrinsicWidth());
+        this.f5123j = Math.max(i10, drawable2.getIntrinsicWidth());
+        this.f5114a = i11;
+        this.f5115b = i12;
         stateListDrawable.setAlpha(SetSpanOperation.SPAN_MAX_PRIORITY);
         drawable.setAlpha(SetSpanOperation.SPAN_MAX_PRIORITY);
         ofFloat.addListener(new c());
@@ -188,88 +188,88 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
     }
 
     private void a() {
-        this.f5020s.removeCallbacks(this.B);
+        this.f5132s.removeCallbacks(this.B);
     }
 
     private void b(Canvas canvas) {
-        int i10 = this.f5019r;
-        int i11 = this.f5010i;
+        int i10 = this.f5131r;
+        int i11 = this.f5122i;
         int i12 = i10 - i11;
-        int i13 = this.f5016o;
-        int i14 = this.f5015n;
+        int i13 = this.f5128o;
+        int i14 = this.f5127n;
         int i15 = i13 - (i14 / 2);
-        this.f5008g.setBounds(0, 0, i14, i11);
-        this.f5009h.setBounds(0, 0, this.f5018q, this.f5011j);
+        this.f5120g.setBounds(0, 0, i14, i11);
+        this.f5121h.setBounds(0, 0, this.f5130q, this.f5123j);
         canvas.translate(0.0f, i12);
-        this.f5009h.draw(canvas);
+        this.f5121h.draw(canvas);
         canvas.translate(i15, 0.0f);
-        this.f5008g.draw(canvas);
+        this.f5120g.draw(canvas);
         canvas.translate(-i15, -i12);
     }
 
     private void c(Canvas canvas) {
-        int i10 = this.f5018q;
-        int i11 = this.f5006e;
+        int i10 = this.f5130q;
+        int i11 = this.f5118e;
         int i12 = i10 - i11;
-        int i13 = this.f5013l;
-        int i14 = this.f5012k;
+        int i13 = this.f5125l;
+        int i14 = this.f5124k;
         int i15 = i13 - (i14 / 2);
-        this.f5004c.setBounds(0, 0, i11, i14);
-        this.f5005d.setBounds(0, 0, this.f5007f, this.f5019r);
+        this.f5116c.setBounds(0, 0, i11, i14);
+        this.f5117d.setBounds(0, 0, this.f5119f, this.f5131r);
         if (h()) {
-            this.f5005d.draw(canvas);
-            canvas.translate(this.f5006e, i15);
+            this.f5117d.draw(canvas);
+            canvas.translate(this.f5118e, i15);
             canvas.scale(-1.0f, 1.0f);
-            this.f5004c.draw(canvas);
+            this.f5116c.draw(canvas);
             canvas.scale(-1.0f, 1.0f);
-            canvas.translate(-this.f5006e, -i15);
+            canvas.translate(-this.f5118e, -i15);
             return;
         }
         canvas.translate(i12, 0.0f);
-        this.f5005d.draw(canvas);
+        this.f5117d.draw(canvas);
         canvas.translate(0.0f, i15);
-        this.f5004c.draw(canvas);
+        this.f5116c.draw(canvas);
         canvas.translate(-i12, -i15);
     }
 
     private int[] d() {
-        int[] iArr = this.f5026y;
-        int i10 = this.f5003b;
+        int[] iArr = this.f5138y;
+        int i10 = this.f5115b;
         iArr[0] = i10;
-        iArr[1] = this.f5018q - i10;
+        iArr[1] = this.f5130q - i10;
         return iArr;
     }
 
     private void destroyCallbacks() {
-        this.f5020s.removeItemDecoration(this);
-        this.f5020s.removeOnItemTouchListener(this);
-        this.f5020s.removeOnScrollListener(this.C);
+        this.f5132s.removeItemDecoration(this);
+        this.f5132s.removeOnItemTouchListener(this);
+        this.f5132s.removeOnScrollListener(this.C);
         a();
     }
 
     private int[] e() {
-        int[] iArr = this.f5025x;
-        int i10 = this.f5003b;
+        int[] iArr = this.f5137x;
+        int i10 = this.f5115b;
         iArr[0] = i10;
-        iArr[1] = this.f5019r - i10;
+        iArr[1] = this.f5131r - i10;
         return iArr;
     }
 
     private void g(float f10) {
         int[] d10 = d();
         float max = Math.max(d10[0], Math.min(d10[1], f10));
-        if (Math.abs(this.f5016o - max) < 2.0f) {
+        if (Math.abs(this.f5128o - max) < 2.0f) {
             return;
         }
-        int m10 = m(this.f5017p, max, d10, this.f5020s.computeHorizontalScrollRange(), this.f5020s.computeHorizontalScrollOffset(), this.f5018q);
+        int m10 = m(this.f5129p, max, d10, this.f5132s.computeHorizontalScrollRange(), this.f5132s.computeHorizontalScrollOffset(), this.f5130q);
         if (m10 != 0) {
-            this.f5020s.scrollBy(m10, 0);
+            this.f5132s.scrollBy(m10, 0);
         }
-        this.f5017p = max;
+        this.f5129p = max;
     }
 
     private boolean h() {
-        if (this.f5020s.getLayoutDirection() == 1) {
+        if (this.f5132s.getLayoutDirection() == 1) {
             return true;
         }
         return false;
@@ -277,7 +277,7 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
 
     private void l(int i10) {
         a();
-        this.f5020s.postDelayed(this.B, i10);
+        this.f5132s.postDelayed(this.B, i10);
     }
 
     private int m(float f10, float f11, int[] iArr, int i10, int i11, int i12) {
@@ -297,29 +297,29 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
     private void q(float f10) {
         int[] e10 = e();
         float max = Math.max(e10[0], Math.min(e10[1], f10));
-        if (Math.abs(this.f5013l - max) < 2.0f) {
+        if (Math.abs(this.f5125l - max) < 2.0f) {
             return;
         }
-        int m10 = m(this.f5014m, max, e10, this.f5020s.computeVerticalScrollRange(), this.f5020s.computeVerticalScrollOffset(), this.f5019r);
+        int m10 = m(this.f5126m, max, e10, this.f5132s.computeVerticalScrollRange(), this.f5132s.computeVerticalScrollOffset(), this.f5131r);
         if (m10 != 0) {
-            this.f5020s.scrollBy(0, m10);
+            this.f5132s.scrollBy(0, m10);
         }
-        this.f5014m = max;
+        this.f5126m = max;
     }
 
     private void setupCallbacks() {
-        this.f5020s.addItemDecoration(this);
-        this.f5020s.addOnItemTouchListener(this);
-        this.f5020s.addOnScrollListener(this.C);
+        this.f5132s.addItemDecoration(this);
+        this.f5132s.addOnItemTouchListener(this);
+        this.f5132s.addOnScrollListener(this.C);
     }
 
     public void attachToRecyclerView(RecyclerView recyclerView) {
-        RecyclerView recyclerView2 = this.f5020s;
+        RecyclerView recyclerView2 = this.f5132s;
         if (recyclerView2 != recyclerView) {
             if (recyclerView2 != null) {
                 destroyCallbacks();
             }
-            this.f5020s = recyclerView;
+            this.f5132s = recyclerView;
             if (recyclerView != null) {
                 setupCallbacks();
             }
@@ -333,19 +333,19 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
                 return;
             }
         } else {
-            this.f5027z.cancel();
+            this.f5139z.cancel();
         }
         this.A = 3;
-        ValueAnimator valueAnimator = this.f5027z;
+        ValueAnimator valueAnimator = this.f5139z;
         valueAnimator.setFloatValues(((Float) valueAnimator.getAnimatedValue()).floatValue(), 0.0f);
-        this.f5027z.setDuration(i10);
-        this.f5027z.start();
+        this.f5139z.setDuration(i10);
+        this.f5139z.start();
     }
 
     boolean i(float f10, float f11) {
-        if (f11 >= this.f5019r - this.f5010i) {
-            int i10 = this.f5016o;
-            int i11 = this.f5015n;
+        if (f11 >= this.f5131r - this.f5122i) {
+            int i10 = this.f5128o;
+            int i11 = this.f5127n;
             if (f10 >= i10 - (i11 / 2) && f10 <= i10 + (i11 / 2)) {
                 return true;
             }
@@ -356,14 +356,14 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
 
     boolean j(float f10, float f11) {
         if (h()) {
-            if (f10 > this.f5006e) {
+            if (f10 > this.f5118e) {
                 return false;
             }
-        } else if (f10 < this.f5018q - this.f5006e) {
+        } else if (f10 < this.f5130q - this.f5118e) {
             return false;
         }
-        int i10 = this.f5013l;
-        int i11 = this.f5012k;
+        int i10 = this.f5125l;
+        int i11 = this.f5124k;
         if (f11 >= i10 - (i11 / 2) && f11 <= i10 + (i11 / 2)) {
             return true;
         }
@@ -371,12 +371,12 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
     }
 
     void k() {
-        this.f5020s.invalidate();
+        this.f5132s.invalidate();
     }
 
     void n(int i10) {
-        if (i10 == 2 && this.f5023v != 2) {
-            this.f5004c.setState(D);
+        if (i10 == 2 && this.f5135v != 2) {
+            this.f5116c.setState(D);
             a();
         }
         if (i10 == 0) {
@@ -384,13 +384,13 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
         } else {
             o();
         }
-        if (this.f5023v == 2 && i10 != 2) {
-            this.f5004c.setState(E);
+        if (this.f5135v == 2 && i10 != 2) {
+            this.f5116c.setState(E);
             l(1200);
         } else if (i10 == 1) {
             l(JSWatchdogManagerKt.FREEZE_CHECK_DELAY_MS);
         }
-        this.f5023v = i10;
+        this.f5135v = i10;
     }
 
     public void o() {
@@ -399,24 +399,24 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
             if (i10 != 3) {
                 return;
             }
-            this.f5027z.cancel();
+            this.f5139z.cancel();
         }
         this.A = 1;
-        ValueAnimator valueAnimator = this.f5027z;
+        ValueAnimator valueAnimator = this.f5139z;
         valueAnimator.setFloatValues(((Float) valueAnimator.getAnimatedValue()).floatValue(), 1.0f);
-        this.f5027z.setDuration(500L);
-        this.f5027z.setStartDelay(0L);
-        this.f5027z.start();
+        this.f5139z.setDuration(500L);
+        this.f5139z.setStartDelay(0L);
+        this.f5139z.start();
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.ItemDecoration
     public void onDrawOver(Canvas canvas, RecyclerView recyclerView, RecyclerView.State state) {
-        if (this.f5018q == this.f5020s.getWidth() && this.f5019r == this.f5020s.getHeight()) {
+        if (this.f5130q == this.f5132s.getWidth() && this.f5131r == this.f5132s.getHeight()) {
             if (this.A != 0) {
-                if (this.f5021t) {
+                if (this.f5133t) {
                     c(canvas);
                 }
-                if (this.f5022u) {
+                if (this.f5134u) {
                     b(canvas);
                     return;
                 }
@@ -424,14 +424,14 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
             }
             return;
         }
-        this.f5018q = this.f5020s.getWidth();
-        this.f5019r = this.f5020s.getHeight();
+        this.f5130q = this.f5132s.getWidth();
+        this.f5131r = this.f5132s.getHeight();
         n(0);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.OnItemTouchListener
     public boolean onInterceptTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
-        int i10 = this.f5023v;
+        int i10 = this.f5135v;
         if (i10 == 1) {
             boolean j10 = j(motionEvent.getX(), motionEvent.getY());
             boolean i11 = i(motionEvent.getX(), motionEvent.getY());
@@ -439,11 +439,11 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
                 return false;
             }
             if (i11) {
-                this.f5024w = 1;
-                this.f5017p = (int) motionEvent.getX();
+                this.f5136w = 1;
+                this.f5129p = (int) motionEvent.getX();
             } else if (j10) {
-                this.f5024w = 2;
-                this.f5014m = (int) motionEvent.getY();
+                this.f5136w = 2;
+                this.f5126m = (int) motionEvent.getY();
             }
             n(2);
             return true;
@@ -460,31 +460,31 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
 
     @Override // androidx.recyclerview.widget.RecyclerView.OnItemTouchListener
     public void onTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
-        if (this.f5023v != 0) {
+        if (this.f5135v != 0) {
             if (motionEvent.getAction() == 0) {
                 boolean j10 = j(motionEvent.getX(), motionEvent.getY());
                 boolean i10 = i(motionEvent.getX(), motionEvent.getY());
                 if (j10 || i10) {
                     if (i10) {
-                        this.f5024w = 1;
-                        this.f5017p = (int) motionEvent.getX();
+                        this.f5136w = 1;
+                        this.f5129p = (int) motionEvent.getX();
                     } else if (j10) {
-                        this.f5024w = 2;
-                        this.f5014m = (int) motionEvent.getY();
+                        this.f5136w = 2;
+                        this.f5126m = (int) motionEvent.getY();
                     }
                     n(2);
                 }
-            } else if (motionEvent.getAction() == 1 && this.f5023v == 2) {
-                this.f5014m = 0.0f;
-                this.f5017p = 0.0f;
+            } else if (motionEvent.getAction() == 1 && this.f5135v == 2) {
+                this.f5126m = 0.0f;
+                this.f5129p = 0.0f;
                 n(1);
-                this.f5024w = 0;
-            } else if (motionEvent.getAction() == 2 && this.f5023v == 2) {
+                this.f5136w = 0;
+            } else if (motionEvent.getAction() == 2 && this.f5135v == 2) {
                 o();
-                if (this.f5024w == 1) {
+                if (this.f5136w == 1) {
                     g(motionEvent.getX());
                 }
-                if (this.f5024w == 2) {
+                if (this.f5136w == 2) {
                     q(motionEvent.getY());
                 }
             }
@@ -494,25 +494,25 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
     void p(int i10, int i11) {
         boolean z10;
         boolean z11;
-        int computeVerticalScrollRange = this.f5020s.computeVerticalScrollRange();
-        int i12 = this.f5019r;
-        if (computeVerticalScrollRange - i12 > 0 && i12 >= this.f5002a) {
+        int computeVerticalScrollRange = this.f5132s.computeVerticalScrollRange();
+        int i12 = this.f5131r;
+        if (computeVerticalScrollRange - i12 > 0 && i12 >= this.f5114a) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f5021t = z10;
-        int computeHorizontalScrollRange = this.f5020s.computeHorizontalScrollRange();
-        int i13 = this.f5018q;
-        if (computeHorizontalScrollRange - i13 > 0 && i13 >= this.f5002a) {
+        this.f5133t = z10;
+        int computeHorizontalScrollRange = this.f5132s.computeHorizontalScrollRange();
+        int i13 = this.f5130q;
+        if (computeHorizontalScrollRange - i13 > 0 && i13 >= this.f5114a) {
             z11 = true;
         } else {
             z11 = false;
         }
-        this.f5022u = z11;
-        boolean z12 = this.f5021t;
+        this.f5134u = z11;
+        boolean z12 = this.f5133t;
         if (!z12 && !z11) {
-            if (this.f5023v != 0) {
+            if (this.f5135v != 0) {
                 n(0);
                 return;
             }
@@ -520,15 +520,15 @@ public class g extends RecyclerView.ItemDecoration implements RecyclerView.OnIte
         }
         if (z12) {
             float f10 = i12;
-            this.f5013l = (int) ((f10 * (i11 + (f10 / 2.0f))) / computeVerticalScrollRange);
-            this.f5012k = Math.min(i12, (i12 * i12) / computeVerticalScrollRange);
+            this.f5125l = (int) ((f10 * (i11 + (f10 / 2.0f))) / computeVerticalScrollRange);
+            this.f5124k = Math.min(i12, (i12 * i12) / computeVerticalScrollRange);
         }
-        if (this.f5022u) {
+        if (this.f5134u) {
             float f11 = i13;
-            this.f5016o = (int) ((f11 * (i10 + (f11 / 2.0f))) / computeHorizontalScrollRange);
-            this.f5015n = Math.min(i13, (i13 * i13) / computeHorizontalScrollRange);
+            this.f5128o = (int) ((f11 * (i10 + (f11 / 2.0f))) / computeHorizontalScrollRange);
+            this.f5127n = Math.min(i13, (i13 * i13) / computeHorizontalScrollRange);
         }
-        int i14 = this.f5023v;
+        int i14 = this.f5135v;
         if (i14 != 0 && i14 != 1) {
             return;
         }

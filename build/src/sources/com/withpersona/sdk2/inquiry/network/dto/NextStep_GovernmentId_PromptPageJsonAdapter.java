@@ -40,7 +40,7 @@ public final class NextStep_GovernmentId_PromptPageJsonAdapter extends h {
     @NotNull
     public NextStep.GovernmentId.PromptPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         String str3 = null;
@@ -50,7 +50,7 @@ public final class NextStep_GovernmentId_PromptPageJsonAdapter extends h {
         String str7 = null;
         String str8 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -81,7 +81,7 @@ public final class NextStep_GovernmentId_PromptPageJsonAdapter extends h {
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new NextStep.GovernmentId.PromptPage(str, str2, str3, str4, str5, str6, str7, str8);
     }
 
@@ -89,22 +89,22 @@ public final class NextStep_GovernmentId_PromptPageJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.GovernmentId.PromptPage promptPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
-            writer.l();
-            writer.A0("cameraPermissionsTitle");
+            writer.k();
+            writer.W("cameraPermissionsTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsTitle());
-            writer.A0("cameraPermissionsPrompt");
+            writer.W("cameraPermissionsPrompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsPrompt());
-            writer.A0("cameraPermissionsBtnContinueMobile");
+            writer.W("cameraPermissionsBtnContinueMobile");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsAllowButtonText());
-            writer.A0("cameraPermissionsBtnCancel");
+            writer.W("cameraPermissionsBtnCancel");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsCancelButtonText());
-            writer.A0("microphonePermissionsBtnCancel");
+            writer.W("microphonePermissionsBtnCancel");
             this.nullableStringAdapter.toJson(writer, promptPage.getMicrophonePermissionsBtnCancel());
-            writer.A0("microphonePermissionsBtnContinueMobile");
+            writer.W("microphonePermissionsBtnContinueMobile");
             this.nullableStringAdapter.toJson(writer, promptPage.getMicrophonePermissionsBtnContinueMobile());
-            writer.A0("microphonePermissionsPrompt");
+            writer.W("microphonePermissionsPrompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getMicrophonePermissionsPrompt());
-            writer.A0("microphonePermissionsTitle");
+            writer.W("microphonePermissionsTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getMicrophonePermissionsTitle());
             writer.E();
             return;

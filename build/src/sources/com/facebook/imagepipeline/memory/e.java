@@ -9,7 +9,7 @@ import va.z;
 public class e extends a implements r8.a {
 
     /* renamed from: k  reason: collision with root package name */
-    private final int[] f10248k;
+    private final int[] f10633k;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e(r8.d memoryTrimmableRegistry, z poolParams, a0 poolStatsTracker) {
@@ -17,15 +17,15 @@ public class e extends a implements r8.a {
         Intrinsics.checkNotNullParameter(memoryTrimmableRegistry, "memoryTrimmableRegistry");
         Intrinsics.checkNotNullParameter(poolParams, "poolParams");
         Intrinsics.checkNotNullParameter(poolStatsTracker, "poolStatsTracker");
-        SparseIntArray sparseIntArray = poolParams.f51309c;
+        SparseIntArray sparseIntArray = poolParams.f51998c;
         if (sparseIntArray != null) {
-            this.f10248k = new int[sparseIntArray.size()];
+            this.f10633k = new int[sparseIntArray.size()];
             int size = sparseIntArray.size();
             for (int i10 = 0; i10 < size; i10++) {
-                this.f10248k[i10] = sparseIntArray.keyAt(i10);
+                this.f10633k[i10] = sparseIntArray.keyAt(i10);
             }
         } else {
-            this.f10248k = new int[0];
+            this.f10633k = new int[0];
         }
         s();
     }
@@ -56,7 +56,7 @@ public class e extends a implements r8.a {
     protected int n(int i10) {
         int[] iArr;
         if (i10 > 0) {
-            for (int i11 : this.f10248k) {
+            for (int i11 : this.f10633k) {
                 if (i11 >= i10) {
                     return i11;
                 }

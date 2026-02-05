@@ -42,21 +42,21 @@ public final class AttributeStyles_LocalImageFillColorStyleJsonAdapter extends h
     @NotNull
     public AttributeStyles.LocalImageFillColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.LocalImageFillColorStyle(simpleElementColor, simpleElementColor2);
     }
 
@@ -64,10 +64,10 @@ public final class AttributeStyles_LocalImageFillColorStyleJsonAdapter extends h
     public void toJson(@NotNull t writer, AttributeStyles.LocalImageFillColorStyle localImageFillColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (localImageFillColorStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, localImageFillColorStyle.getBase());
-            writer.A0(AppStateModule.APP_STATE_BACKGROUND);
+            writer.W(AppStateModule.APP_STATE_BACKGROUND);
             this.nullableSimpleElementColorAdapter.toJson(writer, localImageFillColorStyle.getBackground());
             writer.E();
             return;

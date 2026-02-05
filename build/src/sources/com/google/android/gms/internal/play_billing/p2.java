@@ -10,23 +10,23 @@ import java.util.Set;
 public final class p2 extends LinkedHashMap {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final p2 f13955e;
+    private static final p2 f14349e;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f13956d;
+    private boolean f14350d;
 
     static {
         p2 p2Var = new p2();
-        f13955e = p2Var;
-        p2Var.f13956d = false;
+        f14349e = p2Var;
+        p2Var.f14350d = false;
     }
 
     private p2() {
-        this.f13956d = true;
+        this.f14350d = true;
     }
 
     public static p2 a() {
-        return f13955e;
+        return f14349e;
     }
 
     private static int f(Object obj) {
@@ -46,7 +46,7 @@ public final class p2 extends LinkedHashMap {
     }
 
     private final void g() {
-        if (this.f13956d) {
+        if (this.f14350d) {
             return;
         }
         throw new UnsupportedOperationException();
@@ -60,7 +60,7 @@ public final class p2 extends LinkedHashMap {
     }
 
     public final void c() {
-        this.f13956d = false;
+        this.f14350d = false;
     }
 
     @Override // java.util.LinkedHashMap, java.util.HashMap, java.util.AbstractMap, java.util.Map
@@ -77,7 +77,7 @@ public final class p2 extends LinkedHashMap {
     }
 
     public final boolean e() {
-        return this.f13956d;
+        return this.f14350d;
     }
 
     @Override // java.util.LinkedHashMap, java.util.HashMap, java.util.AbstractMap, java.util.Map
@@ -138,7 +138,7 @@ public final class p2 extends LinkedHashMap {
     @Override // java.util.HashMap, java.util.AbstractMap, java.util.Map
     public final Object put(Object obj, Object obj2) {
         g();
-        byte[] bArr = y1.f14010d;
+        byte[] bArr = y1.f14404d;
         obj.getClass();
         obj2.getClass();
         return super.put(obj, obj2);
@@ -148,7 +148,7 @@ public final class p2 extends LinkedHashMap {
     public final void putAll(Map map) {
         g();
         for (Object obj : map.keySet()) {
-            byte[] bArr = y1.f14010d;
+            byte[] bArr = y1.f14404d;
             obj.getClass();
             map.get(obj).getClass();
         }
@@ -163,6 +163,6 @@ public final class p2 extends LinkedHashMap {
 
     private p2(Map map) {
         super(map);
-        this.f13956d = true;
+        this.f14350d = true;
     }
 }

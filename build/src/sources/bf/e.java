@@ -58,9 +58,9 @@ public final class e extends g {
     /* renamed from: k0 */
     public b r(IBinder binder) {
         Intrinsics.checkNotNullParameter(binder, "binder");
-        b S0 = b.a.S0(binder);
-        Intrinsics.checkNotNullExpressionValue(S0, "asInterface(...)");
-        return S0;
+        b W0 = b.a.W0(binder);
+        Intrinsics.checkNotNullExpressionValue(W0, "asInterface(...)");
+        return W0;
     }
 
     @Override // gf.c, ef.a.f
@@ -70,7 +70,7 @@ public final class e extends g {
 
     @Override // gf.c
     public com.google.android.gms.common.d[] u() {
-        com.google.android.gms.common.d[] ALL_FEATURES = eg.b.f21519l;
+        com.google.android.gms.common.d[] ALL_FEATURES = eg.b.f21591l;
         Intrinsics.checkNotNullExpressionValue(ALL_FEATURES, "ALL_FEATURES");
         return ALL_FEATURES;
     }

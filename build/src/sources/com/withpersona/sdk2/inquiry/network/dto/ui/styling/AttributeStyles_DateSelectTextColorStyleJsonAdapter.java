@@ -42,27 +42,27 @@ public final class AttributeStyles_DateSelectTextColorStyleJsonAdapter extends h
     @NotNull
     public AttributeStyles.DateSelectTextColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.ComplexElementColor complexElementColor = null;
         StyleElements.ComplexElementColor complexElementColor2 = null;
         StyleElements.ComplexElementColor complexElementColor3 = null;
         StyleElements.ComplexElementColor complexElementColor4 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 complexElementColor2 = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 complexElementColor3 = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 complexElementColor4 = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.DateSelectTextColorStyle(complexElementColor, complexElementColor2, complexElementColor3, complexElementColor4);
     }
 
@@ -70,14 +70,14 @@ public final class AttributeStyles_DateSelectTextColorStyleJsonAdapter extends h
     public void toJson(@NotNull t writer, AttributeStyles.DateSelectTextColorStyle dateSelectTextColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (dateSelectTextColorStyle != null) {
-            writer.l();
-            writer.A0("value");
+            writer.k();
+            writer.W("value");
             this.nullableComplexElementColorAdapter.toJson(writer, dateSelectTextColorStyle.getValue());
-            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableComplexElementColorAdapter.toJson(writer, dateSelectTextColorStyle.getPlaceholder());
-            writer.A0("label");
+            writer.W("label");
             this.nullableComplexElementColorAdapter.toJson(writer, dateSelectTextColorStyle.getLabel());
-            writer.A0("error");
+            writer.W("error");
             this.nullableComplexElementColorAdapter.toJson(writer, dateSelectTextColorStyle.getError());
             writer.E();
             return;

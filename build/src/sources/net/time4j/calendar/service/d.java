@@ -1,28 +1,28 @@
 package net.time4j.calendar.service;
 
 import java.io.InvalidObjectException;
-import mt.p;
-import mt.x;
 import net.time4j.calendar.q;
+import pt.p;
+import pt.x;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d extends nt.d implements q {
-    private final Class<mt.q> chrono;
+public abstract class d extends qt.d implements q {
+    private final Class<pt.q> chrono;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient char f40453e;
+    private final transient char f39913e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient boolean f40454i;
+    private final transient boolean f39914i;
 
     public d(String str, Class cls, char c10, boolean z10) {
         super(str);
         this.chrono = cls;
-        this.f40453e = c10;
-        this.f40454i = z10;
+        this.f39913e = c10;
+        this.f39914i = z10;
     }
 
-    @Override // mt.p
-    public boolean C() {
+    @Override // pt.p
+    public boolean B() {
         return false;
     }
 
@@ -31,14 +31,14 @@ public abstract class d extends nt.d implements q {
         return this.chrono;
     }
 
-    @Override // mt.e, mt.p
+    @Override // pt.e, pt.p
     public char d() {
-        return this.f40453e;
+        return this.f39913e;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // mt.e
-    public boolean m(mt.e eVar) {
+    @Override // pt.e
+    public boolean j(pt.e eVar) {
         if (this.chrono == ((d) eVar).chrono) {
             return true;
         }
@@ -47,7 +47,7 @@ public abstract class d extends nt.d implements q {
 
     protected Object readResolve() {
         String name = name();
-        for (p pVar : x.G(this.chrono).B()) {
+        for (p pVar : x.G(this.chrono).C()) {
             if (pVar.name().equals(name)) {
                 return pVar;
             }
@@ -55,8 +55,8 @@ public abstract class d extends nt.d implements q {
         throw new InvalidObjectException(name);
     }
 
-    @Override // mt.p
-    public boolean y() {
+    @Override // pt.p
+    public boolean z() {
         return true;
     }
 }

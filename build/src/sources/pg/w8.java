@@ -1,18 +1,18 @@
 package pg;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class w8 implements ui.d {
+final class w8 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w8 f45936a = new w8();
+    static final w8 f45866a = new w8();
 
     static {
-        c.b a10 = ui.c.a("options");
+        c.b a10 = xi.c.a("options");
         v1 v1Var = new v1();
         v1Var.a(1);
         a10.b(v1Var.b()).a();
-        c.b a11 = ui.c.a("errorCode");
+        c.b a11 = xi.c.a("errorCode");
         v1 v1Var2 = new v1();
         v1Var2.a(2);
         a11.b(v1Var2.b()).a();
@@ -21,10 +21,10 @@ final class w8 implements ui.d {
     private w8() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

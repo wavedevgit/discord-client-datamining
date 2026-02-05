@@ -11,8 +11,8 @@ public interface a extends IInterface {
 
     /* renamed from: yf.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class AbstractBinderC0743a extends jg.b implements a {
-        public AbstractBinderC0743a() {
+    public static abstract class AbstractBinderC0763a extends jg.b implements a {
+        public AbstractBinderC0763a() {
             super("com.google.android.gms.identitycredentials.internal.IIdentityCredentialCallbacks");
         }
 
@@ -26,34 +26,34 @@ public interface a extends IInterface {
                                 return false;
                             }
                             f(parcel);
-                            N((Status) jg.c.a(parcel, Status.CREATOR), (k) jg.c.a(parcel, k.CREATOR));
+                            R((Status) jg.c.a(parcel, Status.CREATOR), (k) jg.c.a(parcel, k.CREATOR));
                         } else {
                             f(parcel);
-                            e0((Status) jg.c.a(parcel, Status.CREATOR), (i) jg.c.a(parcel, i.CREATOR));
+                            m0((Status) jg.c.a(parcel, Status.CREATOR), (i) jg.c.a(parcel, i.CREATOR));
                         }
                     } else {
                         f(parcel);
-                        g0((Status) jg.c.a(parcel, Status.CREATOR), (xf.a) jg.c.a(parcel, xf.a.CREATOR));
+                        o0((Status) jg.c.a(parcel, Status.CREATOR), (xf.a) jg.c.a(parcel, xf.a.CREATOR));
                     }
                 } else {
                     f(parcel);
-                    v0((Status) jg.c.a(parcel, Status.CREATOR), (m) jg.c.a(parcel, m.CREATOR));
+                    C0((Status) jg.c.a(parcel, Status.CREATOR), (m) jg.c.a(parcel, m.CREATOR));
                 }
             } else {
                 f(parcel);
-                i((Status) jg.c.a(parcel, Status.CREATOR), (xf.g) jg.c.a(parcel, xf.g.CREATOR));
+                j((Status) jg.c.a(parcel, Status.CREATOR), (xf.g) jg.c.a(parcel, xf.g.CREATOR));
             }
             return true;
         }
     }
 
-    void N(Status status, k kVar);
+    void C0(Status status, m mVar);
 
-    void e0(Status status, i iVar);
+    void R(Status status, k kVar);
 
-    void g0(Status status, xf.a aVar);
+    void j(Status status, xf.g gVar);
 
-    void i(Status status, xf.g gVar);
+    void m0(Status status, i iVar);
 
-    void v0(Status status, m mVar);
+    void o0(Status status, xf.a aVar);
 }

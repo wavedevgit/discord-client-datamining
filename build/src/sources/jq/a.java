@@ -1,89 +1,48 @@
 package jq;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.io.Closeable;
-import java.util.ArrayList;
+import android.os.Bundle;
 import java.util.List;
+import java.util.Map;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements Closeable, Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<a> CREATOR = new C0427a();
+public interface a {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final List f31884d;
+    /* renamed from: a  reason: collision with root package name */
+    public static final C0429a f31168a = C0429a.f31169a;
 
     /* renamed from: jq.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0427a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final a createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            int readInt = parcel.readInt();
-            ArrayList arrayList = new ArrayList(readInt);
-            for (int i10 = 0; i10 != readInt; i10++) {
-                arrayList.add(parcel.readParcelable(a.class.getClassLoader()));
-            }
-            return new a(arrayList);
+    public static final class C0429a {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ C0429a f31169a = new C0429a();
+
+        /* renamed from: b  reason: collision with root package name */
+        private static a f31170b;
+
+        private C0429a() {
         }
 
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final a[] newArray(int i10) {
-            return new a[i10];
+        public final a a() {
+            a aVar = f31170b;
+            Intrinsics.checkNotNull(aVar);
+            return aVar;
         }
-    }
 
-    public a(List stepData) {
-        Intrinsics.checkNotNullParameter(stepData, "stepData");
-        this.f31884d = stepData;
-    }
-
-    public final List a() {
-        return this.f31884d;
-    }
-
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        for (g gVar : this.f31884d) {
-            gVar.close();
+        public final void b(a instance) {
+            Intrinsics.checkNotNullParameter(instance, "instance");
+            f31170b = instance;
         }
     }
 
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
+    void a(String str, Function1 function1);
 
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if ((obj instanceof a) && Intrinsics.areEqual(this.f31884d, ((a) obj).f31884d)) {
-            return true;
-        }
-        return false;
-    }
+    void b(Bundle bundle);
 
-    public int hashCode() {
-        return this.f31884d.hashCode();
-    }
+    void c(List list);
 
-    public String toString() {
-        List list = this.f31884d;
-        return "CollectedData(stepData=" + list + ")";
-    }
+    Map d();
 
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        List<Parcelable> list = this.f31884d;
-        dest.writeInt(list.size());
-        for (Parcelable parcelable : list) {
-            dest.writeParcelable(parcelable, i10);
-        }
-    }
+    void e(Bundle bundle);
 }

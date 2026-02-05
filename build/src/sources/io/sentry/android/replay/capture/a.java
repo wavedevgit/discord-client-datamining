@@ -37,73 +37,73 @@ import kotlin.reflect.KProperty;
 public abstract class a implements io.sentry.android.replay.capture.h {
 
     /* renamed from: b  reason: collision with root package name */
-    private final k7 f29318b;
+    private final k7 f28376b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w0 f29319c;
+    private final w0 f28377c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final p f29320d;
+    private final p f28378d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ScheduledExecutorService f29321e;
+    private final ScheduledExecutorService f28379e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Function1 f29322f;
+    private final Function1 f28380f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Lazy f29323g;
+    private final Lazy f28381g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final io.sentry.android.replay.gestures.b f29324h;
+    private final io.sentry.android.replay.gestures.b f28382h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final AtomicBoolean f29325i;
+    private final AtomicBoolean f28383i;
 
     /* renamed from: j  reason: collision with root package name */
-    private io.sentry.android.replay.i f29326j;
+    private io.sentry.android.replay.i f28384j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final ReadWriteProperty f29327k;
+    private final ReadWriteProperty f28385k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final ReadWriteProperty f29328l;
+    private final ReadWriteProperty f28386l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final AtomicLong f29329m;
+    private final AtomicLong f28387m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final ReadWriteProperty f29330n;
+    private final ReadWriteProperty f28388n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ReadWriteProperty f29331o;
+    private final ReadWriteProperty f28389o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final ReadWriteProperty f29332p;
+    private final ReadWriteProperty f28390p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final ReadWriteProperty f29333q;
+    private final ReadWriteProperty f28391q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Deque f29334r;
+    private final Deque f28392r;
 
     /* renamed from: t  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f29316t = {Reflection.mutableProperty1(new MutablePropertyReference1Impl(a.class, "recorderConfig", "getRecorderConfig$sentry_android_replay_release()Lio/sentry/android/replay/ScreenshotRecorderConfig;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(a.class, "segmentTimestamp", "getSegmentTimestamp()Ljava/util/Date;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(a.class, "screenAtStart", "getScreenAtStart()Ljava/lang/String;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(a.class, "currentReplayId", "getCurrentReplayId()Lio/sentry/protocol/SentryId;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(a.class, "currentSegment", "getCurrentSegment()I", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(a.class, "replayType", "getReplayType()Lio/sentry/SentryReplayEvent$ReplayType;", 0))};
+    static final /* synthetic */ KProperty[] f28374t = {Reflection.mutableProperty1(new MutablePropertyReference1Impl(a.class, "recorderConfig", "getRecorderConfig$sentry_android_replay_release()Lio/sentry/android/replay/ScreenshotRecorderConfig;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(a.class, "segmentTimestamp", "getSegmentTimestamp()Ljava/util/Date;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(a.class, "screenAtStart", "getScreenAtStart()Ljava/lang/String;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(a.class, "currentReplayId", "getCurrentReplayId()Lio/sentry/protocol/SentryId;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(a.class, "currentSegment", "getCurrentSegment()I", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(a.class, "replayType", "getReplayType()Lio/sentry/SentryReplayEvent$ReplayType;", 0))};
 
     /* renamed from: s  reason: collision with root package name */
-    public static final C0384a f29315s = new C0384a(null);
+    public static final C0391a f28373s = new C0391a(null);
 
     /* renamed from: u  reason: collision with root package name */
-    public static final int f29317u = 8;
+    public static final int f28375u = 8;
 
     /* renamed from: io.sentry.android.replay.capture.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0384a {
-        public /* synthetic */ C0384a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0391a {
+        public /* synthetic */ C0391a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0384a() {
+        private C0391a() {
         }
     }
 
@@ -112,15 +112,15 @@ public abstract class a implements io.sentry.android.replay.capture.h {
     public static final class b implements ThreadFactory {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f29335a;
+        private int f28393a;
 
         @Override // java.util.concurrent.ThreadFactory
         public Thread newThread(Runnable r10) {
             Intrinsics.checkNotNullParameter(r10, "r");
             StringBuilder sb2 = new StringBuilder();
             sb2.append("SentryReplayPersister-");
-            int i10 = this.f29335a;
-            this.f29335a = i10 + 1;
+            int i10 = this.f28393a;
+            this.f28393a = i10 + 1;
             sb2.append(i10);
             Thread thread = new Thread(r10, sb2.toString());
             thread.setDaemon(true);
@@ -139,7 +139,7 @@ public abstract class a implements io.sentry.android.replay.capture.h {
         public final io.sentry.android.replay.util.i invoke() {
             ScheduledExecutorService newSingleThreadScheduledExecutor = Executors.newSingleThreadScheduledExecutor(new b());
             Intrinsics.checkNotNull(newSingleThreadScheduledExecutor);
-            return new io.sentry.android.replay.util.i(newSingleThreadScheduledExecutor, a.this.f29318b);
+            return new io.sentry.android.replay.util.i(newSingleThreadScheduledExecutor, a.this.f28376b);
         }
     }
 
@@ -147,34 +147,34 @@ public abstract class a implements io.sentry.android.replay.capture.h {
     public static final class d implements ReadWriteProperty {
 
         /* renamed from: a  reason: collision with root package name */
-        private final AtomicReference f29337a;
+        private final AtomicReference f28395a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ a f29338b;
+        final /* synthetic */ a f28396b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ String f29339c;
+        final /* synthetic */ String f28397c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ a f29340d;
+        final /* synthetic */ a f28398d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ String f29341e;
+        final /* synthetic */ String f28399e;
 
         /* renamed from: io.sentry.android.replay.capture.a$d$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class RunnableC0385a implements Runnable {
+        public static final class RunnableC0392a implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Function0 f29342d;
+            final /* synthetic */ Function0 f28400d;
 
-            public RunnableC0385a(Function0 function0) {
-                this.f29342d = function0;
+            public RunnableC0392a(Function0 function0) {
+                this.f28400d = function0;
             }
 
             @Override // java.lang.Runnable
             public final void run() {
-                this.f29342d.invoke();
+                this.f28400d.invoke();
             }
         }
 
@@ -182,78 +182,78 @@ public abstract class a implements io.sentry.android.replay.capture.h {
         public static final class b extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ String f29343d;
+            final /* synthetic */ String f28401d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Object f29344e;
+            final /* synthetic */ Object f28402e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Object f29345i;
+            final /* synthetic */ Object f28403i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ a f29346o;
+            final /* synthetic */ a f28404o;
 
             /* renamed from: p  reason: collision with root package name */
-            final /* synthetic */ String f29347p;
+            final /* synthetic */ String f28405p;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public b(String str, Object obj, Object obj2, a aVar, String str2) {
                 super(0);
-                this.f29343d = str;
-                this.f29344e = obj;
-                this.f29345i = obj2;
-                this.f29346o = aVar;
-                this.f29347p = str2;
+                this.f28401d = str;
+                this.f28402e = obj;
+                this.f28403i = obj2;
+                this.f28404o = aVar;
+                this.f28405p = str2;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m1174invoke();
-                return Unit.f32464a;
+                m1176invoke();
+                return Unit.f31988a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m1174invoke() {
-                Object obj = this.f29345i;
-                io.sentry.android.replay.i p10 = this.f29346o.p();
+            public final void m1176invoke() {
+                Object obj = this.f28403i;
+                io.sentry.android.replay.i p10 = this.f28404o.p();
                 if (p10 != null) {
-                    p10.E0(this.f29347p, String.valueOf(obj));
+                    p10.E0(this.f28405p, String.valueOf(obj));
                 }
             }
         }
 
         public d(Object obj, a aVar, String str, a aVar2, String str2) {
-            this.f29338b = aVar;
-            this.f29339c = str;
-            this.f29340d = aVar2;
-            this.f29341e = str2;
-            this.f29337a = new AtomicReference(obj);
+            this.f28396b = aVar;
+            this.f28397c = str;
+            this.f28398d = aVar2;
+            this.f28399e = str2;
+            this.f28395a = new AtomicReference(obj);
         }
 
         private final void a(Function0 function0) {
-            if (this.f29338b.f29318b.getThreadChecker().a()) {
-                this.f29338b.r().submit(new io.sentry.android.replay.util.j("CaptureStrategy.runInBackground", new RunnableC0385a(function0)));
+            if (this.f28396b.f28376b.getThreadChecker().a()) {
+                this.f28396b.r().submit(new io.sentry.android.replay.util.j("CaptureStrategy.runInBackground", new RunnableC0392a(function0)));
                 return;
             }
             try {
                 function0.invoke();
             } catch (Throwable th2) {
-                this.f29338b.f29318b.getLogger().b(SentryLevel.ERROR, "Failed to execute task CaptureStrategy.runInBackground", th2);
+                this.f28396b.f28376b.getLogger().b(SentryLevel.ERROR, "Failed to execute task CaptureStrategy.runInBackground", th2);
             }
         }
 
         @Override // kotlin.properties.ReadWriteProperty, kotlin.properties.d
         public Object getValue(Object obj, KProperty property) {
             Intrinsics.checkNotNullParameter(property, "property");
-            return this.f29337a.get();
+            return this.f28395a.get();
         }
 
         @Override // kotlin.properties.ReadWriteProperty
         public void setValue(Object obj, KProperty property, Object obj2) {
             Intrinsics.checkNotNullParameter(property, "property");
-            Object andSet = this.f29337a.getAndSet(obj2);
+            Object andSet = this.f28395a.getAndSet(obj2);
             if (!Intrinsics.areEqual(andSet, obj2)) {
-                a(new b(this.f29339c, andSet, obj2, this.f29340d, this.f29341e));
+                a(new b(this.f28397c, andSet, obj2, this.f28398d, this.f28399e));
             }
         }
     }
@@ -262,34 +262,34 @@ public abstract class a implements io.sentry.android.replay.capture.h {
     public static final class e implements ReadWriteProperty {
 
         /* renamed from: a  reason: collision with root package name */
-        private final AtomicReference f29348a;
+        private final AtomicReference f28406a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ a f29349b;
+        final /* synthetic */ a f28407b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ String f29350c;
+        final /* synthetic */ String f28408c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ a f29351d;
+        final /* synthetic */ a f28409d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ String f29352e;
+        final /* synthetic */ String f28410e;
 
         /* renamed from: io.sentry.android.replay.capture.a$e$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class RunnableC0386a implements Runnable {
+        public static final class RunnableC0393a implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Function0 f29353d;
+            final /* synthetic */ Function0 f28411d;
 
-            public RunnableC0386a(Function0 function0) {
-                this.f29353d = function0;
+            public RunnableC0393a(Function0 function0) {
+                this.f28411d = function0;
             }
 
             @Override // java.lang.Runnable
             public final void run() {
-                this.f29353d.invoke();
+                this.f28411d.invoke();
             }
         }
 
@@ -297,78 +297,78 @@ public abstract class a implements io.sentry.android.replay.capture.h {
         public static final class b extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ String f29354d;
+            final /* synthetic */ String f28412d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Object f29355e;
+            final /* synthetic */ Object f28413e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Object f29356i;
+            final /* synthetic */ Object f28414i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ a f29357o;
+            final /* synthetic */ a f28415o;
 
             /* renamed from: p  reason: collision with root package name */
-            final /* synthetic */ String f29358p;
+            final /* synthetic */ String f28416p;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public b(String str, Object obj, Object obj2, a aVar, String str2) {
                 super(0);
-                this.f29354d = str;
-                this.f29355e = obj;
-                this.f29356i = obj2;
-                this.f29357o = aVar;
-                this.f29358p = str2;
+                this.f28412d = str;
+                this.f28413e = obj;
+                this.f28414i = obj2;
+                this.f28415o = aVar;
+                this.f28416p = str2;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m1175invoke();
-                return Unit.f32464a;
+                m1177invoke();
+                return Unit.f31988a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m1175invoke() {
-                Object obj = this.f29356i;
-                io.sentry.android.replay.i p10 = this.f29357o.p();
+            public final void m1177invoke() {
+                Object obj = this.f28414i;
+                io.sentry.android.replay.i p10 = this.f28415o.p();
                 if (p10 != null) {
-                    p10.E0(this.f29358p, String.valueOf(obj));
+                    p10.E0(this.f28416p, String.valueOf(obj));
                 }
             }
         }
 
         public e(Object obj, a aVar, String str, a aVar2, String str2) {
-            this.f29349b = aVar;
-            this.f29350c = str;
-            this.f29351d = aVar2;
-            this.f29352e = str2;
-            this.f29348a = new AtomicReference(obj);
+            this.f28407b = aVar;
+            this.f28408c = str;
+            this.f28409d = aVar2;
+            this.f28410e = str2;
+            this.f28406a = new AtomicReference(obj);
         }
 
         private final void a(Function0 function0) {
-            if (this.f29349b.f29318b.getThreadChecker().a()) {
-                this.f29349b.r().submit(new io.sentry.android.replay.util.j("CaptureStrategy.runInBackground", new RunnableC0386a(function0)));
+            if (this.f28407b.f28376b.getThreadChecker().a()) {
+                this.f28407b.r().submit(new io.sentry.android.replay.util.j("CaptureStrategy.runInBackground", new RunnableC0393a(function0)));
                 return;
             }
             try {
                 function0.invoke();
             } catch (Throwable th2) {
-                this.f29349b.f29318b.getLogger().b(SentryLevel.ERROR, "Failed to execute task CaptureStrategy.runInBackground", th2);
+                this.f28407b.f28376b.getLogger().b(SentryLevel.ERROR, "Failed to execute task CaptureStrategy.runInBackground", th2);
             }
         }
 
         @Override // kotlin.properties.ReadWriteProperty, kotlin.properties.d
         public Object getValue(Object obj, KProperty property) {
             Intrinsics.checkNotNullParameter(property, "property");
-            return this.f29348a.get();
+            return this.f28406a.get();
         }
 
         @Override // kotlin.properties.ReadWriteProperty
         public void setValue(Object obj, KProperty property, Object obj2) {
             Intrinsics.checkNotNullParameter(property, "property");
-            Object andSet = this.f29348a.getAndSet(obj2);
+            Object andSet = this.f28406a.getAndSet(obj2);
             if (!Intrinsics.areEqual(andSet, obj2)) {
-                a(new b(this.f29350c, andSet, obj2, this.f29351d, this.f29352e));
+                a(new b(this.f28408c, andSet, obj2, this.f28409d, this.f28410e));
             }
         }
     }
@@ -377,34 +377,34 @@ public abstract class a implements io.sentry.android.replay.capture.h {
     public static final class f implements ReadWriteProperty {
 
         /* renamed from: a  reason: collision with root package name */
-        private final AtomicReference f29359a;
+        private final AtomicReference f28417a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ a f29360b;
+        final /* synthetic */ a f28418b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ String f29361c;
+        final /* synthetic */ String f28419c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ a f29362d;
+        final /* synthetic */ a f28420d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ String f29363e;
+        final /* synthetic */ String f28421e;
 
         /* renamed from: io.sentry.android.replay.capture.a$f$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class RunnableC0387a implements Runnable {
+        public static final class RunnableC0394a implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Function0 f29364d;
+            final /* synthetic */ Function0 f28422d;
 
-            public RunnableC0387a(Function0 function0) {
-                this.f29364d = function0;
+            public RunnableC0394a(Function0 function0) {
+                this.f28422d = function0;
             }
 
             @Override // java.lang.Runnable
             public final void run() {
-                this.f29364d.invoke();
+                this.f28422d.invoke();
             }
         }
 
@@ -412,78 +412,78 @@ public abstract class a implements io.sentry.android.replay.capture.h {
         public static final class b extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ String f29365d;
+            final /* synthetic */ String f28423d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Object f29366e;
+            final /* synthetic */ Object f28424e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Object f29367i;
+            final /* synthetic */ Object f28425i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ a f29368o;
+            final /* synthetic */ a f28426o;
 
             /* renamed from: p  reason: collision with root package name */
-            final /* synthetic */ String f29369p;
+            final /* synthetic */ String f28427p;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public b(String str, Object obj, Object obj2, a aVar, String str2) {
                 super(0);
-                this.f29365d = str;
-                this.f29366e = obj;
-                this.f29367i = obj2;
-                this.f29368o = aVar;
-                this.f29369p = str2;
+                this.f28423d = str;
+                this.f28424e = obj;
+                this.f28425i = obj2;
+                this.f28426o = aVar;
+                this.f28427p = str2;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m1176invoke();
-                return Unit.f32464a;
+                m1178invoke();
+                return Unit.f31988a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m1176invoke() {
-                Object obj = this.f29367i;
-                io.sentry.android.replay.i p10 = this.f29368o.p();
+            public final void m1178invoke() {
+                Object obj = this.f28425i;
+                io.sentry.android.replay.i p10 = this.f28426o.p();
                 if (p10 != null) {
-                    p10.E0(this.f29369p, String.valueOf(obj));
+                    p10.E0(this.f28427p, String.valueOf(obj));
                 }
             }
         }
 
         public f(Object obj, a aVar, String str, a aVar2, String str2) {
-            this.f29360b = aVar;
-            this.f29361c = str;
-            this.f29362d = aVar2;
-            this.f29363e = str2;
-            this.f29359a = new AtomicReference(obj);
+            this.f28418b = aVar;
+            this.f28419c = str;
+            this.f28420d = aVar2;
+            this.f28421e = str2;
+            this.f28417a = new AtomicReference(obj);
         }
 
         private final void a(Function0 function0) {
-            if (this.f29360b.f29318b.getThreadChecker().a()) {
-                this.f29360b.r().submit(new io.sentry.android.replay.util.j("CaptureStrategy.runInBackground", new RunnableC0387a(function0)));
+            if (this.f28418b.f28376b.getThreadChecker().a()) {
+                this.f28418b.r().submit(new io.sentry.android.replay.util.j("CaptureStrategy.runInBackground", new RunnableC0394a(function0)));
                 return;
             }
             try {
                 function0.invoke();
             } catch (Throwable th2) {
-                this.f29360b.f29318b.getLogger().b(SentryLevel.ERROR, "Failed to execute task CaptureStrategy.runInBackground", th2);
+                this.f28418b.f28376b.getLogger().b(SentryLevel.ERROR, "Failed to execute task CaptureStrategy.runInBackground", th2);
             }
         }
 
         @Override // kotlin.properties.ReadWriteProperty, kotlin.properties.d
         public Object getValue(Object obj, KProperty property) {
             Intrinsics.checkNotNullParameter(property, "property");
-            return this.f29359a.get();
+            return this.f28417a.get();
         }
 
         @Override // kotlin.properties.ReadWriteProperty
         public void setValue(Object obj, KProperty property, Object obj2) {
             Intrinsics.checkNotNullParameter(property, "property");
-            Object andSet = this.f29359a.getAndSet(obj2);
+            Object andSet = this.f28417a.getAndSet(obj2);
             if (!Intrinsics.areEqual(andSet, obj2)) {
-                a(new b(this.f29361c, andSet, obj2, this.f29362d, this.f29363e));
+                a(new b(this.f28419c, andSet, obj2, this.f28420d, this.f28421e));
             }
         }
     }
@@ -492,31 +492,31 @@ public abstract class a implements io.sentry.android.replay.capture.h {
     public static final class g implements ReadWriteProperty {
 
         /* renamed from: a  reason: collision with root package name */
-        private final AtomicReference f29370a;
+        private final AtomicReference f28428a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ a f29371b;
+        final /* synthetic */ a f28429b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ String f29372c;
+        final /* synthetic */ String f28430c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ a f29373d;
+        final /* synthetic */ a f28431d;
 
         /* renamed from: io.sentry.android.replay.capture.a$g$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class RunnableC0388a implements Runnable {
+        public static final class RunnableC0395a implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Function0 f29374d;
+            final /* synthetic */ Function0 f28432d;
 
-            public RunnableC0388a(Function0 function0) {
-                this.f29374d = function0;
+            public RunnableC0395a(Function0 function0) {
+                this.f28432d = function0;
             }
 
             @Override // java.lang.Runnable
             public final void run() {
-                this.f29374d.invoke();
+                this.f28432d.invoke();
             }
         }
 
@@ -524,53 +524,53 @@ public abstract class a implements io.sentry.android.replay.capture.h {
         public static final class b extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ String f29375d;
+            final /* synthetic */ String f28433d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Object f29376e;
+            final /* synthetic */ Object f28434e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Object f29377i;
+            final /* synthetic */ Object f28435i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ a f29378o;
+            final /* synthetic */ a f28436o;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public b(String str, Object obj, Object obj2, a aVar) {
                 super(0);
-                this.f29375d = str;
-                this.f29376e = obj;
-                this.f29377i = obj2;
-                this.f29378o = aVar;
+                this.f28433d = str;
+                this.f28434e = obj;
+                this.f28435i = obj2;
+                this.f28436o = aVar;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m1177invoke();
-                return Unit.f32464a;
+                m1179invoke();
+                return Unit.f31988a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m1177invoke() {
-                Object obj = this.f29376e;
-                s sVar = (s) this.f29377i;
+            public final void m1179invoke() {
+                Object obj = this.f28434e;
+                s sVar = (s) this.f28435i;
                 s sVar2 = (s) obj;
                 if (sVar == null) {
                     return;
                 }
-                io.sentry.android.replay.i p10 = this.f29378o.p();
+                io.sentry.android.replay.i p10 = this.f28436o.p();
                 if (p10 != null) {
                     p10.E0("config.height", String.valueOf(sVar.c()));
                 }
-                io.sentry.android.replay.i p11 = this.f29378o.p();
+                io.sentry.android.replay.i p11 = this.f28436o.p();
                 if (p11 != null) {
                     p11.E0("config.width", String.valueOf(sVar.d()));
                 }
-                io.sentry.android.replay.i p12 = this.f29378o.p();
+                io.sentry.android.replay.i p12 = this.f28436o.p();
                 if (p12 != null) {
                     p12.E0("config.frame-rate", String.valueOf(sVar.b()));
                 }
-                io.sentry.android.replay.i p13 = this.f29378o.p();
+                io.sentry.android.replay.i p13 = this.f28436o.p();
                 if (p13 != null) {
                     p13.E0("config.bit-rate", String.valueOf(sVar.a()));
                 }
@@ -578,36 +578,36 @@ public abstract class a implements io.sentry.android.replay.capture.h {
         }
 
         public g(Object obj, a aVar, String str, a aVar2) {
-            this.f29371b = aVar;
-            this.f29372c = str;
-            this.f29373d = aVar2;
-            this.f29370a = new AtomicReference(obj);
+            this.f28429b = aVar;
+            this.f28430c = str;
+            this.f28431d = aVar2;
+            this.f28428a = new AtomicReference(obj);
         }
 
         private final void a(Function0 function0) {
-            if (this.f29371b.f29318b.getThreadChecker().a()) {
-                this.f29371b.r().submit(new io.sentry.android.replay.util.j("CaptureStrategy.runInBackground", new RunnableC0388a(function0)));
+            if (this.f28429b.f28376b.getThreadChecker().a()) {
+                this.f28429b.r().submit(new io.sentry.android.replay.util.j("CaptureStrategy.runInBackground", new RunnableC0395a(function0)));
                 return;
             }
             try {
                 function0.invoke();
             } catch (Throwable th2) {
-                this.f29371b.f29318b.getLogger().b(SentryLevel.ERROR, "Failed to execute task CaptureStrategy.runInBackground", th2);
+                this.f28429b.f28376b.getLogger().b(SentryLevel.ERROR, "Failed to execute task CaptureStrategy.runInBackground", th2);
             }
         }
 
         @Override // kotlin.properties.ReadWriteProperty, kotlin.properties.d
         public Object getValue(Object obj, KProperty property) {
             Intrinsics.checkNotNullParameter(property, "property");
-            return this.f29370a.get();
+            return this.f28428a.get();
         }
 
         @Override // kotlin.properties.ReadWriteProperty
         public void setValue(Object obj, KProperty property, Object obj2) {
             Intrinsics.checkNotNullParameter(property, "property");
-            Object andSet = this.f29370a.getAndSet(obj2);
+            Object andSet = this.f28428a.getAndSet(obj2);
             if (!Intrinsics.areEqual(andSet, obj2)) {
-                a(new b(this.f29372c, andSet, obj2, this.f29373d));
+                a(new b(this.f28430c, andSet, obj2, this.f28431d));
             }
         }
     }
@@ -616,31 +616,31 @@ public abstract class a implements io.sentry.android.replay.capture.h {
     public static final class h implements ReadWriteProperty {
 
         /* renamed from: a  reason: collision with root package name */
-        private final AtomicReference f29379a;
+        private final AtomicReference f28437a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ a f29380b;
+        final /* synthetic */ a f28438b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ String f29381c;
+        final /* synthetic */ String f28439c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ a f29382d;
+        final /* synthetic */ a f28440d;
 
         /* renamed from: io.sentry.android.replay.capture.a$h$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class RunnableC0389a implements Runnable {
+        public static final class RunnableC0396a implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Function0 f29383d;
+            final /* synthetic */ Function0 f28441d;
 
-            public RunnableC0389a(Function0 function0) {
-                this.f29383d = function0;
+            public RunnableC0396a(Function0 function0) {
+                this.f28441d = function0;
             }
 
             @Override // java.lang.Runnable
             public final void run() {
-                this.f29383d.invoke();
+                this.f28441d.invoke();
             }
         }
 
@@ -648,38 +648,38 @@ public abstract class a implements io.sentry.android.replay.capture.h {
         public static final class b extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ String f29384d;
+            final /* synthetic */ String f28442d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Object f29385e;
+            final /* synthetic */ Object f28443e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Object f29386i;
+            final /* synthetic */ Object f28444i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ a f29387o;
+            final /* synthetic */ a f28445o;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public b(String str, Object obj, Object obj2, a aVar) {
                 super(0);
-                this.f29384d = str;
-                this.f29385e = obj;
-                this.f29386i = obj2;
-                this.f29387o = aVar;
+                this.f28442d = str;
+                this.f28443e = obj;
+                this.f28444i = obj2;
+                this.f28445o = aVar;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m1178invoke();
-                return Unit.f32464a;
+                m1180invoke();
+                return Unit.f31988a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m1178invoke() {
-                Object obj = this.f29385e;
-                Date date = (Date) this.f29386i;
+            public final void m1180invoke() {
+                Object obj = this.f28443e;
+                Date date = (Date) this.f28444i;
                 Date date2 = (Date) obj;
-                io.sentry.android.replay.i p10 = this.f29387o.p();
+                io.sentry.android.replay.i p10 = this.f28445o.p();
                 if (p10 != null) {
                     p10.E0("segment.timestamp", date == null ? null : io.sentry.k.h(date));
                 }
@@ -687,36 +687,36 @@ public abstract class a implements io.sentry.android.replay.capture.h {
         }
 
         public h(Object obj, a aVar, String str, a aVar2) {
-            this.f29380b = aVar;
-            this.f29381c = str;
-            this.f29382d = aVar2;
-            this.f29379a = new AtomicReference(obj);
+            this.f28438b = aVar;
+            this.f28439c = str;
+            this.f28440d = aVar2;
+            this.f28437a = new AtomicReference(obj);
         }
 
         private final void a(Function0 function0) {
-            if (this.f29380b.f29318b.getThreadChecker().a()) {
-                this.f29380b.r().submit(new io.sentry.android.replay.util.j("CaptureStrategy.runInBackground", new RunnableC0389a(function0)));
+            if (this.f28438b.f28376b.getThreadChecker().a()) {
+                this.f28438b.r().submit(new io.sentry.android.replay.util.j("CaptureStrategy.runInBackground", new RunnableC0396a(function0)));
                 return;
             }
             try {
                 function0.invoke();
             } catch (Throwable th2) {
-                this.f29380b.f29318b.getLogger().b(SentryLevel.ERROR, "Failed to execute task CaptureStrategy.runInBackground", th2);
+                this.f28438b.f28376b.getLogger().b(SentryLevel.ERROR, "Failed to execute task CaptureStrategy.runInBackground", th2);
             }
         }
 
         @Override // kotlin.properties.ReadWriteProperty, kotlin.properties.d
         public Object getValue(Object obj, KProperty property) {
             Intrinsics.checkNotNullParameter(property, "property");
-            return this.f29379a.get();
+            return this.f28437a.get();
         }
 
         @Override // kotlin.properties.ReadWriteProperty
         public void setValue(Object obj, KProperty property, Object obj2) {
             Intrinsics.checkNotNullParameter(property, "property");
-            Object andSet = this.f29379a.getAndSet(obj2);
+            Object andSet = this.f28437a.getAndSet(obj2);
             if (!Intrinsics.areEqual(andSet, obj2)) {
-                a(new b(this.f29381c, andSet, obj2, this.f29382d));
+                a(new b(this.f28439c, andSet, obj2, this.f28440d));
             }
         }
     }
@@ -725,34 +725,34 @@ public abstract class a implements io.sentry.android.replay.capture.h {
     public static final class i implements ReadWriteProperty {
 
         /* renamed from: a  reason: collision with root package name */
-        private final AtomicReference f29388a;
+        private final AtomicReference f28446a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ a f29389b;
+        final /* synthetic */ a f28447b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ String f29390c;
+        final /* synthetic */ String f28448c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ a f29391d;
+        final /* synthetic */ a f28449d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ String f29392e;
+        final /* synthetic */ String f28450e;
 
         /* renamed from: io.sentry.android.replay.capture.a$i$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class RunnableC0390a implements Runnable {
+        public static final class RunnableC0397a implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Function0 f29393d;
+            final /* synthetic */ Function0 f28451d;
 
-            public RunnableC0390a(Function0 function0) {
-                this.f29393d = function0;
+            public RunnableC0397a(Function0 function0) {
+                this.f28451d = function0;
             }
 
             @Override // java.lang.Runnable
             public final void run() {
-                this.f29393d.invoke();
+                this.f28451d.invoke();
             }
         }
 
@@ -760,78 +760,78 @@ public abstract class a implements io.sentry.android.replay.capture.h {
         public static final class b extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ String f29394d;
+            final /* synthetic */ String f28452d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Object f29395e;
+            final /* synthetic */ Object f28453e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Object f29396i;
+            final /* synthetic */ Object f28454i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ a f29397o;
+            final /* synthetic */ a f28455o;
 
             /* renamed from: p  reason: collision with root package name */
-            final /* synthetic */ String f29398p;
+            final /* synthetic */ String f28456p;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public b(String str, Object obj, Object obj2, a aVar, String str2) {
                 super(0);
-                this.f29394d = str;
-                this.f29395e = obj;
-                this.f29396i = obj2;
-                this.f29397o = aVar;
-                this.f29398p = str2;
+                this.f28452d = str;
+                this.f28453e = obj;
+                this.f28454i = obj2;
+                this.f28455o = aVar;
+                this.f28456p = str2;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m1179invoke();
-                return Unit.f32464a;
+                m1181invoke();
+                return Unit.f31988a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m1179invoke() {
-                Object obj = this.f29396i;
-                io.sentry.android.replay.i p10 = this.f29397o.p();
+            public final void m1181invoke() {
+                Object obj = this.f28454i;
+                io.sentry.android.replay.i p10 = this.f28455o.p();
                 if (p10 != null) {
-                    p10.E0(this.f29398p, String.valueOf(obj));
+                    p10.E0(this.f28456p, String.valueOf(obj));
                 }
             }
         }
 
         public i(Object obj, a aVar, String str, a aVar2, String str2) {
-            this.f29389b = aVar;
-            this.f29390c = str;
-            this.f29391d = aVar2;
-            this.f29392e = str2;
-            this.f29388a = new AtomicReference(obj);
+            this.f28447b = aVar;
+            this.f28448c = str;
+            this.f28449d = aVar2;
+            this.f28450e = str2;
+            this.f28446a = new AtomicReference(obj);
         }
 
         private final void a(Function0 function0) {
-            if (this.f29389b.f29318b.getThreadChecker().a()) {
-                this.f29389b.r().submit(new io.sentry.android.replay.util.j("CaptureStrategy.runInBackground", new RunnableC0390a(function0)));
+            if (this.f28447b.f28376b.getThreadChecker().a()) {
+                this.f28447b.r().submit(new io.sentry.android.replay.util.j("CaptureStrategy.runInBackground", new RunnableC0397a(function0)));
                 return;
             }
             try {
                 function0.invoke();
             } catch (Throwable th2) {
-                this.f29389b.f29318b.getLogger().b(SentryLevel.ERROR, "Failed to execute task CaptureStrategy.runInBackground", th2);
+                this.f28447b.f28376b.getLogger().b(SentryLevel.ERROR, "Failed to execute task CaptureStrategy.runInBackground", th2);
             }
         }
 
         @Override // kotlin.properties.ReadWriteProperty, kotlin.properties.d
         public Object getValue(Object obj, KProperty property) {
             Intrinsics.checkNotNullParameter(property, "property");
-            return this.f29388a.get();
+            return this.f28446a.get();
         }
 
         @Override // kotlin.properties.ReadWriteProperty
         public void setValue(Object obj, KProperty property, Object obj2) {
             Intrinsics.checkNotNullParameter(property, "property");
-            Object andSet = this.f29388a.getAndSet(obj2);
+            Object andSet = this.f28446a.getAndSet(obj2);
             if (!Intrinsics.areEqual(andSet, obj2)) {
-                a(new b(this.f29390c, andSet, obj2, this.f29391d, this.f29392e));
+                a(new b(this.f28448c, andSet, obj2, this.f28449d, this.f28450e));
             }
         }
     }
@@ -840,22 +840,22 @@ public abstract class a implements io.sentry.android.replay.capture.h {
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(dateProvider, "dateProvider");
         Intrinsics.checkNotNullParameter(replayExecutor, "replayExecutor");
-        this.f29318b = options;
-        this.f29319c = w0Var;
-        this.f29320d = dateProvider;
-        this.f29321e = replayExecutor;
-        this.f29322f = function1;
-        this.f29323g = lr.l.a(new c());
-        this.f29324h = new io.sentry.android.replay.gestures.b(dateProvider);
-        this.f29325i = new AtomicBoolean(false);
-        this.f29327k = new g(null, this, "", this);
-        this.f29328l = new h(null, this, "segment.timestamp", this);
-        this.f29329m = new AtomicLong();
-        this.f29330n = new i(null, this, "replay.screen-at-start", this, "replay.screen-at-start");
-        this.f29331o = new d(x.f30413e, this, "replay.id", this, "replay.id");
-        this.f29332p = new e(-1, this, "segment.id", this, "segment.id");
-        this.f29333q = new f(null, this, "replay.type", this, "replay.type");
-        this.f29334r = new ConcurrentLinkedDeque();
+        this.f28376b = options;
+        this.f28377c = w0Var;
+        this.f28378d = dateProvider;
+        this.f28379e = replayExecutor;
+        this.f28380f = function1;
+        this.f28381g = or.l.a(new c());
+        this.f28382h = new io.sentry.android.replay.gestures.b(dateProvider);
+        this.f28383i = new AtomicBoolean(false);
+        this.f28385k = new g(null, this, "", this);
+        this.f28386l = new h(null, this, "segment.timestamp", this);
+        this.f28387m = new AtomicLong();
+        this.f28388n = new i(null, this, "replay.screen-at-start", this, "replay.screen-at-start");
+        this.f28389o = new d(x.f29471e, this, "replay.id", this, "replay.id");
+        this.f28390p = new e(-1, this, "segment.id", this, "segment.id");
+        this.f28391q = new f(null, this, "replay.type", this, "replay.type");
+        this.f28392r = new ConcurrentLinkedDeque();
     }
 
     public static /* synthetic */ h.c o(a aVar, long j10, Date date, x xVar, int i10, int i11, int i12, int i13, int i14, l7.b bVar, io.sentry.android.replay.i iVar, String str, List list, Deque deque, int i15, Object obj) {
@@ -880,7 +880,7 @@ public abstract class a implements io.sentry.android.replay.capture.h {
                 bVar2 = bVar;
             }
             if ((i15 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
-                iVar2 = aVar.f29326j;
+                iVar2 = aVar.f28384j;
             } else {
                 iVar2 = iVar;
             }
@@ -895,7 +895,7 @@ public abstract class a implements io.sentry.android.replay.capture.h {
                 list2 = list;
             }
             if ((i15 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0) {
-                deque2 = aVar.f29334r;
+                deque2 = aVar.f28392r;
                 aVar2 = aVar;
                 date2 = date;
                 xVar2 = xVar;
@@ -917,33 +917,33 @@ public abstract class a implements io.sentry.android.replay.capture.h {
                 i19 = i13;
                 i20 = i14;
             }
-            return aVar2.n(j11, date2, xVar2, i16, i17, i18, i19, i20, bVar2, iVar2, str2, list2, deque2);
+            return aVar2.m(j11, date2, xVar2, i16, i17, i18, i19, i20, bVar2, iVar2, str2, list2, deque2);
         }
         throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: createSegmentInternal");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final ScheduledExecutorService r() {
-        return (ScheduledExecutorService) this.f29323g.getValue();
+        return (ScheduledExecutorService) this.f28381g.getValue();
     }
 
     public final void A(s sVar) {
-        this.f29327k.setValue(this, f29316t[0], sVar);
+        this.f28385k.setValue(this, f28374t[0], sVar);
     }
 
     public void B(l7.b bVar) {
         Intrinsics.checkNotNullParameter(bVar, "<set-?>");
-        this.f29333q.setValue(this, f29316t[5], bVar);
+        this.f28391q.setValue(this, f28374t[5], bVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void C(String str) {
-        this.f29330n.setValue(this, f29316t[2], str);
+        this.f28388n.setValue(this, f28374t[2], str);
     }
 
     @Override // io.sentry.android.replay.capture.h
     public x a() {
-        return (x) this.f29331o.getValue(this, f29316t[3]);
+        return (x) this.f28389o.getValue(this, f28374t[3]);
     }
 
     @Override // io.sentry.android.replay.capture.h
@@ -952,23 +952,23 @@ public abstract class a implements io.sentry.android.replay.capture.h {
 
     @Override // io.sentry.android.replay.capture.h
     public void c(int i10) {
-        this.f29332p.setValue(this, f29316t[4], Integer.valueOf(i10));
+        this.f28390p.setValue(this, f28374t[4], Integer.valueOf(i10));
     }
 
     @Override // io.sentry.android.replay.capture.h
     public int d() {
-        return ((Number) this.f29332p.getValue(this, f29316t[4])).intValue();
+        return ((Number) this.f28390p.getValue(this, f28374t[4])).intValue();
     }
 
     @Override // io.sentry.android.replay.capture.h
     public void h(int i10, x replayId, l7.b bVar) {
         io.sentry.android.replay.i iVar;
         Intrinsics.checkNotNullParameter(replayId, "replayId");
-        Function1 function1 = this.f29322f;
+        Function1 function1 = this.f28380f;
         if (function1 == null || (iVar = (io.sentry.android.replay.i) function1.invoke(replayId)) == null) {
-            iVar = new io.sentry.android.replay.i(this.f29318b, replayId);
+            iVar = new io.sentry.android.replay.i(this.f28376b, replayId);
         }
-        this.f29326j = iVar;
+        this.f28384j = iVar;
         z(replayId);
         c(i10);
         if (bVar == null) {
@@ -980,7 +980,7 @@ public abstract class a implements io.sentry.android.replay.capture.h {
         }
         B(bVar);
         j(io.sentry.k.d());
-        this.f29329m.set(this.f29320d.a());
+        this.f28387m.set(this.f28378d.a());
     }
 
     @Override // io.sentry.android.replay.capture.h
@@ -990,21 +990,21 @@ public abstract class a implements io.sentry.android.replay.capture.h {
 
     @Override // io.sentry.android.replay.capture.h
     public void j(Date date) {
-        this.f29328l.setValue(this, f29316t[1], date);
+        this.f28386l.setValue(this, f28374t[1], date);
     }
 
-    @Override // io.sentry.android.replay.capture.h
-    public void m(s recorderConfig) {
-        Intrinsics.checkNotNullParameter(recorderConfig, "recorderConfig");
-        A(recorderConfig);
-    }
-
-    protected final h.c n(long j10, Date currentSegmentTimestamp, x replayId, int i10, int i11, int i12, int i13, int i14, l7.b replayType, io.sentry.android.replay.i iVar, String str, List list, Deque events) {
+    protected final h.c m(long j10, Date currentSegmentTimestamp, x replayId, int i10, int i11, int i12, int i13, int i14, l7.b replayType, io.sentry.android.replay.i iVar, String str, List list, Deque events) {
         Intrinsics.checkNotNullParameter(currentSegmentTimestamp, "currentSegmentTimestamp");
         Intrinsics.checkNotNullParameter(replayId, "replayId");
         Intrinsics.checkNotNullParameter(replayType, "replayType");
         Intrinsics.checkNotNullParameter(events, "events");
-        return io.sentry.android.replay.capture.h.f29424a.c(this.f29319c, this.f29318b, j10, currentSegmentTimestamp, replayId, i10, i11, i12, replayType, iVar, i13, i14, str, list, events);
+        return io.sentry.android.replay.capture.h.f28482a.c(this.f28377c, this.f28376b, j10, currentSegmentTimestamp, replayId, i10, i11, i12, replayType, iVar, i13, i14, str, list, events);
+    }
+
+    @Override // io.sentry.android.replay.capture.h
+    public void n(s recorderConfig) {
+        Intrinsics.checkNotNullParameter(recorderConfig, "recorderConfig");
+        A(recorderConfig);
     }
 
     @Override // io.sentry.android.replay.capture.h
@@ -1012,67 +1012,67 @@ public abstract class a implements io.sentry.android.replay.capture.h {
         List a10;
         Intrinsics.checkNotNullParameter(event, "event");
         s s10 = s();
-        if (s10 != null && (a10 = this.f29324h.a(event, s10)) != null) {
-            CollectionsKt.B(this.f29334r, a10);
+        if (s10 != null && (a10 = this.f28382h.a(event, s10)) != null) {
+            CollectionsKt.B(this.f28392r, a10);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final io.sentry.android.replay.i p() {
-        return this.f29326j;
+        return this.f28384j;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Deque q() {
-        return this.f29334r;
+        return this.f28392r;
     }
 
     public final s s() {
-        return (s) this.f29327k.getValue(this, f29316t[0]);
+        return (s) this.f28385k.getValue(this, f28374t[0]);
     }
 
     @Override // io.sentry.android.replay.capture.h
     public void stop() {
-        io.sentry.android.replay.i iVar = this.f29326j;
+        io.sentry.android.replay.i iVar = this.f28384j;
         if (iVar != null) {
             iVar.close();
         }
-        this.f29329m.set(0L);
+        this.f28387m.set(0L);
         j(null);
-        x EMPTY_ID = x.f30413e;
+        x EMPTY_ID = x.f29471e;
         Intrinsics.checkNotNullExpressionValue(EMPTY_ID, "EMPTY_ID");
         z(EMPTY_ID);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final ScheduledExecutorService t() {
-        return this.f29321e;
+        return this.f28379e;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final AtomicLong u() {
-        return this.f29329m;
+        return this.f28387m;
     }
 
     public l7.b v() {
-        return (l7.b) this.f29333q.getValue(this, f29316t[5]);
+        return (l7.b) this.f28391q.getValue(this, f28374t[5]);
     }
 
     protected final String w() {
-        return (String) this.f29330n.getValue(this, f29316t[2]);
+        return (String) this.f28388n.getValue(this, f28374t[2]);
     }
 
     public Date x() {
-        return (Date) this.f29328l.getValue(this, f29316t[1]);
+        return (Date) this.f28386l.getValue(this, f28374t[1]);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final AtomicBoolean y() {
-        return this.f29325i;
+        return this.f28383i;
     }
 
     public void z(x xVar) {
         Intrinsics.checkNotNullParameter(xVar, "<set-?>");
-        this.f29331o.setValue(this, f29316t[3], xVar);
+        this.f28389o.setValue(this, f28374t[3], xVar);
     }
 }

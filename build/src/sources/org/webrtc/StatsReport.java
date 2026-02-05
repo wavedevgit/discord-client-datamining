@@ -3,7 +3,7 @@ package org.webrtc;
 public class StatsReport {
 
     /* renamed from: id  reason: collision with root package name */
-    public final String f44414id;
+    public final String f44265id;
     public final double timestamp;
     public final String type;
     public final Value[] values;
@@ -26,7 +26,7 @@ public class StatsReport {
 
     @CalledByNative
     public StatsReport(String str, String str2, double d10, Value[] valueArr) {
-        this.f44414id = str;
+        this.f44265id = str;
         this.type = str2;
         this.timestamp = d10;
         this.values = valueArr;
@@ -35,7 +35,7 @@ public class StatsReport {
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
         sb2.append("id: ");
-        sb2.append(this.f44414id);
+        sb2.append(this.f44265id);
         sb2.append(", type: ");
         sb2.append(this.type);
         sb2.append(", timestamp: ");

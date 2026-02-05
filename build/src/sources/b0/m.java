@@ -5,7 +5,7 @@ import android.opengl.Matrix;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final float[] f6235a = new float[16];
+    private static final float[] f6082a = new float[16];
 
     private static void a(float[] fArr, float f10, float f11) {
         Matrix.translateM(fArr, 0, -f10, -f11, 0.0f);

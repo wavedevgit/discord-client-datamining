@@ -1,403 +1,239 @@
 package er;
 
 import android.content.Context;
-import android.graphics.Paint;
-import android.graphics.Typeface;
-import android.text.TextPaint;
-import java.util.Arrays;
-import java.util.Locale;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
+import android.media.ExifInterface;
+import android.net.Uri;
+import android.os.ParcelFileDescriptor;
+import java.io.File;
+import java.io.FileOutputStream;
+import kotlin.Pair;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
+import or.v;
+import or.w;
+import zr.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class c {
-
-    /* renamed from: x  reason: collision with root package name */
-    private static final float[] f22593x = {2.0f, 1.5f, 1.17f, 1.0f, 0.83f, 0.67f};
+public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final int f22594a;
+    private static final String f21795a = File.separator;
 
-    /* renamed from: b  reason: collision with root package name */
-    protected final boolean f22595b;
-
-    /* renamed from: c  reason: collision with root package name */
-    protected final int f22596c;
-
-    /* renamed from: d  reason: collision with root package name */
-    protected final int f22597d;
-
-    /* renamed from: e  reason: collision with root package name */
-    protected final int f22598e;
-
-    /* renamed from: f  reason: collision with root package name */
-    protected final int f22599f;
-
-    /* renamed from: g  reason: collision with root package name */
-    protected final int f22600g;
-
-    /* renamed from: h  reason: collision with root package name */
-    protected final int f22601h;
-
-    /* renamed from: i  reason: collision with root package name */
-    protected final int f22602i;
-
-    /* renamed from: j  reason: collision with root package name */
-    protected final int f22603j;
-
-    /* renamed from: k  reason: collision with root package name */
-    protected final int f22604k;
-
-    /* renamed from: l  reason: collision with root package name */
-    protected final int f22605l;
-
-    /* renamed from: m  reason: collision with root package name */
-    protected final int f22606m;
-
-    /* renamed from: n  reason: collision with root package name */
-    protected final Typeface f22607n;
-
-    /* renamed from: o  reason: collision with root package name */
-    protected final Typeface f22608o;
-
-    /* renamed from: p  reason: collision with root package name */
-    protected final int f22609p;
-
-    /* renamed from: q  reason: collision with root package name */
-    protected final int f22610q;
-
-    /* renamed from: r  reason: collision with root package name */
-    protected final int f22611r;
-
-    /* renamed from: s  reason: collision with root package name */
-    protected final int f22612s;
-
-    /* renamed from: t  reason: collision with root package name */
-    protected final Typeface f22613t;
-
-    /* renamed from: u  reason: collision with root package name */
-    protected final float[] f22614u;
-
-    /* renamed from: v  reason: collision with root package name */
-    protected final int f22615v;
-
-    /* renamed from: w  reason: collision with root package name */
-    protected final int f22616w;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class a {
-
-        /* renamed from: a  reason: collision with root package name */
-        private int f22617a;
-
-        /* renamed from: c  reason: collision with root package name */
-        private int f22619c;
-
-        /* renamed from: d  reason: collision with root package name */
-        private int f22620d;
-
-        /* renamed from: e  reason: collision with root package name */
-        private int f22621e;
-
-        /* renamed from: f  reason: collision with root package name */
-        private int f22622f;
-
-        /* renamed from: g  reason: collision with root package name */
-        private int f22623g;
-
-        /* renamed from: h  reason: collision with root package name */
-        private int f22624h;
-
-        /* renamed from: i  reason: collision with root package name */
-        private int f22625i;
-
-        /* renamed from: j  reason: collision with root package name */
-        private int f22626j;
-
-        /* renamed from: k  reason: collision with root package name */
-        private int f22627k;
-
-        /* renamed from: l  reason: collision with root package name */
-        private int f22628l;
-
-        /* renamed from: m  reason: collision with root package name */
-        private int f22629m;
-
-        /* renamed from: n  reason: collision with root package name */
-        private Typeface f22630n;
-
-        /* renamed from: o  reason: collision with root package name */
-        private Typeface f22631o;
-
-        /* renamed from: p  reason: collision with root package name */
-        private int f22632p;
-
-        /* renamed from: q  reason: collision with root package name */
-        private int f22633q;
-
-        /* renamed from: s  reason: collision with root package name */
-        private int f22635s;
-
-        /* renamed from: t  reason: collision with root package name */
-        private Typeface f22636t;
-
-        /* renamed from: u  reason: collision with root package name */
-        private float[] f22637u;
-
-        /* renamed from: v  reason: collision with root package name */
-        private int f22638v;
-
-        /* renamed from: b  reason: collision with root package name */
-        private boolean f22618b = true;
-
-        /* renamed from: r  reason: collision with root package name */
-        private int f22634r = -1;
-
-        /* renamed from: w  reason: collision with root package name */
-        private int f22639w = -1;
-
-        a() {
-        }
-
-        public a A(int i10) {
-            this.f22623g = i10;
-            return this;
-        }
-
-        public a B(int i10) {
-            this.f22629m = i10;
-            return this;
-        }
-
-        public a C(int i10) {
-            this.f22634r = i10;
-            return this;
-        }
-
-        public a D(int i10) {
-            this.f22639w = i10;
-            return this;
-        }
-
-        public a x(int i10) {
-            this.f22619c = i10;
-            return this;
-        }
-
-        public a y(int i10) {
-            this.f22620d = i10;
-            return this;
-        }
-
-        public c z() {
-            return new c(this);
-        }
+    private static final String a(Context context) {
+        StringBuilder sb2 = new StringBuilder();
+        File cacheDir = context.getCacheDir();
+        Intrinsics.checkExpressionValueIsNotNull(cacheDir, "context.cacheDir");
+        sb2.append(cacheDir.getPath());
+        String str = f21795a;
+        sb2.append(str);
+        sb2.append("compressor");
+        sb2.append(str);
+        return sb2.toString();
     }
 
-    protected c(a aVar) {
-        this.f22594a = aVar.f22617a;
-        this.f22595b = aVar.f22618b;
-        this.f22596c = aVar.f22619c;
-        this.f22597d = aVar.f22620d;
-        this.f22598e = aVar.f22621e;
-        this.f22599f = aVar.f22622f;
-        this.f22600g = aVar.f22623g;
-        this.f22601h = aVar.f22624h;
-        this.f22602i = aVar.f22625i;
-        this.f22603j = aVar.f22626j;
-        this.f22604k = aVar.f22627k;
-        this.f22605l = aVar.f22628l;
-        this.f22606m = aVar.f22629m;
-        this.f22607n = aVar.f22630n;
-        this.f22608o = aVar.f22631o;
-        this.f22609p = aVar.f22632p;
-        this.f22610q = aVar.f22633q;
-        this.f22611r = aVar.f22634r;
-        this.f22612s = aVar.f22635s;
-        this.f22613t = aVar.f22636t;
-        this.f22614u = aVar.f22637u;
-        this.f22615v = aVar.f22638v;
-        this.f22616w = aVar.f22639w;
+    public static final int b(BitmapFactory.Options options, int i10, int i11) {
+        Intrinsics.checkParameterIsNotNull(options, "options");
+        Pair a10 = v.a(Integer.valueOf(options.outHeight), Integer.valueOf(options.outWidth));
+        int intValue = ((Number) a10.a()).intValue();
+        int intValue2 = ((Number) a10.b()).intValue();
+        int i12 = 1;
+        if (intValue <= i11 && intValue2 <= i10) {
+            return 1;
+        }
+        int i13 = intValue / 2;
+        int i14 = intValue2 / 2;
+        while (i13 / i12 >= i11 && i14 / i12 >= i10) {
+            i12 *= 2;
+        }
+        return i12;
     }
 
-    public static a i(Context context) {
-        kr.b a10 = kr.b.a(context);
-        return new a().B(a10.b(8)).x(a10.b(24)).y(a10.b(4)).A(a10.b(1)).C(a10.b(1)).D(a10.b(4));
-    }
-
-    public void a(Paint paint) {
-        int i10 = this.f22598e;
-        if (i10 == 0) {
-            i10 = kr.a.a(paint.getColor(), 25);
-        }
-        paint.setStyle(Paint.Style.FILL);
-        paint.setColor(i10);
-    }
-
-    public void b(Paint paint) {
-        int i10 = this.f22603j;
-        if (i10 == 0) {
-            i10 = this.f22602i;
-        }
-        if (i10 != 0) {
-            paint.setColor(i10);
-        }
-        Typeface typeface = this.f22608o;
-        if (typeface == null) {
-            typeface = this.f22607n;
-        }
-        if (typeface != null) {
-            paint.setTypeface(typeface);
-            int i11 = this.f22610q;
-            if (i11 <= 0) {
-                i11 = this.f22609p;
+    public static final Bitmap.CompressFormat c(File compressFormat) {
+        Intrinsics.checkParameterIsNotNull(compressFormat, "$this$compressFormat");
+        String s10 = j.s(compressFormat);
+        if (s10 != null) {
+            String lowerCase = s10.toLowerCase();
+            Intrinsics.checkExpressionValueIsNotNull(lowerCase, "(this as java.lang.String).toLowerCase()");
+            int hashCode = lowerCase.hashCode();
+            if (hashCode != 111145) {
+                if (hashCode != 3198679) {
+                    if (hashCode == 3645340 && lowerCase.equals("webp")) {
+                        return Bitmap.CompressFormat.WEBP;
+                    }
+                } else if (lowerCase.equals("heic")) {
+                    return null;
+                }
+            } else if (lowerCase.equals("png")) {
+                return Bitmap.CompressFormat.PNG;
             }
-            if (i11 > 0) {
-                paint.setTextSize(i11);
-                return;
+            return Bitmap.CompressFormat.JPEG;
+        }
+        throw new w("null cannot be cast to non-null type java.lang.String");
+    }
+
+    public static final File d(Context context, Uri srcFileUri) {
+        Intrinsics.checkParameterIsNotNull(context, "context");
+        Intrinsics.checkParameterIsNotNull(srcFileUri, "srcFileUri");
+        File file = new File(a(context) + h(context, srcFileUri));
+        File parentFile = file.getParentFile();
+        if (parentFile != null) {
+            parentFile.mkdirs();
+        }
+        if (file.exists()) {
+            file.delete();
+        }
+        file.createNewFile();
+        file.deleteOnExit();
+        ParcelFileDescriptor.AutoCloseInputStream autoCloseInputStream = new ParcelFileDescriptor.AutoCloseInputStream(context.getContentResolver().openFileDescriptor(srcFileUri, "r"));
+        FileOutputStream fileOutputStream = new FileOutputStream(file);
+        try {
+            zr.b.b(autoCloseInputStream, fileOutputStream, 0, 2, null);
+            zr.c.a(fileOutputStream, null);
+            zr.c.a(autoCloseInputStream, null);
+            return file;
+        } catch (Throwable th2) {
+            try {
+                throw th2;
+            } catch (Throwable th3) {
+                zr.c.a(autoCloseInputStream, th2);
+                throw th3;
             }
-            return;
-        }
-        paint.setTypeface(Typeface.MONOSPACE);
-        int i12 = this.f22610q;
-        if (i12 <= 0) {
-            i12 = this.f22609p;
-        }
-        if (i12 > 0) {
-            paint.setTextSize(i12);
-        } else {
-            paint.setTextSize(paint.getTextSize() * 0.87f);
         }
     }
 
-    public void c(Paint paint) {
-        int i10 = this.f22602i;
-        if (i10 != 0) {
-            paint.setColor(i10);
-        }
-        Typeface typeface = this.f22607n;
-        if (typeface != null) {
-            paint.setTypeface(typeface);
-            int i11 = this.f22609p;
-            if (i11 > 0) {
-                paint.setTextSize(i11);
-                return;
+    public static final Bitmap e(File imageFile, int i10, int i11) {
+        Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(imageFile.getAbsolutePath(), options);
+        options.inSampleSize = b(options, i10, i11);
+        options.inJustDecodeBounds = false;
+        Bitmap decodeFile = BitmapFactory.decodeFile(imageFile.getAbsolutePath(), options);
+        Intrinsics.checkExpressionValueIsNotNull(decodeFile, "BitmapFactory.decodeFile…eFile.absolutePath, this)");
+        Intrinsics.checkExpressionValueIsNotNull(decodeFile, "BitmapFactory.Options().…absolutePath, this)\n    }");
+        return decodeFile;
+    }
+
+    public static final Bitmap f(File imageFile, Bitmap bitmap) {
+        Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
+        Intrinsics.checkParameterIsNotNull(bitmap, "bitmap");
+        int attributeInt = new ExifInterface(imageFile.getAbsolutePath()).getAttributeInt("Orientation", 0);
+        Matrix matrix = new Matrix();
+        if (attributeInt != 3) {
+            if (attributeInt != 6) {
+                if (attributeInt == 8) {
+                    matrix.postRotate(270.0f);
+                }
+            } else {
+                matrix.postRotate(90.0f);
             }
-            return;
-        }
-        paint.setTypeface(Typeface.MONOSPACE);
-        int i12 = this.f22609p;
-        if (i12 > 0) {
-            paint.setTextSize(i12);
         } else {
-            paint.setTextSize(paint.getTextSize() * 0.87f);
+            matrix.postRotate(180.0f);
         }
+        Bitmap createBitmap = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
+        Intrinsics.checkExpressionValueIsNotNull(createBitmap, "Bitmap.createBitmap(bitm…map.height, matrix, true)");
+        return createBitmap;
     }
 
-    public void d(Paint paint) {
-        int i10 = this.f22612s;
-        if (i10 == 0) {
-            i10 = kr.a.a(paint.getColor(), 75);
+    public static final String g(Bitmap.CompressFormat extension) {
+        Intrinsics.checkParameterIsNotNull(extension, "$this$extension");
+        int i10 = b.f21794a[extension.ordinal()];
+        if (i10 != 1) {
+            if (i10 != 2) {
+                return "jpg";
+            }
+            return "webp";
         }
-        paint.setColor(i10);
-        paint.setStyle(Paint.Style.FILL);
-        int i11 = this.f22611r;
-        if (i11 >= 0) {
-            paint.setStrokeWidth(i11);
-        }
+        return "png";
     }
 
-    public void e(Paint paint, int i10) {
-        Typeface typeface = this.f22613t;
-        if (typeface == null) {
-            paint.setFakeBoldText(true);
+    /* JADX WARN: Removed duplicated region for block: B:55:0x0077 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static final java.lang.String h(android.content.Context r8, android.net.Uri r9) {
+        /*
+            Method dump skipped, instructions count: 282
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: er.c.h(android.content.Context, android.net.Uri):java.lang.String");
+    }
+
+    public static final Bitmap i(File imageFile) {
+        boolean z10;
+        Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
+        Bitmap decodeFile = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
+        if (decodeFile != null) {
+            z10 = true;
         } else {
-            paint.setTypeface(typeface);
+            z10 = false;
         }
-        float[] fArr = this.f22614u;
-        if (fArr == null) {
-            fArr = f22593x;
+        if (z10) {
+            return f(imageFile, decodeFile);
         }
-        if (fArr != null && fArr.length >= i10) {
-            paint.setTextSize(paint.getTextSize() * fArr[i10 - 1]);
-            return;
-        }
-        throw new IllegalStateException(String.format(Locale.US, "Supplied heading level: %d is invalid, where configured heading sizes are: `%s`", Integer.valueOf(i10), Arrays.toString(fArr)));
+        throw new IllegalArgumentException(("Failed to load bitmap from " + imageFile).toString());
     }
 
-    public void f(TextPaint textPaint) {
-        textPaint.setUnderlineText(this.f22595b);
-        int i10 = this.f22594a;
-        if (i10 != 0) {
-            textPaint.setColor(i10);
+    public static final File j(File imageFile, Bitmap bitmap, Bitmap.CompressFormat format, int i10) {
+        File file;
+        Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
+        Intrinsics.checkParameterIsNotNull(bitmap, "bitmap");
+        Intrinsics.checkParameterIsNotNull(format, "format");
+        if (format == c(imageFile)) {
+            file = imageFile;
         } else {
-            textPaint.setColor(textPaint.linkColor);
+            StringBuilder sb2 = new StringBuilder();
+            String absolutePath = imageFile.getAbsolutePath();
+            Intrinsics.checkExpressionValueIsNotNull(absolutePath, "imageFile.absolutePath");
+            sb2.append(StringsKt.i1(absolutePath, ".", null, 2, null));
+            sb2.append('.');
+            sb2.append(g(format));
+            file = new File(sb2.toString());
         }
+        imageFile.delete();
+        l(bitmap, file, format, i10);
+        return file;
     }
 
-    public void g(Paint paint) {
-        int i10 = this.f22599f;
-        if (i10 == 0) {
-            i10 = paint.getColor();
+    public static /* synthetic */ File k(File file, Bitmap bitmap, Bitmap.CompressFormat compressFormat, int i10, int i11, Object obj) {
+        if ((i11 & 4) != 0 && (compressFormat = c(file)) == null) {
+            compressFormat = Bitmap.CompressFormat.JPEG;
         }
-        paint.setColor(i10);
-        int i11 = this.f22600g;
-        if (i11 != 0) {
-            paint.setStrokeWidth(i11);
+        if ((i11 & 8) != 0) {
+            i10 = 100;
         }
+        return j(file, bitmap, compressFormat, i10);
     }
 
-    public void h(Paint paint) {
-        int i10 = this.f22615v;
-        if (i10 == 0) {
-            i10 = kr.a.a(paint.getColor(), 25);
+    public static final void l(Bitmap bitmap, File destination, Bitmap.CompressFormat format, int i10) {
+        Intrinsics.checkParameterIsNotNull(bitmap, "bitmap");
+        Intrinsics.checkParameterIsNotNull(destination, "destination");
+        Intrinsics.checkParameterIsNotNull(format, "format");
+        File parentFile = destination.getParentFile();
+        if (parentFile != null) {
+            parentFile.mkdirs();
         }
-        paint.setColor(i10);
-        paint.setStyle(Paint.Style.FILL);
-        int i11 = this.f22616w;
-        if (i11 >= 0) {
-            paint.setStrokeWidth(i11);
+        FileOutputStream fileOutputStream = null;
+        try {
+            FileOutputStream fileOutputStream2 = new FileOutputStream(destination.getAbsolutePath());
+            try {
+                bitmap.compress(format, i10, fileOutputStream2);
+                fileOutputStream2.flush();
+                fileOutputStream2.close();
+            } catch (Throwable th2) {
+                th = th2;
+                fileOutputStream = fileOutputStream2;
+                if (fileOutputStream != null) {
+                    fileOutputStream.flush();
+                    fileOutputStream.close();
+                }
+                throw th;
+            }
+        } catch (Throwable th3) {
+            th = th3;
         }
-    }
-
-    public int j() {
-        return this.f22596c;
-    }
-
-    public int k() {
-        int i10 = this.f22597d;
-        if (i10 == 0) {
-            return (int) ((this.f22596c * 0.25f) + 0.5f);
-        }
-        return i10;
-    }
-
-    public int l(int i10) {
-        int min = Math.min(this.f22596c, i10) / 2;
-        int i11 = this.f22601h;
-        if (i11 != 0 && i11 <= min) {
-            return i11;
-        }
-        return min;
-    }
-
-    public int m(Paint paint) {
-        int i10 = this.f22604k;
-        if (i10 != 0) {
-            return i10;
-        }
-        return kr.a.a(paint.getColor(), 25);
-    }
-
-    public int n(Paint paint) {
-        int i10 = this.f22605l;
-        if (i10 == 0) {
-            i10 = this.f22604k;
-        }
-        if (i10 != 0) {
-            return i10;
-        }
-        return kr.a.a(paint.getColor(), 25);
-    }
-
-    public int o() {
-        return this.f22606m;
     }
 }

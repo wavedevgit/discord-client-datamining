@@ -5,61 +5,61 @@ import android.text.Layout;
 final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f26026a;
+    private String f24725a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f26027b;
+    private int f24726b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f26028c;
+    private boolean f24727c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f26029d;
+    private int f24728d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f26030e;
+    private boolean f24729e;
 
     /* renamed from: k  reason: collision with root package name */
-    private float f26036k;
+    private float f24735k;
 
     /* renamed from: l  reason: collision with root package name */
-    private String f26037l;
+    private String f24736l;
 
     /* renamed from: o  reason: collision with root package name */
-    private Layout.Alignment f26040o;
+    private Layout.Alignment f24739o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Layout.Alignment f26041p;
+    private Layout.Alignment f24740p;
 
     /* renamed from: r  reason: collision with root package name */
-    private b f26043r;
+    private b f24742r;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f26031f = -1;
+    private int f24730f = -1;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f26032g = -1;
+    private int f24731g = -1;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f26033h = -1;
+    private int f24732h = -1;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f26034i = -1;
+    private int f24733i = -1;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f26035j = -1;
+    private int f24734j = -1;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f26038m = -1;
+    private int f24737m = -1;
 
     /* renamed from: n  reason: collision with root package name */
-    private int f26039n = -1;
+    private int f24738n = -1;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f26042q = -1;
+    private int f24741q = -1;
 
     /* renamed from: s  reason: collision with root package name */
-    private float f26044s = Float.MAX_VALUE;
+    private float f24743s = Float.MAX_VALUE;
 
     private g r(g gVar, boolean z10) {
         int i10;
@@ -67,108 +67,108 @@ final class g {
         Layout.Alignment alignment2;
         String str;
         if (gVar != null) {
-            if (!this.f26028c && gVar.f26028c) {
-                w(gVar.f26027b);
+            if (!this.f24727c && gVar.f24727c) {
+                w(gVar.f24726b);
             }
-            if (this.f26033h == -1) {
-                this.f26033h = gVar.f26033h;
+            if (this.f24732h == -1) {
+                this.f24732h = gVar.f24732h;
             }
-            if (this.f26034i == -1) {
-                this.f26034i = gVar.f26034i;
+            if (this.f24733i == -1) {
+                this.f24733i = gVar.f24733i;
             }
-            if (this.f26026a == null && (str = gVar.f26026a) != null) {
-                this.f26026a = str;
+            if (this.f24725a == null && (str = gVar.f24725a) != null) {
+                this.f24725a = str;
             }
-            if (this.f26031f == -1) {
-                this.f26031f = gVar.f26031f;
+            if (this.f24730f == -1) {
+                this.f24730f = gVar.f24730f;
             }
-            if (this.f26032g == -1) {
-                this.f26032g = gVar.f26032g;
+            if (this.f24731g == -1) {
+                this.f24731g = gVar.f24731g;
             }
-            if (this.f26039n == -1) {
-                this.f26039n = gVar.f26039n;
+            if (this.f24738n == -1) {
+                this.f24738n = gVar.f24738n;
             }
-            if (this.f26040o == null && (alignment2 = gVar.f26040o) != null) {
-                this.f26040o = alignment2;
+            if (this.f24739o == null && (alignment2 = gVar.f24739o) != null) {
+                this.f24739o = alignment2;
             }
-            if (this.f26041p == null && (alignment = gVar.f26041p) != null) {
-                this.f26041p = alignment;
+            if (this.f24740p == null && (alignment = gVar.f24740p) != null) {
+                this.f24740p = alignment;
             }
-            if (this.f26042q == -1) {
-                this.f26042q = gVar.f26042q;
+            if (this.f24741q == -1) {
+                this.f24741q = gVar.f24741q;
             }
-            if (this.f26035j == -1) {
-                this.f26035j = gVar.f26035j;
-                this.f26036k = gVar.f26036k;
+            if (this.f24734j == -1) {
+                this.f24734j = gVar.f24734j;
+                this.f24735k = gVar.f24735k;
             }
-            if (this.f26043r == null) {
-                this.f26043r = gVar.f26043r;
+            if (this.f24742r == null) {
+                this.f24742r = gVar.f24742r;
             }
-            if (this.f26044s == Float.MAX_VALUE) {
-                this.f26044s = gVar.f26044s;
+            if (this.f24743s == Float.MAX_VALUE) {
+                this.f24743s = gVar.f24743s;
             }
-            if (z10 && !this.f26030e && gVar.f26030e) {
-                u(gVar.f26029d);
+            if (z10 && !this.f24729e && gVar.f24729e) {
+                u(gVar.f24728d);
             }
-            if (z10 && this.f26038m == -1 && (i10 = gVar.f26038m) != -1) {
-                this.f26038m = i10;
+            if (z10 && this.f24737m == -1 && (i10 = gVar.f24737m) != -1) {
+                this.f24737m = i10;
             }
         }
         return this;
     }
 
     public g A(String str) {
-        this.f26037l = str;
+        this.f24736l = str;
         return this;
     }
 
     public g B(boolean z10) {
-        this.f26034i = z10 ? 1 : 0;
+        this.f24733i = z10 ? 1 : 0;
         return this;
     }
 
     public g C(boolean z10) {
-        this.f26031f = z10 ? 1 : 0;
+        this.f24730f = z10 ? 1 : 0;
         return this;
     }
 
     public g D(Layout.Alignment alignment) {
-        this.f26041p = alignment;
+        this.f24740p = alignment;
         return this;
     }
 
     public g E(int i10) {
-        this.f26039n = i10;
+        this.f24738n = i10;
         return this;
     }
 
     public g F(int i10) {
-        this.f26038m = i10;
+        this.f24737m = i10;
         return this;
     }
 
     public g G(float f10) {
-        this.f26044s = f10;
+        this.f24743s = f10;
         return this;
     }
 
     public g H(Layout.Alignment alignment) {
-        this.f26040o = alignment;
+        this.f24739o = alignment;
         return this;
     }
 
     public g I(boolean z10) {
-        this.f26042q = z10 ? 1 : 0;
+        this.f24741q = z10 ? 1 : 0;
         return this;
     }
 
     public g J(b bVar) {
-        this.f26043r = bVar;
+        this.f24742r = bVar;
         return this;
     }
 
     public g K(boolean z10) {
-        this.f26032g = z10 ? 1 : 0;
+        this.f24731g = z10 ? 1 : 0;
         return this;
     }
 
@@ -177,55 +177,55 @@ final class g {
     }
 
     public int b() {
-        if (this.f26030e) {
-            return this.f26029d;
+        if (this.f24729e) {
+            return this.f24728d;
         }
         throw new IllegalStateException("Background color has not been defined.");
     }
 
     public int c() {
-        if (this.f26028c) {
-            return this.f26027b;
+        if (this.f24727c) {
+            return this.f24726b;
         }
         throw new IllegalStateException("Font color has not been defined.");
     }
 
     public String d() {
-        return this.f26026a;
+        return this.f24725a;
     }
 
     public float e() {
-        return this.f26036k;
+        return this.f24735k;
     }
 
     public int f() {
-        return this.f26035j;
+        return this.f24734j;
     }
 
     public String g() {
-        return this.f26037l;
+        return this.f24736l;
     }
 
     public Layout.Alignment h() {
-        return this.f26041p;
+        return this.f24740p;
     }
 
     public int i() {
-        return this.f26039n;
+        return this.f24738n;
     }
 
     public int j() {
-        return this.f26038m;
+        return this.f24737m;
     }
 
     public float k() {
-        return this.f26044s;
+        return this.f24743s;
     }
 
     public int l() {
         int i10;
-        int i11 = this.f26033h;
-        if (i11 == -1 && this.f26034i == -1) {
+        int i11 = this.f24732h;
+        if (i11 == -1 && this.f24733i == -1) {
             return -1;
         }
         int i12 = 0;
@@ -234,78 +234,78 @@ final class g {
         } else {
             i10 = 0;
         }
-        if (this.f26034i == 1) {
+        if (this.f24733i == 1) {
             i12 = 2;
         }
         return i10 | i12;
     }
 
     public Layout.Alignment m() {
-        return this.f26040o;
+        return this.f24739o;
     }
 
     public boolean n() {
-        if (this.f26042q == 1) {
+        if (this.f24741q == 1) {
             return true;
         }
         return false;
     }
 
     public b o() {
-        return this.f26043r;
+        return this.f24742r;
     }
 
     public boolean p() {
-        return this.f26030e;
+        return this.f24729e;
     }
 
     public boolean q() {
-        return this.f26028c;
+        return this.f24727c;
     }
 
     public boolean s() {
-        if (this.f26031f == 1) {
+        if (this.f24730f == 1) {
             return true;
         }
         return false;
     }
 
     public boolean t() {
-        if (this.f26032g == 1) {
+        if (this.f24731g == 1) {
             return true;
         }
         return false;
     }
 
     public g u(int i10) {
-        this.f26029d = i10;
-        this.f26030e = true;
+        this.f24728d = i10;
+        this.f24729e = true;
         return this;
     }
 
     public g v(boolean z10) {
-        this.f26033h = z10 ? 1 : 0;
+        this.f24732h = z10 ? 1 : 0;
         return this;
     }
 
     public g w(int i10) {
-        this.f26027b = i10;
-        this.f26028c = true;
+        this.f24726b = i10;
+        this.f24727c = true;
         return this;
     }
 
     public g x(String str) {
-        this.f26026a = str;
+        this.f24725a = str;
         return this;
     }
 
     public g y(float f10) {
-        this.f26036k = f10;
+        this.f24735k = f10;
         return this;
     }
 
     public g z(int i10) {
-        this.f26035j = i10;
+        this.f24734j = i10;
         return this;
     }
 }

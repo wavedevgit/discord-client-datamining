@@ -4,22 +4,22 @@ package com.budiyev.android.codescanner;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f8084a;
+    private final int f8469a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f8085b;
+    private final int f8470b;
 
     public i(int i10, int i11) {
-        this.f8084a = i10;
-        this.f8085b = i11;
+        this.f8469a = i10;
+        this.f8470b = i11;
     }
 
     public int a() {
-        return this.f8084a;
+        return this.f8469a;
     }
 
     public int b() {
-        return this.f8085b;
+        return this.f8470b;
     }
 
     public boolean equals(Object obj) {
@@ -28,7 +28,7 @@ public final class i {
         }
         if (obj instanceof i) {
             i iVar = (i) obj;
-            if (this.f8084a == iVar.f8084a && this.f8085b == iVar.f8085b) {
+            if (this.f8469a == iVar.f8469a && this.f8470b == iVar.f8470b) {
                 return true;
             }
         }
@@ -36,12 +36,12 @@ public final class i {
     }
 
     public int hashCode() {
-        int i10 = this.f8084a;
-        int i11 = this.f8085b;
+        int i10 = this.f8469a;
+        int i11 = this.f8470b;
         return i10 ^ ((i11 >>> 16) | (i11 << 16));
     }
 
     public String toString() {
-        return "(" + this.f8084a + "; " + this.f8085b + ")";
+        return "(" + this.f8469a + "; " + this.f8470b + ")";
     }
 }

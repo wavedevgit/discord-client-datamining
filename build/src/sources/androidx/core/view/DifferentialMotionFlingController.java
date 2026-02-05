@@ -8,34 +8,34 @@ import android.view.ViewConfiguration;
 public class DifferentialMotionFlingController {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f3241a;
+    private final Context f3353a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final DifferentialMotionFlingTarget f3242b;
+    private final DifferentialMotionFlingTarget f3354b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b f3243c;
+    private final b f3355c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a f3244d;
+    private final a f3356d;
 
     /* renamed from: e  reason: collision with root package name */
-    private VelocityTracker f3245e;
+    private VelocityTracker f3357e;
 
     /* renamed from: f  reason: collision with root package name */
-    private float f3246f;
+    private float f3358f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f3247g;
+    private int f3359g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f3248h;
+    private int f3360h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f3249i;
+    private int f3361i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final int[] f3250j;
+    private final int[] f3362j;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -75,21 +75,21 @@ public class DifferentialMotionFlingController {
     private boolean d(MotionEvent motionEvent, int i10) {
         int source = motionEvent.getSource();
         int deviceId = motionEvent.getDeviceId();
-        if (this.f3248h == source && this.f3249i == deviceId && this.f3247g == i10) {
+        if (this.f3360h == source && this.f3361i == deviceId && this.f3359g == i10) {
             return false;
         }
-        this.f3243c.a(this.f3241a, this.f3250j, motionEvent, i10);
-        this.f3248h = source;
-        this.f3249i = deviceId;
-        this.f3247g = i10;
+        this.f3355c.a(this.f3353a, this.f3362j, motionEvent, i10);
+        this.f3360h = source;
+        this.f3361i = deviceId;
+        this.f3359g = i10;
         return true;
     }
 
     private float e(MotionEvent motionEvent, int i10) {
-        if (this.f3245e == null) {
-            this.f3245e = VelocityTracker.obtain();
+        if (this.f3357e == null) {
+            this.f3357e = VelocityTracker.obtain();
         }
-        return this.f3244d.a(this.f3245e, motionEvent, i10);
+        return this.f3356d.a(this.f3357e, motionEvent, i10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -101,42 +101,42 @@ public class DifferentialMotionFlingController {
 
     public void g(MotionEvent motionEvent, int i10) {
         boolean d10 = d(motionEvent, i10);
-        if (this.f3250j[0] == Integer.MAX_VALUE) {
-            VelocityTracker velocityTracker = this.f3245e;
+        if (this.f3362j[0] == Integer.MAX_VALUE) {
+            VelocityTracker velocityTracker = this.f3357e;
             if (velocityTracker != null) {
                 velocityTracker.recycle();
-                this.f3245e = null;
+                this.f3357e = null;
                 return;
             }
             return;
         }
-        float e10 = e(motionEvent, i10) * this.f3242b.b();
+        float e10 = e(motionEvent, i10) * this.f3354b.b();
         float signum = Math.signum(e10);
         float f10 = 0.0f;
-        if (d10 || (signum != Math.signum(this.f3246f) && signum != 0.0f)) {
-            this.f3242b.c();
+        if (d10 || (signum != Math.signum(this.f3358f) && signum != 0.0f)) {
+            this.f3354b.c();
         }
         float abs = Math.abs(e10);
-        int[] iArr = this.f3250j;
+        int[] iArr = this.f3362j;
         if (abs < iArr[0]) {
             return;
         }
         int i11 = iArr[1];
         float max = Math.max(-i11, Math.min(e10, i11));
-        if (this.f3242b.a(max)) {
+        if (this.f3354b.a(max)) {
             f10 = max;
         }
-        this.f3246f = f10;
+        this.f3358f = f10;
     }
 
     DifferentialMotionFlingController(Context context, DifferentialMotionFlingTarget differentialMotionFlingTarget, b bVar, a aVar) {
-        this.f3247g = -1;
-        this.f3248h = -1;
-        this.f3249i = -1;
-        this.f3250j = new int[]{Integer.MAX_VALUE, 0};
-        this.f3241a = context;
-        this.f3242b = differentialMotionFlingTarget;
-        this.f3243c = bVar;
-        this.f3244d = aVar;
+        this.f3359g = -1;
+        this.f3360h = -1;
+        this.f3361i = -1;
+        this.f3362j = new int[]{Integer.MAX_VALUE, 0};
+        this.f3353a = context;
+        this.f3354b = differentialMotionFlingTarget;
+        this.f3355c = bVar;
+        this.f3356d = aVar;
     }
 }

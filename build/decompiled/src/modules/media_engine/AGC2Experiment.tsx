@@ -26,130 +26,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'fixed_gain_db': 0
     };
     var12 = false;
-    var3 = 0;
-    var6 = var5[var3];
+    var0 = 0;
+    var3 = var5[var0];
     var0 = undefined;
-    var8 = var4.bind(var0)(var6);
-    var7 = var8.createApexExperiment;
-    var6 = {
-        'kind': 'user',
-        'name': '2025-09-agc2-v2'
-    };
-    var9 = {};
-    var9.noiseCancellationDuringProcessing = var12;
-    var13 = {};
-    var13.useAGC2 = var12;
-    var9.noiseCancellationConfig = var13;
-    var6.defaultConfig = var9;
-    var9 = {};
-    var13 = {};
-    var13.noiseCancellationDuringProcessing = var11;
-    var14 = {};
-    var14.useAGC2 = var12;
-    var13.noiseCancellationConfig = var14;
-    var9[1] = var13;
-    var13 = {
-        'noiseCancellationDuringProcessing': true,
-        'noiseCancellationConfig': null,
-        'vadKrispActivationThreshold': 0.5
-    };
-    var13.noiseCancellationConfig = var10;
-    var9[2] = var13;
-    var13 = {
-        'noiseCancellationDuringProcessing': true,
-        'noiseCancellationConfig': null,
-        'vadKrispActivationThreshold': 0.55
-    };
-    var13.noiseCancellationConfig = var10;
-    var9[3] = var13;
-    var13 = {
-        'noiseCancellationDuringProcessing': true,
-        'noiseCancellationConfig': null,
-        'vadKrispActivationThreshold': 0.6
-    };
-    var13.noiseCancellationConfig = var10;
-    var9[4] = var13;
-    var13 = {
-        'noiseCancellationDuringProcessing': true,
-        'noiseCancellationConfig': null,
-        'vadKrispActivationThreshold': 0.65
-    };
-    var13.noiseCancellationConfig = var10;
-    var9[5] = var13;
-    var13 = {
-        'noiseCancellationDuringProcessing': true,
-        'noiseCancellationConfig': null,
-        'vadKrispActivationThreshold': 0.7
-    };
-    var13.noiseCancellationConfig = var10;
-    var9[6] = var13;
-    var6.variations = var9;
-    var6 = var7.bind(var8)(var6);
-    var _closure1_slot2 = var6;
-    var6 = var5[var3];
-    var8 = var4.bind(var0)(var6);
-    var7 = var8.createApexExperiment;
-    var6 = {
-        'kind': 'user',
-        'name': '2025-12-agc2-v2--mirror'
-    };
-    var9 = {};
-    var9.noiseCancellationDuringProcessing = var12;
-    var13 = {};
-    var13.useAGC2 = var12;
-    var9.noiseCancellationConfig = var13;
-    var6.defaultConfig = var9;
-    var9 = {};
-    var13 = {};
-    var13.noiseCancellationDuringProcessing = var11;
-    var14 = {};
-    var14.useAGC2 = var12;
-    var13.noiseCancellationConfig = var14;
-    var9[1] = var13;
-    var13 = {
-        'noiseCancellationDuringProcessing': true,
-        'noiseCancellationConfig': null,
-        'vadKrispActivationThreshold': 0.5
-    };
-    var13.noiseCancellationConfig = var10;
-    var9[2] = var13;
-    var13 = {
-        'noiseCancellationDuringProcessing': true,
-        'noiseCancellationConfig': null,
-        'vadKrispActivationThreshold': 0.55
-    };
-    var13.noiseCancellationConfig = var10;
-    var9[3] = var13;
-    var13 = {
-        'noiseCancellationDuringProcessing': true,
-        'noiseCancellationConfig': null,
-        'vadKrispActivationThreshold': 0.6
-    };
-    var13.noiseCancellationConfig = var10;
-    var9[4] = var13;
-    var13 = {
-        'noiseCancellationDuringProcessing': true,
-        'noiseCancellationConfig': null,
-        'vadKrispActivationThreshold': 0.65
-    };
-    var13.noiseCancellationConfig = var10;
-    var9[5] = var13;
-    var13 = {
-        'noiseCancellationDuringProcessing': true,
-        'noiseCancellationConfig': null,
-        'vadKrispActivationThreshold': 0.7
-    };
-    var13.noiseCancellationConfig = var10;
-    var9[6] = var13;
-    var6.variations = var9;
-    var6 = var7.bind(var8)(var6);
-    var _closure1_slot3 = var6;
-    var3 = var5[var3];
     var7 = var4.bind(var0)(var3);
     var6 = var7.createApexExperiment;
     var3 = {
         'kind': 'user',
-        'name': '2025-12-agc2-v2--shadow'
+        'name': '2025-09-agc2-v2'
     };
     var8 = {};
     var8.noiseCancellationDuringProcessing = var12;
@@ -201,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8[6] = var9;
     var3.variations = var8;
     var3 = var6.bind(var7)(var3);
-    var _closure1_slot4 = var3;
+    var _closure1_slot2 = var3;
     var3 = 2;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -209,72 +93,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_engine/AGC2Experiment.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun94021: for (var _fun94021_ip = 0;;) switch (_fun94021_ip) {
+        _fun94038: for (var _fun94038_ip = 0;;) switch (_fun94038_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.location;
                 var0 = var0.disable;
                 var5 = undefined;
                 if (!(var0 === var5)) {
-                    _fun94021_ip = 22;
-                    continue _fun94021
+                    _fun94038_ip = 22;
+                    continue _fun94038
                 }
             case 20:
                 var0 = false;
             case 22:
-                var1 = {};
-                var1.location = var4;
-                var1.disable = var0;
-                var9 = var1.location;
-                var3 = var1.disable;
-                if (!(var3 === var5)) {
-                    _fun94021_ip = 50;
-                    continue _fun94021
-                }
-            case 48:
-                var3 = false;
-            case 50:
-                var7 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var6 = 1;
-                var2 = var2[var6];
-                var2 = var7.bind(var5)(var2);
-                var11 = var2.AVMirrorHoldoutExperimentH22025;
-                var10 = var11.getCurrentConfig;
-                var8 = {};
-                var8.location = var9;
-                var2 = {};
-                var2.disable = var3;
-                var7 = true;
-                var2.autoTrackExposure = var7;
-                var2 = var10.bind(var11)(var8, var2);
-                var2 = var2.isInHoldout;
-                var11 = _closure1_slot4;
-                var10 = var11.getConfig;
-                var8 = {};
-                var8.location = var9;
-                var8 = var10.bind(var11)(var8);
-                if (var2) {
-                    _fun94021_ip = 144;
-                    continue _fun94021
-                }
-            case 141:
-                var2 = var3;
-            case 144:
-                if (var2) {
-                    _fun94021_ip = 168;
-                    continue _fun94021
-                }
-            case 147:
-                var8 = _closure1_slot3;
-                var3 = var8.getConfig;
-                var2 = {};
-                var2.location = var9;
-                var2 = var3.bind(var8)(var2);
-            case 168:
                 var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var2 = var2[var6];
+                var6 = _closure1_slot1;
+                var2 = 1;
+                var2 = var6[var2];
                 var2 = var3.bind(var5)(var2);
                 var6 = var2.AVHoldoutExperimentH22025;
                 var5 = var6.getCurrentConfig;
@@ -282,31 +117,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.location = var4;
                 var2 = {};
                 var2.disable = var0;
+                var7 = true;
                 var2.autoTrackExposure = var7;
                 var2 = var5.bind(var6)(var3, var2);
                 var2 = var2.isInHoldout;
                 if (var2) {
-                    _fun94021_ip = 256;
-                    continue _fun94021
+                    _fun94038_ip = 118;
+                    continue _fun94038
                 }
-            case 230:
+            case 92:
                 if (var0) {
-                    _fun94021_ip = 256;
-                    continue _fun94021
+                    _fun94038_ip = 118;
+                    continue _fun94038
                 }
-            case 233:
+            case 95:
                 var3 = _closure1_slot2;
                 var2 = var3.getConfig;
                 var0 = {};
                 var0.location = var4;
                 var0 = var2.bind(var3)(var0);
-                _fun94021_ip = 272;
-                continue _fun94021;
-            case 256:
+                _fun94038_ip = 134;
+                continue _fun94038;
+            case 118:
                 var1 = _closure1_slot2;
                 var1 = var1.definition;
                 var0 = var1.defaultConfig;
-            case 272:
+            case 134:
                 return var0;
         }
     };

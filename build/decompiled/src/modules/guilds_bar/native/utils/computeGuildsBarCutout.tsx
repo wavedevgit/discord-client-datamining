@@ -39,39 +39,39 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guilds_bar/native/utils/computeGuildsBarCutout.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun100967: for (var _fun100967_ip = 0;;) switch (_fun100967_ip) {
+        _fun100995: for (var _fun100995_ip = 0;;) switch (_fun100995_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.position;
                 var3 = var0.containerSize;
                 var9 = undefined;
                 if (!(var3 === var9)) {
-                    _fun100967_ip = 27;
-                    continue _fun100967
+                    _fun100995_ip = 27;
+                    continue _fun100995
                 }
             case 20:
                 var3 = _closure1_slot3;
             case 27:
                 var4 = var0.width;
                 if (!(var4 === var9)) {
-                    _fun100967_ip = 43;
-                    continue _fun100967
+                    _fun100995_ip = 43;
+                    continue _fun100995
                 }
             case 36:
                 var4 = _closure1_slot5;
             case 43:
                 var5 = var0.height;
                 if (!(var5 === var9)) {
-                    _fun100967_ip = 59;
-                    continue _fun100967
+                    _fun100995_ip = 59;
+                    continue _fun100995
                 }
             case 52:
                 var5 = _closure1_slot5;
             case 59:
                 var1 = var0.padding;
                 if (!(var1 === var9)) {
-                    _fun100967_ip = 75;
-                    continue _fun100967
+                    _fun100995_ip = 75;
+                    continue _fun100995
                 }
             case 68:
                 var1 = _closure1_slot4;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.cornerRadius = var5;
                 var5 = 'top-right';
                 if (!(var5 !== var6)) {
-                    _fun100967_ip = 262;
-                    continue _fun100967
+                    _fun100995_ip = 262;
+                    continue _fun100995
                 }
             case 232:
                 var5 = var3 - var2;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3 - var4;
                 var4 = var4 + var1;
                 var0.y = var4;
-                _fun100967_ip = 285;
-                continue _fun100967;
+                _fun100995_ip = 285;
+                continue _fun100995;
             case 262:
                 var2 = var3 - var2;
                 var2 = var2 + var1;
@@ -135,4 +135,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 13134, 8646, 5457, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 13150, 8664, 5461, 2]);

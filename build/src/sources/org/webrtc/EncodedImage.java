@@ -12,7 +12,7 @@ public class EncodedImage implements RefCounted {
     public final FrameType frameType;
 
     /* renamed from: qp  reason: collision with root package name */
-    public final Integer f44410qp;
+    public final Integer f44261qp;
     private final RefCountDelegate refCountDelegate;
     public final int rotation;
 
@@ -25,12 +25,12 @@ public class EncodedImage implements RefCounted {
         private FrameType frameType;
 
         /* renamed from: qp  reason: collision with root package name */
-        private Integer f44411qp;
+        private Integer f44262qp;
         private Runnable releaseCallback;
         private int rotation;
 
         public EncodedImage createEncodedImage() {
-            return new EncodedImage(this.buffer, this.releaseCallback, this.encodedWidth, this.encodedHeight, this.captureTimeNs, this.frameType, this.rotation, this.f44411qp);
+            return new EncodedImage(this.buffer, this.releaseCallback, this.encodedWidth, this.encodedHeight, this.captureTimeNs, this.frameType, this.rotation, this.f44262qp);
         }
 
         public Builder setBuffer(ByteBuffer byteBuffer, Runnable runnable) {
@@ -66,7 +66,7 @@ public class EncodedImage implements RefCounted {
         }
 
         public Builder setQp(Integer num) {
-            this.f44411qp = num;
+            this.f44262qp = num;
             return this;
         }
 
@@ -138,7 +138,7 @@ public class EncodedImage implements RefCounted {
 
     @CalledByNative
     private Integer getQp() {
-        return this.f44410qp;
+        return this.f44261qp;
     }
 
     @CalledByNative
@@ -165,7 +165,7 @@ public class EncodedImage implements RefCounted {
         this.captureTimeNs = j10;
         this.frameType = frameType;
         this.rotation = i12;
-        this.f44410qp = num;
+        this.f44261qp = num;
         this.refCountDelegate = new RefCountDelegate(runnable);
     }
 }

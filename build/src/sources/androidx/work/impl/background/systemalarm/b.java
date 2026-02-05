@@ -17,28 +17,28 @@ import p4.u;
 public class b implements androidx.work.impl.f {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String f5544q = m.i("CommandHandler");
+    private static final String f5656q = m.i("CommandHandler");
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f5545d;
+    private final Context f5657d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f5546e = new HashMap();
+    private final Map f5658e = new HashMap();
 
     /* renamed from: i  reason: collision with root package name */
-    private final Object f5547i = new Object();
+    private final Object f5659i = new Object();
 
     /* renamed from: o  reason: collision with root package name */
-    private final k4.b f5548o;
+    private final k4.b f5660o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final b0 f5549p;
+    private final b0 f5661p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Context context, k4.b bVar, b0 b0Var) {
-        this.f5545d = context;
-        this.f5548o = bVar;
-        this.f5549p = b0Var;
+        this.f5657d = context;
+        this.f5660o = bVar;
+        this.f5661p = b0Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -79,21 +79,21 @@ public class b implements androidx.work.impl.f {
 
     private void g(Intent intent, int i10, g gVar) {
         m e10 = m.e();
-        String str = f5544q;
+        String str = f5656q;
         e10.a(str, "Handling constraints changed " + intent);
-        new c(this.f5545d, this.f5548o, i10, gVar).a();
+        new c(this.f5657d, this.f5660o, i10, gVar).a();
     }
 
     private void h(Intent intent, int i10, g gVar) {
-        synchronized (this.f5547i) {
+        synchronized (this.f5659i) {
             try {
                 p4.m p10 = p(intent);
                 m e10 = m.e();
-                String str = f5544q;
+                String str = f5656q;
                 e10.a(str, "Handing delay met for " + p10);
-                if (!this.f5546e.containsKey(p10)) {
-                    f fVar = new f(this.f5545d, i10, gVar, this.f5549p.d(p10));
-                    this.f5546e.put(p10, fVar);
+                if (!this.f5658e.containsKey(p10)) {
+                    f fVar = new f(this.f5657d, i10, gVar, this.f5661p.d(p10));
+                    this.f5658e.put(p10, fVar);
                     fVar.f();
                 } else {
                     m e11 = m.e();
@@ -109,14 +109,14 @@ public class b implements androidx.work.impl.f {
         p4.m p10 = p(intent);
         boolean z10 = intent.getExtras().getBoolean("KEY_NEEDS_RESCHEDULE");
         m e10 = m.e();
-        String str = f5544q;
+        String str = f5656q;
         e10.a(str, "Handling onExecutionCompleted " + intent + ", " + i10);
         b(p10, z10);
     }
 
     private void j(Intent intent, int i10, g gVar) {
         m e10 = m.e();
-        String str = f5544q;
+        String str = f5656q;
         e10.a(str, "Handling reschedule " + intent + ", " + i10);
         gVar.g().s();
     }
@@ -124,7 +124,7 @@ public class b implements androidx.work.impl.f {
     private void k(Intent intent, int i10, g gVar) {
         p4.m p10 = p(intent);
         m e10 = m.e();
-        String str = f5544q;
+        String str = f5656q;
         e10.a(str, "Handling schedule work for " + p10);
         WorkDatabase p11 = gVar.g().p();
         p11.e();
@@ -133,7 +133,7 @@ public class b implements androidx.work.impl.f {
             if (i11 == null) {
                 m e11 = m.e();
                 e11.k(str, "Skipping scheduling " + p10 + " because it's no longer in the DB");
-            } else if (i11.f44959b.d()) {
+            } else if (i11.f44889b.d()) {
                 m e12 = m.e();
                 e12.k(str, "Skipping scheduling " + p10 + "because it is finished.");
             } else {
@@ -141,12 +141,12 @@ public class b implements androidx.work.impl.f {
                 if (!i11.k()) {
                     m e13 = m.e();
                     e13.a(str, "Setting up Alarms for " + p10 + "at " + c10);
-                    a.c(this.f5545d, p11, p10, c10);
+                    a.c(this.f5657d, p11, p10, c10);
                 } else {
                     m e14 = m.e();
                     e14.a(str, "Opportunistically setting an alarm for " + p10 + "at " + c10);
-                    a.c(this.f5545d, p11, p10, c10);
-                    gVar.f().a().execute(new g.b(gVar, a(this.f5545d), i10));
+                    a.c(this.f5657d, p11, p10, c10);
+                    gVar.f().a().execute(new g.b(gVar, a(this.f5657d), i10));
                 }
                 p11.A();
             }
@@ -162,19 +162,19 @@ public class b implements androidx.work.impl.f {
         if (extras.containsKey("KEY_WORKSPEC_GENERATION")) {
             int i10 = extras.getInt("KEY_WORKSPEC_GENERATION");
             c10 = new ArrayList(1);
-            a0 b10 = this.f5549p.b(new p4.m(string, i10));
+            a0 b10 = this.f5661p.b(new p4.m(string, i10));
             if (b10 != null) {
                 c10.add(b10);
             }
         } else {
-            c10 = this.f5549p.c(string);
+            c10 = this.f5661p.c(string);
         }
         for (a0 a0Var : c10) {
             m e10 = m.e();
-            String str = f5544q;
+            String str = f5656q;
             e10.a(str, "Handing stopWork work for " + string);
             gVar.i().e(a0Var);
-            a.a(this.f5545d, gVar.g().p(), a0Var.a());
+            a.a(this.f5657d, gVar.g().p(), a0Var.a());
             gVar.b(a0Var.a(), false);
         }
     }
@@ -203,10 +203,10 @@ public class b implements androidx.work.impl.f {
 
     @Override // androidx.work.impl.f
     public void b(p4.m mVar, boolean z10) {
-        synchronized (this.f5547i) {
+        synchronized (this.f5659i) {
             try {
-                f fVar = (f) this.f5546e.remove(mVar);
-                this.f5549p.b(mVar);
+                f fVar = (f) this.f5658e.remove(mVar);
+                this.f5661p.b(mVar);
                 if (fVar != null) {
                     fVar.g(z10);
                 }
@@ -219,8 +219,8 @@ public class b implements androidx.work.impl.f {
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean n() {
         boolean z10;
-        synchronized (this.f5547i) {
-            z10 = !this.f5546e.isEmpty();
+        synchronized (this.f5659i) {
+            z10 = !this.f5658e.isEmpty();
         }
         return z10;
     }
@@ -234,7 +234,7 @@ public class b implements androidx.work.impl.f {
             j(intent, i10, gVar);
         } else if (!m(intent.getExtras(), "KEY_WORKSPEC_ID")) {
             m e10 = m.e();
-            String str = f5544q;
+            String str = f5656q;
             e10.c(str, "Invalid request for " + action + " , requires KEY_WORKSPEC_ID .");
         } else if ("ACTION_SCHEDULE_WORK".equals(action)) {
             k(intent, i10, gVar);
@@ -246,7 +246,7 @@ public class b implements androidx.work.impl.f {
             i(intent, i10);
         } else {
             m e11 = m.e();
-            String str2 = f5544q;
+            String str2 = f5656q;
             e11.k(str2, "Ignoring intent " + intent);
         }
     }

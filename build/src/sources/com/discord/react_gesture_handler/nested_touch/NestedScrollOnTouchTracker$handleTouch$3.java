@@ -31,10 +31,10 @@ public final class NestedScrollOnTouchTracker$handleTouch$3 extends k implements
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x002f, code lost:
-        if (js.i0.a(r4, r8) == r0) goto L26;
+        if (ms.i0.a(r4, r8) == r0) goto L26;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x004e, code lost:
-        if (js.i0.a(r4 - r9.getDOUBLE_CLICK_MIN_TIME(), r8) == r0) goto L26;
+        if (ms.i0.a(r4 - r9.getDOUBLE_CLICK_MIN_TIME(), r8) == r0) goto L26;
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0050, code lost:
         return r0;
@@ -47,7 +47,7 @@ public final class NestedScrollOnTouchTracker$handleTouch$3 extends k implements
     public final java.lang.Object invokeSuspend(java.lang.Object r9) {
         /*
             r8 = this;
-            java.lang.Object r0 = rr.b.f()
+            java.lang.Object r0 = ur.b.f()
             int r1 = r8.label
             r2 = 2
             r3 = 1
@@ -69,7 +69,7 @@ public final class NestedScrollOnTouchTracker$handleTouch$3 extends k implements
             com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker$Companion r9 = com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker.access$getCompanion$p()
             long r4 = r9.getDOUBLE_CLICK_MIN_TIME()
             r8.label = r3
-            java.lang.Object r9 = js.i0.a(r4, r8)
+            java.lang.Object r9 = ms.i0.a(r4, r8)
             if (r9 != r0) goto L32
             goto L50
         L32:
@@ -81,7 +81,7 @@ public final class NestedScrollOnTouchTracker$handleTouch$3 extends k implements
             long r6 = r9.getDOUBLE_CLICK_MIN_TIME()
             long r4 = r4 - r6
             r8.label = r2
-            java.lang.Object r9 = js.i0.a(r4, r8)
+            java.lang.Object r9 = ms.i0.a(r4, r8)
             if (r9 != r0) goto L51
         L50:
             return r0
@@ -120,7 +120,7 @@ public final class NestedScrollOnTouchTracker$handleTouch$3 extends k implements
             com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker r9 = r8.this$0
             com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker.access$cleanupDoubleClickJob(r9)
         L9a:
-            kotlin.Unit r9 = kotlin.Unit.f32464a
+            kotlin.Unit r9 = kotlin.Unit.f31988a
             return r9
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker$handleTouch$3.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -128,6 +128,6 @@ public final class NestedScrollOnTouchTracker$handleTouch$3 extends k implements
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((NestedScrollOnTouchTracker$handleTouch$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((NestedScrollOnTouchTracker$handleTouch$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

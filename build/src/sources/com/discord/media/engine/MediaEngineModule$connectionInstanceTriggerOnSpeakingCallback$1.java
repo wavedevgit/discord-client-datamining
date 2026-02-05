@@ -29,7 +29,7 @@ final class MediaEngineModule$connectionInstanceTriggerOnSpeakingCallback$1 exte
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new UserSpeakingEvent((int) d10, str, i10, f10));
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -40,7 +40,7 @@ final class MediaEngineModule$connectionInstanceTriggerOnSpeakingCallback$1 exte
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object awaitMediaEngine;
-        Object f10 = rr.b.f();
+        Object f10 = ur.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -68,11 +68,11 @@ final class MediaEngineModule$connectionInstanceTriggerOnSpeakingCallback$1 exte
                 return invokeSuspend$lambda$0;
             }
         });
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstanceTriggerOnSpeakingCallback$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+        return ((MediaEngineModule$connectionInstanceTriggerOnSpeakingCallback$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

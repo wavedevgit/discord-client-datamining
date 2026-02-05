@@ -5,19 +5,19 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m3.g f4526a = new m3.g();
+    private final m3.g f4638a = new m3.g();
 
     public final void a(String key, AutoCloseable closeable) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(closeable, "closeable");
-        m3.g gVar = this.f4526a;
+        m3.g gVar = this.f4638a;
         if (gVar != null) {
             gVar.d(key, closeable);
         }
     }
 
     public final void b() {
-        m3.g gVar = this.f4526a;
+        m3.g gVar = this.f4638a;
         if (gVar != null) {
             gVar.e();
         }
@@ -26,7 +26,7 @@ public abstract class n0 {
 
     public final AutoCloseable c(String key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        m3.g gVar = this.f4526a;
+        m3.g gVar = this.f4638a;
         if (gVar != null) {
             return gVar.g(key);
         }

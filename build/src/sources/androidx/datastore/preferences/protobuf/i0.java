@@ -9,19 +9,19 @@ import java.util.Set;
 public final class i0 extends LinkedHashMap {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final i0 f3672e;
+    private static final i0 f3784e;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f3673d;
+    private boolean f3785d;
 
     static {
         i0 i0Var = new i0();
-        f3672e = i0Var;
+        f3784e = i0Var;
         i0Var.j();
     }
 
     private i0() {
-        this.f3673d = true;
+        this.f3785d = true;
     }
 
     static int a(Map map) {
@@ -47,7 +47,7 @@ public final class i0 extends LinkedHashMap {
     }
 
     public static i0 d() {
-        return f3672e;
+        return f3784e;
     }
 
     private void e() {
@@ -133,11 +133,11 @@ public final class i0 extends LinkedHashMap {
     }
 
     public boolean i() {
-        return this.f3673d;
+        return this.f3785d;
     }
 
     public void j() {
-        this.f3673d = false;
+        this.f3785d = false;
     }
 
     public void k(i0 i0Var) {
@@ -177,6 +177,6 @@ public final class i0 extends LinkedHashMap {
 
     private i0(Map map) {
         super(map);
-        this.f3673d = true;
+        this.f3785d = true;
     }
 }

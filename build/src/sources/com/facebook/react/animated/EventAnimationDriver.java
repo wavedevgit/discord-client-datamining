@@ -35,14 +35,14 @@ public final class EventAnimationDriver implements RCTModernEventEmitter {
     }
 
     @Override // com.facebook.react.uimanager.events.RCTEventEmitter
-    @lr.c
+    @or.c
     public void receiveEvent(int i10, @NotNull String eventName, WritableMap writableMap) {
         Intrinsics.checkNotNullParameter(eventName, "eventName");
         receiveEvent(-1, i10, eventName, writableMap);
     }
 
     @Override // com.facebook.react.uimanager.events.RCTEventEmitter
-    @lr.c
+    @or.c
     public void receiveTouches(@NotNull String eventName, @NotNull WritableArray touches, @NotNull WritableArray changedIndices) {
         Intrinsics.checkNotNullParameter(eventName, "eventName");
         Intrinsics.checkNotNullParameter(touches, "touches");

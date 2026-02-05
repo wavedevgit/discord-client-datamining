@@ -1,38 +1,10 @@
 package ci;
 
-import android.app.Activity;
-import android.app.PendingIntent;
-import android.content.Context;
-import android.content.Intent;
-import com.google.android.gms.tasks.Task;
-import com.google.android.play.core.review.ReviewManager;
-import wg.m;
-import zh.b;
+import com.google.android.gms.common.api.Status;
+import java.util.Locale;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a implements ReviewManager {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Context f7201a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private b f7202b;
-
-    public a(Context context) {
-        this.f7201a = context;
-    }
-
-    @Override // com.google.android.play.core.review.ReviewManager
-    public Task a(Activity activity, b bVar) {
-        if (bVar != this.f7202b) {
-            return m.e(new zh.a(-2));
-        }
-        return m.f(null);
-    }
-
-    @Override // com.google.android.play.core.review.ReviewManager
-    public Task b() {
-        b c10 = b.c(PendingIntent.getBroadcast(this.f7201a, 0, new Intent(), 67108864), false);
-        this.f7202b = c10;
-        return m.f(c10);
+public class a extends ef.b {
+    public a(int i10) {
+        super(new Status(i10, String.format(Locale.getDefault(), "Review Error(%d): %s", Integer.valueOf(i10), ei.a.a(i10))));
     }
 }

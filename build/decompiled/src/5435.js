@@ -1,63 +1,48 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var2 = exports;
-    var5 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
-    var0 = 0;
-    var3 = var5[var0];
-    var0 = undefined;
-    var6 = var4.bind(var0)(var3);
-    var3 = global;
-    var9 = var3.Object;
-    var8 = var9.defineProperty;
-    var7 = {};
-    var3 = true;
-    var7.value = var3;
-    var3 = '__esModule';
-    var3 = var8.bind(var9)(var2, var3, var7);
-    var2.StepNumber = var0;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var6.bind(var0)(var3);
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot2 = var3;
-    var3 = 3;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot3 = var3;
-    var1 = function arg0() {
-        var0 = arg0;
-        var7 = var0.i;
-        var8 = var0.style;
-        var5 = _closure1_slot3;
-        var3 = var5.jsx;
-        var4 = _closure1_slot2;
-        var2 = var4.View;
-        var1 = {};
-        var9 = _closure1_slot0;
-        var6 = _closure1_slot1;
-        var0 = 4;
-        var6 = var6[var0];
-        var0 = undefined;
-        var6 = var9.bind(var0)(var6);
-        var6 = var6.styles;
-        var6 = var6.stepNumber;
-        var1.style = var6;
-        var6 = var5.jsx;
-        var5 = var4.Text;
-        var4 = {};
-        var4.style = var8;
-        var4.children = var7;
-        var4 = var6.bind(var0)(var5, var4);
-        var1.children = var4;
-        var0 = var3.bind(var0)(var2, var1);
-        return var0;
-    };
-    var2.StepNumber = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5428, 31, 27, 33, 5432]);
+    _fun48291: for (var _fun48291_ip = 0;;) switch (_fun48291_ip) {
+        case 0:
+            var2 = exports;
+            var4 = global;
+            var5 = var4.Object;
+            var3 = var5.defineProperty;
+            var1 = {};
+            var0 = true;
+            var1.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var5)(var2, var0, var1);
+            var0 = undefined;
+            var2.constants = var0;
+            var3 = dependencyMap;
+            var1 = 0;
+            var3 = var3[var1];
+            var1 = require;
+            var3 = var1.bind(var0)(var3);
+            var1 = {
+                'SLIDER_DEFAULT_INITIAL_VALUE': 0,
+                'MARGIN_HORIZONTAL_PADDING': 0.05,
+                'STEP_NUMBER_TEXT_FONT_SMALL': 8,
+                'STEP_NUMBER_TEXT_FONT_BIG': 12
+            };
+            var5 = var4.Number;
+            var5 = var5.MIN_SAFE_INTEGER;
+            var1.LIMIT_MIN_VALUE = var5;
+            var4 = var4.Number;
+            var4 = var4.MAX_SAFE_INTEGER;
+            var1.LIMIT_MAX_VALUE = var4;
+            var3 = var3.Platform;
+            var5 = var3.OS;
+            var3 = 1000;
+            var4 = 'android';
+            if (!(var4 === var5)) {
+                _fun48291_ip = 137;
+                continue _fun48291
+            }
+        case 134:
+            var3 = 128;
+        case 137:
+            var1.DEFAULT_STEP_RESOLUTION = var3;
+            var2.constants = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

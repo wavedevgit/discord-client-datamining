@@ -26,34 +26,34 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class d0 extends RenderableView {
 
     /* renamed from: d  reason: collision with root package name */
-    private SVGLength f16458d;
+    private SVGLength f16852d;
 
     /* renamed from: e  reason: collision with root package name */
-    private SVGLength f16459e;
+    private SVGLength f16853e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SVGLength f16460i;
+    private SVGLength f16854i;
 
     /* renamed from: o  reason: collision with root package name */
-    private SVGLength f16461o;
+    private SVGLength f16855o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f16462p;
+    private String f16856p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f16463q;
+    private int f16857q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f16464r;
+    private int f16858r;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f16465s;
+    private String f16859s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f16466t;
+    private int f16860t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final AtomicBoolean f16467u;
+    private final AtomicBoolean f16861u;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -63,7 +63,7 @@ public class d0 extends RenderableView {
 
         @Override // y8.b
         public void onFailureImpl(DataSource dataSource) {
-            d0.this.f16467u.set(false);
+            d0.this.f16861u.set(false);
             p8.a.M(ReactConstants.TAG, dataSource.b(), "RNSVG: fetchDecodedImage failed!", new Object[0]);
         }
 
@@ -74,8 +74,8 @@ public class d0 extends RenderableView {
             int surfaceId = UIManagerHelper.getSurfaceId(d0.this);
             int id2 = d0.this.getId();
             d0 d0Var2 = d0.this;
-            eventDispatcherForReactTag.dispatchEvent(new SvgLoadEvent(surfaceId, id2, d0Var2.mContext, d0Var2.f16462p, bitmap.getWidth(), bitmap.getHeight()));
-            d0.this.f16467u.set(false);
+            eventDispatcherForReactTag.dispatchEvent(new SvgLoadEvent(surfaceId, id2, d0Var2.mContext, d0Var2.f16856p, bitmap.getWidth(), bitmap.getHeight()));
+            d0.this.f16861u.set(false);
             SvgView svgView = d0.this.getSvgView();
             if (svgView != null) {
                 svgView.invalidate();
@@ -85,17 +85,17 @@ public class d0 extends RenderableView {
 
     public d0(ReactContext reactContext) {
         super(reactContext);
-        this.f16467u = new AtomicBoolean(false);
+        this.f16861u = new AtomicBoolean(false);
     }
 
     private void e(Canvas canvas, Paint paint, Bitmap bitmap, float f10) {
-        if (this.f16463q == 0 || this.f16464r == 0) {
-            this.f16463q = bitmap.getWidth();
-            this.f16464r = bitmap.getHeight();
+        if (this.f16857q == 0 || this.f16858r == 0) {
+            this.f16857q = bitmap.getWidth();
+            this.f16858r = bitmap.getHeight();
         }
         RectF f11 = f();
-        RectF rectF = new RectF(0.0f, 0.0f, this.f16463q, this.f16464r);
-        l1.a(rectF, f11, this.f16465s, this.f16466t).mapRect(rectF);
+        RectF rectF = new RectF(0.0f, 0.0f, this.f16857q, this.f16858r);
+        l1.a(rectF, f11, this.f16859s, this.f16860t).mapRect(rectF);
         canvas.clipPath(getPath(canvas, paint));
         Path clipPath = getClipPath(canvas, paint);
         if (clipPath != null) {
@@ -109,21 +109,21 @@ public class d0 extends RenderableView {
     }
 
     private RectF f() {
-        double relativeOnWidth = relativeOnWidth(this.f16458d);
-        double relativeOnHeight = relativeOnHeight(this.f16459e);
-        double relativeOnWidth2 = relativeOnWidth(this.f16460i);
-        double relativeOnHeight2 = relativeOnHeight(this.f16461o);
+        double relativeOnWidth = relativeOnWidth(this.f16852d);
+        double relativeOnHeight = relativeOnHeight(this.f16853e);
+        double relativeOnWidth2 = relativeOnWidth(this.f16854i);
+        double relativeOnHeight2 = relativeOnHeight(this.f16855o);
         if (relativeOnWidth2 == 0.0d) {
-            relativeOnWidth2 = this.f16463q * this.mScale;
+            relativeOnWidth2 = this.f16857q * this.mScale;
         }
         if (relativeOnHeight2 == 0.0d) {
-            relativeOnHeight2 = this.f16464r * this.mScale;
+            relativeOnHeight2 = this.f16858r * this.mScale;
         }
         return new RectF((float) relativeOnWidth, (float) relativeOnHeight, (float) (relativeOnWidth + relativeOnWidth2), (float) (relativeOnHeight + relativeOnHeight2));
     }
 
     private void g(ImagePipeline imagePipeline, ImageRequest imageRequest) {
-        this.f16467u.set(true);
+        this.f16861u.set(true);
         imagePipeline.k(imageRequest, this.mContext).c(new a(), m8.i.F());
     }
 
@@ -137,7 +137,7 @@ public class d0 extends RenderableView {
                         return;
                     }
                     try {
-                        sa.e eVar = (sa.e) closeableReference.C0();
+                        sa.e eVar = (sa.e) closeableReference.E0();
                         if (!(eVar instanceof sa.d)) {
                             return;
                         }
@@ -163,9 +163,9 @@ public class d0 extends RenderableView {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.horcrux.svg.RenderableView, com.horcrux.svg.VirtualView
     public void draw(Canvas canvas, Paint paint, float f10) {
-        if (!this.f16467u.get()) {
+        if (!this.f16861u.get()) {
             ImagePipeline a10 = e9.d.a();
-            ImageRequest fromUri = ImageRequest.fromUri(new ImageSource(this.mContext, this.f16462p).getUri());
+            ImageRequest fromUri = ImageRequest.fromUri(new ImageSource(this.mContext, this.f16856p).getUri());
             if (a10.u(fromUri)) {
                 m(a10, fromUri, canvas, paint, f10 * this.mOpacity);
             } else {
@@ -184,52 +184,52 @@ public class d0 extends RenderableView {
     }
 
     public void h(Dynamic dynamic) {
-        this.f16461o = SVGLength.b(dynamic);
+        this.f16855o = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void i(ReadableMap readableMap) {
         if (readableMap != null) {
             String string = readableMap.getString("uri");
-            this.f16462p = string;
+            this.f16856p = string;
             if (string != null && !string.isEmpty()) {
                 if (readableMap.hasKey("width") && readableMap.hasKey("height")) {
-                    this.f16463q = readableMap.getInt("width");
-                    this.f16464r = readableMap.getInt("height");
+                    this.f16857q = readableMap.getInt("width");
+                    this.f16858r = readableMap.getInt("height");
                 } else {
-                    this.f16463q = 0;
-                    this.f16464r = 0;
+                    this.f16857q = 0;
+                    this.f16858r = 0;
                 }
-                if (Uri.parse(this.f16462p).getScheme() == null) {
+                if (Uri.parse(this.f16856p).getScheme() == null) {
                     ResourceDrawableIdHelper.getInstance();
-                    ResourceDrawableIdHelper.getResourceDrawableUri(this.mContext, this.f16462p);
+                    ResourceDrawableIdHelper.getResourceDrawableUri(this.mContext, this.f16856p);
                 }
             }
         }
     }
 
     public void j(Dynamic dynamic) {
-        this.f16460i = SVGLength.b(dynamic);
+        this.f16854i = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void k(Dynamic dynamic) {
-        this.f16458d = SVGLength.b(dynamic);
+        this.f16852d = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void l(Dynamic dynamic) {
-        this.f16459e = SVGLength.b(dynamic);
+        this.f16853e = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void setAlign(String str) {
-        this.f16465s = str;
+        this.f16859s = str;
         invalidate();
     }
 
     public void setMeetOrSlice(int i10) {
-        this.f16466t = i10;
+        this.f16860t = i10;
         invalidate();
     }
 }

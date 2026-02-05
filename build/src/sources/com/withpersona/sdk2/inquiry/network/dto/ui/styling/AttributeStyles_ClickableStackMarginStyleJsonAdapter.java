@@ -41,18 +41,18 @@ public final class AttributeStyles_ClickableStackMarginStyleJsonAdapter extends 
     @NotNull
     public AttributeStyles.ClickableStackMarginStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.MeasurementSet measurementSet = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 measurementSet = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.ClickableStackMarginStyle(measurementSet);
     }
 
@@ -60,8 +60,8 @@ public final class AttributeStyles_ClickableStackMarginStyleJsonAdapter extends 
     public void toJson(@NotNull t writer, AttributeStyles.ClickableStackMarginStyle clickableStackMarginStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (clickableStackMarginStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableMeasurementSetAdapter.toJson(writer, clickableStackMarginStyle.getBase());
             writer.E();
             return;

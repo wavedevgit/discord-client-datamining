@@ -1,36 +1,36 @@
 package og;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class c8 implements ui.d {
+final class c8 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c8 f42732a = new c8();
+    static final c8 f42638a = new c8();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f42733b;
+    private static final xi.c f42639b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f42734c;
+    private static final xi.c f42640c;
 
     static {
-        c.b a10 = ui.c.a("metric");
+        c.b a10 = xi.c.a("metric");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f42733b = a10.b(s1Var.b()).a();
-        c.b a11 = ui.c.a("result");
+        f42639b = a10.b(s1Var.b()).a();
+        c.b a11 = xi.c.a("result");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f42734c = a11.b(s1Var2.b()).a();
+        f42640c = a11.b(s1Var2.b()).a();
     }
 
     private c8() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

@@ -9,16 +9,16 @@ public final class f extends i {
     public static final Parcelable.Creator<f> CREATOR = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f36732e;
+    public final String f36659e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final String f36733i;
+    public final String f36660i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final String f36734o;
+    public final String f36661o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final byte[] f36735p;
+    public final byte[] f36662p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -40,10 +40,10 @@ public final class f extends i {
 
     public f(String str, String str2, String str3, byte[] bArr) {
         super("GEOB");
-        this.f36732e = str;
-        this.f36733i = str2;
-        this.f36734o = str3;
-        this.f36735p = bArr;
+        this.f36659e = str;
+        this.f36660i = str2;
+        this.f36661o = str3;
+        this.f36662p = bArr;
     }
 
     public boolean equals(Object obj) {
@@ -52,7 +52,7 @@ public final class f extends i {
         }
         if (obj != null && f.class == obj.getClass()) {
             f fVar = (f) obj;
-            if (w0.c(this.f36732e, fVar.f36732e) && w0.c(this.f36733i, fVar.f36733i) && w0.c(this.f36734o, fVar.f36734o) && Arrays.equals(this.f36735p, fVar.f36735p)) {
+            if (w0.c(this.f36659e, fVar.f36659e) && w0.c(this.f36660i, fVar.f36660i) && w0.c(this.f36661o, fVar.f36661o) && Arrays.equals(this.f36662p, fVar.f36662p)) {
                 return true;
             }
         }
@@ -62,7 +62,7 @@ public final class f extends i {
     public int hashCode() {
         int i10;
         int i11;
-        String str = this.f36732e;
+        String str = this.f36659e;
         int i12 = 0;
         if (str != null) {
             i10 = str.hashCode();
@@ -70,38 +70,38 @@ public final class f extends i {
             i10 = 0;
         }
         int i13 = (527 + i10) * 31;
-        String str2 = this.f36733i;
+        String str2 = this.f36660i;
         if (str2 != null) {
             i11 = str2.hashCode();
         } else {
             i11 = 0;
         }
         int i14 = (i13 + i11) * 31;
-        String str3 = this.f36734o;
+        String str3 = this.f36661o;
         if (str3 != null) {
             i12 = str3.hashCode();
         }
-        return ((i14 + i12) * 31) + Arrays.hashCode(this.f36735p);
+        return ((i14 + i12) * 31) + Arrays.hashCode(this.f36662p);
     }
 
     @Override // ld.i
     public String toString() {
-        return this.f36741d + ": mimeType=" + this.f36732e + ", filename=" + this.f36733i + ", description=" + this.f36734o;
+        return this.f36668d + ": mimeType=" + this.f36659e + ", filename=" + this.f36660i + ", description=" + this.f36661o;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f36732e);
-        parcel.writeString(this.f36733i);
-        parcel.writeString(this.f36734o);
-        parcel.writeByteArray(this.f36735p);
+        parcel.writeString(this.f36659e);
+        parcel.writeString(this.f36660i);
+        parcel.writeString(this.f36661o);
+        parcel.writeByteArray(this.f36662p);
     }
 
     f(Parcel parcel) {
         super("GEOB");
-        this.f36732e = (String) w0.j(parcel.readString());
-        this.f36733i = (String) w0.j(parcel.readString());
-        this.f36734o = (String) w0.j(parcel.readString());
-        this.f36735p = (byte[]) w0.j(parcel.createByteArray());
+        this.f36659e = (String) w0.j(parcel.readString());
+        this.f36660i = (String) w0.j(parcel.readString());
+        this.f36661o = (String) w0.j(parcel.readString());
+        this.f36662p = (byte[]) w0.j(parcel.createByteArray());
     }
 }

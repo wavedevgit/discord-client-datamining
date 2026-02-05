@@ -6,23 +6,23 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface NewKotlinTypeChecker extends KotlinTypeChecker {
     @NotNull
-    public static final Companion Companion = Companion.f35126a;
+    public static final Companion Companion = Companion.f34650a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f35126a = new Companion();
+        static final /* synthetic */ Companion f34650a = new Companion();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final NewKotlinTypeCheckerImpl f35127b = new NewKotlinTypeCheckerImpl(KotlinTypeRefiner.Default.INSTANCE, null, 2, null);
+        private static final NewKotlinTypeCheckerImpl f34651b = new NewKotlinTypeCheckerImpl(KotlinTypeRefiner.Default.INSTANCE, null, 2, null);
 
         private Companion() {
         }
 
         @NotNull
         public final NewKotlinTypeCheckerImpl getDefault() {
-            return f35127b;
+            return f34651b;
         }
     }
 

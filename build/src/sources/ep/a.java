@@ -1,64 +1,47 @@
 package ep;
+
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static int f22453a = 2130969440;
-
-    /* renamed from: b  reason: collision with root package name */
-    public static int f22454b = 2130969619;
-
-    /* renamed from: c  reason: collision with root package name */
-    public static int f22455c = 2130969622;
+public final class a {
 
     /* renamed from: d  reason: collision with root package name */
-    public static int f22456d = 2130969623;
+    public static final a f21673d = new a("NotRequested", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static int f22457e = 2130969624;
-
-    /* renamed from: f  reason: collision with root package name */
-    public static int f22458f = 2130969625;
-
-    /* renamed from: g  reason: collision with root package name */
-    public static int f22459g = 2130969626;
-
-    /* renamed from: h  reason: collision with root package name */
-    public static int f22460h = 2130969627;
+    public static final a f21674e = new a("NotSupported", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static int f22461i = 2130969628;
-
-    /* renamed from: j  reason: collision with root package name */
-    public static int f22462j = 2130969629;
-
-    /* renamed from: k  reason: collision with root package name */
-    public static int f22463k = 2130969630;
-
-    /* renamed from: l  reason: collision with root package name */
-    public static int f22464l = 2130969631;
-
-    /* renamed from: m  reason: collision with root package name */
-    public static int f22465m = 2130969632;
-
-    /* renamed from: n  reason: collision with root package name */
-    public static int f22466n = 2130969635;
+    public static final a f21675i = new a("Failed", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static int f22467o = 2130969637;
+    public static final a f21676o = new a("Success", 3);
 
     /* renamed from: p  reason: collision with root package name */
-    public static int f22468p = 2130969639;
+    private static final /* synthetic */ a[] f21677p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static int f22469q = 2130969641;
+    private static final /* synthetic */ EnumEntries f21678q;
 
-    /* renamed from: r  reason: collision with root package name */
-    public static int f22470r = 2130969642;
+    static {
+        a[] a10 = a();
+        f21677p = a10;
+        f21678q = vr.a.a(a10);
+    }
 
-    /* renamed from: s  reason: collision with root package name */
-    public static int f22471s = 2130969643;
+    private a(String str, int i10) {
+    }
 
-    /* renamed from: t  reason: collision with root package name */
-    public static int f22472t = 2130969645;
+    private static final /* synthetic */ a[] a() {
+        return new a[]{f21673d, f21674e, f21675i, f21676o};
+    }
+
+    public static a valueOf(String str) {
+        return (a) Enum.valueOf(a.class, str);
+    }
+
+    public static a[] values() {
+        return (a[]) f21677p.clone();
+    }
 }

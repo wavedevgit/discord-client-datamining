@@ -14,16 +14,16 @@ import java.lang.ref.WeakReference;
 public final class ViewStubCompat extends View {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f1574d;
+    private int f1686d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f1575e;
+    private int f1687e;
 
     /* renamed from: i  reason: collision with root package name */
-    private WeakReference f1576i;
+    private WeakReference f1688i;
 
     /* renamed from: o  reason: collision with root package name */
-    private LayoutInflater f1577o;
+    private LayoutInflater f1689o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -36,14 +36,14 @@ public final class ViewStubCompat extends View {
     public View a() {
         ViewParent parent = getParent();
         if (parent instanceof ViewGroup) {
-            if (this.f1574d != 0) {
+            if (this.f1686d != 0) {
                 ViewGroup viewGroup = (ViewGroup) parent;
-                LayoutInflater layoutInflater = this.f1577o;
+                LayoutInflater layoutInflater = this.f1689o;
                 if (layoutInflater == null) {
                     layoutInflater = LayoutInflater.from(getContext());
                 }
-                View inflate = layoutInflater.inflate(this.f1574d, viewGroup, false);
-                int i10 = this.f1575e;
+                View inflate = layoutInflater.inflate(this.f1686d, viewGroup, false);
+                int i10 = this.f1687e;
                 if (i10 != -1) {
                     inflate.setId(i10);
                 }
@@ -55,7 +55,7 @@ public final class ViewStubCompat extends View {
                 } else {
                     viewGroup.addView(inflate, indexOfChild);
                 }
-                this.f1576i = new WeakReference(inflate);
+                this.f1688i = new WeakReference(inflate);
                 return inflate;
             }
             throw new IllegalArgumentException("ViewStub must have a valid layoutResource");
@@ -72,15 +72,15 @@ public final class ViewStubCompat extends View {
     }
 
     public int getInflatedId() {
-        return this.f1575e;
+        return this.f1687e;
     }
 
     public LayoutInflater getLayoutInflater() {
-        return this.f1577o;
+        return this.f1689o;
     }
 
     public int getLayoutResource() {
-        return this.f1574d;
+        return this.f1686d;
     }
 
     @Override // android.view.View
@@ -89,15 +89,15 @@ public final class ViewStubCompat extends View {
     }
 
     public void setInflatedId(int i10) {
-        this.f1575e = i10;
+        this.f1687e = i10;
     }
 
     public void setLayoutInflater(LayoutInflater layoutInflater) {
-        this.f1577o = layoutInflater;
+        this.f1689o = layoutInflater;
     }
 
     public void setLayoutResource(int i10) {
-        this.f1574d = i10;
+        this.f1686d = i10;
     }
 
     public void setOnInflateListener(a aVar) {
@@ -105,7 +105,7 @@ public final class ViewStubCompat extends View {
 
     @Override // android.view.View
     public void setVisibility(int i10) {
-        WeakReference weakReference = this.f1576i;
+        WeakReference weakReference = this.f1688i;
         if (weakReference != null) {
             View view = (View) weakReference.get();
             if (view != null) {
@@ -123,10 +123,10 @@ public final class ViewStubCompat extends View {
 
     public ViewStubCompat(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f1574d = 0;
+        this.f1686d = 0;
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.O3, i10, 0);
-        this.f1575e = obtainStyledAttributes.getResourceId(f.j.R3, -1);
-        this.f1574d = obtainStyledAttributes.getResourceId(f.j.Q3, 0);
+        this.f1687e = obtainStyledAttributes.getResourceId(f.j.R3, -1);
+        this.f1686d = obtainStyledAttributes.getResourceId(f.j.Q3, 0);
         setId(obtainStyledAttributes.getResourceId(f.j.P3, -1));
         obtainStyledAttributes.recycle();
         setVisibility(8);

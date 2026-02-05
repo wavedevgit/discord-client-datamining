@@ -8,22 +8,22 @@ import org.jetbrains.annotations.NotNull;
 public class JvmDescriptorTypeWriter<T> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final JvmTypeFactory f33673a;
+    private final JvmTypeFactory f33197a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f33674b;
+    private int f33198b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Object f33675c;
+    private Object f33199c;
 
     protected final void a(Object type) {
         Intrinsics.checkNotNullParameter(type, "type");
-        if (this.f33675c == null) {
-            if (this.f33674b > 0) {
-                JvmTypeFactory jvmTypeFactory = this.f33673a;
-                type = jvmTypeFactory.createFromString(StringsKt.F("[", this.f33674b) + this.f33673a.toString(type));
+        if (this.f33199c == null) {
+            if (this.f33198b > 0) {
+                JvmTypeFactory jvmTypeFactory = this.f33197a;
+                type = jvmTypeFactory.createFromString(StringsKt.F("[", this.f33198b) + this.f33197a.toString(type));
             }
-            this.f33675c = type;
+            this.f33199c = type;
         }
     }
 
@@ -31,8 +31,8 @@ public class JvmDescriptorTypeWriter<T> {
     }
 
     public void writeArrayType() {
-        if (this.f33675c == null) {
-            this.f33674b++;
+        if (this.f33199c == null) {
+            this.f33198b++;
         }
     }
 

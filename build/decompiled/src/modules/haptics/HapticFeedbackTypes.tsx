@@ -39,6 +39,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.DRAG_AND_DROP_MOVE = var4;
     var0 = 'DRAG_AND_DROP_MOVE';
     var1[var4] = var0;
+    var4 = 7;
+    var1.SOFT = var4;
+    var0 = 'SOFT';
+    var1[var4] = var0;
     var0 = dependencyMap;
     var4 = var0[var3];
     var3 = require;

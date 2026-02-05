@@ -12,7 +12,7 @@ public final class cm extends a implements IInterface {
         super(iBinder, "com.google.mlkit.vision.barcode.aidls.IBarcodeScanner");
     }
 
-    public final List S0(sf.a aVar, lm lmVar) {
+    public final List W0(sf.a aVar, lm lmVar) {
         Parcel e10 = e();
         p0.b(e10, aVar);
         p0.a(e10, lmVar);
@@ -22,11 +22,11 @@ public final class cm extends a implements IInterface {
         return createTypedArrayList;
     }
 
-    public final void T0() {
+    public final void X0() {
         h(1, e());
     }
 
-    public final void U0() {
+    public final void Y0() {
         h(2, e());
     }
 }

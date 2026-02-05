@@ -5,193 +5,14 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.RandomAccess;
-import ji.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class s extends q implements List, RandomAccess {
+public abstract class s extends p implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final u0 f31713e = new b(k0.f31671p, 0);
+    private static final x f30941e = new q(u.f30945p, 0);
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a extends q.a {
-        public a() {
-            this(4);
-        }
-
-        @Override // ji.q.b
-        /* renamed from: h */
-        public a a(Object obj) {
-            super.d(obj);
-            return this;
-        }
-
-        public a i(Object... objArr) {
-            super.e(objArr);
-            return this;
-        }
-
-        public a j(Iterable iterable) {
-            super.b(iterable);
-            return this;
-        }
-
-        public s k() {
-            this.f31705c = true;
-            return s.i(this.f31703a, this.f31704b);
-        }
-
-        a(int i10) {
-            super(i10);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class b extends ji.a {
-
-        /* renamed from: i  reason: collision with root package name */
-        private final s f31714i;
-
-        b(s sVar, int i10) {
-            super(sVar.size(), i10);
-            this.f31714i = sVar;
-        }
-
-        @Override // ji.a
-        protected Object a(int i10) {
-            return this.f31714i.get(i10);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class c extends s {
-
-        /* renamed from: i  reason: collision with root package name */
-        final transient int f31715i;
-
-        /* renamed from: o  reason: collision with root package name */
-        final transient int f31716o;
-
-        c(int i10, int i11) {
-            this.f31715i = i10;
-            this.f31716o = i11;
-        }
-
-        @Override // ji.q
-        Object[] d() {
-            return s.this.d();
-        }
-
-        @Override // ji.q
-        int e() {
-            return s.this.f() + this.f31715i + this.f31716o;
-        }
-
-        @Override // ji.q
-        int f() {
-            return s.this.f() + this.f31715i;
-        }
-
-        @Override // ji.q
-        boolean g() {
-            return true;
-        }
-
-        @Override // java.util.List
-        public Object get(int i10) {
-            ii.m.h(i10, this.f31716o);
-            return s.this.get(i10 + this.f31715i);
-        }
-
-        @Override // ji.s, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.List
-        public /* bridge */ /* synthetic */ Iterator iterator() {
-            return super.iterator();
-        }
-
-        @Override // ji.s, java.util.List
-        public /* bridge */ /* synthetic */ ListIterator listIterator() {
-            return super.listIterator();
-        }
-
-        @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
-        public int size() {
-            return this.f31716o;
-        }
-
-        @Override // ji.s, java.util.List
-        /* renamed from: w */
-        public s subList(int i10, int i11) {
-            ii.m.n(i10, i11, this.f31716o);
-            s sVar = s.this;
-            int i12 = this.f31715i;
-            return sVar.subList(i10 + i12, i11 + i12);
-        }
-
-        @Override // ji.s, java.util.List
-        public /* bridge */ /* synthetic */ ListIterator listIterator(int i10) {
-            return super.listIterator(i10);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static s h(Object[] objArr) {
-        return i(objArr, objArr.length);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static s i(Object[] objArr, int i10) {
-        if (i10 == 0) {
-            return r();
-        }
-        return new k0(objArr, i10);
-    }
-
-    public static a j() {
-        return new a();
-    }
-
-    private static s k(Object... objArr) {
-        return h(h0.b(objArr));
-    }
-
-    public static s m(Collection collection) {
-        if (collection instanceof q) {
-            s b10 = ((q) collection).b();
-            if (b10.g()) {
-                return h(b10.toArray());
-            }
-            return b10;
-        }
-        return k(collection.toArray());
-    }
-
-    public static s n(Object[] objArr) {
-        if (objArr.length == 0) {
-            return r();
-        }
-        return k((Object[]) objArr.clone());
-    }
-
-    public static s r() {
-        return k0.f31671p;
-    }
-
-    public static s s(Object obj) {
-        return k(obj);
-    }
-
-    public static s t(Object obj, Object obj2) {
-        return k(obj, obj2);
-    }
-
-    public static s u(Object obj, Object obj2, Object obj3) {
-        return k(obj, obj2, obj3);
-    }
-
-    public static s v(Object obj, Object obj2, Object obj3, Object obj4, Object obj5) {
-        return k(obj, obj2, obj3, obj4, obj5);
-    }
+    /* renamed from: i  reason: collision with root package name */
+    public static final /* synthetic */ int f30942i = 0;
 
     @Override // java.util.List
     public final void add(int i10, Object obj) {
@@ -203,75 +24,156 @@ public abstract class s extends q implements List, RandomAccess {
         throw new UnsupportedOperationException();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // ji.q
-    public int c(Object[] objArr, int i10) {
+    @Override // ji.p
+    int b(Object[] objArr, int i10) {
         int size = size();
         for (int i11 = 0; i11 < size; i11++) {
-            objArr[i10 + i11] = get(i11);
+            objArr[i11] = get(i11);
         }
-        return i10 + size;
+        return size;
     }
 
-    @Override // ji.q, java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean contains(Object obj) {
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final boolean contains(Object obj) {
         if (indexOf(obj) >= 0) {
             return true;
         }
         return false;
     }
 
+    /* JADX WARN: Removed duplicated region for block: B:23:0x003f  */
     @Override // java.util.Collection, java.util.List
-    public boolean equals(Object obj) {
-        return y.c(this, obj);
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final boolean equals(java.lang.Object r7) {
+        /*
+            r6 = this;
+            r0 = 1
+            if (r7 != r6) goto L4
+            return r0
+        L4:
+            boolean r1 = r7 instanceof java.util.List
+            r2 = 0
+            if (r1 != 0) goto La
+            return r2
+        La:
+            java.util.List r7 = (java.util.List) r7
+            int r1 = r6.size()
+            int r3 = r7.size()
+            if (r1 == r3) goto L17
+            return r2
+        L17:
+            boolean r3 = r7 instanceof java.util.RandomAccess
+            if (r3 == 0) goto L31
+            r3 = r2
+        L1c:
+            if (r3 >= r1) goto L30
+            java.lang.Object r4 = r6.get(r3)
+            java.lang.Object r5 = r7.get(r3)
+            boolean r4 = ji.l.a(r4, r5)
+            if (r4 != 0) goto L2d
+            return r2
+        L2d:
+            int r3 = r3 + 1
+            goto L1c
+        L30:
+            return r0
+        L31:
+            java.util.Iterator r1 = r6.iterator()
+            java.util.Iterator r7 = r7.iterator()
+        L39:
+            boolean r3 = r1.hasNext()
+            if (r3 == 0) goto L55
+            boolean r3 = r7.hasNext()
+            if (r3 != 0) goto L46
+            return r2
+        L46:
+            java.lang.Object r3 = r1.next()
+            java.lang.Object r4 = r7.next()
+            boolean r3 = ji.l.a(r3, r4)
+            if (r3 != 0) goto L39
+            return r2
+        L55:
+            boolean r7 = r7.hasNext()
+            if (r7 != 0) goto L5c
+            return r0
+        L5c:
+            return r2
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ji.s.equals(java.lang.Object):boolean");
+    }
+
+    @Override // java.util.List
+    /* renamed from: f */
+    public s subList(int i10, int i11) {
+        m.c(i10, i11, size());
+        int i12 = i11 - i10;
+        if (i12 == size()) {
+            return this;
+        }
+        if (i12 == 0) {
+            return u.f30945p;
+        }
+        return new r(this, i10, i12);
+    }
+
+    @Override // java.util.List
+    /* renamed from: g */
+    public final x listIterator(int i10) {
+        m.b(i10, size(), "index");
+        if (isEmpty()) {
+            return f30941e;
+        }
+        return new q(this, i10);
     }
 
     @Override // java.util.Collection, java.util.List
-    public int hashCode() {
+    public final int hashCode() {
         int size = size();
         int i10 = 1;
         for (int i11 = 0; i11 < size; i11++) {
-            i10 = ~(~((i10 * 31) + get(i11).hashCode()));
+            i10 = (i10 * 31) + get(i11).hashCode();
         }
         return i10;
     }
 
     @Override // java.util.List
-    public int indexOf(Object obj) {
+    public final int indexOf(Object obj) {
         if (obj == null) {
             return -1;
         }
-        return y.d(this, obj);
-    }
-
-    @Override // java.util.List
-    public int lastIndexOf(Object obj) {
-        if (obj == null) {
-            return -1;
+        int size = size();
+        for (int i10 = 0; i10 < size; i10++) {
+            if (obj.equals(get(i10))) {
+                return i10;
+            }
         }
-        return y.f(this, obj);
+        return -1;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.List
-    /* renamed from: o */
-    public t0 iterator() {
-        return listIterator();
-    }
-
-    @Override // java.util.List
-    /* renamed from: p */
-    public u0 listIterator() {
+    public final /* synthetic */ Iterator iterator() {
         return listIterator(0);
     }
 
     @Override // java.util.List
-    /* renamed from: q */
-    public u0 listIterator(int i10) {
-        ii.m.l(i10, size());
-        if (isEmpty()) {
-            return f31713e;
+    public final int lastIndexOf(Object obj) {
+        if (obj == null) {
+            return -1;
         }
-        return new b(this, i10);
+        for (int size = size() - 1; size >= 0; size--) {
+            if (obj.equals(get(size))) {
+                return size;
+            }
+        }
+        return -1;
+    }
+
+    @Override // java.util.List
+    public final /* synthetic */ ListIterator listIterator() {
+        return listIterator(0);
     }
 
     @Override // java.util.List
@@ -282,28 +184,5 @@ public abstract class s extends q implements List, RandomAccess {
     @Override // java.util.List
     public final Object set(int i10, Object obj) {
         throw new UnsupportedOperationException();
-    }
-
-    @Override // java.util.List
-    /* renamed from: w */
-    public s subList(int i10, int i11) {
-        ii.m.n(i10, i11, size());
-        int i12 = i11 - i10;
-        if (i12 == size()) {
-            return this;
-        }
-        if (i12 == 0) {
-            return r();
-        }
-        return x(i10, i11);
-    }
-
-    s x(int i10, int i11) {
-        return new c(i10, i11 - i10);
-    }
-
-    @Override // ji.q
-    public final s b() {
-        return this;
     }
 }

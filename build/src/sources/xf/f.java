@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f53257a = new a(null);
+    public static final a f53801a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {

@@ -7,25 +7,20 @@ import z9.b;
 public class a implements b {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final C0779a f55593d = new C0779a(null);
+    public static final C0777a f55182d = new C0777a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final b f55594e = new a();
+    private static final b f55183e = new a();
 
     /* renamed from: z9.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0779a {
-        public /* synthetic */ C0779a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0777a {
+        public /* synthetic */ C0777a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0779a() {
+        private C0777a() {
         }
-    }
-
-    @Override // z9.b
-    public void B(String id2, Object obj, b.a aVar) {
-        Intrinsics.checkNotNullParameter(id2, "id");
     }
 
     @Override // z9.b
@@ -39,7 +34,12 @@ public class a implements b {
     }
 
     @Override // z9.b
-    public void l(String id2) {
+    public void k(String id2) {
+        Intrinsics.checkNotNullParameter(id2, "id");
+    }
+
+    @Override // z9.b
+    public void o(String id2, b.a aVar) {
         Intrinsics.checkNotNullParameter(id2, "id");
     }
 
@@ -49,7 +49,7 @@ public class a implements b {
     }
 
     @Override // z9.b
-    public void x(String id2, b.a aVar) {
+    public void y(String id2, Object obj, b.a aVar) {
         Intrinsics.checkNotNullParameter(id2, "id");
     }
 }

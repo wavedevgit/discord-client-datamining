@@ -11,53 +11,53 @@ import kotlin.reflect.jvm.internal.impl.name.Name;
 import kotlin.reflect.jvm.internal.impl.resolve.constants.ConstantValue;
 import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 import kotlin.reflect.jvm.internal.impl.types.SimpleType;
-import lr.l;
-import lr.o;
+import or.l;
+import or.o;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class BuiltInAnnotationDescriptor implements AnnotationDescriptor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KotlinBuiltIns f32812a;
+    private final KotlinBuiltIns f32336a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final FqName f32813b;
+    private final FqName f32337b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f32814c;
+    private final Map f32338c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f32815d;
+    private final boolean f32339d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Lazy f32816e;
+    private final Lazy f32340e;
 
     public BuiltInAnnotationDescriptor(@NotNull KotlinBuiltIns builtIns, @NotNull FqName fqName, @NotNull Map<Name, ? extends ConstantValue<?>> allValueArguments, boolean z10) {
         Intrinsics.checkNotNullParameter(builtIns, "builtIns");
         Intrinsics.checkNotNullParameter(fqName, "fqName");
         Intrinsics.checkNotNullParameter(allValueArguments, "allValueArguments");
-        this.f32812a = builtIns;
-        this.f32813b = fqName;
-        this.f32814c = allValueArguments;
-        this.f32815d = z10;
-        this.f32816e = l.b(o.f37120e, new b(this));
+        this.f32336a = builtIns;
+        this.f32337b = fqName;
+        this.f32338c = allValueArguments;
+        this.f32339d = z10;
+        this.f32340e = l.b(o.f44232e, new b(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SimpleType b(BuiltInAnnotationDescriptor builtInAnnotationDescriptor) {
-        return builtInAnnotationDescriptor.f32812a.getBuiltInClassByFqName(builtInAnnotationDescriptor.getFqName()).getDefaultType();
+        return builtInAnnotationDescriptor.f32336a.getBuiltInClassByFqName(builtInAnnotationDescriptor.getFqName()).getDefaultType();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public Map<Name, ConstantValue<?>> getAllValueArguments() {
-        return this.f32814c;
+        return this.f32338c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public FqName getFqName() {
-        return this.f32813b;
+        return this.f32337b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
@@ -71,7 +71,7 @@ public final class BuiltInAnnotationDescriptor implements AnnotationDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public KotlinType getType() {
-        Object value = this.f32816e.getValue();
+        Object value = this.f32340e.getValue();
         Intrinsics.checkNotNullExpressionValue(value, "getValue(...)");
         return (KotlinType) value;
     }

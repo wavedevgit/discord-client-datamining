@@ -25,7 +25,7 @@ public class MemberComparator implements Comparator<DeclarationDescriptor> {
     public static final MemberComparator INSTANCE = new MemberComparator();
 
     /* renamed from: d  reason: collision with root package name */
-    private static final DescriptorRenderer f34552d = DescriptorRenderer.Companion.withOptions(new a());
+    private static final DescriptorRenderer f34076d = DescriptorRenderer.Companion.withOptions(new a());
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class NameAndTypeMemberComparator implements Comparator<DeclarationDescriptor> {
@@ -99,7 +99,7 @@ public class MemberComparator implements Comparator<DeclarationDescriptor> {
             descriptorRendererOptions.setVerbose(true);
             descriptorRendererOptions.setAnnotationArgumentsRenderingPolicy(AnnotationArgumentsRenderingPolicy.UNLESS_EMPTY);
             descriptorRendererOptions.setModifiers(DescriptorRendererModifier.ALL);
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
     }
 
@@ -113,7 +113,7 @@ public class MemberComparator implements Comparator<DeclarationDescriptor> {
             return b10.intValue();
         }
         if ((declarationDescriptor instanceof TypeAliasDescriptor) && (declarationDescriptor2 instanceof TypeAliasDescriptor)) {
-            DescriptorRenderer descriptorRenderer = f34552d;
+            DescriptorRenderer descriptorRenderer = f34076d;
             int compareTo = descriptorRenderer.renderType(((TypeAliasDescriptor) declarationDescriptor).getUnderlyingType()).compareTo(descriptorRenderer.renderType(((TypeAliasDescriptor) declarationDescriptor2).getUnderlyingType()));
             if (compareTo != 0) {
                 return compareTo;
@@ -124,7 +124,7 @@ public class MemberComparator implements Comparator<DeclarationDescriptor> {
             ReceiverParameterDescriptor extensionReceiverParameter = callableDescriptor.getExtensionReceiverParameter();
             ReceiverParameterDescriptor extensionReceiverParameter2 = callableDescriptor2.getExtensionReceiverParameter();
             if (extensionReceiverParameter != null) {
-                DescriptorRenderer descriptorRenderer2 = f34552d;
+                DescriptorRenderer descriptorRenderer2 = f34076d;
                 int compareTo2 = descriptorRenderer2.renderType(extensionReceiverParameter.getType()).compareTo(descriptorRenderer2.renderType(extensionReceiverParameter2.getType()));
                 if (compareTo2 != 0) {
                     return compareTo2;
@@ -133,7 +133,7 @@ public class MemberComparator implements Comparator<DeclarationDescriptor> {
             List<ValueParameterDescriptor> valueParameters = callableDescriptor.getValueParameters();
             List<ValueParameterDescriptor> valueParameters2 = callableDescriptor2.getValueParameters();
             for (int i10 = 0; i10 < Math.min(valueParameters.size(), valueParameters2.size()); i10++) {
-                DescriptorRenderer descriptorRenderer3 = f34552d;
+                DescriptorRenderer descriptorRenderer3 = f34076d;
                 int compareTo3 = descriptorRenderer3.renderType(valueParameters.get(i10).getType()).compareTo(descriptorRenderer3.renderType(valueParameters2.get(i10).getType()));
                 if (compareTo3 != 0) {
                     return compareTo3;
@@ -153,7 +153,7 @@ public class MemberComparator implements Comparator<DeclarationDescriptor> {
                     return size2;
                 }
                 for (int i12 = 0; i12 < upperBounds.size(); i12++) {
-                    DescriptorRenderer descriptorRenderer4 = f34552d;
+                    DescriptorRenderer descriptorRenderer4 = f34076d;
                     int compareTo4 = descriptorRenderer4.renderType(upperBounds.get(i12)).compareTo(descriptorRenderer4.renderType(upperBounds2.get(i12)));
                     if (compareTo4 != 0) {
                         return compareTo4;
@@ -182,7 +182,7 @@ public class MemberComparator implements Comparator<DeclarationDescriptor> {
         } else {
             throw new AssertionError(String.format("Unsupported pair of descriptors:\n'%s' Class: %s\n%s' Class: %s", declarationDescriptor, declarationDescriptor.getClass(), declarationDescriptor2, declarationDescriptor2.getClass()));
         }
-        DescriptorRenderer descriptorRenderer5 = f34552d;
+        DescriptorRenderer descriptorRenderer5 = f34076d;
         int compareTo5 = descriptorRenderer5.render(declarationDescriptor).compareTo(descriptorRenderer5.render(declarationDescriptor2));
         return compareTo5 != 0 ? compareTo5 : DescriptorUtils.getContainingModule(declarationDescriptor).getName().compareTo(DescriptorUtils.getContainingModule(declarationDescriptor2).getName());
     }

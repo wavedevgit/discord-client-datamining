@@ -1,69 +1,57 @@
 package rk;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e extends i {
+public final class e extends p {
 
-    /* renamed from: c  reason: collision with root package name */
-    private final String f48833c;
+    /* renamed from: j  reason: collision with root package name */
+    static final int[] f48840j = {0, 11, 13, 14, 19, 25, 28, 21, 22, 26};
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f48834d;
+    /* renamed from: i  reason: collision with root package name */
+    private final int[] f48841i = new int[4];
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public e(gk.a aVar, String str, String str2) {
-        super(aVar);
-        this.f48833c = str2;
-        this.f48834d = str;
+    private static void r(StringBuilder sb2, int i10) {
+        for (int i11 = 0; i11 < 10; i11++) {
+            if (i10 == f48840j[i11]) {
+                sb2.insert(0, (char) (i11 + 48));
+                return;
+            }
+        }
+        throw fk.k.a();
     }
 
-    private void k(StringBuilder sb2, int i10) {
-        int f10 = b().f(i10, 16);
-        if (f10 == 38400) {
-            return;
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // rk.p
+    public int k(jk.a aVar, int[] iArr, StringBuilder sb2) {
+        int[] iArr2 = this.f48841i;
+        iArr2[0] = 0;
+        iArr2[1] = 0;
+        iArr2[2] = 0;
+        iArr2[3] = 0;
+        int l10 = aVar.l();
+        int i10 = iArr[1];
+        int i11 = 0;
+        for (int i12 = 0; i12 < 6 && i10 < l10; i12++) {
+            int i13 = p.i(aVar, iArr2, i10, p.f48867h);
+            sb2.append((char) ((i13 % 10) + 48));
+            for (int i14 : iArr2) {
+                i10 += i14;
+            }
+            if (i13 >= 10) {
+                i11 |= 1 << (5 - i12);
+            }
         }
-        sb2.append('(');
-        sb2.append(this.f48833c);
-        sb2.append(')');
-        int i11 = f10 % 32;
-        int i12 = f10 / 32;
-        int i13 = (i12 % 12) + 1;
-        int i14 = i12 / 12;
-        if (i14 / 10 == 0) {
-            sb2.append('0');
+        r(sb2, i11);
+        int i15 = p.m(aVar, i10, true, p.f48864e)[1];
+        for (int i16 = 0; i16 < 6 && i15 < l10; i16++) {
+            sb2.append((char) (p.i(aVar, iArr2, i15, p.f48866g) + 48));
+            for (int i17 : iArr2) {
+                i15 += i17;
+            }
         }
-        sb2.append(i14);
-        if (i13 / 10 == 0) {
-            sb2.append('0');
-        }
-        sb2.append(i13);
-        if (i11 / 10 == 0) {
-            sb2.append('0');
-        }
-        sb2.append(i11);
+        return i15;
     }
 
-    @Override // rk.j
-    public String d() {
-        if (c().l() == 84) {
-            StringBuilder sb2 = new StringBuilder();
-            f(sb2, 8);
-            j(sb2, 48, 20);
-            k(sb2, 68);
-            return sb2.toString();
-        }
-        throw ck.k.a();
-    }
-
-    @Override // rk.i
-    protected void h(StringBuilder sb2, int i10) {
-        sb2.append('(');
-        sb2.append(this.f48834d);
-        sb2.append(i10 / 100000);
-        sb2.append(')');
-    }
-
-    @Override // rk.i
-    protected int i(int i10) {
-        return i10 % 100000;
+    @Override // rk.p
+    fk.a p() {
+        return fk.a.EAN_13;
     }
 }

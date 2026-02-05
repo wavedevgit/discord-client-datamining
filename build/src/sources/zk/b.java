@@ -1,73 +1,66 @@
 package zk;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
+import al.f;
+import cl.c;
+import cl.g;
+import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final byte[][] f56020a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int f56021b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final int f56022c;
-
-    public b(int i10, int i11) {
-        this.f56020a = (byte[][]) Array.newInstance(Byte.TYPE, i11, i10);
-        this.f56021b = i10;
-        this.f56022c = i11;
-    }
-
-    public void a(byte b10) {
-        for (byte[] bArr : this.f56020a) {
-            Arrays.fill(bArr, b10);
-        }
-    }
-
-    public byte b(int i10, int i11) {
-        return this.f56020a[i11][i10];
-    }
-
-    public byte[][] c() {
-        return this.f56020a;
-    }
-
-    public int d() {
-        return this.f56022c;
-    }
-
-    public int e() {
-        return this.f56021b;
-    }
-
-    public void f(int i10, int i11, int i12) {
-        this.f56020a[i11][i10] = (byte) i12;
-    }
-
-    public void g(int i10, int i11, boolean z10) {
-        this.f56020a[i11][i10] = z10 ? (byte) 1 : (byte) 0;
-    }
-
-    public String toString() {
-        StringBuilder sb2 = new StringBuilder((this.f56021b * 2 * this.f56022c) + 2);
-        for (int i10 = 0; i10 < this.f56022c; i10++) {
-            byte[] bArr = this.f56020a[i10];
-            for (int i11 = 0; i11 < this.f56021b; i11++) {
-                byte b10 = bArr[i11];
-                if (b10 != 0) {
-                    if (b10 != 1) {
-                        sb2.append("  ");
-                    } else {
-                        sb2.append(" 1");
+    private static jk.b b(g gVar, int i10, int i11, int i12) {
+        cl.b a10 = gVar.a();
+        if (a10 != null) {
+            int e10 = a10.e();
+            int d10 = a10.d();
+            int i13 = i12 * 2;
+            int i14 = e10 + i13;
+            int i15 = i13 + d10;
+            int max = Math.max(i10, i14);
+            int max2 = Math.max(i11, i15);
+            int min = Math.min(max / i14, max2 / i15);
+            int i16 = (max - (e10 * min)) / 2;
+            int i17 = (max2 - (d10 * min)) / 2;
+            jk.b bVar = new jk.b(max, max2);
+            int i18 = 0;
+            while (i18 < d10) {
+                int i19 = 0;
+                int i20 = i16;
+                while (i19 < e10) {
+                    if (a10.b(i19, i18) == 1) {
+                        bVar.r(i20, i17, min, min);
                     }
-                } else {
-                    sb2.append(" 0");
+                    i19++;
+                    i20 += min;
                 }
+                i18++;
+                i17 += min;
             }
-            sb2.append('\n');
+            return bVar;
         }
-        return sb2.toString();
+        throw new IllegalStateException();
+    }
+
+    public jk.b a(String str, fk.a aVar, int i10, int i11, Map map) {
+        if (!str.isEmpty()) {
+            if (aVar == fk.a.QR_CODE) {
+                if (i10 >= 0 && i11 >= 0) {
+                    f fVar = f.L;
+                    int i12 = 4;
+                    if (map != null) {
+                        fk.f fVar2 = fk.f.ERROR_CORRECTION;
+                        if (map.containsKey(fVar2)) {
+                            fVar = f.valueOf(map.get(fVar2).toString());
+                        }
+                        fk.f fVar3 = fk.f.MARGIN;
+                        if (map.containsKey(fVar3)) {
+                            i12 = Integer.parseInt(map.get(fVar3).toString());
+                        }
+                    }
+                    return b(c.n(str, fVar, map), i10, i11, i12);
+                }
+                throw new IllegalArgumentException("Requested dimensions are too small: " + i10 + 'x' + i11);
+            }
+            throw new IllegalArgumentException("Can only encode QR_CODE, but got " + aVar);
+        }
+        throw new IllegalArgumentException("Found empty contents");
     }
 }

@@ -25,13 +25,13 @@ public interface f3 {
 
     f3 l();
 
-    f3 r();
-
     f3 s();
 
-    f3 u();
+    f3 t();
 
-    void v(boolean z10);
+    f3 v();
 
-    f3 y();
+    void w(boolean z10);
+
+    f3 z();
 }

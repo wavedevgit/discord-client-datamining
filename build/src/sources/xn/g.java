@@ -1,7 +1,0 @@
-package xn;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface g {
-    void a();
-
-    String b();
-}

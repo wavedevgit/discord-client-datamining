@@ -13,59 +13,59 @@ import java.lang.ref.WeakReference;
 public class c extends ActionMode implements e.a {
 
     /* renamed from: i  reason: collision with root package name */
-    private Context f1163i;
+    private Context f1275i;
 
     /* renamed from: o  reason: collision with root package name */
-    private ActionBarContextView f1164o;
+    private ActionBarContextView f1276o;
 
     /* renamed from: p  reason: collision with root package name */
-    private ActionMode.Callback f1165p;
+    private ActionMode.Callback f1277p;
 
     /* renamed from: q  reason: collision with root package name */
-    private WeakReference f1166q;
+    private WeakReference f1278q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f1167r;
+    private boolean f1279r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f1168s;
+    private boolean f1280s;
 
     /* renamed from: t  reason: collision with root package name */
-    private androidx.appcompat.view.menu.e f1169t;
+    private androidx.appcompat.view.menu.e f1281t;
 
     public c(Context context, ActionBarContextView actionBarContextView, ActionMode.Callback callback, boolean z10) {
-        this.f1163i = context;
-        this.f1164o = actionBarContextView;
-        this.f1165p = callback;
+        this.f1275i = context;
+        this.f1276o = actionBarContextView;
+        this.f1277p = callback;
         androidx.appcompat.view.menu.e T = new androidx.appcompat.view.menu.e(actionBarContextView.getContext()).T(1);
-        this.f1169t = T;
+        this.f1281t = T;
         T.S(this);
-        this.f1168s = z10;
+        this.f1280s = z10;
     }
 
     @Override // androidx.appcompat.view.menu.e.a
     public boolean a(androidx.appcompat.view.menu.e eVar, MenuItem menuItem) {
-        return this.f1165p.c(this, menuItem);
+        return this.f1277p.c(this, menuItem);
     }
 
     @Override // androidx.appcompat.view.menu.e.a
     public void b(androidx.appcompat.view.menu.e eVar) {
         k();
-        this.f1164o.l();
+        this.f1276o.l();
     }
 
     @Override // androidx.appcompat.view.ActionMode
     public void c() {
-        if (this.f1167r) {
+        if (this.f1279r) {
             return;
         }
-        this.f1167r = true;
-        this.f1165p.a(this);
+        this.f1279r = true;
+        this.f1277p.a(this);
     }
 
     @Override // androidx.appcompat.view.ActionMode
     public View d() {
-        WeakReference weakReference = this.f1166q;
+        WeakReference weakReference = this.f1278q;
         if (weakReference != null) {
             return (View) weakReference.get();
         }
@@ -74,69 +74,69 @@ public class c extends ActionMode implements e.a {
 
     @Override // androidx.appcompat.view.ActionMode
     public Menu e() {
-        return this.f1169t;
+        return this.f1281t;
     }
 
     @Override // androidx.appcompat.view.ActionMode
     public MenuInflater f() {
-        return new e(this.f1164o.getContext());
+        return new e(this.f1276o.getContext());
     }
 
     @Override // androidx.appcompat.view.ActionMode
     public CharSequence g() {
-        return this.f1164o.getSubtitle();
+        return this.f1276o.getSubtitle();
     }
 
     @Override // androidx.appcompat.view.ActionMode
     public CharSequence i() {
-        return this.f1164o.getTitle();
+        return this.f1276o.getTitle();
     }
 
     @Override // androidx.appcompat.view.ActionMode
     public void k() {
-        this.f1165p.d(this, this.f1169t);
+        this.f1277p.d(this, this.f1281t);
     }
 
     @Override // androidx.appcompat.view.ActionMode
     public boolean l() {
-        return this.f1164o.j();
+        return this.f1276o.j();
     }
 
     @Override // androidx.appcompat.view.ActionMode
     public void m(View view) {
         WeakReference weakReference;
-        this.f1164o.setCustomView(view);
+        this.f1276o.setCustomView(view);
         if (view != null) {
             weakReference = new WeakReference(view);
         } else {
             weakReference = null;
         }
-        this.f1166q = weakReference;
+        this.f1278q = weakReference;
     }
 
     @Override // androidx.appcompat.view.ActionMode
     public void n(int i10) {
-        o(this.f1163i.getString(i10));
+        o(this.f1275i.getString(i10));
     }
 
     @Override // androidx.appcompat.view.ActionMode
     public void o(CharSequence charSequence) {
-        this.f1164o.setSubtitle(charSequence);
+        this.f1276o.setSubtitle(charSequence);
     }
 
     @Override // androidx.appcompat.view.ActionMode
     public void q(int i10) {
-        r(this.f1163i.getString(i10));
+        r(this.f1275i.getString(i10));
     }
 
     @Override // androidx.appcompat.view.ActionMode
     public void r(CharSequence charSequence) {
-        this.f1164o.setTitle(charSequence);
+        this.f1276o.setTitle(charSequence);
     }
 
     @Override // androidx.appcompat.view.ActionMode
     public void s(boolean z10) {
         super.s(z10);
-        this.f1164o.setTitleOptional(z10);
+        this.f1276o.setTitleOptional(z10);
     }
 }

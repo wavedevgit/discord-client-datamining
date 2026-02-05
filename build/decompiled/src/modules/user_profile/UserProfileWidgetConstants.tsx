@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.WidgetType;
     var3 = var3.APPLICATION;
     var1 = function(arg0) { // Environment: var1
-        _fun42940: for (var _fun42940_ip = 0;;) switch (_fun42940_ip) {
+        _fun42936: for (var _fun42936_ip = 0;;) switch (_fun42936_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.getApplication;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun42940_ip = 42;
-                    continue _fun42940
+                    _fun42936_ip = 42;
+                    continue _fun42936
                 }
             case 37:
                 var1 = var2.name;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var1;
                 var0 = '';
                 if (!var2) {
-                    _fun42940_ip = 56;
-                    continue _fun42940
+                    _fun42936_ip = 56;
+                    continue _fun42936
                 }
             case 53:
                 var0 = var1;

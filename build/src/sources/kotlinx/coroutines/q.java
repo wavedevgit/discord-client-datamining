@@ -2,27 +2,27 @@ package kotlinx.coroutines;
 
 import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
-import js.e1;
-import js.l1;
-import js.n0;
-import js.r0;
 import kotlin.Unit;
 import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.LongCompanionObject;
 import kotlinx.coroutines.k;
-import os.o0;
+import ms.e1;
+import ms.l1;
+import ms.n0;
+import ms.r0;
+import rs.o0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class q extends r implements k {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f35529q = AtomicReferenceFieldUpdater.newUpdater(q.class, Object.class, "_queue$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f35053q = AtomicReferenceFieldUpdater.newUpdater(q.class, Object.class, "_queue$volatile");
 
     /* renamed from: r  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f35530r = AtomicReferenceFieldUpdater.newUpdater(q.class, Object.class, "_delayed$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f35054r = AtomicReferenceFieldUpdater.newUpdater(q.class, Object.class, "_delayed$volatile");
 
     /* renamed from: s  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f35531s = AtomicIntegerFieldUpdater.newUpdater(q.class, "_isCompleted$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f35055s = AtomicIntegerFieldUpdater.newUpdater(q.class, "_isCompleted$volatile");
     private volatile /* synthetic */ Object _delayed$volatile;
     private volatile /* synthetic */ int _isCompleted$volatile;
     private volatile /* synthetic */ Object _queue$volatile;
@@ -31,21 +31,21 @@ public abstract class q extends r implements k {
     private final class a extends c {
 
         /* renamed from: i  reason: collision with root package name */
-        private final CancellableContinuation f35532i;
+        private final CancellableContinuation f35056i;
 
         public a(long j10, CancellableContinuation cancellableContinuation) {
             super(j10);
-            this.f35532i = cancellableContinuation;
+            this.f35056i = cancellableContinuation;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f35532i.q(q.this, Unit.f32464a);
+            this.f35056i.r(q.this, Unit.f31988a);
         }
 
         @Override // kotlinx.coroutines.q.c
         public String toString() {
-            return super.toString() + this.f35532i;
+            return super.toString() + this.f35056i;
         }
     }
 
@@ -53,21 +53,21 @@ public abstract class q extends r implements k {
     private static final class b extends c {
 
         /* renamed from: i  reason: collision with root package name */
-        private final Runnable f35534i;
+        private final Runnable f35058i;
 
         public b(long j10, Runnable runnable) {
             super(j10);
-            this.f35534i = runnable;
+            this.f35058i = runnable;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f35534i.run();
+            this.f35058i.run();
         }
 
         @Override // kotlinx.coroutines.q.c
         public String toString() {
-            return super.toString() + this.f35534i;
+            return super.toString() + this.f35058i;
         }
     }
 
@@ -76,33 +76,33 @@ public abstract class q extends r implements k {
         private volatile Object _heap;
 
         /* renamed from: d  reason: collision with root package name */
-        public long f35535d;
+        public long f35059d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f35536e = -1;
+        private int f35060e = -1;
 
         public c(long j10) {
-            this.f35535d = j10;
+            this.f35059d = j10;
         }
 
-        @Override // os.o0
-        public os.n0 a() {
+        @Override // rs.o0
+        public rs.n0 a() {
             Object obj = this._heap;
-            if (obj instanceof os.n0) {
-                return (os.n0) obj;
+            if (obj instanceof rs.n0) {
+                return (rs.n0) obj;
             }
             return null;
         }
 
-        @Override // js.n0
+        @Override // ms.n0
         public final void dispose() {
-            os.e0 e0Var;
+            rs.e0 e0Var;
             d dVar;
-            os.e0 e0Var2;
+            rs.e0 e0Var2;
             synchronized (this) {
                 try {
                     Object obj = this._heap;
-                    e0Var = r0.f31982a;
+                    e0Var = r0.f38944a;
                     if (obj == e0Var) {
                         return;
                     }
@@ -114,20 +114,20 @@ public abstract class q extends r implements k {
                     if (dVar != null) {
                         dVar.h(this);
                     }
-                    e0Var2 = r0.f31982a;
+                    e0Var2 = r0.f38944a;
                     this._heap = e0Var2;
-                    Unit unit = Unit.f32464a;
+                    Unit unit = Unit.f31988a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
             }
         }
 
-        @Override // os.o0
-        public void e(os.n0 n0Var) {
-            os.e0 e0Var;
+        @Override // rs.o0
+        public void e(rs.n0 n0Var) {
+            rs.e0 e0Var;
             Object obj = this._heap;
-            e0Var = r0.f31982a;
+            e0Var = r0.f38944a;
             if (obj != e0Var) {
                 this._heap = n0Var;
                 return;
@@ -138,7 +138,7 @@ public abstract class q extends r implements k {
         @Override // java.lang.Comparable
         /* renamed from: f */
         public int compareTo(c cVar) {
-            int i10 = ((this.f35535d - cVar.f35535d) > 0L ? 1 : ((this.f35535d - cVar.f35535d) == 0L ? 0 : -1));
+            int i10 = ((this.f35059d - cVar.f35059d) > 0L ? 1 : ((this.f35059d - cVar.f35059d) == 0L ? 0 : -1));
             if (i10 > 0) {
                 return 1;
             }
@@ -149,10 +149,10 @@ public abstract class q extends r implements k {
         }
 
         public final int g(long j10, d dVar, q qVar) {
-            os.e0 e0Var;
+            rs.e0 e0Var;
             synchronized (this) {
                 Object obj = this._heap;
-                e0Var = r0.f31982a;
+                e0Var = r0.f38944a;
                 if (obj == e0Var) {
                     return 2;
                 }
@@ -162,20 +162,20 @@ public abstract class q extends r implements k {
                         return 1;
                     }
                     if (cVar == null) {
-                        dVar.f35537c = j10;
+                        dVar.f35061c = j10;
                     } else {
-                        long j11 = cVar.f35535d;
+                        long j11 = cVar.f35059d;
                         if (j11 - j10 < 0) {
                             j10 = j11;
                         }
-                        if (j10 - dVar.f35537c > 0) {
-                            dVar.f35537c = j10;
+                        if (j10 - dVar.f35061c > 0) {
+                            dVar.f35061c = j10;
                         }
                     }
-                    long j12 = this.f35535d;
-                    long j13 = dVar.f35537c;
+                    long j12 = this.f35059d;
+                    long j13 = dVar.f35061c;
                     if (j12 - j13 < 0) {
-                        this.f35535d = j13;
+                        this.f35059d = j13;
                     }
                     dVar.a(this);
                     return 0;
@@ -183,95 +183,95 @@ public abstract class q extends r implements k {
             }
         }
 
-        @Override // os.o0
+        @Override // rs.o0
         public int getIndex() {
-            return this.f35536e;
+            return this.f35060e;
         }
 
         public final boolean h(long j10) {
-            if (j10 - this.f35535d >= 0) {
+            if (j10 - this.f35059d >= 0) {
                 return true;
             }
             return false;
         }
 
-        @Override // os.o0
+        @Override // rs.o0
         public void setIndex(int i10) {
-            this.f35536e = i10;
+            this.f35060e = i10;
         }
 
         public String toString() {
-            return "Delayed[nanos=" + this.f35535d + ']';
+            return "Delayed[nanos=" + this.f35059d + ']';
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class d extends os.n0 {
+    public static final class d extends rs.n0 {
 
         /* renamed from: c  reason: collision with root package name */
-        public long f35537c;
+        public long f35061c;
 
         public d(long j10) {
-            this.f35537c = j10;
+            this.f35061c = j10;
         }
     }
 
     private final void A2() {
-        os.e0 e0Var;
-        os.e0 e0Var2;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35529q;
+        rs.e0 e0Var;
+        rs.e0 e0Var2;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35053q;
         while (true) {
             Object obj = atomicReferenceFieldUpdater.get(this);
             if (obj == null) {
-                AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = f35529q;
-                e0Var = r0.f31983b;
+                AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = f35053q;
+                e0Var = r0.f38945b;
                 if (androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater2, this, null, e0Var)) {
                     return;
                 }
-            } else if (!(obj instanceof os.r)) {
-                e0Var2 = r0.f31983b;
+            } else if (!(obj instanceof rs.r)) {
+                e0Var2 = r0.f38945b;
                 if (obj != e0Var2) {
-                    os.r rVar = new os.r(8, true);
+                    rs.r rVar = new rs.r(8, true);
                     Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.lang.Runnable");
                     rVar.a((Runnable) obj);
-                    if (androidx.concurrent.futures.b.a(f35529q, this, obj, rVar)) {
+                    if (androidx.concurrent.futures.b.a(f35053q, this, obj, rVar)) {
                         return;
                     }
                 } else {
                     return;
                 }
             } else {
-                ((os.r) obj).d();
+                ((rs.r) obj).d();
                 return;
             }
         }
     }
 
     private final Runnable B2() {
-        os.e0 e0Var;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35529q;
+        rs.e0 e0Var;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35053q;
         while (true) {
             Object obj = atomicReferenceFieldUpdater.get(this);
             if (obj == null) {
                 return null;
             }
-            if (!(obj instanceof os.r)) {
-                e0Var = r0.f31983b;
+            if (!(obj instanceof rs.r)) {
+                e0Var = r0.f38945b;
                 if (obj == e0Var) {
                     return null;
                 }
-                if (androidx.concurrent.futures.b.a(f35529q, this, obj, null)) {
+                if (androidx.concurrent.futures.b.a(f35053q, this, obj, null)) {
                     Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.lang.Runnable");
                     return (Runnable) obj;
                 }
             } else {
                 Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.internal.LockFreeTaskQueueCore<java.lang.Runnable>");
-                os.r rVar = (os.r) obj;
+                rs.r rVar = (rs.r) obj;
                 Object m10 = rVar.m();
-                if (m10 != os.r.f44548h) {
+                if (m10 != rs.r.f48997h) {
                     return (Runnable) m10;
                 }
-                androidx.concurrent.futures.b.a(f35529q, this, obj, rVar.l());
+                androidx.concurrent.futures.b.a(f35053q, this, obj, rVar.l());
             }
         }
     }
@@ -279,9 +279,9 @@ public abstract class q extends r implements k {
     private final void D2() {
         o0 o0Var;
         boolean z10;
-        d dVar = (d) f35530r.get(this);
+        d dVar = (d) f35054r.get(this);
         if (dVar != null && !dVar.e()) {
-            js.b.a();
+            ms.b.a();
             long nanoTime = System.nanoTime();
             do {
                 synchronized (dVar) {
@@ -308,32 +308,32 @@ public abstract class q extends r implements k {
     }
 
     private final boolean E2(Runnable runnable) {
-        os.e0 e0Var;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35529q;
+        rs.e0 e0Var;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35053q;
         while (true) {
             Object obj = atomicReferenceFieldUpdater.get(this);
             if (isCompleted()) {
                 return false;
             }
             if (obj == null) {
-                if (androidx.concurrent.futures.b.a(f35529q, this, null, runnable)) {
+                if (androidx.concurrent.futures.b.a(f35053q, this, null, runnable)) {
                     return true;
                 }
-            } else if (!(obj instanceof os.r)) {
-                e0Var = r0.f31983b;
+            } else if (!(obj instanceof rs.r)) {
+                e0Var = r0.f38945b;
                 if (obj == e0Var) {
                     return false;
                 }
-                os.r rVar = new os.r(8, true);
+                rs.r rVar = new rs.r(8, true);
                 Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.lang.Runnable");
                 rVar.a((Runnable) obj);
                 rVar.a(runnable);
-                if (androidx.concurrent.futures.b.a(f35529q, this, obj, rVar)) {
+                if (androidx.concurrent.futures.b.a(f35053q, this, obj, rVar)) {
                     return true;
                 }
             } else {
                 Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.internal.LockFreeTaskQueueCore<java.lang.Runnable>");
-                os.r rVar2 = (os.r) obj;
+                rs.r rVar2 = (rs.r) obj;
                 int a10 = rVar2.a(runnable);
                 if (a10 == 0) {
                     return true;
@@ -343,7 +343,7 @@ public abstract class q extends r implements k {
                         return false;
                     }
                 } else {
-                    androidx.concurrent.futures.b.a(f35529q, this, obj, rVar2.l());
+                    androidx.concurrent.futures.b.a(f35053q, this, obj, rVar2.l());
                 }
             }
         }
@@ -351,10 +351,10 @@ public abstract class q extends r implements k {
 
     private final void J2() {
         c cVar;
-        js.b.a();
+        ms.b.a();
         long nanoTime = System.nanoTime();
         while (true) {
-            d dVar = (d) f35530r.get(this);
+            d dVar = (d) f35054r.get(this);
             if (dVar != null && (cVar = (c) dVar.j()) != null) {
                 x2(nanoTime, cVar);
             } else {
@@ -367,10 +367,10 @@ public abstract class q extends r implements k {
         if (isCompleted()) {
             return 1;
         }
-        d dVar = (d) f35530r.get(this);
+        d dVar = (d) f35054r.get(this);
         if (dVar == null) {
-            androidx.concurrent.futures.b.a(f35530r, this, null, new d(j10));
-            Object obj = f35530r.get(this);
+            androidx.concurrent.futures.b.a(f35054r, this, null, new d(j10));
+            Object obj = f35054r.get(this);
             Intrinsics.checkNotNull(obj);
             dVar = (d) obj;
         }
@@ -378,12 +378,12 @@ public abstract class q extends r implements k {
     }
 
     private final void O2(boolean z10) {
-        f35531s.set(this, z10 ? 1 : 0);
+        f35055s.set(this, z10 ? 1 : 0);
     }
 
     private final boolean P2(c cVar) {
         c cVar2;
-        d dVar = (d) f35530r.get(this);
+        d dVar = (d) f35054r.get(this);
         if (dVar != null) {
             cVar2 = (c) dVar.f();
         } else {
@@ -397,7 +397,7 @@ public abstract class q extends r implements k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final boolean isCompleted() {
-        if (f35531s.get(this) == 1) {
+        if (f35055s.get(this) == 1) {
             return true;
         }
         return false;
@@ -408,7 +408,7 @@ public abstract class q extends r implements k {
         if (E2(runnable)) {
             y2();
         } else {
-            j.f35522t.C2(runnable);
+            j.f35046t.C2(runnable);
         }
     }
 
@@ -425,42 +425,42 @@ public abstract class q extends r implements k {
     public void F(long j10, CancellableContinuation cancellableContinuation) {
         long c10 = r0.c(j10);
         if (c10 < 4611686018427387903L) {
-            js.b.a();
+            ms.b.a();
             long nanoTime = System.nanoTime();
             a aVar = new a(c10 + nanoTime, cancellableContinuation);
             L2(nanoTime, aVar);
-            js.l.a(cancellableContinuation, aVar);
+            ms.l.a(cancellableContinuation, aVar);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public boolean I2() {
-        os.e0 e0Var;
+        rs.e0 e0Var;
         if (!s2()) {
             return false;
         }
-        d dVar = (d) f35530r.get(this);
+        d dVar = (d) f35054r.get(this);
         if (dVar != null && !dVar.e()) {
             return false;
         }
-        Object obj = f35529q.get(this);
+        Object obj = f35053q.get(this);
         if (obj == null) {
             return true;
         }
-        if (!(obj instanceof os.r)) {
-            e0Var = r0.f31983b;
+        if (!(obj instanceof rs.r)) {
+            e0Var = r0.f38945b;
             if (obj != e0Var) {
                 return false;
             }
             return true;
         }
-        return ((os.r) obj).j();
+        return ((rs.r) obj).j();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void K2() {
-        f35529q.set(this, null);
-        f35530r.set(this, null);
+        f35053q.set(this, null);
+        f35054r.set(this, null);
     }
 
     public final void L2(long j10, c cVar) {
@@ -482,46 +482,46 @@ public abstract class q extends r implements k {
     public final n0 N2(long j10, Runnable runnable) {
         long c10 = r0.c(j10);
         if (c10 < 4611686018427387903L) {
-            js.b.a();
+            ms.b.a();
             long nanoTime = System.nanoTime();
             b bVar = new b(c10 + nanoTime, runnable);
             L2(nanoTime, bVar);
             return bVar;
         }
-        return e1.f31956d;
+        return e1.f38918d;
     }
 
-    @Override // js.p0
+    @Override // ms.p0
     protected long o2() {
         c cVar;
-        os.e0 e0Var;
+        rs.e0 e0Var;
         if (super.o2() == 0) {
             return 0L;
         }
-        Object obj = f35529q.get(this);
+        Object obj = f35053q.get(this);
         if (obj != null) {
-            if (!(obj instanceof os.r)) {
-                e0Var = r0.f31983b;
+            if (!(obj instanceof rs.r)) {
+                e0Var = r0.f38945b;
                 if (obj != e0Var) {
                     return 0L;
                 }
                 return LongCompanionObject.MAX_VALUE;
-            } else if (!((os.r) obj).j()) {
+            } else if (!((rs.r) obj).j()) {
                 return 0L;
             }
         }
-        d dVar = (d) f35530r.get(this);
+        d dVar = (d) f35054r.get(this);
         if (dVar == null || (cVar = (c) dVar.f()) == null) {
             return LongCompanionObject.MAX_VALUE;
         }
-        long j10 = cVar.f35535d;
-        js.b.a();
+        long j10 = cVar.f35059d;
+        ms.b.a();
         return kotlin.ranges.d.e(j10 - System.nanoTime(), 0L);
     }
 
-    @Override // js.p0
+    @Override // ms.p0
     public void shutdown() {
-        l1.f31964a.c();
+        l1.f38926a.c();
         O2(true);
         A2();
         do {
@@ -529,7 +529,7 @@ public abstract class q extends r implements k {
         J2();
     }
 
-    @Override // js.p0
+    @Override // ms.p0
     public long t2() {
         if (u2()) {
             return 0L;

@@ -16,7 +16,7 @@ import kotlin.collections.o0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
-import lr.v;
+import or.v;
 import org.jetbrains.annotations.NotNull;
 import p8.a;
 @ReactModule(name = "AppState")

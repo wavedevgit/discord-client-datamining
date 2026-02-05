@@ -14,66 +14,66 @@ import com.withpersona.sdk2.inquiry.network.dto.government_id.CaptureOptionNativ
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyle;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyles;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StyleElements;
-import hp.s0;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import kp.s0;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
-import po.j2;
+import so.j2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class l implements Parcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f18561d;
+    private final String f18967d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f18562e;
+    private final String f18968e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final w f18563i;
+    private final w f18969i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final StepStyle f18564o;
+    private final StepStyle f18970o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final NextStep.CancelDialog f18565p;
+    private final NextStep.CancelDialog f18971p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f18566q;
+    private final String f18972q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final tp.g f18567r;
+    private final wp.g f18973r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f18568s;
+    private boolean f18974s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends l {
         @NotNull
-        public static final Parcelable.Creator<a> CREATOR = new C0231a();
+        public static final Parcelable.Creator<a> CREATOR = new C0249a();
 
         /* renamed from: t  reason: collision with root package name */
-        private final String f18569t;
+        private final String f18975t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final String f18570u;
+        private final String f18976u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final w f18571v;
+        private final w f18977v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final String f18572w;
+        private final String f18978w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final Map f18573x;
+        private final Map f18979x;
 
         /* renamed from: com.withpersona.sdk2.inquiry.internal.l$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0231a implements Parcelable.Creator {
+        public static final class C0249a implements Parcelable.Creator {
             @Override // android.os.Parcelable.Creator
             /* renamed from: a */
             public final a createFromParcel(Parcel parcel) {
@@ -101,21 +101,21 @@ public abstract class l implements Parcelable {
             this(str, str2, (i10 & 4) != 0 ? null : wVar, str3, map);
         }
 
-        public static /* synthetic */ a k(a aVar, String str, String str2, w wVar, String str3, Map map, int i10, Object obj) {
+        public static /* synthetic */ a l(a aVar, String str, String str2, w wVar, String str3, Map map, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = aVar.f18569t;
+                str = aVar.f18975t;
             }
             if ((i10 & 2) != 0) {
-                str2 = aVar.f18570u;
+                str2 = aVar.f18976u;
             }
             if ((i10 & 4) != 0) {
-                wVar = aVar.f18571v;
+                wVar = aVar.f18977v;
             }
             if ((i10 & 8) != 0) {
-                str3 = aVar.f18572w;
+                str3 = aVar.f18978w;
             }
             if ((i10 & 16) != 0) {
-                map = aVar.f18573x;
+                map = aVar.f18979x;
             }
             Map map2 = map;
             w wVar2 = wVar;
@@ -124,7 +124,7 @@ public abstract class l implements Parcelable {
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public String b() {
-            return this.f18569t;
+            return this.f18975t;
         }
 
         @Override // android.os.Parcelable
@@ -138,20 +138,20 @@ public abstract class l implements Parcelable {
             }
             if (obj instanceof a) {
                 a aVar = (a) obj;
-                return Intrinsics.areEqual(this.f18569t, aVar.f18569t) && Intrinsics.areEqual(this.f18570u, aVar.f18570u) && Intrinsics.areEqual(this.f18571v, aVar.f18571v) && Intrinsics.areEqual(this.f18572w, aVar.f18572w) && Intrinsics.areEqual(this.f18573x, aVar.f18573x);
+                return Intrinsics.areEqual(this.f18975t, aVar.f18975t) && Intrinsics.areEqual(this.f18976u, aVar.f18976u) && Intrinsics.areEqual(this.f18977v, aVar.f18977v) && Intrinsics.areEqual(this.f18978w, aVar.f18978w) && Intrinsics.areEqual(this.f18979x, aVar.f18979x);
             }
             return false;
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public w f() {
-            return this.f18571v;
+            return this.f18977v;
         }
 
         public int hashCode() {
-            int hashCode = ((this.f18569t.hashCode() * 31) + this.f18570u.hashCode()) * 31;
-            w wVar = this.f18571v;
-            return ((((hashCode + (wVar == null ? 0 : wVar.hashCode())) * 31) + this.f18572w.hashCode()) * 31) + this.f18573x.hashCode();
+            int hashCode = ((this.f18975t.hashCode() * 31) + this.f18976u.hashCode()) * 31;
+            w wVar = this.f18977v;
+            return ((((hashCode + (wVar == null ? 0 : wVar.hashCode())) * 31) + this.f18978w.hashCode()) * 31) + this.f18979x.hashCode();
         }
 
         public final a j(String inquiryId, String sessionToken, w wVar, String inquiryStatus, Map fields) {
@@ -163,35 +163,35 @@ public abstract class l implements Parcelable {
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
-        public String l() {
-            return this.f18570u;
+        public String k() {
+            return this.f18976u;
         }
 
-        public final Map m() {
-            return this.f18573x;
+        public final Map n() {
+            return this.f18979x;
         }
 
-        public final String n() {
-            return this.f18572w;
+        public final String o() {
+            return this.f18978w;
         }
 
         public String toString() {
-            String str = this.f18569t;
-            String str2 = this.f18570u;
-            w wVar = this.f18571v;
-            String str3 = this.f18572w;
-            Map map = this.f18573x;
+            String str = this.f18975t;
+            String str2 = this.f18976u;
+            w wVar = this.f18977v;
+            String str3 = this.f18978w;
+            Map map = this.f18979x;
             return "Complete(inquiryId=" + str + ", sessionToken=" + str2 + ", transitionStatus=" + wVar + ", inquiryStatus=" + str3 + ", fields=" + map + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f18569t);
-            dest.writeString(this.f18570u);
-            dest.writeParcelable(this.f18571v, i10);
-            dest.writeString(this.f18572w);
-            Map map = this.f18573x;
+            dest.writeString(this.f18975t);
+            dest.writeString(this.f18976u);
+            dest.writeParcelable(this.f18977v, i10);
+            dest.writeString(this.f18978w);
+            Map map = this.f18979x;
             dest.writeInt(map.size());
             for (Map.Entry entry : map.entrySet()) {
                 dest.writeString((String) entry.getKey());
@@ -206,11 +206,11 @@ public abstract class l implements Parcelable {
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
             Intrinsics.checkNotNullParameter(inquiryStatus, "inquiryStatus");
             Intrinsics.checkNotNullParameter(fields, "fields");
-            this.f18569t = inquiryId;
-            this.f18570u = sessionToken;
-            this.f18571v = wVar;
-            this.f18572w = inquiryStatus;
-            this.f18573x = fields;
+            this.f18975t = inquiryId;
+            this.f18976u = sessionToken;
+            this.f18977v = wVar;
+            this.f18978w = inquiryStatus;
+            this.f18979x = fields;
         }
     }
 
@@ -221,25 +221,25 @@ public abstract class l implements Parcelable {
         private final StaticInquiryTemplate A;
 
         /* renamed from: t  reason: collision with root package name */
-        private final String f18574t;
+        private final String f18980t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final String f18575u;
+        private final String f18981u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final String f18576v;
+        private final String f18982v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final String f18577w;
+        private final String f18983w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final String f18578x;
+        private final String f18984x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final Map f18579y;
+        private final Map f18985y;
 
         /* renamed from: z  reason: collision with root package name */
-        private final String f18580z;
+        private final String f18986z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -274,13 +274,13 @@ public abstract class l implements Parcelable {
 
         public b(String str, String str2, String str3, String str4, String str5, Map map, String str6, StaticInquiryTemplate staticInquiryTemplate) {
             super(null, null, null, null, null, null, null, 127, null);
-            this.f18574t = str;
-            this.f18575u = str2;
-            this.f18576v = str3;
-            this.f18577w = str4;
-            this.f18578x = str5;
-            this.f18579y = map;
-            this.f18580z = str6;
+            this.f18980t = str;
+            this.f18981u = str2;
+            this.f18982v = str3;
+            this.f18983w = str4;
+            this.f18984x = str5;
+            this.f18985y = map;
+            this.f18986z = str6;
             this.A = staticInquiryTemplate;
         }
 
@@ -295,66 +295,66 @@ public abstract class l implements Parcelable {
             }
             if (obj instanceof b) {
                 b bVar = (b) obj;
-                return Intrinsics.areEqual(this.f18574t, bVar.f18574t) && Intrinsics.areEqual(this.f18575u, bVar.f18575u) && Intrinsics.areEqual(this.f18576v, bVar.f18576v) && Intrinsics.areEqual(this.f18577w, bVar.f18577w) && Intrinsics.areEqual(this.f18578x, bVar.f18578x) && Intrinsics.areEqual(this.f18579y, bVar.f18579y) && Intrinsics.areEqual(this.f18580z, bVar.f18580z) && Intrinsics.areEqual(this.A, bVar.A);
+                return Intrinsics.areEqual(this.f18980t, bVar.f18980t) && Intrinsics.areEqual(this.f18981u, bVar.f18981u) && Intrinsics.areEqual(this.f18982v, bVar.f18982v) && Intrinsics.areEqual(this.f18983w, bVar.f18983w) && Intrinsics.areEqual(this.f18984x, bVar.f18984x) && Intrinsics.areEqual(this.f18985y, bVar.f18985y) && Intrinsics.areEqual(this.f18986z, bVar.f18986z) && Intrinsics.areEqual(this.A, bVar.A);
             }
             return false;
         }
 
         public int hashCode() {
-            String str = this.f18574t;
+            String str = this.f18980t;
             int hashCode = (str == null ? 0 : str.hashCode()) * 31;
-            String str2 = this.f18575u;
+            String str2 = this.f18981u;
             int hashCode2 = (hashCode + (str2 == null ? 0 : str2.hashCode())) * 31;
-            String str3 = this.f18576v;
+            String str3 = this.f18982v;
             int hashCode3 = (hashCode2 + (str3 == null ? 0 : str3.hashCode())) * 31;
-            String str4 = this.f18577w;
+            String str4 = this.f18983w;
             int hashCode4 = (hashCode3 + (str4 == null ? 0 : str4.hashCode())) * 31;
-            String str5 = this.f18578x;
+            String str5 = this.f18984x;
             int hashCode5 = (hashCode4 + (str5 == null ? 0 : str5.hashCode())) * 31;
-            Map map = this.f18579y;
+            Map map = this.f18985y;
             int hashCode6 = (hashCode5 + (map == null ? 0 : map.hashCode())) * 31;
-            String str6 = this.f18580z;
+            String str6 = this.f18986z;
             int hashCode7 = (hashCode6 + (str6 == null ? 0 : str6.hashCode())) * 31;
             StaticInquiryTemplate staticInquiryTemplate = this.A;
             return hashCode7 + (staticInquiryTemplate != null ? staticInquiryTemplate.hashCode() : 0);
         }
 
         public final String j() {
-            return this.f18576v;
+            return this.f18982v;
         }
 
-        public final String k() {
-            return this.f18577w;
+        public final String l() {
+            return this.f18983w;
         }
 
-        public final Map m() {
-            return this.f18579y;
-        }
-
-        public final String n() {
-            return this.f18578x;
+        public final Map n() {
+            return this.f18985y;
         }
 
         public final String o() {
-            return this.f18574t;
+            return this.f18984x;
         }
 
         public final String p() {
-            return this.f18575u;
+            return this.f18980t;
         }
 
         public final String q() {
-            return this.f18580z;
+            return this.f18981u;
+        }
+
+        public final String r() {
+            return this.f18986z;
         }
 
         public String toString() {
-            String str = this.f18574t;
-            String str2 = this.f18575u;
-            String str3 = this.f18576v;
-            String str4 = this.f18577w;
-            String str5 = this.f18578x;
-            Map map = this.f18579y;
-            String str6 = this.f18580z;
+            String str = this.f18980t;
+            String str2 = this.f18981u;
+            String str3 = this.f18982v;
+            String str4 = this.f18983w;
+            String str5 = this.f18984x;
+            Map map = this.f18985y;
+            String str6 = this.f18986z;
             StaticInquiryTemplate staticInquiryTemplate = this.A;
             return "CreateInquiryFromTemplate(templateId=" + str + ", templateVersion=" + str2 + ", accountId=" + str3 + ", environmentId=" + str4 + ", referenceId=" + str5 + ", fields=" + map + ", themeSetId=" + str6 + ", staticInquiryTemplate=" + staticInquiryTemplate + ")";
         }
@@ -362,12 +362,12 @@ public abstract class l implements Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f18574t);
-            dest.writeString(this.f18575u);
-            dest.writeString(this.f18576v);
-            dest.writeString(this.f18577w);
-            dest.writeString(this.f18578x);
-            Map map = this.f18579y;
+            dest.writeString(this.f18980t);
+            dest.writeString(this.f18981u);
+            dest.writeString(this.f18982v);
+            dest.writeString(this.f18983w);
+            dest.writeString(this.f18984x);
+            Map map = this.f18985y;
             if (map == null) {
                 dest.writeInt(0);
             } else {
@@ -378,7 +378,7 @@ public abstract class l implements Parcelable {
                     dest.writeParcelable((Parcelable) entry.getValue(), i10);
                 }
             }
-            dest.writeString(this.f18580z);
+            dest.writeString(this.f18986z);
             dest.writeParcelable(this.A, i10);
         }
     }
@@ -389,7 +389,7 @@ public abstract class l implements Parcelable {
         public static final Parcelable.Creator<c> CREATOR = new a();
 
         /* renamed from: t  reason: collision with root package name */
-        private final String f18581t;
+        private final String f18987t;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -411,12 +411,12 @@ public abstract class l implements Parcelable {
         public c(String inquiryId) {
             super(null, null, null, null, null, null, null, 127, null);
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
-            this.f18581t = inquiryId;
+            this.f18987t = inquiryId;
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public String b() {
-            return this.f18581t;
+            return this.f18987t;
         }
 
         @Override // android.os.Parcelable
@@ -428,22 +428,22 @@ public abstract class l implements Parcelable {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof c) && Intrinsics.areEqual(this.f18581t, ((c) obj).f18581t);
+            return (obj instanceof c) && Intrinsics.areEqual(this.f18987t, ((c) obj).f18987t);
         }
 
         public int hashCode() {
-            return this.f18581t.hashCode();
+            return this.f18987t.hashCode();
         }
 
         public String toString() {
-            String str = this.f18581t;
+            String str = this.f18987t;
             return "CreateInquirySession(inquiryId=" + str + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f18581t);
+            dest.writeString(this.f18987t);
         }
     }
 
@@ -451,30 +451,30 @@ public abstract class l implements Parcelable {
     public static final class d extends l implements j2 {
         @NotNull
         public static final Parcelable.Creator<d> CREATOR = new a();
-        private final yn.l A;
+        private final bo.l A;
         private final NextStep.Document.AssetConfig B;
         private final String C;
 
         /* renamed from: t  reason: collision with root package name */
-        private final String f18582t;
+        private final String f18988t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final String f18583u;
+        private final String f18989u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final w f18584v;
+        private final w f18990v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final StepStyles.DocumentStepStyle f18585w;
+        private final StepStyles.DocumentStepStyle f18991w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final NextStep.CancelDialog f18586x;
+        private final NextStep.CancelDialog f18992x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final NextStep.Document f18587y;
+        private final NextStep.Document f18993y;
 
         /* renamed from: z  reason: collision with root package name */
-        private final String f18588z;
+        private final String f18994z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -482,7 +482,7 @@ public abstract class l implements Parcelable {
             /* renamed from: a */
             public final d createFromParcel(Parcel parcel) {
                 Intrinsics.checkNotNullParameter(parcel, "parcel");
-                return new d(parcel.readString(), parcel.readString(), (w) parcel.readParcelable(d.class.getClassLoader()), (StepStyles.DocumentStepStyle) parcel.readParcelable(d.class.getClassLoader()), (NextStep.CancelDialog) parcel.readParcelable(d.class.getClassLoader()), (NextStep.Document) parcel.readParcelable(d.class.getClassLoader()), parcel.readString(), (yn.l) parcel.readParcelable(d.class.getClassLoader()), (NextStep.Document.AssetConfig) parcel.readParcelable(d.class.getClassLoader()), parcel.readString());
+                return new d(parcel.readString(), parcel.readString(), (w) parcel.readParcelable(d.class.getClassLoader()), (StepStyles.DocumentStepStyle) parcel.readParcelable(d.class.getClassLoader()), (NextStep.CancelDialog) parcel.readParcelable(d.class.getClassLoader()), (NextStep.Document) parcel.readParcelable(d.class.getClassLoader()), parcel.readString(), (bo.l) parcel.readParcelable(d.class.getClassLoader()), (NextStep.Document.AssetConfig) parcel.readParcelable(d.class.getClassLoader()), parcel.readString());
             }
 
             @Override // android.os.Parcelable.Creator
@@ -492,31 +492,31 @@ public abstract class l implements Parcelable {
             }
         }
 
-        public /* synthetic */ d(String str, String str2, w wVar, StepStyles.DocumentStepStyle documentStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Document document, String str3, yn.l lVar, NextStep.Document.AssetConfig assetConfig, String str4, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        public /* synthetic */ d(String str, String str2, w wVar, StepStyles.DocumentStepStyle documentStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Document document, String str3, bo.l lVar, NextStep.Document.AssetConfig assetConfig, String str4, int i10, DefaultConstructorMarker defaultConstructorMarker) {
             this(str, str2, (i10 & 4) != 0 ? null : wVar, documentStepStyle, cancelDialog, document, str3, lVar, assetConfig, str4);
         }
 
-        public static /* synthetic */ d k(d dVar, String str, String str2, w wVar, StepStyles.DocumentStepStyle documentStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Document document, String str3, yn.l lVar, NextStep.Document.AssetConfig assetConfig, String str4, int i10, Object obj) {
+        public static /* synthetic */ d l(d dVar, String str, String str2, w wVar, StepStyles.DocumentStepStyle documentStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Document document, String str3, bo.l lVar, NextStep.Document.AssetConfig assetConfig, String str4, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = dVar.f18582t;
+                str = dVar.f18988t;
             }
             if ((i10 & 2) != 0) {
-                str2 = dVar.f18583u;
+                str2 = dVar.f18989u;
             }
             if ((i10 & 4) != 0) {
-                wVar = dVar.f18584v;
+                wVar = dVar.f18990v;
             }
             if ((i10 & 8) != 0) {
-                documentStepStyle = dVar.f18585w;
+                documentStepStyle = dVar.f18991w;
             }
             if ((i10 & 16) != 0) {
-                cancelDialog = dVar.f18586x;
+                cancelDialog = dVar.f18992x;
             }
             if ((i10 & 32) != 0) {
-                document = dVar.f18587y;
+                document = dVar.f18993y;
             }
             if ((i10 & 64) != 0) {
-                str3 = dVar.f18588z;
+                str3 = dVar.f18994z;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
                 lVar = dVar.A;
@@ -530,7 +530,7 @@ public abstract class l implements Parcelable {
             NextStep.Document.AssetConfig assetConfig2 = assetConfig;
             String str5 = str4;
             String str6 = str3;
-            yn.l lVar2 = lVar;
+            bo.l lVar2 = lVar;
             NextStep.CancelDialog cancelDialog2 = cancelDialog;
             NextStep.Document document2 = document;
             return dVar.j(str, str2, wVar, documentStepStyle, cancelDialog2, document2, str6, lVar2, assetConfig2, str5);
@@ -538,12 +538,12 @@ public abstract class l implements Parcelable {
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public String b() {
-            return this.f18582t;
+            return this.f18988t;
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public NextStep.CancelDialog c() {
-            return this.f18586x;
+            return this.f18992x;
         }
 
         @Override // android.os.Parcelable
@@ -562,29 +562,29 @@ public abstract class l implements Parcelable {
             }
             if (obj instanceof d) {
                 d dVar = (d) obj;
-                return Intrinsics.areEqual(this.f18582t, dVar.f18582t) && Intrinsics.areEqual(this.f18583u, dVar.f18583u) && Intrinsics.areEqual(this.f18584v, dVar.f18584v) && Intrinsics.areEqual(this.f18585w, dVar.f18585w) && Intrinsics.areEqual(this.f18586x, dVar.f18586x) && Intrinsics.areEqual(this.f18587y, dVar.f18587y) && Intrinsics.areEqual(this.f18588z, dVar.f18588z) && Intrinsics.areEqual(this.A, dVar.A) && Intrinsics.areEqual(this.B, dVar.B) && Intrinsics.areEqual(this.C, dVar.C);
+                return Intrinsics.areEqual(this.f18988t, dVar.f18988t) && Intrinsics.areEqual(this.f18989u, dVar.f18989u) && Intrinsics.areEqual(this.f18990v, dVar.f18990v) && Intrinsics.areEqual(this.f18991w, dVar.f18991w) && Intrinsics.areEqual(this.f18992x, dVar.f18992x) && Intrinsics.areEqual(this.f18993y, dVar.f18993y) && Intrinsics.areEqual(this.f18994z, dVar.f18994z) && Intrinsics.areEqual(this.A, dVar.A) && Intrinsics.areEqual(this.B, dVar.B) && Intrinsics.areEqual(this.C, dVar.C);
             }
             return false;
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public w f() {
-            return this.f18584v;
+            return this.f18990v;
         }
 
         public int hashCode() {
-            int hashCode = ((this.f18582t.hashCode() * 31) + this.f18583u.hashCode()) * 31;
-            w wVar = this.f18584v;
+            int hashCode = ((this.f18988t.hashCode() * 31) + this.f18989u.hashCode()) * 31;
+            w wVar = this.f18990v;
             int hashCode2 = (hashCode + (wVar == null ? 0 : wVar.hashCode())) * 31;
-            StepStyles.DocumentStepStyle documentStepStyle = this.f18585w;
+            StepStyles.DocumentStepStyle documentStepStyle = this.f18991w;
             int hashCode3 = (hashCode2 + (documentStepStyle == null ? 0 : documentStepStyle.hashCode())) * 31;
-            NextStep.CancelDialog cancelDialog = this.f18586x;
-            int hashCode4 = (((((((hashCode3 + (cancelDialog == null ? 0 : cancelDialog.hashCode())) * 31) + this.f18587y.hashCode()) * 31) + this.f18588z.hashCode()) * 31) + this.A.hashCode()) * 31;
+            NextStep.CancelDialog cancelDialog = this.f18992x;
+            int hashCode4 = (((((((hashCode3 + (cancelDialog == null ? 0 : cancelDialog.hashCode())) * 31) + this.f18993y.hashCode()) * 31) + this.f18994z.hashCode()) * 31) + this.A.hashCode()) * 31;
             NextStep.Document.AssetConfig assetConfig = this.B;
             return ((hashCode4 + (assetConfig != null ? assetConfig.hashCode() : 0)) * 31) + this.C.hashCode();
         }
 
-        public final d j(String inquiryId, String sessionToken, w wVar, StepStyles.DocumentStepStyle documentStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Document documentStep, String fromComponent, yn.l pages, NextStep.Document.AssetConfig assetConfig, String fromStep) {
+        public final d j(String inquiryId, String sessionToken, w wVar, StepStyles.DocumentStepStyle documentStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Document documentStep, String fromComponent, bo.l pages, NextStep.Document.AssetConfig assetConfig, String fromStep) {
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
             Intrinsics.checkNotNullParameter(documentStep, "documentStep");
@@ -595,41 +595,41 @@ public abstract class l implements Parcelable {
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
-        public String l() {
-            return this.f18583u;
+        public String k() {
+            return this.f18989u;
         }
 
-        public final NextStep.Document.AssetConfig m() {
+        public final NextStep.Document.AssetConfig n() {
             return this.B;
         }
 
-        public final NextStep.Document n() {
-            return this.f18587y;
+        public final NextStep.Document o() {
+            return this.f18993y;
         }
 
-        public final String o() {
-            return this.f18588z;
+        public final String p() {
+            return this.f18994z;
         }
 
-        public final yn.l p() {
+        public final bo.l q() {
             return this.A;
         }
 
-        @Override // com.withpersona.sdk2.inquiry.internal.l, po.j2
-        /* renamed from: q */
+        @Override // com.withpersona.sdk2.inquiry.internal.l, so.j2
+        /* renamed from: r */
         public StepStyles.DocumentStepStyle getStyles() {
-            return this.f18585w;
+            return this.f18991w;
         }
 
         public String toString() {
-            String str = this.f18582t;
-            String str2 = this.f18583u;
-            w wVar = this.f18584v;
-            StepStyles.DocumentStepStyle documentStepStyle = this.f18585w;
-            NextStep.CancelDialog cancelDialog = this.f18586x;
-            NextStep.Document document = this.f18587y;
-            String str3 = this.f18588z;
-            yn.l lVar = this.A;
+            String str = this.f18988t;
+            String str2 = this.f18989u;
+            w wVar = this.f18990v;
+            StepStyles.DocumentStepStyle documentStepStyle = this.f18991w;
+            NextStep.CancelDialog cancelDialog = this.f18992x;
+            NextStep.Document document = this.f18993y;
+            String str3 = this.f18994z;
+            bo.l lVar = this.A;
             NextStep.Document.AssetConfig assetConfig = this.B;
             String str4 = this.C;
             return "DocumentStepRunning(inquiryId=" + str + ", sessionToken=" + str2 + ", transitionStatus=" + wVar + ", styles=" + documentStepStyle + ", cancelDialog=" + cancelDialog + ", documentStep=" + document + ", fromComponent=" + str3 + ", pages=" + lVar + ", assetConfig=" + assetConfig + ", fromStep=" + str4 + ")";
@@ -638,20 +638,20 @@ public abstract class l implements Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f18582t);
-            dest.writeString(this.f18583u);
-            dest.writeParcelable(this.f18584v, i10);
-            dest.writeParcelable(this.f18585w, i10);
-            dest.writeParcelable(this.f18586x, i10);
-            dest.writeParcelable(this.f18587y, i10);
-            dest.writeString(this.f18588z);
+            dest.writeString(this.f18988t);
+            dest.writeString(this.f18989u);
+            dest.writeParcelable(this.f18990v, i10);
+            dest.writeParcelable(this.f18991w, i10);
+            dest.writeParcelable(this.f18992x, i10);
+            dest.writeParcelable(this.f18993y, i10);
+            dest.writeString(this.f18994z);
             dest.writeParcelable(this.A, i10);
             dest.writeParcelable(this.B, i10);
             dest.writeString(this.C);
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public d(String inquiryId, String sessionToken, w wVar, StepStyles.DocumentStepStyle documentStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Document documentStep, String fromComponent, yn.l pages, NextStep.Document.AssetConfig assetConfig, String fromStep) {
+        public d(String inquiryId, String sessionToken, w wVar, StepStyles.DocumentStepStyle documentStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Document documentStep, String fromComponent, bo.l pages, NextStep.Document.AssetConfig assetConfig, String fromStep) {
             super(null, null, null, null, null, null, null, 127, null);
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
@@ -659,13 +659,13 @@ public abstract class l implements Parcelable {
             Intrinsics.checkNotNullParameter(fromComponent, "fromComponent");
             Intrinsics.checkNotNullParameter(pages, "pages");
             Intrinsics.checkNotNullParameter(fromStep, "fromStep");
-            this.f18582t = inquiryId;
-            this.f18583u = sessionToken;
-            this.f18584v = wVar;
-            this.f18585w = documentStepStyle;
-            this.f18586x = cancelDialog;
-            this.f18587y = documentStep;
-            this.f18588z = fromComponent;
+            this.f18988t = inquiryId;
+            this.f18989u = sessionToken;
+            this.f18990v = wVar;
+            this.f18991w = documentStepStyle;
+            this.f18992x = cancelDialog;
+            this.f18993y = documentStep;
+            this.f18994z = fromComponent;
             this.A = pages;
             this.B = assetConfig;
             this.C = fromStep;
@@ -678,7 +678,7 @@ public abstract class l implements Parcelable {
         public static final Parcelable.Creator<e> CREATOR = new a();
 
         /* renamed from: t  reason: collision with root package name */
-        private final String f18589t;
+        private final String f18995t;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -700,7 +700,7 @@ public abstract class l implements Parcelable {
         public e(String oneTimeLinkCode) {
             super(null, null, null, null, null, null, null, 127, null);
             Intrinsics.checkNotNullParameter(oneTimeLinkCode, "oneTimeLinkCode");
-            this.f18589t = oneTimeLinkCode;
+            this.f18995t = oneTimeLinkCode;
         }
 
         @Override // android.os.Parcelable
@@ -712,26 +712,26 @@ public abstract class l implements Parcelable {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof e) && Intrinsics.areEqual(this.f18589t, ((e) obj).f18589t);
+            return (obj instanceof e) && Intrinsics.areEqual(this.f18995t, ((e) obj).f18995t);
         }
 
         public int hashCode() {
-            return this.f18589t.hashCode();
+            return this.f18995t.hashCode();
         }
 
         public final String j() {
-            return this.f18589t;
+            return this.f18995t;
         }
 
         public String toString() {
-            String str = this.f18589t;
+            String str = this.f18995t;
             return "ExchangeOneTimeCode(oneTimeLinkCode=" + str + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f18589t);
+            dest.writeString(this.f18995t);
         }
     }
 
@@ -755,32 +755,32 @@ public abstract class l implements Parcelable {
         private final List N;
         private final String O;
         private final NextStep.GovernmentId.AssetConfig P;
-        private final fo.a Q;
+        private final io.a Q;
         private final StyleElements.Axis R;
         private final PendingPageTextPosition S;
         private final boolean T;
-        private final jo.a U;
+        private final mo.a U;
 
         /* renamed from: t  reason: collision with root package name */
-        private final String f18590t;
+        private final String f18996t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final String f18591u;
+        private final String f18997u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final w f18592v;
+        private final w f18998v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final StepStyles.GovernmentIdStepStyle f18593w;
+        private final StepStyles.GovernmentIdStepStyle f18999w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final NextStep.CancelDialog f18594x;
+        private final NextStep.CancelDialog f19000x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final String f18595y;
+        private final String f19001y;
 
         /* renamed from: z  reason: collision with root package name */
-        private final List f18596z;
+        private final List f19002z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -858,7 +858,7 @@ public abstract class l implements Parcelable {
                     i15++;
                     readInt6 = readInt6;
                 }
-                return new f(readString, readString2, wVar, governmentIdStepStyle, cancelDialog, readString3, arrayList2, readString4, readString5, z11, z10, localizations, arrayList, arrayList3, readInt4, readLong, readString6, readString7, z12, arrayList4, arrayList5, parcel.readString(), (NextStep.GovernmentId.AssetConfig) parcel.readParcelable(cls2.getClassLoader()), (fo.a) parcel.readParcelable(cls2.getClassLoader()), StyleElements.Axis.valueOf(parcel.readString()), PendingPageTextPosition.valueOf(parcel.readString()), parcel.readInt() != 0 ? 1 : i10, (jo.a) parcel.readParcelable(cls2.getClassLoader()));
+                return new f(readString, readString2, wVar, governmentIdStepStyle, cancelDialog, readString3, arrayList2, readString4, readString5, z11, z10, localizations, arrayList, arrayList3, readInt4, readLong, readString6, readString7, z12, arrayList4, arrayList5, parcel.readString(), (NextStep.GovernmentId.AssetConfig) parcel.readParcelable(cls2.getClassLoader()), (io.a) parcel.readParcelable(cls2.getClassLoader()), StyleElements.Axis.valueOf(parcel.readString()), PendingPageTextPosition.valueOf(parcel.readString()), parcel.readInt() != 0 ? 1 : i10, (mo.a) parcel.readParcelable(cls2.getClassLoader()));
             }
 
             @Override // android.os.Parcelable.Creator
@@ -868,20 +868,20 @@ public abstract class l implements Parcelable {
             }
         }
 
-        public /* synthetic */ f(String str, String str2, w wVar, StepStyles.GovernmentIdStepStyle governmentIdStepStyle, NextStep.CancelDialog cancelDialog, String str3, List list, String str4, String str5, boolean z10, boolean z11, NextStep.GovernmentId.Localizations localizations, List list2, List list3, int i10, long j10, String str6, String str7, boolean z12, List list4, List list5, String str8, NextStep.GovernmentId.AssetConfig assetConfig, fo.a aVar, StyleElements.Axis axis, PendingPageTextPosition pendingPageTextPosition, boolean z13, jo.a aVar2, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+        public /* synthetic */ f(String str, String str2, w wVar, StepStyles.GovernmentIdStepStyle governmentIdStepStyle, NextStep.CancelDialog cancelDialog, String str3, List list, String str4, String str5, boolean z10, boolean z11, NextStep.GovernmentId.Localizations localizations, List list2, List list3, int i10, long j10, String str6, String str7, boolean z12, List list4, List list5, String str8, NextStep.GovernmentId.AssetConfig assetConfig, io.a aVar, StyleElements.Axis axis, PendingPageTextPosition pendingPageTextPosition, boolean z13, mo.a aVar2, int i11, DefaultConstructorMarker defaultConstructorMarker) {
             this(str, str2, (i11 & 4) != 0 ? null : wVar, governmentIdStepStyle, cancelDialog, str3, list, str4, str5, z10, z11, localizations, list2, list3, i10, j10, str6, str7, z12, list4, list5, str8, assetConfig, aVar, axis, pendingPageTextPosition, z13, aVar2);
         }
 
-        public static /* synthetic */ f k(f fVar, String str, String str2, w wVar, StepStyles.GovernmentIdStepStyle governmentIdStepStyle, NextStep.CancelDialog cancelDialog, String str3, List list, String str4, String str5, boolean z10, boolean z11, NextStep.GovernmentId.Localizations localizations, List list2, List list3, int i10, long j10, String str6, String str7, boolean z12, List list4, List list5, String str8, NextStep.GovernmentId.AssetConfig assetConfig, fo.a aVar, StyleElements.Axis axis, PendingPageTextPosition pendingPageTextPosition, boolean z13, jo.a aVar2, int i11, Object obj) {
-            jo.a aVar3;
+        public static /* synthetic */ f l(f fVar, String str, String str2, w wVar, StepStyles.GovernmentIdStepStyle governmentIdStepStyle, NextStep.CancelDialog cancelDialog, String str3, List list, String str4, String str5, boolean z10, boolean z11, NextStep.GovernmentId.Localizations localizations, List list2, List list3, int i10, long j10, String str6, String str7, boolean z12, List list4, List list5, String str8, NextStep.GovernmentId.AssetConfig assetConfig, io.a aVar, StyleElements.Axis axis, PendingPageTextPosition pendingPageTextPosition, boolean z13, mo.a aVar2, int i11, Object obj) {
+            mo.a aVar3;
             boolean z14;
-            String str9 = (i11 & 1) != 0 ? fVar.f18590t : str;
-            String str10 = (i11 & 2) != 0 ? fVar.f18591u : str2;
-            w wVar2 = (i11 & 4) != 0 ? fVar.f18592v : wVar;
-            StepStyles.GovernmentIdStepStyle governmentIdStepStyle2 = (i11 & 8) != 0 ? fVar.f18593w : governmentIdStepStyle;
-            NextStep.CancelDialog cancelDialog2 = (i11 & 16) != 0 ? fVar.f18594x : cancelDialog;
-            String str11 = (i11 & 32) != 0 ? fVar.f18595y : str3;
-            List list6 = (i11 & 64) != 0 ? fVar.f18596z : list;
+            String str9 = (i11 & 1) != 0 ? fVar.f18996t : str;
+            String str10 = (i11 & 2) != 0 ? fVar.f18997u : str2;
+            w wVar2 = (i11 & 4) != 0 ? fVar.f18998v : wVar;
+            StepStyles.GovernmentIdStepStyle governmentIdStepStyle2 = (i11 & 8) != 0 ? fVar.f18999w : governmentIdStepStyle;
+            NextStep.CancelDialog cancelDialog2 = (i11 & 16) != 0 ? fVar.f19000x : cancelDialog;
+            String str11 = (i11 & 32) != 0 ? fVar.f19001y : str3;
+            List list6 = (i11 & 64) != 0 ? fVar.f19002z : list;
             String str12 = (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? fVar.A : str4;
             String str13 = (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? fVar.B : str5;
             boolean z15 = (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? fVar.C : z10;
@@ -900,7 +900,7 @@ public abstract class l implements Parcelable {
             List list10 = (i11 & 1048576) != 0 ? fVar.N : list5;
             String str18 = (i11 & 2097152) != 0 ? fVar.O : str8;
             NextStep.GovernmentId.AssetConfig assetConfig2 = (i11 & 4194304) != 0 ? fVar.P : assetConfig;
-            fo.a aVar4 = (i11 & 8388608) != 0 ? fVar.Q : aVar;
+            io.a aVar4 = (i11 & 8388608) != 0 ? fVar.Q : aVar;
             StyleElements.Axis axis2 = (i11 & PointerEventHelper.X_FLAG_SUPPORTS_HOVER) != 0 ? fVar.R : axis;
             PendingPageTextPosition pendingPageTextPosition2 = (i11 & 33554432) != 0 ? fVar.S : pendingPageTextPosition;
             boolean z18 = (i11 & 67108864) != 0 ? fVar.T : z13;
@@ -914,7 +914,11 @@ public abstract class l implements Parcelable {
             return fVar.j(str14, str10, wVar2, governmentIdStepStyle2, cancelDialog2, str11, list6, str12, str13, z15, z16, localizations2, list7, list8, i12, j11, str17, str16, z17, list9, list10, str18, assetConfig2, aVar4, axis2, pendingPageTextPosition2, z14, aVar3);
         }
 
-        public final int A() {
+        public final String A() {
+            return this.A;
+        }
+
+        public final int B() {
             return this.H;
         }
 
@@ -942,10 +946,10 @@ public abstract class l implements Parcelable {
             return this.L;
         }
 
-        @Override // com.withpersona.sdk2.inquiry.internal.l, po.j2
+        @Override // com.withpersona.sdk2.inquiry.internal.l, so.j2
         /* renamed from: K */
         public StepStyles.GovernmentIdStepStyle getStyles() {
-            return this.f18593w;
+            return this.f18999w;
         }
 
         public final List M() {
@@ -958,12 +962,12 @@ public abstract class l implements Parcelable {
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public String b() {
-            return this.f18590t;
+            return this.f18996t;
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public NextStep.CancelDialog c() {
-            return this.f18594x;
+            return this.f19000x;
         }
 
         @Override // android.os.Parcelable
@@ -982,37 +986,37 @@ public abstract class l implements Parcelable {
             }
             if (obj instanceof f) {
                 f fVar = (f) obj;
-                return Intrinsics.areEqual(this.f18590t, fVar.f18590t) && Intrinsics.areEqual(this.f18591u, fVar.f18591u) && Intrinsics.areEqual(this.f18592v, fVar.f18592v) && Intrinsics.areEqual(this.f18593w, fVar.f18593w) && Intrinsics.areEqual(this.f18594x, fVar.f18594x) && Intrinsics.areEqual(this.f18595y, fVar.f18595y) && Intrinsics.areEqual(this.f18596z, fVar.f18596z) && Intrinsics.areEqual(this.A, fVar.A) && Intrinsics.areEqual(this.B, fVar.B) && this.C == fVar.C && this.D == fVar.D && Intrinsics.areEqual(this.E, fVar.E) && Intrinsics.areEqual(this.F, fVar.F) && Intrinsics.areEqual(this.G, fVar.G) && this.H == fVar.H && this.I == fVar.I && Intrinsics.areEqual(this.J, fVar.J) && Intrinsics.areEqual(this.K, fVar.K) && this.L == fVar.L && Intrinsics.areEqual(this.M, fVar.M) && Intrinsics.areEqual(this.N, fVar.N) && Intrinsics.areEqual(this.O, fVar.O) && Intrinsics.areEqual(this.P, fVar.P) && Intrinsics.areEqual(this.Q, fVar.Q) && this.R == fVar.R && this.S == fVar.S && this.T == fVar.T && Intrinsics.areEqual(this.U, fVar.U);
+                return Intrinsics.areEqual(this.f18996t, fVar.f18996t) && Intrinsics.areEqual(this.f18997u, fVar.f18997u) && Intrinsics.areEqual(this.f18998v, fVar.f18998v) && Intrinsics.areEqual(this.f18999w, fVar.f18999w) && Intrinsics.areEqual(this.f19000x, fVar.f19000x) && Intrinsics.areEqual(this.f19001y, fVar.f19001y) && Intrinsics.areEqual(this.f19002z, fVar.f19002z) && Intrinsics.areEqual(this.A, fVar.A) && Intrinsics.areEqual(this.B, fVar.B) && this.C == fVar.C && this.D == fVar.D && Intrinsics.areEqual(this.E, fVar.E) && Intrinsics.areEqual(this.F, fVar.F) && Intrinsics.areEqual(this.G, fVar.G) && this.H == fVar.H && this.I == fVar.I && Intrinsics.areEqual(this.J, fVar.J) && Intrinsics.areEqual(this.K, fVar.K) && this.L == fVar.L && Intrinsics.areEqual(this.M, fVar.M) && Intrinsics.areEqual(this.N, fVar.N) && Intrinsics.areEqual(this.O, fVar.O) && Intrinsics.areEqual(this.P, fVar.P) && Intrinsics.areEqual(this.Q, fVar.Q) && this.R == fVar.R && this.S == fVar.S && this.T == fVar.T && Intrinsics.areEqual(this.U, fVar.U);
             }
             return false;
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public w f() {
-            return this.f18592v;
+            return this.f18998v;
         }
 
         public int hashCode() {
-            int hashCode = ((this.f18590t.hashCode() * 31) + this.f18591u.hashCode()) * 31;
-            w wVar = this.f18592v;
+            int hashCode = ((this.f18996t.hashCode() * 31) + this.f18997u.hashCode()) * 31;
+            w wVar = this.f18998v;
             int hashCode2 = (hashCode + (wVar == null ? 0 : wVar.hashCode())) * 31;
-            StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.f18593w;
+            StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.f18999w;
             int hashCode3 = (hashCode2 + (governmentIdStepStyle == null ? 0 : governmentIdStepStyle.hashCode())) * 31;
-            NextStep.CancelDialog cancelDialog = this.f18594x;
+            NextStep.CancelDialog cancelDialog = this.f19000x;
             int hashCode4 = (hashCode3 + (cancelDialog == null ? 0 : cancelDialog.hashCode())) * 31;
-            String str = this.f18595y;
-            int hashCode5 = (((((((((((((hashCode4 + (str == null ? 0 : str.hashCode())) * 31) + this.f18596z.hashCode()) * 31) + this.A.hashCode()) * 31) + this.B.hashCode()) * 31) + Boolean.hashCode(this.C)) * 31) + Boolean.hashCode(this.D)) * 31) + this.E.hashCode()) * 31;
+            String str = this.f19001y;
+            int hashCode5 = (((((((((((((hashCode4 + (str == null ? 0 : str.hashCode())) * 31) + this.f19002z.hashCode()) * 31) + this.A.hashCode()) * 31) + this.B.hashCode()) * 31) + Boolean.hashCode(this.C)) * 31) + Boolean.hashCode(this.D)) * 31) + this.E.hashCode()) * 31;
             List list = this.F;
             int hashCode6 = (((((((((((((((((hashCode5 + (list == null ? 0 : list.hashCode())) * 31) + this.G.hashCode()) * 31) + Integer.hashCode(this.H)) * 31) + Long.hashCode(this.I)) * 31) + this.J.hashCode()) * 31) + this.K.hashCode()) * 31) + Boolean.hashCode(this.L)) * 31) + this.M.hashCode()) * 31) + this.N.hashCode()) * 31;
             String str2 = this.O;
             int hashCode7 = (hashCode6 + (str2 == null ? 0 : str2.hashCode())) * 31;
             NextStep.GovernmentId.AssetConfig assetConfig = this.P;
             int hashCode8 = (((((((((hashCode7 + (assetConfig == null ? 0 : assetConfig.hashCode())) * 31) + this.Q.hashCode()) * 31) + this.R.hashCode()) * 31) + this.S.hashCode()) * 31) + Boolean.hashCode(this.T)) * 31;
-            jo.a aVar = this.U;
+            mo.a aVar = this.U;
             return hashCode8 + (aVar != null ? aVar.hashCode() : 0);
         }
 
-        public final f j(String inquiryId, String sessionToken, w wVar, StepStyles.GovernmentIdStepStyle governmentIdStepStyle, NextStep.CancelDialog cancelDialog, String str, List enabledIdClasses, String fromComponent, String fromStep, boolean z10, boolean z11, NextStep.GovernmentId.Localizations localizations, List list, List enabledCaptureOptionsNativeMobile, int i10, long j10, String fieldKeyDocument, String fieldKeyIdClass, boolean z12, List enabledCaptureFileTypes, List videoCaptureMethods, String str2, NextStep.GovernmentId.AssetConfig assetConfig, fo.a autoClassificationConfig, StyleElements.Axis reviewCaptureButtonsAxis, PendingPageTextPosition pendingPageTextVerticalPosition, boolean z13, jo.a aVar) {
+        public final f j(String inquiryId, String sessionToken, w wVar, StepStyles.GovernmentIdStepStyle governmentIdStepStyle, NextStep.CancelDialog cancelDialog, String str, List enabledIdClasses, String fromComponent, String fromStep, boolean z10, boolean z11, NextStep.GovernmentId.Localizations localizations, List list, List enabledCaptureOptionsNativeMobile, int i10, long j10, String fieldKeyDocument, String fieldKeyIdClass, boolean z12, List enabledCaptureFileTypes, List videoCaptureMethods, String str2, NextStep.GovernmentId.AssetConfig assetConfig, io.a autoClassificationConfig, StyleElements.Axis reviewCaptureButtonsAxis, PendingPageTextPosition pendingPageTextVerticalPosition, boolean z13, mo.a aVar) {
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
             Intrinsics.checkNotNullParameter(enabledIdClasses, "enabledIdClasses");
@@ -1031,50 +1035,46 @@ public abstract class l implements Parcelable {
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
-        public String l() {
-            return this.f18591u;
+        public String k() {
+            return this.f18997u;
         }
 
-        public final NextStep.GovernmentId.AssetConfig m() {
+        public final NextStep.GovernmentId.AssetConfig n() {
             return this.P;
         }
 
-        public final boolean n() {
+        public final boolean o() {
             return this.T;
         }
 
-        public final fo.a o() {
+        public final io.a p() {
             return this.Q;
         }
 
-        public final boolean p() {
+        public final boolean q() {
             return this.C;
         }
 
-        public final boolean q() {
+        public final boolean r() {
             return this.D;
         }
 
-        public final String r() {
-            return this.f18595y;
+        public final String s() {
+            return this.f19001y;
         }
 
-        public final jo.a s() {
+        public final mo.a t() {
             return this.U;
         }
 
-        public final List t() {
-            return this.M;
-        }
-
         public String toString() {
-            String str = this.f18590t;
-            String str2 = this.f18591u;
-            w wVar = this.f18592v;
-            StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.f18593w;
-            NextStep.CancelDialog cancelDialog = this.f18594x;
-            String str3 = this.f18595y;
-            List list = this.f18596z;
+            String str = this.f18996t;
+            String str2 = this.f18997u;
+            w wVar = this.f18998v;
+            StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.f18999w;
+            NextStep.CancelDialog cancelDialog = this.f19000x;
+            String str3 = this.f19001y;
+            List list = this.f19002z;
             String str4 = this.A;
             String str5 = this.B;
             boolean z10 = this.C;
@@ -1091,36 +1091,36 @@ public abstract class l implements Parcelable {
             List list5 = this.N;
             String str8 = this.O;
             NextStep.GovernmentId.AssetConfig assetConfig = this.P;
-            fo.a aVar = this.Q;
+            io.a aVar = this.Q;
             StyleElements.Axis axis = this.R;
             PendingPageTextPosition pendingPageTextPosition = this.S;
             boolean z13 = this.T;
-            jo.a aVar2 = this.U;
+            mo.a aVar2 = this.U;
             return "GovernmentIdStepRunning(inquiryId=" + str + ", sessionToken=" + str2 + ", transitionStatus=" + wVar + ", styles=" + governmentIdStepStyle + ", cancelDialog=" + cancelDialog + ", countryCode=" + str3 + ", enabledIdClasses=" + list + ", fromComponent=" + str4 + ", fromStep=" + str5 + ", backStepEnabled=" + z10 + ", cancelButtonEnabled=" + z11 + ", localizations=" + localizations + ", localizationOverrides=" + list2 + ", enabledCaptureOptionsNativeMobile=" + list3 + ", imageCaptureCount=" + i10 + ", manualCaptureButtonDelayMs=" + j10 + ", fieldKeyDocument=" + str6 + ", fieldKeyIdClass=" + str7 + ", shouldSkipReviewScreen=" + z12 + ", enabledCaptureFileTypes=" + list4 + ", videoCaptureMethods=" + list5 + ", webRtcJwt=" + str8 + ", assetConfig=" + assetConfig + ", autoClassificationConfig=" + aVar + ", reviewCaptureButtonsAxis=" + axis + ", pendingPageTextVerticalPosition=" + pendingPageTextPosition + ", audioEnabled=" + z13 + ", digitalIdConfig=" + aVar2 + ")";
         }
 
         public final List u() {
-            return this.G;
+            return this.M;
         }
 
         public final List v() {
-            return this.f18596z;
+            return this.G;
         }
 
-        public final String w() {
-            return this.J;
+        public final List w() {
+            return this.f19002z;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f18590t);
-            dest.writeString(this.f18591u);
-            dest.writeParcelable(this.f18592v, i10);
-            dest.writeParcelable(this.f18593w, i10);
-            dest.writeParcelable(this.f18594x, i10);
-            dest.writeString(this.f18595y);
-            List<Parcelable> list = this.f18596z;
+            dest.writeString(this.f18996t);
+            dest.writeString(this.f18997u);
+            dest.writeParcelable(this.f18998v, i10);
+            dest.writeParcelable(this.f18999w, i10);
+            dest.writeParcelable(this.f19000x, i10);
+            dest.writeString(this.f19001y);
+            List<Parcelable> list = this.f19002z;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
@@ -1169,16 +1169,16 @@ public abstract class l implements Parcelable {
             dest.writeParcelable(this.U, i10);
         }
 
-        public final String y() {
-            return this.K;
+        public final String x() {
+            return this.J;
         }
 
         public final String z() {
-            return this.A;
+            return this.K;
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public f(String inquiryId, String sessionToken, w wVar, StepStyles.GovernmentIdStepStyle governmentIdStepStyle, NextStep.CancelDialog cancelDialog, String str, List enabledIdClasses, String fromComponent, String fromStep, boolean z10, boolean z11, NextStep.GovernmentId.Localizations localizations, List list, List enabledCaptureOptionsNativeMobile, int i10, long j10, String fieldKeyDocument, String fieldKeyIdClass, boolean z12, List enabledCaptureFileTypes, List videoCaptureMethods, String str2, NextStep.GovernmentId.AssetConfig assetConfig, fo.a autoClassificationConfig, StyleElements.Axis reviewCaptureButtonsAxis, PendingPageTextPosition pendingPageTextVerticalPosition, boolean z13, jo.a aVar) {
+        public f(String inquiryId, String sessionToken, w wVar, StepStyles.GovernmentIdStepStyle governmentIdStepStyle, NextStep.CancelDialog cancelDialog, String str, List enabledIdClasses, String fromComponent, String fromStep, boolean z10, boolean z11, NextStep.GovernmentId.Localizations localizations, List list, List enabledCaptureOptionsNativeMobile, int i10, long j10, String fieldKeyDocument, String fieldKeyIdClass, boolean z12, List enabledCaptureFileTypes, List videoCaptureMethods, String str2, NextStep.GovernmentId.AssetConfig assetConfig, io.a autoClassificationConfig, StyleElements.Axis reviewCaptureButtonsAxis, PendingPageTextPosition pendingPageTextVerticalPosition, boolean z13, mo.a aVar) {
             super(null, null, null, null, null, null, null, 127, null);
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
@@ -1194,13 +1194,13 @@ public abstract class l implements Parcelable {
             Intrinsics.checkNotNullParameter(autoClassificationConfig, "autoClassificationConfig");
             Intrinsics.checkNotNullParameter(reviewCaptureButtonsAxis, "reviewCaptureButtonsAxis");
             Intrinsics.checkNotNullParameter(pendingPageTextVerticalPosition, "pendingPageTextVerticalPosition");
-            this.f18590t = inquiryId;
-            this.f18591u = sessionToken;
-            this.f18592v = wVar;
-            this.f18593w = governmentIdStepStyle;
-            this.f18594x = cancelDialog;
-            this.f18595y = str;
-            this.f18596z = enabledIdClasses;
+            this.f18996t = inquiryId;
+            this.f18997u = sessionToken;
+            this.f18998v = wVar;
+            this.f18999w = governmentIdStepStyle;
+            this.f19000x = cancelDialog;
+            this.f19001y = str;
+            this.f19002z = enabledIdClasses;
             this.A = fromComponent;
             this.B = fromStep;
             this.C = z10;
@@ -1231,10 +1231,10 @@ public abstract class l implements Parcelable {
         public static final Parcelable.Creator<g> CREATOR = new a();
 
         /* renamed from: t  reason: collision with root package name */
-        private final String f18597t;
+        private final String f19003t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final String f18598u;
+        private final String f19004u;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -1257,8 +1257,8 @@ public abstract class l implements Parcelable {
             super(null, null, null, null, null, null, null, 127, null);
             Intrinsics.checkNotNullParameter(fallbackInquiryId, "fallbackInquiryId");
             Intrinsics.checkNotNullParameter(fallbackSessionToken, "fallbackSessionToken");
-            this.f18597t = fallbackInquiryId;
-            this.f18598u = fallbackSessionToken;
+            this.f19003t = fallbackInquiryId;
+            this.f19004u = fallbackSessionToken;
         }
 
         @Override // android.os.Parcelable
@@ -1272,34 +1272,34 @@ public abstract class l implements Parcelable {
             }
             if (obj instanceof g) {
                 g gVar = (g) obj;
-                return Intrinsics.areEqual(this.f18597t, gVar.f18597t) && Intrinsics.areEqual(this.f18598u, gVar.f18598u);
+                return Intrinsics.areEqual(this.f19003t, gVar.f19003t) && Intrinsics.areEqual(this.f19004u, gVar.f19004u);
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f18597t.hashCode() * 31) + this.f18598u.hashCode();
+            return (this.f19003t.hashCode() * 31) + this.f19004u.hashCode();
         }
 
         public final String j() {
-            return this.f18597t;
+            return this.f19003t;
         }
 
-        public final String k() {
-            return this.f18598u;
+        public final String l() {
+            return this.f19004u;
         }
 
         public String toString() {
-            String str = this.f18597t;
-            String str2 = this.f18598u;
+            String str = this.f19003t;
+            String str2 = this.f19004u;
             return "ResumeFallbackInquiry(fallbackInquiryId=" + str + ", fallbackSessionToken=" + str2 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f18597t);
-            dest.writeString(this.f18598u);
+            dest.writeString(this.f19003t);
+            dest.writeString(this.f19004u);
         }
     }
 
@@ -1322,28 +1322,28 @@ public abstract class l implements Parcelable {
         private final PendingPageTextPosition M;
         private final boolean N;
         private final s0 O;
-        private final hp.b0 P;
+        private final kp.b0 P;
 
         /* renamed from: t  reason: collision with root package name */
-        private final String f18599t;
+        private final String f19005t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final String f18600u;
+        private final String f19006u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final w f18601v;
+        private final w f19007v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final StepStyles.SelfieStepStyle f18602w;
+        private final StepStyles.SelfieStepStyle f19008w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final NextStep.CancelDialog f18603x;
+        private final NextStep.CancelDialog f19009x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final NextStep.Selfie.CaptureMethod f18604y;
+        private final NextStep.Selfie.CaptureMethod f19010y;
 
         /* renamed from: z  reason: collision with root package name */
-        private final String f18605z;
+        private final String f19011z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -1440,7 +1440,7 @@ public abstract class l implements Parcelable {
                 if (parcel.readInt() == 0) {
                     z14 = false;
                 }
-                return new h(str2, readString2, wVar, selfieStepStyle, cancelDialog, valueOf, readString3, readString4, z15, z16, str, z13, z12, localizations, arrayList2, arrayList3, assetConfig, readString6, arrayList, valueOf2, z14, (s0) parcel.readParcelable(cls.getClassLoader()), hp.b0.valueOf(parcel.readString()));
+                return new h(str2, readString2, wVar, selfieStepStyle, cancelDialog, valueOf, readString3, readString4, z15, z16, str, z13, z12, localizations, arrayList2, arrayList3, assetConfig, readString6, arrayList, valueOf2, z14, (s0) parcel.readParcelable(cls.getClassLoader()), kp.b0.valueOf(parcel.readString()));
             }
 
             @Override // android.os.Parcelable.Creator
@@ -1450,20 +1450,20 @@ public abstract class l implements Parcelable {
             }
         }
 
-        public /* synthetic */ h(String str, String str2, w wVar, StepStyles.SelfieStepStyle selfieStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Selfie.CaptureMethod captureMethod, String str3, String str4, boolean z10, boolean z11, String str5, boolean z12, boolean z13, NextStep.Selfie.Localizations localizations, List list, List list2, NextStep.Selfie.AssetConfig assetConfig, String str6, List list3, PendingPageTextPosition pendingPageTextPosition, boolean z14, s0 s0Var, hp.b0 b0Var, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        public /* synthetic */ h(String str, String str2, w wVar, StepStyles.SelfieStepStyle selfieStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Selfie.CaptureMethod captureMethod, String str3, String str4, boolean z10, boolean z11, String str5, boolean z12, boolean z13, NextStep.Selfie.Localizations localizations, List list, List list2, NextStep.Selfie.AssetConfig assetConfig, String str6, List list3, PendingPageTextPosition pendingPageTextPosition, boolean z14, s0 s0Var, kp.b0 b0Var, int i10, DefaultConstructorMarker defaultConstructorMarker) {
             this(str, str2, (i10 & 4) != 0 ? null : wVar, selfieStepStyle, cancelDialog, captureMethod, str3, str4, z10, z11, str5, z12, z13, localizations, list, list2, assetConfig, str6, list3, pendingPageTextPosition, z14, s0Var, b0Var);
         }
 
-        public static /* synthetic */ h k(h hVar, String str, String str2, w wVar, StepStyles.SelfieStepStyle selfieStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Selfie.CaptureMethod captureMethod, String str3, String str4, boolean z10, boolean z11, String str5, boolean z12, boolean z13, NextStep.Selfie.Localizations localizations, List list, List list2, NextStep.Selfie.AssetConfig assetConfig, String str6, List list3, PendingPageTextPosition pendingPageTextPosition, boolean z14, s0 s0Var, hp.b0 b0Var, int i10, Object obj) {
-            hp.b0 b0Var2;
+        public static /* synthetic */ h l(h hVar, String str, String str2, w wVar, StepStyles.SelfieStepStyle selfieStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Selfie.CaptureMethod captureMethod, String str3, String str4, boolean z10, boolean z11, String str5, boolean z12, boolean z13, NextStep.Selfie.Localizations localizations, List list, List list2, NextStep.Selfie.AssetConfig assetConfig, String str6, List list3, PendingPageTextPosition pendingPageTextPosition, boolean z14, s0 s0Var, kp.b0 b0Var, int i10, Object obj) {
+            kp.b0 b0Var2;
             s0 s0Var2;
-            String str7 = (i10 & 1) != 0 ? hVar.f18599t : str;
-            String str8 = (i10 & 2) != 0 ? hVar.f18600u : str2;
-            w wVar2 = (i10 & 4) != 0 ? hVar.f18601v : wVar;
-            StepStyles.SelfieStepStyle selfieStepStyle2 = (i10 & 8) != 0 ? hVar.f18602w : selfieStepStyle;
-            NextStep.CancelDialog cancelDialog2 = (i10 & 16) != 0 ? hVar.f18603x : cancelDialog;
-            NextStep.Selfie.CaptureMethod captureMethod2 = (i10 & 32) != 0 ? hVar.f18604y : captureMethod;
-            String str9 = (i10 & 64) != 0 ? hVar.f18605z : str3;
+            String str7 = (i10 & 1) != 0 ? hVar.f19005t : str;
+            String str8 = (i10 & 2) != 0 ? hVar.f19006u : str2;
+            w wVar2 = (i10 & 4) != 0 ? hVar.f19007v : wVar;
+            StepStyles.SelfieStepStyle selfieStepStyle2 = (i10 & 8) != 0 ? hVar.f19008w : selfieStepStyle;
+            NextStep.CancelDialog cancelDialog2 = (i10 & 16) != 0 ? hVar.f19009x : cancelDialog;
+            NextStep.Selfie.CaptureMethod captureMethod2 = (i10 & 32) != 0 ? hVar.f19010y : captureMethod;
+            String str9 = (i10 & 64) != 0 ? hVar.f19011z : str3;
             String str10 = (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? hVar.A : str4;
             boolean z15 = (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? hVar.B : z10;
             boolean z16 = (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? hVar.C : z11;
@@ -1490,18 +1490,22 @@ public abstract class l implements Parcelable {
             return hVar.j(str12, str8, wVar2, selfieStepStyle2, cancelDialog2, captureMethod2, str9, str10, z15, z16, str11, z17, z18, localizations2, list4, list5, assetConfig2, str13, list6, pendingPageTextPosition2, z19, s0Var2, b0Var2);
         }
 
-        public final NextStep.Selfie.CaptureMethod A() {
-            return this.f18604y;
+        public final boolean A() {
+            return this.E;
+        }
+
+        public final NextStep.Selfie.CaptureMethod B() {
+            return this.f19010y;
         }
 
         public final boolean C() {
             return this.F;
         }
 
-        @Override // com.withpersona.sdk2.inquiry.internal.l, po.j2
+        @Override // com.withpersona.sdk2.inquiry.internal.l, so.j2
         /* renamed from: D */
         public StepStyles.SelfieStepStyle getStyles() {
-            return this.f18602w;
+            return this.f19008w;
         }
 
         public final List G() {
@@ -1514,12 +1518,12 @@ public abstract class l implements Parcelable {
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public String b() {
-            return this.f18599t;
+            return this.f19005t;
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public NextStep.CancelDialog c() {
-            return this.f18603x;
+            return this.f19009x;
         }
 
         @Override // android.os.Parcelable
@@ -1538,24 +1542,24 @@ public abstract class l implements Parcelable {
             }
             if (obj instanceof h) {
                 h hVar = (h) obj;
-                return Intrinsics.areEqual(this.f18599t, hVar.f18599t) && Intrinsics.areEqual(this.f18600u, hVar.f18600u) && Intrinsics.areEqual(this.f18601v, hVar.f18601v) && Intrinsics.areEqual(this.f18602w, hVar.f18602w) && Intrinsics.areEqual(this.f18603x, hVar.f18603x) && this.f18604y == hVar.f18604y && Intrinsics.areEqual(this.f18605z, hVar.f18605z) && Intrinsics.areEqual(this.A, hVar.A) && this.B == hVar.B && this.C == hVar.C && Intrinsics.areEqual(this.D, hVar.D) && this.E == hVar.E && this.F == hVar.F && Intrinsics.areEqual(this.G, hVar.G) && Intrinsics.areEqual(this.H, hVar.H) && Intrinsics.areEqual(this.I, hVar.I) && Intrinsics.areEqual(this.J, hVar.J) && Intrinsics.areEqual(this.K, hVar.K) && Intrinsics.areEqual(this.L, hVar.L) && this.M == hVar.M && this.N == hVar.N && Intrinsics.areEqual(this.O, hVar.O) && this.P == hVar.P;
+                return Intrinsics.areEqual(this.f19005t, hVar.f19005t) && Intrinsics.areEqual(this.f19006u, hVar.f19006u) && Intrinsics.areEqual(this.f19007v, hVar.f19007v) && Intrinsics.areEqual(this.f19008w, hVar.f19008w) && Intrinsics.areEqual(this.f19009x, hVar.f19009x) && this.f19010y == hVar.f19010y && Intrinsics.areEqual(this.f19011z, hVar.f19011z) && Intrinsics.areEqual(this.A, hVar.A) && this.B == hVar.B && this.C == hVar.C && Intrinsics.areEqual(this.D, hVar.D) && this.E == hVar.E && this.F == hVar.F && Intrinsics.areEqual(this.G, hVar.G) && Intrinsics.areEqual(this.H, hVar.H) && Intrinsics.areEqual(this.I, hVar.I) && Intrinsics.areEqual(this.J, hVar.J) && Intrinsics.areEqual(this.K, hVar.K) && Intrinsics.areEqual(this.L, hVar.L) && this.M == hVar.M && this.N == hVar.N && Intrinsics.areEqual(this.O, hVar.O) && this.P == hVar.P;
             }
             return false;
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public w f() {
-            return this.f18601v;
+            return this.f19007v;
         }
 
         public int hashCode() {
-            int hashCode = ((this.f18599t.hashCode() * 31) + this.f18600u.hashCode()) * 31;
-            w wVar = this.f18601v;
+            int hashCode = ((this.f19005t.hashCode() * 31) + this.f19006u.hashCode()) * 31;
+            w wVar = this.f19007v;
             int hashCode2 = (hashCode + (wVar == null ? 0 : wVar.hashCode())) * 31;
-            StepStyles.SelfieStepStyle selfieStepStyle = this.f18602w;
+            StepStyles.SelfieStepStyle selfieStepStyle = this.f19008w;
             int hashCode3 = (hashCode2 + (selfieStepStyle == null ? 0 : selfieStepStyle.hashCode())) * 31;
-            NextStep.CancelDialog cancelDialog = this.f18603x;
-            int hashCode4 = (((((((((((((((((((((((hashCode3 + (cancelDialog == null ? 0 : cancelDialog.hashCode())) * 31) + this.f18604y.hashCode()) * 31) + this.f18605z.hashCode()) * 31) + this.A.hashCode()) * 31) + Boolean.hashCode(this.B)) * 31) + Boolean.hashCode(this.C)) * 31) + this.D.hashCode()) * 31) + Boolean.hashCode(this.E)) * 31) + Boolean.hashCode(this.F)) * 31) + this.G.hashCode()) * 31) + this.H.hashCode()) * 31) + this.I.hashCode()) * 31;
+            NextStep.CancelDialog cancelDialog = this.f19009x;
+            int hashCode4 = (((((((((((((((((((((((hashCode3 + (cancelDialog == null ? 0 : cancelDialog.hashCode())) * 31) + this.f19010y.hashCode()) * 31) + this.f19011z.hashCode()) * 31) + this.A.hashCode()) * 31) + Boolean.hashCode(this.B)) * 31) + Boolean.hashCode(this.C)) * 31) + this.D.hashCode()) * 31) + Boolean.hashCode(this.E)) * 31) + Boolean.hashCode(this.F)) * 31) + this.G.hashCode()) * 31) + this.H.hashCode()) * 31) + this.I.hashCode()) * 31;
             NextStep.Selfie.AssetConfig assetConfig = this.J;
             int hashCode5 = (hashCode4 + (assetConfig == null ? 0 : assetConfig.hashCode())) * 31;
             String str = this.K;
@@ -1564,7 +1568,7 @@ public abstract class l implements Parcelable {
             return ((((((((hashCode6 + (list != null ? list.hashCode() : 0)) * 31) + this.M.hashCode()) * 31) + Boolean.hashCode(this.N)) * 31) + this.O.hashCode()) * 31) + this.P.hashCode();
         }
 
-        public final h j(String inquiryId, String sessionToken, w wVar, StepStyles.SelfieStepStyle selfieStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Selfie.CaptureMethod selfieType, String fromComponent, String fromStep, boolean z10, boolean z11, String fieldKeySelfie, boolean z12, boolean z13, NextStep.Selfie.Localizations localizations, List enabledCaptureFileTypes, List videoCaptureMethods, NextStep.Selfie.AssetConfig assetConfig, String str, List list, PendingPageTextPosition pendingPageTextVerticalPosition, boolean z14, s0 poseConfigs, hp.b0 designVersion) {
+        public final h j(String inquiryId, String sessionToken, w wVar, StepStyles.SelfieStepStyle selfieStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Selfie.CaptureMethod selfieType, String fromComponent, String fromStep, boolean z10, boolean z11, String fieldKeySelfie, boolean z12, boolean z13, NextStep.Selfie.Localizations localizations, List enabledCaptureFileTypes, List videoCaptureMethods, NextStep.Selfie.AssetConfig assetConfig, String str, List list, PendingPageTextPosition pendingPageTextVerticalPosition, boolean z14, s0 poseConfigs, kp.b0 designVersion) {
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
             Intrinsics.checkNotNullParameter(selfieType, "selfieType");
@@ -1581,50 +1585,46 @@ public abstract class l implements Parcelable {
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
-        public String l() {
-            return this.f18600u;
+        public String k() {
+            return this.f19006u;
         }
 
-        public final NextStep.Selfie.AssetConfig m() {
+        public final NextStep.Selfie.AssetConfig n() {
             return this.J;
         }
 
-        public final boolean n() {
+        public final boolean o() {
             return this.N;
         }
 
-        public final boolean o() {
+        public final boolean p() {
             return this.B;
         }
 
-        public final boolean p() {
+        public final boolean q() {
             return this.C;
         }
 
-        public final hp.b0 q() {
+        public final kp.b0 r() {
             return this.P;
         }
 
-        public final List r() {
+        public final List s() {
             return this.H;
         }
 
-        public final String s() {
+        public final String t() {
             return this.D;
         }
 
-        public final String t() {
-            return this.f18605z;
-        }
-
         public String toString() {
-            String str = this.f18599t;
-            String str2 = this.f18600u;
-            w wVar = this.f18601v;
-            StepStyles.SelfieStepStyle selfieStepStyle = this.f18602w;
-            NextStep.CancelDialog cancelDialog = this.f18603x;
-            NextStep.Selfie.CaptureMethod captureMethod = this.f18604y;
-            String str3 = this.f18605z;
+            String str = this.f19005t;
+            String str2 = this.f19006u;
+            w wVar = this.f19007v;
+            StepStyles.SelfieStepStyle selfieStepStyle = this.f19008w;
+            NextStep.CancelDialog cancelDialog = this.f19009x;
+            NextStep.Selfie.CaptureMethod captureMethod = this.f19010y;
+            String str3 = this.f19011z;
             String str4 = this.A;
             boolean z10 = this.B;
             boolean z11 = this.C;
@@ -1640,32 +1640,32 @@ public abstract class l implements Parcelable {
             PendingPageTextPosition pendingPageTextPosition = this.M;
             boolean z14 = this.N;
             s0 s0Var = this.O;
-            hp.b0 b0Var = this.P;
+            kp.b0 b0Var = this.P;
             return "SelfieStepRunning(inquiryId=" + str + ", sessionToken=" + str2 + ", transitionStatus=" + wVar + ", styles=" + selfieStepStyle + ", cancelDialog=" + cancelDialog + ", selfieType=" + captureMethod + ", fromComponent=" + str3 + ", fromStep=" + str4 + ", backStepEnabled=" + z10 + ", cancelButtonEnabled=" + z11 + ", fieldKeySelfie=" + str5 + ", requireStrictSelfieCapture=" + z12 + ", skipPromptPage=" + z13 + ", localizations=" + localizations + ", enabledCaptureFileTypes=" + list + ", videoCaptureMethods=" + list2 + ", assetConfig=" + assetConfig + ", webRtcJwt=" + str6 + ", orderedPoses=" + list3 + ", pendingPageTextVerticalPosition=" + pendingPageTextPosition + ", audioEnabled=" + z14 + ", poseConfigs=" + s0Var + ", designVersion=" + b0Var + ")";
         }
 
-        public final NextStep.Selfie.Localizations u() {
+        public final String u() {
+            return this.f19011z;
+        }
+
+        public final NextStep.Selfie.Localizations v() {
             return this.G;
         }
 
-        public final List v() {
+        public final List w() {
             return this.L;
-        }
-
-        public final PendingPageTextPosition w() {
-            return this.M;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f18599t);
-            dest.writeString(this.f18600u);
-            dest.writeParcelable(this.f18601v, i10);
-            dest.writeParcelable(this.f18602w, i10);
-            dest.writeParcelable(this.f18603x, i10);
-            dest.writeString(this.f18604y.name());
-            dest.writeString(this.f18605z);
+            dest.writeString(this.f19005t);
+            dest.writeString(this.f19006u);
+            dest.writeParcelable(this.f19007v, i10);
+            dest.writeParcelable(this.f19008w, i10);
+            dest.writeParcelable(this.f19009x, i10);
+            dest.writeString(this.f19010y.name());
+            dest.writeString(this.f19011z);
             dest.writeString(this.A);
             dest.writeInt(this.B ? 1 : 0);
             dest.writeInt(this.C ? 1 : 0);
@@ -1701,16 +1701,16 @@ public abstract class l implements Parcelable {
             dest.writeString(this.P.name());
         }
 
-        public final s0 y() {
+        public final PendingPageTextPosition x() {
+            return this.M;
+        }
+
+        public final s0 z() {
             return this.O;
         }
 
-        public final boolean z() {
-            return this.E;
-        }
-
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public h(String inquiryId, String sessionToken, w wVar, StepStyles.SelfieStepStyle selfieStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Selfie.CaptureMethod selfieType, String fromComponent, String fromStep, boolean z10, boolean z11, String fieldKeySelfie, boolean z12, boolean z13, NextStep.Selfie.Localizations localizations, List enabledCaptureFileTypes, List videoCaptureMethods, NextStep.Selfie.AssetConfig assetConfig, String str, List list, PendingPageTextPosition pendingPageTextVerticalPosition, boolean z14, s0 poseConfigs, hp.b0 designVersion) {
+        public h(String inquiryId, String sessionToken, w wVar, StepStyles.SelfieStepStyle selfieStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Selfie.CaptureMethod selfieType, String fromComponent, String fromStep, boolean z10, boolean z11, String fieldKeySelfie, boolean z12, boolean z13, NextStep.Selfie.Localizations localizations, List enabledCaptureFileTypes, List videoCaptureMethods, NextStep.Selfie.AssetConfig assetConfig, String str, List list, PendingPageTextPosition pendingPageTextVerticalPosition, boolean z14, s0 poseConfigs, kp.b0 designVersion) {
             super(null, null, null, null, null, null, null, 127, null);
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
@@ -1724,13 +1724,13 @@ public abstract class l implements Parcelable {
             Intrinsics.checkNotNullParameter(pendingPageTextVerticalPosition, "pendingPageTextVerticalPosition");
             Intrinsics.checkNotNullParameter(poseConfigs, "poseConfigs");
             Intrinsics.checkNotNullParameter(designVersion, "designVersion");
-            this.f18599t = inquiryId;
-            this.f18600u = sessionToken;
-            this.f18601v = wVar;
-            this.f18602w = selfieStepStyle;
-            this.f18603x = cancelDialog;
-            this.f18604y = selfieType;
-            this.f18605z = fromComponent;
+            this.f19005t = inquiryId;
+            this.f19006u = sessionToken;
+            this.f19007v = wVar;
+            this.f19008w = selfieStepStyle;
+            this.f19009x = cancelDialog;
+            this.f19010y = selfieType;
+            this.f19011z = fromComponent;
             this.A = fromStep;
             this.B = z10;
             this.C = z11;
@@ -1763,29 +1763,29 @@ public abstract class l implements Parcelable {
         private final String G;
         private final List H;
         private final InternalErrorInfo I;
-        private final tp.g J;
+        private final wp.g J;
         private final boolean K;
 
         /* renamed from: t  reason: collision with root package name */
-        private final String f18612t;
+        private final String f19018t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final String f18613u;
+        private final String f19019u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final w f18614v;
+        private final w f19020v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final StepStyles.UiStepStyle f18615w;
+        private final StepStyles.UiStepStyle f19021w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final NextStep.CancelDialog f18616x;
+        private final NextStep.CancelDialog f19022x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final NextStep.Ui.Localizations f18617y;
+        private final NextStep.Ui.Localizations f19023y;
 
         /* renamed from: z  reason: collision with root package name */
-        private final String f18618z;
+        private final String f19024z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -1869,7 +1869,7 @@ public abstract class l implements Parcelable {
                     }
                 }
                 InternalErrorInfo internalErrorInfo = (InternalErrorInfo) parcel.readParcelable(j.class.getClassLoader());
-                tp.g gVar = (tp.g) parcel.readParcelable(j.class.getClassLoader());
+                wp.g gVar = (wp.g) parcel.readParcelable(j.class.getClassLoader());
                 if (parcel.readInt() == 0) {
                     z12 = false;
                 }
@@ -1883,20 +1883,20 @@ public abstract class l implements Parcelable {
             }
         }
 
-        public /* synthetic */ j(String str, String str2, w wVar, StepStyles.UiStepStyle uiStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Ui.Localizations localizations, String str3, String str4, List list, boolean z10, boolean z11, boolean z12, Map map, String str5, List list2, InternalErrorInfo internalErrorInfo, tp.g gVar, boolean z13, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-            this(str, str2, (i10 & 4) != 0 ? null : wVar, uiStepStyle, cancelDialog, localizations, str3, str4, list, z10, z11, z12, map, str5, list2, (i10 & PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS) != 0 ? null : internalErrorInfo, (i10 & 65536) != 0 ? tp.g.f50215o.a() : gVar, z13);
+        public /* synthetic */ j(String str, String str2, w wVar, StepStyles.UiStepStyle uiStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Ui.Localizations localizations, String str3, String str4, List list, boolean z10, boolean z11, boolean z12, Map map, String str5, List list2, InternalErrorInfo internalErrorInfo, wp.g gVar, boolean z13, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+            this(str, str2, (i10 & 4) != 0 ? null : wVar, uiStepStyle, cancelDialog, localizations, str3, str4, list, z10, z11, z12, map, str5, list2, (i10 & PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS) != 0 ? null : internalErrorInfo, (i10 & 65536) != 0 ? wp.g.f53236o.a() : gVar, z13);
         }
 
-        public static /* synthetic */ j k(j jVar, String str, String str2, w wVar, StepStyles.UiStepStyle uiStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Ui.Localizations localizations, String str3, String str4, List list, boolean z10, boolean z11, boolean z12, Map map, String str5, List list2, InternalErrorInfo internalErrorInfo, tp.g gVar, boolean z13, int i10, Object obj) {
+        public static /* synthetic */ j l(j jVar, String str, String str2, w wVar, StepStyles.UiStepStyle uiStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Ui.Localizations localizations, String str3, String str4, List list, boolean z10, boolean z11, boolean z12, Map map, String str5, List list2, InternalErrorInfo internalErrorInfo, wp.g gVar, boolean z13, int i10, Object obj) {
             boolean z14;
-            tp.g gVar2;
-            String str6 = (i10 & 1) != 0 ? jVar.f18612t : str;
-            String str7 = (i10 & 2) != 0 ? jVar.f18613u : str2;
-            w wVar2 = (i10 & 4) != 0 ? jVar.f18614v : wVar;
-            StepStyles.UiStepStyle uiStepStyle2 = (i10 & 8) != 0 ? jVar.f18615w : uiStepStyle;
-            NextStep.CancelDialog cancelDialog2 = (i10 & 16) != 0 ? jVar.f18616x : cancelDialog;
-            NextStep.Ui.Localizations localizations2 = (i10 & 32) != 0 ? jVar.f18617y : localizations;
-            String str8 = (i10 & 64) != 0 ? jVar.f18618z : str3;
+            wp.g gVar2;
+            String str6 = (i10 & 1) != 0 ? jVar.f19018t : str;
+            String str7 = (i10 & 2) != 0 ? jVar.f19019u : str2;
+            w wVar2 = (i10 & 4) != 0 ? jVar.f19020v : wVar;
+            StepStyles.UiStepStyle uiStepStyle2 = (i10 & 8) != 0 ? jVar.f19021w : uiStepStyle;
+            NextStep.CancelDialog cancelDialog2 = (i10 & 16) != 0 ? jVar.f19022x : cancelDialog;
+            NextStep.Ui.Localizations localizations2 = (i10 & 32) != 0 ? jVar.f19023y : localizations;
+            String str8 = (i10 & 64) != 0 ? jVar.f19024z : str3;
             String str9 = (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? jVar.A : str4;
             List list3 = (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? jVar.B : list;
             boolean z15 = (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? jVar.C : z10;
@@ -1907,7 +1907,7 @@ public abstract class l implements Parcelable {
             String str11 = str6;
             List list4 = (i10 & 16384) != 0 ? jVar.H : list2;
             InternalErrorInfo internalErrorInfo2 = (i10 & PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS) != 0 ? jVar.I : internalErrorInfo;
-            tp.g gVar3 = (i10 & 65536) != 0 ? jVar.J : gVar;
+            wp.g gVar3 = (i10 & 65536) != 0 ? jVar.J : gVar;
             if ((i10 & 131072) != 0) {
                 gVar2 = gVar3;
                 z14 = jVar.K;
@@ -1919,18 +1919,18 @@ public abstract class l implements Parcelable {
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
-        public tp.g a() {
+        public wp.g a() {
             return this.J;
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public String b() {
-            return this.f18612t;
+            return this.f19018t;
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public NextStep.CancelDialog c() {
-            return this.f18616x;
+            return this.f19022x;
         }
 
         @Override // android.os.Parcelable
@@ -1949,14 +1949,14 @@ public abstract class l implements Parcelable {
             }
             if (obj instanceof j) {
                 j jVar = (j) obj;
-                return Intrinsics.areEqual(this.f18612t, jVar.f18612t) && Intrinsics.areEqual(this.f18613u, jVar.f18613u) && Intrinsics.areEqual(this.f18614v, jVar.f18614v) && Intrinsics.areEqual(this.f18615w, jVar.f18615w) && Intrinsics.areEqual(this.f18616x, jVar.f18616x) && Intrinsics.areEqual(this.f18617y, jVar.f18617y) && Intrinsics.areEqual(this.f18618z, jVar.f18618z) && Intrinsics.areEqual(this.A, jVar.A) && Intrinsics.areEqual(this.B, jVar.B) && this.C == jVar.C && this.D == jVar.D && this.E == jVar.E && Intrinsics.areEqual(this.F, jVar.F) && Intrinsics.areEqual(this.G, jVar.G) && Intrinsics.areEqual(this.H, jVar.H) && Intrinsics.areEqual(this.I, jVar.I) && Intrinsics.areEqual(this.J, jVar.J) && this.K == jVar.K;
+                return Intrinsics.areEqual(this.f19018t, jVar.f19018t) && Intrinsics.areEqual(this.f19019u, jVar.f19019u) && Intrinsics.areEqual(this.f19020v, jVar.f19020v) && Intrinsics.areEqual(this.f19021w, jVar.f19021w) && Intrinsics.areEqual(this.f19022x, jVar.f19022x) && Intrinsics.areEqual(this.f19023y, jVar.f19023y) && Intrinsics.areEqual(this.f19024z, jVar.f19024z) && Intrinsics.areEqual(this.A, jVar.A) && Intrinsics.areEqual(this.B, jVar.B) && this.C == jVar.C && this.D == jVar.D && this.E == jVar.E && Intrinsics.areEqual(this.F, jVar.F) && Intrinsics.areEqual(this.G, jVar.G) && Intrinsics.areEqual(this.H, jVar.H) && Intrinsics.areEqual(this.I, jVar.I) && Intrinsics.areEqual(this.J, jVar.J) && this.K == jVar.K;
             }
             return false;
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public w f() {
-            return this.f18614v;
+            return this.f19020v;
         }
 
         public final List getComponents() {
@@ -1964,15 +1964,15 @@ public abstract class l implements Parcelable {
         }
 
         public int hashCode() {
-            int hashCode = ((this.f18612t.hashCode() * 31) + this.f18613u.hashCode()) * 31;
-            w wVar = this.f18614v;
+            int hashCode = ((this.f19018t.hashCode() * 31) + this.f19019u.hashCode()) * 31;
+            w wVar = this.f19020v;
             int hashCode2 = (hashCode + (wVar == null ? 0 : wVar.hashCode())) * 31;
-            StepStyles.UiStepStyle uiStepStyle = this.f18615w;
+            StepStyles.UiStepStyle uiStepStyle = this.f19021w;
             int hashCode3 = (hashCode2 + (uiStepStyle == null ? 0 : uiStepStyle.hashCode())) * 31;
-            NextStep.CancelDialog cancelDialog = this.f18616x;
+            NextStep.CancelDialog cancelDialog = this.f19022x;
             int hashCode4 = (hashCode3 + (cancelDialog == null ? 0 : cancelDialog.hashCode())) * 31;
-            NextStep.Ui.Localizations localizations = this.f18617y;
-            int hashCode5 = (((((hashCode4 + (localizations == null ? 0 : localizations.hashCode())) * 31) + this.f18618z.hashCode()) * 31) + this.A.hashCode()) * 31;
+            NextStep.Ui.Localizations localizations = this.f19023y;
+            int hashCode5 = (((((hashCode4 + (localizations == null ? 0 : localizations.hashCode())) * 31) + this.f19024z.hashCode()) * 31) + this.A.hashCode()) * 31;
             List list = this.B;
             int hashCode6 = (((((((((((hashCode5 + (list == null ? 0 : list.hashCode())) * 31) + Boolean.hashCode(this.C)) * 31) + Boolean.hashCode(this.D)) * 31) + Boolean.hashCode(this.E)) * 31) + this.F.hashCode()) * 31) + this.G.hashCode()) * 31;
             List list2 = this.H;
@@ -1981,7 +1981,7 @@ public abstract class l implements Parcelable {
             return ((((hashCode7 + (internalErrorInfo != null ? internalErrorInfo.hashCode() : 0)) * 31) + this.J.hashCode()) * 31) + Boolean.hashCode(this.K);
         }
 
-        public final j j(String inquiryId, String sessionToken, w wVar, StepStyles.UiStepStyle uiStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Ui.Localizations localizations, String inquiryStatus, String stepName, List list, boolean z10, boolean z11, boolean z12, Map fields, String clientSideKey, List list2, InternalErrorInfo internalErrorInfo, tp.g inquirySessionConfig, boolean z13) {
+        public final j j(String inquiryId, String sessionToken, w wVar, StepStyles.UiStepStyle uiStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Ui.Localizations localizations, String inquiryStatus, String stepName, List list, boolean z10, boolean z11, boolean z12, Map fields, String clientSideKey, List list2, InternalErrorInfo internalErrorInfo, wp.g inquirySessionConfig, boolean z13) {
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
             Intrinsics.checkNotNullParameter(inquiryStatus, "inquiryStatus");
@@ -1993,50 +1993,46 @@ public abstract class l implements Parcelable {
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
-        public String l() {
-            return this.f18613u;
-        }
-
-        public final boolean m() {
-            return this.C;
+        public String k() {
+            return this.f19019u;
         }
 
         public final boolean n() {
+            return this.C;
+        }
+
+        public final boolean o() {
             return this.D;
         }
 
-        public final String o() {
+        public final String p() {
             return this.G;
         }
 
-        public final Map p() {
+        public final Map q() {
             return this.F;
         }
 
-        public final boolean q() {
+        public final boolean r() {
             return this.E;
         }
 
-        public final String r() {
-            return this.f18618z;
+        public final String s() {
+            return this.f19024z;
         }
 
-        public final NextStep.Ui.Localizations s() {
-            return this.f18617y;
-        }
-
-        public final List t() {
-            return this.H;
+        public final NextStep.Ui.Localizations t() {
+            return this.f19023y;
         }
 
         public String toString() {
-            String str = this.f18612t;
-            String str2 = this.f18613u;
-            w wVar = this.f18614v;
-            StepStyles.UiStepStyle uiStepStyle = this.f18615w;
-            NextStep.CancelDialog cancelDialog = this.f18616x;
-            NextStep.Ui.Localizations localizations = this.f18617y;
-            String str3 = this.f18618z;
+            String str = this.f19018t;
+            String str2 = this.f19019u;
+            w wVar = this.f19020v;
+            StepStyles.UiStepStyle uiStepStyle = this.f19021w;
+            NextStep.CancelDialog cancelDialog = this.f19022x;
+            NextStep.Ui.Localizations localizations = this.f19023y;
+            String str3 = this.f19024z;
             String str4 = this.A;
             List list = this.B;
             boolean z10 = this.C;
@@ -2046,33 +2042,33 @@ public abstract class l implements Parcelable {
             String str5 = this.G;
             List list2 = this.H;
             InternalErrorInfo internalErrorInfo = this.I;
-            tp.g gVar = this.J;
+            wp.g gVar = this.J;
             boolean z13 = this.K;
             return "UiStepRunning(inquiryId=" + str + ", sessionToken=" + str2 + ", transitionStatus=" + wVar + ", styles=" + uiStepStyle + ", cancelDialog=" + cancelDialog + ", localizations=" + localizations + ", inquiryStatus=" + str3 + ", stepName=" + str4 + ", components=" + list + ", backStepEnabled=" + z10 + ", cancelButtonEnabled=" + z11 + ", finalStep=" + z12 + ", fields=" + map + ", clientSideKey=" + str5 + ", serverComponentErrors=" + list2 + ", transitionError=" + internalErrorInfo + ", inquirySessionConfig=" + gVar + ", isRestoringState=" + z13 + ")";
         }
 
-        public final String u() {
+        public final List u() {
+            return this.H;
+        }
+
+        public final String v() {
             return this.A;
         }
 
-        public final InternalErrorInfo v() {
+        public final InternalErrorInfo w() {
             return this.I;
-        }
-
-        public final boolean w() {
-            return this.K;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f18612t);
-            dest.writeString(this.f18613u);
-            dest.writeParcelable(this.f18614v, i10);
-            dest.writeParcelable(this.f18615w, i10);
-            dest.writeParcelable(this.f18616x, i10);
-            dest.writeParcelable(this.f18617y, i10);
-            dest.writeString(this.f18618z);
+            dest.writeString(this.f19018t);
+            dest.writeString(this.f19019u);
+            dest.writeParcelable(this.f19020v, i10);
+            dest.writeParcelable(this.f19021w, i10);
+            dest.writeParcelable(this.f19022x, i10);
+            dest.writeParcelable(this.f19023y, i10);
+            dest.writeString(this.f19024z);
             dest.writeString(this.A);
             List<Parcelable> list = this.B;
             if (list == null) {
@@ -2109,13 +2105,17 @@ public abstract class l implements Parcelable {
             dest.writeInt(this.K ? 1 : 0);
         }
 
-        @Override // com.withpersona.sdk2.inquiry.internal.l, po.j2
+        public final boolean x() {
+            return this.K;
+        }
+
+        @Override // com.withpersona.sdk2.inquiry.internal.l, so.j2
         public StepStyles.UiStepStyle getStyles() {
-            return this.f18615w;
+            return this.f19021w;
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public j(String inquiryId, String sessionToken, w wVar, StepStyles.UiStepStyle uiStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Ui.Localizations localizations, String inquiryStatus, String stepName, List list, boolean z10, boolean z11, boolean z12, Map fields, String clientSideKey, List list2, InternalErrorInfo internalErrorInfo, tp.g inquirySessionConfig, boolean z13) {
+        public j(String inquiryId, String sessionToken, w wVar, StepStyles.UiStepStyle uiStepStyle, NextStep.CancelDialog cancelDialog, NextStep.Ui.Localizations localizations, String inquiryStatus, String stepName, List list, boolean z10, boolean z11, boolean z12, Map fields, String clientSideKey, List list2, InternalErrorInfo internalErrorInfo, wp.g inquirySessionConfig, boolean z13) {
             super(null, null, null, null, null, null, null, 127, null);
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
@@ -2124,13 +2124,13 @@ public abstract class l implements Parcelable {
             Intrinsics.checkNotNullParameter(fields, "fields");
             Intrinsics.checkNotNullParameter(clientSideKey, "clientSideKey");
             Intrinsics.checkNotNullParameter(inquirySessionConfig, "inquirySessionConfig");
-            this.f18612t = inquiryId;
-            this.f18613u = sessionToken;
-            this.f18614v = wVar;
-            this.f18615w = uiStepStyle;
-            this.f18616x = cancelDialog;
-            this.f18617y = localizations;
-            this.f18618z = inquiryStatus;
+            this.f19018t = inquiryId;
+            this.f19019u = sessionToken;
+            this.f19020v = wVar;
+            this.f19021w = uiStepStyle;
+            this.f19022x = cancelDialog;
+            this.f19023y = localizations;
+            this.f19024z = inquiryStatus;
             this.A = stepName;
             this.B = list;
             this.C = z10;
@@ -2145,79 +2145,79 @@ public abstract class l implements Parcelable {
         }
     }
 
-    public /* synthetic */ l(String str, String str2, w wVar, StepStyle stepStyle, NextStep.CancelDialog cancelDialog, String str3, tp.g gVar, DefaultConstructorMarker defaultConstructorMarker) {
+    public /* synthetic */ l(String str, String str2, w wVar, StepStyle stepStyle, NextStep.CancelDialog cancelDialog, String str3, wp.g gVar, DefaultConstructorMarker defaultConstructorMarker) {
         this(str, str2, wVar, stepStyle, cancelDialog, str3, gVar);
     }
 
-    public tp.g a() {
-        return this.f18567r;
+    public wp.g a() {
+        return this.f18973r;
     }
 
     public String b() {
-        return this.f18562e;
+        return this.f18968e;
     }
 
     public NextStep.CancelDialog c() {
-        return this.f18565p;
+        return this.f18971p;
     }
 
     public final boolean d() {
-        return this.f18568s;
+        return this.f18974s;
     }
 
     public String e() {
-        return this.f18566q;
+        return this.f18972q;
     }
 
     public w f() {
-        return this.f18563i;
+        return this.f18969i;
     }
 
     public final void g(boolean z10) {
-        this.f18568s = z10;
+        this.f18974s = z10;
     }
 
     public StepStyle getStyles() {
-        return this.f18564o;
+        return this.f18970o;
     }
 
     public final l i(w wVar) {
         if (this instanceof a) {
-            return a.k((a) this, null, null, wVar, null, null, 27, null);
+            return a.l((a) this, null, null, wVar, null, null, 27, null);
         }
         if ((this instanceof b) || (this instanceof g) || (this instanceof c) || (this instanceof e)) {
             return this;
         }
         if (this instanceof d) {
-            return d.k((d) this, null, null, wVar, null, null, null, null, null, null, null, 1019, null);
+            return d.l((d) this, null, null, wVar, null, null, null, null, null, null, null, 1019, null);
         }
         if (this instanceof f) {
-            return f.k((f) this, null, null, wVar, null, null, null, null, null, null, false, false, null, null, null, 0, 0L, null, null, false, null, null, null, null, null, null, null, false, null, 268435451, null);
+            return f.l((f) this, null, null, wVar, null, null, null, null, null, null, false, false, null, null, null, 0, 0L, null, null, false, null, null, null, null, null, null, null, false, null, 268435451, null);
         }
         if (this instanceof h) {
-            return h.k((h) this, null, null, wVar, null, null, null, null, null, false, false, null, false, false, null, null, null, null, null, null, null, false, null, null, 8388603, null);
+            return h.l((h) this, null, null, wVar, null, null, null, null, null, false, false, null, false, false, null, null, null, null, null, null, null, false, null, null, 8388603, null);
         }
         if (this instanceof i) {
-            return i.k((i) this, null, wVar, null, null, false, null, 61, null);
+            return i.l((i) this, null, wVar, null, null, false, null, 61, null);
         }
         if (this instanceof j) {
-            return j.k((j) this, null, null, wVar, null, null, null, null, null, null, false, false, false, null, null, null, null, null, false, 262139, null);
+            return j.l((j) this, null, null, wVar, null, null, null, null, null, null, false, false, false, null, null, null, null, null, false, 262139, null);
         }
-        throw new lr.p();
+        throw new or.p();
     }
 
-    public String l() {
-        return this.f18561d;
+    public String k() {
+        return this.f18967d;
     }
 
-    private l(String str, String str2, w wVar, StepStyle stepStyle, NextStep.CancelDialog cancelDialog, String str3, tp.g gVar) {
-        this.f18561d = str;
-        this.f18562e = str2;
-        this.f18563i = wVar;
-        this.f18564o = stepStyle;
-        this.f18565p = cancelDialog;
-        this.f18566q = str3;
-        this.f18567r = gVar;
+    private l(String str, String str2, w wVar, StepStyle stepStyle, NextStep.CancelDialog cancelDialog, String str3, wp.g gVar) {
+        this.f18967d = str;
+        this.f18968e = str2;
+        this.f18969i = wVar;
+        this.f18970o = stepStyle;
+        this.f18971p = cancelDialog;
+        this.f18972q = str3;
+        this.f18973r = gVar;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -2226,22 +2226,22 @@ public abstract class l implements Parcelable {
         public static final Parcelable.Creator<i> CREATOR = new a();
 
         /* renamed from: t  reason: collision with root package name */
-        private final String f18606t;
+        private final String f19012t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final w f18607u;
+        private final w f19013u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final String f18608v;
+        private final String f19014v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final StepStyle f18609w;
+        private final StepStyle f19015w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final boolean f18610x;
+        private final boolean f19016x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final tp.g f18611y;
+        private final wp.g f19017y;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -2249,7 +2249,7 @@ public abstract class l implements Parcelable {
             /* renamed from: a */
             public final i createFromParcel(Parcel parcel) {
                 Intrinsics.checkNotNullParameter(parcel, "parcel");
-                return new i(parcel.readString(), (w) parcel.readParcelable(i.class.getClassLoader()), parcel.readString(), (StepStyle) parcel.readParcelable(i.class.getClassLoader()), parcel.readInt() != 0, (tp.g) parcel.readParcelable(i.class.getClassLoader()));
+                return new i(parcel.readString(), (w) parcel.readParcelable(i.class.getClassLoader()), parcel.readString(), (StepStyle) parcel.readParcelable(i.class.getClassLoader()), parcel.readInt() != 0, (wp.g) parcel.readParcelable(i.class.getClassLoader()));
             }
 
             @Override // android.os.Parcelable.Creator
@@ -2259,42 +2259,42 @@ public abstract class l implements Parcelable {
             }
         }
 
-        public /* synthetic */ i(String str, w wVar, String str2, StepStyle stepStyle, boolean z10, tp.g gVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-            this(str, (i10 & 2) != 0 ? new w.a(null, 1, null) : wVar, str2, stepStyle, z10, (i10 & 32) != 0 ? tp.g.f50215o.a() : gVar);
+        public /* synthetic */ i(String str, w wVar, String str2, StepStyle stepStyle, boolean z10, wp.g gVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+            this(str, (i10 & 2) != 0 ? new w.a(null, 1, null) : wVar, str2, stepStyle, z10, (i10 & 32) != 0 ? wp.g.f53236o.a() : gVar);
         }
 
-        public static /* synthetic */ i k(i iVar, String str, w wVar, String str2, StepStyle stepStyle, boolean z10, tp.g gVar, int i10, Object obj) {
+        public static /* synthetic */ i l(i iVar, String str, w wVar, String str2, StepStyle stepStyle, boolean z10, wp.g gVar, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = iVar.f18606t;
+                str = iVar.f19012t;
             }
             if ((i10 & 2) != 0) {
-                wVar = iVar.f18607u;
+                wVar = iVar.f19013u;
             }
             if ((i10 & 4) != 0) {
-                str2 = iVar.f18608v;
+                str2 = iVar.f19014v;
             }
             if ((i10 & 8) != 0) {
-                stepStyle = iVar.f18609w;
+                stepStyle = iVar.f19015w;
             }
             if ((i10 & 16) != 0) {
-                z10 = iVar.f18610x;
+                z10 = iVar.f19016x;
             }
             if ((i10 & 32) != 0) {
-                gVar = iVar.f18611y;
+                gVar = iVar.f19017y;
             }
             boolean z11 = z10;
-            tp.g gVar2 = gVar;
+            wp.g gVar2 = gVar;
             return iVar.j(str, wVar, str2, stepStyle, z11, gVar2);
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
-        public tp.g a() {
-            return this.f18611y;
+        public wp.g a() {
+            return this.f19017y;
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public String b() {
-            return this.f18608v;
+            return this.f19014v;
         }
 
         @Override // android.os.Parcelable
@@ -2308,30 +2308,30 @@ public abstract class l implements Parcelable {
             }
             if (obj instanceof i) {
                 i iVar = (i) obj;
-                return Intrinsics.areEqual(this.f18606t, iVar.f18606t) && Intrinsics.areEqual(this.f18607u, iVar.f18607u) && Intrinsics.areEqual(this.f18608v, iVar.f18608v) && Intrinsics.areEqual(this.f18609w, iVar.f18609w) && this.f18610x == iVar.f18610x && Intrinsics.areEqual(this.f18611y, iVar.f18611y);
+                return Intrinsics.areEqual(this.f19012t, iVar.f19012t) && Intrinsics.areEqual(this.f19013u, iVar.f19013u) && Intrinsics.areEqual(this.f19014v, iVar.f19014v) && Intrinsics.areEqual(this.f19015w, iVar.f19015w) && this.f19016x == iVar.f19016x && Intrinsics.areEqual(this.f19017y, iVar.f19017y);
             }
             return false;
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
         public w f() {
-            return this.f18607u;
+            return this.f19013u;
         }
 
-        @Override // com.withpersona.sdk2.inquiry.internal.l, po.j2
+        @Override // com.withpersona.sdk2.inquiry.internal.l, so.j2
         public StepStyle getStyles() {
-            return this.f18609w;
+            return this.f19015w;
         }
 
         public int hashCode() {
-            int hashCode = this.f18606t.hashCode() * 31;
-            w wVar = this.f18607u;
-            int hashCode2 = (((hashCode + (wVar == null ? 0 : wVar.hashCode())) * 31) + this.f18608v.hashCode()) * 31;
-            StepStyle stepStyle = this.f18609w;
-            return ((((hashCode2 + (stepStyle != null ? stepStyle.hashCode() : 0)) * 31) + Boolean.hashCode(this.f18610x)) * 31) + this.f18611y.hashCode();
+            int hashCode = this.f19012t.hashCode() * 31;
+            w wVar = this.f19013u;
+            int hashCode2 = (((hashCode + (wVar == null ? 0 : wVar.hashCode())) * 31) + this.f19014v.hashCode()) * 31;
+            StepStyle stepStyle = this.f19015w;
+            return ((((hashCode2 + (stepStyle != null ? stepStyle.hashCode() : 0)) * 31) + Boolean.hashCode(this.f19016x)) * 31) + this.f19017y.hashCode();
         }
 
-        public final i j(String sessionToken, w wVar, String inquiryId, StepStyle stepStyle, boolean z10, tp.g inquirySessionConfig) {
+        public final i j(String sessionToken, w wVar, String inquiryId, StepStyle stepStyle, boolean z10, wp.g inquirySessionConfig) {
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
             Intrinsics.checkNotNullParameter(inquirySessionConfig, "inquirySessionConfig");
@@ -2339,51 +2339,51 @@ public abstract class l implements Parcelable {
         }
 
         @Override // com.withpersona.sdk2.inquiry.internal.l
-        public String l() {
-            return this.f18606t;
+        public String k() {
+            return this.f19012t;
         }
 
-        public final boolean m() {
-            return this.f18610x;
+        public final boolean n() {
+            return this.f19016x;
         }
 
         public String toString() {
-            String str = this.f18606t;
-            w wVar = this.f18607u;
-            String str2 = this.f18608v;
-            StepStyle stepStyle = this.f18609w;
-            boolean z10 = this.f18610x;
-            tp.g gVar = this.f18611y;
+            String str = this.f19012t;
+            w wVar = this.f19013u;
+            String str2 = this.f19014v;
+            StepStyle stepStyle = this.f19015w;
+            boolean z10 = this.f19016x;
+            wp.g gVar = this.f19017y;
             return "ShowLoadingSpinner(sessionToken=" + str + ", transitionStatus=" + wVar + ", inquiryId=" + str2 + ", styles=" + stepStyle + ", useBasicSpinner=" + z10 + ", inquirySessionConfig=" + gVar + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f18606t);
-            dest.writeParcelable(this.f18607u, i10);
-            dest.writeString(this.f18608v);
-            dest.writeParcelable(this.f18609w, i10);
-            dest.writeInt(this.f18610x ? 1 : 0);
-            dest.writeParcelable(this.f18611y, i10);
+            dest.writeString(this.f19012t);
+            dest.writeParcelable(this.f19013u, i10);
+            dest.writeString(this.f19014v);
+            dest.writeParcelable(this.f19015w, i10);
+            dest.writeInt(this.f19016x ? 1 : 0);
+            dest.writeParcelable(this.f19017y, i10);
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public i(String sessionToken, w wVar, String inquiryId, StepStyle stepStyle, boolean z10, tp.g inquirySessionConfig) {
+        public i(String sessionToken, w wVar, String inquiryId, StepStyle stepStyle, boolean z10, wp.g inquirySessionConfig) {
             super(null, null, null, null, null, null, null, 127, null);
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
             Intrinsics.checkNotNullParameter(inquirySessionConfig, "inquirySessionConfig");
-            this.f18606t = sessionToken;
-            this.f18607u = wVar;
-            this.f18608v = inquiryId;
-            this.f18609w = stepStyle;
-            this.f18610x = z10;
-            this.f18611y = inquirySessionConfig;
+            this.f19012t = sessionToken;
+            this.f19013u = wVar;
+            this.f19014v = inquiryId;
+            this.f19015w = stepStyle;
+            this.f19016x = z10;
+            this.f19017y = inquirySessionConfig;
         }
     }
 
-    public /* synthetic */ l(String str, String str2, w wVar, StepStyle stepStyle, NextStep.CancelDialog cancelDialog, String str3, tp.g gVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? null : str, (i10 & 2) != 0 ? null : str2, (i10 & 4) != 0 ? null : wVar, (i10 & 8) != 0 ? null : stepStyle, (i10 & 16) != 0 ? null : cancelDialog, (i10 & 32) != 0 ? null : str3, (i10 & 64) != 0 ? tp.g.f50215o.a() : gVar, null);
+    public /* synthetic */ l(String str, String str2, w wVar, StepStyle stepStyle, NextStep.CancelDialog cancelDialog, String str3, wp.g gVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i10 & 1) != 0 ? null : str, (i10 & 2) != 0 ? null : str2, (i10 & 4) != 0 ? null : wVar, (i10 & 8) != 0 ? null : stepStyle, (i10 & 16) != 0 ? null : cancelDialog, (i10 & 32) != 0 ? null : str3, (i10 & 64) != 0 ? wp.g.f53236o.a() : gVar, null);
     }
 }

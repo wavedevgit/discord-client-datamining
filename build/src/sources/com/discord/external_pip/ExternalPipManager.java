@@ -79,7 +79,7 @@ public final class ExternalPipManager {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit enterPipMode$lambda$0(Result result) {
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public static /* synthetic */ boolean getEnabled$default(ExternalPipManager externalPipManager, boolean z10, int i10, Object obj) {
@@ -107,7 +107,7 @@ public final class ExternalPipManager {
                     Intrinsics.checkNotNullExpressionValue(aspectRatio, "setAspectRatio(...)");
                     valueOf = Boolean.valueOf(activity.enterPictureInPictureMode(companion.setSeamlessResizeEnabledCompat(aspectRatio, false).build()));
                 } catch (Exception e10) {
-                    Result.a aVar = Result.f32461e;
+                    Result.a aVar = Result.f31985e;
                     onResult.invoke(Result.a(Result.b(kotlin.c.a(e10))));
                     return;
                 }
@@ -115,15 +115,15 @@ public final class ExternalPipManager {
                 valueOf = null;
             }
             if (Intrinsics.areEqual(valueOf, Boolean.TRUE)) {
-                Result.a aVar2 = Result.f32461e;
-                onResult.invoke(Result.a(Result.b(Unit.f32464a)));
+                Result.a aVar2 = Result.f31985e;
+                onResult.invoke(Result.a(Result.b(Unit.f31988a)));
                 return;
             }
-            Result.a aVar3 = Result.f32461e;
+            Result.a aVar3 = Result.f31985e;
             onResult.invoke(Result.a(Result.b(kotlin.c.a(new Exception("Unable to enter picture in picture mode.")))));
             return;
         }
-        Result.a aVar4 = Result.f32461e;
+        Result.a aVar4 = Result.f31985e;
         onResult.invoke(Result.a(Result.b(kotlin.c.a(new Exception("Disabled or unsupported.")))));
     }
 

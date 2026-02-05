@@ -37,7 +37,13 @@ public abstract class q {
                 str = "null current looper";
             }
             String name = handler.getLooper().getThread().getName();
-            throw new IllegalStateException("Must be called on " + name + " thread, but got " + str + ".");
+            StringBuilder sb2 = new StringBuilder(String.valueOf(name).length() + 35 + String.valueOf(str).length() + 1);
+            sb2.append("Must be called on ");
+            sb2.append(name);
+            sb2.append(" thread, but got ");
+            sb2.append(str);
+            sb2.append(".");
+            throw new IllegalStateException(sb2.toString());
         }
     }
 

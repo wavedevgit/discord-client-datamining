@@ -3,39 +3,39 @@ package com.android.billingclient.api;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f7638a;
+    private final boolean f8023a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f7639b;
+    private final boolean f8024b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f7640a;
+        private boolean f8025a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f7641b;
+        private boolean f8026b;
 
         private a() {
         }
 
         public c a() {
-            if (this.f7640a) {
-                return new c(true, this.f7641b);
+            if (this.f8025a) {
+                return new c(true, this.f8026b);
             }
             throw new IllegalArgumentException("Pending purchases for one-time products must be supported.");
         }
 
         public a b() {
-            this.f7640a = true;
+            this.f8025a = true;
             return this;
         }
     }
 
     private c(boolean z10, boolean z11) {
-        this.f7638a = z10;
-        this.f7639b = z11;
+        this.f8023a = z10;
+        this.f8024b = z11;
     }
 
     public static a c() {
@@ -44,11 +44,11 @@ public final class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean a() {
-        return this.f7638a;
+        return this.f8023a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean b() {
-        return this.f7639b;
+        return this.f8024b;
     }
 }

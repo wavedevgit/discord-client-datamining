@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ChestAndGemSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6044, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6048, 2]);

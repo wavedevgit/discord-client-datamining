@@ -1,119 +1,221 @@
 package dm;
 
-import java.util.Arrays;
-import kotlin.jvm.internal.Intrinsics;
+import android.net.ConnectivityManager;
+import android.net.LinkProperties;
+import android.net.Network;
+import android.net.NetworkCapabilities;
+import android.os.Handler;
+import android.os.Looper;
+import androidx.recyclerview.widget.h;
+import com.facebook.react.bridge.ReactApplicationContext;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f {
+public class f extends b {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final String f20704a;
+    /* renamed from: j  reason: collision with root package name */
+    private final a f20899j;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final String[] f20705b;
+    /* renamed from: k  reason: collision with root package name */
+    private Network f20900k;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final String f20706c;
+    /* renamed from: l  reason: collision with root package name */
+    private NetworkCapabilities f20901l;
 
-    /* renamed from: d  reason: collision with root package name */
-    private final boolean f20707d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final boolean f20708e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final boolean f20709f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private final boolean f20710g;
-
-    public f(String str, String[] mimeTypes, String str2, boolean z10, boolean z11, boolean z12, boolean z13) {
-        Intrinsics.checkNotNullParameter(mimeTypes, "mimeTypes");
-        this.f20704a = str;
-        this.f20705b = mimeTypes;
-        this.f20706c = str2;
-        this.f20707d = z10;
-        this.f20708e = z11;
-        this.f20709f = z12;
-        this.f20710g = z13;
-    }
-
-    public final String a() {
-        if (Intrinsics.areEqual("open", this.f20704a)) {
-            return "android.intent.action.OPEN_DOCUMENT";
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private class a extends ConnectivityManager.NetworkCallback {
+        @Override // android.net.ConnectivityManager.NetworkCallback
+        public void onAvailable(Network network) {
+            f.this.f20900k = network;
+            f.this.q(h.DEFAULT_SWIPE_ANIMATION_DURATION);
         }
-        return "android.intent.action.GET_CONTENT";
-    }
 
-    public final boolean b() {
-        return this.f20710g;
-    }
-
-    public final String c() {
-        return this.f20706c;
-    }
-
-    public final String d() {
-        if (Intrinsics.areEqual(a(), "android.intent.action.OPEN_DOCUMENT")) {
-            return "*/*";
+        @Override // android.net.ConnectivityManager.NetworkCallback
+        public void onCapabilitiesChanged(Network network, NetworkCapabilities networkCapabilities) {
+            f.this.f20900k = network;
+            f.this.f20901l = networkCapabilities;
+            f.this.s();
         }
-        return kotlin.collections.i.v0(this.f20705b, "|", null, null, 0, null, null, 62, null);
-    }
 
-    public final boolean e() {
-        return this.f20707d;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+        @Override // android.net.ConnectivityManager.NetworkCallback
+        public void onLinkPropertiesChanged(Network network, LinkProperties linkProperties) {
+            if (f.this.f20900k != null) {
+                f.this.f20900k = network;
+            }
+            f.this.q(h.DEFAULT_SWIPE_ANIMATION_DURATION);
         }
-        if (!(obj instanceof f)) {
-            return false;
+
+        @Override // android.net.ConnectivityManager.NetworkCallback
+        public void onLosing(Network network, int i10) {
+            f.this.f20900k = network;
+            f.this.s();
         }
-        f fVar = (f) obj;
-        if (Intrinsics.areEqual(this.f20704a, fVar.f20704a) && Intrinsics.areEqual(this.f20705b, fVar.f20705b) && Intrinsics.areEqual(this.f20706c, fVar.f20706c) && this.f20707d == fVar.f20707d && this.f20708e == fVar.f20708e && this.f20709f == fVar.f20709f && this.f20710g == fVar.f20710g) {
-            return true;
+
+        @Override // android.net.ConnectivityManager.NetworkCallback
+        public void onLost(Network network) {
+            f.this.f20900k = null;
+            f.this.f20901l = null;
+            f.this.s();
         }
-        return false;
-    }
 
-    public final String[] f() {
-        return this.f20705b;
-    }
-
-    public final boolean g() {
-        return this.f20708e;
-    }
-
-    public final boolean h() {
-        return this.f20709f;
-    }
-
-    public int hashCode() {
-        int hashCode;
-        String str = this.f20704a;
-        int i10 = 0;
-        if (str == null) {
-            hashCode = 0;
-        } else {
-            hashCode = str.hashCode();
+        @Override // android.net.ConnectivityManager.NetworkCallback
+        public void onUnavailable() {
+            f.this.f20900k = null;
+            f.this.f20901l = null;
+            f.this.s();
         }
-        int hashCode2 = ((hashCode * 31) + Arrays.hashCode(this.f20705b)) * 31;
-        String str2 = this.f20706c;
-        if (str2 != null) {
-            i10 = str2.hashCode();
+
+        private a() {
         }
-        return ((((((((hashCode2 + i10) * 31) + Boolean.hashCode(this.f20707d)) * 31) + Boolean.hashCode(this.f20708e)) * 31) + Boolean.hashCode(this.f20709f)) * 31) + Boolean.hashCode(this.f20710g);
     }
 
-    public String toString() {
-        String str = this.f20704a;
-        String arrays = Arrays.toString(this.f20705b);
-        String str2 = this.f20706c;
-        boolean z10 = this.f20707d;
-        boolean z11 = this.f20708e;
-        boolean z12 = this.f20709f;
-        boolean z13 = this.f20710g;
-        return "PickOptions(mode=" + str + ", mimeTypes=" + arrays + ", initialDirectoryUrl=" + str2 + ", localOnly=" + z10 + ", multiple=" + z11 + ", requestLongTermAccess=" + z12 + ", allowVirtualFiles=" + z13 + ")";
+    public f(ReactApplicationContext reactApplicationContext) {
+        super(reactApplicationContext);
+        this.f20900k = null;
+        this.f20901l = null;
+        this.f20899j = new a();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void q(int i10) {
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() { // from class: dm.e
+            @Override // java.lang.Runnable
+            public final void run() {
+                f.this.r();
+            }
+        }, i10);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void r() {
+        try {
+            this.f20901l = c().getNetworkCapabilities(this.f20900k);
+            s();
+        } catch (SecurityException unused) {
+        }
+    }
+
+    @Override // dm.b
+    public void g() {
+        try {
+            this.f20900k = c().getActiveNetwork();
+            q(0);
+            c().registerDefaultNetworkCallback(this.f20899j);
+        } catch (SecurityException unused) {
+        }
+    }
+
+    @Override // dm.b
+    public void j() {
+        try {
+            c().unregisterNetworkCallback(this.f20899j);
+        } catch (IllegalArgumentException | SecurityException unused) {
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:25:0x004c  */
+    /* JADX WARN: Removed duplicated region for block: B:26:0x0054  */
+    /* JADX WARN: Removed duplicated region for block: B:41:0x0082  */
+    /* JADX WARN: Removed duplicated region for block: B:45:0x008c  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    void s() {
+        /*
+            r10 = this;
+            em.b r0 = em.b.UNKNOWN
+            android.net.Network r1 = r10.f20900k
+            android.net.NetworkCapabilities r2 = r10.f20901l
+            r3 = 0
+            r4 = 0
+            if (r2 == 0) goto L9a
+            r5 = 2
+            boolean r5 = r2.hasTransport(r5)
+            r6 = 4
+            r7 = 1
+            if (r5 == 0) goto L16
+            em.b r0 = em.b.BLUETOOTH
+            goto L3a
+        L16:
+            boolean r5 = r2.hasTransport(r4)
+            if (r5 == 0) goto L1f
+            em.b r0 = em.b.CELLULAR
+            goto L3a
+        L1f:
+            r5 = 3
+            boolean r5 = r2.hasTransport(r5)
+            if (r5 == 0) goto L29
+            em.b r0 = em.b.ETHERNET
+            goto L3a
+        L29:
+            boolean r5 = r2.hasTransport(r7)
+            if (r5 == 0) goto L32
+            em.b r0 = em.b.WIFI
+            goto L3a
+        L32:
+            boolean r5 = r2.hasTransport(r6)
+            if (r5 == 0) goto L3a
+            em.b r0 = em.b.VPN
+        L3a:
+            if (r1 == 0) goto L45
+            android.net.ConnectivityManager r5 = r10.c()     // Catch: java.lang.SecurityException -> L45
+            android.net.NetworkInfo r5 = r5.getNetworkInfo(r1)     // Catch: java.lang.SecurityException -> L45
+            goto L46
+        L45:
+            r5 = r3
+        L46:
+            int r8 = android.os.Build.VERSION.SDK_INT
+            r9 = 28
+            if (r8 < r9) goto L54
+            r8 = 21
+            boolean r8 = r2.hasCapability(r8)
+            r8 = r8 ^ r7
+            goto L67
+        L54:
+            if (r1 == 0) goto L66
+            if (r5 == 0) goto L66
+            android.net.NetworkInfo$DetailedState r8 = r5.getDetailedState()
+            android.net.NetworkInfo$DetailedState r9 = android.net.NetworkInfo.DetailedState.CONNECTED
+            boolean r8 = r8.equals(r9)
+            if (r8 != 0) goto L66
+            r8 = r7
+            goto L67
+        L66:
+            r8 = r4
+        L67:
+            r9 = 12
+            boolean r9 = r2.hasCapability(r9)
+            if (r9 == 0) goto L7b
+            r9 = 16
+            boolean r9 = r2.hasCapability(r9)
+            if (r9 == 0) goto L7b
+            if (r8 != 0) goto L7b
+            r8 = r7
+            goto L7c
+        L7b:
+            r8 = r4
+        L7c:
+            boolean r6 = r2.hasTransport(r6)
+            if (r6 == 0) goto L8c
+            if (r8 == 0) goto L8d
+            int r2 = r2.getLinkDownstreamBandwidthKbps()
+            if (r2 == 0) goto L8d
+            r4 = r7
+            goto L8d
+        L8c:
+            r4 = r8
+        L8d:
+            if (r1 == 0) goto L9c
+            em.b r1 = em.b.CELLULAR
+            if (r0 != r1) goto L9c
+            if (r4 == 0) goto L9c
+            em.a r3 = em.a.d(r5)
+            goto L9c
+        L9a:
+            em.b r0 = em.b.NONE
+        L9c:
+            r10.k(r0, r3, r4)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: dm.f.s():void");
     }
 }

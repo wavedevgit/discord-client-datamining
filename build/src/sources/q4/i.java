@@ -17,12 +17,12 @@ public abstract class i {
         int i11 = sharedPreferences.getInt("next_alarm_manager_id", 0);
         sqLiteDatabase.D();
         try {
-            sqLiteDatabase.h0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"next_job_scheduler_id", Integer.valueOf(i10)});
-            sqLiteDatabase.h0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"next_alarm_manager_id", Integer.valueOf(i11)});
+            sqLiteDatabase.i0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"next_job_scheduler_id", Integer.valueOf(i10)});
+            sqLiteDatabase.i0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"next_alarm_manager_id", Integer.valueOf(i11)});
             sharedPreferences.edit().clear().apply();
-            sqLiteDatabase.g0();
+            sqLiteDatabase.h0();
         } finally {
-            sqLiteDatabase.s0();
+            sqLiteDatabase.t0();
         }
     }
 

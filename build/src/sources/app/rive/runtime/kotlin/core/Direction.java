@@ -49,7 +49,7 @@ public final class Direction {
     static {
         Direction[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = sr.a.a($values);
+        $ENTRIES = vr.a.a($values);
         Companion = new Companion(null);
         EnumEntries entries = getEntries();
         LinkedHashMap linkedHashMap = new LinkedHashMap(d.d(o0.e(CollectionsKt.w(entries, 10)), 16));

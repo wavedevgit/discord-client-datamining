@@ -130,50 +130,50 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GAME_CONTENT_GUILD_ID = var9;
     var2.ICYMIItemTypes = var8;
     var7 = function arg0() {
-        _fun54896: for (var _fun54896_ip = 0;;) switch (_fun54896_ip) {
+        _fun54920: for (var _fun54920_ip = 0;;) switch (_fun54920_ip) {
             case 0:
                 var1 = arg0;
                 var3 = var1.type;
                 var2 = _closure1_slot1;
                 var2 = var2.MESSAGE;
                 if (!(var2 !== var3)) {
-                    _fun54896_ip = 139;
-                    continue _fun54896
+                    _fun54920_ip = 139;
+                    continue _fun54920
                 }
             case 25:
                 var2 = _closure1_slot1;
                 var2 = var2.ACTIVITY;
                 if (!(var2 !== var3)) {
-                    _fun54896_ip = 131;
-                    continue _fun54896
+                    _fun54920_ip = 131;
+                    continue _fun54920
                 }
             case 39:
                 var2 = _closure1_slot1;
                 var2 = var2.CUSTOM_STATUS;
                 if (!(var2 !== var3)) {
-                    _fun54896_ip = 123;
-                    continue _fun54896
+                    _fun54920_ip = 123;
+                    continue _fun54920
                 }
             case 53:
                 var2 = _closure1_slot1;
                 var2 = var2.GUILD_EVENT;
                 if (!(var2 !== var3)) {
-                    _fun54896_ip = 115;
-                    continue _fun54896
+                    _fun54920_ip = 115;
+                    continue _fun54920
                 }
             case 67:
                 var2 = _closure1_slot1;
                 var2 = var2.RECOMMENDED_GUILDS;
                 if (!(var2 !== var3)) {
-                    _fun54896_ip = 107;
-                    continue _fun54896
+                    _fun54920_ip = 107;
+                    continue _fun54920
                 }
             case 81:
                 var2 = _closure1_slot1;
                 var2 = var2.GENERATED_CANDIDATE;
                 if (!(var2 !== var3)) {
-                    _fun54896_ip = 99;
-                    continue _fun54896
+                    _fun54920_ip = 99;
+                    continue _fun54920
                 }
             case 95:
                 var2 = undefined;
@@ -200,8 +200,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.GUILD_ANNOUNCEMENT;
                 var0 = 'announcement';
                 if (!(var3 !== var2)) {
-                    _fun54896_ip = 216;
-                    continue _fun54896
+                    _fun54920_ip = 216;
+                    continue _fun54920
                 }
             case 168:
                 var1 = var1.data;
@@ -210,8 +210,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 == var3;
                 var1 = undefined;
                 if (var4) {
-                    _fun54896_ip = 196;
-                    continue _fun54896
+                    _fun54920_ip = 196;
+                    continue _fun54920
                 }
             case 190:
                 var1 = var3.external_content_application_id;
@@ -219,8 +219,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 != var1;
                 var1 = 'message';
                 if (!var2) {
-                    _fun54896_ip = 213;
-                    continue _fun54896
+                    _fun54920_ip = 213;
+                    continue _fun54920
                 }
             case 207:
                 var1 = 'game_message';

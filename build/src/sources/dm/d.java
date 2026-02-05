@@ -1,37 +1,37 @@
 package dm;
 
-import android.content.Intent;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.IntentFilter;
 import android.os.Build;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final d f20689a = new d();
-
-    private d() {
+public abstract class d {
+    public static void a(Context context, BroadcastReceiver broadcastReceiver, IntentFilter intentFilter, boolean z10) {
+        int i10;
+        if (Build.VERSION.SDK_INT >= 34 && context.getApplicationInfo().targetSdkVersion >= 34) {
+            if (z10) {
+                i10 = 2;
+            } else {
+                i10 = 4;
+            }
+            context.registerReceiver(broadcastReceiver, intentFilter, i10);
+            return;
+        }
+        context.registerReceiver(broadcastReceiver, intentFilter);
     }
 
-    public final Intent a(f options) {
-        String str;
-        Intrinsics.checkNotNullParameter(options, "options");
-        Intent intent = new Intent(options.a());
-        String[] f10 = options.f();
-        if (f10.length > 1) {
-            intent.putExtra("android.intent.extra.MIME_TYPES", f10);
-            str = options.d();
-        } else {
-            str = f10[0];
+    public static boolean b(Context context) {
+        if (androidx.core.content.a.a(context, "android.permission.ACCESS_WIFI_STATE") == 0) {
+            return true;
         }
-        intent.setType(str);
-        if (Build.VERSION.SDK_INT >= 26 && options.c() != null) {
-            intent.putExtra("android.provider.extra.INITIAL_URI", options.c());
+        return false;
+    }
+
+    public static void c(byte[] bArr) {
+        for (int i10 = 0; i10 < bArr.length / 2; i10++) {
+            byte b10 = bArr[i10];
+            bArr[i10] = bArr[(bArr.length - i10) - 1];
+            bArr[(bArr.length - i10) - 1] = b10;
         }
-        if (!options.b()) {
-            intent.addCategory("android.intent.category.OPENABLE");
-        }
-        intent.putExtra("android.intent.extra.LOCAL_ONLY", options.e());
-        intent.putExtra("android.intent.extra.ALLOW_MULTIPLE", options.g());
-        return intent;
     }
 }

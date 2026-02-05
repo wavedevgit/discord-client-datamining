@@ -7,7 +7,7 @@ import java.util.Deque;
 final class p5 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Deque f13690a = new ArrayDeque(16);
+    private final Deque f14084a = new ArrayDeque(16);
 
     private p5(boolean z10) {
     }
@@ -17,29 +17,29 @@ final class p5 {
     }
 
     private final long h() {
-        if (this.f13690a.isEmpty()) {
+        if (this.f14084a.isEmpty()) {
             return 0L;
         }
-        return ((Long) this.f13690a.peek()).longValue();
+        return ((Long) this.f14084a.peek()).longValue();
     }
 
     private final void i(long j10) {
-        this.f13690a.pop();
-        this.f13690a.push(Long.valueOf(j10));
+        this.f14084a.pop();
+        this.f14084a.push(Long.valueOf(j10));
     }
 
     public final void b() {
-        if (this.f13690a.isEmpty()) {
+        if (this.f14084a.isEmpty()) {
             return;
         }
-        throw new IOException(String.format("data item not completed, stackSize: %s scope: %s", Integer.valueOf(this.f13690a.size()), Long.valueOf(h())));
+        throw new IOException(String.format("data item not completed, stackSize: %s scope: %s", Integer.valueOf(this.f14084a.size()), Long.valueOf(h())));
     }
 
     public final void c() {
         long h10 = h();
         if (h10 < 0) {
             if (h10 != -5) {
-                this.f13690a.pop();
+                this.f14084a.pop();
                 return;
             }
             throw new IOException("expected a value for dangling key in indefinite-length map");
@@ -76,7 +76,7 @@ final class p5 {
         long h10 = h();
         int i10 = (h10 > 1L ? 1 : (h10 == 1L ? 0 : -1));
         if (i10 == 0) {
-            this.f13690a.pop();
+            this.f14084a.pop();
         } else if (i10 > 0) {
             i(h10 - 1);
         } else if (h10 == -4) {
@@ -87,6 +87,6 @@ final class p5 {
     }
 
     public final void g(long j10) {
-        this.f13690a.push(Long.valueOf(j10));
+        this.f14084a.push(Long.valueOf(j10));
     }
 }

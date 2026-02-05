@@ -15,63 +15,63 @@ import java.util.ArrayList;
 public class c implements j, AdapterView.OnItemClickListener {
 
     /* renamed from: d  reason: collision with root package name */
-    Context f1285d;
+    Context f1397d;
 
     /* renamed from: e  reason: collision with root package name */
-    LayoutInflater f1286e;
+    LayoutInflater f1398e;
 
     /* renamed from: i  reason: collision with root package name */
-    e f1287i;
+    e f1399i;
 
     /* renamed from: o  reason: collision with root package name */
-    ExpandedMenuView f1288o;
+    ExpandedMenuView f1400o;
 
     /* renamed from: p  reason: collision with root package name */
-    int f1289p;
+    int f1401p;
 
     /* renamed from: q  reason: collision with root package name */
-    int f1290q;
+    int f1402q;
 
     /* renamed from: r  reason: collision with root package name */
-    int f1291r;
+    int f1403r;
 
     /* renamed from: s  reason: collision with root package name */
-    private j.a f1292s;
+    private j.a f1404s;
 
     /* renamed from: t  reason: collision with root package name */
-    a f1293t;
+    a f1405t;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private class a extends BaseAdapter {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f1294d = -1;
+        private int f1406d = -1;
 
         public a() {
             a();
         }
 
         void a() {
-            g v10 = c.this.f1287i.v();
+            g v10 = c.this.f1399i.v();
             if (v10 != null) {
-                ArrayList z10 = c.this.f1287i.z();
+                ArrayList z10 = c.this.f1399i.z();
                 int size = z10.size();
                 for (int i10 = 0; i10 < size; i10++) {
                     if (((g) z10.get(i10)) == v10) {
-                        this.f1294d = i10;
+                        this.f1406d = i10;
                         return;
                     }
                 }
             }
-            this.f1294d = -1;
+            this.f1406d = -1;
         }
 
         @Override // android.widget.Adapter
         /* renamed from: b */
         public g getItem(int i10) {
-            ArrayList z10 = c.this.f1287i.z();
-            int i11 = i10 + c.this.f1289p;
-            int i12 = this.f1294d;
+            ArrayList z10 = c.this.f1399i.z();
+            int i11 = i10 + c.this.f1401p;
+            int i12 = this.f1406d;
             if (i12 >= 0 && i11 >= i12) {
                 i11++;
             }
@@ -80,8 +80,8 @@ public class c implements j, AdapterView.OnItemClickListener {
 
         @Override // android.widget.Adapter
         public int getCount() {
-            int size = c.this.f1287i.z().size() - c.this.f1289p;
-            if (this.f1294d < 0) {
+            int size = c.this.f1399i.z().size() - c.this.f1401p;
+            if (this.f1406d < 0) {
                 return size;
             }
             return size - 1;
@@ -96,7 +96,7 @@ public class c implements j, AdapterView.OnItemClickListener {
         public View getView(int i10, View view, ViewGroup viewGroup) {
             if (view == null) {
                 c cVar = c.this;
-                view = cVar.f1286e.inflate(cVar.f1291r, viewGroup, false);
+                view = cVar.f1398e.inflate(cVar.f1403r, viewGroup, false);
             }
             ((k.a) view).c(getItem(i10), 0);
             return view;
@@ -111,13 +111,13 @@ public class c implements j, AdapterView.OnItemClickListener {
 
     public c(Context context, int i10) {
         this(i10, 0);
-        this.f1285d = context;
-        this.f1286e = LayoutInflater.from(context);
+        this.f1397d = context;
+        this.f1398e = LayoutInflater.from(context);
     }
 
     @Override // androidx.appcompat.view.menu.j
     public void a(e eVar, boolean z10) {
-        j.a aVar = this.f1292s;
+        j.a aVar = this.f1404s;
         if (aVar != null) {
             aVar.a(eVar, z10);
         }
@@ -130,7 +130,7 @@ public class c implements j, AdapterView.OnItemClickListener {
 
     @Override // androidx.appcompat.view.menu.j
     public void c(j.a aVar) {
-        this.f1292s = aVar;
+        this.f1404s = aVar;
     }
 
     @Override // androidx.appcompat.view.menu.j
@@ -139,7 +139,7 @@ public class c implements j, AdapterView.OnItemClickListener {
             return false;
         }
         new f(mVar).d(null);
-        j.a aVar = this.f1292s;
+        j.a aVar = this.f1404s;
         if (aVar != null) {
             aVar.b(mVar);
             return true;
@@ -149,7 +149,7 @@ public class c implements j, AdapterView.OnItemClickListener {
 
     @Override // androidx.appcompat.view.menu.j
     public void e(boolean z10) {
-        a aVar = this.f1293t;
+        a aVar = this.f1405t;
         if (aVar != null) {
             aVar.notifyDataSetChanged();
         }
@@ -167,49 +167,49 @@ public class c implements j, AdapterView.OnItemClickListener {
 
     @Override // androidx.appcompat.view.menu.j
     public void h(Context context, e eVar) {
-        if (this.f1290q != 0) {
-            ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(context, this.f1290q);
-            this.f1285d = contextThemeWrapper;
-            this.f1286e = LayoutInflater.from(contextThemeWrapper);
-        } else if (this.f1285d != null) {
-            this.f1285d = context;
-            if (this.f1286e == null) {
-                this.f1286e = LayoutInflater.from(context);
+        if (this.f1402q != 0) {
+            ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(context, this.f1402q);
+            this.f1397d = contextThemeWrapper;
+            this.f1398e = LayoutInflater.from(contextThemeWrapper);
+        } else if (this.f1397d != null) {
+            this.f1397d = context;
+            if (this.f1398e == null) {
+                this.f1398e = LayoutInflater.from(context);
             }
         }
-        this.f1287i = eVar;
-        a aVar = this.f1293t;
+        this.f1399i = eVar;
+        a aVar = this.f1405t;
         if (aVar != null) {
             aVar.notifyDataSetChanged();
         }
     }
 
     public ListAdapter i() {
-        if (this.f1293t == null) {
-            this.f1293t = new a();
+        if (this.f1405t == null) {
+            this.f1405t = new a();
         }
-        return this.f1293t;
+        return this.f1405t;
     }
 
     public k j(ViewGroup viewGroup) {
-        if (this.f1288o == null) {
-            this.f1288o = (ExpandedMenuView) this.f1286e.inflate(f.g.f22978g, viewGroup, false);
-            if (this.f1293t == null) {
-                this.f1293t = new a();
+        if (this.f1400o == null) {
+            this.f1400o = (ExpandedMenuView) this.f1398e.inflate(f.g.f22003g, viewGroup, false);
+            if (this.f1405t == null) {
+                this.f1405t = new a();
             }
-            this.f1288o.setAdapter((ListAdapter) this.f1293t);
-            this.f1288o.setOnItemClickListener(this);
+            this.f1400o.setAdapter((ListAdapter) this.f1405t);
+            this.f1400o.setOnItemClickListener(this);
         }
-        return this.f1288o;
+        return this.f1400o;
     }
 
     @Override // android.widget.AdapterView.OnItemClickListener
     public void onItemClick(AdapterView adapterView, View view, int i10, long j10) {
-        this.f1287i.N(this.f1293t.getItem(i10), this, 0);
+        this.f1399i.N(this.f1405t.getItem(i10), this, 0);
     }
 
     public c(int i10, int i11) {
-        this.f1291r = i10;
-        this.f1290q = i11;
+        this.f1403r = i10;
+        this.f1402q = i11;
     }
 }

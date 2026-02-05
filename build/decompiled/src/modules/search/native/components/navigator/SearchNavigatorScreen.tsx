@@ -124,21 +124,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var3.addListener;
             var1 = 'transitionEnd';
             var0 = function(arg0) { // Environment: var0
-                _fun109425: for (var _fun109425_ip = 0;;) switch (_fun109425_ip) {
+                _fun109486: for (var _fun109486_ip = 0;;) switch (_fun109486_ip) {
                     case 0:
                         var0 = arg0;
                         var0 = var0.data;
                         var0 = var0.closing;
                         if (var0) {
-                            _fun109425_ip = 69;
-                            continue _fun109425
+                            _fun109486_ip = 69;
+                            continue _fun109486
                         }
                     case 17:
                         var1 = _closure2_slot3;
                         var1 = var1.current;
                         if (var1) {
-                            _fun109425_ip = 69;
-                            continue _fun109425
+                            _fun109486_ip = 69;
+                            continue _fun109486
                         }
                     case 32:
                         var2 = _closure2_slot3;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var0.current;
                         var0 = null;
                         if (!(var0 != var1)) {
-                            _fun109425_ip = 69;
-                            continue _fun109425
+                            _fun109486_ip = 69;
+                            continue _fun109486
                         }
                     case 59:
                         var0 = var1.focus;
@@ -291,4 +291,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 13700, 1464, 14078, 4902, 1234, 4706, 8727, 13128, 13702, 13713, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 13722, 1464, 14100, 4904, 1234, 4706, 8745, 13145, 13724, 13735, 2]);

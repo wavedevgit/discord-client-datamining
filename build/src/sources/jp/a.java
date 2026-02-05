@@ -1,22 +1,58 @@
 package jp;
 
-import java.util.List;
-import kotlin.Metadata;
-import kotlin.coroutines.Continuation;
-import lv.z;
-import nv.i;
-import nv.k;
-import nv.l;
-import nv.o;
-import nv.q;
-import nv.s;
-import okhttp3.MultipartBody;
-import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bf\u0018\u00002\u00020\u0001J8\u0010\t\u001a\u0006\u0012\u0002\b\u00030\b2\b\b\u0001\u0010\u0003\u001a\u00020\u00022\b\b\u0001\u0010\u0004\u001a\u00020\u00022\u000e\b\u0001\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005H§@¢\u0006\u0004\b\t\u0010\n¨\u0006\u000b"}, d2 = {"Ljp/a;", "", "", "sessionToken", "inquiryId", "", "Lokhttp3/MultipartBody$b;", "body", "Llv/z;", "a", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "selfie_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewbinding.ViewBinding;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.materialswitch.MaterialSwitch;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
-    @l
-    @k({"Accept: multipart/form-data"})
-    @o("/api/internal/verify/v1/inquiries/{inquiryId}/transition")
-    Object a(@i("Authorization") @NotNull String str, @s("inquiryId") @NotNull String str2, @q @NotNull List<MultipartBody.b> list, @NotNull Continuation<? super z<?>> continuation);
+public final class a implements ViewBinding {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final ConstraintLayout f31162a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final MaterialSwitch f31163b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final MaterialToolbar f31164c;
+
+    private a(ConstraintLayout constraintLayout, MaterialSwitch materialSwitch, MaterialToolbar materialToolbar) {
+        this.f31162a = constraintLayout;
+        this.f31163b = materialSwitch;
+        this.f31164c = materialToolbar;
+    }
+
+    public static a a(View view) {
+        int i10 = ip.a.f30040c;
+        MaterialSwitch materialSwitch = (MaterialSwitch) e4.a.a(view, i10);
+        if (materialSwitch != null) {
+            i10 = ip.a.f30041d;
+            MaterialToolbar materialToolbar = (MaterialToolbar) e4.a.a(view, i10);
+            if (materialToolbar != null) {
+                return new a((ConstraintLayout) view, materialSwitch, materialToolbar);
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+    }
+
+    public static a c(LayoutInflater layoutInflater) {
+        return d(layoutInflater, null, false);
+    }
+
+    public static a d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(ip.b.f30042a, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return a(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public ConstraintLayout getRoot() {
+        return this.f31162a;
+    }
 }

@@ -77,7 +77,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import js.m0;
 import kotlin.Lazy;
 import kotlin.Pair;
 import kotlin.Result;
@@ -95,6 +94,7 @@ import kotlin.text.StringsKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.FlowCollector;
+import ms.m0;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class y extends FrameLayout {
@@ -109,49 +109,49 @@ public final class y extends FrameLayout {
     private final Lazy I;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ThemedReactContext f17315d;
+    private final ThemedReactContext f17721d;
 
     /* renamed from: e  reason: collision with root package name */
-    private k f17316e;
+    private k f17722e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f17317i;
+    private String f17723i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f17318o;
+    private int f17724o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f17319p;
+    private String f17725p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f17320q;
+    private String f17726q;
 
     /* renamed from: r  reason: collision with root package name */
-    private String f17321r;
+    private String f17727r;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f17322s;
+    private String f17728s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Fit f17323t;
+    private Fit f17729t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Float f17324u;
+    private Float f17730u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Alignment f17325v;
+    private Alignment f17731v;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f17326w;
+    private boolean f17732w;
 
     /* renamed from: x  reason: collision with root package name */
-    private ReadableMap f17327x;
+    private ReadableMap f17733x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f17328y;
+    private boolean f17734y;
 
     /* renamed from: z  reason: collision with root package name */
-    private ExceptionsManagerModule f17329z;
+    private ExceptionsManagerModule f17735z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements RiveFileController.Listener {
@@ -168,7 +168,7 @@ public final class y extends FrameLayout {
             Intrinsics.checkNotNullParameter(animation, "animation");
             if (animation instanceof LinearAnimationInstance) {
                 LinearAnimationInstance linearAnimationInstance = (LinearAnimationInstance) animation;
-                y.this.W(linearAnimationInstance.getName(), com.rivereactnative.f.f17245e.a(linearAnimationInstance.getLoop()));
+                y.this.W(linearAnimationInstance.getName(), com.rivereactnative.f.f17651e.a(linearAnimationInstance.getLoop()));
                 return;
             }
             throw new IllegalArgumentException("Only animation can be passed as an argument");
@@ -237,47 +237,47 @@ public final class y extends FrameLayout {
     public static final class c {
 
         /* renamed from: e  reason: collision with root package name */
-        public static final c f17332e = new c("PLAY", 0, "onPlay");
+        public static final c f17738e = new c("PLAY", 0, "onPlay");
 
         /* renamed from: i  reason: collision with root package name */
-        public static final c f17333i = new c("PAUSE", 1, "onPause");
+        public static final c f17739i = new c("PAUSE", 1, "onPause");
 
         /* renamed from: o  reason: collision with root package name */
-        public static final c f17334o = new c("STOP", 2, "onStop");
+        public static final c f17740o = new c("STOP", 2, "onStop");
 
         /* renamed from: p  reason: collision with root package name */
-        public static final c f17335p = new c("LOOP_END", 3, "onLoopEnd");
+        public static final c f17741p = new c("LOOP_END", 3, "onLoopEnd");
 
         /* renamed from: q  reason: collision with root package name */
-        public static final c f17336q = new c("STATE_CHANGED", 4, "onStateChanged");
+        public static final c f17742q = new c("STATE_CHANGED", 4, "onStateChanged");
 
         /* renamed from: r  reason: collision with root package name */
-        public static final c f17337r = new c("RIVE_EVENT", 5, "onRiveEventReceived");
+        public static final c f17743r = new c("RIVE_EVENT", 5, "onRiveEventReceived");
 
         /* renamed from: s  reason: collision with root package name */
-        public static final c f17338s = new c("ERROR", 6, "onError");
+        public static final c f17744s = new c("ERROR", 6, "onError");
 
         /* renamed from: t  reason: collision with root package name */
-        private static final /* synthetic */ c[] f17339t;
+        private static final /* synthetic */ c[] f17745t;
 
         /* renamed from: u  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f17340u;
+        private static final /* synthetic */ EnumEntries f17746u;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f17341d;
+        private final String f17747d;
 
         static {
             c[] a10 = a();
-            f17339t = a10;
-            f17340u = sr.a.a(a10);
+            f17745t = a10;
+            f17746u = vr.a.a(a10);
         }
 
         private c(String str, int i10, String str2) {
-            this.f17341d = str2;
+            this.f17747d = str2;
         }
 
         private static final /* synthetic */ c[] a() {
-            return new c[]{f17332e, f17333i, f17334o, f17335p, f17336q, f17337r, f17338s};
+            return new c[]{f17738e, f17739i, f17740o, f17741p, f17742q, f17743r, f17744s};
         }
 
         public static c valueOf(String str) {
@@ -285,12 +285,12 @@ public final class y extends FrameLayout {
         }
 
         public static c[] values() {
-            return (c[]) f17339t.clone();
+            return (c[]) f17745t.clone();
         }
 
         @Override // java.lang.Enum
         public String toString() {
-            return this.f17341d;
+            return this.f17747d;
         }
     }
 
@@ -298,46 +298,46 @@ public final class y extends FrameLayout {
     public /* synthetic */ class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f17342a;
+        public static final /* synthetic */ int[] f17748a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f17343b;
+        public static final /* synthetic */ int[] f17749b;
 
         static {
             int[] iArr = new int[com.rivereactnative.g.values().length];
             try {
-                iArr[com.rivereactnative.g.f17257o.ordinal()] = 1;
+                iArr[com.rivereactnative.g.f17663o.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[com.rivereactnative.g.f17258p.ordinal()] = 2;
+                iArr[com.rivereactnative.g.f17664p.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[com.rivereactnative.g.f17256i.ordinal()] = 3;
+                iArr[com.rivereactnative.g.f17662i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[com.rivereactnative.g.f17259q.ordinal()] = 4;
+                iArr[com.rivereactnative.g.f17665q.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[com.rivereactnative.g.f17263u.ordinal()] = 5;
+                iArr[com.rivereactnative.g.f17669u.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr[com.rivereactnative.g.f17260r.ordinal()] = 6;
+                iArr[com.rivereactnative.g.f17666r.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                iArr[com.rivereactnative.g.f17261s.ordinal()] = 7;
+                iArr[com.rivereactnative.g.f17667s.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr[com.rivereactnative.g.f17262t.ordinal()] = 8;
+                iArr[com.rivereactnative.g.f17668t.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
-            f17342a = iArr;
+            f17748a = iArr;
             int[] iArr2 = new int[ReadableType.values().length];
             try {
                 iArr2[ReadableType.Null.ordinal()] = 1;
@@ -363,7 +363,7 @@ public final class y extends FrameLayout {
                 iArr2[ReadableType.Array.ordinal()] = 6;
             } catch (NoSuchFieldError unused14) {
             }
-            f17343b = iArr2;
+            f17749b = iArr2;
         }
     }
 
@@ -371,28 +371,28 @@ public final class y extends FrameLayout {
     public static final class e extends com.android.volley.n {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f17344d;
+        final /* synthetic */ String f17750d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ y f17345e;
+        final /* synthetic */ y f17751e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f17346i;
+        final /* synthetic */ String f17752i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ int f17347o;
+        final /* synthetic */ int f17753o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ int f17348p;
+        final /* synthetic */ int f17754p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(String str, y yVar, String str2, int i10, int i11) {
             super(0, str, null);
-            this.f17344d = str;
-            this.f17345e = yVar;
-            this.f17346i = str2;
-            this.f17347o = i10;
-            this.f17348p = i11;
+            this.f17750d = str;
+            this.f17751e = yVar;
+            this.f17752i = str2;
+            this.f17753o = i10;
+            this.f17754p = i11;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -436,8 +436,8 @@ public final class y extends FrameLayout {
                 java.lang.String r0 = "Image download error."
                 java.lang.String r1 = "RiveReactNative"
                 android.util.Log.d(r1, r0)
-                int r0 = r10.f17347o
-                int r2 = r10.f17348p
+                int r0 = r10.f17753o
+                int r2 = r10.f17754p
                 r3 = 1
                 r4 = 0
                 if (r0 >= r2) goto L2a
@@ -445,9 +445,9 @@ public final class y extends FrameLayout {
                 if (r2 != 0) goto L28
                 boolean r2 = r11 instanceof com.android.volley.l
                 if (r2 != 0) goto L28
-                com.android.volley.k r2 = r11.f7818d
+                com.android.volley.k r2 = r11.f8203d
                 if (r2 == 0) goto L23
-                int r2 = r2.f7789a
+                int r2 = r2.f8174a
                 goto L24
             L23:
                 r2 = r4
@@ -481,19 +481,19 @@ public final class y extends FrameLayout {
                 android.os.Handler r11 = new android.os.Handler
                 android.os.Looper r0 = android.os.Looper.getMainLooper()
                 r11.<init>(r0)
-                com.rivereactnative.y r5 = r10.f17345e
-                java.lang.String r6 = r10.f17344d
-                java.lang.String r7 = r10.f17346i
-                int r8 = r10.f17347o
-                int r9 = r10.f17348p
+                com.rivereactnative.y r5 = r10.f17751e
+                java.lang.String r6 = r10.f17750d
+                java.lang.String r7 = r10.f17752i
+                int r8 = r10.f17753o
+                int r9 = r10.f17754p
                 com.rivereactnative.a0 r4 = new com.rivereactnative.a0
                 r4.<init>()
                 r11.postDelayed(r4, r2)
                 return
             L6f:
-                com.android.volley.k r0 = r11.f7818d
+                com.android.volley.k r0 = r11.f8203d
                 if (r0 == 0) goto L75
-                int r4 = r0.f7789a
+                int r4 = r0.f8174a
             L75:
                 boolean r0 = r11 instanceof com.android.volley.t
                 if (r0 == 0) goto L7c
@@ -518,8 +518,8 @@ public final class y extends FrameLayout {
                 if (r11 != 0) goto L9f
                 java.lang.String r11 = "Unknown error"
             L9f:
-                int r0 = r10.f17348p
-                java.lang.String r2 = r10.f17344d
+                int r0 = r10.f17754p
+                java.lang.String r2 = r10.f17750d
                 java.lang.StringBuilder r3 = new java.lang.StringBuilder
                 r3.<init>()
                 java.lang.String r4 = "Failed to download image after "
@@ -546,7 +546,7 @@ public final class y extends FrameLayout {
                 if (kVar == null) {
                     c10 = com.android.volley.p.a(new com.android.volley.m());
                 } else {
-                    c10 = com.android.volley.p.c(kVar.f7790b, c6.e.e(kVar));
+                    c10 = com.android.volley.p.c(kVar.f8175b, c6.e.e(kVar));
                 }
                 Intrinsics.checkNotNull(c10);
                 return c10;
@@ -565,7 +565,7 @@ public final class y extends FrameLayout {
             int length = response.length;
             Log.d("RiveReactNative", "Image downloaded successfully: " + length + " bytes.");
             try {
-                k kVar = this.f17345e.f17316e;
+                k kVar = this.f17751e.f17722e;
                 if (kVar != null) {
                     RiveFileController controller = kVar.getController();
                     if (controller != null) {
@@ -576,8 +576,8 @@ public final class y extends FrameLayout {
                             }
                             final RiveRenderImage make = RiveRenderImage.Companion.make(response, defaultRendererType);
                             Handler handler = new Handler(Looper.getMainLooper());
-                            final y yVar = this.f17345e;
-                            final String str = this.f17346i;
+                            final y yVar = this.f17751e;
+                            final String str = this.f17752i;
                             handler.post(new Runnable() { // from class: com.rivereactnative.z
                                 @Override // java.lang.Runnable
                                 public final void run() {
@@ -590,8 +590,8 @@ public final class y extends FrameLayout {
                 defaultRendererType = Rive.INSTANCE.getDefaultRendererType();
                 final RiveRenderImage make2 = RiveRenderImage.Companion.make(response, defaultRendererType);
                 Handler handler2 = new Handler(Looper.getMainLooper());
-                final y yVar2 = this.f17345e;
-                final String str2 = this.f17346i;
+                final y yVar2 = this.f17751e;
+                final String str2 = this.f17752i;
                 handler2.post(new Runnable() { // from class: com.rivereactnative.z
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -600,7 +600,7 @@ public final class y extends FrameLayout {
                 });
             } catch (RiveException e10) {
                 Log.e("RiveReactNative", "RiveException creating image from downloaded data", e10);
-                this.f17345e.I(e10);
+                this.f17751e.I(e10);
             } catch (Exception e11) {
                 Log.e("RiveReactNative", "Exception creating image from downloaded data", e11);
             }
@@ -612,56 +612,56 @@ public final class y extends FrameLayout {
     public static final class f extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f17349d;
+        int f17755d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ URI f17350e;
+        final /* synthetic */ URI f17756e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ p.b f17351i;
+        final /* synthetic */ p.b f17757i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ y f17352o;
+        final /* synthetic */ y f17758o;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f17353d;
+            int f17759d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ p.b f17354e;
+            final /* synthetic */ p.b f17760e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ byte[] f17355i;
+            final /* synthetic */ byte[] f17761i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(p.b bVar, byte[] bArr, Continuation continuation) {
                 super(2, continuation);
-                this.f17354e = bVar;
-                this.f17355i = bArr;
+                this.f17760e = bVar;
+                this.f17761i = bArr;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new a(this.f17354e, this.f17355i, continuation);
+                return new a(this.f17760e, this.f17761i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                rr.b.f();
-                if (this.f17353d == 0) {
+                ur.b.f();
+                if (this.f17759d == 0) {
                     kotlin.c.b(obj);
-                    this.f17354e.a(this.f17355i);
-                    return Unit.f32464a;
+                    this.f17760e.a(this.f17761i);
+                    return Unit.f31988a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
@@ -670,65 +670,65 @@ public final class y extends FrameLayout {
         public static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f17356d;
+            int f17762d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ y f17357e;
+            final /* synthetic */ y f17763e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ URI f17358i;
+            final /* synthetic */ URI f17764i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ com.android.volley.u f17359o;
+            final /* synthetic */ com.android.volley.u f17765o;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             b(y yVar, URI uri, com.android.volley.u uVar, Continuation continuation) {
                 super(2, continuation);
-                this.f17357e = yVar;
-                this.f17358i = uri;
-                this.f17359o = uVar;
+                this.f17763e = yVar;
+                this.f17764i = uri;
+                this.f17765o = uVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new b(this.f17357e, this.f17358i, this.f17359o, continuation);
+                return new b(this.f17763e, this.f17764i, this.f17765o, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                rr.b.f();
-                if (this.f17356d == 0) {
+                ur.b.f();
+                if (this.f17762d == 0) {
                     kotlin.c.b(obj);
-                    y yVar = this.f17357e;
-                    String uri = this.f17358i.toString();
+                    y yVar = this.f17763e;
+                    String uri = this.f17764i.toString();
                     Intrinsics.checkNotNullExpressionValue(uri, "toString(...)");
-                    yVar.N(uri, this.f17359o, this.f17357e.A);
-                    return Unit.f32464a;
+                    yVar.N(uri, this.f17765o, this.f17763e.A);
+                    return Unit.f31988a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+                return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         f(URI uri, p.b bVar, y yVar, Continuation continuation) {
             super(2, continuation);
-            this.f17350e = uri;
-            this.f17351i = bVar;
-            this.f17352o = yVar;
+            this.f17756e = uri;
+            this.f17757i = bVar;
+            this.f17758o = yVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new f(this.f17350e, this.f17351i, this.f17352o, continuation);
+            return new f(this.f17756e, this.f17757i, this.f17758o, continuation);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:30:0x00c2, code lost:
-            if (js.g.g(r0, r4, r11) != r1) goto L7;
+            if (ms.g.g(r0, r4, r11) != r1) goto L7;
          */
         @Override // kotlin.coroutines.jvm.internal.a
         /*
@@ -738,8 +738,8 @@ public final class y extends FrameLayout {
         public final java.lang.Object invokeSuspend(java.lang.Object r12) {
             /*
                 r11 = this;
-                java.lang.Object r1 = rr.b.f()
-                int r0 = r11.f17349d
+                java.lang.Object r1 = ur.b.f()
+                int r0 = r11.f17755d
                 r2 = 0
                 r3 = 2
                 r4 = 1
@@ -763,25 +763,25 @@ public final class y extends FrameLayout {
             L24:
                 kotlin.c.b(r12)
                 java.io.File r12 = new java.io.File     // Catch: java.lang.Exception -> L21
-                java.net.URI r0 = r11.f17350e     // Catch: java.lang.Exception -> L21
+                java.net.URI r0 = r11.f17756e     // Catch: java.lang.Exception -> L21
                 java.lang.String r0 = r0.getPath()     // Catch: java.lang.Exception -> L21
                 r12.<init>(r0)     // Catch: java.lang.Exception -> L21
                 boolean r0 = r12.exists()     // Catch: java.lang.Exception -> L21
                 if (r0 == 0) goto L73
                 boolean r0 = r12.canRead()     // Catch: java.lang.Exception -> L21
                 if (r0 == 0) goto L56
-                byte[] r12 = wr.j.h(r12)     // Catch: java.lang.Exception -> L21
-                js.c1 r0 = js.m0.c()     // Catch: java.lang.Exception -> L21
+                byte[] r12 = zr.j.h(r12)     // Catch: java.lang.Exception -> L21
+                ms.c1 r0 = ms.m0.c()     // Catch: java.lang.Exception -> L21
                 com.rivereactnative.y$f$a r5 = new com.rivereactnative.y$f$a     // Catch: java.lang.Exception -> L21
-                com.android.volley.p$b r6 = r11.f17351i     // Catch: java.lang.Exception -> L21
+                com.android.volley.p$b r6 = r11.f17757i     // Catch: java.lang.Exception -> L21
                 r5.<init>(r6, r12, r2)     // Catch: java.lang.Exception -> L21
-                r11.f17349d = r4     // Catch: java.lang.Exception -> L21
-                java.lang.Object r12 = js.g.g(r0, r5, r11)     // Catch: java.lang.Exception -> L21
+                r11.f17755d = r4     // Catch: java.lang.Exception -> L21
+                java.lang.Object r12 = ms.g.g(r0, r5, r11)     // Catch: java.lang.Exception -> L21
                 if (r12 != r1) goto Lc5
                 goto Lc4
             L56:
                 java.io.IOException r12 = new java.io.IOException     // Catch: java.lang.Exception -> L21
-                java.net.URI r0 = r11.f17350e     // Catch: java.lang.Exception -> L21
+                java.net.URI r0 = r11.f17756e     // Catch: java.lang.Exception -> L21
                 java.lang.String r0 = r0.getPath()     // Catch: java.lang.Exception -> L21
                 java.lang.StringBuilder r4 = new java.lang.StringBuilder     // Catch: java.lang.Exception -> L21
                 r4.<init>()     // Catch: java.lang.Exception -> L21
@@ -793,7 +793,7 @@ public final class y extends FrameLayout {
                 throw r12     // Catch: java.lang.Exception -> L21
             L73:
                 java.io.FileNotFoundException r12 = new java.io.FileNotFoundException     // Catch: java.lang.Exception -> L21
-                java.net.URI r0 = r11.f17350e     // Catch: java.lang.Exception -> L21
+                java.net.URI r0 = r11.f17756e     // Catch: java.lang.Exception -> L21
                 java.lang.String r0 = r0.getPath()     // Catch: java.lang.Exception -> L21
                 java.lang.StringBuilder r4 = new java.lang.StringBuilder     // Catch: java.lang.Exception -> L21
                 r4.<init>()     // Catch: java.lang.Exception -> L21
@@ -821,18 +821,18 @@ public final class y extends FrameLayout {
                 r0.<init>(r12)
                 r12 = r0
             Laf:
-                js.c1 r0 = js.m0.c()
+                ms.c1 r0 = ms.m0.c()
                 com.rivereactnative.y$f$b r4 = new com.rivereactnative.y$f$b
-                com.rivereactnative.y r5 = r11.f17352o
-                java.net.URI r6 = r11.f17350e
+                com.rivereactnative.y r5 = r11.f17758o
+                java.net.URI r6 = r11.f17756e
                 r4.<init>(r5, r6, r12, r2)
-                r11.f17349d = r3
-                java.lang.Object r12 = js.g.g(r0, r4, r11)
+                r11.f17755d = r3
+                java.lang.Object r12 = ms.g.g(r0, r4, r11)
                 if (r12 != r1) goto Lc5
             Lc4:
                 return r1
             Lc5:
-                kotlin.Unit r12 = kotlin.Unit.f32464a
+                kotlin.Unit r12 = kotlin.Unit.f31988a
                 return r12
             */
             throw new UnsupportedOperationException("Method not decompiled: com.rivereactnative.y.f.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -840,7 +840,7 @@ public final class y extends FrameLayout {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -849,39 +849,39 @@ public final class y extends FrameLayout {
     public static final class g extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f17360d;
+        int f17766d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ com.rivereactnative.g f17361e;
+        final /* synthetic */ com.rivereactnative.g f17767e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ViewModelProperty f17362i;
+        final /* synthetic */ ViewModelProperty f17768i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ y f17363o;
+        final /* synthetic */ y f17769o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ String f17364p;
+        final /* synthetic */ String f17770p;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ y f17365d;
+            final /* synthetic */ y f17771d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ String f17366e;
+            final /* synthetic */ String f17772e;
 
             a(y yVar, String str) {
-                this.f17365d = yVar;
-                this.f17366e = str;
+                this.f17771d = yVar;
+                this.f17772e = str;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             public final Object emit(Object obj, Continuation continuation) {
-                this.f17365d.p0(this.f17366e, null);
-                return Unit.f32464a;
+                this.f17771d.p0(this.f17772e, null);
+                return Unit.f31988a;
             }
         }
 
@@ -890,20 +890,20 @@ public final class y extends FrameLayout {
         public static final class b implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ y f17367d;
+            final /* synthetic */ y f17773d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ String f17368e;
+            final /* synthetic */ String f17774e;
 
             b(y yVar, String str) {
-                this.f17367d = yVar;
-                this.f17368e = str;
+                this.f17773d = yVar;
+                this.f17774e = str;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             public final Object emit(Object obj, Continuation continuation) {
-                this.f17367d.p0(this.f17368e, null);
-                return Unit.f32464a;
+                this.f17773d.p0(this.f17774e, null);
+                return Unit.f31988a;
             }
         }
 
@@ -912,20 +912,20 @@ public final class y extends FrameLayout {
         public static final class c implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ y f17369d;
+            final /* synthetic */ y f17775d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ String f17370e;
+            final /* synthetic */ String f17776e;
 
             c(y yVar, String str) {
-                this.f17369d = yVar;
-                this.f17370e = str;
+                this.f17775d = yVar;
+                this.f17776e = str;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             public final Object emit(Object obj, Continuation continuation) {
-                this.f17369d.p0(this.f17370e, obj);
-                return Unit.f32464a;
+                this.f17775d.p0(this.f17776e, obj);
+                return Unit.f31988a;
             }
         }
 
@@ -933,34 +933,34 @@ public final class y extends FrameLayout {
         public /* synthetic */ class d {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f17371a;
+            public static final /* synthetic */ int[] f17777a;
 
             static {
                 int[] iArr = new int[com.rivereactnative.g.values().length];
                 try {
-                    iArr[com.rivereactnative.g.f17260r.ordinal()] = 1;
+                    iArr[com.rivereactnative.g.f17666r.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[com.rivereactnative.g.f17262t.ordinal()] = 2;
+                    iArr[com.rivereactnative.g.f17668t.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
-                f17371a = iArr;
+                f17777a = iArr;
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         g(com.rivereactnative.g gVar, ViewModelProperty viewModelProperty, y yVar, String str, Continuation continuation) {
             super(2, continuation);
-            this.f17361e = gVar;
-            this.f17362i = viewModelProperty;
-            this.f17363o = yVar;
-            this.f17364p = str;
+            this.f17767e = gVar;
+            this.f17768i = viewModelProperty;
+            this.f17769o = yVar;
+            this.f17770p = str;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new g(this.f17361e, this.f17362i, this.f17363o, this.f17364p, continuation);
+            return new g(this.f17767e, this.f17768i, this.f17769o, this.f17770p, continuation);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:16:0x004b, code lost:
@@ -980,8 +980,8 @@ public final class y extends FrameLayout {
         public final java.lang.Object invokeSuspend(java.lang.Object r6) {
             /*
                 r5 = this;
-                java.lang.Object r0 = rr.b.f()
-                int r1 = r5.f17360d
+                java.lang.Object r0 = ur.b.f()
+                int r1 = r5.f17766d
                 r2 = 3
                 r3 = 2
                 r4 = 1
@@ -1004,56 +1004,56 @@ public final class y extends FrameLayout {
                 goto L8e
             L25:
                 kotlin.c.b(r6)
-                com.rivereactnative.g r6 = r5.f17361e
-                int[] r1 = com.rivereactnative.y.g.d.f17371a
+                com.rivereactnative.g r6 = r5.f17767e
+                int[] r1 = com.rivereactnative.y.g.d.f17777a
                 int r6 = r6.ordinal()
                 r6 = r1[r6]
                 if (r6 == r4) goto L72
                 if (r6 == r3) goto L54
-                app.rive.runtime.kotlin.core.ViewModelProperty r6 = r5.f17362i
-                ms.j0 r6 = r6.getValueFlow()
+                app.rive.runtime.kotlin.core.ViewModelProperty r6 = r5.f17768i
+                ps.j0 r6 = r6.getValueFlow()
                 com.rivereactnative.y$g$c r1 = new com.rivereactnative.y$g$c
-                com.rivereactnative.y r3 = r5.f17363o
-                java.lang.String r4 = r5.f17364p
+                com.rivereactnative.y r3 = r5.f17769o
+                java.lang.String r4 = r5.f17770p
                 r1.<init>(r3, r4)
-                r5.f17360d = r2
+                r5.f17766d = r2
                 java.lang.Object r6 = r6.collect(r1, r5)
                 if (r6 != r0) goto L4e
                 goto L8d
             L4e:
-                lr.h r6 = new lr.h
+                or.h r6 = new or.h
                 r6.<init>()
                 throw r6
             L54:
-                app.rive.runtime.kotlin.core.ViewModelProperty r6 = r5.f17362i
-                ms.j0 r6 = r6.getValueFlow()
+                app.rive.runtime.kotlin.core.ViewModelProperty r6 = r5.f17768i
+                ps.j0 r6 = r6.getValueFlow()
                 com.rivereactnative.y$g$b r1 = new com.rivereactnative.y$g$b
-                com.rivereactnative.y r2 = r5.f17363o
-                java.lang.String r4 = r5.f17364p
+                com.rivereactnative.y r2 = r5.f17769o
+                java.lang.String r4 = r5.f17770p
                 r1.<init>(r2, r4)
-                r5.f17360d = r3
+                r5.f17766d = r3
                 java.lang.Object r6 = r6.collect(r1, r5)
                 if (r6 != r0) goto L6c
                 goto L8d
             L6c:
-                lr.h r6 = new lr.h
+                or.h r6 = new or.h
                 r6.<init>()
                 throw r6
             L72:
-                app.rive.runtime.kotlin.core.ViewModelProperty r6 = r5.f17362i
-                ms.j0 r6 = r6.getValueFlow()
-                kotlinx.coroutines.flow.Flow r6 = ms.g.m(r6, r4)
+                app.rive.runtime.kotlin.core.ViewModelProperty r6 = r5.f17768i
+                ps.j0 r6 = r6.getValueFlow()
+                kotlinx.coroutines.flow.Flow r6 = ps.g.m(r6, r4)
                 com.rivereactnative.y$g$a r1 = new com.rivereactnative.y$g$a
-                com.rivereactnative.y r2 = r5.f17363o
-                java.lang.String r3 = r5.f17364p
+                com.rivereactnative.y r2 = r5.f17769o
+                java.lang.String r3 = r5.f17770p
                 r1.<init>(r2, r3)
-                r5.f17360d = r4
+                r5.f17766d = r4
                 java.lang.Object r6 = r6.collect(r1, r5)
                 if (r6 != r0) goto L8e
             L8d:
                 return r0
             L8e:
-                kotlin.Unit r6 = kotlin.Unit.f32464a
+                kotlin.Unit r6 = kotlin.Unit.f31988a
                 return r6
             */
             throw new UnsupportedOperationException("Method not decompiled: com.rivereactnative.y.g.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -1061,7 +1061,7 @@ public final class y extends FrameLayout {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -1081,7 +1081,7 @@ public final class y extends FrameLayout {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((ReadableMap) obj, (FileAsset) obj2);
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
     }
 
@@ -1089,14 +1089,14 @@ public final class y extends FrameLayout {
     public y(ThemedReactContext context) {
         super(context);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f17315d = context;
-        this.f17318o = -1;
-        this.f17323t = Fit.CONTAIN;
-        this.f17325v = Alignment.CENTER;
-        this.f17328y = true;
+        this.f17721d = context;
+        this.f17724o = -1;
+        this.f17729t = Fit.CONTAIN;
+        this.f17731v = Alignment.CENTER;
+        this.f17734y = true;
         this.F = kotlinx.coroutines.i.a(m0.a());
         this.H = new LinkedHashMap();
-        this.I = lr.l.a(new Function0() { // from class: com.rivereactnative.t
+        this.I = or.l.a(new Function0() { // from class: com.rivereactnative.t
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 com.android.volley.o O;
@@ -1104,17 +1104,17 @@ public final class y extends FrameLayout {
                 return O;
             }
         });
-        this.f17316e = new k(context);
+        this.f17722e = new k(context);
         this.C = new a();
         this.D = new b();
         n();
-        this.f17326w = false;
-        addView(this.f17316e);
+        this.f17732w = false;
+        addView(this.f17722e);
     }
 
     private final int F(String str) {
         for (String str2 : CollectionsKt.o("raw", "drawable")) {
-            int identifier = this.f17315d.getResources().getIdentifier(str, str2, this.f17315d.getPackageName());
+            int identifier = this.f17721d.getResources().getIdentifier(str, str2, this.f17721d.getPackageName());
             if (identifier != 0) {
                 return identifier;
             }
@@ -1133,7 +1133,7 @@ public final class y extends FrameLayout {
 
     private final void G() {
         if (this.A) {
-            com.rivereactnative.h hVar = com.rivereactnative.h.f17268o;
+            com.rivereactnative.h hVar = com.rivereactnative.h.f17674o;
             hVar.e("File resource not found. You must provide correct url or resourceName!");
             o0(hVar);
             return;
@@ -1143,14 +1143,14 @@ public final class y extends FrameLayout {
 
     static /* synthetic */ void G0(y yVar, String str, boolean z10, int i10, Object obj) {
         if ((i10 & 2) != 0) {
-            z10 = yVar.f17326w;
+            z10 = yVar.f17732w;
         }
         yVar.F0(str, z10);
     }
 
     private final void H(String str) {
         if (this.A) {
-            com.rivereactnative.h hVar = com.rivereactnative.h.f17270q;
+            com.rivereactnative.h hVar = com.rivereactnative.h.f17676q;
             hVar.e("Invalid URL: " + str);
             o0(hVar);
             return;
@@ -1161,14 +1161,14 @@ public final class y extends FrameLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void H0(y yVar, boolean z10, byte[] bArr) {
         try {
-            k kVar = yVar.f17316e;
+            k kVar = yVar.f17722e;
             if (kVar != null) {
                 Intrinsics.checkNotNull(bArr);
-                Fit fit = yVar.f17323t;
-                Alignment alignment = yVar.f17325v;
+                Fit fit = yVar.f17729t;
+                Alignment alignment = yVar.f17731v;
                 boolean shouldAutoBind = yVar.getShouldAutoBind();
-                String str = yVar.f17321r;
-                RiveAnimationView.setRiveBytes$default(kVar, bArr, yVar.f17322s, yVar.f17320q, str, z10, shouldAutoBind, fit, alignment, null, IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, null);
+                String str = yVar.f17727r;
+                RiveAnimationView.setRiveBytes$default(kVar, bArr, yVar.f17728s, yVar.f17726q, str, z10, shouldAutoBind, fit, alignment, null, IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, null);
             }
             yVar.q();
             yVar.q0();
@@ -1180,7 +1180,7 @@ public final class y extends FrameLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public final void I(RiveException riveException) {
         if (this.A) {
-            com.rivereactnative.h a10 = com.rivereactnative.h.f17267i.a(riveException);
+            com.rivereactnative.h a10 = com.rivereactnative.h.f17673i.a(riveException);
             if (a10 != null) {
                 o0(a10);
                 return;
@@ -1199,7 +1199,7 @@ public final class y extends FrameLayout {
             Intrinsics.checkNotNullExpressionValue(stackTrace, "getStackTrace(...)");
             createMap.putArray(StackTraceHelper.STACK_KEY, u(stackTrace));
         }
-        ExceptionsManagerModule exceptionsManagerModule = this.f17329z;
+        ExceptionsManagerModule exceptionsManagerModule = this.f17735z;
         if (exceptionsManagerModule != null) {
             exceptionsManagerModule.reportException(createMap);
         }
@@ -1209,7 +1209,7 @@ public final class y extends FrameLayout {
         if (str2 != null) {
             str = s(str, str2);
         }
-        byte[] i02 = i0(this.f17315d, str);
+        byte[] i02 = i0(this.f17721d, str);
         if (i02 != null) {
             h0(i02, fileAsset);
         }
@@ -1218,10 +1218,10 @@ public final class y extends FrameLayout {
     private final void K(String str, FileAsset fileAsset) {
         Object b10;
         try {
-            Result.a aVar = Result.f32461e;
+            Result.a aVar = Result.f31985e;
             b10 = Result.b(Uri.parse(str).getScheme());
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32461e;
+            Result.a aVar2 = Result.f31985e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         String str2 = null;
@@ -1238,14 +1238,14 @@ public final class y extends FrameLayout {
                 InputStream openRawResource = getResources().openRawResource(F);
                 try {
                     Intrinsics.checkNotNull(openRawResource);
-                    h0(wr.b.c(openRawResource), fileAsset);
-                    Unit unit = Unit.f32464a;
-                    wr.c.a(openRawResource, null);
+                    h0(zr.b.c(openRawResource), fileAsset);
+                    Unit unit = Unit.f31988a;
+                    zr.c.a(openRawResource, null);
                 } catch (Throwable th3) {
                     try {
                         throw th3;
                     } catch (Throwable th4) {
-                        wr.c.a(openRawResource, th3);
+                        zr.c.a(openRawResource, th3);
                         throw th4;
                     }
                 }
@@ -1261,7 +1261,7 @@ public final class y extends FrameLayout {
         }
         if (str2 != null) {
             if (this.A) {
-                com.rivereactnative.h hVar = com.rivereactnative.h.f17268o;
+                com.rivereactnative.h hVar = com.rivereactnative.h.f17674o;
                 hVar.e(str2);
                 o0(hVar);
                 return;
@@ -1287,17 +1287,17 @@ public final class y extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void N(String str, com.android.volley.u uVar, boolean z10) {
-        com.android.volley.k kVar = uVar.f7818d;
-        if (kVar != null && kVar.f7789a == 404) {
+        com.android.volley.k kVar = uVar.f8203d;
+        if (kVar != null && kVar.f8174a == 404) {
             if (z10) {
-                com.rivereactnative.h hVar = com.rivereactnative.h.f17270q;
+                com.rivereactnative.h hVar = com.rivereactnative.h.f17676q;
                 hVar.e("Bad URL: " + str);
                 o0(hVar);
                 return;
             }
             I0("Bad URL: " + str, uVar);
         } else if (z10) {
-            com.rivereactnative.h hVar2 = com.rivereactnative.h.f17270q;
+            com.rivereactnative.h hVar2 = com.rivereactnative.h.f17676q;
             hVar2.e("Unable to download the Rive asset file from: " + str);
             o0(hVar2);
         } else {
@@ -1307,7 +1307,7 @@ public final class y extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final com.android.volley.o O(y yVar) {
-        com.android.volley.o a10 = c6.k.a(yVar.f17315d);
+        com.android.volley.o a10 = c6.k.a(yVar.f17721d);
         Intrinsics.checkNotNullExpressionValue(a10, "newRequestQueue(...)");
         return a10;
     }
@@ -1324,13 +1324,13 @@ public final class y extends FrameLayout {
     private final void P0() {
         m mVar;
         Map b10;
-        ReadableMap readableMap = this.f17327x;
+        ReadableMap readableMap = this.f17733x;
         if (readableMap != null && (mVar = this.E) != null && (b10 = mVar.b()) != null) {
             Set j10 = x0.j(CollectionsKt.l1(Q(readableMap)), CollectionsKt.l1(b10.keySet()));
             if (!j10.isEmpty()) {
                 String str = "referencedAssets provided keys: " + CollectionsKt.x0(j10, ",", null, null, 0, null, null, 62, null) + " but they were not referenced in the rive file";
                 if (this.A) {
-                    com.rivereactnative.h hVar = com.rivereactnative.h.f17278y;
+                    com.rivereactnative.h hVar = com.rivereactnative.h.f17684y;
                     hVar.e(str);
                     o0(hVar);
                     return;
@@ -1364,11 +1364,11 @@ public final class y extends FrameLayout {
     }
 
     private final void S(URI uri, p.b bVar) {
-        js.i.d(kotlinx.coroutines.i.a(m0.b()), null, null, new f(uri, bVar, this, null), 3, null);
+        ms.i.d(kotlinx.coroutines.i.a(m0.b()), null, null, new f(uri, bVar, this, null), 3, null);
     }
 
     private final void T(final String str, p.b bVar) {
-        com.android.volley.o a10 = c6.k.a(this.f17315d);
+        com.android.volley.o a10 = c6.k.a(this.f17721d);
         Intrinsics.checkNotNullExpressionValue(a10, "newRequestQueue(...)");
         a10.a(new i(str, bVar, new p.a() { // from class: com.rivereactnative.x
             @Override // com.android.volley.p.a
@@ -1421,7 +1421,7 @@ public final class y extends FrameLayout {
 
     private final boolean getShouldAutoBind() {
         com.rivereactnative.a aVar = this.G;
-        if ((aVar instanceof a.C0198a) && ((a.C0198a) aVar).a()) {
+        if ((aVar instanceof a.C0216a) && ((a.C0216a) aVar).a()) {
             return true;
         }
         return false;
@@ -1431,7 +1431,7 @@ public final class y extends FrameLayout {
     public final ViewModelInstance getViewModelInstance() {
         RiveFileController controller;
         Artboard activeArtboard;
-        k kVar = this.f17316e;
+        k kVar = this.f17722e;
         if (kVar != null && (controller = kVar.getController()) != null && (activeArtboard = controller.getActiveArtboard()) != null) {
             return activeArtboard.getViewModelInstance();
         }
@@ -1446,7 +1446,7 @@ public final class y extends FrameLayout {
         } else if (fileAsset instanceof AudioAsset) {
             ((AudioAsset) fileAsset).setAudio(RiveAudio.Companion.make$default(RiveAudio.Companion, bArr, null, 2, null));
         } else {
-            throw new lr.p();
+            throw new or.p();
         }
     }
 
@@ -1465,7 +1465,7 @@ public final class y extends FrameLayout {
             android.content.res.AssetManager r5 = r5.getAssets()
             r0 = 0
             java.io.InputStream r5 = r5.open(r6)     // Catch: java.lang.Throwable -> L18 java.io.IOException -> L1a
-            byte[] r6 = wr.b.c(r5)     // Catch: java.lang.Throwable -> L13 java.io.IOException -> L16
+            byte[] r6 = zr.b.c(r5)     // Catch: java.lang.Throwable -> L13 java.io.IOException -> L16
             if (r5 == 0) goto L12
             r5.close()
         L12:
@@ -1486,7 +1486,7 @@ public final class y extends FrameLayout {
         L1c:
             boolean r2 = r4.A     // Catch: java.lang.Throwable -> L13
             if (r2 == 0) goto L3a
-            com.rivereactnative.h r1 = com.rivereactnative.h.f17270q     // Catch: java.lang.Throwable -> L13
+            com.rivereactnative.h r1 = com.rivereactnative.h.f17676q     // Catch: java.lang.Throwable -> L13
             java.lang.StringBuilder r2 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L13
             r2.<init>()     // Catch: java.lang.Throwable -> L13
             java.lang.String r3 = "Unable to read file from assets: "
@@ -1521,42 +1521,42 @@ public final class y extends FrameLayout {
     private final void k0() {
         m mVar;
         k kVar;
-        if (this.f17328y) {
+        if (this.f17734y) {
             m mVar2 = this.E;
             if (mVar2 != null) {
                 mVar2.dispose();
             }
-            ReadableMap readableMap = this.f17327x;
+            ReadableMap readableMap = this.f17733x;
             if (readableMap != null) {
                 mVar = new m(readableMap, new h(this));
             } else {
                 mVar = null;
             }
             this.E = mVar;
-            if (mVar != null && (kVar = this.f17316e) != null) {
+            if (mVar != null && (kVar = this.f17722e) != null) {
                 kVar.setAssetLoader(mVar);
             }
-            String str = this.f17319p;
+            String str = this.f17725p;
             if (str != null) {
-                if (this.f17318o == -1) {
+                if (this.f17724o == -1) {
                     G0(this, str, false, 2, null);
                 } else {
                     throw new IllegalStateException("You cannot pass both resourceName and url at the same time");
                 }
             } else {
-                int i10 = this.f17318o;
+                int i10 = this.f17724o;
                 if (i10 != -1) {
                     try {
-                        k kVar2 = this.f17316e;
+                        k kVar2 = this.f17722e;
                         if (kVar2 != null) {
-                            Fit fit = this.f17323t;
-                            Alignment alignment = this.f17325v;
-                            RiveAnimationView.setRiveResource$default(kVar2, i10, this.f17322s, this.f17320q, this.f17321r, this.f17326w, getShouldAutoBind(), fit, alignment, null, IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, null);
+                            Fit fit = this.f17729t;
+                            Alignment alignment = this.f17731v;
+                            RiveAnimationView.setRiveResource$default(kVar2, i10, this.f17728s, this.f17726q, this.f17727r, this.f17732w, getShouldAutoBind(), fit, alignment, null, IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, null);
                         }
                         P0();
                         q();
                         q0();
-                        this.f17319p = null;
+                        this.f17725p = null;
                     } catch (RiveException e10) {
                         I(e10);
                     }
@@ -1564,17 +1564,17 @@ public final class y extends FrameLayout {
                     G();
                 }
             }
-            this.f17328y = false;
+            this.f17734y = false;
         }
     }
 
     private final void l0() {
         o();
-        k kVar = this.f17316e;
+        k kVar = this.f17722e;
         if (kVar != null) {
             kVar.unregisterListener(this.C);
         }
-        k kVar2 = this.f17316e;
+        k kVar2 = this.f17722e;
         if (kVar2 != null) {
             kVar2.removeEventListener(this.D);
         }
@@ -1590,11 +1590,11 @@ public final class y extends FrameLayout {
     }
 
     private final void n() {
-        k kVar = this.f17316e;
+        k kVar = this.f17722e;
         if (kVar != null) {
             kVar.registerListener(this.C);
         }
-        k kVar2 = this.f17316e;
+        k kVar2 = this.f17722e;
         if (kVar2 != null) {
             kVar2.addEventListener(this.D);
         }
@@ -1608,25 +1608,25 @@ public final class y extends FrameLayout {
     }
 
     private final void o0(com.rivereactnative.h hVar) {
-        ThemedReactContext themedReactContext = this.f17315d;
+        ThemedReactContext themedReactContext = this.f17721d;
         Intrinsics.checkNotNull(themedReactContext, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
         createMap.putString("type", hVar.toString());
         createMap.putString("message", hVar.d());
-        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17338s.toString(), createMap);
+        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17744s.toString(), createMap);
     }
 
     private final void p() {
         this.E = null;
-        this.f17316e = null;
-        this.f17329z = null;
-        this.f17327x = null;
+        this.f17722e = null;
+        this.f17735z = null;
+        this.f17733x = null;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void p0(String str, Object obj) {
-        ((DeviceEventManagerModule.RCTDeviceEventEmitter) this.f17315d.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)).emit(str, obj);
+        ((DeviceEventManagerModule.RCTDeviceEventEmitter) this.f17721d.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)).emit(str, obj);
     }
 
     private final void q() {
@@ -1636,12 +1636,12 @@ public final class y extends FrameLayout {
         RiveFileController controller2;
         Artboard activeArtboard;
         try {
-            k kVar2 = this.f17316e;
-            if (kVar2 != null && (controller = kVar2.getController()) != null && (file = controller.getFile()) != null && (kVar = this.f17316e) != null && (controller2 = kVar.getController()) != null && (activeArtboard = controller2.getActiveArtboard()) != null) {
+            k kVar2 = this.f17722e;
+            if (kVar2 != null && (controller = kVar2.getController()) != null && (file = controller.getFile()) != null && (kVar = this.f17722e) != null && (controller2 = kVar.getController()) != null && (activeArtboard = controller2.getActiveArtboard()) != null) {
                 ViewModel defaultViewModelForArtboard = file.defaultViewModelForArtboard(activeArtboard);
                 com.rivereactnative.a aVar = this.G;
-                if (aVar instanceof a.C0198a) {
-                    this.f17328y = true;
+                if (aVar instanceof a.C0216a) {
+                    this.f17734y = true;
                 } else if (aVar instanceof a.c) {
                     r(this, defaultViewModelForArtboard.createInstanceFromIndex(((a.c) aVar).a()));
                 } else if (aVar instanceof a.d) {
@@ -1649,7 +1649,7 @@ public final class y extends FrameLayout {
                 } else if (aVar instanceof a.b) {
                     r(this, defaultViewModelForArtboard.createBlankInstance());
                 } else if (aVar != null) {
-                    throw new lr.p();
+                    throw new or.p();
                 }
             }
         } catch (RiveException e10) {
@@ -1669,11 +1669,11 @@ public final class y extends FrameLayout {
         RiveFileController controller2;
         List<StateMachineInstance> stateMachines;
         StateMachineInstance stateMachineInstance;
-        k kVar = yVar.f17316e;
+        k kVar = yVar.f17722e;
         if (kVar != null && (controller2 = kVar.getController()) != null && (stateMachines = controller2.getStateMachines()) != null && (stateMachineInstance = (StateMachineInstance) CollectionsKt.o0(stateMachines)) != null) {
             stateMachineInstance.setViewModelInstance(viewModelInstance);
         }
-        k kVar2 = yVar.f17316e;
+        k kVar2 = yVar.f17722e;
         if (kVar2 != null && (controller = kVar2.getController()) != null && (activeArtboard = controller.getActiveArtboard()) != null) {
             activeArtboard.setViewModelInstance(viewModelInstance);
         }
@@ -1776,7 +1776,7 @@ public final class y extends FrameLayout {
         Intrinsics.checkNotNullParameter(stateMachineName, "stateMachineName");
         Intrinsics.checkNotNullParameter(inputName, "inputName");
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null) {
                 kVar.setNumberState(stateMachineName, inputName, f10);
             }
@@ -1792,7 +1792,7 @@ public final class y extends FrameLayout {
         List<StateMachineInstance> stateMachines;
         Intrinsics.checkNotNullParameter(inputName, "inputName");
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null && (controller = kVar.getController()) != null && (stateMachines = controller.getStateMachines()) != null) {
                 stateMachineInstance = stateMachines.get(0);
             } else {
@@ -1817,7 +1817,7 @@ public final class y extends FrameLayout {
         Intrinsics.checkNotNullParameter(inputName, "inputName");
         Intrinsics.checkNotNullParameter(path, "path");
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null) {
                 kVar.setNumberStateAtPath(inputName, f10, path);
             }
@@ -1833,7 +1833,7 @@ public final class y extends FrameLayout {
         Intrinsics.checkNotNullParameter(inputName, "inputName");
         Intrinsics.checkNotNullParameter(path, "path");
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null && (controller = kVar.getController()) != null) {
                 artboard = controller.getActiveArtboard();
             } else {
@@ -1875,7 +1875,7 @@ public final class y extends FrameLayout {
         List<StateMachineInstance> stateMachines;
         Intrinsics.checkNotNullParameter(inputName, "inputName");
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null && (controller = kVar.getController()) != null && (stateMachines = controller.getStateMachines()) != null) {
                 stateMachineInstance = stateMachines.get(0);
             } else {
@@ -1903,7 +1903,7 @@ public final class y extends FrameLayout {
         Intrinsics.checkNotNullParameter(textRunName, "textRunName");
         Intrinsics.checkNotNullParameter(textValue, "textValue");
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null && (controller = kVar.getController()) != null && (activeArtboard = controller.getActiveArtboard()) != null && (textRun = activeArtboard.textRun(textRunName)) != null) {
                 textRun.setText(textValue);
             }
@@ -1919,7 +1919,7 @@ public final class y extends FrameLayout {
         Intrinsics.checkNotNullParameter(inputName, "inputName");
         Intrinsics.checkNotNullParameter(path, "path");
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null && (controller = kVar.getController()) != null) {
                 artboard = controller.getActiveArtboard();
             } else {
@@ -1948,7 +1948,7 @@ public final class y extends FrameLayout {
         Intrinsics.checkNotNullParameter(textValue, "textValue");
         Intrinsics.checkNotNullParameter(path, "path");
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null && (controller = kVar.getController()) != null && (activeArtboard = controller.getActiveArtboard()) != null && (textRun = activeArtboard.textRun(textRunName, path)) != null) {
                 textRun.setText(textValue);
             }
@@ -1959,7 +1959,7 @@ public final class y extends FrameLayout {
 
     public final void J0() {
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null) {
                 kVar.stop();
             }
@@ -1974,7 +1974,7 @@ public final class y extends FrameLayout {
         int size = readableArray.size();
         for (int i10 = 0; i10 < size; i10++) {
             Object obj = null;
-            switch (d.f17343b[readableArray.getType(i10).ordinal()]) {
+            switch (d.f17749b[readableArray.getType(i10).ordinal()]) {
                 case 1:
                     arrayList.add(null);
                     break;
@@ -2015,7 +2015,7 @@ public final class y extends FrameLayout {
         while (keySetIterator.hasNextKey()) {
             String nextKey = keySetIterator.nextKey();
             Object obj = null;
-            switch (d.f17343b[readableMap.getType(nextKey).ordinal()]) {
+            switch (d.f17749b[readableMap.getType(nextKey).ordinal()]) {
                 case 1:
                     linkedHashMap.put(nextKey, null);
                     break;
@@ -2051,7 +2051,7 @@ public final class y extends FrameLayout {
 
     public final void M0(float f10, float f11) {
         RiveFileController controller;
-        k kVar = this.f17316e;
+        k kVar = this.f17722e;
         if (kVar != null && (controller = kVar.getController()) != null) {
             controller.pointerEvent(PointerEvents.POINTER_DOWN, 0, f10, f11);
         }
@@ -2059,7 +2059,7 @@ public final class y extends FrameLayout {
 
     public final void N0(float f10, float f11) {
         RiveFileController controller;
-        k kVar = this.f17316e;
+        k kVar = this.f17722e;
         if (kVar != null && (controller = kVar.getController()) != null) {
             controller.pointerEvent(PointerEvents.POINTER_UP, 0, f10, f11);
         }
@@ -2072,40 +2072,40 @@ public final class y extends FrameLayout {
     public final void W(String animationName, com.rivereactnative.f loopMode) {
         Intrinsics.checkNotNullParameter(animationName, "animationName");
         Intrinsics.checkNotNullParameter(loopMode, "loopMode");
-        ThemedReactContext themedReactContext = this.f17315d;
+        ThemedReactContext themedReactContext = this.f17721d;
         Intrinsics.checkNotNull(themedReactContext, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
         createMap.putString("animationName", animationName);
         createMap.putString("loopMode", loopMode.toString());
-        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17335p.toString(), createMap);
+        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17741p.toString(), createMap);
     }
 
     public final void X(String animationName, boolean z10) {
         Intrinsics.checkNotNullParameter(animationName, "animationName");
-        ThemedReactContext themedReactContext = this.f17315d;
+        ThemedReactContext themedReactContext = this.f17721d;
         Intrinsics.checkNotNull(themedReactContext, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
         createMap.putString("animationName", animationName);
         createMap.putBoolean("isStateMachine", z10);
-        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17333i.toString(), createMap);
+        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17739i.toString(), createMap);
     }
 
     public final void Z(String animationName, boolean z10) {
         Intrinsics.checkNotNullParameter(animationName, "animationName");
-        ThemedReactContext themedReactContext = this.f17315d;
+        ThemedReactContext themedReactContext = this.f17721d;
         Intrinsics.checkNotNull(themedReactContext, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
         createMap.putString("animationName", animationName);
         createMap.putBoolean("isStateMachine", z10);
-        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17332e.toString(), createMap);
+        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17738e.toString(), createMap);
     }
 
     public final void b0(RiveEvent event) {
         Intrinsics.checkNotNullParameter(event, "event");
-        ThemedReactContext themedReactContext = this.f17315d;
+        ThemedReactContext themedReactContext = this.f17721d;
         Intrinsics.checkNotNull(themedReactContext, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
@@ -2120,55 +2120,55 @@ public final class y extends FrameLayout {
             createMap2.putString("target", riveOpenURLEvent.getTarget());
         }
         createMap.putMap("riveEvent", createMap2);
-        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17337r.toString(), createMap);
+        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17743r.toString(), createMap);
     }
 
     public final void c0(String stateMachineName, String stateName) {
         Intrinsics.checkNotNullParameter(stateMachineName, "stateMachineName");
         Intrinsics.checkNotNullParameter(stateName, "stateName");
-        ThemedReactContext themedReactContext = this.f17315d;
+        ThemedReactContext themedReactContext = this.f17721d;
         Intrinsics.checkNotNull(themedReactContext, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
         createMap.putString("stateMachineName", stateMachineName);
         createMap.putString("stateName", stateName);
-        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17336q.toString(), createMap);
+        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17742q.toString(), createMap);
     }
 
     public final void d0(String animationName, boolean z10) {
         Intrinsics.checkNotNullParameter(animationName, "animationName");
-        ThemedReactContext themedReactContext = this.f17315d;
+        ThemedReactContext themedReactContext = this.f17721d;
         Intrinsics.checkNotNull(themedReactContext, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
         createMap.putString("animationName", animationName);
         createMap.putBoolean("isStateMachine", z10);
-        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17334o.toString(), createMap);
+        ((RCTEventEmitter) themedReactContext.getJSModule(RCTEventEmitter.class)).receiveEvent(getId(), c.f17740o.toString(), createMap);
     }
 
     public final void f0() {
         HashSet<StateMachineInstance> playingStateMachines;
         HashSet<LinearAnimationInstance> playingAnimations;
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null && (playingAnimations = kVar.getPlayingAnimations()) != null && (!playingAnimations.isEmpty())) {
-                k kVar2 = this.f17316e;
+                k kVar2 = this.f17722e;
                 Intrinsics.checkNotNull(kVar2);
-                k kVar3 = this.f17316e;
+                k kVar3 = this.f17722e;
                 Intrinsics.checkNotNull(kVar3);
                 RiveAnimationView.pause$default((RiveAnimationView) kVar2, ((LinearAnimationInstance) CollectionsKt.n0(kVar3.getPlayingAnimations())).getName(), false, 2, (Object) null);
                 return;
             }
-            k kVar4 = this.f17316e;
+            k kVar4 = this.f17722e;
             if (kVar4 != null && (playingStateMachines = kVar4.getPlayingStateMachines()) != null && (!playingStateMachines.isEmpty())) {
-                k kVar5 = this.f17316e;
+                k kVar5 = this.f17722e;
                 Intrinsics.checkNotNull(kVar5);
-                k kVar6 = this.f17316e;
+                k kVar6 = this.f17722e;
                 Intrinsics.checkNotNull(kVar6);
                 kVar5.pause(((StateMachineInstance) CollectionsKt.n0(kVar6.getPlayingStateMachines())).getName(), true);
                 return;
             }
-            k kVar7 = this.f17316e;
+            k kVar7 = this.f17722e;
             if (kVar7 != null) {
                 kVar7.pause();
             }
@@ -2181,10 +2181,10 @@ public final class y extends FrameLayout {
         Intrinsics.checkNotNullParameter(animationName, "animationName");
         Intrinsics.checkNotNullParameter(rnLoopMode, "rnLoopMode");
         Intrinsics.checkNotNullParameter(rnDirection, "rnDirection");
-        Loop c10 = com.rivereactnative.f.f17245e.c(rnLoopMode);
-        Direction b10 = com.rivereactnative.d.f17224e.b(rnDirection);
+        Loop c10 = com.rivereactnative.f.f17651e.c(rnLoopMode);
+        Direction b10 = com.rivereactnative.d.f17630e.b(rnDirection);
         if (animationName.length() == 0) {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null) {
                 RiveAnimationView.play$default(kVar, c10, b10, false, 4, null);
                 return;
@@ -2192,14 +2192,14 @@ public final class y extends FrameLayout {
             return;
         }
         try {
-            k kVar2 = this.f17316e;
+            k kVar2 = this.f17722e;
             if (kVar2 != null) {
                 RiveAnimationView.play$default((RiveAnimationView) kVar2, animationName, c10, b10, z10, false, 16, (Object) null);
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             }
         } catch (RiveException e10) {
             I(e10);
-            Unit unit2 = Unit.f32464a;
+            Unit unit2 = Unit.f31988a;
         }
     }
 
@@ -2210,11 +2210,11 @@ public final class y extends FrameLayout {
         Intrinsics.checkNotNullParameter(propertyType, "propertyType");
         String str = propertyType + ":" + path + ":" + getId();
         m0(str);
-        com.rivereactnative.g a10 = com.rivereactnative.g.f17255e.a(propertyType);
+        com.rivereactnative.g a10 = com.rivereactnative.g.f17661e.a(propertyType);
         try {
             ViewModelInstance viewModelInstance = getViewModelInstance();
             if (viewModelInstance != null) {
-                switch (d.f17342a[a10.ordinal()]) {
+                switch (d.f17748a[a10.ordinal()]) {
                     case 1:
                         stringProperty = viewModelInstance.getStringProperty(path);
                         break;
@@ -2240,9 +2240,9 @@ public final class y extends FrameLayout {
                         stringProperty = viewModelInstance.getImageProperty(path);
                         break;
                     default:
-                        throw new lr.p();
+                        throw new or.p();
                 }
-                d10 = js.i.d(this.F, null, null, new g(a10, stringProperty, this, str, null), 3, null);
+                d10 = ms.i.d(this.F, null, null, new g(a10, stringProperty, this, str, null), 3, null);
                 this.H.put(str, new com.rivereactnative.b(viewModelInstance, path, propertyType, d10));
             }
         } catch (RiveException e10) {
@@ -2256,11 +2256,11 @@ public final class y extends FrameLayout {
         k kVar;
         k kVar2;
         RiveArtboardRenderer artboardRenderer;
-        if (this.f17319p != null) {
-            if (this.f17318o == -1 && (kVar2 = this.f17316e) != null && (artboardRenderer = kVar2.getArtboardRenderer()) != null) {
+        if (this.f17725p != null) {
+            if (this.f17724o == -1 && (kVar2 = this.f17722e) != null && (artboardRenderer = kVar2.getArtboardRenderer()) != null) {
                 artboardRenderer.reset();
             }
-        } else if (this.f17318o != -1 && (kVar = this.f17316e) != null) {
+        } else if (this.f17724o != -1 && (kVar = this.f17722e) != null) {
             kVar.reset();
         }
     }
@@ -2284,7 +2284,7 @@ public final class y extends FrameLayout {
             if (mVar != null) {
                 mVar.dispose();
             }
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null) {
                 kVar.c();
             }
@@ -2300,7 +2300,7 @@ public final class y extends FrameLayout {
         Intrinsics.checkNotNullParameter(path, "path");
         Intrinsics.checkNotNullParameter(artboardName, "artboardName");
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null && (controller = kVar.getController()) != null) {
                 file = controller.getFile();
             } else {
@@ -2336,9 +2336,9 @@ public final class y extends FrameLayout {
 
     public final void setAlignment(@NotNull com.rivereactnative.c rnAlignment) {
         Intrinsics.checkNotNullParameter(rnAlignment, "rnAlignment");
-        Alignment b10 = com.rivereactnative.c.f17210e.b(rnAlignment);
-        this.f17325v = b10;
-        k kVar = this.f17316e;
+        Alignment b10 = com.rivereactnative.c.f17616e.b(rnAlignment);
+        this.f17731v = b10;
+        k kVar = this.f17722e;
         if (kVar != null) {
             kVar.setAlignment(b10);
         }
@@ -2346,28 +2346,28 @@ public final class y extends FrameLayout {
 
     public final void setAnimationName(@NotNull String animationName) {
         Intrinsics.checkNotNullParameter(animationName, "animationName");
-        if (Intrinsics.areEqual(this.f17320q, animationName)) {
+        if (Intrinsics.areEqual(this.f17726q, animationName)) {
             return;
         }
-        this.f17320q = animationName;
-        this.f17328y = true;
+        this.f17726q = animationName;
+        this.f17734y = true;
     }
 
     public final void setArtboardName(@NotNull String artboardName) {
         Intrinsics.checkNotNullParameter(artboardName, "artboardName");
-        if (Intrinsics.areEqual(this.f17322s, artboardName)) {
+        if (Intrinsics.areEqual(this.f17728s, artboardName)) {
             return;
         }
-        this.f17322s = artboardName;
-        this.f17328y = true;
+        this.f17728s = artboardName;
+        this.f17734y = true;
     }
 
     public final void setAutoplay(boolean z10) {
-        if (this.f17326w == z10) {
+        if (this.f17732w == z10) {
             return;
         }
-        this.f17326w = z10;
-        this.f17328y = true;
+        this.f17732w = z10;
+        this.f17734y = true;
     }
 
     public final void setDataBinding(ReadableMap readableMap) {
@@ -2385,7 +2385,7 @@ public final class y extends FrameLayout {
                     break;
                 case 96634189:
                     if (string.equals("empty")) {
-                        aVar = a.b.f17198a;
+                        aVar = a.b.f17604a;
                         break;
                     }
                     break;
@@ -2397,7 +2397,7 @@ public final class y extends FrameLayout {
                     break;
                 case 1439142508:
                     if (string.equals("autobind") && dynamic.getType() == ReadableType.Boolean) {
-                        aVar = new a.C0198a(dynamic.asBoolean());
+                        aVar = new a.C0216a(dynamic.asBoolean());
                         break;
                     }
                     break;
@@ -2411,10 +2411,10 @@ public final class y extends FrameLayout {
 
     public final void setFit(@NotNull com.rivereactnative.e rnFit) {
         Intrinsics.checkNotNullParameter(rnFit, "rnFit");
-        Fit b10 = com.rivereactnative.e.f17232e.b(rnFit);
-        if (this.f17323t != b10) {
-            this.f17323t = b10;
-            k kVar = this.f17316e;
+        Fit b10 = com.rivereactnative.e.f17638e.b(rnFit);
+        if (this.f17729t != b10) {
+            this.f17729t = b10;
+            k kVar = this.f17722e;
             if (kVar != null) {
                 kVar.setFit(b10);
             }
@@ -2426,8 +2426,8 @@ public final class y extends FrameLayout {
     }
 
     public final void setLayoutScaleFactor(Float f10) {
-        this.f17324u = f10;
-        k kVar = this.f17316e;
+        this.f17730u = f10;
+        k kVar = this.f17722e;
         if (kVar != null) {
             kVar.setLayoutScaleFactor(f10);
         }
@@ -2441,7 +2441,7 @@ public final class y extends FrameLayout {
         ReadableMap readableMap2;
         FileAsset fileAsset;
         Map b10;
-        ReadableMap readableMap3 = this.f17327x;
+        ReadableMap readableMap3 = this.f17733x;
         if (readableMap3 != null) {
             map = L0(readableMap3);
         } else {
@@ -2453,13 +2453,13 @@ public final class y extends FrameLayout {
             map2 = null;
         }
         if (!Intrinsics.areEqual(map, map2)) {
-            ReadableMap readableMap4 = this.f17327x;
-            this.f17327x = readableMap;
+            ReadableMap readableMap4 = this.f17733x;
+            this.f17733x = readableMap;
             if (readableMap4 != null && readableMap != null) {
                 List Q = Q(readableMap4);
                 List<String> Q2 = Q(readableMap);
                 if (!Intrinsics.areEqual(CollectionsKt.l1(Q), CollectionsKt.l1(Q2))) {
-                    this.f17328y = true;
+                    this.f17734y = true;
                     return;
                 }
                 for (String str : Q2) {
@@ -2494,42 +2494,42 @@ public final class y extends FrameLayout {
                 }
                 return;
             }
-            this.f17328y = true;
+            this.f17734y = true;
         }
     }
 
     public final void setResourceName(String str) {
-        if (Intrinsics.areEqual(this.f17317i, str)) {
+        if (Intrinsics.areEqual(this.f17723i, str)) {
             return;
         }
-        this.f17317i = str;
+        this.f17723i = str;
         if (str != null) {
-            int identifier = getResources().getIdentifier(str, "raw", this.f17315d.getPackageName());
-            this.f17318o = identifier;
+            int identifier = getResources().getIdentifier(str, "raw", this.f17721d.getPackageName());
+            this.f17724o = identifier;
             if (identifier == 0) {
-                this.f17318o = -1;
+                this.f17724o = -1;
             }
         } else {
-            this.f17318o = -1;
+            this.f17724o = -1;
         }
-        this.f17328y = true;
+        this.f17734y = true;
     }
 
     public final void setStateMachineName(@NotNull String stateMachineName) {
         Intrinsics.checkNotNullParameter(stateMachineName, "stateMachineName");
-        if (Intrinsics.areEqual(this.f17321r, stateMachineName)) {
+        if (Intrinsics.areEqual(this.f17727r, stateMachineName)) {
             return;
         }
-        this.f17321r = stateMachineName;
-        this.f17328y = true;
+        this.f17727r = stateMachineName;
+        this.f17734y = true;
     }
 
     public final void setUrl(String str) {
-        if (Intrinsics.areEqual(this.f17319p, str)) {
+        if (Intrinsics.areEqual(this.f17725p, str)) {
             return;
         }
-        this.f17319p = str;
-        this.f17328y = true;
+        this.f17725p = str;
+        this.f17734y = true;
     }
 
     public final void t0(String path, boolean z10) {
@@ -2549,7 +2549,7 @@ public final class y extends FrameLayout {
         Intrinsics.checkNotNullParameter(stateMachineName, "stateMachineName");
         Intrinsics.checkNotNullParameter(inputName, "inputName");
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null) {
                 kVar.setBooleanState(stateMachineName, inputName, z10);
             }
@@ -2566,7 +2566,7 @@ public final class y extends FrameLayout {
         Intrinsics.checkNotNullParameter(inputName, "inputName");
         Intrinsics.checkNotNullParameter(path, "path");
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null) {
                 kVar.setBooleanStateAtPath(inputName, z10, path);
             }
@@ -2607,7 +2607,7 @@ public final class y extends FrameLayout {
         Intrinsics.checkNotNullParameter(stateMachineName, "stateMachineName");
         Intrinsics.checkNotNullParameter(inputName, "inputName");
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null) {
                 kVar.fireState(stateMachineName, inputName);
             }
@@ -2631,7 +2631,7 @@ public final class y extends FrameLayout {
         Intrinsics.checkNotNullParameter(inputName, "inputName");
         Intrinsics.checkNotNullParameter(path, "path");
         try {
-            k kVar = this.f17316e;
+            k kVar = this.f17722e;
             if (kVar != null) {
                 kVar.fireStateAtPath(inputName, path);
             }

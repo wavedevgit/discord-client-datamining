@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var5[var2];
         var2 = var4.bind(var3)(var2);
         var1 = function() { // Environment: var1
-            _fun74236: for (var _fun74236_ip = 0;;) switch (_fun74236_ip) {
+            _fun74255: for (var _fun74255_ip = 0;;) switch (_fun74255_ip) {
                 case 0:
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.bind(var4)(var2);
                     var2 = _closure2_slot2;
                     if (var2) {
-                        _fun74236_ip = 164;
-                        continue _fun74236
+                        _fun74255_ip = 164;
+                        continue _fun74255
                     }
                 case 56:
                     var3 = _closure1_slot1;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var6 == var7;
                     var7 = undefined;
                     if (var8) {
-                        _fun74236_ip = 118;
-                        continue _fun74236
+                        _fun74255_ip = 118;
+                        continue _fun74255
                     }
                 case 108:
                     var8 = _closure2_slot0;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var6 != var7;
                     var6 = 'Standard Emoji Popout';
                     if (!var8) {
-                        _fun74236_ip = 134;
-                        continue _fun74236
+                        _fun74255_ip = 134;
+                        continue _fun74255
                     }
                 case 131:
                     var6 = var7;
@@ -149,4 +149,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useTrackOpenPopout = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 1670, 1624, 660, 4302, 4103, 6993, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 1670, 1624, 660, 4302, 4103, 7013, 795, 2]);

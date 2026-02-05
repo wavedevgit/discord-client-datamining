@@ -7,16 +7,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f26831c = new a(null);
+    public static final a f25672c = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    public static final i f26832d;
+    public static final i f25673d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f26833a;
+    private final c f25674a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f26834b;
+    private final c f25675b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -29,29 +29,29 @@ public final class i {
     }
 
     static {
-        c.b bVar = c.b.f26817a;
-        f26832d = new i(bVar, bVar);
+        c.b bVar = c.b.f25658a;
+        f25673d = new i(bVar, bVar);
     }
 
     public i(c cVar, c cVar2) {
-        this.f26833a = cVar;
-        this.f26834b = cVar2;
+        this.f25674a = cVar;
+        this.f25675b = cVar2;
     }
 
     public final c a() {
-        return this.f26833a;
+        return this.f25674a;
     }
 
     public final c b() {
-        return this.f26834b;
+        return this.f25675b;
     }
 
     public final c c() {
-        return this.f26834b;
+        return this.f25675b;
     }
 
     public final c d() {
-        return this.f26833a;
+        return this.f25674a;
     }
 
     public boolean equals(Object obj) {
@@ -62,17 +62,17 @@ public final class i {
             return false;
         }
         i iVar = (i) obj;
-        if (Intrinsics.areEqual(this.f26833a, iVar.f26833a) && Intrinsics.areEqual(this.f26834b, iVar.f26834b)) {
+        if (Intrinsics.areEqual(this.f25674a, iVar.f25674a) && Intrinsics.areEqual(this.f25675b, iVar.f25675b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f26833a.hashCode() * 31) + this.f26834b.hashCode();
+        return (this.f25674a.hashCode() * 31) + this.f25675b.hashCode();
     }
 
     public String toString() {
-        return "Size(width=" + this.f26833a + ", height=" + this.f26834b + ')';
+        return "Size(width=" + this.f25674a + ", height=" + this.f25675b + ')';
     }
 }

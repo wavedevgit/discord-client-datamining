@@ -11,12 +11,12 @@ public final class h extends g {
     private static final long serialVersionUID = -946839310332554772L;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient byte f40799q;
+    private final transient byte f40259q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(b0 b0Var, y0 y0Var, int i10, i iVar, int i11) {
         super(b0Var, i10, iVar, i11);
-        this.f40799q = (byte) y0Var.d();
+        this.f40259q = (byte) y0Var.d();
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
@@ -33,7 +33,7 @@ public final class h extends g {
         }
         if (obj instanceof h) {
             h hVar = (h) obj;
-            if (this.f40799q == hVar.f40799q && super.l(hVar)) {
+            if (this.f40259q == hVar.f40259q && super.l(hVar)) {
                 return true;
             }
         }
@@ -47,14 +47,14 @@ public final class h extends g {
     }
 
     public int hashCode() {
-        return (this.f40799q * 17) + (k() * 37);
+        return (this.f40259q * 17) + (k() * 37);
     }
 
     @Override // net.time4j.tz.model.g
     protected f0 j(int i10) {
         byte k10 = k();
-        int d10 = kt.b.d(i10, k10);
-        int c10 = kt.b.c(i10, k10, d10) - this.f40799q;
+        int d10 = nt.b.d(i10, k10);
+        int c10 = nt.b.c(i10, k10, d10) - this.f40259q;
         if (c10 < 0) {
             c10 += 7;
         }
@@ -63,7 +63,7 @@ public final class h extends g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public byte m() {
-        return this.f40799q;
+        return this.f40259q;
     }
 
     public String toString() {
@@ -71,7 +71,7 @@ public final class h extends g {
         sb2.append("LastDayOfWeekPattern:[month=");
         sb2.append((int) k());
         sb2.append(",day-of-week=");
-        sb2.append(y0.h(this.f40799q));
+        sb2.append(y0.h(this.f40259q));
         sb2.append(",day-overflow=");
         sb2.append(c());
         sb2.append(",time-of-day=");

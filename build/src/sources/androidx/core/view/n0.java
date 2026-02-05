@@ -13,15 +13,15 @@ public abstract class n0 {
     public static final class a implements Sequence {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ ViewGroup f3393a;
+        final /* synthetic */ ViewGroup f3505a;
 
         a(ViewGroup viewGroup) {
-            this.f3393a = viewGroup;
+            this.f3505a = viewGroup;
         }
 
         @Override // kotlin.sequences.Sequence
         public Iterator iterator() {
-            return n0.c(this.f3393a);
+            return n0.c(this.f3505a);
         }
     }
 
@@ -29,7 +29,7 @@ public abstract class n0 {
     static final class b implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f3394d = new b();
+        public static final b f3506d = new b();
 
         b() {
         }
@@ -55,21 +55,21 @@ public abstract class n0 {
     public static final class c implements Iterator, KMutableIterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f3395d;
+        private int f3507d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ ViewGroup f3396e;
+        final /* synthetic */ ViewGroup f3508e;
 
         c(ViewGroup viewGroup) {
-            this.f3396e = viewGroup;
+            this.f3508e = viewGroup;
         }
 
         @Override // java.util.Iterator
         /* renamed from: a */
         public View next() {
-            ViewGroup viewGroup = this.f3396e;
-            int i10 = this.f3395d;
-            this.f3395d = i10 + 1;
+            ViewGroup viewGroup = this.f3508e;
+            int i10 = this.f3507d;
+            this.f3507d = i10 + 1;
             View childAt = viewGroup.getChildAt(i10);
             if (childAt != null) {
                 return childAt;
@@ -79,7 +79,7 @@ public abstract class n0 {
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f3395d < this.f3396e.getChildCount()) {
+            if (this.f3507d < this.f3508e.getChildCount()) {
                 return true;
             }
             return false;
@@ -87,9 +87,9 @@ public abstract class n0 {
 
         @Override // java.util.Iterator
         public void remove() {
-            ViewGroup viewGroup = this.f3396e;
-            int i10 = this.f3395d - 1;
-            this.f3395d = i10;
+            ViewGroup viewGroup = this.f3508e;
+            int i10 = this.f3507d - 1;
+            this.f3507d = i10;
             viewGroup.removeViewAt(i10);
         }
     }
@@ -98,15 +98,15 @@ public abstract class n0 {
     public static final class d implements Sequence {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ ViewGroup f3397a;
+        final /* synthetic */ ViewGroup f3509a;
 
         public d(ViewGroup viewGroup) {
-            this.f3397a = viewGroup;
+            this.f3509a = viewGroup;
         }
 
         @Override // kotlin.sequences.Sequence
         public Iterator iterator() {
-            return new d0(n0.a(this.f3397a).iterator(), b.f3394d);
+            return new d0(n0.a(this.f3509a).iterator(), b.f3506d);
         }
     }
 

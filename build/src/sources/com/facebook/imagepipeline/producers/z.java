@@ -7,45 +7,45 @@ import com.facebook.imagepipeline.request.ImageRequest;
 public class z implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Supplier f10584a;
+    private final Supplier f10969a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final la.k f10585b;
+    private final la.k f10970b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w0 f10586c;
+    private final w0 f10971c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final la.d f10587d;
+    private final la.d f10972d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final la.d f10588e;
+    private final la.d f10973e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static class a extends s {
 
         /* renamed from: c  reason: collision with root package name */
-        private final ProducerContext f10589c;
+        private final ProducerContext f10974c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Supplier f10590d;
+        private final Supplier f10975d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final la.k f10591e;
+        private final la.k f10976e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final la.d f10592f;
+        private final la.d f10977f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final la.d f10593g;
+        private final la.d f10978g;
 
         public a(Consumer consumer, ProducerContext producerContext, Supplier supplier, la.k kVar, la.d dVar, la.d dVar2) {
             super(consumer);
-            this.f10589c = producerContext;
-            this.f10590d = supplier;
-            this.f10591e = kVar;
-            this.f10592f = dVar;
-            this.f10593g = dVar2;
+            this.f10974c = producerContext;
+            this.f10975d = supplier;
+            this.f10976e = kVar;
+            this.f10977f = dVar;
+            this.f10978g = dVar2;
         }
 
         @Override // com.facebook.imagepipeline.producers.c
@@ -57,28 +57,28 @@ public class z implements w0 {
                 if (ya.b.d()) {
                     ya.b.a("EncodedProbeProducer#onNewResultImpl");
                 }
-                if (!c.e(i10) && kVar != null && !c.l(i10, 10) && kVar.L() != fa.c.f23687d) {
-                    ImageRequest V = this.f10589c.V();
-                    CacheKey encodedCacheKey = this.f10591e.getEncodedCacheKey(V, this.f10589c.a());
-                    this.f10592f.a(encodedCacheKey);
-                    if ("memory_encoded".equals(this.f10589c.D0("origin"))) {
-                        if (!this.f10593g.b(encodedCacheKey)) {
+                if (!c.e(i10) && kVar != null && !c.l(i10, 10) && kVar.L() != fa.c.f22712d) {
+                    ImageRequest V = this.f10974c.V();
+                    CacheKey encodedCacheKey = this.f10976e.getEncodedCacheKey(V, this.f10974c.a());
+                    this.f10977f.a(encodedCacheKey);
+                    if ("memory_encoded".equals(this.f10974c.D0("origin"))) {
+                        if (!this.f10978g.b(encodedCacheKey)) {
                             if (V.getCacheChoice() == ImageRequest.CacheChoice.SMALL) {
                                 z10 = true;
                             } else {
                                 z10 = false;
                             }
-                            na.b bVar = (na.b) this.f10590d.get();
+                            na.b bVar = (na.b) this.f10975d.get();
                             if (z10) {
                                 b10 = bVar.a();
                             } else {
                                 b10 = bVar.b();
                             }
                             b10.f(encodedCacheKey);
-                            this.f10593g.a(encodedCacheKey);
+                            this.f10978g.a(encodedCacheKey);
                         }
-                    } else if ("disk".equals(this.f10589c.D0("origin"))) {
-                        this.f10593g.a(encodedCacheKey);
+                    } else if ("disk".equals(this.f10974c.D0("origin"))) {
+                        this.f10978g.a(encodedCacheKey);
                     }
                     o().b(kVar, i10);
                     if (ya.b.d()) {
@@ -101,11 +101,11 @@ public class z implements w0 {
     }
 
     public z(Supplier supplier, la.k kVar, la.d dVar, la.d dVar2, w0 w0Var) {
-        this.f10584a = supplier;
-        this.f10585b = kVar;
-        this.f10587d = dVar;
-        this.f10588e = dVar2;
-        this.f10586c = w0Var;
+        this.f10969a = supplier;
+        this.f10970b = kVar;
+        this.f10972d = dVar;
+        this.f10973e = dVar2;
+        this.f10971c = w0Var;
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -116,12 +116,12 @@ public class z implements w0 {
             }
             y0 F = producerContext.F();
             F.d(producerContext, c());
-            a aVar = new a(consumer, producerContext, this.f10584a, this.f10585b, this.f10587d, this.f10588e);
+            a aVar = new a(consumer, producerContext, this.f10969a, this.f10970b, this.f10972d, this.f10973e);
             F.j(producerContext, "EncodedProbeProducer", null);
             if (ya.b.d()) {
                 ya.b.a("mInputProducer.produceResult");
             }
-            this.f10586c.b(aVar, producerContext);
+            this.f10971c.b(aVar, producerContext);
             if (ya.b.d()) {
                 ya.b.b();
             }

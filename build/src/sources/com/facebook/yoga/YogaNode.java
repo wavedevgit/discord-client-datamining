@@ -41,9 +41,7 @@ public abstract class YogaNode {
 
     public abstract void U(e eVar);
 
-    public abstract void V(e eVar, float f10);
-
-    public abstract void W(float f10);
+    public abstract void W(e eVar, float f10);
 
     public abstract void X(float f10);
 
@@ -53,11 +51,11 @@ public abstract class YogaNode {
 
     public abstract void a(YogaNode yogaNode, int i10);
 
-    public abstract void a0(YogaMeasureFunction yogaMeasureFunction);
+    public abstract void a0(float f10);
 
     public abstract void b(float f10, float f11);
 
-    public abstract void b0(float f10);
+    public abstract void b0(YogaMeasureFunction yogaMeasureFunction);
 
     public abstract void c();
 
@@ -73,11 +71,11 @@ public abstract class YogaNode {
 
     public abstract YogaDirection f();
 
-    public abstract void f0(YogaOverflow yogaOverflow);
+    public abstract void f0(float f10);
 
     public abstract float g();
 
-    public abstract void g0(e eVar, float f10);
+    public abstract void g0(YogaOverflow yogaOverflow);
 
     public abstract void h0(e eVar, float f10);
 
@@ -91,23 +89,25 @@ public abstract class YogaNode {
 
     public abstract float k();
 
-    public abstract void k0(YogaPositionType yogaPositionType);
+    public abstract void k0(e eVar, float f10);
 
     public abstract float l();
 
-    public abstract void l0(float f10);
+    public abstract void l0(YogaPositionType yogaPositionType);
 
     public abstract YogaValue m(e eVar);
 
-    public abstract void m0();
+    public abstract void m0(float f10);
 
-    public abstract void n0(float f10);
+    public abstract YogaValue n();
 
-    public abstract YogaValue o();
+    public abstract void n0();
 
-    public abstract void o0(YogaWrap yogaWrap);
+    public abstract void o0(float f10);
 
     public abstract boolean p();
+
+    public abstract void p0(YogaWrap yogaWrap);
 
     public abstract boolean q();
 
@@ -123,7 +123,7 @@ public abstract class YogaNode {
 
     public abstract void w(YogaAlign yogaAlign);
 
-    public abstract void y(YogaAlign yogaAlign);
+    public abstract void x(YogaAlign yogaAlign);
 
     public abstract void z(float f10);
 }

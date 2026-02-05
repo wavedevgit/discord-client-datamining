@@ -14,14 +14,15 @@ import android.text.TextUtils;
 import android.util.Log;
 import com.google.android.gms.common.api.Scope;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicInteger;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class c {
-    protected InterfaceC0338c A;
+    protected InterfaceC0340c A;
     private IInterface B;
-    private c1 D;
+    private a1 D;
     private final a F;
     private final b G;
     private final int H;
@@ -29,56 +30,56 @@ public abstract class c {
     private volatile String J;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f26057d;
+    private int f24755d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f26058e;
+    private long f24756e;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f26059i;
+    private long f24757i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f26060o;
+    private int f24758o;
 
     /* renamed from: p  reason: collision with root package name */
-    private long f26061p;
+    private long f24759p;
 
     /* renamed from: r  reason: collision with root package name */
-    q1 f26063r;
+    m1 f24761r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Context f26064s;
+    private final Context f24762s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Looper f26065t;
+    private final Looper f24763t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final h f26066u;
+    private final h f24764u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final com.google.android.gms.common.g f26067v;
+    private final com.google.android.gms.common.g f24765v;
 
     /* renamed from: w  reason: collision with root package name */
-    final Handler f26068w;
+    final Handler f24766w;
 
     /* renamed from: z  reason: collision with root package name */
-    private l f26071z;
+    private l f24769z;
     private static final com.google.android.gms.common.d[] P = new com.google.android.gms.common.d[0];
     public static final String[] O = {"service_esmobile", "service_googleme"};
 
     /* renamed from: q  reason: collision with root package name */
-    private volatile String f26062q = null;
+    private volatile String f24760q = null;
 
     /* renamed from: x  reason: collision with root package name */
-    private final Object f26069x = new Object();
+    private final Object f24767x = new Object();
 
     /* renamed from: y  reason: collision with root package name */
-    private final Object f26070y = new Object();
+    private final Object f24768y = new Object();
     private final ArrayList C = new ArrayList();
     private int E = 1;
     private com.google.android.gms.common.b K = null;
     private boolean L = false;
-    private volatile f1 M = null;
+    private volatile d1 M = null;
     protected AtomicInteger N = new AtomicInteger(0);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -95,22 +96,31 @@ public abstract class c {
 
     /* renamed from: gf.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface InterfaceC0338c {
+    public interface InterfaceC0340c {
         void a(com.google.android.gms.common.b bVar);
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    protected class d implements InterfaceC0338c {
-        public d() {
+    protected class d implements InterfaceC0340c {
+
+        /* renamed from: a  reason: collision with root package name */
+        final /* synthetic */ c f24770a;
+
+        public d(c cVar) {
+            Objects.requireNonNull(cVar);
+            this.f24770a = cVar;
         }
 
-        @Override // gf.c.InterfaceC0338c
+        @Override // gf.c.InterfaceC0340c
         public final void a(com.google.android.gms.common.b bVar) {
-            if (bVar.f()) {
-                c cVar = c.this;
-                cVar.j(null, cVar.B());
-            } else if (c.this.G != null) {
-                c.this.G.h(bVar);
+            if (bVar.g()) {
+                c cVar = this.f24770a;
+                cVar.k(null, cVar.B());
+                return;
+            }
+            c cVar2 = this.f24770a;
+            if (cVar2.c0() != null) {
+                cVar2.c0().h(bVar);
             }
         }
     }
@@ -123,88 +133,26 @@ public abstract class c {
     /* JADX INFO: Access modifiers changed from: protected */
     public c(Context context, Looper looper, h hVar, com.google.android.gms.common.g gVar, int i10, a aVar, b bVar, String str) {
         q.m(context, "Context must not be null");
-        this.f26064s = context;
+        this.f24762s = context;
         q.m(looper, "Looper must not be null");
-        this.f26065t = looper;
+        this.f24763t = looper;
         q.m(hVar, "Supervisor must not be null");
-        this.f26066u = hVar;
+        this.f24764u = hVar;
         q.m(gVar, "API availability must not be null");
-        this.f26067v = gVar;
-        this.f26068w = new z0(this, looper);
+        this.f24765v = gVar;
+        this.f24766w = new x0(this, looper);
         this.H = i10;
         this.F = aVar;
         this.G = bVar;
         this.I = str;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ void a0(c cVar, f1 f1Var) {
-        s g10;
-        cVar.M = f1Var;
-        if (cVar.Q()) {
-            gf.e eVar = f1Var.f26123o;
-            r b10 = r.b();
-            if (eVar == null) {
-                g10 = null;
-            } else {
-                g10 = eVar.g();
-            }
-            b10.c(g10);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ void b0(c cVar, int i10) {
-        int i11;
-        int i12;
-        synchronized (cVar.f26069x) {
-            i11 = cVar.E;
-        }
-        if (i11 == 3) {
-            cVar.L = true;
-            i12 = 5;
-        } else {
-            i12 = 4;
-        }
-        Handler handler = cVar.f26068w;
-        handler.sendMessage(handler.obtainMessage(i12, cVar.N.get(), 16));
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ boolean e0(c cVar, int i10, int i11, IInterface iInterface) {
-        synchronized (cVar.f26069x) {
-            try {
-                if (cVar.E != i10) {
-                    return false;
-                }
-                cVar.g0(i11, iInterface);
-                return true;
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ boolean f0(c cVar) {
-        if (cVar.L || TextUtils.isEmpty(cVar.D()) || TextUtils.isEmpty(cVar.A())) {
-            return false;
-        }
-        try {
-            Class.forName(cVar.D());
-            return true;
-        } catch (ClassNotFoundException unused) {
-            return false;
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final void g0(int i10, IInterface iInterface) {
+    private final void g0(int i10, IInterface iInterface) {
         boolean z10;
         boolean z11;
-        q1 q1Var;
-        int b10;
-        q1 q1Var2;
+        m1 m1Var;
+        int c10;
+        m1 m1Var2;
         boolean z12 = false;
         if (i10 != 4) {
             z10 = false;
@@ -220,7 +168,7 @@ public abstract class c {
             z12 = true;
         }
         q.a(z12);
-        synchronized (this.f26069x) {
+        synchronized (this.f24767x) {
             try {
                 this.E = i10;
                 this.B = iInterface;
@@ -232,51 +180,65 @@ public abstract class c {
                             J(iInterface);
                         }
                     } else {
-                        c1 c1Var = this.D;
-                        if (c1Var != null && (q1Var2 = this.f26063r) != null) {
-                            Log.e("GmsClient", "Calling connect() while still connected, missing disconnect() for " + q1Var2.b() + " on " + q1Var2.a());
-                            h hVar = this.f26066u;
-                            String b11 = this.f26063r.b();
-                            q.l(b11);
-                            hVar.e(b11, this.f26063r.a(), 4225, c1Var, V(), this.f26063r.c());
+                        a1 a1Var = this.D;
+                        if (a1Var != null && (m1Var2 = this.f24761r) != null) {
+                            String a10 = m1Var2.a();
+                            String b10 = m1Var2.b();
+                            StringBuilder sb2 = new StringBuilder(String.valueOf(a10).length() + 70 + String.valueOf(b10).length());
+                            sb2.append("Calling connect() while still connected, missing disconnect() for ");
+                            sb2.append(a10);
+                            sb2.append(" on ");
+                            sb2.append(b10);
+                            Log.e("GmsClient", sb2.toString());
+                            h hVar = this.f24764u;
+                            String a11 = this.f24761r.a();
+                            q.l(a11);
+                            hVar.d(a11, this.f24761r.b(), 4225, a1Var, R(), this.f24761r.c());
                             this.N.incrementAndGet();
                         }
-                        c1 c1Var2 = new c1(this, this.N.get());
-                        this.D = c1Var2;
+                        a1 a1Var2 = new a1(this, this.N.get());
+                        this.D = a1Var2;
                         if (this.E == 3 && A() != null) {
-                            q1Var = new q1(x().getPackageName(), A(), true, 4225, false);
+                            m1Var = new m1(x().getPackageName(), A(), true, 4225, false);
                         } else {
-                            q1Var = new q1(F(), E(), false, 4225, H());
+                            m1Var = new m1(F(), E(), false, 4225, H());
                         }
-                        this.f26063r = q1Var;
-                        if (q1Var.c() && n() < 17895000) {
-                            throw new IllegalStateException("Internal Error, the minimum apk version of this BaseGmsClient is too low to support dynamic lookup. Start service action: ".concat(String.valueOf(this.f26063r.b())));
+                        this.f24761r = m1Var;
+                        if (m1Var.c() && n() < 17895000) {
+                            throw new IllegalStateException("Internal Error, the minimum apk version of this BaseGmsClient is too low to support dynamic lookup. Start service action: ".concat(String.valueOf(this.f24761r.a())));
                         }
-                        h hVar2 = this.f26066u;
-                        String b12 = this.f26063r.b();
-                        q.l(b12);
-                        com.google.android.gms.common.b c10 = hVar2.c(new j1(b12, this.f26063r.a(), 4225, this.f26063r.c()), c1Var2, V(), v());
-                        if (!c10.f()) {
-                            Log.w("GmsClient", "unable to connect to service: " + this.f26063r.b() + " on " + this.f26063r.a());
-                            if (c10.b() == -1) {
-                                b10 = 16;
+                        h hVar2 = this.f24764u;
+                        String a12 = this.f24761r.a();
+                        q.l(a12);
+                        com.google.android.gms.common.b c11 = hVar2.c(new h1(a12, this.f24761r.b(), 4225, this.f24761r.c()), a1Var2, R(), v());
+                        if (!c11.g()) {
+                            String a13 = this.f24761r.a();
+                            String b11 = this.f24761r.b();
+                            StringBuilder sb3 = new StringBuilder(String.valueOf(a13).length() + 34 + String.valueOf(b11).length());
+                            sb3.append("unable to connect to service: ");
+                            sb3.append(a13);
+                            sb3.append(" on ");
+                            sb3.append(b11);
+                            Log.w("GmsClient", sb3.toString());
+                            if (c11.c() == -1) {
+                                c10 = 16;
                             } else {
-                                b10 = c10.b();
+                                c10 = c11.c();
                             }
-                            if (c10.d() != null) {
+                            if (c11.e() != null) {
                                 bundle = new Bundle();
-                                bundle.putParcelable("pendingIntent", c10.d());
+                                bundle.putParcelable("pendingIntent", c11.e());
                             }
-                            c0(b10, bundle, this.N.get());
+                            S(c10, bundle, this.N.get());
                         }
                     }
                 } else {
-                    c1 c1Var3 = this.D;
-                    if (c1Var3 != null) {
-                        h hVar3 = this.f26066u;
-                        String b13 = this.f26063r.b();
-                        q.l(b13);
-                        hVar3.e(b13, this.f26063r.a(), 4225, c1Var3, V(), this.f26063r.c());
+                    a1 a1Var3 = this.D;
+                    if (a1Var3 != null) {
+                        h hVar3 = this.f24764u;
+                        String a14 = this.f24761r.a();
+                        q.l(a14);
+                        hVar3.d(a14, this.f24761r.b(), 4225, a1Var3, R(), this.f24761r.c());
                         this.D = null;
                     }
                 }
@@ -293,7 +255,7 @@ public abstract class c {
 
     public final IInterface C() {
         IInterface iInterface;
-        synchronized (this.f26069x) {
+        synchronized (this.f24767x) {
             try {
                 if (this.E != 5) {
                     q();
@@ -320,11 +282,11 @@ public abstract class c {
     }
 
     public gf.e G() {
-        f1 f1Var = this.M;
-        if (f1Var == null) {
+        d1 d1Var = this.M;
+        if (d1Var == null) {
             return null;
         }
-        return f1Var.f26123o;
+        return d1Var.f24795o;
     }
 
     protected boolean H() {
@@ -342,24 +304,26 @@ public abstract class c {
     }
 
     protected void J(IInterface iInterface) {
-        this.f26059i = System.currentTimeMillis();
+        this.f24757i = System.currentTimeMillis();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void K(com.google.android.gms.common.b bVar) {
-        this.f26060o = bVar.b();
-        this.f26061p = System.currentTimeMillis();
+        this.f24758o = bVar.c();
+        this.f24759p = System.currentTimeMillis();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void L(int i10) {
-        this.f26057d = i10;
-        this.f26058e = System.currentTimeMillis();
+        this.f24755d = i10;
+        this.f24756e = System.currentTimeMillis();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void M(int i10, IBinder iBinder, Bundle bundle, int i11) {
-        this.f26068w.sendMessage(this.f26068w.obtainMessage(1, i11, -1, new d1(this, i10, iBinder, bundle)));
+        b1 b1Var = new b1(this, i10, iBinder, bundle);
+        Handler handler = this.f24766w;
+        handler.sendMessage(handler.obtainMessage(1, i11, -1, b1Var));
     }
 
     public boolean N() {
@@ -371,24 +335,109 @@ public abstract class c {
     }
 
     public void P(int i10) {
-        this.f26068w.sendMessage(this.f26068w.obtainMessage(6, this.N.get(), i10));
+        int i11 = this.N.get();
+        Handler handler = this.f24766w;
+        handler.sendMessage(handler.obtainMessage(6, i11, i10));
     }
 
     public boolean Q() {
         return false;
     }
 
-    protected final String V() {
+    protected final String R() {
         String str = this.I;
         if (str == null) {
-            return this.f26064s.getClass().getName();
+            return this.f24762s.getClass().getName();
         }
         return str;
     }
 
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void S(int i10, Bundle bundle, int i11) {
+        c1 c1Var = new c1(this, i10, bundle);
+        Handler handler = this.f24766w;
+        handler.sendMessage(handler.obtainMessage(7, i11, -1, c1Var));
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ void T(d1 d1Var) {
+        s g10;
+        this.M = d1Var;
+        if (Q()) {
+            gf.e eVar = d1Var.f24795o;
+            r b10 = r.b();
+            if (eVar == null) {
+                g10 = null;
+            } else {
+                g10 = eVar.g();
+            }
+            b10.c(g10);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ void U(int i10, IInterface iInterface) {
+        g0(i10, null);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ boolean V(int i10, int i11, IInterface iInterface) {
+        synchronized (this.f24767x) {
+            try {
+                if (this.E != i10) {
+                    return false;
+                }
+                g0(i11, iInterface);
+                return true;
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ void W(int i10) {
+        int i11;
+        int i12;
+        synchronized (this.f24767x) {
+            i11 = this.E;
+        }
+        if (i11 == 3) {
+            this.L = true;
+            i12 = 5;
+        } else {
+            i12 = 4;
+        }
+        Handler handler = this.f24766w;
+        handler.sendMessage(handler.obtainMessage(i12, this.N.get(), 16));
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ boolean X() {
+        if (this.L || TextUtils.isEmpty(D()) || TextUtils.isEmpty(A())) {
+            return false;
+        }
+        try {
+            Class.forName(D());
+            return true;
+        } catch (ClassNotFoundException unused) {
+            return false;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ Object Y() {
+        return this.f24768y;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ void Z(l lVar) {
+        this.f24769z = lVar;
+    }
+
     public boolean a() {
         boolean z10;
-        synchronized (this.f26069x) {
+        synchronized (this.f24767x) {
             if (this.E == 4) {
                 z10 = true;
             } else {
@@ -398,14 +447,24 @@ public abstract class c {
         return z10;
     }
 
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ ArrayList a0() {
+        return this.C;
+    }
+
     public void b(String str) {
-        this.f26062q = str;
-        k();
+        this.f24760q = str;
+        l();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ a b0() {
+        return this.F;
     }
 
     public boolean c() {
         boolean z10;
-        synchronized (this.f26069x) {
+        synchronized (this.f24767x) {
             int i10 = this.E;
             z10 = true;
             if (i10 != 2 && i10 != 3) {
@@ -415,34 +474,49 @@ public abstract class c {
         return z10;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final void c0(int i10, Bundle bundle, int i11) {
-        this.f26068w.sendMessage(this.f26068w.obtainMessage(7, i11, -1, new e1(this, i10, bundle)));
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ b c0() {
+        return this.G;
     }
 
     public String d() {
-        q1 q1Var;
-        if (a() && (q1Var = this.f26063r) != null) {
-            return q1Var.a();
+        m1 m1Var;
+        if (a() && (m1Var = this.f24761r) != null) {
+            return m1Var.b();
         }
         throw new RuntimeException("Failed to connect when checking package");
     }
 
-    public void e(InterfaceC0338c interfaceC0338c) {
-        q.m(interfaceC0338c, "Connection progress callbacks cannot be null.");
-        this.A = interfaceC0338c;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ com.google.android.gms.common.b d0() {
+        return this.K;
+    }
+
+    public void e(InterfaceC0340c interfaceC0340c) {
+        q.m(interfaceC0340c, "Connection progress callbacks cannot be null.");
+        this.A = interfaceC0340c;
         g0(2, null);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ void e0(com.google.android.gms.common.b bVar) {
+        this.K = bVar;
     }
 
     public boolean f() {
         return true;
     }
 
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final /* synthetic */ boolean f0() {
+        return this.L;
+    }
+
     public boolean g() {
         return false;
     }
 
-    public void j(j jVar, Set set) {
+    public void k(j jVar, Set set) {
         String str;
         Bundle z10 = z();
         if (Build.VERSION.SDK_INT < 31) {
@@ -452,39 +526,39 @@ public abstract class c {
         }
         String str2 = str;
         int i10 = this.H;
-        int i11 = com.google.android.gms.common.g.f13414a;
-        Scope[] scopeArr = f.f26104z;
+        int i11 = com.google.android.gms.common.g.f13809a;
+        Scope[] scopeArr = f.f24802z;
         Bundle bundle = new Bundle();
         com.google.android.gms.common.d[] dVarArr = f.A;
         f fVar = new f(6, i10, i11, null, null, scopeArr, bundle, null, dVarArr, dVarArr, true, 0, false, str2);
-        fVar.f26108o = this.f26064s.getPackageName();
-        fVar.f26111r = z10;
+        fVar.f24806o = this.f24762s.getPackageName();
+        fVar.f24809r = z10;
         if (set != null) {
-            fVar.f26110q = (Scope[]) set.toArray(new Scope[0]);
+            fVar.f24808q = (Scope[]) set.toArray(new Scope[0]);
         }
         if (g()) {
             Account t10 = t();
             if (t10 == null) {
                 t10 = new Account("<<default account>>", "com.google");
             }
-            fVar.f26112s = t10;
+            fVar.f24810s = t10;
             if (jVar != null) {
-                fVar.f26109p = jVar.asBinder();
+                fVar.f24807p = jVar.asBinder();
             }
         } else if (N()) {
-            fVar.f26112s = t();
+            fVar.f24810s = t();
         }
-        fVar.f26113t = P;
-        fVar.f26114u = u();
+        fVar.f24811t = P;
+        fVar.f24812u = u();
         if (Q()) {
-            fVar.f26117x = true;
+            fVar.f24815x = true;
         }
         try {
-            synchronized (this.f26070y) {
+            synchronized (this.f24768y) {
                 try {
-                    l lVar = this.f26071z;
+                    l lVar = this.f24769z;
                     if (lVar != null) {
-                        lVar.G0(new b1(this, this.N.get()), fVar);
+                        lVar.K0(new z0(this, this.N.get()), fVar);
                     } else {
                         Log.w("GmsClient", "mServiceBroker is null, client disconnected");
                     }
@@ -507,41 +581,42 @@ public abstract class c {
         }
     }
 
-    public void k() {
+    public void l() {
         this.N.incrementAndGet();
-        synchronized (this.C) {
+        ArrayList arrayList = this.C;
+        synchronized (arrayList) {
             try {
-                int size = this.C.size();
+                int size = arrayList.size();
                 for (int i10 = 0; i10 < size; i10++) {
-                    ((a1) this.C.get(i10)).d();
+                    ((y0) arrayList.get(i10)).d();
                 }
-                this.C.clear();
+                arrayList.clear();
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        synchronized (this.f26070y) {
-            this.f26071z = null;
+        synchronized (this.f24768y) {
+            this.f24769z = null;
         }
         g0(1, null);
     }
 
-    public void l(e eVar) {
+    public void m(e eVar) {
         eVar.a();
     }
 
     public abstract int n();
 
     public final com.google.android.gms.common.d[] o() {
-        f1 f1Var = this.M;
-        if (f1Var == null) {
+        d1 d1Var = this.M;
+        if (d1Var == null) {
             return null;
         }
-        return f1Var.f26121e;
+        return d1Var.f24793e;
     }
 
     public String p() {
-        return this.f26062q;
+        return this.f24760q;
     }
 
     protected final void q() {
@@ -572,7 +647,7 @@ public abstract class c {
     }
 
     public final Context x() {
-        return this.f26064s;
+        return this.f24762s;
     }
 
     public int y() {

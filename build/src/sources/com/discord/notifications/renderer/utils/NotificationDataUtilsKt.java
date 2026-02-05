@@ -80,14 +80,14 @@ public final class NotificationDataUtilsKt {
         long m1146unboximpl = m1027getUserIdwUX8bhU.m1146unboximpl();
         String userUsername = notificationData.getUserUsername();
         Intrinsics.checkNotNull(userUsername);
-        et.x xVar = new et.x();
+        ht.x xVar = new ht.x();
         if (userAvatar != null) {
-            et.g.c(xVar, "avatar", userAvatar);
+            ht.g.c(xVar, "avatar", userAvatar);
         }
-        et.g.c(xVar, StackTraceHelper.ID_KEY, UserId.m1144toStringimpl(m1146unboximpl));
-        et.g.c(xVar, NotificationRenderer.USERNAME, userUsername);
-        et.g.c(xVar, "globalName", notificationData.getUserGlobalName());
-        et.g.a(xVar, "incomplete", Boolean.TRUE);
+        ht.g.c(xVar, StackTraceHelper.ID_KEY, UserId.m1144toStringimpl(m1146unboximpl));
+        ht.g.c(xVar, NotificationRenderer.USERNAME, userUsername);
+        ht.g.c(xVar, "globalName", notificationData.getUserGlobalName());
+        ht.g.a(xVar, "incomplete", Boolean.TRUE);
         return xVar.a();
     }
 
@@ -112,7 +112,7 @@ public final class NotificationDataUtilsKt {
     public static final Unit getBotDMMuteAction$lambda$32(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("app", notificationData.getUserUsername());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @NotNull
@@ -148,9 +148,9 @@ public final class NotificationDataUtilsKt {
                     pendingIntent$default = NotificationAction.DefaultImpls.toPendingIntent$default(new DismissCallAction(getTag(notificationData), m1068unboximpl, false, notificationData.m1023getGuildIdqOKuAAo(), m1146unboximpl, null), context2, 0, false, 6, null);
                 }
                 if (z10) {
-                    a10 = lr.v.a(I18nUtilsKt.i18nFormat$default(context2, I18nMessage.JOIN_CALL, null, 2, null), Integer.valueOf(ColorUtilsKt.getColorCompat(context2, com.discord.theme.R.color.green_360)));
+                    a10 = or.v.a(I18nUtilsKt.i18nFormat$default(context2, I18nMessage.JOIN_CALL, null, 2, null), Integer.valueOf(ColorUtilsKt.getColorCompat(context2, com.discord.theme.R.color.green_360)));
                 } else {
-                    a10 = lr.v.a(I18nUtilsKt.i18nFormat$default(context2, I18nMessage.DECLINE, null, 2, null), Integer.valueOf(ColorUtilsKt.getColorCompat(context2, com.discord.theme.R.color.red_400)));
+                    a10 = or.v.a(I18nUtilsKt.i18nFormat$default(context2, I18nMessage.DECLINE, null, 2, null), Integer.valueOf(ColorUtilsKt.getColorCompat(context2, com.discord.theme.R.color.red_400)));
                 }
                 int intValue = ((Number) a10.b()).intValue();
                 SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
@@ -334,7 +334,7 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("user", notificationData.getUserUsername());
         i18nFormat.getArgs().put("game", notificationData.getMessageApplicationName());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -342,7 +342,7 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("user", notificationData.getUserUsername());
         i18nFormat.getArgs().put("game", notificationData.getMessageApplicationName());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -350,21 +350,21 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(NotificationRenderer.USERNAME, notificationData.getUserUsername());
         i18nFormat.getArgs().put("gameName", notificationData.getActivityName());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getContent$lambda$19(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(StackTraceHelper.NAME_KEY, notificationData.getUserUsername());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getContent$lambda$20(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(StackTraceHelper.NAME_KEY, notificationData.getApplicationName());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -372,7 +372,7 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(NotificationRenderer.USERNAME, notificationData.getUserUsername());
         i18nFormat.getArgs().put("topic", notificationData.getStageInstanceTopic());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -380,7 +380,7 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(NotificationRenderer.CHANNEL_NAME, notificationData.getChannelName());
         i18nFormat.getArgs().put("userUsername", notificationData.getUserUsername());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -388,14 +388,14 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("topic", notificationData.getStageInstanceTopic());
         i18nFormat.getArgs().put(NotificationRenderer.USERNAME, notificationData.getUserUsername());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getContent$lambda$24(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("topic", notificationData.getStageInstanceTopic());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @NotNull
@@ -584,7 +584,7 @@ public final class NotificationDataUtilsKt {
         if (m1024getMessageIdN_6c4I0 != null && m1022getChannelIdqMVnFVQ != null && Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE)) {
             NotificationMessage message = notificationData.getMessage();
             if (str != null && message != null) {
-                JsonElement g10 = Json.f35576d.g(str);
+                JsonElement g10 = Json.f35100d.g(str);
                 List l10 = CollectionsKt.l();
                 JsonObject author = message.getAuthor();
                 Intrinsics.checkNotNull(author);
@@ -592,10 +592,10 @@ public final class NotificationDataUtilsKt {
                 ArrayList arrayList = new ArrayList(CollectionsKt.w(L0, 10));
                 for (JsonObject jsonObject : L0) {
                     Map y10 = o0.y(jsonObject);
-                    y10.put("incomplete", et.h.b(Boolean.TRUE));
+                    y10.put("incomplete", ht.h.b(Boolean.TRUE));
                     arrayList.add(new JsonObject(y10));
                 }
-                return new KvMessageEntry(l10, arrayList, et.h.n(g10), m1024getMessageIdN_6c4I0, m1022getChannelIdqMVnFVQ.m1068unboximpl(), null);
+                return new KvMessageEntry(l10, arrayList, ht.h.n(g10), m1024getMessageIdN_6c4I0, m1022getChannelIdqMVnFVQ.m1068unboximpl(), null);
             }
             try {
                 JsonObject author2 = getAuthor(notificationData);
@@ -643,7 +643,7 @@ public final class NotificationDataUtilsKt {
     public static final Unit getMissedCallText$lambda$37(String str, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(StackTraceHelper.NAME_KEY, str);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @NotNull
@@ -847,7 +847,7 @@ public final class NotificationDataUtilsKt {
     public static final Unit getSystemMessageUserJoin__NT_lnE$lambda$26$lambda$25(String str, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(NotificationRenderer.USERNAME, str);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0051, code lost:
@@ -1085,21 +1085,21 @@ public final class NotificationDataUtilsKt {
     public static final Unit getTitle$lambda$0(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("userName", notificationData.getUserUsername());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getTitle$lambda$1(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("userName", notificationData.getUserUsername());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getTitle$lambda$2(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("guildName", notificationData.getGuildName());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1107,28 +1107,28 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("guildName", notificationData.getGuildName());
         i18nFormat.getArgs().put(NotificationRenderer.CHANNEL_NAME, notificationData.getParentName());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getTitle$lambda$4(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("guildName", notificationData.getGuildName());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getTitle$lambda$5(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("contact", notificationData.getPlatformUserUsername());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getTitle$lambda$6(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("contact", notificationData.getPlatformUserUsername());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public static final boolean isCall(@NotNull NotificationData notificationData) {
@@ -1309,7 +1309,7 @@ public final class NotificationDataUtilsKt {
     public static final Unit renderMessageContent$lambda$10(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("user", notificationData.getUserUsername());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1320,7 +1320,7 @@ public final class NotificationDataUtilsKt {
         Map<String, String> args = i18nFormat.getArgs();
         NotificationMessage message = notificationData.getMessage();
         args.put("question", (message == null || (poll = message.getPoll()) == null || (question = poll.getQuestion()) == null || (r1 = question.getText()) == null) ? "???" : "???");
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1366,7 +1366,7 @@ public final class NotificationDataUtilsKt {
         L44:
             java.lang.String r4 = "question"
             r5.put(r4, r3)
-            kotlin.Unit r3 = kotlin.Unit.f32464a
+            kotlin.Unit r3 = kotlin.Unit.f31988a
             return r3
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.notifications.renderer.utils.NotificationDataUtilsKt.renderMessageContent$lambda$13(com.discord.notifications.api.Embed, com.discord.notifications.api.NotificationData, com.discord.react_strings.RenderContext):kotlin.Unit");
@@ -1388,7 +1388,7 @@ public final class NotificationDataUtilsKt {
             str = guildName;
         }
         args2.put("guildName", str);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1396,28 +1396,28 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(NotificationRenderer.CHANNEL_NAME, notificationData.getInviteChannelName());
         i18nFormat.getArgs().put("guildName", notificationData.getInviteGuildName());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit renderMessageContent$lambda$7(Sticker sticker, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("stickerName", sticker.getName());
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit renderMessageContent$lambda$8(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("count", String.valueOf(notificationData.getImageAttachmentCount()));
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit renderMessageContent$lambda$9(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("count", String.valueOf(notificationData.getVideoAttachmentCount()));
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public static final boolean shouldUseBigText(@NotNull NotificationData notificationData) {
@@ -1468,16 +1468,16 @@ public final class NotificationDataUtilsKt {
         long m1068unboximpl = m1022getChannelIdqMVnFVQ.m1068unboximpl();
         GuildId m1023getGuildIdqOKuAAo = notificationData.m1023getGuildIdqOKuAAo();
         String format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSS", Locale.getDefault()).format(new Date());
-        et.x xVar = new et.x();
-        et.g.c(xVar, "content", messageContent);
-        et.g.b(xVar, "flags", Long.valueOf(j10));
-        et.g.b(xVar, "type", messageType);
-        et.g.c(xVar, StackTraceHelper.ID_KEY, MessageId.m1092toStringimpl(m1024getMessageIdN_6c4I0));
-        et.g.c(xVar, "channel_id", ChannelId.m1066toStringimpl(m1068unboximpl));
-        et.g.c(xVar, "timestamp", format);
+        ht.x xVar = new ht.x();
+        ht.g.c(xVar, "content", messageContent);
+        ht.g.b(xVar, "flags", Long.valueOf(j10));
+        ht.g.b(xVar, "type", messageType);
+        ht.g.c(xVar, StackTraceHelper.ID_KEY, MessageId.m1092toStringimpl(m1024getMessageIdN_6c4I0));
+        ht.g.c(xVar, "channel_id", ChannelId.m1066toStringimpl(m1068unboximpl));
+        ht.g.c(xVar, "timestamp", format);
         xVar.b("author", author);
         if (m1023getGuildIdqOKuAAo != null) {
-            et.g.c(xVar, "guild_id", GuildId.m1079toStringimpl(m1023getGuildIdqOKuAAo.m1081unboximpl()));
+            ht.g.c(xVar, "guild_id", GuildId.m1079toStringimpl(m1023getGuildIdqOKuAAo.m1081unboximpl()));
         }
         return xVar.a();
     }

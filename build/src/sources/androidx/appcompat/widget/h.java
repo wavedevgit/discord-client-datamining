@@ -8,56 +8,56 @@ import android.widget.CheckedTextView;
 class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CheckedTextView f1674a;
+    private final CheckedTextView f1786a;
 
     /* renamed from: b  reason: collision with root package name */
-    private ColorStateList f1675b = null;
+    private ColorStateList f1787b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private PorterDuff.Mode f1676c = null;
+    private PorterDuff.Mode f1788c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f1677d = false;
+    private boolean f1789d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f1678e = false;
+    private boolean f1790e = false;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f1679f;
+    private boolean f1791f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(CheckedTextView checkedTextView) {
-        this.f1674a = checkedTextView;
+        this.f1786a = checkedTextView;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a() {
-        Drawable a10 = androidx.core.widget.c.a(this.f1674a);
+        Drawable a10 = androidx.core.widget.c.a(this.f1786a);
         if (a10 != null) {
-            if (this.f1677d || this.f1678e) {
+            if (this.f1789d || this.f1790e) {
                 Drawable mutate = s1.a.r(a10).mutate();
-                if (this.f1677d) {
-                    s1.a.o(mutate, this.f1675b);
+                if (this.f1789d) {
+                    s1.a.o(mutate, this.f1787b);
                 }
-                if (this.f1678e) {
-                    s1.a.p(mutate, this.f1676c);
+                if (this.f1790e) {
+                    s1.a.p(mutate, this.f1788c);
                 }
                 if (mutate.isStateful()) {
-                    mutate.setState(this.f1674a.getDrawableState());
+                    mutate.setState(this.f1786a.getDrawableState());
                 }
-                this.f1674a.setCheckMarkDrawable(mutate);
+                this.f1786a.setCheckMarkDrawable(mutate);
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ColorStateList b() {
-        return this.f1675b;
+        return this.f1787b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public PorterDuff.Mode c() {
-        return this.f1676c;
+        return this.f1788c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -70,12 +70,12 @@ class h {
     public void d(android.util.AttributeSet r11, int r12) {
         /*
             r10 = this;
-            android.widget.CheckedTextView r0 = r10.f1674a
+            android.widget.CheckedTextView r0 = r10.f1786a
             android.content.Context r0 = r0.getContext()
             int[] r1 = f.j.P0
             r2 = 0
             androidx.appcompat.widget.v0 r1 = androidx.appcompat.widget.v0.v(r0, r11, r1, r12, r2)
-            android.widget.CheckedTextView r3 = r10.f1674a
+            android.widget.CheckedTextView r3 = r10.f1786a
             android.content.Context r4 = r3.getContext()
             int[] r5 = f.j.P0
             android.content.res.TypedArray r7 = r1.r()
@@ -89,7 +89,7 @@ class h {
             int r11 = f.j.R0     // Catch: java.lang.Throwable -> L3d
             int r11 = r1.n(r11, r2)     // Catch: java.lang.Throwable -> L3d
             if (r11 == 0) goto L40
-            android.widget.CheckedTextView r12 = r10.f1674a     // Catch: java.lang.Throwable -> L3d android.content.res.Resources.NotFoundException -> L40
+            android.widget.CheckedTextView r12 = r10.f1786a     // Catch: java.lang.Throwable -> L3d android.content.res.Resources.NotFoundException -> L40
             android.content.Context r0 = r12.getContext()     // Catch: java.lang.Throwable -> L3d android.content.res.Resources.NotFoundException -> L40
             android.graphics.drawable.Drawable r11 = g.a.b(r0, r11)     // Catch: java.lang.Throwable -> L3d android.content.res.Resources.NotFoundException -> L40
             r12.setCheckMarkDrawable(r11)     // Catch: java.lang.Throwable -> L3d android.content.res.Resources.NotFoundException -> L40
@@ -105,7 +105,7 @@ class h {
             int r11 = f.j.Q0     // Catch: java.lang.Throwable -> L3d
             int r11 = r1.n(r11, r2)     // Catch: java.lang.Throwable -> L3d
             if (r11 == 0) goto L5d
-            android.widget.CheckedTextView r12 = r10.f1674a     // Catch: java.lang.Throwable -> L3d
+            android.widget.CheckedTextView r12 = r10.f1786a     // Catch: java.lang.Throwable -> L3d
             android.content.Context r0 = r12.getContext()     // Catch: java.lang.Throwable -> L3d
             android.graphics.drawable.Drawable r11 = g.a.b(r0, r11)     // Catch: java.lang.Throwable -> L3d
             r12.setCheckMarkDrawable(r11)     // Catch: java.lang.Throwable -> L3d
@@ -113,7 +113,7 @@ class h {
             int r11 = f.j.S0     // Catch: java.lang.Throwable -> L3d
             boolean r11 = r1.s(r11)     // Catch: java.lang.Throwable -> L3d
             if (r11 == 0) goto L70
-            android.widget.CheckedTextView r11 = r10.f1674a     // Catch: java.lang.Throwable -> L3d
+            android.widget.CheckedTextView r11 = r10.f1786a     // Catch: java.lang.Throwable -> L3d
             int r12 = f.j.S0     // Catch: java.lang.Throwable -> L3d
             android.content.res.ColorStateList r12 = r1.c(r12)     // Catch: java.lang.Throwable -> L3d
             androidx.core.widget.c.b(r11, r12)     // Catch: java.lang.Throwable -> L3d
@@ -121,7 +121,7 @@ class h {
             int r11 = f.j.T0     // Catch: java.lang.Throwable -> L3d
             boolean r11 = r1.s(r11)     // Catch: java.lang.Throwable -> L3d
             if (r11 == 0) goto L89
-            android.widget.CheckedTextView r11 = r10.f1674a     // Catch: java.lang.Throwable -> L3d
+            android.widget.CheckedTextView r11 = r10.f1786a     // Catch: java.lang.Throwable -> L3d
             int r12 = f.j.T0     // Catch: java.lang.Throwable -> L3d
             r0 = -1
             int r12 = r1.k(r12, r0)     // Catch: java.lang.Throwable -> L3d
@@ -140,25 +140,25 @@ class h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e() {
-        if (this.f1679f) {
-            this.f1679f = false;
+        if (this.f1791f) {
+            this.f1791f = false;
             return;
         }
-        this.f1679f = true;
+        this.f1791f = true;
         a();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(ColorStateList colorStateList) {
-        this.f1675b = colorStateList;
-        this.f1677d = true;
+        this.f1787b = colorStateList;
+        this.f1789d = true;
         a();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(PorterDuff.Mode mode) {
-        this.f1676c = mode;
-        this.f1678e = true;
+        this.f1788c = mode;
+        this.f1790e = true;
         a();
     }
 }

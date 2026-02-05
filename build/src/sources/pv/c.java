@@ -1,78 +1,44 @@
 package pv;
 
-import java.util.List;
-import kotlin.Result;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
-import ov.o;
-import ts.e;
+import com.squareup.moshi.j;
+import com.squareup.moshi.m;
+import okhttp3.ResponseBody;
+import okio.BufferedSource;
+import okio.ByteString;
+import ov.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements nu.b, o {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final c f46643a = new c();
+final class c implements h {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final b f46644b = new b();
+    private static final ByteString f46707b = ByteString.f("EFBBBF");
 
-    private c() {
+    /* renamed from: a  reason: collision with root package name */
+    private final com.squareup.moshi.h f46708a;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c(com.squareup.moshi.h hVar) {
+        this.f46708a = hVar;
     }
 
-    private final Integer a(List list) {
-        Object b10;
+    @Override // ov.h
+    /* renamed from: b */
+    public Object a(ResponseBody responseBody) {
+        BufferedSource source = responseBody.source();
         try {
-            Result.a aVar = Result.f32461e;
-            b10 = Result.b(Integer.valueOf(((e) CollectionsKt.o0(list)).compareTo((e) CollectionsKt.z0(list))));
-        } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32461e;
-            b10 = Result.b(kotlin.c.a(th2));
-        }
-        if (Result.h(b10)) {
-            int intValue = ((Number) b10).intValue();
-            if (intValue > 0) {
-                return 1;
+            ByteString byteString = f46707b;
+            if (source.q0(0L, byteString)) {
+                source.skip(byteString.G());
             }
-            if (intValue < 0) {
-                return -1;
+            m y10 = m.y(source);
+            Object fromJson = this.f46708a.fromJson(y10);
+            if (y10.E() == m.c.END_DOCUMENT) {
+                responseBody.close();
+                return fromJson;
             }
-            return 0;
-        }
-        if (Result.g(b10)) {
-            b10 = null;
-        }
-        return (Integer) b10;
-    }
-
-    private final List b(List list) {
-        Object b10;
-        try {
-            Result.a aVar = Result.f32461e;
-            Object obj = list.get(2);
-            Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlin.String");
-            a valueOf = a.valueOf((String) obj);
-            b bVar = f46644b;
-            Object obj2 = list.get(0);
-            Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.String");
-            e a10 = bVar.a((String) obj2, valueOf);
-            Object obj3 = list.get(1);
-            Intrinsics.checkNotNull(obj3, "null cannot be cast to non-null type kotlin.String");
-            b10 = Result.b(CollectionsKt.o(a10, bVar.a((String) obj3, valueOf)));
+            throw new j("JSON document was not fully consumed.");
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32461e;
-            b10 = Result.b(kotlin.c.a(th2));
+            responseBody.close();
+            throw th2;
         }
-        if (Result.g(b10)) {
-            b10 = null;
-        }
-        return (List) b10;
-    }
-
-    @Override // nu.b
-    public Object f(Object obj, Object obj2) {
-        List b10 = b(sv.a.c(obj));
-        if (b10 != null) {
-            return a(b10);
-        }
-        return null;
     }
 }

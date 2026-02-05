@@ -10,13 +10,13 @@ import l1.b;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static b.a f36355a = new b.a();
+    private static b.a f36282a = new b.a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static int f36356b = 0;
+    private static int f36283b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private static int f36357c = 0;
+    private static int f36284c = 0;
 
     private static boolean a(int i10, ConstraintWidget constraintWidget) {
         ConstraintWidgetContainer constraintWidgetContainer;
@@ -40,17 +40,17 @@ public abstract class h {
             ConstraintWidget.b bVar4 = ConstraintWidget.b.FIXED;
         }
         ConstraintWidget.b bVar5 = ConstraintWidget.b.FIXED;
-        if (A != bVar5 && !constraintWidget.n0() && A != ConstraintWidget.b.WRAP_CONTENT && ((A != (bVar2 = ConstraintWidget.b.MATCH_CONSTRAINT) || constraintWidget.f2298w != 0 || constraintWidget.f2261d0 != 0.0f || !constraintWidget.a0(0)) && (A != bVar2 || constraintWidget.f2298w != 1 || !constraintWidget.d0(0, constraintWidget.W())))) {
+        if (A != bVar5 && !constraintWidget.n0() && A != ConstraintWidget.b.WRAP_CONTENT && ((A != (bVar2 = ConstraintWidget.b.MATCH_CONSTRAINT) || constraintWidget.f2410w != 0 || constraintWidget.f2373d0 != 0.0f || !constraintWidget.a0(0)) && (A != bVar2 || constraintWidget.f2410w != 1 || !constraintWidget.d0(0, constraintWidget.W())))) {
             z10 = false;
         } else {
             z10 = true;
         }
-        if (T != bVar5 && !constraintWidget.o0() && T != ConstraintWidget.b.WRAP_CONTENT && ((T != (bVar = ConstraintWidget.b.MATCH_CONSTRAINT) || constraintWidget.f2300x != 0 || constraintWidget.f2261d0 != 0.0f || !constraintWidget.a0(1)) && (T != bVar || constraintWidget.f2300x != 1 || !constraintWidget.d0(1, constraintWidget.x())))) {
+        if (T != bVar5 && !constraintWidget.o0() && T != ConstraintWidget.b.WRAP_CONTENT && ((T != (bVar = ConstraintWidget.b.MATCH_CONSTRAINT) || constraintWidget.f2412x != 0 || constraintWidget.f2373d0 != 0.0f || !constraintWidget.a0(1)) && (T != bVar || constraintWidget.f2412x != 1 || !constraintWidget.d0(1, constraintWidget.x())))) {
             z11 = false;
         } else {
             z11 = true;
         }
-        if (constraintWidget.f2261d0 > 0.0f && (z10 || z11)) {
+        if (constraintWidget.f2373d0 > 0.0f && (z10 || z11)) {
             return true;
         }
         if (!z10 || !z11) {
@@ -59,7 +59,7 @@ public abstract class h {
         return true;
     }
 
-    private static void b(int i10, ConstraintWidget constraintWidget, b.InterfaceC0463b interfaceC0463b, boolean z10) {
+    private static void b(int i10, ConstraintWidget constraintWidget, b.InterfaceC0474b interfaceC0474b, boolean z10) {
         boolean z11;
         androidx.constraintlayout.core.widgets.d dVar;
         androidx.constraintlayout.core.widgets.d dVar2;
@@ -71,11 +71,11 @@ public abstract class h {
             return;
         }
         boolean z14 = true;
-        f36356b++;
+        f36283b++;
         if (!(constraintWidget instanceof ConstraintWidgetContainer) && constraintWidget.m0()) {
             int i11 = i10 + 1;
             if (a(i11, constraintWidget)) {
-                ConstraintWidgetContainer.U1(i11, constraintWidget, interfaceC0463b, new b.a(), b.a.f36309k);
+                ConstraintWidgetContainer.U1(i11, constraintWidget, interfaceC0474b, new b.a(), b.a.f36236k);
             }
         }
         androidx.constraintlayout.core.widgets.d o10 = constraintWidget.o(d.a.LEFT);
@@ -86,16 +86,16 @@ public abstract class h {
             Iterator it = o10.d().iterator();
             while (it.hasNext()) {
                 androidx.constraintlayout.core.widgets.d dVar5 = (androidx.constraintlayout.core.widgets.d) it.next();
-                ConstraintWidget constraintWidget2 = dVar5.f2354d;
+                ConstraintWidget constraintWidget2 = dVar5.f2466d;
                 int i12 = i10 + 1;
                 boolean a10 = a(i12, constraintWidget2);
                 if (constraintWidget2.m0() && a10) {
                     z12 = z14;
-                    ConstraintWidgetContainer.U1(i12, constraintWidget2, interfaceC0463b, new b.a(), b.a.f36309k);
+                    ConstraintWidgetContainer.U1(i12, constraintWidget2, interfaceC0474b, new b.a(), b.a.f36236k);
                 } else {
                     z12 = z14;
                 }
-                if ((dVar5 == constraintWidget2.O && (dVar4 = constraintWidget2.Q.f2356f) != null && dVar4.n()) || (dVar5 == constraintWidget2.Q && (dVar3 = constraintWidget2.O.f2356f) != null && dVar3.n())) {
+                if ((dVar5 == constraintWidget2.O && (dVar4 = constraintWidget2.Q.f2468f) != null && dVar4.n()) || (dVar5 == constraintWidget2.Q && (dVar3 = constraintWidget2.O.f2468f) != null && dVar3.n())) {
                     z13 = z12;
                 } else {
                     z13 = false;
@@ -103,23 +103,23 @@ public abstract class h {
                 ConstraintWidget.b A = constraintWidget2.A();
                 ConstraintWidget.b bVar = ConstraintWidget.b.MATCH_CONSTRAINT;
                 if (A == bVar && !a10) {
-                    if (constraintWidget2.A() == bVar && constraintWidget2.A >= 0 && constraintWidget2.f2304z >= 0 && ((constraintWidget2.V() == 8 || (constraintWidget2.f2298w == 0 && constraintWidget2.v() == 0.0f)) && !constraintWidget2.i0() && !constraintWidget2.l0() && z13 && !constraintWidget2.i0())) {
-                        e(i12, constraintWidget, interfaceC0463b, constraintWidget2, z10);
+                    if (constraintWidget2.A() == bVar && constraintWidget2.A >= 0 && constraintWidget2.f2416z >= 0 && ((constraintWidget2.V() == 8 || (constraintWidget2.f2410w == 0 && constraintWidget2.v() == 0.0f)) && !constraintWidget2.i0() && !constraintWidget2.l0() && z13 && !constraintWidget2.i0())) {
+                        e(i12, constraintWidget, interfaceC0474b, constraintWidget2, z10);
                     }
                 } else if (!constraintWidget2.m0()) {
                     androidx.constraintlayout.core.widgets.d dVar6 = constraintWidget2.O;
-                    if (dVar5 == dVar6 && constraintWidget2.Q.f2356f == null) {
+                    if (dVar5 == dVar6 && constraintWidget2.Q.f2468f == null) {
                         int f10 = dVar6.f() + e10;
                         constraintWidget2.G0(f10, constraintWidget2.W() + f10);
-                        b(i12, constraintWidget2, interfaceC0463b, z10);
+                        b(i12, constraintWidget2, interfaceC0474b, z10);
                     } else {
                         androidx.constraintlayout.core.widgets.d dVar7 = constraintWidget2.Q;
-                        if (dVar5 == dVar7 && dVar6.f2356f == null) {
+                        if (dVar5 == dVar7 && dVar6.f2468f == null) {
                             int f11 = e10 - dVar7.f();
                             constraintWidget2.G0(f11 - constraintWidget2.W(), f11);
-                            b(i12, constraintWidget2, interfaceC0463b, z10);
+                            b(i12, constraintWidget2, interfaceC0474b, z10);
                         } else if (z13 && !constraintWidget2.i0()) {
-                            d(i12, interfaceC0463b, constraintWidget2, z10);
+                            d(i12, interfaceC0474b, constraintWidget2, z10);
                         }
                     }
                 }
@@ -134,13 +134,13 @@ public abstract class h {
             Iterator it2 = o11.d().iterator();
             while (it2.hasNext()) {
                 androidx.constraintlayout.core.widgets.d dVar8 = (androidx.constraintlayout.core.widgets.d) it2.next();
-                ConstraintWidget constraintWidget3 = dVar8.f2354d;
+                ConstraintWidget constraintWidget3 = dVar8.f2466d;
                 int i13 = i10 + 1;
                 boolean a11 = a(i13, constraintWidget3);
                 if (constraintWidget3.m0() && a11) {
-                    ConstraintWidgetContainer.U1(i13, constraintWidget3, interfaceC0463b, new b.a(), b.a.f36309k);
+                    ConstraintWidgetContainer.U1(i13, constraintWidget3, interfaceC0474b, new b.a(), b.a.f36236k);
                 }
-                if ((dVar8 == constraintWidget3.O && (dVar2 = constraintWidget3.Q.f2356f) != null && dVar2.n()) || (dVar8 == constraintWidget3.Q && (dVar = constraintWidget3.O.f2356f) != null && dVar.n())) {
+                if ((dVar8 == constraintWidget3.O && (dVar2 = constraintWidget3.Q.f2468f) != null && dVar2.n()) || (dVar8 == constraintWidget3.Q && (dVar = constraintWidget3.O.f2468f) != null && dVar.n())) {
                     z11 = z15;
                 } else {
                     z11 = false;
@@ -148,25 +148,25 @@ public abstract class h {
                 ConstraintWidget.b A2 = constraintWidget3.A();
                 ConstraintWidget.b bVar2 = ConstraintWidget.b.MATCH_CONSTRAINT;
                 if (A2 == bVar2 && !a11) {
-                    if (constraintWidget3.A() == bVar2 && constraintWidget3.A >= 0 && constraintWidget3.f2304z >= 0 && (constraintWidget3.V() == 8 || (constraintWidget3.f2298w == 0 && constraintWidget3.v() == 0.0f))) {
+                    if (constraintWidget3.A() == bVar2 && constraintWidget3.A >= 0 && constraintWidget3.f2416z >= 0 && (constraintWidget3.V() == 8 || (constraintWidget3.f2410w == 0 && constraintWidget3.v() == 0.0f))) {
                         if (!constraintWidget3.i0() && !constraintWidget3.l0() && z11 && !constraintWidget3.i0()) {
-                            e(i13, constraintWidget, interfaceC0463b, constraintWidget3, z10);
+                            e(i13, constraintWidget, interfaceC0474b, constraintWidget3, z10);
                         }
                     }
                 } else if (!constraintWidget3.m0()) {
                     androidx.constraintlayout.core.widgets.d dVar9 = constraintWidget3.O;
-                    if (dVar8 == dVar9 && constraintWidget3.Q.f2356f == null) {
+                    if (dVar8 == dVar9 && constraintWidget3.Q.f2468f == null) {
                         int f12 = dVar9.f() + e11;
                         constraintWidget3.G0(f12, constraintWidget3.W() + f12);
-                        b(i13, constraintWidget3, interfaceC0463b, z10);
+                        b(i13, constraintWidget3, interfaceC0474b, z10);
                     } else {
                         androidx.constraintlayout.core.widgets.d dVar10 = constraintWidget3.Q;
-                        if (dVar8 == dVar10 && dVar9.f2356f == null) {
+                        if (dVar8 == dVar10 && dVar9.f2468f == null) {
                             int f13 = e11 - dVar10.f();
                             constraintWidget3.G0(f13 - constraintWidget3.W(), f13);
-                            b(i13, constraintWidget3, interfaceC0463b, z10);
+                            b(i13, constraintWidget3, interfaceC0474b, z10);
                         } else if (z11 && !constraintWidget3.i0()) {
-                            d(i13, interfaceC0463b, constraintWidget3, z10);
+                            d(i13, interfaceC0474b, constraintWidget3, z10);
                         }
                     }
                 }
@@ -175,21 +175,21 @@ public abstract class h {
         constraintWidget.q0();
     }
 
-    private static void c(int i10, androidx.constraintlayout.core.widgets.a aVar, b.InterfaceC0463b interfaceC0463b, int i11, boolean z10) {
+    private static void c(int i10, androidx.constraintlayout.core.widgets.a aVar, b.InterfaceC0474b interfaceC0474b, int i11, boolean z10) {
         if (aVar.u1()) {
             if (i11 == 0) {
-                b(i10 + 1, aVar, interfaceC0463b, z10);
+                b(i10 + 1, aVar, interfaceC0474b, z10);
             } else {
-                i(i10 + 1, aVar, interfaceC0463b);
+                i(i10 + 1, aVar, interfaceC0474b);
             }
         }
     }
 
-    private static void d(int i10, b.InterfaceC0463b interfaceC0463b, ConstraintWidget constraintWidget, boolean z10) {
+    private static void d(int i10, b.InterfaceC0474b interfaceC0474b, ConstraintWidget constraintWidget, boolean z10) {
         float f10;
         float y10 = constraintWidget.y();
-        int e10 = constraintWidget.O.f2356f.e();
-        int e11 = constraintWidget.Q.f2356f.e();
+        int e10 = constraintWidget.O.f2468f.e();
+        int e11 = constraintWidget.Q.f2468f.e();
         int f11 = constraintWidget.O.f() + e10;
         int f12 = e11 - constraintWidget.Q.f();
         if (e10 == e11) {
@@ -214,18 +214,18 @@ public abstract class h {
             i13 = i12 - W;
         }
         constraintWidget.G0(i12, i13);
-        b(i10 + 1, constraintWidget, interfaceC0463b, z10);
+        b(i10 + 1, constraintWidget, interfaceC0474b, z10);
     }
 
-    private static void e(int i10, ConstraintWidget constraintWidget, b.InterfaceC0463b interfaceC0463b, ConstraintWidget constraintWidget2, boolean z10) {
+    private static void e(int i10, ConstraintWidget constraintWidget, b.InterfaceC0474b interfaceC0474b, ConstraintWidget constraintWidget2, boolean z10) {
         int W;
         float y10 = constraintWidget2.y();
-        int e10 = constraintWidget2.O.f2356f.e() + constraintWidget2.O.f();
-        int e11 = constraintWidget2.Q.f2356f.e() - constraintWidget2.Q.f();
+        int e10 = constraintWidget2.O.f2468f.e() + constraintWidget2.O.f();
+        int e11 = constraintWidget2.Q.f2468f.e() - constraintWidget2.Q.f();
         if (e11 >= e10) {
             int W2 = constraintWidget2.W();
             if (constraintWidget2.V() != 8) {
-                int i11 = constraintWidget2.f2298w;
+                int i11 = constraintWidget2.f2410w;
                 if (i11 == 2) {
                     if (constraintWidget instanceof ConstraintWidgetContainer) {
                         W = constraintWidget.W();
@@ -236,7 +236,7 @@ public abstract class h {
                 } else if (i11 == 0) {
                     W2 = e11 - e10;
                 }
-                W2 = Math.max(constraintWidget2.f2304z, W2);
+                W2 = Math.max(constraintWidget2.f2416z, W2);
                 int i12 = constraintWidget2.A;
                 if (i12 > 0) {
                     W2 = Math.min(i12, W2);
@@ -244,15 +244,15 @@ public abstract class h {
             }
             int i13 = e10 + ((int) ((y10 * ((e11 - e10) - W2)) + 0.5f));
             constraintWidget2.G0(i13, W2 + i13);
-            b(i10 + 1, constraintWidget2, interfaceC0463b, z10);
+            b(i10 + 1, constraintWidget2, interfaceC0474b, z10);
         }
     }
 
-    private static void f(int i10, b.InterfaceC0463b interfaceC0463b, ConstraintWidget constraintWidget) {
+    private static void f(int i10, b.InterfaceC0474b interfaceC0474b, ConstraintWidget constraintWidget) {
         float f10;
         float R = constraintWidget.R();
-        int e10 = constraintWidget.P.f2356f.e();
-        int e11 = constraintWidget.R.f2356f.e();
+        int e10 = constraintWidget.P.f2468f.e();
+        int e11 = constraintWidget.R.f2468f.e();
         int f11 = constraintWidget.P.f() + e10;
         int f12 = e11 - constraintWidget.R.f();
         if (e10 == e11) {
@@ -279,18 +279,18 @@ public abstract class h {
             i14 = i13 - x10;
         }
         constraintWidget.J0(i13, i14);
-        i(i10 + 1, constraintWidget, interfaceC0463b);
+        i(i10 + 1, constraintWidget, interfaceC0474b);
     }
 
-    private static void g(int i10, ConstraintWidget constraintWidget, b.InterfaceC0463b interfaceC0463b, ConstraintWidget constraintWidget2) {
+    private static void g(int i10, ConstraintWidget constraintWidget, b.InterfaceC0474b interfaceC0474b, ConstraintWidget constraintWidget2) {
         int x10;
         float R = constraintWidget2.R();
-        int e10 = constraintWidget2.P.f2356f.e() + constraintWidget2.P.f();
-        int e11 = constraintWidget2.R.f2356f.e() - constraintWidget2.R.f();
+        int e10 = constraintWidget2.P.f2468f.e() + constraintWidget2.P.f();
+        int e11 = constraintWidget2.R.f2468f.e() - constraintWidget2.R.f();
         if (e11 >= e10) {
             int x11 = constraintWidget2.x();
             if (constraintWidget2.V() != 8) {
-                int i11 = constraintWidget2.f2300x;
+                int i11 = constraintWidget2.f2412x;
                 if (i11 == 2) {
                     if (constraintWidget instanceof ConstraintWidgetContainer) {
                         x10 = constraintWidget.x();
@@ -309,15 +309,15 @@ public abstract class h {
             }
             int i13 = e10 + ((int) ((R * ((e11 - e10) - x11)) + 0.5f));
             constraintWidget2.J0(i13, x11 + i13);
-            i(i10 + 1, constraintWidget2, interfaceC0463b);
+            i(i10 + 1, constraintWidget2, interfaceC0474b);
         }
     }
 
-    public static void h(ConstraintWidgetContainer constraintWidgetContainer, b.InterfaceC0463b interfaceC0463b) {
+    public static void h(ConstraintWidgetContainer constraintWidgetContainer, b.InterfaceC0474b interfaceC0474b) {
         ConstraintWidget.b A = constraintWidgetContainer.A();
         ConstraintWidget.b T = constraintWidgetContainer.T();
-        f36356b = 0;
-        f36357c = 0;
+        f36283b = 0;
+        f36284c = 0;
         constraintWidgetContainer.v0();
         ArrayList s12 = constraintWidgetContainer.s1();
         int size = s12.size();
@@ -356,19 +356,19 @@ public abstract class h {
                 if (constraintWidget2 instanceof androidx.constraintlayout.core.widgets.f) {
                     androidx.constraintlayout.core.widgets.f fVar2 = (androidx.constraintlayout.core.widgets.f) constraintWidget2;
                     if (fVar2.t1() == 1) {
-                        b(0, fVar2, interfaceC0463b, R1);
+                        b(0, fVar2, interfaceC0474b, R1);
                     }
                 }
             }
         }
-        b(0, constraintWidgetContainer, interfaceC0463b, R1);
+        b(0, constraintWidgetContainer, interfaceC0474b, R1);
         if (z11) {
             for (int i13 = 0; i13 < size; i13++) {
                 ConstraintWidget constraintWidget3 = (ConstraintWidget) s12.get(i13);
                 if (constraintWidget3 instanceof androidx.constraintlayout.core.widgets.a) {
                     androidx.constraintlayout.core.widgets.a aVar = (androidx.constraintlayout.core.widgets.a) constraintWidget3;
                     if (aVar.y1() == 0) {
-                        c(0, aVar, interfaceC0463b, 0, R1);
+                        c(0, aVar, interfaceC0474b, 0, R1);
                     }
                 }
             }
@@ -404,19 +404,19 @@ public abstract class h {
                 if (constraintWidget5 instanceof androidx.constraintlayout.core.widgets.f) {
                     androidx.constraintlayout.core.widgets.f fVar4 = (androidx.constraintlayout.core.widgets.f) constraintWidget5;
                     if (fVar4.t1() == 0) {
-                        i(1, fVar4, interfaceC0463b);
+                        i(1, fVar4, interfaceC0474b);
                     }
                 }
             }
         }
-        i(0, constraintWidgetContainer, interfaceC0463b);
+        i(0, constraintWidgetContainer, interfaceC0474b);
         if (z13) {
             for (int i16 = 0; i16 < size; i16++) {
                 ConstraintWidget constraintWidget6 = (ConstraintWidget) s12.get(i16);
                 if (constraintWidget6 instanceof androidx.constraintlayout.core.widgets.a) {
                     androidx.constraintlayout.core.widgets.a aVar2 = (androidx.constraintlayout.core.widgets.a) constraintWidget6;
                     if (aVar2.y1() == 1) {
-                        c(0, aVar2, interfaceC0463b, 1, R1);
+                        c(0, aVar2, interfaceC0474b, 1, R1);
                     }
                 }
             }
@@ -424,22 +424,22 @@ public abstract class h {
         for (int i17 = 0; i17 < size; i17++) {
             ConstraintWidget constraintWidget7 = (ConstraintWidget) s12.get(i17);
             if (constraintWidget7.m0() && a(0, constraintWidget7)) {
-                ConstraintWidgetContainer.U1(0, constraintWidget7, interfaceC0463b, f36355a, b.a.f36309k);
+                ConstraintWidgetContainer.U1(0, constraintWidget7, interfaceC0474b, f36282a, b.a.f36236k);
                 if (constraintWidget7 instanceof androidx.constraintlayout.core.widgets.f) {
                     if (((androidx.constraintlayout.core.widgets.f) constraintWidget7).t1() == 0) {
-                        i(0, constraintWidget7, interfaceC0463b);
+                        i(0, constraintWidget7, interfaceC0474b);
                     } else {
-                        b(0, constraintWidget7, interfaceC0463b, R1);
+                        b(0, constraintWidget7, interfaceC0474b, R1);
                     }
                 } else {
-                    b(0, constraintWidget7, interfaceC0463b, R1);
-                    i(0, constraintWidget7, interfaceC0463b);
+                    b(0, constraintWidget7, interfaceC0474b, R1);
+                    i(0, constraintWidget7, interfaceC0474b);
                 }
             }
         }
     }
 
-    private static void i(int i10, ConstraintWidget constraintWidget, b.InterfaceC0463b interfaceC0463b) {
+    private static void i(int i10, ConstraintWidget constraintWidget, b.InterfaceC0474b interfaceC0474b) {
         boolean z10;
         androidx.constraintlayout.core.widgets.d dVar;
         androidx.constraintlayout.core.widgets.d dVar2;
@@ -450,11 +450,11 @@ public abstract class h {
             return;
         }
         boolean z12 = true;
-        f36357c++;
+        f36284c++;
         if (!(constraintWidget instanceof ConstraintWidgetContainer) && constraintWidget.m0()) {
             int i11 = i10 + 1;
             if (a(i11, constraintWidget)) {
-                ConstraintWidgetContainer.U1(i11, constraintWidget, interfaceC0463b, new b.a(), b.a.f36309k);
+                ConstraintWidgetContainer.U1(i11, constraintWidget, interfaceC0474b, new b.a(), b.a.f36236k);
             }
         }
         androidx.constraintlayout.core.widgets.d o10 = constraintWidget.o(d.a.TOP);
@@ -465,13 +465,13 @@ public abstract class h {
             Iterator it = o10.d().iterator();
             while (it.hasNext()) {
                 androidx.constraintlayout.core.widgets.d dVar5 = (androidx.constraintlayout.core.widgets.d) it.next();
-                ConstraintWidget constraintWidget2 = dVar5.f2354d;
+                ConstraintWidget constraintWidget2 = dVar5.f2466d;
                 int i12 = i10 + 1;
                 boolean a10 = a(i12, constraintWidget2);
                 if (constraintWidget2.m0() && a10) {
-                    ConstraintWidgetContainer.U1(i12, constraintWidget2, interfaceC0463b, new b.a(), b.a.f36309k);
+                    ConstraintWidgetContainer.U1(i12, constraintWidget2, interfaceC0474b, new b.a(), b.a.f36236k);
                 }
-                if ((dVar5 == constraintWidget2.P && (dVar4 = constraintWidget2.R.f2356f) != null && dVar4.n()) || (dVar5 == constraintWidget2.R && (dVar3 = constraintWidget2.P.f2356f) != null && dVar3.n())) {
+                if ((dVar5 == constraintWidget2.P && (dVar4 = constraintWidget2.R.f2468f) != null && dVar4.n()) || (dVar5 == constraintWidget2.R && (dVar3 = constraintWidget2.P.f2468f) != null && dVar3.n())) {
                     z11 = z12;
                 } else {
                     z11 = false;
@@ -480,23 +480,23 @@ public abstract class h {
                 boolean z13 = z12;
                 ConstraintWidget.b bVar = ConstraintWidget.b.MATCH_CONSTRAINT;
                 if (T == bVar && !a10) {
-                    if (constraintWidget2.T() == bVar && constraintWidget2.D >= 0 && constraintWidget2.C >= 0 && ((constraintWidget2.V() == 8 || (constraintWidget2.f2300x == 0 && constraintWidget2.v() == 0.0f)) && !constraintWidget2.k0() && !constraintWidget2.l0() && z11 && !constraintWidget2.k0())) {
-                        g(i12, constraintWidget, interfaceC0463b, constraintWidget2);
+                    if (constraintWidget2.T() == bVar && constraintWidget2.D >= 0 && constraintWidget2.C >= 0 && ((constraintWidget2.V() == 8 || (constraintWidget2.f2412x == 0 && constraintWidget2.v() == 0.0f)) && !constraintWidget2.k0() && !constraintWidget2.l0() && z11 && !constraintWidget2.k0())) {
+                        g(i12, constraintWidget, interfaceC0474b, constraintWidget2);
                     }
                 } else if (!constraintWidget2.m0()) {
                     androidx.constraintlayout.core.widgets.d dVar6 = constraintWidget2.P;
-                    if (dVar5 == dVar6 && constraintWidget2.R.f2356f == null) {
+                    if (dVar5 == dVar6 && constraintWidget2.R.f2468f == null) {
                         int f10 = dVar6.f() + e10;
                         constraintWidget2.J0(f10, constraintWidget2.x() + f10);
-                        i(i12, constraintWidget2, interfaceC0463b);
+                        i(i12, constraintWidget2, interfaceC0474b);
                     } else {
                         androidx.constraintlayout.core.widgets.d dVar7 = constraintWidget2.R;
-                        if (dVar5 == dVar7 && dVar6.f2356f == null) {
+                        if (dVar5 == dVar7 && dVar6.f2468f == null) {
                             int f11 = e10 - dVar7.f();
                             constraintWidget2.J0(f11 - constraintWidget2.x(), f11);
-                            i(i12, constraintWidget2, interfaceC0463b);
+                            i(i12, constraintWidget2, interfaceC0474b);
                         } else if (z11 && !constraintWidget2.k0()) {
-                            f(i12, interfaceC0463b, constraintWidget2);
+                            f(i12, interfaceC0474b, constraintWidget2);
                         }
                     }
                 }
@@ -511,13 +511,13 @@ public abstract class h {
             Iterator it2 = o11.d().iterator();
             while (it2.hasNext()) {
                 androidx.constraintlayout.core.widgets.d dVar8 = (androidx.constraintlayout.core.widgets.d) it2.next();
-                ConstraintWidget constraintWidget3 = dVar8.f2354d;
+                ConstraintWidget constraintWidget3 = dVar8.f2466d;
                 int i13 = i10 + 1;
                 boolean a11 = a(i13, constraintWidget3);
                 if (constraintWidget3.m0() && a11) {
-                    ConstraintWidgetContainer.U1(i13, constraintWidget3, interfaceC0463b, new b.a(), b.a.f36309k);
+                    ConstraintWidgetContainer.U1(i13, constraintWidget3, interfaceC0474b, new b.a(), b.a.f36236k);
                 }
-                if ((dVar8 == constraintWidget3.P && (dVar2 = constraintWidget3.R.f2356f) != null && dVar2.n()) || (dVar8 == constraintWidget3.R && (dVar = constraintWidget3.P.f2356f) != null && dVar.n())) {
+                if ((dVar8 == constraintWidget3.P && (dVar2 = constraintWidget3.R.f2468f) != null && dVar2.n()) || (dVar8 == constraintWidget3.R && (dVar = constraintWidget3.P.f2468f) != null && dVar.n())) {
                     z10 = z14;
                 } else {
                     z10 = false;
@@ -525,25 +525,25 @@ public abstract class h {
                 ConstraintWidget.b T2 = constraintWidget3.T();
                 ConstraintWidget.b bVar2 = ConstraintWidget.b.MATCH_CONSTRAINT;
                 if (T2 == bVar2 && !a11) {
-                    if (constraintWidget3.T() == bVar2 && constraintWidget3.D >= 0 && constraintWidget3.C >= 0 && (constraintWidget3.V() == 8 || (constraintWidget3.f2300x == 0 && constraintWidget3.v() == 0.0f))) {
+                    if (constraintWidget3.T() == bVar2 && constraintWidget3.D >= 0 && constraintWidget3.C >= 0 && (constraintWidget3.V() == 8 || (constraintWidget3.f2412x == 0 && constraintWidget3.v() == 0.0f))) {
                         if (!constraintWidget3.k0() && !constraintWidget3.l0() && z10 && !constraintWidget3.k0()) {
-                            g(i13, constraintWidget, interfaceC0463b, constraintWidget3);
+                            g(i13, constraintWidget, interfaceC0474b, constraintWidget3);
                         }
                     }
                 } else if (!constraintWidget3.m0()) {
                     androidx.constraintlayout.core.widgets.d dVar9 = constraintWidget3.P;
-                    if (dVar8 == dVar9 && constraintWidget3.R.f2356f == null) {
+                    if (dVar8 == dVar9 && constraintWidget3.R.f2468f == null) {
                         int f12 = dVar9.f() + e11;
                         constraintWidget3.J0(f12, constraintWidget3.x() + f12);
-                        i(i13, constraintWidget3, interfaceC0463b);
+                        i(i13, constraintWidget3, interfaceC0474b);
                     } else {
                         androidx.constraintlayout.core.widgets.d dVar10 = constraintWidget3.R;
-                        if (dVar8 == dVar10 && dVar9.f2356f == null) {
+                        if (dVar8 == dVar10 && dVar9.f2468f == null) {
                             int f13 = e11 - dVar10.f();
                             constraintWidget3.J0(f13 - constraintWidget3.x(), f13);
-                            i(i13, constraintWidget3, interfaceC0463b);
+                            i(i13, constraintWidget3, interfaceC0474b);
                         } else if (z10 && !constraintWidget3.k0()) {
-                            f(i13, interfaceC0463b, constraintWidget3);
+                            f(i13, interfaceC0474b, constraintWidget3);
                         }
                     }
                 }
@@ -555,16 +555,16 @@ public abstract class h {
             Iterator it3 = o12.d().iterator();
             while (it3.hasNext()) {
                 androidx.constraintlayout.core.widgets.d dVar11 = (androidx.constraintlayout.core.widgets.d) it3.next();
-                ConstraintWidget constraintWidget4 = dVar11.f2354d;
+                ConstraintWidget constraintWidget4 = dVar11.f2466d;
                 int i14 = i10 + 1;
                 boolean a12 = a(i14, constraintWidget4);
                 if (constraintWidget4.m0() && a12) {
-                    ConstraintWidgetContainer.U1(i14, constraintWidget4, interfaceC0463b, new b.a(), b.a.f36309k);
+                    ConstraintWidgetContainer.U1(i14, constraintWidget4, interfaceC0474b, new b.a(), b.a.f36236k);
                 }
                 if (constraintWidget4.T() != ConstraintWidget.b.MATCH_CONSTRAINT || a12) {
                     if (!constraintWidget4.m0() && dVar11 == constraintWidget4.S) {
                         constraintWidget4.F0(dVar11.f() + e12);
-                        i(i14, constraintWidget4, interfaceC0463b);
+                        i(i14, constraintWidget4, interfaceC0474b);
                     }
                 }
             }

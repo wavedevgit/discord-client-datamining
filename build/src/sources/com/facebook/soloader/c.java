@@ -14,10 +14,10 @@ import java.util.Iterator;
 public class c extends g0 implements w {
 
     /* renamed from: f  reason: collision with root package name */
-    private final ArrayList f11031f;
+    private final ArrayList f11416f;
 
     /* renamed from: g  reason: collision with root package name */
-    protected boolean f11032g;
+    protected boolean f11417g;
 
     /* JADX INFO: Access modifiers changed from: protected */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -28,7 +28,7 @@ public class c extends g0 implements w {
         @Override // com.facebook.soloader.g0.e
         public g0.c[] h() {
             ArrayList arrayList = new ArrayList();
-            Iterator it = c.this.f11031f.iterator();
+            Iterator it = c.this.f11416f.iterator();
             while (it.hasNext()) {
                 g0.e q10 = ((m) it.next()).q();
                 try {
@@ -49,12 +49,12 @@ public class c extends g0 implements w {
         }
 
         @Override // com.facebook.soloader.g0.e
-        public void l(File file) {
-            Iterator it = c.this.f11031f.iterator();
+        public void k(File file) {
+            Iterator it = c.this.f11416f.iterator();
             while (it.hasNext()) {
                 m.b bVar = (m.b) ((m) it.next()).q();
                 try {
-                    bVar.l(file);
+                    bVar.k(file);
                     bVar.close();
                 } catch (Throwable th2) {
                     if (bVar != null) {
@@ -73,8 +73,8 @@ public class c extends g0 implements w {
     public c(Context context, String str, boolean z10) {
         super(context, str, z10);
         ArrayList arrayList = new ArrayList();
-        this.f11031f = arrayList;
-        this.f11032g = false;
+        this.f11416f = arrayList;
+        this.f11417g = false;
         arrayList.add(new m(context, str, new File(context.getApplicationInfo().sourceDir), "^lib/([^/]+)/([^/]+\\.so)$"));
         w(context, str);
     }
@@ -86,7 +86,7 @@ public class c extends g0 implements w {
                     m mVar = new m(context, str, new File(str2), "^lib/([^/]+)/([^/]+\\.so)$");
                     if (mVar.v()) {
                         p.g("BackupSoSource", "adding backup source from split: " + mVar.toString());
-                        this.f11031f.add(mVar);
+                        this.f11416f.add(mVar);
                     }
                 }
             } catch (IOException e10) {
@@ -97,7 +97,7 @@ public class c extends g0 implements w {
 
     @Override // com.facebook.soloader.w
     public e0 b(Context context) {
-        c cVar = new c(context, this.f11041a.getName());
+        c cVar = new c(context, this.f11426a.getName());
         try {
             cVar.e(0);
             return cVar;
@@ -113,7 +113,7 @@ public class c extends g0 implements w {
 
     @Override // com.facebook.soloader.f, com.facebook.soloader.e0
     public int d(String str, int i10, StrictMode.ThreadPolicy threadPolicy) {
-        if (!this.f11032g) {
+        if (!this.f11417g) {
             return 0;
         }
         return super.d(str, i10, threadPolicy);
@@ -125,7 +125,7 @@ public class c extends g0 implements w {
             return;
         }
         super.e(i10);
-        this.f11032g = true;
+        this.f11417g = true;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -134,13 +134,13 @@ public class c extends g0 implements w {
         Parcel obtain = Parcel.obtain();
         try {
             obtain.writeByte((byte) 3);
-            obtain.writeInt(SysUtil.g(this.f11044d));
-            obtain.writeInt(this.f11031f.size());
-            Iterator it = this.f11031f.iterator();
+            obtain.writeInt(SysUtil.g(this.f11429d));
+            obtain.writeInt(this.f11416f.size());
+            Iterator it = this.f11416f.iterator();
             while (it.hasNext()) {
                 obtain.writeByteArray(((m) it.next()).n());
             }
-            String str = this.f11044d.getApplicationInfo().sourceDir;
+            String str = this.f11429d.getApplicationInfo().sourceDir;
             if (str == null) {
                 obtain.writeByte((byte) 1);
                 byte[] marshall = obtain.marshall();
@@ -168,7 +168,7 @@ public class c extends g0 implements w {
 
     @Override // com.facebook.soloader.g0
     public g0.c[] o() {
-        g0.e q10 = ((m) this.f11031f.get(0)).q();
+        g0.e q10 = ((m) this.f11416f.get(0)).q();
         try {
             g0.c[] h10 = q10.h();
             q10.close();
@@ -194,11 +194,11 @@ public class c extends g0 implements w {
     public String toString() {
         String name;
         try {
-            name = String.valueOf(this.f11041a.getCanonicalPath());
+            name = String.valueOf(this.f11426a.getCanonicalPath());
         } catch (IOException unused) {
-            name = this.f11041a.getName();
+            name = this.f11426a.getName();
         }
-        return c() + "[root = " + name + " flags = " + this.f11042b + " apks = " + this.f11031f.toString() + "]";
+        return c() + "[root = " + name + " flags = " + this.f11427b + " apks = " + this.f11416f.toString() + "]";
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x003a, code lost:
@@ -224,7 +224,7 @@ public class c extends g0 implements w {
             r6 = 1
             if (r4 >= r2) goto L41
             r7 = r1[r4]     // Catch: java.lang.Throwable -> L3c
-            java.lang.String r7 = r7.f11051d     // Catch: java.lang.Throwable -> L3c
+            java.lang.String r7 = r7.f11436d     // Catch: java.lang.Throwable -> L3c
             boolean r7 = r7.equals(r9)     // Catch: java.lang.Throwable -> L3c
             if (r7 == 0) goto L3e
             java.lang.StringBuilder r1 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L3c

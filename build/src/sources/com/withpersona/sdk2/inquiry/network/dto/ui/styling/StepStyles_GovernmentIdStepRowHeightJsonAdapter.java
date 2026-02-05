@@ -41,18 +41,18 @@ public final class StepStyles_GovernmentIdStepRowHeightJsonAdapter extends h {
     @NotNull
     public StepStyles.GovernmentIdStepRowHeight fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.Measurement measurement = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.GovernmentIdStepRowHeight(measurement);
     }
 
@@ -60,8 +60,8 @@ public final class StepStyles_GovernmentIdStepRowHeightJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.GovernmentIdStepRowHeight governmentIdStepRowHeight) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepRowHeight != null) {
-            writer.l();
-            writer.A0("governmentIdSelectOptionMinRowHeight");
+            writer.k();
+            writer.W("governmentIdSelectOptionMinRowHeight");
             this.nullableMeasurementAdapter.toJson(writer, governmentIdStepRowHeight.getGovernmentIdSelectOptionMinRowHeight());
             writer.E();
             return;

@@ -1,43 +1,43 @@
 package og;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class n7 implements ui.d {
+final class n7 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n7 f43271a = new n7();
+    static final n7 f43177a = new n7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43272b;
+    private static final xi.c f43178b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43273c;
+    private static final xi.c f43179c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43274d;
+    private static final xi.c f43180d;
 
     static {
-        c.b a10 = ui.c.a("languageOption");
+        c.b a10 = xi.c.a("languageOption");
         s1 s1Var = new s1();
         s1Var.a(3);
-        f43272b = a10.b(s1Var.b()).a();
-        c.b a11 = ui.c.a("isUsingLegacyApi");
+        f43178b = a10.b(s1Var.b()).a();
+        c.b a11 = xi.c.a("isUsingLegacyApi");
         s1 s1Var2 = new s1();
         s1Var2.a(4);
-        f43273c = a11.b(s1Var2.b()).a();
-        c.b a12 = ui.c.a("sdkVersion");
+        f43179c = a11.b(s1Var2.b()).a();
+        c.b a12 = xi.c.a("sdkVersion");
         s1 s1Var3 = new s1();
         s1Var3.a(5);
-        f43274d = a12.b(s1Var3.b()).a();
+        f43180d = a12.b(s1Var3.b()).a();
     }
 
     private n7() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

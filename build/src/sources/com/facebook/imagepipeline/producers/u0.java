@@ -9,51 +9,51 @@ import java.util.concurrent.Executor;
 public class u0 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w0 f10554a;
+    private final w0 f10939a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final PlatformBitmapFactory f10555b;
+    private final PlatformBitmapFactory f10940b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Executor f10556c;
+    private final Executor f10941c;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public class a extends s {
 
         /* renamed from: c  reason: collision with root package name */
-        private final y0 f10557c;
+        private final y0 f10942c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final ProducerContext f10558d;
+        private final ProducerContext f10943d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Postprocessor f10559e;
+        private final Postprocessor f10944e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f10560f;
+        private boolean f10945f;
 
         /* renamed from: g  reason: collision with root package name */
-        private CloseableReference f10561g;
+        private CloseableReference f10946g;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f10562h;
+        private int f10947h;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f10563i;
+        private boolean f10948i;
 
         /* renamed from: j  reason: collision with root package name */
-        private boolean f10564j;
+        private boolean f10949j;
 
         /* renamed from: com.facebook.imagepipeline.producers.u0$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        class C0147a extends f {
+        class C0163a extends f {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ u0 f10566a;
+            final /* synthetic */ u0 f10951a;
 
-            C0147a(u0 u0Var) {
-                this.f10566a = u0Var;
+            C0163a(u0 u0Var) {
+                this.f10951a = u0Var;
             }
 
             @Override // com.facebook.imagepipeline.producers.x0
@@ -73,12 +73,12 @@ public class u0 implements w0 {
                 CloseableReference closeableReference;
                 int i10;
                 synchronized (a.this) {
-                    closeableReference = a.this.f10561g;
-                    i10 = a.this.f10562h;
-                    a.this.f10561g = null;
-                    a.this.f10563i = false;
+                    closeableReference = a.this.f10946g;
+                    i10 = a.this.f10947h;
+                    a.this.f10946g = null;
+                    a.this.f10948i = false;
                 }
-                if (CloseableReference.F0(closeableReference)) {
+                if (CloseableReference.K0(closeableReference)) {
                     try {
                         a.this.y(closeableReference, i10);
                     } finally {
@@ -91,18 +91,18 @@ public class u0 implements w0 {
 
         public a(Consumer consumer, y0 y0Var, Postprocessor postprocessor, ProducerContext producerContext) {
             super(consumer);
-            this.f10561g = null;
-            this.f10562h = 0;
-            this.f10563i = false;
-            this.f10564j = false;
-            this.f10557c = y0Var;
-            this.f10559e = postprocessor;
-            this.f10558d = producerContext;
-            producerContext.h(new C0147a(u0.this));
+            this.f10946g = null;
+            this.f10947h = 0;
+            this.f10948i = false;
+            this.f10949j = false;
+            this.f10942c = y0Var;
+            this.f10944e = postprocessor;
+            this.f10943d = producerContext;
+            producerContext.h(new C0163a(u0.this));
         }
 
         private synchronized boolean A() {
-            return this.f10560f;
+            return this.f10945f;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -127,19 +127,19 @@ public class u0 implements w0 {
 
         private CloseableReference F(sa.e eVar) {
             sa.f fVar = (sa.f) eVar;
-            CloseableReference process = this.f10559e.process(fVar.N1(), u0.this.f10555b);
+            CloseableReference process = this.f10944e.process(fVar.N1(), u0.this.f10940b);
             try {
-                sa.f K0 = sa.f.K0(process, eVar.J1(), fVar.q1(), fVar.b1());
-                K0.A0(fVar.getExtras());
-                return CloseableReference.J0(K0);
+                sa.f L0 = sa.f.L0(process, eVar.J1(), fVar.q1(), fVar.b1());
+                L0.W(fVar.getExtras());
+                return CloseableReference.N0(L0);
             } finally {
                 CloseableReference.N(process);
             }
         }
 
         private synchronized boolean G() {
-            if (!this.f10560f && this.f10563i && !this.f10564j && CloseableReference.F0(this.f10561g)) {
-                this.f10564j = true;
+            if (!this.f10945f && this.f10948i && !this.f10949j && CloseableReference.K0(this.f10946g)) {
+                this.f10949j = true;
                 return true;
             }
             return false;
@@ -150,19 +150,19 @@ public class u0 implements w0 {
         }
 
         private void I() {
-            u0.this.f10556c.execute(new b());
+            u0.this.f10941c.execute(new b());
         }
 
         private void J(CloseableReference closeableReference, int i10) {
             synchronized (this) {
                 try {
-                    if (this.f10560f) {
+                    if (this.f10945f) {
                         return;
                     }
-                    CloseableReference closeableReference2 = this.f10561g;
-                    this.f10561g = CloseableReference.E(closeableReference);
-                    this.f10562h = i10;
-                    this.f10563i = true;
+                    CloseableReference closeableReference2 = this.f10946g;
+                    this.f10946g = CloseableReference.E(closeableReference);
+                    this.f10947h = i10;
+                    this.f10948i = true;
                     boolean G = G();
                     CloseableReference.N(closeableReference2);
                     if (G) {
@@ -178,7 +178,7 @@ public class u0 implements w0 {
         public void w() {
             boolean G;
             synchronized (this) {
-                this.f10564j = false;
+                this.f10949j = false;
                 G = G();
             }
             if (G) {
@@ -189,12 +189,12 @@ public class u0 implements w0 {
         private boolean x() {
             synchronized (this) {
                 try {
-                    if (this.f10560f) {
+                    if (this.f10945f) {
                         return false;
                     }
-                    CloseableReference closeableReference = this.f10561g;
-                    this.f10561g = null;
-                    this.f10560f = true;
+                    CloseableReference closeableReference = this.f10946g;
+                    this.f10946g = null;
+                    this.f10945f = true;
                     CloseableReference.N(closeableReference);
                     return true;
                 } catch (Throwable th2) {
@@ -205,24 +205,24 @@ public class u0 implements w0 {
 
         /* JADX INFO: Access modifiers changed from: private */
         public void y(CloseableReference closeableReference, int i10) {
-            o8.j.b(Boolean.valueOf(CloseableReference.F0(closeableReference)));
-            if (!H((sa.e) closeableReference.C0())) {
+            o8.j.b(Boolean.valueOf(CloseableReference.K0(closeableReference)));
+            if (!H((sa.e) closeableReference.E0())) {
                 D(closeableReference, i10);
                 return;
             }
-            this.f10557c.d(this.f10558d, "PostprocessorProducer");
+            this.f10942c.d(this.f10943d, "PostprocessorProducer");
             try {
                 try {
-                    CloseableReference F = F((sa.e) closeableReference.C0());
-                    y0 y0Var = this.f10557c;
-                    ProducerContext producerContext = this.f10558d;
-                    y0Var.j(producerContext, "PostprocessorProducer", z(y0Var, producerContext, this.f10559e));
+                    CloseableReference F = F((sa.e) closeableReference.E0());
+                    y0 y0Var = this.f10942c;
+                    ProducerContext producerContext = this.f10943d;
+                    y0Var.j(producerContext, "PostprocessorProducer", z(y0Var, producerContext, this.f10944e));
                     D(F, i10);
                     CloseableReference.N(F);
                 } catch (Exception e10) {
-                    y0 y0Var2 = this.f10557c;
-                    ProducerContext producerContext2 = this.f10558d;
-                    y0Var2.k(producerContext2, "PostprocessorProducer", e10, z(y0Var2, producerContext2, this.f10559e));
+                    y0 y0Var2 = this.f10942c;
+                    ProducerContext producerContext2 = this.f10943d;
+                    y0Var2.k(producerContext2, "PostprocessorProducer", e10, z(y0Var2, producerContext2, this.f10944e));
                     C(e10);
                     CloseableReference.N(null);
                 }
@@ -243,7 +243,7 @@ public class u0 implements w0 {
         @Override // com.facebook.imagepipeline.producers.c
         /* renamed from: E */
         public void h(CloseableReference closeableReference, int i10) {
-            if (!CloseableReference.F0(closeableReference)) {
+            if (!CloseableReference.K0(closeableReference)) {
                 if (c.d(i10)) {
                     D(null, i10);
                     return;
@@ -282,9 +282,9 @@ public class u0 implements w0 {
     }
 
     public u0(w0 w0Var, PlatformBitmapFactory platformBitmapFactory, Executor executor) {
-        this.f10554a = (w0) o8.j.g(w0Var);
-        this.f10555b = platformBitmapFactory;
-        this.f10556c = (Executor) o8.j.g(executor);
+        this.f10939a = (w0) o8.j.g(w0Var);
+        this.f10940b = platformBitmapFactory;
+        this.f10941c = (Executor) o8.j.g(executor);
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -292,6 +292,6 @@ public class u0 implements w0 {
         y0 F = producerContext.F();
         Postprocessor postprocessor = producerContext.V().getPostprocessor();
         o8.j.g(postprocessor);
-        this.f10554a.b(new b(new a(consumer, F, postprocessor, producerContext)), producerContext);
+        this.f10939a.b(new b(new a(consumer, F, postprocessor, producerContext)), producerContext);
     }
 }

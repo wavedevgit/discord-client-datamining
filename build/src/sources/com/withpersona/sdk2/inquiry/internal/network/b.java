@@ -10,81 +10,81 @@ public abstract class b {
     public static final class a extends b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final InternalErrorInfo f18863a;
+        private final InternalErrorInfo f19269a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(InternalErrorInfo cause) {
             super(null);
             Intrinsics.checkNotNullParameter(cause, "cause");
-            this.f18863a = cause;
+            this.f19269a = cause;
         }
 
         public final InternalErrorInfo a() {
-            return this.f18863a;
+            return this.f19269a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof a) && Intrinsics.areEqual(this.f18863a, ((a) obj).f18863a);
+            return (obj instanceof a) && Intrinsics.areEqual(this.f19269a, ((a) obj).f19269a);
         }
 
         public int hashCode() {
-            return this.f18863a.hashCode();
+            return this.f19269a.hashCode();
         }
 
         public String toString() {
-            InternalErrorInfo internalErrorInfo = this.f18863a;
+            InternalErrorInfo internalErrorInfo = this.f19269a;
             return "Error(cause=" + internalErrorInfo + ")";
         }
     }
 
     /* renamed from: com.withpersona.sdk2.inquiry.internal.network.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0237b extends b {
+    public static final class C0255b extends b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f18864a;
+        private final String f19270a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final tp.g f18865b;
+        private final wp.g f19271b;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public C0237b(String sessionToken, tp.g inquirySessionConfig) {
+        public C0255b(String sessionToken, wp.g inquirySessionConfig) {
             super(null);
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
             Intrinsics.checkNotNullParameter(inquirySessionConfig, "inquirySessionConfig");
-            this.f18864a = sessionToken;
-            this.f18865b = inquirySessionConfig;
+            this.f19270a = sessionToken;
+            this.f19271b = inquirySessionConfig;
         }
 
-        public final tp.g a() {
-            return this.f18865b;
+        public final wp.g a() {
+            return this.f19271b;
         }
 
         public final String b() {
-            return this.f18864a;
+            return this.f19270a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if (obj instanceof C0237b) {
-                C0237b c0237b = (C0237b) obj;
-                return Intrinsics.areEqual(this.f18864a, c0237b.f18864a) && Intrinsics.areEqual(this.f18865b, c0237b.f18865b);
+            if (obj instanceof C0255b) {
+                C0255b c0255b = (C0255b) obj;
+                return Intrinsics.areEqual(this.f19270a, c0255b.f19270a) && Intrinsics.areEqual(this.f19271b, c0255b.f19271b);
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f18864a.hashCode() * 31) + this.f18865b.hashCode();
+            return (this.f19270a.hashCode() * 31) + this.f19271b.hashCode();
         }
 
         public String toString() {
-            String str = this.f18864a;
-            tp.g gVar = this.f18865b;
+            String str = this.f19270a;
+            wp.g gVar = this.f19271b;
             return "Success(sessionToken=" + str + ", inquirySessionConfig=" + gVar + ")";
         }
     }

@@ -1,26 +1,34 @@
 package gs;
 
-import java.util.Map;
-import kotlin.jvm.functions.Function0;
-/* JADX INFO: Access modifiers changed from: package-private */
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class c implements Function0 {
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Class f26570d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final Map f26571e;
-
-    public c(Class cls, Map map) {
-        this.f26570d = cls;
-        this.f26571e = map;
+import is.a0;
+import is.w0;
+import java.util.ArrayList;
+import java.util.Collection;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KClass;
+import kotlin.reflect.KProperty1;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public abstract class c {
+    public static final Collection a(KClass kClass) {
+        Intrinsics.checkNotNullParameter(kClass, "<this>");
+        ArrayList arrayList = new ArrayList();
+        for (Object obj : ((w0.a) ((w0) kClass).J().getValue()).I()) {
+            a0 a0Var = (a0) obj;
+            if (c(a0Var) && (a0Var instanceof KProperty1)) {
+                arrayList.add(obj);
+            }
+        }
+        return arrayList;
     }
 
-    @Override // kotlin.jvm.functions.Function0
-    public Object invoke() {
-        String l10;
-        l10 = f.l(this.f26570d, this.f26571e);
-        return l10;
+    private static final boolean b(a0 a0Var) {
+        if (a0Var.D().getExtensionReceiverParameter() != null) {
+            return true;
+        }
+        return false;
+    }
+
+    private static final boolean c(a0 a0Var) {
+        return !b(a0Var);
     }
 }

@@ -8,52 +8,52 @@ import com.facebook.imagepipeline.request.ImageRequest;
 public class k implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final la.w f10420a;
+    private final la.w f10805a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Supplier f10421b;
+    private final Supplier f10806b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final la.k f10422c;
+    private final la.k f10807c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final w0 f10423d;
+    private final w0 f10808d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final la.d f10424e;
+    private final la.d f10809e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final la.d f10425f;
+    private final la.d f10810f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static class a extends s {
 
         /* renamed from: c  reason: collision with root package name */
-        private final ProducerContext f10426c;
+        private final ProducerContext f10811c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final la.w f10427d;
+        private final la.w f10812d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Supplier f10428e;
+        private final Supplier f10813e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final la.k f10429f;
+        private final la.k f10814f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final la.d f10430g;
+        private final la.d f10815g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final la.d f10431h;
+        private final la.d f10816h;
 
         public a(Consumer consumer, ProducerContext producerContext, la.w wVar, Supplier supplier, la.k kVar, la.d dVar, la.d dVar2) {
             super(consumer);
-            this.f10426c = producerContext;
-            this.f10427d = wVar;
-            this.f10428e = supplier;
-            this.f10429f = kVar;
-            this.f10430g = dVar;
-            this.f10431h = dVar2;
+            this.f10811c = producerContext;
+            this.f10812d = wVar;
+            this.f10813e = supplier;
+            this.f10814f = kVar;
+            this.f10815g = dVar;
+            this.f10816h = dVar2;
         }
 
         @Override // com.facebook.imagepipeline.producers.c
@@ -66,28 +66,28 @@ public class k implements w0 {
                     ya.b.a("BitmapProbeProducer#onNewResultImpl");
                 }
                 if (!c.e(i10) && closeableReference != null && !c.l(i10, 8)) {
-                    ImageRequest V = this.f10426c.V();
-                    CacheKey encodedCacheKey = this.f10429f.getEncodedCacheKey(V, this.f10426c.a());
-                    String str = (String) this.f10426c.D0("origin");
+                    ImageRequest V = this.f10811c.V();
+                    CacheKey encodedCacheKey = this.f10814f.getEncodedCacheKey(V, this.f10811c.a());
+                    String str = (String) this.f10811c.D0("origin");
                     if (str != null && str.equals("memory_bitmap")) {
-                        if (this.f10426c.l().G().E() && !this.f10430g.b(encodedCacheKey)) {
-                            this.f10427d.b(encodedCacheKey);
-                            this.f10430g.a(encodedCacheKey);
+                        if (this.f10811c.k().G().E() && !this.f10815g.b(encodedCacheKey)) {
+                            this.f10812d.b(encodedCacheKey);
+                            this.f10815g.a(encodedCacheKey);
                         }
-                        if (this.f10426c.l().G().C() && !this.f10431h.b(encodedCacheKey)) {
+                        if (this.f10811c.k().G().C() && !this.f10816h.b(encodedCacheKey)) {
                             if (V.getCacheChoice() == ImageRequest.CacheChoice.SMALL) {
                                 z10 = true;
                             } else {
                                 z10 = false;
                             }
-                            na.b bVar = (na.b) this.f10428e.get();
+                            na.b bVar = (na.b) this.f10813e.get();
                             if (z10) {
                                 b10 = bVar.a();
                             } else {
                                 b10 = bVar.b();
                             }
                             b10.f(encodedCacheKey);
-                            this.f10431h.a(encodedCacheKey);
+                            this.f10816h.a(encodedCacheKey);
                         }
                     }
                     o().b(closeableReference, i10);
@@ -111,12 +111,12 @@ public class k implements w0 {
     }
 
     public k(la.w wVar, Supplier supplier, la.k kVar, la.d dVar, la.d dVar2, w0 w0Var) {
-        this.f10420a = wVar;
-        this.f10421b = supplier;
-        this.f10422c = kVar;
-        this.f10424e = dVar;
-        this.f10425f = dVar2;
-        this.f10423d = w0Var;
+        this.f10805a = wVar;
+        this.f10806b = supplier;
+        this.f10807c = kVar;
+        this.f10809e = dVar;
+        this.f10810f = dVar2;
+        this.f10808d = w0Var;
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -127,12 +127,12 @@ public class k implements w0 {
             }
             y0 F = producerContext.F();
             F.d(producerContext, c());
-            a aVar = new a(consumer, producerContext, this.f10420a, this.f10421b, this.f10422c, this.f10424e, this.f10425f);
+            a aVar = new a(consumer, producerContext, this.f10805a, this.f10806b, this.f10807c, this.f10809e, this.f10810f);
             F.j(producerContext, "BitmapProbeProducer", null);
             if (ya.b.d()) {
                 ya.b.a("mInputProducer.produceResult");
             }
-            this.f10423d.b(aVar, producerContext);
+            this.f10808d.b(aVar, producerContext);
             if (ya.b.d()) {
                 ya.b.b();
             }

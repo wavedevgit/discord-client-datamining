@@ -6,10 +6,10 @@ import kotlin.reflect.jvm.internal.impl.util.Check;
 final class b implements Check {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f35264a = new b();
+    public static final b f34788a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String f35265b = "should not have varargs or parameters with default values";
+    private static final String f34789b = "should not have varargs or parameters with default values";
 
     private b() {
     }
@@ -61,7 +61,7 @@ final class b implements Check {
 
     @Override // kotlin.reflect.jvm.internal.impl.util.Check
     public String getDescription() {
-        return f35265b;
+        return f34789b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.util.Check

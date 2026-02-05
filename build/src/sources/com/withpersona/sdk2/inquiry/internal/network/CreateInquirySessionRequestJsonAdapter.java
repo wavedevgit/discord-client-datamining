@@ -13,45 +13,45 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquirySessionRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18757a;
+    private final m.b f19163a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18758b;
+    private final com.squareup.moshi.h f19164b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f18759c;
+    private final com.squareup.moshi.h f19165c;
 
     public CreateInquirySessionRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data", "meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18757a = a10;
+        this.f19163a = a10;
         com.squareup.moshi.h f10 = moshi.f(CreateInquirySessionRequest.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18758b = f10;
+        this.f19164b = f10;
         com.squareup.moshi.h f11 = moshi.f(CreateInquirySessionRequest.Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f18759c = f11;
+        this.f19165c = f11;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public CreateInquirySessionRequest fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         CreateInquirySessionRequest.Data data = null;
         CreateInquirySessionRequest.Meta meta = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f18757a);
-            if (A0 != -1) {
-                if (A0 != 0) {
-                    if (A0 == 1 && (meta = (CreateInquirySessionRequest.Meta) this.f18759c.fromJson(reader)) == null) {
-                        throw vm.c.x("meta", "meta", reader);
+            int W = reader.W(this.f19163a);
+            if (W != -1) {
+                if (W != 0) {
+                    if (W == 1 && (meta = (CreateInquirySessionRequest.Meta) this.f19165c.fromJson(reader)) == null) {
+                        throw ym.c.x("meta", "meta", reader);
                     }
                 } else {
-                    data = (CreateInquirySessionRequest.Data) this.f18758b.fromJson(reader);
+                    data = (CreateInquirySessionRequest.Data) this.f19164b.fromJson(reader);
                     if (data == null) {
-                        throw vm.c.x("data_", "data", reader);
+                        throw ym.c.x("data_", "data", reader);
                     }
                 }
             } else {
@@ -59,14 +59,14 @@ public final class CreateInquirySessionRequestJsonAdapter extends com.squareup.m
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         if (data != null) {
             if (meta != null) {
                 return new CreateInquirySessionRequest(data, meta);
             }
-            throw vm.c.o("meta", "meta", reader);
+            throw ym.c.o("meta", "meta", reader);
         }
-        throw vm.c.o("data_", "data", reader);
+        throw ym.c.o("data_", "data", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -74,11 +74,11 @@ public final class CreateInquirySessionRequestJsonAdapter extends com.squareup.m
     public void toJson(t writer, CreateInquirySessionRequest createInquirySessionRequest) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (createInquirySessionRequest != null) {
-            writer.l();
-            writer.A0("data");
-            this.f18758b.toJson(writer, createInquirySessionRequest.a());
-            writer.A0("meta");
-            this.f18759c.toJson(writer, createInquirySessionRequest.b());
+            writer.k();
+            writer.W("data");
+            this.f19164b.toJson(writer, createInquirySessionRequest.a());
+            writer.W("meta");
+            this.f19165c.toJson(writer, createInquirySessionRequest.b());
             writer.E();
             return;
         }

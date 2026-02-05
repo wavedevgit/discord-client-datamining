@@ -14,50 +14,50 @@ import java.io.IOException;
 public class b1 implements Runnable {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Object f16047q = new Object();
+    private static final Object f16441q = new Object();
 
     /* renamed from: r  reason: collision with root package name */
-    private static Boolean f16048r;
+    private static Boolean f16442r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static Boolean f16049s;
+    private static Boolean f16443s;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f16050d;
+    private final Context f16444d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final h0 f16051e;
+    private final h0 f16445e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final PowerManager.WakeLock f16052i;
+    private final PowerManager.WakeLock f16446i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final a1 f16053o;
+    private final a1 f16447o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final long f16054p;
+    private final long f16448p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends BroadcastReceiver {
 
         /* renamed from: a  reason: collision with root package name */
-        private b1 f16055a;
+        private b1 f16449a;
 
         public a(b1 b1Var) {
-            this.f16055a = b1Var;
+            this.f16449a = b1Var;
         }
 
         public void a() {
             if (b1.b()) {
                 Log.d("FirebaseMessaging", "Connectivity change received registered");
             }
-            b1.this.f16050d.registerReceiver(this, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
+            b1.this.f16444d.registerReceiver(this, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
         }
 
         @Override // android.content.BroadcastReceiver
         public synchronized void onReceive(Context context, Intent intent) {
             try {
-                b1 b1Var = this.f16055a;
+                b1 b1Var = this.f16449a;
                 if (b1Var == null) {
                     return;
                 }
@@ -67,9 +67,9 @@ public class b1 implements Runnable {
                 if (b1.b()) {
                     Log.d("FirebaseMessaging", "Connectivity changed. Starting background sync.");
                 }
-                this.f16055a.f16053o.k(this.f16055a, 0L);
+                this.f16449a.f16447o.k(this.f16449a, 0L);
                 context.unregisterReceiver(this);
-                this.f16055a = null;
+                this.f16449a = null;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -78,11 +78,11 @@ public class b1 implements Runnable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b1(a1 a1Var, Context context, h0 h0Var, long j10) {
-        this.f16053o = a1Var;
-        this.f16050d = context;
-        this.f16054p = j10;
-        this.f16051e = h0Var;
-        this.f16052i = ((PowerManager) context.getSystemService("power")).newWakeLock(1, "wake:com.google.firebase.messaging");
+        this.f16447o = a1Var;
+        this.f16444d = context;
+        this.f16448p = j10;
+        this.f16445e = h0Var;
+        this.f16446i = ((PowerManager) context.getSystemService("power")).newWakeLock(1, "wake:com.google.firebase.messaging");
     }
 
     static /* synthetic */ boolean b() {
@@ -96,16 +96,16 @@ public class b1 implements Runnable {
     private static boolean f(Context context) {
         boolean booleanValue;
         boolean booleanValue2;
-        synchronized (f16047q) {
+        synchronized (f16441q) {
             try {
-                Boolean bool = f16049s;
+                Boolean bool = f16443s;
                 if (bool == null) {
                     booleanValue = g(context, "android.permission.ACCESS_NETWORK_STATE", bool);
                 } else {
                     booleanValue = bool.booleanValue();
                 }
                 Boolean valueOf = Boolean.valueOf(booleanValue);
-                f16049s = valueOf;
+                f16443s = valueOf;
                 booleanValue2 = valueOf.booleanValue();
             } catch (Throwable th2) {
                 throw th2;
@@ -133,16 +133,16 @@ public class b1 implements Runnable {
     private static boolean h(Context context) {
         boolean booleanValue;
         boolean booleanValue2;
-        synchronized (f16047q) {
+        synchronized (f16441q) {
             try {
-                Boolean bool = f16048r;
+                Boolean bool = f16442r;
                 if (bool == null) {
                     booleanValue = g(context, "android.permission.WAKE_LOCK", bool);
                 } else {
                     booleanValue = bool.booleanValue();
                 }
                 Boolean valueOf = Boolean.valueOf(booleanValue);
-                f16048r = valueOf;
+                f16442r = valueOf;
                 booleanValue2 = valueOf.booleanValue();
             } catch (Throwable th2) {
                 throw th2;
@@ -156,7 +156,7 @@ public class b1 implements Runnable {
         NetworkInfo networkInfo;
         boolean z10;
         try {
-            ConnectivityManager connectivityManager = (ConnectivityManager) this.f16050d.getSystemService("connectivity");
+            ConnectivityManager connectivityManager = (ConnectivityManager) this.f16444d.getSystemService("connectivity");
             if (connectivityManager != null) {
                 networkInfo = connectivityManager.getActiveNetworkInfo();
             } else {
@@ -183,45 +183,45 @@ public class b1 implements Runnable {
 
     @Override // java.lang.Runnable
     public void run() {
-        if (h(this.f16050d)) {
-            this.f16052i.acquire(e.f16073a);
+        if (h(this.f16444d)) {
+            this.f16446i.acquire(e.f16467a);
         }
         try {
             try {
                 try {
-                    this.f16053o.l(true);
-                    if (!this.f16051e.g()) {
-                        this.f16053o.l(false);
-                        if (h(this.f16050d)) {
+                    this.f16447o.l(true);
+                    if (!this.f16445e.g()) {
+                        this.f16447o.l(false);
+                        if (h(this.f16444d)) {
                             try {
-                                this.f16052i.release();
+                                this.f16446i.release();
                             } catch (RuntimeException unused) {
                                 Log.i("FirebaseMessaging", "TopicsSyncTask's wakelock was already released due to timeout.");
                             }
                         }
-                    } else if (f(this.f16050d) && !i()) {
+                    } else if (f(this.f16444d) && !i()) {
                         new a(this).a();
-                        if (h(this.f16050d)) {
+                        if (h(this.f16444d)) {
                             try {
-                                this.f16052i.release();
+                                this.f16446i.release();
                             } catch (RuntimeException unused2) {
                                 Log.i("FirebaseMessaging", "TopicsSyncTask's wakelock was already released due to timeout.");
                             }
                         }
                     } else {
-                        if (this.f16053o.o()) {
-                            this.f16053o.l(false);
+                        if (this.f16447o.o()) {
+                            this.f16447o.l(false);
                         } else {
-                            this.f16053o.p(this.f16054p);
+                            this.f16447o.p(this.f16448p);
                         }
-                        if (h(this.f16050d)) {
-                            this.f16052i.release();
+                        if (h(this.f16444d)) {
+                            this.f16446i.release();
                         }
                     }
                 } catch (Throwable th2) {
-                    if (h(this.f16050d)) {
+                    if (h(this.f16444d)) {
                         try {
-                            this.f16052i.release();
+                            this.f16446i.release();
                         } catch (RuntimeException unused3) {
                             Log.i("FirebaseMessaging", "TopicsSyncTask's wakelock was already released due to timeout.");
                         }
@@ -230,9 +230,9 @@ public class b1 implements Runnable {
                 }
             } catch (IOException e10) {
                 Log.e("FirebaseMessaging", "Failed to sync topics. Won't retry sync. " + e10.getMessage());
-                this.f16053o.l(false);
-                if (h(this.f16050d)) {
-                    this.f16052i.release();
+                this.f16447o.l(false);
+                if (h(this.f16444d)) {
+                    this.f16446i.release();
                 }
             }
         } catch (RuntimeException unused4) {

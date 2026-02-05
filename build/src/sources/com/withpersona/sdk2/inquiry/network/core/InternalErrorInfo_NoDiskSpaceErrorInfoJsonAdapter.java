@@ -32,31 +32,31 @@ public final class InternalErrorInfo_NoDiskSpaceErrorInfoJsonAdapter extends h {
     @Override // com.squareup.moshi.h
     @NotNull
     public InternalErrorInfo.NoDiskSpaceErrorInfo fromJson(@NotNull m mVar) {
-        mVar.r();
+        mVar.s();
         String str = null;
         int i10 = -1;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
+            int W = mVar.W(this.options);
+            if (W == -1) {
                 mVar.E0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw vm.c.x("message", "message", mVar);
+                    throw ym.c.x("message", "message", mVar);
                 }
                 i10 = -2;
             } else {
                 continue;
             }
         }
-        mVar.y();
+        mVar.z();
         if (i10 == -2) {
             return new InternalErrorInfo.NoDiskSpaceErrorInfo(str);
         }
         Constructor<InternalErrorInfo.NoDiskSpaceErrorInfo> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InternalErrorInfo.NoDiskSpaceErrorInfo.class.getDeclaredConstructor(String.class, Integer.TYPE, vm.c.f51688c);
+            constructor = InternalErrorInfo.NoDiskSpaceErrorInfo.class.getDeclaredConstructor(String.class, Integer.TYPE, ym.c.f54853c);
             this.constructorRef = constructor;
         }
         return constructor.newInstance(str, Integer.valueOf(i10), null);
@@ -65,8 +65,8 @@ public final class InternalErrorInfo_NoDiskSpaceErrorInfoJsonAdapter extends h {
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, InternalErrorInfo.NoDiskSpaceErrorInfo noDiskSpaceErrorInfo) {
         if (noDiskSpaceErrorInfo != null) {
-            tVar.l();
-            tVar.A0("message");
+            tVar.k();
+            tVar.W("message");
             this.stringAdapter.toJson(tVar, noDiskSpaceErrorInfo.getMessage());
             tVar.E();
             return;

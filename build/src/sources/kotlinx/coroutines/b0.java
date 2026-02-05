@@ -9,14 +9,6 @@ import java.util.Set;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
-import js.d1;
-import js.e1;
-import js.g1;
-import js.n0;
-import js.r1;
-import js.w0;
-import js.y0;
-import js.z0;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
@@ -26,14 +18,22 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.sequences.Sequence;
 import kotlinx.coroutines.Job;
+import ms.d1;
+import ms.e1;
+import ms.g1;
+import ms.n0;
+import ms.r1;
+import ms.w0;
+import ms.y0;
+import ms.z0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class b0 implements Job, js.o, g1 {
+public class b0 implements Job, ms.o, g1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f35477d = AtomicReferenceFieldUpdater.newUpdater(b0.class, Object.class, "_state$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f35001d = AtomicReferenceFieldUpdater.newUpdater(b0.class, Object.class, "_state$volatile");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f35478e = AtomicReferenceFieldUpdater.newUpdater(b0.class, Object.class, "_parentHandle$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f35002e = AtomicReferenceFieldUpdater.newUpdater(b0.class, Object.class, "_parentHandle$volatile");
     private volatile /* synthetic */ Object _parentHandle$volatile;
     private volatile /* synthetic */ Object _state$volatile;
 
@@ -42,11 +42,11 @@ public class b0 implements Job, js.o, g1 {
     public static final class a extends e {
 
         /* renamed from: t  reason: collision with root package name */
-        private final b0 f35479t;
+        private final b0 f35003t;
 
         public a(Continuation continuation, b0 b0Var) {
             super(continuation, 1);
-            this.f35479t = b0Var;
+            this.f35003t = b0Var;
         }
 
         @Override // kotlinx.coroutines.e
@@ -57,12 +57,12 @@ public class b0 implements Job, js.o, g1 {
         @Override // kotlinx.coroutines.e
         public Throwable z(Job job) {
             Throwable f10;
-            Object c02 = this.f35479t.c0();
-            if ((c02 instanceof c) && (f10 = ((c) c02).f()) != null) {
+            Object d02 = this.f35003t.d0();
+            if ((d02 instanceof c) && (f10 = ((c) d02).f()) != null) {
                 return f10;
             }
-            if (c02 instanceof js.r) {
-                return ((js.r) c02).f31981a;
+            if (d02 instanceof ms.r) {
+                return ((ms.r) d02).f38943a;
             }
             return job.N();
         }
@@ -73,32 +73,32 @@ public class b0 implements Job, js.o, g1 {
     public static final class b extends z0 {
 
         /* renamed from: p  reason: collision with root package name */
-        private final b0 f35480p;
+        private final b0 f35004p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final c f35481q;
+        private final c f35005q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final g f35482r;
+        private final g f35006r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final Object f35483s;
+        private final Object f35007s;
 
         public b(b0 b0Var, c cVar, g gVar, Object obj) {
-            this.f35480p = b0Var;
-            this.f35481q = cVar;
-            this.f35482r = gVar;
-            this.f35483s = obj;
+            this.f35004p = b0Var;
+            this.f35005q = cVar;
+            this.f35006r = gVar;
+            this.f35007s = obj;
         }
 
-        @Override // js.z0
+        @Override // ms.z0
         public boolean v() {
             return false;
         }
 
-        @Override // js.z0
+        @Override // ms.z0
         public void w(Throwable th2) {
-            this.f35480p.Q(this.f35481q, this.f35482r, this.f35483s);
+            this.f35004p.Q(this.f35005q, this.f35006r, this.f35007s);
         }
     }
 
@@ -107,22 +107,22 @@ public class b0 implements Job, js.o, g1 {
     public static final class c implements w0 {
 
         /* renamed from: e  reason: collision with root package name */
-        private static final /* synthetic */ AtomicIntegerFieldUpdater f35484e = AtomicIntegerFieldUpdater.newUpdater(c.class, "_isCompleting$volatile");
+        private static final /* synthetic */ AtomicIntegerFieldUpdater f35008e = AtomicIntegerFieldUpdater.newUpdater(c.class, "_isCompleting$volatile");
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ AtomicReferenceFieldUpdater f35485i = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "_rootCause$volatile");
+        private static final /* synthetic */ AtomicReferenceFieldUpdater f35009i = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "_rootCause$volatile");
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ AtomicReferenceFieldUpdater f35486o = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "_exceptionsHolder$volatile");
+        private static final /* synthetic */ AtomicReferenceFieldUpdater f35010o = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "_exceptionsHolder$volatile");
         private volatile /* synthetic */ Object _exceptionsHolder$volatile;
         private volatile /* synthetic */ int _isCompleting$volatile;
         private volatile /* synthetic */ Object _rootCause$volatile;
 
         /* renamed from: d  reason: collision with root package name */
-        private final d1 f35487d;
+        private final d1 f35011d;
 
         public c(d1 d1Var, boolean z10, Throwable th2) {
-            this.f35487d = d1Var;
+            this.f35011d = d1Var;
             this._isCompleting$volatile = z10 ? 1 : 0;
             this._rootCause$volatile = th2;
         }
@@ -132,14 +132,14 @@ public class b0 implements Job, js.o, g1 {
         }
 
         private final Object e() {
-            return f35486o.get(this);
+            return f35010o.get(this);
         }
 
         private final void o(Object obj) {
-            f35486o.set(this, obj);
+            f35010o.set(this, obj);
         }
 
-        @Override // js.w0
+        @Override // ms.w0
         public boolean a() {
             if (f() == null) {
                 return true;
@@ -147,9 +147,9 @@ public class b0 implements Job, js.o, g1 {
             return false;
         }
 
-        @Override // js.w0
+        @Override // ms.w0
         public d1 b() {
-            return this.f35487d;
+            return this.f35011d;
         }
 
         public final void c(Throwable th2) {
@@ -177,7 +177,7 @@ public class b0 implements Job, js.o, g1 {
         }
 
         public final Throwable f() {
-            return (Throwable) f35485i.get(this);
+            return (Throwable) f35009i.get(this);
         }
 
         public final boolean j() {
@@ -188,16 +188,16 @@ public class b0 implements Job, js.o, g1 {
         }
 
         public final boolean k() {
-            if (f35484e.get(this) == 1) {
+            if (f35008e.get(this) == 1) {
                 return true;
             }
             return false;
         }
 
         public final boolean l() {
-            os.e0 e0Var;
+            rs.e0 e0Var;
             Object e10 = e();
-            e0Var = c0.f35498e;
+            e0Var = c0.f35022e;
             if (e10 == e0Var) {
                 return true;
             }
@@ -206,7 +206,7 @@ public class b0 implements Job, js.o, g1 {
 
         public final List m(Throwable th2) {
             ArrayList arrayList;
-            os.e0 e0Var;
+            rs.e0 e0Var;
             Object e10 = e();
             if (e10 == null) {
                 arrayList = d();
@@ -226,17 +226,17 @@ public class b0 implements Job, js.o, g1 {
             if (th2 != null && !Intrinsics.areEqual(th2, f10)) {
                 arrayList.add(th2);
             }
-            e0Var = c0.f35498e;
+            e0Var = c0.f35022e;
             o(e0Var);
             return arrayList;
         }
 
         public final void n(boolean z10) {
-            f35484e.set(this, z10 ? 1 : 0);
+            f35008e.set(this, z10 ? 1 : 0);
         }
 
         public final void p(Throwable th2) {
-            f35485i.set(this, th2);
+            f35009i.set(this, th2);
         }
 
         public String toString() {
@@ -248,16 +248,16 @@ public class b0 implements Job, js.o, g1 {
     static final class d extends kotlin.coroutines.jvm.internal.j implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f35488d;
+        Object f35012d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f35489e;
+        Object f35013e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f35490i;
+        int f35014i;
 
         /* renamed from: o  reason: collision with root package name */
-        private /* synthetic */ Object f35491o;
+        private /* synthetic */ Object f35015o;
 
         d(Continuation continuation) {
             super(2, continuation);
@@ -266,7 +266,7 @@ public class b0 implements Job, js.o, g1 {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             d dVar = new d(continuation);
-            dVar.f35491o = obj;
+            dVar.f35015o = obj;
             return dVar;
         }
 
@@ -290,18 +290,18 @@ public class b0 implements Job, js.o, g1 {
         public final java.lang.Object invokeSuspend(java.lang.Object r6) {
             /*
                 r5 = this;
-                java.lang.Object r0 = rr.b.f()
-                int r1 = r5.f35490i
+                java.lang.Object r0 = ur.b.f()
+                int r1 = r5.f35014i
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L2a
                 if (r1 == r3) goto L26
                 if (r1 != r2) goto L1e
-                java.lang.Object r1 = r5.f35489e
-                os.p r1 = (os.p) r1
-                java.lang.Object r3 = r5.f35488d
-                os.o r3 = (os.o) r3
-                java.lang.Object r4 = r5.f35491o
+                java.lang.Object r1 = r5.f35013e
+                rs.p r1 = (rs.p) r1
+                java.lang.Object r3 = r5.f35012d
+                rs.o r3 = (rs.o) r3
+                java.lang.Object r4 = r5.f35015o
                 kotlin.sequences.j r4 = (kotlin.sequences.j) r4
                 kotlin.c.b(r6)
                 goto L81
@@ -315,28 +315,28 @@ public class b0 implements Job, js.o, g1 {
                 goto L86
             L2a:
                 kotlin.c.b(r6)
-                java.lang.Object r6 = r5.f35491o
+                java.lang.Object r6 = r5.f35015o
                 kotlin.sequences.j r6 = (kotlin.sequences.j) r6
                 kotlinx.coroutines.b0 r1 = kotlinx.coroutines.b0.this
-                java.lang.Object r1 = r1.c0()
+                java.lang.Object r1 = r1.d0()
                 boolean r4 = r1 instanceof kotlinx.coroutines.g
                 if (r4 == 0) goto L48
                 kotlinx.coroutines.g r1 = (kotlinx.coroutines.g) r1
-                js.o r1 = r1.f35511p
-                r5.f35490i = r3
+                ms.o r1 = r1.f35035p
+                r5.f35014i = r3
                 java.lang.Object r6 = r6.b(r1, r5)
                 if (r6 != r0) goto L86
                 goto L80
             L48:
-                boolean r3 = r1 instanceof js.w0
+                boolean r3 = r1 instanceof ms.w0
                 if (r3 == 0) goto L86
-                js.w0 r1 = (js.w0) r1
-                js.d1 r1 = r1.b()
+                ms.w0 r1 = (ms.w0) r1
+                ms.d1 r1 = r1.b()
                 if (r1 == 0) goto L86
                 java.lang.Object r3 = r1.k()
                 java.lang.String r4 = "null cannot be cast to non-null type kotlinx.coroutines.internal.LockFreeLinkedListNode"
                 kotlin.jvm.internal.Intrinsics.checkNotNull(r3, r4)
-                os.p r3 = (os.p) r3
+                rs.p r3 = (rs.p) r3
                 r4 = r3
                 r3 = r1
                 r1 = r4
@@ -348,20 +348,20 @@ public class b0 implements Job, js.o, g1 {
                 if (r6 == 0) goto L81
                 r6 = r1
                 kotlinx.coroutines.g r6 = (kotlinx.coroutines.g) r6
-                js.o r6 = r6.f35511p
-                r5.f35491o = r4
-                r5.f35488d = r3
-                r5.f35489e = r1
-                r5.f35490i = r2
+                ms.o r6 = r6.f35035p
+                r5.f35015o = r4
+                r5.f35012d = r3
+                r5.f35013e = r1
+                r5.f35014i = r2
                 java.lang.Object r6 = r4.b(r6, r5)
                 if (r6 != r0) goto L81
             L80:
                 return r0
             L81:
-                os.p r1 = r1.l()
+                rs.p r1 = r1.l()
                 goto L63
             L86:
-                kotlin.Unit r6 = kotlin.Unit.f32464a
+                kotlin.Unit r6 = kotlin.Unit.f31988a
                 return r6
             */
             throw new UnsupportedOperationException("Method not decompiled: kotlinx.coroutines.b0.d.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -370,22 +370,22 @@ public class b0 implements Job, js.o, g1 {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(kotlin.sequences.j jVar, Continuation continuation) {
-            return ((d) create(jVar, continuation)).invokeSuspend(Unit.f32464a);
+            return ((d) create(jVar, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
     public b0(boolean z10) {
-        this._state$volatile = z10 ? c0.f35500g : c0.f35499f;
+        this._state$volatile = z10 ? c0.f35024g : c0.f35023f;
     }
 
-    private final void A(Throwable th2, List list) {
+    private final void B(Throwable th2, List list) {
         if (list.size() > 1) {
             Set newSetFromMap = Collections.newSetFromMap(new IdentityHashMap(list.size()));
             Iterator it = list.iterator();
             while (it.hasNext()) {
                 Throwable th3 = (Throwable) it.next();
                 if (th3 != th2 && th3 != th2 && !(th3 instanceof CancellationException) && newSetFromMap.add(th3)) {
-                    lr.e.a(th2, th3);
+                    or.e.a(th2, th3);
                 }
             }
         }
@@ -395,22 +395,22 @@ public class b0 implements Job, js.o, g1 {
         p pVar;
         if (obj instanceof p) {
             if (!((p) obj).a()) {
-                AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35477d;
-                pVar = c0.f35500g;
+                AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35001d;
+                pVar = c0.f35024g;
                 if (!androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, this, obj, pVar)) {
                     return -1;
                 }
-                v0();
+                w0();
                 return 1;
             }
             return 0;
         } else if (!(obj instanceof u)) {
             return 0;
         } else {
-            if (!androidx.concurrent.futures.b.a(f35477d, this, obj, ((u) obj).b())) {
+            if (!androidx.concurrent.futures.b.a(f35001d, this, obj, ((u) obj).b())) {
                 return -1;
             }
-            v0();
+            w0();
             return 1;
         }
     }
@@ -430,7 +430,7 @@ public class b0 implements Job, js.o, g1 {
                 return "Active";
             }
             return "New";
-        } else if (obj instanceof js.r) {
+        } else if (obj instanceof ms.r) {
             return "Cancelled";
         } else {
             return "Completed";
@@ -438,11 +438,11 @@ public class b0 implements Job, js.o, g1 {
     }
 
     private final Object F(Continuation continuation) {
-        a aVar = new a(rr.b.c(continuation), this);
+        a aVar = new a(ur.b.c(continuation), this);
         aVar.H();
-        js.l.a(aVar, z.o(this, false, new e0(aVar), 1, null));
+        ms.l.a(aVar, z.o(this, false, new e0(aVar), 1, null));
         Object B = aVar.B();
-        if (B == rr.b.f()) {
+        if (B == ur.b.f()) {
             kotlin.coroutines.jvm.internal.g.c(continuation);
         }
         return B;
@@ -459,29 +459,39 @@ public class b0 implements Job, js.o, g1 {
     }
 
     private final Object J(Object obj) {
-        os.e0 e0Var;
-        Object N0;
-        os.e0 e0Var2;
+        rs.e0 e0Var;
+        Object M0;
+        rs.e0 e0Var2;
         do {
-            Object c02 = c0();
-            if (!(c02 instanceof w0) || ((c02 instanceof c) && ((c) c02).k())) {
-                e0Var = c0.f35494a;
+            Object d02 = d0();
+            if (!(d02 instanceof w0) || ((d02 instanceof c) && ((c) d02).k())) {
+                e0Var = c0.f35018a;
                 return e0Var;
             }
-            N0 = N0(c02, new js.r(R(obj), false, 2, null));
-            e0Var2 = c0.f35496c;
-        } while (N0 == e0Var2);
-        return N0;
+            M0 = M0(d02, new ms.r(R(obj), false, 2, null));
+            e0Var2 = c0.f35020c;
+        } while (M0 == e0Var2);
+        return M0;
+    }
+
+    private final boolean J0(w0 w0Var, Object obj) {
+        if (!androidx.concurrent.futures.b.a(f35001d, this, w0Var, c0.g(obj))) {
+            return false;
+        }
+        u0(null);
+        v0(obj);
+        P(w0Var, obj);
+        return true;
     }
 
     private final boolean K(Throwable th2) {
-        if (j0()) {
+        if (k0()) {
             return true;
         }
         boolean z10 = th2 instanceof CancellationException;
-        js.n b02 = b0();
-        if (b02 != null && b02 != e1.f31956d) {
-            if (b02.d(th2) || z10) {
+        ms.n c02 = c0();
+        if (c02 != null && c02 != e1.f38918d) {
+            if (c02.d(th2) || z10) {
                 return true;
             }
             return false;
@@ -489,37 +499,27 @@ public class b0 implements Job, js.o, g1 {
         return z10;
     }
 
-    private final boolean K0(w0 w0Var, Object obj) {
-        if (!androidx.concurrent.futures.b.a(f35477d, this, w0Var, c0.g(obj))) {
-            return false;
-        }
-        t0(null);
-        u0(obj);
-        P(w0Var, obj);
-        return true;
-    }
-
     private final boolean L0(w0 w0Var, Throwable th2) {
-        d1 Z = Z(w0Var);
-        if (Z == null) {
+        d1 a02 = a0(w0Var);
+        if (a02 == null) {
             return false;
         }
-        if (!androidx.concurrent.futures.b.a(f35477d, this, w0Var, new c(Z, false, th2))) {
+        if (!androidx.concurrent.futures.b.a(f35001d, this, w0Var, new c(a02, false, th2))) {
             return false;
         }
-        r0(Z, th2);
+        s0(a02, th2);
         return true;
     }
 
-    private final Object N0(Object obj, Object obj2) {
-        os.e0 e0Var;
-        os.e0 e0Var2;
+    private final Object M0(Object obj, Object obj2) {
+        rs.e0 e0Var;
+        rs.e0 e0Var2;
         if (!(obj instanceof w0)) {
-            e0Var2 = c0.f35494a;
+            e0Var2 = c0.f35018a;
             return e0Var2;
-        } else if (((obj instanceof p) || (obj instanceof z0)) && !(obj instanceof g) && !(obj2 instanceof js.r)) {
-            if (!K0((w0) obj, obj2)) {
-                e0Var = c0.f35496c;
+        } else if (((obj instanceof p) || (obj instanceof z0)) && !(obj instanceof g) && !(obj2 instanceof ms.r)) {
+            if (!J0((w0) obj, obj2)) {
+                e0Var = c0.f35020c;
                 return e0Var;
             }
             return obj2;
@@ -534,13 +534,13 @@ public class b0 implements Job, js.o, g1 {
     /* JADX WARN: Type inference failed for: r2v2 */
     private final Object O0(w0 w0Var, Object obj) {
         c cVar;
-        js.r rVar;
-        os.e0 e0Var;
-        os.e0 e0Var2;
-        os.e0 e0Var3;
-        d1 Z = Z(w0Var);
-        if (Z == null) {
-            e0Var3 = c0.f35496c;
+        ms.r rVar;
+        rs.e0 e0Var;
+        rs.e0 e0Var2;
+        rs.e0 e0Var3;
+        d1 a02 = a0(w0Var);
+        if (a02 == null) {
+            e0Var3 = c0.f35020c;
             return e0Var3;
         }
         ?? r22 = 0;
@@ -550,84 +550,84 @@ public class b0 implements Job, js.o, g1 {
             cVar = null;
         }
         if (cVar == null) {
-            cVar = new c(Z, false, null);
+            cVar = new c(a02, false, null);
         }
         Ref.ObjectRef objectRef = new Ref.ObjectRef();
         synchronized (cVar) {
             if (cVar.k()) {
-                e0Var2 = c0.f35494a;
+                e0Var2 = c0.f35018a;
                 return e0Var2;
             }
             cVar.n(true);
-            if (cVar != w0Var && !androidx.concurrent.futures.b.a(f35477d, this, w0Var, cVar)) {
-                e0Var = c0.f35496c;
+            if (cVar != w0Var && !androidx.concurrent.futures.b.a(f35001d, this, w0Var, cVar)) {
+                e0Var = c0.f35020c;
                 return e0Var;
             }
             boolean j10 = cVar.j();
-            if (obj instanceof js.r) {
-                rVar = (js.r) obj;
+            if (obj instanceof ms.r) {
+                rVar = (ms.r) obj;
             } else {
                 rVar = null;
             }
             if (rVar != null) {
-                cVar.c(rVar.f31981a);
+                cVar.c(rVar.f38943a);
             }
             Throwable f10 = cVar.f();
             if (!j10) {
                 r22 = f10;
             }
             objectRef.element = r22;
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
             if (r22 != 0) {
-                r0(Z, r22);
+                s0(a02, r22);
             }
-            g q02 = q0(Z);
-            if (q02 != null && P0(cVar, q02, obj)) {
-                return c0.f35495b;
+            g r02 = r0(a02);
+            if (r02 != null && P0(cVar, r02, obj)) {
+                return c0.f35019b;
             }
-            Z.g(2);
-            g q03 = q0(Z);
-            if (q03 != null && P0(cVar, q03, obj)) {
-                return c0.f35495b;
+            a02.g(2);
+            g r03 = r0(a02);
+            if (r03 != null && P0(cVar, r03, obj)) {
+                return c0.f35019b;
             }
             return S(cVar, obj);
         }
     }
 
     private final void P(w0 w0Var, Object obj) {
-        js.r rVar;
-        js.n b02 = b0();
-        if (b02 != null) {
-            b02.dispose();
-            z0(e1.f31956d);
+        ms.r rVar;
+        ms.n c02 = c0();
+        if (c02 != null) {
+            c02.dispose();
+            A0(e1.f38918d);
         }
         Throwable th2 = null;
-        if (obj instanceof js.r) {
-            rVar = (js.r) obj;
+        if (obj instanceof ms.r) {
+            rVar = (ms.r) obj;
         } else {
             rVar = null;
         }
         if (rVar != null) {
-            th2 = rVar.f31981a;
+            th2 = rVar.f38943a;
         }
         if (w0Var instanceof z0) {
             try {
                 ((z0) w0Var).w(th2);
                 return;
             } catch (Throwable th3) {
-                g0(new js.s("Exception in completion handler " + w0Var + " for " + this, th3));
+                h0(new ms.s("Exception in completion handler " + w0Var + " for " + this, th3));
                 return;
             }
         }
         d1 b10 = w0Var.b();
         if (b10 != null) {
-            s0(b10, th2);
+            t0(b10, th2);
         }
     }
 
     private final boolean P0(c cVar, g gVar, Object obj) {
-        while (z.n(gVar.f35511p, false, new b(this, cVar, gVar, obj)) == e1.f31956d) {
-            gVar = q0(gVar);
+        while (z.n(gVar.f35035p, false, new b(this, cVar, gVar, obj)) == e1.f38918d) {
+            gVar = r0(gVar);
             if (gVar == null) {
                 return false;
             }
@@ -637,11 +637,11 @@ public class b0 implements Job, js.o, g1 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void Q(c cVar, g gVar, Object obj) {
-        g q02 = q0(gVar);
-        if (q02 == null || !P0(cVar, q02, obj)) {
+        g r02 = r0(gVar);
+        if (r02 == null || !P0(cVar, r02, obj)) {
             cVar.b().g(2);
-            g q03 = q0(gVar);
-            if (q03 != null && P0(cVar, q03, obj)) {
+            g r03 = r0(gVar);
+            if (r03 != null && P0(cVar, r03, obj)) {
                 return;
             }
             C(S(cVar, obj));
@@ -663,62 +663,62 @@ public class b0 implements Job, js.o, g1 {
             return th2;
         }
         Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.ParentJob");
-        return ((g1) obj).M0();
+        return ((g1) obj).N0();
     }
 
     private final Object S(c cVar, Object obj) {
-        js.r rVar;
+        ms.r rVar;
         Throwable th2;
         boolean j10;
-        Throwable W;
-        if (obj instanceof js.r) {
-            rVar = (js.r) obj;
+        Throwable X;
+        if (obj instanceof ms.r) {
+            rVar = (ms.r) obj;
         } else {
             rVar = null;
         }
         if (rVar != null) {
-            th2 = rVar.f31981a;
+            th2 = rVar.f38943a;
         } else {
             th2 = null;
         }
         synchronized (cVar) {
             j10 = cVar.j();
             List m10 = cVar.m(th2);
-            W = W(cVar, m10);
-            if (W != null) {
-                A(W, m10);
+            X = X(cVar, m10);
+            if (X != null) {
+                B(X, m10);
             }
         }
-        if (W != null && W != th2) {
-            obj = new js.r(W, false, 2, null);
+        if (X != null && X != th2) {
+            obj = new ms.r(X, false, 2, null);
         }
-        if (W != null && (K(W) || f0(W))) {
+        if (X != null && (K(X) || g0(X))) {
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.CompletedExceptionally");
-            ((js.r) obj).c();
+            ((ms.r) obj).c();
         }
         if (!j10) {
-            t0(W);
+            u0(X);
         }
-        u0(obj);
-        androidx.concurrent.futures.b.a(f35477d, this, cVar, c0.g(obj));
+        v0(obj);
+        androidx.concurrent.futures.b.a(f35001d, this, cVar, c0.g(obj));
         P(cVar, obj);
         return obj;
     }
 
     private final Throwable U(Object obj) {
-        js.r rVar;
-        if (obj instanceof js.r) {
-            rVar = (js.r) obj;
+        ms.r rVar;
+        if (obj instanceof ms.r) {
+            rVar = (ms.r) obj;
         } else {
             rVar = null;
         }
         if (rVar == null) {
             return null;
         }
-        return rVar.f31981a;
+        return rVar.f38943a;
     }
 
-    private final Throwable W(c cVar, List list) {
+    private final Throwable X(c cVar, List list) {
         Object obj;
         Object obj2 = null;
         if (list.isEmpty()) {
@@ -766,14 +766,14 @@ public class b0 implements Job, js.o, g1 {
         return th3;
     }
 
-    private final d1 Z(w0 w0Var) {
+    private final d1 a0(w0 w0Var) {
         d1 b10 = w0Var.b();
         if (b10 == null) {
             if (w0Var instanceof p) {
                 return new d1();
             }
             if (w0Var instanceof z0) {
-                x0((z0) w0Var);
+                y0((z0) w0Var);
                 return null;
             }
             throw new IllegalStateException(("State should have list: " + w0Var).toString());
@@ -781,95 +781,95 @@ public class b0 implements Job, js.o, g1 {
         return b10;
     }
 
-    private final boolean k0() {
-        Object c02;
+    private final boolean l0() {
+        Object d02;
         do {
-            c02 = c0();
-            if (!(c02 instanceof w0)) {
+            d02 = d0();
+            if (!(d02 instanceof w0)) {
                 return false;
             }
-        } while (B0(c02) < 0);
+        } while (B0(d02) < 0);
         return true;
     }
 
-    private final Object l0(Continuation continuation) {
-        e eVar = new e(rr.b.c(continuation), 1);
+    private final Object m0(Continuation continuation) {
+        e eVar = new e(ur.b.c(continuation), 1);
         eVar.H();
-        js.l.a(eVar, z.o(this, false, new f0(eVar), 1, null));
+        ms.l.a(eVar, z.o(this, false, new f0(eVar), 1, null));
         Object B = eVar.B();
-        if (B == rr.b.f()) {
+        if (B == ur.b.f()) {
             kotlin.coroutines.jvm.internal.g.c(continuation);
         }
-        if (B == rr.b.f()) {
+        if (B == ur.b.f()) {
             return B;
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
-    private final Object m0(Object obj) {
-        os.e0 e0Var;
-        os.e0 e0Var2;
-        os.e0 e0Var3;
-        os.e0 e0Var4;
-        os.e0 e0Var5;
-        os.e0 e0Var6;
+    private final Object n0(Object obj) {
+        rs.e0 e0Var;
+        rs.e0 e0Var2;
+        rs.e0 e0Var3;
+        rs.e0 e0Var4;
+        rs.e0 e0Var5;
+        rs.e0 e0Var6;
         Throwable th2 = null;
         Throwable th3 = null;
         while (true) {
-            Object c02 = c0();
-            if (c02 instanceof c) {
-                synchronized (c02) {
-                    if (((c) c02).l()) {
-                        e0Var2 = c0.f35497d;
+            Object d02 = d0();
+            if (d02 instanceof c) {
+                synchronized (d02) {
+                    if (((c) d02).l()) {
+                        e0Var2 = c0.f35021d;
                         return e0Var2;
                     }
-                    boolean j10 = ((c) c02).j();
+                    boolean j10 = ((c) d02).j();
                     if (obj != null || !j10) {
                         if (th3 == null) {
                             th3 = R(obj);
                         }
-                        ((c) c02).c(th3);
+                        ((c) d02).c(th3);
                     }
-                    Throwable f10 = ((c) c02).f();
+                    Throwable f10 = ((c) d02).f();
                     if (!j10) {
                         th2 = f10;
                     }
                     if (th2 != null) {
-                        r0(((c) c02).b(), th2);
+                        s0(((c) d02).b(), th2);
                     }
-                    e0Var = c0.f35494a;
+                    e0Var = c0.f35018a;
                     return e0Var;
                 }
-            } else if (!(c02 instanceof w0)) {
-                e0Var3 = c0.f35497d;
+            } else if (!(d02 instanceof w0)) {
+                e0Var3 = c0.f35021d;
                 return e0Var3;
             } else {
                 if (th3 == null) {
                     th3 = R(obj);
                 }
-                w0 w0Var = (w0) c02;
+                w0 w0Var = (w0) d02;
                 if (w0Var.a()) {
                     if (L0(w0Var, th3)) {
-                        e0Var4 = c0.f35494a;
+                        e0Var4 = c0.f35018a;
                         return e0Var4;
                     }
                 } else {
-                    Object N0 = N0(c02, new js.r(th3, false, 2, null));
-                    e0Var5 = c0.f35494a;
-                    if (N0 != e0Var5) {
-                        e0Var6 = c0.f35496c;
-                        if (N0 != e0Var6) {
-                            return N0;
+                    Object M0 = M0(d02, new ms.r(th3, false, 2, null));
+                    e0Var5 = c0.f35018a;
+                    if (M0 != e0Var5) {
+                        e0Var6 = c0.f35020c;
+                        if (M0 != e0Var6) {
+                            return M0;
                         }
                     } else {
-                        throw new IllegalStateException(("Cannot happen in " + c02).toString());
+                        throw new IllegalStateException(("Cannot happen in " + d02).toString());
                     }
                 }
             }
         }
     }
 
-    private final g q0(os.p pVar) {
+    private final g r0(rs.p pVar) {
         while (pVar.q()) {
             pVar = pVar.m();
         }
@@ -886,74 +886,78 @@ public class b0 implements Job, js.o, g1 {
         }
     }
 
-    private final void r0(d1 d1Var, Throwable th2) {
-        t0(th2);
+    private final void s0(d1 d1Var, Throwable th2) {
+        u0(th2);
         d1Var.g(4);
         Object k10 = d1Var.k();
         Intrinsics.checkNotNull(k10, "null cannot be cast to non-null type kotlinx.coroutines.internal.LockFreeLinkedListNode");
-        js.s sVar = null;
-        for (os.p pVar = (os.p) k10; !Intrinsics.areEqual(pVar, d1Var); pVar = pVar.l()) {
+        ms.s sVar = null;
+        for (rs.p pVar = (rs.p) k10; !Intrinsics.areEqual(pVar, d1Var); pVar = pVar.l()) {
             if ((pVar instanceof z0) && ((z0) pVar).v()) {
                 try {
                     ((z0) pVar).w(th2);
                 } catch (Throwable th3) {
                     if (sVar != null) {
-                        lr.e.a(sVar, th3);
+                        or.e.a(sVar, th3);
                     } else {
-                        sVar = new js.s("Exception in completion handler " + pVar + " for " + this, th3);
-                        Unit unit = Unit.f32464a;
+                        sVar = new ms.s("Exception in completion handler " + pVar + " for " + this, th3);
+                        Unit unit = Unit.f31988a;
                     }
                 }
             }
         }
         if (sVar != null) {
-            g0(sVar);
+            h0(sVar);
         }
         K(th2);
     }
 
-    private final void s0(d1 d1Var, Throwable th2) {
+    private final void t0(d1 d1Var, Throwable th2) {
         d1Var.g(1);
         Object k10 = d1Var.k();
         Intrinsics.checkNotNull(k10, "null cannot be cast to non-null type kotlinx.coroutines.internal.LockFreeLinkedListNode");
-        js.s sVar = null;
-        for (os.p pVar = (os.p) k10; !Intrinsics.areEqual(pVar, d1Var); pVar = pVar.l()) {
+        ms.s sVar = null;
+        for (rs.p pVar = (rs.p) k10; !Intrinsics.areEqual(pVar, d1Var); pVar = pVar.l()) {
             if (pVar instanceof z0) {
                 try {
                     ((z0) pVar).w(th2);
                 } catch (Throwable th3) {
                     if (sVar != null) {
-                        lr.e.a(sVar, th3);
+                        or.e.a(sVar, th3);
                     } else {
-                        sVar = new js.s("Exception in completion handler " + pVar + " for " + this, th3);
-                        Unit unit = Unit.f32464a;
+                        sVar = new ms.s("Exception in completion handler " + pVar + " for " + this, th3);
+                        Unit unit = Unit.f31988a;
                     }
                 }
             }
         }
         if (sVar != null) {
-            g0(sVar);
+            h0(sVar);
         }
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r1v2, types: [kotlinx.coroutines.u] */
-    private final void w0(p pVar) {
+    private final void x0(p pVar) {
         d1 d1Var = new d1();
         if (!pVar.a()) {
             d1Var = new u(d1Var);
         }
-        androidx.concurrent.futures.b.a(f35477d, this, pVar, d1Var);
+        androidx.concurrent.futures.b.a(f35001d, this, pVar, d1Var);
     }
 
-    private final void x0(z0 z0Var) {
+    private final void y0(z0 z0Var) {
         z0Var.f(new d1());
-        androidx.concurrent.futures.b.a(f35477d, this, z0Var, z0Var.l());
+        androidx.concurrent.futures.b.a(f35001d, this, z0Var, z0Var.l());
     }
 
-    @Override // js.o
-    public final void B1(g1 g1Var) {
-        H(g1Var);
+    public final void A0(ms.n nVar) {
+        f35002e.set(this, nVar);
+    }
+
+    @Override // kotlin.coroutines.CoroutineContext
+    public Object A1(Object obj, Function2 function2) {
+        return Job.a.b(this, obj, function2);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -962,21 +966,21 @@ public class b0 implements Job, js.o, g1 {
 
     @Override // kotlinx.coroutines.Job
     public final n0 C0(Function1 function1) {
-        return i0(true, new x(function1));
+        return j0(true, new x(function1));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Object D(Continuation continuation) {
-        Object c02;
+        Object d02;
         do {
-            c02 = c0();
-            if (!(c02 instanceof w0)) {
-                if (!(c02 instanceof js.r)) {
-                    return c0.h(c02);
+            d02 = d0();
+            if (!(d02 instanceof w0)) {
+                if (!(d02 instanceof ms.r)) {
+                    return c0.h(d02);
                 }
-                throw ((js.r) c02).f31981a;
+                throw ((ms.r) d02).f38943a;
             }
-        } while (B0(c02) < 0);
+        } while (B0(d02) < 0);
         return F(continuation);
     }
 
@@ -1002,18 +1006,18 @@ public class b0 implements Job, js.o, g1 {
 
     public final boolean H(Object obj) {
         Object obj2;
-        os.e0 e0Var;
-        os.e0 e0Var2;
-        os.e0 e0Var3;
-        obj2 = c0.f35494a;
-        if (!Y() || (obj2 = J(obj)) != c0.f35495b) {
-            e0Var = c0.f35494a;
+        rs.e0 e0Var;
+        rs.e0 e0Var2;
+        rs.e0 e0Var3;
+        obj2 = c0.f35018a;
+        if (!Z() || (obj2 = J(obj)) != c0.f35019b) {
+            e0Var = c0.f35018a;
             if (obj2 == e0Var) {
-                obj2 = m0(obj);
+                obj2 = n0(obj);
             }
-            e0Var2 = c0.f35494a;
-            if (obj2 != e0Var2 && obj2 != c0.f35495b) {
-                e0Var3 = c0.f35497d;
+            e0Var2 = c0.f35018a;
+            if (obj2 != e0Var2 && obj2 != c0.f35019b) {
+                e0Var3 = c0.f35021d;
                 if (obj2 == e0Var3) {
                     return false;
                 }
@@ -1026,7 +1030,7 @@ public class b0 implements Job, js.o, g1 {
     }
 
     public final String H0() {
-        return p0() + '{' + D0(c0()) + '}';
+        return q0() + '{' + D0(d0()) + '}';
     }
 
     public void I(Throwable th2) {
@@ -1041,7 +1045,7 @@ public class b0 implements Job, js.o, g1 {
         } else {
             xVar = new x(function1);
         }
-        return i0(z11, xVar);
+        return j0(z11, xVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -1049,68 +1053,68 @@ public class b0 implements Job, js.o, g1 {
         return "Job was cancelled";
     }
 
-    @Override // js.g1
-    public CancellationException M0() {
-        Throwable th2;
-        Object c02 = c0();
-        CancellationException cancellationException = null;
-        if (c02 instanceof c) {
-            th2 = ((c) c02).f();
-        } else if (c02 instanceof js.r) {
-            th2 = ((js.r) c02).f31981a;
-        } else if (!(c02 instanceof w0)) {
-            th2 = null;
-        } else {
-            throw new IllegalStateException(("Cannot be cancelling child in this state: " + c02).toString());
-        }
-        if (th2 instanceof CancellationException) {
-            cancellationException = th2;
-        }
-        if (cancellationException == null) {
-            return new y0("Parent job is " + D0(c02), th2, this);
-        }
-        return cancellationException;
-    }
-
     @Override // kotlinx.coroutines.Job
     public final CancellationException N() {
-        Object c02 = c0();
-        if (c02 instanceof c) {
-            Throwable f10 = ((c) c02).f();
+        Object d02 = d0();
+        if (d02 instanceof c) {
+            Throwable f10 = ((c) d02).f();
             if (f10 != null) {
-                CancellationException E0 = E0(f10, js.e0.a(this) + " is cancelling");
+                CancellationException E0 = E0(f10, ms.e0.a(this) + " is cancelling");
                 if (E0 != null) {
                     return E0;
                 }
             }
             throw new IllegalStateException(("Job is still new or active: " + this).toString());
-        } else if (!(c02 instanceof w0)) {
-            if (c02 instanceof js.r) {
-                return G0(this, ((js.r) c02).f31981a, null, 1, null);
+        } else if (!(d02 instanceof w0)) {
+            if (d02 instanceof ms.r) {
+                return G0(this, ((ms.r) d02).f38943a, null, 1, null);
             }
-            return new y0(js.e0.a(this) + " has completed normally", null, this);
+            return new y0(ms.e0.a(this) + " has completed normally", null, this);
         } else {
             throw new IllegalStateException(("Job is still new or active: " + this).toString());
         }
+    }
+
+    @Override // ms.g1
+    public CancellationException N0() {
+        Throwable th2;
+        Object d02 = d0();
+        CancellationException cancellationException = null;
+        if (d02 instanceof c) {
+            th2 = ((c) d02).f();
+        } else if (d02 instanceof ms.r) {
+            th2 = ((ms.r) d02).f38943a;
+        } else if (!(d02 instanceof w0)) {
+            th2 = null;
+        } else {
+            throw new IllegalStateException(("Cannot be cancelling child in this state: " + d02).toString());
+        }
+        if (th2 instanceof CancellationException) {
+            cancellationException = th2;
+        }
+        if (cancellationException == null) {
+            return new y0("Parent job is " + D0(d02), th2, this);
+        }
+        return cancellationException;
     }
 
     public boolean O(Throwable th2) {
         if (th2 instanceof CancellationException) {
             return true;
         }
-        if (H(th2) && X()) {
+        if (H(th2) && Y()) {
             return true;
         }
         return false;
     }
 
     public final Object T() {
-        Object c02 = c0();
-        if (!(c02 instanceof w0)) {
-            if (!(c02 instanceof js.r)) {
-                return c0.h(c02);
+        Object d02 = d0();
+        if (!(d02 instanceof w0)) {
+            if (!(d02 instanceof ms.r)) {
+                return c0.h(d02);
             }
-            throw ((js.r) c02).f31981a;
+            throw ((ms.r) d02).f38943a;
         }
         throw new IllegalStateException("This job has not completed yet");
     }
@@ -1120,58 +1124,117 @@ public class b0 implements Job, js.o, g1 {
         return Job.a.e(this, coroutineContext);
     }
 
-    public boolean X() {
-        return true;
-    }
-
     public boolean Y() {
-        return false;
+        return true;
     }
 
     @Override // kotlinx.coroutines.Job
     public final Object Y0(Continuation continuation) {
-        if (!k0()) {
+        if (!l0()) {
             z.k(continuation.getContext());
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
-        Object l02 = l0(continuation);
-        if (l02 == rr.b.f()) {
-            return l02;
+        Object m02 = m0(continuation);
+        if (m02 == ur.b.f()) {
+            return m02;
         }
-        return Unit.f32464a;
+        return Unit.f31988a;
+    }
+
+    public boolean Z() {
+        return false;
+    }
+
+    @Override // kotlinx.coroutines.Job
+    public final ms.n Z0(ms.o oVar) {
+        ms.r rVar;
+        ms.r rVar2;
+        g gVar = new g(oVar);
+        gVar.x(this);
+        while (true) {
+            Object d02 = d0();
+            if (d02 instanceof p) {
+                p pVar = (p) d02;
+                if (pVar.a()) {
+                    if (androidx.concurrent.futures.b.a(f35001d, this, d02, gVar)) {
+                        return gVar;
+                    }
+                } else {
+                    x0(pVar);
+                }
+            } else {
+                Throwable th2 = null;
+                if (d02 instanceof w0) {
+                    d1 b10 = ((w0) d02).b();
+                    if (b10 == null) {
+                        Intrinsics.checkNotNull(d02, "null cannot be cast to non-null type kotlinx.coroutines.JobNode");
+                        y0((z0) d02);
+                    } else {
+                        if (!b10.c(gVar, 7)) {
+                            boolean c10 = b10.c(gVar, 3);
+                            Object d03 = d0();
+                            if (d03 instanceof c) {
+                                th2 = ((c) d03).f();
+                            } else {
+                                if (d03 instanceof ms.r) {
+                                    rVar2 = (ms.r) d03;
+                                } else {
+                                    rVar2 = null;
+                                }
+                                if (rVar2 != null) {
+                                    th2 = rVar2.f38943a;
+                                }
+                            }
+                            gVar.w(th2);
+                            if (!c10) {
+                                return e1.f38918d;
+                            }
+                        }
+                        return gVar;
+                    }
+                } else {
+                    Object d04 = d0();
+                    if (d04 instanceof ms.r) {
+                        rVar = (ms.r) d04;
+                    } else {
+                        rVar = null;
+                    }
+                    if (rVar != null) {
+                        th2 = rVar.f38943a;
+                    }
+                    gVar.w(th2);
+                    return e1.f38918d;
+                }
+            }
+        }
     }
 
     @Override // kotlinx.coroutines.Job
     public boolean a() {
-        Object c02 = c0();
-        if ((c02 instanceof w0) && ((w0) c02).a()) {
+        Object d02 = d0();
+        if ((d02 instanceof w0) && ((w0) d02).a()) {
             return true;
         }
         return false;
     }
 
-    public Job a0() {
-        js.n b02 = b0();
-        if (b02 != null) {
-            return b02.getParent();
+    public Job b0() {
+        ms.n c02 = c0();
+        if (c02 != null) {
+            return c02.getParent();
         }
         return null;
     }
 
-    public final js.n b0() {
-        return (js.n) f35478e.get(this);
+    public final ms.n c0() {
+        return (ms.n) f35002e.get(this);
     }
 
-    public final Object c0() {
-        return f35477d.get(this);
+    public final Object d0() {
+        return f35001d.get(this);
     }
 
-    @Override // kotlin.coroutines.CoroutineContext
-    public CoroutineContext e1(CoroutineContext.b bVar) {
-        return Job.a.d(this, bVar);
-    }
-
-    protected boolean f0(Throwable th2) {
+    protected boolean g0(Throwable th2) {
         return false;
     }
 
@@ -1182,7 +1245,7 @@ public class b0 implements Job, js.o, g1 {
 
     @Override // kotlin.coroutines.CoroutineContext.Element
     public final CoroutineContext.b getKey() {
-        return Job.f35473h;
+        return Job.f34997h;
     }
 
     @Override // kotlinx.coroutines.Job
@@ -1194,47 +1257,64 @@ public class b0 implements Job, js.o, g1 {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public final void h0(Job job) {
+    public final void i0(Job job) {
         if (job == null) {
-            z0(e1.f31956d);
+            A0(e1.f38918d);
             return;
         }
         job.start();
-        js.n x12 = job.x1(this);
-        z0(x12);
+        ms.n Z0 = job.Z0(this);
+        A0(Z0);
         if (isCompleted()) {
-            x12.dispose();
-            z0(e1.f31956d);
+            Z0.dispose();
+            A0(e1.f38918d);
         }
     }
 
-    public final n0 i0(boolean z10, z0 z0Var) {
+    @Override // kotlinx.coroutines.Job
+    public final boolean isCancelled() {
+        Object d02 = d0();
+        if (!(d02 instanceof ms.r)) {
+            if (!(d02 instanceof c) || !((c) d02).j()) {
+                return false;
+            }
+            return true;
+        }
+        return true;
+    }
+
+    @Override // kotlinx.coroutines.Job
+    public final boolean isCompleted() {
+        return !(d0() instanceof w0);
+    }
+
+    public final n0 j0(boolean z10, z0 z0Var) {
         boolean z11;
         Throwable th2;
-        js.r rVar;
+        ms.r rVar;
         boolean c10;
         c cVar;
         Throwable th3;
         z0Var.x(this);
         while (true) {
-            Object c02 = c0();
+            Object d02 = d0();
             z11 = true;
             th2 = null;
-            if (c02 instanceof p) {
-                p pVar = (p) c02;
+            if (d02 instanceof p) {
+                p pVar = (p) d02;
                 if (pVar.a()) {
-                    if (androidx.concurrent.futures.b.a(f35477d, this, c02, z0Var)) {
+                    if (androidx.concurrent.futures.b.a(f35001d, this, d02, z0Var)) {
                         break;
                     }
                 } else {
-                    w0(pVar);
+                    x0(pVar);
                 }
-            } else if (c02 instanceof w0) {
-                w0 w0Var = (w0) c02;
+            } else if (d02 instanceof w0) {
+                w0 w0Var = (w0) d02;
                 d1 b10 = w0Var.b();
                 if (b10 == null) {
-                    Intrinsics.checkNotNull(c02, "null cannot be cast to non-null type kotlinx.coroutines.JobNode");
-                    x0((z0) c02);
+                    Intrinsics.checkNotNull(d02, "null cannot be cast to non-null type kotlinx.coroutines.JobNode");
+                    y0((z0) d02);
                 } else {
                     if (z0Var.v()) {
                         if (w0Var instanceof c) {
@@ -1253,7 +1333,7 @@ public class b0 implements Job, js.o, g1 {
                             if (z10) {
                                 z0Var.w(th3);
                             }
-                            return e1.f31956d;
+                            return e1.f38918d;
                         }
                     } else {
                         c10 = b10.c(z0Var, 1);
@@ -1271,91 +1351,74 @@ public class b0 implements Job, js.o, g1 {
             return z0Var;
         }
         if (z10) {
-            Object c03 = c0();
-            if (c03 instanceof js.r) {
-                rVar = (js.r) c03;
+            Object d03 = d0();
+            if (d03 instanceof ms.r) {
+                rVar = (ms.r) d03;
             } else {
                 rVar = null;
             }
             if (rVar != null) {
-                th2 = rVar.f31981a;
+                th2 = rVar.f38943a;
             }
             z0Var.w(th2);
         }
-        return e1.f31956d;
-    }
-
-    @Override // kotlinx.coroutines.Job
-    public final boolean isCancelled() {
-        Object c02 = c0();
-        if (!(c02 instanceof js.r)) {
-            if (!(c02 instanceof c) || !((c) c02).j()) {
-                return false;
-            }
-            return true;
-        }
-        return true;
-    }
-
-    @Override // kotlinx.coroutines.Job
-    public final boolean isCompleted() {
-        return !(c0() instanceof w0);
-    }
-
-    protected boolean j0() {
-        return false;
+        return e1.f38918d;
     }
 
     @Override // kotlin.coroutines.CoroutineContext.Element, kotlin.coroutines.CoroutineContext
-    public CoroutineContext.Element l(CoroutineContext.b bVar) {
+    public CoroutineContext.Element k(CoroutineContext.b bVar) {
         return Job.a.c(this, bVar);
     }
 
-    public final boolean n0(Object obj) {
-        Object N0;
-        os.e0 e0Var;
-        os.e0 e0Var2;
+    protected boolean k0() {
+        return false;
+    }
+
+    public final boolean o0(Object obj) {
+        Object M0;
+        rs.e0 e0Var;
+        rs.e0 e0Var2;
         do {
-            N0 = N0(c0(), obj);
-            e0Var = c0.f35494a;
-            if (N0 == e0Var) {
+            M0 = M0(d0(), obj);
+            e0Var = c0.f35018a;
+            if (M0 == e0Var) {
                 return false;
             }
-            if (N0 != c0.f35495b) {
-                e0Var2 = c0.f35496c;
+            if (M0 != c0.f35019b) {
+                e0Var2 = c0.f35020c;
             } else {
                 return true;
             }
-        } while (N0 == e0Var2);
-        C(N0);
+        } while (M0 == e0Var2);
+        C(M0);
         return true;
     }
 
-    public final Object o0(Object obj) {
-        Object N0;
-        os.e0 e0Var;
-        os.e0 e0Var2;
+    public final Object p0(Object obj) {
+        Object M0;
+        rs.e0 e0Var;
+        rs.e0 e0Var2;
         do {
-            N0 = N0(c0(), obj);
-            e0Var = c0.f35494a;
-            if (N0 != e0Var) {
-                e0Var2 = c0.f35496c;
+            M0 = M0(d0(), obj);
+            e0Var = c0.f35018a;
+            if (M0 != e0Var) {
+                e0Var2 = c0.f35020c;
             } else {
                 throw new IllegalStateException("Job " + this + " is already complete or completing, but is being completed with " + obj, U(obj));
             }
-        } while (N0 == e0Var2);
-        return N0;
+        } while (M0 == e0Var2);
+        return M0;
     }
 
-    public String p0() {
-        return js.e0.a(this);
+    public String q0() {
+        return ms.e0.a(this);
     }
 
     @Override // kotlinx.coroutines.Job
     public final boolean start() {
         int B0;
         do {
-            B0 = B0(c0());
+            B0 = B0(d0());
             if (B0 == 0) {
                 return false;
             }
@@ -1363,115 +1426,52 @@ public class b0 implements Job, js.o, g1 {
         return true;
     }
 
-    protected void t0(Throwable th2) {
-    }
-
     public String toString() {
-        return H0() + '@' + js.e0.b(this);
+        return H0() + '@' + ms.e0.b(this);
     }
 
-    protected void u0(Object obj) {
+    protected void u0(Throwable th2) {
     }
 
-    protected void v0() {
+    protected void v0(Object obj) {
     }
 
-    @Override // kotlinx.coroutines.Job
-    public final js.n x1(js.o oVar) {
-        js.r rVar;
-        js.r rVar2;
-        g gVar = new g(oVar);
-        gVar.x(this);
-        while (true) {
-            Object c02 = c0();
-            if (c02 instanceof p) {
-                p pVar = (p) c02;
-                if (pVar.a()) {
-                    if (androidx.concurrent.futures.b.a(f35477d, this, c02, gVar)) {
-                        return gVar;
-                    }
-                } else {
-                    w0(pVar);
-                }
-            } else {
-                Throwable th2 = null;
-                if (c02 instanceof w0) {
-                    d1 b10 = ((w0) c02).b();
-                    if (b10 == null) {
-                        Intrinsics.checkNotNull(c02, "null cannot be cast to non-null type kotlinx.coroutines.JobNode");
-                        x0((z0) c02);
-                    } else {
-                        if (!b10.c(gVar, 7)) {
-                            boolean c10 = b10.c(gVar, 3);
-                            Object c03 = c0();
-                            if (c03 instanceof c) {
-                                th2 = ((c) c03).f();
-                            } else {
-                                if (c03 instanceof js.r) {
-                                    rVar2 = (js.r) c03;
-                                } else {
-                                    rVar2 = null;
-                                }
-                                if (rVar2 != null) {
-                                    th2 = rVar2.f31981a;
-                                }
-                            }
-                            gVar.w(th2);
-                            if (!c10) {
-                                return e1.f31956d;
-                            }
-                        }
-                        return gVar;
-                    }
-                } else {
-                    Object c04 = c0();
-                    if (c04 instanceof js.r) {
-                        rVar = (js.r) c04;
-                    } else {
-                        rVar = null;
-                    }
-                    if (rVar != null) {
-                        th2 = rVar.f31981a;
-                    }
-                    gVar.w(th2);
-                    return e1.f31956d;
-                }
-            }
-        }
+    protected void w0() {
     }
 
-    public final void y0(z0 z0Var) {
-        Object c02;
+    @Override // kotlin.coroutines.CoroutineContext
+    public CoroutineContext x1(CoroutineContext.b bVar) {
+        return Job.a.d(this, bVar);
+    }
+
+    @Override // ms.o
+    public final void y1(g1 g1Var) {
+        H(g1Var);
+    }
+
+    public final void z0(z0 z0Var) {
+        Object d02;
         AtomicReferenceFieldUpdater atomicReferenceFieldUpdater;
         p pVar;
         do {
-            c02 = c0();
-            if (c02 instanceof z0) {
-                if (c02 == z0Var) {
-                    atomicReferenceFieldUpdater = f35477d;
-                    pVar = c0.f35500g;
+            d02 = d0();
+            if (d02 instanceof z0) {
+                if (d02 == z0Var) {
+                    atomicReferenceFieldUpdater = f35001d;
+                    pVar = c0.f35024g;
                 } else {
                     return;
                 }
-            } else if ((c02 instanceof w0) && ((w0) c02).b() != null) {
+            } else if ((d02 instanceof w0) && ((w0) d02).b() != null) {
                 z0Var.r();
                 return;
             } else {
                 return;
             }
-        } while (!androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, this, c02, pVar));
+        } while (!androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, this, d02, pVar));
     }
 
-    @Override // kotlin.coroutines.CoroutineContext
-    public Object y1(Object obj, Function2 function2) {
-        return Job.a.b(this, obj, function2);
-    }
-
-    public final void z0(js.n nVar) {
-        f35478e.set(this, nVar);
-    }
-
-    public void g0(Throwable th2) {
+    public void h0(Throwable th2) {
         throw th2;
     }
 }

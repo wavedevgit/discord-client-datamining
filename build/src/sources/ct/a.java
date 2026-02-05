@@ -1,93 +1,74 @@
 package ct;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import kotlin.collections.CollectionsKt;
+import kotlin.Lazy;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.Reflection;
+import kotlin.reflect.KClass;
+import kotlinx.serialization.DeserializationStrategy;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.SealedClassSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Encoder;
+import or.l;
+import or.o;
+import ws.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a {
+public final class a extends gt.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f19822a;
+    public static final a f20010a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private List f19823b;
+    private static final Lazy f20011b = l.b(o.f44232e, C0273a.f20012d);
 
-    /* renamed from: c  reason: collision with root package name */
-    private final List f19824c;
+    /* renamed from: ct.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class C0273a extends Lambda implements Function0 {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final Set f19825d;
+        /* renamed from: d  reason: collision with root package name */
+        public static final C0273a f20012d = new C0273a();
 
-    /* renamed from: e  reason: collision with root package name */
-    private final List f19826e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final List f19827f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private final List f19828g;
-
-    public a(String serialName) {
-        Intrinsics.checkNotNullParameter(serialName, "serialName");
-        this.f19822a = serialName;
-        this.f19823b = CollectionsKt.l();
-        this.f19824c = new ArrayList();
-        this.f19825d = new HashSet();
-        this.f19826e = new ArrayList();
-        this.f19827f = new ArrayList();
-        this.f19828g = new ArrayList();
-    }
-
-    public static /* synthetic */ void b(a aVar, String str, SerialDescriptor serialDescriptor, List list, boolean z10, int i10, Object obj) {
-        if ((i10 & 4) != 0) {
-            list = CollectionsKt.l();
+        C0273a() {
+            super(0);
         }
-        if ((i10 & 8) != 0) {
-            z10 = false;
+
+        @Override // kotlin.jvm.functions.Function0
+        /* renamed from: a */
+        public final SealedClassSerializer invoke() {
+            return new SealedClassSerializer("kotlinx.datetime.DateTimeUnit.DateBased", Reflection.getOrCreateKotlinClass(c.b.class), new KClass[]{Reflection.getOrCreateKotlinClass(c.C0706c.class), Reflection.getOrCreateKotlinClass(c.d.class)}, new KSerializer[]{d.f20016a, h.f20026a});
         }
-        aVar.a(str, serialDescriptor, list, z10);
     }
 
-    public final void a(String elementName, SerialDescriptor descriptor, List annotations, boolean z10) {
-        Intrinsics.checkNotNullParameter(elementName, "elementName");
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        Intrinsics.checkNotNullParameter(annotations, "annotations");
-        if (this.f19825d.add(elementName)) {
-            this.f19824c.add(elementName);
-            this.f19826e.add(descriptor);
-            this.f19827f.add(annotations);
-            this.f19828g.add(Boolean.valueOf(z10));
-            return;
-        }
-        throw new IllegalArgumentException(("Element with name '" + elementName + "' is already registered in " + this.f19822a).toString());
+    private a() {
     }
 
-    public final List c() {
-        return this.f19823b;
+    private final SealedClassSerializer g() {
+        return (SealedClassSerializer) f20011b.getValue();
     }
 
-    public final List d() {
-        return this.f19827f;
+    @Override // gt.b
+    public DeserializationStrategy d(kotlinx.serialization.encoding.c decoder, String str) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        return g().d(decoder, str);
     }
 
-    public final List e() {
-        return this.f19826e;
+    @Override // gt.b
+    public KClass e() {
+        return Reflection.getOrCreateKotlinClass(c.b.class);
     }
 
-    public final List f() {
-        return this.f19824c;
+    @Override // gt.b
+    /* renamed from: f */
+    public dt.o c(Encoder encoder, c.b value) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        Intrinsics.checkNotNullParameter(value, "value");
+        return g().c(encoder, value);
     }
 
-    public final List g() {
-        return this.f19828g;
-    }
-
-    public final void h(List list) {
-        Intrinsics.checkNotNullParameter(list, "<set-?>");
-        this.f19823b = list;
+    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return g().getDescriptor();
     }
 }

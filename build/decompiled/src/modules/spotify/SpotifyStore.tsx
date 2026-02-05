@@ -4086,4 +4086,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.SpotifySocket = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [15, 17, 18, 6, 7, 3483, 1216, 4519, 4229, 3610, 3949, 3521, 5649, 660, 4395, 667, 3, 3630, 806, 22, 5650, 561, 795, 628, 5653, 3955, 1304, 5654, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [15, 17, 18, 6, 7, 3483, 1216, 4519, 4229, 3610, 3949, 3521, 5653, 660, 4395, 667, 3, 3630, 806, 22, 5654, 561, 795, 628, 5657, 3955, 1304, 5658, 566, 2]);

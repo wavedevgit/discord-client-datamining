@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ClydeHeadsetSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6054, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6058, 2]);

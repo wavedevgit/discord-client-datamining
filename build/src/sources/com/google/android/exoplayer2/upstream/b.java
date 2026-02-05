@@ -18,49 +18,49 @@ import ne.y;
 public final class b implements DataSource {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f12964a;
+    private final Context f13349a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f12965b = new ArrayList();
+    private final List f13350b = new ArrayList();
 
     /* renamed from: c  reason: collision with root package name */
-    private final DataSource f12966c;
+    private final DataSource f13351c;
 
     /* renamed from: d  reason: collision with root package name */
-    private DataSource f12967d;
+    private DataSource f13352d;
 
     /* renamed from: e  reason: collision with root package name */
-    private DataSource f12968e;
+    private DataSource f13353e;
 
     /* renamed from: f  reason: collision with root package name */
-    private DataSource f12969f;
+    private DataSource f13354f;
 
     /* renamed from: g  reason: collision with root package name */
-    private DataSource f12970g;
+    private DataSource f13355g;
 
     /* renamed from: h  reason: collision with root package name */
-    private DataSource f12971h;
+    private DataSource f13356h;
 
     /* renamed from: i  reason: collision with root package name */
-    private DataSource f12972i;
+    private DataSource f13357i;
 
     /* renamed from: j  reason: collision with root package name */
-    private DataSource f12973j;
+    private DataSource f13358j;
 
     /* renamed from: k  reason: collision with root package name */
-    private DataSource f12974k;
+    private DataSource f13359k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a implements DataSource.Factory {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f12975a;
+        private final Context f13360a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final DataSource.Factory f12976b;
+        private final DataSource.Factory f13361b;
 
         /* renamed from: c  reason: collision with root package name */
-        private c0 f12977c;
+        private c0 f13362c;
 
         public a(Context context) {
             this(context, new DefaultHttpDataSource.Factory());
@@ -69,8 +69,8 @@ public final class b implements DataSource {
         @Override // com.google.android.exoplayer2.upstream.DataSource.Factory
         /* renamed from: a */
         public b createDataSource() {
-            b bVar = new b(this.f12975a, this.f12976b.createDataSource());
-            c0 c0Var = this.f12977c;
+            b bVar = new b(this.f13360a, this.f13361b.createDataSource());
+            c0 c0Var = this.f13362c;
             if (c0Var != null) {
                 bVar.j(c0Var);
             }
@@ -78,92 +78,92 @@ public final class b implements DataSource {
         }
 
         public a(Context context, DataSource.Factory factory) {
-            this.f12975a = context.getApplicationContext();
-            this.f12976b = factory;
+            this.f13360a = context.getApplicationContext();
+            this.f13361b = factory;
         }
     }
 
     public b(Context context, DataSource dataSource) {
-        this.f12964a = context.getApplicationContext();
-        this.f12966c = (DataSource) ne.a.e(dataSource);
+        this.f13349a = context.getApplicationContext();
+        this.f13351c = (DataSource) ne.a.e(dataSource);
     }
 
     private void o(DataSource dataSource) {
-        for (int i10 = 0; i10 < this.f12965b.size(); i10++) {
-            dataSource.j((c0) this.f12965b.get(i10));
+        for (int i10 = 0; i10 < this.f13350b.size(); i10++) {
+            dataSource.j((c0) this.f13350b.get(i10));
         }
     }
 
     private DataSource p() {
-        if (this.f12968e == null) {
-            le.c cVar = new le.c(this.f12964a);
-            this.f12968e = cVar;
+        if (this.f13353e == null) {
+            le.c cVar = new le.c(this.f13349a);
+            this.f13353e = cVar;
             o(cVar);
         }
-        return this.f12968e;
+        return this.f13353e;
     }
 
     private DataSource q() {
-        if (this.f12969f == null) {
-            le.i iVar = new le.i(this.f12964a);
-            this.f12969f = iVar;
+        if (this.f13354f == null) {
+            le.i iVar = new le.i(this.f13349a);
+            this.f13354f = iVar;
             o(iVar);
         }
-        return this.f12969f;
+        return this.f13354f;
     }
 
     private DataSource r() {
-        if (this.f12972i == null) {
+        if (this.f13357i == null) {
             le.k kVar = new le.k();
-            this.f12972i = kVar;
+            this.f13357i = kVar;
             o(kVar);
         }
-        return this.f12972i;
+        return this.f13357i;
     }
 
     private DataSource s() {
-        if (this.f12967d == null) {
+        if (this.f13352d == null) {
             s sVar = new s();
-            this.f12967d = sVar;
+            this.f13352d = sVar;
             o(sVar);
         }
-        return this.f12967d;
+        return this.f13352d;
     }
 
     private DataSource t() {
-        if (this.f12973j == null) {
-            w wVar = new w(this.f12964a);
-            this.f12973j = wVar;
+        if (this.f13358j == null) {
+            w wVar = new w(this.f13349a);
+            this.f13358j = wVar;
             o(wVar);
         }
-        return this.f12973j;
+        return this.f13358j;
     }
 
     private DataSource u() {
-        if (this.f12970g == null) {
+        if (this.f13355g == null) {
             try {
                 DataSource dataSource = (DataSource) Class.forName("com.google.android.exoplayer2.ext.rtmp.RtmpDataSource").getConstructor(null).newInstance(null);
-                this.f12970g = dataSource;
+                this.f13355g = dataSource;
                 o(dataSource);
             } catch (ClassNotFoundException unused) {
                 y.i("DefaultDataSource", "Attempting to play RTMP stream without depending on the RTMP extension");
             } catch (Exception e10) {
                 throw new RuntimeException("Error instantiating RTMP extension", e10);
             }
-            if (this.f12970g == null) {
-                this.f12970g = this.f12966c;
+            if (this.f13355g == null) {
+                this.f13355g = this.f13351c;
             }
         }
-        return this.f12970g;
+        return this.f13355g;
     }
 
     private DataSource v() {
-        if (this.f12971h == null) {
+        if (this.f13356h == null) {
             d0 d0Var = new d0();
-            this.f12971h = d0Var;
+            this.f13356h = d0Var;
             o(d0Var);
         }
-        return this.f12971h;
+        return this.f13356h;
     }
 
     private void w(DataSource dataSource, c0 c0Var) {
@@ -175,53 +175,53 @@ public final class b implements DataSource {
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public long b(com.google.android.exoplayer2.upstream.a aVar) {
         boolean z10;
-        if (this.f12974k == null) {
+        if (this.f13359k == null) {
             z10 = true;
         } else {
             z10 = false;
         }
         ne.a.g(z10);
-        String scheme = aVar.f12943a.getScheme();
-        if (w0.G0(aVar.f12943a)) {
-            String path = aVar.f12943a.getPath();
+        String scheme = aVar.f13328a.getScheme();
+        if (w0.G0(aVar.f13328a)) {
+            String path = aVar.f13328a.getPath();
             if (path != null && path.startsWith("/android_asset/")) {
-                this.f12974k = p();
+                this.f13359k = p();
             } else {
-                this.f12974k = s();
+                this.f13359k = s();
             }
         } else if ("asset".equals(scheme)) {
-            this.f12974k = p();
+            this.f13359k = p();
         } else if ("content".equals(scheme)) {
-            this.f12974k = q();
+            this.f13359k = q();
         } else if ("rtmp".equals(scheme)) {
-            this.f12974k = u();
+            this.f13359k = u();
         } else if ("udp".equals(scheme)) {
-            this.f12974k = v();
+            this.f13359k = v();
         } else if ("data".equals(scheme)) {
-            this.f12974k = r();
+            this.f13359k = r();
         } else if (!"rawresource".equals(scheme) && !"android.resource".equals(scheme)) {
-            this.f12974k = this.f12966c;
+            this.f13359k = this.f13351c;
         } else {
-            this.f12974k = t();
+            this.f13359k = t();
         }
-        return this.f12974k.b(aVar);
+        return this.f13359k.b(aVar);
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void close() {
-        DataSource dataSource = this.f12974k;
+        DataSource dataSource = this.f13359k;
         if (dataSource != null) {
             try {
                 dataSource.close();
             } finally {
-                this.f12974k = null;
+                this.f13359k = null;
             }
         }
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Map d() {
-        DataSource dataSource = this.f12974k;
+        DataSource dataSource = this.f13359k;
         if (dataSource == null) {
             return Collections.EMPTY_MAP;
         }
@@ -231,20 +231,20 @@ public final class b implements DataSource {
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void j(c0 c0Var) {
         ne.a.e(c0Var);
-        this.f12966c.j(c0Var);
-        this.f12965b.add(c0Var);
-        w(this.f12967d, c0Var);
-        w(this.f12968e, c0Var);
-        w(this.f12969f, c0Var);
-        w(this.f12970g, c0Var);
-        w(this.f12971h, c0Var);
-        w(this.f12972i, c0Var);
-        w(this.f12973j, c0Var);
+        this.f13351c.j(c0Var);
+        this.f13350b.add(c0Var);
+        w(this.f13352d, c0Var);
+        w(this.f13353e, c0Var);
+        w(this.f13354f, c0Var);
+        w(this.f13355g, c0Var);
+        w(this.f13356h, c0Var);
+        w(this.f13357i, c0Var);
+        w(this.f13358j, c0Var);
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Uri m() {
-        DataSource dataSource = this.f12974k;
+        DataSource dataSource = this.f13359k;
         if (dataSource == null) {
             return null;
         }
@@ -253,6 +253,6 @@ public final class b implements DataSource {
 
     @Override // le.j
     public int read(byte[] bArr, int i10, int i11) {
-        return ((DataSource) ne.a.e(this.f12974k)).read(bArr, i10, i11);
+        return ((DataSource) ne.a.e(this.f13359k)).read(bArr, i10, i11);
     }
 }

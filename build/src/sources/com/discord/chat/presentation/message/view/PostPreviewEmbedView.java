@@ -84,10 +84,10 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         backgroundImage.setVisibility(i11);
         if (str != null && !StringsKt.k0(str)) {
             if (str3 != null && !StringsKt.k0(str3)) {
-                ((GenericDraweeHierarchy) this.binding.coverImage.getHierarchy()).t(ScalingUtils$ScaleType.f9634e);
+                ((GenericDraweeHierarchy) this.binding.coverImage.getHierarchy()).t(ScalingUtils$ScaleType.f10019e);
                 this.binding.backgroundImage.setImageURI(str3);
             } else {
-                ((GenericDraweeHierarchy) this.binding.coverImage.getHierarchy()).t(ScalingUtils$ScaleType.f9638i);
+                ((GenericDraweeHierarchy) this.binding.coverImage.getHierarchy()).t(ScalingUtils$ScaleType.f10023i);
             }
             this.binding.coverImage.setImageURI(str);
         } else if (str2 != null && !StringsKt.k0(str2)) {

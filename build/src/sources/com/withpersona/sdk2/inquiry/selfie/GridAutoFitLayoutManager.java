@@ -12,19 +12,19 @@ import kotlin.ranges.d;
 public final class GridAutoFitLayoutManager extends GridLayoutManager {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f19023d;
+    private int f19429d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f19024e;
+    private boolean f19430e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f19025i;
+    private int f19431i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public GridAutoFitLayoutManager(Context context, int i10) {
         super(context, 1);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f19024e = true;
+        this.f19430e = true;
         l0(k0(context, i10));
     }
 
@@ -36,9 +36,9 @@ public final class GridAutoFitLayoutManager extends GridLayoutManager {
     }
 
     private final void l0(int i10) {
-        if (i10 > 0 && i10 != this.f19023d) {
-            this.f19023d = i10;
-            this.f19024e = true;
+        if (i10 > 0 && i10 != this.f19429d) {
+            this.f19429d = i10;
+            this.f19430e = true;
         }
     }
 
@@ -55,10 +55,10 @@ public final class GridAutoFitLayoutManager extends GridLayoutManager {
             paddingBottom = getPaddingBottom();
         }
         int i10 = height - paddingBottom;
-        if ((this.f19024e && this.f19023d > 0) || i10 != this.f19025i) {
-            setSpanCount(d.d(1, i10 / this.f19023d));
-            this.f19024e = false;
-            this.f19025i = i10;
+        if ((this.f19430e && this.f19429d > 0) || i10 != this.f19431i) {
+            setSpanCount(d.d(1, i10 / this.f19429d));
+            this.f19430e = false;
+            this.f19431i = i10;
         }
         super.onLayoutChildren(recycler, state);
     }

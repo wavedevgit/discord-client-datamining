@@ -3,13 +3,13 @@ package com.facebook.imagepipeline.nativecode;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static boolean f10266a;
+    private static boolean f10651a;
 
     public static synchronized void a() {
         synchronized (f.class) {
-            if (!f10266a) {
+            if (!f10651a) {
                 nb.a.d("static-webp");
-                f10266a = true;
+                f10651a = true;
             }
         }
     }

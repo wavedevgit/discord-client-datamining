@@ -12,39 +12,39 @@ import org.jetbrains.annotations.NotNull;
 public final class MetadataJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19421a;
+    private final m.b f19827a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19422b;
+    private final h f19828b;
 
     public MetadataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("oneTimeLinkCode");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19421a = a10;
+        this.f19827a = a10;
         h f10 = moshi.f(String.class, x0.d(), "oneTimeLinkCode");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19422b = f10;
+        this.f19828b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public Metadata fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f19421a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    str = (String) this.f19422b.fromJson(reader);
+            int W = reader.W(this.f19827a);
+            if (W != -1) {
+                if (W == 0) {
+                    str = (String) this.f19828b.fromJson(reader);
                 }
             } else {
                 reader.E0();
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         return new Metadata(str);
     }
 
@@ -53,9 +53,9 @@ public final class MetadataJsonAdapter extends h {
     public void toJson(t writer, Metadata metadata) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (metadata != null) {
-            writer.l();
-            writer.A0("oneTimeLinkCode");
-            this.f19422b.toJson(writer, metadata.a());
+            writer.k();
+            writer.W("oneTimeLinkCode");
+            this.f19828b.toJson(writer, metadata.a());
             writer.E();
             return;
         }

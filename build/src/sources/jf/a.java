@@ -11,7 +11,7 @@ public final class a extends fg.a implements IInterface {
         super(iBinder, "com.google.android.gms.common.internal.service.IClientTelemetryService");
     }
 
-    public final void S0(u uVar) {
+    public final void W0(u uVar) {
         Parcel e10 = e();
         fg.c.c(e10, uVar);
         h(1, e10);

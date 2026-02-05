@@ -29,7 +29,7 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
-import lr.p;
+import or.p;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u001e\n\u0002\u0010!\n\u0002\b\u0005\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u008b\u0001\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u001e\u0010\t\u001a\u001a\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\b0\u0005\u0012\u001a\u0010\u000b\u001a\u0016\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b\u0018\u00010\n\u0012\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\f\u0012\u0012\u0010\u000f\u001a\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\b0\f\u0012\u0016\u0010\u0012\u001a\u0012\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\b0\fj\u0002`\u0011¢\u0006\u0004\b\u0013\u0010\u0014J'\u0010\u0019\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u00102\u0006\u0010\u0016\u001a\u00020\u00062\u0006\u0010\u0018\u001a\u00020\u0017H\u0007¢\u0006\u0004\b\u0019\u0010\u001aJ\u001f\u0010\u001f\u001a\u00020\u00022\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010\u001e\u001a\u00020\u001dH\u0016¢\u0006\u0004\b\u001f\u0010 J\u0017\u0010\"\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\u001dH\u0016¢\u0006\u0004\b\"\u0010#J\u001f\u0010%\u001a\u00020\b2\u0006\u0010$\u001a\u00020\u00022\u0006\u0010!\u001a\u00020\u001dH\u0016¢\u0006\u0004\b%\u0010&J\u000f\u0010'\u001a\u00020\u001dH\u0016¢\u0006\u0004\b'\u0010(R\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0004\u0010)R,\u0010\t\u001a\u001a\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\b0\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\t\u0010*R(\u0010\u000b\u001a\u0016\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b\u0018\u00010\n8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000b\u0010+R \u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\f8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\r\u0010,R \u0010\u000f\u001a\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\b0\f8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000f\u0010,R$\u0010\u0012\u001a\u0012\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\b0\fj\u0002`\u00118\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010,R\"\u0010\u0015\u001a\u00020\u00108\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b\u0015\u0010-\u001a\u0004\b.\u0010/\"\u0004\b0\u00101R$\u0010\u0016\u001a\u0004\u0018\u00010\u00068\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b\u0016\u00102\u001a\u0004\b3\u00104\"\u0004\b5\u00106R$\u0010\u0018\u001a\u0004\u0018\u00010\u00178\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b\u0018\u00107\u001a\u0004\b8\u00109\"\u0004\b:\u0010;R\u001d\u0010=\u001a\b\u0012\u0004\u0012\u00020\u00070<8\u0006¢\u0006\f\n\u0004\b=\u0010>\u001a\u0004\b?\u0010@¨\u0006A"}, d2 = {"Lcom/discord/chat/presentation/message/view/botuikit/components/media_gallery/MediaGalleryDisplayComponentAdapter;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Lcom/discord/chat/presentation/message/viewholder/MessagePartViewHolder;", "Landroid/content/Context;", "context", "Lkotlin/Function3;", "Lcom/discord/chat/bridge/botuikit/MediaGalleryDisplayComponent;", "Lcom/discord/chat/bridge/botuikit/MediaGalleryItem;", "", "onItemClicked", "Lkotlin/Function2;", "onItemLongClicked", "Lkotlin/Function1;", "onItemSpoilerClicked", "", "onItemObscureToggle", "", "Lcom/discord/chat/presentation/events/MessageTapShowAltText;", "onAltText", "<init>", "(Landroid/content/Context;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "containerId", "component", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentContext;", "componentContext", "setMediaItems", "(Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/MediaGalleryDisplayComponent;Lcom/discord/chat/presentation/message/view/botuikit/ComponentContext;)V", "Landroid/view/ViewGroup;", "parent", "", "viewType", "onCreateViewHolder", "(Landroid/view/ViewGroup;I)Lcom/discord/chat/presentation/message/viewholder/MessagePartViewHolder;", ViewProps.POSITION, "getItemViewType", "(I)I", "holder", "onBindViewHolder", "(Lcom/discord/chat/presentation/message/viewholder/MessagePartViewHolder;I)V", "getItemCount", "()I", "Landroid/content/Context;", "Lkotlin/jvm/functions/Function3;", "Lkotlin/jvm/functions/Function2;", "Lkotlin/jvm/functions/Function1;", "Ljava/lang/String;", "getContainerId", "()Ljava/lang/String;", "setContainerId", "(Ljava/lang/String;)V", "Lcom/discord/chat/bridge/botuikit/MediaGalleryDisplayComponent;", "getComponent", "()Lcom/discord/chat/bridge/botuikit/MediaGalleryDisplayComponent;", "setComponent", "(Lcom/discord/chat/bridge/botuikit/MediaGalleryDisplayComponent;)V", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentContext;", "getComponentContext", "()Lcom/discord/chat/presentation/message/view/botuikit/ComponentContext;", "setComponentContext", "(Lcom/discord/chat/presentation/message/view/botuikit/ComponentContext;)V", "", AlertFragment.ARG_ITEMS, "Ljava/util/List;", "getItems", "()Ljava/util/List;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -114,13 +114,13 @@ public final class MediaGalleryDisplayComponentAdapter extends RecyclerView.Adap
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$2(MediaGalleryDisplayComponentAdapter mediaGalleryDisplayComponentAdapter, MediaGalleryItem mediaGalleryItem) {
         mediaGalleryDisplayComponentAdapter.onItemSpoilerClicked.invoke(mediaGalleryItem);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$3(MediaGalleryDisplayComponentAdapter mediaGalleryDisplayComponentAdapter, boolean z10) {
         mediaGalleryDisplayComponentAdapter.onItemObscureToggle.invoke(Boolean.valueOf(z10));
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -132,7 +132,7 @@ public final class MediaGalleryDisplayComponentAdapter extends RecyclerView.Adap
             description = "";
         }
         function1.invoke(description);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -153,13 +153,13 @@ public final class MediaGalleryDisplayComponentAdapter extends RecyclerView.Adap
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$7(MediaGalleryDisplayComponentAdapter mediaGalleryDisplayComponentAdapter, MediaGalleryItem mediaGalleryItem) {
         mediaGalleryDisplayComponentAdapter.onItemSpoilerClicked.invoke(mediaGalleryItem);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$8(MediaGalleryDisplayComponentAdapter mediaGalleryDisplayComponentAdapter, boolean z10) {
         mediaGalleryDisplayComponentAdapter.onItemObscureToggle.invoke(Boolean.valueOf(z10));
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -171,7 +171,7 @@ public final class MediaGalleryDisplayComponentAdapter extends RecyclerView.Adap
             description = "";
         }
         function1.invoke(description);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public final MediaGalleryDisplayComponent getComponent() {

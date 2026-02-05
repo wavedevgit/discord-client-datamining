@@ -1,46 +1,30 @@
 package lu;
 
-import java.io.File;
-import java.io.InputStream;
-import java.io.OutputStream;
-import kotlin.jvm.internal.Intrinsics;
-import okio.BufferedSink;
-import okio.BufferedSource;
-import okio.Sink;
-import okio.Source;
+import java.io.IOException;
+import java.net.Proxy;
+import java.net.ProxySelector;
+import java.net.SocketAddress;
+import java.net.URI;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a {
+public final class a extends ProxySelector {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f37255a = new a();
+    public static final a f37211a = new a();
 
     private a() {
     }
 
-    public final BufferedSink a(Sink sink) {
-        Intrinsics.checkNotNullParameter(sink, "sink");
-        return x.c(sink);
+    @Override // java.net.ProxySelector
+    public List select(URI uri) {
+        if (uri != null) {
+            return CollectionsKt.e(Proxy.NO_PROXY);
+        }
+        throw new IllegalArgumentException("uri must not be null");
     }
 
-    public final BufferedSource b(Source source) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        return x.d(source);
-    }
-
-    public final Sink c(File file) {
-        Sink g10;
-        Intrinsics.checkNotNullParameter(file, "file");
-        g10 = y.g(file, false, 1, null);
-        return g10;
-    }
-
-    public final Sink d(OutputStream outputStream) {
-        Intrinsics.checkNotNullParameter(outputStream, "outputStream");
-        return x.g(outputStream);
-    }
-
-    public final Source e(InputStream inputStream) {
-        Intrinsics.checkNotNullParameter(inputStream, "inputStream");
-        return x.k(inputStream);
+    @Override // java.net.ProxySelector
+    public void connectFailed(URI uri, SocketAddress socketAddress, IOException iOException) {
     }
 }

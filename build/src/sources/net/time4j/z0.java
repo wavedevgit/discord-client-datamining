@@ -3,7 +3,7 @@ package net.time4j;
 final class z0 extends a implements d0 {
 
     /* renamed from: o  reason: collision with root package name */
-    static final z0 f40857o = new z0();
+    static final z0 f40317o = new z0();
     private static final long serialVersionUID = -2378018589067147278L;
 
     private z0() {
@@ -11,43 +11,43 @@ final class z0 extends a implements d0 {
     }
 
     private Object readResolve() {
-        return f40857o;
+        return f40317o;
     }
 
-    @Override // mt.p
-    public boolean C() {
+    @Override // pt.p
+    public boolean B() {
         return false;
     }
 
-    @Override // mt.e
+    @Override // pt.e
     protected boolean E() {
         return true;
     }
 
-    @Override // mt.p
+    @Override // pt.p
     /* renamed from: G */
-    public Integer f() {
+    public Integer e() {
         return 5;
     }
 
-    @Override // mt.p
+    @Override // pt.p
     /* renamed from: H */
     public Integer A() {
         return 1;
     }
 
-    @Override // mt.e, mt.p
+    @Override // pt.e, pt.p
     public char d() {
         return 'F';
     }
 
-    @Override // mt.p
+    @Override // pt.p
     public Class getType() {
         return Integer.class;
     }
 
-    @Override // mt.p
-    public boolean y() {
+    @Override // pt.p
+    public boolean z() {
         return true;
     }
 }

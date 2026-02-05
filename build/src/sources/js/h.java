@@ -1,46 +1,34 @@
 package js;
 
-import kotlin.coroutines.CoroutineContext;
-import kotlin.jvm.functions.Function2;
+import java.lang.reflect.Member;
+import java.lang.reflect.Type;
+import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract /* synthetic */ class h {
-    public static final Object a(CoroutineContext coroutineContext, Function2 function2) {
-        p0 p0Var;
-        p0 a10;
-        CoroutineContext k10;
-        Thread currentThread = Thread.currentThread();
-        kotlin.coroutines.d dVar = (kotlin.coroutines.d) coroutineContext.l(kotlin.coroutines.d.f32536g);
-        if (dVar == null) {
-            a10 = l1.f31964a.b();
-            k10 = x.k(v0.f31994d, coroutineContext.V0(a10));
-        } else {
-            p0 p0Var2 = null;
-            if (dVar instanceof p0) {
-                p0Var = (p0) dVar;
-            } else {
-                p0Var = null;
+public interface h {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static void a(h hVar, Object[] args) {
+            Intrinsics.checkNotNullParameter(args, "args");
+            if (j.a(hVar) == args.length) {
+                return;
             }
-            if (p0Var != null) {
-                if (p0Var.v2()) {
-                    p0Var2 = p0Var;
-                }
-                if (p0Var2 != null) {
-                    a10 = p0Var2;
-                    k10 = x.k(v0.f31994d, coroutineContext);
-                }
-            }
-            a10 = l1.f31964a.a();
-            k10 = x.k(v0.f31994d, coroutineContext);
+            throw new IllegalArgumentException("Callable expects " + j.a(hVar) + " arguments, but " + args.length + " were provided.");
         }
-        e eVar = new e(k10, currentThread, a10);
-        eVar.U0(c0.f31947d, eVar, function2);
-        return eVar.W0();
+
+        public static boolean b(h hVar) {
+            return false;
+        }
     }
 
-    public static /* synthetic */ Object b(CoroutineContext coroutineContext, Function2 function2, int i10, Object obj) {
-        if ((i10 & 1) != 0) {
-            coroutineContext = kotlin.coroutines.e.f32538d;
-        }
-        return g.e(coroutineContext, function2);
-    }
+    List a();
+
+    Member b();
+
+    boolean c();
+
+    Object call(Object[] objArr);
+
+    Type getReturnType();
 }

@@ -27,7 +27,7 @@ public final class m extends l {
         }
         m();
         l();
-        canvas.clipPath(this.f9706p);
+        canvas.clipPath(this.f10091p);
         super.draw(canvas);
         if (ya.b.d()) {
             ya.b.b();

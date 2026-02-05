@@ -22,43 +22,43 @@ import java.util.Objects;
 public final class f5 implements b5 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r.a0 f46763a;
+    private final r.a0 f46827a;
 
     /* renamed from: b  reason: collision with root package name */
-    final i0.e f46764b;
+    final i0.e f46828b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f46765c = false;
+    private boolean f46829c = false;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f46766d = false;
+    private boolean f46830d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f46767e;
+    private boolean f46831e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f46768f;
+    private boolean f46832f;
 
     /* renamed from: g  reason: collision with root package name */
-    androidx.camera.core.q f46769g;
+    androidx.camera.core.q f46833g;
 
     /* renamed from: h  reason: collision with root package name */
-    private a0.k f46770h;
+    private a0.k f46834h;
 
     /* renamed from: i  reason: collision with root package name */
-    private a0.w0 f46771i;
+    private a0.w0 f46835i;
 
     /* renamed from: j  reason: collision with root package name */
-    ImageWriter f46772j;
+    ImageWriter f46836j;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f5(r.a0 a0Var) {
-        this.f46767e = false;
-        this.f46768f = false;
-        this.f46763a = a0Var;
-        this.f46767e = g5.a(a0Var, 4);
-        this.f46768f = androidx.camera.camera2.internal.compat.quirk.b.b(ZslDisablerQuirk.class) != null;
-        this.f46764b = new i0.e(3, new i0.c() { // from class: q.d5
+        this.f46831e = false;
+        this.f46832f = false;
+        this.f46827a = a0Var;
+        this.f46831e = g5.a(a0Var, 4);
+        this.f46832f = androidx.camera.camera2.internal.compat.quirk.b.b(ZslDisablerQuirk.class) != null;
+        this.f46828b = new i0.e(3, new i0.c() { // from class: q.d5
             @Override // i0.c
             public final void a(Object obj) {
                 ((androidx.camera.core.n) obj).close();
@@ -71,7 +71,7 @@ public final class f5 implements b5 {
         try {
             androidx.camera.core.n b10 = j1Var.b();
             if (b10 != null) {
-                f5Var.f46764b.d(b10);
+                f5Var.f46828b.d(b10);
             }
         } catch (IllegalStateException e10) {
             x.y0.c("ZslControlImpl", "Failed to acquire latest image IllegalStateException = " + e10.getMessage());
@@ -79,24 +79,24 @@ public final class f5 implements b5 {
     }
 
     private void j() {
-        i0.e eVar = this.f46764b;
+        i0.e eVar = this.f46828b;
         while (!eVar.c()) {
             ((androidx.camera.core.n) eVar.a()).close();
         }
-        a0.w0 w0Var = this.f46771i;
+        a0.w0 w0Var = this.f46835i;
         if (w0Var != null) {
-            androidx.camera.core.q qVar = this.f46769g;
+            androidx.camera.core.q qVar = this.f46833g;
             if (qVar != null) {
                 w0Var.k().a(new c5(qVar), c0.a.d());
-                this.f46769g = null;
+                this.f46833g = null;
             }
             w0Var.d();
-            this.f46771i = null;
+            this.f46835i = null;
         }
-        ImageWriter imageWriter = this.f46772j;
+        ImageWriter imageWriter = this.f46836j;
         if (imageWriter != null) {
             imageWriter.close();
-            this.f46772j = null;
+            this.f46836j = null;
         }
     }
 
@@ -139,39 +139,39 @@ public final class f5 implements b5 {
 
     @Override // q.b5
     public boolean a() {
-        return this.f46765c;
+        return this.f46829c;
     }
 
     @Override // q.b5
     public void b(i2.b bVar) {
         j();
-        if (this.f46765c) {
+        if (this.f46829c) {
             bVar.x(1);
-        } else if (this.f46768f) {
+        } else if (this.f46832f) {
             bVar.x(1);
         } else {
-            Map k10 = k(this.f46763a);
-            if (this.f46767e && !k10.isEmpty() && k10.containsKey(34) && l(this.f46763a, 34)) {
+            Map k10 = k(this.f46827a);
+            if (this.f46831e && !k10.isEmpty() && k10.containsKey(34) && l(this.f46827a, 34)) {
                 Size size = (Size) k10.get(34);
                 androidx.camera.core.p pVar = new androidx.camera.core.p(size.getWidth(), size.getHeight(), 34, 9);
-                this.f46770h = pVar.m();
-                this.f46769g = new androidx.camera.core.q(pVar);
+                this.f46834h = pVar.m();
+                this.f46833g = new androidx.camera.core.q(pVar);
                 pVar.e(new j1.a() { // from class: q.e5
                     @Override // a0.j1.a
                     public final void a(a0.j1 j1Var) {
                         f5.h(f5.this, j1Var);
                     }
                 }, c0.a.c());
-                a0.k1 k1Var = new a0.k1(this.f46769g.getSurface(), new Size(this.f46769g.getWidth(), this.f46769g.getHeight()), 34);
-                this.f46771i = k1Var;
-                androidx.camera.core.q qVar = this.f46769g;
+                a0.k1 k1Var = new a0.k1(this.f46833g.getSurface(), new Size(this.f46833g.getWidth(), this.f46833g.getHeight()), 34);
+                this.f46835i = k1Var;
+                androidx.camera.core.q qVar = this.f46833g;
                 ListenableFuture k11 = k1Var.k();
                 Objects.requireNonNull(qVar);
                 k11.a(new c5(qVar), c0.a.d());
-                bVar.l(this.f46771i);
-                bVar.e(this.f46770h);
+                bVar.l(this.f46835i);
+                bVar.e(this.f46834h);
                 bVar.k(new a());
-                bVar.u(new InputConfiguration(this.f46769g.getWidth(), this.f46769g.getHeight(), this.f46769g.c()));
+                bVar.u(new InputConfiguration(this.f46833g.getWidth(), this.f46833g.getHeight(), this.f46833g.c()));
                 return;
             }
             bVar.x(1);
@@ -180,18 +180,18 @@ public final class f5 implements b5 {
 
     @Override // q.b5
     public void c(boolean z10) {
-        this.f46766d = z10;
+        this.f46830d = z10;
     }
 
     @Override // q.b5
     public void d(boolean z10) {
-        this.f46765c = z10;
+        this.f46829c = z10;
     }
 
     @Override // q.b5
     public androidx.camera.core.n e() {
         try {
-            return (androidx.camera.core.n) this.f46764b.a();
+            return (androidx.camera.core.n) this.f46828b.a();
         } catch (NoSuchElementException unused) {
             x.y0.c("ZslControlImpl", "dequeueImageFromBuffer no such element");
             return null;
@@ -200,11 +200,11 @@ public final class f5 implements b5 {
 
     @Override // q.b5
     public boolean f(androidx.camera.core.n nVar) {
-        Image A = nVar.A();
-        ImageWriter imageWriter = this.f46772j;
-        if (imageWriter != null && A != null) {
+        Image B = nVar.B();
+        ImageWriter imageWriter = this.f46836j;
+        if (imageWriter != null && B != null) {
             try {
-                f0.a.d(imageWriter, A);
+                f0.a.d(imageWriter, B);
                 return true;
             } catch (IllegalStateException e10) {
                 x.y0.c("ZslControlImpl", "enqueueImageToImageWriter throws IllegalStateException = " + e10.getMessage());
@@ -215,7 +215,7 @@ public final class f5 implements b5 {
 
     @Override // q.b5
     public boolean g() {
-        return this.f46766d;
+        return this.f46830d;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -227,7 +227,7 @@ public final class f5 implements b5 {
         public void onConfigured(CameraCaptureSession cameraCaptureSession) {
             Surface inputSurface = cameraCaptureSession.getInputSurface();
             if (inputSurface != null) {
-                f5.this.f46772j = f0.a.c(inputSurface, 1);
+                f5.this.f46836j = f0.a.c(inputSurface, 1);
             }
         }
 

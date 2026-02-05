@@ -1,41 +1,52 @@
 package us;
 
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g {
+public final class g implements f {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Object f51672a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final Function3 f51673b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final Function3 f51674c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final g f50875d = new g("AM", 0);
+    private final Function3 f51675d;
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final g f50876e = new g("PM", 1);
-
-    /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ g[] f50877i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f50878o;
-
-    static {
-        g[] a10 = a();
-        f50877i = a10;
-        f50878o = sr.a.a(a10);
+    public g(Object obj, Function3 function3, Function3 function32) {
+        Function3 function33;
+        this.f51672a = obj;
+        this.f51673b = function3;
+        this.f51674c = function32;
+        function33 = m.f51699a;
+        this.f51675d = function33;
     }
 
-    private g(String str, int i10) {
+    @Override // us.j
+    public Function3 a() {
+        return this.f51673b;
     }
 
-    private static final /* synthetic */ g[] a() {
-        return new g[]{f50875d, f50876e};
+    @Override // us.j
+    public Function3 b() {
+        return this.f51674c;
     }
 
-    public static g valueOf(String str) {
-        return (g) Enum.valueOf(g.class, str);
+    @Override // us.j
+    public Function3 c() {
+        return this.f51675d;
     }
 
-    public static g[] values() {
-        return (g[]) f50877i.clone();
+    @Override // us.j
+    public Object d() {
+        return this.f51672a;
+    }
+
+    public /* synthetic */ g(Object obj, Function3 function3, Function3 function32, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(obj, function3, (i10 & 4) != 0 ? null : function32);
     }
 }

@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.BeeIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6004, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6008, 2]);

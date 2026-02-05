@@ -13,37 +13,37 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class c extends Thread {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f28801d;
+    private final boolean f27859d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f28802e;
+    private final a f27860e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final a2 f28803i;
+    private final a2 f27861i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final io.sentry.transport.p f28804o;
+    private final io.sentry.transport.p f27862o;
 
     /* renamed from: p  reason: collision with root package name */
-    private long f28805p;
+    private long f27863p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final long f28806q;
+    private final long f27864q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final ILogger f28807r;
+    private final ILogger f27865r;
 
     /* renamed from: s  reason: collision with root package name */
-    private volatile long f28808s;
+    private volatile long f27866s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final AtomicBoolean f28809t;
+    private final AtomicBoolean f27867t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Context f28810u;
+    private final Context f27868u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Runnable f28811v;
+    private final Runnable f27869v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -64,20 +64,20 @@ public final class c extends Thread {
 
     public static /* synthetic */ void a(c cVar, io.sentry.transport.p pVar) {
         cVar.getClass();
-        cVar.f28808s = pVar.a();
-        cVar.f28809t.set(false);
+        cVar.f27866s = pVar.a();
+        cVar.f27867t.set(false);
     }
 
     private boolean c() {
         List<ActivityManager.ProcessErrorStateInfo> list;
-        ActivityManager activityManager = (ActivityManager) this.f28810u.getSystemService("activity");
+        ActivityManager activityManager = (ActivityManager) this.f27868u.getSystemService("activity");
         if (activityManager == null) {
             return true;
         }
         try {
             list = activityManager.getProcessesInErrorState();
         } catch (Throwable th2) {
-            this.f28807r.b(SentryLevel.ERROR, "Error getting ActivityManager#getProcessesInErrorState.", th2);
+            this.f27865r.b(SentryLevel.ERROR, "Error getting ActivityManager#getProcessesInErrorState.", th2);
             list = null;
         }
         if (list != null) {
@@ -93,26 +93,26 @@ public final class c extends Thread {
 
     @Override // java.lang.Thread, java.lang.Runnable
     public void run() {
-        this.f28811v.run();
+        this.f27869v.run();
         while (!isInterrupted()) {
-            this.f28803i.b(this.f28811v);
+            this.f27861i.b(this.f27869v);
             try {
-                Thread.sleep(this.f28805p);
-                if (this.f28804o.a() - this.f28808s > this.f28806q) {
-                    if (!this.f28801d && (Debug.isDebuggerConnected() || Debug.waitingForDebugger())) {
-                        this.f28807r.c(SentryLevel.DEBUG, "An ANR was detected but ignored because the debugger is connected.", new Object[0]);
-                        this.f28809t.set(true);
-                    } else if (c() && this.f28809t.compareAndSet(false, true)) {
-                        this.f28802e.a(new ApplicationNotResponding("Application Not Responding for at least " + this.f28806q + " ms.", this.f28803i.a()));
+                Thread.sleep(this.f27863p);
+                if (this.f27862o.a() - this.f27866s > this.f27864q) {
+                    if (!this.f27859d && (Debug.isDebuggerConnected() || Debug.waitingForDebugger())) {
+                        this.f27865r.c(SentryLevel.DEBUG, "An ANR was detected but ignored because the debugger is connected.", new Object[0]);
+                        this.f27867t.set(true);
+                    } else if (c() && this.f27867t.compareAndSet(false, true)) {
+                        this.f27860e.a(new ApplicationNotResponding("Application Not Responding for at least " + this.f27864q + " ms.", this.f27861i.a()));
                     }
                 }
             } catch (InterruptedException e10) {
                 try {
                     Thread.currentThread().interrupt();
-                    this.f28807r.c(SentryLevel.WARNING, "Interrupted: %s", e10.getMessage());
+                    this.f27865r.c(SentryLevel.WARNING, "Interrupted: %s", e10.getMessage());
                     return;
                 } catch (SecurityException unused) {
-                    this.f28807r.c(SentryLevel.WARNING, "Failed to interrupt due to SecurityException: %s", e10.getMessage());
+                    this.f27865r.c(SentryLevel.WARNING, "Failed to interrupt due to SecurityException: %s", e10.getMessage());
                     return;
                 }
             }
@@ -121,24 +121,24 @@ public final class c extends Thread {
 
     c(final io.sentry.transport.p pVar, long j10, long j11, boolean z10, a aVar, ILogger iLogger, a2 a2Var, Context context) {
         super("|ANR-WatchDog|");
-        this.f28808s = 0L;
-        this.f28809t = new AtomicBoolean(false);
-        this.f28804o = pVar;
-        this.f28806q = j10;
-        this.f28805p = j11;
-        this.f28801d = z10;
-        this.f28802e = aVar;
-        this.f28807r = iLogger;
-        this.f28803i = a2Var;
-        this.f28810u = context;
-        this.f28811v = new Runnable() { // from class: io.sentry.android.core.b
+        this.f27866s = 0L;
+        this.f27867t = new AtomicBoolean(false);
+        this.f27862o = pVar;
+        this.f27864q = j10;
+        this.f27863p = j11;
+        this.f27859d = z10;
+        this.f27860e = aVar;
+        this.f27865r = iLogger;
+        this.f27861i = a2Var;
+        this.f27868u = context;
+        this.f27869v = new Runnable() { // from class: io.sentry.android.core.b
             @Override // java.lang.Runnable
             public final void run() {
                 c.a(c.this, pVar);
             }
         };
-        if (j10 < this.f28805p * 2) {
-            throw new IllegalArgumentException(String.format("ANRWatchDog: timeoutIntervalMillis has to be at least %d ms", Long.valueOf(this.f28805p * 2)));
+        if (j10 < this.f27863p * 2) {
+            throw new IllegalArgumentException(String.format("ANRWatchDog: timeoutIntervalMillis has to be at least %d ms", Long.valueOf(this.f27863p * 2)));
         }
     }
 }

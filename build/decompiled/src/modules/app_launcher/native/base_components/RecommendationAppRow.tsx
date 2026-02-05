@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/base_components/RecommendationAppRow.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107702: for (var _fun107702_ip = 0;;) switch (_fun107702_ip) {
+        _fun107763: for (var _fun107763_ip = 0;;) switch (_fun107763_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.application;
@@ -41,24 +41,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0.isFirstRow;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun107702_ip = 27;
-                    continue _fun107702
+                    _fun107763_ip = 27;
+                    continue _fun107763
                 }
             case 25:
                 var6 = false;
             case 27:
                 var5 = var0.isLastRow;
                 if (!(var5 === var3)) {
-                    _fun107702_ip = 39;
-                    continue _fun107702
+                    _fun107763_ip = 39;
+                    continue _fun107763
                 }
             case 37:
                 var5 = false;
             case 39:
                 var4 = var0.showsPromoted;
                 if (!(var4 === var3)) {
-                    _fun107702_ip = 51;
-                    continue _fun107702
+                    _fun107763_ip = 51;
+                    continue _fun107763
                 }
             case 49:
                 var4 = false;
@@ -98,4 +98,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1417, 13887, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1417, 13909, 2]);

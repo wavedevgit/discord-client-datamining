@@ -1,29 +1,29 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class c5 implements ui.d {
+final class c5 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c5 f40939a = new c5();
+    static final c5 f40399a = new c5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f40940b;
+    private static final xi.c f40400b;
 
     static {
-        c.b a10 = ui.c.a("identifiedLanguage");
+        c.b a10 = xi.c.a("identifiedLanguage");
         f fVar = new f();
         fVar.a(1);
-        f40940b = a10.b(fVar.b()).a();
+        f40400b = a10.b(fVar.b()).a();
     }
 
     private c5() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

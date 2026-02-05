@@ -9,8 +9,8 @@ sdkInfo:
 packageInfo:
   forcedPackageId: 127
 versionInfo:
-  versionCode: 316204
-  versionName: 316.4 - Alpha
+  versionCode: 316205
+  versionName: 316.5 - Alpha
 doNotCompress:
 - arsc
 - jpg
@@ -114,8 +114,8 @@ doNotCompress:
 - META-INF/kotlinx_coroutines_core.version
 - META-INF/kotlinx_coroutines_play_services.version
 - META-INF/native-image/io.sentry/sentry/native-image.properties
-- META-INF/services/js.z
-- META-INF/services/os.s
+- META-INF/services/ms.z
+- META-INF/services/rs.s
 - META-INF/version-control-info.textproto
 - assets/com/appsflyer/internal/1ef4f10b9adfdad9a-
 - assets/com/appsflyer/internal/4c337fab34977e37d-

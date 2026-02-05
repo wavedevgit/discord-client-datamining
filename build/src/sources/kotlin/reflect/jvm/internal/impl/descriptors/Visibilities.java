@@ -10,10 +10,10 @@ public final class Visibilities {
     public static final Visibilities INSTANCE = new Visibilities();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f32790a;
+    private static final Map f32314a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Public f32791b;
+    private static final Public f32315b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Inherited extends Visibility {
@@ -119,8 +119,8 @@ public final class Visibilities {
         c10.put(Protected.INSTANCE, 1);
         Public r12 = Public.INSTANCE;
         c10.put(r12, 2);
-        f32790a = o0.b(c10);
-        f32791b = r12;
+        f32314a = o0.b(c10);
+        f32315b = r12;
     }
 
     private Visibilities() {
@@ -132,7 +132,7 @@ public final class Visibilities {
         if (first == second) {
             return 0;
         }
-        Map map = f32790a;
+        Map map = f32314a;
         Integer num = (Integer) map.get(first);
         Integer num2 = (Integer) map.get(second);
         if (num != null && num2 != null && !Intrinsics.areEqual(num, num2)) {

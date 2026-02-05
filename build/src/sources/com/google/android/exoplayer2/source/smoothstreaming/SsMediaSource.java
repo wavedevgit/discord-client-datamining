@@ -47,85 +47,85 @@ public final class SsMediaSource extends qd.a implements i.b {
     private Handler L;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f12496s;
+    private final boolean f12881s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Uri f12497t;
+    private final Uri f12882t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final MediaItem.h f12498u;
+    private final MediaItem.h f12883u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final MediaItem f12499v;
+    private final MediaItem f12884v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final DataSource.Factory f12500w;
+    private final DataSource.Factory f12885w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final b.a f12501x;
+    private final b.a f12886x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final qd.h f12502y;
+    private final qd.h f12887y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final v f12503z;
+    private final v f12888z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class Factory implements r.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final b.a f12504a;
+        private final b.a f12889a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final DataSource.Factory f12505b;
+        private final DataSource.Factory f12890b;
 
         /* renamed from: c  reason: collision with root package name */
-        private qd.h f12506c;
+        private qd.h f12891c;
 
         /* renamed from: d  reason: collision with root package name */
-        private x f12507d;
+        private x f12892d;
 
         /* renamed from: e  reason: collision with root package name */
-        private h f12508e;
+        private h f12893e;
 
         /* renamed from: f  reason: collision with root package name */
-        private long f12509f;
+        private long f12894f;
 
         /* renamed from: g  reason: collision with root package name */
-        private j.a f12510g;
+        private j.a f12895g;
 
         public Factory(DataSource.Factory factory) {
-            this(new a.C0155a(factory), factory);
+            this(new a.C0171a(factory), factory);
         }
 
         public SsMediaSource a(MediaItem mediaItem) {
             pd.b bVar;
-            ne.a.e(mediaItem.f11341e);
-            j.a aVar = this.f12510g;
+            ne.a.e(mediaItem.f11726e);
+            j.a aVar = this.f12895g;
             if (aVar == null) {
                 aVar = new yd.b();
             }
-            List list = mediaItem.f11341e.f11435p;
+            List list = mediaItem.f11726e.f11820p;
             if (!list.isEmpty()) {
                 bVar = new pd.b(aVar, list);
             } else {
                 bVar = aVar;
             }
-            return new SsMediaSource(mediaItem, null, this.f12505b, bVar, this.f12504a, this.f12506c, null, this.f12507d.a(mediaItem), this.f12508e, this.f12509f);
+            return new SsMediaSource(mediaItem, null, this.f12890b, bVar, this.f12889a, this.f12891c, null, this.f12892d.a(mediaItem), this.f12893e, this.f12894f);
         }
 
         public Factory b(h hVar) {
-            this.f12508e = (h) ne.a.f(hVar, "MediaSource.Factory#setLoadErrorHandlingPolicy no longer handles null by instantiating a new DefaultLoadErrorHandlingPolicy. Explicitly construct and pass an instance in order to retain the old behavior.");
+            this.f12893e = (h) ne.a.f(hVar, "MediaSource.Factory#setLoadErrorHandlingPolicy no longer handles null by instantiating a new DefaultLoadErrorHandlingPolicy. Explicitly construct and pass an instance in order to retain the old behavior.");
             return this;
         }
 
         public Factory(b.a aVar, DataSource.Factory factory) {
-            this.f12504a = (b.a) ne.a.e(aVar);
-            this.f12505b = factory;
-            this.f12507d = new l();
-            this.f12508e = new f();
-            this.f12509f = 30000L;
-            this.f12506c = new qd.i();
+            this.f12889a = (b.a) ne.a.e(aVar);
+            this.f12890b = factory;
+            this.f12892d = new l();
+            this.f12893e = new f();
+            this.f12894f = 30000L;
+            this.f12891c = new qd.i();
         }
     }
 
@@ -142,25 +142,25 @@ public final class SsMediaSource extends qd.a implements i.b {
         }
         long j11 = Long.MIN_VALUE;
         long j12 = Long.MAX_VALUE;
-        for (a.b bVar : this.K.f54012f) {
-            if (bVar.f54028k > 0) {
+        for (a.b bVar : this.K.f54708f) {
+            if (bVar.f54724k > 0) {
                 j12 = Math.min(j12, bVar.e(0));
-                j11 = Math.max(j11, bVar.e(bVar.f54028k - 1) + bVar.c(bVar.f54028k - 1));
+                j11 = Math.max(j11, bVar.e(bVar.f54724k - 1) + bVar.c(bVar.f54724k - 1));
             }
         }
         if (j12 == LongCompanionObject.MAX_VALUE) {
-            if (this.K.f54010d) {
+            if (this.K.f54706d) {
                 j10 = -9223372036854775807L;
             } else {
                 j10 = 0;
             }
             yd.a aVar = this.K;
-            boolean z10 = aVar.f54010d;
-            p0Var = new p0(j10, 0L, 0L, 0L, true, z10, z10, aVar, this.f12499v);
+            boolean z10 = aVar.f54706d;
+            p0Var = new p0(j10, 0L, 0L, 0L, true, z10, z10, aVar, this.f12884v);
         } else {
             yd.a aVar2 = this.K;
-            if (aVar2.f54010d) {
-                long j13 = aVar2.f54014h;
+            if (aVar2.f54706d) {
+                long j13 = aVar2.f54710h;
                 if (j13 != -9223372036854775807L && j13 > 0) {
                     j12 = Math.max(j12, j11 - j13);
                 }
@@ -170,21 +170,21 @@ public final class SsMediaSource extends qd.a implements i.b {
                 if (K0 < 5000000) {
                     K0 = Math.min(5000000L, j15 / 2);
                 }
-                p0Var = new p0(-9223372036854775807L, j15, j14, K0, true, true, true, this.K, this.f12499v);
+                p0Var = new p0(-9223372036854775807L, j15, j14, K0, true, true, true, this.K, this.f12884v);
             } else {
-                long j16 = aVar2.f54013g;
+                long j16 = aVar2.f54709g;
                 if (j16 == -9223372036854775807L) {
                     j16 = j11 - j12;
                 }
                 long j17 = j16;
-                p0Var = new p0(j12 + j17, j17, j12, 0L, true, false, false, this.K, this.f12499v);
+                p0Var = new p0(j12 + j17, j17, j12, 0L, true, false, false, this.K, this.f12884v);
             }
         }
         C(p0Var);
     }
 
     private void J() {
-        if (!this.K.f54010d) {
+        if (!this.K.f54706d) {
             return;
         }
         this.L.postDelayed(new Runnable() { // from class: xd.a
@@ -200,21 +200,21 @@ public final class SsMediaSource extends qd.a implements i.b {
         if (this.G.i()) {
             return;
         }
-        j jVar = new j(this.F, this.f12497t, 4, this.D);
-        this.C.s(new LoadEventInfo(jVar.f13100a, jVar.f13101b, this.G.n(jVar, this, this.A.b(jVar.f13102c))), jVar.f13102c);
+        j jVar = new j(this.F, this.f12882t, 4, this.D);
+        this.C.s(new LoadEventInfo(jVar.f13485a, jVar.f13486b, this.G.n(jVar, this, this.A.b(jVar.f13487c))), jVar.f13487c);
     }
 
     @Override // qd.a
     protected void B(c0 c0Var) {
         this.I = c0Var;
-        this.f12503z.a(Looper.myLooper(), z());
-        this.f12503z.d();
-        if (this.f12496s) {
+        this.f12888z.a(Looper.myLooper(), z());
+        this.f12888z.d();
+        if (this.f12881s) {
             this.H = new u.a();
             I();
             return;
         }
-        this.F = this.f12500w.createDataSource();
+        this.F = this.f12885w.createDataSource();
         i iVar = new i("SsMediaSource");
         this.G = iVar;
         this.H = iVar;
@@ -225,7 +225,7 @@ public final class SsMediaSource extends qd.a implements i.b {
     @Override // qd.a
     protected void D() {
         yd.a aVar;
-        if (this.f12496s) {
+        if (this.f12881s) {
             aVar = this.K;
         } else {
             aVar = null;
@@ -243,23 +243,23 @@ public final class SsMediaSource extends qd.a implements i.b {
             handler.removeCallbacksAndMessages(null);
             this.L = null;
         }
-        this.f12503z.release();
+        this.f12888z.release();
     }
 
     @Override // com.google.android.exoplayer2.upstream.i.b
     /* renamed from: F */
     public void i(j jVar, long j10, long j11, boolean z10) {
-        LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f13100a, jVar.f13101b, jVar.f(), jVar.d(), j10, j11, jVar.a());
-        this.A.d(jVar.f13100a);
-        this.C.j(loadEventInfo, jVar.f13102c);
+        LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f13485a, jVar.f13486b, jVar.f(), jVar.d(), j10, j11, jVar.a());
+        this.A.d(jVar.f13485a);
+        this.C.j(loadEventInfo, jVar.f13487c);
     }
 
     @Override // com.google.android.exoplayer2.upstream.i.b
     /* renamed from: G */
     public void j(j jVar, long j10, long j11) {
-        LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f13100a, jVar.f13101b, jVar.f(), jVar.d(), j10, j11, jVar.a());
-        this.A.d(jVar.f13100a);
-        this.C.m(loadEventInfo, jVar.f13102c);
+        LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f13485a, jVar.f13486b, jVar.f(), jVar.d(), j10, j11, jVar.a());
+        this.A.d(jVar.f13485a);
+        this.C.m(loadEventInfo, jVar.f13487c);
         this.K = (yd.a) jVar.e();
         this.J = j10 - j11;
         I();
@@ -270,17 +270,17 @@ public final class SsMediaSource extends qd.a implements i.b {
     /* renamed from: H */
     public i.c n(j jVar, long j10, long j11, IOException iOException, int i10) {
         i.c h10;
-        LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f13100a, jVar.f13101b, jVar.f(), jVar.d(), j10, j11, jVar.a());
-        long a10 = this.A.a(new h.c(loadEventInfo, new MediaLoadData(jVar.f13102c), iOException, i10));
+        LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f13485a, jVar.f13486b, jVar.f(), jVar.d(), j10, j11, jVar.a());
+        long a10 = this.A.a(new h.c(loadEventInfo, new MediaLoadData(jVar.f13487c), iOException, i10));
         if (a10 == -9223372036854775807L) {
-            h10 = i.f13083g;
+            h10 = i.f13468g;
         } else {
             h10 = i.h(false, a10);
         }
         boolean c10 = h10.c();
-        this.C.q(loadEventInfo, jVar.f13102c, iOException, !c10);
+        this.C.q(loadEventInfo, jVar.f13487c, iOException, !c10);
         if (!c10) {
-            this.A.d(jVar.f13100a);
+            this.A.d(jVar.f13485a);
         }
         return h10;
     }
@@ -293,13 +293,13 @@ public final class SsMediaSource extends qd.a implements i.b {
 
     @Override // qd.r
     public MediaItem f() {
-        return this.f12499v;
+        return this.f12884v;
     }
 
     @Override // qd.r
     public p h(r.b bVar, le.b bVar2, long j10) {
         y.a w10 = w(bVar);
-        c cVar = new c(this.K, this.f12501x, this.I, this.f12502y, null, this.f12503z, u(bVar), this.A, w10, this.H, bVar2);
+        c cVar = new c(this.K, this.f12886x, this.I, this.f12887y, null, this.f12888z, u(bVar), this.A, w10, this.H, bVar2);
         this.E.add(cVar);
         return cVar;
     }
@@ -310,21 +310,21 @@ public final class SsMediaSource extends qd.a implements i.b {
     }
 
     private SsMediaSource(MediaItem mediaItem, yd.a aVar, DataSource.Factory factory, j.a aVar2, b.a aVar3, qd.h hVar, g gVar, v vVar, h hVar2, long j10) {
-        ne.a.g(aVar == null || !aVar.f54010d);
-        this.f12499v = mediaItem;
-        MediaItem.h hVar3 = (MediaItem.h) ne.a.e(mediaItem.f11341e);
-        this.f12498u = hVar3;
+        ne.a.g(aVar == null || !aVar.f54706d);
+        this.f12884v = mediaItem;
+        MediaItem.h hVar3 = (MediaItem.h) ne.a.e(mediaItem.f11726e);
+        this.f12883u = hVar3;
         this.K = aVar;
-        this.f12497t = hVar3.f11431d.equals(Uri.EMPTY) ? null : w0.C(hVar3.f11431d);
-        this.f12500w = factory;
+        this.f12882t = hVar3.f11816d.equals(Uri.EMPTY) ? null : w0.C(hVar3.f11816d);
+        this.f12885w = factory;
         this.D = aVar2;
-        this.f12501x = aVar3;
-        this.f12502y = hVar;
-        this.f12503z = vVar;
+        this.f12886x = aVar3;
+        this.f12887y = hVar;
+        this.f12888z = vVar;
         this.A = hVar2;
         this.B = j10;
         this.C = w(null);
-        this.f12496s = aVar != null;
+        this.f12881s = aVar != null;
         this.E = new ArrayList();
     }
 }

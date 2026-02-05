@@ -6,12 +6,12 @@ import kotlin.reflect.KProperty;
 final class b implements ReadWriteProperty {
 
     /* renamed from: a  reason: collision with root package name */
-    private Object f32552a;
+    private Object f32076a;
 
     @Override // kotlin.properties.ReadWriteProperty, kotlin.properties.d
     public Object getValue(Object obj, KProperty property) {
         Intrinsics.checkNotNullParameter(property, "property");
-        Object obj2 = this.f32552a;
+        Object obj2 = this.f32076a;
         if (obj2 != null) {
             return obj2;
         }
@@ -22,15 +22,15 @@ final class b implements ReadWriteProperty {
     public void setValue(Object obj, KProperty property, Object value) {
         Intrinsics.checkNotNullParameter(property, "property");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f32552a = value;
+        this.f32076a = value;
     }
 
     public String toString() {
         String str;
         StringBuilder sb2 = new StringBuilder();
         sb2.append("NotNullProperty(");
-        if (this.f32552a != null) {
-            str = "value=" + this.f32552a;
+        if (this.f32076a != null) {
+            str = "value=" + this.f32076a;
         } else {
             str = "value not initialized yet";
         }

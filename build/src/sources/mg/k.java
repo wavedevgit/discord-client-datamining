@@ -10,11 +10,11 @@ public final class k extends a implements IInterface {
         super(iBinder, "com.google.android.gms.vision.barcode.internal.client.INativeBarcodeDetector");
     }
 
-    public final void S0() {
+    public final void W0() {
         h(3, e());
     }
 
-    public final zh[] T0(sf.a aVar, o oVar) {
+    public final zh[] X0(sf.a aVar, o oVar) {
         Parcel e10 = e();
         p0.b(e10, aVar);
         p0.a(e10, oVar);
@@ -24,7 +24,7 @@ public final class k extends a implements IInterface {
         return zhVarArr;
     }
 
-    public final zh[] U0(sf.a aVar, o oVar) {
+    public final zh[] Y0(sf.a aVar, o oVar) {
         Parcel e10 = e();
         p0.b(e10, aVar);
         p0.a(e10, oVar);

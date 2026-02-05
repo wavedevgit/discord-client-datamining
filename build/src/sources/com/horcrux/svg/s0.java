@@ -3,11 +3,11 @@ package com.horcrux.svg;
 class s0 {
 
     /* renamed from: a  reason: collision with root package name */
-    m0 f16648a;
+    m0 f17042a;
 
     /* renamed from: b  reason: collision with root package name */
-    m0 f16649b;
+    m0 f17043b;
 
     /* renamed from: c  reason: collision with root package name */
-    m0 f16650c;
+    m0 f17044c;
 }

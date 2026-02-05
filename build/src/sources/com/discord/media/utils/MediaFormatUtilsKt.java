@@ -71,10 +71,10 @@ public final class MediaFormatUtilsKt {
         Object b10;
         Intrinsics.checkNotNullParameter(mediaFormat, "<this>");
         try {
-            Result.a aVar = Result.f32461e;
+            Result.a aVar = Result.f31985e;
             b10 = Result.b(Integer.valueOf(mediaFormat.getInteger("level")));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32461e;
+            Result.a aVar2 = Result.f31985e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {
@@ -87,10 +87,10 @@ public final class MediaFormatUtilsKt {
         Object b10;
         Intrinsics.checkNotNullParameter(mediaFormat, "<this>");
         try {
-            Result.a aVar = Result.f32461e;
+            Result.a aVar = Result.f31985e;
             b10 = Result.b(mediaFormat.getString("mime"));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32461e;
+            Result.a aVar2 = Result.f31985e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {
@@ -103,10 +103,10 @@ public final class MediaFormatUtilsKt {
         Object b10;
         Intrinsics.checkNotNullParameter(mediaFormat, "<this>");
         try {
-            Result.a aVar = Result.f32461e;
+            Result.a aVar = Result.f31985e;
             b10 = Result.b(Integer.valueOf(mediaFormat.getInteger("profile")));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32461e;
+            Result.a aVar2 = Result.f31985e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {

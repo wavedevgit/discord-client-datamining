@@ -7,35 +7,35 @@ import java.util.regex.Pattern;
 public final class i {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final long f15982b = TimeUnit.HOURS.toSeconds(1);
+    public static final long f16376b = TimeUnit.HOURS.toSeconds(1);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f15983c = Pattern.compile("\\AA[\\w-]{38}\\z");
+    private static final Pattern f16377c = Pattern.compile("\\AA[\\w-]{38}\\z");
 
     /* renamed from: d  reason: collision with root package name */
-    private static i f15984d;
+    private static i f16378d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final fj.a f15985a;
+    private final ij.a f16379a;
 
-    private i(fj.a aVar) {
-        this.f15985a = aVar;
+    private i(ij.a aVar) {
+        this.f16379a = aVar;
     }
 
     public static i c() {
-        return d(fj.b.b());
+        return d(ij.b.b());
     }
 
-    public static i d(fj.a aVar) {
-        if (f15984d == null) {
-            f15984d = new i(aVar);
+    public static i d(ij.a aVar) {
+        if (f16378d == null) {
+            f16378d = new i(aVar);
         }
-        return f15984d;
+        return f16378d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean g(String str) {
-        return f15983c.matcher(str).matches();
+        return f16377c.matcher(str).matches();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -44,7 +44,7 @@ public final class i {
     }
 
     public long a() {
-        return this.f15985a.a();
+        return this.f16379a.a();
     }
 
     public long b() {
@@ -55,8 +55,8 @@ public final class i {
         return (long) (Math.random() * 1000.0d);
     }
 
-    public boolean f(dj.d dVar) {
-        if (TextUtils.isEmpty(dVar.b()) || dVar.h() + dVar.c() < b() + f15982b) {
+    public boolean f(gj.d dVar) {
+        if (TextUtils.isEmpty(dVar.b()) || dVar.h() + dVar.c() < b() + f16376b) {
             return true;
         }
         return false;

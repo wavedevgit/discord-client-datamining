@@ -29,38 +29,47 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/tabs/you/utils/showYouAccountActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun102934: for (var _fun102934_ip = 0;;) switch (_fun102934_ip) {
+        _fun103078: for (var _fun103078_ip = 0;;) switch (_fun103078_ip) {
             case 0:
-                var6 = arguments[0];
+                var7 = arguments[0];
+                var6 = arguments[1];
                 var0 = undefined;
-                if (!(var6 === var0)) {
-                    _fun102934_ip = 11;
-                    continue _fun102934
+                if (!(var7 === var0)) {
+                    _fun103078_ip = 14;
+                    continue _fun103078
                 }
-            case 9:
-                var6 = false;
-            case 11:
+            case 12:
+                var7 = false;
+            case 14:
+                if (!(var6 === var0)) {
+                    _fun103078_ip = 20;
+                    continue _fun103078
+                }
+            case 18:
+                var6 = true;
+            case 20:
                 var4 = _closure1_slot1;
                 var2 = _closure1_slot2;
                 var3 = 1;
                 var3 = var2[var3];
                 var5 = var4.bind(var0)(var3);
                 var4 = var5.openLazy;
-                var7 = _closure1_slot0;
+                var8 = _closure1_slot0;
                 var3 = 3;
                 var3 = var2[var3];
-                var7 = var7.bind(var0)(var3);
+                var8 = var8.bind(var0)(var3);
                 var3 = 2;
                 var3 = var2[var3];
                 var2 = var2.paths;
-                var3 = var7.bind(var0)(var3, var2);
+                var3 = var8.bind(var0)(var3, var2);
                 var2 = _closure1_slot3;
                 var1 = {};
-                var1.statusOnly = var6;
+                var1.statusOnly = var7;
+                var1.disableHapticOnOpen = var6;
                 var1 = var4.bind(var5)(var3, var2, var1);
                 return var0;
         }
     };
     var2.showYouAccountActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [13452, 3278, 13453, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [13469, 3278, 13486, 1307, 2]);

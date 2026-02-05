@@ -5,49 +5,49 @@ import java.io.InputStream;
 final class m extends InputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    private final InputStream f53122d;
+    private final InputStream f53666d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f53123e = 1073741824;
+    private int f53667e = 1073741824;
 
     public m(InputStream inputStream) {
-        this.f53122d = inputStream;
+        this.f53666d = inputStream;
     }
 
     private final int a(int i10) {
         if (i10 == -1) {
-            this.f53123e = 0;
+            this.f53667e = 0;
         }
         return i10;
     }
 
     @Override // java.io.InputStream
     public int available() {
-        return this.f53123e;
+        return this.f53667e;
     }
 
     @Override // java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f53122d.close();
+        this.f53666d.close();
     }
 
     @Override // java.io.InputStream
     public int read() {
-        return a(this.f53122d.read());
+        return a(this.f53666d.read());
     }
 
     @Override // java.io.InputStream
     public long skip(long j10) {
-        return this.f53122d.skip(j10);
+        return this.f53666d.skip(j10);
     }
 
     @Override // java.io.InputStream
     public int read(byte[] bArr) {
-        return a(this.f53122d.read(bArr));
+        return a(this.f53666d.read(bArr));
     }
 
     @Override // java.io.InputStream
     public int read(byte[] bArr, int i10, int i11) {
-        return a(this.f53122d.read(bArr, i10, i11));
+        return a(this.f53666d.read(bArr, i10, i11));
     }
 }

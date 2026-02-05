@@ -52,7 +52,7 @@ public class RiveArtboardRenderer extends Renderer {
                 if (!this.controller.isAdvancing()) {
                     stopThread$kotlin_release();
                 }
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -69,7 +69,7 @@ public class RiveArtboardRenderer extends Renderer {
         }
         synchronized (obj) {
             super.disposeDependencies();
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
     }
 
@@ -86,7 +86,7 @@ public class RiveArtboardRenderer extends Renderer {
             }
             synchronized (reentrantLock) {
                 resizeArtboard();
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             }
         }
         synchronized (getFrameLock()) {
@@ -94,7 +94,7 @@ public class RiveArtboardRenderer extends Renderer {
                 Artboard activeArtboard = this.controller.getActiveArtboard();
                 if (activeArtboard != null) {
                     activeArtboard.draw(getCppPointer(), getFit(), getAlignment(), getScaleFactor());
-                    Unit unit2 = Unit.f32464a;
+                    Unit unit2 = Unit.f31988a;
                 }
             }
         }

@@ -23,19 +23,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d implements a {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final d f28252b = new d();
+    public static final d f27241b = new d();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String f28253c;
+    private static final String f27242c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ArrayList f28254d;
+    private static final ArrayList f27243d;
 
     static {
         String simpleName = d.class.getSimpleName();
         Intrinsics.checkNotNullExpressionValue(simpleName, "WindowMetricsCalculatorC…at::class.java.simpleName");
-        f28253c = simpleName;
-        f28254d = CollectionsKt.g(Integer.valueOf(WindowInsetsCompat.p.g()), Integer.valueOf(WindowInsetsCompat.p.f()), Integer.valueOf(WindowInsetsCompat.p.a()), Integer.valueOf(WindowInsetsCompat.p.c()), Integer.valueOf(WindowInsetsCompat.p.i()), Integer.valueOf(WindowInsetsCompat.p.e()), Integer.valueOf(WindowInsetsCompat.p.j()), Integer.valueOf(WindowInsetsCompat.p.b()));
+        f27242c = simpleName;
+        f27243d = CollectionsKt.g(Integer.valueOf(WindowInsetsCompat.p.g()), Integer.valueOf(WindowInsetsCompat.p.f()), Integer.valueOf(WindowInsetsCompat.p.a()), Integer.valueOf(WindowInsetsCompat.p.c()), Integer.valueOf(WindowInsetsCompat.p.i()), Integer.valueOf(WindowInsetsCompat.p.e()), Integer.valueOf(WindowInsetsCompat.p.j()), Integer.valueOf(WindowInsetsCompat.p.b()));
     }
 
     private d() {
@@ -56,17 +56,17 @@ public final class d implements a {
                 return c.a(obj);
             }
         } catch (ClassNotFoundException e10) {
-            Log.w(f28253c, e10);
+            Log.w(f27242c, e10);
         } catch (IllegalAccessException e11) {
-            Log.w(f28253c, e11);
+            Log.w(f27242c, e11);
         } catch (InstantiationException e12) {
-            Log.w(f28253c, e12);
+            Log.w(f27242c, e12);
         } catch (NoSuchFieldException e13) {
-            Log.w(f28253c, e13);
+            Log.w(f27242c, e13);
         } catch (NoSuchMethodException e14) {
-            Log.w(f28253c, e14);
+            Log.w(f27242c, e14);
         } catch (InvocationTargetException e15) {
-            Log.w(f28253c, e15);
+            Log.w(f27242c, e15);
         }
         return null;
     }
@@ -91,7 +91,7 @@ public final class d implements a {
         Intrinsics.checkNotNullParameter(activity, "activity");
         int i10 = Build.VERSION.SDK_INT;
         if (i10 >= 30) {
-            b10 = j4.b.f31399a.a(activity);
+            b10 = j4.b.f30748a.a(activity);
         } else if (i10 >= 29) {
             b10 = d(activity);
         } else if (i10 >= 28) {
@@ -113,7 +113,7 @@ public final class d implements a {
         Rect rect = new Rect();
         Display defaultDisplay = activity.getWindowManager().getDefaultDisplay();
         defaultDisplay.getRectSize(rect);
-        if (!j4.a.f31398a.a(activity)) {
+        if (!j4.a.f30747a.a(activity)) {
             Intrinsics.checkNotNullExpressionValue(defaultDisplay, "defaultDisplay");
             Point h10 = h(defaultDisplay);
             int g10 = g(activity);
@@ -138,7 +138,7 @@ public final class d implements a {
             Field declaredField = Configuration.class.getDeclaredField("windowConfiguration");
             declaredField.setAccessible(true);
             Object obj = declaredField.get(configuration);
-            if (j4.a.f31398a.a(activity)) {
+            if (j4.a.f30747a.a(activity)) {
                 Object invoke = obj.getClass().getDeclaredMethod("getBounds", null).invoke(obj, null);
                 Intrinsics.checkNotNull(invoke, "null cannot be cast to non-null type android.graphics.Rect");
                 rect.set((Rect) invoke);
@@ -148,22 +148,22 @@ public final class d implements a {
                 rect.set((Rect) invoke2);
             }
         } catch (IllegalAccessException e10) {
-            Log.w(f28253c, e10);
+            Log.w(f27242c, e10);
             i(activity, rect);
         } catch (NoSuchFieldException e11) {
-            Log.w(f28253c, e11);
+            Log.w(f27242c, e11);
             i(activity, rect);
         } catch (NoSuchMethodException e12) {
-            Log.w(f28253c, e12);
+            Log.w(f27242c, e12);
             i(activity, rect);
         } catch (InvocationTargetException e13) {
-            Log.w(f28253c, e13);
+            Log.w(f27242c, e13);
             i(activity, rect);
         }
         Display currentDisplay = activity.getWindowManager().getDefaultDisplay();
         Point point = new Point();
         currentDisplay.getRealSize(point);
-        j4.a aVar = j4.a.f31398a;
+        j4.a aVar = j4.a.f30747a;
         if (!aVar.a(activity)) {
             int g10 = g(activity);
             int i10 = rect.bottom;
@@ -183,7 +183,7 @@ public final class d implements a {
             DisplayCutout f10 = f(currentDisplay);
             if (f10 != null) {
                 int i12 = rect.left;
-                j4.c cVar = j4.c.f31400a;
+                j4.c cVar = j4.c.f30749a;
                 if (i12 == cVar.b(f10)) {
                     rect.left = 0;
                 }
@@ -212,16 +212,16 @@ public final class d implements a {
             Intrinsics.checkNotNull(invoke, "null cannot be cast to non-null type android.graphics.Rect");
             return new Rect((Rect) invoke);
         } catch (IllegalAccessException e10) {
-            Log.w(f28253c, e10);
+            Log.w(f27242c, e10);
             return c(activity);
         } catch (NoSuchFieldException e11) {
-            Log.w(f28253c, e11);
+            Log.w(f27242c, e11);
             return c(activity);
         } catch (NoSuchMethodException e12) {
-            Log.w(f28253c, e12);
+            Log.w(f27242c, e12);
             return c(activity);
         } catch (InvocationTargetException e13) {
-            Log.w(f28253c, e13);
+            Log.w(f27242c, e13);
             return c(activity);
         }
     }
@@ -229,7 +229,7 @@ public final class d implements a {
     public final WindowInsetsCompat e(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
         if (Build.VERSION.SDK_INT >= 30) {
-            return j4.b.f31399a.b(context);
+            return j4.b.f30748a.b(context);
         }
         throw new Exception("Incompatible SDK version");
     }

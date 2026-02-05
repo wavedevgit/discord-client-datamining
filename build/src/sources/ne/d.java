@@ -6,7 +6,7 @@ import com.google.android.exoplayer2.g;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import ji.s;
+import mi.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class d {
     public static HashMap a(Bundle bundle) {
@@ -22,11 +22,11 @@ public abstract class d {
         return hashMap;
     }
 
-    public static ji.t b(Bundle bundle) {
+    public static mi.t b(Bundle bundle) {
         if (bundle == Bundle.EMPTY) {
-            return ji.t.j();
+            return mi.t.j();
         }
-        return ji.t.c(a(bundle));
+        return mi.t.c(a(bundle));
     }
 
     public static void c(Bundle bundle) {
@@ -35,8 +35,8 @@ public abstract class d {
         }
     }
 
-    public static ji.s d(g.a aVar, List list) {
-        s.a j10 = ji.s.j();
+    public static mi.s d(g.a aVar, List list) {
+        s.a j10 = mi.s.j();
         for (int i10 = 0; i10 < list.size(); i10++) {
             j10.a(aVar.a((Bundle) a.e((Bundle) list.get(i10))));
         }

@@ -256,4 +256,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isContextlessEmbeddedActivity = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1348, 587, 1384, 5670, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1348, 587, 1384, 5674, 2]);

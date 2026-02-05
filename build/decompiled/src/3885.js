@@ -18,14 +18,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.useCallback;
     var _closure1_slot0 = var3;
     var1 = function arg0, arg1() {
-        _fun35034: for (var _fun35034_ip = 0;;) switch (_fun35034_ip) {
+        _fun35044: for (var _fun35044_ip = 0;;) switch (_fun35044_ip) {
             case 0:
                 var3 = arg1;
                 var2 = _closure1_slot0;
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun35034_ip = 20;
-                    continue _fun35034
+                    _fun35044_ip = 20;
+                    continue _fun35044
                 }
             case 16:
                 var3 = new Array(0);

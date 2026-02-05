@@ -10,31 +10,37 @@ public abstract class o {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f26177a;
+        private final List f24873a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Object f26178b;
+        private final Object f24874b;
 
-        /* synthetic */ a(Object obj, w0 w0Var) {
+        /* synthetic */ a(Object obj, byte[] bArr) {
             q.l(obj);
-            this.f26178b = obj;
-            this.f26177a = new ArrayList();
+            this.f24874b = obj;
+            this.f24873a = new ArrayList();
         }
 
         public a a(String str, Object obj) {
             q.l(str);
+            int length = str.length();
             String valueOf = String.valueOf(obj);
-            this.f26177a.add(str + "=" + valueOf);
+            StringBuilder sb2 = new StringBuilder(length + 1 + valueOf.length());
+            sb2.append(str);
+            sb2.append("=");
+            sb2.append(valueOf);
+            this.f24873a.add(sb2.toString());
             return this;
         }
 
         public String toString() {
             StringBuilder sb2 = new StringBuilder(100);
-            sb2.append(this.f26178b.getClass().getSimpleName());
+            sb2.append(this.f24874b.getClass().getSimpleName());
             sb2.append('{');
-            int size = this.f26177a.size();
+            List list = this.f24873a;
+            int size = list.size();
             for (int i10 = 0; i10 < size; i10++) {
-                sb2.append((String) this.f26177a.get(i10));
+                sb2.append((String) list.get(i10));
                 if (i10 < size - 1) {
                     sb2.append(", ");
                 }

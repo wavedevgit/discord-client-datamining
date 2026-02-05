@@ -1,7 +1,6 @@
 package com.discord.recycler_view.scroll;
 
 import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
-import js.m0;
 import kotlin.Function;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -19,8 +18,9 @@ import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.FlowCollector;
 import kotlinx.coroutines.flow.MutableSharedFlow;
 import kotlinx.coroutines.i;
-import ms.c0;
+import ms.m0;
 import org.jetbrains.annotations.NotNull;
+import ps.c0;
 @Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0000\u0018\u0000*\b\b\u0000\u0010\u0001*\u00020\u00022\u00020\u0002B-\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0012\u0010\u0005\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00070\u0006\u0012\b\b\u0002\u0010\b\u001a\u00020\t¢\u0006\u0004\b\n\u0010\u000bJ\u0015\u0010\u0013\u001a\u00020\u00072\u0006\u0010\u0014\u001a\u00028\u0000H\u0007¢\u0006\u0002\u0010\u0015J\b\u0010\u0016\u001a\u00020\u0007H\u0007R\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0011\u001a\b\u0012\u0004\u0012\u00028\u00000\u0012X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0017"}, d2 = {"Lcom/discord/recycler_view/scroll/DebouncedFlow;", "T", "", "timeoutMillis", "", "onEvent", "Lkotlin/Function1;", "", "collectWithLeadingDebounce", "", "<init>", "(JLkotlin/jvm/functions/Function1;Z)V", "eventCoroutineScope", "Lkotlinx/coroutines/CoroutineScope;", "eventDetectorJob", "Lkotlinx/coroutines/Job;", "eventDetectorActive", "events", "Lkotlinx/coroutines/flow/MutableSharedFlow;", "tryEmit", "event", "(Ljava/lang/Object;)V", "cancel", "recycler_view_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class DebouncedFlow<T> {
@@ -46,21 +46,21 @@ public final class DebouncedFlow<T> {
         @Metadata(k = 3, mv = {2, 1, 0}, xi = 48)
         /* renamed from: com.discord.recycler_view.scroll.DebouncedFlow$1$1  reason: invalid class name and collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public /* synthetic */ class C01321 implements FlowCollector, FunctionAdapter {
+        public /* synthetic */ class C01481 implements FlowCollector, FunctionAdapter {
             final /* synthetic */ Function1<T, Unit> $tmp0;
 
             /* JADX WARN: Multi-variable type inference failed */
-            C01321(Function1<? super T, Unit> function1) {
+            C01481(Function1<? super T, Unit> function1) {
                 this.$tmp0 = function1;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             public final Object emit(T t10, Continuation<? super Unit> continuation) {
                 Object invokeSuspend$suspendConversion0 = AnonymousClass1.invokeSuspend$suspendConversion0(this.$tmp0, t10, continuation);
-                if (invokeSuspend$suspendConversion0 == rr.b.f()) {
+                if (invokeSuspend$suspendConversion0 == ur.b.f()) {
                     return invokeSuspend$suspendConversion0;
                 }
-                return Unit.f32464a;
+                return Unit.f31988a;
             }
 
             public final boolean equals(Object obj) {
@@ -95,10 +95,10 @@ public final class DebouncedFlow<T> {
             @Override // kotlinx.coroutines.flow.FlowCollector
             public final Object emit(T t10, Continuation<? super Unit> continuation) {
                 Object invokeSuspend$suspendConversion1 = AnonymousClass1.invokeSuspend$suspendConversion1(this.$tmp0, t10, continuation);
-                if (invokeSuspend$suspendConversion1 == rr.b.f()) {
+                if (invokeSuspend$suspendConversion1 == ur.b.f()) {
                     return invokeSuspend$suspendConversion1;
                 }
-                return Unit.f32464a;
+                return Unit.f31988a;
             }
 
             public final boolean equals(Object obj) {
@@ -131,13 +131,13 @@ public final class DebouncedFlow<T> {
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ Object invokeSuspend$suspendConversion0(Function1 function1, Object obj, Continuation continuation) {
             function1.invoke(obj);
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ Object invokeSuspend$suspendConversion1(Function1 function1, Object obj, Continuation continuation) {
             function1.invoke(obj);
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -162,7 +162,7 @@ public final class DebouncedFlow<T> {
         public final java.lang.Object invokeSuspend(java.lang.Object r7) {
             /*
                 r6 = this;
-                java.lang.Object r0 = rr.b.f()
+                java.lang.Object r0 = ur.b.f()
                 int r1 = r6.label
                 r2 = 2
                 r3 = 1
@@ -196,7 +196,7 @@ public final class DebouncedFlow<T> {
                 com.discord.recycler_view.scroll.DebouncedFlow<T> r7 = r6.this$0
                 kotlinx.coroutines.flow.MutableSharedFlow r7 = com.discord.recycler_view.scroll.DebouncedFlow.access$getEvents$p(r7)
                 long r3 = r6.$timeoutMillis
-                kotlinx.coroutines.flow.Flow r7 = ms.g.k(r7, r3)
+                kotlinx.coroutines.flow.Flow r7 = ps.g.k(r7, r3)
                 kotlin.jvm.functions.Function1<T, kotlin.Unit> r1 = r6.$onEvent
                 com.discord.recycler_view.scroll.DebouncedFlow$1$2 r3 = new com.discord.recycler_view.scroll.DebouncedFlow$1$2
                 r3.<init>(r1)
@@ -206,7 +206,7 @@ public final class DebouncedFlow<T> {
             L55:
                 return r0
             L56:
-                kotlin.Unit r7 = kotlin.Unit.f32464a
+                kotlin.Unit r7 = kotlin.Unit.f31988a
                 return r7
             */
             throw new UnsupportedOperationException("Method not decompiled: com.discord.recycler_view.scroll.DebouncedFlow.AnonymousClass1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -214,7 +214,7 @@ public final class DebouncedFlow<T> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -225,7 +225,7 @@ public final class DebouncedFlow<T> {
         this.eventCoroutineScope = a10;
         this.eventDetectorActive = true;
         this.events = c0.b(0, 1, null, 4, null);
-        d10 = js.i.d(a10, null, null, new AnonymousClass1(z10, this, j10, onEvent, null), 3, null);
+        d10 = ms.i.d(a10, null, null, new AnonymousClass1(z10, this, j10, onEvent, null), 3, null);
         this.eventDetectorJob = d10;
     }
 

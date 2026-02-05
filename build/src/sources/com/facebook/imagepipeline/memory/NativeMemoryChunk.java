@@ -11,13 +11,13 @@ import va.r;
 public class NativeMemoryChunk implements q, Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f10225d;
+    private final long f10610d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f10226e;
+    private final int f10611e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f10227i;
+    private boolean f10612i;
 
     static {
         nb.a.d("imagepipeline");
@@ -25,17 +25,17 @@ public class NativeMemoryChunk implements q, Closeable {
 
     public NativeMemoryChunk(int i10) {
         j.b(Boolean.valueOf(i10 > 0));
-        this.f10226e = i10;
-        this.f10225d = nativeAllocate(i10);
-        this.f10227i = false;
+        this.f10611e = i10;
+        this.f10610d = nativeAllocate(i10);
+        this.f10612i = false;
     }
 
-    private void n(int i10, q qVar, int i11, int i12) {
+    private void m(int i10, q qVar, int i11, int i12) {
         if (qVar instanceof NativeMemoryChunk) {
             j.i(!isClosed());
             j.i(!qVar.isClosed());
-            r.b(i10, qVar.getSize(), i11, i12, this.f10226e);
-            nativeMemcpy(qVar.C() + i11, this.f10225d + i10, i12);
+            r.b(i10, qVar.getSize(), i11, i12, this.f10611e);
+            nativeMemcpy(qVar.C() + i11, this.f10610d + i10, i12);
             return;
         }
         throw new IllegalArgumentException("Cannot copy two incompatible MemoryChunks");
@@ -61,19 +61,19 @@ public class NativeMemoryChunk implements q, Closeable {
 
     @Override // va.q
     public long C() {
-        return this.f10225d;
+        return this.f10610d;
     }
 
     @Override // va.q
     public long a() {
-        return this.f10225d;
+        return this.f10610d;
     }
 
     @Override // va.q, java.io.Closeable, java.lang.AutoCloseable
     public synchronized void close() {
-        if (!this.f10227i) {
-            this.f10227i = true;
-            nativeFree(this.f10225d);
+        if (!this.f10612i) {
+            this.f10612i = true;
+            nativeFree(this.f10610d);
         }
     }
 
@@ -91,7 +91,7 @@ public class NativeMemoryChunk implements q, Closeable {
 
     @Override // va.q
     public int getSize() {
-        return this.f10226e;
+        return this.f10611e;
     }
 
     @Override // va.q
@@ -99,57 +99,57 @@ public class NativeMemoryChunk implements q, Closeable {
         int a10;
         j.g(bArr);
         j.i(!isClosed());
-        a10 = r.a(i10, i12, this.f10226e);
-        r.b(i10, bArr.length, i11, a10, this.f10226e);
-        nativeCopyFromByteArray(this.f10225d + i10, bArr, i11, a10);
+        a10 = r.a(i10, i12, this.f10611e);
+        r.b(i10, bArr.length, i11, a10, this.f10611e);
+        nativeCopyFromByteArray(this.f10610d + i10, bArr, i11, a10);
         return a10;
     }
 
     @Override // va.q
     public synchronized boolean isClosed() {
-        return this.f10227i;
+        return this.f10612i;
     }
 
     @Override // va.q
-    public void l(int i10, q qVar, int i11, int i12) {
+    public void k(int i10, q qVar, int i11, int i12) {
         j.g(qVar);
         if (qVar.a() == a()) {
-            Log.w("NativeMemoryChunk", "Copying from NativeMemoryChunk " + Integer.toHexString(System.identityHashCode(this)) + " to NativeMemoryChunk " + Integer.toHexString(System.identityHashCode(qVar)) + " which share the same address " + Long.toHexString(this.f10225d));
+            Log.w("NativeMemoryChunk", "Copying from NativeMemoryChunk " + Integer.toHexString(System.identityHashCode(this)) + " to NativeMemoryChunk " + Integer.toHexString(System.identityHashCode(qVar)) + " which share the same address " + Long.toHexString(this.f10610d));
             j.b(Boolean.FALSE);
         }
         if (qVar.a() < a()) {
             synchronized (qVar) {
                 synchronized (this) {
-                    n(i10, qVar, i11, i12);
+                    m(i10, qVar, i11, i12);
                 }
             }
             return;
         }
         synchronized (this) {
             synchronized (qVar) {
-                n(i10, qVar, i11, i12);
+                m(i10, qVar, i11, i12);
             }
         }
     }
 
     @Override // va.q
-    public synchronized int o(int i10, byte[] bArr, int i11, int i12) {
+    public synchronized int p(int i10, byte[] bArr, int i11, int i12) {
         int a10;
         j.g(bArr);
         j.i(!isClosed());
-        a10 = r.a(i10, i12, this.f10226e);
-        r.b(i10, bArr.length, i11, a10, this.f10226e);
-        nativeCopyToByteArray(this.f10225d + i10, bArr, i11, a10);
+        a10 = r.a(i10, i12, this.f10611e);
+        r.b(i10, bArr.length, i11, a10, this.f10611e);
+        nativeCopyToByteArray(this.f10610d + i10, bArr, i11, a10);
         return a10;
     }
 
     @Override // va.q
-    public ByteBuffer p() {
+    public ByteBuffer q() {
         return null;
     }
 
     @Override // va.q
-    public synchronized byte w(int i10) {
+    public synchronized byte x(int i10) {
         boolean z10;
         boolean z11 = true;
         j.i(!isClosed());
@@ -159,16 +159,16 @@ public class NativeMemoryChunk implements q, Closeable {
             z10 = false;
         }
         j.b(Boolean.valueOf(z10));
-        if (i10 >= this.f10226e) {
+        if (i10 >= this.f10611e) {
             z11 = false;
         }
         j.b(Boolean.valueOf(z11));
-        return nativeReadByte(this.f10225d + i10);
+        return nativeReadByte(this.f10610d + i10);
     }
 
     public NativeMemoryChunk() {
-        this.f10226e = 0;
-        this.f10225d = 0L;
-        this.f10227i = true;
+        this.f10611e = 0;
+        this.f10610d = 0L;
+        this.f10612i = true;
     }
 }

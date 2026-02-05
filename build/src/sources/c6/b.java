@@ -10,13 +10,13 @@ import java.util.List;
 public class b implements com.android.volley.h {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final g f6966a;
+    protected final g f7384a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f6967b;
+    private final a f7385b;
 
     /* renamed from: c  reason: collision with root package name */
-    protected final c f6968c;
+    protected final c f7386c;
 
     public b(a aVar) {
         this(aVar, new c(RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT));
@@ -32,7 +32,7 @@ public class b implements com.android.volley.h {
         long elapsedRealtime = SystemClock.elapsedRealtime();
         while (true) {
             try {
-                f a10 = this.f6967b.a(nVar, e.c(nVar.getCacheEntry()));
+                f a10 = this.f7385b.a(nVar, e.c(nVar.getCacheEntry()));
                 try {
                     int d10 = a10.d();
                     List c10 = a10.c();
@@ -41,7 +41,7 @@ public class b implements com.android.volley.h {
                     }
                     InputStream a11 = a10.a();
                     if (a11 != null) {
-                        bArr2 = i.c(a11, a10.b(), this.f6968c);
+                        bArr2 = i.c(a11, a10.b(), this.f7386c);
                     } else {
                         bArr2 = new byte[0];
                     }
@@ -79,8 +79,8 @@ public class b implements com.android.volley.h {
     }
 
     public b(a aVar, c cVar) {
-        this.f6967b = aVar;
-        this.f6966a = aVar;
-        this.f6968c = cVar;
+        this.f7385b = aVar;
+        this.f7384a = aVar;
+        this.f7386c = cVar;
     }
 }

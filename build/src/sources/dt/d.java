@@ -1,17 +1,8 @@
 package dt;
 
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.descriptors.SerialDescriptor;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+@Retention(RetentionPolicy.RUNTIME)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d extends x0 {
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public d(SerialDescriptor elementDesc) {
-        super(elementDesc, null);
-        Intrinsics.checkNotNullParameter(elementDesc, "elementDesc");
-    }
-
-    @Override // kotlinx.serialization.descriptors.SerialDescriptor
-    public String h() {
-        return "kotlin.Array";
-    }
+public @interface d {
 }

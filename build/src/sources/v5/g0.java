@@ -5,7 +5,7 @@ import w5.c;
 public class g0 implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g0 f51137a = new g0();
+    public static final g0 f51826a = new g0();
 
     private g0() {
     }
@@ -14,13 +14,13 @@ public class g0 implements n0 {
     /* renamed from: b */
     public y5.d a(w5.c cVar, float f10) {
         boolean z10;
-        if (cVar.n() == c.b.BEGIN_ARRAY) {
+        if (cVar.m() == c.b.BEGIN_ARRAY) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (z10) {
-            cVar.u();
+            cVar.v();
         }
         float nextDouble = (float) cVar.nextDouble();
         float nextDouble2 = (float) cVar.nextDouble();
@@ -28,7 +28,7 @@ public class g0 implements n0 {
             cVar.P();
         }
         if (z10) {
-            cVar.s();
+            cVar.t();
         }
         return new y5.d((nextDouble / 100.0f) * f10, (nextDouble2 / 100.0f) * f10);
     }

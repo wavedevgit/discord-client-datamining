@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var7;
     var4 = function arg0() {
-        _fun47984: for (var _fun47984_ip = 0;;) switch (_fun47984_ip) {
+        _fun47994: for (var _fun47994_ip = 0;;) switch (_fun47994_ip) {
             case 0:
                 var4 = arg0;
                 var1 = _closure1_slot3;
@@ -16,8 +16,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var1)(var4);
                 var1 = null;
                 if (!(var1 == var0)) {
-                    _fun47984_ip = 58;
-                    continue _fun47984
+                    _fun47994_ip = 58;
+                    continue _fun47994
                 }
             case 26:
                 var5 = _closure1_slot4;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.parseBioReact = var5;
     var2.getOrParseBioAST = var4;
     var3 = function arg0() {
-        _fun47986: for (var _fun47986_ip = 0;;) switch (_fun47986_ip) {
+        _fun47996: for (var _fun47996_ip = 0;;) switch (_fun47996_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.trim;
@@ -132,8 +132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.length;
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun47986_ip = 105;
-                    continue _fun47986
+                    _fun47996_ip = 105;
+                    continue _fun47996
                 }
             case 24:
                 var1 = _closure1_slot5;
@@ -162,4 +162,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.parseBioReactWithCachedAST = var3;
     var2.parseBioReactWithoutScrolling = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4782, 4783, 3939, 1386, 4865, 4781, 3146, 22, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4784, 4785, 3939, 1386, 4867, 4783, 3146, 22, 2]);

@@ -11,15 +11,15 @@ public final class c extends o {
     class a extends j {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f40354a;
+        final /* synthetic */ int f39814a;
 
         a(int i10) {
-            this.f40354a = i10;
+            this.f39814a = i10;
         }
 
         @Override // net.time4j.calendar.j
         public int d() {
-            return (((this.f40354a - 1) * 60) + c.this.getNumber()) - 1;
+            return (((this.f39814a - 1) * 60) + c.this.getNumber()) - 1;
         }
     }
 
@@ -47,11 +47,11 @@ public final class c extends o {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static c s(CharSequence charSequence, ParsePosition parsePosition, Locale locale, boolean z10) {
-        o o10 = o.o(charSequence, parsePosition, locale, z10);
-        if (o10 == null) {
+        o n10 = o.n(charSequence, parsePosition, locale, z10);
+        if (n10 == null) {
             return null;
         }
-        return r(o10.getNumber());
+        return r(n10.getNumber());
     }
 
     public j q(int i10) {

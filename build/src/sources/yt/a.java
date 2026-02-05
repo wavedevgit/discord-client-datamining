@@ -1,124 +1,174 @@
 package yt;
 
-import java.net.Authenticator;
-import java.net.InetAddress;
-import java.net.InetSocketAddress;
-import java.net.PasswordAuthentication;
-import java.net.Proxy;
-import java.net.SocketAddress;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
-import okhttp3.HttpUrl;
-import okhttp3.Request;
-import okhttp3.Response;
-import wt.d;
-import wt.g;
-import wt.h;
-import wt.k;
+import java.io.File;
+import java.io.FileDescriptor;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.channels.FileChannel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements wt.a {
+public abstract class a {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static boolean f54914a = false;
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final int f54915b = d(new byte[]{102, 114, 101, 101});
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final int f54916c = d(new byte[]{106, 117, 110, 107});
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f55333d;
+    private static final int f54917d = d(new byte[]{109, 100, 97, 116});
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final int f54918e = d(new byte[]{109, 111, 111, 118});
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final int f54919f = d(new byte[]{112, 110, 111, 116});
+
+    /* renamed from: g  reason: collision with root package name */
+    private static final int f54920g = d(new byte[]{115, 107, 105, 112});
+
+    /* renamed from: h  reason: collision with root package name */
+    private static final int f54921h = d(new byte[]{119, 105, 100, 101});
+
+    /* renamed from: i  reason: collision with root package name */
+    private static final int f54922i = d(new byte[]{80, 73, 67, 84});
+
+    /* renamed from: j  reason: collision with root package name */
+    private static final int f54923j = d(new byte[]{102, 116, 121, 112});
+
+    /* renamed from: k  reason: collision with root package name */
+    private static final int f54924k = d(new byte[]{117, 117, 105, 100});
+
+    /* renamed from: l  reason: collision with root package name */
+    private static final int f54925l = d(new byte[]{99, 109, 111, 118});
+
+    /* renamed from: m  reason: collision with root package name */
+    private static final int f54926m = d(new byte[]{115, 116, 99, 111});
+
+    /* renamed from: n  reason: collision with root package name */
+    private static final int f54927n = d(new byte[]{99, 111, 54, 52});
 
     /* renamed from: yt.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public /* synthetic */ class C0771a {
+    public static class C0769a extends b {
+        private C0769a(String str) {
+            super(str);
+        }
+    }
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f55334a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static class b extends Exception {
+        private b(String str) {
+            super(str);
+        }
+    }
 
-        static {
-            int[] iArr = new int[Proxy.Type.values().length];
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static class c extends b {
+        private c(String str) {
+            super(str);
+        }
+    }
+
+    public static boolean a(FileDescriptor fileDescriptor, File file) {
+        return c(new FileInputStream(fileDescriptor), file);
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:103:0x00ed A[EDGE_INSN: B:103:0x00ed->B:40:0x00ed ?: BREAK  , SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private static boolean b(java.nio.channels.FileChannel r24, java.nio.channels.FileChannel r25) {
+        /*
+            Method dump skipped, instructions count: 564
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: yt.a.b(java.nio.channels.FileChannel, java.nio.channels.FileChannel):boolean");
+    }
+
+    private static boolean c(FileInputStream fileInputStream, File file) {
+        FileOutputStream fileOutputStream = null;
+        try {
+            FileChannel channel = fileInputStream.getChannel();
+            FileOutputStream fileOutputStream2 = new FileOutputStream(file);
             try {
-                iArr[Proxy.Type.DIRECT.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
+                boolean b10 = b(channel, fileOutputStream2.getChannel());
+                fileInputStream.close();
+                fileOutputStream2.close();
+                return b10;
+            } catch (Throwable th2) {
+                th = th2;
+                fileOutputStream = fileOutputStream2;
+                fileInputStream.close();
+                if (fileOutputStream != null) {
+                    fileOutputStream.close();
+                }
+                throw th;
             }
-            f55334a = iArr;
+        } catch (Throwable th3) {
+            th = th3;
         }
     }
 
-    public a(h defaultDns) {
-        Intrinsics.checkNotNullParameter(defaultDns, "defaultDns");
-        this.f55333d = defaultDns;
+    private static int d(byte[] bArr) {
+        return ByteBuffer.wrap(bArr).order(ByteOrder.BIG_ENDIAN).getInt();
     }
 
-    private final InetAddress b(Proxy proxy, HttpUrl httpUrl, h hVar) {
-        int i10;
-        Proxy.Type type = proxy.type();
-        if (type == null) {
-            i10 = -1;
-        } else {
-            i10 = C0771a.f55334a[type.ordinal()];
+    private static void e(String str, Object... objArr) {
+        if (f54914a) {
+            PrintStream printStream = System.err;
+            printStream.println("QtFastStart: " + String.format(str, objArr));
         }
-        if (i10 == 1) {
-            return (InetAddress) CollectionsKt.o0(hVar.lookup(httpUrl.i()));
-        }
-        SocketAddress address = proxy.address();
-        Intrinsics.checkNotNull(address, "null cannot be cast to non-null type java.net.InetSocketAddress");
-        InetAddress address2 = ((InetSocketAddress) address).getAddress();
-        Intrinsics.checkNotNullExpressionValue(address2, "address() as InetSocketAddress).address");
-        return address2;
     }
 
-    @Override // wt.a
-    public Request a(k kVar, Response response) {
-        boolean z10;
-        Proxy proxy;
-        h hVar;
-        PasswordAuthentication requestPasswordAuthentication;
-        String str;
-        okhttp3.a a10;
-        Intrinsics.checkNotNullParameter(response, "response");
-        List<d> F = response.F();
-        Request Z0 = response.Z0();
-        HttpUrl n10 = Z0.n();
-        if (response.L() == 407) {
-            z10 = true;
-        } else {
-            z10 = false;
+    private static boolean f(FileChannel fileChannel, ByteBuffer byteBuffer) {
+        byteBuffer.clear();
+        int read = fileChannel.read(byteBuffer);
+        byteBuffer.flip();
+        if (read == byteBuffer.capacity()) {
+            return true;
         }
-        if (kVar == null || (proxy = kVar.b()) == null) {
-            proxy = Proxy.NO_PROXY;
-        }
-        for (d dVar : F) {
-            if (StringsKt.A("Basic", dVar.c(), true)) {
-                if (kVar == null || (a10 = kVar.a()) == null || (hVar = a10.c()) == null) {
-                    hVar = this.f55333d;
-                }
-                if (z10) {
-                    SocketAddress address = proxy.address();
-                    Intrinsics.checkNotNull(address, "null cannot be cast to non-null type java.net.InetSocketAddress");
-                    InetSocketAddress inetSocketAddress = (InetSocketAddress) address;
-                    String hostName = inetSocketAddress.getHostName();
-                    Intrinsics.checkNotNullExpressionValue(proxy, "proxy");
-                    requestPasswordAuthentication = Authenticator.requestPasswordAuthentication(hostName, b(proxy, n10, hVar), inetSocketAddress.getPort(), n10.s(), dVar.b(), dVar.c(), n10.u(), Authenticator.RequestorType.PROXY);
-                } else {
-                    String i10 = n10.i();
-                    Intrinsics.checkNotNullExpressionValue(proxy, "proxy");
-                    requestPasswordAuthentication = Authenticator.requestPasswordAuthentication(i10, b(proxy, n10, hVar), n10.o(), n10.s(), dVar.b(), dVar.c(), n10.u(), Authenticator.RequestorType.SERVER);
-                }
-                if (requestPasswordAuthentication != null) {
-                    if (z10) {
-                        str = "Proxy-Authorization";
-                    } else {
-                        str = "Authorization";
-                    }
-                    String userName = requestPasswordAuthentication.getUserName();
-                    Intrinsics.checkNotNullExpressionValue(userName, "auth.userName");
-                    char[] password = requestPasswordAuthentication.getPassword();
-                    Intrinsics.checkNotNullExpressionValue(password, "auth.password");
-                    return Z0.k().e(str, g.a(userName, new String(password), dVar.a())).b();
-                }
-            }
-        }
-        return null;
+        return false;
     }
 
-    public /* synthetic */ a(h hVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? h.f52759b : hVar);
+    private static boolean g(FileChannel fileChannel, ByteBuffer byteBuffer, long j10) {
+        byteBuffer.clear();
+        int read = fileChannel.read(byteBuffer, j10);
+        byteBuffer.flip();
+        if (read == byteBuffer.capacity()) {
+            return true;
+        }
+        return false;
+    }
+
+    static int h(int i10) {
+        if (i10 >= 0) {
+            return i10;
+        }
+        throw new c("uint32 value is too large");
+    }
+
+    static int i(long j10) {
+        if (j10 <= 2147483647L && j10 >= 0) {
+            return (int) j10;
+        }
+        throw new c("uint32 value is too large");
+    }
+
+    static long j(int i10) {
+        return i10 & 4294967295L;
+    }
+
+    static long k(long j10) {
+        if (j10 >= 0) {
+            return j10;
+        }
+        throw new c("uint64 value is too large");
     }
 }

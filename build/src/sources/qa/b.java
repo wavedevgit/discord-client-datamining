@@ -15,25 +15,25 @@ import sa.o;
 public class b implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f47453a;
+    private final c f47517a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f47454b;
+    private final c f47518b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f47455c;
+    private final c f47519c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final wa.d f47456d;
+    private final wa.d f47520d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Supplier f47457e;
+    private final Supplier f47521e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final c f47458f;
+    private final c f47522f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Map f47459g;
+    private final Map f47523g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements c {
@@ -44,28 +44,28 @@ public class b implements c {
         public sa.e a(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions) {
             ColorSpace colorSpace;
             fa.c L = kVar.L();
-            if (((Boolean) b.this.f47457e.get()).booleanValue()) {
-                colorSpace = imageDecodeOptions.f10053k;
+            if (((Boolean) b.this.f47521e.get()).booleanValue()) {
+                colorSpace = imageDecodeOptions.f10438k;
                 if (colorSpace == null) {
                     colorSpace = kVar.E();
                 }
             } else {
-                colorSpace = imageDecodeOptions.f10053k;
+                colorSpace = imageDecodeOptions.f10438k;
             }
             ColorSpace colorSpace2 = colorSpace;
-            if (L == fa.b.f23671b) {
+            if (L == fa.b.f22696b) {
                 return b.this.f(kVar, i10, oVar, imageDecodeOptions, colorSpace2);
             }
-            if (L == fa.b.f23673d) {
+            if (L == fa.b.f22698d) {
                 return b.this.e(kVar, i10, oVar, imageDecodeOptions);
             }
-            if (L == fa.b.f23680k) {
+            if (L == fa.b.f22705k) {
                 return b.this.d(kVar, i10, oVar, imageDecodeOptions);
             }
-            if (L == fa.b.f23683n) {
+            if (L == fa.b.f22708n) {
                 return b.this.h(kVar, i10, oVar, imageDecodeOptions);
             }
-            if (L != fa.c.f23687d) {
+            if (L != fa.c.f22712d) {
                 return b.this.g(kVar, imageDecodeOptions);
             }
             throw new qa.a("unknown image format", kVar);
@@ -78,7 +78,7 @@ public class b implements c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public sa.e h(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions) {
-        c cVar = this.f47455c;
+        c cVar = this.f47519c;
         if (cVar != null) {
             return cVar.a(kVar, i10, oVar, imageDecodeOptions);
         }
@@ -89,25 +89,25 @@ public class b implements c {
     public sa.e a(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions) {
         InputStream N;
         c cVar;
-        c cVar2 = imageDecodeOptions.f10052j;
+        c cVar2 = imageDecodeOptions.f10437j;
         if (cVar2 != null) {
             return cVar2.a(kVar, i10, oVar, imageDecodeOptions);
         }
         fa.c L = kVar.L();
-        if ((L == null || L == fa.c.f23687d) && (N = kVar.N()) != null) {
+        if ((L == null || L == fa.c.f22712d) && (N = kVar.N()) != null) {
             L = fa.e.d(N);
             kVar.B1(L);
         }
-        Map map = this.f47459g;
+        Map map = this.f47523g;
         if (map != null && (cVar = (c) map.get(L)) != null) {
             return cVar.a(kVar, i10, oVar, imageDecodeOptions);
         }
-        return this.f47458f.a(kVar, i10, oVar, imageDecodeOptions);
+        return this.f47522f.a(kVar, i10, oVar, imageDecodeOptions);
     }
 
     public sa.e d(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions) {
         c cVar;
-        if (!imageDecodeOptions.f10049g && (cVar = this.f47454b) != null) {
+        if (!imageDecodeOptions.f10434g && (cVar = this.f47518b) != null) {
             return cVar.a(kVar, i10, oVar, imageDecodeOptions);
         }
         return g(kVar, imageDecodeOptions);
@@ -116,7 +116,7 @@ public class b implements c {
     public sa.e e(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions) {
         c cVar;
         if (kVar.getWidth() != -1 && kVar.getHeight() != -1) {
-            if (!imageDecodeOptions.f10049g && (cVar = this.f47453a) != null) {
+            if (!imageDecodeOptions.f10434g && (cVar = this.f47517a) != null) {
                 return cVar.a(kVar, i10, oVar, imageDecodeOptions);
             }
             return g(kVar, imageDecodeOptions);
@@ -125,42 +125,42 @@ public class b implements c {
     }
 
     public sa.f f(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions, ColorSpace colorSpace) {
-        CloseableReference b10 = this.f47456d.b(kVar, imageDecodeOptions.f10050h, null, i10, colorSpace);
+        CloseableReference b10 = this.f47520d.b(kVar, imageDecodeOptions.f10435h, null, i10, colorSpace);
         try {
             ab.b.a(null, b10);
             j.g(b10);
-            sa.f K0 = sa.f.K0(b10, oVar, kVar.q1(), kVar.b1());
-            K0.B("is_rounded", false);
-            return K0;
+            sa.f L0 = sa.f.L0(b10, oVar, kVar.q1(), kVar.b1());
+            L0.y("is_rounded", false);
+            return L0;
         } finally {
             CloseableReference.N(b10);
         }
     }
 
     public sa.f g(k kVar, ImageDecodeOptions imageDecodeOptions) {
-        CloseableReference a10 = this.f47456d.a(kVar, imageDecodeOptions.f10050h, null, imageDecodeOptions.f10053k);
+        CloseableReference a10 = this.f47520d.a(kVar, imageDecodeOptions.f10435h, null, imageDecodeOptions.f10438k);
         try {
             ab.b.a(null, a10);
             j.g(a10);
-            sa.f K0 = sa.f.K0(a10, n.f49366d, kVar.q1(), kVar.b1());
-            K0.B("is_rounded", false);
-            return K0;
+            sa.f L0 = sa.f.L0(a10, n.f49515d, kVar.q1(), kVar.b1());
+            L0.y("is_rounded", false);
+            return L0;
         } finally {
             CloseableReference.N(a10);
         }
     }
 
     public b(c cVar, c cVar2, c cVar3, wa.d dVar, Map map) {
-        this(cVar, cVar2, cVar3, dVar, map, m.f42428b);
+        this(cVar, cVar2, cVar3, dVar, map, m.f42334b);
     }
 
     public b(c cVar, c cVar2, c cVar3, wa.d dVar, Map map, Supplier supplier) {
-        this.f47458f = new a();
-        this.f47453a = cVar;
-        this.f47454b = cVar2;
-        this.f47455c = cVar3;
-        this.f47456d = dVar;
-        this.f47459g = map;
-        this.f47457e = supplier;
+        this.f47522f = new a();
+        this.f47517a = cVar;
+        this.f47518b = cVar2;
+        this.f47519c = cVar3;
+        this.f47520d = dVar;
+        this.f47523g = map;
+        this.f47521e = supplier;
     }
 }

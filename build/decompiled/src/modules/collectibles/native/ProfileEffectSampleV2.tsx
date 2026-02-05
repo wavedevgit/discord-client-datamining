@@ -85,165 +85,179 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/ProfileEffectSampleV2.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56869: for (var _fun56869_ip = 0;;) switch (_fun56869_ip) {
+        _fun56893: for (var _fun56893_ip = 0;;) switch (_fun56893_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.item;
-                var6 = var0.isPurchased;
-                var9 = var0.isDarkTheme;
-                var11 = var0.bundle;
-                var0 = _closure1_slot7;
+                var7 = var0.isPurchased;
+                var10 = var0.isDarkTheme;
+                var12 = var0.bundle;
+                var6 = var0.showGradient;
                 var3 = undefined;
-                var12 = var0.bind(var3)();
+                if (!(var6 === var3)) {
+                    _fun56893_ip = 40;
+                    continue _fun56893
+                }
+            case 38:
+                var6 = true;
+            case 40:
+                var0 = _closure1_slot7;
+                var13 = var0.bind(var3)();
                 var1 = _closure1_slot0;
-                var7 = _closure1_slot2;
+                var9 = _closure1_slot2;
                 var0 = 4;
-                var0 = var7[var0];
+                var0 = var9[var0];
                 var2 = var1.bind(var3)(var0);
                 var1 = var2.useToken;
                 var4 = _closure1_slot1;
                 var0 = 3;
-                var0 = var7[var0];
+                var0 = var9[var0];
                 var0 = var4.bind(var3)(var0);
                 var0 = var0.colors;
                 var0 = var0.BACKGROUND_BASE_LOW;
-                var17 = var1.bind(var2)(var0);
+                var18 = var1.bind(var2)(var0);
                 var2 = _closure1_slot6;
                 var1 = _closure1_slot3;
                 var0 = {};
-                var7 = var12.profileEffectContainer;
+                var9 = var13.profileEffectContainer;
                 var4 = new Array(2);
+                var4[0] = var9;
+                if (!var7) {
+                    _fun56893_ip = 142;
+                    continue _fun56893
+                }
+            case 136:
+                var7 = var13.purchasedProfileEffect;
+            case 142:
+                var4[1] = var7;
+                var0.style = var4;
+                var9 = _closure1_slot5;
+                var7 = _closure1_slot4;
+                var4 = {};
+                if (var12) {
+                    _fun56893_ip = 171;
+                    continue _fun56893
+                }
+            case 163:
+                var14 = var13.profileSkeletonBackground;
+                _fun56893_ip = 177;
+                continue _fun56893;
+            case 171:
+                var14 = var13.profileSkeletonBackgroundBundle;
+            case 177:
+                var11 = new Array(1);
+                var11[0] = var14;
+                var4.style = var11;
+                var11 = _closure1_slot1;
+                var15 = _closure1_slot2;
+                if (var10) {
+                    _fun56893_ip = 209;
+                    continue _fun56893
+                }
+            case 200:
+                var10 = 6;
+                var10 = var15[var10];
+                _fun56893_ip = 216;
+                continue _fun56893;
+            case 209:
+                var14 = 5;
+                var10 = var15[var14];
+            case 216:
+                var10 = var11.bind(var3)(var10);
+                var4.source = var10;
+                var7 = var9.bind(var3)(var7, var4);
+                var4 = new Array(3);
                 var4[0] = var7;
                 if (!var6) {
-                    _fun56869_ip = 130;
-                    continue _fun56869
+                    _fun56893_ip = 563;
+                    continue _fun56893
                 }
-            case 124:
-                var6 = var12.purchasedProfileEffect;
-            case 130:
-                var4[1] = var6;
-                var0.style = var4;
-                var7 = _closure1_slot5;
-                var6 = _closure1_slot4;
-                var4 = {};
-                if (var11) {
-                    _fun56869_ip = 159;
-                    continue _fun56869
-                }
-            case 151:
-                var13 = var12.profileSkeletonBackground;
-                _fun56869_ip = 165;
-                continue _fun56869;
-            case 159:
-                var13 = var12.profileSkeletonBackgroundBundle;
-            case 165:
-                var10 = new Array(1);
-                var10[0] = var13;
-                var4.style = var10;
-                var10 = _closure1_slot1;
-                var14 = _closure1_slot2;
-                if (var9) {
-                    _fun56869_ip = 197;
-                    continue _fun56869
-                }
-            case 188:
-                var9 = 6;
-                var9 = var14[var9];
-                _fun56869_ip = 204;
-                continue _fun56869;
-            case 197:
-                var13 = 5;
-                var9 = var14[var13];
-            case 204:
-                var9 = var10.bind(var3)(var9);
-                var4.source = var9;
-                var6 = var7.bind(var3)(var6, var4);
-                var4 = new Array(3);
-                var4[0] = var6;
-                var9 = _closure1_slot5;
-                var7 = _closure1_slot1;
-                var10 = _closure1_slot2;
-                var6 = 7;
-                var6 = var10[var6];
-                var7 = var7.bind(var3)(var6);
-                var6 = {};
-                var12 = var12.gradientOverlay;
-                var6.style = var12;
-                var14 = _closure1_slot0;
-                var16 = 8;
-                var12 = var10[var16];
-                var13 = var14.bind(var3)(var12);
-                var12 = var13.hexToRgbaString;
-                var10 = var10[var16];
-                var15 = var14.bind(var3)(var10);
-                var14 = var15.hexWithOpacity;
-                var10 = 0;
-                var10 = var14.bind(var15)(var17, var10);
-                var12 = var12.bind(var13)(var10);
-                var10 = new Array(3);
-                var10[0] = var12;
-                var13 = _closure1_slot0;
-                var12 = _closure1_slot2;
-                var14 = var12[var16];
-                var15 = var13.bind(var3)(var14);
-                var14 = var15.hexToRgbaString;
-                var12 = var12[var16];
-                var19 = var13.bind(var3)(var12);
-                var18 = var19.hexWithOpacity;
-                if (var11) {
-                    _fun56869_ip = 385;
-                    continue _fun56869
-                }
-            case 362:
-                var12 = 0.35;
-                var12 = var18.bind(var19)(var17, var12);
-                var12 = var14.bind(var15)(var12);
-                _fun56869_ip = 406;
-                continue _fun56869;
-            case 385:
-                var13 = 0.75;
-                var13 = var18.bind(var19)(var17, var13);
-                var12 = var14.bind(var15)(var13);
-            case 406:
-                var10[1] = var12;
+            case 245:
+                var10 = _closure1_slot5;
+                var9 = _closure1_slot1;
+                var11 = _closure1_slot2;
+                var7 = 7;
+                var7 = var11[var7];
+                var9 = var9.bind(var3)(var7);
+                var7 = {};
+                var13 = var13.gradientOverlay;
+                var7.style = var13;
                 var15 = _closure1_slot0;
-                var12 = _closure1_slot2;
-                var13 = var12[var16];
+                var17 = 8;
+                var13 = var11[var17];
                 var14 = var15.bind(var3)(var13);
                 var13 = var14.hexToRgbaString;
-                var12 = var12[var16];
-                var16 = var15.bind(var3)(var12);
+                var11 = var11[var17];
+                var16 = var15.bind(var3)(var11);
                 var15 = var16.hexWithOpacity;
-                if (var11) {
-                    _fun56869_ip = 474;
-                    continue _fun56869
+                var11 = 0;
+                var11 = var15.bind(var16)(var18, var11);
+                var13 = var13.bind(var14)(var11);
+                var11 = new Array(3);
+                var11[0] = var13;
+                var14 = _closure1_slot0;
+                var13 = _closure1_slot2;
+                var15 = var13[var17];
+                var16 = var14.bind(var3)(var15);
+                var15 = var16.hexToRgbaString;
+                var13 = var13[var17];
+                var20 = var14.bind(var3)(var13);
+                var19 = var20.hexWithOpacity;
+                if (var12) {
+                    _fun56893_ip = 403;
+                    continue _fun56893
                 }
-            case 451:
-                var11 = 0.7;
-                var11 = var15.bind(var16)(var17, var11);
-                var11 = var13.bind(var14)(var11);
-                _fun56869_ip = 488;
-                continue _fun56869;
-            case 474:
-                var12 = 1;
-                var12 = var15.bind(var16)(var17, var12);
-                var11 = var13.bind(var14)(var12);
-            case 488:
-                var10[2] = var11;
-                var6.colors = var10;
-                var10 = [0, 0.3, 0.6, 0.85, 1];
-                var6.locations = var10;
-                var10 = {
+            case 380:
+                var13 = 0.35;
+                var13 = var19.bind(var20)(var18, var13);
+                var13 = var15.bind(var16)(var13);
+                _fun56893_ip = 424;
+                continue _fun56893;
+            case 403:
+                var14 = 0.75;
+                var14 = var19.bind(var20)(var18, var14);
+                var13 = var15.bind(var16)(var14);
+            case 424:
+                var11[1] = var13;
+                var16 = _closure1_slot0;
+                var13 = _closure1_slot2;
+                var14 = var13[var17];
+                var15 = var16.bind(var3)(var14);
+                var14 = var15.hexToRgbaString;
+                var13 = var13[var17];
+                var17 = var16.bind(var3)(var13);
+                var16 = var17.hexWithOpacity;
+                if (var12) {
+                    _fun56893_ip = 492;
+                    continue _fun56893
+                }
+            case 469:
+                var12 = 0.7;
+                var12 = var16.bind(var17)(var18, var12);
+                var12 = var14.bind(var15)(var12);
+                _fun56893_ip = 506;
+                continue _fun56893;
+            case 492:
+                var13 = 1;
+                var13 = var16.bind(var17)(var18, var13);
+                var12 = var14.bind(var15)(var13);
+            case 506:
+                var11[2] = var12;
+                var7.colors = var11;
+                var11 = [0, 0.3, 0.6, 0.85, 1];
+                var7.locations = var11;
+                var11 = {
                     'x': 0,
                     'y': 0
                 };
-                var6.start = var10;
-                var10 = {
+                var7.start = var11;
+                var11 = {
                     'x': 0,
                     'y': 1
                 };
-                var6.end = var10;
-                var6 = var9.bind(var3)(var7, var6);
+                var7.end = var11;
+                var6 = var10.bind(var3)(var9, var7);
+            case 563:
                 var4[1] = var6;
                 var7 = _closure1_slot5;
                 var6 = _closure1_slot1;
@@ -267,4 +281,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 3151, 6904, 6905, 4098, 3240, 6906, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 3151, 6924, 6925, 4098, 3240, 6926, 2]);

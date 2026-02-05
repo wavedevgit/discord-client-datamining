@@ -3,14 +3,14 @@ package ub;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public long f50464a;
+    public long f51236a;
 
     /* renamed from: b  reason: collision with root package name */
-    public long f50465b;
+    public long f51237b;
 
     /* renamed from: c  reason: collision with root package name */
-    public long f50466c;
+    public long f51238c;
 
     /* renamed from: d  reason: collision with root package name */
-    public long f50467d;
+    public long f51239d;
 }

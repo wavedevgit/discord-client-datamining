@@ -1,43 +1,43 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class r5 implements ui.d {
+final class r5 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r5 f41497a = new r5();
+    static final r5 f40957a = new r5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41498b;
+    private static final xi.c f40958b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41499c;
+    private static final xi.c f40959c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41500d;
+    private static final xi.c f40960d;
 
     static {
-        c.b a10 = ui.c.a("languageOption");
+        c.b a10 = xi.c.a("languageOption");
         f fVar = new f();
         fVar.a(3);
-        f41498b = a10.b(fVar.b()).a();
-        c.b a11 = ui.c.a("isUsingLegacyApi");
+        f40958b = a10.b(fVar.b()).a();
+        c.b a11 = xi.c.a("isUsingLegacyApi");
         f fVar2 = new f();
         fVar2.a(4);
-        f41499c = a11.b(fVar2.b()).a();
-        c.b a12 = ui.c.a("sdkVersion");
+        f40959c = a11.b(fVar2.b()).a();
+        c.b a12 = xi.c.a("sdkVersion");
         f fVar3 = new f();
         fVar3.a(5);
-        f41500d = a12.b(fVar3.b()).a();
+        f40960d = a12.b(fVar3.b()).a();
     }
 
     private r5() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

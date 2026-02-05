@@ -8,15 +8,15 @@ import java.util.UUID;
 public class p extends d1 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f39568b;
+    private final String f39028b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f39569c;
+    private int f39029c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(d0 d0Var) {
         super(d0Var);
-        this.f39568b = "virtual-" + d0Var.b() + "-" + UUID.randomUUID().toString();
+        this.f39028b = "virtual-" + d0Var.b() + "-" + UUID.randomUUID().toString();
     }
 
     @Override // a0.d1, x.o
@@ -26,16 +26,16 @@ public class p extends d1 {
 
     @Override // a0.d1, a0.d0
     public String b() {
-        return this.f39568b;
+        return this.f39028b;
     }
 
     @Override // a0.d1, x.o
     public int j(int i10) {
-        return q.u(super.j(i10) - this.f39569c);
+        return q.u(super.j(i10) - this.f39029c);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void l(int i10) {
-        this.f39569c = i10;
+        this.f39029c = i10;
     }
 }

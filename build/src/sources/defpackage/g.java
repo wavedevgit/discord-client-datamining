@@ -12,12 +12,12 @@ public abstract class g {
 
         /* renamed from: g$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0330a extends a {
+        public static final class C0332a extends a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final C0330a f24826a = new C0330a();
+            public static final C0332a f23525a = new C0332a();
 
-            private C0330a() {
+            private C0332a() {
                 super(null);
             }
         }
@@ -27,7 +27,7 @@ public abstract class g {
         public static final class b extends a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final b f24827a = new b();
+            public static final b f23526a = new b();
 
             private b() {
                 super(null);
@@ -39,7 +39,7 @@ public abstract class g {
         public static final class c extends a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final c f24828a = new c();
+            public static final c f23527a = new c();
 
             private c() {
                 super(null);
@@ -60,32 +60,32 @@ public abstract class g {
     public static final class b extends g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f24829a;
+        private final Object f23528a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(Object value) {
             super(null);
             Intrinsics.checkNotNullParameter(value, "value");
-            this.f24829a = value;
+            this.f23528a = value;
         }
 
         public final Object a() {
-            return this.f24829a;
+            return this.f23528a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof b) && Intrinsics.areEqual(this.f24829a, ((b) obj).f24829a);
+            return (obj instanceof b) && Intrinsics.areEqual(this.f23528a, ((b) obj).f23528a);
         }
 
         public int hashCode() {
-            return this.f24829a.hashCode();
+            return this.f23528a.hashCode();
         }
 
         public String toString() {
-            Object obj = this.f24829a;
+            Object obj = this.f23528a;
             return "Success(value=" + obj + ")";
         }
     }

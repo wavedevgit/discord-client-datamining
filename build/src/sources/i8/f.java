@@ -5,7 +5,7 @@ import i8.a;
 public class f implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static f f28285a;
+    private static f f27274a;
 
     private f() {
     }
@@ -14,10 +14,10 @@ public class f implements a {
         f fVar;
         synchronized (f.class) {
             try {
-                if (f28285a == null) {
-                    f28285a = new f();
+                if (f27274a == null) {
+                    f27274a = new f();
                 }
-                fVar = f28285a;
+                fVar = f27274a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -26,6 +26,6 @@ public class f implements a {
     }
 
     @Override // i8.a
-    public void a(a.EnumC0375a enumC0375a, Class cls, String str, Throwable th2) {
+    public void a(a.EnumC0380a enumC0380a, Class cls, String str, Throwable th2) {
     }
 }

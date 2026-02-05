@@ -1,39 +1,13 @@
 package ji;
-
-import java.io.Serializable;
-import java.util.Comparator;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class l extends i0 implements Serializable {
-
-    /* renamed from: d  reason: collision with root package name */
-    final Comparator f31674d;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public l(Comparator comparator) {
-        this.f31674d = (Comparator) ii.m.j(comparator);
-    }
-
-    @Override // ji.i0, java.util.Comparator
-    public int compare(Object obj, Object obj2) {
-        return this.f31674d.compare(obj, obj2);
-    }
-
-    @Override // java.util.Comparator
-    public boolean equals(Object obj) {
-        if (obj == this) {
+public abstract class l extends k {
+    public static boolean a(Object obj, Object obj2) {
+        if (obj == obj2) {
             return true;
         }
-        if (obj instanceof l) {
-            return this.f31674d.equals(((l) obj).f31674d);
+        if (obj != null && obj.equals(obj2)) {
+            return true;
         }
         return false;
-    }
-
-    public int hashCode() {
-        return this.f31674d.hashCode();
-    }
-
-    public String toString() {
-        return this.f31674d.toString();
     }
 }

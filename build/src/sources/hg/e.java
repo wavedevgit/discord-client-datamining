@@ -1,34 +1,17 @@
 package hg;
-
-import android.os.Binder;
-import android.os.IBinder;
-import android.os.IInterface;
-import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class e extends Binder implements IInterface {
-    /* JADX INFO: Access modifiers changed from: protected */
-    public e(String str) {
-        attachInterface(this, str);
+public final class e extends b {
+    public e() {
+        super(4);
     }
 
-    protected boolean e(int i10, Parcel parcel, Parcel parcel2, int i11) {
-        return false;
-    }
-
-    @Override // android.os.Binder
-    public final boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
-        if (i10 > 16777215) {
-            if (super.onTransact(i10, parcel, parcel2, i11)) {
-                return true;
-            }
-        } else {
-            parcel.enforceInterface(getInterfaceDescriptor());
-        }
-        return e(i10, parcel, parcel2, i11);
-    }
-
-    @Override // android.os.IInterface
-    public final IBinder asBinder() {
+    public final e b(Object obj) {
+        super.a(obj);
         return this;
+    }
+
+    public final i c() {
+        this.f25827c = true;
+        return i.n(this.f25825a, this.f25826b);
     }
 }

@@ -16,19 +16,19 @@ public class b extends CloseableReference {
         String name;
         try {
             synchronized (this) {
-                if (this.f9557d) {
+                if (this.f9942d) {
                     return;
                 }
-                Object f10 = this.f9558e.f();
+                Object f10 = this.f9943e.f();
                 Integer valueOf = Integer.valueOf(System.identityHashCode(this));
-                Integer valueOf2 = Integer.valueOf(System.identityHashCode(this.f9558e));
+                Integer valueOf2 = Integer.valueOf(System.identityHashCode(this.f9943e));
                 if (f10 == null) {
                     name = null;
                 } else {
                     name = f10.getClass().getName();
                 }
                 p8.a.L("FinalizerCloseableReference", "Finalized without closing: %x %x (type = %s)", valueOf, valueOf2, name);
-                this.f9558e.d();
+                this.f9943e.d();
             }
         } finally {
             super.finalize();
@@ -36,7 +36,7 @@ public class b extends CloseableReference {
     }
 
     @Override // com.facebook.common.references.CloseableReference
-    /* renamed from: l */
+    /* renamed from: k */
     public CloseableReference clone() {
         return this;
     }

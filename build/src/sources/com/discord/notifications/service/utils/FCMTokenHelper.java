@@ -10,7 +10,7 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import wg.f;
+import xg.f;
 @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\bÀ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0013\u0010\u0006\u001a\u00020\u0005*\u00020\u0004H\u0002¢\u0006\u0004\b\u0006\u0010\u0007J!\u0010\u000b\u001a\u00020\u00052\u0012\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u00050\b¢\u0006\u0004\b\u000b\u0010\f¨\u0006\r"}, d2 = {"Lcom/discord/notifications/service/utils/FCMTokenHelper;", "", "<init>", "()V", "", "", "logError", "(Ljava/lang/Throwable;)V", "Lkotlin/Function1;", "", "onToken", "getToken", "(Lkotlin/jvm/functions/Function1;)V", "notification_service_androidRelease"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class FCMTokenHelper {
@@ -55,7 +55,7 @@ public final class FCMTokenHelper {
         Intrinsics.checkNotNullParameter(onToken, "onToken");
         try {
             Intrinsics.checkNotNull(FirebaseMessaging.n().q().e(new f() { // from class: t7.a
-                @Override // wg.f
+                @Override // xg.f
                 public final void onFailure(Exception exc) {
                     FCMTokenHelper.getToken$lambda$0(exc);
                 }

@@ -7,7 +7,7 @@ import com.facebook.react.uimanager.ViewProps;
 import java.util.Map;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
-import lr.v;
+import or.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class q {
     public static final Map a(a insets) {

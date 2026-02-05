@@ -41,18 +41,18 @@ public final class AttributeStyles_ButtonBasedBackgroundColorStyleJsonAdapter ex
     @NotNull
     public AttributeStyles.ButtonBasedBackgroundColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.ComplexElementColor complexElementColor = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.ButtonBasedBackgroundColorStyle(complexElementColor);
     }
 
@@ -60,8 +60,8 @@ public final class AttributeStyles_ButtonBasedBackgroundColorStyleJsonAdapter ex
     public void toJson(@NotNull t writer, AttributeStyles.ButtonBasedBackgroundColorStyle buttonBasedBackgroundColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (buttonBasedBackgroundColorStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableComplexElementColorAdapter.toJson(writer, buttonBasedBackgroundColorStyle.getBase());
             writer.E();
             return;

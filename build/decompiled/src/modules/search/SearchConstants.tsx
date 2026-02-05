@@ -471,4 +471,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.SearchQueryTagTypes = var3;
     var2.SearchQuerySource = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 8805, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 8823, 2]);

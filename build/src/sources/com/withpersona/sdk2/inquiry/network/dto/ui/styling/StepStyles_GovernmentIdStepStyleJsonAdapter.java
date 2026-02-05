@@ -127,7 +127,7 @@ public final class StepStyles_GovernmentIdStepStyleJsonAdapter extends h {
     @NotNull
     public StepStyles.GovernmentIdStepStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         AttributeStyles.HeaderButtonColorStyle headerButtonColorStyle = null;
         StepStyles.StepBackgroundColorStyle stepBackgroundColorStyle = null;
         StepStyles.StepBackgroundImageStyle stepBackgroundImageStyle = null;
@@ -147,7 +147,7 @@ public final class StepStyles_GovernmentIdStepStyleJsonAdapter extends h {
         StepStyles.GovernmentIdStepImageLocalStyle governmentIdStepImageLocalStyle = null;
         StepStyles.CombinedStepAlignment combinedStepAlignment = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -208,7 +208,7 @@ public final class StepStyles_GovernmentIdStepStyleJsonAdapter extends h {
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.GovernmentIdStepStyle(headerButtonColorStyle, stepBackgroundColorStyle, stepBackgroundImageStyle, governmentIdStepTitleComponentStyle, governmentIdStepTextBasedComponentStyle, governmentIdStepPrimaryButtonComponentStyle, governmentIdStepSecondaryButtonComponentStyle, stepTextBasedComponentStyle, governmentIdStepRowHeight, governmentIdStepStrokeColor, governmentIdStepFillColor, governmentIdStepBorderColor, governmentIdStepBorderRadius, governmentIdStepBorderWidth, stepPaddingStyle, governmentIdStepInputSelectStyle, governmentIdStepImageLocalStyle, combinedStepAlignment);
     }
 
@@ -216,42 +216,42 @@ public final class StepStyles_GovernmentIdStepStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.GovernmentIdStepStyle governmentIdStepStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepStyle != null) {
-            writer.l();
-            writer.A0("textColor");
+            writer.k();
+            writer.W("textColor");
             this.nullableHeaderButtonColorStyleAdapter.toJson(writer, governmentIdStepStyle.getHeaderButtonColor());
-            writer.A0(ViewProps.BACKGROUND_COLOR);
+            writer.W(ViewProps.BACKGROUND_COLOR);
             this.nullableStepBackgroundColorStyleAdapter.toJson(writer, governmentIdStepStyle.getBackgroundColor());
-            writer.A0("backgroundImage");
+            writer.W("backgroundImage");
             this.nullableStepBackgroundImageStyleAdapter.toJson(writer, governmentIdStepStyle.getBackgroundImage());
-            writer.A0("titleStyle");
+            writer.W("titleStyle");
             this.nullableGovernmentIdStepTitleComponentStyleAdapter.toJson(writer, governmentIdStepStyle.getTitleStyle());
-            writer.A0("textStyle");
+            writer.W("textStyle");
             this.nullableGovernmentIdStepTextBasedComponentStyleAdapter.toJson(writer, governmentIdStepStyle.getTextStyle());
-            writer.A0("buttonPrimaryStyle");
+            writer.W("buttonPrimaryStyle");
             this.nullableGovernmentIdStepPrimaryButtonComponentStyleAdapter.toJson(writer, governmentIdStepStyle.getButtonPrimaryStyle());
-            writer.A0("buttonSecondaryStyle");
+            writer.W("buttonSecondaryStyle");
             this.nullableGovernmentIdStepSecondaryButtonComponentStyleAdapter.toJson(writer, governmentIdStepStyle.getButtonSecondaryStyle());
-            writer.A0("disclaimerStyle");
+            writer.W("disclaimerStyle");
             this.nullableStepTextBasedComponentStyleAdapter.toJson(writer, governmentIdStepStyle.getDisclaimerStyle());
-            writer.A0("height");
+            writer.W("height");
             this.nullableGovernmentIdStepRowHeightAdapter.toJson(writer, governmentIdStepStyle.getHeight());
-            writer.A0("strokeColor");
+            writer.W("strokeColor");
             this.nullableGovernmentIdStepStrokeColorAdapter.toJson(writer, governmentIdStepStyle.getStrokeColor());
-            writer.A0("fillColor");
+            writer.W("fillColor");
             this.nullableGovernmentIdStepFillColorAdapter.toJson(writer, governmentIdStepStyle.getFillColor());
-            writer.A0(ViewProps.BORDER_COLOR);
+            writer.W(ViewProps.BORDER_COLOR);
             this.nullableGovernmentIdStepBorderColorAdapter.toJson(writer, governmentIdStepStyle.getBorderColor());
-            writer.A0("borderRadius");
+            writer.W("borderRadius");
             this.nullableGovernmentIdStepBorderRadiusAdapter.toJson(writer, governmentIdStepStyle.getBorderRadius());
-            writer.A0(ViewProps.BORDER_WIDTH);
+            writer.W(ViewProps.BORDER_WIDTH);
             this.nullableGovernmentIdStepBorderWidthAdapter.toJson(writer, governmentIdStepStyle.getBorderWidth());
-            writer.A0(ViewProps.PADDING);
+            writer.W(ViewProps.PADDING);
             this.nullableStepPaddingStyleAdapter.toJson(writer, governmentIdStepStyle.getPadding());
-            writer.A0("inputSelectStyle");
+            writer.W("inputSelectStyle");
             this.nullableGovernmentIdStepInputSelectStyleAdapter.toJson(writer, governmentIdStepStyle.getInputSelectStyle());
-            writer.A0("imageLocalStyle");
+            writer.W("imageLocalStyle");
             this.nullableGovernmentIdStepImageLocalStyleAdapter.toJson(writer, governmentIdStepStyle.getImageLocalStyle());
-            writer.A0("alignment");
+            writer.W("alignment");
             this.nullableCombinedStepAlignmentAdapter.toJson(writer, governmentIdStepStyle.getAlignment());
             writer.E();
             return;

@@ -78,23 +78,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'handleFileSystemStoreChanged';
         var0.key = var5;
         var5 = function() {
-            _fun93337: for (var _fun93337_ip = 0;;) switch (_fun93337_ip) {
+            _fun93356: for (var _fun93356_ip = 0;;) switch (_fun93356_ip) {
                 case 0:
                     var1 = this;
                     var0 = _closure1_slot4;
                     var0 = var0.isLowDisk;
                     var3 = var0;
                     if (!var3) {
-                        _fun93337_ip = 32;
-                        continue _fun93337
+                        _fun93356_ip = 32;
+                        continue _fun93356
                     }
                 case 22:
                     var4 = var1.isLowDisk;
                     var3 = var4 !== var0;
                 case 32:
                     if (!var3) {
-                        _fun93337_ip = 83;
-                        continue _fun93337
+                        _fun93356_ip = 83;
+                        continue _fun93356
                     }
                 case 35:
                     var4 = _closure1_slot0;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var2.bind(var3)();
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun93337_ip = 83;
-                        continue _fun93337
+                        _fun93356_ip = 83;
+                        continue _fun93356
                     }
                 case 73:
                     var2 = var3.incrementalVacuum;

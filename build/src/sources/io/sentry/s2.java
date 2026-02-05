@@ -4,23 +4,23 @@ package io.sentry;
 public final class s2 implements y0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final s2 f30643a = new s2();
+    private static final s2 f29701a = new s2();
 
     private s2() {
     }
 
     public static s2 n() {
-        return f30643a;
+        return f29701a;
     }
 
     @Override // io.sentry.y0
     public io.sentry.protocol.x a(l7 l7Var, IScope iScope, Hint hint) {
-        return io.sentry.protocol.x.f30413e;
+        return io.sentry.protocol.x.f29471e;
     }
 
     @Override // io.sentry.y0
     public io.sentry.protocol.x b(io.sentry.protocol.d0 d0Var, q8 q8Var, IScope iScope, Hint hint, q3 q3Var) {
-        return io.sentry.protocol.x.f30413e;
+        return io.sentry.protocol.x.f29471e;
     }
 
     @Override // io.sentry.y0
@@ -32,7 +32,7 @@ public final class s2 implements y0 {
     }
 
     @Override // io.sentry.y0
-    public void g(z7 z7Var, Hint hint) {
+    public void f(z7 z7Var, Hint hint) {
     }
 
     @Override // io.sentry.y0
@@ -51,16 +51,16 @@ public final class s2 implements y0 {
 
     @Override // io.sentry.y0
     public io.sentry.protocol.x k(m3 m3Var, IScope iScope) {
-        return io.sentry.protocol.x.f30413e;
+        return io.sentry.protocol.x.f29471e;
     }
 
     @Override // io.sentry.y0
-    public io.sentry.protocol.x l(SentryEvent sentryEvent, IScope iScope, Hint hint) {
-        return io.sentry.protocol.x.f30413e;
+    public io.sentry.protocol.x l(l5 l5Var, Hint hint) {
+        return io.sentry.protocol.x.f29471e;
     }
 
     @Override // io.sentry.y0
-    public io.sentry.protocol.x m(l5 l5Var, Hint hint) {
-        return io.sentry.protocol.x.f30413e;
+    public io.sentry.protocol.x m(SentryEvent sentryEvent, IScope iScope, Hint hint) {
+        return io.sentry.protocol.x.f29471e;
     }
 }

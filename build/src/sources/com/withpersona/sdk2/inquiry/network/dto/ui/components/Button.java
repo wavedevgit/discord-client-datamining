@@ -63,7 +63,7 @@ public interface Button extends UiComponentConfig {
         static {
             ButtonType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = sr.a.a($values);
+            $ENTRIES = vr.a.a($values);
             Companion = new Companion(null);
         }
 

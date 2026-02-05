@@ -3,15 +3,15 @@ package net.time4j;
 import java.text.ParsePosition;
 import java.util.Locale;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-enum d implements d1, pt.e {
+enum d implements d1, st.e {
     AM_PM_OF_DAY;
 
-    private nt.s a(Locale locale, nt.v vVar, nt.m mVar) {
-        return nt.b.d(locale).h(vVar, mVar);
+    private qt.s a(Locale locale, qt.v vVar, qt.m mVar) {
+        return qt.b.d(locale).h(vVar, mVar);
     }
 
-    private nt.s h(mt.d dVar) {
-        return nt.b.d((Locale) dVar.b(nt.a.f42028c, Locale.ROOT)).h((nt.v) dVar.b(nt.a.f42032g, nt.v.WIDE), (nt.m) dVar.b(nt.a.f42033h, nt.m.FORMAT));
+    private qt.s h(pt.d dVar) {
+        return qt.b.d((Locale) dVar.a(qt.a.f48088c, Locale.ROOT)).h((qt.v) dVar.a(qt.a.f48092g, qt.v.WIDE), (qt.m) dVar.a(qt.a.f48093h, qt.m.FORMAT));
     }
 
     static z x(CharSequence charSequence, ParsePosition parsePosition) {
@@ -36,47 +36,52 @@ enum d implements d1, pt.e {
         return null;
     }
 
-    @Override // mt.p
-    public boolean C() {
+    @Override // pt.p
+    public boolean B() {
         return true;
     }
 
-    @Override // mt.p
+    @Override // pt.p
     public char d() {
         return 'a';
     }
 
-    @Override // mt.p
+    @Override // st.e
+    public void f(pt.o oVar, Appendable appendable, Locale locale, qt.v vVar, qt.m mVar) {
+        appendable.append(a(locale, vVar, mVar).f((Enum) oVar.v(this)));
+    }
+
+    @Override // pt.p
     public Class getType() {
         return z.class;
     }
 
-    @Override // mt.p
-    public boolean k() {
+    @Override // java.util.Comparator
+    /* renamed from: k */
+    public int compare(pt.o oVar, pt.o oVar2) {
+        return ((z) oVar.v(this)).compareTo((z) oVar2.v(this));
+    }
+
+    @Override // pt.p
+    public boolean l() {
         return false;
     }
 
-    @Override // java.util.Comparator
-    /* renamed from: l */
-    public int compare(mt.o oVar, mt.o oVar2) {
-        return ((z) oVar.o(this)).compareTo((z) oVar2.o(this));
-    }
-
-    @Override // mt.p
-    /* renamed from: o */
-    public z f() {
+    @Override // pt.p
+    /* renamed from: m */
+    public z e() {
         return z.PM;
     }
 
-    @Override // mt.p
-    /* renamed from: q */
+    @Override // pt.p
+    /* renamed from: p */
     public z A() {
         return z.AM;
     }
 
-    @Override // pt.e
+    @Override // st.e
     /* renamed from: r */
-    public z g(CharSequence charSequence, ParsePosition parsePosition, Locale locale, nt.v vVar, nt.m mVar, nt.g gVar) {
+    public z i(CharSequence charSequence, ParsePosition parsePosition, Locale locale, qt.v vVar, qt.m mVar, qt.g gVar) {
         z x10 = x(charSequence, parsePosition);
         if (x10 == null) {
             return (z) a(locale, vVar, mVar).d(charSequence, parsePosition, getType(), gVar);
@@ -84,19 +89,14 @@ enum d implements d1, pt.e {
         return x10;
     }
 
-    @Override // nt.t
-    public void s(mt.o oVar, Appendable appendable, mt.d dVar) {
-        appendable.append(h(dVar).f((Enum) oVar.o(this)));
+    @Override // qt.t
+    public void s(pt.o oVar, Appendable appendable, pt.d dVar) {
+        appendable.append(h(dVar).f((Enum) oVar.v(this)));
     }
 
-    @Override // pt.e
-    public void v(mt.o oVar, Appendable appendable, Locale locale, nt.v vVar, nt.m mVar) {
-        appendable.append(a(locale, vVar, mVar).f((Enum) oVar.o(this)));
-    }
-
-    @Override // nt.t
+    @Override // qt.t
     /* renamed from: w */
-    public z j(CharSequence charSequence, ParsePosition parsePosition, mt.d dVar) {
+    public z t(CharSequence charSequence, ParsePosition parsePosition, pt.d dVar) {
         z x10 = x(charSequence, parsePosition);
         if (x10 == null) {
             return (z) h(dVar).c(charSequence, parsePosition, getType(), dVar);
@@ -104,8 +104,8 @@ enum d implements d1, pt.e {
         return x10;
     }
 
-    @Override // mt.p
-    public boolean y() {
+    @Override // pt.p
+    public boolean z() {
         return false;
     }
 }

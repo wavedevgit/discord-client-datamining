@@ -6,37 +6,37 @@ import com.facebook.common.references.CloseableReference;
 public class j implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w0 f10398a;
+    private final w0 f10783a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f10399b;
+    private final int f10784b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f10400c;
+    private final int f10785c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f10401d;
+    private final boolean f10786d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static class a extends s {
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f10402c;
+        private final int f10787c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f10403d;
+        private final int f10788d;
 
         a(Consumer consumer, int i10, int i11) {
             super(consumer);
-            this.f10402c = i10;
-            this.f10403d = i11;
+            this.f10787c = i10;
+            this.f10788d = i11;
         }
 
         private void p(CloseableReference closeableReference) {
             sa.e eVar;
             Bitmap N1;
             int rowBytes;
-            if (closeableReference != null && closeableReference.E0() && (eVar = (sa.e) closeableReference.C0()) != null && !eVar.isClosed() && (eVar instanceof sa.f) && (N1 = ((sa.f) eVar).N1()) != null && (rowBytes = N1.getRowBytes() * N1.getHeight()) >= this.f10402c && rowBytes <= this.f10403d) {
+            if (closeableReference != null && closeableReference.I0() && (eVar = (sa.e) closeableReference.E0()) != null && !eVar.isClosed() && (eVar instanceof sa.f) && (N1 = ((sa.f) eVar).N1()) != null && (rowBytes = N1.getRowBytes() * N1.getHeight()) >= this.f10787c && rowBytes <= this.f10788d) {
                 N1.prepareToDraw();
             }
         }
@@ -58,18 +58,18 @@ public class j implements w0 {
             z11 = false;
         }
         o8.j.b(Boolean.valueOf(z11));
-        this.f10398a = (w0) o8.j.g(w0Var);
-        this.f10399b = i10;
-        this.f10400c = i11;
-        this.f10401d = z10;
+        this.f10783a = (w0) o8.j.g(w0Var);
+        this.f10784b = i10;
+        this.f10785c = i11;
+        this.f10786d = z10;
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
     public void b(Consumer consumer, ProducerContext producerContext) {
-        if (producerContext.C0() && !this.f10401d) {
-            this.f10398a.b(consumer, producerContext);
+        if (producerContext.C0() && !this.f10786d) {
+            this.f10783a.b(consumer, producerContext);
         } else {
-            this.f10398a.b(new a(consumer, this.f10399b, this.f10400c), producerContext);
+            this.f10783a.b(new a(consumer, this.f10784b, this.f10785c), producerContext);
         }
     }
 }

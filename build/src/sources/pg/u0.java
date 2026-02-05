@@ -5,18 +5,18 @@ import java.util.ListIterator;
 final class u0 extends p1 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ v0 f45795e;
+    final /* synthetic */ v0 f45725e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public u0(v0 v0Var, ListIterator listIterator) {
         super(listIterator);
-        this.f45795e = v0Var;
+        this.f45725e = v0Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // pg.o1
     public final Object a(Object obj) {
-        return this.f45795e.f45822e.a(obj);
+        return this.f45725e.f45752e.a(obj);
     }
 }

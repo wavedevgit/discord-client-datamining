@@ -6,63 +6,63 @@ import androidx.annotation.NonNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class e extends hf.a {
     @NonNull
-    public static final Parcelable.Creator<e> CREATOR = new h1();
+    public static final Parcelable.Creator<e> CREATOR = new f1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final s f26097d;
+    private final s f24796d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f26098e;
+    private final boolean f24797e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f26099i;
+    private final boolean f24798i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int[] f26100o;
+    private final int[] f24799o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f26101p;
+    private final int f24800p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int[] f26102q;
+    private final int[] f24801q;
 
     public e(s sVar, boolean z10, boolean z11, int[] iArr, int i10, int[] iArr2) {
-        this.f26097d = sVar;
-        this.f26098e = z10;
-        this.f26099i = z11;
-        this.f26100o = iArr;
-        this.f26101p = i10;
-        this.f26102q = iArr2;
+        this.f24796d = sVar;
+        this.f24797e = z10;
+        this.f24798i = z11;
+        this.f24799o = iArr;
+        this.f24800p = i10;
+        this.f24801q = iArr2;
     }
 
     public int b() {
-        return this.f26101p;
+        return this.f24800p;
     }
 
     public int[] c() {
-        return this.f26100o;
+        return this.f24799o;
     }
 
     public int[] d() {
-        return this.f26102q;
+        return this.f24801q;
     }
 
     public boolean e() {
-        return this.f26098e;
+        return this.f24797e;
     }
 
     public boolean f() {
-        return this.f26099i;
+        return this.f24798i;
     }
 
     public final s g() {
-        return this.f26097d;
+        return this.f24796d;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.q(parcel, 1, this.f26097d, i10, false);
+        hf.c.q(parcel, 1, this.f24796d, i10, false);
         hf.c.c(parcel, 2, e());
         hf.c.c(parcel, 3, f());
         hf.c.m(parcel, 4, c(), false);

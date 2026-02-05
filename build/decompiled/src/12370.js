@@ -1,98 +1,151 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1, arg2, arg3, arg4) { // Environment: var0
-        _fun94403: for (var _fun94403_ip = 0;;) switch (_fun94403_ip) {
-            case 0:
-                var6 = arg0;
-                var5 = arg1;
-                var4 = arg2;
-                var9 = arg3;
-                var8 = arg4;
-                var3 = this;
-                var1 = var3.directMap;
-                var0 = ':';
-                var0 = var6 + var0;
-                var0 = var0 + var4;
-                var1[var0] = var5;
-                var2 = var6.replace;
-                var0 = /\s+/g;
-                var1 = ' ';
-                var2 = var2.bind(var6)(var0, var1);
-                var0 = var2.split;
-                var1 = var0.bind(var2)(var1);
-                var6 = var1.length;
-                var0 = 1;
-                if (!(!(var6 > var0))) {
-                    _fun94403_ip = 271;
-                    continue _fun94403
-                }
-            case 96:
-                var0 = var3.getKeyInfo;
-                var10 = var0.bind(var3)(var2, var4);
-                var7 = var3.callbacks;
-                var6 = var10.key;
-                var11 = var3.callbacks;
-                var0 = var10.key;
-                var0 = var11[var0];
-                if (var0) {
-                    _fun94403_ip = 141;
-                    continue _fun94403
-                }
-            case 137:
-                var0 = new Array(0);
-            case 141:
-                var7[var6] = var0;
-                var11 = var3.getMatches;
-                var18 = var10.key;
-                var17 = var10.modifiers;
-                var0 = {};
-                var12 = var10.action;
-                var0.type = var12;
-                var19 = var3;
-                var16 = var0;
-                var15 = var9;
-                var14 = var2;
-                var13 = var8;
-                var0 = var19[var11](var18, var17, var16, var15, var14, var13, var12);
-                var6 = var3.callbacks;
-                var0 = var10.key;
-                var7 = var6[var0];
-                var0 = 'push';
-                if (!var9) {
-                    _fun94403_ip = 218;
-                    continue _fun94403
-                }
-            case 214:
-                var0 = 'unshift';
-            case 218:
-                var6 = var7[var0];
-                var0 = {};
-                var0.callback = var5;
-                var11 = var10.modifiers;
-                var0.modifiers = var11;
-                var10 = var10.action;
-                var0.action = var10;
-                var0.seq = var9;
-                var0.level = var8;
-                var0.combo = var2;
-                var0 = var6.bind(var7)(var0);
-                _fun94403_ip = 296;
-                continue _fun94403;
-            case 271:
-                var0 = var3.bindSequence;
-                var19 = var3;
-                var18 = var2;
-                var17 = var1;
-                var16 = var5;
-                var15 = var4;
-                var0 = var19[var0](var18, var17, var16, var15, var14);
-            case 296:
-                var0 = undefined;
-                return var0;
-        }
+    var4 = require;
+    var1 = module;
+    var5 = dependencyMap;
+    var0 = function(arg0) { // Environment: var0
+        var0 = this;
+        var1 = var0.constructor;
+        var2 = {};
+        var0.callbacks = var2;
+        var2 = {};
+        var0.directMap = var2;
+        var2 = {};
+        var0.sequenceLevels = var2;
+        var2 = var0.resetTimer;
+        var2 = false;
+        var0.ignoreNextKeyup = var2;
+        var0.ignoreNextKeypress = var2;
+        var0.nextExpectedAction = var2;
+        var2 = arg0;
+        var0.element = var2;
+        var2 = var0.addEvents;
+        var2 = var2.bind(var0)();
+        var2 = var1.instances;
+        var1 = var2.push;
+        var1 = var1.bind(var2)(var0);
+        return var0;
     };
-    var0 = arg4;
-    var0.exports = var1;
+    var1.exports = var0;
+    var0 = var1.exports;
+    var3 = var0.prototype;
+    var0 = 0;
+    var2 = var5[var0];
     var0 = undefined;
+    var2 = var4.bind(var0)(var2);
+    var3.bind = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 1;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.bindMultiple = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 2;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.unbind = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 3;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.trigger = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 4;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.reset = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 5;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.stopCallback = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 6;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.handleKey = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 7;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.addEvents = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 8;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.bindSingle = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 9;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.getKeyInfo = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 10;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.pickBestAction = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 11;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.getReverseMap = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 12;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.getMatches = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 13;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.resetSequences = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 14;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.fireCallback = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 15;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.bindSequence = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 16;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.resetSequenceTimer = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 17;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.detach = var2;
+    var3 = var1.exports;
+    var2 = new Array(0);
+    var3.instances = var2;
+    var3 = var1.exports;
+    var2 = 18;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.reset = var2;
+    var2 = var1.exports;
+    var1 = null;
+    var2.REVERSE_MAP = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12371, 12372, 12373, 12374, 12375, 12376, 12377, 12379, 12386, 12387, 12391, 12392, 12393, 12395, 12396, 12399, 12400, 12401, 12402]);

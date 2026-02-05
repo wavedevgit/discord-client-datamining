@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var6);
     var7 = var8.experimental_createToken;
     var6 = function(arg0) { // Environment: var1
-        _fun55548: for (var _fun55548_ip = 0;;) switch (_fun55548_ip) {
+        _fun55572: for (var _fun55572_ip = 0;;) switch (_fun55572_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.theme;
@@ -36,8 +36,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.bind(var2)(var3);
                 var0 = 'rgba(201,210,240,0.6)';
                 if (!var2) {
-                    _fun55548_ip = 123;
-                    continue _fun55548
+                    _fun55572_ip = 123;
+                    continue _fun55572
                 }
             case 54:
                 var3 = _closure1_slot0;
@@ -138,4 +138,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1297, 3206, 3240, 671, 3132, 6645, 6679, 6680, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1297, 3206, 3240, 671, 3132, 6665, 6699, 6700, 2]);

@@ -1,45 +1,48 @@
 package hu;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
+import okio.BufferedSource;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class l extends f {
+public interface l {
 
-    /* renamed from: j  reason: collision with root package name */
-    public static final a f28181j = new a(null);
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f27175a = a.f27177a;
 
-    /* renamed from: h  reason: collision with root package name */
-    private final Class f28182h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final Class f28183i;
+    /* renamed from: b  reason: collision with root package name */
+    public static final l f27176b = new a.C0375a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
 
-        public static /* synthetic */ k b(a aVar, String str, int i10, Object obj) {
-            if ((i10 & 1) != 0) {
-                str = "com.android.org.conscrypt";
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ a f27177a = new a();
+
+        /* renamed from: hu.l$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        private static final class C0375a implements l {
+            @Override // hu.l
+            public void a(int i10, b errorCode) {
+                Intrinsics.checkNotNullParameter(errorCode, "errorCode");
             }
-            return aVar.a(str);
-        }
 
-        public final k a(String packageName) {
-            Intrinsics.checkNotNullParameter(packageName, "packageName");
-            try {
-                Class<?> cls = Class.forName(packageName + ".OpenSSLSocketImpl");
-                Intrinsics.checkNotNull(cls, "null cannot be cast to non-null type java.lang.Class<in javax.net.ssl.SSLSocket>");
-                Class<?> cls2 = Class.forName(packageName + ".OpenSSLSocketFactoryImpl");
-                Intrinsics.checkNotNull(cls2, "null cannot be cast to non-null type java.lang.Class<in javax.net.ssl.SSLSocketFactory>");
-                Class<?> paramsClass = Class.forName(packageName + ".SSLParametersImpl");
-                Intrinsics.checkNotNullExpressionValue(paramsClass, "paramsClass");
-                return new l(cls, cls2, paramsClass);
-            } catch (Exception e10) {
-                gu.h.f26650a.g().k("unable to load android socket classes", 5, e10);
-                return null;
+            @Override // hu.l
+            public boolean b(int i10, List requestHeaders) {
+                Intrinsics.checkNotNullParameter(requestHeaders, "requestHeaders");
+                return true;
+            }
+
+            @Override // hu.l
+            public boolean c(int i10, List responseHeaders, boolean z10) {
+                Intrinsics.checkNotNullParameter(responseHeaders, "responseHeaders");
+                return true;
+            }
+
+            @Override // hu.l
+            public boolean d(int i10, BufferedSource source, int i11, boolean z10) {
+                Intrinsics.checkNotNullParameter(source, "source");
+                source.skip(i11);
+                return true;
             }
         }
 
@@ -47,13 +50,11 @@ public final class l extends f {
         }
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public l(Class sslSocketClass, Class sslSocketFactoryClass, Class paramClass) {
-        super(sslSocketClass);
-        Intrinsics.checkNotNullParameter(sslSocketClass, "sslSocketClass");
-        Intrinsics.checkNotNullParameter(sslSocketFactoryClass, "sslSocketFactoryClass");
-        Intrinsics.checkNotNullParameter(paramClass, "paramClass");
-        this.f28182h = sslSocketFactoryClass;
-        this.f28183i = paramClass;
-    }
+    void a(int i10, b bVar);
+
+    boolean b(int i10, List list);
+
+    boolean c(int i10, List list, boolean z10);
+
+    boolean d(int i10, BufferedSource bufferedSource, int i11, boolean z10);
 }

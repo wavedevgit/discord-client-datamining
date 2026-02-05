@@ -7,51 +7,51 @@ public final class gl extends hf.a {
     public static final Parcelable.Creator<gl> CREATOR = new wl();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f38017d;
+    private final int f37679d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f38018e;
+    private final int f37680e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f38019i;
+    private final int f37681i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f38020o;
+    private final int f37682o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f38021p;
+    private final int f37683p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f38022q;
+    private final int f37684q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f38023r;
+    private final boolean f37685r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f38024s;
+    private final String f37686s;
 
     public gl(int i10, int i11, int i12, int i13, int i14, int i15, boolean z10, String str) {
-        this.f38017d = i10;
-        this.f38018e = i11;
-        this.f38019i = i12;
-        this.f38020o = i13;
-        this.f38021p = i14;
-        this.f38022q = i15;
-        this.f38023r = z10;
-        this.f38024s = str;
+        this.f37679d = i10;
+        this.f37680e = i11;
+        this.f37681i = i12;
+        this.f37682o = i13;
+        this.f37683p = i14;
+        this.f37684q = i15;
+        this.f37685r = z10;
+        this.f37686s = str;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 1, this.f38017d);
-        hf.c.l(parcel, 2, this.f38018e);
-        hf.c.l(parcel, 3, this.f38019i);
-        hf.c.l(parcel, 4, this.f38020o);
-        hf.c.l(parcel, 5, this.f38021p);
-        hf.c.l(parcel, 6, this.f38022q);
-        hf.c.c(parcel, 7, this.f38023r);
-        hf.c.s(parcel, 8, this.f38024s, false);
+        hf.c.l(parcel, 1, this.f37679d);
+        hf.c.l(parcel, 2, this.f37680e);
+        hf.c.l(parcel, 3, this.f37681i);
+        hf.c.l(parcel, 4, this.f37682o);
+        hf.c.l(parcel, 5, this.f37683p);
+        hf.c.l(parcel, 6, this.f37684q);
+        hf.c.c(parcel, 7, this.f37685r);
+        hf.c.s(parcel, 8, this.f37686s, false);
         hf.c.b(parcel, a10);
     }
 }

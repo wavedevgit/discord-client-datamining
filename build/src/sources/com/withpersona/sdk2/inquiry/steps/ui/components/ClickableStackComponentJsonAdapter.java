@@ -1,6 +1,5 @@
 package com.withpersona.sdk2.inquiry.steps.ui.components;
 
-import aq.k5;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.a0;
@@ -10,57 +9,58 @@ import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.ClickableStack;
+import dq.k5;
 import java.lang.reflect.Constructor;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000h\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\u000f\u0010\b\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\b\u0010\tJ\u0017\u0010\f\u001a\u00020\u00022\u0006\u0010\u000b\u001a\u00020\nH\u0016¢\u0006\u0004\b\f\u0010\rJ!\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\u000e2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0002H\u0016¢\u0006\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0016\u001a\u00020\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\f\u0010\u0015R\u001a\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00070\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0017R \u0010\u001c\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001a0\u00190\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001b\u0010\u0017R\u001c\u0010\u001f\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u001d0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001e\u0010\u0017R\u001c\u0010\"\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010 0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b!\u0010\u0017R\u001a\u0010%\u001a\b\u0012\u0004\u0012\u00020#0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b$\u0010\u0017R\u001e\u0010)\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010&8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b'\u0010(¨\u0006*"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponentJsonAdapter;", "Lcom/squareup/moshi/h;", "Lcom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponent;", "Lcom/squareup/moshi/w;", "moshi", "<init>", "(Lcom/squareup/moshi/w;)V", "", "toString", "()Ljava/lang/String;", "Lcom/squareup/moshi/m;", "reader", "a", "(Lcom/squareup/moshi/m;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponent;", "Lcom/squareup/moshi/t;", "writer", "value_", "", "b", "(Lcom/squareup/moshi/t;Lcom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponent;)V", "Lcom/squareup/moshi/m$b;", "Lcom/squareup/moshi/m$b;", "options", "Lcom/squareup/moshi/h;", "stringAdapter", "", "Laq/k5;", "c", "listOfUiComponentAdapter", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "d", "nullableJsonLogicBooleanAdapter", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack$ClickableStackComponentStyle;", "e", "nullableClickableStackComponentStyleAdapter", "", "f", "booleanAdapter", "Ljava/lang/reflect/Constructor;", "g", "Ljava/lang/reflect/Constructor;", "constructorRef", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+@Metadata(d1 = {"\u0000h\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\u000f\u0010\b\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\b\u0010\tJ\u0017\u0010\f\u001a\u00020\u00022\u0006\u0010\u000b\u001a\u00020\nH\u0016¢\u0006\u0004\b\f\u0010\rJ!\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\u000e2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0002H\u0016¢\u0006\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0016\u001a\u00020\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\f\u0010\u0015R\u001a\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00070\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0017R \u0010\u001c\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001a0\u00190\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001b\u0010\u0017R\u001c\u0010\u001f\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u001d0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001e\u0010\u0017R\u001c\u0010\"\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010 0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b!\u0010\u0017R\u001a\u0010%\u001a\b\u0012\u0004\u0012\u00020#0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b$\u0010\u0017R\u001e\u0010)\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010&8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b'\u0010(¨\u0006*"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponentJsonAdapter;", "Lcom/squareup/moshi/h;", "Lcom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponent;", "Lcom/squareup/moshi/w;", "moshi", "<init>", "(Lcom/squareup/moshi/w;)V", "", "toString", "()Ljava/lang/String;", "Lcom/squareup/moshi/m;", "reader", "a", "(Lcom/squareup/moshi/m;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponent;", "Lcom/squareup/moshi/t;", "writer", "value_", "", "b", "(Lcom/squareup/moshi/t;Lcom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponent;)V", "Lcom/squareup/moshi/m$b;", "Lcom/squareup/moshi/m$b;", "options", "Lcom/squareup/moshi/h;", "stringAdapter", "", "Ldq/k5;", "c", "listOfUiComponentAdapter", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "d", "nullableJsonLogicBooleanAdapter", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack$ClickableStackComponentStyle;", "e", "nullableClickableStackComponentStyleAdapter", "", "f", "booleanAdapter", "Ljava/lang/reflect/Constructor;", "g", "Ljava/lang/reflect/Constructor;", "constructorRef", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class ClickableStackComponentJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19180a;
+    private final m.b f19586a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19181b;
+    private final h f19587b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f19182c;
+    private final h f19588c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f19183d;
+    private final h f19589d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final h f19184e;
+    private final h f19590e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final h f19185f;
+    private final h f19591f;
 
     /* renamed from: g  reason: collision with root package name */
-    private volatile Constructor f19186g;
+    private volatile Constructor f19592g;
 
     public ClickableStackComponentJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.NAME_KEY, "children", ViewProps.HIDDEN, "disabled", "styles", "isActive");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19180a = a10;
+        this.f19586a = a10;
         h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.NAME_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19181b = f10;
+        this.f19587b = f10;
         h f11 = moshi.f(a0.j(List.class, k5.class), x0.d(), "children");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19182c = f11;
+        this.f19588c = f11;
         h f12 = moshi.f(JsonLogicBoolean.class, x0.d(), ViewProps.HIDDEN);
         Intrinsics.checkNotNullExpressionValue(f12, "adapter(...)");
-        this.f19183d = f12;
+        this.f19589d = f12;
         h f13 = moshi.f(ClickableStack.ClickableStackComponentStyle.class, x0.d(), "styles");
         Intrinsics.checkNotNullExpressionValue(f13, "adapter(...)");
-        this.f19184e = f13;
+        this.f19590e = f13;
         h f14 = moshi.f(Boolean.TYPE, x0.d(), "isActive");
         Intrinsics.checkNotNullExpressionValue(f14, "adapter(...)");
-        this.f19185f = f14;
+        this.f19591f = f14;
     }
 
     @Override // com.squareup.moshi.h
@@ -68,7 +68,7 @@ public final class ClickableStackComponentJsonAdapter extends h {
     public ClickableStackComponent fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
         Boolean bool = Boolean.FALSE;
-        reader.r();
+        reader.s();
         List list = null;
         Boolean bool2 = bool;
         String str = null;
@@ -77,58 +77,58 @@ public final class ClickableStackComponentJsonAdapter extends h {
         int i10 = -1;
         JsonLogicBoolean jsonLogicBoolean2 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.f19180a)) {
+            switch (reader.W(this.f19586a)) {
                 case -1:
                     reader.E0();
                     reader.P();
                     break;
                 case 0:
-                    str = (String) this.f19181b.fromJson(reader);
+                    str = (String) this.f19587b.fromJson(reader);
                     if (str != null) {
                         break;
                     } else {
-                        throw vm.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+                        throw ym.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
                     }
                 case 1:
-                    list = (List) this.f19182c.fromJson(reader);
+                    list = (List) this.f19588c.fromJson(reader);
                     if (list != null) {
                         break;
                     } else {
-                        throw vm.c.x("children", "children", reader);
+                        throw ym.c.x("children", "children", reader);
                     }
                 case 2:
-                    jsonLogicBoolean2 = (JsonLogicBoolean) this.f19183d.fromJson(reader);
+                    jsonLogicBoolean2 = (JsonLogicBoolean) this.f19589d.fromJson(reader);
                     break;
                 case 3:
-                    jsonLogicBoolean = (JsonLogicBoolean) this.f19183d.fromJson(reader);
+                    jsonLogicBoolean = (JsonLogicBoolean) this.f19589d.fromJson(reader);
                     break;
                 case 4:
-                    clickableStackComponentStyle = (ClickableStack.ClickableStackComponentStyle) this.f19184e.fromJson(reader);
+                    clickableStackComponentStyle = (ClickableStack.ClickableStackComponentStyle) this.f19590e.fromJson(reader);
                     break;
                 case 5:
-                    bool2 = (Boolean) this.f19185f.fromJson(reader);
+                    bool2 = (Boolean) this.f19591f.fromJson(reader);
                     if (bool2 != null) {
                         i10 = -33;
                         break;
                     } else {
-                        throw vm.c.x("isActive", "isActive", reader);
+                        throw ym.c.x("isActive", "isActive", reader);
                     }
             }
         }
-        reader.y();
+        reader.z();
         if (i10 == -33) {
             if (str != null) {
                 if (list != null) {
                     return new ClickableStackComponent(str, list, jsonLogicBoolean2, jsonLogicBoolean, clickableStackComponentStyle, bool2.booleanValue());
                 }
-                throw vm.c.o("children", "children", reader);
+                throw ym.c.o("children", "children", reader);
             }
-            throw vm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+            throw ym.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
         }
-        Constructor constructor = this.f19186g;
+        Constructor constructor = this.f19592g;
         if (constructor == null) {
-            constructor = ClickableStackComponent.class.getDeclaredConstructor(String.class, List.class, JsonLogicBoolean.class, JsonLogicBoolean.class, ClickableStack.ClickableStackComponentStyle.class, Boolean.TYPE, Integer.TYPE, vm.c.f51688c);
-            this.f19186g = constructor;
+            constructor = ClickableStackComponent.class.getDeclaredConstructor(String.class, List.class, JsonLogicBoolean.class, JsonLogicBoolean.class, ClickableStack.ClickableStackComponentStyle.class, Boolean.TYPE, Integer.TYPE, ym.c.f54853c);
+            this.f19592g = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         if (str != null) {
@@ -139,9 +139,9 @@ public final class ClickableStackComponentJsonAdapter extends h {
                 Intrinsics.checkNotNullExpressionValue(newInstance, "newInstance(...)");
                 return (ClickableStackComponent) newInstance;
             }
-            throw vm.c.o("children", "children", reader);
+            throw ym.c.o("children", "children", reader);
         }
-        throw vm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw ym.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -149,19 +149,19 @@ public final class ClickableStackComponentJsonAdapter extends h {
     public void toJson(t writer, ClickableStackComponent clickableStackComponent) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (clickableStackComponent != null) {
-            writer.l();
-            writer.A0(StackTraceHelper.NAME_KEY);
-            this.f19181b.toJson(writer, clickableStackComponent.getName());
-            writer.A0("children");
-            this.f19182c.toJson(writer, clickableStackComponent.getChildren());
-            writer.A0(ViewProps.HIDDEN);
-            this.f19183d.toJson(writer, clickableStackComponent.getHidden());
-            writer.A0("disabled");
-            this.f19183d.toJson(writer, clickableStackComponent.getDisabled());
-            writer.A0("styles");
-            this.f19184e.toJson(writer, clickableStackComponent.c());
-            writer.A0("isActive");
-            this.f19185f.toJson(writer, Boolean.valueOf(clickableStackComponent.e()));
+            writer.k();
+            writer.W(StackTraceHelper.NAME_KEY);
+            this.f19587b.toJson(writer, clickableStackComponent.getName());
+            writer.W("children");
+            this.f19588c.toJson(writer, clickableStackComponent.getChildren());
+            writer.W(ViewProps.HIDDEN);
+            this.f19589d.toJson(writer, clickableStackComponent.getHidden());
+            writer.W("disabled");
+            this.f19589d.toJson(writer, clickableStackComponent.getDisabled());
+            writer.W("styles");
+            this.f19590e.toJson(writer, clickableStackComponent.c());
+            writer.W("isActive");
+            this.f19591f.toJson(writer, Boolean.valueOf(clickableStackComponent.e()));
             writer.E();
             return;
         }

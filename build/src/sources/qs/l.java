@@ -1,217 +1,295 @@
 package qs;
 
-import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
-import java.util.concurrent.atomic.AtomicReferenceArray;
-import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
-import kotlin.jvm.internal.Ref;
+import java.util.concurrent.atomic.AtomicInteger;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.FlowCollector;
+import os.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class l {
+public abstract class l {
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f48186b = AtomicReferenceFieldUpdater.newUpdater(l.class, Object.class, "lastScheduledTask$volatile");
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f48187c = AtomicIntegerFieldUpdater.newUpdater(l.class, "producerIndex$volatile");
+        /* renamed from: d  reason: collision with root package name */
+        Object f48045d;
 
-    /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f48188d = AtomicIntegerFieldUpdater.newUpdater(l.class, "consumerIndex$volatile");
+        /* renamed from: e  reason: collision with root package name */
+        Object f48046e;
 
-    /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f48189e = AtomicIntegerFieldUpdater.newUpdater(l.class, "blockingTasksInBuffer$volatile");
+        /* renamed from: i  reason: collision with root package name */
+        int f48047i;
 
-    /* renamed from: a  reason: collision with root package name */
-    private final AtomicReferenceArray f48190a = new AtomicReferenceArray((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-    private volatile /* synthetic */ int blockingTasksInBuffer$volatile;
-    private volatile /* synthetic */ int consumerIndex$volatile;
-    private volatile /* synthetic */ Object lastScheduledTask$volatile;
-    private volatile /* synthetic */ int producerIndex$volatile;
+        /* renamed from: o  reason: collision with root package name */
+        int f48048o;
 
-    private final h b(h hVar) {
-        if (e() == 127) {
-            return hVar;
-        }
-        if (hVar.f48177e) {
-            f48189e.incrementAndGet(this);
-        }
-        int i10 = f48187c.get(this) & 127;
-        while (this.f48190a.get(i10) != null) {
-            Thread.yield();
-        }
-        this.f48190a.lazySet(i10, hVar);
-        f48187c.incrementAndGet(this);
-        return null;
-    }
+        /* renamed from: p  reason: collision with root package name */
+        int f48049p;
 
-    private final void c(h hVar) {
-        if (hVar != null && hVar.f48177e) {
-            f48189e.decrementAndGet(this);
-        }
-    }
+        /* renamed from: q  reason: collision with root package name */
+        private /* synthetic */ Object f48050q;
 
-    private final int e() {
-        return f48187c.get(this) - f48188d.get(this);
-    }
+        /* renamed from: r  reason: collision with root package name */
+        final /* synthetic */ Flow[] f48051r;
 
-    private final h m() {
-        h hVar;
-        while (true) {
-            int i10 = f48188d.get(this);
-            if (i10 - f48187c.get(this) == 0) {
-                return null;
-            }
-            int i11 = i10 & 127;
-            if (f48188d.compareAndSet(this, i10, i10 + 1) && (hVar = (h) this.f48190a.getAndSet(i11, null)) != null) {
-                c(hVar);
-                return hVar;
-            }
-        }
-    }
+        /* renamed from: s  reason: collision with root package name */
+        final /* synthetic */ Function0 f48052s;
 
-    private final boolean n(d dVar) {
-        h m10 = m();
-        if (m10 == null) {
-            return false;
-        }
-        dVar.a(m10);
-        return true;
-    }
+        /* renamed from: t  reason: collision with root package name */
+        final /* synthetic */ Function3 f48053t;
 
-    private final h o(boolean z10) {
-        h hVar;
-        do {
-            hVar = (h) f48186b.get(this);
-            if (hVar == null || hVar.f48177e != z10) {
-                int i10 = f48188d.get(this);
-                int i11 = f48187c.get(this);
-                while (i10 != i11) {
-                    if (z10 && f48189e.get(this) == 0) {
-                        return null;
+        /* renamed from: u  reason: collision with root package name */
+        final /* synthetic */ FlowCollector f48054u;
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: qs.l$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class C0605a extends kotlin.coroutines.jvm.internal.k implements Function2 {
+
+            /* renamed from: d  reason: collision with root package name */
+            int f48055d;
+
+            /* renamed from: e  reason: collision with root package name */
+            final /* synthetic */ Flow[] f48056e;
+
+            /* renamed from: i  reason: collision with root package name */
+            final /* synthetic */ int f48057i;
+
+            /* renamed from: o  reason: collision with root package name */
+            final /* synthetic */ AtomicInteger f48058o;
+
+            /* renamed from: p  reason: collision with root package name */
+            final /* synthetic */ os.g f48059p;
+
+            /* JADX INFO: Access modifiers changed from: package-private */
+            /* renamed from: qs.l$a$a$a  reason: collision with other inner class name */
+            /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+            public static final class C0606a implements FlowCollector {
+
+                /* renamed from: d  reason: collision with root package name */
+                final /* synthetic */ os.g f48060d;
+
+                /* renamed from: e  reason: collision with root package name */
+                final /* synthetic */ int f48061e;
+
+                /* JADX INFO: Access modifiers changed from: package-private */
+                /* renamed from: qs.l$a$a$a$a  reason: collision with other inner class name */
+                /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+                public static final class C0607a extends kotlin.coroutines.jvm.internal.d {
+
+                    /* renamed from: d  reason: collision with root package name */
+                    /* synthetic */ Object f48062d;
+
+                    /* renamed from: i  reason: collision with root package name */
+                    int f48064i;
+
+                    C0607a(Continuation continuation) {
+                        super(continuation);
                     }
-                    i11--;
-                    h q10 = q(i11, z10);
-                    if (q10 != null) {
-                        return q10;
+
+                    @Override // kotlin.coroutines.jvm.internal.a
+                    public final Object invokeSuspend(Object obj) {
+                        this.f48062d = obj;
+                        this.f48064i |= Integer.MIN_VALUE;
+                        return C0606a.this.emit(null, this);
                     }
                 }
-                return null;
+
+                C0606a(os.g gVar, int i10) {
+                    this.f48060d = gVar;
+                    this.f48061e = i10;
+                }
+
+                /* JADX WARN: Code restructure failed: missing block: B:17:0x004a, code lost:
+                    if (r8.v(r2, r0) == r1) goto L19;
+                 */
+                /* JADX WARN: Code restructure failed: missing block: B:20:0x0053, code lost:
+                    if (ms.x1.a(r0) != r1) goto L11;
+                 */
+                /* JADX WARN: Code restructure failed: missing block: B:21:0x0055, code lost:
+                    return r1;
+                 */
+                /* JADX WARN: Removed duplicated region for block: B:10:0x0024  */
+                /* JADX WARN: Removed duplicated region for block: B:16:0x0038  */
+                @Override // kotlinx.coroutines.flow.FlowCollector
+                /*
+                    Code decompiled incorrectly, please refer to instructions dump.
+                    To view partially-correct add '--show-bad-code' argument
+                */
+                public final java.lang.Object emit(java.lang.Object r7, kotlin.coroutines.Continuation r8) {
+                    /*
+                        r6 = this;
+                        boolean r0 = r8 instanceof qs.l.a.C0605a.C0606a.C0607a
+                        if (r0 == 0) goto L13
+                        r0 = r8
+                        qs.l$a$a$a$a r0 = (qs.l.a.C0605a.C0606a.C0607a) r0
+                        int r1 = r0.f48064i
+                        r2 = -2147483648(0xffffffff80000000, float:-0.0)
+                        r3 = r1 & r2
+                        if (r3 == 0) goto L13
+                        int r1 = r1 - r2
+                        r0.f48064i = r1
+                        goto L18
+                    L13:
+                        qs.l$a$a$a$a r0 = new qs.l$a$a$a$a
+                        r0.<init>(r8)
+                    L18:
+                        java.lang.Object r8 = r0.f48062d
+                        java.lang.Object r1 = ur.b.f()
+                        int r2 = r0.f48064i
+                        r3 = 2
+                        r4 = 1
+                        if (r2 == 0) goto L38
+                        if (r2 == r4) goto L34
+                        if (r2 != r3) goto L2c
+                        kotlin.c.b(r8)
+                        goto L56
+                    L2c:
+                        java.lang.IllegalStateException r7 = new java.lang.IllegalStateException
+                        java.lang.String r8 = "call to 'resume' before 'invoke' with coroutine"
+                        r7.<init>(r8)
+                        throw r7
+                    L34:
+                        kotlin.c.b(r8)
+                        goto L4d
+                    L38:
+                        kotlin.c.b(r8)
+                        os.g r8 = r6.f48060d
+                        kotlin.collections.IndexedValue r2 = new kotlin.collections.IndexedValue
+                        int r5 = r6.f48061e
+                        r2.<init>(r5, r7)
+                        r0.f48064i = r4
+                        java.lang.Object r7 = r8.v(r2, r0)
+                        if (r7 != r1) goto L4d
+                        goto L55
+                    L4d:
+                        r0.f48064i = r3
+                        java.lang.Object r7 = ms.x1.a(r0)
+                        if (r7 != r1) goto L56
+                    L55:
+                        return r1
+                    L56:
+                        kotlin.Unit r7 = kotlin.Unit.f31988a
+                        return r7
+                    */
+                    throw new UnsupportedOperationException("Method not decompiled: qs.l.a.C0605a.C0606a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
+                }
             }
-        } while (!androidx.concurrent.futures.b.a(f48186b, this, hVar, null));
-        return hVar;
-    }
 
-    private final h p(int i10) {
-        int i11 = f48188d.get(this);
-        int i12 = f48187c.get(this);
-        boolean z10 = true;
-        if (i10 != 1) {
-            z10 = false;
-        }
-        while (i11 != i12) {
-            if (z10 && f48189e.get(this) == 0) {
-                return null;
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            C0605a(Flow[] flowArr, int i10, AtomicInteger atomicInteger, os.g gVar, Continuation continuation) {
+                super(2, continuation);
+                this.f48056e = flowArr;
+                this.f48057i = i10;
+                this.f48058o = atomicInteger;
+                this.f48059p = gVar;
             }
-            int i13 = i11 + 1;
-            h q10 = q(i11, z10);
-            if (q10 == null) {
-                i11 = i13;
-            } else {
-                return q10;
+
+            @Override // kotlin.coroutines.jvm.internal.a
+            public final Continuation create(Object obj, Continuation continuation) {
+                return new C0605a(this.f48056e, this.f48057i, this.f48058o, this.f48059p, continuation);
+            }
+
+            @Override // kotlin.coroutines.jvm.internal.a
+            public final Object invokeSuspend(Object obj) {
+                AtomicInteger atomicInteger;
+                Object f10 = ur.b.f();
+                int i10 = this.f48055d;
+                try {
+                    if (i10 != 0) {
+                        if (i10 == 1) {
+                            kotlin.c.b(obj);
+                        } else {
+                            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                        }
+                    } else {
+                        kotlin.c.b(obj);
+                        Flow[] flowArr = this.f48056e;
+                        int i11 = this.f48057i;
+                        Flow flow = flowArr[i11];
+                        C0606a c0606a = new C0606a(this.f48059p, i11);
+                        this.f48055d = 1;
+                        if (flow.collect(c0606a, this) == f10) {
+                            return f10;
+                        }
+                    }
+                    if (atomicInteger.decrementAndGet() == 0) {
+                        w.a.a(this.f48059p, null, 1, null);
+                    }
+                    return Unit.f31988a;
+                } finally {
+                    if (this.f48058o.decrementAndGet() == 0) {
+                        w.a.a(this.f48059p, null, 1, null);
+                    }
+                }
+            }
+
+            @Override // kotlin.jvm.functions.Function2
+            public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+                return ((C0605a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
-        return null;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        a(Flow[] flowArr, Function0 function0, Function3 function3, FlowCollector flowCollector, Continuation continuation) {
+            super(2, continuation);
+            this.f48051r = flowArr;
+            this.f48052s = function0;
+            this.f48053t = function3;
+            this.f48054u = flowCollector;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            a aVar = new a(this.f48051r, this.f48052s, this.f48053t, this.f48054u, continuation);
+            aVar.f48050q = obj;
+            return aVar;
+        }
+
+        /* JADX WARN: Code restructure failed: missing block: B:39:0x0106, code lost:
+            if (r10.invoke(r11, r9, r21) == r1) goto L34;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:42:0x0126, code lost:
+            if (r11.invoke(r12, r10, r21) == r1) goto L34;
+         */
+        /* JADX WARN: Removed duplicated region for block: B:23:0x00af  */
+        /* JADX WARN: Removed duplicated region for block: B:26:0x00be  */
+        /* JADX WARN: Removed duplicated region for block: B:28:0x00c1 A[LOOP:0: B:28:0x00c1->B:34:0x00e4, LOOP_START, PHI: r6 r10 
+          PHI: (r6v4 int) = (r6v3 int), (r6v5 int) binds: [B:25:0x00bc, B:34:0x00e4] A[DONT_GENERATE, DONT_INLINE]
+          PHI: (r10v5 kotlin.collections.IndexedValue) = (r10v4 kotlin.collections.IndexedValue), (r10v18 kotlin.collections.IndexedValue) binds: [B:25:0x00bc, B:34:0x00e4] A[DONT_GENERATE, DONT_INLINE]] */
+        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:35:0x00e6 -> B:44:0x0129). Please submit an issue!!! */
+        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:39:0x0106 -> B:44:0x0129). Please submit an issue!!! */
+        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:42:0x0126 -> B:44:0x0129). Please submit an issue!!! */
+        @Override // kotlin.coroutines.jvm.internal.a
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public final java.lang.Object invokeSuspend(java.lang.Object r22) {
+            /*
+                Method dump skipped, instructions count: 304
+                To view this dump add '--comments-level debug' option
+            */
+            throw new UnsupportedOperationException("Method not decompiled: qs.l.a.invokeSuspend(java.lang.Object):java.lang.Object");
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
+        }
     }
 
-    private final h q(int i10, boolean z10) {
-        int i11 = i10 & 127;
-        h hVar = (h) this.f48190a.get(i11);
-        if (hVar == null || hVar.f48177e != z10 || !ls.l.a(this.f48190a, i11, hVar, null)) {
-            return null;
+    public static final Object a(FlowCollector flowCollector, Flow[] flowArr, Function0 function0, Function3 function3, Continuation continuation) {
+        Object a10 = o.a(new a(flowArr, function0, function3, flowCollector, null), continuation);
+        if (a10 == ur.b.f()) {
+            return a10;
         }
-        if (z10) {
-            f48189e.decrementAndGet(this);
-        }
-        return hVar;
-    }
-
-    /* JADX WARN: Type inference failed for: r0v2, types: [T, qs.h, java.lang.Object] */
-    private final long s(int i10, Ref.ObjectRef objectRef) {
-        ?? r02;
-        int i11;
-        do {
-            r02 = (h) f48186b.get(this);
-            if (r02 == 0) {
-                return -2L;
-            }
-            if (r02.f48177e) {
-                i11 = 1;
-            } else {
-                i11 = 2;
-            }
-            if ((i11 & i10) == 0) {
-                return -2L;
-            }
-            long a10 = j.f48184f.a() - r02.f48176d;
-            long j10 = j.f48180b;
-            if (a10 < j10) {
-                return j10 - a10;
-            }
-        } while (!androidx.concurrent.futures.b.a(f48186b, this, r02, null));
-        objectRef.element = r02;
-        return -1L;
-    }
-
-    public final h a(h hVar, boolean z10) {
-        if (z10) {
-            return b(hVar);
-        }
-        h hVar2 = (h) f48186b.getAndSet(this, hVar);
-        if (hVar2 == null) {
-            return null;
-        }
-        return b(hVar2);
-    }
-
-    public final int i() {
-        if (f48186b.get(this) != null) {
-            return e() + 1;
-        }
-        return e();
-    }
-
-    public final void j(d dVar) {
-        h hVar = (h) f48186b.getAndSet(this, null);
-        if (hVar != null) {
-            dVar.a(hVar);
-        }
-        do {
-        } while (n(dVar));
-    }
-
-    public final h k() {
-        h hVar = (h) f48186b.getAndSet(this, null);
-        if (hVar == null) {
-            return m();
-        }
-        return hVar;
-    }
-
-    public final h l() {
-        return o(true);
-    }
-
-    /* JADX WARN: Multi-variable type inference failed */
-    public final long r(int i10, Ref.ObjectRef objectRef) {
-        T t10;
-        if (i10 == 3) {
-            t10 = m();
-        } else {
-            t10 = p(i10);
-        }
-        if (t10 != 0) {
-            objectRef.element = t10;
-            return -1L;
-        }
-        return s(i10, objectRef);
+        return Unit.f31988a;
     }
 }

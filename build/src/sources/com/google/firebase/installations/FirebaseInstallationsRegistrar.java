@@ -7,24 +7,24 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
-import qi.d0;
-import qi.q;
+import ti.d0;
+import ti.q;
 @Keep
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class FirebaseInstallationsRegistrar implements ComponentRegistrar {
     private static final String LIBRARY_NAME = "fire-installations";
 
-    public static /* synthetic */ cj.e a(qi.d dVar) {
-        return new c((ni.e) dVar.a(ni.e.class), dVar.c(zi.i.class), (ExecutorService) dVar.d(d0.a(pi.a.class, ExecutorService.class)), ri.i.a((Executor) dVar.d(d0.a(pi.b.class, Executor.class))));
+    public static /* synthetic */ fj.e a(ti.d dVar) {
+        return new c((qi.e) dVar.a(qi.e.class), dVar.e(cj.i.class), (ExecutorService) dVar.g(d0.a(si.a.class, ExecutorService.class)), ui.i.a((Executor) dVar.g(d0.a(si.b.class, Executor.class))));
     }
 
     @Override // com.google.firebase.components.ComponentRegistrar
-    public List<qi.c> getComponents() {
-        return Arrays.asList(qi.c.c(cj.e.class).g(LIBRARY_NAME).b(q.j(ni.e.class)).b(q.h(zi.i.class)).b(q.k(d0.a(pi.a.class, ExecutorService.class))).b(q.k(d0.a(pi.b.class, Executor.class))).e(new qi.g() { // from class: cj.f
-            @Override // qi.g
-            public final Object a(qi.d dVar) {
+    public List<ti.c> getComponents() {
+        return Arrays.asList(ti.c.c(fj.e.class).g(LIBRARY_NAME).b(q.j(qi.e.class)).b(q.h(cj.i.class)).b(q.k(d0.a(si.a.class, ExecutorService.class))).b(q.k(d0.a(si.b.class, Executor.class))).e(new ti.g() { // from class: fj.f
+            @Override // ti.g
+            public final Object a(ti.d dVar) {
                 return FirebaseInstallationsRegistrar.a(dVar);
             }
-        }).d(), zi.h.a(), jj.h.b(LIBRARY_NAME, "17.2.0"));
+        }).d(), cj.h.a(), mj.h.b(LIBRARY_NAME, "17.2.0"));
     }
 }

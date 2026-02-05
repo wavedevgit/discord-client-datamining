@@ -49,30 +49,30 @@ public final class PoseConfigJsonAdapter extends h {
     @NotNull
     public PoseConfig fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         Boolean bool = null;
         Boolean bool2 = null;
         Long l10 = null;
         Boolean bool3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 bool = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 bool2 = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 l10 = (Long) this.nullableLongAdapter.fromJson(reader);
-            } else if (A0 == 4) {
+            } else if (W == 4) {
                 bool3 = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new PoseConfig(str, bool, bool2, l10, bool3);
     }
 
@@ -80,16 +80,16 @@ public final class PoseConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, PoseConfig poseConfig) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (poseConfig != null) {
-            writer.l();
-            writer.A0("pose");
+            writer.k();
+            writer.W("pose");
             this.nullableStringAdapter.toJson(writer, poseConfig.getPose());
-            writer.A0("allowReview");
+            writer.W("allowReview");
             this.nullableBooleanAdapter.toJson(writer, poseConfig.getAllowReview());
-            writer.A0("manualCaptureEnabled");
+            writer.W("manualCaptureEnabled");
             this.nullableBooleanAdapter.toJson(writer, poseConfig.getManualCaptureEnabled());
-            writer.A0("manualCaptureDelayMs");
+            writer.W("manualCaptureDelayMs");
             this.nullableLongAdapter.toJson(writer, poseConfig.getManualCaptureDelayMs());
-            writer.A0("autoCaptureEnabled");
+            writer.W("autoCaptureEnabled");
             this.nullableBooleanAdapter.toJson(writer, poseConfig.getAutoCaptureEnabled());
             writer.E();
             return;

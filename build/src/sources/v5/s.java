@@ -10,41 +10,41 @@ import w5.c;
 abstract class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f51172a = c.a.a("x", "y");
+    private static final c.a f51861a = c.a.a("x", "y");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f51173a;
+        static final /* synthetic */ int[] f51862a;
 
         static {
             int[] iArr = new int[c.b.values().length];
-            f51173a = iArr;
+            f51862a = iArr;
             try {
                 iArr[c.b.NUMBER.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f51173a[c.b.BEGIN_ARRAY.ordinal()] = 2;
+                f51862a[c.b.BEGIN_ARRAY.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f51173a[c.b.BEGIN_OBJECT.ordinal()] = 3;
+                f51862a[c.b.BEGIN_OBJECT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
     }
 
     private static PointF a(w5.c cVar, float f10) {
-        cVar.u();
+        cVar.v();
         float nextDouble = (float) cVar.nextDouble();
         float nextDouble2 = (float) cVar.nextDouble();
-        while (cVar.n() != c.b.END_ARRAY) {
+        while (cVar.m() != c.b.END_ARRAY) {
             cVar.P();
         }
-        cVar.s();
+        cVar.t();
         return new PointF(nextDouble * f10, nextDouble2 * f10);
     }
 
@@ -58,13 +58,13 @@ abstract class s {
     }
 
     private static PointF c(w5.c cVar, float f10) {
-        cVar.r();
+        cVar.s();
         float f11 = 0.0f;
         float f12 = 0.0f;
         while (cVar.hasNext()) {
-            int B = cVar.B(f51172a);
-            if (B != 0) {
-                if (B != 1) {
+            int y10 = cVar.y(f51861a);
+            if (y10 != 0) {
+                if (y10 != 1) {
                     cVar.E();
                     cVar.P();
                 } else {
@@ -74,32 +74,32 @@ abstract class s {
                 f11 = g(cVar);
             }
         }
-        cVar.y();
+        cVar.z();
         return new PointF(f11 * f10, f12 * f10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int d(w5.c cVar) {
-        cVar.u();
+        cVar.v();
         int nextDouble = (int) (cVar.nextDouble() * 255.0d);
         int nextDouble2 = (int) (cVar.nextDouble() * 255.0d);
         int nextDouble3 = (int) (cVar.nextDouble() * 255.0d);
         while (cVar.hasNext()) {
             cVar.P();
         }
-        cVar.s();
+        cVar.t();
         return Color.argb((int) SetSpanOperation.SPAN_MAX_PRIORITY, nextDouble, nextDouble2, nextDouble3);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static PointF e(w5.c cVar, float f10) {
-        int i10 = a.f51173a[cVar.n().ordinal()];
+        int i10 = a.f51862a[cVar.m().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
                     return c(cVar, f10);
                 }
-                throw new IllegalArgumentException("Unknown point starts with " + cVar.n());
+                throw new IllegalArgumentException("Unknown point starts with " + cVar.m());
             }
             return a(cVar, f10);
         }
@@ -109,31 +109,31 @@ abstract class s {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static List f(w5.c cVar, float f10) {
         ArrayList arrayList = new ArrayList();
-        cVar.u();
-        while (cVar.n() == c.b.BEGIN_ARRAY) {
-            cVar.u();
+        cVar.v();
+        while (cVar.m() == c.b.BEGIN_ARRAY) {
+            cVar.v();
             arrayList.add(e(cVar, f10));
-            cVar.s();
+            cVar.t();
         }
-        cVar.s();
+        cVar.t();
         return arrayList;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static float g(w5.c cVar) {
-        c.b n10 = cVar.n();
-        int i10 = a.f51173a[n10.ordinal()];
+        c.b m10 = cVar.m();
+        int i10 = a.f51862a[m10.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
-                cVar.u();
+                cVar.v();
                 float nextDouble = (float) cVar.nextDouble();
                 while (cVar.hasNext()) {
                     cVar.P();
                 }
-                cVar.s();
+                cVar.t();
                 return nextDouble;
             }
-            throw new IllegalArgumentException("Unknown value for token of type " + n10);
+            throw new IllegalArgumentException("Unknown value for token of type " + m10);
         }
         return (float) cVar.nextDouble();
     }

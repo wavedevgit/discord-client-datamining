@@ -1,17 +1,17 @@
 package com.discord.chat.bridge.codedlinks;
 
 import androidx.recyclerview.widget.RecyclerView;
-import at.b0;
 import com.discord.chat.bridge.codedlinks.InviteType;
 import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.uimanager.events.PointerEventHelper;
-import dt.a2;
-import dt.h;
-import dt.h0;
-import dt.n2;
-import dt.p0;
+import dt.b0;
+import gt.a2;
+import gt.h;
+import gt.h0;
+import gt.n2;
+import gt.p0;
 import java.util.List;
 import kotlin.Lazy;
 import kotlin.Metadata;
@@ -26,8 +26,8 @@ import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/codedlinks/AppMessageEmbedImpl.$serializer", "Ldt/h0;", "Lcom/discord/chat/bridge/codedlinks/AppMessageEmbedImpl;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/codedlinks/AppMessageEmbedImpl;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/codedlinks/AppMessageEmbedImpl;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@lr.c
+@or.c
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/codedlinks/AppMessageEmbedImpl.$serializer", "Lgt/h0;", "Lcom/discord/chat/bridge/codedlinks/AppMessageEmbedImpl;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/codedlinks/AppMessageEmbedImpl;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/codedlinks/AppMessageEmbedImpl;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
     @NotNull
@@ -84,23 +84,23 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
     private AppMessageEmbedImpl$$serializer() {
     }
 
-    @Override // dt.h0
+    @Override // gt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = AppMessageEmbedImpl.$childSerializers;
-        p0 p0Var = p0.f20994a;
-        n2 n2Var = n2.f20978a;
-        KSerializer u10 = bt.a.u(n2Var);
-        KSerializer u11 = bt.a.u(InviteType.Serializer.INSTANCE);
-        KSerializer u12 = bt.a.u(p0Var);
-        KSerializer u13 = bt.a.u(p0Var);
-        KSerializer u14 = bt.a.u(p0Var);
-        KSerializer u15 = bt.a.u(n2Var);
-        KSerializer u16 = bt.a.u(n2Var);
-        KSerializer u17 = bt.a.u(p0Var);
-        h hVar = h.f20942a;
-        return new KSerializer[]{p0Var, p0Var, p0Var, u10, u11, u12, u13, u14, u15, u16, u17, bt.a.u(hVar), bt.a.u(hVar), bt.a.u(p0Var), bt.a.u(p0Var), bt.a.u(hVar), bt.a.u(p0Var), bt.a.u(n2Var), bt.a.u(n2Var), bt.a.u(n2Var), bt.a.u(p0Var), bt.a.u(p0Var), bt.a.u(p0Var), bt.a.u(n2Var), bt.a.u(n2Var), bt.a.u(p0Var), bt.a.u(n2Var), n2Var, n2Var, bt.a.u(n2Var), bt.a.u(n2Var), bt.a.u(n2Var), bt.a.u(n2Var), bt.a.u((KSerializer) lazyArr[33].getValue()), bt.a.u(n2Var), bt.a.u(n2Var), bt.a.u(n2Var), n2Var, bt.a.u((KSerializer) lazyArr[38].getValue())};
+        p0 p0Var = p0.f25318a;
+        n2 n2Var = n2.f25302a;
+        KSerializer u10 = et.a.u(n2Var);
+        KSerializer u11 = et.a.u(InviteType.Serializer.INSTANCE);
+        KSerializer u12 = et.a.u(p0Var);
+        KSerializer u13 = et.a.u(p0Var);
+        KSerializer u14 = et.a.u(p0Var);
+        KSerializer u15 = et.a.u(n2Var);
+        KSerializer u16 = et.a.u(n2Var);
+        KSerializer u17 = et.a.u(p0Var);
+        h hVar = h.f25266a;
+        return new KSerializer[]{p0Var, p0Var, p0Var, u10, u11, u12, u13, u14, u15, u16, u17, et.a.u(hVar), et.a.u(hVar), et.a.u(p0Var), et.a.u(p0Var), et.a.u(hVar), et.a.u(p0Var), et.a.u(n2Var), et.a.u(n2Var), et.a.u(n2Var), et.a.u(p0Var), et.a.u(p0Var), et.a.u(p0Var), et.a.u(n2Var), et.a.u(n2Var), et.a.u(p0Var), et.a.u(n2Var), n2Var, n2Var, et.a.u(n2Var), et.a.u(n2Var), et.a.u(n2Var), et.a.u(n2Var), et.a.u((KSerializer) lazyArr[33].getValue()), et.a.u(n2Var), et.a.u(n2Var), et.a.u(n2Var), n2Var, et.a.u((KSerializer) lazyArr[38].getValue())};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -184,10 +184,10 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
             int i20 = b10.i(serialDescriptor, 0);
             int i21 = b10.i(serialDescriptor, 1);
             int i22 = b10.i(serialDescriptor, 2);
-            n2 n2Var = n2.f20978a;
-            p0 p0Var = p0.f20994a;
+            n2 n2Var = n2.f25302a;
+            p0 p0Var = p0.f25318a;
             Integer num20 = (Integer) b10.n(serialDescriptor, 10, p0Var, null);
-            h hVar = h.f20942a;
+            h hVar = h.f25266a;
             Boolean bool7 = (Boolean) b10.n(serialDescriptor, 11, hVar, null);
             Boolean bool8 = (Boolean) b10.n(serialDescriptor, 12, hVar, null);
             Integer num21 = (Integer) b10.n(serialDescriptor, 13, p0Var, null);
@@ -321,7 +321,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         str26 = str57;
                         num18 = num37;
                         num19 = num38;
-                        Unit unit = Unit.f32464a;
+                        Unit unit = Unit.f31988a;
                         str27 = str50;
                         list5 = list5;
                         i15 = i27;
@@ -350,7 +350,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num18 = num37;
                         num19 = num38;
                         int i28 = b10.i(serialDescriptor, 0);
-                        Unit unit2 = Unit.f32464a;
+                        Unit unit2 = Unit.f31988a;
                         str27 = str50;
                         list5 = list5;
                         i15 = i27 | 1;
@@ -379,7 +379,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num18 = num37;
                         num19 = num38;
                         i23 = b10.i(serialDescriptor, 1);
-                        Unit unit3 = Unit.f32464a;
+                        Unit unit3 = Unit.f31988a;
                         str27 = str50;
                         list5 = list5;
                         i15 = i27 | 2;
@@ -407,7 +407,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num18 = num37;
                         num19 = num38;
                         int i29 = b10.i(serialDescriptor, 2);
-                        Unit unit4 = Unit.f32464a;
+                        Unit unit4 = Unit.f31988a;
                         str27 = str50;
                         list5 = list5;
                         i15 = i27 | 4;
@@ -437,8 +437,8 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         inviteType2 = inviteType3;
                         i16 = i27 | 8;
-                        Unit unit5 = Unit.f32464a;
-                        str27 = (String) b10.n(serialDescriptor, 3, n2.f20978a, str50);
+                        Unit unit5 = Unit.f31988a;
+                        str27 = (String) b10.n(serialDescriptor, 3, n2.f25302a, str50);
                         list5 = list5;
                         str44 = str60;
                         num29 = num39;
@@ -465,7 +465,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         num12 = num30;
                         i17 = i27 | 16;
-                        Unit unit6 = Unit.f32464a;
+                        Unit unit6 = Unit.f31988a;
                         inviteType2 = (InviteType) b10.n(serialDescriptor, 4, InviteType.Serializer.INSTANCE, inviteType3);
                         str44 = str61;
                         list5 = list5;
@@ -493,8 +493,8 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         num13 = num31;
                         i16 = i27 | 32;
-                        Unit unit7 = Unit.f32464a;
-                        num12 = (Integer) b10.n(serialDescriptor, 5, p0.f20994a, num30);
+                        Unit unit7 = Unit.f31988a;
+                        num12 = (Integer) b10.n(serialDescriptor, 5, p0.f25318a, num30);
                         str44 = str62;
                         list5 = list5;
                         num29 = num39;
@@ -521,8 +521,8 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         num14 = num32;
                         i17 = i27 | 64;
-                        Unit unit8 = Unit.f32464a;
-                        num13 = (Integer) b10.n(serialDescriptor, 6, p0.f20994a, num31);
+                        Unit unit8 = Unit.f31988a;
+                        num13 = (Integer) b10.n(serialDescriptor, 6, p0.f25318a, num31);
                         str44 = str63;
                         list5 = list5;
                         num29 = num39;
@@ -549,8 +549,8 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         str22 = str51;
                         i16 = i27 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                        Unit unit9 = Unit.f32464a;
-                        num14 = (Integer) b10.n(serialDescriptor, 7, p0.f20994a, num32);
+                        Unit unit9 = Unit.f31988a;
+                        num14 = (Integer) b10.n(serialDescriptor, 7, p0.f25318a, num32);
                         str44 = str64;
                         list5 = list5;
                         num29 = num39;
@@ -577,8 +577,8 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         str23 = str52;
                         i17 = i27 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
-                        Unit unit10 = Unit.f32464a;
-                        str22 = (String) b10.n(serialDescriptor, 8, n2.f20978a, str51);
+                        Unit unit10 = Unit.f31988a;
+                        str22 = (String) b10.n(serialDescriptor, 8, n2.f25302a, str51);
                         str44 = str65;
                         list5 = list5;
                         num29 = num39;
@@ -605,8 +605,8 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         num15 = num33;
                         i16 = i27 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                        Unit unit11 = Unit.f32464a;
-                        str23 = (String) b10.n(serialDescriptor, 9, n2.f20978a, str52);
+                        Unit unit11 = Unit.f31988a;
+                        str23 = (String) b10.n(serialDescriptor, 9, n2.f25302a, str52);
                         str44 = str66;
                         list5 = list5;
                         num29 = num39;
@@ -633,8 +633,8 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         bool4 = bool10;
                         i17 = i27 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-                        Unit unit12 = Unit.f32464a;
-                        num15 = (Integer) b10.n(serialDescriptor, 10, p0.f20994a, num33);
+                        Unit unit12 = Unit.f31988a;
+                        num15 = (Integer) b10.n(serialDescriptor, 10, p0.f25318a, num33);
                         str44 = str67;
                         list5 = list5;
                         num29 = num39;
@@ -661,8 +661,8 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         bool5 = bool11;
                         i16 = i27 | RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit13 = Unit.f32464a;
-                        bool4 = (Boolean) b10.n(serialDescriptor, 11, h.f20942a, bool10);
+                        Unit unit13 = Unit.f31988a;
+                        bool4 = (Boolean) b10.n(serialDescriptor, 11, h.f25266a, bool10);
                         str44 = str68;
                         list5 = list5;
                         num29 = num39;
@@ -689,8 +689,8 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         num16 = num34;
                         i17 = i27 | RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit14 = Unit.f32464a;
-                        bool5 = (Boolean) b10.n(serialDescriptor, 12, h.f20942a, bool11);
+                        Unit unit14 = Unit.f31988a;
+                        bool5 = (Boolean) b10.n(serialDescriptor, 12, h.f25266a, bool11);
                         str44 = str69;
                         list5 = list5;
                         num29 = num39;
@@ -717,8 +717,8 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         str21 = str43;
                         i16 = i27 | 8192;
-                        Unit unit15 = Unit.f32464a;
-                        num16 = (Integer) b10.n(serialDescriptor, 13, p0.f20994a, num34);
+                        Unit unit15 = Unit.f31988a;
+                        num16 = (Integer) b10.n(serialDescriptor, 13, p0.f25318a, num34);
                         str44 = str70;
                         list5 = list5;
                         num29 = num39;
@@ -744,11 +744,11 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num18 = num37;
                         num19 = num38;
                         bool6 = bool12;
-                        Unit unit16 = Unit.f32464a;
+                        Unit unit16 = Unit.f31988a;
                         i15 = i27 | 16384;
                         str44 = str44;
                         num29 = num39;
-                        num35 = (Integer) b10.n(serialDescriptor, 14, p0.f20994a, num35);
+                        num35 = (Integer) b10.n(serialDescriptor, 14, p0.f25318a, num35);
                         str21 = str43;
                         list5 = list3;
                         str27 = str50;
@@ -774,11 +774,11 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         num17 = num36;
                         int i30 = i27 | PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
-                        Unit unit17 = Unit.f32464a;
+                        Unit unit17 = Unit.f31988a;
                         i15 = i30;
                         str44 = str71;
                         num29 = num39;
-                        bool6 = (Boolean) b10.n(serialDescriptor, 15, h.f20942a, bool12);
+                        bool6 = (Boolean) b10.n(serialDescriptor, 15, h.f25266a, bool12);
                         str21 = str43;
                         list5 = list3;
                         str27 = str50;
@@ -802,11 +802,11 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         str24 = str55;
                         int i31 = i27 | 65536;
-                        Unit unit18 = Unit.f32464a;
+                        Unit unit18 = Unit.f31988a;
                         i15 = i31;
                         str44 = str72;
                         num29 = num39;
-                        num17 = (Integer) b10.n(serialDescriptor, 16, p0.f20994a, num36);
+                        num17 = (Integer) b10.n(serialDescriptor, 16, p0.f25318a, num36);
                         str21 = str43;
                         list5 = list5;
                         str27 = str50;
@@ -830,11 +830,11 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         str25 = str56;
                         int i32 = i27 | 131072;
-                        Unit unit19 = Unit.f32464a;
+                        Unit unit19 = Unit.f31988a;
                         i15 = i32;
                         str44 = str73;
                         num29 = num39;
-                        str24 = (String) b10.n(serialDescriptor, 17, n2.f20978a, str55);
+                        str24 = (String) b10.n(serialDescriptor, 17, n2.f25302a, str55);
                         str21 = str43;
                         list5 = list5;
                         str27 = str50;
@@ -858,11 +858,11 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         str26 = str57;
                         int i33 = i27 | 262144;
-                        Unit unit20 = Unit.f32464a;
+                        Unit unit20 = Unit.f31988a;
                         i15 = i33;
                         str44 = str74;
                         num29 = num39;
-                        str25 = (String) b10.n(serialDescriptor, 18, n2.f20978a, str56);
+                        str25 = (String) b10.n(serialDescriptor, 18, n2.f25302a, str56);
                         str21 = str43;
                         list5 = list5;
                         str27 = str50;
@@ -886,11 +886,11 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num19 = num38;
                         num18 = num37;
                         int i34 = i27 | 524288;
-                        Unit unit21 = Unit.f32464a;
+                        Unit unit21 = Unit.f31988a;
                         i15 = i34;
                         str44 = str75;
                         num29 = num39;
-                        str26 = (String) b10.n(serialDescriptor, 19, n2.f20978a, str57);
+                        str26 = (String) b10.n(serialDescriptor, 19, n2.f25302a, str57);
                         str21 = str43;
                         list5 = list5;
                         str27 = str50;
@@ -914,11 +914,11 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         String str76 = str44;
                         num19 = num38;
                         int i35 = i27 | 1048576;
-                        Unit unit22 = Unit.f32464a;
+                        Unit unit22 = Unit.f31988a;
                         i15 = i35;
                         str44 = str76;
                         num29 = num39;
-                        num18 = (Integer) b10.n(serialDescriptor, 20, p0.f20994a, num37);
+                        num18 = (Integer) b10.n(serialDescriptor, 20, p0.f25318a, num37);
                         str21 = str43;
                         list5 = list5;
                         str27 = str50;
@@ -942,11 +942,11 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         str20 = str42;
                         String str77 = str44;
                         int i36 = i27 | 2097152;
-                        Unit unit23 = Unit.f32464a;
+                        Unit unit23 = Unit.f31988a;
                         i15 = i36;
                         str44 = str77;
                         num29 = num39;
-                        num19 = (Integer) b10.n(serialDescriptor, 21, p0.f20994a, num38);
+                        num19 = (Integer) b10.n(serialDescriptor, 21, p0.f25318a, num38);
                         str21 = str43;
                         list5 = list5;
                         str27 = str50;
@@ -971,7 +971,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         String str78 = str44;
                         str20 = str42;
                         int i37 = i27 | 4194304;
-                        Unit unit24 = Unit.f32464a;
+                        Unit unit24 = Unit.f31988a;
                         str21 = str43;
                         i15 = i37;
                         str44 = str78;
@@ -992,13 +992,13 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         str26 = str57;
                         num18 = num37;
                         num19 = num38;
-                        num29 = (Integer) b10.n(serialDescriptor, 22, p0.f20994a, num39);
+                        num29 = (Integer) b10.n(serialDescriptor, 22, p0.f25318a, num39);
                         list5 = list5;
                         str27 = str50;
                         break;
                     case 23:
-                        str44 = (String) b10.n(serialDescriptor, 23, n2.f20978a, str44);
-                        Unit unit25 = Unit.f32464a;
+                        str44 = (String) b10.n(serialDescriptor, 23, n2.f25302a, str44);
+                        Unit unit25 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         i15 = i27 | 8388608;
@@ -1026,7 +1026,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                     case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
                         str28 = str44;
                         int i38 = i27 | PointerEventHelper.X_FLAG_SUPPORTS_HOVER;
-                        Unit unit26 = Unit.f32464a;
+                        Unit unit26 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         i15 = i38;
@@ -1049,14 +1049,14 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num18 = num37;
                         num19 = num38;
                         num29 = num39;
-                        str46 = (String) b10.n(serialDescriptor, 24, n2.f20978a, str46);
+                        str46 = (String) b10.n(serialDescriptor, 24, n2.f25302a, str46);
                         str44 = str28;
                         break;
                     case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
                         str29 = str44;
-                        num28 = (Integer) b10.n(serialDescriptor, 25, p0.f20994a, num28);
+                        num28 = (Integer) b10.n(serialDescriptor, 25, p0.f25318a, num28);
                         i18 = 33554432;
-                        Unit unit27 = Unit.f32464a;
+                        Unit unit27 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         i15 = i27 | i18;
@@ -1083,9 +1083,9 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         break;
                     case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
                         str29 = str44;
-                        str42 = (String) b10.n(serialDescriptor, 26, n2.f20978a, str42);
+                        str42 = (String) b10.n(serialDescriptor, 26, n2.f25302a, str42);
                         i18 = 67108864;
-                        Unit unit272 = Unit.f32464a;
+                        Unit unit272 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         i15 = i27 | i18;
@@ -1114,7 +1114,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         str29 = str44;
                         String m13 = b10.m(serialDescriptor, 27);
                         i19 = i27 | 134217728;
-                        Unit unit28 = Unit.f32464a;
+                        Unit unit28 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         str53 = m13;
@@ -1144,7 +1144,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         str29 = str44;
                         String m14 = b10.m(serialDescriptor, 28);
                         i19 = i27 | 268435456;
-                        Unit unit29 = Unit.f32464a;
+                        Unit unit29 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         str54 = m14;
@@ -1171,7 +1171,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         str44 = str29;
                         break;
                     case 29:
-                        Unit unit30 = Unit.f32464a;
+                        Unit unit30 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         i15 = i27 | 536870912;
@@ -1194,14 +1194,14 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num18 = num37;
                         num19 = num38;
                         str44 = str44;
-                        str49 = (String) b10.n(serialDescriptor, 29, n2.f20978a, str49);
+                        str49 = (String) b10.n(serialDescriptor, 29, n2.f25302a, str49);
                         num29 = num39;
                         break;
                     case 30:
                         str29 = str44;
-                        Unit unit31 = Unit.f32464a;
+                        Unit unit31 = Unit.f31988a;
                         str20 = str42;
-                        str21 = (String) b10.n(serialDescriptor, 30, n2.f20978a, str43);
+                        str21 = (String) b10.n(serialDescriptor, 30, n2.f25302a, str43);
                         i15 = i27 | 1073741824;
                         str27 = str50;
                         inviteType2 = inviteType3;
@@ -1225,7 +1225,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         str44 = str29;
                         break;
                     case ChatViewRecyclerTypes.EMBEDDED_ACTIVITY_INVITE /* 31 */:
-                        Unit unit32 = Unit.f32464a;
+                        Unit unit32 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         i15 = i27 | Integer.MIN_VALUE;
@@ -1248,11 +1248,11 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num18 = num37;
                         num19 = num38;
                         str44 = str44;
-                        str41 = (String) b10.n(serialDescriptor, 31, n2.f20978a, str41);
+                        str41 = (String) b10.n(serialDescriptor, 31, n2.f25302a, str41);
                         num29 = num39;
                         break;
                     case 32:
-                        Unit unit33 = Unit.f32464a;
+                        Unit unit33 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         i24 |= 1;
@@ -1276,13 +1276,13 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num18 = num37;
                         num19 = num38;
                         str44 = str44;
-                        str59 = (String) b10.n(serialDescriptor, 32, n2.f20978a, str59);
+                        str59 = (String) b10.n(serialDescriptor, 32, n2.f25302a, str59);
                         num29 = num39;
                         break;
                     case ChatViewRecyclerTypes.AUTO_MODERATION_NOTIFICATION_EMBED /* 33 */:
                         str29 = str44;
                         list5 = (List) b10.n(serialDescriptor, 33, (DeserializationStrategy) lazyArr[33].getValue(), list5);
-                        Unit unit34 = Unit.f32464a;
+                        Unit unit34 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         i24 |= 2;
@@ -1310,7 +1310,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         break;
                     case ChatViewRecyclerTypes.CHANNEL_DEADCHAT_PROMPT_ACTIONS /* 34 */:
                         str28 = str44;
-                        Unit unit35 = Unit.f32464a;
+                        Unit unit35 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         i24 |= 4;
@@ -1334,12 +1334,12 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num18 = num37;
                         num19 = num38;
                         num29 = num39;
-                        str48 = (String) b10.n(serialDescriptor, 34, n2.f20978a, str48);
+                        str48 = (String) b10.n(serialDescriptor, 34, n2.f25302a, str48);
                         str44 = str28;
                         break;
                     case ChatViewRecyclerTypes.INFO_LINK /* 35 */:
                         str28 = str44;
-                        Unit unit36 = Unit.f32464a;
+                        Unit unit36 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         i24 |= 8;
@@ -1363,12 +1363,12 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num18 = num37;
                         num19 = num38;
                         num29 = num39;
-                        str45 = (String) b10.n(serialDescriptor, 35, n2.f20978a, str45);
+                        str45 = (String) b10.n(serialDescriptor, 35, n2.f25302a, str45);
                         str44 = str28;
                         break;
                     case ChatViewRecyclerTypes.SAFETY_POLICY_NOTICE /* 36 */:
                         str28 = str44;
-                        Unit unit37 = Unit.f32464a;
+                        Unit unit37 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         i24 |= 16;
@@ -1392,14 +1392,14 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         num18 = num37;
                         num19 = num38;
                         num29 = num39;
-                        str47 = (String) b10.n(serialDescriptor, 36, n2.f20978a, str47);
+                        str47 = (String) b10.n(serialDescriptor, 36, n2.f25302a, str47);
                         str44 = str28;
                         break;
                     case ChatViewRecyclerTypes.POLL_TEXT_AND_IMAGE /* 37 */:
                         str29 = str44;
                         String m15 = b10.m(serialDescriptor, 37);
                         i24 |= 32;
-                        Unit unit38 = Unit.f32464a;
+                        Unit unit38 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         str58 = m15;
@@ -1427,7 +1427,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
                         break;
                     case ChatViewRecyclerTypes.POLL_IMAGE_ONLY /* 38 */:
                         str28 = str44;
-                        Unit unit39 = Unit.f32464a;
+                        Unit unit39 = Unit.f31988a;
                         str20 = str42;
                         str21 = str43;
                         i24 |= 64;
@@ -1525,13 +1525,13 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
         return new AppMessageEmbedImpl(i10, i12, i13, i11, i14, str, inviteType, num7, num8, num9, str15, str16, num10, bool3, bool2, num6, num11, bool, num5, str13, str12, str11, num4, num3, num2, str2, str4, num, str10, str17, str18, str9, str14, str7, str8, list2, str6, str3, str5, str19, list, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // at.o
+    @Override // dt.o
     public final void serialize(@NotNull Encoder encoder, @NotNull AppMessageEmbedImpl value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -1541,7 +1541,7 @@ public /* synthetic */ class AppMessageEmbedImpl$$serializer implements h0 {
         b10.c(serialDescriptor);
     }
 
-    @Override // dt.h0
+    @Override // gt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

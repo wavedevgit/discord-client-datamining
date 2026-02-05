@@ -1,25 +1,27 @@
 package ov;
 
-import ov.o;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e implements nu.b, o {
+public interface e {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final e f44805a = new e();
-
-    private e() {
-    }
-
-    public String a(Object obj) {
-        return o.a.a(this, obj);
-    }
-
-    @Override // nu.b
-    public Object f(Object obj, Object obj2) {
-        String a10 = a(obj);
-        if (a10 != null) {
-            return Integer.valueOf(a10.length());
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static abstract class a {
+        /* JADX INFO: Access modifiers changed from: protected */
+        public static Type b(int i10, ParameterizedType parameterizedType) {
+            return e0.g(i10, parameterizedType);
         }
-        return null;
+
+        /* JADX INFO: Access modifiers changed from: protected */
+        public static Class c(Type type) {
+            return e0.h(type);
+        }
+
+        public abstract e a(Type type, Annotation[] annotationArr, a0 a0Var);
     }
+
+    Type a();
+
+    Object b(d dVar);
 }

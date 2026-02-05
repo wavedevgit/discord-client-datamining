@@ -1,11 +1,8 @@
 package jv;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface b {
-    boolean a();
-
-    int b();
-
-    boolean c();
-
-    int length();
+public class b extends a {
+    @Override // jv.r
+    public void a(y yVar) {
+        yVar.a(this);
+    }
 }

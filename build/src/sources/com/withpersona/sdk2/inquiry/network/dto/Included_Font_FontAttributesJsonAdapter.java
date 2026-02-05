@@ -47,24 +47,24 @@ public final class Included_Font_FontAttributesJsonAdapter extends h {
     @NotNull
     public Included.Font.FontAttributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         StyleElements.FontWeight fontWeight = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 fontWeight = (StyleElements.FontWeight) this.nullableFontWeightAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new Included.Font.FontAttributes(str, fontWeight, str2);
     }
 
@@ -72,12 +72,12 @@ public final class Included_Font_FontAttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, Included.Font.FontAttributes fontAttributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (fontAttributes != null) {
-            writer.l();
-            writer.A0("fontFamilyName");
+            writer.k();
+            writer.W("fontFamilyName");
             this.nullableStringAdapter.toJson(writer, fontAttributes.getFontFamilyName());
-            writer.A0(ViewProps.FONT_WEIGHT);
+            writer.W(ViewProps.FONT_WEIGHT);
             this.nullableFontWeightAdapter.toJson(writer, fontAttributes.getFontWeight());
-            writer.A0("url");
+            writer.W("url");
             this.nullableStringAdapter.toJson(writer, fontAttributes.getUrl());
             writer.E();
             return;

@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/DefultGuildsRestrictedSetting.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Environment: var1
-        _fun88850: for (var _fun88850_ip = 0;;) switch (_fun88850_ip) {
+        _fun88869: for (var _fun88869_ip = 0;;) switch (_fun88869_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -40,15 +40,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var1)();
                 var1 = null;
                 if (!(var1 == var0)) {
-                    _fun88850_ip = 86;
-                    continue _fun88850
+                    _fun88869_ip = 86;
+                    continue _fun88869
                 }
             case 71:
                 var3 = !var2;
                 var1 = !var3;
                 if (!var3) {
-                    _fun88850_ip = 83;
-                    continue _fun88850
+                    _fun88869_ip = 83;
+                    continue _fun88869
                 }
             case 80:
                 var1 = var2;

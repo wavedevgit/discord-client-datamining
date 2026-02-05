@@ -208,9 +208,9 @@ public abstract class ExploreByTouchHelper extends androidx.core.view.a {
                     j02.n(this.mTempScreenRect);
                     if (this.mTempScreenRect.equals(rect)) {
                         j02.m(this.mTempScreenRect);
-                        if (j02.f3310b != -1) {
+                        if (j02.f3422b != -1) {
                             AccessibilityNodeInfoCompat j03 = AccessibilityNodeInfoCompat.j0();
-                            for (int i11 = j02.f3310b; i11 != -1; i11 = j03.f3310b) {
+                            for (int i11 = j02.f3422b; i11 != -1; i11 = j03.f3422b) {
                                 j03.R0(this.mHost, -1);
                                 j03.s0(INVALID_PARENT_BOUNDS);
                                 onPopulateNodeForVirtualView(i11, j03);

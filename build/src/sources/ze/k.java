@@ -13,7 +13,7 @@ public final class k extends n {
     @Override // com.google.android.gms.common.api.internal.a
     protected final /* bridge */ /* synthetic */ void d(a.b bVar) {
         i iVar = (i) bVar;
-        ((u) iVar.C()).S0(new j(this), iVar.k0());
+        ((u) iVar.C()).W0(new j(this), iVar.k0());
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

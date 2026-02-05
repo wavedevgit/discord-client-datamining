@@ -17,28 +17,28 @@ import x.y0;
 public final class f {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String f6179c = "f";
+    private static final String f6026c = "f";
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ThreadLocal f6180d = new a();
+    private static final ThreadLocal f6027d = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ThreadLocal f6181e = new b();
+    private static final ThreadLocal f6028e = new b();
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ThreadLocal f6182f = new c();
+    private static final ThreadLocal f6029f = new c();
 
     /* renamed from: g  reason: collision with root package name */
-    private static final List f6183g = n();
+    private static final List f6030g = n();
 
     /* renamed from: h  reason: collision with root package name */
-    private static final List f6184h = Arrays.asList("ImageWidth", "ImageLength", "PixelXDimension", "PixelYDimension", "Compression", "JPEGInterchangeFormat", "JPEGInterchangeFormatLength", "ThumbnailImageLength", "ThumbnailImageWidth", "ThumbnailOrientation");
+    private static final List f6031h = Arrays.asList("ImageWidth", "ImageLength", "PixelXDimension", "PixelYDimension", "Compression", "JPEGInterchangeFormat", "JPEGInterchangeFormatLength", "ThumbnailImageLength", "ThumbnailImageWidth", "ThumbnailOrientation");
 
     /* renamed from: a  reason: collision with root package name */
-    private final e3.a f6185a;
+    private final e3.a f6032a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f6186b = false;
+    private boolean f6033b = false;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends ThreadLocal {
@@ -85,14 +85,14 @@ public final class f {
         public static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            final double f6187a;
+            final double f6034a;
 
             a(double d10) {
-                this.f6187a = d10;
+                this.f6034a = d10;
             }
 
             double a() {
-                return this.f6187a / 2.23694d;
+                return this.f6034a / 2.23694d;
             }
         }
 
@@ -110,33 +110,33 @@ public final class f {
     }
 
     private f(e3.a aVar) {
-        this.f6185a = aVar;
+        this.f6032a = aVar;
     }
 
     private void a() {
         long currentTimeMillis = System.currentTimeMillis();
         String f10 = f(currentTimeMillis);
-        this.f6185a.h0("DateTime", f10);
+        this.f6032a.h0("DateTime", f10);
         try {
-            this.f6185a.h0("SubSecTime", Long.toString(currentTimeMillis - d(f10).getTime()));
+            this.f6032a.h0("SubSecTime", Long.toString(currentTimeMillis - d(f10).getTime()));
         } catch (ParseException unused) {
         }
     }
 
     private static Date c(String str) {
-        return ((SimpleDateFormat) f6180d.get()).parse(str);
+        return ((SimpleDateFormat) f6027d.get()).parse(str);
     }
 
     private static Date d(String str) {
-        return ((SimpleDateFormat) f6182f.get()).parse(str);
+        return ((SimpleDateFormat) f6029f.get()).parse(str);
     }
 
     private static Date e(String str) {
-        return ((SimpleDateFormat) f6181e.get()).parse(str);
+        return ((SimpleDateFormat) f6028e.get()).parse(str);
     }
 
     private static String f(long j10) {
-        return ((SimpleDateFormat) f6182f.get()).format(new Date(j10));
+        return ((SimpleDateFormat) f6029f.get()).format(new Date(j10));
     }
 
     public static f h(File file) {
@@ -148,10 +148,10 @@ public final class f {
     }
 
     public static f j(androidx.camera.core.n nVar) {
-        ByteBuffer e10 = nVar.d1()[0].e();
-        e10.rewind();
-        byte[] bArr = new byte[e10.capacity()];
-        e10.get(bArr);
+        ByteBuffer f10 = nVar.d1()[0].f();
+        f10.rewind();
+        byte[] bArr = new byte[f10.capacity()];
+        f10.get(bArr);
         return k(new ByteArrayInputStream(bArr));
     }
 
@@ -196,24 +196,24 @@ public final class f {
     }
 
     public void A() {
-        if (!this.f6186b) {
+        if (!this.f6033b) {
             a();
         }
-        this.f6185a.c0();
+        this.f6032a.c0();
     }
 
     public void b(Location location) {
-        this.f6185a.i0(location);
+        this.f6032a.i0(location);
     }
 
     public void g(f fVar) {
-        ArrayList<String> arrayList = new ArrayList(f6183g);
-        arrayList.removeAll(f6184h);
+        ArrayList<String> arrayList = new ArrayList(f6030g);
+        arrayList.removeAll(f6031h);
         for (String str : arrayList) {
-            String k10 = this.f6185a.k(str);
-            String k11 = fVar.f6185a.k(str);
+            String k10 = this.f6032a.k(str);
+            String k11 = fVar.f6032a.k(str);
             if (k10 != null && !k10.equals(k11)) {
-                fVar.f6185a.h0(str, k10);
+                fVar.f6032a.h0(str, k10);
             }
         }
     }
@@ -246,7 +246,7 @@ public final class f {
                 i10 = 2;
                 break;
         }
-        this.f6185a.h0("Orientation", String.valueOf(i10));
+        this.f6032a.h0("Orientation", String.valueOf(i10));
     }
 
     public void m() {
@@ -277,33 +277,33 @@ public final class f {
                 i10 = 4;
                 break;
         }
-        this.f6185a.h0("Orientation", String.valueOf(i10));
+        this.f6032a.h0("Orientation", String.valueOf(i10));
     }
 
     public String o() {
-        return this.f6185a.k("ImageDescription");
+        return this.f6032a.k("ImageDescription");
     }
 
     public int p() {
-        return this.f6185a.m("ImageLength", 0);
+        return this.f6032a.m("ImageLength", 0);
     }
 
     public Location q() {
         double a10;
-        String k10 = this.f6185a.k("GPSProcessingMethod");
-        double[] q10 = this.f6185a.q();
-        double j10 = this.f6185a.j(0.0d);
-        double l10 = this.f6185a.l("GPSSpeed", 0.0d);
-        String k11 = this.f6185a.k("GPSSpeedRef");
+        String k10 = this.f6032a.k("GPSProcessingMethod");
+        double[] q10 = this.f6032a.q();
+        double j10 = this.f6032a.j(0.0d);
+        double l10 = this.f6032a.l("GPSSpeed", 0.0d);
+        String k11 = this.f6032a.k("GPSSpeedRef");
         if (k11 == null) {
             k11 = "K";
         }
-        long y10 = y(this.f6185a.k("GPSDateStamp"), this.f6185a.k("GPSTimeStamp"));
+        long y10 = y(this.f6032a.k("GPSDateStamp"), this.f6032a.k("GPSTimeStamp"));
         if (q10 == null) {
             return null;
         }
         if (k10 == null) {
-            k10 = f6179c;
+            k10 = f6026c;
         }
         Location location = new Location(k10);
         location.setLatitude(q10[0]);
@@ -336,7 +336,7 @@ public final class f {
     }
 
     public int r() {
-        return this.f6185a.m("Orientation", 0);
+        return this.f6032a.m("Orientation", 0);
     }
 
     public int s() {
@@ -357,11 +357,11 @@ public final class f {
     }
 
     public long t() {
-        long x10 = x(this.f6185a.k("DateTimeOriginal"));
+        long x10 = x(this.f6032a.k("DateTimeOriginal"));
         if (x10 == -1) {
             return -1L;
         }
-        String k10 = this.f6185a.k("SubSecTimeOriginal");
+        String k10 = this.f6032a.k("SubSecTimeOriginal");
         if (k10 != null) {
             try {
                 long parseLong = Long.parseLong(k10);
@@ -381,7 +381,7 @@ public final class f {
     }
 
     public int u() {
-        return this.f6185a.m("ImageWidth", 0);
+        return this.f6032a.m("ImageWidth", 0);
     }
 
     public boolean v() {
@@ -401,8 +401,8 @@ public final class f {
 
     public void z(int i10) {
         if (i10 % 90 != 0) {
-            y0.l(f6179c, String.format(Locale.US, "Can only rotate in right angles (eg. 0, 90, 180, 270). %d is unsupported.", Integer.valueOf(i10)));
-            this.f6185a.h0("Orientation", String.valueOf(0));
+            y0.l(f6026c, String.format(Locale.US, "Can only rotate in right angles (eg. 0, 90, 180, 270). %d is unsupported.", Integer.valueOf(i10)));
+            this.f6032a.h0("Orientation", String.valueOf(0));
             return;
         }
         int i11 = i10 % 360;
@@ -463,6 +463,6 @@ public final class f {
                     break;
             }
         }
-        this.f6185a.h0("Orientation", String.valueOf(r10));
+        this.f6032a.h0("Orientation", String.valueOf(r10));
     }
 }

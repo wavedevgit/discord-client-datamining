@@ -29,15 +29,15 @@ import java.lang.ref.WeakReference;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import jh.f;
-import oh.g;
-import oh.k;
-import yg.i;
-import yg.j;
+import kh.f;
+import ph.g;
+import ph.k;
+import zg.i;
+import zg.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c implements jh.b {
-    private static final int K = i.f54243w;
-    private static final int L = j.f54255l;
+public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c implements kh.b {
+    private static final int K = i.f55701w;
+    private static final int L = j.f55713l;
     private int A;
     private int B;
     private WeakReference C;
@@ -50,49 +50,49 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     private final ViewDragHelper.c J;
 
     /* renamed from: d  reason: collision with root package name */
-    private com.google.android.material.sidesheet.c f14907d;
+    private com.google.android.material.sidesheet.c f15301d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f14908e;
+    private float f15302e;
 
     /* renamed from: i  reason: collision with root package name */
-    private g f14909i;
+    private g f15303i;
 
     /* renamed from: o  reason: collision with root package name */
-    private ColorStateList f14910o;
+    private ColorStateList f15304o;
 
     /* renamed from: p  reason: collision with root package name */
-    private k f14911p;
+    private k f15305p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final d f14912q;
+    private final d f15306q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f14913r;
+    private float f15307r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f14914s;
+    private boolean f15308s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f14915t;
+    private int f15309t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f14916u;
+    private int f15310u;
 
     /* renamed from: v  reason: collision with root package name */
-    private ViewDragHelper f14917v;
+    private ViewDragHelper f15311v;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f14918w;
+    private boolean f15312w;
 
     /* renamed from: x  reason: collision with root package name */
-    private float f14919x;
+    private float f15313x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f14920y;
+    private int f15314y;
 
     /* renamed from: z  reason: collision with root package name */
-    private int f14921z;
+    private int f15315z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends ViewDragHelper.c {
@@ -101,7 +101,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
 
         @Override // androidx.customview.widget.ViewDragHelper.c
         public int a(View view, int i10, int i11) {
-            return u1.a.b(i10, SideSheetBehavior.this.f14907d.g(), SideSheetBehavior.this.f14907d.f());
+            return u1.a.b(i10, SideSheetBehavior.this.f15301d.g(), SideSheetBehavior.this.f15301d.f());
         }
 
         @Override // androidx.customview.widget.ViewDragHelper.c
@@ -111,12 +111,12 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
 
         @Override // androidx.customview.widget.ViewDragHelper.c
         public int d(View view) {
-            return SideSheetBehavior.this.f14920y + SideSheetBehavior.this.k0();
+            return SideSheetBehavior.this.f15314y + SideSheetBehavior.this.k0();
         }
 
         @Override // androidx.customview.widget.ViewDragHelper.c
         public void j(int i10) {
-            if (i10 == 1 && SideSheetBehavior.this.f14914s) {
+            if (i10 == 1 && SideSheetBehavior.this.f15308s) {
                 SideSheetBehavior.this.G0(1);
             }
         }
@@ -126,7 +126,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
             ViewGroup.MarginLayoutParams marginLayoutParams;
             View f02 = SideSheetBehavior.this.f0();
             if (f02 != null && (marginLayoutParams = (ViewGroup.MarginLayoutParams) f02.getLayoutParams()) != null) {
-                SideSheetBehavior.this.f14907d.p(marginLayoutParams, view.getLeft(), view.getRight());
+                SideSheetBehavior.this.f15301d.p(marginLayoutParams, view.getLeft(), view.getRight());
                 f02.setLayoutParams(marginLayoutParams);
             }
             SideSheetBehavior.this.a0(view, i10);
@@ -141,7 +141,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
 
         @Override // androidx.customview.widget.ViewDragHelper.c
         public boolean m(View view, int i10) {
-            if (SideSheetBehavior.this.f14915t == 1 || SideSheetBehavior.this.C == null || SideSheetBehavior.this.C.get() != view) {
+            if (SideSheetBehavior.this.f15309t == 1 || SideSheetBehavior.this.C == null || SideSheetBehavior.this.C.get() != view) {
                 return false;
             }
             return true;
@@ -167,13 +167,13 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     public class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f14925a;
+        private int f15319a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f14926b;
+        private boolean f15320b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Runnable f14927c = new Runnable() { // from class: com.google.android.material.sidesheet.e
+        private final Runnable f15321c = new Runnable() { // from class: com.google.android.material.sidesheet.e
             @Override // java.lang.Runnable
             public final void run() {
                 SideSheetBehavior.d.a(SideSheetBehavior.d.this);
@@ -184,31 +184,31 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
         }
 
         public static /* synthetic */ void a(d dVar) {
-            dVar.f14926b = false;
-            if (SideSheetBehavior.this.f14917v != null && SideSheetBehavior.this.f14917v.m(true)) {
-                dVar.b(dVar.f14925a);
-            } else if (SideSheetBehavior.this.f14915t == 2) {
-                SideSheetBehavior.this.G0(dVar.f14925a);
+            dVar.f15320b = false;
+            if (SideSheetBehavior.this.f15311v != null && SideSheetBehavior.this.f15311v.m(true)) {
+                dVar.b(dVar.f15319a);
+            } else if (SideSheetBehavior.this.f15309t == 2) {
+                SideSheetBehavior.this.G0(dVar.f15319a);
             }
         }
 
         void b(int i10) {
             if (SideSheetBehavior.this.C != null && SideSheetBehavior.this.C.get() != null) {
-                this.f14925a = i10;
-                if (!this.f14926b) {
-                    h0.f0((View) SideSheetBehavior.this.C.get(), this.f14927c);
-                    this.f14926b = true;
+                this.f15319a = i10;
+                if (!this.f15320b) {
+                    h0.f0((View) SideSheetBehavior.this.C.get(), this.f15321c);
+                    this.f15320b = true;
                 }
             }
         }
     }
 
     public SideSheetBehavior() {
-        this.f14912q = new d();
-        this.f14914s = true;
-        this.f14915t = 5;
-        this.f14916u = 5;
-        this.f14919x = 0.1f;
+        this.f15306q = new d();
+        this.f15308s = true;
+        this.f15309t = 5;
+        this.f15310u = 5;
+        this.f15313x = 0.1f;
         this.E = -1;
         this.I = new LinkedHashSet();
         this.J = new a();
@@ -223,19 +223,19 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     }
 
     private void D0(int i10) {
-        com.google.android.material.sidesheet.c cVar = this.f14907d;
+        com.google.android.material.sidesheet.c cVar = this.f15301d;
         if (cVar == null || cVar.j() != i10) {
             if (i10 == 0) {
-                this.f14907d = new com.google.android.material.sidesheet.b(this);
-                if (this.f14911p != null && !s0()) {
-                    k.b v10 = this.f14911p.v();
+                this.f15301d = new com.google.android.material.sidesheet.b(this);
+                if (this.f15305p != null && !s0()) {
+                    k.b v10 = this.f15305p.v();
                     v10.G(0.0f).w(0.0f);
                     O0(v10.m());
                 }
             } else if (i10 == 1) {
-                this.f14907d = new com.google.android.material.sidesheet.a(this);
-                if (this.f14911p != null && !r0()) {
-                    k.b v11 = this.f14911p.v();
+                this.f15301d = new com.google.android.material.sidesheet.a(this);
+                if (this.f15305p != null && !r0()) {
+                    k.b v11 = this.f15305p.v();
                     v11.B(0.0f).s(0.0f);
                     O0(v11.m());
                 }
@@ -247,7 +247,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
 
     private void E0(View view, int i10) {
         int i11;
-        if (androidx.core.view.j.b(((CoordinatorLayout.f) view.getLayoutParams()).f2863c, i10) == 3) {
+        if (androidx.core.view.j.b(((CoordinatorLayout.f) view.getLayoutParams()).f2975c, i10) == 3) {
             i11 = 1;
         } else {
             i11 = 0;
@@ -256,8 +256,8 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     }
 
     private boolean H0() {
-        if (this.f14917v != null) {
-            if (this.f14914s || this.f14915t == 1) {
+        if (this.f15311v != null) {
+            if (this.f15308s || this.f15309t == 1) {
                 return true;
             }
             return false;
@@ -278,14 +278,14 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     }
 
     private boolean J0(View view) {
-        if ((view.isShown() || h0.o(view) != null) && this.f14914s) {
+        if ((view.isShown() || h0.o(view) != null) && this.f15308s) {
             return true;
         }
         return false;
     }
 
     public static /* synthetic */ void K(SideSheetBehavior sideSheetBehavior, ViewGroup.MarginLayoutParams marginLayoutParams, int i10, View view, ValueAnimator valueAnimator) {
-        sideSheetBehavior.f14907d.o(marginLayoutParams, zg.a.c(i10, 0, valueAnimator.getAnimatedFraction()));
+        sideSheetBehavior.f15301d.o(marginLayoutParams, ah.a.c(i10, 0, valueAnimator.getAnimatedFraction()));
         view.requestLayout();
     }
 
@@ -293,7 +293,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     public void L0(View view, int i10, boolean z10) {
         if (w0(view, i10, z10)) {
             G0(2);
-            this.f14912q.b(i10);
+            this.f15306q.b(i10);
             return;
         }
         G0(i10);
@@ -305,11 +305,11 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
         if (weakReference != null && (view = (View) weakReference.get()) != null) {
             h0.h0(view, 262144);
             h0.h0(view, 1048576);
-            if (this.f14915t != 5) {
-                y0(view, AccessibilityNodeInfoCompat.a.f3332y, 5);
+            if (this.f15309t != 5) {
+                y0(view, AccessibilityNodeInfoCompat.a.f3444y, 5);
             }
-            if (this.f14915t != 3) {
-                y0(view, AccessibilityNodeInfoCompat.a.f3330w, 3);
+            if (this.f15309t != 3) {
+                y0(view, AccessibilityNodeInfoCompat.a.f3442w, 3);
             }
         }
     }
@@ -321,14 +321,14 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
             View view = (View) this.C.get();
             View f02 = f0();
             if (f02 != null && (marginLayoutParams = (ViewGroup.MarginLayoutParams) f02.getLayoutParams()) != null) {
-                this.f14907d.o(marginLayoutParams, (int) ((this.f14920y * view.getScaleX()) + this.B));
+                this.f15301d.o(marginLayoutParams, (int) ((this.f15314y * view.getScaleX()) + this.B));
                 f02.requestLayout();
             }
         }
     }
 
     private void O0(k kVar) {
-        g gVar = this.f14909i;
+        g gVar = this.f15303i;
         if (gVar != null) {
             gVar.setShapeAppearanceModel(kVar);
         }
@@ -336,7 +336,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
 
     private void P0(View view) {
         int i10;
-        if (this.f14915t == 5) {
+        if (this.f15309t == 5) {
             i10 = 4;
         } else {
             i10 = 0;
@@ -347,17 +347,17 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     }
 
     private int U(int i10, View view) {
-        int i11 = this.f14915t;
+        int i11 = this.f15309t;
         if (i11 != 1 && i11 != 2) {
             if (i11 != 3) {
                 if (i11 == 5) {
-                    return this.f14907d.e();
+                    return this.f15301d.e();
                 }
-                throw new IllegalStateException("Unexpected value: " + this.f14915t);
+                throw new IllegalStateException("Unexpected value: " + this.f15309t);
             }
             return 0;
         }
-        return i10 - this.f14907d.h(view);
+        return i10 - this.f15301d.h(view);
     }
 
     private float V(float f10, float f11) {
@@ -370,7 +370,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
             return 3;
         }
         if (I0(view, f10)) {
-            if (!this.f14907d.m(f10, f11) && !this.f14907d.l(view)) {
+            if (!this.f15301d.m(f10, f11) && !this.f15301d.l(view)) {
                 return 3;
             }
             return 5;
@@ -378,7 +378,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
             return 5;
         } else {
             int left = view.getLeft();
-            if (Math.abs(left - g0()) < Math.abs(left - this.f14907d.e())) {
+            if (Math.abs(left - g0()) < Math.abs(left - this.f15301d.e())) {
                 return 3;
             }
             return 5;
@@ -394,7 +394,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     }
 
     private AccessibilityViewCommand Y(final int i10) {
-        return new AccessibilityViewCommand() { // from class: ph.b
+        return new AccessibilityViewCommand() { // from class: qh.b
             @Override // androidx.core.view.accessibility.AccessibilityViewCommand
             public final boolean a(View view, AccessibilityViewCommand.a aVar) {
                 return SideSheetBehavior.I(SideSheetBehavior.this, i10, view, aVar);
@@ -403,26 +403,26 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     }
 
     private void Z(Context context) {
-        if (this.f14911p == null) {
+        if (this.f15305p == null) {
             return;
         }
-        g gVar = new g(this.f14911p);
-        this.f14909i = gVar;
+        g gVar = new g(this.f15305p);
+        this.f15303i = gVar;
         gVar.N(context);
-        ColorStateList colorStateList = this.f14910o;
+        ColorStateList colorStateList = this.f15304o;
         if (colorStateList != null) {
-            this.f14909i.X(colorStateList);
+            this.f15303i.X(colorStateList);
             return;
         }
         TypedValue typedValue = new TypedValue();
         context.getTheme().resolveAttribute(16842801, typedValue, true);
-        this.f14909i.setTint(typedValue.data);
+        this.f15303i.setTint(typedValue.data);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a0(View view, int i10) {
         if (!this.I.isEmpty()) {
-            this.f14907d.b(i10);
+            this.f15301d.b(i10);
             Iterator it = this.I.iterator();
             if (it.hasNext()) {
                 android.support.v4.media.session.b.a(it.next());
@@ -459,8 +459,8 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
         if (f02 == null || (marginLayoutParams = (ViewGroup.MarginLayoutParams) f02.getLayoutParams()) == null) {
             return null;
         }
-        final int c10 = this.f14907d.c(marginLayoutParams);
-        return new ValueAnimator.AnimatorUpdateListener() { // from class: ph.c
+        final int c10 = this.f15301d.c(marginLayoutParams);
+        return new ValueAnimator.AnimatorUpdateListener() { // from class: qh.c
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                 SideSheetBehavior.K(SideSheetBehavior.this, marginLayoutParams, c10, f02, valueAnimator);
@@ -469,7 +469,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     }
 
     private int h0() {
-        com.google.android.material.sidesheet.c cVar = this.f14907d;
+        com.google.android.material.sidesheet.c cVar = this.f15301d;
         if (cVar == null || cVar.j() == 0) {
             return 5;
         }
@@ -502,14 +502,14 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     }
 
     private boolean t0(MotionEvent motionEvent) {
-        if (!H0() || V(this.H, motionEvent.getX()) <= this.f14917v.z()) {
+        if (!H0() || V(this.H, motionEvent.getX()) <= this.f15311v.z()) {
             return false;
         }
         return true;
     }
 
     private boolean u0(float f10) {
-        return this.f14907d.k(f10);
+        return this.f15301d.k(f10);
     }
 
     private boolean v0(View view) {
@@ -564,10 +564,10 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
         if (cVar.a() != null) {
             super.B(coordinatorLayout, view, cVar.a());
         }
-        int i10 = cVar.f14924i;
+        int i10 = cVar.f15318i;
         i10 = (i10 == 1 || i10 == 2) ? 5 : 5;
-        this.f14915t = i10;
-        this.f14916u = i10;
+        this.f15309t = i10;
+        this.f15310u = i10;
     }
 
     public void B0(int i10) {
@@ -588,7 +588,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     }
 
     public void C0(boolean z10) {
-        this.f14914s = z10;
+        this.f15308s = z10;
     }
 
     public void F0(final int i10) {
@@ -596,7 +596,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
         if (i10 != 1 && i10 != 2) {
             WeakReference weakReference = this.C;
             if (weakReference != null && weakReference.get() != null) {
-                A0((View) this.C.get(), new Runnable() { // from class: ph.a
+                A0((View) this.C.get(), new Runnable() { // from class: qh.a
                     @Override // java.lang.Runnable
                     public final void run() {
                         SideSheetBehavior.J(SideSheetBehavior.this, i10);
@@ -622,10 +622,10 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
 
     void G0(int i10) {
         View view;
-        if (this.f14915t != i10) {
-            this.f14915t = i10;
+        if (this.f15309t != i10) {
+            this.f15309t = i10;
             if (i10 == 3 || i10 == 5) {
-                this.f14916u = i10;
+                this.f15310u = i10;
             }
             WeakReference weakReference = this.C;
             if (weakReference == null || (view = (View) weakReference.get()) == null) {
@@ -648,11 +648,11 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
             return false;
         }
         int actionMasked = motionEvent.getActionMasked();
-        if (this.f14915t == 1 && actionMasked == 0) {
+        if (this.f15309t == 1 && actionMasked == 0) {
             return true;
         }
         if (H0()) {
-            this.f14917v.F(motionEvent);
+            this.f15311v.F(motionEvent);
         }
         if (actionMasked == 0) {
             z0();
@@ -661,21 +661,21 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
             this.F = VelocityTracker.obtain();
         }
         this.F.addMovement(motionEvent);
-        if (H0() && actionMasked == 2 && !this.f14918w && t0(motionEvent)) {
-            this.f14917v.b(view, motionEvent.getPointerId(motionEvent.getActionIndex()));
+        if (H0() && actionMasked == 2 && !this.f15312w && t0(motionEvent)) {
+            this.f15311v.b(view, motionEvent.getPointerId(motionEvent.getActionIndex()));
         }
-        return !this.f14918w;
+        return !this.f15312w;
     }
 
     boolean I0(View view, float f10) {
-        return this.f14907d.n(view, f10);
+        return this.f15301d.n(view, f10);
     }
 
     public boolean K0() {
         return true;
     }
 
-    @Override // jh.b
+    @Override // kh.b
     public void a() {
         f fVar = this.G;
         if (fVar == null) {
@@ -684,7 +684,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
         fVar.f();
     }
 
-    @Override // jh.b
+    @Override // kh.b
     public void b(BackEventCompat backEventCompat) {
         f fVar = this.G;
         if (fVar == null) {
@@ -693,7 +693,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
         fVar.j(backEventCompat);
     }
 
-    @Override // jh.b
+    @Override // kh.b
     public void c(BackEventCompat backEventCompat) {
         f fVar = this.G;
         if (fVar == null) {
@@ -703,7 +703,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
         N0();
     }
 
-    @Override // jh.b
+    @Override // kh.b
     public void d() {
         f fVar = this.G;
         if (fVar == null) {
@@ -719,7 +719,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int d0() {
-        return this.f14920y;
+        return this.f15314y;
     }
 
     public View f0() {
@@ -731,11 +731,11 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     }
 
     public int g0() {
-        return this.f14907d.d();
+        return this.f15301d.d();
     }
 
     public float i0() {
-        return this.f14919x;
+        return this.f15313x;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -747,7 +747,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     public void k(CoordinatorLayout.f fVar) {
         super.k(fVar);
         this.C = null;
-        this.f14917v = null;
+        this.f15311v = null;
         this.G = null;
     }
 
@@ -759,7 +759,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     int l0(int i10) {
         if (i10 != 3) {
             if (i10 == 5) {
-                return this.f14907d.e();
+                return this.f15301d.e();
             }
             throw new IllegalArgumentException("Invalid state to get outer edge offset: " + i10);
         }
@@ -775,20 +775,20 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     public void n() {
         super.n();
         this.C = null;
-        this.f14917v = null;
+        this.f15311v = null;
         this.G = null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int n0() {
-        return this.f14921z;
+        return this.f15315z;
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public boolean o(CoordinatorLayout coordinatorLayout, View view, MotionEvent motionEvent) {
         ViewDragHelper viewDragHelper;
         if (!J0(view)) {
-            this.f14918w = true;
+            this.f15312w = true;
             return false;
         }
         int actionMasked = motionEvent.getActionMasked();
@@ -800,14 +800,14 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
         }
         this.F.addMovement(motionEvent);
         if (actionMasked != 0) {
-            if ((actionMasked == 1 || actionMasked == 3) && this.f14918w) {
-                this.f14918w = false;
+            if ((actionMasked == 1 || actionMasked == 3) && this.f15312w) {
+                this.f15312w = false;
                 return false;
             }
         } else {
             this.H = (int) motionEvent.getX();
         }
-        if (!this.f14918w && (viewDragHelper = this.f14917v) != null && viewDragHelper.P(motionEvent)) {
+        if (!this.f15312w && (viewDragHelper = this.f15311v) != null && viewDragHelper.P(motionEvent)) {
             return true;
         }
         return false;
@@ -827,17 +827,17 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
         if (this.C == null) {
             this.C = new WeakReference(view);
             this.G = new f(view);
-            g gVar = this.f14909i;
+            g gVar = this.f15303i;
             if (gVar != null) {
                 h0.r0(view, gVar);
-                g gVar2 = this.f14909i;
-                float f10 = this.f14913r;
+                g gVar2 = this.f15303i;
+                float f10 = this.f15307r;
                 if (f10 == -1.0f) {
                     f10 = h0.u(view);
                 }
                 gVar2.W(f10);
             } else {
-                ColorStateList colorStateList = this.f14910o;
+                ColorStateList colorStateList = this.f15304o;
                 if (colorStateList != null) {
                     h0.s0(view, colorStateList);
                 }
@@ -850,17 +850,17 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
             b0(view);
         }
         E0(view, i10);
-        if (this.f14917v == null) {
-            this.f14917v = ViewDragHelper.o(coordinatorLayout, this.J);
+        if (this.f15311v == null) {
+            this.f15311v = ViewDragHelper.o(coordinatorLayout, this.J);
         }
-        int h10 = this.f14907d.h(view);
+        int h10 = this.f15301d.h(view);
         coordinatorLayout.E(view, i10);
-        this.f14921z = coordinatorLayout.getWidth();
-        this.A = this.f14907d.i(coordinatorLayout);
-        this.f14920y = view.getWidth();
+        this.f15315z = coordinatorLayout.getWidth();
+        this.A = this.f15301d.i(coordinatorLayout);
+        this.f15314y = view.getWidth();
         ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
         if (marginLayoutParams != null) {
-            i11 = this.f14907d.a(marginLayoutParams);
+            i11 = this.f15301d.a(marginLayoutParams);
         } else {
             i11 = 0;
         }
@@ -874,7 +874,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
     }
 
     ViewDragHelper p0() {
-        return this.f14917v;
+        return this.f15311v;
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
@@ -890,7 +890,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
         public static final Parcelable.Creator<c> CREATOR = new a();
 
         /* renamed from: i  reason: collision with root package name */
-        final int f14924i;
+        final int f15318i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         class a implements Parcelable.ClassLoaderCreator {
@@ -918,45 +918,45 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c imple
 
         public c(Parcel parcel, ClassLoader classLoader) {
             super(parcel, classLoader);
-            this.f14924i = parcel.readInt();
+            this.f15318i = parcel.readInt();
         }
 
         @Override // u2.a, android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
             super.writeToParcel(parcel, i10);
-            parcel.writeInt(this.f14924i);
+            parcel.writeInt(this.f15318i);
         }
 
         public c(Parcelable parcelable, SideSheetBehavior sideSheetBehavior) {
             super(parcelable);
-            this.f14924i = sideSheetBehavior.f14915t;
+            this.f15318i = sideSheetBehavior.f15309t;
         }
     }
 
     public SideSheetBehavior(@NonNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f14912q = new d();
-        this.f14914s = true;
-        this.f14915t = 5;
-        this.f14916u = 5;
-        this.f14919x = 0.1f;
+        this.f15306q = new d();
+        this.f15308s = true;
+        this.f15309t = 5;
+        this.f15310u = 5;
+        this.f15313x = 0.1f;
         this.E = -1;
         this.I = new LinkedHashSet();
         this.J = new a();
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, yg.k.M5);
-        if (obtainStyledAttributes.hasValue(yg.k.O5)) {
-            this.f14910o = lh.c.a(context, obtainStyledAttributes, yg.k.O5);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, zg.k.M5);
+        if (obtainStyledAttributes.hasValue(zg.k.O5)) {
+            this.f15304o = mh.c.a(context, obtainStyledAttributes, zg.k.O5);
         }
-        if (obtainStyledAttributes.hasValue(yg.k.R5)) {
-            this.f14911p = k.e(context, attributeSet, 0, L).m();
+        if (obtainStyledAttributes.hasValue(zg.k.R5)) {
+            this.f15305p = k.e(context, attributeSet, 0, L).m();
         }
-        if (obtainStyledAttributes.hasValue(yg.k.Q5)) {
-            B0(obtainStyledAttributes.getResourceId(yg.k.Q5, -1));
+        if (obtainStyledAttributes.hasValue(zg.k.Q5)) {
+            B0(obtainStyledAttributes.getResourceId(zg.k.Q5, -1));
         }
         Z(context);
-        this.f14913r = obtainStyledAttributes.getDimension(yg.k.N5, -1.0f);
-        C0(obtainStyledAttributes.getBoolean(yg.k.P5, true));
+        this.f15307r = obtainStyledAttributes.getDimension(zg.k.N5, -1.0f);
+        C0(obtainStyledAttributes.getBoolean(zg.k.P5, true));
         obtainStyledAttributes.recycle();
-        this.f14908e = ViewConfiguration.get(context).getScaledMaximumFlingVelocity();
+        this.f15302e = ViewConfiguration.get(context).getScaledMaximumFlingVelocity();
     }
 }

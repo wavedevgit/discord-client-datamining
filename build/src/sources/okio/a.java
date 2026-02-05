@@ -2,21 +2,21 @@ package okio;
 
 import java.util.Arrays;
 import kotlin.jvm.internal.Intrinsics;
-import lu.m0;
 import okio.ByteString;
+import ou.m0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final byte[] f44317a;
+    private static final byte[] f44070a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final byte[] f44318b;
+    private static final byte[] f44071b;
 
     static {
-        ByteString.a aVar = ByteString.f44307o;
-        f44317a = aVar.g("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/").k();
-        f44318b = aVar.g("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_").k();
+        ByteString.a aVar = ByteString.f44060o;
+        f44070a = aVar.g("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/").l();
+        f44071b = aVar.g("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_").l();
     }
 
     public static final byte[] a(String str) {
@@ -128,7 +128,7 @@ public abstract class a {
 
     public static /* synthetic */ String c(byte[] bArr, byte[] bArr2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            bArr2 = f44317a;
+            bArr2 = f44070a;
         }
         return b(bArr, bArr2);
     }

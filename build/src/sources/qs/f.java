@@ -1,53 +1,63 @@
 package qs;
 
-import java.util.concurrent.Executor;
+import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
-import kotlinx.coroutines.s;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.TypeIntrinsics;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.FlowCollector;
+import rs.l0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class f extends s {
-
-    /* renamed from: o  reason: collision with root package name */
-    private final int f48171o;
-
-    /* renamed from: p  reason: collision with root package name */
-    private final int f48172p;
-
-    /* renamed from: q  reason: collision with root package name */
-    private final long f48173q;
-
-    /* renamed from: r  reason: collision with root package name */
-    private final String f48174r;
-
-    /* renamed from: s  reason: collision with root package name */
-    private a f48175s = h2();
-
-    public f(int i10, int i11, long j10, String str) {
-        this.f48171o = i10;
-        this.f48172p = i11;
-        this.f48173q = j10;
-        this.f48174r = str;
+public abstract class f {
+    public static final e b(Flow flow) {
+        e eVar;
+        if (flow instanceof e) {
+            eVar = (e) flow;
+        } else {
+            eVar = null;
+        }
+        if (eVar == null) {
+            return new h(flow, null, 0, null, 14, null);
+        }
+        return eVar;
     }
 
-    private final a h2() {
-        return new a(this.f48171o, this.f48172p, this.f48173q, this.f48174r);
+    public static final Object c(CoroutineContext coroutineContext, Object obj, Object obj2, Function2 function2, Continuation continuation) {
+        Object invoke;
+        Object i10 = l0.i(coroutineContext, obj2);
+        try {
+            a0 a0Var = new a0(continuation, coroutineContext);
+            if (!(function2 instanceof kotlin.coroutines.jvm.internal.a)) {
+                invoke = ur.b.d(function2, obj, a0Var);
+            } else {
+                invoke = ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(function2, 2)).invoke(obj, a0Var);
+            }
+            l0.f(coroutineContext, i10);
+            if (invoke == ur.b.f()) {
+                kotlin.coroutines.jvm.internal.g.c(continuation);
+            }
+            return invoke;
+        } catch (Throwable th2) {
+            l0.f(coroutineContext, i10);
+            throw th2;
+        }
     }
 
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public void E1(CoroutineContext coroutineContext, Runnable runnable) {
-        a.F(this.f48175s, runnable, false, false, 6, null);
+    public static /* synthetic */ Object d(CoroutineContext coroutineContext, Object obj, Object obj2, Function2 function2, Continuation continuation, int i10, Object obj3) {
+        if ((i10 & 4) != 0) {
+            obj2 = l0.g(coroutineContext);
+        }
+        return c(coroutineContext, obj, obj2, function2, continuation);
     }
 
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public void U1(CoroutineContext coroutineContext, Runnable runnable) {
-        a.F(this.f48175s, runnable, false, true, 2, null);
-    }
-
-    @Override // kotlinx.coroutines.s
-    public Executor f2() {
-        return this.f48175s;
-    }
-
-    public final void i2(Runnable runnable, boolean z10, boolean z11) {
-        this.f48175s.E(runnable, z10, z11);
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final FlowCollector e(FlowCollector flowCollector, CoroutineContext coroutineContext) {
+        if (!(flowCollector instanceof z)) {
+            if (flowCollector instanceof s) {
+                return flowCollector;
+            }
+            return new c0(flowCollector, coroutineContext);
+        }
+        return flowCollector;
     }
 }

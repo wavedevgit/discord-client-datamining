@@ -16,19 +16,19 @@ public final class UnsignedType {
     public static final UnsignedType USHORT;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ UnsignedType[] f32630o;
+    private static final /* synthetic */ UnsignedType[] f32154o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32631p;
+    private static final /* synthetic */ EnumEntries f32155p;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ClassId f32632d;
+    private final ClassId f32156d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Name f32633e;
+    private final Name f32157e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ClassId f32634i;
+    private final ClassId f32158i;
 
     static {
         ClassId.Companion companion = ClassId.Companion;
@@ -37,18 +37,18 @@ public final class UnsignedType {
         UINT = new UnsignedType("UINT", 2, ClassId.Companion.fromString$default(companion, "kotlin/UInt", false, 2, null));
         ULONG = new UnsignedType("ULONG", 3, ClassId.Companion.fromString$default(companion, "kotlin/ULong", false, 2, null));
         UnsignedType[] a10 = a();
-        f32630o = a10;
-        f32631p = sr.a.a(a10);
+        f32154o = a10;
+        f32155p = vr.a.a(a10);
     }
 
     private UnsignedType(String str, int i10, ClassId classId) {
-        this.f32632d = classId;
+        this.f32156d = classId;
         Name shortClassName = classId.getShortClassName();
-        this.f32633e = shortClassName;
+        this.f32157e = shortClassName;
         FqName packageFqName = classId.getPackageFqName();
         Name identifier = Name.identifier(shortClassName.asString() + "Array");
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-        this.f32634i = new ClassId(packageFqName, identifier);
+        this.f32158i = new ClassId(packageFqName, identifier);
     }
 
     private static final /* synthetic */ UnsignedType[] a() {
@@ -60,21 +60,21 @@ public final class UnsignedType {
     }
 
     public static UnsignedType[] values() {
-        return (UnsignedType[]) f32630o.clone();
+        return (UnsignedType[]) f32154o.clone();
     }
 
     @NotNull
     public final ClassId getArrayClassId() {
-        return this.f32634i;
+        return this.f32158i;
     }
 
     @NotNull
     public final ClassId getClassId() {
-        return this.f32632d;
+        return this.f32156d;
     }
 
     @NotNull
     public final Name getTypeName() {
-        return this.f32633e;
+        return this.f32157e;
     }
 }

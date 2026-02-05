@@ -10,31 +10,31 @@ public interface i extends b {
     public static final class a {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f32580d = new a("INSTANCE", 0);
+        public static final a f32104d = new a("INSTANCE", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f32581e = new a("EXTENSION_RECEIVER", 1);
+        public static final a f32105e = new a("EXTENSION_RECEIVER", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final a f32582i = new a("VALUE", 2);
+        public static final a f32106i = new a("VALUE", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ a[] f32583o;
+        private static final /* synthetic */ a[] f32107o;
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f32584p;
+        private static final /* synthetic */ EnumEntries f32108p;
 
         static {
             a[] a10 = a();
-            f32583o = a10;
-            f32584p = sr.a.a(a10);
+            f32107o = a10;
+            f32108p = vr.a.a(a10);
         }
 
         private a(String str, int i10) {
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f32580d, f32581e, f32582i};
+            return new a[]{f32104d, f32105e, f32106i};
         }
 
         public static a valueOf(String str) {
@@ -42,7 +42,7 @@ public interface i extends b {
         }
 
         public static a[] values() {
-            return (a[]) f32583o.clone();
+            return (a[]) f32107o.clone();
         }
     }
 

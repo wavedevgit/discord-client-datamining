@@ -1,43 +1,43 @@
 package ng;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class v4 implements ui.d {
+final class v4 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final v4 f41672a = new v4();
+    static final v4 f41132a = new v4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41673b;
+    private static final xi.c f41133b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41674c;
+    private static final xi.c f41134c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41675d;
+    private static final xi.c f41135d;
 
     static {
-        c.b a10 = ui.c.a("maxLabels");
+        c.b a10 = xi.c.a("maxLabels");
         f fVar = new f();
         fVar.a(1);
-        f41673b = a10.b(fVar.b()).a();
-        c.b a11 = ui.c.a("confidenceThreshold");
+        f41133b = a10.b(fVar.b()).a();
+        c.b a11 = xi.c.a("confidenceThreshold");
         f fVar2 = new f();
         fVar2.a(2);
-        f41674c = a11.b(fVar2.b()).a();
-        c.b a12 = ui.c.a("customLocalModelOptions");
+        f41134c = a11.b(fVar2.b()).a();
+        c.b a12 = xi.c.a("customLocalModelOptions");
         f fVar3 = new f();
         fVar3.a(3);
-        f41675d = a12.b(fVar3.b()).a();
+        f41135d = a12.b(fVar3.b()).a();
     }
 
     private v4() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

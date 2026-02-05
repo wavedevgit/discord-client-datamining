@@ -6,31 +6,31 @@ import kotlin.jvm.internal.Intrinsics;
 final class Java16RecordComponentsLoader {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Java16RecordComponentsLoader f33071a = new Java16RecordComponentsLoader();
+    public static final Java16RecordComponentsLoader f32595a = new Java16RecordComponentsLoader();
 
     /* renamed from: b  reason: collision with root package name */
-    private static Cache f33072b;
+    private static Cache f32596b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Cache {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f33073a;
+        private final Method f32597a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Method f33074b;
+        private final Method f32598b;
 
         public Cache(Method method, Method method2) {
-            this.f33073a = method;
-            this.f33074b = method2;
+            this.f32597a = method;
+            this.f32598b = method2;
         }
 
         public final Method getGetAccessor() {
-            return this.f33074b;
+            return this.f32598b;
         }
 
         public final Method getGetType() {
-            return this.f33073a;
+            return this.f32597a;
         }
     }
 
@@ -47,10 +47,10 @@ final class Java16RecordComponentsLoader {
     }
 
     private final Cache b(Object obj) {
-        Cache cache = f33072b;
+        Cache cache = f32596b;
         if (cache == null) {
             Cache a10 = a(obj);
-            f33072b = a10;
+            f32596b = a10;
             return a10;
         }
         return cache;

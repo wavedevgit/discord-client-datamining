@@ -6,7 +6,7 @@ public enum i implements p {
     
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f31190a;
+    public final String f30539a;
 
     static {
         j$.time.a.r(31556952L, 0);
@@ -14,14 +14,14 @@ public enum i implements p {
     }
 
     i(String str) {
-        this.f31190a = str;
+        this.f30539a = str;
     }
 
     @Override // j$.time.temporal.p
     public final k r(k kVar, long j10) {
-        int i10 = c.f31186a[ordinal()];
+        int i10 = c.f30535a[ordinal()];
         if (i10 == 1) {
-            h hVar = j.f31193c;
+            h hVar = j.f30542c;
             return kVar.b(Math.addExact(kVar.g(hVar), j10), hVar);
         } else if (i10 == 2) {
             return kVar.h(j10 / 256, b.YEARS).h((j10 % 256) * 3, b.MONTHS);
@@ -32,6 +32,6 @@ public enum i implements p {
 
     @Override // java.lang.Enum
     public final String toString() {
-        return this.f31190a;
+        return this.f30539a;
     }
 }

@@ -7,10 +7,10 @@ import java.util.HashMap;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public static EnumMap f16210a = c("EEE, MMM d", "d", "y");
+    public static EnumMap f16604a = c("EEE, MMM d", "d", "y");
 
     /* renamed from: b  reason: collision with root package name */
-    private static HashMap f16211b = new a();
+    private static HashMap f16605b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends HashMap {
@@ -141,20 +141,20 @@ public abstract class f {
     public class b extends EnumMap {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f16212d;
+        final /* synthetic */ String f16606d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ String f16213e;
+        final /* synthetic */ String f16607e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f16214i;
+        final /* synthetic */ String f16608i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Class cls, String str, String str2, String str3) {
             super(cls);
-            this.f16212d = str;
-            this.f16213e = str2;
-            this.f16214i = str3;
+            this.f16606d = str;
+            this.f16607e = str2;
+            this.f16608i = str3;
             put((b) c.MMMEd, (c) str);
             put((b) c.d, (c) str2);
             put((b) c.y, (c) str3);
@@ -176,7 +176,7 @@ public abstract class f {
 
     public static String b(String str, c cVar) {
         try {
-            return ((String) ((EnumMap) f16211b.get(str)).get(cVar)).replaceAll(",", "");
+            return ((String) ((EnumMap) f16605b.get(str)).get(cVar)).replaceAll(",", "");
         } catch (NullPointerException unused) {
             throw new d();
         }

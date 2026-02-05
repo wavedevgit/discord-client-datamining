@@ -1,15 +1,6 @@
 package rg;
 
-import android.os.Handler;
-import android.os.Looper;
+import java.io.Closeable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class a extends Handler {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Looper f48806a;
-
-    public a(Looper looper) {
-        super(looper);
-        this.f48806a = Looper.getMainLooper();
-    }
+abstract class a implements Closeable {
 }

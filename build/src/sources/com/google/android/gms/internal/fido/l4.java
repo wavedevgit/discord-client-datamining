@@ -7,11 +7,11 @@ import java.util.concurrent.RunnableFuture;
 final class l4 extends r3 implements RunnableFuture {
 
     /* renamed from: s  reason: collision with root package name */
-    private volatile a4 f13662s;
+    private volatile a4 f14056s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l4(Callable callable) {
-        this.f13662s = new k4(this, callable);
+        this.f14056s = new k4(this, callable);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -22,7 +22,7 @@ final class l4 extends r3 implements RunnableFuture {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.google.android.gms.internal.fido.l3
     public final String f() {
-        a4 a4Var = this.f13662s;
+        a4 a4Var = this.f14056s;
         if (a4Var != null) {
             String obj = a4Var.toString();
             return "task=[" + obj + "]";
@@ -33,18 +33,18 @@ final class l4 extends r3 implements RunnableFuture {
     @Override // com.google.android.gms.internal.fido.l3
     protected final void j() {
         a4 a4Var;
-        if (m() && (a4Var = this.f13662s) != null) {
+        if (m() && (a4Var = this.f14056s) != null) {
             a4Var.e();
         }
-        this.f13662s = null;
+        this.f14056s = null;
     }
 
     @Override // java.util.concurrent.RunnableFuture, java.lang.Runnable
     public final void run() {
-        a4 a4Var = this.f13662s;
+        a4 a4Var = this.f14056s;
         if (a4Var != null) {
             a4Var.run();
         }
-        this.f13662s = null;
+        this.f14056s = null;
     }
 }

@@ -10,15 +10,15 @@ import org.jetbrains.annotations.NotNull;
 public final class SamConversionResolverImpl implements SamConversionResolver {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Iterable f34649a;
+    private final Iterable f34173a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CacheWithNullableValues f34650b;
+    private final CacheWithNullableValues f34174b;
 
     public SamConversionResolverImpl(@NotNull StorageManager storageManager, @NotNull Iterable<? extends Object> samWithReceiverResolvers) {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(samWithReceiverResolvers, "samWithReceiverResolvers");
-        this.f34649a = samWithReceiverResolvers;
-        this.f34650b = storageManager.createCacheWithNullableValues();
+        this.f34173a = samWithReceiverResolvers;
+        this.f34174b = storageManager.createCacheWithNullableValues();
     }
 }

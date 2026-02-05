@@ -30,29 +30,29 @@ public final class InternalErrorInfo_ConfigurationErrorInfoJsonAdapter extends h
     @Override // com.squareup.moshi.h
     @NotNull
     public InternalErrorInfo.ConfigurationErrorInfo fromJson(@NotNull m mVar) {
-        mVar.r();
+        mVar.s();
         String str = null;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
+            int W = mVar.W(this.options);
+            if (W == -1) {
                 mVar.E0();
                 mVar.P();
-            } else if (A0 == 0 && (str = (String) this.stringAdapter.fromJson(mVar)) == null) {
-                throw vm.c.x("message", "message", mVar);
+            } else if (W == 0 && (str = (String) this.stringAdapter.fromJson(mVar)) == null) {
+                throw ym.c.x("message", "message", mVar);
             }
         }
-        mVar.y();
+        mVar.z();
         if (str != null) {
             return new InternalErrorInfo.ConfigurationErrorInfo(str);
         }
-        throw vm.c.o("message", "message", mVar);
+        throw ym.c.o("message", "message", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, InternalErrorInfo.ConfigurationErrorInfo configurationErrorInfo) {
         if (configurationErrorInfo != null) {
-            tVar.l();
-            tVar.A0("message");
+            tVar.k();
+            tVar.W("message");
             this.stringAdapter.toJson(tVar, configurationErrorInfo.getMessage());
             tVar.E();
             return;

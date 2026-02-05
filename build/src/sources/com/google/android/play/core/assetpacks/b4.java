@@ -11,40 +11,40 @@ import java.util.Properties;
 final class b4 {
 
     /* renamed from: h  reason: collision with root package name */
-    private static final th.k0 f15309h = new th.k0("SliceMetadataManager");
+    private static final wh.k0 f15703h = new wh.k0("SliceMetadataManager");
 
     /* renamed from: b  reason: collision with root package name */
-    private final n0 f15311b;
+    private final n0 f15705b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f15312c;
+    private final String f15706c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f15313d;
+    private final int f15707d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f15314e;
+    private final long f15708e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f15315f;
+    private final String f15709f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f15310a = new byte[8192];
+    private final byte[] f15704a = new byte[8192];
 
     /* renamed from: g  reason: collision with root package name */
-    private int f15316g = -1;
+    private int f15710g = -1;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b4(n0 n0Var, String str, int i10, long j10, String str2) {
-        this.f15311b = n0Var;
-        this.f15312c = str;
-        this.f15313d = i10;
-        this.f15314e = j10;
-        this.f15315f = str2;
+        this.f15705b = n0Var;
+        this.f15706c = str;
+        this.f15707d = i10;
+        this.f15708e = j10;
+        this.f15709f = str2;
     }
 
     private final File n() {
-        File B = this.f15311b.B(this.f15312c, this.f15313d, this.f15314e, this.f15315f);
+        File B = this.f15705b.B(this.f15706c, this.f15707d, this.f15708e, this.f15709f);
         if (!B.exists()) {
             B.mkdirs();
         }
@@ -52,7 +52,7 @@ final class b4 {
     }
 
     private final File o() {
-        File A = this.f15311b.A(this.f15312c, this.f15313d, this.f15314e, this.f15315f);
+        File A = this.f15705b.A(this.f15706c, this.f15707d, this.f15708e, this.f15709f);
         A.getParentFile().mkdirs();
         A.createNewFile();
         return A;
@@ -60,7 +60,7 @@ final class b4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int a() {
-        File A = this.f15311b.A(this.f15312c, this.f15313d, this.f15314e, this.f15315f);
+        File A = this.f15705b.A(this.f15706c, this.f15707d, this.f15708e, this.f15709f);
         if (!A.exists()) {
             return 0;
         }
@@ -88,7 +88,7 @@ final class b4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final a4 b() {
-        File A = this.f15311b.A(this.f15312c, this.f15313d, this.f15314e, this.f15315f);
+        File A = this.f15705b.A(this.f15706c, this.f15707d, this.f15708e, this.f15709f);
         if (A.exists()) {
             Properties properties = new Properties();
             FileInputStream fileInputStream = new FileInputStream(A);
@@ -102,7 +102,7 @@ final class b4 {
                         long parseLong = Long.parseLong(properties.getProperty("fileOffset", "-1"));
                         long parseLong2 = Long.parseLong(properties.getProperty("remainingBytes", "-1"));
                         int parseInt2 = Integer.parseInt(properties.getProperty("previousChunk"));
-                        this.f15316g = Integer.parseInt(properties.getProperty("metadataFileCounter", "0"));
+                        this.f15710g = Integer.parseInt(properties.getProperty("metadataFileCounter", "0"));
                         return new u0(parseInt, property, parseLong, parseLong2, parseInt2);
                     } catch (NumberFormatException e10) {
                         throw new w1("Slice checkpoint file corrupt.", e10);
@@ -123,7 +123,7 @@ final class b4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final File c() {
-        return new File(n(), String.format("%s-NAM.dat", Integer.valueOf(this.f15316g)));
+        return new File(n(), String.format("%s-NAM.dat", Integer.valueOf(this.f15710g)));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -133,9 +133,9 @@ final class b4 {
         try {
             randomAccessFile.seek(j10);
             do {
-                read = inputStream.read(this.f15310a);
+                read = inputStream.read(this.f15704a);
                 if (read > 0) {
-                    randomAccessFile.write(this.f15310a, 0, read);
+                    randomAccessFile.write(this.f15704a, 0, read);
                     continue;
                 }
             } while (read >= 0);
@@ -173,7 +173,7 @@ final class b4 {
         properties.put("fileStatus", "3");
         properties.put("fileOffset", String.valueOf(c().length()));
         properties.put("previousChunk", String.valueOf(i10));
-        properties.put("metadataFileCounter", String.valueOf(this.f15316g));
+        properties.put("metadataFileCounter", String.valueOf(this.f15710g));
         FileOutputStream fileOutputStream = new FileOutputStream(o());
         try {
             properties.store(fileOutputStream, (String) null);
@@ -196,7 +196,7 @@ final class b4 {
         properties.put("fileOffset", String.valueOf(j10));
         properties.put("remainingBytes", String.valueOf(j11));
         properties.put("previousChunk", String.valueOf(i10));
-        properties.put("metadataFileCounter", String.valueOf(this.f15316g));
+        properties.put("metadataFileCounter", String.valueOf(this.f15710g));
         FileOutputStream fileOutputStream = new FileOutputStream(o());
         try {
             properties.store(fileOutputStream, (String) null);
@@ -216,12 +216,12 @@ final class b4 {
         Properties properties = new Properties();
         properties.put("fileStatus", "2");
         properties.put("previousChunk", String.valueOf(i10));
-        properties.put("metadataFileCounter", String.valueOf(this.f15316g));
+        properties.put("metadataFileCounter", String.valueOf(this.f15710g));
         FileOutputStream fileOutputStream = new FileOutputStream(o());
         try {
             properties.store(fileOutputStream, (String) null);
             fileOutputStream.close();
-            File z10 = this.f15311b.z(this.f15312c, this.f15313d, this.f15314e, this.f15315f);
+            File z10 = this.f15705b.z(this.f15706c, this.f15707d, this.f15708e, this.f15709f);
             if (z10.exists()) {
                 z10.delete();
             }
@@ -240,7 +240,7 @@ final class b4 {
         Properties properties = new Properties();
         properties.put("fileStatus", "4");
         properties.put("previousChunk", String.valueOf(i10));
-        properties.put("metadataFileCounter", String.valueOf(this.f15316g));
+        properties.put("metadataFileCounter", String.valueOf(this.f15710g));
         FileOutputStream fileOutputStream = new FileOutputStream(o());
         try {
             properties.store(fileOutputStream, (String) null);
@@ -257,9 +257,9 @@ final class b4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void j(byte[] bArr) {
-        this.f15316g++;
+        this.f15710g++;
         try {
-            FileOutputStream fileOutputStream = new FileOutputStream(new File(n(), String.format("%s-LFH.dat", Integer.valueOf(this.f15316g))));
+            FileOutputStream fileOutputStream = new FileOutputStream(new File(n(), String.format("%s-LFH.dat", Integer.valueOf(this.f15710g))));
             fileOutputStream.write(bArr);
             fileOutputStream.close();
         } catch (IOException e10) {
@@ -269,14 +269,14 @@ final class b4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void k(byte[] bArr, InputStream inputStream) {
-        this.f15316g++;
+        this.f15710g++;
         FileOutputStream fileOutputStream = new FileOutputStream(c());
         try {
             fileOutputStream.write(bArr);
-            int read = inputStream.read(this.f15310a);
+            int read = inputStream.read(this.f15704a);
             while (read > 0) {
-                fileOutputStream.write(this.f15310a, 0, read);
-                read = inputStream.read(this.f15310a);
+                fileOutputStream.write(this.f15704a, 0, read);
+                read = inputStream.read(this.f15704a);
             }
             fileOutputStream.close();
         } catch (Throwable th2) {
@@ -291,7 +291,7 @@ final class b4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void l(byte[] bArr, int i10, int i11) {
-        this.f15316g++;
+        this.f15710g++;
         FileOutputStream fileOutputStream = new FileOutputStream(c());
         try {
             fileOutputStream.write(bArr, 0, i11);
@@ -308,7 +308,7 @@ final class b4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final boolean m() {
-        File A = this.f15311b.A(this.f15312c, this.f15313d, this.f15314e, this.f15315f);
+        File A = this.f15705b.A(this.f15706c, this.f15707d, this.f15708e, this.f15709f);
         if (!A.exists()) {
             return false;
         }
@@ -318,7 +318,7 @@ final class b4 {
             properties.load(fileInputStream);
             fileInputStream.close();
             if (properties.getProperty("fileStatus") == null) {
-                f15309h.b("Slice checkpoint file corrupt while checking if extraction finished.", new Object[0]);
+                f15703h.b("Slice checkpoint file corrupt while checking if extraction finished.", new Object[0]);
                 return false;
             } else if (Integer.parseInt(properties.getProperty("fileStatus")) != 4) {
                 return false;
@@ -326,7 +326,7 @@ final class b4 {
                 return true;
             }
         } catch (IOException e10) {
-            f15309h.b("Could not read checkpoint while checking if extraction finished. %s", e10);
+            f15703h.b("Could not read checkpoint while checking if extraction finished. %s", e10);
             return false;
         }
     }

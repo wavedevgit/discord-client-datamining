@@ -1,70 +1,65 @@
 package gr;
 
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.Rect;
-import android.text.Layout;
-import android.text.TextPaint;
-import android.text.style.LeadingMarginSpan;
-import android.text.style.MetricAffectingSpan;
+import android.content.Context;
+import android.widget.TextView;
+import gr.e;
+import gr.g;
+import gr.k;
+import gr.n;
+import hr.c;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import kv.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class f extends MetricAffectingSpan implements LeadingMarginSpan {
+class f implements e.a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Context f25163a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final List f25164b = new ArrayList(3);
+
+    /* renamed from: c  reason: collision with root package name */
+    private TextView.BufferType f25165c = TextView.BufferType.SPANNABLE;
 
     /* renamed from: d  reason: collision with root package name */
-    private final er.c f26536d;
+    private boolean f25166d = true;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final Rect f26537e = h.b();
-
-    /* renamed from: i  reason: collision with root package name */
-    private final Paint f26538i = h.a();
-
-    /* renamed from: o  reason: collision with root package name */
-    private final int f26539o;
-
-    public f(er.c cVar, int i10) {
-        this.f26536d = cVar;
-        this.f26539o = i10;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public f(Context context) {
+        this.f25163a = context;
     }
 
-    private void a(TextPaint textPaint) {
-        this.f26536d.e(textPaint, this.f26539o);
+    private static List b(List list) {
+        return new p(list).b();
     }
 
-    @Override // android.text.style.LeadingMarginSpan
-    public void drawLeadingMargin(Canvas canvas, Paint paint, int i10, int i11, int i12, int i13, int i14, CharSequence charSequence, int i15, int i16, boolean z10, Layout layout) {
-        int i17;
-        int i18 = this.f26539o;
-        if ((i18 == 1 || i18 == 2) && kr.c.a(i16, charSequence, this)) {
-            this.f26538i.set(paint);
-            this.f26536d.d(this.f26538i);
-            float strokeWidth = this.f26538i.getStrokeWidth();
-            if (strokeWidth > 0.0f) {
-                int i19 = (int) ((i14 - strokeWidth) + 0.5f);
-                if (i11 > 0) {
-                    i17 = canvas.getWidth();
-                } else {
-                    i17 = i10;
-                    i10 -= canvas.getWidth();
-                }
-                this.f26537e.set(i10, i19, i17, i14);
-                canvas.drawRect(this.f26537e, this.f26538i);
+    @Override // gr.e.a
+    public e.a a(i iVar) {
+        this.f25164b.add(iVar);
+        return this;
+    }
+
+    @Override // gr.e.a
+    public e build() {
+        if (!this.f25164b.isEmpty()) {
+            List<i> b10 = b(this.f25164b);
+            d.b bVar = new d.b();
+            c.a i10 = hr.c.i(this.f25163a);
+            g.b bVar2 = new g.b();
+            n.a aVar = new n.a();
+            k.a aVar2 = new k.a();
+            for (i iVar : b10) {
+                iVar.b(bVar);
+                iVar.i(i10);
+                iVar.g(bVar2);
+                iVar.d(aVar);
+                iVar.h(aVar2);
             }
+            g h10 = bVar2.h(i10.z(), aVar2.build());
+            return new h(this.f25165c, null, bVar.f(), m.b(aVar, h10), h10, Collections.unmodifiableList(b10), this.f25166d);
         }
-    }
-
-    @Override // android.text.style.LeadingMarginSpan
-    public int getLeadingMargin(boolean z10) {
-        return 0;
-    }
-
-    @Override // android.text.style.CharacterStyle
-    public void updateDrawState(TextPaint textPaint) {
-        a(textPaint);
-    }
-
-    @Override // android.text.style.MetricAffectingSpan
-    public void updateMeasureState(TextPaint textPaint) {
-        a(textPaint);
+        throw new IllegalStateException("No plugins were added to this builder. Use #usePlugin method to add them");
     }
 }

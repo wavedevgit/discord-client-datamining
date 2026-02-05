@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    Animatable2.AnimationCallback f5352a;
+    Animatable2.AnimationCallback f5464a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends Animatable2.AnimationCallback {
@@ -26,10 +26,10 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Animatable2.AnimationCallback a() {
-        if (this.f5352a == null) {
-            this.f5352a = new a();
+        if (this.f5464a == null) {
+            this.f5464a = new a();
         }
-        return this.f5352a;
+        return this.f5464a;
     }
 
     public void b(Drawable drawable) {

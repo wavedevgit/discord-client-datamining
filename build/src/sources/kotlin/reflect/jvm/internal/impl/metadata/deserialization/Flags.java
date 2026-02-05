@@ -103,11 +103,11 @@ public class Flags {
     public static class b extends FlagField {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Internal.EnumLite[] f34179a;
+        private final Internal.EnumLite[] f33703a;
 
         public b(int i10, Internal.EnumLite[] enumLiteArr) {
             super(i10, b(enumLiteArr));
-            this.f34179a = enumLiteArr;
+            this.f33703a = enumLiteArr;
         }
 
         private static /* synthetic */ void a(int i10) {
@@ -136,7 +136,7 @@ public class Flags {
             Internal.EnumLite[] enumLiteArr;
             int i11 = this.offset;
             int i12 = (i10 & (((1 << this.bitWidth) - 1) << i11)) >> i11;
-            for (Internal.EnumLite enumLite : this.f34179a) {
+            for (Internal.EnumLite enumLite : this.f33703a) {
                 if (enumLite.getNumber() == i12) {
                     return enumLite;
                 }

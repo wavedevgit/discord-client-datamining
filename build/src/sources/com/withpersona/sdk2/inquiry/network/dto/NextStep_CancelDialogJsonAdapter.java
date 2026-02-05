@@ -40,27 +40,27 @@ public final class NextStep_CancelDialogJsonAdapter extends h {
     @NotNull
     public NextStep.CancelDialog fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         String str3 = null;
         String str4 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 str3 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (W == 3) {
                 str4 = (String) this.nullableStringAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new NextStep.CancelDialog(str, str2, str3, str4);
     }
 
@@ -68,14 +68,14 @@ public final class NextStep_CancelDialogJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.CancelDialog cancelDialog) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (cancelDialog != null) {
-            writer.l();
-            writer.A0("title");
+            writer.k();
+            writer.W("title");
             this.nullableStringAdapter.toJson(writer, cancelDialog.getTitle());
-            writer.A0("prompt");
+            writer.W("prompt");
             this.nullableStringAdapter.toJson(writer, cancelDialog.getPrompt());
-            writer.A0("btnSubmit");
+            writer.W("btnSubmit");
             this.nullableStringAdapter.toJson(writer, cancelDialog.getBtnSubmit());
-            writer.A0("btnResume");
+            writer.W("btnResume");
             this.nullableStringAdapter.toJson(writer, cancelDialog.getBtnResume());
             writer.E();
             return;

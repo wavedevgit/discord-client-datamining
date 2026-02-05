@@ -43,26 +43,26 @@ public final class NextStep_GovernmentId_AssetConfig_CheckPageJsonAdapter extend
     @NotNull
     public NextStep.GovernmentId.AssetConfig.CheckPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         RemoteImage remoteImage = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 = -2;
             }
         }
-        reader.y();
+        reader.z();
         if (i10 == -2) {
             return new NextStep.GovernmentId.AssetConfig.CheckPage(remoteImage);
         }
         Constructor<NextStep.GovernmentId.AssetConfig.CheckPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.CheckPage.class.getDeclaredConstructor(RemoteImage.class, Integer.TYPE, vm.c.f51688c);
+            constructor = NextStep.GovernmentId.AssetConfig.CheckPage.class.getDeclaredConstructor(RemoteImage.class, Integer.TYPE, ym.c.f54853c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -75,8 +75,8 @@ public final class NextStep_GovernmentId_AssetConfig_CheckPageJsonAdapter extend
     public void toJson(@NotNull t writer, NextStep.GovernmentId.AssetConfig.CheckPage checkPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkPage != null) {
-            writer.l();
-            writer.A0("iconFile");
+            writer.k();
+            writer.W("iconFile");
             this.nullableRemoteImageAdapter.toJson(writer, checkPage.getIconFile());
             writer.E();
             return;

@@ -12,28 +12,28 @@ public final class Charsets {
     @NotNull
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Charsets f35376a = new Charsets();
+    public static final Charsets f34900a = new Charsets();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final Charset f35377b;
+    public static final Charset f34901b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Charset f35378c;
+    public static final Charset f34902c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final Charset f35379d;
+    public static final Charset f34903d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final Charset f35380e;
+    public static final Charset f34904e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final Charset f35381f;
+    public static final Charset f34905f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static volatile Charset f35382g;
+    private static volatile Charset f34906g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static volatile Charset f35383h;
+    private static volatile Charset f34907h;
 
     static {
         Charset forName = Charset.forName("UTF-8");
@@ -41,41 +41,41 @@ public final class Charsets {
         UTF_8 = forName;
         Charset forName2 = Charset.forName("UTF-16");
         Intrinsics.checkNotNullExpressionValue(forName2, "forName(...)");
-        f35377b = forName2;
+        f34901b = forName2;
         Charset forName3 = Charset.forName("UTF-16BE");
         Intrinsics.checkNotNullExpressionValue(forName3, "forName(...)");
-        f35378c = forName3;
+        f34902c = forName3;
         Charset forName4 = Charset.forName("UTF-16LE");
         Intrinsics.checkNotNullExpressionValue(forName4, "forName(...)");
-        f35379d = forName4;
+        f34903d = forName4;
         Charset forName5 = Charset.forName("US-ASCII");
         Intrinsics.checkNotNullExpressionValue(forName5, "forName(...)");
-        f35380e = forName5;
+        f34904e = forName5;
         Charset forName6 = Charset.forName("ISO-8859-1");
         Intrinsics.checkNotNullExpressionValue(forName6, "forName(...)");
-        f35381f = forName6;
+        f34905f = forName6;
     }
 
     private Charsets() {
     }
 
     public final Charset a() {
-        Charset charset = f35383h;
+        Charset charset = f34907h;
         if (charset == null) {
             Charset forName = Charset.forName("UTF-32BE");
             Intrinsics.checkNotNullExpressionValue(forName, "forName(...)");
-            f35383h = forName;
+            f34907h = forName;
             return forName;
         }
         return charset;
     }
 
     public final Charset b() {
-        Charset charset = f35382g;
+        Charset charset = f34906g;
         if (charset == null) {
             Charset forName = Charset.forName("UTF-32LE");
             Intrinsics.checkNotNullExpressionValue(forName, "forName(...)");
-            f35382g = forName;
+            f34906g = forName;
             return forName;
         }
         return charset;

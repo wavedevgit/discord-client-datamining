@@ -33,6 +33,6 @@ public final class a extends CreationExtras {
     }
 
     public /* synthetic */ a(CreationExtras creationExtras, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? CreationExtras.b.f4544c : creationExtras);
+        this((i10 & 1) != 0 ? CreationExtras.b.f4656c : creationExtras);
     }
 }

@@ -12,63 +12,63 @@ import java.util.List;
 public abstract class ExpandableBehavior extends CoordinatorLayout.c {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f15243d;
+    private int f15637d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements ViewTreeObserver.OnPreDrawListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ View f15244d;
+        final /* synthetic */ View f15638d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f15245e;
+        final /* synthetic */ int f15639e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ hh.a f15246i;
+        final /* synthetic */ ih.a f15640i;
 
-        a(View view, int i10, hh.a aVar) {
-            this.f15244d = view;
-            this.f15245e = i10;
-            this.f15246i = aVar;
+        a(View view, int i10, ih.a aVar) {
+            this.f15638d = view;
+            this.f15639e = i10;
+            this.f15640i = aVar;
         }
 
         @Override // android.view.ViewTreeObserver.OnPreDrawListener
         public boolean onPreDraw() {
-            this.f15244d.getViewTreeObserver().removeOnPreDrawListener(this);
-            if (ExpandableBehavior.this.f15243d == this.f15245e) {
+            this.f15638d.getViewTreeObserver().removeOnPreDrawListener(this);
+            if (ExpandableBehavior.this.f15637d == this.f15639e) {
                 ExpandableBehavior expandableBehavior = ExpandableBehavior.this;
-                hh.a aVar = this.f15246i;
-                expandableBehavior.L((View) aVar, this.f15244d, aVar.a(), false);
+                ih.a aVar = this.f15640i;
+                expandableBehavior.L((View) aVar, this.f15638d, aVar.a(), false);
             }
             return false;
         }
     }
 
     public ExpandableBehavior() {
-        this.f15243d = 0;
+        this.f15637d = 0;
     }
 
     private boolean J(boolean z10) {
         if (z10) {
-            int i10 = this.f15243d;
+            int i10 = this.f15637d;
             if (i10 != 0 && i10 != 2) {
                 return false;
             }
             return true;
-        } else if (this.f15243d != 1) {
+        } else if (this.f15637d != 1) {
             return false;
         } else {
             return true;
         }
     }
 
-    protected hh.a K(CoordinatorLayout coordinatorLayout, View view) {
+    protected ih.a K(CoordinatorLayout coordinatorLayout, View view) {
         List m10 = coordinatorLayout.m(view);
         int size = m10.size();
         for (int i10 = 0; i10 < size; i10++) {
             View view2 = (View) m10.get(i10);
             if (i(coordinatorLayout, view, view2)) {
-                return (hh.a) view2;
+                return (ih.a) view2;
             }
         }
         return null;
@@ -82,14 +82,14 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.c {
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public boolean l(CoordinatorLayout coordinatorLayout, View view, View view2) {
         int i10;
-        hh.a aVar = (hh.a) view2;
+        ih.a aVar = (ih.a) view2;
         if (J(aVar.a())) {
             if (aVar.a()) {
                 i10 = 1;
             } else {
                 i10 = 2;
             }
-            this.f15243d = i10;
+            this.f15637d = i10;
             return L((View) aVar, view, aVar.a(), true);
         }
         return false;
@@ -97,7 +97,7 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.c {
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public boolean p(CoordinatorLayout coordinatorLayout, View view, int i10) {
-        hh.a K;
+        ih.a K;
         int i11;
         if (!h0.S(view) && (K = K(coordinatorLayout, view)) != null && J(K.a())) {
             if (K.a()) {
@@ -105,7 +105,7 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.c {
             } else {
                 i11 = 2;
             }
-            this.f15243d = i11;
+            this.f15637d = i11;
             view.getViewTreeObserver().addOnPreDrawListener(new a(view, i11, K));
             return false;
         }
@@ -114,6 +114,6 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.c {
 
     public ExpandableBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f15243d = 0;
+        this.f15637d = 0;
     }
 }

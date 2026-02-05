@@ -7,7 +7,7 @@ import java.util.Map;
 public interface h {
     void a(int i10);
 
-    c.C0277c b(c.b bVar);
+    c.C0292c b(c.b bVar);
 
     void c();
 

@@ -16,11 +16,11 @@ public interface h extends Closeable {
 
     boolean isClosed();
 
-    int o(int i10, byte[] bArr, int i11, int i12);
+    int p(int i10, byte[] bArr, int i11, int i12);
 
-    ByteBuffer p();
+    ByteBuffer q();
 
     int size();
 
-    byte w(int i10);
+    byte x(int i10);
 }

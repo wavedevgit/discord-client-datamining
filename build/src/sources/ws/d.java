@@ -1,26 +1,27 @@
 package ws;
 
-import java.util.ArrayList;
-import java.util.List;
+import j$.time.DayOfWeek;
+import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d {
+public abstract class d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final List f52703a = new ArrayList();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public /* synthetic */ class a {
 
-    public final void a(o format) {
-        Intrinsics.checkNotNullParameter(format, "format");
-        if (format instanceof s) {
-            this.f52703a.add(format);
-        } else if (format instanceof h) {
-            for (s sVar : ((h) format).c()) {
-                this.f52703a.add(sVar);
-            }
-        }
+        /* renamed from: a  reason: collision with root package name */
+        public static final /* synthetic */ EnumEntries f53271a = vr.a.a(DayOfWeek.values());
     }
 
-    public final h b() {
-        return new h(this.f52703a);
+    public static final DayOfWeek a(int i10) {
+        if (1 <= i10 && i10 < 8) {
+            return (DayOfWeek) a.f53271a.get(i10 - 1);
+        }
+        throw new IllegalArgumentException(("Expected ISO day-of-week number in 1..7, got " + i10).toString());
+    }
+
+    public static final int b(DayOfWeek dayOfWeek) {
+        Intrinsics.checkNotNullParameter(dayOfWeek, "<this>");
+        return dayOfWeek.ordinal() + 1;
     }
 }

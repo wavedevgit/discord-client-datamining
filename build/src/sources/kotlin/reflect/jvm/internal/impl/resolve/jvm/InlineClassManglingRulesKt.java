@@ -28,9 +28,9 @@ public final class InlineClassManglingRulesKt {
 
     private static final boolean b(KotlinType kotlinType, boolean z10) {
         TypeParameterDescriptor typeParameterDescriptor;
-        ClassifierDescriptor mo1197getDeclarationDescriptor = kotlinType.getConstructor().mo1197getDeclarationDescriptor();
-        if (mo1197getDeclarationDescriptor instanceof TypeParameterDescriptor) {
-            typeParameterDescriptor = (TypeParameterDescriptor) mo1197getDeclarationDescriptor;
+        ClassifierDescriptor mo1199getDeclarationDescriptor = kotlinType.getConstructor().mo1199getDeclarationDescriptor();
+        if (mo1199getDeclarationDescriptor instanceof TypeParameterDescriptor) {
+            typeParameterDescriptor = (TypeParameterDescriptor) mo1199getDeclarationDescriptor;
         } else {
             typeParameterDescriptor = null;
         }
@@ -89,7 +89,7 @@ public final class InlineClassManglingRulesKt {
 
     public static final boolean isValueClassThatRequiresMangling(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        ClassifierDescriptor mo1197getDeclarationDescriptor = kotlinType.getConstructor().mo1197getDeclarationDescriptor();
-        return mo1197getDeclarationDescriptor != null && ((InlineClassesUtilsKt.isInlineClass(mo1197getDeclarationDescriptor) && isValueClassThatRequiresMangling(mo1197getDeclarationDescriptor)) || InlineClassesUtilsKt.needsMfvcFlattening(kotlinType));
+        ClassifierDescriptor mo1199getDeclarationDescriptor = kotlinType.getConstructor().mo1199getDeclarationDescriptor();
+        return mo1199getDeclarationDescriptor != null && ((InlineClassesUtilsKt.isInlineClass(mo1199getDeclarationDescriptor) && isValueClassThatRequiresMangling(mo1199getDeclarationDescriptor)) || InlineClassesUtilsKt.needsMfvcFlattening(kotlinType));
     }
 }

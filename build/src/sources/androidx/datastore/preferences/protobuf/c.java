@@ -9,16 +9,16 @@ import java.util.RandomAccess;
 abstract class c extends AbstractList implements y.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f3591d = true;
+    private boolean f3703d = true;
 
     @Override // androidx.datastore.preferences.protobuf.y.b
-    public boolean C0() {
-        return this.f3591d;
+    public boolean E0() {
+        return this.f3703d;
     }
 
     @Override // androidx.datastore.preferences.protobuf.y.b
     public final void N() {
-        this.f3591d = false;
+        this.f3703d = false;
     }
 
     @Override // java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
@@ -35,7 +35,7 @@ abstract class c extends AbstractList implements y.b {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void b() {
-        if (this.f3591d) {
+        if (this.f3703d) {
             return;
         }
         throw new UnsupportedOperationException();

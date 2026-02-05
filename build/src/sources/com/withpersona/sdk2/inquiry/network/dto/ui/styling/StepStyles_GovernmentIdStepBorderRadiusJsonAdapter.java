@@ -41,24 +41,24 @@ public final class StepStyles_GovernmentIdStepBorderRadiusJsonAdapter extends h 
     @NotNull
     public StepStyles.GovernmentIdStepBorderRadius fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.Measurement measurement = null;
         StyleElements.Measurement measurement2 = null;
         StyleElements.Measurement measurement3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 measurement2 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 measurement3 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.GovernmentIdStepBorderRadius(measurement, measurement2, measurement3);
     }
 
@@ -66,12 +66,12 @@ public final class StepStyles_GovernmentIdStepBorderRadiusJsonAdapter extends h 
     public void toJson(@NotNull t writer, StepStyles.GovernmentIdStepBorderRadius governmentIdStepBorderRadius) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepBorderRadius != null) {
-            writer.l();
-            writer.A0("modal");
+            writer.k();
+            writer.W("modal");
             this.nullableMeasurementAdapter.toJson(writer, governmentIdStepBorderRadius.getModal());
-            writer.A0("governmentIdCaptureFeedBox");
+            writer.W("governmentIdCaptureFeedBox");
             this.nullableMeasurementAdapter.toJson(writer, governmentIdStepBorderRadius.getGovernmentIdCaptureFeedBox());
-            writer.A0("governmentIdReviewImageBox");
+            writer.W("governmentIdReviewImageBox");
             this.nullableMeasurementAdapter.toJson(writer, governmentIdStepBorderRadius.getGovernmentIdReviewImageBox());
             writer.E();
             return;

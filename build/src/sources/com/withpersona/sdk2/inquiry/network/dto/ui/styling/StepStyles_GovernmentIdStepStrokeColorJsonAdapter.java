@@ -41,7 +41,7 @@ public final class StepStyles_GovernmentIdStepStrokeColorJsonAdapter extends h {
     @NotNull
     public StepStyles.GovernmentIdStepStrokeColor fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         StyleElements.SimpleElementColor simpleElementColor3 = null;
@@ -49,7 +49,7 @@ public final class StepStyles_GovernmentIdStepStrokeColorJsonAdapter extends h {
         StyleElements.SimpleElementColor simpleElementColor5 = null;
         StyleElements.SimpleElementColor simpleElementColor6 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -74,7 +74,7 @@ public final class StepStyles_GovernmentIdStepStrokeColorJsonAdapter extends h {
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.GovernmentIdStepStrokeColor(simpleElementColor, simpleElementColor2, simpleElementColor3, simpleElementColor4, simpleElementColor5, simpleElementColor6);
     }
 
@@ -82,18 +82,18 @@ public final class StepStyles_GovernmentIdStepStrokeColorJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.GovernmentIdStepStrokeColor governmentIdStepStrokeColor) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepStrokeColor != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getBase());
-            writer.A0("governmentIdSelectOptionIcon");
+            writer.W("governmentIdSelectOptionIcon");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getGovernmentIdSelectOptionIcon());
-            writer.A0("governmentIdSelectOptionChevron");
+            writer.W("governmentIdSelectOptionChevron");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getGovernmentIdSelectOptionChevron());
-            writer.A0("capturePageHintIcon");
+            writer.W("capturePageHintIcon");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getCapturePageHintIcon());
-            writer.A0("governmentIdCaptureFeedBox");
+            writer.W("governmentIdCaptureFeedBox");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getGovernmentIdCaptureFeedBox());
-            writer.A0("captureOverlayHeaderButton");
+            writer.W("captureOverlayHeaderButton");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getCaptureOverlayHeaderButton());
             writer.E();
             return;

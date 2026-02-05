@@ -6,19 +6,19 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class q {
 
     /* renamed from: a  reason: collision with root package name */
-    public long[] f50371a;
+    public long[] f51143a;
 
     /* renamed from: b  reason: collision with root package name */
-    public Object[] f50372b;
+    public Object[] f51144b;
 
     /* renamed from: c  reason: collision with root package name */
-    public Object[] f50373c;
+    public Object[] f51145c;
 
     /* renamed from: d  reason: collision with root package name */
-    public int f50374d;
+    public int f51146d;
 
     /* renamed from: e  reason: collision with root package name */
-    public int f50375e;
+    public int f51147e;
 
     public /* synthetic */ q(DefaultConstructorMarker defaultConstructorMarker) {
         this();
@@ -51,12 +51,12 @@ public abstract class q {
             int r4 = r3 << 16
             r3 = r3 ^ r4
             r4 = r3 & 127(0x7f, float:1.78E-43)
-            int r5 = r0.f50374d
+            int r5 = r0.f51146d
             int r3 = r3 >>> 7
             r3 = r3 & r5
             r6 = r2
         L1c:
-            long[] r7 = r0.f50371a
+            long[] r7 = r0.f51143a
             int r8 = r3 >> 3
             r9 = r3 & 7
             int r9 = r9 << 3
@@ -90,7 +90,7 @@ public abstract class q {
             int r11 = r11 >> 3
             int r11 = r11 + r3
             r11 = r11 & r5
-            java.lang.Object[] r15 = r0.f50372b
+            java.lang.Object[] r15 = r0.f51144b
             r15 = r15[r11]
             boolean r15 = kotlin.jvm.internal.Intrinsics.areEqual(r15, r1)
             if (r15 == 0) goto L61
@@ -148,11 +148,11 @@ public abstract class q {
             int r2 = r1 << 16
             r1 = r1 ^ r2
             r2 = r1 & 127(0x7f, float:1.78E-43)
-            int r3 = r13.f50374d
+            int r3 = r13.f51146d
             int r1 = r1 >>> 7
         L16:
             r1 = r1 & r3
-            long[] r4 = r13.f50371a
+            long[] r4 = r13.f51143a
             int r5 = r1 >> 3
             r6 = r1 & 7
             int r6 = r6 << 3
@@ -185,7 +185,7 @@ public abstract class q {
             int r10 = r10 >> 3
             int r10 = r10 + r1
             r10 = r10 & r3
-            java.lang.Object[] r11 = r13.f50372b
+            java.lang.Object[] r11 = r13.f51144b
             r11 = r11[r10]
             boolean r11 = kotlin.jvm.internal.Intrinsics.areEqual(r11, r14)
             if (r11 == 0) goto L5c
@@ -206,7 +206,7 @@ public abstract class q {
             r10 = -1
         L6c:
             if (r10 < 0) goto L73
-            java.lang.Object[] r14 = r13.f50373c
+            java.lang.Object[] r14 = r13.f51145c
             r14 = r14[r10]
             return r14
         L73:
@@ -221,15 +221,15 @@ public abstract class q {
     }
 
     public final int c() {
-        return this.f50374d;
+        return this.f51146d;
     }
 
     public final int d() {
-        return this.f50375e;
+        return this.f51147e;
     }
 
     public final boolean e() {
-        if (this.f50375e == 0) {
+        if (this.f51147e == 0) {
             return true;
         }
         return false;
@@ -246,9 +246,9 @@ public abstract class q {
         if (qVar.d() != d()) {
             return false;
         }
-        Object[] objArr = this.f50372b;
-        Object[] objArr2 = this.f50373c;
-        long[] jArr = this.f50371a;
+        Object[] objArr = this.f51144b;
+        Object[] objArr2 = this.f51145c;
+        long[] jArr = this.f51143a;
         int length = jArr.length - 2;
         if (length >= 0) {
             int i10 = 0;
@@ -288,9 +288,9 @@ public abstract class q {
     public int hashCode() {
         int i10;
         int i11;
-        Object[] objArr = this.f50372b;
-        Object[] objArr2 = this.f50373c;
-        long[] jArr = this.f50371a;
+        Object[] objArr = this.f51144b;
+        Object[] objArr2 = this.f51145c;
+        long[] jArr = this.f51143a;
         int length = jArr.length - 2;
         if (length < 0) {
             return 0;
@@ -338,9 +338,9 @@ public abstract class q {
         }
         StringBuilder sb2 = new StringBuilder();
         sb2.append('{');
-        Object[] objArr = this.f50372b;
-        Object[] objArr2 = this.f50373c;
-        long[] jArr = this.f50371a;
+        Object[] objArr = this.f51144b;
+        Object[] objArr2 = this.f51145c;
+        long[] jArr = this.f51143a;
         int length = jArr.length - 2;
         if (length >= 0) {
             int i10 = 0;
@@ -364,7 +364,7 @@ public abstract class q {
                             }
                             sb2.append(obj2);
                             i11++;
-                            if (i11 < this.f50375e) {
+                            if (i11 < this.f51147e) {
                                 sb2.append(',');
                                 sb2.append(' ');
                             }
@@ -388,9 +388,9 @@ public abstract class q {
     }
 
     private q() {
-        this.f50371a = r.f50376a;
-        Object[] objArr = v0.a.f51049c;
-        this.f50372b = objArr;
-        this.f50373c = objArr;
+        this.f51143a = r.f51148a;
+        Object[] objArr = v0.a.f51738c;
+        this.f51144b = objArr;
+        this.f51145c = objArr;
     }
 }

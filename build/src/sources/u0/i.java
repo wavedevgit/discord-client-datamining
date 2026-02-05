@@ -3,12 +3,12 @@ package u0;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final m f50361a = new m(0);
+    private static final m f51133a = new m(0);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final long[] f50362b = new long[0];
+    private static final long[] f51134b = new long[0];
 
     public static final long[] a() {
-        return f50362b;
+        return f51134b;
     }
 }

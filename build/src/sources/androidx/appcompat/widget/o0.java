@@ -3,117 +3,117 @@ package androidx.appcompat.widget;
 class o0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f1765a = 0;
+    private int f1877a = 0;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f1766b = 0;
+    private int f1878b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f1767c = Integer.MIN_VALUE;
+    private int f1879c = Integer.MIN_VALUE;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f1768d = Integer.MIN_VALUE;
+    private int f1880d = Integer.MIN_VALUE;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f1769e = 0;
+    private int f1881e = 0;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f1770f = 0;
+    private int f1882f = 0;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f1771g = false;
+    private boolean f1883g = false;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f1772h = false;
+    private boolean f1884h = false;
 
     public int a() {
-        if (this.f1771g) {
-            return this.f1765a;
+        if (this.f1883g) {
+            return this.f1877a;
         }
-        return this.f1766b;
+        return this.f1878b;
     }
 
     public int b() {
-        return this.f1765a;
+        return this.f1877a;
     }
 
     public int c() {
-        return this.f1766b;
+        return this.f1878b;
     }
 
     public int d() {
-        if (this.f1771g) {
-            return this.f1766b;
+        if (this.f1883g) {
+            return this.f1878b;
         }
-        return this.f1765a;
+        return this.f1877a;
     }
 
     public void e(int i10, int i11) {
-        this.f1772h = false;
+        this.f1884h = false;
         if (i10 != Integer.MIN_VALUE) {
-            this.f1769e = i10;
-            this.f1765a = i10;
+            this.f1881e = i10;
+            this.f1877a = i10;
         }
         if (i11 != Integer.MIN_VALUE) {
-            this.f1770f = i11;
-            this.f1766b = i11;
+            this.f1882f = i11;
+            this.f1878b = i11;
         }
     }
 
     public void f(boolean z10) {
-        if (z10 == this.f1771g) {
+        if (z10 == this.f1883g) {
             return;
         }
-        this.f1771g = z10;
-        if (this.f1772h) {
+        this.f1883g = z10;
+        if (this.f1884h) {
             if (z10) {
-                int i10 = this.f1768d;
+                int i10 = this.f1880d;
                 if (i10 == Integer.MIN_VALUE) {
-                    i10 = this.f1769e;
+                    i10 = this.f1881e;
                 }
-                this.f1765a = i10;
-                int i11 = this.f1767c;
+                this.f1877a = i10;
+                int i11 = this.f1879c;
                 if (i11 == Integer.MIN_VALUE) {
-                    i11 = this.f1770f;
+                    i11 = this.f1882f;
                 }
-                this.f1766b = i11;
+                this.f1878b = i11;
                 return;
             }
-            int i12 = this.f1767c;
+            int i12 = this.f1879c;
             if (i12 == Integer.MIN_VALUE) {
-                i12 = this.f1769e;
+                i12 = this.f1881e;
             }
-            this.f1765a = i12;
-            int i13 = this.f1768d;
+            this.f1877a = i12;
+            int i13 = this.f1880d;
             if (i13 == Integer.MIN_VALUE) {
-                i13 = this.f1770f;
+                i13 = this.f1882f;
             }
-            this.f1766b = i13;
+            this.f1878b = i13;
             return;
         }
-        this.f1765a = this.f1769e;
-        this.f1766b = this.f1770f;
+        this.f1877a = this.f1881e;
+        this.f1878b = this.f1882f;
     }
 
     public void g(int i10, int i11) {
-        this.f1767c = i10;
-        this.f1768d = i11;
-        this.f1772h = true;
-        if (this.f1771g) {
+        this.f1879c = i10;
+        this.f1880d = i11;
+        this.f1884h = true;
+        if (this.f1883g) {
             if (i11 != Integer.MIN_VALUE) {
-                this.f1765a = i11;
+                this.f1877a = i11;
             }
             if (i10 != Integer.MIN_VALUE) {
-                this.f1766b = i10;
+                this.f1878b = i10;
                 return;
             }
             return;
         }
         if (i10 != Integer.MIN_VALUE) {
-            this.f1765a = i10;
+            this.f1877a = i10;
         }
         if (i11 != Integer.MIN_VALUE) {
-            this.f1766b = i11;
+            this.f1878b = i11;
         }
     }
 }

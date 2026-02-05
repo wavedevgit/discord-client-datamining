@@ -45,38 +45,38 @@ public final class NextStep_Document_Pages_DocumentStartPageJsonAdapter extends 
     @NotNull
     public NextStep.Document.Pages.DocumentStartPage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         NextStep.Ui ui2 = null;
         NextStep.Document.Pages.DocumentStartPage.ComponentNameMapping componentNameMapping = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 ui2 = (NextStep.Ui) this.uiAdapter.fromJson(reader);
                 if (ui2 == null) {
-                    throw vm.c.x("uiStep", "uiStep", reader);
+                    throw ym.c.x("uiStep", "uiStep", reader);
                 }
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 componentNameMapping = (NextStep.Document.Pages.DocumentStartPage.ComponentNameMapping) this.nullableComponentNameMappingAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         if (ui2 != null) {
             return new NextStep.Document.Pages.DocumentStartPage(ui2, componentNameMapping);
         }
-        throw vm.c.o("uiStep", "uiStep", reader);
+        throw ym.c.o("uiStep", "uiStep", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.Document.Pages.DocumentStartPage documentStartPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStartPage != null) {
-            writer.l();
-            writer.A0("uiStep");
+            writer.k();
+            writer.W("uiStep");
             this.uiAdapter.toJson(writer, documentStartPage.getUiStep());
-            writer.A0("componentNameMapping");
+            writer.W("componentNameMapping");
             this.nullableComponentNameMappingAdapter.toJson(writer, documentStartPage.getComponentNameMapping());
             writer.E();
             return;

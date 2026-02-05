@@ -37,15 +37,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/RoleSubscriptionPurchaseSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55918: for (var _fun55918_ip = 0;;) switch (_fun55918_ip) {
+        _fun55942: for (var _fun55942_ip = 0;;) switch (_fun55942_ip) {
             case 0:
                 var4 = arg0;
                 var5 = var4.message;
                 var10 = var5.roleSubscriptionData;
                 var0 = null;
                 if (!(var0 != var10)) {
-                    _fun55918_ip = 733;
-                    continue _fun55918
+                    _fun55942_ip = 733;
+                    continue _fun55942
                 }
             case 23:
                 var1 = var5.author;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = undefined;
                 var6 = undefined;
                 if (var7) {
-                    _fun55918_ip = 77;
-                    continue _fun55918
+                    _fun55942_ip = 77;
+                    continue _fun55942
                 }
             case 67:
                 var7 = var11.getGuildId;
@@ -81,21 +81,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var6;
                 var6 = undefined;
                 if (!var8) {
-                    _fun55918_ip = 300;
-                    continue _fun55918
+                    _fun55942_ip = 300;
+                    continue _fun55942
                 }
             case 149:
                 var8 = var0 != var11;
                 var6 = undefined;
                 if (!var8) {
-                    _fun55918_ip = 300;
-                    continue _fun55918
+                    _fun55942_ip = 300;
+                    continue _fun55942
                 }
             case 161:
                 var12 = var0 != var7;
                 if (!var12) {
-                    _fun55918_ip = 191;
-                    continue _fun55918
+                    _fun55942_ip = 191;
+                    continue _fun55942
                 }
             case 168:
                 var8 = var7.systemChannelFlags;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var23[var7](var22, var21, var20, var19, var18);
                 var6 = undefined;
                 if (!var7) {
-                    _fun55918_ip = 300;
-                    continue _fun55918
+                    _fun55942_ip = 300;
+                    continue _fun55942
                 }
             case 241:
                 var13 = _closure1_slot0;
@@ -143,19 +143,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var8.bind(var3)(var7);
                 var8 = var12.ensureAvatarSource;
                 if (!(var0 != var16)) {
-                    _fun55918_ip = 334;
-                    continue _fun55918
+                    _fun55942_ip = 334;
+                    continue _fun55942
                 }
             case 330:
                 if (!(var0 == var17)) {
-                    _fun55918_ip = 347;
-                    continue _fun55918
+                    _fun55942_ip = 347;
+                    continue _fun55942
                 }
             case 334:
                 var7 = var1.getAvatarSource;
                 var7 = var7.bind(var1)(var3);
-                _fun55918_ip = 399;
-                continue _fun55918;
+                _fun55942_ip = 399;
+                continue _fun55942;
             case 347:
                 var14 = _closure1_slot0;
                 var15 = _closure1_slot2;
@@ -180,8 +180,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var0 == var11;
                 var7 = undefined;
                 if (var12) {
-                    _fun55918_ip = 443;
-                    continue _fun55918
+                    _fun55942_ip = 443;
+                    continue _fun55942
                 }
             case 438:
                 var7 = var11.id;
@@ -191,8 +191,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var0 == var11;
                 var7 = undefined;
                 if (var12) {
-                    _fun55918_ip = 468;
-                    continue _fun55918
+                    _fun55942_ip = 468;
+                    continue _fun55942
                 }
             case 462:
                 var7 = var11.role_subscription_listing_id;
@@ -217,8 +217,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var0 != var17;
                 var16 = undefined;
                 if (!var18) {
-                    _fun55918_ip = 550;
-                    continue _fun55918
+                    _fun55942_ip = 550;
+                    continue _fun55942
                 }
             case 547:
                 var16 = var17;
@@ -269,4 +269,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createRoleSubscriptionPurchaseSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 660, 3983, 6696, 6699, 6691, 1418, 1417, 1234, 6678, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 660, 3982, 6716, 6719, 6711, 1418, 1417, 1234, 6698, 2]);

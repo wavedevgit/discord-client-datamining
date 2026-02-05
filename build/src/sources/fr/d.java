@@ -1,11 +1,28 @@
 package fr;
 
-import dr.q;
-import dr.s;
+import java.io.File;
+import kotlin.jvm.internal.Intrinsics;
+import zr.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class d implements s {
-    @Override // dr.s
-    public Object a(dr.g gVar, q qVar) {
-        return new gr.e();
+public final class d implements a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final File f23423a;
+
+    public d(File destination) {
+        Intrinsics.checkParameterIsNotNull(destination, "destination");
+        this.f23423a = destination;
+    }
+
+    @Override // fr.a
+    public boolean isSatisfied(File imageFile) {
+        Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
+        return Intrinsics.areEqual(imageFile.getAbsolutePath(), this.f23423a.getAbsolutePath());
+    }
+
+    @Override // fr.a
+    public File satisfy(File imageFile) {
+        Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
+        return j.q(imageFile, this.f23423a, true, 0, 4, null);
     }
 }

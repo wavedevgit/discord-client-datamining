@@ -8,30 +8,30 @@ import io.sentry.k;
 public class i implements Comparable {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f29154d;
+    private String f28212d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f29155e;
+    private long f28213e;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f29156i;
+    private long f28214i;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f29157o;
+    private long f28215o;
 
     @Override // java.lang.Comparable
     /* renamed from: a */
     public int compareTo(i iVar) {
-        return Long.compare(this.f29155e, iVar.f29155e);
+        return Long.compare(this.f28213e, iVar.f28213e);
     }
 
     public String d() {
-        return this.f29154d;
+        return this.f28212d;
     }
 
     public long e() {
         if (r()) {
-            return this.f29157o - this.f29156i;
+            return this.f28215o - this.f28214i;
         }
         return 0L;
     }
@@ -45,7 +45,7 @@ public class i implements Comparable {
 
     public long g() {
         if (q()) {
-            return this.f29155e + e();
+            return this.f28213e + e();
         }
         return 0L;
     }
@@ -56,76 +56,76 @@ public class i implements Comparable {
 
     public j5 i() {
         if (q()) {
-            return new b7(k.i(j()));
+            return new b7(k.i(k()));
         }
         return null;
     }
 
-    public long j() {
-        return this.f29155e;
+    public long k() {
+        return this.f28213e;
     }
 
-    public double k() {
-        return k.j(this.f29155e);
+    public double l() {
+        return k.j(this.f28213e);
     }
 
-    public long l() {
-        return this.f29156i;
+    public long m() {
+        return this.f28214i;
     }
 
-    public boolean o() {
-        if (this.f29156i == 0) {
+    public boolean n() {
+        if (this.f28214i == 0) {
             return true;
         }
         return false;
     }
 
     public boolean p() {
-        if (this.f29157o == 0) {
+        if (this.f28215o == 0) {
             return true;
         }
         return false;
     }
 
     public boolean q() {
-        if (this.f29156i != 0) {
+        if (this.f28214i != 0) {
             return true;
         }
         return false;
     }
 
     public boolean r() {
-        if (this.f29157o != 0) {
+        if (this.f28215o != 0) {
             return true;
         }
         return false;
     }
 
     public void s() {
-        this.f29154d = null;
-        this.f29156i = 0L;
-        this.f29157o = 0L;
-        this.f29155e = 0L;
+        this.f28212d = null;
+        this.f28214i = 0L;
+        this.f28215o = 0L;
+        this.f28213e = 0L;
     }
 
     public void t(long j10) {
-        this.f29156i = j10;
-        this.f29155e = System.currentTimeMillis() - (SystemClock.uptimeMillis() - this.f29156i);
+        this.f28214i = j10;
+        this.f28213e = System.currentTimeMillis() - (SystemClock.uptimeMillis() - this.f28214i);
     }
 
     public void u(String str, long j10, long j11, long j12) {
-        this.f29154d = str;
-        this.f29155e = j10;
-        this.f29156i = j11;
-        this.f29157o = j12;
+        this.f28212d = str;
+        this.f28213e = j10;
+        this.f28214i = j11;
+        this.f28215o = j12;
     }
 
     public void v() {
-        this.f29156i = SystemClock.uptimeMillis();
-        this.f29155e = System.currentTimeMillis();
+        this.f28214i = SystemClock.uptimeMillis();
+        this.f28213e = System.currentTimeMillis();
     }
 
     public void w() {
-        this.f29157o = SystemClock.uptimeMillis();
+        this.f28215o = SystemClock.uptimeMillis();
     }
 }

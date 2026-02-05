@@ -41,24 +41,24 @@ public final class AttributeStyles_InputCheckboxLineHeightStyleJsonAdapter exten
     @NotNull
     public AttributeStyles.InputCheckboxLineHeightStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.Measurement measurement = null;
         StyleElements.Measurement measurement2 = null;
         StyleElements.Measurement measurement3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 measurement2 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 measurement3 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.InputCheckboxLineHeightStyle(measurement, measurement2, measurement3);
     }
 
@@ -66,12 +66,12 @@ public final class AttributeStyles_InputCheckboxLineHeightStyleJsonAdapter exten
     public void toJson(@NotNull t writer, AttributeStyles.InputCheckboxLineHeightStyle inputCheckboxLineHeightStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputCheckboxLineHeightStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableMeasurementAdapter.toJson(writer, inputCheckboxLineHeightStyle.getBase());
-            writer.A0("description");
+            writer.W("description");
             this.nullableMeasurementAdapter.toJson(writer, inputCheckboxLineHeightStyle.getDescription());
-            writer.A0("error");
+            writer.W("error");
             this.nullableMeasurementAdapter.toJson(writer, inputCheckboxLineHeightStyle.getError());
             writer.E();
             return;

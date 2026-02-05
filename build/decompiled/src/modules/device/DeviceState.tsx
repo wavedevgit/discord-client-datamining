@@ -36,13 +36,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.getDeviceState;
     var2.getDeviceState = var3;
     var1 = function arg0() {
-        _fun93828: for (var _fun93828_ip = 0;;) switch (_fun93828_ip) {
+        _fun93845: for (var _fun93845_ip = 0;;) switch (_fun93845_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 if (!(var1 === var0)) {
-                    _fun93828_ip = 61;
-                    continue _fun93828
+                    _fun93845_ip = 61;
+                    continue _fun93845
                 }
             case 9:
                 var3 = _closure1_slot0;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.info;
                 var1 = 'Device state not available';
                 var1 = var2.bind(var3)(var1);
-                _fun93828_ip = 283;
-                continue _fun93828;
+                _fun93845_ip = 283;
+                continue _fun93845;
             case 61:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.isLowPowerMode;
                 var3 = 'Disabled';
                 if (!var0) {
-                    _fun93828_ip = 268;
-                    continue _fun93828
+                    _fun93845_ip = 268;
+                    continue _fun93845
                 }
             case 264:
                 var3 = 'Enabled';
@@ -115,4 +115,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.logDeviceState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12267, 2, 12268]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12283, 2, 12284]);

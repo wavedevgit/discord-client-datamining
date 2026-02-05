@@ -10,11 +10,11 @@ public final class i8 extends a implements IInterface {
         super(iBinder, "com.google.android.gms.vision.face.internal.client.INativeFaceDetector");
     }
 
-    public final void S0() {
+    public final void W0() {
         h(3, e());
     }
 
-    public final e4[] T0(sf.a aVar, ne neVar) {
+    public final e4[] X0(sf.a aVar, ne neVar) {
         Parcel e10 = e();
         b1.b(e10, aVar);
         b1.a(e10, neVar);
@@ -24,7 +24,7 @@ public final class i8 extends a implements IInterface {
         return e4VarArr;
     }
 
-    public final e4[] U0(sf.a aVar, sf.a aVar2, sf.a aVar3, int i10, int i11, int i12, int i13, int i14, int i15, ne neVar) {
+    public final e4[] Y0(sf.a aVar, sf.a aVar2, sf.a aVar3, int i10, int i11, int i12, int i13, int i14, int i15, ne neVar) {
         Parcel e10 = e();
         b1.b(e10, aVar);
         b1.b(e10, aVar2);

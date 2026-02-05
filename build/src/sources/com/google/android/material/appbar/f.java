@@ -6,51 +6,51 @@ import androidx.core.view.h0;
 class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f14136a;
+    private final View f14530a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f14137b;
+    private int f14531b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f14138c;
+    private int f14532c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f14139d;
+    private int f14533d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f14140e;
+    private int f14534e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f14141f = true;
+    private boolean f14535f = true;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f14142g = true;
+    private boolean f14536g = true;
 
     public f(View view) {
-        this.f14136a = view;
+        this.f14530a = view;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a() {
-        View view = this.f14136a;
-        h0.Y(view, this.f14139d - (view.getTop() - this.f14137b));
-        View view2 = this.f14136a;
-        h0.X(view2, this.f14140e - (view2.getLeft() - this.f14138c));
+        View view = this.f14530a;
+        h0.Y(view, this.f14533d - (view.getTop() - this.f14531b));
+        View view2 = this.f14530a;
+        h0.X(view2, this.f14534e - (view2.getLeft() - this.f14532c));
     }
 
     public int b() {
-        return this.f14139d;
+        return this.f14533d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c() {
-        this.f14137b = this.f14136a.getTop();
-        this.f14138c = this.f14136a.getLeft();
+        this.f14531b = this.f14530a.getTop();
+        this.f14532c = this.f14530a.getLeft();
     }
 
     public boolean d(int i10) {
-        if (this.f14142g && this.f14140e != i10) {
-            this.f14140e = i10;
+        if (this.f14536g && this.f14534e != i10) {
+            this.f14534e = i10;
             a();
             return true;
         }
@@ -58,8 +58,8 @@ class f {
     }
 
     public boolean e(int i10) {
-        if (this.f14141f && this.f14139d != i10) {
-            this.f14139d = i10;
+        if (this.f14535f && this.f14533d != i10) {
+            this.f14533d = i10;
             a();
             return true;
         }

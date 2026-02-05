@@ -137,7 +137,7 @@ public final class DebouncedVelocityTrackingScrollListener extends RecyclerView.
     public static final Unit velocityEvents$lambda$0(DebouncedVelocityTrackingScrollListener debouncedVelocityTrackingScrollListener, VelocityEvent velocityEvent) {
         Intrinsics.checkNotNullParameter(velocityEvent, "<destruct>");
         debouncedVelocityTrackingScrollListener.scrollVelocityChanged.invoke(velocityEvent.component1(), Float.valueOf(velocityEvent.component2()));
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     public final void cancel() {

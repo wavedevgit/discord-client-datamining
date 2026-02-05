@@ -8,21 +8,21 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 abstract class e extends CoordinatorLayout.c {
 
     /* renamed from: d  reason: collision with root package name */
-    private f f14133d;
+    private f f14527d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f14134e;
+    private int f14528e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f14135i;
+    private int f14529i;
 
     public e() {
-        this.f14134e = 0;
-        this.f14135i = 0;
+        this.f14528e = 0;
+        this.f14529i = 0;
     }
 
     public int I() {
-        f fVar = this.f14133d;
+        f fVar = this.f14527d;
         if (fVar != null) {
             return fVar.b();
         }
@@ -35,31 +35,31 @@ abstract class e extends CoordinatorLayout.c {
     }
 
     public boolean K(int i10) {
-        f fVar = this.f14133d;
+        f fVar = this.f14527d;
         if (fVar != null) {
             return fVar.e(i10);
         }
-        this.f14134e = i10;
+        this.f14528e = i10;
         return false;
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public boolean p(CoordinatorLayout coordinatorLayout, View view, int i10) {
         J(coordinatorLayout, view, i10);
-        if (this.f14133d == null) {
-            this.f14133d = new f(view);
+        if (this.f14527d == null) {
+            this.f14527d = new f(view);
         }
-        this.f14133d.c();
-        this.f14133d.a();
-        int i11 = this.f14134e;
+        this.f14527d.c();
+        this.f14527d.a();
+        int i11 = this.f14528e;
         if (i11 != 0) {
-            this.f14133d.e(i11);
-            this.f14134e = 0;
+            this.f14527d.e(i11);
+            this.f14528e = 0;
         }
-        int i12 = this.f14135i;
+        int i12 = this.f14529i;
         if (i12 != 0) {
-            this.f14133d.d(i12);
-            this.f14135i = 0;
+            this.f14527d.d(i12);
+            this.f14529i = 0;
             return true;
         }
         return true;
@@ -67,7 +67,7 @@ abstract class e extends CoordinatorLayout.c {
 
     public e(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f14134e = 0;
-        this.f14135i = 0;
+        this.f14528e = 0;
+        this.f14529i = 0;
     }
 }

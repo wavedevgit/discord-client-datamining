@@ -1,38 +1,38 @@
 package mg;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class l8 implements ui.d {
+final class l8 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l8 f38218a = new l8();
+    static final l8 f37880a = new l8();
 
     static {
-        c.b a10 = ui.c.a("options");
+        c.b a10 = xi.c.a("options");
         l2 l2Var = new l2();
         l2Var.a(1);
         a10.b(l2Var.b()).a();
-        c.b a11 = ui.c.a("roughDownloadDurationMs");
+        c.b a11 = xi.c.a("roughDownloadDurationMs");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
         a11.b(l2Var2.b()).a();
-        c.b a12 = ui.c.a("errorCode");
+        c.b a12 = xi.c.a("errorCode");
         l2 l2Var3 = new l2();
         l2Var3.a(3);
         a12.b(l2Var3.b()).a();
-        c.b a13 = ui.c.a("exactDownloadDurationMs");
+        c.b a13 = xi.c.a("exactDownloadDurationMs");
         l2 l2Var4 = new l2();
         l2Var4.a(4);
         a13.b(l2Var4.b()).a();
-        c.b a14 = ui.c.a("downloadStatus");
+        c.b a14 = xi.c.a("downloadStatus");
         l2 l2Var5 = new l2();
         l2Var5.a(5);
         a14.b(l2Var5.b()).a();
-        c.b a15 = ui.c.a("downloadFailureStatus");
+        c.b a15 = xi.c.a("downloadFailureStatus");
         l2 l2Var6 = new l2();
         l2Var6.a(6);
         a15.b(l2Var6.b()).a();
-        c.b a16 = ui.c.a("mddDownloadErrorCodes");
+        c.b a16 = xi.c.a("mddDownloadErrorCodes");
         l2 l2Var7 = new l2();
         l2Var7.a(7);
         a16.b(l2Var7.b()).a();
@@ -41,10 +41,10 @@ final class l8 implements ui.d {
     private l8() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

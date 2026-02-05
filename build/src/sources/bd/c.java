@@ -3,21 +3,21 @@ package bd;
 final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f6411a;
+    public final int f6258a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f6412b;
+    public final int f6259b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f6413c;
+    public final int f6260c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f6414d;
+    public final int f6261d;
 
     public c(int i10, int i11, int i12, int i13) {
-        this.f6411a = i10;
-        this.f6412b = i11;
-        this.f6413c = i12;
-        this.f6414d = i13;
+        this.f6258a = i10;
+        this.f6259b = i11;
+        this.f6260c = i12;
+        this.f6261d = i13;
     }
 }

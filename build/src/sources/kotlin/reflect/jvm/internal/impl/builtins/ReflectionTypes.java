@@ -25,45 +25,45 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinTypeFactory;
 import kotlin.reflect.jvm.internal.impl.types.StarProjectionImpl;
 import kotlin.reflect.jvm.internal.impl.types.TypeAttributes;
 import kotlin.reflect.jvm.internal.impl.util.capitalizeDecapitalize.CapitalizeDecapitalizeKt;
-import lr.l;
-import lr.o;
+import or.l;
+import or.o;
 import org.jetbrains.annotations.NotNull;
 @SourceDebugExtension({"SMAP\nReflectionTypes.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ReflectionTypes.kt\norg/jetbrains/kotlin/builtins/ReflectionTypes\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,225:1\n1563#2:226\n1634#2,3:227\n*S KotlinDebug\n*F\n+ 1 ReflectionTypes.kt\norg/jetbrains/kotlin/builtins/ReflectionTypes\n*L\n94#1:226\n94#1:227,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class ReflectionTypes {
 
     /* renamed from: a  reason: collision with root package name */
-    private final NotFoundClasses f32613a;
+    private final NotFoundClasses f32137a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f32614b;
+    private final Lazy f32138b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a f32615c;
+    private final a f32139c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a f32616d;
+    private final a f32140d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f32617e;
+    private final a f32141e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final a f32618f;
+    private final a f32142f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final a f32619g;
+    private final a f32143g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final a f32620h;
+    private final a f32144h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final a f32621i;
+    private final a f32145i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final a f32622j;
+    private final a f32146j;
 
     /* renamed from: k  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f32612k = {Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kClass", "getKClass()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kProperty", "getKProperty()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kProperty0", "getKProperty0()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kProperty1", "getKProperty1()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kProperty2", "getKProperty2()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kMutableProperty0", "getKMutableProperty0()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kMutableProperty1", "getKMutableProperty1()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kMutableProperty2", "getKMutableProperty2()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0))};
+    static final /* synthetic */ KProperty[] f32136k = {Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kClass", "getKClass()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kProperty", "getKProperty()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kProperty0", "getKProperty0()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kProperty1", "getKProperty1()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kProperty2", "getKProperty2()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kMutableProperty0", "getKMutableProperty0()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kMutableProperty1", "getKMutableProperty1()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(ReflectionTypes.class, "kMutableProperty2", "getKMutableProperty2()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0))};
     @NotNull
     public static final Companion Companion = new Companion(null);
 
@@ -97,32 +97,32 @@ public final class ReflectionTypes {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f32623a;
+        private final int f32147a;
 
         public a(int i10) {
-            this.f32623a = i10;
+            this.f32147a = i10;
         }
 
         public final ClassDescriptor a(ReflectionTypes types, KProperty property) {
             Intrinsics.checkNotNullParameter(types, "types");
             Intrinsics.checkNotNullParameter(property, "property");
-            return types.b(CapitalizeDecapitalizeKt.capitalizeAsciiOnly(property.getName()), this.f32623a);
+            return types.b(CapitalizeDecapitalizeKt.capitalizeAsciiOnly(property.getName()), this.f32147a);
         }
     }
 
     public ReflectionTypes(@NotNull ModuleDescriptor module, @NotNull NotFoundClasses notFoundClasses) {
         Intrinsics.checkNotNullParameter(module, "module");
         Intrinsics.checkNotNullParameter(notFoundClasses, "notFoundClasses");
-        this.f32613a = notFoundClasses;
-        this.f32614b = l.b(o.f37120e, new e(module));
-        this.f32615c = new a(1);
-        this.f32616d = new a(1);
-        this.f32617e = new a(1);
-        this.f32618f = new a(2);
-        this.f32619g = new a(3);
-        this.f32620h = new a(1);
-        this.f32621i = new a(2);
-        this.f32622j = new a(3);
+        this.f32137a = notFoundClasses;
+        this.f32138b = l.b(o.f44232e, new e(module));
+        this.f32139c = new a(1);
+        this.f32140d = new a(1);
+        this.f32141e = new a(1);
+        this.f32142f = new a(2);
+        this.f32143g = new a(3);
+        this.f32144h = new a(1);
+        this.f32145i = new a(2);
+        this.f32146j = new a(3);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -130,20 +130,20 @@ public final class ReflectionTypes {
         ClassDescriptor classDescriptor;
         Name identifier = Name.identifier(str);
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-        ClassifierDescriptor mo1198getContributedClassifier = c().mo1198getContributedClassifier(identifier, NoLookupLocation.FROM_REFLECTION);
-        if (mo1198getContributedClassifier instanceof ClassDescriptor) {
-            classDescriptor = (ClassDescriptor) mo1198getContributedClassifier;
+        ClassifierDescriptor mo1200getContributedClassifier = c().mo1200getContributedClassifier(identifier, NoLookupLocation.FROM_REFLECTION);
+        if (mo1200getContributedClassifier instanceof ClassDescriptor) {
+            classDescriptor = (ClassDescriptor) mo1200getContributedClassifier;
         } else {
             classDescriptor = null;
         }
         if (classDescriptor == null) {
-            return this.f32613a.getClass(new ClassId(StandardNames.KOTLIN_REFLECT_FQ_NAME, identifier), CollectionsKt.e(Integer.valueOf(i10)));
+            return this.f32137a.getClass(new ClassId(StandardNames.KOTLIN_REFLECT_FQ_NAME, identifier), CollectionsKt.e(Integer.valueOf(i10)));
         }
         return classDescriptor;
     }
 
     private final MemberScope c() {
-        return (MemberScope) this.f32614b.getValue();
+        return (MemberScope) this.f32138b.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -153,6 +153,6 @@ public final class ReflectionTypes {
 
     @NotNull
     public final ClassDescriptor getKClass() {
-        return this.f32615c.a(this, f32612k[0]);
+        return this.f32139c.a(this, f32136k[0]);
     }
 }

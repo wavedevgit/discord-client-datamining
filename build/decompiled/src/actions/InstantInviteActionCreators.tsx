@@ -2909,17 +2909,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var5.transitionToInviteSync = var9;
     var9 = function arg0() {
-        var3 = _closure1_slot1;
-        var2 = _closure1_slot3;
+        var5 = {};
+        var3 = _closure1_slot0;
+        var4 = _closure1_slot3;
         var0 = 54;
-        var2 = var2[var0];
+        var2 = var4[var0];
         var0 = undefined;
+        var2 = var3.bind(var0)(var2);
+        var2 = var2.InviteAppLaunchedContextExperiment;
+        var2 = var2.definition;
+        var3 = var2.id;
+        var2 = new Array(1);
+        var2[0] = var3;
+        var5.experiments = var2;
+        var3 = _closure1_slot1;
+        var2 = 55;
+        var2 = var4[var2];
         var4 = var3.bind(var0)(var2);
         var3 = var4.openNativeAppModal;
         var1 = _closure1_slot25;
         var2 = var1.INVITE_BROWSER;
         var1 = arg0;
-        var1 = var3.bind(var4)(var1, var2);
+        var1 = var3.bind(var4)(var1, var2, var5);
         return var0;
     };
     var5.openNativeAppModal = var9;
@@ -2968,7 +2979,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.type = var14;
                 var8.code = var4;
                 var8 = var12.bind(var13)(var8);
-                var8 = 55;
+                var8 = 56;
                 var5 = var5[var8];
                 var5 = var6.bind(var0)(var5);
                 var5 = var5.ua;
@@ -3072,7 +3083,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 401:
                 var6 = _closure1_slot0;
                 var8 = _closure1_slot3;
-                var5 = 56;
+                var5 = 57;
                 var5 = var8[var5];
                 var6 = var6.bind(var0)(var5);
                 var5 = var6.getDefaultDynamicLinkTemplate;
@@ -3082,7 +3093,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 433:
                 var6 = _closure1_slot0;
                 var12 = _closure1_slot3;
-                var5 = 56;
+                var5 = 57;
                 var5 = var12[var5];
                 var6 = var6.bind(var0)(var5);
                 var5 = var6.getInviteDynamicLinkTemplate;
@@ -3090,7 +3101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 464:
                 var12 = _closure1_slot0;
                 var13 = _closure1_slot3;
-                var5 = 57;
+                var5 = 58;
                 var6 = var13[var5];
                 var12 = var12.bind(var0)(var6);
                 var6 = var12.generateAttemptId;
@@ -3141,7 +3152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6.DEEP_LINK_CLICKED;
                 var6 = {};
                 var14 = _closure1_slot0;
-                var13 = 58;
+                var13 = 59;
                 var13 = var16[var13];
                 var14 = var14.bind(var0)(var13);
                 var13 = var14.maybeExtractId;
@@ -3155,7 +3166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 699:
                 var6 = _closure1_slot1;
                 var8 = _closure1_slot3;
-                var5 = 59;
+                var5 = 60;
                 var5 = var8[var5];
                 var6 = var6.bind(var0)(var5);
                 var5 = var6.launch;
@@ -3215,7 +3226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5.openApp = var9;
     var5.transitionToInviteChannelSync = var6;
     var5.trackInviteServerClicked = var1;
-    var6 = 60;
+    var6 = 61;
     var6 = var8[var6];
     var8 = var7.bind(var0)(var6);
     var7 = var8.fileFinishedImporting;
@@ -3295,4 +3306,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.trackInviteEmbedActioned = var3;
     var2.trackInviteServerClicked = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3472, 3334, 1376, 1216, 1372, 1671, 1681, 1410, 5899, 3091, 3213, 1621, 660, 1219, 1379, 3506, 3335, 4235, 1384, 5910, 4580, 1232, 1220, 4231, 1307, 5911, 8211, 3633, 8016, 12123, 4547, 4824, 7446, 6824, 8188, 806, 12124, 4551, 4679, 795, 507, 3352, 667, 4525, 481, 1385, 3324, 4680, 4683, 4556, 3351, 12125, 12126, 6868, 3442, 12127, 12128, 490, 12130, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3472, 3334, 1376, 1216, 1372, 1671, 1681, 1410, 5903, 3091, 3213, 1621, 660, 1219, 1379, 3506, 3335, 4235, 1384, 5914, 4580, 1232, 1220, 4231, 1307, 5915, 8230, 3633, 8035, 12140, 4547, 4826, 7465, 6844, 8207, 806, 12141, 4551, 4679, 795, 507, 3352, 667, 4525, 481, 1385, 3324, 4680, 4683, 4556, 3351, 12142, 12143, 12144, 6888, 3442, 12145, 12146, 490, 12148, 2]);

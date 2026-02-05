@@ -57,7 +57,7 @@ public final class CheckInquiryResponse_AttributesJsonAdapter extends h {
     @NotNull
     public CheckInquiryResponse.Attributes fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         NextStep nextStep = null;
@@ -65,7 +65,7 @@ public final class CheckInquiryResponse_AttributesJsonAdapter extends h {
         CheckInquiryResponse.WaitForTransitionConfig waitForTransitionConfig = null;
         String str3 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -81,7 +81,7 @@ public final class CheckInquiryResponse_AttributesJsonAdapter extends h {
                     if (nextStep != null) {
                         break;
                     } else {
-                        throw vm.c.x("nextStep", "nextStep", reader);
+                        throw ym.c.x("nextStep", "nextStep", reader);
                     }
                 case 3:
                     map = (Map) this.nullableMapOfStringInquiryFieldAdapter.fromJson(reader);
@@ -91,39 +91,39 @@ public final class CheckInquiryResponse_AttributesJsonAdapter extends h {
                     if (waitForTransitionConfig != null) {
                         break;
                     } else {
-                        throw vm.c.x("waitForTransitionConfig", "waitForTransition", reader);
+                        throw ym.c.x("waitForTransitionConfig", "waitForTransition", reader);
                     }
                 case 5:
                     str3 = (String) this.nullableStringAdapter.fromJson(reader);
                     break;
             }
         }
-        reader.y();
+        reader.z();
         if (nextStep != null) {
             if (waitForTransitionConfig != null) {
                 return new CheckInquiryResponse.Attributes(str, str2, nextStep, map, waitForTransitionConfig, str3);
             }
-            throw vm.c.o("waitForTransitionConfig", "waitForTransition", reader);
+            throw ym.c.o("waitForTransitionConfig", "waitForTransition", reader);
         }
-        throw vm.c.o("nextStep", "nextStep", reader);
+        throw ym.c.o("nextStep", "nextStep", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, CheckInquiryResponse.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.l();
-            writer.A0("selectedCountryCode");
+            writer.k();
+            writer.W("selectedCountryCode");
             this.nullableStringAdapter.toJson(writer, attributes.getSelectedCountryCode());
-            writer.A0("status");
+            writer.W("status");
             this.nullableStringAdapter.toJson(writer, attributes.getStatus());
-            writer.A0("nextStep");
+            writer.W("nextStep");
             this.nextStepAdapter.toJson(writer, attributes.getNextStep());
-            writer.A0("fields");
+            writer.W("fields");
             this.nullableMapOfStringInquiryFieldAdapter.toJson(writer, attributes.getFields());
-            writer.A0("waitForTransition");
+            writer.W("waitForTransition");
             this.waitForTransitionConfigAdapter.toJson(writer, attributes.getWaitForTransitionConfig());
-            writer.A0("environment");
+            writer.W("environment");
             this.nullableStringAdapter.toJson(writer, attributes.getEnvironment());
             writer.E();
             return;

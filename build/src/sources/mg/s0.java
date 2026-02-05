@@ -7,29 +7,29 @@ import java.util.Map;
 final class s0 extends AbstractSet {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ y0 f38416d;
+    final /* synthetic */ y0 f38078d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s0(y0 y0Var) {
-        this.f38416d = y0Var;
+        this.f38078d = y0Var;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final void clear() {
-        this.f38416d.clear();
+        this.f38078d.clear();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean contains(Object obj) {
         int z10;
-        Map o10 = this.f38416d.o();
+        Map o10 = this.f38078d.o();
         if (o10 != null) {
             return o10.entrySet().contains(obj);
         }
         if (obj instanceof Map.Entry) {
             Map.Entry entry = (Map.Entry) obj;
-            z10 = this.f38416d.z(entry.getKey());
-            if (z10 != -1 && r.a(y0.m(this.f38416d, z10), entry.getValue())) {
+            z10 = this.f38078d.z(entry.getKey());
+            if (z10 != -1 && r.a(y0.m(this.f38078d, z10), entry.getValue())) {
                 return true;
             }
         }
@@ -38,7 +38,7 @@ final class s0 extends AbstractSet {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final Iterator iterator() {
-        y0 y0Var = this.f38416d;
+        y0 y0Var = this.f38078d;
         Map o10 = y0Var.o();
         if (o10 != null) {
             return o10.entrySet().iterator();
@@ -53,29 +53,29 @@ final class s0 extends AbstractSet {
         Object[] b10;
         Object[] c10;
         int i10;
-        Map o10 = this.f38416d.o();
+        Map o10 = this.f38078d.o();
         if (o10 != null) {
             return o10.entrySet().remove(obj);
         }
         if (obj instanceof Map.Entry) {
             Map.Entry entry = (Map.Entry) obj;
-            y0 y0Var = this.f38416d;
+            y0 y0Var = this.f38078d;
             if (!y0Var.u()) {
                 y10 = y0Var.y();
                 Object key = entry.getKey();
                 Object value = entry.getValue();
-                y0 y0Var2 = this.f38416d;
+                y0 y0Var2 = this.f38078d;
                 Object l10 = y0.l(y0Var2);
                 a10 = y0Var2.a();
                 b10 = y0Var2.b();
                 c10 = y0Var2.c();
                 int b11 = z0.b(key, value, y10, l10, a10, b10, c10);
                 if (b11 != -1) {
-                    this.f38416d.t(b11, y10);
-                    y0 y0Var3 = this.f38416d;
-                    i10 = y0Var3.f38621q;
-                    y0Var3.f38621q = i10 - 1;
-                    this.f38416d.r();
+                    this.f38078d.t(b11, y10);
+                    y0 y0Var3 = this.f38078d;
+                    i10 = y0Var3.f38283q;
+                    y0Var3.f38283q = i10 - 1;
+                    this.f38078d.r();
                     return true;
                 }
                 return false;
@@ -87,6 +87,6 @@ final class s0 extends AbstractSet {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f38416d.size();
+        return this.f38078d.size();
     }
 }

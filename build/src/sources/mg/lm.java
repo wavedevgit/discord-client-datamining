@@ -7,37 +7,37 @@ public final class lm extends hf.a {
     public static final Parcelable.Creator<lm> CREATOR = new mm();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f38250d;
+    private final int f37912d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f38251e;
+    private final int f37913e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f38252i;
+    private final int f37914i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f38253o;
+    private final int f37915o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final long f38254p;
+    private final long f37916p;
 
     public lm(int i10, int i11, int i12, int i13, long j10) {
-        this.f38250d = i10;
-        this.f38251e = i11;
-        this.f38252i = i12;
-        this.f38253o = i13;
-        this.f38254p = j10;
+        this.f37912d = i10;
+        this.f37913e = i11;
+        this.f37914i = i12;
+        this.f37915o = i13;
+        this.f37916p = j10;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        int i11 = this.f38250d;
+        int i11 = this.f37912d;
         int a10 = hf.c.a(parcel);
         hf.c.l(parcel, 1, i11);
-        hf.c.l(parcel, 2, this.f38251e);
-        hf.c.l(parcel, 3, this.f38252i);
-        hf.c.l(parcel, 4, this.f38253o);
-        hf.c.o(parcel, 5, this.f38254p);
+        hf.c.l(parcel, 2, this.f37913e);
+        hf.c.l(parcel, 3, this.f37914i);
+        hf.c.l(parcel, 4, this.f37915o);
+        hf.c.o(parcel, 5, this.f37916p);
         hf.c.b(parcel, a10);
     }
 }

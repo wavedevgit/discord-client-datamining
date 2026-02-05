@@ -41,18 +41,18 @@ public final class StepStyles_UiStepFillColorJsonAdapter extends h {
     @NotNull
     public StepStyles.UiStepFillColor fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.SimpleElementColor simpleElementColor = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.UiStepFillColor(simpleElementColor);
     }
 
@@ -60,8 +60,8 @@ public final class StepStyles_UiStepFillColorJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.UiStepFillColor uiStepFillColor) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (uiStepFillColor != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, uiStepFillColor.getBase());
             writer.E();
             return;

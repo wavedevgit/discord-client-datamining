@@ -1,51 +1,37 @@
 package ft;
+
+import gt.j2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KClass;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class b {
-    public static final byte a(char c10) {
-        if (c10 < '~') {
-            return k.f24741c[c10];
+    public static final KClass a(SerialDescriptor serialDescriptor) {
+        Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
+        if (serialDescriptor instanceof c) {
+            return ((c) serialDescriptor).f23471b;
         }
-        return (byte) 0;
+        if (serialDescriptor instanceof j2) {
+            return a(((j2) serialDescriptor).j());
+        }
+        return null;
     }
 
-    public static final char b(int i10) {
-        if (i10 < 117) {
-            return k.f24740b[i10];
+    public static final SerialDescriptor b(kt.b bVar, SerialDescriptor descriptor) {
+        KSerializer c10;
+        Intrinsics.checkNotNullParameter(bVar, "<this>");
+        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
+        KClass a10 = a(descriptor);
+        if (a10 == null || (c10 = kt.b.c(bVar, a10, null, 2, null)) == null) {
+            return null;
         }
-        return (char) 0;
+        return c10.getDescriptor();
     }
 
-    public static final String c(byte b10) {
-        if (b10 == 1) {
-            return "quotation mark '\"'";
-        }
-        if (b10 == 2) {
-            return "string escape sequence '\\'";
-        }
-        if (b10 == 4) {
-            return "comma ','";
-        }
-        if (b10 == 5) {
-            return "colon ':'";
-        }
-        if (b10 == 6) {
-            return "start of the object '{'";
-        }
-        if (b10 == 7) {
-            return "end of the object '}'";
-        }
-        if (b10 == 8) {
-            return "start of the array '['";
-        }
-        if (b10 == 9) {
-            return "end of the array ']'";
-        }
-        if (b10 == 10) {
-            return "end of the input";
-        }
-        if (b10 == Byte.MAX_VALUE) {
-            return "invalid token";
-        }
-        return "valid token";
+    public static final SerialDescriptor c(SerialDescriptor serialDescriptor, KClass context) {
+        Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
+        Intrinsics.checkNotNullParameter(context, "context");
+        return new c(serialDescriptor, context);
     }
 }

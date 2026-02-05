@@ -10,15 +10,15 @@ import r.a0;
 public class ImageCaptureFlashNotFireQuirk implements UseTorchAsFlashQuirk {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f1921a = Arrays.asList("itel w6004");
+    private static final List f2033a = Arrays.asList("itel w6004");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final List f1922b = Arrays.asList("sm-j700f", "sm-j710f");
+    private static final List f2034b = Arrays.asList("sm-j700f", "sm-j710f");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean c(a0 a0Var) {
         boolean z10;
-        List list = f1922b;
+        List list = f2034b;
         String str = Build.MODEL;
         Locale locale = Locale.US;
         if (list.contains(str.toLowerCase(locale)) && ((Integer) a0Var.a(CameraCharacteristics.LENS_FACING)).intValue() == 0) {
@@ -26,7 +26,7 @@ public class ImageCaptureFlashNotFireQuirk implements UseTorchAsFlashQuirk {
         } else {
             z10 = false;
         }
-        boolean contains = f1921a.contains(str.toLowerCase(locale));
+        boolean contains = f2033a.contains(str.toLowerCase(locale));
         if (!z10 && !contains) {
             return false;
         }

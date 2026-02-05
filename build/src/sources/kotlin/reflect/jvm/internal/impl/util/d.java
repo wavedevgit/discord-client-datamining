@@ -6,7 +6,7 @@ import kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor;
 class d implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final d f35267d = new d();
+    public static final d f34791d = new d();
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {

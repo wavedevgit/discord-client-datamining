@@ -18,35 +18,35 @@ import w0.n;
 public final class c implements n {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Choreographer f24846d;
+    private final Choreographer f23545d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final g1.a f24847e;
+    private final g1.a f23546e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ g1.a f24848d;
+        final /* synthetic */ g1.a f23547d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Choreographer.FrameCallback f24849e;
+        final /* synthetic */ Choreographer.FrameCallback f23548e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(g1.a aVar, Choreographer.FrameCallback frameCallback) {
             super(1);
-            this.f24848d = aVar;
-            this.f24849e = frameCallback;
+            this.f23547d = aVar;
+            this.f23548e = frameCallback;
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
 
         public final void invoke(Throwable th2) {
-            this.f24848d.x2(this.f24849e);
+            this.f23547d.x2(this.f23548e);
         }
     }
 
@@ -54,54 +54,54 @@ public final class c implements n {
     static final class b extends Lambda implements Function1 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Choreographer.FrameCallback f24851e;
+        final /* synthetic */ Choreographer.FrameCallback f23550e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Choreographer.FrameCallback frameCallback) {
             super(1);
-            this.f24851e = frameCallback;
+            this.f23550e = frameCallback;
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
 
         public final void invoke(Throwable th2) {
-            c.this.b().removeFrameCallback(this.f24851e);
+            c.this.b().removeFrameCallback(this.f23550e);
         }
     }
 
     /* renamed from: g1.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    static final class Choreographer$FrameCallbackC0333c implements Choreographer.FrameCallback {
+    static final class Choreographer$FrameCallbackC0335c implements Choreographer.FrameCallback {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ CancellableContinuation f24852d;
+        final /* synthetic */ CancellableContinuation f23551d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ c f24853e;
+        final /* synthetic */ c f23552e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function1 f24854i;
+        final /* synthetic */ Function1 f23553i;
 
-        Choreographer$FrameCallbackC0333c(CancellableContinuation cancellableContinuation, c cVar, Function1 function1) {
-            this.f24852d = cancellableContinuation;
-            this.f24853e = cVar;
-            this.f24854i = function1;
+        Choreographer$FrameCallbackC0335c(CancellableContinuation cancellableContinuation, c cVar, Function1 function1) {
+            this.f23551d = cancellableContinuation;
+            this.f23552e = cVar;
+            this.f23553i = function1;
         }
 
         @Override // android.view.Choreographer.FrameCallback
         public final void doFrame(long j10) {
             Object b10;
-            CancellableContinuation cancellableContinuation = this.f24852d;
-            Function1 function1 = this.f24854i;
+            CancellableContinuation cancellableContinuation = this.f23551d;
+            Function1 function1 = this.f23553i;
             try {
-                Result.a aVar = Result.f32461e;
+                Result.a aVar = Result.f31985e;
                 b10 = Result.b(function1.invoke(Long.valueOf(j10)));
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f32461e;
+                Result.a aVar2 = Result.f31985e;
                 b10 = Result.b(kotlin.c.a(th2));
             }
             cancellableContinuation.resumeWith(b10);
@@ -110,36 +110,13 @@ public final class c implements n {
 
     public c(Choreographer choreographer, g1.a aVar) {
         Intrinsics.checkNotNullParameter(choreographer, "choreographer");
-        this.f24846d = choreographer;
-        this.f24847e = aVar;
+        this.f23545d = choreographer;
+        this.f23546e = aVar;
     }
 
-    @Override // w0.n
-    public Object A0(Function1 function1, Continuation continuation) {
-        g1.a aVar = this.f24847e;
-        if (aVar == null) {
-            CoroutineContext.Element l10 = continuation.getContext().l(d.f32536g);
-            if (l10 instanceof g1.a) {
-                aVar = (g1.a) l10;
-            } else {
-                aVar = null;
-            }
-        }
-        e eVar = new e(rr.b.c(continuation), 1);
-        eVar.H();
-        Choreographer$FrameCallbackC0333c choreographer$FrameCallbackC0333c = new Choreographer$FrameCallbackC0333c(eVar, this, function1);
-        if (aVar != null && Intrinsics.areEqual(aVar.r2(), b())) {
-            aVar.w2(choreographer$FrameCallbackC0333c);
-            eVar.c(new a(aVar, choreographer$FrameCallbackC0333c));
-        } else {
-            b().postFrameCallback(choreographer$FrameCallbackC0333c);
-            eVar.c(new b(choreographer$FrameCallbackC0333c));
-        }
-        Object B = eVar.B();
-        if (B == rr.b.f()) {
-            g.c(continuation);
-        }
-        return B;
+    @Override // kotlin.coroutines.CoroutineContext
+    public Object A1(Object obj, Function2 function2) {
+        return n.a.a(this, obj, function2);
     }
 
     @Override // kotlin.coroutines.CoroutineContext
@@ -147,22 +124,45 @@ public final class c implements n {
         return n.a.d(this, coroutineContext);
     }
 
-    public final Choreographer b() {
-        return this.f24846d;
+    @Override // w0.n
+    public Object W(Function1 function1, Continuation continuation) {
+        g1.a aVar = this.f23546e;
+        if (aVar == null) {
+            CoroutineContext.Element k10 = continuation.getContext().k(d.f32060g);
+            if (k10 instanceof g1.a) {
+                aVar = (g1.a) k10;
+            } else {
+                aVar = null;
+            }
+        }
+        e eVar = new e(ur.b.c(continuation), 1);
+        eVar.H();
+        Choreographer$FrameCallbackC0335c choreographer$FrameCallbackC0335c = new Choreographer$FrameCallbackC0335c(eVar, this, function1);
+        if (aVar != null && Intrinsics.areEqual(aVar.r2(), b())) {
+            aVar.w2(choreographer$FrameCallbackC0335c);
+            eVar.c(new a(aVar, choreographer$FrameCallbackC0335c));
+        } else {
+            b().postFrameCallback(choreographer$FrameCallbackC0335c);
+            eVar.c(new b(choreographer$FrameCallbackC0335c));
+        }
+        Object B = eVar.B();
+        if (B == ur.b.f()) {
+            g.c(continuation);
+        }
+        return B;
     }
 
-    @Override // kotlin.coroutines.CoroutineContext
-    public CoroutineContext e1(CoroutineContext.b bVar) {
-        return n.a.c(this, bVar);
+    public final Choreographer b() {
+        return this.f23545d;
     }
 
     @Override // kotlin.coroutines.CoroutineContext.Element, kotlin.coroutines.CoroutineContext
-    public CoroutineContext.Element l(CoroutineContext.b bVar) {
+    public CoroutineContext.Element k(CoroutineContext.b bVar) {
         return n.a.b(this, bVar);
     }
 
     @Override // kotlin.coroutines.CoroutineContext
-    public Object y1(Object obj, Function2 function2) {
-        return n.a.a(this, obj, function2);
+    public CoroutineContext x1(CoroutineContext.b bVar) {
+        return n.a.c(this, bVar);
     }
 }

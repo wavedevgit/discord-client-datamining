@@ -3,7 +3,7 @@ package ng;
 final class hb extends jb {
 
     /* renamed from: t  reason: collision with root package name */
-    private static final hb f41190t = new hb("unusedTag");
+    private static final hb f40650t = new hb("unusedTag");
 
     private hb(String str) {
         super();
@@ -19,10 +19,10 @@ final class hb extends jb {
     }
 
     @Override // ng.jb
-    public final void l(long j10) {
+    public final void k(long j10) {
     }
 
     @Override // ng.jb
-    public final void n(long j10) {
+    public final void m(long j10) {
     }
 }

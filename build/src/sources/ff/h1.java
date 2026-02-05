@@ -1,65 +1,51 @@
 package ff;
 
 import android.os.Bundle;
-/* JADX INFO: Access modifiers changed from: package-private */
+import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class h1 implements Runnable {
+final class h1 implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ g f23914d;
+    final /* synthetic */ g f22939d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ String f23915e;
+    final /* synthetic */ String f22940e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ i1 f23916i;
+    final /* synthetic */ i1 f22941i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h1(i1 i1Var, g gVar, String str) {
-        this.f23914d = gVar;
-        this.f23915e = str;
-        this.f23916i = i1Var;
+        this.f22939d = gVar;
+        this.f22940e = str;
+        Objects.requireNonNull(i1Var);
+        this.f22941i = i1Var;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
-        int i10;
-        int i11;
-        int i12;
-        int i13;
-        int i14;
         Bundle bundle;
-        Bundle bundle2;
-        Bundle bundle3;
-        i1 i1Var = this.f23916i;
-        i10 = i1Var.f23924b;
-        if (i10 > 0) {
-            g gVar = this.f23914d;
-            bundle = i1Var.f23925c;
-            if (bundle != null) {
-                String str = this.f23915e;
-                bundle3 = i1Var.f23925c;
-                bundle2 = bundle3.getBundle(str);
+        i1 i1Var = this.f22941i;
+        if (i1Var.k() > 0) {
+            g gVar = this.f22939d;
+            if (i1Var.l() != null) {
+                bundle = i1Var.l().getBundle(this.f22940e);
             } else {
-                bundle2 = null;
+                bundle = null;
             }
-            gVar.f(bundle2);
+            gVar.f(bundle);
         }
-        i11 = this.f23916i.f23924b;
-        if (i11 >= 2) {
-            this.f23914d.j();
+        if (i1Var.k() >= 2) {
+            this.f22939d.j();
         }
-        i12 = this.f23916i.f23924b;
-        if (i12 >= 3) {
-            this.f23914d.h();
+        if (i1Var.k() >= 3) {
+            this.f22939d.h();
         }
-        i13 = this.f23916i.f23924b;
-        if (i13 >= 4) {
-            this.f23914d.k();
+        if (i1Var.k() >= 4) {
+            this.f22939d.k();
         }
-        i14 = this.f23916i.f23924b;
-        if (i14 >= 5) {
-            this.f23914d.g();
+        if (i1Var.k() >= 5) {
+            this.f22939d.g();
         }
     }
 }

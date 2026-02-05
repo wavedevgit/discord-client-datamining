@@ -11,10 +11,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f0 extends j0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f10365d = new a(null);
+    public static final a f10750d = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private final AssetManager f10366c;
+    private final AssetManager f10751c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -41,13 +41,13 @@ public final class f0 extends j0 {
         Intrinsics.checkNotNullParameter(executor, "executor");
         Intrinsics.checkNotNullParameter(pooledByteBufferFactory, "pooledByteBufferFactory");
         Intrinsics.checkNotNullParameter(assetManager, "assetManager");
-        this.f10366c = assetManager;
+        this.f10751c = assetManager;
     }
 
     private final int g(ImageRequest imageRequest) {
         AssetFileDescriptor assetFileDescriptor = null;
         try {
-            assetFileDescriptor = this.f10366c.openFd(f10365d.b(imageRequest));
+            assetFileDescriptor = this.f10751c.openFd(f10750d.b(imageRequest));
             int length = (int) assetFileDescriptor.getLength();
             try {
                 assetFileDescriptor.close();
@@ -77,7 +77,7 @@ public final class f0 extends j0 {
     @Override // com.facebook.imagepipeline.producers.j0
     protected sa.k d(ImageRequest imageRequest) {
         Intrinsics.checkNotNullParameter(imageRequest, "imageRequest");
-        return e(this.f10366c.open(f10365d.b(imageRequest), 2), g(imageRequest));
+        return e(this.f10751c.open(f10750d.b(imageRequest), 2), g(imageRequest));
     }
 
     @Override // com.facebook.imagepipeline.producers.j0

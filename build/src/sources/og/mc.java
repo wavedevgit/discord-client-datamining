@@ -7,31 +7,31 @@ public final class mc extends hf.a {
     public static final Parcelable.Creator<mc> CREATOR = new nd();
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f43238d;
+    public final int f43144d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final float f43239e;
+    public final float f43145e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final float f43240i;
+    public final float f43146i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final int f43241o;
+    public final int f43147o;
 
     public mc(int i10, float f10, float f11, int i11) {
-        this.f43238d = i10;
-        this.f43239e = f10;
-        this.f43240i = f11;
-        this.f43241o = i11;
+        this.f43144d = i10;
+        this.f43145e = f10;
+        this.f43146i = f11;
+        this.f43147o = i11;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 1, this.f43238d);
-        hf.c.j(parcel, 2, this.f43239e);
-        hf.c.j(parcel, 3, this.f43240i);
-        hf.c.l(parcel, 4, this.f43241o);
+        hf.c.l(parcel, 1, this.f43144d);
+        hf.c.j(parcel, 2, this.f43145e);
+        hf.c.j(parcel, 3, this.f43146i);
+        hf.c.l(parcel, 4, this.f43147o);
         hf.c.b(parcel, a10);
     }
 }

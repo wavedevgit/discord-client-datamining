@@ -15,11 +15,11 @@ public interface q {
 
     boolean isClosed();
 
-    void l(int i10, q qVar, int i11, int i12);
+    void k(int i10, q qVar, int i11, int i12);
 
-    int o(int i10, byte[] bArr, int i11, int i12);
+    int p(int i10, byte[] bArr, int i11, int i12);
 
-    ByteBuffer p();
+    ByteBuffer q();
 
-    byte w(int i10);
+    byte x(int i10);
 }

@@ -1,20 +1,32 @@
 package qg;
 
-import java.io.Closeable;
+import android.os.Binder;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b implements Closeable {
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final b f47813d = new b(false, null);
-
-    private b(boolean z10, d dVar) {
+public abstract class b extends Binder implements IInterface {
+    /* JADX INFO: Access modifiers changed from: protected */
+    public b(String str) {
+        attachInterface(this, str);
     }
 
-    public static b a(boolean z10, c cVar) {
-        return f47813d;
+    protected abstract boolean e(int i10, Parcel parcel, Parcel parcel2, int i11);
+
+    @Override // android.os.Binder
+    public final boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
+        if (i10 > 16777215) {
+            if (super.onTransact(i10, parcel, parcel2, i11)) {
+                return true;
+            }
+        } else {
+            parcel.enforceInterface(getInterfaceDescriptor());
+        }
+        return e(i10, parcel, parcel2, i11);
     }
 
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public final void close() {
+    @Override // android.os.IInterface
+    public final IBinder asBinder() {
+        return this;
     }
 }

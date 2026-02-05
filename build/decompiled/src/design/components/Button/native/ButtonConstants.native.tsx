@@ -87,14 +87,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 3;
     var2.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = var4;
     var3 = function arg0() {
-        _fun37586: for (var _fun37586_ip = 0;;) switch (_fun37586_ip) {
+        _fun37585: for (var _fun37585_ip = 0;;) switch (_fun37585_ip) {
             case 0:
                 var0 = 'text-sm/semibold';
                 var2 = 'lg';
                 var1 = arg0;
                 if (!(var2 === var1)) {
-                    _fun37586_ip = 21;
-                    continue _fun37586
+                    _fun37585_ip = 21;
+                    continue _fun37585
                 }
             case 17:
                 var0 = 'text-md/semibold';

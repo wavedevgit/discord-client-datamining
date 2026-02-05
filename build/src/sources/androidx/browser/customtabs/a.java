@@ -5,76 +5,76 @@ import android.os.Bundle;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Integer f1886a;
+    public final Integer f1998a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Integer f1887b;
+    public final Integer f1999b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Integer f1888c;
+    public final Integer f2000c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Integer f1889d;
+    public final Integer f2001d;
 
     /* renamed from: androidx.browser.customtabs.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0022a {
+    public static final class C0023a {
 
         /* renamed from: a  reason: collision with root package name */
-        private Integer f1890a;
+        private Integer f2002a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Integer f1891b;
+        private Integer f2003b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Integer f1892c;
+        private Integer f2004c;
 
         /* renamed from: d  reason: collision with root package name */
-        private Integer f1893d;
+        private Integer f2005d;
 
         public a a() {
-            return new a(this.f1890a, this.f1891b, this.f1892c, this.f1893d);
+            return new a(this.f2002a, this.f2003b, this.f2004c, this.f2005d);
         }
 
-        public C0022a b(int i10) {
-            this.f1892c = Integer.valueOf(i10 | (-16777216));
+        public C0023a b(int i10) {
+            this.f2004c = Integer.valueOf(i10 | (-16777216));
             return this;
         }
 
-        public C0022a c(int i10) {
-            this.f1891b = Integer.valueOf(i10);
+        public C0023a c(int i10) {
+            this.f2003b = Integer.valueOf(i10);
             return this;
         }
 
-        public C0022a d(int i10) {
-            this.f1890a = Integer.valueOf(i10 | (-16777216));
+        public C0023a d(int i10) {
+            this.f2002a = Integer.valueOf(i10 | (-16777216));
             return this;
         }
     }
 
     a(Integer num, Integer num2, Integer num3, Integer num4) {
-        this.f1886a = num;
-        this.f1887b = num2;
-        this.f1888c = num3;
-        this.f1889d = num4;
+        this.f1998a = num;
+        this.f1999b = num2;
+        this.f2000c = num3;
+        this.f2001d = num4;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Bundle a() {
         Bundle bundle = new Bundle();
-        Integer num = this.f1886a;
+        Integer num = this.f1998a;
         if (num != null) {
             bundle.putInt("android.support.customtabs.extra.TOOLBAR_COLOR", num.intValue());
         }
-        Integer num2 = this.f1887b;
+        Integer num2 = this.f1999b;
         if (num2 != null) {
             bundle.putInt("android.support.customtabs.extra.SECONDARY_TOOLBAR_COLOR", num2.intValue());
         }
-        Integer num3 = this.f1888c;
+        Integer num3 = this.f2000c;
         if (num3 != null) {
             bundle.putInt("androidx.browser.customtabs.extra.NAVIGATION_BAR_COLOR", num3.intValue());
         }
-        Integer num4 = this.f1889d;
+        Integer num4 = this.f2001d;
         if (num4 != null) {
             bundle.putInt("androidx.browser.customtabs.extra.NAVIGATION_BAR_DIVIDER_COLOR", num4.intValue());
         }

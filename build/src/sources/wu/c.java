@@ -2,52 +2,48 @@ package wu;
 
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
+import zu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface c {
+public final class c implements qu.b, zu.d {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        private static Object a(c cVar, Object obj) {
-            String str;
-            String obj2;
-            Object intOrNull;
-            Object obj3 = null;
-            if (obj instanceof String) {
-                str = (String) obj;
-            } else {
-                str = null;
-            }
-            if (str != null && (intOrNull = StringsKt.toIntOrNull(str)) != null) {
-                obj3 = intOrNull;
-            } else if (str != null) {
-                obj3 = StringsKt.p(str);
-            }
-            if (obj3 != null && (obj2 = obj3.toString()) != null) {
-                return obj2;
-            }
-            return obj;
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static final c f53316a = new c();
 
-        private static Object b(c cVar, Object obj) {
-            if (obj instanceof List) {
-                List list = (List) obj;
-                if (list.size() == 1) {
-                    return b(cVar, CollectionsKt.firstOrNull(list));
-                }
-            }
-            return obj;
-        }
-
-        public static Object c(c cVar, Object obj) {
-            Object b10 = b(cVar, obj);
-            if (!Intrinsics.areEqual(b10, obj)) {
-                return new b(a(cVar, b10));
-            }
-            return a(cVar, obj);
-        }
+    private c() {
     }
 
-    Object e(Object obj);
+    private final Object a(List list) {
+        int size = list.size();
+        if (size == 0) {
+            return null;
+        }
+        if (size != 1) {
+            if (size != 2) {
+                if (size != 3) {
+                    if (b(CollectionsKt.firstOrNull(list))) {
+                        return vv.c.b(list);
+                    }
+                    return a(list.subList(2, list.size()));
+                } else if (b(CollectionsKt.firstOrNull(list))) {
+                    return vv.c.b(list);
+                } else {
+                    return vv.c.c(list);
+                }
+            } else if (!b(CollectionsKt.firstOrNull(list))) {
+                return null;
+            } else {
+                return vv.c.b(list);
+            }
+        }
+        return CollectionsKt.firstOrNull(list);
+    }
+
+    public boolean b(Object obj) {
+        return d.a.a(this, obj);
+    }
+
+    @Override // qu.b
+    public Object f(Object obj, Object obj2) {
+        return a(vv.a.c(obj));
+    }
 }

@@ -2,61 +2,61 @@ package net.time4j.calendar;
 
 import java.text.ParsePosition;
 import java.util.Locale;
-import mt.x;
-import mt.z;
 import net.time4j.f0;
-import nt.t;
-import nt.v;
+import pt.x;
+import pt.z;
+import qt.t;
+import qt.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public enum k implements mt.i {
+public enum k implements pt.i {
     DANGI;
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient mt.p f40380d = new b();
+    private final transient pt.p f39840d = new b();
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient mt.p f40381e = new e();
+    private final transient pt.p f39841e = new e();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class b extends nt.d implements t {
+    private static class b extends qt.d implements t {
         private static final long serialVersionUID = -5179188137244162427L;
 
         private Object readResolve() {
             return k.DANGI.a();
         }
 
-        @Override // mt.p
-        public boolean C() {
+        @Override // pt.p
+        public boolean B() {
             return false;
         }
 
-        @Override // mt.e
+        @Override // pt.e
         protected boolean E() {
             return true;
         }
 
-        @Override // mt.p
+        @Override // pt.p
         /* renamed from: F */
-        public k f() {
+        public k e() {
             return k.DANGI;
         }
 
-        @Override // mt.p
+        @Override // pt.p
         /* renamed from: G */
         public k A() {
             return k.DANGI;
         }
 
-        @Override // nt.t
+        @Override // qt.t
         /* renamed from: H */
-        public k j(CharSequence charSequence, ParsePosition parsePosition, mt.d dVar) {
-            Locale locale = (Locale) dVar.b(nt.a.f42028c, Locale.ROOT);
-            boolean booleanValue = ((Boolean) dVar.b(nt.a.f42034i, Boolean.TRUE)).booleanValue();
-            boolean booleanValue2 = ((Boolean) dVar.b(nt.a.f42035j, Boolean.FALSE)).booleanValue();
+        public k t(CharSequence charSequence, ParsePosition parsePosition, pt.d dVar) {
+            Locale locale = (Locale) dVar.a(qt.a.f48088c, Locale.ROOT);
+            boolean booleanValue = ((Boolean) dVar.a(qt.a.f48094i, Boolean.TRUE)).booleanValue();
+            boolean booleanValue2 = ((Boolean) dVar.a(qt.a.f48095j, Boolean.FALSE)).booleanValue();
             int index = parsePosition.getIndex();
             k kVar = k.DANGI;
-            String d10 = kVar.d(locale, (v) dVar.b(nt.a.f42032g, v.WIDE));
+            String d10 = kVar.d(locale, (v) dVar.a(qt.a.f48092g, v.WIDE));
             int max = Math.max(Math.min(d10.length() + index, charSequence.length()), index);
             if (max > index) {
                 String charSequence2 = charSequence.subSequence(index, max).toString();
@@ -74,31 +74,31 @@ public enum k implements mt.i {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // mt.e
+        @Override // pt.e
         public z c(x xVar) {
-            if (!xVar.E(f0.f40491z)) {
+            if (!xVar.E(f0.f39951z)) {
                 return null;
             }
             return new c();
         }
 
-        @Override // mt.e, mt.p
+        @Override // pt.e, pt.p
         public char d() {
             return 'G';
         }
 
-        @Override // mt.p
+        @Override // pt.p
         public Class getType() {
             return k.class;
         }
 
-        @Override // nt.t
-        public void s(mt.o oVar, Appendable appendable, mt.d dVar) {
-            appendable.append(k.DANGI.d((Locale) dVar.b(nt.a.f42028c, Locale.ROOT), (v) dVar.b(nt.a.f42032g, v.WIDE)));
+        @Override // qt.t
+        public void s(pt.o oVar, Appendable appendable, pt.d dVar) {
+            appendable.append(k.DANGI.d((Locale) dVar.a(qt.a.f48088c, Locale.ROOT), (v) dVar.a(qt.a.f48092g, v.WIDE)));
         }
 
-        @Override // mt.p
-        public boolean y() {
+        @Override // pt.p
+        public boolean z() {
             return true;
         }
 
@@ -112,49 +112,49 @@ public enum k implements mt.i {
         private c() {
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: b */
-        public mt.p a(mt.q qVar) {
+        public pt.p a(pt.q qVar) {
             throw new AbstractMethodError("Never called.");
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: c */
-        public mt.p h(mt.q qVar) {
+        public pt.p h(pt.q qVar) {
             throw new AbstractMethodError("Never called.");
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: d */
-        public k l(mt.q qVar) {
+        public k k(pt.q qVar) {
             return k.DANGI;
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: e */
-        public k r(mt.q qVar) {
+        public k r(pt.q qVar) {
             return k.DANGI;
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: f */
-        public k z(mt.q qVar) {
+        public k y(pt.q qVar) {
             return k.DANGI;
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: g */
-        public boolean q(mt.q qVar, k kVar) {
+        public boolean p(pt.q qVar, k kVar) {
             if (kVar == k.DANGI) {
                 return true;
             }
             return false;
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: i */
-        public mt.q x(mt.q qVar, k kVar, boolean z10) {
-            if (q(qVar, kVar)) {
+        public pt.q x(pt.q qVar, k kVar, boolean z10) {
+            if (p(qVar, kVar)) {
                 return qVar;
             }
             throw new IllegalArgumentException("Invalid Korean era: " + kVar);
@@ -166,62 +166,62 @@ public enum k implements mt.i {
         private d() {
         }
 
-        private int d(mt.q qVar) {
-            return ((f0) qVar.o(f0.f40491z)).f() + 2333;
+        private int d(pt.q qVar) {
+            return ((f0) qVar.v(f0.f39951z)).f() + 2333;
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: b */
-        public mt.p a(mt.q qVar) {
+        public pt.p a(pt.q qVar) {
             throw new AbstractMethodError("Never called.");
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: c */
-        public mt.p h(mt.q qVar) {
+        public pt.p h(pt.q qVar) {
             throw new AbstractMethodError("Never called.");
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: e */
-        public Integer l(mt.q qVar) {
+        public Integer k(pt.q qVar) {
             return 1000002332;
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: f */
-        public Integer r(mt.q qVar) {
+        public Integer r(pt.q qVar) {
             return -999997666;
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: g */
-        public Integer z(mt.q qVar) {
+        public Integer y(pt.q qVar) {
             return Integer.valueOf(d(qVar));
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: i */
-        public boolean q(mt.q qVar, Integer num) {
+        public boolean p(pt.q qVar, Integer num) {
             if (num == null) {
                 return false;
             }
             int intValue = r(qVar).intValue();
-            int intValue2 = l(qVar).intValue();
+            int intValue2 = k(qVar).intValue();
             if (num.intValue() < intValue || num.intValue() > intValue2) {
                 return false;
             }
             return true;
         }
 
-        @Override // mt.z
+        @Override // pt.z
         /* renamed from: j */
-        public mt.q x(mt.q qVar, Integer num, boolean z10) {
+        public pt.q x(pt.q qVar, Integer num, boolean z10) {
             if (num != null) {
-                if (q(qVar, num)) {
+                if (p(qVar, num)) {
                     int d10 = d(qVar);
-                    net.time4j.e eVar = f0.f40491z;
-                    return qVar.E(eVar, (f0) ((f0) qVar.o(eVar)).K(num.intValue() - d10, net.time4j.f.f40469o));
+                    net.time4j.e eVar = f0.f39951z;
+                    return qVar.E(eVar, (f0) ((f0) qVar.v(eVar)).K(num.intValue() - d10, net.time4j.f.f39929o));
                 }
                 throw new IllegalArgumentException("Invalid year of era: " + num);
             }
@@ -230,56 +230,56 @@ public enum k implements mt.i {
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class e extends nt.d {
+    private static class e extends qt.d {
         private static final long serialVersionUID = -7864513245908399367L;
 
         private Object readResolve() {
             return k.DANGI.e();
         }
 
-        @Override // mt.p
-        public boolean C() {
+        @Override // pt.p
+        public boolean B() {
             return false;
         }
 
-        @Override // mt.e
+        @Override // pt.e
         protected boolean E() {
             return true;
         }
 
-        @Override // mt.p
+        @Override // pt.p
         /* renamed from: F */
-        public Integer f() {
+        public Integer e() {
             return 5332;
         }
 
-        @Override // mt.p
+        @Override // pt.p
         /* renamed from: G */
         public Integer A() {
             return 3978;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // mt.e
+        @Override // pt.e
         public z c(x xVar) {
-            if (!xVar.E(f0.f40491z)) {
+            if (!xVar.E(f0.f39951z)) {
                 return null;
             }
             return new d();
         }
 
-        @Override // mt.e, mt.p
+        @Override // pt.e, pt.p
         public char d() {
             return 'y';
         }
 
-        @Override // mt.p
+        @Override // pt.p
         public Class getType() {
             return Integer.class;
         }
 
-        @Override // mt.p
-        public boolean y() {
+        @Override // pt.p
+        public boolean z() {
             return true;
         }
 
@@ -292,16 +292,16 @@ public enum k implements mt.i {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public mt.p a() {
-        return this.f40380d;
+    public pt.p a() {
+        return this.f39840d;
     }
 
     public String d(Locale locale, v vVar) {
-        return nt.b.c("dangi", locale).b(vVar).f(this);
+        return qt.b.c("dangi", locale).b(vVar).f(this);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public mt.p e() {
-        return this.f40381e;
+    public pt.p e() {
+        return this.f39841e;
     }
 }

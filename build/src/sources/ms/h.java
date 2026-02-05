@@ -1,43 +1,46 @@
 package ms;
 
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function2;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract /* synthetic */ class h {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a implements Flow {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Object f39177d;
-
-        public a(Object obj) {
-            this.f39177d = obj;
-        }
-
-        @Override // kotlinx.coroutines.flow.Flow
-        public Object collect(FlowCollector flowCollector, Continuation continuation) {
-            Object emit = flowCollector.emit(this.f39177d, continuation);
-            if (emit == rr.b.f()) {
-                return emit;
+    public static final Object a(CoroutineContext coroutineContext, Function2 function2) {
+        p0 p0Var;
+        p0 a10;
+        CoroutineContext k10;
+        Thread currentThread = Thread.currentThread();
+        kotlin.coroutines.d dVar = (kotlin.coroutines.d) coroutineContext.k(kotlin.coroutines.d.f32060g);
+        if (dVar == null) {
+            a10 = l1.f38926a.b();
+            k10 = x.k(v0.f38956d, coroutineContext.V0(a10));
+        } else {
+            p0 p0Var2 = null;
+            if (dVar instanceof p0) {
+                p0Var = (p0) dVar;
+            } else {
+                p0Var = null;
             }
-            return Unit.f32464a;
+            if (p0Var != null) {
+                if (p0Var.v2()) {
+                    p0Var2 = p0Var;
+                }
+                if (p0Var2 != null) {
+                    a10 = p0Var2;
+                    k10 = x.k(v0.f38956d, coroutineContext);
+                }
+            }
+            a10 = l1.f38926a.a();
+            k10 = x.k(v0.f38956d, coroutineContext);
         }
+        e eVar = new e(k10, currentThread, a10);
+        eVar.U0(c0.f38909d, eVar, function2);
+        return eVar.W0();
     }
 
-    public static final Flow a(Function2 function2) {
-        return new b(function2, null, 0, null, 14, null);
-    }
-
-    public static final Flow b(Function2 function2) {
-        return new z(function2);
-    }
-
-    public static final Flow c(Object obj) {
-        return new a(obj);
+    public static /* synthetic */ Object b(CoroutineContext coroutineContext, Function2 function2, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            coroutineContext = kotlin.coroutines.e.f32062d;
+        }
+        return g.e(coroutineContext, function2);
     }
 }

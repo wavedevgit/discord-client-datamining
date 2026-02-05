@@ -1,22 +1,23 @@
 package dv;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class a {
 
-    /* renamed from: b  reason: collision with root package name */
-    private int f21086b = 0;
+import dv.b;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public final class a implements qu.b, b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final StringBuilder f21085a = new StringBuilder();
+    public static final a f21269a = new a();
 
-    public void a(CharSequence charSequence) {
-        if (this.f21086b != 0) {
-            this.f21085a.append('\n');
-        }
-        this.f21085a.append(charSequence);
-        this.f21086b++;
+    private a() {
     }
 
-    public String b() {
-        return this.f21085a.toString();
+    public List a(Object obj) {
+        return b.a.d(this, obj);
+    }
+
+    @Override // qu.b
+    public Object f(Object obj, Object obj2) {
+        return CollectionsKt.x0(a(obj), "", null, null, 0, null, null, 62, null);
     }
 }

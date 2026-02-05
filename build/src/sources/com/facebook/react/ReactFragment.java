@@ -81,7 +81,7 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
             return this;
         }
 
-        @lr.c
+        @or.c
         @NotNull
         public final Builder setFabricEnabled(boolean z10) {
             this.fabricEnabled = z10;
@@ -104,7 +104,7 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
             this();
         }
 
-        @lr.c
+        @or.c
         protected static /* synthetic */ void getARG_DISABLE_HOST_LIFECYCLE_EVENTS$annotations() {
         }
 
@@ -123,7 +123,7 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
         }
     }
 
-    @lr.c
+    @or.c
     protected static /* synthetic */ void getReactNativeHost$annotations() {
     }
 
@@ -188,7 +188,7 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
     }
 
     @Override // androidx.fragment.app.Fragment
-    @lr.c
+    @or.c
     public void onActivityResult(int i10, int i11, Intent intent) {
         super.onActivityResult(i10, i11, intent);
         getReactDelegate().onActivityResult(i10, i11, intent, false);
@@ -266,7 +266,7 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
     }
 
     @Override // androidx.fragment.app.Fragment
-    @lr.c
+    @or.c
     public void onRequestPermissionsResult(int i10, @NotNull String[] permissions, @NotNull int[] grantResults) {
         Intrinsics.checkNotNullParameter(permissions, "permissions");
         Intrinsics.checkNotNullParameter(grantResults, "grantResults");

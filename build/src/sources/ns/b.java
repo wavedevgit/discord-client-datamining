@@ -1,129 +1,57 @@
 package ns;
 
-import java.util.Arrays;
-import kotlin.Result;
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
-import kotlin.jvm.internal.Intrinsics;
-import ms.j0;
+import android.os.Build;
+import java.lang.Thread;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import kotlin.coroutines.CoroutineContext;
+import ms.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
+public final class b extends kotlin.coroutines.a implements z {
+    private volatile Object _preHandler;
 
-    /* renamed from: d  reason: collision with root package name */
-    private d[] f41937d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private int f41938e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private int f41939i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private b0 f41940o;
-
-    public static final /* synthetic */ int a(b bVar) {
-        return bVar.f41938e;
+    public b() {
+        super(z.f38962j);
+        this._preHandler = this;
     }
 
-    public static final /* synthetic */ d[] c(b bVar) {
-        return bVar.f41937d;
-    }
-
-    public final j0 d() {
-        b0 b0Var;
-        synchronized (this) {
-            b0Var = this.f41940o;
-            if (b0Var == null) {
-                b0Var = new b0(this.f41938e);
-                this.f41940o = b0Var;
-            }
+    private final Method E1() {
+        Object obj = this._preHandler;
+        if (obj != this) {
+            return (Method) obj;
         }
-        return b0Var;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final d f() {
-        d dVar;
-        b0 b0Var;
-        synchronized (this) {
-            try {
-                d[] dVarArr = this.f41937d;
-                if (dVarArr == null) {
-                    dVarArr = j(2);
-                    this.f41937d = dVarArr;
-                } else if (this.f41938e >= dVarArr.length) {
-                    Object[] copyOf = Arrays.copyOf(dVarArr, dVarArr.length * 2);
-                    Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-                    this.f41937d = (d[]) copyOf;
-                    dVarArr = (d[]) copyOf;
+        Method method = null;
+        try {
+            Method declaredMethod = Thread.class.getDeclaredMethod("getUncaughtExceptionPreHandler", null);
+            if (Modifier.isPublic(declaredMethod.getModifiers())) {
+                if (Modifier.isStatic(declaredMethod.getModifiers())) {
+                    method = declaredMethod;
                 }
-                int i10 = this.f41939i;
-                do {
-                    dVar = dVarArr[i10];
-                    if (dVar == null) {
-                        dVar = g();
-                        dVarArr[i10] = dVar;
-                    }
-                    i10++;
-                    if (i10 >= dVarArr.length) {
-                        i10 = 0;
-                    }
-                    Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot<kotlin.Any>");
-                } while (!dVar.a(this));
-                this.f41939i = i10;
-                this.f41938e++;
-                b0Var = this.f41940o;
-            } catch (Throwable th2) {
-                throw th2;
             }
+        } catch (Throwable unused) {
         }
-        if (b0Var != null) {
-            b0Var.Z(1);
-        }
-        return dVar;
+        this._preHandler = method;
+        return method;
     }
 
-    protected abstract d g();
-
-    protected abstract d[] j(int i10);
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final void k(d dVar) {
-        b0 b0Var;
-        int i10;
-        Continuation[] b10;
-        synchronized (this) {
-            try {
-                int i11 = this.f41938e - 1;
-                this.f41938e = i11;
-                b0Var = this.f41940o;
-                if (i11 == 0) {
-                    this.f41939i = 0;
-                }
-                Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot<kotlin.Any>");
-                b10 = dVar.b(this);
-            } catch (Throwable th2) {
-                throw th2;
+    @Override // ms.z
+    public void S0(CoroutineContext coroutineContext, Throwable th2) {
+        Object obj;
+        int i10 = Build.VERSION.SDK_INT;
+        if (26 <= i10 && i10 < 28) {
+            Method E1 = E1();
+            Thread.UncaughtExceptionHandler uncaughtExceptionHandler = null;
+            if (E1 != null) {
+                obj = E1.invoke(null, null);
+            } else {
+                obj = null;
+            }
+            if (obj instanceof Thread.UncaughtExceptionHandler) {
+                uncaughtExceptionHandler = (Thread.UncaughtExceptionHandler) obj;
+            }
+            if (uncaughtExceptionHandler != null) {
+                uncaughtExceptionHandler.uncaughtException(Thread.currentThread(), th2);
             }
         }
-        for (Continuation continuation : b10) {
-            if (continuation != null) {
-                Result.a aVar = Result.f32461e;
-                continuation.resumeWith(Result.b(Unit.f32464a));
-            }
-        }
-        if (b0Var != null) {
-            b0Var.Z(-1);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final int l() {
-        return this.f41938e;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final d[] m() {
-        return this.f41937d;
     }
 }

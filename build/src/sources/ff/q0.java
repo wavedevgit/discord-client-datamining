@@ -3,11 +3,11 @@ package ff;
 public abstract class q0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public final l f23950a;
+    public final l f22975a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final s f23951b;
+    public final s f22976b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Runnable f23952c;
+    public final Runnable f22977c;
 }

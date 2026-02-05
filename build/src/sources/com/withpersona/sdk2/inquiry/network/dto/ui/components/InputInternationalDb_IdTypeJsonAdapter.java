@@ -47,7 +47,7 @@ public final class InputInternationalDb_IdTypeJsonAdapter extends h {
     @NotNull
     public InputInternationalDb.IdType fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         String str2 = null;
         Boolean bool = null;
@@ -57,7 +57,7 @@ public final class InputInternationalDb_IdTypeJsonAdapter extends h {
         String str6 = null;
         String str7 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -88,7 +88,7 @@ public final class InputInternationalDb_IdTypeJsonAdapter extends h {
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new InputInternationalDb.IdType(str, str2, bool, str3, str4, str5, str6, str7);
     }
 
@@ -96,22 +96,22 @@ public final class InputInternationalDb_IdTypeJsonAdapter extends h {
     public void toJson(@NotNull t writer, InputInternationalDb.IdType idType) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (idType != null) {
-            writer.l();
-            writer.A0("mask");
+            writer.k();
+            writer.W("mask");
             this.nullableStringAdapter.toJson(writer, idType.getMask());
-            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.W(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableStringAdapter.toJson(writer, idType.getPlaceholder());
-            writer.A0("secure");
+            writer.W("secure");
             this.nullableBooleanAdapter.toJson(writer, idType.getSecure());
-            writer.A0("countryName");
+            writer.W("countryName");
             this.nullableStringAdapter.toJson(writer, idType.getCountryName());
-            writer.A0("countryCode");
+            writer.W("countryCode");
             this.nullableStringAdapter.toJson(writer, idType.getCountryCode());
-            writer.A0("idType");
+            writer.W("idType");
             this.nullableStringAdapter.toJson(writer, idType.getIdType());
-            writer.A0(StackTraceHelper.NAME_KEY);
+            writer.W(StackTraceHelper.NAME_KEY);
             this.nullableStringAdapter.toJson(writer, idType.getName());
-            writer.A0("description");
+            writer.W("description");
             this.nullableStringAdapter.toJson(writer, idType.getDescription());
             writer.E();
             return;

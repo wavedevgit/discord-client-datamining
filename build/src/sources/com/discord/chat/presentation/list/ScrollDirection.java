@@ -20,7 +20,7 @@ public final class ScrollDirection {
     static {
         ScrollDirection[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = sr.a.a($values);
+        $ENTRIES = vr.a.a($values);
     }
 
     private ScrollDirection(String str, int i10) {

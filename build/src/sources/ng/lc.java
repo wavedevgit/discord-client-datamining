@@ -6,55 +6,55 @@ import java.util.List;
 public final class lc extends mc {
 
     /* renamed from: i  reason: collision with root package name */
-    final transient int f41333i;
+    final transient int f40793i;
 
     /* renamed from: o  reason: collision with root package name */
-    final transient int f41334o;
+    final transient int f40794o;
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ mc f41335p;
+    final /* synthetic */ mc f40795p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public lc(mc mcVar, int i10, int i11) {
-        this.f41335p = mcVar;
-        this.f41333i = i10;
-        this.f41334o = i11;
+        this.f40795p = mcVar;
+        this.f40793i = i10;
+        this.f40794o = i11;
     }
 
     @Override // ng.la
     final int c() {
-        return this.f41335p.d() + this.f41333i + this.f41334o;
+        return this.f40795p.d() + this.f40793i + this.f40794o;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // ng.la
     public final int d() {
-        return this.f41335p.d() + this.f41333i;
+        return this.f40795p.d() + this.f40793i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // ng.la
     public final Object[] e() {
-        return this.f41335p.e();
+        return this.f40795p.e();
     }
 
     @Override // ng.mc
     public final mc f(int i10, int i11) {
-        f4.c(i10, i11, this.f41334o);
-        mc mcVar = this.f41335p;
-        int i12 = this.f41333i;
+        f4.c(i10, i11, this.f40794o);
+        mc mcVar = this.f40795p;
+        int i12 = this.f40793i;
         return mcVar.subList(i10 + i12, i11 + i12);
     }
 
     @Override // java.util.List
     public final Object get(int i10) {
-        f4.a(i10, this.f41334o, "index");
-        return this.f41335p.get(i10 + this.f41333i);
+        f4.a(i10, this.f40794o, "index");
+        return this.f40795p.get(i10 + this.f40793i);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f41334o;
+        return this.f40794o;
     }
 
     @Override // ng.mc, java.util.List

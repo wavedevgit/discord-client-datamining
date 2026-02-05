@@ -25,15 +25,15 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 public final class x implements f3 {
 
     /* renamed from: a  reason: collision with root package name */
-    final Map f30771a;
+    final Map f29829a;
 
     /* renamed from: b  reason: collision with root package name */
-    final ArrayDeque f30772b;
+    final ArrayDeque f29830b;
 
     public x(Map map) {
-        this.f30771a = map;
+        this.f29829a = map;
         ArrayDeque arrayDeque = new ArrayDeque();
-        this.f30772b = arrayDeque;
+        this.f29830b = arrayDeque;
         arrayDeque.addLast(map);
     }
 
@@ -47,14 +47,14 @@ public final class x implements f3 {
     }
 
     private void B(ILogger iLogger, Map map) {
-        r();
+        s();
         for (Object obj : map.keySet()) {
             if (obj instanceof String) {
                 e((String) obj);
                 j(iLogger, map.get(obj));
             }
         }
-        y();
+        z();
     }
 
     private void C(ILogger iLogger, TimeZone timeZone) {
@@ -66,8 +66,8 @@ public final class x implements f3 {
         }
     }
 
-    private Map w() {
-        Object peekLast = this.f30772b.peekLast();
+    private Map u() {
+        Object peekLast = this.f29830b.peekLast();
         if (peekLast != null) {
             if (peekLast instanceof Map) {
                 return (Map) peekLast;
@@ -78,22 +78,22 @@ public final class x implements f3 {
     }
 
     private void x(Object obj) {
-        Object peekLast = this.f30772b.peekLast();
+        Object peekLast = this.f29830b.peekLast();
         if (peekLast instanceof List) {
             ((List) peekLast).add(obj);
         } else if (peekLast instanceof String) {
-            w().put((String) this.f30772b.removeLast(), obj);
+            u().put((String) this.f29830b.removeLast(), obj);
         } else {
             throw new IllegalStateException("Invalid stack state, expected array or string on top");
         }
     }
 
-    private void z(ILogger iLogger, Collection collection) {
-        u();
+    private void y(ILogger iLogger, Collection collection) {
+        v();
         for (Object obj : collection) {
             j(iLogger, obj);
         }
-        s();
+        t();
     }
 
     @Override // io.sentry.f3
@@ -138,10 +138,10 @@ public final class x implements f3 {
             ((w1) obj).serialize(this, iLogger);
             return this;
         } else if (obj instanceof Collection) {
-            z(iLogger, (Collection) obj);
+            y(iLogger, (Collection) obj);
             return this;
         } else if (obj.getClass().isArray()) {
-            z(iLogger, Arrays.asList((Object[]) obj));
+            y(iLogger, Arrays.asList((Object[]) obj));
             return this;
         } else if (obj instanceof Map) {
             B(iLogger, (Map) obj);
@@ -150,7 +150,7 @@ public final class x implements f3 {
             f(obj.toString());
             return this;
         } else if (obj instanceof AtomicIntegerArray) {
-            z(iLogger, q.a((AtomicIntegerArray) obj));
+            y(iLogger, q.a((AtomicIntegerArray) obj));
             return this;
         } else if (obj instanceof AtomicBoolean) {
             d(((AtomicBoolean) obj).get());
@@ -223,47 +223,47 @@ public final class x implements f3 {
 
     @Override // io.sentry.f3
     /* renamed from: m */
-    public x u() {
-        this.f30772b.add(new ArrayList());
+    public x v() {
+        this.f29830b.add(new ArrayList());
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: n */
-    public x r() {
-        this.f30772b.addLast(new HashMap());
+    public x s() {
+        this.f29830b.addLast(new HashMap());
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: o */
-    public x s() {
-        y();
+    public x t() {
+        z();
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: p */
-    public x y() {
-        x(this.f30772b.removeLast());
+    public x z() {
+        x(this.f29830b.removeLast());
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: q */
     public x e(String str) {
-        this.f30772b.add(str);
+        this.f29830b.add(str);
         return this;
     }
 
     @Override // io.sentry.f3
-    /* renamed from: t */
+    /* renamed from: r */
     public x l() {
         x(null);
         return this;
     }
 
     @Override // io.sentry.f3
-    public void v(boolean z10) {
+    public void w(boolean z10) {
     }
 }

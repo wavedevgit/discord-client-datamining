@@ -18,11 +18,11 @@ public abstract class s extends cg.o implements t {
                 break;
             case 102:
                 cg.p.b(parcel);
-                t0((Status) cg.p.a(parcel, Status.CREATOR));
+                A0((Status) cg.p.a(parcel, Status.CREATOR));
                 break;
             case 103:
                 cg.p.b(parcel);
-                l0((Status) cg.p.a(parcel, Status.CREATOR));
+                u0((Status) cg.p.a(parcel, Status.CREATOR));
                 break;
             default:
                 return false;

@@ -11,40 +11,40 @@ import k4.m;
 public class ConstraintProxyUpdateReceiver extends BroadcastReceiver {
 
     /* renamed from: a  reason: collision with root package name */
-    static final String f5534a = m.i("ConstrntProxyUpdtRecvr");
+    static final String f5646a = m.i("ConstrntProxyUpdtRecvr");
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Intent f5535d;
+        final /* synthetic */ Intent f5647d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Context f5536e;
+        final /* synthetic */ Context f5648e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ BroadcastReceiver.PendingResult f5537i;
+        final /* synthetic */ BroadcastReceiver.PendingResult f5649i;
 
         a(Intent intent, Context context, BroadcastReceiver.PendingResult pendingResult) {
-            this.f5535d = intent;
-            this.f5536e = context;
-            this.f5537i = pendingResult;
+            this.f5647d = intent;
+            this.f5648e = context;
+            this.f5649i = pendingResult;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             try {
-                boolean booleanExtra = this.f5535d.getBooleanExtra("KEY_BATTERY_NOT_LOW_PROXY_ENABLED", false);
-                boolean booleanExtra2 = this.f5535d.getBooleanExtra("KEY_BATTERY_CHARGING_PROXY_ENABLED", false);
-                boolean booleanExtra3 = this.f5535d.getBooleanExtra("KEY_STORAGE_NOT_LOW_PROXY_ENABLED", false);
-                boolean booleanExtra4 = this.f5535d.getBooleanExtra("KEY_NETWORK_STATE_PROXY_ENABLED", false);
-                m.e().a(ConstraintProxyUpdateReceiver.f5534a, "Updating proxies: (BatteryNotLowProxy (" + booleanExtra + "), BatteryChargingProxy (" + booleanExtra2 + "), StorageNotLowProxy (" + booleanExtra3 + "), NetworkStateProxy (" + booleanExtra4 + "), ");
-                q4.m.c(this.f5536e, ConstraintProxy.BatteryNotLowProxy.class, booleanExtra);
-                q4.m.c(this.f5536e, ConstraintProxy.BatteryChargingProxy.class, booleanExtra2);
-                q4.m.c(this.f5536e, ConstraintProxy.StorageNotLowProxy.class, booleanExtra3);
-                q4.m.c(this.f5536e, ConstraintProxy.NetworkStateProxy.class, booleanExtra4);
+                boolean booleanExtra = this.f5647d.getBooleanExtra("KEY_BATTERY_NOT_LOW_PROXY_ENABLED", false);
+                boolean booleanExtra2 = this.f5647d.getBooleanExtra("KEY_BATTERY_CHARGING_PROXY_ENABLED", false);
+                boolean booleanExtra3 = this.f5647d.getBooleanExtra("KEY_STORAGE_NOT_LOW_PROXY_ENABLED", false);
+                boolean booleanExtra4 = this.f5647d.getBooleanExtra("KEY_NETWORK_STATE_PROXY_ENABLED", false);
+                m.e().a(ConstraintProxyUpdateReceiver.f5646a, "Updating proxies: (BatteryNotLowProxy (" + booleanExtra + "), BatteryChargingProxy (" + booleanExtra2 + "), StorageNotLowProxy (" + booleanExtra3 + "), NetworkStateProxy (" + booleanExtra4 + "), ");
+                q4.m.c(this.f5648e, ConstraintProxy.BatteryNotLowProxy.class, booleanExtra);
+                q4.m.c(this.f5648e, ConstraintProxy.BatteryChargingProxy.class, booleanExtra2);
+                q4.m.c(this.f5648e, ConstraintProxy.StorageNotLowProxy.class, booleanExtra3);
+                q4.m.c(this.f5648e, ConstraintProxy.NetworkStateProxy.class, booleanExtra4);
             } finally {
-                this.f5537i.finish();
+                this.f5649i.finish();
             }
         }
     }
@@ -66,7 +66,7 @@ public class ConstraintProxyUpdateReceiver extends BroadcastReceiver {
         }
         if (!"androidx.work.impl.background.systemalarm.UpdateProxies".equals(str)) {
             m e10 = m.e();
-            String str2 = f5534a;
+            String str2 = f5646a;
             e10.a(str2, "Ignoring unknown action " + str);
             return;
         }

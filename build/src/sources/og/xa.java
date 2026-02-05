@@ -3,10 +3,10 @@ package og;
 public final class xa {
 
     /* renamed from: a  reason: collision with root package name */
-    private ca f43686a;
+    private ca f43592a;
 
     public final xa b(ca caVar) {
-        this.f43686a = caVar;
+        this.f43592a = caVar;
         return this;
     }
 

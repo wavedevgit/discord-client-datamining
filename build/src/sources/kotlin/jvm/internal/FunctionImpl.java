@@ -1,5 +1,18 @@
 package kotlin.jvm.internal;
 
+import cs.b;
+import cs.d;
+import cs.e;
+import cs.f;
+import cs.g;
+import cs.h;
+import cs.i;
+import cs.j;
+import cs.k;
+import cs.l;
+import cs.m;
+import cs.n;
+import cs.o;
 import java.io.Serializable;
 import kotlin.Function;
 import kotlin.jvm.functions.Function0;
@@ -10,24 +23,11 @@ import kotlin.jvm.functions.Function4;
 import kotlin.jvm.functions.Function5;
 import kotlin.jvm.functions.Function6;
 import kotlin.jvm.functions.Function8;
-import lr.c;
-import zr.b;
-import zr.d;
-import zr.e;
-import zr.f;
-import zr.g;
-import zr.h;
-import zr.i;
-import zr.j;
-import zr.k;
-import zr.l;
-import zr.m;
-import zr.n;
-import zr.o;
-@Deprecated
+import or.c;
 @c
+@Deprecated
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class FunctionImpl implements Function, Serializable, Function0, Function1, Function2, Function3, Function4, Function5, Function6, n, Function8, o, zr.a, b, zr.c, d, e, f, g, h, i, j, k, l, m {
+public abstract class FunctionImpl implements Function, Serializable, Function0, Function1, Function2, Function3, Function4, Function5, Function6, n, Function8, o, cs.a, b, cs.c, d, e, f, g, h, i, j, k, l, m {
     private void checkArity(int i10) {
         if (getArity() != i10) {
             throwWrongArity(i10);

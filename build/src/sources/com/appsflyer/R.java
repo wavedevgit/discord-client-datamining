@@ -3037,7 +3037,7 @@ public final class R {
         public static int off = 0x7f0a039c;
 
         /* renamed from: on  reason: collision with root package name */
-        public static int f7834on = 0x7f0a039d;
+        public static int f8219on = 0x7f0a039d;
         public static int outline = 0x7f0a03b1;
         public static int outward = 0x7f0a03b2;
         public static int packed = 0x7f0a03cf;
@@ -3158,7 +3158,7 @@ public final class R {
         public static int unlabeled = 0x7f0a057f;
 
         /* renamed from: up  reason: collision with root package name */
-        public static int f7835up = 0x7f0a0580;
+        public static int f8220up = 0x7f0a0580;
         public static int view_offset_helper = 0x7f0a05a4;
         public static int view_tree_lifecycle_owner = 0x7f0a05af;
         public static int view_tree_on_back_pressed_dispatcher_owner = 0x7f0a05b0;

@@ -34,21 +34,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Tooltip/native/TooltipConstants.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57539: for (var _fun57539_ip = 0;;) switch (_fun57539_ip) {
+        _fun57565: for (var _fun57565_ip = 0;;) switch (_fun57565_ip) {
             case 0:
                 var3 = -8;
                 var2 = 'top';
                 var1 = arg0;
                 if (!(var2 === var1)) {
-                    _fun57539_ip = 22;
-                    continue _fun57539
+                    _fun57565_ip = 22;
+                    continue _fun57565
                 }
             case 19:
                 var3 = 8;
             case 22:
                 var _closure2_slot0 = var3;
                 var0 = function arg0, arg1() {
-                    _fun57540: for (var _fun57540_ip = 0;;) switch (_fun57540_ip) {
+                    _fun57566: for (var _fun57566_ip = 0;;) switch (_fun57566_ip) {
                         case 0:
                             var6 = arg0;
                             var5 = arg1;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = 1;
                             var2 = 0;
                             if (!(var3 !== var6)) {
-                                _fun57540_ip = 55;
-                                continue _fun57540
+                                _fun57566_ip = 55;
+                                continue _fun57566
                             }
                         case 48:
                             var2 = _closure2_slot0;

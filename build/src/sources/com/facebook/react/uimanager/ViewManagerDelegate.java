@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 public interface ViewManagerDelegate<T extends View> {
     /* synthetic */ void kotlinCompat$receiveCommand(View view, String str, ReadableArray readableArray);
 
-    @lr.c
+    @or.c
     /* synthetic */ default void kotlinCompat$receiveCommandNullableArgs(View view, String commandName, ReadableArray readableArray) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(commandName, "commandName");
@@ -23,7 +23,7 @@ public interface ViewManagerDelegate<T extends View> {
 
     /* synthetic */ void kotlinCompat$setProperty(View view, String str, Object obj);
 
-    @lr.c
+    @or.c
     default void receiveCommand(@NotNull T view, String str, ReadableArray readableArray) {
         Intrinsics.checkNotNullParameter(view, "view");
         if (str != null) {
@@ -36,7 +36,7 @@ public interface ViewManagerDelegate<T extends View> {
         throw new IllegalStateException("Required value was null.");
     }
 
-    @lr.c
+    @or.c
     default void setProperty(@NotNull T view, String str, Object obj) {
         Intrinsics.checkNotNullParameter(view, "view");
         if (str != null) {

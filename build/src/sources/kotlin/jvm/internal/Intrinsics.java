@@ -1,8 +1,8 @@
 package kotlin.jvm.internal;
 
 import java.util.Arrays;
-import lr.g0;
-import lr.i;
+import or.g0;
+import or.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class Intrinsics {
 

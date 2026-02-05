@@ -12,159 +12,159 @@ import ne.w0;
 public final class p implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d0 f20393a;
+    private final d0 f20609a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f20394b;
+    private final boolean f20610b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f20395c;
+    private final boolean f20611c;
 
     /* renamed from: g  reason: collision with root package name */
-    private long f20399g;
+    private long f20615g;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f20401i;
+    private String f20617i;
 
     /* renamed from: j  reason: collision with root package name */
-    private tc.b0 f20402j;
+    private tc.b0 f20618j;
 
     /* renamed from: k  reason: collision with root package name */
-    private b f20403k;
+    private b f20619k;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f20404l;
+    private boolean f20620l;
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f20406n;
+    private boolean f20622n;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean[] f20400h = new boolean[3];
+    private final boolean[] f20616h = new boolean[3];
 
     /* renamed from: d  reason: collision with root package name */
-    private final u f20396d = new u(7, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+    private final u f20612d = new u(7, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
 
     /* renamed from: e  reason: collision with root package name */
-    private final u f20397e = new u(8, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+    private final u f20613e = new u(8, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
 
     /* renamed from: f  reason: collision with root package name */
-    private final u f20398f = new u(6, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+    private final u f20614f = new u(6, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
 
     /* renamed from: m  reason: collision with root package name */
-    private long f20405m = -9223372036854775807L;
+    private long f20621m = -9223372036854775807L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ne.h0 f20407o = new ne.h0();
+    private final ne.h0 f20623o = new ne.h0();
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final tc.b0 f20408a;
+        private final tc.b0 f20624a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f20409b;
+        private final boolean f20625b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final boolean f20410c;
+        private final boolean f20626c;
 
         /* renamed from: f  reason: collision with root package name */
-        private final ne.i0 f20413f;
+        private final ne.i0 f20629f;
 
         /* renamed from: g  reason: collision with root package name */
-        private byte[] f20414g;
+        private byte[] f20630g;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f20415h;
+        private int f20631h;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f20416i;
+        private int f20632i;
 
         /* renamed from: j  reason: collision with root package name */
-        private long f20417j;
+        private long f20633j;
 
         /* renamed from: k  reason: collision with root package name */
-        private boolean f20418k;
+        private boolean f20634k;
 
         /* renamed from: l  reason: collision with root package name */
-        private long f20419l;
+        private long f20635l;
 
         /* renamed from: o  reason: collision with root package name */
-        private boolean f20422o;
+        private boolean f20638o;
 
         /* renamed from: p  reason: collision with root package name */
-        private long f20423p;
+        private long f20639p;
 
         /* renamed from: q  reason: collision with root package name */
-        private long f20424q;
+        private long f20640q;
 
         /* renamed from: r  reason: collision with root package name */
-        private boolean f20425r;
+        private boolean f20641r;
 
         /* renamed from: d  reason: collision with root package name */
-        private final SparseArray f20411d = new SparseArray();
+        private final SparseArray f20627d = new SparseArray();
 
         /* renamed from: e  reason: collision with root package name */
-        private final SparseArray f20412e = new SparseArray();
+        private final SparseArray f20628e = new SparseArray();
 
         /* renamed from: m  reason: collision with root package name */
-        private a f20420m = new a();
+        private a f20636m = new a();
 
         /* renamed from: n  reason: collision with root package name */
-        private a f20421n = new a();
+        private a f20637n = new a();
 
         /* JADX INFO: Access modifiers changed from: private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private boolean f20426a;
+            private boolean f20642a;
 
             /* renamed from: b  reason: collision with root package name */
-            private boolean f20427b;
+            private boolean f20643b;
 
             /* renamed from: c  reason: collision with root package name */
-            private d0.c f20428c;
+            private d0.c f20644c;
 
             /* renamed from: d  reason: collision with root package name */
-            private int f20429d;
+            private int f20645d;
 
             /* renamed from: e  reason: collision with root package name */
-            private int f20430e;
+            private int f20646e;
 
             /* renamed from: f  reason: collision with root package name */
-            private int f20431f;
+            private int f20647f;
 
             /* renamed from: g  reason: collision with root package name */
-            private int f20432g;
+            private int f20648g;
 
             /* renamed from: h  reason: collision with root package name */
-            private boolean f20433h;
+            private boolean f20649h;
 
             /* renamed from: i  reason: collision with root package name */
-            private boolean f20434i;
+            private boolean f20650i;
 
             /* renamed from: j  reason: collision with root package name */
-            private boolean f20435j;
+            private boolean f20651j;
 
             /* renamed from: k  reason: collision with root package name */
-            private boolean f20436k;
+            private boolean f20652k;
 
             /* renamed from: l  reason: collision with root package name */
-            private int f20437l;
+            private int f20653l;
 
             /* renamed from: m  reason: collision with root package name */
-            private int f20438m;
+            private int f20654m;
 
             /* renamed from: n  reason: collision with root package name */
-            private int f20439n;
+            private int f20655n;
 
             /* renamed from: o  reason: collision with root package name */
-            private int f20440o;
+            private int f20656o;
 
             /* renamed from: p  reason: collision with root package name */
-            private int f20441p;
+            private int f20657p;
 
             private a() {
             }
@@ -175,28 +175,28 @@ public final class p implements m {
                 int i11;
                 int i12;
                 boolean z10;
-                if (!this.f20426a) {
+                if (!this.f20642a) {
                     return false;
                 }
-                if (!aVar.f20426a) {
+                if (!aVar.f20642a) {
                     return true;
                 }
-                d0.c cVar = (d0.c) ne.a.i(this.f20428c);
-                d0.c cVar2 = (d0.c) ne.a.i(aVar.f20428c);
-                if (this.f20431f == aVar.f20431f && this.f20432g == aVar.f20432g && this.f20433h == aVar.f20433h && ((!this.f20434i || !aVar.f20434i || this.f20435j == aVar.f20435j) && (((i10 = this.f20429d) == (i11 = aVar.f20429d) || (i10 != 0 && i11 != 0)) && (((i12 = cVar.f40084l) != 0 || cVar2.f40084l != 0 || (this.f20438m == aVar.f20438m && this.f20439n == aVar.f20439n)) && ((i12 != 1 || cVar2.f40084l != 1 || (this.f20440o == aVar.f20440o && this.f20441p == aVar.f20441p)) && (z10 = this.f20436k) == aVar.f20436k && (!z10 || this.f20437l == aVar.f20437l)))))) {
+                d0.c cVar = (d0.c) ne.a.i(this.f20644c);
+                d0.c cVar2 = (d0.c) ne.a.i(aVar.f20644c);
+                if (this.f20647f == aVar.f20647f && this.f20648g == aVar.f20648g && this.f20649h == aVar.f20649h && ((!this.f20650i || !aVar.f20650i || this.f20651j == aVar.f20651j) && (((i10 = this.f20645d) == (i11 = aVar.f20645d) || (i10 != 0 && i11 != 0)) && (((i12 = cVar.f39544l) != 0 || cVar2.f39544l != 0 || (this.f20654m == aVar.f20654m && this.f20655n == aVar.f20655n)) && ((i12 != 1 || cVar2.f39544l != 1 || (this.f20656o == aVar.f20656o && this.f20657p == aVar.f20657p)) && (z10 = this.f20652k) == aVar.f20652k && (!z10 || this.f20653l == aVar.f20653l)))))) {
                     return false;
                 }
                 return true;
             }
 
             public void b() {
-                this.f20427b = false;
-                this.f20426a = false;
+                this.f20643b = false;
+                this.f20642a = false;
             }
 
             public boolean d() {
-                if (this.f20427b) {
-                    int i10 = this.f20430e;
+                if (this.f20643b) {
+                    int i10 = this.f20646e;
                     if (i10 == 7 || i10 == 2) {
                         return true;
                     }
@@ -206,47 +206,47 @@ public final class p implements m {
             }
 
             public void e(d0.c cVar, int i10, int i11, int i12, int i13, boolean z10, boolean z11, boolean z12, boolean z13, int i14, int i15, int i16, int i17, int i18) {
-                this.f20428c = cVar;
-                this.f20429d = i10;
-                this.f20430e = i11;
-                this.f20431f = i12;
-                this.f20432g = i13;
-                this.f20433h = z10;
-                this.f20434i = z11;
-                this.f20435j = z12;
-                this.f20436k = z13;
-                this.f20437l = i14;
-                this.f20438m = i15;
-                this.f20439n = i16;
-                this.f20440o = i17;
-                this.f20441p = i18;
-                this.f20426a = true;
-                this.f20427b = true;
+                this.f20644c = cVar;
+                this.f20645d = i10;
+                this.f20646e = i11;
+                this.f20647f = i12;
+                this.f20648g = i13;
+                this.f20649h = z10;
+                this.f20650i = z11;
+                this.f20651j = z12;
+                this.f20652k = z13;
+                this.f20653l = i14;
+                this.f20654m = i15;
+                this.f20655n = i16;
+                this.f20656o = i17;
+                this.f20657p = i18;
+                this.f20642a = true;
+                this.f20643b = true;
             }
 
             public void f(int i10) {
-                this.f20430e = i10;
-                this.f20427b = true;
+                this.f20646e = i10;
+                this.f20643b = true;
             }
         }
 
         public b(tc.b0 b0Var, boolean z10, boolean z11) {
-            this.f20408a = b0Var;
-            this.f20409b = z10;
-            this.f20410c = z11;
+            this.f20624a = b0Var;
+            this.f20625b = z10;
+            this.f20626c = z11;
             byte[] bArr = new byte[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
-            this.f20414g = bArr;
-            this.f20413f = new ne.i0(bArr, 0, 0);
+            this.f20630g = bArr;
+            this.f20629f = new ne.i0(bArr, 0, 0);
             g();
         }
 
         private void d(int i10) {
-            long j10 = this.f20424q;
+            long j10 = this.f20640q;
             if (j10 == -9223372036854775807L) {
                 return;
             }
-            boolean z10 = this.f20425r;
-            this.f20408a.d(j10, z10 ? 1 : 0, (int) (this.f20417j - this.f20423p), i10, null);
+            boolean z10 = this.f20641r;
+            this.f20624a.d(j10, z10 ? 1 : 0, (int) (this.f20633j - this.f20639p), i10, null);
         }
 
         /* JADX WARN: Removed duplicated region for block: B:53:0x0109  */
@@ -269,52 +269,52 @@ public final class p implements m {
 
         public boolean b(long j10, int i10, boolean z10, boolean z11) {
             boolean z12 = false;
-            if (this.f20416i == 9 || (this.f20410c && this.f20421n.c(this.f20420m))) {
-                if (z10 && this.f20422o) {
-                    d(i10 + ((int) (j10 - this.f20417j)));
+            if (this.f20632i == 9 || (this.f20626c && this.f20637n.c(this.f20636m))) {
+                if (z10 && this.f20638o) {
+                    d(i10 + ((int) (j10 - this.f20633j)));
                 }
-                this.f20423p = this.f20417j;
-                this.f20424q = this.f20419l;
-                this.f20425r = false;
-                this.f20422o = true;
+                this.f20639p = this.f20633j;
+                this.f20640q = this.f20635l;
+                this.f20641r = false;
+                this.f20638o = true;
             }
-            if (this.f20409b) {
-                z11 = this.f20421n.d();
+            if (this.f20625b) {
+                z11 = this.f20637n.d();
             }
-            boolean z13 = this.f20425r;
-            int i11 = this.f20416i;
+            boolean z13 = this.f20641r;
+            int i11 = this.f20632i;
             if (i11 == 5 || (z11 && i11 == 1)) {
                 z12 = true;
             }
             boolean z14 = z13 | z12;
-            this.f20425r = z14;
+            this.f20641r = z14;
             return z14;
         }
 
         public boolean c() {
-            return this.f20410c;
+            return this.f20626c;
         }
 
         public void e(d0.b bVar) {
-            this.f20412e.append(bVar.f40070a, bVar);
+            this.f20628e.append(bVar.f39530a, bVar);
         }
 
         public void f(d0.c cVar) {
-            this.f20411d.append(cVar.f40076d, cVar);
+            this.f20627d.append(cVar.f39536d, cVar);
         }
 
         public void g() {
-            this.f20418k = false;
-            this.f20422o = false;
-            this.f20421n.b();
+            this.f20634k = false;
+            this.f20638o = false;
+            this.f20637n.b();
         }
 
         public void h(long j10, int i10, long j11) {
-            this.f20416i = i10;
-            this.f20419l = j11;
-            this.f20417j = j10;
-            if (!this.f20409b || i10 != 1) {
-                if (this.f20410c) {
+            this.f20632i = i10;
+            this.f20635l = j11;
+            this.f20633j = j10;
+            if (!this.f20625b || i10 != 1) {
+                if (this.f20626c) {
                     if (i10 != 5 && i10 != 1 && i10 != 2) {
                         return;
                     }
@@ -322,85 +322,85 @@ public final class p implements m {
                     return;
                 }
             }
-            a aVar = this.f20420m;
-            this.f20420m = this.f20421n;
-            this.f20421n = aVar;
+            a aVar = this.f20636m;
+            this.f20636m = this.f20637n;
+            this.f20637n = aVar;
             aVar.b();
-            this.f20415h = 0;
-            this.f20418k = true;
+            this.f20631h = 0;
+            this.f20634k = true;
         }
     }
 
     public p(d0 d0Var, boolean z10, boolean z11) {
-        this.f20393a = d0Var;
-        this.f20394b = z10;
-        this.f20395c = z11;
+        this.f20609a = d0Var;
+        this.f20610b = z10;
+        this.f20611c = z11;
     }
 
     private void a() {
-        ne.a.i(this.f20402j);
-        w0.j(this.f20403k);
+        ne.a.i(this.f20618j);
+        w0.j(this.f20619k);
     }
 
     private void g(long j10, int i10, int i11, long j11) {
-        if (!this.f20404l || this.f20403k.c()) {
-            this.f20396d.b(i11);
-            this.f20397e.b(i11);
-            if (!this.f20404l) {
-                if (this.f20396d.c() && this.f20397e.c()) {
+        if (!this.f20620l || this.f20619k.c()) {
+            this.f20612d.b(i11);
+            this.f20613e.b(i11);
+            if (!this.f20620l) {
+                if (this.f20612d.c() && this.f20613e.c()) {
                     ArrayList arrayList = new ArrayList();
-                    u uVar = this.f20396d;
-                    arrayList.add(Arrays.copyOf(uVar.f20511d, uVar.f20512e));
-                    u uVar2 = this.f20397e;
-                    arrayList.add(Arrays.copyOf(uVar2.f20511d, uVar2.f20512e));
-                    u uVar3 = this.f20396d;
-                    d0.c l10 = ne.d0.l(uVar3.f20511d, 3, uVar3.f20512e);
-                    u uVar4 = this.f20397e;
-                    d0.b j12 = ne.d0.j(uVar4.f20511d, 3, uVar4.f20512e);
-                    this.f20402j.b(new Format.b().U(this.f20401i).g0("video/avc").K(ne.f.a(l10.f40073a, l10.f40074b, l10.f40075c)).n0(l10.f40078f).S(l10.f40079g).c0(l10.f40080h).V(arrayList).G());
-                    this.f20404l = true;
-                    this.f20403k.f(l10);
-                    this.f20403k.e(j12);
-                    this.f20396d.d();
-                    this.f20397e.d();
+                    u uVar = this.f20612d;
+                    arrayList.add(Arrays.copyOf(uVar.f20727d, uVar.f20728e));
+                    u uVar2 = this.f20613e;
+                    arrayList.add(Arrays.copyOf(uVar2.f20727d, uVar2.f20728e));
+                    u uVar3 = this.f20612d;
+                    d0.c l10 = ne.d0.l(uVar3.f20727d, 3, uVar3.f20728e);
+                    u uVar4 = this.f20613e;
+                    d0.b j12 = ne.d0.j(uVar4.f20727d, 3, uVar4.f20728e);
+                    this.f20618j.b(new Format.b().U(this.f20617i).g0("video/avc").K(ne.f.a(l10.f39533a, l10.f39534b, l10.f39535c)).n0(l10.f39538f).S(l10.f39539g).c0(l10.f39540h).V(arrayList).G());
+                    this.f20620l = true;
+                    this.f20619k.f(l10);
+                    this.f20619k.e(j12);
+                    this.f20612d.d();
+                    this.f20613e.d();
                 }
-            } else if (this.f20396d.c()) {
-                u uVar5 = this.f20396d;
-                this.f20403k.f(ne.d0.l(uVar5.f20511d, 3, uVar5.f20512e));
-                this.f20396d.d();
-            } else if (this.f20397e.c()) {
-                u uVar6 = this.f20397e;
-                this.f20403k.e(ne.d0.j(uVar6.f20511d, 3, uVar6.f20512e));
-                this.f20397e.d();
+            } else if (this.f20612d.c()) {
+                u uVar5 = this.f20612d;
+                this.f20619k.f(ne.d0.l(uVar5.f20727d, 3, uVar5.f20728e));
+                this.f20612d.d();
+            } else if (this.f20613e.c()) {
+                u uVar6 = this.f20613e;
+                this.f20619k.e(ne.d0.j(uVar6.f20727d, 3, uVar6.f20728e));
+                this.f20613e.d();
             }
         }
-        if (this.f20398f.b(i11)) {
-            u uVar7 = this.f20398f;
-            this.f20407o.S(this.f20398f.f20511d, ne.d0.q(uVar7.f20511d, uVar7.f20512e));
-            this.f20407o.U(4);
-            this.f20393a.a(j11, this.f20407o);
+        if (this.f20614f.b(i11)) {
+            u uVar7 = this.f20614f;
+            this.f20623o.S(this.f20614f.f20727d, ne.d0.q(uVar7.f20727d, uVar7.f20728e));
+            this.f20623o.U(4);
+            this.f20609a.a(j11, this.f20623o);
         }
-        if (this.f20403k.b(j10, i10, this.f20404l, this.f20406n)) {
-            this.f20406n = false;
+        if (this.f20619k.b(j10, i10, this.f20620l, this.f20622n)) {
+            this.f20622n = false;
         }
     }
 
     private void h(byte[] bArr, int i10, int i11) {
-        if (!this.f20404l || this.f20403k.c()) {
-            this.f20396d.a(bArr, i10, i11);
-            this.f20397e.a(bArr, i10, i11);
+        if (!this.f20620l || this.f20619k.c()) {
+            this.f20612d.a(bArr, i10, i11);
+            this.f20613e.a(bArr, i10, i11);
         }
-        this.f20398f.a(bArr, i10, i11);
-        this.f20403k.a(bArr, i10, i11);
+        this.f20614f.a(bArr, i10, i11);
+        this.f20619k.a(bArr, i10, i11);
     }
 
     private void i(long j10, int i10, long j11) {
-        if (!this.f20404l || this.f20403k.c()) {
-            this.f20396d.e(i10);
-            this.f20397e.e(i10);
+        if (!this.f20620l || this.f20619k.c()) {
+            this.f20612d.e(i10);
+            this.f20613e.e(i10);
         }
-        this.f20398f.e(i10);
-        this.f20403k.h(j10, i10, j11);
+        this.f20614f.e(i10);
+        this.f20619k.h(j10, i10, j11);
     }
 
     @Override // dd.m
@@ -410,10 +410,10 @@ public final class p implements m {
         int f10 = h0Var.f();
         int g10 = h0Var.g();
         byte[] e10 = h0Var.e();
-        this.f20399g += h0Var.a();
-        this.f20402j.f(h0Var, h0Var.a());
+        this.f20615g += h0Var.a();
+        this.f20618j.f(h0Var, h0Var.a());
         while (true) {
-            int c10 = ne.d0.c(e10, f10, g10, this.f20400h);
+            int c10 = ne.d0.c(e10, f10, g10, this.f20616h);
             if (c10 == g10) {
                 h(e10, f10, g10);
                 return;
@@ -424,28 +424,28 @@ public final class p implements m {
                 h(e10, f10, c10);
             }
             int i12 = g10 - c10;
-            long j10 = this.f20399g - i12;
+            long j10 = this.f20615g - i12;
             if (i11 < 0) {
                 i10 = -i11;
             } else {
                 i10 = 0;
             }
-            g(j10, i12, i10, this.f20405m);
-            i(j10, f11, this.f20405m);
+            g(j10, i12, i10, this.f20621m);
+            i(j10, f11, this.f20621m);
             f10 = c10 + 3;
         }
     }
 
     @Override // dd.m
     public void c() {
-        this.f20399g = 0L;
-        this.f20406n = false;
-        this.f20405m = -9223372036854775807L;
-        ne.d0.a(this.f20400h);
-        this.f20396d.d();
-        this.f20397e.d();
-        this.f20398f.d();
-        b bVar = this.f20403k;
+        this.f20615g = 0L;
+        this.f20622n = false;
+        this.f20621m = -9223372036854775807L;
+        ne.d0.a(this.f20616h);
+        this.f20612d.d();
+        this.f20613e.d();
+        this.f20614f.d();
+        b bVar = this.f20619k;
         if (bVar != null) {
             bVar.g();
         }
@@ -455,25 +455,25 @@ public final class p implements m {
     public void e(long j10, int i10) {
         boolean z10;
         if (j10 != -9223372036854775807L) {
-            this.f20405m = j10;
+            this.f20621m = j10;
         }
-        boolean z11 = this.f20406n;
+        boolean z11 = this.f20622n;
         if ((i10 & 2) != 0) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f20406n = z11 | z10;
+        this.f20622n = z11 | z10;
     }
 
     @Override // dd.m
     public void f(tc.m mVar, i0.d dVar) {
         dVar.a();
-        this.f20401i = dVar.b();
+        this.f20617i = dVar.b();
         tc.b0 c10 = mVar.c(dVar.c(), 2);
-        this.f20402j = c10;
-        this.f20403k = new b(c10, this.f20394b, this.f20395c);
-        this.f20393a.b(mVar, dVar);
+        this.f20618j = c10;
+        this.f20619k = new b(c10, this.f20610b, this.f20611c);
+        this.f20609a.b(mVar, dVar);
     }
 
     @Override // dd.m

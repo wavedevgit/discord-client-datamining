@@ -1,96 +1,79 @@
 package bq;
-
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.GradientDrawable;
-import android.graphics.drawable.InsetDrawable;
-import android.text.Spanned;
-import android.text.style.URLSpan;
-import android.util.Base64;
-import android.widget.TextView;
-import aq.k5;
-import aq.l5;
-import java.io.ByteArrayOutputStream;
-import java.util.Iterator;
-import java.util.List;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.reflect.KClass;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static dr.e f6744a;
+    public static int f7160a = 2131558626;
 
-    public static final k5 a(List list, KClass type, Function1 predicate) {
-        k5 a10;
-        Intrinsics.checkNotNullParameter(list, "<this>");
-        Intrinsics.checkNotNullParameter(type, "type");
-        Intrinsics.checkNotNullParameter(predicate, "predicate");
-        Iterator it = list.iterator();
-        while (it.hasNext()) {
-            k5 k5Var = (k5) it.next();
-            if (type.isInstance(k5Var)) {
-                Intrinsics.checkNotNull(k5Var, "null cannot be cast to non-null type T of com.withpersona.sdk2.inquiry.steps.ui.components.utils.ExtensionsKt.findFirst");
-                if (((Boolean) predicate.invoke(k5Var)).booleanValue()) {
-                    return k5Var;
-                }
-            } else if ((k5Var instanceof l5) && (a10 = a(((l5) k5Var).getChildren(), type, predicate)) != null) {
-                return a10;
-            }
-        }
-        return null;
-    }
+    /* renamed from: b  reason: collision with root package name */
+    public static int f7161b = 2131558635;
 
-    public static final Drawable b(Context context, int i10, int i11) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        int c10 = androidx.core.content.a.c(context, ep.b.f22473a);
-        int c11 = androidx.core.content.a.c(context, ep.b.f22474b);
-        double d10 = r1.c.d(i10, c10);
-        double d11 = r1.c.d(i10, c11);
-        float a10 = (float) mp.h.a(8.0d);
-        GradientDrawable gradientDrawable = new GradientDrawable();
-        if (d10 < d11) {
-            c10 = c11;
-        }
-        gradientDrawable.setColor(c10);
-        gradientDrawable.setCornerRadii(new float[]{a10, a10, a10, a10, a10, a10, a10, a10});
-        gradientDrawable.setSize(i11 + ((int) mp.h.a(24.0d)), gradientDrawable.getMinimumHeight());
-        return new InsetDrawable((Drawable) gradientDrawable, (int) mp.h.a(4.0d));
-    }
+    /* renamed from: c  reason: collision with root package name */
+    public static int f7162c = 2131558646;
 
-    private static final dr.e c(Context context) {
-        dr.e eVar = f6744a;
-        if (eVar == null) {
-            dr.e b10 = dr.e.b(context);
-            f6744a = b10;
-            Intrinsics.checkNotNullExpressionValue(b10, "also(...)");
-            return b10;
-        }
-        return eVar;
-    }
+    /* renamed from: d  reason: collision with root package name */
+    public static int f7163d = 2131558647;
 
-    public static final void d(TextView textView, String text) {
-        Intrinsics.checkNotNullParameter(textView, "<this>");
-        Intrinsics.checkNotNullParameter(text, "text");
-        Context context = textView.getContext();
-        Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        dr.e c10 = c(context);
-        Spanned e10 = c10.e(text);
-        Intrinsics.checkNotNullExpressionValue(e10, "toMarkdown(...)");
-        c10.d(textView, e10);
-        if (e10.getSpans(0, e10.length(), gr.g.class).length == 0 && e10.getSpans(0, e10.length(), URLSpan.class).length == 0) {
-            textView.setMovementMethod(null);
-        }
-    }
+    /* renamed from: e  reason: collision with root package name */
+    public static int f7164e = 2131558649;
 
-    public static final String e(Bitmap bitmap) {
-        Intrinsics.checkNotNullParameter(bitmap, "<this>");
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
-        String encodeToString = Base64.encodeToString(byteArrayOutputStream.toByteArray(), 3);
-        Intrinsics.checkNotNull(encodeToString);
-        return encodeToString;
-    }
+    /* renamed from: f  reason: collision with root package name */
+    public static int f7165f = 2131558650;
+
+    /* renamed from: g  reason: collision with root package name */
+    public static int f7166g = 2131558651;
+
+    /* renamed from: h  reason: collision with root package name */
+    public static int f7167h = 2131558652;
+
+    /* renamed from: i  reason: collision with root package name */
+    public static int f7168i = 2131558654;
+
+    /* renamed from: j  reason: collision with root package name */
+    public static int f7169j = 2131558657;
+
+    /* renamed from: k  reason: collision with root package name */
+    public static int f7170k = 2131558658;
+
+    /* renamed from: l  reason: collision with root package name */
+    public static int f7171l = 2131558659;
+
+    /* renamed from: m  reason: collision with root package name */
+    public static int f7172m = 2131558660;
+
+    /* renamed from: n  reason: collision with root package name */
+    public static int f7173n = 2131558661;
+
+    /* renamed from: o  reason: collision with root package name */
+    public static int f7174o = 2131558662;
+
+    /* renamed from: p  reason: collision with root package name */
+    public static int f7175p = 2131558663;
+
+    /* renamed from: q  reason: collision with root package name */
+    public static int f7176q = 2131558664;
+
+    /* renamed from: r  reason: collision with root package name */
+    public static int f7177r = 2131558665;
+
+    /* renamed from: s  reason: collision with root package name */
+    public static int f7178s = 2131558666;
+
+    /* renamed from: t  reason: collision with root package name */
+    public static int f7179t = 2131558667;
+
+    /* renamed from: u  reason: collision with root package name */
+    public static int f7180u = 2131558668;
+
+    /* renamed from: v  reason: collision with root package name */
+    public static int f7181v = 2131558669;
+
+    /* renamed from: w  reason: collision with root package name */
+    public static int f7182w = 2131558670;
+
+    /* renamed from: x  reason: collision with root package name */
+    public static int f7183x = 2131558671;
+
+    /* renamed from: y  reason: collision with root package name */
+    public static int f7184y = 2131558672;
 }

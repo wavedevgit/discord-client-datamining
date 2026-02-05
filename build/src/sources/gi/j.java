@@ -1,82 +1,29 @@
 package gi;
 
-import android.content.Context;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
-import android.os.Build;
-import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Set;
+import java.util.zip.ZipFile;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class j {
+public final class j implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final t0 f26250a = new t0("PhoneskyVerificationUtils");
+    final /* synthetic */ Set f24938a;
 
-    public static int a(Context context) {
-        try {
-            PackageInfo packageInfo = context.getPackageManager().getPackageInfo("com.android.vending", 64);
-            ApplicationInfo applicationInfo = packageInfo.applicationInfo;
-            if (applicationInfo != null && applicationInfo.enabled && c(packageInfo.signatures)) {
-                return packageInfo.versionCode;
-            }
-            return 0;
-        } catch (PackageManager.NameNotFoundException unused) {
-            return 0;
-        }
+    /* renamed from: b  reason: collision with root package name */
+    final /* synthetic */ u f24939b;
+
+    /* renamed from: c  reason: collision with root package name */
+    final /* synthetic */ o f24940c;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public j(o oVar, Set set, u uVar) {
+        this.f24940c = oVar;
+        this.f24938a = set;
+        this.f24939b = uVar;
     }
 
-    public static boolean b(Context context) {
-        try {
-            if (!context.getPackageManager().getApplicationInfo("com.android.vending", 0).enabled) {
-                f26250a.d("Play Store package is disabled.", new Object[0]);
-            } else {
-                try {
-                    if (c(context.getPackageManager().getPackageInfo("com.android.vending", 64).signatures)) {
-                        return true;
-                    }
-                } catch (PackageManager.NameNotFoundException unused) {
-                    f26250a.d("Play Store package is not found.", new Object[0]);
-                }
-            }
-        } catch (PackageManager.NameNotFoundException unused2) {
-            f26250a.d("Play Store package is not found.", new Object[0]);
-        }
-        return false;
-    }
-
-    private static boolean c(Signature[] signatureArr) {
-        if (signatureArr != null && (r1 = signatureArr.length) != 0) {
-            ArrayList arrayList = new ArrayList();
-            for (Signature signature : signatureArr) {
-                String a10 = i.a(signature.toByteArray());
-                arrayList.add(a10);
-                if (!"8P1sW0EPJcslw7UzRsiXL64w-O50Ed-RBICtay1g24M".equals(a10)) {
-                    String str = Build.TAGS;
-                    if ((str.contains("dev-keys") || str.contains("test-keys")) && "GXWy8XF3vIml3_MfnmSmyuKBpT3B0dWbHRR_4cgq-gA".equals(a10)) {
-                        return true;
-                    }
-                } else {
-                    return true;
-                }
-            }
-            t0 t0Var = f26250a;
-            StringBuilder sb2 = new StringBuilder();
-            Iterator it = arrayList.iterator();
-            if (it.hasNext()) {
-                while (true) {
-                    sb2.append((CharSequence) it.next());
-                    if (!it.hasNext()) {
-                        break;
-                    }
-                    sb2.append((CharSequence) ", ");
-                }
-            }
-            t0Var.d(String.format("Play Store package certs are not valid. Found these sha256 certs: [%s].", sb2.toString()), new Object[0]);
-            return false;
-        }
-        f26250a.d("Play Store package is not signed -- possibly self-built package. Could not verify.", new Object[0]);
-        return false;
+    @Override // gi.l
+    public final void a(ZipFile zipFile, Set set) {
+        this.f24938a.addAll(o.a(this.f24940c, set, this.f24939b, zipFile));
     }
 }

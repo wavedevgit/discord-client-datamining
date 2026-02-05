@@ -16,10 +16,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class s extends BaseReactPackage {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f17951b = new a(null);
+    public static final a f18357b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private ScreenDummyLayoutHelper f17952a;
+    private ScreenDummyLayoutHelper f18358a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -41,8 +41,8 @@ public final class s extends BaseReactPackage {
     @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
     public List createViewManagers(ReactApplicationContext reactContext) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.f17952a = new ScreenDummyLayoutHelper(reactContext);
-        j.f17890d.f(reactContext);
+        this.f18358a = new ScreenDummyLayoutHelper(reactContext);
+        j.f18296d.f(reactContext);
         return CollectionsKt.o(new ScreenContainerViewManager(), new ScreenViewManager(), new ModalScreenViewManager(), new ScreenStackViewManager(), new ScreenStackHeaderConfigViewManager(), new ScreenStackHeaderSubviewManager(), new SearchBarManager(), new ScreenFooterManager(), new ScreenContentWrapperManager());
     }
 

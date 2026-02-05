@@ -1,29 +1,50 @@
 package em;
 
-import android.os.Build;
+import android.net.NetworkInfo;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public enum a {
+    CG_2G("2g"),
+    CG_3G("3g"),
+    CG_4G("4g"),
+    CG_5G("5g");
+    
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f21643a = new a();
+    /* renamed from: d  reason: collision with root package name */
+    public final String f21640d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final boolean f21644b;
+    a(String str) {
+        this.f21640d = str;
+    }
 
-    static {
-        boolean z10;
-        if (Build.VERSION.SDK_INT < 30) {
-            z10 = true;
-        } else {
-            z10 = false;
+    public static a d(NetworkInfo networkInfo) {
+        if (networkInfo == null) {
+            return null;
         }
-        f21644b = z10;
-    }
-
-    private a() {
-    }
-
-    public final boolean a() {
-        return f21644b;
+        int subtype = networkInfo.getSubtype();
+        if (subtype != 20) {
+            switch (subtype) {
+                case 1:
+                case 2:
+                case 4:
+                case 7:
+                case 11:
+                    return CG_2G;
+                case 3:
+                case 5:
+                case 6:
+                case 8:
+                case 9:
+                case 10:
+                case 12:
+                case 14:
+                    return CG_3G;
+                case 13:
+                case 15:
+                    return CG_4G;
+                default:
+                    return null;
+            }
+        }
+        return CG_5G;
     }
 }

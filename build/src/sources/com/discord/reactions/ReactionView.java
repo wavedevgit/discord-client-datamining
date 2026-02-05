@@ -337,7 +337,7 @@ public final class ReactionView extends LinearLayout {
     public static final Unit configureLabels$lambda$0(RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("emojiPreview", "{emojiPreview}");
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     private final void configureTextColor(BurstColorPalette burstColorPalette) {
@@ -472,7 +472,7 @@ public final class ReactionView extends LinearLayout {
         String backgroundColor;
         int i10 = SetSpanOperation.SPAN_MAX_PRIORITY;
         if (burstColorPalette != null) {
-            i10 = as.a.c(burstColorPalette.getOpacity() * ((float) SetSpanOperation.SPAN_MAX_PRIORITY));
+            i10 = ds.a.c(burstColorPalette.getOpacity() * ((float) SetSpanOperation.SPAN_MAX_PRIORITY));
         }
         Integer num = null;
         Integer valueOf = (burstColorPalette == null || (backgroundColor = burstColorPalette.getBackgroundColor()) == null) ? null : Integer.valueOf(r1.c.l(Color.parseColor(backgroundColor), i10));

@@ -3,52 +3,52 @@ package com.google.android.play.core.assetpacks;
 import android.content.Context;
 import java.io.File;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c3 implements th.t {
+public final class c3 implements wh.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final th.w f15320a;
+    private final wh.w f15714a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final th.w f15321b;
+    private final wh.w f15715b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final th.w f15322c;
+    private final wh.w f15716c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final th.w f15323d;
+    private final wh.w f15717d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final th.w f15324e;
+    private final wh.w f15718e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final th.w f15325f;
+    private final wh.w f15719f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final th.w f15326g;
+    private final wh.w f15720g;
 
-    public c3(th.w wVar, th.w wVar2, th.w wVar3, th.w wVar4, th.w wVar5, th.w wVar6, th.w wVar7) {
-        this.f15320a = wVar;
-        this.f15321b = wVar2;
-        this.f15322c = wVar3;
-        this.f15323d = wVar4;
-        this.f15324e = wVar5;
-        this.f15325f = wVar6;
-        this.f15326g = wVar7;
+    public c3(wh.w wVar, wh.w wVar2, wh.w wVar3, wh.w wVar4, wh.w wVar5, wh.w wVar6, wh.w wVar7) {
+        this.f15714a = wVar;
+        this.f15715b = wVar2;
+        this.f15716c = wVar3;
+        this.f15717d = wVar4;
+        this.f15718e = wVar5;
+        this.f15719f = wVar6;
+        this.f15720g = wVar7;
     }
 
-    @Override // th.w
+    @Override // wh.w
     public final /* bridge */ /* synthetic */ Object a() {
         File externalFilesDir;
-        String str = (String) this.f15320a.a();
-        Object a10 = this.f15321b.a();
-        Object a11 = this.f15322c.a();
-        Context b10 = ((q4) this.f15323d).b();
-        Object a12 = this.f15324e.a();
-        th.r c10 = th.r.c(th.v.a(this.f15325f));
+        String str = (String) this.f15714a.a();
+        Object a10 = this.f15715b.a();
+        Object a11 = this.f15716c.a();
+        Context b10 = ((q4) this.f15717d).b();
+        Object a12 = this.f15718e.a();
+        wh.r c10 = wh.r.c(wh.v.a(this.f15719f));
         d0 d0Var = (d0) a10;
         b2 b2Var = (b2) a11;
         q3 q3Var = (q3) a12;
-        o3 o3Var = (o3) this.f15326g.a();
+        o3 o3Var = (o3) this.f15720g.a();
         if (str != null) {
             externalFilesDir = new File(b10.getExternalFilesDir(null), str);
         } else {

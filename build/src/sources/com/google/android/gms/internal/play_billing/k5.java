@@ -6,21 +6,21 @@ public final class k5 extends o1 implements w2 {
         super(l5.F());
     }
 
-    public final k5 m(int i10) {
+    public final k5 l(int i10) {
         i();
-        l5.D((l5) this.f13949e, i10);
+        l5.D((l5) this.f14343e, i10);
         return this;
     }
 
-    public final k5 o(String str) {
+    public final k5 n(String str) {
         i();
-        l5.C((l5) this.f13949e, str);
+        l5.C((l5) this.f14343e, str);
         return this;
     }
 
     public final k5 p(String str) {
         i();
-        l5.B((l5) this.f13949e, str);
+        l5.B((l5) this.f14343e, str);
         return this;
     }
 }

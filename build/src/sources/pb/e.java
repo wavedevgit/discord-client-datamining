@@ -5,13 +5,13 @@ import com.facebook.soloader.e0;
 public class e implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h[] f45058a;
+    private final h[] f44988a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f45059b = 0;
+    private int f44989b = 0;
 
     public e(h... hVarArr) {
-        this.f45058a = hVarArr;
+        this.f44988a = hVarArr;
     }
 
     @Override // pb.h
@@ -19,10 +19,10 @@ public class e implements h {
         int i10;
         h[] hVarArr;
         do {
-            i10 = this.f45059b;
-            hVarArr = this.f45058a;
+            i10 = this.f44989b;
+            hVarArr = this.f44988a;
             if (i10 < hVarArr.length) {
-                this.f45059b = i10 + 1;
+                this.f44989b = i10 + 1;
             } else {
                 return false;
             }

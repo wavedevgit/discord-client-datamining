@@ -7,16 +7,16 @@ import java.util.concurrent.ConcurrentHashMap;
 final class c implements f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f29816a;
+    private final List f28874a;
 
     public c(List list) {
-        this.f29816a = list;
+        this.f28874a = list;
     }
 
     @Override // io.sentry.config.f
     public Map getMap(String str) {
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
-        for (f fVar : this.f29816a) {
+        for (f fVar : this.f28874a) {
             concurrentHashMap.putAll(fVar.getMap(str));
         }
         return concurrentHashMap;
@@ -24,7 +24,7 @@ final class c implements f {
 
     @Override // io.sentry.config.f
     public String getProperty(String str) {
-        for (f fVar : this.f29816a) {
+        for (f fVar : this.f28874a) {
             String property = fVar.getProperty(str);
             if (property != null) {
                 return property;

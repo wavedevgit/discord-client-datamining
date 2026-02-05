@@ -1,34 +1,50 @@
 package st;
-
-import com.facebook.react.devsupport.StackTraceHelper;
-import java.util.Locale;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public enum d {
-    tl("fil"),
-    no("nb"),
-    in(StackTraceHelper.ID_KEY),
-    iw("he");
-    
-
-    /* renamed from: p  reason: collision with root package name */
-    static final d[] f49633p = values();
-    private final String alias;
-
-    d(String str) {
-        this.alias = str;
-    }
-
-    public static String a(Locale locale) {
-        d[] dVarArr;
-        String language = locale.getLanguage();
-        if (language.equals("no") && locale.getVariant().equals("NY") && locale.getCountry().equals("NO")) {
-            return "nn";
-        }
-        for (d dVar : f49633p) {
-            if (language.equals(dVar.name())) {
-                return dVar.alias;
+public abstract class d {
+    public static String a(String str) {
+        int i10;
+        StringBuilder sb2 = new StringBuilder();
+        int length = str.length();
+        int i11 = 0;
+        boolean z10 = false;
+        while (i11 < length) {
+            char charAt = str.charAt(i11);
+            if (charAt == '\'') {
+                int i12 = i11 + 1;
+                if (i12 < length && str.charAt(i12) == '\'') {
+                    sb2.append(charAt);
+                    i11 = i12;
+                } else {
+                    z10 = !z10;
+                }
+                sb2.append(charAt);
+            } else if (z10) {
+                sb2.append(charAt);
+            } else if (charAt != 'z' && charAt != 'Z' && charAt != 'v' && charAt != 'V' && charAt != 'x' && charAt != 'X') {
+                sb2.append(charAt);
             }
+            i11++;
         }
-        return language;
+        int i13 = 0;
+        while (i13 < sb2.length()) {
+            char charAt2 = sb2.charAt(i13);
+            if (charAt2 == ' ' && (i10 = i13 + 1) < sb2.length() && sb2.charAt(i10) == ' ') {
+                sb2.deleteCharAt(i13);
+            } else if (charAt2 == '[' || charAt2 == ']' || charAt2 == '(' || charAt2 == ')') {
+                sb2.deleteCharAt(i13);
+            } else {
+                i13++;
+            }
+            i13--;
+            i13++;
+        }
+        String trim = sb2.toString().trim();
+        if (trim.endsWith(" '")) {
+            return trim.substring(0, trim.length() - 2) + "'";
+        } else if (trim.endsWith(",")) {
+            return trim.substring(0, trim.length() - 1);
+        } else {
+            return trim;
+        }
     }
 }

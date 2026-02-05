@@ -5,10 +5,10 @@ import org.jetbrains.annotations.NotNull;
 public final class Ref<T> {
 
     /* renamed from: a  reason: collision with root package name */
-    private Object f35131a;
+    private Object f34655a;
 
     @NotNull
     public final T getValue() {
-        return (T) this.f35131a;
+        return (T) this.f34655a;
     }
 }

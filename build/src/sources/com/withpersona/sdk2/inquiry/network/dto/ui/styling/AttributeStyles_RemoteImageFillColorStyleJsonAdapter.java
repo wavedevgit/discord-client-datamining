@@ -42,7 +42,7 @@ public final class AttributeStyles_RemoteImageFillColorStyleJsonAdapter extends 
     @NotNull
     public AttributeStyles.RemoteImageFillColorStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         StyleElements.SimpleElementColor simpleElementColor3 = null;
@@ -50,7 +50,7 @@ public final class AttributeStyles_RemoteImageFillColorStyleJsonAdapter extends 
         StyleElements.SimpleElementColor simpleElementColor5 = null;
         StyleElements.SimpleElementColor simpleElementColor6 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -75,7 +75,7 @@ public final class AttributeStyles_RemoteImageFillColorStyleJsonAdapter extends 
                     break;
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.RemoteImageFillColorStyle(simpleElementColor, simpleElementColor2, simpleElementColor3, simpleElementColor4, simpleElementColor5, simpleElementColor6);
     }
 
@@ -83,18 +83,18 @@ public final class AttributeStyles_RemoteImageFillColorStyleJsonAdapter extends 
     public void toJson(@NotNull t writer, AttributeStyles.RemoteImageFillColorStyle remoteImageFillColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (remoteImageFillColorStyle != null) {
-            writer.l();
-            writer.A0("fill");
+            writer.k();
+            writer.W("fill");
             this.nullableSimpleElementColorAdapter.toJson(writer, remoteImageFillColorStyle.getFill());
-            writer.A0("highlight");
+            writer.W("highlight");
             this.nullableSimpleElementColorAdapter.toJson(writer, remoteImageFillColorStyle.getHighlight());
-            writer.A0(AppStateModule.APP_STATE_BACKGROUND);
+            writer.W(AppStateModule.APP_STATE_BACKGROUND);
             this.nullableSimpleElementColorAdapter.toJson(writer, remoteImageFillColorStyle.getBackground());
-            writer.A0("originalFill");
+            writer.W("originalFill");
             this.nullableSimpleElementColorAdapter.toJson(writer, remoteImageFillColorStyle.getOriginalFill());
-            writer.A0("originalHighlight");
+            writer.W("originalHighlight");
             this.nullableSimpleElementColorAdapter.toJson(writer, remoteImageFillColorStyle.getOriginalHighlight());
-            writer.A0("originalBackground");
+            writer.W("originalBackground");
             this.nullableSimpleElementColorAdapter.toJson(writer, remoteImageFillColorStyle.getOriginalBackground());
             writer.E();
             return;

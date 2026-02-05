@@ -7,7 +7,7 @@ import android.os.IInterface;
 public interface j extends IInterface {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class a extends hg.e implements j {
+    public static abstract class a extends hg.n implements j {
         public static j f(IBinder iBinder) {
             if (iBinder == null) {
                 return null;
@@ -16,7 +16,7 @@ public interface j extends IInterface {
             if (queryLocalInterface instanceof j) {
                 return (j) queryLocalInterface;
             }
-            return new r1(iBinder);
+            return new n1(iBinder);
         }
     }
 

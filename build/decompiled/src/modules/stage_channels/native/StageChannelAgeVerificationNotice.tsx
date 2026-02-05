@@ -524,4 +524,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.DividerPosition = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 4248, 1234, 3941, 3138, 1684, 5932, 4555, 3266, 6444, 6442, 4247, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 4248, 1234, 3941, 3138, 1684, 5936, 4555, 3266, 6464, 6462, 4247, 2]);

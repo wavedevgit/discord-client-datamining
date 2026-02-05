@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         '__packager_asset': true,
         'httpServerLocation': '/assets/modules/checkout/messages',
         'scales': null,
-        'hash': 'fbec15cea7fa3a1e23d11552bb7aaf04',
+        'hash': 'fa515909c302cd42a9eb29fe471a5cd3',
         'name': 'Checkout.compiled.messages',
         'type': 'jsona'
     };

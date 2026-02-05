@@ -11,7 +11,7 @@ public abstract class b extends Binder implements IInterface {
         attachInterface(this, str);
     }
 
-    protected abstract boolean S0(int i10, Parcel parcel, Parcel parcel2, int i11);
+    protected abstract boolean W0(int i10, Parcel parcel, Parcel parcel2, int i11);
 
     @Override // android.os.Binder
     public final boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
@@ -22,7 +22,7 @@ public abstract class b extends Binder implements IInterface {
         } else {
             parcel.enforceInterface(getInterfaceDescriptor());
         }
-        return S0(i10, parcel, parcel2, i11);
+        return W0(i10, parcel, parcel2, i11);
     }
 
     @Override // android.os.IInterface

@@ -22,7 +22,7 @@ public final class d2 implements k0 {
     }
 
     @Override // io.sentry.k0
-    public k0.a x0() {
+    public k0.a y0() {
         return k0.a.UNKNOWN;
     }
 }

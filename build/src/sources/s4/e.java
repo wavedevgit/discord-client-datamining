@@ -15,16 +15,16 @@ import p4.z;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f49180a;
+    private static final String f49329a;
 
     static {
         String i10 = m.i("DiagnosticsWrkr");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"DiagnosticsWrkr\")");
-        f49180a = i10;
+        f49329a = i10;
     }
 
     private static final String c(u uVar, String str, Integer num, String str2) {
-        return '\n' + uVar.f44958a + "\t " + uVar.f44960c + "\t " + num + "\t " + uVar.f44959b.name() + "\t " + str + "\t " + str2 + '\t';
+        return '\n' + uVar.f44888a + "\t " + uVar.f44890c + "\t " + num + "\t " + uVar.f44889b.name() + "\t " + str + "\t " + str2 + '\t';
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -37,11 +37,11 @@ public abstract class e {
             u uVar = (u) it.next();
             i a10 = jVar.a(x.a(uVar));
             if (a10 != null) {
-                num = Integer.valueOf(a10.f44933c);
+                num = Integer.valueOf(a10.f44863c);
             } else {
                 num = null;
             }
-            sb2.append(c(uVar, CollectionsKt.x0(oVar.a(uVar.f44958a), ",", null, null, 0, null, null, 62, null), num, CollectionsKt.x0(zVar.a(uVar.f44958a), ",", null, null, 0, null, null, 62, null)));
+            sb2.append(c(uVar, CollectionsKt.x0(oVar.a(uVar.f44888a), ",", null, null, 0, null, null, 62, null), num, CollectionsKt.x0(zVar.a(uVar.f44888a), ",", null, null, 0, null, null, 62, null)));
         }
         String sb3 = sb2.toString();
         Intrinsics.checkNotNullExpressionValue(sb3, "StringBuilder().apply(builderAction).toString()");

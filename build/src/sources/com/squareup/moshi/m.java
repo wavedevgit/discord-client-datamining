@@ -11,55 +11,55 @@ import okio.ByteString;
 public abstract class m implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    int f17524d;
+    int f17930d;
 
     /* renamed from: e  reason: collision with root package name */
-    int[] f17525e;
+    int[] f17931e;
 
     /* renamed from: i  reason: collision with root package name */
-    String[] f17526i;
+    String[] f17932i;
 
     /* renamed from: o  reason: collision with root package name */
-    int[] f17527o;
+    int[] f17933o;
 
     /* renamed from: p  reason: collision with root package name */
-    boolean f17528p;
+    boolean f17934p;
 
     /* renamed from: q  reason: collision with root package name */
-    boolean f17529q;
+    boolean f17935q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f17530a;
+        static final /* synthetic */ int[] f17936a;
 
         static {
             int[] iArr = new int[c.values().length];
-            f17530a = iArr;
+            f17936a = iArr;
             try {
                 iArr[c.BEGIN_ARRAY.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f17530a[c.BEGIN_OBJECT.ordinal()] = 2;
+                f17936a[c.BEGIN_OBJECT.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f17530a[c.STRING.ordinal()] = 3;
+                f17936a[c.STRING.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f17530a[c.NUMBER.ordinal()] = 4;
+                f17936a[c.NUMBER.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f17530a[c.BOOLEAN.ordinal()] = 5;
+                f17936a[c.BOOLEAN.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f17530a[c.NULL.ordinal()] = 6;
+                f17936a[c.NULL.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
         }
@@ -69,14 +69,14 @@ public abstract class m implements Closeable {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        final String[] f17531a;
+        final String[] f17937a;
 
         /* renamed from: b  reason: collision with root package name */
-        final lu.a0 f17532b;
+        final ou.a0 f17938b;
 
-        private b(String[] strArr, lu.a0 a0Var) {
-            this.f17531a = strArr;
-            this.f17532b = a0Var;
+        private b(String[] strArr, ou.a0 a0Var) {
+            this.f17937a = strArr;
+            this.f17938b = a0Var;
         }
 
         public static b a(String... strArr) {
@@ -88,7 +88,7 @@ public abstract class m implements Closeable {
                     buffer.readByte();
                     byteStringArr[i10] = buffer.L1();
                 }
-                return new b((String[]) strArr.clone(), lu.a0.k(byteStringArr));
+                return new b((String[]) strArr.clone(), ou.a0.l(byteStringArr));
             } catch (IOException e10) {
                 throw new AssertionError(e10);
             }
@@ -111,21 +111,19 @@ public abstract class m implements Closeable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m() {
-        this.f17525e = new int[32];
-        this.f17526i = new String[32];
-        this.f17527o = new int[32];
+        this.f17931e = new int[32];
+        this.f17932i = new String[32];
+        this.f17933o = new int[32];
     }
 
-    public static m B(BufferedSource bufferedSource) {
+    public static m y(BufferedSource bufferedSource) {
         return new o(bufferedSource);
     }
-
-    public abstract int A0(b bVar);
 
     public abstract int C0(b bVar);
 
     public final void D0(boolean z10) {
-        this.f17529q = z10;
+        this.f17935q = z10;
     }
 
     public abstract c E();
@@ -136,95 +134,97 @@ public abstract class m implements Closeable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final k F0(String str) {
-        throw new k(str + " at path " + q());
+        throw new k(str + " at path " + r());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final j I0(Object obj, Object obj2) {
         if (obj == null) {
-            return new j("Expected " + obj2 + " but was null at path " + q());
+            return new j("Expected " + obj2 + " but was null at path " + r());
         }
-        return new j("Expected " + obj2 + " but was " + obj + ", a " + obj.getClass().getName() + ", at path " + q());
+        return new j("Expected " + obj2 + " but was " + obj + ", a " + obj.getClass().getName() + ", at path " + r());
     }
 
     public abstract void L();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void N(int i10) {
-        int i11 = this.f17524d;
-        int[] iArr = this.f17525e;
+        int i11 = this.f17930d;
+        int[] iArr = this.f17931e;
         if (i11 == iArr.length) {
             if (i11 != 256) {
-                this.f17525e = Arrays.copyOf(iArr, iArr.length * 2);
-                String[] strArr = this.f17526i;
-                this.f17526i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
-                int[] iArr2 = this.f17527o;
-                this.f17527o = Arrays.copyOf(iArr2, iArr2.length * 2);
+                this.f17931e = Arrays.copyOf(iArr, iArr.length * 2);
+                String[] strArr = this.f17932i;
+                this.f17932i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
+                int[] iArr2 = this.f17933o;
+                this.f17933o = Arrays.copyOf(iArr2, iArr2.length * 2);
             } else {
-                throw new j("Nesting too deep at " + q());
+                throw new j("Nesting too deep at " + r());
             }
         }
-        int[] iArr3 = this.f17525e;
-        int i12 = this.f17524d;
-        this.f17524d = i12 + 1;
+        int[] iArr3 = this.f17931e;
+        int i12 = this.f17930d;
+        this.f17930d = i12 + 1;
         iArr3[i12] = i10;
     }
 
     public abstract void P();
 
     public final Object V() {
-        switch (a.f17530a[E().ordinal()]) {
+        switch (a.f17936a[E().ordinal()]) {
             case 1:
                 ArrayList arrayList = new ArrayList();
-                u();
+                v();
                 while (hasNext()) {
                     arrayList.add(V());
                 }
-                s();
+                t();
                 return arrayList;
             case 2:
                 u uVar = new u();
-                r();
+                s();
                 while (hasNext()) {
-                    String l02 = l0();
+                    String m02 = m0();
                     Object V = V();
-                    Object put = uVar.put(l02, V);
+                    Object put = uVar.put(m02, V);
                     if (put != null) {
-                        throw new j("Map key '" + l02 + "' has multiple values at path " + q() + ": " + put + " and " + V);
+                        throw new j("Map key '" + m02 + "' has multiple values at path " + r() + ": " + put + " and " + V);
                     }
                 }
-                y();
+                z();
                 return uVar;
             case 3:
                 return f1();
             case 4:
                 return Double.valueOf(nextDouble());
             case 5:
-                return Boolean.valueOf(l());
+                return Boolean.valueOf(k());
             case 6:
-                return n();
+                return m();
             default:
-                throw new IllegalStateException("Expected a value but was " + E() + " at path " + q());
+                throw new IllegalStateException("Expected a value but was " + E() + " at path " + r());
         }
     }
 
+    public abstract int W(b bVar);
+
     public final boolean a() {
-        return this.f17529q;
+        return this.f17935q;
     }
 
     public abstract String f1();
 
     public final boolean h() {
-        return this.f17528p;
+        return this.f17934p;
     }
 
     public abstract boolean hasNext();
 
-    public abstract boolean l();
+    public abstract boolean k();
 
-    public abstract String l0();
+    public abstract Object m();
 
-    public abstract Object n();
+    public abstract String m0();
 
     public abstract double nextDouble();
 
@@ -232,31 +232,31 @@ public abstract class m implements Closeable {
 
     public abstract long nextLong();
 
-    public final String q() {
-        return n.a(this.f17524d, this.f17525e, this.f17526i, this.f17527o);
-    }
+    public abstract BufferedSource o();
 
-    public abstract void r();
+    public final String r() {
+        return n.a(this.f17930d, this.f17931e, this.f17932i, this.f17933o);
+    }
 
     public abstract void s();
 
-    public abstract void u();
+    public abstract void t();
 
-    public final void v(boolean z10) {
-        this.f17528p = z10;
+    public abstract void v();
+
+    public final void w(boolean z10) {
+        this.f17934p = z10;
     }
 
-    public abstract BufferedSource x();
-
-    public abstract void y();
+    public abstract void z();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m(m mVar) {
-        this.f17524d = mVar.f17524d;
-        this.f17525e = (int[]) mVar.f17525e.clone();
-        this.f17526i = (String[]) mVar.f17526i.clone();
-        this.f17527o = (int[]) mVar.f17527o.clone();
-        this.f17528p = mVar.f17528p;
-        this.f17529q = mVar.f17529q;
+        this.f17930d = mVar.f17930d;
+        this.f17931e = (int[]) mVar.f17931e.clone();
+        this.f17932i = (String[]) mVar.f17932i.clone();
+        this.f17933o = (int[]) mVar.f17933o.clone();
+        this.f17934p = mVar.f17934p;
+        this.f17935q = mVar.f17935q;
     }
 }

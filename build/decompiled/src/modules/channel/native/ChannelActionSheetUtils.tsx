@@ -46,4 +46,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.copyGuildChannelOrThreadLink = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4236, 5291, 3147, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4236, 5295, 3147, 2]);

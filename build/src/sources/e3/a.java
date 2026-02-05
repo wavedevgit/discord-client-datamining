@@ -54,151 +54,151 @@ public class a {
     private static final SimpleDateFormat W;
 
     /* renamed from: a0  reason: collision with root package name */
-    private static final e[] f21266a0;
+    private static final e[] f21338a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    private static final e[] f21267b0;
+    private static final e[] f21339b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    private static final e[] f21268c0;
+    private static final e[] f21340c0;
 
     /* renamed from: d0  reason: collision with root package name */
-    private static final e[] f21269d0;
+    private static final e[] f21341d0;
 
     /* renamed from: e0  reason: collision with root package name */
-    private static final e[] f21270e0;
+    private static final e[] f21342e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    private static final e f21271f0;
+    private static final e f21343f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private static final e[] f21272g0;
+    private static final e[] f21344g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    private static final e[] f21273h0;
+    private static final e[] f21345h0;
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final e[] f21274i0;
+    private static final e[] f21346i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private static final e[] f21275j0;
+    private static final e[] f21347j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    static final e[][] f21276k0;
+    static final e[][] f21348k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private static final e[] f21277l0;
+    private static final e[] f21349l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private static final HashMap[] f21278m0;
+    private static final HashMap[] f21350m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private static final HashMap[] f21279n0;
+    private static final HashMap[] f21351n0;
 
     /* renamed from: o0  reason: collision with root package name */
-    private static final Set f21280o0;
+    private static final Set f21352o0;
 
     /* renamed from: p0  reason: collision with root package name */
-    private static final HashMap f21281p0;
+    private static final HashMap f21353p0;
 
     /* renamed from: q0  reason: collision with root package name */
-    private static final Charset f21282q0;
+    private static final Charset f21354q0;
 
     /* renamed from: r0  reason: collision with root package name */
-    static final byte[] f21283r0;
+    static final byte[] f21355r0;
 
     /* renamed from: s0  reason: collision with root package name */
-    private static final byte[] f21284s0;
+    private static final byte[] f21356s0;
 
     /* renamed from: t0  reason: collision with root package name */
-    private static final Pattern f21285t0;
+    private static final Pattern f21357t0;
 
     /* renamed from: u0  reason: collision with root package name */
-    private static final Pattern f21286u0;
+    private static final Pattern f21358u0;
 
     /* renamed from: v0  reason: collision with root package name */
-    private static final Pattern f21287v0;
+    private static final Pattern f21359v0;
 
     /* renamed from: w0  reason: collision with root package name */
-    private static final Pattern f21289w0;
+    private static final Pattern f21361w0;
 
     /* renamed from: a  reason: collision with root package name */
-    private String f21293a;
+    private String f21365a;
 
     /* renamed from: b  reason: collision with root package name */
-    private FileDescriptor f21294b;
+    private FileDescriptor f21366b;
 
     /* renamed from: c  reason: collision with root package name */
-    private AssetManager.AssetInputStream f21295c;
+    private AssetManager.AssetInputStream f21367c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f21296d;
+    private int f21368d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f21297e;
+    private boolean f21369e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final HashMap[] f21298f;
+    private final HashMap[] f21370f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Set f21299g;
+    private Set f21371g;
 
     /* renamed from: h  reason: collision with root package name */
-    private ByteOrder f21300h;
+    private ByteOrder f21372h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f21301i;
+    private boolean f21373i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f21302j;
+    private boolean f21374j;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f21303k;
+    private boolean f21375k;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f21304l;
+    private int f21376l;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f21305m;
+    private int f21377m;
 
     /* renamed from: n  reason: collision with root package name */
-    private byte[] f21306n;
+    private byte[] f21378n;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f21307o;
+    private int f21379o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f21308p;
+    private int f21380p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f21309q;
+    private int f21381q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f21310r;
+    private int f21382r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f21311s;
+    private int f21383s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f21312t;
+    private boolean f21384t;
 
     /* renamed from: u  reason: collision with root package name */
-    private d f21313u;
+    private d f21385u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f21314v;
+    private boolean f21386v;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final boolean f21288w = Log.isLoggable("ExifInterface", 3);
+    private static final boolean f21360w = Log.isLoggable("ExifInterface", 3);
 
     /* renamed from: x  reason: collision with root package name */
-    private static final List f21290x = Arrays.asList(1, 6, 3, 8);
+    private static final List f21362x = Arrays.asList(1, 6, 3, 8);
 
     /* renamed from: y  reason: collision with root package name */
-    private static final List f21291y = Arrays.asList(2, 7, 4, 5);
+    private static final List f21363y = Arrays.asList(2, 7, 4, 5);
 
     /* renamed from: z  reason: collision with root package name */
-    public static final int[] f21292z = {8, 8, 8};
+    public static final int[] f21364z = {8, 8, 8};
     public static final int[] A = {4};
     public static final int[] B = {8};
     static final byte[] C = {-1, -40, -1};
@@ -229,75 +229,75 @@ public class a {
     public static class c extends FilterOutputStream {
 
         /* renamed from: d  reason: collision with root package name */
-        final DataOutputStream f21323d;
+        final DataOutputStream f21395d;
 
         /* renamed from: e  reason: collision with root package name */
-        private ByteOrder f21324e;
+        private ByteOrder f21396e;
 
         public c(OutputStream outputStream, ByteOrder byteOrder) {
             super(outputStream);
-            this.f21323d = new DataOutputStream(outputStream);
-            this.f21324e = byteOrder;
-        }
-
-        public void B(int i10) {
-            if (i10 <= 65535) {
-                n((short) i10);
-                return;
-            }
-            throw new IllegalArgumentException("val is larger than the maximum value of a 16-bit unsigned integer");
+            this.f21395d = new DataOutputStream(outputStream);
+            this.f21396e = byteOrder;
         }
 
         public void a(ByteOrder byteOrder) {
-            this.f21324e = byteOrder;
+            this.f21396e = byteOrder;
         }
 
         public void h(int i10) {
-            this.f21323d.write(i10);
+            this.f21395d.write(i10);
         }
 
-        public void l(int i10) {
-            ByteOrder byteOrder = this.f21324e;
+        public void k(int i10) {
+            ByteOrder byteOrder = this.f21396e;
             if (byteOrder == ByteOrder.LITTLE_ENDIAN) {
-                this.f21323d.write(i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
-                this.f21323d.write((i10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
-                this.f21323d.write((i10 >>> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
-                this.f21323d.write((i10 >>> 24) & SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f21395d.write(i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f21395d.write((i10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f21395d.write((i10 >>> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f21395d.write((i10 >>> 24) & SetSpanOperation.SPAN_MAX_PRIORITY);
             } else if (byteOrder == ByteOrder.BIG_ENDIAN) {
-                this.f21323d.write((i10 >>> 24) & SetSpanOperation.SPAN_MAX_PRIORITY);
-                this.f21323d.write((i10 >>> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
-                this.f21323d.write((i10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
-                this.f21323d.write(i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f21395d.write((i10 >>> 24) & SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f21395d.write((i10 >>> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f21395d.write((i10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f21395d.write(i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
             }
         }
 
-        public void n(short s10) {
-            ByteOrder byteOrder = this.f21324e;
+        public void m(short s10) {
+            ByteOrder byteOrder = this.f21396e;
             if (byteOrder == ByteOrder.LITTLE_ENDIAN) {
-                this.f21323d.write(s10 & 255);
-                this.f21323d.write((s10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f21395d.write(s10 & 255);
+                this.f21395d.write((s10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
             } else if (byteOrder == ByteOrder.BIG_ENDIAN) {
-                this.f21323d.write((s10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
-                this.f21323d.write(s10 & 255);
+                this.f21395d.write((s10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f21395d.write(s10 & 255);
             }
         }
 
-        @Override // java.io.FilterOutputStream, java.io.OutputStream
-        public void write(byte[] bArr) {
-            this.f21323d.write(bArr);
-        }
-
-        public void x(long j10) {
+        public void o(long j10) {
             if (j10 <= 4294967295L) {
-                l((int) j10);
+                k((int) j10);
                 return;
             }
             throw new IllegalArgumentException("val is larger than the maximum value of a 32-bit unsigned integer");
         }
 
         @Override // java.io.FilterOutputStream, java.io.OutputStream
+        public void write(byte[] bArr) {
+            this.f21395d.write(bArr);
+        }
+
+        public void y(int i10) {
+            if (i10 <= 65535) {
+                m((short) i10);
+                return;
+            }
+            throw new IllegalArgumentException("val is larger than the maximum value of a 16-bit unsigned integer");
+        }
+
+        @Override // java.io.FilterOutputStream, java.io.OutputStream
         public void write(byte[] bArr, int i10, int i11) {
-            this.f21323d.write(bArr, i10, i11);
+            this.f21395d.write(bArr, i10, i11);
         }
     }
 
@@ -306,16 +306,16 @@ public class a {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f21325a;
+        public final int f21397a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f21326b;
+        public final int f21398b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final long f21327c;
+        public final long f21399c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final byte[] f21328d;
+        public final byte[] f21400d;
 
         d(int i10, int i11, byte[] bArr) {
             this(i10, i11, -1L, bArr);
@@ -325,7 +325,7 @@ public class a {
             if (str.length() == 1 && str.charAt(0) >= '0' && str.charAt(0) <= '1') {
                 return new d(1, 1, new byte[]{(byte) (str.charAt(0) - '0')});
             }
-            byte[] bytes = str.getBytes(a.f21282q0);
+            byte[] bytes = str.getBytes(a.f21354q0);
             return new d(1, bytes.length, bytes);
         }
 
@@ -351,14 +351,14 @@ public class a {
             ByteBuffer wrap = ByteBuffer.wrap(new byte[a.Y[10] * fVarArr.length]);
             wrap.order(byteOrder);
             for (f fVar : fVarArr) {
-                wrap.putInt((int) fVar.f21333a);
-                wrap.putInt((int) fVar.f21334b);
+                wrap.putInt((int) fVar.f21405a);
+                wrap.putInt((int) fVar.f21406b);
             }
             return new d(10, fVarArr.length, wrap.array());
         }
 
         public static d e(String str) {
-            byte[] bytes = (str + (char) 0).getBytes(a.f21282q0);
+            byte[] bytes = (str + (char) 0).getBytes(a.f21354q0);
             return new d(2, bytes.length, bytes);
         }
 
@@ -383,8 +383,8 @@ public class a {
             ByteBuffer wrap = ByteBuffer.wrap(new byte[a.Y[5] * fVarArr.length]);
             wrap.order(byteOrder);
             for (f fVar : fVarArr) {
-                wrap.putInt((int) fVar.f21333a);
-                wrap.putInt((int) fVar.f21334b);
+                wrap.putInt((int) fVar.f21405a);
+                wrap.putInt((int) fVar.f21406b);
             }
             return new d(5, fVarArr.length, wrap.array());
         }
@@ -509,9 +509,9 @@ public class a {
             } else {
                 f[] fVarArr = (f[]) o10;
                 while (i10 < fVarArr.length) {
-                    sb2.append(fVarArr[i10].f21333a);
+                    sb2.append(fVarArr[i10].f21405a);
                     sb2.append('/');
-                    sb2.append(fVarArr[i10].f21334b);
+                    sb2.append(fVarArr[i10].f21406b);
                     i10++;
                     if (i10 != fVarArr.length) {
                         sb2.append(",");
@@ -545,18 +545,18 @@ public class a {
         }
 
         public int p() {
-            return a.Y[this.f21325a] * this.f21326b;
+            return a.Y[this.f21397a] * this.f21398b;
         }
 
         public String toString() {
-            return "(" + a.X[this.f21325a] + ", data length:" + this.f21328d.length + ")";
+            return "(" + a.X[this.f21397a] + ", data length:" + this.f21400d.length + ")";
         }
 
         d(int i10, int i11, long j10, byte[] bArr) {
-            this.f21325a = i10;
-            this.f21326b = i11;
-            this.f21327c = j10;
-            this.f21328d = bArr;
+            this.f21397a = i10;
+            this.f21398b = i11;
+            this.f21399c = j10;
+            this.f21400d = bArr;
         }
     }
 
@@ -565,12 +565,12 @@ public class a {
     public static class f {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long f21333a;
+        public final long f21405a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f21334b;
+        public final long f21406b;
 
-        /* synthetic */ f(long j10, long j11, C0275a c0275a) {
+        /* synthetic */ f(long j10, long j11, C0290a c0290a) {
             this(j10, j11);
         }
 
@@ -614,56 +614,56 @@ public class a {
         }
 
         public double a() {
-            return this.f21333a / this.f21334b;
+            return this.f21405a / this.f21406b;
         }
 
         public String toString() {
-            return this.f21333a + "/" + this.f21334b;
+            return this.f21405a + "/" + this.f21406b;
         }
 
         private f(long j10, long j11) {
             if (j11 == 0) {
-                this.f21333a = 0L;
-                this.f21334b = 1L;
+                this.f21405a = 0L;
+                this.f21406b = 1L;
                 return;
             }
-            this.f21333a = j10;
-            this.f21334b = j11;
+            this.f21405a = j10;
+            this.f21406b = j11;
         }
     }
 
     static {
         e[] eVarArr;
         e[] eVarArr2 = {new e("NewSubfileType", 254, 4), new e("SubfileType", SetSpanOperation.SPAN_MAX_PRIORITY, 4), new e("ImageWidth", IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, 3, 4), new e("ImageLength", 257, 3, 4), new e("BitsPerSample", 258, 3), new e("Compression", 259, 3), new e("PhotometricInterpretation", 262, 3), new e("ImageDescription", 270, 2), new e("Make", 271, 2), new e("Model", 272, 2), new e("StripOffsets", 273, 3, 4), new e("Orientation", 274, 3), new e("SamplesPerPixel", 277, 3), new e("RowsPerStrip", 278, 3, 4), new e("StripByteCounts", 279, 3, 4), new e("XResolution", 282, 5), new e("YResolution", 283, 5), new e("PlanarConfiguration", 284, 3), new e("ResolutionUnit", 296, 3), new e("TransferFunction", 301, 3), new e("Software", 305, 2), new e("DateTime", 306, 2), new e("Artist", 315, 2), new e("WhitePoint", 318, 5), new e("PrimaryChromaticities", 319, 5), new e("SubIFDPointer", 330, 4), new e("JPEGInterchangeFormat", 513, 4), new e("JPEGInterchangeFormatLength", 514, 4), new e("YCbCrCoefficients", 529, 5), new e("YCbCrSubSampling", 530, 3), new e("YCbCrPositioning", 531, 3), new e("ReferenceBlackWhite", 532, 5), new e("Copyright", 33432, 2), new e("ExifIFDPointer", 34665, 4), new e("GPSInfoIFDPointer", 34853, 4), new e("SensorTopBorder", 4, 4), new e("SensorLeftBorder", 5, 4), new e("SensorBottomBorder", 6, 4), new e("SensorRightBorder", 7, 4), new e("ISO", 23, 3), new e("JpgFromRaw", 46, 7), new e("Xmp", ReactFontManager.TypefaceStyle.BOLD, 1)};
-        f21266a0 = eVarArr2;
+        f21338a0 = eVarArr2;
         e[] eVarArr3 = {new e("ExposureTime", 33434, 5), new e("FNumber", 33437, 5), new e("ExposureProgram", 34850, 3), new e("SpectralSensitivity", 34852, 2), new e("PhotographicSensitivity", 34855, 3), new e("OECF", 34856, 7), new e("SensitivityType", 34864, 3), new e("StandardOutputSensitivity", 34865, 4), new e("RecommendedExposureIndex", 34866, 4), new e("ISOSpeed", 34867, 4), new e("ISOSpeedLatitudeyyy", 34868, 4), new e("ISOSpeedLatitudezzz", 34869, 4), new e("ExifVersion", 36864, 2), new e("DateTimeOriginal", 36867, 2), new e("DateTimeDigitized", 36868, 2), new e("OffsetTime", 36880, 2), new e("OffsetTimeOriginal", 36881, 2), new e("OffsetTimeDigitized", 36882, 2), new e("ComponentsConfiguration", 37121, 7), new e("CompressedBitsPerPixel", 37122, 5), new e("ShutterSpeedValue", 37377, 10), new e("ApertureValue", 37378, 5), new e("BrightnessValue", 37379, 10), new e("ExposureBiasValue", 37380, 10), new e("MaxApertureValue", 37381, 5), new e("SubjectDistance", 37382, 5), new e("MeteringMode", 37383, 3), new e("LightSource", 37384, 3), new e("Flash", 37385, 3), new e("FocalLength", 37386, 5), new e("SubjectArea", 37396, 3), new e("MakerNote", 37500, 7), new e("UserComment", 37510, 7), new e("SubSecTime", 37520, 2), new e("SubSecTimeOriginal", 37521, 2), new e("SubSecTimeDigitized", 37522, 2), new e("FlashpixVersion", 40960, 7), new e("ColorSpace", 40961, 3), new e("PixelXDimension", 40962, 3, 4), new e("PixelYDimension", 40963, 3, 4), new e("RelatedSoundFile", 40964, 2), new e("InteroperabilityIFDPointer", 40965, 4), new e("FlashEnergy", 41483, 5), new e("SpatialFrequencyResponse", 41484, 7), new e("FocalPlaneXResolution", 41486, 5), new e("FocalPlaneYResolution", 41487, 5), new e("FocalPlaneResolutionUnit", 41488, 3), new e("SubjectLocation", 41492, 3), new e("ExposureIndex", 41493, 5), new e("SensingMethod", 41495, 3), new e("FileSource", 41728, 7), new e("SceneType", 41729, 7), new e("CFAPattern", 41730, 7), new e("CustomRendered", 41985, 3), new e("ExposureMode", 41986, 3), new e("WhiteBalance", 41987, 3), new e("DigitalZoomRatio", 41988, 5), new e("FocalLengthIn35mmFilm", 41989, 3), new e("SceneCaptureType", 41990, 3), new e("GainControl", 41991, 3), new e("Contrast", 41992, 3), new e("Saturation", 41993, 3), new e("Sharpness", 41994, 3), new e("DeviceSettingDescription", 41995, 7), new e("SubjectDistanceRange", 41996, 3), new e("ImageUniqueID", 42016, 2), new e("CameraOwnerName", 42032, 2), new e("BodySerialNumber", 42033, 2), new e("LensSpecification", 42034, 5), new e("LensMake", 42035, 2), new e("LensModel", 42036, 2), new e("Gamma", 42240, 5), new e("DNGVersion", 50706, 1), new e("DefaultCropSize", 50720, 3, 4)};
-        f21267b0 = eVarArr3;
+        f21339b0 = eVarArr3;
         e[] eVarArr4 = {new e("GPSVersionID", 0, 1), new e("GPSLatitudeRef", 1, 2), new e("GPSLatitude", 2, 5, 10), new e("GPSLongitudeRef", 3, 2), new e("GPSLongitude", 4, 5, 10), new e("GPSAltitudeRef", 5, 1), new e("GPSAltitude", 6, 5), new e("GPSTimeStamp", 7, 5), new e("GPSSatellites", 8, 2), new e("GPSStatus", 9, 2), new e("GPSMeasureMode", 10, 2), new e("GPSDOP", 11, 5), new e("GPSSpeedRef", 12, 2), new e("GPSSpeed", 13, 5), new e("GPSTrackRef", 14, 2), new e("GPSTrack", 15, 5), new e("GPSImgDirectionRef", 16, 2), new e("GPSImgDirection", 17, 5), new e("GPSMapDatum", 18, 2), new e("GPSDestLatitudeRef", 19, 2), new e("GPSDestLatitude", 20, 5), new e("GPSDestLongitudeRef", 21, 2), new e("GPSDestLongitude", 22, 5), new e("GPSDestBearingRef", 23, 2), new e("GPSDestBearing", 24, 5), new e("GPSDestDistanceRef", 25, 2), new e("GPSDestDistance", 26, 5), new e("GPSProcessingMethod", 27, 7), new e("GPSAreaInformation", 28, 7), new e("GPSDateStamp", 29, 2), new e("GPSDifferential", 30, 3), new e("GPSHPositioningError", 31, 5)};
-        f21268c0 = eVarArr4;
+        f21340c0 = eVarArr4;
         e[] eVarArr5 = {new e("InteroperabilityIndex", 1, 2)};
-        f21269d0 = eVarArr5;
+        f21341d0 = eVarArr5;
         e[] eVarArr6 = {new e("NewSubfileType", 254, 4), new e("SubfileType", SetSpanOperation.SPAN_MAX_PRIORITY, 4), new e("ThumbnailImageWidth", IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, 3, 4), new e("ThumbnailImageLength", 257, 3, 4), new e("BitsPerSample", 258, 3), new e("Compression", 259, 3), new e("PhotometricInterpretation", 262, 3), new e("ImageDescription", 270, 2), new e("Make", 271, 2), new e("Model", 272, 2), new e("StripOffsets", 273, 3, 4), new e("ThumbnailOrientation", 274, 3), new e("SamplesPerPixel", 277, 3), new e("RowsPerStrip", 278, 3, 4), new e("StripByteCounts", 279, 3, 4), new e("XResolution", 282, 5), new e("YResolution", 283, 5), new e("PlanarConfiguration", 284, 3), new e("ResolutionUnit", 296, 3), new e("TransferFunction", 301, 3), new e("Software", 305, 2), new e("DateTime", 306, 2), new e("Artist", 315, 2), new e("WhitePoint", 318, 5), new e("PrimaryChromaticities", 319, 5), new e("SubIFDPointer", 330, 4), new e("JPEGInterchangeFormat", 513, 4), new e("JPEGInterchangeFormatLength", 514, 4), new e("YCbCrCoefficients", 529, 5), new e("YCbCrSubSampling", 530, 3), new e("YCbCrPositioning", 531, 3), new e("ReferenceBlackWhite", 532, 5), new e("Copyright", 33432, 2), new e("ExifIFDPointer", 34665, 4), new e("GPSInfoIFDPointer", 34853, 4), new e("DNGVersion", 50706, 1), new e("DefaultCropSize", 50720, 3, 4)};
-        f21270e0 = eVarArr6;
-        f21271f0 = new e("StripOffsets", 273, 3);
+        f21342e0 = eVarArr6;
+        f21343f0 = new e("StripOffsets", 273, 3);
         e[] eVarArr7 = {new e("ThumbnailImage", IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, 7), new e("CameraSettingsIFDPointer", 8224, 4), new e("ImageProcessingIFDPointer", 8256, 4)};
-        f21272g0 = eVarArr7;
+        f21344g0 = eVarArr7;
         e[] eVarArr8 = {new e("PreviewImageStart", 257, 4), new e("PreviewImageLength", 258, 4)};
-        f21273h0 = eVarArr8;
+        f21345h0 = eVarArr8;
         e[] eVarArr9 = {new e("AspectFrame", 4371, 3)};
-        f21274i0 = eVarArr9;
+        f21346i0 = eVarArr9;
         e[] eVarArr10 = {new e("ColorSpace", 55, 3)};
-        f21275j0 = eVarArr10;
+        f21347j0 = eVarArr10;
         e[][] eVarArr11 = {eVarArr2, eVarArr3, eVarArr4, eVarArr5, eVarArr6, eVarArr2, eVarArr7, eVarArr8, eVarArr9, eVarArr10};
-        f21276k0 = eVarArr11;
-        f21277l0 = new e[]{new e("SubIFDPointer", 330, 4), new e("ExifIFDPointer", 34665, 4), new e("GPSInfoIFDPointer", 34853, 4), new e("InteroperabilityIFDPointer", 40965, 4), new e("CameraSettingsIFDPointer", 8224, 1), new e("ImageProcessingIFDPointer", 8256, 1)};
-        f21278m0 = new HashMap[eVarArr11.length];
-        f21279n0 = new HashMap[eVarArr11.length];
-        f21280o0 = Collections.unmodifiableSet(new HashSet(Arrays.asList("FNumber", "DigitalZoomRatio", "ExposureTime", "SubjectDistance")));
-        f21281p0 = new HashMap();
+        f21348k0 = eVarArr11;
+        f21349l0 = new e[]{new e("SubIFDPointer", 330, 4), new e("ExifIFDPointer", 34665, 4), new e("GPSInfoIFDPointer", 34853, 4), new e("InteroperabilityIFDPointer", 40965, 4), new e("CameraSettingsIFDPointer", 8224, 1), new e("ImageProcessingIFDPointer", 8256, 1)};
+        f21350m0 = new HashMap[eVarArr11.length];
+        f21351n0 = new HashMap[eVarArr11.length];
+        f21352o0 = Collections.unmodifiableSet(new HashSet(Arrays.asList("FNumber", "DigitalZoomRatio", "ExposureTime", "SubjectDistance")));
+        f21353p0 = new HashMap();
         Charset forName = Charset.forName("US-ASCII");
-        f21282q0 = forName;
-        f21283r0 = "Exif\u0000\u0000".getBytes(forName);
-        f21284s0 = "http://ns.adobe.com/xap/1.0/\u0000".getBytes(forName);
+        f21354q0 = forName;
+        f21355r0 = "Exif\u0000\u0000".getBytes(forName);
+        f21356s0 = "http://ns.adobe.com/xap/1.0/\u0000".getBytes(forName);
         Locale locale = Locale.US;
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy:MM:dd HH:mm:ss", locale);
         V = simpleDateFormat;
@@ -673,38 +673,38 @@ public class a {
         simpleDateFormat2.setTimeZone(DesugarTimeZone.getTimeZone("UTC"));
         int i10 = 0;
         while (true) {
-            e[][] eVarArr12 = f21276k0;
+            e[][] eVarArr12 = f21348k0;
             if (i10 < eVarArr12.length) {
-                f21278m0[i10] = new HashMap();
-                f21279n0[i10] = new HashMap();
+                f21350m0[i10] = new HashMap();
+                f21351n0[i10] = new HashMap();
                 for (e eVar : eVarArr12[i10]) {
-                    f21278m0[i10].put(Integer.valueOf(eVar.f21329a), eVar);
-                    f21279n0[i10].put(eVar.f21330b, eVar);
+                    f21350m0[i10].put(Integer.valueOf(eVar.f21401a), eVar);
+                    f21351n0[i10].put(eVar.f21402b, eVar);
                 }
                 i10++;
             } else {
-                HashMap hashMap = f21281p0;
-                e[] eVarArr13 = f21277l0;
-                hashMap.put(Integer.valueOf(eVarArr13[0].f21329a), 5);
-                hashMap.put(Integer.valueOf(eVarArr13[1].f21329a), 1);
-                hashMap.put(Integer.valueOf(eVarArr13[2].f21329a), 2);
-                hashMap.put(Integer.valueOf(eVarArr13[3].f21329a), 3);
-                hashMap.put(Integer.valueOf(eVarArr13[4].f21329a), 7);
-                hashMap.put(Integer.valueOf(eVarArr13[5].f21329a), 8);
-                f21285t0 = Pattern.compile(".*[1-9].*");
-                f21286u0 = Pattern.compile("^(\\d{2}):(\\d{2}):(\\d{2})$");
-                f21287v0 = Pattern.compile("^(\\d{4}):(\\d{2}):(\\d{2})\\s(\\d{2}):(\\d{2}):(\\d{2})$");
-                f21289w0 = Pattern.compile("^(\\d{4})-(\\d{2})-(\\d{2})\\s(\\d{2}):(\\d{2}):(\\d{2})$");
+                HashMap hashMap = f21353p0;
+                e[] eVarArr13 = f21349l0;
+                hashMap.put(Integer.valueOf(eVarArr13[0].f21401a), 5);
+                hashMap.put(Integer.valueOf(eVarArr13[1].f21401a), 1);
+                hashMap.put(Integer.valueOf(eVarArr13[2].f21401a), 2);
+                hashMap.put(Integer.valueOf(eVarArr13[3].f21401a), 3);
+                hashMap.put(Integer.valueOf(eVarArr13[4].f21401a), 7);
+                hashMap.put(Integer.valueOf(eVarArr13[5].f21401a), 8);
+                f21357t0 = Pattern.compile(".*[1-9].*");
+                f21358u0 = Pattern.compile("^(\\d{2}):(\\d{2}):(\\d{2})$");
+                f21359v0 = Pattern.compile("^(\\d{4}):(\\d{2}):(\\d{2})\\s(\\d{2}):(\\d{2}):(\\d{2})$");
+                f21361w0 = Pattern.compile("^(\\d{4})-(\\d{2})-(\\d{2})\\s(\\d{2}):(\\d{2}):(\\d{2})$");
                 return;
             }
         }
     }
 
     public a(File file) {
-        e[][] eVarArr = f21276k0;
-        this.f21298f = new HashMap[eVarArr.length];
-        this.f21299g = new HashSet(eVarArr.length);
-        this.f21300h = ByteOrder.BIG_ENDIAN;
+        e[][] eVarArr = f21348k0;
+        this.f21370f = new HashMap[eVarArr.length];
+        this.f21371g = new HashSet(eVarArr.length);
+        this.f21372h = ByteOrder.BIG_ENDIAN;
         if (file != null) {
             G(file.getAbsolutePath());
             return;
@@ -713,14 +713,14 @@ public class a {
     }
 
     private void B(b bVar) {
-        if (f21288w) {
+        if (f21360w) {
             Log.d("ExifInterface", "getWebpAttributes starting with: " + bVar);
         }
-        bVar.x(ByteOrder.LITTLE_ENDIAN);
-        bVar.B(M.length);
+        bVar.o(ByteOrder.LITTLE_ENDIAN);
+        bVar.y(M.length);
         int readInt = bVar.readInt() + 8;
         byte[] bArr = N;
-        bVar.B(bArr.length);
+        bVar.y(bArr.length);
         int length = bArr.length + 8;
         while (true) {
             try {
@@ -731,11 +731,11 @@ public class a {
                 if (Arrays.equals(O, bArr2)) {
                     byte[] bArr3 = new byte[readInt2];
                     bVar.readFully(bArr3);
-                    byte[] bArr4 = f21283r0;
+                    byte[] bArr4 = f21355r0;
                     if (e3.b.f(bArr3, bArr4)) {
                         bArr3 = Arrays.copyOfRange(bArr3, bArr4.length, readInt2);
                     }
-                    this.f21308p = i10;
+                    this.f21380p = i10;
                     X(bArr3, 0);
                     k0(new b(bArr3));
                     return;
@@ -748,7 +748,7 @@ public class a {
                     return;
                 }
                 if (length <= readInt) {
-                    bVar.B(readInt2);
+                    bVar.y(readInt2);
                 } else {
                     throw new IOException("Encountered WebP file with invalid chunk size");
                 }
@@ -842,23 +842,23 @@ public class a {
         d dVar = (d) hashMap.get("JPEGInterchangeFormat");
         d dVar2 = (d) hashMap.get("JPEGInterchangeFormatLength");
         if (dVar != null && dVar2 != null) {
-            int m10 = dVar.m(this.f21300h);
-            int m11 = dVar2.m(this.f21300h);
-            if (this.f21296d == 7) {
-                m10 += this.f21309q;
+            int m10 = dVar.m(this.f21372h);
+            int m11 = dVar2.m(this.f21372h);
+            if (this.f21368d == 7) {
+                m10 += this.f21381q;
             }
             if (m10 > 0 && m11 > 0) {
-                this.f21301i = true;
-                if (this.f21293a == null && this.f21295c == null && this.f21294b == null) {
+                this.f21373i = true;
+                if (this.f21365a == null && this.f21367c == null && this.f21366b == null) {
                     byte[] bArr = new byte[m11];
-                    bVar.B(m10);
+                    bVar.y(m10);
                     bVar.readFully(bArr);
-                    this.f21306n = bArr;
+                    this.f21378n = bArr;
                 }
-                this.f21304l = m10;
-                this.f21305m = m11;
+                this.f21376l = m10;
+                this.f21377m = m11;
             }
-            if (f21288w) {
+            if (f21360w) {
                 Log.d("ExifInterface", "Setting thumbnail attributes with offset: " + m10 + ", length: " + m11);
             }
         }
@@ -869,8 +869,8 @@ public class a {
         d dVar = (d) hashMap.get("StripOffsets");
         d dVar2 = (d) hashMap.get("StripByteCounts");
         if (dVar != null && dVar2 != null) {
-            long[] c10 = e3.b.c(dVar.o(this.f21300h));
-            long[] c11 = e3.b.c(dVar2.o(this.f21300h));
+            long[] c10 = e3.b.c(dVar.o(this.f21372h));
+            long[] c11 = e3.b.c(dVar2.o(this.f21372h));
             if (c10 != null && c10.length != 0) {
                 if (c11 != null && c11.length != 0) {
                     if (c10.length != c11.length) {
@@ -884,9 +884,9 @@ public class a {
                     int i11 = (int) j10;
                     byte[] bArr = new byte[i11];
                     int i12 = 1;
-                    this.f21303k = true;
-                    this.f21302j = true;
-                    this.f21301i = true;
+                    this.f21375k = true;
+                    this.f21374j = true;
+                    this.f21373i = true;
                     int i13 = 0;
                     int i14 = 0;
                     int i15 = 0;
@@ -896,7 +896,7 @@ public class a {
                         if (i13 < c10.length - i12) {
                             i10 = i13;
                             if (i16 + i17 != c10[i10 + 1]) {
-                                this.f21303k = false;
+                                this.f21375k = false;
                             }
                         } else {
                             i10 = i13;
@@ -907,7 +907,7 @@ public class a {
                             return;
                         }
                         try {
-                            bVar.B(i18);
+                            bVar.y(i18);
                             int i19 = i14 + i18;
                             byte[] bArr2 = new byte[i17];
                             try {
@@ -926,10 +926,10 @@ public class a {
                             return;
                         }
                     }
-                    this.f21306n = bArr;
-                    if (this.f21303k) {
-                        this.f21304l = (int) c10[0];
-                        this.f21305m = i11;
+                    this.f21378n = bArr;
+                    if (this.f21375k) {
+                        this.f21376l = (int) c10[0];
+                        this.f21377m = i11;
                         return;
                     }
                     return;
@@ -945,8 +945,8 @@ public class a {
         FileInputStream fileInputStream;
         if (str != null) {
             FileInputStream fileInputStream2 = null;
-            this.f21295c = null;
-            this.f21293a = str;
+            this.f21367c = null;
+            this.f21365a = str;
             try {
                 fileInputStream = new FileInputStream(str);
             } catch (Throwable th2) {
@@ -954,9 +954,9 @@ public class a {
             }
             try {
                 if (O(fileInputStream.getFD())) {
-                    this.f21294b = fileInputStream.getFD();
+                    this.f21366b = fileInputStream.getFD();
                 } else {
-                    this.f21294b = null;
+                    this.f21366b = null;
                 }
                 T(fileInputStream);
                 e3.b.b(fileInputStream);
@@ -993,7 +993,7 @@ public class a {
         } catch (Exception e11) {
             e = e11;
             bVar2 = bVar;
-            if (f21288w) {
+            if (f21360w) {
                 Log.d("ExifInterface", "Exception parsing HEIF file type box.", e);
             }
             if (bVar2 != null) {
@@ -1086,8 +1086,8 @@ public class a {
             b bVar2 = new b(bArr);
             try {
                 ByteOrder W2 = W(bVar2);
-                this.f21300h = W2;
-                bVar2.x(W2);
+                this.f21372h = W2;
+                bVar2.o(W2);
                 short readShort = bVar2.readShort();
                 z10 = (readShort == 20306 || readShort == 21330) ? true : true;
                 bVar2.close();
@@ -1144,8 +1144,8 @@ public class a {
             b bVar2 = new b(bArr);
             try {
                 ByteOrder W2 = W(bVar2);
-                this.f21300h = W2;
-                bVar2.x(W2);
+                this.f21372h = W2;
+                bVar2.o(W2);
                 if (bVar2.readShort() == 85) {
                     z10 = true;
                 }
@@ -1176,7 +1176,7 @@ public class a {
             Os.lseek(fileDescriptor, 0L, OsConstants.SEEK_CUR);
             return true;
         } catch (Exception unused) {
-            if (f21288w) {
+            if (f21360w) {
                 Log.d("ExifInterface", "The file descriptor for the given input is not seekable");
                 return false;
             }
@@ -1189,16 +1189,16 @@ public class a {
         int m10;
         d dVar2 = (d) hashMap.get("BitsPerSample");
         if (dVar2 != null) {
-            int[] iArr = (int[]) dVar2.o(this.f21300h);
-            int[] iArr2 = f21292z;
+            int[] iArr = (int[]) dVar2.o(this.f21372h);
+            int[] iArr2 = f21364z;
             if (Arrays.equals(iArr2, iArr)) {
                 return true;
             }
-            if (this.f21296d == 3 && (dVar = (d) hashMap.get("PhotometricInterpretation")) != null && (((m10 = dVar.m(this.f21300h)) == 1 && Arrays.equals(iArr, B)) || (m10 == 6 && Arrays.equals(iArr, iArr2)))) {
+            if (this.f21368d == 3 && (dVar = (d) hashMap.get("PhotometricInterpretation")) != null && (((m10 = dVar.m(this.f21372h)) == 1 && Arrays.equals(iArr, B)) || (m10 == 6 && Arrays.equals(iArr, iArr2)))) {
                 return true;
             }
         }
-        if (f21288w) {
+        if (f21360w) {
             Log.d("ExifInterface", "Unsupported data type value");
             return false;
         }
@@ -1216,8 +1216,8 @@ public class a {
         d dVar = (d) hashMap.get("ImageLength");
         d dVar2 = (d) hashMap.get("ImageWidth");
         if (dVar != null && dVar2 != null) {
-            int m10 = dVar.m(this.f21300h);
-            int m11 = dVar2.m(this.f21300h);
+            int m10 = dVar.m(this.f21372h);
+            int m11 = dVar2.m(this.f21372h);
             if (m10 <= 512 && m11 <= 512) {
                 return true;
             }
@@ -1265,10 +1265,10 @@ public class a {
             r0 = 0
             r1 = r0
         L2:
-            e3.a$e[][] r2 = e3.a.f21276k0     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
+            e3.a$e[][] r2 = e3.a.f21348k0     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             int r2 = r2.length     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             if (r1 >= r2) goto L1c
-            java.util.HashMap[] r2 = r4.f21298f     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
+            java.util.HashMap[] r2 = r4.f21370f     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             java.util.HashMap r3 = new java.util.HashMap     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             r3.<init>()     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             r2[r1] = r3     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
@@ -1284,31 +1284,31 @@ public class a {
             r5 = move-exception
             goto Lab
         L1c:
-            boolean r1 = r4.f21297e     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
+            boolean r1 = r4.f21369e     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             if (r1 != 0) goto L2e
             java.io.BufferedInputStream r1 = new java.io.BufferedInputStream     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             r2 = 5000(0x1388, float:7.006E-42)
             r1.<init>(r5, r2)     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             int r5 = r4.r(r1)     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
-            r4.f21296d = r5     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
+            r4.f21368d = r5     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             r5 = r1
         L2e:
-            int r1 = r4.f21296d     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
+            int r1 = r4.f21368d     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             boolean r1 = l0(r1)     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             if (r1 == 0) goto L7b
             e3.a$g r0 = new e3.a$g     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             r0.<init>(r5)     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
-            boolean r5 = r4.f21297e     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
+            boolean r5 = r4.f21369e     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             if (r5 == 0) goto L50
             boolean r5 = r4.y(r0)     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             if (r5 != 0) goto L71
             r4.e()
-            boolean r5 = e3.a.f21288w
+            boolean r5 = e3.a.f21360w
             if (r5 == 0) goto Lbe
             r4.V()
             return
         L50:
-            int r5 = r4.f21296d     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
+            int r5 = r4.f21368d     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             r1 = 12
             if (r5 == r1) goto L6e
             r1 = 15
@@ -1330,7 +1330,7 @@ public class a {
         L6e:
             r4.o(r0, r5)     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
         L71:
-            int r5 = r4.f21308p     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
+            int r5 = r4.f21380p     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             long r1 = (long) r5     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             r0.E(r1)     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             r4.k0(r0)     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
@@ -1338,7 +1338,7 @@ public class a {
         L7b:
             e3.a$b r1 = new e3.a$b     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             r1.<init>(r5)     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
-            int r5 = r4.f21296d     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
+            int r5 = r4.f21368d     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
             r2 = 4
             if (r5 != r2) goto L89
             r4.p(r1, r0, r0)     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
@@ -1359,12 +1359,12 @@ public class a {
             r4.B(r1)     // Catch: java.lang.Throwable -> L13 java.lang.UnsupportedOperationException -> L16 java.io.IOException -> L19
         La0:
             r4.e()
-            boolean r5 = e3.a.f21288w
+            boolean r5 = e3.a.f21360w
             if (r5 == 0) goto Lbe
             r4.V()
             return
         Lab:
-            boolean r0 = e3.a.f21288w     // Catch: java.lang.Throwable -> L13
+            boolean r0 = e3.a.f21360w     // Catch: java.lang.Throwable -> L13
             if (r0 == 0) goto Lb6
             java.lang.String r1 = "ExifInterface"
             java.lang.String r2 = "Invalid image: ExifInterface got an unsupported image format file (ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface."
@@ -1377,7 +1377,7 @@ public class a {
             return
         Lbf:
             r4.e()
-            boolean r0 = e3.a.f21288w
+            boolean r0 = e3.a.f21360w
             if (r0 == 0) goto Lc9
             r4.V()
         Lc9:
@@ -1388,10 +1388,10 @@ public class a {
 
     private void U(b bVar) {
         ByteOrder W2 = W(bVar);
-        this.f21300h = W2;
-        bVar.x(W2);
+        this.f21372h = W2;
+        bVar.o(W2);
         int readUnsignedShort = bVar.readUnsignedShort();
-        int i10 = this.f21296d;
+        int i10 = this.f21368d;
         if (i10 != 7 && i10 != 10 && readUnsignedShort != 42) {
             throw new IOException("Invalid start code: " + Integer.toHexString(readUnsignedShort));
         }
@@ -1399,7 +1399,7 @@ public class a {
         if (readInt >= 8) {
             int i11 = readInt - 8;
             if (i11 > 0) {
-                bVar.B(i11);
+                bVar.y(i11);
                 return;
             }
             return;
@@ -1408,11 +1408,11 @@ public class a {
     }
 
     private void V() {
-        for (int i10 = 0; i10 < this.f21298f.length; i10++) {
-            Log.d("ExifInterface", "The size of tag group[" + i10 + "]: " + this.f21298f[i10].size());
-            for (Map.Entry entry : this.f21298f[i10].entrySet()) {
+        for (int i10 = 0; i10 < this.f21370f.length; i10++) {
+            Log.d("ExifInterface", "The size of tag group[" + i10 + "]: " + this.f21370f[i10].size());
+            for (Map.Entry entry : this.f21370f[i10].entrySet()) {
                 d dVar = (d) entry.getValue();
-                Log.d("ExifInterface", "tagName: " + ((String) entry.getKey()) + ", tagType: " + dVar.toString() + ", tagValue: '" + dVar.n(this.f21300h) + "'");
+                Log.d("ExifInterface", "tagName: " + ((String) entry.getKey()) + ", tagType: " + dVar.toString() + ", tagValue: '" + dVar.n(this.f21372h) + "'");
             }
         }
     }
@@ -1421,14 +1421,14 @@ public class a {
         short readShort = bVar.readShort();
         if (readShort != 18761) {
             if (readShort == 19789) {
-                if (f21288w) {
+                if (f21360w) {
                     Log.d("ExifInterface", "readExifSegment: Byte Align MM");
                 }
                 return ByteOrder.BIG_ENDIAN;
             }
             throw new IOException("Invalid byte order: " + Integer.toHexString(readShort));
         }
-        if (f21288w) {
+        if (f21360w) {
             Log.d("ExifInterface", "readExifSegment: Byte Align II");
         }
         return ByteOrder.LITTLE_ENDIAN;
@@ -1457,28 +1457,28 @@ public class a {
     }
 
     private void Z(String str) {
-        for (int i10 = 0; i10 < f21276k0.length; i10++) {
-            this.f21298f[i10].remove(str);
+        for (int i10 = 0; i10 < f21348k0.length; i10++) {
+            this.f21370f[i10].remove(str);
         }
     }
 
     private void a0(int i10, String str, String str2) {
-        if (!this.f21298f[i10].isEmpty() && this.f21298f[i10].get(str) != null) {
-            HashMap hashMap = this.f21298f[i10];
+        if (!this.f21370f[i10].isEmpty() && this.f21370f[i10].get(str) != null) {
+            HashMap hashMap = this.f21370f[i10];
             hashMap.put(str2, (d) hashMap.get(str));
-            this.f21298f[i10].remove(str);
+            this.f21370f[i10].remove(str);
         }
     }
 
     private void b0(g gVar, int i10) {
-        d dVar = (d) this.f21298f[i10].get("ImageLength");
-        d dVar2 = (d) this.f21298f[i10].get("ImageWidth");
+        d dVar = (d) this.f21370f[i10].get("ImageLength");
+        d dVar2 = (d) this.f21370f[i10].get("ImageWidth");
         if (dVar == null || dVar2 == null) {
-            d dVar3 = (d) this.f21298f[i10].get("JPEGInterchangeFormat");
-            d dVar4 = (d) this.f21298f[i10].get("JPEGInterchangeFormatLength");
+            d dVar3 = (d) this.f21370f[i10].get("JPEGInterchangeFormat");
+            d dVar4 = (d) this.f21370f[i10].get("JPEGInterchangeFormatLength");
             if (dVar3 != null && dVar4 != null) {
-                int m10 = dVar3.m(this.f21300h);
-                int m11 = dVar3.m(this.f21300h);
+                int m10 = dVar3.m(this.f21372h);
+                int m11 = dVar3.m(this.f21372h);
                 gVar.E(m10);
                 byte[] bArr = new byte[m11];
                 gVar.readFully(bArr);
@@ -1489,7 +1489,7 @@ public class a {
 
     private void d0(InputStream inputStream, OutputStream outputStream) {
         byte[] bArr;
-        if (f21288w) {
+        if (f21360w) {
             Log.d("ExifInterface", "saveJpegAttributes starting with (inputStream: " + inputStream + ", outputStream: " + outputStream + ")");
         }
         b bVar = new b(inputStream);
@@ -1500,15 +1500,15 @@ public class a {
                 cVar.h(-40);
                 cVar.h(-1);
                 cVar.h(-31);
-                this.f21308p = q0(cVar);
-                if (this.f21313u != null) {
+                this.f21380p = q0(cVar);
+                if (this.f21385u != null) {
                     cVar.write(-1);
                     cVar.h(-31);
-                    byte[] bArr2 = f21284s0;
-                    cVar.B(bArr2.length + 2 + this.f21313u.f21328d.length);
+                    byte[] bArr2 = f21356s0;
+                    cVar.y(bArr2.length + 2 + this.f21385u.f21400d.length);
                     cVar.write(bArr2);
-                    cVar.write(this.f21313u.f21328d);
-                    this.f21314v = true;
+                    cVar.write(this.f21385u.f21400d);
+                    this.f21386v = true;
                 }
                 byte[] bArr3 = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
                 while (bVar.readByte() == -1) {
@@ -1518,7 +1518,7 @@ public class a {
                             cVar.h(-1);
                             cVar.h(readByte);
                             int readUnsignedShort = bVar.readUnsignedShort();
-                            cVar.B(readUnsignedShort);
+                            cVar.y(readUnsignedShort);
                             int i10 = readUnsignedShort - 2;
                             if (i10 >= 0) {
                                 while (i10 > 0) {
@@ -1535,11 +1535,11 @@ public class a {
                             int readUnsignedShort2 = bVar.readUnsignedShort();
                             int i11 = readUnsignedShort2 - 2;
                             if (i11 >= 0) {
-                                byte[] bArr4 = f21284s0;
+                                byte[] bArr4 = f21356s0;
                                 if (i11 >= bArr4.length) {
                                     bArr = new byte[bArr4.length];
                                 } else {
-                                    byte[] bArr5 = f21283r0;
+                                    byte[] bArr5 = f21355r0;
                                     if (i11 >= bArr5.length) {
                                         bArr = new byte[bArr5.length];
                                     } else {
@@ -1548,13 +1548,13 @@ public class a {
                                 }
                                 if (bArr != null) {
                                     bVar.readFully(bArr);
-                                    if (e3.b.f(bArr, f21283r0) || e3.b.f(bArr, bArr4)) {
-                                        bVar.B(i11 - bArr.length);
+                                    if (e3.b.f(bArr, f21355r0) || e3.b.f(bArr, bArr4)) {
+                                        bVar.y(i11 - bArr.length);
                                     }
                                 }
                                 cVar.h(-1);
                                 cVar.h(readByte);
-                                cVar.B(readUnsignedShort2);
+                                cVar.y(readUnsignedShort2);
                                 if (bArr != null) {
                                     i11 -= bArr.length;
                                     cVar.write(bArr);
@@ -1587,19 +1587,19 @@ public class a {
     private void e() {
         String k10 = k("DateTimeOriginal");
         if (k10 != null && k("DateTime") == null) {
-            this.f21298f[0].put("DateTime", d.e(k10));
+            this.f21370f[0].put("DateTime", d.e(k10));
         }
         if (k("ImageWidth") == null) {
-            this.f21298f[0].put("ImageWidth", d.f(0L, this.f21300h));
+            this.f21370f[0].put("ImageWidth", d.f(0L, this.f21372h));
         }
         if (k("ImageLength") == null) {
-            this.f21298f[0].put("ImageLength", d.f(0L, this.f21300h));
+            this.f21370f[0].put("ImageLength", d.f(0L, this.f21372h));
         }
         if (k("Orientation") == null) {
-            this.f21298f[0].put("Orientation", d.f(0L, this.f21300h));
+            this.f21370f[0].put("Orientation", d.f(0L, this.f21372h));
         }
         if (k("LightSource") == null) {
-            this.f21298f[1].put("LightSource", d.f(0L, this.f21300h));
+            this.f21370f[1].put("LightSource", d.f(0L, this.f21372h));
         }
     }
 
@@ -1620,7 +1620,7 @@ public class a {
     private void e0(java.io.InputStream r9, java.io.OutputStream r10) {
         /*
             r8 = this;
-            boolean r0 = e3.a.f21288w
+            boolean r0 = e3.a.f21360w
             if (r0 == 0) goto L27
             java.lang.StringBuilder r0 = new java.lang.StringBuilder
             r0.<init>()
@@ -1644,11 +1644,11 @@ public class a {
             byte[] r10 = e3.a.K
             int r10 = r10.length
             e3.b.e(r0, r9, r10)
-            e3.a$d r10 = r8.f21313u
+            e3.a$d r10 = r8.f21385u
             r1 = 1
             r2 = 0
             if (r10 != 0) goto L43
-            boolean r10 = r8.f21314v
+            boolean r10 = r8.f21386v
             if (r10 == 0) goto L78
         L43:
             r10 = r1
@@ -1664,18 +1664,18 @@ public class a {
             int r4 = r0.readInt()
             r5 = 1229472850(0x49484452, float:820293.1)
             if (r4 != r5) goto L7a
-            r9.l(r3)
-            r9.l(r4)
+            r9.k(r3)
+            r9.k(r4)
             int r3 = r3 + 4
             e3.b.e(r0, r9, r3)
-            int r3 = r8.f21308p
+            int r3 = r8.f21380p
             if (r3 != 0) goto L6d
             r8.r0(r9)
             r1 = r2
         L6d:
-            e3.a$d r3 = r8.f21313u
+            e3.a$d r3 = r8.f21385u
             if (r3 == 0) goto L44
-            boolean r3 = r8.f21314v
+            boolean r3 = r8.f21386v
             if (r3 != 0) goto L44
             r8.s0(r9)
         L78:
@@ -1687,7 +1687,7 @@ public class a {
             if (r1 == 0) goto L8b
             r8.r0(r9)
             int r3 = r3 + 4
-            r0.B(r3)
+            r0.y(r3)
             r1 = r2
             goto L44
         L8b:
@@ -1703,21 +1703,21 @@ public class a {
             int r6 = r6 + 4
             boolean r5 = java.util.Arrays.equals(r7, r5)
             if (r5 == 0) goto Lb0
-            e3.a$d r10 = r8.f21313u
+            e3.a$d r10 = r8.f21385u
             if (r10 == 0) goto Lac
             r8.s0(r9)
         Lac:
-            r0.B(r6)
+            r0.y(r6)
             goto L78
         Lb0:
-            r9.l(r3)
-            r9.l(r4)
+            r9.k(r3)
+            r9.k(r4)
             r9.write(r7)
             e3.b.e(r0, r9, r6)
             goto L44
         Lbd:
-            r9.l(r3)
-            r9.l(r4)
+            r9.k(r3)
+            r9.k(r4)
             int r3 = r3 + 4
             e3.b.e(r0, r9, r3)
             goto L44
@@ -1783,7 +1783,7 @@ public class a {
     private void i(b bVar, c cVar, byte[] bArr) {
         int readInt = bVar.readInt();
         cVar.write(bArr);
-        cVar.l(readInt);
+        cVar.k(readInt);
         if (readInt % 2 == 1) {
             readInt++;
         }
@@ -1791,11 +1791,11 @@ public class a {
     }
 
     private void k0(b bVar) {
-        HashMap hashMap = this.f21298f[4];
+        HashMap hashMap = this.f21370f[4];
         d dVar = (d) hashMap.get("Compression");
         if (dVar != null) {
-            int m10 = dVar.m(this.f21300h);
-            this.f21307o = m10;
+            int m10 = dVar.m(this.f21372h);
+            this.f21379o = m10;
             if (m10 != 1) {
                 if (m10 != 6) {
                     if (m10 != 7) {
@@ -1812,7 +1812,7 @@ public class a {
             }
             return;
         }
-        this.f21307o = 6;
+        this.f21379o = 6;
         E(bVar, hashMap);
     }
 
@@ -1824,30 +1824,30 @@ public class a {
     }
 
     private void m0(int i10, int i11) {
-        if (!this.f21298f[i10].isEmpty() && !this.f21298f[i11].isEmpty()) {
-            d dVar = (d) this.f21298f[i10].get("ImageLength");
-            d dVar2 = (d) this.f21298f[i10].get("ImageWidth");
-            d dVar3 = (d) this.f21298f[i11].get("ImageLength");
-            d dVar4 = (d) this.f21298f[i11].get("ImageWidth");
+        if (!this.f21370f[i10].isEmpty() && !this.f21370f[i11].isEmpty()) {
+            d dVar = (d) this.f21370f[i10].get("ImageLength");
+            d dVar2 = (d) this.f21370f[i10].get("ImageWidth");
+            d dVar3 = (d) this.f21370f[i11].get("ImageLength");
+            d dVar4 = (d) this.f21370f[i11].get("ImageWidth");
             if (dVar != null && dVar2 != null) {
                 if (dVar3 != null && dVar4 != null) {
-                    int m10 = dVar.m(this.f21300h);
-                    int m11 = dVar2.m(this.f21300h);
-                    int m12 = dVar3.m(this.f21300h);
-                    int m13 = dVar4.m(this.f21300h);
+                    int m10 = dVar.m(this.f21372h);
+                    int m11 = dVar2.m(this.f21372h);
+                    int m12 = dVar3.m(this.f21372h);
+                    int m13 = dVar4.m(this.f21372h);
                     if (m10 < m12 && m11 < m13) {
-                        HashMap[] hashMapArr = this.f21298f;
+                        HashMap[] hashMapArr = this.f21370f;
                         HashMap hashMap = hashMapArr[i10];
                         hashMapArr[i10] = hashMapArr[i11];
                         hashMapArr[i11] = hashMap;
                     }
-                } else if (f21288w) {
+                } else if (f21360w) {
                     Log.d("ExifInterface", "Second image does not contain valid size information");
                 }
-            } else if (f21288w) {
+            } else if (f21360w) {
                 Log.d("ExifInterface", "First image does not contain valid size information");
             }
-        } else if (f21288w) {
+        } else if (f21360w) {
             Log.d("ExifInterface", "Cannot perform swap since only one image data exists");
         }
     }
@@ -1857,21 +1857,21 @@ public class a {
         d dVar2;
         if (str != null) {
             if ("ISOSpeedRatings".equals(str)) {
-                if (f21288w) {
+                if (f21360w) {
                     Log.d("ExifInterface", "getExifAttribute: Replacing TAG_ISO_SPEED_RATINGS with TAG_PHOTOGRAPHIC_SENSITIVITY.");
                 }
                 str = "PhotographicSensitivity";
             }
-            if ("Xmp".equals(str) && C(this.f21296d) == 2 && (dVar2 = this.f21313u) != null) {
+            if ("Xmp".equals(str) && C(this.f21368d) == 2 && (dVar2 = this.f21385u) != null) {
                 return dVar2;
             }
-            for (int i10 = 0; i10 < f21276k0.length; i10++) {
-                d dVar3 = (d) this.f21298f[i10].get(str);
+            for (int i10 = 0; i10 < f21348k0.length; i10++) {
+                d dVar3 = (d) this.f21370f[i10].get(str);
                 if (dVar3 != null) {
                     return dVar3;
                 }
             }
-            if ("Xmp".equals(str) && (dVar = this.f21313u) != null) {
+            if ("Xmp".equals(str) && (dVar = this.f21385u) != null) {
                 return dVar;
             }
             return null;
@@ -1899,7 +1899,7 @@ public class a {
             MediaMetadataRetriever mediaMetadataRetriever = new MediaMetadataRetriever();
             try {
                 try {
-                    b.a.a(mediaMetadataRetriever, new C0275a(gVar));
+                    b.a.a(mediaMetadataRetriever, new C0290a(gVar));
                     String extractMetadata = mediaMetadataRetriever.extractMetadata(33);
                     String extractMetadata2 = mediaMetadataRetriever.extractMetadata(34);
                     String extractMetadata3 = mediaMetadataRetriever.extractMetadata(26);
@@ -1918,10 +1918,10 @@ public class a {
                         str3 = null;
                     }
                     if (str != null) {
-                        this.f21298f[0].put("ImageWidth", d.j(Integer.parseInt(str), this.f21300h));
+                        this.f21370f[0].put("ImageWidth", d.j(Integer.parseInt(str), this.f21372h));
                     }
                     if (str3 != null) {
-                        this.f21298f[0].put("ImageLength", d.j(Integer.parseInt(str3), this.f21300h));
+                        this.f21370f[0].put("ImageLength", d.j(Integer.parseInt(str3), this.f21372h));
                     }
                     if (str2 != null) {
                         int parseInt = Integer.parseInt(str2);
@@ -1938,7 +1938,7 @@ public class a {
                         } else {
                             i11 = 6;
                         }
-                        this.f21298f[0].put("Orientation", d.j(i11, this.f21300h));
+                        this.f21370f[0].put("Orientation", d.j(i11, this.f21372h));
                     }
                     if (extractMetadata != null && extractMetadata2 != null) {
                         int parseInt2 = Integer.parseInt(extractMetadata);
@@ -1949,10 +1949,10 @@ public class a {
                             gVar.readFully(bArr);
                             int i13 = parseInt2 + 6;
                             int i14 = parseInt3 - 6;
-                            if (Arrays.equals(bArr, f21283r0)) {
+                            if (Arrays.equals(bArr, f21355r0)) {
                                 byte[] bArr2 = new byte[i14];
                                 gVar.readFully(bArr2);
-                                this.f21308p = i13;
+                                this.f21380p = i13;
                                 X(bArr2, 0);
                             } else {
                                 throw new IOException("Invalid identifier");
@@ -1970,10 +1970,10 @@ public class a {
                         gVar.E(j10);
                         byte[] bArr3 = new byte[parseInt5];
                         gVar.readFully(bArr3);
-                        this.f21313u = new d(1, parseInt5, j10, bArr3);
-                        this.f21314v = true;
+                        this.f21385u = new d(1, parseInt5, j10, bArr3);
+                        this.f21386v = true;
                     }
-                    if (f21288w) {
+                    if (f21360w) {
                         Log.d("ExifInterface", "Heif meta: " + str + "x" + str3 + ", rotation " + str2);
                     }
                     try {
@@ -1999,43 +1999,43 @@ public class a {
     private void o0(g gVar, int i10) {
         d j10;
         d j11;
-        d dVar = (d) this.f21298f[i10].get("DefaultCropSize");
-        d dVar2 = (d) this.f21298f[i10].get("SensorTopBorder");
-        d dVar3 = (d) this.f21298f[i10].get("SensorLeftBorder");
-        d dVar4 = (d) this.f21298f[i10].get("SensorBottomBorder");
-        d dVar5 = (d) this.f21298f[i10].get("SensorRightBorder");
+        d dVar = (d) this.f21370f[i10].get("DefaultCropSize");
+        d dVar2 = (d) this.f21370f[i10].get("SensorTopBorder");
+        d dVar3 = (d) this.f21370f[i10].get("SensorLeftBorder");
+        d dVar4 = (d) this.f21370f[i10].get("SensorBottomBorder");
+        d dVar5 = (d) this.f21370f[i10].get("SensorRightBorder");
         if (dVar != null) {
-            if (dVar.f21325a == 5) {
-                f[] fVarArr = (f[]) dVar.o(this.f21300h);
+            if (dVar.f21397a == 5) {
+                f[] fVarArr = (f[]) dVar.o(this.f21372h);
                 if (fVarArr != null && fVarArr.length == 2) {
-                    j10 = d.h(fVarArr[0], this.f21300h);
-                    j11 = d.h(fVarArr[1], this.f21300h);
+                    j10 = d.h(fVarArr[0], this.f21372h);
+                    j11 = d.h(fVarArr[1], this.f21372h);
                 } else {
                     Log.w("ExifInterface", "Invalid crop size values. cropSize=" + Arrays.toString(fVarArr));
                     return;
                 }
             } else {
-                int[] iArr = (int[]) dVar.o(this.f21300h);
+                int[] iArr = (int[]) dVar.o(this.f21372h);
                 if (iArr != null && iArr.length == 2) {
-                    j10 = d.j(iArr[0], this.f21300h);
-                    j11 = d.j(iArr[1], this.f21300h);
+                    j10 = d.j(iArr[0], this.f21372h);
+                    j11 = d.j(iArr[1], this.f21372h);
                 } else {
                     Log.w("ExifInterface", "Invalid crop size values. cropSize=" + Arrays.toString(iArr));
                     return;
                 }
             }
-            this.f21298f[i10].put("ImageWidth", j10);
-            this.f21298f[i10].put("ImageLength", j11);
+            this.f21370f[i10].put("ImageWidth", j10);
+            this.f21370f[i10].put("ImageLength", j11);
         } else if (dVar2 != null && dVar3 != null && dVar4 != null && dVar5 != null) {
-            int m10 = dVar2.m(this.f21300h);
-            int m11 = dVar4.m(this.f21300h);
-            int m12 = dVar5.m(this.f21300h);
-            int m13 = dVar3.m(this.f21300h);
+            int m10 = dVar2.m(this.f21372h);
+            int m11 = dVar4.m(this.f21372h);
+            int m12 = dVar5.m(this.f21372h);
+            int m13 = dVar3.m(this.f21372h);
             if (m11 > m10 && m12 > m13) {
-                d j12 = d.j(m11 - m10, this.f21300h);
-                d j13 = d.j(m12 - m13, this.f21300h);
-                this.f21298f[i10].put("ImageLength", j12);
-                this.f21298f[i10].put("ImageWidth", j13);
+                d j12 = d.j(m11 - m10, this.f21372h);
+                d j13 = d.j(m12 - m13, this.f21372h);
+                this.f21370f[i10].put("ImageLength", j12);
+                this.f21370f[i10].put("ImageWidth", j13);
             }
         } else {
             b0(gVar, i10);
@@ -2043,7 +2043,7 @@ public class a {
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:60:0x016b, code lost:
-        r21.x(r20.f21300h);
+        r21.o(r20.f21372h);
      */
     /* JADX WARN: Code restructure failed: missing block: B:61:0x0170, code lost:
         return;
@@ -2067,18 +2067,18 @@ public class a {
         m0(0, 5);
         m0(0, 4);
         m0(5, 4);
-        d dVar = (d) this.f21298f[1].get("PixelXDimension");
-        d dVar2 = (d) this.f21298f[1].get("PixelYDimension");
+        d dVar = (d) this.f21370f[1].get("PixelXDimension");
+        d dVar2 = (d) this.f21370f[1].get("PixelYDimension");
         if (dVar != null && dVar2 != null) {
-            this.f21298f[0].put("ImageWidth", dVar);
-            this.f21298f[0].put("ImageLength", dVar2);
+            this.f21370f[0].put("ImageWidth", dVar);
+            this.f21370f[0].put("ImageLength", dVar2);
         }
-        if (this.f21298f[4].isEmpty() && R(this.f21298f[5])) {
-            HashMap[] hashMapArr = this.f21298f;
+        if (this.f21370f[4].isEmpty() && R(this.f21370f[5])) {
+            HashMap[] hashMapArr = this.f21370f;
             hashMapArr[4] = hashMapArr[5];
             hashMapArr[5] = new HashMap();
         }
-        if (!R(this.f21298f[4])) {
+        if (!R(this.f21370f[4])) {
             Log.d("ExifInterface", "No image meets the size requirements of a thumbnail image.");
         }
         a0(0, "ThumbnailOrientation", "Orientation");
@@ -2150,22 +2150,22 @@ public class a {
 
     private void r0(c cVar) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        this.f21308p = cVar.f21323d.size() + q0(new c(byteArrayOutputStream, ByteOrder.BIG_ENDIAN));
+        this.f21380p = cVar.f21395d.size() + q0(new c(byteArrayOutputStream, ByteOrder.BIG_ENDIAN));
         byte[] byteArray = byteArrayOutputStream.toByteArray();
         cVar.write(byteArray);
         CRC32 crc32 = new CRC32();
         crc32.update(byteArray, 4, byteArray.length - 4);
-        cVar.l((int) crc32.getValue());
+        cVar.k((int) crc32.getValue());
     }
 
     private void s(g gVar) {
         int i10;
         int i11;
         v(gVar);
-        d dVar = (d) this.f21298f[1].get("MakerNote");
+        d dVar = (d) this.f21370f[1].get("MakerNote");
         if (dVar != null) {
-            g gVar2 = new g(dVar.f21328d);
-            gVar2.x(this.f21300h);
+            g gVar2 = new g(dVar.f21400d);
+            gVar2.o(this.f21372h);
             byte[] bArr = I;
             byte[] bArr2 = new byte[bArr.length];
             gVar2.readFully(bArr2);
@@ -2179,15 +2179,15 @@ public class a {
                 gVar2.E(12L);
             }
             Y(gVar2, 6);
-            d dVar2 = (d) this.f21298f[7].get("PreviewImageStart");
-            d dVar3 = (d) this.f21298f[7].get("PreviewImageLength");
+            d dVar2 = (d) this.f21370f[7].get("PreviewImageStart");
+            d dVar3 = (d) this.f21370f[7].get("PreviewImageLength");
             if (dVar2 != null && dVar3 != null) {
-                this.f21298f[5].put("JPEGInterchangeFormat", dVar2);
-                this.f21298f[5].put("JPEGInterchangeFormatLength", dVar3);
+                this.f21370f[5].put("JPEGInterchangeFormat", dVar2);
+                this.f21370f[5].put("JPEGInterchangeFormatLength", dVar3);
             }
-            d dVar4 = (d) this.f21298f[8].get("AspectFrame");
+            d dVar4 = (d) this.f21370f[8].get("AspectFrame");
             if (dVar4 != null) {
-                int[] iArr = (int[]) dVar4.o(this.f21300h);
+                int[] iArr = (int[]) dVar4.o(this.f21372h);
                 if (iArr != null && iArr.length == 4) {
                     int i12 = iArr[2];
                     int i13 = iArr[0];
@@ -2199,10 +2199,10 @@ public class a {
                             i15 = i16 - i15;
                             i14 = i16 - i15;
                         }
-                        d j10 = d.j(i14, this.f21300h);
-                        d j11 = d.j(i15, this.f21300h);
-                        this.f21298f[0].put("ImageWidth", j10);
-                        this.f21298f[0].put("ImageLength", j11);
+                        d j10 = d.j(i14, this.f21372h);
+                        d j11 = d.j(i15, this.f21372h);
+                        this.f21370f[0].put("ImageWidth", j10);
+                        this.f21370f[0].put("ImageLength", j11);
                         return;
                     }
                     return;
@@ -2213,26 +2213,26 @@ public class a {
     }
 
     private void s0(c cVar) {
-        cVar.l(this.f21313u.f21328d.length + 22);
+        cVar.k(this.f21385u.f21400d.length + 22);
         CRC32 crc32 = new CRC32();
-        cVar.l(1767135348);
+        cVar.k(1767135348);
         n0(crc32, 1767135348);
         byte[] bArr = L;
         cVar.write(bArr);
         crc32.update(bArr);
-        cVar.write(this.f21313u.f21328d);
-        crc32.update(this.f21313u.f21328d);
-        cVar.l((int) crc32.getValue());
-        this.f21314v = true;
+        cVar.write(this.f21385u.f21400d);
+        crc32.update(this.f21385u.f21400d);
+        cVar.k((int) crc32.getValue());
+        this.f21386v = true;
     }
 
     private void t(b bVar) {
-        if (f21288w) {
+        if (f21360w) {
             Log.d("ExifInterface", "getPngAttributes starting with: " + bVar);
         }
-        bVar.x(ByteOrder.BIG_ENDIAN);
+        bVar.o(ByteOrder.BIG_ENDIAN);
         int h10 = bVar.h();
-        bVar.B(K.length);
+        bVar.y(K.length);
         boolean z10 = false;
         boolean z11 = false;
         while (true) {
@@ -2250,7 +2250,7 @@ public class a {
                     break;
                 }
                 if (readInt2 == 1700284774 && !z10) {
-                    this.f21308p = bVar.h() - h10;
+                    this.f21380p = bVar.h() - h10;
                     byte[] bArr = new byte[readInt];
                     bVar.readFully(bArr);
                     int readInt3 = bVar.readInt();
@@ -2275,25 +2275,25 @@ public class a {
                             int i10 = readInt - length;
                             byte[] bArr4 = new byte[i10];
                             bVar.readFully(bArr4);
-                            this.f21313u = new d(1, i10, bVar.h() - h10, bArr4);
+                            this.f21385u = new d(1, i10, bVar.h() - h10, bArr4);
                             z11 = true;
                         }
                     }
                 }
-                bVar.B(h11 - bVar.h());
+                bVar.y(h11 - bVar.h());
             } catch (EOFException e10) {
                 throw new IOException("Encountered corrupt PNG file.", e10);
             }
         }
-        this.f21314v = z11;
+        this.f21386v = z11;
     }
 
     private void u(b bVar) {
-        boolean z10 = f21288w;
+        boolean z10 = f21360w;
         if (z10) {
             Log.d("ExifInterface", "getRafAttributes starting with: " + bVar);
         }
-        bVar.B(84);
+        bVar.y(84);
         byte[] bArr = new byte[4];
         byte[] bArr2 = new byte[4];
         byte[] bArr3 = new byte[4];
@@ -2304,11 +2304,11 @@ public class a {
         int i11 = ByteBuffer.wrap(bArr2).getInt();
         int i12 = ByteBuffer.wrap(bArr3).getInt();
         byte[] bArr4 = new byte[i11];
-        bVar.B(i10 - bVar.h());
+        bVar.y(i10 - bVar.h());
         bVar.readFully(bArr4);
         p(new b(bArr4), i10, 5);
-        bVar.B(i12 - bVar.h());
-        bVar.x(ByteOrder.BIG_ENDIAN);
+        bVar.y(i12 - bVar.h());
+        bVar.o(ByteOrder.BIG_ENDIAN);
         int readInt = bVar.readInt();
         if (z10) {
             Log.d("ExifInterface", "numberOfDirectoryEntry: " + readInt);
@@ -2316,20 +2316,20 @@ public class a {
         for (int i13 = 0; i13 < readInt; i13++) {
             int readUnsignedShort = bVar.readUnsignedShort();
             int readUnsignedShort2 = bVar.readUnsignedShort();
-            if (readUnsignedShort == f21271f0.f21329a) {
+            if (readUnsignedShort == f21343f0.f21401a) {
                 short readShort = bVar.readShort();
                 short readShort2 = bVar.readShort();
-                d j10 = d.j(readShort, this.f21300h);
-                d j11 = d.j(readShort2, this.f21300h);
-                this.f21298f[0].put("ImageLength", j10);
-                this.f21298f[0].put("ImageWidth", j11);
-                if (f21288w) {
+                d j10 = d.j(readShort, this.f21372h);
+                d j11 = d.j(readShort2, this.f21372h);
+                this.f21370f[0].put("ImageLength", j10);
+                this.f21370f[0].put("ImageWidth", j11);
+                if (f21360w) {
                     Log.d("ExifInterface", "Updated to length: " + ((int) readShort) + ", width: " + ((int) readShort2));
                     return;
                 }
                 return;
             }
-            bVar.B(readUnsignedShort2);
+            bVar.y(readUnsignedShort2);
         }
     }
 
@@ -2341,45 +2341,45 @@ public class a {
         o0(gVar, 5);
         o0(gVar, 4);
         p0();
-        if (this.f21296d == 8 && (dVar = (d) this.f21298f[1].get("MakerNote")) != null) {
-            g gVar2 = new g(dVar.f21328d);
-            gVar2.x(this.f21300h);
-            gVar2.B(6);
+        if (this.f21368d == 8 && (dVar = (d) this.f21370f[1].get("MakerNote")) != null) {
+            g gVar2 = new g(dVar.f21400d);
+            gVar2.o(this.f21372h);
+            gVar2.y(6);
             Y(gVar2, 9);
-            d dVar2 = (d) this.f21298f[9].get("ColorSpace");
+            d dVar2 = (d) this.f21370f[9].get("ColorSpace");
             if (dVar2 != null) {
-                this.f21298f[1].put("ColorSpace", dVar2);
+                this.f21370f[1].put("ColorSpace", dVar2);
             }
         }
     }
 
     private void x(g gVar) {
-        if (f21288w) {
+        if (f21360w) {
             Log.d("ExifInterface", "getRw2Attributes starting with: " + gVar);
         }
         v(gVar);
-        d dVar = (d) this.f21298f[0].get("JpgFromRaw");
+        d dVar = (d) this.f21370f[0].get("JpgFromRaw");
         if (dVar != null) {
-            p(new b(dVar.f21328d), (int) dVar.f21327c, 5);
+            p(new b(dVar.f21400d), (int) dVar.f21399c, 5);
         }
-        d dVar2 = (d) this.f21298f[0].get("ISO");
-        d dVar3 = (d) this.f21298f[1].get("PhotographicSensitivity");
+        d dVar2 = (d) this.f21370f[0].get("ISO");
+        d dVar3 = (d) this.f21370f[1].get("PhotographicSensitivity");
         if (dVar2 != null && dVar3 == null) {
-            this.f21298f[1].put("PhotographicSensitivity", dVar2);
+            this.f21370f[1].put("PhotographicSensitivity", dVar2);
         }
     }
 
     private boolean y(g gVar) {
-        byte[] bArr = f21283r0;
+        byte[] bArr = f21355r0;
         byte[] bArr2 = new byte[bArr.length];
         gVar.readFully(bArr2);
         if (!Arrays.equals(bArr2, bArr)) {
             Log.w("ExifInterface", "Given data is not EXIF-only.");
             return false;
         }
-        byte[] l10 = gVar.l();
-        this.f21308p = bArr.length;
-        X(l10, 0);
+        byte[] k10 = gVar.k();
+        this.f21380p = bArr.length;
+        X(k10, 0);
         return true;
     }
 
@@ -2394,16 +2394,16 @@ public class a {
         /*
             r8 = this;
             java.lang.String r0 = "ExifInterface"
-            boolean r1 = r8.f21301i
+            boolean r1 = r8.f21373i
             r2 = 0
             if (r1 != 0) goto L8
             return r2
         L8:
-            byte[] r1 = r8.f21306n
+            byte[] r1 = r8.f21378n
             if (r1 == 0) goto Ld
             return r1
         Ld:
-            android.content.res.AssetManager$AssetInputStream r1 = r8.f21295c     // Catch: java.lang.Throwable -> L3b java.lang.Exception -> L3e
+            android.content.res.AssetManager$AssetInputStream r1 = r8.f21367c     // Catch: java.lang.Throwable -> L3b java.lang.Exception -> L3e
             if (r1 == 0) goto L2f
             boolean r3 = r1.markSupported()     // Catch: java.lang.Throwable -> L1c java.lang.Exception -> L21
             if (r3 == 0) goto L26
@@ -2428,10 +2428,10 @@ public class a {
             e3.b.b(r1)
             return r2
         L2f:
-            java.lang.String r1 = r8.f21293a     // Catch: java.lang.Throwable -> L3b java.lang.Exception -> L3e
+            java.lang.String r1 = r8.f21365a     // Catch: java.lang.Throwable -> L3b java.lang.Exception -> L3e
             if (r1 == 0) goto L43
             java.io.FileInputStream r1 = new java.io.FileInputStream     // Catch: java.lang.Throwable -> L3b java.lang.Exception -> L3e
-            java.lang.String r3 = r8.f21293a     // Catch: java.lang.Throwable -> L3b java.lang.Exception -> L3e
+            java.lang.String r3 = r8.f21365a     // Catch: java.lang.Throwable -> L3b java.lang.Exception -> L3e
             r1.<init>(r3)     // Catch: java.lang.Throwable -> L3b java.lang.Exception -> L3e
             goto L1a
         L3b:
@@ -2445,7 +2445,7 @@ public class a {
             r3 = r1
             goto L82
         L43:
-            java.io.FileDescriptor r1 = r8.f21294b     // Catch: java.lang.Throwable -> L3b java.lang.Exception -> L3e
+            java.io.FileDescriptor r1 = r8.f21366b     // Catch: java.lang.Throwable -> L3b java.lang.Exception -> L3e
             java.io.FileDescriptor r1 = android.system.Os.dup(r1)     // Catch: java.lang.Throwable -> L3b java.lang.Exception -> L3e
             int r3 = android.system.OsConstants.SEEK_SET     // Catch: java.lang.Throwable -> L7b java.lang.Exception -> L7e
             r4 = 0
@@ -2458,14 +2458,14 @@ public class a {
         L58:
             e3.a$b r4 = new e3.a$b     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
             r4.<init>(r1)     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
-            int r5 = r8.f21304l     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
-            int r6 = r8.f21308p     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
+            int r5 = r8.f21376l     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
+            int r6 = r8.f21380p     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
             int r5 = r5 + r6
-            r4.B(r5)     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
-            int r5 = r8.f21305m     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
+            r4.y(r5)     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
+            int r5 = r8.f21377m     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
             byte[] r5 = new byte[r5]     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
             r4.readFully(r5)     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
-            r8.f21306n = r5     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
+            r8.f21378n = r5     // Catch: java.lang.Throwable -> L77 java.lang.Exception -> L79
             e3.b.b(r1)
             if (r3 == 0) goto L76
             e3.b.a(r3)
@@ -2552,7 +2552,7 @@ public class a {
         String str6 = str2;
         if (str5 != null) {
             if ("ISOSpeedRatings".equals(str5)) {
-                if (f21288w) {
+                if (f21360w) {
                     Log.d("ExifInterface", "setAttribute: Replacing TAG_ISO_SPEED_RATINGS with TAG_PHOTOGRAPHIC_SENSITIVITY.");
                 }
                 str5 = "PhotographicSensitivity";
@@ -2561,7 +2561,7 @@ public class a {
             String str7 = "/";
             int i14 = 1;
             if (str6 != null) {
-                if (f21280o0.contains(str5) && !str6.contains("/")) {
+                if (f21352o0.contains(str5) && !str6.contains("/")) {
                     try {
                         str6 = f.b(Double.parseDouble(str6)).toString();
                     } catch (NumberFormatException unused) {
@@ -2569,14 +2569,14 @@ public class a {
                         return;
                     }
                 } else if (str5.equals("GPSTimeStamp")) {
-                    if (!f21286u0.matcher(str6).find()) {
+                    if (!f21358u0.matcher(str6).find()) {
                         Log.w("ExifInterface", "Invalid value for " + str5 + " : " + str6);
                         return;
                     }
                     str6 = Integer.parseInt(matcher.group(1)) + "/1," + Integer.parseInt(matcher.group(2)) + "/1," + Integer.parseInt(matcher.group(3)) + "/1";
                 } else if ("DateTime".equals(str5) || "DateTimeOriginal".equals(str5) || "DateTimeDigitized".equals(str5)) {
-                    boolean find = f21287v0.matcher(str6).find();
-                    boolean find2 = f21289w0.matcher(str6).find();
+                    boolean find = f21359v0.matcher(str6).find();
+                    boolean find2 = f21361w0.matcher(str6).find();
                     if (str6.length() == 19 && (find || find2)) {
                         if (find2) {
                             str6 = str6.replaceAll("-", ":");
@@ -2589,48 +2589,48 @@ public class a {
             }
             int i15 = 0;
             if ("Xmp".equals(str5)) {
-                if (!this.f21298f[0].containsKey("Xmp") && !this.f21298f[5].containsKey("Xmp")) {
+                if (!this.f21370f[0].containsKey("Xmp") && !this.f21370f[5].containsKey("Xmp")) {
                     z10 = false;
                 } else {
                     z10 = true;
                 }
-                int C2 = C(this.f21296d);
-                if ((C2 == 2 && (this.f21313u != null || !z10)) || (C2 == 3 && !z10)) {
+                int C2 = C(this.f21368d);
+                if ((C2 == 2 && (this.f21385u != null || !z10)) || (C2 == 3 && !z10)) {
                     if (str6 != null) {
                         dVar = d.a(str6);
                     } else {
                         dVar = null;
                     }
-                    this.f21313u = dVar;
+                    this.f21385u = dVar;
                     return;
                 }
             }
             int i16 = 0;
-            while (i16 < f21276k0.length) {
-                if ((i16 != 4 || this.f21301i) && (eVar = (e) f21279n0[i16].get(str5)) != null) {
+            while (i16 < f21348k0.length) {
+                if ((i16 != 4 || this.f21373i) && (eVar = (e) f21351n0[i16].get(str5)) != null) {
                     if (str6 == null) {
-                        this.f21298f[i16].remove(str5);
+                        this.f21370f[i16].remove(str5);
                     } else {
                         Pair D2 = D(str6);
-                        if (eVar.f21331c != ((Integer) D2.first).intValue() && eVar.f21331c != ((Integer) D2.second).intValue()) {
-                            int i17 = eVar.f21332d;
-                            if (i17 != -1 && (i17 == ((Integer) D2.first).intValue() || eVar.f21332d == ((Integer) D2.second).intValue())) {
-                                i10 = eVar.f21332d;
+                        if (eVar.f21403c != ((Integer) D2.first).intValue() && eVar.f21403c != ((Integer) D2.second).intValue()) {
+                            int i17 = eVar.f21404d;
+                            if (i17 != -1 && (i17 == ((Integer) D2.first).intValue() || eVar.f21404d == ((Integer) D2.second).intValue())) {
+                                i10 = eVar.f21404d;
                             } else {
-                                int i18 = eVar.f21331c;
+                                int i18 = eVar.f21403c;
                                 if (i18 != i14 && i18 != 7 && i18 != i13) {
-                                    if (f21288w) {
+                                    if (f21360w) {
                                         StringBuilder sb2 = new StringBuilder();
                                         sb2.append("Given tag (");
                                         sb2.append(str5);
                                         sb2.append(") value didn't match with one of expected formats: ");
                                         String[] strArr = X;
-                                        sb2.append(strArr[eVar.f21331c]);
+                                        sb2.append(strArr[eVar.f21403c]);
                                         String str8 = "";
-                                        if (eVar.f21332d == -1) {
+                                        if (eVar.f21404d == -1) {
                                             str4 = "";
                                         } else {
-                                            str4 = ", " + strArr[eVar.f21332d];
+                                            str4 = ", " + strArr[eVar.f21404d];
                                         }
                                         sb2.append(str4);
                                         sb2.append(" (guess: ");
@@ -2647,21 +2647,21 @@ public class a {
                                 }
                             }
                         } else {
-                            i10 = eVar.f21331c;
+                            i10 = eVar.f21403c;
                         }
                         switch (i10) {
                             case 1:
                                 str3 = str7;
                                 i11 = i14;
                                 i12 = i15;
-                                this.f21298f[i16].put(str5, d.a(str6));
+                                this.f21370f[i16].put(str5, d.a(str6));
                                 break;
                             case 2:
                             case 7:
                                 str3 = str7;
                                 i11 = i14;
                                 i12 = i15;
-                                this.f21298f[i16].put(str5, d.e(str6));
+                                this.f21370f[i16].put(str5, d.e(str6));
                                 break;
                             case 3:
                                 str3 = str7;
@@ -2672,7 +2672,7 @@ public class a {
                                 for (int i19 = i12; i19 < split.length; i19++) {
                                     iArr[i19] = Integer.parseInt(split[i19]);
                                 }
-                                this.f21298f[i16].put(str5, d.k(iArr, this.f21300h));
+                                this.f21370f[i16].put(str5, d.k(iArr, this.f21372h));
                                 break;
                             case 4:
                                 str3 = str7;
@@ -2683,7 +2683,7 @@ public class a {
                                 for (int i20 = i12; i20 < split2.length; i20++) {
                                     jArr[i20] = Long.parseLong(split2[i20]);
                                 }
-                                this.f21298f[i16].put(str5, d.g(jArr, this.f21300h));
+                                this.f21370f[i16].put(str5, d.g(jArr, this.f21372h));
                                 break;
                             case 5:
                                 i11 = i14;
@@ -2698,13 +2698,13 @@ public class a {
                                     str7 = str7;
                                 }
                                 str3 = str7;
-                                this.f21298f[i16].put(str5, d.i(fVarArr, this.f21300h));
+                                this.f21370f[i16].put(str5, d.i(fVarArr, this.f21372h));
                                 break;
                             case 6:
                             case 8:
                             case 11:
                             default:
-                                if (f21288w) {
+                                if (f21360w) {
                                     Log.d("ExifInterface", "Data format isn't one of expected formats: " + i10);
                                     break;
                                 }
@@ -2717,7 +2717,7 @@ public class a {
                                 for (int i22 = i12; i22 < split5.length; i22++) {
                                     iArr2[i22] = Integer.parseInt(split5[i22]);
                                 }
-                                this.f21298f[i16].put(str5, d.c(iArr2, this.f21300h));
+                                this.f21370f[i16].put(str5, d.c(iArr2, this.f21372h));
                                 str3 = str7;
                                 break;
                             case 10:
@@ -2736,7 +2736,7 @@ public class a {
                                 }
                                 i11 = i14;
                                 i12 = i15;
-                                this.f21298f[i16].put(str5, d.d(fVarArr2, this.f21300h));
+                                this.f21370f[i16].put(str5, d.d(fVarArr2, this.f21372h));
                                 str3 = str7;
                                 break;
                             case 12:
@@ -2745,7 +2745,7 @@ public class a {
                                 for (int i26 = i15; i26 < split8.length; i26++) {
                                     dArr[i26] = Double.parseDouble(split8[i26]);
                                 }
-                                this.f21298f[i16].put(str5, d.b(dArr, this.f21300h));
+                                this.f21370f[i16].put(str5, d.b(dArr, this.f21372h));
                                 break;
                         }
                         i16++;
@@ -2829,30 +2829,30 @@ public class a {
                 return null;
             }
             if (str.equals("GPSTimeStamp")) {
-                int i10 = n10.f21325a;
+                int i10 = n10.f21397a;
                 if (i10 != 5 && i10 != 10) {
-                    Log.w("ExifInterface", "GPS Timestamp format is not rational. format=" + n10.f21325a);
+                    Log.w("ExifInterface", "GPS Timestamp format is not rational. format=" + n10.f21397a);
                     return null;
                 }
-                f[] fVarArr = (f[]) n10.o(this.f21300h);
+                f[] fVarArr = (f[]) n10.o(this.f21372h);
                 if (fVarArr != null && fVarArr.length == 3) {
                     f fVar = fVarArr[0];
-                    Integer valueOf = Integer.valueOf((int) (((float) fVar.f21333a) / ((float) fVar.f21334b)));
+                    Integer valueOf = Integer.valueOf((int) (((float) fVar.f21405a) / ((float) fVar.f21406b)));
                     f fVar2 = fVarArr[1];
-                    Integer valueOf2 = Integer.valueOf((int) (((float) fVar2.f21333a) / ((float) fVar2.f21334b)));
+                    Integer valueOf2 = Integer.valueOf((int) (((float) fVar2.f21405a) / ((float) fVar2.f21406b)));
                     f fVar3 = fVarArr[2];
-                    return String.format("%02d:%02d:%02d", valueOf, valueOf2, Integer.valueOf((int) (((float) fVar3.f21333a) / ((float) fVar3.f21334b))));
+                    return String.format("%02d:%02d:%02d", valueOf, valueOf2, Integer.valueOf((int) (((float) fVar3.f21405a) / ((float) fVar3.f21406b))));
                 }
                 Log.w("ExifInterface", "Invalid GPS Timestamp array. array=" + Arrays.toString(fVarArr));
                 return null;
-            } else if (f21280o0.contains(str)) {
+            } else if (f21352o0.contains(str)) {
                 try {
-                    return Double.toString(n10.l(this.f21300h));
+                    return Double.toString(n10.l(this.f21372h));
                 } catch (NumberFormatException unused) {
                     return null;
                 }
             } else {
-                return n10.n(this.f21300h);
+                return n10.n(this.f21372h);
             }
         }
         throw new NullPointerException("tag shouldn't be null");
@@ -2863,7 +2863,7 @@ public class a {
             d n10 = n(str);
             if (n10 != null) {
                 try {
-                    return n10.l(this.f21300h);
+                    return n10.l(this.f21372h);
                 } catch (NumberFormatException unused) {
                     return d10;
                 }
@@ -2878,7 +2878,7 @@ public class a {
             d n10 = n(str);
             if (n10 != null) {
                 try {
-                    return n10.m(this.f21300h);
+                    return n10.m(this.f21372h);
                 } catch (NumberFormatException unused) {
                     return i10;
                 }
@@ -2921,7 +2921,7 @@ public class a {
     }
 
     public byte[] z() {
-        int i10 = this.f21307o;
+        int i10 = this.f21379o;
         if (i10 != 6 && i10 != 7) {
             return null;
         }
@@ -2933,72 +2933,57 @@ public class a {
     public static class b extends InputStream implements DataInput {
 
         /* renamed from: d  reason: collision with root package name */
-        protected final DataInputStream f21318d;
+        protected final DataInputStream f21390d;
 
         /* renamed from: e  reason: collision with root package name */
-        protected int f21319e;
+        protected int f21391e;
 
         /* renamed from: i  reason: collision with root package name */
-        private ByteOrder f21320i;
+        private ByteOrder f21392i;
 
         /* renamed from: o  reason: collision with root package name */
-        private byte[] f21321o;
+        private byte[] f21393o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f21322p;
+        private int f21394p;
 
         b(byte[] bArr) {
             this(new ByteArrayInputStream(bArr), ByteOrder.BIG_ENDIAN);
-            this.f21322p = bArr.length;
-        }
-
-        public void B(int i10) {
-            int i11 = 0;
-            while (i11 < i10) {
-                int i12 = i10 - i11;
-                int skip = (int) this.f21318d.skip(i12);
-                if (skip <= 0) {
-                    if (this.f21321o == null) {
-                        this.f21321o = new byte[8192];
-                    }
-                    skip = this.f21318d.read(this.f21321o, 0, Math.min(8192, i12));
-                    if (skip == -1) {
-                        throw new EOFException("Reached EOF while skipping " + i10 + " bytes.");
-                    }
-                }
-                i11 += skip;
-            }
-            this.f21319e += i11;
+            this.f21394p = bArr.length;
         }
 
         public int a() {
-            return this.f21322p;
+            return this.f21394p;
         }
 
         @Override // java.io.InputStream
         public int available() {
-            return this.f21318d.available();
+            return this.f21390d.available();
         }
 
         public int h() {
-            return this.f21319e;
+            return this.f21391e;
         }
 
-        public byte[] l() {
+        public byte[] k() {
             byte[] bArr = new byte[IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET];
             int i10 = 0;
             while (true) {
                 if (i10 == bArr.length) {
                     bArr = Arrays.copyOf(bArr, bArr.length * 2);
                 }
-                int read = this.f21318d.read(bArr, i10, bArr.length - i10);
+                int read = this.f21390d.read(bArr, i10, bArr.length - i10);
                 if (read != -1) {
                     i10 += read;
-                    this.f21319e += read;
+                    this.f21391e += read;
                 } else {
                     return Arrays.copyOf(bArr, i10);
                 }
             }
+        }
+
+        public long m() {
+            return readInt() & 4294967295L;
         }
 
         @Override // java.io.InputStream
@@ -3006,26 +2991,26 @@ public class a {
             throw new UnsupportedOperationException("Mark is currently unsupported");
         }
 
-        public long n() {
-            return readInt() & 4294967295L;
+        public void o(ByteOrder byteOrder) {
+            this.f21392i = byteOrder;
         }
 
         @Override // java.io.InputStream
         public int read() {
-            this.f21319e++;
-            return this.f21318d.read();
+            this.f21391e++;
+            return this.f21390d.read();
         }
 
         @Override // java.io.DataInput
         public boolean readBoolean() {
-            this.f21319e++;
-            return this.f21318d.readBoolean();
+            this.f21391e++;
+            return this.f21390d.readBoolean();
         }
 
         @Override // java.io.DataInput
         public byte readByte() {
-            this.f21319e++;
-            int read = this.f21318d.read();
+            this.f21391e++;
+            int read = this.f21390d.read();
             if (read >= 0) {
                 return (byte) read;
             }
@@ -3034,8 +3019,8 @@ public class a {
 
         @Override // java.io.DataInput
         public char readChar() {
-            this.f21319e += 2;
-            return this.f21318d.readChar();
+            this.f21391e += 2;
+            return this.f21390d.readChar();
         }
 
         @Override // java.io.DataInput
@@ -3050,26 +3035,26 @@ public class a {
 
         @Override // java.io.DataInput
         public void readFully(byte[] bArr, int i10, int i11) {
-            this.f21319e += i11;
-            this.f21318d.readFully(bArr, i10, i11);
+            this.f21391e += i11;
+            this.f21390d.readFully(bArr, i10, i11);
         }
 
         @Override // java.io.DataInput
         public int readInt() {
-            this.f21319e += 4;
-            int read = this.f21318d.read();
-            int read2 = this.f21318d.read();
-            int read3 = this.f21318d.read();
-            int read4 = this.f21318d.read();
+            this.f21391e += 4;
+            int read = this.f21390d.read();
+            int read2 = this.f21390d.read();
+            int read3 = this.f21390d.read();
+            int read4 = this.f21390d.read();
             if ((read | read2 | read3 | read4) >= 0) {
-                ByteOrder byteOrder = this.f21320i;
+                ByteOrder byteOrder = this.f21392i;
                 if (byteOrder == ByteOrder.LITTLE_ENDIAN) {
                     return (read4 << 24) + (read3 << 16) + (read2 << 8) + read;
                 }
                 if (byteOrder == ByteOrder.BIG_ENDIAN) {
                     return (read << 24) + (read2 << 16) + (read3 << 8) + read4;
                 }
-                throw new IOException("Invalid byte order: " + this.f21320i);
+                throw new IOException("Invalid byte order: " + this.f21392i);
             }
             throw new EOFException();
         }
@@ -3082,72 +3067,72 @@ public class a {
 
         @Override // java.io.DataInput
         public long readLong() {
-            this.f21319e += 8;
-            int read = this.f21318d.read();
-            int read2 = this.f21318d.read();
-            int read3 = this.f21318d.read();
-            int read4 = this.f21318d.read();
-            int read5 = this.f21318d.read();
-            int read6 = this.f21318d.read();
-            int read7 = this.f21318d.read();
-            int read8 = this.f21318d.read();
+            this.f21391e += 8;
+            int read = this.f21390d.read();
+            int read2 = this.f21390d.read();
+            int read3 = this.f21390d.read();
+            int read4 = this.f21390d.read();
+            int read5 = this.f21390d.read();
+            int read6 = this.f21390d.read();
+            int read7 = this.f21390d.read();
+            int read8 = this.f21390d.read();
             if ((read | read2 | read3 | read4 | read5 | read6 | read7 | read8) >= 0) {
-                ByteOrder byteOrder = this.f21320i;
+                ByteOrder byteOrder = this.f21392i;
                 if (byteOrder == ByteOrder.LITTLE_ENDIAN) {
                     return (read8 << 56) + (read7 << 48) + (read6 << 40) + (read5 << 32) + (read4 << 24) + (read3 << 16) + (read2 << 8) + read;
                 }
                 if (byteOrder == ByteOrder.BIG_ENDIAN) {
                     return (read << 56) + (read2 << 48) + (read3 << 40) + (read4 << 32) + (read5 << 24) + (read6 << 16) + (read7 << 8) + read8;
                 }
-                throw new IOException("Invalid byte order: " + this.f21320i);
+                throw new IOException("Invalid byte order: " + this.f21392i);
             }
             throw new EOFException();
         }
 
         @Override // java.io.DataInput
         public short readShort() {
-            this.f21319e += 2;
-            int read = this.f21318d.read();
-            int read2 = this.f21318d.read();
+            this.f21391e += 2;
+            int read = this.f21390d.read();
+            int read2 = this.f21390d.read();
             if ((read | read2) >= 0) {
-                ByteOrder byteOrder = this.f21320i;
+                ByteOrder byteOrder = this.f21392i;
                 if (byteOrder == ByteOrder.LITTLE_ENDIAN) {
                     return (short) ((read2 << 8) + read);
                 }
                 if (byteOrder == ByteOrder.BIG_ENDIAN) {
                     return (short) ((read << 8) + read2);
                 }
-                throw new IOException("Invalid byte order: " + this.f21320i);
+                throw new IOException("Invalid byte order: " + this.f21392i);
             }
             throw new EOFException();
         }
 
         @Override // java.io.DataInput
         public String readUTF() {
-            this.f21319e += 2;
-            return this.f21318d.readUTF();
+            this.f21391e += 2;
+            return this.f21390d.readUTF();
         }
 
         @Override // java.io.DataInput
         public int readUnsignedByte() {
-            this.f21319e++;
-            return this.f21318d.readUnsignedByte();
+            this.f21391e++;
+            return this.f21390d.readUnsignedByte();
         }
 
         @Override // java.io.DataInput
         public int readUnsignedShort() {
-            this.f21319e += 2;
-            int read = this.f21318d.read();
-            int read2 = this.f21318d.read();
+            this.f21391e += 2;
+            int read = this.f21390d.read();
+            int read2 = this.f21390d.read();
             if ((read | read2) >= 0) {
-                ByteOrder byteOrder = this.f21320i;
+                ByteOrder byteOrder = this.f21392i;
                 if (byteOrder == ByteOrder.LITTLE_ENDIAN) {
                     return (read2 << 8) + read;
                 }
                 if (byteOrder == ByteOrder.BIG_ENDIAN) {
                     return (read << 8) + read2;
                 }
-                throw new IOException("Invalid byte order: " + this.f21320i);
+                throw new IOException("Invalid byte order: " + this.f21392i);
             }
             throw new EOFException();
         }
@@ -3162,8 +3147,23 @@ public class a {
             throw new UnsupportedOperationException("skipBytes is currently unsupported");
         }
 
-        public void x(ByteOrder byteOrder) {
-            this.f21320i = byteOrder;
+        public void y(int i10) {
+            int i11 = 0;
+            while (i11 < i10) {
+                int i12 = i10 - i11;
+                int skip = (int) this.f21390d.skip(i12);
+                if (skip <= 0) {
+                    if (this.f21393o == null) {
+                        this.f21393o = new byte[8192];
+                    }
+                    skip = this.f21390d.read(this.f21393o, 0, Math.min(8192, i12));
+                    if (skip == -1) {
+                        throw new EOFException("Reached EOF while skipping " + i10 + " bytes.");
+                    }
+                }
+                i11 += skip;
+            }
+            this.f21391e += i11;
         }
 
         b(InputStream inputStream) {
@@ -3172,24 +3172,24 @@ public class a {
 
         @Override // java.io.InputStream
         public int read(byte[] bArr, int i10, int i11) {
-            int read = this.f21318d.read(bArr, i10, i11);
-            this.f21319e += read;
+            int read = this.f21390d.read(bArr, i10, i11);
+            this.f21391e += read;
             return read;
         }
 
         @Override // java.io.DataInput
         public void readFully(byte[] bArr) {
-            this.f21319e += bArr.length;
-            this.f21318d.readFully(bArr);
+            this.f21391e += bArr.length;
+            this.f21390d.readFully(bArr);
         }
 
         b(InputStream inputStream, ByteOrder byteOrder) {
             DataInputStream dataInputStream = new DataInputStream(inputStream);
-            this.f21318d = dataInputStream;
+            this.f21390d = dataInputStream;
             dataInputStream.mark(0);
-            this.f21319e = 0;
-            this.f21320i = byteOrder;
-            this.f21322p = inputStream instanceof b ? ((b) inputStream).a() : -1;
+            this.f21391e = 0;
+            this.f21392i = byteOrder;
+            this.f21394p = inputStream instanceof b ? ((b) inputStream).a() : -1;
         }
     }
 
@@ -3198,24 +3198,24 @@ public class a {
     public static class g extends b {
         g(byte[] bArr) {
             super(bArr);
-            this.f21318d.mark(Integer.MAX_VALUE);
+            this.f21390d.mark(Integer.MAX_VALUE);
         }
 
         public void E(long j10) {
-            int i10 = this.f21319e;
+            int i10 = this.f21391e;
             if (i10 > j10) {
-                this.f21319e = 0;
-                this.f21318d.reset();
+                this.f21391e = 0;
+                this.f21390d.reset();
             } else {
                 j10 -= i10;
             }
-            B((int) j10);
+            y((int) j10);
         }
 
         g(InputStream inputStream) {
             super(inputStream);
             if (inputStream.markSupported()) {
-                this.f21318d.mark(Integer.MAX_VALUE);
+                this.f21390d.mark(Integer.MAX_VALUE);
                 return;
             }
             throw new IllegalArgumentException("Cannot create SeekableByteOrderedDataInputStream with stream that does not support mark/reset");
@@ -3227,28 +3227,28 @@ public class a {
     public static class e {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f21329a;
+        public final int f21401a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final String f21330b;
+        public final String f21402b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f21331c;
+        public final int f21403c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f21332d;
+        public final int f21404d;
 
         e(String str, int i10, int i11) {
-            this.f21330b = str;
-            this.f21329a = i10;
-            this.f21331c = i11;
-            this.f21332d = -1;
+            this.f21402b = str;
+            this.f21401a = i10;
+            this.f21403c = i11;
+            this.f21404d = -1;
         }
 
         boolean a(int i10) {
             int i11;
-            int i12 = this.f21331c;
-            if (i12 == 7 || i10 == 7 || i12 == i10 || (i11 = this.f21332d) == i10) {
+            int i12 = this.f21403c;
+            if (i12 == 7 || i10 == 7 || i12 == i10 || (i11 = this.f21404d) == i10) {
                 return true;
             }
             if ((i12 == 4 || i11 == 4) && i10 == 3) {
@@ -3264,18 +3264,18 @@ public class a {
         }
 
         e(String str, int i10, int i11, int i12) {
-            this.f21330b = str;
-            this.f21329a = i10;
-            this.f21331c = i11;
-            this.f21332d = i12;
+            this.f21402b = str;
+            this.f21401a = i10;
+            this.f21403c = i11;
+            this.f21404d = i12;
         }
     }
 
     public a(String str) {
-        e[][] eVarArr = f21276k0;
-        this.f21298f = new HashMap[eVarArr.length];
-        this.f21299g = new HashSet(eVarArr.length);
-        this.f21300h = ByteOrder.BIG_ENDIAN;
+        e[][] eVarArr = f21348k0;
+        this.f21370f = new HashMap[eVarArr.length];
+        this.f21371g = new HashSet(eVarArr.length);
+        this.f21372h = ByteOrder.BIG_ENDIAN;
         if (str != null) {
             G(str);
             return;
@@ -3288,30 +3288,30 @@ public class a {
     }
 
     public a(InputStream inputStream, int i10) {
-        e[][] eVarArr = f21276k0;
-        this.f21298f = new HashMap[eVarArr.length];
-        this.f21299g = new HashSet(eVarArr.length);
-        this.f21300h = ByteOrder.BIG_ENDIAN;
+        e[][] eVarArr = f21348k0;
+        this.f21370f = new HashMap[eVarArr.length];
+        this.f21371g = new HashSet(eVarArr.length);
+        this.f21372h = ByteOrder.BIG_ENDIAN;
         if (inputStream != null) {
-            this.f21293a = null;
+            this.f21365a = null;
             boolean z10 = i10 == 1;
-            this.f21297e = z10;
+            this.f21369e = z10;
             if (z10) {
-                this.f21295c = null;
-                this.f21294b = null;
+                this.f21367c = null;
+                this.f21366b = null;
             } else if (inputStream instanceof AssetManager.AssetInputStream) {
-                this.f21295c = (AssetManager.AssetInputStream) inputStream;
-                this.f21294b = null;
+                this.f21367c = (AssetManager.AssetInputStream) inputStream;
+                this.f21366b = null;
             } else {
                 if (inputStream instanceof FileInputStream) {
                     FileInputStream fileInputStream = (FileInputStream) inputStream;
                     if (O(fileInputStream.getFD())) {
-                        this.f21295c = null;
-                        this.f21294b = fileInputStream.getFD();
+                        this.f21367c = null;
+                        this.f21366b = fileInputStream.getFD();
                     }
                 }
-                this.f21295c = null;
-                this.f21294b = null;
+                this.f21367c = null;
+                this.f21366b = null;
             }
             T(inputStream);
             return;
@@ -3322,16 +3322,16 @@ public class a {
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: e3.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public class C0275a extends MediaDataSource {
+    public class C0290a extends MediaDataSource {
 
         /* renamed from: d  reason: collision with root package name */
-        long f21315d;
+        long f21387d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ g f21316e;
+        final /* synthetic */ g f21388e;
 
-        C0275a(g gVar) {
-            this.f21316e = gVar;
+        C0290a(g gVar) {
+            this.f21388e = gVar;
         }
 
         @Override // android.media.MediaDataSource
@@ -3348,25 +3348,25 @@ public class a {
                 return -1;
             }
             try {
-                long j11 = this.f21315d;
+                long j11 = this.f21387d;
                 if (j11 != j10) {
-                    if (j11 >= 0 && j10 >= j11 + this.f21316e.available()) {
+                    if (j11 >= 0 && j10 >= j11 + this.f21388e.available()) {
                         return -1;
                     }
-                    this.f21316e.E(j10);
-                    this.f21315d = j10;
+                    this.f21388e.E(j10);
+                    this.f21387d = j10;
                 }
-                if (i11 > this.f21316e.available()) {
-                    i11 = this.f21316e.available();
+                if (i11 > this.f21388e.available()) {
+                    i11 = this.f21388e.available();
                 }
-                int read = this.f21316e.read(bArr, i10, i11);
+                int read = this.f21388e.read(bArr, i10, i11);
                 if (read >= 0) {
-                    this.f21315d += read;
+                    this.f21387d += read;
                     return read;
                 }
             } catch (IOException unused) {
             }
-            this.f21315d = -1L;
+            this.f21387d = -1L;
             return -1;
         }
 

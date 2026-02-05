@@ -8,45 +8,45 @@ import java.lang.ref.WeakReference;
 public class j {
 
     /* renamed from: c  reason: collision with root package name */
-    private float f14796c;
+    private float f15190c;
 
     /* renamed from: d  reason: collision with root package name */
-    private float f14797d;
+    private float f15191d;
 
     /* renamed from: g  reason: collision with root package name */
-    private lh.d f14800g;
+    private mh.d f15194g;
 
     /* renamed from: a  reason: collision with root package name */
-    private final TextPaint f14794a = new TextPaint(1);
+    private final TextPaint f15188a = new TextPaint(1);
 
     /* renamed from: b  reason: collision with root package name */
-    private final lh.f f14795b = new a();
+    private final mh.f f15189b = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f14798e = true;
+    private boolean f15192e = true;
 
     /* renamed from: f  reason: collision with root package name */
-    private WeakReference f14799f = new WeakReference(null);
+    private WeakReference f15193f = new WeakReference(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class a extends lh.f {
+    class a extends mh.f {
         a() {
         }
 
-        @Override // lh.f
+        @Override // mh.f
         public void a(int i10) {
-            j.this.f14798e = true;
-            b bVar = (b) j.this.f14799f.get();
+            j.this.f15192e = true;
+            b bVar = (b) j.this.f15193f.get();
             if (bVar != null) {
                 bVar.a();
             }
         }
 
-        @Override // lh.f
+        @Override // mh.f
         public void b(Typeface typeface, boolean z10) {
             if (!z10) {
-                j.this.f14798e = true;
-                b bVar = (b) j.this.f14799f.get();
+                j.this.f15192e = true;
+                b bVar = (b) j.this.f15193f.get();
                 if (bVar != null) {
                     bVar.a();
                 }
@@ -71,55 +71,55 @@ public class j {
         if (str == null) {
             return 0.0f;
         }
-        return Math.abs(this.f14794a.getFontMetrics().ascent);
+        return Math.abs(this.f15188a.getFontMetrics().ascent);
     }
 
     private float d(CharSequence charSequence) {
         if (charSequence == null) {
             return 0.0f;
         }
-        return this.f14794a.measureText(charSequence, 0, charSequence.length());
+        return this.f15188a.measureText(charSequence, 0, charSequence.length());
     }
 
     private void h(String str) {
-        this.f14796c = d(str);
-        this.f14797d = c(str);
-        this.f14798e = false;
+        this.f15190c = d(str);
+        this.f15191d = c(str);
+        this.f15192e = false;
     }
 
-    public lh.d e() {
-        return this.f14800g;
+    public mh.d e() {
+        return this.f15194g;
     }
 
     public TextPaint f() {
-        return this.f14794a;
+        return this.f15188a;
     }
 
     public float g(String str) {
-        if (!this.f14798e) {
-            return this.f14796c;
+        if (!this.f15192e) {
+            return this.f15190c;
         }
         h(str);
-        return this.f14796c;
+        return this.f15190c;
     }
 
     public void i(b bVar) {
-        this.f14799f = new WeakReference(bVar);
+        this.f15193f = new WeakReference(bVar);
     }
 
-    public void j(lh.d dVar, Context context) {
-        if (this.f14800g != dVar) {
-            this.f14800g = dVar;
+    public void j(mh.d dVar, Context context) {
+        if (this.f15194g != dVar) {
+            this.f15194g = dVar;
             if (dVar != null) {
-                dVar.o(context, this.f14794a, this.f14795b);
-                b bVar = (b) this.f14799f.get();
+                dVar.o(context, this.f15188a, this.f15189b);
+                b bVar = (b) this.f15193f.get();
                 if (bVar != null) {
-                    this.f14794a.drawableState = bVar.getState();
+                    this.f15188a.drawableState = bVar.getState();
                 }
-                dVar.n(context, this.f14794a, this.f14795b);
-                this.f14798e = true;
+                dVar.n(context, this.f15188a, this.f15189b);
+                this.f15192e = true;
             }
-            b bVar2 = (b) this.f14799f.get();
+            b bVar2 = (b) this.f15193f.get();
             if (bVar2 != null) {
                 bVar2.a();
                 bVar2.onStateChange(bVar2.getState());
@@ -128,10 +128,10 @@ public class j {
     }
 
     public void k(boolean z10) {
-        this.f14798e = z10;
+        this.f15192e = z10;
     }
 
     public void l(Context context) {
-        this.f14800g.n(context, this.f14794a, this.f14795b);
+        this.f15194g.n(context, this.f15188a, this.f15189b);
     }
 }

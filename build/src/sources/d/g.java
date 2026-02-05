@@ -13,16 +13,16 @@ public abstract class g {
 
     public static /* synthetic */ f b(e.f fVar, int i10, boolean z10, e.b bVar, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            fVar = e.c.f900a;
+            fVar = e.c.f1012a;
         }
         if ((i11 & 2) != 0) {
-            i10 = androidx.activity.result.contract.d.f895b.a();
+            i10 = androidx.activity.result.contract.d.f1007b.a();
         }
         if ((i11 & 4) != 0) {
             z10 = false;
         }
         if ((i11 & 8) != 0) {
-            bVar = e.b.a.f898a;
+            bVar = e.b.a.f1010a;
         }
         return a(fVar, i10, z10, bVar);
     }

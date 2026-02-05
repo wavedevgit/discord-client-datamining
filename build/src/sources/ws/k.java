@@ -1,59 +1,129 @@
 package ws;
 
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.FunctionReferenceImpl;
+import j$.time.ZoneOffset;
+import j$.time.format.DateTimeFormatter;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import org.jetbrains.annotations.NotNull;
+import xs.p0;
+@Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\n\b\u0007\u0018\u0000 \u00152\u00020\u0001:\u0002\u0010\u0016B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u000f\u0010\u0007\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0007\u0010\bJ\u001a\u0010\u000b\u001a\u00020\n2\b\u0010\t\u001a\u0004\u0018\u00010\u0001H\u0096\u0002¢\u0006\u0004\b\u000b\u0010\fJ\u000f\u0010\u000e\u001a\u00020\rH\u0016¢\u0006\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0003\u001a\u00020\u00028\u0000X\u0080\u0004¢\u0006\f\n\u0004\b\u0010\u0010\u0011\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\u0014\u001a\u00020\u00068F¢\u0006\u0006\u001a\u0004\b\u0010\u0010\b¨\u0006\u0017"}, d2 = {"Lws/k;", "", "j$/time/ZoneOffset", "zoneOffset", "<init>", "(Lj$/time/ZoneOffset;)V", "", "hashCode", "()I", "other", "", "equals", "(Ljava/lang/Object;)Z", "", "toString", "()Ljava/lang/String;", "a", "Lj$/time/ZoneOffset;", "getZoneOffset$kotlinx_datetime", "()Lj$/time/ZoneOffset;", "totalSeconds", "Companion", "b", "kotlinx-datetime"}, k = 1, mv = {1, 9, 0}, xi = 48)
+@dt.m(with = ct.j.class)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class k implements l {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final n f52712a;
+public final class k {
+    @NotNull
+    public static final a Companion = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f52713b;
+    private static final k f53288b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final int f52714c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final List f52715d;
+    /* renamed from: a  reason: collision with root package name */
+    private final ZoneOffset f53289a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
-        a(Object obj) {
-            super(1, obj, b.class, "getterNotNull", "getterNotNull(Ljava/lang/Object;)Ljava/lang/Object;", 0);
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
 
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final vs.a invoke(Object obj) {
-            return (vs.a) ((b) this.receiver).b(obj);
+        public static /* synthetic */ k b(a aVar, CharSequence charSequence, xs.n nVar, int i10, Object obj) {
+            if ((i10 & 2) != 0) {
+                nVar = n.a();
+            }
+            return aVar.a(charSequence, nVar);
+        }
+
+        public final k a(CharSequence input, xs.n format) {
+            DateTimeFormatter f10;
+            k i10;
+            DateTimeFormatter g10;
+            k i11;
+            DateTimeFormatter h10;
+            k i12;
+            Intrinsics.checkNotNullParameter(input, "input");
+            Intrinsics.checkNotNullParameter(format, "format");
+            b bVar = b.f53290a;
+            if (format == bVar.b()) {
+                h10 = m.h();
+                Intrinsics.checkNotNullExpressionValue(h10, "access$getIsoFormat(...)");
+                i12 = m.i(input, h10);
+                return i12;
+            } else if (format == bVar.c()) {
+                g10 = m.g();
+                Intrinsics.checkNotNullExpressionValue(g10, "access$getIsoBasicFormat(...)");
+                i11 = m.i(input, g10);
+                return i11;
+            } else if (format == bVar.a()) {
+                f10 = m.f();
+                Intrinsics.checkNotNullExpressionValue(f10, "access$getFourDigitsFormat(...)");
+                i10 = m.i(input, f10);
+                return i10;
+            } else {
+                return (k) format.a(input);
+            }
+        }
+
+        @NotNull
+        public final KSerializer serializer() {
+            return ct.j.f20034a;
+        }
+
+        private a() {
         }
     }
 
-    public k(n field, int i10, int i11, List zerosToAdd) {
-        Intrinsics.checkNotNullParameter(field, "field");
-        Intrinsics.checkNotNullParameter(zerosToAdd, "zerosToAdd");
-        this.f52712a = field;
-        this.f52713b = i10;
-        this.f52714c = i11;
-        this.f52715d = zerosToAdd;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final b f53290a = new b();
+
+        private b() {
+        }
+
+        public final xs.n a() {
+            return p0.b();
+        }
+
+        public final xs.n b() {
+            return p0.c();
+        }
+
+        public final xs.n c() {
+            return p0.d();
+        }
     }
 
-    @Override // ws.l
-    public xs.e a() {
-        return new xs.d(new a(this.f52712a.b()), this.f52713b, this.f52714c, this.f52715d);
+    static {
+        ZoneOffset UTC = ZoneOffset.UTC;
+        Intrinsics.checkNotNullExpressionValue(UTC, "UTC");
+        f53288b = new k(UTC);
     }
 
-    @Override // ws.l
-    public ys.q b() {
-        return new ys.q(CollectionsKt.e(new ys.h(CollectionsKt.e(new ys.d(this.f52713b, this.f52714c, this.f52712a.b(), this.f52712a.getName())))), CollectionsKt.l());
+    public k(ZoneOffset zoneOffset) {
+        Intrinsics.checkNotNullParameter(zoneOffset, "zoneOffset");
+        this.f53289a = zoneOffset;
     }
 
-    @Override // ws.l
-    public final n c() {
-        return this.f52712a;
+    public final int a() {
+        return this.f53289a.getTotalSeconds();
+    }
+
+    public boolean equals(Object obj) {
+        if ((obj instanceof k) && Intrinsics.areEqual(this.f53289a, ((k) obj).f53289a)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return this.f53289a.hashCode();
+    }
+
+    public String toString() {
+        String zoneOffset = this.f53289a.toString();
+        Intrinsics.checkNotNullExpressionValue(zoneOffset, "toString(...)");
+        return zoneOffset;
     }
 }

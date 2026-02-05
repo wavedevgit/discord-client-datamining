@@ -3,11 +3,11 @@ package androidx.work.impl;
 class m0 extends s3.b {
 
     /* renamed from: c  reason: collision with root package name */
-    private final s3.a f5659c;
+    private final s3.a f5771c;
 
     public m0() {
         super(19, 20);
-        this.f5659c = new c();
+        this.f5771c = new c();
     }
 
     @Override // s3.b
@@ -18,6 +18,6 @@ class m0 extends s3.b {
         gVar.K("ALTER TABLE `_new_WorkSpec` RENAME TO `WorkSpec`");
         gVar.K("CREATE INDEX IF NOT EXISTS `index_WorkSpec_schedule_requested_at` ON `WorkSpec` (`schedule_requested_at`)");
         gVar.K("CREATE INDEX IF NOT EXISTS `index_WorkSpec_last_enqueue_time` ON `WorkSpec` (`last_enqueue_time`)");
-        this.f5659c.a(gVar);
+        this.f5771c.a(gVar);
     }
 }

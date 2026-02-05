@@ -1,15 +1,39 @@
 package uo;
 
-import android.content.Context;
-import com.google.android.play.core.integrity.IntegrityManagerFactory;
-import kotlin.jvm.internal.Intrinsics;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import androidx.viewbinding.ViewBinding;
+import so.g2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements f {
-    @Override // uo.f
-    public com.google.android.play.core.integrity.c create(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        com.google.android.play.core.integrity.c a10 = IntegrityManagerFactory.a(context);
-        Intrinsics.checkNotNullExpressionValue(a10, "createStandard(...)");
-        return a10;
+public final class d implements ViewBinding {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final FrameLayout f51649a;
+
+    private d(FrameLayout frameLayout) {
+        this.f51649a = frameLayout;
+    }
+
+    public static d a(View view) {
+        if (view != null) {
+            return new d((FrameLayout) view);
+        }
+        throw new NullPointerException("rootView");
+    }
+
+    public static d c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(g2.f50105e, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return a(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public FrameLayout getRoot() {
+        return this.f51649a;
     }
 }

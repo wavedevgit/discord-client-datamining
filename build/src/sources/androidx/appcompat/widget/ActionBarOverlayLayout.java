@@ -26,7 +26,7 @@ import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 @SuppressLint({"UnknownNullness"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.core.view.t, androidx.core.view.u {
-    static final int[] R = {f.a.f22873b, 16842841};
+    static final int[] R = {f.a.f21898b, 16842841};
     private static final WindowInsetsCompat S = new WindowInsetsCompat.a().d(Insets.c(0, 1, 0, 1)).a();
     private static final Rect T = new Rect();
     private final Rect A;
@@ -48,49 +48,49 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
     private final f Q;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f1408d;
+    private int f1520d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f1409e;
+    private int f1521e;
 
     /* renamed from: i  reason: collision with root package name */
-    private ContentFrameLayout f1410i;
+    private ContentFrameLayout f1522i;
 
     /* renamed from: o  reason: collision with root package name */
-    ActionBarContainer f1411o;
+    ActionBarContainer f1523o;
 
     /* renamed from: p  reason: collision with root package name */
-    private z f1412p;
+    private z f1524p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Drawable f1413q;
+    private Drawable f1525q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f1414r;
+    private boolean f1526r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f1415s;
+    private boolean f1527s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f1416t;
+    private boolean f1528t;
 
     /* renamed from: u  reason: collision with root package name */
-    boolean f1417u;
+    boolean f1529u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f1418v;
+    private int f1530v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f1419w;
+    private int f1531w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final Rect f1420x;
+    private final Rect f1532x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Rect f1421y;
+    private final Rect f1533y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final Rect f1422z;
+    private final Rect f1534z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends AnimatorListenerAdapter {
@@ -101,14 +101,14 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
         public void onAnimationCancel(Animator animator) {
             ActionBarOverlayLayout actionBarOverlayLayout = ActionBarOverlayLayout.this;
             actionBarOverlayLayout.L = null;
-            actionBarOverlayLayout.f1417u = false;
+            actionBarOverlayLayout.f1529u = false;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
             ActionBarOverlayLayout actionBarOverlayLayout = ActionBarOverlayLayout.this;
             actionBarOverlayLayout.L = null;
-            actionBarOverlayLayout.f1417u = false;
+            actionBarOverlayLayout.f1529u = false;
         }
     }
 
@@ -121,7 +121,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
         public void run() {
             ActionBarOverlayLayout.this.p();
             ActionBarOverlayLayout actionBarOverlayLayout = ActionBarOverlayLayout.this;
-            actionBarOverlayLayout.L = actionBarOverlayLayout.f1411o.animate().translationY(0.0f).setListener(ActionBarOverlayLayout.this.M);
+            actionBarOverlayLayout.L = actionBarOverlayLayout.f1523o.animate().translationY(0.0f).setListener(ActionBarOverlayLayout.this.M);
         }
     }
 
@@ -134,7 +134,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
         public void run() {
             ActionBarOverlayLayout.this.p();
             ActionBarOverlayLayout actionBarOverlayLayout = ActionBarOverlayLayout.this;
-            actionBarOverlayLayout.L = actionBarOverlayLayout.f1411o.animate().translationY(-ActionBarOverlayLayout.this.f1411o.getHeight()).setListener(ActionBarOverlayLayout.this.M);
+            actionBarOverlayLayout.L = actionBarOverlayLayout.f1523o.animate().translationY(-ActionBarOverlayLayout.this.f1523o.getHeight()).setListener(ActionBarOverlayLayout.this.M);
         }
     }
 
@@ -184,16 +184,16 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
 
     public ActionBarOverlayLayout(@NonNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f1409e = 0;
-        this.f1420x = new Rect();
-        this.f1421y = new Rect();
-        this.f1422z = new Rect();
+        this.f1521e = 0;
+        this.f1532x = new Rect();
+        this.f1533y = new Rect();
+        this.f1534z = new Rect();
         this.A = new Rect();
         this.B = new Rect();
         this.C = new Rect();
         this.D = new Rect();
         this.E = new Rect();
-        WindowInsetsCompat windowInsetsCompat = WindowInsetsCompat.f3264b;
+        WindowInsetsCompat windowInsetsCompat = WindowInsetsCompat.f3376b;
         this.F = windowInsetsCompat;
         this.G = windowInsetsCompat;
         this.H = windowInsetsCompat;
@@ -280,9 +280,9 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
     private void q(Context context) {
         TypedArray obtainStyledAttributes = getContext().getTheme().obtainStyledAttributes(R);
         boolean z10 = false;
-        this.f1408d = obtainStyledAttributes.getDimensionPixelSize(0, 0);
+        this.f1520d = obtainStyledAttributes.getDimensionPixelSize(0, 0);
         Drawable drawable = obtainStyledAttributes.getDrawable(1);
-        this.f1413q = drawable;
+        this.f1525q = drawable;
         if (drawable == null) {
             z10 = true;
         }
@@ -308,7 +308,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
 
     private boolean w(float f10) {
         this.K.fling(0, 0, 0, (int) f10, 0, 0, Integer.MIN_VALUE, Integer.MAX_VALUE);
-        if (this.K.getFinalY() > this.f1411o.getHeight()) {
+        if (this.K.getFinalY() > this.f1523o.getHeight()) {
             return true;
         }
         return false;
@@ -317,19 +317,19 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
     @Override // androidx.appcompat.widget.y
     public boolean a() {
         u();
-        return this.f1412p.a();
+        return this.f1524p.a();
     }
 
     @Override // androidx.appcompat.widget.y
     public boolean b() {
         u();
-        return this.f1412p.b();
+        return this.f1524p.b();
     }
 
     @Override // androidx.appcompat.widget.y
     public boolean c() {
         u();
-        return this.f1412p.c();
+        return this.f1524p.c();
     }
 
     @Override // android.view.ViewGroup
@@ -340,34 +340,34 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
     @Override // androidx.appcompat.widget.y
     public void d(Menu menu, j.a aVar) {
         u();
-        this.f1412p.d(menu, aVar);
+        this.f1524p.d(menu, aVar);
     }
 
     @Override // android.view.View
     public void draw(Canvas canvas) {
         int i10;
         super.draw(canvas);
-        if (this.f1413q != null) {
-            if (this.f1411o.getVisibility() == 0) {
-                i10 = (int) (this.f1411o.getBottom() + this.f1411o.getTranslationY() + 0.5f);
+        if (this.f1525q != null) {
+            if (this.f1523o.getVisibility() == 0) {
+                i10 = (int) (this.f1523o.getBottom() + this.f1523o.getTranslationY() + 0.5f);
             } else {
                 i10 = 0;
             }
-            this.f1413q.setBounds(0, i10, getWidth(), this.f1413q.getIntrinsicHeight() + i10);
-            this.f1413q.draw(canvas);
+            this.f1525q.setBounds(0, i10, getWidth(), this.f1525q.getIntrinsicHeight() + i10);
+            this.f1525q.draw(canvas);
         }
     }
 
     @Override // androidx.appcompat.widget.y
     public boolean e() {
         u();
-        return this.f1412p.e();
+        return this.f1524p.e();
     }
 
     @Override // androidx.appcompat.widget.y
     public void f() {
         u();
-        this.f1412p.f();
+        this.f1524p.f();
     }
 
     @Override // android.view.View
@@ -378,11 +378,11 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
     @Override // androidx.appcompat.widget.y
     public boolean g() {
         u();
-        return this.f1412p.g();
+        return this.f1524p.g();
     }
 
     public int getActionBarHideOffset() {
-        ActionBarContainer actionBarContainer = this.f1411o;
+        ActionBarContainer actionBarContainer = this.f1523o;
         if (actionBarContainer != null) {
             return -((int) actionBarContainer.getTranslationY());
         }
@@ -396,7 +396,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
 
     public CharSequence getTitle() {
         u();
-        return this.f1412p.getTitle();
+        return this.f1524p.getTitle();
     }
 
     @Override // androidx.appcompat.widget.y
@@ -410,16 +410,16 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
                 setOverlayMode(true);
                 return;
             }
-            this.f1412p.v();
+            this.f1524p.v();
             return;
         }
-        this.f1412p.o();
+        this.f1524p.o();
     }
 
     @Override // androidx.appcompat.widget.y
     public void i() {
         u();
-        this.f1412p.q();
+        this.f1524p.q();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -439,9 +439,9 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
     public WindowInsets onApplyWindowInsets(WindowInsets windowInsets) {
         u();
         WindowInsetsCompat D = WindowInsetsCompat.D(windowInsets, this);
-        boolean k10 = k(this.f1411o, new Rect(D.o(), D.q(), D.p(), D.n()), true, true, false, true);
-        androidx.core.view.h0.f(this, D, this.f1420x);
-        Rect rect = this.f1420x;
+        boolean k10 = k(this.f1523o, new Rect(D.o(), D.q(), D.p(), D.n()), true, true, false, true);
+        androidx.core.view.h0.f(this, D, this.f1532x);
+        Rect rect = this.f1532x;
         WindowInsetsCompat r10 = D.r(rect.left, rect.top, rect.right, rect.bottom);
         this.F = r10;
         boolean z10 = true;
@@ -449,8 +449,8 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
             this.G = this.F;
             k10 = true;
         }
-        if (!this.f1421y.equals(this.f1420x)) {
-            this.f1421y.set(this.f1420x);
+        if (!this.f1533y.equals(this.f1532x)) {
+            this.f1533y.set(this.f1532x);
         } else {
             z10 = k10;
         }
@@ -496,57 +496,57 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
         boolean z10;
         int measuredHeight;
         u();
-        measureChildWithMargins(this.f1411o, i10, 0, i11, 0);
-        e eVar = (e) this.f1411o.getLayoutParams();
-        int max = Math.max(0, this.f1411o.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) eVar).leftMargin + ((ViewGroup.MarginLayoutParams) eVar).rightMargin);
-        int max2 = Math.max(0, this.f1411o.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) eVar).topMargin + ((ViewGroup.MarginLayoutParams) eVar).bottomMargin);
-        int combineMeasuredStates = View.combineMeasuredStates(0, this.f1411o.getMeasuredState());
+        measureChildWithMargins(this.f1523o, i10, 0, i11, 0);
+        e eVar = (e) this.f1523o.getLayoutParams();
+        int max = Math.max(0, this.f1523o.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) eVar).leftMargin + ((ViewGroup.MarginLayoutParams) eVar).rightMargin);
+        int max2 = Math.max(0, this.f1523o.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) eVar).topMargin + ((ViewGroup.MarginLayoutParams) eVar).bottomMargin);
+        int combineMeasuredStates = View.combineMeasuredStates(0, this.f1523o.getMeasuredState());
         if ((androidx.core.view.h0.L(this) & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (z10) {
-            measuredHeight = this.f1408d;
-            if (this.f1415s && this.f1411o.getTabContainer() != null) {
-                measuredHeight += this.f1408d;
+            measuredHeight = this.f1520d;
+            if (this.f1527s && this.f1523o.getTabContainer() != null) {
+                measuredHeight += this.f1520d;
             }
         } else {
-            measuredHeight = this.f1411o.getVisibility() != 8 ? this.f1411o.getMeasuredHeight() : 0;
+            measuredHeight = this.f1523o.getVisibility() != 8 ? this.f1523o.getMeasuredHeight() : 0;
         }
-        this.f1422z.set(this.f1420x);
+        this.f1534z.set(this.f1532x);
         this.H = this.F;
-        if (!this.f1414r && !z10 && l()) {
-            Rect rect = this.f1422z;
+        if (!this.f1526r && !z10 && l()) {
+            Rect rect = this.f1534z;
             rect.top += measuredHeight;
             rect.bottom = rect.bottom;
             this.H = this.H.r(0, measuredHeight, 0, 0);
         } else {
             this.H = new WindowInsetsCompat.a(this.H).d(Insets.c(this.H.o(), this.H.q() + measuredHeight, this.H.p(), this.H.n())).a();
         }
-        k(this.f1410i, this.f1422z, true, true, true, true);
+        k(this.f1522i, this.f1534z, true, true, true, true);
         if (!this.I.equals(this.H)) {
             WindowInsetsCompat windowInsetsCompat = this.H;
             this.I = windowInsetsCompat;
-            androidx.core.view.h0.g(this.f1410i, windowInsetsCompat);
+            androidx.core.view.h0.g(this.f1522i, windowInsetsCompat);
         }
-        measureChildWithMargins(this.f1410i, i10, 0, i11, 0);
-        e eVar2 = (e) this.f1410i.getLayoutParams();
-        int max3 = Math.max(max, this.f1410i.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) eVar2).leftMargin + ((ViewGroup.MarginLayoutParams) eVar2).rightMargin);
-        int max4 = Math.max(max2, this.f1410i.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) eVar2).topMargin + ((ViewGroup.MarginLayoutParams) eVar2).bottomMargin);
-        int combineMeasuredStates2 = View.combineMeasuredStates(combineMeasuredStates, this.f1410i.getMeasuredState());
+        measureChildWithMargins(this.f1522i, i10, 0, i11, 0);
+        e eVar2 = (e) this.f1522i.getLayoutParams();
+        int max3 = Math.max(max, this.f1522i.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) eVar2).leftMargin + ((ViewGroup.MarginLayoutParams) eVar2).rightMargin);
+        int max4 = Math.max(max2, this.f1522i.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) eVar2).topMargin + ((ViewGroup.MarginLayoutParams) eVar2).bottomMargin);
+        int combineMeasuredStates2 = View.combineMeasuredStates(combineMeasuredStates, this.f1522i.getMeasuredState());
         setMeasuredDimension(View.resolveSizeAndState(Math.max(max3 + getPaddingLeft() + getPaddingRight(), getSuggestedMinimumWidth()), i10, combineMeasuredStates2), View.resolveSizeAndState(Math.max(max4 + getPaddingTop() + getPaddingBottom(), getSuggestedMinimumHeight()), i11, combineMeasuredStates2 << 16));
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
     public boolean onNestedFling(View view, float f10, float f11, boolean z10) {
-        if (this.f1416t && z10) {
+        if (this.f1528t && z10) {
             if (w(f11)) {
                 j();
             } else {
                 v();
             }
-            this.f1417u = true;
+            this.f1529u = true;
             return true;
         }
         return false;
@@ -590,8 +590,8 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
         boolean z10;
         super.onWindowSystemUiVisibilityChanged(i10);
         u();
-        int i11 = this.f1419w ^ i10;
-        this.f1419w = i10;
+        int i11 = this.f1531w ^ i10;
+        this.f1531w = i10;
         boolean z11 = false;
         if ((i10 & 4) == 0) {
             z10 = true;
@@ -618,7 +618,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
     @Override // android.view.View
     protected void onWindowVisibilityChanged(int i10) {
         super.onWindowVisibilityChanged(i10);
-        this.f1409e = i10;
+        this.f1521e = i10;
         d dVar = this.J;
         if (dVar != null) {
             dVar.onWindowVisibilityChanged(i10);
@@ -635,19 +635,19 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
     }
 
     public boolean r() {
-        return this.f1414r;
+        return this.f1526r;
     }
 
     public void setActionBarHideOffset(int i10) {
         p();
-        this.f1411o.setTranslationY(-Math.max(0, Math.min(i10, this.f1411o.getHeight())));
+        this.f1523o.setTranslationY(-Math.max(0, Math.min(i10, this.f1523o.getHeight())));
     }
 
     public void setActionBarVisibilityCallback(d dVar) {
         this.J = dVar;
         if (getWindowToken() != null) {
-            this.J.onWindowVisibilityChanged(this.f1409e);
-            int i10 = this.f1419w;
+            this.J.onWindowVisibilityChanged(this.f1521e);
+            int i10 = this.f1531w;
             if (i10 != 0) {
                 onWindowSystemUiVisibilityChanged(i10);
                 androidx.core.view.h0.k0(this);
@@ -656,12 +656,12 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
     }
 
     public void setHasNonEmbeddedTabs(boolean z10) {
-        this.f1415s = z10;
+        this.f1527s = z10;
     }
 
     public void setHideOnContentScrollEnabled(boolean z10) {
-        if (z10 != this.f1416t) {
-            this.f1416t = z10;
+        if (z10 != this.f1528t) {
+            this.f1528t = z10;
             if (!z10) {
                 p();
                 setActionBarHideOffset(0);
@@ -671,16 +671,16 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
 
     public void setIcon(int i10) {
         u();
-        this.f1412p.setIcon(i10);
+        this.f1524p.setIcon(i10);
     }
 
     public void setLogo(int i10) {
         u();
-        this.f1412p.s(i10);
+        this.f1524p.s(i10);
     }
 
     public void setOverlayMode(boolean z10) {
-        this.f1414r = z10;
+        this.f1526r = z10;
     }
 
     public void setShowingForActionMode(boolean z10) {
@@ -692,13 +692,13 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
     @Override // androidx.appcompat.widget.y
     public void setWindowCallback(Window.Callback callback) {
         u();
-        this.f1412p.setWindowCallback(callback);
+        this.f1524p.setWindowCallback(callback);
     }
 
     @Override // androidx.appcompat.widget.y
     public void setWindowTitle(CharSequence charSequence) {
         u();
-        this.f1412p.setWindowTitle(charSequence);
+        this.f1524p.setWindowTitle(charSequence);
     }
 
     @Override // android.view.ViewGroup
@@ -707,10 +707,10 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
     }
 
     void u() {
-        if (this.f1410i == null) {
-            this.f1410i = (ContentFrameLayout) findViewById(f.f.f22947b);
-            this.f1411o = (ActionBarContainer) findViewById(f.f.f22948c);
-            this.f1412p = o(findViewById(f.f.f22946a));
+        if (this.f1522i == null) {
+            this.f1522i = (ContentFrameLayout) findViewById(f.f.f21972b);
+            this.f1523o = (ActionBarContainer) findViewById(f.f.f21973c);
+            this.f1524p = o(findViewById(f.f.f21971a));
         }
     }
 
@@ -736,7 +736,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
     @Override // android.view.ViewGroup, android.view.ViewParent
     public void onNestedScrollAccepted(View view, View view2, int i10) {
         this.P.b(view, view2, i10);
-        this.f1418v = getActionBarHideOffset();
+        this.f1530v = getActionBarHideOffset();
         p();
         d dVar = this.J;
         if (dVar != null) {
@@ -746,16 +746,16 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
 
     @Override // android.view.ViewGroup, android.view.ViewParent
     public boolean onStartNestedScroll(View view, View view2, int i10) {
-        if ((i10 & 2) == 0 || this.f1411o.getVisibility() != 0) {
+        if ((i10 & 2) == 0 || this.f1523o.getVisibility() != 0) {
             return false;
         }
-        return this.f1416t;
+        return this.f1528t;
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
     public void onStopNestedScroll(View view) {
-        if (this.f1416t && !this.f1417u) {
-            if (this.f1418v <= this.f1411o.getHeight()) {
+        if (this.f1528t && !this.f1529u) {
+            if (this.f1530v <= this.f1523o.getHeight()) {
                 t();
             } else {
                 s();
@@ -769,13 +769,13 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
 
     @Override // android.view.ViewGroup, android.view.ViewParent
     public void onNestedScroll(View view, int i10, int i11, int i12, int i13) {
-        int i14 = this.f1418v + i11;
-        this.f1418v = i14;
+        int i14 = this.f1530v + i11;
+        this.f1530v = i14;
         setActionBarHideOffset(i14);
     }
 
     public void setIcon(Drawable drawable) {
         u();
-        this.f1412p.setIcon(drawable);
+        this.f1524p.setIcon(drawable);
     }
 }

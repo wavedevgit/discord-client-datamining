@@ -19,7 +19,7 @@ import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
-import lr.c;
+import or.c;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000d\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0010\u0000\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\u0010\b\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\"\b'\u0018\u00002\u00020\u00012\u00020\u0002B\u0019\u0012\b\b\u0002\u0010\u0003\u001a\u00020\u0004\u0012\b\b\u0002\u0010\u0005\u001a\u00020\u0006¢\u0006\u0002\u0010\u0007J\u0010\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020\tH'J0\u0010$\u001a\u00020\"2\u0006\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020(2\u0006\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020*2\b\b\u0002\u0010,\u001a\u00020\tJ\u0019\u0010-\u001a\u00020.2\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020/H\u0082 J9\u00100\u001a\u00020\"2\u0006\u00101\u001a\u00020.2\u0006\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020(2\u0006\u0010)\u001a\u00020*2\u0006\u00102\u001a\u00020*2\u0006\u0010,\u001a\u00020\tH\u0082 J\u0011\u00103\u001a\u00020\t2\u0006\u00104\u001a\u00020.H\u0082 J\u0011\u00105\u001a\u00020\"2\u0006\u00106\u001a\u00020.H\u0096 J\u0011\u00107\u001a\u00020\"2\u0006\u00104\u001a\u00020.H\u0082 J\u0011\u00108\u001a\u00020\"2\u0006\u00104\u001a\u00020.H\u0082 J\u0011\u00109\u001a\u00020/2\u0006\u00104\u001a\u00020.H\u0082 J\u0011\u0010:\u001a\u00020\"2\u0006\u00104\u001a\u00020.H\u0082 J\u0011\u0010;\u001a\u00020\"2\u0006\u00104\u001a\u00020.H\u0082 J\u0019\u0010<\u001a\u00020\"2\u0006\u0010=\u001a\u00020>2\u0006\u00104\u001a\u00020.H\u0082 J\u0011\u0010?\u001a\u00020\"2\u0006\u00104\u001a\u00020.H\u0082 J\u0011\u0010@\u001a\u00020\"2\u0006\u00104\u001a\u00020.H\u0082 JA\u0010A\u001a\u00020\"2\u0006\u00101\u001a\u00020.2\u0006\u0010B\u001a\u00020\t2\u0006\u0010C\u001a\u00020\t2\u0006\u0010D\u001a\u00020\t2\u0006\u0010E\u001a\u00020\t2\u0006\u0010F\u001a\u00020\t2\u0006\u0010G\u001a\u00020\tH\u0082 J\u0011\u0010H\u001a\u00020/2\u0006\u00104\u001a\u00020.H\u0082 J\b\u0010I\u001a\u00020\"H\u0017J\b\u0010J\u001a\u00020\"H\u0002J\b\u0010K\u001a\u00020\"H\u0015J\u0010\u0010L\u001a\u00020\"2\u0006\u0010M\u001a\u00020.H\u0017J\b\u0010N\u001a\u00020\"H'J\b\u0010O\u001a\u00020\"H\u0017J\u0006\u0010P\u001a\u00020\"J\u0006\u0010Q\u001a\u00020\"J\u0016\u0010R\u001a\u00020\"2\u0006\u0010D\u001a\u00020\t2\u0006\u0010C\u001a\u00020\tJ\b\u0010S\u001a\u00020\"H\u0016J\u0010\u0010T\u001a\u00020\"2\u0006\u0010U\u001a\u00020/H\u0001J\u0010\u0010V\u001a\u00020\"2\u0006\u0010=\u001a\u00020>H\u0007J\u0015\u0010V\u001a\u00020\"2\u0006\u0010=\u001a\u00020\u0019H\u0000¢\u0006\u0002\bWJ\u0006\u0010X\u001a\u00020\"J\b\u0010Y\u001a\u00020\"H\u0007J\r\u0010Z\u001a\u00020\"H\u0001¢\u0006\u0002\b[J6\u0010\\\u001a\u00020\"2\u0006\u0010B\u001a\u00020\t2\u0006\u0010C\u001a\u00020\t2\u0006\u0010D\u001a\u00020\t2\u0006\u0010E\u001a\u00020\t2\u0006\u0010F\u001a\u00020\t2\u0006\u0010G\u001a\u00020\tJ\u0016\u0010]\u001a\u00020\"2\u0006\u0010^\u001a\u00020\t2\u0006\u0010_\u001a\u00020\tR\u0011\u0010\b\u001a\u00020\t8F¢\u0006\u0006\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\f\u001a\u00020\r¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\u0010\u001a\u00020\t8F¢\u0006\u0006\u001a\u0004\b\u0011\u0010\u000bR\u001a\u0010\u0012\u001a\u00020\u0006X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015R\u001e\u0010\u0017\u001a\u00020\u00062\u0006\u0010\u0016\u001a\u00020\u0006@BX\u0086\u000e¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0013R\u0010\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0082\u000e¢\u0006\u0002\n\u0000R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0013R\u001c\u0010\u0003\u001a\u00020\u00048\u0007X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001b\u0010\u001c\"\u0004\b\u001d\u0010\u001eR\u0011\u0010\u001f\u001a\u00020\t8F¢\u0006\u0006\u001a\u0004\b \u0010\u000b¨\u0006`"}, d2 = {"Lapp/rive/runtime/kotlin/renderers/Renderer;", "Lapp/rive/runtime/kotlin/core/NativeObject;", "Landroid/view/Choreographer$FrameCallback;", "type", "Lapp/rive/runtime/kotlin/core/RendererType;", SharedPreferencesKey.TRACE, "", "(Lapp/rive/runtime/kotlin/core/RendererType;Z)V", "averageFps", "", "getAverageFps", "()F", "frameLock", "", "getFrameLock", "()Ljava/lang/Object;", "height", "getHeight", "isAttached", "()Z", "setAttached", "(Z)V", "<set-?>", "isPlaying", "sharedSurface", "Lapp/rive/runtime/kotlin/SharedSurface;", "getTrace", "getType", "()Lapp/rive/runtime/kotlin/core/RendererType;", "setType", "(Lapp/rive/runtime/kotlin/core/RendererType;)V", "width", "getWidth", "advance", "", "elapsed", "align", "fit", "Lapp/rive/runtime/kotlin/core/Fit;", "alignment", "Lapp/rive/runtime/kotlin/core/Alignment;", "targetBounds", "Landroid/graphics/RectF;", "sourceBounds", "scaleFactor", "constructor", "", "", "cppAlign", "cppPointer", "srcBounds", "cppAvgFps", "rendererPointer", "cppDelete", "pointer", "cppDestroySurface", "cppDoFrame", "cppHeight", "cppRestore", "cppSave", "cppSetSurface", "surface", "Landroid/view/Surface;", "cppStart", "cppStop", "cppTransform", "x", "sy", "sx", "y", "tx", "ty", "cppWidth", "delete", "destroySurface", "disposeDependencies", "doFrame", "frameTimeNanos", "draw", "make", "restore", "save", "scale", "scheduleFrame", "setRendererType", "newType", "setSurface", "setSurface$kotlin_release", ViewProps.START, "stop", "stopThread", "stopThread$kotlin_release", ViewProps.TRANSFORM, "translate", "dx", "dy", "kotlin_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nRenderer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Renderer.kt\napp/rive/runtime/kotlin/renderers/Renderer\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,323:1\n1863#2,2:324\n*S KotlinDebug\n*F\n+ 1 Renderer.kt\napp/rive/runtime/kotlin/renderers/Renderer\n*L\n318#1:324,2\n*E\n"})
@@ -81,7 +81,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
             this.isAttached = false;
             stop();
             cppDestroySurface(getCppPointer());
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
     }
 
@@ -116,7 +116,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
             destroySurface();
             cppDelete(getCppPointer());
             setCppPointer(0L);
-            Unit unit = Unit.f32464a;
+            Unit unit = Unit.f31988a;
         }
     }
 
@@ -133,7 +133,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
                     refCount.release();
                 }
                 getDependencies().clear();
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -148,7 +148,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
                     if (getHasCppObject()) {
                         cppDoFrame(getCppPointer());
                     }
-                    Unit unit = Unit.f32464a;
+                    Unit unit = Unit.f31988a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -251,7 +251,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
                 this.sharedSurface = surface;
                 cppSetSurface(surface.getSurface(), getCppPointer());
                 this.isAttached = true;
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }

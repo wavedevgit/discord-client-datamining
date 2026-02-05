@@ -3,15 +3,15 @@ package t4;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public final class a implements nu.b {
+public final class a implements qu.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f49706a = new a();
+    public static final a f50311a = new a();
 
     private a() {
     }
 
-    @Override // nu.b
+    @Override // qu.b
     public Object f(Object obj, Object obj2) {
         List list;
         if (obj instanceof List) {

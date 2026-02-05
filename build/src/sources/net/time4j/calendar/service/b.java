@@ -6,31 +6,31 @@ import java.util.List;
 import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.Set;
-import nt.m;
-import nt.u;
-import nt.v;
+import qt.m;
+import qt.u;
+import qt.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class b implements u {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String[] f40449a = new String[0];
+    private static final String[] f39909a = new String[0];
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Set f40450b;
+    private static final Set f39910b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Set f40451c;
+    private static final Set f39911c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Set f40452d;
+    private static final Set f39912d;
 
     static {
-        String[] split = st.e.h("calendar/names/generic/generic", Locale.ROOT).f("languages").split(" ");
+        String[] split = vt.e.h("calendar/names/generic/generic", Locale.ROOT).f("languages").split(" ");
         HashSet hashSet = new HashSet();
         Collections.addAll(hashSet, split);
         hashSet.add("");
         Set<String> unmodifiableSet = Collections.unmodifiableSet(hashSet);
-        f40451c = unmodifiableSet;
+        f39911c = unmodifiableSet;
         HashSet hashSet2 = new HashSet();
         for (String str : unmodifiableSet) {
             if (str.isEmpty()) {
@@ -39,7 +39,7 @@ public final class b implements u {
                 hashSet2.add(new Locale(str));
             }
         }
-        f40452d = Collections.unmodifiableSet(hashSet2);
+        f39912d = Collections.unmodifiableSet(hashSet2);
         HashSet hashSet3 = new HashSet();
         hashSet3.add("buddhist");
         hashSet3.add("chinese");
@@ -57,10 +57,10 @@ public final class b implements u {
         hashSet3.add("persian");
         hashSet3.add("roc");
         hashSet3.add("vietnam");
-        f40450b = Collections.unmodifiableSet(hashSet3);
+        f39910b = Collections.unmodifiableSet(hashSet3);
     }
 
-    private static int b(String str) {
+    private static int a(String str) {
         if (str.equals("hindu")) {
             return 6;
         }
@@ -78,22 +78,22 @@ public final class b implements u {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static st.e f(String str, Locale locale) {
+    public static vt.e f(String str, Locale locale) {
         String str2 = "calendar/names/" + str + "/" + str;
-        if (!f40451c.contains(st.d.a(locale))) {
+        if (!f39911c.contains(vt.d.a(locale))) {
             locale = Locale.ROOT;
         }
-        return st.e.h(str2, locale);
+        return vt.e.h(str2, locale);
     }
 
-    private static String h(st.e eVar, String str) {
+    private static String k(vt.e eVar, String str) {
         if (eVar.b("useShortKeys") && "true".equals(eVar.f("useShortKeys"))) {
             return str.substring(0, 1);
         }
         return str;
     }
 
-    private static String[] l(st.e eVar, String str, String str2, int i10, String str3, v vVar, m mVar, boolean z10, int i11) {
+    private static String[] l(vt.e eVar, String str, String str2, int i10, String str3, v vVar, m mVar, boolean z10, int i11) {
         String[] strArr = new String[i10];
         boolean z11 = true;
         if (str3.length() != 1) {
@@ -177,65 +177,8 @@ public final class b implements u {
         }
     }
 
-    @Override // nt.u
-    public String[] a(String str, Locale locale, v vVar) {
-        String str2;
-        v vVar2;
-        if (!str.equals("chinese") && !str.equals("vietnam")) {
-            if (str.equals("japanese")) {
-                if (vVar == v.NARROW) {
-                    return new String[]{"M", "T", "S", "H"};
-                }
-                return new String[]{"Meiji", "Taishō", "Shōwa", "Heisei"};
-            } else if (!str.equals("dangi") && !str.equals("juche")) {
-                st.e f10 = f(str, locale);
-                if (vVar == v.SHORT) {
-                    vVar = v.ABBREVIATED;
-                }
-                v vVar3 = vVar;
-                String[] l10 = l(f10, str, locale.getLanguage(), b(str), h(f10, "ERA"), vVar3, m.FORMAT, false, 0);
-                if (l10 == null && vVar3 != (vVar2 = v.ABBREVIATED)) {
-                    l10 = a(str, locale, vVar2);
-                }
-                if (l10 != null) {
-                    return l10;
-                }
-                throw new MissingResourceException("Cannot find calendar resource for era.", b.class.getName(), locale.toString());
-            } else {
-                String[] a10 = a("korean", locale, vVar);
-                if (str.equals("dangi")) {
-                    str2 = a10[0];
-                } else {
-                    str2 = a10[1];
-                }
-                return new String[]{str2};
-            }
-        }
-        return f40449a;
-    }
-
-    @Override // nt.u
-    public boolean c(Locale locale) {
-        return true;
-    }
-
-    @Override // nt.u
-    public String[] d(String str, Locale locale, v vVar, m mVar) {
-        return f40449a;
-    }
-
-    @Override // nt.u
-    public boolean g(String str) {
-        return f40450b.contains(str);
-    }
-
-    @Override // nt.u
-    public String[] i(String str, Locale locale, v vVar, m mVar) {
-        return f40449a;
-    }
-
-    @Override // nt.u
-    public String[] j(String str, Locale locale, v vVar, m mVar, boolean z10) {
+    @Override // qt.u
+    public String[] b(String str, Locale locale, v vVar, m mVar, boolean z10) {
         String str2 = str;
         v vVar2 = vVar;
         if (!str2.equals("roc") && !str2.equals("buddhist")) {
@@ -246,28 +189,28 @@ public final class b implements u {
                 if (str2.equals("hindu")) {
                     str2 = "indian";
                 } else if (str2.equals("juche")) {
-                    return (String[]) nt.b.d(locale).l(vVar2, mVar).b().toArray(new String[12]);
+                    return (String[]) qt.b.d(locale).l(vVar2, mVar).b().toArray(new String[12]);
                 }
             } else {
                 str2 = "chinese";
             }
             String str3 = str2;
-            st.e f10 = f(str3, locale);
+            vt.e f10 = f(str3, locale);
             if (vVar2 == v.SHORT) {
                 vVar2 = v.ABBREVIATED;
             }
             v vVar3 = vVar2;
-            String[] l10 = l(f10, str3, locale.getLanguage(), e(str3), h(f10, "MONTH_OF_YEAR"), vVar3, mVar, z10, 1);
+            String[] l10 = l(f10, str3, locale.getLanguage(), e(str3), k(f10, "MONTH_OF_YEAR"), vVar3, mVar, z10, 1);
             if (l10 == null) {
                 m mVar2 = m.STANDALONE;
                 if (mVar == mVar2) {
                     if (vVar3 != v.NARROW) {
-                        l10 = j(str3, locale, vVar3, m.FORMAT, z10);
+                        l10 = b(str3, locale, vVar3, m.FORMAT, z10);
                     }
                 } else if (vVar3 == v.ABBREVIATED) {
-                    l10 = j(str3, locale, v.WIDE, m.FORMAT, z10);
+                    l10 = b(str3, locale, v.WIDE, m.FORMAT, z10);
                 } else if (vVar3 == v.NARROW) {
-                    l10 = j(str3, locale, vVar3, mVar2, z10);
+                    l10 = b(str3, locale, vVar3, mVar2, z10);
                 }
             }
             if (l10 != null) {
@@ -275,13 +218,70 @@ public final class b implements u {
             }
             throw new MissingResourceException("Cannot find calendar month.", b.class.getName(), locale.toString());
         }
-        List b10 = nt.b.d(locale).l(vVar2, mVar).b();
+        List b10 = qt.b.d(locale).l(vVar2, mVar).b();
         return (String[]) b10.toArray(new String[b10.size()]);
     }
 
-    @Override // nt.u
-    public String[] k(String str, Locale locale, v vVar, m mVar) {
-        return f40449a;
+    @Override // qt.u
+    public boolean c(Locale locale) {
+        return true;
+    }
+
+    @Override // qt.u
+    public String[] d(String str, Locale locale, v vVar, m mVar) {
+        return f39909a;
+    }
+
+    @Override // qt.u
+    public String[] g(String str, Locale locale, v vVar, m mVar) {
+        return f39909a;
+    }
+
+    @Override // qt.u
+    public boolean h(String str) {
+        return f39910b.contains(str);
+    }
+
+    @Override // qt.u
+    public String[] i(String str, Locale locale, v vVar) {
+        String str2;
+        v vVar2;
+        if (!str.equals("chinese") && !str.equals("vietnam")) {
+            if (str.equals("japanese")) {
+                if (vVar == v.NARROW) {
+                    return new String[]{"M", "T", "S", "H"};
+                }
+                return new String[]{"Meiji", "Taishō", "Shōwa", "Heisei"};
+            } else if (!str.equals("dangi") && !str.equals("juche")) {
+                vt.e f10 = f(str, locale);
+                if (vVar == v.SHORT) {
+                    vVar = v.ABBREVIATED;
+                }
+                v vVar3 = vVar;
+                String[] l10 = l(f10, str, locale.getLanguage(), a(str), k(f10, "ERA"), vVar3, m.FORMAT, false, 0);
+                if (l10 == null && vVar3 != (vVar2 = v.ABBREVIATED)) {
+                    l10 = i(str, locale, vVar2);
+                }
+                if (l10 != null) {
+                    return l10;
+                }
+                throw new MissingResourceException("Cannot find calendar resource for era.", b.class.getName(), locale.toString());
+            } else {
+                String[] i10 = i("korean", locale, vVar);
+                if (str.equals("dangi")) {
+                    str2 = i10[0];
+                } else {
+                    str2 = i10[1];
+                }
+                return new String[]{str2};
+            }
+        }
+        return f39909a;
+    }
+
+    @Override // qt.u
+    public String[] j(String str, Locale locale, v vVar, m mVar) {
+        return f39909a;
     }
 
     public String toString() {

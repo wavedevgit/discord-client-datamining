@@ -23,17 +23,17 @@ public final class Month implements TemporalAccessor, j$.time.temporal.l {
     public static final Month SEPTEMBER;
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Month[] f31068a;
+    public static final Month[] f30417a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ Month[] f31069b;
+    public static final /* synthetic */ Month[] f30418b;
 
     public static Month valueOf(String str) {
         return (Month) Enum.valueOf(Month.class, str);
     }
 
     public static Month[] values() {
-        return (Month[]) f31069b.clone();
+        return (Month[]) f30418b.clone();
     }
 
     /* JADX WARN: Type inference failed for: r0v0, types: [j$.time.Month, java.lang.Enum] */
@@ -73,18 +73,18 @@ public final class Month implements TemporalAccessor, j$.time.temporal.l {
         NOVEMBER = r10;
         ?? r11 = new Enum("DECEMBER", 11);
         DECEMBER = r11;
-        f31069b = new Month[]{r02, r12, r22, r32, r42, r52, r62, r72, r82, r92, r10, r11};
-        f31068a = values();
+        f30418b = new Month[]{r02, r12, r22, r32, r42, r52, r62, r72, r82, r92, r10, r11};
+        f30417a = values();
     }
 
     @Override // j$.time.temporal.l
     public final j$.time.temporal.k d(j$.time.temporal.k kVar) {
         Objects.requireNonNull(kVar, "temporal");
-        Object obj = (j$.time.chrono.j) kVar.a(o.f31196b);
+        Object obj = (j$.time.chrono.j) kVar.a(o.f30545b);
         if (obj == null) {
-            obj = j$.time.chrono.k.f31092a;
+            obj = j$.time.chrono.k.f30441a;
         }
-        if (!((j$.time.chrono.a) obj).equals(j$.time.chrono.k.f31092a)) {
+        if (!((j$.time.chrono.a) obj).equals(j$.time.chrono.k.f30441a)) {
             throw new DateTimeException("Adjustment only supported on ISO date-time");
         }
         return kVar.b(ordinal() + 1, j$.time.temporal.a.MONTH_OF_YEAR);
@@ -94,7 +94,7 @@ public final class Month implements TemporalAccessor, j$.time.temporal.l {
         if (i10 < 1 || i10 > 12) {
             throw new DateTimeException("Invalid value for MonthOfYear: " + i10);
         }
-        return f31068a[i10 - 1];
+        return f30417a[i10 - 1];
     }
 
     @Override // j$.time.temporal.TemporalAccessor
@@ -130,12 +130,12 @@ public final class Month implements TemporalAccessor, j$.time.temporal.l {
     }
 
     public final int t(boolean z10) {
-        int i10 = g.f31170a[ordinal()];
+        int i10 = g.f30519a[ordinal()];
         return i10 != 1 ? (i10 == 2 || i10 == 3 || i10 == 4 || i10 == 5) ? 30 : 31 : z10 ? 29 : 28;
     }
 
     public final int r(boolean z10) {
-        switch (g.f31170a[ordinal()]) {
+        switch (g.f30519a[ordinal()]) {
             case 1:
                 return 32;
             case 2:
@@ -165,10 +165,10 @@ public final class Month implements TemporalAccessor, j$.time.temporal.l {
 
     @Override // j$.time.temporal.TemporalAccessor
     public final Object a(TemporalQuery temporalQuery) {
-        if (temporalQuery == o.f31196b) {
-            return j$.time.chrono.k.f31092a;
+        if (temporalQuery == o.f30545b) {
+            return j$.time.chrono.k.f30441a;
         }
-        if (temporalQuery == o.f31197c) {
+        if (temporalQuery == o.f30546c) {
             return j$.time.temporal.b.MONTHS;
         }
         return super.a(temporalQuery);

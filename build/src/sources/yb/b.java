@@ -2,247 +2,247 @@ package yb;
 
 import com.appsflyer.AdRevenueScheme;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b implements vi.a {
+public final class b implements yi.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final vi.a f53840a = new b();
+    public static final yi.a f54536a = new b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class a implements ui.d {
+    private static final class a implements xi.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final a f53841a = new a();
+        static final a f54537a = new a();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f53842b = ui.c.d("sdkVersion");
+        private static final xi.c f54538b = xi.c.d("sdkVersion");
 
         /* renamed from: c  reason: collision with root package name */
-        private static final ui.c f53843c = ui.c.d("model");
+        private static final xi.c f54539c = xi.c.d("model");
 
         /* renamed from: d  reason: collision with root package name */
-        private static final ui.c f53844d = ui.c.d("hardware");
+        private static final xi.c f54540d = xi.c.d("hardware");
 
         /* renamed from: e  reason: collision with root package name */
-        private static final ui.c f53845e = ui.c.d("device");
+        private static final xi.c f54541e = xi.c.d("device");
 
         /* renamed from: f  reason: collision with root package name */
-        private static final ui.c f53846f = ui.c.d("product");
+        private static final xi.c f54542f = xi.c.d("product");
 
         /* renamed from: g  reason: collision with root package name */
-        private static final ui.c f53847g = ui.c.d("osBuild");
+        private static final xi.c f54543g = xi.c.d("osBuild");
 
         /* renamed from: h  reason: collision with root package name */
-        private static final ui.c f53848h = ui.c.d("manufacturer");
+        private static final xi.c f54544h = xi.c.d("manufacturer");
 
         /* renamed from: i  reason: collision with root package name */
-        private static final ui.c f53849i = ui.c.d("fingerprint");
+        private static final xi.c f54545i = xi.c.d("fingerprint");
 
         /* renamed from: j  reason: collision with root package name */
-        private static final ui.c f53850j = ui.c.d("locale");
+        private static final xi.c f54546j = xi.c.d("locale");
 
         /* renamed from: k  reason: collision with root package name */
-        private static final ui.c f53851k = ui.c.d(AdRevenueScheme.COUNTRY);
+        private static final xi.c f54547k = xi.c.d(AdRevenueScheme.COUNTRY);
 
         /* renamed from: l  reason: collision with root package name */
-        private static final ui.c f53852l = ui.c.d("mccMnc");
+        private static final xi.c f54548l = xi.c.d("mccMnc");
 
         /* renamed from: m  reason: collision with root package name */
-        private static final ui.c f53853m = ui.c.d("applicationBuild");
+        private static final xi.c f54549m = xi.c.d("applicationBuild");
 
         private a() {
         }
 
-        @Override // ui.d
+        @Override // xi.d
         /* renamed from: b */
-        public void a(yb.a aVar, ui.e eVar) {
-            eVar.b(f53842b, aVar.m());
-            eVar.b(f53843c, aVar.j());
-            eVar.b(f53844d, aVar.f());
-            eVar.b(f53845e, aVar.d());
-            eVar.b(f53846f, aVar.l());
-            eVar.b(f53847g, aVar.k());
-            eVar.b(f53848h, aVar.h());
-            eVar.b(f53849i, aVar.e());
-            eVar.b(f53850j, aVar.g());
-            eVar.b(f53851k, aVar.c());
-            eVar.b(f53852l, aVar.i());
-            eVar.b(f53853m, aVar.b());
+        public void a(yb.a aVar, xi.e eVar) {
+            eVar.d(f54538b, aVar.m());
+            eVar.d(f54539c, aVar.j());
+            eVar.d(f54540d, aVar.f());
+            eVar.d(f54541e, aVar.d());
+            eVar.d(f54542f, aVar.l());
+            eVar.d(f54543g, aVar.k());
+            eVar.d(f54544h, aVar.h());
+            eVar.d(f54545i, aVar.e());
+            eVar.d(f54546j, aVar.g());
+            eVar.d(f54547k, aVar.c());
+            eVar.d(f54548l, aVar.i());
+            eVar.d(f54549m, aVar.b());
         }
     }
 
     /* renamed from: yb.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class C0740b implements ui.d {
+    private static final class C0760b implements xi.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final C0740b f53854a = new C0740b();
+        static final C0760b f54550a = new C0760b();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f53855b = ui.c.d("logRequest");
+        private static final xi.c f54551b = xi.c.d("logRequest");
 
-        private C0740b() {
+        private C0760b() {
         }
 
-        @Override // ui.d
+        @Override // xi.d
         /* renamed from: b */
-        public void a(j jVar, ui.e eVar) {
-            eVar.b(f53855b, jVar.c());
+        public void a(j jVar, xi.e eVar) {
+            eVar.d(f54551b, jVar.c());
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class c implements ui.d {
+    private static final class c implements xi.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final c f53856a = new c();
+        static final c f54552a = new c();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f53857b = ui.c.d("clientType");
+        private static final xi.c f54553b = xi.c.d("clientType");
 
         /* renamed from: c  reason: collision with root package name */
-        private static final ui.c f53858c = ui.c.d("androidClientInfo");
+        private static final xi.c f54554c = xi.c.d("androidClientInfo");
 
         private c() {
         }
 
-        @Override // ui.d
+        @Override // xi.d
         /* renamed from: b */
-        public void a(k kVar, ui.e eVar) {
-            eVar.b(f53857b, kVar.c());
-            eVar.b(f53858c, kVar.b());
+        public void a(k kVar, xi.e eVar) {
+            eVar.d(f54553b, kVar.c());
+            eVar.d(f54554c, kVar.b());
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class d implements ui.d {
+    private static final class d implements xi.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final d f53859a = new d();
+        static final d f54555a = new d();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f53860b = ui.c.d("eventTimeMs");
+        private static final xi.c f54556b = xi.c.d("eventTimeMs");
 
         /* renamed from: c  reason: collision with root package name */
-        private static final ui.c f53861c = ui.c.d("eventCode");
+        private static final xi.c f54557c = xi.c.d("eventCode");
 
         /* renamed from: d  reason: collision with root package name */
-        private static final ui.c f53862d = ui.c.d("eventUptimeMs");
+        private static final xi.c f54558d = xi.c.d("eventUptimeMs");
 
         /* renamed from: e  reason: collision with root package name */
-        private static final ui.c f53863e = ui.c.d("sourceExtension");
+        private static final xi.c f54559e = xi.c.d("sourceExtension");
 
         /* renamed from: f  reason: collision with root package name */
-        private static final ui.c f53864f = ui.c.d("sourceExtensionJsonProto3");
+        private static final xi.c f54560f = xi.c.d("sourceExtensionJsonProto3");
 
         /* renamed from: g  reason: collision with root package name */
-        private static final ui.c f53865g = ui.c.d("timezoneOffsetSeconds");
+        private static final xi.c f54561g = xi.c.d("timezoneOffsetSeconds");
 
         /* renamed from: h  reason: collision with root package name */
-        private static final ui.c f53866h = ui.c.d("networkConnectionInfo");
+        private static final xi.c f54562h = xi.c.d("networkConnectionInfo");
 
         private d() {
         }
 
-        @Override // ui.d
+        @Override // xi.d
         /* renamed from: b */
-        public void a(l lVar, ui.e eVar) {
-            eVar.d(f53860b, lVar.c());
-            eVar.b(f53861c, lVar.b());
-            eVar.d(f53862d, lVar.d());
-            eVar.b(f53863e, lVar.f());
-            eVar.b(f53864f, lVar.g());
-            eVar.d(f53865g, lVar.h());
-            eVar.b(f53866h, lVar.e());
+        public void a(l lVar, xi.e eVar) {
+            eVar.c(f54556b, lVar.c());
+            eVar.d(f54557c, lVar.b());
+            eVar.c(f54558d, lVar.d());
+            eVar.d(f54559e, lVar.f());
+            eVar.d(f54560f, lVar.g());
+            eVar.c(f54561g, lVar.h());
+            eVar.d(f54562h, lVar.e());
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class e implements ui.d {
+    private static final class e implements xi.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final e f53867a = new e();
+        static final e f54563a = new e();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f53868b = ui.c.d("requestTimeMs");
+        private static final xi.c f54564b = xi.c.d("requestTimeMs");
 
         /* renamed from: c  reason: collision with root package name */
-        private static final ui.c f53869c = ui.c.d("requestUptimeMs");
+        private static final xi.c f54565c = xi.c.d("requestUptimeMs");
 
         /* renamed from: d  reason: collision with root package name */
-        private static final ui.c f53870d = ui.c.d("clientInfo");
+        private static final xi.c f54566d = xi.c.d("clientInfo");
 
         /* renamed from: e  reason: collision with root package name */
-        private static final ui.c f53871e = ui.c.d("logSource");
+        private static final xi.c f54567e = xi.c.d("logSource");
 
         /* renamed from: f  reason: collision with root package name */
-        private static final ui.c f53872f = ui.c.d("logSourceName");
+        private static final xi.c f54568f = xi.c.d("logSourceName");
 
         /* renamed from: g  reason: collision with root package name */
-        private static final ui.c f53873g = ui.c.d("logEvent");
+        private static final xi.c f54569g = xi.c.d("logEvent");
 
         /* renamed from: h  reason: collision with root package name */
-        private static final ui.c f53874h = ui.c.d("qosTier");
+        private static final xi.c f54570h = xi.c.d("qosTier");
 
         private e() {
         }
 
-        @Override // ui.d
+        @Override // xi.d
         /* renamed from: b */
-        public void a(m mVar, ui.e eVar) {
-            eVar.d(f53868b, mVar.g());
-            eVar.d(f53869c, mVar.h());
-            eVar.b(f53870d, mVar.b());
-            eVar.b(f53871e, mVar.d());
-            eVar.b(f53872f, mVar.e());
-            eVar.b(f53873g, mVar.c());
-            eVar.b(f53874h, mVar.f());
+        public void a(m mVar, xi.e eVar) {
+            eVar.c(f54564b, mVar.g());
+            eVar.c(f54565c, mVar.h());
+            eVar.d(f54566d, mVar.b());
+            eVar.d(f54567e, mVar.d());
+            eVar.d(f54568f, mVar.e());
+            eVar.d(f54569g, mVar.c());
+            eVar.d(f54570h, mVar.f());
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class f implements ui.d {
+    private static final class f implements xi.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final f f53875a = new f();
+        static final f f54571a = new f();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f53876b = ui.c.d("networkType");
+        private static final xi.c f54572b = xi.c.d("networkType");
 
         /* renamed from: c  reason: collision with root package name */
-        private static final ui.c f53877c = ui.c.d("mobileSubtype");
+        private static final xi.c f54573c = xi.c.d("mobileSubtype");
 
         private f() {
         }
 
-        @Override // ui.d
+        @Override // xi.d
         /* renamed from: b */
-        public void a(o oVar, ui.e eVar) {
-            eVar.b(f53876b, oVar.c());
-            eVar.b(f53877c, oVar.b());
+        public void a(o oVar, xi.e eVar) {
+            eVar.d(f54572b, oVar.c());
+            eVar.d(f54573c, oVar.b());
         }
     }
 
     private b() {
     }
 
-    @Override // vi.a
-    public void a(vi.b bVar) {
-        C0740b c0740b = C0740b.f53854a;
-        bVar.a(j.class, c0740b);
-        bVar.a(yb.d.class, c0740b);
-        e eVar = e.f53867a;
+    @Override // yi.a
+    public void a(yi.b bVar) {
+        C0760b c0760b = C0760b.f54550a;
+        bVar.a(j.class, c0760b);
+        bVar.a(yb.d.class, c0760b);
+        e eVar = e.f54563a;
         bVar.a(m.class, eVar);
         bVar.a(g.class, eVar);
-        c cVar = c.f53856a;
+        c cVar = c.f54552a;
         bVar.a(k.class, cVar);
         bVar.a(yb.e.class, cVar);
-        a aVar = a.f53841a;
+        a aVar = a.f54537a;
         bVar.a(yb.a.class, aVar);
         bVar.a(yb.c.class, aVar);
-        d dVar = d.f53859a;
+        d dVar = d.f54555a;
         bVar.a(l.class, dVar);
         bVar.a(yb.f.class, dVar);
-        f fVar = f.f53875a;
+        f fVar = f.f54571a;
         bVar.a(o.class, fVar);
         bVar.a(i.class, fVar);
     }

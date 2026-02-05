@@ -1694,4 +1694,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.EVERYONE_CHANNEL_ID = var3;
     var2.MemberListRowTypes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [15, 17, 18, 6, 7, 1590, 3714, 1216, 1372, 1599, 1681, 1674, 1410, 3610, 5657, 1621, 660, 1234, 3096, 1215, 22, 484, 566, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [15, 17, 18, 6, 7, 1590, 3714, 1216, 1372, 1599, 1681, 1674, 1410, 3610, 5661, 1621, 660, 1234, 3096, 1215, 22, 484, 566, 806, 2]);

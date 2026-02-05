@@ -16,38 +16,38 @@ import x3.h;
 public final class WorkDatabase_Impl extends WorkDatabase {
 
     /* renamed from: q  reason: collision with root package name */
-    private volatile p4.v f5521q;
+    private volatile p4.v f5633q;
 
     /* renamed from: r  reason: collision with root package name */
-    private volatile p4.b f5522r;
+    private volatile p4.b f5634r;
 
     /* renamed from: s  reason: collision with root package name */
-    private volatile p4.z f5523s;
+    private volatile p4.z f5635s;
 
     /* renamed from: t  reason: collision with root package name */
-    private volatile p4.j f5524t;
+    private volatile p4.j f5636t;
 
     /* renamed from: u  reason: collision with root package name */
-    private volatile p4.o f5525u;
+    private volatile p4.o f5637u;
 
     /* renamed from: v  reason: collision with root package name */
-    private volatile p4.r f5526v;
+    private volatile p4.r f5638v;
 
     /* renamed from: w  reason: collision with root package name */
-    private volatile p4.e f5527w;
+    private volatile p4.e f5639w;
 
     @Override // androidx.work.impl.WorkDatabase
     public p4.b C() {
         p4.b bVar;
-        if (this.f5522r != null) {
-            return this.f5522r;
+        if (this.f5634r != null) {
+            return this.f5634r;
         }
         synchronized (this) {
             try {
-                if (this.f5522r == null) {
-                    this.f5522r = new p4.c(this);
+                if (this.f5634r == null) {
+                    this.f5634r = new p4.c(this);
                 }
-                bVar = this.f5522r;
+                bVar = this.f5634r;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -58,15 +58,15 @@ public final class WorkDatabase_Impl extends WorkDatabase {
     @Override // androidx.work.impl.WorkDatabase
     public p4.e D() {
         p4.e eVar;
-        if (this.f5527w != null) {
-            return this.f5527w;
+        if (this.f5639w != null) {
+            return this.f5639w;
         }
         synchronized (this) {
             try {
-                if (this.f5527w == null) {
-                    this.f5527w = new p4.f(this);
+                if (this.f5639w == null) {
+                    this.f5639w = new p4.f(this);
                 }
-                eVar = this.f5527w;
+                eVar = this.f5639w;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -77,15 +77,15 @@ public final class WorkDatabase_Impl extends WorkDatabase {
     @Override // androidx.work.impl.WorkDatabase
     public p4.j E() {
         p4.j jVar;
-        if (this.f5524t != null) {
-            return this.f5524t;
+        if (this.f5636t != null) {
+            return this.f5636t;
         }
         synchronized (this) {
             try {
-                if (this.f5524t == null) {
-                    this.f5524t = new p4.k(this);
+                if (this.f5636t == null) {
+                    this.f5636t = new p4.k(this);
                 }
-                jVar = this.f5524t;
+                jVar = this.f5636t;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -96,15 +96,15 @@ public final class WorkDatabase_Impl extends WorkDatabase {
     @Override // androidx.work.impl.WorkDatabase
     public p4.o F() {
         p4.o oVar;
-        if (this.f5525u != null) {
-            return this.f5525u;
+        if (this.f5637u != null) {
+            return this.f5637u;
         }
         synchronized (this) {
             try {
-                if (this.f5525u == null) {
-                    this.f5525u = new p4.p(this);
+                if (this.f5637u == null) {
+                    this.f5637u = new p4.p(this);
                 }
-                oVar = this.f5525u;
+                oVar = this.f5637u;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -115,15 +115,15 @@ public final class WorkDatabase_Impl extends WorkDatabase {
     @Override // androidx.work.impl.WorkDatabase
     public p4.r G() {
         p4.r rVar;
-        if (this.f5526v != null) {
-            return this.f5526v;
+        if (this.f5638v != null) {
+            return this.f5638v;
         }
         synchronized (this) {
             try {
-                if (this.f5526v == null) {
-                    this.f5526v = new p4.s(this);
+                if (this.f5638v == null) {
+                    this.f5638v = new p4.s(this);
                 }
-                rVar = this.f5526v;
+                rVar = this.f5638v;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -134,15 +134,15 @@ public final class WorkDatabase_Impl extends WorkDatabase {
     @Override // androidx.work.impl.WorkDatabase
     public p4.v H() {
         p4.v vVar;
-        if (this.f5521q != null) {
-            return this.f5521q;
+        if (this.f5633q != null) {
+            return this.f5633q;
         }
         synchronized (this) {
             try {
-                if (this.f5521q == null) {
-                    this.f5521q = new p4.w(this);
+                if (this.f5633q == null) {
+                    this.f5633q = new p4.w(this);
                 }
-                vVar = this.f5521q;
+                vVar = this.f5633q;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -153,15 +153,15 @@ public final class WorkDatabase_Impl extends WorkDatabase {
     @Override // androidx.work.impl.WorkDatabase
     public p4.z I() {
         p4.z zVar;
-        if (this.f5523s != null) {
-            return this.f5523s;
+        if (this.f5635s != null) {
+            return this.f5635s;
         }
         synchronized (this) {
             try {
-                if (this.f5523s == null) {
-                    this.f5523s = new p4.a0(this);
+                if (this.f5635s == null) {
+                    this.f5635s = new p4.a0(this);
                 }
-                zVar = this.f5523s;
+                zVar = this.f5635s;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -176,7 +176,7 @@ public final class WorkDatabase_Impl extends WorkDatabase {
 
     @Override // r3.u
     protected x3.h h(r3.f fVar) {
-        return fVar.f48402c.a(h.b.a(fVar.f48400a).d(fVar.f48401b).c(new r3.w(fVar, new a(20), "7d73d21f1bd82c9e5268b6dcf9fde2cb", "3071c8717539de5d5353f4c8cd59a032")).b());
+        return fVar.f48412c.a(h.b.a(fVar.f48410a).d(fVar.f48411b).c(new r3.w(fVar, new a(20), "7d73d21f1bd82c9e5268b6dcf9fde2cb", "3071c8717539de5d5353f4c8cd59a032")).b());
     }
 
     @Override // r3.u
@@ -237,33 +237,33 @@ public final class WorkDatabase_Impl extends WorkDatabase {
             gVar.K("DROP TABLE IF EXISTS `WorkName`");
             gVar.K("DROP TABLE IF EXISTS `WorkProgress`");
             gVar.K("DROP TABLE IF EXISTS `Preference`");
-            if (((r3.u) WorkDatabase_Impl.this).f48484h != null) {
-                int size = ((r3.u) WorkDatabase_Impl.this).f48484h.size();
+            if (((r3.u) WorkDatabase_Impl.this).f48494h != null) {
+                int size = ((r3.u) WorkDatabase_Impl.this).f48494h.size();
                 for (int i10 = 0; i10 < size; i10++) {
-                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48484h.get(i10)).b(gVar);
+                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48494h.get(i10)).b(gVar);
                 }
             }
         }
 
         @Override // r3.w.b
         public void c(x3.g gVar) {
-            if (((r3.u) WorkDatabase_Impl.this).f48484h != null) {
-                int size = ((r3.u) WorkDatabase_Impl.this).f48484h.size();
+            if (((r3.u) WorkDatabase_Impl.this).f48494h != null) {
+                int size = ((r3.u) WorkDatabase_Impl.this).f48494h.size();
                 for (int i10 = 0; i10 < size; i10++) {
-                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48484h.get(i10)).a(gVar);
+                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48494h.get(i10)).a(gVar);
                 }
             }
         }
 
         @Override // r3.w.b
         public void d(x3.g gVar) {
-            ((r3.u) WorkDatabase_Impl.this).f48477a = gVar;
+            ((r3.u) WorkDatabase_Impl.this).f48487a = gVar;
             gVar.K("PRAGMA foreign_keys = ON");
             WorkDatabase_Impl.this.u(gVar);
-            if (((r3.u) WorkDatabase_Impl.this).f48484h != null) {
-                int size = ((r3.u) WorkDatabase_Impl.this).f48484h.size();
+            if (((r3.u) WorkDatabase_Impl.this).f48494h != null) {
+                int size = ((r3.u) WorkDatabase_Impl.this).f48494h.size();
                 for (int i10 = 0; i10 < size; i10++) {
-                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48484h.get(i10)).c(gVar);
+                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48494h.get(i10)).c(gVar);
                 }
             }
         }

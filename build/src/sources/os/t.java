@@ -1,59 +1,38 @@
 package os;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.ServiceLoader;
-import js.c1;
+import kotlin.Unit;
+import kotlin.coroutines.CoroutineContext;
+import kotlinx.coroutines.channels.ProducerScope;
+import ms.a0;
+import os.w;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class t {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final t f44554a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final c1 f44555b;
-
-    static {
-        t tVar = new t();
-        f44554a = tVar;
-        f0.f("kotlinx.coroutines.fast.service.loader", true);
-        f44555b = tVar.a();
+public final class t extends h implements ProducerScope {
+    public t(CoroutineContext coroutineContext, g gVar) {
+        super(coroutineContext, gVar, true, true);
     }
 
-    private t() {
-    }
-
-    private final c1 a() {
-        Object next;
-        c1 e10;
-        try {
-            List Y = kotlin.sequences.k.Y(kotlin.sequences.k.h(ServiceLoader.load(s.class, s.class.getClassLoader()).iterator()));
-            Iterator it = Y.iterator();
-            if (!it.hasNext()) {
-                next = null;
-            } else {
-                next = it.next();
-                if (it.hasNext()) {
-                    int c10 = ((s) next).c();
-                    do {
-                        Object next2 = it.next();
-                        int c11 = ((s) next2).c();
-                        if (c10 < c11) {
-                            next = next2;
-                            c10 = c11;
-                        }
-                    } while (it.hasNext());
-                }
-            }
-            s sVar = (s) next;
-            if (sVar != null && (e10 = u.e(sVar, Y)) != null) {
-                return e10;
-            }
-            u.b(null, null, 3, null);
-            return null;
-        } catch (Throwable th2) {
-            u.b(th2, null, 2, null);
-            return null;
+    @Override // kotlinx.coroutines.a
+    protected void R0(Throwable th2, boolean z10) {
+        if (!X0().t(th2) && !z10) {
+            a0.a(getContext(), th2);
         }
+    }
+
+    @Override // kotlinx.coroutines.a, kotlinx.coroutines.b0, kotlinx.coroutines.Job
+    public boolean a() {
+        return super.a();
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // kotlinx.coroutines.a
+    /* renamed from: a1 */
+    public void T0(Unit unit) {
+        w.a.a(X0(), null, 1, null);
+    }
+
+    @Override // kotlinx.coroutines.channels.ProducerScope
+    public /* bridge */ /* synthetic */ w m() {
+        return W0();
     }
 }

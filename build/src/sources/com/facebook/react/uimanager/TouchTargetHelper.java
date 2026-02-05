@@ -52,7 +52,7 @@ public final class TouchTargetHelper {
         static {
             TouchTargetReturnType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = sr.a.a($values);
+            $ENTRIES = vr.a.a($values);
         }
 
         private TouchTargetReturnType(String str, int i10) {

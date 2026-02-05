@@ -8,11 +8,11 @@ public abstract class c {
     public static final class a extends c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f26816a;
+        public final int f25657a;
 
         public a(int i10) {
             super(null);
-            this.f26816a = i10;
+            this.f25657a = i10;
             if (i10 > 0) {
                 return;
             }
@@ -23,18 +23,18 @@ public abstract class c {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof a) && this.f26816a == ((a) obj).f26816a) {
+            if ((obj instanceof a) && this.f25657a == ((a) obj).f25657a) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f26816a;
+            return this.f25657a;
         }
 
         public String toString() {
-            return String.valueOf(this.f26816a);
+            return String.valueOf(this.f25657a);
         }
     }
 
@@ -42,7 +42,7 @@ public abstract class c {
     public static final class b extends c {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f26817a = new b();
+        public static final b f25658a = new b();
 
         private b() {
             super(null);

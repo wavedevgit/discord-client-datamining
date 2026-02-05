@@ -45,7 +45,7 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
     @NotNull
     public NextStep.GovernmentId.AssetConfig.CapturePage fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         int i10 = -1;
         RemoteImage remoteImage = null;
         RemoteImage remoteImage2 = null;
@@ -56,7 +56,7 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
         RemoteImage remoteImage7 = null;
         RemoteImage remoteImage8 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.W(this.options)) {
                 case -1:
                     reader.E0();
                     reader.P();
@@ -95,7 +95,7 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
                     break;
             }
         }
-        reader.y();
+        reader.z();
         if (i10 == -256) {
             RemoteImage remoteImage9 = remoteImage8;
             RemoteImage remoteImage10 = remoteImage7;
@@ -114,7 +114,7 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
         RemoteImage remoteImage21 = remoteImage;
         Constructor<NextStep.GovernmentId.AssetConfig.CapturePage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.CapturePage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, vm.c.f51688c);
+            constructor = NextStep.GovernmentId.AssetConfig.CapturePage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, ym.c.f54853c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -127,22 +127,22 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
     public void toJson(@NotNull t writer, NextStep.GovernmentId.AssetConfig.CapturePage capturePage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (capturePage != null) {
-            writer.l();
-            writer.A0("idFrontPictograph");
+            writer.k();
+            writer.W("idFrontPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getIdFrontPictograph());
-            writer.A0("idBackPictograph");
+            writer.W("idBackPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getIdBackPictograph());
-            writer.A0("barcodePdf417Pictograph");
+            writer.W("barcodePdf417Pictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getBarcodePdf417Pictograph());
-            writer.A0("passportFrontPictograph");
+            writer.W("passportFrontPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getPassportFrontPictograph());
-            writer.A0("passportSignaturePictograph");
+            writer.W("passportSignaturePictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getPassportSignaturePictograph());
-            writer.A0("idFrontHelpModalPictograph");
+            writer.W("idFrontHelpModalPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getIdFrontHelpModalPictograph());
-            writer.A0("idBackHelpModalPictograph");
+            writer.W("idBackHelpModalPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getIdBackHelpModalPictograph());
-            writer.A0("barcodeHelpModalPictograph");
+            writer.W("barcodeHelpModalPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getBarcodeHelpModalPictograph());
             writer.E();
             return;

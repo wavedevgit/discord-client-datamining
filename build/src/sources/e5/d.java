@@ -20,13 +20,13 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class d {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f21346c = new a(null);
+    public static final a f21418c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final v4.h f21347a;
+    private final v4.h f21419a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final p f21348b;
+    private final p f21420b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -39,21 +39,21 @@ public final class d {
     }
 
     public d(v4.h hVar, p pVar, t tVar) {
-        this.f21347a = hVar;
-        this.f21348b = pVar;
+        this.f21419a = hVar;
+        this.f21420b = pVar;
     }
 
-    private final String b(c.C0277c c0277c) {
-        Object obj = c0277c.b().get("coil#disk_cache_key");
+    private final String b(c.C0292c c0292c) {
+        Object obj = c0292c.b().get("coil#disk_cache_key");
         if (obj instanceof String) {
             return (String) obj;
         }
         return null;
     }
 
-    private final boolean d(c.C0277c c0277c) {
+    private final boolean d(c.C0292c c0292c) {
         Boolean bool;
-        Object obj = c0277c.b().get("coil#is_sampled");
+        Object obj = c0292c.b().get("coil#is_sampled");
         if (obj instanceof Boolean) {
             bool = (Boolean) obj;
         } else {
@@ -75,7 +75,7 @@ public final class d {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    private final boolean e(g5.h r18, e5.c.b r19, e5.c.C0277c r20, h5.i r21, h5.h r22) {
+    private final boolean e(g5.h r18, e5.c.b r19, e5.c.C0292c r20, h5.i r21, h5.h r22) {
         /*
             r17 = this;
             r0 = r17
@@ -108,7 +108,7 @@ public final class d {
             r8 = 2147483647(0x7fffffff, float:NaN)
             if (r7 == 0) goto L4b
             h5.c$a r6 = (h5.c.a) r6
-            int r6 = r6.f26816a
+            int r6 = r6.f25657a
             goto L4c
         L4b:
             r6 = r8
@@ -117,7 +117,7 @@ public final class d {
             boolean r9 = r7 instanceof h5.c.a
             if (r9 == 0) goto L58
             h5.c$a r7 = (h5.c.a) r7
-            int r8 = r7.f26816a
+            int r8 = r7.f25657a
         L58:
             r7 = r22
             double r9 = x4.j.c(r3, r1, r6, r8, r7)
@@ -186,28 +186,28 @@ public final class d {
         throw new UnsupportedOperationException("Method not decompiled: e5.d.e(g5.h, e5.c$b, e5.c$c, h5.i, h5.h):boolean");
     }
 
-    public final c.C0277c a(g5.h hVar, c.b bVar, h5.i iVar, h5.h hVar2) {
-        c.C0277c c0277c;
+    public final c.C0292c a(g5.h hVar, c.b bVar, h5.i iVar, h5.h hVar2) {
+        c.C0292c c0292c;
         if (!hVar.C().d()) {
             return null;
         }
-        c b10 = this.f21347a.b();
+        c b10 = this.f21419a.b();
         if (b10 != null) {
-            c0277c = b10.b(bVar);
+            c0292c = b10.b(bVar);
         } else {
-            c0277c = null;
+            c0292c = null;
         }
-        if (c0277c == null || !c(hVar, bVar, c0277c, iVar, hVar2)) {
+        if (c0292c == null || !c(hVar, bVar, c0292c, iVar, hVar2)) {
             return null;
         }
-        return c0277c;
+        return c0292c;
     }
 
-    public final boolean c(g5.h hVar, c.b bVar, c.C0277c c0277c, h5.i iVar, h5.h hVar2) {
-        if (!this.f21348b.c(hVar, k5.a.c(c0277c.a()))) {
+    public final boolean c(g5.h hVar, c.b bVar, c.C0292c c0292c, h5.i iVar, h5.h hVar2) {
+        if (!this.f21420b.c(hVar, k5.a.c(c0292c.a()))) {
             return false;
         }
-        return e(hVar, bVar, c0277c, iVar, hVar2);
+        return e(hVar, bVar, c0292c, iVar, hVar2);
     }
 
     public final c.b f(g5.h hVar, Object obj, m mVar, v4.c cVar) {
@@ -216,7 +216,7 @@ public final class d {
             return B;
         }
         cVar.f(hVar, obj);
-        String f10 = this.f21347a.getComponents().f(obj, mVar);
+        String f10 = this.f21419a.getComponents().f(obj, mVar);
         cVar.h(hVar, f10);
         if (f10 == null) {
             return null;
@@ -242,15 +242,15 @@ public final class d {
         return new c.b(f10, y10);
     }
 
-    public final q g(b.a aVar, g5.h hVar, c.b bVar, c.C0277c c0277c) {
-        return new q(new BitmapDrawable(hVar.l().getResources(), c0277c.a()), hVar, x4.h.f53108d, bVar, b(c0277c), d(c0277c), k.t(aVar));
+    public final q g(b.a aVar, g5.h hVar, c.b bVar, c.C0292c c0292c) {
+        return new q(new BitmapDrawable(hVar.l().getResources(), c0292c.a()), hVar, x4.h.f53652d, bVar, b(c0292c), d(c0292c), k.t(aVar));
     }
 
     public final boolean h(c.b bVar, g5.h hVar, a.b bVar2) {
         c b10;
         BitmapDrawable bitmapDrawable;
         Bitmap bitmap;
-        if (hVar.C().e() && (b10 = this.f21347a.b()) != null && bVar != null) {
+        if (hVar.C().e() && (b10 = this.f21419a.b()) != null && bVar != null) {
             Drawable e10 = bVar2.e();
             if (e10 instanceof BitmapDrawable) {
                 bitmapDrawable = (BitmapDrawable) e10;
@@ -264,7 +264,7 @@ public final class d {
                 if (d10 != null) {
                     linkedHashMap.put("coil#disk_cache_key", d10);
                 }
-                b10.c(bVar, new c.C0277c(bitmap, linkedHashMap));
+                b10.c(bVar, new c.C0292c(bitmap, linkedHashMap));
                 return true;
             }
         }

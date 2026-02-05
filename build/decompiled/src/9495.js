@@ -2,43 +2,53 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var1 = {};
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
     var0 = true;
-    var1.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var4)(var2, var0, var1);
-    var1 = dependencyMap;
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var3 = dependencyMap;
     var0 = 0;
-    var3 = var1[var0];
-    var1 = require;
+    var4 = var3[var0];
+    var3 = require;
     var0 = undefined;
-    var1 = var1.bind(var0)(var3);
-    var4 = var1.StyleSheet;
-    var3 = var4.create;
-    var1 = {};
-    var5 = {
-        'alignItems': 'center',
-        'justifyContent': 'center',
-        'paddingHorizontal': 20,
-        'paddingVertical': 30
+    var3 = var3.bind(var0)(var4);
+    var3 = var3.useEffect;
+    var _closure1_slot0 = var3;
+    var1 = function arg0, arg1() {
+        var0 = arg0;
+        var _closure2_slot0 = var0;
+        var2 = arg1;
+        var4 = var2.enabled;
+        var _closure2_slot1 = var4;
+        var3 = _closure1_slot0;
+        var2 = new Array(2);
+        var2[0] = var4;
+        var2[1] = var0;
+        var0 = undefined;
+        var1 = function() { // Environment: var1
+            _fun75220: for (var _fun75220_ip = 0;;) switch (_fun75220_ip) {
+                case 0:
+                    var2 = _closure2_slot1;
+                    var0 = undefined;
+                    if (!(var0 !== var2)) {
+                        _fun75220_ip = 31;
+                        continue _fun75220
+                    }
+                case 13:
+                    var3 = _closure2_slot0;
+                    var2 = var3.enabled;
+                    var1 = _closure2_slot1;
+                    var1 = var2.bind(var3)(var1);
+                case 31:
+                    return var0;
+            }
+        };
+        var1 = var3.bind(var0)(var1, var2);
+        return var0;
     };
-    var1.sliderPagination = var5;
-    var5 = {
-        'alignItems': 'center',
-        'justifyContent': 'center',
-        'marginHorizontal': 8
-    };
-    var1.sliderPaginationDotContainer = var5;
-    var5 = {
-        'width': 7,
-        'height': 7,
-        'borderRadius': 3.5,
-        'backgroundColor': 'rgba(0, 0, 0, 0.75)'
-    };
-    var1.sliderPaginationDot = var5;
-    var1 = var3.bind(var4)(var1);
-    var2.default = var1;
+    var2.useUpdateGestureConfig = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);

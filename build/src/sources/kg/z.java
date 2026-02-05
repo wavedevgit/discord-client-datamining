@@ -9,10 +9,10 @@ import java.util.RandomAccess;
 public abstract class z extends w implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final d0 f32371e = new x(a0.f32345p, 0);
+    private static final d0 f31834e = new x(a0.f31808p, 0);
 
     public static z i() {
-        return a0.f32345p;
+        return a0.f31808p;
     }
 
     public static z j(Collection collection) {
@@ -20,7 +20,7 @@ public abstract class z extends w implements List, RandomAccess {
             z e10 = ((w) collection).e();
             if (e10.f()) {
                 Object[] array = e10.toArray();
-                return k(array, array.length);
+                return l(array, array.length);
             }
             return e10;
         }
@@ -34,12 +34,12 @@ public abstract class z extends w implements List, RandomAccess {
                 throw new NullPointerException(sb2.toString());
             }
         }
-        return k(array2, length);
+        return l(array2, length);
     }
 
-    static z k(Object[] objArr, int i10) {
+    static z l(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return a0.f32345p;
+            return a0.f31808p;
         }
         return new a0(objArr, i10);
     }
@@ -144,7 +144,7 @@ public abstract class z extends w implements List, RandomAccess {
             return this;
         }
         if (i12 == 0) {
-            return a0.f32345p;
+            return a0.f31808p;
         }
         return new y(this, i10, i12);
     }
@@ -197,11 +197,11 @@ public abstract class z extends w implements List, RandomAccess {
     }
 
     @Override // java.util.List
-    /* renamed from: m */
+    /* renamed from: n */
     public final d0 listIterator(int i10) {
         t.b(i10, size(), "index");
         if (isEmpty()) {
-            return f32371e;
+            return f31834e;
         }
         return new x(this, i10);
     }

@@ -1,7 +1,7 @@
 package th;
+
+import com.google.android.gms.tasks.Task;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b extends RuntimeException {
-    public b() {
-        super("Failed to bind to the service.");
-    }
+public interface b {
+    Task a(d dVar);
 }

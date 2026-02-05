@@ -9,21 +9,21 @@ import kotlin.reflect.jvm.internal.impl.protobuf.ByteString;
 public class b extends ByteString {
 
     /* renamed from: d  reason: collision with root package name */
-    protected final byte[] f34442d;
+    protected final byte[] f33966d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f34443e = 0;
+    private int f33967e = 0;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: kotlin.reflect.jvm.internal.impl.protobuf.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public class C0443b implements ByteString.ByteIterator {
+    public class C0445b implements ByteString.ByteIterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f34444d;
+        private int f33968d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f34445e;
+        private final int f33969e;
 
         @Override // java.util.Iterator
         /* renamed from: a */
@@ -33,7 +33,7 @@ public class b extends ByteString {
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f34444d < this.f34445e) {
+            if (this.f33968d < this.f33969e) {
                 return true;
             }
             return false;
@@ -42,9 +42,9 @@ public class b extends ByteString {
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString.ByteIterator
         public byte nextByte() {
             try {
-                byte[] bArr = b.this.f34442d;
-                int i10 = this.f34444d;
-                this.f34444d = i10 + 1;
+                byte[] bArr = b.this.f33966d;
+                int i10 = this.f33968d;
+                this.f33968d = i10 + 1;
                 return bArr[i10];
             } catch (ArrayIndexOutOfBoundsException e10) {
                 throw new NoSuchElementException(e10.getMessage());
@@ -56,18 +56,18 @@ public class b extends ByteString {
             throw new UnsupportedOperationException();
         }
 
-        private C0443b() {
-            this.f34444d = 0;
-            this.f34445e = b.this.size();
+        private C0445b() {
+            this.f33968d = 0;
+            this.f33969e = b.this.size();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(byte[] bArr) {
-        this.f34442d = bArr;
+        this.f33966d = bArr;
     }
 
-    static int o(int i10, byte[] bArr, int i11, int i12) {
+    static int p(int i10, byte[] bArr, int i11, int i12) {
         for (int i13 = i11; i13 < i11 + i12; i13++) {
             i10 = (i10 * 31) + bArr[i13];
         }
@@ -76,7 +76,7 @@ public class b extends ByteString {
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     protected void c(byte[] bArr, int i10, int i11, int i12) {
-        System.arraycopy(this.f34442d, i10, bArr, i11, i12);
+        System.arraycopy(this.f33966d, i10, bArr, i11, i12);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
@@ -100,7 +100,7 @@ public class b extends ByteString {
             return true;
         }
         if (obj instanceof b) {
-            return m((b) obj, 0, size());
+            return n((b) obj, 0, size());
         }
         if (obj instanceof c) {
             return obj.equals(this);
@@ -114,63 +114,63 @@ public class b extends ByteString {
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     protected int f(int i10, int i11, int i12) {
-        return o(i10, this.f34442d, n() + i11, i12);
+        return p(i10, this.f33966d, o() + i11, i12);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     protected int g(int i10, int i11, int i12) {
-        int n10 = n() + i11;
-        return e.g(i10, this.f34442d, n10, i12 + n10);
+        int o10 = o() + i11;
+        return e.g(i10, this.f33966d, o10, i12 + o10);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     protected int h() {
-        return this.f34443e;
+        return this.f33967e;
     }
 
     public int hashCode() {
-        int i10 = this.f34443e;
+        int i10 = this.f33967e;
         if (i10 == 0) {
             int size = size();
             i10 = f(size, 0, size);
             if (i10 == 0) {
                 i10 = 1;
             }
-            this.f34443e = i10;
+            this.f33967e = i10;
         }
         return i10;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     public boolean isValidUtf8() {
-        int n10 = n();
-        return e.f(this.f34442d, n10, size() + n10);
+        int o10 = o();
+        return e.f(this.f33966d, o10, size() + o10);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     void j(OutputStream outputStream, int i10, int i11) {
-        outputStream.write(this.f34442d, n() + i10, i11);
+        outputStream.write(this.f33966d, o() + i10, i11);
     }
 
-    public byte k(int i10) {
-        return this.f34442d[i10];
+    public byte l(int i10) {
+        return this.f33966d[i10];
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public boolean m(b bVar, int i10, int i11) {
+    public boolean n(b bVar, int i10, int i11) {
         if (i11 <= bVar.size()) {
             if (i10 + i11 <= bVar.size()) {
-                byte[] bArr = this.f34442d;
-                byte[] bArr2 = bVar.f34442d;
-                int n10 = n() + i11;
-                int n11 = n();
-                int n12 = bVar.n() + i10;
-                while (n11 < n10) {
-                    if (bArr[n11] != bArr2[n12]) {
+                byte[] bArr = this.f33966d;
+                byte[] bArr2 = bVar.f33966d;
+                int o10 = o() + i11;
+                int o11 = o();
+                int o12 = bVar.o() + i10;
+                while (o11 < o10) {
+                    if (bArr[o11] != bArr2[o12]) {
                         return false;
                     }
-                    n11++;
-                    n12++;
+                    o11++;
+                    o12++;
                 }
                 return true;
             }
@@ -192,29 +192,29 @@ public class b extends ByteString {
         throw new IllegalArgumentException(sb3.toString());
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public int n() {
-        return 0;
-    }
-
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     public CodedInputStream newCodedInput() {
         return CodedInputStream.b(this);
     }
 
+    /* JADX INFO: Access modifiers changed from: protected */
+    public int o() {
+        return 0;
+    }
+
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     public int size() {
-        return this.f34442d.length;
+        return this.f33966d.length;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     public String toString(String str) {
-        return new String(this.f34442d, n(), size(), str);
+        return new String(this.f33966d, o(), size(), str);
     }
 
     /* JADX WARN: Can't rename method to resolve collision */
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString, java.lang.Iterable
     public Iterator<Byte> iterator() {
-        return new C0443b();
+        return new C0445b();
     }
 }

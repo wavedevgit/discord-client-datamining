@@ -1,347 +1,53 @@
 package ul;
 
-import android.content.Context;
-import android.graphics.PointF;
-import android.view.MotionEvent;
-import android.view.ScaleGestureDetector;
-import com.otaliastudios.zoom.AbsolutePoint;
-import com.otaliastudios.zoom.ScaledPoint;
-import com.otaliastudios.zoom.ZoomLogger;
-import kotlin.Unit;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.util.concurrent.LinkedBlockingQueue;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
-import vl.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements ScaleGestureDetector.OnScaleGestureListener {
-
-    /* renamed from: h  reason: collision with root package name */
-    public static final C0635a f50694h = new C0635a(null);
-
-    /* renamed from: i  reason: collision with root package name */
-    private static final String f50695i;
-
-    /* renamed from: j  reason: collision with root package name */
-    private static final ZoomLogger f50696j;
+public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final wl.c f50697a;
+    private final boolean f51463a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final wl.b f50698b;
+    private final LinkedBlockingQueue f51464b = new LinkedBlockingQueue();
 
-    /* renamed from: c  reason: collision with root package name */
-    private final tl.a f50699c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final vl.b f50700d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final ScaleGestureDetector f50701e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final AbsolutePoint f50702f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private final AbsolutePoint f50703g;
-
-    /* renamed from: ul.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0635a {
-        public /* synthetic */ C0635a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        private C0635a() {
-        }
+    public a(boolean z10) {
+        this.f51463a = z10;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class b extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ float f50704d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ PointF f50705e;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        b(float f10, PointF pointF) {
-            super(1);
-            this.f50704d = f10;
-            this.f50705e = pointF;
+    private final ByteBuffer a(int i10) {
+        if (this.f51463a) {
+            ByteBuffer order = ByteBuffer.allocateDirect(i10).order(ByteOrder.LITTLE_ENDIAN);
+            Intrinsics.checkNotNullExpressionValue(order, "{\n            ByteBuffer….LITTLE_ENDIAN)\n        }");
+            return order;
         }
-
-        public final void a(c.a applyUpdate) {
-            Intrinsics.checkNotNullParameter(applyUpdate, "$this$applyUpdate");
-            applyUpdate.i(this.f50704d, true);
-            applyUpdate.f(Float.valueOf(this.f50705e.x), Float.valueOf(this.f50705e.y));
-            applyUpdate.h(true);
-            applyUpdate.g(false);
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-            a((c.a) obj);
-            return Unit.f32464a;
-        }
+        ByteBuffer order2 = ByteBuffer.allocate(i10).order(ByteOrder.LITTLE_ENDIAN);
+        Intrinsics.checkNotNullExpressionValue(order2, "{\n            ByteBuffer….LITTLE_ENDIAN)\n        }");
+        return order2;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class c extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ float f50706d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ AbsolutePoint f50707e;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        c(float f10, AbsolutePoint absolutePoint) {
-            super(1);
-            this.f50706d = f10;
-            this.f50707e = absolutePoint;
-        }
-
-        public final void a(c.a applyUpdate) {
-            Intrinsics.checkNotNullParameter(applyUpdate, "$this$applyUpdate");
-            applyUpdate.i(this.f50706d, true);
-            applyUpdate.d(this.f50707e, true);
-            applyUpdate.g(false);
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-            a((c.a) obj);
-            return Unit.f32464a;
-        }
+    public final void b() {
+        this.f51464b.clear();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class d extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ float f50708d;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        d(float f10) {
-            super(1);
-            this.f50708d = f10;
+    public final ByteBuffer c(int i10) {
+        ByteBuffer byteBuffer = (ByteBuffer) this.f51464b.poll();
+        if (byteBuffer != null) {
+            if (byteBuffer.capacity() < i10) {
+                byteBuffer = a(i10);
+            }
+            if (byteBuffer != null) {
+                return byteBuffer;
+            }
         }
-
-        public final void a(c.a animateUpdate) {
-            Intrinsics.checkNotNullParameter(animateUpdate, "$this$animateUpdate");
-            animateUpdate.i(this.f50708d, true);
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-            a((c.a) obj);
-            return Unit.f32464a;
-        }
+        return a(i10);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class e extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ float f50709d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ AbsolutePoint f50710e;
-
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ PointF f50711i;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        e(float f10, AbsolutePoint absolutePoint, PointF pointF) {
-            super(1);
-            this.f50709d = f10;
-            this.f50710e = absolutePoint;
-            this.f50711i = pointF;
-        }
-
-        public final void a(c.a animateUpdate) {
-            Intrinsics.checkNotNullParameter(animateUpdate, "$this$animateUpdate");
-            animateUpdate.i(this.f50709d, true);
-            animateUpdate.d(this.f50710e, true);
-            animateUpdate.f(Float.valueOf(this.f50711i.x), Float.valueOf(this.f50711i.y));
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-            a((c.a) obj);
-            return Unit.f32464a;
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class f extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ float f50712d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ a f50713e;
-
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ScaleGestureDetector f50714i;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        f(float f10, a aVar, ScaleGestureDetector scaleGestureDetector) {
-            super(1);
-            this.f50712d = f10;
-            this.f50713e = aVar;
-            this.f50714i = scaleGestureDetector;
-        }
-
-        public final void a(c.a applyUpdate) {
-            Intrinsics.checkNotNullParameter(applyUpdate, "$this$applyUpdate");
-            applyUpdate.i(this.f50712d, true);
-            applyUpdate.b(this.f50713e.f50703g, true);
-            applyUpdate.f(Float.valueOf(this.f50714i.getFocusX()), Float.valueOf(this.f50714i.getFocusY()));
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-            a((c.a) obj);
-            return Unit.f32464a;
-        }
-    }
-
-    static {
-        String TAG = a.class.getSimpleName();
-        f50695i = TAG;
-        ZoomLogger.a aVar = ZoomLogger.f16907b;
-        Intrinsics.checkNotNullExpressionValue(TAG, "TAG");
-        f50696j = aVar.a(TAG);
-    }
-
-    public a(Context context, wl.c zoomManager, wl.b panManager, tl.a stateController, vl.b matrixController) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        Intrinsics.checkNotNullParameter(zoomManager, "zoomManager");
-        Intrinsics.checkNotNullParameter(panManager, "panManager");
-        Intrinsics.checkNotNullParameter(stateController, "stateController");
-        Intrinsics.checkNotNullParameter(matrixController, "matrixController");
-        this.f50697a = zoomManager;
-        this.f50698b = panManager;
-        this.f50699c = stateController;
-        this.f50700d = matrixController;
-        ScaleGestureDetector scaleGestureDetector = new ScaleGestureDetector(context, this);
-        this.f50701e = scaleGestureDetector;
-        scaleGestureDetector.setQuickScaleEnabled(false);
-        this.f50702f = new AbsolutePoint(Float.NaN, Float.NaN);
-        this.f50703g = new AbsolutePoint(0.0f, 0.0f);
-    }
-
-    private final PointF b(AbsolutePoint absolutePoint) {
-        float m10;
-        if (this.f50700d.y() <= 1.0f) {
-            PointF d10 = d(new AbsolutePoint((-this.f50700d.q()) / 2.0f, (-this.f50700d.n()) / 2.0f));
-            d10.set(-d10.x, -d10.y);
-            return d10;
-        }
-        float f10 = 0.0f;
-        if (absolutePoint.c() > 0.0f) {
-            m10 = this.f50700d.m();
-        } else if (absolutePoint.c() < 0.0f) {
-            m10 = 0.0f;
-        } else {
-            m10 = this.f50700d.m() / 2.0f;
-        }
-        if (absolutePoint.d() > 0.0f) {
-            f10 = this.f50700d.l();
-        } else if (absolutePoint.d() >= 0.0f) {
-            f10 = this.f50700d.l() / 2.0f;
-        }
-        return new PointF(m10, f10);
-    }
-
-    private final AbsolutePoint c(PointF pointF) {
-        return ScaledPoint.k(new ScaledPoint(this.f50700d.w() + pointF.x, this.f50700d.x() + pointF.y), this.f50700d.y(), null, 2, null);
-    }
-
-    private final PointF d(AbsolutePoint absolutePoint) {
-        ScaledPoint e10 = AbsolutePoint.j(absolutePoint, this.f50700d.y(), null, 2, null).e(this.f50700d.v());
-        return new PointF(e10.c(), e10.d());
-    }
-
-    private final void e() {
-        if (!this.f50697a.m() && !this.f50698b.n()) {
-            this.f50699c.f();
-            return;
-        }
-        float f10 = this.f50697a.f();
-        float i10 = this.f50697a.i();
-        float b10 = this.f50697a.b(this.f50700d.y(), false);
-        f50696j.b("onScaleEnd:", "zoom:", Float.valueOf(this.f50700d.y()), "newZoom:", Float.valueOf(b10), "max:", Float.valueOf(f10), "min:", Float.valueOf(i10));
-        AbsolutePoint k10 = ScaledPoint.k(this.f50698b.f(), this.f50700d.y(), null, 2, null);
-        if (k10.c() == 0.0f && k10.d() == 0.0f && Float.compare(b10, this.f50700d.y()) == 0) {
-            this.f50699c.f();
-            return;
-        }
-        PointF b11 = b(k10);
-        AbsolutePoint f11 = this.f50700d.s().f(k10);
-        if (Float.compare(b10, this.f50700d.y()) != 0) {
-            AbsolutePoint absolutePoint = new AbsolutePoint(this.f50700d.s());
-            float y10 = this.f50700d.y();
-            this.f50700d.g(new b(b10, b11));
-            AbsolutePoint k11 = ScaledPoint.k(this.f50698b.f(), this.f50700d.y(), null, 2, null);
-            f11.g(this.f50700d.s().f(k11));
-            this.f50700d.g(new c(y10, absolutePoint));
-            k10 = k11;
-        }
-        if (k10.c() == 0.0f && k10.d() == 0.0f) {
-            this.f50700d.e(new d(b10));
-        } else {
-            this.f50700d.e(new e(b10, f11, b11));
-        }
-    }
-
-    public final boolean f(MotionEvent event) {
-        Intrinsics.checkNotNullParameter(event, "event");
-        return this.f50701e.onTouchEvent(event);
-    }
-
-    @Override // android.view.ScaleGestureDetector.OnScaleGestureListener
-    public boolean onScale(ScaleGestureDetector detector) {
-        Intrinsics.checkNotNullParameter(detector, "detector");
-        if (!this.f50697a.l() || !this.f50699c.m()) {
-            return false;
-        }
-        AbsolutePoint c10 = c(new PointF(-detector.getFocusX(), -detector.getFocusY()));
-        if (Float.isNaN(this.f50702f.c())) {
-            this.f50702f.g(c10);
-            f50696j.b("onScale:", "Setting initial focus:", this.f50702f);
-        } else {
-            this.f50703g.g(this.f50702f.e(c10));
-            f50696j.b("onScale:", "Got focus offset:", this.f50703g);
-        }
-        this.f50700d.g(new f(this.f50700d.y() * detector.getScaleFactor(), this, detector));
-        return true;
-    }
-
-    @Override // android.view.ScaleGestureDetector.OnScaleGestureListener
-    public boolean onScaleBegin(ScaleGestureDetector detector) {
-        Intrinsics.checkNotNullParameter(detector, "detector");
-        return true;
-    }
-
-    @Override // android.view.ScaleGestureDetector.OnScaleGestureListener
-    public void onScaleEnd(ScaleGestureDetector detector) {
-        Intrinsics.checkNotNullParameter(detector, "detector");
-        f50696j.b("onScaleEnd:", "mInitialAbsFocusPoint.x:", Float.valueOf(this.f50702f.c()), "mInitialAbsFocusPoint.y:", Float.valueOf(this.f50702f.d()), "mOverZoomEnabled;", Boolean.valueOf(this.f50697a.m()));
-        e();
-        AbsolutePoint absolutePoint = this.f50702f;
-        Float valueOf = Float.valueOf(Float.NaN);
-        absolutePoint.h(valueOf, valueOf);
-        AbsolutePoint absolutePoint2 = this.f50703g;
-        Float valueOf2 = Float.valueOf(0.0f);
-        absolutePoint2.h(valueOf2, valueOf2);
+    public final void d(ByteBuffer byteBuffer) {
+        Intrinsics.checkNotNullParameter(byteBuffer, "byteBuffer");
+        byteBuffer.clear();
+        this.f51464b.put(byteBuffer);
     }
 }

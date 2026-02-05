@@ -6,22 +6,22 @@ import android.graphics.PorterDuff;
 public class t0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public ColorStateList f1805a;
+    public ColorStateList f1917a;
 
     /* renamed from: b  reason: collision with root package name */
-    public PorterDuff.Mode f1806b;
+    public PorterDuff.Mode f1918b;
 
     /* renamed from: c  reason: collision with root package name */
-    public boolean f1807c;
+    public boolean f1919c;
 
     /* renamed from: d  reason: collision with root package name */
-    public boolean f1808d;
+    public boolean f1920d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a() {
-        this.f1805a = null;
-        this.f1808d = false;
-        this.f1806b = null;
-        this.f1807c = false;
+        this.f1917a = null;
+        this.f1920d = false;
+        this.f1918b = null;
+        this.f1919c = false;
     }
 }

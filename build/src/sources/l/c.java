@@ -5,10 +5,10 @@ import java.util.concurrent.Executor;
 public class c extends e {
 
     /* renamed from: c  reason: collision with root package name */
-    private static volatile c f36254c;
+    private static volatile c f36181c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Executor f36255d = new Executor() { // from class: l.a
+    private static final Executor f36182d = new Executor() { // from class: l.a
         @Override // java.util.concurrent.Executor
         public final void execute(Runnable runnable) {
             c.g().c(runnable);
@@ -16,7 +16,7 @@ public class c extends e {
     };
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Executor f36256e = new Executor() { // from class: l.b
+    private static final Executor f36183e = new Executor() { // from class: l.b
         @Override // java.util.concurrent.Executor
         public final void execute(Runnable runnable) {
             c.g().a(runnable);
@@ -24,49 +24,49 @@ public class c extends e {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private e f36257a;
+    private e f36184a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e f36258b;
+    private final e f36185b;
 
     private c() {
         d dVar = new d();
-        this.f36258b = dVar;
-        this.f36257a = dVar;
+        this.f36185b = dVar;
+        this.f36184a = dVar;
     }
 
     public static Executor f() {
-        return f36256e;
+        return f36183e;
     }
 
     public static c g() {
-        if (f36254c != null) {
-            return f36254c;
+        if (f36181c != null) {
+            return f36181c;
         }
         synchronized (c.class) {
             try {
-                if (f36254c == null) {
-                    f36254c = new c();
+                if (f36181c == null) {
+                    f36181c = new c();
                 }
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        return f36254c;
+        return f36181c;
     }
 
     @Override // l.e
     public void a(Runnable runnable) {
-        this.f36257a.a(runnable);
+        this.f36184a.a(runnable);
     }
 
     @Override // l.e
     public boolean b() {
-        return this.f36257a.b();
+        return this.f36184a.b();
     }
 
     @Override // l.e
     public void c(Runnable runnable) {
-        this.f36257a.c(runnable);
+        this.f36184a.c(runnable);
     }
 }

@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/hub/native/components/progress_bar/HubSideBarProgressOverview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102181: for (var _fun102181_ip = 0;;) switch (_fun102181_ip) {
+        _fun102209: for (var _fun102209_ip = 0;;) switch (_fun102209_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.guild;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.bind(var3)(var2);
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun102181_ip = 388;
-                    continue _fun102181
+                    _fun102209_ip = 388;
+                    continue _fun102209
                 }
             case 79:
                 var12 = var2.size;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var2.bind(var3)(var5);
                 var2 = _closure1_slot4;
                 if (!(!(var12 < var2))) {
-                    _fun102181_ip = 177;
-                    continue _fun102181
+                    _fun102209_ip = 177;
+                    continue _fun102209
                 }
             case 120:
                 var6 = _closure1_slot0;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.t;
                 var2 = var2["+Gyklt"];
                 var6 = var3.bind(var5)(var2);
-                _fun102181_ip = 271;
-                continue _fun102181;
+                _fun102209_ip = 271;
+                continue _fun102209;
             case 177:
                 var3 = _closure1_slot0;
                 var10 = _closure1_slot2;
@@ -170,4 +170,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8347, 33, 11860, 1234, 10251, 12597, 3278, 11864, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8366, 33, 11878, 1234, 10269, 12613, 3278, 11882, 1307, 2]);

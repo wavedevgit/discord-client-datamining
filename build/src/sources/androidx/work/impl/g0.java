@@ -5,15 +5,15 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class g0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f5650a;
+    private static final String f5762a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String[] f5651b;
+    private static final String[] f5763b;
 
     static {
         String i10 = k4.m.i("WrkDbPathHelper");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"WrkDbPathHelper\")");
-        f5650a = i10;
-        f5651b = new String[]{"-journal", "-shm", "-wal"};
+        f5762a = i10;
+        f5763b = new String[]{"-journal", "-shm", "-wal"};
     }
 }

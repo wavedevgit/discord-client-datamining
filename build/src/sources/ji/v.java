@@ -1,89 +1,88 @@
 package ji;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.RandomAccess;
+import java.util.Iterator;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class v {
-    public static boolean a(Iterable iterable, ii.n nVar) {
-        return w.b(iterable.iterator(), nVar);
+public final class v extends t {
+
+    /* renamed from: p  reason: collision with root package name */
+    private static final Object[] f30948p;
+
+    /* renamed from: q  reason: collision with root package name */
+    static final v f30949q;
+
+    /* renamed from: i  reason: collision with root package name */
+    final transient Object[] f30950i;
+
+    /* renamed from: o  reason: collision with root package name */
+    final transient Object[] f30951o;
+
+    static {
+        Object[] objArr = new Object[0];
+        f30948p = objArr;
+        f30949q = new v(objArr, 0, objArr, 0, 0);
     }
 
-    public static Object b(Iterable iterable, Object obj) {
-        return w.k(iterable.iterator(), obj);
+    v(Object[] objArr, int i10, Object[] objArr2, int i11, int i12) {
+        this.f30950i = objArr;
+        this.f30951o = objArr2;
     }
 
-    public static Object c(Iterable iterable) {
-        if (iterable instanceof List) {
-            List list = (List) iterable;
-            if (!list.isEmpty()) {
-                return e(list);
-            }
-            throw new NoSuchElementException();
-        }
-        return w.i(iterable.iterator());
+    @Override // ji.p
+    final int b(Object[] objArr, int i10) {
+        System.arraycopy(this.f30950i, 0, objArr, 0, 0);
+        return 0;
     }
 
-    public static Object d(Iterable iterable, Object obj) {
-        if (iterable instanceof Collection) {
-            if (((Collection) iterable).isEmpty()) {
-                return obj;
-            }
-            if (iterable instanceof List) {
-                return e(y.a(iterable));
-            }
-        }
-        return w.j(iterable.iterator(), obj);
+    @Override // ji.p
+    final int c() {
+        return 0;
     }
 
-    private static Object e(List list) {
-        return list.get(list.size() - 1);
-    }
-
-    public static boolean f(Iterable iterable, ii.n nVar) {
-        if ((iterable instanceof RandomAccess) && (iterable instanceof List)) {
-            return g((List) iterable, (ii.n) ii.m.j(nVar));
-        }
-        return w.o(iterable.iterator(), nVar);
-    }
-
-    private static boolean g(List list, ii.n nVar) {
-        int i10 = 0;
-        int i11 = 0;
-        while (i10 < list.size()) {
-            Object obj = list.get(i10);
-            if (!nVar.apply(obj)) {
-                if (i10 > i11) {
-                    try {
-                        list.set(i11, obj);
-                    } catch (IllegalArgumentException unused) {
-                        h(list, nVar, i11, i10);
-                        return true;
-                    } catch (UnsupportedOperationException unused2) {
-                        h(list, nVar, i11, i10);
-                        return true;
-                    }
-                }
-                i11++;
-            }
-            i10++;
-        }
-        list.subList(i11, list.size()).clear();
-        if (i10 == i11) {
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final boolean contains(Object obj) {
+        if (obj != null) {
+            int length = this.f30951o.length;
             return false;
         }
+        return false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // ji.p
+    public final int d() {
+        return 0;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // ji.p
+    public final Object[] e() {
+        return this.f30950i;
+    }
+
+    @Override // ji.t
+    final s g() {
+        int i10 = s.f30942i;
+        return u.f30945p;
+    }
+
+    @Override // java.util.Collection, java.util.Set
+    public final int hashCode() {
+        return 0;
+    }
+
+    @Override // ji.t
+    final boolean i() {
         return true;
     }
 
-    private static void h(List list, ii.n nVar, int i10, int i11) {
-        for (int size = list.size() - 1; size > i11; size--) {
-            if (nVar.apply(list.get(size))) {
-                list.remove(size);
-            }
-        }
-        for (int i12 = i11 - 1; i12 >= i10; i12--) {
-            list.remove(i12);
-        }
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
+    public final /* synthetic */ Iterator iterator() {
+        return f().listIterator(0);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final int size() {
+        return 0;
     }
 }

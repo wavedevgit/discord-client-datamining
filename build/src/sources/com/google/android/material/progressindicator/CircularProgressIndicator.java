@@ -5,28 +5,28 @@ import android.util.AttributeSet;
 import androidx.annotation.NonNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class CircularProgressIndicator extends a {
-    public static final int A = yg.j.f54260q;
+    public static final int A = zg.j.f55718q;
 
     public CircularProgressIndicator(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54088g);
+        this(context, attributeSet, zg.b.f55546g);
     }
 
     private void s() {
-        c cVar = new c((e) this.f14830d);
-        setIndeterminateDrawable(j.t(getContext(), (e) this.f14830d, cVar));
-        setProgressDrawable(f.v(getContext(), (e) this.f14830d, cVar));
+        c cVar = new c((e) this.f15224d);
+        setIndeterminateDrawable(j.t(getContext(), (e) this.f15224d, cVar));
+        setProgressDrawable(f.v(getContext(), (e) this.f15224d, cVar));
     }
 
     public int getIndicatorDirection() {
-        return ((e) this.f14830d).f14877j;
+        return ((e) this.f15224d).f15271j;
     }
 
     public int getIndicatorInset() {
-        return ((e) this.f14830d).f14876i;
+        return ((e) this.f15224d).f15270i;
     }
 
     public int getIndicatorSize() {
-        return ((e) this.f14830d).f14875h;
+        return ((e) this.f15224d).f15269h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -37,23 +37,23 @@ public class CircularProgressIndicator extends a {
     }
 
     public void setIndicatorDirection(int i10) {
-        ((e) this.f14830d).f14877j = i10;
+        ((e) this.f15224d).f15271j = i10;
         invalidate();
     }
 
     public void setIndicatorInset(int i10) {
-        b bVar = this.f14830d;
-        if (((e) bVar).f14876i != i10) {
-            ((e) bVar).f14876i = i10;
+        b bVar = this.f15224d;
+        if (((e) bVar).f15270i != i10) {
+            ((e) bVar).f15270i = i10;
             invalidate();
         }
     }
 
     public void setIndicatorSize(int i10) {
         int max = Math.max(i10, getTrackThickness() * 2);
-        b bVar = this.f14830d;
-        if (((e) bVar).f14875h != max) {
-            ((e) bVar).f14875h = max;
+        b bVar = this.f15224d;
+        if (((e) bVar).f15269h != max) {
+            ((e) bVar).f15269h = max;
             ((e) bVar).e();
             requestLayout();
             invalidate();
@@ -63,7 +63,7 @@ public class CircularProgressIndicator extends a {
     @Override // com.google.android.material.progressindicator.a
     public void setTrackThickness(int i10) {
         super.setTrackThickness(i10);
-        ((e) this.f14830d).e();
+        ((e) this.f15224d).e();
     }
 
     public CircularProgressIndicator(Context context, AttributeSet attributeSet, int i10) {

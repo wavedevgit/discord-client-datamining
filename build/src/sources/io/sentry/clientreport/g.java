@@ -12,16 +12,16 @@ import java.util.Map;
 public final class g implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f29807d;
+    private final String f28865d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f29808e;
+    private final String f28866e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Long f29809i;
+    private final Long f28867i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f29810o;
+    private Map f28868o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -35,30 +35,30 @@ public final class g implements w1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public g a(e3 e3Var, ILogger iLogger) {
-            e3Var.r();
+            e3Var.s();
             String str = null;
             String str2 = null;
             Long l10 = null;
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
+                String m02 = e3Var.m0();
+                m02.getClass();
                 char c10 = 65535;
-                switch (l02.hashCode()) {
+                switch (m02.hashCode()) {
                     case -1285004149:
-                        if (l02.equals("quantity")) {
+                        if (m02.equals("quantity")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -934964668:
-                        if (l02.equals("reason")) {
+                        if (m02.equals("reason")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 50511102:
-                        if (l02.equals("category")) {
+                        if (m02.equals("category")) {
                             c10 = 2;
                             break;
                         }
@@ -78,11 +78,11 @@ public final class g implements w1 {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, l02);
+                        e3Var.v1(iLogger, hashMap, m02);
                         break;
                 }
             }
-            e3Var.y();
+            e3Var.z();
             if (str != null) {
                 if (str2 != null) {
                     if (l10 != null) {
@@ -99,43 +99,43 @@ public final class g implements w1 {
     }
 
     public g(String str, String str2, Long l10) {
-        this.f29807d = str;
-        this.f29808e = str2;
-        this.f29809i = l10;
+        this.f28865d = str;
+        this.f28866e = str2;
+        this.f28867i = l10;
     }
 
     public String a() {
-        return this.f29808e;
+        return this.f28866e;
     }
 
     public Long b() {
-        return this.f29809i;
+        return this.f28867i;
     }
 
     public String c() {
-        return this.f29807d;
+        return this.f28865d;
     }
 
     public void d(Map map) {
-        this.f29810o = map;
+        this.f28868o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
-        f3Var.r();
-        f3Var.e("reason").f(this.f29807d);
-        f3Var.e("category").f(this.f29808e);
-        f3Var.e("quantity").i(this.f29809i);
-        Map map = this.f29810o;
+        f3Var.s();
+        f3Var.e("reason").f(this.f28865d);
+        f3Var.e("category").f(this.f28866e);
+        f3Var.e("quantity").i(this.f28867i);
+        Map map = this.f28868o;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29810o.get(str));
+                f3Var.e(str).j(iLogger, this.f28868o.get(str));
             }
         }
-        f3Var.y();
+        f3Var.z();
     }
 
     public String toString() {
-        return "DiscardedEvent{reason='" + this.f29807d + "', category='" + this.f29808e + "', quantity=" + this.f29809i + '}';
+        return "DiscardedEvent{reason='" + this.f28865d + "', category='" + this.f28866e + "', quantity=" + this.f28867i + '}';
     }
 }

@@ -4,8 +4,8 @@ import android.content.Context;
 import java.io.Closeable;
 import java.io.File;
 import kotlin.jvm.functions.Function0;
-import lu.c0;
 import okio.BufferedSource;
+import ou.c0;
 import x4.r;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class u {
@@ -19,11 +19,7 @@ public abstract class u {
         return k5.k.m(context);
     }
 
-    public static final r e(c0 c0Var, lu.h hVar, String str, Closeable closeable) {
-        return new q(c0Var, hVar, str, closeable, null);
-    }
-
-    public static final r f(BufferedSource bufferedSource, final Context context) {
+    public static final r e(BufferedSource bufferedSource, final Context context) {
         return new w(bufferedSource, new Function0() { // from class: x4.t
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -34,7 +30,7 @@ public abstract class u {
         }, null);
     }
 
-    public static final r g(BufferedSource bufferedSource, final Context context, r.a aVar) {
+    public static final r f(BufferedSource bufferedSource, final Context context, r.a aVar) {
         return new w(bufferedSource, new Function0() { // from class: x4.s
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -45,9 +41,13 @@ public abstract class u {
         }, aVar);
     }
 
-    public static /* synthetic */ r h(c0 c0Var, lu.h hVar, String str, Closeable closeable, int i10, Object obj) {
+    public static final r g(c0 c0Var, ou.h hVar, String str, Closeable closeable) {
+        return new q(c0Var, hVar, str, closeable, null);
+    }
+
+    public static /* synthetic */ r h(c0 c0Var, ou.h hVar, String str, Closeable closeable, int i10, Object obj) {
         if ((i10 & 2) != 0) {
-            hVar = lu.h.f37308b;
+            hVar = ou.h.f44516b;
         }
         if ((i10 & 4) != 0) {
             str = null;
@@ -55,6 +55,6 @@ public abstract class u {
         if ((i10 & 8) != 0) {
             closeable = null;
         }
-        return e(c0Var, hVar, str, closeable);
+        return g(c0Var, hVar, str, closeable);
     }
 }

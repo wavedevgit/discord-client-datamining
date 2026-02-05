@@ -6,12 +6,12 @@ import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType;
 import kotlin.reflect.jvm.internal.impl.resolve.jvm.JvmClassName;
 import kotlin.reflect.jvm.internal.impl.resolve.jvm.JvmPrimitiveType;
 import kotlin.text.StringsKt;
-import lr.p;
+import or.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 final class JvmTypeFactoryImpl implements JvmTypeFactory {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final JvmTypeFactoryImpl f33694a = new JvmTypeFactoryImpl();
+    public static final JvmTypeFactoryImpl f33218a = new JvmTypeFactoryImpl();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class WhenMappings {

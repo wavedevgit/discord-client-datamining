@@ -1,51 +1,42 @@
 package dt;
 
-import java.util.Arrays;
-import kotlin.jvm.internal.Intrinsics;
+import java.lang.reflect.Type;
+import java.util.List;
+import kotlin.jvm.functions.Function0;
+import kotlin.reflect.KClass;
+import kotlin.reflect.KType;
+import kotlinx.serialization.KSerializer;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class w extends d2 {
-
-    /* renamed from: a  reason: collision with root package name */
-    private double[] f21026a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private int f21027b;
-
-    public w(double[] bufferWithData) {
-        Intrinsics.checkNotNullParameter(bufferWithData, "bufferWithData");
-        this.f21026a = bufferWithData;
-        this.f21027b = bufferWithData.length;
-        b(10);
+public abstract class w {
+    public static final KSerializer a(KClass kClass, List list, Function0 function0) {
+        return z.e(kClass, list, function0);
     }
 
-    @Override // dt.d2
-    public void b(int i10) {
-        double[] dArr = this.f21026a;
-        if (dArr.length < i10) {
-            double[] copyOf = Arrays.copyOf(dArr, kotlin.ranges.d.d(i10, dArr.length * 2));
-            Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f21026a = copyOf;
-        }
+    public static final KSerializer b(Type type) {
+        return x.d(type);
     }
 
-    @Override // dt.d2
-    public int d() {
-        return this.f21027b;
+    public static final KSerializer c(kt.b bVar, Type type) {
+        return x.e(bVar, type);
     }
 
-    public final void e(double d10) {
-        d2.c(this, 0, 1, null);
-        double[] dArr = this.f21026a;
-        int d11 = d();
-        this.f21027b = d11 + 1;
-        dArr[d11] = d10;
+    public static final KSerializer d(kt.b bVar, KType kType) {
+        return z.f(bVar, kType);
     }
 
-    @Override // dt.d2
-    /* renamed from: f */
-    public double[] a() {
-        double[] copyOf = Arrays.copyOf(this.f21026a, d());
-        Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-        return copyOf;
+    public static final KSerializer e(KClass kClass) {
+        return z.i(kClass);
+    }
+
+    public static final KSerializer f(kt.b bVar, Type type) {
+        return x.h(bVar, type);
+    }
+
+    public static final KSerializer g(kt.b bVar, KType kType) {
+        return z.j(bVar, kType);
+    }
+
+    public static final List h(kt.b bVar, List list, boolean z10) {
+        return z.k(bVar, list, z10);
     }
 }

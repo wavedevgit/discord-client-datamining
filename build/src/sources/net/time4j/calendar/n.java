@@ -2,32 +2,32 @@ package net.time4j.calendar;
 
 import java.util.Collections;
 import java.util.Map;
-import mt.a0;
-import mt.z;
+import pt.a0;
+import pt.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 final class n implements z {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f40383d;
+    private final Map f39843d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final mt.p f40384e;
+    private final pt.p f39844e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public n(mt.k kVar, mt.p pVar) {
-        this.f40383d = Collections.singletonMap("calendrical", kVar);
-        this.f40384e = pVar;
+    public n(pt.k kVar, pt.p pVar) {
+        this.f39843d = Collections.singletonMap("calendrical", kVar);
+        this.f39844e = pVar;
     }
 
-    private mt.k b(mt.q qVar) {
-        return (mt.k) this.f40383d.get("calendrical");
+    private pt.k b(pt.q qVar) {
+        return (pt.k) this.f39843d.get("calendrical");
     }
 
     private static Integer j(long j10) {
         long j11;
-        long f10 = kt.c.f(a0.MODIFIED_JULIAN_DATE.q(j10, a0.UTC), 678881L);
-        long b10 = kt.c.b(f10, 146097);
-        int d10 = kt.c.d(f10, 146097);
+        long f10 = nt.c.f(a0.MODIFIED_JULIAN_DATE.p(j10, a0.UTC), 678881L);
+        long b10 = nt.c.b(f10, 146097);
+        int d10 = nt.c.d(f10, 146097);
         if (d10 == 146096) {
             j11 = (b10 + 1) * 400;
         } else {
@@ -44,51 +44,51 @@ final class n implements z {
                 }
             }
         }
-        return Integer.valueOf(kt.c.g(j11));
+        return Integer.valueOf(nt.c.g(j11));
     }
 
-    @Override // mt.z
+    @Override // pt.z
     /* renamed from: c */
-    public mt.p a(mt.q qVar) {
+    public pt.p a(pt.q qVar) {
         return null;
     }
 
-    @Override // mt.z
+    @Override // pt.z
     /* renamed from: d */
-    public mt.p h(mt.q qVar) {
+    public pt.p h(pt.q qVar) {
         return null;
     }
 
-    @Override // mt.z
+    @Override // pt.z
     /* renamed from: e */
-    public Integer l(mt.q qVar) {
-        mt.k b10 = b(qVar);
-        return j(b10.c(((mt.q) b10.b(b10.a())).C(this.f40384e, 1)));
+    public Integer k(pt.q qVar) {
+        pt.k b10 = b(qVar);
+        return j(b10.c(((pt.q) b10.b(b10.a())).C(this.f39844e, 1)));
     }
 
-    @Override // mt.z
+    @Override // pt.z
     /* renamed from: f */
-    public Integer r(mt.q qVar) {
-        mt.k b10 = b(qVar);
-        return j(b10.c(((mt.q) b10.b(b10.d())).C(this.f40384e, 1)));
+    public Integer r(pt.q qVar) {
+        pt.k b10 = b(qVar);
+        return j(b10.c(((pt.q) b10.b(b10.d())).C(this.f39844e, 1)));
     }
 
-    @Override // mt.z
+    @Override // pt.z
     /* renamed from: g */
-    public Integer z(mt.q qVar) {
-        return j(b(qVar).c(qVar.C(this.f40384e, 1)));
+    public Integer y(pt.q qVar) {
+        return j(b(qVar).c(qVar.C(this.f39844e, 1)));
     }
 
-    @Override // mt.z
+    @Override // pt.z
     /* renamed from: i */
-    public boolean q(mt.q qVar, Integer num) {
-        return z(qVar).equals(num);
+    public boolean p(pt.q qVar, Integer num) {
+        return y(qVar).equals(num);
     }
 
-    @Override // mt.z
-    /* renamed from: k */
-    public mt.q x(mt.q qVar, Integer num, boolean z10) {
-        if (q(qVar, num)) {
+    @Override // pt.z
+    /* renamed from: l */
+    public pt.q x(pt.q qVar, Integer num, boolean z10) {
+        if (p(qVar, num)) {
             return qVar;
         }
         throw new IllegalArgumentException("The related gregorian year is read-only.");

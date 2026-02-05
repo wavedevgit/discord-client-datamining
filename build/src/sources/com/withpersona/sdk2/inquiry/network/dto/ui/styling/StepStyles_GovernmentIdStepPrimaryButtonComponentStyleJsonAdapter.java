@@ -40,24 +40,24 @@ public final class StepStyles_GovernmentIdStepPrimaryButtonComponentStyleJsonAda
     @NotNull
     public StepStyles.GovernmentIdStepPrimaryButtonComponentStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StepStyles.StepSubmitButtonComponentStyleContainer stepSubmitButtonComponentStyleContainer = null;
         StepStyles.StepSubmitButtonComponentStyleContainer stepSubmitButtonComponentStyleContainer2 = null;
         StepStyles.StepSubmitButtonComponentStyleContainer stepSubmitButtonComponentStyleContainer3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 stepSubmitButtonComponentStyleContainer = (StepStyles.StepSubmitButtonComponentStyleContainer) this.nullableStepSubmitButtonComponentStyleContainerAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 stepSubmitButtonComponentStyleContainer2 = (StepStyles.StepSubmitButtonComponentStyleContainer) this.nullableStepSubmitButtonComponentStyleContainerAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 stepSubmitButtonComponentStyleContainer3 = (StepStyles.StepSubmitButtonComponentStyleContainer) this.nullableStepSubmitButtonComponentStyleContainerAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new StepStyles.GovernmentIdStepPrimaryButtonComponentStyle(stepSubmitButtonComponentStyleContainer, stepSubmitButtonComponentStyleContainer2, stepSubmitButtonComponentStyleContainer3);
     }
 
@@ -65,12 +65,12 @@ public final class StepStyles_GovernmentIdStepPrimaryButtonComponentStyleJsonAda
     public void toJson(@NotNull t writer, StepStyles.GovernmentIdStepPrimaryButtonComponentStyle governmentIdStepPrimaryButtonComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepPrimaryButtonComponentStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableStepSubmitButtonComponentStyleContainerAdapter.toJson(writer, governmentIdStepPrimaryButtonComponentStyle.getBase());
-            writer.A0("cancelDialogClose");
+            writer.W("cancelDialogClose");
             this.nullableStepSubmitButtonComponentStyleContainerAdapter.toJson(writer, governmentIdStepPrimaryButtonComponentStyle.getCancelDialogClose());
-            writer.A0("submitPhotoButton");
+            writer.W("submitPhotoButton");
             this.nullableStepSubmitButtonComponentStyleContainerAdapter.toJson(writer, governmentIdStepPrimaryButtonComponentStyle.getSubmitPhotoButton());
             writer.E();
             return;

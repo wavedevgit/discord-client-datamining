@@ -57,7 +57,7 @@ public final class d extends gf.g {
     /* renamed from: k0 */
     public b r(IBinder iBinder) {
         Intrinsics.checkNotNullParameter(iBinder, "iBinder");
-        return b.a.S0(iBinder);
+        return b.a.W0(iBinder);
     }
 
     @Override // gf.c, ef.a.f
@@ -67,7 +67,7 @@ public final class d extends gf.g {
 
     @Override // gf.c
     public com.google.android.gms.common.d[] u() {
-        com.google.android.gms.common.d[] ALL_FEATURES = jg.d.f31559d;
+        com.google.android.gms.common.d[] ALL_FEATURES = jg.d.f30908d;
         Intrinsics.checkNotNullExpressionValue(ALL_FEATURES, "ALL_FEATURES");
         return ALL_FEATURES;
     }

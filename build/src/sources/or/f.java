@@ -1,28 +1,27 @@
 package or;
 
-import java.util.Comparator;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class f implements Comparator {
-    @NotNull
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final f f44406d = new f();
-
-    private f() {
+public class f {
+    public static void a(Throwable th2, Throwable exception) {
+        Intrinsics.checkNotNullParameter(th2, "<this>");
+        Intrinsics.checkNotNullParameter(exception, "exception");
+        if (th2 != exception) {
+            wr.b.f53253a.a(th2, exception);
+        }
     }
 
-    @Override // java.util.Comparator
-    /* renamed from: a */
-    public int compare(Comparable a10, Comparable b10) {
-        Intrinsics.checkNotNullParameter(a10, "a");
-        Intrinsics.checkNotNullParameter(b10, "b");
-        return a10.compareTo(b10);
-    }
-
-    @Override // java.util.Comparator
-    public final Comparator reversed() {
-        return g.f44407d;
+    public static String b(Throwable th2) {
+        Intrinsics.checkNotNullParameter(th2, "<this>");
+        StringWriter stringWriter = new StringWriter();
+        PrintWriter printWriter = new PrintWriter(stringWriter);
+        th2.printStackTrace(printWriter);
+        printWriter.flush();
+        String stringWriter2 = stringWriter.toString();
+        Intrinsics.checkNotNullExpressionValue(stringWriter2, "toString(...)");
+        return stringWriter2;
     }
 }

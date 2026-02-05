@@ -13,39 +13,39 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_StatusRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18436a;
+    private final m.b f18842a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18437b;
+    private final com.squareup.moshi.h f18843b;
 
     public FallbackModeService_StatusRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("inquiry-template-id");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18436a = a10;
+        this.f18842a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "inquiryTemplateId");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18437b = f10;
+        this.f18843b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public FallbackModeService.StatusRequest fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         String str = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f18436a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    str = (String) this.f18437b.fromJson(reader);
+            int W = reader.W(this.f18842a);
+            if (W != -1) {
+                if (W == 0) {
+                    str = (String) this.f18843b.fromJson(reader);
                 }
             } else {
                 reader.E0();
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         return new FallbackModeService.StatusRequest(str);
     }
 
@@ -54,9 +54,9 @@ public final class FallbackModeService_StatusRequestJsonAdapter extends com.squa
     public void toJson(t writer, FallbackModeService.StatusRequest statusRequest) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (statusRequest != null) {
-            writer.l();
-            writer.A0("inquiry-template-id");
-            this.f18437b.toJson(writer, statusRequest.a());
+            writer.k();
+            writer.W("inquiry-template-id");
+            this.f18843b.toJson(writer, statusRequest.a());
             writer.E();
             return;
         }

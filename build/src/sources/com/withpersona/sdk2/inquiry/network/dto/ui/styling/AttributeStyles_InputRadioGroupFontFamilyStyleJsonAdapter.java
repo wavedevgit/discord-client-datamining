@@ -41,24 +41,24 @@ public final class AttributeStyles_InputRadioGroupFontFamilyStyleJsonAdapter ext
     @NotNull
     public AttributeStyles.InputRadioGroupFontFamilyStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.FontName fontName = null;
         StyleElements.FontName fontName2 = null;
         StyleElements.FontName fontName3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 fontName = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 fontName2 = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 fontName3 = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.InputRadioGroupFontFamilyStyle(fontName, fontName2, fontName3);
     }
 
@@ -66,12 +66,12 @@ public final class AttributeStyles_InputRadioGroupFontFamilyStyleJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.InputRadioGroupFontFamilyStyle inputRadioGroupFontFamilyStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputRadioGroupFontFamilyStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableFontNameAdapter.toJson(writer, inputRadioGroupFontFamilyStyle.getBase());
-            writer.A0("description");
+            writer.W("description");
             this.nullableFontNameAdapter.toJson(writer, inputRadioGroupFontFamilyStyle.getDescription());
-            writer.A0("error");
+            writer.W("error");
             this.nullableFontNameAdapter.toJson(writer, inputRadioGroupFontFamilyStyle.getError());
             writer.E();
             return;

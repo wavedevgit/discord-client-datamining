@@ -1,29 +1,17 @@
 package aq;
 
-import com.withpersona.sdk2.inquiry.steps.ui.components.InputAddressComponent;
+import android.content.Context;
+import android.content.res.Resources;
+import kotlin.jvm.internal.Intrinsics;
+import pp.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface c {
-    ym.t a();
-
-    ym.t b();
-
-    ym.t c();
-
-    InputAddressComponent e(String str);
-
-    InputAddressComponent f(String str);
-
-    ym.t g();
-
-    ym.t i();
-
-    InputAddressComponent j(Boolean bool);
-
-    InputAddressComponent k(String str);
-
-    InputAddressComponent m(String str);
-
-    bq.m n();
-
-    InputAddressComponent o(String str);
+public abstract class c {
+    public static final void a(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        try {
+            context.getResources().getLayout(n.f46201c);
+        } catch (Resources.NotFoundException unused) {
+            gi.a.b(context);
+        }
+    }
 }

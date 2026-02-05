@@ -10,7 +10,7 @@ import kotlin.Metadata;
 public final class HeadlessTasksService extends HeadlessJsTaskService {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final /* synthetic */ int f9338d = 0;
+    public static final /* synthetic */ int f9723d = 0;
 
     @Override // com.facebook.react.HeadlessJsTaskService
     protected HeadlessJsTaskConfig getTaskConfig(Intent intent) {

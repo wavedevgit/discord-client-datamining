@@ -7,13 +7,13 @@ import java.util.Set;
 public abstract class i implements Map, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private transient j f36898d;
+    private transient j f36825d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient j f36899e;
+    private transient j f36826e;
 
     /* renamed from: i  reason: collision with root package name */
-    private transient c f36900i;
+    private transient c f36827i;
 
     public static i c(Object obj, Object obj2) {
         w0.a("optional-module-barcode", "com.google.android.gms.vision.barcode");
@@ -25,10 +25,10 @@ public abstract class i implements Map, Serializable {
     @Override // java.util.Map
     /* renamed from: b */
     public final c values() {
-        c cVar = this.f36900i;
+        c cVar = this.f36827i;
         if (cVar == null) {
             c a10 = a();
-            this.f36900i = a10;
+            this.f36827i = a10;
             return a10;
         }
         return cVar;
@@ -70,10 +70,10 @@ public abstract class i implements Map, Serializable {
     @Override // java.util.Map
     /* renamed from: f */
     public final j entrySet() {
-        j jVar = this.f36898d;
+        j jVar = this.f36825d;
         if (jVar == null) {
             j d10 = d();
-            this.f36898d = d10;
+            this.f36825d = d10;
             return d10;
         }
         return jVar;
@@ -106,10 +106,10 @@ public abstract class i implements Map, Serializable {
 
     @Override // java.util.Map
     public final /* bridge */ /* synthetic */ Set keySet() {
-        j jVar = this.f36899e;
+        j jVar = this.f36826e;
         if (jVar == null) {
             j e10 = e();
-            this.f36899e = e10;
+            this.f36826e = e10;
             return e10;
         }
         return jVar;

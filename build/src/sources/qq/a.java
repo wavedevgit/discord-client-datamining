@@ -1,40 +1,15 @@
 package qq;
+
+import com.withpersona.sdk2.inquiry.webrtc.networking.AuthorizeWebRtcResponse;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import org.jetbrains.annotations.NotNull;
+import ov.z;
+import qv.f;
+import qv.t;
+@Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bf\u0018\u00002\u00020\u0001J\"\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u00042\n\b\u0001\u0010\u0003\u001a\u0004\u0018\u00010\u0002H§@¢\u0006\u0004\b\u0006\u0010\u0007¨\u0006\b"}, d2 = {"Lqq/a;", "", "", "jwt", "Lov/z;", "Lcom/withpersona/sdk2/inquiry/webrtc/networking/AuthorizeWebRtcResponse;", "a", "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "webrtc_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static int f48055a = 2131101193;
-
-    /* renamed from: b  reason: collision with root package name */
-    public static int f48056b = 2131101196;
-
-    /* renamed from: c  reason: collision with root package name */
-    public static int f48057c = 2131101197;
-
-    /* renamed from: d  reason: collision with root package name */
-    public static int f48058d = 2131101198;
-
-    /* renamed from: e  reason: collision with root package name */
-    public static int f48059e = 2131101199;
-
-    /* renamed from: f  reason: collision with root package name */
-    public static int f48060f = 2131101200;
-
-    /* renamed from: g  reason: collision with root package name */
-    public static int f48061g = 2131101205;
-
-    /* renamed from: h  reason: collision with root package name */
-    public static int f48062h = 2131101206;
-
-    /* renamed from: i  reason: collision with root package name */
-    public static int f48063i = 2131101207;
-
-    /* renamed from: j  reason: collision with root package name */
-    public static int f48064j = 2131101209;
-
-    /* renamed from: k  reason: collision with root package name */
-    public static int f48065k = 2131101210;
-
-    /* renamed from: l  reason: collision with root package name */
-    public static int f48066l = 2131101213;
+public interface a {
+    @f("/server-config")
+    Object a(@t("jwt") String str, @NotNull Continuation<? super z<AuthorizeWebRtcResponse>> continuation);
 }

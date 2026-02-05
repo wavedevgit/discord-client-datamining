@@ -6,41 +6,41 @@ import java.util.concurrent.Executor;
 public class p implements r4.a {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Executor f47349e;
+    private final Executor f47413e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Runnable f47350i;
+    private Runnable f47414i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ArrayDeque f47348d = new ArrayDeque();
+    private final ArrayDeque f47412d = new ArrayDeque();
 
     /* renamed from: o  reason: collision with root package name */
-    final Object f47351o = new Object();
+    final Object f47415o = new Object();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final p f47352d;
+        final p f47416d;
 
         /* renamed from: e  reason: collision with root package name */
-        final Runnable f47353e;
+        final Runnable f47417e;
 
         a(p pVar, Runnable runnable) {
-            this.f47352d = pVar;
-            this.f47353e = runnable;
+            this.f47416d = pVar;
+            this.f47417e = runnable;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             try {
-                this.f47353e.run();
-                synchronized (this.f47352d.f47351o) {
-                    this.f47352d.a();
+                this.f47417e.run();
+                synchronized (this.f47416d.f47415o) {
+                    this.f47416d.a();
                 }
             } catch (Throwable th2) {
-                synchronized (this.f47352d.f47351o) {
-                    this.f47352d.a();
+                synchronized (this.f47416d.f47415o) {
+                    this.f47416d.a();
                     throw th2;
                 }
             }
@@ -48,32 +48,32 @@ public class p implements r4.a {
     }
 
     public p(Executor executor) {
-        this.f47349e = executor;
+        this.f47413e = executor;
+    }
+
+    void a() {
+        Runnable runnable = (Runnable) this.f47412d.poll();
+        this.f47414i = runnable;
+        if (runnable != null) {
+            this.f47413e.execute(runnable);
+        }
     }
 
     @Override // r4.a
-    public boolean Z0() {
+    public boolean e1() {
         boolean z10;
-        synchronized (this.f47351o) {
-            z10 = !this.f47348d.isEmpty();
+        synchronized (this.f47415o) {
+            z10 = !this.f47412d.isEmpty();
         }
         return z10;
     }
 
-    void a() {
-        Runnable runnable = (Runnable) this.f47348d.poll();
-        this.f47350i = runnable;
-        if (runnable != null) {
-            this.f47349e.execute(runnable);
-        }
-    }
-
     @Override // java.util.concurrent.Executor
     public void execute(Runnable runnable) {
-        synchronized (this.f47351o) {
+        synchronized (this.f47415o) {
             try {
-                this.f47348d.add(new a(this, runnable));
-                if (this.f47350i == null) {
+                this.f47412d.add(new a(this, runnable));
+                if (this.f47414i == null) {
                     a();
                 }
             } catch (Throwable th2) {

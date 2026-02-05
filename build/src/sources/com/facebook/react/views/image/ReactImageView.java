@@ -143,7 +143,7 @@ public final class ReactImageView extends b {
             CloseableReference a10 = bitmapFactory.a(ReactImageView.this.getWidth(), ReactImageView.this.getHeight());
             Intrinsics.checkNotNullExpressionValue(a10, "createBitmap(...)");
             try {
-                new Canvas((Bitmap) a10.C0()).drawRect(rect, paint);
+                new Canvas((Bitmap) a10.E0()).drawRect(rect, paint);
                 CloseableReference clone = a10.clone();
                 Intrinsics.checkNotNullExpressionValue(clone, "clone(...)");
                 return clone;
@@ -316,7 +316,7 @@ public final class ReactImageView extends b {
         ImageResizeMethod imageResizeMethod = this.resizeMethod;
         ImageResizeMethod imageResizeMethod2 = ImageResizeMethod.NONE;
         if (imageResizeMethod == imageResizeMethod2) {
-            I.E(DownsampleMode.f10080i);
+            I.E(DownsampleMode.f10465i);
         }
         if (this.useSmallCache) {
             I.A(ImageRequest.CacheChoice.SMALL);
@@ -342,7 +342,7 @@ public final class ReactImageView extends b {
         if (imageSource2 != null) {
             ImageRequestBuilder K = ImageRequestBuilder.x(imageSource2.getUri()).J(from).N(resizeOptions).y(true).K(this.progressiveRenderingEnabled);
             if (this.resizeMethod == imageResizeMethod2) {
-                K.E(DownsampleMode.f10080i);
+                K.E(DownsampleMode.f10465i);
             }
             if (this.useSmallCache) {
                 K.A(ImageRequest.CacheChoice.SMALL);
@@ -490,7 +490,7 @@ public final class ReactImageView extends b {
                         }
                         Drawable drawable2 = this.loadingImageDrawable;
                         if (drawable2 != null) {
-                            genericDraweeHierarchy.A(drawable2, ScalingUtils$ScaleType.f9636g);
+                            genericDraweeHierarchy.A(drawable2, ScalingUtils$ScaleType.f10021g);
                         }
                         a o10 = genericDraweeHierarchy.o();
                         if (o10 != null) {
@@ -498,7 +498,7 @@ public final class ReactImageView extends b {
                             if (i10 != 0) {
                                 o10.s(i10);
                             } else {
-                                o10.w(a.EnumC0137a.BITMAP_ONLY);
+                                o10.w(a.EnumC0153a.BITMAP_ONLY);
                             }
                             genericDraweeHierarchy.D(o10);
                         }

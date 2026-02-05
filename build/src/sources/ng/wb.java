@@ -14,86 +14,86 @@ import java.util.concurrent.TimeUnit;
 public final class wb {
 
     /* renamed from: k  reason: collision with root package name */
-    private static mc f41733k;
+    private static mc f41193k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final oc f41734l = oc.c("optional-module-barcode", "com.google.android.gms.vision.barcode");
+    private static final oc f41194l = oc.c("optional-module-barcode", "com.google.android.gms.vision.barcode");
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f41735a;
+    private final String f41195a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f41736b;
+    private final String f41196b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final pb f41737c;
+    private final pb f41197c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final pj.m f41738d;
+    private final sj.m f41198d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Task f41739e;
+    private final Task f41199e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Task f41740f;
+    private final Task f41200f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f41741g;
+    private final String f41201g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f41742h;
+    private final int f41202h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Map f41743i = new HashMap();
+    private final Map f41203i = new HashMap();
 
     /* renamed from: j  reason: collision with root package name */
-    private final Map f41744j = new HashMap();
+    private final Map f41204j = new HashMap();
 
-    public wb(Context context, final pj.m mVar, pb pbVar, String str) {
+    public wb(Context context, final sj.m mVar, pb pbVar, String str) {
         int i10;
-        this.f41735a = context.getPackageName();
-        this.f41736b = pj.c.a(context);
-        this.f41738d = mVar;
-        this.f41737c = pbVar;
+        this.f41195a = context.getPackageName();
+        this.f41196b = sj.c.a(context);
+        this.f41198d = mVar;
+        this.f41197c = pbVar;
         jc.a();
-        this.f41741g = str;
-        this.f41739e = pj.g.a().b(new Callable() { // from class: ng.tb
+        this.f41201g = str;
+        this.f41199e = sj.g.a().b(new Callable() { // from class: ng.tb
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 return wb.this.a();
             }
         });
-        pj.g a10 = pj.g.a();
+        sj.g a10 = sj.g.a();
         mVar.getClass();
-        this.f41740f = a10.b(new Callable() { // from class: ng.ub
+        this.f41200f = a10.b(new Callable() { // from class: ng.ub
             @Override // java.util.concurrent.Callable
             public final Object call() {
-                return pj.m.this.a();
+                return sj.m.this.a();
             }
         });
-        oc ocVar = f41734l;
+        oc ocVar = f41194l;
         if (ocVar.containsKey(str)) {
             i10 = DynamiteModule.b(context, (String) ocVar.get(str));
         } else {
             i10 = -1;
         }
-        this.f41742h = i10;
+        this.f41202h = i10;
     }
 
     private static synchronized mc d() {
         synchronized (wb.class) {
             try {
-                mc mcVar = f41733k;
+                mc mcVar = f41193k;
                 if (mcVar != null) {
                     return mcVar;
                 }
                 LocaleListCompat a10 = w1.e.a(Resources.getSystem().getConfiguration());
                 mb mbVar = new mb();
                 for (int i10 = 0; i10 < a10.f(); i10++) {
-                    mbVar.c(pj.c.b(a10.c(i10)));
+                    mbVar.c(sj.c.b(a10.c(i10)));
                 }
                 mc d10 = mbVar.d();
-                f41733k = d10;
+                f41193k = d10;
                 return d10;
             } catch (Throwable th2) {
                 throw th2;
@@ -103,7 +103,7 @@ public final class wb {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ String a() {
-        return gf.m.a().b(this.f41741g);
+        return gf.m.a().b(this.f41201g);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -112,22 +112,22 @@ public final class wb {
         obVar.d(e8Var);
         String a11 = obVar.a();
         ja jaVar = new ja();
-        jaVar.b(this.f41735a);
-        jaVar.c(this.f41736b);
+        jaVar.b(this.f41195a);
+        jaVar.c(this.f41196b);
         jaVar.h(d());
         jaVar.g(Boolean.TRUE);
         jaVar.l(a11);
         jaVar.j(str);
-        if (this.f41740f.p()) {
-            a10 = (String) this.f41740f.l();
+        if (this.f41200f.p()) {
+            a10 = (String) this.f41200f.l();
         } else {
-            a10 = this.f41738d.a();
+            a10 = this.f41198d.a();
         }
         jaVar.i(a10);
         jaVar.d(10);
-        jaVar.k(Integer.valueOf(this.f41742h));
+        jaVar.k(Integer.valueOf(this.f41202h));
         obVar.b(jaVar);
-        this.f41737c.a(obVar);
+        this.f41197c.a(obVar);
     }
 
     public final void c(gc gcVar, final e8 e8Var) {
@@ -135,17 +135,17 @@ public final class wb {
         x7 x7Var;
         final String b10;
         long elapsedRealtime = SystemClock.elapsedRealtime();
-        if (this.f41743i.get(e8Var) != null && elapsedRealtime - ((Long) this.f41743i.get(e8Var)).longValue() <= TimeUnit.SECONDS.toMillis(30L)) {
+        if (this.f41203i.get(e8Var) != null && elapsedRealtime - ((Long) this.f41203i.get(e8Var)).longValue() <= TimeUnit.SECONDS.toMillis(30L)) {
             return;
         }
-        this.f41743i.put(e8Var, Long.valueOf(elapsedRealtime));
-        int i10 = gcVar.f41154a;
-        int i11 = gcVar.f41155b;
-        int i12 = gcVar.f41156c;
-        int i13 = gcVar.f41157d;
-        int i14 = gcVar.f41158e;
-        long j10 = gcVar.f41159f;
-        int i15 = gcVar.f41160g;
+        this.f41203i.put(e8Var, Long.valueOf(elapsedRealtime));
+        int i10 = gcVar.f40614a;
+        int i11 = gcVar.f40615b;
+        int i12 = gcVar.f40616c;
+        int i13 = gcVar.f40617d;
+        int i14 = gcVar.f40618e;
+        long j10 = gcVar.f40619f;
+        int i15 = gcVar.f40620g;
         w7 w7Var = new w7();
         if (i10 != -1) {
             if (i10 != 35) {
@@ -196,12 +196,12 @@ public final class wb {
         f8 f8Var = new f8();
         f8Var.d(j11);
         final ob e10 = xb.e(f8Var);
-        if (this.f41739e.p()) {
-            b10 = (String) this.f41739e.l();
+        if (this.f41199e.p()) {
+            b10 = (String) this.f41199e.l();
         } else {
-            b10 = gf.m.a().b(this.f41741g);
+            b10 = gf.m.a().b(this.f41201g);
         }
-        pj.g.d().execute(new Runnable() { // from class: ng.vb
+        sj.g.d().execute(new Runnable() { // from class: ng.vb
             @Override // java.lang.Runnable
             public final void run() {
                 wb.this.b(e10, e8Var, b10);

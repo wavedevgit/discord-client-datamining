@@ -8,7 +8,7 @@ import java.util.List;
 public class Nexus4AndroidLTargetAspectRatioQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f1931a = Arrays.asList("NEXUS 4");
+    private static final List f2043a = Arrays.asList("NEXUS 4");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean d() {

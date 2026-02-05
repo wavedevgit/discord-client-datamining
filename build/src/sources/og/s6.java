@@ -1,50 +1,50 @@
 package og;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class s6 implements ui.d {
+final class s6 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s6 f43467a = new s6();
+    static final s6 f43373a = new s6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43468b;
+    private static final xi.c f43374b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43469c;
+    private static final xi.c f43375c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43470d;
+    private static final xi.c f43376d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43471e;
+    private static final xi.c f43377e;
 
     static {
-        c.b a10 = ui.c.a("inferenceCommonLogEvent");
+        c.b a10 = xi.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43468b = a10.b(s1Var.b()).a();
-        c.b a11 = ui.c.a("options");
+        f43374b = a10.b(s1Var.b()).a();
+        c.b a11 = xi.c.a("options");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43469c = a11.b(s1Var2.b()).a();
-        c.b a12 = ui.c.a("identifyLanguageResult");
+        f43375c = a11.b(s1Var2.b()).a();
+        c.b a12 = xi.c.a("identifyLanguageResult");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43470d = a12.b(s1Var3.b()).a();
-        c.b a13 = ui.c.a("identifyPossibleLanguagesResult");
+        f43376d = a12.b(s1Var3.b()).a();
+        c.b a13 = xi.c.a("identifyPossibleLanguagesResult");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43471e = a13.b(s1Var4.b()).a();
+        f43377e = a13.b(s1Var4.b()).a();
     }
 
     private s6() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

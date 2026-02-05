@@ -1,15 +1,13 @@
 package an;
-
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class d {
-    public static final c a(List list) {
-        Intrinsics.checkNotNullParameter(list, "<this>");
-        if (!list.isEmpty()) {
-            return new c(CollectionsKt.o0(list), list.subList(1, list.size()));
-        }
-        throw new IllegalArgumentException("Failed requirement.");
+public final class d {
+
+    /* renamed from: a  reason: collision with root package name */
+    private long f791a;
+
+    public final long a() {
+        long j10 = this.f791a;
+        this.f791a = 1 + j10;
+        return j10;
     }
 }

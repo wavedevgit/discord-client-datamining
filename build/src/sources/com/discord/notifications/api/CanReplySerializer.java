@@ -1,6 +1,6 @@
 package com.discord.notifications.api;
 
-import bt.a;
+import et.a;
 import kotlin.Metadata;
 import kotlin.jvm.internal.BooleanCompanionObject;
 import kotlin.jvm.internal.Intrinsics;
@@ -18,13 +18,13 @@ public final class CanReplySerializer implements KSerializer {
     private CanReplySerializer() {
     }
 
-    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
-        return a.x(BooleanCompanionObject.INSTANCE).getDescriptor();
+        return a.w(BooleanCompanionObject.INSTANCE).getDescriptor();
     }
 
-    @Override // at.o
+    @Override // dt.o
     public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
         serialize(encoder, ((Boolean) obj).booleanValue());
     }

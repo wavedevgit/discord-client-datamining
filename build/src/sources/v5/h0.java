@@ -9,10 +9,10 @@ import w5.c;
 public class h0 implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h0 f51139a = new h0();
+    public static final h0 f51828a = new h0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f51140b = c.a.a("c", "v", "i", "o");
+    private static final c.a f51829b = c.a.a("c", "v", "i", "o");
 
     private h0() {
     }
@@ -20,20 +20,20 @@ public class h0 implements n0 {
     @Override // v5.n0
     /* renamed from: b */
     public s5.o a(w5.c cVar, float f10) {
-        if (cVar.n() == c.b.BEGIN_ARRAY) {
-            cVar.u();
+        if (cVar.m() == c.b.BEGIN_ARRAY) {
+            cVar.v();
         }
-        cVar.r();
+        cVar.s();
         List list = null;
         List list2 = null;
         List list3 = null;
         boolean z10 = false;
         while (cVar.hasNext()) {
-            int B = cVar.B(f51140b);
-            if (B != 0) {
-                if (B != 1) {
-                    if (B != 2) {
-                        if (B != 3) {
+            int y10 = cVar.y(f51829b);
+            if (y10 != 0) {
+                if (y10 != 1) {
+                    if (y10 != 2) {
+                        if (y10 != 3) {
                             cVar.E();
                             cVar.P();
                         } else {
@@ -49,9 +49,9 @@ public class h0 implements n0 {
                 z10 = cVar.h();
             }
         }
-        cVar.y();
-        if (cVar.n() == c.b.END_ARRAY) {
-            cVar.s();
+        cVar.z();
+        if (cVar.m() == c.b.END_ARRAY) {
+            cVar.t();
         }
         if (list != null && list2 != null && list3 != null) {
             if (list.isEmpty()) {

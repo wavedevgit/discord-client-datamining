@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var4 = var7.forwardRef;
     var3 = function(arg0, arg1) { // Environment: var1
-        _fun105501: for (var _fun105501_ip = 0;;) switch (_fun105501_ip) {
+        _fun105562: for (var _fun105562_ip = 0;;) switch (_fun105562_ip) {
             case 0:
                 var5 = arg0;
                 var6 = arg1;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var4.scrollerRef;
                 var8 = null;
                 if (!(var8 != var7)) {
-                    _fun105501_ip = 200;
-                    continue _fun105501
+                    _fun105562_ip = 200;
+                    continue _fun105562
                 }
             case 197:
                 var6 = var7;
@@ -216,4 +216,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AppLauncherListSearchBar = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4870, 33, 1297, 4090, 1568, 13746, 7361, 13748, 1234, 7012, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4872, 33, 1297, 4090, 1568, 13768, 7380, 13770, 1234, 7032, 2]);

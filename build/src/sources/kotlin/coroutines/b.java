@@ -7,21 +7,21 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class b implements CoroutineContext.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function1 f32532d;
+    private final Function1 f32056d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CoroutineContext.b f32533e;
+    private final CoroutineContext.b f32057e;
 
     public b(CoroutineContext.b baseKey, Function1 safeCast) {
         Intrinsics.checkNotNullParameter(baseKey, "baseKey");
         Intrinsics.checkNotNullParameter(safeCast, "safeCast");
-        this.f32532d = safeCast;
-        this.f32533e = baseKey instanceof b ? ((b) baseKey).f32533e : baseKey;
+        this.f32056d = safeCast;
+        this.f32057e = baseKey instanceof b ? ((b) baseKey).f32057e : baseKey;
     }
 
     public final boolean a(CoroutineContext.b key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        if (key != this && this.f32533e != key) {
+        if (key != this && this.f32057e != key) {
             return false;
         }
         return true;
@@ -29,6 +29,6 @@ public abstract class b implements CoroutineContext.b {
 
     public final CoroutineContext.Element b(CoroutineContext.Element element) {
         Intrinsics.checkNotNullParameter(element, "element");
-        return (CoroutineContext.Element) this.f32532d.invoke(element);
+        return (CoroutineContext.Element) this.f32056d.invoke(element);
     }
 }

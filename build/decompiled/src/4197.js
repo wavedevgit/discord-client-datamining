@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
     var6 = function arg0() {
-        _fun38305: for (var _fun38305_ip = 0;;) switch (_fun38305_ip) {
+        _fun38304: for (var _fun38304_ip = 0;;) switch (_fun38304_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -21,8 +21,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 8;
                 var0 = var6;
                 if (!(var3 >= var1)) {
-                    _fun38305_ip = 118;
-                    continue _fun38305
+                    _fun38304_ip = 118;
+                    continue _fun38304
                 }
             case 53:
                 var1 = var6.substr;
@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var5 = function arg0() {
-        _fun38306: for (var _fun38306_ip = 0;;) switch (_fun38306_ip) {
+        _fun38305: for (var _fun38305_ip = 0;;) switch (_fun38305_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -59,8 +59,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = 6;
                 var0 = var8;
                 if (!(var1 >= var6)) {
-                    _fun38306_ip = 197;
-                    continue _fun38306
+                    _fun38305_ip = 197;
+                    continue _fun38305
                 }
             case 56:
                 var1 = var8.substr;
@@ -80,8 +80,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 11;
                 var1 = var3;
                 if (!(var2 === var4)) {
-                    _fun38306_ip = 194;
-                    continue _fun38306
+                    _fun38305_ip = 194;
+                    continue _fun38305
                 }
             case 133:
                 var4 = var8.substr;
@@ -104,7 +104,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var7 = function arg0() {
-        _fun38307: for (var _fun38307_ip = 0;;) switch (_fun38307_ip) {
+        _fun38306: for (var _fun38306_ip = 0;;) switch (_fun38306_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -118,92 +118,92 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'UTF-8';
                 var1 = '\x1b%G';
                 if (!(var1 !== var14)) {
-                    _fun38307_ip = 304;
-                    continue _fun38307
+                    _fun38306_ip = 304;
+                    continue _fun38306
                 }
             case 57:
                 var1 = 'Windows-1252';
                 var2 = '\x1b%5';
                 if (!(var2 !== var14)) {
-                    _fun38307_ip = 301;
-                    continue _fun38307
+                    _fun38306_ip = 301;
+                    continue _fun38306
                 }
             case 76:
                 var2 = 'UTF-8 Level 1';
                 var3 = '\x1b%/G';
                 if (!(var3 !== var14)) {
-                    _fun38307_ip = 298;
-                    continue _fun38307
+                    _fun38306_ip = 298;
+                    continue _fun38306
                 }
             case 95:
                 var3 = 'UTF-8 Level 2';
                 var4 = '\x1b%/H';
                 if (!(var4 !== var14)) {
-                    _fun38307_ip = 295;
-                    continue _fun38307
+                    _fun38306_ip = 295;
+                    continue _fun38306
                 }
             case 114:
                 var4 = 'UTF-8 Level 3';
                 var5 = '\x1b%/I';
                 if (!(var5 !== var14)) {
-                    _fun38307_ip = 292;
-                    continue _fun38307
+                    _fun38306_ip = 292;
+                    continue _fun38306
                 }
             case 133:
                 var5 = 'ISO-8859-1';
                 var6 = '\x1b/A';
                 if (!(var6 !== var14)) {
-                    _fun38307_ip = 289;
-                    continue _fun38307
+                    _fun38306_ip = 289;
+                    continue _fun38306
                 }
             case 152:
                 var6 = 'ISO-8859-2';
                 var7 = '\x1b/B';
                 if (!(var7 !== var14)) {
-                    _fun38307_ip = 286;
-                    continue _fun38307
+                    _fun38306_ip = 286;
+                    continue _fun38306
                 }
             case 168:
                 var7 = 'ISO-8859-3';
                 var8 = '\x1b/C';
                 if (!(var8 !== var14)) {
-                    _fun38307_ip = 283;
-                    continue _fun38307
+                    _fun38306_ip = 283;
+                    continue _fun38306
                 }
             case 184:
                 var8 = 'ISO-8859-4';
                 var9 = '\x1b/D';
                 if (!(var9 !== var14)) {
-                    _fun38307_ip = 280;
-                    continue _fun38307
+                    _fun38306_ip = 280;
+                    continue _fun38306
                 }
             case 200:
                 var9 = 'ISO-8859-5';
                 var10 = '\x1b/@';
                 if (!(var10 !== var14)) {
-                    _fun38307_ip = 277;
-                    continue _fun38307
+                    _fun38306_ip = 277;
+                    continue _fun38306
                 }
             case 216:
                 var10 = 'ISO-8859-6';
                 var11 = '\x1b/G';
                 if (!(var11 !== var14)) {
-                    _fun38307_ip = 274;
-                    continue _fun38307
+                    _fun38306_ip = 274;
+                    continue _fun38306
                 }
             case 232:
                 var11 = 'ISO-8859-7';
                 var12 = '\x1b/F';
                 if (!(var12 !== var14)) {
-                    _fun38307_ip = 271;
-                    continue _fun38307
+                    _fun38306_ip = 271;
+                    continue _fun38306
                 }
             case 248:
                 var12 = 'Unknown';
                 var13 = '\x1b/H';
                 if (!(var13 === var14)) {
-                    _fun38307_ip = 268;
-                    continue _fun38307
+                    _fun38306_ip = 268;
+                    continue _fun38306
                 }
             case 262:
                 var12 = 'ISO-8859-8';
@@ -416,7 +416,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Editorial Update';
     var3.name = var7;
     var7 = function arg0() {
-        _fun38314: for (var _fun38314_ip = 0;;) switch (_fun38314_ip) {
+        _fun38313: for (var _fun38313_ip = 0;;) switch (_fun38313_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -430,8 +430,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'Unknown';
                 var1 = '01';
                 if (!(var1 === var2)) {
-                    _fun38314_ip = 56;
-                    continue _fun38314
+                    _fun38313_ip = 56;
+                    continue _fun38313
                 }
             case 50:
                 var0 = 'Additional Language';
@@ -446,7 +446,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'repeatable': true
     };
     var7 = function arg0() {
-        _fun38315: for (var _fun38315_ip = 0;;) switch (_fun38315_ip) {
+        _fun38314: for (var _fun38314_ip = 0;;) switch (_fun38314_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -467,8 +467,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = '';
                 var0 = var1;
                 if (!var5) {
-                    _fun38315_ip = 88;
-                    continue _fun38315
+                    _fun38314_ip = 88;
+                    continue _fun38314
                 }
             case 76:
                 var5 = var3[var4];
@@ -479,8 +479,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 4;
                 var4 = var3[var2];
                 if (!var4) {
-                    _fun38315_ip = 114;
-                    continue _fun38315
+                    _fun38314_ip = 114;
+                    continue _fun38314
                 }
             case 102:
                 var3 = var3[var2];
@@ -517,7 +517,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var7 = 'Action Advised';
     var3.name = var7;
     var7 = function arg0() {
-        _fun38316: for (var _fun38316_ip = 0;;) switch (_fun38316_ip) {
+        _fun38315: for (var _fun38315_ip = 0;;) switch (_fun38315_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -531,29 +531,29 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'Object Kill';
                 var1 = '01';
                 if (!(var1 !== var5)) {
-                    _fun38316_ip = 107;
-                    continue _fun38316
+                    _fun38315_ip = 107;
+                    continue _fun38315
                 }
             case 52:
                 var1 = 'Object Replace';
                 var2 = '02';
                 if (!(var2 !== var5)) {
-                    _fun38316_ip = 104;
-                    continue _fun38316
+                    _fun38315_ip = 104;
+                    continue _fun38315
                 }
             case 66:
                 var2 = 'Object Append';
                 var3 = '03';
                 if (!(var3 !== var5)) {
-                    _fun38316_ip = 101;
-                    continue _fun38316
+                    _fun38315_ip = 101;
+                    continue _fun38315
                 }
             case 80:
                 var3 = 'Unknown';
                 var4 = '04';
                 if (!(var4 === var5)) {
-                    _fun38316_ip = 98;
-                    continue _fun38316
+                    _fun38315_ip = 98;
+                    continue _fun38315
                 }
             case 92:
                 var3 = 'Object Reference';
@@ -608,7 +608,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'Object Cycle';
     var3.name = var5;
     var5 = function arg0() {
-        _fun38317: for (var _fun38317_ip = 0;;) switch (_fun38317_ip) {
+        _fun38316: for (var _fun38316_ip = 0;;) switch (_fun38316_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -622,22 +622,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'morning';
                 var1 = 'a';
                 if (!(var1 !== var4)) {
-                    _fun38317_ip = 86;
-                    continue _fun38317
+                    _fun38316_ip = 86;
+                    continue _fun38316
                 }
             case 50:
                 var1 = 'evening';
                 var2 = 'p';
                 if (!(var2 !== var4)) {
-                    _fun38317_ip = 83;
-                    continue _fun38317
+                    _fun38316_ip = 83;
+                    continue _fun38316
                 }
             case 62:
                 var2 = 'Unknown';
                 var3 = 'b';
                 if (!(var3 === var4)) {
-                    _fun38317_ip = 80;
-                    continue _fun38317
+                    _fun38316_ip = 80;
+                    continue _fun38316
                 }
             case 74:
                 var2 = 'both';
@@ -684,7 +684,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'Image Orientation';
     var3.name = var5;
     var5 = function arg0() {
-        _fun38319: for (var _fun38319_ip = 0;;) switch (_fun38319_ip) {
+        _fun38318: for (var _fun38318_ip = 0;;) switch (_fun38318_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -698,22 +698,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'Portrait';
                 var1 = 'P';
                 if (!(var1 !== var4)) {
-                    _fun38319_ip = 90;
-                    continue _fun38319
+                    _fun38318_ip = 90;
+                    continue _fun38318
                 }
             case 52:
                 var1 = 'Landscape';
                 var2 = 'L';
                 if (!(var2 !== var4)) {
-                    _fun38319_ip = 87;
-                    continue _fun38319
+                    _fun38318_ip = 87;
+                    continue _fun38318
                 }
             case 66:
                 var2 = 'Unknown';
                 var3 = 'S';
                 if (!(var3 === var4)) {
-                    _fun38319_ip = 84;
-                    continue _fun38319
+                    _fun38318_ip = 84;
+                    continue _fun38318
                 }
             case 78:
                 var2 = 'Square';
@@ -731,7 +731,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'Audio Type';
     var3.name = var5;
     var5 = function arg0() {
-        _fun38320: for (var _fun38320_ip = 0;;) switch (_fun38320_ip) {
+        _fun38319: for (var _fun38319_ip = 0;;) switch (_fun38319_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -750,110 +750,110 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = 'Mono';
                 var1 = '1';
                 if (!(var1 !== var2)) {
-                    _fun38320_ip = 99;
-                    continue _fun38320
+                    _fun38319_ip = 99;
+                    continue _fun38319
                 }
             case 79:
                 var3 = '';
                 var1 = '2';
                 if (!(var1 === var2)) {
-                    _fun38320_ip = 99;
-                    continue _fun38320
+                    _fun38319_ip = 99;
+                    continue _fun38319
                 }
             case 93:
                 var3 = 'Stereo';
             case 99:
                 var1 = 'A';
                 if (!(var1 !== var4)) {
-                    _fun38320_ip = 256;
-                    continue _fun38320
+                    _fun38319_ip = 256;
+                    continue _fun38319
                 }
             case 110:
                 var1 = 'C';
                 if (!(var1 !== var4)) {
-                    _fun38320_ip = 244;
-                    continue _fun38320
+                    _fun38319_ip = 244;
+                    continue _fun38319
                 }
             case 121:
                 var1 = 'M';
                 if (!(var1 !== var4)) {
-                    _fun38320_ip = 232;
-                    continue _fun38320
+                    _fun38319_ip = 232;
+                    continue _fun38319
                 }
             case 129:
                 var1 = 'Q';
                 if (!(var1 !== var4)) {
-                    _fun38320_ip = 220;
-                    continue _fun38320
+                    _fun38319_ip = 220;
+                    continue _fun38319
                 }
             case 137:
                 var1 = 'R';
                 if (!(var1 !== var4)) {
-                    _fun38320_ip = 208;
-                    continue _fun38320
+                    _fun38319_ip = 208;
+                    continue _fun38319
                 }
             case 145:
                 var1 = 'S';
                 if (!(var1 !== var4)) {
-                    _fun38320_ip = 196;
-                    continue _fun38320
+                    _fun38319_ip = 196;
+                    continue _fun38319
                 }
             case 153:
                 var1 = 'V';
                 if (!(var1 !== var4)) {
-                    _fun38320_ip = 184;
-                    continue _fun38320
+                    _fun38319_ip = 184;
+                    continue _fun38319
                 }
             case 161:
                 var2 = 'W';
                 var1 = var3;
                 if (!(var2 === var4)) {
-                    _fun38320_ip = 266;
-                    continue _fun38320
+                    _fun38319_ip = 266;
+                    continue _fun38319
                 }
             case 172:
                 var2 = ', wrap';
                 var1 = var3 + var2;
-                _fun38320_ip = 266;
-                continue _fun38320;
+                _fun38319_ip = 266;
+                continue _fun38319;
             case 184:
                 var2 = ', voicer';
                 var1 = var3 + var2;
-                _fun38320_ip = 266;
-                continue _fun38320;
+                _fun38319_ip = 266;
+                continue _fun38319;
             case 196:
                 var2 = ', scener';
                 var1 = var3 + var2;
-                _fun38320_ip = 266;
-                continue _fun38320;
+                _fun38319_ip = 266;
+                continue _fun38319;
             case 208:
                 var2 = ', raw sound';
                 var1 = var3 + var2;
-                _fun38320_ip = 266;
-                continue _fun38320;
+                _fun38319_ip = 266;
+                continue _fun38319;
             case 220:
                 var2 = ', response to a question';
                 var1 = var3 + var2;
-                _fun38320_ip = 266;
-                continue _fun38320;
+                _fun38319_ip = 266;
+                continue _fun38319;
             case 232:
                 var2 = ', music, transmitted by itself';
                 var1 = var3 + var2;
-                _fun38320_ip = 266;
-                continue _fun38320;
+                _fun38319_ip = 266;
+                continue _fun38319;
             case 244:
                 var2 = ', question and answer session';
                 var1 = var3 + var2;
-                _fun38320_ip = 266;
-                continue _fun38320;
+                _fun38319_ip = 266;
+                continue _fun38319;
             case 256:
                 var2 = ', actuality';
                 var1 = var3 + var2;
             case 266:
                 var2 = '';
                 if (!(var2 !== var1)) {
-                    _fun38320_ip = 277;
-                    continue _fun38320
+                    _fun38319_ip = 277;
+                    continue _fun38319
                 }
             case 274:
                 var0 = var1;
@@ -890,7 +890,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'Audio Sampling Resolution';
     var3.name = var5;
     var5 = function arg0() {
-        _fun38322: for (var _fun38322_ip = 0;;) switch (_fun38322_ip) {
+        _fun38321: for (var _fun38321_ip = 0;;) switch (_fun38321_ip) {
             case 0:
                 var0 = global;
                 var3 = var0.parseInt;
@@ -908,8 +908,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = ' bits';
                 var2 = 1;
                 if (!(var2 === var1)) {
-                    _fun38322_ip = 74;
-                    continue _fun38322
+                    _fun38321_ip = 74;
+                    continue _fun38321
                 }
             case 68:
                 var0 = ' bit';
@@ -924,7 +924,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'Audio Duration';
     var3.name = var5;
     var5 = function arg0() {
-        _fun38323: for (var _fun38323_ip = 0;;) switch (_fun38323_ip) {
+        _fun38322: for (var _fun38322_ip = 0;;) switch (_fun38322_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -939,8 +939,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 6;
                 var0 = var6;
                 if (!(var3 >= var1)) {
-                    _fun38323_ip = 115;
-                    continue _fun38323
+                    _fun38322_ip = 115;
+                    continue _fun38322
                 }
             case 53:
                 var1 = var6.substr;
@@ -964,15 +964,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2[665] = var3;
     var3 = {};
     var5 = function arg0() {
-        _fun38324: for (var _fun38324_ip = 0;;) switch (_fun38324_ip) {
+        _fun38323: for (var _fun38323_ip = 0;;) switch (_fun38323_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.length;
                 var0 = 'Record 2 destination';
                 var1 = 2;
                 if (!(var1 === var2)) {
-                    _fun38324_ip = 25;
-                    continue _fun38324
+                    _fun38323_ip = 25;
+                    continue _fun38323
                 }
             case 21:
                 var0 = 'ObjectData Preview File Format';
@@ -982,14 +982,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.name = var5;
     var5 = function arg0() {
-        _fun38325: for (var _fun38325_ip = 0;;) switch (_fun38325_ip) {
+        _fun38324: for (var _fun38324_ip = 0;;) switch (_fun38324_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.length;
                 var3 = 2;
                 if (!(var3 !== var1)) {
-                    _fun38325_ip = 52;
-                    continue _fun38325
+                    _fun38324_ip = 52;
+                    continue _fun38324
                 }
             case 15:
                 var4 = _closure1_slot0;
@@ -1011,208 +1011,208 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var32 = var4 + var0;
                 var0 = 'No ObjectData';
                 if (!(var1 !== var32)) {
-                    _fun38325_ip = 634;
-                    continue _fun38325
+                    _fun38324_ip = 634;
+                    continue _fun38324
                 }
             case 89:
                 var1 = 'IPTC-NAA Digital Newsphoto Parameter Record';
                 if (!(var2 !== var32)) {
-                    _fun38325_ip = 631;
-                    continue _fun38325
+                    _fun38324_ip = 631;
+                    continue _fun38324
                 }
             case 102:
                 var2 = 'IPTC7901 Recommended Message Format';
                 if (!(var3 !== var32)) {
-                    _fun38325_ip = 628;
-                    continue _fun38325
+                    _fun38324_ip = 628;
+                    continue _fun38324
                 }
             case 115:
                 var3 = 'Tagged Image File Format (Adobe/Aldus Image data)';
                 var4 = 3;
                 if (!(var4 !== var32)) {
-                    _fun38325_ip = 625;
-                    continue _fun38325
+                    _fun38324_ip = 625;
+                    continue _fun38324
                 }
             case 131:
                 var4 = 'Illustrator (Adobe Graphics data)';
                 var5 = 4;
                 if (!(var5 !== var32)) {
-                    _fun38325_ip = 622;
-                    continue _fun38325
+                    _fun38324_ip = 622;
+                    continue _fun38324
                 }
             case 147:
                 var5 = 'AppleSingle (Apple Computer Inc)';
                 var6 = 5;
                 if (!(var6 !== var32)) {
-                    _fun38325_ip = 619;
-                    continue _fun38325
+                    _fun38324_ip = 619;
+                    continue _fun38324
                 }
             case 163:
                 var6 = 'NAA 89-3 (ANPA 1312)';
                 var7 = 6;
                 if (!(var7 !== var32)) {
-                    _fun38325_ip = 616;
-                    continue _fun38325
+                    _fun38324_ip = 616;
+                    continue _fun38324
                 }
             case 179:
                 var7 = 'MacBinary II';
                 var8 = 7;
                 if (!(var8 !== var32)) {
-                    _fun38325_ip = 613;
-                    continue _fun38325
+                    _fun38324_ip = 613;
+                    continue _fun38324
                 }
             case 195:
                 var8 = 'IPTC Unstructured Character Oriented File Format (UCOFF)';
                 if (!(var9 !== var32)) {
-                    _fun38325_ip = 610;
-                    continue _fun38325
+                    _fun38324_ip = 610;
+                    continue _fun38324
                 }
             case 208:
                 var9 = 'United Press International ANPA 1312 variant';
                 var10 = 9;
                 if (!(var10 !== var32)) {
-                    _fun38325_ip = 607;
-                    continue _fun38325
+                    _fun38324_ip = 607;
+                    continue _fun38324
                 }
             case 224:
                 var10 = 'United Press International Down-Load Message';
                 var11 = 10;
                 if (!(var11 !== var32)) {
-                    _fun38325_ip = 604;
-                    continue _fun38325
+                    _fun38324_ip = 604;
+                    continue _fun38324
                 }
             case 240:
                 var11 = 'JPEG File Interchange (JFIF)';
                 var12 = 11;
                 if (!(var12 !== var32)) {
-                    _fun38325_ip = 601;
-                    continue _fun38325
+                    _fun38324_ip = 601;
+                    continue _fun38324
                 }
             case 256:
                 var12 = 'Photo-CD Image-Pac (Eastman Kodak)';
                 var13 = 12;
                 if (!(var13 !== var32)) {
-                    _fun38325_ip = 598;
-                    continue _fun38325
+                    _fun38324_ip = 598;
+                    continue _fun38324
                 }
             case 272:
                 var13 = 'Microsoft Bit Mapped Graphics File [*.BMP]';
                 var14 = 13;
                 if (!(var14 !== var32)) {
-                    _fun38325_ip = 595;
-                    continue _fun38325
+                    _fun38324_ip = 595;
+                    continue _fun38324
                 }
             case 288:
                 var14 = 'Digital Audio File [*.WAV] (Microsoft & Creative Labs)';
                 var15 = 14;
                 if (!(var15 !== var32)) {
-                    _fun38325_ip = 592;
-                    continue _fun38325
+                    _fun38324_ip = 592;
+                    continue _fun38324
                 }
             case 304:
                 var15 = 'Audio plus Moving Video [*.AVI] (Microsoft)';
                 var16 = 15;
                 if (!(var16 !== var32)) {
-                    _fun38325_ip = 589;
-                    continue _fun38325
+                    _fun38324_ip = 589;
+                    continue _fun38324
                 }
             case 320:
                 var16 = 'PC DOS/Windows Executable Files [*.COM][*.EXE]';
                 var17 = 16;
                 if (!(var17 !== var32)) {
-                    _fun38325_ip = 586;
-                    continue _fun38325
+                    _fun38324_ip = 586;
+                    continue _fun38324
                 }
             case 336:
                 var17 = 'Compressed Binary File [*.ZIP] (PKWare Inc)';
                 var18 = 17;
                 if (!(var18 !== var32)) {
-                    _fun38325_ip = 583;
-                    continue _fun38325
+                    _fun38324_ip = 583;
+                    continue _fun38324
                 }
             case 352:
                 var18 = 'Audio Interchange File Format AIFF (Apple Computer Inc)';
                 var19 = 18;
                 if (!(var19 !== var32)) {
-                    _fun38325_ip = 580;
-                    continue _fun38325
+                    _fun38324_ip = 580;
+                    continue _fun38324
                 }
             case 368:
                 var19 = 'RIFF Wave (Microsoft Corporation)';
                 var20 = 19;
                 if (!(var20 !== var32)) {
-                    _fun38325_ip = 577;
-                    continue _fun38325
+                    _fun38324_ip = 577;
+                    continue _fun38324
                 }
             case 384:
                 var20 = 'Freehand (Macromedia/Aldus)';
                 var21 = 20;
                 if (!(var21 !== var32)) {
-                    _fun38325_ip = 574;
-                    continue _fun38325
+                    _fun38324_ip = 574;
+                    continue _fun38324
                 }
             case 400:
                 var21 = 'Hypertext Markup Language "HTML" (The Internet Society)';
                 var22 = 21;
                 if (!(var22 !== var32)) {
-                    _fun38325_ip = 571;
-                    continue _fun38325
+                    _fun38324_ip = 571;
+                    continue _fun38324
                 }
             case 416:
                 var22 = 'MPEG 2 Audio Layer 2 (Musicom), ISO/IEC';
                 var23 = 22;
                 if (!(var23 !== var32)) {
-                    _fun38325_ip = 568;
-                    continue _fun38325
+                    _fun38324_ip = 568;
+                    continue _fun38324
                 }
             case 432:
                 var23 = 'MPEG 2 Audio Layer 3, ISO/IEC';
                 var24 = 23;
                 if (!(var24 !== var32)) {
-                    _fun38325_ip = 565;
-                    continue _fun38325
+                    _fun38324_ip = 565;
+                    continue _fun38324
                 }
             case 445:
                 var24 = 'Portable Document File (*.PDF) Adobe';
                 var25 = 24;
                 if (!(var25 !== var32)) {
-                    _fun38325_ip = 562;
-                    continue _fun38325
+                    _fun38324_ip = 562;
+                    continue _fun38324
                 }
             case 458:
                 var25 = 'News Industry Text Format (NITF)';
                 var26 = 25;
                 if (!(var26 !== var32)) {
-                    _fun38325_ip = 559;
-                    continue _fun38325
+                    _fun38324_ip = 559;
+                    continue _fun38324
                 }
             case 471:
                 var26 = 'Tape Archive (*.TAR)';
                 var27 = 26;
                 if (!(var27 !== var32)) {
-                    _fun38325_ip = 556;
-                    continue _fun38325
+                    _fun38324_ip = 556;
+                    continue _fun38324
                 }
             case 484:
                 var27 = 'Tidningarnas Telegrambyrå NITF version (TTNITF DTD)';
                 var28 = 27;
                 if (!(var28 !== var32)) {
-                    _fun38325_ip = 553;
-                    continue _fun38325
+                    _fun38324_ip = 553;
+                    continue _fun38324
                 }
             case 497:
                 var28 = 'Ritzaus Bureau NITF version (RBNITF DTD)';
                 var29 = 28;
                 if (!(var29 !== var32)) {
-                    _fun38325_ip = 550;
-                    continue _fun38325
+                    _fun38324_ip = 550;
+                    continue _fun38324
                 }
             case 510:
                 var29 = 'Corel Draw [*.CDR]';
                 var30 = 29;
                 if (!(var30 !== var32)) {
-                    _fun38325_ip = 547;
-                    continue _fun38325
+                    _fun38324_ip = 547;
+                    continue _fun38324
                 }
             case 523:
                 var30 = global;
@@ -1288,7 +1288,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = 'ObjectData Preview File Format Version';
     var3.name = var5;
     var5 = function arg0, arg1() {
-        _fun38326: for (var _fun38326_ip = 0;;) switch (_fun38326_ip) {
+        _fun38325: for (var _fun38325_ip = 0;;) switch (_fun38325_ip) {
             case 0:
                 var0 = arg1;
                 var2 = {};
@@ -1349,8 +1349,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var4.bind(var7)(var1);
                 var4 = var0["ObjectData Preview File Format"];
                 if (!var4) {
-                    _fun38326_ip = 287;
-                    continue _fun38326
+                    _fun38325_ip = 287;
+                    continue _fun38325
                 }
             case 230:
                 var4 = _closure1_slot0;
@@ -1363,15 +1363,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3.bind(var4)(var0);
                 var3 = var2[var0];
                 if (!var3) {
-                    _fun38326_ip = 287;
-                    continue _fun38326
+                    _fun38325_ip = 287;
+                    continue _fun38325
                 }
             case 276:
                 var3 = var2[var0];
                 var3 = var3[var1];
                 if (var3) {
-                    _fun38326_ip = 289;
-                    continue _fun38326
+                    _fun38325_ip = 289;
+                    continue _fun38325
                 }
             case 287:
                 return var1;
@@ -1398,6 +1398,42 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2[1802] = var3;
     var3 = {};
     var5 = 'Max Subfile Size';
+    var3.name = var5;
+    var5 = function arg0() {
+        _fun38327: for (var _fun38327_ip = 0;;) switch (_fun38327_ip) {
+            case 0:
+                var5 = arg0;
+                var0 = var5.length;
+                var1 = 0;
+                var0 = var1 < var0;
+                var4 = 8;
+                var3 = 0;
+                var2 = 0;
+                if (!var0) {
+                    _fun38327_ip = 51;
+                    continue _fun38327
+                }
+            case 24:
+                var6 = var5[var2];
+                var0 = var3 << var4;
+                var3 = var0 + var6;
+                var2 = var2 + 1;
+                var0 = var5.length;
+                var1 = var3;
+                if (var2 < var0) {
+                    _fun38327_ip = 24;
+                    continue _fun38327
+                }
+            case 51:
+                var0 = var1.toString;
+                var0 = var0.bind(var1)();
+                return var0;
+        }
+    };
+    var3.description = var5;
+    var2[1812] = var3;
+    var3 = {};
+    var5 = 'ObjectData Size Announced';
     var3.name = var5;
     var5 = function arg0() {
         _fun38328: for (var _fun38328_ip = 0;;) switch (_fun38328_ip) {
@@ -1431,11 +1467,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         }
     };
     var3.description = var5;
-    var2[1812] = var3;
+    var2[1882] = var3;
     var3 = {};
-    var5 = 'ObjectData Size Announced';
+    var5 = 'Maximum ObjectData Size';
     var3.name = var5;
-    var5 = function arg0() {
+    var4 = function arg0() {
         _fun38329: for (var _fun38329_ip = 0;;) switch (_fun38329_ip) {
             case 0:
                 var5 = arg0;
@@ -1459,42 +1495,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 if (var2 < var0) {
                     _fun38329_ip = 24;
                     continue _fun38329
-                }
-            case 51:
-                var0 = var1.toString;
-                var0 = var0.bind(var1)();
-                return var0;
-        }
-    };
-    var3.description = var5;
-    var2[1882] = var3;
-    var3 = {};
-    var5 = 'Maximum ObjectData Size';
-    var3.name = var5;
-    var4 = function arg0() {
-        _fun38330: for (var _fun38330_ip = 0;;) switch (_fun38330_ip) {
-            case 0:
-                var5 = arg0;
-                var0 = var5.length;
-                var1 = 0;
-                var0 = var1 < var0;
-                var4 = 8;
-                var3 = 0;
-                var2 = 0;
-                if (!var0) {
-                    _fun38330_ip = 51;
-                    continue _fun38330
-                }
-            case 24:
-                var6 = var5[var2];
-                var0 = var3 << var4;
-                var3 = var0 + var6;
-                var2 = var2 + 1;
-                var0 = var5.length;
-                var1 = var3;
-                if (var2 < var0) {
-                    _fun38330_ip = 24;
-                    continue _fun38330
                 }
             case 51:
                 var0 = var1.toString;

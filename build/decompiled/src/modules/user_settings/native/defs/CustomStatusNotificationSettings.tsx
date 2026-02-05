@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var1 = function arg0() {
-        _fun85717: for (var _fun85717_ip = 0;;) switch (_fun85717_ip) {
+        _fun85736: for (var _fun85736_ip = 0;;) switch (_fun85736_ip) {
             case 0:
                 var5 = arg0;
                 var2 = _closure1_slot0;
@@ -27,13 +27,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.bind(var0)(var1);
                 var4 = var1.CustomStatusPushNotificationType;
                 if (var5) {
-                    _fun85717_ip = 77;
-                    continue _fun85717
+                    _fun85736_ip = 77;
+                    continue _fun85736
                 }
             case 69:
                 var1 = var4.STATUS_PUSH_DISABLED;
-                _fun85717_ip = 83;
-                continue _fun85717;
+                _fun85736_ip = 83;
+                continue _fun85736;
             case 77:
                 var1 = var4.STATUS_PUSH_ENABLED;
             case 83:
@@ -137,4 +137,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.onChange = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7008, 660, 3103, 1348, 1311, 795, 8999, 1234, 11030, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7028, 660, 3103, 1348, 1311, 795, 9017, 1234, 11048, 2]);

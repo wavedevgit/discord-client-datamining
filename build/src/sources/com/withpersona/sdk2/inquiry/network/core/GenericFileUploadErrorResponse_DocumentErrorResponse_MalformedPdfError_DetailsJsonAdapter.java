@@ -26,21 +26,21 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Malforme
     @Override // com.squareup.moshi.h
     @NotNull
     public GenericFileUploadErrorResponse.DocumentErrorResponse.MalformedPdfError.Details fromJson(@NotNull m mVar) {
-        mVar.r();
+        mVar.s();
         while (mVar.hasNext()) {
-            if (mVar.A0(this.options) == -1) {
+            if (mVar.W(this.options) == -1) {
                 mVar.E0();
                 mVar.P();
             }
         }
-        mVar.y();
+        mVar.z();
         return new GenericFileUploadErrorResponse.DocumentErrorResponse.MalformedPdfError.Details();
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.MalformedPdfError.Details details) {
         if (details != null) {
-            tVar.l();
+            tVar.k();
             tVar.E();
             return;
         }

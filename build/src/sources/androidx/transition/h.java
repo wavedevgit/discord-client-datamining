@@ -8,7 +8,7 @@ import android.widget.ImageView;
 abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static boolean f5275a = true;
+    private static boolean f5387a = true;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -34,11 +34,11 @@ abstract class h {
     }
 
     private static void b(ImageView imageView, Matrix matrix) {
-        if (f5275a) {
+        if (f5387a) {
             try {
                 a.a(imageView, matrix);
             } catch (NoSuchMethodError unused) {
-                f5275a = false;
+                f5387a = false;
             }
         }
     }

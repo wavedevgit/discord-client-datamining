@@ -22,55 +22,55 @@ public final class CodeScanner {
     private static final com.budiyev.android.codescanner.a P;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f7987b;
+    private final Context f8372b;
 
     /* renamed from: d  reason: collision with root package name */
-    private final CodeScannerView f7989d;
+    private final CodeScannerView f8374d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final SurfaceHolder f7990e;
+    private final SurfaceHolder f8375e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f7986a = new Object();
+    private final Object f8371a = new Object();
 
     /* renamed from: n  reason: collision with root package name */
-    private volatile List f7999n = N;
+    private volatile List f8384n = N;
 
     /* renamed from: o  reason: collision with root package name */
-    private volatile m f8000o = O;
+    private volatile m f8385o = O;
 
     /* renamed from: p  reason: collision with root package name */
-    private volatile com.budiyev.android.codescanner.a f8001p = P;
+    private volatile com.budiyev.android.codescanner.a f8386p = P;
 
     /* renamed from: q  reason: collision with root package name */
-    private volatile com.budiyev.android.codescanner.d f8002q = null;
+    private volatile com.budiyev.android.codescanner.d f8387q = null;
 
     /* renamed from: r  reason: collision with root package name */
-    private volatile com.budiyev.android.codescanner.h f8003r = null;
+    private volatile com.budiyev.android.codescanner.h f8388r = null;
 
     /* renamed from: s  reason: collision with root package name */
-    private volatile com.budiyev.android.codescanner.g f8004s = null;
+    private volatile com.budiyev.android.codescanner.g f8389s = null;
 
     /* renamed from: t  reason: collision with root package name */
-    private volatile boolean f8005t = false;
+    private volatile boolean f8390t = false;
 
     /* renamed from: u  reason: collision with root package name */
-    private volatile boolean f8006u = false;
+    private volatile boolean f8391u = false;
 
     /* renamed from: v  reason: collision with root package name */
-    private volatile boolean f8007v = false;
+    private volatile boolean f8392v = false;
 
     /* renamed from: w  reason: collision with root package name */
-    private volatile boolean f8008w = true;
+    private volatile boolean f8393w = true;
 
     /* renamed from: x  reason: collision with root package name */
-    private volatile boolean f8009x = false;
+    private volatile boolean f8394x = false;
 
     /* renamed from: y  reason: collision with root package name */
-    private volatile long f8010y = 2000;
+    private volatile long f8395y = 2000;
 
     /* renamed from: z  reason: collision with root package name */
-    private volatile int f8011z = -1;
+    private volatile int f8396z = -1;
     private volatile int A = 0;
     private boolean B = true;
     private boolean C = false;
@@ -83,31 +83,31 @@ public final class CodeScanner {
     private int J = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Handler f7988c = new Handler();
+    private final Handler f8373c = new Handler();
 
     /* renamed from: f  reason: collision with root package name */
-    private final SurfaceHolder.Callback f7991f = new k();
+    private final SurfaceHolder.Callback f8376f = new k();
 
     /* renamed from: g  reason: collision with root package name */
-    private final Camera.PreviewCallback f7992g = new f();
+    private final Camera.PreviewCallback f8377g = new f();
 
     /* renamed from: h  reason: collision with root package name */
-    private final Camera.AutoFocusCallback f7993h = new l();
+    private final Camera.AutoFocusCallback f8378h = new l();
 
     /* renamed from: i  reason: collision with root package name */
-    private final Camera.AutoFocusCallback f7994i = new g();
+    private final Camera.AutoFocusCallback f8379i = new g();
 
     /* renamed from: j  reason: collision with root package name */
-    private final Runnable f7995j = new h();
+    private final Runnable f8380j = new h();
 
     /* renamed from: k  reason: collision with root package name */
-    private final Runnable f7996k = new j();
+    private final Runnable f8381k = new j();
 
     /* renamed from: l  reason: collision with root package name */
-    private final b f7997l = new b();
+    private final b f8382l = new b();
 
     /* renamed from: m  reason: collision with root package name */
-    private final c f7998m = new c();
+    private final c f8383m = new c();
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -118,13 +118,13 @@ public final class CodeScanner {
         @Override // com.budiyev.android.codescanner.f.c
         public boolean a(f.b bVar) {
             if (bVar == f.b.DECODED) {
-                m mVar = CodeScanner.this.f8000o;
+                m mVar = CodeScanner.this.f8385o;
                 if (mVar == m.PREVIEW) {
                     return false;
                 }
                 if (mVar == m.SINGLE) {
-                    CodeScanner.this.f8007v = true;
-                    CodeScanner.this.f7988c.post(CodeScanner.this.f7996k);
+                    CodeScanner.this.f8392v = true;
+                    CodeScanner.this.f8373c.post(CodeScanner.this.f8381k);
                 }
             }
             return true;
@@ -140,7 +140,7 @@ public final class CodeScanner {
         @Override // java.lang.Thread.UncaughtExceptionHandler
         public void uncaughtException(Thread thread, Throwable th2) {
             CodeScanner.this.V();
-            com.budiyev.android.codescanner.h hVar = CodeScanner.this.f8003r;
+            com.budiyev.android.codescanner.h hVar = CodeScanner.this.f8388r;
             if (hVar != null) {
                 hVar.onError(th2);
                 return;
@@ -154,21 +154,21 @@ public final class CodeScanner {
     public final class d implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final com.budiyev.android.codescanner.i f8014d;
+        private final com.budiyev.android.codescanner.i f8399d;
 
         @Override // java.lang.Runnable
         public void run() {
-            if (!CodeScanner.this.f8006u) {
+            if (!CodeScanner.this.f8391u) {
                 return;
             }
-            CodeScanner.this.f7989d.setPreviewSize(this.f8014d);
-            CodeScanner.this.f7989d.setAutoFocusEnabled(CodeScanner.this.O());
-            CodeScanner.this.f7989d.setFlashEnabled(CodeScanner.this.Q());
+            CodeScanner.this.f8374d.setPreviewSize(this.f8399d);
+            CodeScanner.this.f8374d.setAutoFocusEnabled(CodeScanner.this.O());
+            CodeScanner.this.f8374d.setFlashEnabled(CodeScanner.this.Q());
             CodeScanner.this.g0();
         }
 
         private d(com.budiyev.android.codescanner.i iVar) {
-            this.f8014d = iVar;
+            this.f8399d = iVar;
         }
     }
 
@@ -177,15 +177,15 @@ public final class CodeScanner {
     public final class e extends Thread {
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f8016d;
+        private final int f8401d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f8017e;
+        private final int f8402e;
 
         public e(int i10, int i11) {
             super("cs-init");
-            this.f8016d = i10;
-            this.f8017e = i11;
+            this.f8401d = i10;
+            this.f8402e = i11;
         }
 
         private void a() {
@@ -198,7 +198,7 @@ public final class CodeScanner {
             boolean z10;
             boolean z11;
             Camera.CameraInfo cameraInfo = new Camera.CameraInfo();
-            int i15 = CodeScanner.this.f8011z;
+            int i15 = CodeScanner.this.f8396z;
             if (i15 != -1 && i15 != -2) {
                 camera = Camera.open(i15);
                 Camera.getCameraInfo(i15, cameraInfo);
@@ -215,7 +215,7 @@ public final class CodeScanner {
                         Camera.getCameraInfo(i16, cameraInfo);
                         if (cameraInfo.facing == i10) {
                             Camera open = Camera.open(i16);
-                            CodeScanner.this.f8011z = i16;
+                            CodeScanner.this.f8396z = i16;
                             camera = open;
                             break;
                         }
@@ -230,17 +230,17 @@ public final class CodeScanner {
             if (camera2 != null) {
                 Camera.Parameters parameters = camera2.getParameters();
                 if (parameters != null) {
-                    int k10 = n.k(CodeScanner.this.f7987b, cameraInfo);
+                    int k10 = n.k(CodeScanner.this.f8372b, cameraInfo);
                     boolean o10 = n.o(k10);
                     if (o10) {
-                        i11 = this.f8017e;
+                        i11 = this.f8402e;
                     } else {
-                        i11 = this.f8016d;
+                        i11 = this.f8401d;
                     }
                     if (o10) {
-                        i12 = this.f8016d;
+                        i12 = this.f8401d;
                     } else {
-                        i12 = this.f8017e;
+                        i12 = this.f8402e;
                     }
                     com.budiyev.android.codescanner.i j10 = n.j(parameters, i11, i12);
                     int a10 = j10.a();
@@ -257,7 +257,7 @@ public final class CodeScanner {
                     } else {
                         i14 = b10;
                     }
-                    com.budiyev.android.codescanner.i n10 = n.n(i13, i14, this.f8016d, this.f8017e);
+                    com.budiyev.android.codescanner.i n10 = n.n(i13, i14, this.f8401d, this.f8402e);
                     List<String> supportedFocusModes = parameters.getSupportedFocusModes();
                     if (supportedFocusModes != null && (supportedFocusModes.contains("auto") || supportedFocusModes.contains("continuous-picture"))) {
                         z10 = true;
@@ -265,12 +265,12 @@ public final class CodeScanner {
                         z10 = false;
                     }
                     if (!z10) {
-                        CodeScanner.this.f8008w = false;
+                        CodeScanner.this.f8393w = false;
                     }
-                    com.budiyev.android.codescanner.i iVar = new com.budiyev.android.codescanner.i(this.f8016d, this.f8017e);
-                    if (z10 && CodeScanner.this.f8008w) {
-                        n.r(parameters, CodeScanner.this.f8001p);
-                        com.budiyev.android.codescanner.l frameRect = CodeScanner.this.f7989d.getFrameRect();
+                    com.budiyev.android.codescanner.i iVar = new com.budiyev.android.codescanner.i(this.f8401d, this.f8402e);
+                    if (z10 && CodeScanner.this.f8393w) {
+                        n.r(parameters, CodeScanner.this.f8386p);
+                        com.budiyev.android.codescanner.l frameRect = CodeScanner.this.f8374d.getFrameRect();
                         if (frameRect != null) {
                             n.b(parameters, frameRect, n10, iVar, a10, b10, k10);
                         }
@@ -282,7 +282,7 @@ public final class CodeScanner {
                         z11 = false;
                     }
                     if (!z11) {
-                        CodeScanner.this.f8009x = false;
+                        CodeScanner.this.f8394x = false;
                     }
                     int i17 = CodeScanner.this.A;
                     if (i17 != 0) {
@@ -293,14 +293,14 @@ public final class CodeScanner {
                     n.g(parameters);
                     camera2.setParameters(parameters);
                     camera2.setDisplayOrientation(k10);
-                    synchronized (CodeScanner.this.f7986a) {
-                        com.budiyev.android.codescanner.f fVar = new com.budiyev.android.codescanner.f(CodeScanner.this.f7997l, CodeScanner.this.f7998m, CodeScanner.this.f7999n, CodeScanner.this.f8002q);
-                        CodeScanner.this.f8004s = new com.budiyev.android.codescanner.g(camera2, cameraInfo, fVar, j10, n10, iVar, k10, z10, z11);
+                    synchronized (CodeScanner.this.f8371a) {
+                        com.budiyev.android.codescanner.f fVar = new com.budiyev.android.codescanner.f(CodeScanner.this.f8382l, CodeScanner.this.f8383m, CodeScanner.this.f8384n, CodeScanner.this.f8387q);
+                        CodeScanner.this.f8389s = new com.budiyev.android.codescanner.g(camera2, cameraInfo, fVar, j10, n10, iVar, k10, z10, z11);
                         fVar.m();
-                        CodeScanner.this.f8005t = false;
-                        CodeScanner.this.f8006u = true;
+                        CodeScanner.this.f8390t = false;
+                        CodeScanner.this.f8391u = true;
                     }
-                    CodeScanner.this.f7988c.post(new d(n10));
+                    CodeScanner.this.f8373c.post(new d(n10));
                     return;
                 }
                 throw new com.budiyev.android.codescanner.c("Unable to configure camera");
@@ -324,9 +324,9 @@ public final class CodeScanner {
         public void onPreviewFrame(byte[] bArr, Camera camera) {
             com.budiyev.android.codescanner.g gVar;
             com.budiyev.android.codescanner.l frameRect;
-            if (CodeScanner.this.f8006u && !CodeScanner.this.f8007v && CodeScanner.this.f8000o != m.PREVIEW && bArr != null && (gVar = CodeScanner.this.f8004s) != null) {
+            if (CodeScanner.this.f8391u && !CodeScanner.this.f8392v && CodeScanner.this.f8385o != m.PREVIEW && bArr != null && (gVar = CodeScanner.this.f8389s) != null) {
                 com.budiyev.android.codescanner.f b10 = gVar.b();
-                if (b10.h() == f.b.IDLE && (frameRect = CodeScanner.this.f7989d.getFrameRect()) != null && frameRect.h() >= 1 && frameRect.d() >= 1) {
+                if (b10.h() == f.b.IDLE && (frameRect = CodeScanner.this.f8374d.getFrameRect()) != null && frameRect.h() >= 1 && frameRect.d() >= 1) {
                     b10.g(new com.budiyev.android.codescanner.e(bArr, gVar.d(), gVar.e(), gVar.f(), frameRect, gVar.c(), gVar.j()));
                 }
             }
@@ -352,7 +352,7 @@ public final class CodeScanner {
         @Override // java.lang.Runnable
         public void run() {
             CodeScanner.this.F = false;
-            if (CodeScanner.this.f8001p == com.budiyev.android.codescanner.a.SAFE) {
+            if (CodeScanner.this.f8386p == com.budiyev.android.codescanner.a.SAFE) {
                 CodeScanner.this.W();
             }
         }
@@ -365,14 +365,14 @@ public final class CodeScanner {
 
         @Override // com.budiyev.android.codescanner.CodeScannerView.e
         public void a(int i10, int i11) {
-            synchronized (CodeScanner.this.f7986a) {
+            synchronized (CodeScanner.this.f8371a) {
                 try {
                     if (i10 == CodeScanner.this.I) {
                         if (i11 != CodeScanner.this.J) {
                         }
                     }
                     boolean z10 = CodeScanner.this.D;
-                    if (CodeScanner.this.f8006u) {
+                    if (CodeScanner.this.f8391u) {
                         CodeScanner.this.U();
                     }
                     if (z10 || CodeScanner.this.G) {
@@ -434,25 +434,25 @@ public final class CodeScanner {
     }
 
     static {
-        List unmodifiableList = Collections.unmodifiableList(Arrays.asList(ck.a.values()));
+        List unmodifiableList = Collections.unmodifiableList(Arrays.asList(fk.a.values()));
         K = unmodifiableList;
-        L = Collections.unmodifiableList(Arrays.asList(ck.a.CODABAR, ck.a.CODE_39, ck.a.CODE_93, ck.a.CODE_128, ck.a.EAN_8, ck.a.EAN_13, ck.a.ITF, ck.a.RSS_14, ck.a.RSS_EXPANDED, ck.a.UPC_A, ck.a.UPC_E, ck.a.UPC_EAN_EXTENSION));
-        M = Collections.unmodifiableList(Arrays.asList(ck.a.AZTEC, ck.a.DATA_MATRIX, ck.a.MAXICODE, ck.a.PDF_417, ck.a.QR_CODE));
+        L = Collections.unmodifiableList(Arrays.asList(fk.a.CODABAR, fk.a.CODE_39, fk.a.CODE_93, fk.a.CODE_128, fk.a.EAN_8, fk.a.EAN_13, fk.a.ITF, fk.a.RSS_14, fk.a.RSS_EXPANDED, fk.a.UPC_A, fk.a.UPC_E, fk.a.UPC_EAN_EXTENSION));
+        M = Collections.unmodifiableList(Arrays.asList(fk.a.AZTEC, fk.a.DATA_MATRIX, fk.a.MAXICODE, fk.a.PDF_417, fk.a.QR_CODE));
         N = unmodifiableList;
         O = m.SINGLE;
         P = com.budiyev.android.codescanner.a.SAFE;
     }
 
     public CodeScanner(Context context, CodeScannerView codeScannerView) {
-        this.f7987b = context;
-        this.f7989d = codeScannerView;
-        this.f7990e = codeScannerView.getPreviewView().getHolder();
+        this.f8372b = context;
+        this.f8374d = codeScannerView;
+        this.f8375e = codeScannerView.getPreviewView().getHolder();
         codeScannerView.setCodeScanner(this);
         codeScannerView.setSizeListener(new i());
     }
 
     private void M() {
-        N(this.f7989d.getWidth(), this.f7989d.getHeight());
+        N(this.f8374d.getWidth(), this.f8374d.getHeight());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -460,10 +460,10 @@ public final class CodeScanner {
         this.I = i10;
         this.J = i11;
         if (i10 > 0 && i11 > 0) {
-            this.f8005t = true;
+            this.f8390t = true;
             this.G = false;
             e eVar = new e(i10, i11);
-            eVar.setUncaughtExceptionHandler(this.f7998m);
+            eVar.setUncaughtExceptionHandler(this.f8383m);
             eVar.start();
             return;
         }
@@ -472,14 +472,14 @@ public final class CodeScanner {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void V() {
-        this.f8006u = false;
-        this.f8005t = false;
-        this.f8007v = false;
+        this.f8391u = false;
+        this.f8390t = false;
+        this.f8392v = false;
         this.D = false;
         this.E = false;
-        com.budiyev.android.codescanner.g gVar = this.f8004s;
+        com.budiyev.android.codescanner.g gVar = this.f8389s;
         if (gVar != null) {
-            this.f8004s = null;
+            this.f8389s = null;
             gVar.i();
         }
     }
@@ -488,14 +488,14 @@ public final class CodeScanner {
     public void W() {
         com.budiyev.android.codescanner.g gVar;
         int i10;
-        if (this.f8006u && this.D && (gVar = this.f8004s) != null && gVar.g() && this.f8008w) {
+        if (this.f8391u && this.D && (gVar = this.f8389s) != null && gVar.g() && this.f8393w) {
             if (this.E && (i10 = this.H) < 2) {
                 this.H = i10 + 1;
             } else {
                 try {
                     Camera a10 = gVar.a();
                     a10.cancelAutoFocus();
-                    a10.autoFocus(this.f7994i);
+                    a10.autoFocus(this.f8379i);
                     this.H = 0;
                     this.E = true;
                 } catch (Exception unused) {
@@ -511,25 +511,25 @@ public final class CodeScanner {
             return;
         }
         this.F = true;
-        this.f7988c.postDelayed(this.f7995j, this.f8010y);
+        this.f8373c.postDelayed(this.f8380j, this.f8395y);
     }
 
     private void Z(boolean z10) {
         com.budiyev.android.codescanner.l frameRect;
         try {
-            com.budiyev.android.codescanner.g gVar = this.f8004s;
+            com.budiyev.android.codescanner.g gVar = this.f8389s;
             if (gVar != null) {
                 Camera a10 = gVar.a();
                 a10.cancelAutoFocus();
                 this.C = false;
                 Camera.Parameters parameters = a10.getParameters();
-                com.budiyev.android.codescanner.a aVar = this.f8001p;
+                com.budiyev.android.codescanner.a aVar = this.f8386p;
                 if (z10) {
                     n.r(parameters, aVar);
                 } else {
                     n.i(parameters);
                 }
-                if (z10 && (frameRect = this.f7989d.getFrameRect()) != null) {
+                if (z10 && (frameRect = this.f8374d.getFrameRect()) != null) {
                     n.a(parameters, gVar, frameRect);
                 }
                 a10.setParameters(parameters);
@@ -549,7 +549,7 @@ public final class CodeScanner {
         Camera a10;
         Camera.Parameters parameters;
         try {
-            com.budiyev.android.codescanner.g gVar = this.f8004s;
+            com.budiyev.android.codescanner.g gVar = this.f8389s;
             if (gVar != null && (parameters = (a10 = gVar.a()).getParameters()) != null) {
                 if (z10) {
                     n.s(parameters, "torch");
@@ -564,27 +564,27 @@ public final class CodeScanner {
 
     private void h0(boolean z10) {
         try {
-            com.budiyev.android.codescanner.g gVar = this.f8004s;
+            com.budiyev.android.codescanner.g gVar = this.f8389s;
             if (gVar != null) {
                 Camera a10 = gVar.a();
-                a10.setPreviewCallback(this.f7992g);
-                a10.setPreviewDisplay(this.f7990e);
-                if (!z10 && gVar.h() && this.f8009x) {
+                a10.setPreviewCallback(this.f8377g);
+                a10.setPreviewDisplay(this.f8375e);
+                if (!z10 && gVar.h() && this.f8394x) {
                     e0(true);
                 }
                 a10.startPreview();
-                this.f8007v = false;
+                this.f8392v = false;
                 this.D = true;
                 this.E = false;
                 this.H = 0;
-                if (gVar.g() && this.f8008w) {
-                    com.budiyev.android.codescanner.l frameRect = this.f7989d.getFrameRect();
+                if (gVar.g() && this.f8393w) {
+                    com.budiyev.android.codescanner.l frameRect = this.f8374d.getFrameRect();
                     if (frameRect != null) {
                         Camera.Parameters parameters = a10.getParameters();
                         n.a(parameters, gVar, frameRect);
                         a10.setParameters(parameters);
                     }
-                    if (this.f8001p == com.budiyev.android.codescanner.a.SAFE) {
+                    if (this.f8386p == com.budiyev.android.codescanner.a.SAFE) {
                         X();
                     }
                 }
@@ -595,19 +595,19 @@ public final class CodeScanner {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void i0() {
-        if (this.f8006u && !this.D) {
+        if (this.f8391u && !this.D) {
             h0(true);
         }
     }
 
     private void k0(boolean z10) {
         try {
-            com.budiyev.android.codescanner.g gVar = this.f8004s;
+            com.budiyev.android.codescanner.g gVar = this.f8389s;
             if (gVar != null) {
                 Camera a10 = gVar.a();
                 a10.cancelAutoFocus();
                 Camera.Parameters parameters = a10.getParameters();
-                if (!z10 && gVar.h() && this.f8009x) {
+                if (!z10 && gVar.h() && this.f8394x) {
                     n.s(parameters, "off");
                 }
                 a10.setParameters(parameters);
@@ -616,7 +616,7 @@ public final class CodeScanner {
             }
         } catch (Exception unused) {
         }
-        this.f8007v = false;
+        this.f8392v = false;
         this.D = false;
         this.E = false;
         this.H = 0;
@@ -624,18 +624,18 @@ public final class CodeScanner {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void l0() {
-        if (this.f8006u && this.D) {
+        if (this.f8391u && this.D) {
             k0(true);
         }
     }
 
     public boolean O() {
-        return this.f8008w;
+        return this.f8393w;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean P() {
-        com.budiyev.android.codescanner.g gVar = this.f8004s;
+        com.budiyev.android.codescanner.g gVar = this.f8389s;
         if (gVar != null && !gVar.g()) {
             return false;
         }
@@ -643,12 +643,12 @@ public final class CodeScanner {
     }
 
     public boolean Q() {
-        return this.f8009x;
+        return this.f8394x;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean R() {
-        com.budiyev.android.codescanner.g gVar = this.f8004s;
+        com.budiyev.android.codescanner.g gVar = this.f8389s;
         if (gVar != null && !gVar.h()) {
             return false;
         }
@@ -661,11 +661,11 @@ public final class CodeScanner {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void T(com.budiyev.android.codescanner.l lVar) {
-        synchronized (this.f7986a) {
-            if (this.f8006u && this.D && !this.C) {
+        synchronized (this.f8371a) {
+            if (this.f8391u && this.D && !this.C) {
                 try {
                     Y(false);
-                    com.budiyev.android.codescanner.g gVar = this.f8004s;
+                    com.budiyev.android.codescanner.g gVar = this.f8389s;
                     if (this.D && gVar != null && gVar.g()) {
                         com.budiyev.android.codescanner.i d10 = gVar.d();
                         int a10 = d10.a();
@@ -682,7 +682,7 @@ public final class CodeScanner {
                         n.c(parameters, m10, a10, b10, c10);
                         n.d(parameters);
                         a11.setParameters(parameters);
-                        a11.autoFocus(this.f7993h);
+                        a11.autoFocus(this.f8378h);
                         this.C = true;
                     }
                 } catch (Exception unused) {
@@ -692,7 +692,7 @@ public final class CodeScanner {
     }
 
     public void U() {
-        if (this.f8006u) {
+        if (this.f8391u) {
             if (this.D) {
                 j0();
             }
@@ -702,17 +702,17 @@ public final class CodeScanner {
 
     public void Y(boolean z10) {
         boolean z11;
-        synchronized (this.f7986a) {
+        synchronized (this.f8371a) {
             try {
-                if (this.f8008w != z10) {
+                if (this.f8393w != z10) {
                     z11 = true;
                 } else {
                     z11 = false;
                 }
-                this.f8008w = z10;
-                this.f7989d.setAutoFocusEnabled(z10);
-                com.budiyev.android.codescanner.g gVar = this.f8004s;
-                if (this.f8006u && this.D && z11 && gVar != null && gVar.g()) {
+                this.f8393w = z10;
+                this.f8374d.setAutoFocusEnabled(z10);
+                com.budiyev.android.codescanner.g gVar = this.f8389s;
+                if (this.f8391u && this.D && z11 && gVar != null && gVar.g()) {
                     Z(z10);
                 }
             } catch (Throwable th2) {
@@ -722,11 +722,11 @@ public final class CodeScanner {
     }
 
     public void a0(int i10) {
-        synchronized (this.f7986a) {
+        synchronized (this.f8371a) {
             try {
-                if (this.f8011z != i10) {
-                    this.f8011z = i10;
-                    if (this.f8006u) {
+                if (this.f8396z != i10) {
+                    this.f8396z = i10;
+                    if (this.f8391u) {
                         boolean z10 = this.D;
                         U();
                         if (z10) {
@@ -742,10 +742,10 @@ public final class CodeScanner {
 
     public void b0(com.budiyev.android.codescanner.d dVar) {
         com.budiyev.android.codescanner.g gVar;
-        synchronized (this.f7986a) {
+        synchronized (this.f8371a) {
             try {
-                this.f8002q = dVar;
-                if (this.f8006u && (gVar = this.f8004s) != null) {
+                this.f8387q = dVar;
+                if (this.f8391u && (gVar = this.f8389s) != null) {
                     gVar.b().i(dVar);
                 }
             } catch (Throwable th2) {
@@ -755,22 +755,22 @@ public final class CodeScanner {
     }
 
     public void c0(com.budiyev.android.codescanner.h hVar) {
-        this.f8003r = hVar;
+        this.f8388r = hVar;
     }
 
     public void d0(boolean z10) {
         boolean z11;
-        synchronized (this.f7986a) {
+        synchronized (this.f8371a) {
             try {
-                if (this.f8009x != z10) {
+                if (this.f8394x != z10) {
                     z11 = true;
                 } else {
                     z11 = false;
                 }
-                this.f8009x = z10;
-                this.f7989d.setFlashEnabled(z10);
-                com.budiyev.android.codescanner.g gVar = this.f8004s;
-                if (this.f8006u && this.D && z11 && gVar != null && gVar.h()) {
+                this.f8394x = z10;
+                this.f8374d.setFlashEnabled(z10);
+                com.budiyev.android.codescanner.g gVar = this.f8389s;
+                if (this.f8391u && this.D && z11 && gVar != null && gVar.h()) {
                     e0(z10);
                 }
             } catch (Throwable th2) {
@@ -781,11 +781,11 @@ public final class CodeScanner {
 
     public void f0(List list) {
         com.budiyev.android.codescanner.g gVar;
-        synchronized (this.f7986a) {
+        synchronized (this.f8371a) {
             try {
                 Objects.requireNonNull(list);
-                this.f7999n = list;
-                if (this.f8006u && (gVar = this.f8004s) != null) {
+                this.f8384n = list;
+                if (this.f8391u && (gVar = this.f8389s) != null) {
                     gVar.b().j(list);
                 }
             } catch (Throwable th2) {
@@ -795,12 +795,12 @@ public final class CodeScanner {
     }
 
     public void g0() {
-        synchronized (this.f7986a) {
+        synchronized (this.f8371a) {
             try {
-                if (!this.f8006u && !this.f8005t) {
+                if (!this.f8391u && !this.f8390t) {
                     M();
                 } else if (!this.D) {
-                    this.f7990e.addCallback(this.f7991f);
+                    this.f8375e.addCallback(this.f8376f);
                     h0(false);
                 }
             } catch (Throwable th2) {
@@ -810,8 +810,8 @@ public final class CodeScanner {
     }
 
     public void j0() {
-        if (this.f8006u && this.D) {
-            this.f7990e.removeCallback(this.f7991f);
+        if (this.f8391u && this.D) {
+            this.f8375e.removeCallback(this.f8376f);
             k0(false);
         }
     }

@@ -87,4 +87,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isGuildEligibleForGuildProducts = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5630, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5634, 2]);

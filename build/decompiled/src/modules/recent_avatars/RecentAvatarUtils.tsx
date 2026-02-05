@@ -591,4 +591,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPendingAvatarSrc = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1417, 1454, 1443, 1234, 5724, 1304, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1417, 1454, 1443, 1234, 5728, 1304, 2]);

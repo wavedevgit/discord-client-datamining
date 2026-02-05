@@ -1,79 +1,153 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = metroImportDefault;
-    var _closure1_slot1 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot2 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function arg0() {
-        _fun45005: for (var _fun45005_ip = 0;;) switch (_fun45005_ip) {
-            case 0:
-                var0 = arg0;
-                var0 = var0.attachedGestures;
-                var6 = var0;
-                var3 = var6[Symbol.iterator];
-                var6 = var3().next;
-                var5 = 0;
-                var0 = undefined;
-                var4 = 1;
-                var2 = 2;
-            case 28:
-                var9 = var6().value;
-                var7 = var3;
-                if (!(var7 !== var0)) {
-                    _fun45005_ip = 152;
-                    continue _fun45005
-                }
-            case 39: // try_start_0
-                var10 = _closure1_slot1;
-                var7 = _closure1_slot2;
-                var8 = var7[var5];
-                var11 = var10.bind(var0)(var8);
-                var10 = var11.dropGestureHandler;
-                var8 = var9.handlerTag;
-                var8 = var10.bind(var11)(var8);
-                var8 = _closure1_slot0;
-                var10 = var7[var4];
-                var13 = var8.bind(var0)(var10);
-                var12 = var13.unregisterHandler;
-                var11 = var9.handlerTag;
-                var10 = var9.config;
-                var10 = var10.testId;
-                var10 = var12.bind(var13)(var11, var10);
-                var7 = var7[var2];
-                var7 = var8.bind(var0)(var7);
-                var8 = var7.MountRegistry;
-                var7 = var8.gestureWillUnmount;
-                var7 = var7.bind(var8)(var9);
-            case 143: // try_end0
-                _fun45005_ip = 28;
-                continue _fun45005;
-            case 145: // catch_target0
-                CatchBlockStart(arg_register = 2);
-                var3.return();
-                throw var2;
-            case 152:
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot2;
-                var1 = 3;
-                var1 = var3[var1];
-                var2 = var2.bind(var0)(var1);
-                var1 = var2.scheduleFlushOperations;
-                var1 = var1.bind(var2)();
-                return var0;
-        }
-    };
-    var1.dropHandlers = var0;
+    var4 = require;
+    var2 = exports;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var3;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var0 = true;
+    var5.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var5);
+    var0 = 0;
+    var3 = var3[var0];
     var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.useCallback;
+    var _closure1_slot3 = var3;
+    var1 = function arg0, arg1, arg2, arg3, arg4() {
+        var5 = arg0;
+        var6 = arg1;
+        var7 = arg2;
+        var8 = arg3;
+        var4 = arg4;
+        var _closure2_slot0 = var5;
+        var _closure2_slot1 = var6;
+        var _closure2_slot2 = var7;
+        var _closure2_slot3 = var8;
+        var _closure2_slot4 = var4;
+        var9 = _closure1_slot0;
+        var3 = _closure1_slot2;
+        var2 = 1;
+        var2 = var3[var2];
+        var3 = undefined;
+        var9 = var9.bind(var3)(var2);
+        var2 = var9.useForceRender;
+        var9 = var2.bind(var9)();
+        var _closure2_slot5 = var9;
+        var2 = _closure1_slot3;
+        var1 = new Array(6);
+        var1[0] = var9;
+        var1[1] = var8;
+        var1[2] = var7;
+        var1[3] = var6;
+        var1[4] = var5;
+        var1[5] = var4;
+        var0 = function(arg0) { // Environment: var0
+            _fun45004: for (var _fun45004_ip = 0;;) switch (_fun45004_ip) {
+                case 0:
+                    var2 = _closure1_slot1;
+                    var1 = _closure1_slot2;
+                    var0 = 2;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var5 = var2.bind(var0)(var1);
+                    var3 = _closure2_slot0;
+                    var2 = var3.viewRef;
+                    var2 = var5.bind(var0)(var2);
+                    var3 = var3.previousViewTag;
+                    var3 = var2 !== var3;
+                    if (var3) {
+                        _fun45004_ip = 158;
+                        continue _fun45004
+                    }
+                case 56:
+                    var6 = _closure1_slot0;
+                    var7 = _closure1_slot2;
+                    var5 = 3;
+                    var5 = var7[var5];
+                    var8 = var6.bind(var0)(var5);
+                    var7 = var8.needsToReattach;
+                    var6 = _closure2_slot1;
+                    var5 = _closure2_slot2;
+                    var5 = var7.bind(var8)(var6, var5);
+                    if (var5) {
+                        _fun45004_ip = 158;
+                        continue _fun45004
+                    }
+                case 99:
+                    var5 = arg0;
+                    if (var5) {
+                        _fun45004_ip = 317;
+                        continue _fun45004
+                    }
+                case 108:
+                    var6 = _closure1_slot0;
+                    var7 = _closure1_slot2;
+                    var5 = 6;
+                    var5 = var7[var5];
+                    var9 = var6.bind(var0)(var5);
+                    var8 = var9.updateHandlers;
+                    var7 = _closure2_slot1;
+                    var6 = _closure2_slot3;
+                    var5 = _closure2_slot2;
+                    var5 = var8.bind(var9)(var7, var6, var5);
+                    _fun45004_ip = 317;
+                    continue _fun45004;
+                case 158:
+                    var5 = _closure1_slot0;
+                    var6 = _closure1_slot2;
+                    var4 = 1;
+                    var4 = var6[var4];
+                    var8 = var5.bind(var0)(var4);
+                    var7 = var8.validateDetectorChildren;
+                    var4 = _closure2_slot0;
+                    var4 = var4.viewRef;
+                    var4 = var7.bind(var8)(var4);
+                    var4 = 4;
+                    var4 = var6[var4];
+                    var8 = var5.bind(var0)(var4);
+                    var4 = var8.dropHandlers;
+                    var7 = _closure2_slot1;
+                    var4 = var4.bind(var8)(var7);
+                    var4 = 5;
+                    var4 = var6[var4];
+                    var6 = var5.bind(var0)(var4);
+                    var5 = var6.attachHandlers;
+                    var4 = {};
+                    var4.preparedGesture = var7;
+                    var7 = _closure2_slot3;
+                    var4.gestureConfig = var7;
+                    var7 = _closure2_slot2;
+                    var4.gesturesToAttach = var7;
+                    var7 = _closure2_slot4;
+                    var4.webEventHandlersRef = var7;
+                    var4.viewTag = var2;
+                    var4 = var5.bind(var6)(var4);
+                    if (!var3) {
+                        _fun45004_ip = 317;
+                        continue _fun45004
+                    }
+                case 291:
+                    var3 = _closure2_slot0;
+                    var3.previousViewTag = var2;
+                    var2 = true;
+                    var3.forceRebuildReanimatedEvent = var2;
+                    var1 = _closure2_slot5;
+                    var1 = var1.bind(var0)();
+                case 317:
+                    return var0;
+            }
+        };
+        var0 = var2.bind(var3)(var0, var1);
+        return var0;
+    };
+    var2.useDetectorUpdater = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4970, 4964, 4986, 4984]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5000, 4989, 5005, 5006, 5007, 5008]);

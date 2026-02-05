@@ -1,43 +1,35 @@
 package zq;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.List;
-import kotlin.Result;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.Regex;
-import kotlin.text.StringsKt;
-import sv.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface b {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        private static String a(b bVar, String str, String str2, Function2 function2) {
-            Double p10;
-            if (!new Regex("%[\\d|.]*[f]").i(str) || (p10 = StringsKt.p(str2)) == null) {
-                return null;
-            }
-            return (String) function2.invoke(str, Double.valueOf(p10.doubleValue()));
+public abstract class b {
+    private static int a(int i10) {
+        if (i10 < 3) {
+            return i10 + 1;
         }
-
-        public static String b(b bVar, Object obj, Object obj2, Function2 formatFloatingPoint) {
-            Object b10;
-            Intrinsics.checkNotNullParameter(formatFloatingPoint, "formatFloatingPoint");
-            List c10 = sv.a.c(obj);
-            String valueOf = String.valueOf(CollectionsKt.firstOrNull(c10));
-            String valueOf2 = String.valueOf(c.b(c10));
-            try {
-                Result.a aVar = Result.f32461e;
-                b10 = Result.b(a(bVar, valueOf, valueOf2, formatFloatingPoint));
-            } catch (Throwable th2) {
-                Result.a aVar2 = Result.f32461e;
-                b10 = Result.b(kotlin.c.a(th2));
-            }
-            if (Result.e(b10) == null) {
-                return (String) b10;
-            }
-            return null;
+        if (i10 < 1073741824) {
+            return (int) ((i10 / 0.75f) + 1.0f);
         }
+        return Integer.MAX_VALUE;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static HashSet b(int i10) {
+        return new HashSet(a(i10));
+    }
+
+    public static LinkedHashMap c(int i10) {
+        return new LinkedHashMap(a(i10));
+    }
+
+    public static List d(int i10) {
+        if (i10 == 0) {
+            return Collections.EMPTY_LIST;
+        }
+        return new ArrayList(i10);
     }
 }

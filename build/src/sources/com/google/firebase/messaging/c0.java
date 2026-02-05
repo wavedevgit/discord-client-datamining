@@ -14,25 +14,25 @@ import java.util.concurrent.ExecutionException;
 public class c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ni.e f16057a;
+    private final qi.e f16451a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h0 f16058b;
+    private final h0 f16452b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Rpc f16059c;
+    private final Rpc f16453c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final bj.b f16060d;
+    private final ej.b f16454d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final bj.b f16061e;
+    private final ej.b f16455e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final cj.e f16062f;
+    private final fj.e f16456f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public c0(ni.e eVar, h0 h0Var, bj.b bVar, bj.b bVar2, cj.e eVar2) {
+    public c0(qi.e eVar, h0 h0Var, ej.b bVar, ej.b bVar2, fj.e eVar2) {
         this(eVar, h0Var, new Rpc(eVar.j()), bVar, bVar2, eVar2);
     }
 
@@ -46,8 +46,8 @@ public class c0 {
     }
 
     private Task c(Task task) {
-        return task.h(new g2.i(), new wg.c() { // from class: com.google.firebase.messaging.b0
-            @Override // wg.c
+        return task.h(new g2.i(), new xg.c() { // from class: com.google.firebase.messaging.b0
+            @Override // xg.c
             public final Object a(Task task2) {
                 return c0.a(c0.this, task2);
             }
@@ -56,7 +56,7 @@ public class c0 {
 
     private String d() {
         try {
-            return b(MessageDigest.getInstance("SHA-1").digest(this.f16057a.l().getBytes()));
+            return b(MessageDigest.getInstance("SHA-1").digest(this.f16451a.l().getBytes()));
         } catch (NoSuchAlgorithmException unused) {
             return "[HASH-ERROR]";
         }
@@ -109,12 +109,12 @@ public class c0 {
             r5.putString(r4, r3)
             java.lang.String r4 = "subtype"
             r5.putString(r4, r3)
-            ni.e r3 = r2.f16057a
-            ni.k r3 = r3.m()
+            qi.e r3 = r2.f16451a
+            qi.k r3 = r3.m()
             java.lang.String r3 = r3.c()
             java.lang.String r4 = "gmp_app_id"
             r5.putString(r4, r3)
-            com.google.firebase.messaging.h0 r3 = r2.f16058b
+            com.google.firebase.messaging.h0 r3 = r2.f16452b
             int r3 = r3.d()
             java.lang.String r3 = java.lang.Integer.toString(r3)
             java.lang.String r4 = "gmsv"
@@ -123,21 +123,21 @@ public class c0 {
             java.lang.String r3 = java.lang.Integer.toString(r3)
             java.lang.String r4 = "osv"
             r5.putString(r4, r3)
-            com.google.firebase.messaging.h0 r3 = r2.f16058b
+            com.google.firebase.messaging.h0 r3 = r2.f16452b
             java.lang.String r3 = r3.a()
             java.lang.String r4 = "app_ver"
             r5.putString(r4, r3)
-            com.google.firebase.messaging.h0 r3 = r2.f16058b
+            com.google.firebase.messaging.h0 r3 = r2.f16452b
             java.lang.String r3 = r3.b()
             java.lang.String r4 = "app_ver_name"
             r5.putString(r4, r3)
             java.lang.String r3 = "firebase-app-name-hash"
             java.lang.String r4 = r2.d()
             r5.putString(r3, r4)
-            cj.e r3 = r2.f16062f     // Catch: java.lang.InterruptedException -> L76 java.util.concurrent.ExecutionException -> L78
+            fj.e r3 = r2.f16456f     // Catch: java.lang.InterruptedException -> L76 java.util.concurrent.ExecutionException -> L78
             r4 = 0
             com.google.android.gms.tasks.Task r3 = r3.a(r4)     // Catch: java.lang.InterruptedException -> L76 java.util.concurrent.ExecutionException -> L78
-            java.lang.Object r3 = wg.m.a(r3)     // Catch: java.lang.InterruptedException -> L76 java.util.concurrent.ExecutionException -> L78
+            java.lang.Object r3 = xg.m.a(r3)     // Catch: java.lang.InterruptedException -> L76 java.util.concurrent.ExecutionException -> L78
             com.google.firebase.installations.g r3 = (com.google.firebase.installations.g) r3     // Catch: java.lang.InterruptedException -> L76 java.util.concurrent.ExecutionException -> L78
             java.lang.String r3 = r3.b()     // Catch: java.lang.InterruptedException -> L76 java.util.concurrent.ExecutionException -> L78
             boolean r4 = android.text.TextUtils.isEmpty(r3)     // Catch: java.lang.InterruptedException -> L76 java.util.concurrent.ExecutionException -> L78
@@ -159,9 +159,9 @@ public class c0 {
             java.lang.String r4 = "Failed to get FIS auth token"
             android.util.Log.e(r0, r4, r3)
         L85:
-            cj.e r3 = r2.f16062f
+            fj.e r3 = r2.f16456f
             com.google.android.gms.tasks.Task r3 = r3.getId()
-            java.lang.Object r3 = wg.m.a(r3)
+            java.lang.Object r3 = xg.m.a(r3)
             java.lang.String r3 = (java.lang.String) r3
             java.lang.String r4 = "appid"
             r5.putString(r4, r3)
@@ -174,17 +174,17 @@ public class c0 {
             java.lang.String r3 = r3.toString()
             java.lang.String r4 = "cliv"
             r5.putString(r4, r3)
-            bj.b r3 = r2.f16061e
+            ej.b r3 = r2.f16455e
             java.lang.Object r3 = r3.get()
-            zi.j r3 = (zi.j) r3
-            bj.b r4 = r2.f16060d
+            cj.j r3 = (cj.j) r3
+            ej.b r4 = r2.f16454d
             java.lang.Object r4 = r4.get()
-            jj.i r4 = (jj.i) r4
+            mj.i r4 = (mj.i) r4
             if (r3 == 0) goto Le2
             if (r4 == 0) goto Le2
             java.lang.String r0 = "fire-iid"
-            zi.j$a r3 = r3.b(r0)
-            zi.j$a r0 = zi.j.a.NONE
+            cj.j$a r3 = r3.b(r0)
+            cj.j$a r0 = cj.j.a.NONE
             if (r3 == r0) goto Le2
             int r3 = r3.d()
             java.lang.String r3 = java.lang.Integer.toString(r3)
@@ -202,25 +202,25 @@ public class c0 {
     private Task k(String str, String str2, Bundle bundle) {
         try {
             i(str, str2, bundle);
-            return this.f16059c.c(bundle);
+            return this.f16453c.c(bundle);
         } catch (InterruptedException | ExecutionException e10) {
-            return wg.m.e(e10);
+            return xg.m.e(e10);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Task e() {
-        return this.f16059c.a();
+        return this.f16453c.a();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Task f() {
-        return c(k(h0.c(this.f16057a), "*", new Bundle()));
+        return c(k(h0.c(this.f16451a), "*", new Bundle()));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Task j(boolean z10) {
-        return this.f16059c.d(z10);
+        return this.f16453c.d(z10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -238,12 +238,12 @@ public class c0 {
         return c(k(str, "/topics/" + str2, bundle));
     }
 
-    c0(ni.e eVar, h0 h0Var, Rpc rpc, bj.b bVar, bj.b bVar2, cj.e eVar2) {
-        this.f16057a = eVar;
-        this.f16058b = h0Var;
-        this.f16059c = rpc;
-        this.f16060d = bVar;
-        this.f16061e = bVar2;
-        this.f16062f = eVar2;
+    c0(qi.e eVar, h0 h0Var, Rpc rpc, ej.b bVar, ej.b bVar2, fj.e eVar2) {
+        this.f16451a = eVar;
+        this.f16452b = h0Var;
+        this.f16453c = rpc;
+        this.f16454d = bVar;
+        this.f16455e = bVar2;
+        this.f16456f = eVar2;
     }
 }

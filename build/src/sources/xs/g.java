@@ -1,30 +1,41 @@
 package xs;
 
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g implements e {
+public final class g {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Function1 f53553a;
+    /* renamed from: d  reason: collision with root package name */
+    public static final g f54114d = new g("AM", 0);
 
-    /* renamed from: b  reason: collision with root package name */
-    private final int f53554b;
+    /* renamed from: e  reason: collision with root package name */
+    public static final g f54115e = new g("PM", 1);
 
-    /* renamed from: c  reason: collision with root package name */
-    private final Integer f53555c;
+    /* renamed from: i  reason: collision with root package name */
+    private static final /* synthetic */ g[] f54116i;
 
-    public g(Function1 number, int i10, Integer num) {
-        Intrinsics.checkNotNullParameter(number, "number");
-        this.f53553a = number;
-        this.f53554b = i10;
-        this.f53555c = num;
-        if (i10 >= 0) {
-            if (i10 <= 9) {
-                return;
-            }
-            throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") exceeds the length of an Int").toString());
-        }
-        throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") is negative").toString());
+    /* renamed from: o  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f54117o;
+
+    static {
+        g[] a10 = a();
+        f54116i = a10;
+        f54117o = vr.a.a(a10);
+    }
+
+    private g(String str, int i10) {
+    }
+
+    private static final /* synthetic */ g[] a() {
+        return new g[]{f54114d, f54115e};
+    }
+
+    public static g valueOf(String str) {
+        return (g) Enum.valueOf(g.class, str);
+    }
+
+    public static g[] values() {
+        return (g[]) f54116i.clone();
     }
 }

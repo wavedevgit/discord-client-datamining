@@ -3,14 +3,14 @@ package com.google.android.play.core.assetpacks;
 public final class k1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private m4 f15452a;
+    private m4 f15846a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ k1(sh.c cVar) {
+    public /* synthetic */ k1(vh.c cVar) {
     }
 
     public final e a() {
-        m4 m4Var = this.f15452a;
+        m4 m4Var = this.f15846a;
         if (m4Var != null) {
             return new j1(m4Var, null);
         }
@@ -18,7 +18,7 @@ public final class k1 {
     }
 
     public final k1 b(m4 m4Var) {
-        this.f15452a = m4Var;
+        this.f15846a = m4Var;
         return this;
     }
 }

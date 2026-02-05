@@ -9,10 +9,10 @@ public class c implements Parcelable {
     public static final Parcelable.Creator<c> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    final List f4201d;
+    final List f4313d;
 
     /* renamed from: e  reason: collision with root package name */
-    final List f4202e;
+    final List f4314e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Parcelable.Creator {
@@ -33,8 +33,8 @@ public class c implements Parcelable {
     }
 
     c(Parcel parcel) {
-        this.f4201d = parcel.createStringArrayList();
-        this.f4202e = parcel.createTypedArrayList(b.CREATOR);
+        this.f4313d = parcel.createStringArrayList();
+        this.f4314e = parcel.createTypedArrayList(b.CREATOR);
     }
 
     @Override // android.os.Parcelable
@@ -44,7 +44,7 @@ public class c implements Parcelable {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeStringList(this.f4201d);
-        parcel.writeTypedList(this.f4202e);
+        parcel.writeStringList(this.f4313d);
+        parcel.writeTypedList(this.f4314e);
     }
 }

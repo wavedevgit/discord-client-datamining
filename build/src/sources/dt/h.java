@@ -1,42 +1,31 @@
 package dt;
 
-import ct.e;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
+import kotlin.jvm.internal.Reflection;
+import kotlinx.serialization.DeserializationStrategy;
 import kotlinx.serialization.encoding.Encoder;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class h implements KSerializer {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final h f20942a = new h();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f20943b = new g2("kotlin.Boolean", e.a.f19834a);
-
-    private h() {
-    }
-
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public Boolean deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return Boolean.valueOf(decoder.w());
-    }
-
-    public void b(Encoder encoder, boolean z10) {
+public abstract class h {
+    public static final o a(gt.b bVar, Encoder encoder, Object value) {
+        Intrinsics.checkNotNullParameter(bVar, "<this>");
         Intrinsics.checkNotNullParameter(encoder, "encoder");
-        encoder.q(z10);
+        Intrinsics.checkNotNullParameter(value, "value");
+        o c10 = bVar.c(encoder, value);
+        if (c10 != null) {
+            return c10;
+        }
+        gt.c.b(Reflection.getOrCreateKotlinClass(value.getClass()), bVar.e());
+        throw new or.h();
     }
 
-    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f20943b;
-    }
-
-    @Override // at.o
-    public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
-        b(encoder, ((Boolean) obj).booleanValue());
+    public static final DeserializationStrategy b(gt.b bVar, kotlinx.serialization.encoding.c decoder, String str) {
+        Intrinsics.checkNotNullParameter(bVar, "<this>");
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        DeserializationStrategy d10 = bVar.d(decoder, str);
+        if (d10 != null) {
+            return d10;
+        }
+        gt.c.a(str, bVar.e());
+        throw new or.h();
     }
 }

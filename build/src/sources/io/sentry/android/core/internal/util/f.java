@@ -5,13 +5,13 @@ import android.os.SystemClock;
 public final class f implements io.sentry.transport.p {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final io.sentry.transport.p f28986a = new f();
+    private static final io.sentry.transport.p f28044a = new f();
 
     private f() {
     }
 
     public static io.sentry.transport.p b() {
-        return f28986a;
+        return f28044a;
     }
 
     @Override // io.sentry.transport.p

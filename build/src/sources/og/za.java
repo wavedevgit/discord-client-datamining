@@ -3,16 +3,16 @@ package og;
 public final class za {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ca f43760a;
+    private final ca f43666a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ za(xa xaVar, ya yaVar) {
         ca caVar;
-        caVar = xaVar.f43686a;
-        this.f43760a = caVar;
+        caVar = xaVar.f43592a;
+        this.f43666a = caVar;
     }
 
     public final ca a() {
-        return this.f43760a;
+        return this.f43666a;
     }
 }

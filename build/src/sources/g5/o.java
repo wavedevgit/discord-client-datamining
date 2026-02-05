@@ -5,9 +5,9 @@ import androidx.lifecycle.DefaultLifecycleObserver;
 public interface o extends DefaultLifecycleObserver {
     void start();
 
-    default void B() {
+    default void o() {
     }
 
-    default void n() {
+    default void y() {
     }
 }

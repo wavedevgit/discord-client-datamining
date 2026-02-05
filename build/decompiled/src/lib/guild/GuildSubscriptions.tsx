@@ -806,4 +806,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.DEFAULT_RANGES;
     var2.DEFAULT_RANGES = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 660, 5674, 5675, 5676, 3630, 22, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 660, 5678, 5679, 5680, 3630, 22, 2]);

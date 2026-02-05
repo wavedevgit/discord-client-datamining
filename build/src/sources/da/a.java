@@ -3,17 +3,17 @@ package da;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final String[] f20148a = {"best fit", "lookup"};
+    public static final String[] f20364a = {"best fit", "lookup"};
 
     /* renamed from: b  reason: collision with root package name */
-    public static final String[] f20149b = {"search", "standard", "invalid"};
+    public static final String[] f20365b = {"search", "standard", "invalid"};
 
     /* renamed from: c  reason: collision with root package name */
-    public static final String[] f20150c = {"base", "accent", "case", "variant"};
+    public static final String[] f20366c = {"base", "accent", "case", "variant"};
 
     /* renamed from: d  reason: collision with root package name */
-    public static final String[] f20151d = {"upper", "lower", "false"};
+    public static final String[] f20367d = {"upper", "lower", "false"};
 
     /* renamed from: e  reason: collision with root package name */
-    public static final String[] f20152e = {"sort", "search"};
+    public static final String[] f20368e = {"sort", "search"};
 }

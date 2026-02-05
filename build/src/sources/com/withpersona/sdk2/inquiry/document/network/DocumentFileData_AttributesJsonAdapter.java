@@ -16,39 +16,39 @@ import org.jetbrains.annotations.NotNull;
 public final class DocumentFileData_AttributesJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18110a;
+    private final m.b f18516a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18111b;
+    private final h f18517b;
 
     public DocumentFileData_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("originals");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18110a = a10;
+        this.f18516a = a10;
         h f10 = moshi.f(a0.j(List.class, DocumentFileData.RemoteDocumentFile.class), x0.d(), "originals");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18111b = f10;
+        this.f18517b = f10;
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: a */
     public DocumentFileData.Attributes fromJson(m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         List list = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f18110a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    list = (List) this.f18111b.fromJson(reader);
+            int W = reader.W(this.f18516a);
+            if (W != -1) {
+                if (W == 0) {
+                    list = (List) this.f18517b.fromJson(reader);
                 }
             } else {
                 reader.E0();
                 reader.P();
             }
         }
-        reader.y();
+        reader.z();
         return new DocumentFileData.Attributes(list);
     }
 
@@ -57,9 +57,9 @@ public final class DocumentFileData_AttributesJsonAdapter extends h {
     public void toJson(t writer, DocumentFileData.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.l();
-            writer.A0("originals");
-            this.f18111b.toJson(writer, attributes.a());
+            writer.k();
+            writer.W("originals");
+            this.f18517b.toJson(writer, attributes.a());
             writer.E();
             return;
         }

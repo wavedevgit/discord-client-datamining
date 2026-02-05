@@ -15,15 +15,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
     var3 = function arg0() {
-        _fun38091: for (var _fun38091_ip = 0;;) switch (_fun38091_ip) {
+        _fun38090: for (var _fun38090_ip = 0;;) switch (_fun38090_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2;
                 var5 = undefined;
                 var1 = undefined;
                 if (var2) {
-                    _fun38091_ip = 17;
-                    continue _fun38091
+                    _fun38090_ip = 17;
+                    continue _fun38090
                 }
             case 13:
                 var2 = false;
@@ -39,8 +39,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2;
                 var0 = var2;
                 if (!var2) {
-                    _fun38091_ip = 97;
-                    continue _fun38091
+                    _fun38090_ip = 97;
+                    continue _fun38090
                 }
             case 60:
                 var3 = ['heic', 'heix', 'hevc', 'hevx', 'heim', 'heis', 'hevm', 'hevs', 'mif1'];

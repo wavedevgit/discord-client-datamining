@@ -1,23 +1,31 @@
 package yo;
 
-import wq.h;
-import yo.e;
+import ov.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g implements e.a {
+public final class g implements zq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f55154a;
+    private final com.withpersona.sdk2.inquiry.internal.network.f f54889a;
 
-    g(f fVar) {
-        this.f55154a = fVar;
+    /* renamed from: b  reason: collision with root package name */
+    private final zq.h f54890b;
+
+    public g(com.withpersona.sdk2.inquiry.internal.network.f fVar, zq.h hVar) {
+        this.f54889a = fVar;
+        this.f54890b = hVar;
     }
 
-    public static h b(f fVar) {
-        return wq.e.a(new g(fVar));
+    public static g a(com.withpersona.sdk2.inquiry.internal.network.f fVar, zq.h hVar) {
+        return new g(fVar, hVar);
     }
 
-    @Override // yo.e.a
-    public e a(String str) {
-        return this.f55154a.b(str);
+    public static com.withpersona.sdk2.inquiry.governmentid.network.a c(com.withpersona.sdk2.inquiry.internal.network.f fVar, a0 a0Var) {
+        return (com.withpersona.sdk2.inquiry.governmentid.network.a) zq.g.d(fVar.c(a0Var));
+    }
+
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public com.withpersona.sdk2.inquiry.governmentid.network.a get() {
+        return c(this.f54889a, (a0) this.f54890b.get());
     }
 }

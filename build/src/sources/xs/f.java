@@ -1,24 +1,31 @@
 package xs;
 
-import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
+import xs.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class f implements e {
+public interface f extends o.c {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final e f53550a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static void a(f fVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            fVar.q(new zs.e(new u(padding)));
+        }
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Function1 f53551b;
+        public static void b(f fVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            fVar.q(new zs.e(new c0(padding)));
+        }
 
-    /* renamed from: c  reason: collision with root package name */
-    private final boolean f53552c;
+        public static void c(f fVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            fVar.q(new zs.e(new i0(padding)));
+        }
 
-    public f(e formatter, Function1 allSubFormatsNegative, boolean z10) {
-        Intrinsics.checkNotNullParameter(formatter, "formatter");
-        Intrinsics.checkNotNullParameter(allSubFormatsNegative, "allSubFormatsNegative");
-        this.f53550a = formatter;
-        this.f53551b = allSubFormatsNegative;
-        this.f53552c = z10;
+        public static void d(f fVar, int i10, int i11) {
+            fVar.q(new zs.e(new t(i10, i11, null, 4, null)));
+        }
     }
+
+    void q(zs.o oVar);
 }

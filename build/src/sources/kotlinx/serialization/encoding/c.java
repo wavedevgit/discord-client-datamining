@@ -38,7 +38,7 @@ public interface c {
 
     double F(SerialDescriptor serialDescriptor, int i10);
 
-    gt.b a();
+    kt.b a();
 
     void c(SerialDescriptor serialDescriptor);
 

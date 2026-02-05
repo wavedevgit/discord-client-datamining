@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CoinSlotSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6062, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6066, 2]);

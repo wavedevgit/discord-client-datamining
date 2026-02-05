@@ -41,24 +41,24 @@ public final class AttributeStyles_InputRadioGroupFontWeightStyleJsonAdapter ext
     @NotNull
     public AttributeStyles.InputRadioGroupFontWeightStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.FontWeightContainer fontWeightContainer = null;
         StyleElements.FontWeightContainer fontWeightContainer2 = null;
         StyleElements.FontWeightContainer fontWeightContainer3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 fontWeightContainer = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (W == 1) {
                 fontWeightContainer2 = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (W == 2) {
                 fontWeightContainer3 = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.InputRadioGroupFontWeightStyle(fontWeightContainer, fontWeightContainer2, fontWeightContainer3);
     }
 
@@ -66,12 +66,12 @@ public final class AttributeStyles_InputRadioGroupFontWeightStyleJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.InputRadioGroupFontWeightStyle inputRadioGroupFontWeightStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputRadioGroupFontWeightStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableFontWeightContainerAdapter.toJson(writer, inputRadioGroupFontWeightStyle.getBase());
-            writer.A0("description");
+            writer.W("description");
             this.nullableFontWeightContainerAdapter.toJson(writer, inputRadioGroupFontWeightStyle.getDescription());
-            writer.A0("error");
+            writer.W("error");
             this.nullableFontWeightContainerAdapter.toJson(writer, inputRadioGroupFontWeightStyle.getError());
             writer.E();
             return;

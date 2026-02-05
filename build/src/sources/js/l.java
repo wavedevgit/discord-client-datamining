@@ -1,34 +1,49 @@
 package js;
 
-import kotlin.coroutines.Continuation;
-import kotlinx.coroutines.CancellableContinuation;
+import java.lang.reflect.Member;
+import java.lang.reflect.Type;
+import java.util.List;
+import js.h;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class l {
-    public static final void a(CancellableContinuation cancellableContinuation, n0 n0Var) {
-        c(cancellableContinuation, new o0(n0Var));
+public final class l implements h {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final l f31280a = new l();
+
+    private l() {
     }
 
-    public static final kotlinx.coroutines.e b(Continuation continuation) {
-        if (!(continuation instanceof os.i)) {
-            return new kotlinx.coroutines.e(continuation, 1);
-        }
-        kotlinx.coroutines.e n10 = ((os.i) continuation).n();
-        if (n10 != null) {
-            if (!n10.Q()) {
-                n10 = null;
-            }
-            if (n10 != null) {
-                return n10;
-            }
-        }
-        return new kotlinx.coroutines.e(continuation, 2);
+    @Override // js.h
+    public List a() {
+        return CollectionsKt.l();
     }
 
-    public static final void c(CancellableContinuation cancellableContinuation, kotlinx.coroutines.d dVar) {
-        if (cancellableContinuation instanceof kotlinx.coroutines.e) {
-            ((kotlinx.coroutines.e) cancellableContinuation).K(dVar);
-            return;
-        }
-        throw new UnsupportedOperationException("third-party implementation of CancellableContinuation is not supported");
+    @Override // js.h
+    public /* bridge */ /* synthetic */ Member b() {
+        return (Member) d();
+    }
+
+    @Override // js.h
+    public boolean c() {
+        return h.a.b(this);
+    }
+
+    @Override // js.h
+    public Object call(Object[] args) {
+        Intrinsics.checkNotNullParameter(args, "args");
+        throw new UnsupportedOperationException("call/callBy are not supported for this declaration.");
+    }
+
+    public Void d() {
+        return null;
+    }
+
+    @Override // js.h
+    public Type getReturnType() {
+        Class TYPE = Void.TYPE;
+        Intrinsics.checkNotNullExpressionValue(TYPE, "TYPE");
+        return TYPE;
     }
 }

@@ -8,19 +8,19 @@ import androidx.recyclerview.widget.RecyclerView;
 abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    final int f14385a;
+    final int f14779a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a extends c {
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ CarouselLayoutManager f14386b;
+        final /* synthetic */ CarouselLayoutManager f14780b;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(int i10, CarouselLayoutManager carouselLayoutManager) {
             super(i10, null);
-            this.f14386b = carouselLayoutManager;
+            this.f14780b = carouselLayoutManager;
         }
 
         @Override // com.google.android.material.carousel.c
@@ -30,7 +30,7 @@ abstract class c {
 
         @Override // com.google.android.material.carousel.c
         int e() {
-            return this.f14386b.getHeight();
+            return this.f14780b.getHeight();
         }
 
         @Override // com.google.android.material.carousel.c
@@ -40,12 +40,12 @@ abstract class c {
 
         @Override // com.google.android.material.carousel.c
         int g() {
-            return this.f14386b.getPaddingLeft();
+            return this.f14780b.getPaddingLeft();
         }
 
         @Override // com.google.android.material.carousel.c
         int h() {
-            return this.f14386b.getWidth() - this.f14386b.getPaddingRight();
+            return this.f14780b.getWidth() - this.f14780b.getPaddingRight();
         }
 
         @Override // com.google.android.material.carousel.c
@@ -61,7 +61,7 @@ abstract class c {
         @Override // com.google.android.material.carousel.c
         public void k(View view, int i10, int i11) {
             int g10 = g();
-            this.f14386b.layoutDecoratedWithMargins(view, g10, i10, g10 + m(view), i11);
+            this.f14780b.layoutDecoratedWithMargins(view, g10, i10, g10 + m(view), i11);
         }
 
         @Override // com.google.android.material.carousel.c
@@ -71,7 +71,7 @@ abstract class c {
 
         int m(View view) {
             RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) view.getLayoutParams();
-            return this.f14386b.getDecoratedMeasuredWidth(view) + ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin + ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin;
+            return this.f14780b.getDecoratedMeasuredWidth(view) + ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin + ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin;
         }
     }
 
@@ -80,12 +80,12 @@ abstract class c {
     public class b extends c {
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ CarouselLayoutManager f14387b;
+        final /* synthetic */ CarouselLayoutManager f14781b;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(int i10, CarouselLayoutManager carouselLayoutManager) {
             super(i10, null);
-            this.f14387b = carouselLayoutManager;
+            this.f14781b = carouselLayoutManager;
         }
 
         @Override // com.google.android.material.carousel.c
@@ -95,12 +95,12 @@ abstract class c {
 
         @Override // com.google.android.material.carousel.c
         int e() {
-            return this.f14387b.getHeight() - this.f14387b.getPaddingBottom();
+            return this.f14781b.getHeight() - this.f14781b.getPaddingBottom();
         }
 
         @Override // com.google.android.material.carousel.c
         int f() {
-            if (this.f14387b.X()) {
+            if (this.f14781b.X()) {
                 return g();
             }
             return h();
@@ -113,12 +113,12 @@ abstract class c {
 
         @Override // com.google.android.material.carousel.c
         int h() {
-            return this.f14387b.getWidth();
+            return this.f14781b.getWidth();
         }
 
         @Override // com.google.android.material.carousel.c
         int i() {
-            if (this.f14387b.X()) {
+            if (this.f14781b.X()) {
                 return h();
             }
             return g();
@@ -126,13 +126,13 @@ abstract class c {
 
         @Override // com.google.android.material.carousel.c
         int j() {
-            return this.f14387b.getPaddingTop();
+            return this.f14781b.getPaddingTop();
         }
 
         @Override // com.google.android.material.carousel.c
         public void k(View view, int i10, int i11) {
             int j10 = j();
-            this.f14387b.layoutDecoratedWithMargins(view, i10, j10, i11, j10 + m(view));
+            this.f14781b.layoutDecoratedWithMargins(view, i10, j10, i11, j10 + m(view));
         }
 
         @Override // com.google.android.material.carousel.c
@@ -142,7 +142,7 @@ abstract class c {
 
         int m(View view) {
             RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) view.getLayoutParams();
-            return this.f14387b.getDecoratedMeasuredHeight(view) + ((ViewGroup.MarginLayoutParams) layoutParams).topMargin + ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin;
+            return this.f14781b.getDecoratedMeasuredHeight(view) + ((ViewGroup.MarginLayoutParams) layoutParams).topMargin + ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin;
         }
     }
 
@@ -197,6 +197,6 @@ abstract class c {
     public abstract void l(View view, Rect rect, float f10, float f11);
 
     private c(int i10) {
-        this.f14385a = i10;
+        this.f14779a = i10;
     }
 }

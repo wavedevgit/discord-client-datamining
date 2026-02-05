@@ -13,11 +13,11 @@ public class f extends g {
 
     int r(y5.a aVar, float f10) {
         float f11;
-        if (aVar.f53740b != null && aVar.f53741c != null) {
-            y5.c cVar = this.f42353e;
+        if (aVar.f54436b != null && aVar.f54437c != null) {
+            y5.c cVar = this.f42259e;
             if (cVar != null) {
                 f11 = f10;
-                Integer num = (Integer) cVar.b(aVar.f53745g, aVar.f53746h.floatValue(), (Integer) aVar.f53740b, (Integer) aVar.f53741c, f11, e(), f());
+                Integer num = (Integer) cVar.b(aVar.f54441g, aVar.f54442h.floatValue(), (Integer) aVar.f54436b, (Integer) aVar.f54437c, f11, e(), f());
                 if (num != null) {
                     return num.intValue();
                 }

@@ -7,22 +7,22 @@ import android.os.Process;
 public final class j implements io.sentry.util.thread.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final j f28988a = new j();
+    private static final j f28046a = new j();
 
     /* renamed from: b  reason: collision with root package name */
-    public static volatile long f28989b = Process.myTid();
+    public static volatile long f28047b = Process.myTid();
 
     private j() {
         new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: io.sentry.android.core.internal.util.i
             @Override // java.lang.Runnable
             public final void run() {
-                j.f28989b = Process.myTid();
+                j.f28047b = Process.myTid();
             }
         });
     }
 
     public static j e() {
-        return f28988a;
+        return f28046a;
     }
 
     @Override // io.sentry.util.thread.a

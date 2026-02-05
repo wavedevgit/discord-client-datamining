@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.isRAR = var3;
     var1 = function arg0, arg1() {
-        _fun37897: for (var _fun37897_ip = 0;;) switch (_fun37897_ip) {
+        _fun37896: for (var _fun37896_ip = 0;;) switch (_fun37896_ip) {
             case 0:
                 var1 = arg1;
                 var4 = _closure1_slot0;
@@ -93,15 +93,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var3 == var1;
                 var3 = undefined;
                 if (var5) {
-                    _fun37897_ip = 50;
-                    continue _fun37897
+                    _fun37896_ip = 50;
+                    continue _fun37896
                 }
             case 44:
                 var3 = var1.chunkSize;
             case 50:
                 if (var3) {
-                    _fun37897_ip = 56;
-                    continue _fun37897
+                    _fun37896_ip = 56;
+                    continue _fun37896
                 }
             case 53:
                 var3 = 64;

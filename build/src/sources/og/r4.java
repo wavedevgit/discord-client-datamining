@@ -1,43 +1,43 @@
 package og;
 
-import ui.c;
+import xi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class r4 implements ui.d {
+final class r4 implements xi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r4 f43418a = new r4();
+    static final r4 f43324a = new r4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43419b;
+    private static final xi.c f43325b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43420c;
+    private static final xi.c f43326c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43421d;
+    private static final xi.c f43327d;
 
     static {
-        c.b a10 = ui.c.a("inferenceCommonLogEvent");
+        c.b a10 = xi.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43419b = a10.b(s1Var.b()).a();
-        c.b a11 = ui.c.a("options");
+        f43325b = a10.b(s1Var.b()).a();
+        c.b a11 = xi.c.a("options");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43420c = a11.b(s1Var2.b()).a();
-        c.b a12 = ui.c.a("imageInfo");
+        f43326c = a11.b(s1Var2.b()).a();
+        c.b a12 = xi.c.a("imageInfo");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43421d = a12.b(s1Var3.b()).a();
+        f43327d = a12.b(s1Var3.b()).a();
     }
 
     private r4() {
     }
 
-    @Override // ui.d
+    @Override // xi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        ui.e eVar = (ui.e) obj2;
+        xi.e eVar = (xi.e) obj2;
         throw null;
     }
 }

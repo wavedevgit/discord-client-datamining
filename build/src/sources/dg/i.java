@@ -28,7 +28,7 @@ public final class i extends gf.g {
 
     @Override // gf.c, ef.a.f
     public final int n() {
-        return com.google.android.gms.common.j.f13418a;
+        return com.google.android.gms.common.j.f13813a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -46,6 +46,6 @@ public final class i extends gf.g {
 
     @Override // gf.c
     public final com.google.android.gms.common.d[] u() {
-        return c.f20591e;
+        return c.f20807e;
     }
 }

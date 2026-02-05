@@ -19,39 +19,39 @@ import kotlin.jvm.internal.Intrinsics;
 public class ComponentDialog extends Dialog implements LifecycleOwner, z, u3.f {
 
     /* renamed from: d  reason: collision with root package name */
-    private LifecycleRegistry f804d;
+    private LifecycleRegistry f916d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final SavedStateRegistryController f805e;
+    private final SavedStateRegistryController f917e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final OnBackPressedDispatcher f806i;
+    private final OnBackPressedDispatcher f918i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ComponentDialog(Context context, int i10) {
         super(context, i10);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f805e = SavedStateRegistryController.f5060c.b(this);
-        this.f806i = new OnBackPressedDispatcher(new Runnable() { // from class: androidx.activity.m
+        this.f917e = SavedStateRegistryController.f5172c.b(this);
+        this.f918i = new OnBackPressedDispatcher(new Runnable() { // from class: androidx.activity.m
             @Override // java.lang.Runnable
             public final void run() {
-                ComponentDialog.d(ComponentDialog.this);
+                ComponentDialog.e(ComponentDialog.this);
             }
         });
     }
 
     private final LifecycleRegistry b() {
-        LifecycleRegistry lifecycleRegistry = this.f804d;
+        LifecycleRegistry lifecycleRegistry = this.f916d;
         if (lifecycleRegistry == null) {
             LifecycleRegistry lifecycleRegistry2 = new LifecycleRegistry(this);
-            this.f804d = lifecycleRegistry2;
+            this.f916d = lifecycleRegistry2;
             return lifecycleRegistry2;
         }
         return lifecycleRegistry;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final void d(ComponentDialog componentDialog) {
+    public static final void e(ComponentDialog componentDialog) {
         super.onBackPressed();
     }
 
@@ -87,17 +87,17 @@ public class ComponentDialog extends Dialog implements LifecycleOwner, z, u3.f {
 
     @Override // androidx.activity.z
     public final OnBackPressedDispatcher getOnBackPressedDispatcher() {
-        return this.f806i;
+        return this.f918i;
     }
 
     @Override // u3.f
     public SavedStateRegistry getSavedStateRegistry() {
-        return this.f805e.b();
+        return this.f917e.b();
     }
 
     @Override // android.app.Dialog
     public void onBackPressed() {
-        this.f806i.l();
+        this.f918i.l();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -105,12 +105,12 @@ public class ComponentDialog extends Dialog implements LifecycleOwner, z, u3.f {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if (Build.VERSION.SDK_INT >= 33) {
-            OnBackPressedDispatcher onBackPressedDispatcher = this.f806i;
+            OnBackPressedDispatcher onBackPressedDispatcher = this.f918i;
             OnBackInvokedDispatcher onBackInvokedDispatcher = getOnBackInvokedDispatcher();
             Intrinsics.checkNotNullExpressionValue(onBackInvokedDispatcher, "onBackInvokedDispatcher");
             onBackPressedDispatcher.o(onBackInvokedDispatcher);
         }
-        this.f805e.d(bundle);
+        this.f917e.d(bundle);
         b().j(Lifecycle.a.ON_CREATE);
     }
 
@@ -118,7 +118,7 @@ public class ComponentDialog extends Dialog implements LifecycleOwner, z, u3.f {
     public Bundle onSaveInstanceState() {
         Bundle onSaveInstanceState = super.onSaveInstanceState();
         Intrinsics.checkNotNullExpressionValue(onSaveInstanceState, "super.onSaveInstanceState()");
-        this.f805e.e(onSaveInstanceState);
+        this.f917e.e(onSaveInstanceState);
         return onSaveInstanceState;
     }
 
@@ -133,7 +133,7 @@ public class ComponentDialog extends Dialog implements LifecycleOwner, z, u3.f {
     @Override // android.app.Dialog
     public void onStop() {
         b().j(Lifecycle.a.ON_DESTROY);
-        this.f804d = null;
+        this.f916d = null;
         super.onStop();
     }
 

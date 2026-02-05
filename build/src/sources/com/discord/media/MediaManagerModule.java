@@ -28,8 +28,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.CancellationException;
-import js.g;
-import js.m0;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -44,7 +42,9 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.i;
-import lr.v;
+import ms.g;
+import ms.m0;
+import or.v;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000\u008e\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010$\n\u0002\u0010 \n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u000f\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0006\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0012\n\u0002\b\u0002\u0018\u0000 G2\u00020\u0001:\u0001GB\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\b\u0010\f\u001a\u00020\rH\u0016J\u001a\u0010\u000e\u001a\u0014\u0012\u0004\u0012\u00020\r\u0012\n\u0012\b\u0012\u0004\u0012\u00020\r0\u00100\u000fH\u0016J\b\u0010\u0011\u001a\u00020\u0012H\u0016J\u0018\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\"\u0010\u0017\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\r2\b\u0010\u0018\u001a\u0004\u0018\u00010\u00192\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\"\u0010\u001a\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\r2\b\u0010\u0018\u001a\u0004\u0018\u00010\u00192\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J \u0010\u001b\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\r2\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J*\u0010\u001e\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\r2\u0006\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001f\u001a\u0004\u0018\u00010\r2\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\"\u0010 \u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\r2\b\u0010\u0018\u001a\u0004\u0018\u00010\u00192\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\u0010\u0010!\u001a\u00020\u00122\u0006\u0010\"\u001a\u00020\rH\u0007J\u0010\u0010#\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u001dH\u0007J\"\u0010%\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\r2\b\u0010\u0018\u001a\u0004\u0018\u00010\u00192\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\"\u0010&\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\r2\b\u0010\u0018\u001a\u0004\u0018\u00010\u00192\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\"\u0010'\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\r2\b\u0010\u0018\u001a\u0004\u0018\u00010\u00192\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\"\u0010(\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\r2\b\u0010\u0018\u001a\u0004\u0018\u00010\u00192\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\"\u0010)\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\r2\b\u0010\u0018\u001a\u0004\u0018\u00010\u00192\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\u0010\u0010*\u001a\u00020\u00122\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\u0010\u0010+\u001a\u00020\u00122\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\u0012\u0010,\u001a\u0004\u0018\u00010-2\u0006\u0010.\u001a\u00020\rH\u0002J\u0010\u0010/\u001a\u0002002\u0006\u00101\u001a\u000202H\u0002J(\u00103\u001a\u0002042\u0006\u00105\u001a\u00020\u001d2\u0006\u00106\u001a\u00020\u001d2\u0006\u00107\u001a\u0002082\u0006\u00101\u001a\u000202H\u0002J\u0018\u00109\u001a\u00020\u00122\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J \u0010:\u001a\u00020\u00122\u0006\u0010;\u001a\u00020\r2\u0006\u0010<\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\u0018\u0010=\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\u0010\u0010>\u001a\u0002002\u0006\u0010\u0014\u001a\u00020\rH\u0002J\u0010\u0010?\u001a\u0002002\u0006\u0010@\u001a\u00020AH\u0002J$\u0010B\u001a\u0010\u0012\u0004\u0012\u00020\u001d\u0012\u0004\u0012\u00020\u001d\u0018\u00010C2\u0006\u0010\u0014\u001a\u00020\rH\u0082@¢\u0006\u0002\u0010DJ\u0018\u0010E\u001a\u0004\u0018\u00010F2\u0006\u0010\u0014\u001a\u00020\rH\u0082@¢\u0006\u0002\u0010DR\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006H"}, d2 = {"Lcom/discord/media/MediaManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "scope", "Lkotlinx/coroutines/CoroutineScope;", "mediaResolver", "Lcom/discord/media/utils/MediaResolver;", "getName", "", "getConstants", "", "", "invalidate", "", "getLosslessImageData", "uri", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "cancelResolveToMediaFilePath", "options", "Lcom/facebook/react/bridge/ReadableMap;", "resolveToMediaFilePath", "downloadMediaAsset", "mediaType", "", "downloadMediaAssetWithContentType", "contentType", "getVideoMetadata", "addListener", "type", "removeListeners", "count", "convertBase64ToJPEG", "convertBase64ToGIF", "convertToJPEG", "convertToCompatibleMOV", "convertToVideoFilePath", "getDeviceStateInfo", "isHEVCEncodingSupported", "getEncoderInfo", "Landroid/media/MediaCodecInfo;", "mimeType", "createCapabilitiesMap", "Lcom/facebook/react/bridge/WritableMap;", "videoCapabilities", "Landroid/media/MediaCodecInfo$VideoCapabilities;", "checkEncodingConstraints", "Lcom/facebook/react/bridge/WritableArray;", "width", "height", "frameRate", "", "isVideoEncodingSupported", "calculateImageQualityMetrics", "originalUri", "compressedUri", "getMediaOrigin", "detectMediaOrigin", "detectFileOrigin", "parsedUri", "Landroid/net/Uri;", "getImageDimensions", "Lkotlin/Pair;", "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "loadImageDataFromUri", "", "Companion", "media_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nMediaManagerModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MediaManagerModule.kt\ncom/discord/media/MediaManagerModule\n+ 2 Uri.kt\nandroidx/core/net/UriKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,749:1\n29#2:750\n29#2:751\n29#2:752\n29#2:758\n1310#3:753\n12637#3,2:754\n1311#3:756\n1#4:757\n*S KotlinDebug\n*F\n+ 1 MediaManagerModule.kt\ncom/discord/media/MediaManagerModule\n*L\n105#1:750\n115#1:751\n212#1:752\n609#1:758\n338#1:753\n339#1:754,2\n338#1:756\n*E\n"})
@@ -101,7 +101,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
                 WritableMap createMap2 = Arguments.createMap();
                 createMap2.putInt("width", i10);
                 createMap2.putInt("height", i11);
-                Unit unit = Unit.f32464a;
+                Unit unit = Unit.f31988a;
                 createMap.putMap("current", createMap2);
                 createArray.pushMap(createMap);
                 return createArray;
@@ -123,7 +123,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
         WritableMap createMap5 = Arguments.createMap();
         createMap5.putInt("width", i10);
         createMap5.putInt("height", i11);
-        Unit unit2 = Unit.f32464a;
+        Unit unit2 = Unit.f31988a;
         createMap4.putMap("current", createMap5);
         WritableMap createMap6 = Arguments.createMap();
         createMap6.putInt("width", videoCapabilities.getWidthAlignment());
@@ -330,7 +330,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
         String uri2 = uri.toString();
         Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
         reactEvents.emitModuleEvent(reactApplicationContext, new CompressionProgressEvent(uri2, i10));
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     @ReactMethod
@@ -343,7 +343,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
         Intrinsics.checkNotNullParameter(originalUri, "originalUri");
         Intrinsics.checkNotNullParameter(compressedUri, "compressedUri");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        js.i.d(this.scope, null, null, new MediaManagerModule$calculateImageQualityMetrics$1(this, originalUri, compressedUri, promise, null), 3, null);
+        ms.i.d(this.scope, null, null, new MediaManagerModule$calculateImageQualityMetrics$1(this, originalUri, compressedUri, promise, null), 3, null);
     }
 
     @ReactMethod
@@ -400,7 +400,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
     public final void downloadMediaAssetWithContentType(@NotNull String uri, int i10, String str, @NotNull Promise promise) {
         Intrinsics.checkNotNullParameter(uri, "uri");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        js.i.d(this.scope, m0.b(), null, new MediaManagerModule$downloadMediaAssetWithContentType$1(uri, str, this, promise, null), 2, null);
+        ms.i.d(this.scope, m0.b(), null, new MediaManagerModule$downloadMediaAssetWithContentType$1(uri, str, this, promise, null), 2, null);
     }
 
     @Override // com.facebook.react.bridge.BaseJavaModule
@@ -481,7 +481,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
     public final void getVideoMetadata(@NotNull String uri, ReadableMap readableMap, @NotNull Promise promise) {
         Intrinsics.checkNotNullParameter(uri, "uri");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        js.i.d(this.scope, null, null, new MediaManagerModule$getVideoMetadata$1(this, Uri.parse(uri), promise, null), 3, null);
+        ms.i.d(this.scope, null, null, new MediaManagerModule$getVideoMetadata$1(this, Uri.parse(uri), promise, null), 3, null);
     }
 
     @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule, com.facebook.react.turbomodule.core.interfaces.TurboModule
@@ -588,6 +588,6 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
             z10 = z11;
             encodingConfig = null;
         }
-        js.i.d(this.scope, null, null, new MediaManagerModule$resolveToMediaFilePath$1(this, parse, i10, z10, z12, z13, encodingConfig, promise, uri, null), 3, null);
+        ms.i.d(this.scope, null, null, new MediaManagerModule$resolveToMediaFilePath$1(this, parse, i10, z10, z12, z13, encodingConfig, promise, uri, null), 3, null);
     }
 }

@@ -7,28 +7,28 @@ import java.io.InputStream;
 public class b extends FilterInputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    private final byte[] f50438d;
+    private final byte[] f51210d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f50439e;
+    private int f51211e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f50440i;
+    private int f51212i;
 
     public b(InputStream inputStream, byte[] bArr) {
         super(inputStream);
         inputStream.getClass();
         bArr.getClass();
-        this.f50438d = bArr;
+        this.f51210d = bArr;
     }
 
     private int a() {
-        int i10 = this.f50439e;
-        byte[] bArr = this.f50438d;
+        int i10 = this.f51211e;
+        byte[] bArr = this.f51210d;
         if (i10 >= bArr.length) {
             return -1;
         }
-        this.f50439e = i10 + 1;
+        this.f51211e = i10 + 1;
         return bArr[i10] & 255;
     }
 
@@ -36,7 +36,7 @@ public class b extends FilterInputStream {
     public void mark(int i10) {
         if (((FilterInputStream) this).in.markSupported()) {
             super.mark(i10);
-            this.f50440i = this.f50439e;
+            this.f51212i = this.f51211e;
         }
     }
 
@@ -50,7 +50,7 @@ public class b extends FilterInputStream {
     public void reset() {
         if (((FilterInputStream) this).in.markSupported()) {
             ((FilterInputStream) this).in.reset();
-            this.f50439e = this.f50440i;
+            this.f51211e = this.f51212i;
             return;
         }
         throw new IOException("mark is not supported");

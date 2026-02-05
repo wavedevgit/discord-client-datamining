@@ -7,46 +7,46 @@ import java.util.Map;
 final class h implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    final Iterator f43020d;
+    final Iterator f42926d;
 
     /* renamed from: e  reason: collision with root package name */
-    Collection f43021e;
+    Collection f42927e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ i f43022i;
+    final /* synthetic */ i f42928i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(i iVar) {
-        this.f43022i = iVar;
-        this.f43020d = iVar.f43067i.entrySet().iterator();
+        this.f42928i = iVar;
+        this.f42926d = iVar.f42973i.entrySet().iterator();
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f43020d.hasNext();
+        return this.f42926d.hasNext();
     }
 
     @Override // java.util.Iterator
     public final /* bridge */ /* synthetic */ Object next() {
-        Map.Entry entry = (Map.Entry) this.f43020d.next();
-        this.f43021e = (Collection) entry.getValue();
-        i iVar = this.f43022i;
+        Map.Entry entry = (Map.Entry) this.f42926d.next();
+        this.f42927e = (Collection) entry.getValue();
+        i iVar = this.f42928i;
         Object key = entry.getKey();
-        return new l0(key, iVar.f43068o.h(key, (Collection) entry.getValue()));
+        return new l0(key, iVar.f42974o.h(key, (Collection) entry.getValue()));
     }
 
     @Override // java.util.Iterator
     public final void remove() {
         boolean z10;
-        if (this.f43021e != null) {
+        if (this.f42927e != null) {
             z10 = true;
         } else {
             z10 = false;
         }
         c.d(z10, "no calls to next() since the last call to remove()");
-        this.f43020d.remove();
-        q.l(this.f43022i.f43068o, this.f43021e.size());
-        this.f43021e.clear();
-        this.f43021e = null;
+        this.f42926d.remove();
+        q.l(this.f42928i.f42974o, this.f42927e.size());
+        this.f42927e.clear();
+        this.f42927e = null;
     }
 }

@@ -17,15 +17,15 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaAnnotation extends ReflectJavaElement implements JavaAnnotation {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Annotation f33089a;
+    private final Annotation f32613a;
 
     public ReflectJavaAnnotation(@NotNull Annotation annotation) {
         Intrinsics.checkNotNullParameter(annotation, "annotation");
-        this.f33089a = annotation;
+        this.f32613a = annotation;
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof ReflectJavaAnnotation) && this.f33089a == ((ReflectJavaAnnotation) obj).f33089a) {
+        if ((obj instanceof ReflectJavaAnnotation) && this.f32613a == ((ReflectJavaAnnotation) obj).f32613a) {
             return true;
         }
         return false;
@@ -33,18 +33,18 @@ public final class ReflectJavaAnnotation extends ReflectJavaElement implements J
 
     @NotNull
     public final Annotation getAnnotation() {
-        return this.f33089a;
+        return this.f32613a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotation
     @NotNull
     public Collection<JavaAnnotationArgument> getArguments() {
-        Method[] declaredMethods = yr.a.b(yr.a.a(this.f33089a)).getDeclaredMethods();
+        Method[] declaredMethods = bs.a.b(bs.a.a(this.f32613a)).getDeclaredMethods();
         Intrinsics.checkNotNullExpressionValue(declaredMethods, "getDeclaredMethods(...)");
         ArrayList arrayList = new ArrayList(declaredMethods.length);
         for (Method method : declaredMethods) {
             ReflectJavaAnnotationArgument.Factory factory = ReflectJavaAnnotationArgument.Factory;
-            Object invoke = method.invoke(this.f33089a, null);
+            Object invoke = method.invoke(this.f32613a, null);
             Intrinsics.checkNotNullExpressionValue(invoke, "invoke(...)");
             arrayList.add(factory.create(invoke, Name.identifier(method.getName())));
         }
@@ -54,11 +54,11 @@ public final class ReflectJavaAnnotation extends ReflectJavaElement implements J
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotation
     @NotNull
     public ClassId getClassId() {
-        return ReflectClassUtilKt.getClassId(yr.a.b(yr.a.a(this.f33089a)));
+        return ReflectClassUtilKt.getClassId(bs.a.b(bs.a.a(this.f32613a)));
     }
 
     public int hashCode() {
-        return System.identityHashCode(this.f33089a);
+        return System.identityHashCode(this.f32613a);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotation
@@ -73,12 +73,12 @@ public final class ReflectJavaAnnotation extends ReflectJavaElement implements J
 
     @NotNull
     public String toString() {
-        return ReflectJavaAnnotation.class.getName() + ": " + this.f33089a;
+        return ReflectJavaAnnotation.class.getName() + ": " + this.f32613a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotation
     @NotNull
     public ReflectJavaClass resolve() {
-        return new ReflectJavaClass(yr.a.b(yr.a.a(this.f33089a)));
+        return new ReflectJavaClass(bs.a.b(bs.a.a(this.f32613a)));
     }
 }

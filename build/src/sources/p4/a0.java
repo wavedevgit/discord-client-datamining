@@ -10,13 +10,13 @@ import p4.z;
 public final class a0 implements z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f44913a;
+    private final r3.u f44843a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f44914b;
+    private final r3.i f44844b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r3.a0 f44915c;
+    private final r3.a0 f44845c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -58,9 +58,9 @@ public final class a0 implements z {
     }
 
     public a0(r3.u uVar) {
-        this.f44913a = uVar;
-        this.f44914b = new a(uVar);
-        this.f44915c = new b(uVar);
+        this.f44843a = uVar;
+        this.f44844b = new a(uVar);
+        this.f44845c = new b(uVar);
     }
 
     public static List e() {
@@ -70,14 +70,14 @@ public final class a0 implements z {
     @Override // p4.z
     public List a(String str) {
         String string;
-        r3.x l10 = r3.x.l("SELECT DISTINCT tag FROM worktag WHERE work_spec_id=?", 1);
+        r3.x k10 = r3.x.k("SELECT DISTINCT tag FROM worktag WHERE work_spec_id=?", 1);
         if (str == null) {
-            l10.P1(1);
+            k10.P1(1);
         } else {
-            l10.h1(1, str);
+            k10.h1(1, str);
         }
-        this.f44913a.d();
-        Cursor b10 = t3.b.b(this.f44913a, l10, false, null);
+        this.f44843a.d();
+        Cursor b10 = t3.b.b(this.f44843a, k10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -91,19 +91,19 @@ public final class a0 implements z {
             return arrayList;
         } finally {
             b10.close();
-            l10.B();
+            k10.y();
         }
     }
 
     @Override // p4.z
     public void b(y yVar) {
-        this.f44913a.d();
-        this.f44913a.e();
+        this.f44843a.d();
+        this.f44843a.e();
         try {
-            this.f44914b.j(yVar);
-            this.f44913a.A();
+            this.f44844b.j(yVar);
+            this.f44843a.A();
         } finally {
-            this.f44913a.i();
+            this.f44843a.i();
         }
     }
 

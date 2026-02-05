@@ -5,7 +5,7 @@ import java.util.Collections;
 public class q extends a {
 
     /* renamed from: i  reason: collision with root package name */
-    private final Object f42415i;
+    private final Object f42321i;
 
     public q(y5.c cVar) {
         this(cVar, null);
@@ -18,8 +18,8 @@ public class q extends a {
 
     @Override // o5.a
     public Object h() {
-        y5.c cVar = this.f42353e;
-        Object obj = this.f42415i;
+        y5.c cVar = this.f42259e;
+        Object obj = this.f42321i;
         return cVar.b(0.0f, 0.0f, obj, obj, f(), f(), f());
     }
 
@@ -30,19 +30,19 @@ public class q extends a {
 
     @Override // o5.a
     public void l() {
-        if (this.f42353e != null) {
+        if (this.f42259e != null) {
             super.l();
         }
     }
 
     @Override // o5.a
     public void n(float f10) {
-        this.f42352d = f10;
+        this.f42258d = f10;
     }
 
     public q(y5.c cVar, Object obj) {
         super(Collections.EMPTY_LIST);
         o(cVar);
-        this.f42415i = obj;
+        this.f42321i = obj;
     }
 }

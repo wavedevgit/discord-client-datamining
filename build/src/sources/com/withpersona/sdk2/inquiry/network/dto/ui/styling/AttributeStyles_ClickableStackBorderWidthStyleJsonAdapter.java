@@ -41,18 +41,18 @@ public final class AttributeStyles_ClickableStackBorderWidthStyleJsonAdapter ext
     @NotNull
     public AttributeStyles.ClickableStackBorderWidthStyle fromJson(@NotNull m reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        reader.r();
+        reader.s();
         StyleElements.MeasurementSet measurementSet = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
+            int W = reader.W(this.options);
+            if (W == -1) {
                 reader.E0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (W == 0) {
                 measurementSet = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
             }
         }
-        reader.y();
+        reader.z();
         return new AttributeStyles.ClickableStackBorderWidthStyle(measurementSet);
     }
 
@@ -60,8 +60,8 @@ public final class AttributeStyles_ClickableStackBorderWidthStyleJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.ClickableStackBorderWidthStyle clickableStackBorderWidthStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (clickableStackBorderWidthStyle != null) {
-            writer.l();
-            writer.A0("base");
+            writer.k();
+            writer.W("base");
             this.nullableMeasurementSetAdapter.toJson(writer, clickableStackBorderWidthStyle.getBase());
             writer.E();
             return;

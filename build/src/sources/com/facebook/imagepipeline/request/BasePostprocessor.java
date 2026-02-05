@@ -19,7 +19,7 @@ public abstract class BasePostprocessor implements Postprocessor {
         if (u.a() && bitmap.getConfig() == bitmap2.getConfig()) {
             try {
                 if (sCopyBitmap == null) {
-                    int i10 = Bitmaps.f10254a;
+                    int i10 = Bitmaps.f10639a;
                     sCopyBitmap = Bitmaps.class.getDeclaredMethod("copyBitmap", Bitmap.class, Bitmap.class);
                 }
                 sCopyBitmap.invoke(null, bitmap, bitmap2);
@@ -60,7 +60,7 @@ public abstract class BasePostprocessor implements Postprocessor {
         }
         CloseableReference d10 = platformBitmapFactory.d(width, height, config);
         try {
-            process((Bitmap) d10.C0(), bitmap);
+            process((Bitmap) d10.E0(), bitmap);
             return d10.clone();
         } finally {
             CloseableReference.N(d10);

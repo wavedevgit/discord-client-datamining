@@ -24,7 +24,7 @@ final class c implements g {
     }
 
     public static c a(long j10, k kVar, long j11) {
-        int length = kVar.f36748p.length;
+        int length = kVar.f36675p.length;
         int i10 = length + 1;
         long[] jArr = new long[i10];
         long[] jArr2 = new long[i10];
@@ -33,8 +33,8 @@ final class c implements g {
         jArr2[0] = 0;
         for (int i11 = 1; i11 <= length; i11++) {
             int i12 = i11 - 1;
-            j10 += kVar.f36746i + kVar.f36748p[i12];
-            j12 += kVar.f36747o + kVar.f36749q[i12];
+            j10 += kVar.f36673i + kVar.f36675p[i12];
+            j12 += kVar.f36674o + kVar.f36676q[i12];
             jArr[i11] = j10;
             jArr2[i11] = j12;
         }

@@ -15,7 +15,6 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import js.m0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -33,6 +32,7 @@ import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.JsonBuilder;
 import kotlinx.serialization.json.JsonElement;
 import kotlinx.serialization.json.JsonObject;
+import ms.m0;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0000\u0018\u0000  2\u00020\u0001:\u0002\u001f B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\b\u0010\u0013\u001a\u00020\u0012H\u0007J\u0014\u0010\u0014\u001a\u00020\u00122\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0005H\u0007J\u000e\u0010\u0016\u001a\u00020\u0012H\u0082@¢\u0006\u0002\u0010\u0017J\u000e\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u001a0\u0019H\u0002J\u001c\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u001a0\u00192\u0006\u0010\u001c\u001a\u00020\u001dH\u0082@¢\u0006\u0002\u0010\u001eR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00030\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006!"}, d2 = {"Lcom/discord/emoji_picker/EmojiPickerCache;", "", "listener", "Lcom/discord/emoji_picker/EmojiPickerCache$Listener;", "emojiCoreData", "Lcom/discord/emoji_picker/EmojiPickerItemData$CoreData;", "<init>", "(Lcom/discord/emoji_picker/EmojiPickerCache$Listener;Lcom/discord/emoji_picker/EmojiPickerItemData$CoreData;)V", "emojiPickerListener", "Ljava/lang/ref/WeakReference;", "emojiJsonConfig", "Lkotlinx/serialization/json/Json;", "emojiCoroutineScope", "Lkotlinx/coroutines/CoroutineScope;", "emojiFetchJob", "Lkotlinx/coroutines/Job;", "emojiFetchEvents", "Lkotlinx/coroutines/flow/MutableSharedFlow;", "", "invalidate", "refreshEmojis", "emojiCodeData", "refreshDatabaseEmojis", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "buildEmojis", "", "Lcom/discord/emoji_picker/EmojiPickerItem;", "buildEmojisUnicode", "context", "Landroid/content/Context;", "(Landroid/content/Context;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Listener", "Companion", "emoji_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nEmojiPickerCache.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EmojiPickerCache.kt\ncom/discord/emoji_picker/EmojiPickerCache\n+ 2 ThreadUtils.kt\ncom/discord/misc/utilities/threading/ThreadUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,186:1\n25#2,8:187\n1#3:195\n1878#4,2:196\n1563#4:198\n1634#4,3:199\n1056#4:202\n1869#4,2:203\n1880#4:205\n1878#4,2:206\n1869#4,2:208\n1880#4:210\n*S KotlinDebug\n*F\n+ 1 EmojiPickerCache.kt\ncom/discord/emoji_picker/EmojiPickerCache\n*L\n70#1:187,8\n90#1:196,2\n109#1:198\n109#1:199,3\n128#1:202\n133#1:203,2\n90#1:205\n156#1:206,2\n158#1:208,2\n156#1:210\n*E\n"})
@@ -71,7 +71,7 @@ public final class EmojiPickerCache {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = rr.b.f();
+            Object f10 = ur.b.f();
             int i10 = this.label;
             if (i10 != 0) {
                 if (i10 == 1) {
@@ -91,7 +91,7 @@ public final class EmojiPickerCache {
 
                     public final Object emit(Unit unit, Continuation<? super Unit> continuation) {
                         Object refreshDatabaseEmojis = EmojiPickerCache.this.refreshDatabaseEmojis(continuation);
-                        return refreshDatabaseEmojis == rr.b.f() ? refreshDatabaseEmojis : Unit.f32464a;
+                        return refreshDatabaseEmojis == ur.b.f() ? refreshDatabaseEmojis : Unit.f31988a;
                     }
                 };
                 this.label = 1;
@@ -99,12 +99,12 @@ public final class EmojiPickerCache {
                     return f10;
                 }
             }
-            return Unit.f32464a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -144,8 +144,8 @@ public final class EmojiPickerCache {
         }, 1, null);
         CoroutineScope a10 = kotlinx.coroutines.i.a(m0.a());
         this.emojiCoroutineScope = a10;
-        this.emojiFetchEvents = ms.c0.b(0, 1, null, 4, null);
-        d10 = js.i.d(a10, null, null, new AnonymousClass1(null), 3, null);
+        this.emojiFetchEvents = ps.c0.b(0, 1, null, 4, null);
+        d10 = ms.i.d(a10, null, null, new AnonymousClass1(null), 3, null);
         this.emojiFetchJob = d10;
     }
 
@@ -192,16 +192,16 @@ public final class EmojiPickerCache {
                     for (String str : arrayList2) {
                         Json json = emojiPickerCache.emojiJsonConfig;
                         Intrinsics.checkNotNull(str);
-                        JsonObject n10 = et.h.n(json.g(str));
+                        JsonObject n10 = ht.h.n(json.g(str));
                         Object obj2 = n10.get(StackTraceHelper.ID_KEY);
                         Intrinsics.checkNotNull(obj2);
-                        long q10 = et.h.q(et.h.o((JsonElement) obj2));
+                        long q10 = ht.h.q(ht.h.o((JsonElement) obj2));
                         Object obj3 = n10.get(StackTraceHelper.NAME_KEY);
                         Intrinsics.checkNotNull(obj3);
-                        String b10 = et.h.o((JsonElement) obj3).b();
+                        String b10 = ht.h.o((JsonElement) obj3).b();
                         Object obj4 = n10.get("animated");
                         Intrinsics.checkNotNull(obj4);
-                        boolean f10 = et.h.f(et.h.o((JsonElement) obj4));
+                        boolean f10 = ht.h.f(ht.h.o((JsonElement) obj4));
                         if (!guild.isNitroLocked() && !guild.getEmojisDisabled().contains(Long.valueOf(q10))) {
                             z13 = false;
                         } else {
@@ -218,7 +218,7 @@ public final class EmojiPickerCache {
                     list = CollectionsKt.W0(arrayList3, new Comparator() { // from class: com.discord.emoji_picker.EmojiPickerCache$buildEmojis$lambda$7$$inlined$sortedBy$1
                         @Override // java.util.Comparator
                         public final int compare(T t10, T t11) {
-                            return or.a.d(((EmojiPickerItem.Emoji) t10).getName(), ((EmojiPickerItem.Emoji) t11).getName());
+                            return rr.a.d(((EmojiPickerItem.Emoji) t10).getName(), ((EmojiPickerItem.Emoji) t11).getName());
                         }
                     });
                 } else {
@@ -276,7 +276,7 @@ public final class EmojiPickerCache {
     public static final Unit emojiJsonConfig$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f32464a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -307,7 +307,7 @@ public final class EmojiPickerCache {
             r0.<init>(r4, r5)
         L18:
             java.lang.Object r5 = r0.result
-            java.lang.Object r1 = rr.b.f()
+            java.lang.Object r1 = ur.b.f()
             int r2 = r0.label
             r3 = 1
             if (r2 == 0) goto L35
@@ -334,7 +334,7 @@ public final class EmojiPickerCache {
         L48:
             boolean r2 = r5 instanceof com.facebook.react.bridge.ReactContext
             if (r2 != 0) goto L4f
-            kotlin.Unit r5 = kotlin.Unit.f32464a
+            kotlin.Unit r5 = kotlin.Unit.f31988a
             return r5
         L4f:
             java.util.List r2 = r4.buildEmojis()
@@ -361,7 +361,7 @@ public final class EmojiPickerCache {
             r2.<init>()
             r1.post(r2)
         L83:
-            kotlin.Unit r5 = kotlin.Unit.f32464a
+            kotlin.Unit r5 = kotlin.Unit.f31988a
             return r5
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.emoji_picker.EmojiPickerCache.refreshDatabaseEmojis(kotlin.coroutines.Continuation):java.lang.Object");
@@ -387,7 +387,7 @@ public final class EmojiPickerCache {
         }
         this.emojiCoreData = coreData;
         if (coreData.getHasGuildData()) {
-            this.emojiFetchEvents.b(Unit.f32464a);
+            this.emojiFetchEvents.b(Unit.f31988a);
         }
     }
 }

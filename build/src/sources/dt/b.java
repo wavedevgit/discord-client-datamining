@@ -1,96 +1,94 @@
 package dt;
 
+import ft.k;
+import gt.u1;
+import java.util.List;
+import kotlin.Unit;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Ref;
 import kotlin.reflect.KClass;
-import kotlinx.serialization.DeserializationStrategy;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
-import kotlinx.serialization.encoding.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b implements KSerializer {
-    /* JADX INFO: Access modifiers changed from: private */
-    public final Object b(kotlinx.serialization.encoding.c cVar) {
-        return c.a.c(cVar, getDescriptor(), 1, at.h.b(this, cVar, cVar.m(getDescriptor(), 0)), null, 8, null);
-    }
+public final class b implements KSerializer {
 
-    public at.o c(Encoder encoder, Object value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        return encoder.a().e(e(), value);
-    }
+    /* renamed from: a  reason: collision with root package name */
+    private final KClass f21225a;
 
-    public DeserializationStrategy d(kotlinx.serialization.encoding.c decoder, String str) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return decoder.a().f(e(), str);
-    }
+    /* renamed from: b  reason: collision with root package name */
+    private final KSerializer f21226b;
 
-    /* JADX WARN: Type inference failed for: r3v2, types: [T, java.lang.String] */
-    @Override // kotlinx.serialization.DeserializationStrategy
-    public final Object deserialize(Decoder decoder) {
-        Object obj;
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        SerialDescriptor descriptor = getDescriptor();
-        kotlinx.serialization.encoding.c b10 = decoder.b(descriptor);
-        Ref.ObjectRef objectRef = new Ref.ObjectRef();
-        if (b10.p()) {
-            obj = b(b10);
-        } else {
-            Object obj2 = null;
-            while (true) {
-                int o10 = b10.o(getDescriptor());
-                if (o10 != -1) {
-                    if (o10 != 0) {
-                        if (o10 != 1) {
-                            StringBuilder sb2 = new StringBuilder();
-                            sb2.append("Invalid index in polymorphic deserialization of ");
-                            String str = (String) objectRef.element;
-                            if (str == null) {
-                                str = "unknown class";
-                            }
-                            sb2.append(str);
-                            sb2.append("\n Expected 0, 1 or DECODE_DONE(-1), but found ");
-                            sb2.append(o10);
-                            throw new at.n(sb2.toString());
-                        }
-                        T t10 = objectRef.element;
-                        if (t10 != 0) {
-                            objectRef.element = t10;
-                            obj2 = c.a.c(b10, getDescriptor(), o10, at.h.b(this, b10, (String) t10), null, 8, null);
-                        } else {
-                            throw new IllegalArgumentException("Cannot read polymorphic value before its type token");
-                        }
-                    } else {
-                        objectRef.element = b10.m(getDescriptor(), o10);
-                    }
-                } else if (obj2 != null) {
-                    Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type T of kotlinx.serialization.internal.AbstractPolymorphicSerializer");
-                    obj = obj2;
-                } else {
-                    throw new IllegalArgumentException(("Polymorphic value has not been read for class " + ((String) objectRef.element)).toString());
-                }
+    /* renamed from: c  reason: collision with root package name */
+    private final List f21227c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final SerialDescriptor f21228d;
+
+    public b(KClass serializableClass, KSerializer kSerializer, KSerializer[] typeArgumentsSerializers) {
+        Intrinsics.checkNotNullParameter(serializableClass, "serializableClass");
+        Intrinsics.checkNotNullParameter(typeArgumentsSerializers, "typeArgumentsSerializers");
+        this.f21225a = serializableClass;
+        this.f21226b = kSerializer;
+        this.f21227c = kotlin.collections.i.e(typeArgumentsSerializers);
+        this.f21228d = ft.b.c(ft.j.d("kotlinx.serialization.ContextualSerializer", k.a.f23492a, new SerialDescriptor[0], new Function1() { // from class: dt.a
+            @Override // kotlin.jvm.functions.Function1
+            public final Object invoke(Object obj) {
+                Unit b10;
+                b10 = b.b(b.this, (ft.a) obj);
+                return b10;
             }
-        }
-        b10.c(descriptor);
-        return obj;
+        }), serializableClass);
     }
 
-    public abstract KClass e();
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit b(b bVar, ft.a buildSerialDescriptor) {
+        List list;
+        SerialDescriptor descriptor;
+        Intrinsics.checkNotNullParameter(buildSerialDescriptor, "$this$buildSerialDescriptor");
+        KSerializer kSerializer = bVar.f21226b;
+        if (kSerializer != null && (descriptor = kSerializer.getDescriptor()) != null) {
+            list = descriptor.getAnnotations();
+        } else {
+            list = null;
+        }
+        if (list == null) {
+            list = CollectionsKt.l();
+        }
+        buildSerialDescriptor.h(list);
+        return Unit.f31988a;
+    }
 
-    @Override // at.o
-    public final void serialize(Encoder encoder, Object value) {
+    private final KSerializer c(kt.b bVar) {
+        KSerializer b10 = bVar.b(this.f21225a, this.f21227c);
+        if (b10 == null) {
+            KSerializer kSerializer = this.f21226b;
+            if (kSerializer != null) {
+                return kSerializer;
+            }
+            u1.f(this.f21225a);
+            throw new or.h();
+        }
+        return b10;
+    }
+
+    @Override // kotlinx.serialization.DeserializationStrategy
+    public Object deserialize(Decoder decoder) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        return decoder.G(c(decoder.a()));
+    }
+
+    @Override // kotlinx.serialization.KSerializer, dt.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return this.f21228d;
+    }
+
+    @Override // dt.o
+    public void serialize(Encoder encoder, Object value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
-        at.o a10 = at.h.a(this, encoder, value);
-        SerialDescriptor descriptor = getDescriptor();
-        CompositeEncoder b10 = encoder.b(descriptor);
-        b10.y(getDescriptor(), 0, a10.getDescriptor().h());
-        SerialDescriptor descriptor2 = getDescriptor();
-        Intrinsics.checkNotNull(a10, "null cannot be cast to non-null type kotlinx.serialization.SerializationStrategy<T of kotlinx.serialization.internal.Platform_commonKt.cast>");
-        b10.D(descriptor2, 1, a10, value);
-        b10.c(descriptor);
+        encoder.y(c(encoder.a()), value);
     }
 }

@@ -123,7 +123,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/ChangeAvatarActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80366: for (var _fun80366_ip = 0;;) switch (_fun80366_ip) {
+        _fun80385: for (var _fun80385_ip = 0;;) switch (_fun80385_ip) {
             case 0:
                 var0 = arg0;
                 var16 = var0.handleUploadAvatarSelect;
@@ -133,16 +133,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var0.showAnimatedAvatarUpsell;
                 var3 = undefined;
                 if (!(var14 === var3)) {
-                    _fun80366_ip = 41;
-                    continue _fun80366
+                    _fun80385_ip = 41;
+                    continue _fun80385
                 }
             case 39:
                 var14 = false;
             case 41:
                 var9 = var0.showRemoveAvatar;
                 if (!(var9 === var3)) {
-                    _fun80366_ip = 53;
-                    continue _fun80366
+                    _fun80385_ip = 53;
+                    continue _fun80385
                 }
             case 51:
                 var9 = false;
@@ -195,8 +195,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var10.bind(var12)(var8);
                 var4.title = var8;
                 if (!var7) {
-                    _fun80366_ip = 283;
-                    continue _fun80366
+                    _fun80385_ip = 283;
+                    continue _fun80385
                 }
             case 245:
                 var12 = _closure1_slot6;
@@ -258,15 +258,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = null;
                 var15 = var12 != var22;
                 if (!var15) {
-                    _fun80366_ip = 509;
-                    continue _fun80366
+                    _fun80385_ip = 509;
+                    continue _fun80385
                 }
             case 506:
                 var15 = !var14;
             case 509:
                 if (!var15) {
-                    _fun80366_ip = 599;
-                    continue _fun80366
+                    _fun80385_ip = 599;
+                    continue _fun80385
                 }
             case 512:
                 var21 = _closure1_slot6;
@@ -291,8 +291,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 599:
                 var8[1] = var15;
                 if (!var14) {
-                    _fun80366_ip = 1043;
-                    continue _fun80366
+                    _fun80385_ip = 1043;
+                    continue _fun80385
                 }
             case 609:
                 var19 = _closure1_slot6;
@@ -395,8 +395,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[2] = var14;
                 var12 = var12 != var17;
                 if (!var12) {
-                    _fun80366_ip = 1200;
-                    continue _fun80366
+                    _fun80385_ip = 1200;
+                    continue _fun80385
                 }
             case 1057:
                 var16 = _closure1_slot6;
@@ -434,8 +434,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 1200:
                 var8[3] = var12;
                 if (!var9) {
-                    _fun80366_ip = 1356;
-                    continue _fun80366
+                    _fun80385_ip = 1356;
+                    continue _fun80385
                 }
             case 1210:
                 var12 = _closure1_slot6;
@@ -482,4 +482,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 660, 33, 1297, 671, 566, 3109, 5208, 5211, 1234, 5749, 5363, 4898, 5378, 10206, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 660, 33, 1297, 671, 566, 3109, 5210, 5213, 1234, 5753, 5367, 4900, 5382, 10224, 2]);

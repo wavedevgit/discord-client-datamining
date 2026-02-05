@@ -1,41 +1,31 @@
 package zs;
 
-import ct.e;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import ts.f;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class f implements KSerializer {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final f f56136a = new f();
+public final class f extends h {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f56137b = ct.j.b("kotlinx.datetime.LocalDate", e.i.f19842a);
+    private final at.e f56234b;
 
-    private f() {
+    /* renamed from: c  reason: collision with root package name */
+    private final bt.q f56235c;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public f(List formats) {
+        super(formats);
+        Intrinsics.checkNotNullParameter(formats, "formats");
+        this.f56234b = super.a();
+        this.f56235c = super.b();
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public ts.f deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return f.a.b(ts.f.Companion, decoder.z(), null, 2, null);
+    @Override // zs.h, zs.o
+    public at.e a() {
+        return this.f56234b;
     }
 
-    @Override // at.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, ts.f value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        encoder.F(value.toString());
-    }
-
-    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f56137b;
+    @Override // zs.h, zs.o
+    public bt.q b() {
+        return this.f56235c;
     }
 }

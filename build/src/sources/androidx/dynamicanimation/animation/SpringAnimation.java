@@ -20,8 +20,8 @@ public final class SpringAnimation extends b {
         c cVar = this.A;
         if (cVar != null) {
             double a10 = cVar.a();
-            if (a10 <= this.f3917g) {
-                if (a10 >= this.f3918h) {
+            if (a10 <= this.f4029g) {
+                if (a10 >= this.f4030h) {
                     return;
                 }
                 throw new UnsupportedOperationException("Final position of the spring cannot be less than the min value.");
@@ -65,33 +65,33 @@ public final class SpringAnimation extends b {
                 this.A.e(f10);
                 this.B = Float.MAX_VALUE;
             }
-            this.f3912b = this.A.a();
-            this.f3911a = 0.0f;
+            this.f4024b = this.A.a();
+            this.f4023a = 0.0f;
             this.C = false;
             return true;
         }
         if (this.B != Float.MAX_VALUE) {
             long j11 = j10 / 2;
-            b.p h10 = this.A.h(this.f3912b, this.f3911a, j11);
+            b.p h10 = this.A.h(this.f4024b, this.f4023a, j11);
             this.A.e(this.B);
             this.B = Float.MAX_VALUE;
-            b.p h11 = this.A.h(h10.f3925a, h10.f3926b, j11);
-            this.f3912b = h11.f3925a;
-            this.f3911a = h11.f3926b;
+            b.p h11 = this.A.h(h10.f4037a, h10.f4038b, j11);
+            this.f4024b = h11.f4037a;
+            this.f4023a = h11.f4038b;
         } else {
-            b.p h12 = this.A.h(this.f3912b, this.f3911a, j10);
-            this.f3912b = h12.f3925a;
-            this.f3911a = h12.f3926b;
+            b.p h12 = this.A.h(this.f4024b, this.f4023a, j10);
+            this.f4024b = h12.f4037a;
+            this.f4023a = h12.f4038b;
         }
-        float max = Math.max(this.f3912b, this.f3918h);
-        this.f3912b = max;
-        float min = Math.min(max, this.f3917g);
-        this.f3912b = min;
-        if (!w(min, this.f3911a)) {
+        float max = Math.max(this.f4024b, this.f4030h);
+        this.f4024b = max;
+        float min = Math.min(max, this.f4029g);
+        this.f4024b = min;
+        if (!w(min, this.f4023a)) {
             return false;
         }
-        this.f3912b = this.A.a();
-        this.f3911a = 0.0f;
+        this.f4024b = this.A.a();
+        this.f4023a = 0.0f;
         return true;
     }
 
@@ -108,7 +108,7 @@ public final class SpringAnimation extends b {
     }
 
     public boolean u() {
-        if (this.A.f3928b > 0.0d) {
+        if (this.A.f4040b > 0.0d) {
             return true;
         }
         return false;
@@ -130,7 +130,7 @@ public final class SpringAnimation extends b {
     public void z() {
         if (u()) {
             if (Looper.myLooper() == Looper.getMainLooper()) {
-                if (this.f3916f) {
+                if (this.f4028f) {
                     this.C = true;
                     return;
                 }

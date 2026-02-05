@@ -1,29 +1,28 @@
 package or;
 
-import java.util.Comparator;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
-/* JADX INFO: Access modifiers changed from: package-private */
+import java.io.Serializable;
+import kotlin.Lazy;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g implements Comparator {
-    @NotNull
+public final class g implements Lazy, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final g f44407d = new g();
+    private final Object f44220d;
 
-    private g() {
+    public g(Object obj) {
+        this.f44220d = obj;
     }
 
-    @Override // java.util.Comparator
-    /* renamed from: a */
-    public int compare(Comparable a10, Comparable b10) {
-        Intrinsics.checkNotNullParameter(a10, "a");
-        Intrinsics.checkNotNullParameter(b10, "b");
-        return b10.compareTo(a10);
+    @Override // kotlin.Lazy
+    public Object getValue() {
+        return this.f44220d;
     }
 
-    @Override // java.util.Comparator
-    public final Comparator reversed() {
-        return f.f44406d;
+    @Override // kotlin.Lazy
+    public boolean isInitialized() {
+        return true;
+    }
+
+    public String toString() {
+        return String.valueOf(getValue());
     }
 }

@@ -13,24 +13,24 @@ public abstract class c {
     class a implements Supplier {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Throwable f53814a;
+        final /* synthetic */ Throwable f54510a;
 
         a(Throwable th2) {
-            this.f53814a = th2;
+            this.f54510a = th2;
         }
 
         @Override // com.facebook.common.internal.Supplier
         /* renamed from: a */
         public DataSource get() {
-            return c.b(this.f53814a);
+            return c.b(this.f54510a);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: y8.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public class ExecutorC0735c implements Executor {
-        ExecutorC0735c() {
+    public class ExecutorC0755c implements Executor {
+        ExecutorC0755c() {
         }
 
         @Override // java.util.concurrent.Executor
@@ -44,10 +44,10 @@ public abstract class c {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public Object f53818a;
+        public Object f54514a;
 
         private d() {
-            this.f53818a = null;
+            this.f54514a = null;
         }
     }
 
@@ -69,15 +69,15 @@ public abstract class c {
         CountDownLatch countDownLatch = new CountDownLatch(1);
         d dVar = new d();
         d dVar2 = new d();
-        dataSource.c(new b(dVar, countDownLatch, dVar2), new ExecutorC0735c());
+        dataSource.c(new b(dVar, countDownLatch, dVar2), new ExecutorC0755c());
         if (j10 < 0) {
             countDownLatch.await();
         } else if (!countDownLatch.await(j10, timeUnit)) {
             throw new TimeoutException();
         }
-        Object obj = dVar2.f53818a;
+        Object obj = dVar2.f54514a;
         if (obj == null) {
-            return dVar.f53818a;
+            return dVar.f54514a;
         }
         throw ((Throwable) obj);
     }
@@ -87,31 +87,31 @@ public abstract class c {
     public class b implements e {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ d f53815a;
+        final /* synthetic */ d f54511a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ CountDownLatch f53816b;
+        final /* synthetic */ CountDownLatch f54512b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ d f53817c;
+        final /* synthetic */ d f54513c;
 
         b(d dVar, CountDownLatch countDownLatch, d dVar2) {
-            this.f53815a = dVar;
-            this.f53816b = countDownLatch;
-            this.f53817c = dVar2;
+            this.f54511a = dVar;
+            this.f54512b = countDownLatch;
+            this.f54513c = dVar2;
         }
 
         @Override // y8.e
         public void onCancellation(DataSource dataSource) {
-            this.f53816b.countDown();
+            this.f54512b.countDown();
         }
 
         @Override // y8.e
         public void onFailure(DataSource dataSource) {
             try {
-                this.f53817c.f53818a = dataSource.b();
+                this.f54513c.f54514a = dataSource.b();
             } finally {
-                this.f53816b.countDown();
+                this.f54512b.countDown();
             }
         }
 
@@ -121,9 +121,9 @@ public abstract class c {
                 return;
             }
             try {
-                this.f53815a.f53818a = dataSource.getResult();
+                this.f54511a.f54514a = dataSource.getResult();
             } finally {
-                this.f53816b.countDown();
+                this.f54512b.countDown();
             }
         }
 

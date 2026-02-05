@@ -12,18 +12,16 @@ public interface BufferedSink extends Sink, WritableByteChannel {
 
     BufferedSink a2(ByteString byteString);
 
-    BufferedSink d0();
+    BufferedSink e0();
 
-    Buffer e();
+    Buffer f();
 
     @Override // okio.Sink, java.io.Flushable
     void flush();
 
     OutputStream k2();
 
-    BufferedSink n0(String str);
-
-    BufferedSink w0(String str, int i10, int i11);
+    BufferedSink o0(String str);
 
     BufferedSink write(byte[] bArr);
 
@@ -35,5 +33,7 @@ public interface BufferedSink extends Sink, WritableByteChannel {
 
     BufferedSink writeShort(int i10);
 
-    long y0(Source source);
+    BufferedSink x0(String str, int i10, int i11);
+
+    long z0(Source source);
 }
