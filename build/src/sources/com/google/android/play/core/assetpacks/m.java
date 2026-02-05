@@ -37,20 +37,15 @@ final class m extends wh.l0 {
 
     @Override // wh.l0
     protected final void a() {
-        wh.k0 k0Var;
-        wh.v0 v0Var;
         String str;
         Bundle h10;
         try {
-            v0Var = this.f15904r.f16086d;
             str = this.f15904r.f16083a;
             Bundle l10 = x.l(this.f15899e, this.f15900i, this.f15901o, this.f15902p);
             h10 = x.h();
-            ((wh.b0) v0Var.e()).J0(str, l10, h10, new q(this.f15904r, this.f15903q));
+            ((wh.b0) this.f15904r.f16086d.e()).J0(str, l10, h10, new q(this.f15904r, this.f15903q));
         } catch (RemoteException e10) {
-            String str2 = this.f15900i;
-            k0Var = x.f16081g;
-            k0Var.b("getChunkFileDescriptor(%s, %s, %d, session=%d)", str2, this.f15901o, Integer.valueOf(this.f15902p), Integer.valueOf(this.f15899e));
+            x.f16081g.b("getChunkFileDescriptor(%s, %s, %d, session=%d)", this.f15900i, this.f15901o, Integer.valueOf(this.f15902p), Integer.valueOf(this.f15899e));
             this.f15903q.d(new RuntimeException(e10));
         }
     }

@@ -20,81 +20,81 @@ abstract class o extends wh.c0 {
 
     @Override // wh.d0
     public final void E(Bundle bundle, Bundle bundle2) {
-        x.t(this.f15937d).u(this.f15936c);
-        x.s().d("onNotifySessionFailed(%d)", Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
+        this.f15937d.f16086d.u(this.f15936c);
+        x.f16081g.d("onNotifySessionFailed(%d)", Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
     }
 
     @Override // wh.d0
     public final void G(Bundle bundle, Bundle bundle2) {
-        x.t(this.f15937d).u(this.f15936c);
-        x.s().d("onRemoveModule()", new Object[0]);
+        this.f15937d.f16086d.u(this.f15936c);
+        x.f16081g.d("onRemoveModule()", new Object[0]);
     }
 
     @Override // wh.d0
     public void M(Bundle bundle, Bundle bundle2) {
-        x.t(this.f15937d).u(this.f15936c);
-        x.s().d("onRequestDownloadInfo()", new Object[0]);
+        this.f15937d.f16086d.u(this.f15936c);
+        x.f16081g.d("onRequestDownloadInfo()", new Object[0]);
     }
 
     @Override // wh.d0
     public void O0(Bundle bundle, Bundle bundle2) {
-        x.t(this.f15937d).u(this.f15936c);
-        x.s().d("onGetChunkFileDescriptor", new Object[0]);
+        this.f15937d.f16086d.u(this.f15936c);
+        x.f16081g.d("onGetChunkFileDescriptor", new Object[0]);
     }
 
     @Override // wh.d0
     public final void b0(int i10, Bundle bundle) {
-        x.t(this.f15937d).u(this.f15936c);
-        x.s().d("onGetSession(%d)", Integer.valueOf(i10));
+        this.f15937d.f16086d.u(this.f15936c);
+        x.f16081g.d("onGetSession(%d)", Integer.valueOf(i10));
     }
 
     @Override // wh.d0
     public final void c(Bundle bundle) {
-        x.t(this.f15937d).u(this.f15936c);
-        x.s().d("onCancelDownloads()", new Object[0]);
+        this.f15937d.f16086d.u(this.f15936c);
+        x.f16081g.d("onCancelDownloads()", new Object[0]);
     }
 
     @Override // wh.d0
     public void g(Bundle bundle) {
-        x.t(this.f15937d).u(this.f15936c);
+        this.f15937d.f16086d.u(this.f15936c);
         int i10 = bundle.getInt("error_code");
-        x.s().b("onError(%d)", Integer.valueOf(i10));
+        x.f16081g.b("onError(%d)", Integer.valueOf(i10));
         this.f15936c.d(new a(i10));
     }
 
     @Override // wh.d0
     public void j0(Bundle bundle, Bundle bundle2) {
-        x.u(this.f15937d).u(this.f15936c);
-        x.s().d("onKeepAlive(%b)", Boolean.valueOf(bundle.getBoolean("keep_alive")));
+        this.f15937d.f16087e.u(this.f15936c);
+        x.f16081g.d("onKeepAlive(%b)", Boolean.valueOf(bundle.getBoolean("keep_alive")));
     }
 
     @Override // wh.d0
     public final void p0(Bundle bundle, Bundle bundle2) {
-        x.t(this.f15937d).u(this.f15936c);
-        x.s().d("onNotifyChunkTransferred(%s, %s, %d, session=%d)", bundle.getString("module_name"), bundle.getString("slice_id"), Integer.valueOf(bundle.getInt("chunk_number")), Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
+        this.f15937d.f16086d.u(this.f15936c);
+        x.f16081g.d("onNotifyChunkTransferred(%s, %s, %d, session=%d)", bundle.getString("module_name"), bundle.getString("slice_id"), Integer.valueOf(bundle.getInt("chunk_number")), Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
     }
 
     @Override // wh.d0
     public void r(int i10, Bundle bundle) {
-        x.t(this.f15937d).u(this.f15936c);
-        x.s().d("onStartDownload(%d)", Integer.valueOf(i10));
+        this.f15937d.f16086d.u(this.f15936c);
+        x.f16081g.d("onStartDownload(%d)", Integer.valueOf(i10));
     }
 
     @Override // wh.d0
     public void s(List list) {
-        x.t(this.f15937d).u(this.f15936c);
-        x.s().d("onGetSessionStates", new Object[0]);
+        this.f15937d.f16086d.u(this.f15936c);
+        x.f16081g.d("onGetSessionStates", new Object[0]);
     }
 
     @Override // wh.d0
     public final void t0(Bundle bundle, Bundle bundle2) {
-        x.t(this.f15937d).u(this.f15936c);
-        x.s().d("onNotifyModuleCompleted(%s, sessionId=%d)", bundle.getString("module_name"), Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
+        this.f15937d.f16086d.u(this.f15936c);
+        x.f16081g.d("onNotifyModuleCompleted(%s, sessionId=%d)", bundle.getString("module_name"), Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
     }
 
     @Override // wh.d0
     public final void x0(int i10, Bundle bundle) {
-        x.t(this.f15937d).u(this.f15936c);
-        x.s().d("onCancelDownload(%d)", Integer.valueOf(i10));
+        this.f15937d.f16086d.u(this.f15936c);
+        x.f16081g.d("onCancelDownload(%d)", Integer.valueOf(i10));
     }
 }
