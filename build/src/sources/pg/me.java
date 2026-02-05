@@ -22,12 +22,24 @@ public final class me {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ me(ke keVar, le leVar) {
-        this.f45556a = keVar.f45497a;
-        this.f45557b = keVar.f45498b;
-        this.f45558c = keVar.f45499c;
-        this.f45559d = keVar.f45500d;
-        this.f45560e = keVar.f45501e;
-        this.f45561f = keVar.f45502f;
+        mi miVar;
+        je jeVar;
+        he heVar;
+        rh rhVar;
+        oh ohVar;
+        y3 y3Var;
+        miVar = keVar.f45497a;
+        this.f45556a = miVar;
+        jeVar = keVar.f45498b;
+        this.f45557b = jeVar;
+        heVar = keVar.f45499c;
+        this.f45558c = heVar;
+        rhVar = keVar.f45500d;
+        this.f45559d = rhVar;
+        ohVar = keVar.f45501e;
+        this.f45560e = ohVar;
+        y3Var = keVar.f45502f;
+        this.f45561f = y3Var;
     }
 
     public final y3 a() {
