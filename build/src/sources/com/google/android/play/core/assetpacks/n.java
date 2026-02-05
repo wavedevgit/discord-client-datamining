@@ -22,18 +22,14 @@ public final class n extends wh.l0 {
 
     @Override // wh.l0
     protected final void a() {
-        wh.k0 k0Var;
-        wh.v0 v0Var;
         String str;
         Bundle h10;
         try {
-            v0Var = this.f15917i.f16087e;
             str = this.f15917i.f16083a;
             h10 = x.h();
-            ((wh.b0) v0Var.e()).D0(str, h10, new s(this.f15917i, this.f15916e));
+            ((wh.b0) this.f15917i.f16087e.e()).D0(str, h10, new s(this.f15917i, this.f15916e));
         } catch (RemoteException e10) {
-            k0Var = x.f16081g;
-            k0Var.c(e10, "keepAlive", new Object[0]);
+            x.f16081g.c(e10, "keepAlive", new Object[0]);
         }
     }
 }
