@@ -37,8 +37,9 @@ public final class i5 extends l5 {
         throw new b5("Exceeded cutoff limit for max depth of cbor value");
     }
 
+    /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.google.android.gms.internal.fido.l5
-    protected final int a() {
+    public final int a() {
         return this.f14023d;
     }
 
@@ -116,8 +117,9 @@ public final class i5 extends l5 {
         }
     }
 
+    /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.google.android.gms.internal.fido.l5
-    protected final int zza() {
+    public final int zza() {
         return l5.e((byte) -96);
     }
 }
