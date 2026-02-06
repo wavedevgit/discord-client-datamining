@@ -11,8 +11,9 @@ import android.opengl.GLException;
 import android.view.Surface;
 import org.webrtc.EglBase14;
 import org.webrtc.EglBase14Impl;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class EglBase14Impl implements EglBase14 {
+public class EglBase14Impl implements EglBase14 {
     private static final EglConnection EGL_NO_CONNECTION = new EglConnection();
     private static final String TAG = "EglBase14Impl";
     private EglConnection eglConnection;
