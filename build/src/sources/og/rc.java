@@ -18,8 +18,9 @@ public final class rc extends mc {
         this.f42427o = i10;
     }
 
+    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // og.mc, og.la
-    final int b(Object[] objArr, int i10) {
+    public final int b(Object[] objArr, int i10) {
         System.arraycopy(this.f42426i, 0, objArr, 0, this.f42427o);
         return this.f42427o;
     }
